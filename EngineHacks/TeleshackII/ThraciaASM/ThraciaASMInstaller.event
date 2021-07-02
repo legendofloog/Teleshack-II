@@ -1,0 +1,4 @@
+#include "Fatigue/Fatigue.event"
+#include "ThraciaTradeInstaller.event"
+#include "ThraciaWeaponRanks.event"
+#include "1RNInstaller.event"

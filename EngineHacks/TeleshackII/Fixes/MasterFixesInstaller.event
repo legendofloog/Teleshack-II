@@ -1,0 +1,5 @@
+#include "FE8-New_CHAI/FE8-New_CHAI_EA.event"
+#include "Ch5xFixes.event"
+#include "FixedDifficulty.event"
+#include "PreventFreezeForGetUnitStateEvent0x33.event"
+#include "ThraciaTradeInstaller.event"

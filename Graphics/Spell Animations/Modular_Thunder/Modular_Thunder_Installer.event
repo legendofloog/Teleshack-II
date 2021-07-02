@@ -1,0 +1,36 @@
+#include "Modular_Thunder.lyn.event"
+
+PUSH
+
+	//Add to spell effect pointer table at 5D4E60
+	ORG $5D4EC4
+	POIN StartSpellAnimForThunder+1
+	
+	
+	//Since this is all vanilla data I'm overwriting vanilla procs. For custom spells, create these in freespace
+	ORG $5D5428
+	Thunder_MainProcLoop:
+	SHORT $01 $00; WORD $080DCC8C //set name pointer
+	SHORT $03 $00; POIN ThunderAnim_Main+1
+	WORD 0 0
+	
+	ORG $5D5440
+	Thunder_BG1Proc:
+	SHORT $01 $00; WORD $080DCC98 //set name pointer
+	SHORT $03 $00; POIN ThunderAnim_BG_Loop+1
+	WORD 0 0
+	
+	ORG $5D5468
+	Thunder_PaletteFXProc:
+	SHORT $01 $00; WORD $080DCCB0 //set name pointer
+	SHORT $0F $0A; WORD 0
+	SHORT $03 $00; POIN ThunderAnim_PaletteFX_Loop+1
+	WORD 0 0
+	
+	ORG $5D5488
+	Thunder_ObjProc:
+	SHORT $01 $00; WORD $080DCD04 //set name pointer
+	SHORT $03 $00; POIN ThunderAnim_OAM_Loop+1
+	WORD 0 0
+
+POP

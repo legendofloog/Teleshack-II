@@ -1,0 +1,1 @@
+#define GiveItemToCharacter(char, item) "_SETVAL 3 item; GIVEITEMTO char"

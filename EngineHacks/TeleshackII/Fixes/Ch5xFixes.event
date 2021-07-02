@@ -1,0 +1,10 @@
+//Thanks to Tequila
+
+PUSH
+ORG $24DF2 //show gold in ch5x
+SHORT 0
+ORG $3164F //allow Supply on prep screen in ch5x
+BYTE 0xE0
+ORG $3327B
+BYTE 0xE0
+POP

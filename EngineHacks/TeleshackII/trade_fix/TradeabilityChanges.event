@@ -1,0 +1,100 @@
+//NOTE: use the same weapon bit as "Negate WTA" to mark untradebility. Ability 2, 0x2 ("disable hammerne")
+//got from gamma
+//2d4a8 seems to draw the items, look into graying out untradeable ones
+//r2 is "is usable" which gets passed to DrawItemMenuCommand at 16848. If r2 is 0 then the text gets grayed.
+
+//TEST THESE IN NO$, SHOPS ARE BREAKING
+
+//17054 IsItemStealable - replace entirely to check for unstealable bit 0x2 on byte 0x4 of attributes
+
+PUSH
+
+//Trade Fix
+ORG $2d760
+BL(Trade_Fix)
+WORD $0
+
+//Trade Fix WM
+ORG $9b550
+BL(Trade_Fix_WM)
+
+//Supply Fix
+ORG $9e872
+BL(Supply_Fix)
+
+//Give All
+//ORG $1948a
+//BYTE $D2 $19			//fucks up shops, apparently
+
+ORG $9a554
+BL(Give_All)
+
+//Inventory Full
+ORG $1e19e
+BL(Inventory_Full)
+
+ORG $17058
+BL(Steal_Fix)
+B($17078)
+
+ORG $e17e8				//unused space in BL range
+Trade_Fix:
+#incbin "trade_fix.dmp"
+ALIGN 4
+
+Trade_Fix_WM:
+#incbin "trade_fix_WM.dmp"
+ALIGN 4
+
+Supply_Fix:
+#incbin "supply_fix.dmp"
+ALIGN 4
+
+Give_All:
+#incbin "giveall_fix2.dmp"
+ALIGN 4
+
+Inventory_Full:
+#incbin "inventory_full.dmp"
+ALIGN 4
+
+Steal_Fix:
+#incbin "steal_fix.dmp"
+ALIGN 4
+POP
+
+//Functions to actually change:
+//$17584 GetItemUses ignore bit 6
+//$1E188 SendToConvoyMenu (or even just thru "inventory_full.asm"?)
+//$9E85C GiveConvoyEffect (supply_fix already messes w this)
+//$9E2C8 TakeConvoyEffect
+
+//and maybe in the textdraw func, color it based on which convoy its in??
+
+
+//places to investigate: $9e872 $9a554 
+//$31594 GiveItemToConvoy (WARNING this gets called when shuffling items too)
+//$315cc
+//$981E4 ???
+//$9E100 ??? some graphics stuff, probably not needed
+//9B74C?? convoy item drawing func?? (calls GetItemUses)
+//9D300?? checks if item is usable by the current unit @9D37A, also calls GetItemUses
+//ACE20?? (starts a new A20BB4 proc)
+//AD51C (i think this draws the blue bar under highlighted item)
+
+//$982B8 Shuffles items after item is removed
+
+//$31508?? ClearConvoyITems - does exactly what it says, clears buffer at 203b200
+//GetConvoyItemArray at 203b200 - check how these bits are saved and loaded
+
+//$98014 i think this determines which pocket it goes in
+//$98048 
+// A188C0 = ?? Convoy item types? (Maybe reorg so that magic types arent drawn?)
+//$9E854 ConvoyMenu_Give is probably where the bit should be set before calling 31594
+
+//Temporary storage for item to be sent to convoy is at 0202BCB0+2E
+//(202BCDE)
+
+//08017584 GetItemUses - change this to not care about top byte.
+//Kirb's system uses byte 7 to indicate forging
+

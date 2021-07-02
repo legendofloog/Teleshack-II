@@ -1,0 +1,82 @@
+#include "Modular_WindMagic.lyn.event"
+
+#ifndef SpellTable
+  #define SpellTable $5d4e60
+  #define setCustomSpell(index, startFunc) "PUSH; ORG SpellTable+(index*4); POIN startFunc|1; POP"
+#endif
+
+PUSH
+
+	//Add to spell effect pointer table at 5D4E60
+	//Index 0x1C is Aircalibur
+	setCustomSpell(0x1C, StartSpellAnimForWindMagic)
+	
+	
+	//Since this is all vanilla data I'm overwriting vanilla procs. For custom spells, create these in freespace
+	ORG $5D7F00
+	WindMagic_MainProcLoop:
+	SHORT $01 $00; WORD $080DE9D0 //set name pointer
+	SHORT $03 $00; POIN WindMagicAnim_Main+1
+	WORD 0 0
+	
+	ORG $5D7F18
+	WindMagic_BG1Proc:
+	SHORT $01 $00; WORD $080DE9DC //set name pointer
+	SHORT $03 $00; POIN WindMagicAnim_BG1_Loop+1
+	WORD 0 0
+	
+	ORG $5D8020
+	WindMagic_BG2Proc:
+	SHORT $01 $00; WORD $080DEA3C //set name pointer
+	SHORT $03 $00; POIN WindMagicAnim_BG2_Loop+1
+	WORD 0 0
+	
+	ORG $5D8098
+	WindMagic_ObjProc:
+	SHORT $01 $00; WORD $080DEA64 //set name pointer
+	SHORT $03 $00; POIN WindMagicAnim_OAM_Loop+1
+	WORD 0 0
+	
+	//using lyn to get around compiler issues :)
+	ORG BGPalette_30
+	POIN WindMagic_BG1PalPointer
+	ORG BGPalette_37
+	POIN WindMagic_BG2PalPointer
+
+POP
+
+WindMagic_Palette_1:
+#incbin "evileye_green_1.pal.bin"
+
+WindMagic_Palette_2:
+#incbin "evileye_green_2.pal.bin"
+
+WindMagic_BG1PalPointer:
+POIN WindMagic_Palette_1
+POIN WindMagic_Palette_1+0x20
+POIN WindMagic_Palette_1+0x40
+POIN WindMagic_Palette_1+0x60
+POIN WindMagic_Palette_1+0x80
+POIN WindMagic_Palette_1+0xA0
+POIN WindMagic_Palette_1+0xC0
+POIN WindMagic_Palette_1+0xE0
+POIN WindMagic_Palette_1+0x100
+POIN WindMagic_Palette_1+0x120
+POIN WindMagic_Palette_1+0x140
+POIN WindMagic_Palette_1+0x160
+POIN WindMagic_Palette_1+0x180
+POIN WindMagic_Palette_1+0x1A0
+POIN WindMagic_Palette_1+0x1C0
+POIN WindMagic_Palette_1+0x1E0
+POIN WindMagic_Palette_1+0x200
+POIN WindMagic_Palette_1+0x220
+POIN WindMagic_Palette_1+0x240
+POIN WindMagic_Palette_1+0x260
+
+WindMagic_BG2PalPointer:
+POIN WindMagic_Palette_2
+POIN WindMagic_Palette_2+0x20
+POIN WindMagic_Palette_2+0x40
+POIN WindMagic_Palette_2+0x60
+POIN WindMagic_Palette_2+0x80
+POIN WindMagic_Palette_2+0xA0

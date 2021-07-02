@@ -1,0 +1,19 @@
+#define MultiTile(chapter,xCoord,yCoord,eventID) "BYTE chapter xCoord yCoord 0x00 ; SHORT eventID 0x00"
+
+MultiTileMarker_Table:
+//MultiTile(HoltornGrove,11,22,0x27)
+//MultiTile(HoltornGrove,12,22,0x27)
+//MultiTile(HoltornGrove,13,22,0x27)
+
+//MultiTile(InDefenseOfHope,10,7,0x27)
+//MultiTile(InDefenseOfHope,11,7,0x27)
+//MultiTile(InDefenseOfHope,12,7,0x27)
+//MultiTile(InDefenseOfHope,14,9,0x27)
+//MultiTile(InDefenseOfHope,14,10,0x27)
+//MultiTile(InDefenseOfHope,8,9,0x27)
+//MultiTile(InDefenseOfHope,8,10,0x27)
+//MultiTile(InDefenseOfHope,10,12,0x27)
+//MultiTile(InDefenseOfHope,11,12,0x27)
+//MultiTile(InDefenseOfHope,12,12,0x27)
+BYTE 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xF
+

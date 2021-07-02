@@ -1,0 +1,16 @@
+#define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
+#define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
+
+SpecifiedBattleConvo(Eimund,Wyland,ReunionPrologue,0x11,WylandEimundBattleText)
+SpecifiedBattleConvo(Signe,Hilda,UnexpectedEncounter,0x17,HildaSigneBattleText)
+SpecifiedBattleConvo(Frida,Hilda,UnexpectedEncounter,0x18,HildaFridaBattleText)
+SpecifiedBattleConvo(Eindride,Dai,WingsOfRivald,18,EindrideDaiBattleText)
+SpecifiedBattleConvo(Eindride,Hartner,WingsOfRivald,19,HartnerEindrideBattleText)
+UnspecifiedBattleConvo(Wyland,ReunionPrologue,0x01,WylandBattleText)
+UnspecifiedBattleConvo(Renzer,HoltornGrove,0x01,RenzerBattleText)
+UnspecifiedBattleConvo(Hilda,UnexpectedEncounter,0x01,HildaBattleText)
+UnspecifiedBattleConvo(Dai,WingsOfRivald,0x01,DaiBattleText)
+UnspecifiedBattleConvo(Sahn,LastStand,0x01,SahnBattleText)
+UnspecifiedBattleConvo(Yanus,InDefenseOfHope,0x01,YanusBattleQuote)
+
+BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

@@ -1,0 +1,44 @@
+    ALIGN 4
+    SnowFieldsPalette:
+    #incbin "Palette/pandan_snowfields_object_pal.dmp"
+    ALIGN 4
+    VillageObjects: 
+    #incbin "Object/FlasubanVillageObject.dmp"
+    ALIGN 4
+    SnowVillagePalette:
+    #incbin "Palette/FlasubanSnowVIllagePalette.dmp"
+    ALIGN 4
+    VillagePalette:
+    #incbin "Palette/FlasubanVillageObject_pal.dmp"
+    ALIGN 4
+    VillageMapConfig:
+    #incbin "Config/newfe8village_comp.dmp"
+    ALIGN 4
+    ZoraFortObjects:
+    #incbin "Object/FortTestObjectFixed.dmp"
+    ALIGN 4
+    ZoraFortPalette:
+    #incbin "Palette/FortTestObjectFixed_pal.dmp"  
+    ALIGN 4
+    ZoraFortConfig:
+    #incbin "Config/FortTest_comp.dmp"
+    ALIGN 4
+    AquamarineFieldsObjects:
+    #incbin "Object/Aquamarine Fields.dmp"
+    ALIGN 4
+    AquamarineFieldsPalette:
+    #incbin "Palette/Aquamarine Fields_pal.dmp"
+    ALIGN 4
+    UpdatedFieldsConfig:
+    #incbin "Config/Fields Mapchip_comp.dmp"
+    EventPointerTable(0x4C, VillagePalette)
+    EventPointerTable(0x50, VillageObjects)
+    EventPointerTable(0x51, SnowVillagePalette)
+    EventPointerTable(0x52, VillageMapConfig)
+    EventPointerTable(0x5B,SnowFieldsPalette)
+    EventPointerTable(0x5F, ZoraFortObjects)
+    EventPointerTable(0x60, ZoraFortPalette)
+    EventPointerTable(0x61, ZoraFortConfig)
+    EventPointerTable(0x88, AquamarineFieldsObjects)
+    EventPointerTable(0x89, AquamarineFieldsPalette)
+    EventPointerTable(0x8A, UpdatedFieldsConfig)

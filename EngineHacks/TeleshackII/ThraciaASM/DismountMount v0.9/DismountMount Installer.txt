@@ -1,0 +1,114 @@
+//Dismount/Mount Installer, by Crazycolorz5
+/*
+    Notes:
+    This installer automatically repoints the Unit Menu Table. 
+    If you're defining it in another file, then copy the lines
+    that point to the mount and dismount hack into it. 
+    Then, remove the table from this file.
+    
+*/
+
+//The user needs to change these to fit his/her ROM.
+//These are the text IDs used for the unit menu. Change them based on what IDs you're using for the text.
+#define Dismount_Name_TextID        IDunno
+#define Dismount_Description_TextID IDunno
+#define Mount_Name_TextID           IDunno
+#define Mount_Description_TextID    IDunno
+
+//Whever you have free space.
+#define FreeSpace 0xE80000
+
+//Change this to where you repointed your class table. Leave it alone if you didn't.
+#define ClassTable 0x807110
+
+//These are for constructing your Mounted Class Table.
+#define MountedUnmounted(classIDMounted, classIDUnmounted) "BYTE classIDMounted classIDUnmounted"
+#define EndMountUnmountedTable "BYTE 0x00 0x00"
+
+//Next, go down a few lines to where you see MountedClassTable,
+//And fill it with entries for mounted and unmounted classes.
+
+
+//Installer ----------
+#include eastdlib.event
+#include "Extensions/Hack Installation.txt"
+#include "_UnitMenuDefs.txt"
+
+  //Repoint Unit Menu
+    ORG $59D1f8         //Repointing Unit Menu Table
+    POIN UnitMenuTable
+
+
+ORG FreeSpace
+
+    MountedClassTable:
+    //Replace this with a list of your classes, mounted and unmounted.
+    MountedUnmounted(Cavalier_F, EirikaLord) //Examples
+    MountedUnmounted(Cavalier, EphraimLord)
+    MountedUnmounted(MageKnight, Sage)
+    MountedUnmounted(MageKnight_F, Sage_F)
+    MountedUnmounted(PegasusKnight, Soldier)
+    EndMountUnmountedTable
+    
+    
+  ALIGN 4
+  DismountRoutine:
+  #incbin "DismountMount Code/Dismount Routine.dmp"
+  POIN ClassTable
+  POIN MountedClassTable
+  
+  DismountUsability:
+  #incbin "DismountMount Code/Dismount Usability Routine.dmp"
+  POIN MountedClassTable
+  
+  MountRoutine:
+  #incbin "DismountMount Code/Mount Routine.dmp"
+  POIN ClassTable
+  POIN MountedClassTable
+  
+  MountUsability:
+  #incbin "DismountMount Code/Mount Usability Routine.dmp"
+  POIN MountedClassTable
+
+
+
+
+  ALIGN 4         //Insert new commands where you want them to appear in the menu
+  MESSAGE Unit menu table at currentOffset.
+  UnitMenuTable:  //Use the macro MenuCommand(name,description,colour,usability,effect)
+  //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
+    UM_Seize
+    MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
+    MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
+    UM_Attack
+    UM_Attack_B
+    UM_Staff
+    UM_Ride
+    UM_Exit
+    UM_Play
+    UM_Dance
+    UM_Steal
+    UM_Summon
+    UM_Summon_DK
+    UM_Pick
+    UM_Talk
+    UM_Support
+    UM_Visit
+    UM_Chest
+    UM_Door
+    UM_Armory
+    UM_Vendor
+    UM_Secret
+    UM_Arena
+    UM_Rescue
+    UM_Drop
+    UM_Take
+    UM_Give
+    UM_Item
+    UM_Trade
+    UM_Supply
+    UM_Wait
+    UM_Separator 
+    
+    
+MESSAGE Used free space ends at currentOffset.
