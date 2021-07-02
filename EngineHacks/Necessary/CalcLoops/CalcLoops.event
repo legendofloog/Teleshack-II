@@ -5,6 +5,7 @@
 
 #include "PostActionCalcLoop/PostActionCalcLoop.event"
 
+#include "PostBattleCalcLoop/Fatigue.lyn.event"
 #include "PostBattleCalcLoop/PostBattleCalcLoop.event"
 
 #include "PreBattleCalcLoop/PreBattleCalcLoop.event"

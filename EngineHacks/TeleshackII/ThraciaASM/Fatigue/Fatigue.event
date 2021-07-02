@@ -38,15 +38,16 @@ BYTE 0
 
 ALIGN 4
 FatigueStartingChapter:
+BYTE Prologue
 BYTE 0
-
-ALIGN 4
-CharacterStructFatigueByte: //for EMS
-BYTE 0x3B
 
 ALIGN 4
 FatigueRestoredTextID:
 SHORT MessageFatigueRestored
+
+ALIGN 4
+CharacterStructFatigueByte: //for EMS
+BYTE 0x3B
 
 #define ClearFatigue(charID) "SVAL 1 charID; SVAL 2 0; ASMC SetFatigueASMC"
 #define SetFatigue(charID,ftgValue) "SVAL 1 charID; SVAL 2 ftgValue; ASMC SetFatigueASMC"
