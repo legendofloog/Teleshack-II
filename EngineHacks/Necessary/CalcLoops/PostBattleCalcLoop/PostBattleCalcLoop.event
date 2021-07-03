@@ -9,12 +9,13 @@ POP
 PostCombatLoop:
 #incbin "post_loop.dmp"
 POIN PostCombatSkills
-POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
+
 
 ALIGN 4
 PostCombatSkills: //I like having savage blow as the first one because it makes the activation sound play first
 POIN SavageBlow BreathOfLife Despoil Lifetaker Fury PoisonStrike GrislyWound//lifetaker should probably go after any messages because it can mess with the palette a bit
 POIN Canto CantoPlus Galeforce ReMove Powerstaff CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested
+POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
 WORD 0 //Terminator
 
 PROTECT $1D308 $1D314

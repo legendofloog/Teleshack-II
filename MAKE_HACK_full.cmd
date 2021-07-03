@@ -12,6 +12,7 @@ set "main_event=%~dp0ROMBuildfile.event"
 
 set "target_rom=%~dp0TeleshackII.gba"
 set "target_ups=%~dp0TeleshackII.ups"
+set "target_sym=%~dp0TeleshackII.sym"
 
 @rem defining tools
 
@@ -20,6 +21,7 @@ set "textprocess=%~dp0Tools\TextProcess\text-process-classic"
 set "ups=%~dp0Tools\ups\ups"
 set "parsefile=%~dp0EventAssembler\Tools\ParseFile.exe"
 set "tmx2ea=%~dp0Tools\tmx2ea\tmx2ea"
+set "symcombo=%~dp0Tools\SymCombo\SymCombo.jar"
 
 @rem set %~dp0 into a variable because batch is stupid and messes with it when using conditionals?
 
@@ -59,7 +61,12 @@ echo:
 echo Assembling
 
 cd "%base_dir%EventAssembler"
-ColorzCore A FE8 "-output:%target_rom%" "-input:%main_event%"
+ColorzCore A FE8 "-output:%target_rom%" "-input:%main_event%" "--nocash-sym"
+
+echo:
+echo Writing sym file
+
+java -jar "%symcombo%" "%target_sym%" "%~dp0Tools\SymCombo\Stan.sym"
 
 if /I not [%1]==[quick] (
 
