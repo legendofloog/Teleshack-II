@@ -2,3 +2,4 @@
 #include "ThraciaTradeInstaller.event"
 #include "ThraciaWeaponRanks.event"
 #include "1RNInstaller.event"
+#include "TomeCon/Installer.event"
