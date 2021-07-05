@@ -1,3 +1,16 @@
+// gamma display fix for magic swords
+
+//PUSH
+//ORG $2A4B8
+//BYTE 0xFF
+//POP
+
+// lisandra_brave fix to make melee just str
+
+PUSH
+ORG $2ADE6
+BYTE 0xFF
+POP
 
 #ifndef MSR
 
@@ -21,9 +34,9 @@
 
 	MagicSwordList:
 	//MagicSwordEntry(0x09,WeaponTypeAnima,False,HitDef,HitRes)
-	MagicSwordEntry(WindSword,WeaponTypeAnima,False,HitRes,HitRes)
-	MagicSwordEntry(LightBrand,WeaponTypeLight,False,HitRes,HitRes)
-	MagicSwordEntry(Runesword,WeaponTypeDark,True,HitRes,HitRes)
+	MagicSwordEntry(WindSword,WeaponTypeAnima,False,HitDef,HitRes)
+	MagicSwordEntry(FlameSword,WeaponTypeAnima,False,HitDef,HitRes)
+	MagicSwordEntry(ThunderSword,WeaponTypeAnima,False,HitDef,HitRes)
 	BYTE 0 0 0 //terminator
 
 

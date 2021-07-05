@@ -13,7 +13,7 @@
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
 #define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
-#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE MasterAxe 0x00 ; SHORT Animation"
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
 #define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
 #define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
@@ -435,9 +435,9 @@ EndAnim
 
 ALIGN 4
 BallisticianAnims:
-SpecialAnim(BallistaAnim,Ballista)
-SpecialAnim(BallistaAnim,IronBallista)
-SpecialAnim(BallistaAnim,KillerBallista)
+SpecialAnim(BallistaAnim,LongArch)
+SpecialAnim(BallistaAnim,IronArch)
+SpecialAnim(BallistaAnim,KillerArch)
 EndAnim
 
 ALIGN 4
@@ -653,7 +653,7 @@ EndAnim
 
 ALIGN 4
 LongBallisticianAnims:
-SpecialAnim(LongBallistaAnim,Ballista)
-SpecialAnim(LongBallistaAnim,IronBallista)
-SpecialAnim(LongBallistaAnim,KillerBallista)
+SpecialAnim(BallistaAnim,LongArch)
+SpecialAnim(BallistaAnim,IronArch)
+SpecialAnim(BallistaAnim,KillerArch)
 EndAnim

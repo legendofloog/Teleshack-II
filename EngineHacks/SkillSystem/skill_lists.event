@@ -52,6 +52,7 @@ BYTE 00 00
 ALIGN 4
 
 SwordmasterSkillList:
+BYTE 1 AdeptID
 BYTE 00 00
 ALIGN 4
 
@@ -66,6 +67,7 @@ BYTE 00 00
 ALIGN 4
 
 SniperSkillList:
+BYTE 1 LunaID
 BYTE 00 00
 ALIGN 4
 
@@ -310,10 +312,13 @@ BYTE 00 00
 ALIGN 4
 
 SwordmasterSkillList:
+BYTE 1 AdeptID
+BYTE 1 AdeptID
 BYTE 255 DuelistsBlowID
 BYTE 255 VantageID
 BYTE 5 AstraID
 BYTE 15 SwordfaireID
+BYTE 1 AdeptID
 BYTE 00 00
 ALIGN 4
 
@@ -332,10 +337,13 @@ BYTE 00 00
 ALIGN 4
 
 SniperSkillList:
+BYTE 1 LunaID
+BYTE 1 LunaID
 BYTE 255 CertainBlowID
 BYTE 255 SureShotID
 BYTE 5 BowfaireID
 BYTE 15 GaleforceID
+BYTE 1 LunaID
 BYTE 00 00
 ALIGN 4
 

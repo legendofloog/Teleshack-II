@@ -1,0 +1,30 @@
+//Battle animation lists based on character and class
+//By Tequila
+
+PUSH
+
+ORG $573C6
+BL(0x57CAC)
+ORG $573F0
+BL(0x57CAC)
+ORG $57344
+BL(0x57CAC)
+ORG $5735C
+BL(0x57CAC)
+ORG $CD0FC
+BL(0x57CAC)
+
+ORG $57D04
+SHORT 0x4800 0x4700; POIN Battle_Anims_By_Character|1 
+
+POP
+
+ALIGN 4
+Battle_Anims_By_Character:
+#incbin "Battle_Anims_By_Character.dmp"
+POIN BattleAnimListByCharTable
+
+ALIGN 4
+BattleAnimListByCharTable:
+
+WORD 0 //Terminator

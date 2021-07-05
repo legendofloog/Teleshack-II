@@ -1,84 +1,84 @@
 INLINE WalkingSoundTable,Sound
 0x0,0
-0x1,0
-0x2,0
-0x3,1
-0x4,1
-0x5,1
-0x6,1
-0x7,1
-0x8,1
-0x9,4
-0xa,4
-0xb,4
-0xc,4
-0xd,0
+Noble,0
+Noble(F),0
+MasterKnight,1
+MasterKnight(F),1
+SwordKnight,1
+LanceKnight,1
+AxeKnight,1
+BowKnight,1
+ArchKnight,1
+ForrestKnight,1
+GreatKnight,1
+DukeKnight,1
+Thief,0
 0xe,0
-0xf,0
-0x10,0
-0x11,0
-0x12,0
-0x13,0
-0x14,0
-0x15,0
-0x16,0
-0x17,0
-0x18,0
-0x19,0
-0x1a,0
-0x1b,0
-0x1c,0
-0x1d,1
-0x1e,1
-0x1f,2
-0x20,2
-0x21,2
-0x22,2
-0x23,2
-0x24,2
-0x25,0
-0x26,0
-0x27,0
-0x28,0
-0x29,1
-0x2a,1
-0x2b,0
-0x2c,0
-0x2d,0
-0x2e,0
-0x2f,0
-0x30,0
-0x31,0
-0x32,0
-0x33,0
+SwordFighter,0
+SwordFighter(F),0
+Hero,0
+Hero (F),0
+Myrmidon,0
+Myrmidon (F),0
+Swordmaster,0
+Swordmaster (F),0
+Thief(F),0
+Ballista,4
+Archer,0
+Archer (F),0
+Sniper,0
+Sniper (F),0
+Scaleshot,2
+Skyseeker,3
+Dragonlord,2
+Seraphknight,3
+Pegasus Rider,3
+Falcoknight,3
+Dragon Rider,2
+Dracoknight,2
+Mage,0
+Mage (F),0
+Sage,0
+Sage (F),0
+Mage Knight,1
+Mage Knight (F),1
+High Priest,0
+High Priestess,0
+Dark Mage,0
+Dark Mage (F),0
+Dark Bishop,0
+Dark Bishop (F),0
+Bard,0
+Sister,0
+Thief Fighter,0
 0x34,0
-0x35,1
-0x36,1
-0x37,0
-0x38,0
-0x39,0
-0x3a,0
+Priest,0
+Priest (F),0
+Rook Knight,1
+Gold Knight,1
+Troubadour,1
+Paladin,1
 0x3b,0
 0x3c,0
-0x3d,0
-0x3e,0
-0x3f,0
-0x40,0
-0x41,0
-0x42,0
-0x43,0
-0x44,0
-0x45,0
-0x46,0
-0x47,0
-0x48,3
-0x49,3
-0x4a,0
-0x4b,1
-0x4c,1
+Hunter,0
+Hunter (F),0
+Warrior (F),0
+Warrior,0
+Brigand,0
+Brigand (F),0
+Sword Armor,4
+Axe Armor,4
+Lance Armor,4
+Bow Armor,4
+General,4
+Mage Armor,4
+Baron,4
+Axe Fighter,0
+Axe Fighter (F),0
+Thief Fighter (F),0
 0x4d,0
-0x4e,0
-0x4f,0
+Lance Soldier,0
+Axe Soldier,0
 0x50,5
 0x51,11
 0x52,7
@@ -114,18 +114,18 @@ INLINE WalkingSoundTable,Sound
 0x70,0
 0x71,0
 0x72,0
-0x73,0
-0x74,0
-0x75,0
-0x76,0
+Corsair,0
+Corsair (F),0
+Berserker,0
+Berserker (F),0
 0x77,0
-0x78,0
+Halberdier,0
 0x79,0
-0x7a,0
-0x7b,0
+Freelancer,0
+Champion,0
 0x7c,0
 0x7d,0
-0x7e,0
+LongBallista,4
 0x7f,0
 0x80,0
 0x81,0
