@@ -118,7 +118,7 @@ INLINE ClassSkillTable,Skill
 "0x74 Corsair (F)","ShoveID"
 "0x75 Berserker","ShoveID"
 "0x76 Berserker (F)","ShoveID"
-0x77 (empty),0x0
+"0x77 Master Knight (dismounted)","0x0"
 "0x78 Halberdier","ShoveID"
 0x79 Tent,0x0
 "0x7a Freelancer","ShoveID"

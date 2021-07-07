@@ -12,7 +12,7 @@
 	// If uncommented, a level up screen with an extra row to fit Mov and Con will be used.
 	// This level up screen, however, has some small graphical glitches.
 	// If left commented, the regular level up screen will be used with Mag and without Con. No graphical glitches.
-	// #define ExpandedLevelUpScreen
+	#define ExpandedLevelUpScreen
 	
 	//Spirit Dust item icon
 	#ifndef SpiritDustIcon

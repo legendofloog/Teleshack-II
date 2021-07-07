@@ -20,29 +20,50 @@
 
 //Installer ----------
 //#include "_UnitMenuDefs.txt"
-
-    MountedClassTable:
-    //Replace this with a list of your classes, mounted and unmounted.
-    MountedUnmounted(MageKnight, Sage)
-    MountedUnmounted(MageKnight_F, Sage_F)
-    EndMountUnmountedTable
+ALIGN 4
+MountedClassTable:
+MountedUnmounted(MasterKnight, MasterKnight_Dismounted)
+MountedUnmounted(MasterKnight_F, MasterKnight_F_Dismounted)
+MountedUnmounted(SwordKnight, SwordKnight_Dismounted)
+MountedUnmounted(LanceKnight, LanceKnight_Dismounted)
+MountedUnmounted(AxeKnight, AxeKnight_Dismounted)
+MountedUnmounted(BowKnight, BowKnight_Dismounted)
+MountedUnmounted(ArchKnight, ArchKnight_Dismounted)
+MountedUnmounted(ForrestKnight, ForrestKnight_Dismounted)
+MountedUnmounted(GreatKnight, GreatKnight_Dismounted)
+MountedUnmounted(DukeKnight, DukeKnight_Dismounted)
+MountedUnmounted(Scaleshot, Scaleshot_Dismounted)
+MountedUnmounted(Skyseeker, Skyseeker_Dismounted)
+MountedUnmounted(Dragonlord, Dragonlord_Dismounted)
+MountedUnmounted(Seraphknight, Seraphknight_Dismounted)
+MountedUnmounted(PegasusRider, PegasusRider_Dismounted)
+MountedUnmounted(Falcoknight, Falcoknight_Dismounted)
+MountedUnmounted(DragonRider, DragonRider_Dismounted)
+MountedUnmounted(Dracoknight, Dracoknight_Dismounted)
+MountedUnmounted(MageKnight, MageKnight_Dismounted)
+MountedUnmounted(MageKnight_F, MageKnight_F_Dismounted)
+MountedUnmounted(RookKnight, RookKnight_Dismounted)
+MountedUnmounted(GoldKnight, GoldKnight_Dismounted)
+MountedUnmounted(Troubadour, Troubadour_Dismounted)
+MountedUnmounted(Paladin, Paladin_Dismounted)
+EndMountUnmountedTable
     
     
-  ALIGN 4
-  DismountRoutine:
-  #incbin "DismountMount Code/Dismount Routine.dmp"
-  POIN ClassTable
-  POIN MountedClassTable
+ALIGN 4
+DismountRoutine:
+#incbin "DismountMount Code/Dismount Routine.dmp"
+POIN ClassTable
+POIN MountedClassTable
   
-  DismountUsability:
-  #incbin "DismountMount Code/Dismount Usability Routine.dmp"
-  POIN MountedClassTable
+DismountUsability:
+#incbin "DismountMount Code/Dismount Usability Routine.dmp"
+POIN MountedClassTable
   
-  MountRoutine:
-  #incbin "DismountMount Code/Mount Routine.dmp"
-  POIN ClassTable
-  POIN MountedClassTable
+MountRoutine:
+#incbin "DismountMount Code/Mount Routine.dmp"
+POIN ClassTable
+POIN MountedClassTable
   
-  MountUsability:
-  #incbin "DismountMount Code/Mount Usability Routine.dmp"
-  POIN MountedClassTable
+MountUsability:
+#incbin "DismountMount Code/Mount Usability Routine.dmp"
+POIN MountedClassTable
