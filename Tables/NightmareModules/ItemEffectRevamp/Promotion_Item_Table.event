@@ -1,0 +1,19 @@
+#define _C2EA_Promotion_Item_Table(arg000,arg001,arg002,arg003) "SHORT arg000 arg001 ;WORD arg002 arg003 "
+
+PUSH
+ORG $29218
+POIN PromotionItemTable
+POP
+ALIGN 4
+PromotionItemTable:
+_C2EA_Promotion_Item_Table(0x64,0x0,0x88ADF57,0x0)
+_C2EA_Promotion_Item_Table(0x65,0x0,0x88ADF5E,0x0)
+_C2EA_Promotion_Item_Table(0x66,0x0,0x88ADF64,0x0)
+_C2EA_Promotion_Item_Table(0x67,0x0,0x88ADF67,0x0)
+_C2EA_Promotion_Item_Table(0x68,0x0,0x88ADF6B,0x0)
+_C2EA_Promotion_Item_Table(0x88,0x0,0x88ADF76,0x0)
+_C2EA_Promotion_Item_Table(0x8A,0x0,0x88ADF96,PromoLordCheck|IsPointer|1)
+_C2EA_Promotion_Item_Table(0x97,0x0,0x88ADF9E,0x0)
+_C2EA_Promotion_Item_Table(0x98,0x0,0x88ADFA4,PromoLordCheck|IsPointer|1)
+_C2EA_Promotion_Item_Table(0x99,0x0,0x88ADFA6,PromoLordCheck|IsPointer|1)
+_C2EA_Promotion_Item_Table(0xFFFF,0x0,0x0,0x0)

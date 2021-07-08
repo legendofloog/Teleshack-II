@@ -1,0 +1,16 @@
+#define _C2EA_IER_StatboosterText(arg000,arg001,arg002) "SHORT arg000 arg001 ;WORD arg002 "
+
+PUSH
+POP
+ALIGN 4
+StatBoosterTextTable:
+_C2EA_IER_StatboosterText(0x5B,0x1C,0)
+_C2EA_IER_StatboosterText(0x5C,0x0,0x802F8FC)
+_C2EA_IER_StatboosterText(0x5D,0x15,0)
+_C2EA_IER_StatboosterText(0x5E,0x16,0)
+_C2EA_IER_StatboosterText(0x5F,0x17,0)
+_C2EA_IER_StatboosterText(0x60,0x18,0)
+_C2EA_IER_StatboosterText(0x61,0x19,0)
+_C2EA_IER_StatboosterText(0x62,0x1A,0)
+_C2EA_IER_StatboosterText(0x63,0x1B,0)
+_C2EA_IER_StatboosterText(0x0,0x25,0)
