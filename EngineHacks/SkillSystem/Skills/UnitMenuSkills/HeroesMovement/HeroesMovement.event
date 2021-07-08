@@ -44,8 +44,8 @@ prSwapCommand_Availability:
 prShoveCommand_Availability:
 	rGetWrapper
 		rIfUnitHasNotState(US_CANTOING)
-			rWithConstant(ShoveID)
-				rCallExternal(SkillTester)
+			rIfUnitHasNotAttribute(CA_MOUNTEDAID)
+				rConstant(True)
 
 prSmiteCommand_Availability:
 	rGetWrapper
@@ -111,7 +111,8 @@ prShove_TargetLegality:
 prSmite_TargetLegality:
     rGetWrapper // Defaults to 0
         rIfUnitHasNotGuardAI
-            rConstant(True)
+        	rIfUnitHasNotAttribute(CA_MOUNTEDAID)
+            	rConstant(True)
 		
 // class lists, if enabled
 #ifndef HEROES_MOVEMENT_SKILL_REQUIRED

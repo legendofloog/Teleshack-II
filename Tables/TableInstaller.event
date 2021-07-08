@@ -14,7 +14,11 @@
 
 #include "NightmareModules\CharactersClasses\MagClassEditor.event"
 
-#include "NightmareModules\CharactersClasses\Promotion Branch Editor.event"
+#include "NightmareModules\CharactersClasses\MiscMapSpriteEditor.event"
+
+#include "NightmareModules\CharactersClasses\PromotionBranchEditor.event"
+
+#include "NightmareModules\CharactersClasses\WalkingSoundEditor.event"
 
 #include "NightmareModules\ItemEffectRevamp\Effect_Anim_Association_Editor.event"
 
