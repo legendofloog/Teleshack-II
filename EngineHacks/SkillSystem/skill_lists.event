@@ -10,12 +10,10 @@ BYTE 00 00
 ALIGN 4
 
 EphraimGreatLordSkillList:
-BYTE 1 SupplyID
 BYTE 00 00
 ALIGN 4
 
 EirikaGreatLordSkillList:
-BYTE 1 SupplyID
 BYTE 00 00
 ALIGN 4
 
@@ -35,7 +33,7 @@ BYTE 00 00
 ALIGN 4
 
 ThiefSkillList:
-BYTE 1 StealID
+BYTE 01 LocktouchID
 BYTE 00 00
 ALIGN 4
 
@@ -117,8 +115,7 @@ BYTE 00 00
 ALIGN 4
 
 RogueSkillList:
-BYTE 255 StealID
-BYTE 1 LocktouchID
+BYTE 0xFF LocktouchID
 BYTE 00 00
 ALIGN 4
 
@@ -426,10 +423,6 @@ BYTE 00 00
 ALIGN 4
 
 RogueSkillList:
-BYTE 255 DespoilID
-BYTE 255 AcrobatID
-BYTE 5 LungeID
-BYTE 15 CelerityID
 BYTE 00 00
 ALIGN 4
 
