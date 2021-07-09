@@ -283,7 +283,7 @@
   mov     r3, #0x19
   ldsb    r3,[r1,r3]     
   str     r0,[sp]     
-  mov r0, #0x1e  @cap is always 30
+  mov r0, #0x14  @cap is always 30, changed to 20
   str     r0,[sp,#0x4]    
   mov     r0,#0x6   
   mov     r1,#(\bar_x-11)
