@@ -100,10 +100,6 @@ gSaveBlockTypeSizeLookup:
 #endif // USE_STRMAG_SPLIT
 */
 
-ALIGN 4
-CharacterStructFatigueByte: //for EMS
-BYTE 0x3B
-
 #include "SrcModules/SaveUnitExpandedStrmagStairsFatigue.lyn.event" //Fatigue EMS
 
 DebuffTablePointer: // required for debuffs module

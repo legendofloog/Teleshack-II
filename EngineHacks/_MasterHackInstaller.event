@@ -93,8 +93,7 @@ POP
   #include "ExternalHacks/Biorhythm/Biorhythm.event"
 
   //Modular Stat Screen
-  #include "Necessary/ModularStatScreen/FatigueMSS.lyn.event"
-  #include "Necessary/ModularStatScreen/ModularStatScreenFatigue.event"
+  #include "Necessary/ModularStatScreen/ModularStatScreen.event"
   
   // Strength/Magic Split
   #ifdef USE_STRMAG_SPLIT

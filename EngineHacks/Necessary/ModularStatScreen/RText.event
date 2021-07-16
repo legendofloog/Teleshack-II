@@ -57,7 +57,7 @@
       RMenu(ST_Level,0,0,ST_Con,0x6,0x88,0x544)
 
     ST_Str:
-      RMenu(PersonalDataRText,ST_Skl,ST_Name,ST_Aid,0x66,0x18,0x546,StrMagGetter)
+      RMenu(PersonalDataRText,ST_Skl,ST_Name,ST_Ftg,0x66,0x18,0x546,StrMagGetter)
 
     ST_Skl:
       RMenu(ST_Str,ST_Spd,ST_Name,ST_Trv,0x66,0x28,0x548)
@@ -84,11 +84,11 @@
   //the rest of these are here because space
   
   ALIGN 4
-  ST_Aid:
-    RMenu(PersonalDataRText,ST_Trv,ST_Str,0,0xa6,0x18,0x54F)
+  ST_Ftg:
+    RMenu(PersonalDataRText,ST_Trv,ST_Str,0,0xa6,0x18,SS_FatigueRText)
   
   ST_Trv:
-    RMenu(ST_Aid,ST_Affin,ST_Skl,0,0xa6,0x28,0x550)
+    RMenu(ST_Ftg,ST_Affin,ST_Skl,0,0xa6,0x28,0x550)
 
   ST_Affin:
     #ifdef LEADERSHIP_STARS
@@ -154,7 +154,7 @@ ST_HP:
 ST_Str:
   RMenu(PersonalDataRText,ST_Mag,ST_Name,ST_Con,0x66,0x18,0x546)
 ST_Mag:
-  RMenu(ST_Str,ST_Skl,ST_Name,ST_Aid,0x66,0x28,0x547)
+  RMenu(ST_Str,ST_Skl,ST_Name,ST_Ftg,0x66,0x28,0x547)
 ST_Skl:
   RMenu(ST_Mag,ST_Spd,ST_Name,ST_Cond,0x66,0x38,0x548)
 ST_Spd:
@@ -173,11 +173,11 @@ POP
 ALIGN 4
 
 ST_Con:
-  RMenu(PersonalDataRText,ST_Aid,ST_Str,0,0xA6,0x18,0x54e)
-ST_Aid:
-  RMenu(ST_Con,ST_Cond,ST_Mag,0,0xa6,0x28,0x54F)
+  RMenu(PersonalDataRText,ST_Ftg,ST_Str,0,0xA6,0x18,0x54e)
+ST_Ftg:
+  RMenu(ST_Con,ST_Cond,ST_Mag,0,0xa6,0x28,SS_FatigueRText)
 ST_Cond:
-  RMenu(ST_Aid,ST_Affin,ST_Skl,0,0xa6,0x38,0x552,ConditionGetter)
+  RMenu(ST_Ftg,ST_Affin,ST_Skl,0,0xa6,0x38,0x552,ConditionGetter)
 ST_Affin:
   #ifdef LEADERSHIP_STARS
     RMenu(ST_Cond,ST_Talk,ST_Spd,0,0xa6,0x48,LeadRText)
