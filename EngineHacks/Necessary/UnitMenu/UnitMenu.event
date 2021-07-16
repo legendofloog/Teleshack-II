@@ -76,9 +76,6 @@ UnitMenuTable:
   #ifdef DRAGON_VEINS
   MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
   #endif // DRAGON_VEINS
-
-  MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
-  MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
   
   // UM_Attack
   MenuCommand(0x67b, 0x6c0, NormalText, $249ac, AttackEffect, $22c31, $22c99) //to clear flags
@@ -179,6 +176,9 @@ UnitMenuTable:
 
   UM_Item
   UM_Trade
+
+  MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
+  MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
   
   //UM_Supply
   MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)

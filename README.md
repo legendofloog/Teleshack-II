@@ -1,2 +1,2 @@
 # Teleshack-II
- what it says
+ The hack chief, it's bad!!
