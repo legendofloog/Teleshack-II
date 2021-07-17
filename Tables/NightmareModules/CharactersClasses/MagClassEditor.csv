@@ -23,7 +23,7 @@ Myrmidon (F),0,3,20,0
 Swordmaster,1,3,20,1
 Swordmaster (F),1,3,20,1
 Thief(F),1,0,20,0
-Ballista,1,0,20,0
+Ballista,0,0,20,0
 Archer,0,3,20,0
 Archer (F),0,3,20,0
 Sniper,1,3,20,1
@@ -81,32 +81,32 @@ Lance Soldier,0,3,20,0
 Axe Soldier,0,3,20,0
 Fleet,0,0,20,0
 Phantom,0,0,20,0
-Revenant,0,0,20,0
-Entombed,0,0,20,0
-Bonewalker,0,0,20,0
-Bonewalker (Bow),0,0,20,0
-Wight,0,0,20,0
-Wight (Bow),0,0,20,0
-Bael,0,0,20,0
-Elder Bael,0,0,20,0
-Cyclops,0,0,20,0
-Mauthe Doog,0,0,20,0
-Gwyllgi,0,0,20,0
-Tarvos,0,0,20,0
-Maelduin,0,0,20,0
-Mogall,2,45,20,0
-Arch Mogall,6,55,20,0
-Gorgon,8,60,20,0
+SwordKnight (D),0,0,20,0
+LongBallista,1,0,20,1
+LanceKnight (D),0,0,20,0
+AxeKnight (D),0,0,20,0
+BowKnight (D),0,0,20,0
+ArchKnight (D),0,0,20,0
+ForrestKnight (D),0,0,20,0
+GreatKnight (D),0,0,20,0
+DukeKnight (D),0,0,20,0
+Scaleshot (D),0,0,20,0
+Skyseeker (D),0,0,20,0
+Dragonlord (D),0,0,20,0
+Seraphknight (D),0,0,20,0
+Pegasus Rider (D),2,45,20,0
+Falcoknight (D),6,55,20,0
+Dragon Rider (D),8,60,20,0
 Gorgon Egg,0,0,20,0
-Gargoyle,0,0,20,0
-Deathgoyle,0,0,20,0
+Dracoknight (D),0,0,20,0
+Mage Knight (D),0,0,20,0
 Dracozombie,1,30,20,0
 Demon King,23,40,20,0
-Archer on Ballista,0,0,20,0
-Archer on Iron Ballista,0,0,20,0
-Archer on Killer Ballista,0,0,20,0
+Mage Knight (F) (D),0,0,20,0
+Rook Knight (D),0,0,20,0
+Gold Knight (D),0,0,20,0
 Ballista,0,0,20,0
-Iron Ballista,0,0,20,0
+Paladin (D),0,0,20,0
 Killer Ballista,0,0,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0

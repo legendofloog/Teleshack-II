@@ -81,32 +81,32 @@ Lance Soldier,0
 Axe Soldier,0
 0x50,5
 0x51,11
-0x52,7
-0x53,7
-0x54,8
-0x55,8
-0x56,8
-0x57,8
-0x58,9
-0x59,9
-0x5a,4
-0x5b,10
-0x5c,10
-0x5d,1
-0x5e,1
-0x5f,11
-0x60,11
-0x61,12
+SwordKnight (D),0
+LongBallista,4
+LanceKnight (D),0
+AxeKnight (D),0
+BowKnight (D),0
+ArchKnight (D),0
+ForrestKnight (D),0
+GreatKnight (D),0
+DukeKnight (D),0
+Scaleshot (D),0
+Skyseeker (D),0
+Dragonlord (D),0
+Seraphknight (D),0
+Pegasus Rider (D),0
+Falcoknight (D),0
+Dragon Rider (D),0
 0x62,0
-0x63,2
-0x64,2
+Dracoknight (D),0
+Mage Knight (D),0
 0x65,6
 0x66,0
-0x67,4
-0x68,4
-0x69,4
+Mage Knight (F) (D),0
+Rook Knight (D),0
+Gold Knight (D),0
 0x6a,0
-0x6b,0
+Paladin (D),0
 0x6c,0
 0x6d,0
 0x6e,0

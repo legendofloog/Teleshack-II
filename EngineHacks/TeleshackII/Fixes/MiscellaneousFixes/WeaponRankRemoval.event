@@ -1,0 +1,9 @@
+// changes the ewan event to not happen by making it class 0x0
+
+PUSH
+	ORG $2bd0a
+	BYTE 0x0
+	ORG $2be5a
+	BYTE 0x0
+POP
+

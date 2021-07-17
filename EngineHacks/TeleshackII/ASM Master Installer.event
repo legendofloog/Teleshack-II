@@ -1,2 +1,3 @@
 #include "ThraciaASM/ThraciaASMInstaller.event"
 #include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
+#include "Fixes/MasterFixesInstaller.event"

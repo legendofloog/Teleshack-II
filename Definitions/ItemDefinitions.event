@@ -117,7 +117,7 @@
 #define Antitoxin 0x6F
 #define Torch 0x70
 #define TorchItem 0x70
-#define DelphiShield 0x71
+#define ThiefStaff 0x71
 #define MemberCard 0x72
 #define SilverCard 0x73
 #define WhiteGem 0x74

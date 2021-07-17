@@ -44,7 +44,6 @@ ItemEffectivenessPtr(Dragonstone, MonsterEffectiveness)
 ItemEffectivenessPtr(Aircalibur, FlierEffectiveness)
 
 //Protector item (macro still works, even if it's wrongly named)
-ItemEffectivenessPtr(DelphiShield, FlierProtection)
 
 #define SetWeaponEffectiveness(type_list, coefficient_times_2) "BYTE 0 coefficient_times_2; SHORT type_list"
 LordWeaponEffectiveness:

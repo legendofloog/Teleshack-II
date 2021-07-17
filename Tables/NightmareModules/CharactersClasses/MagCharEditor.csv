@@ -1,10 +1,10 @@
 INLINE MagCharTable,Base Magic,Magic Growth
-None,0,0
-Eirika,0,25
-Seth,2,10
-Gilliam,0,5
-Franz,1,10
-Moulder,3,40
+0x01 Claudia,0,0
+0x02 Mira,0,25
+0x03 Iskra,2,10
+0x04 Emil,0,5
+0x05 Svetomir,1,10
+0x06 Alena,3,40
 Vanessa,2,25
 Ross,0,5
 Neimi,2,15
@@ -13,7 +13,7 @@ Garcia,0,5
 Innes,1,10
 Lute,5,65
 Natasha,1,60
-Cormag,0,5
+0x0F Loewe,0,5
 Ephraim,0,15
 Forde,1,10
 Kyle,0,10
