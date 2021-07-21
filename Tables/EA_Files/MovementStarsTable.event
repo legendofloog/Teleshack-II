@@ -4,12 +4,12 @@ ALIGN 4
 MovementStarsTable:
 // ALLIES
 MovementStarsTableEntry(0) // Unit 0x0
-MovementStarsTableEntry(1) // starts with Claudia (0x01)
+MovementStarsTableEntry(0) // starts with Claudia (0x01)
 MovementStarsTableEntry(0) // Mira
-MovementStarsTableEntry(2) // Iskra
-MovementStarsTableEntry(1) // Emil
+MovementStarsTableEntry(0) // Iskra
+MovementStarsTableEntry(0) // Emil
 MovementStarsTableEntry(3) // Svetomir
-MovementStarsTableEntry(2) // Alena
+MovementStarsTableEntry(3) // Alena
 MovementStarsTableEntry(0) // Ross
 MovementStarsTableEntry(0) // Neimi
 MovementStarsTableEntry(0) // Colm

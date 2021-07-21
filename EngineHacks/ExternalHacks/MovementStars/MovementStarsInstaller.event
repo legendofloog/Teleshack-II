@@ -1,0 +1,7 @@
+ALIGN 4
+ReMove: // edited off of ReMove by Sme
+#incbin "MovementStars.dmp"
+POIN SkillTester
+//WORD ReMoveID
+POIN ReMoveEvent
+#include "ReMoveEvent.event"

@@ -21,10 +21,10 @@
 /****************************************************************\
 Version 3.4 
 
-How to use EA standard library:
+How to use EAStandardLibrary:
  Include this file, EAstdlib.event, to your code.
  Then use macro's and definitions you see in 
- EA Standard library folder.
+ EAStandardLibrary folder.
 
 Changes:
 V 1.1:
@@ -252,5 +252,11 @@ V3.4
 #ifndef EA_STDLIB_STRICT
 #include "EAStandardLibrary/Code Aliases.txt"
 #endif // EA_STDLIB_STRICT
+
+#ifdef _FE7_
+#ifdef DISABLE_TUTORIALS
+#include "EAStandardLibrary/FE7 Tutorial Disabler.txt"
+#endif
+#endif
 
 #endif //EA_STDLIB_EVENT

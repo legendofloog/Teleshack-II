@@ -66,9 +66,9 @@
 #define Nosferatu 0x41
 #define Purge 0x42
 #define Aura 0x43
-#define Luce 0x44
+#define Again 0x44
 #define Flux 0x45
-#define Luna 0x46
+#define Sigil 0x46
 #define Jormungand 0x47
 #define Eclipse 0x48
 #define Fenrir 0x49

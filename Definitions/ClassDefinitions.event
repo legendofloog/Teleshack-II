@@ -47,7 +47,7 @@
 #define DarkBishop 0x2F
 #define DarkBishop_F 0x30
 #define Bard 0x31
-#define Sister 0x32
+#define Devotee_F 0x32
 #define ThiefFighter 0x33
 #define GorgonEgg 0x34
 #define Priest 0x35
@@ -105,7 +105,7 @@
 #define GoldKnight_Dismounted 0x69
 #define Troubadour_Dismounted 0x6A
 #define Paladin_Dismounted 0x6B
-#define EmptyKillerBallista 0x6C
+#define Bard_F 0x6C
 #define Civilian 0x6D
 #define Civilian_F 0x6E
 #define Civilian_2 0x6F
@@ -122,5 +122,5 @@
 #define Freelancer 0x7A
 #define Champion 0x7B
 #define MasterKnight_F_Dismounted 0x7c
-
+#define Devotee_M 0x7D
 

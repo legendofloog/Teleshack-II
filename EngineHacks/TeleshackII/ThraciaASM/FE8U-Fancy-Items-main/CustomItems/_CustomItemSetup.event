@@ -1,11 +1,8 @@
 #include "_ItemArrayMacros.event"
 
 //fancy staves
-#include "TrapStaves/_BallistaStaff_Setup.event"
 
 #include "TrapStaves/_LightruneStaff_Setup.event"
-
-#include "TrapStaves/_MineStaff_Setup.event"
 
 #include "RewarpStaff/_RewarpStaff_Setup.event"
 

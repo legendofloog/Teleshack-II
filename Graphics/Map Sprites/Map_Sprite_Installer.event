@@ -131,10 +131,17 @@ DracoknightMoving:
 
 ALIGN 4
 BardStanding:
-#incbin "Dmp/Mage (M) Thunder (Leif)-stand.dmp"
+#incbin "Dmp/bard_1.dmp"
 ALIGN 4
 BardMoving:
-#incbin "Dmp/Mage (M) Thunder (Leif)-move.dmp"
+#incbin "Dmp/bardmove.dmp"
+
+ALIGN 4
+Bard_F_Standing:
+#incbin "Dmp/Mage (F) Light Mage {Leo_Link, L95}-stand.dmp"
+ALIGN 4
+Bard_F_Moving:
+#incbin "Dmp/Mage (F) Light Mage {Leo_Link, L95}-move.dmp"
 
 ALIGN 4
 SisterStanding:
@@ -142,6 +149,13 @@ SisterStanding:
 ALIGN 4
 SisterMoving:
 #incbin "Dmp/Monk (F) {Teraspark}-move.dmp"
+
+ALIGN 4
+BrotherStanding:
+#incbin "Dmp/Monk (M) {IS}-stand.dmp"
+ALIGN 4
+BrotherMoving:
+#incbin "Dmp/Monk (M) {IS}-move.dmp"
 
 ALIGN 4
 PriestStanding:
@@ -347,3 +361,10 @@ LongBallistaMoving:
 ALIGN 4
 LongBallistaStanding:
 #incbin "Dmp/Ballistician (U) {Aruka, Kenpuhu}-stand.dmp"
+
+ALIGN 4
+DismountedStanding:
+#incbin "Dmp/Lord (M) Roy T1 Generic {AnnoyingAnon}-stand.dmp"
+ALIGN 4
+DismountedMoving:
+#incbin "Dmp/Lord (M) Roy T1 Generic {AnnoyingAnon}-move.dmp"

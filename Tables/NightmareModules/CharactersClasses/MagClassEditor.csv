@@ -48,7 +48,7 @@ Dark Mage,2,20,20,0
 Dark Mage (F),2,20,20,0
 Dark Bishop,5,20,20,3
 Dark Bishop (F),5,20,20,3
-Bard,1,20,20,0
+Bard,1,20,20,6
 Sister,1,20,20,0
 Thief Fighter,1,3,20,1
 Gorgon Egg,0,0,20,0
@@ -107,7 +107,7 @@ Rook Knight (D),0,0,20,0
 Gold Knight (D),0,0,20,0
 Ballista,0,0,20,0
 Paladin (D),0,0,20,0
-Killer Ballista,0,0,20,0
+Bard (F),1,20,20,6
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
 Civilian,0,0,20,0
@@ -124,7 +124,7 @@ Tent,0,0,20,0
 Freelancer,0,3,20,0
 Champion,1,3,20,1
 (empty),0,0,20,0
-(empty),0,0,20,0
+Brother,0,0,20,0
 LongBallista,1,3,20,0
 (empty),2,55,20,1
 Ephraim Lord,1,10,20,0

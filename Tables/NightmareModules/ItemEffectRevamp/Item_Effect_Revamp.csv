@@ -56,10 +56,10 @@ Another Vulnerary (can be replaced with custom item effect),0x8028b60,0x802a100,
 Juna Fruit,0x8028bf8,0x802a0f4,0x802905c,0x802ff70
 Latona,0x8028b98,0x802a100,0x8029014,0x802ff48
 Multi-Skill Scroll,MultiScrollUsability|IsPointer,MultiScrollPrepUsability|IsPointer,0x802905c,MultiScrollEffect|IsPointer
-0x39 Rewarp,RewarpStaff_Usability|IsPointer,0x802a100,RewarpStaff_Targeting|IsPointer,RewarpStaff_UseEffect|IsPointer
-0x3a Thief,StealStaff_Usability|IsPointer,0x802a100,StealStaff_Targeting|IsPointer,StealStaff_ItemEffect|IsPointer
-0x3b,0x8028c04,0x802a100,0x802905c,0x802ff76
-0x3c,0x8028c04,0x802a100,0x802905c,0x802ff76
+0x39 Rewarp,RewarpStaff_Usability|IsPointer,0x8028b2c,RewarpStaff_Targeting|IsPointer,RewarpStaff_UseEffect|IsPointer
+0x3a Thief,StealStaff_Usability|IsPointer,0x8028b2c,StealStaff_Targeting|IsPointer,StealStaff_ItemEffect|IsPointer
+0x3b Sigil,LightRuneStaff_Usability|IsPointer,0x8028b2c,LightRuneStaff_Targeting|IsPointer,LightRuneStaff_Effect|IsPointer
+0x3c Again,AgainStaff_Usability|IsPointer,0x802a100,AgainStaff_Targeting|IsPointer,AgainStaff_Effect|IsPointer
 0x3d,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x3e,0x8028b60,0x802a100,0x802905c,0x802ff76
 0x3f,0x8028c04,0x802a100,0x802905c,0x802ff76
