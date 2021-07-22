@@ -301,7 +301,7 @@
 #define PRESS_SELECT_TO_VIEW_GROWTHS
 
 //If true, the stat colors for player units will reflect their growth in the stat.
-#define USE_STAT_COLORS True
+#define USE_STAT_COLORS False
 
 //If true, Fixed Growths mode will exist.
 #define FIXED_GROWTHS_MODE False

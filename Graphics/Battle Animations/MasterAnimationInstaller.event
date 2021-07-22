@@ -171,8 +171,8 @@
 }
 
 {
-#include "Animations/Bard_F(Teraspark)/Magic Installer.event"
-#include "Animations/Bard_F(Teraspark)/Staff Installer.event"
+#include "Animations/Devotee_F(Teraspark)/Magic Installer.event"
+#include "Animations/Devotee_F(Teraspark)/Staff Installer.event"
 }
 
 {
@@ -296,4 +296,38 @@
 #include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Axe Installer.event"
 #include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Handaxe Installer.event"
 #include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Bow Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Axe Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Handaxe Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Staff Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Sword Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Lance Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Bow Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Axe Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Handaxe Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Staff Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Sword Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Lance Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Bard_F(L95, Leo_link, Flasuban)/Magic Installer.event"
+}
+
+{
+#include "Animations/BattleSage(St_jack)/Magic Installer.event"
+#include "Animations/BattleSage(St_jack)/Sword Installer.event"
+}
+
+{
+#include "Animations/BattleSage_F(St_jack)/Magic Installer.event"
+#include "Animations/BattleSage_F(St_jack)/Sword Installer.event"
 }

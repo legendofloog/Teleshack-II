@@ -5,3 +5,4 @@ POIN SkillTester
 //WORD ReMoveID
 POIN ReMoveEvent
 #include "ReMoveEvent.event"
+MESSAGE MovementStars ends at currentOffset 

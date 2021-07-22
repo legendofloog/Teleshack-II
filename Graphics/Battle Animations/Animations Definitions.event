@@ -184,6 +184,32 @@
 #define ForrestKnightSwordAnim 0x9D
 #define ForrestKnightUnarmedAnim 0x9e
 
+#define DismountedFAxeAnim 0xA0
+#define DismountedFHandAxeAnim 0xA1
+#define DismountedFSwordAnim 0xA2
+#define DismountedFLanceAnim 0xA3
+#define DismountedFBowAnim 0xA4
+#define DismountedFStaffAnim 0xA5
+#define DismountedFUnarmedAnim 0xA6
+
+#define DismountedMAxeAnim 0xA7
+#define DismountedMHandAxeAnim 0xA8
+#define DismountedMSwordAnim 0xA9
+#define DismountedMBowAnim 0xAA
+#define DismountedMStaffAnim 0xAB
+#define DismountedMLanceAnim 0xAF
+#define DismountedMUnarmedAnim 0xB0
+
+#define BardFMagicAnim 0xAC
+
+#define BrotherMagicAnim 0xAD
+#define BrotherStaffAnim 0xAE
+
+#define MageKnightDismountedMagicAnim 0xB1
+#define MageKnightDismountedSwordAnim 0xB2
+#define MageKnightFDismountedMagicAnim 0xB3
+#define MageKnightFDismountedSwordAnim 0xB4
+
 #define ForrestKnightFUnarmedAnim 0xCD
 #define ForrestKnightFSwordAnim 0xF2
 
@@ -476,10 +502,24 @@ UnarmedAnim(BardMagicAnim)
 EndAnim
 
 ALIGN 4
+BardFAnims:
+AnimaAnim(BardFMagicAnim)
+LightAnim(BardFMagicAnim)
+UnarmedAnim(BardFMagicAnim)
+EndAnim
+
+ALIGN 4
 SisterAnims:
 LightAnim(SisterMagicAnim)
 StaffAnim(SisterStaffAnim)
 UnarmedAnim(SisterMagicAnim)
+EndAnim
+
+ALIGN 4
+BrotherAnims:
+LightAnim(BrotherMagicAnim)
+StaffAnim(BrotherStaffAnim)
+UnarmedAnim(BrotherMagicAnim)
 EndAnim
 
 ALIGN 4
@@ -656,4 +696,40 @@ LongBallisticianAnims:
 SpecialAnim(BallistaAnim,LongArch)
 SpecialAnim(BallistaAnim,IronArch)
 SpecialAnim(BallistaAnim,KillerArch)
+EndAnim
+
+ALIGN 4
+DismountedFAnims:
+SwordAnim(DismountedFSwordAnim)
+AxeAnim(DismountedFAxeAnim)
+HandAxeAnim(DismountedFHandAxeAnim)
+SpearAnim(DismountedFLanceAnim)
+BowAnim(DismountedFBowAnim)
+StaffAnim(DismountedFStaffAnim)
+UnarmedAnim(DismountedFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+DismountedMAnims:
+SwordAnim(DismountedMSwordAnim)
+AxeAnim(DismountedMAxeAnim)
+HandAxeAnim(DismountedMHandAxeAnim)
+SpearAnim(NobleMSwordAnim)
+BowAnim(DismountedMBowAnim)
+StaffAnim(DismountedMStaffAnim)
+UnarmedAnim(NobleMUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MageKnightDismountedAnims:
+SwordAnim(MageKnightDismountedSwordAnim)
+AnimaAnim(MageKnightDismountedMagicAnim)
+UnarmedAnim(MageKnightDismountedMagicAnim)
+EndAnim
+
+ALIGN 4
+MageKnightFDismountedAnims:
+SwordAnim(MageKnightFDismountedSwordAnim)
+AnimaAnim(MageKnightFDismountedMagicAnim)
+UnarmedAnim(MageKnightFDismountedMagicAnim)
 EndAnim

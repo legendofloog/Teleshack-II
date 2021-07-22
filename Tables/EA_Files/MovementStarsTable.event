@@ -6,7 +6,7 @@ MovementStarsTable:
 MovementStarsTableEntry(0) // Unit 0x0
 MovementStarsTableEntry(0) // starts with Claudia (0x01)
 MovementStarsTableEntry(0) // Mira
-MovementStarsTableEntry(0) // Iskra
+MovementStarsTableEntry(1) // Iskra
 MovementStarsTableEntry(0) // Emil
 MovementStarsTableEntry(3) // Svetomir
 MovementStarsTableEntry(3) // Alena
@@ -17,7 +17,7 @@ MovementStarsTableEntry(0) // Garcia
 MovementStarsTableEntry(0) // Innes
 MovementStarsTableEntry(0) // Natasha
 MovementStarsTableEntry(0) // Cormag
-MovementStarsTableEntry(2) // Loewe
+MovementStarsTableEntry(0) // Loewe
 MovementStarsTableEntry(0) // Forde
 MovementStarsTableEntry(0) // Kyle
 MovementStarsTableEntry(0) // Amelia

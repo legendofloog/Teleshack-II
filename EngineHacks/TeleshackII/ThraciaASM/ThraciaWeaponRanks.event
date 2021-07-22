@@ -1,7 +1,8 @@
-// thanks to Blademaster for the hex locations
+// thanks to Blademaster for the hex locations for ranks
 
 PUSH
-//Weapon level modifications
+// Weapon level modifications
+
 ORG 0x16d66 // D rank WEXP
 BYTE 50
 
@@ -46,5 +47,14 @@ BYTE 200
 
 ORG 0x16eb8 // bar to S rank WEXP
 BYTE 50
+
+ORG 0x2C150 // removes S-rank limit, credit Tequila
+BYTE 0x11 0xE0
+
+ORG 0x2c1a2 // removes A-rank limit for unpromoted units, credit 7743
+BYTE 251
+
+ORG 0x2c1a6
+BYTE 251
 
 POP

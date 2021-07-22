@@ -15,12 +15,12 @@ cmp	r0, #0x00
 beq	End
 
 @check if already re-moved this turn
-ldr	r0, [r4,#0x0C]	@status bitfield
-mov	r1, #0x04
-lsl	r1, #0x08
-and	r0, r1
-cmp	r0, #0x00
-bne	End
+@ldr	r0, [r4,#0x0C]	@status bitfield    
+@mov	r1, #0x04  
+@lsl	r1, #0x08
+@and	r0, r1
+@cmp	r0, #0x00
+@bne	End
 
 @check if red/green
 ldrb r0, [r4,#0x0B]  @allegiance byte of the current character taking action
@@ -41,10 +41,10 @@ mov	lr, r2
 .short	0xF800
 cmp	r0, #0x01
 bne	End
-mov	r1, #0x04
-lsl	r1, #0x08
-orr	r0, r1
-str	r0, [r4,#0x0C]
+@mov	r1, #0x04        commented out because it unset the rescuing bit
+@lsl	r1, #0x08
+@orr	r0, r1
+@str	r0, [r4,#0x0C]
 
 
 @unset 0x2 and 0x40, write to status
@@ -59,7 +59,6 @@ ldr	r0, =0x800D07C		@event engine thingy
 mov	lr, r0
 ldr	r0, ReMoveEvent		@this event is just "play some sound effects"
 mov	r1, #0x01			@0x01 = wait for events
-.short	0xF800
 
 End:
 pop	{r0}

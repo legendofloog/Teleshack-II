@@ -1,3 +1,4 @@
 #include "MovementCostTable.event"
-#include "ConMoveGrowthsTable.event"
+#include "ConGrowthsTable.event"
 #include "MovementStarsTable.event"
+#include "MoveGrowthsTable.event"
