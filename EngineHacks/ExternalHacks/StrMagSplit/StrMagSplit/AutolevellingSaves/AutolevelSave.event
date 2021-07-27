@@ -37,6 +37,25 @@
 	#incbin "ClassMagAutolevel.dmp"
 	POIN MagClassTable
 
+	//ALIGN 4
+	//Char_Con_Autolevel:
+	//#incbin "CharConAutolevel.dmp"
+	//POIN ConGrowthCharTable
+
+	//ALIGN 4
+	//Class_Con_Autolevel:
+	//#incbin "ClassConAutolevel.dmp"
+	//POIN ConGrowthClassTable
+
+	//ALIGN 4
+	//Char_Mov_Autolevel:
+	//#incbin "CharMoveAutolevel.dmp"
+	//POIN MoveGrowthCharTable
+
+	//ALIGN 4
+	//Class_Mov_Autolevel:
+	//#incbin "ClassMoveAutolevel.dmp"
+	//POIN MoveGrowthClassTable
 	
 #else
 	ERROR "You're not assembling FE8 events!"

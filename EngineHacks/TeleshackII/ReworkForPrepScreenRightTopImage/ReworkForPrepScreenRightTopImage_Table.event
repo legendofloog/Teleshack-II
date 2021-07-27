@@ -4,11 +4,5 @@
 ReworkForPrepScreenRightTopImage_Table:
 
 //塔 Tower
-ChapterNumberRework(ReunionPrologue,ChapterImage,0)
-ChapterNumberRework(HoltornGrove,ChapterImage,0)
-ChapterNumberRework(UnexpectedEncounter,ChapterImage,0)
-ChapterNumberRework(WingsOfRivald,ChapterImage,0)
-ChapterNumberRework(LastStand,ChapterImage,0)
-ChapterNumberRework(InDefenseOfHope,ChapterImage,0)
-ChapterNumberRework(RagingRivers,ChapterImage,0)
+
 ChapterNumberRework(0xFF,0xFF,0xFFFF)  // Term

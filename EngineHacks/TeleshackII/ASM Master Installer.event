@@ -1,3 +1,24 @@
 #include "ThraciaASM/ThraciaASMInstaller.event"
-#include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
+#include "Music/MusicAsmInstaller.event"
 #include "Fixes/MasterFixesInstaller.event"
+
+#include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
+
+#include "ASMCCheckSuite/ASMC Check Installer.event"
+#include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
+
+ALIGN 4
+ChangeWeaponRankASMC:
+#incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
+
+#include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
+
+#include "FE8-Set Condition/FE8-Set Condition.event"
+
+#include "ModularMinimugBox-master/Installers/MMBInstallerSagaOfTheSigilbearers.event"
+
+#include "PortraitHeight/PortraitShiftTable(installthisone).event"
+
+#include "StanAI/StanAI.event"
+
+#include "ReworkForPrepScreenRightTopImage/Installer.event"

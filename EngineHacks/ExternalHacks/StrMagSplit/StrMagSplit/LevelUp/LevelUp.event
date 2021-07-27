@@ -107,6 +107,7 @@ PUSH
 	#endif
 	
 	ORG $73588
+	//#incbin "Write Growth to Ram Anim On(blademaster).dmp"
 	#incbin "WriteGrowthtoRamAnimOn.dmp"
 	SHORT 0xE096
 	
@@ -248,7 +249,7 @@ ALIGN 4
 New_Stats_Jump_Table:
 POIN 0x7EC44 0x7EC48 0x7EC64 0x7ED0C 0x7EC80 0x7EC9C 0x7ECB8 0x7ECD4 0x7ECF0
 #ifdef ExpandedLevelUpScreen
-	POIN 0x7ED28 0x7ED28
+	POIN ConMapAnimCheck MovMapAnimCheck
 #endif
 
 ALIGN 4
@@ -269,3 +270,13 @@ WORD Mov_Text_ID
 ALIGN 4
 LevelUpWriteBackMag:
 #include "LevelUpWriteBackMag.event"
+
+//both of these are from Blademaster
+
+ALIGN 4
+ConMapAnimCheck:
+#incbin "1(blademaster).dmp"
+
+ALIGN 4
+MovMapAnimCheck:
+#incbin "2(blademaster).dmp"

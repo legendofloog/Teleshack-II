@@ -1,4 +1,6 @@
 #include "MovementCostTable.event"
-#include "ConGrowthsTable.event"
+#include "ConGrowthCharTable.event"
+#include "ConGrowthClassTable.event"
 #include "MovementStarsTable.event"
-#include "MoveGrowthsTable.event"
+#include "MoveGrowthCharTable.event"
+#include "MoveGrowthClassTable.event"

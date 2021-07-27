@@ -1,6 +1,6 @@
   ALIGN 4
 	Growth_Getter_Table:
-	POIN Get_Hp_Growth Get_Str_Growth Get_Mag_Growth Get_Skl_Growth Get_Spd_Growth Get_Luk_Growth Get_Def_Growth Get_Res_Growth
+	POIN Get_Hp_Growth Get_Str_Growth Get_Mag_Growth Get_Skl_Growth Get_Spd_Growth Get_Luk_Growth Get_Def_Growth Get_Res_Growth Get_Con_Growth Get_Mov_Growth
 
 	ALIGN 4
 	Get_Hp_Growth:
@@ -50,6 +50,20 @@
 	Get_Luk_Growth:
 	#incbin "Get_Luk_Growth.dmp"
 	POIN Extra_Growth_Boosts|1
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+
+	Get_Con_Growth:
+	#incbin "Get_Con_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	POIN ConGrowthsCharTable
+	POIN ConGrowthsClassTable
+	WORD USE_CHAR_AND_CLASS_GROWTHS
+
+	Get_Mov_Growth:
+	#incbin "Get_Mov_Growth.dmp"
+	POIN Extra_Growth_Boosts|1
+	POIN MoveGrowthsCharTable
+	POIN MoveGrowthsClassTable
 	WORD USE_CHAR_AND_CLASS_GROWTHS
 
 	ALIGN 4

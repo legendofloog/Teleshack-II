@@ -256,7 +256,7 @@
 	#else
 		WORD 0 // Code in this function treats 0 here as strmag not installed and does nothing.
 	#endif // USE_STRMAG_SPLIT
-	POIN Get_Skl_Growth Get_Spd_Growth Get_Def_Growth Get_Res_Growth Get_Luk_Growth
+	POIN Get_Skl_Growth Get_Spd_Growth Get_Def_Growth Get_Res_Growth Get_Luk_Growth Get_Con_Growth Get_Mov_Growth
     WORD Growth_Options
 
   ALIGN 4

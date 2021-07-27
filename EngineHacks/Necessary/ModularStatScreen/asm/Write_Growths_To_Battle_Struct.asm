@@ -10,7 +10,9 @@
 .equ Get_Def_Growth, Class_Level_Cap_Table+24
 .equ Get_Res_Growth, Class_Level_Cap_Table+28
 .equ Get_Luk_Growth, Class_Level_Cap_Table+32
-.equ Growth_Options, Class_Level_Cap_Table+36
+.equ Get_Con_Growth, Class_Level_Cap_Table+36
+.equ Get_Mov_Growth, Class_Level_Cap_Table+40
+.equ Growth_Options, Class_Level_Cap_Table+44
 
 @jumped here from 2BA28
 @r0=battle struct of person who's levelling up
@@ -201,6 +203,40 @@ mov		r14,r6
 .short	0xF800
 mov		r1,r7
 add		r1,#0x79
+strb	r0,[r1]
+add		r5,r0
+cmp		r4,#0x0
+beq		ConGrowth
+cmp		r5,#0x0
+beq             ConGrowth  
+b		CheckCaps
+
+ConGrowth:
+ldr		r0,Get_Con_Growth
+mov		r14,r0
+mov		r0,r7
+.short	0xF800
+mov		r14,r6
+.short	0xF800
+mov		r1,r7
+add		r1,#0x59
+strb	r0,[r1]
+add		r5,r0
+cmp		r4,#0x0
+beq		MovGrowth
+cmp		r5,#0x0
+beq		MovGrowth
+b		CheckCaps
+
+MovGrowth:
+ldr		r0,Get_Mov_Growth
+mov		r14,r0
+mov		r0,r7
+.short	0xF800
+mov		r14,r6
+.short	0xF800
+mov		r1,r7
+add		r1,#0x7F
 strb	r0,[r1]
 add		r5,r0
 cmp		r5,#0x0

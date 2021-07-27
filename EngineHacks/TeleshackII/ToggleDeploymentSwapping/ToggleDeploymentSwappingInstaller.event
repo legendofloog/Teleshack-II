@@ -8,7 +8,7 @@
 #define EndDeploymentGroupChapterList "WORD 0 0"
 
 #define AllModes 0xFF
-
+#define AllChapters 0xFF
 PUSH
 
 ORG 0x1D538
@@ -52,20 +52,8 @@ ALIGN 4
 ALIGN 4
 
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
-ForcedDeployment(Rune,LockedPosition,AllModes,LastStand)
-ForcedDeployment(Hartner,LockedPosition,AllModes,LastStand)
-ForcedDeployment(Asgeir,LockedPosition,AllModes,LastStand)
-ForcedDeployment(Rune,UnlockedPosition,AllModes,AllChapters)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,ReunionPrologue)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,HoltornGrove)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,UnexpectedEncounter)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,WingsOfRivald)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,InDefenseOfHope)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,RagingRivers)
-ForcedDeployment(Signe,UnlockedPosition,AllModes,UnexpectedEncounter)
-ForcedDeployment(Solveig,UnlockedPosition,AllModes,WingsOfRivald)
-ForcedDeployment(Hartner,UnlockedPosition,AllModes,RagingRivers)
-ForcedDeployment(Eindride,UnlockedPosition,AllModes,RagingRivers)
+ForcedDeployment(Claudia,UnlockedPosition,AllModes,AllChapters)
+ForcedDeployment(Loewe,UnlockedPosition,AllModes,AllChapters)
 EndForcedDeploymentList
 
 DeploymentGroupChapterList:
