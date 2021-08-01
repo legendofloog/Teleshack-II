@@ -1,0 +1,80 @@
+PUSH {r4,lr}   //GetUnitAid
+MOV r4, r1
+LDR r2, [r4, #0x4] // loads class data
+LDR r3, [r4, #0x0] // loads char data
+LDR r2, [r2, #0x28]
+LDR r3, [r3, #0x28]
+ORR r2 ,r3
+MOV r3, #0x1
+AND r2 ,r3
+CMP r2, #0x0
+BEQ #0xwhatever
+    mov r0, #0x0
+    B 0x8018A14
+MOV r4, r0 // 0xwhatever
+LDR r3, [r4, #0x0] // loads char data
+LDR r2, [r4, #0x4] // loads class data
+LDR r1, [r3, #0x28]
+LDR r0, [r2, #0x28]
+ORR r1 ,r0
+MOV r0, #0x1
+AND r0 ,r1
+CMP r0, #0x0
+BNE #0x80189E2 // skips past this section if mounted
+    MOV r0, #0x11
+    LDSB r0, [r2, r0] // loads class con
+    MOV r1, #0x13
+    LDSB r1, [r3, r1] // loads char con
+    ADD r0 ,r1        // adds together and puts in r0
+    MOV r1, #0x1A     
+    LDSB r1, [r4, r1] // loads con bonus from character struct
+    ADD r0 ,r1        
+    SUB r0, #0x1      // nop this line
+    B 0x8018A14 // goes to the first pop at the end; should change to new location of first pop
+MOV r0, #0x80 // skip goes here; checks if the character's female
+LSL r0, #0x7 //don't need any of this, so can just load r0 with 0x14 and bring up the last three lines, nop everything else/ignore
+// mov r0, #0x14
+// pop {r4}
+// pop {r1}
+// bx r1
+
+everything under this can be ignored, let's add some stuff to make mounted units unrescuable
+LDR r3, [r4, #0x0] // loads char data
+LDR r2, [r4, #0x4] // loads class data
+LDR r1, [r3, #0x28]
+LDR r0, [r2, #0x28]
+ORR r1 ,r0
+MOV r0, #0x1
+AND r0 ,r1
+CMP r0, #0x0
+BNE #0xsomething
+
+
+
+
+AND r1 ,r0
+CMP r1, #0x0 
+BNE #0x8018A00 // skips over all this
+    MOV r1, #0x11
+    LDSB r1, [r2, r1] // loads class con
+    MOV r0, #0x13
+    LDSB r0, [r3, r0] // loads char con
+    ADD r1, r0
+    MOV r0, #0x1A
+    LDSB r0, [r4, r0]
+    ADD r1 ,r1, R0 // equivalent to class con + char con + con bonus
+    MOV r0, #0x19 // loads r0 with 25
+    B 0x8018A12 // jumps to SUB before pop {r4}
+MOV r1, #0x11 // skip goes here
+LDSB r1, [r2, r1]
+MOV r0, #0x13
+LDSB r0, [r3, r0]
+ADD r1 ,r1, R0
+MOV r0, #0x1A
+LDSB r0, [r4, r0]
+ADD r1 ,r1, R0
+MOV r0, #0x14 // loads r0 with 20
+SUB r0, R1
+POP {r4}
+POP {r1}
+BX r1

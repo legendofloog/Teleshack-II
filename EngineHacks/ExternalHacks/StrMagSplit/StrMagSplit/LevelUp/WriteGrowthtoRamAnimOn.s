@@ -39,6 +39,7 @@ strb    r0,[r1,#0x7]
 ldrb    r2,[r3,#0x8]
 add     r0,r0,r2
 strb    r0, [r1, #0x17]
+@lck
 ldrb    r0, [r4, #0x1A]
 strb    r0, [r1, #0x8]   @ gLevelUpLckBase
 strb    r0, [r1, #0x18]   @ gLevelUpLckUp
@@ -47,8 +48,8 @@ strb    r0, [r1, #0x9]
 strb    r0, [r1, #0x19]
 mov     r0 ,r5
 add     r0, #0x3A
-ldrb    r0, [r0, #0x0]
+ldrb    r0, [r0]
 strb    r0, [r1, #0x2]   @ gLevelUpPowBase
 ldrb    r2, [r3, #0xA]
-add     r0 ,r0, R2
+add     r0 ,r0, r2
 strb    r0, [r1, #0x12]   @ gLevelUpPowUp
