@@ -1,0 +1,537 @@
+
+Simple TMX Library documentation
+********************************
+
+This library reads and writes the Tiled TMX format in a simple way.
+This is useful for map editors or generic level editors, and it's also
+useful for using a map editor or generic level editor like Tiled to
+edit your game's levels.
+
+To load a TMX file, use "tmx.TileMap.load()".  You can then read the
+attributes of the returned "tmx.TileMap" object, modify the attributes
+to your liking, and save your changes with "tmx.TileMap.save()".
+That's it!  Simple, isn't it?
+
+At the request of the developer of Tiled, this documentation does not
+explain in detail what each attribute means. For that, please see the
+TMX format specification, found here:
+
+http://doc.mapeditor.org/reference/tmx-map-format/
+
+
+tmx.TileMap
+===========
+
+class tmx.TileMap
+
+   This class loads, stores, and saves TMX files.
+
+   version
+
+      The TMX format version.
+
+   orientation
+
+      Map orientation.  Can be "orthogonal", "isometric", "staggered",
+      or "hexagonal".
+
+   renderorder
+
+      The order in which tiles are rendered.  Can be ""right-down"",
+      ""right-up"", ""left-down"", or ""left-up"".  Default is
+      ""right-down"".
+
+   width
+
+      The width of the map in tiles.
+
+   height
+
+      The height of the map in tiles.
+
+   tilewidth
+
+      The width of a tile.
+
+   tileheight
+
+      The height of a tile.
+
+   staggeraxis
+
+      Determines which axis is staggered.  Can be "x" or "y".  Set to
+      "None" to not set it.  Only meaningful for staggered and
+      hexagonal maps.
+
+   staggerindex
+
+      Determines what indexes along the staggered axis are shifted.
+      Can be "even" or "odd".  Set to "None" to not set it. Only
+      meaningful for staggered and hexagonal maps.
+
+   hexsidelength
+
+      Side length of the hexagon in hexagonal tiles.  Set to "None" to
+      not set it.  Only meaningful for hexagonal maps.
+
+   backgroundcolor
+
+      The background color of the map as a hex string (e.g. ""FF0000""
+      or ""#00FF00""), or "None" if no background color is defined.
+
+   nextobjectid
+
+      The next available ID for new objects.  Set to "None" to not set
+      it.
+
+   properties
+
+      A list of "Property" objects indicating the map's properties.
+
+   tilesets
+
+      A list of "Tileset" objects indicating the map's tilesets.
+
+   layers
+
+      A list of "Layer", "ObjectGroup", and "ImageLayer" objects
+      indicating the map's tile layers, object groups, and image
+      layers, respectively.  Those that appear in this list first are
+      rendered first (i.e. furthest in the back).
+
+classmethod TileMap.load(fname)
+
+   Load the TMX file with the indicated name and return a "TileMap"
+   object representing it.
+
+TileMap.save(fname, data_encoding='base64', data_compression=True)
+
+   Save the object to the file with the indicated name.
+
+   Arguments:
+
+   * "data_encoding" -- The encoding to use for layers.  Can be
+     ""base64"" or ""csv"".  Set to "None" for the default encoding
+     (currently ""base64"").
+
+   * "data_compression" -- Whether or not compression should be used
+     on layers if possible (currently only possible for base64-encoded
+     data).
+
+
+Other Classes
+=============
+
+class tmx.Image(format_=None, source=None, trans=None, width=None, height=None, data=None)
+
+   format
+
+      Indicates the format of image data if embedded.  Should be an
+      extension like ""png"", ""gif"", ""jpg"", or ""bmp"". Set to
+      "None" to not specify the format.
+
+   source
+
+      The location of the image file referenced.  If set to "None",
+      the image data is embedded.
+
+   trans
+
+      The transparent color of the image as a hex string (e.g.
+      ""FF0000"" or ""#00FF00""), or "None" if no color is treated as
+      transparent.
+
+   width
+
+      The width of the image in pixels; used for tile index correction
+      when the image changes.  If set to "None", the image width is
+      not explicitly specified.
+
+   height
+
+      The height of the image in pixels; used for tile index
+      correction when the image changes.  If set to "None", the image
+      height is not explicitly specified.
+
+   data
+
+      The image data if embedded, or "None" if an external image is
+      referenced.
+
+class tmx.ImageLayer(name, offsetx, offsety, opacity=1, visible=True, properties=None, image=None)
+
+   name
+
+      The name of the image layer.
+
+   offsetx
+
+      The x position of the image layer in pixels.
+
+   offsety
+
+      The y position of the image layer in pixels.
+
+   opacity
+
+      The opacity of the image layer as a value from 0 to 1.
+
+   visible
+
+      Whether or not the image layer is visible.
+
+   properties
+
+      A list of "Property" objects indicating the properties of the
+      image layer.
+
+   image
+
+      An "Image" object indicating the image of the image layer.
+
+class tmx.Layer(name, opacity=1, visible=True, offsetx=0, offsety=0, properties=None, tiles=None)
+
+   name
+
+      The name of the layer.
+
+   opacity
+
+      The opacity of the layer as a value from 0 to 1.
+
+   visible
+
+      Whether or not the layer is visible.
+
+   offsetx
+
+      Rendering offset for this layer in pixels.
+
+   offsety
+
+      Rendering offset for this layer in pixels.
+
+   properties
+
+      A list of "Property" objects indicating the properties of the
+      layer.
+
+   tiles
+
+      A list of "LayerTile" objects indicating the tiles of the layer.
+
+      The coordinates of each tile is determined by the tile's index
+      within this list.  Exactly how the tiles are positioned is
+      determined by the map orientation.
+
+class tmx.LayerTile(gid, hflip=False, vflip=False, dflip=False)
+
+   gid
+
+      The global ID of the tile.  A value of "0" indicates no tile at
+      this position.
+
+   hflip
+
+      Whether or not the tile is flipped horizontally.
+
+   vflip
+
+      Whether or not the tile is flipped vertically.
+
+   dflip
+
+      Whether or not the tile is flipped diagonally (X and Y axis
+      swapped).
+
+class tmx.Object(name, type_, x, y, width=0, height=0, rotation=0, gid=None, visible=True, properties=None, ellipse=False, polygon=None, polyline=None, id_=None)
+
+   id
+
+      Unique ID of the object as a string if set, or "None" otherwise.
+
+   name
+
+      The name of the object.  An arbitrary string.
+
+   type
+
+      The type of the object.  An arbitrary string.
+
+   x
+
+      The x coordinate of the object in pixels.  This is the left edge
+      of the object in orthogonal orientation, and the center of the
+      object otherwise.
+
+   y
+
+      The y coordinate of the object in pixels.  This is the bottom
+      edge of the object.
+
+   width
+
+      The width of the object in pixels.
+
+   height
+
+      The height of the object in pixels.
+
+   rotation
+
+      The rotation of the object in degrees clockwise.
+
+   gid
+
+      The tile to use as the object's image.  Set to "None" for no
+      reference to a tile.
+
+   visible
+
+      Whether or not the object is visible.
+
+   properties
+
+      A list of "Property" objects indicating the object's properties.
+
+   ellipse
+
+      Whether or not the object should be an ellipse.
+
+   polygon
+
+      A list of coordinate pair tuples relative to the object's
+      position indicating the points of the object's representation as
+      a polygon.  Set to "None" to not represent the object as a
+      polygon.
+
+   polyline
+
+      A list of coordinate pair tuples relative to the object's
+      position indicating the points of the object's representation as
+      a polyline.  Set to "None" to not represent the object as a
+      polyline.
+
+class tmx.ObjectGroup(name, color=None, opacity=1, visible=True, offsetx=0, offsety=0, draworder=None, properties=None, objects=None)
+
+   name
+
+      The name of the object group.
+
+   color
+
+      The color used to display the objects in this group as a hex
+      string (e.g. ""FF0000"" or ""#00FF00"").  Set to "None" for no
+      color definition.
+
+   opacity
+
+      The opacity of the object group as a value from 0 to 1.
+
+   visible
+
+      Whether or not the object group is visible.
+
+   offsetx
+
+      Rendering offset for this layer in pixels.
+
+   offsety
+
+      Rendering offset for this layer in pixels.
+
+   draworder
+
+      Can be "topdown" or "index".  Set to "None" to not define this.
+
+   properties
+
+      A list of "Property" objects indicating the object group's
+      properties
+
+   objects:
+
+      A list of "Object" objects indicating the object group's
+      objects.
+
+class tmx.Property(name, value)
+
+   name
+
+      The name of the property.
+
+   value
+
+      The value of the property.
+
+class tmx.TerrainType(name, tile, properties=None)
+
+   name
+
+      The name of the terrain type.
+
+   tile
+
+      The local tile ID of the tile that represents the terrain
+      visually.
+
+   properties
+
+      A list of "Property" objects indicating the terrain type's
+      properties.
+
+class tmx.Tile(id_, terrain=None, probability=None, properties=None, image=None, animation=None)
+
+   id
+
+      The local tile ID within its tileset.
+
+   terrain
+
+      Defines the terrain type of each corner of the tile, given as
+      comma-separated indexes in the list of terrain types in the
+      order top-left, top-right, bottom-left, bottom-right.  Leaving
+      out a value means that corner has no terrain. Set to "None" for
+      no terrain.
+
+   probability
+
+      A percentage indicating the probability that this tile is chosen
+      when it competes with others while editing with the terrain
+      tool. Set to "None" to not define this.
+
+   properties
+
+      A list of "Property" objects indicating the tile's properties.
+
+   image
+
+      An "Image" object indicating the tile's image.  Set to "None"
+      for no image.
+
+   animation
+
+      A list of "Frame" objects indicating this tile's animation. Set
+      to "None" for no animation.
+
+class tmx.Tileset(firstgid, name, tilewidth, tileheight, source=None, spacing=0, margin=0, xoffset=0, yoffset=0, tilecount=None, columns=None, properties=None, image=None, terraintypes=None, tiles=None)
+
+   firstgid
+
+      The first global tile ID of this tileset (this global ID maps to
+      the first tile in this tileset).
+
+   name
+
+      The name of this tileset.
+
+   tilewidth
+
+      The (maximum) width of the tiles in this tileset.
+
+   tileheight
+
+      The (maximum) height of the tiles in this tileset.
+
+   source
+
+      The external TSX (Tile Set XML) file to store this tileset in.
+      If set to "None", this tileset is stored in the TMX file.
+
+   spacing
+
+      The spacing in pixels between the tiles in this tileset (applies
+      to the tileset image).
+
+   margin
+
+      The margin around the tiles in this tileset (applies to the
+      tileset image).
+
+   xoffset
+
+      The horizontal offset of the tileset in pixels (positive is
+      right).
+
+   yoffset
+
+      The vertical offset of the tileset in pixels (positive is down).
+
+   tilecount
+
+      The number of tiles in this tileset.  Set to "None" to not
+      specify this.
+
+   columns
+
+      The number of tile columns in the tileset.  Set to "None" to not
+      specify this.
+
+   properties
+
+      A list of "Property" objects indicating the tileset's
+      properties.
+
+   image
+
+      An "Image" object indicating the tileset's image.  Set to "None"
+      for no image.
+
+   terraintypes
+
+      A list of "TerrainType" objects indicating the tileset's terrain
+      types.
+
+   tiles
+
+      A list of "Tile" objects indicating the tileset's tile
+      properties.
+
+
+Functions
+=========
+
+tmx.data_decode(data, encoding, compression=None)
+
+   Decode encoded data and return a list of integers it represents.
+
+   This is a low-level function used internally by this library; you
+   don't typically need to use it.
+
+   Arguments:
+
+   * "data" -- The data to decode.
+
+   * "encoding" -- The encoding of the data.  Can be ""base64"" or
+     ""csv"".
+
+   * "compression" -- The compression method used.  Valid
+     compression methods are ""gzip"" and ""zlib"".  Set to "None" for
+     no compression.
+
+tmx.data_encode(data, encoding, compression=True)
+
+   Encode a list of integers and return the encoded data.
+
+   This is a low-level function used internally by this library; you
+   don't typically need to use it.
+
+   Arguments:
+
+   * "data" -- The list of integers to encode.
+
+   * "encoding" -- The encoding of the data.  Can be ""base64"" or
+     ""csv"".
+
+   * "compression" -- Whether or not compression should be used if
+     supported.
+
+
+Indices and tables
+==================
+
+* Index
+
+* Module Index
+
+* Search Page

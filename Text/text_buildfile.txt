@@ -143,4 +143,6 @@ Ready to ride?[X]
 
 #include "unitinfo_text.txt"
 
-#include "ClassItemsEtc/ClassItemsEtcInstaller.event"
+#include "ClassItemsEtc/ClassNamesDescs.txt"
+#include "ClassItemsEtc/ItemNamesDescs_Free.txt"
+#include "ClassItemsEtc/StaffText.txt"
