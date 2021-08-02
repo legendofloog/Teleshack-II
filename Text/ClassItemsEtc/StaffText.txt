@@ -1,17 +1,5 @@
-#0xD0 BallistaStaffName
-Arbalest[X]
-
-## BallistaStaffDesc
-Summons a ballista[X]
-
-## BallistaStaffUseDesc
-Summon a ballista[X]
-
-## BallistaStaffHelpText
-Select where to summon ballista.[X]
-
 ## LightRuneName
-Light Rune [X]
+Sigil[X]
 
 ## LightRuneStaffDesc
 Create a light rune[NL]
@@ -24,16 +12,6 @@ with a light rune [X]
 ## LightRuneHelpText
 Select where to summon a Light Rune[X]
 
-## MineStaffName
-Mine[X]
-
-## MineStaffDesc
-Creates a mine[X]
-
-## MineStaffUseDesc
-Place a mine on[NL]
-the map[X]
-
 ## RewarpStaffName
 Rewarp [X]
 
@@ -42,7 +20,7 @@ Teleport user to [NL]
 another area.[X]
 
 ## StealStaffName
-Swipe[X]
+Thief[X]
 
 ## StealStaffDesc
 Steal an item from[NL]
@@ -54,12 +32,12 @@ Burglar[X]
 ## BurglarStaffDesc
 Opens doors and chests[X]
 
-##BurgularStaffHelpText
+## BurgularStaffHelpText
 Select door or chest to open[X]
 
-##AgainStaffName
+## AgainStaffName
 Again[X]
 
-##AgainStaffDesc
-Allow an ally to
-[NL] move again.[X]
+## AgainStaffDesc
+Allow an ally to[NL]
+move again.[X]

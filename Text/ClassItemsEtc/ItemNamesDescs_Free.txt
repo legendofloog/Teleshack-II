@@ -1,0 +1,41 @@
+## KingSwordDesc
+Doubles attacks, grants Charisma.[X]
+
+## FlameSwordDesc
+Casts magical flame. Mag +5.[X]
+
+## ParagonSwordDesc
+Doubles EXP gained. Def +5.[X]
+
+## ThunderSwordDesc
+Casts magical thunder. Skl +5.[X]
+
+## WindSwordDesc
+Casts magical wind. Spd +5.[X]
+
+## SleepSwordDesc
+Puts enemies to sleep if it hits.[X]
+
+## BerserkSwordDesc
+Drives enemies mad if it hits.[X]
+
+## WindName
+Wind[X]
+
+## BlizzardDesc
+Long-range storm. Puts enemy to sleep.[X]
+
+## FenrirDesc
+Casts long-range shadows.[X]
+
+## HelName
+Hel[X]
+
+## MeteorName
+Meteor[X]
+
+## MeteorDesc
+Casts long-range flames.[X]
+
+## ShortSwordName
+Short Sword[X]

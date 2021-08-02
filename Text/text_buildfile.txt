@@ -26,6 +26,8 @@ Likes:[X]
 #0xd4e HeightText
 Height:[X]
 
+#include "ClassItemsEtc/ItemNamesDescs.txt"
+
 #0xd4f AgeText
 Age:[X]
 

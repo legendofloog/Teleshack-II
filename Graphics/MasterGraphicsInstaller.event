@@ -8,3 +8,4 @@
 #include "Palettes/Clear/Clear Old Palettes.event"
 //#include "Palettes/Palette Setup.event"
 #include "Class Cards/MasterClassCardInstaller.event"
+#include "ItemIcons/MasterItemIconsInstaller.event"

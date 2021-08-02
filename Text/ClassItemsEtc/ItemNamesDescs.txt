@@ -70,9 +70,6 @@ Killer Arch[X]
 # 0x3ae ThoronName
 Thoron[X]
 
-# 0x403 WindName
-Wind[X]
-
 # 0x3af TornadoName
 Tornado[X]
 
@@ -87,3 +84,27 @@ Jormungand[X]
 
 # 0x387 RewarpName
 Rewarp[X]
+
+# 0x405 RapierDesc
+Eff. vs. cavalry/armors.[X]
+
+# 0x049C
+A valuable gemstone worth[.][NL]
+20,000 gold.[X]
+
+# 0x049D
+A valuable gemstone worth[.][NL]
+10,000 gold.[X]
+
+# 0x049E WhiteGemDesc
+A valuable gemstone worth[.][NL]
+5,000 gold.[X]
+
+# 0x049F BlueGemDesc
+A rare gemstone worth[.][NL]
+2,500 gold.[.][X]
+
+# 0x4a0 RedGemDesc
+An uncommon gemstone[NL]
+worth 1,000 gold.[.][X]
+
