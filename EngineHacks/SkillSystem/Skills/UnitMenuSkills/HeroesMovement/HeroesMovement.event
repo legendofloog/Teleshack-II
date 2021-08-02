@@ -77,16 +77,16 @@ prSwapCommand_Availability:
 		rIfUnitHasNotState(US_CANTOING)
 				rCallExternal(SwapClassCheck-1)
 
-
 prShoveCommand_Availability:
 	rGetWrapper
 		rIfUnitHasNotState(US_CANTOING)
-				rCallExternal(ShoveClassCheck-1)
+			rIfUnitHasNotAttribute(CA_MOUNTEDAID)
+				rConstant(True)
 
 prSmiteCommand_Availability:
 	rGetWrapper
 		rIfUnitHasNotState(US_CANTOING)
-				rCallExternal(SmiteClassCheck-1)
+			rCallExternal(SmiteClassCheck-1)
 
 prSwarpCommand_Availability:
 	rGetWrapper
