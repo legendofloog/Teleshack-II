@@ -22,3 +22,7 @@ ChangeWeaponRankASMC:
 #include "StanAI/StanAI.event"
 
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
+
+#include "NosResire/NosResire.event"
+
+#include "ForblazeSourcePort/Forblaze Installer.event"

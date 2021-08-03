@@ -461,6 +461,46 @@ __TEXTPROCESS4A0:
 #incbin ".TextEntries\text_buildfileRedGemDesc.fetxt.dmp"
 setText($4A0, __TEXTPROCESS4A0)
 
+__TEXTPROCESS3F4:
+#incbin ".TextEntries\text_buildfile3F4.fetxt.dmp"
+setText($3F4, __TEXTPROCESS3F4)
+
+__TEXTPROCESS4A5:
+#incbin ".TextEntries\text_buildfile4A5.fetxt.dmp"
+setText($4A5, __TEXTPROCESS4A5)
+
+__TEXTPROCESS374:
+#incbin ".TextEntries\text_buildfile374.fetxt.dmp"
+setText($374, __TEXTPROCESS374)
+
+__TEXTPROCESS424:
+#incbin ".TextEntries\text_buildfile424.fetxt.dmp"
+setText($424, __TEXTPROCESS424)
+
+__TEXTPROCESS3A4:
+#incbin ".TextEntries\text_buildfile3A4.fetxt.dmp"
+setText($3A4, __TEXTPROCESS3A4)
+
+__TEXTPROCESS454:
+#incbin ".TextEntries\text_buildfile454.fetxt.dmp"
+setText($454, __TEXTPROCESS454)
+
+__TEXTPROCESS3A5:
+#incbin ".TextEntries\text_buildfile3A5.fetxt.dmp"
+setText($3A5, __TEXTPROCESS3A5)
+
+__TEXTPROCESS455:
+#incbin ".TextEntries\text_buildfile455.fetxt.dmp"
+setText($455, __TEXTPROCESS455)
+
+__TEXTPROCESS3A6:
+#incbin ".TextEntries\text_buildfile3A6.fetxt.dmp"
+setText($3A6, __TEXTPROCESS3A6)
+
+__TEXTPROCESS456:
+#incbin ".TextEntries\text_buildfile456.fetxt.dmp"
+setText($456, __TEXTPROCESS456)
+
 __TEXTPROCESSD4F:
 #incbin ".TextEntries\text_buildfileAgeText.fetxt.dmp"
 setText($D4F, __TEXTPROCESSD4F)

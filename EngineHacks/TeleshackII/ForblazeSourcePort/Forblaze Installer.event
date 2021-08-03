@@ -10,7 +10,7 @@
 PUSH
 
 	//Add to spell effect pointer table
-	ORG $5D4EC0
+	ORG $5D4ED0
 	//5D4ED0 = 1c; use 5D4EC0 for 18
 	POIN StartSpellAnimForForblaze+1
 	

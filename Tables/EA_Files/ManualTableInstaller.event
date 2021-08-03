@@ -5,3 +5,4 @@
 #include "MoveGrowthCharTable.event"
 #include "MoveGrowthClassTable.event"
 #include "WeaponStatBoosts.event"
+#include "PromotionItemClassPointersTable.event"
