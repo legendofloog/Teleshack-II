@@ -11,3 +11,4 @@
 #define CharismaID 8
 #define WrathID 9
 
+#define CascadingRadianceID 10

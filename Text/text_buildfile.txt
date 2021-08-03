@@ -140,6 +140,7 @@ Mount[X]
 Ready to ride?[X]
 
 #include "skilldesc_text.txt"
+#include "custom_skilldesc.txt"
 
 #include "unitinfo_text.txt"
 
