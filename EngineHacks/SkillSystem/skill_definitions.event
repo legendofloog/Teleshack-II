@@ -10,5 +10,7 @@
 #define AstraID 7
 #define CharismaID 8
 #define WrathID 9
+#define ParagonID 10
+#define MiracleID 11
 
 #define CascadingRadianceID 10

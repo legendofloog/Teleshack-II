@@ -24,4 +24,14 @@ BYTE Noble_F
 BYTE ThiefFighter
 BYTE EndLockArray
 
+KaiserschwertArray:
+BYTE HardCharLock
+BYTE Loewe
+BYTE EndLockArray
+
+ArgilabrysArray:
+BYTE HardCharLock
+BYTE Claudia
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

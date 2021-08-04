@@ -172,7 +172,7 @@
 
 //Paragon: Experience gain is doubled.
 //Author Unknown (Initial Commit)
-#define ParagonID 255
+//define ParagonID 255
 
 //Void Curse: This unit gives no experience when defeated.
 //By Sme
@@ -718,7 +718,7 @@
 
 //Miracle: Survive a lethal attack if HP > 50%.
 //Author Unknown (Initial Commit)
-#define MiracleID 255
+//#define MiracleID 255
 
 //Moonbow: Enemy Def/Res is reduced by 25%. Charge: 2
 //Author Unknown (Initial Commit)

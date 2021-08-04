@@ -1,0 +1,4 @@
+// format: BYTE Class1 Class2 Class3, etc
+ALIGN 4
+KnightProofClasses:
+BYTE SwordKnight LanceKnight AxeKnight BowKnight Thief SwordFighter SwordFighter_F Myrmidon Myrmidon_F Thief_F Ballistician Archer Archer_F PegasusRider DragonRider Mage Mage_F DarkMage DarkMage_F Bard Devotee_F Priest Cleric RookKnight Troubadour Hunter Hunter_F Brigand Brigand_F SwordArmor AxeArmor LanceArmor BowArmor AxeFighter AxeFighter_F LanceSoldier AxeSoldier SwordKnight_Dismounted LanceKnight_Dismounted AxeKnight_Dismounted BowKnight_Dismounted PegasusRider_Dismounted DragonRider_Dismounted RookKnight_Dismounted Troubadour_Dismounted Bard_F Corsair Corsair_F Freelancer Devotee_M 0x00
