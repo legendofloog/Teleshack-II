@@ -1,6 +1,7 @@
 
 #include "skill_definitions_decrepated.event"
 
+// vanilla skills
 #define StealID 1
 #define StealPlusID 2
 #define VantageID 3
@@ -13,4 +14,12 @@
 #define ParagonID 10
 #define MiracleID 11
 
-#define CascadingRadianceID 10
+// keep it continous for debug purpose
+
+// custom skills
+
+// TODO: add custom common skills here
+
+// personal skills
+
+#define CascadingRadianceID 12
