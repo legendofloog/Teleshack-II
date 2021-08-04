@@ -1,0 +1,19 @@
+
+
+ALIGN 4
+CascadingRadianceMarking:
+#incbin "CascadingRadianceMarking.dmp"
+POIN SkillTester
+WORD CascadingRadianceID
+
+ALIGN 4
+CascadingRadianceHeal:
+#incbin "CascadingRadianceHeal.dmp"
+POIN SkillTester
+WORD CascadingRadianceID
+
+ALIGN 4
+Proc_CascadingRadianceDamage:
+#incbin "CascadingRadianceDamage.dmp"
+POIN SkillTester
+WORD CascadingRadianceID

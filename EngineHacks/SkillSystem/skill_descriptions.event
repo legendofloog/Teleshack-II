@@ -311,3 +311,6 @@ SkillDescription(EarthBoostID,SD_EarthBoost)
 SkillDescription(FireBoostID,SD_FireBoost)
 SkillDescription(DancingBladeID,SD_DancingBlade)
 SkillDescription(HeavyBladeID,SD_HeavyBlade)
+
+SkillDescription(CascadingRadianceID,SD_CascadingRadiance)
+
