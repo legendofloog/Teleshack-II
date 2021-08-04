@@ -68,4 +68,5 @@ Temporary Items
 #Other Stuff
 EventAssembler/Tools
 Text/_textentries
-BuildfilePRO.exe
+Text/InstallTextData.event
+Text/TextDefinitions.event
