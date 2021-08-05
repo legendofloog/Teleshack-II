@@ -57,4 +57,11 @@ BYTE 251
 ORG 0x2c1a6
 BYTE 251
 
+
+// this part is from alusq
+ORG $2c142
+BYTE 0x01 0x29 0x0 0xDC 
+// in fe7: 08029B8A is 09 06 and 08029B8C is 09 16
+// 08029B8E is 48 43
+
 POP
