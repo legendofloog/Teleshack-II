@@ -1,0 +1,77 @@
+
+// change this if more AIs have been added
+// but this will break StallAI(1) since it defaults to 0x12
+#define RecursiveAIStart 0x13 
+
+// Use these to set your AI
+// change AI3 if you like heal AI
+#define StallAI(turns) [0x00, (RecursiveAIStart-2+(turns)), 0x04, 0x00]
+#define StallAI2(turns) [0x00, (RecursiveAIStart-2+(turns))]
+
+#define _AI_NOP "SHORT 0x000E 0x00FF 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000"
+#define _CHANGE_AI2_TO(ID) "SHORT 0xFF02 ID 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000"
+#define _EXIT_AI "SHORT 0x0003 0x00FF 0x0000 0x0000 0x0000 0x0000 0x0000 0x0000"
+
+ALIGN 4
+Wait2TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(0x12) // vanilla wait 1 turn then move
+_EXIT_AI
+
+ALIGN 4
+Wait3TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart)
+_EXIT_AI
+
+ALIGN 4
+Wait4TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+1)
+_EXIT_AI
+
+ALIGN 4
+Wait5TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+2)
+_EXIT_AI
+
+ALIGN 4
+Wait6TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+3)
+_EXIT_AI
+
+ALIGN 4
+Wait7TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+4)
+_EXIT_AI
+
+ALIGN 4
+Wait8TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+5)
+_EXIT_AI
+
+ALIGN 4
+Wait9TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+6)
+_EXIT_AI
+
+ALIGN 4
+Wait10TurnsThenMove:
+_AI_NOP
+_CHANGE_AI2_TO(RecursiveAIStart+7)
+_EXIT_AI
+
+setAI2(RecursiveAIStart, Wait2TurnsThenMove)
+setAI2((RecursiveAIStart+1), Wait3TurnsThenMove)
+setAI2((RecursiveAIStart+2), Wait4TurnsThenMove)
+setAI2((RecursiveAIStart+3), Wait5TurnsThenMove)
+setAI2((RecursiveAIStart+4), Wait6TurnsThenMove)
+setAI2((RecursiveAIStart+5), Wait7TurnsThenMove)
+setAI2((RecursiveAIStart+6), Wait8TurnsThenMove)
+setAI2((RecursiveAIStart+7), Wait9TurnsThenMove)
+setAI2((RecursiveAIStart+8), Wait10TurnsThenMove)

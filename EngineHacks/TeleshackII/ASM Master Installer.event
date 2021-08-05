@@ -7,6 +7,26 @@
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
 
+// EscapeDeathFix
+PUSH
+ORG 0x019024
+BYTE 0x01 0x20
+POP
+
+// Panacea
+PUSH
+ORG $290EE
+SHORT 0x2800 0xD001
+POP
+
+// Rescue Trade
+PUSH
+ORG 0x0229A8
+SHORT 0x1C00
+ORG 0x022A10
+SHORT 0x1C00
+POP
+
 ALIGN 4
 ChangeWeaponRankASMC:
 #incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
@@ -19,7 +39,7 @@ ChangeWeaponRankASMC:
 
 #include "PortraitHeight/PortraitShiftTable(installthisone).event"
 
-#include "StanAI/StanAI.event"
+//#include "StanAI/StanAI.event" // let's expand first lol
 
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
@@ -27,4 +47,30 @@ ChangeWeaponRankASMC:
 
 #include "ForblazeSourcePort/Forblaze Installer.event"
 
- #include "MoveStars/Installer.event"
+#include "MoveStars/Installer.event"
+
+#include "MultiTileMarker/MultiTileMarker_Install.event"
+
+#include "EVENTSCRIPT_change_ai_all/ChangeAIAll.event"
+
+#include "EVENTSCRIPT_SilentGiveItem/SilentGiveItem.event"
+
+#include "EVENTSCRIPT_COND_ITEM/Installer.event"
+
+#include "EVENTSCRIPT_SendAllTransporter/SendAllTransporter.event"
+
+#include "EventGetCountOfUnit/Installer.event"
+
+#include "StallAIs/AITableExpansion/AI1TableExpansion.event"
+
+#include "StallAIs/AITableExpansion/AI2TableExpansion.event"
+
+#include "StallAIs/StallAI/StallAI.event"
+
+#include "EnemyEscapeHook/EnemyEscapeHook.event"
+
+#include "MapChangeToFlag/Installer.event"
+
+//#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
+
+

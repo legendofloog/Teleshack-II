@@ -1,0 +1,7 @@
+
+//Staff exp varies depends on staff's weight
+PUSH
+ORG $2C66A
+#incbin "1.bin"
+POP
+	

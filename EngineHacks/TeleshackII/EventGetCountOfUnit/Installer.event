@@ -1,0 +1,10 @@
+
+#define CountUnit(uid,class,item,affi) "SVAL 1 uid;SVAL 2 class;SVAL 3 item;SVAL 4 affi;ASMC GetCountOfUnits|1;"
+#define CountPlayer "CountUnit(0,0,0,0);"
+#define CountEnemy "CountUnit(0,0,0,1);"
+#define CountNPC "CountUnit(0,0,0,2);"
+#define CountCharacter(uid) "CountUnit(uid,0,0,0xFF);"
+#define CountClass(class) "CountUnit(0,class,0,0xFF);"
+
+GetCountOfUnits:
+#incbin "Get_Count_of_Unit.dmp"

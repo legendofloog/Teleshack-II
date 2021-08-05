@@ -1,0 +1,6 @@
+
+#define SilentGiveItem(unit,item) "BYTE 0x40 0x0D unit item; POIN SilentGiveItemFunc|1;"
+
+ALIGN 4
+SilentGiveItemFunc:
+#incbin "SilentGiveItem.dmp"
