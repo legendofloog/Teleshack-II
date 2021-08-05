@@ -6,6 +6,8 @@ ProcLoopParent:
 #incbin "ProcLoop/proc_loop.dmp"
 POIN Proc_Start	//start
 
+POIN Proc_AttackCounter Proc_PursuitCritical Proc_Wrath Proc_CriticalRework  //Proc_Expertise 
+
 POIN Proc_Devil	//devil effect
 
 

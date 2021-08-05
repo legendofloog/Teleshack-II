@@ -38,11 +38,11 @@ POIN Frenzy // This was moved here because Str/Mag Split conflict, and... I'm no
 POIN UpWithArch
 POIN AxefaithHit
 POIN StancesASM
-#ifdef ENABLE_GBA_LETHALITY
-POIN LethalitySkill Bane
-#else
-POIN LethalitySkill NonGBALethalitySkill Bane
-#endif
+//#ifdef ENABLE_GBA_LETHALITY
+//POIN LethalitySkill Bane
+//#else
+//POIN LethalitySkill NonGBALethalitySkill Bane
+//#endif
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS
 	POIN ModularPreBattleSkill 
@@ -51,6 +51,8 @@ POIN LethalitySkill NonGBALethalitySkill Bane
 
 //quick riposte goes after everything that might touch AS
 POIN QuickRiposte
+
+POIN PCCClear
 
 //tower shield plus needs to go after every other skill that may affect defender's attack
 POIN TowerShieldPlus
