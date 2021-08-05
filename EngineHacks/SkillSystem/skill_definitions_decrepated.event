@@ -1065,3 +1065,9 @@
 //Broken Skills
 #define Roll12ID 255
 #define TraceID 255
+
+//Show Stopper: Always Crit if foe's HP is below 25%
+#define ShowStopperID 255
+
+//Weak-Willed: Atk/Def -5 below full HP
+#define WeakWilledID 255
