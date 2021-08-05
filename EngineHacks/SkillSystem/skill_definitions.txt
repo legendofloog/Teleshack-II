@@ -319,6 +319,12 @@
 
 //Pre-Battle Skills
 
+//Show Stopper: Always Crit if foe's HP is below 25%
+#define ShowStopperID 255
+
+//Weak-Willed: Atk/Def -5 below full HP
+#define WeakWilledID 255
+
 //Axefaith: Axes can't lose durability, and grants +Luck*1.5 Hit when wielding axes.
 //By 2WB & Colorz
 #define AxeFaithID 255

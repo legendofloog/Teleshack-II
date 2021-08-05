@@ -1,3 +1,14 @@
+ALIGN 4
+WeakWilled:
+#incbin "WeakWilled/WeakWilled.dmp"
+POIN SkillTester
+WORD WeakWilledID
+
+ALIGN 4
+ShowStopper:
+#incbin "ShowStopper/ShowStopper.dmp"
+POIN SkillTester
+WORD ShowStopperID
 
 ALIGN 4
 AxefaithHit:
