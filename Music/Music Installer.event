@@ -9,55 +9,6 @@ voicegroup000:
 #define MapMusicGroup 1
 #define SFXGroup 6
 
-// //Example song
-// #include "MusicEvents/Valkyrie Profile - The Unfinished Battle with God Syndrome (SaXor_the_Nobody).event"
-// SongTable(0x04,unfinishedbattle_godsyndrome,BattleMusicGroup)
-// #include "MusicEvents/Unlimited SaGa - Battle Theme EX (SaXor the Nobody).event"
-// SongTable(0x06,battle_theme_ex,MapMusicGroup)
-// #include "MusicEvents/SaGa Frontier II - Feldschlact III (SaXor_the_Nobody).event"
-// SongTable(0x07,L_FeldIII,MapMusicGroup)
-// #include "MusicEvents/lufiadoom.event"
-// SongTable(0x08,lufiadoom,MapMusicGroup)
-// #include "MusicEvents/FFTTrisectionAlusq.event"
-// SongTable(0x09,trisectiontest,MapMusicGroup)
-// #include "MusicEvents/FinalFantasyTacticsDecisiveBattle(Alusq).event"
-// SongTable(0xA,decbattletest,MapMusicGroup)
-// #include "MusicEvents/Castlevania Order of Ecclesia - Lament To The Master (Sme).event"
-// SongTable(0xB,LamentToTheMaster,BattleMusicGroup)
-// #include "MusicEvents/Lufia 2 Rise of the Sinistrals - Battle 2 (SaXor_the_Nobody).event"
-// SongTable(0xC,lufia2_battle2,BattleMusicGroup)
-// #include "MusicEvents/FE10 - March (SaXor_the_Nobody).event"
-// SongTable(0xD,L_FE10_March_GBA,MapMusicGroup)
-// #include "MusicEvents/Knights in the Knightmare - Sortie Formation (SaXor_the_Nobody).event"
-// SongTable(0xE,L_Sortie_Formation,MapMusicGroup)
-// #include "MusicEvents/FE11 - Defense (Sme).event"
-// SongTable(0xF,FE11_EnemyBattle,MapMusicGroup)
-// #include "MusicEvents/FE5 - Searching the Enemy (SurfingKyogre).event"
-// SongTable(0x11,searching_the_enemy,MapMusicGroup)
-// #include "MusicEvents/harvestdancegba.event"
-// SongTable(0x12,HarvestDance_TOLUCT,MapMusicGroup)
-// #include "MusicEvents/100_Orange Juice-Kai_sTheme (Pikmin1211).event"
-// SongTable(0x13,KaiTheme,MapMusicGroup)
-// #include "MusicEvents/Animal Crossing - K.K. Condor (MrGreen3339).event"
-// SongTable(0x14,kk_condor,MapMusicGroup)
-// #include "MusicEvents/Ripple Island - Ending (pandan).event"
-// SongTable(0x15,ripple_island,MapMusicGroup)
-// #include "MusicEvents/FE11 - Combat Mission (Sme).event"
-// SongTable(0x16,CombatMission,MapMusicGroup)
-// #include "MusicEvents/FE11 - Onset (SaXor_the_Nobody).event"
-// SongTable(0x17,L_FE11_Onset,MapMusicGroup)
-// #include "MusicEvents/FE11 - Preparations (RSflame).event"
-// SongTable(0x18,preparations,MapMusicGroup)
-// #include "MusicEvents/FE11 - Together We Ride (Sme).event"
-// SongTable(0x19,TogetherWeRide,MapMusicGroup)
-// #include "MusicEvents/TRSBerwickSagaPersonalCombat(RSflame).event"
-// SongTable(0x1A,song03A2,BattleMusicGroup)
-// #include "MusicEvents/KingofDragonsIntotheCastle(Sme).event"
-// SongTable(0x1B,kodcastle,BattleMusicGroup)
-
-
-// #include "MusicEvents/Tales_Of_Symphonia_Rover(Pandan).event"
-// SongTable(0x29,TalesOfSymphonia_Rover,MapMusicGroup)
-
-
+=======
+//Example song
 

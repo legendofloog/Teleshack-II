@@ -165,8 +165,6 @@ mov r0,r5		@defender
 ldr r1, =ExpertiseIDLink
 ldrb r1, [ r1 ]
 blh SkillTester, r3
-cmp r0,#0
-bne StoreDamage
 ldrh r2, [r7, #6] @final mt
 lsl r2, #0x10
 asr r2, #0x10
@@ -176,9 +174,6 @@ ldrh r1, [r7, #8] @final def
 lsl r1, #0x10
 asr r1, #0x10
 sub r2, r1
-
-StoreDamage:
-strh r2, [r7, #4] @final damage
 
 @ mov r1, #4
 @ ldsh r1, [r7, r1]  @ takes the final damage, which is not what we want
