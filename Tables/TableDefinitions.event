@@ -15,6 +15,9 @@
 #ifndef DebuffTable
   #define DebuffTable 0x203f100
 #endif
+
+#define NewPromotionBranchTable 0x95DFA4
+
 //#ifndef PersonalMusicTable
   //#define PersonalMusicTable 0x758a60
 //#endif
@@ -111,8 +114,8 @@
 #endif
 #ifdef _FE8_
   #define Summoning 0x08000000
-  #define UnlockEirika 0x10000000
-  #define UnlockEphraim 0x20000000
+  #define EirikaUnlock 0x10000000
+  #define EphraimUnlock 0x20000000
   #define UnlockLock3 0x40000000
   #define UnlockLock4 0x80000000
 #endif

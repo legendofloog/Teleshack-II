@@ -1,0 +1,19 @@
+The five main things you may need to edit here are as follows:
+Item Icons (for any custom items you add)
+Palettes (for any units you want to add)
+Portraits (same as palettes)
+Spell Animations (I haven't worked with these myself so better to ask pik or gamma)
+Tilesets/Map Palettes
+
+As far as graphical assets go, just make sure to add any credits for them in the credits.txt in the main folder here, i.e. "PortraitA by XYZ". This will make it easier for us to put together a credits list later.
+
+Item icons should be pretty easy to add. Put your image in the Png folder and follow the way the other macros are set up: the first number is just the item icon's ID.
+
+Portraits are not too difficult. Take your portrait and first head over to EventAssembler/Tools. You'll see PortraitFormatter.exe, so take the png and drag it on that. It'll output a few .dmp files, which is what we'll actually include. Follow the example in PortraitInstaller.event, and change the Mouth and Eyes coordinates based on where the frames are located in your portrait (3, 3 would be 24, 24 in pixels). 
+
+Palettes are fairly easy as well. You only need to modify Palette Input.txt, so just follow the syntax of what's already done (increasing the char number with each palette, give it some name that won't overlap, and set it to the class and character you want). The string of numbers after is just the palette in text form (should be able to easily pull this from builder or something). Open pal2ea v2.3.exe and type in "Palette Input.txt". This should automatically assemble new .events for Palette Installer and Palette Setup.
+
+Tilesets and map palettes take a bit more effort. You'll need at least 2 things: the mapchip_config and the object image. Beyond that, you may need the tileset's animations as well, depending on whether yours has them or not. This guide may help (check buildfile section)
+https://feuniverse.us/t/fe8-tileset-insertion-editing-tutorial-derthevaporeon-2018/4102
+
+First, drag and drop the mapchip config onto compress_tofile.exe, along with doing the same for your object image onto Png2Dmp with compression and palette. Take your files and put them in the respective folders (for organizational purposes). Then, go to TilesetInstaller.event and find space for your given tileset in the pointer list (shown in the text file of the same name), incbin each of them, and use the macro provided. If at this point you need to add animations, then you'll have to take those, run them through png2dmp, and incbin the animations, also in the plist. I provided an example in MapAnimationsInstaller, but not all anims are the same size, so yours may differ.

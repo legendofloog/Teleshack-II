@@ -1,6 +1,6 @@
 // found in devvy's filebuild
 // most item icons done by lisandra brave, flame sword from lord glenn
-// stone sword and frost blade from beansy
+// stone sword, argilabrys, and frost blade from beansy
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 
 PUSH
@@ -28,6 +28,7 @@ ItemIconSlot(0x44,"Png/Sigil.png")
 ItemIconSlot(0x58,"Png/Rewarp.png")
 ItemIconSlot(0x93,"Png/Stone Sword.png")
 ItemIconSlot(0x94,"Png/Frost Blade.png")
+ItemIconSlot(0x95,"Png/Argilabrys.png")
 ItemIconSlot(0xda,"Png/Thief.png")
 ItemIconSlot(0xb2,"Png/KingSword.png")
 ItemIconSlot(0xb3,"Png/KaiserSchwert.png")

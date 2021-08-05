@@ -4,12 +4,12 @@
 #define TwoWayWTEntry(Strong,Weak,Hit,Mt) "BYTE Strong Weak Hit Mt Weak Strong Negative(Hit) Negative(Mt)"
 
 WTTable:
-TwoWayWTEntry(Swords,Axes,20,2)
-TwoWayWTEntry(Lances,Swords,20,2)
-TwoWayWTEntry(Axes,Lances,20,2)
-TwoWayWTEntry(Anima,Light,20,4)
-TwoWayWTEntry(Light,Dark,20,4)
-TwoWayWTEntry(Dark,Anima,20,4)
+TwoWayWTEntry(Swords,Axes,5,1)
+TwoWayWTEntry(Lances,Swords,5,1)
+TwoWayWTEntry(Axes,Lances,5,1)
+TwoWayWTEntry(Anima,Light,5,1)
+TwoWayWTEntry(Light,Dark,5,1)
+TwoWayWTEntry(Dark,Anima,5,1)
 EndWT //Terminator
 
 PUSH

@@ -1,7 +1,6 @@
 #include "MovementCostTable.event"
 #include "ConGrowthCharTable.event"
 #include "ConGrowthClassTable.event"
-#include "MovementStarsTable.event"
 #include "MoveGrowthCharTable.event"
 #include "MoveGrowthClassTable.event"
 #include "WeaponStatBoosts.event"

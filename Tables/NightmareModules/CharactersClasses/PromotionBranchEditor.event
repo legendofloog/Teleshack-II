@@ -1,9 +1,8 @@
 #define _C2EA_PromotionBranchEditor(arg000,arg001) "BYTE arg000 arg001 "
 
 PUSH
-POP
-ALIGN 4
-NewPromotionBranchTable:
+ORG 0x95DFA4
+_C2EA_PromotionBranchEditor(0x0,0x0)
 _C2EA_PromotionBranchEditor(MasterKnight,0x0)
 _C2EA_PromotionBranchEditor(MasterKnight_F,0x0)
 _C2EA_PromotionBranchEditor(0x0,0x0)
@@ -259,3 +258,4 @@ _C2EA_PromotionBranchEditor(0x0,0x0)
 _C2EA_PromotionBranchEditor(0x0,0x0)
 _C2EA_PromotionBranchEditor(0x0,0x0)
 _C2EA_PromotionBranchEditor(0x0,0x0)
+POP

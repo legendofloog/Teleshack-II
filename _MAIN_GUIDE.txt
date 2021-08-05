@@ -1,0 +1,5 @@
+Hello Team Distant Roads! This guide is written by Loog, and it's intended to be a tutorial on how to use this buildfile for people who are generally inexperienced with them. As such, I'll try to be as detailed as possible for each step.
+
+For this main folder, there isn't much that you need to do here except run MAKE_HACK_full.cmd when you've finished making changes in the other folders. What this does is self-explanatory, but just in case, it writes all the changes we've included to FE8. Since this format is easily reversible, it seemed a better fit for a large group project where many ASM changes need to be made.
+
+As for the rest of the guide, we're going to go in order of install (so if you look at ROMBuildfile.event, you'll see the order), which is Definitions -> Text -> Tables -> Graphics -> Music -> Engine Hacks -> Events -> Maps. Each folder will have a specific guide there that will be more in-depth, so just navigate to them and look at those for specific things. 

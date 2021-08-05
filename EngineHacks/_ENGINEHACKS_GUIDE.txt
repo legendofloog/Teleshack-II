@@ -1,0 +1,13 @@
+There isn't a whole lot to say here unless you plan on adding a skill or want to add some bit of ASM. 
+
+The main things of note that you may need to edit:
+
+- Move Stars: You'll edit the table in MoveStars/Installer.event. Just enter in the macro your unit's character definition and what number of move stars you want them to have (only goes up to 5). 
+
+- FE8 Battle Anims By Character: If you have a unit that doesn't have a M/F class, such as the majority of cav classes, you may want to give them the right animations here. The readme details how to do this. 
+
+- PortraitHeight: Here if your unit's placement seems odd in the stat screen. 
+
+- ReworkForPrepScreenRightTopImage: Add to the table so your chapter displays the correct number in preps. The example should show how to do it.
+
+- ToggleDeploymentSwapping: Here primarily as a QoL feature. You can add your own if you want to lock a unit to a chapter but don't want them to be stuck in a specific position (you can also put them in a locked one if you want).

@@ -153,7 +153,7 @@
 
 //If uncommented, AdvWeaponLocks will be implemented.
 //This is a rewrite of venno's array-based weapon locks.
-#define ADV_WEAPON_LOCKS
+//#define ADV_WEAPON_LOCKS
 
 //If uncommented, Status-Inflicting Weapons will be implemented.
 //Setting weapon effect 0xD will apply the effect ID at item data +0x22.

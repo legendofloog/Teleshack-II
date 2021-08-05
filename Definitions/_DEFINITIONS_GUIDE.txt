@@ -1,0 +1,8 @@
+Definitions are not probably going to be a place you'll need to edit often, but they are fairly important since they make referencing various things such as characters, classes, or items far easier. As an example definition, let's look at this one:
+
+#define Loewe 0x0F
+
+This is a fairly simple definition, but to explain it, anywhere you see Loewe in an event is read as 0x0F in our .event files. This makes them much more legible since you immediately know what this is intended to be instead of just seeing "0x0F" somewhere. 
+
+You can of course add any definitions you want so long as they don't overlap with anyone else's. For the majority of you though, you'll probably only need to add character definitions and item definitions. To do this, refer to the ID of the given item/character (for instance, Ross has the unit ID 0x07 in the Character Table, which we'll get to later) and substitute whatever you want to refer to it as. 
+

@@ -1,0 +1,11 @@
+Alright, so this one is dependent on which table you're trying to edit. If it is in the following list (Character, Item, Chapter), then you can go back to the main folder and click on Buildfile Pro. Select the Teleshack II folder in the directory, and you should see a GUI interface to edit with (this is particularly helpful for people used to Builder, but CSVs are pretty stinky in general). Pik made this and it's pretty epic. However, don't edit the class table since that one's set in stone beyond any numerical changes we may or may not agree on later. Further, don't give your unit any weapon types or character abilities that they wouldn't have available in their class (prf locks are fine though). 
+
+
+Otherwise, you'll have to edit them in their respective CSVs (the NightmareModules folder) or their EA file (EA_Files folder). This is probably a good time to mention that you're going to want some kind of syntax highlighting so that .event files are more legible. 
+https://feuniverse.us/t/syntax-highlighting-for-event-assembler/2131
+
+The only relevant CSVs are as follows: EscapeQuoteEditor (which we'll probably make a lot of use of, since this is Thracia-inspired) and maybe the IER folder, depending on what kind of items you add (promo items, for instance, will need to be added to the Promotion_Item_Table, but most weapons will not). 
+
+
+EA files have a good bit more to edit. Currently, this is the location of stat boosts for items (in WeaponStatBoosts.event), the battle and death quote tables, the boss music table, and some other thracia specific things (con and move growths, though they're currently non-functional). The macros there should explain well enough how to use those tables. 
+

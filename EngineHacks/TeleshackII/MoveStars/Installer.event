@@ -1,0 +1,33 @@
+
+/*
+Add "TryProcMoveStar" to PostCombatLoop
+*/
+
+ALIGN 4
+#include "MoveStars.lyn.event"
+
+ALIGN 4
+MoveStarProcEvent:
+POIN MoveStarProcEventRaw
+
+// copied from galeforce
+ALIGN 4
+MoveStarProcEventRaw:
+CAM1 0xFFFF
+SOUN 0x10F
+STAL 0x16
+NoFade
+ENDA
+
+ALIGN 4
+MoveStarTable:
+#include "MoveStarTable.event"
+
+#define SetUnitMoveStars(unit, stars) "PUSH; ORG MoveStarTable + unit; BYTE stars; POP"
+SetUnitMoveStars(Claudia,0)
+SetUnitMoveStars(Loewe,0)
+SetUnitMoveStars(Mira,0)
+SetUnitMoveStars(Iskra,1)
+SetUnitMoveStars(Emil,0)
+SetUnitMoveStars(Svetomir,3)
+SetUnitMoveStars(Alena,2)

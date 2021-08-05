@@ -48,6 +48,8 @@
 
 [CurrentPortrait] = [0xFF][0xFF]
 
+[LoadLoewe] = [LoadFace][0x14][0x1]
+
 [LoadInnes] = [LoadFace][0xf][0x1]
 [LoadCormag] = [LoadFace][0x13][0x1]
 [LoadLArachel] = [LoadFace][0x22][0x1]

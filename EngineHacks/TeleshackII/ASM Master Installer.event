@@ -26,3 +26,5 @@ ChangeWeaponRankASMC:
 #include "NosResire/NosResire.event"
 
 #include "ForblazeSourcePort/Forblaze Installer.event"
+
+ #include "MoveStars/Installer.event"

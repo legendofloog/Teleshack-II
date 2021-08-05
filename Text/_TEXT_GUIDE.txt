@@ -1,0 +1,43 @@
+If you're a builder user, text isn't too different here, though I suggest you refer to this guide on text editing from Darrman, since we'll probably be referring to it a good bit. My text editor of choice is Sublime, but Notepad++ also works.
+https://feuniverse.us/t/the-ins-and-outs-of-text-editing/6820
+
+The major difference, up front, is that you don't have to go down a list of text entries or anything like that. Instead, there will be sections where you can just increment the text entry instead, like so: 
+
+## ExampleTextDefinitionHere
+
+What this does is pretty simple: It defines the text entry's textID as the next available one, meaning there's no need to worry about overwriting text entries or anything like that. Just go to the ChapterText folder and add a text document for your chapter, i.e. Chapter2Text or something. Also, keep in mind how long each line is. In general, keeping normal text entries at 40 characters or less will avoid any spilling over, but some types of text, like battle quotes, are shorter, which should not be much more than 30 characters or so per line. Let's look at an example text entry:
+
+## ExampleTextDefinitionHere
+[MidLeft][LoadLoewe]
+[MidRight][LoadClaudia]
+Hey.[NL]
+This is an example text entry[ANL]
+for newbies to refer to.[A]
+[MidLeft]
+Hello.[A][X]
+
+A few differences from Builder: Every text entry needs [X] at the end to show that the text entry is done. Further, whenever you need to go to a new line, write [NL] or [N] to indicate this. These terms in the brackets are called parse definitions, and you can see the full list of them in ParseDefinitions.txt in this folder. To list a few of the most common ones and their functions:
+
+[N] - New Line
+[A] - Pauses Text until A is pressed
+[AN] - [A][N] as you'd expect
+[Yes] - Brings up a Yes/No choice, defaulting on Yes. If you're using this, you'll probably want to disable text skipping as well. Yes returns 1 to slot C (we'll get to memory slots in the Events section) and No returns 0, I believe, which you can use for various choices you may want to give to the player.
+
+[ToggleInvert] - Inverts the colors of the textbox, so white font/black box.
+[ToggleSmile] - Makes units smile when they talk.
+[Red] - Makes text red. Most commonly used for gameplay related dialogue.
+[Blink] - Makes the character blink for a short amount of time.
+[Beat] - Stops the mouth movement of a character, pauses, and re-toggles it.
+
+[Event] - You'll use this whenever you want to pause a text entry for events; for example, if you want a mid-text music change. This will be expanded upon more in the Events tutorial.
+[.4]/[.5]/[.6]/[.7] - These are all pauses, with each one increasing in length.
+[FarFarLeft] and others - These refer to the character's position on the screen. You'll want to put this whenever you want to swap which slot's talking or when you're loading in a character.
+[MoveFarFarLeft] and others - Moves the unit to the given slot.
+[ClearFace] - Removes the unit from the scene.
+
+
+[CurrentPortrait] - This loads the portrait of the active unit. Frequently used for village visits or other similar events where any character can trigger it.
+[LoadLoewe] - An example character load, which stands in for [LoadFace][0x14][0x1]. [LoadFace] is self-explanatory, 0x14 is his placement in the Portrait Table, while [0x1] just says that this is the default face.
+[CloseSpeechSlow] - Despite what it says, I've never found [CloseSpeechFast] to be faster than this one, so take the slow part with a grain of salt. This closes a speech bubble. 
+
+For anything else, referring to Darrman's guide should help. 
