@@ -1,0 +1,6 @@
+
+#define SendAll(unit) "BYTE 0x40 0x0D unit 0x00; POIN SendAllToTransporter|1;"
+
+ALIGN 4
+SendAllToTransporter:
+#incbin "SendAllTransporter.dmp"

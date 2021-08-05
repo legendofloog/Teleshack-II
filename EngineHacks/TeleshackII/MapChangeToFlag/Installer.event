@@ -1,0 +1,10 @@
+ALIGN 4 
+PUSH
+ORG 0x2E5E6
+SHORT 0x0000
+jumpToHack_r0(MapChangeToFlag)
+POP
+
+ALIGN 4
+MapChangeToFlag:
+#incbin "map_change_to_flag.bin"

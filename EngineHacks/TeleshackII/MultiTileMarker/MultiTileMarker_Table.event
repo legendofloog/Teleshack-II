@@ -1,0 +1,5 @@
+#define csvmacro000(arg000,arg001,arg002,arg003,arg004,arg005) "BYTE arg000 arg001 arg002 arg003; SHORT arg004 arg005; "
+// map x y class? flag 0
+MultiTileMarker_Table:
+//csvmacro000(Ch1,0,0,0,0,0)
+BYTE 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF 0xFF    // term
