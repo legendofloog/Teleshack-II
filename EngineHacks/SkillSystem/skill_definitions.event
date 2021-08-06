@@ -13,6 +13,12 @@
 #define WrathID 9
 #define ParagonID 10
 #define MiracleID 11
+#define CritUpID 12
+#define PCC0ID 13
+#define PCC2ID 14
+#define PCC3ID 15
+#define PCC4ID 16
+#define PCC5ID 17
 
 // keep it continous for debug purpose
 
@@ -22,4 +28,8 @@
 
 // personal skills
 
-#define CascadingRadianceID 12
+#define CascadingRadianceID 18
+#define SD_WeakWilled 0
+#define SD_ShowStopper 0
+#define WeakWilledID 255
+#define ShowStopperID 255

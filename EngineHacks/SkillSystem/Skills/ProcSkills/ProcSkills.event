@@ -234,3 +234,5 @@ Proc_CmbArtHpCost:
 //Note to self: if poison bit is set in rounds data, 0x2000 is set at...somewhere, and that's later checked at 55342. 55350 = mov r1,#1; replace 1 with status id
 
 #include "Animations/SkillAnimations.event"
+
+#include "CriticalRework/CriticalRework.event"
