@@ -93,7 +93,7 @@ beq NotBrave @ if brave, half attack count
 NotBrave:
 
 mov r0, #1
-and r3, r1
+and r3, r0
 cmp r3, #0
 beq End
 

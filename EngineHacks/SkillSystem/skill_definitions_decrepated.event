@@ -365,7 +365,7 @@
 
 //Crit Boost: +15 critical rate.
 //Author Unknown (Initial Commit)
-#define CritUpID 255
+//#define CritUpID 255
 #define CritBoostID CritUpID //Alias
 
 //Strong Riposte: When under attack, damage +3.

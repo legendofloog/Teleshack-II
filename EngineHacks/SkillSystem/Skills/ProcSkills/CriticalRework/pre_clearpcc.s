@@ -5,14 +5,11 @@ push {r4-r7,lr}
 @goes in the battle loop.
 @r0 is the attacker
 @r1 is the defender
-mov r4, r0
-mov r5, r1
 
-mov r0, r4
-mov r1,#0x6C
-ldrh r3,[r0, r1]
+mov r2,#0x6C
 mov r3,#0
-strh r3,[r0, r1]
+strh r3,[r0, r2]
+strh r3,[r1, r2]
 
 GoBack:
 pop {r4-r7}

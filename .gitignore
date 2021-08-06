@@ -31,6 +31,7 @@ $RECYCLE.BIN/
 *.ss7
 *.ss8
 *.ss9
+*.gba.7z
 
 # python cache
 __pycache__
