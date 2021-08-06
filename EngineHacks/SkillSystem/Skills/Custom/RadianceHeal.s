@@ -3,7 +3,7 @@
   mov lr, \reg
   .short 0xf800
 .endm
-.equ CascadingRadianceID, SkillTester+4
+.equ RadianceID, SkillTester+4
 .thumb
 push	{r4-r7,lr}
 
@@ -44,7 +44,7 @@ b End
 Continue:
 @ check for skill
 mov	r0, r4
-ldr	r1, CascadingRadianceID
+ldr	r1, RadianceID
 ldr	r3, SkillTester
 mov	lr, r3
 .short	0xf800
@@ -116,4 +116,4 @@ UnitList:
 .long 0x0859A5D0
 SkillTester:
 @POIN SkillTester
-@WORD CascadingRadianceID
+@WORD RadianceID

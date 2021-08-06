@@ -319,5 +319,6 @@ SkillDescription(PCC3ID,SD_PCC3)
 SkillDescription(PCC4ID,SD_PCC4)
 SkillDescription(PCC5ID,SD_PCC5)
 
-SkillDescription(CascadingRadianceID,SD_CascadingRadiance)
+SkillDescription(RadianceID,SD_Radiance)
+SkillDescription(NightcallerID,SD_Nightcaller)
 

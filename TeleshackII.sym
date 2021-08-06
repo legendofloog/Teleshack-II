@@ -1298,9 +1298,9 @@
 093B60C0 IronWeaponsList
 093B60C8 TriangleAdept
 093B6158 Poise
-093B61A0 CascadingRadianceMarking
-093B6210 CascadingRadianceHeal
-093B62B8 Proc_CascadingRadianceDamage
+093B61A0 RadianceMarking
+093B6210 RadianceHeal
+093B62B8 Proc_RadianceDamage
 093B633C ChargeupTable
 093B64D0 ASMC_LearnNewSkill
 093B64FC ASMC_HasSkill

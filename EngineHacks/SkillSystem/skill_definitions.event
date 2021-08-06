@@ -27,9 +27,5 @@
 // TODO: add custom common skills here
 
 // personal skills
-
-#define CascadingRadianceID 18
-#define SD_WeakWilled 0
-#define SD_ShowStopper 0
-#define WeakWilledID 255
-#define ShowStopperID 255
+#define RadianceID 18
+#define NightcallerID 19
