@@ -1,10 +1,10 @@
 INLINE CharLevelUpSkillTable,Skill List Address
 None,0
-Eirika,0
-Seth,0
+0x2 0x02 Mira,MiraSkillList|IsPointer
+0x3 0x03 Iskra,IskraSkillList|IsPointer
 Gilliam,0
-Franz,0
-Moulder,0
+0x5 0x05 Svetomir,SvetomirSkillList|IsPointer
+0x6 0x06 Alena,AlenaSkillList|IsPointer
 Vanessa,0
 Ross,0
 Neimi,0
