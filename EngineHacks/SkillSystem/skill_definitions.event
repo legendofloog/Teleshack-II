@@ -27,5 +27,17 @@
 // TODO: add custom common skills here
 
 // personal skills
+
 #define RadianceID 18
 #define NightcallerID 19
+//## SD_ShowStopper
+//Show Stopper: Guaranteed critical[N]
+//chit against foes below 25% HP.[X]
+//## SD_WeakWilled
+//Weak-Willed: Atk/Def -5 when[N]
+//HP is not full.[X]
+#define WeakWilledID 255
+#define ShowStopperID 255
+#define SD_WeakWilled 0
+#define SD_ShowStopper 0
+
