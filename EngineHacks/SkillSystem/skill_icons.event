@@ -923,9 +923,11 @@ ORG SkillIcon(EarthBoostID)
 ORG SkillIcon(FireBoostID)
 #incbin "SkillIcons/FireBoost.dmp"
 
-ORG SkillIcon(CascadingRadianceID)
+ORG SkillIcon(RadianceID)
 #incbin "SkillIcons/Lumina.dmp"
 
+ORG SkillIcon(NightcallerID)
+#incbin "SkillIcons/Trample.dmp"
 
 ORG SkillIcon(PCC0ID)
 #incbin "SkillIcons/Bond.dmp"

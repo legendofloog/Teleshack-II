@@ -1,19 +1,33 @@
 
 
 ALIGN 4
-CascadingRadianceMarking:
-#incbin "CascadingRadianceMarking.dmp"
+RadianceMarking:
+#incbin "RadianceMarking.dmp"
 POIN SkillTester
-WORD CascadingRadianceID
+WORD RadianceID
 
 ALIGN 4
-CascadingRadianceHeal:
-#incbin "CascadingRadianceHeal.dmp"
+RadianceHeal:
+#incbin "RadianceHeal.dmp"
 POIN SkillTester
-WORD CascadingRadianceID
+WORD RadianceID
 
 ALIGN 4
-Proc_CascadingRadianceDamage:
-#incbin "CascadingRadianceDamage.dmp"
+Proc_RadianceDamage:
+#incbin "RadianceDamage.dmp"
 POIN SkillTester
-WORD CascadingRadianceID
+WORD RadianceID
+
+
+ALIGN 4
+Pre_Nightcaller:
+#incbin "NightcallerPreBattle.dmp"
+POIN SkillTester
+WORD NightcallerID
+
+
+ALIGN 4
+Post_Nightcaller:
+#incbin "NightcallerPostBattle.dmp"
+POIN SkillTester
+WORD NightcallerID

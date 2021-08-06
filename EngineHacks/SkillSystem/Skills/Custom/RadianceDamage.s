@@ -4,7 +4,7 @@
   mov lr, \reg
   .short 0xf800
 .endm
-.equ CascadingRadianceID, SkillTester+4
+.equ RadianceID, SkillTester+4
 
 @ r0 is attacker, r1 is defender, r2 is current buffer, r3 is battle data
 push {r4-r7,lr}
@@ -26,16 +26,12 @@ bne End
 ldr r0, SkillTester
 mov lr, r0
 mov r0, r4 @attacker data
-ldr r1, CascadingRadianceID
+ldr r1, RadianceID
 .short 0xf800
 cmp r0, #0
 beq End
 
-ldrh r0, [r6, #0x4] @damage
-lsl r1, r0, #2 @ x4
-add r0, r1 @ x5
-lsr r3, r0, #4 @ /16 for 31.5, approx 1/3
-
+ldrh r3, [r7, #0x4] @damage
 
 ldr r6, =0x0202BE4C
 ldr r4, =#0x85 * 0x48 @Player+Enemy+NPC
@@ -57,7 +53,7 @@ Loop:
   and  r2,r1
   cmp  r2,#0x0          @maybe dead
   bne  Loop
-  \
+  
 
   @ test status
   mov r1, #0x30
