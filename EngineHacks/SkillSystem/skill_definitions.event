@@ -33,3 +33,11 @@
 #define SD_ShowStopper 0
 #define WeakWilledID 255
 #define ShowStopperID 255
+//## SD_WeakWilled
+//Weak-Willed: Atk/Def -5 when[N]
+//HP is not full.[X]
+
+//## SD_ShowStopper
+//Show Stopper: Guaranteed critical[N]
+//chit against foes below 25% HP.[X]
+
