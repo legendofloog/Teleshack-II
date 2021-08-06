@@ -322,3 +322,5 @@ SkillDescription(PCC5ID,SD_PCC5)
 SkillDescription(RadianceID,SD_Radiance)
 SkillDescription(NightcallerID,SD_Nightcaller)
 
+SkillDescription(VictoryMarchID,SD_VictoryMarch)
+

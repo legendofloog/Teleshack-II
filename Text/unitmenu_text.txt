@@ -160,3 +160,17 @@ hits and does 1.5x damage.[N]
 ## UM_SwarpDesc
 Swap positions with a distant[N]
 ally.[X]
+
+## UM_COPower
+ C.O Power[X]
+
+## UM_COPowerDesc
+Activate a C.O power.[X]
+
+## UM_VictoryMarch
+ Victory March[X]
+
+## UM_VictoryMarchDesc
+Raise movement of infantry[N]
+units by 2 points.[X]
+

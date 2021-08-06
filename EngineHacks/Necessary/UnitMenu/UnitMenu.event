@@ -88,6 +88,9 @@ UnitMenuTable:
   #ifdef COMBAT_ARTS
 	MenuCommand(UM_CombatArts, UM_CombatArtsDesc, NormalText, CombatArtsUsability, CombatArtsEffect, $22c31, $22c99)
   #else // COMBAT_ARTS
+  
+  MenuCommand(UM_COPower, UM_COPowerDesc, NormalText, COPowerUsability, COPowerEffect, $22c31, $22c99)
+
 	//Lunge
 	MenuCommand(UM_Lunge, UM_LungeDesc, NormalText, LungeUsability, LungeEffect, $22c31, $22c99)
 
@@ -145,6 +148,7 @@ UnitMenuTable:
   #ifdef STAIRS_ASM
 	MenuCommand(StairsNameText,StairsDescText,GreenText,StairsUsability,StairsEffect)
   #endif // STAIRS_ASM
+
   
   UM_Chest
   UM_Door
@@ -152,7 +156,11 @@ UnitMenuTable:
   UM_Vendor
   UM_Secret
   UM_Arena
-  	
+
+  UM_Item
+  UM_Trade
+  MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
+
   #ifndef COMBAT_ARTS
 	// Shove & cie
 	MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
@@ -174,14 +182,10 @@ UnitMenuTable:
     MenuCommand(UM_EditSkill, UM_EditSkillDesc, OrangeText, $04F449, SkillDebugCommand_OnSelect)
   #endif
 
-  UM_Item
-  UM_Trade
-
   MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
   MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
   
   //UM_Supply
-  MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
   
   UM_Wait
 
