@@ -5,6 +5,7 @@ POP
 ALIGN 4
 CharLevelUpSkillTable:
 _C2EA_CharacterLevelUpSkillEditor(0)
+_C2EA_CharacterLevelUpSkillEditor(0)
 _C2EA_CharacterLevelUpSkillEditor(MiraSkillList|IsPointer)
 _C2EA_CharacterLevelUpSkillEditor(IskraSkillList|IsPointer)
 _C2EA_CharacterLevelUpSkillEditor(0)
