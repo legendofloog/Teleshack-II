@@ -24,20 +24,20 @@ POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
-ALIGN 4
+
 TurnBasedEvents:
 TurnEventPlayer(12, AlenaSpawn, 3)
 TurnEventPlayer(13, BoroSpawn, 7)
 END_MAIN
 
-ALIGN 4
+
 CharacterBasedEvents:
 CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
 CharacterEventBothWays(8, EmilCleoTalkCh1, Emil, Cleo)
 CharacterEventBothWays(14, SvetomirAlenaTalkCh1, Svetomir, Alena)
 END_MAIN
 
-ALIGN 4
+
 LocationBasedEvents:
 Door(3,16)
 Door(10,13)
@@ -50,29 +50,29 @@ Escape(0,EscapeEventCheck,2,0)
 Escape(0,EscapeEventCheck,3,0)
 END_MAIN
 
-ALIGN 4
+
 MiscBasedEvents:
 AREA 0x00 CivilianEscape [14, 0] [15, 0]
 CauseGameOverIfLordDies
 END_MAIN
 
-ALIGN 4
+
 Dunno1:
 END_MAIN
 
-ALIGN 4
+
 Dunno2:
 END_MAIN
 
-ALIGN 4
+
 Dunno3:
 END_MAIN
 
-ALIGN 4
+
 Tutorial:
 END_MAIN
 
-ALIGN 4
+
 Units1:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]      NoAI
 UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x0 0x1 [KillingEdge,Shortsword, Vulnerary] NoAI
@@ -80,7 +80,7 @@ UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x0 0x
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [18,17] 0x0 0x0 0x0 0x1 [IronLance, Vulnerary]              NoAI
 UNIT
 
-ALIGN 4
+
 GreenUnits:
 UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -88,37 +88,37 @@ UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0
 UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
-ALIGN 4
+
 EnemyUnits:
 UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [3,6] 0x0 0x0 0x0 0x0 [SteelBow] NoAI
 UNIT 0x70 LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [9,15] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT
 
-ALIGN 4
+
 Turn3Reinforcements:
 UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
 UNIT 0x70 Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] NoAI
 UNIT 0x70 Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] NoAI
 UNIT
 
-ALIGN 4
+
 BoroUnitGroup:
 UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x0 0x0 [MasterLance, SilverLance] NoAI
 UNIT
 
-ALIGN 4
+
 Traps1:
 RedSigil(2,0)
 RedSigil(3,0)
 ENDTRAP
 ALIGN 4
 
-ALIGN 4
+
 Traps2:
 ENDTRAP
 ALIGN 4
 
-ALIGN 4
+
 BeginningScene:
 LOAD1 1 Units1
 ENUN
@@ -129,7 +129,7 @@ ENUN
 NoFade
 ENDA
 
-ALIGN 4
+
 AlenaSpawn:
 LOAD1 1 Turn3Reinforcements
 ENUN
@@ -138,7 +138,7 @@ Text(AlenaSpawnText)
 NoFade
 ENDA
 
-ALIGN 4
+
 BoroSpawn:
 LOAD1 1 BoroUnitGroup
 ENUN
@@ -147,26 +147,26 @@ Text(BoroSpawnText)
 NoFade
 ENDA
 
-ALIGN 4
+
 LoeweIskraTalkCh1:
 Text(LoeweIskraTalkCh1Text)
 GiveItem(Kaiserschwert,Loewe)
 NoFade
 ENDA
 
-ALIGN 4
+
 EmilCleoTalkCh1:
 Text(EmilCleoTalkCh1Text)
 NoFade
 ENDA
 
-ALIGN 4
+
 SvetomirAlenaTalkCh1:
 Text(SvetomirAlenaTalkCh1Text)
 NoFade
 ENDA
 
-ALIGN 4
+
 LoeweSvetomirFreed:
 TILECHANGE 3
 Text(LoeweFreedText)
@@ -176,21 +176,21 @@ GiveItem(Heal,Svetomir)
 NoFade
 ENDA
 
-ALIGN 4
+
 SennyDoor:
 TILECHANGE 0
 Text(SennyFreedText)
 NoFade
 ENDA
 
-ALIGN 4
+
 HelmanDoor:
 TILECHANGE 1
 Text(HelmanFreedText)
 NoFade
 ENDA
 
-ALIGN 4
+
 EscapeEventCheck:
 CHECK_ACTIVEID Loewe
 BEQ 0 s0 sC
@@ -209,7 +209,7 @@ LABEL 3
 NoFade
 ENDA
 
-ALIGN 4
+
 CivilianEscape:
 CHECK_CLASS -1
 SVAL s1 Civilian_F_2
@@ -224,7 +224,7 @@ LABEL 5
 NoFade
 ENDA
 
-ALIGN 4
+
 EndingScene:
 EscapeCapturedCheck(Mira, 0x8B)
 EscapeCapturedCheck(Iskra, 0x8C)
