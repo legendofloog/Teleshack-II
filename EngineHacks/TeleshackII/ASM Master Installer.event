@@ -7,6 +7,8 @@
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
 
+#include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
+
 // EscapeDeathFix
 PUSH
 ORG 0x019024
@@ -51,14 +53,6 @@ ChangeWeaponRankASMC:
 
 #include "MultiTileMarker/MultiTileMarker_Install.event"
 
-#include "EVENTSCRIPT_change_ai_all/ChangeAIAll.event"
-
-#include "EVENTSCRIPT_SilentGiveItem/SilentGiveItem.event"
-
-#include "EVENTSCRIPT_COND_ITEM/Installer.event"
-
-#include "EVENTSCRIPT_SendAllTransporter/SendAllTransporter.event"
-
 #include "EventGetCountOfUnit/Installer.event"
 
 #include "StallAIs/AITableExpansion/AI1TableExpansion.event"
@@ -72,5 +66,4 @@ ChangeWeaponRankASMC:
 #include "MapChangeToFlag/Installer.event"
 
 //#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
-
 

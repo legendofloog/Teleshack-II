@@ -52,7 +52,7 @@ INLINE ClassLevelUpSkillTable,Skill Pointer
 0x32 Summoner (F),SummonerSkillList|IsPointer
 0x33 Rogue,RogueSkillList|IsPointer
 0x34 Gorgon Egg,0x0
-0x35 Great Knight,GreatKnightSkillList|IsPointer
+0x35 Priest,0x0
 0x36 Great Knight (F),GreatKnightSkillList|IsPointer
 0x37 Recruit (2),0x0
 0x38 Journeyman (3),0x0

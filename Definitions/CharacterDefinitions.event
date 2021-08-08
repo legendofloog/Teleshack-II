@@ -1,4 +1,4 @@
-#define Claudia 0x01
+#define Cleo 0x01
 #define Mira 0x02
 #define Iskra 0x03
 #define Emil 0x04
@@ -45,8 +45,11 @@
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
 #define Lyon_Ch17 0x40
-#define Morva_Ch20 0x41
-#define Orson_Ch5x 0x42
+
+// Chapter 1 Bosses
+#define Boro_Ch1 0x41
+#define Raschwitz_Ch1 0x42
+
 #define Valter_Ch15_ 0x43
 #define Valter_Ch15 0x43
 #define Selena_Ch10B_and_13B 0x44
@@ -81,6 +84,17 @@
 #define Vigarde 0x6B
 #define Lyon_Final 0x6C
 #define Orson_Boss 0x6D
+ 
+// Chapter 1 NPCs
+#define Senny 0x6E
+#define Helman 0x6F
+
+
+
+
+
+
+
 #define Fomortiis 0xBE
 #define Fado 0xC5
 #define Hayden 0xC7
