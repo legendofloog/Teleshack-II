@@ -26,7 +26,7 @@ Likes:[X]
 #0xd4e HeightText
 Height:[X]
 
-#include "ClassItemsEtc/ItemNamesDescs.event"
+#include "ClassItemsEtc/ItemNamesDescs.txt"
 
 #0xd4f AgeText
 Age:[X]
@@ -144,6 +144,12 @@ Ready to ride?[X]
 
 #include "unitinfo_text.txt"
 
-#include "ClassItemsEtc/ClassItemsEtcInstaller.event"
+#include "ChapterTextInstaller.txt"
 
-#include "ChapterText/_ChapterTextInstaller.event"
+#include "ClassItemsEtc/ItemNamesDescs_Free.txt"
+
+#include "ClassItemsEtc/StaffText.txt"
+
+#include "ClassItemsEtc/CharacterNamesDescs.txt"
+
+#include "ClassItemsEtc/ClassNamesDescs.txt"

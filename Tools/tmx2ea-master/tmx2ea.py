@@ -117,7 +117,7 @@ def process(tmap,fname):
     return None
 
   output += chapterdata.format(**locals())
-  output += ("Map:\n#incbin \"" + os.path.splitext(os.path.split(fname)[1])[0]+"_data.dmp\"\n\nMapChanges:\n")
+  output += ("ALIGN 4\nMap:\n#incbin \"" + os.path.splitext(os.path.split(fname)[1])[0]+"_data.dmp\"\n\nMapChanges:\n")
   if macros == "": #no map changes
     output = output.replace("EventPointerTable(map_changes, MapChanges)\n",'').replace("\nMapChanges:\n",'').replace("map_changes","0")
   else:
