@@ -107,9 +107,9 @@ PUSH
 	#endif
 	
 	ORG $73588
-	//#incbin "Write Growth to Ram Anim On(blademaster).dmp"
 	#incbin "WriteGrowthtoRamAnimOn.dmp"
-	SHORT 0xE096
+	SHORT 0x46C0
+	jumpToHack(WriteNewGrowthsToRAMAnimStruct)
 	
 	//Change list of stat text IDS
 	ORG $7373A
@@ -159,8 +159,8 @@ ALIGN 4
 	StatLocation(10,9) //Lck
 	StatLocation(10,11) //Def
 	StatLocation(10,13) //Res
-	StatLocation(10,15) //Mov
-	StatLocation(10,17) //Con
+	StatLocation(10,15) //Con
+	StatLocation(10,17) //Mov
 #else
 	StatLocationTable:
 	StatLocation(2,11) //Hp
@@ -249,7 +249,7 @@ ALIGN 4
 New_Stats_Jump_Table:
 POIN 0x7EC44 0x7EC48 0x7EC64 0x7ED0C 0x7EC80 0x7EC9C 0x7ECB8 0x7ECD4 0x7ECF0
 #ifdef ExpandedLevelUpScreen
-	POIN ConMapAnimCheck MovMapAnimCheck
+	POIN GetConGrowthAnimsOff GetMovGrowthAnimsOff
 #endif
 
 ALIGN 4
@@ -271,12 +271,3 @@ ALIGN 4
 LevelUpWriteBackMag:
 #include "LevelUpWriteBackMag.event"
 
-//both of these are from Blademaster
-
-ALIGN 4
-ConMapAnimCheck:
-#incbin "1(blademaster).dmp"
-
-ALIGN 4
-MovMapAnimCheck:
-#incbin "2(blademaster).dmp"

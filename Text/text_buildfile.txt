@@ -144,7 +144,7 @@ Ready to ride?[X]
 
 #include "unitinfo_text.txt"
 
-#include "ChapterTextInstaller.txt"
+#include "ChapterText/ChapterTextInstaller.event"
 
 #include "ClassItemsEtc/ItemNamesDescs_Free.txt"
 

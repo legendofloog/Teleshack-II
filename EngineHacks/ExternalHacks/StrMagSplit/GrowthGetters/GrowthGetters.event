@@ -51,22 +51,20 @@
 	#incbin "Get_Luk_Growth.dmp"
 	POIN Extra_Growth_Boosts|1
 	WORD USE_CHAR_AND_CLASS_GROWTHS
+	ALIGN 4
 
 	Get_Con_Growth:
 	#incbin "Get_Con_Growth.dmp"
 	POIN Extra_Growth_Boosts|1
-	POIN ConGrowthsCharTable
-	POIN ConGrowthsClassTable
-	WORD USE_CHAR_AND_CLASS_GROWTHS
-
+	POIN CharacterConGrowthTable
+	ALIGN 4
+	
 	Get_Mov_Growth:
 	#incbin "Get_Mov_Growth.dmp"
 	POIN Extra_Growth_Boosts|1
-	POIN MoveGrowthsCharTable
-	POIN MoveGrowthsClassTable
-	WORD USE_CHAR_AND_CLASS_GROWTHS
-
+	POIN CharacterMovGrowthTable
 	ALIGN 4
+	
 	Extra_Growth_Boosts:
 	#incbin "Extra_Growth_Boosts.dmp"
     WORD Growth_Options

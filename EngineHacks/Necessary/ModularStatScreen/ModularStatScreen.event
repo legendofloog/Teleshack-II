@@ -86,8 +86,8 @@
     //ORG $86ED4
     //  callHack_r3(HP_Name_Color)
 
-    ORG $2BA28
-      jumpToHack(Write_Growths_To_Battle_Struct)
+    //ORG $2BA28
+      //jumpToHack(Write_Growths_To_Battle_Struct)
 
     ORG $2B9C4
       jumpToHack(Enemy_Autolevel)
@@ -247,10 +247,10 @@
     POIN Get_Hp_Growth
     POIN Get_Palette_Index
 
-  ALIGN 4
-  Write_Growths_To_Battle_Struct:
-    #incbin "asm/Write_Growths_To_Battle_Struct.dmp"
-        POIN Class_Level_Cap_Table Get_Hp_Growth Get_Str_Growth
+  //ALIGN 4
+  //Write_Growths_To_Battle_Struct:
+    //#incbin "asm/Write_Growths_To_Battle_Struct.dmp"
+        //POIN Class_Level_Cap_Table Get_Hp_Growth Get_Str_Growth
 	#ifdef USE_STRMAG_SPLIT
 		POIN Get_Mag_Growth
 	#else

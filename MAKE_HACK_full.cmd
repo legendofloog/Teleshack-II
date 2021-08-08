@@ -47,7 +47,7 @@ if /I not [%1]==[quick] (
   echo Processing text
 
   cd "%base_dir%Text"
-  echo: | ("%textprocess%" text_buildfile.event --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
+  echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
 
   echo:
   echo Processing maps

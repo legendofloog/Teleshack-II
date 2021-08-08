@@ -1,4 +1,154 @@
-[MidRight][LoadLoewe]
+[MidLeft][LoadCleo]
 
-This is placeholder text.[X]
+[MidRight][LoadEmil][ThreeLineBox]
+
+Oh, uh, Adjutant Cleo! I just[N]
+
+wanted to ask you something.[N]
+
+It'll be quick, I promise.[A]
+
+[MidLeft][TwoLineBox]
+
+There's no need for a title. Emil, was[N]
+
+it? Ask away, but please make it quick.[A]
+
+[MidRight]
+
+Well, is it true that you're a[N]
+
+Vyren? The thing is, I am too.[A]
+
+[MidLeft]
+
+That I am. I didn't expect I'd meet[N]
+
+another deserter. Where are you from?[A]
+
+[MidRight]
+
+Just a small town close to the[N]
+
+border of Decia. What about you?[A]
+
+[MidLeft][OneLineBox]
+
+I was born in Gechrysos.
+
+[MidRight][TwoLineBox]
+
+The capital? Wow, you[N]
+
+must've been rich.[A]
+
+[MidLeft][ThreeLineBox]
+
+I cannot deny it. They used this wealth[N]
+
+to give me an unparalleled education[N]
+
+at the Military Academy of Gechrysos.[AN]
+
+They meant to raise me as the perfect,[N]
+
+honorable officer of the Vyren Empire,[N]
+
+just as my elder brother was before me.[A]
+
+[MidRight]
+
+I'd bet you're from a military family,[N]
+
+then. Y'know, a guy from one of those[N]
+
+was the reason I signed up for this war.[AN]
+
+I met the man in charge, Elias Argymos.[A]
+
+[MidLeft][OneLineBox]
+
+R-Really? How did that happen?[A]
+
+[MidRight][ThreeLineBox]
+
+One day, he came into my town looking[N]
+
+for recruits. Looking at him was like[N]
+
+seeing a hero from a Vyren fairytale.[AN]
+
+The model Vyren soldier, fighting for his[N]
+
+country... With a guy like that heading[N]
+
+the occupation here, it had to be just.[A]
+
+[MidLeft]
+
+...And then you came here and saw the[N]
+
+truth for your own eyes, as I did.[N]
+
+That we were lied to, about everything.[A]
+
+[MidRight]
+
+Yeah... I'd only trained for a week[N]
+
+before I defected from my squad.[N]
+
+They chased me down, but thankfully,[AN]
+
+Mira and the recon unit saved me.[N]
+
+How did you end up on this side?[A]
+
+[MidLeft]
+
+I received a commissioned position[N]
+
+based off of my family name, mostly.[N]
+
+For a time, I followed my orders,[AN]
+
+but the guilt became too much to bear.[AN]
+
+When I came across General Dragana,[N]
+
+I surrendered immediately to her,[N]
+
+expecting I'd soon meet an executioner.[AN]
+
+Instead, she let me live. I mean to[N]
+
+repay that mercy in any way that I can.[A]
+
+[MidRight][TwoLineBox]
+
+That's all we can do now... Sorry, that[N]
+
+ended up taking longer than I thought.[A]
+
+[MidLeft][ThreeLineBox]
+
+Yes, we should continue the mission.[N]
+
+However, it was helpful, discussing[N]
+
+this with someone else who understands.[A]
+
+[MidRight]
+
+Agreed. Well, I'll go on ahead, Cleo.[N]
+
+Maybe we can talk some other time![A][ClearFace]
+
+[MidLeft]
+
+Argymos... So Emil met my brother?[N]
+
+If I continue on this path, then[N]
+
+I may have to see him again soon...[A][X]
 

@@ -92,6 +92,9 @@ UNIT
 EnemyUnits:
 UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [3,6] 0x0 0x0 0x0 0x0 [SteelBow] NoAI
 UNIT 0x70 LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [9,15] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT 0x70 LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT 0x70 LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [11,15] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT 0x70 LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [12,15] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT
 
 

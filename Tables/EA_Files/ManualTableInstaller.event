@@ -1,7 +1,3 @@
 #include "MovementCostTable.event"
-#include "ConGrowthCharTable.event"
-#include "ConGrowthClassTable.event"
-#include "MoveGrowthCharTable.event"
-#include "MoveGrowthClassTable.event"
 #include "WeaponStatBoosts.event"
 #include "PromotionItemClassPointersTable.event"
