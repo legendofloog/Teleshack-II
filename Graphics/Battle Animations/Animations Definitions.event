@@ -714,10 +714,10 @@ DismountedMAnims:
 SwordAnim(DismountedMSwordAnim)
 AxeAnim(DismountedMAxeAnim)
 HandAxeAnim(DismountedMHandAxeAnim)
-SpearAnim(NobleMSwordAnim)
+SpearAnim(DismountedMLanceAnim)
 BowAnim(DismountedMBowAnim)
 StaffAnim(DismountedMStaffAnim)
-UnarmedAnim(NobleMUnarmedAnim)
+UnarmedAnim(DismountedMUnarmedAnim)
 EndAnim
 
 ALIGN 4

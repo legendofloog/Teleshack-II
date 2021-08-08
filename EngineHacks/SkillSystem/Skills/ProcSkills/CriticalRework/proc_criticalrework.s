@@ -25,21 +25,21 @@ mov r1, #1
 tst r0, r1
 beq NoCrit
 
-RegularCrit:
+@RegularCrit:
 
-ldrh r0, [r7, #6] @attack
-ldrh r1, [r7, #8] @def
-sub r0, r1
-lsl r1, r0, #1
-add r0, r1
-b CapCheck
-
-@PierceCrit:
 @ldrh r0, [r7, #6] @attack
 @ldrh r1, [r7, #8] @def
-@lsl r0, r0, #1
 @sub r0, r1
+@lsl r1, r0, #1
+@add r0, r1
 @b CapCheck
+
+PierceCrit:
+ldrh r0, [r7, #6] @attack
+ldrh r1, [r7, #8] @def
+lsl r0, r0, #1
+sub r0, r1
+b CapCheck
 
 NoCrit:
 ldrh r0, [r7, #6] @attack

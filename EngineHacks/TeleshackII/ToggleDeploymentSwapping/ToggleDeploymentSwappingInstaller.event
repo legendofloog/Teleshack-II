@@ -52,7 +52,7 @@ ALIGN 4
 ALIGN 4
 
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
-ForcedDeployment(Claudia,UnlockedPosition,AllModes,AllChapters)
+ForcedDeployment(Cleo,UnlockedPosition,AllModes,AllChapters)
 ForcedDeployment(Loewe,UnlockedPosition,AllModes,AllChapters)
 EndForcedDeploymentList
 

@@ -24,8 +24,8 @@ MoveStarTable:
 #include "MoveStarTable.event"
 
 #define SetUnitMoveStars(unit, stars) "PUSH; ORG MoveStarTable + unit; BYTE stars; POP"
-SetUnitMoveStars(Claudia,0)
-SetUnitMoveStars(Loewe,0)
+SetUnitMoveStars(Cleo,0)
+SetUnitMoveStars(Loewe,1)
 SetUnitMoveStars(Mira,0)
 SetUnitMoveStars(Iskra,1)
 SetUnitMoveStars(Emil,0)

@@ -2,6 +2,26 @@
 //To disable a skill, define it as 255.
 //Skills are categorized broadly by where their effect is applied, in no particular order within each category.
 
+
+// Unique Skills to Teleshack 2
+
+//## SD_ShowStopper
+//Show Stopper: Guaranteed critical[N]
+//chit against foes below 25% HP.[X]
+//## SD_WeakWilled
+//Weak-Willed: Atk/Def -5 when[N]
+//HP is not full.[X]
+#define WeakWilledID 255
+#define ShowStopperID 255
+#define SD_WeakWilled 0
+#define SD_ShowStopper 0
+
+
+
+
+
+
+
 //AI Skills
 
 //Provoke: Enemies are more likely to target this unit.

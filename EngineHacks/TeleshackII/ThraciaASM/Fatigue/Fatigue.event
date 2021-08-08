@@ -32,13 +32,13 @@ POP
 
 ALIGN 4
 FatigueExemptCharList:
-BYTE Claudia
+BYTE Cleo
 BYTE Loewe
 BYTE 0
 
 ALIGN 4
 FatigueStartingChapter:
-BYTE Prologue
+BYTE Chapter1
 BYTE 0
 
 ALIGN 4

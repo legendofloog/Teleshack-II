@@ -30,8 +30,7 @@ BYTE 1 // change to 0 if you don't want this behaviour
 
 LeadershipTable:
 // ALLIES
-BYTE Claudia 2
-BYTE Loewe 1
+BYTE Cleo 1
 BYTE Mira 1
 // BOSSES
 BYTE Murray 1

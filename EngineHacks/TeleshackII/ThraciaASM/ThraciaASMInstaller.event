@@ -7,3 +7,4 @@
 #include "LuckCapChange.event"
 #include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
 #include "RescueChanges/RescueChangesEvent.event"
+#include "Avoid_Hit_Hacks/Avoid_Hit_Changes.event"
