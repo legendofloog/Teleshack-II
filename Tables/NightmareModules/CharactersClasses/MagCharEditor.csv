@@ -1,115 +1,115 @@
 INLINE MagCharTable,Base Magic,Magic Growth
 0x01 Cleo,0,0
-0x02 Mira,0,5
-0x03 Iskra,2,10
+0x02 Mira,0,40
+0x03 Iskra,0,5
+0x04 Emil,2,45
 0x04 Emil,0,5
-0x05 Svetomir,1,10
-0x06 Alena,3,40
-Vanessa,2,25
-Ross,0,5
-Neimi,2,15
-Colm,1,10
-Garcia,0,5
-Innes,1,10
-Lute,5,65
-Natasha,1,60
-0x0F Loewe,0,5
-Ephraim,0,15
-Forde,1,10
-Kyle,0,10
-Amelia,2,25
-Artur,5,50
-Gerik,0,10
-Tethys,0,5
-Marisa,1,10
-Saleh,11,30
-Ewan,2,45
-L'Arachel,5,50
-Dozla,0,5
-+AC0-0,0,50
-Rennac,3,35
-Duessel,0,5
-Myrrh,2,85
-Knoll,10,50
-Joshua,0,20
-Syrene,4,20
-Tana,2,15
-Lyon,13,50
-Orson,3,10
-Glen,2,0
-Selena,10,40
-Valter,2,10
-Riev,10,45
-Caellach,2,5
-Fado,4,5
-Ismaire,7,15
-Hayden,2,10
-FakeEirika,0,0
-+AC0-0,0,0
+0x06 Alena,1,30
+0x06 Alena,1,10
+Ross,2,25
+Neimi,0,5
+Colm,2,15
+Garcia,1,10
+Innes,0,5
+Lute,1,10
+Natasha,5,65
+0x0F Loewe,1,10
+Ephraim,1,10
+Forde,0,15
+Kyle,1,10
+Amelia,0,10
+Artur,2,25
+Gerik,5,50
+Tethys,0,10
+Marisa,0,5
+Saleh,1,10
+Ewan,11,30
+L'Arachel,2,45
+Dozla,5,50
+#NAME?,0,5
+Rennac,0,50
+Duessel,3,35
+Myrrh,0,5
+Knoll,2,85
+Joshua,10,50
+Syrene,0,20
+Tana,4,20
+Lyon,2,15
+Orson,13,50
+Glen,3,10
+Selena,2,0
+Valter,10,40
+Riev,2,10
+Caellach,10,45
+Fado,2,5
+Ismaire,4,5
+Hayden,7,15
+FakeEirika,2,10
+#NAME?,0,0
 0,0,0
 0,0,0
 0,0,0
 0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
-+AC0-0,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
+#NAME?,0,0
 Lyon's Summon,0,0
-+AC0-0,0,0
-+AC0-0,0,0
+#NAME?,0,0
+#NAME?,0,0
 Knoll's Summon,0,0
 Ewan's Summon,0,0
-Lyon (Ch 17),13,50
-Morva (Ch 20),6,85
-Orson (Ch 5x),3,10
-Valter (Ch 15),2,5
-Selena (Ch 10B +ACY- 13B),10,40
-Valter (Prologue),2,5
-Breguet (Ch 1),0,5
+0x41 Boro (Ch 1),3,5
+0x42 Raschwitz (Ch 1),0,0
+Orson (Ch 5x),6,85
+Valter (Ch 15),3,10
+Selena (Ch 10B +ACY- 13B),2,5
+Valter (Prologue),10,40
+Breguet (Ch 1),2,5
 Bone (Ch 2),0,5
-Bazba (Ch 3),1,10
-Entombed (Ch 4),1,5
+Bazba (Ch 3),0,5
+Entombed (Ch 4),1,10
 Saar (Ch 5),1,5
-Novala (Ch 6),8,50
-Murray (Ch 7),2,5
-Tirado (Ch 8),3,15
-Binks (Ch 9A),2,10
-Pablo (Ch 10A),8,50
-Maelduin (Ch 12A),2,10
-Aias (Ch 13A),2,5
-Carlyle (Ch 14A),5,30
-Caellach (Ch 15),3,5
-Pablo (Ch 13A),8,50
+Novala (Ch 6),1,5
+Murray (Ch 7),8,50
+Tirado (Ch 8),2,5
+Binks (Ch 9A),3,15
+Pablo (Ch 10A),2,10
+Maelduin (Ch 12A),8,50
+Aias (Ch 13A),2,10
+Carlyle (Ch 14A),2,5
+Caellach (Ch 15),5,30
+Pablo (Ch 13A),3,5
+0,8,50
+Gorgon (Ch 18),0,0
+Riev (Ch 19 +ACY- 20),10,65
+0,10,45
 0,0,0
-Gorgon (Ch 18),10,65
-Riev (Ch 19 +ACY- 20),10,45
-0,0,0
-0,0,0
-Gheb (Ch 9B),2,5
-Beran (Ch 10B),3,15
-Cyclops (Ch 12B),2,5
+Gheb (Ch 9B),0,0
+Beran (Ch 10B),2,5
+Cyclops (Ch 12B),3,15
 Wight (Ch 11A),2,5
-Deathgoyle (Ch 11B),3,5
+Deathgoyle (Ch 11B),2,5
 Entombed (Monster Boss),3,5
+0,3,5
 0,0,0
 0,0,0
-0,0,0
-+AC0-0,0,0
-Hunter (Ch 16),3,10
-+AC0-0,0,0
+#NAME?,0,0
+Hunter (Ch 16),0,0
+#NAME?,3,10
 Brigand,0,0
 0,0,0
-O'Neill (Prologue),0,5
-Glen (Cutscene),0,0
-Zonta (Ch 5x),1,5
-Vigarde (Ch 14B),5,15
-Lyon (Ch Final),20,20
-Orson (Ch 16),3,5
-0,0,0
+O'Neill (Prologue),0,0
+Glen (Cutscene),0,5
+Zonta (Ch 5x),0,0
+Vigarde (Ch 14B),1,5
+Lyon (Ch Final),5,15
+Orson (Ch 16),20,20
+0,3,5
 0,0,0
 0,0,0
 0,0,0
@@ -208,6 +208,7 @@ Pegasus Messenger,0,0
 Rausten Knight,0,0
 Rausten Knight,0,0
 (Untested Beyond this point),0,0
+0,0,0
 0,0,0
 0,0,0
 0,0,0

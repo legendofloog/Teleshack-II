@@ -27,7 +27,8 @@
 // TODO: add custom common skills here
 
 // personal skills
-
 #define RadianceID 18
 #define NightcallerID 19
 #define VictoryMarchID 20
+#define AvengerID 21
+#define RecklessChargeID 22

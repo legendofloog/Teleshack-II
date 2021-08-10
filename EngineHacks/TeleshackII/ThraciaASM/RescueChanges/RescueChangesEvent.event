@@ -1,13 +1,8 @@
 PUSH
-//ORG $1831c
-//jumpToHack(CanUnitRescueChanged)
 ORG $189b8
 jumpToHack(GetAidChanged)
 POP
 
-//ALIGN 4
-//CanUnitRescueChanged:
-//#incbin "CanUnitRescue.dmp"
 
 ALIGN 4
 GetAidChanged:

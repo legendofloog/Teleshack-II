@@ -8,6 +8,8 @@
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
 
+#include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
+
 // thief vision
 PUSH
 ORG 0x0178C2

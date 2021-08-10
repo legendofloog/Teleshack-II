@@ -1,0 +1,28 @@
+[MidLeft][LoadRaschwitz]
+
+Hold on, you're supposed to[N]
+
+be one of our mercenaries.[A]
+
+Why are you on the other side?[A][CloseSpeechSlow][ClearFace]
+
+[MidRight][LoadAlena]
+
+Plans change. Besides, I only[N]
+
+took this job to save my friend.[A]
+
+I've got no allegiance to you.[A][CloseSpeechSlow][ClearFace]
+
+[MidLeft][LoadRaschwitz]
+
+Y-You reprobate! This is why you[N]
+
+can never trust a sellsword![A][CloseSpeechSlow][ClearFace]
+
+[MidRight][LoadAlena]
+
+Enough talk. Let's see how that[N]
+
+armor holds up against my blade![A][X]
+

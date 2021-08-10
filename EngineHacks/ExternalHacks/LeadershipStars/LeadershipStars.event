@@ -32,15 +32,10 @@ LeadershipTable:
 // ALLIES
 BYTE Cleo 1
 BYTE Mira 1
+BYTE Loewe 1
 // BOSSES
-BYTE Murray 1
-BYTE ONeill 1
-BYTE Breguet 1
-BYTE Bazba 1
-BYTE Saar 1
-BYTE Novala 1
-BYTE Zonta 1
-BYTE Tirado 1
+BYTE Raschwitz_Ch1 1
+BYTE Boro_Ch1 3
 BYTE 0x0 0x0 //delimiter
 
 PUSH

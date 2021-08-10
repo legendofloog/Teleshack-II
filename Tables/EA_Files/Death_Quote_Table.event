@@ -2,27 +2,5 @@
 #define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
 #define SetDeathQuoteEntry(UnitID,ChapterID,EventID,TextID) "BYTE UnitID flagID $FF; BYTE ChapterID EventID 0x0; SHORT TextID; WORD 0"
-DeathQuote(Wyland,ReunionPrologue,0x2,WylandDeathText)
-DeathQuote(Renzer,HoltornGrove,0x00,RenzerDeathText)
-DeathQuote(Hilda,UnexpectedEncounter,0x2,HildaDeathText)
-DeathQuote(Dai,WingsOfRivald,0x2,DaiDeathText)
-DeathQuote(Hartner,WingsOfRivald,16,0x00)
-DeathQuote(Sahn,LastStand,12,0x00)
-DeathQuote(0x79,InDefenseOfHope,16,Ch5Villager1DeathText)
-DeathQuote(0x7A,InDefenseOfHope,16,Ch5Villager2DeathText)
-DeathQuote(0x7B,InDefenseOfHope,16,Ch5Villager3DeathText)
-DeathQuote(Yanus,InDefenseOfHope,0x2,YanusDeathQuote)
-DeathQuote(Rune,0xFF,0x65,RuneDeathText)
-DeathQuote(Asgeir,0xFF,0x65,AsgeirDeathText)
-DeathQuote(Brynja,0xFF,0x00,BrynjaDeathText)
-DeathQuote(Ragna,0xFF,0x65,RagnaDeathText)
-DeathQuote(Eimund,0xFF,0x00,EimundDeathText)
-DeathQuote(Ulfr,0xFF,0x00,UlfrDeathText)
-DeathQuote(Ivarr,0xFF,0x00,IvarrDeathText)
-DeathQuote(Carys,0xFF,0x00,CarysDeathText)
-DeathQuote(Eindride,0xFF,0x00,EindrideDeathText)
-DeathQuote(Signe,0xFF,0x00,SigneDeathText)
-DeathQuote(Frida,0xFF,0x00,FridaDeathText)
-DeathQuote(Solveig,0xFF,0x00,SolveigFirstRetreatText)
-DeathQuote(Hartner,0xFF,0x00,HartnerDeathText)
+
 DeathQuote(0xFFFF,0,0,0)

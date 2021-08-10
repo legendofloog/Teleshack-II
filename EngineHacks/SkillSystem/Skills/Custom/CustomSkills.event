@@ -31,3 +31,16 @@ Post_Nightcaller:
 #incbin "NightcallerPostBattle.dmp"
 POIN SkillTester
 WORD NightcallerID
+
+ALIGN 4
+Avenger:
+#incbin "Avenger.dmp"
+POIN SkillTester
+WORD AvengerID
+
+ALIGN 4
+RecklessCharge:
+#incbin "RecklessCharge.dmp"
+POIN SkillTester
+WORD RecklessChargeID
+POIN prMovGetter

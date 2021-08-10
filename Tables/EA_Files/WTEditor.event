@@ -3,6 +3,7 @@
 #define Negative(Number) "0x100 - Number"
 #define TwoWayWTEntry(Strong,Weak,Hit,Mt) "BYTE Strong Weak Hit Mt Weak Strong Negative(Hit) Negative(Mt)"
 
+ALIGN 4
 WTTable:
 TwoWayWTEntry(Swords,Axes,5,1)
 TwoWayWTEntry(Lances,Swords,5,1)

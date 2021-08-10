@@ -1,17 +1,7 @@
 
-////////////////////////////////////////////////////
-//                                                //
-// Disassembled with Nintenlord's Event Assembler //
-// Version: 11.0.0.0                              //
-// Game: FE8                                      //
-// File: FE8_clean.gba                            //
-// Offset: $9EC66C                                //
-//                                                //
-////////////////////////////////////////////////////
 
 EventPointerTable(Chapter1Events, PointerList)
 
-ALIGN 4
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -43,7 +33,7 @@ Door(3,16)
 Door(10,13)
 Chest(Mend,3,18)
 Chest(SteelBow,10,11)
-LOCA 9 LoeweSvetomirFreed [16,10] 0x12
+LOCA 9 LoeweSvetomirDoor [16,10] 0x12
 LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
 Escape(0,EscapeEventCheck,2,0)
@@ -52,7 +42,10 @@ END_MAIN
 
 
 MiscBasedEvents:
-AREA 0x00 CivilianEscape [14, 0] [15, 0]
+AREA 0 CivilianEscape [14, 0] [15, 0]
+AFEV 15 LoeweSvetomirFreed 9
+AFEV 16 SennyFreed 10
+AFEV 17 HelmanFreed 11
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -63,7 +56,6 @@ END_MAIN
 
 Dunno2:
 END_MAIN
-
 
 Dunno3:
 END_MAIN
@@ -82,10 +74,10 @@ UNIT
 
 
 GreenUnits:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
 UNIT
 
 
@@ -99,14 +91,14 @@ UNIT
 
 
 Turn3Reinforcements:
-UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
-UNIT 0x70 Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] NoAI
-UNIT 0x70 Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] NoAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] ChargeAI
+UNIT 0x70 Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
+UNIT 0x70 Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
 UNIT
 
 
 BoroUnitGroup:
-UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x0 0x0 [MasterLance, SilverLance] NoAI
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x0 0x0 [MasterLance, SilverLance] ChargeAI
 UNIT
 
 
@@ -166,33 +158,47 @@ ENDA
 
 SvetomirAlenaTalkCh1:
 Text(SvetomirAlenaTalkCh1Text)
+CUSA Alena
+NoFade
+ENDA
+
+LoeweSvetomirDoor:
+TILECHANGE 3
 NoFade
 ENDA
 
 
 LoeweSvetomirFreed:
-TILECHANGE 3
-Text(LoeweFreedText)
+Text(LoeweSvetomirFreedText)
+CUSA Loewe
+CUSA Svetomir
 GiveItem(IronBow,Loewe)
-Text(SvetomirFreedText)
 GiveItem(Heal,Svetomir)
+SilentGiveItem(Vulnerary,Loewe)
+SilentGiveItem(Vulnerary,Svetomir)
 NoFade
 ENDA
 
 
 SennyDoor:
 TILECHANGE 0
+NoFade
+ENDA
+
+SennyFreed:
 Text(SennyFreedText)
 NoFade
 ENDA
 
-
 HelmanDoor:
 TILECHANGE 1
-Text(HelmanFreedText)
 NoFade
 ENDA
 
+HelmanFreed:
+Text(HelmanFreedText)
+NoFade
+ENDA
 
 EscapeEventCheck:
 CHECK_ACTIVEID Loewe

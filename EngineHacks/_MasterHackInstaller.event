@@ -92,9 +92,6 @@ POP
   //Biorhythm
   #include "ExternalHacks/Biorhythm/Biorhythm.event"
 
-  // MovConGrowths
-  #include "TeleshackII/ThraciaASM/ExtraGrowths/Installer.event"
-
   //Modular Stat Screen
   #include "Necessary/ModularStatScreen/ModularStatScreen.event"
   

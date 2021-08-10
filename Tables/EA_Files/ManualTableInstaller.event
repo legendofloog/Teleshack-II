@@ -1,3 +1,6 @@
 #include "MovementCostTable.event"
 #include "WeaponStatBoosts.event"
 #include "PromotionItemClassPointersTable.event"
+#include "WTEditor.event"
+#include "Battle_Quote_Table.event"
+#include "Death_Quote_Table.event"
