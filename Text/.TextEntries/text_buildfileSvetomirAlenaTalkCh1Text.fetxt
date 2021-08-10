@@ -2,7 +2,7 @@
 
 [MidRight][LoadSvetomir][OneLineBox]
 
-Alena?! What are you doing here? 
+Alena?! What are you doing here?[A]
 
 [MidLeft][TwoLineBox]
 
@@ -26,13 +26,13 @@ to fight me with just that staff?[A]
 
 [MidRight][TwoLineBox]
 
-...I have my ways. Anyway, that's good.[N]
+I have my methods. Anyway, that's good.[N]
 
 You wouldn't want to cross a holy man.[A]
 
 [MidLeft]
 
-Sure... Anyway, let's get out of here[N]
+Sure... Let's just get out of here[N]
 
 while the rebels distract the guards.[A]
 
@@ -64,9 +64,9 @@ of the Liberators is a death sentence![A]
 
 Can you say that you're satisfied[N]
 
-running away from them for the rest[N]
+running away for the rest of your life?[N]
 
-of your life? You're a fugitive now.[A]
+The duke'll give you a bounty for this.[A]
 
 [MidLeft][TwoLineBox]
 

@@ -56,7 +56,7 @@ ORG 0x16d7e // A rank WEXP
 BYTE 200
 ORG 0x16d86 // S rank WEXP
 BYTE 250
-ORG 0x2ad7a // S rank WEXP for in battle bonus (should be same as  above)
+ORG 0x2ad74 // S rank WEXP for in battle bonus (location from pik), removed because it was buggy as hell
 BYTE 250
 ORG 0x16e90 // bar to D rank WEXP
 BYTE 50

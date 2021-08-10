@@ -114,3 +114,7 @@
 #define OldCivilian 0xFC
 #define Wall 0xFE
 #define Snag 0xFF
+
+// TalkAI Defs
+
+#define Ch1_AlenaAI2 0xA

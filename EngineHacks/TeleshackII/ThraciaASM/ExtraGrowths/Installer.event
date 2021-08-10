@@ -65,6 +65,16 @@ CharacterConGrowthTable:
 #define SetUnitMovGrowth(unit, growth) "PUSH; ORG CharacterMovGrowthTable + unit; BYTE growth; POP"
 #define SetUnitConGrowth(unit, growth) "PUSH; ORG CharacterConGrowthTable + unit; BYTE growth; POP"
 
+/*
+In StrMagSplit/StrMagSplit/LevelUp/LevelUp.event...
+Add GetConGrowthAnimsOff and GetMovGrowthAnimsOff to New_Stats_Jump_Table (replace old functions)
+Add SHORT 0x46C0; jumpToHack(WriteNewGrowthsToRAMAnimStruct) after "#incbin "WritePromotoRAM.dmp" (replace old SHORT)
+*/
+
+/*
+Make sure to #define ExpandedLevelUpScreen
+*/
+
 SetUnitConGrowth(Cleo,15)
 SetUnitConGrowth(Loewe,10)
 SetUnitConGrowth(Iskra,10)
@@ -82,13 +92,3 @@ SetUnitMovGrowth(Mira,1)
 SetUnitMovGrowth(Emil,1)
 SetUnitMovGrowth(Svetomir,2)
 SetUnitMovGrowth(Alena,3)
-
-/*
-In StrMagSplit/StrMagSplit/LevelUp/LevelUp.event...
-Add GetConGrowthAnimsOff and GetMovGrowthAnimsOff to New_Stats_Jump_Table (replace old functions)
-Add SHORT 0x46C0; jumpToHack(WriteNewGrowthsToRAMAnimStruct) after "#incbin "WritePromotoRAM.dmp" (replace old SHORT)
-*/
-
-/*
-Make sure to #define ExpandedLevelUpScreen
-*/

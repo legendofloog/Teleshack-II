@@ -71,7 +71,7 @@ After each set of module options are definitions that you can use to adjust the 
 		 * number of tiles specified by MMBNameWidth.
 		 */
 
-	#define MMBNameAffinityShifted
+	//#define MMBNameAffinityShifted
 		/*
 		 * Draws the unit's name to [MMBNameX, MMBNameY]
 		 * using MMBNameColor. If the unit has an affinity,
@@ -504,7 +504,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 // Affinity modules
 
-	#define MMBAffinity
+	// #define MMBAffinity
 		/*
 		 * Draws the unit's affinity, if they
 		 * have one, to [MMBAffinityX, MMBAffinityY].
