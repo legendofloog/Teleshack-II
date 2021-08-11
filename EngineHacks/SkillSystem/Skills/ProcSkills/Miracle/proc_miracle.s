@@ -5,6 +5,7 @@
   .short 0xf800
 .endm
 .equ MiracleID, SkillTester+4
+.equ GetDebuffs, MiracleID+4
 .equ d100Result, 0x802a52c
 @ r0 is attacker, r1 is defender, r2 is current buffer, r3 is battle data
 push {r4-r7,lr}
@@ -24,11 +25,6 @@ bne End
 @check defender's hp >50%
 ldrb r0, [r5,#0x12] @max hp
 ldrb r1, [r5,#0x13] @current hp
-cmp r1, #1 @1hp left?
-ble End
-lsr r0, #1 @max/2
-cmp r1, r0
-ble End
 
 @check damage >= currhp
 mov r0, #4
@@ -45,10 +41,30 @@ ldr r1, MiracleID
 cmp r0, #0
 beq End
 
-@and set damage to currhp-1
-ldrb r0, [r5, #0x13] @currhp
-sub r0, #1
-strh r0, [r7, #4] @final damage
+ldrb r0, [r5, #0x19] @luck stat as activation rate
+add r1, r0
+add r0, r1 @mul 3
+mov r1, r5 @skill user
+blh d100Result
+cmp r0, #1
+bne End 
+
+ldr r0,[r6]
+add r0,#2
+str r0,[r6]
+mov r0, r6
+
+mov r0, r5
+ldr r3, GetDebuffs
+mov lr, r3
+.short 0xF800
+mov r3, r0
+
+ldrb r0, [r3, #2]
+mov  r1, #0xF0
+and  r0, r1
+add  r0, #10
+strb r0, [r3, #2]
 
 End:
 pop {r4-r7}
