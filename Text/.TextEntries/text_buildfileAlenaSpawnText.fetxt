@@ -1,8 +1,8 @@
 [MidLeft][LoadAlena]
 
-[Right][LoadLoewe]
+[Right][LoadAlenaGrunt1]
 
-[FarRight][LoadSvetomir]
+[FarRight][LoadAlenaGrunt2]
 
 Do you hear that, Alena? Looks like[N]
 
@@ -22,17 +22,19 @@ You got it, boss. A day's work in[N]
 
 gold is waiting for us! Let's get[N]
 
-this over with and hit the tavern.[A]
+this over with and hit the tavern.[A][CloseSpeechSlow][ClearFace]
 
-[FarRight]
+[FarRight][ClearFace]
 
-Like I give a damn about that... Once[N]
+[MidLeft]
+
+Like I give a damn about that[Beat] Once[N]
 
 I find Svet, we'll break out of here[N]
 
 and leave that to fools like you two.[AN]
 
-Though I suppose Cibor will hunt me[N]
+Though I suppose Cidor will hunt me[N]
 
-down after that... what a nuisance.[A][X]
+down after that[Beat] what a nuisance.[A][X]
 

@@ -2,11 +2,8 @@ ALIGN 4
 #include "Macros.event"
 ALIGN 4
 #include "Escape Points.event"
-//Uncomment when there's a Prologue.event
-{
-  ALIGN 4
-  #include "Chapter1.event"
-}
+#include "ChapterEvents/ChapterEventsInstaller.event"
+
 
 ALIGN 4
 #include "REDAs.event"

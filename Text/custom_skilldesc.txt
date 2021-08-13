@@ -35,9 +35,14 @@ infantry units by 2 points.[X]
 ## SD_Avenger
 Avenger: Loewe gains purpose with each[N]
 wound, gaining Crit/Hit and losing[N]
-Avo/Dodge equal to half of missing HP.[X]
+Avo/Dodge equal to his missing HP.[X]
 
 ## SD_RecklessCharge
 Reckless Charge: When Emil is mounted,[N]
 moving his full movement makes his[N]
-attacks brave but reduces his AS to 0.[X]
+attacks brave but reduces AS/Avo to 0.[X]
+
+## SD_Aftershock
+Aftershock: When Iskra attacks with[N]
+thunder magic, enemies are Shocked,[N]
+making them unable to counter one hit.[X]

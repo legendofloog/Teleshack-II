@@ -159,7 +159,7 @@ UnitMenuTable:
 
   UM_Item
   UM_Trade
-  MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
+  //MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
 
   #ifndef COMBAT_ARTS
 	// Shove & cie

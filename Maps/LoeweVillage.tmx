@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" source="../../Saga-of-the-Sigilbearers/Maps/FlasubanVillage.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+   <property name="ChapterID" value="Ch1LoeweVillage"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Ch1LoeweVillageMapChanges"/>
+   <property name="MapID" value="Ch1LoeweVillageMap"/>
+   <property name="ObjectType" value="FlasubanVillageObjectID"/>
+   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+289,130,130,162,162,162,205,206,129,193,162,420,161,353,548,
+290,91,92,94,257,133,272,166,226,226,226,258,577,578,386,
+193,123,124,126,226,165,272,134,226,226,258,161,609,610,420,
+226,225,161,257,290,225,165,166,161,129,162,91,92,94,129,
+324,194,161,193,420,193,225,193,289,161,161,123,124,126,162,
+482,355,130,161,290,225,91,92,94,161,130,225,161,257,258,
+388,289,194,132,289,258,123,124,126,162,163,161,162,289,194,
+194,290,91,92,94,289,226,225,130,162,420,129,91,92,94,
+420,194,123,124,126,194,161,225,129,193,194,226,123,124,126,
+258,129,257,289,193,258,417,546,419,129,289,193,257,225,226
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="15" height="10" visible="0">
+  <properties>
+   <property name="Height" value="8"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="14"/>
+   <property name="X" value="1"/>
+   <property name="Y" value="1"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,29,30,31,0,0,0,0,0,0,0,0,0,0,0,
+0,61,62,63,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,29,30,31,0,
+0,0,0,0,0,0,0,0,0,0,0,61,62,63,0,
+0,0,0,0,0,0,29,30,31,0,0,0,0,0,0,
+0,0,0,0,0,0,61,62,63,0,0,0,0,0,0,
+0,0,29,30,31,0,0,0,0,0,0,0,29,30,31,
+0,0,61,62,63,0,0,0,0,0,0,0,61,62,63,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

@@ -21,4 +21,6 @@
 #define OvergrownArchesFlashback 0x14
 #define CastleExterior 0x15
 #define CastleExteriorFlashback 0x16
+#define PrisonRoom 0x17
 #define Temple 0x2C
+#define BlackBackground 0x35

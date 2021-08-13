@@ -10,6 +10,8 @@
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 
+//#include "MultiSupplyUnits20200302/Installer.event"
+
 // thief vision
 PUSH
 ORG 0x0178C2
@@ -52,17 +54,15 @@ ChangeWeaponRankASMC:
 
 #include "ModularMinimugBox-master/Installers/MMBInstallerSagaOfTheSigilbearers.event"
 
-#include "PortraitHeight/PortraitShiftTable(installthisone).event"
+//#include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
 
 #include "StanAI/StanAI.event" // let's expand first lol
 								// no I want TalkAI - Loog
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
-#include "NosResire/NosResire.event"
+#include "Graphics/NosResire/NosResire.event"
 
-#include "ForblazeSourcePort/Forblaze Installer.event"
-
-#include "MoveStars/Installer.event"
+#include "Graphics/ForblazeSourcePort/Forblaze Installer.event"
 
 #include "MultiTileMarker/MultiTileMarker_Install.event"
 

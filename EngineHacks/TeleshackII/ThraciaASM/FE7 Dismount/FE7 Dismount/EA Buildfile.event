@@ -1,0 +1,7 @@
+#define FreeSpace 0x1000000
+ORG FreeSpace
+#include EAstdlib.event
+#include "_UnitMenuDefs.event"
+#include "Installer.event"
+#include "AntiHuffman.txt"
+#include TextEntries\InstallTextData.event

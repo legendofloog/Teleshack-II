@@ -1,6 +1,7 @@
 #define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
 #define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
 
+
 SpecifiedBattleConvo(Raschwitz_Ch1,Loewe,Chapter1,18,RaschwitzLoeweBattleQuoteText) // always put your specified battle convos above unspecified
 SpecifiedBattleConvo(Raschwitz_Ch1,Alena,Chapter1,19,RaschwitzAlenaBattleQuoteText)
 UnspecifiedBattleConvo(Raschwitz_Ch1,Chapter1,1,RaschwitzGenericBattleQuoteText)

@@ -27,6 +27,7 @@
 #define NoRank 0
 #define ERank 1
 #define DRank 51
+#define DHalfRank 76
 #define CRank 101
 #define BRank 151
 #define ARank 201

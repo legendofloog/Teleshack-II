@@ -324,6 +324,7 @@ SkillDescription(VictoryMarchID,SD_VictoryMarch)
 
 SkillDescription(AvengerID,SD_Avenger)
 SkillDescription(RecklessChargeID,SD_RecklessCharge)
+SkillDescription(AftershockID,SD_Aftershock)
 
 SkillDescription(WeakWilledID,SD_WeakWilled)
 SkillDescription(ShowStopperID,SD_ShowStopper)

@@ -18,7 +18,7 @@ beq End
 ldrb r0, [r4, #0x12] @maxhp
 ldrb r1, [r4, #0x13] @currhp
 sub r2, r0, r1
-lsr r2, #1 @ half of missing hp
+@ lsr r2, #1 @ half of missing hp
 mov r1, #0x60
 ldrh r0, [r4, r1] @hit
 add r0, r2

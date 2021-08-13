@@ -7,7 +7,7 @@
 #define VantageID 3
 #define NihilID 4
 #define LockTouchID 5
-#define AdeptID 5
+#define AdeptID 6
 #define AstraID 7
 #define CharismaID 8
 #define WrathID 9
@@ -32,3 +32,4 @@
 #define VictoryMarchID 20
 #define AvengerID 21
 #define RecklessChargeID 22
+#define AftershockID 23
