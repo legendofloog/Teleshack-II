@@ -17,8 +17,8 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(12, AlenaSpawn, 3)
-TurnEventPlayer(13, BoroSpawn, 7)
-TurnEventPlayer(15,RaschwitzWarning,5)
+TurnEventPlayer(13, BoroSpawn, 8)
+TurnEventPlayer(20,RaschwitzWarning,5)
 END_MAIN
 
 
@@ -394,6 +394,10 @@ ENDA
 
 
 EndingScene:
+CHECK_EVENTID 7
+BNE 2 s0 sC
+SilentGiveItem(Kaiserschwert,Loewe)
+LABEL 2
 EscapeCapturedCheck(Mira, 0x8B)
 EscapeCapturedCheck(Iskra, 0x8C)
 EscapeCapturedCheck(Emil, 0x8D)
