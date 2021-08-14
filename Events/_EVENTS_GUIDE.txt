@@ -25,7 +25,8 @@ as you can see, I only used TurnEventPlayer, but you can also do events on enemy
 phase instead. The pointer, as the name suggests, points to the event. If you follow
 AlenaSpawn, then you'll see the actual event by ctrl+f-ing to find the other mention of it.
 Also, as a general rule, you don't want flagIDs to overlap except in some very niche situations.
-If you want an event to be able to run more than once, set its flagID to 0.
+If you want an event to be able to run more than once, set its flagID to 0. If you want it to
+eventually stop, then use ENUF flagID in the case where you want it to reset.
 
 CharacterBasedEvents are Talk conversations. Pretty simple stuff, just do one of these:
 
