@@ -5,31 +5,29 @@
 void DismountRoutine(Proc* procState){
 	Unit* unit = gActiveUnit;
 	UnitChangeClass(unit, GetDismountedClass(unit));
+	gActionData.unitActionType = UNIT_ACTION_TAKE;
 	ProcGoto(procState, 1);
 }
 
 void MountRoutine(Proc* procState){
 	Unit* unit = gActiveUnit;
 	UnitChangeClass(unit, GetMountedClass(unit));
+	gActionData.unitActionType = UNIT_ACTION_TAKE;
 	ProcGoto(procState, 1);
 }
 
 int DismountUsability(){
 	Unit* unit = gActiveUnit;
-	if (GetDismountedClass(unit)){
-		if(GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] != 0xFF){
-			return USABILITY_TRUE;
-		}
+	if (GetDismountedClass(unit) && GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] > 0){
+		return USABILITY_TRUE;
 	}
 	return USABILITY_FALSE;
 }
 
 int MountUsability(){
 	Unit* unit = gActiveUnit;
-	if (GetMountedClass(unit)){
-		if(GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] != 0xFF){
-			return USABILITY_TRUE;
-		}
+	if (GetMountedClass(unit) && GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] > 0){
+		return USABILITY_TRUE;
 	}
 	return USABILITY_FALSE;
 }
