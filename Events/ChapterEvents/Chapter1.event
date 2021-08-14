@@ -1,0 +1,470 @@
+
+
+EventPointerTable(Chapter1Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+
+TurnBasedEvents:
+TurnEventPlayer(12, AlenaSpawn, 3)
+TurnEventPlayer(13, BoroSpawn, 8)
+TurnEventPlayer(20,RaschwitzWarning,5)
+END_MAIN
+
+
+CharacterBasedEvents:
+CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
+CharacterEventBothWays(8, EmilCleoTalkCh1, Emil, Cleo)
+CharacterEventBothWays(14, SvetomirAlenaTalkCh1, Svetomir, Alena)
+END_MAIN
+
+
+LocationBasedEvents:
+Door(3,16)
+Door(10,13)
+Chest(Mend,3,18)
+Chest(SteelBow,10,11)
+LOCA 9 LoeweSvetomirDoor [16,10] 0x12
+LOCA 10 SennyDoor [16,3] 0x12
+LOCA 11 HelmanDoor [10,5] 0x12
+Escape(0,EscapeEventCheck,2,0)
+Escape(0,EscapeEventCheck,3,0)
+END_MAIN
+
+
+MiscBasedEvents:
+AREA 0 CivilianEscape [14, 0] [15, 0]
+AFEV 15 LoeweSvetomirFreed 9
+AFEV 16 SennyFreed 10
+AFEV 17 HelmanFreed 11
+CauseGameOverIfLordDies
+END_MAIN
+
+
+Dunno1:
+END_MAIN
+
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+
+Tutorial:
+END_MAIN
+
+
+Units1:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
+UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [18,17] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
+UNIT
+
+Flashback1Units:
+UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [9,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Senny Civilian_F   0x0          Level(1,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Raschwitz_Ch1 Civilian 0x0    Level(1,NPC,False) [10,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Chapter1Generics Swordmaster_F 0x0 Level(1,NPC,False) [2,4] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT
+
+Flashback2Units:
+UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [12,2] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Senny Sniper_F   0x0          Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [10,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Chapter1Generics SwordFighter 0x0 Level(1,NPC,False) [12,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Chapter1Generics LanceSoldier 0x0    Level(1,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT 
+
+GreenUnits:
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT
+
+
+EnemyUnits:
+UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Chapter1Generics SwordArmor Raschwitz_Ch1 Level(1,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier Raschwitz_Ch1 Level(1,Enemy,True) [14,13] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [14,7] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,14] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey_5] NeverMoveAI
+UNIT Chapter1Generics AxeSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,4] 0x0 0x0 0x0 0x0 [IronAxe, DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [3,15] 0x0 0x0 0x0 0x0 [IronLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [IronLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [5,3] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
+UNIT
+
+
+Turn3Reinforcements:
+UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] [0x06,Ch1_AlenaAI2,0x4,0x0]
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT
+
+
+BoroUnitGroup:
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x0 0x0 [MasterLance, SilverLance] PursueWithoutHeedAI
+UNIT
+
+BoroCutsceneGroup:
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [MasterLance, SilverLance] PursueWithoutHeedAI
+UNIT
+
+DraganaUnitGroup:
+UNIT Senny Baron 0x0 Level(1,Enemy,False) [5,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Helman Sniper_F 0x0 Level(1,NPC,False) [5,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+
+Traps1:
+RedSigil(2,0)
+RedSigil(3,0)
+ENDTRAP
+ALIGN 4
+
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+AlenaAi2: 
+	AiTryTalkToCharacter(Alena)
+	InjectAi2(Ch1_AlenaAI2, AlenaAi2)
+ALIGN 4
+
+
+BeginningScene:
+LOMA Ch1LoeweVillage
+LOAD1 1 Flashback1Units
+ENUN
+FADU 15
+Text(Ch1KidLoeweTalksToFriendsText)
+MOVE 15 Senny [3,8]
+MOVE 15 Helman [3,5]
+MOVE 15 Raschwitz_Ch1 [12,4]
+ENUN
+REMOVEUNIT Senny
+REMOVEUNIT Raschwitz_Ch1
+FlashCursor(Chapter1Generics,60)
+SetBackground(Village1)
+MUSC FF5_Nostalgia
+Text(BeginningSceneLoeweFlashbackText)
+CALL $9EE2C4
+FADI 15
+TILECHANGE 0
+REMOVEALL_GREEN
+LOAD1 1 Flashback2Units
+CenterTutorialTextBox
+SetBackground(BlackBackground)
+SOLOTEXTBOXSTART
+TEXTSHOW Ch1OneYearLater
+TEXTEND
+REMA
+EVBIT_T 5
+CALL $9EE2C4
+STAL 30
+TEXTSTART
+TEXTSHOW BeginningSceneLoeweFlashback2Text
+TEXTEND
+MOVE 15 Helman [10,2]
+ENUN
+MOVE 15 Helman [10,5]
+ENUN
+MOVE 15 Helman [12,4]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 15 Helman [11,6]
+ENUN
+MOVE 15 Helman [11,9]
+ENUN
+MOVE 15 Helman [13,8]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 15 Helman [13,9]
+ENUN
+MOVE 15 Helman [7,6]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 15 Helman [5,9]
+ENUN
+MOVE 15 Helman [3,8]
+ENUN
+STAL 20
+MOVE 15 Helman [3,9]
+ENUN
+MOVE 15 Helman [1,9]
+ENUN
+MOVE 15 Helman [2,4]
+MOVE 15 Senny [3,4]
+ENUN
+TEXTCONT
+TEXTEND
+FlashCursor(2,2,60)
+MOVE 15 Helman [2,2]
+ENUN
+STAL 30
+MOVE 15 Helman [2,4]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+EVBIT_F 5
+ENUN
+FADI 15
+REMOVEALL_GREEN
+MUSC 0x7FFF
+SetBackground(BlackBackground)
+_0x1A22
+TEXTSHOW Ch1SvetomirPesteringLoeweText1
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch1SvetomirPesteringLoeweText2
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch1SvetomirPesteringLoeweText3
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch1SvetomirPesteringLoeweText4
+TEXTEND
+REMA
+LOMA Chapter1
+LOAD1 1 EnemyUnits
+LOAD1 1 GreenUnits
+ENUN
+FADU 15
+CAMERA Loewe
+FlashCursor(Loewe,60)
+FlashCursor(Svetomir,60)
+SetBackground(PrisonRoom)
+Text(BeginningSceneLoeweGroupText)
+CALL $9EE2C4
+FADI 15
+LOAD1 1 Units1
+ENUN
+FADU 15
+CAMERA Cleo
+FlashCursor(Cleo,60)
+MUSC Sortie_Formation
+SetBackground(CastleHallway)
+Text(BeginningSceneCleoGroupText)
+CALL $9EE2C4
+NoFade
+ENDA
+
+
+AlenaSpawn:
+LOAD1 1 Turn3Reinforcements
+ENUN
+CAMERA Alena
+Text(AlenaSpawnText)
+NoFade
+ENDA
+
+
+BoroSpawn:
+LOAD1 1 BoroUnitGroup
+ENUN
+CAMERA Boro_Ch1
+Text(BoroSpawnText)
+NoFade
+ENDA
+
+RaschwitzWarning:
+CAMERA Raschwitz_Ch1
+FlashCursor(Raschwitz_Ch1,60)
+Text(RaschwitzWarningBoroText)
+NoFade
+ENDA
+
+LoeweIskraTalkCh1:
+MUSC Rovers
+Text(LoeweIskraTalkCh1Text)
+GiveItem(Kaiserschwert,Loewe)
+NoFade
+ENDA
+
+
+EmilCleoTalkCh1:
+MUSC Rovers
+Text(EmilCleoTalkCh1Text)
+NoFade
+ENDA
+
+
+SvetomirAlenaTalkCh1:
+MUSC WithUs_Song
+Text(SvetomirAlenaTalkCh1Text)
+CUSA Alena
+NoFade
+ENDA
+
+LoeweSvetomirDoor:
+TILECHANGE 3
+NoFade
+ENDA
+
+
+LoeweSvetomirFreed:
+MUSC WithUs_Song
+Text(LoeweSvetomirFreedText)
+CUSA Loewe
+CUSA Svetomir
+GiveItem(IronBow,Loewe)
+GiveItem(Heal,Svetomir)
+SilentGiveItem(Vulnerary,Loewe)
+SilentGiveItem(Vulnerary,Svetomir)
+NoFade
+ENDA
+
+
+SennyDoor:
+TILECHANGE 0
+NoFade
+ENDA
+
+SennyFreed:
+Text(SennyFreedText)
+NoFade
+ENDA
+
+HelmanDoor:
+TILECHANGE 1
+NoFade
+ENDA
+
+HelmanFreed:
+Text(HelmanFreedText)
+NoFade
+ENDA
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
+NoFade
+ENDA
+
+
+CivilianEscape:
+CHECK_CLASS -1
+SVAL s1 Civilian_F_2
+BNE 4 s1 sC
+	ENUT 0x78
+	GOTO 5
+LABEL 4
+SVAL s1 Civilian_2
+BNE 5 s1 sC
+	ENUT 0x79
+LABEL 5
+NoFade
+ENDA
+
+
+EndingScene:
+CHECK_EVENTID 7
+BNE 2 s0 sC
+SilentGiveItem(Kaiserschwert,Loewe)
+LABEL 2
+EscapeCapturedCheck(Mira, 0x8B)
+EscapeCapturedCheck(Iskra, 0x8C)
+EscapeCapturedCheck(Emil, 0x8D)
+EscapeCapturedCheck(Svetomir, 0x8E)
+EscapeCapturedCheck(Alena, 0x8F)
+MUSC 0x7FFF
+FADI 15
+RemoveAll
+LOMA Ch1DraganaPrison
+CAMERA [29,29]
+SPAWN_ALLY Cleo [26,29]
+SPAWN_ALLY Loewe [27,29]
+CheckMaxHP(Cleo)
+SADD s1 sC s0
+SET_HP Cleo
+CheckMaxHP(Loewe)
+SADD s1 sC s0
+SET_HP Loewe
+FADU 15
+MOVE 15 Cleo [20,26]
+MOVE 15 Loewe [21,26]
+ENUN
+STAL 20
+Text(EndingSceneTextLoeweAndCleo)
+MOVE 15 Cleo [20,15]
+MOVE 15 Loewe [21,15]
+ENUN
+REMOVEALL_BLUE
+STAL 60
+MUSC FF5_Sealed_Away
+LOAD1 1 BoroCutsceneGroup
+ENUN
+FlashCursor(Boro_Ch1,60)
+MOVE 15 Boro_Ch1 [20,26]
+ENUN
+Text(EndingSceneTextBoro)
+MOVE 15 Boro_Ch1 [20,15]
+ENUN
+FADI 15
+CAMERA [5,10]
+LOAD1 1 DraganaUnitGroup
+ENUN
+FADU 15
+EVBIT_T 9
+STAL 20
+MOVE 15 Senny [5,6]
+ENUN
+CAMERA Helman
+FlashCursor(Helman,60)
+SOUN 0x00B1
+TILECHANGE 0
+STAL 20
+EVBIT_T 5
+TEXTSTART
+TEXTSHOW EndingSceneTextDraganaAndCidor
+TEXTEND
+EVBIT_F 9
+SOUN 0x00B1
+TILEREVERT 0
+MOVE 15 Senny [5,20]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+EVBIT_F 5
+FADI 15
+ENUN
+MNC2 Chapter2 // next vanilla chapter currently crashes; not sure why, but putting in a new event seems to work fine
+NoFade
+ENDA

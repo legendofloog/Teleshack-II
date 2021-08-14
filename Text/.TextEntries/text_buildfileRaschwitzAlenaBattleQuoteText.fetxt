@@ -2,7 +2,7 @@
 
 Hold on, you're supposed to[N]
 
-be one of our mercenaries.[A]
+be one of our mercenaries.[AN]
 
 Why are you on the other side?[A][CloseSpeechSlow][ClearFace]
 
@@ -10,19 +10,19 @@ Why are you on the other side?[A][CloseSpeechSlow][ClearFace]
 
 Plans change. Besides, I only[N]
 
-took this job to save my friend.[A]
+took this job to save my friend.[AN]
 
 I've got no allegiance to you.[A][CloseSpeechSlow][ClearFace]
 
 [MidLeft][LoadRaschwitz]
 
-Y-You reprobate! This is why you[N]
+Y-You reprobate! This is why[N]
 
-can never trust a sellsword![A][CloseSpeechSlow][ClearFace]
+you can't trust a sellsword![A][CloseSpeechSlow][ClearFace]
 
 [MidRight][LoadAlena]
 
-Enough talk. Let's see how that[N]
+Enough talk. Let's see if[N]
 
-armor holds up against my blade![A][X]
+that armor can withstand me![A][X]
 

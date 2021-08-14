@@ -57,10 +57,13 @@ mov r2,#0x20 @brave flag
 orr r1,r2
 str r1,[r0]
 
-@ sets unit's AS to 0
+@ sets unit's AS and avo to 0
 mov r1, #0x5E
 mov r0, #0x0
 strh r0, [r4, r1] @ stores 0 in Emil's AS
+mov r1, #0x62
+mov r0, #0x0
+strh r0, [r4, r1] @ stores 0 in Emil's Avo
 
 
 GoBack:

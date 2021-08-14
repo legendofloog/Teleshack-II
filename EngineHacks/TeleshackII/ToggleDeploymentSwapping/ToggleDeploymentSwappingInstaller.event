@@ -8,7 +8,6 @@
 #define EndDeploymentGroupChapterList "WORD 0 0"
 
 #define AllModes 0xFF
-#define AllChapters 0xFF
 PUSH
 
 ORG 0x1D538

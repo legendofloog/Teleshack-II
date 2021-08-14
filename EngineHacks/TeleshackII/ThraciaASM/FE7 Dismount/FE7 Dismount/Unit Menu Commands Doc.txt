@@ -1,0 +1,7 @@
+Menu command macro:
+MenuCommand(name,description,colour,usability,effect)
+name = Text id of the name of your command
+description = Text id of the description of your command
+colour = colour(_UnitMenuDefs.event for macros)
+usability = Pointer to the usability asm routine of your command. At the end of that routine, set r0 to #0x01 if your routine returns true, else set r0 to #0x03
+effect = Pointer to the effect asm code of your command.

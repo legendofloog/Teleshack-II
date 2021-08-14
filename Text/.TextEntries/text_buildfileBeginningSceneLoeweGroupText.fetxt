@@ -1,6 +1,6 @@
 [MidRight][LoadLoewe]
 
-[MidLeft][LoadSvetomir]
+[MidLeft][LoadSvetomir][OneLineBox]
 
 Hey! Are you ignoring me?[A]
 
@@ -8,21 +8,21 @@ Hey! Are you ignoring me?[A]
 
 What do you want?[A]
 
-[MidLeft]
+[MidLeft][TwoLineBox]
 
-Come on, there's no need to be so cold.[N]
+Come on, there's no need to be[N]
 
-We are cell buddies, after all.[A]
+so cold. We're cell buddies![A]
 
 [MidRight]
 
-'Buddy' isn't a word I'd use to[N]
+Buddy isn't a word I'd use to[N]
 
 describe a pestering priest.[AN]
 
 If you don't need anything,[N]
 
-then leave me alone.[A]
+then leave me alone, got it?[A]
 
 [MidLeft]
 
@@ -30,41 +30,39 @@ Well, you seemed deep in thought, so[N]
 
 I thought you may not have heard it.[A]
 
-[MidRight]
+[MidRight][OneLineBox]
 
 Heard what?[A]
 
-[MidLeft]
+[MidLeft][ThreeLineBox]
 
-Looks like I was dead on, then. Down[N]
-
-the hall, it sounded like weapons[A]
+Down the hall, it sounded like weapons[N]
 
 clashing to me. Maybe we've got some[N]
 
-rescuers coming our way, eh?[A]
+rescuers coming to free us? I hope so.[A]
 
 [MidRight]
 
 Can't imagine any other reason someone[N]
 
-would break into these musty dungeons,[A]
+would break into these musty dungeons,[N]
 
 which means she got my message after all.[A]
 
-[MidLeft]
+[MidLeft][OneLineBox]
 
-Who is 'she'?[A]
+She? Who is that supposed to be?[A]
 
-[MidRight]
+[MidRight][ThreeLineBox]
 
 You'll see soon enough. For now,[N]
 
-prepare to escape if you plan[A]
+get ready to escape if you want[N]
 
-on living til tomorrow.[A]
+to live to see tomorrow, priest.[A]
 
-[MidLeft]
+[MidLeft][TwoLineBox]
 
 Heh, you don't have to tell me[N]
 

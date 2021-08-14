@@ -279,6 +279,8 @@ void New_InitBattleUnitFromUnit(BattleUnit* battleUnit, Unit* unit){
 	battleUnit->wTriangleDmgBonus = 0;
 
 	battleUnit->wexpMultiplier = 0;
+	battleUnit->nonZeroDamage = 0;
+	battleUnit->weaponBroke = 0;
 
 	battleUnit->attacksMade = 0;
 	battleUnit->hitsTaken = 0;
@@ -286,6 +288,8 @@ void New_InitBattleUnitFromUnit(BattleUnit* battleUnit, Unit* unit){
 	// gBattleActor and gBattleTarget
 	gBattleActor.wexpMultiplier = 0;
 	gBattleTarget.wexpMultiplier = 0;
+	gBattleActor.nonZeroDamage = 0;
+	gBattleTarget.nonZeroDamage = 0;
 	gBattleActor.weaponBroke = 0;
 	gBattleTarget.weaponBroke = 0;
 	gBattleActor.expGain = 0;

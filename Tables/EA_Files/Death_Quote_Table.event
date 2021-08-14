@@ -1,6 +1,14 @@
 //DeathQuote(Character,Chapter,EventID,TextID)
+
 #define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
-#define SetDeathQuoteEntry(UnitID,ChapterID,EventID,TextID) "BYTE UnitID flagID $FF; BYTE ChapterID EventID 0x0; SHORT TextID; WORD 0"
 
+DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
+DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
+DeathQuote(Cleo,AllChapters,0x65,CleoDeathQuoteText)
+DeathQuote(Mira,AllChapters,0x0,MiraDeathQuoteText)
+DeathQuote(Iskra,AllChapters,0x0,IskraDeathQuoteText)
+DeathQuote(Emil,AllChapters,0x0,EmilDeathQuoteText)
+DeathQuote(Svetomir,AllChapters,0x0,SvetomirDeathQuoteText)
+DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText)
 DeathQuote(0xFFFF,0,0,0)

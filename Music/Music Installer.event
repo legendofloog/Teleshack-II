@@ -9,6 +9,27 @@ voicegroup000:
 #define MapMusicGroup 1
 #define SFXGroup 6
 
+#include "MusicEvents/lufiadoom.event"
+SongTable(0x4,lufiadoom,MapMusicGroup)
+#include "MusicEvents/Treasure of the Rudras - Battle Theme (RandomWizard).event"
+SongTable(0x5,rudras_battle_theme,MapMusicGroup)
+#include "MusicEvents/Lufia 2 Rise of the Sinistrals - Battle 2 (SaXor_the_Nobody).event"
+SongTable(0x6,lufia2_battle2,BattleMusicGroup)
+#include "MusicEvents/Knights in the Knightmare - Sortie Formation (SaXor_the_Nobody).event"
+SongTable(0x7,L_Sortie_Formation,MapMusicGroup)
+#include "MusicEvents/FE9 - With Us (Sme).event"
+SongTable(0x8,WithUs, MapMusicGroup)
+#include "MusicEvents/TRSBerwickSagaPersonalCombat(RSflame).event"
+SongTable(0x9,song03A2,BattleMusicGroup)
+#include "MusicEvents/Tales_Of_Symphonia_Rover(Pandan).event"
+SongTable(0xA,TalesOfSymphonia_Rover,MapMusicGroup)
+#include "MusicEvents/Valkyrie Profile - The Unfinished Battle with God Syndrome (SaXor_the_Nobody).event"
+SongTable(0xB,unfinishedbattle_godsyndrome,BattleMusicGroup)
+#include "MusicEvents/Final Fantasy 5 - Nostalgia (A_Reliable_Chair).event"
+SongTable(0xC,nostalgia,MapMusicGroup)
+#include "MusicEvents/Final Fantasy 5 - Sealed Away (RandomWizard).event"
+SongTable(0xD,sealed_away,MapMusicGroup)
+
 //=======
 //Example song
 

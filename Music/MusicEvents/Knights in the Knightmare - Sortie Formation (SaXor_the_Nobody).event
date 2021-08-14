@@ -1,0 +1,1321 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	L_Sortie_Formation_grp  voicegroup000
+	#define	L_Sortie_Formation_pri  0
+	#define	L_Sortie_Formation_rev  0
+	#define	L_Sortie_Formation_mvl  80
+	#define	L_Sortie_Formation_key  0
+	#define	L_Sortie_Formation_tbs  1
+	#define	L_Sortie_Formation_exg  0
+	#define	L_Sortie_Formation_cmp  1
+
+	// .rodata
+	//	L_Sortie_Formation
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+L_Sortie_Formation_1:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   140*L_Sortie_Formation_tbs/2
+	BYTE		VOICE   63
+	BYTE		VOL     51*L_Sortie_Formation_mvl/mxv
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+// 001   ----------------------------------------
+L_Sortie_Formation_1_001:
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 008   ----------------------------------------
+	BYTE		N12     An1   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+	BYTE		N12     An1   v100
+	BYTE	W12
+	BYTE		N06     An1   v056
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_1_001
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_1_B1
+L_Sortie_Formation_1_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+L_Sortie_Formation_2:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     45*L_Sortie_Formation_mvl/mxv
+	BYTE		PAN     c_v+26
+	BYTE	W12
+	BYTE		N12     An3   v100
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE		        Bn3   v100
+	BYTE	W12
+	BYTE		        Bn3   v056
+	BYTE	W12
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		        Gn3   v056
+	BYTE	W12
+	BYTE		        An3   v100
+	BYTE	W12
+// 001   ----------------------------------------
+L_Sortie_Formation_2_001:
+	BYTE		N12     An3   v056
+	BYTE	W12
+	BYTE		        Bn3   v100
+	BYTE	W12
+	BYTE		        Bn3   v056
+	BYTE	W12
+	BYTE		        Dn4   v100
+	BYTE	W12
+	BYTE		        Dn4   v056
+	BYTE	W12
+	BYTE		        Bn3   v100
+	BYTE	W12
+	BYTE		        Bn3   v056
+	BYTE	W12
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+L_Sortie_Formation_2_002:
+	BYTE		N12     Gn3   v056
+	BYTE	W12
+	BYTE		        An3   v100
+	BYTE	W12
+	BYTE		        An3   v056
+	BYTE	W12
+	BYTE		        Bn3   v100
+	BYTE	W12
+	BYTE		        Bn3   v056
+	BYTE	W12
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		        Gn3   v056
+	BYTE	W12
+	BYTE		        An3   v100
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     An3   v100
+	BYTE	W24
+	BYTE		        Bn3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Gn3   v056
+	BYTE	W12
+	BYTE		        An3   v100
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_2_001
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_2_B1
+L_Sortie_Formation_2_B2:
+// 016   ----------------------------------------
+	BYTE		N12     Gn3   v056
+	BYTE	W12
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+L_Sortie_Formation_3:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     45*L_Sortie_Formation_mvl/mxv
+	BYTE		PAN     c_v-26
+	BYTE	W12
+	BYTE		N12     Cn3   v100
+	BYTE	W12
+	BYTE		        Cn3   v056
+	BYTE	W12
+	BYTE		        Dn3   v100
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE		        Bn2   v100
+	BYTE	W12
+	BYTE		        Bn2   v056
+	BYTE	W12
+	BYTE		        Cn3   v100
+	BYTE	W12
+// 001   ----------------------------------------
+L_Sortie_Formation_3_001:
+	BYTE		N12     Cn3   v056
+	BYTE	W12
+	BYTE		        Dn3   v100
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE		        Fn3   v100
+	BYTE	W12
+	BYTE		        Fn3   v056
+	BYTE	W12
+	BYTE		        Dn3   v100
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE		        Bn2   v100
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+L_Sortie_Formation_3_002:
+	BYTE		N12     Bn2   v056
+	BYTE	W12
+	BYTE		        Cn3   v100
+	BYTE	W12
+	BYTE		        Cn3   v056
+	BYTE	W12
+	BYTE		        Dn3   v100
+	BYTE	W12
+	BYTE		        Dn3   v056
+	BYTE	W12
+	BYTE		        Bn2   v100
+	BYTE	W12
+	BYTE		        Bn2   v056
+	BYTE	W12
+	BYTE		        Cn3   v100
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+// 008   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     Cn3   v100
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE	W24
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Bn2   v056
+	BYTE	W12
+	BYTE		        Cn3   v100
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_3_001
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_3_B1
+L_Sortie_Formation_3_B2:
+// 016   ----------------------------------------
+	BYTE		N12     Bn2   v056
+	BYTE	W12
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+L_Sortie_Formation_4:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   63
+	BYTE		VOL     51*L_Sortie_Formation_mvl/mxv
+	BYTE		PAN     c_v+26
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+L_Sortie_Formation_4_002:
+	BYTE	W24
+	BYTE		N06     Cn4   v100
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE		N06     Cn4   v056
+	BYTE	W06
+	BYTE		        An3   v100
+	BYTE		N06     Bn3   v056
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		        Bn3   v100
+	BYTE	W06
+	BYTE		        Bn3   v056
+	BYTE	W06
+	BYTE		        Gn3   v100
+	BYTE	W06
+	BYTE		        Gn3   v056
+	BYTE	W18
+	BYTE		N12     Dn3   v100
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE		N06     Dn3   v056
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_4_002
+// 007   ----------------------------------------
+	BYTE		N06     Dn3   v056
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_4_B1
+L_Sortie_Formation_4_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+L_Sortie_Formation_5:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     57*L_Sortie_Formation_mvl/mxv
+	BYTE		PAN     c_v-26
+	BYTE		N96     An1   v100
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE		        Cn2 
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE		        Cn2 
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_5_B1
+L_Sortie_Formation_5_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+L_Sortie_Formation_6:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     57*L_Sortie_Formation_mvl/mxv
+	BYTE		N12     Dn1   v100
+	BYTE		N96     Cs2 
+	BYTE		N96     Gn2 
+	BYTE		N96     An2   v072
+	BYTE	W12
+	BYTE		N06     Dn1   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 001   ----------------------------------------
+L_Sortie_Formation_6_001:
+	BYTE		N12     Dn1   v100
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N03     Dn1   v080
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N12     Dn1   v100
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+L_Sortie_Formation_6_002:
+	BYTE		N12     Dn1   v100
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+// 004   ----------------------------------------
+L_Sortie_Formation_6_004:
+	BYTE		N12     Dn1   v100
+	BYTE		N96     Cs2 
+	BYTE		N96     Gn2 
+	BYTE		N96     An2   v072
+	BYTE	W12
+	BYTE		N06     Dn1   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_004
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_6_001
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_6_B1
+L_Sortie_Formation_6_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+L_Sortie_Formation_7:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   47
+	BYTE		VOL     57*L_Sortie_Formation_mvl/mxv
+	BYTE		N48     An0   v100
+	BYTE		N48     An1 
+	BYTE		N48     An2 
+	BYTE	W48
+	BYTE		N12     An0 
+	BYTE		N12     An1 
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N36     An0 
+	BYTE		N36     An1 
+	BYTE		N36     An2 
+	BYTE	W36
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+L_Sortie_Formation_7_002:
+	BYTE		N48     An0   v100
+	BYTE		N48     An1 
+	BYTE		N48     An2 
+	BYTE	W48
+	BYTE		N12     An0 
+	BYTE		N12     An1 
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N36     An0 
+	BYTE		N36     An1 
+	BYTE		N36     An2 
+	BYTE	W36
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_7_002
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_7_002
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_7_002
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_7_002
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_7_002
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_7_002
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_7_B1
+L_Sortie_Formation_7_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+L_Sortie_Formation_8:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   62
+	BYTE		VOL     57*L_Sortie_Formation_mvl/mxv
+	BYTE		N12     An2   v100
+	BYTE	W12
+	BYTE		        An2   v056
+	BYTE	W36
+	BYTE		        An2   v100
+	BYTE	W12
+	BYTE		        An2   v056
+	BYTE	W36
+// 001   ----------------------------------------
+L_Sortie_Formation_8_001:
+	BYTE		N12     An2   v100
+	BYTE	W12
+	BYTE		        An2   v056
+	BYTE	W36
+	BYTE		        An2   v100
+	BYTE	W12
+	BYTE		        An2   v056
+	BYTE	W36
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 008   ----------------------------------------
+	BYTE		N12     An2   v100
+	BYTE	W48
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        An2   v056
+	BYTE	W36
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_8_001
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_8_B1
+L_Sortie_Formation_8_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+L_Sortie_Formation_9:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_9_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     51*L_Sortie_Formation_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE		N06     Cn5   v100
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE		N06     Cn5   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE		N06     Bn4   v056
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Bn4   v056
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gn4   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE	W06
+	BYTE		N12     En4   v100
+	BYTE	W12
+	BYTE		N06     En4   v056
+	BYTE	W12
+	BYTE		N12     Dn4   v100
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE		N06     Dn4   v056
+	BYTE		N06     En4   v100
+	BYTE	W06
+	BYTE		        En4   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Bn4   v056
+	BYTE	W06
+	BYTE		        Cn5   v100
+	BYTE	W06
+	BYTE		        Cn5   v056
+	BYTE	W06
+	BYTE		        Cn5   v100
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE		N06     Cn5   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE		N06     Bn4   v056
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		N12     Bn4   v100
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE		N06     Bn4   v056
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		        Gn4 
+	BYTE		N12     Cn5   v100
+	BYTE	W12
+	BYTE		N06     Cn5   v056
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE		N06     Dn5   v056
+	BYTE	W06
+	BYTE		N12     Bn4   v100
+	BYTE		N06     Cn5   v056
+	BYTE	W12
+	BYTE		N12     Gn4   v100
+	BYTE		N06     Bn4   v056
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE		N06     An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE	W06
+	BYTE		N12     En4   v100
+	BYTE	W12
+	BYTE		N06     En4   v056
+	BYTE	W12
+	BYTE		        Cn4   v100
+	BYTE	W06
+	BYTE		        Cn4   v056
+	BYTE		N06     Dn4   v100
+	BYTE	W06
+// 011   ----------------------------------------
+	BYTE		        Dn4   v056
+	BYTE		N06     Gn4   v100
+	BYTE	W06
+	BYTE		        Gn4   v056
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        Fn4   v056
+	BYTE	W30
+	BYTE		N12     An4   v100
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE		N06     An4   v056
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE		N06     Gn4   v056
+	BYTE	W06
+	BYTE		N12     En4   v100
+	BYTE		N06     Fn4   v056
+	BYTE	W12
+	BYTE		N12     Dn4   v100
+	BYTE		N06     En4   v056
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE		N06     Cn5   v100
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE		N06     Cn5   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE		N06     Bn4   v056
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Bn4   v056
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gn4   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE	W06
+	BYTE		N12     En5   v100
+	BYTE	W12
+	BYTE		N06     En5   v056
+	BYTE	W12
+	BYTE		N12     Dn5   v100
+	BYTE	W12
+// 013   ----------------------------------------
+	BYTE		N06     Dn5   v056
+	BYTE	W12
+	BYTE		N12     Gn5   v100
+	BYTE	W12
+	BYTE		N06     Fn5 
+	BYTE		N06     Gn5   v056
+	BYTE	W06
+	BYTE		        En5   v100
+	BYTE		N06     Fn5   v056
+	BYTE	W06
+	BYTE		        Dn5   v100
+	BYTE		N06     En5   v056
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		N12     Cn5   v100
+	BYTE	W12
+	BYTE		N06     Bn4 
+	BYTE		N06     Cn5   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE		N06     Bn4   v056
+	BYTE	W06
+	BYTE		N12     Gn4   v100
+	BYTE		N06     An4   v056
+	BYTE	W12
+	BYTE		N12     Fn4   v100
+	BYTE		N06     Gn4   v056
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE		        En4   v100
+	BYTE		N06     Fn4   v056
+	BYTE	W06
+	BYTE		        Ds4   v100
+	BYTE		N06     En4   v056
+	BYTE	W06
+	BYTE		        Ds4 
+	BYTE		N06     En4   v100
+	BYTE	W06
+	BYTE		        En4   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE		N06     An4   v056
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE		N06     An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE	W06
+	BYTE		        Cn5   v100
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE		N06     Cn5   v056
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE		N06     Cn5   v100
+	BYTE	W06
+	BYTE		        Cn5   v056
+	BYTE	W06
+	BYTE		        En5   v100
+	BYTE	W06
+	BYTE		        Ds5 
+	BYTE		N06     En5   v056
+	BYTE	W06
+	BYTE		        Ds5 
+	BYTE		N06     En5   v100
+	BYTE	W06
+	BYTE		        En5   v056
+	BYTE	W06
+// 015   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     Dn5   v100
+	BYTE	W12
+	BYTE		N06     Dn5   v056
+	BYTE		N06     En5   v100
+	BYTE	W06
+	BYTE		        En5   v056
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE	W06
+	BYTE		N12     Cn5   v100
+	BYTE	W12
+	BYTE		N06     Bn4 
+	BYTE		N06     Cn5   v056
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N12     Gn4   v100
+	BYTE	W12
+	BYTE		        En4 
+	BYTE		N06     Gn4   v056
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_9_B1
+L_Sortie_Formation_9_B2:
+// 016   ----------------------------------------
+	BYTE		N06     En4   v056
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 10 (Midi-Chn.11) ****************//
+
+L_Sortie_Formation_10:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_10_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   46
+	BYTE		VOL     57*L_Sortie_Formation_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W24
+	BYTE		N06     An2   v100
+	BYTE	W06
+	BYTE		        An2   v056
+	BYTE		N06     Ds3   v100
+	BYTE	W06
+	BYTE		        Ds3   v056
+	BYTE		N06     En3   v100
+	BYTE	W06
+	BYTE		        En3   v056
+	BYTE		N06     An3   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        An3   v056
+	BYTE		N06     Ds4   v100
+	BYTE	W06
+	BYTE		        Ds4   v056
+	BYTE		N06     En4   v100
+	BYTE	W06
+	BYTE		        En4   v056
+	BYTE		N06     An4   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE		N06     Ds5   v100
+	BYTE	W06
+	BYTE		        Ds5   v056
+	BYTE		N06     En5   v100
+	BYTE	W06
+	BYTE		        En5   v056
+	BYTE		N06     An5   v100
+	BYTE	W06
+// 008   ----------------------------------------
+	BYTE		        An5   v056
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W48
+	BYTE		        En3   v100
+	BYTE	W06
+	BYTE		        En3   v056
+	BYTE		N06     An3   v100
+	BYTE	W06
+	BYTE		        An3   v056
+	BYTE		N06     Ds4   v100
+	BYTE	W06
+	BYTE		        Ds4   v056
+	BYTE		N06     En4   v100
+	BYTE	W06
+	BYTE		        En4   v056
+	BYTE		N06     An4   v100
+	BYTE	W06
+	BYTE		        An4   v056
+	BYTE		N06     Fn5   v100
+	BYTE	W06
+	BYTE		        Fn5   v056
+	BYTE		N06     Gn5   v100
+	BYTE	W06
+	BYTE		        Gn5   v056
+	BYTE		N06     An5   v100
+	BYTE	W06
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_10_B1
+L_Sortie_Formation_10_B2:
+// 016   ----------------------------------------
+	BYTE		N06     An5   v056
+	BYTE	W06
+	BYTE	FINE
+
+//**************** Track 11 (Midi-Chn.12) ****************//
+
+L_Sortie_Formation_11:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_11_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   65
+	BYTE		VOL     64*L_Sortie_Formation_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+L_Sortie_Formation_11_008:
+	BYTE	W48
+	BYTE		N06     An3   v100
+	BYTE	W06
+	BYTE		N12     An3   v056
+	BYTE	W06
+	BYTE		        En3   v100
+	BYTE	W12
+	BYTE		        En3   v056
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_11_008
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_11_008
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_11_008
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_11_B1
+L_Sortie_Formation_11_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 12 (Midi-Chn.13) ****************//
+
+L_Sortie_Formation_12:
+	BYTE	KEYSH   L_Sortie_Formation_key+0
+L_Sortie_Formation_12_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     64*L_Sortie_Formation_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+L_Sortie_Formation_12_008:
+	BYTE	W48
+	BYTE		N06     An2   v100
+	BYTE	W06
+	BYTE		N12     An2   v056
+	BYTE	W06
+	BYTE		        En2   v100
+	BYTE	W12
+	BYTE		        En2   v056
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_12_008
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_12_008
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	L_Sortie_Formation_12_008
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	L_Sortie_Formation_12_B1
+L_Sortie_Formation_12_B2:
+// 016   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+L_Sortie_Formation:
+	BYTE	12	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	L_Sortie_Formation_pri	// Priority
+	BYTE	L_Sortie_Formation_rev	// Reverb.
+
+	POIN2	L_Sortie_Formation_grp
+
+	POIN2	L_Sortie_Formation_1
+	POIN2	L_Sortie_Formation_2
+	POIN2	L_Sortie_Formation_3
+	POIN2	L_Sortie_Formation_4
+	POIN2	L_Sortie_Formation_5
+	POIN2	L_Sortie_Formation_6
+	POIN2	L_Sortie_Formation_7
+	POIN2	L_Sortie_Formation_8
+	POIN2	L_Sortie_Formation_9
+	POIN2	L_Sortie_Formation_10
+	POIN2	L_Sortie_Formation_11
+	POIN2	L_Sortie_Formation_12
+
+	

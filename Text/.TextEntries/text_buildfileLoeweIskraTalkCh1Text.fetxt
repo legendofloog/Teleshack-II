@@ -12,9 +12,9 @@ Of course I do. You entrusted it to[N]
 
 me, so there's no way I'd lose it.[A]
 
-[MidRight][OneLineBox]
+[MidRight][OneLineBox][ToggleSmile]
 
-Thanks. I knew I could count on you.[A]
+Thanks. I knew I could count on you.[A][ToggleSmile]
 
 [MidLeft][ThreeLineBox]
 
@@ -40,15 +40,15 @@ for saving you by risking death?[AN]
 
 Surely you realize she wouldn't[N]
 
-want that after raising you.[A]
+want that. You're family, right?[A]
 
 [MidRight][ThreeLineBox]
 
-You're right, but the Vyrens have[N]
+You're not wrong, and that's all[N]
 
-already taken too much from us.[N]
+the more reason for my actions.[N]
 
-I... We can't lose anyone else.[A]
+I[Beat] We can't lose anyone else.[A]
 
 [MidLeft]
 
@@ -60,13 +60,13 @@ Otherwise, I'm not giving the sword.[A]
 
 [MidRight][OneLineBox]
 
-...You know how to twist my arm.[A]
+[Beat]You know how to twist my arm.[A]
 
-[MidLeft][TwoLineBox]
+[MidLeft][TwoLineBox][ToggleSmile]
 
 Of course. I've learned[N]
 
-that much over the years.[A]
+that much over the years.[A][ToggleSmile]
 
 [MidRight]
 
@@ -86,7 +86,7 @@ his back in my hands. Now, let's-[A]
 
 [MidLeft]
 
-Hold on. If you don't mind me asking...[N]
+Hold on. If you don't mind me asking[Beat][N]
 
 Can you teach me how to use a sword?[AN]
 
@@ -94,17 +94,39 @@ I want to be able to defend myself,[N]
 
 even if I'm unable to use my magic.[AN]
 
+[MidRight][ThreeLineBox]
+
+I'm not sure how helpful I'll be. My[N]
+
+mother taught me, but she died before[N]
+
+I learned much beyond the basics.[AN]
+
+Looking back now, her swordmanship was[N]
+
+peerless. A pride of Mahemen, no doubt.[A]
+
+[MidLeft]
+
+Mahemen[Beat] All that desert must help[N]
+
+keep the Cytheans at bay. Their rebels[N]
+
+are in a much better position than us.[AN]
+
+Maybe if we all joined hands, our[N]
+
+forces could send the Cytheans packing.[A]
+
 [MidRight]
 
-I'm not much of a swordsman to begin[N]
+Perhaps[Beat] Maybe a swordmaster there[N]
 
-with. My mother taught me a bit,[AN]
+could help finish my training. Right[N]
 
-but I doubt I'd be able to pass[N]
+now, my sword is of use to no one.[A]
 
-on that knowledge to someone else.[A]
-
-[MidLeft][ThreeLineBox]
+[MidLeft]
 
 I've seen you practicing on[N]
 
@@ -114,21 +136,21 @@ You look pretty good to me.[A]
 
 [MidRight]
 
-Against practice dummies, sure. When[N]
+Against a practice target, sure. When[N]
 
 I'm facing a real person with one,[N]
 
-there's a... sense of hesitation.[AN]
+there's a[Beat] sense of hesitation.[AN]
 
 Still, if you really want to learn,[N]
 
 then I can show you a thing or two.[A]
 
-[MidLeft][TwoLineBox]
+[MidLeft][TwoLineBox][ToggleSmile]
 
 Ha, I'm glad you agreed. Wouldn't[N]
 
-want to twist your other arm too.[A]
+want to twist your other arm too.[A][ToggleSmile]
 
 [MidRight]
 
@@ -138,7 +160,7 @@ wasted enough time talking, Iskra.[A][CloseSpeechSlow][ClearFace]
 
 [MidLeft]
 
-Coarse as ever... I hope he's a[N]
+Coarse as ever[Beat] I hope he's a[N]
 
 bit nicer as a teacher, at least.[A][X]
 

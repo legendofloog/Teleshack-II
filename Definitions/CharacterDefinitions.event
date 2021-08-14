@@ -85,9 +85,10 @@
 #define Lyon_Final 0x6C
 #define Orson_Boss 0x6D
  
-// Chapter 1 NPCs
-#define Senny 0x6E
-#define Helman 0x6F
+// Chapter 1 Stuff
+#define Chapter1Generics 0x6E
+#define Senny 0x6F
+#define Helman 0x70
 
 
 

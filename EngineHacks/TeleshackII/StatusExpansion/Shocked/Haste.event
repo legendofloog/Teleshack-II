@@ -1,0 +1,22 @@
+
+#include "Haste.lyn.event"
+
+#define ShockedStatusID 0x13
+
+SetStatusName(ShockedStatusID,Shocked_Status_Name)
+SetStatusDesc(ShockedStatusID,Shocked_Status_Desc)
+SetStatusBlinkyIconFunc(ShockedStatusID,BlinkyIconFuncNoIcon)
+
+HasteStatusIDLink:
+BYTE HasteStatusID
+
+// define text & put `HastePostBattle` in the post-battle calc loop
+
+ALIGN 4
+HasteEvent: //plays a sound when getting refreshed
+CAM1 0xFFFF
+SOUN 0x10F
+STAL 0x16
+NoFade
+ENDA
+

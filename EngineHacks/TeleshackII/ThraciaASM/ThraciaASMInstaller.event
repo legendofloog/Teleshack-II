@@ -4,6 +4,7 @@
 #include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
 #include "RescueChanges/RescueChangesEvent.event"
 #include "ExtraGrowths/Installer.event"
+#include "MoveStars/Installer.event"
 
 
 // changes Luck's contribution to Hit into lck instead of lck/2
@@ -12,11 +13,12 @@ ORG $2abc4
 BYTE 0x0 0x1C 0x0 0x1C 0x0 0x1C
 POP
 
+
 // changes skill's contribution to crit into Skl instead of skl/2
-PUSH
-ORG $2ac28
-BYTE 0x0 0x1C 0x0 0x1C 0x0 0x1C
-POP
+//PUSH
+//ORG $2ac28
+//BYTE 0x0 0x1C 0x0 0x1C 0x0 0x1C
+//POP
 // changes luck cap to 20
 PUSH
 ORG $872AE
@@ -82,12 +84,11 @@ ORG 0x2c1a2 // removes A-rank limit for unpromoted units, credit 7743
 BYTE 251
 ORG 0x2c1a6
 BYTE 251
+POP
 
-// this part is from alusq, removes kill bonus for wexp
+PUSH // this part is from alusq, removes kill bonus for wexp
 ORG $2c142
 BYTE 0x01 0x29 0x0 0xDC 
-// in fe7: 08029B8A is 09 06 and 08029B8C is 09 16
-// 08029B8E is 48 43
 POP
 
 // changes RN to bugged RN (aka 1RN)

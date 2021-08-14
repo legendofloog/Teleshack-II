@@ -1,13 +1,120 @@
 // setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)
 #define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
-#define RuneMug 0x02
-
+#define CleoMug 0x2
+#define MiraMug 0x4
+#define IskraMug 0x5
+#define EmilMug 0x6
+#define SvetomirMug 0x7
+#define AlenaMug 0x8
+#define LoeweMug 0x14
+#define LoeweKidMug 0x15
+#define DraganaMug 0x2D
+#define CidorMug 0x2E
+#define CatrinMug 0x2F
+#define RaschwitzMug 0x45
+#define BoroMug 0x4E
 
 ALIGN 16
-RuneMugData:
-#incbin "Dmp/Rune/RuneSpriteTake1_mug.dmp"
-#incbin "Dmp/Rune/RuneSpriteTake1_frames.dmp"
-#incbin "Dmp/Rune/RuneSpriteTake1_palette.dmp"
-#incbin "Dmp/Rune/RuneSpriteTake1_minimug.dmp"
-setMugEntry(RuneMug, RuneMugData, 3, 5, 3, 3)
+CleoMugData:
+#incbin "Dmp/Cleo/Cleo_mug.dmp"
+#incbin "Dmp/Cleo/Cleo_frames.dmp"
+#incbin "Dmp/Cleo/Cleo_palette.dmp"
+#incbin "Dmp/Cleo/Cleo_minimug.dmp"
+setMugEntry(CleoMug, CleoMugData, 3, 5, 3, 3)
+
+ALIGN 16
+MiraMugData:
+#incbin "Dmp/Mira/Mira(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Mira/Mira(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Mira/Mira(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Mira/Mira(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(MiraMug, MiraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+IskraMugData:
+#incbin "Dmp/Iskra/Iskra(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Iskra/Iskra(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Iskra/Iskra(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Iskra/Iskra(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(IskraMug, IskraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+EmilMugData:
+#incbin "Dmp/Emil/Emil(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Emil/Emil(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Emil/Emil(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Emil/Emil(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(EmilMug, EmilMugData, 3, 5, 3, 3)
+
+ALIGN 16
+SvetomirMugData:
+#incbin "Dmp/Svetomir/Svetomir(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Svetomir/Svetomir(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Svetomir/Svetomir(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Svetomir/Svetomir(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(SvetomirMug, SvetomirMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AlenaMugData:
+#incbin "Dmp/Alena/Alena(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Alena/Alena(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Alena/Alena(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Alena/Alena(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(AlenaMug, AlenaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+LoeweMugData:
+#incbin "Dmp/Loewe/Loewe_Wyvern_mug.dmp"
+#incbin "Dmp/Loewe/Loewe_Wyvern_frames.dmp"
+#incbin "Dmp/Loewe/Loewe_Wyvern_palette.dmp"
+#incbin "Dmp/Loewe/Loewe_Wyvern_minimug.dmp"
+setMugEntry(LoeweMug, LoeweMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LoeweKidMugData:
+#incbin "Dmp/Loewe/LoeweKid_mug.dmp"
+#incbin "Dmp/Loewe/LoeweKid_frames.dmp"
+#incbin "Dmp/Loewe/LoeweKid_palette.dmp"
+#incbin "Dmp/Loewe/LoeweKid_minimug.dmp"
+setMugEntry(LoeweKidMug, LoeweKidMugData, 2, 8, 3, 6)
+
+ALIGN 16
+DraganaMugData:
+#incbin "Dmp/Dragana/Dragana_mug.dmp"
+#incbin "Dmp/Dragana/Dragana_frames.dmp"
+#incbin "Dmp/Dragana/Dragana_palette.dmp"
+#incbin "Dmp/Dragana/Dragana_minimug.dmp"
+setMugEntry(DraganaMug, DraganaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CidorMugData:
+#incbin "Dmp/Cidor/Cidor(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Cidor/Cidor(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Cidor/Cidor(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Cidor/Cidor(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(CidorMug, CidorMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CatrinMugData:
+#incbin "Dmp/Catrin/LoeweMom(Levin)_mug.dmp"
+#incbin "Dmp/Catrin/LoeweMom(Levin)_frames.dmp"
+#incbin "Dmp/Catrin/LoeweMom(Levin)_palette.dmp"
+#incbin "Dmp/Catrin/LoeweMom(Levin)_minimug.dmp"
+setMugEntry(CatrinMug, CatrinMugData, 2, 6, 3, 4)
+
+ALIGN 16
+RaschwitzMugData:
+#incbin "Dmp/Raschwitz/Raschwitz(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Raschwitz/Raschwitz(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Raschwitz/Raschwitz(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Raschwitz/Raschwitz(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(RaschwitzMug, RaschwitzMugData, 3, 5, 3, 3)
+
+ALIGN 16
+BoroMugData:
+#incbin "Dmp/Boro/Boro(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Boro/Boro(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Boro/Boro(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Boro/Boro(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(BoroMug, BoroMugData, 3, 5, 3, 3)
 

@@ -1,0 +1,47 @@
+//FE8 Unit Menu Definitions by circleseverywhere.
+//Text color definitions by Crazycolorz5.
+//FE7 Port 
+#define MenuCommand(name,description,colour,usability,effect) "WORD $081c3f94; SHORT name description; BYTE colour $4d; SHORT 0; POIN usability|1; WORD 0; POIN effect|1; WORD 0 0 0"
+
+
+#define UM_Seize(colour) "BYTE $94 $3F $1C $08 $CA $10 $5E $03 colour $4D $00 $00 $B9 $1E $02 $08 $00 $00 $00 $00 $FD $1E $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Attack(colour) "BYTE $8C $3F $1C $08 $CB $10 $53 $03 colour $4E $00 $00 $7D $35 $02 $08 $00 $00 $00 $00 $3D $1A $02 $08 $00 $00 $00 $00 $35 $1B $02 $08 $9D $1B $02 $08"		
+#define UM_Attack_B(colour) "BYTE $8C $3F $1C $08 $CB $10 $53 $03 colour $4F $00 $00 $F9 $35 $02 $08 $00 $00 $00 $00 $3D $1A $02 $08 $00 $00 $00 $00 $35 $1B $02 $08 $9D $1B $02 $08"
+#define UM_Staff(colour) "BYTE $84 $3F $1C $08 $CC $10 $54 $03 colour $50 $00 $00 $0D $29 $02 $08 $00 $00 $00 $00 $85 $29 $02 $08 $00 $00 $00 $00 $F1 $29 $02 $08 $39 $2A $02 $08"
+#define UM_Ride(colour) "BYTE $7C $3F $1C $08 $C8 $10 $68 $03 colour $51 $00 $00 $99 $34 $02 $08 $00 $00 $00 $00 $F5 $34 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Exit(colour) "BYTE $70 $3F $1C $08 $C9 $10 $69 $03 colour $52 $00 $00 $21 $35 $02 $08 $00 $00 $00 $00 $51 $35 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Play(colour) "BYTE $64 $3F $1C $08 $CD $10 $56 $03 colour $53 $00 $00 $1D $20 $02 $08 $00 $00 $00 $00 $95 $20 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Dance(colour) "BYTE $5C $3F $1C $08 $CE $10 $55 $03 colour $54 $00 $00 $59 $20 $02 $08 $00 $00 $00 $00 $95 $20 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Steal(colour) "BYTE $54 $3F $1C $08 $CF $10 $57 $03 colour $55 $00 $00 $79 $2F $02 $08 $00 $00 $00 $00 $C9 $2F $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Talk(colour) "BYTE $4C $3F $1C $08 $D0 $10 $5C $03 colour $56 $00 $00 $35 $2B $02 $08 $00 $00 $00 $00 $79 $2B $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Support(colour) "BYTE $44 $3F $1C $08 $D1 $10 $DB $03 colour $57 $00 $00 $C1 $2B $02 $08 $00 $00 $00 $00 $11 $2C $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Visit(colour) "BYTE $3C $3F $1C $08 $D2 $10 $5D $03 colour $58 $00 $00 $1D $1F $02 $08 $00 $00 $00 $00 $8D $1F $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Chest(colour) "BYTE $34 $3F $1C $08 $D3 $10 $60 $03 colour $59 $00 $00 $C1 $2C $02 $08 $00 $00 $00 $00 $FD $2C $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Door(colour) "BYTE $2C $3F $1C $08 $D4 $10 $5F $03 colour $5A $00 $00 $59 $2C $02 $08 $00 $00 $00 $00 $99 $2C $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Armory(colour) "BYTE $20 $3F $1C $08 $D5 $10 $61 $03 colour $5B $00 $00 $D5 $2D $02 $08 $00 $00 $00 $00 $09 $2E $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Vendor(colour) "BYTE $14 $3F $1C $08 $D6 $10 $62 $03 colour $5C $00 $00 $29 $2E $02 $08 $00 $00 $00 $00 $5D $2E $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Secret(colour) "BYTE $08 $3F $1C $08 $D7 $10 $63 $03 colour $5D $00 $00 $7D $2E $02 $08 $00 $00 $00 $00 $B1 $2E $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Arena(colour)  "BYTE $FC $3E $1C $08 $D8 $10 $64 $03 colour $5E $00 $00 $D1 $2E $02 $08 $00 $00 $00 $00 $21 $2F $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Rescue(colour) "BYTE $F4 $3E $1C $08 $D9 $10 $58 $03 colour $5F $00 $00 $B1 $17 $02 $08 $00 $00 $00 $00 $E9 $17 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Drop(colour) "BYTE $E8 $3E $1C $08 $DA $10 $59 $03 colour $60 $00 $00 $1D $18 $02 $08 $00 $00 $00 $00 $55 $18 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Take(colour) "BYTE $DC $3E $1C $08 $DB $10 $5B $03 colour $61 $00 $00 $99 $18 $02 $08 $00 $00 $00 $00 $E1 $18 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Give(colour) "BYTE $D0 $3E $1C $08 $DC $10 $5A $03 colour $62 $00 $00 $01 $19 $02 $08 $00 $00 $00 $00 $49 $19 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Item(colour)	"BYTE $C4 $3E $1C $08 $DD $10 $65 $03 colour $63 $00 $00 $7D $21 $02 $08 $00 $00 $00 $00 $9D $21 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Trade(colour) "BYTE $BC $3E $1C $08 $DE $10 $66 $03 colour $64 $00 $00 $11 $1E $02 $08 $00 $00 $00 $00 $65 $1E $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Merch(colour) "BYTE $B0 $3E $1C $08 $DF $10 $67 $03 colour $65 $00 $00 $21 $2D $02 $08 $00 $00 $00 $00 $B5 $2D $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Status(colour) "BYTE $A8 $3E $1C $08 $E3 $10 $71 $03 colour $66 $00 $00 $69 $2F $02 $08 $00 $00 $00 $00 $6D $2F $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_Wait(colour) "BYTE $A0 $3E $1C $08 $E0 $10 $52 $03 colour $67 $00 $00 $F9 $A8 $04 $08 $00 $00 $00 $00 $45 $16 $02 $08 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00"
+#define UM_spacer "WORD 0 0 0 0 0 0 0 0 0"
+
+#define NormalText 0x0
+#define GrayText 0x1
+#define BlueText 0x2
+#define OrangeText 0x3
+#define GreenText 0x4
+#define BlackText 0x5
+
+#define UMTableOffset 0xB95314
+#define UMTablePointerOffset 0xB95AB4
+
+#define DismountMount(id1, id2) "BYTE id1 id2"
+#define EndTable "SHORT 0"

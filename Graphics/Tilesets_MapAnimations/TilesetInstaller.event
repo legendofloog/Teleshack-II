@@ -10,6 +10,20 @@
     ThraciaCastleMapchipConfig:
     #incbin "Config/fe5castlev2_comp.dmp"
 
+    ALIGN 4
+    FlasubanVillageObject:
+    #incbin "Object/FlasubanVillageObject.dmp"
+
+    ALIGN 4
+    FlasubanVillagePalette:
+    #incbin "Palette/FlasubanVillageObject_pal.dmp"
+    ALIGN 4
+    FlasubanVillageMapchipConfig:
+    #incbin "Config/newfe8village_comp.dmp"
+
     EventPointerTable(ThraciaCastleObjectID, ThraciaCastleObject)
     EventPointerTable(ThraciaCastlePaletteID, ThraciaCastlePalette)
     EventPointerTable(ThraciaCastleMapchipConfigID, ThraciaCastleMapchipConfig)
+    EventPointerTable(FlasubanVillageObjectID, FlasubanVillageObject)
+    EventPointerTable(FlasubanVillageNormalPaletteID, FlasubanVillagePalette)
+    EventPointerTable(FlasubanVillageMapchipConfigID, FlasubanVillageMapchipConfig)
