@@ -155,8 +155,9 @@ Countermagic: Reflect magic damage[N]
 when attacked at 1-2 range.[X]
 
 ## SD_Miracle
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Miracle: (3 x Luck)% chance to[N]
+survive a lethal attack, but[N]
+reduce 10 luck afterwards.[X]
 
 ## SD_Swordfaire
 Swordfaire: +4 damage[N]

@@ -106,3 +106,29 @@ I don't use them often. RedSigil/GreenSigil/BlueSigil are defined to show points
 for things like Escape, Arrive, and Defend without having to use MultiTileMarker. A lot of
 the commonly used traps are done automatically, so there aren't many you'd need to put here.
 Of note is that we're not using Ballista traps since there's a dedicated Ballistician class.
+
+BeginningScene and EndingScene are your start and end events, as the names imply. You can
+add a lot of neat cutscening stuff here if you like, but there are only a few requirements
+here. 
+
+The BeginningScene needs to load in your units and the enemies. In any map with a prep screen,
+writing something like the following should really be all you need.
+
+BeginningScene:
+LOAD1 1 EnemyUnits
+ENUN
+GotoPrepScreen
+
+GotoPrepScreen calls the preparations menu, loads in your units, and then ENDAs (which just ends
+the BeginningScene event). If you have other events after this, I'd recommend just putting them
+in a Turn 1 event, but you can call PREP and then other events before your ENDA if you want to.
+
+EndingScene is also simple, as all you should need is this, as an example:
+
+MNC2 Chapter3
+NoFade
+ENDA
+
+I've defined all all of these in advance, so it should be as simple as replacing the number
+with the chapter after yours. Obviously, you will probably want to put other things in
+your start and end events, like text, so I'd refer to Part 2 of Sme's guide from here. 
