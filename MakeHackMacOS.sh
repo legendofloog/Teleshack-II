@@ -1,6 +1,5 @@
 #!/bin/bash
 cd $(dirname "$0")
-chmod 777 EventAssembler/Tools/*
 cp FE8_clean.gba TeleshackII.gba
 cd ./Text
 python3 ../Tools/MacOS/textprocess text_buildfile.txt --parser-exe ../Event Assembler/Tools/ParseFile
