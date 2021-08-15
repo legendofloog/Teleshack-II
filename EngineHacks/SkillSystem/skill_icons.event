@@ -929,6 +929,9 @@ ORG SkillIcon(RadianceID)
 ORG SkillIcon(NightcallerID)
 #incbin "SkillIcons/Trample.dmp"
 
+ORG SkillIcon(DullahamID)
+#incbin "SkillIcons/DevilsWhim.dmp"
+
 ORG SkillIcon(PCC0ID)
 #incbin "SkillIcons/Bond.dmp"
 ORG SkillIcon(PCC2ID)
