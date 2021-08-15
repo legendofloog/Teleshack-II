@@ -51,18 +51,18 @@ Aftershock:
 POIN SkillTester
 WORD AftershockID
 
-#include "DullahamEvent.event"
+#include "DullahanEvent.event"
 
 ALIGN 4
-Dullaham:
-#incbin "Dullaham.dmp"
+Dullahan:
+#incbin "Dullahan.dmp"
 POIN SkillTester
-WORD DullahamID
-POIN DullahamEvent
+WORD DullahanID
+POIN DullahanEvent
 
 
 ALIGN 4
-Proc_DullahamCost:
-#incbin "DullahamCost.dmp"
+Proc_DullahanCost:
+#incbin "DullahanCost.dmp"
 POIN SkillTester
-WORD DullahamID
+WORD DullahanID

@@ -4,7 +4,7 @@
   mov lr, \reg
   .short 0xf800
 .endm
-.equ DullahamID, SkillTester+4
+.equ DullahanID, SkillTester+4
 
 @ r0 is attacker, r1 is defender, r2 is current buffer, r3 is battle data
 push {r4-r7,lr}
@@ -26,7 +26,7 @@ bne End
 ldr r0, SkillTester
 mov lr, r0
 mov r0, r5 @attacker data
-ldr r1, DullahamID
+ldr r1, DullahanID
 .short 0xf800
 cmp r0, #0
 beq End
@@ -62,4 +62,4 @@ bx r0
 .ltorg
 SkillTester:
 @POIN SkillTester
-@WORD DullahamID
+@WORD DullahanID

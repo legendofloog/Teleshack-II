@@ -319,7 +319,7 @@ SkillDescription(PCC5ID,SD_PCC5)
 
 SkillDescription(RadianceID,SD_Radiance)
 SkillDescription(NightcallerID,SD_Nightcaller)
-SkillDescription(DullahamID,SD_Dullaham)
+SkillDescription(DullahanID,SD_Dullahan)
 
 SkillDescription(VictoryMarchID,SD_VictoryMarch)
 

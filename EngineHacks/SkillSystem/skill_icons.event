@@ -929,7 +929,7 @@ ORG SkillIcon(RadianceID)
 ORG SkillIcon(NightcallerID)
 #incbin "SkillIcons/Trample.dmp"
 
-ORG SkillIcon(DullahamID)
+ORG SkillIcon(DullahanID)
 #incbin "SkillIcons/DevilsWhim.dmp"
 
 ORG SkillIcon(PCC0ID)

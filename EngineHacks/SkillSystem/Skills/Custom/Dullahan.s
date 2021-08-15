@@ -3,8 +3,8 @@
   mov lr, \reg
   .short 0xf800
 .endm
-.equ DullahamID, SkillTester+4
-.equ DullahamEvent, DullahamID+4
+.equ DullahanID, SkillTester+4
+.equ DullahanEvent, DullahanID+4
 .thumb
 GetEquippedWeapon = 0x08016B58+1
 push	{r4-r7, lr}
@@ -31,7 +31,7 @@ bne	SkillEnd
 
 @check for skill
 mov	r0, r4
-ldr	r1, DullahamID
+ldr	r1, DullahanID
 ldr	r3, SkillTester
 mov	lr, r3
 .short	0xf800
@@ -61,7 +61,7 @@ str	r3, [r1]
 
 ldr	r0,=#0x800D07C		@event engine thingy
 mov	lr, r0
-ldr	r0, DullahamEvent	@this event is just "teleport animation on current character"
+ldr	r0, DullahanEvent	@this event is just "teleport animation on current character"
 mov	r1, #0x01		@0x01 = wait for events
 .short	0xF800
 
