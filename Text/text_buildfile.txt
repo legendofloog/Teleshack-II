@@ -150,7 +150,7 @@ Ready to ride?[X]
 
 #include "deathquotes.txt"
 
-#include "ChapterText/ChapterTextInstaller.event"
+#include "ChapterTextInstaller.txt"
 
 #include "ClassItemsEtc/ItemNamesDescs_Free.txt"
 
