@@ -61,9 +61,9 @@ mov lr, r3
 mov r3, r0
 
 ldrb r0, [r3, #2]
-mov  r1, #0xF0
+mov  r1, #0x0F
 and  r0, r1
-add  r0, #10
+add  r0, #0xB0
 strb r0, [r3, #2]
 
 End:
