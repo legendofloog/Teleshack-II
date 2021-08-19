@@ -25,13 +25,13 @@ cmp r0, #0
 beq Normal
 
 @if vantage, check hp/2
-mov r2, #0x12
-ldsb r2, [r5, r2] @defender max hp
-lsr r2, #1 @halve it
-mov r3, #0x13
-ldsb r3, [r5,r3] @currhp
-cmp r3, r2
-bgt Normal
+@mov r2, #0x12
+@ldsb r2, [r5, r2] @defender max hp
+@lsr r2, #1 @halve it
+@mov r3, #0x13
+@ldsb r3, [r5,r3] @currhp
+@cmp r3, r2
+@bgt Normal
 @swap them
 @eor r4,r5
 @eor r5,r4

@@ -16,6 +16,7 @@ PostCombatSkills: //I like having savage blow as the first one because it makes 
 POIN SavageBlow BreathOfLife Despoil Lifetaker Fury PoisonStrike GrislyWound//lifetaker should probably go after any messages because it can mess with the palette a bit
 POIN RadianceHeal RadianceMarking
 POIN Post_Nightcaller
+//POIN Post_AftershockInfliction
 POIN Canto CantoPlus TryProcMoveStar Galeforce Powerstaff CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested ; Canto (put here to test mount universal canto) - loog
 POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
 WORD 0 //Terminator

@@ -121,17 +121,17 @@ FILL 256
 #define SetStatusBlinkyIconFunc(statusID,funcPtr) "PUSH; ORG (BlinkyStatusIconJumpTable+(statusID*4)); POIN funcPtr; POP"
 
 
-#define NoStatusID 0
-#define PoisonStatusID 1
-#define SleepStatusID 2
-#define SilenceStatusID 3
-#define BerserkStatusID 4
-#define AtkRingStatusID 5
-#define DefRingStatusID 6
-#define CritRingStatusID 7
-#define AvoRingStatusID 8
-#define SickStatusID 9
-#define PetrifyStatusID 13
+//#define NoStatusID 0
+//#define PoisonStatusID 1
+//#define SleepStatusID 2
+//#define SilenceStatusID 3
+//#define BerserkStatusID 4
+//#define AtkRingStatusID 5
+//#define DefRingStatusID 6
+//#define CritRingStatusID 7
+//#define AvoRingStatusID 8
+//#define SickStatusID 9
+//#define PetrifyStatusID 13
 
 
 SetStatusName(NoStatusID,0x536)
@@ -217,12 +217,13 @@ prCheckUnitStatus:
 
 */
 
-#include "Enfeeble/Enfeeble.event"
-#include "HexingRod/HexingRod.event"
-#include "Freeze/Freeze.event"
-#include "Freeze/EventFreeze.event"
-#include "Regen/Regen.event"
-#include "Haste/Haste.event"
-#include "Slow/Slow.event"
+//#include "Enfeeble/Enfeeble.event"
+//#include "HexingRod/HexingRod.event"
+//#include "Freeze/Freeze.event"
+//#include "Freeze/EventFreeze.event"
+//#include "Regen/Regen.event"
+//#include "Haste/Haste.event"
+//#include "Slow/Slow.event"
+#include "Shock/Shock.event"
 
 #endif // STATUS_EXPANSION_INSTALLED

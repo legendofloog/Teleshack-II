@@ -4,11 +4,14 @@
 
 #include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+#include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
+
+#include "StatusExpansion/StatusExpansion.event"
 
 //#include "MultiSupplyUnits20200302/Installer.event"
 

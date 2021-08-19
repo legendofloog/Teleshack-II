@@ -18,20 +18,17 @@ POP
 #define HardClassLock 3
 #define EndLockArray 0
 
-TestArray:
-BYTE HardClassLock
-BYTE Noble_F
-BYTE ThiefFighter
-BYTE EndLockArray
 
 KaiserschwertArray:
-BYTE HardCharLock
-BYTE Loewe
+BYTE HardClassLock
+BYTE Dragonlord
+BYTE HardClassLock
+BYTE Dragonlord_Dismounted
 BYTE EndLockArray
 
 ArgilabrysArray:
 BYTE HardCharLock
-BYTE Claudia
+BYTE Cleo
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

@@ -46,7 +46,7 @@ WORD RecklessChargeID
 POIN prMovGetter
 
 ALIGN 4
-Aftershock:
-#incbin "Aftershock.dmp"
+Post_AftershockInfliction:
+#incbin "AftershockInflictionPostBattle.dmp"
 POIN SkillTester
 WORD AftershockID

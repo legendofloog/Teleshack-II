@@ -29,7 +29,6 @@
 
     #include "EngineHacks/TeleshackII/ASM Master Installer.event"
 
-	#ifdef USE_TEST_MAP
     //Events
     #include "Events/Events Installer.event"
     MESSAGE Used event space ends at currentOffset
@@ -37,7 +36,6 @@
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
-    #endif // USE_TEST_MAP
 	
     MESSAGE Used free space ends at currentOffset
 #else

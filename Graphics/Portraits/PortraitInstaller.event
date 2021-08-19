@@ -16,10 +16,10 @@
 
 ALIGN 16
 CleoMugData:
-#incbin "Dmp/Cleo/Cleo_mug.dmp"
-#incbin "Dmp/Cleo/Cleo_frames.dmp"
-#incbin "Dmp/Cleo/Cleo_palette.dmp"
-#incbin "Dmp/Cleo/Cleo_minimug.dmp"
+#incbin "Dmp/Cleo/Cleo(hypergammaspaces)_mug.dmp"
+#incbin "Dmp/Cleo/Cleo(hypergammaspaces)_frames.dmp"
+#incbin "Dmp/Cleo/Cleo(hypergammaspaces)_palette.dmp"
+#incbin "Dmp/Cleo/Cleo(hypergammaspaces)_minimug.dmp"
 setMugEntry(CleoMug, CleoMugData, 3, 5, 3, 3)
 
 ALIGN 16
@@ -64,10 +64,10 @@ setMugEntry(AlenaMug, AlenaMugData, 3, 6, 3, 4)
 
 ALIGN 16
 LoeweMugData:
-#incbin "Dmp/Loewe/Loewe_Wyvern_mug.dmp"
-#incbin "Dmp/Loewe/Loewe_Wyvern_frames.dmp"
-#incbin "Dmp/Loewe/Loewe_Wyvern_palette.dmp"
-#incbin "Dmp/Loewe/Loewe_Wyvern_minimug.dmp"
+#incbin "Dmp/Loewe/Loewe(hypergammaspaces)_mug.dmp"
+#incbin "Dmp/Loewe/Loewe(hypergammaspaces)_frames.dmp"
+#incbin "Dmp/Loewe/Loewe(hypergammaspaces)_palette.dmp"
+#incbin "Dmp/Loewe/Loewe(hypergammaspaces)_minimug.dmp"
 setMugEntry(LoeweMug, LoeweMugData, 3, 5, 3, 3)
 
 ALIGN 16

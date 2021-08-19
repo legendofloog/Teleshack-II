@@ -143,6 +143,8 @@ Time to march?[X]
 ## Mount_Description_TextID
 Ready to ride?[X]
 
+#include "statusdesc_text.txt"
+
 #include "skilldesc_text.txt"
 #include "custom_skilldesc.txt"
 

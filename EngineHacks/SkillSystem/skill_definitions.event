@@ -19,6 +19,7 @@
 #define PCC3ID 15
 #define PCC4ID 16
 #define PCC5ID 17
+#define DesperationID 18
 
 // keep it continous for debug purpose
 
@@ -27,9 +28,9 @@
 // TODO: add custom common skills here
 
 // personal skills
-#define RadianceID 18
-#define NightcallerID 19
-#define VictoryMarchID 20
-#define AvengerID 21
-#define RecklessChargeID 22
-#define AftershockID 23
+#define RadianceID 19
+#define NightcallerID 20
+#define VictoryMarchID 21
+#define AvengerID 22
+#define RecklessChargeID 23
+#define AftershockID 24

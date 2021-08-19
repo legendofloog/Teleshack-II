@@ -4,128 +4,128 @@ Noble,3,10,20,0
 Noble(F),3,10,20,0
 MasterKnight,7,10,20,4
 MasterKnight(F),7,10,20,4
-SwordKnight,0,3,20,0
-LanceKnight,0,3,20,0
-AxeKnight,0,3,20,0
+SwordKnight,0,5,20,0
+LanceKnight,0,5,20,0
+AxeKnight,0,5,20,0
 BowKnight,0,5,20,0
-ArchKnight,1,3,20,1
-ForrestKnight,1,3,20,1
-GreatKnight,1,3,20,1
-DukeKnight,1,3,20,1
+ArchKnight,1,5,20,1
+ForrestKnight,1,5,20,1
+GreatKnight,1,5,20,1
+DukeKnight,1,5,20,1
 Thief,0,0,20,0
 Manakete,0,0,20,0
-SwordFighter,0,3,20,1
-SwordFighter(F),0,3,20,1
-Hero,1,3,20,1
-Hero (F),1,3,20,1
-Myrmidon,0,3,20,0
-Myrmidon (F),0,3,20,0
-Swordmaster,1,3,20,1
-Swordmaster (F),1,3,20,1
+SwordFighter,0,5,20,1
+SwordFighter(F),0,5,20,1
+Hero,1,5,20,1
+Hero (F),1,5,20,1
+Myrmidon,0,5,20,0
+Myrmidon (F),0,5,20,0
+Swordmaster,1,5,20,1
+Swordmaster (F),1,5,20,1
 Thief(F),0,0,20,0
 Ballista,0,0,20,0
-Archer,0,3,20,0
-Archer (F),0,3,20,0
-Sniper,3,3,20,1
-Sniper (F),3,3,20,1
+Archer,0,5,20,0
+Archer (F),0,5,20,0
+Sniper,3,5,20,1
+Sniper (F),3,5,20,1
 Scaleshot,0,0,20,0
 Skyseeker,4,0,20,0
 Dragonlord,2,0,20,2
 Seraphknight,7,0,20,3
-Pegasus Rider,3,3,20,0
-Falcoknight,5,20,20,2
-Dragon Rider,0,3,20,1
-Dracoknight,1,3,20,1
-Mage,3,20,20,0
-Mage (F),3,20,20,0
-Sage,7,20,20,4
-Sage (F),7,20,20,4
-Mage Knight,4,20,20,2
-Mage Knight (F),4,20,20,2
-High Priest,6,20,20,3
-High Priestess,6,20,20,3
-Dark Mage,2,20,20,0
-Dark Mage (F),2,20,20,0
-Dark Bishop,5,20,20,3
-Dark Bishop (F),5,20,20,3
-Bard,1,20,20,0
-Sister,1,20,20,0
-Thief Fighter,1,3,20,1
+Pegasus Rider,3,5,20,0
+Falcoknight,5,5,20,2
+Dragon Rider,0,5,20,1
+Dracoknight,1,5,20,1
+Mage,3,30,20,0
+Mage (F),3,30,20,0
+Sage,7,30,20,4
+Sage (F),7,30,20,4
+Mage Knight,4,30,20,2
+Mage Knight (F),4,30,20,2
+High Priest,6,30,20,3
+High Priestess,6,30,20,3
+Dark Mage,2,40,20,0
+Dark Mage (F),2,40,20,0
+Dark Bishop,5,40,20,3
+Dark Bishop (F),5,40,20,3
+Bard,1,30,20,0
+Sister,1,30,20,0
+Thief Fighter,1,5,20,1
 Gorgon Egg,0,0,20,0
-Priest,3,20,20,0
-Priest (F),3,20,20,0
-Rook Knight,0,3,20,0
-Gold Knight,1,3,20,1
+Priest,3,30,20,0
+Priest (F),3,30,20,0
+Rook Knight,0,5,20,0
+Gold Knight,1,5,20,1
 Troubadour,2,20,20,0
 Paladin,5,20,20,3
 Manakete,2,0,20,0
 Manakete (F),2,0,20,0
-Hunter,0,3,20,0
-Hunter (F),0,3,20,0
-Warrior (F),1,3,20,1
-Warrior,1,3,20,1
-Brigand,0,3,20,0
-Brigand (F),0,3,20,0
-Sword Armor,0,3,20,0
-Axe Armor,0,3,20,0
-Lance Armor,0,3,20,0
-Bow Armor,0,3,20,0
-General,1,3,20,1
-Mage Armor,4,20,20,0
+Hunter,0,5,20,0
+Hunter (F),0,5,20,0
+Warrior (F),1,5,20,1
+Warrior,1,5,20,1
+Brigand,0,5,20,0
+Brigand (F),0,5,20,0
+Sword Armor,0,5,20,0
+Axe Armor,0,5,20,0
+Lance Armor,0,5,20,0
+Bow Armor,0,5,20,0
+General,1,5,20,1
+Mage Armor,4,35,20,0
 Baron,7,35,20,3
-Axe Fighter,0,3,20,0
-Axe Fighter (F),0,3,20,0
-Thief Fighter (F),1,3,20,1
-Dancer,1,3,20,0
-Lance Soldier,0,3,20,0
-Axe Soldier,0,3,20,0
+Axe Fighter,0,5,20,0
+Axe Fighter (F),0,5,20,0
+Thief Fighter (F),1,5,20,1
+Dancer,1,5,20,0
+Lance Soldier,0,5,20,0
+Axe Soldier,0,5,20,0
 Fleet,0,0,20,0
 Phantom,0,0,20,0
-SwordKnight (D),0,0,20,0
+SwordKnight (D),0,5,20,0
 LongBallista,1,0,20,1
-LanceKnight (D),0,0,20,0
-AxeKnight (D),0,0,20,0
-BowKnight (D),0,0,20,0
-ArchKnight (D),1,3,20,1
-ForrestKnight (D),1,3,20,1
-GreatKnight (D),1,3,20,1
-DukeKnight (D),1,3,20,1
-Scaleshot (D),0,0,20,0
-Skyseeker (D),4,0,20,0
-Dragonlord (D),2,3,20,2
+LanceKnight (D),0,5,20,0
+AxeKnight (D),0,5,20,0
+BowKnight (D),0,5,20,0
+ArchKnight (D),1,5,20,1
+ForrestKnight (D),1,5,20,1
+GreatKnight (D),1,5,20,1
+DukeKnight (D),1,5,20,1
+Scaleshot (D),0,5,20,0
+Skyseeker (D),4,5,20,0
+Dragonlord (D),2,5,20,2
 Seraphknight (D),3,0,20,3
-Pegasus Rider (D),0,3,20,0
-Falcoknight (D),2,3,20,2
-Dragon Rider (D),0,3,20,0
+Pegasus Rider (D),0,5,20,0
+Falcoknight (D),2,5,20,2
+Dragon Rider (D),0,5,20,0
 Gorgon Egg,0,0,20,0
-Dracoknight (D),0,3,20,1
-Mage Knight (D),4,20,20,2
+Dracoknight (D),0,5,20,1
+Mage Knight (D),4,30,20,2
 Dracozombie,1,30,20,0
 Demon King,23,40,20,0
-Mage Knight (F) (D),4,20,20,2
+Mage Knight (F) (D),4,30,20,2
 Rook Knight (D),0,0,20,0
-Gold Knight (D),1,3,20,1
+Gold Knight (D),1,5,20,1
 Troubadour (D),2,20,20,0
 Paladin (D),5,20,20,3
-Bard (F),1,20,20,0
+Bard (F),1,30,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
-Corsair,0,3,20,0
-Corsair (F),0,3,20,0
-Berserker,1,3,20,1
-Berserker (F),1,3,20,1
+Corsair,0,5,20,0
+Corsair (F),0,5,20,0
+Berserker,1,5,20,1
+Berserker (F),1,5,20,1
 Master Knight (D),6,10,20,4
-Halberdier,2,3,20,1
+Halberdier,2,5,20,1
 Tent,0,0,20,0
-Freelancer,0,3,20,0
-Champion,1,3,20,1
+Freelancer,0,5,20,0
+Champion,1,5,20,1
 Master_Knight_F (D),6,10,20,4
-Brother,1,20,20,0
-LongBallista,1,3,20,0
+Brother,1,30,20,0
+LongBallista,1,5,20,0
 (empty),2,55,20,1
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0

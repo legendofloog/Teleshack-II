@@ -12,7 +12,7 @@
 .equ AssassinateID, DesperationID+4
 
 @check range
-ldr r0,=#0x203A4D4 @battle stats
+ldr r0,=0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#1
 bne CheckDesperation
@@ -29,17 +29,17 @@ b HasSkill
 
 CheckDesperation:
 @check attacker's hp
-ldr r3, [sp]
+@ldr r3, [sp]
 
-ldr r0, =0x203a4ec @no vantage + desp shenanigans, that's unfair lol
-cmp r3, r0
-bne NoSkill 
+@ldr r0, =0x203a4ec @no vantage + desp shenanigans, that's unfair lol
+@cmp r3, r0
+@bne NoSkill 
 
-ldrb r0, [r3,#0x12] @max
-ldrb r1, [r3, #0x13] @curr
-lsr r0, #1
-cmp r1, r0
-bgt NoSkill
+@ldrb r0, [r3,#0x12] @max
+@ldrb r1, [r3, #0x13] @curr
+@lsr r0, #1
+@cmp r1, r0
+@bgt NoSkill
 
 @now check if attacker has desperation
 ldr r0, SkillTester
