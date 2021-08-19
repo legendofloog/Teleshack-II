@@ -19,6 +19,7 @@ POIN Post_Nightcaller
 //POIN Post_AftershockInfliction
 POIN Canto CantoPlus TryProcMoveStar Galeforce Powerstaff CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested ; Canto (put here to test mount universal canto) - loog
 POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
+POIN Dullahan
 WORD 0 //Terminator
 
 PROTECT $1D308 $1D314

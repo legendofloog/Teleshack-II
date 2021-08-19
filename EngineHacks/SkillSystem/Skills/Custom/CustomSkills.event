@@ -50,3 +50,20 @@ Post_AftershockInfliction:
 #incbin "AftershockInflictionPostBattle.dmp"
 POIN SkillTester
 WORD AftershockID
+
+#include "DullahanEvent.event"
+
+ALIGN 4
+Dullahan:
+#incbin "Dullahan.dmp"
+POIN SkillTester
+WORD DullahanID
+POIN DullahanEvent
+
+
+ALIGN 4
+Proc_DullahanCost:
+#incbin "DullahanCost.dmp"
+POIN SkillTester
+WORD DullahanID
+
