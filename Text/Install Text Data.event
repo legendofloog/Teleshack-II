@@ -1926,752 +1926,828 @@ __TEXTPROCESSEAE:
 setText($EAE, __TEXTPROCESSEAE)
 
 __TEXTPROCESSEAF:
-#incext ParseFile ".TextEntries\text_buildfileCleoEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSD_Aftershock.fetxt"
 setText($EAF, __TEXTPROCESSEAF)
 
 __TEXTPROCESSEB0:
-#incext ParseFile ".TextEntries\text_buildfileLoeweEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCleoEscapeQuoteText.fetxt"
 setText($EB0, __TEXTPROCESSEB0)
 
 __TEXTPROCESSEB1:
-#incext ParseFile ".TextEntries\text_buildfileMiraEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLoeweEscapeQuoteText.fetxt"
 setText($EB1, __TEXTPROCESSEB1)
 
 __TEXTPROCESSEB2:
-#incext ParseFile ".TextEntries\text_buildfileIskraEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMiraEscapeQuoteText.fetxt"
 setText($EB2, __TEXTPROCESSEB2)
 
 __TEXTPROCESSEB3:
-#incext ParseFile ".TextEntries\text_buildfileEmilEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileIskraEscapeQuoteText.fetxt"
 setText($EB3, __TEXTPROCESSEB3)
 
 __TEXTPROCESSEB4:
-#incext ParseFile ".TextEntries\text_buildfileSvetomirEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEmilEscapeQuoteText.fetxt"
 setText($EB4, __TEXTPROCESSEB4)
 
 __TEXTPROCESSEB5:
-#incext ParseFile ".TextEntries\text_buildfileAlenaEscapeQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSvetomirEscapeQuoteText.fetxt"
 setText($EB5, __TEXTPROCESSEB5)
 
 __TEXTPROCESSEB6:
-#incext ParseFile ".TextEntries\text_buildfileChapter1Title.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAlenaEscapeQuoteText.fetxt"
 setText($EB6, __TEXTPROCESSEB6)
 
 __TEXTPROCESSEB7:
-#incext ParseFile ".TextEntries\text_buildfileBeginningSceneLoeweFlashbackText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCleoDeathQuoteText.fetxt"
 setText($EB7, __TEXTPROCESSEB7)
 
 __TEXTPROCESSEB8:
-#incext ParseFile ".TextEntries\text_buildfileBeginningSceneLoeweGroupText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLoeweDeathQuoteText.fetxt"
 setText($EB8, __TEXTPROCESSEB8)
 
 __TEXTPROCESSEB9:
-#incext ParseFile ".TextEntries\text_buildfileBeginningSceneCleoGroupText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMiraDeathQuoteText.fetxt"
 setText($EB9, __TEXTPROCESSEB9)
 
 __TEXTPROCESSEBA:
-#incext ParseFile ".TextEntries\text_buildfileAlenaSpawnText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileIskraDeathQuoteText.fetxt"
 setText($EBA, __TEXTPROCESSEBA)
 
 __TEXTPROCESSEBB:
-#incext ParseFile ".TextEntries\text_buildfileBoroSpawnText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEmilDeathQuoteText.fetxt"
 setText($EBB, __TEXTPROCESSEBB)
 
 __TEXTPROCESSEBC:
-#incext ParseFile ".TextEntries\text_buildfileLoeweIskraTalkCh1Text.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSvetomirDeathQuoteText.fetxt"
 setText($EBC, __TEXTPROCESSEBC)
 
 __TEXTPROCESSEBD:
-#incext ParseFile ".TextEntries\text_buildfileEmilCleoTalkCh1Text.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAlenaDeathQuoteText.fetxt"
 setText($EBD, __TEXTPROCESSEBD)
 
 __TEXTPROCESSEBE:
-#incext ParseFile ".TextEntries\text_buildfileSvetomirAlenaTalkCh1Text.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter1Title.fetxt"
 setText($EBE, __TEXTPROCESSEBE)
 
 __TEXTPROCESSEBF:
-#incext ParseFile ".TextEntries\text_buildfileLoeweSvetomirFreedText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCh1KidLoeweTalksToFriendsText.fetxt"
 setText($EBF, __TEXTPROCESSEBF)
 
 __TEXTPROCESSEC0:
-#incext ParseFile ".TextEntries\text_buildfileSennyFreedText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCh1OneYearLater.fetxt"
 setText($EC0, __TEXTPROCESSEC0)
 
 __TEXTPROCESSEC1:
-#incext ParseFile ".TextEntries\text_buildfileHelmanFreedText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBeginningSceneLoeweFlashbackText.fetxt"
 setText($EC1, __TEXTPROCESSEC1)
 
 __TEXTPROCESSEC2:
-#incext ParseFile ".TextEntries\text_buildfileRaschwitzLoeweBattleQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBeginningSceneLoeweFlashback2Text.fetxt"
 setText($EC2, __TEXTPROCESSEC2)
 
 __TEXTPROCESSEC3:
-#incext ParseFile ".TextEntries\text_buildfileRaschwitzAlenaBattleQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCh1SvetomirPesteringLoeweText1.fetxt"
 setText($EC3, __TEXTPROCESSEC3)
 
 __TEXTPROCESSEC4:
-#incext ParseFile ".TextEntries\text_buildfileRaschwitzGenericBattleQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCh1SvetomirPesteringLoeweText2.fetxt"
 setText($EC4, __TEXTPROCESSEC4)
 
 __TEXTPROCESSEC5:
-#incext ParseFile ".TextEntries\text_buildfileRaschwitzDeathQuoteText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCh1SvetomirPesteringLoeweText3.fetxt"
 setText($EC5, __TEXTPROCESSEC5)
 
 __TEXTPROCESSEC6:
-#incext ParseFile ".TextEntries\text_buildfileKingSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCh1SvetomirPesteringLoeweText4.fetxt"
 setText($EC6, __TEXTPROCESSEC6)
 
 __TEXTPROCESSEC7:
-#incext ParseFile ".TextEntries\text_buildfileFlameSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBeginningSceneLoeweGroupText.fetxt"
 setText($EC7, __TEXTPROCESSEC7)
 
 __TEXTPROCESSEC8:
-#incext ParseFile ".TextEntries\text_buildfileParagonSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBeginningSceneCleoGroupText.fetxt"
 setText($EC8, __TEXTPROCESSEC8)
 
 __TEXTPROCESSEC9:
-#incext ParseFile ".TextEntries\text_buildfileThunderSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAlenaSpawnText.fetxt"
 setText($EC9, __TEXTPROCESSEC9)
 
 __TEXTPROCESSECA:
-#incext ParseFile ".TextEntries\text_buildfileWindSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBoroSpawnText.fetxt"
 setText($ECA, __TEXTPROCESSECA)
 
 __TEXTPROCESSECB:
-#incext ParseFile ".TextEntries\text_buildfileSleepSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLoeweIskraTalkCh1Text.fetxt"
 setText($ECB, __TEXTPROCESSECB)
 
 __TEXTPROCESSECC:
-#incext ParseFile ".TextEntries\text_buildfileBerserkSwordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEmilCleoTalkCh1Text.fetxt"
 setText($ECC, __TEXTPROCESSECC)
 
 __TEXTPROCESSECD:
-#incext ParseFile ".TextEntries\text_buildfileWindName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSvetomirAlenaTalkCh1Text.fetxt"
 setText($ECD, __TEXTPROCESSECD)
 
 __TEXTPROCESSECE:
-#incext ParseFile ".TextEntries\text_buildfileBlizzardDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLoeweSvetomirFreedText.fetxt"
 setText($ECE, __TEXTPROCESSECE)
 
 __TEXTPROCESSECF:
-#incext ParseFile ".TextEntries\text_buildfileFenrirDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSennyFreedText.fetxt"
 setText($ECF, __TEXTPROCESSECF)
 
 __TEXTPROCESSED0:
-#incext ParseFile ".TextEntries\text_buildfileHelName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHelmanFreedText.fetxt"
 setText($ED0, __TEXTPROCESSED0)
 
 __TEXTPROCESSED1:
-#incext ParseFile ".TextEntries\text_buildfileMeteorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzLoeweBattleQuoteText.fetxt"
 setText($ED1, __TEXTPROCESSED1)
 
 __TEXTPROCESSED2:
-#incext ParseFile ".TextEntries\text_buildfileMeteorDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzAlenaBattleQuoteText.fetxt"
 setText($ED2, __TEXTPROCESSED2)
 
 __TEXTPROCESSED3:
-#incext ParseFile ".TextEntries\text_buildfileShortSwordName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzWarningBoroText.fetxt"
 setText($ED3, __TEXTPROCESSED3)
 
 __TEXTPROCESSED4:
-#incext ParseFile ".TextEntries\text_buildfileLightRuneName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzGenericBattleQuoteText.fetxt"
 setText($ED4, __TEXTPROCESSED4)
 
 __TEXTPROCESSED5:
-#incext ParseFile ".TextEntries\text_buildfileLightRuneStaffDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzDeathQuoteText.fetxt"
 setText($ED5, __TEXTPROCESSED5)
 
 __TEXTPROCESSED6:
-#incext ParseFile ".TextEntries\text_buildfileLightRuneStaffUseDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEndingSceneTextLoeweAndCleo.fetxt"
 setText($ED6, __TEXTPROCESSED6)
 
 __TEXTPROCESSED7:
-#incext ParseFile ".TextEntries\text_buildfileLightRuneHelpText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEndingSceneTextBoro.fetxt"
 setText($ED7, __TEXTPROCESSED7)
 
 __TEXTPROCESSED8:
-#incext ParseFile ".TextEntries\text_buildfileRewarpStaffName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEndingSceneTextDraganaAndCidor.fetxt"
 setText($ED8, __TEXTPROCESSED8)
 
 __TEXTPROCESSED9:
-#incext ParseFile ".TextEntries\text_buildfileRewarpStaffDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileChapter2Title.fetxt"
 setText($ED9, __TEXTPROCESSED9)
 
 __TEXTPROCESSEDA:
-#incext ParseFile ".TextEntries\text_buildfileStealStaffName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFlameSwordDesc.fetxt"
 setText($EDA, __TEXTPROCESSEDA)
 
 __TEXTPROCESSEDB:
-#incext ParseFile ".TextEntries\text_buildfileStealStaffDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileParagonSwordDesc.fetxt"
 setText($EDB, __TEXTPROCESSEDB)
 
 __TEXTPROCESSEDC:
-#incext ParseFile ".TextEntries\text_buildfileBurglarStaffName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThunderSwordDesc.fetxt"
 setText($EDC, __TEXTPROCESSEDC)
 
 __TEXTPROCESSEDD:
-#incext ParseFile ".TextEntries\text_buildfileBurglarStaffDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileWindSwordDesc.fetxt"
 setText($EDD, __TEXTPROCESSEDD)
 
 __TEXTPROCESSEDE:
-#incext ParseFile ".TextEntries\text_buildfileBurgularStaffHelpText.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSleepSwordDesc.fetxt"
 setText($EDE, __TEXTPROCESSEDE)
 
 __TEXTPROCESSEDF:
-#incext ParseFile ".TextEntries\text_buildfileAgainStaffName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBerserkSwordDesc.fetxt"
 setText($EDF, __TEXTPROCESSEDF)
 
 __TEXTPROCESSEE0:
-#incext ParseFile ".TextEntries\text_buildfileAgainStaffDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileWindName.fetxt"
 setText($EE0, __TEXTPROCESSEE0)
 
 __TEXTPROCESSEE1:
-#incext ParseFile ".TextEntries\text_buildfileLoeweName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBlizzardDesc.fetxt"
 setText($EE1, __TEXTPROCESSEE1)
 
 __TEXTPROCESSEE2:
-#incext ParseFile ".TextEntries\text_buildfileLoeweDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFenrirDesc.fetxt"
 setText($EE2, __TEXTPROCESSEE2)
 
 __TEXTPROCESSEE3:
-#incext ParseFile ".TextEntries\text_buildfileCleoName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHelName.fetxt"
 setText($EE3, __TEXTPROCESSEE3)
 
 __TEXTPROCESSEE4:
-#incext ParseFile ".TextEntries\text_buildfileCleoDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMeteorName.fetxt"
 setText($EE4, __TEXTPROCESSEE4)
 
 __TEXTPROCESSEE5:
-#incext ParseFile ".TextEntries\text_buildfileMiraName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMeteorDesc.fetxt"
 setText($EE5, __TEXTPROCESSEE5)
 
 __TEXTPROCESSEE6:
-#incext ParseFile ".TextEntries\text_buildfileMiraDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileShortSwordName.fetxt"
 setText($EE6, __TEXTPROCESSEE6)
 
 __TEXTPROCESSEE7:
-#incext ParseFile ".TextEntries\text_buildfileIskraName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLightRuneName.fetxt"
 setText($EE7, __TEXTPROCESSEE7)
 
 __TEXTPROCESSEE8:
-#incext ParseFile ".TextEntries\text_buildfileIskraDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLightRuneStaffDesc.fetxt"
 setText($EE8, __TEXTPROCESSEE8)
 
 __TEXTPROCESSEE9:
-#incext ParseFile ".TextEntries\text_buildfileEmilName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLightRuneStaffUseDesc.fetxt"
 setText($EE9, __TEXTPROCESSEE9)
 
 __TEXTPROCESSEEA:
-#incext ParseFile ".TextEntries\text_buildfileEmilDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLightRuneHelpText.fetxt"
 setText($EEA, __TEXTPROCESSEEA)
 
 __TEXTPROCESSEEB:
-#incext ParseFile ".TextEntries\text_buildfileSvetomirName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRewarpStaffName.fetxt"
 setText($EEB, __TEXTPROCESSEEB)
 
 __TEXTPROCESSEEC:
-#incext ParseFile ".TextEntries\text_buildfileSvetomirDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRewarpStaffDesc.fetxt"
 setText($EEC, __TEXTPROCESSEEC)
 
 __TEXTPROCESSEED:
-#incext ParseFile ".TextEntries\text_buildfileAlenaName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStealStaffName.fetxt"
 setText($EED, __TEXTPROCESSEED)
 
 __TEXTPROCESSEEE:
-#incext ParseFile ".TextEntries\text_buildfileAlenaDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileStealStaffDesc.fetxt"
 setText($EEE, __TEXTPROCESSEEE)
 
 __TEXTPROCESSEEF:
-#incext ParseFile ".TextEntries\text_buildfileRaschwitzName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBurglarStaffName.fetxt"
 setText($EEF, __TEXTPROCESSEEF)
 
 __TEXTPROCESSEF0:
-#incext ParseFile ".TextEntries\text_buildfileRaschwitzDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBurglarStaffDesc.fetxt"
 setText($EF0, __TEXTPROCESSEF0)
 
 __TEXTPROCESSEF1:
-#incext ParseFile ".TextEntries\text_buildfileBoroName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBurgularStaffHelpText.fetxt"
 setText($EF1, __TEXTPROCESSEF1)
 
 __TEXTPROCESSEF2:
-#incext ParseFile ".TextEntries\text_buildfileBoroDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAgainStaffName.fetxt"
 setText($EF2, __TEXTPROCESSEF2)
 
 __TEXTPROCESSEF3:
-#incext ParseFile ".TextEntries\text_buildfileSeleseFactionName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAgainStaffDesc.fetxt"
 setText($EF3, __TEXTPROCESSEF3)
 
 __TEXTPROCESSEF4:
-#incext ParseFile ".TextEntries\text_buildfileSeleseFactionDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLoeweName.fetxt"
 setText($EF4, __TEXTPROCESSEF4)
 
 __TEXTPROCESSEF5:
-#incext ParseFile ".TextEntries\text_buildfileSennyName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLoeweDesc.fetxt"
 setText($EF5, __TEXTPROCESSEF5)
 
 __TEXTPROCESSEF6:
-#incext ParseFile ".TextEntries\text_buildfileSennyDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCleoName.fetxt"
 setText($EF6, __TEXTPROCESSEF6)
 
 __TEXTPROCESSEF7:
-#incext ParseFile ".TextEntries\text_buildfileHelmanName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileCleoDesc.fetxt"
 setText($EF7, __TEXTPROCESSEF7)
 
 __TEXTPROCESSEF8:
-#incext ParseFile ".TextEntries\text_buildfileHelmanDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMiraName.fetxt"
 setText($EF8, __TEXTPROCESSEF8)
 
 __TEXTPROCESSEF9:
-#incext ParseFile ".TextEntries\text_buildfileNobleName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMiraDesc.fetxt"
 setText($EF9, __TEXTPROCESSEF9)
 
 __TEXTPROCESSEFA:
-#incext ParseFile ".TextEntries\text_buildfileNobleDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileIskraName.fetxt"
 setText($EFA, __TEXTPROCESSEFA)
 
 __TEXTPROCESSEFB:
-#incext ParseFile ".TextEntries\text_buildfileMasterKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileIskraDesc.fetxt"
 setText($EFB, __TEXTPROCESSEFB)
 
 __TEXTPROCESSEFC:
-#incext ParseFile ".TextEntries\text_buildfileMasterKnightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEmilName.fetxt"
 setText($EFC, __TEXTPROCESSEFC)
 
 __TEXTPROCESSEFD:
-#incext ParseFile ".TextEntries\text_buildfileSwordKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileEmilDesc.fetxt"
 setText($EFD, __TEXTPROCESSEFD)
 
 __TEXTPROCESSEFE:
-#incext ParseFile ".TextEntries\text_buildfileLanceKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSvetomirName.fetxt"
 setText($EFE, __TEXTPROCESSEFE)
 
 __TEXTPROCESSEFF:
-#incext ParseFile ".TextEntries\text_buildfileAxeKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSvetomirDesc.fetxt"
 setText($EFF, __TEXTPROCESSEFF)
 
 __TEXTPROCESSF00:
-#incext ParseFile ".TextEntries\text_buildfileBowKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAlenaName.fetxt"
 setText($F00, __TEXTPROCESSF00)
 
 __TEXTPROCESSF01:
-#incext ParseFile ".TextEntries\text_buildfileTier1KnightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAlenaDesc.fetxt"
 setText($F01, __TEXTPROCESSF01)
 
 __TEXTPROCESSF02:
-#incext ParseFile ".TextEntries\text_buildfileForrestKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzName.fetxt"
 setText($F02, __TEXTPROCESSF02)
 
 __TEXTPROCESSF03:
-#incext ParseFile ".TextEntries\text_buildfileGreatKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRaschwitzDesc.fetxt"
 setText($F03, __TEXTPROCESSF03)
 
 __TEXTPROCESSF04:
-#incext ParseFile ".TextEntries\text_buildfileDukeKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBoroName.fetxt"
 setText($F04, __TEXTPROCESSF04)
 
 __TEXTPROCESSF05:
-#incext ParseFile ".TextEntries\text_buildfileArchKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBoroDesc.fetxt"
 setText($F05, __TEXTPROCESSF05)
 
 __TEXTPROCESSF06:
-#incext ParseFile ".TextEntries\text_buildfileTier2KnightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSeleseFactionName.fetxt"
 setText($F06, __TEXTPROCESSF06)
 
 __TEXTPROCESSF07:
-#incext ParseFile ".TextEntries\text_buildfileThiefName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSeleseFactionDesc.fetxt"
 setText($F07, __TEXTPROCESSF07)
 
 __TEXTPROCESSF08:
-#incext ParseFile ".TextEntries\text_buildfileThiefDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSennyName.fetxt"
 setText($F08, __TEXTPROCESSF08)
 
 __TEXTPROCESSF09:
-#incext ParseFile ".TextEntries\text_buildfileThiefFighterName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSennyDesc.fetxt"
 setText($F09, __TEXTPROCESSF09)
 
 __TEXTPROCESSF0A:
-#incext ParseFile ".TextEntries\text_buildfileThiefFighterDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHelmanName.fetxt"
 setText($F0A, __TEXTPROCESSF0A)
 
 __TEXTPROCESSF0B:
-#incext ParseFile ".TextEntries\text_buildfileManaketeName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHelmanDesc.fetxt"
 setText($F0B, __TEXTPROCESSF0B)
 
 __TEXTPROCESSF0C:
-#incext ParseFile ".TextEntries\text_buildfileManaketeDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNobleName.fetxt"
 setText($F0C, __TEXTPROCESSF0C)
 
 __TEXTPROCESSF0D:
-#incext ParseFile ".TextEntries\text_buildfileSwordfighterName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileNobleDesc.fetxt"
 setText($F0D, __TEXTPROCESSF0D)
 
 __TEXTPROCESSF0E:
-#incext ParseFile ".TextEntries\text_buildfileAxefighterName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMasterKnightName.fetxt"
 setText($F0E, __TEXTPROCESSF0E)
 
 __TEXTPROCESSF0F:
-#incext ParseFile ".TextEntries\text_buildfileFighterDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMasterKnightDesc.fetxt"
 setText($F0F, __TEXTPROCESSF0F)
 
 __TEXTPROCESSF10:
-#incext ParseFile ".TextEntries\text_buildfileHeroName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSwordKnightName.fetxt"
 setText($F10, __TEXTPROCESSF10)
 
 __TEXTPROCESSF11:
-#incext ParseFile ".TextEntries\text_buildfileHeroDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLanceKnightName.fetxt"
 setText($F11, __TEXTPROCESSF11)
 
 __TEXTPROCESSF12:
-#incext ParseFile ".TextEntries\text_buildfileMyrmidonName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAxeKnightName.fetxt"
 setText($F12, __TEXTPROCESSF12)
 
 __TEXTPROCESSF13:
-#incext ParseFile ".TextEntries\text_buildfileMyrmidonDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBowKnightName.fetxt"
 setText($F13, __TEXTPROCESSF13)
 
 __TEXTPROCESSF14:
-#incext ParseFile ".TextEntries\text_buildfileSwordmasterName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTier1KnightDesc.fetxt"
 setText($F14, __TEXTPROCESSF14)
 
 __TEXTPROCESSF15:
-#incext ParseFile ".TextEntries\text_buildfileSwordmasterDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileForrestKnightName.fetxt"
 setText($F15, __TEXTPROCESSF15)
 
 __TEXTPROCESSF16:
-#incext ParseFile ".TextEntries\text_buildfileBallistaName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGreatKnightName.fetxt"
 setText($F16, __TEXTPROCESSF16)
 
 __TEXTPROCESSF17:
-#incext ParseFile ".TextEntries\text_buildfileBallistaDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDukeKnightName.fetxt"
 setText($F17, __TEXTPROCESSF17)
 
 __TEXTPROCESSF18:
-#incext ParseFile ".TextEntries\text_buildfileArcherName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileArchKnightName.fetxt"
 setText($F18, __TEXTPROCESSF18)
 
 __TEXTPROCESSF19:
-#incext ParseFile ".TextEntries\text_buildfileArcherDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTier2KnightDesc.fetxt"
 setText($F19, __TEXTPROCESSF19)
 
 __TEXTPROCESSF1A:
-#incext ParseFile ".TextEntries\text_buildfileSniperName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThiefName.fetxt"
 setText($F1A, __TEXTPROCESSF1A)
 
 __TEXTPROCESSF1B:
-#incext ParseFile ".TextEntries\text_buildfileSniperDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThiefDesc.fetxt"
 setText($F1B, __TEXTPROCESSF1B)
 
 __TEXTPROCESSF1C:
-#incext ParseFile ".TextEntries\text_buildfileScaleshotName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThiefFighterName.fetxt"
 setText($F1C, __TEXTPROCESSF1C)
 
 __TEXTPROCESSF1D:
-#incext ParseFile ".TextEntries\text_buildfileScaleshotDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileThiefFighterDesc.fetxt"
 setText($F1D, __TEXTPROCESSF1D)
 
 __TEXTPROCESSF1E:
-#incext ParseFile ".TextEntries\text_buildfileSkyseekerName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileManaketeName.fetxt"
 setText($F1E, __TEXTPROCESSF1E)
 
 __TEXTPROCESSF1F:
-#incext ParseFile ".TextEntries\text_buildfileSkyseekerDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileManaketeDesc.fetxt"
 setText($F1F, __TEXTPROCESSF1F)
 
 __TEXTPROCESSF20:
-#incext ParseFile ".TextEntries\text_buildfileDragonlordName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSwordfighterName.fetxt"
 setText($F20, __TEXTPROCESSF20)
 
 __TEXTPROCESSF21:
-#incext ParseFile ".TextEntries\text_buildfileDragonlordDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAxefighterName.fetxt"
 setText($F21, __TEXTPROCESSF21)
 
 __TEXTPROCESSF22:
-#incext ParseFile ".TextEntries\text_buildfileSeraphknightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFighterDesc.fetxt"
 setText($F22, __TEXTPROCESSF22)
 
 __TEXTPROCESSF23:
-#incext ParseFile ".TextEntries\text_buildfileSeraphknightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHeroName.fetxt"
 setText($F23, __TEXTPROCESSF23)
 
 __TEXTPROCESSF24:
-#incext ParseFile ".TextEntries\text_buildfilePegasusRiderName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHeroDesc.fetxt"
 setText($F24, __TEXTPROCESSF24)
 
 __TEXTPROCESSF25:
-#incext ParseFile ".TextEntries\text_buildfileFalcoknightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMyrmidonName.fetxt"
 setText($F25, __TEXTPROCESSF25)
 
 __TEXTPROCESSF26:
-#incext ParseFile ".TextEntries\text_buildfileDragonRiderName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMyrmidonDesc.fetxt"
 setText($F26, __TEXTPROCESSF26)
 
 __TEXTPROCESSF27:
-#incext ParseFile ".TextEntries\text_buildfileDracoknightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSwordmasterName.fetxt"
 setText($F27, __TEXTPROCESSF27)
 
 __TEXTPROCESSF28:
-#incext ParseFile ".TextEntries\text_buildfilePegasusRiderDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSwordmasterDesc.fetxt"
 setText($F28, __TEXTPROCESSF28)
 
 __TEXTPROCESSF29:
-#incext ParseFile ".TextEntries\text_buildfileFalcoknightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBallistaName.fetxt"
 setText($F29, __TEXTPROCESSF29)
 
 __TEXTPROCESSF2A:
-#incext ParseFile ".TextEntries\text_buildfileDragonRiderDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBallistaDesc.fetxt"
 setText($F2A, __TEXTPROCESSF2A)
 
 __TEXTPROCESSF2B:
-#incext ParseFile ".TextEntries\text_buildfileDracoknightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileArcherName.fetxt"
 setText($F2B, __TEXTPROCESSF2B)
 
 __TEXTPROCESSF2C:
-#incext ParseFile ".TextEntries\text_buildfileMageName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileArcherDesc.fetxt"
 setText($F2C, __TEXTPROCESSF2C)
 
 __TEXTPROCESSF2D:
-#incext ParseFile ".TextEntries\text_buildfileMageDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSniperName.fetxt"
 setText($F2D, __TEXTPROCESSF2D)
 
 __TEXTPROCESSF2E:
-#incext ParseFile ".TextEntries\text_buildfileSageName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSniperDesc.fetxt"
 setText($F2E, __TEXTPROCESSF2E)
 
 __TEXTPROCESSF2F:
-#incext ParseFile ".TextEntries\text_buildfileSageDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileScaleshotName.fetxt"
 setText($F2F, __TEXTPROCESSF2F)
 
 __TEXTPROCESSF30:
-#incext ParseFile ".TextEntries\text_buildfileMageKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileScaleshotDesc.fetxt"
 setText($F30, __TEXTPROCESSF30)
 
 __TEXTPROCESSF31:
-#incext ParseFile ".TextEntries\text_buildfileMageKnightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSkyseekerName.fetxt"
 setText($F31, __TEXTPROCESSF31)
 
 __TEXTPROCESSF32:
-#incext ParseFile ".TextEntries\text_buildfileHighPriestName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSkyseekerDesc.fetxt"
 setText($F32, __TEXTPROCESSF32)
 
 __TEXTPROCESSF33:
-#incext ParseFile ".TextEntries\text_buildfileHighPriestDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDragonlordName.fetxt"
 setText($F33, __TEXTPROCESSF33)
 
 __TEXTPROCESSF34:
-#incext ParseFile ".TextEntries\text_buildfileDarkMageName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDragonlordDesc.fetxt"
 setText($F34, __TEXTPROCESSF34)
 
 __TEXTPROCESSF35:
-#incext ParseFile ".TextEntries\text_buildfileDarkMageDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSeraphknightName.fetxt"
 setText($F35, __TEXTPROCESSF35)
 
 __TEXTPROCESSF36:
-#incext ParseFile ".TextEntries\text_buildfileDarkBishopName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSeraphknightDesc.fetxt"
 setText($F36, __TEXTPROCESSF36)
 
 __TEXTPROCESSF37:
-#incext ParseFile ".TextEntries\text_buildfileDarkBishopDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePegasusRiderName.fetxt"
 setText($F37, __TEXTPROCESSF37)
 
 __TEXTPROCESSF38:
-#incext ParseFile ".TextEntries\text_buildfileBardName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFalcoknightName.fetxt"
 setText($F38, __TEXTPROCESSF38)
 
 __TEXTPROCESSF39:
-#incext ParseFile ".TextEntries\text_buildfileBardDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDragonRiderName.fetxt"
 setText($F39, __TEXTPROCESSF39)
 
 __TEXTPROCESSF3A:
-#incext ParseFile ".TextEntries\text_buildfileSisterName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDracoknightName.fetxt"
 setText($F3A, __TEXTPROCESSF3A)
 
 __TEXTPROCESSF3B:
-#incext ParseFile ".TextEntries\text_buildfileSisterDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePegasusRiderDesc.fetxt"
 setText($F3B, __TEXTPROCESSF3B)
 
 __TEXTPROCESSF3C:
-#incext ParseFile ".TextEntries\text_buildfilePriestName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileFalcoknightDesc.fetxt"
 setText($F3C, __TEXTPROCESSF3C)
 
 __TEXTPROCESSF3D:
-#incext ParseFile ".TextEntries\text_buildfilePriestDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDragonRiderDesc.fetxt"
 setText($F3D, __TEXTPROCESSF3D)
 
 __TEXTPROCESSF3E:
-#incext ParseFile ".TextEntries\text_buildfileRookKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDracoknightDesc.fetxt"
 setText($F3E, __TEXTPROCESSF3E)
 
 __TEXTPROCESSF3F:
-#incext ParseFile ".TextEntries\text_buildfileRookKnightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMageName.fetxt"
 setText($F3F, __TEXTPROCESSF3F)
 
 __TEXTPROCESSF40:
-#incext ParseFile ".TextEntries\text_buildfileGoldKnightName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMageDesc.fetxt"
 setText($F40, __TEXTPROCESSF40)
 
 __TEXTPROCESSF41:
-#incext ParseFile ".TextEntries\text_buildfileGoldKnightDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSageName.fetxt"
 setText($F41, __TEXTPROCESSF41)
 
 __TEXTPROCESSF42:
-#incext ParseFile ".TextEntries\text_buildfileTroubadourName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSageDesc.fetxt"
 setText($F42, __TEXTPROCESSF42)
 
 __TEXTPROCESSF43:
-#incext ParseFile ".TextEntries\text_buildfileTroubadourDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMageKnightName.fetxt"
 setText($F43, __TEXTPROCESSF43)
 
 __TEXTPROCESSF44:
-#incext ParseFile ".TextEntries\text_buildfilePaladinName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMageKnightDesc.fetxt"
 setText($F44, __TEXTPROCESSF44)
 
 __TEXTPROCESSF45:
-#incext ParseFile ".TextEntries\text_buildfilePaladinDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHighPriestName.fetxt"
 setText($F45, __TEXTPROCESSF45)
 
 __TEXTPROCESSF46:
-#incext ParseFile ".TextEntries\text_buildfileHunterName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHighPriestDesc.fetxt"
 setText($F46, __TEXTPROCESSF46)
 
 __TEXTPROCESSF47:
-#incext ParseFile ".TextEntries\text_buildfileHunterDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDarkMageName.fetxt"
 setText($F47, __TEXTPROCESSF47)
 
 __TEXTPROCESSF48:
-#incext ParseFile ".TextEntries\text_buildfileWarriorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDarkMageDesc.fetxt"
 setText($F48, __TEXTPROCESSF48)
 
 __TEXTPROCESSF49:
-#incext ParseFile ".TextEntries\text_buildfileWarriorDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDarkBishopName.fetxt"
 setText($F49, __TEXTPROCESSF49)
 
 __TEXTPROCESSF4A:
-#incext ParseFile ".TextEntries\text_buildfileBrigandName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileDarkBishopDesc.fetxt"
 setText($F4A, __TEXTPROCESSF4A)
 
 __TEXTPROCESSF4B:
-#incext ParseFile ".TextEntries\text_buildfileBrigandDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBardName.fetxt"
 setText($F4B, __TEXTPROCESSF4B)
 
 __TEXTPROCESSF4C:
-#incext ParseFile ".TextEntries\text_buildfileSwordArmorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBardDesc.fetxt"
 setText($F4C, __TEXTPROCESSF4C)
 
 __TEXTPROCESSF4D:
-#incext ParseFile ".TextEntries\text_buildfileAxeArmorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSisterName.fetxt"
 setText($F4D, __TEXTPROCESSF4D)
 
 __TEXTPROCESSF4E:
-#incext ParseFile ".TextEntries\text_buildfileLanceArmorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSisterDesc.fetxt"
 setText($F4E, __TEXTPROCESSF4E)
 
 __TEXTPROCESSF4F:
-#incext ParseFile ".TextEntries\text_buildfileBowArmorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePriestName.fetxt"
 setText($F4F, __TEXTPROCESSF4F)
 
 __TEXTPROCESSF50:
-#incext ParseFile ".TextEntries\text_buildfileMageArmorName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePriestDesc.fetxt"
 setText($F50, __TEXTPROCESSF50)
 
 __TEXTPROCESSF51:
-#incext ParseFile ".TextEntries\text_buildfileGeneralName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRookKnightName.fetxt"
 setText($F51, __TEXTPROCESSF51)
 
 __TEXTPROCESSF52:
-#incext ParseFile ".TextEntries\text_buildfileBaronName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileRookKnightDesc.fetxt"
 setText($F52, __TEXTPROCESSF52)
 
 __TEXTPROCESSF53:
-#incext ParseFile ".TextEntries\text_buildfileArmorDescription.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGoldKnightName.fetxt"
 setText($F53, __TEXTPROCESSF53)
 
 __TEXTPROCESSF54:
-#incext ParseFile ".TextEntries\text_buildfileMageArmorDescription.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGoldKnightDesc.fetxt"
 setText($F54, __TEXTPROCESSF54)
 
 __TEXTPROCESSF55:
-#incext ParseFile ".TextEntries\text_buildfileGeneralDescription.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTroubadourName.fetxt"
 setText($F55, __TEXTPROCESSF55)
 
 __TEXTPROCESSF56:
-#incext ParseFile ".TextEntries\text_buildfileBaronDescription.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileTroubadourDesc.fetxt"
 setText($F56, __TEXTPROCESSF56)
 
 __TEXTPROCESSF57:
-#incext ParseFile ".TextEntries\text_buildfileDancerName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePaladinName.fetxt"
 setText($F57, __TEXTPROCESSF57)
 
 __TEXTPROCESSF58:
-#incext ParseFile ".TextEntries\text_buildfileDancerDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfilePaladinDesc.fetxt"
 setText($F58, __TEXTPROCESSF58)
 
 __TEXTPROCESSF59:
-#incext ParseFile ".TextEntries\text_buildfileLanceSoldierName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHunterName.fetxt"
 setText($F59, __TEXTPROCESSF59)
 
 __TEXTPROCESSF5A:
-#incext ParseFile ".TextEntries\text_buildfileAxeSoldierName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileHunterDesc.fetxt"
 setText($F5A, __TEXTPROCESSF5A)
 
 __TEXTPROCESSF5B:
-#incext ParseFile ".TextEntries\text_buildfileSoldierDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileWarriorName.fetxt"
 setText($F5B, __TEXTPROCESSF5B)
 
 __TEXTPROCESSF5C:
-#incext ParseFile ".TextEntries\text_buildfileFleetName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileWarriorDesc.fetxt"
 setText($F5C, __TEXTPROCESSF5C)
 
 __TEXTPROCESSF5D:
-#incext ParseFile ".TextEntries\text_buildfileFleetDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBrigandName.fetxt"
 setText($F5D, __TEXTPROCESSF5D)
 
 __TEXTPROCESSF5E:
-#incext ParseFile ".TextEntries\text_buildfileCorsairName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBrigandDesc.fetxt"
 setText($F5E, __TEXTPROCESSF5E)
 
 __TEXTPROCESSF5F:
-#incext ParseFile ".TextEntries\text_buildfileCorsairDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSwordArmorName.fetxt"
 setText($F5F, __TEXTPROCESSF5F)
 
 __TEXTPROCESSF60:
-#incext ParseFile ".TextEntries\text_buildfileBerserkerName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileAxeArmorName.fetxt"
 setText($F60, __TEXTPROCESSF60)
 
 __TEXTPROCESSF61:
-#incext ParseFile ".TextEntries\text_buildfileBerserkerDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileLanceArmorName.fetxt"
 setText($F61, __TEXTPROCESSF61)
 
 __TEXTPROCESSF62:
-#incext ParseFile ".TextEntries\text_buildfileHalberdierName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBowArmorName.fetxt"
 setText($F62, __TEXTPROCESSF62)
 
 __TEXTPROCESSF63:
-#incext ParseFile ".TextEntries\text_buildfileHalberdierDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMageArmorName.fetxt"
 setText($F63, __TEXTPROCESSF63)
 
 __TEXTPROCESSF64:
-#incext ParseFile ".TextEntries\text_buildfileFreelancerName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGeneralName.fetxt"
 setText($F64, __TEXTPROCESSF64)
 
 __TEXTPROCESSF65:
-#incext ParseFile ".TextEntries\text_buildfileFreelancerDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBaronName.fetxt"
 setText($F65, __TEXTPROCESSF65)
 
 __TEXTPROCESSF66:
-#incext ParseFile ".TextEntries\text_buildfileChampionName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileArmorDescription.fetxt"
 setText($F66, __TEXTPROCESSF66)
 
 __TEXTPROCESSF67:
-#incext ParseFile ".TextEntries\text_buildfileChampionDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileMageArmorDescription.fetxt"
 setText($F67, __TEXTPROCESSF67)
 
 __TEXTPROCESSF68:
-#incext ParseFile ".TextEntries\text_buildfileLongBallistaName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileGeneralDescription.fetxt"
 setText($F68, __TEXTPROCESSF68)
 
 __TEXTPROCESSF69:
-#incext ParseFile ".TextEntries\text_buildfileLongBallistaDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileBaronDescription.fetxt"
 setText($F69, __TEXTPROCESSF69)
+
+__TEXTPROCESSF6A:
+#incext ParseFile ".TextEntries\text_buildfileDancerName.fetxt"
+setText($F6A, __TEXTPROCESSF6A)
+
+__TEXTPROCESSF6B:
+#incext ParseFile ".TextEntries\text_buildfileDancerDesc.fetxt"
+setText($F6B, __TEXTPROCESSF6B)
+
+__TEXTPROCESSF6C:
+#incext ParseFile ".TextEntries\text_buildfileLanceSoldierName.fetxt"
+setText($F6C, __TEXTPROCESSF6C)
+
+__TEXTPROCESSF6D:
+#incext ParseFile ".TextEntries\text_buildfileAxeSoldierName.fetxt"
+setText($F6D, __TEXTPROCESSF6D)
+
+__TEXTPROCESSF6E:
+#incext ParseFile ".TextEntries\text_buildfileSoldierDesc.fetxt"
+setText($F6E, __TEXTPROCESSF6E)
+
+__TEXTPROCESSF6F:
+#incext ParseFile ".TextEntries\text_buildfileFleetName.fetxt"
+setText($F6F, __TEXTPROCESSF6F)
+
+__TEXTPROCESSF70:
+#incext ParseFile ".TextEntries\text_buildfileFleetDesc.fetxt"
+setText($F70, __TEXTPROCESSF70)
+
+__TEXTPROCESSF71:
+#incext ParseFile ".TextEntries\text_buildfileCorsairName.fetxt"
+setText($F71, __TEXTPROCESSF71)
+
+__TEXTPROCESSF72:
+#incext ParseFile ".TextEntries\text_buildfileCorsairDesc.fetxt"
+setText($F72, __TEXTPROCESSF72)
+
+__TEXTPROCESSF73:
+#incext ParseFile ".TextEntries\text_buildfileBerserkerName.fetxt"
+setText($F73, __TEXTPROCESSF73)
+
+__TEXTPROCESSF74:
+#incext ParseFile ".TextEntries\text_buildfileBerserkerDesc.fetxt"
+setText($F74, __TEXTPROCESSF74)
+
+__TEXTPROCESSF75:
+#incext ParseFile ".TextEntries\text_buildfileHalberdierName.fetxt"
+setText($F75, __TEXTPROCESSF75)
+
+__TEXTPROCESSF76:
+#incext ParseFile ".TextEntries\text_buildfileHalberdierDesc.fetxt"
+setText($F76, __TEXTPROCESSF76)
+
+__TEXTPROCESSF77:
+#incext ParseFile ".TextEntries\text_buildfileFreelancerName.fetxt"
+setText($F77, __TEXTPROCESSF77)
+
+__TEXTPROCESSF78:
+#incext ParseFile ".TextEntries\text_buildfileFreelancerDesc.fetxt"
+setText($F78, __TEXTPROCESSF78)
+
+__TEXTPROCESSF79:
+#incext ParseFile ".TextEntries\text_buildfileChampionName.fetxt"
+setText($F79, __TEXTPROCESSF79)
+
+__TEXTPROCESSF7A:
+#incext ParseFile ".TextEntries\text_buildfileChampionDesc.fetxt"
+setText($F7A, __TEXTPROCESSF7A)
+
+__TEXTPROCESSF7B:
+#incext ParseFile ".TextEntries\text_buildfileLongBallistaName.fetxt"
+setText($F7B, __TEXTPROCESSF7B)
+
+__TEXTPROCESSF7C:
+#incext ParseFile ".TextEntries\text_buildfileLongBallistaDesc.fetxt"
+setText($F7C, __TEXTPROCESSF7C)
 
 }
 
