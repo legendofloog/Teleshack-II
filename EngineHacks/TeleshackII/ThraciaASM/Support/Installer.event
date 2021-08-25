@@ -1,0 +1,74 @@
+
+#include "Support.lyn.event"
+
+PUSH
+
+ORG 0x285B0
+jumpToHack(New_GetUnitSupportBonuses)
+
+ORG 0x281C8 //GetROMUnitSupportCount
+SHORT 0x2000 0x4770 // mov r0, #0x00 ; bx lr.
+
+POP
+
+ALIGN 4
+NewSupportTable:
+#include "NewSupportTable.event"
+
+#define SupportEntry(partner, range, atk, def, hit, avo, crit, ddg) "BYTE partner range atk def hit avo crit ddg"
+#define SupportTerm "WORD 0 0"
+#define SetUnitSupportList(unit, list) "PUSH; ORG NewSupportTable + (unit*4); POIN list; POP"
+
+ALIGN 4
+CleoSupportList:
+SupportEntry(Loewe,3,0,0,7,7,7,7)
+SupportTerm
+
+ALIGN 4
+MiraSupportList:
+SupportEntry(Iskra,3,0,1,5,5,5,5)
+SupportTerm
+
+ALIGN 4
+LoeweSupportList:
+SupportEntry(Cleo,3,0,0,7,7,7,7)
+SupportEntry(Iskra,3,0,1,10,10,0,0)
+SupportTerm
+
+ALIGN 4
+IskraSupportList:
+SupportEntry(Loewe,3,1,0,10,0,10,0)
+SupportEntry(Emil,3,0,0,7,7,7,7)
+SupportEntry(Mira,3,1,0,5,5,5,5)
+SupportTerm
+
+ALIGN 4
+EmilSupportList:
+SupportEntry(Cleo, 3,0,0,5,5,5,5)
+SupportEntry(Mira, 3,0,0,5,5,5,5)
+SupportEntry(Iskra,3,0,0,7,7,7,7)
+SupportTerm
+
+ALIGN 4
+SvetomirSupportList:
+SupportEntry(Alena,3,0,1,0,10,0,10)
+SupportTerm
+
+ALIGN 4
+AlenaSupportList:
+SupportEntry(Svetomir,3,1,0,10,0,10,0)
+SupportTerm
+
+ALIGN 4
+VargaSupportList:
+SupportEntry(Cleo,3,0,0,7,7,7,7)
+SupportTerm
+
+SetUnitSupportList(Cleo,CleoSupportList)
+SetUnitSupportList(Loewe,LoeweSupportList)
+SetUnitSupportList(Mira,MiraSupportList)
+SetUnitSupportList(Iskra,IskraSupportList)
+SetUnitSupportList(Emil,EmilSupportList)
+SetUnitSupportList(Svetomir,SvetomirSupportList)
+SetUnitSupportList(Alena,AlenaSupportList)
+SetUnitSupportList(Varga,VargaSupportList)
