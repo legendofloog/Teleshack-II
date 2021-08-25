@@ -143,6 +143,13 @@ Time to march?[X]
 ## Mount_Description_TextID
 Ready to ride?[X]
 
+## OpenDoorName
+Open Door[X]
+
+##OpenDoorDesc
+Open the door to[N]
+Dragana's cell.[X]
+
 #include "statusdesc_text.txt"
 
 #include "skilldesc_text.txt"

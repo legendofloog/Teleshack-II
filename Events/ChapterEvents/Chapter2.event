@@ -1,0 +1,186 @@
+EventPointerTable(Chapter2Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(12, Turn3Spawn, 3)
+TurnEventPlayer(13, BoroSpawn, 10)
+TurnEventPlayer(14, BoroWarning, 9)
+TurnEventPlayer(20, Turn5Spawn, 5)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(6,3)
+Door(14,10)
+Chest(LightRune,6,1)
+Chest(Fire,14,8)
+LOCA 9 DelilahDoor [6,10] 0x12
+LOCA 10 HernandezDoor [18,4] 0x12
+LOCA 3 DraganaDoor [16,18] 0x12
+END_MAIN
+
+MiscBasedEvents:
+AREA 0 CivilianEscape [19, 9] [19, 10]
+AFEV 15 DelilahFreed 9
+AFEV 16 HernandezFreed 10
+CauseGameOverIfLordDies
+AFEV 0 EndingScene 3
+END_MAIN
+
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,2] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [2,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [2,0] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [0,1] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
+UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [2,1] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] [0x06,Ch1_AlenaAI2,0x4,0x0]
+UNIT Varga SwordArmor           Cleo Level(4,Ally,False) [1,2] 0x0 0x0 0x0 0x1 [LongSword,Vulnerary, DoorKey] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Tyr_Ch2 AxeArmor 0x0      Level(4,Enemy,False) [11,18] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Chapter1Generics SwordArmor Tyr_Ch2 Level(1,Enemy,True) [6,4] 0x0 0x0 0x0 0x0 [SteelSword, DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [IronLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics Archer Tyr_Ch2 Level(1,Enemy,True) [6, 16] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+UNIT Chapter1Generics BowArmor Tyr_Ch2 Level(1,Enemy,True) [15, 19] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT
+
+GreenUnits:
+UNIT Hernandez Brigand 0x0 Level(5,NPC,False) [18,2] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT Dragana Sniper_F 0x0 Level(5,NPC,False) [16,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Delilah Sister 0x0 Level(2,NPC,False) [6,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Turn3Reinforcements:
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,19] 0x0 0x0 0x1 REDA1R18 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronLance] PursueWithoutHeedAI
+UNIT
+
+Turn5Reinforcements:
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x1 REDA1R18 [IronSword] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronAxe] PursueWithoutHeedAI
+UNIT
+
+BoroUnitGroup2:
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [1,0] 0x0 0x0 0x1 REDA1R0 [MasterLance] PursueWithoutHeedAI
+UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	LOAD1 1 Units1
+	ENUN
+	LOAD1 1 GreenUnits
+	ENUN
+	Text(VargaIntroText)
+	ENDA
+
+Turn3Spawn:
+ReinforcementEvent(Turn3Reinforcements)
+
+Turn5Spawn:
+ReinforcementEvent(Turn5Reinforcements)
+
+BoroSpawn:
+LOAD1 1 BoroUnitGroup2
+ENUN
+CAMERA Boro_Ch1
+Text(BoroSpawnText2)
+NoFade
+ENDA
+
+BoroWarning:
+CAMERA Loewe
+FlashCursor(Loewe,60)
+Text(LoeweWarningBoroText)
+NoFade
+ENDA
+
+DelilahDoor:
+TILECHANGE 3
+NoFade
+ENDA
+
+DelilahFreed:
+MUSC WithUs_Song
+Text(DelilahFreedText)
+CUSA Delilah
+GiveItem(Heal,Delilah)
+SilentGiveItem(Vulnerary,Delilah)
+NoFade
+ENDA
+
+HernandezDoor:
+TILECHANGE 1
+NoFade
+ENDA
+
+HernandezFreed:
+Text(HernandezFreedText)
+NoFade
+ENDA
+
+CivilianEscape:
+CHECK_CLASS -1
+SVAL s1 Brigand
+BNE 4 s1 sC
+	ENUT 0x7A
+LABEL 4
+NoFade
+ENDA
+
+DraganaDoor:
+TILECHANGE 5
+NoFade
+ENDA
+
+EndingScene:
+Text(Chapter2EndText)
+MNC2 Chapter3
+NoFade
+ENDA

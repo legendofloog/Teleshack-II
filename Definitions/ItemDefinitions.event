@@ -4,10 +4,13 @@
 #define SilverSword 0x04
 #define IronBlade 0x05
 #define Longsword 0x06
+#define LongSword 0x06
 #define Greatsword 0x07
+#define GreatSword 0x07
 #define FlameSword 0x08
 #define Rapier 0x09
 #define Shortsword 0x0A
+#define ShortSword 0x0A
 #define BraveSword 0x0B
 #define KingSword 0x0C
 #define KillingEdge 0x0D
@@ -210,3 +213,4 @@
 #define _200G 0xB9
 #define BlackGem 0xBA
 #define GoldGem 0xBB
+#define GaleBow 0xBD

@@ -33,8 +33,10 @@ LeadershipTable:
 BYTE Cleo 1
 BYTE Mira 1
 BYTE Loewe 1
+BYTE Dragana 1
 // BOSSES
 BYTE Raschwitz_Ch1 1
+BYTE Tyr_Ch2 1
 BYTE Boro_Ch1 3
 BYTE 0x0 0x0 //delimiter
 
