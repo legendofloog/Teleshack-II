@@ -60,6 +60,10 @@
 [LoadBoro] = [LoadFace][0x4E][0x1]
 [LoadRaschwitz] = [LoadFace][0x45][0x1]
 [LoadCidor] = [LoadFace][0x2E][0x1]
+[LoadVarga] = [LoadFace][0x9][0x1]
+[LoadTyr] = [LoadFace][0x46][0x1]
+[LoadHernandez] = [LoadFace][0x47][0x1]
+[LoadDelilah] = [LoadFace][0xA][0x1]
 
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]

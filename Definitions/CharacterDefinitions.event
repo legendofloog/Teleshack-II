@@ -5,7 +5,7 @@
 #define Svetomir 0x05
 #define Alena 0x06
 #define Varga 0x07
-#define Neimi 0x08
+#define Delilah 0x08
 #define Colm 0x09
 #define Garcia 0x0A
 #define Innes 0x0B
@@ -92,7 +92,7 @@
 #define Helman 0x70
 //Chapter 2 Stuff (uses chapter 2 generics)
 #define Dragana 0x71
-
+#define Hernandez 0x72
 
 
 

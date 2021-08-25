@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="1">
  <tileset firstgid="1" source="Thracia_Castle.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="20">
   <properties>
@@ -221,18 +221,20 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,943,0,0,0
 </data>
  </layer>
- <layer id="9" name="BottomLeftChestOpen" width="20" height="20" visible="0">
+ <layer id="9" name="TopLeftDoorOpen" width="20" height="20" visible="0">
   <properties>
-   <property name="Height" value="1"/>
+   <property name="Height" value="2"/>
    <property name="ID" value="6"/>
    <property name="Width" value="1"/>
-   <property name="X" value="3"/>
-   <property name="Y" value="18"/>
+   <property name="X" value="6"/>
+   <property name="Y" value="3"/>
   </properties>
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,750,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,943,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -246,9 +248,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,589,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,943,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>

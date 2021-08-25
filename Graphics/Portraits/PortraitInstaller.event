@@ -6,12 +6,16 @@
 #define EmilMug 0x6
 #define SvetomirMug 0x7
 #define AlenaMug 0x8
+#define VargaMug 0x9
+#define DelilahMug 0xA
 #define LoeweMug 0x14
 #define LoeweKidMug 0x15
 #define DraganaMug 0x2D
 #define CidorMug 0x2E
 #define CatrinMug 0x2F
 #define RaschwitzMug 0x45
+#define TyrMug 0x46
+#define HernandezMug 0x47
 #define BoroMug 0x4E
 
 ALIGN 16
@@ -117,4 +121,36 @@ BoroMugData:
 #incbin "Dmp/Boro/Boro(Laurent_Lacroix)_palette.dmp"
 #incbin "Dmp/Boro/Boro(Laurent_Lacroix)_minimug.dmp"
 setMugEntry(BoroMug, BoroMugData, 3, 5, 3, 3)
+
+ALIGN 16
+VargaMugData:
+#incbin "Dmp/Varga/varga_mug.dmp"
+#incbin "Dmp/Varga/varga_frames.dmp"
+#incbin "Dmp/Varga/varga_palette.dmp"
+#incbin "Dmp/Varga/varga_minimug.dmp"
+setMugEntry(VargaMug, VargaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TyrMugData:
+#incbin "Dmp/Tyr/tyr_mug.dmp"
+#incbin "Dmp/Tyr/tyr_frames.dmp"
+#incbin "Dmp/Tyr/tyr_palette.dmp"
+#incbin "Dmp/Tyr/tyr_minimug.dmp"
+setMugEntry(TyrMug, TyrMugData, 3, 4, 3, 2)
+
+ALIGN 16
+DelilahMugData:
+#incbin "Dmp/Delilah/Delilah_mug.dmp"
+#incbin "Dmp/Delilah/Delilah_frames.dmp"
+#incbin "Dmp/Delilah/Delilah_palette.dmp"
+#incbin "Dmp/Delilah/Delilah_minimug.dmp"
+setMugEntry(DelilahMug, DelilahMugData, 3, 6, 3, 2)
+
+ALIGN 16
+HernandezMugData:
+#incbin "Dmp/Hernandez/hernandez_mug.dmp"
+#incbin "Dmp/Hernandez/hernandez_frames.dmp"
+#incbin "Dmp/Hernandez/hernandez_palette.dmp"
+#incbin "Dmp/Hernandez/hernandez_minimug.dmp"
+setMugEntry(HernandezMug, HernandezMugData, 3, 5, 3, 2)
 

@@ -48,6 +48,7 @@
 #define DarkBishop_F 0x30
 #define Bard 0x31
 #define Devotee_F 0x32
+#define Sister 0x32
 #define ThiefFighter 0x33
 #define GorgonEgg 0x34
 #define Priest 0x35

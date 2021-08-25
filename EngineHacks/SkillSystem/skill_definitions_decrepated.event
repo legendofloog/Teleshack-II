@@ -81,7 +81,7 @@
 
 //Hex: -15 avoid to all adjacent enemies.
 //By Snakey1
-#define HexID 255
+//#define HexID 255
 
 //Infiltrator: If within 2 spaces of two or more enemies, gain +3 damage and +15% hit.
 //By Datagne

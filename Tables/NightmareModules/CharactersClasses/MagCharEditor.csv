@@ -5,8 +5,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x03 Iskra,2,45
 0x04 Emil,0,5
 0x05 Svetomir,1,30
-0x06 Alena,1,10
-Ross,2,25
+0x07 Varga,0,2
+0x08 Delilah,3,30
 Neimi,0,5
 Colm,2,15
 Garcia,1,10
@@ -65,7 +65,7 @@ Knoll's Summon,0,0
 Ewan's Summon,0,0
 Lyon,0,0
 Boro (Ch1),0,0
-Raschwitz (Ch 1),0,0
+0x43 Valter (Ch 15),0,0
 Valter (Ch 15),3,10
 Selena (Ch 10B +ACY- 13B),2,5
 Valter (Prologue),10,40
@@ -111,8 +111,8 @@ Lyon (Ch Final),5,15
 0x6E Selese,20,20
 0x6F Senny,0,0
 0x70 Helman,0,0
-0,0,0
-0,0,0
+0x71 Dragana,0,0
+0x72 Hernandez,0,0
 0,0,0
 0,0,0
 0,0,0
