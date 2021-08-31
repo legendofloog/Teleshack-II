@@ -1,0 +1,103 @@
+EventPointerTable(Chapter3Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(16,2)
+Chest(RedGem, 23,3)
+Door(23,6)
+Chest(SteelAxe,7,10)
+Chest(Vulnerary,10,10)
+LOCA 9 AlexAxelDoor [17,11] 0x12
+Door(14,13)
+Door(7,14)
+END_MAIN
+
+MiscBasedEvents:
+AFEV 15 AlexAxelFreed 9
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [1,1] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [1,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Traps1:
+RedSigil(22,20)
+RedSigil(23,20)
+RedSigil(24,20)
+RedSigil(25,20)
+ENDTRAP
+ALIGN 4
+
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+EnemyUnits:
+UNIT
+
+AllyUnits:
+UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+AlexAxelDoor:
+TILECHANGE 5
+NoFade
+ENDA
+
+AlexAxelFreed:
+MUSC WithUs_Song
+Text(AlexAxelFreedText)
+CUSA Alex
+CUSA Axel
+GiveItem(IronAxe,Alex)
+GiveItem(IronAxe,Axel)
+SilentGiveItem(Vulnerary,Alex)
+SilentGiveItem(Vulnerary,Axel)
+NoFade
+ENDA
+
+BeginningScene:
+LOAD1 1 Units1
+LOAD1 1 EnemyUnits
+ENUN
+ENDA
+
+EndingScene:
+MNC2 Chapter4
+NoFade
+ENDA

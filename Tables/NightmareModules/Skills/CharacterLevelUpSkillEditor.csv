@@ -8,8 +8,8 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x06 Alena,AlenaSkillList|IsPointer
 0x07 Ross,0x0
 0x08 Neimi,0
-0x09 Colm,0
-0x0A Garcia,0
+0x09 Alex,AlexSkillList|IsPointer
+0x0A Axel,AxelSkillList|IsPointer
 0x0B Innes,0
 0x0C Lute,0
 0x0D Natasha,0

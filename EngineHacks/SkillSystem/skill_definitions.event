@@ -20,6 +20,8 @@
 #define PCC4ID 16
 #define PCC5ID 17
 #define DesperationID 18
+#define EvenRhythmID 19
+#define OddRhythmID 20
 
 // keep it continous for debug purpose
 

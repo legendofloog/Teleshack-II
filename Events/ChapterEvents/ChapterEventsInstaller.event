@@ -10,3 +10,8 @@
   #include "Chapter2.event"
 }
 
+{
+  ALIGN 4
+  #include "Chapter3.event"
+}
+
