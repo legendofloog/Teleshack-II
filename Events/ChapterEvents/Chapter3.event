@@ -95,6 +95,7 @@ ENDA
 BeginningScene:
 LOAD1 1 Units1
 LOAD1 1 EnemyUnits
+LOAD1 1 AllyUnits
 ENUN
 ENDA
 
