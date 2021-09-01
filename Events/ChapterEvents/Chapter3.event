@@ -131,6 +131,15 @@ NoFade
 ENDA
 
 EndingScene:
+EscapeCapturedCheck(Mira, 0x8B)
+EscapeCapturedCheck(Iskra, 0x8C)
+EscapeCapturedCheck(Emil, 0x8D)
+EscapeCapturedCheck(Svetomir, 0x8E)
+EscapeCapturedCheck(Alena, 0x8F)
+EscapeCapturedCheck(Varga, 0x90)
+EscapeCapturedCheck(Delilah, 0x91)
+EscapeCapturedCheck(Alex, 0x92)
+EscapeCapturedCheck(Axel, 0x93)
 MNC2 Chapter4
 NoFade
 ENDA
