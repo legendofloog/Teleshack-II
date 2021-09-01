@@ -20,10 +20,10 @@ END_MAIN
 
 LocationBasedEvents:
 Door(18,2)
-Chest(RedGem, 25,3)
+Chest(MarksmanBow, 25,3)
 Door(26,6)
-Chest(SteelAxe,9,10)
-Chest(Vulnerary,12,10)
+Chest(Claymore,9,10)
+Chest(BeiyrScroll,12,10)
 LOCA 9 AlexAxelDoor [19,11] 0x12
 Door(17,13)
 Door(10,14)
