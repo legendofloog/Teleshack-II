@@ -66,12 +66,12 @@ SupportTerm
 
 ALIGN 4
 AlexSupportList:
-SupportEntry(Axel, 2, 2, 0, 0, 10, 10, 0)
+SupportEntry(Axel, 2, 2, 0, 0, 5, 10, 0)
 SupportTerm
 
 ALIGN 4
 AxelSupportList:
-SupportEntry(Alex, 2, 2, 0, 0, 10, 10, 0)
+SupportEntry(Alex, 2, 2, 0, 0, 5, 10, 0)
 SupportTerm
 
 
