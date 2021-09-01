@@ -20,13 +20,18 @@ END_MAIN
 
 LocationBasedEvents:
 Door(18,2)
-Chest(MarksmanBow, 25,3)
+Chest(RedGem, 25,3)
 Door(26,6)
-Chest(Claymore,9,10)
+Chest(SteelAxe,9,10)
 Chest(BeiyrScroll,12,10)
 LOCA 9 AlexAxelDoor [19,11] 0x12
 Door(17,13)
 Door(10,14)
+Escape(0,EscapeEventCheck,29,11)
+Escape(0,EscapeEventCheck,29,12)
+Escape(0,EscapeEventCheck,29,13)
+Escape(0,EscapeEventCheck,29,14)
+Escape(0,EscapeEventCheck,29,15)
 END_MAIN
 
 MiscBasedEvents:
@@ -93,8 +98,8 @@ MUSC WithUs_Song
 Text(AlexAxelFreedText)
 CUSA Alex
 CUSA Axel
-GiveItem(SlimAxe,Alex)
-GiveItem(SlimAxe,Axel)
+GiveItem(IronAxe,Alex)
+GiveItem(IronAxe,Axel)
 SilentGiveItem(Vulnerary,Alex)
 SilentGiveItem(Vulnerary,Axel)
 NoFade
@@ -105,6 +110,24 @@ LOAD1 1 Units1
 LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
 ENUN
+ENDA
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
+NoFade
 ENDA
 
 EndingScene:
