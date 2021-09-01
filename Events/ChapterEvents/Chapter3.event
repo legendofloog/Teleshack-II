@@ -67,6 +67,7 @@ ENDTRAP
 ALIGN 4
 
 EnemyUnits:
+UNIT Chapter1Generics AxeFighter   0x0 Level(3,Enemy,False) [15,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 AllyUnits:
