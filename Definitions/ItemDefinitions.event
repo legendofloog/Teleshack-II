@@ -157,7 +157,7 @@
 #define Audhulma 0x91
 #define Siegmund 0x92
 #define Garm 0x93
-#define Nidhogg 0x94
+//#define Nidhogg 0x94
 #define HeavySpear 0x95
 #define ShortSpear 0x96
 #define ConquerorsProof 0x97
@@ -214,3 +214,4 @@
 #define BeiyrScroll 0xBA
 #define GoldGem 0xBB
 #define GaleBow 0xBD
+#define SlimAxe  0x94

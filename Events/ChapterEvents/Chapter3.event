@@ -93,8 +93,8 @@ MUSC WithUs_Song
 Text(AlexAxelFreedText)
 CUSA Alex
 CUSA Axel
-GiveItem(IronAxe,Alex)
-GiveItem(IronAxe,Axel)
+GiveItem(SlimAxe,Alex)
+GiveItem(SlimAxe,Axel)
 SilentGiveItem(Vulnerary,Alex)
 SilentGiveItem(Vulnerary,Axel)
 NoFade

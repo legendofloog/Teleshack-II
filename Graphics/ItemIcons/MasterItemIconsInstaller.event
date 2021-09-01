@@ -37,6 +37,7 @@ ItemIconSlot(0xb9,"Png/Greatbow.png")
 ItemIconSlot(0xbc,"Png/Meteor.png")
 ItemIconSlot(0xd9,"Png/KnightProof.png")
 ItemIconSlot(0xde,"Png/GaleBow.png")
+ItemIconSlot(0x97, "Png/SlimAxe.png")
 POP
 
 
