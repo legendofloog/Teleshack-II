@@ -80,7 +80,8 @@ ENDTRAP
 ALIGN 4
 
 EnemyUnits:
-UNIT Chapter1Generics AxeFighter   0x0 Level(3,Enemy,True) [28,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Emory SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [23,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter   0x0 Level(3,Enemy,True) [20,13] 0x0 0x0 0x0 0x0 [0x0] AttackInRangeAI
 UNIT
 
 AllyUnits:

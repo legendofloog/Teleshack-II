@@ -51,6 +51,8 @@
 #define Raschwitz_Ch1 0x42
 // Chapter 2 Boss
 #define Tyr_Ch2 0x43
+// Chapter 3 Boss
+#define Emory 0x68
 
 #define Valter_Ch15 0x43
 #define Selena_Ch10B_and_13B 0x44
@@ -79,7 +81,6 @@
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
 #define Bandit 0x66
-#define ONeill 0x68
 #define Glen 0x69
 #define Zonta 0x6A
 #define Vigarde 0x6B
@@ -90,9 +91,10 @@
 #define Chapter1Generics 0x6E
 #define Senny 0x6F
 #define Helman 0x70
-//Chapter 2 Stuff (uses chapter 2 generics)
+//Chapter 2 Stuff (uses chapter 1 generics)
 #define Dragana 0x71
 #define Hernandez 0x72
+//Chapter 3 uses chapter 1 generics and adds no NPCs
 
 
 

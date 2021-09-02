@@ -64,6 +64,10 @@
 [LoadTyr] = [LoadFace][0x46][0x1]
 [LoadHernandez] = [LoadFace][0x47][0x1]
 [LoadDelilah] = [LoadFace][0xA][0x1]
+[LoadAlex] = [LoadFace][0xC][0x1]
+[LoadAxel] = [LoadFace][0xE][0x1]
+[LoadEmory] = [LoadFace][0x30][0x1]
+[LoadGenericE_F] = [LoadFace][0x70][0x1]
 
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
