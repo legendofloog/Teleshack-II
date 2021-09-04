@@ -115,8 +115,8 @@ UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,15] 0x0 0x0 0x0 0x
 UNIT
 
 AllyUnits:
-UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [22,11] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAi
-UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [21,10] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAi
+UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [22,11] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [21,10] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT
 
 EnemyReinforcements_A:
@@ -139,12 +139,6 @@ EnemyReinforcements_D:
 UNIT Chapter1Generics AxeArmor  Emory_Ch3 Level(5,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
 UNIT Chapter1Generics Mage  Emory_Ch3 Level(5,Enemy,True) [0,10] 0x0 0x0 0x0 0x0 [Wind] ChargeAI
 UNIT
-
-//ThiefReinforcements1:
-//UNIT
-
-//ThiefReinforcements2:
-//UNIT
 
 AlexAxelDoor:
 TILECHANGE 5
