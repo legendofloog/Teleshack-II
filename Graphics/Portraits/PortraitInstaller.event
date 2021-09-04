@@ -17,6 +17,8 @@
 #define TyrMug 0x46
 #define HernandezMug 0x47
 #define BoroMug 0x4E
+#define EmoryMug 0x30
+#define SeleseF 0x71
 
 ALIGN 16
 CleoMugData:
@@ -153,4 +155,21 @@ HernandezMugData:
 #incbin "Dmp/Hernandez/hernandez_palette.dmp"
 #incbin "Dmp/Hernandez/hernandez_minimug.dmp"
 setMugEntry(HernandezMug, HernandezMugData, 3, 5, 3, 2)
+
+
+ALIGN 16
+EmoryMugData:
+#incbin "Dmp/Emory/emory_mug.dmp"
+#incbin "Dmp/Emory/emory_frames.dmp"
+#incbin "Dmp/Emory/emory_palette.dmp"
+#incbin "Dmp/Emory/emory_minimug.dmp"
+setMugEntry(EmoryMug, EmoryMugData, 3, 6, 3, 4)
+
+ALIGN 16
+SeleseFMugData:
+#incbin "Dmp/SeleseF/selesef_mug.dmp"
+#incbin "Dmp/SeleseF/selesef_frames.dmp"
+#incbin "Dmp/SeleseF/selesef_palette.dmp"
+#incbin "Dmp/SeleseF/selesef_minimug.dmp"
+setMugEntry(SeleseFMug, SeleseFMugData, 3, 6, 3, 4)
 
