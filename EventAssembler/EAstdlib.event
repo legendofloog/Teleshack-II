@@ -253,10 +253,5 @@ V3.4
 #include "EAStandardLibrary/Code Aliases.txt"
 #endif // EA_STDLIB_STRICT
 
-#ifdef _FE7_
-#ifdef DISABLE_TUTORIALS
-#include "EAStandardLibrary/FE7 Tutorial Disabler.txt"
-#endif
-#endif
 
 #endif //EA_STDLIB_EVENT

@@ -17,4 +17,10 @@ EscapePointEntry(14,0,EscapeUp)
 EscapePointEntry(15,0,EscapeUp)
 EscapePointTerminator
 
+Chapter2NPCEscapeTable:
+EscapePointEntry(19,9,EscapeRight)
+EscapePointEntry(19,10,EscapeRight)
+EscapePointTerminator
+
 SetNPCEscapePoint(Chapter1,Chapter1NPCEscapeTable)
+SetNPCEscapePoint(Chapter2,Chapter2NPCEscapeTable)

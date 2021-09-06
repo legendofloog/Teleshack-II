@@ -932,17 +932,6 @@ ORG SkillIcon(NightcallerID)
 ORG SkillIcon(DullahanID)
 #incbin "SkillIcons/DevilsWhim.dmp"
 
-ORG SkillIcon(PCC0ID)
-#incbin "SkillIcons/Bond.dmp"
-ORG SkillIcon(PCC2ID)
-#incbin "SkillIcons/Bond.dmp"
-ORG SkillIcon(PCC3ID)
-#incbin "SkillIcons/Bond.dmp"
-ORG SkillIcon(PCC4ID)
-#incbin "SkillIcons/Bond.dmp"
-ORG SkillIcon(PCC5ID)
-#incbin "SkillIcons/Bond.dmp"
-
 
 ORG SkillIcon(VictoryMarchID)
 #incbin "SkillIcons/Celerity.dmp"

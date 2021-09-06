@@ -26,20 +26,20 @@ SupportTerm
 
 ALIGN 4
 MiraSupportList:
-SupportEntry(Iskra,3,0,1,5,5,5,5)
+SupportEntry(Iskra,3,0,1,10,5,0,0)
 SupportTerm
 
 ALIGN 4
 LoeweSupportList:
 SupportEntry(Cleo,3,0,0,7,7,7,7)
-SupportEntry(Iskra,3,0,1,10,10,0,0)
+SupportEntry(Iskra,3,0,1,10,5,0,0)
 SupportTerm
 
 ALIGN 4
 IskraSupportList:
-SupportEntry(Loewe,3,1,0,10,0,10,0)
+SupportEntry(Loewe,3,1,0,10,5,0,0)
 SupportEntry(Emil,3,0,0,7,7,7,7)
-SupportEntry(Mira,3,1,0,5,5,5,5)
+SupportEntry(Mira,3,1,0,10,5,0,0)
 SupportTerm
 
 ALIGN 4

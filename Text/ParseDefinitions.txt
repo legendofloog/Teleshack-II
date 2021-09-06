@@ -65,6 +65,7 @@
 [LoadHernandez] = [LoadFace][0x47][0x1]
 [LoadDelilah] = [LoadFace][0xA][0x1]
 
+[LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
 

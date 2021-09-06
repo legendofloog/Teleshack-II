@@ -6,6 +6,7 @@
 #include "ExtraGrowths/Installer.event"
 #include "MoveStars/Installer.event"
 #include "Support/Installer.event"
+#include "PCC/Installer.event"
 
 
 // changes Luck's contribution to Hit into lck instead of lck/2
