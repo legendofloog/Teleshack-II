@@ -3,15 +3,15 @@ ALIGN 4
 Proc_CriticalRework:
 #incbin "proc_criticalrework.dmp"
 
-ALIGN 4
-Proc_PursuitCritical:
-#incbin "proc_pursuitcritical.dmp"
-POIN SkillTester
-WORD PCC0ID
-WORD PCC2ID
-WORD PCC3ID
-WORD PCC4ID
-WORD PCC5ID
+//ALIGN 4
+//Proc_PursuitCritical:
+//#incbin "proc_pursuitcritical.dmp"
+//POIN SkillTester
+//WORD PCC0ID
+//WORD PCC2ID
+//WORD PCC3ID
+//WORD PCC4ID
+//WORD PCC5ID
 
 ALIGN 4
 Proc_Wrath:
@@ -29,6 +29,6 @@ ALIGN 4
 Proc_AttackCounter:
 #incbin "proc_attackcounter.dmp"
 
-ALIGN 4
-PCCClear:
-#incbin "pre_clearpcc.dmp"
+//ALIGN 4
+//PCCClear:
+//#incbin "pre_clearpcc.dmp"

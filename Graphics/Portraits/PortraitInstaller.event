@@ -146,7 +146,7 @@ DelilahMugData:
 #incbin "Dmp/Delilah/Delilah_frames.dmp"
 #incbin "Dmp/Delilah/Delilah_palette.dmp"
 #incbin "Dmp/Delilah/Delilah_minimug.dmp"
-setMugEntry(DelilahMug, DelilahMugData, 3, 6, 3, 2)
+setMugEntry(DelilahMug, DelilahMugData, 3, 6, 3, 4)
 
 ALIGN 16
 HernandezMugData:
@@ -154,7 +154,7 @@ HernandezMugData:
 #incbin "Dmp/Hernandez/hernandez_frames.dmp"
 #incbin "Dmp/Hernandez/hernandez_palette.dmp"
 #incbin "Dmp/Hernandez/hernandez_minimug.dmp"
-setMugEntry(HernandezMug, HernandezMugData, 3, 5, 3, 2)
+setMugEntry(HernandezMug, HernandezMugData, 3, 5, 2, 3)
 
 
 ALIGN 16

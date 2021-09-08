@@ -6,7 +6,7 @@ ExpandedAI2Table:
 ALIGN 4
 POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
-#undef AI2Table
+//#undef AI2Table
 #define AI2Table ExpandedAI2Table
 
 #define setAI2(ID, offset) "PUSH; ORG (AI2Table+4*ID); POIN (offset | 0x8000000); POP"

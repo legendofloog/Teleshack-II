@@ -68,7 +68,7 @@ END_MAIN
 
 Units1:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
+UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x0 0x1 [SilverSword,ShortSword,Vulnerary] NoAI
 UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [18,17] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
 UNIT
@@ -119,7 +119,7 @@ UNIT
 
 
 BoroUnitGroup:
-UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [Javelin, SilverLance] PursueWithoutHeedAI
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [MasterLance,SilverLance] PursueWithoutHeedAI
 UNIT
 
 BoroCutsceneGroup:
@@ -127,8 +127,8 @@ UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [Master
 UNIT
 
 DraganaUnitGroup:
-UNIT Senny Baron 0x0 Level(1,Enemy,False) [5,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Helman Sniper_F 0x0 Level(1,NPC,False) [5,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Senny Baron 0x0 Level(1,Enemy,False) [1,19] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Helman Sniper_F 0x0 Level(1,NPC,False) [16,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 
@@ -436,18 +436,19 @@ Text(EndingSceneTextBoro)
 MOVE 15 Boro_Ch1 [20,15]
 ENUN
 FADI 15
-CAMERA [5,10]
+LOMA Chapter2
+CAMERA [1,19]
 LOAD1 1 DraganaUnitGroup
 ENUN
 FADU 15
 EVBIT_T 9
 STAL 20
-MOVE 15 Senny [5,6]
+MOVE 15 Senny [16,19]
 ENUN
 CAMERA Helman
 FlashCursor(Helman,60)
 SOUN 0x00B1
-TILECHANGE 0
+TILECHANGE 5
 STAL 20
 EVBIT_T 5
 TEXTSTART
@@ -455,8 +456,8 @@ TEXTSHOW EndingSceneTextDraganaAndCidor
 TEXTEND
 EVBIT_F 9
 SOUN 0x00B1
-TILEREVERT 0
-MOVE 15 Senny [5,20]
+TILEREVERT 5
+MOVE 15 Senny [0,11]
 ENUN
 TEXTCONT
 TEXTEND

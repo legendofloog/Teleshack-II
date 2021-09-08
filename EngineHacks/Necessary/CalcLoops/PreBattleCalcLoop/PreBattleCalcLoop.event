@@ -56,7 +56,7 @@ POIN StancesASM
 //quick riposte goes after everything that might touch AS
 POIN QuickRiposte
 
-POIN PCCClear
+//POIN PCCClear
 
 //tower shield plus needs to go after every other skill that may affect defender's attack
 POIN TowerShieldPlus

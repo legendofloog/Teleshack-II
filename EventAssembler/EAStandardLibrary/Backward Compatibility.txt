@@ -1,36 +1,5 @@
 #define Empty " "
 
-#ifdef _FE6_
-#define MUS1 MUSC
-#define MUS2 MUSS
-#define MUS3 MUSM
-#endif
-
-#ifdef _FE7_
-#define IFEV IFEF
-#define TEX5 TEXTCG
-
-//Old world map codes
-
-#define PTBU TEXTBOXTOTOP
-#define PTBD TEXTBOXTOBOTTOM
-#define CTEW REMOVETEXTBOX
-#define LOPR SHOWPORTRAIT
-#define REPR REMOVEPORTRAIT
-#define LWMA LOADWM
-#define FAMA FADETOWM
-#define LWMC HIGHLIGHT
-#define FLDT PLACEDOT
-#define SWMD STARTWM
-#define REPL RIPPLE
-#define CMSP PUTSPRITE
-#define RMSP REMSPRITE
-
-#define MUS1 MUSC
-#define MUS2 MUSS
-#define MUS3 MUSM
-#endif
-
 #ifdef _FE8_
 
 //IFCD replacement

@@ -68,6 +68,7 @@
 [LoadAxel] = [LoadFace][0xE][0x1]
 [LoadEmory] = [LoadFace][0x30][0x1]
 
+[LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
 

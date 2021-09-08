@@ -51,10 +51,14 @@
 #define Raschwitz_Ch1 0x42
 // Chapter 2 Boss
 #define Tyr_Ch2 0x43
+// Chapter 2 generic guy for eventing battle purposes 
+#define Ch2_Selese_Guy 0x73
 // Chapter 3 Boss
 #define Emory_Ch3 0x68
 
-#define Valter_Ch15 0x43
+
+
+
 #define Selena_Ch10B_and_13B 0x44
 #define Valter_Prologue 0x45
 #define Breguet 0x46
