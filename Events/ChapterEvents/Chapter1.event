@@ -377,7 +377,6 @@ LABEL 3
 NoFade
 ENDA
 
-
 CivilianEscape:
 CHECK_CLASS -1
 SVAL s1 Civilian_F_2
@@ -392,7 +391,6 @@ LABEL 5
 NoFade
 ENDA
 
-
 EndingScene:
 CHECK_EVENTID 7
 BNE 2 s0 sC
@@ -403,6 +401,7 @@ EscapeCapturedCheck(Iskra, 0x8C)
 EscapeCapturedCheck(Emil, 0x8D)
 EscapeCapturedCheck(Svetomir, 0x8E)
 EscapeCapturedCheck(Alena, 0x8F)
+
 MUSC 0x7FFF
 FADI 15
 RemoveAll

@@ -64,6 +64,9 @@
 [LoadTyr] = [LoadFace][0x46][0x1]
 [LoadHernandez] = [LoadFace][0x47][0x1]
 [LoadDelilah] = [LoadFace][0xA][0x1]
+[LoadAlex] = [LoadFace][0xC][0x1]
+[LoadAxel] = [LoadFace][0xE][0x1]
+[LoadEmory] = [LoadFace][0x30][0x1]
 
 [LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
@@ -74,6 +77,7 @@
 [LoadSenny] = [LoadFace][0x62][0x1]
 [LoadHelman] = [LoadFace][0x59][0x1]
 [LoadSoldier] = [LoadFace][0x6A][0x1]
+[LoadSelese_F] = [LoadFace][0x70][0x1]
 
 [LoadYoungBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadYoungGirlVillager] = [LoadFace][0x63][0x1]

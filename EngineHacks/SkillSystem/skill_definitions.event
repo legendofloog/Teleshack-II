@@ -15,14 +15,9 @@
 #define MiracleID 11
 #define CritUpID 12
 #define DesperationID 13
-#define RadianceID 14
-#define NightcallerID 15
-#define VictoryMarchID 16
-#define AvengerID 17
-#define RecklessChargeID 18
-#define AftershockID 19
-#define DullahanID 20
 #define HexID 21
+#define EvenRhythmID 22
+#define OddRhythmID 23
 
 // keep it continous for debug purpose
 
@@ -31,5 +26,12 @@
 // TODO: add custom common skills here
 
 // personal skills
+#define RadianceID 14
+#define NightcallerID 15
+#define VictoryMarchID 16
+#define AvengerID 17
+#define RecklessChargeID 18
+#define AftershockID 19
+#define DullahanID 20
 
 

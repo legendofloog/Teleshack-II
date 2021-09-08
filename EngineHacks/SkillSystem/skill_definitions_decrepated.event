@@ -424,8 +424,8 @@
 
 //Even/Odd Rhythm: +10 Hit and Avoid on even or odd numbered turns.
 //Author Unknown (Initial Commit)
-#define OddRhythmID 255
-#define EvenRhythmID 255
+//#define OddRhythmID 255
+//#define EvenRhythmID 255
 
 //Faire Skills: +4 damage when equipping a weapon of the specified type.
 //Author Unknown (Initial Commit)

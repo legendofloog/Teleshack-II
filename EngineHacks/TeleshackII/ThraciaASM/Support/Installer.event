@@ -64,6 +64,17 @@ VargaSupportList:
 SupportEntry(Cleo,3,0,0,7,7,7,7)
 SupportTerm
 
+ALIGN 4
+AlexSupportList:
+SupportEntry(Axel, 2, 2, 0, 0, 5, 10, 0)
+SupportTerm
+
+ALIGN 4
+AxelSupportList:
+SupportEntry(Alex, 2, 2, 0, 0, 5, 10, 0)
+SupportTerm
+
+
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
@@ -72,3 +83,5 @@ SetUnitSupportList(Emil,EmilSupportList)
 SetUnitSupportList(Svetomir,SvetomirSupportList)
 SetUnitSupportList(Alena,AlenaSupportList)
 SetUnitSupportList(Varga,VargaSupportList)
+SetUnitSupportList(Alex,AlexSupportList)
+SetUnitSupportList(Axel,AxelSupportList)

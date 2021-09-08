@@ -1,0 +1,205 @@
+EventPointerTable(Chapter3Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(7, EnemyReinforcements_A, 0)
+TurnEventPlayer(7, EnemyReinforcements_B, 0)
+TurnEventPlayer(9, EnemyReinforcements_C, 0)
+TurnEventPlayer(10, EnemyReinforcements_D, 0)
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(18,2)
+Chest(BeiyrScroll, 25,3)
+Door(26,6)
+Chest(SteelAxe,9,10)
+Chest(RedGem,12,10)
+LOCA 9 AlexAxelDoor [19,11] 0x12
+Door(17,13)
+Door(10,14)
+Escape(0,EscapeEventCheck,29,11)
+Escape(0,EscapeEventCheck,29,12)
+Escape(0,EscapeEventCheck,29,13)
+Escape(0,EscapeEventCheck,29,14)
+Escape(0,EscapeEventCheck,29,15)
+END_MAIN
+
+MiscBasedEvents:
+AFEV 15 AlexAxelFreed 9
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Traps1:
+RedSigil(29,11)
+RedSigil(29,12)
+RedSigil(29,13)
+RedSigil(29,14)
+RedSigil(29,15)
+ENDTRAP
+ALIGN 4
+
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+DraganaUnit:
+UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [4,13] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [6,17] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [IronLance,DoorKey,ChestKey] NeverMoveAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [IronSword,Vulnerary] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [20,14] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
+UNIT Chapter1Generics SwordArmor   Emory_Ch3 Level(3,Enemy,True) [21,16] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [22,14] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [6,7] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] ChargeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [5,5] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [6,7] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
+UNIT Chapter1Generics Mage   Emory_Ch3 Level(2,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [Thunder] TwoActionAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [18,8] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [IronLance,DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceArmor  Emory_Ch3 Level(3,Enemy,True) [23,7] 0x0 0x0 0x0 0x0 [IronLance] NeverMoveAI
+UNIT Chapter1Generics LanceArmor  Emory_Ch3 Level(3,Enemy,True) [23,8] 0x0 0x0 0x0 0x0 [IronLance] NeverMoveAI
+UNIT Chapter1Generics AxeFighter  Emory_Ch3 Level(2,Enemy,True) [25,8] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary] TwoActionAI
+UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(2,Enemy,True) [26,12] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter  Emory_Ch3 Level(2,Enemy,True) [23,7] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,15] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+UNIT Chapter1Generics Archer  Emory_Ch3 Level(3,Enemy,True) [10,11] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(2,Enemy,True) [20,2] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [26,4] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT
+
+AllyUnits:
+UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [22,11] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [21,10] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT
+
+EnemyReinforcements_A:
+UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(3,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics Archer  Emory_Ch3 Level(5,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [IronBow] ChargeAI
+UNIT
+
+EnemyReinforcements_B:
+UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(5,Enemy,True) [5,0] 0x0 0x0 0x0 0x0 [SteelSword] ChargeAI
+UNIT Chapter1Generics Mage  Emory_Ch3 Level(5,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
+UNIT
+
+EnemyReinforcements_C:
+UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(2,Enemy,True) [13,20] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
+UNIT Chapter1Generics Archer  Emory_Ch3 Level(2,Enemy,True) [15,20] 0x0 0x0 0x0 0x0 [IronBow] ChargeAI
+UNIT
+
+EnemyReinforcements_D:
+UNIT Chapter1Generics AxeArmor  Emory_Ch3 Level(5,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
+UNIT Chapter1Generics Mage  Emory_Ch3 Level(5,Enemy,True) [0,10] 0x0 0x0 0x0 0x0 [Wind] ChargeAI
+UNIT
+
+AlexAxelDoor:
+TILECHANGE 5
+NoFade
+ENDA
+
+AlexAxelFreed:
+MUSC WithUs_Song
+Text(AlexAxelFreedText)
+CUSA Alex
+CUSA Axel
+GiveItem(IronAxe,Alex)
+GiveItem(IronAxe,Axel)
+SilentGiveItem(Vulnerary,Alex)
+SilentGiveItem(Vulnerary,Axel)
+NoFade
+ENDA
+
+BeginningScene:
+//SetBackground(CastleHallway)
+//Text(BeginningSceneTextA)
+//EndConvo
+LOAD1 0 Units1
+LOAD1 1 DraganaUnit
+LOAD1 1 EnemyUnits
+LOAD1 1 AllyUnits
+ENUN
+ENDA
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
+NoFade
+ENDA
+
+EndingScene:
+EscapeCapturedCheck(Mira, 0x8B)
+EscapeCapturedCheck(Iskra, 0x8C)
+EscapeCapturedCheck(Emil, 0x8D)
+EscapeCapturedCheck(Svetomir, 0x8E)
+EscapeCapturedCheck(Alena, 0x8F)
+EscapeCapturedCheck(Varga, 0x90)
+EscapeCapturedCheck(Delilah, 0x91)
+EscapeCapturedCheck(Alex, 0x92)
+EscapeCapturedCheck(Axel, 0x93)
+REMOVEUNIT Dragana
+MNC2 Chapter4
+NoFade
+ENDA
