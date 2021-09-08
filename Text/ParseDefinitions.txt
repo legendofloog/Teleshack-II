@@ -77,7 +77,7 @@
 [LoadSenny] = [LoadFace][0x62][0x1]
 [LoadHelman] = [LoadFace][0x59][0x1]
 [LoadSoldier] = [LoadFace][0x6A][0x1]
-[LoadSelese_F] = [LoadFace][0x70][0x1]
+[LoadSeleseF] = [LoadFace][0x70][0x1]
 
 [LoadYoungBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadYoungGirlVillager] = [LoadFace][0x63][0x1]
