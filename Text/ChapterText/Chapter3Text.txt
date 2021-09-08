@@ -2,5 +2,16 @@
 Ch3: Pursuit[X]
 
 ## AlexAxelFreedText
-[MidLeft][LoadCleo]
-Unit get.[A][X]
+[MidLeft][LoadAlex][MidRight][LoadAxel]
+[MidLeft]
+Unit-[A][X]
+[MidRight]
+get.[A][X]
+
+## BeginningSceneA
+[FarLeft][LoadLoewe][Left][LoadCleo][Right][LoadMira][FarRight][LoadDragana]
+[FarLeft]
+Huff[Break] Huff[Break] I think- I think we're clear of them.[A]
+[Right]
+We're just lucky Boro had a change[N]
+of heart when he did[Break][A]

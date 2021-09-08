@@ -89,7 +89,7 @@ UNIT
 
 EnemyUnits:
 UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
-UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [20,2] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
 UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [4,13] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
 UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [6,17] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
 UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [IronLance,DoorKey,ChestKey] NeverMoveAI
@@ -112,6 +112,9 @@ UNIT Chapter1Generics AxeFighter  Emory_Ch3 Level(2,Enemy,True) [25,8] 0x0 0x0 0
 UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(2,Enemy,True) [26,12] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT Chapter1Generics AxeFighter  Emory_Ch3 Level(2,Enemy,True) [23,7] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
 UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,15] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Chapter1Generics Archer  Emory_Ch3 Level(3,Enemy,True) [10,11] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(2,Enemy,True) [20,2] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [26,4] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT
 
 AllyUnits:
