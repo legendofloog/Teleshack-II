@@ -186,7 +186,7 @@ NoFade
 ENDA
 
 BeginningScene:
-SetBackground(CastleHallwayNight)
+SetBackground(CastleHallway)
 Text(BeginningSceneTextA)
 Text(BeginningSceneTextB)
 Text(BeginningSceneTextC)
@@ -227,7 +227,7 @@ EscapeCapturedCheck(Delilah, 0x91)
 EscapeCapturedCheck(Alex, 0x92)
 EscapeCapturedCheck(Axel, 0x93)
 Text(MapEndText)
-SetBackground(CastleHallwayNight)
+SetBackground(CastleHallway)
 Text(EndingSceneTextA1)
 Text(EndingSceneTextA2)
 Text(EndingSceneTextA3)
