@@ -18,6 +18,15 @@ Follow-up attacks have[N]
 Follow-up attacks have[N]
 5x critical rate.[X]
 
+## SD_Culling
+Culling: If foe's HP is full, deals damage[N]
+equal to 25% of foe's max HP.[X]
+
+## SD_Headshot
+Headshot: If foe's HP is not full, deals[N]
+execute damage equal to 50% of foe's[N]
+missing HP.[X]
+
 ## SD_Radiance
 Radiance: Empower allies you heal,[N]
 your healing and attacks heal all[N]

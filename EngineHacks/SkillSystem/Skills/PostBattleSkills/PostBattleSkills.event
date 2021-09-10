@@ -18,6 +18,14 @@ POIN LifetakerEvent
 #include "Lifetaker/LifetakerEvent.event"
 
 ALIGN 4
+BemperedRing:
+#incbin "TemperedRing/TemperedRing.dmp"
+POIN SkillTester
+WORD TemperedRingID
+POIN HealEvent
+#include "TemperedRing/lesussybardoevent.event"
+
+ALIGN 4
 Fury:
 #incbin "Fury/fury.dmp"
 POIN SkillTester

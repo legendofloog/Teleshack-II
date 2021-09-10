@@ -15,6 +15,35 @@
 
 //#include "MultiSupplyUnits20200302/Installer.event"
 
+//Portrait Height Fix
+//by Sme
+PUSH
+ORG 0x5C3C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POIN 0x5C9C
+POP
+
 // thief vision
 PUSH
 ORG 0x0178C2
@@ -80,6 +109,8 @@ ChangeWeaponRankASMC:
 #include "EnemyEscapeHook/EnemyEscapeHook.event"
 
 #include "MapChangeToFlag/Installer.event"
+
+#include "MinimugPalette/Installer.event"
 
 //#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
 

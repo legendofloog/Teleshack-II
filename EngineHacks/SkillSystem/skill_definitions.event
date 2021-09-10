@@ -33,5 +33,7 @@
 #define RecklessChargeID 18
 #define AftershockID 19
 #define DullahanID 20
-
+#define HeadshotID 24
+#define CullingID 25
+#define TemperedRingID 26 //For the item
 

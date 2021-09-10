@@ -58,6 +58,7 @@
 #define WeaponLock4 0x00200000
 #define KaiserschwertLock 0x01000000
 #define ArgilabrysLock 0x02000000
+#define PassiveBoosts 0x00800000
 
 
 // Weapon Effect

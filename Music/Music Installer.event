@@ -11,8 +11,10 @@ voicegroup000:
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)
-#include "MusicEvents/Treasure of the Rudras - Battle Theme (RandomWizard).event"
-SongTable(TreasureOfRudrasBattleTheme,rudras_battle_theme,MapMusicGroup)
+//#include "MusicEvents/Treasure of the Rudras - Battle Theme (RandomWizard).event"
+//SongTable(TreasureOfRudrasBattleTheme,rudras_battle_theme,MapMusicGroup)
+#include "MusicEvents/Battle For The Fields.event"
+SongTable(TreasureOfRudrasBattleTheme,songB2,MapMusicGroup) //hi i commented the top one out because its the same song but if you dont like this version just delete this and uncomment it
 #include "MusicEvents/Lufia 2 Rise of the Sinistrals - Battle 2 (SaXor_the_Nobody).event"
 SongTable(Lufia2_RoS_Battle2,lufia2_battle2,BattleMusicGroup)
 #include "MusicEvents/Knights in the Knightmare - Sortie Formation (SaXor_the_Nobody).event"
@@ -33,7 +35,8 @@ SongTable(FF5_Sealed_Away,sealed_away,MapMusicGroup)
 SongTable(FE5_Adversity, song17, MapMusicGroup)
 #include "MusicEvents/in_the_battle_fate.event"
 SongTable(FE5_InTheBattle_Fate, song24, MapMusicGroup)
-
+#include "MusicEvents/Dreaming.event"
+SongTable(Dreaming,songDB,MapMusicGroup)
 //=======
 //Example song
 

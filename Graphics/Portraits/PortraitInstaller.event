@@ -8,6 +8,8 @@
 #define AlenaMug 0x8
 #define VargaMug 0x9
 #define DelilahMug 0xA
+#define FiloneMug 0xF
+#define ZwiebackMug 0x10
 #define LoeweMug 0x14
 #define LoeweKidMug 0x15
 #define DraganaMug 0x2D
@@ -172,4 +174,21 @@ SeleseFMugData:
 #incbin "Dmp/SeleseF/selesef (kyrads)_palette.dmp"
 #incbin "Dmp/SeleseF/selesef (kyrads)_minimug.dmp"
 setMugEntry(SeleseFMug, SeleseFMugData, 3, 6, 3, 4)
+
+ALIGN 16
+FiloneMugData:
+#incbin "Dmp/Filone/Filone (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Filone/Filone (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Filone/Filone (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Filone/Filone (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(FiloneMug, FiloneMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ZwiebackMugData:
+#incbin "Dmp/Zwieback/Zwieback (devvy)_mug.dmp"
+#incbin "Dmp/Zwieback/Zwieback (devvy)_frames.dmp"
+#incbin "Dmp/Zwieback/Zwieback (devvy)_palette.dmp"
+#incbin "Dmp/Zwieback/Zwieback (devvy)_minimug.dmp"
+setMugEntry(ZwiebackMug, ZwiebackMugData, 3, 5, 3, 3)
+
 

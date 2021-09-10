@@ -139,7 +139,7 @@
 #define StoneSword 0x81
 #define IceSword 0x82
 #define Argilabrys 0x83
-#define BeaconBow 0x84
+#define TemperedRing 0x84
 #define Sieglind 0x85
 #define Sieglinde 0x85
 #define BattleAxe 0x86
