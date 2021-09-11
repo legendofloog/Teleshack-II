@@ -22,7 +22,7 @@ bool ShouldApplyPCC(BattleUnit* attacker, NewBattleHit* battleHit, BattleStats* 
 		return false;
 	}
 
-	if (GetUnitPCC(&attacker->unit) > 1){
+	if (GetUnitPCC(&attacker->unit) != 1){
 		for(int i = 0; i < BATTLE_HIT_MAX; i++){
 			if(&NewBattleHitArray[i] != battleHit){
 				if (battleHit->attributes & NewBattleHitArray[i].attributes & (BATTLE_HIT_ATTR_ISATTACKER + BATTLE_HIT_ATTR_ISDEFENDER)){

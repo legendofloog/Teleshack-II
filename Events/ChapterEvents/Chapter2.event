@@ -192,7 +192,7 @@ BeginningScene:
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)
-	LOAD1 0 Units1
+	LOAD1 2 Units1
 	ENUN
 	Text(Chapter2OpeningScene5)
 	NoFade
