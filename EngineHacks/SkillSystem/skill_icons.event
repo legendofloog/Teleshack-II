@@ -941,7 +941,7 @@ ORG SkillIcon(AvengerID)
 ORG SkillIcon(RecklessChargeID)
 #incbin "SkillIcons/ChargePlus.dmp"
 
-ORG SkillIcon(AftershockID)
+ORG SkillIcon(PiercingBoltID)
 #incbin "SkillIcons/Dazzle.dmp"
 
 ORG SkillIcon(HeadshotID)

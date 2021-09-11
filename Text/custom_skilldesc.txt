@@ -1,23 +1,3 @@
-## SD_PCC0
-Follow-up attacks[N]
-have no crit rate.[X]
-
-## SD_PCC2
-Follow-up attacks have[N]
-2x critical rate.[X]
-
-## SD_PCC3
-Follow-up attacks have[N]
-3x critical rate.[X]
-
-## SD_PCC4
-Follow-up attacks have[N]
-4x critical rate.[X]
-
-## SD_PCC5
-Follow-up attacks have[N]
-5x critical rate.[X]
-
 ## SD_Culling
 Culling: If foe's HP is full, deals damage[N]
 equal to 25% of foe's max HP.[X]
@@ -51,11 +31,10 @@ wound, gaining Crit/Hit and losing[N]
 Avo/Dodge equal to his missing HP.[X]
 
 ## SD_RecklessCharge
-Reckless Charge: When Emil is mounted,[N]
-moving his max range makes his attacks[N]
-brave but reduces AS/Avo to 0.[X]
+Reckless Charge: When mounted, Emil's[N]
+attacks are brave after moving his full[N]
+move, but this reduces his AS/Avo to 0.[X]
 
-## SD_Aftershock
-Aftershock: Thunder magic Shocks[N]
-enemies. Shocked enemies cannot[N]
-counter for 1 battle.[X]
+## SD_PiercingBolt
+Piercing Bolt: Iskra's thunder magic[N]
+pierces 50% of the enemy's Res.[X]

@@ -6,6 +6,7 @@ BossBGMTable:
 BossBGMEntry(Raschwitz_Ch1, Lufia2_RoS_Battle2)
 BossBGMEntry(Boro_Ch1, UnfinishedBattleGodSyndrome)
 BossBGMEntry(Tyr_Ch2, Lufia2_RoS_Battle2)
+BossBGMEntry(Emory_Ch3, Lufia2_RoS_Battle2)
 BossBGMTerminator
 
 PUSH

@@ -46,10 +46,10 @@ WORD RecklessChargeID
 POIN prMovGetter
 
 ALIGN 4
-Post_AftershockInfliction:
-#incbin "AftershockInflictionPostBattle.dmp"
+PiercingBolt:
+#incbin "PiercingBolt.dmp"
 POIN SkillTester
-WORD AftershockID
+WORD PiercingBoltID
 
 #include "DullahanEvent.event"
 

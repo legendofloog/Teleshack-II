@@ -97,6 +97,7 @@ UNIT
 
 
 EnemyUnits:
+UNIT Chapter1Generics Mage Raschwitz_Ch1 Level(1,Enemy,True) [17,15] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
 UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT Chapter1Generics SwordArmor Raschwitz_Ch1 Level(1,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
