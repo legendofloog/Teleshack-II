@@ -8,7 +8,7 @@ are you two doing in here?[A]
 
 [Right][OneLineBox]
 
-Ah boss, we can explain!
+Ah boss, we can explain![A]
 
 [FarRight][TwoLineBox]
 
@@ -30,49 +30,49 @@ stay with the rest of the squad![A]
 
 [FarRight]
 
-Yeah but they're fine[N] 
+Yeah but they're fine[N]
 
 on their own outside![A]
 
-[Right]
+[Right][MoveRight]
 
-And you guys probably[N] 
+And you guys probably[N]
 
 needed the help more![A]
 
 [MidLeft]
 
-Thats not the point! What if[N] 
+Thats not the point! What if[N]
 
 we hadn't come this way?[AN]
 
-You'd be rotting in Cidors jail[N] 
+You'd be rotting in Cidors jail[N]
 
 for the rest of your days.[AN]
 
-And I don't think you'd be any[N] 
+And I don't think you'd be any[N]
 
 use to us like that![A]
 
 [Right]
 
-Yeah but we aren't and[N] 
+Yeah but we aren't and[N]
 
 thats what matters![A]
 
-[FarRight][OneLineBox]
+[FarRight][OneLineBox][ToggleSmile]
 
 And now we can help you![A]
 
-[MidLeft][ThreeLineBox]
+[MidLeft][ThreeLineBox][ToggleSmile]
 
 Sometimes I wonder how[N]
 
-I everlet you two onto[N] 
+I ever let you two onto[N]
 
-the recon squad[Beat][A]
+the recon squad[Beat][CloseEyes][A]
 
-[FarRight][TwoLineBox]
+[FarRight][TwoLineBox][ToggleSmile]
 
 I mean you need someone who can[N]
 
@@ -88,11 +88,11 @@ one versus one swordfight.[A]
 
 [FarRight][TwoLineBox]
 
-And we're two for[N] 
+And we're two for[N]
 
 the price of one![A]
 
-[MidLeft][TwoLineBox]
+[MidLeft][ThreeLineBox][OpenEyes]
 
 Hah, whatever you knuckleheads.[N]
 
