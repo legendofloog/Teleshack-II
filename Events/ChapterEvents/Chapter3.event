@@ -131,6 +131,7 @@ UNIT
 EnemyReinforcementsEvent_A:
 CamOn
 LOAD1 1 EnemyReinforcements_A
+ENUN
 CamOff
 ENDA
 
@@ -142,6 +143,7 @@ UNIT
 EnemyReinforcementsEvent_B:
 CamOn
 LOAD1 1 EnemyReinforcements_B
+ENUN
 Text(ReinforcementText)
 CamOff
 ENDA
@@ -154,6 +156,7 @@ UNIT
 EnemyReinforcementsEvent_C:
 CamOn
 LOAD1 1 EnemyReinforcements_C
+ENUN
 CamOff
 ENDA
 
@@ -165,6 +168,7 @@ UNIT
 EnemyReinforcementsEvent_D:
 CamOn
 LOAD1 1 EnemyReinforcements_D
+ENUN
 CamOff
 ENDA
 
