@@ -1,0 +1,5 @@
+HealEvent:
+SOUN 0x89 //Heal Staff sound?
+STAL 0x5
+NoFade
+ENDA

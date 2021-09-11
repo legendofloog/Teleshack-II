@@ -8,8 +8,8 @@
 #define Delilah 0x08
 #define Alex 0x09
 #define Axel 0x0A
-#define Innes 0x0B
-#define Lute 0x0C
+#define Filone 0x0B
+#define Zwieback 0x0C
 #define Natasha 0x0D
 #define Cormag 0x0E
 #define Loewe 0x0F
@@ -91,7 +91,7 @@
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
 #define Bandit 0x66
-#define Glen 0x69
+#define Hilmar 0x69
 #define Zonta 0x6A
 #define Vigarde 0x6B
 #define Lyon_Final 0x6C

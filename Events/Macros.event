@@ -6,7 +6,7 @@
 #define CamOff "EVBIT_F 0x9"
 #define MoveCoords(X1,Y1,X2,Y2) "SVAL 0xB Coords(X1,Y1) ; MOVE 0x0 0xFFFE [X2,Y2]"
 #define MoveCoords(X1,Y1,Speed,X2,Y2) "SVAL 0xB Coords(X1,Y1) ; MOVE Speed 0xFFFE [X2,Y2]"
-#define LoadUnit(x,y) "UNIT 0x1 Lord 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" //for units in player placement with prep menu, replace 0x1 with Lord, and Lord with LordClass
+#define LoadUnit(x,y) "UNIT 0xF 0x1D 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" //for units in player placement with prep menu
 #define LoadUnit(unitid,x,y) "UNIT unitid Cavalier 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI"
 #define Unit(x,y) "LoadUnit(x,y)"
 #define Unit(unitid,x,y) "LoadUnit(unitid,x,y)"
@@ -27,11 +27,14 @@
 #define CenterTextbox(textid) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND"
 #define SetHP(number,x,y) "SVAL 0x1 number; SVAL 0xB Coords(x,y); SET_HP 0xFFFE"
 #define CharacterConditionalDialog(character,alivetext,deadtext) "CHECK_ALIVE character; BEQ 1 0x0 0xC; Text(alivetext); GOTO 2; LABEL 1; Text(deadtext); LABEL 2"
+#define DoubleConditionalDialog(character,character2,alivetext,deadtext,label,label2) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_ALIVE character2; BEQ label 0x0 0xC; Text(alivetext); GOTO label2; LABEL label; Text(deadtext); LABEL label2"
 #define IfAliveDialog(character,alivetext) "CHECK_ALIVE character; BEQ 1 0x0 0xC; Text(alivetext); LABEL 1"
 #define IfAliveDialog2(character,alivetext) "CHECK_ALIVE character; BEQ 2 0x0 0xC; Text(alivetext); LABEL 2"
 #define IfAliveDialog3(character,alivetext) "CHECK_ALIVE character; BEQ 3 0x0 0xC; Text(alivetext); LABEL 3"
 #define IfAliveDialog4(character,alivetext) "CHECK_ALIVE character; BEQ 4 0x0 0xC; Text(alivetext); LABEL 4"
 #define IfAliveDialog5(character,alivetext) "CHECK_ALIVE character; BEQ 5 0x0 0xC; Text(alivetext); LABEL 5"
+#define DoubleIfAliveDialog(character,character2,alivetext,label) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_ALIVE character2; BEQ label 0x0 0xC; Text(alivetext); LABEL label"
+#define TripleIfAliveDialog(character,character2,character3,alivetext,label) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_ALIVE character2; BEQ label 0x0 0xC; CHECK_ALIVE character3; BEQ label 0x0 0xC; Text(alivetext); LABEL label"
 #define ChargeWarning(character,alivetext) "CHECK_ALIVE character; BEQ 1 0x0 0xC;CAM1 character;STAL 20; FlashCursor(character,60); Text(alivetext); LABEL 1"
 #define CameraCursor(character) "CAM1 character; STAL 20; FlashCursor(character,60)"
 #define CameraLong(character,time) "CAM1 character; STAL 20; FlashCursor(character,time)"
@@ -61,3 +64,5 @@
 #define QuickRemu(unitID,labelID) "CHECK_EXISTS unitID; BEQ labelID 0xC 0x0; CHECK_ALIVE unitID; BEQ labelID 0xC 0x0; REMU unitID; LABEL labelID"
 #define QuickCheckFlag(flagID,labelID) "CHECK_EVENTID flagID; BEQ labelID 0xC 0x0; LABEL labelID"
 #define RemoveAll "REMOVEALL_BLUE; REMOVEALL_GREEN; REMOVEALL_RED"
+#define DoAllThree "CLEA 0; CLEN 0; CLEE 0"
+
