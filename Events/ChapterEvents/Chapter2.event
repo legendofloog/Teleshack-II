@@ -167,8 +167,6 @@ BeginningScene:
 	REMA
 	EVBIT_F 5
 	Text(Chapter2OpeningScene3)
-	// 7 str + 10 Mt = 17 Atk, -3 def from soldier equals 14 damage from Varga
-	// 5 str + 7 Mt = 12 atk, -10 def from Varga equals 2 damage from soldier
 	CUSA Varga
 	MUSC Sortie_Formation
 	StartBattle
@@ -176,12 +174,14 @@ BeginningScene:
 	MissedAttack(1,2)
 	EndAttack
 	FIGHT_MAP Varga Ch2_Selese_Guy LongSword False
+	ENUN
 	MOVE 15 Cleo [0,3]
 	ENUN
 	StartBattle
 	CriticalHit(0,20)
 	EndAttack
 	FIGHT_MAP Cleo Ch2_Selese_Guy Argilabrys False
+	ENUN
 	AWAIT_KILL Ch2_Selese_Guy
 	MOVE 15 Loewe [2,2]
 	ENUN
@@ -199,10 +199,10 @@ BeginningScene:
 	ENDA
 
 Turn3Spawn:
-ReinforcementEvent(Turn3Reinforcements)
+SpawnReinforcements(Turn3Reinforcements)
 
 Turn5Spawn:
-ReinforcementEvent(Turn5Reinforcements)
+SpawnReinforcements(Turn5Reinforcements)
 
 BoroSpawn:
 LOAD1 1 BoroUnitGroup2
