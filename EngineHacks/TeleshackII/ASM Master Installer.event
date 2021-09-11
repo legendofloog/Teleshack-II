@@ -15,6 +15,7 @@
 
 //#include "MultiSupplyUnits20200302/Installer.event"
 
+/*
 //Portrait Height Fix
 //by Sme
 PUSH
@@ -43,6 +44,7 @@ POIN 0x5C9C
 POIN 0x5C9C
 POIN 0x5C9C
 POP
+*/
 
 // thief vision
 PUSH
@@ -110,7 +112,7 @@ ChangeWeaponRankASMC:
 
 #include "MapChangeToFlag/Installer.event"
 
-#include "MinimugPalette/Installer.event"
+//#include "MinimugPalette/Installer.event"
 
 //#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
 

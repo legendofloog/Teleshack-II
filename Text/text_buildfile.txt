@@ -26,7 +26,7 @@ Likes:[X]
 #0xd4e HeightText
 Height:[X]
 
-#include "ClassItemsEtc/ItemNamesDescs.txt"
+#include "CharClassItemsEtc/ItemNamesDescs.txt"
 
 #0xd4f AgeText
 Age:[X]
@@ -161,10 +161,10 @@ Dragana's cell.[X]
 
 #include "ChapterTextInstaller.txt"
 
-#include "ClassItemsEtc/ItemNamesDescs_Free.txt"
+#include "CharClassItemsEtc/ItemNamesDescs_Free.txt"
 
-#include "ClassItemsEtc/StaffText.txt"
+#include "CharClassItemsEtc/StaffText.txt"
 
-#include "ClassItemsEtc/CharacterNamesDescs.txt"
+#include "CharClassItemsEtc/CharacterNamesDescs.txt"
 
-#include "ClassItemsEtc/ClassNamesDescs.txt"
+#include "CharClassItemsEtc/ClassNamesDescs.txt"
