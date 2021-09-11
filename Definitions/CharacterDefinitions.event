@@ -56,8 +56,14 @@
 // Chapter 3 Boss
 #define Emory_Ch3 0x68
 
-
-
+// Chapter 1 Stuff
+#define Chapter1Generics 0x6E
+#define Senny 0x6F
+#define Helman 0x70
+//Chapter 2 Stuff (uses chapter 1 generics)
+#define Dragana 0x71
+#define Hernandez 0x72
+//Chapter 3 uses chapter 1 generics and adds no NPCs
 
 #define Selena_Ch10B_and_13B 0x44
 #define Valter_Prologue 0x45
@@ -91,14 +97,7 @@
 #define Lyon_Final 0x6C
 #define Orson_Boss 0x6D
  
-// Chapter 1 Stuff
-#define Chapter1Generics 0x6E
-#define Senny 0x6F
-#define Helman 0x70
-//Chapter 2 Stuff (uses chapter 1 generics)
-#define Dragana 0x71
-#define Hernandez 0x72
-//Chapter 3 uses chapter 1 generics and adds no NPCs
+
 
 
 

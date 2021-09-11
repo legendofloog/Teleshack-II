@@ -20,7 +20,7 @@
 #define HernandezMug 0x47
 #define BoroMug 0x4E
 #define EmoryMug 0x30
-#define SeleseFMug 0x71
+#define SeleseFMug 0x70
 
 ALIGN 16
 CleoMugData:

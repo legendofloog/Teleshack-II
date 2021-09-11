@@ -10,11 +10,11 @@ Reinforcements from behind![A]
 
 They must have gotten through[N]
 
-Boro. what do we do?[A]
+Boro. what do we do?[AN]
 
-We can't just leave him after[N]
+We can't just leave him[N]
 
-he did that for us[Beat][A]
+after he did that for us[Beat][A]
 
 [MidRight]
 
@@ -24,11 +24,11 @@ late to turn around now![A]
 
 [MidLeft][OneLineBox]
 
-But he-[A]
+But he-[A][CloseSpeechFast]
 
-[MidRight][MoveFarRight][MidLeft][MoveRight][FarFarLeft][LoadDragana][MoveMidLeft]
+[MidRight][MoveFarRight][MidLeft][MoveRight][ClearFace][Right][LoadLoewe][FarFarLeft][LoadDragana][MoveFarLeft]
 
-[MidLeft][ThreeLineBox]
+[FarLeft][ThreeLineBox]
 
 Don't let his sacrifice be in[N]
 

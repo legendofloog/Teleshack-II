@@ -13,7 +13,7 @@ struct NewBattleHit // Skill System's new 8-byte long rounds data.
 	unsigned attributes : 19;
     unsigned info       : 5;
     signed   hpChange   : 8;
-	u8 pad1;
+	u8 skillID;
 	s8 damage;
 	u8 pad2[2]; // These are things, but I don't know what they are.
 };

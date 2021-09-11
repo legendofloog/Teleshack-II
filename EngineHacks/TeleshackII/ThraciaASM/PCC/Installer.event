@@ -10,7 +10,21 @@ PCCTable:
 
 // replace Proc_Start in proc loop with New_Proc_Start
 SetUnitPCC(Loewe,2)
+SetUnitPCC(Cleo,1)
+SetUnitPCC(Mira,0)
 SetUnitPCC(Iskra,2)
+SetUnitPCC(Emil,1)
+SetUnitPCC(Svetomir,0)
 SetUnitPCC(Alena,3)
+SetUnitPCC(Varga,1)
+SetUnitPCC(Delilah,1)
 SetUnitPCC(Alex,2)
 SetUnitPCC(Axel,2)
+
+
+//Bosses, Generics, and NPCs
+SetUnitPCC(Boro_Ch1,1)
+SetUnitPCC(Raschwitz_Ch1,1)
+SetUnitPCC(Tyr_Ch2,1)
+SetUnitPCC(Emory_Ch3,1)
+SetUnitPCC(Chapter1Generics,1)
