@@ -1,8 +1,25 @@
 ## Chapter4Title
-Ch4: Visions[X]
+Ch4: Daybreak[X]
 
-## DefeatBossObj
-Defeat Boss[X]
+## DefeatBossDefendObj
+[_D]ft. [_B][_o][_s][_s]/[_D][_e]f[_e][_n][_d][X]
 
 ## Ch4DefeatBossDesc
-Defeat <bossname>[X]
+Defend for 9 turns or[N]
+defeat Hilmar[X]
+
+## HilmarBossQ
+[OpenMidLeft][LoadHilmar]
+<boss quote>[A][X]
+
+## HilmarDeathQ
+[OpenMidLeft][LoadHilmar]
+<death quote>[A][X]
+
+## Placeholder1
+[OpenMidLeft][LoadLoewe]
+Placeholder dialogue 1![A][X]
+
+## Placeholder2
+[OpenMidRight][LoadLoewe]
+Placeholder dialogue 2![A][X]

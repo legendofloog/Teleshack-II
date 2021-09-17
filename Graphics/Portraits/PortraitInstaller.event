@@ -21,6 +21,7 @@
 #define BoroMug 0x4E
 #define EmoryMug 0x30
 #define SeleseFMug 0x70
+#define HilmarMug 0x4b
 
 ALIGN 16
 CleoMugData:
@@ -181,7 +182,7 @@ FiloneMugData:
 #incbin "Dmp/Filone/Filone (Laurent_Lacroix)_frames.dmp"
 #incbin "Dmp/Filone/Filone (Laurent_Lacroix)_palette.dmp"
 #incbin "Dmp/Filone/Filone (Laurent_Lacroix)_minimug.dmp"
-setMugEntry(FiloneMug, FiloneMugData, 3, 5, 3, 3)
+setMugEntry(FiloneMug, FiloneMugData, 4, 5, 4, 3)
 
 ALIGN 16
 ZwiebackMugData:
@@ -191,4 +192,11 @@ ZwiebackMugData:
 #incbin "Dmp/Zwieback/Zwieback (devvy)_minimug.dmp"
 setMugEntry(ZwiebackMug, ZwiebackMugData, 3, 5, 3, 3)
 
+ALIGN 16
+HilmarMugData:
+#incbin "Dmp/Hilmar/Hilmar(Laurent_Lacroix_mug.dmp"
+#incbin "Dmp/Hilmar/Hilmar(Laurent_Lacroix_frames.dmp"
+#incbin "Dmp/Hilmar/Hilmar(Laurent_Lacroix_palette.dmp"
+#incbin "Dmp/Hilmar/Hilmar(Laurent_Lacroix_minimug.dmp"
+setMugEntry(HilmarMug, HilmarMugData, 3, 5, 3, 3)
 

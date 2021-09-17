@@ -10,8 +10,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x08 Delilah,3,30
 0x09 Alex,0,10
 0x0A Axel,0,10
-Innes,0,5
-Lute,1,10
+0x0B Filone,1,10
+0x0C Zwieback,0,2
 Natasha,5,65
 Cormag,1,10
 Loewe,1,10

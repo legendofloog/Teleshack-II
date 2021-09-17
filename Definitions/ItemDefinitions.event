@@ -102,7 +102,7 @@
 #define Talisman 0x61
 #define Boots 0x62
 #define BodyRing 0x63
-#define HeroCrest 0x64
+#define SlimBow 0x64
 #define HerosCrest 0x64
 #define KnightCrest 0x65
 #define KnightsCrest 0x65

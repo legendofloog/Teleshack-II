@@ -14,6 +14,8 @@
 #define Manakete 0x0E
 #define SwordFighter 0x0F
 #define SwordFighter_F 0x10
+#define Swordfighter 0x0F // >:(
+#define Swordfighter_F 0x10
 #define Hero 0x11
 #define Hero_F 0x12
 #define Myrmidon 0x13

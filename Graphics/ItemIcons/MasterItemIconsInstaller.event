@@ -2,6 +2,7 @@
 // most item icons done by lisandra brave, flame sword from lord glenn
 // stone sword, argilabrys, and frost blade from beansy
 //gale bow by zarg
+// slim bow is by zaneeeeeeee avernathy
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 
 PUSH
@@ -41,6 +42,7 @@ ItemIconSlot(0x97,"Png/SlimAxe.png")
 ItemIconSlot(0xBF,"Png/Claymore.png")
 ItemIconSlot(0xBE,"Png/MarksmanBow.png")
 ItemIconSlot(0x63,"Png/BeiyrScroll.png")
+ItemIconSlot(0xDF,"Png/SlimBow.png")
 POP
 
 

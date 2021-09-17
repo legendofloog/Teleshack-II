@@ -86,6 +86,8 @@ SetUnitConGrowth(Varga,15)
 SetUnitConGrowth(Delilah,5)
 SetUnitConGrowth(Alex,10)
 SetUnitConGrowth(Axel,10)
+SetUnitConGrowth(Filone,5)
+SetUnitConGrowth(Zwieback,15)
 
 
 SetUnitMovGrowth(Cleo,0)
@@ -99,3 +101,6 @@ SetUnitMovGrowth(Varga,1)
 SetUnitMovGrowth(Delilah,2)
 SetUnitMovGrowth(Alex,3)
 SetUnitMovGrowth(Axel,3)
+SetUnitMovGrowth(Filone,2)
+SetUnitMovGrowth(Zwieback,1)
+
