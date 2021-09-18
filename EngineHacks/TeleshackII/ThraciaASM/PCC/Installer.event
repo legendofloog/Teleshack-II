@@ -20,6 +20,8 @@ SetUnitPCC(Varga,1)
 SetUnitPCC(Delilah,1)
 SetUnitPCC(Alex,2)
 SetUnitPCC(Axel,2)
+SetUnitPCC(Filone,3)
+SetUnitPCC(Zwieback,1)
 
 
 //Bosses, Generics, and NPCs
