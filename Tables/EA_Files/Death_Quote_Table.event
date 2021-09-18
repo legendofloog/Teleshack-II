@@ -5,6 +5,7 @@
 
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
+DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
 DeathQuote(Cleo,AllChapters,0x65,CleoDeathQuoteText)
 DeathQuote(Mira,AllChapters,0x0,MiraDeathQuoteText)
