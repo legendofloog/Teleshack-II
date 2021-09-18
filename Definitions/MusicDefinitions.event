@@ -12,3 +12,4 @@
 #define FE5_Adversity 0xE
 #define FE5_InTheBattle_Fate 0xF
 #define Dreaming 0x11 //Near Victory music is 0x10
+#define DawnOfYs 0x12

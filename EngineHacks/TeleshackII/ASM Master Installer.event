@@ -88,7 +88,7 @@ ChangeWeaponRankASMC:
 
 #include "ModularMinimugBox-master/Installers/MMBInstallerSagaOfTheSigilbearers.event"
 
-//#include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
+#include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
 
 #include "StanAI/StanAI.event" // let's expand first lol
 								// no I want TalkAI - Loog
@@ -112,7 +112,7 @@ ChangeWeaponRankASMC:
 
 #include "MapChangeToFlag/Installer.event"
 
-//#include "MinimugPalette/Installer.event"
+#include "MinimugPalette/Installer.event"
 
 //#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
 

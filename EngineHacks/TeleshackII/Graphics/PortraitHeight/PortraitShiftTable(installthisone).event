@@ -40,7 +40,7 @@ BYTE 0 0 0 1 1 0 1 1
 //Portrait ID 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
 //Invalid, Placeholder Mug (the ? guy), Eirika, EirikaEyesClosed, Seth, Gilliam, Franz, Moulder
 
-BYTE 1 1 1 1 0 1 1 1
+BYTE 1 1 1 1 0 1 1 0
 //Portrait ID 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F
 //Vanessa, Ross, Neimi, NeimiEyesClosed, Colm, ColmEyesClosed, Garcia, Innes
 
@@ -48,7 +48,7 @@ BYTE 1 1 1 1 0 1 1 1
 
 
 //0x10 through 0x1F
-BYTE 1 1 1 1 0 1 0 1 
+BYTE 0 1 1 1 0 1 0 1 
 //Portrait ID 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17
 //Lute, Natasha, NatashaEyesClosed, Cormag, Ephraim, EphraimEyesClosed, Forde, FordeEyesClosed
 

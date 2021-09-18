@@ -70,6 +70,7 @@
 [LoadFilone] = [LoadFace][0xF][0x1]
 [LoadZwie] = [LoadFace][0x10][0x1]
 [LoadZwieback] = [LoadFace][0x10][0x1]
+[LoadHilmar] = [LoadFace][0x4b][0x1]
 
 [LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
