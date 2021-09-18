@@ -132,6 +132,12 @@
   ALIGN 4
   BiorhythmTextIDLink:
   SHORT SS_BiorhythmText
+  ALIGN 4
+  ActionTextIDLink:
+  SHORT SS_Action
+  ALIGN 4
+  PCCTextIDLink:
+  SHORT SS_PursuitCriticalCoefficient
   
   #ifndef USE_STRMAG_SPLIT
   

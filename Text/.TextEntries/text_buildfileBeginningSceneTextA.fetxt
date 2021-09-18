@@ -52,13 +52,13 @@ Do we have an escape plan?[A]
 
 Not exactly but I think[N]
 
-Varga might know.[A]
+Varga might know.[AN]
 
 [FarLeft][ClearFace][Left][ClearFace]
 
 [FarFarLeft][LoadVarga][MoveMidLeft]
 
-[Right][OneLineBox]
+[Right]
 
 Varga, where-[A]
 

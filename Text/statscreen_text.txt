@@ -1,3 +1,15 @@
+#0x4f6 MovText
+Mov[X]
+
+# 0x4EE LckText
+Lck[X]
+
+# 0x4ec SklText
+Skl[X]
+
+#0x4f7 BldText
+Bld[X]
+
 #0x3B SS_TalkText
 Talk[X]
 
@@ -68,6 +80,12 @@ Bad[X]
 
 ## SS_BiorhythmWorst
 Worst[X]
+
+## SS_Action
+Vigor[X]
+
+## SS_PursuitCriticalCoefficient
+PCC[X]
 
 ## LikesDesc
 A list of things this[N]

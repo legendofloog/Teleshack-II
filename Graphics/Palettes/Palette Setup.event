@@ -4,42 +4,22 @@
 #include "Palette Definitions.txt"
 #include "Palette Installer.event"
 
-// AsgeirDisciple
-	setPalette(1,AsgeirDisciple)
-	setCBSP(1,Asgeir, 1, AsgeirLord)
+// IskraMage
+	setPalette(1,IskraMage)
+	setCBSP(1,Iskra, 1, Mage_F)
 
-// EindrideCavalier
-	setPalette(2,EindrideCavalier)
-	setCBSP(2,Eindride, 1, LanceCav)
+// IskraMageKnight
+	setPalette(2,IskraMageKnight)
+	setCBSP(2,Iskra, 3, MageKnight_F)
 
-// HartnerThief
-	setPalette(3,HartnerThief)
-	setCBSP(3,Hartner, 1, Thief)
+// SvetomirPriest
+	setPalette(3,SvetomirPriest)
+	setCBSP(3,Svetomir, 1, Priest)
 
-// IvarrHunter
-	setPalette(4,IvarrHunter)
-	setCBSP(4,Ivarr, 1, Hunter)
+// SvetomirHighPriest
+	setPalette(4,SvetomirHighPriest)
+	setCBSP(4,Svetomir, 3, HighPriest)
 
-// KleosMonk
-	setPalette(5,KleosMonk)
-	setCBSP(5,Kleos, 1, Priest)
-
-// LysandraBishop
-	setPalette(6,LysandraBishop)
-	setCBSP(6,Lysandra, 3, Bishop_F)
-
-// RagnaLordClass
-	setPalette(7,RagnaLordClass)
-	setCBSP(7,Ragna, 1, RagnaLord)
-
-// SigneSoldier
-	setPalette(8,SigneSoldier)
-	setCBSP(8,Signe, 1, Soldier_F)
-
-// SolveigScaleshot
-	setPalette(9,SolveigScaleshot)
-	setCBSP(9,Solveig, 1, Bow_Dragonrider)
-
-// UlfrFighter
-	setPalette(10,UlfrFighter)
-	setCBSP(10,Ulfr, 1, Fighter)
+// MiraThiefFighter
+	setPalette(5,MiraThiefFighter)
+	setCBSP(5,Mira, 3, ThiefFighter_F)

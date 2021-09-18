@@ -3,33 +3,18 @@
 
 ALIGN 4
 
-AsgeirDisciple:
-	#incbin "./_palettes/AsgeirDisciple.lzpal" 
+IskraMage:
+	#incbin "./_palettes/IskraMage.lzpal" 
 
-EindrideCavalier:
-	#incbin "./_palettes/EindrideCavalier.lzpal" 
+IskraMageKnight:
+	#incbin "./_palettes/IskraMageKnight.lzpal" 
 
-HartnerThief:
-	#incbin "./_palettes/HartnerThief.lzpal" 
+SvetomirPriest:
+	#incbin "./_palettes/SvetomirPriest.lzpal" 
 
-IvarrHunter:
-	#incbin "./_palettes/IvarrHunter.lzpal" 
+SvetomirHighPriest:
+	#incbin "./_palettes/SvetomirHighPriest.lzpal" 
 
-KleosMonk:
-	#incbin "./_palettes/KleosMonk.lzpal" 
-
-LysandraBishop:
-	#incbin "./_palettes/LysandraBishop.lzpal" 
-
-RagnaLordClass:
-	#incbin "./_palettes/RagnaLordClass.lzpal" 
-
-SigneSoldier:
-	#incbin "./_palettes/SigneSoldier.lzpal" 
-
-SolveigScaleshot:
-	#incbin "./_palettes/SolveigScaleshot.lzpal" 
-
-UlfrFighter:
-	#incbin "./_palettes/UlfrFighter.lzpal" 
+MiraThiefFighter:
+	#incbin "./_palettes/MiraThiefFighter.lzpal" 
 

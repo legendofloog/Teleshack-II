@@ -1151,7 +1151,7 @@ blt	DrawMaxHP
 mov r0,#0
 sub r0,#1
 DrawMaxHP:
-ldr	r4,=#0x20230F6 @(???)
+ldr	r4,=0x20230F6 @(???)
 mov	r2,r0
 mov	r0,r4
 mov	r1,#2

@@ -34,6 +34,7 @@ draw_textID_at 13, 9, textID=0x4ED, growth_func=5 @spd
 draw_textID_at 13, 11, textID=0x4ee, growth_func=6 @luck
 draw_textID_at 13, 13, textID=0x4ef, growth_func=7 @def
 draw_textID_at 13, 15, textID=0x4f0, growth_func=8 @res
+draw_textID_at 13, 17, textID=0x4f6, growth_func=10 @mov
 
 b 	NoRescue
 .ltorg 
@@ -83,17 +84,17 @@ draw_growth_at 18, 13
 ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#28]		@res growth getter
 draw_growth_at 18, 15
-ldr		r0,[sp,#0xC]
-ldr		r0,[r0]			@hp growth getter (not displaying because there's no room atm)
+ldr             r0,[sp,#0xC]
+ldr             r0,[r0,#36]             @mov growth getter 
 draw_growth_at 18, 17
-draw_textID_at 13, 17, textID=0x4E9, growth_func=1 @hp name
 ldr             r0,[sp,#0xC]
 ldr             r0,[r0,#32]             @con growth getter
 draw_growth_at 26, 3
-ldr             r0,[sp,#0xC]
-ldr             r0,[r0,#36]             @mov growth getter
+ldr		r0,[sp,#0xC]
+ldr		r0,[r0]			@hp growth getter (not displaying because there's no room atm)
 draw_growth_at 26, 5
-draw_textID_at 21,5, textID=0x4f6, growth_func=10 @mov name
+draw_textID_at 21, 5, textID=0x4E9, growth_func=1 @hp name 
+
 b		NextColumn
 .ltorg
 
@@ -102,10 +103,11 @@ b		ShowStats3
 
 NextColumn:
 draw_textID_at 21, 3, textID=0x4f7 @con
+ldr r0,=TalkTextIDLink
+ldrh r0,[r0]
+draw_talk_text_at 21, 7 @ moving this to 21, 7
 
-draw_status_text_at 21, 7
-
-draw_textID_at 21, 9, textID=0x042
+draw_textID_at 21, 9, textID=0x042 @moving all this to 21, 9
 mov		r0, r8
 ldr		r3, =GetLeadershipStarCount
 sub		r3, #1 @get rid of unnecessary thumb bit
@@ -119,14 +121,47 @@ beq		DontDrawIcon
 draw_icon_at 26, 9, 0xCA @change this to the ID you put the icon in
 DontDrawIcon:
 
-
-ldr r0,=TalkTextIDLink
-ldrh r0,[r0]
-draw_talk_text_at 21, 11
-
-ldr r0,=SkillsTextIDLink
+ldr r0,=ActionTextIDLink
 ldrh r0, [r0]
-draw_textID_at 21, 13, colour=White @skills
+draw_textID_at 21, 11
+mov		r0, r8
+ldr r3, =GetUnitMoveStars
+sub		r3, #1 @get rid of unnecessary thumb bit
+mov		lr, r3
+.short 0xF800
+push	{r0}
+cmp r0, #0x0
+bne		DontSetToFF
+
+	mov r0, #0xFF
+
+DontSetToFF:
+draw_number_at 25, 11
+pop 	{r0}
+cmp		r0,#0x0
+beq		DontDrawIcon2
+draw_icon_at 26, 11, 0xCA @change this to the ID you put the icon in
+DontDrawIcon2:
+
+ldr r0, =PCCTextIDLink
+ldrh r0, [r0]
+draw_textID_at 20, 13, colour=Yellow @ PCC
+mov		r0, r8
+ldr r3, =GetUnitPCC
+sub		r3, #1 @get rid of unnecessary thumb bit
+mov		lr, r3
+.short 0xF800
+draw_number_at 23, 13
+
+ldr r0, =FatigueSSTextID 
+ldrh r0, [r0]
+draw_textID_at 25, 13 @ ftg
+
+ldr r0, =MSSFatigueGetter
+mov r14,r0
+.short 0xF800 
+draw_number_at 28, 13
+
 
 Nexty:
 
@@ -141,18 +176,11 @@ draw_spd_bar_at 16, 9
 draw_luck_bar_at 16, 11
 draw_def_bar_at 16, 13
 draw_res_bar_at 16, 15
-draw_textID_at 13, 17, 0x4f6 @move
 draw_move_bar_with_getter_at 16, 17
 draw_con_bar_with_getter_at 24, 3
+draw_status_text_at 21, 5 @ moving this to 21, 7
 
-ldr r0, =FatigueSSTextID
-ldrh r0, [r0]
-draw_textID_at 21, 5 @aid
 
-ldr r0, =MSSFatigueGetter
-mov r14,r0
-.short 0xF800 
-draw_number_at 25, 5
 
 b		NextColumn
 .ltorg
