@@ -199,10 +199,10 @@ BeginningScene:
 	ENDA
 
 Turn3Spawn:
-SpawnReinforcements(Turn3Reinforcements)
+ReinforcementEvent(Turn3Reinforcements)
 
 Turn5Spawn:
-SpawnReinforcements(Turn5Reinforcements)
+ReinforcementEvent(Turn5Reinforcements)
 
 BoroSpawn:
 LOAD1 1 BoroUnitGroup2
