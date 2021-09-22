@@ -23,10 +23,8 @@ SongTable(Sortie_Formation,L_Sortie_Formation,MapMusicGroup)
 SongTable(WithUs_Song,WithUs, MapMusicGroup)
 #include "MusicEvents/TRSBerwickSagaPersonalCombat(RSflame).event"
 SongTable(PersonalCombat,song03A2,BattleMusicGroup)
-//#include "MusicEvents/TRSBerwickSagaPersonalCombat(RSflame).event"
-//SongTable(PersonalCombat,song03A2,BattleMusicGroup)
 #include "MusicEvents/Attack Theme.event"
-SongTable(PersonalCombat,song09,BattleMusicGroup) //hi i commented the top one out because its the same song but if you dont like this version just delete this and uncomment it
+SongTable(PersonalCombat,song09,BattleMusicGroup)
 #include "MusicEvents/Tales_Of_Symphonia_Rover(Pandan).event"
 SongTable(Rovers,TalesOfSymphonia_Rover,MapMusicGroup)
 #include "MusicEvents/Valkyrie Profile - The Unfinished Battle with God Syndrome (SaXor_the_Nobody).event"
@@ -43,6 +41,3 @@ SongTable(FE5_InTheBattle_Fate, song24, MapMusicGroup)
 SongTable(Dreaming,songDB,MapMusicGroup)
 #include "MusicEvents/DawnOfYs.event"
 SongTable(DawnOfYs,songD9,MapMusicGroup)
-//=======
-//Example song
-

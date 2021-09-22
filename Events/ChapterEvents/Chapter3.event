@@ -212,6 +212,7 @@ Text(DraganaDeathResponseText)
 ENDA
 
 BeginningScene:
+COUNTER_SET 0 0
 SetBackground(CastleHallway)
 Text(BeginningSceneTextA)
 Text(BeginningSceneTextB)

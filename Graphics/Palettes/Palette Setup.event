@@ -23,3 +23,91 @@
 // MiraThiefFighter
 	setPalette(5,MiraThiefFighter)
 	setCBSP(5,Mira, 3, ThiefFighter_F)
+
+// LoeweScaleshotUnmounted
+	setPalette(6,LoeweScaleshotUnmounted)
+	setCBSP(6,Loewe, 1, Scaleshot_Dismounted)
+
+// LoeweScaleshotMounted
+	setPalette(7,LoeweScaleshotMounted)
+	setCBSP(7,Loewe, 2, Scaleshot)
+
+// LoeweDragonlordUnmounted
+	setPalette(8,LoeweDragonlordUnmounted)
+	setCBSP(8,Loewe, 3, Dragonlord_Dismounted)
+
+// LoeweDragonlordMounted
+	setPalette(9,LoeweDragonlordMounted)
+	setCBSP(9,Loewe, 4, Dragonlord)
+
+// CleoSkyseekerUnmounted
+	setPalette(10,CleoSkyseekerUnmounted)
+	setCBSP(10,Cleo, 1, Skyseeker_Dismounted)
+
+// CleoSkyseekerMounted
+	setPalette(11,CleoSkyseekerMounted)
+	setCBSP(11,Cleo, 2, Skyseeker)
+
+// CleoSeraphknightUnmounted
+	setPalette(12,CleoSeraphknightUnmounted)
+	setCBSP(12,Cleo, 3, Seraphknight_Dismounted)
+
+// CleoSeraphknightMounted
+	setPalette(13,CleoSeraphknightMounted)
+	setCBSP(13,Cleo, 4, Seraphknight)
+
+// AlenaMyrmidon
+	setPalette(14,AlenaMyrmidon)
+	setCBSP(14,Alena, 1, Myrmidon_F)
+
+// AlenaSwordmaster
+	setPalette(15,AlenaSwordmaster)
+	setCBSP(15,Alena, 3, Swordmaster_F)
+
+// BoroChampion
+	setPalette(16,BoroChampion)
+	setCBSP(16,Boro_Ch1, 3, Champion)
+
+// DraganaSniper
+	setPalette(17,DraganaSniper)
+	setCBSP(17,Dragana, 3, Sniper_F)
+
+// RaschwitzBowArmor
+	setPalette(18,RaschwitzBowArmor)
+	setCBSP(18,Raschwitz_Ch1, 4, BowArmor)
+
+// VargaSwordArmor
+	setPalette(19,VargaSwordArmor)
+	setCBSP(19,Varga, 1, SwordArmor)
+
+// VargaGeneral
+	setPalette(20,VargaGeneral)
+	setCBSP(20,Varga, 3, General)
+
+// DelilahSister
+	setPalette(21,DelilahSister)
+	setCBSP(21,Delilah, 1, Sister)
+
+// DelilahSage
+	setPalette(22,DelilahSage)
+	setCBSP(22,Delilah, 3, Sage_F)
+
+// TyrAxeArmor
+	setPalette(23,TyrAxeArmor)
+	setCBSP(23,Tyr_Ch2, 1, AxeArmor)
+
+// EmilLanceKnightMounted
+	setPalette(24,EmilLanceKnightMounted)
+	setCBSP(24,Emil, 1, LanceKnight)
+
+// EmilLanceKnightUnmounted
+	setPalette(25,EmilLanceKnightUnmounted)
+	setCBSP(25,Emil, 2, LanceKnight_Dismounted)
+
+// EmilDukeKnightMounted
+	setPalette(26,EmilDukeKnightMounted)
+	setCBSP(26,Emil, 3, DukeKnight)
+
+// EmilDukeKnightUnmounted
+	setPalette(27,EmilDukeKnightUnmounted)
+	setCBSP(27,Emil, 4, DukeKnight_Dismounted)

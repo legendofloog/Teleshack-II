@@ -331,3 +331,7 @@
 #include "Animations/BattleSage_F(St_jack)/Magic Installer.event"
 #include "Animations/BattleSage_F(St_jack)/Sword Installer.event"
 }
+
+{
+#include "Animations/Ballistician(Spud,Ren_Ookami,Pushwall)/Bow Installer.event"
+}
