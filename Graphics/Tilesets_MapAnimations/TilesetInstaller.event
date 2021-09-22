@@ -22,7 +22,7 @@
 
     ALIGN 4
     FlasubanVillageMapchipConfig:
-    #incbin "Config/newfe8village_comp.dmp"
+    #incbin "Config/FixedBridge_comp.dmp"
 
 //Thracia Fields, Not Inserted	
 //    ThraciaFieldsObject:

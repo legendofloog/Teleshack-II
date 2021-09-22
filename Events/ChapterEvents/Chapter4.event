@@ -86,9 +86,9 @@ UNIT Chapter1Generics PegasusRider   0x0 Level(3,Enemy,True) [0,0] 0x0 0x0 0x0 0
 UNIT Chapter1Generics LanceKnight   0x0 Level(3,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [IronLance] StallOneTurnAI
 UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [4,0] 0 0 1 REDA4R1 [IronSword] ChargeAI
 UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [10,6] 0 0 1 REDA10R15 [HandAxe] AttackInRangeAI
-UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [9,0] 0 0 1 REDA9R1 [LongArch] BossAI
-UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,13] 0 0 1 REDA0R12 [LongArch,RedGem] BossAI
-UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [14,16] 0 0 1 REDA13R15 [LongArch] BossAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [9,0] 0 0 1 REDA9R1 [SlimArch] BossAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,13] 0 0 1 REDA0R12 [SlimArch,RedGem] BossAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [14,16] 0 0 1 REDA13R15 [SlimArch] BossAI
 UNIT Chapter1Generics AxeSoldier   0x0 Level(3,Enemy,True) [0,7] 0 0 1 REDA2R7 [IronAxe] AttackInRangeAI
 	UNIT
 	

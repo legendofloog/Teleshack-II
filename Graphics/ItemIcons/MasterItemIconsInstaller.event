@@ -43,6 +43,7 @@ ItemIconSlot(0xBF,"Png/Claymore.png")
 ItemIconSlot(0xBE,"Png/MarksmanBow.png")
 ItemIconSlot(0x63,"Png/BeiyrScroll.png")
 ItemIconSlot(0xDF,"Png/SlimBow.png")
+ItemIconSlot(0xCB,"Png/SlimArch.png")
 POP
 
 
