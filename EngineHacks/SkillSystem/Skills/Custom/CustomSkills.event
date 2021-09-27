@@ -54,7 +54,7 @@ WORD PiercingBoltID
 #include "DullahanEvent.event"
 
 ALIGN 4
-Dullahan:
+DullahanSkl:
 #incbin "Dullahan.dmp"
 POIN SkillTester
 WORD DullahanID

@@ -85,6 +85,11 @@ Proc_CounterMagic:
 POIN SkillTester
 WORD CounterMagicID
 
+Proc_Conversion:
+#incbin "Conversion/proc_conversion.dmp"
+POIN SkillTester
+WORD ConversionID
+
 Proc_Miracle:
 #incbin "Miracle/proc_miracle.dmp"
 POIN SkillTester

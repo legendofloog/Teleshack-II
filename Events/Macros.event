@@ -9,6 +9,10 @@
 #define LoadUnit(x,y) "UNIT 0xF 0x1D 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" //for units in player placement with prep menu
 #define LoadUnit(unitid,x,y) "UNIT unitid Cavalier 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI"
 #define Unit(x,y) "LoadUnit(x,y)"
+#define SetFlag(id) "ENUT id;"
+#define UnsetFlag(id) "ENUF id;"
+#define FlagIsSet(id, label) "CHECK_EVENTID (id); BEQ (label) 0xc 0x0;"
+#define FlagNotSet(id, label) "CHECK_EVENTID (id); BNE (label) 0xc 0x0;"
 #define Unit(unitid,x,y) "LoadUnit(unitid,x,y)"
 #define LoadUnitReda(unitid,x,y,reda) "UNIT unitid Cavalier 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 1 reda [0x00] NoAI" //for units in player placement with prep menu
 #define UnitReda(unitid,x,y,reda) "LoadUnitReda(unitid,x,y,reda)"
@@ -40,25 +44,45 @@
 #define Music(song) "MUSC song"
 #define PlayHisWorld "MUSC HisWorld" //Need to add His World/define it first lol
 #define FadeOutMusic "MUSCMID 0x7FFF"
-#define BossAI [0,3,4,32]
-#define CommanderAI [0xD,3,4,0]
-#define TwoActionAI [0,6,4,0]
-#define StillAI [0,3,4,32]
-#define ChargeAI [0,0,4,0]
-#define ThiefAI [6,5,4,0]
-#define StallOneTurnAI [0x0,0x12,0x4,0x0]
-#define EscapeAI [0x0,0xC,0x4,0x0]
-#define EscapeOnlyAI [0x6,0xC,0x4,0x00]
-#define HealAI [0xE,0x3,0x4,0x0]
-#define NoMoveAI [0x3,0x3,0x4,0x0]
-#define DoNothingAI [0x6,0x3,0x4,0x0]
-#define WallAI [0x0,0xE,0x4,0x0]
-#define DefendAI [0x7,0x1,0x0,0x0]
-#define HalfMoveAI [0xC,0x0,0x0,0x0]
-#define AttackThenLootAI [0x00, 0x04, 0x04, 0x00]
 #define HouseExp(flag,background,text) "Text(background,text); CHECK_EVENTID flag; BNE 0x776 0xC 0x0; GiveExperience(0xFFFF,10); ENUT flag;LABEL 0x776; EVBIT_T 0x7" //Needs Add EXP ASM
 #define QuickRemu(unitID,labelID) "CHECK_EXISTS unitID; BEQ labelID 0xC 0x0; CHECK_ALIVE unitID; BEQ labelID 0xC 0x0; REMU unitID; LABEL labelID"
 #define QuickCheckFlag(flagID,labelID) "CHECK_EVENTID flagID; BEQ labelID 0xC 0x0; LABEL labelID"
 #define RemoveAll "REMOVEALL_BLUE; REMOVEALL_GREEN; REMOVEALL_RED"
 #define DoAllThree "CLEA 0; CLEN 0; CLEE 0"
 
+#define IBeq(i, label) "SVAL 2 i; BEQ label 0xC 2;"
+#define IBne(i, label) "SVAL 2 i; BNE label 0xC 2;"
+#define IBgt(i, label) "SVAL 2 i; BGT label 0xC 2;"
+#define IBge(i, label) "SVAL 2 i; BGE label 0xC 2;"
+#define IBlt(i, label) "SVAL 2 i; BLT label 0xC 2;"
+#define IBle(i, label) "SVAL 2 i; BLE label 0xC 2;"
+#define BFalse(label) "BEQ label 0xC 0x0;"
+#define BTrue(label) "BNE label 0xC 0x0;"
+
+#define DefaultAI           [0x0,0x0,0x4,0x0]
+#define DefaultHealAI       [0x0,0x0,0x0,0x0]
+#define BossAI              [0x3,0x3,0x4,0x20]
+#define BossHealAI          [0x3,0x3,0x0,0x20]
+#define NoMoveAI            [0x3,0x3,0x4,0x0]
+#define NoMoveHealAI        [0x3,0x3,0x4,0x0]
+#define StallHealAI(turns)  [0x0,0x11+turns,0x0,0x0]
+#define RangeAI             [0x0,0x3,0x4,0x0]
+#define RangeHealAI         [0x0,0x3,0x0,0x0]
+#define JustMoveAI          [0x6,0x0,0x4,0x0]
+#define DoNothingAI         [0x6,0x3,0x4,0x0]
+#define BossNoAttackAI      [0x6,0x3,0x4,0x20]
+#define HealAI        		[0xE,0x3,0x4,0x0]
+#define ThiefAI        		[0x6,0x5,0x4,0x0]
+#define BrigandAI           [0x0,0x4,0x4,0x0]
+#define WallAI				[0x0,0xB,0x4,0x0]
+#define EscapeAI		    [0x0,0xC,0x4,0x0]
+#define EscapeOnlyAI		[0x6,0xC,0x4,0x40]
+
+#define CommanderAI [0xD,3,4,0]
+#define TwoActionAI [0,6,4,0]
+#define StillAI [0,3,4,32]
+#define ChargeAI [0,0,4,0]
+#define StallOneTurnAI [0x0,0x12,0x4,0x0]
+#define DefendAI [0x7,0x1,0x0,0x0]
+#define HalfMoveAI [0xC,0x0,0x0,0x0]
+#define AttackThenLootAI [0x00, 0x04, 0x04, 0x00]

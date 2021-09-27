@@ -26,10 +26,16 @@ Likes:[X]
 #0xd4e HeightText
 Height:[X]
 
-#include "CharClassItemsEtc/ItemNamesDescs.txt"
-
 #0xd4f AgeText
 Age:[X]
+
+# 0x051E
+Empower[.][X]
+
+#include "CharClassItemsEtc/ItemNamesDescs.txt"
+
+#0x1000 Dummy1kText
+[X]
 
 ## HouseText
 #first text ID in the free block

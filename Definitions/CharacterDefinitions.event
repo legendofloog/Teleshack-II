@@ -10,8 +10,8 @@
 #define Axel 0x0A
 #define Filone 0x0B
 #define Zwieback 0x0C
-#define Natasha 0x0D
-#define Cormag 0x0E
+#define Leina 0x0D
+#define Cromar 0x0E
 #define Loewe 0x0F
 #define Forde 0x10
 #define Kyle 0x11
@@ -64,6 +64,14 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
+#define Vladith 0x74
+#define Barod 0x75
+#define McCallum 0x76
+#define Gladiator 0x77
+#define Zeus 0x78
+
+
+
 
 #define Selena_Ch10B_and_13B 0x44
 #define Valter_Prologue 0x45

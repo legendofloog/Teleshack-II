@@ -326,3 +326,4 @@ SkillDescription(HeadshotID,SD_Headshot)
 
 SkillDescription(WeakWilledID,SD_WeakWilled)
 SkillDescription(ShowStopperID,SD_ShowStopper)
+SkillDescription(ConversionID,SD_Conversion)

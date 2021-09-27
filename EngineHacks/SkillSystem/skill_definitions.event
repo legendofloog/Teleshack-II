@@ -36,4 +36,7 @@
 #define HeadshotID 24
 #define CullingID 25
 #define TemperedRingID 26 //For the item
-
+#define BargainID 27
+#define CounterID 28
+#define ConversionID 29
+#define WatchfulID 30

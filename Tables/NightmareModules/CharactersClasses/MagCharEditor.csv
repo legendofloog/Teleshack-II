@@ -10,10 +10,10 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x08 Delilah,3,30
 0x09 Alex,0,10
 0x0A Axel,0,10
-0x0B Filone,1,10
-0x0C Zwieback,0,2
-Natasha,5,65
-Cormag,1,10
+0x0B Filone,1,20
+0x0C Zwieback,0,5
+0x0D Leina,-2,5
+0x0E Cromar,-1,0
 Loewe,1,10
 Forde,0,15
 Kyle,1,10
@@ -114,10 +114,10 @@ Lyon (Ch Final),5,15
 0x71 Dragana,0,0
 0x72 Hernandez,0,0
 0x73 - Selese,0,0
-0,0,0
-0,0,0
-0,0,0
-0,0,0
+0x74 Vladith,0,0
+0x75 Barod,0,0
+0x76 McCallum,0,0
+0x77 Gladiator,0,0
 0,0,0
 0,0,0
 0,0,0
