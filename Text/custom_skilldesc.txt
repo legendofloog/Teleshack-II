@@ -42,3 +42,15 @@ pierces 50% of the enemy's Res.[X]
 ## SD_Conversion
 Conversion: Swap HP with higher health[N]
 foes before doing damage.[X]
+
+## SD_TerrainEffective
+Terrain Effective: +12 damage, +20 hit[N]
+against enemies on defensive terrain.[X]
+
+## SD_NonCombatant
+Noncombatant: Not part of the conflict,[N]
+immune to damage and getting hit.[X]
+
+## SD_GladiatorsAura
+Gladiator's Aura: All characters[N]
+within 5 tiles have +15 avoid.[X]

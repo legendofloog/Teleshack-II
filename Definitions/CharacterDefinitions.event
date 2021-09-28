@@ -69,6 +69,9 @@
 #define McCallum 0x76
 #define Gladiator 0x77
 #define Zeus 0x78
+#define Ch5Civilian 0x79
+#define Civilian1 0x7A
+#define Civilian2 0x7B
 
 
 

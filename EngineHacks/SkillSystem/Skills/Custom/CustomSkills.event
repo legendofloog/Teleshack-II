@@ -67,3 +67,21 @@ Proc_DullahanCost:
 POIN SkillTester
 WORD DullahanID
 
+ALIGN 4
+TerrainEffective:
+#incbin "TerrainEffective.dmp"
+POIN SkillTester
+WORD TerrainEffectiveID
+
+ALIGN 4
+NonCombatant:
+#incbin "NonCombatant.dmp"
+POIN SkillTester
+WORD NonCombatantID
+
+
+ALIGN 4
+GladiatorsAura:
+#incbin "GladiatorsAura.dmp"
+POIN AuraSkillCheck
+WORD GladiatorsAuraID

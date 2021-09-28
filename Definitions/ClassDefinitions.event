@@ -88,6 +88,7 @@
 #define ThiefFighter_F 0x4C
 #define Dancer 0x4D
 #define LanceSoldier 0x4E
+#define Soldier 0x4E
 #define AxeSoldier 0x4F
 #define Fleet 0x50
 #define GhostFighter 0x51

@@ -40,3 +40,6 @@
 #define CounterID 28
 #define ConversionID 29
 #define WatchfulID 30
+#define TerrainEffectiveID 31
+#define NonCombatantID 32
+#define GladiatorsAuraID 33
