@@ -12,8 +12,23 @@ ldrb	r0, [r4,#0x13]
 cmp	r0, #0x00
 beq	End
 
+@check if current chracter
+ldrb  r0, [r6,#0x11]  @action taken this turn
+cmp r0, #0x1E @check if found enemy in the fog
+beq End
+ldrb  r0, [r6,#0x0C]  @allegiance byte of the current character taking action
+ldrb  r1, [r4,#0x0B]  @allegiance byte of the character we are checking
+cmp r0, r1    @check if same character
+bne End
+
+@check if enemy or not
+ldrb r0, [r4,#0x0B]
+lsr r0,r0,#6
+cmp r0,#0 @only Canto+ if player unit
+bne End
+
 @check if moved all the squares
-ldr	r0,=#0x8019224	@mov getter
+ldr	r0,=0x8019224	@mov getter
 mov	lr, r0
 mov	r0, r4		@attacker
 .short	0xF800
@@ -21,32 +36,34 @@ ldrb 	r1, [r6,#0x10]	@squares moved this turn
 cmp	r0, r1
 beq	End
 
-@check if flag 0x3 set; if so, cannot canto
-ldr r0,=#0x8083da8 @CheckEventId
-mov r14,r0
-mov r0,#3
-.short 0xF800
-cmp r0,#1
-beq End
-
-ldr	r1,=#0x8018BD8	@check if can move again
+ldr	r1,=0x8018BD8	@check if can move again
 mov	lr, r1
 .short	0xF800
 lsl	r0, #0x18
 cmp	r0, #0x00
 beq	End
 
+@check if already Cantoing
+ldr	r0, [r4,#0x0C]	@status bitfield
+mov	r1, #0x40	@has moved already
+and	r0, r1
+cmp	r0, #0x00
+bne	End
 
-@check if attacked this turn
-@ldrb  r0, [r6,#0x11]  @action taken this turn
-@cmp r0, #0x04 @check if staff or attack was used
-@blo End
-cmp r0, #0x1E @check if found enemy in the fog
+@check if flag 0x3 set; if so, cannot canto
+ldr r0,=0x8083da8 @CheckEventId
+mov r14,r0
+mov r0,#3
+.short 0xF800
+cmp r0,#1
 beq End
-ldrb  r0, [r6,#0x0C]  @allegiance byte of the current character taking action
-ldrb  r1, [r4,#0x0B]  @allegiance byte of the character we are checking
-cmp r0, r1    @check if same character
-bne End
+
+ldr	r1,=0x8018BD8	@check if can move again
+mov	lr, r1
+.short	0xF800
+lsl	r0, #0x18
+cmp	r0, #0x00
+beq	End
 
 @check if already cantoing
 ldr	r0, [r4,#0x0C]	@status bitfield
