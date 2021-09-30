@@ -4,6 +4,18 @@
 //gale bow by zarg
 // slim bow is by zaneeeeeeee avernathy
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
+/*
+ALIGN 4
+ItemIconSheet:
+#incbin "LongBoiIconSheet.dmp"
+
+PUSH
+ORG $36B4
+POIN ItemIconSheet
+ORG $3788
+POIN ItemIconSheet
+POP
+*/
 
 PUSH
 ItemIconSlot(0x7,"Png/FlameSword.png")
@@ -45,5 +57,4 @@ ItemIconSlot(0x63,"Png/BeiyrScroll.png")
 ItemIconSlot(0xDF,"Png/SlimBow.png")
 ItemIconSlot(0xCB,"Png/SlimArch.png")
 POP
-
 

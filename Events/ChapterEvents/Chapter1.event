@@ -16,9 +16,9 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
-TurnEventPlayer(12, AlenaSpawn, 3)
-TurnEventPlayer(13, BoroSpawn, 8)
-TurnEventPlayer(20,RaschwitzWarning,5)
+TurnEventPlayer(0, AlenaSpawn, 3)
+TurnEventPlayer(0, BoroSpawn, 8)
+TurnEventPlayer(0,RaschwitzWarning,5)
 END_MAIN
 
 
@@ -44,9 +44,9 @@ END_MAIN
 
 MiscBasedEvents:
 AREA 0 CivilianEscape [14, 0] [15, 0]
-AFEV 15 LoeweSvetomirFreed 9
-AFEV 16 SennyFreed 10
-AFEV 17 HelmanFreed 11
+AFEV 0 LoeweSvetomirFreed 9
+AFEV 0 SennyFreed 10
+AFEV 0 HelmanFreed 11
 CauseGameOverIfLordDies
 END_MAIN
 
