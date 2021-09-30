@@ -84,3 +84,15 @@ EmilDukeKnightMounted:
 EmilDukeKnightUnmounted:
 	#incbin "./_palettes/EmilDukeKnightUnmounted.lzpal" 
 
+ZwieBowArmor:
+	#incbin "./_palettes/ZwieBowArmor.lzpal" 
+
+FiloneArcher:
+	#incbin "./_palettes/FiloneArcher.lzpal" 
+
+ZwieGeneral:
+	#incbin "./_palettes/ZwieGeneral.lzpal" 
+
+FiloneSniper:
+	#incbin "./_palettes/FiloneSniper.lzpal" 
+
