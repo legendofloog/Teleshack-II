@@ -16,9 +16,11 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
-TurnEventPlayer(12, AlenaSpawn, 3)
-TurnEventPlayer(13, BoroSpawn, 8)
-TurnEventPlayer(20,RaschwitzWarning,5)
+TurnEventPlayer(0, AlenaSpawn, 2)
+TurnEventPlayer(0, AlenaCharge, 3)
+TurnEventPlayer(0, BoroSpawn, 8)
+TurnEventPlayer(0,RaschwitzWarning,4)
+TurnEventPlayer(0,LastBoroWarning,7)
 END_MAIN
 
 
@@ -44,9 +46,9 @@ END_MAIN
 
 MiscBasedEvents:
 AREA 0 CivilianEscape [14, 0] [15, 0]
-AFEV 15 LoeweSvetomirFreed 9
-AFEV 16 SennyFreed 10
-AFEV 17 HelmanFreed 11
+AFEV 12 LoeweSvetomirFreed 9
+AFEV 13 SennyFreed 10
+AFEV 15 HelmanFreed 11
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -111,10 +113,10 @@ UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x
 UNIT
 
 
-Turn3Reinforcements:
-UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] [0x06,Ch1_AlenaAI2,0x4,0x0]
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+Turn2Reinforcements:
+UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] StallOneTurnAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] StallOneTurnAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] StallOneTurnAI
 UNIT
 
 
@@ -275,10 +277,18 @@ ENDA
 
 
 AlenaSpawn:
-LOAD1 1 Turn3Reinforcements
+LOAD1 1 Turn2Reinforcements
 ENUN
 CAMERA Alena
 Text(AlenaSpawnText)
+NoFade
+ENDA
+
+AlenaCharge:
+CAMERA Alena
+Text(AlenaChargeText)
+SVAL s1 0x00040A06
+CHAI Alena
 NoFade
 ENDA
 
@@ -297,6 +307,14 @@ FlashCursor(Raschwitz_Ch1,60)
 Text(RaschwitzWarningBoroText)
 NoFade
 ENDA
+
+LastBoroWarning:
+CAMERA Cleo
+FlashCursor(Cleo,60)
+Text(LastBoroWarningText)
+NoFade
+ENDA
+
 
 LoeweIskraTalkCh1:
 MUSC Rovers

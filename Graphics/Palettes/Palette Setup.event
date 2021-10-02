@@ -111,3 +111,19 @@
 // EmilDukeKnightUnmounted
 	setPalette(27,EmilDukeKnightUnmounted)
 	setCBSP(27,Emil, 4, DukeKnight_Dismounted)
+
+// ZwieBowArmor
+	setPalette(28,ZwieBowArmor)
+	setCBSP(28,Zwieback, 1, BowArmor)
+
+// FiloneArcher
+	setPalette(28,FiloneArcher)
+	setCBSP(28,Filone, 1, Archer)
+
+// ZwieGeneral
+	setPalette(29,ZwieGeneral)
+	setCBSP(29,Zwieback, 3, General)
+
+// FiloneSniper
+	setPalette(30,FiloneSniper)
+	setCBSP(30,Filone, 3, Sniper)

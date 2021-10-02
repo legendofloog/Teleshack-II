@@ -1,24 +1,8 @@
-//modify CHAI (change AI) to be able to change 3 and 4, not just 1 and 2
-//by Tequila
-
-//Vanilla syntax is "SETVAL 1 0x2211; CHAI <whatever>". This hack allows you to use SETVAL 1 0x44332211, where the digit corresponds to the appropriate AI byte.
-
-#ifndef _FE8_
-	ERROR Wrong ROM. Use FE8 instead.
-#endif
-
-#include "Extensions/Hack Installation.txt"
-
-#ifndef FreeSpace
-	#define FreeSpace 0xB2B000
-	ORG FreeSpace
-#endif
-
 PUSH
+//modify CHAI to be able to change 3 and 4, not just 1 and 2; gamma fix to CHAI
 
-ORG $10644
-jumpToHack(New_CHAI)
-
+    ORG $10644
+    replaceWithHack(New_CHAI)
 POP
 
 ALIGN 4
