@@ -87,7 +87,7 @@ Slim Arch[X]
 Dullahan[X]
 
 ## DullahanDesc
-Revives user upon defeat.[X]
+[LockIcon][_C][_r][_o][_m][_a][_r][_.][_SP][_R][_e][_v][_i][_v][_e][_s][_SP][_u][_s][_e][_r][_SP][_u][_p][_o][_n][_SP][_d][_e][_f][_e][_a][_t][_.][X]
 
 ## CounterBowName
 Counter Bow[X]
@@ -118,3 +118,26 @@ Brenthunder[X]
 
 ## BrenthunderDesc
 Brave Effect.[X]
+
+## SpellMirrorName
+Spell Mirror[X]
+
+## SpellMirrorDesc
+[_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+## AlairsGaleName
+Alair's Gale[X]
+
+## AlairsGaleDesc
+[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+
+## MarchRingName
+March Ring[X]
+
+## MarchRingDesc
+[_+][_1][_SP][_M][_o][_v][_e][_,][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
+
+## CivilianProofName
+[_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
+
+## CivilianProofDesc
+[_C][_a][_n][_n][_o][_t][_SP][_e][_n][_t][_e][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]

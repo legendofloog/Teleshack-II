@@ -6,30 +6,28 @@ push       {r4-r6,lr}
 mov        r4,r0 @ Attack struct
 mov        r5,r1 @ Defense struct
 
-@first we see if we have the better version of the skill
-ldr        r6,SkillTester
-mov        r0,r4
-ldr        r1,TerrainEffectiveID
-mov        r14,r6
-.short    0xF800
-cmp        r0,#0
-beq        End
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4
+ldr r1, TerrainEffectiveID
+.short 0xf800
+cmp r0, #0
+beq SkillEnd
 
 mov r1, #0x56
 ldrb r0, [r5,r1] @terrain def
 cmp r0, #0
 beq End
 
-
-mov     r0,#0x53
-ldsb    r1,[r4,r0]
+mov     r0,#0x60
+ldrh    r1,[r4,r0]
 add     r1,#20
-strb    r1,[r4,r0]
+strh    r1,[r4,r0]
 
-mov     r0,#0x54
-ldsb    r1,[r4,r0]
+mov     r0,#0x5A
+ldrh    r1,[r4,r0]
 add     r1,#12
-strb    r1,[r4,r0]
+strh    r1,[r4,r0]
 
 
 End:

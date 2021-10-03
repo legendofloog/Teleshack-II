@@ -28,7 +28,7 @@ END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-	CharacterEvent(0x7, HelmanTalkCh5, 0x0, Helman)
+	CharacterEvent(0x7, HernandezTalkCh5, 0x0, Hernandez)
 	CharacterEvent(0x0, VladithTalkCh5, 0x0, Vladith)
 	CharacterEvent(0x8, Civ1TalkCh5, 0x0, Civilian1)
 	CharacterEvent(0x8, Civ2TalkCh5, 0x0, Civilian2)
@@ -110,7 +110,7 @@ UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] Boss
 UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,3] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,4] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT Ch5Civilian Civilian_F_2 Barod Level(1,Enemy,False) [0,5] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,6] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,6] 0x0 0x0 0x0 0x1 [Vulnerary] BossNoAttackAI
 UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,7] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT Civilian1 0x0 Barod Level(1,Enemy,False) [0,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT Civilian2 Civilian_F_2 Barod Level(1,Enemy,False) [0,9] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
@@ -128,12 +128,12 @@ UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,10] 0x0 0x0 0x0 0x1 [0x0] Bo
 UNIT
 
 ALIGN 4
-HelmanUnit:
-UNIT Helman 0x0 Barod Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+HernandezUnit:
+UNIT Hernandez Brigand Barod Level(10,Enemy,True) [14,8] 0x0 0x0 0x0 0x1 [KillerAxe MarchRing CivilianProof] BossNoAttackAI
 UNIT
 
 ALIGN 4
-HelmanReplacement:
+HernandezReplacement:
 UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT
 
@@ -146,9 +146,9 @@ UNIT
 
 ALIGN 4
 Reinforce1:
-UNIT Gladiator Swordfighter Barod Level(5,Enemy,True) [6,0] DropItem 0x0 0x0 0x0 [IronBlade, Armorslayer, RedGem] ChargeAI
-UNIT Gladiator AxeSoldier Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [IronAxe, Halberd, Elixir] ChargeHealAI
-UNIT Gladiator Soldier Barod Level(5,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [Horseslayer, IronLance, Elixir] ChargeHealAI
+UNIT Gladiator Swordfighter Barod Level(5,Enemy,True) [6,0] DropItem 0x0 0x0 0x0 [IronBlade, RedGem] ChargeAI
+UNIT Gladiator AxeSoldier Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [IronAxe, Elixir] ChargeHealAI
+UNIT Gladiator Soldier Barod Level(5,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IronLance, Elixir] ChargeHealAI
 UNIT
 
 ALIGN 4
@@ -168,8 +168,8 @@ UNIT
 ALIGN 4
 Reinforce4:
 UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Conversion] ChargeAI
-UNIT Gladiator Sister Barod Level(7,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Nosferatu] ChargeAI
-UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Jormungand, Vulnerary] ChargeHealAI
+UNIT Gladiator Sister Barod Level(7,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [SpellMirror] ChargeAI
+UNIT Gladiator Mage_F Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [AlairsGale, Vulnerary] ChargeHealAI
 UNIT
 
 ALIGN 4
@@ -240,10 +240,11 @@ SHORT 0
 ALIGN 4
 BeginningScene:
 
+	FADU 15
+
 	COUNTER_SET 0x0 0x0
 	COUNTER_SET 0x1 0x0
 	SetFlag(0xB)
-	SetFlag(0x28)
 
 	TILECHANGE 0
 	TILECHANGE 1
@@ -254,11 +255,11 @@ BeginningScene:
 	LOAD1 0x1 McCallumUnit
 	LOAD1 0x1 CromarAndLeina
 
-	FlagIsSet(0x79, 0)
-		LOAD1 0x1 HelmanUnit
+	FlagIsSet(0x7A, 0)
+		LOAD1 0x1 HernandezUnit
 		GOTO 1
 	LABEL 0
-		LOAD1 0x1 HelmanReplacement
+		LOAD1 0x1 HernandezReplacement
 	LABEL 1
 
 	MOVE 40 Cromar [7, 18]
@@ -403,8 +404,7 @@ EndingScene:
 NoFade
 ENDA
 
-HelmanTalkCh5:
-	GiveItem(BraveLance,-1)
+HernandezTalkCh5:
 NoFade
 ENDA
 
@@ -427,6 +427,8 @@ LeinaRecruitCromar:
 	MUSC WithUs_Song
 	FlashCursor(Cromar, 40)
 	CUSA Cromar
+NoFade
+ENDA
 }
 
 

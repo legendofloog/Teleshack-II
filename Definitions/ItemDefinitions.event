@@ -141,6 +141,7 @@
 #define IceSword 0x82
 #define Argilabrys 0x83
 #define TemperedRing 0x84
+#define CivilianProof 0x85
 #define Sieglind 0x85
 #define Sieglinde 0x85
 #define BattleAxe 0x86
@@ -226,3 +227,6 @@
 #define Conversion 0xC2
 #define RitualKnife 0xC3
 #define Brenthunder 0xC4
+#define SpellMirror 0xC5
+#define AlairsGale 0xC6
+#define MarchRing 0xC7

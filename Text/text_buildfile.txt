@@ -34,7 +34,7 @@ Empower[.][X]
 
 #include "CharClassItemsEtc/ItemNamesDescs.txt"
 
-#0x1000 Dummy1kText
+#0xA00 DummyText
 [X]
 
 ## HouseText

@@ -35,6 +35,7 @@ POIN Pre_Nightcaller
 POIN PiercingBolt
 
 POIN GladiatorsAura
+POIN TerrainEffective
 
 POIN Demoiselle Gentilhomme MaleficAura Intimidate Tantivy Focus Inspiration Charm Solidarity VoiceOfPeace Anathema LilysPoise Charisma Hex Loyalty Infiltrator
 POIN ElbowRoom NaturalCover Gamble FieryBlood LifeAndDeath WindDisciple Perfectionist Puissance Hawkeye LightWeight Trample Opportunist BattleVeteran SilentPride Thunderstorm Outrider HeavyStrikes Charge Vanity KnightAspirant AssassinateDamageBonus ArcaneBlade ShowStopper WeakWilled
@@ -58,6 +59,8 @@ POIN StancesASM
 
 //quick riposte goes after everything that might touch AS
 POIN QuickRiposte
+
+POIN SpellMirrorSkl
 
 //POIN PCCClear
 

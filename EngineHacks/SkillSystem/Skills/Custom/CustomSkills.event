@@ -85,3 +85,10 @@ GladiatorsAura:
 #incbin "GladiatorsAura.dmp"
 POIN AuraSkillCheck
 WORD GladiatorsAuraID
+
+
+ALIGN 4
+SpellMirrorSkl:
+#incbin "SpellMirror.dmp"
+POIN SkillTester
+WORD SpellMirrorID

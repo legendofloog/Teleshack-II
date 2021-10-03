@@ -11,8 +11,6 @@ POIN Poise
 #ifdef REAVER_SPLIT
 	POIN DoubleWeaponTriangle
 #endif // REAVER_SPLIT
-
-POIN TerrainEffective
 WORD 0 // Terminator
 
 PROTECT 0x2C830 0x2C840

@@ -43,3 +43,5 @@
 #define TerrainEffectiveID 31
 #define NonCombatantID 32
 #define GladiatorsAuraID 33
+#define SpellMirrorID 34
+#define DespoilID 35
