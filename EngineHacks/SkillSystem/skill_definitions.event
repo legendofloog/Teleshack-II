@@ -18,6 +18,7 @@
 #define HexID 21
 #define EvenRhythmID 22
 #define OddRhythmID 23
+#define DazzleID 31
 
 // keep it continous for debug purpose
 
@@ -31,7 +32,7 @@
 #define VictoryMarchID 16
 #define AvengerID 17
 #define RecklessChargeID 18
-#define PiercingBoltID 19
+#define AftershockID 19
 #define DullahanID 20
 #define HeadshotID 24
 #define CullingID 25

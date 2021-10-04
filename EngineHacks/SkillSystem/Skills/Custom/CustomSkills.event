@@ -1,4 +1,4 @@
-
+#include "TeleshackSkills/Installer.event"
 
 ALIGN 4
 RadianceMarking:
@@ -44,12 +44,6 @@ RecklessCharge:
 POIN SkillTester
 WORD RecklessChargeID
 POIN prMovGetter
-
-ALIGN 4
-PiercingBolt:
-#incbin "PiercingBolt.dmp"
-POIN SkillTester
-WORD PiercingBoltID
 
 #include "DullahanEvent.event"
 
