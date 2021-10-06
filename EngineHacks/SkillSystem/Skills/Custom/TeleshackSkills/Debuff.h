@@ -1,8 +1,8 @@
 /* Debuff table used by skillsys */
 
-typedef struct DebuffEntry DebuffEntry;
+typedef struct DebuffStruct DebuffStruct;
 
-struct DebuffEntry{
+struct DebuffStruct{
 	/* 00 */ u8 strDebuff : 4;
 	/* 00 */ u8 sklDebuff : 4;
 	/* 01 */ u8 spdDebuff : 4;
@@ -42,4 +42,4 @@ enum{
 
 };
 
-extern struct DebuffEntry* gDebuffTable[];
+extern struct DebuffStruct* gDebuffTable;

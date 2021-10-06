@@ -4,6 +4,6 @@ ALIGN 4
 
 ALIGN 4
 gDebuffTable:
-POIN DebuffTable
+WORD DebuffTable
 
 #include "Aftershock/Aftershock.event"

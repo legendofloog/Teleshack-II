@@ -20,11 +20,11 @@ void AftershockPostBattle(){
 	Unit* target = GetUnit(gBattleTarget.unit.index);
 
 	// unset aftershock
-	gDebuffTable[target->index]->skillState &= ~SKILLSTATE_AFTERSHOCK;
+	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
 
 	// try to apply aftershock
 	if(IsUsingThunderWeapon(gBattleActor) && gSkillTester(&gBattleActor.unit, AftershockIDLink)){
-		gDebuffTable[target->index]->skillState |= SKILLSTATE_AFTERSHOCK;
+		gDebuffTable[target->index].skillState |= SKILLSTATE_AFTERSHOCK;
 	}
 }
 
@@ -61,7 +61,7 @@ void New_BattleInitTargetCanCounter(){
 	}
 
 	// defender is aftershocked
-	if (gDebuffTable[gBattleTarget.unit.index]->skillState & SKILLSTATE_AFTERSHOCK){
+	if (gDebuffTable[gBattleTarget.unit.index].skillState & SKILLSTATE_AFTERSHOCK){
 		gBattleTarget.weapon = item;
 		gBattleTarget.canCounter = false;
 		return;
