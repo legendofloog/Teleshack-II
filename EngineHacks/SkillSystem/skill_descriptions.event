@@ -319,7 +319,7 @@ SkillDescription(VictoryMarchID,SD_VictoryMarch)
 
 SkillDescription(AvengerID,SD_Avenger)
 SkillDescription(RecklessChargeID,SD_RecklessCharge)
-SkillDescription(PiercingBoltID,SD_PiercingBolt)
+SkillDescription(AftershockID,SD_Aftershock)
 
 SkillDescription(CullingID,SD_Culling)
 SkillDescription(HeadshotID,SD_Headshot)

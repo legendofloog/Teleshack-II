@@ -803,7 +803,7 @@
 
 //Dazzle: Opponents cannot counterattack this unit.
 //By circleseverywhere
-#define DazzleID 255
+//#define DazzleID 255
 
 //Desperation: If HP < 50%, double attacks occur immediately.
 //By ??? (Initial Commit)

@@ -31,13 +31,14 @@ wound, gaining Crit/Hit and losing[N]
 Avo/Dodge equal to his missing HP.[X]
 
 ## SD_RecklessCharge
-Reckless Charge: When mounted, Emil's[N]
-attacks are brave after moving his full[N]
-move, but this reduces his AS/Avo to 0.[X]
+Reckless Charge: When mounted, moving[N]
+full move makes Emil's attacks brave,[N]
+but his AS and Avo drop to 0.[X]
 
-## SD_PiercingBolt
-Piercing Bolt: Iskra's thunder magic[N]
-pierces 50% of the enemy's Res.[X]
+## SD_Aftershock
+Aftershock: If Iskra attacks with[N]
+thunder magic, the enemy cannot[N]
+counter during their next battle.[X]
 
 ## SD_Conversion
 Conversion: Swap HP with higher health[N]

@@ -1,0 +1,20 @@
+
+ALIGN 4
+ThunderWeapons:
+BYTE Thunder ThunderSword Thoron Bolting 0
+
+ALIGN 4
+AftershockIDLink:
+BYTE AftershockID
+
+ALIGN 4
+DazzleIDLink:
+BYTE DazzleID
+
+PUSH
+ORG 0x2C844
+jumpToHack(New_BattleInitTargetCanCounter)
+POP
+PROTECT 0x2C844
+
+// Add "AftershockPostBattle" to the postbattle loop
