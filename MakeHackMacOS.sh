@@ -1,6 +1,7 @@
 #!/bin/bash
 cd $(dirname "$0")
 cp FE8_clean.gba TeleshackII.gba
+wine Tools/C2EA/c2ea.exe FE8_clean.gba -installer Tables/TableInstaller.event 1> /dev/null 2> /dev/null 
 cd ./Text
 python3 ../Tools/MacOS/textprocess text_buildfile.txt --parser-exe ../Event Assembler/Tools/ParseFile
 cd ..

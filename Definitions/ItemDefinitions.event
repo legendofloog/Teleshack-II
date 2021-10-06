@@ -39,6 +39,7 @@
 #define BraveAxe 0x23
 #define KillerAxe 0x24
 #define Poleaxe 0x25
+#define Halberd 0x25
 #define Hammer 0x26
 #define DevilAxe 0x27
 #define HandAxe 0x28
@@ -140,6 +141,7 @@
 #define IceSword 0x82
 #define Argilabrys 0x83
 #define TemperedRing 0x84
+#define CivilianProof 0x85
 #define Sieglind 0x85
 #define Sieglinde 0x85
 #define BattleAxe 0x86
@@ -219,3 +221,12 @@
 #define MarksmanBow 0xB3
 #define BeiyrScroll 0xBE
 #define SlimArch 0x8c
+#define Dullahan 0xBF
+#define Burn 0xC0
+#define CounterBow 0xC1
+#define Conversion 0xC2
+#define RitualKnife 0xC3
+#define Brenthunder 0xC4
+#define SpellMirror 0xC5
+#define AlairsGale 0xC6
+#define MarchRing 0xC7

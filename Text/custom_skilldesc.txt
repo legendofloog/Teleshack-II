@@ -8,14 +8,14 @@ execute damage equal to 50% of foe's[N]
 missing HP.[X]
 
 ## SD_Radiance
-Radiance: Empower allies you heal,[N]
-your healing and attacks heal all[N]
+Radiance: Leina empowers allies she heals.[N]
+Her healing and damage actions heal all[N]
 empowered allies by a small amount.[X]
 
 ## SD_Nightcaller
-Nightcaller: Your attacks call down[N]
-fog of war, empowering your critical[N]
-hit rate and critical avoid.[X]
+Dawn Breaker: Cromar's dark pact call[N]
+down fog of war after each combat,[N]
+empowering his critical hit chance.[X]
 
 ## SD_Dullahan
 Dullahan's Curse:[N]
@@ -39,3 +39,23 @@ but his AS and Avo drop to 0.[X]
 Aftershock: If Iskra attacks with[N]
 thunder magic, the enemy cannot[N]
 counter during their next battle.[X]
+
+## SD_Conversion
+Conversion: Swap HP with higher health[N]
+foes before doing damage.[X]
+
+## SD_TerrainEffective
+Terrain Effective: +12 damage, +20 hit[N]
+against enemies on defensive terrain.[X]
+
+## SD_NonCombatant
+Noncombatant: Not part of the conflict,[N]
+immune to damage and getting hit.[X]
+
+## SD_GladiatorsAura
+Gladiator's Aura: All characters[N]
+within 5 tiles have +15 avoid.[X]
+
+## SD_SpellMirror
+Spell Mirror: Reflects Mt[N]
+of magical attacks.[X]

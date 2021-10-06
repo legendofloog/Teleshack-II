@@ -131,7 +131,6 @@ def main():
         print("...success!\n")
     else:
         print("No data written to output.\n")
-    input("Press Enter to continue")
 
 if __name__ == '__main__':
   main()

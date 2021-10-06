@@ -326,3 +326,8 @@ SkillDescription(HeadshotID,SD_Headshot)
 
 SkillDescription(WeakWilledID,SD_WeakWilled)
 SkillDescription(ShowStopperID,SD_ShowStopper)
+SkillDescription(ConversionID,SD_Conversion)
+SkillDescription(TerrainEffectiveID, SD_TerrainEffective)
+SkillDescription(NonCombatantID, SD_NonCombatant)
+SkillDescription(GladiatorsAuraID, SD_GladiatorsAura)
+SkillDescription(SpellMirrorID, SD_SpellMirror)

@@ -26,16 +26,16 @@ cmp r4, r0
 bne End
 
 @make sure attacker has magic weapon
-mov r0, r4
-mov r1, #0x4c    @Move to the attacker's weapon ability
-ldr r1, [r0,r1]
-mov r2, #0x42
-tst r1, r2
-bne     End @do nothing if magic bit set
+@mov r0, r4
+@mov r1, #0x4c    @Move to the attacker's weapon ability
+@ldr r1, [r0,r1]
+@mov r2, #0x42
+@tst r1, r2
+@bne     End @do nothing if magic bit set
 
-@make sure attack is at 1-2 range
+@make sure attack is at 1 range
 ldrb r0, [r7, #2]
-cmp r0, #3
+cmp r0, #2
 bge End
 
 @make sure damage > 0
@@ -97,7 +97,7 @@ ldrsb r0, [r4,r0] @curr hp
 
 cmp r2, r0
 blt NoKill
-sub r2, r0, #1 @can't actually kill
+mov r2, r0 @ kill lol
 @ add r3, #1
 neg r3, r2
 
