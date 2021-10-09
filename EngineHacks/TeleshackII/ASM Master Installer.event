@@ -66,8 +66,8 @@ ChangeWeaponRankASMC:
 
 #include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
 
-#include "StanAI/StanAI.event" // let's expand first lol
-								// no I want TalkAI - Loog
+#include "StanAI/StanAI.event" 
+
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
 #include "Graphics/NosResire/NosResire.event"

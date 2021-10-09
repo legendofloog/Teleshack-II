@@ -13,3 +13,13 @@
 #define FE5_InTheBattle_Fate 0xF
 #define Dreaming 0x11 //Near Victory music is 0x10
 #define DawnOfYs 0x12
+#define HarvestDance 0x13
+
+// Vanilla
+#define AdvanceSong 0x24
+#define TensionSong 0x25
+#define LegacySong 0x2B
+#define SolveTheRiddle 0x2E
+#define WindyDaySoundEffect 0x47
+#define WindyDayBirdsSoundEffect 0x48
+#define SoftSwooshSoundEffect 0x4D

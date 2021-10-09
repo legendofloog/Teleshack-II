@@ -244,6 +244,7 @@ NoFade
 ENDA
 
 EndingScene:
+MUSC 0x7FFF
 EscapeCapturedCheck(Mira, 0x8B)
 EscapeCapturedCheck(Iskra, 0x8C)
 EscapeCapturedCheck(Emil, 0x8D)

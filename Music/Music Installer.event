@@ -41,3 +41,5 @@ SongTable(FE5_InTheBattle_Fate, song24, MapMusicGroup)
 SongTable(Dreaming,songDB,MapMusicGroup)
 #include "MusicEvents/DawnOfYs.event"
 SongTable(DawnOfYs,songD9,MapMusicGroup)
+#include "MusicEvents/harvestdancegba.event"
+SongTable(HarvestDance,HarvestDance_TOLUCT,MapMusicGroup)

@@ -200,7 +200,7 @@ CALL (EndingScene)
 ENDA
 
 OhNoWTF:
-Music(0x48)
+Music(WindyDayBirdsSoundEffect)
 CameraCursor(Hilmar)
 Text(Ch4WarningText)
 STAL 5
@@ -218,7 +218,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-Music(0x2E)
+Music(SolveTheRiddle)
 SetBackground(0x10)
 Text(Ch4Intro1)
 STAL 5
@@ -237,7 +237,7 @@ DISA_IF 0xFFFE
 SVAL 0xB 0xC
 DISA_IF 0xFFFE
 STAL 25
-Music(0x24)
+Music(AdvanceSong)
 SetBackground(0x1B)
 CharacterConditionalDialog(Mira,Ch4Intro2,Ch4IntroAlt2)
 FADI 60
@@ -253,7 +253,7 @@ BEQ 2 0x0 0xC
 TEXTSTART
 TEXTSHOW Ch4Intro3
 TEXTEND
-MUSC 0x25
+MUSC TensionSong
 TEXTCONT
 TEXTEND
 GOTO 3
@@ -261,7 +261,7 @@ LABEL 2
 TEXTSTART
 TEXTSHOW Ch4IntroAlt3
 TEXTEND
-MUSC 0x25
+MUSC TensionSong
 TEXTCONT
 TEXTEND
 LABEL 3
@@ -280,7 +280,7 @@ EndingScene:
 FADI 60
 DoAllThree
 LOAD2 0x1 SickoMode
-Music(0x47)
+Music(WindyDaySoundEffect)
 MUSI
 SetBackground(0x1B)
 MUNO
@@ -289,11 +289,11 @@ ClearBackground
 STAL 5
 CameraCursor(Loewe)
 CameraCursor(Cleo)
-Music(0x2B)
+Music(LegacySong)
 SetBackground(0x18)
 Text(Ch4Ending2)
 STAL 5
-Music(0x4D)
+Music(SoftSwooshSoundEffect)
 SetBackground(0x12)
 Text(Ch4Ending3)
 	MNC2 0x4
