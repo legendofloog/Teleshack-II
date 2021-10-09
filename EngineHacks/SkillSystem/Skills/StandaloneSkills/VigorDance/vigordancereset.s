@@ -51,6 +51,17 @@ mvn	r2,r2
 and	r1,r2
 strb	r1,[r0]		@unset the bit
 
+@ unset aftershock
+@ yes this is stinky
+@ no i dont care
+
+ldrb r1, [r0]
+mov r2, #0xFB // !SKILLSTATE_AFTERSHOCK
+and r1, r2
+strb r2, [r0]
+
+@ done
+
 Next:
 add	r4,#1
 cmp	r4,#0x3F @end of player units
