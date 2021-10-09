@@ -109,3 +109,11 @@ This character's current age.[X]
 ## HeightDesc
 This character's height.[X]
 
+## EquipEquipmentDescription
+Ready this equipment.[X]
+
+## UnequipName
+Unequip[X]
+
+## UnequipEquipmentDescription
+Remove this equipment.[X]
