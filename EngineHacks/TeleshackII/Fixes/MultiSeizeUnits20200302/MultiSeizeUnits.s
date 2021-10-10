@@ -1,4 +1,4 @@
-@Hook 23F70 {U}
+@Hook 37b64 {U}
 .thumb
 
 .macro blh to, reg=r3
@@ -7,9 +7,8 @@
   .short 0xf800
 .endm
 
-push {r4, r5}
-ldr r0, =0x03004E50	@CurrentUnit {U}
-ldr r5,[r0]
+push {lr, r4, r5}
+mov r5,r0
 
 ldr r4,Table
 sub r4,#0x8  @先にひいておく
@@ -19,6 +18,26 @@ add r4,#0x8
 ldr r0,[r4]
 cmp r0,#0x0
 beq FalseExit
+
+CheckUnit:
+ldrb r0,[r4,#0x00]
+cmp  r0,#0xff
+beq CheckClass
+
+ldr r1,[r5,#0x00]
+ldrb r1,[r1,#0x04]   @Unit->Unit->ID
+cmp r0,r1
+bne Loop
+
+CheckClass:
+ldrb r0,[r4,#0x01]
+cmp  r0,#0xff
+beq CheckMap
+
+ldr r1,[r5,#0x04]
+ldrb r1,[r1,#0x04]   @Unit->Class->ID
+cmp r0,r1
+bne Loop
 
 CheckMap:
 ldrb r0,[r4,#0x02]
@@ -50,27 +69,12 @@ cmp r0,#0x01
 bne Loop
 
 Found:
-
-CheckUnit:
-ldrb r0,[r4,#0x00]
-cmp r0,#0xff   @誰でも呼べる
-beq TrueExit
-
-ldr r1,[r5,#0x00]
-ldrb r1,[r1,#0x04]   @Unit->Unit->ID
-cmp r0,r1
-beq TrueExit
-
-blh 0x08023EF0	@連接チェック	{U}
-cmp r0,#0x00
-beq Loop
-
 TrueExit:
-MOV r0, #0x1
+mov r0,#0x1
 b Exit
 
 FalseExit:
-MOV r0, #0x3
+mov r0,#0x0
 @b Exit
 
 Exit:
