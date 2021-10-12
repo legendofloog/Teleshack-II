@@ -1,12 +1,14 @@
-#include "include\gbafe.h"
+#include "gbafe.h"
 
 // Leadership Stars FE8. Hack by Zeta/Gilgamesh
 // Requires FE-CLIB
 // Free to use/modify
 
-#define MAX_BLUE_UNITS 20
+#define MAX_BLUE_UNITS 50
 #define MAX_GREEN_UNITS 20
 #define MAX_RED_UNITS 50
+
+Unit* GetUnitStructFromEventParameter(unsigned eventSlot);
 
 extern struct Unit gUnitArrayRed[]; //! FE8U = 0x202CFBC
 extern struct Unit gUnitArrayGreen[]; //! FE8U = 0x202DDCC
@@ -30,9 +32,26 @@ extern u8 NPCStarAvoidBonus;
 
 extern u8 CancelOutOpposingLeadership;
 
-signed char GetFactionLeadershipCount(u8 faction)
+// gets the leadership star count for a single unit
+s8 GetLeadershipStarCount(Unit *unit)
 {
-	signed char total = 0;
+	for (int x = 0; LeadershipTable[x].UnitID != 0; x++)
+	{
+		if (unit->pCharacterData->number == LeadershipTable[x].UnitID)
+			return LeadershipTable[x].LeadershipStars + unit->supports[0];
+	}
+	
+	if (unit->supports[0] == 0){
+		return 0xFF;
+	}
+
+	return unit->supports[0];
+}
+
+s8 GetFactionLeadershipCount(u8 faction)
+{
+	s8 total = 0;
+
 	Unit *unitArray = gUnitArrayBlue;
 	int maxUnits = MAX_BLUE_UNITS;
 	
@@ -53,14 +72,8 @@ signed char GetFactionLeadershipCount(u8 faction)
 		// make sure the unit is alive
 		if (unitArray[x].pCharacterData != NULL && !(unitArray[x].state & US_UNAVAILABLE))
 		{
-			// now check through the leadership table to see if they're on it
-			for (int y = 0; LeadershipTable[y].UnitID != 0; y++)
-			{
-				if (LeadershipTable[y].UnitID == unitArray[x].pCharacterData->number)
-				{
-					total += LeadershipTable[y].LeadershipStars;
-					break; // no need to go through the rest of the leadership table
-				}
+			if (GetLeadershipStarCount(&unitArray[x]) > 0){
+				total += GetLeadershipStarCount(&unitArray[x]);
 			}
 		}
 	}
@@ -68,24 +81,7 @@ signed char GetFactionLeadershipCount(u8 faction)
 	return total;
 }
 
-/*
-signed char GetFactionLeadershipCount(u8 faction)
-{
-	signed char total = 0;
-	for (int x = 0; LeadershipTable[x].UnitID != 0; x++)
-	{
-		Unit *potentialLeader = GetUnitByCharId(LeadershipTable[x].UnitID);
-		if (potentialLeader != NULL && !(potentialLeader->state & US_UNAVAILABLE) && faction == UNIT_FACTION(potentialLeader)) // make sure they exist, are on the field and are on the same faction
-		{
-			total += LeadershipTable[x].LeadershipStars;
-		}
-	}
-	
-	return total;
-}
-*/
-
-void CalculateHitAvoidBonus(BattleUnit* bunit, signed char leadership)
+void CalculateHitAvoidBonus(BattleUnit* bunit, s8 leadership)
 {
 	if (UNIT_FACTION(&bunit->unit) == FACTION_BLUE)
 	{
@@ -106,24 +102,20 @@ void CalculateHitAvoidBonus(BattleUnit* bunit, signed char leadership)
 
 void ApplyLeadershipBonus(BattleUnit *bunitOne, BattleUnit *bunitTwo)
 {
-	signed char unitOneLeadership = GetFactionLeadershipCount(UNIT_FACTION(&bunitOne->unit));
-	signed char unitTwoLeadership = GetFactionLeadershipCount(UNIT_FACTION(&bunitTwo->unit));
+	s8 unitOneLeadership = GetFactionLeadershipCount(UNIT_FACTION(&bunitOne->unit));
+	s8 unitTwoLeadership = GetFactionLeadershipCount(UNIT_FACTION(&bunitTwo->unit));
 	
-	if (CancelOutOpposingLeadership)
+	if (CancelOutOpposingLeadership){
 		unitOneLeadership -= unitTwoLeadership;
-	
-	if (unitOneLeadership > 0)
-		CalculateHitAvoidBonus(bunitOne, unitOneLeadership);
-}
-
-// gets the leadership star count for a single unit
-u8 GetLeadershipStarCount(Unit *unit)
-{
-	for (int x = 0; LeadershipTable[x].UnitID != 0; x++)
-	{
-		if (unit->pCharacterData->number == LeadershipTable[x].UnitID)
-			return LeadershipTable[x].LeadershipStars;
 	}
 	
-	return 0xFF;
+	if (unitOneLeadership > 0){
+		CalculateHitAvoidBonus(bunitOne, unitOneLeadership);
+	}
+	
+}
+
+void AddLeadershipASMC(){
+	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
+	unit->supports[0] += gEventSlot[2];
 }
