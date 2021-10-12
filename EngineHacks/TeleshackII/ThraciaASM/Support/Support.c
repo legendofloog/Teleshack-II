@@ -40,3 +40,31 @@ int abs(int num){
 	}
 	return num;
 }
+
+void New_DrawUnitScreenSupportList(){
+	Unit* current = gStatScreen.curr;
+	TextHandle* textBase = &TileBufferBase;
+	int y = 8;
+	int x = 18;
+
+	NewSupportData* unitSupportList = NewSupportTable[current->pCharacterData->number];
+
+	if (unitSupportList == 0){
+		return;
+	}
+
+	int cnt = 0;
+	while (unitSupportList[cnt].supportPartnerNum != 0){
+		Unit* supportingUnit = GetUnitByCharId(unitSupportList[cnt].supportPartnerNum);
+		if (supportingUnit != 0){
+			(textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
+			textBase->tileWidth = 8;
+			DrawTextInline(textBase, &Tile_Origin[y][x], 0, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
+			textBase++;
+		}
+		
+		y += 2;
+		cnt++;
+	}
+
+}

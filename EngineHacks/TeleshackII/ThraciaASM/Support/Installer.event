@@ -6,6 +6,9 @@ PUSH
 ORG 0x285B0
 jumpToHack(New_GetUnitSupportBonuses)
 
+ORG 0x87698
+jumpToHack(New_DrawUnitScreenSupportList)
+
 ORG 0x281C8 //GetROMUnitSupportCount
 SHORT 0x2000 0x4770 // mov r0, #0x00 ; bx lr.
 
