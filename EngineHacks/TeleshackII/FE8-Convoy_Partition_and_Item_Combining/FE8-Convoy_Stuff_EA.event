@@ -1,17 +1,8 @@
 //Convoy separation (and weapon repair when pressing L while putting an item in the convoy)
 //by Tequila
 
-#ifndef _FE8_
-	ERROR "Wrong ROM. Use FE8U."
-#endif
-
 #include "Extensions/Hack Installation.txt"
 #include "Extensions/6CDefinitions.txt"
-
-#ifndef FreeSpace
-	#define FreeSpace 0xB2B000
-	ORG FreeSpace
-#endif
 
 //NOTE: This hack does NOT expand the amount of items saved! It changes the items you can have, yes, but you're responsible for using Modular Save or some other hack to actually save more stuff.
 

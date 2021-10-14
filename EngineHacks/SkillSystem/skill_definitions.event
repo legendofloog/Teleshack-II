@@ -18,6 +18,7 @@
 #define HexID 21
 #define EvenRhythmID 22
 #define OddRhythmID 23
+#define DazzleID 31
 
 // keep it continous for debug purpose
 
@@ -31,9 +32,17 @@
 #define VictoryMarchID 16
 #define AvengerID 17
 #define RecklessChargeID 18
-#define PiercingBoltID 19
+#define AftershockID 19
 #define DullahanID 20
 #define HeadshotID 24
 #define CullingID 25
 #define TemperedRingID 26 //For the item
-
+#define BargainID 27
+#define CounterID 28
+#define ConversionID 29
+#define WatchfulID 30
+#define TerrainEffectiveID 31
+#define NonCombatantID 32
+#define GladiatorsAuraID 33
+#define SpellMirrorID 34
+#define DespoilID 35

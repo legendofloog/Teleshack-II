@@ -30,10 +30,9 @@ POIN DefendingCheck
 POIN Wrath Avenger SpurStr SpurMag SpurSpd SpurDef SpurRes
 POIN DriveStr DriveMag DriveSpd DriveDef DriveRes
 POIN LuckySeven OddRhythm EvenRhythm QuickBurn SlowBurn
-
 POIN Pre_Nightcaller
-POIN PiercingBolt
-
+POIN GladiatorsAura
+POIN TerrainEffective
 POIN Demoiselle Gentilhomme MaleficAura Intimidate Tantivy Focus Inspiration Charm Solidarity VoiceOfPeace Anathema LilysPoise Charisma Hex Loyalty Infiltrator
 POIN ElbowRoom NaturalCover Gamble FieryBlood LifeAndDeath WindDisciple Perfectionist Puissance Hawkeye LightWeight Trample Opportunist BattleVeteran SilentPride Thunderstorm Outrider HeavyStrikes Charge Vanity KnightAspirant AssassinateDamageBonus ArcaneBlade ShowStopper WeakWilled
 //POIN Daunt BloodTide WhitePool NightTide 
@@ -57,9 +56,12 @@ POIN StancesASM
 //quick riposte goes after everything that might touch AS
 POIN QuickRiposte
 
+POIN SpellMirrorSkl
+
 //POIN PCCClear
 
 //tower shield plus needs to go after every other skill that may affect defender's attack
+POIN NonCombatant
 POIN TowerShieldPlus
 // Because of how killing machine works, critical check should always be done last
 POIN CriticalCheck

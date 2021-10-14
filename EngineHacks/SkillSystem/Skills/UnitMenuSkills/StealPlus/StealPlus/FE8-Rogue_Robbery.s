@@ -24,18 +24,10 @@ mov		r0,r6
 ldr		r3,=#0x8017548	@get item type
 mov		r14,r3
 .short	0xF800
-cmp		r0,#9
-beq		RetTrue		@we can always steal items
-mov		r7,r0
-ldr		r0,=#0x3004E50	@current character
-ldr		r0,[r0]
-ldr		r1,StealPlusID
-ldr		r3,SkillTester
-mov		r14,r3
-.short	0xF800
-cmp		r0,#0 @changed from original steal+, staves play by same rules as weapons
-cmp		r0,#0xB
-bgt		RetTrue			@only items higher than this are Rings, Fire Dragon Stone, and Dancer rings, which aren't really used. The rest are either normal or monster weapons (0xA is unused)
+cmp		r0,#0xB   @monster wpn
+beq		RetFalse
+cmp		r0,#0x11  @dragon stone
+beq		RetFalse
 ldr		r7,=#0x3004E50
 ldr		r7,[r7]
 mov		r0,r4

@@ -84,8 +84,16 @@ Worst[X]
 ## SS_Action
 Vigor[X]
 
+## VigorRText
+Ability to take another action. Each[N]
+star gives a 5% chance to move again.[X]
+
 ## SS_PursuitCriticalCoefficient
 PCC[X]
+
+## PursuitCriticalRText
+If this unit doubles, their critical[N]
+rate is multiplied by this coefficient.[X]
 
 ## LikesDesc
 A list of things this[N]
@@ -101,3 +109,11 @@ This character's current age.[X]
 ## HeightDesc
 This character's height.[X]
 
+## EquipEquipmentDescription
+Ready this equipment.[X]
+
+## UnequipName
+Unequip[X]
+
+## UnequipEquipmentDescription
+Remove this equipment.[X]

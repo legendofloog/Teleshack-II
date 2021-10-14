@@ -30,9 +30,7 @@ BYTE 1 // change to 0 if you don't want this behaviour
 
 LeadershipTable:
 // ALLIES
-BYTE Cleo 1
 BYTE Mira 1
-BYTE Loewe 1
 BYTE Dragana 3
 // BOSSES
 BYTE Raschwitz_Ch1 1
@@ -81,30 +79,13 @@ SHORT EnemyStarCountRText
 POP
 
 // lyn output of LeadershipFunctions.c
-ALIGN 4
-PUSH
-ORG CURRENTOFFSET+$1;GetFactionLeadershipCount:
-ORG CURRENTOFFSET+$74;CalculateHitAvoidBonus:
-ORG CURRENTOFFSET+$74;ApplyLeadershipBonus:
-ORG CURRENTOFFSET+$40;GetLeadershipStarCount:
-POP
-SHORT $B5F7 $2880 $D024 $2840 $D125 $2114 $4B14 $2048 $2 $434A $2000 $189A $9201 $4F12 $681D $2D00 $D00F $68DA $4910 $400A $D10B $51 $19C9 $780C $2C00 $D006 $792E $42A6 $D110 $784A $1810 $600 $1600 $9A01 $3348 $4293 $D1E8 $BCFE $BC02 $4708 $2132 $4B06 $E7DB $213E $4B05 $E7D8 $3201 $E7E4
-BYTE $CC $DD $2 $2
-POIN LeadershipTable
-BYTE $C $0 $1 $0 $BC $CF $2 $2 $4C $BE $2 $2
-SHORT $B5F0 $250B $4 $23C0 $5745 $3460 $40F $3062 $401D $8822 $C3F $8803 $2D00 $D10E $4D10 $7829 $D $437D $1952 $8022 $4A0E $7812 $39 $4351 $185B $8003 $BCF0 $BC01 $4700 $4E0B $7831 $E $437E $199B $41B $141B $2D80 $D106 $4D07 $782D $39 $4369 $1852 $8022 $E7EB $4D05 $E7F7 $46C0
-POIN AllyStarHitBonus
-POIN AllyStarAvoidBonus
-POIN NPCStarAvoidBonus
-POIN EnemyStarHitBonus
-POIN NPCStarHitBonus
-SHORT $B5F8 $263F $4 $7AC0 $43B0 $F $F7FF $FF84 $5 $7AF8 $43B0 $F7FF $FF7F $4B08 $781B $2B00 $D002 $1A28 $600 $1605 $2D00 $DD03 $29 $20 $F7FF $FFAC $BCF8 $BC01 $4700 $46C0
-POIN CancelOutOpposingLeadership
-SHORT $2200 $B530 $4C08 $53 $191B $7819 $2900 $D101 $20FF $E004 $6805 $792D $428D $D103 $7858 $BC30 $BC02 $4708 $3201 $E7EE
-POIN LeadershipTable
+// no fuck you why would you do that
+#include "LeadershipFunctions.lyn.event"
 
 #else // _FE8_
   ERROR LEADERSHIP_STARS is for FE8
 #endif // _FE8_
 
 #endif // LEADERSHIP_STARS
+
+#define AddLeadership(unit, amount) "SVAL s1 unit; SVAL s2 amount; ASMC AddLeadershipASMC;"

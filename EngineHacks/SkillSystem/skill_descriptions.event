@@ -319,10 +319,15 @@ SkillDescription(VictoryMarchID,SD_VictoryMarch)
 
 SkillDescription(AvengerID,SD_Avenger)
 SkillDescription(RecklessChargeID,SD_RecklessCharge)
-SkillDescription(PiercingBoltID,SD_PiercingBolt)
+SkillDescription(AftershockID,SD_Aftershock)
 
 SkillDescription(CullingID,SD_Culling)
 SkillDescription(HeadshotID,SD_Headshot)
 
 SkillDescription(WeakWilledID,SD_WeakWilled)
 SkillDescription(ShowStopperID,SD_ShowStopper)
+SkillDescription(ConversionID,SD_Conversion)
+SkillDescription(TerrainEffectiveID, SD_TerrainEffective)
+SkillDescription(NonCombatantID, SD_NonCombatant)
+SkillDescription(GladiatorsAuraID, SD_GladiatorsAura)
+SkillDescription(SpellMirrorID, SD_SpellMirror)

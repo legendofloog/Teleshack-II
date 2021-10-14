@@ -7,7 +7,10 @@ SpecifiedBattleConvo(Raschwitz_Ch1,Alena,Chapter1,19,RaschwitzAlenaBattleQuoteTe
 SpecifiedBattleConvo(Tyr_Ch2,Varga,Chapter2,7,TyrVargaBattleConvo)
 UnspecifiedBattleConvo(Raschwitz_Ch1,Chapter1,1,RaschwitzGenericBattleQuoteText)
 UnspecifiedBattleConvo(Tyr_Ch2,Chapter2,1,TyrGenericBattleConvo)
-UnspecifiedBattleConvo(Hilmar,Chapter4,1,HilmarBossQ)
+SpecifiedBattleConvo(Hilmar,Loewe,Chapter4,8,HilmarLoeweBossQ)
+SpecifiedBattleConvo(Hilmar,Filone,Chapter4,9,HilmarFiloneBossQ)
+SpecifiedBattleConvo(Hilmar,Cleo,Chapter4,10,HilmarCleoBossQ)
+UnspecifiedBattleConvo(Hilmar,Chapter4,11,HilmarBossQ)
 
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

@@ -1,0 +1,439 @@
+{
+
+#define COUNTER_CASE(counter, value) "COUNTER_CHECK counter; SVAL 0x1 value; BNE ((counter << 16) + value + 0x1234) 0xC 0x1;"
+#define BREAK(counter, value) "LABEL ((counter << 16) + value + 0x1234);"
+
+EventPointerTable(Chapter5Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0, TurnOne, 1)
+	TurnEventPlayer(0x0, TurnTwo, 1)
+	TurnEventPlayer(0x0, WipeCheck, 1, 255)
+	TurnEventEnemy(0x0, WipeCheck, 1, 255)
+	TurnEventPlayer(0xA, StagingAreaEnter, 1, 255)
+	TurnEventPlayer(0xB, StagingAreaExit, 1, 255)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+	CharacterEvent(0x7, HernandezTalkCh5, 0x0, Hernandez)
+	CharacterEvent(0x0, VladithTalkCh5, 0x0, Vladith)
+	CharacterEvent(0x8, Civ1TalkCh5, 0x0, Civilian1)
+	CharacterEvent(0x8, Civ2TalkCh5, 0x0, Civilian2)
+	CharacterEvent(0x9, LeinaRecruitCromar, Leina, Cromar)
+END_MAIN
+
+LocationBasedEvents:
+	Armory(Ch5Armory1,2,16)
+	Armory(Ch5Armory2,12,16)
+	Vendor(Ch5Vendor1,3,16)
+	Vendor(Ch5Vendor2,13,16)
+	Chest(BlueGem,23,5)
+	Chest(AngelicRobe,24,5)
+	Seize(24, 8)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+AREA 0xA StagingAreaEnter [6,14] [8,14]
+AREA 0xB StagingAreaExit [6,14] [8,14]
+END_MAIN
+
+
+Dunno1:
+	END_MAIN
+
+Dunno2:
+	END_MAIN
+
+Dunno3:
+	END_MAIN
+
+Tutorial:
+	END_MAIN
+
+
+ALIGN 4
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [6,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [7,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [7,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+
+ALIGN 4
+CromarAndLeina:
+UNIT Leina 0x0 Cleo Level(1,NPC,False) [6,18] 0x0 0x0 0x0 0x1 [Rapier, Heal, Vulnerary] NoAI
+UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir, Elixir, Elixir] BossHealAI
+UNIT
+
+ALIGN 4
+VladithUnit:
+UNIT Vladith 0x0 0x0 Level(15,NPC,False) [18,18] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT
+
+ALIGN 4
+BarodUnit:
+UNIT Barod 0x0 Barod Level(20,Enemy,False) [7,17] 0x0 0x0 0x0 0x1 [MasterAxe, SilverAxe, BraveAxe, KillerAxe] BossNoAttackAI
+UNIT
+
+ALIGN 4
+McCallumUnit:
+UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [24,8] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossHealAI
+UNIT
+
+
+ALIGN 4
+EnemyUnits:
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,3] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,4] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian Civilian_F_2 Barod Level(1,Enemy,False) [0,5] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,6] 0x0 0x0 0x0 0x1 [Vulnerary] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,7] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Civilian1 0x0 Barod Level(1,Enemy,False) [0,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Civilian2 Civilian_F_2 Barod Level(1,Enemy,False) [0,9] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [0,10] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,2] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian Civilian_F_2 Barod Level(1,Enemy,False) [14,3] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,4] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,5] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian Civilian_F_2 Barod Level(1,Enemy,False) [14,6] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,7] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+//UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,9] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,10] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT
+
+ALIGN 4
+HernandezUnit:
+UNIT Hernandez Brigand Barod Level(10,Enemy,True) [14,8] 0x0 0x0 0x0 0x1 [KillerAxe MarchRing CivilianProof] BossNoAttackAI
+UNIT
+
+ALIGN 4
+HernandezReplacement:
+UNIT Ch5Civilian 0x0 Barod Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT
+
+ALIGN 4
+Reinforce0:
+UNIT Gladiator Fighter Barod Level(5,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Gladiator Fighter Barod Level(5,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [HandAxe, SteelAxe] ChargeAI
+UNIT Gladiator Fighter Barod Level(5,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Hammer] ChargeAI
+UNIT
+
+ALIGN 4
+Reinforce1:
+UNIT Gladiator Swordfighter Barod Level(5,Enemy,True) [6,0] DropItem 0x0 0x0 0x0 [IronBlade, RedGem] ChargeAI
+UNIT Gladiator AxeSoldier Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [IronAxe, Elixir] ChargeHealAI
+UNIT Gladiator Soldier Barod Level(5,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IronLance, Elixir] ChargeHealAI
+UNIT
+
+ALIGN 4
+Reinforce2:
+UNIT Gladiator Mage_F Barod Level(5,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Thunder, Vulnerary] ChargeHealAI
+UNIT Gladiator Mage Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Burn] ChargeAI
+UNIT Gladiator Bard Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Wind, Elixir] ChargeHealAI
+UNIT
+
+ALIGN 4
+Reinforce3:
+UNIT Gladiator Myrmidon_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [KillingEdge, Vulnerary] ChargeHealAI
+UNIT Gladiator Myrmidon Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Claymore, Vulnerary] ChargeHealAI
+UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [RitualKnife] ChargeAI
+UNIT
+
+ALIGN 4
+Reinforce4:
+UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Conversion] ChargeAI
+UNIT Gladiator Sister Barod Level(7,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [SpellMirror] ChargeAI
+UNIT Gladiator Mage_F Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [AlairsGale, Vulnerary] ChargeHealAI
+UNIT
+
+ALIGN 4
+Reinforce5:
+UNIT Gladiator BowArmor Barod Level(7,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [CounterBow, MarksmanBow] ChargeAI
+UNIT Gladiator Archer Barod Level(10,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [CounterBow, RedGem] ChargeAI
+UNIT Gladiator BowArmor Barod Level(7,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [CounterBow, GaleBow] ChargeAI
+UNIT
+
+ALIGN 4
+Reinforce6:
+UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [Brenthunder] ChargeAI
+UNIT
+
+ALIGN 4
+Traps1:
+	GreenSigil(6,14)
+	GreenSigil(7,14)
+	GreenSigil(8,14)
+ENDTRAP
+
+
+ALIGN 4
+Traps2:
+ENDTRAP
+
+
+ALIGN 4
+Ch5Armory1:
+SHORT IronSword
+SHORT SteelSword
+SHORT IronLance
+SHORT SteelLance
+SHORT IronAxe
+SHORT SteelAxe
+SHORT IronBow
+SHORT SteelBow
+SHORT Javelin
+SHORT HandAxe
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch5Armory2:
+SHORT Fire
+SHORT Thunder
+SHORT Lightning
+SHORT Flux
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch5Vendor1:
+SHORT Vulnerary
+SHORT Elixir
+SHORT PureWater
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch5Vendor2:
+SHORT Heal
+SHORT Mend
+SHORT Torch
+SHORT 0
+SHORT 0
+
+ALIGN 4
+BeginningScene:
+
+	FADU 15
+
+	COUNTER_SET 0x0 0x0
+	COUNTER_SET 0x1 0x0
+	SetFlag(0xB)
+
+	TILECHANGE 0
+	TILECHANGE 1
+	TILECHANGE 2
+
+	LOAD1 0x1 EnemyUnits
+	LOAD1 0x1 VladithUnit
+	LOAD1 0x1 McCallumUnit
+	LOAD1 0x1 CromarAndLeina
+
+	FlagIsSet(0x7A, 0)
+		LOAD1 0x1 HernandezUnit
+		GOTO 1
+	LABEL 0
+		LOAD1 0x1 HernandezReplacement
+	LABEL 1
+
+	MOVE 40 Cromar [7, 18]
+	ENUN
+	CameraCursor(Cromar)
+	MOVE 15 Leina [3, 17]
+	ENUN
+	CameraCursor(McCallum)
+	MOVE 40 Cromar [17, 18]
+	ENUN
+	CameraCursor(Cromar)
+	MOVE 120 Cromar [24, 9]
+	ENUN
+	CAM1 Cromar
+	STAL 120
+
+	TILEREVERT 2
+	
+	Load1 0x1 BarodUnit
+	FlashCursor(Barod, 60)
+
+	GotoPrepScreen
+	CLEAN
+NoFade
+ENDA
+
+ALIGN 4
+TurnOne:
+	MOVE 120 Barod [7, 6]
+	ENUN
+
+	TILEREVERT 1
+
+	CameraCursor(Barod)
+
+	CALL SpawnEnemies
+
+	CameraCursor(Leina)
+
+	MUSC WithUs_Song
+	MOVE 20 Leina [4, 18]
+	ENUN
+	FlashCursor(Leina, 20)
+	CUSA Leina
+NoFade
+ENDA
+
+ALIGN 4
+TurnTwo:
+	CameraCursor(Barod)
+NoFade
+ENDA
+
+ALIGN 4
+SpawnEnemies:
+	COUNTER_CASE(0, 0)
+		LoadReinforcements(Reinforce0)
+	BREAK(0,0)
+	COUNTER_CASE(0, 1)
+		LoadReinforcements(Reinforce1)
+		UnsetFlag(0xA)
+	BREAK(0,1)
+	COUNTER_CASE(0, 2)
+		LoadReinforcements(Reinforce2)
+		UnsetFlag(0xA)
+	BREAK(0,2)
+	COUNTER_CASE(0, 3)
+		LoadReinforcements(Reinforce3)
+		UnsetFlag(0xA)
+	BREAK(0,3)
+	COUNTER_CASE(0, 4)
+		LoadReinforcements(Reinforce4)
+		UnsetFlag(0xA)
+	BREAK(0,4)
+	COUNTER_CASE(0, 5)
+		LoadReinforcements(Reinforce5)
+		UnsetFlag(0xA)
+	BREAK(0,5)
+	COUNTER_CASE(0, 6)
+		LoadReinforcements(Reinforce6)
+		UnsetFlag(0xA)
+		TILECHANGE 0x2
+		SetChapterObjectiveText(Ch5MapObj2,Ch5Obj2)
+	BREAK(0,6)
+	Increment(0)
+NoFade
+ENDA
+
+ALIGN 4
+StagingAreaEnter:
+	CHECK_ALLEGIANCE -1
+	IBne(0,0)
+		CountPlayersInRange(6,13,8,15)
+		IBne(3, 0)
+			CountPlayersInRange(6,14,8,14)
+			IBne(3, 0)
+				TILECHANGE 1
+				TILEREVERT 0
+				GOTO 1
+	LABEL 0
+		UnsetFlag(0xA)
+	LABEL 1
+NoFade
+ENDA
+
+ALIGN 4
+StagingAreaExit:
+	CHECK_ALLEGIANCE -1
+	IBne(0,0)
+		CountPlayersInRange(1,0,13,12)
+		IBne(0, 0)
+			TILECHANGE 0
+			TILEREVERT 1
+			CALL SpawnEnemies
+			GOTO 1
+	LABEL 0
+		UnsetFlag(0xB)
+	LABEL 1
+NoFade
+ENDA
+
+
+ALIGN 4
+WipeCheck:
+	FlagIsSet(0xA, 0)
+		CountPlayersInRange(1,0,13,14)
+		IBgt(0, 0)
+			TILECHANGE 0
+			TILEREVERT 1
+			UnsetFlag(0xA)
+			GOTO 1
+	LABEL 0
+		CountEnemiesInRange(1,0,13,14)
+		IBgt(1, 1)
+			UnsetFlag(0xB)
+	LABEL 1
+NoFade
+ENDA
+
+ALIGN 4
+EndingScene:
+NoFade
+ENDA
+
+HernandezTalkCh5:
+NoFade
+ENDA
+
+VladithTalkCh5:
+NoFade
+ENDA
+
+Civ1TalkCh5:
+	GiveItem(TorchStaff,-1)
+NoFade
+ENDA
+
+
+Civ2TalkCh5:
+	GiveItem(Barrier,-1)
+NoFade
+ENDA
+
+LeinaRecruitCromar:
+	MUSC WithUs_Song
+	FlashCursor(Cromar, 40)
+	CUSA Cromar
+NoFade
+ENDA
+}
+
+
+ALIGN 4
+Proc_Chapter5Magic:
+WORD $1C04B5F0 $1C161C0D $68101C1F $B400340 $42082102 $7CE9D11B $5E382004 $DB164288 $79006820 $4288490B $490BD003 $D0004288 $6828E00D $49077900 $D0034288 $42884906 $E004D000 $30026830 $20006030 $BCF080B8 $46C0BD00
+WORD Cromar
+WORD McCallum

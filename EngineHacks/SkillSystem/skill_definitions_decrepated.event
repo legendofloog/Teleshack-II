@@ -294,7 +294,7 @@
 
 //Despoil: Obtain a Red Gem after attacking and defeating an enemy. (Luck % activation)
 //Author Unknown (Initial Commit)
-#define DespoilID 255
+//#define DespoilID 255
 
 //Fury: +2 Atk/Spd/Def/Res. Unit takes 6 damage after combat.
 //By circleseverywhere
@@ -675,7 +675,7 @@
 
 //Counter: Reflect physical damage when attacked at 1-2 range.
 //Author Unknown (Initial Commit)
-#define CounterID 255
+//#define CounterID 255
 
 //Countermagic: Reflect magic damage when attacked at 1-2 range.
 //Author Unknown (Initial Commit)
@@ -803,7 +803,7 @@
 
 //Dazzle: Opponents cannot counterattack this unit.
 //By circleseverywhere
-#define DazzleID 255
+//#define DazzleID 255
 
 //Desperation: If HP < 50%, double attacks occur immediately.
 //By ??? (Initial Commit)
@@ -1043,7 +1043,7 @@
 
 //Watchful: This unit cannot be captured or stolen from.
 //By Sme
-#define WatchfulID 255
+//#define WatchfulID 255
 
 //Boon: Cure bad status effects at the beginning of each turn.
 //By Sme
@@ -1055,7 +1055,7 @@
 
 //Bargain: Halves prices in shops.
 //By Sme
-#define BargainID 255
+//#define BargainID 255
 
 //Poise: +1 Move. Negates enemy hit bonus from weapon triangle advantage.
 //By Zeta

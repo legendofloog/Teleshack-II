@@ -88,6 +88,8 @@ SetUnitConGrowth(Alex,10)
 SetUnitConGrowth(Axel,10)
 SetUnitConGrowth(Filone,5)
 SetUnitConGrowth(Zwieback,15)
+SetUnitConGrowth(Leina,0)
+SetUnitConGrowth(Cromar,5)
 
 
 SetUnitMovGrowth(Cleo,0)
@@ -103,4 +105,6 @@ SetUnitMovGrowth(Alex,3)
 SetUnitMovGrowth(Axel,3)
 SetUnitMovGrowth(Filone,2)
 SetUnitMovGrowth(Zwieback,1)
+SetUnitMovGrowth(Leina,3)
+SetUnitMovGrowth(Cromar,0)
 

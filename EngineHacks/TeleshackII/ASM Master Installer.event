@@ -13,39 +13,6 @@
 
 #include "StatusExpansion/StatusExpansion.event"
 
-//#include "MultiSupplyUnits20200302/Installer.event"
-
-/*
-//Portrait Height Fix
-//by Sme
-PUSH
-ORG 0x5C3C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POIN 0x5C9C
-POP
-*/
-
 // thief vision
 PUSH
 ORG 0x0178C2
@@ -78,6 +45,13 @@ ORG 0x022A10
 SHORT 0x1C00
 POP
 
+// autolevel normal mode bonus fix by shuusuke
+
+PUSH
+ORG $180FC
+SHORT 0xFF63
+POP
+
 ALIGN 4
 ChangeWeaponRankASMC:
 #incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
@@ -90,8 +64,8 @@ ChangeWeaponRankASMC:
 
 #include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
 
-#include "StanAI/StanAI.event" // let's expand first lol
-								// no I want TalkAI - Loog
+#include "StanAI/StanAI.event" 
+
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
 #include "Graphics/NosResire/NosResire.event"
@@ -114,7 +88,12 @@ ChangeWeaponRankASMC:
 
 #include "MinimugPalette/Installer.event"
 
-//#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
+#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
+#include "RingRework/RingRework_Installer.event"
+
+#include "NarrowFontExtension/SerifExtension.event"
+
+#include "FogVisionTiles/Installer.event"

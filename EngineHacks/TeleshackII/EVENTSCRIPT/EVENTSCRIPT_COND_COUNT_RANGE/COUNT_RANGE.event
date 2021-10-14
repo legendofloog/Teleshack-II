@@ -1,0 +1,13 @@
+
+#define _ARG(index, item) "SHORT 0x540 (index) (item) 0x0;"
+#define _ARG2(index, item1, item2) "SHORT 0x540 (index) (item1) (item2);"
+
+#define _CountRange(unit, class, item, allegiance, x1, y1, x2, y2) "_ARG(1, unit); _ARG(2,class); _ARG(3,item); _ARG(4,allegiance); _ARG2(5, x1, y1); _ARG2(6,x2,y2); ASMC EventCountRange|1;"
+
+#define CountPlayersInRange(x1, y1, x2, y2) "_CountRange(0x0, 0x0, 0x0, 0x0, x1, y1, x2, y2);"
+#define CountEnemiesInRange(x1, y1, x2, y2) "_CountRange(0x0, 0x0, 0x0, 0x1, x1, y1, x2, y2);"
+#define CountNPCsInRange(x1, y1, x2, y2) "_CountRange(0x0, 0x0, 0x0, 0x2, x1, y1, x2, y2);"
+#define CountUnitsInRange(x1, y1, x2, y2) "_CountRange(0x0, 0x0, 0x0, 0xFF, x1, y1, x2, y2);"
+
+EventCountRange:
+#incbin "COUNT_RANGE.dmp"

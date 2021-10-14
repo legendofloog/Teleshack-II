@@ -16,7 +16,7 @@
   #define Trv_Icon_Y 0x2E
   
   #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
- 
+  #include "WeaponRankStatScreen/WeaponRankStatScreen.event"
   PUSH
     ORG 0x205b24 //24 for stat screen
       POIN MSS_page1|1 MSS_page2|1 MSS_page3|1 //MSS_page4|1
@@ -39,9 +39,9 @@
     ORG $889d0
       SHORT $e010 //Temporary r-text fix to prevent freezing
 
-    ORG $889f2  
-      SHORT $BD30
-      BL(RText_Page4_ladder) //this has to be in bl range somewhere
+    //ORG $889f2  
+      //SHORT $BD30
+      //BL(RText_Page4_ladder) //this has to be in bl range somewhere
 
     // Make all the arrows line up with the stats and stuff
 
@@ -113,10 +113,10 @@
       // We'll use this for stuff that needs to
       // be in BL range
 
-    RText_Page4_ladder:
+    //RText_Page4_ladder:
       // page 4 helptext hook
-      #incbin "asm/rtext_page4.dmp"
-      POIN RText_Page4
+      //#incbin "asm/rtext_page4.dmp"
+      //POIN RText_Page4
 
   POP
   

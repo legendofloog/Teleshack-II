@@ -31,4 +31,10 @@ BYTE HardCharLock
 BYTE Cleo
 BYTE EndLockArray
 
+
+CromarLock:
+BYTE HardCharLock
+BYTE Cromar
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS
