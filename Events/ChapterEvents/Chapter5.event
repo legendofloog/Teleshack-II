@@ -1,0 +1,134 @@
+// WIP - pasting in some ch3 event stuff to use as a template
+
+EventPointerTable(Chapter5Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 7)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
+TurnEventPlayer(0, EnemyReinforcementsEvent_C, 9)
+TurnEventPlayer(0, EnemyReinforcementsEvent_D, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_E, 11)
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Traps1:
+RedSigil(29,11)
+RedSigil(29,12)
+RedSigil(29,13)
+RedSigil(29,14)
+RedSigil(29,15)
+ENDTRAP
+ALIGN 4
+
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+DraganaUnit:
+UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UUNIT
+
+AllyUnits:
+UNIT
+
+EnemyReinforcements_A:
+UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(3,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics Archer  Emory_Ch3 Level(5,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [IronBow] ChargeAI
+UNIT
+
+EnemyReinforcementsEvent_A:
+CamOn
+LOAD1 1 EnemyReinforcements_A
+ENUN
+CamOff
+ENDA
+
+BeginningScene:
+COUNTER_SET 0 0
+SetBackground(CastleHallway)
+Text(BeginningSceneTextA)
+Text(BeginningSceneTextB)
+Text(BeginningSceneTextC)
+CALL $9EE2C4
+LOAD1 2 Units1
+LOAD1 1 DraganaUnit
+LOAD1 1 EnemyUnits
+LOAD1 1 AllyUnits
+ENUN
+ENDA
+
+EndingScene:
+MUSC 0x7FFF
+EscapeCapturedCheck(Mira, 0x8B)
+EscapeCapturedCheck(Iskra, 0x8C)
+EscapeCapturedCheck(Emil, 0x8D)
+EscapeCapturedCheck(Svetomir, 0x8E)
+EscapeCapturedCheck(Alena, 0x8F)
+EscapeCapturedCheck(Varga, 0x90)
+EscapeCapturedCheck(Delilah, 0x91)
+EscapeCapturedCheck(Alex, 0x92)
+EscapeCapturedCheck(Axel, 0x93)
+Text(MapEndText)
+SetBackground(CastleHallway)
+Text(EndingSceneTextA1)
+Text(EndingSceneTextA2)
+Text(EndingSceneTextA3)
+Text(EndingSceneTextA4)
+SendAll(Dragana)
+REMOVEUNIT Dragana
+MNC2 Chapter4
+NoFade
+ENDA

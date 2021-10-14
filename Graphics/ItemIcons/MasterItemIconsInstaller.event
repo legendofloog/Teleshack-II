@@ -66,5 +66,7 @@ ItemIconSlot(0xD2,"Png/MarchRing.png")
 ItemIconSlot(0xD3,"Png/RitualKnife.png")
 ItemIconSlot(0xD4,"Png/SpellMirror.png")
 ItemIconSlot(0xD5,"Png/Burn.png")
+ItemIconSlot(0xC8,"Png/Hurlbat.png")
+ItemIconSlot(0xC9,"Png/Arachnid.png")
 POP
 

@@ -1,65 +1,78 @@
-## CleoDeathQuoteText
-[MidRight][LoadCleo]
-The end is closing in[Beat] I failed[N]
-to atone for all that I've done.[AN]
-Even so, is this[Beat] peace I feel?[N]
-My comrades[Beat] please live on[Beat][A][CloseEyes][X]
-
-## LoeweDeathQuoteText
-[MidRight][LoadLoewe]
-This is as far as my strength[N]
-could take me[Beat] Ha... hahaha![AN]
-What a pathetic life I've led.[N]
+## CleoDeathQuoteText,,
+[MidRight][LoadCleo],,
+The end is closing in[Beat] I failed[N],,
+to atone for all that I've done.[AN],,
+Even so, is this[Beat] peace I feel?[N],
+My comrades[Beat] please live on[Beat][A][CloseEyes][X],,
+,,
+## LoeweDeathQuoteText,,
+[MidRight][LoadLoewe],,
+This is as far as my strength[N],,
+could take me[Beat] Ha... hahaha![AN],,
+What a pathetic life I've led.[N],,
 Mom, Dad, I'll be there soon[Beat][A][CloseEyes][X]
+,,
+## MiraDeathQuoteText,,
+[MidRight][LoadMira],,
+After all these years of risking[N],,
+death, this is how it ends?[AN],
+It's all up to you two now[Beat][A][CloseEyes][X],,
+,,
+## IskraDeathQuoteText,,
+[MidRight][LoadIskra],,
+N-No[Beat] I wasn't supposed to[N],,
+die here[Beat] Sorry, Loewe.[AN],
+It looks like I'm going first[Beat][A][CloseEyes][X],,
+,,
+## EmilDeathQuoteText,,
+[MidRight][LoadEmil],,
+Looks like I'm at my limit[Beat][N],,
+Still, it was[Beat] a good life.[A][CloseEyes][X],
+,,
+## SvetomirDeathQuoteText,,
+[MidRight][LoadSvetomir],,
+No[Beat] please[Beat] I can't die yet![N],,
+Not until Decia is free[Beat][A][CloseEyes][X],,
+,,
+## AlenaDeathQuoteText,,
+[MidRight][LoadAlena],,
+[Beat]Nowhere to run now. I always[N],,
+knew it would end like this[Beat][A][CloseEyes][X],,
+,,
+## DelilahDeathQuote,,
+[MidRight][LoadDelilah],,
+Heh[Beat] guess I'll see[N],,
+if it was enough[Beat][A][X],,
+,,
+## VargaDeathQuote,,
+[MidRight][LoadVarga],,
+[Beat]Hell[Beat][A][X],,
+,,
+## DraganaDeathQuote,,
+[MidRight][LoadDragana],,
+Urk[Beat] How could I[Beat]?[N],,
+Here of all[Beat] places?[CloseEyes][A][X],,
+,,
+## FiloneDeathQuoteText,,
+[MidRight][LoadFilone],,
+Is this[Beat] really over?[N],,
+But[Beat] But[Beat][A][CloseEyes][X],,
+,,
+## ZwieDeathQuoteText,,
+[MidRight][LoadZwie],,
+Easy come[Beat][N],,
+Easy go[Beat][AN][CloseEyes][X],,
+,,
+## LongxiaDeathQuoteText,,
+[MidRight][LoadLongxia],,
+Graaa…[AN][X],,
+,,
+## Fangai,,
+[MidRight][LoadFangai],,
+But supper is still…[N],,
+cooking… yurrghh...[AN][X],,
 
-## MiraDeathQuoteText
-[MidRight][LoadMira]
-After all these years of risking[N]
-death, this is how it ends?[AN]
-It's all up to you two now[Beat][A][CloseEyes][X]
-
-## IskraDeathQuoteText
-[MidRight][LoadIskra]
-N-No[Beat] I wasn't supposed to[N]
-die here[Beat] Sorry, Loewe.[AN]
-It looks like I'm going first[Beat][A][CloseEyes][X]
-
-## EmilDeathQuoteText
-[MidRight][LoadEmil]
-Looks like I'm at my limit[Beat][N]
-Still, it was[Beat] a good life.[A][CloseEyes][X]
-
-## SvetomirDeathQuoteText
-[MidRight][LoadSvetomir]
-No[Beat] please[Beat] I can't die yet![N]
-Not until Decia is free[Beat][A][CloseEyes][X]
-
-## AlenaDeathQuoteText
-[MidRight][LoadAlena]
-[Beat]Nowhere to run now. I always[N]
-knew it would end like this[Beat][A][CloseEyes][X]
-
-## DelilahDeathQuote
-[MidRight][LoadDelilah]
-Heh[Beat] guess I'll see[N]
-if it was enough[Beat][A][X]
-
-## VargaDeathQuote
-[MidRight][LoadVarga]
-[Beat]Hell[Beat][A][X]
-
-## DraganaDeathQuote
-[MidRight][LoadDragana]
-Urk[Beat] How could I[Beat]?[N]
-Here of all[Beat] places?[CloseEyes][A][X]
-
-## FiloneDeathQuoteText
-[MidRight][LoadFilone]
-Is this[Beat] really over?[N]
-But[Beat] But[Beat][A][CloseEyes][X]
-
-## ZwieDeathQuoteText
-[MidRight][LoadZwie]
-Easy come[Beat][N]
-Easy go[Beat][AN][CloseEyes][X]
-
+## Riggan,,
+[MidLeft][LoadRiggan],,
+No, no, no, a thousand[N]
+times no, I say! No...[AN][X]
