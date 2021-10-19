@@ -1,5 +1,3 @@
-// WIP - pasting in some ch3 event stuff to use as a template
-
 EventPointerTable(Chapter5Events, PointerList)
 
 PointerList:
@@ -15,11 +13,11 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0, EnemyReinforcementsEvent_A, 7)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
-TurnEventPlayer(0, EnemyReinforcementsEvent_C, 9)
-TurnEventPlayer(0, EnemyReinforcementsEvent_D, 10)
-TurnEventPlayer(0, EnemyReinforcementsEvent_E, 11)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 3)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B, 5)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B, 6)
+TurnEventPlayer(0, EndOfSurvive, 9)
 END_MAIN
 
 CharacterBasedEvents:
@@ -45,24 +43,41 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-Units1:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT
+EndOfSurvive
+ENUT 0x3
+CALL (PostBattleTime)
 
-Traps1:
-RedSigil(29,11)
-RedSigil(29,12)
-RedSigil(29,13)
-RedSigil(29,14)
-RedSigil(29,15)
+Units1:
+LoadUnit(23,1)
+LoadUnit(24,1)
+LoadUnit(25,1)
+LoadUnit(26,1)
+LoadUnit(27,1)
+LoadUnit(23,2)
+LoadUnit(24,2)
+LoadUnit(25,2)
+LoadUnit(26,2)
+LoadUnit(27,2)
+	UNIT
+	
+NewPlayers:
+Longxia Corsair_F Cleo Level(3,Ally,False) [23,1] 0x0 0x0 0x0 0x0 [Hammer,Hurlbat] NoAI
+Fangai DarkMage Cleo Level(3,Ally,False) [23,2] 0x0 0x0 0x0 0x0 [Arachnid,Heal,TorchStaff] NoAI
+	UNIT
+
+FireTrap:
+FireTrap(19,2)
+FireTrap(19,3)
+FireTrap(15,15)
+FireTrap(14,15)
+FireTrap(12,18)
+FireTrap(12,19)
+FireTrap(12,20)
+FireTrap(27,10)
+FireTrap(28,10)
+FireTrap(25,18)
+FireTrap(10,7)
+FireTrap(10,8)
 ENDTRAP
 ALIGN 4
 
@@ -71,22 +86,45 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
-DraganaUnit:
-UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] NoAI
-UNIT
-
 EnemyUnits:
-UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
-UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
-UUNIT
+UNIT Riggan Mage 0x0 Level(10,Enemy,False) [4,16] 0x0 0x3 0x4 0x0 [Wind,Thunder,GoddessIcon] AttackInRangeAI
+UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [18,2] 0x0 0x0 0x0 0x2 [Longsword,Torch] BossAI
+UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [18,3] 0x0 0x0 0x0 0x2 [Longsword,ChestKey] BossAI
+UNIT Chapter1Generics DarkMage  Riggan Level(5,Enemy,True) [16,2] 0x0 0x6 0x4 0x0 [Flux,PureWater] TwoActionAI
+UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [12,5] 0x0 0x6 0x4 0x0 [Flux,Heal] TwoActionAI
+UNIT Chapter1Generics BowArmor   Riggan Level(5,Enemy,True) [17,9] 0x0 0x6 0x4 0x0 [Longbow] TwoActionAI
+UNIT Chapter1Generics AxeArmor  Riggan Level(5,Enemy,True) [9,7] 0x0 0x0 0x0 0x2 [IronAxe] BossAI
+UNIT Chapter1Generics AxeArmor  Riggan Level(5,Enemy,True) [9,8] 0x0 0x0 0x0 0x2 [IronAxe] BossAI
+UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [27,11] 0x0 0x0 0x0 0x2 [LongLance,ChestKey] BossAI
+UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [28,11] 0x0 0x0 0x0 0x2 [LongLance] BossAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [27,8] 0x0 0x6 0x4 0x0 [IronAxe] TwoActionAI
+UNIT Chapter1Generics SwordFighter  Riggan Level(5,Enemy,True) [28,7] 0x0 0x6 0x4 0x0 [ShortSword] TwoActionAI
+UNIT Chapter1Generics BowArmor   Riggan Level(5,Enemy,True) [29,19] 0x0 0x6 0x4 0x0 [Longbow,Vulnerary] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [28,25] 0x0 0x6 0x4 0x0 [Wind,Lightning] TwoActionAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [20,19] 0x0 0x6 0x4 0x0 [SteelAxe,Vulnerary] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [21,13] 0x0 0x6 0x4 0x0 [IronLance] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [20,26] 0x0 0x6 0x4 0x0 [Lightning,Fire] TwoActionAI
+UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [14,16] 0x0 0x0 0x0 0x2 [LongLance] BossAI
+UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [15,16] 0x0 0x0 0x0 0x2 [LongLance] BossAI
+UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [11,18] 0x0 0x0 0x0 0x2 [Longsword] BossAI
+UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [11,19] 0x0 0x0 0x0 0x2 [Longsword] BossAI
+UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [11,20] 0x0 0x0 0x0 0x2 [Longsword] BossAI
+UNIT Chapter1Generics BowArmor   Riggan Level(5,Enemy,True) [6,19] 0x0 0x6 0x4 0x0 [Longbow] TwoActionAI
+UNIT Chapter1Generics Swordfighter   Riggan Level(5,Enemy,True) [7,13] 0x0 0x6 0x4 0x0 [ShortSword] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [7,15] 0x0 0x6 0x4 0x0 [SlimLance] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [5,5] 0x0 0x6 0x4 0x0 [Lightning] TwoActionAI
+UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [3,15] 0x0 0x6 0x4 0x0 [Flux,Heal] TwoActionAI
+UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [4,14] 0x0 0x6 0x4 0x0 [Heal,Vulnerary] TwoActionAI
+UNIT
 
 AllyUnits:
 UNIT
 
 EnemyReinforcements_A:
-UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(3,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
-UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
-UNIT Chapter1Generics Archer  Emory_Ch3 Level(5,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [IronBow] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(4,Enemy,True) [13,17] 0x0 0x0 0x4 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics Bard   Riggan Level(4,Enemy,True) [19,24] 0x0 0x0 0x4 0x0 [Lightning] ChargeAI
+UNIT Chapter1Generics Swordfighter   Riggan Level(4,Enemy,True) [28,23] 0x0 0x0 0x4 0x0 [ShortSword] ChargeAI
+UNIT Chapter1Generics Swordfighter   Riggan Level(4,Enemy,True) [4,18] 0x0 0x0 0x4 0x0 [ShortSword] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_A:
@@ -96,39 +134,53 @@ ENUN
 CamOff
 ENDA
 
-BeginningScene:
-COUNTER_SET 0 0
-SetBackground(CastleHallway)
-Text(BeginningSceneTextA)
-Text(BeginningSceneTextB)
-Text(BeginningSceneTextC)
-CALL $9EE2C4
-LOAD1 2 Units1
-LOAD1 1 DraganaUnit
-LOAD1 1 EnemyUnits
-LOAD1 1 AllyUnits
+EnemyReinforcements_B:
+UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [3,31] 0x0 0x0 0x4 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [4,31] 0x0 0x0 0x4 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [3,30] 0x0 0x0 0x4 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [4,30] 0x0 0x0 0x4 0x0 [ShortLance] ChargeAI
+UNIT
+
+EnemyReinforcementsEvent_B:
+CamOn
+LOAD1 1 EnemyReinforcements_B
 ENUN
+CamOff
+ENDA
+
+LocationBasedEvents:
+Chest(Unlock,4,8)
+Chest(HeavySpear,22,23)
+
+END_MAIN
+
+BeginningScene:
+SetBackground(0x07)
+SystemText(SysTextOpening)
+Text(AtPort)
+SystemText(SysTextMomentsLater)
+Text(MeetingLongxia)
+SetBackground(0x08)
+Text(BoatTalk)
+MUSC(Tension)
+Text(Tension)
+Text(Enemy)
+CALL $9EE2C4
+CLEAN
+LOAD1 2 Units1
+LOAD1 1 NewPlayers
+LOAD1 1 EnemyUnits
+ENUN
+STAL 3
+	GotoPrepScreen
 ENDA
 
 EndingScene:
-MUSC 0x7FFF
-EscapeCapturedCheck(Mira, 0x8B)
-EscapeCapturedCheck(Iskra, 0x8C)
-EscapeCapturedCheck(Emil, 0x8D)
-EscapeCapturedCheck(Svetomir, 0x8E)
-EscapeCapturedCheck(Alena, 0x8F)
-EscapeCapturedCheck(Varga, 0x90)
-EscapeCapturedCheck(Delilah, 0x91)
-EscapeCapturedCheck(Alex, 0x92)
-EscapeCapturedCheck(Axel, 0x93)
-Text(MapEndText)
-SetBackground(CastleHallway)
-Text(EndingSceneTextA1)
-Text(EndingSceneTextA2)
-Text(EndingSceneTextA3)
-Text(EndingSceneTextA4)
-SendAll(Dragana)
-REMOVEUNIT Dragana
-MNC2 Chapter4
+FlagConditionalDialog(0x2,PostBattleBoss,PostBattleTime)
+SetBackground(Boat)
+MUSC(0x4a)
+Text(Lore)
+Text(Lore2)
+MNC2 Chapter6
 NoFade
 ENDA

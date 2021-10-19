@@ -127,3 +127,19 @@
 // FiloneSniper
 	setPalette(30,FiloneSniper)
 	setCBSP(30,Filone, 3, Sniper)
+
+// LongxiaCorsair_F
+	setPalette(31,LongxiaCorsair_F)
+	setCBSP(31,Longxia, 1, Corsair_F)
+
+// LongxiaBerserker_F
+	setPalette(32,LongxiaBerserker_F)
+	setCBSP(32,Longxia, 3, Berserker_F)
+
+// FangaiDarkMage
+	setPalette(33,FangaiDarkMage)
+	setCBSP(33,Fangai, 1, DarkMage)
+
+// FangaiDarkBishop
+	setPalette(34,FangaiDarkBishop)
+	setCBSP(34,Fangai, 3, DarkBishop)
