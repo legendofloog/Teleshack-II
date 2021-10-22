@@ -45,7 +45,9 @@ END_MAIN
 
 EndOfSurvive
 ENUT 0x3
-CALL (PostBattleTime)
+CALL EndingScene
+NoFade
+ENDA
 
 Units1:
 LoadUnit(23,1)
@@ -117,9 +119,6 @@ UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [3,15] 0x0 0x6 0x4 0
 UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [4,14] 0x0 0x6 0x4 0x0 [Heal,Vulnerary] TwoActionAI
 UNIT
 
-AllyUnits:
-UNIT
-
 EnemyReinforcements_A:
 UNIT Chapter1Generics AxeSoldier   Riggan Level(4,Enemy,True) [13,17] 0x0 0x0 0x4 0x0 [SlimAxe] ChargeAI
 UNIT Chapter1Generics Bard   Riggan Level(4,Enemy,True) [19,24] 0x0 0x0 0x4 0x0 [Lightning] ChargeAI
@@ -163,8 +162,8 @@ Text(MeetingLongxia)
 SetBackground(0x08)
 Text(BoatTalk)
 MUSC(Tension)
-Text(Tension)
-Text(Enemy)
+Text(TensionCh5Text)
+Text(EnemyCh5Text)
 CALL $9EE2C4
 CLEAN
 LOAD1 2 Units1
@@ -173,14 +172,17 @@ LOAD1 1 EnemyUnits
 ENUN
 STAL 3
 	GotoPrepScreen
+FADU 60
+Text(PostPrepsCh5Text)
+NoFade
 ENDA
 
 EndingScene:
 FlagConditionalDialog(0x2,PostBattleBoss,PostBattleTime)
 SetBackground(Boat)
 MUSC(0x4a)
-Text(Lore)
-Text(Lore2)
+Text(LoreCh5Text)
+Text(Lore2Ch5Text)
 MNC2 Chapter6
 NoFade
 ENDA

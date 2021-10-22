@@ -1,225 +1,236 @@
-## LoeweName,
-Loewe[X],
-,
-## LoeweDesc,
-A war-weary rebel seeking revenge.[N],
-Son of a Mahemeni swordmaster.[X],
-,
-## CleoName,
-Cleo[X],
-,
-## CleoDesc,
-A skilled tactician for the Liberators.[N],
-Formerly a Vyren before she defected.[X],
-,
-## MiraName,
-Mira[X],
-,
-## MiraDesc,
-The leader of the Liberators'[N],
-recon unit and one of its founders.[X],
-,
-## IskraName,
-Iskra[X],
-,
-## IskraDesc,
-A young woman who recently joined the[N],
-Liberators. Seeks to prove her worth.[X],
-,
-## EmilName,
-Emil[X],
-,
-## EmilDesc,
-A Vyren horseman who deserted his army,[N]
-disillusioned by their actions in Decia.[X],
-,
-## SvetomirName,
-Svetomir[X],
-,
-## SvetomirDesc,
-The priest of a small abbey in Vetheim.[N],
-Ardently hates the Vyren occupation.[X],
-,
-## AlenaName,
-Alena[X],
-,
-## AlenaDesc,
-A swordswoman who lacks a sense of[N],
-purpose, flowing with the current.[X]
-,
-## RaschwitzName,
-Raschwitz[X],
-,
-## RaschwitzDesc,
-A cowardly guard working in Duke[N],
-Cibor's dungeons. Tends to boast.[X],
-,
-## BoroName,
-Boro[X],
-,
-## BoroDesc,
-The former second-in-command of the[N],
-Liberators. Values gold above all.[X],
-,
-## SeleseFactionName,
-Selese[X],
-,
-## SeleseFactionDesc,
-Those who serve Duke Cibor. Turned[N],
-against Decia and sided with Cytheans.[X],
-,
-## SennyName,
-Senny[X],
-,
-## SennyDesc,
-A young woman in the dungeon after[N],
-protesting the Vyren Empire. Regretful.[X],
-,
-## HelmanName,
-Helman[X],
-,
-## HelmanDesc,
-An ornery old man who refused to pay[N],
-his taxes. An expert metalworker.[X],
-,
-## VargaName,
-Varga[X],
-,
-## VargaDesc,
-Seems to be a turncoat Selesian.[N],
-Surly and secretive.[X],
-,
-## TyrName,
-Tyr[X],
-,
-## TyrDesc,
-A pompous, recently promoted[N]
-member of Cibor's guards.[X],
-,
-## DelilahName,
-Delilah[X],
-,
-## DelilahDesc,
-An insufferably sarcastic[N],
-sister of Vetheim's abbey.[X],
-,
-## HernandezName,
-Hernandez[X],
- ,
-## HernandezDesc,
-A loathsome but incompetent[N],
-brigand.[X],
-,
-## DraganaName,
-Dragana[X],
-,
-## DraganaDesc,
-Leader of the Liberators.[N],
-Her resolve is unbreakable.[X],
-,
-## AlexName,
-Alex[X],
-,
-## AlexAxelDesc,
-One of two twins in the Decian[N],
-Liberators. Reckless and upbeat.[X],
-,
-## AxelName,
-Axel[X],
-,
-## EmoryName,
-Emory[X],
-,
-## EmoryDesc,
-A knight in service to House[N],
-Selese. Dutiful to a fault.[X],
-,
-## FiloneName,
-Filone[X],
-,
-## FiloneDesc,
-An apprentice archer following in[N],
-her father's steps. A weary learner.[X],
-,
-## ZwiebackName,
-Zwieback[X],
-,
-## ZwiebackDesc,
-A former Decian guard. He's[N],
-troubled yet stalwart.[X],
-,
-## HilName,
-Hilmar[X],
-,
-## HilDesc,
-A knight of Cibor's guards.[N],
-Loyal to the end.[X],
-,
-## LeinaName,
-Leina[X],
-,
-## LeinaDesc,
-A young lady with a troubled past.[X],
-,
-## CromarName,
-Cromar[X],
-,
-## CromarDesc,
-A mysterious swordsman,[N]
-dead set on vengeance.[X],
-,
-## VladithName,
-Vladith[X],
-,
-## VladithDesc,
-He sells skills,[N]
-EVIL skills.[X],
-,
-## BarodName,
-Barod[X],
-,
-## BarodDesc,
-The Fightmonger, master of the[N]
-arena, the undefeated legend.[X]
-,
-## ZeusName,
-Zeus[X],
-,
-## ZeusDesc,
-The God King of the arena.[N],
-Rumored to be royalty.[X],
-,
-## McCallumName,
-McCallum[X],
-,
-## McCallumDesc,
-A pirate, cruel in his younger days[N]
-now seeking atonement.[X],
-,
-## GladiatorName,
-Gladiator[X],
-,
-## GladiatorDesc,
-A ruthless pitfighter.[X],
-,
-## Ch5CivilianName,
-Spectator[X],
-,
-## CivilianName,
-Civilian[X],
-,
-## CivilianDesc,
-A regular civilian.[X],
-,
-## LongxiaDesc,
-A sailor with an eye,[N]
-"for gold, boats, and seafood.[X]",
-,
-## FangaiDesc,
-An eccentric dark mage,[N]
-who enjoys cooking.[X],
-,
+## LoeweName
+Loewe[X]
+
+## LoeweDesc
+A war-weary rebel seeking revenge.[N]
+Son of a Mahemeni swordmaster.[X]
+
+## CleoName
+Cleo[X]
+
+## CleoDesc
+A skilled tactician for the Liberators.[N]
+Formerly a Vyren before she defected.[X]
+
+## MiraName
+Mira[X]
+
+## MiraDesc
+The leader of the Liberators'[N]
+recon unit and one of its founders.[X]
+
+## IskraName
+Iskra[X]
+
+## IskraDesc
+A young woman who recently joined the[N]
+Liberators. Seeks to prove her worth.[X]
+
+## EmilName
+Emil[X]
+
+## EmilDesc
+A Vyren horseman who deserted his army[N]
+disillusioned by their actions in Decia.[X]
+
+## SvetomirName
+Svetomir[X]
+
+## SvetomirDesc
+The priest of a small abbey in Vetheim.[N]
+Ardently hates the Vyren occupation.[X]
+
+## AlenaName
+Alena[X]
+
+## AlenaDesc
+A swordswoman who lacks a sense of[N]
+purpose flowing with the current.[X]
+
+## RaschwitzName
+Raschwitz[X]
+
+## RaschwitzDesc
+A cowardly guard working in Duke[N]
+Cibor's dungeons. Tends to boast.[X]
+
+## BoroName
+Boro[X]
+
+## BoroDesc
+The former second-in-command of the[N]
+Liberators. Values gold above all.[X]
+
+## SeleseFactionName
+Selese[X]
+
+## SeleseFactionDesc
+Those who serve Duke Cibor. Turned[N]
+against Decia and sided with Cytheans.[X]
+
+## SennyName
+Senny[X]
+
+## SennyDesc
+A young woman in the dungeon after[N]
+protesting the Vyren Empire. Regretful.[X]
+
+## HelmanName
+Helman[X]
+
+## HelmanDesc
+An ornery old man who refused to pay[N]
+his taxes. An expert metalworker.[X]
+
+## VargaName
+Varga[X]
+
+## VargaDesc
+Seems to be a turncoat Selesian.[N]
+Surly and secretive.[X]
+
+## TyrName
+Tyr[X]
+
+## TyrDesc
+A pompous recently promoted[N]
+member of Cibor's guards.[X]
+
+## DelilahName
+Delilah[X]
+
+## DelilahDesc
+An insufferably sarcastic[N]
+sister of Vetheim's abbey.[X]
+
+## HernandezName
+Hernandez[X]
+ 
+## HernandezDesc
+A loathsome but incompetent[N]
+brigand.[X]
+
+## DraganaName
+Dragana[X]
+
+## DraganaDesc
+Leader of the Liberators.[N]
+Her resolve is unbreakable.[X]
+
+## AlexName
+Alex[X]
+
+## AlexAxelDesc
+One of two twins in the Decian[N]
+Liberators. Reckless and upbeat.[X]
+
+## AxelName
+Axel[X]
+
+## EmoryName
+Emory[X]
+
+## EmoryDesc
+A knight in service to House[N]
+Selese. Dutiful to a fault.[X]
+
+## FiloneName
+Filone[X]
+
+## FiloneDesc
+An apprentice archer following in[N]
+her father's steps. A weary learner.[X]
+
+## ZwiebackName
+Zwieback[X]
+
+## ZwiebackDesc
+A former Decian guard. He's[N]
+troubled yet stalwart.[X]
+
+## HilName
+Hilmar[X]
+
+## HilDesc
+A knight of Cibor's guards.[N]
+Loyal to the end.[X]
+
+## LeinaName
+Leina[X]
+
+## LeinaDesc
+A young lady with a troubled past.[X]
+
+## CromarName
+Cromar[X]
+
+## CromarDesc
+A mysterious swordsman[N]
+dead set on vengeance.[X]
+
+## VladithName
+Vladith[X]
+
+## VladithDesc
+He sells skills[N]
+EVIL skills.[X]
+
+## BarodName
+Barod[X]
+
+## BarodDesc
+The Fightmonger master of the[N]
+arena the undefeated legend.[X]
+
+## ZeusName
+Zeus[X]
+
+## ZeusDesc
+The God King of the arena.[N]
+Rumored to be royalty.[X]
+
+## McCallumName
+McCallum[X]
+
+## McCallumDesc
+A pirate cruel in his younger days[N]
+now seeking atonement.[X]
+
+## GladiatorName
+Gladiator[X]
+
+## GladiatorDesc
+A ruthless pitfighter.[X]
+
+## Ch5CivilianName
+Spectator[X]
+
+## CivilianName
+Civilian[X]
+
+## CivilianDesc
+A regular civilian.[X]
+
+## LongxiaName
+Longxia[X]
+
+## LongxiaDesc
+A sailor with an eye[N]
+for gold, seafood, and ships.[N]
+Has something of a dark past.[X]
+
+## FangaiName
+Fangai[X]
+
+## FangaiDesc
+An eccentric dark mage[N]
+who enjoys cooking.[N]
+Secretly yearns for love.[X]
+
+## RigganName
+Riggan[X]
+
 ## RigganDesc
 A magic prodigy who has[N]
 ascended Selessian military[N]
-ranks. Egotistical.[X]
+ranks. Brooding, yet egotistical.[X]

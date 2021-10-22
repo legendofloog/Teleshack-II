@@ -24,7 +24,7 @@
 #define HilmarMug 0x4b
 #define LongxiaMug 0x16
 #define FangaiMug 0x18
-#define KwameMug 
+#define KwameMug 0x57 // Ismaire (eyes closed), maybe a placeholder slot?
 #define RigganMug 0x3f
 
 ALIGN 16
@@ -207,25 +207,25 @@ setMugEntry(HilmarMug, HilmarMugData, 3, 5, 3, 3)
 ALIGN 16
 LongxiaMugData:
 #incbin "Dmp/Longxia/Longxia (Capibara)_mug.dmp"
-#incbin "Dmp/Longxia/Longxia(Capibara)_frames.dmp"
+#incbin "Dmp/Longxia/Longxia (Capibara)_frames.dmp"
 #incbin "Dmp/Longxia/Longxia (Capibara)_palette.dmp"
-#incbin "Dmp/Longxia/Longxia(Capibara)_minimug.dmp"
+#incbin "Dmp/Longxia/Longxia (Capibara)_minimug.dmp"
 setMugEntry(LongxiaMug, LongxiaMugData, 3, 5, 3, 3)
 
 ALIGN 16
 FangaiMugData:
-#incbin "Dmp/Fangai/Fangai(RandomWizard)_frames.dmp"
-#incbin "Dmp/Fangai/Fangai(RandomWizard)_minimug.dmp"
-#incbin "Dmp/Fangai/Fangai(RandomWizard)_mug.dmp"
-#incbin "Dmp/Fangai/Fangai(RandomWizard)_palette.dmp"
+#incbin "Dmp/Fangai/Fangai (RandomWizard)_frames.dmp"
+#incbin "Dmp/Fangai/Fangai (RandomWizard)_minimug.dmp"
+#incbin "Dmp/Fangai/Fangai (RandomWizard)_mug.dmp"
+#incbin "Dmp/Fangai/Fangai (RandomWizard)_palette.dmp"
 setMugEntry(FangaiMug, FangaiMugData, 3, 5, 3, 3)
 
 ALIGN 16
 KwameMugData:
-#incbin "Dmp/Kwame/Kwame(knabepicer,mrgreen,IS)_frames.dmp"
-#incbin "Dmp/Kwame/Kwame(knabepicer,mrgreen,IS)_minimug.dmp"
-#incbin "Dmp/Kwame/Kwame(knabepicer,mrgreen,IS)_mug.dmp"
-#incbin "Dmp/Kwame/Kwame(knabepicer,mrgreen,IS)_palette.dmp"
+#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_frames.dmp"
+#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_minimug.dmp"
+#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_mug.dmp"
+#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_palette.dmp"
 setMugEntry(KwameMug, KwameMugData, 3, 5, 3, 3)
 
 ALIGN 16
