@@ -214,27 +214,27 @@ setMugEntry(LongxiaMug, LongxiaMugData, 3, 5, 3, 3)
 
 ALIGN 16
 FangaiMugData:
-#incbin "Dmp/Fangai/Fangai (RandomWizard)_frames.dmp"
-#incbin "Dmp/Fangai/Fangai (RandomWizard)_minimug.dmp"
 #incbin "Dmp/Fangai/Fangai (RandomWizard)_mug.dmp"
+#incbin "Dmp/Fangai/Fangai (RandomWizard)_frames.dmp"
 #incbin "Dmp/Fangai/Fangai (RandomWizard)_palette.dmp"
-setMugEntry(FangaiMug, FangaiMugData, 3, 5, 3, 3)
+#incbin "Dmp/Fangai/Fangai (RandomWizard)_minimug.dmp"
+setMugEntry(FangaiMug, FangaiMugData, 3, 6, 3, 4)
 
 ALIGN 16
 KwameMugData:
-#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_frames.dmp"
-#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_minimug.dmp"
 #incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_mug.dmp"
+#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_frames.dmp"
 #incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_palette.dmp"
-setMugEntry(KwameMug, KwameMugData, 3, 5, 3, 3)
+#incbin "Dmp/Kwame/Kwame (knabepicer,mrgreen,IS)_minimug.dmp"
+setMugEntry(KwameMug, KwameMugData, 2, 5, 3, 2)
 
 ALIGN 16
 RigganMugData:
-#incbin "Dmp/Riggan/Riggan_minimug.dmp"
-#incbin "Dmp/Riggan/Riggan_frames.dmp"
 #incbin "Dmp/Riggan/Riggan_mug.dmp"
+#incbin "Dmp/Riggan/Riggan_frames.dmp"
 #incbin "Dmp/Riggan/Riggan_palette.dmp"
-setMugEntry(RigganMug, RigganMugData, 3, 5, 3, 3)
+#incbin "Dmp/Riggan/Riggan_minimug.dmp"
+setMugEntry(RigganMug, RigganMugData, 2, 6, 3, 4)
 
 
 

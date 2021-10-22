@@ -52,7 +52,7 @@ Do we have an escape plan?[A]
 
 Not exactly but I think[N]
 
-Varga might know.[AN]
+Varga might know.[AN][CloseSpeechSlow]
 
 [FarLeft][ClearFace][Left][ClearFace]
 
@@ -64,7 +64,7 @@ Varga, where-[A]
 
 [MidLeft]
 
-Follow me.[....] It's this way.[A]
+Follow me.[....] It's this way.[A][CloseSpeechSlow]
 
 [MoveFarFarRight]
 

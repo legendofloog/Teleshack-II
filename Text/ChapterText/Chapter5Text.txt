@@ -36,7 +36,7 @@ It'll look less suspicious than our[N]
 traveling with a large group.[A][X]
 
 ## SysTextMomentsLater
-After searching for a boat[Beat][A][X]
+After searching for a boat...[A][X]
 
 ## MeetingLongxia
 [OpenLeft][LoadCleo][OpenRight][LoadLoewe]
@@ -112,7 +112,7 @@ our remaining forces.[AN]
 [OpenRight]Let's hope that two heads[N]
 are actually better than one.[AN]
 [OpenFarFarRight]Two heads are better than one,[N]
-but have you considered three?[AN]
+but have you considered three?[AN][CloseSpeechSlow]
 [OpenRight][ClearFace]
 [OpenRight][LoadKwame][OpenFarRight][LoadLongxia]
 [OpenFarLeft][LoadLoewe]
@@ -240,7 +240,9 @@ The ocean's boiling like a kettle![N]
 They're gonna steam us like a crab![A][X]
 
 ## TensionCh5Text
-# edited the name since Tension is generic
+[FarRight][LoadLongxia]
+[Right][LoadKwame]
+[FarLeft][LoadLoewe]
 [OpenFarRight]Fangai![AN]
 Don't let that lobster spoil.[N]
 We'll take care of this.[AN]
