@@ -43,3 +43,5 @@ SongTable(Dreaming,songDB,MapMusicGroup)
 SongTable(DawnOfYs,songD9,MapMusicGroup)
 #include "MusicEvents/harvestdancegba.event"
 SongTable(HarvestDance,HarvestDance_TOLUCT,MapMusicGroup)
+#include "MusicEvents/mutecity.event"
+SongTable(mutecity,song58,MapMusicGroup)

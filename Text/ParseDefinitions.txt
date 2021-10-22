@@ -71,6 +71,11 @@
 [LoadZwie] = [LoadFace][0x10][0x1]
 [LoadZwieback] = [LoadFace][0x10][0x1]
 [LoadHilmar] = [LoadFace][0x4b][0x1]
+[LoadLongxia] = [LoadFace][0x16][0x1]
+[LoadFangai] = [LoadFace][0x18][0x1]
+[LoadKwame] = [LoadFace][0x57][0x1]
+[LoadRiggan] = [LoadFace][0x3f][0x1]
+
 
 [LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]

@@ -1,5 +1,5 @@
 ## KingSwordDesc
-Doubles attacks, grants Charisma.[X]
+Doubles attacks grants Charisma.[X]
 
 ## FlameSwordDesc
 Casts magical flame. Mag +5.[X]
@@ -68,7 +68,7 @@ A bow with exceptional range.[X]
 Beiyr Scroll[X]
 
 ## BeiyrScrollDesc
-+10% Str, +10% Skl +10% Lck.[X]
++10% Str +10% Skl +10% Lck.[X]
 
 ## TemperedName
 [_T][_e]m[_p][_e][_r][_e][_d][_sp][_R]i[_n][_g][X]
@@ -124,20 +124,30 @@ Spell Mirror[X]
 
 ## SpellMirrorDesc
 [_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+
 ## AlairsGaleName
 Arai's Gale[X]
 
 ## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
 
 ## MarchRingName
 March Ring[X]
 
 ## MarchRingDesc
-[_+][_1][_SP][_M][_o][_v][_e][_,][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
+[_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
 
 ## CivilianProofName
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
 
 ## CivilianProofDesc
 [_C][_a][_n][_n][_o][_t][_SP][_e][_n][_t][_e][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+
+## ArachnidName
+Arachnid[X]
+
+## ArachnidDesc
+Brave Effect.[X]
+
+## HurlbatName
+Hurlbat[X]

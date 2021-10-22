@@ -50,7 +50,7 @@ if it was enough[Beat][A][X]
 
 ## DraganaDeathQuote
 [MidRight][LoadDragana]
-Urk[Beat] How could I[Beat]?[N]
+Urk[Beat] How could I[Beat]?[N],
 Here of all[Beat] places?[CloseEyes][A][X]
 
 ## FiloneDeathQuoteText
@@ -63,3 +63,16 @@ But[Beat] But[Beat][A][CloseEyes][X]
 Easy come[Beat][N]
 Easy go[Beat][AN][CloseEyes][X]
 
+## LongxiaDeathQuoteText
+[MidRight][LoadLongxia]
+Graaa…[AN][X]
+
+## FangaiDeathQuoteText
+[MidRight][LoadFangai]
+But supper is still…[N]
+cooking… yurrghh...[AN][X]
+
+## RigganDeathQuoteText
+[MidLeft][LoadRiggan]
+No, no, no, a thousand[N]
+times no, I say! No...[AN][X]
