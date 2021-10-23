@@ -4,7 +4,7 @@
 
 [MidLeft][OneLineBox]
 
-Urkg![A]
+Urkg![A][CloseSpeechSlow]
 
 [MidLeft][ClearFace][MidRight][MoveRight]
 
@@ -24,7 +24,7 @@ General?! No this can't-[A]
 
 [Right]
 
-Urgh[Beat][CloseEyes][....][A][ClearFace]
+Urgh[Beat][CloseEyes][....][A][CloseSpeechSlow][ClearFace]
 
 [MidLeft][MoveRight][ClearFace][Right][LoadLoewe]
 
@@ -46,7 +46,7 @@ this! I'll kill you![A]
 
 [Right]
 
-You-[....] you dastard![A]
+You-[....] you dastard![A][CloseSpeechSlow]
 
 [FarLeft][ClearFace]
 
@@ -70,7 +70,7 @@ not without you.[A]
 
 You can, both of you[Beat] I know[Beat][A]
 
-[MidLeft]But-[A]
+[MidLeft]But-[A][CloseSpeechSlow]
 
 [MidLeft][MoveFarLeft][Left][LoadMira]
 
@@ -82,7 +82,7 @@ We have to go! Now![A]
 
 [Left]
 
-Now![AN]
+Now![AN][CloseSpeechSlow]
 
 [FarRight][MoveFarFarRight][ClearFace][FarLeft][MoveFarFarRight][ClearFace]
 
@@ -92,7 +92,7 @@ Kasun[Beat][A]
 
 [MidRight]
 
-Mira[Beat][CloseEyes][A]
+Mira[Beat][CloseEyes][A][CloseSpeechSlow]
 
 [MidLeft][MoveFarFarRight][ClearFace]
 

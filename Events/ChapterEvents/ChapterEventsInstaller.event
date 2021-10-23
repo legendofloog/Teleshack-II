@@ -15,7 +15,11 @@
   ALIGN 4
   #include "Chapter4.event"
 }
-//#include "Chapter5(MinN).event"
+{
+  ALIGN 4
+  #include "Chapter5.event"
+}
+
 
 
 
