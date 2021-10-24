@@ -24,8 +24,9 @@ SetUnitPCC(Filone,3)
 SetUnitPCC(Zwieback,1)
 SetUnitPCC(Leina,2)
 SetUnitPCC(Cromar,1)
+SetUnitPCC(Longxia,1)
+SetUnitPCC(Fangai,1)
 SetUnitPCC(Gimm,2)
-
 
 //Bosses, Generics, and NPCs
 SetUnitPCC(Boro_Ch1,1)
@@ -33,3 +34,4 @@ SetUnitPCC(Raschwitz_Ch1,1)
 SetUnitPCC(Tyr_Ch2,1)
 SetUnitPCC(Emory_Ch3,1)
 SetUnitPCC(Chapter1Generics,1)
+SetUnitPCC(Riggan,1)
