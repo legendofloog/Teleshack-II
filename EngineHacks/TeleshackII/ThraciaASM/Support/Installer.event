@@ -84,6 +84,16 @@ ZwiebackSupportList:
 SupportEntry(Filone, 2, 0, 2, 5, 0, 5, 0)
 SupportTerm
 
+ALIGN 4
+TobieSupportList:
+SupportEntry(Gimm, 3, 0, 0, 20, 15, 0, 0)
+SupportTerm
+
+ALIGN 4
+GimmSupportList:
+SupportEntry(Tobie, 3, 3, 3, (-15), (-15), 10, (-15))
+SupportTerm
+
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
@@ -96,3 +106,5 @@ SetUnitSupportList(Alex,AlexSupportList)
 SetUnitSupportList(Axel,AxelSupportList)
 SetUnitSupportList(Filone,FiloneSupportList)
 SetUnitSupportList(Zwieback,ZwiebackSupportList)
+SetUnitSupportList(Gimm,GimmSupportList)
+SetUnitSupportList(Tobie,TobieSupportList)
