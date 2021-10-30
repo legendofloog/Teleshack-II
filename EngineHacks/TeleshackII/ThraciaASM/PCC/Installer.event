@@ -27,6 +27,7 @@ SetUnitPCC(Cromar,1)
 SetUnitPCC(Longxia,1)
 SetUnitPCC(Fangai,1)
 SetUnitPCC(Gimm,2)
+SetUnitPCC(Tobie,1)
 
 //Bosses, Generics, and NPCs
 SetUnitPCC(Boro_Ch1,1)

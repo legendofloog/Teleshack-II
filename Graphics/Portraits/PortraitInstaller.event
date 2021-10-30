@@ -11,21 +11,26 @@
 #define FiloneMug 0xF
 #define ZwiebackMug 0x10
 #define LoeweMug 0x14
-#define LoeweKidMug 0x15
+#define LongxiaMug 0x16
+#define FangaiMug 0x18
+#define GimmMug 0x19
+#define TobieMug 0x1A
 #define DraganaMug 0x2D
+
+
+// NPCs
+#define LoeweKidMug 0x15
 #define CidorMug 0x2E
 #define CatrinMug 0x2F
+#define EmoryMug 0x30
+#define RigganMug 0x3f
 #define RaschwitzMug 0x45
 #define TyrMug 0x46
 #define HernandezMug 0x47
-#define BoroMug 0x4E
-#define EmoryMug 0x30
-#define SeleseFMug 0x70
 #define HilmarMug 0x4b
-#define LongxiaMug 0x16
-#define FangaiMug 0x18
-#define KwameMug 0x57 // Ismaire (eyes closed), maybe a placeholder slot?
-#define RigganMug 0x3f
+#define BoroMug 0x4E
+#define KwameMug 0x57
+#define SeleseFMug 0x70
 
 ALIGN 16
 CleoMugData:
@@ -236,5 +241,18 @@ RigganMugData:
 #incbin "Dmp/Riggan/Riggan_minimug.dmp"
 setMugEntry(RigganMug, RigganMugData, 2, 6, 3, 4)
 
+ALIGN 16
+GimmMugData:
+#incbin "Dmp/Gimm/Gimm(Archer_Bias)_mug.dmp"
+#incbin "Dmp/Gimm/Gimm(Archer_Bias)_frames.dmp"
+#incbin "Dmp/Gimm/Gimm(Archer_Bias)_palette.dmp"
+#incbin "Dmp/Gimm/Gimm(Archer_Bias)_minimug.dmp"
+setMugEntry(GimmMug, GimmMugData, 3, 7, 3, 5)
 
-
+ALIGN 16
+TobieMugData:
+#incbin "Dmp/Tobie/Tobie(RandomWizard)_mug.dmp"
+#incbin "Dmp/Tobie/Tobie(RandomWizard)_frames.dmp"
+#incbin "Dmp/Tobie/Tobie(RandomWizard)_palette.dmp"
+#incbin "Dmp/Tobie/Tobie(RandomWizard)_minimug.dmp"
+setMugEntry(TobieMug, TobieMugData, 3, 6, 3, 4)
