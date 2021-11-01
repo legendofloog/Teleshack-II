@@ -737,7 +737,7 @@
 #define McCallumDesc $C5D
 #define GladiatorName $C5E
 #define GladiatorDesc $C5F
-#define Ch5CivilianName $C60
+#define ArenaSpectatorName $C60
 #define CivilianName $C61
 #define CivilianDesc $C62
 #define LongxiaName $C63

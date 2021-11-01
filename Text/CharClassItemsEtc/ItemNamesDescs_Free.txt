@@ -126,13 +126,13 @@ Spell Mirror[X]
 [_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
 
 ## AlairsGaleName
-Arai's Gale[X]
+Arai[_']s Gale[X]
 
 ## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
 
 ## MarchRingName
-March Ring[X]
+Wife Ring[X]
 
 ## MarchRingDesc
 [_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
@@ -141,7 +141,7 @@ March Ring[X]
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
 
 ## CivilianProofDesc
-[_C][_a][_n][_n][_o][_t][_SP][_e][_n][_t][_e][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+Holder cannot enter combat.[X]
 
 ## ArachnidName
 Arachnid[X]
@@ -151,3 +151,17 @@ Brave Effect.[X]
 
 ## HurlbatName
 Hurlbat[X]
+
+## TridentName
+Trident[X]
+
+## TridentDesc
+[_G][_o][_o][_d][_SP][_f][_o][_r][_SP][_f][_i][_s][_h][_i][_n][_g][_,][_SP][_q][_u][_e][_s][_t][_i][_o][_n][_a][_b][_l][_e][_SP][_f][_o][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+
+
+## AzueriumName
+Azuerium[X]
+
+## AzueriumDesc
+[_O][_n][_e][_SP][_o][_f][_SP][_t][_h][_e][_SP][_d][_i][_v][_i][_n][_e][_SP][_e][_l][_e][_m][_e][_n][_t][_s][_.][_SP][_A][_l][_l][_o][_w][_SP][_u][_s][_e][_r][_SP][_t][_o][_SP][_b][_r][_e][_a][_t][_h][_e][N]
+[_SP][_u][_n][_d][_e][_r][_w][_a][_t][_e][_r][_,][_s][_u][_m][_m][_o][_n][_SP][_r][_a][_i][_n][_SP][_a][_n][_d][_SP][_c][_o][_m][_m][_u][_n][_i][_c][_a][_t][_e][_SP][_w][_i][_t][_h][_SP][_s][_e][_a][_l][_i][_f][_e][_.][X]

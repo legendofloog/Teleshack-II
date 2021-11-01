@@ -8,7 +8,7 @@ pMovModifiers: // Movement
 	#ifdef STAIRS_ASM
 	POIN StairsMoveDebuff-1
 	#endif
-	POIN prNullifyIfFreeze
+	POIN prZoruniumMight prNullifyIfFreeze
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -23,6 +23,11 @@ prAddUnitMovBonus:
 prSkillCelerity:
 	rIfUnitHasSkill(CelerityID)
 		rAddConst(2)
+
+
+prZoruniumMight:
+	rIfUnitHasSkill(ZoruniumMightID)
+		rAddConst(1)
 		
 prSkillPoise:
 	rIfUnitHasSkill(PoiseID)

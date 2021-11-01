@@ -3010,7 +3010,7 @@ __TEXTPROCESSC5F:
 setText($C5F, __TEXTPROCESSC5F)
 
 __TEXTPROCESSC60:
-#incext ParseFile ".TextEntries\text_buildfileCh5CivilianName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileArenaSpectatorName.fetxt"
 setText($C60, __TEXTPROCESSC60)
 
 __TEXTPROCESSC61:
