@@ -18,7 +18,8 @@
 #define HexID 21
 #define EvenRhythmID 22
 #define OddRhythmID 23
-#define DazzleID 31
+#define DazzleID 36
+#define RepositionID 37
 
 // keep it continous for debug purpose
 

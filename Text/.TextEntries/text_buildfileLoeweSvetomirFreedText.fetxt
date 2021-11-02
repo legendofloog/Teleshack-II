@@ -1,164 +1,82 @@
 [Right][LoadLoewe]
-
 [MidLeft][LoadCleo][OneLineBox]
-
 Loewe! I'm glad you're alright.[A]
-
 [Right][TwoLineBox]
-
 They roughed me up a bit, but[N]
-
 I'll survive. Where's Lumi?[A]
-
 [MidLeft][ThreeLineBox]
-
 Some members of the recon unit are[N]
-
 watching over our mounts, so she's[N]
-
 with them. Here, I brought you a bow.[A]
-
 [Right]
-
 Thanks. By the way, did you find out[N]
-
 where Dragana is? The guards wouldn't[N]
-
 say a word about it when I asked.[A]
-
 [MidLeft]
-
 From the few we've interrogated, she's[N]
-
 deeper in the dungeons. I couldn't[N]
-
 find her exact location, however.[A]
-
 [Right]
-
 Then we have to get a move on, quickly.[N]
-
 If it comes to it, we may need to leave[N]
-
 behind some of our allies, as well.[A]
-
 [MidLeft][TwoLineBox]
-
 What are you saying? How are we[N]
-
 supposed to continue on without them?[A]
-
 [Right][ThreeLineBox]
-
 It would be difficult, but if we have[N]
-
 no other choice, then [Red]at least the two[N]
-
 of us have to live to see another day.[Red][AN]
-
 Rescuing Dragana is our top priority,[N]
-
 and we can't afford to fail, Cleo.[A]
-
 [MidLeft]
-
 It won't come to that.[Red] I'll make sure[N]
-
 everyone else escapes before us.[Red][N]
-
 That way, no one will be captured.[A]
-
 [Right][TwoLineBox]
-
 I hope it does go that easily. Still,[N]
-
 we have to be prepared for anything.[A]
-
 [FarRight][LoadSvetomir]
-
 Uh, hello there. Sorry to butt in, but[N]
-
 are you two a part of the resistance?[AN]
-
 [MidLeft][OneLineBox]
-
 That we are. And who are you?[A]
-
 [FarRight][ThreeLineBox]
-
 I'm Svetomir, a priest of Vetheim, a[N]
-
 town at the foot of the duke's manse.[N]
-
 I organized a protest against him,[AN]
-
 but he threw me and my fellows in[N]
-
 prison the moment he found out.[N]
-
 You have my thanks for freeing me.[A]
-
 [MidLeft][TwoLineBox]
-
 Well, you're safe now. You should[N]
-
 leave while you still can, priest.[A]
-
 [FarRight][ThreeLineBox]
-
 Wait! I'm a fairly capable healer.[N]
-
 If you let me join you and give me[N]
-
 a staff, I can mend your wounds.[A]
-
 [MidLeft][OneLineBox]
-
 You mean to become one of us?[A]
-
 [FarRight][ThreeLineBox]
-
 I've spent my days hoping Byelen would[N]
-
 hear my prayers[Beat] That he would strike[N]
-
 down the invaders and save our country.[AN]
-
 However, I now understand his answer.[N]
-
 I must take matters into my own hands.[N]
-
 If it'll help you chase out the Cytheans,[AN]
-
 then I'll do anything you need![A]
-
 [MidLeft]
-
 Well[Beat] it's your life. If you wish to[N]
-
 spend it for our cause, then I've no[N]
-
 objections. What about you, Loewe?[A]
-
 [Right]
-
 Fine by me. Svetomir seems useful,[N]
-
 and he already has the spirit.[N]
-
 Just don't fall behind, got it?[A]
-
 [FarRight][OneLineBox]
-
 I wouldn't dream of it![A]
-
 [MidLeft][TwoLineBox]
-
 Then I'll give you this staff.[N]
-
 Put it to good use, Svetomir.[A]
-
 [FarRight][OneLineBox]
-
 Of course. You can count on me![A][X]
-

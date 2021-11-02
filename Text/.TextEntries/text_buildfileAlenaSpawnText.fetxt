@@ -1,46 +1,23 @@
 [MidLeft][LoadAlena]
-
 [Right][LoadAlenaGrunt1]
-
 [FarRight][LoadAlenaGrunt2]
-
 Do you hear that, Alena? Looks like[N]
-
 the fighting's gotten underway.[A]
-
 [MidLeft][ThreeLineBox]
-
 Seems so. Well, you know the score.[N]
-
 The duke's paying us well for this[N]
-
 job, so we'll have to earn our keep.[AN]
-
 Let's wait just a bit longer to make[N]
-
 our move. With any luck, the regular[N]
-
 guards'll soften the rebels up for us.[A]
-
 [Right]
-
 You got it, boss. A day's work in[N]
-
 gold is waiting for us! Let's get[N]
-
 this over with and hit the tavern.[A][CloseSpeechSlow][ClearFace]
-
 [FarRight][ClearFace]
-
 [MidLeft]
-
 Like I give a damn about that[Beat][Red] Once[N]
-
 I find Svet, we'll break out of here[N]
-
 and leave that to fools like you two.[Red][AN]
-
 Though I suppose Cidor will hunt me[N]
-
 down after that[Beat] what a nuisance.[A][X]
-

@@ -116,11 +116,12 @@ mov		lr, r3
 push	{r0}
 draw_number_at 25, 9
 pop 	{r0}
-cmp		r0,#0xFF
-beq		DontDrawIcon
-draw_icon_at 26, 9, 0xCA @change this to the ID you put the icon in
-DontDrawIcon:
+cmp		r0,#0x0
+ble		DontDrawIcon
 
+	draw_icon_at 26, 9, 0xCA @change this to the ID you put the icon in
+
+DontDrawIcon:
 ldr r0,=ActionTextIDLink
 ldrh r0, [r0]
 draw_textID_at 21, 11

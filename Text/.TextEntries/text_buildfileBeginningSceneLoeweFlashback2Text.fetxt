@@ -1,178 +1,89 @@
 [MidRight][LoadLoeweKid][OneLineBox]
-
 No[Beat] Mom! Dad![A][CloseSpeechSlow][ClearFace]
-
 [Event]
-
 [MidRight][LoadLoeweKid]
-
 Is anyone here?[A][CloseSpeechSlow][ClearFace]
-
 [Event]
-
 [MidRight][LoadLoeweKid]
-
 If you can hear me, say something![A][CloseSpeechSlow][ClearFace]
-
 [Event]
-
 [MidRight][LoadLoeweKid]
-
 Please[Beat] Don't leave me alone![A][CloseSpeechSlow][ClearFace]
-
 [Event]
-
 [MidRight][LoadLoeweKid]
-
 [MidLeft][LoadDragana][ThreeLineBox]
-
 What a dreadful scene[Beat] How did[N]
-
 you manage to survive on your own[N]
-
 until we found you in the forest?[A]
-
 [MidRight]
-
 I got away. My mom and dad[N]
-
 told me to run[Beat] and I[Beat][N]
-
 I just left them. I'm a coward![A]
-
 [MidLeft]
-
 You're alive, and that's what matters.[N]
-
 The Cytheans razed this place to the[N]
-
 ground, and naught but soil remains.[AN]
-
 Had you stayed, you would have only[N]
-
 died along with the other villagers.[A]
-
 [MidRight]
-
 You don't know that! My mom's real[N]
-
 tough, so I'm sure that they're[N]
-
 still alive. They have to be.[A]
-
 [MidLeft]
-
 It's better if you accept the truth[N]
-
 now. Even after seeing your home in[N]
-
 ashes, you still believe they're safe?[A]
-
 [MidRight][OneLineBox]
-
 [Beat] [Beat][A]
-
 [MidLeft][TwoLineBox]
-
 Do you have any relatives that[N]
-
 can take you in, for now?[A]
-
 [MidRight]
-
 No, I don't. My mom and dad fled here[N]
-
 from Mahemen, so I've got no one else.[A]
-
 [MidLeft][ThreeLineBox]
-
 I see[Beat] in that case, why don't you[N]
-
 come with me? I can offer you food[N]
-
 and shelter, at the very least.[A]
-
 [MidRight]
-
 I have nowhere to go, so just until[N]
-
 I find my parents[Beat] alright, I will.[N]
-
 Actually, who are you people, anyway?[A]
-
 [MidLeft]
-
 We are the Decian Liberators, those[N]
-
 brave enough to resist the Cythean[N]
-
 occupation of our homeland. As for me,[AN]
-
 I am their leader, Dragana Kasun.[A]
-
 [MidRight][TwoLineBox]
-
 Can you teach me how to fight,[N]
-
 then? How to become one of you?[A]
-
 [MidLeft]
-
 It would be many years before I even[N]
-
 consider letting you on a battlefield.[A]
-
 [MidRight][ThreeLineBox]
-
 Yeah, I figured[Beat] I know I'm weak.[N]
-
 Stil, when I think about what[N]
-
 happened to my home and friends[Beat][AN]
-
 When I think of those people[N]
-
 getting away with this, I can't[N]
-
 just sit around and watch it happen.[A]
-
 [MidLeft]
-
 [Beat]I'll consider it. For now, we[N]
-
 should leave and head to our base.[N]
-
 Ah, right. What's your name, boy?[A]
-
 [MidRight][TwoLineBox]
-
 It's Loewe[Beat] Hold on, I[N]
-
 see something in the rubble.[A]
-
 [Event]
-
 [MidLeft][OneLineBox]
-
 Hm? What is it, Loewe?[A]
-
 [MidRight]
-
 [Beat]A sword. It belonged to my mother.[A]
-
 [MidLeft][TwoLineBox]
-
 I see. Is it too heavy for you to[N]
-
 carry? I can hold on to it for you.[A]
-
 [MidRight]
-
 No, that's fine. Keeping it safe[N]
-
 is up to me now. Let's just go.[A]
-
 [MidLeft][OneLineBox]
-
 [Beat]Right. Follow me, then.[A][X]
-

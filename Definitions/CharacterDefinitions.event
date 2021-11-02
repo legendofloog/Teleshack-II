@@ -16,8 +16,9 @@
 #define Longxia 0x10
 #define Fangai 0x11
 #define Gimm 0x12
+#define Mish Gimm
 #define Tobie 0x13
-#define Gerik 0x14
+#define Awa 0x14
 #define Tethys 0x15
 #define Marisa 0x16
 #define Saleh 0x17
@@ -55,6 +56,10 @@
 #define Ch2_Selese_Guy 0x73
 // Chapter 3 Boss
 #define Emory_Ch3 0x68
+// Chapter 4 Boss
+#define Hilmar 0x69
+// Chapter 5 Boss
+#define Riggan 0x44
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
@@ -64,6 +69,12 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
+
+// Chapter 5x
+#define Kwame 0x65
+#define Trajan 0x66
+
+//Chapter 6 stuff
 #define Vladith 0x74
 #define Barod 0x75
 #define McCallum 0x76
@@ -76,7 +87,7 @@
 
 
 
-#define Riggan 0x44
+
 #define Valter_Prologue 0x45
 #define Breguet 0x46
 #define Bone 0x47
@@ -101,8 +112,8 @@
 #define Cyclops_boss 0x5C
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
-#define Bandit 0x66
-#define Hilmar 0x69
+
+
 #define Zonta 0x6A
 #define Vigarde 0x6B
 #define Lyon_Final 0x6C

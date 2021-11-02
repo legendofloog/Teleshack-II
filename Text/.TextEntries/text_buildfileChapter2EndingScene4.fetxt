@@ -1,48 +1,24 @@
 [MidLeft][LoadSoldier]
-
 [Right][LoadBoro]
-
 [FarRight][LoadDragana]
-
 [MidLeft][OneLineBox]
-
 A-after them![A]
-
 [Right][ThreeLineBox]
-
 Oh? I don't think so. I'd like to[N]
-
 have a word with your boss, so I'm[N]
-
 afraid you'll have to go through me.[AN]
-
 So come on, if you'd like to[N]
-
 test yourself against my lance.[A]
-
 [FarRight][OneLineBox]
-
 Boro-[A]
-
 [Right][ThreeLineBox]
-
 Save it. My position hasn't changed.[N]
-
 The Liberators are through.[N]
-
 I just don't appreciate backstabbers.[A]
-
 [FarRight][OneLineBox]
-
 [Beat]Right. Thanks, anyways, old friend.[A][CloseSpeechSlow][ClearFace]
-
-
 
 [Event]
 
-
-
 [Right]
-
 [Beat][A][X]
-

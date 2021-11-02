@@ -12,9 +12,11 @@
 #define ZwiebackMug 0x10
 #define LoeweMug 0x14
 #define LongxiaMug 0x16
+#define TrajanMug 0x17
 #define FangaiMug 0x18
 #define GimmMug 0x19
 #define TobieMug 0x1A
+#define AwaMug 0x1B
 #define DraganaMug 0x2D
 
 
@@ -256,3 +258,19 @@ TobieMugData:
 #incbin "Dmp/Tobie/Tobie(RandomWizard)_palette.dmp"
 #incbin "Dmp/Tobie/Tobie(RandomWizard)_minimug.dmp"
 setMugEntry(TobieMug, TobieMugData, 3, 6, 3, 4)
+
+ALIGN 16
+AwaMugData:
+#incbin "Dmp/Awa/Awa(Nickt)_mug.dmp"
+#incbin "Dmp/Awa/Awa(Nickt)_frames.dmp"
+#incbin "Dmp/Awa/Awa(Nickt)_palette.dmp"
+#incbin "Dmp/Awa/Awa(Nickt)_minimug.dmp"
+setMugEntry(AwaMug, AwaMugData, 2, 5, 2, 3)
+
+ALIGN 16
+TrajanMugData:
+#incbin "Dmp/Trajan/Trajan_mug.dmp"
+#incbin "Dmp/Trajan/Trajan_frames.dmp"
+#incbin "Dmp/Trajan/Trajan_palette.dmp"
+#incbin "Dmp/Trajan/Trajan_minimug.dmp"
+setMugEntry(TrajanMug, TrajanMugData, 2, 5, 2, 3)

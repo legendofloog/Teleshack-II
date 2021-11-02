@@ -1,80 +1,40 @@
 [MidRight][LoadLoeweKid]
-
 [MidLeft][LoadLoeweMom][OneLineBox]
-
 Loewe! Are you done playing?[A]
-
 [MidRight]
-
 Yeah, all my friends went home.[A]
-
 [MidLeft]
-
 Then it's time for sword practice![A]
-
 [MidRight][TwoLineBox]
-
 Do I have to, Mom? It's not like[N]
-
 I need to fight. I'm just a kid.[A]
-
 [MidLeft][ThreeLineBox]
-
 You never know when that may change.[N]
-
 We're safe here in Decia, but[Beat][N]
-
 who knows how long that'll last?[A]
-
 [MidRight][OneLineBox]
-
 Why? Are the Cytheans gonna attack?[A]
-
 [MidLeft][ThreeLineBox]
-
 [Beat]Maybe. They've been preoccupied with[N]
-
 Mahemen recently, though. Your dad and[N]
-
 I barely made it out of there in time.[A]
-
 [MidRight][TwoLineBox]
-
 [Beat]So I have to learn to defend myself,[N]
-
 just in case? I guess that makes sense.[A]
-
 [MidLeft]
-
 Good. You have a long way to go before[N]
-
 you can survive with your own strength.[A]
-
 [MidRight][ThreeLineBox]
-
 You and Dad are here,[N]
-
 so I don't have to, right?[N]
-
 You're not going away?[A]
-
 [MidLeft]
-
 Of course not. Now, back to your[N]
-
 training! If you do well, I'll try to[N]
-
 convince Dad to make your favorite.[A]
-
 [MidRight][TwoLineBox]
-
 A-Apple pie?! Alright,[N]
-
 I won't hold anything back![A]
-
 [MidLeft]
-
 Ha, that's the spirit.[N]
-
 Let's see what you've got![A][X]
-
