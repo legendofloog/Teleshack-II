@@ -77,6 +77,18 @@
 [LoadRiggan] = [LoadFace][0x3f][0x1]
 
 
+[LoadLeina] = [LoadFace][0x11][0x1]
+[LoadCromar] = [LoadFace][0x12][0x1]
+[LoadBarod] = [LoadFace][0x48][0x1]
+[LoadMcCallum] = [LoadFace][0x49][0x1]
+[LoadZeus] = [LoadFace][0x4A][0x1]
+[LoadVeid] = [LoadFace][0x4C][0x1]
+[LoadPirate] = [LoadFace][0x4D][0x1]
+
+[LoadMan1] = [LoadFace][0x6A][0x1]
+[LoadWoman1] = [LoadFace][0x70][0x1]
+
+
 [LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]

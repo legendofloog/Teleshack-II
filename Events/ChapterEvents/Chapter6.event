@@ -29,7 +29,7 @@ END_MAIN
 ALIGN 32
 CharacterBasedEvents:
 	CharacterEvent(0x7, HernandezTalkCh6, 0x0, Hernandez)
-	CharacterEvent(0x0, VladithTalkCh6, 0x0, Vladith)
+	CharacterEvent(0x0, VeidTalkCh6, 0x0, Veid)
 	CharacterEvent(0x8, Civ1TalkCh6, 0x0, Civilian1)
 	CharacterEvent(0x8, Civ2TalkCh6, 0x0, Civilian2)
 	CharacterEvent(0x9, LeinaRecruitCromar, Leina, Cromar)
@@ -89,8 +89,8 @@ UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir
 UNIT
 
 ALIGN 4
-VladithUnit:
-UNIT Vladith 0x0 0x0 Level(15,NPC,False) [18,18] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+VeidUnit:
+UNIT Veid 0x0 0x0 Level(15,NPC,False) [18,18] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT
 
 ALIGN 4
@@ -250,7 +250,7 @@ BeginningScene:
 	SetFlag(0xB)
 
 	LOAD1 0x1 EnemyUnits
-	LOAD1 0x1 VladithUnit
+	LOAD1 0x1 VeidUnit
 	LOAD1 0x1 McCallumUnit
 	LOAD1 0x1 CromarAndLeina
 
@@ -401,7 +401,7 @@ HernandezTalkCh6:
 NoFade
 ENDA
 
-VladithTalkCh6:
+VeidTalkCh6:
 NoFade
 ENDA
 

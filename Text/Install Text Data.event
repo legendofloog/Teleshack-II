@@ -2970,11 +2970,11 @@ __TEXTPROCESSC55:
 setText($C55, __TEXTPROCESSC55)
 
 __TEXTPROCESSC56:
-#incext ParseFile ".TextEntries\text_buildfileVladithName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileVeidName.fetxt"
 setText($C56, __TEXTPROCESSC56)
 
 __TEXTPROCESSC57:
-#incext ParseFile ".TextEntries\text_buildfileVladithDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileVeidDesc.fetxt"
 setText($C57, __TEXTPROCESSC57)
 
 __TEXTPROCESSC58:

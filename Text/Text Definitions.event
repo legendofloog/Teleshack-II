@@ -727,8 +727,8 @@
 #define LeinaDesc $C53
 #define CromarName $C54
 #define CromarDesc $C55
-#define VladithName $C56
-#define VladithDesc $C57
+#define VeidName $C56
+#define VeidDesc $C57
 #define BarodName $C58
 #define BarodDesc $C59
 #define ZeusName $C5A

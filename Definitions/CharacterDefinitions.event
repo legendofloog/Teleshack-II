@@ -64,7 +64,7 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
-#define Vladith 0x74
+#define Veid 0x74
 #define Barod 0x75
 #define McCallum 0x76
 #define Gladiator 0x77
