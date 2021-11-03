@@ -657,8 +657,8 @@
 #define SpellMirrorDesc $C0D
 #define AlairsGaleName $C0E
 #define AlairsGaleDesc $C0F
-#define MarchRingName $C10
-#define MarchRingDesc $C11
+#define SisterRingName $C10
+#define SisterRingDesc $C11
 #define CivilianProofName $C12
 #define CivilianProofDesc $C13
 #define ArachnidName $C14

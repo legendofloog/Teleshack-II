@@ -83,7 +83,7 @@
 [LoadMcCallum] = [LoadFace][0x49][0x1]
 [LoadZeus] = [LoadFace][0x4A][0x1]
 [LoadVeid] = [LoadFace][0x4C][0x1]
-[LoadPirate] = [LoadFace][0x4D][0x1]
+[LoadDraken] = [LoadFace][0x4D][0x1]
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]

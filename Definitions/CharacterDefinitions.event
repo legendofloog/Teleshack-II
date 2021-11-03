@@ -72,6 +72,12 @@
 #define ArenaSpectator 0x79
 #define Civilian1 0x7A
 #define Civilian2 0x7B
+#define LoanShark 0x7C
+#define Ch6Pirate 0x7D
+#define Draken 0x7E
+#define GladiatorMage 0x7F
+#define Fisherman 0x80
+#define Gambler 0x81
 
 
 

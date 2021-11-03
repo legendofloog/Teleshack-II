@@ -1,43 +1,5 @@
 // setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)
 #define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
-#define CleoMug 0x2
-#define MiraMug 0x4
-#define IskraMug 0x5
-#define EmilMug 0x6
-#define SvetomirMug 0x7
-#define AlenaMug 0x8
-#define VargaMug 0x9
-#define DelilahMug 0xA
-#define FiloneMug 0xF
-#define ZwiebackMug 0x10
-#define LeinaMug 0x11
-#define CromarMug 0x12
-#define LoeweMug 0x14
-#define LongxiaMug 0x16
-#define FangaiMug 0x18
-#define GimmMug 0x19
-#define TobieMug 0x1A
-#define DraganaMug 0x2D
-
-
-// NPCs
-#define LoeweKidMug 0x15
-#define CidorMug 0x2E
-#define CatrinMug 0x2F
-#define EmoryMug 0x30
-#define RigganMug 0x3f
-#define RaschwitzMug 0x45
-#define TyrMug 0x46
-#define HernandezMug 0x47
-#define BarodMug 0x48
-#define McCallumMug 0x49
-#define ZeusMug 0x4A
-#define HilmarMug 0x4B
-#define VeidMug 0x4C
-#define PirateMug 0x4D
-#define BoroMug 0x4E
-#define KwameMug 0x57
-#define SeleseFMug 0x70
 
 ALIGN 16
 CleoMugData:

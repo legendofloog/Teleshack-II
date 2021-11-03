@@ -40,15 +40,21 @@ LocationBasedEvents:
 	Armory(Ch6Armory2,12,16)
 	Vendor(Ch6Vendor1,3,16)
 	Vendor(Ch6Vendor2,13,16)
-	Chest(BlueGem,23,5)
-	Chest(AngelicRobe,24,5)
-	Seize(24, 8)
+	Chest(Javelin,26,6)
+	Chest(Hammer,27,6)
+	Village(0x10,Ch6Village1,10,25)
+	Village(0x11,Ch6Village2,21,26)
+	Village(0x12,Ch6Village3,27,23)
+	House(0x0,Ch6House1,25,23)
+	House(0x0,Ch6House2,25,27)
+	Seize(0, 28)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
 AREA 0xA StagingAreaEnter [6,14] [8,14]
 AREA 0xB StagingAreaExit [6,14] [8,14]
+AREA 0xC SilverBowDesertTreasure [9, 29] [10, 30]
 END_MAIN
 
 
@@ -90,7 +96,9 @@ UNIT
 
 ALIGN 4
 VeidUnit:
-UNIT Veid 0x0 0x0 Level(15,NPC,False) [18,18] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT Veid 0x0 0x0 Level(15,NPC,False) [18,18] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT Fisherman 0x0 0x0 Level(15,NPC,False) [12,20] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT Gambler 0x0 0x0 Level(15,NPC,False) [0,18] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT
 
 ALIGN 4
@@ -100,7 +108,7 @@ UNIT
 
 ALIGN 4
 McCallumUnit:
-UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [24,8] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossHealAI
+UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossHealAI
 UNIT
 
 
@@ -108,28 +116,25 @@ ALIGN 4
 EnemyUnits:
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [0,3] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [0,4] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator Civilian_F_2 Barod Level(1,Enemy,False) [0,5] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [0,6] 0x0 0x0 0x0 0x1 [Vulnerary] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [0,7] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT Civilian1 0x0 Barod Level(1,Enemy,False) [0,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT Civilian2 Civilian_F_2 Barod Level(1,Enemy,False) [0,9] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [0,10] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,2] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator Civilian_F_2 Barod Level(1,Enemy,False) [14,3] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,4] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,5] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator Civilian_F_2 Barod Level(1,Enemy,False) [14,6] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,7] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 Barod Level(1,Enemy,False) [15,6] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 //UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,8] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,9] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,10] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [15,10] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
+
+UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [19,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [18,7] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT
 
 ALIGN 4
 HernandezUnit:
-UNIT Hernandez Brigand Barod Level(10,Enemy,True) [14,8] 0x0 0x0 0x0 0x1 [KillerAxe MarchRing CivilianProof] BossNoAttackAI
+UNIT Hernandez Brigand Barod Level(10,Enemy,True) [14,8] 0x0 0x0 0x0 0x1 [KillerAxe, CivilianProof] BossNoAttackAI
 UNIT
 
 ALIGN 4
@@ -141,46 +146,32 @@ ALIGN 4
 Reinforce0:
 UNIT Gladiator Fighter Barod Level(5,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
 UNIT Gladiator Fighter Barod Level(5,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [HandAxe, SteelAxe] ChargeAI
-UNIT Gladiator Fighter Barod Level(5,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Hammer] ChargeAI
+UNIT Gladiator Fighter Barod Level(5,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Hammer, RedGem] ChargeAI
 UNIT
 
 ALIGN 4
 Reinforce1:
 UNIT Gladiator Swordfighter Barod Level(5,Enemy,True) [6,0] DropItem 0x0 0x0 0x0 [IronBlade, RedGem] ChargeAI
-UNIT Gladiator AxeSoldier Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [IronAxe, Elixir] ChargeHealAI
-UNIT Gladiator Soldier Barod Level(5,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IronLance, Elixir] ChargeHealAI
+UNIT Gladiator AxeSoldier Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Gladiator Soldier Barod Level(5,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
 UNIT
 
 ALIGN 4
 Reinforce2:
-UNIT Gladiator Mage_F Barod Level(5,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Thunder, Vulnerary] ChargeHealAI
-UNIT Gladiator Mage Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Burn] ChargeAI
-UNIT Gladiator Bard Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Wind, Elixir] ChargeHealAI
+UNIT Gladiator Myrmidon_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [KillingEdge] ChargeAI
+UNIT Gladiator Myrmidon Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Claymore] ChargeAI
+UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [IronBlade, RedGem] ChargeAI
 UNIT
 
 ALIGN 4
 Reinforce3:
-UNIT Gladiator Myrmidon_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [KillingEdge, Vulnerary] ChargeHealAI
-UNIT Gladiator Myrmidon Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Claymore, Vulnerary] ChargeHealAI
-UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [IronBlade] ChargeAI
+UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Conversion] ChargeAI
+UNIT Gladiator Sister Barod Level(7,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [SpellMirror, RedGem] ChargeAI
+UNIT GladiatorMage Mage_F Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [AlairsGale, SisterRing] ChargeHealAI
 UNIT
 
 ALIGN 4
 Reinforce4:
-UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Conversion] ChargeAI
-UNIT Gladiator Sister Barod Level(7,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [SpellMirror] ChargeAI
-UNIT Gladiator Mage_F Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [AlairsGale, Vulnerary] ChargeHealAI
-UNIT
-
-ALIGN 4
-Reinforce5:
-UNIT Gladiator BowArmor Barod Level(7,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [CounterBow, MarksmanBow] ChargeAI
-UNIT Gladiator Archer Barod Level(10,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [CounterBow, RedGem] ChargeAI
-UNIT Gladiator BowArmor Barod Level(7,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [CounterBow, GaleBow] ChargeAI
-UNIT
-
-ALIGN 4
-Reinforce6:
 UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [Brenthunder] ChargeAI
 UNIT
 
@@ -253,6 +244,7 @@ BeginningScene:
 	LOAD1 0x1 VeidUnit
 	LOAD1 0x1 McCallumUnit
 	LOAD1 0x1 CromarAndLeina
+	Load1 0x1 BarodUnit
 
 	FlagIsSet(0x7A, 0)
 		LOAD1 0x1 HernandezUnit
@@ -267,15 +259,14 @@ BeginningScene:
 	MOVE 15 Leina [3, 17]
 	ENUN
 	CameraCursor(McCallum)
-	MOVE 40 Cromar [17, 18]
+	MOVE 40 Cromar [21, 10]
 	ENUN
 	CameraCursor(Cromar)
-	MOVE 120 Cromar [24, 9]
+	MOVE 120 Cromar [27, 10]
 	ENUN
 	CAM1 Cromar
 	STAL 120
 	
-	Load1 0x1 BarodUnit
 	FlashCursor(Barod, 60)
 
 	GotoPrepScreen
@@ -285,15 +276,10 @@ ENDA
 
 ALIGN 4
 TurnOne:
-
 	TILEREVERT 1
-
 	CameraCursor(Barod)
-
 	CALL SpawnEnemies
-
 	CameraCursor(Leina)
-
 	MUSC WithUs_Song
 	MOVE 20 Leina [4, 18]
 	ENUN
@@ -329,14 +315,6 @@ SpawnEnemies:
 		LoadReinforcements(Reinforce4)
 		UnsetFlag(0xA)
 	BREAK(0,4)
-	COUNTER_CASE(0, 5)
-		LoadReinforcements(Reinforce5)
-		UnsetFlag(0xA)
-	BREAK(0,5)
-	COUNTER_CASE(0, 6)
-		LoadReinforcements(Reinforce6)
-		UnsetFlag(0xA)
-	BREAK(0,6)
 	Increment(0)
 NoFade
 ENDA
@@ -406,7 +384,7 @@ NoFade
 ENDA
 
 Civ1TalkCh6:
-	GiveItem(TorchStaff,-1)
+	GiveItem(Physic,-1)
 NoFade
 ENDA
 
@@ -422,6 +400,37 @@ LeinaRecruitCromar:
 	CUSA Cromar
 NoFade
 ENDA
+
+Ch6Village1:
+	GiveItem(KillingEdge,-1)
+NoFade
+ENDA
+
+Ch6Village2:
+	GiveItem(Mend,-1)
+NoFade
+ENDA
+
+Ch6Village3:
+	GiveItem(Lightning,-1)
+NoFade
+ENDA
+
+
+Ch6House1:
+NoFade
+ENDA
+
+Ch6House2:
+NoFade
+ENDA
+
+SilverBowDesertTreasure:
+	GiveItem(SilverBow,-1)
+NoFade
+ENDA
+
+
 }
 
 

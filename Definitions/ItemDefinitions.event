@@ -119,11 +119,11 @@
 #define TorchItem 0x70
 #define BlueGem 0x71
 #define RedGem 0x72
-#define Gold 0x73
+#define LightRune 0x73
+#define Gold 0x77
 #define Kaiserschwert 0x74
 #define ChestKey_5 0x75
 #define Mine 0x76
-#define LightRune 0x77
 #define HoplonShield 0x78
 #define FillasMight 0x79
 #define NinissGrace 0x7A
@@ -158,6 +158,6 @@
 #define Brenthunder 0x9A
 #define SpellMirror 0x9B
 #define AlairsGale 0x9C
-#define MarchRing 0x9D
+#define SisterRing 0x9D
 #define Hurlbat 0x9E
 #define Arachnid 0x9F

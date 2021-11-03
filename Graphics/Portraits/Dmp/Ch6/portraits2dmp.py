@@ -89,6 +89,8 @@ def split8x8(arr):
 def palette_to_bytes(palette):
     buffer = b""
     f = lambda x: (x >> 3) & 0x1f
+    if len(palette) < 16:
+        palette += [(0, 0, 0)] * (16 - len(palette))
     for r, g, b in palette:
         dr, dg, db = f(r), f(g), f(b)
         v = dr + (dg << 5) + (db << 10)
@@ -178,11 +180,12 @@ def portrait_to_dmp(image_file):
     palette = [i for i in image.palette.colors][:16]
     arr = numpy.array(image.getdata(), dtype='<u1').reshape((112, 128))
     transparent = arr[0][0]
+    orig = arr[0]
     if transparent != 0:
         palette[0], palette[transparent] = palette[transparent], palette[0]
         arr = arr + (arr == 0) * 20
         arr = arr - (arr == transparent) * transparent
-        arr = arr - (arr == 20) * 20
+        arr = arr - (arr == 20) * (20 - orig)
     portrait, frames, minimug = cut_image(arr)
 
     portrait = HEADER + to_gba(portrait).tobytes()
@@ -205,7 +208,8 @@ for file in os.listdir("."):
     installer += f"""    {{
         __mx_mug({file[:-4]}Mug, __mug_dmp)
         #incbin "{file[:-4]}.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "{file[:-4]}.dmp"
     }}\n

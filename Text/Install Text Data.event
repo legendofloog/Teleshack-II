@@ -2690,11 +2690,11 @@ __TEXTPROCESSC0F:
 setText($C0F, __TEXTPROCESSC0F)
 
 __TEXTPROCESSC10:
-#incext ParseFile ".TextEntries\text_buildfileMarchRingName.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSisterRingName.fetxt"
 setText($C10, __TEXTPROCESSC10)
 
 __TEXTPROCESSC11:
-#incext ParseFile ".TextEntries\text_buildfileMarchRingDesc.fetxt"
+#incext ParseFile ".TextEntries\text_buildfileSisterRingDesc.fetxt"
 setText($C11, __TEXTPROCESSC11)
 
 __TEXTPROCESSC12:

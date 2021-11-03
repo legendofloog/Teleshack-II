@@ -4,17 +4,10 @@
 #endif
 
     {
-        __mx_mug(PirateMug, __mug_dmp)
-        #incbin "Pirate.pos.dmp"
-        BYTE 1 0 1 0; POP;
-        __mug_dmp:
-            #incbin "Pirate.dmp"
-    }
-
-    {
         __mx_mug(LeinaMug, __mug_dmp)
         #incbin "Leina.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "Leina.dmp"
     }
@@ -22,7 +15,8 @@
     {
         __mx_mug(VeidMug, __mug_dmp)
         #incbin "Veid.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "Veid.dmp"
     }
@@ -30,7 +24,8 @@
     {
         __mx_mug(BarodMug, __mug_dmp)
         #incbin "Barod.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "Barod.dmp"
     }
@@ -38,7 +33,8 @@
     {
         __mx_mug(ZeusMug, __mug_dmp)
         #incbin "Zeus.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "Zeus.dmp"
     }
@@ -46,7 +42,8 @@
     {
         __mx_mug(CromarMug, __mug_dmp)
         #incbin "Cromar.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "Cromar.dmp"
     }
@@ -54,9 +51,19 @@
     {
         __mx_mug(McCallumMug, __mug_dmp)
         #incbin "McCallum.pos.dmp"
-        BYTE 1 0 1 0; POP;
+        BYTE 1 0 0 0; POP;
+        align 4
         __mug_dmp:
             #incbin "McCallum.dmp"
+    }
+
+    {
+        __mx_mug(DrakenMug, __mug_dmp)
+        #incbin "Draken.pos.dmp"
+        BYTE 1 0 0 0; POP;
+        align 4
+        __mug_dmp:
+            #incbin "Draken.dmp"
     }
 
 }
