@@ -37,6 +37,9 @@ Escape(0,EscapeEventCheck,29,12)
 Escape(0,EscapeEventCheck,29,13)
 Escape(0,EscapeEventCheck,29,14)
 Escape(0,EscapeEventCheck,29,15)
+#ifdef BACKDOOR
+Seize(1, 9)
+#endif
 END_MAIN
 
 MiscBasedEvents:

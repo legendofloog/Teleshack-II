@@ -26,6 +26,9 @@ END_MAIN
 LocationBasedEvents:
 Chest(Unlock,4,8)
 Chest(HeavySpear,22,23)
+#ifdef BACKDOOR
+Seize(22, 1)
+#endif
 END_MAIN
 
 MiscBasedEvents:
