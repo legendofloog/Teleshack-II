@@ -145,7 +145,7 @@
 #define GoldGem 0x91
 #define GaleBow 0x93
 #define SlimAxe  0x8E
-#define Claymore 0x8C
+#define AzuriumScepter 0x8C
 #define MarksmanBow 0x8B
 #define SlimArch 0x85
 
@@ -161,3 +161,4 @@
 #define SisterRing 0x9D
 #define Hurlbat 0x9E
 #define Arachnid 0x9F
+#define Claymore 0x8C
