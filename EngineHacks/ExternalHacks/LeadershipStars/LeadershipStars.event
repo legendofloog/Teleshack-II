@@ -37,6 +37,8 @@ BYTE Raschwitz_Ch1 1
 BYTE Tyr_Ch2 1
 BYTE Boro_Ch1 3
 BYTE Emory_Ch3 2
+// NPCs
+BYTE Trajan 2
 BYTE 0x0 0x0 //delimiter
 
 PUSH

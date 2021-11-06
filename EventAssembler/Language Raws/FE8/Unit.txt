@@ -181,3 +181,12 @@ UNIT, 0, 160, -game:FE8 -priority:unit
 	AI2, 136, 8
 	AI3, 144, 8
 	AI4, 152, 8
+
+#Set the bits in memory slot 1 to the unit's condition word (+0xC in unit struct)
+SET_CONDITION, 0x3427, 4, -game:FE8 -indexMode:8
+	Character, 2, 2
+
+#Unset the bits in memory slot 1 to the unit's condition word (+0xC in unit struct)	
+UNSET_CONDITION, 0x3429, 4, -game:FE8 -indexMode:8
+	Character, 2, 2
+

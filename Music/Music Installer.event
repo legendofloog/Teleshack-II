@@ -45,3 +45,6 @@ SongTable(DawnOfYs,songD9,MapMusicGroup)
 SongTable(HarvestDance,HarvestDance_TOLUCT,MapMusicGroup)
 #include "MusicEvents/mutecity.event"
 SongTable(mutecity,song58,MapMusicGroup)
+#include "MusicEvents/PMD - Steam Cave (psycommando).event"
+SongTable(PMDSteamCaveID,PMD_SteamCave,MapMusicGroup)
+// steam cave rip: psycommando

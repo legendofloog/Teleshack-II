@@ -1,70 +1,35 @@
 [MidRight][LoadLoewe]
-
 [MidLeft][LoadSvetomir][OneLineBox]
-
 Hey! Are you ignoring me?[A]
-
 [MidRight]
-
 What do you want?[A]
-
 [MidLeft][TwoLineBox]
-
 Come on, there's no need to be[N]
-
 so cold. We're cell buddies![A]
-
 [MidRight]
-
 Buddy isn't a word I'd use to[N]
-
 describe a pestering priest.[AN]
-
 If you don't need anything,[N]
-
 then leave me alone, got it?[A]
-
 [MidLeft]
-
 Well, you seemed deep in thought, so[N]
-
 I thought you may not have heard it.[A]
-
 [MidRight][OneLineBox]
-
 Heard what?[A]
-
 [MidLeft][ThreeLineBox]
-
 Down the hall, it sounded like weapons[N]
-
 clashing to me. Maybe some rescuers are[N]
-
 coming to free us? I hope so, anyway.[A]
-
 [MidRight]
-
 Can't imagine any other reason someone[N]
-
 would break into these musty dungeons,[N]
-
 which means she got my message after all.[A]
-
 [MidLeft][OneLineBox]
-
 She? Who is that supposed to be?[A]
-
 [MidRight][ThreeLineBox]
-
 You'll see soon enough. For now,[N]
-
 get ready to escape if you want[N]
-
 to live to see tomorrow, priest.[A]
-
 [MidLeft][TwoLineBox]
-
 Heh, you don't have to tell me[N]
-
 twice. I'm ready when you are![A][X]
-

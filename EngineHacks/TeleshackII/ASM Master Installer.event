@@ -12,6 +12,7 @@
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 
 #include "StatusExpansion/StatusExpansion.event"
+#include "FixedDamage/FixedDamageWeapons.event"
 
 // thief vision
 PUSH

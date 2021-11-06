@@ -82,7 +82,7 @@
 #char{28} "ZwieBowArmor" set{Zwieback, 1, BowArmor}
 	344FFF7F926E49359F1FFF12B9094A25C718AF250A19D82D5519EF0CAA0CA514
 	
-#char{29} "FiloneArcher" set{Filone, 1, Archer}
+#char{29} "FiloneArcher" set{Filone, 1, Archer_F}
 	5553FF7FFF6B1F4B2E19B832F3254E19BF53DA3E377EBC36F8215115CA0CA514
 
 #char{30} "ZwieGeneral" set{Zwieback, 3, General}
@@ -100,7 +100,7 @@
 #char{34} "FangaiDarkBishop" set{Fangai, 3, DarkBishop}
 	5553FF7FFF6BDF2E2E197B1B3A16932195711169AD54EC458A3DE52C6210A514
 
-#char{35} "FiloneSniper" set{Filone, 3, Sniper}
+#char{35} "FiloneSniper" set{Filone, 3, Sniper_F}
 	5553FF7FFF6B1F4B2E19B832F3254E19D87AF15D4C49BC36F8215115CA0CA514
 
 #char{36} "GimmThief" set{Gimm, 1, Thief}

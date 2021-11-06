@@ -1,0 +1,278 @@
+EventPointerTable(Ch5xInterludeEvents, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(13, MishRecruit, Cleo, Mish)
+CharacterEventBothWays(14, TobieRecruit, Cleo, Tobie)
+CharacterEventBothWays(15, AwaRecruit, Cleo, Awa)
+CharacterEventBothWays(10, IskraMiraTalk, Cleo, Iskra)
+CharacterEventBothWays(10, IskraMiraTalk, Cleo, Mira)
+CharacterEventBothWays(11, VargaTalk, Cleo, Varga)
+CharacterEventBothWays(12, KwameTalk, Cleo, Kwame)
+CharacterEventBothWays(0, TrajanTalk, Cleo, Trajan)
+END_MAIN
+
+MishRecruit:
+CHECK_EVENTID 7
+BNE 4 s0 sC
+	ENUT 7
+	CHECK_ALIVE Mira
+	BEQ 5 s0 sC
+		Text(MishFirstTalkDialogueMiraAlive)
+		GOTO 4
+	LABEL 5
+		Text(MishFirstTalkDialogueMiraDead)
+LABEL 4
+Text(MishPickDialogue)
+SVAL s1 0x1
+BEQ 6 s1 sC
+	Text(MishRejectedDialogue)
+	ENUF 13
+	NoFade
+	ENDB
+LABEL 6
+Text(MishAcceptedDialogue)
+CHECK_EVENTID 14
+BEQ 14 s0 sC  
+	CUSA Mish
+	MOVE 15 Mish [14,7]
+	HIDEUNIT Mish
+	ENUN
+LABEL 14
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+TobieRecruit:
+SetBackground(0x33)
+CHECK_EVENTID 8
+BNE 8 s0 sC
+	ENUT 8
+	Text(TobieFirstTalkDialogue)
+LABEL 8
+Text(TobiePickDialogue)
+SVAL s1 0x1
+BEQ 9 s1 sC
+	Text(TobieRejectedDialogue)
+	CALL $9EE2C4
+	ENUF 14
+	NoFade
+	ENDB
+LABEL 9
+Text(TobieAcceptedDialogue)
+CALL $9EE2C4
+CUSA Tobie
+MOVE 15 Tobie [14,6]
+ENUN
+HIDEUNIT Tobie
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+AwaRecruit:
+CHECK_EVENTID 9
+BNE 10 s0 sC
+	ENUT 9
+	Text(AwaFirstTalkDialogue)
+LABEL 10
+Text(AwaPickDialogue)
+SVAL s1 0x1
+BEQ 11 s1 sC
+	Text(AwaRejectedDialogue)
+	ENUF 15
+	NoFade
+	ENDB
+LABEL 11
+Text(AwaAcceptedDialogue)
+CUSA Awa
+MOVE 15 Awa [14,6]
+ENUN
+HIDEUNIT Awa
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+IskraMiraTalk:
+CHECK_ALIVE Iskra
+BEQ 16 s0 sC
+	CHECK_ALIVE Mira
+	BEQ 17 s0 sC
+		SetBackground(0x33)
+		Text(Ch5xMiraIskraTalk)
+		CALL $9EE2C4
+		NoFade
+		ENDB
+	LABEL 17
+		Text(Ch5xIskraTalk)
+		NoFade
+		ENDB
+LABEL 16
+Text(Ch5xMiraTalk)
+NoFade
+ENDA
+
+CheckIfDoneSelecting:
+COUNTER_INC 0
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 13 s1 sC
+	CHECK_EVENTID 13
+	BEQ 15 s0 sC 
+		CHECK_AT [2, 8]
+		SVAL s1 Mish
+		BNE 15 s1 sC
+			CUSA Mish
+			MOVE 15 Mish [14,7]
+			ENUN
+			HIDEUNIT Mish
+	LABEL 15
+	Text(Ch5xRecruitedTwoUnits)
+	ENUT 13
+	ENUT 14
+	ENUT 15
+	ENUT 16
+	ENUT 17
+	ENUT 18
+LABEL 13
+NoFade
+ENDA
+
+VargaTalk:
+Text(Ch5xCleoVargaTalk)
+NoFade
+ENDA
+
+KwameTalk:
+Text(Ch5xKwameLoeweTalk)
+NoFade
+ENDA
+
+TrajanTalk:
+COUNTER_CHECK 0
+SVAL s1 2
+BEQ 7 s1 sC
+	Text(Ch5xTrajanStopsYou)
+	NoFade
+	ENDB
+LABEL 7
+Text(Ch5xTrajanConfirmation)
+SVAL s1 1
+BNE 12 s1 sC
+	CALL EndingScene
+	NoFade
+	ENDB
+LABEL 12
+Text(Ch5xTrajanRecjection)
+NoFade
+ENDA
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+AFEV 0 RefreshCleo 0
+END_MAIN
+
+RefreshCleo:
+SVAL s1 0x42
+UNSET_CONDITION Cleo
+NoFade
+ENDA
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+Units1:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [8,1] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+GreenUnits:
+UNIT Gimm Thief Cleo Level(4,NPC,False) [2,8] 0x0 0x0 0x0 0x1 [DevilDagger,Vulnerary]     NoAI
+UNIT Tobie PegasusRider_Dismounted Cleo Level(5,NPC,False) [2,9] 0x0 0x0 0x0 0x1 [SlimLance,LongLance,Vulnerary]     NoAI
+UNIT Awa AxeKnight_Dismounted Cleo Level(5,NPC,False) [9,8] 0x0 0x0 0x0 0x1 [IronAxe,Poleaxe,Vulnerary] NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x1 [MasterAxe,IronBlade]     NoAI
+UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x1 [0x0]     NoAI
+UNIT
+
+OldUnits:
+UNIT Iskra Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,8] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Mira Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,9] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Varga Skyseeker_Dismounted   Cleo Level(2,Ally,False) [4,2] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+WarRoomUnits:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [9,9] 0x0 0x0 0x1 REDA10R5 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,9] 0x0 0x0 0x1 REDA5R5 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [6,9] 0x0 0x0 0x1 REDA5R6 [MasterAxe,IronBlade]     NoAI
+UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [8,9] 0x0 0x0 0x1 REDA10R6 [0x0]     NoAI
+UNIT
+
+BeginningScene:
+COUNTER_SET 0 0
+// beginning of war room scene
+TILECHANGE 0
+FADU 15
+RECLASS Cleo Skyseeker_Dismounted
+RECLASS Loewe Scaleshot_Dismounted
+LOAD1 2 WarRoomUnits
+ENUN
+FlashCursor(Trajan,60)
+Text(Ch5xStrategyRoom)
+FADI 15
+RemoveAll
+TILEREVERT 0
+LOAD1 0 Units1
+LOAD1 1 GreenUnits
+LOAD1 0 OldUnits
+ENUN
+CHECK_ALIVE Iskra
+BEQ 1 s0 sC
+	CUSN Iskra
+LABEL 1
+CHECK_ALIVE Mira
+BEQ 2 s0 sC
+	CUSN Mira
+LABEL 2
+CHECK_ALIVE Varga
+BEQ 3 s0 sC
+	CUSN Varga
+LABEL 3
+FADU 15
+NoFade
+ENDA
+
+EndingScene:
+MNC2 Chapter6
+NoFade
+ENDA

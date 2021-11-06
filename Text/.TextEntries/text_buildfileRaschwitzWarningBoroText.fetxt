@@ -1,32 +1,16 @@
 [MidLeft][LoadRaschwitz]
-
 [MidRight][LoadSoldier]
-
 S-Sir! The rebels are still pushing[N]
-
 forward? What are your orders?[A]
-
 [MidLeft]
-
 That miscreant Boro was supposed to be[N]
-
 keeping an eye on this situation...[AN]
-
 We have to wait for him. [Red]Once he shows[N]
-
 up, our victory is all but assured.[Red][A]
-
 [MidRight]
-
 Right! I'll fight with all[N]
-
 I have until he does, sir![A][CloseSpeechSlow][ClearFace]
-
 [MidLeft]
-
 You go ahead and do that. Your[N]
-
 sacrifice won't be forgotten, uh...[AN]
-
 What was his name again? I forget.[A][X]
-

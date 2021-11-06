@@ -31,6 +31,10 @@ BYTE HardCharLock
 BYTE Cleo
 BYTE EndLockArray
 
+DevilDaggerArray:
+BYTE HardCharLock
+BYTE Mish
+BYTE EndLockArray
 
 CromarLock:
 BYTE HardCharLock

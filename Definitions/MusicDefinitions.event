@@ -15,6 +15,7 @@
 #define DawnOfYs 0x12
 #define HarvestDance 0x13
 #define mutecity 0x14
+#define PMDSteamCaveID 0x15
 
 // Vanilla
 #define AdvanceSong 0x24

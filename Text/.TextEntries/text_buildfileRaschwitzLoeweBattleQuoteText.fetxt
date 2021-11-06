@@ -1,32 +1,16 @@
 [MidLeft][LoadRaschwitz]
-
 You were one of my prisoners![N]
-
 How did you escape, rebel?[A][CloseSpeechSlow][ClearFace]
-
 [MidRight][LoadLoewe]
-
 You've got bigger things[N]
-
 to worry about, you know.[AN]
-
 Do you remember what you[N]
-
 had your men do to me?[A][CloseSpeechSlow][ClearFace]
-
 [MidLeft][LoadRaschwitz]
-
 C-Come now, no need to be[N]
-
 angry[Beat] We can talk this out.[A][CloseSpeechSlow][ClearFace]
-
 [MidRight][LoadLoewe]
-
 I've had enough of that smug[N]
-
 face of yours[Beat] Get ready,[AN]
-
 because I'm about to repay[N]
-
 you ten times over, traitor![A][X]
-

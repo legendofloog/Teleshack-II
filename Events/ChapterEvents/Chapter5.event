@@ -29,6 +29,7 @@ Chest(HeavySpear,23,15)
 END_MAIN
 
 MiscBasedEvents:
+DefeatBoss(EndingScene)
 END_MAIN
 
 Dunno1:
@@ -180,6 +181,6 @@ SetBackground(Tavern)
 MUSC Rovers
 Text(LoreCh5Text)
 Text(Lore2Ch5Text)
-MNC2 Chapter6
+MNC2 Ch5xInterlude
 NoFade
 ENDA

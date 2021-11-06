@@ -91,7 +91,7 @@ UNIT Chapter1Generics LanceSoldier 0x0    Level(1,NPC,False) [11,0] 0x0 0x0 0x0 
 UNIT 
 
 GreenUnits:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(7,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
 UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
@@ -100,32 +100,32 @@ UNIT
 
 EnemyUnits:
 UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
 UNIT Chapter1Generics SwordArmor Raschwitz_Ch1 Level(1,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
 UNIT Chapter1Generics AxeSoldier Raschwitz_Ch1 Level(1,Enemy,True) [14,13] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [14,7] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,14] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey_5] NeverMoveAI
+UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [14,7] 0x0 0x0 0x0 0x0 [ShortSword] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,14] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey_5] NeverMoveAI
 UNIT Chapter1Generics AxeSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,4] 0x0 0x0 0x0 0x0 [IronAxe, DoorKey] NeverMoveAI
-UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [3,15] 0x0 0x0 0x0 0x0 [IronLance, DoorKey] NeverMoveAI
-UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [IronLance, DoorKey] NeverMoveAI
-UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [5,3] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
-UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [3,15] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [5,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
 UNIT
 
 
 Turn2Reinforcements:
 UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] StallOneTurnAI
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [IronSword] StallOneTurnAI
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [IronSword] StallOneTurnAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [ShortSword] StallOneTurnAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [ShortSword] StallOneTurnAI
 UNIT
 
 
 BoroUnitGroup:
-UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [MasterLance,SilverLance] PursueWithoutHeedAI
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [MasterLance] PursueWithoutHeedAI
 UNIT
 
 BoroCutsceneGroup:
-UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [MasterLance, SilverLance] PursueWithoutHeedAI
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [MasterLance] PursueWithoutHeedAI
 UNIT
 
 DraganaUnitGroup:
