@@ -36,9 +36,9 @@ BYTE HardCharLock
 BYTE Mish
 BYTE EndLockArray
 
-CromarLock:
+BalladOfWarArray:
 BYTE HardCharLock
-BYTE Cromar
+BYTE Cadenza
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

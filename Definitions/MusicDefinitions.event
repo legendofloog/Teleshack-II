@@ -16,6 +16,8 @@
 #define HarvestDance 0x13
 #define mutecity 0x14
 #define PMDSteamCaveID 0x15
+#define FF6AwakeningID 0x16
+#define FF4RedWingsID 0x17
 
 // Vanilla
 #define AdvanceSong 0x24
@@ -24,4 +26,5 @@
 #define SolveTheRiddle 0x2E
 #define WindyDaySoundEffect 0x47
 #define WindyDayBirdsSoundEffect 0x48
+#define WaterFlowingSoundEffect 0x4B
 #define SoftSwooshSoundEffect 0x4D

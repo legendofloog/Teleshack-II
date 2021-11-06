@@ -59,6 +59,7 @@
 #define KaiserschwertLock 0x01000000
 #define ArgilabrysLock 0x02000000
 #define DevilDaggerLock 0x03000000
+#define BalladOfWarLock 0x04000000
 #define PassiveBoosts 0x00800000
 
 

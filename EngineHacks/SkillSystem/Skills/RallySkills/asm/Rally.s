@@ -381,7 +381,7 @@ RallyPreviewFx_OnLoop:
 	b 0f
 
 1:
-	mov r0, #4
+	mov r0, #2
 
 0:
 	ldr r3, =SetMapAuraFxBlend

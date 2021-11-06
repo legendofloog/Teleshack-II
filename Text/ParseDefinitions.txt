@@ -79,6 +79,7 @@
 [LoadTobie] = [LoadFace][0x1A][0x1]
 [LoadAwa] = [LoadFace][0x1B][0x1]
 [LoadTrajan] = [LoadFace][0x17][0x1]
+[LoadCadenza] = [LoadFace][0x1c][0x1]
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]

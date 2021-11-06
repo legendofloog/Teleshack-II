@@ -29,6 +29,8 @@
 #define Ch1LoeweVillage 0x1A
 #define Ch1DraganaPrison 0x1B
 #define Ch5xInterlude 0x1C
+#define Ch5xBoatScenes 0x1D
+#define Ch5xGechrysos 0x1E
 
 // MapChangesID
 
@@ -61,6 +63,7 @@
 #define Ch1LoeweVillageMapChanges 0x7E
 #define Ch1DraganaPrisonMapChanges 0x98
 #define Ch5xInterludeMapChanges 0x97
+#define Ch5xBoatScenesMapChanges 0x9E
 
 // MapID
 
@@ -93,6 +96,7 @@
 #define Ch1LoeweVillageMap 0x83
 #define Ch1DraganaPrisonMap 0x94
 #define Ch5xInterludeMap 0x96
+#define Ch5xBoatScenesMap 0x9F
 
 // EventsID
 
@@ -124,7 +128,7 @@
 #define Chapter26Events 0x75
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
-#define Ch5xInterludeEvents 0x9D
+#define Ch5xInterludeEvents 0x81
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88

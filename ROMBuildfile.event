@@ -4,6 +4,7 @@
     #include "Definitions/DefinitionsInstaller.event"
 
  PROTECT $2C56A
+ //PROTECT 0x5A800
     ORG FreeSpace
 
     #include "repointedTextTable.event"

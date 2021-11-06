@@ -877,8 +877,6 @@
 #define RallySklID 255
 #define RallySpdID 255
 #define RallyLukID 255
-#define RallyDefID 255
-#define RallyResID 255
 #define RallyMovID 255
 #define RallySpectrumID 255
 
@@ -948,10 +946,6 @@
 //Wary Fighter: Unit cannot double or be doubled.
 //By Tequila
 #define WaryFighterID 255
-
-//Savior: Can rescue without penalties.
-//Author Unknown (Initial Commit)
-#define SaviorID 255
 
 //Discipline: Weapon experience gains are doubled.
 //Author Unknown (Initial Commit)

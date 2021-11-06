@@ -118,7 +118,7 @@
 
 // FiloneArcher
 	setPalette(29,FiloneArcher)
-	setCBSP(29,Filone, 1, Archer)
+	setCBSP(29,Filone, 1, Archer_F)
 
 // ZwieGeneral
 	setPalette(30,ZwieGeneral)
@@ -142,7 +142,7 @@
 
 // FiloneSniper
 	setPalette(35,FiloneSniper)
-	setCBSP(35,Filone, 3, Sniper)
+	setCBSP(35,Filone, 3, Sniper_F)
 
 // GimmThief
 	setPalette(36,GimmThief)
@@ -155,3 +155,11 @@
 // RigganMage
 	setPalette(38,RigganMage)
 	setCBSP(38,Riggan, 1, Mage)
+
+// FaolanRookKnight
+	setPalette(39,FaolanRookKnight)
+	setCBSP(39,Faolan, 1, RookKnight)
+
+// FaolanGoldKnight
+	setPalette(39,FaolanGoldKnight)
+	setCBSP(39,Faolan, 3, GoldKnight)

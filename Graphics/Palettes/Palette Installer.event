@@ -117,3 +117,9 @@ GimmRogue:
 RigganMage:
 	#incbin "./_palettes/RigganMage.lzpal" 
 
+FaolanRookKnight:
+	#incbin "./_palettes/FaolanRookKnight.lzpal" 
+
+FaolanGoldKnight:
+	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
+

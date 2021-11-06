@@ -20,7 +20,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x12 Amelia,0
 0x13 Artur,0
 0x14 Gerik,0
-0x15 Tethys,0
+0x15 Cadenza,CadenzaSkillList|IsPointer
 0x16 Marisa,0
 0x17 Saleh,0
 0x18 Ewan,0

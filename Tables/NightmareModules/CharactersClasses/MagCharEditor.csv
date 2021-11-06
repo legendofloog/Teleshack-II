@@ -20,8 +20,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x12 Gimm,1,15
 0x13 Tobie,1,10
 0x14 Awa,0,5
-Tethys,0,10
-Marisa,0,5
+0x15 Cadenza,3,30
+0x16 Faolan,0,5
 Saleh,1,10
 Ewan,11,30
 L'Arachel,2,45

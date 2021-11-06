@@ -19,6 +19,8 @@ CharacterBasedEvents:
 CharacterEventBothWays(13, MishRecruit, Cleo, Mish)
 CharacterEventBothWays(14, TobieRecruit, Cleo, Tobie)
 CharacterEventBothWays(15, AwaRecruit, Cleo, Awa)
+CharacterEventBothWays(16, CadenzaRecruit, Cleo, Cadenza)
+CharacterEventBothWays(17, FaolanRecruit, Cleo, Faolan)
 CharacterEventBothWays(10, IskraMiraTalk, Cleo, Iskra)
 CharacterEventBothWays(10, IskraMiraTalk, Cleo, Mira)
 CharacterEventBothWays(11, VargaTalk, Cleo, Varga)
@@ -50,7 +52,8 @@ CHECK_EVENTID 14
 BEQ 14 s0 sC  
 	CUSA Mish
 	MOVE 15 Mish [14,7]
-	HIDEUNIT Mish
+	SVAL s1 0x1
+	SET_CONDITION Mish
 	ENUN
 LABEL 14
 CALL CheckIfDoneSelecting
@@ -78,7 +81,8 @@ CALL $9EE2C4
 CUSA Tobie
 MOVE 15 Tobie [14,6]
 ENUN
-HIDEUNIT Tobie
+SVAL s1 0x1
+SET_CONDITION Tobie
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -101,10 +105,60 @@ Text(AwaAcceptedDialogue)
 CUSA Awa
 MOVE 15 Awa [14,6]
 ENUN
-HIDEUNIT Awa
+SVAL s1 0x1
+SET_CONDITION Awa
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
+
+CadenzaRecruit:
+CHECK_EVENTID 19
+BNE 18 s0 sC
+	ENUT 19
+	Text(CadenzaFirstTalkDialogue)
+LABEL 18
+Text(CadenzaPickDialogue)
+SVAL s1 0x1
+BEQ 19 s1 sC
+	Text(CadenzaRejectedDialogue)
+	ENUF 16
+	NoFade
+	ENDB
+LABEL 19
+Text(CadenzaAcceptedDialogue)
+CUSA Cadenza
+MOVE 15 Cadenza [14,7]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Cadenza
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+FaolanRecruit:
+CHECK_EVENTID 20
+BNE 25 s0 sC
+	//Text(FaolanFirstTalkDialogue)
+	ENUT 20
+LABEL 25
+Text(FaolanPickDialogue)
+SVAL s1 0x1
+BEQ 26 s1 sC
+	//Text(FaolanRejectedDialogue)
+	ENUF 17
+	NoFade
+	ENDB
+LABEL 26
+//Text(FaolanAcceptedDialogue)
+CUSA Faolan
+MOVE 15 Faolan [14,7]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Faolan
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
 
 IskraMiraTalk:
 CHECK_ALIVE Iskra
@@ -138,7 +192,8 @@ BNE 13 s1 sC
 			CUSA Mish
 			MOVE 15 Mish [14,7]
 			ENUN
-			HIDEUNIT Mish
+			SVAL s1 0x1
+			SET_CONDITION Mish
 	LABEL 15
 	Text(Ch5xRecruitedTwoUnits)
 	ENUT 13
@@ -170,13 +225,15 @@ BEQ 7 s1 sC
 	ENDB
 LABEL 7
 Text(Ch5xTrajanConfirmation)
-SVAL s1 1
-BNE 12 s1 sC
-	CALL EndingScene
+SVAL s1 0x1
+BEQ 12 s1 sC
+	Text(Ch5xTrajanRejection)
 	NoFade
 	ENDB
+	GOTO 30
 LABEL 12
-Text(Ch5xTrajanRecjection)
+CALL EndingScene
+LABEL 30
 NoFade
 ENDA
 
@@ -214,7 +271,7 @@ ENDTRAP
 ALIGN 4
 
 Units1:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [8,1] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [8,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
 GreenUnits:
@@ -223,12 +280,21 @@ UNIT Tobie PegasusRider_Dismounted Cleo Level(5,NPC,False) [2,9] 0x0 0x0 0x0 0x1
 UNIT Awa AxeKnight_Dismounted Cleo Level(5,NPC,False) [9,8] 0x0 0x0 0x0 0x1 [IronAxe,Poleaxe,Vulnerary] NoAI
 UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x1 [MasterAxe,IronBlade]     NoAI
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x1 [0x0]     NoAI
+UNIT Cadenza Bard Cleo Level(5,NPC,False) [13,6] 0x0 0x0 0x0 0x1 [Wind, BalladOfWar]     NoAI
+UNIT Faolan RookKnight_Dismounted Cleo Level(7,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary, LightRune]     NoAI
 UNIT
 
 OldUnits:
 UNIT Iskra Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,8] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT Mira Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,9] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT Varga Skyseeker_Dismounted   Cleo Level(2,Ally,False) [4,2] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+HeadquartersBeginningCutsceneUnits:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [1,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [0,4] 0x0 0x0 0x0 0x0 [0x0]     NoAI
 UNIT
 
 WarRoomUnits:
@@ -238,15 +304,190 @@ UNIT Trajan Hero Cleo Level(5,NPC,False) [6,9] 0x0 0x0 0x1 REDA5R6 [MasterAxe,Ir
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [8,9] 0x0 0x0 0x1 REDA10R6 [0x0]     NoAI
 UNIT
 
+LoeweBeginningCutsceneGroup:
+UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [6,5] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [4,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT
+
+CleoBeginningCutsceneGroup:
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [9,8] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+MiraBeginningCutsceneGroup:
+UNIT Mira Skyseeker_Dismounted   Cleo Level(2,Ally,False) [9,8] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+TrajanBeginningGroup:
+UNIT Trajan Hero Cleo Level(5,NPC,False) [19,10] 0x0 0x0 0x1 REDA17R10 [MasterAxe,IronBlade]     NoAI
+UNIT Senny AxeSoldier   Cleo Level(2,NPC,False) [19,9] 0x0 0x0 0x1 REDA18R9 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Helman LanceSoldier   Cleo Level(2,NPC,False) [19,11] 0x0 0x0 0x1 REDA18R11 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT
+
+LoeweEndingCutsceneGroup:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [7,4] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [9,4] 0x0 0x0 0x0 REDA5R5 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT
+
 BeginningScene:
 COUNTER_SET 0 0
-// beginning of war room scene
-TILECHANGE 0
-FADU 15
+/*
+*/
+LOMA Ch5xBoatScenes
+//beginning of boat scenes
 RECLASS Cleo Skyseeker_Dismounted
 RECLASS Loewe Scaleshot_Dismounted
+LOAD1 0 LoeweBeginningCutsceneGroup
+ENUN
+FADU 15
+MUSC WaterFlowingSoundEffect
+CAMERA Loewe
+FlashCursor(Loewe,60)
+Text(Ch5xLoewePrelude)
+STAL 10
+FlashCursor(9,8,60)
+LOAD1 0 CleoBeginningCutsceneGroup
+ENUN
+STAL 10
+MOVE 15 Cleo [7,5]
+ENUN
+MUSC FF6AwakeningID
+Text(Ch5xLoeweCleoTalk)
+MOVE 15 Cleo [9,8]
+ENUN
+HIDEUNIT Cleo
+MOVE 15 Loewe [9,8]
+ENUN
+HIDEUNIT Loewe
+STAL 10
+MOVE 15 Kwame [8,5]
+ENUN
+CHECK_ALIVE Mira
+BEQ 20 s0 sC
+	CHECK_EVENTID 0x8B
+	BNE 20 s0 sC
+	TEXTSTART
+	TEXTSHOW Ch5xKwameSceneMiraAlive
+	TEXTEND
+	LOAD1 0 MiraBeginningCutsceneGroup
+	MOVE 15 Mira [8,6]
+	ENUN
+	TEXTCONT
+	TEXTEND
+	MOVE 15 Mira [9,8]
+	ENUN
+	HIDEUNIT Mira
+	TEXTCONT
+	TEXTEND
+	REMA
+	GOTO 21
+LABEL 20
+Text(Ch5xKwameSceneMiraDead)
+LABEL 21
+MUSC WaterFlowingSoundEffect
+CAMERA [18,8]
+TILECHANGE 0
+STAL 20
+TILECHANGE 1
+STAL 20
+TILECHANGE 2
+STAL 20
+TILECHANGE 3
+STAL 20
+TILECHANGE 4
+STAL 20
+TILECHANGE 5
+STAL 20
+TILECHANGE 6
+STAL 20
+TILECHANGE 7
+STAL 20
+TILECHANGE 8
+STAL 20
+TILECHANGE 9
+STAL 20
+TILECHANGE 10
+STAL 20
+TILECHANGE 11
+STAL 20
+TILECHANGE 12
+STAL 20
+TILECHANGE 13
+STAL 20
+ENUN
+CamOn
+LOAD1 1 TrajanBeginningGroup
+ENUN
+MOVE 15 Kwame [9,8]
+ENUN
+REMOVEUNIT Kwame
+Text(Ch5xKwameGoesDown)
+SPAWN_NPC Kwame [9,8]
+MOVE 15 Kwame [9,11]
+STAL 20
+SHOWUNIT Loewe 
+MOVE 15 Loewe [8,10]
+STAL 20
+SHOWUNIT Cleo
+MOVE 15 Cleo [8,11]
+ENUN
+Text(Ch5xTrajanMeeting1)
+TILECHANGE 14
+MOVE 15 Loewe [16,10]
+MOVE 15 Cleo [16,11]
+MOVE 15 Kwame [15,10]
+ENUN
+CAMERA Trajan
+FlashCursor(Trajan,60)
+Text(Ch5xTrajanMeeting2)
+CHECK_ALIVE Mira
+BEQ 22 s0 sC
+	CHECK_EVENTID 0x8B
+	BEQ 23 s0 sC
+		Text(Ch5xTrajanMeeting3MiraCaptured)
+		GOTO 24
+	LABEL 23
+	SHOWUNIT Mira
+	MOVE 15 Mira [15,11]
+	ENUN
+	Text(Ch5xTrajanMeeting3MiraAlive)
+	GOTO 24
+LABEL 22
+Text(Ch5xTrajanMeeting3MiraDead)
+LABEL 24
+MUSC WaterFlowingSoundEffect
+Text(Ch5xTrajanMeeting4)
+MUSC 0x7FFF
+FADI 15
+RemoveAll
+LOMA Ch5xInterlude //switches map to base map
+LOAD1 0 HeadquartersBeginningCutsceneUnits
+ENUN
+FADU 5
+Text(Ch5xTrajanMeeting5)
+FlashCursor(8,1,60)
+MOVE 15 Trajan [8,1]
+ENUN
+REMOVEUNIT Trajan
+MOVE 15 Loewe [8,1]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Loewe
+MOVE 15 Cleo [8,1]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Cleo
+MOVE 15 Kwame [8,1]
+ENUN
+REMOVEUNIT Kwame
+// beginning of war room scene
+FADI 15
+RemoveAll
+TILECHANGE 0
 LOAD1 2 WarRoomUnits
 ENUN
+FADU 5
+MUSC FE5_InTheBattle_Fate
 FlashCursor(Trajan,60)
 Text(Ch5xStrategyRoom)
 FADI 15
@@ -268,11 +509,38 @@ CHECK_ALIVE Varga
 BEQ 3 s0 sC
 	CUSN Varga
 LABEL 3
-FADU 15
-NoFade
+FADU 5
+CamOff
+GotoPrepScreen
 ENDA
 
 EndingScene:
+MUSC 0x7FFF
+FADI 15
+RemoveAll
+LOAD1 0 LoeweEndingCutsceneGroup
+ENUN
+CAMERA Trajan
+FADU 5
+MUSC Rovers
+Text(Ch5xLoeweCleoTrajanTalk1)
+MOVE 15 Loewe [14,6]
+MOVE 15 Cleo [14,7]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Loewe
+SET_CONDITION Cleo
+FlashCursor(Trajan,60)
+Text(Ch5xLoeweCleoTrajanTalk2)
+MUSC WindyDaySoundEffect
+Text(Ch5xEliasIntroduction)
+MUSC FF4RedWingsID
+Text(Ch5xLeonidasIntroduction)
+Text(Ch5xOrfeasCoraliaIntroduction)
+Text(Ch5xLeonidasLeaves)
+MUSC WindyDaySoundEffect
+Text(Ch5xEliasCoraliaTalk)
+Text(Ch5xCoraliaEndingText)
 MNC2 Chapter6
 NoFade
 ENDA
