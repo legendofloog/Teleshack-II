@@ -23,6 +23,13 @@
     ALIGN 4
     FlasubanVillageMapchipConfig:
     #incbin "Config/FixedBridge_comp.dmp"
+	
+//Updated village
+
+	ALIGN 4
+	UpdatedVillageMapchipConfig:
+	#incbin "Config/FE8_16_comp.dmp"
+	
 
 //Thracia Fields, Not Inserted	
 //    ThraciaFieldsObject:
@@ -43,6 +50,7 @@
     EventPointerTable(FlasubanVillageObjectID, FlasubanVillageObject)
     EventPointerTable(FlasubanVillageNormalPaletteID, FlasubanVillagePalette)
     EventPointerTable(FlasubanVillageMapchipConfigID, FlasubanVillageMapchipConfig)
+	EventPointerTable(0x10,UpdatedVillageMapchipConfig)
 //	EventPointerTable(ThraciaFieldsObjectID, ThraciaFieldsObject)
 //    EventPointerTable(ThraciaFieldsAutumnPaletteID, ThraciaFieldsAutumnPalette)
 //    EventPointerTable(ThraciaFieldsMapchipConfigID, ThraciaFieldsMapchipConfig)
