@@ -42,8 +42,8 @@
 #define BarodMug 0x48
 #define McCallumMug 0x49
 #define ZeusMug 0x4A
-#define VeidMug 0x4C
-#define DrakenMug 0x4D
+#define VeidMug 0x4f
+#define DrakenMug 0x50
 
 ALIGN 16
 BarodMugData:
@@ -75,7 +75,7 @@ DrakenMugData:
 #incbin "Dmp/Draken_frames.dmp"
 #incbin "Dmp/Draken_palette.dmp"
 #incbin "Dmp/Draken_minimug.dmp"
-setMugEntry(BarodMug, BarodMugData, 3, 5, 3, 3)
+setMugEntry(DrakenMug, DrakenMugData, 3, 5, 3, 3)
 
 ALIGN 16
 LeinaMugData:
@@ -99,7 +99,7 @@ McCallumMugData:
 #incbin "Dmp/McCallum_frames.dmp"
 #incbin "Dmp/McCallum_palette.dmp"
 #incbin "Dmp/McCallum_minimug.dmp"
-setMugEntry(McCallumMug, McCallumMugData, 3, 5, 3, 3)
+setMugEntry(McCallumMug, McCallumMugData, 2, 5, 2, 3)
 
 ALIGN 16
 CleoMugData:

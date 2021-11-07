@@ -524,14 +524,17 @@ LOAD1 0 OldUnits
 ENUN
 CHECK_ALIVE Iskra
 BEQ 1 s0 sC
+	ClearFatigue(Iskra)
 	CUSN Iskra
 LABEL 1
 CHECK_ALIVE Mira
 BEQ 2 s0 sC
+	ClearFatigue(Mira)
 	CUSN Mira
 LABEL 2
 CHECK_ALIVE Varga
 BEQ 3 s0 sC
+	ClearFatigue(Varga)
 	CUSN Varga
 LABEL 3
 FADU 5
@@ -542,6 +545,18 @@ ENDA
 EndingScene:
 MUSC 0x7FFF
 FADI 15
+CHECK_ALIVE Iskra
+BEQ 37 s0 sC
+	CUSA Iskra
+LABEL 37
+CHECK_ALIVE Mira
+BEQ 38 s0 sC
+	CUSA Mira
+LABEL 38
+CHECK_ALIVE Varga
+BEQ 39 s0 sC
+	CUSA Varga
+LABEL 39
 RemoveAll
 LOAD1 0 LoeweEndingCutsceneGroup
 ENUN
