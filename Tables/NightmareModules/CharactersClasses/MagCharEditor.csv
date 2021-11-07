@@ -19,9 +19,9 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x11 Fangai,6,35
 0x12 Gimm,1,15
 0x13 Tobie,1,10
-Gerik,5,50
-Tethys,0,10
-Marisa,0,5
+0x14 Awa,0,5
+0x15 Cadenza,3,30
+0x16 Faolan,0,5
 Saleh,1,10
 Ewan,11,30
 L'Arachel,2,45
@@ -99,8 +99,8 @@ Entombed (Monster Boss),3,5
 0,0,0
 0,0,0
 #NAME?,0,0
-Hunter (Ch 16),0,0
-#NAME?,3,10
+0x65 Kwame,0,0
+0x66 Lyuban,0,10
 Brigand,0,0
 0,0,0
 O'Neill (Prologue),0,0

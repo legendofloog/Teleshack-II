@@ -1,36 +1,18 @@
 [FarLeft][LoadSoldier]
-
 [Left][LoadTyr]
-
 [MidRight][LoadDragana]
-
 [Left][OneLineBox]
-
 Enjoying your last moments, scum?[A]
-
 [MidRight]
-
 [Beat][A]
-
 [FarLeft][ThreeLineBox]
-
 Captain Tyr, oughtn't we be[N]
-
 more on guard, what with the[N]
-
 rebels running around?[A]
-
 [Left]
-
 Why should we? We know they'll have to[N]
-
 head this way, and when they do, I'll[N]
-
 personally end their miserable lives![A]
-
 [MidRight][TwoLineBox]
-
 [ToggleMouthMove](...[....]Loewe...[....]Cleo...[....] don't[N]
-
 lose to this useless fop.)[ToggleMouthMove][A][X]
-

@@ -12,6 +12,8 @@
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 
 #include "StatusExpansion/StatusExpansion.event"
+#include "FixedDamage/FixedDamageWeapons.event"
+//#include "FreeMovement/FreeMovement.event"
 
 // thief vision
 PUSH
@@ -96,4 +98,4 @@ ChangeWeaponRankASMC:
 
 #include "NarrowFontExtension/SerifExtension.event"
 
-#include "FogVisionTiles/Installer.event"
+//#include "FogVisionTiles/Installer.event"

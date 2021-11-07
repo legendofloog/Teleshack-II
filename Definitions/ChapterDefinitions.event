@@ -28,6 +28,9 @@
 #define Chapter26 0x19
 #define Ch1LoeweVillage 0x1A
 #define Ch1DraganaPrison 0x1B
+#define Ch5xInterlude 0x1C
+#define Ch5xBoatScenes 0x1D
+#define Ch5xGechrysos 0x1E
 
 // MapChangesID
 
@@ -59,6 +62,9 @@
 #define Chapter26MapChanges 0x74
 #define Ch1LoeweVillageMapChanges 0x7E
 #define Ch1DraganaPrisonMapChanges 0x98
+#define Ch5xInterludeMapChanges 0x97
+#define Ch5xBoatScenesMapChanges 0x9E
+#define Ch5xGechrysosMapChanges 0x9D
 
 // MapID
 
@@ -90,6 +96,9 @@
 #define Chapter26Map 0x73
 #define Ch1LoeweVillageMap 0x83
 #define Ch1DraganaPrisonMap 0x94
+#define Ch5xInterludeMap 0x96
+#define Ch5xBoatScenesMap 0x9F
+#define Ch5xGechrysosMap 0xA0
 
 // EventsID
 
@@ -121,19 +130,25 @@
 #define Chapter26Events 0x75
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
+#define Ch5xInterludeEvents 0x81
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88
 #define FlasubanVillageObjectID 0x8C
+#define FF5CaveObjectID 0x99
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
 #define FlasubanVillageNormalPaletteID 0x8F
+#define FF5CavePaletteID 0x9A
+
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
 #define FlasubanVillageMapchipConfigID 0x92
+#define FF5CaveConfigID 0x9B
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B
 #define FlasubanVillageTileAnimationsID 0x95
+#define FF5CaveTileAnimationsID 0x9C
 

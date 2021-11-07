@@ -77,20 +77,20 @@ EnemyUnits:
 UNIT Hilmar LanceArmor   0x0 Level(8,Enemy,False) [15,16] 0 0 1 REDA14R14 [SteelLance,Javelin,Elixir] BossAI
 UNIT Chapter1Generics AxeFighter   0x0 Level(3,Enemy,True) [0,12] 0 0 1 REDA6R12 [SteelAxe] StallOneTurnAI
 UNIT Chapter1Generics SwordArmor   0x0 Level(4,Enemy,True) [0,12] 0 0 1 REDA5R8 [Greatsword] BossAI
-UNIT Chapter1Generics LanceSoldier   0x0 Level(3,Enemy,True) [0,6] 0 0 1 REDA1R4 [IronLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   0x0 Level(3,Enemy,True) [0,6] 0 0 1 REDA1R4 [ShortLance] TwoActionAI
 UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,5] 0 0 1 REDA14R5 [Fire,Vulnerary] TwoActionAI
 UNIT Chapter1Generics Archer   0x0 Level(3,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT Chapter1Generics AxeKnight   0x0 Level(3,Enemy,True) [15,11] 0 0 1 REDA14R8 [IronAxe] AttackInRangeAI
 UNIT Chapter1Generics Mage   0x0 Level(3,Enemy,True) [15,6] 0 0 1 REDA12R7 [Thunder] TwoActionAI
-UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [15,12] 0 0 1 REDA12R13 [IronSword] ChargeAI
+UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [15,12] 0 0 1 REDA12R13 [Shortsword] ChargeAI
 UNIT Chapter1Generics LanceSoldier   0x0 Level(3,Enemy,True) [2,16] 0 0 1 REDA2R14 [SteelLance] AttackInRangeAI
 UNIT Chapter1Generics Mage   0x0 Level(3,Enemy,True) [0,11] 0 0 1 REDA3R10 [Fire] TwoActionAI
-UNIT Chapter1Generics Archer   0x0 Level(3,Enemy,True) [4,16] 0 0 1 REDA6R15 [Longbow,] AttackInRangeAI
+UNIT Chapter1Generics Archer   0x0 Level(3,Enemy,True) [4,16] 0 0 1 REDA6R15 [Longbow] AttackInRangeAI
 UNIT Chapter1Generics PegasusRider   0x0 Level(3,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,1] 0 0x0 0x0 0x0 [IronLance,PureWater] StallOneTurnAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(3,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [IronLance] StallOneTurnAI
-UNIT Chapter1Generics LanceKnight   0x0 Level(3,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [IronLance] StallOneTurnAI
-UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [4,0] 0 0 1 REDA4R1 [IronSword] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,1] 0 0x0 0x0 0x0 [ShortLance,PureWater] StallOneTurnAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(3,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics LanceKnight   0x0 Level(3,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [4,0] 0 0 1 REDA4R1 [Shortsword] ChargeAI
 UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [11,16] 0 0 1 REDA10R15 [HandAxe] AttackInRangeAI
 UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [9,0] 0 0 1 REDA9R1 [SlimArch] BossAI
 UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,13] 0 0 1 REDA0R12 [SlimArch,RedGem] BossAI
@@ -113,18 +113,18 @@ UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [Fi
 UNIT
 
 ReinEPIC:
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT Chapter1Generics BowKnight   0x0 Level(4,Enemy,True) [0,2] 0x0 0x0 0x0 0x0 [SteelBow] ChargeAI
 UNIT
 
 Rein3:
 UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [15,0] 0 0 1 REDA14R0 [IronAxe] ChargeAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT
 
 ReinEPIC2:
 UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA0R1 [SteelAxe] ChargeAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA3R0 [IronLance] StallOneTurnAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA3R0 [ShortLance] StallOneTurnAI
 UNIT
 
 Rein4:

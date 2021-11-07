@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="FF5 - Caves 01 - Tileset" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="FF5 - Caves 01 - Tileset.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value=""/>
+   <property name="ChapterID" value="Ch5xInterlude"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Ch5xInterludeMapChanges"/>
+   <property name="MapID" value="Ch5xInterludeMap"/>
+   <property name="ObjectType" value="FF5CaveObjectID"/>
+   <property name="PaletteID" value="FF5CavePaletteID"/>
+   <property name="TileConfig" value="FF5CaveConfigID"/>
+  </properties>
+  <data encoding="csv">
+58,242,246,245,143,309,310,111,137,113,141,213,147,58,25,
+58,274,278,279,214,341,342,143,169,145,213,58,179,120,121,
+227,261,311,311,90,175,175,175,176,177,58,123,25,95,94,
+130,154,58,91,123,123,59,91,58,90,34,91,121,29,29,
+132,154,91,242,243,91,90,58,91,91,59,25,95,29,29,
+291,261,90,274,275,58,91,91,90,59,90,219,159,29,29,
+250,252,58,311,311,59,58,58,59,91,90,58,90,430,430,
+314,90,90,58,91,58,123,250,252,123,58,90,91,462,462,
+59,90,347,228,229,347,91,282,252,90,58,90,25,494,494,
+35,123,347,260,261,347,59,314,123,58,90,315,316,159,29
+</data>
+ </layer>
+ <layer id="2" name="War Room" width="15" height="10" visible="0">
+  <data encoding="csv">
+44,44,44,44,44,44,76,76,76,76,44,44,44,44,44,
+44,44,44,44,76,77,111,309,310,113,75,76,44,44,44,
+44,44,44,45,217,217,143,341,342,145,113,245,75,44,44,
+44,44,44,77,217,592,175,90,58,177,151,277,145,43,44,
+44,44,45,140,592,91,58,347,347,91,58,311,151,43,44,
+44,44,45,177,58,347,228,194,194,229,347,58,219,43,44,
+44,44,45,250,252,347,260,290,291,261,347,59,14,44,44,
+44,44,45,314,91,59,91,347,347,58,90,58,43,44,44,
+44,44,44,16,90,58,59,91,59,90,91,11,44,44,44,
+44,44,44,44,16,91,58,58,91,59,14,44,44,44,44
+</data>
+ </layer>
+</map>

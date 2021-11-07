@@ -104,10 +104,11 @@
 #define Boots 0x62
 #define BodyRing 0x63
 #define SlimBow 0x64
-#define ThiefStaff 0x65
-#define MemberCard 0x66
-#define SilverCard 0x67
-#define WhiteGem 0x68
+#define DevilDagger 0x65
+#define BalladOfWar 0x66
+#define OrionsBolt 0x66
+#define ElysianWhip 0x67
+#define GuidingRing 0x68
 #define ChestKey 0x69
 #define DoorKey 0x6A
 #define Lockpick 0x6B

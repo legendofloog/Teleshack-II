@@ -25,6 +25,7 @@ NewSupportTable:
 ALIGN 4
 CleoSupportList:
 SupportEntry(Loewe,3,0,0,5,5,5,5)
+SupportEntry(Varga,3,0,0,7,7,7,7)
 SupportTerm
 
 ALIGN 4
@@ -94,7 +95,7 @@ SupportTerm
 
 ALIGN 4
 GimmSupportList:
-SupportEntry(Tobie, 3, 3, 3, (-15), (-15), 10, (-15))
+SupportEntry(Tobie, 3, 3, 3, 0, 0, 10, 0)
 SupportTerm
 
 SetUnitSupportList(Cleo,CleoSupportList)

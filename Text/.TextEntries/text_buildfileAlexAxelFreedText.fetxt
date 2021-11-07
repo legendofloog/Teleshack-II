@@ -1,114 +1,57 @@
 [MidLeft][LoadMira][Right][LoadAlex][FarRight][LoadAxel]
-
 [MidLeft][TwoLineBox]
-
 Wh- Alex, Axel? What on earth[N]
-
 are you two doing in here?[A]
-
 [Right][OneLineBox]
-
 Ah boss, we can explain![A]
-
 [FarRight][TwoLineBox]
-
 We came in to help you[N]
-
 guys out but, well-[A]
-
 [Right]
-
 We might've gotten[N]
-
 found out, oops.[A]
-
 [MidLeft]
-
 Idiots! You were supposed to[N]
-
 stay with the rest of the squad![A]
-
 [FarRight]
-
 Yeah but they're fine[N]
-
 on their own outside![A]
-
 [Right][MoveRight]
-
 And you guys probably[N]
-
 needed the help more![A]
-
 [MidLeft]
-
 Thats not the point! What if[N]
-
 we hadn't come this way?[AN]
-
 You'd be rotting in Cidors jail[N]
-
 for the rest of your days.[AN]
-
 And I don't think you'd be any[N]
-
 use to us like that![A]
-
 [Right]
-
 Yeah but we aren't and[N]
-
 thats what matters![A]
-
 [FarRight][OneLineBox][ToggleSmile]
-
 And now we can help you![A]
-
 [MidLeft][ThreeLineBox][ToggleSmile]
-
 Sometimes I wonder how[N]
-
 I ever let you two onto[N]
-
 the recon squad[Beat][CloseEyes][A]
-
 [FarRight][TwoLineBox][ToggleSmile]
-
 I mean you need someone who can[N]
-
 handle themselves in a brawl.[A]
-
 [Right][ThreeLineBox]
-
 It's not like Iskra is going[N]
-
 toe to toe with a knight in a[N]
-
 one versus one swordfight.[A]
-
 [FarRight][TwoLineBox]
-
 And we're two for[N]
-
 the price of one![A]
-
 [MidLeft][ThreeLineBox][OpenEyes]
-
 Hah, whatever you knuckleheads.[N]
-
 Come on, do what you[N]
-
 do best, let's move![A]
-
 [Right][OneLineBox]
-
 [MoveRight]
-
 Aye aye cap'n![A]
-
 [FarRight]
-
 [MoveFarRight]
-
 Sure thing boss![A][X]
-

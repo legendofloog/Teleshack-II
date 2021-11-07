@@ -18,7 +18,13 @@
 #define HexID 21
 #define EvenRhythmID 22
 #define OddRhythmID 23
-#define DazzleID 31
+#define DazzleID 36
+#define RepositionID 37
+#define RallyDefID 38
+#define RallyResID 39
+#define RallyDefenseID RallyDefID
+#define RallyResistanceID RallyResID
+#define SaviorID 40
 
 // keep it continous for debug purpose
 
