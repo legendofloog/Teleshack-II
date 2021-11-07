@@ -3,7 +3,6 @@
     #include "CustomDefinitions.event"
     #include "Definitions/DefinitionsInstaller.event"
 
-    #define BACKDOOR
 
  PROTECT $2C56A
  //PROTECT 0x5A800

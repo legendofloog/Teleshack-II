@@ -50,9 +50,6 @@ LocationBasedEvents:
 	House(0x0,Ch6House1,25,23)
 	House(0x0,Ch6House2,25,27)
 	Seize(0, 28)
-	#ifdef BACKDOOR
-	Seize(7, 16)
-	#endif
 END_MAIN
 
 MiscBasedEvents:

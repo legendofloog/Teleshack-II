@@ -31,9 +31,6 @@ Chest(Fire,14,8)
 LOCA 9 DelilahDoor [6,10] 0x12
 LOCA 10 HernandezDoor [18,4] 0x12
 LOCA 3 DraganaDoor [16,18] 0x12
-#ifdef BACKDOOR
-Seize(1, 1)
-#endif
 END_MAIN
 
 MiscBasedEvents:

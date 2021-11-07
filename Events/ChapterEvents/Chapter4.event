@@ -36,12 +36,6 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 Chest(TemperedRing, 1,12)
-#ifdef BACKDOOR
-Seize(7, 3)
-Seize(7, 4)
-Seize(8, 3)
-Seize(8, 4)
-#endif
 	END_MAIN
 
 Dunno1:

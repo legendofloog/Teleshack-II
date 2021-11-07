@@ -24,7 +24,7 @@
 #define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB 0x0 0x0"
 
 //item ID for skill scroll
-#define SkillScroll 0x92
+#define SkillScroll 0xBC
 
 #include "EngineHacks/SkillSystem/skill_definitions.event"
 

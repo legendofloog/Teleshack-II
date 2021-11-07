@@ -41,9 +41,6 @@ LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
 Escape(0,EscapeEventCheck,2,0)
 Escape(0,EscapeEventCheck,3,0)
-#ifdef BACKDOOR
-Seize(18, 16)
-#endif
 END_MAIN
 
 

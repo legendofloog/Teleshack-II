@@ -8,6 +8,8 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
+#include "CharClassItemsEtc/ItemNamesDescs.txt"
+
 #0x3A LearnedSkillText
 Learned  [X]
 
@@ -26,14 +28,6 @@ Height:[X]
 
 #0xd4f AgeText
 Age:[X]
-
-# 0x051E
-Empower[.][X]
-
-#include "CharClassItemsEtc/ItemNamesDescs.txt"
-
-#0xA00 DummyText
-[X]
 
 ## HouseText
 [MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
