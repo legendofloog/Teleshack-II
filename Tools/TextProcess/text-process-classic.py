@@ -1,4 +1,19 @@
+
+# TPC CHANGELOG:
+
+# 1.0:
+# - Initial Release
+
+# 2.0:
+# - Add support for #define <name> <repl>
+#   - Invoke using either `{<name>}` or `[<name>]`
+#   - Nesting invocations supported
+# - Add support for C++-style comments ('// <comment>' at the end of lines)
+
 import os, sys, re
+
+INPUT_ENCODING = "utf-8"
+OUTPUT_ENCODING = "utf-8"
 
 def show_exception_and_exit(exc_type, exc_value, tb):
 	import traceback
@@ -6,8 +21,14 @@ def show_exception_and_exit(exc_type, exc_value, tb):
 	traceback.print_exception(exc_type, exc_value, tb)
 	sys.exit(-1)
 
+RE_NON_ALPHANUM = re.compile(r'\W')
+RE_DIRECTIVE    = re.compile(r"^#([a-zA-Z]\w*)\s+(.+)")
+RE_DEFINE_PARTS = re.compile(r"^(\w+)\s+(.+)")
+RE_MACRO_INVOKE = re.compile(r'\{(\w+)\}|\[(\w+)\]')
+RE_TEXT_ENTRY   = re.compile(r"^#\s*([0x[0-9a-fA-F]+|#)\s*(\w+)?$", re.I)
+
 def macroize_name(name):
-	return re.sub(r"[^A-Za-z0-9_]", '_', name).upper()
+	return RE_NON_ALPHANUM.sub('_', name).upper()
 
 class TextProcessError(Exception):
 
@@ -38,6 +59,89 @@ class ParseFileError(Exception):
 		self.textEntry = textEntry
 		self.errDesc   = errDesc
 
+class Preprocessor:
+
+	def __init__(self, doTrace):
+		self.doTrace = doTrace  # boolean
+		self.definitions = {}   # { string: string }
+		self.includeSet = set() # { string }
+
+	def strip_comment(self, string):
+		i = string.find('//')
+
+		if i >= 0:
+			return string[:i]
+
+		return string
+
+	def preprocess(self, fileName):
+		if fileName in self.includeSet:
+			sys.stderr.write("WARNING: file `{}` was already included once, ignoring.\n".format(fileName))
+			return None
+
+		self.includeSet.add(fileName)
+
+		if self.doTrace:
+			sys.stderr.write("TRACE: [preprocess] opening `{}`\n".format(fileName))
+
+		with open(fileName, 'r', encoding=INPUT_ENCODING) as f:
+			for iLine, line in enumerate(f.readlines()):
+				line = self.strip_comment(line)
+				stripped = line.strip()
+
+				m = RE_DIRECTIVE.match(stripped)
+
+				if m:
+					directive = m.group(1).strip().lower()
+
+					if directive == 'include':
+						# include directive
+
+						includee = m.group(2).strip()
+
+						if (includee[0] == '"'):
+							includee = includee.strip('"')
+
+						dirpath = os.path.dirname(fileName)
+
+						if len(dirpath) > 0:
+							includee = os.path.join(dirpath, includee)
+
+						for otherLine in self.preprocess(includee):
+							yield otherLine
+
+					elif directive == 'define':
+						m2 = RE_DEFINE_PARTS.match(m.group(2).strip())
+
+						if not m2:
+							raise TextProcessError(fileName, iLine+1, "Bad define! Replacement string is probably missing.")
+
+						defname = m2.group(1)
+						defvalu = m2.group(2)
+
+						if (defvalu[0] == '"'):
+							defvalu = defvalu.strip('"')
+
+						self.definitions[defname] = defvalu
+
+					else:
+						sys.stderr.write('WARNING: {}:{}: What is a "#{}"? is this is comment? consider using "//" for comments instead!\n'.format(
+							fileName, iLine+1, directive))
+
+				else:
+					yield (fileName, iLine, self.expand_macros(line))
+
+	def _get_expanded_expr(self, m):
+		defname = m.group(0)[1:-1]
+
+		if defname in self.definitions:
+			return self.expand_macros(self.definitions[defname])
+
+		return m.group(0)
+
+	def expand_macros(self, string):
+		return RE_MACRO_INVOKE.sub(lambda m: self._get_expanded_expr(m), string)
+
 def generate_text_entries(lines, doTrace):
 	"""takes a compiled file and returns a list of individual text entries"""
 
@@ -56,7 +160,7 @@ def generate_text_entries(lines, doTrace):
 				next # Skip empty lines
 
 			else:
-				match = re.match(r"^#\s*([0x[0-9a-fA-F]+|#)\s*(\w+)?$", l, re.M | re.I)
+				match = RE_TEXT_ENTRY.match(l)
 
 				if not match:
 					raise TextProcessError(fileName, iLine+1, "expected entry header!")
@@ -71,47 +175,18 @@ def generate_text_entries(lines, doTrace):
 				currentText = ""
 
 		else:
-			currentText += line + "\n"
+			currentText += line
 
 			if l[-3:] == "[X]": # Line ends in [X] (end of text entry)
 				result.append(TextEntry(currentText, currentStringId, currentDefinition))
 
 				if doTrace:
-					print("TRACE: [generate_text_entries] read {}".format(result[-1].get_pretty_identifier()))
+					sys.stderr.write("TRACE: [generate_text_entries] read {}\n".format(result[-1].get_pretty_identifier()))
 
 				currentText       = None
 				currentDefinition = None
 
 	return result
-
-def preprocess(fileName, doTrace, includeDepth = 0):
-	if includeDepth > 500:
-		print("Warning: #include depth exceeds 500. Check for circular inclusion.\nCurrent file: " + fileName)
-		return None
-
-	if doTrace:
-		print("TRACE: [preprocess] opening `{}`".format(fileName))
-
-	with open(fileName, 'r') as f:
-		for iLine, line in enumerate(f.readlines()):
-			m = re.match(r"^#include\s+(.+)", line.strip(), re.M | re.I)
-
-			if m:
-				includee = m.group(1).strip()
-
-				if (includee[0] == '"'):
-					includee = includee.strip('"')
-
-				dirpath = os.path.dirname(fileName)
-
-				if len(dirpath) > 0:
-					includee = os.path.join(dirpath, includee)
-
-				for otherLine in preprocess(includee, doTrace, includeDepth+1):
-					yield otherLine
-
-			else:
-				yield (fileName, iLine, line)
 
 def generate_definitions_lines(name, textEntries):
 	yield "// Text Definitions generated by text-process\n"
@@ -144,8 +219,8 @@ def main(args):
 	argParse = argparse.ArgumentParser()
 
 	argParse.add_argument('input', help = 'input text file')
-	argParse.add_argument('--installer', default = 'Install Text Data.event', help = 'name of the installer event file to produce')
-	argParse.add_argument('--definitions', default = 'Text Definitions.event', help = 'name of the definitions event file to produce')
+	argParse.add_argument('--installer', default = 'InstallTextData.event', help = 'name of the installer event file to produce')
+	argParse.add_argument('--definitions', default = 'TextDefinitions.event', help = 'name of the definitions event file to produce')
 	argParse.add_argument('--parser-exe', default = None, help = 'name/path of the parser executable')
 	argParse.add_argument('--depends', default = None, nargs='*', help = 'files that text depends on (typically ParseDefinitions.txt)')
 	argParse.add_argument('--force-refresh', action = 'store_true', help = 'pass to forcefully refresh generated files')
@@ -183,7 +258,7 @@ def main(args):
 	# Read the entries
 
 	if verbose:
-		print("TRACE: [global] start reading input")
+		sys.stderr.write("TRACE: [global] start reading input\n")
 
 	entryList = []
 
@@ -195,26 +270,26 @@ def main(args):
 		usedStringIds   = []
 		usedDefinitions = []
 
-		for entry in generate_text_entries(preprocess(inputPath, verbose), verbose): # create separate files for each text entry
+		for entry in generate_text_entries(Preprocessor(verbose).preprocess(inputPath), verbose): # create separate files for each text entry
 			if entry.stringId in usedStringIds:
-				print("WARNING: Duplicate entry for text Id {:03X}! (ignoring)".format(entry.stringId))
+				sys.stderr.write("WARNING: Duplicate entry for text Id {:03X}! (ignoring)\n".format(entry.stringId))
 
 				if entry.definition:
-					print("NOTE: Second entry was defined as `{}`".format(entry.definition))
+					sys.stderr.write("NOTE: Second entry was defined as `{}`\n".format(entry.definition))
 
 				continue
 
 			usedStringIds.append(entry.stringId)
 
 			if entry.definition and (entry.definition in usedDefinitions):
-				print("WARNING: Duplicate entry definition {}! (ignoring)".format(entry.definition))
+				sys.stderr.write("WARNING: Duplicate entry definition {}! (ignoring)\n".format(entry.definition))
 
 				continue
 
 			entryList.append(entry)
 
 	except TextProcessError as e:
-		sys.exit("ERROR: in file `{}`, line {}:\n  {}".format(e.fileName, e.lineNumber, e.errDesc))
+		sys.exit("ERROR: {}:{}:\n  {}".format(e.fileName, e.lineNumber, e.errDesc))
 
 	# Write the entries
 
@@ -224,7 +299,7 @@ def main(args):
 	textFolder = os.path.join(cwd, ".TextEntries")
 
 	if verbose:
-		print("TRACE: [global] start generating output")
+		sys.stderr.write("TRACE: [global] start generating output\n")
 
 	if not os.path.exists(textFolder):
 		os.mkdir(textFolder)
@@ -258,7 +333,7 @@ def main(args):
 					if os.path.exists(textFileName):
 						textModifyTime = os.path.getmtime(textFileName)
 
-						with open(textFileName, 'r') as tf:
+						with open(textFileName, 'r', encoding=OUTPUT_ENCODING) as tf:
 							if str(tf.read()) == entry.text:
 								textNeedsUpdate = False
 
@@ -269,9 +344,9 @@ def main(args):
 
 				if textNeedsUpdate:
 					if verbose:
-						print("TRACE: [write] output `{}`".format(textFileName))
+						sys.stderr.write("TRACE: [write] output `{}`\n".format(textFileName))
 
-					with open(textFileName, 'w') as tf:
+					with open(textFileName, 'w', encoding=OUTPUT_ENCODING) as tf:
 						tf.write(entry.text)
 
 				# Write parsed data if we have a parser
@@ -279,7 +354,7 @@ def main(args):
 				if hasParser:
 					if not os.path.exists(dataFileName) or textNeedsUpdate or os.path.getmtime(dataFileName) < textModifyTime:
 						if verbose:
-							print("TRACE: [write] update `{}`".format(dataFileName))
+							sys.stderr.write("TRACE: [write] update `{}`\n".format(dataFileName))
 
 						generate_text_binary(parserExePath, entry, textFileName, dataFileName)
 

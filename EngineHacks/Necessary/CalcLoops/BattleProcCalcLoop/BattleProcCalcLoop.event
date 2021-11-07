@@ -54,9 +54,13 @@ POIN Proc_Bane DownWithArch Proc_Lethality	//skills that set damage to max
 
 POIN Proc_CapDamage	//check that damage is not over cap
 
+POIN Proc_Chapter6Magic
+
 POIN Proc_Foresight Proc_Miracle Proc_Mercy Proc_Aegis Proc_Pavise Proc_GreatShield 	//skills that set damage to 0 or lower it
 
 POIN Proc_StealHP 
+
+POIN Proc_Conversion
 
 #ifndef COMBAT_ARTS
 	POIN Proc_Sol 
@@ -128,12 +132,6 @@ Chargeups:
 PUSH
 ORG $2b3ec
 jumpToHack(ProcLoopParent)
-
-ORG $59064
-jumpToHack(SkillActivationAnims)
-
-ORG $590a8
-jumpToHack(SkillActivationAnims_defensive)
 
 //skip hp substraction if devil effect
 ORG $2B69E

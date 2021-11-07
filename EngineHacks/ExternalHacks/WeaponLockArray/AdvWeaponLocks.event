@@ -31,4 +31,14 @@ BYTE HardCharLock
 BYTE Cleo
 BYTE EndLockArray
 
+DevilDaggerArray:
+BYTE HardCharLock
+BYTE Mish
+BYTE EndLockArray
+
+BalladOfWarArray:
+BYTE HardCharLock
+BYTE Cadenza
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

@@ -1,36 +1,18 @@
 [MidRight][LoadDragana]
-
 [MidLeft][LoadSoldier]
-
 Did you really think you[N]
-
 would escape that easily?[A]
-
 [MidRight][OneLineBox]
-
 Well, yeah?[A]
-
 [MidLeft][TwoLineBox]
-
 Silence! It seems your execution[N]
-
 will need to be moved up![A]
-
 [MidRight][OneLineBox]
-
 [ToggleMouthMove](Alright, on my signal, we-)[ToggleMouthMove][A][CloseSpeechSlow]
-
 [MidRight][ClearFace]
-
 [MidLeft][ClearFace]
-
-
 
 [Event]
 
-
-
 [MidLeft][LoadSoldier]
-
 What-[A][X]
-

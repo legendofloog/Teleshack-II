@@ -1,88 +1,44 @@
 [FarLeft][LoadCleo]
-
 [Left][LoadLoewe]
-
 [MidRight][LoadDragana]
-
 [Left][OneLineBox]
-
 Dragana![A]
-
 [MidRight][TwoLineBox]
-
 Well, well, well. Aren't you[N]
-
 two a sight for sore eyes.[A]
-
 [MidLeft][OneLineBox]
-
 It's good to see you well, General.[A]
-
 [MidRight][ThreeLineBox]
-
 As if a spineless fop like Cibor could[N]
-
 break me. That being said, though,[N]
-
 this cell isn't exactly pleasant.[AN]
-
 Let's get out of here, yeah?[A]
-
 [Left]
-
 Don't need to tell me twice.[N]
-
 I'll go make sure everyone's[N]
-
 here before we leave.[A][CloseSpeechSlow][ClearFace]
-
 [Event]
-
 [FarLeft][OneLineBox]
-
 [Beat][A]
-
 [MidRight]
-
 Cleo.[A]
-
 [FarLeft]
-
 Y-Yes, General?[A]
-
 [MidRight][ThreeLineBox]
-
 Good job, seriously. I knew I[N]
-
 made the right decision making[N]
-
 you and Loewe my adjutants.[AN]
-
 You all practically didn't[N]
-
 even need me, am I right?[A]
-
 [FarLeft]
-
 Please don't talk like that, General.[N]
-
 Putting aside how inaccurate that is,[N]
-
 you're just tempting fate.[A]
-
 [MidRight]
-
 Ha! Fate's got another thing[N]
-
 coming if it thinks it'll be[N]
-
 taking me down any time soon.[A]
-
 [FarFarLeft][OneLineBox]
-
 You may wish to rethink that, general.[A]
-
 [MidRight]
-
 What-[A][X]
-

@@ -5,3 +5,5 @@
 #include "EVENTSCRIPT_COND_ITEM/Installer.event"
 
 #include "EVENTSCRIPT_SendAllTransporter/SendAllTransporter.event"
+
+#include "EVENTSCRIPT_COND_COUNT_RANGE/COUNT_RANGE.event"

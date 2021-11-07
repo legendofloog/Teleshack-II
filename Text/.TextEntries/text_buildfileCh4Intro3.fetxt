@@ -1,38 +1,19 @@
 [FarLeft][LoadFilone][Left][LoadZwieback][Right][LoadLoewe][FarRight][LoadMira]
-
 [Left]We were getting worried.[AN]
-
 [FarLeft]I'm glad to see you're alright.[AN]
-
 [Right]Zwieback, Filone. Are the others[N]
-
 from the recon alright?[AN]
-
 [Left][ToggleSmile]Never better.[AN][ToggleSmile]
-
 We took care of your[N]
-
 mounts.[AN]
-
 [Right]Dragana[Beat] she-[.4][N]
-
 [Left]We[Beat] already heard[N]
-
 the news.[AN]
-
 Her sacrifice won't be[N]
-
 in vain.[AN]
-
 Headquarters is nearby,[N]
-
 let's move.[AN]
-
 [FarRight][Beat][AN][Event]
-
 [Right]Mira?[AN]
-
 [FarRight]Everyone, we were being[N]
-
 trailed[Beat]![A][X]
-

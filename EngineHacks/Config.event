@@ -17,7 +17,7 @@
 #define AS_DOUBLING_THRESHOLD 3
 
 // If true, dropped items will retain their durability.
-#define DROPPED_ITEM_DURABILITY False
+#define DROPPED_ITEM_DURABILITY True
 
 // ===================================
 // = HACK INSTALLATION CONFIGURATION =
@@ -239,7 +239,7 @@
 #define ALSO_USE_VANILLA_DANCE_CHECK False
 #define ALSO_USE_VANILLA_SUPPLY_CHECK True
 #define ALSO_USE_VANILLA_SUMMON_CHECK False
-#define ALSO_USE_VANILLA_STEAL_CHECK True
+#define ALSO_USE_VANILLA_STEAL_CHECK False
 
 //If uncommented, Combat Arts will be enabled.
 //This changes the behavior of most command skills and some proc skills such that they cost additional durability per hit and are selected from a submenu.

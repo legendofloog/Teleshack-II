@@ -9,3 +9,9 @@ BYTE 1 StealPlusID
 BYTE 1 LocktouchID
 BYTE 00 00
 ALIGN 4
+
+CadenzaSkillList:
+BYTE 1 RallyDefenseID
+BYTE 1 RallyResistanceID
+BYTE 00 00
+ALIGN 4

@@ -39,6 +39,7 @@
 #define BraveAxe 0x23
 #define KillerAxe 0x24
 #define Poleaxe 0x25
+#define Halberd 0x25
 #define Hammer 0x26
 #define DevilAxe 0x27
 #define HandAxe 0x28
@@ -103,10 +104,8 @@
 #define Boots 0x62
 #define BodyRing 0x63
 #define SlimBow 0x64
-#define HerosCrest 0x64
-#define KnightCrest 0x65
-#define KnightsCrest 0x65
-#define OrionBolt 0x66
+#define DevilDagger 0x65
+#define BalladOfWar 0x66
 #define OrionsBolt 0x66
 #define ElysianWhip 0x67
 #define GuidingRing 0x68
@@ -115,8 +114,7 @@
 #define Lockpick 0x6B
 #define Vulnerary 0x6C
 #define Elixir 0x6D
-#define PureWater 0x6E
-#define Antidote 0x6F
+#define PureWater 0x6D
 #define Antitoxin 0x6F
 #define Torch 0x70
 #define TorchItem 0x70
@@ -140,6 +138,7 @@
 #define IceSword 0x82
 #define Argilabrys 0x83
 #define TemperedRing 0x84
+#define CivilianProof 0x85
 #define Sieglind 0x85
 #define Sieglinde 0x85
 #define BattleAxe 0x86
@@ -183,7 +182,6 @@
 #define Vulnerary_2 0xA2
 #define Greennote 0xA3
 #define Rednote 0xA4
-#define Dance 0xA5
 #define Nightmare 0xA6
 #define NightmareStaff 0xA6
 #define DemonShard 0xA7
@@ -204,10 +202,10 @@
 #define FireFang 0xB1
 #define HellFang 0xB2
 #define EvilEye 0xB3
-//#define BloodyEye 0xB4
-//#define CrimsonEye 0xB4
+#define BloodyEye 0xB4
+#define CrimsonEye 0xB4
 #define Stone 0xB5
-//#define Aircalibur 0xB6
+#define Aircalibur 0xB6
 #define JunaFruit 0xB7
 #define _150G 0xB8
 #define _200G 0xB9
@@ -219,3 +217,14 @@
 #define MarksmanBow 0xB3
 #define BeiyrScroll 0xBE
 #define SlimArch 0x8c
+#define Dullahan 0xBF
+#define Burn 0xC0
+#define CounterBow 0xC1
+#define Conversion 0xC2
+#define RitualKnife 0xC3
+#define Brenthunder 0xC4
+#define SpellMirror 0xC5
+#define AlairsGale 0xC6
+#define SisterRing 0xC7
+#define Hurlbat 0xC8
+#define Arachnid 0xC9 

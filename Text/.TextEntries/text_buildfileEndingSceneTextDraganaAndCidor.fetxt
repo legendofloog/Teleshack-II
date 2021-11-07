@@ -1,172 +1,86 @@
 [MidLeft][LoadCidor]
-
 [MidRight][LoadDragana]
-
 Cidor[Beat] What do you want? I've[N]
-
 no patience for traitorous swine.[A]
-
 [MidLeft][ThreeLineBox]
-
 Now, now. There is no need for harsh[N]
-
 words, General Dragana. I simply came[N]
-
 to inform you of your execution.[AN]
-
 It will occur tomorrow, as planned.[A]
-
 [MidRight]
-
 Why not end me right here[N]
-
 if you're that anxious?[N]
-
 The waiting's killing me.[A]
-
 [MidLeft]
-
 I have no plans to do it personally.[N]
-
 Besides, it must be public in order to[N]
-
 properly crush your band's spirits.[A]
-
 [MidRight]
-
 Yet you felt the need to tell me[N]
-
 yourself. I doubt you came here[N]
-
 just to gloat about your victory.[AN]
-
 Well, maybe you really wanted to hear[N]
-
 stories about an old flame. Mira's[N]
-
 doing quite well, no thanks to you.[A]
-
 [MidLeft][OneLineBox]
-
 [Beat]I'm glad that is the case.[A]
-
 [MidRight][ThreeLineBox]
-
 Your daughter is best off of all,[N]
-
 not knowing her father is a[N]
-
 traitor to her own country.[A]
-
 [MidLeft][ThreeLineBox]
-
 You may see me as a traitor, but I will[N]
-
 do what I must to protect my land and[N]
-
 my people. Now, is there anything else?[A]
-
 [MidRight][TwoLineBox]
-
 Well, I have more, but if you tire[N]
-
 of it, then just one question.[AN]
-
 Didn't Boro's betrayal hinge on you[N]
-
 not killing any of us unnecessarily?[A]
-
 [MidLeft][ThreeLineBox]
-
 So he told you that much. Indeed,[N]
-
 it did. I found it odd that a man[N]
-
 throwing you all to the wolves cared,[AN]
-
 but I humored his request. However,[N]
-
 your death alone is necessary if[N]
-
 the rebellion is to stay weak.[A]
-
 [MidRight]
-
 Is that so? I'd watch out if I were[N]
-
 you. Angering Boro is likely to end[N]
-
 with a spear in your back, Cidor.[A]
-
 [MidLeft]
-
 I will take my chances. The man has[N]
-
 proven he valued money over your cause,[N]
-
 and I cannot afford to let you recover.[AN]
-
 With the Liberators finally defeated,[N]
-
 your benefactors now lack their shield.[N]
-
 I must capitalize on this good fortune.[A]
-
 [MidRight]
-
 Ha, good luck with that. You don't even[N]
-
 know where House Freyse's nobility are,[N]
-
 right? Besides, if you think we're done,[AN]
-
 then you're not paying attention. Even[N]
-
 if I fall here, they can continue on.[A]
-
 [MidLeft]
-
 [Beat]My offer still stands, Dragana. If[N]
-
 you tell me where the surviving heir is,[N]
-
 I will allow you to keep your head.[A]
-
 [MidRight]
-
 No thanks. Even if I'm not their knight[N]
-
 anymore, I still have the pride of one.[N]
-
 You're not getting anything from me.[A]
-
 [MidLeft][TwoLineBox]
-
 Very well, you've made yourself clear.[N]
-
 Spend your final hours wisely, general.[A][CloseSpeechSlow][ClearFace]
-
 [MidRight][ClearFace]
-
 [Event]
-
 [MidRight][LoadDragana][ThreeLineBox]
-
 Heh[Beat] Since they went on the run, I[N]
-
 haven't heard anything from them.[N]
-
 Couldn't tell him even if I wanted to.[AN]
-
 I wonder how everyone else is doing.[N]
-
 At the very least, Mira should be safe,[N]
-
 and some of us escaped their ambush.[AN]
-
 [Beat]I hope Loewe and Cleo are alright.[N]
-
 If they live on and continue to fight,[N]
-
 then Decia can still hope for freedom.[A][X]
-

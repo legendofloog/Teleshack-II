@@ -93,6 +93,33 @@ FiloneArcher:
 ZwieGeneral:
 	#incbin "./_palettes/ZwieGeneral.lzpal" 
 
+LongxiaCorsair_F:
+	#incbin "./_palettes/LongxiaCorsair_F.lzpal" 
+
+LongxiaBerserker_F:
+	#incbin "./_palettes/LongxiaBerserker_F.lzpal" 
+
+FangaiDarkMage:
+	#incbin "./_palettes/FangaiDarkMage.lzpal" 
+
+FangaiDarkBishop:
+	#incbin "./_palettes/FangaiDarkBishop.lzpal" 
+
 FiloneSniper:
 	#incbin "./_palettes/FiloneSniper.lzpal" 
+
+GimmThief:
+	#incbin "./_palettes/GimmThief.lzpal" 
+
+GimmRogue:
+	#incbin "./_palettes/GimmRogue.lzpal" 
+
+RigganMage:
+	#incbin "./_palettes/RigganMage.lzpal" 
+
+FaolanRookKnight:
+	#incbin "./_palettes/FaolanRookKnight.lzpal" 
+
+FaolanGoldKnight:
+	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
 

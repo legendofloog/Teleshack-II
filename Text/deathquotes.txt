@@ -2,15 +2,15 @@
 [MidRight][LoadCleo]
 The end is closing in[Beat] I failed[N]
 to atone for all that I've done.[AN]
-Even so, is this[Beat] peace I feel?[N]
-My comrades[Beat] please live on[Beat][A][CloseEyes][X]
+Even so, is this peace I feel?[N]
+My comrades, please live on[Beat][A][CloseEyes][X]
 
 ## LoeweDeathQuoteText
 [MidRight][LoadLoewe]
 This is as far as my strength[N]
-could take me[Beat] Ha... hahaha![AN]
+could take me[Beat] Ha[Beat] hahaha![AN]
 What a pathetic life I've led.[N]
-Mom, Dad, I'll be there soon[Beat][A][CloseEyes][X]
+I deserve no more than this[Beat][A][CloseEyes][X]
 
 ## MiraDeathQuoteText
 [MidRight][LoadMira]
@@ -61,5 +61,34 @@ But[Beat] But[Beat][A][CloseEyes][X]
 ## ZwieDeathQuoteText
 [MidRight][LoadZwie]
 Easy come[Beat][N]
-Easy go[Beat][AN][CloseEyes][X]
+Easy go[Beat][A][CloseEyes][X]
 
+## LongxiaDeathQuoteText
+[MidRight][LoadLongxia]
+Graaa[Beat][A][CloseEyes][X]
+
+## FangaiDeathQuoteText
+[MidRight][LoadFangai]
+But supper is still[Beat][N]
+cooking[Beat] yurrghh[Beat][A][CloseEyes][X]
+
+## RigganDeathQuoteText
+[MidLeft][LoadRiggan]
+No, no, no, a thousand[N]
+times no, I say! No[Beat][A][CloseEyes][X]
+
+## MishDeathQuoteText
+[MidRight][LoadMish]
+Ha[Beat] oops[Beat] Shouldn't[N]
+have bet on that one[Beat][A][CloseEyes][X]
+
+## AwaDeathQuoteText
+[MidRight][LoadAwa]
+W-wait[Beat] what? I'm supposed[N]
+to be[Beat] smarter than this[Beat][A][CloseEyes][X]
+
+## TobieDeathQuoteText
+[MidRight][LoadTobie]
+Looks like being a soldier[Beat][N]
+isn't all it was supposed[AN]
+to be[Beat] Mish, I'm[Beat] [CloseEyes]sorry[Beat][A][X]

@@ -12,8 +12,8 @@
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 
 #include "StatusExpansion/StatusExpansion.event"
-
-//#include "MultiSupplyUnits20200302/Installer.event"
+#include "FixedDamage/FixedDamageWeapons.event"
+//#include "FreeMovement/FreeMovement.event"
 
 // thief vision
 PUSH
@@ -66,8 +66,8 @@ ChangeWeaponRankASMC:
 
 #include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
 
-#include "StanAI/StanAI.event" // let's expand first lol
-								// no I want TalkAI - Loog
+#include "StanAI/StanAI.event" 
+
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
 #include "Graphics/NosResire/NosResire.event"
@@ -90,7 +90,12 @@ ChangeWeaponRankASMC:
 
 #include "MinimugPalette/Installer.event"
 
-//#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
+#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
+#include "RingRework/RingRework_Installer.event"
+
+#include "NarrowFontExtension/SerifExtension.event"
+
+//#include "FogVisionTiles/Installer.event"

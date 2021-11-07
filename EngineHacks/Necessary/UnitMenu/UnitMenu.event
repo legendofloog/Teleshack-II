@@ -65,6 +65,10 @@ UnitMenuTable:
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
   //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
   
+  // UM_Attack
+  MenuCommand(0x67b, 0x6c0, NormalText, $249ac, AttackEffect, $22c31, $22c99) //to clear flags
+  // UM_Attack_B
+  MenuCommand(0x67b, 0x6c0, NormalText, $24a28, AttackEffect, $22c31, $22c99)
   
   MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
   // UM_Seize
@@ -77,10 +81,6 @@ UnitMenuTable:
   MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
   #endif // DRAGON_VEINS
   
-  // UM_Attack
-  MenuCommand(0x67b, 0x6c0, NormalText, $249ac, AttackEffect, $22c31, $22c99) //to clear flags
-  // UM_Attack_B
-  MenuCommand(0x67b, 0x6c0, NormalText, $24a28, AttackEffect, $22c31, $22c99)
   #ifdef GAIDEN_MAGIC
 	MenuCommand(UM_GaidenBlackMagic,UM_GaidenMagicDesc,NormalText,GaidenBlackMagicUMUsability,GaidenBlackMagicUMEffect,GaidenBlackMagicUMHover,GaidenMagicUMUnhover)
 	MenuCommand(UM_GaidenWhiteMagic,UM_GaidenMagicDesc,NormalText,GaidenWhiteMagicUMUsability,GaidenWhiteMagicUMEffect,GaidenWhiteMagicUMHover,GaidenMagicUMUnhover)
@@ -89,8 +89,6 @@ UnitMenuTable:
 	MenuCommand(UM_CombatArts, UM_CombatArtsDesc, NormalText, CombatArtsUsability, CombatArtsEffect, $22c31, $22c99)
   #else // COMBAT_ARTS
   
-  MenuCommand(UM_COPower, UM_COPowerDesc, NormalText, COPowerUsability, COPowerEffect, $22c31, $22c99)
-
 	//Lunge
 	MenuCommand(UM_Lunge, UM_LungeDesc, NormalText, LungeUsability, LungeEffect, $22c31, $22c99)
 
@@ -105,20 +103,29 @@ UnitMenuTable:
   #endif // COMBAT_ARTS
 
   UM_Staff
-  UM_Ride
-  UM_Exit
   UM_Play
   
   //UM_Dance
   MenuCommand(0x67E,0x6C2,NormalText,NewDanceUsability,0x231D0)
 
+  UM_Item
+  UM_Trade
+
+  MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
+  MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
+  
   UM_Steal
+  UM_Pick
+
+  UM_Ride
+  UM_Exit
   
   //UM_Summon
   MenuCommand(0x693,0x6DD,NormalText,NewSummonUsability,0x244B8)
   
   UM_Summon_DK
-  UM_Pick
+  MenuCommand(UM_COPower, UM_COPowerDesc, NormalText, COPowerUsability, COPowerEffect, $22c31, $22c99)
+
 
 #ifndef COMBAT_ARTS
 
@@ -157,8 +164,6 @@ UnitMenuTable:
   UM_Secret
   UM_Arena
 
-  UM_Item
-  UM_Trade
   //MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
 
   #ifndef COMBAT_ARTS
@@ -182,9 +187,6 @@ UnitMenuTable:
     MenuCommand(UM_EditSkill, UM_EditSkillDesc, OrangeText, $04F449, SkillDebugCommand_OnSelect)
   #endif
 
-  MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
-  MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
-  
   //UM_Supply
   
   UM_Wait

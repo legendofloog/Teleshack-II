@@ -1,166 +1,83 @@
 [MidLeft][LoadIskra]
-
 [MidRight][LoadLoewe]
-
 Iskra, I'm glad you're safe.[N]
-
 Do you still have my sword?[A]
-
 [MidLeft]
-
 Of course I do. You entrusted it to[N]
-
 me, so there's no way I'd lose it.[A]
-
 [MidRight][OneLineBox][ToggleSmile]
-
 Thanks. I knew I could count on you.[A][ToggleSmile]
-
 [MidLeft][ThreeLineBox]
-
 I don't want your gratitude, Loewe.[N]
-
 Just don't make another plan risky[N]
-
 enough where you'd need to do this.[AN]
-
 You could have died, you know that?[A]
-
 [MidRight][TwoLineBox]
-
 I'll do what I must to free Dragana,[N]
-
 so I can't promise to take less risks.[A]
-
 [MidLeft]
-
 You plan to repay the general[N]
-
 for saving you by risking death?[AN]
-
 Surely you realize she wouldn't[N]
-
 want that. You're family, right?[A]
-
 [MidRight][ThreeLineBox]
-
 You're not wrong, and that's all[N]
-
 the more reason for my actions.[N]
-
 I[Beat] We can't lose anyone else.[A]
-
 [MidLeft]
-
 I agree, which is why you need to[N]
-
 tell me that you won't die like a fool.[N]
-
 Otherwise, I'm not giving the sword.[A]
-
 [MidRight][OneLineBox]
-
 [Beat]You know how to twist my arm.[A]
-
 [MidLeft][TwoLineBox][ToggleSmile]
-
 Of course. I've learned[N]
-
 that much over the years.[A][ToggleSmile]
-
 [MidRight]
-
 Fine, I won't take any unnecessary[N]
-
 risks. Is that good enough for you?[A]
-
 [MidLeft][OneLineBox]
-
 I suppose it'll do. Here, take it.[A]
-
 [MidRight][TwoLineBox]
-
 Finally! Feels good to have[N]
-
 his back in my hands. Now, let's-[A]
-
 [MidLeft]
-
 Hold on. If you don't mind me asking[Beat][N]
-
 Can you teach me how to use a sword?[AN]
-
 I want to be able to defend myself,[N]
-
 even if I'm unable to use my magic.[AN]
-
 [MidRight][ThreeLineBox]
-
 I'm not sure how helpful I'll be. My[N]
-
 mother taught me, but she died before[N]
-
 I learned much beyond the basics.[AN]
-
 Looking back now, her swordmanship was[N]
-
 peerless. A pride of Mahemen, no doubt.[A]
-
 [MidLeft]
-
 Mahemen[Beat] All that desert must help[N]
-
 keep the Cytheans at bay. Their rebels[N]
-
 are in a much better position than us.[AN]
-
 Maybe if we all joined hands, our[N]
-
 forces could send the Cytheans packing.[A]
-
 [MidRight]
-
 Perhaps[Beat] Or a swordmaster there[N]
-
 could help finish my training. Right[N]
-
 now, my sword is of use to no one.[A]
-
 [MidLeft]
-
 I've seen you practicing on[N]
-
 your own sometimes, though.[N]
-
 You look pretty good to me.[A]
-
 [MidRight]
-
 Against a practice target, sure. When[N]
-
 I'm facing a real person with one,[N]
-
 there's a[Beat] sense of hesitation.[AN]
-
 Still, if you really want to learn,[N]
-
 then I can show you a thing or two.[A]
-
 [MidLeft][TwoLineBox][ToggleSmile]
-
 Ha, I'm glad you agreed. Wouldn't[N]
-
 want to twist your other arm too.[A][ToggleSmile]
-
 [MidRight]
-
 Yeah, yeah, get moving. We've[N]
-
 wasted enough time talking, Iskra.[A][CloseSpeechSlow][ClearFace]
-
 [MidLeft]
-
 Coarse as ever[Beat] I hope he's a[N]
-
 bit nicer as a teacher, at least.[A][X]
-

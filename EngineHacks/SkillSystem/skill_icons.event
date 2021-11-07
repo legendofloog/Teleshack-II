@@ -950,5 +950,32 @@ ORG SkillIcon(HeadshotID)
 ORG SkillIcon(CullingID)
 #incbin "SkillIcons/Culling.dmp"
 
+ORG SkillIcon(ConversionID)
+#incbin "SkillIcons/Shadowgift.dmp"
+
+ORG SkillIcon(TerrainEffectiveID)
+#incbin "SkillIcons/FieryBlood.dmp"
+
+ORG SkillIcon(NonCombatantID)
+#incbin "SkillIcons/Serenity.dmp"
+
+ORG SkillIcon(GladiatorsAuraID)
+#incbin "SkillIcons/FullMetalBody.dmp"
+
+ORG SkillIcon(SpellMirrorID)
+#incbin "SkillIcons/CounterMagic.dmp"
+
+ORG SkillIcon(AzuriumMightID)
+#incbin "SkillIcons/ElbowRoom.dmp"
+
+ORG SkillIcon(EterniumMightID)
+#incbin "SkillIcons/DoubleLion.dmp"
+
+ORG SkillIcon(ZoruniumMightID)
+#incbin "SkillIcons/Celerity.dmp"
+
+ORG SkillIcon(GenesiumMightID)
+#incbin "SkillIcons/HolyAura.dmp"
+
 ORG SkillIcons+0x8000
 

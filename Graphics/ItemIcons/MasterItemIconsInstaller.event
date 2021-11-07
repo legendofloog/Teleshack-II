@@ -3,6 +3,7 @@
 // stone sword, argilabrys, and frost blade from beansy
 //gale bow by zarg
 // slim bow is by zaneeeeeeee avernathy
+// devil dagger from archer?
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 /*
 ALIGN 4
@@ -40,6 +41,8 @@ ItemIconSlot(0x3f,"Png/Nosferatu.png")
 ItemIconSlot(0x42,"Png/Again.png")
 ItemIconSlot(0x44,"Png/Sigil.png")
 ItemIconSlot(0x58,"Png/Rewarp.png")
+ItemIconSlot(0x62,"Png/devildagger.png")
+ItemIconSlot(0x64,"Png/BalladOfWar.png")
 ItemIconSlot(0x93,"Png/Stone Sword.png")
 ItemIconSlot(0x94,"Png/Frost Blade.png")
 ItemIconSlot(0x95,"Png/Argilabrys.png")
@@ -56,5 +59,17 @@ ItemIconSlot(0xBE,"Png/MarksmanBow.png")
 ItemIconSlot(0x63,"Png/BeiyrScroll.png")
 ItemIconSlot(0xDF,"Png/SlimBow.png")
 ItemIconSlot(0xCB,"Png/SlimArch.png")
+ItemIconSlot(0xCC,"Png/AlairsGale.png")
+ItemIconSlot(0xCD,"Png/Brenthunder.png")
+ItemIconSlot(0xCE,"Png/CivilianProof.png")
+ItemIconSlot(0xCF,"Png/Conversion.png")
+ItemIconSlot(0xD0,"Png/CounterBow.png")
+ItemIconSlot(0xD1,"Png/Dullahan.png")
+ItemIconSlot(0xD2,"Png/SisterRing.png")
+ItemIconSlot(0xD3,"Png/RitualKnife.png")
+ItemIconSlot(0xD4,"Png/SpellMirror.png")
+ItemIconSlot(0xD5,"Png/Burn.png")
+ItemIconSlot(0xC0,"Png/Hurlbat.png")
+ItemIconSlot(0xC1,"Png/Arachnid.png")
 POP
 

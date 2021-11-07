@@ -8,8 +8,9 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
+#include "CharClassItemsEtc/ItemNamesDescs.txt"
+
 #0x3A LearnedSkillText
-#first text ID in the free block
 Learned  [X]
 
 #include "statscreen_text.txt"
@@ -17,7 +18,6 @@ Learned  [X]
 #include "unitmenu_text.txt"
 
 #0xd4c LikesText
-#first text ID in the free block
 Likes:[X]
 
 #0xd4d DislikesText
@@ -26,13 +26,10 @@ Likes:[X]
 #0xd4e HeightText
 Height:[X]
 
-#include "CharClassItemsEtc/ItemNamesDescs.txt"
-
 #0xd4f AgeText
 Age:[X]
 
 ## HouseText
-#first text ID in the free block
 [MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
 
 ## VillageText
@@ -43,7 +40,6 @@ Freeze all enemies[N]
 for one turn[X]
 
 ## nameCamus
-#for identity problems
 Camus[X]
 
 ## nameSirius

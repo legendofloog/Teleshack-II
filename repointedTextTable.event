@@ -2,7 +2,7 @@
 // Include this in *before* text (and *before* Tool Helpers)
 
 #define TextTable NewTextTable // define to not conflict with Tool Helpers
-#define MaxTextEntries 0x1000
+#define MaxTextEntries 0x2000
 
 ALIGN 4
 TextTable:
@@ -10,8 +10,8 @@ TextTable:
   ORG TextTable + (MaxTextEntries) * 4
 
 PUSH
-  ORG 0xa26c
-    POIN TextTable
+//  ORG 0xa26c
+//   POIN TextTable
 
   ORG 0xa2a0
     POIN TextTable

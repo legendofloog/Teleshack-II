@@ -18,7 +18,13 @@
 #define HexID 21
 #define EvenRhythmID 22
 #define OddRhythmID 23
-#define DazzleID 31
+#define DazzleID 40
+#define RepositionID 41
+#define RallyDefID 42
+#define RallyResID 43
+#define RallyDefenseID RallyDefID
+#define RallyResistanceID RallyResID
+#define SaviorID 44
 
 // keep it continous for debug purpose
 
@@ -37,4 +43,16 @@
 #define HeadshotID 24
 #define CullingID 25
 #define TemperedRingID 26 //For the item
-
+#define BargainID 27
+#define CounterID 28
+#define ConversionID 29
+#define WatchfulID 30
+#define TerrainEffectiveID 31
+#define NonCombatantID 32
+#define GladiatorsAuraID 33
+#define SpellMirrorID 34
+#define DespoilID 35
+#define AzuriumMightID 36
+#define EterniumMightID 37
+#define ZoruniumMightID 38
+#define GenesiumMightID 39

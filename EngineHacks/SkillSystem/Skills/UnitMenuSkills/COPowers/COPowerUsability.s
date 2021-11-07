@@ -7,11 +7,21 @@
 .equ ArtID, SkillID+4
 .equ COPowerCostTable, ArtID+4
 .equ CanUnitWieldWeapon,0x8016574
+.equ CheckEventId,0x8083da8
+
 
 COPowerUsability:
 @true if unit has skill AND attack is available
 
 push {r4-r7,lr}
+
+mov r0, #0x28
+ldr r1,=CheckEventId
+mov r14,r1
+.short 0xF800
+cmp r0,#1
+beq False
+
 ldr r0,=0x3004e50
 ldr r4,[r0] @save active unit in r4
 ldr r1,[r4,#0xc]
