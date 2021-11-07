@@ -37,7 +37,7 @@ ALIGN 4
 VictoryMarchUsability:
 #incbin "COPowerUsability.dmp"
 POIN SkillTester
-WORD VictoryMarchID
+WORD ZoruniumMightID
 
 ALIGN 4
 VictoryMarchEffect:

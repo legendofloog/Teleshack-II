@@ -52,3 +52,7 @@
 #define GladiatorsAuraID 33
 #define SpellMirrorID 34
 #define DespoilID 35
+#define AzuriumMightID 36
+#define EterniumMightID 37
+#define ZoruniumMightID 38
+#define GenesiumMightID 39

@@ -129,19 +129,19 @@ Spell Mirror[X]
 Arai's Gale[X]
 
 ## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
 
-## MarchRingName
-March Ring[X]
+## SisterRingName
+Wife Ring[X]
 
-## MarchRingDesc
+## SisterRingDesc
 [_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
 
 ## CivilianProofName
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
 
 ## CivilianProofDesc
-[_C][_a][_n][_n][_o][_t][_SP][_e][_n][_t][_e][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+Holder cannot enter combat.[X]
 
 ## ArachnidName
 Arachnid[X]
@@ -151,6 +151,20 @@ Brave Effect.[X]
 
 ## HurlbatName
 Hurlbat[X]
+
+## TridentName
+Trident[X]
+
+## TridentDesc
+[_G][_o][_o][_d][_SP][_f][_o][_r][_SP][_f][_i][_s][_h][_i][_n][_g][_,][_SP][_q][_u][_e][_s][_t][_i][_o][_n][_a][_b][_l][_e][_SP][_f][_o][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+
+
+## AzuriumScepterName
+[_A][_z][_u][_e][_r][_i][_u][_m][_SP][_S][_c][_e][_p][_t][_e][_r][X]
+
+
+## AzuriumScepterDesc
+Restore life to all units on the map.[X]
 
 ## DevilDaggerName ^
 Devil's Dagger[X]

@@ -32,7 +32,7 @@ prGetWRankIconGfx:
 
 prGetSkillBookIconGfx:
 	#incbin "asm/GetSheetIconGfx.bin"
-	POIN SkillIcons
+	POIN SkillScrollIcons
 
 }
 

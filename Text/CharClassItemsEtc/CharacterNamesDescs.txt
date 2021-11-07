@@ -159,7 +159,8 @@ Loyal to the end.[X]
 Leina[X]
 
 ## LeinaDesc
-A young lady with a troubled past.[X]
+A young lady from Chouwouj.[N]
+Looking for the divine bow.[X]
 
 ## CromarName
 Cromar[X]
@@ -168,19 +169,19 @@ Cromar[X]
 A mysterious swordsman[N]
 dead set on vengeance.[X]
 
-## VladithName
-Vladith[X]
+## VeidName
+Veid[X]
 
-## VladithDesc
-He sells skills[N]
-EVIL skills.[X]
+## VeidDesc
+A mysterious dark merchants,[N]
+he sells dark enchants.[X]
 
 ## BarodName
 Barod[X]
 
 ## BarodDesc
-The Fightmonger master of the[N]
-arena the undefeated legend.[X]
+The Fightmonger, master of the[N]
+arena, the undefeated legend.[X]
 
 ## ZeusName
 Zeus[X]
@@ -202,7 +203,7 @@ Gladiator[X]
 ## GladiatorDesc
 A ruthless pitfighter.[X]
 
-## Ch5CivilianName
+## ArenaSpectatorName
 Spectator[X]
 
 ## CivilianName
@@ -210,6 +211,38 @@ Civilian[X]
 
 ## CivilianDesc
 A regular civilian.[X]
+
+## Ch6PirateName
+Pirate[X]
+
+## Ch6PirateDesc
+Ruthless pirate under the[N]
+Banner of Draken.[X]
+
+## DrakenName
+Draken[X]
+
+## DrakenDesc
+The former first mate of[N]
+McCallun, now the captain.[X]
+
+## FishermanName
+Fisherman[X]
+
+## FishermanDesc
+A fisherman.[X]
+
+## LoanSharkName
+Loanshark[X]
+
+## LoanSharkDesc
+A loanshark.[X]
+
+## GamblerName
+Gambler[X]
+
+## GamblerDesc
+A Gambler.[X]
 
 ## LongxiaName
 Longxia[X]

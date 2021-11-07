@@ -263,6 +263,8 @@ TobieMugData:
 #incbin "Dmp/Tobie(RandomWizard)_minimug.dmp"
 setMugEntry(TobieMug, TobieMugData, 3, 6, 3, 4)
 
+#include "Dmp/Ch6/Installer.event"
+
 ALIGN 16
 AwaMugData:
 #incbin "Dmp/Awa(Nickt)_mug.dmp"
@@ -310,3 +312,4 @@ LeonidasMugData:
 #incbin "Dmp/Leonidas(Loog)_palette.dmp"
 #incbin "Dmp/Leonidas(Loog)_minimug.dmp"
 setMugEntry(LeonidasMug, LeonidasMugData, 3, 5, 3, 3)
+
