@@ -329,6 +329,31 @@ UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [9,4] 0x0 0x0 0x0 RED
 UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT
 
+GechrysosCutsceneGroup:
+UNIT Chapter1Generics SwordArmor Cleo Level(2,Enemy,False) [2,11] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics AxeArmor Cleo Level(2,Enemy,False) [2,12] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics SwordArmor Cleo Level(2,Enemy,False) [13,11] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics LanceArmor Cleo Level(2,Enemy,False) [13,12] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics AxeArmor Cleo Level(2,Enemy,False) [9,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics LanceArmor Cleo Level(2,Enemy,False) [10,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics General Cleo Level(2,Enemy,False) [3,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics Halberdier Cleo Level(2,Enemy,False) [5,4] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics Hero Cleo Level(2,Enemy,False) [12,6] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT 
+
+EliasUnitGroup:
+UNIT Helman Dracoknight Cleo Level(2,Enemy,False) [0,12] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT
+
+LeonidasUnitGroup:
+UNIT Senny GoldKnight Cleo Level(2,Enemy,False) [14,11] 0x0 0x0 0x1 REDA9R12 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT
+
+OrfeasUnitGroup:
+UNIT Raschwitz_Ch1 Baron Cleo Level(2,Enemy,False) [8,10] 0x0 0x0 0x1 REDA7R10 [Argilabrys,IronAxe,Vulnerary]	NoAI
+UNIT Boro_Ch1 Noble_F Cleo Level(2,Enemy,False) [8,9] 0x0 0x0 0x1 REDA9R10 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT
+
 BeginningScene:
 COUNTER_SET 0 0
 /*
@@ -532,15 +557,56 @@ SET_CONDITION Loewe
 SET_CONDITION Cleo
 FlashCursor(Trajan,60)
 Text(Ch5xLoeweCleoTrajanTalk2)
+FADI 15
+RemoveAll
+LOMA Ch5xGechrysos
+LOAD1 1 GechrysosCutsceneGroup
+ENUN
+SetBackground(BlackBackground)
+CenterTutorialTextBox
+SOLOTEXTBOXSTART
+TEXTSHOW Ch5xGechrysosText
+TEXTEND
+REMA
+CALL $9EE2C4
 MUSC WindyDaySoundEffect
+STAL 20
+CamOn
+LOAD1 1 EliasUnitGroup
+ENUN
+FlashCursor(Helman,60)
 Text(Ch5xEliasIntroduction)
+MOVE 15 Helman [7,12]
+ENUN
+STAL 20
+LOAD1 1 LeonidasUnitGroup
+ENUN
 MUSC FF4RedWingsID
 Text(Ch5xLeonidasIntroduction)
+SOUN 0x00B1
+TILECHANGE 0
+LOAD1 1 OrfeasUnitGroup
+ENUN
 Text(Ch5xOrfeasCoraliaIntroduction)
+MOVE 15 Raschwitz_Ch1 [8,9]
+ENUN
+REMOVEUNIT Raschwitz_Ch1
+SOUN 0x00B1
+TILEREVERT 0
+STAL 10
 Text(Ch5xLeonidasLeaves)
-MUSC WindyDaySoundEffect
+MOVE 15 Senny [14,11]
+ENUN
+REMOVEUNIT Senny
+STAL 20
 Text(Ch5xEliasCoraliaTalk)
+MOVE 15 Helman [0,11]
+ENUN
+REMOVEUNIT Helman
+STAL 10
+MUSC WindyDaySoundEffect
 Text(Ch5xCoraliaEndingText)
+FADI 5
 MNC2 Chapter6
 NoFade
 ENDA

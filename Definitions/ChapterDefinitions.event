@@ -64,6 +64,7 @@
 #define Ch1DraganaPrisonMapChanges 0x98
 #define Ch5xInterludeMapChanges 0x97
 #define Ch5xBoatScenesMapChanges 0x9E
+#define Ch5xGechrysosMapChanges 0x9D
 
 // MapID
 
@@ -97,6 +98,7 @@
 #define Ch1DraganaPrisonMap 0x94
 #define Ch5xInterludeMap 0x96
 #define Ch5xBoatScenesMap 0x9F
+#define Ch5xGechrysosMap 0xA0
 
 // EventsID
 
