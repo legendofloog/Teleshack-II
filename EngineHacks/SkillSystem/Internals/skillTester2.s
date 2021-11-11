@@ -16,6 +16,7 @@
 .endm
 
 .equ PItemSkills, SkillGetter + 0x4
+.equ GetEquipmentSkill, SkillGetter + 0xC
 
 @arguments:
 	@r0 = unit data
@@ -32,6 +33,13 @@ cmp r1, #0xFF
 beq False
 
 mov r4, r1 @skill to test
+mov r0, r5
+ldr r3, GetEquipmentSkill
+_blr r3
+cmp r0, r4
+beq True
+mov r0, r5
+nop @ for alignment
 @bl Skill_Getter
 ldr r1, SkillGetter
 _blr r1

@@ -127,6 +127,7 @@ SkillTesterOriginal: //does unit have X skill?
 #include "skillTester.lyn.event"
 POIN Skill_Getter
 POIN ItemSkill_Getter EquipSkill_Getter
+POIN GetEquipmentSkill
 /*
 #incbin skillTester.dmp
 POIN Skill_Getter
@@ -146,11 +147,13 @@ WORD CatchEmAllID
 SkillTesterOriginal2:
 #include "skillTester2.lyn.event"
 POIN Skill_Getter ItemSkill_Getter
+POIN GetEquipmentSkill
 
 SkillTester2:
 #include "nihilTester2.lyn.event"
 POIN SkillTesterOriginal2 NegatedSkills
 WORD NihilID CatchEmAllID
+
 
 NegatedSkills: //comment or uncomment skills to your liking, this should come with an updated list of skills that work with nihil and are meant to
 //Confirmed working and grouped by type for easier adding/removing from the NegatedSkills list

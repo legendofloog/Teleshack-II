@@ -10,7 +10,7 @@ POIN Proc_AttackCounter Proc_Wrath Proc_CriticalRework  //Proc_Expertise Proc_Pu
 
 POIN Proc_Devil	//devil effect
 
-
+POIN IncrementAttackCount
 
 #ifndef COMBAT_ARTS
 	POIN Proc_Sureshot Proc_Luna 

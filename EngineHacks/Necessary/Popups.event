@@ -9,6 +9,9 @@ gBattlePopupTable:
 	// Vanilla
 	PopRBattlePopup(PopR_InitWeaponBroke, 0x592420, 96)
 
+	//pik equip
+	PopRBattlePopup(PopR_InitEquipmentBroke, 0x592420, 96)
+
 	// Display new weapon level on WLevel-up
 	PopRBattlePopup(InitWeaponLevelUpPopup|1, WeaponRankUpPopup, 96)
 
