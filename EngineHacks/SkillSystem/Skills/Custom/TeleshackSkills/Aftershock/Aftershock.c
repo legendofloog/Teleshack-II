@@ -17,17 +17,19 @@ bool IsUsingThunderWeapon(BattleUnit battleUnit){
 
 void AftershockPostBattle(){
 
-	if (gActionData.unitActionType & UNIT_ACTION_COMBAT){
+	Unit* target = GetUnit(gBattleTarget.unit.index);
 
-		Unit* target = GetUnit(gBattleTarget.unit.index);
+	// ignore dead people
+	if (target->curHP <= 0){
+		return;
+	}
 
-		// unset aftershock
-		gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
+	// unset aftershock
+	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
 
-		// try to apply aftershock
-		if(IsUsingThunderWeapon(gBattleActor) && gSkillTester(&gBattleActor.unit, AftershockIDLink)){
-			gDebuffTable[target->index].skillState |= SKILLSTATE_AFTERSHOCK;
-		}
+	// try to apply aftershock
+	if(IsUsingThunderWeapon(gBattleActor) && gSkillTester(&gBattleActor.unit, AftershockIDLink)){
+		gDebuffTable[target->index].skillState |= SKILLSTATE_AFTERSHOCK;
 	}
 }
 
