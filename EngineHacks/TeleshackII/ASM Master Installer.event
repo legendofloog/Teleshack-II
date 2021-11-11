@@ -13,7 +13,7 @@
 
 #include "StatusExpansion/StatusExpansion.event"
 #include "FixedDamage/FixedDamageWeapons.event"
-//#include "FreeMovement/FreeMovement.event"
+#include "trade_fix/TradeabilityChanges.event"
 
 // thief vision
 PUSH
@@ -90,7 +90,7 @@ ChangeWeaponRankASMC:
 
 #include "MinimugPalette/Installer.event"
 
-#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
+//#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
