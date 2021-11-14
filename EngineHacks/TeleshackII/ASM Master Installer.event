@@ -14,6 +14,8 @@
 #include "StatusExpansion/StatusExpansion.event"
 #include "FixedDamage/FixedDamageWeapons.event"
 #include "trade_fix/TradeabilityChanges.event"
+#include "Equip/Installer.event"
+
 
 // thief vision
 PUSH
