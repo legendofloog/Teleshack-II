@@ -3,6 +3,10 @@
 
 SET_DATA idkAddr, 0x3003060
 
+SET_DATA gLevelUpAnimsOn, 0x2020108
+
+SET_DATA gMapAnimStruct, 0x203E1F0
+
 SET_FUNC DrawSpecialUIChar, (0x8004B0C+1)
 
 SET_FUNC BGMap_ApplyTSA, (0x80D74A0+1)

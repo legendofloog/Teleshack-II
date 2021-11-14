@@ -5,5 +5,5 @@ int GetEquipmentSkill(Unit* unit){
 		return 0;
 	}
 
-	return GetItemData(item.number)->weaponSkill;
+	return GetItemData(item)->skill;
 }
