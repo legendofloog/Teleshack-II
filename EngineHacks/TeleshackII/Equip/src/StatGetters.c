@@ -5,7 +5,7 @@ int GetEquipmentStatBonus(Unit* unit, int stat){
 		return 0;
 	}
 
-	const ItemData* itemData = GetItemData(item);
+	const ItemData* itemData = GetItemData(item.number);
 
 	const ItemStatBonuses* itemStatBonuses = itemData -> pStatBonuses;
 
