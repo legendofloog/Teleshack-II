@@ -33,9 +33,11 @@ BL(Give_All)
 ORG $1e19e
 BL(Inventory_Full)
 
+/*
 ORG $17058
 BL(Steal_Fix)
 B($17078)
+*/
 
 ORG $e17e8				//unused space in BL range
 Trade_Fix:
@@ -58,8 +60,8 @@ Inventory_Full:
 #incbin "inventory_full.dmp"
 ALIGN 4
 
-Steal_Fix:
-#incbin "steal_fix.dmp"
+//Steal_Fix:
+//#incbin "steal_fix.dmp"
 ALIGN 4
 POP
 
