@@ -636,8 +636,6 @@
   lsl     r2,r2,#0x6        @08087498
   mov     r1,r4       @0808749A
   blh      #0x80D74A0       @0808749C
-  ldr r0, [r6, #0xC]
-  blh DrawUnitEquippedItem
   ldr     r0,=#0x8205A24        @080874A0
   blh      #0x8086E00        @080874A2
   @numbers
@@ -671,6 +669,8 @@
   mov     r2,#0xC1        @0808756C
   lsl     r2,r2,#0x6        @0808756E
   blh      0x80D74A0        @08087570
+  ldr r0, [r6, #0xC]
+  blh DrawUnitEquippedItem
   ldr     r0,[r6,#0xC]        @08087574
   add     r0,#0x1E        @08087576
   add     r0,r0,r4        @08087578

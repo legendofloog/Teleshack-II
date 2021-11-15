@@ -5,5 +5,5 @@ int GetEquipmentSkill(Unit* unit){
 		return 0;
 	}
 
-	return GetItemData(item)->skill;
+	return GetItemData(item.number)->skill;
 }
