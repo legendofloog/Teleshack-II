@@ -147,6 +147,7 @@ CamOff
 ENDA
 
 BeginningScene:
+DismountAll
 MUSC AdvanceSong
 SetBackground(Port)
 CenterTextbox(SysTextOpening)

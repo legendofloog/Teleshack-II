@@ -1,5 +1,5 @@
 
-#include "gbafe.h"
+#include "FE-CLib-master/include/gbafe.h"
 #include "Dismount.h"
 
 void DismountRoutine(Proc* procState){
@@ -18,6 +18,9 @@ void MountRoutine(Proc* procState){
 
 int DismountUsability(){
 	Unit* unit = gActiveUnit;
+	if (unit->state & US_CANTOING){
+	return USABILITY_FALSE;
+	}
 	if (GetDismountedClass(unit) && GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] > 0){
 		return USABILITY_TRUE;
 	}
@@ -26,6 +29,9 @@ int DismountUsability(){
 
 int MountUsability(){
 	Unit* unit = gActiveUnit;
+	if (unit->state & US_CANTOING){
+	return USABILITY_FALSE;
+	}
 	if (GetMountedClass(unit) && GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] > 0){
 		return USABILITY_TRUE;
 	}
@@ -79,4 +85,20 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass){
 	HideUnitSMS(unit);
 	MU_EndAll();
 	MU_Create(unit);
+}
+
+void DismountAllASMC(void){
+	int cnt;
+	for( cnt = 0; cnt <= 50; cnt++){
+		Unit currentUnit = gUnitArrayBlue[cnt];
+		if (currentUnit.index == 0){
+			return;
+		}
+		Unit* currentUnitPointer = &currentUnit;
+		const ClassData* dismountedClass = GetDismountedClass(currentUnitPointer);
+		if (dismountedClass != 0){
+		UnitChangeClass(currentUnitPointer, dismountedClass);
+		}
+	}
+	return;
 }

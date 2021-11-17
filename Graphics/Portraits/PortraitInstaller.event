@@ -26,6 +26,8 @@
 
 // NPCs
 #define EliasMug 0xB
+#define CoraliaMug 0xD
+#define OrfeasMug 0x12
 #define LoeweKidMug 0x15
 #define LeonidasMug 0x1D
 #define CidorMug 0x2E
@@ -373,4 +375,12 @@ LeonidasMugData:
 #incbin "Dmp/Leonidas(Loog)_palette.dmp"
 #incbin "Dmp/Leonidas(Loog)_minimug.dmp"
 setMugEntry(LeonidasMug, LeonidasMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CoraliaMugData:
+#incbin "Dmp/Coralia(Loog)_mug.dmp"
+#incbin "Dmp/Coralia(Loog)_frames.dmp"
+#incbin "Dmp/Coralia(Loog)_palette.dmp"
+#incbin "Dmp/Coralia(Loog)_minimug.dmp"
+setMugEntry(CoraliaMug, CoraliaMugData, 3, 5, 3, 3)
 

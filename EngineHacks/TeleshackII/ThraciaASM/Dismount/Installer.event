@@ -4,6 +4,7 @@ ALIGN 4
 
 #define MountedUnmounted(classIDMounted, classIDUnmounted) "BYTE classIDMounted classIDUnmounted"
 #define EndMountUnmountedTable "BYTE 0x00 0x00"
+#define DismountAll "ASMC DismountAllASMC;"
 
 ALIGN 4
 MountedClassTable:
