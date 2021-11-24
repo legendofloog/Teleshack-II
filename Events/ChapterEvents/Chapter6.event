@@ -49,7 +49,7 @@ LocationBasedEvents:
 	Village(0x12,Ch6Village3,27,23)
 	House(0x0,Ch6House1,25,23)
 	House(0x0,Ch6House2,25,27)
-	Seize(0, 28)
+	Seize(27, 9)
 END_MAIN
 
 MiscBasedEvents:

@@ -21,8 +21,8 @@
 #define Awa 0x14
 #define Cadenza 0x15
 #define Faolan 0x16
-#define Saleh 0x17
-#define Ewan 0x18
+#define Iberis 0x17
+#define Buldak 0x18
 #define LArachel 0x19
 #define Dozla 0x1A
 #define Rennac 0x1C
@@ -60,6 +60,13 @@
 #define Hilmar 0x69
 // Chapter 5 Boss
 #define Riggan 0x44
+// Chapter 7 Boss
+#define Yor 0x83
+#define Radnitz 0x84
+#define Mifan 0x85
+#define Wellworth 0x86
+#define Epony 0x87
+#define TheGiant 0x95
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
@@ -89,6 +96,10 @@
 #define GladiatorMage 0x7F
 #define Fisherman 0x80
 #define Gambler 0x81
+
+//Chapter 7 stuff
+#define Militia 0x82
+#define Freyse 0x88
 
 #define Valter_Prologue 0x45
 #define Breguet 0x46

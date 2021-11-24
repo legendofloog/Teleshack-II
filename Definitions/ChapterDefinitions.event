@@ -145,6 +145,7 @@
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
 #define FlasubanVillageMapchipConfigID 0x92
+#define FlasubanVillageMapchipConfig2ID 0x80
 #define FF5CaveConfigID 0x9B
 
 // TileAnimations

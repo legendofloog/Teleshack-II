@@ -25,6 +25,10 @@
 #define RallyDefenseID RallyDefID
 #define RallyResistanceID RallyResID
 #define SaviorID 44
+#define CertainBlowID 45
+#define SavageBlowID 46
+#define RenewalID 47
+#define PassID 48
 
 // keep it continous for debug purpose
 

@@ -211,10 +211,6 @@
 
 //HP Restoration Skills
 
-//Renewal: Restore 30% of max HP at the start of each turn.
-//Author Unknown (Initial Commit)
-#define RenewalID 255
-
 //Amaterasu: Allies within 2 tiles recover 20% HP each turn.
 //Author Unknown (Initial Commit)
 #define AmaterasuID 255
@@ -248,10 +244,6 @@
 //Armor March: At start of turn, if unit is adjacent to an armor ally, unit and adjacent armor allies gain +2 Mov.
 //By Leonarth
 #define ArmorMarchID 255
-
-//Pass: Can move through enemy units.
-//By Tequila
-#define PassID 255
 
 //Keep Up: At start of turn, if unit is within 3 spaces of an ally with Canto or Canto+, unit gains +2 Mov.
 //By Sme
@@ -324,10 +316,6 @@
 //By Sme
 #define ReMoveID 255
 
-//Savage Blow: After attacking, enemies within 2 tiles take 20% damage.
-//By circleseverywhere
-#define SavageBlowID 255
-
 //Cultured: If unit attacks next to a unit with Nice Thighs, move again. -50 hit against units with Nice Thighs.
 //By Sme
 #define CulturedID 255
@@ -354,7 +342,6 @@
 #define DeathBlowID 255
 #define DartingBlowID 255
 #define WardingBlowID 255
-#define CertainBlowID 255
 #define ArmoredBlowID 255
 //By Darrman
 #define HeroesDeathBlowID 255

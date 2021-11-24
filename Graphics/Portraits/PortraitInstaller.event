@@ -22,6 +22,8 @@
 #define CadenzaMug 0x1C
 #define FaolanMug 0x1E
 #define DraganaMug 0x2D
+#define IberisMug 0x20
+#define BuldakMug 0x21
 
 
 // NPCs
@@ -46,6 +48,12 @@
 #define ZeusMug 0x4A
 #define VeidMug 0x4f
 #define DrakenMug 0x50
+#define EponyMug 0x1F
+#define WellworthMug 0x27
+#define RadnitzMug 0x12
+#define MifanMug 0x03
+#define TheGiantMug 0x41
+#define YorMug 0x28
 
 ALIGN 16
 BarodMugData:
@@ -383,4 +391,70 @@ CoraliaMugData:
 #incbin "Dmp/Coralia(Loog)_palette.dmp"
 #incbin "Dmp/Coralia(Loog)_minimug.dmp"
 setMugEntry(CoraliaMug, CoraliaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+BuldakMugData:
+#incbin "Dmp/Buldak(RandomWizard)_mug.dmp"
+#incbin "Dmp/Buldak(RandomWizard)_frames.dmp"
+#incbin "Dmp/Buldak(RandomWizard)_palette.dmp"
+#incbin "Dmp/Buldak(RandomWizard)_minimug.dmp"
+setMugEntry(BuldakMug, BuldakMugData, 4, 6, 3, 3)
+
+ALIGN 16
+IberisMugData:
+#incbin "Dmp/Iberis(NICKT)_mug.dmp"
+#incbin "Dmp/Iberis(NICKT)_frames.dmp"
+#incbin "Dmp/Iberis(NICKT)_palette.dmp"
+#incbin "Dmp/Iberis(NICKT)_minimug.dmp"
+setMugEntry(IberisMug, IberisMugData, 2, 6, 3, 3)
+
+ALIGN 16
+EponyMugData:
+#incbin "Dmp/Epony(RisingSolaris)_mug.dmp"
+#incbin "Dmp/Epony(RisingSolaris)_frames.dmp"
+#incbin "Dmp/Epony(RisingSolaris)_palette.dmp"
+#incbin "Dmp/Epony(RisingSolaris)_minimug.dmp"
+setMugEntry(EponyMug, EponyMugData, 4, 6, 3, 3)
+
+ALIGN 16
+MifanMugData:
+#incbin "Dmp/Mifan(MK404,Flasuban)_mug.dmp"
+#incbin "Dmp/Mifan(MK404,Flasuban)_frames.dmp"
+#incbin "Dmp/Mifan(MK404,Flasuban)_palette.dmp"
+#incbin "Dmp/Mifan(MK404,Flasuban)_minimug.dmp"
+setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 3)
+
+ALIGN 16
+RadnitzMugData:
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_mug.dmp"
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_frames.dmp"
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_palette.dmp"
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_minimug.dmp"
+setMugEntry(RadnitzMug, RadnitzMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TheGiantMugData:
+#incbin "Dmp/TheGiant(Capibraininspace)_mug.dmp"
+#incbin "Dmp/TheGiant(Capibraininspace)_frames.dmp"
+#incbin "Dmp/TheGiant(Capibraininspace)_palette.dmp"
+#incbin "Dmp/TheGiant(Capibraininspace)_minimug.dmp"
+setMugEntry(TheGiantMug, TheGiantMugData, 2, 4, 3, 3)
+
+ALIGN 16
+WellworthMugData:
+#incbin "Dmp/Wellworth(NICKT)_mug.dmp"
+#incbin "Dmp/Wellworth(NICKT)_frames.dmp"
+#incbin "Dmp/Wellworth(NICKT)_palette.dmp"
+#incbin "Dmp/Wellworth(NICKT)_minimug.dmp"
+setMugEntry(WellworthMug, WellworthMugData, 3, 5, 3, 3)
+
+ALIGN 16
+YorMugData:
+#incbin "Dmp/Yor(RandomWizard)_mug.dmp"
+#incbin "Dmp/Yor(RandomWizard)_frames.dmp"
+#incbin "Dmp/Yor(RandomWizard)_palette.dmp"
+#incbin "Dmp/Yor(RandomWizard)_minimug.dmp"
+setMugEntry(YorMug, YorMugData, 3, 5, 3, 3)
+
+
 
