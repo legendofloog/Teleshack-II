@@ -18,9 +18,10 @@
 
 
 // thief vision
+
 PUSH
 ORG 0x0178C2
-BYTE 0x02
+BYTE 0x00
 POP
 
 // torch vision
@@ -28,6 +29,7 @@ PUSH
 ORG 0x02F4AE
 BYTE 0x05
 POP
+
 
 // EscapeDeathFix
 PUSH

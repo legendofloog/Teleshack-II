@@ -330,7 +330,7 @@ BeginningScene:
 
 	CameraCursor(Barod)
 	Text(Ch6BarodIntro)
-
+	MountAll
 	GotoPrepScreen
 	CLEAN
 NoFade

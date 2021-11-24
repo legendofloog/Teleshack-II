@@ -2,9 +2,12 @@
 
 #define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
-
+// Bosses
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
+DeathQuote(Emory_Ch3,Chapter3,2,0x0)
+DeathQuote(Hilmar,Chapter4,0x2,HilmarDeathQ)
+DeathQuote(Riggan,Chapter5,0x2,0x0)
 DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
 DeathQuote(Cleo,AllChapters,0x65,CleoDeathQuoteText)
@@ -15,5 +18,5 @@ DeathQuote(Svetomir,AllChapters,0x0,SvetomirDeathQuoteText)
 DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText)
 DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote)
 DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote)
-DeathQuote(Hilmar,Chapter4,0x2,HilmarDeathQ)
+
 DeathQuote(0xFFFF,0,0,0)

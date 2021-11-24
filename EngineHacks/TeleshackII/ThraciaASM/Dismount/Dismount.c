@@ -87,12 +87,12 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass){
 	MU_Create(unit);
 }
 
-void DismountAllASMC(void){
+void DismountAllASMC(){
 	int cnt;
 	for( cnt = 0; cnt <= 50; cnt++){
 		Unit currentUnit = gUnitArrayBlue[cnt];
 		if (currentUnit.index == 0){
-			return;
+			break;
 		}
 		Unit* currentUnitPointer = &currentUnit;
 		const ClassData* dismountedClass = GetDismountedClass(currentUnitPointer);
@@ -100,5 +100,20 @@ void DismountAllASMC(void){
 		UnitChangeClass(currentUnitPointer, dismountedClass);
 		}
 	}
-	return;
 }
+
+void MountAllASMC(){
+	int cnt;
+	for( cnt = 0; cnt <= 50; cnt++){
+		Unit currentUnit = gUnitArrayBlue[cnt];
+		if (currentUnit.index == 0){
+			break;
+		}
+		Unit* currentUnitPointer = &currentUnit;
+		const ClassData* mountedClass = GetMountedClass(currentUnitPointer);
+		if (mountedClass != 0){
+		UnitChangeClass(currentUnitPointer, mountedClass);
+		}
+	}
+}
+
