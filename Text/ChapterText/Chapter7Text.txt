@@ -1,0 +1,100 @@
+## Chapter7Title
+Ch7: Joe Mama[X]
+
+## Chapter7Obj
+Seize throne and talk[N]
+to Radnitz with lords.[X]
+
+## Chapter7MapObj
+Seize + Talk[X]
+
+## AxelTalkCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## AlexTalkCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## LoeweEndCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## CleoEndCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## CleoThroneCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## RecruitCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## VillageCh7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## SupplyCh7Text
+Rice supplies secured.[A][X]
+
+## Rice0Ch7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## Rice1Ch7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## Rice2Ch7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
+
+## Rice3Ch7Text
+[MidRight][LoadLoeweKid]
+[Left][LoadYoungBoyVillager]
+[FarLeft][LoadYoungGirlVillager]
+[MidRight]
+Ha! I win again. No one can[N]
+beat me in hide and seek![A][X]
