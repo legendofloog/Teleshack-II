@@ -1,5 +1,6 @@
 // format: BYTE HP, Str, Skl, Spd, Def, Res, Lck, Move, Con, Mag, ??, ??
 // defStatBoosts(hp, str, mag, skl, spd, luk, def, res) "BYTE hp str skl spd def res luk mag"
+
 ALIGN 4
 FlameSwordStatBoosts:
 defStatBoosts(0,0,5,0,0,0,0,0)
@@ -27,3 +28,4 @@ defStatBoosts(0,0,0,0,0,0,5,0)
 ALIGN 4
 SisterRingStatBoosts:
 BYTE 0 0 0 0 0 0 0 1 0 0
+

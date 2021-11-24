@@ -21,9 +21,9 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x13 Tobie,1,10
 0x14 Awa,0,5
 0x15 Cadenza,3,30
-0x16 Faolan,0,5
-Saleh,1,10
-Ewan,11,30
+0x17 Iberis,0,5
+0x18 Buldak,1,30
+0x18 Buldak,0,5
 L'Arachel,2,45
 Dozla,5,50
 #NAME?,0,5
@@ -128,13 +128,13 @@ Lyon (Ch Final),5,15
 0,0,0
 Grado Soldier (Special),0,0
 Grado Soldier 1 (Normal),0,0
-Grado Soldier 2,0,0
-Grado Soldier 3,0,0
-Grado Soldier 4,0,0
-Grado Soldier 5,0,0
-Grado Soldier 6,0,0
-Grado Soldier 7,0,0
-Grado Soldier 8,0,0
+0x82 Miltia,0,0
+0x83 Yor,0,0
+0x84 Radnitz,0,0
+0x85 Mifan,0,0
+0x86 Wellworth,0,0
+0x87 Epony,0,0
+0x88 Freyse,0,0
 Grado Soldier 9,0,0
 Grado Soldier 10 (Duessel's),0,0
 Grado Soldier 11 (Duessel's),0,0
@@ -147,7 +147,7 @@ Grado Remnant 3 (C16 only?),0,0
 Grado Remnant 4 (C16 only?),0,0
 Wraith (Sage),0,0
 Wraith (Swords),0,0
-Wraith (Axes),0,0
+0x95 The Giant,0,0
 0,0,0
 0,0,0
 0,0,0

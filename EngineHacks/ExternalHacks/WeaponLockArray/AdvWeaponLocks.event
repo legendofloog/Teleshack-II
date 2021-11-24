@@ -41,4 +41,10 @@ BYTE HardCharLock
 BYTE Cadenza
 BYTE EndLockArray
 
+AxleArray:
+BYTE HardCharLock
+BYTE Alex
+BYTE Axel
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

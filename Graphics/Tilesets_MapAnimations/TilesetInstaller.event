@@ -24,6 +24,11 @@
     FlasubanVillageMapchipConfig:
     #incbin "Config/FixedBridge_comp.dmp"
 	
+//Flasuban Village Edit
+    ALIGN 4
+    FlasubanVillageMapchipConfig2:
+    #incbin "Config/Flasubanvillage2_comp.dmp"
+	
 //Updated village
 
 	ALIGN 4
@@ -64,6 +69,7 @@
     EventPointerTable(FlasubanVillageNormalPaletteID, FlasubanVillagePalette)
     EventPointerTable(FlasubanVillageMapchipConfigID, FlasubanVillageMapchipConfig)
 	  EventPointerTable(0x10,UpdatedVillageMapchipConfig)
+	EventPointerTable(FlasubanVillageMapchipConfig2ID, FlasubanVillageMapchipConfig2)
     EventPointerTable(FF5CaveObjectID,FF5CaveObject)
     EventPointerTable(FF5CavePaletteID,FF5CavePalette)
     EventPointerTable(FF5CaveConfigID,FF5CaveConfig)
