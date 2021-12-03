@@ -1,0 +1,36 @@
+// 807352C // !FE8U
+
+// 735EC - hook
+
+input r0 proc parent (2025084) (*procsEkrLevelUp) // 875932C
+proc + 0x2A = bool (?)
+proc + 0x5C = bool (?)
+
+203e18c - pointer to active unit?
+203e188 - pointer to target unit?
+
+2020108 - level up ram struct we construct
++00 - active unit
++04 - target unit
++08 - level before
++0A - level after
++0C - hp before
++0D - str before
++0E - mag before
++0F - skl before
++10 - spd before
++11 - def before
++12 - res before
++13 - lck before
++14 - con before
++15 - mov before
++1C - hp after
++1D - str after
++1E - mag after
++1F - skl after
++20 - spd after
++21 - def after
++22 - res after
++23 - lck after
++24 - con after
++25 - mov after

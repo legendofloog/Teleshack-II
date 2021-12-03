@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Simple TMX Library documentation &mdash; Simple TMX Library 1.8.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.8.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Simple TMX Library 1.8.1 documentation" href="#" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Simple TMX Library 1.8.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="simple-tmx-library-documentation">
+<h1>Simple TMX Library documentation<a class="headerlink" href="#simple-tmx-library-documentation" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-tmx"></span><p>This library reads and writes the Tiled TMX format in a simple way.
+This is useful for map editors or generic level editors, and it&#8217;s also
+useful for using a map editor or generic level editor like Tiled to edit
+your game&#8217;s levels.</p>
+<p>To load a TMX file, use <a class="reference internal" href="#tmx.TileMap.load" title="tmx.TileMap.load"><code class="xref py py-meth docutils literal"><span class="pre">tmx.TileMap.load()</span></code></a>.  You can then read the
+attributes of the returned <a class="reference internal" href="#tmx.TileMap" title="tmx.TileMap"><code class="xref py py-class docutils literal"><span class="pre">tmx.TileMap</span></code></a> object, modify the
+attributes to your liking, and save your changes with
+<a class="reference internal" href="#tmx.TileMap.save" title="tmx.TileMap.save"><code class="xref py py-meth docutils literal"><span class="pre">tmx.TileMap.save()</span></code></a>.  That&#8217;s it!  Simple, isn&#8217;t it?</p>
+<p>At the request of the developer of Tiled, this documentation does not
+explain in detail what each attribute means. For that, please see the
+TMX format specification, found here:</p>
+<p><a class="reference external" href="http://doc.mapeditor.org/reference/tmx-map-format/">http://doc.mapeditor.org/reference/tmx-map-format/</a></p>
+<div class="section" id="tmx-tilemap">
+<h2>tmx.TileMap<a class="headerlink" href="#tmx-tilemap" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tmx.TileMap">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">TileMap</code><a class="headerlink" href="#tmx.TileMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class loads, stores, and saves TMX files.</p>
+<dl class="attribute">
+<dt id="tmx.TileMap.version">
+<code class="descname">version</code><a class="headerlink" href="#tmx.TileMap.version" title="Permalink to this definition">¶</a></dt>
+<dd><p>The TMX format version.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.orientation">
+<code class="descname">orientation</code><a class="headerlink" href="#tmx.TileMap.orientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map orientation.  Can be &#8220;orthogonal&#8221;, &#8220;isometric&#8221;, &#8220;staggered&#8221;,
+or &#8220;hexagonal&#8221;.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.renderorder">
+<code class="descname">renderorder</code><a class="headerlink" href="#tmx.TileMap.renderorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>The order in which tiles are rendered.  Can be <code class="docutils literal"><span class="pre">&quot;right-down&quot;</span></code>,
+<code class="docutils literal"><span class="pre">&quot;right-up&quot;</span></code>, <code class="docutils literal"><span class="pre">&quot;left-down&quot;</span></code>, or <code class="docutils literal"><span class="pre">&quot;left-up&quot;</span></code>.  Default is
+<code class="docutils literal"><span class="pre">&quot;right-down&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.width">
+<code class="descname">width</code><a class="headerlink" href="#tmx.TileMap.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the map in tiles.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.height">
+<code class="descname">height</code><a class="headerlink" href="#tmx.TileMap.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the map in tiles.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.tilewidth">
+<code class="descname">tilewidth</code><a class="headerlink" href="#tmx.TileMap.tilewidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of a tile.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.tileheight">
+<code class="descname">tileheight</code><a class="headerlink" href="#tmx.TileMap.tileheight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of a tile.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.staggeraxis">
+<code class="descname">staggeraxis</code><a class="headerlink" href="#tmx.TileMap.staggeraxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines which axis is staggered.  Can be &#8220;x&#8221; or &#8220;y&#8221;.  Set to
+<code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not set it.  Only meaningful for staggered and
+hexagonal maps.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.staggerindex">
+<code class="descname">staggerindex</code><a class="headerlink" href="#tmx.TileMap.staggerindex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines what indexes along the staggered axis are shifted.
+Can be &#8220;even&#8221; or &#8220;odd&#8221;.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not set it.
+Only meaningful for staggered and hexagonal maps.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.hexsidelength">
+<code class="descname">hexsidelength</code><a class="headerlink" href="#tmx.TileMap.hexsidelength" title="Permalink to this definition">¶</a></dt>
+<dd><p>Side length of the hexagon in hexagonal tiles.  Set to
+<code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not set it.  Only meaningful for hexagonal maps.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.backgroundcolor">
+<code class="descname">backgroundcolor</code><a class="headerlink" href="#tmx.TileMap.backgroundcolor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the map as a hex string (e.g.
+<code class="docutils literal"><span class="pre">&quot;FF0000&quot;</span></code> or <code class="docutils literal"><span class="pre">&quot;#00FF00&quot;</span></code>), or <code class="xref py py-const docutils literal"><span class="pre">None</span></code> if no background
+color is defined.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.nextobjectid">
+<code class="descname">nextobjectid</code><a class="headerlink" href="#tmx.TileMap.nextobjectid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The next available ID for new objects.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to
+not set it.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.TileMap.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the map&#8217;s
+properties.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.tilesets">
+<code class="descname">tilesets</code><a class="headerlink" href="#tmx.TileMap.tilesets" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Tileset" title="tmx.Tileset"><code class="xref py py-class docutils literal"><span class="pre">Tileset</span></code></a> objects indicating the map&#8217;s tilesets.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TileMap.layers">
+<code class="descname">layers</code><a class="headerlink" href="#tmx.TileMap.layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Layer" title="tmx.Layer"><code class="xref py py-class docutils literal"><span class="pre">Layer</span></code></a>, <a class="reference internal" href="#tmx.ObjectGroup" title="tmx.ObjectGroup"><code class="xref py py-class docutils literal"><span class="pre">ObjectGroup</span></code></a>, and
+<a class="reference internal" href="#tmx.ImageLayer" title="tmx.ImageLayer"><code class="xref py py-class docutils literal"><span class="pre">ImageLayer</span></code></a> objects indicating the map&#8217;s tile layers,
+object groups, and image layers, respectively.  Those that appear
+in this list first are rendered first (i.e. furthest in the
+back).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="tmx.TileMap.load">
+<em class="property">classmethod </em><code class="descclassname">TileMap.</code><code class="descname">load</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.TileMap.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the TMX file with the indicated name and return a
+<a class="reference internal" href="#tmx.TileMap" title="tmx.TileMap"><code class="xref py py-class docutils literal"><span class="pre">TileMap</span></code></a> object representing it.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="tmx.TileMap.save">
+<code class="descclassname">TileMap.</code><code class="descname">save</code><span class="sig-paren">(</span><em>fname</em>, <em>data_encoding='base64'</em>, <em>data_compression=True</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.TileMap.save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the object to the file with the indicated name.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">data_encoding</span></code> &#8211; The encoding to use for layers.  Can be
+<code class="docutils literal"><span class="pre">&quot;base64&quot;</span></code> or <code class="docutils literal"><span class="pre">&quot;csv&quot;</span></code>.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> for the
+default encoding (currently <code class="docutils literal"><span class="pre">&quot;base64&quot;</span></code>).</li>
+<li><code class="docutils literal"><span class="pre">data_compression</span></code> &#8211; Whether or not compression should be
+used on layers if possible (currently only possible for
+base64-encoded data).</li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="other-classes">
+<h2>Other Classes<a class="headerlink" href="#other-classes" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="tmx.Image">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">Image</code><span class="sig-paren">(</span><em>format_=None</em>, <em>source=None</em>, <em>trans=None</em>, <em>width=None</em>, <em>height=None</em>, <em>data=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.Image" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.Image.format">
+<code class="descname">format</code><a class="headerlink" href="#tmx.Image.format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the format of image data if embedded.  Should be an
+extension like <code class="docutils literal"><span class="pre">&quot;png&quot;</span></code>, <code class="docutils literal"><span class="pre">&quot;gif&quot;</span></code>, <code class="docutils literal"><span class="pre">&quot;jpg&quot;</span></code>, or <code class="docutils literal"><span class="pre">&quot;bmp&quot;</span></code>.
+Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not specify the format.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Image.source">
+<code class="descname">source</code><a class="headerlink" href="#tmx.Image.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>The location of the image file referenced.  If set to
+<code class="xref py py-const docutils literal"><span class="pre">None</span></code>, the image data is embedded.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Image.trans">
+<code class="descname">trans</code><a class="headerlink" href="#tmx.Image.trans" title="Permalink to this definition">¶</a></dt>
+<dd><p>The transparent color of the image as a hex string (e.g.
+<code class="docutils literal"><span class="pre">&quot;FF0000&quot;</span></code> or <code class="docutils literal"><span class="pre">&quot;#00FF00&quot;</span></code>), or <code class="xref py py-const docutils literal"><span class="pre">None</span></code> if no color is
+treated as transparent.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Image.width">
+<code class="descname">width</code><a class="headerlink" href="#tmx.Image.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the image in pixels; used for tile index correction
+when the image changes.  If set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code>, the image width
+is not explicitly specified.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Image.height">
+<code class="descname">height</code><a class="headerlink" href="#tmx.Image.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the image in pixels; used for tile index correction
+when the image changes.  If set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code>, the image
+height is not explicitly specified.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Image.data">
+<code class="descname">data</code><a class="headerlink" href="#tmx.Image.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The image data if embedded, or <code class="xref py py-const docutils literal"><span class="pre">None</span></code> if an external image
+is referenced.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.ImageLayer">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">ImageLayer</code><span class="sig-paren">(</span><em>name</em>, <em>offsetx</em>, <em>offsety</em>, <em>opacity=1</em>, <em>visible=True</em>, <em>properties=None</em>, <em>image=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.ImageLayer" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.ImageLayer.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.ImageLayer.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the image layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ImageLayer.offsetx">
+<code class="descname">offsetx</code><a class="headerlink" href="#tmx.ImageLayer.offsetx" title="Permalink to this definition">¶</a></dt>
+<dd><p>The x position of the image layer in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ImageLayer.offsety">
+<code class="descname">offsety</code><a class="headerlink" href="#tmx.ImageLayer.offsety" title="Permalink to this definition">¶</a></dt>
+<dd><p>The y position of the image layer in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ImageLayer.opacity">
+<code class="descname">opacity</code><a class="headerlink" href="#tmx.ImageLayer.opacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The opacity of the image layer as a value from 0 to 1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ImageLayer.visible">
+<code class="descname">visible</code><a class="headerlink" href="#tmx.ImageLayer.visible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the image layer is visible.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ImageLayer.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.ImageLayer.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the properties of
+the image layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ImageLayer.image">
+<code class="descname">image</code><a class="headerlink" href="#tmx.ImageLayer.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>An <a class="reference internal" href="#tmx.Image" title="tmx.Image"><code class="xref py py-class docutils literal"><span class="pre">Image</span></code></a> object indicating the image of the image layer.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.Layer">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">Layer</code><span class="sig-paren">(</span><em>name</em>, <em>opacity=1</em>, <em>visible=True</em>, <em>offsetx=0</em>, <em>offsety=0</em>, <em>properties=None</em>, <em>tiles=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.Layer" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.Layer.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.Layer.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Layer.opacity">
+<code class="descname">opacity</code><a class="headerlink" href="#tmx.Layer.opacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The opacity of the layer as a value from 0 to 1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Layer.visible">
+<code class="descname">visible</code><a class="headerlink" href="#tmx.Layer.visible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the layer is visible.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Layer.offsetx">
+<code class="descname">offsetx</code><a class="headerlink" href="#tmx.Layer.offsetx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rendering offset for this layer in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Layer.offsety">
+<code class="descname">offsety</code><a class="headerlink" href="#tmx.Layer.offsety" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rendering offset for this layer in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Layer.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.Layer.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the properties of
+the layer.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Layer.tiles">
+<code class="descname">tiles</code><a class="headerlink" href="#tmx.Layer.tiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.LayerTile" title="tmx.LayerTile"><code class="xref py py-class docutils literal"><span class="pre">LayerTile</span></code></a> objects indicating the tiles of the
+layer.</p>
+<p>The coordinates of each tile is determined by the tile&#8217;s index
+within this list.  Exactly how the tiles are positioned is
+determined by the map orientation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.LayerTile">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">LayerTile</code><span class="sig-paren">(</span><em>gid</em>, <em>hflip=False</em>, <em>vflip=False</em>, <em>dflip=False</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.LayerTile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.LayerTile.gid">
+<code class="descname">gid</code><a class="headerlink" href="#tmx.LayerTile.gid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The global ID of the tile.  A value of <code class="docutils literal"><span class="pre">0</span></code> indicates no tile at
+this position.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.LayerTile.hflip">
+<code class="descname">hflip</code><a class="headerlink" href="#tmx.LayerTile.hflip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the tile is flipped horizontally.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.LayerTile.vflip">
+<code class="descname">vflip</code><a class="headerlink" href="#tmx.LayerTile.vflip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the tile is flipped vertically.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.LayerTile.dflip">
+<code class="descname">dflip</code><a class="headerlink" href="#tmx.LayerTile.dflip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the tile is flipped diagonally (X and Y axis
+swapped).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.Object">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">Object</code><span class="sig-paren">(</span><em>name</em>, <em>type_</em>, <em>x</em>, <em>y</em>, <em>width=0</em>, <em>height=0</em>, <em>rotation=0</em>, <em>gid=None</em>, <em>visible=True</em>, <em>properties=None</em>, <em>ellipse=False</em>, <em>polygon=None</em>, <em>polyline=None</em>, <em>id_=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.Object" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.Object.id">
+<code class="descname">id</code><a class="headerlink" href="#tmx.Object.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unique ID of the object as a string if set, or <code class="xref py py-const docutils literal"><span class="pre">None</span></code>
+otherwise.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.Object.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the object.  An arbitrary string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.type">
+<code class="descname">type</code><a class="headerlink" href="#tmx.Object.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of the object.  An arbitrary string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.x">
+<code class="descname">x</code><a class="headerlink" href="#tmx.Object.x" title="Permalink to this definition">¶</a></dt>
+<dd><p>The x coordinate of the object in pixels.  This is the
+left edge of the object in orthogonal orientation, and the center
+of the object otherwise.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.y">
+<code class="descname">y</code><a class="headerlink" href="#tmx.Object.y" title="Permalink to this definition">¶</a></dt>
+<dd><p>The y coordinate of the object in pixels.  This is the bottom
+edge of the object.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.width">
+<code class="descname">width</code><a class="headerlink" href="#tmx.Object.width" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the object in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.height">
+<code class="descname">height</code><a class="headerlink" href="#tmx.Object.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the object in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.rotation">
+<code class="descname">rotation</code><a class="headerlink" href="#tmx.Object.rotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>The rotation of the object in degrees clockwise.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.gid">
+<code class="descname">gid</code><a class="headerlink" href="#tmx.Object.gid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The tile to use as the object&#8217;s image.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> for
+no reference to a tile.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.visible">
+<code class="descname">visible</code><a class="headerlink" href="#tmx.Object.visible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the object is visible.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.Object.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the object&#8217;s
+properties.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.ellipse">
+<code class="descname">ellipse</code><a class="headerlink" href="#tmx.Object.ellipse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the object should be an ellipse.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.polygon">
+<code class="descname">polygon</code><a class="headerlink" href="#tmx.Object.polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of coordinate pair tuples relative to the object&#8217;s
+position indicating the points of the object&#8217;s representation as
+a polygon.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not represent the object as a
+polygon.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Object.polyline">
+<code class="descname">polyline</code><a class="headerlink" href="#tmx.Object.polyline" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of coordinate pair tuples relative to the object&#8217;s
+position indicating the points of the object&#8217;s representation as
+a polyline.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not represent the object as
+a polyline.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.ObjectGroup">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">ObjectGroup</code><span class="sig-paren">(</span><em>name</em>, <em>color=None</em>, <em>opacity=1</em>, <em>visible=True</em>, <em>offsetx=0</em>, <em>offsety=0</em>, <em>draworder=None</em>, <em>properties=None</em>, <em>objects=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.ObjectGroup" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.ObjectGroup.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.ObjectGroup.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the object group.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.color">
+<code class="descname">color</code><a class="headerlink" href="#tmx.ObjectGroup.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color used to display the objects in this group as a hex
+string (e.g. <code class="docutils literal"><span class="pre">&quot;FF0000&quot;</span></code> or <code class="docutils literal"><span class="pre">&quot;#00FF00&quot;</span></code>).  Set to
+<code class="xref py py-const docutils literal"><span class="pre">None</span></code> for no color definition.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.opacity">
+<code class="descname">opacity</code><a class="headerlink" href="#tmx.ObjectGroup.opacity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The opacity of the object group as a value from 0 to 1.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.visible">
+<code class="descname">visible</code><a class="headerlink" href="#tmx.ObjectGroup.visible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the object group is visible.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.offsetx">
+<code class="descname">offsetx</code><a class="headerlink" href="#tmx.ObjectGroup.offsetx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rendering offset for this layer in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.offsety">
+<code class="descname">offsety</code><a class="headerlink" href="#tmx.ObjectGroup.offsety" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rendering offset for this layer in pixels.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.draworder">
+<code class="descname">draworder</code><a class="headerlink" href="#tmx.ObjectGroup.draworder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Can be &#8220;topdown&#8221; or &#8220;index&#8221;.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not define
+this.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.ObjectGroup.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.ObjectGroup.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the object group&#8217;s
+properties</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">objects:</code></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Object" title="tmx.Object"><code class="xref py py-class docutils literal"><span class="pre">Object</span></code></a> objects indicating the object group&#8217;s
+objects.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.Property">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">Property</code><span class="sig-paren">(</span><em>name</em>, <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.Property" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.Property.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.Property.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the property.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Property.value">
+<code class="descname">value</code><a class="headerlink" href="#tmx.Property.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>The value of the property.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.TerrainType">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">TerrainType</code><span class="sig-paren">(</span><em>name</em>, <em>tile</em>, <em>properties=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.TerrainType" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.TerrainType.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.TerrainType.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the terrain type.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TerrainType.tile">
+<code class="descname">tile</code><a class="headerlink" href="#tmx.TerrainType.tile" title="Permalink to this definition">¶</a></dt>
+<dd><p>The local tile ID of the tile that represents the terrain
+visually.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.TerrainType.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.TerrainType.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the terrain type&#8217;s
+properties.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.Tile">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">Tile</code><span class="sig-paren">(</span><em>id_</em>, <em>terrain=None</em>, <em>probability=None</em>, <em>properties=None</em>, <em>image=None</em>, <em>animation=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.Tile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.Tile.id">
+<code class="descname">id</code><a class="headerlink" href="#tmx.Tile.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>The local tile ID within its tileset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tile.terrain">
+<code class="descname">terrain</code><a class="headerlink" href="#tmx.Tile.terrain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the terrain type of each corner of the tile, given as
+comma-separated indexes in the list of terrain types in the order
+top-left, top-right, bottom-left, bottom-right.  Leaving out a
+value means that corner has no terrain. Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> for
+no terrain.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tile.probability">
+<code class="descname">probability</code><a class="headerlink" href="#tmx.Tile.probability" title="Permalink to this definition">¶</a></dt>
+<dd><p>A percentage indicating the probability that this tile is chosen
+when it competes with others while editing with the terrain tool.
+Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not define this.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tile.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.Tile.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the tile&#8217;s
+properties.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tile.image">
+<code class="descname">image</code><a class="headerlink" href="#tmx.Tile.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>An <a class="reference internal" href="#tmx.Image" title="tmx.Image"><code class="xref py py-class docutils literal"><span class="pre">Image</span></code></a> object indicating the tile&#8217;s image.  Set to
+<code class="xref py py-const docutils literal"><span class="pre">None</span></code> for no image.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tile.animation">
+<code class="descname">animation</code><a class="headerlink" href="#tmx.Tile.animation" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <code class="xref py py-class docutils literal"><span class="pre">Frame</span></code> objects indicating this tile&#8217;s animation.
+Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> for no animation.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="tmx.Tileset">
+<em class="property">class </em><code class="descclassname">tmx.</code><code class="descname">Tileset</code><span class="sig-paren">(</span><em>firstgid</em>, <em>name</em>, <em>tilewidth</em>, <em>tileheight</em>, <em>source=None</em>, <em>spacing=0</em>, <em>margin=0</em>, <em>xoffset=0</em>, <em>yoffset=0</em>, <em>tilecount=None</em>, <em>columns=None</em>, <em>properties=None</em>, <em>image=None</em>, <em>terraintypes=None</em>, <em>tiles=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.Tileset" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="tmx.Tileset.firstgid">
+<code class="descname">firstgid</code><a class="headerlink" href="#tmx.Tileset.firstgid" title="Permalink to this definition">¶</a></dt>
+<dd><p>The first global tile ID of this tileset (this global ID maps to
+the first tile in this tileset).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.name">
+<code class="descname">name</code><a class="headerlink" href="#tmx.Tileset.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of this tileset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.tilewidth">
+<code class="descname">tilewidth</code><a class="headerlink" href="#tmx.Tileset.tilewidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (maximum) width of the tiles in this tileset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.tileheight">
+<code class="descname">tileheight</code><a class="headerlink" href="#tmx.Tileset.tileheight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (maximum) height of the tiles in this tileset.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.source">
+<code class="descname">source</code><a class="headerlink" href="#tmx.Tileset.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>The external TSX (Tile Set XML) file to store this tileset in.
+If set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code>, this tileset is stored in the TMX file.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.spacing">
+<code class="descname">spacing</code><a class="headerlink" href="#tmx.Tileset.spacing" title="Permalink to this definition">¶</a></dt>
+<dd><p>The spacing in pixels between the tiles in this tileset (applies
+to the tileset image).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.margin">
+<code class="descname">margin</code><a class="headerlink" href="#tmx.Tileset.margin" title="Permalink to this definition">¶</a></dt>
+<dd><p>The margin around the tiles in this tileset (applies to the
+tileset image).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.xoffset">
+<code class="descname">xoffset</code><a class="headerlink" href="#tmx.Tileset.xoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>The horizontal offset of the tileset in pixels (positive is
+right).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.yoffset">
+<code class="descname">yoffset</code><a class="headerlink" href="#tmx.Tileset.yoffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>The vertical offset of the tileset in pixels (positive is down).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.tilecount">
+<code class="descname">tilecount</code><a class="headerlink" href="#tmx.Tileset.tilecount" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of tiles in this tileset.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> to not
+specify this.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.columns">
+<code class="descname">columns</code><a class="headerlink" href="#tmx.Tileset.columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of tile columns in the tileset.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code>
+to not specify this.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.properties">
+<code class="descname">properties</code><a class="headerlink" href="#tmx.Tileset.properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Property" title="tmx.Property"><code class="xref py py-class docutils literal"><span class="pre">Property</span></code></a> objects indicating the tileset&#8217;s
+properties.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.image">
+<code class="descname">image</code><a class="headerlink" href="#tmx.Tileset.image" title="Permalink to this definition">¶</a></dt>
+<dd><p>An <a class="reference internal" href="#tmx.Image" title="tmx.Image"><code class="xref py py-class docutils literal"><span class="pre">Image</span></code></a> object indicating the tileset&#8217;s image.  Set to
+<code class="xref py py-const docutils literal"><span class="pre">None</span></code> for no image.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.terraintypes">
+<code class="descname">terraintypes</code><a class="headerlink" href="#tmx.Tileset.terraintypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.TerrainType" title="tmx.TerrainType"><code class="xref py py-class docutils literal"><span class="pre">TerrainType</span></code></a> objects indicating the tileset&#8217;s
+terrain types.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="tmx.Tileset.tiles">
+<code class="descname">tiles</code><a class="headerlink" href="#tmx.Tileset.tiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list of <a class="reference internal" href="#tmx.Tile" title="tmx.Tile"><code class="xref py py-class docutils literal"><span class="pre">Tile</span></code></a> objects indicating the tileset&#8217;s tile
+properties.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="tmx.data_decode">
+<code class="descclassname">tmx.</code><code class="descname">data_decode</code><span class="sig-paren">(</span><em>data</em>, <em>encoding</em>, <em>compression=None</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.data_decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode encoded data and return a list of integers it represents.</p>
+<p>This is a low-level function used internally by this library; you
+don&#8217;t typically need to use it.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">data</span></code> &#8211; The data to decode.</li>
+<li><code class="docutils literal"><span class="pre">encoding</span></code> &#8211; The encoding of the data.  Can be <code class="docutils literal"><span class="pre">&quot;base64&quot;</span></code> or
+<code class="docutils literal"><span class="pre">&quot;csv&quot;</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">compression</span></code> &#8211; The compression method used.  Valid compression
+methods are <code class="docutils literal"><span class="pre">&quot;gzip&quot;</span></code> and <code class="docutils literal"><span class="pre">&quot;zlib&quot;</span></code>.  Set to <code class="xref py py-const docutils literal"><span class="pre">None</span></code> for
+no compression.</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="tmx.data_encode">
+<code class="descclassname">tmx.</code><code class="descname">data_encode</code><span class="sig-paren">(</span><em>data</em>, <em>encoding</em>, <em>compression=True</em><span class="sig-paren">)</span><a class="headerlink" href="#tmx.data_encode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode a list of integers and return the encoded data.</p>
+<p>This is a low-level function used internally by this library; you
+don&#8217;t typically need to use it.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">data</span></code> &#8211; The list of integers to encode.</li>
+<li><code class="docutils literal"><span class="pre">encoding</span></code> &#8211; The encoding of the data.  Can be <code class="docutils literal"><span class="pre">&quot;base64&quot;</span></code> or
+<code class="docutils literal"><span class="pre">&quot;csv&quot;</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">compression</span></code> &#8211; Whether or not compression should be used if
+supported.</li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Simple TMX Library documentation</a><ul>
+<li><a class="reference internal" href="#tmx-tilemap">tmx.TileMap</a></li>
+<li><a class="reference internal" href="#other-classes">Other Classes</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Simple TMX Library 1.8.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, 2015 Julian Marchant.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>

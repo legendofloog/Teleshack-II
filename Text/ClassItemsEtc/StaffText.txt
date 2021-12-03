@@ -1,0 +1,46 @@
+## SigilStaffName
+Sigil[X]
+
+## LightRuneName
+Light Rune[X]
+
+## SigilStaffDesc
+Create a light rune[NL]
+to block off paths [X]
+
+## LightRuneStaffUseDesc
+Block off a space [NL]
+with a light rune [X]
+
+## LightRuneHelpText
+Select where to summon a Light Rune[X]
+
+## RewarpStaffName
+Rewarp [X]
+
+## RewarpStaffDesc
+Teleport user to [NL]
+another area.[X]
+
+## StealStaffName
+Thief[X]
+
+## StealStaffDesc
+Steal an item from[NL]
+your target.[X]
+
+## BurglarStaffName
+Burglar[X]
+
+## BurglarStaffDesc
+Opens doors and chests[X]
+
+## BurgularStaffHelpText
+Select door or chest to open[X]
+
+## AgainStaffName
+Again[X]
+
+## AgainStaffDesc
+Allow an ally to[NL]
+move again.[X]

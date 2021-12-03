@@ -23,8 +23,8 @@
 #define Faolan 0x16
 #define Iberis 0x17
 #define Buldak 0x18
-#define LArachel 0x19
-#define Dozla 0x1A
+#define Nora 0x19
+#define Hans 0x1A
 #define Rennac 0x1C
 #define Duessel 0x1D
 #define Myrrh 0x1E
@@ -67,6 +67,9 @@
 #define Wellworth 0x86
 #define Epony 0x87
 #define TheGiant 0x95
+// Chapter 8 Boss
+#define Hege 0x96
+#define Francis 0x97
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E

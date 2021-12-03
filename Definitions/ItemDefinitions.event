@@ -234,3 +234,4 @@
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
+#define ZykhraScroll 0xD0

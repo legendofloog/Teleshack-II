@@ -24,6 +24,8 @@
 #define DraganaMug 0x2D
 #define IberisMug 0x20
 #define BuldakMug 0x21
+#define NoraMug 0x22
+#define HansMug 0x23
 
 
 // NPCs
@@ -54,6 +56,8 @@
 #define MifanMug 0x03
 #define TheGiantMug 0x41
 #define YorMug 0x28
+#define HegeMug 0x4C
+#define FrancisMug 0x31
 
 ALIGN 16
 BarodMugData:
@@ -414,7 +418,7 @@ EponyMugData:
 #incbin "Dmp/Epony(RisingSolaris)_frames.dmp"
 #incbin "Dmp/Epony(RisingSolaris)_palette.dmp"
 #incbin "Dmp/Epony(RisingSolaris)_minimug.dmp"
-setMugEntry(EponyMug, EponyMugData, 4, 6, 3, 3)
+setMugEntry(EponyMug, EponyMugData, 4, 6, 4, 4)
 
 ALIGN 16
 MifanMugData:
@@ -422,7 +426,7 @@ MifanMugData:
 #incbin "Dmp/Mifan(MK404,Flasuban)_frames.dmp"
 #incbin "Dmp/Mifan(MK404,Flasuban)_palette.dmp"
 #incbin "Dmp/Mifan(MK404,Flasuban)_minimug.dmp"
-setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 3)
+setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 4)
 
 ALIGN 16
 RadnitzMugData:
@@ -456,5 +460,36 @@ YorMugData:
 #incbin "Dmp/Yor(RandomWizard)_minimug.dmp"
 setMugEntry(YorMug, YorMugData, 3, 5, 3, 3)
 
+ALIGN 16
+NoraMugData:
+#incbin "Dmp/Nora(Levin)_mug.dmp"
+#incbin "Dmp/Nora(Levin)_frames.dmp"
+#incbin "Dmp/Nora(Levin)_palette.dmp"
+#incbin "Dmp/Nora(Levin)_minimug.dmp"
+setMugEntry(NoraMug, NoraMugData, 2, 5, 3, 3)
+
+ALIGN 16
+HansMugData:
+#incbin "Dmp/Hans(NICKT)_mug.dmp"
+#incbin "Dmp/Hans(NICKT)_frames.dmp"
+#incbin "Dmp/Hans(NICKT)_palette.dmp"
+#incbin "Dmp/Hans(NICKT)_minimug.dmp"
+setMugEntry(HansMug, HansMugData, 4, 5, 4, 3)
+
+ALIGN 16
+HegeMugData:
+#incbin "Dmp/Hege(RandomWizard)_mug.dmp"
+#incbin "Dmp/Hege(RandomWizard)_frames.dmp"
+#incbin "Dmp/Hege(RandomWizard)_palette.dmp"
+#incbin "Dmp/Hege(RandomWizard)_minimug.dmp"
+setMugEntry(HegeMug, HegeMugData, 3, 6, 3, 4)
+
+ALIGN 16
+FrancisMugData:
+#incbin "Dmp/Francis(XVI)_mug.dmp"
+#incbin "Dmp/Francis(XVI)_frames.dmp"
+#incbin "Dmp/Francis(XVI)_palette.dmp"
+#incbin "Dmp/Francis(XVI)_minimug.dmp"
+setMugEntry(FrancisMug, FrancisMugData, 3, 5, 3, 3)
 
 

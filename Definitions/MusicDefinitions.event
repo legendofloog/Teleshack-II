@@ -18,6 +18,8 @@
 #define PMDSteamCaveID 0x15
 #define FF6AwakeningID 0x16
 #define FF4RedWingsID 0x17
+#define fe2bossarr 0x18
+#define ButterBuilding 0x19
 
 // Vanilla
 #define AdvanceSong 0x24

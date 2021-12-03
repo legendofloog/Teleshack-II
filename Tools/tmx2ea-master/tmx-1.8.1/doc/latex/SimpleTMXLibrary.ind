@@ -1,0 +1,169 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter A
+  \item animation (tmx.Tile attribute), \hyperpage{8}
+
+  \indexspace
+  \bigletter B
+  \item backgroundcolor (tmx.TileMap attribute), \hyperpage{3}
+
+  \indexspace
+  \bigletter C
+  \item color (tmx.ObjectGroup attribute), \hyperpage{7}
+  \item columns (tmx.Tileset attribute), \hyperpage{9}
+
+  \indexspace
+  \bigletter D
+  \item data (tmx.Image attribute), \hyperpage{5}
+  \item data\_decode() (in module tmx), \hyperpage{11}
+  \item data\_encode() (in module tmx), \hyperpage{11}
+  \item dflip (tmx.LayerTile attribute), \hyperpage{6}
+  \item draworder (tmx.ObjectGroup attribute), \hyperpage{7}
+
+  \indexspace
+  \bigletter E
+  \item ellipse (tmx.Object attribute), \hyperpage{7}
+
+  \indexspace
+  \bigletter F
+  \item firstgid (tmx.Tileset attribute), \hyperpage{8}
+  \item format (tmx.Image attribute), \hyperpage{5}
+
+  \indexspace
+  \bigletter G
+  \item gid (tmx.LayerTile attribute), \hyperpage{6}
+  \item gid (tmx.Object attribute), \hyperpage{7}
+
+  \indexspace
+  \bigletter H
+  \item height (tmx.Image attribute), \hyperpage{5}
+  \item height (tmx.Object attribute), \hyperpage{6}
+  \item height (tmx.TileMap attribute), \hyperpage{3}
+  \item hexsidelength (tmx.TileMap attribute), \hyperpage{3}
+  \item hflip (tmx.LayerTile attribute), \hyperpage{6}
+
+  \indexspace
+  \bigletter I
+  \item id (tmx.Object attribute), \hyperpage{6}
+  \item id (tmx.Tile attribute), \hyperpage{8}
+  \item Image (class in tmx), \hyperpage{5}
+  \item image (tmx.ImageLayer attribute), \hyperpage{5}
+  \item image (tmx.Tile attribute), \hyperpage{8}
+  \item image (tmx.Tileset attribute), \hyperpage{9}
+  \item ImageLayer (class in tmx), \hyperpage{5}
+
+  \indexspace
+  \bigletter L
+  \item Layer (class in tmx), \hyperpage{5}
+  \item layers (tmx.TileMap attribute), \hyperpage{4}
+  \item LayerTile (class in tmx), \hyperpage{6}
+  \item load() (tmx.TileMap class method), \hyperpage{4}
+
+  \indexspace
+  \bigletter M
+  \item margin (tmx.Tileset attribute), \hyperpage{8}
+
+  \indexspace
+  \bigletter N
+  \item name (tmx.ImageLayer attribute), \hyperpage{5}
+  \item name (tmx.Layer attribute), \hyperpage{6}
+  \item name (tmx.Object attribute), \hyperpage{6}
+  \item name (tmx.ObjectGroup attribute), \hyperpage{7}
+  \item name (tmx.Property attribute), \hyperpage{7}
+  \item name (tmx.TerrainType attribute), \hyperpage{8}
+  \item name (tmx.Tileset attribute), \hyperpage{8}
+  \item nextobjectid (tmx.TileMap attribute), \hyperpage{3}
+
+  \indexspace
+  \bigletter O
+  \item Object (class in tmx), \hyperpage{6}
+  \item ObjectGroup (class in tmx), \hyperpage{7}
+  \item offsetx (tmx.ImageLayer attribute), \hyperpage{5}
+  \item offsetx (tmx.Layer attribute), \hyperpage{6}
+  \item offsetx (tmx.ObjectGroup attribute), \hyperpage{7}
+  \item offsety (tmx.ImageLayer attribute), \hyperpage{5}
+  \item offsety (tmx.Layer attribute), \hyperpage{6}
+  \item offsety (tmx.ObjectGroup attribute), \hyperpage{7}
+  \item opacity (tmx.ImageLayer attribute), \hyperpage{5}
+  \item opacity (tmx.Layer attribute), \hyperpage{6}
+  \item opacity (tmx.ObjectGroup attribute), \hyperpage{7}
+  \item orientation (tmx.TileMap attribute), \hyperpage{3}
+
+  \indexspace
+  \bigletter P
+  \item polygon (tmx.Object attribute), \hyperpage{7}
+  \item polyline (tmx.Object attribute), \hyperpage{7}
+  \item probability (tmx.Tile attribute), \hyperpage{8}
+  \item properties (tmx.ImageLayer attribute), \hyperpage{5}
+  \item properties (tmx.Layer attribute), \hyperpage{6}
+  \item properties (tmx.Object attribute), \hyperpage{7}
+  \item properties (tmx.ObjectGroup attribute), \hyperpage{7}
+  \item properties (tmx.TerrainType attribute), \hyperpage{8}
+  \item properties (tmx.Tile attribute), \hyperpage{8}
+  \item properties (tmx.TileMap attribute), \hyperpage{3}
+  \item properties (tmx.Tileset attribute), \hyperpage{9}
+  \item Property (class in tmx), \hyperpage{7}
+
+  \indexspace
+  \bigletter R
+  \item renderorder (tmx.TileMap attribute), \hyperpage{3}
+  \item rotation (tmx.Object attribute), \hyperpage{7}
+
+  \indexspace
+  \bigletter S
+  \item save() (tmx.TileMap method), \hyperpage{4}
+  \item source (tmx.Image attribute), \hyperpage{5}
+  \item source (tmx.Tileset attribute), \hyperpage{8}
+  \item spacing (tmx.Tileset attribute), \hyperpage{8}
+  \item staggeraxis (tmx.TileMap attribute), \hyperpage{3}
+  \item staggerindex (tmx.TileMap attribute), \hyperpage{3}
+
+  \indexspace
+  \bigletter T
+  \item terrain (tmx.Tile attribute), \hyperpage{8}
+  \item TerrainType (class in tmx), \hyperpage{8}
+  \item terraintypes (tmx.Tileset attribute), \hyperpage{9}
+  \item Tile (class in tmx), \hyperpage{8}
+  \item tile (tmx.TerrainType attribute), \hyperpage{8}
+  \item tilecount (tmx.Tileset attribute), \hyperpage{9}
+  \item tileheight (tmx.TileMap attribute), \hyperpage{3}
+  \item tileheight (tmx.Tileset attribute), \hyperpage{8}
+  \item TileMap (class in tmx), \hyperpage{3}
+  \item tiles (tmx.Layer attribute), \hyperpage{6}
+  \item tiles (tmx.Tileset attribute), \hyperpage{9}
+  \item Tileset (class in tmx), \hyperpage{8}
+  \item tilesets (tmx.TileMap attribute), \hyperpage{3}
+  \item tilewidth (tmx.TileMap attribute), \hyperpage{3}
+  \item tilewidth (tmx.Tileset attribute), \hyperpage{8}
+  \item tmx (module), \hyperpage{1}
+  \item trans (tmx.Image attribute), \hyperpage{5}
+  \item type (tmx.Object attribute), \hyperpage{6}
+
+  \indexspace
+  \bigletter V
+  \item value (tmx.Property attribute), \hyperpage{7}
+  \item version (tmx.TileMap attribute), \hyperpage{3}
+  \item vflip (tmx.LayerTile attribute), \hyperpage{6}
+  \item visible (tmx.ImageLayer attribute), \hyperpage{5}
+  \item visible (tmx.Layer attribute), \hyperpage{6}
+  \item visible (tmx.Object attribute), \hyperpage{7}
+  \item visible (tmx.ObjectGroup attribute), \hyperpage{7}
+
+  \indexspace
+  \bigletter W
+  \item width (tmx.Image attribute), \hyperpage{5}
+  \item width (tmx.Object attribute), \hyperpage{6}
+  \item width (tmx.TileMap attribute), \hyperpage{3}
+
+  \indexspace
+  \bigletter X
+  \item x (tmx.Object attribute), \hyperpage{6}
+  \item xoffset (tmx.Tileset attribute), \hyperpage{9}
+
+  \indexspace
+  \bigletter Y
+  \item y (tmx.Object attribute), \hyperpage{6}
+  \item yoffset (tmx.Tileset attribute), \hyperpage{9}
+
+\end{theindex}

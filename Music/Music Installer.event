@@ -51,3 +51,7 @@ SongTable(PMDSteamCaveID,SteamCave,MapMusicGroup)
 SongTable(FF6AwakeningID,FF6Awakening,MapMusicGroup)
 #include "MusicEvents/RedWings(FF4).event"
 SongTable(FF4RedWingsID,RedWings,MapMusicGroup)
+#include "MusicEvents/fe2bossarr.event"
+SongTable(fe2bossarr,song01,BattleMusicGroup)
+#include "MusicEvents/butterbuilding.event"
+SongTable(ButterBuilding,butterbuilding,MapMusicGroup)

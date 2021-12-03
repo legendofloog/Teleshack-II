@@ -24,6 +24,8 @@ SetUnitConGrowth(Cadenza,20)
 SetUnitConGrowth(Faolan,10)
 SetUnitConGrowth(Iberis,10)
 SetUnitConGrowth(Buldak,40)
+SetUnitConGrowth(Nora,10)
+SetUnitConGrowth(Hans,10)
 
 
 // Mov Growth Table
@@ -51,3 +53,5 @@ SetUnitMovGrowth(Cadenza,1)
 SetUnitMovGrowth(Faolan,2)
 SetUnitMovGrowth(Iberis,10)
 SetUnitMovGrowth(Buldak, 2)
+SetUnitMovGrowth(Nora, 1)
+SetUnitMovGrowth(Hans, 4)
