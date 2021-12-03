@@ -36,28 +36,28 @@ Pegasus Rider,3,5,20,0
 Falcoknight,5,5,20,2
 Dragon Rider,0,5,20,1
 Dracoknight,1,5,20,1
-Mage,3,30,20,0
-Mage (F),3,30,20,0
-Sage,7,30,20,4
-Sage (F),7,30,20,4
-Mage Knight,4,30,20,2
-Mage Knight (F),4,30,20,2
-High Priest,6,30,20,3
-High Priestess,6,30,20,3
-Dark Mage,2,40,20,0
-Dark Mage (F),2,40,20,0
-Dark Bishop,5,40,20,3
-Dark Bishop (F),5,40,20,3
-Bard,1,30,20,0
-Sister,1,30,20,0
+Mage,4,30,20,0
+Mage (F),4,30,20,0
+Sage,6,30,20,4
+Sage (F),6,30,20,4
+Mage Knight,6,30,20,2
+Mage Knight (F),6,30,20,2
+High Priest,7,30,20,3
+High Priestess,7,30,20,3
+Dark Mage,3,40,20,0
+Dark Mage (F),3,40,20,0
+Dark Bishop,6,40,20,3
+Dark Bishop (F),6,40,20,3
+Bard,2,30,20,0
+Sister,2,30,20,0
 Thief Fighter,1,5,20,1
 Gorgon Egg,0,0,20,0
-Priest,3,30,20,0
-Priest (F),3,30,20,0
+Priest,4,30,20,0
+Priest (F),4,30,20,0
 Rook Knight,0,5,20,0
 Gold Knight,1,5,20,1
-Troubadour,2,20,20,0
-Paladin,5,20,20,3
+Troubadour,3,20,20,0
+Paladin,6,20,20,3
 Manakete,2,0,20,0
 Manakete (F),2,0,20,0
 Hunter,0,5,20,0
@@ -99,15 +99,15 @@ Falcoknight (D),2,5,20,2
 Dragon Rider (D),0,5,20,0
 Gorgon Egg,0,0,20,0
 Dracoknight (D),0,5,20,1
-Mage Knight (D),4,30,20,2
+Mage Knight (D),5,30,20,2
 Dracozombie,1,30,20,0
 Demon King,23,40,20,0
-Mage Knight (F) (D),4,30,20,2
+Mage Knight (F) (D),5,30,20,2
 Rook Knight (D),0,0,20,0
 Gold Knight (D),1,5,20,1
-Troubadour (D),2,20,20,0
-Paladin (D),5,20,20,3
-Bard (F),1,30,20,0
+Troubadour (D),3,20,20,0
+Paladin (D),6,20,20,3
+Bard (F),2,30,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
 Civilian,0,0,20,0
@@ -124,7 +124,7 @@ Tent,0,0,20,0
 Freelancer,0,5,20,0
 Champion,1,5,20,1
 Master_Knight_F (D),6,10,20,4
-Brother,1,30,20,0
+Brother,2,30,20,0
 LongBallista,1,5,20,0
 (empty),2,55,20,1
 Ephraim Lord,1,10,20,0
