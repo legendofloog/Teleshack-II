@@ -49,3 +49,12 @@ No sense in dying here.[X]
 [MidRight][LoadFangai]
 Uwa ha ha! My last meal[N]
 will not be tonight![A][X]
+
+## NoraEscapeQuoteText
+[MidRight][LoadNora]
+For Lord Radnitz's sake,[N]
+I must make my retreat![A][X]
+
+## HansEscapeQuoteText
+[MidRight][LoadHans]
+[Beat][A][X]

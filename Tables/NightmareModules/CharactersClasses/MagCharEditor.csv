@@ -23,8 +23,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x15 Cadenza,3,30
 0x17 Iberis,0,5
 0x18 Buldak,1,30
-0x18 Buldak,0,5
-L'Arachel,2,45
+0x19 Nora,0,5
+0x1A Hans,2,5
 Dozla,5,50
 #NAME?,0,5
 Rennac,0,50
@@ -74,7 +74,7 @@ Bone (Ch 2),0,5
 Bazba (Ch 3),0,5
 Entombed (Ch 4),1,10
 Saar (Ch 5),1,5
-Novala (Ch 6),1,5
+Novala (Ch 6),8,5
 Murray (Ch 7),8,50
 Tirado (Ch 8),2,5
 Binks (Ch 9A),3,15
@@ -148,8 +148,8 @@ Grado Remnant 4 (C16 only?),0,0
 Wraith (Sage),0,0
 Wraith (Swords),0,0
 0x95 The Giant,0,0
-0,0,0
-0,0,0
+0x96 Hege,0,0
+0x97 Francis,0,0
 0,0,0
 0,0,0
 0,0,0

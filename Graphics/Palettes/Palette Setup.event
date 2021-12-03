@@ -160,6 +160,42 @@
 	setPalette(39,FaolanRookKnight)
 	setCBSP(39,Faolan, 1, RookKnight)
 
-// FaolanGoldKnight
-	setPalette(39,FaolanGoldKnight)
-	setCBSP(39,Faolan, 3, GoldKnight)
+// NoraDragonRider
+	setPalette(40,NoraDragonRider)
+	setCBSP(40,Nora, 1, DragonRider)
+
+// NoraDracoknight
+	setPalette(41,NoraDracoknight)
+	setCBSP(41,Nora, 2, Dracoknight)
+
+// NoraRiderUnmounted
+	setPalette(42,NoraRiderUnmounted)
+	setCBSP(42,Nora, 3, DragonRider_Dismounted)
+
+// NoraKnightUnmounted
+	setPalette(43,NoraKnightUnmounted)
+	setCBSP(43,Nora, 4, Dracoknight_Dismounted)
+
+// HansSwordKnight
+	setPalette(44,HansSwordKnight)
+	setCBSP(44,Hans, 1, SwordKnight)
+
+// HansForrestKnight
+	setPalette(45,HansForrestKnight)
+	setCBSP(45,Hans, 2, ForrestKnight)
+
+// HansSwordKnightUnmounted
+	setPalette(46,HansSwordKnightUnmounted)
+	setCBSP(46,Hans, 3, SwordKnight_Dismounted)
+
+// HansForrestKnightUnmounted
+	setPalette(47,HansForrestKnightUnmounted)
+	setCBSP(47,Hans, 4, ForrestKnight_Dismounted)
+
+// FrancisHalberdier
+	setPalette(48,FrancisHalberdier)
+	setCBSP(48,Francis, 1, Halberdier)
+
+// HegeMercenary
+	setPalette(49,HegeMercenary)
+	setCBSP(49,Hege, 1, Hero_F)

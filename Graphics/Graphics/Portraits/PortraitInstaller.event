@@ -1,0 +1,488 @@
+// setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)
+#define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
+#define CleoMug 0x2
+#define MiraMug 0x4
+#define IskraMug 0x5
+#define EmilMug 0x6
+#define SvetomirMug 0x7
+#define AlenaMug 0x8
+#define VargaMug 0x9
+#define DelilahMug 0xA
+#define FiloneMug 0xF
+#define ZwiebackMug 0x10
+#define LeinaMug 0x11
+#define CromarMug 0x13
+#define LoeweMug 0x14
+#define LongxiaMug 0x16
+#define TrajanMug 0x17
+#define FangaiMug 0x18
+#define GimmMug 0x19
+#define TobieMug 0x1A
+#define AwaMug 0x1B
+#define CadenzaMug 0x1C
+#define FaolanMug 0x1E
+#define DraganaMug 0x2D
+#define IberisMug 0x20
+#define BuldakMug 0x21
+#define NoraMug 0x22
+#define EdvinMug 0x23
+
+
+// NPCs
+#define EliasMug 0xB
+#define CoraliaMug 0xD
+#define OrfeasMug 0x12
+#define LoeweKidMug 0x15
+#define LeonidasMug 0x1D
+#define CidorMug 0x2E
+#define CatrinMug 0x2F
+#define EmoryMug 0x30
+#define RigganMug 0x3f
+#define RaschwitzMug 0x45
+#define TyrMug 0x46
+#define HernandezMug 0x47
+#define HilmarMug 0x4b
+#define BoroMug 0x4E
+#define KwameMug 0x57
+#define SeleseFMug 0x70
+#define BarodMug 0x48
+#define McCallumMug 0x49
+#define ZeusMug 0x4A
+#define VeidMug 0x4f
+#define DrakenMug 0x50
+#define EponyMug 0x1F
+#define WellworthMug 0x27
+#define RadnitzMug 0x12
+#define MifanMug 0x03
+#define TheGiantMug 0x41
+#define YorMug 0x28
+#define HegeMug 0x4C
+#define AlbusMug 0x31
+
+ALIGN 16
+BarodMugData:
+#incbin "Dmp/Barod_mug.dmp"
+#incbin "Dmp/Barod_frames.dmp"
+#incbin "Dmp/Barod_palette.dmp"
+#incbin "Dmp/Barod_minimug.dmp"
+setMugEntry(BarodMug, BarodMugData, 2, 5, 2, 3)
+
+ALIGN 16
+ZeusMugData:
+#incbin "Dmp/Zeus_mug.dmp"
+#incbin "Dmp/Zeus_frames.dmp"
+#incbin "Dmp/Zeus_palette.dmp"
+#incbin "Dmp/Zeus_minimug.dmp"
+setMugEntry(ZeusMug, ZeusMugData, 3, 5, 3, 3)
+
+ALIGN 16
+VeidMugData:
+#incbin "Dmp/Veid_mug.dmp"
+#incbin "Dmp/Veid_frames.dmp"
+#incbin "Dmp/Veid_palette.dmp"
+#incbin "Dmp/Veid_minimug.dmp"
+setMugEntry(VeidMug, VeidMugData, 3, 5, 3, 3)
+
+ALIGN 16
+DrakenMugData:
+#incbin "Dmp/Draken_mug.dmp"
+#incbin "Dmp/Draken_frames.dmp"
+#incbin "Dmp/Draken_palette.dmp"
+#incbin "Dmp/Draken_minimug.dmp"
+setMugEntry(DrakenMug, DrakenMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LeinaMugData:
+#incbin "Dmp/Leina_mug.dmp"
+#incbin "Dmp/Leina_frames.dmp"
+#incbin "Dmp/Leina_palette.dmp"
+#incbin "Dmp/Leina_minimug.dmp"
+setMugEntry(LeinaMug, LeinaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+CromarMugData:
+#incbin "Dmp/Cromar_mug.dmp"
+#incbin "Dmp/Cromar_frames.dmp"
+#incbin "Dmp/Cromar_palette.dmp"
+#incbin "Dmp/Cromar_minimug.dmp"
+setMugEntry(CromarMug, CromarMugData, 3, 5, 3, 3)
+
+ALIGN 16
+McCallumMugData:
+#incbin "Dmp/McCallum_mug.dmp"
+#incbin "Dmp/McCallum_frames.dmp"
+#incbin "Dmp/McCallum_palette.dmp"
+#incbin "Dmp/McCallum_minimug.dmp"
+setMugEntry(McCallumMug, McCallumMugData, 2, 5, 2, 3)
+
+ALIGN 16
+CleoMugData:
+#incbin "Dmp/Cleo(hypergammaspaces, Loog)_mug.dmp"
+#incbin "Dmp/Cleo(hypergammaspaces, Loog)_frames.dmp"
+#incbin "Dmp/Cleo(hypergammaspaces, Loog)_palette.dmp"
+#incbin "Dmp/Cleo(hypergammaspaces, Loog)_minimug.dmp"
+setMugEntry(CleoMug, CleoMugData, 3, 5, 3, 3)
+
+ALIGN 16
+MiraMugData:
+#incbin "Dmp/Mira(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(MiraMug, MiraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+IskraMugData:
+#incbin "Dmp/Iskra(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Iskra(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Iskra(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Iskra(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(IskraMug, IskraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+EmilMugData:
+#incbin "Dmp/Emil(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Emil(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Emil(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Emil(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(EmilMug, EmilMugData, 3, 5, 3, 3)
+
+ALIGN 16
+SvetomirMugData:
+#incbin "Dmp/Svetomir(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Svetomir(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Svetomir(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Svetomir(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(SvetomirMug, SvetomirMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AlenaMugData:
+#incbin "Dmp/Alena(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Alena(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Alena(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Alena(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(AlenaMug, AlenaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+LoeweMugData:
+#incbin "Dmp/Loewe(hypergammaspaces, Loog)_mug.dmp"
+#incbin "Dmp/Loewe(hypergammaspaces, Loog)_frames.dmp"
+#incbin "Dmp/Loewe(hypergammaspaces, Loog)_palette.dmp"
+#incbin "Dmp/Loewe(hypergammaspaces, Loog)_minimug.dmp"
+setMugEntry(LoeweMug, LoeweMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LoeweKidMugData:
+#incbin "Dmp/LoeweKid_mug.dmp"
+#incbin "Dmp/LoeweKid_frames.dmp"
+#incbin "Dmp/LoeweKid_palette.dmp"
+#incbin "Dmp/LoeweKid_minimug.dmp"
+setMugEntry(LoeweKidMug, LoeweKidMugData, 2, 8, 3, 6)
+
+ALIGN 16
+DraganaMugData:
+#incbin "Dmp/Dragana(Loog)_mug.dmp"
+#incbin "Dmp/Dragana(Loog)_frames.dmp"
+#incbin "Dmp/Dragana(Loog)_palette.dmp"
+#incbin "Dmp/Dragana(Loog)_minimug.dmp"
+setMugEntry(DraganaMug, DraganaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CidorMugData:
+#incbin "Dmp/Cidor(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Cidor(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Cidor(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Cidor(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(CidorMug, CidorMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CatrinMugData:
+#incbin "Dmp/LoeweMom(Levin)_mug.dmp"
+#incbin "Dmp/LoeweMom(Levin)_frames.dmp"
+#incbin "Dmp/LoeweMom(Levin)_palette.dmp"
+#incbin "Dmp/LoeweMom(Levin)_minimug.dmp"
+setMugEntry(CatrinMug, CatrinMugData, 2, 6, 3, 4)
+
+ALIGN 16
+RaschwitzMugData:
+#incbin "Dmp/Raschwitz(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Raschwitz(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Raschwitz(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Raschwitz(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(RaschwitzMug, RaschwitzMugData, 3, 5, 3, 3)
+
+ALIGN 16
+BoroMugData:
+#incbin "Dmp/Boro(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Boro(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Boro(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Boro(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(BoroMug, BoroMugData, 3, 5, 3, 3)
+
+ALIGN 16
+VargaMugData:
+#incbin "Dmp/Varga (knabepicer)_mug.dmp"
+#incbin "Dmp/Varga (knabepicer)_frames.dmp"
+#incbin "Dmp/Varga (knabepicer)_palette.dmp"
+#incbin "Dmp/Varga (knabepicer)_minimug.dmp"
+setMugEntry(VargaMug, VargaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TyrMugData:
+#incbin "Dmp/Tyr (knabepicer)_mug.dmp"
+#incbin "Dmp/Tyr (knabepicer)_frames.dmp"
+#incbin "Dmp/Tyr (knabepicer)_palette.dmp"
+#incbin "Dmp/Tyr (knabepicer)_minimug.dmp"
+setMugEntry(TyrMug, TyrMugData, 3, 4, 3, 2)
+
+ALIGN 16
+DelilahMugData:
+#incbin "Dmp/Delilah (knabepicer)_mug.dmp"
+#incbin "Dmp/Delilah (knabepicer)_frames.dmp"
+#incbin "Dmp/Delilah (knabepicer)_palette.dmp"
+#incbin "Dmp/Delilah (knabepicer)_minimug.dmp"
+setMugEntry(DelilahMug, DelilahMugData, 3, 6, 3, 4)
+
+ALIGN 16
+HernandezMugData:
+#incbin "Dmp/Hernandez(Random_Wizard)_mug.dmp"
+#incbin "Dmp/Hernandez(Random_Wizard)_frames.dmp"
+#incbin "Dmp/Hernandez(Random_Wizard)_palette.dmp"
+#incbin "Dmp/Hernandez(Random_Wizard)_minimug.dmp"
+setMugEntry(HernandezMug, HernandezMugData, 3, 5, 2, 3)
+
+
+ALIGN 16
+EmoryMugData:
+#incbin "Dmp/emory (ambrosiac)_mug.dmp"
+#incbin "Dmp/emory (ambrosiac)_frames.dmp"
+#incbin "Dmp/emory (ambrosiac)_palette.dmp"
+#incbin "Dmp/emory (ambrosiac)_minimug.dmp"
+setMugEntry(EmoryMug, EmoryMugData, 3, 6, 3, 4)
+
+ALIGN 16
+SeleseFMugData:
+#incbin "Dmp/selesef (kyrads)_mug.dmp"
+#incbin "Dmp/selesef (kyrads)_frames.dmp"
+#incbin "Dmp/selesef (kyrads)_palette.dmp"
+#incbin "Dmp/selesef (kyrads)_minimug.dmp"
+setMugEntry(SeleseFMug, SeleseFMugData, 3, 6, 3, 4)
+
+ALIGN 16
+FiloneMugData:
+#incbin "Dmp/Filone (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Filone (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Filone (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Filone (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(FiloneMug, FiloneMugData, 4, 5, 4, 3)
+
+ALIGN 16
+ZwiebackMugData:
+#incbin "Dmp/Zwieback (devvy)_mug.dmp"
+#incbin "Dmp/Zwieback (devvy)_frames.dmp"
+#incbin "Dmp/Zwieback (devvy)_palette.dmp"
+#incbin "Dmp/Zwieback (devvy)_minimug.dmp"
+setMugEntry(ZwiebackMug, ZwiebackMugData, 3, 5, 3, 3)
+
+ALIGN 16
+HilmarMugData:
+#incbin "Dmp/Hilmar(Laurent_Lacroix_mug.dmp"
+#incbin "Dmp/Hilmar(Laurent_Lacroix_frames.dmp"
+#incbin "Dmp/Hilmar(Laurent_Lacroix_palette.dmp"
+#incbin "Dmp/Hilmar(Laurent_Lacroix_minimug.dmp"
+setMugEntry(HilmarMug, HilmarMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LongxiaMugData:
+#incbin "Dmp/Longxia (Capibara)_mug.dmp"
+#incbin "Dmp/Longxia (Capibara)_frames.dmp"
+#incbin "Dmp/Longxia (Capibara)_palette.dmp"
+#incbin "Dmp/Longxia (Capibara)_minimug.dmp"
+setMugEntry(LongxiaMug, LongxiaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+FangaiMugData:
+#incbin "Dmp/Fangai (RandomWizard)_mug.dmp"
+#incbin "Dmp/Fangai (RandomWizard)_frames.dmp"
+#incbin "Dmp/Fangai (RandomWizard)_palette.dmp"
+#incbin "Dmp/Fangai (RandomWizard)_minimug.dmp"
+setMugEntry(FangaiMug, FangaiMugData, 3, 6, 3, 4)
+
+ALIGN 16
+KwameMugData:
+#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_mug.dmp"
+#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_frames.dmp"
+#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_palette.dmp"
+#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_minimug.dmp"
+setMugEntry(KwameMug, KwameMugData, 2, 5, 3, 2)
+
+ALIGN 16
+RigganMugData:
+#incbin "Dmp/Riggan_mug.dmp"
+#incbin "Dmp/Riggan_frames.dmp"
+#incbin "Dmp/Riggan_palette.dmp"
+#incbin "Dmp/Riggan_minimug.dmp"
+setMugEntry(RigganMug, RigganMugData, 2, 6, 3, 4)
+
+ALIGN 16
+GimmMugData:
+#incbin "Dmp/Gimm(Archer_Bias)_mug.dmp"
+#incbin "Dmp/Gimm(Archer_Bias)_frames.dmp"
+#incbin "Dmp/Gimm(Archer_Bias)_palette.dmp"
+#incbin "Dmp/Gimm(Archer_Bias)_minimug.dmp"
+setMugEntry(GimmMug, GimmMugData, 3, 7, 3, 5)
+
+ALIGN 16
+TobieMugData:
+#incbin "Dmp/Tobie(RandomWizard)_mug.dmp"
+#incbin "Dmp/Tobie(RandomWizard)_frames.dmp"
+#incbin "Dmp/Tobie(RandomWizard)_palette.dmp"
+#incbin "Dmp/Tobie(RandomWizard)_minimug.dmp"
+setMugEntry(TobieMug, TobieMugData, 3, 6, 3, 4)
+
+ALIGN 16
+AwaMugData:
+#incbin "Dmp/Awa(Nickt)_mug.dmp"
+#incbin "Dmp/Awa(Nickt)_frames.dmp"
+#incbin "Dmp/Awa(Nickt)_palette.dmp"
+#incbin "Dmp/Awa(Nickt)_minimug.dmp"
+setMugEntry(AwaMug, AwaMugData, 2, 5, 2, 3)
+
+ALIGN 16
+TrajanMugData:
+#incbin "Dmp/Trajan(Loog)_mug.dmp"
+#incbin "Dmp/Trajan(Loog)_frames.dmp"
+#incbin "Dmp/Trajan(Loog)_palette.dmp"
+#incbin "Dmp/Trajan(Loog)_minimug.dmp"
+setMugEntry(TrajanMug, TrajanMugData, 2, 5, 2, 3)
+
+ALIGN 16
+CadenzaMugData:
+#incbin "Dmp/Cadenza(JiroPaiPai)_mug.dmp"
+#incbin "Dmp/Cadenza(JiroPaiPai)_frames.dmp"
+#incbin "Dmp/Cadenza(JiroPaiPai)_palette.dmp"
+#incbin "Dmp/Cadenza(JiroPaiPai)_minimug.dmp"
+setMugEntry(CadenzaMug, CadenzaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+FaolanMugData:
+#incbin "Dmp/Faolan(Leche)_mug.dmp"
+#incbin "Dmp/Faolan(Leche)_frames.dmp"
+#incbin "Dmp/Faolan(Leche)_palette.dmp"
+#incbin "Dmp/Faolan(Leche)_minimug.dmp"
+setMugEntry(FaolanMug, FaolanMugData, 2, 5, 2, 3)
+
+ALIGN 16
+EliasMugData:
+#incbin "Dmp/Elias(Loog)_mug.dmp"
+#incbin "Dmp/Elias(Loog)_frames.dmp"
+#incbin "Dmp/Elias(Loog)_palette.dmp"
+#incbin "Dmp/Elias(Loog)_minimug.dmp"
+setMugEntry(EliasMug, EliasMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LeonidasMugData:
+#incbin "Dmp/Leonidas(Loog)_mug.dmp"
+#incbin "Dmp/Leonidas(Loog)_frames.dmp"
+#incbin "Dmp/Leonidas(Loog)_palette.dmp"
+#incbin "Dmp/Leonidas(Loog)_minimug.dmp"
+setMugEntry(LeonidasMug, LeonidasMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CoraliaMugData:
+#incbin "Dmp/Coralia(Loog)_mug.dmp"
+#incbin "Dmp/Coralia(Loog)_frames.dmp"
+#incbin "Dmp/Coralia(Loog)_palette.dmp"
+#incbin "Dmp/Coralia(Loog)_minimug.dmp"
+setMugEntry(CoraliaMug, CoraliaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+BuldakMugData:
+#incbin "Dmp/Buldak(RandomWizard)_mug.dmp"
+#incbin "Dmp/Buldak(RandomWizard)_frames.dmp"
+#incbin "Dmp/Buldak(RandomWizard)_palette.dmp"
+#incbin "Dmp/Buldak(RandomWizard)_minimug.dmp"
+setMugEntry(BuldakMug, BuldakMugData, 4, 6, 3, 3)
+
+ALIGN 16
+IberisMugData:
+#incbin "Dmp/Iberis(NICKT)_mug.dmp"
+#incbin "Dmp/Iberis(NICKT)_frames.dmp"
+#incbin "Dmp/Iberis(NICKT)_palette.dmp"
+#incbin "Dmp/Iberis(NICKT)_minimug.dmp"
+setMugEntry(IberisMug, IberisMugData, 2, 6, 3, 3)
+
+ALIGN 16
+EponyMugData:
+#incbin "Dmp/Epony(RisingSolaris)_mug.dmp"
+#incbin "Dmp/Epony(RisingSolaris)_frames.dmp"
+#incbin "Dmp/Epony(RisingSolaris)_palette.dmp"
+#incbin "Dmp/Epony(RisingSolaris)_minimug.dmp"
+setMugEntry(EponyMug, EponyMugData, 4, 6, 3, 3)
+
+ALIGN 16
+MifanMugData:
+#incbin "Dmp/Mifan(MK404,Flasuban)_mug.dmp"
+#incbin "Dmp/Mifan(MK404,Flasuban)_frames.dmp"
+#incbin "Dmp/Mifan(MK404,Flasuban)_palette.dmp"
+#incbin "Dmp/Mifan(MK404,Flasuban)_minimug.dmp"
+setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 3)
+
+ALIGN 16
+RadnitzMugData:
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_mug.dmp"
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_frames.dmp"
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_palette.dmp"
+#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_minimug.dmp"
+setMugEntry(RadnitzMug, RadnitzMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TheGiantMugData:
+#incbin "Dmp/TheGiant(Capibraininspace)_mug.dmp"
+#incbin "Dmp/TheGiant(Capibraininspace)_frames.dmp"
+#incbin "Dmp/TheGiant(Capibraininspace)_palette.dmp"
+#incbin "Dmp/TheGiant(Capibraininspace)_minimug.dmp"
+setMugEntry(TheGiantMug, TheGiantMugData, 2, 4, 3, 3)
+
+ALIGN 16
+WellworthMugData:
+#incbin "Dmp/Wellworth(NICKT)_mug.dmp"
+#incbin "Dmp/Wellworth(NICKT)_frames.dmp"
+#incbin "Dmp/Wellworth(NICKT)_palette.dmp"
+#incbin "Dmp/Wellworth(NICKT)_minimug.dmp"
+setMugEntry(WellworthMug, WellworthMugData, 3, 5, 3, 3)
+
+ALIGN 16
+YorMugData:
+#incbin "Dmp/Yor(RandomWizard)_mug.dmp"
+#incbin "Dmp/Yor(RandomWizard)_frames.dmp"
+#incbin "Dmp/Yor(RandomWizard)_palette.dmp"
+#incbin "Dmp/Yor(RandomWizard)_minimug.dmp"
+setMugEntry(YorMug, YorMugData, 3, 5, 3, 3)
+
+ALIGN 16
+NoraMugData:
+#incbin "Dmp/Nora(RandomWizard)_mug.dmp"
+#incbin "Dmp/Nora(RandomWizard)_frames.dmp"
+#incbin "Dmp/Nora(RandomWizard)_palette.dmp"
+#incbin "Dmp/Nora(RandomWizard)_minimug.dmp"
+setMugEntry(NoraMug, NoraMugData, 3, 5, 3, 3)
+
+ALIGN 16
+HansMugData:
+#incbin "Dmp/Hans(Zelkami)_mug.dmp"
+#incbin "Dmp/Hans(Zelkami)_frames.dmp"
+#incbin "Dmp/Hans(Zelkami)_palette.dmp"
+#incbin "Dmp/Hans(Zelkami)_minimug.dmp"
+setMugEntry(EdvinMug, EdvinMugData, 3, 5, 3, 3)
+
+ALIGN 16
+HegeMugData:
+#incbin "Dmp/Hege(RandomWizard)_mug.dmp"
+#incbin "Dmp/Hege(RandomWizard)_frames.dmp"
+#incbin "Dmp/Hege(RandomWizard)_palette.dmp"
+#incbin "Dmp/Hege(RandomWizard)_minimug.dmp"
+setMugEntry(HegeMug, HegeMugData, 3, 6, 3, 4)
+
+
+
