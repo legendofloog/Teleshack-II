@@ -1,4 +1,4 @@
-#include "gbafe.h"
+#include "FE-CLib-master/include/gbafe.h"
 
 #include "Core.c" // Global equipment functions
 #include "Skills.c" // Equipment skills

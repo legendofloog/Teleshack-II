@@ -17,7 +17,7 @@ int GetUnitMovement(Unit* unit);
 int GetUnitConstitution(Unit* unit);
 
 extern bool(*gSkillTester)(Unit* unit, int skillID);
-
+extern u8 FixedGrowthsFlagIDLink;
 extern int (*gGetHPGrowth)(Unit* unit);
 extern int (*gGetStrGrowth)(Unit* unit);
 extern int (*gGetMagGrowth)(Unit* unit);

@@ -3,7 +3,6 @@
 #include "Dismount/Installer.event"
 #include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
 #include "RescueChanges/RescueChangesEvent.event"
-//#include "ExtraGrowths/Installer.event" // merged with equip
 #include "MoveStars/Installer.event"
 #include "Support/Installer.event"
 #include "PCC/Installer.event"

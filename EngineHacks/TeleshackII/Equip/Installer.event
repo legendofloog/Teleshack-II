@@ -154,6 +154,12 @@ POIN Get_Mag_Growth|1
 //SynchronizeIDLink:
 //BYTE SynchronizeID
 
+//FixedGrowthsIsTrueLink:
+
+
+FixedGrowthsFlagIDLink:
+BYTE FIXED_GROWTHS_FLAG_ID
+
 ALIGN 4
 CharacterMovGrowthTable:
 #include "CharacterMovGrowthTable.event"
