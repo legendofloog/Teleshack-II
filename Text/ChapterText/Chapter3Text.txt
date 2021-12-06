@@ -1,5 +1,5 @@
 ## Chapter3Title
-Ch3: Pursuit[X]
+Ch3: Pursuit
 
 ## BeginningSceneTextA
 
@@ -38,7 +38,7 @@ Varga, where-[A]
 Follow me.[....] It's this way.[A][CloseSpeechSlow]
 [MoveFarFarRight]
 [Right]
-[CloseEyes][Beat][A][X]
+[CloseEyes][Beat][A]
 
 ## BeginningSceneTextB
 
@@ -74,7 +74,7 @@ want everyone to escape. Of course[N]
 that should be no trouble for us.[A]
 [FarRight][TwoLineBox]
 Alright then, if theres no[N]
-objections, lets move.[A][X]
+objections, lets move.[A]
 
 ## BeginningSceneTextC
 [MidLeft][LoadDragana][OneLineBox]
@@ -86,7 +86,7 @@ Drat! The Liberators! Men, to[N]
 arms! Let's quash this rebel scum[N]
 where our compatriots couldn't![A]
 [MidLeft][OneLineBox]
-Yes captain![A][X]
+Yes captain![A]
 
 ## ReinforcementText
 
@@ -109,7 +109,7 @@ Don't let his sacrifice be in[N]
 vain, we have to push forward[N]
 before they catch up to us.[A]
 [Right][OneLineBox]
-[Beat]Of course General.[A][X]
+[Beat]Of course General.[A]
 
 ## AlexAxelFreedText
 [MidLeft][LoadMira][Right][LoadAlex][FarRight][LoadAxel]
@@ -168,17 +168,17 @@ do best, let's move![A]
 Aye aye cap'n![A]
 [FarRight]
 [MoveFarRight]
-Sure thing boss![A][X]
+Sure thing boss![A]
 
 ## DraganaDeathResponseText
 [MidLeft][LoadLoewe]
 No! General you can't![N]
-We won't leave you here![A][X]
+We won't leave you here![A]
 
 ## MapEndText
 [MidRight][LoadLoewe][TwoLineBox]
 Alright, we're free! Let's[N]
-move, not much further now![A][X]
+move, not much further now![A]
 
 ## EndingSceneTextA1
 
@@ -192,7 +192,7 @@ exit is just ahead![A]
 [FarFarLeft][OneLineBox]
 You're not out of the woods yet.[A]
 [FarLeft]
-[Beat]![A][X]
+[Beat]![A]
 
 ## EndingSceneTextA2
 [FarFarLeft][LoadCidor][Right][LoadMira][FarRight][LoadDragana]
@@ -233,7 +233,7 @@ here. Your 'liberation'[N]
 shall fall with you![A]
 [FarRight]
 Pah, like I'd fall to a[N]
-traitorous swine like you![A][X]
+traitorous swine like you![A]
 
 ## EndingSceneTextA3
 [MidLeft][LoadCidor][CloseEyes][MidRight][LoadDragana]
@@ -285,7 +285,7 @@ Kasun[Beat][A]
 [MidRight]
 Mira[Beat][CloseEyes][A][CloseSpeechSlow]
 [MidLeft][MoveFarFarRight][ClearFace]
-[X]
+
 
 ## EndingSceneTextA4
 [MidLeft][LoadCidor][MidRight][LoadSeleseF]
@@ -302,4 +302,4 @@ blasted 'Liberation' will fall as well.[A]
 Of course, my lord![A]
 [MidLeft]
 Now[Beat] Find me a healer,[N]
-[CloseEyes][....]I need some time to think[Beat][A][X]
+[CloseEyes][....]I need some time to think[Beat][A]

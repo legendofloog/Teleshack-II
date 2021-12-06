@@ -17,7 +17,7 @@ set "target_sym=%~dp0TeleshackII.sym"
 @rem defining tools
 
 set "c2ea=%~dp0Tools\C2EA\c2ea"
-set "textprocess=%~dp0Tools\TextProcess\text-process-classic"
+set "textprocess=%~dp0Tools\TextProcess\TextProcess.exe"
 set "ups=%~dp0Tools\ups\ups"
 set "parsefile=%~dp0EventAssembler\Tools\ParseFile.exe"
 set "tmx2ea=%~dp0Tools\tmx2ea\tmx2ea"
@@ -46,8 +46,7 @@ if /I not [%1]==[quick] (
   echo:
   echo Processing text
 
-  cd "%base_dir%Text"
-  echo: | ("%textprocess%" text_buildfile.txt --parser-exe "%parsefile%" --installer "InstallTextData.event" --definitions "TextDefinitions.event")
+  echo: | ("%textprocess%" Text/text_buildfile.txt Text/InstallTextData.event --narrow-mapping Text/narrow_mapping.csv --rom ref.gba --portraits Graphics/Portraits/PortraitInstaller.event)
 
   echo:
   echo Processing maps

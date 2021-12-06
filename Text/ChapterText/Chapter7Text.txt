@@ -1,12 +1,12 @@
 ## Chapter7Title
-Ch7: Joe Mama[X]
+Ch7: Joe Mama
 
 ## Chapter7Obj
 Seize throne and talk[N]
-to Radnitz with lords.[X]
+to Radnitz with lords.
 
 ## Chapter7MapObj
-Seize + Talk[X]
+Seize + Talk
 
 ## AxelTalkCh7Text
 [MidRight][LoadLoeweKid]
@@ -14,7 +14,7 @@ Seize + Talk[X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## AlexTalkCh7Text
 [MidRight][LoadLoeweKid]
@@ -22,7 +22,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## LoeweEndCh7Text
 [MidRight][LoadLoeweKid]
@@ -30,7 +30,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## CleoEndCh7Text
 [MidRight][LoadLoeweKid]
@@ -38,7 +38,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## CleoThroneCh7Text
 [MidRight][LoadLoeweKid]
@@ -46,7 +46,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## RecruitCh7Text
 [MidRight][LoadLoeweKid]
@@ -54,7 +54,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## VillageCh7Text
 [MidRight][LoadLoeweKid]
@@ -62,10 +62,10 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## SupplyCh7Text
-Rice supplies secured.[A][X]
+Rice supplies secured.[A]
 
 ## Rice0Ch7Text
 [MidRight][LoadLoeweKid]
@@ -73,7 +73,7 @@ Rice supplies secured.[A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## Rice1Ch7Text
 [MidRight][LoadLoeweKid]
@@ -81,7 +81,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## Rice2Ch7Text
 [MidRight][LoadLoeweKid]
@@ -89,7 +89,7 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]
 
 ## Rice3Ch7Text
 [MidRight][LoadLoeweKid]
@@ -97,4 +97,4 @@ beat me in hide and seek![A][X]
 [FarLeft][LoadYoungGirlVillager]
 [MidRight]
 Ha! I win again. No one can[N]
-beat me in hide and seek![A][X]
+beat me in hide and seek![A]

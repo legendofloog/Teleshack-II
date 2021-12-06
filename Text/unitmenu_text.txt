@@ -1,176 +1,176 @@
 ## UM_Rally
- Rally[X]
+ Rally
 
 ## UM_RallyDesc
-Buff nearby allies.[X]
+Buff nearby allies.
 
 ## UM_Lunge
- Lunge[X]
+ Lunge
 
 ## UM_LungeDesc
 Switch places with opponent[N]
 after combat.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 ## UM_Mercy
- Mercy[X]
+ Mercy
 
 ## UM_MercyDesc
 Leave opponent with[N]
 at least 1 HP.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 ## UM_Gamble
- Gamble[X]
+ Gamble
 
 ## UM_GambleDesc
 2x crit rate, 0.5x hit rate.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 
 ## UMText_DV
- Dragon Vein[X]
+ Dragon Vein
 
 ## UMText_DVDesc
-Use the power of dragons.[X]
+Use the power of dragons.
 
 ## UM_Shove
- Shove[X]
+ Shove
 
 ## UM_ShoveDesc
 Push an adjacent unit one[N]
-tile away.[X]
+tile away.
 
 ## UM_Smite
- Smite[X]
+ Smite
 
 ## UM_SmiteDesc
 Push an adjacent unit two[N]
-tiles away.[X]
+tiles away.
 
 ## UM_Pivot
- Pivot[X]
+ Pivot
 
 ## UM_PivotDesc
 Move to opposite side of[N]
-an adjacent ally.[X]
+an adjacent ally.
 
 ## UM_Reposition
- Reposition[X]
+ Reposition
 
 ## UM_RepositionDesc
 Move adjacent ally to this[N]
-unit's opposite side.[X]
+unit's opposite side.
 
 ## UM_Swap
- Swap[X]
+ Swap
 
 ## UM_SwapDesc
 Swap positions with adjacent[N]
-ally.[X]
+ally.
 
 ## UM_Capture
- Capture[X]
+ Capture
 
 ## UM_CaptureDesc
 Strike a fatal blow with reduced[N]
-stats to capture an enemy.[X]
+stats to capture an enemy.
 
 ## UM_EditSkill
- Edit Skills[X]
+ Edit Skills
 
 ## UM_EditSkillDesc
-DEBUG: Edit this unit's skill set.[X]
+DEBUG: Edit this unit's skill set.
 
 ## UM_CombatArts
- Combat Arts[X]
+ Combat Arts
  
 ## UM_CombatArtsDesc
-Select an alternative attack.[X]
+Select an alternative attack.
 
 ## UM_Adept
- Adept[X]
+ Adept
  
 ## UM_AdeptDesc
 Gain a consecutive attack.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 ## UM_Aether
- Aether[X]
+ Aether
  
 ## UM_AetherDesc
 First strike absorbs HP,[N]
 second strike negates defenses.[N]
-(4 Durability Per Hit)[X]
+(4 Durability Per Hit)
 
 ## UM_Astra
- Astra[X]
+ Astra
  
 ## UM_AstraDesc
 5 attacks at half damage.[N]
-(1 Durability Per Hit)[X]
+(1 Durability Per Hit)
 
 ## UM_DragonFang
- Dragon Fang[X]
+ Dragon Fang
  
 ## UM_DragonFangDesc
 1.5x damage.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 ## UM_Glacies
- Glacies[X]
+ Glacies
 
 ## UM_GlaciesDesc
 Add unit's Resistance to damage[N]
-dealt. (3 Durability Per Hit)[X]
+dealt. (3 Durability Per Hit)
 
 ## UM_Ignis
- Ignis[X]
+ Ignis
  
 ## UM_IgnisDesc
 Add Def/2 and Res/2[N]
 to damage dealt.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
  
 ## UM_Luna
- Luna[X]
+ Luna
  
 ## UM_LunaDesc
 Negates enemy defenses.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 ## UM_Sol
- Sol[X]
+ Sol
  
 ## UM_SolDesc
 Restore damage dealt as HP.[N]
-(3 Durability Per Hit)[X]
+(3 Durability Per Hit)
 
 ## UM_SureShot
- Sure Shot[X]
+ Sure Shot
  
 ## UM_SureShotDesc
 A precision attack that always[N]
 hits and does 1.5x damage.[N]
-(4 Durability Per Hit)[X]
+(4 Durability Per Hit)
 
 ## UM_Swarp
- Swarp[X]
+ Swarp
 
 ## UM_SwarpDesc
 Swap positions with a distant[N]
-ally.[X]
+ally.
 
 ## UM_COPower
- C.O Power[X]
+ C.O Power
 
 ## UM_COPowerDesc
-Activate a C.O power.[X]
+Activate a C.O power.
 
 ## UM_VictoryMarch
- Victory March[X]
+ Victory March
 
 ## UM_VictoryMarchDesc
 Raise movement of infantry[N]
-units by 2 points.[X]
+units by 2 points.
 
