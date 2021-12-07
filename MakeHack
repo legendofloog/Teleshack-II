@@ -2,7 +2,7 @@
 cd $(dirname "$0")
 cp FE8_clean.gba TeleshackII.gba
 wine Tools/C2EA/c2ea.exe FE8_clean.gba -installer Tables/TableInstaller.event 1> /dev/null 2> /dev/null 
-./Tools/TextProcess/TextProcess Text/text_buildfile.txt Text/InstallTextData.event --narrow-mapping Text/narrow_mapping.csv --rom ref.gba --portraits Graphics/Portraits/PortraitInstaller.event 
+./Tools/TextProcess/TextProcess Text/text_buildfile.txt Text/InstallTextData.event --narrow-mapping Text/narrow_mapping.csv --portraits Graphics/Portraits/PortraitInstaller.event 
 cd ./Maps
 python3 ../Tools/tmx2ea-master/tmx2ea.py -s MasterMapInstaller.event
 cd ..

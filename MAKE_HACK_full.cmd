@@ -46,7 +46,7 @@ if /I not [%1]==[quick] (
   echo:
   echo Processing text
 
-  echo: | ("%textprocess%" Text/text_buildfile.txt Text/InstallTextData.event --narrow-mapping Text/narrow_mapping.csv --rom ref.gba --portraits Graphics/Portraits/PortraitInstaller.event)
+  echo: | ("%textprocess%" Text/text_buildfile.txt Text/InstallTextData.event --narrow-mapping Text/narrow_mapping.csv --portraits Graphics/Portraits/PortraitInstaller.event)
 
   echo:
   echo Processing maps
