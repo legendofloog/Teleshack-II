@@ -46,6 +46,7 @@ if /I not [%1]==[quick] (
   echo:
   echo Processing text
 
+  cd "%base_dir%"
   echo: | ("%textprocess%" Text/text_buildfile.txt Text/InstallTextData.event --narrow-mapping Text/narrow_mapping.csv --portraits Graphics/Portraits/PortraitInstaller.event)
 
   echo:
