@@ -1,17 +1,17 @@
 ## Chapter4Title
-Ch4: Daybreak[X]
+Ch4: Daybreak
 
 ## DefeatBossDefendObj
-[_D]ft. [_B][_o][_s][_s]/[_D][_e]f[_e][_n][_d][X]
+[_D]ft. [_B][_o][_s][_s]/[_D][_e]f[_e][_n][_d]
 
 ## Ch4DefeatBossDesc
 Defend for 9 turns or[N]
-defeat Hilmar[X]
+defeat Hilmar
 
 ## HilmarBossQ
 [OpenMidLeft][LoadHilmar]
 The serpent's head is off.[N]
-The rest of you die here.[A][X]
+The rest of you die here.[A]
 
 ## HilmarLoeweBossQ
 [OpenMidLeft][LoadHilmar]
@@ -23,7 +23,7 @@ use of your final words.[AN]
 [OpenMidLeft]Oho! Does the rogue think[N]
 his arrows can dent my armor?[AN][ClearFace]
 [OpenMidRight]This is your comeuppance.[N]
-For the fallen![A][X]
+For the fallen![A]
 
 ## HilmarCleoBossQ
 [OpenMidRight][LoadCleo]
@@ -31,7 +31,7 @@ Stand aside, knight[N]
 of Selese.[AN][ClearFace]
 [OpenMidLeft][LoadHilmar]
 You will never have your[N]
-vengeance, rebel.[A][X]
+vengeance, rebel.[A]
 
 ## HilmarFiloneBossQ
 [OpenMidRight][LoadFilone]
@@ -43,20 +43,20 @@ the tremble in your voice.[AN]
 Lord Cidor's wishes are not[N]
 for me to question.[AN]
 Do not challenge[N]
-me again.[A][X]
+me again.[A]
 
 ## HilmarDeathQ
 [OpenMidLeft][LoadHilmar]
 This is[Beat] it?[N]
-Where's the[Beat] glory[Beat]?[A][CloseEyes][X]
+Where's the[Beat] glory[Beat]?[A][CloseEyes]
 
 ## Placeholder1
 [OpenMidLeft][LoadLoewe]
-Placeholder dialogue 1![A][X]
+Placeholder dialogue 1![A]
 
 ## Placeholder2
 [OpenMidRight][LoadLoewe]
-Placeholder dialogue 2![A][X]
+Placeholder dialogue 2![A]
 
 ## Ch4Intro1
 [MidLeft][LoadHilmar][MidRight][LoadCidor]
@@ -79,7 +79,7 @@ Bring out the ballistae.[N]
 Ground them.[AN]
 [MidLeft][Beat][N]
 [Beat]Understood, sir Cidor.[N]
-We won't disappoint you.[A][X]
+We won't disappoint you.[A]
 
 ## Ch4Intro2
 [FarLeft][LoadCleo][Left][LoadMira][MidRight][LoadLoewe]
@@ -104,7 +104,7 @@ a stray arrow?[AN]
 Never seen an arrow[N]
 like it.[AN]
 [FarFarLeft]Look who decided to[N]
-show up![A][X]
+show up![A]
 
 ## Ch4IntroAlt2
 [MidLeft][LoadCleo][MidRight][LoadLoewe]
@@ -129,7 +129,7 @@ It looks like a stray arrow.[AN]
 I've never seen an arrow[N]
 like it.[AN]
 [FarFarLeft]Look who decided to[N]
-show up![A][X]
+show up![A]
 
 ## Ch4Intro3
 [FarLeft][LoadFilone][Left][LoadZwieback][Right][LoadLoewe][FarRight][LoadMira]
@@ -150,7 +150,7 @@ let's move.[AN]
 [FarRight][Beat][AN][Event]
 [Right]Mira?[AN]
 [FarRight]Everyone, we were being[N]
-trailed[Beat]![A][X]
+trailed[Beat]![A]
 
 ## Ch4IntroAlt3
 [FarLeft][LoadFilone][Left][LoadZwieback][Right][LoadLoewe][FarRight][LoadCleo]
@@ -178,7 +178,7 @@ let's move.[AN]
 [FarRight][Beat]What is that noise?[AN][Event]
 [Right]What noise?[AN]
 [FarRight]Uh-oh. Everybody, hostiles[N]
-are approaching![A][X]
+are approaching![A]
 
 ## Ch4Intro4
 [FarLeft][LoadFilone][Left][LoadZwieback][Right][LoadCleo][FarRight][LoadLoewe]
@@ -211,7 +211,7 @@ Filone.[AN]
 [Right]Today will be a victory for[N]
 the Decian Liberators.[AN]
 Come, let's greet[N]
-our guests![A][X]
+our guests![A]
 
 ## Ch4WarningText
 [MidLeft][LoadHilmar]
@@ -220,14 +220,14 @@ start firing![AN]
 If we want the gold and glory[N]
 from House Freyse,[AN]
 [MoveMidLeft]this is our[N]
-only chance![A][X]
+only chance![A]
 
 ## Ch4WarningText2
 [FarRight][LoadLoewe]
 Dragana[Beat] [CloseEyes]I'm sorry it's[N]
 come to this.[AN][OpenEyes]
 The arrow is calling; you will[N]
-be avenged.[A][X]
+be avenged.[A]
 
 ## Ch4EndingDefeatBoss1
 [MidRight][LoadLoewe]
@@ -239,7 +239,7 @@ Cidor is one step closer. A step[N]
 towards the dastard's demise.[AN]
 Every sacrifice brings us[N]
 closer to vengeance.[AN]
-[FarFarLeft]Loewe?[A][X]
+[FarFarLeft]Loewe?[A]
 
 ## Ch4EndingDefend1
 [MidRight][LoadLoewe]They're retreating[Beat]?[N]
@@ -250,7 +250,7 @@ Not out of the woods yet[Beat][N]
 [CloseEyes]They aren't out of the woods yet[Beat][AN]
 She wants us to avenge her[Beat][N]
 I will avenge her.[AN]
-[FarFarLeft]Loewe?[A][OpenMidRight][OpenEyes][X]
+[FarFarLeft]Loewe?[A][OpenMidRight][OpenEyes]
 
 ## Ch4Ending2
 [MidLeft][LoadCleo][MidRight][LoadLoewe]
@@ -269,7 +269,7 @@ any more enemies.[AN]
 [MidRight][ToggleSmile]More enemies[Beat]? [ToggleSmile]Why,[N]
 yes, of course.[AN]
 I'll scout ahead at[N]
-once, Cleo.[AN][ClearFace][.6][X]
+once, Cleo.[AN][ClearFace][.6]
 
 ## Ch4Ending3
 [MidLeft][LoadCidor][Right][LoadSoldier][FarRight][LoadSoldier]
@@ -284,4 +284,4 @@ If we can gain forces from[N]
 the Cytheans,[AN]
 This rebellion will be[N]
 stomped.[AN]
-[FarRight]Yes, sir![A][X]
+[FarRight]Yes, sir![A]

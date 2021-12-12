@@ -1,5 +1,5 @@
 ## Chapter1Title
-Ch1: A Fleeting Hope[X]
+Ch1: A Fleeting Hope
 
 ## Ch1KidLoeweTalksToFriendsText
 [MidRight][LoadLoeweKid]
@@ -20,10 +20,10 @@ tomorrow. Right here, same as always.[A]
 [FarLeft][OneLineBox]
 Right![A]
 [Left]
-See ya![A][X]
+See ya![A]
 
 ## Ch1OneYearLater
-One year later...[A][X]
+One year later...[A]
 
 ## BeginningSceneLoeweFlashbackText
 [MidRight][LoadLoeweKid]
@@ -65,7 +65,7 @@ A-Apple pie?! Alright,[N]
 I won't hold anything back![A]
 [MidLeft]
 Ha, that's the spirit.[N]
-Let's see what you've got![A][X]
+Let's see what you've got![A]
 
 
 ## BeginningSceneLoeweFlashback2Text
@@ -157,25 +157,25 @@ carry? I can hold on to it for now.[A]
 No, that's fine. Keeping it safe[N]
 is up to me now. Let's just go.[A]
 [MidLeft][OneLineBox]
-[Beat]Right. Follow me, then.[A][X]
+[Beat]Right. Follow me, then.[A]
 
 ## Ch1SvetomirPesteringLoeweText1
 [SetName]??? [NL]
-Hey, you awake?[A][X]
+Hey, you awake?[A]
 
 ## Ch1SvetomirPesteringLoeweText2
 [SetName]Loewe [NL]
-(Huh[Beat] who's that?)[A][X]
+(Huh[Beat] who's that?)[A]
 
 ## Ch1SvetomirPesteringLoeweText3
 [SetName]??? [NL]
 Helloooo? Loewe, yeah?[AN]
-You alright, friend?[A][X]
+You alright, friend?[A]
 
 ## Ch1SvetomirPesteringLoeweText4
 [SetName]Loewe [NL]
 (Sounds annoying[Beat][AN]
-Maybe I'll just-)[A][X]
+Maybe I'll just-)[A]
 
 
 ## BeginningSceneLoeweGroupText
@@ -213,7 +213,7 @@ get ready to escape if you want[N]
 to live to see tomorrow, priest.[A]
 [MidLeft][TwoLineBox]
 Heh, you don't have to tell me[N]
-twice. I'm ready when you are![A][X]
+twice. I'm ready when you are![A]
 
 
 
@@ -274,7 +274,7 @@ Right. All of our hopes are riding on[N]
 this mission, so there's no going back.[A]
 [Right]
 I will do my utmost to match your[N]
-expectations. Let us begin the operation![A][X]
+expectations. Let us begin the operation![A]
 
 
 
@@ -298,7 +298,7 @@ Like I give a damn about that[Beat] Once[N]
 I find Svet, we'll break out of here[N]
 and leave that to fools like you two.[AN]
 Though I suppose Cidor will hunt me[N]
-down after that[Beat] what a nuisance.[A][X]
+down after that[Beat] what a nuisance.[A]
 
 
 ## BoroSpawnText
@@ -313,7 +313,7 @@ Well, I'm not one of them anymore,[N]
 so I don't need to hold back.[N]
 Can't say I want to kill old comrades,[AN]
 but if any of them meet my spear, then[N]
-they can only blame their misfortune![A][X]
+they can only blame their misfortune![A]
 
 
 
@@ -400,7 +400,7 @@ Yeah, yeah, get moving. We've[N]
 wasted enough time talking, Iskra.[A][CloseSpeechSlow][ClearFace]
 [MidLeft]
 Coarse as ever[Beat] I hope he's a[N]
-bit nicer as a teacher, at least.[A][X]
+bit nicer as a teacher, at least.[A]
 
 
 
@@ -483,7 +483,7 @@ Maybe we can talk some other time![A][CloseSpeechSlow][ClearFace]
 [MidLeft][ThreeLineBox]
 Argymos[Beat] So Emil met my brother?[N]
 If I continue on this path, then[N]
-I may have to see him again soon[Beat][A][X]
+I may have to see him again soon[Beat][A]
 
 ## SvetomirAlenaTalkCh1Text
 [MidLeft][LoadAlena]
@@ -543,7 +543,7 @@ Well then, milady, after you.[A]
 [MidLeft][ThreeLineBox]
 Still hiding behind me, eh Svet?[N]
 I guess some things don't change[Beat][N]
-Fine then. I'll carve a path for you![A][X]
+Fine then. I'll carve a path for you![A]
 
 
 ## LoeweSvetomirFreedText
@@ -628,7 +628,7 @@ I wouldn't dream of it![A]
 Then I'll give you this staff.[N]
 Put it to good use, Svetomir.[A]
 [FarRight][OneLineBox]
-Of course. You can count on me![A][X]
+Of course. You can count on me![A]
 
 
 ## SennyFreedText
@@ -642,7 +642,7 @@ Why did I think that was a good idea?[AN]
 Anyway, I'd better leave before the[N]
 guards catch up. If we meet again,[N]
 I'll thank you properly, alright?[AN]
-Okay, I'd better get moving. Stay safe![A][X]
+Okay, I'd better get moving. Stay safe![A]
 
 ## HelmanFreedText
 [MidRight][LoadHelman][ThreeLineBox]
@@ -655,7 +655,7 @@ Cythean Empire deserves only scorn.[AN]
 Oh, you agree? Well, if you ever find[N]
 yourself in Vetheim, some of my family[N]
 live there. Tell 'em Helman sent you,[AN]
-and they may just help you out.[A][X]
+and they may just help you out.[A]
 
 ## RaschwitzLoeweBattleQuoteText
 [MidLeft][LoadRaschwitz]
@@ -673,7 +673,7 @@ angry[Beat] We can talk this out.[A][CloseSpeechSlow][ClearFace]
 I've had enough of that smug[N]
 face of yours[Beat] Get ready,[AN]
 because I'm about to repay[N]
-you ten times over, traitor![A][X]
+you ten times over, traitor![A]
 
 ## RaschwitzAlenaBattleQuoteText
 [MidLeft][LoadRaschwitz]
@@ -689,7 +689,7 @@ Y-You reprobate! This is why[N]
 you can't trust a sellsword![A][CloseSpeechSlow][ClearFace]
 [MidRight][LoadAlena]
 Enough talk. Let's see if[N]
-that armor can withstand me![A][X]
+that armor can withstand me![A]
 
 ## RaschwitzWarningBoroText
 [MidLeft][LoadRaschwitz]
@@ -707,7 +707,7 @@ I have until he does, sir![A][CloseSpeechSlow][ClearFace]
 [MidLeft]
 You go ahead and do that. Your[N]
 sacrifice won't be forgotten, uh...[AN]
-What was his name again? I forget.[A][X]
+What was his name again? I forget.[A]
 
 
 ## RaschwitzGenericBattleQuoteText
@@ -719,12 +719,12 @@ Raschwitz, a true scourge![AN]
 [Beat] You're still here?[N]
 I-I see[Beat] Fine, then.[AN]
 Perhaps my baleful arrows will[N]
-strike some fear into you![A][X]
+strike some fear into you![A]
 
 ## RaschwitzDeathQuoteText
 [MidLeft][LoadRaschwitz]
 N-No[Beat] I wasn't supposed to die[N]
-here. Duke Cidor, I'm sorry[Beat][A][X]
+here. Duke Cidor, I'm sorry[Beat][A]
 
 ## EndingSceneTextLoeweAndCleo
 [MidLeft][LoadLoewe]
@@ -755,7 +755,7 @@ Oh, nothing. We should start moving[N]
 before our enemies continue their[N]
 pursuit. General Dragana awaits us.[A]
 [MidLeft][OneLineBox]
-[Beat]Right. Let's keep moving.[A][X]
+[Beat]Right. Let's keep moving.[A]
 
 ## EndingSceneTextBoro
 [MidRight][LoadBoro][ThreeLineBox]
@@ -767,7 +767,7 @@ chance of success is so low? Curious.[N]
 I'll just follow them for now.[AN]
 There's no need to rush bringing[N]
 their heads back to that arrogant[N]
-duke. He can wait a bit longer.[A][X]
+duke. He can wait a bit longer.[A]
 
 ## EndingSceneTextDraganaAndCidor
 [MidLeft][LoadCidor]
@@ -855,5 +855,5 @@ At the very least, Mira should be safe,[N]
 and some of us escaped their ambush.[AN]
 [Beat]I hope Loewe and Cleo are alright,[N]
 at least. If they keep living, then[N]
-I'm certain that we still have hope.[A][X]
+I'm certain that we still have hope.[A]
 

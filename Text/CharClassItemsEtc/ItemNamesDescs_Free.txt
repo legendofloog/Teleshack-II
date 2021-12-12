@@ -1,216 +1,217 @@
-## KingSwordDesc
-Doubles attacks grants Charisma.[X]
+#W KingSwordDesc
+Doubles attacks grants Charisma.
 
-## FlameSwordDesc
-Casts magical flame. Mag +5.[X]
+#W FlameSwordDesc
+Casts magical flame. Mag +5.
 
-## ParagonSwordDesc
-Doubles EXP gained. Def +5.[X]
+#W ParagonSwordDesc
+Doubles EXP gained. Def +5.
 
-## ThunderSwordDesc
-Casts magical thunder. Skl +5.[X]
+#W ThunderSwordDesc
+Casts magical thunder. Skl +5.
 
-## WindSwordDesc
-Casts magical wind. Spd +5.[X]
+#W WindSwordDesc
+Casts magical wind. Spd +5.
 
-## SleepSwordDesc
-Puts enemies to sleep if it hits.[X]
+#W SleepSwordDesc
+Puts enemies to sleep if it hits.
 
-## BerserkSwordDesc
-Drives enemies mad if it hits.[X]
+#W BerserkSwordDesc
+Drives enemies mad if it hits.
 
-## WindName
-Wind[X]
+#I WindName
+Wind
 
-## BlizzardDesc
-Long-range storm. Puts enemy to sleep.[X]
+#W BlizzardDesc
+Long-range storm. Puts enemy to sleep.
 
-## FenrirDesc
-Casts long-range shadows.[X]
+#W FenrirDesc
+Casts long-range shadows.
 
-## HelName
-Hel[X]
+#I HelName
+Hel
 
-## MeteorName
-Meteor[X]
+#I MeteorName
+Meteor
 
-## MeteorDesc
-Casts long-range flames.[X]
+#W MeteorDesc
+Casts long-range flames.
 
-## ShortSwordName
-Short Sword[X]
+#I ShortSwordName
+Short Sword
 
-## GaleBowName
-Gale Bow[X]
+#I GaleBowName
+Gale Bow
 
-## GaleBowDesc
-Long-range magic bow of the winds.[X]
+#W GaleBowDesc
+Long-range magic bow of the winds.
 
-## SlimAxeName
-Slim Axe[X]
+#I SlimAxeName
+Slim Axe
 
-## SlimAxeDesc
-A lightweight axe.[X]
+#W SlimAxeDesc
+A lightweight axe.
 
-## ClaymoreName
-Claymore[X]
+#I ClaymoreName
+Claymore
 
-## ClaymoreDesc
-A high quality blade.[X]
+#W ClaymoreDesc
+A high quality blade.
 
-## MarksmanBowName
-[_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
+#I MarksmanBowName
+Marksman Bow
 
-## MarksmanBowDesc
-A bow with exceptional range.[X]
+#W MarksmanBowDesc
+A bow with exceptional range.
 
-## BeiyrScrollName
-Beiyr Scroll[X]
+#I BeiyrScrollName
+Beiyr Scroll
 
-## BeiyrScrollDesc
-+10% Str +10% Skl +10% Lck.[X]
+#D BeiyrScrollDesc
++10% Str +10% Skl +10% Lck.
 
-## TemperedName
-[_T][_e]m[_p][_e][_r][_e][_d][_sp][_R]i[_n][_g][X]
+#I TemperedName
+Tempered Ring
 
-## TemperedDesc
+#D TemperedDesc
 A ring that lets its wearer[N]
-restore 4 HP after combat.[X]
+restore 4 HP after combat.
 
-## SlimArchName
-Slim Arch[X]
+#I SlimArchName
+Slim Arch
 
-## BlankDesc
-[X]
+#D BlankDesc
+[.]
 
-## DullahanName
-Dullahan[X]
+#I DullahanName
+Dullahan
 
-## DullahanDesc
-[LockIcon][_C][_r][_o][_m][_a][_r][_.][_SP][_R][_e][_v][_i][_v][_e][_s][_SP][_u][_s][_e][_r][_SP][_u][_p][_o][_n][_SP][_d][_e][_f][_e][_a][_t][_.][X]
+#W DullahanDesc
+[LockIcon]Cromar. Revives user upon defeat.
 
-## CounterBowName
-Counter Bow[X]
+#I CounterBowName
+Counter Bow
 
-## CounterBowDesc
-Reflects melee damage.[X]
+#W CounterBowDesc
+Reflects melee damage.
 
-## BurnName
-Burn[X]
+#I BurnName
+Burn
 
-## BurnDesc
-[_E][_f][_f][_e][_c][_t][_i][_v][_e][_SP][_a][_g][_a][_i][_n][_s][_t][_SP][_e][_n][_e][_m][_i][_e][_s][_SP][_o][_n][_SP][_t][_e][_r][_r][_a][_i][_n][_.][X]
+#W BurnDesc
+Effective against enemies on terrain.
 
-## ConversionName
-Conversion[X]
+#I ConversionName
+Conversion
 
-## ConversionDesc
-[_S][_w][_a][_p][_SP][_H][_P][_SP][_a][_g][_a][_i][_n][_s][_t][_SP][_h][_i][_g][_h][_e][_r][_SP][_H][_P][_SP][_t][_a][_r][_g][_e][_t][_s][_SP][_b][_e][_f][_o][_r][_e][_SP][_d][_a][_m][_a][_g][_e][_.][X]
+#W ConversionDesc
+Swap HP vs higher HP targets pre-damage.
 
-## RitualKnifeName
-Ritual Knife[X]
+#I RitualKnifeName
+Ritual Knife
 
-## RitualKnifeDesc
-[_R][_e][_s][_t][_o][_r][_e][_SP][_H][_P][_SP][_e][_q][_u][_a][_l][_SP][_t][_o][_SP][_d][_a][_m][_a][_g][_e][_SP][_d][_e][_a][_l][_t][_.][X]
+#W RitualKnifeDesc
+Restores HP equal to damage dealt.
 
-## BrenthunderName
-Brenthunder[X]
+#I BrenthunderName
+Brenthunder
 
-## BrenthunderDesc
-Brave Effect.[X]
+#W BrenthunderDesc
+Brave Effect.
 
-## SpellMirrorName
-Spell Mirror[X]
+#I SpellMirrorName
+Spell Mirror
 
-## SpellMirrorDesc
-[_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+#W SpellMirrorDesc
+Reflect Mt from magical attacks.
 
-## AlairsGaleName
-Arai's Gale[X]
+#I AlairsGaleName
+Arai's Gale
 
-## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+#W AlairsGaleDesc
+Half the power, half the price.
 
-## SisterRingName
-Wife Ring[X]
+#I SisterRingName
+Sister Ring
 
-## SisterRingDesc
-[_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
+#D SisterRingDesc
++1 Move. Allow access to a divine power.
 
-## CivilianProofName
-[_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
+#I CivilianProofName
+Civilian Proof
 
-## CivilianProofDesc
-Holder cannot enter combat.[X]
+#D CivilianProofDesc
+Holder cannot be harmed in combat.
 
-## ArachnidName
-Arachnid[X]
+#I ArachnidName
+Arachnid
 
-## ArachnidDesc
-Brave Effect.[X]
+#D ArachnidDesc
+Brave Effect.
 
-## HurlbatName
-Hurlbat[X]
+#I HurlbatName
+Hurlbat
 
-## TridentName
-Trident[X]
+#I TridentName
+Trident
 
-## TridentDesc
-[_G][_o][_o][_d][_SP][_f][_o][_r][_SP][_f][_i][_s][_h][_i][_n][_g][_,][_SP][_q][_u][_e][_s][_t][_i][_o][_n][_a][_b][_l][_e][_SP][_f][_o][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
-
-
-## AzuriumScepterName
-[_A][_z][_u][_e][_r][_i][_u][_m][_SP][_S][_c][_e][_p][_t][_e][_r][X]
+#W TridentDesc
+Good for fishing, questionable for combat.
 
 
-## AzuriumScepterDesc
-Restore life to all units on the map.[X]
+#I AzuriumScepterName
+Azurium Scepter
 
-## DevilDaggerName ^
-Devil's Dagger[X]
 
-## DevilDaggerDesc
-Ignores Gim's Atk and enemy Def. Devil.[X]
+#D AzuriumScepterDesc
+Divine staff wielded by Saint Eitha
+Restore life to all units on the map.
 
-## BalladOfWarName ^
-Ballad of War[X]
+#I DevilDaggerName
+Devil's Dagger
 
-## BalladOfWarDesc
-Grants Charisma.[X]
+#W DevilDaggerDesc
+Ignores Gim's Atk and enemy Def. Devil.
 
-## YorsYariName
-Yor's Yari[X]
+#I BalladOfWarName
+Ballad of War
 
-## YorsYariDesc
-Ignores Defence.[X]
+#W BalladOfWarDesc
+Grants Charisma.
 
-## DaShootaName
-Da Shoota[X]
+#I YorsYariName
+Yor's Yari
 
-## DaShootaDesc
-Effective vs horses and armors.[X]
+#W YorsYariDesc
+Ignores Defence.
 
-## BigIronName
-Big Iron[X]
+#I DaShootaName
+Da Shoota
 
-## Axle1Name
-Axle[X]
+#W DaShootaDesc
+Effective vs horses and armors.
 
-## Axle1Desc
-+8 Con. Axel[LockIcon].[X]
+#I BigIronName
+Big Iron
 
-## Axle2Desc
-Brave. Alex[LockIcon].[X]
+#I Axle1Name
+Axle
 
-## MiaodaoName
-Miaodao[X]
+#W Axle1Desc
++8 Con. Axel[LockIcon].
 
-## MiaodaoDesc
-Brave.[X]
+#W Axle2Desc
+Brave. Alex[LockIcon].
 
-## ZykhraScrollName
-Zykhra Scroll[X]
+#I MiaodaoName
+Miaodao
 
-## ZykhraScrollDesc
+#W MiaodaoDesc
+Brave.
+
+#I ZykhraScrollName
+Zykhra Scroll
+
+#D ZykhraScrollDesc
 +10% HP, +10% Str, +10% Def,[N]
-+10% Bld, -10% Spd[X]
++10% Bld, -10% Spd
