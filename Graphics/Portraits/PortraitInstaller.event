@@ -26,6 +26,8 @@
 #define BuldakMug 0x21
 #define NoraMug 0x22
 #define HansMug 0x23
+#define JennyMug 0x24
+#define MeldanMug 0x25
 
 
 // NPCs
@@ -58,6 +60,7 @@
 #define YorMug 0x28
 #define HegeMug 0x4C
 #define FrancisMug 0x31
+#define WrathgarMug 0x32
 
 ALIGN 16
 BarodMugData:
@@ -492,4 +495,26 @@ FrancisMugData:
 #incbin "Dmp/Francis(XVI)_minimug.dmp"
 setMugEntry(FrancisMug, FrancisMugData, 3, 5, 3, 3)
 
+ALIGN 16
+JennyMugData:
+#incbin "Dmp/Jenny(CapibaraInSpace)_mug.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace)_frames.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace)_palette.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace)_minimug.dmp"
+setMugEntry(JennyMug, JennyMugData, 2, 5, 2, 3)
 
+ALIGN 16
+MeldanMugData:
+#incbin "Dmp/Meldan(Der)_mug.dmp"
+#incbin "Dmp/Meldan(Der)_frames.dmp"
+#incbin "Dmp/Meldan(Der)_palette.dmp"
+#incbin "Dmp/Meldan(Der)_minimug.dmp"
+setMugEntry(MeldanMug, MeldanMugData, 2, 5, 2, 3)
+
+ALIGN 16
+WrathgarMugData:
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_mug.dmp"
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_frames.dmp"
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_palette.dmp"
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_minimug.dmp"
+setMugEntry(WrathgarMug, WrathgarMugData, 2, 5, 2, 3)

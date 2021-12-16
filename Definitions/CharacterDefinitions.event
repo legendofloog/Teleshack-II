@@ -71,7 +71,7 @@
 #define Hege 0x96
 #define Francis 0x97
 // Chapter 9 Boss
-#define Wrathdar 0x98
+#define Wrathgar 0x98
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
