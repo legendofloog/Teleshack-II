@@ -74,7 +74,7 @@ UNIT
 
 EnemyUnits:
 //Boss
-UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [MasterBow,Poleaxe,DoorKey] AttackInRangeAI
+UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [MasterBow,Poleaxe] AttackInRangeAI
 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [1,4] 0x0 0x0 0x0 0x0 [IronBow]ChargeHealAI 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]ChargeHealAI 
@@ -109,7 +109,7 @@ UNIT Freyse AxeKnight Wrathgar Level(10,Enemy,True) [13,10] 0x0 0x0 0x0 0x0 [Ham
 UNIT Freyse AxeKnight Wrathgar Level(10,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
 
 UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
-UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Thoron] TwoActionAI
+UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Thoron,DoorKey] TwoActionAI
 
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [SilverLance] TwoActionAI
