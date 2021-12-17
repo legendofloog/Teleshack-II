@@ -13,16 +13,16 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x0, Ch9Reinforce1, 3)
-TurnEventPlayer(0x0, Ch9Reinforce1, 5)
-TurnEventPlayer(0x0, Ch9Reinforce1, 7)
-TurnEventPlayer(0x0, Ch9Reinforce2, 2)
-TurnEventPlayer(0x0, Ch9Reinforce2, 4)
-TurnEventPlayer(0x0, Ch9Reinforce2, 6)
-TurnEventPlayer(0x0, Ch9Reinforce3, 10)
-TurnEventPlayer(0x0, Ch9Reinforce3, 11)
-TurnEventPlayer(0x0, Ch9Reinforce3, 12)
-TurnEventPlayer(0x0, JennyAndMeldan, 3)
+TurnEventPlayer(0x0, Turn357Spawn, 3)
+TurnEventPlayer(0x0, Turn357Spawn, 5)
+TurnEventPlayer(0x0, Turn357Spawn, 7)
+TurnEventPlayer(0x0, Turn246Spawn, 2)
+TurnEventPlayer(0x0, Turn246Spawn, 4)
+TurnEventPlayer(0x0, Turn246Spawn, 6)
+TurnEventPlayer(0x0, Turn101112Spawn, 10)
+TurnEventPlayer(0x0, Turn101112Spawn, 11)
+TurnEventPlayer(0x0, Turn101112Spawn, 12)
+TurnEventPlayer(0x0, JennyAndMeldanSpawn, 3)
 END_MAIN
 
 ALIGN 32
@@ -36,6 +36,7 @@ END_MAIN
 
 LocationBasedEvents:
 Door(19,1)
+Door(20,1)
 Escape(0,EscapeEventCheck,19,0)
 Escape(0,EscapeEventCheck,20,0)
 END_MAIN
@@ -73,7 +74,7 @@ UNIT
 
 EnemyUnits:
 //Boss
-UNIT Wrathgar Warrior Wrathgar Level(3,Enemy,False) [20,2] 0x0 0x0 0x0 0x0 [MasterBow,Poleaxe,DoorKey] AttackInRangeAI
+UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [MasterBow,Poleaxe,DoorKey] AttackInRangeAI
 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [1,4] 0x0 0x0 0x0 0x0 [IronBow]ChargeHealAI 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]ChargeHealAI 
@@ -115,29 +116,29 @@ UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [Si
 UNIT
 
 JennyAndMeldan:
-UNIT Jenny RookKnight 0x0 Level(4,Enemy,False) [0,17] 0x0 0x0 0x0 0x0 [LongLance,Javelin,IronSword] ChargeHealAI
-UNIT Meldan DukeKnight 0x0 Level(5,Enemy,False) [21,4] 0x0 0x0 0x0 0x0 [Greatlance,BraveLance,LightRune] ChargeHealAI
+UNIT Jenny RookKnight 0x0 Level(4,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [LongLance,Javelin,IronSword] ChargeHealAI
+UNIT Meldan DukeKnight 0x0 Level(5,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [Greatlance,BraveLance,LightRune] ChargeHealAI
 UNIT
 
 Ch9Reinforce1:
-UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [0,1] 0x0 0x0 0x0 0x0 [IronLance] ChargeHealAI
-UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SteelLance] ChargeHealAI
-UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeHealAI
-UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [SteelLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [IronLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [SteelLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [15,0] 0x0 0x0 0x1 REDA15R0 [IronLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [16,0] 0x0 0x0 0x1 REDA16R0 [SteelLance] ChargeHealAI
 UNIT
 
 Ch9Reinforce2:
-UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,16] 0x0 0x0 0x0 0x0 [IronLance,SteelSword] ChargeHealAI
-UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [SteelLance,IronSword] ChargeHealAI
-UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [IronLance,SteelSword] ChargeHealAI
-UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [12,0] 0x0 0x0 0x0 0x0 [SteelLance,IronSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [IronLance,SteelSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17[SteelLance,IronSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [11,0] 0x0 0x0 0x1 REDA11R0 [IronLance,SteelSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [12,0] 0x0 0x0 0x1 REDA12R0 [SteelLance,IronSword] ChargeHealAI
 UNIT
 
 Ch9Reinforce3:
-UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,16] 0x0 0x0 0x0 0x0 [KillingEdge,BraveLance,Elixir] ChargeHealAI
-UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [KillerLance,BraveSword,Elixir] ChargeHealAI
-UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
-UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,1] 0x0 0x0 0x0 0x0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
+UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [KillingEdge,BraveLance,Elixir] ChargeHealAI
+UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [KillerLance,BraveSword,Elixir] ChargeHealAI
+UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
+UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
 UNIT
 
 Traps1:
@@ -155,6 +156,18 @@ BeginningScene:
 	ENUN
 	GotoPrepScreen
 	ENDA
+
+Turn246Spawn:	
+ReinforcementEvent(Ch9Reinforce1)
+
+Turn357Spawn:	
+ReinforcementEvent(Ch9Reinforce2)
+
+Turn101112Spawn:	
+ReinforcementEvent(Ch9Reinforce3)
+
+JennyAndMeldanSpawn:	
+ReinforcementEvent(JennyAndMeldan)
 	
 EscapeEventCheck:
 CHECK_ACTIVEID Loewe

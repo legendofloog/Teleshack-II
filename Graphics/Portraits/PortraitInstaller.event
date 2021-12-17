@@ -501,7 +501,7 @@ JennyMugData:
 #incbin "Dmp/Jenny(CapibaraInSpace)_frames.dmp"
 #incbin "Dmp/Jenny(CapibaraInSpace)_palette.dmp"
 #incbin "Dmp/Jenny(CapibaraInSpace)_minimug.dmp"
-setMugEntry(JennyMug, JennyMugData, 2, 5, 2, 3)
+setMugEntry(JennyMug, JennyMugData, 3, 6, 3, 4)
 
 ALIGN 16
 MeldanMugData:
@@ -509,7 +509,7 @@ MeldanMugData:
 #incbin "Dmp/Meldan(Der)_frames.dmp"
 #incbin "Dmp/Meldan(Der)_palette.dmp"
 #incbin "Dmp/Meldan(Der)_minimug.dmp"
-setMugEntry(MeldanMug, MeldanMugData, 2, 5, 2, 3)
+setMugEntry(MeldanMug, MeldanMugData, 2, 5, 3, 3)
 
 ALIGN 16
 WrathgarMugData:
