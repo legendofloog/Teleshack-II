@@ -82,6 +82,8 @@
 [LoadCadenza] = [LoadFace][0x1c][0x1]
 [LoadNora] = [LoadFace][0x22][0x1]
 [LoadHans] = [LoadFace][0x23][0x1]
+[LoadJenny] = [LoadFace][0x24][0x1]
+[LoadMeldan] = [LoadFace][0x25][0x1]
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]
@@ -100,6 +102,7 @@
 [LoadDraken] = [LoadFace][0x50][0x1]
 [LoadHege] = [LoadFace][0x4C][0x1]
 [LoadFrancis] = [LoadFace][0x31][0x1]
+[LoadWrathgar] = [LoadFace][0x32][0x1]
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]

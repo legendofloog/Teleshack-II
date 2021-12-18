@@ -1,12 +1,27 @@
 ## Chapter9Title
 Ch9: Reap What You Sow[X]
 
-//##OpeningText
+##OpeningText
+[MidLeft][LoadCleo]
+[MidRight][LoadLoewe]
+Oh no the enemy.[A][X]
 
-//##SennyAndMeldanSpawnText
+##JennyAndMeldanSpawnText
+[MidLeft][LoadJenny]
+[MidRight][LoadMeldan]
+Hello Gamers[AN][X]
 
-//##SennyRecruitText
+##JennyRecruitText
+[FarLeft][LoadActive]
+[FarRight][LoadJenny]
+bottom text[A][X]
 
-//##MeldanRecruitText
+##MeldanRecruitText
+[FarLeft][LoadActive]
+[FarRight][LoadMeldan]
+bottom text[A][X]
 
-//##EndingText
+##EndingText
+[MidLeft][LoadCleo]
+[MidRight][LoadLoewe]
+We did it reddit[A][X]

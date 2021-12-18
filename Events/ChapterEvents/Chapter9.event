@@ -27,7 +27,8 @@ END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-
+CharacterEventBothWays(7, JennyTalkCh9, Jenny, 0x0)
+CharacterEventBothWays(8, MeldanTalkCh9, Meldan, 0x0)
 END_MAIN
 
 MiscBasedEvents:
@@ -154,6 +155,16 @@ Traps2:
 BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	//Senny Rescued
+	CHECK_EVENTID 0x78 
+	BNE 4 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
+	ENUT TalkFlag // sets flag so the talk isn't possible if the flag isn't set
+	LABEL 4 
+	//Helman Rescued
+	CHECK_EVENTID 0x79 
+	BNE 5 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
+	ENUT TalkFlag // sets flag so the talk isn't possible if the flag isn't set
+	LABEL 5 
 	GotoPrepScreen
 	ENDA
 
@@ -168,6 +179,22 @@ ReinforcementEvent(Ch9Reinforce3)
 
 JennyAndMeldanSpawn:	
 ReinforcementEvent(JennyAndMeldan)
+
+JennyTalkCh9:
+MUSS WithUs_Song
+Text(JennyRecruitText)
+CUSA Jenny
+MURE 2
+NoFade
+ENDA
+
+MeldanTalkCh9:
+MUSS WithUs_Song
+Text(MeldanRecruitText)
+CUSA Meldan
+MURE 2
+NoFade
+ENDA
 	
 EscapeEventCheck:
 CHECK_ACTIVEID Loewe
