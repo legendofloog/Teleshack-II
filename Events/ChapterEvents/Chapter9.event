@@ -36,8 +36,6 @@ CauseGameOverIfLordDies
 END_MAIN
 
 LocationBasedEvents:
-Door(19,1)
-Door(20,1)
 Escape(0,EscapeEventCheck,19,0)
 Escape(0,EscapeEventCheck,20,0)
 END_MAIN
@@ -75,7 +73,7 @@ UNIT
 
 EnemyUnits:
 //Boss
-UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [MasterBow,Poleaxe] AttackInRangeAI
+UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [Greatbow,Poleaxe] AttackInRangeAI
 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [1,4] 0x0 0x0 0x0 0x0 [IronBow]ChargeHealAI 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]ChargeHealAI 
@@ -110,7 +108,7 @@ UNIT Freyse AxeKnight Wrathgar Level(10,Enemy,True) [13,10] 0x0 0x0 0x0 0x0 [Ham
 UNIT Freyse AxeKnight Wrathgar Level(10,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
 
 UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
-UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Thoron,DoorKey] TwoActionAI
+UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Thoron] TwoActionAI
 
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [SilverLance] TwoActionAI
@@ -158,12 +156,12 @@ BeginningScene:
 	//Senny Rescued
 	CHECK_EVENTID 0x78 
 	BNE 4 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
-	ENUT TalkFlag // sets flag so the talk isn't possible if the flag isn't set
+	ENUT 7 // sets flag so the talk isn't possible if the flag isn't set
 	LABEL 4 
 	//Helman Rescued
 	CHECK_EVENTID 0x79 
 	BNE 5 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
-	ENUT TalkFlag // sets flag so the talk isn't possible if the flag isn't set
+	ENUT 8 // sets flag so the talk isn't possible if the flag isn't set
 	LABEL 5 
 	GotoPrepScreen
 	ENDA
