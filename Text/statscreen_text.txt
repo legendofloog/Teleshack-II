@@ -1,119 +1,119 @@
 #0x4f6 MovText
-Mov
+Mov[X]
 
 # 0x4EE LckText
-Lck
+Lck[X]
 
 # 0x4ec SklText
-Skl
+Skl[X]
 
 #0x4f7 BldText
-Bld
+Bld[X]
 
 #0x3B SS_TalkText
-Talk
+Talk[X]
 
 ## SS_SkillsText
-Skills
+Skills[X]
 
 ## SS_TalkRText
 Character with whom this unit[N]
-may talk on the battlefield.
+may talk on the battlefield.[X]
 
 ## SS_SkillsRText
 Special abilities that can do[N]
-many different things.
+many different things.[X]
 
 ## SS_SkillsDefaultRText
-No skill description found.
+No skill description found.[X]
 
 ## PersonalDataDesc1
 Press Select to toggle[N]
-between stats and growths.
+between stats and growths.[X]
 
 ## PersonalDataDesc2
 This unit's personal[N]
-stats and skills.
+stats and skills.[X]
 
 ## LeadText
-Lead
+Lead[X]
 
 ## LeadRText
 Leadership. Grants +3 Hit +3 Avo[N]
-to all ally units per star.
+to all ally units per star.[X]
 
 ## AllyStarCountRText
 Total number of leadership stars[N]
-for ally units.
+for ally units.[X]
 
 ## EnemyStarCountRText
 Total number of leadership stars[N]
-for enemy units.
+for enemy units.[X]
 
 ## DonateURL
-donorbox.org/donate-to-circles
+donorbox.org/donate-to-circles[X]
 
 ## SS_BiorhythmText
-Bio
+Bio[X]
 
 ## SS_BiorhythmRText
 Biorhythm. Affects[N]
-Hit and Avoid.
+Hit and Avoid.[X]
 
 ## SS_BiorhythmNeutral
-Neutral
+Neutral[X]
 
 ## SS_BiorhythmGood
-Good
+Good[X]
 
 ## SS_BiorhythmGreat
-Great
+Great[X]
 
 ## SS_BiorhythmBest
-Best
+Best[X]
 
 ## SS_BiorhythmPoor
-Poor
+Poor[X]
 
 ## SS_BiorhythmBad
-Bad
+Bad[X]
 
 ## SS_BiorhythmWorst
-Worst
+Worst[X]
 
 ## SS_Action
-Vigor
+Vigor[X]
 
 ## VigorRText
 Ability to take another action. Each[N]
-star gives a 5% chance to move again.
+star gives a 5% chance to move again.[X]
 
 ## SS_PursuitCriticalCoefficient
-PCC
+PCC[X]
 
 ## PursuitCriticalRText
 If this unit doubles, their critical[N]
-rate is multiplied by this coefficient.
+rate is multiplied by this coefficient.[X]
 
 ## LikesDesc
 A list of things this[N]
-character enjoys.
+character enjoys.[X]
 
 ## DislikesDesc
 A list of things this[N]
-character does not enjoy.
+character does not enjoy.[X]
 
 ## AgeDesc
-This character's current age.
+This character's current age.[X]
 
 ## HeightDesc
-This character's height.
+This character's height.[X]
 
 ## EquipEquipmentDescription
-Ready this equipment.
+Ready this equipment.[X]
 
 ## UnequipName
-Unequip
+Unequip[X]
 
 ## UnequipEquipmentDescription
-Remove this equipment.
+Remove this equipment.[X]

@@ -1,17 +1,17 @@
 ## Shocked_Status_Name
-Shock
+Shock[X]
 
 ## Shocked_Status_Desc
-Units with this status can't counter.
+Units with this status can't counter.[X]
 
 ## EnfeebleName
-Enfeeble
+Enfeeble[X]
 
 ## EnfeebleDesc
-Reduces all stats except HP.
+Reduces all stats except HP.[X]
 
 ## FreezeStatusName
-Freeze
+Freeze[X]
 
 ## FreezeStatusDesc
-Freezes the unit in place.
+Freezes the unit in place.[X]

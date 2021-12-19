@@ -1,5 +1,5 @@
 ## Chapter8Title
-Ch8: Zykhra Gate
+Ch8: Zykhra Gate[X]
 
 ## GroupPlans
 [Left][LoadRadnitz]
@@ -74,7 +74,7 @@ We'll be heading out.[N]
 Stay safe, milord.[AN]
 [FarLeft]
 Don't worry, Cleo.[N]
-I'll make sure he does.[AN]
+I'll make sure he does.[AN][X]
 
 ## HegeAndCidor
 [MidLeft][LoadHege]
@@ -105,7 +105,7 @@ with them, it's just a hunch.[AN]
 But do prepare, regardless.[N]
 We can't lose this gate.[AN]
 [MidLeft][OneLineBox]
-As you wish, milord.[AN]
+As you wish, milord.[AN][X]
 
 ## HansAndNoraRecruit
 [FarLeft][LoadHans]
@@ -130,7 +130,7 @@ from here on out.[AN]
 [MidRight]
 I appreciate the[N]
 aid, you two.[AN]
-Now, let's move out![AN]
+Now, let's move out![AN][X]
 
 ## CleoAndLoeweEndText
 [MidLeft][LoadCleo]
@@ -164,7 +164,7 @@ an enemy of his.[AN]
 [MidRight]
 Yeah, you're right.[AN]
 I just hope that Dragana's[N]
-not disappointed[Beat][AN]
+not disappointed[Beat][AN][X]
 
 ## HegeAndKwame
 [MidLeft][LoadHege]
@@ -200,7 +200,7 @@ Ack![AN]
 A dagger[Beat][AN]
 Took her own life to[N]
 protect that info[Beat][AN]
-What are you up to, Cythes?[AN]
+What are you up to, Cythes?[AN][X]
 
 
 ## MifanAndCidor
@@ -253,7 +253,7 @@ If it means avenging my[N]
 comrades,[AN]
 then I will do what I[N]
 must.[AN]
-Thank you, Cidor.[AN]
+Thank you, Cidor.[AN][X]
 
 ## HegeWarning
 [MidLeft][LoadHege]
@@ -262,7 +262,7 @@ be here soon[Beat][AN]
 Probably about [ToggleRed]five minutes[ToggleRed][N]
 or so.[AN]
 Then the Liberators won't[N]
-stand a chance![A]
+stand a chance![A][X]
 
 ## FrancisArrives
 [MidLeft][LoadFrancis]
@@ -275,7 +275,7 @@ Dang it[Beat][AN]
 Well, we'd better intervene.[N]
 Don't wanna get in trouble.[AN]
 [MidRight][OneLineBox]
-As you say, Commander.[AN]
+As you say, Commander.[AN][X]
 
 ## LoeweTobieTalkCh8Text
 [MidLeft][LoadLoewe]
@@ -321,7 +321,7 @@ I see[Beat][AN]
 Well, if you need any[N]
 more info, I've got it covered.[AN]
 [MidLeft][OneLineBox]
-Thank you, Tobie.[A]
+Thank you, Tobie.[A][X]
 
 ## NoraCleoTalkCh8Text
 [MidLeft][LoadNora]
@@ -367,7 +367,7 @@ I'm glad to hear that[N]
 he's alive.[AN]
 [MidLeft]
 Think nothing of it,[N]
-Cleo.[AN]
+Cleo.[AN][X]
 
 
 ## HegeCleoBossQ
@@ -381,7 +381,7 @@ But I've chosen my path,[N]
 and I will not back down.[AN][ClearFace]
 [MidLeft][LoadHege]
 I will not falter, either.[N]
-Have at you, Cleo![A]
+Have at you, Cleo![A][X]
 
 ## HegeBossQ
 [MidLeft][LoadHege]
@@ -390,11 +390,11 @@ a second wind.[AN]
 But the will of Cythes[N]
 won't be eroded[AN]
 by a wind such[N]
-as yours![A]
+as yours![A][X]
 
 ## FrancisBossQ
 [MidLeft][LoadFrancis]
 Ah, you're the idiots[N]
 causing this ruckus.[AN]
 Just keel over and[N]
-die, won't ya?[A]
+die, won't ya?[A][X]

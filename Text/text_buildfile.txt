@@ -1,151 +1,150 @@
-#include "ParseDefinitions.txt"
 
 # 0x0002 textWeaponRankIncreasedTo
- Weapon rank increased to 
+ Weapon rank increased to [X]
 
 # 0x0094
-HP Bars[.]
+HP Bars[.][X]
 
 # 0x00B2
-Set health bar display
+Set health bar display[X]
 
 #include "CharClassItemsEtc/ItemNamesDescs.txt"
 
 #0x3A LearnedSkillText
-Learned  
+Learned  [X]
 
 #include "statscreen_text.txt"
 
 #include "unitmenu_text.txt"
 
 #0xd4c LikesText
-Likes:
+Likes:[X]
 
 #0xd4d DislikesText
-[0x9E]i[0x90]li[0x8A][0x85][0x90]:
+[0x9E]i[0x90]li[0x8A][0x85][0x90]:[X]
 
 #0xd4e HeightText
-Height:
+Height:[X]
 
 #0xd4f AgeText
-Age:
+Age:[X]
 
 ## HouseText
-[MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A]
+[MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
 
 ## VillageText
-[MidRight][LoadFace][0xFF][0xFF]These look useful.[A]
+[MidRight][LoadFace][0xFF][0xFF]These look useful.[A][X]
 
 ## DV1Desc
 Freeze all enemies[N]
-for one turn
+for one turn[X]
 
 ## nameCamus
-Camus
+Camus[X]
 
 ## nameSirius
-Sirius
+Sirius[X]
 
 ## nameZeke
-Zeke
+Zeke[X]
 
 ## StairsNameText
- Stairs
+ Stairs[X]
 
 ## StairsDescText
 Take this staircase to[N]
-the connecting end.
+the connecting end.[X]
 
 ## StairsBlockedText
 The staircase is blocked[N]
-from the other side.
+from the other side.[X]
 
 ## RaidNameText
- Raid
+ Raid[X]
 
 ## RaidDescText
 Destroy this village[N]
-for items and gold.
+for items and gold.[X]
 
 ## EscapeName
- Escape
+ Escape[X]
 
 ## EscapeDesc
 Have this unit[N]
-leave this chapter.
+leave this chapter.[X]
 
 ## EscapeObjectiveDesc
   Escape with[N]
-Cleo and Loewe
+Cleo and Loewe[X]
 
 ## ArriveName
- Arrive
+ Arrive[X]
 
 ## ArriveDesc
 Complete this chapter[N]
-by having this unit arrive.
+by having this unit arrive.[X]
 
 ## LordMustEscapeLastText
-This unit must escape last.
+This unit must escape last.[X]
 
 ## Mov_Text_ID
-Mov
+Mov[X]
 
 ## UM_GaidenBlackMagic
- B. Magic
+ B. Magic[X]
 
 ## UM_GaidenWhiteMagic
- W. Magic
+ W. Magic[X]
 
 ## UM_GaidenMagicDesc
 Spend HP to cast spells[NL]
-this unit has learned.
+this unit has learned.[X]
 
 ## GaidenMagicUMErrorText
 You don't have enough HP[NL]
-to cast any spells.
+to cast any spells.[X]
 
 ## GaidenMagicSpellMenuErrorText
 You don't have enough HP[NL]
-to cast this spell.
+to cast this spell.[X]
 
 ## GaidenMagicHPCostText
-Cost
+Cost[X]
 
 ## PrepScreenUseSkillScroll
- Skill learned
+ Skill learned[X]
 
 ## SkillScrollDesc
 A scroll that teaches[N]
-a skill when used.
+a skill when used.[X]
 
 ## MessageFatigueRestored
-Fatigue restored
+Fatigue restored[X]
 
 ## SS_FatigueText
-Ftg
+Ftg[X]
 
 ## SS_FatigueRText
-This unit's level of fatigue.
+This unit's level of fatigue.[X]
 
 ## Dismount_Name_TextID
- Dismount
+ Dismount[X]
 
 ## Dismount_Description_TextID
-Time to march?
+Time to march?[X]
 
 ## Mount_Name_TextID
- Mount
+ Mount[X]
 
 ## Mount_Description_TextID
-Ready to ride?
+Ready to ride?[X]
 
 ## OpenDoorName
-Open Door
+Open Door[X]
 
 ##OpenDoorDesc
 Open the door to[N]
-Dragana's cell.
+Dragana's cell.[X]
 
 #include "statusdesc_text.txt"
 

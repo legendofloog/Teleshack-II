@@ -1,88 +1,88 @@
 ## SD_Culling
 Culling: If foe's HP is full, deals damage[N]
-equal to 25% of foe's max HP.
+equal to 25% of foe's max HP.[X]
 
 ## SD_Headshot
 Headshot: If foe's HP is not full, deals[N]
 execute damage equal to 50% of foe's[N]
-missing HP.
+missing HP.[X]
 
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]
 Her healing and damage actions heal all[N]
-empowered allies by a small amount.
+empowered allies by a small amount.[X]
 
 ## SD_Nightcaller
 Dusk Bringer: Cromar's dark pact call[N]
 down fog of war after each combat,[N]
-empowering his critical hit chance.
+empowering his critical hit chance.[X]
 
 ## SD_Dullahan
 Dullahan's Curse:[N]
-Revives user upon defeat.
+Revives user upon defeat.[X]
 
 ## SD_VictoryMarch
 Victory March: Raise movement of[N]
-infantry units by 2 points.
+infantry units by 2 points.[X]
 
 ## SD_Avenger
 Avenger: Loewe gains purpose with each[N]
 wound, gaining Crit/Hit and losing[N]
-Avo/Dodge equal to his missing HP.
+Avo/Dodge equal to his missing HP.[X]
 
 ## SD_RecklessCharge
 Reckless Charge: When mounted, moving[N]
 full move makes Emil's attacks brave,[N]
-but his AS and Avo drop to 0.
+but his AS and Avo drop to 0.[X]
 
 ## SD_Aftershock
 Aftershock: If Iskra attacks with[N]
 thunder magic, the enemy cannot[N]
-counter during their next battle.
+counter during their next battle.[X]
 
 ## SD_Conversion
 Conversion: Swap HP with higher health[N]
-foes before doing damage.
+foes before doing damage.[X]
 
 ## SD_TerrainEffective
 Terrain Effective: +12 damage, +20 hit[N]
-against enemies on defensive terrain.
+against enemies on defensive terrain.[X]
 
 ## SD_NonCombatant
 Noncombatant: Not part of the conflict,[N]
-immune to damage and getting hit.
+immune to damage and getting hit.[X]
 
 ## SD_GladiatorsAura
 Gladiator's Aura: All characters[N]
-within 5 tiles have +15 avoid.
+within 5 tiles have +15 avoid.[X]
 
 ## SD_SpellMirror
 Spell Mirror: Reflects Mt[N]
-of magical attacks.
+of magical attacks.[X]
 
 ## SD_AzuriumMight
 Azurium Might: This unit can cross[N]
 water tiles with no penalty. +3 res.[N]
-Power: Summon rain that hinders fliers.
+Power: Summon rain that hinders fliers.[X]
 
 ## SSN_AzuriumMight
-Azurium
+Azurium[X]
 
 ## SSD_AzuriumMight
 The divine element Azurium.[N]
-Grants mastery over water.
+Grants mastery over water.[X]
 
 
 ## SD_EterniumMight
 Eternium Might: Revives upon defeat.[N]
 Cancelled by other divine elements. +7 hp.[N]
-Power: Fully restore HP to all allies.
+Power: Fully restore HP to all allies.[X]
 
 ## SD_ZoruniumMight
 Zoleinium Might: Unit gain +1 move.[N]
-Power: +2 move to all ally infantry.
+Power: +2 move to all ally infantry.[X]
 
 ## SD_GenesiumMight
 Genesium Might: Grants user power of[N]
 genesis and deicide. +1 all stats.[N]
-Power: Create 4 ally generals.
+Power: Create 4 ally generals.[X]

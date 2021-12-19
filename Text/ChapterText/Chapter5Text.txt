@@ -1,5 +1,5 @@
 ## Chapter5Title
-Ch5: Like a Steamed Crab
+Ch5: Like a Steamed Crab[X]
 
 ## SysTextOpening
 After escaping from Selessian forces,[N]
@@ -13,7 +13,7 @@ a small enclave off the coast of Decia,[N]
 where the liberation army plans activities[AN]
 from the relative safety and obscurity[N]
 of the sea caves. To get there,[N]
-they would need to find a boat.[A]
+they would need to find a boat.[A][X]
 
 ## AtPort
 [OpenLeft][LoadCleo][OpenFarLeft][LoadLoewe]
@@ -32,10 +32,10 @@ Quickly.[AN]
 [OpenFarLeft]Right, let's split up[N]
 and search.[AN]
 It'll look less suspicious than our[N]
-traveling with a large group.[A]
+traveling with a large group.[A][X]
 
 ## SysTextMomentsLater
-After searching for a boat...[A]
+After searching for a boat...[A][X]
 
 ## MeetingLongxia
 [OpenLeft][LoadCleo][OpenRight][LoadLoewe]
@@ -91,7 +91,7 @@ your help.[AN]
 [OpenFarRight]You have some nice[N]
 manners, girl.[AN]
 Call me Longxia.[N]
-Follow me.[A]
+Follow me.[A][X]
 
 ## BoatTalk
 [OpenLeft][LoadCleo][OpenRight][LoadLoewe]
@@ -241,7 +241,7 @@ warmer all of the sudden.[AN]
 [OpenFarFarRight]Cap'n![N]
 We're 'bout To get boarded![AN]
 The ocean's boiling like a kettle![N]
-They're gonna steam us like a crab![A]
+They're gonna steam us like a crab![A][X]
 
 ## TensionCh5Text
 [FarRight][LoadLongxia]
@@ -259,9 +259,10 @@ If we keep sailing towards the straits[N]
 of Gibraltar, they won't be able to pursue.[AN]
 Their ships may be too large.[AN]
 [OpenFarLeft]Alright.[N]
-Cleo! Get ready.[A]
+Cleo! Get ready.[A][X]
 
 ## EnemyCh5Text
+# edited the name since Enemy is generic
 [OpenMidLeft][LoadRiggan]
 [OpenMidLeft]Ocean's warming up and rain's[N]
 about to fall.[AN]
@@ -277,7 +278,7 @@ remembers Riggan for.[AN]
 I'll be the hero of the Cythean[N]
 Empire[Beat] Yes, me.[AN]
 Mom[Beat] Shafaqat[Beat][N]
-will you be proud?[A][OpenEyes]
+will you be proud?[A][OpenEyes][X]
 
 ## PostPrepsCh5Text
 [OpenFarLeft][LoadCleo][OpenLeft][LoadLoewe][OpenMidRight][LoadKwame]
@@ -308,12 +309,12 @@ It'd do much to broaden your character[N]
 If you cared about something else,[AN]
 you know, beyond this damned boat and coin.[AN]
 [OpenRight]Pah![AN]
-[OpenFarLeft][Beat] Thank you both, let's go.[A]
+[OpenFarLeft][Beat] Thank you both, let's go.[A][X]
 
 ## PostBattleBoss
 
 [OpenMidLeft][LoadCleo]Their commander is down![N]
-Let's make a clean escape![A]
+Let's make a clean escape![A][X]
 
 ## PostBattleTime
 [OpenMidLeft][LoadRiggan]Dang[Beat] the rain is stopping.[N]
@@ -321,7 +322,7 @@ They've held out better than expected.[AN]
 Let's pull back for now and wait for[N]
 further instructions.[AN]
 Decian Liberators[Beat] you're only prolonging[N]
-your demise[Beat][A]
+your demise[Beat][A][X]
 
 ## LoreCh5Text
 [OpenLeft][LoadCleo][OpenFarLeft][LoadLoewe][OpenMidRight][LoadKwame]
@@ -442,7 +443,7 @@ insane this all sounds.[AN]
 Unsurprisingly, the regional nobles[N]
 did not take this well,[AN]
 as their egos had grown alongside[N]
-their pocketbooks and armies.[A]
+their pocketbooks and armies.[A][X]
 
 ## Lore2Ch5Text
 [OpenLeft][LoadCleo][OpenFarLeft][LoadLoewe][OpenMidRight][LoadKwame]
@@ -581,4 +582,4 @@ If the legends are true[Beat][N]
 We may still have a chance.[AN]
 I must avenge those who[N]
 died for me[Beat][AN]
-I will end this.[A]
+I will end this.[A][X]

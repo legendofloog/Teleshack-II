@@ -8,7 +8,6 @@
     ORG FreeSpace
 
     #include "repointedTextTable.event"
-    #include "EventAssembler/Tools/Tool Helpers.txt"
 
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"

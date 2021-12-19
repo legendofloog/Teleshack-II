@@ -1,5 +1,5 @@
 ## Chapter2Title
-Ch2: On Tattered Feet
+Ch2: On Tattered Feet[X]
 
 ## Chapter2OpeningScene1
 [MidRight][LoadCleo]
@@ -23,7 +23,7 @@ it as part of my studies.[A]
 [MidLeft][OneLineBox]
 Must have been a real fancy school.[A]
 [MidRight]
-[Beat]Something like that.[A]
+[Beat]Something like that.[A][X]
 
 
 ## Chapter2OpeningScene2
@@ -48,7 +48,7 @@ if they're after Kasun![A]
 [Event]
 [FarLeft][LoadCleo][TwoLineBox]
 [ToggleMouthMove](Blast, they'll see[N]
-us-Wait, is that...[....])[ToggleMouthMove][A]
+us-Wait, is that...[....])[ToggleMouthMove][A][X]
 
 ## Chapter2OpeningScene3
 [MidLeft][LoadSoldier]
@@ -57,7 +57,7 @@ us-Wait, is that...[....])[ToggleMouthMove][A]
 [MidRight]
 "Courtesy".[A]
 [MidLeft]
-What the devil did you just say? Court-[A]
+What the devil did you just say? Court-[A][X]
 
 ## Chapter2OpeningScene4
 [FarLeft][LoadLoewe]
@@ -82,7 +82,7 @@ failing increase the longer you take.[A]
 the questions for later.[A]
 [Left]
 [ToggleMouthMove](...[....]As will I. Varga, how[N]
-could you possibly be here?)[ToggleMouthMove][A]
+could you possibly be here?)[ToggleMouthMove][A][X]
 
 ## Chapter2OpeningScene5
 [FarLeft][LoadSoldier]
@@ -102,7 +102,7 @@ head this way, and when they do, I'll[N]
 personally end their miserable lives![A]
 [MidRight][TwoLineBox]
 [ToggleMouthMove](...[....]Loewe...[....]Cleo...[....] don't[N]
-lose to this useless fop.)[ToggleMouthMove][A]
+lose to this useless fop.)[ToggleMouthMove][A][X]
 
 ## DelilahFreedBySvetText
 [MidLeft][LoadSvetomir]
@@ -143,7 +143,7 @@ breakout plan, no. Honestly,[AN]
 is using those the only[N]
 reason you became a sister?[A]
 [MidRight][OneLineBox]
-[Beat]Maybe?[A]
+[Beat]Maybe?[A][X]
 
 ## DelilahFreedText
 [MidRight][LoadDelilah]
@@ -161,7 +161,7 @@ I ain't going back to that prison cell.[A]
 [MidLeft][OneLineBox]
 Just a staff.[A]
 [MidRight]
-Good enough, I guess[Beat][A]
+Good enough, I guess[Beat][A][X]
 
 ## HernandezFreedText
 [MidRight][LoadHernandez]
@@ -171,7 +171,7 @@ You ain't too smart, are ya, freein'[N]
 a criminal like me? Well, it's too[N]
 late now, buddy. Freedom, here I come![AN]
 But hey, maybe we'll run into[N]
-each other someday. Not![A]
+each other someday. Not![A][X]
 
 
 ## Chapter2BoroWarning
@@ -182,30 +182,30 @@ Cleo[Beat][A]
 We've taken too long, I know.[N]
 He'll be here, at any moment.[A]
 [MidLeft][OneLineBox]
-We'll just have to move faster, then.[A]
+We'll just have to move faster, then.[A][X]
 
 ## Chapter2BoroSpawnText
 [MidLeft][LoadBoro]
-This is where she is[Beat] No matter.[A]
+This is where she is[Beat] No matter.[A][X]
 
 ## TyrVargaBattleConvo
 [MidLeft][LoadTyr]
 You- What do you think[N]
 you're doing?[A][CloseSpeechSlow][ClearFace]
 [MidRight][LoadVarga]
-Betraying you.[A]
+Betraying you.[A][X]
 
 ## TyrGenericBattleConvo
 [MidLeft][LoadTyr]
 Scum! You face Captain Tyr![N]
 Lay down your arms,[AN]
 or else prepare for the[N]
-worst pain of your lives![A]
+worst pain of your lives![A][X]
 
 ## TyrDeathQuote
 [MidLeft][LoadTyr]
 N-no[Beat] How could[N]
-I fall[Beat] Duke[Beat][A]
+I fall[Beat] Duke[Beat][A][X]
 
 ## Chapter2EndingScene1
 [FarLeft][LoadCleo]
@@ -251,7 +251,7 @@ taking me down any time soon.[A]
 [FarFarLeft][OneLineBox]
 You may wish to rethink that, general.[A]
 [MidRight]
-What-[A]
+What-[A][X]
 
 ## Chapter2EndingScene2
 [MidRight][LoadDragana]
@@ -271,7 +271,7 @@ will need to be moved up![A]
 [Event]
 
 [MidLeft][LoadSoldier]
-What-[A]
+What-[A][X]
 
 
 ## Chapter2EndingScene3
@@ -286,7 +286,7 @@ What[Beat][A]
 [MidRight]
 No time to think, let's move![A]
 [FarLeft]
-Yes, general![A]
+Yes, general![A][X]
 
 
 ## Chapter2EndingScene4
@@ -313,4 +313,4 @@ I just don't appreciate backstabbers.[A]
 [Event]
 
 [Right]
-[Beat][A]
+[Beat][A][X]

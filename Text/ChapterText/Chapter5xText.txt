@@ -1,23 +1,23 @@
 ## RecruitText
-Recruit
+Recruit[X]
 
 ## Ch5xTitle
-Interlude 1 - Resolve
+Interlude 1 - Resolve[X]
 
 ## Ch5xLoewePrelude
 [MidRight][LoadLoewe][ThreeLineBox]
 The melody of the waves[Beat] How long[N]
 has it been since I heard this sound?[N]
-Makes it feel like nothing's changed[Beat][A]
+Makes it feel like nothing's changed[Beat][A][X]
 
 ## Ch5xGechrysosText
 Meanwhile, in Gechrysos,[N]
-the heart of Cythes...[A]
+the heart of Cythes...[A][X]
 
 ## Ch5xKwameGoesDown
 [MidLeft][LoadKwame]
 Loewe! Cleo! We have[N]
-arrived at the island![A]
+arrived at the island![A][X]
 
 ## Ch5xLoeweCleoTalk
 [MidLeft][LoadLoewe]
@@ -103,7 +103,7 @@ mounts ready. Lumi must be real[N]
 tired of sitting in the brig.[A]
 [MidRight][TwoLineBox]
 Indeed. They will need time[N]
-to flex their wings, after all.[A]
+to flex their wings, after all.[A][X]
 
 
 ## MishFirstTalkDialogueMiraAlive
@@ -139,7 +139,7 @@ You may call it evil,[N]
 but I call it awesome.[A]
 [FarRight]
 Either way, the[N]
-decision's up to Cleo.[A]
+decision's up to Cleo.[A][X]
 
 ## MishFirstTalkDialogueMiraDead
 [MidLeft][LoadMish]
@@ -174,7 +174,7 @@ You may call it evil,[N]
 but I call it awesome.[A]
 [FarRight]
 Either way, the[N]
-decision's up to Cleo.[A]
+decision's up to Cleo.[A][X]
 
 
 ## MishAcceptedDialogue
@@ -197,11 +197,11 @@ left behind for a sec. Here's[N]
 hoping I don't let 'em down.[AN]
 Actually, I suppose it's more apt[N]
 to say, here's hoping the ol'[N]
-knife doesn't let 'em down.[A]
+knife doesn't let 'em down.[A][X]
 
 ## MishPickDialogue
 [MidRight][LoadCleo]
-Should I pick Mish?[No]
+Should I pick Mish?[No][X]
 
 ## MishRejectedDialogue
 [MidLeft][LoadMish]
@@ -219,7 +219,7 @@ extremely reliable![A][CloseSpeechSlow]
 [FarRight][ClearFace]
 [MidLeft]
 Aw heck, already gone. Guess they[N]
-figured out my knife's deal, huh?[A]
+figured out my knife's deal, huh?[A][X]
 
 ## AwaFirstTalkDialogue
 [MidLeft][LoadAwa][ThreeLineBox]
@@ -235,21 +235,21 @@ make it out of this mess alive.[AN]
 When it comes to not dying, I'm[N]
 prooobably the most skilled[N]
 person on this whole island.[AN]
-So[Beat] how about it?[A]
+So[Beat] how about it?[A][X]
 
 ## AwaPickDialogue
 [MidRight][LoadCleo]
-Should I pick Awa?[No]
+Should I pick Awa?[No][X]
 
 ## AwaAcceptedDialogue
 [MidLeft][LoadAwa]
 Yeah, that's pretty much[N]
-the answer I expected.[A]
+the answer I expected.[A][X]
 
 ## AwaRejectedDialogue
 [MidLeft][LoadAwa]
 You're a cocky one, eh?[N]
-Well, it's your funeral.[A]
+Well, it's your funeral.[A][X]
 
 ## TobieFirstTalkDialogue
 [Left][LoadTobie]
@@ -322,12 +322,12 @@ What about archers?[A]
 Idiot! I told you not to bring that up![A]
 [FarRight][TwoLineBox]
 [Beat]It seems like your bickering is going[N]
-nowhere. We've heard enough, Cleo.[A]
+nowhere. We've heard enough, Cleo.[A][X]
 
 
 ## TobiePickDialogue
 [MidRight][LoadCleo]
-Should I pick Tobie?[No]
+Should I pick Tobie?[No][X]
 
 ## TobieAcceptedDialogue
 [FarLeft][LoadMish]
@@ -345,7 +345,7 @@ Loewe?[A]
 Yes?[A]
 [Right][TwoLineBox]
 Let's go speak to[N]
-someone else. Please.[A]
+someone else. Please.[A][X]
 
 ## TobieRejectedDialogue
 [FarLeft][LoadMish]
@@ -361,29 +361,29 @@ perfectly if not for you![A]
 [Right]
 We'll speak to you again[N]
 if we find ourselves in[N]
-more need of flying troops.[A]
+more need of flying troops.[A][X]
 
 ## CadenzaFirstTalkDialogue
 [MidLeft][LoadCadenza]
 [Beat]My name is Cadenza, I can[N]
-support your army with my songs.[A]
+support your army with my songs.[A][X]
 
 ## CadenzaPickDialogue
 [MidRight][LoadCleo]
-Should I pick Cadenza?[No]
+Should I pick Cadenza?[No][X]
 
 ## CadenzaAcceptedDialogue
 [MidLeft][LoadCadenza]
-Very well[Beat] let's boogie[Beat][A]
+Very well[Beat] let's boogie[Beat][A][X]
 
 ## CadenzaRejectedDialogue
 [MidLeft][LoadCadenza]
 I see[Beat] I do not expect you to[N]
-understand the beauty of my music[Beat][A]
+understand the beauty of my music[Beat][A][X]
 
 ## FaolanPickDialogue
 [MidRight][LoadCleo]
-Should I pick Faolan?[No]
+Should I pick Faolan?[No][X]
 
 ## Ch5xStrategyRoom
 [FarLeft][LoadTrajan]
@@ -517,7 +517,7 @@ Ha, then I'll never give you[N]
 the chance. Good luck, you two.[A]
 [Right]
 My thanks. Now, let us see these[N]
-volunteers for ourselves[Beat][A]
+volunteers for ourselves[Beat][A][X]
 
 ## Ch5xCleoVargaTalk
 [MidLeft][LoadVarga]
@@ -609,7 +609,7 @@ soft after joining these rebels.[A]
 [Right][OneLineBox]
 Uh, perhaps we can delay that-[A]
 [MidLeft]
-No.[A]
+No.[A][X]
 
 ## Ch5xKwameLoeweTalk
 [MidLeft][LoadKwame]
@@ -685,24 +685,24 @@ that blade[Beat] I'm certain of it now.[AN]
 It interferes with the Halaka Suhaja's[N]
 ability to detect Byelen's blessings.[N]
 Why leave a child with such an item?[AN]
-Is this chance, or something more[Beat][A]
+Is this chance, or something more[Beat][A][X]
 
 ## Ch5xTrajanStopsYou
 [MidLeft][LoadTrajan]
 Come on, I said two, didn't I?[N]
-Talk to me when you're done.[A]
+Talk to me when you're done.[A][X]
 
 ## Ch5xTrajanConfirmation
 [MidLeft][LoadTrajan][MidRight][LoadCleo][MidLeft]
 Looks like you've made[N]
 your choice. Ready to go?[AN][CloseSpeechSlow]
 [MidRight]
-[ToggleMouthMove](Are we?)[ToggleMouthMove][No]
+[ToggleMouthMove](Are we?)[ToggleMouthMove][No][X]
 
 ## Ch5xTrajanRejection
 [MidLeft][LoadTrajan]
 Got it. Tell me when you're fully[N]
-prepared for the journey to Freyse.[A]
+prepared for the journey to Freyse.[A][X]
 
 ## Ch5xRecruitedTwoUnits
 [MidLeft][LoadLoewe]
@@ -711,7 +711,7 @@ That makes two new recruits. We can[N]
 only hope they were the right choices.[A]
 [MidLeft]
 Even if they aren't, we'll make it work.[N]
-Let's tell Trajan that we're done here.[A]
+Let's tell Trajan that we're done here.[A][X]
 
 
 
@@ -824,15 +824,15 @@ ever change your mind[Beat] I'll tell[N]
 you. That's a promise, Iskra.[A]
 [Left][TwoLineBox]
 [Beat]Thank you, Mom. Really[Beat][N]
-for everything you've done.[A]
+for everything you've done.[A][X]
 
 ## Ch5xIskraTalk
 [MidLeft][LoadIskra]
-This is a placeholder.[A]
+This is a placeholder.[A][X]
 
 ## Ch5xMiraTalk
 [MidLeft][LoadMira]
-This is a placeholder.[A]
+This is a placeholder.[A][X]
 
 ## Ch5xKwameSceneMiraAlive
 [MidLeft][LoadKwame][OneLineBox]
@@ -896,7 +896,7 @@ It is a welcome boon that those two have[N]
 an experienced guardian like her. Alone,[N]
 the rebels may be embers, but together,[AN]
 even sparks can form an inferno. We can[N]
-only hope Cythes fails to suppress it[Beat][A]
+only hope Cythes fails to suppress it[Beat][A][X]
 
 
 ## Ch5xKwameSceneMiraDead
@@ -912,7 +912,7 @@ are heartening. Alone, the rebels[N]
 may be embers, but together,[AN]
 even sparks can form an inferno.[N]
 I can only hope Cythes fails[N]
-to douse this growing flame[Beat][A]
+to douse this growing flame[Beat][A][X]
 
 ## Ch5xTrajanMeeting1
 [Right][LoadLoewe]
@@ -939,7 +939,7 @@ The man on the shore there. For now,[N]
 let us hurry and dock the boat. The[N]
 reserve unit will come and take it,[AN]
 and after that, we will use a land[N]
-route to reach our base of operations.[A]
+route to reach our base of operations.[A][X]
 
 ## Ch5xTrajanMeeting2
 [Right][LoadLoewe]
@@ -982,7 +982,7 @@ troops that cornered us. Honestly,[AN]
 I'm not sure what side he's on now,[N]
 or if he's even alive anymore.[A]
 [MidLeft][OneLineBox]
-Hm[Beat] And Mira?[A]
+Hm[Beat] And Mira?[A][X]
 
 ## Ch5xTrajanMeeting3MiraAlive
 [MidLeft][LoadTrajan]
@@ -997,7 +997,7 @@ that'd be quite a burden to carry.[A]
 Don't worry, I won't die. Not until[N]
 we've freed Decia, with our own hands.[A]
 [MidLeft][OneLineBox]
-I'm counting on that, Mira.[A]
+I'm counting on that, Mira.[A][X]
 
 ## Ch5xTrajanMeeting3MiraDead
 [MidLeft][LoadTrajan]
@@ -1016,7 +1016,7 @@ sooner, then maybe[Beat] Mira[Beat][A]
 [MidLeft]
 No, I apologize. That you two lived[N]
 is a miracle itself. I shouldn't have[N]
-expected anything more from you.[A]
+expected anything more from you.[A][X]
 
 ## Ch5xTrajanMeeting3MiraCaptured
 [MidLeft][LoadTrajan]
@@ -1036,7 +1036,7 @@ No, at the very least, she may still[N]
 be alive. We'll just have to rescue[N]
 her at the earliest opportunity.[A]
 [FarRight][OneLineBox]
-Right. That's all we can do now[Beat][A]
+Right. That's all we can do now[Beat][A][X]
 
 
 ## Ch5xTrajanMeeting4
@@ -1070,12 +1070,12 @@ time for that. Kwame can fill you in.[A]
 [Left][ThreeLineBox]
 Alright, we'll postpone it til later.[N]
 You two, take the boat around the back![N]
-I'll lead the way back to headquarters.[A]
+I'll lead the way back to headquarters.[A][X]
 
 ## Ch5xTrajanMeeting5
 [MidLeft][LoadTrajan]
 Hmm[Beat] Best we use the strategy room[N]
-for any important planning. Follow me![A]
+for any important planning. Follow me![A][X]
 
 ## Ch5xLoeweCleoTrajanTalk1
 [MidLeft][LoadTrajan]
@@ -1111,7 +1111,7 @@ for not being able to be there myself.[A][ToggleSmile]
 [FarRight][OneLineBox]
 I will. Let's go, Loewe![A]
 [Right]
-Right![A]
+Right![A][X]
 
 
 ## Ch5xLoeweCleoTrajanTalk2
@@ -1119,7 +1119,7 @@ Right![A]
 Dragana, are you watching over them?[N]
 They're doing a fine job, all thanks[N]
 to you[Beat] I'll uphold our oath,[AN]
-by Byelen's name. Leave the rest to me[Beat][A]
+by Byelen's name. Leave the rest to me[Beat][A][X]
 
 
 ## Ch5xEliasIntroduction
@@ -1156,7 +1156,7 @@ For security reasons, we must-[A]
 [MidRight][OneLineBox]
 Sure, sure. Is that all?[A]
 [MidLeft]
-[Beat]Yes, go ahead.[A]
+[Beat]Yes, go ahead.[A][X]
 
 ## Ch5xLeonidasIntroduction
 [MidLeft][LoadLeonidas]
@@ -1201,7 +1201,7 @@ I'll find her, you can count on it[Beat][N]
 Anyway, where is the emperor?[N]
 Did he get lost in Mahemen?[A]
 [FarFarLeft][OneLineBox]
-My apologies for the delay.[A]
+My apologies for the delay.[A][X]
 
 ## Ch5xOrfeasCoraliaIntroduction
 [FarLeft][LoadCoralia]
@@ -1292,7 +1292,7 @@ Yes, Grandfather.[A]
 [Left][ThreeLineBox]
 Elias, Leonidas[Beat] do not forget our noble[N]
 purpose. What we do is for the people[N]
-of Orodreth. May Byelen guide us all.[A]
+of Orodreth. May Byelen guide us all.[A][X]
 
 
 ## Ch5xLeonidasLeaves
@@ -1308,7 +1308,7 @@ Sorry, but no promises there.[A]
 Well, alright[Beat] Stay safe, son.[N]
 Tell me if Cleo resurfaces, please.[A]
 [MidRight][OneLineBox]
-You can count on me, Father.[A]
+You can count on me, Father.[A][X]
 
 
 ## Ch5xEliasCoraliaTalk
@@ -1379,7 +1379,7 @@ job to do, so I'll be taking my leave.[AN]
 Good luck with whatever you're plotting,[N]
 though I very much doubt you'll succeed.[A]
 [MidLeft][OneLineBox]
-W-Wait! Hold on, I still have-[A]
+W-Wait! Hold on, I still have-[A][X]
 
 ## Ch5xCoraliaEndingText
 [MidLeft][LoadCoralia][ThreeLineBox]
@@ -1391,4 +1391,4 @@ history of the Reclamation Wars, Havarti's[N]
 texts, and Grandfather's actions[Beat][AN]
 I will require someone on the inside.[N]
 Elias's resolve wavers[Beat] All I need do[N]
-is give him one[Beat] more[Beat] push.[A]
+is give him one[Beat] more[Beat] push.[A][X]

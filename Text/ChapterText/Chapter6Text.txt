@@ -1,41 +1,41 @@
 ## Chapter6Title
-Ch6: The Azurium Scepter
+Ch6: The Azurium Scepter[X]
 
 ## Ch6MapObj
-Seize Boat
+Seize Boat[X]
 
 ## Ch6Obj
 Reclaim your[N]
-boat.
+boat.[X]
 
 ## Ch6ArenaHint
 Put [Red]3[Red] units in the green squares[N]
 to enter or exit the arena.[AN]
 Don't cheat and have units standing[N]
-next to them, it won't work.[A]
+next to them, it won't work.[A][X]
 
-#T Ch6LongMonologueIntro
-Yuria Islands,
-the crown jewel of the Decian Sea.
-The floating city was constructed
-200 years ago, under the hands of
-a young couple, Alf and Eitha.
-A booming trade center at it[_']s
-time, the city amassed incredible
-wealth. Surpassing that of even the
-Decian royal family.
-With their new found wealth, they built
-the tower of guidance, as a symbol
-of gratitude to the supposed goddess
-of merchants and wealth.
-Their faith bore fruit, a branch of
-the tree of life was bestowed upon them.
-A bow and a staff was made out of this.
-The bow is known today as the renowned
-divine weapon Daybreaker. The staff,
-the Azurium Scepter, sank with the
-tower, it[_']s master, and it[_']s follower,
-into the depth.
+## Ch6LongMonologueIntro
+Yuria Islands,[N]
+the crown jewel of the Decian Sea.[AN]
+The floating city was constructed[N]
+200 years ago, under the hands of[AN]
+a young couple, Alf and Eitha.[AN]
+A booming trade center at it[_']s[N]
+time, the city amassed incredible[AN]
+wealth. Surpassing that of even the[N]
+Decian royal family.[AN]
+With their new found wealth, they built[N]
+the tower of guidance, as a symbol[AN]
+of gratitude to the supposed goddess[N]
+of merchants and wealth.[AN]
+Their faith bore fruit, a branch of[N]
+the tree of life was bestowed upon them.[AN]
+A bow and a staff was made out of this.[N]
+The bow is known today as the renowned[AN]
+divine weapon Daybreaker. The staff,[N]
+the Azurium Scepter, sank with the[AN]
+tower, it[_']s master, and it[_']s follower,[N]
+into the depth.[A][X]
 
 ## Ch6BarodCromarIntro
 [MidLeft][LoadBarod][MidRight][LoadCromar]
@@ -43,7 +43,7 @@ into the depth.
 Ladies and gentleman of the[N]
 grand oceanic arena![AN]
 Three cheers to Cromar,[N]
-our latest champion![A]
+our latest champion![A][X]
 
 ## Ch6CromarLeinaIntro
 [MidLeft][LoadLeina][MidRight][LoadCromar]
@@ -69,7 +69,7 @@ I don't want to lose you.[AN]
 I... feel the same, but[N]
 my sister must be avenged.[AN]
 Go,
-you don't have to see this.[A]
+you don't have to see this.[A][X]
 
 ## Ch6CromarVeidIntro
 [MidLeft][LoadCromar][MidRight][LoadVeid]
@@ -77,7 +77,7 @@ you don't have to see this.[A]
 I have what you asked.[AN]
 [MidRight]
 May the darkness guide[N]
-your blade.[A]
+your blade.[A][X]
 
 ## Ch6CromarMcCallumIntro
 [MidLeft][LoadCromar][MidRight][LoadMcCallum]
@@ -92,7 +92,7 @@ You killed my sister![AN]
 So my time has come...[N]
 Come then, try your luck.[AN]
 [MidLeft]
-I will kill you dead![A]
+I will kill you dead![A][X]
 
 ## Ch6BarodIntro
 [MidRight][LoadBarod]
@@ -102,7 +102,7 @@ show of the century![AN]
 Clear the arena gauntlet[N]
 to earn a great reward![AN]
 Fail, and you all die!![N]
-HAHAHAHAHHAHAHHAHAHHAA!![A]
+HAHAHAHAHHAHAHHAHAHHAA!![A][X]
 
 ## Ch6BarodIntro1
 [MidRight][LoadBarod]
@@ -111,7 +111,7 @@ Ebile Jungle.[AN]
 The diciples of axemaster,[N]
 THE BEAST, himself.[AN]
 The axe bros for life.[N]
-Welcome, Batta[_']s Beasts![A]
+Welcome, Batta[_']s Beasts![A][X]
 
 ## Ch6BarodIntro2
 [MidRight][LoadBarod]
@@ -121,7 +121,7 @@ Came the toughest of soldiers,[N]
 with actual speed stats.[AN]
 Forged in the flame of battle[N]
 they are tough as nails.[AN]
-Welcome, the 8th platoon![A]
+Welcome, the 8th platoon![A][X]
 
 ## Ch6BarodIntro3
 [MidRight][LoadBarod]
@@ -131,7 +131,7 @@ The blades calls to them,[N]
 guides their every move.[AN]
 The blades, hungers,[N]
 they must feast![AN]
-Welcome, the Edgeblades![A]
+Welcome, the Edgeblades![A][X]
 
 ## Ch6BarodIntro4
 [MidRight][LoadBarod]
@@ -141,7 +141,7 @@ Nonono, not for their grades,[N]
 but their dark power![AN]
 The alluring witch sisters[N]
 of the Darkling Woods.[AN]
-Welcome, the Sirens![A]
+Welcome, the Sirens![A][X]
 
 ## Ch6BarodIntro5
 [MidRight][LoadBarod]
@@ -150,19 +150,19 @@ himself, Zeus![AN]
 The god of thunder,[N]
 no, make it double![AN]
 Tremble before the might[N]
-of Brenthunder!!!!![A]
+of Brenthunder!!!!![A][X]
 
 ## Ch6BarodIntro5Response
 [MidLeft][LoadCleo][MidRight][LoadLoewe]
 [MidLeft]
 I'm not fighting that.[AN]
 [MidRight]
-Agreed.[A]
+Agreed.[A][X]
 
 ## Ch6BarodTurn2
 [MidRight][LoadBarod]
 Who put the lights out?[N]
-No matter, I have torches![A]
+No matter, I have torches![A][X]
 
 ## Ch6CleoLoeweIntro
 [MidLeft][LoadCleo][MidRight][LoadLoewe]
@@ -171,7 +171,7 @@ we can even get a[AN]
 few rounds in the arena.[AN]
 [MidLeft]
 Focus on the mission...[AN]
-God, what is that?[A]
+God, what is that?[A][X]
 
 ## Ch6PirateIntro
 [MidLeft][LoadDraken]
@@ -184,7 +184,7 @@ the waves of the depth[N]
 can not faze us![AN]
 Charge! Kill those bastards[N]
 who served me lobsters![AN]
-I HATE LOBSTERS![A]
+I HATE LOBSTERS![A][X]
 
 ## Ch6CleoLoeweIntro2
 [MidLeft][LoadCleo][MidRight][LoadLoewe]
@@ -211,7 +211,7 @@ If we find some Azurium,[N]
 we can turn one of us[AN]
 into an aquatic fighter.[AN]
 [MidLeft]
-Ugh, no thanks.[A]
+Ugh, no thanks.[A][X]
 
 ## Ch6CleoLeinaIntro
 [MidLeft][LoadLeina][Right][LoadCleo][FarRight][LoadLoewe]
@@ -252,7 +252,7 @@ expansive and definitely not a[AN]
 divine weapon or anything.[AN]
 [Right]
 Yeah, right.[N]
-(not suspicious at all...)[A]
+(not suspicious at all...)[A][X]
 
 ## Ch6ArranSamsonChoice1
 [MidLeft][LoadWoman1]
@@ -263,7 +263,7 @@ The guy next to me hates me[AN]
 so he probably won't give[N]
 you his barrier staff.[AN]
 But the physic staff is the[N]
-superior staff, right?[A]
+superior staff, right?[A][X]
 
 ## Ch6ArranSamsonChoice2
 [MidLeft][LoadMan1]
@@ -274,7 +274,7 @@ The girl next to me hates me[AN]
 so he probably won't give[N]
 you her physic staff.[AN]
 But the barrier staff is the[N]
-superior staff, right?[A]
+superior staff, right?[A][X]
 
 ## Ch6LoanShark
 [MidLeft][LoadMan1]
@@ -294,20 +294,20 @@ curse you all instead.[AN]
 What do you say?[AN]
 [No]
 [ClearPortrait]
-
+[X]
 
 ## Ch6CoinFlippingMinigame
 [MidLeft][LoadMan1]
 You wanna play a game?[N]
 Let[_']s flip a coin.[AN]
 500 gold,[N]
-heads or tails?[A]
+heads or tails?[A][X]
 
 ## HeadsText
-Heads
+Heads[X]
 
 ## TailsText
-Tails
+Tails[X]
 
 ## Ch6FishingMinigame
 [MidLeft][LoadMan1]
@@ -317,14 +317,14 @@ Pay me 50 gold to[N]
 cast the line.[AN]
 [No]
 [ClearPortrait]
-
+[X]
 
 ## Ch6SeaweedText
 ...[N]
 ...[AN]
 ...[N]
 ...[AN]
-Just seaweed.[A]
+Just seaweed.[A][X]
 
 ## Ch6SeahorseText
 ...[N]
@@ -332,7 +332,7 @@ Just seaweed.[A]
 ...[N]
 ...[AN]
 A seahorse, what a[N]
-worthless creature.[A]
+worthless creature.[A][X]
 
 ## Ch6MackerelText
 ...[N]
@@ -341,7 +341,7 @@ worthless creature.[A]
 ...[AN]
 A Mackerel, better[N]
 than nothing.[AN]
-+5 gold.[A]
++5 gold.[A][X]
 
 ## Ch6DoverSoleText
 ...[N]
@@ -350,7 +350,7 @@ than nothing.[AN]
 ...[AN]
 A Dover Sole,[N]
 decent catch.[AN]
-+50 gold.[A]
++50 gold.[A][X]
 
 ## Ch6EelText
 ...[N]
@@ -359,7 +359,7 @@ decent catch.[AN]
 ...[AN]
 An eel,[N]
 Nice catch.[AN]
-+80 gold.[A]
++80 gold.[A][X]
 
 ## Ch6TunaText
 ...[N]
@@ -368,7 +368,7 @@ Nice catch.[AN]
 ...[AN]
 A tuna,[N]
 Great catch.[AN]
-+120 gold.[A]
++120 gold.[A][X]
 
 ## Ch6ClamText
 ...[N]
@@ -378,7 +378,7 @@ Great catch.[AN]
 A clam,[N]
 You opened it,[AN]
 revealing a red gem.[N]
-Weird.[A]
+Weird.[A][X]
 
 ## Ch6OldBootText
 ...[N]
@@ -386,7 +386,7 @@ Weird.[A]
 ...[N]
 ...[AN]
 An old Boot, Not wearable[N]
-in it[_']s current state.[A]
+in it[_']s current state.[A][X]
 
 ## Ch6BootsText
 ...[N]
@@ -394,7 +394,7 @@ in it[_']s current state.[A]
 ...[N]
 ...[AN]
 A pair of boots,[N]
-how odd?[A]
+how odd?[A][X]
 
 ## Ch6BraveSwordText
 ...[N]
@@ -402,7 +402,7 @@ how odd?[A]
 ...[N]
 ...[AN]
 A brave sword??!![N]
-how odd?[A]
+how odd?[A][X]
 
 ## Ch6BraveLanceText
 ...[N]
@@ -410,7 +410,7 @@ how odd?[A]
 ...[N]
 ...[AN]
 A brave lance??!![N]
-how odd?[A]
+how odd?[A][X]
 
 ## Ch6BText
 ...[N]
@@ -421,7 +421,7 @@ You found a bottle[N]
 with a note in it.[AN]
 Everything is according to[N]
 plan. I[_']ve gained their trust.[AN]
-  --B[A]
+  --B[A][X]
 
 ## Ch6TalkingFish1Text
 ...[N]
@@ -433,7 +433,7 @@ speaking to you.[AN]
 As it begs for mercy,[N]
 you set if free.[AN]
 It spits out a[N]
-white gem.[A]
+white gem.[A][X]
 
 ## Ch6TalkingFish2Text
 ...[N]
@@ -447,7 +447,7 @@ you set if free.[AN]
 It spits out a[N]
 Brave Axe.[AN]
 How does it even fit[N]
-into the fish[_']s mouth?[A]
+into the fish[_']s mouth?[A][X]
 
 ## LeinaRecruitCromarWithRing
 [MidLeft][LoadLeina][MidRight][LoadCromar]
@@ -466,7 +466,7 @@ mage, right?[AN]
 Maybe she[_']s somehow in[N]
 Cythes magic academy.[AN]
 [MidRight]
-My sister might be alive...[A]
+My sister might be alive...[A][X]
 
 ## LeinaRecruitCromarWithKill
 [MidLeft][LoadLeina][MidRight][LoadCromar]
@@ -489,8 +489,8 @@ chance to make a[N]
 name for ourselves.[AN]
 You joining us?[AN]
 [MidRight]
-Wherever you go, milady.[A]
+Wherever you go, milady.[A][X]
 
 ## CromarYellAtLeina
 [MidLeft][LoadLeina][MidRight][LoadCromar]
-This is my fight![A]
+This is my fight![A][X]
