@@ -22,5 +22,8 @@ DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote)
 DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote)
 DeathQuote(Nora,AllChapters,0x0,NoraDeathQuote)
 DeathQuote(Hans,AllChapters,0x0,HansDeathQuote)
+DeathQuote(Wrathgar,Chapter9,2,WrathgarDeathQuote)
+DeathQuote(Jenny,AllChapters,0x0,JennyDeathQuote)
+DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote)
 
 DeathQuote(0xFFFF,0,0,0)

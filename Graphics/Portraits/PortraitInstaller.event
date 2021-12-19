@@ -505,10 +505,10 @@ setMugEntry(JennyMug, JennyMugData, 3, 6, 3, 4)
 
 ALIGN 16
 MeldanMugData:
-#incbin "Dmp/Meldan(Der)_mug.dmp"
-#incbin "Dmp/Meldan(Der)_frames.dmp"
-#incbin "Dmp/Meldan(Der)_palette.dmp"
-#incbin "Dmp/Meldan(Der)_minimug.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_mug.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_frames.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_palette.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_minimug.dmp"
 setMugEntry(MeldanMug, MeldanMugData, 2, 5, 3, 3)
 
 ALIGN 16
