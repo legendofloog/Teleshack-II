@@ -13,16 +13,17 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0x0, Turn357Spawn, 3)
+//TurnEventPlayer(0x0, Turn357Spawn, 3)
 TurnEventPlayer(0x0, Turn357Spawn, 5)
 TurnEventPlayer(0x0, Turn357Spawn, 7)
-TurnEventPlayer(0x0, Turn246Spawn, 2)
+//TurnEventPlayer(0x0, Turn246Spawn, 2)
 TurnEventPlayer(0x0, Turn246Spawn, 4)
 TurnEventPlayer(0x0, Turn246Spawn, 6)
 TurnEventPlayer(0x0, Turn101112Spawn, 10)
 TurnEventPlayer(0x0, Turn101112Spawn, 11)
 TurnEventPlayer(0x0, Turn101112Spawn, 12)
-TurnEventPlayer(0x0, JennyAndMeldanSpawn, 3)
+TurnEventPlayer(0x0, JennySpawn, 3)
+TurnEventPlayer(0x0, MeldanSpawn, 6)
 END_MAIN
 
 ALIGN 32
@@ -114,8 +115,11 @@ UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [Sli
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [SilverLance] TwoActionAI
 UNIT
 
-JennyAndMeldan:
+JennyReinforce:
 UNIT Jenny RookKnight 0x0 Level(4,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [LongLance,Javelin,IronSword] ChargeHealAI
+UNIT
+
+MeldanReinforce:
 UNIT Meldan DukeKnight 0x0 Level(5,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [Greatlance,BraveLance,LightRune] ChargeHealAI
 UNIT
 
@@ -152,6 +156,23 @@ Traps2:
 
 BeginningScene:
 	LOAD1 0x1 EnemyUnits
+	SetBackground(VillageRoad)
+	MUSC WindyDayBirdsSoundEffect
+	TEXTSHOW Ch9OpeningText
+	TEXTEND
+	REMA
+	FADI 15
+	SetBackground(CastleHallway)
+	MUSC TensionSong
+	TEXTSHOW Ch9WrathgarRant
+	TEXTEND
+	REMA
+	FADI 15
+	SetBackground(OvergrownArches)
+	TEXTSHOW MeldanWorryText
+	TEXTEND
+	REMA
+	FADI 15
 	ENUN
 	//Senny Rescued
 	CHECK_EVENTID 0x78 
@@ -175,8 +196,27 @@ ReinforcementEvent(Ch9Reinforce2)
 Turn101112Spawn:	
 ReinforcementEvent(Ch9Reinforce3)
 
-JennyAndMeldanSpawn:	
-ReinforcementEvent(JennyAndMeldan)
+JennySpawn:
+ReinforcementEvent(JennyReinforce)
+CHECK_EVENTID 0x78
+BEQ 8 s0 sC
+CAMERA Jenny
+FlashCursor(Jenny,60)
+Text(JennySpawnText)
+LABEL 8
+NoFade
+ENDA
+
+MeldanSpawn:
+ReinforcementEvent(MeldanReinforce)
+CHECK_EVENTID 0x79
+BEQ 9 s0 sC
+CAMERA Meldan
+FlashCursor(Meldan,60)
+Text(MeldanSpawnText)
+LABEL 9
+NoFade
+ENDA
 
 JennyTalkCh9:
 MUSS WithUs_Song
