@@ -13,15 +13,18 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-//TurnEventPlayer(0x0, Turn357Spawn, 3)
+TurnEventPlayer(0x0, Turn357Spawn, 9) //Might be overkill, so pushed to turn 9
 TurnEventPlayer(0x0, Turn357Spawn, 5)
 TurnEventPlayer(0x0, Turn357Spawn, 7)
-//TurnEventPlayer(0x0, Turn246Spawn, 2)
+//TurnEventPlayer(0x0, Turn246Spawn, 2) //Disabled
 TurnEventPlayer(0x0, Turn246Spawn, 4)
 TurnEventPlayer(0x0, Turn246Spawn, 6)
 TurnEventPlayer(0x0, Turn101112Spawn, 10)
 TurnEventPlayer(0x0, Turn101112Spawn, 11)
 TurnEventPlayer(0x0, Turn101112Spawn, 12)
+TurnEventPlayer(0x0, Turn121314Spawn,12)
+TurnEventPlayer(0x0, Turn121314Spawn,13)
+TurnEventPlayer(0x0, Turn121314Spawn,14)
 TurnEventPlayer(0x0, JennySpawn, 3)
 TurnEventPlayer(0x0, MeldanSpawn, 6)
 END_MAIN
@@ -140,6 +143,8 @@ UNIT
 Ch9Reinforce3:
 UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [KillingEdge,BraveLance,Elixir] ChargeHealAI
 UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [KillerLance,BraveSword,Elixir] ChargeHealAI
+
+Ch9Reinforce4:
 UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
 UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
 UNIT
@@ -196,8 +201,11 @@ ReinforcementEvent(Ch9Reinforce2)
 Turn101112Spawn:	
 ReinforcementEvent(Ch9Reinforce3)
 
+Turn121314Spawn:
+ReinforcementEvent(Ch9Reinforce4)
+
 JennySpawn:
-ReinforcementEvent(JennyReinforce)
+SpawnReinforcements(JennyReinforce)
 CHECK_EVENTID 0x78
 BEQ 8 s0 sC
 CAMERA Jenny
@@ -208,7 +216,7 @@ NoFade
 ENDA
 
 MeldanSpawn:
-ReinforcementEvent(MeldanReinforce)
+SpawnReinforcements(MeldanReinforce)
 CHECK_EVENTID 0x79
 BEQ 9 s0 sC
 CAMERA Meldan
@@ -280,7 +288,14 @@ EscapeCapturedCheck(Nora, 0xA2)
 EscapeCapturedCheck(Hans, 0xA3)
 EscapeCapturedCheck(Jenny, 0xA4)
 EscapeCapturedCheck(Meldan, 0xA5)
-
+SetBackground(CastleHallway)
+MUSC FF5_Nostalgia
+Text(Ch9EndingText)
+REMA
+FADI 15
+SetBackground(OvergrownArches)
+Text(Ch9EndingText2)
+REMA
 MNC2 Chapter10
 NoFade
 ENDA
