@@ -113,3 +113,18 @@ I must escape![AN][X]
 [MidLeft][LoadFrancis]
 Well, blast[Beat][N]
 Not how I wanted it to end[Beat][A][X]
+
+## JennyDeathQuote
+[MidLeft][LoadJenny]
+Sis...[Beat]Sorry.[Beat][N]
+I'm not gonna be coming home...[A][X]
+
+## MeldanDeathQuote
+[MidLeft][LoadMeldan]
+Can I be...[Beat] proud?[Beat][N]
+Of...[Beat] the life I led?[A][X]
+
+## WrathgarDeathQuote
+[MidRight][LoadWrathgar]
+Yes![Beat]Gooood!!![Beat][N]
+A proper end...[Beat]for a warrior![A][X]

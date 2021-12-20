@@ -14,6 +14,9 @@ UnspecifiedBattleConvo(Hilmar,Chapter4,11,HilmarBossQ)
 SpecifiedBattleConvo(Hege,Cleo,Chapter8,10,HegeCleoBossQ)
 UnspecifiedBattleConvo(Hege,Chapter8,1,HegeBossQ)
 UnspecifiedBattleConvo(Francis,Chapter8,12,FrancisBossQ)
+UnspecifiedBattleConvo(Wrathgar,Chapter9,9,WrathgarBossQ)
+UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
+UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
 
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator
