@@ -37,13 +37,25 @@ Escape(0,EscapeEventCheck,29,12)
 Escape(0,EscapeEventCheck,29,13)
 Escape(0,EscapeEventCheck,29,14)
 Escape(0,EscapeEventCheck,29,15)
+Escape(0,EscapeEventCheck,3,9)
 END_MAIN
 
 MiscBasedEvents:
 AFEV 15 AlexAxelFreed 9
 AFEV 0x65 DraganaDeathResponse 0x0D
+AFEV 0 CheckNoUnits 0
 CauseGameOverIfLordDies
 END_MAIN
+
+
+CheckNoUnits:
+ASMC GetBlueUnitCountASMC
+BNE 20 s0 sC
+	ENUT 0x03
+	CALL EndingScene
+LABEL 20
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -120,8 +132,8 @@ UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [26,4] 0x0 0x
 UNIT
 
 AllyUnits:
-UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [22,11] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
-UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [21,10] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [22,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [21,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EnemyReinforcements_A:

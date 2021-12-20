@@ -39,6 +39,7 @@ LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
 Escape(0,EscapeEventCheck,2,0)
 Escape(0,EscapeEventCheck,3,0)
+Escape(0,EscapeEventCheck,16,16)
 END_MAIN
 
 
@@ -47,9 +48,19 @@ AREA 0 CivilianEscape [14, 0] [15, 0]
 AFEV 12 LoeweSvetomirFreed 9
 AFEV 13 SennyFreed 10
 AFEV 15 HelmanFreed 11
+AFEV 0 CheckNoUnits 0
 CauseGameOverIfLordDies
 END_MAIN
 
+
+CheckNoUnits:
+ASMC GetBlueUnitCountASMC
+BNE 20 s0 sC
+	ENUT 0x03
+	CALL EndingScene
+LABEL 20
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -151,6 +162,7 @@ ALIGN 4
 
 
 BeginningScene:
+COUNTER_SET 0 0
 LOMA Ch1LoeweVillage
 LOAD1 1 Flashback1Units
 ENUN
@@ -314,9 +326,10 @@ ENDA
 
 
 LoeweIskraTalkCh1:
-MUSC Rovers
+MUSS Rovers
 Text(LoeweIskraTalkCh1Text)
 GiveItem(Kaiserschwert,Loewe)
+MURE 2
 NoFade
 ENDA
 
@@ -328,9 +341,10 @@ ENDA
 
 
 SvetomirAlenaTalkCh1:
-MUSC WithUs_Song
+MUSS WithUs_Song
 Text(SvetomirAlenaTalkCh1Text)
 CUSA Alena
+MURE 2
 NoFade
 ENDA
 
@@ -341,7 +355,7 @@ ENDA
 
 
 LoeweSvetomirFreed:
-MUSC WithUs_Song
+MUSS WithUs_Song
 Text(LoeweSvetomirFreedText)
 CUSA Loewe
 CUSA Svetomir
@@ -349,6 +363,7 @@ GiveItem(IronBow,Loewe)
 GiveItem(Heal,Svetomir)
 SilentGiveItem(Vulnerary,Loewe)
 SilentGiveItem(Vulnerary,Svetomir)
+MURE 2
 NoFade
 ENDA
 
@@ -406,15 +421,16 @@ NoFade
 ENDA
 
 EndingScene:
-CHECK_EVENTID 7
-BNE 2 s0 sC
-SilentGiveItem(Kaiserschwert,Loewe)
-LABEL 2
 EscapeCapturedCheck(Mira, 0x8B)
 EscapeCapturedCheck(Iskra, 0x8C)
 EscapeCapturedCheck(Emil, 0x8D)
 EscapeCapturedCheck(Svetomir, 0x8E)
 EscapeCapturedCheck(Alena, 0x8F)
+ENUN
+CHECK_EVENTID 7
+BNE 2 s0 sC
+SilentGiveItem(Kaiserschwert,Loewe)
+LABEL 2
 MUSC 0x7FFF
 FADI 15
 RemoveAll

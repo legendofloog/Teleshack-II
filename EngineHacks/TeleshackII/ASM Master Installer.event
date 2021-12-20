@@ -14,15 +14,24 @@
 #include "StatusExpansion/StatusExpansion.event"
 #include "FixedDamage/FixedDamageWeapons.event"
 #include "trade_fix/TradeabilityChanges.event"
-#include "Equip/Installer.event"
 
 
-// thief vision
+// thief vision set to 0
 
 PUSH
 ORG 0x0178C2
 BYTE 0x00
 POP
+
+// Pick AI list
+//PUSH
+//ORG $40C6A
+//POIN PickAITable
+//POP
+
+//PickAITable:
+//BYTE Thief Thief_F ThiefFighter ThiefFighter_F
+//BYTE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 // separator
 
 // torch vision
 PUSH
@@ -56,6 +65,13 @@ POP
 PUSH
 ORG $180FC
 SHORT 0xFF63
+POP
+
+// prep shop is same price as on map
+
+PUSH
+ORG $B5237
+BYTE 0xE0
 POP
 
 ALIGN 4

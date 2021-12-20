@@ -38,7 +38,7 @@ BYTE 0
 
 ALIGN 4
 FatigueStartingChapter:
-BYTE Chapter4
+BYTE Chapter3
 BYTE 0
 
 ALIGN 4

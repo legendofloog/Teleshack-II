@@ -26,8 +26,8 @@ BL(Supply_Fix)
 //ORG $1948a
 //BYTE $D2 $19			//fucks up shops, apparently
 
-ORG $9a554
-BL(Give_All)
+//ORG $9a554
+//BL(Give_All)
 
 //Inventory Full
 ORG $1e19e
@@ -52,9 +52,9 @@ Supply_Fix:
 #incbin "supply_fix.dmp"
 ALIGN 4
 
-Give_All:
-#incbin "giveall_fix2.dmp"
-ALIGN 4
+//Give_All:
+//#incbin "giveall_fix2.dmp"
+//ALIGN 4
 
 Inventory_Full:
 #incbin "inventory_full.dmp"

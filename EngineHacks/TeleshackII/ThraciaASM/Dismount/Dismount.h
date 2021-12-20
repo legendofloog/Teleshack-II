@@ -6,6 +6,8 @@ int MountUsability();
 const ClassData* GetDismountedClass(Unit* unit);
 const ClassData* GetMountedClass(Unit* unit);
 void UnitChangeClass(Unit* unit, const ClassData* newClass);
+void DismountAllASMC();
+void MountAllASMC();
 
 typedef struct DismountEntry DismountEntry;
 

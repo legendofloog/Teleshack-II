@@ -36,8 +36,19 @@ CharacterEventBothWays(8, MeldanTalkCh9, Meldan, 0x0)
 END_MAIN
 
 MiscBasedEvents:
+AFEV 0 CheckNoUnits 0
 CauseGameOverIfLordDies
 END_MAIN
+
+
+CheckNoUnits:
+ASMC GetBlueUnitCountASMC
+BNE 20 s0 sC
+	ENUT 0x03
+	CALL EndingScene
+LABEL 20
+NoFade
+ENDA
 
 LocationBasedEvents:
 Escape(0,EscapeEventCheck,19,0)
