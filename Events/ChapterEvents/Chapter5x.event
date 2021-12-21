@@ -522,10 +522,6 @@ Text(Ch5xStrategyRoom)
 FADI 15
 RemoveAll
 TILEREVERT 0
-MountAll
-ClearFatigue(Mira)
-ClearFatigue(Iskra)
-ClearFatigue(Varga)
 ENUN
 LOAD1 1 GreenUnits
 LOAD1 0 OldUnits

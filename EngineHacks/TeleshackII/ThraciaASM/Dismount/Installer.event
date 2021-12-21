@@ -6,8 +6,11 @@ MESSAGE Dismount ends at currentOffset
 
 #define MountedUnmounted(classIDMounted, classIDUnmounted) "BYTE classIDMounted classIDUnmounted"
 #define EndMountUnmountedTable "BYTE 0x00 0x00"
-#define DismountAll "ASMC DismountAllASMC"
-#define MountAll "ASMC MountAllASMC"
+
+#define DismountUnit(unit) "SVAL s1 unit; ASMC DismountUnitASMC"
+#define DismountAll "DismountUnit(Cleo); DismountUnit(Loewe); DismountUnit(Emil); DismountUnit(Iskra); DismountUnit(Leina); DismountUnit(Tobie); DismountUnit(Awa); DismountUnit(Faolan); DismountUnit(Nora); DismountUnit(Hans); DismountUnit(Meldan); DismountUnit(Jenny)"
+#define MountUnit(unit) "SVAL s1 unit; ASMC MountUnitASMC"
+#define MountAll "MountUnit(Cleo); MountUnit(Loewe); MountUnit(Emil); MountUnit(Iskra); MountUnit(Leina); MountUnit(Tobie); MountUnit(Awa); MountUnit(Faolan); MountUnit(Nora); MountUnit(Hans); MountUnit(Meldan); MountUnit(Jenny)"
 
 ALIGN 4
 MountedClassTable:

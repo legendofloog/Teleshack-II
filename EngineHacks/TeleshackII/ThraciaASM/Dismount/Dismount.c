@@ -2,6 +2,8 @@
 #include "FE-CLib-master/include/gbafe.h"
 #include "Dismount.h"
 
+Unit* GetUnitStructFromEventParameter(unsigned eventSlot);
+
 void DismountRoutine(Proc* procState){
 	Unit* unit = gActiveUnit;
 	UnitChangeClass(unit, GetDismountedClass(unit));
@@ -87,33 +89,27 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass){
 	MU_Create(unit);
 }
 
-void DismountAllASMC(){
-	int cnt;
-	for( cnt = 0; cnt <= 50; cnt++){
-		Unit currentUnit = gUnitArrayBlue[cnt];
-		if (currentUnit.index == 0){
-			break;
-		}
-		Unit* currentUnitPointer = &currentUnit;
-		const ClassData* dismountedClass = GetDismountedClass(currentUnitPointer);
-		if (dismountedClass != 0){
-		UnitChangeClass(currentUnitPointer, dismountedClass);
-		}
+void DismountUnitASMC(){
+	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
+	if(unit-> state & (US_DEAD | US_BIT16))
+	{
+		return;
+	} 
+	const ClassData* dismountedClass = GetDismountedClass(unit);
+	if (dismountedClass != 0){
+		UnitChangeClass(unit, dismountedClass);
 	}
 }
 
-void MountAllASMC(){
-	int cnt;
-	for( cnt = 0; cnt <= 50; cnt++){
-		Unit currentUnit = gUnitArrayBlue[cnt];
-		if (currentUnit.index == 0){
-			break;
-		}
-		Unit* currentUnitPointer = &currentUnit;
-		const ClassData* mountedClass = GetMountedClass(currentUnitPointer);
-		if (mountedClass != 0){
-		UnitChangeClass(currentUnitPointer, mountedClass);
-		}
+void MountUnitASMC(){
+	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
+	if(unit-> state & (US_DEAD | US_BIT16))
+	{
+		return;
+	} 
+	const ClassData* mountedClass = GetMountedClass(unit);
+	if (mountedClass != 0){
+		UnitChangeClass(unit, mountedClass);
 	}
 }
 

@@ -273,6 +273,7 @@ SHORT 0
 
 ALIGN 4
 BeginningScene:
+	MountAll
 	TILECHANGE 0
 	TILECHANGE 1
 
@@ -330,7 +331,6 @@ BeginningScene:
 
 	CameraCursor(Barod)
 	Text(Ch6BarodIntro)
-	MountAll
 	GotoPrepScreen
 	CLEAN
 NoFade
