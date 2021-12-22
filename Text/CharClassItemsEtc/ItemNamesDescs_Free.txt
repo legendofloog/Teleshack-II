@@ -197,13 +197,20 @@ Big Iron[X]
 Axle[X]
 
 ## Axle1Desc
-+8 Con. Axel[LockIcon].[X]
+Cannot be countered. Axel[LockIcon].[X]
 
 ## Axle2Desc
-Brave. Alex[LockIcon].[X]
+Halves enemy health. Alex[LockIcon].[X]
 
 ## MiaodaoName
 Miaodao[X]
 
 ## MiaodaoDesc
 Brave.[X]
+
+## ZykhraScrollName
+Zykhra Scroll[X]
+
+## ZykhraScrollDesc
++10% HP, +10% Str, +10% Def,[N]
++10% Bld, -10% Spd[X]

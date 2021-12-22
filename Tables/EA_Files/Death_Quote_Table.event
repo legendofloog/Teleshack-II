@@ -2,10 +2,22 @@
 
 #define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
-
+// Bosses
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
+DeathQuote(Emory_Ch3,Chapter3,2,0x0)
 DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
+DeathQuote(Hilmar,Chapter4,2,HilmarDeathQ)
+DeathQuote(Riggan,Chapter5,2,0x0)
+DeathQuote(Mifan,Chapter7,0,MifanDeathQuoteText)
+DeathQuote(TheGiant,Chapter7,0,TheGiantDeathQuoteText)
+DeathQuote(Yor,Chapter7,0,YorDeathQuoteText)
+DeathQuote(Wellworth,Chapter7,2,WellworthDeathQuoteText)
+DeathQuote(Hege,Chapter8,2,HegeDeathQuote)
+DeathQuote(Francis,Chapter8,8,FrancisDeathQuote)
+DeathQuote(Wrathgar,Chapter9,2,WrathgarDeathQuote)
+
+//player units
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
 DeathQuote(Cleo,AllChapters,0x65,CleoDeathQuoteText)
 DeathQuote(Mira,AllChapters,0x0,MiraDeathQuoteText)
@@ -15,5 +27,11 @@ DeathQuote(Svetomir,AllChapters,0x0,SvetomirDeathQuoteText)
 DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText)
 DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote)
 DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote)
-DeathQuote(Hilmar,Chapter4,0x2,HilmarDeathQ)
+DeathQuote(Iberis,AllChapters,0x0,IberisDeathQuoteText)
+DeathQuote(Buldak,AllChapters,0x0,BuldakDeathQuoteText)
+DeathQuote(Nora,AllChapters,0x0,NoraDeathQuote)
+DeathQuote(Hans,AllChapters,0x0,HansDeathQuote)
+DeathQuote(Jenny,AllChapters,0x0,JennyDeathQuote)
+DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote)
+
 DeathQuote(0xFFFF,0,0,0)

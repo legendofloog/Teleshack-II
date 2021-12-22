@@ -22,13 +22,13 @@ Artur,HouseText
 Gerik,HouseText
 Tethys,HouseText
 Marisa,HouseText
-Saleh,HouseText
-Ewan,HouseText
+Iberis,IberisEscapeQuoteText
+Buldak,BuldakEscapeQuoteText
 L'Arachel,HouseText
 Dozla,HouseText
 EMPTY,HouseText
-Rennac,HouseText
-Duessel,HouseText
+Jenny,JennyEscapeQuoteText
+Meldan,MeldanEscapeQuoteText
 Myrrh,HouseText
 Knoll,HouseText
 Joshua,HouseText
@@ -111,3 +111,5 @@ Hayden,HouseText
 0x6d,HouseText
 0x6e,HouseText
 0x6f,HouseText
+0x70,HouseText
+0x71,HouseText

@@ -130,6 +130,7 @@ CamOn
 LOAD1 1 EnemyReinforcements_A
 ENUN
 CamOff
+NoFade
 ENDA
 
 EnemyReinforcements_B:
@@ -144,10 +145,10 @@ CamOn
 LOAD1 1 EnemyReinforcements_B
 ENUN
 CamOff
+NoFade
 ENDA
 
 BeginningScene:
-DismountAll
 MUSC AdvanceSong
 SetBackground(Port)
 CenterTextbox(SysTextOpening)
@@ -177,6 +178,7 @@ NoFade
 ENDA
 
 EndingScene:
+RemoveAll
 FlagConditionalDialog(0x2,PostBattleBoss,PostBattleTime)
 SetBackground(Tavern)
 MUSC Rovers

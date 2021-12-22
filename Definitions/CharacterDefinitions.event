@@ -23,10 +23,10 @@
 #define Faolan 0x16
 #define Iberis 0x17
 #define Buldak 0x18
-#define LArachel 0x19
-#define Dozla 0x1A
-#define Rennac 0x1C
-#define Duessel 0x1D
+#define Nora 0x19
+#define Hans 0x1A
+#define Jenny 0x1C
+#define Meldan 0x1D
 #define Myrrh 0x1E
 #define Knoll 0x1F
 #define Joshua 0x20
@@ -67,6 +67,11 @@
 #define Wellworth 0x86
 #define Epony 0x87
 #define TheGiant 0x95
+// Chapter 8 Boss
+#define Hege 0x96
+#define Francis 0x97
+// Chapter 9 Boss
+#define Wrathgar 0x47
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
@@ -103,7 +108,6 @@
 
 #define Valter_Prologue 0x45
 #define Breguet 0x46
-#define Bone 0x47
 #define Bazba 0x48
 #define Entombed_boss 0x49
 #define Saar 0x4A
@@ -148,6 +152,8 @@
 #define OldCivilian 0xFC
 #define Wall 0xFE
 #define Snag 0xFF
+
+
 
 // TalkAI Defs
 

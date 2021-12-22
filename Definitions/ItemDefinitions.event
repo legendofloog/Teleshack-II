@@ -114,7 +114,7 @@
 #define Lockpick 0x6B
 #define Vulnerary 0x6C
 #define Elixir 0x6D
-#define PureWater 0x6D
+#define PureWater 0x6E
 #define Antitoxin 0x6F
 #define Torch 0x70
 #define TorchItem 0x70
@@ -234,3 +234,4 @@
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
+#define ZykhraScroll 0xD0

@@ -1,0 +1,337 @@
+
+{
+#include "Animations/Ephraim_Lord(Teraspark)/Sword Installer.event"
+#include "Animations/Ephraim_Lord(Teraspark)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Wyvern_Rider(Credits_in_folder)/Bow Installer.event"
+#include "Animations/Wyvern_Rider(Credits_in_folder)/Unarmed Installer.event"
+#include "Animations/Wyvern_Rider(Credits_in_folder)/Axe Installer.event"
+#include "Animations/Wyvern_Rider(Credits_in_folder)/Handaxe Installer.event"
+}
+
+{
+#include "Animations/Pegasus_Knight_Improved(Flasuban)/Axe Installer.event"
+#include "Animations/Pegasus_Knight_Improved(Flasuban)/Handaxe Installer.event"
+#include "Animations/Pegasus_Knight_Improved(Flasuban)/Lance Installer.event"
+#include "Animations/Pegasus_Knight_Improved(Flasuban)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Deserter(Alusq)/Lance Installer.event"
+#include "Animations/Deserter(Alusq)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Hero_Raven_Coat_Brown_Shield(Pikmin1211,Pushwall)/Sword Installer.event"
+#include "Animations/Hero_Raven_Coat_Brown_Shield(Pikmin1211,Pushwall)/Axe Installer.event"
+#include "Animations/Hero_Raven_Coat_Brown_Shield(Pikmin1211,Pushwall)/Handaxe Installer.event"
+#include "Animations/Hero_Raven_Coat_Brown_Shield(Pikmin1211,Pushwall)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/FE9_Fighter(MK404)/Axe Installer.event"
+#include "Animations/FE9_Fighter(MK404)/Handaxe Installer.event"
+#include "Animations/FE9_Fighter(MK404)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/FE9_Fighter_F(MK404,Pikmin1211,Maiser6)/Axe Installer.event"
+#include "Animations/FE9_Fighter_F(MK404,Pikmin1211,Maiser6)/Handaxe Installer.event"
+#include "Animations/FE9_Fighter_F(MK404,Pikmin1211,Maiser6)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Brigand_F_Barbarian(eCut,Skitty)/Axe Installer.event"
+#include "Animations/Brigand_F_Barbarian(eCut,Skitty)/Handaxe Installer.event"
+#include "Animations/Brigand_F_Barbarian(eCut,Skitty)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Berserker_F(eCut,Skitty,Serif)/Axe Installer.event"
+#include "Animations/Berserker_F(eCut,Skitty,Serif)/Handaxe Installer.event"
+#include "Animations/Berserker_F(eCut,Skitty,Serif)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Pirate_F(Nuramon)/Axe Installer.event"
+#include "Animations/Pirate_F(Nuramon)/Handaxe Installer.event"
+#include "Animations/Pirate_F(Nuramon)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Warrior_F_Repal(Temp,Pushwall)/Bow Installer.event"
+#include "Animations/Warrior_F_Repal(Temp,Pushwall)/Axe Installer.event"
+#include "Animations/Warrior_F_Repal(Temp,Pushwall)/Handaxe Installer.event"
+#include "Animations/Warrior_F_Repal(Temp,Pushwall)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Sergeant(Spud)/Lance Installer.event"
+#include "Animations/Sergeant(Spud)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Bow_Fighter(Leo_link,Knabepicer)/Bow Installer.event"
+}
+
+{
+#include "Animations/Hunter_F(Leo_link,Spud,MeatOfJustice)/Bow Installer.event"
+}
+
+{
+#include "Animations/Soldier_M(Alusq)/Lance Installer.event"
+#include "Animations/Soldier_M(Alusq)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Soldier_F(Alusq,Maiser6,Jey_the_Count)/Lance Installer.event"
+#include "Animations/Soldier_F(Alusq,Maiser6,Jey_the_Count)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Soldier_Axe(Waleed,Pushwall,Lord_Tweed)/Axe Installer.event"
+#include "Animations/Soldier_Axe(Waleed,Pushwall,Lord_Tweed)/Handaxe Installer.event"
+#include "Animations/Soldier_Axe(Waleed,Pushwall,Lord_Tweed)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Halberdier(TBA,Spud,MeatOfJustice)/Lance Installer.event"
+#include "Animations/Halberdier(TBA,Spud,MeatOfJustice)/Axe Installer.event"
+#include "Animations/Halberdier(TBA,Spud,MeatOfJustice)/Handaxe Installer.event"
+#include "Animations/Halberdier(TBA,Spud,MeatOfJustice)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Rogue_F_Reskin(credits in folder)/Sword Installer.event"
+#include "Animations/Rogue_F_Reskin(credits in folder)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Thief_Cath_Repal(Eldritch_Abomination)/Sword Installer.event"
+}
+
+{
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Sword Installer.event"
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Bow Installer.event"
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Lance Installer.event"
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Axe Installer.event"
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Magic Installer.event"
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Handaxe Installer.event"
+#include "Animations/Armor_All_Weapons(Salvaged,Iscaneus)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/General_All_Weapons(TBA,knabepicer,Dabmaster110)/Axe Installer.event"
+#include "Animations/General_All_Weapons(TBA,knabepicer,Dabmaster110)/Handaxe Installer.event"
+#include "Animations/General_All_Weapons(TBA,knabepicer,Dabmaster110)/Bow Installer.event"
+#include "Animations/General_All_Weapons(TBA,knabepicer,Dabmaster110)/Sword Installer.event"
+#include "Animations/General_All_Weapons(TBA,knabepicer,Dabmaster110)/Lance Installer.event"
+#include "Animations/General_All_Weapons(TBA,knabepicer,Dabmaster110)/Unarmed Installer.event"
+#include "Animations/Baron(Der_the_Vaporeon,others_inside)/Magic Installer.event"
+}
+
+{
+#include "Animations/Armored_Wyvern_Lord(Nuramon)/Bow Installer.event"
+#include "Animations/Armored_Wyvern_Lord(Nuramon)/Sword Installer.event"
+#include "Animations/Armored_Wyvern_Lord(Nuramon)/Axe Installer.event"
+#include "Animations/Armored_Wyvern_Lord(Nuramon)/Handaxe Installer.event"
+#include "Animations/Armored_Wyvern_Lord(Nuramon)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Axe Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Handaxe Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Lance Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Staff Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Mage_Knight_M(Aruka,Kenpuhu)/Magic Installer.event"
+#include "Animations/Mage_Knight_M(Aruka,Kenpuhu)/Sword Installer.event"
+}
+
+{
+#include "Animations/Mage_Knight_F(Aruka,Kenpuhu)/Magic Installer.event"
+#include "Animations/Mage_Knight_F(Aruka,Kenpuhu)/Sword Installer.event"
+}
+
+{
+#include "Animations/Dark_Mage_Staff_Anims/Staff Installer_F(Jeorge_Reds).event"
+}
+
+{
+#include "Animations/Dark_Mage_Staff_Anims/Staff Installer_M(Temp).event"
+}
+
+{
+#include "Animations/Bard_M(L95,Leo_link,Flasuban)/Magic Installer.event"
+}
+
+{
+#include "Animations/Devotee_F(Teraspark)/Magic Installer.event"
+#include "Animations/Devotee_F(Teraspark)/Staff Installer.event"
+}
+
+{
+#include "Animations/Thief_Matthew_Repal(Eldritch_Abomination)/Sword Installer.event"
+}
+
+{
+#include "Animations/Cavalier_M(SALVAGED+others)/Sword Installer.event"
+#include "Animations/Cavalier_M(SALVAGED+others)/Axe Installer.event"
+#include "Animations/Cavalier_M(SALVAGED+others)/Handaxe Installer.event"
+#include "Animations/Cavalier_M(SALVAGED+others)/Lance Installer.event"
+#include "Animations/Cavalier_M(SALVAGED+others)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Nomad_M_NonSacaen(eCut)/Bow Installer.event"
+#include "Animations/Nomad_M_NonSacaen(eCut)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Cavalier_F(SALVAGED+others)/Sword Installer.event"
+#include "Animations/Cavalier_F(SALVAGED+others)/Axe Installer.event"
+#include "Animations/Cavalier_F(SALVAGED+others)/Handaxe Installer.event"
+#include "Animations/Cavalier_F(SALVAGED+others)/Lance Installer.event"
+#include "Animations/Cavalier_F(SALVAGED+others)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Nomad_F_LongHair(eCut,Pikmin1211,Maiser6)/Bow Installer.event"
+#include "Animations/Nomad_F_LongHair(eCut,Pikmin1211,Maiser6)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Rogue_M_Repal(Eldritch_Abomination)/Sword Installer.event"
+#include "Animations/Rogue_M_Repal(Eldritch_Abomination)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Ranger(IS)/Sword Installer.event"
+#include "Animations/Ranger(IS)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Ranger_F(IS)/Sword Installer.event"
+#include "Animations/Ranger_F(IS)/Unarmed Installer.event"
+}
+
+
+{
+#include "Animations/Nomad_Trooper_F(Pikmin1211,Maiser6)/Bow Installer.event"
+#include "Animations/Nomad_Trooper_F(Pikmin1211,Maiser6)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Nomad_Trooper(Pikmin1211,Maiser6)/Bow Installer.event"
+#include "Animations/Nomad_Trooper(Pikmin1211,Maiser6)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Eliwood_Repal(Temp)/Lance Installer.event"
+#include "Animations/Eliwood_Repal(Temp)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/GrandPaladin(Aruku,Kenpuhu,Nuramon)/Axe Installer.event"
+#include "Animations/GrandPaladin(Aruku,Kenpuhu,Nuramon)/Handaxe Installer.event"
+#include "Animations/GrandPaladin(Aruku,Kenpuhu,Nuramon)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/GrandPaladinF(Aruku,Kenpuhu,Nuramon,LordTweed)/Axe Installer.event"
+#include "Animations/GrandPaladinF(Aruku,Kenpuhu,Nuramon,LordTweed)/Handaxe Installer.event"
+#include "Animations/GrandPaladinF(Aruku,Kenpuhu,Nuramon,LordTweed)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Troubadour_F(Pikmin1211,Maiser6,TBA)/Staff Installer.event"
+#include "Animations/Troubadour_F(Pikmin1211,Maiser6,TBA)/Sword Installer.event"
+#include "Animations/Troubadour_F(Pikmin1211,Maiser6,TBA)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Troubadour_M_Deacon(credits_inside)/Staff Installer.event"
+#include "Animations/Troubadour_M_Deacon(credits_inside)/Sword Installer.event"
+#include "Animations/Troubadour_M_Deacon(credits_inside)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Paladin_M(Salvaged,Leo_link,Pikmin1211,others)/Sword Installer.event"
+#include "Animations/Paladin_M(Salvaged,Leo_link,Pikmin1211,others)/Lance Installer.event"
+#include "Animations/Paladin_M(Salvaged,Leo_link,Pikmin1211,others)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Paladin_F(Salvaged,Leo_link,Flasuban)/Sword Installer.event"
+#include "Animations/Paladin_F(Salvaged,Leo_link,Flasuban)/Lance Installer.event"
+#include "Animations/Paladin_F(Salvaged,Leo_link,Flasuban)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Master_Knight_M(St_jack)/Sword Installer.event"
+#include "Animations/Master_Knight_M(St_jack)/Bow Installer.event"
+#include "Animations/Master_Knight_M(St_jack)/Magic Installer.event"
+#include "Animations/Master_Knight_M(St_jack)/Staff Installer.event"
+}
+
+{
+#include "Animations/Master_Knight_F(St_jack)/Sword Installer.event"
+#include "Animations/Master_Knight_F(St_jack)/Bow Installer.event"
+#include "Animations/Master_Knight_F(St_jack)/Magic Installer.event"
+#include "Animations/Master_Knight_F(St_jack)/Staff Installer.event"
+}
+
+{
+#include "Animations/Mercenary_F(TBA)/Sword Installer.event"
+#include "Animations/Mercenary_F(TBA)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Sword Installer.event"
+#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Axe Installer.event"
+#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Handaxe Installer.event"
+#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Bow Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Axe Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Handaxe Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Staff Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Sword Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Lance Installer.event"
+#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Bow Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Axe Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Handaxe Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Staff Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Sword Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Lance Installer.event"
+#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Bard_F(L95, Leo_link, Flasuban)/Magic Installer.event"
+}
+
+{
+#include "Animations/BattleSage(St_jack)/Magic Installer.event"
+#include "Animations/BattleSage(St_jack)/Sword Installer.event"
+}
+
+{
+#include "Animations/BattleSage_F(St_jack)/Magic Installer.event"
+#include "Animations/BattleSage_F(St_jack)/Sword Installer.event"
+}
+
+{
+#include "Animations/Ballistician(Spud,Ren_Ookami,Pushwall)/Bow Installer.event"
+}

@@ -24,6 +24,10 @@
 #define DraganaMug 0x2D
 #define IberisMug 0x20
 #define BuldakMug 0x21
+#define NoraMug 0x22
+#define HansMug 0x23
+#define JennyMug 0x24
+#define MeldanMug 0x25
 
 
 // NPCs
@@ -54,6 +58,9 @@
 #define MifanMug 0x03
 #define TheGiantMug 0x41
 #define YorMug 0x28
+#define HegeMug 0x4C
+#define FrancisMug 0x31
+#define WrathgarMug 0x32
 
 ALIGN 16
 BarodMugData:
@@ -398,7 +405,7 @@ BuldakMugData:
 #incbin "Dmp/Buldak(RandomWizard)_frames.dmp"
 #incbin "Dmp/Buldak(RandomWizard)_palette.dmp"
 #incbin "Dmp/Buldak(RandomWizard)_minimug.dmp"
-setMugEntry(BuldakMug, BuldakMugData, 4, 6, 3, 3)
+setMugEntry(BuldakMug, BuldakMugData, 4, 6, 3, 4)
 
 ALIGN 16
 IberisMugData:
@@ -406,7 +413,7 @@ IberisMugData:
 #incbin "Dmp/Iberis(NICKT)_frames.dmp"
 #incbin "Dmp/Iberis(NICKT)_palette.dmp"
 #incbin "Dmp/Iberis(NICKT)_minimug.dmp"
-setMugEntry(IberisMug, IberisMugData, 2, 6, 3, 3)
+setMugEntry(IberisMug, IberisMugData, 2, 6, 2, 4)
 
 ALIGN 16
 EponyMugData:
@@ -414,7 +421,7 @@ EponyMugData:
 #incbin "Dmp/Epony(RisingSolaris)_frames.dmp"
 #incbin "Dmp/Epony(RisingSolaris)_palette.dmp"
 #incbin "Dmp/Epony(RisingSolaris)_minimug.dmp"
-setMugEntry(EponyMug, EponyMugData, 4, 6, 3, 3)
+setMugEntry(EponyMug, EponyMugData, 4, 6, 4, 4)
 
 ALIGN 16
 MifanMugData:
@@ -422,7 +429,7 @@ MifanMugData:
 #incbin "Dmp/Mifan(MK404,Flasuban)_frames.dmp"
 #incbin "Dmp/Mifan(MK404,Flasuban)_palette.dmp"
 #incbin "Dmp/Mifan(MK404,Flasuban)_minimug.dmp"
-setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 3)
+setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 4)
 
 ALIGN 16
 RadnitzMugData:
@@ -438,7 +445,7 @@ TheGiantMugData:
 #incbin "Dmp/TheGiant(Capibraininspace)_frames.dmp"
 #incbin "Dmp/TheGiant(Capibraininspace)_palette.dmp"
 #incbin "Dmp/TheGiant(Capibraininspace)_minimug.dmp"
-setMugEntry(TheGiantMug, TheGiantMugData, 2, 4, 3, 3)
+setMugEntry(TheGiantMug, TheGiantMugData, 2, 4, 2, 2)
 
 ALIGN 16
 WellworthMugData:
@@ -454,7 +461,60 @@ YorMugData:
 #incbin "Dmp/Yor(RandomWizard)_frames.dmp"
 #incbin "Dmp/Yor(RandomWizard)_palette.dmp"
 #incbin "Dmp/Yor(RandomWizard)_minimug.dmp"
-setMugEntry(YorMug, YorMugData, 3, 5, 3, 3)
+setMugEntry(YorMug, YorMugData, 3, 5, 4, 3)
 
+ALIGN 16
+NoraMugData:
+#incbin "Dmp/Nora(Levin)_mug.dmp"
+#incbin "Dmp/Nora(Levin)_frames.dmp"
+#incbin "Dmp/Nora(Levin)_palette.dmp"
+#incbin "Dmp/Nora(Levin)_minimug.dmp"
+setMugEntry(NoraMug, NoraMugData, 2, 5, 3, 3)
 
+ALIGN 16
+HansMugData:
+#incbin "Dmp/Hans(NICKT)_mug.dmp"
+#incbin "Dmp/Hans(NICKT)_frames.dmp"
+#incbin "Dmp/Hans(NICKT)_palette.dmp"
+#incbin "Dmp/Hans(NICKT)_minimug.dmp"
+setMugEntry(HansMug, HansMugData, 4, 5, 4, 3)
 
+ALIGN 16
+HegeMugData:
+#incbin "Dmp/Hege(RandomWizard)_mug.dmp"
+#incbin "Dmp/Hege(RandomWizard)_frames.dmp"
+#incbin "Dmp/Hege(RandomWizard)_palette.dmp"
+#incbin "Dmp/Hege(RandomWizard)_minimug.dmp"
+setMugEntry(HegeMug, HegeMugData, 3, 6, 3, 4)
+
+ALIGN 16
+FrancisMugData:
+#incbin "Dmp/Francis(XVI)_mug.dmp"
+#incbin "Dmp/Francis(XVI)_frames.dmp"
+#incbin "Dmp/Francis(XVI)_palette.dmp"
+#incbin "Dmp/Francis(XVI)_minimug.dmp"
+setMugEntry(FrancisMug, FrancisMugData, 3, 5, 3, 3)
+
+ALIGN 16
+JennyMugData:
+#incbin "Dmp/Jenny(CapibaraInSpace)_mug.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace)_frames.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace)_palette.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace)_minimug.dmp"
+setMugEntry(JennyMug, JennyMugData, 3, 6, 3, 4)
+
+ALIGN 16
+MeldanMugData:
+#incbin "Dmp/Meldan(Relic, RandomWizard)_mug.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_frames.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_palette.dmp"
+#incbin "Dmp/Meldan(Relic, RandomWizard)_minimug.dmp"
+setMugEntry(MeldanMug, MeldanMugData, 2, 5, 3, 3)
+
+ALIGN 16
+WrathgarMugData:
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_mug.dmp"
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_frames.dmp"
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_palette.dmp"
+#incbin "Dmp/Wrathgar(DerTheVaporeon)_minimug.dmp"
+setMugEntry(WrathgarMug, WrathgarMugData, 2, 5, 2, 3)

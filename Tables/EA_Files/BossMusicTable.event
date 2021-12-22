@@ -8,6 +8,12 @@ BossBGMEntry(Boro_Ch1, UnfinishedBattleGodSyndrome)
 BossBGMEntry(Hilmar, Lufia2_RoS_Battle2)
 BossBGMEntry(Tyr_Ch2, Lufia2_RoS_Battle2)
 BossBGMEntry(Emory_Ch3, Lufia2_RoS_Battle2)
+BossBGMEntry(Hege, fe2bossarr)
+BossBGMEntry(Francis, fe2bossarr)
+BossBGMEntry(Yor, Lufia2_RoS_Battle2)
+BossBGMEntry(Wellworth, Lufia2_RoS_Battle2)
+BossBGMEntry(TheGiant, Lufia2_RoS_Battle2)
+BossBGMEntry(Mifan, Lufia2_RoS_Battle2)
 BossBGMTerminator
 
 PUSH

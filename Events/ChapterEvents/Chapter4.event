@@ -93,7 +93,7 @@ UNIT Chapter1Generics AxeSoldier   0x0 Level(3,Enemy,True) [0,7] 0 0 1 REDA2R7 [
 	UNIT
 	
 WhenTheThiefIsSus:
-UNIT 0x64 Thief   0x0 Level(2,Enemy,True) [11,16] 0 0 1 REDA10R16 [KillingEdge] ThiefAI
+UNIT 0x64 Thief   0x0 Level(2,Enemy,True) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
 UNIT
 
 Rein1:
@@ -152,45 +152,59 @@ UNIT
 
 LeEpicRecruits:
 UNIT Zwieback BowArmor 0x1 Level(6, Ally, 0)   [0,5] 0 0 1 REDA8R4 [SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
-UNIT Filone Archer_F 0x1 Level(1, Ally, 0)   [0,4] 0 0 1 REDA7R4 [SlimBow,Elixir,] [0x0,0x0,0x0,0x0]
+UNIT Filone Archer_F 0x1 Level(1, Ally, 0)   [0,4] 0 0 1 REDA7R4 [SlimBow,Elixir] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 HolyShitItIsDream:
+CamOn
 LoadReinforcements(WhenTheThiefIsSus)
+CamOff
 NoFade
 ENDA
 
 IWearAMaskWithASmile:
+CamOn
 LoadReinforcements(Rein1)
+CamOff
 NoFade
 ENDA
 
 ForHoursAtATime:
+CamOn
 LoadReinforcements(Rein2)
 STAL 5
 LoadReinforcements(ReinEPIC)
+CamOff
 NoFade
 ENDA
 
 StareAtTheCeiling:
+CamOn
 LoadReinforcements(Rein3)
 STAL 5
 LoadReinforcements(ReinEPIC2)
+CamOff
 NoFade
 ENDA
 
 WhileIHoldBackWhatsOnMyMind:
+CamOn
 LoadReinforcements(Rein4)
+CamOff
 NoFade
 ENDA
 
 AndWhenTheyAskMeHow:
+CamOn
 LoadReinforcements(Rein5)
+CamOff
 NoFade
 ENDA
 
 ImDoingISayImJustFine:
+CamOn
 LoadReinforcements(Rein6)
+CamOff
 NoFade
 ENDA
 
@@ -218,6 +232,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+MountAll
 Music(SolveTheRiddle)
 SetBackground(0x10)
 Text(Ch4Intro1)

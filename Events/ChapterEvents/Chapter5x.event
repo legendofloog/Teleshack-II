@@ -274,6 +274,10 @@ Units1:
 UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [8,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
+CleoSelectionUnitGroup:
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [8,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
 GreenUnits:
 UNIT Gimm Thief Cleo Level(4,NPC,False) [2,8] 0x0 0x0 0x0 0x1 [DevilDagger,Vulnerary]     NoAI
 UNIT Tobie PegasusRider_Dismounted Cleo Level(5,NPC,False) [2,9] 0x0 0x0 0x0 0x1 [SlimLance,LongLance,Vulnerary]     NoAI
@@ -518,28 +522,26 @@ Text(Ch5xStrategyRoom)
 FADI 15
 RemoveAll
 TILEREVERT 0
-LOAD1 0 Units1
+ENUN
 LOAD1 1 GreenUnits
 LOAD1 0 OldUnits
+LOAD1 1 CleoSelectionUnitGroup
 ENUN
 CHECK_ALIVE Iskra
 BEQ 1 s0 sC
-	ClearFatigue(Iskra)
 	CUSN Iskra
 LABEL 1
 CHECK_ALIVE Mira
 BEQ 2 s0 sC
-	ClearFatigue(Mira)
 	CUSN Mira
 LABEL 2
 CHECK_ALIVE Varga
 BEQ 3 s0 sC
-	ClearFatigue(Varga)
 	CUSN Varga
 LABEL 3
-FADU 5
+FADU 15
+
 CamOff
-GotoPrepScreen
 ENDA
 
 EndingScene:

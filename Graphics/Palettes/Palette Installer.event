@@ -120,6 +120,33 @@ RigganMage:
 FaolanRookKnight:
 	#incbin "./_palettes/FaolanRookKnight.lzpal" 
 
-FaolanGoldKnight:
-	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
+NoraDragonRider:
+	#incbin "./_palettes/NoraDragonRider.lzpal" 
+
+NoraDracoknight:
+	#incbin "./_palettes/NoraDracoknight.lzpal" 
+
+NoraRiderUnmounted:
+	#incbin "./_palettes/NoraRiderUnmounted.lzpal" 
+
+NoraKnightUnmounted:
+	#incbin "./_palettes/NoraKnightUnmounted.lzpal" 
+
+HansSwordKnight:
+	#incbin "./_palettes/HansSwordKnight.lzpal" 
+
+HansForrestKnight:
+	#incbin "./_palettes/HansForrestKnight.lzpal" 
+
+HansSwordKnightUnmounted:
+	#incbin "./_palettes/HansSwordKnightUnmounted.lzpal" 
+
+HansForrestKnightUnmounted:
+	#incbin "./_palettes/HansForrestKnightUnmounted.lzpal" 
+
+FrancisHalberdier:
+	#incbin "./_palettes/FrancisHalberdier.lzpal" 
+
+HegeMercenary:
+	#incbin "./_palettes/HegeMercenary.lzpal" 
 

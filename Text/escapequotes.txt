@@ -49,3 +49,32 @@ No sense in dying here.[X]
 [MidRight][LoadFangai]
 Uwa ha ha! My last meal[N]
 will not be tonight![A][X]
+
+## IberisEscapeQuoteText
+[MidRight][LoadFangai]
+Maybe... Should have...[N]
+brought lighter... armour.[A][X]
+
+## BuldakEscapeQuoteText
+[MidRight][LoadBuldak]
+Another day, another brush with[N]
+death. Only a matter of time.[A][X]
+
+## NoraEscapeQuoteText
+[MidRight][LoadNora]
+For Lord Radnitz's sake,[N]
+I must make my retreat![A][X]
+
+## HansEscapeQuoteText
+[MidRight][LoadHans]
+[Beat][A][X]
+
+## JennyEscapeQuoteText
+[MidRight][LoadJenny]
+No sense staying here.[N]
+Come on everyone![A][X]
+
+## MeldanEscapeQuoteText
+[MidRight][LoadMeldan]
+...Oh? We're leaving?[N]
+Well, ok then.[A][X]
