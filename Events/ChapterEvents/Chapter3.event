@@ -55,7 +55,7 @@ BNE 20 s0 sC
 	CALL EndingScene
 LABEL 20
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN

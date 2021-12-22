@@ -83,7 +83,7 @@ UNIT
 	
 NewPlayers:
 UNIT Longxia Corsair_F Cleo Level(3,Ally,False) [13,27] 0x0 0x0 0x0 0x0 [SlimAxe,Hurlbat] NoAI
-UNIT Fangai DarkMage Cleo Level(3,Ally,False) [15,25] 0x0 0x0 0x0 0x0 [Arachnid,Heal,TorchStaff] NoAI
+UNIT Fangai DarkMage Cleo Level(5,Ally,False) [15,25] 0x0 0x0 0x0 0x0 [Arachnid,Heal,TorchStaff] NoAI
 UNIT
 
 EnemyUnits:
@@ -149,6 +149,7 @@ NoFade
 ENDA
 
 BeginningScene:
+MountAll
 MUSC AdvanceSong
 SetBackground(Port)
 CenterTextbox(SysTextOpening)

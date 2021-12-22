@@ -28,20 +28,21 @@ ALIGN 4
 BattleAnimListByCharTable:
 BYTE Nora DragonRider_Dismounted 0 0; POIN NoraDRUnmountedAnimList
 BYTE Nora Dracoknight_Dismounted 0 0; POIN NoraDKUnmountedAnimList
+BYTE Jenny RookKnight 0 0
 WORD 0 //Terminator
 
 NoraDRUnmountedAnimList:
-BYTE 2 1; SHORT DismountedFAxeAnim //axe
-BYTE 40 0; SHORT DismountedFHandAxeAnim //handaxe
-BYTE 41 0; SHORT DismountedFHandAxeAnim //handaxe
-BYTE 200 0; SHORT DismountedFHandAxeAnim //handaxe
-BYTE 9 1; SHORT DismountedFUnarmedAnim //unarmed
+BYTE 0 1; SHORT DismountedFAxeAnim //axe
+BYTE 9 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 18 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 27 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 36 1; SHORT DismountedFUnarmedAnim //unarmed
 WORD 0 //Terminator
 
 NoraDKUnmountedAnimList:
-BYTE 2 1; SHORT DismountedFAxeAnim //axe
-BYTE 40 0; SHORT DismountedFHandAxeAnim //handaxe
-BYTE 41 0; SHORT DismountedFHandAxeAnim //handaxe
-BYTE 200 0; SHORT DismountedFHandAxeAnim //handaxe
-BYTE 9 1; SHORT DismountedFUnarmedAnim //unarmed
+BYTE 0 1; SHORT DismountedFAxeAnim //axe
+BYTE 9 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 18 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 27 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 36 1; SHORT DismountedFUnarmedAnim //unarmed
 WORD 0 //Terminator

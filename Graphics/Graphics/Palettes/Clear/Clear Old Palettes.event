@@ -1,6 +1,0 @@
-PUSH
-ORG 0x95EEA4
-#incbin "BlankPal.dmp"
-ORG 0x95E0A4
-#incbin "BlankPal.dmp"
-POP

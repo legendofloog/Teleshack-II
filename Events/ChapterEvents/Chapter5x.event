@@ -360,8 +360,7 @@ UNIT
 
 BeginningScene:
 COUNTER_SET 0 0
-/*
-*/
+DismountAll
 LOMA Ch5xBoatScenes
 //beginning of boat scenes
 RECLASS Cleo Skyseeker_Dismounted

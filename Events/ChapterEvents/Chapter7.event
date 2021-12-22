@@ -142,7 +142,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-CALL $9EE2C4
+MountAll
 LOAD1 1 NewRecruit
 LOAD1 1 EnemyUnits
 LOAD1 1 GreenUnits

@@ -733,3 +733,11 @@ SwordAnim(MageKnightFDismountedSwordAnim)
 AnimaAnim(MageKnightFDismountedMagicAnim)
 UnarmedAnim(MageKnightFDismountedMagicAnim)
 EndAnim
+
+ALIGN 4
+WarriorAnims:
+AxeAnim(0x1C)
+BowAnim(0x1E)
+HandAxeAnim(0x1D)
+UnarmedAnim(0x1F)
+EndAnim

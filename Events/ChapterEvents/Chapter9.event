@@ -48,7 +48,7 @@ BNE 20 s0 sC
 	CALL EndingScene
 LABEL 20
 NoFade
-ENDA
+ENDB
 
 LocationBasedEvents:
 Escape(0,EscapeEventCheck,19,0)
@@ -171,6 +171,8 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	COUNTER_SET 0 0 //for escape purposes
+	MountAll
 	LOAD1 0x1 EnemyUnits
 	SetBackground(VillageRoad)
 	MUSC WindyDayBirdsSoundEffect
