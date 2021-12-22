@@ -21,14 +21,14 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x13 Tobie,1,10
 0x14 Awa,0,5
 0x15 Cadenza,3,30
-0x17 Iberis,0,5
-0x18 Buldak,1,30
-0x19 Nora,0,5
-0x1A Hans,2,5
-Dozla,5,50
-0x1C Jenny,0,5
-0x1D Meldan,0,50
-Duessel,3,35
+0x16 Faolan,0,5
+0x17 Iberis,3,30
+0x18 Buldak,0,5
+0x19 Nora,2,5
+0x1A Hans,5,50
+0x1B Empty,0,5
+0x1C Jenny,0,50
+0x1D Meldan,3,35
 Myrrh,0,5
 Knoll,2,85
 Joshua,10,50

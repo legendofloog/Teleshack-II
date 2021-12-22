@@ -200,10 +200,10 @@ setMugEntry(CidorMug, CidorMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CatrinMugData:
-#incbin "Dmp/LoeweMom(Levin)_mug.dmp"
-#incbin "Dmp/LoeweMom(Levin)_frames.dmp"
-#incbin "Dmp/LoeweMom(Levin)_palette.dmp"
-#incbin "Dmp/LoeweMom(Levin)_minimug.dmp"
+#incbin "Dmp/Catrin(Levin)_mug.dmp"
+#incbin "Dmp/Catrin(Levin)_frames.dmp"
+#incbin "Dmp/Catrin(Levin)_palette.dmp"
+#incbin "Dmp/Catrin(Levin)_minimug.dmp"
 setMugEntry(CatrinMug, CatrinMugData, 2, 6, 3, 4)
 
 ALIGN 16
@@ -489,10 +489,10 @@ setMugEntry(HegeMug, HegeMugData, 3, 6, 3, 4)
 
 ALIGN 16
 FrancisMugData:
-#incbin "Dmp/Francis(XVI)_mug.dmp"
-#incbin "Dmp/Francis(XVI)_frames.dmp"
-#incbin "Dmp/Francis(XVI)_palette.dmp"
-#incbin "Dmp/Francis(XVI)_minimug.dmp"
+#incbin "Dmp/Francis_mug.dmp"
+#incbin "Dmp/Francis_frames.dmp"
+#incbin "Dmp/Francis_palette.dmp"
+#incbin "Dmp/Francis_minimug.dmp"
 setMugEntry(FrancisMug, FrancisMugData, 3, 5, 3, 3)
 
 ALIGN 16

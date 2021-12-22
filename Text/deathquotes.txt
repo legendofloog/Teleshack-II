@@ -93,6 +93,39 @@ Looks like being a soldier[Beat][N]
 isn't all it was supposed[AN]
 to be[Beat] Mish, I'm[Beat] [CloseEyes]sorry[Beat][A][X]
 
+## CadenzaDeathQuoteText
+[MidRight][LoadCadenza]
+My song of life[Beat][N]
+has reached its requiem[Beat][A][CloseEyes][X]
+
+## IberisDeathQuoteText
+[MidRight][LoadIberis]
+This is how I die?[N]
+Really?[Beat]That's pathetic.[CloseEyes][A][X]
+
+## BuldakDeathQuoteText
+[MidRight][LoadBuldak]
+I guess I got my
+just desserts.[CloseEyes][A][X]
+
+## YorDeathQuoteText
+[MidLeft][LoadYor]
+Ouch.[CloseEyes][A][X]
+
+## MifanDeathQuoteText
+[MidLeft][LoadMifan]
+I can't...[Beat][N]
+Must stand...[Beat][CloseEyes][A][X]
+
+## WellworthDeathQuoteText
+[MidLeft][LoadWellworth]
+Mifan, are you safe?[CloseEyes][A][X]
+
+## TheGiantDeathQuoteText
+[MidLeft][LoadTheGiant]
+How did they...[Beat][N]
+Get through?[Beat][CloseEyes][A][X]
+
 ## NoraDeathQuote
 [MidRight][LoadNora]
 Lord Radnitz, please[N]
