@@ -25,7 +25,7 @@ END_MAIN
 
 LocationBasedEvents:
 Door(18,2)
-Chest(BeiyrScroll, 25,3)
+DurabilityChest(GrowthScroll, BeiyrScroll,25,3)
 Door(26,6)
 Chest(SteelAxe,9,10)
 Chest(RedGem,12,10)

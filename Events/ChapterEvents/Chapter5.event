@@ -150,6 +150,7 @@ ENDA
 
 BeginningScene:
 MountAll
+ENUT 0x7B //flag that determines whether riggan is alive
 MUSC AdvanceSong
 SetBackground(Port)
 CenterTextbox(SysTextOpening)
@@ -181,6 +182,10 @@ ENDA
 EndingScene:
 RemoveAll
 FlagConditionalDialog(0x2,PostBattleBoss,PostBattleTime)
+CHECK_EVENTID 0x2
+BNE 3 s0 sC
+	ENUF 0x7B //unsets riggan alive flag if he is dead
+LABEL 3
 SetBackground(Tavern)
 MUSC Rovers
 Text(LoreCh5Text)

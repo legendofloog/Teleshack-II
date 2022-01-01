@@ -67,26 +67,31 @@ POP
 #define DurabilityItemEnd "BYTE 0"
 #define DurabilityIcon(itemID,iconSheetID) "BYTE itemID iconSheetID"
 #define DurabilityIconEnd "SHORT 0"
+#define NameTableEntry(textID) "SHORT textID"
 
 
 ALIGN 4
 DurabilityBasedItemNameList: //used for item name
 DurabilityTextEntry(0xFFFF,False,SkillScrollNameTable)
+DurabilityTextEntry(GrowthScrollName,False,GrowthScrollNameTable)
 DurabilityTextEnd
 
 ALIGN 4
 DurabilityBasedItemDescList: //used for item desc
 DurabilityTextEntry(0xFFFF,False,SkillScrollDescTable)
+DurabilityTextEntry(GrowthScrollDesc,False,GrowthScrollDescTable)
 DurabilityTextEnd
 
 ALIGN 4
 DurabilityItemList: //used for durability
 DurabilityItem(SkillScroll)
+DurabilityItem(GrowthScroll)
 DurabilityItemEnd
 
 ALIGN 4
 DurabilityBasedItemIconList: //used for icons
 DurabilityIcon(SkillScroll,5)
+DurabilityIcon(GrowthScroll,6)
 DurabilityIconEnd
 
 /*
@@ -96,4 +101,17 @@ Y - Name
 Y - Desc
 Y - Icon
 */
+
+ALIGN 4
+GrowthScrollNameTable:
+NameTableEntry(0x0)
+NameTableEntry(BeiyrScrollName)
+NameTableEntry(ZykhraScrollName)
+
+
+ALIGN 4
+GrowthScrollDescTable:
+NameTableEntry(0x0)
+NameTableEntry(BeiyrScrollDesc)
+NameTableEntry(ZykhraScrollDesc)
 

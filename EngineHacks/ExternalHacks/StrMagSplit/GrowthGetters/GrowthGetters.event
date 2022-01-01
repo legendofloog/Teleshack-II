@@ -1,3 +1,4 @@
+
   ALIGN 4
 	Growth_Getter_Table:
 	POIN Get_Hp_Growth Get_Str_Growth Get_Mag_Growth Get_Skl_Growth Get_Spd_Growth Get_Luk_Growth Get_Def_Growth Get_Res_Growth Get_Con_Growth Get_Mov_Growth
@@ -72,4 +73,6 @@
 	POIN SkillTester
 	WORD BlossomID
 	WORD AptitudeID
+	WORD GrowthScroll
+	POIN GrowthScrollBonuses
 	

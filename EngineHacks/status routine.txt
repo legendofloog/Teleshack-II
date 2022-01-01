@@ -1,0 +1,140 @@
+0802F010 B570   PUSH {r4,r5,r6,lr}   //ExecStatusStaff
+0802F012 1C06   MOV r6 ,r0
+0802F014 4C15   LDR r4, [PC, #0x54] # pointer:0802F06C -> 0203A958 (ActionData@gActionData.Unknown0 )
+0802F016 7B20   LDRB r0, [r4, #0xC] # pointer:0203A964 (ActionData@gActionData.subjectIndex )
+0802F018 F7EA FA0A   BL 0x08019430   //GetUnitStruct RET=RAM Unit:@Unit
+0802F01C 7CA1   LDRB r1, [r4, #0x12] # pointer:0203A96A (ActionData@gActionData.itemSlotIndex )
+0802F01E F7FD FD81   BL 0x0802CB24   //SetupBattleStructForStaffUser
+0802F022 7B60   LDRB r0, [r4, #0xD] # pointer:0203A965 (ActionData@gActionData.targetIndex )
+0802F024 F7EA FA04   BL 0x08019430   //GetUnitStruct RET=RAM Unit:@Unit
+0802F028 F7FD FDCE   BL 0x0802CBC8   //SetupBattleStructForStaffTarget
+0802F02C 7B20   LDRB r0, [r4, #0xC] # pointer:0203A964 (ActionData@gActionData.subjectIndex )
+0802F02E F7EA F9FF   BL 0x08019430   //GetUnitStruct RET=RAM Unit:@Unit
+0802F032 1C05   MOV r5 ,r0
+0802F034 7B60   LDRB r0, [r4, #0xD] # pointer:0203A965 (ActionData@gActionData.targetIndex ) r0=RAM
+0802F036 F7EA F9FB   BL 0x08019430   //GetUnitStruct RET=RAM Unit:@Unit
+0802F03A 1C01   MOV r1 ,r0
+0802F03C 1C28   MOV r0 ,r5
+0802F03E F7FD FE4D   BL 0x0802CCDC   //GetStaffAccuracy
+0802F042 4C0B   LDR r4, [PC, #0x2C] # pointer:0802F070 -> 0203A4EC (BattleUnit@gBattleActor Copy unit data of Right.CopyUnit )
+0802F044 1C21   MOV r1 ,r4
+0802F046 3164   ADD r1, #0x64
+0802F048 8008   STRH r0, [r1, #0x0]   //Right side with battle animation (AttackerHit - DefinerAvoid)
+0802F04A F7D1 FE29   BL 0x08000CA0   //Roll1RN
+0802F04E 0600   LSL r0 ,r0 ,#0x18
+0802F050 2800   CMP r0, #0x0
+0802F052 D113   BNE #0x802F07C
+    0802F054 4807   LDR r0, [PC, #0x1C] # pointer:0802F074 -> 0203A608 (gpCurrentRound )
+    0802F056 6803   LDR r3, [r0, #0x0] # pointer:0203A608 (gpCurrentRound )
+    0802F058 681A   LDR r2, [r3, #0x0]
+    0802F05A 0351   LSL r1 ,r2 ,#0xD
+    0802F05C 0B49   LSR r1 ,r1 ,#0xD
+    0802F05E 2002   MOV r0, #0x2
+    0802F060 4301   ORR r1 ,r0
+    0802F062 4805   LDR r0, [PC, #0x14] # pointer:0802F078 -> FFF80000
+    0802F064 4010   AND r0 ,r2
+    0802F066 4308   ORR r0 ,r1
+    0802F068 6018   STR r0, [r3, #0x0]
+    0802F06A E06B   B 0x802F144
+0802F06C A958 0203   //LDRDATA
+0802F070 A4EC 0203   //LDRDATA
+0802F074 A608 0203   //LDRDATA
+0802F078 0000 FFF8   //LDRDATA
+0802F07C 1C20   MOV r0 ,r4
+0802F07E 304A   ADD r0, #0x4A
+0802F080 8800   LDRH r0, [r0, #0x0] # pointer:0203A536 (Right side with battle animation Additional information unknown 3  ) r0=RAM r0=RAM
+0802F082 F7E8 FA33   BL 0x080174EC   //GetItemIndex
+0802F086 2852   CMP r0, #0x52
+0802F088 D018   BEQ #0x802F0BC
+    0802F08A 2852   CMP r0, #0x52
+    0802F08C DC02   BGT #0x802F094
+        0802F08E 2851   CMP r0, #0x51
+        0802F090 D00C   BEQ #0x802F0AC
+            0802F092 E057   B 0x802F144
+        0802F094 2853   CMP r0, #0x53
+        0802F096 D002   BEQ #0x802F09E
+            0802F098 28B5   CMP r0, #0xB5
+            0802F09A D017   BEQ #0x802F0CC
+                0802F09C E052   B 0x802F144
+            0802F09E 4802   LDR r0, [PC, #0x8] # pointer:0802F0A8 -> 0203A56C (BattleUnit@gBattleTarget Copy unit data of Left.CopyUnit )
+            0802F0A0 306F   ADD r0, #0x6F
+            0802F0A2 2104   MOV r1, #0x4
+            0802F0A4 7001   STRB r1, [r0, #0x0]   //BattleUnit@gBattleTarget Copy unit data of Left.statusOut
+            0802F0A6 E04D   B 0x802F144
+0802F0A8 A56C 0203   //LDRDATA
+        0802F0AC 4802   LDR r0, [PC, #0x8] # pointer:0802F0B8 -> 0203A56C (BattleUnit@gBattleTarget Copy unit data of Left.CopyUnit )
+        0802F0AE 306F   ADD r0, #0x6F
+        0802F0B0 2103   MOV r1, #0x3
+        0802F0B2 7001   STRB r1, [r0, #0x0]   //BattleUnit@gBattleTarget Copy unit data of Left.statusOut
+        0802F0B4 E046   B 0x802F144
+        0802F0B6 0000   NOP
+0802F0B8 A56C 0203   //LDRDATA
+    0802F0BC 4802   LDR r0, [PC, #0x8] # pointer:0802F0C8 -> 0203A56C (BattleUnit@gBattleTarget Copy unit data of Left.CopyUnit )
+    0802F0BE 306F   ADD r0, #0x6F
+    0802F0C0 2102   MOV r1, #0x2
+    0802F0C2 7001   STRB r1, [r0, #0x0]   //BattleUnit@gBattleTarget Copy unit data of Left.statusOut
+    0802F0C4 E03E   B 0x802F144
+    0802F0C6 0000   NOP
+0802F0C8 A56C 0203   //LDRDATA
+0802F0CC 4804   LDR r0, [PC, #0x10] # pointer:0802F0E0 -> 0202BCF0 (ChapterData@gChapterData.Clock )
+0802F0CE 7BC0   LDRB r0, [r0, #0xF] # pointer:0202BCFF (ChapterData@gChapterData.Phase (0x0=player, 0x40=allied, 0x80=enemy))
+0802F0D0 2840   CMP r0, #0x40
+0802F0D2 D025   BEQ #0x802F120
+    0802F0D4 2840   CMP r0, #0x40
+    0802F0D6 DC05   BGT #0x802F0E4
+        0802F0D8 2800   CMP r0, #0x0
+        0802F0DA D006   BEQ #0x802F0EA
+            0802F0DC E032   B 0x802F144
+            0802F0DE 0000   NOP
+0802F0E0 BCF0 0202   //LDRDATA
+        0802F0E4 2880   CMP r0, #0x80
+        0802F0E6 D00D   BEQ #0x802F104
+            0802F0E8 E02C   B 0x802F144
+        0802F0EA 4A05   LDR r2, [PC, #0x14] # pointer:0802F100 -> 0203A56C (BattleUnit@gBattleTarget Copy unit data of Left.CopyUnit )
+        0802F0EC 200B   MOV r0, #0xB
+        0802F0EE 5610   LDSB r0, [r2, r0] # pointer:0203A577
+        0802F0F0 21C0   MOV r1, #0xC0
+        0802F0F2 4008   AND r0 ,r1
+        0802F0F4 2800   CMP r0, #0x0
+        0802F0F6 D121   BNE #0x802F13C
+            0802F0F8 1C11   MOV r1 ,r2
+            0802F0FA 316F   ADD r1, #0x6F
+            0802F0FC 200D   MOV r0, #0xD
+            0802F0FE E020   B 0x802F142
+0802F100 A56C 0203   //LDRDATA
+        0802F104 4A05   LDR r2, [PC, #0x14] # pointer:0802F11C -> 0203A56C (BattleUnit@gBattleTarget Copy unit data of Left.CopyUnit )
+        0802F106 200B   MOV r0, #0xB
+        0802F108 5610   LDSB r0, [r2, r0] # pointer:0203A577 r0=RAM
+        0802F10A 21C0   MOV r1, #0xC0
+        0802F10C 4008   AND r0 ,r1
+        0802F10E 2880   CMP r0, #0x80
+        0802F110 D114   BNE #0x802F13C
+            0802F112 1C11   MOV r1 ,r2
+            0802F114 316F   ADD r1, #0x6F
+            0802F116 200D   MOV r0, #0xD
+            0802F118 E013   B 0x802F142
+            0802F11A 0000   NOP
+0802F11C A56C 0203   //LDRDATA
+        0802F120 4A05   LDR r2, [PC, #0x14] # pointer:0802F138 -> 0203A56C (BattleUnit@gBattleTarget Copy unit data of Left.CopyUnit )
+        0802F122 200B   MOV r0, #0xB
+        0802F124 5610   LDSB r0, [r2, r0] # pointer:0203A577 r0=RAM
+        0802F126 21C0   MOV r1, #0xC0
+        0802F128 4008   AND r0 ,r1
+        0802F12A 2840   CMP r0, #0x40
+        0802F12C D106   BNE #0x802F13C
+            0802F12E 1C11   MOV r1 ,r2
+            0802F130 316F   ADD r1, #0x6F
+            0802F132 200D   MOV r0, #0xD
+            0802F134 E005   B 0x802F142
+            0802F136 0000   NOP
+0802F138 A56C 0203   //LDRDATA
+0802F13C 1C11   MOV r1 ,r2
+0802F13E 316F   ADD r1, #0x6F
+0802F140 200B   MOV r0, #0xB
+0802F142 7008   STRB r0, [r1, #0x0]   //BattleUnit@gBattleTarget Copy unit data of Left.statusOut
+0802F144 1C30   MOV r0 ,r6
+0802F146 F7FD FD85   BL 0x0802CC54   //FinishUpItemBattle Register motion when using items r1=ITEM ID
+0802F14A F7FD FC63   BL 0x0802CA14   //BeginBattleAnimations
+0802F14E BC70   POP {r4,r5,r6}
+0802F150 BC01   POP {r0}
+0802F152 4700   BX r0

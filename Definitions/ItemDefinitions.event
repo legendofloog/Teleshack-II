@@ -215,7 +215,7 @@
 #define SlimAxe  0xB6
 #define Claymore 0xB4
 #define MarksmanBow 0xB3
-#define BeiyrScroll 0xBE
+#define GrowthScroll 0xBE
 #define SlimArch 0x8c
 #define Dullahan 0xBF
 #define Burn 0xC0
@@ -234,4 +234,3 @@
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
-#define ZykhraScroll 0xD0

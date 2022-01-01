@@ -18,6 +18,8 @@ POIN ItemIconSheet
 POP
 */
 
+#include "ExternalIconSheets/ExternalSheetInstaller.event"
+
 PUSH
 ItemIconSlot(0x7,"Png/FlameSword.png")
 ItemIconSlot(0x9,"Png/ShortSword.png")

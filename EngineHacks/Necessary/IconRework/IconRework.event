@@ -12,6 +12,7 @@ InjectIconGfxGetter(2, (prGetAffinityIconGfx+1))
 InjectIconGfxGetter(3, (prGetMountTypeIconGfx+1))
 InjectIconGfxGetter(4, (prGetWRankIconGfx+1))
 InjectIconGfxGetter(5, (prGetSkillBookIconGfx+1))
+InjectIconGfxGetter(6, (prGetGrowthScrollIconGfx+1))
 
 ALIGN 4
 prGetSkillIconGfx:
@@ -33,6 +34,10 @@ prGetWRankIconGfx:
 prGetSkillBookIconGfx:
 	#incbin "asm/GetSheetIconGfx.bin"
 	POIN SkillScrollIcons
+
+prGetGrowthScrollIconGfx:
+	#incbin "asm/GetSheetIconGfx.bin"
+	POIN GrowthScrollIcons
 
 }
 

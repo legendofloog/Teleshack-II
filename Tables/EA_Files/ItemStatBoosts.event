@@ -1,0 +1,43 @@
+// format: BYTE HP, Str, Skl, Spd, Def, Res, Lck, Move, Con, Mag, ??, ??
+// defStatBoosts(hp, str, mag, skl, spd, luk, def, res) "BYTE hp str skl spd def res luk mag"
+
+#define StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE HPB StrB SklB SpdB DefB ResB LckB MovB ConB MagB 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0"
+
+#define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB MovB ConB"
+
+ALIGN 4
+FlameSwordStatBoosts:
+StatBonus(0,0,5,0,0,0,0,0,0,0)
+
+ALIGN 4
+ThunderSwordStatBoosts:
+StatBonus(0,0,0,5,0,0,0,0,0,0)
+
+ALIGN 4
+WindSwordStatBoosts:
+StatBonus(0,0,0,0,5,0,0,0,0,0)
+
+ALIGN 4
+StoneSwordStatBoosts:
+StatBonus(0,0,0,0,0,5,0,0,0,0)
+
+ALIGN 4
+IceSwordStatBoosts:
+StatBonus(0,0,0,0,0,0,5,0,0,0)
+
+ALIGN 4
+ParagonSwordStatBoosts:
+StatBonus(0,0,0,0,0,5,0,0,0,0)
+
+ALIGN 4
+SisterRingStatBoosts:
+StatBonus(0,0,0,0,0,0,0,0,1,0)
+
+ALIGN 4
+GrowthScrollBonuses:
+GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
+GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr
+GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra
+
+#define BeiyrScroll 0x1
+#define ZykhraScroll 0x2

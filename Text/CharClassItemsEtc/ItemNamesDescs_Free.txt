@@ -132,7 +132,7 @@ Arai's Gale[X]
 [_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
 
 ## SisterRingName
-Wife Ring[X]
+Sister Ring[X]
 
 ## SisterRingDesc
 [_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
@@ -170,7 +170,7 @@ Restore life to all units on the map.[X]
 Devil's Dagger[X]
 
 ## DevilDaggerDesc
-Ignores Gim's Atk and enemy Def. Devil.[X]
+Ignores Mish's Atk and enemy Def. Devil.[X]
 
 ## BalladOfWarName ^
 Ballad of War[X]
@@ -214,3 +214,9 @@ Zykhra Scroll[X]
 ## ZykhraScrollDesc
 +10% HP, +10% Str, +10% Def,[N]
 +10% Bld, -10% Spd[X]
+
+## GrowthScrollName
+Growth Scroll[X]
+
+## GrowthScrollDesc
+Boosts equipped unit's growths.[X]

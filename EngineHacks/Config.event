@@ -310,13 +310,13 @@
 #define FIXED_GROWTHS_FLAG_ID 0xEF
 
 //If true, passive growth boosters and metis tome will not affect growths in fixed growths mode.
-#define FIXED_GROWTHS_DONT_BOOST False
+#define FIXED_GROWTHS_DONT_BOOST True
 
 //If true, enemy/NPC autolevels will use fixed growths as well.
 #define ENEMY_NPC_FIXED_GROWTHS True
 
 //If true, the effects of multiple passive growth boosters can stack.
-#define STACKABLE_GROWTH_BOOSTS True
+#define STACKABLE_GROWTH_BOOSTS False
 
 //Amount for Metis Tome to boost growths by
 #define METIS_TOME_BOOST 5

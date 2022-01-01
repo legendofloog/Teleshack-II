@@ -176,20 +176,14 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	SetBackground(VillageRoad)
 	MUSC WindyDayBirdsSoundEffect
-	TEXTSHOW Ch9OpeningText
-	TEXTEND
-	REMA
+	Text(Ch9OpeningText)
 	FADI 15
 	SetBackground(CastleHallway)
 	MUSC TensionSong
-	TEXTSHOW Ch9WrathgarRant
-	TEXTEND
-	REMA
+	Text(Ch9WrathgarRant)
 	FADI 15
 	SetBackground(OvergrownArches)
-	TEXTSHOW MeldanWorryText
-	TEXTEND
-	REMA
+	Text(MeldanWorryText)
 	FADI 15
 	ENUN
 	//Senny Rescued
@@ -285,30 +279,27 @@ EscapeCapturedCheck(Alex, 0x92)
 EscapeCapturedCheck(Axel, 0x93)
 EscapeCapturedCheck(Filone, 0x94)
 EscapeCapturedCheck(Zwieback, 0x95)
-EscapeCapturedCheck(Leina, 0x96)
-EscapeCapturedCheck(Cromar, 0x97)
-EscapeCapturedCheck(Longxia, 0x98)
-EscapeCapturedCheck(Fangai, 0x99)
-EscapeCapturedCheck(Gimm, 0x9A)
-EscapeCapturedCheck(Mish, 0x9B)
-EscapeCapturedCheck(Tobie, 0x9C)
-EscapeCapturedCheck(Awa, 0x9D)
-EscapeCapturedCheck(Cadenza, 0x9E)
-EscapeCapturedCheck(Faolan, 0x9F)
-EscapeCapturedCheck(Iberis, 0xA0)
-EscapeCapturedCheck(Buldak, 0xA1)
-EscapeCapturedCheck(Nora, 0xA2)
-EscapeCapturedCheck(Hans, 0xA3)
-EscapeCapturedCheck(Jenny, 0xA4)
-EscapeCapturedCheck(Meldan, 0xA5)
+EscapeCapturedCheck(Fangai, 0x96)
+EscapeCapturedCheck(Longxia, 0x97)
+EscapeCapturedCheck(Mish, 0x98)
+EscapeCapturedCheck(Tobie, 0x99)
+EscapeCapturedCheck(Awa, 0x9A)
+EscapeCapturedCheck(Faolan, 0x9B)
+EscapeCapturedCheck(Cadenza, 0x9C)
+EscapeCapturedCheck(Leina, 0x9D)
+EscapeCapturedCheck(Cromar, 0x9E)
+EscapeCapturedCheck(Iberis, 0x9F)
+EscapeCapturedCheck(Buldak, 0xA0)
+EscapeCapturedCheck(Nora, 0xA1)
+EscapeCapturedCheck(Hans, 0xA2)
+EscapeCapturedCheck(Jenny, 0xA3)
+EscapeCapturedCheck(Meldan, 0xA4)
 SetBackground(CastleHallway)
 MUSC FF5_Nostalgia
 Text(Ch9EndingText)
-REMA
 FADI 15
 SetBackground(OvergrownArches)
 Text(Ch9EndingText2)
-REMA
 MNC2 Chapter10
 NoFade
 ENDA
