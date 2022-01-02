@@ -10,8 +10,6 @@
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
-
-#include "StatusExpansion/StatusExpansion.event"
 #include "FixedDamage/FixedDamageWeapons.event"
 #include "trade_fix/TradeabilityChanges.event"
 
@@ -68,6 +66,12 @@ POP
 PUSH
 ORG $2cd30
 BYTE 0xFF
+POP
+
+//default status duration is infinite
+PUSH
+ORG $178EA
+BYTE 0
 POP
 
 ALIGN 4
