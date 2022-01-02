@@ -57,6 +57,7 @@
 [LoadSvetomir] = [LoadFace][0x7][0x1]
 [LoadAlena] = [LoadFace][0x8][0x1]
 [LoadDragana] = [LoadFace][0x2D][0x1]
+[LoadDraganaYoung] = [LoadFace][0xBE][0x1]
 [LoadBoro] = [LoadFace][0x4E][0x1]
 [LoadRaschwitz] = [LoadFace][0x45][0x1]
 [LoadCidor] = [LoadFace][0x2E][0x1]

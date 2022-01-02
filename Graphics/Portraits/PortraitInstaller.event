@@ -21,7 +21,7 @@
 #define AwaMug 0x1B
 #define CadenzaMug 0x1C
 #define FaolanMug 0x1E
-#define DraganaMug 0x2D
+#define DraganaOldMug 0x2D
 #define IberisMug 0x20
 #define BuldakMug 0x21
 #define NoraMug 0x22
@@ -61,6 +61,7 @@
 #define HegeMug 0x4C
 #define FrancisMug 0x31
 #define WrathgarMug 0x32
+#define DraganaYoungMug 0xBE
 
 ALIGN 16
 BarodMugData:
@@ -183,12 +184,20 @@ LoeweKidMugData:
 setMugEntry(LoeweKidMug, LoeweKidMugData, 2, 8, 3, 6)
 
 ALIGN 16
-DraganaMugData:
-#incbin "Dmp/Dragana(Loog)_mug.dmp"
-#incbin "Dmp/Dragana(Loog)_frames.dmp"
-#incbin "Dmp/Dragana(Loog)_palette.dmp"
-#incbin "Dmp/Dragana(Loog)_minimug.dmp"
-setMugEntry(DraganaMug, DraganaMugData, 3, 5, 3, 3)
+DraganaOldMugData:
+#incbin "Dmp/DraganaOld(Loog,knabepicer)_mug.dmp"
+#incbin "Dmp/DraganaOld(Loog,knabepicer)_frames.dmp"
+#incbin "Dmp/DraganaOld(Loog,knabepicer)_palette.dmp"
+#incbin "Dmp/DraganaOld(Loog,knabepicer)_minimug.dmp"
+setMugEntry(DraganaOldMug, DraganaOldMugData, 3, 5, 3, 3)
+
+ALIGN 16
+DraganaYoungMugData:
+#incbin "Dmp/DraganaYoung(Loog)_mug.dmp"
+#incbin "Dmp/DraganaYoung(Loog)_frames.dmp"
+#incbin "Dmp/DraganaYoung(Loog)_palette.dmp"
+#incbin "Dmp/DraganaYoung(Loog)_minimug.dmp"
+setMugEntry(DraganaYoungMug, DraganaYoungMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CidorMugData:

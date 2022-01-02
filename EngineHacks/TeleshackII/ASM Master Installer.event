@@ -64,6 +64,12 @@ ORG $B5237
 BYTE 0xE0
 POP
 
+// staff hitrate: never miss; need to change to be 100% if mag 
+PUSH
+ORG $2cd30
+BYTE 0xFF
+POP
+
 ALIGN 4
 ChangeWeaponRankASMC:
 #incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
