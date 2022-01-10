@@ -36,24 +36,51 @@ CharacterEventBothWays(8, MeldanTalkCh9, Meldan, 0x0)
 END_MAIN
 
 MiscBasedEvents:
-AFEV 0 CheckNoUnits 0
 CauseGameOverIfLordDies
+AFEV 0 EscapeCheck2 21
 END_MAIN
-
-
-CheckNoUnits:
-ASMC GetBlueUnitCountASMC
-BNE 20 s0 sC
-	ENUT 0x03
-	CALL EndingScene
-LABEL 20
-NoFade
-ENDB
 
 LocationBasedEvents:
-Escape(0,EscapeEventCheck,19,0)
-Escape(0,EscapeEventCheck,20,0)
+Escape(21,EscapeEventCheck,19,0)
+Escape(21,EscapeEventCheck,20,0)
 END_MAIN
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+/*
+CheckRescuedUnit(0xFFFF)
+SVAL s1 Loewe
+BNE 38 s1 sC
+	COUNTER_INC 0
+LABEL 38
+SVAL s1 Cleo
+BNE 39 s1 sC
+	COUNTER_INC 0
+LABEL 39
+*/
+NoFade
+ENDA
+
+
+EscapeCheck2:
+SVAL s1 1
+SET_DEPLOYED (-1)
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
+ENUF 21
+NoFade
+ENDA
 
 Dunno1:
 
@@ -246,24 +273,6 @@ MUSS WithUs_Song
 Text(MeldanRecruitText)
 CUSA Meldan
 MURE 2
-NoFade
-ENDA
-	
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
 NoFade
 ENDA
 

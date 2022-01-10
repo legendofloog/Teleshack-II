@@ -147,13 +147,13 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-
+	FADI 15
 	LOAD1 1 EnemyUnits
 	LOAD1 1 OpeningCutsceneUnits
 	LOAD1 1 GreenUnits
 	ENUN
 	SetBackground(CastleHallway)
-	MUSC FF5_Sealed_Away
+	//MUSC FF5_Sealed_Away
 	Text(Chapter2OpeningScene1)
 	CALL $9EE2C4
 	FlashCursor(Varga,60)
@@ -190,6 +190,7 @@ BeginningScene:
 	MOVE 15 Varga [1,2]
 	MOVE 15 Cleo [0,2]
 	ENUN
+	STAL 30
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)

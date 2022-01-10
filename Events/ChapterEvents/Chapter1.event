@@ -39,7 +39,7 @@ LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
 Escape(21,EscapeEventCheck,2,0)
 Escape(21,EscapeEventCheck,3,0)
-Escape(21,EscapeEventCheck,16,16)
+//Escape(21,EscapeEventCheck,16,16)
 END_MAIN
 
 EscapeEventCheck:
@@ -51,13 +51,12 @@ CHECK_ACTIVEID Cleo
 BEQ 1 s0 sC
 	COUNTER_INC 0
 LABEL 1
-CheckRescuedUnit(0xFFFF)
-SVAL s1 Loewe
-BNE 38 s1 sC
+CheckIfRescuedByActive(Loewe)
+BEQ 38 s0 sC
 	COUNTER_INC 0
 LABEL 38
-SVAL s1 Cleo
-BNE 39 s1 sC
+CheckIfRescuedByActive(Cleo)
+BEQ 39 s0 sC
 	COUNTER_INC 0
 LABEL 39
 NoFade
@@ -103,10 +102,10 @@ END_MAIN
 
 Units1:
 //UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [SleepSword,Sleep,Berserk,BerserkSword]     NoAI
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x0 0x1 [SilverSword,ShortSword,Vulnerary] NoAI
-UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
-UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [18,17] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [18,16] 0x0 0x0 0x1 REDA17R16 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x1 REDA18R16 [SilverSword,ShortSword,Vulnerary] NoAI
+UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x1 REDA18R15 [Thunder,Vulnerary]                NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [18,17] 0x0 0x0 0x1 REDA18R17 [IronLance,Vulnerary]              NoAI
 UNIT
 
 Flashback1Units:
@@ -117,7 +116,7 @@ UNIT Chapter1Generics Swordmaster_F 0x0 Level(1,NPC,False) [2,4] 0x0 0x0 0x0 0x0
 UNIT
 
 Flashback2Units:
-UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [12,2] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [13,0] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT Senny Sniper_F   0x0          Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [10,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Chapter1Generics SwordFighter 0x0 Level(1,NPC,False) [12,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -187,6 +186,7 @@ ALIGN 4
 
 
 BeginningScene:
+//ENUT 0xEF
 COUNTER_SET 0 0
 LOMA Ch1LoeweVillage
 LOAD1 1 Flashback1Units
@@ -194,16 +194,17 @@ ENUN
 FADU 15
 Text(Ch1KidLoeweTalksToFriendsText)
 MOVE 15 Senny [3,8]
-MOVE 15 Helman [3,5]
-MOVE 15 Raschwitz_Ch1 [12,4]
 ENUN
 REMOVEUNIT Senny
+MOVE 15 Raschwitz_Ch1 [12,4]
+ENUN
 REMOVEUNIT Raschwitz_Ch1
+MOVE 15 Helman [3,3]
+ENUN
 FlashCursor(Chapter1Generics,60)
 SetBackground(Village1)
 MUSC FF5_Nostalgia
 Text(BeginningSceneLoeweFlashbackText)
-CALL $9EE2C4
 FADI 15
 TILECHANGE 0
 REMOVEALL_GREEN
@@ -267,7 +268,7 @@ TEXTEND
 REMA
 EVBIT_F 5
 ENUN
-FADI 15
+FADI 5
 REMOVEALL_GREEN
 MUSC 0x7FFF
 SetBackground(BlackBackground)
@@ -287,17 +288,19 @@ _0x1A22
 TEXTSHOW Ch1SvetomirPesteringLoeweText4
 TEXTEND
 REMA
+FADI 15
 LOMA Chapter1
 LOAD1 1 EnemyUnits
 LOAD1 1 GreenUnits
 ENUN
-FADU 15
 CAMERA Loewe
+FADU 15
 FlashCursor(Loewe,60)
 FlashCursor(Svetomir,60)
 SetBackground(PrisonRoom)
 Text(BeginningSceneLoeweGroupText)
 CALL $9EE2C4
+STAL 30
 LOAD1 1 Units1
 ENUN
 CAMERA Cleo

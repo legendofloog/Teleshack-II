@@ -924,10 +924,10 @@ ORG SkillIcon(FireBoostID)
 #incbin "SkillIcons/FireBoost.dmp"
 
 ORG SkillIcon(RadianceID)
-#incbin "SkillIcons/Lumina.dmp"
+#incbin "SkillIcons/Radiance.dmp"
 
 ORG SkillIcon(NightcallerID)
-#incbin "SkillIcons/Trample.dmp"
+#incbin "SkillIcons/Nightbringer_like_aphelios.dmp"
 
 ORG SkillIcon(DullahanID)
 #incbin "SkillIcons/DevilsWhim.dmp"
@@ -936,13 +936,13 @@ ORG SkillIcon(VictoryMarchID)
 #incbin "SkillIcons/Celerity.dmp"
 
 ORG SkillIcon(AvengerID)
-#incbin "SkillIcons/Wrath.dmp"
+#incbin "SkillIcons/Avenger.dmp"
 
 ORG SkillIcon(RecklessChargeID)
-#incbin "SkillIcons/ChargePlus.dmp"
+#incbin "SkillIcons/RecklessCharge.dmp"
 
 ORG SkillIcon(AftershockID)
-#incbin "SkillIcons/Dazzle.dmp"
+#incbin "SkillIcons/holyshitAftershockOMG.dmp"
 
 ORG SkillIcon(HeadshotID)
 #incbin "SkillIcons/Headshot.dmp"

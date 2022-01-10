@@ -58,7 +58,7 @@
 #define MifanMug 0x03
 #define TheGiantMug 0x41
 #define YorMug 0x28
-#define HegeMug 0x4C
+#define HegeMug 0xBF
 #define FrancisMug 0x31
 #define WrathgarMug 0x32
 #define DraganaYoungMug 0xBE

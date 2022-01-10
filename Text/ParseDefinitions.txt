@@ -106,7 +106,7 @@
 [LoadTheGiant] = [LoadFace][0x41][0x1]
 [LoadYor] = [LoadFace][0x28][0x1]
 [LoadWellworth] = [LoadFace][0x27][0x1]
-[LoadHege] = [LoadFace][0x4C][0x1]
+[LoadHege] = [LoadFace][0xBF][0x1]
 [LoadFrancis] = [LoadFace][0x31][0x1]
 [LoadWrathgar] = [LoadFace][0x32][0x1]
 

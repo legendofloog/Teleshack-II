@@ -154,9 +154,7 @@ POIN Get_Mag_Growth|1
 //SynchronizeIDLink:
 //BYTE SynchronizeID
 
-//FixedGrowthsIsTrueLink:
-
-
+ALIGN 4
 FixedGrowthsFlagIDLink:
 BYTE FIXED_GROWTHS_FLAG_ID
 

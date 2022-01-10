@@ -32,30 +32,55 @@ Chest(RedGem,12,10)
 LOCA 9 AlexAxelDoor [19,11] 0x12
 Door(17,13)
 Door(10,14)
-Escape(0,EscapeEventCheck,29,11)
-Escape(0,EscapeEventCheck,29,12)
-Escape(0,EscapeEventCheck,29,13)
-Escape(0,EscapeEventCheck,29,14)
-Escape(0,EscapeEventCheck,29,15)
-Escape(0,EscapeEventCheck,3,9)
+Escape(21,EscapeEventCheck,29,11)
+Escape(21,EscapeEventCheck,29,12)
+Escape(21,EscapeEventCheck,29,13)
+Escape(21,EscapeEventCheck,29,14)
+Escape(21,EscapeEventCheck,29,15)
 END_MAIN
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+/*
+CheckRescuedUnit(0xFFFF)
+SVAL s1 Loewe
+BNE 38 s1 sC
+	COUNTER_INC 0
+LABEL 38
+SVAL s1 Cleo
+BNE 39 s1 sC
+	COUNTER_INC 0
+LABEL 39
+*/
+NoFade
+ENDA
 
 MiscBasedEvents:
 AFEV 15 AlexAxelFreed 9
 AFEV 0x65 DraganaDeathResponse 0x0D
-AFEV 0 CheckNoUnits 0
+AFEV 0 EscapeCheck2 21
 CauseGameOverIfLordDies
 END_MAIN
 
-
-CheckNoUnits:
-ASMC GetBlueUnitCountASMC
-BNE 20 s0 sC
-	ENUT 0x03
+EscapeCheck2:
+SVAL s1 1
+SET_DEPLOYED (-1)
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
 	CALL EndingScene
-LABEL 20
+LABEL 3
+ENUF 21
 NoFade
-ENDB
+ENDA
 
 Dunno1:
 END_MAIN
@@ -235,24 +260,6 @@ LOAD1 1 DraganaUnit
 LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
 ENUN
-ENDA
-
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-NoFade
 ENDA
 
 EndingScene:
