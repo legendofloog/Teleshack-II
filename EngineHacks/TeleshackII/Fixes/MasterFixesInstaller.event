@@ -6,3 +6,5 @@
 #include "MiscellaneousFixes/BonusExpClassRemoval.event"
 #include "MiscellaneousFixes/WeaponRankRemoval.event"
 #include "MiscellaneousFixes/FixedAutolevels.event"
+#include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
+#include "MinimugPalette/Installer.event"

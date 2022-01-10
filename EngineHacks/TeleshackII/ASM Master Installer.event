@@ -4,7 +4,6 @@
 
 #include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
-#include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
@@ -108,7 +107,7 @@ ChangeWeaponRankASMC:
 
 #include "MapChangeToFlag/Installer.event"
 
-#include "MinimugPalette/Installer.event"
+
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 

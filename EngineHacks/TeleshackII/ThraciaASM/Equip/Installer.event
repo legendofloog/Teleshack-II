@@ -201,5 +201,3 @@ PUSH
 	// when put LevelUpScreen off screen
 	SHORT $2080 // mov r0,#0x80
 POP
-
-#include "ExtraGrowths.event"

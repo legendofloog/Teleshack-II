@@ -1,5 +1,5 @@
 
-#include "FE-CLib-master/include/gbafe.h"
+#include "gbafe.h"
 #include "Dismount.h"
 
 Unit* GetUnitStructFromEventParameter(unsigned eventSlot);
