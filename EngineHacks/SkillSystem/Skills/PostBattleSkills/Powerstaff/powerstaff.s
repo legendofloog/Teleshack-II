@@ -35,10 +35,11 @@ bne	End
 @check if last action was using a staff
 ldr r0,=#0x203A958
 ldrb r0,[r0,#0x11]
-mov r1,#0x3
+mov r1,#0x25
 cmp r0,r1
 bne End
 
+Next:
 @unset 0x2 and 0x40, set 0x400, write to status
 ldr	r0, [r4,#0x0C]	@status bitfield
 mov	r1, #0x42

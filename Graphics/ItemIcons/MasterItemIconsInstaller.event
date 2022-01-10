@@ -1,6 +1,6 @@
 // found in devvy's filebuild
 // most item icons done by lisandra brave, flame sword from lord glenn
-// stone sword, argilabrys, and frost blade from beansy
+// stone sword, argilabrys, frost blade, stinger, lunar axe, and daybreaker from beansy
 //gale bow by zarg
 // slim bow is by zaneeeeeeee avernathy
 // devil dagger from archer?
@@ -79,5 +79,8 @@ ItemIconSlot(0x9F,"Png/DaShoota.png")
 ItemIconSlot(0xA0,"Png/Axle.png")
 ItemIconSlot(0xA1,"Png/Miaodao.png")
 ItemIconSlot(0xA2,"Png/ZykhraScroll.png")
+ItemIconSlot(0xD6,"Png/Stinger.png")
+ItemIconSlot(0xD7,"Png/LunarAxe.png")
+ItemIconSlot(0xD8,"Png/Stormbrand.png")
 POP
 

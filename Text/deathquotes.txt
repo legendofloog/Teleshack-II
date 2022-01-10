@@ -161,3 +161,40 @@ Of...[Beat] the life I led?[A][X]
 [MidRight][LoadWrathgar]
 Yes![Beat]Gooood!!![Beat][N]
 A proper end...[Beat]for a warrior![A][X]
+
+## Ch10CidorDeathQuote
+[MidLeft][LoadCidor]
+Bested like this?[Beat]Impossible[Beat][N]
+I can still[Beat][A][X]
+
+## Ch10JohannaDeathQuote
+[MidLeft][LoadJohanna]
+To think I'd fall to these vermin[Beat][N]
+General[Beat] I'm sorry[Beat][CloseEyes][CloseEyes][A][X]
+
+## Ch10EliasDeathQuote
+[MidLeft][LoadElias]
+Impressive. I must fall back for now,[N]
+but next time, I will not lose again.[A][X]
+
+## Ch10MifanDeathQuote
+[MidLeft][LoadMifan]
+Not again[Beat][N]
+Not until I've had my revenge[Beat][CloseEyes][A][X]
+
+## Ch10HernandezDeathQuote
+[MidRight][LoadHernandez]
+Oof[Beat][CloseEyes][A][X]
+
+## RadnitzDeathQuote
+[MidRight][LoadRadnitz]
+Some hero[Beat][N]
+I turned out to be[Beat][CloseEyes][A][X]
+
+## ValseDeathQuote
+[MidRight][LoadValse]
+So this is the end[Beat][CloseEyes][A][X]
+
+## HornetDeathQuote
+[MidRight][LoadHornet]
+Life is[Beat] so fleeting[Beat][CloseEyes][A][X]

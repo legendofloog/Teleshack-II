@@ -22,5 +22,19 @@ UnspecifiedBattleConvo(Wrathgar,Chapter9,9,WrathgarBossQ)
 UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
 UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
 
+SpecifiedBattleConvo(Cidor,Cleo,Chapter10,0x16,Ch10CidorCleoBossQuote)
+SpecifiedBattleConvo(Cidor,Loewe,Chapter10,0x17,Ch10CidorLoeweBossQuote)
+SpecifiedBattleConvo(Cidor,Mira,Chapter10,0x18,Ch10CidorMiraBossQuote)
+SpecifiedBattleConvo(Cidor,Iskra,Chapter10,0x19,Ch10CidorIskraBossQuote)
+SpecifiedBattleConvo(Cidor,Radnitz,Chapter10,0x24,Ch10CidorRadnitzBossQuote)
+UnspecifiedBattleConvo(Cidor,Chapter10,0x20,Ch10CidorBossQuote)
+UnspecifiedBattleConvo(Johanna,Chapter10,0x21,Ch10JohannaBossQuote)
+UnspecifiedBattleConvo(Elias,Chapter10,0x22,Ch10EliasBossQuote)
+SpecifiedBattleConvo(Mifan,Buldak,Chapter10,0x25,Ch10MifanBuldakBossQuote)
+SpecifiedBattleConvo(Mifan,Valse,Chapter10,0x26,Ch10MifanValseBossQuote)
+SpecifiedBattleConvo(Mifan,Hornet,Chapter10,0x27,Ch10MifanHornetBossQuote)
+SpecifiedBattleConvo(Mifan,Radnitz,Chapter10,0x28,Ch10MifanRadnitzBossQuote)
+UnspecifiedBattleConvo(Mifan,Chapter10,0x23,Ch10MifanBossQuote)
+
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

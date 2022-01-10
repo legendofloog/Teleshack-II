@@ -1,0 +1,5 @@
+//#define _test_ch10_
+
+#ifdef _test_ch10_
+#define _test_
+#endif

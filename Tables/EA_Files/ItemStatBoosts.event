@@ -34,10 +34,18 @@ SisterRingStatBoosts:
 StatBonus(0,0,0,0,0,0,0,0,1,0)
 
 ALIGN 4
+Axle1StatBoosts:
+StatBonus(0,0,0,0,0,0,0,13,0,0)
+
+ALIGN 4
 GrowthScrollBonuses:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
 GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr
 GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra
+GrowthBonus((-15),0,10,10,20,0,0,0,0,0) // 0x3 - Raio
+GrowthBonus(20,0,0,0,0,0,0,20,0,0) // 0x4 - Luzen
 
 #define BeiyrScroll 0x1
 #define ZykhraScroll 0x2
+#define RaioScroll 0x3
+#define LuzenScroll 0x4

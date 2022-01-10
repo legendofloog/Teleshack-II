@@ -197,7 +197,7 @@ Big Iron[X]
 Axle[X]
 
 ## Axle1Desc
-Cannot be countered. Axel[LockIcon].[X]
+Uncounterable. Lck +13.  Axel[LockIcon].[X]
 
 ## Axle2Desc
 Halves enemy health. Alex[LockIcon].[X]
@@ -220,3 +220,46 @@ Growth Scroll[X]
 
 ## GrowthScrollDesc
 Boosts equipped unit's growths.[X]
+
+## StingerName
+Stinger[X]
+
+## StingerDesc
+Spd +5. Hornet[LockIcon][X]
+
+## LunarAxeName
+Lunar Axe[X]
+
+## LunarAxeDesc
+Magic damage.[X]
+
+## StormbrandName
+Stormbrand[X]
+
+## StormbrandDesc
+Brave. Iskra[LockIcon][X]
+
+## BpatItemName
+DUMMY (bpat)[X]
+
+## BpatItemDesc
+Something special :)[X]
+
+## ArgymosCrestName
+Argymos Crest[X]
+
+## ArgymosCrestDesc
+Promotion item for Cleo.[X]
+
+## RaioScrollName
+Raio Scroll[X]
+
+## RaioScrollDesc
++10% Mag, +10% Skl, +20% Spd,[N]
+-15% HP[X]
+
+## LuzenScrollName
+Luzen Scroll[X]
+
+## LuzenScrollDesc
++20% HP, +20% Lck[X]

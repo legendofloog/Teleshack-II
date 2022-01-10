@@ -29,6 +29,7 @@ BYTE EndLockArray
 ArgilabrysArray:
 BYTE HardCharLock
 BYTE Cleo
+BYTE Elias
 BYTE EndLockArray
 
 DevilDaggerArray:
@@ -45,6 +46,16 @@ AxleArray:
 BYTE HardCharLock
 BYTE Alex
 BYTE Axel
+BYTE EndLockArray
+
+StingerArray:
+BYTE HardCharLock
+BYTE Hornet
+BYTE EndLockArray
+
+StormbrandArray:
+BYTE HardCharLock
+BYTE Iskra
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS
