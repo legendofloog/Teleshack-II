@@ -16,6 +16,11 @@ DeathQuote(Wellworth,Chapter7,2,WellworthDeathQuoteText)
 DeathQuote(Hege,Chapter8,2,HegeDeathQuote)
 DeathQuote(Francis,Chapter8,8,FrancisDeathQuote)
 DeathQuote(Wrathgar,Chapter9,2,WrathgarDeathQuote)
+DeathQuote(Cidor,Chapter10,0,Ch10CidorDeathQuote)
+DeathQuote(Johanna,Chapter10,0,Ch10JohannaDeathQuote)
+DeathQuote(Elias,Chapter10,0,Ch10EliasDeathQuote)
+DeathQuote(Mifan,Chapter10,0,Ch10MifanDeathQuote)
+DeathQuote(Hernandez,Chapter10,0,Ch10HernandezDeathQuote)
 
 //player units
 // ch1
@@ -65,5 +70,11 @@ DeathQuote(Hans,AllChapters,0x0,HansDeathQuote)
 // ch 9
 DeathQuote(Jenny,AllChapters,0x0,JennyDeathQuote)
 DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote)
+
+// ch 10
+DeathQuote(Valse,AllChapters,0x0,ValseDeathQuote)
+DeathQuote(Hornet,AllChapters,0x0,HornetDeathQuote)
+
+DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 
 DeathQuote(0xFFFF,0,0,0)

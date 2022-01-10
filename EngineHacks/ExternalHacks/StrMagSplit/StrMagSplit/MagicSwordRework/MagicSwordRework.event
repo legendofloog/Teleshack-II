@@ -37,6 +37,9 @@ POP
 	MagicSwordEntry(WindSword,WeaponTypeAnima,False,HitDef,HitRes)
 	MagicSwordEntry(FlameSword,WeaponTypeAnima,False,HitDef,HitRes)
 	MagicSwordEntry(ThunderSword,WeaponTypeAnima,False,HitDef,HitRes)
+
+	MagicSwordEntry(LunarAxe,0x2,True,HitRes,HitRes)
+
 	BYTE 0 0 0 //terminator
 
 

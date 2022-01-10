@@ -17,7 +17,7 @@ POIN SavageBlow BreathOfLife Despoil Lifetaker Fury BemperedRing PoisonStrike Gr
 POIN RadianceHeal RadianceMarking
 POIN Post_Nightcaller
 POIN AftershockPostBattle
-POIN Canto CantoPlus TryProcMoveStar Galeforce Powerstaff CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested ; Canto (put here to test mount universal canto) - loog
+POIN Canto CantoPlus TryProcMoveStar Galeforce Powerstaff Alacrity CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested ; Canto (put here to test mount universal canto) - loog
 POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
 POIN DullahanSkl
 WORD 0 //Terminator

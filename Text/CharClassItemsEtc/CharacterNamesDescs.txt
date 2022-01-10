@@ -52,7 +52,7 @@ Raschwitz[X]
 
 ## RaschwitzDesc
 A cowardly guard working in Duke[N]
-Cibor's dungeons. Tends to boast.[X]
+Cidor's dungeons. Tends to boast.[X]
 
 ## BoroName
 Boro[X]
@@ -65,8 +65,14 @@ Liberators. Values gold above all.[X]
 Selese[X]
 
 ## SeleseFactionDesc
-Those who serve Duke Cibor. Turned[N]
+Those who serve Duke Cidor. Turned[N]
 against Decia and sided with Cytheans.[X]
+
+## BanditFactionName
+Bandit[X]
+
+## BanditFactionDesc
+Bandits terrorizing the lands.[X]
 
 ## SennyName
 Senny[X]
@@ -94,7 +100,7 @@ Tyr[X]
 
 ## TyrDesc
 A pompous recently promoted[N]
-member of Cibor's guards.[X]
+member of Cidor's guards.[X]
 
 ## DelilahName
 Delilah[X]
@@ -152,7 +158,7 @@ troubled yet stalwart.[X]
 Hilmar[X]
 
 ## HilDesc
-A knight of Cibor's guards.[N]
+A knight of Cidor's guards.[N]
 Loyal to the end.[X]
 
 ## LeinaName
@@ -224,7 +230,7 @@ Draken[X]
 
 ## DrakenDesc
 The former first mate of[N]
-McCallun, now the captain.[X]
+McCallum, now the captain.[X]
 
 ## FishermanName
 Fisherman[X]
@@ -279,7 +285,7 @@ needs on work on being reliable.[X]
 Tobie[X]
 
 ## TobieDesc
-Gimm's sister, a bookish recruit[N]
+Mish's sister, a bookish recruit[N]
 to the Decian Liberators.[X]
 
 ## AwaName
@@ -429,6 +435,20 @@ Meldan[X]
 Friend of Helman. Noble-hearted,[N]
 but a bit of a doormat.[X]
 
+## ValseName
+Valse[X]
+
+## ValseDesc
+An easy-going Freysian[N]
+who hates injustice.[X]
+
+## HornetName
+Hornet[X]
+
+## HornetDesc
+A talented sharpshooter and[N]
+a woman of few words.[X]
+
 ## WrathgarName
 Wrathgar[X]
 
@@ -442,3 +462,25 @@ Cythes[X]
 ## CythesFactionDesc
 Soldiers of the Cythean Empire that[N]
 fight resolutely for their emperor.[X]
+
+## CidorName
+Cidor[X]
+
+## CidorDesc
+Duke of Selese. Turned against Decia[N]
+and supports the Cythean occupation.[X]
+
+## JohannaName
+Johanna[X]
+
+## JohannaDesc
+A scornful Cythean commander and[N]
+subordinate of General Elias.[X]
+
+## EliasName
+Elias[X]
+
+## EliasDesc
+A Cythean general and member of the[N]
+Order of Iris. Also known as the[N]
+Vermillion Knight. Cleo's older brother.[X]

@@ -26,7 +26,7 @@
 
 //Provoke: Enemies are more likely to target this unit.
 //By Tequila
-#define ProvokeID 255
+//#define ProvokeID 255
 
 //Shade: Enemies are less likely to target this unit.
 //By Sme
@@ -913,7 +913,7 @@
 
 //Swap: Allows unit to swap positions with an adjacent ally.
 //By StanH
-#define SwapID 255
+//#define SwapID 255
 
 //Swarp: Allows unit to swap positions with a distant ally.
 //Be Sme

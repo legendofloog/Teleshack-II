@@ -4,6 +4,7 @@
 #include "ScrollNames.lyn.event"
 #include "ScrollDurability.lyn.event"
 #include "SkillBookIconDraw.lyn.event"
+#include "SetUnitItemDurability/Installer.event"
 
 PUSH 
 
@@ -107,6 +108,8 @@ GrowthScrollNameTable:
 NameTableEntry(0x0)
 NameTableEntry(BeiyrScrollName)
 NameTableEntry(ZykhraScrollName)
+NameTableEntry(RaioScrollName)
+NameTableEntry(LuzenScrollName)
 
 
 ALIGN 4
@@ -114,4 +117,6 @@ GrowthScrollDescTable:
 NameTableEntry(0x0)
 NameTableEntry(BeiyrScrollDesc)
 NameTableEntry(ZykhraScrollDesc)
+NameTableEntry(RaioScrollDesc)
+NameTableEntry(LuzenScrollDesc)
 

@@ -26,6 +26,8 @@ SetUnitConGrowth(Iberis,10)
 SetUnitConGrowth(Buldak,40)
 SetUnitConGrowth(Nora,10)
 SetUnitConGrowth(Hans,10)
+SetUnitConGrowth(Valse,15)
+SetUnitConGrowth(Hornet,5)
 
 
 // Mov Growth Table
@@ -55,3 +57,5 @@ SetUnitMovGrowth(Iberis,10)
 SetUnitMovGrowth(Buldak, 2)
 SetUnitMovGrowth(Nora, 1)
 SetUnitMovGrowth(Hans, 4)
+SetUnitMovGrowth(Valse, 2)
+SetUnitMovGrowth(Hornet, 3)
