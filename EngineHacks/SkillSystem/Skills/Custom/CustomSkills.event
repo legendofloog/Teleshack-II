@@ -86,3 +86,12 @@ SpellMirrorSkl:
 #incbin "SpellMirror.dmp"
 POIN SkillTester
 WORD SpellMirrorID
+
+
+ALIGN 4
+Alacrity:
+#incbin "alacrity.dmp"
+POIN SkillTester
+WORD AlacrityID
+POIN AlacrityEvent
+#include "AlacrityEvent.event"

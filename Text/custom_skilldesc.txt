@@ -86,3 +86,13 @@ Power: +2 move to all ally infantry.[X]
 Genesium Might: Grants user power of[N]
 genesis and deicide. +1 all stats.[N]
 Power: Create 4 ally generals.[X]
+
+## SD_Alacrity
+Alacrity: Can act again after[N]
+using Swap, but cannot move[N]
+for the rest of the turn.[X]
+
+## SD_Sharpshooter
+Sharpshooter: Maximum range[N]
+of bows is increased by 2, but[N]
+minimum range is set to 3.[X]

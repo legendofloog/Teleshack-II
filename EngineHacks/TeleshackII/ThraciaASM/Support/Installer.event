@@ -98,6 +98,16 @@ GimmSupportList:
 SupportEntry(Tobie, 3, 3, 3, 0, 0, 10, 0)
 SupportTerm
 
+ALIGN 4
+ValseSupportList:
+SupportEntry(Hornet, 3, 0, 2, 0, 10, 0, 10)
+SupportTerm
+
+ALIGN 4
+HornetSupportList:
+SupportEntry(Valse, 3, 2, 0, 10, 0, 10, 0)
+SupportTerm
+
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
@@ -112,3 +122,5 @@ SetUnitSupportList(Filone,FiloneSupportList)
 SetUnitSupportList(Zwieback,ZwiebackSupportList)
 SetUnitSupportList(Gimm,GimmSupportList)
 SetUnitSupportList(Tobie,TobieSupportList)
+SetUnitSupportList(Valse,ValseSupportList)
+SetUnitSupportList(Hornet,HornetSupportList)

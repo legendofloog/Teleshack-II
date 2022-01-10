@@ -335,3 +335,6 @@ SkillDescription(AzuriumMightID, SD_AzuriumMight)
 SkillDescription(EterniumMightID, SD_EterniumMight)
 SkillDescription(ZoruniumMightID, SD_ZoruniumMight)
 SkillDescription(GenesiumMightID, SD_GenesiumMight)
+
+SkillDescription(AlacrityID,SD_Alacrity)
+SkillDescription(SharpshooterID,SD_Sharpshooter)

@@ -7,4 +7,5 @@ POP
 ALIGN 4
 PromotionItemTable:
 _C2EA_Promotion_Item_Table(0x88,0x0,KnightProofClasses|IsPointer,0x0)
+_C2EA_Promotion_Item_Table(0x98,0x0,ArgymosCrestClasses|IsPointer,0x0)
 _C2EA_Promotion_Item_Table(0xFFFF,0x0,0x0,0x0)

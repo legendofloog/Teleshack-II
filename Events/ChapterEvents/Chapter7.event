@@ -121,7 +121,7 @@ UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [Iro
 UNIT
 
 NewRecruit:
-UNIT Iberis MageArmor 0x0      Level(7,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT Iberis MageArmor 0x0      Level(6,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
 UNIT
 
 GreenUnits:

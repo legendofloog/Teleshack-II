@@ -61,6 +61,8 @@
 #define DevilDaggerLock 0x03000000
 #define BalladOfWarLock 0x04000000
 #define AxleLock 0x06000000
+#define StingerLock 0x05000000
+#define StormbrandLock 0x07000000
 #define PassiveBoosts 0x00800000
 
 

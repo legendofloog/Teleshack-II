@@ -22,7 +22,7 @@ Wind Sword[X]
 # 0x364 SleepSwordName
 Sleep Sword[X]
 
-# 0x365 MasterSwordName
+# 0x365 MasterSwordName *
 Master Sword[X]
 
 # 0x36d ShortLanceName
@@ -43,7 +43,7 @@ Poleaxe[X]
 # 0x384 MasterAxeName
 Master Axe[X]
 
-# 0x385 MasterLanceName
+# 0x385 MasterLanceName *
 Master Lance[X]
 
 # 0x386 ShortBowName

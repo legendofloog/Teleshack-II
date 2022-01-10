@@ -74,9 +74,9 @@
 #define Flux 0x45
 #define Sigil 0x46
 #define Jormungand 0x47
-#define Eclipse 0x48
-#define Fenrir 0x49
-#define Gleipnir 0x4A
+#define Fenrir 0x48
+#define Hel 0x49
+#define Meteor 0x4A
 #define Heal 0x4B
 #define Mend 0x4C
 #define Recover 0x4D
@@ -234,3 +234,8 @@
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
+#define Stinger 0x8d
+#define BpatItem 0x8e
+#define LunarAxe 0x8f
+#define Stormbrand 0x91
+#define ArgymosCrest 0x98

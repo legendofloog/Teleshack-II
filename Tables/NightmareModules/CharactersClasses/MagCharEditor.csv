@@ -29,8 +29,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x1B Empty,0,5
 0x1C Jenny,0,50
 0x1D Meldan,3,35
-Myrrh,0,5
-Knoll,2,85
+0x1E Valse,2,10
+0x1F Hornet,8,50
 Joshua,10,50
 Syrene,0,20
 Tana,4,20
@@ -71,9 +71,9 @@ Riggan,7,55
 Valter (Prologue),10,40
 Breguet (Ch 1),2,5
 Bone (Ch 2),0,5
-Bazba (Ch 3),0,5
-Entombed (Ch 4),1,10
-Saar (Ch 5),1,5
+0x48 Cidor (Ch10),3,5
+0x49 Johanna (Ch10,0,10
+0x4A Elias (Ch10),13,5
 Novala (Ch 6),8,5
 Murray (Ch 7),8,50
 Tirado (Ch 8),2,5
