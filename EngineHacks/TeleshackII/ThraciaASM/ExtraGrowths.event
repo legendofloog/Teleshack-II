@@ -28,6 +28,8 @@ SetUnitConGrowth(Nora,10)
 SetUnitConGrowth(Hans,10)
 SetUnitConGrowth(Valse,15)
 SetUnitConGrowth(Hornet,5)
+SetUnitConGrowth(Milo,10)
+SetUnitConGrowth(Ichwep,5)
 
 
 // Mov Growth Table
@@ -59,3 +61,5 @@ SetUnitMovGrowth(Nora, 1)
 SetUnitMovGrowth(Hans, 4)
 SetUnitMovGrowth(Valse, 2)
 SetUnitMovGrowth(Hornet, 3)
+SetUnitMovGrowth(Milo,1)
+SetUnitMovGrowth(Ichwep,3)

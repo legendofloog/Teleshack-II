@@ -30,7 +30,8 @@
 #define MeldanMug 0x25
 #define ValseMug 0x26
 #define HornetMug 0x29
-
+#define MiloMug 0x2A
+#define IchwepMug 0x2B
 
 // NPCs
 #define EliasMug 0xB
@@ -554,3 +555,19 @@ JohannaMugData:
 #incbin "Dmp/Johanna(XVI)_palette.dmp"
 #incbin "Dmp/Johanna(XVI)_minimug.dmp"
 setMugEntry(JohannaMug, JohannaMugData, 4, 6, 4, 4)
+
+ALIGN 16
+IchwepMugData:
+#incbin "Dmp/Ichwep(h0lyMushrooms)_mug.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms)_frames.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms)_palette.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms)_minimug.dmp"
+setMugEntry(IchwepMug, IchwepMugData, 3, 5, 3, 3)
+
+ALIGN 16
+MiloMugData:
+#incbin "Dmp/Milo(MegaCowmanSam)_mug.dmp"
+#incbin "Dmp/Milo(MegaCowmanSam)_frames.dmp"
+#incbin "Dmp/Milo(MegaCowmanSam)_palette.dmp"
+#incbin "Dmp/Milo(MegaCowmanSam)_minimug.dmp"
+setMugEntry(MiloMug, MiloMugData, 2, 5, 3, 3)

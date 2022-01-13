@@ -1088,5 +1088,9 @@
 #define ChampionDesc $110C
 #define LongBallistaName $110D
 #define LongBallistaDesc $110E
+#define MiloName $110F
+#define MiloDesc $1110
+#define IchwepName $1111
+#define IchwepDesc $1112
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT
