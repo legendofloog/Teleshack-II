@@ -10,7 +10,6 @@
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 #include "FixedDamage/FixedDamageWeapons.event"
-#include "trade_fix/TradeabilityChanges.event"
 
 
 // thief vision set to 0
@@ -71,6 +70,12 @@ POP
 PUSH
 ORG $178EA
 BYTE 0
+POP
+
+//devil axe backfire to 21 - luck
+PUSH
+ORG $2B6A4
+BYTE 21
 POP
 
 ALIGN 4

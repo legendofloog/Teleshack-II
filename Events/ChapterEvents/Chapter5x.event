@@ -224,7 +224,8 @@ BEQ 7 s1 sC
 	NoFade
 	ENDB
 LABEL 7
-Text(Ch5xTrajanConfirmation)
+Text(Ch5xTrajanConfirmation1)
+Text(Ch5xTrajanConfirmation2)
 SVAL s1 0x1
 BEQ 12 s1 sC
 	Text(Ch5xTrajanRejection)
@@ -412,7 +413,7 @@ BEQ 20 s0 sC
 LABEL 20
 Text(Ch5xKwameSceneMiraDead)
 LABEL 21
-MUSC WaterFlowingSoundEffect
+//MUSC WaterFlowingSoundEffect
 CAMERA [18,8]
 TILECHANGE 0
 STAL 20
@@ -483,7 +484,7 @@ BEQ 22 s0 sC
 LABEL 22
 Text(Ch5xTrajanMeeting3MiraDead)
 LABEL 24
-MUSC WaterFlowingSoundEffect
+//MUSC WaterFlowingSoundEffect
 Text(Ch5xTrajanMeeting4)
 MUSC 0x7FFF
 FADI 15

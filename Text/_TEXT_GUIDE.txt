@@ -36,7 +36,7 @@ A few differences from Builder: Every text entry needs [X] at the end to show th
 [ClearFace] - Removes the unit from the scene.
 
 
-[CurrentPortrait] - This loads the portrait of the active unit. Frequently used for village visits or other similar events where any character can trigger it.
+[LoadActive] - This loads the portrait of the active unit. Frequently used for village visits or other similar events where any character can trigger it.
 [LoadLoewe] - An example character load, which stands in for [LoadFace][0x14][0x1]. [LoadFace] is self-explanatory, 0x14 is his placement in the Portrait Table, while [0x1] just says that this is the default face.
 [CloseSpeechSlow] - Despite what it says, I've never found [CloseSpeechFast] to be faster than this one, so take the slow part with a grain of salt. This closes a speech bubble. 
 
