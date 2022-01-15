@@ -32,11 +32,11 @@ Chest(RedGem,12,10)
 LOCA 9 AlexAxelDoor [19,11] 0x12
 Door(17,13)
 Door(10,14)
-Escape(21,EscapeEventCheck,29,11)
-Escape(21,EscapeEventCheck,29,12)
-Escape(21,EscapeEventCheck,29,13)
-Escape(21,EscapeEventCheck,29,14)
-Escape(21,EscapeEventCheck,29,15)
+Escape(0,EscapeEventCheck,29,11)
+Escape(0,EscapeEventCheck,29,12)
+Escape(0,EscapeEventCheck,29,13)
+Escape(0,EscapeEventCheck,29,14)
+Escape(0,EscapeEventCheck,29,15)
 END_MAIN
 
 EscapeEventCheck:
@@ -48,39 +48,20 @@ CHECK_ACTIVEID Cleo
 BEQ 1 s0 sC
 	COUNTER_INC 0
 LABEL 1
-/*
-CheckRescuedUnit(0xFFFF)
-SVAL s1 Loewe
-BNE 38 s1 sC
-	COUNTER_INC 0
-LABEL 38
-SVAL s1 Cleo
-BNE 39 s1 sC
-	COUNTER_INC 0
-LABEL 39
-*/
+SVAL s1 2
+COUNTER_CHECK 0
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
 NoFade
 ENDA
 
 MiscBasedEvents:
 AFEV 15 AlexAxelFreed 9
 AFEV 0x65 DraganaDeathResponse 0x0D
-AFEV 0 EscapeCheck2 21
 CauseGameOverIfLordDies
 END_MAIN
-
-EscapeCheck2:
-SVAL s1 1
-SET_DEPLOYED (-1)
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-ENUF 21
-NoFade
-ENDA
 
 Dunno1:
 END_MAIN
@@ -255,7 +236,7 @@ Text(BeginningSceneTextA)
 Text(BeginningSceneTextB)
 Text(BeginningSceneTextC)
 CALL $9EE2C4
-LOAD1 2 Units1
+LOAD3 2 Units1
 LOAD1 1 DraganaUnit
 LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
@@ -264,15 +245,15 @@ ENDA
 
 EndingScene:
 MUSC 0x7FFF
-EscapeCapturedCheck(Mira, 0x8B)
-EscapeCapturedCheck(Iskra, 0x8C)
-EscapeCapturedCheck(Emil, 0x8D)
-EscapeCapturedCheck(Svetomir, 0x8E)
-EscapeCapturedCheck(Alena, 0x8F)
-EscapeCapturedCheck(Varga, 0x90)
-EscapeCapturedCheck(Delilah, 0x91)
-EscapeCapturedCheck(Alex, 0x92)
-EscapeCapturedCheck(Axel, 0x93)
+CheckIfUnitEscapedASMC(Mira,39)
+CheckIfUnitEscapedASMC(Iskra,72)
+CheckIfUnitEscapedASMC(Emil,308)
+CheckIfUnitEscapedASMC(Svetomir,56)
+CheckIfUnitEscapedASMC(Alena,79)
+CheckIfUnitEscapedASMC(Varga,43)
+CheckIfUnitEscapedASMC(Delilah,98)
+CheckIfUnitEscapedASMC(Alex,876)
+CheckIfUnitEscapedASMC(Axel,233)
 Text(MapEndText)
 SetBackground(CastleHallway)
 Text(EndingSceneTextA1)

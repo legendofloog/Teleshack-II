@@ -60,11 +60,13 @@ Tutorial:
 	END_MAIN
 
 Units1:
-UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [2,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [2,0] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [0,1] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
 UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
 UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [2,1] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [0,0] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -168,7 +170,7 @@ BeginningScene:
 	REMA
 	EVBIT_F 5
 	Text(Chapter2OpeningScene3)
-	CUSA Varga
+	CUSN Varga
 	MUSC Sortie_Formation
 	StartBattle
 	NormalDamage(0,14)
@@ -194,8 +196,12 @@ BeginningScene:
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)
-	LOAD1 2 Units1
+	FADI 15
+	LOAD3 2 Units1
+	//LOAD1 2 Units1
 	ENUN
+	CUSA Varga
+	FADU 15
 	Text(Chapter2OpeningScene5)
 	NoFade
 	ENDA

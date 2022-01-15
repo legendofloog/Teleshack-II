@@ -120,4 +120,4 @@ ChangeWeaponRankASMC:
 
 #include "FogVisionTiles/Installer.event"
 
-#include "PromoLevelCheck/PromoLevelCheck.lyn.event"
+#include "PromoLevelCheck/PromoLevelCheck.lyn.event" //fixes IER bug where promo can be done at any level

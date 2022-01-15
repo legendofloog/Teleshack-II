@@ -37,9 +37,8 @@ Chest(SteelBow,10,11)
 LOCA 9 LoeweSvetomirDoor [16,10] 0x12
 LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
-Escape(21,EscapeEventCheck,2,0)
-Escape(21,EscapeEventCheck,3,0)
-//Escape(21,EscapeEventCheck,16,16)
+Escape(0,EscapeEventCheck,2,0)
+Escape(0,EscapeEventCheck,3,0)
 END_MAIN
 
 EscapeEventCheck:
@@ -51,14 +50,22 @@ CHECK_ACTIVEID Cleo
 BEQ 1 s0 sC
 	COUNTER_INC 0
 LABEL 1
-CheckIfRescuedByActive(Loewe)
+/*
+CheckIfUnitRescuedByActiveASMC(Loewe)
 BEQ 38 s0 sC
 	COUNTER_INC 0
 LABEL 38
-CheckIfRescuedByActive(Cleo)
+CheckIfUnitRescuedByActiveASMC(Cleo)
 BEQ 39 s0 sC
 	COUNTER_INC 0
 LABEL 39
+*/
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
 NoFade
 ENDA
 
@@ -69,21 +76,7 @@ AFEV 12 LoeweSvetomirFreed 9
 AFEV 13 SennyFreed 10
 AFEV 15 HelmanFreed 11
 CauseGameOverIfLordDies
-AFEV 0 EscapeCheck2 21
 END_MAIN
-
-EscapeCheck2:
-SVAL s1 1
-SET_DEPLOYED (-1)
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-ENUF 21
-NoFade
-ENDA
 
 Dunno1:
 END_MAIN
@@ -134,6 +127,7 @@ UNIT
 
 Units1:
 //UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [SleepSword,Sleep,Berserk,BerserkSword]     NoAI
+//UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [16,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [18,16] 0x0 0x0 0x1 REDA17R16 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x1 REDA18R16 [SilverSword,ShortSword,Vulnerary] NoAI
 UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x1 REDA18R15 [Thunder,Vulnerary]                NoAI
@@ -156,7 +150,7 @@ UNIT Chapter1Generics LanceSoldier 0x0    Level(1,NPC,False) [11,0] 0x0 0x0 0x0 
 UNIT 
 
 GreenUnits:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(7,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
 UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
@@ -180,9 +174,9 @@ UNIT
 
 
 Turn2Reinforcements:
-UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] StallOneTurnAI
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [ShortSword] StallOneTurnAI
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [ShortSword] StallOneTurnAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] DoNothingAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [ShortSword] DoNothingAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [ShortSword] DoNothingAI
 UNIT
 
 
@@ -369,6 +363,7 @@ REMA
 FADI 15
 LOMA Chapter1
 LOAD1 1 EnemyUnits
+LOAD1 1 Turn2Reinforcements
 LOAD1 1 GreenUnits
 ENUN
 CAMERA Loewe
@@ -393,8 +388,6 @@ ENDA
 
 
 AlenaSpawn:
-LOAD1 1 Turn2Reinforcements
-ENUN
 CAMERA Alena
 Text(AlenaSpawnText)
 NoFade
@@ -405,6 +398,9 @@ CAMERA Alena
 Text(AlenaChargeText)
 SVAL s1 0x00040A06
 CHAI Alena
+SVAL s1 0x00040000
+CHAI [1,13]
+CHAI [1,15]
 NoFade
 ENDA
 
@@ -510,11 +506,11 @@ NoFade
 ENDA
 
 EndingScene:
-EscapeCapturedCheck(Mira, 0x8B)
-EscapeCapturedCheck(Iskra, 0x8C)
-EscapeCapturedCheck(Emil, 0x8D)
-EscapeCapturedCheck(Svetomir, 0x8E)
-EscapeCapturedCheck(Alena, 0x8F)
+CheckIfUnitEscapedASMC(Mira,39)
+CheckIfUnitEscapedASMC(Iskra,72)
+CheckIfUnitEscapedASMC(Emil,308)
+CheckIfUnitEscapedASMC(Svetomir,56)
+CheckIfUnitEscapedASMC(Alena,79)
 ENUN
 CHECK_EVENTID 7
 BNE 2 s0 sC
