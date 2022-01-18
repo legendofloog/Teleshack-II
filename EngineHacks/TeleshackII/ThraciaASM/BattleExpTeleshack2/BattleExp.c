@@ -82,6 +82,10 @@ bool CanBattleUnitGainExp(BattleUnit* actor, BattleUnit* target){
 		return false;
 	}
 
+	if ((actor->unit.fatigue >= actor->unit.maxHP)){
+		return false;
+	}
+
 	return true;
 
 }
@@ -126,6 +130,11 @@ int GetBattleUnitStaffExp(BattleUnit* actor){
 	if (actor->unit.curHP == 0){
 		return 0;
 	}
+
+	if ((actor->unit.fatigue >= actor->unit.maxHP)){
+		return 0;
+	}
+
 	const ItemData* staffData = GetItemData(actor->weapon.number);
 	int staffRank = staffData->weaponRank;
 	if( staffRank == 1 ){ // e rank
