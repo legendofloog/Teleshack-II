@@ -75,6 +75,10 @@ DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote)
 DeathQuote(Valse,AllChapters,0x0,ValseDeathQuote)
 DeathQuote(Hornet,AllChapters,0x0,HornetDeathQuote)
 
+// ch 11
+DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote)
+DeathQuote(Aurora,Chapter11,0x2,AuroraDeathQuote)
+
 DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 
 DeathQuote(0xFFFF,0,0,0)

@@ -31,6 +31,8 @@
 #define PassID 48
 #define SwapID 49
 #define ProvokeID 52
+#define ImbueID 53
+#define ArmoredBlowID 54
 
 // keep it continous for debug purpose
 

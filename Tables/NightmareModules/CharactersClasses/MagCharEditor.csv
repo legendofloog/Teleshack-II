@@ -29,10 +29,10 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x1B Empty,0,5
 0x1C Jenny,0,50
 0x1D Meldan,3,35
-0x1E Valse,2,10
-0x20 Milo,1,25
-0x21 Ichwep,4,25
-0x22 Tana,6,20
+0x1F Hornet,2,10
+0x20 Milo,6,25
+0x21 Ichwep,2,25
+0x22 Tana,5,30
 Tana,4,20
 Lyon,2,15
 Orson,13,50
@@ -67,7 +67,7 @@ Lyon,0,0
 Boro (Ch1),0,0
 0x43 Tyr (Ch 15),0,0
 Valter (Ch 15),3,10
-Riggan,7,55
+0x45 Aurora,2,55
 Valter (Prologue),10,40
 Breguet (Ch 1),2,5
 Bone (Ch 2),0,5

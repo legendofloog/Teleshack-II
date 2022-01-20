@@ -116,7 +116,9 @@
 #define Militia 0x82
 #define Freyse 0x88
 
-#define Valter_Prologue 0x45
+//Chapter 11 stuff
+#define Aurora 0x45
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49

@@ -110,7 +110,7 @@ mov r2, #0x42
 tst r1, r2
 bne     SkillReturn @do nothing if magic bit set
 mov r2, #0x2
-lsl r2, #0x10 @0x20000 negate def/res
+lsl r2, #0x4 @0x20000 negate def/res
 tst r1, r2
 bne SkillReturn
 ldr r0, =0x203a4ec

@@ -66,6 +66,7 @@
 #define WrathgarMug 0x32
 #define JohannaMug 0x33
 #define DraganaYoungMug 0xBE
+#define AuroraMug 0x34
 
 ALIGN 16
 BarodMugData:
@@ -562,7 +563,7 @@ IchwepMugData:
 #incbin "Dmp/Ichwep(h0lyMushrooms)_frames.dmp"
 #incbin "Dmp/Ichwep(h0lyMushrooms)_palette.dmp"
 #incbin "Dmp/Ichwep(h0lyMushrooms)_minimug.dmp"
-setMugEntry(IchwepMug, IchwepMugData, 3, 5, 3, 3)
+setMugEntry(IchwepMug, IchwepMugData, 2, 5, 3, 3)
 
 ALIGN 16
 MiloMugData:
@@ -571,3 +572,11 @@ MiloMugData:
 #incbin "Dmp/Milo(MegaCowmanSam)_palette.dmp"
 #incbin "Dmp/Milo(MegaCowmanSam)_minimug.dmp"
 setMugEntry(MiloMug, MiloMugData, 2, 5, 3, 3)
+
+ALIGN 16
+AuroraMugData:
+#incbin "Dmp/Aurora(LaurentLaicrox)_mug.dmp"
+#incbin "Dmp/Aurora(LaurentLaicrox)_frames.dmp"
+#incbin "Dmp/Aurora(LaurentLaicrox)_palette.dmp"
+#incbin "Dmp/Aurora(LaurentLaicrox)_minimug.dmp"
+setMugEntry(AuroraMug, AuroraMugData, 2, 5, 3, 3)

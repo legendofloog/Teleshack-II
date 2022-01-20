@@ -233,7 +233,7 @@
 
 //Imbue: Recover HP equal to Magic at the start of each turn.
 //By Sme
-#define ImbueID 255
+//#define ImbueID 255
 
 //Movement Skills
 
@@ -342,7 +342,7 @@
 #define DeathBlowID 255
 #define DartingBlowID 255
 #define WardingBlowID 255
-#define ArmoredBlowID 255
+//#define ArmoredBlowID 255
 //By Darrman
 #define HeroesDeathBlowID 255
 
