@@ -575,8 +575,8 @@ setMugEntry(MiloMug, MiloMugData, 2, 5, 3, 3)
 
 ALIGN 16
 AuroraMugData:
-#incbin "Dmp/Aurora(LaurentLaicrox)_mug.dmp"
-#incbin "Dmp/Aurora(LaurentLaicrox)_frames.dmp"
-#incbin "Dmp/Aurora(LaurentLaicrox)_palette.dmp"
-#incbin "Dmp/Aurora(LaurentLaicrox)_minimug.dmp"
+#incbin "Dmp/Aurora(ZessDynamite)_mug.dmp"
+#incbin "Dmp/Aurora(ZessDynamite)_frames.dmp"
+#incbin "Dmp/Aurora(ZessDynamite)_palette.dmp"
+#incbin "Dmp/Aurora(ZessDynamite)_minimug.dmp"
 setMugEntry(AuroraMug, AuroraMugData, 2, 5, 3, 3)

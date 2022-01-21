@@ -23,6 +23,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
 END_MAIN
 
 LocationBasedEvents:
@@ -146,14 +147,14 @@ BeginningScene:
 	
 EndingScene:
 
-	SetBackground(0x15)
+//	SetBackground(0x15)
 
-	MUSC TiesOfFriendship
-	SetBackground(0x13)
-	Text(Ch10End2)
-
-	SetBackground(0x0A)
-	Text(Ch10End3)
+//	MUSC TiesOfFriendship
+//	SetBackground(0x13)
+//	Text(Ch10End2)
+//
+//	SetBackground(0x0A)
+//	Text(Ch10End3)
 
 	MNC2 Chapter12
 	NoFade
