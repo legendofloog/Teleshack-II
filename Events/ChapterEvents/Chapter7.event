@@ -143,6 +143,7 @@ Traps2:
 
 BeginningScene:
 COUNTER_SET 0 0
+MountAll
 LOAD1 1 NewRecruit
 LOAD1 1 EnemyUnits
 LOAD1 1 GreenUnits

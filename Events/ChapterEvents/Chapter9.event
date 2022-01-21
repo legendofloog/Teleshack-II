@@ -118,17 +118,17 @@ UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [21,4] 0x0 0x0 0x0 0x0 [Ste
 UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [14,18] 0x0 0x0 0x0 0x0 [IronAxe]ChargeHealAI 
 UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary]ChargeHealAI 
 
-UNIT Freyse SwordArmor Wrathgar Level(10,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [IronBlade] TwoActionAI
-UNIT Freyse SwordArmor Wrathgar Level(10,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [SteelSword] TwoActionAI
+UNIT Freyse SwordArmor Wrathgar Level(9,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [IronBlade] TwoActionAI
+UNIT Freyse SwordArmor Wrathgar Level(9,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [SteelSword] TwoActionAI
 
-UNIT Freyse LanceArmor Wrathgar Level(10,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
-UNIT Freyse LanceArmor Wrathgar Level(10,Enemy,True) [20,8] 0x0 0x0 0x0 0x0 [Horseslayer] TwoActionAI
+UNIT Freyse LanceArmor Wrathgar Level(9,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Freyse LanceArmor Wrathgar Level(9,Enemy,True) [20,8] 0x0 0x0 0x0 0x0 [Horseslayer] TwoActionAI
 
-UNIT Freyse SwordKnight Wrathgar Level(10,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
-UNIT Freyse SwordKnight Wrathgar Level(10,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
+UNIT Freyse SwordKnight Wrathgar Level(9,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
+UNIT Freyse SwordKnight Wrathgar Level(9,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
 
-UNIT Freyse AxeKnight Wrathgar Level(10,Enemy,True) [13,10] 0x0 0x0 0x0 0x0 [Hammer] TwoActionAI
-UNIT Freyse AxeKnight Wrathgar Level(10,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
+UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [13,10] 0x0 0x0 0x0 0x0 [Hammer] TwoActionAI
+UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
 
 UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Thoron] TwoActionAI
@@ -138,7 +138,7 @@ UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [Si
 UNIT
 
 JennyReinforce:
-UNIT Jenny RookKnight 0x0 Level(4,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [LongLance,Javelin,IronSword] ChargeHealAI
+UNIT Jenny RookKnight 0x0 Level(6,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [LongLance,Javelin,IronSword] ChargeHealAI
 UNIT
 
 MeldanReinforce:

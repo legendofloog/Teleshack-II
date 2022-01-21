@@ -199,7 +199,7 @@ UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [24,29] 0x0 0x0 0x0 0x1 [IronAxe] 
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [27,25] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [24,21] 0x0 0x0 0x0 0x1 [IronBow] StallAI(6)
 
-UNIT Draken 0x0 Draken Level(6,Enemy,False) [0, 28] DropItem 0x0 0x0 0x1 [HandAxe, IronAxe] BossAI
+UNIT Draken 0x0 Draken Level(6,Enemy,False) [0, 28] 0x0 0x0 0x0 0x1 [HandAxe, IronAxe] BossAI
 UNIT
 
 ALIGN 4

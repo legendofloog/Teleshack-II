@@ -9,6 +9,7 @@ int GetUnitEffectiveLevel(Unit* unit);
 int GetLevelDifference(BattleUnit* actor, BattleUnit* target);
 int GetBattleUnitStaffExp(BattleUnit* actor);
 const ItemData* GetItemData(int itemId);
+extern u8 PrepromoteTable[];
 
 /*
 SET_FUNC BattleApplyExpGains, 0x802B92D
@@ -31,14 +32,18 @@ int GetBattleUnitExpGain(BattleUnit* actor, BattleUnit* target){
 
 		// tinked or missed
 		if (!(actor->nonZeroDamage)){
-			return 1;
+			return 0;
 		}
 
 		// killed
 		if (target->unit.curHP == 0){
-			int initialKillExp = 30 + (5 * GetLevelDifference(actor, target));
-			if(initialKillExp <= 5){
-				return 5;
+			int bossFactor = 1;
+			if (target->unit.pCharacterData->attributes & CA_BOSS){
+				bossFactor = 2;
+			}
+			int initialKillExp = 30*bossFactor + (6 * GetLevelDifference(actor, target));
+			if(initialKillExp <= 0){
+				return 1;
 			}
 			else if(initialKillExp >= 100){
 				return 100;
@@ -51,7 +56,7 @@ int GetBattleUnitExpGain(BattleUnit* actor, BattleUnit* target){
 		// hit
 		int initialHitExp = 10 + (2 * GetLevelDifference(actor, target));
 			if(initialHitExp <= 0){
-				return 1;
+				return 0;
 			}
 			else if(initialHitExp >= 50){
 				return 50;
@@ -78,11 +83,11 @@ bool CanBattleUnitGainExp(BattleUnit* actor, BattleUnit* target){
 	}
 
 	// does the opponent prevent exp gain
-	if ((target->unit.pCharacterData->attributes | target->unit.pClassData->attributes) & CA_NO_EXP){
+	if (((target->unit.pCharacterData->attributes) | (target->unit.pClassData->attributes)) & CA_NO_EXP){
 		return false;
 	}
 
-	if ((actor->unit.fatigue >= actor->unit.maxHP)){
+	if ((actor->unit.fatigue > actor->unit.maxHP)){
 		return false;
 	}
 
@@ -109,6 +114,16 @@ int GetUnitEffectiveLevel(Unit* unit){
 	if (unit->pClassData->attributes & CA_PROMOTED){
 		effectiveLevel += 20;
 	}
+	int currentPrepromoteUnit = 0;
+	int i = 0;
+	while( currentPrepromoteUnit != 0xFF){
+		currentPrepromoteUnit = PrepromoteTable[i];
+		if(unit->pCharacterData->number == currentPrepromoteUnit){
+			effectiveLevel -= 10;
+			break;
+		}
+		i++;
+	}
 
 	return effectiveLevel;
 
@@ -131,7 +146,7 @@ int GetBattleUnitStaffExp(BattleUnit* actor){
 		return 0;
 	}
 
-	if ((actor->unit.fatigue >= actor->unit.maxHP)){
+	if ((actor->unit.fatigue > actor->unit.maxHP)){
 		return 0;
 	}
 

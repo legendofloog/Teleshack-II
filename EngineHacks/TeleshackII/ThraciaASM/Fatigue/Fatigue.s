@@ -26,7 +26,7 @@ push {r4-r7,r14}
 mov r4,r0
 
 @check if current chapter is greater than or equal to first fatigue chapter
-ldr r0,=#0x202BCF0 @chapter data struct
+ldr r0,=0x202BCF0 @chapter data struct
 ldrb r0,[r0,#0xE] @chapter ID
 ldr r1,=FatigueStartingChapter
 ldrb r1,[r1]
@@ -90,6 +90,16 @@ cmp r0,#6 @Steal
 beq IncrementAttackerFatigue
 cmp r0,#7 @Summon
 beq IncrementAttackerFatigue
+cmp r0,#0x23 @reposition
+beq IncrementAttackerFatigue
+cmp r0,#0x24 @pivot
+beq IncrementAttackerFatigue
+cmp r0,#0x25 @swap
+beq IncrementAttackerFatigue
+cmp r0,#0x26 @shove/smite
+beq IncrementAttackerFatigue
+cmp r0,#0x27 @swarp
+beq IncrementAttackerFatigue
 cmp r0,#8 @DK Summon (because why not)
 bne CheckDefender
 
@@ -144,7 +154,7 @@ cmp r0,#0
 beq EndStaffFatigue
 
 @what staff did we use?
-ldr r0,=#0x203A4EC @loop is vague as to whether or not this is in r4 so we'll just load it ourselves
+ldr r0,=0x203A4EC @loop is vague as to whether or not this is in r4 so we'll just load it ourselves
 add r0,#0x4A
 ldrh r0,[r0] @equipped item and uses before battle
 mov r1,#0xFF
