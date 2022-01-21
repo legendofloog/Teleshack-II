@@ -36,9 +36,6 @@ Door(1,8)
 Door(2,8)
 END_MAIN
 
-LocationBasedEvents:
-END_MAIN
-
 Dunno1:
 
 END_MAIN
