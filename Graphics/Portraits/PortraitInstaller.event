@@ -134,10 +134,10 @@ setMugEntry(CleoMug, CleoMugData, 3, 5, 3, 3)
 
 ALIGN 16
 MiraMugData:
-#incbin "Dmp/Mira(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Mira(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Mira(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Mira(Laurent_Lacroix)_minimug.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin)_mug.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin)_frames.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin)_palette.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin)_minimug.dmp"
 setMugEntry(MiraMug, MiraMugData, 3, 6, 3, 4)
 
 ALIGN 16
