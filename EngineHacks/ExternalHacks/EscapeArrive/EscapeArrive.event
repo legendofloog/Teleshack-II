@@ -51,9 +51,6 @@ POP
 #define Arrive(eventID,offset,seizeX,seizeY) "LOCA eventID offset [seizeX,seizeY] 0x12"
 #define Escape(seizeX,seizeY) "LOCA 3 [seizeX,seizeY] 0x13"
 #define Escape(eventID,offset,seizeX,seizeY) "LOCA eventID offset [seizeX,seizeY] 0x13"
-	
-//This will set the given flag if the unit did not escape
-#define EscapeCapturedCheck(charID,flagID) "SVAL 0xD 0; SVAL 1 charID; SENQUEUE 1; SVAL 1 flagID; SENQUEUE 1; CALL ThraciaEscapeProcessor"
 
 #endif // ESCAPE_ARRIVE_INSTALLED
 

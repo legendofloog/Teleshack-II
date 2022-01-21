@@ -95,6 +95,9 @@
 // Chapter 5x
 #define Kwame 0x65
 #define Trajan 0x66
+#define MiraCopy 0x90
+#define IskraCopy 0x91
+#define VargaCopy 0x92
 
 //Chapter 6 stuff
 #define Vladith 0x74

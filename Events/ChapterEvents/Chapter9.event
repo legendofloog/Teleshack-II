@@ -37,12 +37,11 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-AFEV 0 EscapeCheck2 21
 END_MAIN
 
 LocationBasedEvents:
-Escape(21,EscapeEventCheck,19,0)
-Escape(21,EscapeEventCheck,20,0)
+Escape(0,EscapeEventCheck,19,0)
+Escape(0,EscapeEventCheck,20,0)
 END_MAIN
 
 EscapeEventCheck:
@@ -54,33 +53,15 @@ CHECK_ACTIVEID Cleo
 BEQ 1 s0 sC
 	COUNTER_INC 0
 LABEL 1
-/*
-CheckRescuedUnit(0xFFFF)
-SVAL s1 Loewe
-BNE 38 s1 sC
-	COUNTER_INC 0
-LABEL 38
-SVAL s1 Cleo
-BNE 39 s1 sC
-	COUNTER_INC 0
-LABEL 39
-*/
-NoFade
-ENDA
-
-
-EscapeCheck2:
-SVAL s1 1
-SET_DEPLOYED (-1)
 COUNTER_CHECK 0
 SVAL s1 2
 BNE 3 s1 sC
 	ENUT 3
 	CALL EndingScene
 LABEL 3
-ENUF 21
 NoFade
 ENDA
+
 
 Dunno1:
 
@@ -277,32 +258,32 @@ NoFade
 ENDA
 
 EndingScene:
-EscapeCapturedCheck(Mira, 0x8B)
-EscapeCapturedCheck(Iskra, 0x8C)
-EscapeCapturedCheck(Emil, 0x8D)
-EscapeCapturedCheck(Svetomir, 0x8E)
-EscapeCapturedCheck(Alena, 0x8F)
-EscapeCapturedCheck(Varga, 0x90)
-EscapeCapturedCheck(Delilah, 0x91)
-EscapeCapturedCheck(Alex, 0x92)
-EscapeCapturedCheck(Axel, 0x93)
-EscapeCapturedCheck(Filone, 0x94)
-EscapeCapturedCheck(Zwieback, 0x95)
-EscapeCapturedCheck(Fangai, 0x96)
-EscapeCapturedCheck(Longxia, 0x97)
-EscapeCapturedCheck(Mish, 0x98)
-EscapeCapturedCheck(Tobie, 0x99)
-EscapeCapturedCheck(Awa, 0x9A)
-EscapeCapturedCheck(Faolan, 0x9B)
-EscapeCapturedCheck(Cadenza, 0x9C)
-EscapeCapturedCheck(Leina, 0x9D)
-EscapeCapturedCheck(Cromar, 0x9E)
-EscapeCapturedCheck(Iberis, 0x9F)
-EscapeCapturedCheck(Buldak, 0xA0)
-EscapeCapturedCheck(Nora, 0xA1)
-EscapeCapturedCheck(Hans, 0xA2)
-EscapeCapturedCheck(Jenny, 0xA3)
-EscapeCapturedCheck(Meldan, 0xA4)
+CheckIfUnitEscapedASMC(Mira,39)
+CheckIfUnitEscapedASMC(Iskra,72)
+CheckIfUnitEscapedASMC(Emil,308)
+CheckIfUnitEscapedASMC(Svetomir,56)
+CheckIfUnitEscapedASMC(Alena,79)
+CheckIfUnitEscapedASMC(Varga,43)
+CheckIfUnitEscapedASMC(Delilah,98)
+CheckIfUnitEscapedASMC(Alex,876)
+CheckIfUnitEscapedASMC(Axel,233)
+CheckIfUnitEscapedASMC(Filone,58)
+CheckIfUnitEscapedASMC(Zwieback,901)
+CheckIfUnitEscapedASMC(Fangai,765)
+CheckIfUnitEscapedASMC(Longxia,456)
+CheckIfUnitEscapedASMC(Mish,321)
+CheckIfUnitEscapedASMC(Tobie,935)
+CheckIfUnitEscapedASMC(Awa,103)
+CheckIfUnitEscapedASMC(Faolan,257)
+CheckIfUnitEscapedASMC(Cadenza,974)
+CheckIfUnitEscapedASMC(Leina,406)
+CheckIfUnitEscapedASMC(Cromar,845)
+CheckIfUnitEscapedASMC(Iberis,938)
+CheckIfUnitEscapedASMC(Buldak,674)
+CheckIfUnitEscapedASMC(Nora,624)
+CheckIfUnitEscapedASMC(Hans,838)
+CheckIfUnitEscapedASMC(Jenny,253)
+CheckIfUnitEscapedASMC(Meldan,696)
 SetBackground(CastleHallway)
 MUSC FF5_Nostalgia
 Text(Ch9EndingText)

@@ -71,16 +71,16 @@ const ClassData* GetMountedClass(Unit* unit){
 }
 
 void UnitChangeClass(Unit* unit, const ClassData* newClass){
-	const ClassData* oldClass = unit->pClassData;
-
-	unit->maxHP += (newClass->baseHP - oldClass->baseHP);
+	//const ClassData* oldClass = unit->pClassData;
+	
+	/*unit->maxHP += (newClass->baseHP - oldClass->baseHP);
 	unit->curHP += (newClass->baseHP - oldClass->baseHP);
 	unit->pow += (newClass->basePow - oldClass->basePow);
 	unit->mag += (MagClassTable[newClass->number].baseMag - MagClassTable[oldClass->number].baseMag);
 	unit->skl += (newClass->baseSkl - oldClass->baseSkl);
 	unit->spd += (newClass->baseSpd - oldClass->baseSpd);
 	unit->def += (newClass->baseDef - oldClass->baseDef);
-	unit->res += (newClass->baseRes - oldClass->baseRes);
+	unit->res += (newClass->baseRes - oldClass->baseRes);*/
 
 	unit->pClassData = newClass;
 
@@ -91,7 +91,7 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass){
 
 void DismountUnitASMC(){
 	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
-	if(unit-> state & (US_DEAD | US_BIT16))
+	if(unit->state & (US_DEAD | US_BIT16))
 	{
 		return;
 	} 
@@ -103,7 +103,7 @@ void DismountUnitASMC(){
 
 void MountUnitASMC(){
 	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
-	if(unit-> state & (US_DEAD | US_BIT16))
+	if(unit->state & (US_DEAD | US_BIT16))
 	{
 		return;
 	} 
@@ -111,5 +111,27 @@ void MountUnitASMC(){
 	if (mountedClass != 0){
 		UnitChangeClass(unit, mountedClass);
 	}
+}
+
+bool DismountTester(Unit* unit, int dismountType){
+	const ClassData* mountedClassData = GetMountedClass(unit);
+	if ((mountedClassData != 0 ) && (dismountType == 1) && (mountedClassData->attributes & CA_MOUNTED )){ // checks if mounted class is a horse
+		return true;
+	}
+	if ((mountedClassData != 0) && (dismountType == 2)){ // checks if mounted class is a pegasus OR Loewe's prf classes
+		if (mountedClassData->attributes & CA_PEGASUS){
+			return true;
+		}
+		if ((mountedClassData->number == 0x1D) || (mountedClassData->number == 0x1F)){
+			return true;
+		}
+	}
+	if ((mountedClassData != 0) && (dismountType == 3) && (mountedClassData->attributes & CA_WYVERN)){ // checks if mounted class is a dragon AND not Loewe's prf classe
+		if ((mountedClassData->number == 0x1D) || (mountedClassData->number == 0x1F)){
+			return false;
+		}
+		return true;
+	}
+	return false;
 }
 

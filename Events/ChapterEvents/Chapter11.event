@@ -36,6 +36,9 @@ Door(1,8)
 Door(2,8)
 END_MAIN
 
+LocationBasedEvents:
+END_MAIN
+
 Dunno1:
 
 END_MAIN
@@ -116,9 +119,6 @@ Turn3Units:
 UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [4,27] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT
 
-
-
-
 Traps1:
 	ENDTRAP
 	ALIGN 4
@@ -155,7 +155,6 @@ EndingScene:
 //
 //	SetBackground(0x0A)
 //	Text(Ch10End3)
-
 	MNC2 Chapter12
 	NoFade
 	ENDA

@@ -232,7 +232,6 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-MountAll
 Music(SolveTheRiddle)
 SetBackground(0x10)
 Text(Ch4Intro1)
@@ -287,6 +286,7 @@ ENUN
 STAL 30
 CameraCursor(Zwieback)
 Text(Ch4Intro4)
+MountAll
 STAL 3
 	GotoPrepScreen
 	ENDA

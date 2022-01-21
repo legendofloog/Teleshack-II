@@ -419,7 +419,7 @@ BuldakMugData:
 #incbin "Dmp/Buldak(RandomWizard)_frames.dmp"
 #incbin "Dmp/Buldak(RandomWizard)_palette.dmp"
 #incbin "Dmp/Buldak(RandomWizard)_minimug.dmp"
-setMugEntry(BuldakMug, BuldakMugData, 4, 6, 3, 3)
+setMugEntry(BuldakMug, BuldakMugData, 4, 6, 3, 4)
 
 ALIGN 16
 IberisMugData:
@@ -427,7 +427,7 @@ IberisMugData:
 #incbin "Dmp/Iberis(NICKT)_frames.dmp"
 #incbin "Dmp/Iberis(NICKT)_palette.dmp"
 #incbin "Dmp/Iberis(NICKT)_minimug.dmp"
-setMugEntry(IberisMug, IberisMugData, 2, 6, 3, 3)
+setMugEntry(IberisMug, IberisMugData, 2, 6, 2, 4)
 
 ALIGN 16
 EponyMugData:
@@ -459,7 +459,7 @@ TheGiantMugData:
 #incbin "Dmp/TheGiant(Capibraininspace)_frames.dmp"
 #incbin "Dmp/TheGiant(Capibraininspace)_palette.dmp"
 #incbin "Dmp/TheGiant(Capibraininspace)_minimug.dmp"
-setMugEntry(TheGiantMug, TheGiantMugData, 2, 4, 3, 3)
+setMugEntry(TheGiantMug, TheGiantMugData, 2, 4, 2, 2)
 
 ALIGN 16
 WellworthMugData:
@@ -475,7 +475,7 @@ YorMugData:
 #incbin "Dmp/Yor(RandomWizard)_frames.dmp"
 #incbin "Dmp/Yor(RandomWizard)_palette.dmp"
 #incbin "Dmp/Yor(RandomWizard)_minimug.dmp"
-setMugEntry(YorMug, YorMugData, 3, 5, 3, 3)
+setMugEntry(YorMug, YorMugData, 3, 5, 4, 3)
 
 ALIGN 16
 NoraMugData:

@@ -1,8 +1,7 @@
-
 // Con Growth Table
 SetUnitConGrowth(Cleo,15)
 SetUnitConGrowth(Loewe,10)
-SetUnitConGrowth(Iskra,10)
+SetUnitConGrowth(Iskra,5)
 SetUnitConGrowth(Mira,0)
 SetUnitConGrowth(Emil,15)
 SetUnitConGrowth(Svetomir,10)
@@ -19,7 +18,7 @@ SetUnitConGrowth(Longxia,5)
 SetUnitConGrowth(Fangai,10)
 SetUnitConGrowth(Gimm,5)
 SetUnitConGrowth(Tobie,2)
-SetUnitConGrowth(Awa,10)
+SetUnitConGrowth(Awa,35)
 SetUnitConGrowth(Cadenza,20)
 SetUnitConGrowth(Faolan,10)
 SetUnitConGrowth(Iberis,10)

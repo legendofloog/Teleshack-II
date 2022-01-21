@@ -21,9 +21,9 @@ CharacterEventBothWays(14, TobieRecruit, Cleo, Tobie)
 CharacterEventBothWays(15, AwaRecruit, Cleo, Awa)
 CharacterEventBothWays(16, CadenzaRecruit, Cleo, Cadenza)
 CharacterEventBothWays(17, FaolanRecruit, Cleo, Faolan)
-CharacterEventBothWays(10, IskraMiraTalk, Cleo, Iskra)
-CharacterEventBothWays(10, IskraMiraTalk, Cleo, Mira)
-CharacterEventBothWays(11, VargaTalk, Cleo, Varga)
+CharacterEventBothWays(10, IskraMiraTalk, Cleo, IskraCopy)
+CharacterEventBothWays(10, IskraMiraTalk, Cleo, MiraCopy)
+CharacterEventBothWays(11, VargaTalk, Cleo, VargaCopy)
 CharacterEventBothWays(12, KwameTalk, Cleo, Kwame)
 CharacterEventBothWays(0, TrajanTalk, Cleo, Trajan)
 END_MAIN
@@ -224,7 +224,8 @@ BEQ 7 s1 sC
 	NoFade
 	ENDB
 LABEL 7
-Text(Ch5xTrajanConfirmation)
+Text(Ch5xTrajanConfirmation1)
+Text(Ch5xTrajanConfirmation2)
 SVAL s1 0x1
 BEQ 12 s1 sC
 	Text(Ch5xTrajanRejection)
@@ -288,10 +289,16 @@ UNIT Cadenza Bard Cleo Level(5,NPC,False) [13,6] 0x0 0x0 0x0 0x1 [Wind, BalladOf
 UNIT Faolan RookKnight_Dismounted Cleo Level(7,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary, LightRune]     NoAI
 UNIT
 
-OldUnits:
-UNIT Iskra Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,8] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Mira Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,9] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Varga Skyseeker_Dismounted   Cleo Level(2,Ally,False) [4,2] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+IskraCopyGroup:
+UNIT IskraCopy Mage_F   Cleo Level(2,NPC,False) [5,8] 0x0 0x0 0x0 0x1 [0x0]     NoAI
+UNIT
+
+MiraCopyGroup:
+UNIT MiraCopy ThiefFighter_F   Cleo Level(2,NPC,False) [5,9] 0x0 0x0 0x0 0x1 [0x0]      NoAI
+UNIT
+
+VargaCopyGroup:
+UNIT VargaCopy SwordArmor   Cleo Level(2,NPC,False) [4,2] 0x0 0x0 0x0 0x1 [0x0]      NoAI
 UNIT
 
 HeadquartersBeginningCutsceneUnits:
@@ -392,8 +399,8 @@ MOVE 15 Kwame [8,5]
 ENUN
 CHECK_ALIVE Mira
 BEQ 20 s0 sC
-	CHECK_EVENTID 0x8B
-	BNE 20 s0 sC
+	//CHECK_EVENTID 0x8B
+	//BNE 20 s0 sC
 	TEXTSTART
 	TEXTSHOW Ch5xKwameSceneMiraAlive
 	TEXTEND
@@ -412,7 +419,7 @@ BEQ 20 s0 sC
 LABEL 20
 Text(Ch5xKwameSceneMiraDead)
 LABEL 21
-MUSC WaterFlowingSoundEffect
+//MUSC WaterFlowingSoundEffect
 CAMERA [18,8]
 TILECHANGE 0
 STAL 20
@@ -470,11 +477,11 @@ FlashCursor(Trajan,60)
 Text(Ch5xTrajanMeeting2)
 CHECK_ALIVE Mira
 BEQ 22 s0 sC
-	CHECK_EVENTID 0x8B
-	BEQ 23 s0 sC
-		Text(Ch5xTrajanMeeting3MiraCaptured)
-		GOTO 24
-	LABEL 23
+	//CHECK_EVENTID 0x8B
+	//BEQ 23 s0 sC
+		//Text(Ch5xTrajanMeeting3MiraCaptured)
+		//GOTO 24
+	//LABEL 23
 	SHOWUNIT Mira
 	MOVE 15 Mira [15,11]
 	ENUN
@@ -483,7 +490,7 @@ BEQ 22 s0 sC
 LABEL 22
 Text(Ch5xTrajanMeeting3MiraDead)
 LABEL 24
-MUSC WaterFlowingSoundEffect
+//MUSC WaterFlowingSoundEffect
 Text(Ch5xTrajanMeeting4)
 MUSC 0x7FFF
 FADI 15
@@ -523,27 +530,33 @@ RemoveAll
 TILEREVERT 0
 ENUN
 LOAD1 1 GreenUnits
-LOAD1 0 OldUnits
 LOAD1 1 CleoSelectionUnitGroup
 ENUN
 CHECK_ALIVE Iskra
 BEQ 1 s0 sC
-	CUSN Iskra
+	LOAD1 1 IskraCopyGroup
+	ENUN
+	UnitCopyASMC(Iskra,IskraCopy)
 LABEL 1
 CHECK_ALIVE Mira
 BEQ 2 s0 sC
-	CUSN Mira
+	LOAD1 1 MiraCopyGroup
+	ENUN
+	UnitCopyASMC(Mira,MiraCopy)
 LABEL 2
 CHECK_ALIVE Varga
 BEQ 3 s0 sC
-	CUSN Varga
+	LOAD1 1 VargaCopyGroup
+	ENUN
+	UnitCopyASMC(Varga,VargaCopy)
 LABEL 3
 FADU 15
-
 CamOff
+NoFade
 ENDA
 
 EndingScene:
+ENUT 0x84 //removes boss icons/talk icons etc
 MUSC 0x7FFF
 FADI 15
 CHECK_ALIVE Iskra
@@ -623,6 +636,7 @@ STAL 10
 MUSC WindyDaySoundEffect
 Text(Ch5xCoraliaEndingText)
 FADI 5
+ENUF 0x84 //brings back boss icons/talk icons etc
 MNC2 Chapter6
 NoFade
 ENDA

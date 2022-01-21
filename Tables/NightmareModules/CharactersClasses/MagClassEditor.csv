@@ -29,25 +29,25 @@ Archer (F),0,5,20,0
 Sniper,3,5,20,1
 Sniper (F),3,5,20,1
 Scaleshot,0,0,20,0
-Skyseeker,4,0,20,0
+Skyseeker,3,0,20,0
 Dragonlord,2,0,20,2
 Seraphknight,7,0,20,3
 Pegasus Rider,3,5,20,0
 Falcoknight,5,5,20,2
 Dragon Rider,0,5,20,1
 Dracoknight,1,5,20,1
-Mage,4,30,20,0
-Mage (F),4,30,20,0
+Mage,3,35,20,0
+Mage (F),3,35,20,0
 Sage,6,30,20,4
 Sage (F),6,30,20,4
-Mage Knight,6,30,20,2
-Mage Knight (F),6,30,20,2
+Mage Knight,5,35,20,2
+Mage Knight (F),5,35,20,2
 High Priest,7,30,20,3
 High Priestess,7,30,20,3
-Dark Mage,3,40,20,0
-Dark Mage (F),3,40,20,0
-Dark Bishop,6,40,20,3
-Dark Bishop (F),6,40,20,3
+Dark Mage,4,40,20,0
+Dark Mage (F),4,40,20,0
+Dark Bishop,7,40,20,3
+Dark Bishop (F),7,40,20,3
 Bard,2,30,20,0
 Sister,2,30,20,0
 Thief Fighter,1,5,20,1
@@ -91,7 +91,7 @@ ForrestKnight (D),1,5,20,1
 GreatKnight (D),1,5,20,1
 DukeKnight (D),1,5,20,1
 Scaleshot (D),0,5,20,0
-Skyseeker (D),4,5,20,0
+Skyseeker (D),3,5,20,0
 Dragonlord (D),2,5,20,2
 Seraphknight (D),3,0,20,3
 Pegasus Rider (D),0,5,20,0

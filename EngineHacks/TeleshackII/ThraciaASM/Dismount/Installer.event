@@ -39,3 +39,65 @@ MountedUnmounted(GoldKnight, GoldKnight_Dismounted)
 MountedUnmounted(Troubadour, Troubadour_Dismounted)
 MountedUnmounted(Paladin, Paladin_Dismounted)
 EndMountUnmountedTable
+
+#define rIfUnitIsDismounted(dismountType)            "rWithConstant(dismountType); rIf(MSG_prCheckDismountedType)"
+#define rIfUnitIsDismounted(dismountType, arNext)    "rIfUnitIsDismounted(dismountType); arNext"
+
+#define HorseDismountType 1
+#define PegasusDismountType 2
+#define DragonDismountType 3
+
+#define DISMOUNT_CHECKER DismountTester
+
+ALIGN 4
+MSG_prCheckDismountedType: // Wraps SkillTester for MSG
+	rCallExternal(DismountTester^1)
+
+ALIGN 4
+prDismountedHorseDefDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedPegDefDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonDefDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(5)
+ALIGN 4
+prDismountedHorseSpdDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(2)
+ALIGN 4
+prDismountedPegSpdDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonSpdDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(2)
+ALIGN 4
+prDismountedHorseSklDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedPegSklDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonSklDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(2)
+ALIGN 4
+prDismountedHorseStrDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedPegStrDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonStrDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(3)

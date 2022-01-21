@@ -232,8 +232,8 @@ dissuade you from any future relations?[A]
 Of course not. Our common foe[N]
 is much more important.[A]
 [FarLeft]
-I'm glad you're easily angered. I hope[N]
-our alliance can be a lasting one.[A]
+I'm glad you're not easily angered. I[N]
+hope our alliance can be a lasting one.[A]
 [ClearFace]
 [FarRight]
 [MoveMidRight]
@@ -404,13 +404,13 @@ Looking out for an old pal, huh?[A][X]
 
 ## RadnitzTalkCh7Text
 [Left][LoadRadnitz]
-[Left]
+[Left][LoadActive]
 Have you seized their[N]
 safehouse yet? Get that done.[A][X]
 
 ## RadnitzEndCh7Text
 [Left][LoadRadnitz]
-[Left]
+[Left][LoadActive]
 So you liberators live up to your[N]
 reputation after all. Let's talk.[A][X]
 
@@ -427,7 +427,7 @@ We've secured the perimeter. Now we just[N]
 need to establish contact with Lord Freyse.[A][X]
 
 ## RecruitCh7Text
-[MidRight][CurrentPortrait]
+[MidRight][LoadActive]
 [MidLeft][LoadBuldak]
 [MidLeft]
 Don't kill me! I'm Ibelis' contact,[N]
@@ -441,7 +441,7 @@ for it. And my sword.[A][X]
 
 ## VillageCh7Text
 [MidLeft][LoadMan1]
-[MidRight][CurrentPortrait]
+[MidRight][LoadActive]
 [MidLeft][ThreeLineBox]
 Life has been better under the[N]
 Empire, but of course Freyse must[N]
