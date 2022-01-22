@@ -39,6 +39,7 @@ void UnitCopy(){
     Unit* copiedUnit = GetUnitByCharId(gEventSlot[1]);
     Unit* copierUnit = GetUnitByCharId(gEventSlot[2]);
     copierUnit->level = copiedUnit->level;
+    copierUnit->pClassData = copiedUnit->pClassData;
     copierUnit->maxHP = copiedUnit->maxHP;
     copierUnit->curHP = copiedUnit->curHP;
     copierUnit->pow = copiedUnit->pow;
@@ -63,4 +64,29 @@ void UnitCopy(){
     copierUnit->ranks[5] = copiedUnit->ranks[5];
     copierUnit->ranks[6] = copiedUnit->ranks[6];
     copierUnit->ranks[7] = copiedUnit->ranks[7];
+}
+
+void SetFatigue(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]);
+    int fatigueAmount = gEventSlot[2];
+    if (fatigueAmount == 0xFF){
+        unit->fatigue = unit->maxHP;
+    }
+    else{
+        unit->fatigue = fatigueAmount;
+    }
+}
+
+void CheckIfFatigued(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]);
+    if (unit->state & (US_DEAD | US_BIT16) ){
+        gEventSlot[0xC] = 0;
+        return;
+    }
+    if (unit->fatigue > unit->maxHP){
+        gEventSlot[0xC] = 1;
+    }
+    else{
+        gEventSlot[0xC] = 0;
+    }
 }

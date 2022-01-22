@@ -39,6 +39,7 @@ MiscBasedEvents:
 CauseGameOverIfLordDies
 END_MAIN
 
+
 LocationBasedEvents:
 Escape(0,EscapeEventCheck,19,0)
 Escape(0,EscapeEventCheck,20,0)

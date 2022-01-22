@@ -9,11 +9,7 @@
 #include "Equip/Installer.event"
 #include "ExtraGrowths.event"
 #include "BattleExpTeleshack2/Installer.event"
-#include "ASMC/CheckIfUnitRescuedBy.lyn.event"
-
-#define CheckIfUnitEscapedASMC(charID, labelID) "SVAL s1 charID; ASMC CheckIfUnitEscaped; BEQ labelID s0 sC; HIDEUNIT charID; LABEL labelID"
-#define CheckIfUnitRescuedByActiveASMC(rescuedID) "SVAL s1 rescuedID; ASMC CheckIfUnit1RescuedByActive"
-#define UnitCopyASMC(copiedID,copierID) "SVAL s1 copiedID; SVAL s2 copierID; ASMC UnitCopy"
+#include "ASMC/Installer.event"
 
 
 // changes Luck's contribution to Hit into lck instead of lck/2

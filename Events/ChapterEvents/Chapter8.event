@@ -100,8 +100,8 @@ UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [12,13] 0x0 0x0 0x0 
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [4,6] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [13,5] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,6] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [LongLance,Vulnerary] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,6] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] TwoActionAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,7] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [12,6] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
 UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI

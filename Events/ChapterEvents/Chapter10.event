@@ -63,6 +63,7 @@ RadnitzValseTalk:
 MUSC WithUs_Song 
 Text(Ch10RadnitzValseTalk)
 CUSA Valse
+SetFatigue(Valse,0)
 NoFade
 ENDA
 
@@ -70,6 +71,7 @@ RadnitzHornetTalk:
 MUSC WithUs_Song 
 Text(Ch10RadnitzHornetTalk)
 CUSA Hornet
+SetFatigue(Hornet,0)
 NoFade
 ENDA
 
@@ -284,7 +286,10 @@ BeginningScene:
 	FADI 15
 	SetBackground(0x1b)
 	Text(Ch10Start3)
-
+	CheckIfFatigued(Iskra)
+	BEQ 420 s0 sC
+		SetFatigueOneLess(Iskra)
+	LABEL 420
 	GotoPrepScreen
 	ENDA
 
@@ -314,7 +319,6 @@ EndingScene:
 
 	SendAll(Radnitz)
 	REMOVEUNIT Radnitz
-
 	MNC2 Chapter11
 	NoFade
 	ENDA
