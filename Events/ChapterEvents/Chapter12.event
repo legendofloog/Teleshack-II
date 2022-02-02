@@ -1,1 +1,67 @@
+EventPointerTable(Chapter12Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+END_MAIN
+
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+
+
+Units1:
+  UNIT
+ 
+
+BeginningScene:
+  ENDA
+  
+EndingScene:
+  MNC2 Ch12xInterlude
+  NoFade
+  ENDA
+
+
+
+
+
+
 
