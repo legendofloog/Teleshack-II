@@ -92,7 +92,7 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-UnitsCh10:
+UnitsCh12:
 UNIT Cleo Skyseeker              Cleo Level(15,Ally,True) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,KillerAxe] NoAI
 UNIT Loewe Scaleshot           Cleo Level(14,Ally,True) [0,1] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,DaShoota,Longbow] NoAI
 UNIT Mira ThiefFighter_F         Cleo Level(3,Ally,True) [0,2] 0x0 0x0 0x0 0x1 [SilverSword,ShortSword,IronSword] NoAI
