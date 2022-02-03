@@ -31,6 +31,7 @@
 #define Ch5xInterlude 0x1C
 #define Ch5xBoatScenes 0x1D
 #define Ch5xGechrysos 0x1E
+#define Ch12Interlude 0x1F
 
 // MapChangesID
 
