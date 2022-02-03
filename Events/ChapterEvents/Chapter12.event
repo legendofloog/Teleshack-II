@@ -85,17 +85,18 @@ EnemyUnits1:
   UNIT
 
 EnemyUnits2:
+  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [1,10] 0x0 0x0 0x0 0x1 [ThunderSword] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
   UNIT
 
 PrisonGreens:
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT
-  UNIT
-  UNIT
-  UNIT
-  UNIT
-  UNIT
+  UNIT Selese Civilian 0x0 Level(1,NPC,True) [9,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian 0x0 Level(1,NPC,True) [15,4] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian 0x0 Level(1,NPC,True) [12,10] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian 0x0 Level(1,NPC,True) [2,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian 0x0 Level(1,NPC,True) [14,24] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian 0x0 Level(1,NPC,True) [31,25] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT 
 
 BeginningScene:
 MountAll
