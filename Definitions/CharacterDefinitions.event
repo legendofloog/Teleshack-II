@@ -122,6 +122,9 @@
 //Chapter 11 stuff
 #define Aurora 0x45
 
+//Chapter 12 stuff
+#define Eitha 0x4B
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49
