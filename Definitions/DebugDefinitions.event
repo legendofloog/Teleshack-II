@@ -1,4 +1,4 @@
-//#define _test_ch12_
+#define _test_ch12_
 
 #ifdef _test_ch12_
 #define _test_
