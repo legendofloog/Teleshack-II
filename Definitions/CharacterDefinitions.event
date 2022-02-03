@@ -31,8 +31,8 @@
 #define Hornet 0x1F
 #define Milo 0x20
 #define Ichwep 0x21
-#define Tana 0x22
-#define LyonCC 0x23
+#define Mink 0x22
+#define Tiberius 0x23
 #define OrsonCC 0x24
 #define GlenCC 0x25
 #define SelenaCC 0x26
@@ -121,6 +121,9 @@
 
 //Chapter 11 stuff
 #define Aurora 0x45
+
+//Chapter 12 stuff
+#define Eitha 0x4B
 
 #define Breguet 0x46
 #define Bazba 0x48
