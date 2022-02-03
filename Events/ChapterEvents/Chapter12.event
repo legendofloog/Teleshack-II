@@ -16,9 +16,22 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
 END_MAIN
 
 LocationBasedEvents:
+Door(9,3)
+Door(15,5)
+Door(5,6)
+Door(3,11)
+Door(6,19)
+Door(13,24)
+Door(30,25)
+Chest(Mend,18,2)
+Chest(Mend,16,17)
+Chest(Mend,17,18)
+
 END_MAIN
 
 MiscBasedEvents:
@@ -45,17 +58,56 @@ Traps2:
 	ENDTRAP
 	ALIGN 4
 
-
-
 Units1:
+  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [34,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Loewe 0x0 Cleo Level(1,Ally,False) [34,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT
  
+MinkJoin:
+  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind] NoAI
+  UNIT
+
+EnemyUnits1:
+  UNIT Eitha Snipter 0x0 Level(10,Enemy,False) [1,26] 0x0 0x0 0x0 0x0 [SilverBow] AttackInRangeAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+  UNIT
+
+EnemyUnits2:
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+  UNIT
+
+PrisonGreens:
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+  UNIT
+  UNIT
+  UNIT
+  UNIT
+  UNIT
+  UNIT
 
 BeginningScene:
+MountAll
+
   ENDA
   
 EndingScene:
   MNC2 Ch12xInterlude
+  LOAD 1 MinkJoin
+  LOAD 1 EnemyUnits1
+  LOAD 1 EnemyUnits2
+  ENUN
   NoFade
   ENDA
 
