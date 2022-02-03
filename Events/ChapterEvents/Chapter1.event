@@ -213,9 +213,9 @@ ALIGN 4
 
 BeginningScene:
 //ENUT 0xEF
-#ifdef _test_ch10_
+#ifdef _test_ch12_
 ENUT FIXED_GROWTHS_FLAG_ID
-LOAD1 1 UnitsCh10
+LOAD1 1 UnitsCh12
 ENUN
 ENUF FIXED_GROWTHS_FLAG_ID
 SilentGiveItem(Argilabrys, Cleo)
@@ -253,7 +253,7 @@ ENUT 0x78
 ENUT 0x79
 ENUT 0x7a
 
-MNC2 Chapter10
+MNC2 Chapter12
 NoFade
 ENDA
 
