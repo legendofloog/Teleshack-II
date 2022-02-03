@@ -16,8 +16,6 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
-CauseGameOverIfLordDies
-DefeatBoss(EndingScene)
 END_MAIN
 
 LocationBasedEvents:
@@ -35,6 +33,8 @@ Chest(Mend,17,18)
 END_MAIN
 
 MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
 END_MAIN
 
 
