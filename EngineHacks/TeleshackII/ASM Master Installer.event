@@ -105,11 +105,13 @@ ORG $B5237
 BYTE 0xE0
 POP
 
-// staff hitrate: never miss; need to change to be 100% if mag 
+/*
+// staff hitrate: never miss; need to change to be 100% if mag > res
 PUSH
 ORG $2cd30
 BYTE 0xFF
 POP
+*/
 
 //default status duration is infinite
 PUSH
@@ -123,3 +125,8 @@ ORG $2B6A4
 BYTE 21
 POP
 
+// removes drop flag from enemies opening chests
+PUSH
+ORG $1157C
+SHORT 0xE009
+POP

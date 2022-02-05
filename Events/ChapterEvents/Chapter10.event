@@ -164,7 +164,7 @@ EnemyUnits:
 UNIT Radnitz DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,KnightProof,Vulnerary] NoAI
 
 UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,GrowthScroll,Vulnerary] NeverMoveAI
-UNIT Hornet BowKnight Cleo Level(10,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,GrowthScroll,Vulnerary] DoNotAttack07AI
+UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,GrowthScroll,Vulnerary] DoNotAttack07AI
 
 
 // Unique

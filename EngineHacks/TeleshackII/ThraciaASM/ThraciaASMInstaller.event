@@ -10,6 +10,7 @@
 #include "ExtraGrowths.event"
 #include "BattleExpTeleshack2/Installer.event"
 #include "ASMC/Installer.event"
+#include "StaffChanges/Installer.event"
 
 
 // changes Luck's contribution to Hit into lck instead of lck/2
