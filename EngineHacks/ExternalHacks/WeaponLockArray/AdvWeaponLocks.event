@@ -58,4 +58,9 @@ BYTE HardCharLock
 BYTE Iskra
 BYTE EndLockArray
 
+DarkbrandArray:
+BYTE HardCharLock
+BYTE Mink
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS
