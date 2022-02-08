@@ -64,6 +64,7 @@
 #define StingerLock 0x05000000
 #define StormbrandLock 0x07000000
 #define PassiveBoosts 0x00800000
+#define DarkbrandLock 0x09000000
 
 
 // Weapon Effect
