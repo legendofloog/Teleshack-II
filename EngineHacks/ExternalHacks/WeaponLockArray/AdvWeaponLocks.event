@@ -60,7 +60,7 @@ BYTE EndLockArray
 
 DarkbrandArray:
 BYTE HardCharLock
-BYTE Mink
+BYTE Tiberius
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS
