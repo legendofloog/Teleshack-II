@@ -22,13 +22,15 @@ LocationBasedEvents:
 Door(9,3)
 Door(15,5)
 Door(5,6)
-Door(3,11)
-Door(6,19)
-Door(13,24)
+Door(12,9)
+Door(5,11)
+Door(1,13)
+Door(14,17)
+Door(14,26)
 Door(30,25)
 Chest(Mend,18,2)
 Chest(Mend,16,17)
-Chest(Mend,17,18)
+Chest(Mend,15,18)
 
 END_MAIN
 
@@ -66,13 +68,13 @@ Units1:
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT
  
 MinkJoin:
@@ -80,21 +82,21 @@ MinkJoin:
   UNIT
 
 EnemyUnits1:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [1,26] 0x0 0x0 0x0 0x0 [SilverBow] BossAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [0,27] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [34,10] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
-  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [26,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [26,10] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
-  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [26,11] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [30,9] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [26,9] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
+  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [26,10] 0x0 0x0 0x0 0x1 [SteelLance] BossAI
+  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [26,11] 0x0 0x0 0x0 0x1 [SteelAxe] BossAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [26,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [29,3] 0x0 0x0 0x0 0x1 [IronLance,IronSword] AttackInRangeAI
+  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [29,3] 0x0 0x0 0x0 0x1 [IronSword,Javelin] AttackInRangeAI
   UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  UNIT Selese Thief Cidor Level(12,Enemy,True) [18,2] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [21,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+  UNIT Selese Thief Cidor Level(12,Enemy,True) [19,6] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [34,7] 0x0 0x0 0x0 0x1 [IronSword] PursueWithoutHeedAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
@@ -123,12 +125,12 @@ EnemyUnits2:
   UNIT
 
 PrisonGreens:
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [9,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [15,4] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [12,10] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [2,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [14,24] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [31,25] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [9,1] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [15,3] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [0,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [3,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [15,27] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [31,26] 0x0 0x0 0x0 0x1 [RedGem] NoAI
   UNIT 
 
 BeginningScene:
