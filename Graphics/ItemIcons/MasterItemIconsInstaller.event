@@ -83,5 +83,7 @@ ItemIconSlot(0xA2,"Png/ZykhraScroll.png")
 ItemIconSlot(0xD6,"Png/Stinger.png")
 ItemIconSlot(0xD7,"Png/LunarAxe.png")
 ItemIconSlot(0xD8,"Png/Stormbrand.png")
+ItemIconSlot(0xDB,"Png/Darkbrand.png")
+ItemIconSlot(0xDC,"Png/Daybreak.png")
 POP
 
