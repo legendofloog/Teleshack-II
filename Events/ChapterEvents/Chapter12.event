@@ -59,7 +59,7 @@ Traps2:
 	ALIGN 4
 
 Units1:
-  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [2,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [34,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Loewe 0x0 Cleo Level(1,Ally,False) [34,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -80,7 +80,7 @@ MinkJoin:
   UNIT
 
 EnemyUnits1:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [1,26] 0x0 0x0 0x0 0x0 [SilverBow] AttackInRangeAI
+  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [1,26] 0x0 0x0 0x0 0x0 [SilverBow] BossAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
@@ -101,7 +101,7 @@ EnemyUnits1:
   UNIT
 
 EnemyUnits2:
-  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [ThunderSword] AttackInRangeAI
+  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
