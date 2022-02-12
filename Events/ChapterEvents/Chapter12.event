@@ -99,7 +99,7 @@ EnemyUnits1:
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
   UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [IronLance] StallOneTurnAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [21,17] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
-  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [21,19] 0x0 0x0 0x0 0x1 [GreatLance] StallOneTurnAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [21,19] 0x0 0x0 0x0 0x1 [Greatlance] StallOneTurnAI
   UNIT
 
 EnemyUnits2:
