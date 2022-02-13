@@ -33,11 +33,11 @@
 #define Ichwep 0x21
 #define Mink 0x22
 #define Tiberius 0x23
-#define OrsonCC 0x24
-#define GlenCC 0x25
-#define SelenaCC 0x26
-#define ValterCC 0x27
-#define RievCC 0x28
+#define Ellerey 0x24
+#define Mantou 0x25
+#define Tippany 0x26
+#define Pelecaye 0x27
+#define Carl 0x28
 #define CaellachCC 0x29
 #define FadoCC 0x2A
 #define IsmaireCC 0x2B

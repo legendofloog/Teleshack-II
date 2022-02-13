@@ -185,3 +185,49 @@ HornetGiveAll:
 SendAll(Hornet)
 NoFade
 ENDA
+
+//ch11
+
+ALIGN 4
+MiloGiveAll:
+SendAll(Milo)
+NoFade
+ENDA
+
+ALIGN 4
+IchwepGiveAll:
+SendAll(Ichwep)
+NoFade
+ENDA
+
+// ch12x
+
+ALIGN 4
+CarlGiveAll:
+SendAll(Carl)
+NoFade
+ENDA
+
+ALIGN 4
+PelecayeGiveAll:
+SendAll(Pelecaye)
+NoFade
+ENDA
+
+ALIGN 4
+TippanyGiveAll:
+SendAll(Tippany)
+NoFade
+ENDA
+
+ALIGN 4
+MantouGiveAll:
+SendAll(Mantou)
+NoFade
+ENDA
+
+ALIGN 4
+EllereyGiveAll:
+SendAll(Ellerey)
+NoFade
+ENDA

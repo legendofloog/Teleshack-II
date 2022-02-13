@@ -133,17 +133,17 @@ PrisonGreens:
 
 BeginningScene:
   MountAll
-  LOAD 1 MinkJoin
-  LOAD 1 EnemyUnits1
-  LOAD 1 EnemyUnits2
-  LOAD 1 PrisonGreens
+  LOAD1 1 MinkJoin
+  LOAD1 1 EnemyUnits1
+  LOAD1 1 EnemyUnits2
+  LOAD1 1 PrisonGreens
+  ENUN
   GotoPrepScreen
   ENDA
   
 EndingScene:
   RemoveAll
   MNC2 Ch12xInterlude
-    ENUN
   NoFade
   ENDA
 

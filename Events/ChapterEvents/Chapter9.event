@@ -183,6 +183,7 @@ BeginningScene:
 	COUNTER_SET 0 0 //for escape purposes
 	MountAll
 	LOAD1 0x1 EnemyUnits
+	ENUN
 	SetBackground(VillageRoad)
 	MUSC WindyDayBirdsSoundEffect
 	Text(Ch9OpeningText)

@@ -92,6 +92,11 @@
 [LoadHornet] = [LoadFace][0x29][0x1]
 [LoadMilo] = [LoadFace][0x2A][0x1]
 [LoadIchwep] = [LoadFace][0x2B][0x1]
+[LoadEllerey] = [LoadFace][0xC0][0x1]
+[LoadMantou] = [LoadFace][0xC1][0x1]
+[LoadTippany] = [LoadFace][0xC2][0x1]
+[LoadPelecaye] = [LoadFace][0xC3][0x1]
+[LoadCarl] = [LoadFace][0xC4][0x1]
 
 
 

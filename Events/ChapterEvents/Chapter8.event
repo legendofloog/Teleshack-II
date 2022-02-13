@@ -177,6 +177,7 @@ BeginningScene:
 	MountAll
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 Newcomers
+	ENUN
 	SetBackground(0x18)
 	MUSC Sortie_Formation
 	TEXTSHOW GroupPlans

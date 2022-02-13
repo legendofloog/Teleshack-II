@@ -33,6 +33,7 @@
 #define ProvokeID 52
 #define ImbueID 53
 #define ArmoredBlowID 54
+#define CriticalForceID 55
 
 // keep it continous for debug purpose
 

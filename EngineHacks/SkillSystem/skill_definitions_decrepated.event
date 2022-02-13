@@ -364,7 +364,7 @@
 
 //Critical Force: Base critical is Skl * 1.5.
 //Author Unknown (Initial Commit)
-#define CriticalForceID 255
+//#define CriticalForceID 255
 
 //Killing Machine: Total critical rate is doubled.
 //Author Unknown (Initial Commit)

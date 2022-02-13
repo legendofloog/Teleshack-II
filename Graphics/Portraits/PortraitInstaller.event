@@ -32,6 +32,11 @@
 #define HornetMug 0x29
 #define MiloMug 0x2A
 #define IchwepMug 0x2B
+#define EllereyMug 0xC0
+#define MantouMug 0xC1
+#define TippanyMug 0xC2
+#define PelecayeMug 0xC3
+#define CarlMug 0xC4
 
 // NPCs
 #define EliasMug 0xB
@@ -580,3 +585,29 @@ AuroraMugData:
 #incbin "Dmp/Aurora(ZessDynamite)_palette.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_minimug.dmp"
 setMugEntry(AuroraMug, AuroraMugData, 2, 5, 3, 3)
+
+ALIGN 16
+CarlMugData:
+#incbin "Dmp/Carl(XVI)_mug.dmp"
+#incbin "Dmp/Carl(XVI)_frames.dmp"
+#incbin "Dmp/Carl(XVI)_palette.dmp"
+#incbin "Dmp/Carl(XVI)_minimug.dmp"
+setMugEntry(CarlMug, CarlMugData, 3, 5, 3, 3)
+
+ALIGN 16
+EllereyMugData:
+#incbin "Dmp/Ellerey(MrGreen)_mug.dmp"
+#incbin "Dmp/Ellerey(MrGreen)_frames.dmp"
+#incbin "Dmp/Ellerey(MrGreen)_palette.dmp"
+#incbin "Dmp/Ellerey(MrGreen)_minimug.dmp"
+setMugEntry(EllereyMug, EllereyMugData, 3, 6, 3, 4)
+
+ALIGN 16
+PelecayeMugData:
+#incbin "Dmp/Pelecaye (Flasuban, Godspetturtle, Sterling)_mug.dmp"
+#incbin "Dmp/Pelecaye (Flasuban, Godspetturtle, Sterling)_frames.dmp"
+#incbin "Dmp/Pelecaye (Flasuban, Godspetturtle, Sterling)_palette.dmp"
+#incbin "Dmp/Pelecaye (Flasuban, Godspetturtle, Sterling)_minimug.dmp"
+setMugEntry(PelecayeMug, PelecayeMugData, 3, 5, 3, 3)
+
+

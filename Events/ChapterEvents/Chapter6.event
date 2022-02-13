@@ -292,7 +292,8 @@ BeginningScene:
 	LOAD1 0x1 VeidUnit
 	LOAD1 0x1 McCallumUnit
 	LOAD1 0x1 CromarAndLeina
-	Load1 0x1 BarodUnit
+	LOAD1 0x1 BarodUnit
+	ENUN
 
 	CameraCursor(Barod)
 	Text(Ch6BarodCromarIntro)
@@ -313,9 +314,9 @@ BeginningScene:
 	Text(Ch6CromarMcCallumIntro)
 	STAL 120
 
-	Load1 0x1 PlayerSceneUnits
-	CAM1 Cleo
+	LOAD1 0x1 PlayerSceneUnits
 	ENUN
+	CAM1 Cleo
 	MOVE 40 Cleo [6, 18]
 	MOVE 40 Loewe [7,18]
 	ENUN

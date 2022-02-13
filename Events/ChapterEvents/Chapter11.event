@@ -129,6 +129,7 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 EnemyUnits2
 	LOAD1 0x1 PrisonGreens
+	ENUN
 	DismountAll
 	GotoPrepScreen
 	

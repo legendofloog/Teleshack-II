@@ -58,4 +58,14 @@ BYTE HardCharLock
 BYTE Iskra
 BYTE EndLockArray
 
+MuramasaArray:
+BYTE HardCharLock
+BYTE Carl
+BYTE EndLockArray
+
+BreakerArray:
+BYTE HardCharLock
+BYTE Ellerey
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS
