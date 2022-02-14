@@ -1,0 +1,233 @@
+ALIGN 4
+MiraGiveAll:
+SendAll(Mira)
+NoFade
+ENDA
+
+ALIGN 4
+IskraGiveAll:
+SendAll(Iskra)
+NoFade
+ENDA
+
+ALIGN 4
+EmilGiveAll:
+SendAll(Emil)
+NoFade
+ENDA
+
+ALIGN 4
+SvetomirGiveAll:
+SendAll(Svetomir)
+NoFade
+ENDA
+
+ALIGN 4
+AlenaGiveAll:
+SendAll(Alena)
+NoFade
+ENDA
+
+//ch2
+
+ALIGN 4
+VargaGiveAll:
+SendAll(Varga)
+NoFade
+ENDA
+
+ALIGN 4
+DelilahGiveAll:
+SendAll(Delilah)
+NoFade
+ENDA
+
+//ch3
+
+ALIGN 4
+AlexGiveAll:
+SendAll(Alex)
+NoFade
+ENDA
+
+ALIGN 4
+AxelGiveAll:
+SendAll(Axel)
+NoFade
+ENDA
+
+//ch4
+
+ALIGN 4
+ZwiebackGiveAll:
+SendAll(Zwieback)
+NoFade
+ENDA
+
+ALIGN 4
+FiloneGiveAll:
+SendAll(Filone)
+NoFade
+ENDA
+
+//ch5
+
+ALIGN 4
+LongxiaGiveAll:
+SendAll(Longxia)
+NoFade
+ENDA
+
+ALIGN 4
+FangaiGiveAll:
+SendAll(Fangai)
+NoFade
+ENDA
+
+//5x
+
+ALIGN 4
+MishGiveAll:
+SendAll(Mish)
+NoFade
+ENDA
+
+ALIGN 4
+AwaGiveAll:
+SendAll(Awa)
+NoFade
+ENDA
+
+ALIGN 4
+TobieGiveAll:
+SendAll(Tobie)
+NoFade
+ENDA
+
+ALIGN 4
+CadenzaGiveAll:
+SendAll(Cadenza)
+NoFade
+ENDA
+
+ALIGN 4
+FaolanGiveAll:
+SendAll(Faolan)
+NoFade
+ENDA
+
+//ch6
+
+ALIGN 4
+LeinaGiveAll:
+SendAll(Leina)
+NoFade
+ENDA
+
+ALIGN 4
+CromarGiveAll:
+SendAll(Cromar)
+NoFade
+ENDA
+
+//ch7
+
+ALIGN 4
+IberisGiveAll:
+SendAll(Iberis)
+NoFade
+ENDA
+
+ALIGN 4
+BuldakGiveAll:
+SendAll(Buldak)
+NoFade
+ENDA
+
+//ch8
+
+ALIGN 4
+NoraGiveAll:
+SendAll(Nora)
+NoFade
+ENDA
+
+ALIGN 4
+HansGiveAll:
+SendAll(Hans)
+NoFade
+ENDA
+
+//ch9
+
+ALIGN 4
+JennyGiveAll:
+SendAll(Jenny)
+NoFade
+ENDA
+
+ALIGN 4
+MeldanGiveAll:
+SendAll(Meldan)
+NoFade
+ENDA
+
+//ch10
+
+ALIGN 4
+ValseGiveAll:
+SendAll(Valse)
+NoFade
+ENDA
+
+ALIGN 4
+HornetGiveAll:
+SendAll(Hornet)
+NoFade
+ENDA
+
+//ch11
+
+ALIGN 4
+MiloGiveAll:
+SendAll(Milo)
+NoFade
+ENDA
+
+ALIGN 4
+IchwepGiveAll:
+SendAll(Ichwep)
+NoFade
+ENDA
+
+// ch12x
+
+ALIGN 4
+CarlGiveAll:
+SendAll(Carl)
+NoFade
+ENDA
+
+ALIGN 4
+PelecayeGiveAll:
+SendAll(Pelecaye)
+NoFade
+ENDA
+
+ALIGN 4
+TippanyGiveAll:
+SendAll(Tippany)
+NoFade
+ENDA
+
+ALIGN 4
+MantouGiveAll:
+SendAll(Mantou)
+NoFade
+ENDA
+
+ALIGN 4
+EllereyGiveAll:
+SendAll(Ellerey)
+NoFade
+ENDA

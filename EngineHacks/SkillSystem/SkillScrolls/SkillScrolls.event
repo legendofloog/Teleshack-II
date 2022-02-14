@@ -10,4 +10,3 @@ SHORT PrepScreenUseSkillScroll //this is a text ID
 ALIGN 4
 SkillScrollIDLink:
 BYTE SkillScroll
-

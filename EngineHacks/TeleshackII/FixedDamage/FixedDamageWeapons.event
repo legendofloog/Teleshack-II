@@ -1,0 +1,13 @@
+#define USE_FIXED_DAMAGE_WEAPONS
+
+
+#ifdef USE_FIXED_DAMAGE_WEAPONS
+
+#include "FixedDamageWeapons.lyn.event"
+
+FixedDamageWeaponList:
+BYTE DevilDagger
+BYTE 0
+
+
+#endif // USE_FIXED_DAMAGE_WEAPONS

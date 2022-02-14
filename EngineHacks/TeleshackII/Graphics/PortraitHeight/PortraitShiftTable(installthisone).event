@@ -36,7 +36,7 @@ PortraitShiftEdit:
 
 //The default table is duplicated below.
 
-BYTE 0 0 0 1 1 1 0 0
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07
 //Invalid, Placeholder Mug (the ? guy), Eirika, EirikaEyesClosed, Seth, Gilliam, Franz, Moulder
 
@@ -48,16 +48,16 @@ BYTE 0 0 0 0 0 0 0 0
 
 
 //0x10 through 0x1F
-BYTE 0 0 1 1 0 1 0 1 
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17
 //Lute, Natasha, NatashaEyesClosed, Cormag, Ephraim, EphraimEyesClosed, Forde, FordeEyesClosed
 
-BYTE 1 1 1 0 1 1 1 1 
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F
 //Kyle, Amelia, Artur, Gerik, Tethys, TethysEyesClosed, Marisa, MarisaEyesClosed
 
 //0x20 through 0x26
-BYTE 1 1 1 1 1 1 1
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26
 //Saleh, Ewan, L'Arachel, Dozla, Rennac, Duessel, Myrrh
 
@@ -66,29 +66,29 @@ BYTE 0
 //Portrait ID 0x27
 //MyrrhEyesClosed
 
-BYTE 1 1 1 1 0 1 1 1
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x28, 0x29, 0x2A, 0x2B, 0x2C, 0x2D, 0x2E, 0x2F
 //MyrrhDragonWings, Knoll, Joshua, Syrene, Tana, EirikaFlashback, EphraimFlashback, KnollFlashback
 
 //(these have all been padding bytes, just filling to the end of the routine.)
 
-BYTE 0 1 1 1 1 1 1 1
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x30, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37
 //O'Neill, Breguet, Bone, Bazba, Saar, Zonta, Novala, Murray
 
-BYTE 1 1 1 1 1 1 1 1
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x38, 0x39, 0x3A, 0x3B, 0x3C, 0x3D, 0x3E, 0x3F
 //Tirado, Binks, Pablo, Aias, Carlyle, Gheb, Beran, Selena
 
-BYTE 1 1 1 1 1 0 0 0
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x40, 0x41, 0x42, 0x43, 0x44, 0x45, 0x46, 0x47
 //VigardeDead, VigardeAlive, Valter, Caellach, OrsonTraitor, Orson, Lyon, LyonEyesClosed
 
-BYTE 1 1 1 0 1 1 0 1
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x48, 0x49, 0x4A, 0x4B, 0x4C, 0x4D, 0x4E, 0x4F
 //Riev, Morva, LyonDemonKing, Glen, Ch5 Brigand, Unknown(???), VigardeFlashback?, VigardeFlashbackEyesClosed?
 
-BYTE 1 1 1 1 1 1 1 1
+BYTE 0 0 0 0 0 0 0 0
 //Portrait ID 0x50, 0x51, 0x52, 0x53, 0x54, 0x55, 0x56, 0x57
 //LyonFlashback, Fado, Hayden, Mansel, Klimt, Dara, Ismaire, IsmaireEyesClosed
 

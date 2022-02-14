@@ -2,18 +2,93 @@
 
 #define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
-
+// Bosses
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
+DeathQuote(Emory_Ch3,Chapter3,2,0x0)
 DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
+DeathQuote(Hilmar,Chapter4,2,HilmarDeathQ)
+DeathQuote(Riggan,Chapter5,2,RigganDeathQuoteText)
+DeathQuote(Mifan,Chapter7,0,MifanDeathQuoteText)
+DeathQuote(TheGiant,Chapter7,0,TheGiantDeathQuoteText)
+DeathQuote(Yor,Chapter7,0,YorDeathQuoteText)
+DeathQuote(Wellworth,Chapter7,2,WellworthDeathQuoteText)
+DeathQuote(Hege,Chapter8,2,HegeDeathQuote)
+DeathQuote(Francis,Chapter8,8,FrancisDeathQuote)
+DeathQuote(Wrathgar,Chapter9,2,WrathgarDeathQuote)
+DeathQuote(Cidor,Chapter10,0,Ch10CidorDeathQuote)
+DeathQuote(Johanna,Chapter10,0,Ch10JohannaDeathQuote)
+DeathQuote(Elias,Chapter10,0,Ch10EliasDeathQuote)
+DeathQuote(Mifan,Chapter10,0,Ch10MifanDeathQuote)
+DeathQuote(Hernandez,Chapter10,0,Ch10HernandezDeathQuote)
+DeathQuote(Aurora,Chapter11,0x2,AuroraDeathQuote)
+DeathQuote(Eitha, Chapter12, 2, EithaDeathQuote)
+
+//player units
+// ch1
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
 DeathQuote(Cleo,AllChapters,0x65,CleoDeathQuoteText)
-DeathQuote(Mira,AllChapters,0x0,MiraDeathQuoteText)
-DeathQuote(Iskra,AllChapters,0x0,IskraDeathQuoteText)
-DeathQuote(Emil,AllChapters,0x0,EmilDeathQuoteText)
-DeathQuote(Svetomir,AllChapters,0x0,SvetomirDeathQuoteText)
-DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText)
-DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote)
-DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote)
-DeathQuote(Hilmar,Chapter4,0x2,HilmarDeathQ)
+DeathQuote(Mira,AllChapters,0x0,MiraDeathQuoteText,MiraGiveAll)
+DeathQuote(Iskra,AllChapters,0x0,IskraDeathQuoteText,IskraGiveAll)
+DeathQuote(Emil,AllChapters,0x0,EmilDeathQuoteText,EmilGiveAll)
+DeathQuote(Svetomir,AllChapters,0x0,SvetomirDeathQuoteText,SvetomirGiveAll)
+DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText,AlenaGiveAll)
+
+// ch2
+DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote,VargaGiveAll)
+DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote,DelilahGiveAll)
+
+//ch 3 empty
+DeathQuote(Alex,AllChapters,0x0,IberisDeathQuoteText,AlexGiveAll)
+DeathQuote(Axel,AllChapters,0x0,IberisDeathQuoteText,AxelGiveAll)
+
+//ch 4
+DeathQuote(Zwieback,AllChapters,0x0,ZwieDeathQuoteText,ZwiebackGiveAll)
+DeathQuote(Filone,AllChapters,0x0,FiloneDeathQuoteText,FiloneGiveAll)
+
+//ch 5
+DeathQuote(Longxia,AllChapters,0x0,LongxiaDeathQuoteText,LongxiaGiveAll)
+DeathQuote(Fangai,AllChapters,0x0,FangaiDeathQuoteText,FangaiGiveAll)
+
+//ch 5x
+DeathQuote(Mish,AllChapters,0x0,MishDeathQuoteText,MishGiveAll)
+DeathQuote(Awa,AllChapters,0x0,AwaDeathQuoteText,AwaGiveAll)
+DeathQuote(Tobie,AllChapters,0x0,TobieDeathQuoteText,TobieGiveAll)
+DeathQuote(Cadenza,AllChapters,0x0,CadenzaDeathQuoteText,CadenzaGiveAll)
+DeathQuote(Faolan,AllChapters,0x0,IberisDeathQuoteText,FaolanGiveAll)
+
+//ch 6 empty
+DeathQuote(Leina,AllChapters,0x0,IberisDeathQuoteText,LeinaGiveAll)
+DeathQuote(Cromar,AllChapters,0x0,IberisDeathQuoteText,CromarGiveAll)
+
+//ch 7
+DeathQuote(Iberis,AllChapters,0x0,IberisDeathQuoteText,IberisGiveAll)
+DeathQuote(Buldak,AllChapters,0x0,BuldakDeathQuoteText,BuldakGiveAll)
+
+//ch 8
+DeathQuote(Nora,AllChapters,0x0,NoraDeathQuote,NoraGiveAll)
+DeathQuote(Hans,AllChapters,0x0,HansDeathQuote,HansGiveAll)
+
+// ch 9
+DeathQuote(Jenny,AllChapters,0x0,JennyDeathQuote,JennyGiveAll)
+DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote,MeldanGiveAll)
+
+// ch 10
+DeathQuote(Valse,AllChapters,0x0,ValseDeathQuote,ValseGiveAll)
+DeathQuote(Hornet,AllChapters,0x0,HornetDeathQuote,HornetGiveAll)
+DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
+
+// ch 11
+DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote,MiloGiveAll)
+DeathQuote(Ichwep,AllChapters,0x0,MiloDeathQuote,IchwepGiveAll)
+
+
+
+// ch 12x
+DeathQuote(Carl,AllChapters,0x0,CarlDeathQuote,CarlGiveAll)
+DeathQuote(Pelecaye,AllChapters,0x0,PelecayeDeathQuote,PelecayeGiveAll)
+DeathQuote(Tippany,AllChapters,0x0,TippanyDeathQuote,TippanyGiveAll)
+DeathQuote(Mantou,AllChapters,0x0,MantouDeathQuote,MantouGiveAll)
+DeathQuote(Ellerey,AllChapters,0x0,EllereyDeathQuote,EllereyGiveAll)
+
 DeathQuote(0xFFFF,0,0,0)

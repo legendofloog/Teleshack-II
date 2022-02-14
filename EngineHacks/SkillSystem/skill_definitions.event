@@ -18,7 +18,22 @@
 #define HexID 21
 #define EvenRhythmID 22
 #define OddRhythmID 23
-#define DazzleID 31
+#define DazzleID 40
+#define RepositionID 41
+#define RallyDefID 42
+#define RallyResID 43
+#define RallyDefenseID RallyDefID
+#define RallyResistanceID RallyResID
+#define SaviorID 44
+#define CertainBlowID 45
+#define SavageBlowID 46
+#define RenewalID 47
+#define PassID 48
+#define SwapID 49
+#define ProvokeID 52
+#define ImbueID 53
+#define ArmoredBlowID 54
+#define CriticalForceID 55
 
 // keep it continous for debug purpose
 
@@ -46,3 +61,9 @@
 #define GladiatorsAuraID 33
 #define SpellMirrorID 34
 #define DespoilID 35
+#define AzuriumMightID 36
+#define EterniumMightID 37
+#define ZoruniumMightID 38
+#define GenesiumMightID 39
+#define AlacrityID 50
+#define SharpshooterID 51

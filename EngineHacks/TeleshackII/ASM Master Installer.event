@@ -4,53 +4,12 @@
 
 #include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
-#include "FE8-Walking_Sounds_Fix/FE8-Walking_Sounds_EA.event"
 
 #include "ASMCCheckSuite/ASMC Check Installer.event"
 #include "ASMCCheckSuite/GetBlueUnitCountASMC.lyn.event"
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
-
-#include "StatusExpansion/StatusExpansion.event"
-
-// thief vision
-PUSH
-ORG 0x0178C2
-BYTE 0x02
-POP
-
-// torch vision
-PUSH
-ORG 0x02F4AE
-BYTE 0x05
-POP
-
-// EscapeDeathFix
-PUSH
-ORG 0x019024
-BYTE 0x01 0x20
-POP
-
-// Panacea
-PUSH
-ORG $290EE
-SHORT 0x2800 0xD001
-POP
-
-// Rescue Trade
-PUSH
-ORG 0x0229A8
-SHORT 0x1C00
-ORG 0x022A10
-SHORT 0x1C00
-POP
-
-// autolevel normal mode bonus fix by shuusuke
-
-PUSH
-ORG $180FC
-SHORT 0xFF63
-POP
+#include "FixedDamage/FixedDamageWeapons.event"
 
 ALIGN 4
 ChangeWeaponRankASMC:
@@ -86,10 +45,6 @@ ChangeWeaponRankASMC:
 
 #include "MapChangeToFlag/Installer.event"
 
-#include "MinimugPalette/Installer.event"
-
-#include "StaffExp/FE8_Staff_Heal_Exp_EA.event"
-
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
 #include "RingRework/RingRework_Installer.event"
@@ -97,3 +52,81 @@ ChangeWeaponRankASMC:
 #include "NarrowFontExtension/SerifExtension.event"
 
 #include "FogVisionTiles/Installer.event"
+
+#include "PromoLevelCheck/PromoLevelCheck.lyn.event" //fixes IER bug where promo can be done at any level
+
+#include "FE7 & 8-Show Heal Amount/FE7 & FE8-Show Heal Amount EA.event"
+
+// thief vision set to 0
+
+PUSH
+ORG 0x0178C2
+BYTE 0x00
+POP
+
+// torch vision
+PUSH
+ORG 0x02F4AE
+BYTE 0x05
+POP
+
+
+// EscapeDeathFix
+PUSH
+ORG 0x019024
+BYTE 0x01 0x20
+POP
+
+// Panacea
+PUSH
+ORG $290EE
+SHORT 0x2800 0xD001
+POP
+
+// Rescue Trade
+PUSH
+ORG 0x0229A8
+SHORT 0x1C00
+ORG 0x022A10
+SHORT 0x1C00
+POP
+
+// autolevel normal mode bonus fix by shuusuke
+
+PUSH
+ORG $180FC
+SHORT 0xFF63
+POP
+
+// prep shop is same price as on map
+
+PUSH
+ORG $B5237
+BYTE 0xE0
+POP
+
+/*
+// staff hitrate: never miss; need to change to be 100% if mag > res
+PUSH
+ORG $2cd30
+BYTE 0xFF
+POP
+*/
+
+//default status duration is infinite
+PUSH
+ORG $178EA
+BYTE 0
+POP
+
+//devil axe backfire to 21 - luck
+PUSH
+ORG $2B6A4
+BYTE 21
+POP
+
+// removes drop flag from enemies opening chests
+PUSH
+ORG $1157C
+SHORT 0xE009
+POP

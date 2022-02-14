@@ -13,30 +13,31 @@
 #define Leina 0x0D
 #define Cromar 0x0E
 #define Loewe 0x0F
-#define Forde 0x10
-#define Kyle 0x11
-#define Amelia 0x12
-#define Artur 0x13
-#define Gerik 0x14
-#define Tethys 0x15
-#define Marisa 0x16
-#define Saleh 0x17
-#define Ewan 0x18
-#define LArachel 0x19
-#define Dozla 0x1A
-#define Rennac 0x1C
-#define Duessel 0x1D
-#define Myrrh 0x1E
-#define Knoll 0x1F
-#define Joshua 0x20
-#define Syrene 0x21
-#define Tana 0x22
-#define LyonCC 0x23
-#define OrsonCC 0x24
-#define GlenCC 0x25
-#define SelenaCC 0x26
-#define ValterCC 0x27
-#define RievCC 0x28
+#define Longxia 0x10
+#define Fangai 0x11
+#define Gimm 0x12
+#define Mish Gimm
+#define Tobie 0x13
+#define Awa 0x14
+#define Cadenza 0x15
+#define Faolan 0x16
+#define Iberis 0x17
+#define Buldak 0x18
+#define Nora 0x19
+#define Hans 0x1A
+#define Jenny 0x1C
+#define Meldan 0x1D
+#define Valse 0x1E
+#define Hornet 0x1F
+#define Milo 0x20
+#define Ichwep 0x21
+#define Mink 0x22
+#define Tiberius 0x23
+#define Ellerey 0x24
+#define Mantou 0x25
+#define Tippany 0x26
+#define Pelecaye 0x27
+#define Carl 0x28
 #define CaellachCC 0x29
 #define FadoCC 0x2A
 #define IsmaireCC 0x2B
@@ -55,6 +56,32 @@
 #define Ch2_Selese_Guy 0x73
 // Chapter 3 Boss
 #define Emory_Ch3 0x68
+// Chapter 4 Boss
+#define Hilmar 0x69
+// Chapter 5 Boss
+#define Riggan 0x44
+// Chapter 7 Boss
+#define Yor 0x83
+#define Radnitz 0x84
+#define Mifan 0x85
+#define Wellworth 0x86
+#define Epony 0x87
+#define TheGiant 0x95
+// Chapter 8 Boss
+#define Hege 0x96
+#define Francis 0x97
+// Chapter 9 Boss
+#define Wrathgar 0x47
+
+// Chapter 10 stuff
+#define Cidor 0x48
+#define Johanna 0x49
+#define Elias 0x4a
+#define SeleseProvoke 0x98
+#define Bandit 0x99
+
+#define Selese 0x6e
+#define Cythes 0x89
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
@@ -64,22 +91,41 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
+#define Veid 0x74
+// Chapter 5x
+#define Kwame 0x65
+#define Trajan 0x66
+#define MiraCopy 0x90
+#define IskraCopy 0x91
+#define VargaCopy 0x92
+
+//Chapter 6 stuff
 #define Vladith 0x74
 #define Barod 0x75
 #define McCallum 0x76
 #define Gladiator 0x77
 #define Zeus 0x78
-#define Ch5Civilian 0x79
+#define ArenaSpectator 0x79
 #define Civilian1 0x7A
 #define Civilian2 0x7B
+#define LoanShark 0x7C
+#define Ch6Pirate 0x7D
+#define Draken 0x7E
+#define GladiatorMage 0x7F
+#define Fisherman 0x80
+#define Gambler 0x81
 
+//Chapter 7 stuff
+#define Militia 0x82
+#define Freyse 0x88
 
+//Chapter 11 stuff
+#define Aurora 0x45
 
+//Chapter 12 stuff
+#define Eitha 0x4B
 
-#define Selena_Ch10B_and_13B 0x44
-#define Valter_Prologue 0x45
 #define Breguet 0x46
-#define Bone 0x47
 #define Bazba 0x48
 #define Entombed_boss 0x49
 #define Saar 0x4A
@@ -101,18 +147,10 @@
 #define Cyclops_boss 0x5C
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
-#define Bandit 0x66
-#define Hilmar 0x69
 #define Zonta 0x6A
 #define Vigarde 0x6B
 #define Lyon_Final 0x6C
 #define Orson_Boss 0x6D
- 
-
-
-
-
-
 #define Fomortiis 0xBE
 #define Fado 0xC5
 #define Hayden 0xC7
@@ -132,6 +170,8 @@
 #define OldCivilian 0xFC
 #define Wall 0xFE
 #define Snag 0xFF
+
+
 
 // TalkAI Defs
 

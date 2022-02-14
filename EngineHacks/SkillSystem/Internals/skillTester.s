@@ -22,6 +22,7 @@
 
 .equ PItemSkills, SkillGetter + 0x4
 .equ EItemSkill, SkillGetter + 0x8
+.equ GetEquipmentSkill, SkillGetter + 0xC
 
 push {r4-r5,lr}
 @r0 has unit data
@@ -32,6 +33,13 @@ cmp r1, #0xFF
 beq False
 
 mov r4, r1 @skill to test
+mov r0, r5
+ldr r3, GetEquipmentSkill
+_blr r3
+cmp r0, r4
+beq True
+mov r0, r5
+nop @ for alignment
 ldr r1, SkillGetter
 @mov lr, r1
 @.short 0xf800

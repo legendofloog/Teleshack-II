@@ -1,8 +1,9 @@
 #include "MovementCostTable.event"
-#include "WeaponStatBoosts.event"
+#include "ItemStatBoosts.event"
 #include "PromotionItemClassPointersTable.event"
 #include "WTEditor.event"
 #include "BossMusicTable.event"
+#include "InterludeUnitsTable.event"
 
 ALIGN 4
 BattleQuoteTable:

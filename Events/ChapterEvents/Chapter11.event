@@ -1,0 +1,158 @@
+EventPointerTable(Chapter11Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, Turn3Reinforcements, 3)
+TurnEventPlayer(0, Turn2Reinforcements, 2)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+LocationBasedEvents:
+Chest(MasterBow,1,1)
+Door(17,24)
+Door(18,24)
+Chest(KnightProof,9,24)
+Chest(RedGem,18,13)
+Door(1,8)
+Door(2,8)
+END_MAIN
+
+Dunno1:
+
+END_MAIN
+
+Dunno2:
+
+END_MAIN
+
+Dunno3:
+
+END_MAIN
+
+Tutorial:
+
+END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [3,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [15,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [15,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [16,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(9,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(9,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT Selese Soldier Cleo Level(11,Enemy,True) [1,11] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
+UNIT Selese Freelancer Cleo Level(11,Enemy,True) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance] AttackInRangeAI
+UNIT Selese Archer Cleo Level(11,Enemy,True) [7,15] 0x0 0x0 0x0 0x1 [MarksmanBow] AttackInRangeAI
+UNIT Selese Mage Cleo Level(11,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [3,22] 0x0 0x0 0x0 0x0 [BigIron] NeverMoveAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [2,22] 0x0 0x0 0x0 0x0 [IronLance] NeverMoveAI
+UNIT Selese Archer Cleo Level(11,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [MarksmanBow] NeverMoveAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [IronLance,ChestKey] NeverMoveAI
+UNIT Selese Fighter Cleo Level(11,Enemy,True) [4,16] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Selese Halberdier Cleo Level(1,Enemy,True) [2,13] 0x0 0x0 0x0 0x0 [SteelLance] StallOneTurnAI
+UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [3,13] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [1,13] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Selese Mage Cleo Level(11,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
+UNIT Selese Mage Cleo Level(11,Enemy,True) [3,14] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
+UNIT Selese SwordArmour Cleo Level(11,Enemy,True) [8,11] 0x0 0x0 0x0 0x0 [FlameSword] NeverMoveAI
+UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [8,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Aurora Halberdier Cleo Level(1,Enemy,False) [9,4] 0x0 0x0 0x0 0x0 [SteelLance,Hurlbat] AttackInRangeAI
+UNIT
+
+EnemyUnits2:
+UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [14,24] 0x0 0x0 0x0 0x0 [IronLance] NeverMoveAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [13,24] 0x0 0x0 0x0 0x0 [Javelin] PursueWithoutHeedAI
+UNIT Selese Mage Cleo Level(11,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Fire] NeverMoveAI
+UNIT Selese Archer Cleo Level(11,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [IronBow] PursueWithoutHeedAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [18,25] 0x0 0x0 0x0 0x0 [IronLance,DoorKey] NeverMoveAI
+UNIT Selese Mage Cleo Level(11,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Fire] NeverMoveAI
+UNIT Selese Thief Cleo Level(11,Enemy,True) [18,20] 0x0 0x0 0x0 0x0 [IronSword,ChestKey] ThiefAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Selese AxeSoldier Cleo Level(11,Enemy,True) [10,20] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Selese Fighter_F Cleo Level(11,Enemy,True) [16,18] 0x0 0x0 0x0 0x0 [IronAxe] StallOneTurnAI
+UNIT Selese Mage Cleo Level(11,Enemy,True) [12,14] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [11,15] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [13,15] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT
+
+PrisonGreens:
+UNIT Selese Sister Cleo Level(5,NPC,True) [17,22] 0x0 0x0 0x0 0x0 [Lightning] PursueWithoutHeedAI
+UNIT Selese Sister Cleo Level(5,NPC,True) [18,22] 0x0 0x0 0x0 0x0 [Physic] DefaultHealAI
+UNIT
+
+Turn2Thief:
+UNIT Selese Thief Cleo Level(11,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [IronSword,ChestKey,DoorKey] ThiefAI
+
+Turn3Units:
+UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [4,27] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 1 Units1
+	LOAD1 0x1 EnemyUnits
+	LOAD1 0x1 EnemyUnits2
+	LOAD1 0x1 PrisonGreens
+	ENUN
+	DismountAll
+	GotoPrepScreen
+	
+	ENDA
+
+	Turn3Reinforcements:
+	LOAD1 1 Turn3Units
+	ENDA
+	
+	Turn2Reinforcements:
+	LOAD1 1 Turn2Thief
+	ENDA
+	
+EndingScene:
+
+//	SetBackground(0x15)
+
+//	MUSC TiesOfFriendship
+//	SetBackground(0x13)
+//	Text(Ch10End2)
+//
+//	SetBackground(0x0A)
+//	Text(Ch10End3)
+	MNC2 Chapter12
+	NoFade
+	ENDA

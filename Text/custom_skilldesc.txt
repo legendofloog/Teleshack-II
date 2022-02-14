@@ -13,7 +13,7 @@ Her healing and damage actions heal all[N]
 empowered allies by a small amount.[X]
 
 ## SD_Nightcaller
-Dawn Breaker: Cromar's dark pact call[N]
+Dusk Bringer: Cromar's dark pact call[N]
 down fog of war after each combat,[N]
 empowering his critical hit chance.[X]
 
@@ -59,3 +59,40 @@ within 5 tiles have +15 avoid.[X]
 ## SD_SpellMirror
 Spell Mirror: Reflects Mt[N]
 of magical attacks.[X]
+
+## SD_AzuriumMight
+Azurium Might: This unit can cross[N]
+water tiles with no penalty. +3 res.[N]
+Power: Summon rain that hinders fliers.[X]
+
+## SSN_AzuriumMight
+Azurium[X]
+
+## SSD_AzuriumMight
+The divine element Azurium.[N]
+Grants mastery over water.[X]
+
+
+## SD_EterniumMight
+Eternium Might: Revives upon defeat.[N]
+Cancelled by other divine elements. +7 hp.[N]
+Power: Fully restore HP to all allies.[X]
+
+## SD_ZoruniumMight
+Zoleinium Might: Unit gain +1 move.[N]
+Power: +2 move to all ally infantry.[X]
+
+## SD_GenesiumMight
+Genesium Might: Grants user power of[N]
+genesis and deicide. +1 all stats.[N]
+Power: Create 4 ally generals.[X]
+
+## SD_Alacrity
+Alacrity: Can act again after[N]
+using Swap, but cannot move[N]
+for the rest of the turn.[X]
+
+## SD_Sharpshooter
+Sharpshooter: Maximum range[N]
+of bows is increased by 2, but[N]
+minimum range is set to 3.[X]

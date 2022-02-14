@@ -75,8 +75,11 @@
 #define Brigand 0x41
 #define Brigand_F 0x42
 #define SwordArmor 0x43
+#define SwordArmour 0x43
 #define AxeArmor 0x44
+#define AxeArmour 0x44
 #define LanceArmor 0x45
+#define LanceArmour 0x45
 #define BowArmor 0x46
 #define General 0x47
 #define MageArmor 0x48
@@ -125,7 +128,9 @@
 #define Civilian_F_2 0x70
 #define Civilian_3 0x71
 #define Civilian_F_3 0x72
+#define Pirate 0x73
 #define Corsair 0x73
+#define Pirate_F 0x74
 #define Corsair_F 0x74
 #define Berserker 0x75
 #define Berserker_F 0x76

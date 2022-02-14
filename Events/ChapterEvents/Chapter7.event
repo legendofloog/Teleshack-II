@@ -1,0 +1,323 @@
+EventPointerTable(Chapter7Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, IberisGreen, 1)
+TurnEventEnemy(0, YouSuck, 14)
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(7, AxelTalkCh7, Axel, Radnitz)
+CharacterEventBothWays(8, AlexTalkCh7, Alex, Radnitz)
+CharacterEventBothWays(10, RadnitzTalkCh7, Loewe, Radnitz)
+CharacterEventBothWays(10, RadnitzTalkCh7, Cleo, Radnitz)
+CharacterEventBothWays(11, RecruitCh7, 0, Buldak)
+END_MAIN
+
+LocationBasedEvents:
+Door(2,12)
+Door(3,12)
+Door(6,11)
+Door(7,11)
+Door(10,14)
+Door(11,14)
+Door(8,17)
+Chest(BigIron,8,19)
+Chest(DaShoota,9,18)
+LOCA 9 Throne [2,8] 0x11
+Village(12,VillageCh7,9,6)
+Village(13,SupplyCh7,8,2)
+Village(14,SupplyCh7,18,0)
+Village(15,SupplyCh7,12,11)
+Armory(Ch7Armory,13,1)
+Vendor(Ch7Vendor,14,6)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [22,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [22,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,18] 0x0 0x0 0x0 0x0 [YorsYari] BossHealAI
+UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,3] 0x0 0x0 0x0 0x0 [Miaodao] PursueWithoutHeedAI
+UNIT Buldak Thief 0x0      Level(5,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [IronSword] BossHealAI
+UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [IceSword] BossHealAI
+UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [HandAxe] BossHealAI
+UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [19,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Militia Hunter Wellworth Level(7,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Militia Mage Wellworth Level(7,Enemy,True) [19,2] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [3,9] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
+UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [10,10] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Militia Hunter Wellworth Level(7,Enemy,True) [15,19] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Militia Mage Wellworth Level(7,Enemy,True) [15,14] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [18,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Militia Hunter Wellworth Level(7,Enemy,True) [1,15] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Militia Mage Wellworth Level(7,Enemy,True) [11,16] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [2,15] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Militia Hunter Wellworth Level(7,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Militia Mage Wellworth Level(7,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [Wind] AttackInRangeAI
+UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [5,19] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Militia Hunter Wellworth Level(7,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Militia Mage Wellworth Level(7,Enemy,True) [6,15] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [7,6] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [8,16] 0x0 0x0 0x0 0x0 [HandAxe, DoorKey, ChestKey_5] NeverMoveAI
+UNIT Militia LanceArmor Wellworth Level(7,Enemy,True) [18,0] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Militia LanceArmor Wellworth Level(7,Enemy,True) [12,11] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [2,13] 0x0 0x0 0x0 0x0 [HandAxe, DoorKey, ChestKey_5] NeverMoveAI
+UNIT Militia LanceArmor Wellworth Level(7,Enemy,True) [3,13] 0x0 0x0 0x0 0x0 [Javelin, DoorKey] NeverMoveAI
+UNIT Militia SwordKnight Wellworth Level(7,Enemy,True) [2,18] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Militia LanceKnight Wellworth Level(7,Enemy,True) [13,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [6,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Militia SwordKnight Wellworth Level(7,Enemy,True) [7,10] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Militia LanceKnight Wellworth Level(7,Enemy,True) [16,4] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT
+
+NewRecruit:
+UNIT Iberis MageArmor 0x0      Level(7,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT
+
+GreenUnits:
+UNIT Radnitz DukeKnight Epony Level(1,NPC,False) [0,2] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT Epony Noble_F 0x0 Level(7,NPC,False) [1,1] 0x0 0x0 0x0 0x0 [ShortSword] BossHealAI
+UNIT Freyse LanceArmor          Epony Level(12,NPC,True) [0,5] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT Freyse AxeArmor         Epony Level(12,NPC,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] BossHealAI
+UNIT Freyse LanceArmor          Epony Level(12,NPC,True) [0,3] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT Freyse AxeArmor         Epony Level(12,NPC,True) [3,0] 0x0 0x0 0x0 0x0 [IronAxe] BossHealAI
+UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+COUNTER_SET 0 0
+MountAll
+LOAD1 1 NewRecruit
+LOAD1 1 EnemyUnits
+LOAD1 1 GreenUnits
+ENUN
+FADU 15
+MUSCFAST 0x1b
+CAMERA Radnitz
+CURSOR Radnitz
+STAL 60
+REMOVE_CURSORS
+MOVE 15 Radnitz [3, 3]
+ENUN
+Text(RadnitzMifanText)
+StartBattle 
+NormalDamage(0,15)
+EndAttack
+FIGHT_MAP Radnitz Mifan ShortLance 0
+MOVE 15 Mifan [5, 3]
+ENUN
+MOVE 15 TheGiant [4, 3]
+ENUN
+StartBattle 
+CriticalHit(0,30)
+EndAttack
+FIGHT_MAP TheGiant Radnitz HandAxe 0 
+ENUN
+MOVE 15 Radnitz [0, 2]
+ENUN
+Text(RadnitzEponyText)
+CURSOR TheGiant
+STAL 60
+REMOVE_CURSORS
+Text(MifanGiantText)
+MOVE 15 Mifan [6, 8]
+ENUN
+CAMERA Wellworth
+CURSOR Wellworth
+STAL 60
+REMOVE_CURSORS
+Text(WellworthMifanText)
+MOVE 15 Mifan [14, 3]
+MUSCFAST 0x1A
+CAMERA Iberis
+CURSOR Iberis
+STAL 60
+REMOVE_CURSORS
+Text(LoeweCleoIberisText)
+CHECK_ALIVE Axel
+BEQ 1 s0 sC
+CHECK_ALIVE Alex
+BEQ 1 s0 sC
+Text(AxelAlexIfAliveText)
+LABEL 1
+CenterTextbox(InfoText)
+SVAL s1 23
+SET_HP Mifan
+GotoPrepScreen
+NoFade
+ENDA
+
+AxelTalkCh7:
+Text(AxelTalkCh7Text)
+GiveItem(Axle1,Axel)
+NoFade
+ENDA
+
+AlexTalkCh7:
+Text(AlexTalkCh7Text)
+GiveItem(Axle2,Alex)
+NoFade
+ENDA
+
+IberisGreen:
+CUSA 23
+NoFade
+ENDA
+
+RadnitzTalkCh7:
+CHECK_EVENTID 9
+BEQ 1 s0 sC
+Text(RadnitzEndCh7Text)
+ENUT 3
+GOTO 2
+LABEL 1
+Text(RadnitzTalkCh7Text)
+LABEL 2
+NoFade
+ENDA
+
+Throne:
+CHECK_EVENTID 10
+BEQ 1 s0 sC
+Text(CleoEndCh7Text)
+ENUT 3
+GOTO 2
+LABEL 1
+Text(CleoThroneCh7Text)
+LABEL 2
+NoFade
+ENDA
+
+RecruitCh7:
+Text(RecruitCh7Text)
+CUSA 24
+NoFade
+ENDA
+
+VillageCh7:
+Text(VillageCh7Text)
+GiveItem(KillerBow,0xFFFF)
+NoFade
+ENDA
+
+SupplyCh7:
+CenterTextbox(SupplyCh7Text)
+COUNTER_INC 0
+NoFade
+ENDA
+
+ALIGN 4
+Ch7Armory:
+SHORT LongSword
+SHORT GreatSword
+SHORT LongLance
+SHORT Greatlance
+SHORT BattleAxe
+SHORT Longbow
+SHORT Greatbow
+SHORT Javelin
+SHORT HandAxe
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch7Vendor:
+SHORT Thunder
+SHORT Mend
+SHORT Physic
+SHORT Sleep
+SHORT Vulnerary
+SHORT Elixir
+SHORT 0
+SHORT 0
+
+YouSuck:
+GameOver
+
+ALIGN 4
+EndingScene:
+COUNTER_CHECK 0
+BNE 0 s0 sC
+Text(Rice0Ch7Text)
+LABEL 0
+SVAL s1 1
+BNE 1 s1 sC
+Text(Rice1Ch7Text)
+GiveItem(RedGem,Cleo)
+LABEL 1
+SVAL s1 2
+BNE 2 s1 sC
+Text(Rice2Ch7Text)
+GiveItem(BlueGem,Cleo)
+LABEL 2
+SVAL s1 3
+BNE 3 s1 sC
+Text(Rice3Ch7Text)
+GiveItem(RedGem,Cleo)
+GiveItem(BlueGem,Cleo)
+LABEL 3
+MUSCFAST 0x47
+SetBackground(CastleRoom)
+Text(EndEvent1Text)
+SetBackground(VillageRoadSunset)
+Text(EndEvent2Text)
+MNC2 Chapter8
+NoFade
+ENDA

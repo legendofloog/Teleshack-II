@@ -26,7 +26,7 @@
 
 //Provoke: Enemies are more likely to target this unit.
 //By Tequila
-#define ProvokeID 255
+//#define ProvokeID 255
 
 //Shade: Enemies are less likely to target this unit.
 //By Sme
@@ -211,10 +211,6 @@
 
 //HP Restoration Skills
 
-//Renewal: Restore 30% of max HP at the start of each turn.
-//Author Unknown (Initial Commit)
-#define RenewalID 255
-
 //Amaterasu: Allies within 2 tiles recover 20% HP each turn.
 //Author Unknown (Initial Commit)
 #define AmaterasuID 255
@@ -237,7 +233,7 @@
 
 //Imbue: Recover HP equal to Magic at the start of each turn.
 //By Sme
-#define ImbueID 255
+//#define ImbueID 255
 
 //Movement Skills
 
@@ -248,10 +244,6 @@
 //Armor March: At start of turn, if unit is adjacent to an armor ally, unit and adjacent armor allies gain +2 Mov.
 //By Leonarth
 #define ArmorMarchID 255
-
-//Pass: Can move through enemy units.
-//By Tequila
-#define PassID 255
 
 //Keep Up: At start of turn, if unit is within 3 spaces of an ally with Canto or Canto+, unit gains +2 Mov.
 //By Sme
@@ -324,10 +316,6 @@
 //By Sme
 #define ReMoveID 255
 
-//Savage Blow: After attacking, enemies within 2 tiles take 20% damage.
-//By circleseverywhere
-#define SavageBlowID 255
-
 //Cultured: If unit attacks next to a unit with Nice Thighs, move again. -50 hit against units with Nice Thighs.
 //By Sme
 #define CulturedID 255
@@ -354,8 +342,7 @@
 #define DeathBlowID 255
 #define DartingBlowID 255
 #define WardingBlowID 255
-#define CertainBlowID 255
-#define ArmoredBlowID 255
+//#define ArmoredBlowID 255
 //By Darrman
 #define HeroesDeathBlowID 255
 
@@ -377,7 +364,7 @@
 
 //Critical Force: Base critical is Skl * 1.5.
 //Author Unknown (Initial Commit)
-#define CriticalForceID 255
+//#define CriticalForceID 255
 
 //Killing Machine: Total critical rate is doubled.
 //Author Unknown (Initial Commit)
@@ -877,8 +864,6 @@
 #define RallySklID 255
 #define RallySpdID 255
 #define RallyLukID 255
-#define RallyDefID 255
-#define RallyResID 255
 #define RallyMovID 255
 #define RallySpectrumID 255
 
@@ -924,11 +909,11 @@
 
 //Reposition: Allows unit to pull an adjacent ally to its opposite side.
 //By StanH
-#define RepositionID 255
+//#define RepositionID 255
 
 //Swap: Allows unit to swap positions with an adjacent ally.
 //By StanH
-#define SwapID 255
+//#define SwapID 255
 
 //Swarp: Allows unit to swap positions with a distant ally.
 //Be Sme
@@ -948,10 +933,6 @@
 //Wary Fighter: Unit cannot double or be doubled.
 //By Tequila
 #define WaryFighterID 255
-
-//Savior: Can rescue without penalties.
-//Author Unknown (Initial Commit)
-#define SaviorID 255
 
 //Discipline: Weapon experience gains are doubled.
 //Author Unknown (Initial Commit)

@@ -1,5 +1,5 @@
 ## KingSwordDesc
-Doubles attacks, grants Charisma.[X]
+Doubles attacks grants Charisma.[X]
 
 ## FlameSwordDesc
 Casts magical flame. Mag +5.[X]
@@ -68,7 +68,7 @@ A bow with exceptional range.[X]
 Beiyr Scroll[X]
 
 ## BeiyrScrollDesc
-+10% Str, +10% Skl +10% Lck.[X]
++10% Str +10% Skl +10% Lck.[X]
 
 ## TemperedName
 [_T][_e]m[_p][_e][_r][_e][_d][_sp][_R]i[_n][_g][X]
@@ -124,20 +124,157 @@ Spell Mirror[X]
 
 ## SpellMirrorDesc
 [_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+
 ## AlairsGaleName
 Arai's Gale[X]
 
 ## AlairsGaleDesc
 [_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
 
-## MarchRingName
-March Ring[X]
+## SisterRingName
+Sister Ring[X]
 
-## MarchRingDesc
-[_+][_1][_SP][_M][_o][_v][_e][_,][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
+## SisterRingDesc
+[_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
 
 ## CivilianProofName
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
 
 ## CivilianProofDesc
-[_C][_a][_n][_n][_o][_t][_SP][_e][_n][_t][_e][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+Holder cannot enter combat.[X]
+
+## ArachnidName
+Arachnid[X]
+
+## ArachnidDesc
+Brave Effect.[X]
+
+## HurlbatName
+Hurlbat[X]
+
+## TridentName
+Trident[X]
+
+## TridentDesc
+[_G][_o][_o][_d][_SP][_f][_o][_r][_SP][_f][_i][_s][_h][_i][_n][_g][_,][_SP][_q][_u][_e][_s][_t][_i][_o][_n][_a][_b][_l][_e][_SP][_f][_o][_r][_SP][_c][_o][_m][_b][_a][_t][_.][X]
+
+
+## AzuriumScepterName
+[_A][_z][_u][_e][_r][_i][_u][_m][_SP][_S][_c][_e][_p][_t][_e][_r][X]
+
+
+## AzuriumScepterDesc
+Restore life to all units on the map.[X]
+
+## DevilDaggerName ^
+Devil's Dagger[X]
+
+## DevilDaggerDesc
+Ignores Mish's Atk and enemy Def. Devil.[X]
+
+## BalladOfWarName ^
+Ballad of War[X]
+
+## BalladOfWarDesc
+Grants Charisma.[X]
+
+## YorsYariName
+Yor's Yari[X]
+
+## YorsYariDesc
+Ignores Defence.[X]
+
+## DaShootaName
+Da Shoota[X]
+
+## DaShootaDesc
+Effective vs horses and armors.[X]
+
+## BigIronName
+Big Iron[X]
+
+## Axle1Name
+Axle[X]
+
+## Axle1Desc
+Uncounterable. Lck +13.  Axel[LockIcon].[X]
+
+## Axle2Desc
+Halves enemy health. Alex[LockIcon].[X]
+
+## MiaodaoName
+Miaodao[X]
+
+## MiaodaoDesc
+Brave.[X]
+
+## ZykhraScrollName
+Zykhra Scroll[X]
+
+## ZykhraScrollDesc
++10% HP, +10% Str, +10% Def,[N]
++10% Bld, -10% Spd[X]
+
+## GrowthScrollName
+Growth Scroll[X]
+
+## GrowthScrollDesc
+Boosts equipped unit's growths.[X]
+
+## StingerName
+Stinger[X]
+
+## StingerDesc
+Spd +5. Hornet[LockIcon][X]
+
+## LunarAxeName
+Lunar Axe[X]
+
+## LunarAxeDesc
+Magic damage.[X]
+
+## StormbrandName
+Stormbrand[X]
+
+## StormbrandDesc
+Brave. Iskra[LockIcon][X]
+
+## BpatItemName
+DUMMY (bpat)[X]
+
+## BpatItemDesc
+Something special :)[X]
+
+## ArgymosCrestName
+Argymos Crest[X]
+
+## ArgymosCrestDesc
+Promotion item for Cleo.[X]
+
+## RaioScrollName
+Raio Scroll[X]
+
+## RaioScrollDesc
++10% Mag, +10% Skl, +20% Spd,[N]
+-15% HP[X]
+
+## LuzenScrollName
+Luzen Scroll[X]
+
+## LuzenScrollDesc
++20% HP, +20% Lck[X]
+
+## DarkbrandName
+Darkbrand[X]
+
+##DarkbrandDesc
+Can be used to buff res. Tiberius[LockIcon][X]
+
+## MuramasaName
+Muramasa[X]
+
+## TheBreakerName
+The Breaker[X]
+
+## TheBreakerDesc
+Effective vs. armors.[X]

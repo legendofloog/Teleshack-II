@@ -669,6 +669,8 @@
   mov     r2,#0xC1        @0808756C
   lsl     r2,r2,#0x6        @0808756E
   blh      0x80D74A0        @08087570
+  ldr r0, [r6, #0xC]
+  blh DrawUnitEquippedItem
   ldr     r0,[r6,#0xC]        @08087574
   add     r0,#0x1E        @08087576
   add     r0,r0,r4        @08087578
@@ -773,6 +775,9 @@
   add     r4,#0x1       @0808766C
   cmp     r4,#0x7       @0808766E
   ble     loc_0x8087660        @08087670
+b SkipPool
+.ltorg
+SkipPool:
 .endm
 
 .macro draw_items_text

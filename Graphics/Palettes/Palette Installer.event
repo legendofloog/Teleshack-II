@@ -93,6 +93,60 @@ FiloneArcher:
 ZwieGeneral:
 	#incbin "./_palettes/ZwieGeneral.lzpal" 
 
+LongxiaCorsair_F:
+	#incbin "./_palettes/LongxiaCorsair_F.lzpal" 
+
+LongxiaBerserker_F:
+	#incbin "./_palettes/LongxiaBerserker_F.lzpal" 
+
+FangaiDarkMage:
+	#incbin "./_palettes/FangaiDarkMage.lzpal" 
+
+FangaiDarkBishop:
+	#incbin "./_palettes/FangaiDarkBishop.lzpal" 
+
 FiloneSniper:
 	#incbin "./_palettes/FiloneSniper.lzpal" 
+
+GimmThief:
+	#incbin "./_palettes/GimmThief.lzpal" 
+
+GimmRogue:
+	#incbin "./_palettes/GimmRogue.lzpal" 
+
+RigganMage:
+	#incbin "./_palettes/RigganMage.lzpal" 
+
+FaolanRookKnight:
+	#incbin "./_palettes/FaolanRookKnight.lzpal" 
+
+NoraDragonRider:
+	#incbin "./_palettes/NoraDragonRider.lzpal" 
+
+NoraDracoknight:
+	#incbin "./_palettes/NoraDracoknight.lzpal" 
+
+NoraRiderUnmounted:
+	#incbin "./_palettes/NoraRiderUnmounted.lzpal" 
+
+NoraKnightUnmounted:
+	#incbin "./_palettes/NoraKnightUnmounted.lzpal" 
+
+HansSwordKnight:
+	#incbin "./_palettes/HansSwordKnight.lzpal" 
+
+HansForrestKnight:
+	#incbin "./_palettes/HansForrestKnight.lzpal" 
+
+HansSwordKnightUnmounted:
+	#incbin "./_palettes/HansSwordKnightUnmounted.lzpal" 
+
+HansForrestKnightUnmounted:
+	#incbin "./_palettes/HansForrestKnightUnmounted.lzpal" 
+
+FrancisHalberdier:
+	#incbin "./_palettes/FrancisHalberdier.lzpal" 
+
+HegeMercenary:
+	#incbin "./_palettes/HegeMercenary.lzpal" 
 

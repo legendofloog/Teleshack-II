@@ -2,7 +2,7 @@
 Ch4: Daybreak[X]
 
 ## DefeatBossDefendObj
-[_D]ft. [_B][_o][_s][_s]/[_D][_e]f[_e][_n][_d][X]
+[_D]ft. [_B][_o][_s][_s]/[_S][_u][_r][_v]i[_v][_e][X]
 
 ## Ch4DefeatBossDesc
 Defend for 9 turns or[N]
@@ -19,10 +19,12 @@ You're a bold one, flying[N]
 through enemy territory.[AN][ClearFace]
 [OpenMidRight][LoadLoewe]
 That's an interesting[N]
-use of your final words.[AN]
-[OpenMidLeft]Oho! Does the rogue think[N]
+use of your final words.[AN][ClearFace]
+[OpenMidLeft][LoadHilmar]
+Oho! Does the rogue think[N]
 his arrows can dent my armor?[AN][ClearFace]
-[OpenMidRight]This is your comeuppance.[N]
+[OpenMidRight][LoadLoewe]
+This is your comeuppance.[N]
 For the fallen![A][X]
 
 ## HilmarCleoBossQ
@@ -195,7 +197,7 @@ stray arrows[Beat][AN]
 No. Dragana's blood is on[N]
 their hands.[AN]
 We have no time nor chance[N]
-to escape.[AN]
+to escape.[AN][CloseSpeechSlow]
 [MoveRight][.4][MoveRight]Cull their ranks! If we can[N]
 squander their time,[AN]
 we should get an opportunity[N]

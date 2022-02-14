@@ -24,6 +24,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Seize(1,3)
 Door(6,3)
 Door(14,10)
 Chest(LightRune,6,1)
@@ -59,24 +60,26 @@ Tutorial:
 	END_MAIN
 
 Units1:
-UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [2,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [2,0] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [0,1] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
 UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
 UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [2,1] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [0,0] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 UNIT Tyr_Ch2 AxeArmor 0x0      Level(4,Enemy,False) [11,18] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey] NeverMoveAI
 UNIT Chapter1Generics SwordArmor Tyr_Ch2 Level(1,Enemy,True) [6,4] 0x0 0x0 0x0 0x0 [SteelSword, DoorKey] NeverMoveAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [IronLance, DoorKey] NeverMoveAI
-UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
 UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT Chapter1Generics Archer Tyr_Ch2 Level(1,Enemy,True) [6, 16] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
-UNIT Chapter1Generics BowArmor Tyr_Ch2 Level(1,Enemy,True) [15, 19] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Chapter1Generics BowArmor Tyr_Ch2 Level(1,Enemy,True) [15, 19] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI
 UNIT
 
 GreenUnits:
@@ -87,11 +90,11 @@ UNIT
 
 Turn3Reinforcements:
 UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,19] 0x0 0x0 0x1 REDA1R18 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronLance] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [ShortLance] PursueWithoutHeedAI
 UNIT
 
 Turn5Reinforcements:
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x1 REDA1R18 [IronSword] PursueWithoutHeedAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x1 REDA1R18 [ShortSword] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronAxe] PursueWithoutHeedAI
 UNIT
 
@@ -146,13 +149,13 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-
+	FADI 15
 	LOAD1 1 EnemyUnits
 	LOAD1 1 OpeningCutsceneUnits
 	LOAD1 1 GreenUnits
 	ENUN
 	SetBackground(CastleHallway)
-	MUSC FF5_Sealed_Away
+	//MUSC FF5_Sealed_Away
 	Text(Chapter2OpeningScene1)
 	CALL $9EE2C4
 	FlashCursor(Varga,60)
@@ -167,7 +170,7 @@ BeginningScene:
 	REMA
 	EVBIT_F 5
 	Text(Chapter2OpeningScene3)
-	CUSA Varga
+	CUSN Varga
 	MUSC Sortie_Formation
 	StartBattle
 	NormalDamage(0,14)
@@ -189,11 +192,16 @@ BeginningScene:
 	MOVE 15 Varga [1,2]
 	MOVE 15 Cleo [0,2]
 	ENUN
+	STAL 30
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)
-	LOAD1 2 Units1
+	FADI 15
+	LOAD3 2 Units1
+	//LOAD1 2 Units1
 	ENUN
+	CUSA Varga
+	FADU 15
 	Text(Chapter2OpeningScene5)
 	NoFade
 	ENDA

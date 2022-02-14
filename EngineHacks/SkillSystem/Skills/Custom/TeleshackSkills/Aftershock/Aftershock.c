@@ -17,7 +17,17 @@ bool IsUsingThunderWeapon(BattleUnit battleUnit){
 
 void AftershockPostBattle(){
 
+	// ignore non combat actions
+	if (gActionData.unitActionType != UNIT_ACTION_COMBAT){
+		return;
+	}
+
 	Unit* target = GetUnit(gBattleTarget.unit.index);
+
+	// ignore dead people
+	if (target->curHP <= 0){
+		return;
+	}
 
 	// unset aftershock
 	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;

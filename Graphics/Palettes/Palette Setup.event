@@ -117,13 +117,85 @@
 	setCBSP(28,Zwieback, 1, BowArmor)
 
 // FiloneArcher
-	setPalette(28,FiloneArcher)
-	setCBSP(28,Filone, 1, Archer)
+	setPalette(29,FiloneArcher)
+	setCBSP(29,Filone, 1, Archer_F)
 
 // ZwieGeneral
-	setPalette(29,ZwieGeneral)
-	setCBSP(29,Zwieback, 3, General)
+	setPalette(30,ZwieGeneral)
+	setCBSP(30,Zwieback, 3, General)
+
+// LongxiaCorsair_F
+	setPalette(31,LongxiaCorsair_F)
+	setCBSP(31,Longxia, 1, Corsair_F)
+
+// LongxiaBerserker_F
+	setPalette(32,LongxiaBerserker_F)
+	setCBSP(32,Longxia, 3, Berserker_F)
+
+// FangaiDarkMage
+	setPalette(33,FangaiDarkMage)
+	setCBSP(33,Fangai, 1, DarkMage)
+
+// FangaiDarkBishop
+	setPalette(34,FangaiDarkBishop)
+	setCBSP(34,Fangai, 3, DarkBishop)
 
 // FiloneSniper
-	setPalette(30,FiloneSniper)
-	setCBSP(30,Filone, 3, Sniper)
+	setPalette(35,FiloneSniper)
+	setCBSP(35,Filone, 3, Sniper_F)
+
+// GimmThief
+	setPalette(36,GimmThief)
+	setCBSP(36,Gimm, 1, Thief)
+
+// GimmRogue
+	setPalette(37,GimmRogue)
+	setCBSP(37,Gimm, 3, ThiefFighter)
+
+// RigganMage
+	setPalette(38,RigganMage)
+	setCBSP(38,Riggan, 1, Mage)
+
+// FaolanRookKnight
+	setPalette(39,FaolanRookKnight)
+	setCBSP(39,Faolan, 1, RookKnight)
+
+// NoraDragonRider
+	setPalette(40,NoraDragonRider)
+	setCBSP(40,Nora, 1, DragonRider)
+
+// NoraDracoknight
+	setPalette(41,NoraDracoknight)
+	setCBSP(41,Nora, 2, Dracoknight)
+
+// NoraRiderUnmounted
+	setPalette(42,NoraRiderUnmounted)
+	setCBSP(42,Nora, 3, DragonRider_Dismounted)
+
+// NoraKnightUnmounted
+	setPalette(43,NoraKnightUnmounted)
+	setCBSP(43,Nora, 4, Dracoknight_Dismounted)
+
+// HansSwordKnight
+	setPalette(44,HansSwordKnight)
+	setCBSP(44,Hans, 1, SwordKnight)
+
+// HansForrestKnight
+	setPalette(45,HansForrestKnight)
+	setCBSP(45,Hans, 2, ForrestKnight)
+
+// HansSwordKnightUnmounted
+	setPalette(46,HansSwordKnightUnmounted)
+	setCBSP(46,Hans, 3, SwordKnight_Dismounted)
+
+// HansForrestKnightUnmounted
+	setPalette(47,HansForrestKnightUnmounted)
+	setCBSP(47,Hans, 4, ForrestKnight_Dismounted)
+
+// FrancisHalberdier
+	setPalette(48,FrancisHalberdier)
+	setCBSP(48,Francis, 1, Halberdier)
+
+// HegeMercenary
+	setPalette(49,HegeMercenary)
+	setCBSP(49,Hege, 1, Hero_F)

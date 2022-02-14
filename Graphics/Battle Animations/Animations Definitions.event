@@ -13,7 +13,7 @@
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
 #define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
-#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE MasterAxe 0x00 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE MasterAxe 0x00 ; SHORT Animation ; BYTE Hurlbat 0x00 ; SHORT Animation"
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
 #define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
 #define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
@@ -732,4 +732,12 @@ MageKnightFDismountedAnims:
 SwordAnim(MageKnightFDismountedSwordAnim)
 AnimaAnim(MageKnightFDismountedMagicAnim)
 UnarmedAnim(MageKnightFDismountedMagicAnim)
+EndAnim
+
+ALIGN 4
+WarriorAnims:
+AxeAnim(0x1C)
+BowAnim(0x1E)
+HandAxeAnim(0x1D)
+UnarmedAnim(0x1F)
 EndAnim

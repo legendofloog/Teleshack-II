@@ -15,8 +15,8 @@ Lute,HouseText
 Natasha,HouseText
 Cormag,HouseText
 Loewe,LoeweEscapeQuoteText
-Forde,HouseText
-Kyle,HouseText
+Longxia,LongxiaEscapeQuoteText
+Fangai,FangaiEscapeQuoteText
 Amelia,HouseText
 Artur,HouseText
 Gerik,HouseText
@@ -27,8 +27,8 @@ Ewan,HouseText
 L'Arachel,HouseText
 Dozla,HouseText
 EMPTY,HouseText
-Rennac,HouseText
-Duessel,HouseText
+Jenny,JennyEscapeQuoteText
+Meldan,MeldanEscapeQuoteText
 Myrrh,HouseText
 Knoll,HouseText
 Joshua,HouseText
@@ -111,3 +111,5 @@ Hayden,HouseText
 0x6d,HouseText
 0x6e,HouseText
 0x6f,HouseText
+0x70,HouseText
+0x71,HouseText

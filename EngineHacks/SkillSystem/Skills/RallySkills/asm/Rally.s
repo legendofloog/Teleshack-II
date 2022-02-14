@@ -84,7 +84,14 @@ RallyCommandUsability.end:
 
 RallyCommandEffect:
 	push {lr}
-
+	
+	ldr r0, =gActiveUnit @ this increments user's fatigue by one
+	ldr r0, [r0]
+	mov r1, #0x3B
+	ldrb r2, [r0,r1]
+	add r2, #1
+	strb r2, [r0,r1]
+	
 	ldr r0, =gActiveUnit
 	ldr r0, [r0] @ arg r0 = active unit
 
@@ -381,7 +388,7 @@ RallyPreviewFx_OnLoop:
 	b 0f
 
 1:
-	mov r0, #4
+	mov r0, #2
 
 0:
 	ldr r3, =SetMapAuraFxBlend

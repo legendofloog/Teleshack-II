@@ -1,0 +1,325 @@
+EventPointerTable(Chapter10Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, Turn1Event, 1)
+TurnEventNPC(0, HernandezEvent, 2)
+TurnEventPlayer(0, JohannaEvent, 3)
+TurnEventPlayer(0, EliasEvent, 10)
+END_MAIN
+
+Turn1Event:
+CUSA Radnitz
+NoFade
+ENDA
+
+HernandezEvent:
+
+CHECK_EVENTID 0x7a
+BEQ 3 0 0xC
+
+MUSC mutecity
+
+SpawnReinforcements(HernandezUnits)
+FlashCursor(Hernandez,0x40)
+Text(Ch10HernandezSpawn)
+
+LABEL 3
+
+NoFade
+ENDA
+
+JohannaEvent:
+SpawnReinforcements(JohannaUnits)
+Text(Ch10JohannaSpawn)
+NoFade
+ENDA
+
+EliasEvent:
+SpawnReinforcements(EliasUnits)
+Text(Ch10EliasSpawm)
+NoFade
+ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(0x14,RadnitzValseTalk, Radnitz, Valse)
+CharacterEventBothWays(0x15,RadnitzHornetTalk, Radnitz, Hornet)
+
+END_MAIN
+
+RadnitzValseTalk:
+MUSC WithUs_Song 
+Text(Ch10RadnitzValseTalk)
+CUSA Valse
+SetFatigue(Valse,0)
+NoFade
+ENDA
+
+RadnitzHornetTalk:
+MUSC WithUs_Song 
+Text(Ch10RadnitzHornetTalk)
+CUSA Hornet
+SetFatigue(Hornet,0)
+NoFade
+ENDA
+
+MiscBasedEvents:
+AREA 0xA CrossingBridgeEvent [18,0] [24,7]
+AREA 0xA CrossingBridgeEvent [16,8] [24,17]
+CauseGameOverIfLordDies
+END_MAIN
+
+CrossingBridgeEvent:
+
+CHECK_ALLEGIANCE 0xFFFF
+BNE 1 0 0xC
+
+CAM1 [24,0]
+FlashCursor(21,3,0x40)
+Text(Ch10JohannaCharge)
+
+SetAI(Johanna,0,0,4,0)
+SetAI(Cythes,0,0,0,0)
+
+
+FlashCursor(20,7,0x40)
+Text(Ch10MifanCharge)
+
+SetAI(Mifan,0,0,4,0)
+
+GOTO 2
+LABEL 1
+ENUF 0xA
+
+LABEL 2
+NoFade
+ENDA
+
+LocationBasedEvents:
+Seize(21, 3)
+Village(0xB,VillageEventNorth,14,3)
+Village(0xC,VillageEventSouth,11,17)
+Village(0xD,VillageEventEast,22,15)
+Village(0xE,VillageEventIsland,16,0)
+END_MAIN
+
+
+VillageEventNorth:
+VillageEventItem(Ch10PlaceholderText, Village, KnightProof)
+
+VillageEventSouth:
+VillageEventItem(Ch10PlaceholderText, Village, Sigil)
+
+VillageEventEast:
+VillageEventItem(Ch10PlaceholderText, Village, Restore)
+
+VillageEventIsland:
+VillageEventItem(Ch10PlaceholderText, Village, BpatItem) // Something special :)
+
+Dunno1:
+
+END_MAIN
+
+Dunno2:
+
+END_MAIN
+
+Dunno3:
+
+END_MAIN
+
+Tutorial:
+
+END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [1,5] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [0,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [0,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,9] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [0,10] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,10] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [0,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+// Ally
+UNIT Radnitz DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,KnightProof,Vulnerary] NoAI
+
+UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,GrowthScroll,Vulnerary] NeverMoveAI
+UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,GrowthScroll,Vulnerary] DoNotAttack07AI
+
+
+// Unique
+UNIT Cidor Baron 0x0 Level(5,Enemy,False) [21,3] 0x0 0x0 0x0 0x0 [Jormungand] NeverMoveAI // TODO: give him cooler inventory when we have more reasonable options
+
+
+UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [20,7] 0x0 0x0 0x0 0x0 [Miaodao] DoNothingAI
+
+
+UNIT Selese Thief 0x0 Level(10,Enemy,True) [9,9] 0x0 0x0 0x0 0x0 [ShortSword,Rescue] LootingThiefAI
+
+UNIT
+
+EnemyUnits2:
+
+// Right side
+UNIT SeleseProvoke Ballistician 0x0 Level(10,Enemy,True) [20,12] 0x0 0x0 0x0 0x0 [SlimArch] NeverMoveAI
+
+UNIT Selese DarkMage 0x0 Level(10,Enemy,True) [17,9] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
+UNIT Selese Mage 0x0 Level(10,Enemy,True) [18,14] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+
+UNIT Selese Mage 0x0 Level(10,Enemy,True) [23,13] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+
+UNIT Selese Myrmidon 0x0 Level(10,Enemy,True) [22,11] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
+UNIT Selese Bard 0x0 Level(10,Enemy,True) [23,6] 0x0 0x0 0x0 0x0 [SpellMirror] AttackInRangeAI
+UNIT Selese Archer 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+
+UNIT Selese SwordFighter 0x0 Level(10,Enemy,True) [22,16] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+UNIT Selese AxeSoldier 0x0 Level(10,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [LunarAxe] PursueWithoutHeedAI
+
+UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,4] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+
+
+// Bridge
+
+UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ThunderSword] NeverMoveAI
+UNIT Selese LanceArmor 0x0 Level(10,Enemy,True) [15,12] 0x0 0x0 0x0 0x0 [MasterLance] NeverMoveAI
+UNIT Selese Mage 0x0 Level(10,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
+UNIT Selese Bard 0x0 Level(10,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [Fire] NeverMoveAI
+
+// Left side
+UNIT Selese AxeFighter 0x0 Level(10,Enemy,True) [4,4] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [5,5] 0x0 0x0 0x0 0x0 [Claymore] PursueWithoutHeedAI
+UNIT Selese Mage 0x0 Level(10,Enemy,True) [6,3] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Selese Myrmidon 0x0 Level(10,Enemy,True) [9,2] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
+
+UNIT Selese SwordKnight 0x0 Level(10,Enemy,True) [12,1] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+
+UNIT Selese SwordFighter 0x0 Level(10,Enemy,True) [9,2] 0x0 0x0 0x0 0x0 [ShortSword] AttackInRangeAI
+UNIT Selese MageArmor 0x0 Level(10,Enemy,True) [13,3] 0x0 0x0 0x0 0x0 [Burn] AttackInRangeAI
+UNIT Selese Mage 0x0 Level(10,Enemy,True) [6,3] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Selese AxeFighter 0x0 Level(10,Enemy,True) [11,4] 0x0 0x0 0x0 0x0 [Hurlbat] AttackInRangeAI
+
+UNIT Selese Ballistician 0x0 Level(10,Enemy,True) [11,10] 0x0 0x0 0x0 0x0 [SlimArch] NeverMoveAI
+UNIT Selese BowArmor 0x0 Level(10,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
+
+UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [ThunderSword] PursueWithoutHeedAI
+UNIT Selese LanceArmor 0x0 Level(10,Enemy,True) [5,14] 0x0 0x0 0x0 0x0 [Greatlance] PursueWithoutHeedAI
+UNIT Selese LanceSoldier 0x0 Level(10,Enemy,True) [5,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
+UNIT Selese AxeKnight 0x0 Level(10,Enemy,True) [14,15] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+
+
+UNIT
+
+HernandezUnits:
+UNIT Hernandez Warrior 0x0 Level(1,NPC,False) [24,17] 0x0 0x0 0x1 REDA20R16 [KillerAxe,BlueGem] PursueWithoutHeedAI
+UNIT Bandit Thief 0x0 Level(10,NPC,True) [24,17] 0x0 0x0 0x1 REDA21R17 [KillingEdge,RedGem] PursueWithoutHeedAI
+UNIT Bandit Brigand 0x0 Level(10,NPC,True) [24,17] 0x0 0x0 0x1 REDA19R17 [KillerAxe] PursueWithoutHeedAI
+UNIT Bandit Brigand 0x0 Level(10,NPC,True) [24,17] 0x0 0x0 0x1 REDA21R16 [KillerAxe] PursueWithoutHeedAI
+
+UNIT Cythes LanceSoldier 0x0 Level(10,Enemy,True) [24,17] 0x0 0x0 0x1 REDA23R17 [ShortLance] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier 0x0 Level(10,Enemy,True) [24,17] 0x0 0x0 0x1 REDA24R16 [LongLance] PursueWithoutHeedAI
+UNIT
+
+JohannaUnits:
+UNIT Johanna Dracoknight 0x0 Level(3,Enemy,False) [23,0] 0x0 0x0 0x1 REDA21R5 [SilverAxe] DoNothingAI
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [19,0] 0x0 0x0 0x1 REDA20R4 [HandAxe] DoNothingAI
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [24,0] 0x0 0x0 0x1 REDA22R4 [HandAxe] DoNothingAI
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [18,0] 0x0 0x0 0x1 REDA19R5 [IronAxe] DoNothingAI
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [24,0] 0x0 0x0 0x1 REDA23R5 [IronAxe] DoNothingAI
+UNIT
+
+EliasUnits:
+UNIT Elias Dracoknight 0x0 Level(17,Enemy,False) [0,0] 0x0 0x0 0x1 REDA0R0 [Argilabrys,BraveAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,2] 0x0 0x0 0x1 REDA0R2 [SilverAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,1] 0x0 0x0 0x1 REDA1R1 [MasterAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [1,0] 0x0 0x0 0x1 REDA2R0 [SilverAxe] PursueWithoutHeedAI
+UNIT
+
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	MountAll
+	LOAD1 0x1 EnemyUnits
+	LOAD1 0x1 EnemyUnits2
+	ENUN
+	SetUnitItemDurability(Valse,2,LuzenScroll)
+	SetUnitItemDurability(Hornet,2,RaioScroll)
+
+	AddLeadership(Radnitz,3)
+
+	MUSC Sortie_Formation 
+
+	SetBackground(0x1b)
+	Text(Ch10Start1)
+	FADI 15
+
+	MUSC FF4RedWingsID
+
+	SetBackground(0x15)
+	Text(Ch10Start2)
+	FADI 15
+	SetBackground(0x1b)
+	Text(Ch10Start3)
+	CheckIfFatigued(Iskra)
+	BEQ 420 s0 sC
+		SetFatigueOneLess(Iskra)
+	LABEL 420
+	GotoPrepScreen
+	ENDA
+
+
+EndingScene:
+	MUSC Sortie_Formation 
+	SetBackground(0x15)
+	Text(Ch10End1)
+	GiveItem(ArgymosCrest,Cleo)
+
+	MUSC TiesOfFriendship
+	SetBackground(0x13)
+	Text(Ch10End2)
+
+	SetBackground(0x0A)
+	Text(Ch10End3)
+
+
+	CHECK_EVENTID 0x19
+	BEQ 4 0 0xC
+
+	SetBackground(0x10)
+	Text(Ch10EndStormbrand)
+	GiveItem(Stormbrand,Iskra)
+
+	LABEL 4
+
+	SendAll(Radnitz)
+	REMOVEUNIT Radnitz
+	MNC2 Chapter11
+	NoFade
+	ENDA

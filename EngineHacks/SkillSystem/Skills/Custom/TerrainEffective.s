@@ -35,7 +35,7 @@ End:
 ldr        r6,SkillTester
 mov        r0,r5
 ldr        r1,TerrainEffectiveID
-mov        r14,r6
+mov        lr,r6
 .short    0xF800
 cmp        r0,#0
 beq        End2

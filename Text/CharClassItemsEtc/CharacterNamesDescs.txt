@@ -10,7 +10,7 @@ Cleo[X]
 
 ## CleoDesc
 A skilled tactician for the Liberators.[N]
-Formerly a Vyren before she defected.[X]
+Formerly a Cythean before she defected.[X]
 
 ## MiraName
 Mira[X]
@@ -30,15 +30,15 @@ Liberators. Seeks to prove her worth.[X]
 Emil[X]
 
 ## EmilDesc
-A Vyren horseman who deserted his army,[N]
-disillusioned by their actions in Decia.[X]
+A Cythean horseman who deserted the[N]
+army, now on the side of Decia.[X]
 
 ## SvetomirName
 Svetomir[X]
 
 ## SvetomirDesc
 The priest of a small abbey in Vetheim.[N]
-Ardently hates the Vyren occupation.[X]
+Ardently hates the Cythean occupation.[X]
 
 ## AlenaName
 Alena[X]
@@ -52,7 +52,7 @@ Raschwitz[X]
 
 ## RaschwitzDesc
 A cowardly guard working in Duke[N]
-Cibor's dungeons. Tends to boast.[X]
+Cidor's dungeons. Tends to boast.[X]
 
 ## BoroName
 Boro[X]
@@ -65,15 +65,21 @@ Liberators. Values gold above all.[X]
 Selese[X]
 
 ## SeleseFactionDesc
-Those who serve Duke Cibor. Turned[N]
+Those who serve Duke Cidor. Turned[N]
 against Decia and sided with Cytheans.[X]
+
+## BanditFactionName
+Bandit[X]
+
+## BanditFactionDesc
+Bandits terrorizing the lands.[X]
 
 ## SennyName
 Senny[X]
 
 ## SennyDesc
 A young woman in the dungeon after[N]
-protesting the Vyren Empire. Regretful.[X]
+protesting the Cythean Empire. Regretful.[X]
 
 ## HelmanName
 Helman[X]
@@ -93,8 +99,8 @@ Surly and secretive.[X]
 Tyr[X]
 
 ## TyrDesc
-A pompous, recently promoted[N]
-member of Cibor's guards.[X]
+A pompous recently promoted[N]
+member of Cidor's guards.[X]
 
 ## DelilahName
 Delilah[X]
@@ -152,28 +158,29 @@ troubled yet stalwart.[X]
 Hilmar[X]
 
 ## HilDesc
-A knight of Cibor's guards.[N]
+A knight of Cidor's guards.[N]
 Loyal to the end.[X]
 
 ## LeinaName
 Leina[X]
 
 ## LeinaDesc
-A young lady with a troubled past.[X]
+A young lady from Chouwouj.[N]
+Looking for the divine bow.[X]
 
 ## CromarName
 Cromar[X]
 
 ## CromarDesc
-A mysterious swordsman,[N]
+A mysterious swordsman[N]
 dead set on vengeance.[X]
 
-## VladithName
-Vladith[X]
+## VeidName
+Veid[X]
 
-## VladithDesc
-He sells skills,[N]
-EVIL skills.[X]
+## VeidDesc
+A mysterious dark merchants,[N]
+he sells dark enchants.[X]
 
 ## BarodName
 Barod[X]
@@ -193,7 +200,7 @@ Rumored to be royalty.[X]
 McCallum[X]
 
 ## McCallumDesc
-A pirate, cruel in his younger days[N]
+A pirate cruel in his younger days[N]
 now seeking atonement.[X]
 
 ## GladiatorName
@@ -202,7 +209,7 @@ Gladiator[X]
 ## GladiatorDesc
 A ruthless pitfighter.[X]
 
-## Ch5CivilianName
+## ArenaSpectatorName
 Spectator[X]
 
 ## CivilianName
@@ -210,3 +217,348 @@ Civilian[X]
 
 ## CivilianDesc
 A regular civilian.[X]
+
+## Ch6PirateName
+Pirate[X]
+
+## Ch6PirateDesc
+Ruthless pirate under the[N]
+Banner of Draken.[X]
+
+## DrakenName
+Draken[X]
+
+## DrakenDesc
+The former first mate of[N]
+McCallum, now the captain.[X]
+
+## FishermanName
+Fisherman[X]
+
+## FishermanDesc
+A fisherman.[X]
+
+## LoanSharkName
+Loanshark[X]
+
+## LoanSharkDesc
+A loanshark.[X]
+
+## GamblerName
+Gambler[X]
+
+## GamblerDesc
+A Gambler.[X]
+
+## LongxiaName
+Longxia[X]
+
+## LongxiaDesc
+A sailor with an eye[N]
+for gold, seafood, and ships.[N]
+Has something of a dark past.[X]
+
+## FangaiName
+Fangai[X]
+
+## FangaiDesc
+An eccentric dark mage[N]
+who enjoys cooking.[N]
+Secretly yearns for love.[X]
+
+## RigganName
+Riggan[X]
+
+## RigganDesc
+A magic prodigy who has[N]
+ascended Selessian military[N]
+ranks. Brooding, yet egotistical.[X]
+
+## GimmName
+Mish[X]
+
+## GimmDesc
+Wants to be helpful, but really[N]
+needs on work on being reliable.[X]
+
+## TobieName
+Tobie[X]
+
+## TobieDesc
+Mish's sister, a bookish recruit[N]
+to the Decian Liberators.[X]
+
+## AwaName
+Awa[X]
+
+## AwaDesc
+A Decian knight. Her bitterness is[N]
+rivaled only by her self-assuredness.[X]
+
+## KwameName
+Kwame[X]
+
+## KwameDesc
+A wandering strategist and scholar.[N]
+Wants to stop Cythean conquest.[X]
+
+## TrajanName
+Trajan[X]
+
+## TrajanDesc
+Commander of the Liberators' defense[N]
+unit. Former knight of Freyse.[X]
+
+## CadenzaName
+Cadenza[X]
+
+## CadenzaDesc
+A wandering bard. His sorrowful[N]
+melodies suggest a melancholic past...[X]
+
+## FaolanName
+Faolan[X]
+
+## FaolanDesc
+Ex-militia from a town in the[N]
+Freyse countryside. Patriotic.[X]
+
+## MilitiaFactionName
+Militia[X]
+
+## MilitiaFactionDesc
+The volunteer defenders of[N]
+a small port town.[X]
+
+## FreyseFactionName
+Freyse[X]
+
+## FreyseFactionDesc
+The remnants of the crushed[N]
+House Freyse.[X]
+
+## YorName
+Yor[X]
+
+## YorDesc
+A drunkard and a menace, but was[N]
+a vicious soldier in his prime.[X]
+
+## RadnitzName
+Radnitz[X]
+
+## RadnitzDesc
+The heir of House Freyse, leading[N]
+a rebellion against Cythean rule.[X]
+
+## WellworthName
+Wellworth[X]
+
+## WellworthDesc
+Formerly a mercenary, now a respected[N]
+leader of this small port town.[X]
+
+## BuldakName
+Buldak[X]
+
+## BuldakDesc
+A young tracker who joined the rebels[N]
+in hope of future glory. [X]
+
+## MifanName
+Mifan[X]
+
+## MifanDesc
+A young swordswoman on her way to[N]
+become a legendary swordsmaster.[X]
+
+## EponyName
+Epony[X]
+
+## EponyDesc
+The tactician to Lord Radnitz and the[N]
+Freyse resistance, runs the show.[X]
+
+## IberisName
+Iberis[X]
+
+## IberisDesc
+A prideful noble of House Freyse, her[N]
+exile has not reduced her haughtiness.[X]
+
+## TheGiantName
+The Giant[X]
+
+## TheGiantDesc
+An incredibly large lad with[N]
+a big dream and a big heart.[X]
+
+## NoraName
+Nora[X]
+
+## NoraDesc
+A retainer to Lord Radnitz[N]
+of Freyse. Extremely loyal.[X]
+
+## HansName
+Hans[X]
+
+## HansDesc
+A knight of Freyse. His past[N]
+has left him carefree and hedonistic.[X]
+
+## HegeName
+Hege[X]
+
+## HegeDesc
+A Cythean commander guarding[N]
+Zykhra Gate.[X]
+
+## FrancisName
+Francis[X]
+
+## FrancisDesc
+An apathetic patrolman[N]
+from Cythes.[X]
+
+## JennyName
+Jenny[X]
+
+## JennyDesc
+Senny's Sister. Suspicious of[N]
+the Cythean Empire.[X]
+
+## MeldanName
+Meldan[X]
+
+## MeldanDesc
+Friend of Helman. Noble-hearted,[N]
+but a bit of a doormat.[X]
+
+## ValseName
+Valse[X]
+
+## ValseDesc
+An easy-going Freysian[N]
+who hates injustice.[X]
+
+## HornetName
+Hornet[X]
+
+## HornetDesc
+A talented sharpshooter and[N]
+a woman of few words.[X]
+
+## WrathgarName
+Wrathgar[X]
+
+## WrathgarDesc
+A cold-hearted Cythean warrior.[N]
+Incites hatred in their troops.[X]
+
+## CythesFactionName
+Cythes[X]
+
+## CythesFactionDesc
+Soldiers of the Cythean Empire that[N]
+fight resolutely for their emperor.[X]
+
+## CidorName
+Cidor[X]
+
+## CidorDesc
+Duke of Selese. Turned against Decia[N]
+and supports the Cythean occupation.[X]
+
+## JohannaName
+Johanna[X]
+
+## JohannaDesc
+A scornful Cythean commander and[N]
+subordinate of General Elias.[X]
+
+## EliasName
+Elias[X]
+
+## EliasDesc
+A Cythean general and member of the[N]
+Order of Iris. Also known as the[N]
+Vermillion Knight. Cleo's older brother.[X]
+
+## MiloName
+Milo[X]
+
+## MiloDesc
+PlaceholderText[X]
+
+## IchwepName
+Ichwep[X]
+
+## IchwepDesc
+PlaceHolderText[X]
+
+## AuroraName
+Aurora[X]
+
+## AuroraDesc
+PlaceHolderText [X]
+
+## EithaName
+Eitha[X]
+
+## EithaDesc
+"Hero" of the reclaimation wars;[N] 
+wielder of the Daybreak.[N]
+Eternally calling out to her lover.[X]
+
+## MinkName
+Mink[X]
+
+## MinkDesc
+A scholar pushing the boundries[N]
+of magic. Smarmy, yet creative.[X]
+
+## TiberiusName
+Tiberius[X]
+
+## TiberiusDesc
+Cidor's nephew and next in line[N]
+for the Selesian throne.[N] 
+Feels entrapped by circumstance.[X]
+
+## EllereyName
+Ellerey[X]
+
+## EllereyDesc
+A former Selesian knight.[N]
+Xe seeks a mastery of metalworking.[N]
+(Ellerey is NB and uses xe/xem pronouns)[X]
+
+## MantouName
+Mantou[X]
+
+## MantouDesc
+A humble rancher. Absolutely not a[N]
+bandit, and absolutely not the same[N]
+person from all those wanted posters.[X]
+
+## TippanyName
+Tippany[X]
+
+## TippanyDesc
+A former cultist seeking new meaning[N]
+for their life. Wants to be needed.[X]
+
+## PelecayeName
+Pelecaye[X]
+
+## PelecayeDesc
+A former knight of Decia.[N]
+He has a fondness for hot beverages.[X]
+
+## CarlName
+Carl[X]
+
+## CarlDesc
+Self-proclaimed master of the sword and[N]
+wielder of the "demon blade" Muramasa.[X]

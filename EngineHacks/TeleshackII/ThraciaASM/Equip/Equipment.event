@@ -1,0 +1,19 @@
+
+ALIGN 4
+EquipmentList:
+BYTE TemperedRing
+BYTE GrowthScroll
+BYTE SisterRing
+BYTE 0x00 //terminator
+
+// Defense equipment loses durability on each hit taken
+ALIGN 4
+DefenseEquipmentList:
+BYTE 0x00 // terminator
+
+// Offense equipment loses durability on each attack made
+ALIGN 4
+OffenseEquipmentList:
+BYTE 0x00 // terminator
+
+// Equipment in neither list will never decrement durability

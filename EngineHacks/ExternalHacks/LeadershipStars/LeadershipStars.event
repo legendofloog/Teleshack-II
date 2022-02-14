@@ -30,6 +30,8 @@ BYTE 1 // change to 0 if you don't want this behaviour
 
 LeadershipTable:
 // ALLIES
+BYTE Loewe 1
+BYTE Cleo 1
 BYTE Mira 1
 BYTE Dragana 3
 // BOSSES
@@ -37,6 +39,15 @@ BYTE Raschwitz_Ch1 1
 BYTE Tyr_Ch2 1
 BYTE Boro_Ch1 3
 BYTE Emory_Ch3 2
+BYTE Wellworth 1
+BYTE Hege 2
+BYTE Cidor 3
+BYTE Johanna 2
+BYTE Elias 5
+// NPCs
+BYTE Trajan 2
+BYTE Kwame 3
+BYTE Epony 3
 BYTE 0x0 0x0 //delimiter
 
 PUSH

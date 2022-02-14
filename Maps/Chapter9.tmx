@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="22" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="FlasubanVillage" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="FlasubanVillage.png" width="512" height="512"/>
+  <tile id="0">
+   <properties>
+    <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+    <property name="ChapterID" value="Chapter7"/>
+    <property name="Main" value=""/>
+    <property name="MapChangesID" value="Chapter7MapChanges"/>
+    <property name="MapID" value="Chapter7Map"/>
+    <property name="ObjectType" value="FlasubanVillageObjectID"/>
+    <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+    <property name="TileConfig" value="FlasubanVillageMapchipConfig2ID"/>
+   </properties>
+  </tile>
+  <tile id="848">
+   <properties>
+    <property name="Height" value="2"/>
+    <property name="ID" value="4"/>
+    <property name="Width" value="1"/>
+    <property name="X" value="10"/>
+    <property name="Y" value="13"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Main" width="22" height="20">
+  <properties>
+   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+   <property name="ChapterID" value="Chapter9"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Chapter9MapChanges"/>
+   <property name="MapID" value="Chapter9Map"/>
+   <property name="ObjectType" value="FlasubanVillageObjectID"/>
+   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfig2ID"/>
+  </properties>
+  <data encoding="csv">
+449,502,29,30,31,470,545,97,534,548,321,231,200,548,503,99,452,506,684,277,279,684,
+98,506,61,62,63,163,503,438,467,435,437,169,229,196,449,533,534,534,779,332,333,779,
+533,467,67,227,196,193,435,436,534,164,163,503,506,165,196,503,438,469,274,231,459,781,
+435,436,436,534,304,506,164,226,548,321,578,11,451,100,296,893,35,420,306,237,206,813,
+450,322,419,133,206,545,547,129,194,385,387,43,584,420,226,67,321,129,226,199,272,522,
+514,386,195,230,229,134,420,289,77,194,548,193,290,562,420,420,274,193,425,892,232,321,
+162,130,295,225,162,173,258,47,74,46,321,258,129,225,130,130,306,133,230,229,200,385,
+893,258,35,36,385,450,323,77,385,257,161,893,137,260,194,521,426,232,321,323,205,202,
+545,547,321,419,449,386,610,106,8,470,474,226,199,172,321,451,235,170,513,387,173,417,
+761,420,289,129,226,161,11,79,40,471,404,201,228,100,481,584,323,226,893,194,130,193,
+853,687,688,689,825,763,43,105,385,533,437,469,141,321,385,386,387,7,73,46,289,321,
+726,751,752,753,827,853,757,78,194,68,321,195,303,305,198,138,161,106,71,321,322,583,
+547,290,263,226,162,726,853,761,35,139,271,232,577,451,235,170,324,39,103,609,386,386,
+162,201,892,140,257,420,732,793,420,171,892,172,353,355,129,321,356,225,106,8,225,130,
+129,420,205,172,100,77,893,728,759,161,173,577,583,355,257,193,388,328,29,30,31,7,
+527,133,232,193,420,109,46,194,653,100,264,385,514,387,7,46,562,304,61,62,63,107,
+271,272,200,130,47,40,420,100,796,763,304,194,274,47,105,201,271,272,458,272,427,225,
+230,229,272,198,204,893,203,260,690,692,205,202,306,11,110,530,165,490,303,458,491,530,
+527,290,235,229,303,271,230,170,754,756,173,100,420,43,40,562,161,526,495,173,893,530,
+548,225,129,321,323,173,100,130,732,853,826,761,449,450,323,321,420,129,526,560,560,527
+</data>
+ </layer>
+</map>

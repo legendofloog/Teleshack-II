@@ -2,6 +2,9 @@ ALIGN 4
 #include "Macros.event"
 ALIGN 4
 #include "Escape Points.event"
+ALIGN 4
+#include "GiveAllEvents.event"
+
 #include "ChapterEvents/ChapterEventsInstaller.event"
 
 
@@ -18,3 +21,19 @@ ALIGN 4
 Load2AlwaysTable:
 BYTE 00 //Add units here
 BYTE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 // separator
+
+
+/*
+PUSH
+ORG 0x5A8A00
+POIN DontAttackUnitAI
+POP
+
+ALIGN 4
+DontAttackUnitAI:
+SHORT 0x001E //Valse
+SHORT 0x001F //Hornet
+SHORT 0x0070 //Helman
+SHORT 0x006F //Senny
+SHORT 0x0000
+*/

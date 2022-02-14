@@ -8,14 +8,21 @@ pMovModifiers: // Movement
 	#ifdef STAIRS_ASM
 	POIN StairsMoveDebuff-1
 	#endif
-	POIN prNullifyIfFreeze
+	POIN prZoruniumMight prNullifyIfFreeze
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
+	POIN prPowerstaffCheck
 WORD 0
 
 prAddUnitBaseMov: // byte 0x12 in ROM class data is base class movement
 	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12))) 
+
+
+prPowerstaffCheck:
+	rIfUnitHasState(0x400)
+		rIfUnitHasSkill(AlacrityID)
+			rConstant(0)
 
 prAddUnitMovBonus:
 	rAdd(rSByteAt(UNIT_MOV_BONUS))
@@ -23,6 +30,11 @@ prAddUnitMovBonus:
 prSkillCelerity:
 	rIfUnitHasSkill(CelerityID)
 		rAddConst(2)
+
+
+prZoruniumMight:
+	rIfUnitHasSkill(ZoruniumMightID)
+		rAddConst(1)
 		
 prSkillPoise:
 	rIfUnitHasSkill(PoiseID)

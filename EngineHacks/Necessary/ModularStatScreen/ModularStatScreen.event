@@ -58,7 +58,6 @@
       jumpToHack(Rescue_Arrows)
 
     // Display growths hack
-
     #ifdef PRESS_SELECT_TO_VIEW_GROWTHS
       ORG $8888C
         BYTE 0x82
@@ -222,7 +221,7 @@
 
   ALIGN 4
   Button_Branch:
-    #incbin "asm/ButtonBranch.dmp"
+    #include "asm/ButtonBranch.lyn.event"
 
   ALIGN 4
   Load_Page:

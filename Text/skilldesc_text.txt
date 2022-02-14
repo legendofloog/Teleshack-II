@@ -131,7 +131,7 @@ Certain Blow: +40 Hit[N]
 when initiating battle.[X]
 
 ## SD_ArmoredBlow
-Armored Blow: +10 Def[N]
+Armored Blow: +4 Def[N]
 when initiating battle.[X]
 
 ## SD_Vantage
@@ -279,31 +279,31 @@ Colossus: Triples Strength.[N]
 (Skill % activation)[X]
 
 ## SD_RallyStr
-Rally Strength: +4 Str[N]
+Rally Strength: +2 Str[N]
 to allies within 2 tiles.[X]
 
 ## SD_RallyMag
-Rally Magic: +4 Mag to[N]
+Rally Magic: +2 Mag to[N]
 allies within 2 tiles.[X]
 
 ## SD_RallySkl
-Rally Skill: +4 Skill[N]
+Rally Skill: +2 Skill[N]
 to allies within 2 tiles.[X]
 
 ## SD_RallySpd
-Rally Speed: +4 Spd to[N]
+Rally Speed: +2 Spd to[N]
 allies within 2 tiles.[X]
 
 ## SD_RallyLuk
-Rally Luck: +4 Luck to[N]
+Rally Luck: +2 Luck to[N]
 allies within 2 tiles.[X]
 
 ## SD_RallyDef
-Rally Defense: +4 Def to[N]
+Rally Defense: +2 Def to[N]
 allies within 2 tiles.[X]
 
 ## SD_RallyRes
-Rally Resistance: +4 Res[N]
+Rally Resistance: +2 Res[N]
 to allies within 2 tiles.[X]
 
 ## SD_RallyMov
@@ -311,7 +311,7 @@ Rally Movement: +1 Move[N]
 to allies within 2 tiles.[X]
 
 ## SD_RallySpectrum
-Rally Spectrum: +2 all stats[N]
+Rally Spectrum: +1 all stats[N]
 to allies within 2 tiles.[X]
 
 ## SD_BowRangeUp
