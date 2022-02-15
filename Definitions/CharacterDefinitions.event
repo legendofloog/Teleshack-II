@@ -90,7 +90,10 @@
 //Chapter 2 Stuff (uses chapter 1 generics)
 #define Dragana 0x71
 #define Hernandez 0x72
-//Chapter 3 uses chapter 1 generics and adds no NPCs
+//Chapter 3 Stuff (uses chapter 1 generics)
+#define SeleseReinf 0x9A
+#define SeleseElite 0x9B
+//Veid Stuff
 #define Veid 0x74
 // Chapter 5x
 #define Kwame 0x65
