@@ -81,8 +81,8 @@ MinkJoin:
   UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind] NoAI
   UNIT
 
-EnemyUnits1:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [0,27] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+IndoorEnemy:
+  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
@@ -102,25 +102,12 @@ EnemyUnits1:
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [21,19] 0x0 0x0 0x0 0x1 [Greatlance] StallOneTurnAI
   UNIT
 
-EnemyUnits2:
-  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [5,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,12] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,14] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [2,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [3,16] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [8,17] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,19] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,19] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [20,20] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,22] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [28,22] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [34,23] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [18,24] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+EithaSpawn:
+  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [0,27] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+  UNIT
+
+OutdoorEnemy:
+  
   UNIT Selese Warrior Cidor Level(1,Enemy,True) [23,26] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] AttackInRangeAI
   UNIT
 
@@ -136,8 +123,9 @@ PrisonGreens:
 BeginningScene:
   MountAll
   LOAD 1 MinkJoin
-  LOAD 1 EnemyUnits1
-  LOAD 1 EnemyUnits2
+  LOAD 1 OutdoorEnemy
+  LOAD 1 IndoorEnemy
+  LOAD 1 EithaSpawn
   LOAD 1 PrisonGreens
   GotoPrepScreen
   ENDA
