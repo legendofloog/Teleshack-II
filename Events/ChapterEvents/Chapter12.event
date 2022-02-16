@@ -84,37 +84,55 @@ MinkJoin:
 
 IndoorEnemy:
   UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
-  
+//turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [30,9] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
-  
+//turn 2
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [26,9] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
   UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [26,10] 0x0 0x0 0x0 0x1 [SteelLance] BossAI
   UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [26,11] 0x0 0x0 0x0 0x1 [SteelAxe] BossAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [34,7] 0x0 0x0 0x0 0x1 [IronSword] PursueWithoutHeedAI 
-  
-  
+//turn 3
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [16,13] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,8] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI 
+//turn 4
+
+/turn 5
   
   UNIT
 
 OutdoorEnemy:
+//turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [26,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese RookKnight Cidor Level(12,Enemy,True) [29,3] 0x0 0x0 0x0 0x1 [IronSword,Javelin] AttackInRangeAI
   UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  
+//turn 2
   UNIT Selese Thief Cidor Level(12,Enemy,True) [19,6] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
-  
+//turn 3
   UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [IronLance] StallOneTurnAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [21,17] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [21,19] 0x0 0x0 0x0 0x1 [Greatlance] StallOneTurnAI
+//turn 4
+  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [19,26] 0x0 0x0 0x0 0x1 [Hurlbat,IronAxe] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [31,20] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,20] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+//turn 5
   UNIT Selese Warrior Cidor Level(1,Enemy,True) [23,26] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] AttackInRangeAI
-  
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [24,27] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+//turn 6
+
+//turn 7
+
+//turn 8
+
   UNIT
-  
+
   
 EithaSpawn:
   UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [0,27] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
