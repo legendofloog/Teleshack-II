@@ -100,8 +100,16 @@ IndoorEnemy:
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,8] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI 
 //turn 4
 
-/turn 5
-  
+//turn 5
+ 
+//turn 6 
+ 
+//turn 7
+ 
+//turn 8
+
+//turn 9
+
   UNIT
 
 OutdoorEnemy:
