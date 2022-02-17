@@ -91,8 +91,8 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 Stuff (uses chapter 1 generics)
-#define SeleseReinf 0x9A
-#define SeleseElite 0x9B
+#define Chapter3Reinforcements 0x9A
+#define Chapter3Elite 0x9B
 //Veid Stuff
 #define Veid 0x74
 // Chapter 5x
