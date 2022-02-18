@@ -86,7 +86,7 @@ IndoorEnemy:
   UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [30,9] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
 //turn 2
@@ -99,7 +99,7 @@ IndoorEnemy:
   UNIT Selese Mage Cidor Level(12,Enemy,True) [16,13] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,8] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI 
 //turn 4
-
+  
 //turn 5
  
 //turn 6 
@@ -134,7 +134,10 @@ OutdoorEnemy:
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [24,27] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
 //turn 6
-
+  UNIT Selese BowKnight Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selsee PegasusRider Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
 //turn 7
 
 //turn 8
