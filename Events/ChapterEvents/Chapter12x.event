@@ -17,12 +17,12 @@ END_MAIN
 
 // 7,8,9,10,11 reserved for recruitment
 CharacterBasedEvents:
-CharacterEventBothWays(12, EllereyRecruit, Cleo, Ellerey)
-CharacterEventBothWays(13, MantouRecruit, Cleo, Mantou)
-CharacterEventBothWays(14, TippanyRecruit, Cleo, Tippany)
-CharacterEventBothWays(15, PelecayeRecruit, Cleo, Pelecaye)
-CharacterEventBothWays(16, CarlRecruit, Cleo, Carl)
-CharacterEventBothWays(0, TrajanTalk, Cleo, Trajan)
+CharacterEventBothWays(12, EllereyRecruit, Loewe, Ellerey)
+CharacterEventBothWays(13, MantouRecruit, Loewe, Mantou)
+CharacterEventBothWays(14, TippanyRecruit, Loewe, Tippany)
+CharacterEventBothWays(15, PelecayeRecruit, Loewe, Pelecaye)
+CharacterEventBothWays(16, CarlRecruit, Loewe, Carl)
+CharacterEventBothWays(0, TrajanTalk, Loewe, Trajan)
 END_MAIN
 
 EllereyRecruit:
@@ -195,13 +195,13 @@ LocationBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
-AFEV 0 RefreshCleo 0
+AFEV 0 RefreshLoewe 0
 END_MAIN
 
 
-RefreshCleo:
+RefreshLoewe:
 SVAL s1 0x42
-UNSET_CONDITION Cleo
+UNSET_CONDITION Loewe
 NoFade
 ENDA
 
@@ -227,20 +227,20 @@ ENDTRAP
 ALIGN 4
 
 Units1:
-UNIT Cleo Scaleshot_Dismounted Cleo Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
-CleoInterludeGroup:
-UNIT Cleo Scaleshot_Dismounted Cleo Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+LoeweInterludeGroup:
+UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
 GreenUnits:
-UNIT Ellerey LanceArmor Cleo Level(13,NPC,False) [4,2] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
-UNIT Mantou Brigand_F Cleo Level(10,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [IronAxe,SilverAxe,Vulnerary]     NoAI
-UNIT Tippany DarkMage_F Cleo Level(6,NPC,False) [12,5] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
-UNIT Trajan Hero Cleo Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
-UNIT Pelecaye General Cleo Level(1,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
-UNIT Carl SwordFighter Cleo Level(9,NPC,False) [7,7] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
+UNIT Ellerey LanceArmor Loewe Level(13,NPC,False) [4,2] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
+UNIT Mantou Brigand_F Loewe Level(10,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [IronAxe,SilverAxe,Vulnerary]     NoAI
+UNIT Tippany DarkMage_F Loewe Level(6,NPC,False) [12,5] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
+UNIT Trajan Hero Loewe Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Pelecaye General Loewe Level(1,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
+UNIT Carl SwordFighter Loewe Level(9,NPC,False) [7,7] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
 UNIT
 
 RedUnits:
@@ -250,10 +250,11 @@ UNIT
 
 BeginningScene:
 COUNTER_SET 0 0
+RemoveAll
 DismountAll
 LOAD1 1 GreenUnits
 ENUN
-LOAD1 2 CleoInterludeGroup
+LOAD1 2 LoeweInterludeGroup
 ENUN
 //GotoPrepScreen
 NoFade
