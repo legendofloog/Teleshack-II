@@ -14,13 +14,16 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0, Turn1Event, 1)
-TurnEventNPC(0, HernandezEvent, 2)
-TurnEventPlayer(0, JohannaEvent, 3)
+TurnEventNPC(0, HernandezEvent, 1)
+//TurnEventPlayer(0, JohannaEvent, 3)
+TurnEventPlayer(0, JohannaEvent, 5)
 TurnEventPlayer(0, EliasEvent, 10)
+TurnEventPlayer(0, ReinforcementEvent, 7)
 END_MAIN
 
 Turn1Event:
 CUSA Radnitz
+//CUSA Carl
 NoFade
 ENDA
 
@@ -42,13 +45,19 @@ ENDA
 
 JohannaEvent:
 SpawnReinforcements(JohannaUnits)
-Text(Ch10JohannaSpawn)
+Text(Ch10JohannaSpawn_v2)
+SetUnitItemDurability(Johanna,1,RaioScroll)
 NoFade
 ENDA
 
 EliasEvent:
 SpawnReinforcements(EliasUnits)
 Text(Ch10EliasSpawm)
+NoFade
+ENDA
+
+ReinforcementEvent:
+SpawnReinforcements(ReinforcementUnits)
 NoFade
 ENDA
 
@@ -76,8 +85,8 @@ NoFade
 ENDA
 
 MiscBasedEvents:
-AREA 0xA CrossingBridgeEvent [18,0] [24,7]
-AREA 0xA CrossingBridgeEvent [16,8] [24,17]
+//AREA 0xA CrossingBridgeEvent [18,0] [24,7]
+//AREA 0xA CrossingBridgeEvent [16,8] [24,17]
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -117,7 +126,8 @@ END_MAIN
 
 
 VillageEventNorth:
-VillageEventItem(Ch10PlaceholderText, Village, KnightProof)
+//VillageEventItem(Ch10PlaceholderText, Village, KnightProof)
+VillageEventItem(Ch10PlaceholderText, Village, KillerLance)
 
 VillageEventSouth:
 VillageEventItem(Ch10PlaceholderText, Village, Sigil)
@@ -161,17 +171,21 @@ UNIT
 
 EnemyUnits:
 // Ally
-UNIT Radnitz DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,KnightProof,Vulnerary] NoAI
+//UNIT Radnitz DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,KnightProof,Vulnerary] NoAI
+UNIT Radnitz DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary] NoAI
+//UNIT Carl SwordFighter Cleo Level(9,NPC,False) [3,10] 0x0 0x0 0x0 0x1 [Muramasa] NoAI
 
 UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,GrowthScroll,Vulnerary] NeverMoveAI
-UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,GrowthScroll,Vulnerary] DoNotAttack07AI
+//UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,GrowthScroll,Vulnerary] DoNotAttack07AI
+UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI
 
 
 // Unique
 UNIT Cidor Baron 0x0 Level(5,Enemy,False) [21,3] 0x0 0x0 0x0 0x0 [Jormungand] NeverMoveAI // TODO: give him cooler inventory when we have more reasonable options
 
 
-UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [20,7] 0x0 0x0 0x0 0x0 [Miaodao] DoNothingAI
+//UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [20,7] 0x0 0x0 0x0 0x0 [Miaodao] DoNothingAI
+UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [20,7] 0x0 0x0 0x0 0x0 [IceSword,KillingEdge] NeverMoveAI
 
 
 UNIT Selese Thief 0x0 Level(10,Enemy,True) [9,9] 0x0 0x0 0x0 0x0 [ShortSword,Rescue] LootingThiefAI
@@ -190,7 +204,8 @@ UNIT Selese Mage 0x0 Level(10,Enemy,True) [23,13] 0x0 0x0 0x0 0x0 [Thunder] Atta
 
 UNIT Selese Myrmidon 0x0 Level(10,Enemy,True) [22,11] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
 UNIT Selese Bard 0x0 Level(10,Enemy,True) [23,6] 0x0 0x0 0x0 0x0 [SpellMirror] AttackInRangeAI
-UNIT Selese Archer 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+//UNIT Selese Archer 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+UNIT Selese Archer 0x0 Level(10,Enemy,True) [24,2] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 
 UNIT Selese SwordFighter 0x0 Level(10,Enemy,True) [22,16] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
 UNIT Selese AxeSoldier 0x0 Level(10,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [LunarAxe] PursueWithoutHeedAI
@@ -222,10 +237,12 @@ UNIT Selese AxeFighter 0x0 Level(10,Enemy,True) [11,4] 0x0 0x0 0x0 0x0 [Hurlbat]
 UNIT Selese Ballistician 0x0 Level(10,Enemy,True) [11,10] 0x0 0x0 0x0 0x0 [SlimArch] NeverMoveAI
 UNIT Selese BowArmor 0x0 Level(10,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
 
-UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [ThunderSword] PursueWithoutHeedAI
+//UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [ThunderSword] PursueWithoutHeedAI
+UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [Greatsword] PursueWithoutHeedAI
 UNIT Selese LanceArmor 0x0 Level(10,Enemy,True) [5,14] 0x0 0x0 0x0 0x0 [Greatlance] PursueWithoutHeedAI
 UNIT Selese LanceSoldier 0x0 Level(10,Enemy,True) [5,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT Selese AxeKnight 0x0 Level(10,Enemy,True) [14,15] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Selese Myrmidon 0x0 Level(10,Enemy,True) [14,13] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
 
 
 UNIT
@@ -241,11 +258,34 @@ UNIT Cythes LanceSoldier 0x0 Level(10,Enemy,True) [24,17] 0x0 0x0 0x1 REDA24R16 
 UNIT
 
 JohannaUnits:
+// old personal bases: lvl 3, 8 hp, 5 str, 4 skl, 4 spd 4 def, 1 res, 7 luck, 0 con
+UNIT Johanna Hero_F 0x0 Level(3,Enemy,False) [24,5] 0x0 0x0 0x1 REDA21R5 [SilverAxe,GrowthScroll] PursueWithoutHeedAI
+
+UNIT Cythes Mage 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x1 REDA20R4 [Wind] PursueWithoutHeedAI
+UNIT Cythes Archer 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x1 REDA22R4 [Longbow] PursueWithoutHeedAI
+UNIT Cythes AxeSoldier 0x0 Level(10,Enemy,True) [24,6] 0x0 0x0 0x1 REDA20R6 [SteelAxe] PursueWithoutHeedAI
+UNIT Cythes Myrmidon 0x0 Level(10,Enemy,True) [24,6] 0x0 0x0 0x1 REDA22R6 [ShortSword] PursueWithoutHeedAI
+
+/*
+UNIT Cythes AxeFighter 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x1 REDA20R4 [HandAxe] PursueWithoutHeedAI
+UNIT Cythes Archer 0x0 Level(10,Enemy,True) [24,4] 0x0 0x0 0x1 REDA22R4 [Longbow] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier 0x0 Level(10,Enemy,True) [24,6] 0x0 0x0 0x1 REDA20R6 [LongLance] PursueWithoutHeedAI
+UNIT Cythes Myrmidon 0x0 Level(10,Enemy,True) [24,6] 0x0 0x0 0x1 REDA22R6 [ShortSword] PursueWithoutHeedAI
+*/
+
+/*
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [24,0] 0x0 0x0 0x1 REDA22R4 [IronAxe] DoNothingAI
+UNIT Johanna Dracoknight 0x0 Level(3,Enemy,False) [23,0] 0x0 0x0 0x1 REDA21R5 [SilverAxe] DoNothingAI
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [19,0] 0x0 0x0 0x1 REDA20R4 [HandAxe] DoNothingAI
+UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [24,0] 0x0 0x0 0x1 REDA22R4 [IronAxe] DoNothingAI
+*/
+/*
 UNIT Johanna Dracoknight 0x0 Level(3,Enemy,False) [23,0] 0x0 0x0 0x1 REDA21R5 [SilverAxe] DoNothingAI
 UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [19,0] 0x0 0x0 0x1 REDA20R4 [HandAxe] DoNothingAI
 UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [24,0] 0x0 0x0 0x1 REDA22R4 [HandAxe] DoNothingAI
 UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [18,0] 0x0 0x0 0x1 REDA19R5 [IronAxe] DoNothingAI
 UNIT Cythes DragonRider 0x0 Level(10,Enemy,True) [24,0] 0x0 0x0 0x1 REDA23R5 [IronAxe] DoNothingAI
+*/
 UNIT
 
 EliasUnits:
@@ -253,6 +293,13 @@ UNIT Elias Dracoknight 0x0 Level(17,Enemy,False) [0,0] 0x0 0x0 0x1 REDA0R0 [Argi
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,2] 0x0 0x0 0x1 REDA0R2 [SilverAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,1] 0x0 0x0 0x1 REDA1R1 [MasterAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [1,0] 0x0 0x0 0x1 REDA2R0 [SilverAxe] PursueWithoutHeedAI
+UNIT
+
+ReinforcementUnits:
+UNIT Cythes LanceArmor 0x0 Level(10,Enemy,True) [24,3] 0x0 0x0 0x0 0x0 [Javelin] PursueWithoutHeedAI
+UNIT Cythes SwordArmor 0x0 Level(10,Enemy,True) [24,5] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+UNIT Cythes AxeSoldier 0x0 Level(1,Enemy,True) [24,16] 0x0 0x0 0x0 0x0 [HandAxe] PursueWithoutHeedAI
+UNIT Cythes Freelancer 0x0 Level(1,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT
 
 
@@ -270,7 +317,7 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits2
 	ENUN
 	SetUnitItemDurability(Valse,2,LuzenScroll)
-	SetUnitItemDurability(Hornet,2,RaioScroll)
+	//SetUnitItemDurability(Hornet,2,RaioScroll)
 
 	AddLeadership(Radnitz,3)
 
@@ -298,8 +345,8 @@ BeginningScene:
 EndingScene:
 	MUSC Sortie_Formation 
 	SetBackground(0x15)
-	Text(Ch10End1)
-	GiveItem(ArgymosCrest,Cleo)
+	Text(Ch10End1_v2)
+	//GiveItem(ArgymosCrest,Cleo)
 
 	MUSC TiesOfFriendship
 	SetBackground(0x13)
