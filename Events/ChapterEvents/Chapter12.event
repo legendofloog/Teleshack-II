@@ -145,7 +145,7 @@ OutdoorEnemy:
   UNIT Selese BowKnight Cidor Level(12,Enemy,True) [7,26] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [10,27] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [10,26] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selsee PegasusRider Cidor Level(12,Enemy,True) [9,26] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
+  UNIT Selese PegasusRider Cidor Level(12,Enemy,True) [9,26] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
 //turn 7
   
 //turn 8
