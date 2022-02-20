@@ -99,13 +99,21 @@ IndoorEnemy:
   UNIT Selese Mage Cidor Level(12,Enemy,True) [16,13] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,8] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI 
 //turn 4
-  
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,12] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [10,8] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese Archer Cidor Level(12,Enemy,True) [9,13] 0x0 0x0 0x0 0x1 [IronBow] TwoActionAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
 //turn 5
- 
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,5] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [5,15] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [9,4] 0x0 0x0 0x0 0x1 [IronSword,DoorKey] BossAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [13,17] 0x0 0x0 0x0 0x1 [IronSword,DoorKey,ChestKey] BossAI
 //turn 6 
- 
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [Light] AttackInRangeAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 //turn 7
- 
+
 //turn 8
 
 //turn 9
@@ -134,12 +142,12 @@ OutdoorEnemy:
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [24,27] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
 //turn 6
-  UNIT Selese BowKnight Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
-  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
-  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
-  UNIT Selsee PegasusRider Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
+  UNIT Selese BowKnight Cidor Level(12,Enemy,True) [7,26] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [10,27] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [10,26] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selsee PegasusRider Cidor Level(12,Enemy,True) [9,26] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
 //turn 7
-
+  
 //turn 8
 
   UNIT
