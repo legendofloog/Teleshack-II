@@ -26,7 +26,7 @@ Door(12,9)
 Door(5,11)
 Door(1,13)
 Door(14,17)
-Door(14,26)
+Door(14,25)
 Door(30,25)
 Chest(Mend,18,2)
 Chest(Mend,16,17)
@@ -127,7 +127,7 @@ OutdoorEnemy:
   UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 //turn 2
   UNIT Selese Thief Cidor Level(12,Enemy,True) [19,6] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
-  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
 //turn 3
   UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [IronLance] StallOneTurnAI
