@@ -88,7 +88,6 @@ IndoorEnemy:
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [30,9] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
 //turn 2
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [26,9] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
   UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [26,10] 0x0 0x0 0x0 0x1 [SteelLance] BossAI
@@ -128,7 +127,7 @@ OutdoorEnemy:
 //turn 2
   UNIT Selese Thief Cidor Level(12,Enemy,True) [19,6] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [23,14] 0x0 0x0 0x0 0x1 [SteelLance] PursueWithoutHeedeAI
 //turn 3
   UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [IronLance] StallOneTurnAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [21,17] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
