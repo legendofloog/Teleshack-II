@@ -111,6 +111,7 @@ UNIT
 
 Turn2Thief:
 UNIT Selese Thief Cleo Level(11,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [IronSword,ChestKey,DoorKey] ThiefAI
+UNIT
 
 Turn3Units:
 UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [4,27] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI

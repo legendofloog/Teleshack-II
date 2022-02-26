@@ -7,8 +7,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x05 Svetomir,1,30
 0x06 Alena,1,10
 0x07 Varga,0,2
-0x08 Delilah,3,30
-0x09 Alex,0,10
+0x09 Alex,3,30
+0x0A Axel,0,10
 0x0A Axel,0,10
 0x0B Filone,1,20
 0x0C Zwieback,0,5
@@ -30,7 +30,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x1C Jenny,0,50
 0x1D Meldan,3,35
 0x1E Valse,2,10
-0x1F Hornet,6,25
+0x1F Hornet,6,50
 0x20 Milo,2,25
 0x21 Ichwep,3,30
 0x22 Mink,1,20
@@ -102,7 +102,7 @@ Entombed (Monster Boss),3,5
 0x65 Kwame,0,0
 0x66 Lyuban,0,10
 Brigand,0,0
-0,0,0
+0x68 Emory,0,0
 O'Neill (Prologue),0,0
 Glen (Cutscene),0,5
 Zonta (Ch 5x),0,0
@@ -152,8 +152,8 @@ Wraith (Swords),0,0
 0x97 Francis,0,0
 0,0,0
 0,0,0
-0,0,0
-0,0,0
+0x9A Reinforcement (Chapter 3),4,0
+0x9B Reinforcement B(Chapter 3),4,0
 0,0,0
 0,0,0
 0,0,0
