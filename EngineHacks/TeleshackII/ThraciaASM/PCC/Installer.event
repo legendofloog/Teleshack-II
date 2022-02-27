@@ -31,6 +31,8 @@ SetUnitPCC(Ichwep,2)
 SetUnitPCC(Tippany, 0)
 SetUnitPCC(Pelecaye, 0)
 SetUnitPCC(Carl, 4)
+SetUnitPCC(Jacinth, 3)
+SetUnitPCC(Kailani, 5)
 //Bosses, Generics, and NPCs
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)

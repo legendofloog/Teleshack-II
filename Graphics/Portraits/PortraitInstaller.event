@@ -37,6 +37,9 @@
 #define TippanyMug 0xC2
 #define PelecayeMug 0xC3
 #define CarlMug 0xC4
+#define DarbyMug 0xC5
+#define JacinthMug 0xC6
+
 
 // NPCs
 #define EliasMug 0xB
@@ -72,6 +75,10 @@
 #define JohannaMug 0x33
 #define DraganaYoungMug 0xBE
 #define AuroraMug 0x34
+#define VeniaminMug 0xC7
+#define CorundumMug 0xC8
+#define KailaniMug 0xC9
+#define PascalMug 0xCA
 
 ALIGN 16
 BarodMugData:
@@ -584,7 +591,7 @@ AuroraMugData:
 #incbin "Dmp/Aurora(ZessDynamite)_frames.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_palette.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_minimug.dmp"
-setMugEntry(AuroraMug, AuroraMugData, 3, 5, 3, 3)
+setMugEntry(AuroraMug, AuroraMugData, 2, 5, 3, 3)
 
 ALIGN 16
 CarlMugData:
@@ -610,4 +617,66 @@ PelecayeMugData:
 #incbin "Dmp/Pelecaye (Flasuban, Godspetturtle, Sterling)_minimug.dmp"
 setMugEntry(PelecayeMug, PelecayeMugData, 3, 5, 3, 3)
 
+ALIGN 16
+TippanyMugData:
+#incbin "Dmp/Tippany(Zess)_mug.dmp"
+#incbin "Dmp/Tippany(Zess)_frames.dmp"
+#incbin "Dmp/Tippany(Zess)_palette.dmp"
+#incbin "Dmp/Tippany(Zess)_minimug.dmp"
+setMugEntry(TippanyMug, TippanyMugData, 3, 5, 3, 3)
 
+ALIGN 16
+MantouMugData:
+#incbin "Dmp/Mantou(MrKarkino,Glaceo)_mug.dmp"
+#incbin "Dmp/Mantou(MrKarkino,Glaceo)_frames.dmp"
+#incbin "Dmp/Mantou(MrKarkino,Glaceo)_palette.dmp"
+#incbin "Dmp/Mantou(MrKarkino,Glaceo)_minimug.dmp"
+setMugEntry(MantouMug, MantouMugData, 3, 5, 3, 3)
+
+ALIGN 16
+DarbyMugData:
+#incbin "Dmp/Darby(Laurent,Levin)_mug.dmp"
+#incbin "Dmp/Darby(Laurent,Levin)_frames.dmp"
+#incbin "Dmp/Darby(Laurent,Levin)_palette.dmp"
+#incbin "Dmp/Darby(Laurent,Levin)_minimug.dmp"
+setMugEntry(DarbyMug, DarbyMugData, 3, 6, 3, 4)
+
+ALIGN 16
+JacinthMugData:
+#incbin "Dmp/Jacinth(Levin)_mug.dmp"
+#incbin "Dmp/Jacinth(Levin)_frames.dmp"
+#incbin "Dmp/Jacinth(Levin)_palette.dmp"
+#incbin "Dmp/Jacinth(Levin)_minimug.dmp"
+setMugEntry(JacinthMug, JacinthMugData, 2, 6, 3, 4)
+
+ALIGN 16
+VeniaminMugData:
+#incbin "Dmp/Veniamin(Levin)_mug.dmp"
+#incbin "Dmp/Veniamin(Levin)_frames.dmp"
+#incbin "Dmp/Veniamin(Levin)_palette.dmp"
+#incbin "Dmp/Veniamin(Levin)_minimug.dmp"
+setMugEntry(VeniaminMug, VeniaminMugData, 2, 5, 2, 3)
+
+ALIGN 16
+CorundumMugData:
+#incbin "Dmp/Corundum(Flasuban)_mug.dmp"
+#incbin "Dmp/Corundum(Flasuban)_frames.dmp"
+#incbin "Dmp/Corundum(Flasuban)_palette.dmp"
+#incbin "Dmp/Corundum(Flasuban)_minimug.dmp"
+setMugEntry(CorundumMug, CorundumMugData, 3, 6, 3, 4)
+
+ALIGN 16
+KailaniMugData:
+#incbin "Dmp/Kailani(Zess)_mug.dmp"
+#incbin "Dmp/Kailani(Zess)_frames.dmp"
+#incbin "Dmp/Kailani(Zess)_palette.dmp"
+#incbin "Dmp/Kailani(Zess)_minimug.dmp"
+setMugEntry(KailaniMug, KailaniMugData, 3, 6, 3, 4)
+
+ALIGN 16
+PascalMugData:
+#incbin "Dmp/Pascal(JiroPaiPai)_mug.dmp"
+#incbin "Dmp/Pascal(JiroPaiPai)_frames.dmp"
+#incbin "Dmp/Pascal(JiroPaiPai)_palette.dmp"
+#incbin "Dmp/Pascal(JiroPaiPai)_minimug.dmp"
+setMugEntry(PascalMug, PascalMugData, 4, 5, 4, 3)

@@ -93,11 +93,12 @@
 [LoadMilo] = [LoadFace][0x2A][0x1]
 [LoadIchwep] = [LoadFace][0x2B][0x1]
 [LoadEllerey] = [LoadFace][0xC0][0x1]
-[LoadMantou] = [LoadFace][0xC0][0x1]
-[LoadTippany] = [LoadFace][0xC0][0x1]
-[LoadPelecaye] = [LoadFace][0xC0][0x1]
-[LoadCarl] = [LoadFace][0xC0][0x1]
-
+[LoadMantou] = [LoadFace][0xC1][0x1]
+[LoadTippany] = [LoadFace][0xC2][0x1]
+[LoadPelecaye] = [LoadFace][0xC3][0x1]
+[LoadCarl] = [LoadFace][0xC4][0x1]
+[LoadDarby] = [LoadFace][0xC5][0x1]
+[LoadJacinth] = [LoadFace][0xC6][0x1]
 
 
 [LoadElias] = [LoadFace][0xB][0x1]
@@ -123,6 +124,11 @@
 [LoadWrathgar] = [LoadFace][0x32][0x1]
 [LoadJohanna] = [LoadFace][0x33][0x1]
 [LoadAurora] = [LoadFace][0x34][0x1]
+[LoadVeniamin] = [LoadFace][0xC7][0x1]
+[LoadCorundum] = [LoadFace][0xC8][0x1]
+[LoadKailani] = [LoadFace][0xC9][0x1]
+[LoadPascal] = [LoadFace][0xCA][0x1]
+
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]

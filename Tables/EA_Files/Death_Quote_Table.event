@@ -23,6 +23,9 @@ DeathQuote(Mifan,Chapter10,0,Ch10MifanDeathQuote)
 DeathQuote(Hernandez,Chapter10,0,Ch10HernandezDeathQuote)
 DeathQuote(Aurora,Chapter11,0x2,AuroraDeathQuote)
 DeathQuote(Eitha, Chapter12, 2, EithaDeathQuote)
+DeathQuote(Veniamin, Chapter13, 2, VeniaminDeathQuote)
+DeathQuote(Corundum, Chapter13, 0, CorundumDeathQuote)
+DeathQuote(Pascal, Chapter13, 0, PascalDeathQuote)
 
 //player units
 // ch1
@@ -90,5 +93,10 @@ DeathQuote(Pelecaye,AllChapters,0x0,PelecayeDeathQuote,PelecayeGiveAll)
 DeathQuote(Tippany,AllChapters,0x0,TippanyDeathQuote,TippanyGiveAll)
 DeathQuote(Mantou,AllChapters,0x0,MantouDeathQuote,MantouGiveAll)
 DeathQuote(Ellerey,AllChapters,0x0,EllereyDeathQuote,EllereyGiveAll)
+
+// ch 13
+DeathQuote(Darby,AllChapters,0x0,DarbyDeathQuote,DarbyGiveAll)
+DeathQuote(Jacinth,AllChapters,0x0,JacinthDeathQuote,JacinthGiveAll)
+DeathQuote(Kailani,AllChapters,0x0,KailaniDeathQuote,KailaniGiveAll)
 
 DeathQuote(0xFFFF,0,0,0)

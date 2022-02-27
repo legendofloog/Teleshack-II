@@ -142,6 +142,7 @@ BeginningScene:
   ENDA
   
 EndingScene:
+  RemoveAll
   MNC2 Ch12xInterlude
   NoFade
   ENDA

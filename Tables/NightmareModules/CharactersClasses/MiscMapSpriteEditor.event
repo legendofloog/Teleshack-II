@@ -1,14 +1,6 @@
 #define _C2EA_MiscMapSpriteEditor(arg000,arg001) "WORD arg000 arg001 "
 
 PUSH
-ORG $79584
-POIN NewMovingMapSpriteTable
-ORG $79598
-POIN NewMovingMapSpriteTable
-ORG $BAC2C
-POIN NewMovingMapSpriteTable
-ORG $BAC40
-POIN NewMovingMapSpriteTable
 POP
 ALIGN 4
 NewMovingMapSpriteTable:

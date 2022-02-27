@@ -68,4 +68,9 @@ BYTE HardCharLock
 BYTE Ellerey
 BYTE EndLockArray
 
+HoundingArray:
+BYTE HardCharLock
+BYTE Darby
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS
