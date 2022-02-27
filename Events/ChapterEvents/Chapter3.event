@@ -221,6 +221,8 @@ GiveItem(IronAxe,Alex)
 GiveItem(IronAxe,Axel)
 SilentGiveItem(Vulnerary,Alex)
 SilentGiveItem(Vulnerary,Axel)
+SetFatigue(Alex,0)
+SetFatigue(Axel,0)
 NoFade
 ENDA
 

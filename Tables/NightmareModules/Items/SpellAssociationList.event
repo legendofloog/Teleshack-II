@@ -1,6 +1,10 @@
 #define _C2EA_SpellAssociationList(arg000,arg001,arg002,arg003,arg004,arg005,arg006,arg007,arg008,arg009) "SHORT arg000 arg001 ;BYTE arg002 arg003 ;SHORT arg004 ;WORD arg005 ;BYTE arg006 arg007 arg008 arg009 "
 
 PUSH
+ORG $58014
+POIN SpellAssociationTable
+ORG $78240
+POIN SpellAssociationTable
 POP
 ALIGN 4
 SpellAssociationTable:
