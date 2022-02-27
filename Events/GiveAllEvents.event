@@ -231,3 +231,22 @@ EllereyGiveAll:
 SendAll(Ellerey)
 NoFade
 ENDA
+
+// ch13
+ALIGN 4
+DarbyGiveAll:
+SendAll(Darby)
+NoFade
+ENDA
+
+ALIGN 4
+JacinthGiveAll:
+SendAll(Jacinth)
+NoFade
+ENDA
+
+ALIGN 4
+KailaniGiveAll:
+SendAll(Kailani)
+NoFade
+ENDA

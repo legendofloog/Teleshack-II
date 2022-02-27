@@ -141,6 +141,7 @@
 #define BattleAxe 0x86
 #define Ivaldi 0x87
 #define KnightProof 0x88
+#define HoundingBow 0x93
 #define HeavySpear 0x95
 
 #define SunBracelet 0x99

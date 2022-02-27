@@ -125,39 +125,6 @@ UNIT Cadenza Bard            Cleo Level(8,Ally,True) [5,3] 0x0 0x0 0x0 0x1 [Ball
 UNIT Faolan RookKnight            Cleo Level(10,Ally,True) [5,4] 0x0 0x0 0x0 0x1 [Rapier,Javelin,IronLance,LightRune] NoAI
 UNIT
 
-UnitsCh10:
-UNIT Cleo Skyseeker              Cleo Level(12,Ally,True) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,KillerAxe] NoAI
-UNIT Loewe Scaleshot           Cleo Level(12,Ally,True) [0,1] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,DaShoota,Longbow] NoAI
-UNIT Mira ThiefFighter_F         Cleo Level(3,Ally,True) [0,2] 0x0 0x0 0x0 0x1 [SilverSword,ShortSword,IronSword] NoAI
-UNIT Iskra Mage_F                Cleo Level(10,Ally,True) [0,3] 0x0 0x0 0x0 0x1 [Thunder,Fire,Wind] NoAI
-UNIT Emil LanceKnight            Cleo Level(10,Ally,True) [0,4] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,YorsYari] NoAI
-UNIT Svetomir Priest            Cleo Level(8,Ally,True) [0,5] 0x0 0x0 0x0 0x1 [Heal,Physic] NoAI
-UNIT Alena Myrmidon_F            Cleo Level(10,Ally,True) [0,6] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,KillingEdge,ShortSword] NoAI
-UNIT Varga SwordArmor            Cleo Level(10,Ally,True) [0,7] 0x0 0x0 0x0 0x1 [SteelSword,LongSword,Claymore,IronSword] NoAI
-UNIT Delilah Sister            Cleo Level(8,Ally,True) [0,8] 0x0 0x0 0x0 0x1 [Lightning,Heal,Mend] NoAI
-UNIT Alex AxeFighter_F            Cleo Level(10,Ally,True) [0,9] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,Hammer] NoAI
-UNIT Axel AxeFighter            Cleo Level(10,Ally,True) [0,10] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe] NoAI
-UNIT Filone Archer_F            Cleo Level(9,Ally,True) [0,11] 0x0 0x0 0x0 0x1 [SlimBow,IronBow,Shortbow] NoAI
-UNIT Zwieback BowArmor            Cleo Level(11,Ally,True) [0,12] 0x0 0x0 0x0 0x1 [SteelBow,IronBow,Longbow] NoAI
-UNIT Longxia Pirate_F            Cleo Level(9,Ally,True) [0,13] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,Hurlbat] NoAI
-UNIT Fangai DarkMage            Cleo Level(8,Ally,True) [0,14] 0x0 0x0 0x0 0x1 [Flux,Arachnid,Heal] NoAI
-UNIT Leina Troubadour            Cleo Level(5,Ally,True) [0,14] 0x0 0x0 0x0 0x1 [Rapier,IronSword,Heal] NoAI
-UNIT Cromar Hero            Cleo Level(1,Ally,True) [1,0] 0x0 0x0 0x0 0x1 [Dullahan,IronSword,SteelSword,ShortSword] NoAI
-UNIT Iberis MageArmor            Cleo Level(8,Ally,True) [1,1] 0x0 0x0 0x0 0x1 [Thunder,Fire,Wind] NoAI
-UNIT Buldak Thief            Cleo Level(6,Ally,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword,BigIron,Miaodao] NoAI
-UNIT Nora DragonRider            Cleo Level(8,Ally,True) [1,3] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,IronAxe] NoAI
-UNIT Hans SwordKnight            Cleo Level(8,Ally,True) [1,4] 0x0 0x0 0x0 0x1 [SteelSword,IronSword,ShortSword] NoAI
-UNIT Jenny RookKnight            Cleo Level(5,Ally,True) [1,5] 0x0 0x0 0x0 0x1 [SteelLance,IronSword,IronLance] NoAI
-UNIT Meldan DukeKnight            Cleo Level(5,Ally,True) [1,6] 0x0 0x0 0x0 0x1 [BraveLance,Greatlance,IronLance] NoAI
-
-// Interlude 1
-UNIT Mish Thief            Cleo Level(7,Ally,True) [5,0] 0x0 0x0 0x0 0x1 [IronSword,DevilDagger,Vulnerary] NoAI
-UNIT Tobie PegasusRider            Cleo Level(9,Ally,True) [5,1] 0x0 0x0 0x0 0x1 [SlimLance,LongLance,IronLance] NoAI
-UNIT Awa AxeKnight            Cleo Level(9,Ally,True) [5,2] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,Poleaxe] NoAI
-UNIT Cadenza Bard            Cleo Level(8,Ally,True) [5,3] 0x0 0x0 0x0 0x1 [BalladOfWar,Lightning,Wind,Thunder] NoAI
-UNIT Faolan RookKnight            Cleo Level(10,Ally,True) [5,4] 0x0 0x0 0x0 0x1 [Rapier,Javelin,IronLance,LightRune] NoAI
-UNIT
-
 Units1:
 //UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [17,16] 0x0 0x0 0x0 0x1 [SleepSword,Sleep,Berserk,BerserkSword]     NoAI
 //UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [16,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
@@ -291,54 +258,7 @@ NoFade
 ENDA
 
 
-#endif
-#ifdef _test_ch10_
-ENUT FIXED_GROWTHS_FLAG_ID
-LOAD1 1 UnitsCh10
-ENUN
-ENUF FIXED_GROWTHS_FLAG_ID
-SilentGiveItem(Argilabrys, Cleo)
-SilentGiveItem(Kaiserschwert, Loewe)
-SilentGiveItem(Vulnerary, Iskra)
-GiveItemWithDurability(GrowthScroll, BeiyrScroll, Mira)
-SilentGiveItem(Vulnerary, Emil)
-SilentGiveItem(Vulnerary, Svetomir)
-SilentGiveItem(Vulnerary, Alena)
-SilentGiveItem(Vulnerary, Varga)
-SilentGiveItem(Vulnerary, Delilah)
-SilentGiveItem(Axle2, Alex)
-SilentGiveItem(Axle1, Axel)
-SilentGiveItem(Vulnerary, Filone)
-SilentGiveItem(Vulnerary, Zwieback)
-SilentGiveItem(Vulnerary, Longxia)
-SilentGiveItem(Vulnerary, Fangai)
-SilentGiveItem(Vulnerary, Leina)
-SilentGiveItem(Vulnerary, Cromar)
-SilentGiveItem(Vulnerary, Leina)
-SilentGiveItem(Vulnerary, Iberis)
-GiveItemWithDurability(GrowthScroll, ZykhraScroll, Buldak)
-SilentGiveItem(Vulnerary, Nora)
-SilentGiveItem(Vulnerary, Hans)
-SilentGiveItem(Vulnerary, Jenny)
-SilentGiveItem(Vulnerary, Meldan)
-
-SilentGiveItem(Vulnerary, Mish)
-SilentGiveItem(Vulnerary, Tobie)
-SilentGiveItem(Vulnerary, Awa)
-SilentGiveItem(Vulnerary, Cadenza)
-SilentGiveItem(Vulnerary, Faolan)
-
-ENUT 0x78
-ENUT 0x79
-ENUT 0x7a
-
-MNC2 Chapter10
-NoFade
-ENDA
-
-
-#endif
-#ifndef _test_
+#else
 COUNTER_SET 0 0
 LOMA Ch1LoeweVillage
 LOAD1 1 Flashback1Units

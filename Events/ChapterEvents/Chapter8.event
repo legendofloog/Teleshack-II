@@ -114,11 +114,11 @@ UNIT Nora DragonRider 0x0 Level(7,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [SteelAxe,H
 	UNIT
 	
 TeamFrancis:
-UNIT Chapter1Generics AxeSoldier   Francis Level(8,Enemy,True) [9,24] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeSoldier   Francis Level(8,Enemy,True) [11,24] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier   Francis Level(8,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier   Francis Level(8,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
-UNIT Francis Halberdier 0x0 Level(3,Enemy,False) [10,24] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier   Francis Level(20,Enemy,True) [9,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier   Francis Level(20,Enemy,True) [11,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Francis Halberdier 0x0 Level(8,Enemy,False) [10,24] 0x0 0x0 0x0 0x0 [MasterLance,SilverAxe] PursueWithoutHeedAI
 UNIT
 
 Warning:

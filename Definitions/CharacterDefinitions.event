@@ -38,8 +38,8 @@
 #define Tippany 0x26
 #define Pelecaye 0x27
 #define Carl 0x28
-#define CaellachCC 0x29
-#define FadoCC 0x2A
+#define Darby 0x29
+#define Jacinth 0x2A
 #define IsmaireCC 0x2B
 #define HaydenCC 0x2C
 #define LyonSummon 0x3B
@@ -90,9 +90,7 @@
 //Chapter 2 Stuff (uses chapter 1 generics)
 #define Dragana 0x71
 #define Hernandez 0x72
-//Chapter 3 Stuff (uses chapter 1 generics)
-#define Chapter3Reinforcements 0x9A
-//Veid Stuff
+//Chapter 3 uses chapter 1 generics and adds no NPCs
 #define Veid 0x74
 // Chapter 5x
 #define Kwame 0x65
@@ -126,6 +124,12 @@
 
 //Chapter 12 stuff
 #define Eitha 0x4B
+
+//Chapter 13 stuff
+#define Veniamin 0x9A
+#define Corundum 0x9B
+#define Pascal 0x9C
+#define Kailani 0x9D
 
 #define Breguet 0x46
 #define Bazba 0x48

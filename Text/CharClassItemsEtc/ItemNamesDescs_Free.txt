@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade. Eff vs Cavalry[X]
+A high quality blade.[X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -278,3 +278,9 @@ The Breaker[X]
 
 ## TheBreakerDesc
 Effective vs. armors.[X]
+
+## HoundingBowName
+Hounding Bow[X]
+
+## HoundingBowDesc
+Eff. vs [HorseIcon]. Darby[LockIcon][X]

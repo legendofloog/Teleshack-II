@@ -238,3 +238,38 @@ stayed on my mountain.[CloseEyes][AN][X]
 Looks like I wasn't up[N]
 to the task[Beat] I'm sorry,[AN]
 Commander[Beat][CloseEyes][A][X]
+
+## KailaniDeathQuote
+[MidRight][LoadKailani]
+I need to fall back[Beat][N]
+My country still needs me[Beat][A][X]
+
+## DarbyDeathQuote
+[MidRight][LoadDarby]
+Heh, overextended[Beat][CloseEyes][A][X]
+
+## JacinthDeathQuote
+[MidRight][LoadJacinth]
+Will my star fade out?[N]
+Please, I want to live[Beat][CloseEyes][A][X]
+
+## VeniaminDeathQuote
+[MidLeft][LoadVeniamin]
+Agh, no[Beat][AN]
+Looks like the rumors[N]
+of your abilities are true[Beat][AN]
+Leonidas, please, prepare[N]
+yourself[Beat][CloseEyes][A][X]
+
+## CorundumDeathQuote
+[MidLeft][LoadCorundum]
+Long live Freyse![N]
+Long live the righteous![AN]
+And to hell with you[N]
+traitors[Beat][CloseEyes][A][X]
+
+## PascalDeathQuote
+[MidLeft][LoadPascal]
+Pah, blasted nincompoops[Beat][AN]
+Always have to be the
+buzzkills[Beat][CloseEyes][A][X]

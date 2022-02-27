@@ -1,8 +1,6 @@
 #define _C2EA_Promotion_Item_Table(arg000,arg001,arg002,arg003) "SHORT arg000 arg001 ;WORD arg002 arg003 "
 
 PUSH
-ORG $29218
-POIN PromotionItemTable
 POP
 ALIGN 4
 PromotionItemTable:

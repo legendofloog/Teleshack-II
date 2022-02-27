@@ -1,10 +1,6 @@
 #define _C2EA_Item_AI_Table(arg000,arg001,arg002) "BYTE arg000 arg001 ;WORD arg002 "
 
 PUSH
-ORG $40820
-POIN AI_ItemArray
-ORG $40840
-POIN AI_ItemArray
 POP
 ALIGN 4
 AI_ItemArray:
