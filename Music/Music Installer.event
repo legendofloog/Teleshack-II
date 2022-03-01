@@ -59,3 +59,7 @@ SongTable(ButterBuilding,butterbuilding,MapMusicGroup)
 SongTable(FFTAnxiety,FFT_Anxiety,MapMusicGroup)
 #include "MusicEvents/Lagoon - Battle with Thimale (RandomWizard).event"
 SongTable(BattleWithThimale,Battle_With_Thimale,MapMusicGroup)
+#include "MusicEvents/SheepWillSleep(Leche).event"
+SongTable(Sheep_Will_Sleep,SheepWillSleep,MapMusicGroup)
+#include "MusicEvents/CORE(Leche).event"
+SongTable(CORE,----------,MapMusicGroup)
