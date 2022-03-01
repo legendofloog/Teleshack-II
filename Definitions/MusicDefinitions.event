@@ -23,7 +23,7 @@
 #define BattleWithThimale 0x1B
 #define Sortie_Formation 0x1C
 #define CORE 0x1D
-#define SheepWillSleep 0x1E
+#define Sheep_Will_Sleep 0x1E
 
 // Vanilla
 #define TiesOfFriendship 0x7
