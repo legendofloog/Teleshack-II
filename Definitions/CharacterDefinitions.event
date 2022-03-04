@@ -40,8 +40,11 @@
 #define Carl 0x28
 #define Darby 0x29
 #define Jacinth 0x2A
-#define IsmaireCC 0x2B
-#define HaydenCC 0x2C
+#define Nahiza 0x2B
+#define Augur 0x2C
+
+
+
 #define LyonSummon 0x3B
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
@@ -82,6 +85,7 @@
 
 #define Selese 0x6e
 #define Cythes 0x89
+#define Mahemen 0xA1
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
@@ -130,6 +134,8 @@
 #define Corundum 0x9B
 #define Pascal 0x9C
 #define Kailani 0x9D
+
+#define Tsoureki 0x9F
 
 #define Breguet 0x46
 #define Bazba 0x48

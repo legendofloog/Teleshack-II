@@ -144,6 +144,8 @@
 #define HoundingBow 0x93
 #define HeavySpear 0x95
 
+#define Dragonstone 0xAA
+
 #define SunBracelet 0x99
 #define SolarBracelet 0x99
 #define JunaFruit 0xB7

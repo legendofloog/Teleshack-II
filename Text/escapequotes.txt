@@ -78,3 +78,17 @@ Come on everyone![A][X]
 [MidRight][LoadMeldan]
 ...Oh? We're leaving?[N]
 Well, ok then.[A][X]
+
+## NahizaEscapeQuoteText
+[MidRight][LoadNahiza]
+Wahaha! What a rush![AN]
+Just gotta finish with[N]
+dragging this here ballista,[AN]
+and I'll be home free![AN]
+[Beat]Whaddya mean,[N]
+[OpenQuote]just leave it behind"?[A][X]
+
+## AugurEscapeQuoteText
+[MidRight][LoadAugur]
+I foresee a path to safety.[N]
+Let us make it a reality[Beat][A][X]

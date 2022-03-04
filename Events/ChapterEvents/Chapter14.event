@@ -1,0 +1,411 @@
+EventPointerTable(Chapter14Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1
+	POIN $0 $0 $0 
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, SpawnGreenies, 1)
+TurnEventPlayer(0, YouDevisianKnights, 5)
+TurnEventPlayer(0, funnymeme, 7)
+TurnEventPlayer(0, HowMuchWeight, 8)
+TurnEventPlayer(0, CanYouHandle, 10)
+TurnEventPlayer(0, PlayAbsolution, 11)
+TurnEventPlayer(0, ByZessDynamite, 12)
+TurnEventPlayer(0, ElebitsForThe, 13)
+TurnEventPlayer(0, NintendoWii, 14, 20)
+TurnEventPlayer(0, UnderstandableFukingDie, 19)
+	END_MAIN
+
+CharacterBasedEvents:
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+Seize(0x11,RescueAugur,11,4)
+Chest(LightRune,10,6)
+Chest(KnightProof,12,6)
+Chest(Dragonstone,23,7)
+Escape(0x10,EscapeEventCheck,0,6)
+Escape(0x10,EscapeEventCheck,0,7)
+Escape(0x10,EscapeEventCheck,7,20)
+Escape(0x10,EscapeEventCheck,8,20)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [1,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [1,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,4] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [0,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [0,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,9] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,5] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,5] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+GreenUnits:
+UNIT Nahiza Ballistician 0x0 Level(12,Ally,False)[11,17] 0x0 0x0 0x0 0x0 [SlimArch,LongArch,Elixir] NoAI
+UNIT Mahemen Ballistician Nahiza Level(10,NPC,True)[10,17] 0x0 0x0 0x0 0x0 [LongArch] BossAI
+UNIT Mahemen Mage_F Nahiza Level(10,NPC,True)[12,17] 0x0 0x0 0x0 0x0 [Meteor,Fire] BossAI
+UNIT Mahemen Priest Nahiza Level(10,NPC,True)[11,16] 0x0 0x0 0x0 0x0 [Physic] [0xE 0x3 0x0 0x20]
+UNIT Mahemen AxeSoldier Nahiza Level(15,NPC,True)[8,16] 0x0 0x0 0x0 0x0 [HandAxe,IronAxe,Elixir] BossAI
+UNIT Mahemen LanceSoldier Nahiza Level(15,NPC,True)[7,16] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Elixir] BossAI
+UNIT Mahemen Myrmidon_F Nahiza Level(15,NPC,True)[10,20] 0x0 0x0 0x0 0x0 [IronSword,Elixir] AttackInRangeAI
+UNIT Mahemen AxeFighter Nahiza Level(15,NPC,True)[12,18] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT
+
+AugurGroup:
+UNIT Augur 0x0 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x0 REDA11R15 [Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Tsoureki General 0x0 Level(6,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [SilverBow,Greatlance,Hurlbat] BossAI
+UNIT Cythes General Tsoureki Level(2,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance,SteelBow] BossAI
+UNIT Cythes Sage_F Tsoureki Level(2,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Elfire,Physic] [0xE 0x3 0x0 0x20]
+UNIT Cythes Hero Tsoureki Level(2,Enemy,True)[10,5] 0x0 0x0 0x0 0x0 [Rapier,RedGem,ChestKey] TwoActionAI
+UNIT Cythes Swordmaster_F Tsoureki Level(2,Enemy,True)[23,8] 0x0 0x0 0x0 0x0 [SteelSword,ChestKey] AttackInRangeAI
+UNIT Cythes AxeArmor Tsoureki Level(14,Enemy,True)[14,9] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
+UNIT Cythes SwordArmor Tsoureki Level(14,Enemy,True)[14,11] 0x0 0x0 0x0 0x0 [IronSword] BossAI
+UNIT Cythes Mage_F Tsoureki Level(14,Enemy,True)[8,6] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[6,5] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Cythes Freelancer Tsoureki Level(14,Enemy,True)[5,6] 0x0 0x0 0x0 0x0 [SteelLance,Vulnerary,ChestKey] PursueWithoutHeedAI
+UNIT Cythes Myrmidon_F Tsoureki Level(14,Enemy,True)[6,8] 0x0 0x0 0x0 0x0 [KillingEdge] PursueWithoutHeedAI
+UNIT Cythes SwordKnight Tsoureki Level(14,Enemy,True)[13,9] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+UNIT Cythes LanceKnight Tsoureki Level(14,Enemy,True)[13,10] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Cythes AxeKnight Tsoureki Level(14,Enemy,True)[13,11] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Cythes BowKnight Tsoureki Level(14,Enemy,True)[15,10] 0x0 0x0 0x0 0x0 [IronBow] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[10,11] 0x0 0x0 0x0 0x0 [ShortLance,Javelin] PursueWithoutHeedAI
+UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[4,12] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[6,11] 0x0 0x0 0x0 0x0 [Javelin] BossAI
+UNIT Cythes MageArmor Tsoureki Level(14,Enemy,True)[8,11] 0x0 0x0 0x0 0x0 [Wind] BossAI
+UNIT Cythes Sniper_F Tsoureki Level(2,Enemy,True)[11,6] 0x0 0x0 0x0 0x0 [MarksmanBow,ChestKey] AttackInRangeAI
+UNIT Cythes Hunter Tsoureki Level(14,Enemy,True)[17,15] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[18,9] 0x0 0x0 0x0 0x0 [SlimAxe,SteelAxe,Vulnerary] TwoActionAI
+UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[18,11] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
+UNIT Cythes DarkMage_F Tsoureki Level(14,Enemy,True)[18,10] 0x0 0x0 0x0 0x0 [Flux] TwoActionAI
+UNIT Cythes Freelancer Tsoureki Level(14,Enemy,True)[17,10] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Cythes SwordFighter Tsoureki Level(14,Enemy,True)[22,12] 0x0 0x0 0x0 0x0 [Shortsword] TwoActionAI
+UNIT Cythes Archer_F Tsoureki Level(14,Enemy,True)[23,12] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Cythes Mage Tsoureki Level(14,Enemy,True)[18,4] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+UNIT Cythes AxeKnight Tsoureki Level(14,Enemy,True)[18,3] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[12,5] 0x0 0x0 0x0 0x0 [LongLance,Vulnerary] TwoActionAI
+UNIT Cythes Sister Tsoureki Level(14,Enemy,True)[15,4] 0x0 0x0 0x0 0x0 [Lightning,Mend] [0xE 0x3 0x0 0x20]
+UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[15,3] 0x0 0x0 0x0 0x0 [Hurlbat] BossAI
+UNIT Cythes AxeFighter_F Tsoureki Level(14,Enemy,True)[15,5] 0x0 0x0 0x0 0x0 [LunarAxe] BossAI
+UNIT Cythes Myrmidon Tsoureki Level(14,Enemy,True)[23,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[25,18] 0x0 0x0 0x0 0x0 [Shortsword] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(14,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes AxeFighter Tsoureki Level(14,Enemy,True)[25,20] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Cythes DarkMage_F Tsoureki Level(8,Enemy,True)[2,15] 0x0 0x0 0x0 0x0 [Flux,Fenrir] BossAI
+UNIT Cythes DarkMage_F Tsoureki Level(8,Enemy,True)[1,16] 0x0 0x0 0x0 0x0 [Jormungand,Physic] [0xE 0x3 0x0 0x20]
+UNIT Cythes BowArmor Tsoureki Level(14,Enemy,True)[13,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Cythes DragonRider Tsoureki Level(14,Enemy,True)[5,4] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT
+
+Ch14_T5:
+UNIT Cythes SwordArmor Tsoureki Level(10,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Cythes LanceArmor Tsoureki Level(10,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Cythes AxeArmor Tsoureki Level(10,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes BowArmor Tsoureki Level(10,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [IronBow] PursueWithoutHeedAI
+UNIT
+
+Ch14_T7:
+UNIT Cythes LanceSoldier Tsoureki Level(12,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Cythes DarkMage_F Tsoureki Level(12,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [Flux,Heal] PursueWithoutHeedAI
+UNIT Cythes SwordArmor Tsoureki Level(12,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Cythes AxeArmor Tsoureki Level(12,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(14,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT
+
+
+Ch14_T8:
+UNIT Cythes AxeFighter_F Tsoureki Level(14,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [KillerAxe] PursueWithoutHeedAI
+UNIT Cythes Freelancer Tsoureki Level(14,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
+UNIT Cythes Mage Tsoureki Level(14,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Cythes Myrmidon_F Tsoureki Level(14,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Cythes Warrior Tsoureki Level(2,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [SteelAxe,Longbow] PursueWithoutHeedAI
+UNIT
+
+Ch14_T10:
+UNIT Cythes SwordArmor Tsoureki Level(14,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Cythes BowArmor Tsoureki Level(14,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [IronBow] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Cythes DarkMage Tsoureki Level(14,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Jormungand] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(12,Enemy,True)[0,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes PegasusRider Tsoureki Level(12,Enemy,True)[1,0] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] PursueWithoutHeedAI
+UNIT
+
+Ch14_T11:
+UNIT Cythes BowKnight Tsoureki Level(15,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [SilverBow] PursueWithoutHeedAI
+UNIT Cythes SwordKnight Tsoureki Level(15,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [SilverSword] PursueWithoutHeedAI
+UNIT
+
+Ch14_T12:
+UNIT Cythes AxeArmor Tsoureki Level(18,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [MasterAxe] PursueWithoutHeedAI
+UNIT Cythes MageArmor Tsoureki Level(18,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [Bolganone] PursueWithoutHeedAI
+UNIT
+
+Ch14_T13:
+UNIT Cythes Hero_F Tsoureki Level(10,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [MasterSword] PursueWithoutHeedAI
+UNIT Cythes DarkBishop Tsoureki Level(10,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Hel,Sleep] PursueWithoutHeedAI
+UNIT Cythes General Tsoureki Level(10,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [SilverSword,SilverLance,SilverAxe] PursueWithoutHeedAI
+UNIT Cythes Baron Tsoureki Level(10,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [Elfire,Nosferatu,Jormungand] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[23,0] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[25,2] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[24,20] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT
+
+Ch14_KeepRunning:
+UNIT Cythes DukeKnight Tsoureki Level(20,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [SilverLance,MasterLance] PursueWithoutHeedAI
+UNIT Cythes ForrestKnight Tsoureki Level(20,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [SilverSword,MasterSword] PursueWithoutHeedAI
+UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[23,0] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[25,2] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[24,20] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+
+
+
+
+
+
+BeginningScene:
+MountAll
+LOAD1 0x1 EnemyUnits
+ENUN
+SetBackground(BlackBackground)
+CenterTextbox(Ch14Opening)
+MUSC 0x4B
+SetBackground(Boat)
+FADU 15
+Text(Ch14_OnBoat)
+FADI 15
+SetBackground(Tavern)
+FADU 15
+Text(Ch14_InBoat)
+FADI 15
+CHECK_ALIVE Longxia
+BEQ 0x69 0x0 0xC
+CHECK_ALIVE Fangai
+BEQ 0x69 0x0 0xC
+SetBackground(Port)
+FADU 15
+Text(Ch14_LongxiaFangaiChat)
+FADI 15
+LABEL 0x69
+CHECK_ALIVE Delilah
+BEQ 0x666 0x0 0xC
+SetBackground(0x0)
+FADU 15
+Text(Ch14_DelilahChat)
+FADI 15
+LABEL 0x666
+MUSC HarvestDance
+SetBackground(0x0D)
+FADU 15
+Text(Ch14_InBasilica_1)
+FADI 15
+FADU 15
+Text(Ch14_InBasilica_2)
+FADI 15
+MUSC FF5_Sealed_Away
+SetBackground(PrisonRoom)
+FADU 15
+Text(Ch14_HornyJail)
+FADI 15
+GotoPrepScreen
+NoFade
+ENDA
+
+SpawnGreenies:
+SpawnReinforcements(GreenUnits)
+ENUN
+CameraCursor(Nahiza)
+Text(Ch14AfterPreps_1)
+CenterTextbox(Ch14AfterPreps_2)
+NoFade
+ENDA
+
+RescueAugur:
+FADI 15
+Music(KnightsPride)
+SetBackground(PrisonRoom)
+FADU 15
+Text(Ch14RecruitAugur)
+FADI 15
+CALL $9EE2C4
+FADU 15
+LOAD1 0x1 AugurGroup
+ENUN
+CameraCursor(Nahiza)
+Text(Ch14ObjectiveChange)
+CenterTextbox(Ch14ObjectiveChange_2)
+AddTrap(RedSigilTrapID,0,6)
+AddTrap(RedSigilTrapID,0,7)
+AddTrap(RedSigilTrapID,7,20)
+AddTrap(RedSigilTrapID,8,20)
+UnsetFlag(0x10)
+SetFlag(0x4)
+ENDA
+
+YouDevisianKnights:
+SpawnReinforcements(Ch14_T5)
+ENUN
+ENDA
+
+funnymeme:
+SpawnReinforcements(Ch14_T7)
+ENUN
+ENDA
+
+HowMuchWeight:
+SpawnReinforcements(Ch14_T8)
+ENUN
+ENDA
+
+CanYouHandle:
+SpawnReinforcements(Ch14_T10)
+ENUN
+ENDA
+
+PlayAbsolution:
+SpawnReinforcements(Ch14_T11)
+ENUN
+ENDA
+
+ByZessDynamite:
+SpawnReinforcements(Ch14_T12)
+ENUN
+ENDA
+
+ElebitsForThe:
+SpawnReinforcements(Ch14_T13)
+ENUN
+ENDA
+
+NintendoWii:
+SpawnReinforcements(Ch14_KeepRunning)
+ENUN
+ENDA
+
+UnderstandableFukingDie:
+SetFlag(0x65)
+ENDA
+
+EscapeEventCheck:
+UnsetFlag(0x10)
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+/*
+CheckIfUnitRescuedByActiveASMC(Loewe)
+BEQ 38 s0 sC
+	COUNTER_INC 0
+LABEL 38
+CheckIfUnitRescuedByActiveASMC(Cleo)
+BEQ 39 s0 sC
+	COUNTER_INC 0
+LABEL 39
+*/
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
+NoFade
+ENDA
+
+EndingScene:
+CHECK_ALIVE Augur
+BNE 20 0x0 0xC
+SetFlag(0x65)
+LABEL 20
+FADI 15
+SetBackground(0x30)
+MUSC 0x47
+FADU 15
+Text(Ch14Ending_1)
+FadeOutMusic
+Text(Ch14Ending_Grimblade)
+FADI 15
+MUSC FF5_Nostalgia
+SetBackground(0x0D)
+FADU 15
+Text(Ch14Ending_Basilica1)
+FADI 15
+SetBackground(0x0D)
+MUSC FF5_Sealed_Away
+FADU 15
+Text(Ch14Ending_KwameAugur)
+FADI 15
+FadeOutMusic
+SetBackground(0x0D)
+FADU 15
+Text(Ch14Ending_Messenger)
+FADI 15
+CHECK_ALIVE Iberis
+BEQ 0x314 0x0 0xC
+CHECK_ALIVE Nora
+BEQ 0x314 0x0 0xC
+CHECK_ALIVE Hans
+BEQ 0x314 0x0 0xC
+MUSC FF5_Sealed_Away
+FADU 15
+Text(Ch14_RadnitzSquad)
+FADI 15
+LABEL 0x314
+SetBackground(0x30)
+MUSC 0x47
+FADU 15
+Text(Ch14Ending_Boro)
+FADI 15
+MNC2 Chapter15
+NoFade
+ENDA

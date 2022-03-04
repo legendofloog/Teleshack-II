@@ -65,6 +65,7 @@
 #define StormbrandLock 0x07000000
 #define MuramasaLock 0x08000000
 #define BreakerLock 0x09000000
+#define DragonstoneLock 0x0B000000
 #define PassiveBoosts 0x00800000
 
 

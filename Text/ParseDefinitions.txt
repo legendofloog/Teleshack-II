@@ -99,6 +99,8 @@
 [LoadCarl] = [LoadFace][0xC4][0x1]
 [LoadDarby] = [LoadFace][0xC5][0x1]
 [LoadJacinth] = [LoadFace][0xC6][0x1]
+[LoadNahiza] = [LoadFace][0xCB][0x1]
+[LoadAugur] = [LoadFace][0xCC][0x1]
 
 
 [LoadElias] = [LoadFace][0xB][0x1]
@@ -128,6 +130,10 @@
 [LoadCorundum] = [LoadFace][0xC8][0x1]
 [LoadKailani] = [LoadFace][0xC9][0x1]
 [LoadPascal] = [LoadFace][0xCA][0x1]
+[LoadTsoureki] = [LoadFace][0xCD][0x1]
+[LoadHouvaina] = [LoadFace][0xCE][0x1]
+[LoadMureib] = [LoadFace][0xCF][0x1]
+[LoadGrimblade] = [LoadFace][0xD0][0x1]
 
 
 [LoadMan1] = [LoadFace][0x6A][0x1]

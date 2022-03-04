@@ -39,6 +39,8 @@
 #define CarlMug 0xC4
 #define DarbyMug 0xC5
 #define JacinthMug 0xC6
+#define NahizaMug 0xCB
+#define AugurMug 0xCC
 
 
 // NPCs
@@ -79,6 +81,60 @@
 #define CorundumMug 0xC8
 #define KailaniMug 0xC9
 #define PascalMug 0xCA
+#define TsourekiMug 0xCD
+#define HouvainaMug 0xCE
+#define MureibMug 0xCF
+#define GrimbladeMug 0xD0
+
+
+
+ALIGN 16
+NahizaMugData:
+#incbin "Dmp/Nahiza(ZessDynamite)_mug.dmp"
+#incbin "Dmp/Nahiza(ZessDynamite)_frames.dmp"
+#incbin "Dmp/Nahiza(ZessDynamite)_palette.dmp"
+#incbin "Dmp/Nahiza(ZessDynamite)_minimug.dmp"
+setMugEntry(NahizaMug, NahizaMugData, 4, 6, 4, 4)
+
+ALIGN 16
+AugurMugData:
+#incbin "Dmp/Augur(ZessDynamite)_mug.dmp"
+#incbin "Dmp/Augur(ZessDynamite)_frames.dmp"
+#incbin "Dmp/Augur(ZessDynamite)_palette.dmp"
+#incbin "Dmp/Augur(ZessDynamite)_minimug.dmp"
+setMugEntry(AugurMug, AugurMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TsourekiMugData:
+#incbin "Dmp/Tsoureki(SterlingGlovner)_mug.dmp"
+#incbin "Dmp/Tsoureki(SterlingGlovner)_frames.dmp"
+#incbin "Dmp/Tsoureki(SterlingGlovner)_palette.dmp"
+#incbin "Dmp/Tsoureki(SterlingGlovner)_minimug.dmp"
+setMugEntry(TsourekiMug, TsourekiMugData, 3, 5, 3, 3) // yes, I know the frames are broken, fix this soon:tm:
+
+ALIGN 16
+HouvainaMugData:
+#incbin "Dmp/Houvaina(Alusq)_mug.dmp"
+#incbin "Dmp/Houvaina(Alusq)_frames.dmp"
+#incbin "Dmp/Houvaina(Alusq)_palette.dmp"
+#incbin "Dmp/Houvaina(Alusq)_minimug.dmp"
+setMugEntry(HouvainaMug, HouvainaMugData, 2, 6, 3, 4)
+
+ALIGN 16
+MureibMugData:
+#incbin "Dmp/Mureib(CanDy)_mug.dmp"
+#incbin "Dmp/Mureib(CanDy)_frames.dmp"
+#incbin "Dmp/Mureib(CanDy)_palette.dmp"
+#incbin "Dmp/Mureib(CanDy)_minimug.dmp"
+setMugEntry(MureibMug, MureibMugData, 2, 5, 2, 3)
+
+ALIGN 16
+GrimbladeMugData:
+#incbin "Dmp/Grimblade(CanDy)_mug.dmp"
+#incbin "Dmp/Grimblade(CanDy)_frames.dmp"
+#incbin "Dmp/Grimblade(CanDy)_palette.dmp"
+#incbin "Dmp/Grimblade(CanDy)_minimug.dmp"
+setMugEntry(GrimbladeMug, GrimbladeMugData, 4, 5, 4, 3)
 
 ALIGN 16
 BarodMugData:
@@ -363,11 +419,16 @@ setMugEntry(GimmMug, GimmMugData, 3, 7, 3, 5)
 
 ALIGN 16
 TobieMugData:
-#incbin "Dmp/Tobie(RandomWizard)_mug.dmp"
-#incbin "Dmp/Tobie(RandomWizard)_frames.dmp"
-#incbin "Dmp/Tobie(RandomWizard)_palette.dmp"
-#incbin "Dmp/Tobie(RandomWizard)_minimug.dmp"
-setMugEntry(TobieMug, TobieMugData, 3, 6, 3, 4)
+// #incbin "Dmp/Tobie(RandomWizard)_mug.dmp"
+// #incbin "Dmp/Tobie(RandomWizard)_frames.dmp"
+// #incbin "Dmp/Tobie(RandomWizard)_palette.dmp"
+// #incbin "Dmp/Tobie(RandomWizard)_minimug.dmp"
+// setMugEntry(TobieMug, TobieMugData, 3, 6, 3, 4)
+#incbin "Dmp/Tobie(ZoramineFae)_mug.dmp"
+#incbin "Dmp/Tobie(ZoramineFae)_frames.dmp"
+#incbin "Dmp/Tobie(ZoramineFae)_palette.dmp"
+#incbin "Dmp/Tobie(ZoramineFae)_minimug.dmp"
+setMugEntry(TobieMug, TobieMugData, 3, 5, 3, 3)
 
 ALIGN 16
 AwaMugData:

@@ -26,6 +26,7 @@ DeathQuote(Eitha, Chapter12, 2, EithaDeathQuote)
 DeathQuote(Veniamin, Chapter13, 2, VeniaminDeathQuote)
 DeathQuote(Corundum, Chapter13, 0, CorundumDeathQuote)
 DeathQuote(Pascal, Chapter13, 0, PascalDeathQuote)
+DeathQuote(Tsoureki, Chapter14, 0, TsourekiDeathQuote)
 
 //player units
 // ch1
@@ -85,8 +86,6 @@ DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote,MiloGiveAll)
 DeathQuote(Ichwep,AllChapters,0x0,MiloDeathQuote,IchwepGiveAll)
 
-
-
 // ch 12x
 DeathQuote(Carl,AllChapters,0x0,CarlDeathQuote,CarlGiveAll)
 DeathQuote(Pelecaye,AllChapters,0x0,PelecayeDeathQuote,PelecayeGiveAll)
@@ -98,5 +97,9 @@ DeathQuote(Ellerey,AllChapters,0x0,EllereyDeathQuote,EllereyGiveAll)
 DeathQuote(Darby,AllChapters,0x0,DarbyDeathQuote,DarbyGiveAll)
 DeathQuote(Jacinth,AllChapters,0x0,JacinthDeathQuote,JacinthGiveAll)
 DeathQuote(Kailani,AllChapters,0x0,KailaniDeathQuote,KailaniGiveAll)
+
+// ch 13
+DeathQuote(Nahiza,AllChapters,0x0,NahizaDeathQuote,DarbyGiveAll)
+DeathQuote(Augur,AllChapters,0x0,AugurDeathQuote,JacinthGiveAll)
 
 DeathQuote(0xFFFF,0,0,0)
