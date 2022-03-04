@@ -273,3 +273,23 @@ traitors[Beat][CloseEyes][A][X]
 Pah, blasted nincompoops[Beat][AN]
 Always have to be the
 buzzkills[Beat][CloseEyes][A][X]
+
+## NahizaDeathQuote
+[MidRight][LoadNahiza]
+The heck? My ballista's[N]
+gotten all busted up![AN]
+Guess I've gotta[Beat][N]
+[HalfCloseEyes]make tracks[Beat][AN]
+Wait, why's it[N]
+so dark[Beat]?[CloseEyes][A][X]
+
+## AugurDeathQuote
+[MidRight][LoadAugur]
+[Beat]Finally.[A][X]
+
+## TsourekiDeathQuote
+[MidLeft][LoadTsoureki]
+Such is a soldier's death[Beat][AN]
+to fall into a shallow grave,[AN]
+without even knowing the[N]
+reason for[Beat] [CloseEyes]his end[Beat][AN][X]

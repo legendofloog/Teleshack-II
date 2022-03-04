@@ -67,3 +67,7 @@ SongTable(fe5victory,song05,MapMusicGroup)
 SongTable(awaywithyou,song13,BattleMusicGroup)
 #include "MusicEvents/ncastlebridge.event"
 SongTable(ncastlebridge,song34,MapMusicGroup)
+#include "MusicEvents/GreatCanyon(Psyche,RW).event"
+SongTable(GreatCanyon,GreatCanyon_Psyche_RW_,MapMusicGroup)
+#include "MusicEvents/Berwick Saga - The Knight_s Pride (MrGreen3339).event"
+SongTable(KnightsPride,song0A,MapMusicGroup)

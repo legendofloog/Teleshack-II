@@ -248,6 +248,7 @@ SHORT 0
 
 EndingScene:
 SendAll(Kailani)
+REMOVEUNIT Kailani
 MUSC FF5_Nostalgia
 SetBackground(0x07)
 Text(Ch13EndingOne)

@@ -6,6 +6,10 @@
 #define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB MovB ConB"
 
 ALIGN 4
+DragonstoneStatBoosts:
+StatBonus(0,10,10,10,0,10,10,0,0,0)
+
+ALIGN 4
 FlameSwordStatBoosts:
 StatBonus(0,0,5,0,0,0,0,0,0,0)
 
