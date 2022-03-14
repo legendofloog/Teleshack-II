@@ -78,7 +78,7 @@ Units1:
   UNIT
  
 MinkJoin:
-  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind] NoAI
+  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
   UNIT
 
 
@@ -179,6 +179,12 @@ BeginningScene:
   GotoPrepScreen
   ENDA
   
+PrisonerFreed:
+  Text(Ch12PlaceholderText)
+  NoFade
+  ENDA
+
+
 EndingScene:
   RemoveAll
   MNC2 Ch12xInterlude
