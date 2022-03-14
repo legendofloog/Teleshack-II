@@ -141,19 +141,21 @@ OutdoorEnemy:
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [24,27] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
 //turn 6
-  UNIT Selese BowKnight Cidor Level(12,Enemy,True) [7,26] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [7,26] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [10,27] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [10,26] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese PegasusRider Cidor Level(12,Enemy,True) [9,26] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
 //turn 7
-  
+  UNIT Selese Myrmidon Cidor Level(9,Enemy,True) [1,27] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese Freelancer Cidor Level(9,Enemy,True) [0,26] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
 //turn 8
-
+  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,27] 0x0 0x0 0x0 0x1 [Purge] BossAI
+  
   UNIT
 
   
 EithaSpawn:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [0,27] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [7,21] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
   UNIT
 
 
