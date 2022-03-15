@@ -150,3 +150,21 @@ FrancisHalberdier:
 HegeMercenary:
 	#incbin "./_palettes/HegeMercenary.lzpal" 
 
+DarbyHunter:
+	#incbin "./_palettes/DarbyHunter.lzpal" 
+
+DarbyWarrior:
+	#incbin "./_palettes/DarbyWarrior.lzpal" 
+
+JacinthDancer:
+	#incbin "./_palettes/JacinthDancer.lzpal" 
+
+CorundumChampion:
+	#incbin "./_palettes/CorundumChampion.lzpal" 
+
+VeniaminForrest:
+	#incbin "./_palettes/VeniaminForrest.lzpal" 
+
+PascalThfFighter:
+	#incbin "./_palettes/PascalThfFighter.lzpal" 
+
