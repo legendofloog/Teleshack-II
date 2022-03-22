@@ -176,28 +176,25 @@ UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [6,33] 0x0 0x0 0x0 0x1 [IronAxe] S
 
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [11,34] 0x0 0x0 0x0 0x1 [SlimBow] StallAI(4)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [11,33] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(4)
-UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [12,34] 0x0 0x0 0x0 0x1 [SteelLance] StallAI(4)
 UNIT Ch6Pirate Shaman Draken Level(6,Enemy,True) [10,34] 0x0 0x0 0x0 0x1 [Flux] StallAI(4)
 
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,34] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,34] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [18,34] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
 
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [1,30] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(1)
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [0,31] 0x0 0x0 0x0 0x1 [IronBow] StallAI(1)
 
-UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [4,24] 0x0 0x0 0x0 0x1 [IronLance] ChargeAI
+UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [4,24] 0x0 0x0 0x0 0x1 [ShortLance] ChargeAI
 UNIT Ch6Pirate Fighter Draken Level(6,Enemy,True) [5,25] 0x0 0x0 0x0 0x1 [IronAxe] ChargeAI
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [4,26] 0x0 0x0 0x0 0x1 [IronBow] ChargeAI
 
 UNIT Ch6Pirate Mage Draken Level(6,Enemy,True) [10,23] 0x0 0x0 0x0 0x1 [Fire] ChargeAI
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [12,25] 0x0 0x0 0x0 0x1 [IronSword] ChargeAI
 
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [22,24] 0x0 0x0 0x0 0x1 [IronSword] StallAI(6)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [22,24] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(6)
 UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] StallAI(6)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [24,29] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
-UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [27,25] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
-UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [24,21] 0x0 0x0 0x0 0x1 [IronBow] StallAI(6)
 
 UNIT Draken 0x0 Draken Level(6,Enemy,False) [0, 28] 0x0 0x0 0x0 0x1 [HandAxe, IronAxe] BossAI
 UNIT
