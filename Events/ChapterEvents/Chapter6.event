@@ -451,6 +451,9 @@ ENDA
 
 ALIGN 4
 EndingScene:
+SetBackground(Boat)
+MUSC(Rovers)
+Text(Ch6End)
 MNC2 Chapter7
 NoFade
 ENDA
@@ -498,16 +501,22 @@ NoFade
 ENDA
 
 Ch6Village1:
+	SetBackground(House1)
+	Text(Ch6Village1)
 	GiveItem(KillingEdge,-1)
 NoFade
 ENDA
 
 Ch6Village2:
+	SetBackground(House1)
+	Text(Ch6Village2)
 	GiveItem(Mend,-1)
 NoFade
 ENDA
 
 Ch6Village3:
+	SetBackground(House1)
+	Text(Ch6Village3)
 	GiveItem(Lightning,-1)
 NoFade
 ENDA
