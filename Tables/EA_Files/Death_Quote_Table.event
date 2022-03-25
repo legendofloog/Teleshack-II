@@ -27,6 +27,7 @@ DeathQuote(Veniamin, Chapter13, 2, VeniaminDeathQuote)
 DeathQuote(Corundum, Chapter13, 0, CorundumDeathQuote)
 DeathQuote(Pascal, Chapter13, 0, PascalDeathQuote)
 DeathQuote(Tsoureki, Chapter14, 0, TsourekiDeathQuote)
+DeathQuote(Coralia,Chapter15,10,0x0)
 
 //player units
 // ch1

@@ -1,7 +1,7 @@
 
 ALIGN 4
 ThunderWeapons:
-BYTE Thunder ThunderSword Thoron Bolting 0
+BYTE Thunder ThunderSword Thoron Bolting Stormbrand 0
 
 ALIGN 4
 AftershockIDLink:

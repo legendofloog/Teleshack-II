@@ -90,3 +90,7 @@ void CheckIfFatigued(){
         gEventSlot[0xC] = 0;
     }
 }
+
+int GetCurrentPromotedLevelBonus(){
+    return 19; //every promoted unit hits 20 unpromoted
+}

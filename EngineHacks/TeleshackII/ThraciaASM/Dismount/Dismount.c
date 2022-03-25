@@ -83,7 +83,6 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass){
 	unit->res += (newClass->baseRes - oldClass->baseRes);*/
 
 	unit->pClassData = newClass;
-
 	HideUnitSMS(unit);
 	MU_EndAll();
 	MU_Create(unit);

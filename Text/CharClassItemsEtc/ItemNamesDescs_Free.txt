@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade.[X]
+A high quality blade. Eff vs Cavalry[X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -185,13 +185,13 @@ Yor's Yari[X]
 Ignores Defence.[X]
 
 ## DaShootaName
-Da Shoota[X]
+Break Arc[X]
 
 ## DaShootaDesc
 Effective vs horses and armors.[X]
 
 ## BigIronName
-Big Iron[X]
+Meat Cleaver[X]
 
 ## Axle1Name
 Axle[X]
@@ -284,3 +284,27 @@ Hounding Bow[X]
 
 ## HoundingBowDesc
 Eff. vs [HorseIcon]. Darby[LockIcon][X]
+
+## KingShieldName
+King Shield[X]
+
+## KingShieldDesc
+Provokes enemies in range. Armors only.[X]
+
+## EdgedArrowName
+Edged Arrow[X]
+
+## EdgedArrowDesc
+Pierces enemy defense. Bow users only.[X]
+
+## RedScarfName
+Red Scarf[X]
+
+## RedScarfDesc
+Restores 25% HP after killing an enemy.[X]
+
+## SaunionName
+Saunion[X]
+
+## SaunionDesc
+A lance with extended reach.[X]

@@ -32,6 +32,7 @@
 #define Ch5xBoatScenes 0x1D
 #define Ch5xGechrysos 0x1E
 #define Ch12xInterlude 0x1F
+#define Chapter15Cutscene 0x20
 
 // MapChangesID
 
@@ -67,6 +68,8 @@
 #define Ch5xBoatScenesMapChanges 0x9E
 #define Ch5xGechrysosMapChanges 0x9D
 #define Ch12xInterludeMapChanges 0xA2
+#define Chapter15CutsceneMapChanges 0xA7
+
 
 // MapID
 
@@ -102,6 +105,7 @@
 #define Ch5xBoatScenesMap 0x9F
 #define Ch5xGechrysosMap 0xA0
 #define Ch12xInterludeMap 0xA1
+#define Chapter15CutsceneMap 0xA8
 
 // EventsID
 

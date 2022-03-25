@@ -70,12 +70,12 @@ SupportTerm
 
 ALIGN 4
 AlexSupportList:
-SupportEntry(Axel, 3, 2, 0, 0, 5, 10, 0)
+SupportEntry(Axel, 3, 3, 0, 5, 5, 15, 0)
 SupportTerm
 
 ALIGN 4
 AxelSupportList:
-SupportEntry(Alex, 3, 2, 0, 0, 5, 10, 0)
+SupportEntry(Alex, 3, 3, 0, 5, 5, 15, 0)
 SupportTerm
 
 ALIGN 4
@@ -118,6 +118,11 @@ PelecayeSupportList:
 SupportEntry(Milo, 3, 1, 1, 10, 0, 0, 0)
 SupportTerm
 
+ALIGN 4
+CoraliaSupportList:
+SupportEntry(Loewe,3,2,0,0,10,0,0)
+SupportTerm
+
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
@@ -136,3 +141,4 @@ SetUnitSupportList(Valse,ValseSupportList)
 SetUnitSupportList(Hornet,HornetSupportList)
 SetUnitSupportList(Milo,MiloSupportList)
 SetUnitSupportList(Pelecaye,PelecayeSupportList)
+SetUnitSupportList(Coralia,CoraliaSupportList)

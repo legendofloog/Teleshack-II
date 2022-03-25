@@ -26,6 +26,7 @@
 #define SteelLance 0x16
 #define SilverLance 0x17
 #define ShortLance 0x18
+#define Shortlance ShortLance
 #define BraveLance 0x19
 #define KillerLance 0x1A
 #define Horseslayer 0x1B
@@ -174,6 +175,10 @@
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
+#define KingShield 0xD0
+#define EdgedArrow 0xD1
+#define RedScarf 0xD2
+#define Saunion 0xD3
 
 #define Stinger 0x8d
 #define BpatItem 0x8e

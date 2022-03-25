@@ -1,6 +1,8 @@
 
-#include "FE-CLib-master/include/gbafe.h"
+#include "gbafe.h"
 #include "ExtraGrowths.h"
+
+int CheckEventId(int someFlag);
 
 #define REROLL_ATTEMPTS 1;
 

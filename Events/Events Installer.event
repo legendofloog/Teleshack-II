@@ -37,3 +37,9 @@ SHORT 0x0070 //Helman
 SHORT 0x006F //Senny
 SHORT 0x0000
 */
+ALIGN 4
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDB
+ALIGN 4

@@ -52,6 +52,8 @@
 
 [LoadCleo] = [LoadFace][0x2][0x1]
 [LoadLoewe] = [LoadFace][0x14][0x1]
+[LoadLoeweAngry] = [LoadFace][0xD3][0x1]
+[LoadLoewePunished] = [LoadFace][0xD6][0x1]
 [LoadMira] = [LoadFace][0x4][0x1]
 [LoadIskra] = [LoadFace][0x5][0x1]
 [LoadEmil] = [LoadFace][0x6][0x1]
@@ -101,11 +103,11 @@
 [LoadJacinth] = [LoadFace][0xC6][0x1]
 [LoadNahiza] = [LoadFace][0xCB][0x1]
 [LoadAugur] = [LoadFace][0xCC][0x1]
+[LoadIlse] = [LoadFace][0xD5][0x1]
 
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]
-[LoadOrfeas] = [LoadFace][0x12][0x1]
 [LoadLeonidas] = [LoadFace][0x1D][0x1]
 [LoadRadnitz] = [LoadFace][0x12][0x1]
 [LoadEpony] = [LoadFace][0x1F][0x1]
@@ -134,6 +136,9 @@
 [LoadHouvaina] = [LoadFace][0xCE][0x1]
 [LoadMureib] = [LoadFace][0xCF][0x1]
 [LoadGrimblade] = [LoadFace][0xD0][0x1]
+[LoadKassandra] = [LoadFace][0xD1][0x1]
+[LoadOrfeas] = [LoadFace][0xD2][0x1]
+[LoadStranger] = [LoadFace][0xD4][0x1]
 
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
@@ -143,7 +148,7 @@
 [LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLoeweKid] = [LoadFace][0x15][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
-
+[LoadCatrin] = [LoadLoeweMom]
 [LoadAlenaGrunt1] = [LoadFace][0x4C][0x1]
 [LoadAlenaGrunt2] = [LoadFace][0x4D][0x1]
 [LoadSenny] = [LoadFace][0x62][0x1]
@@ -256,3 +261,7 @@
 [MonsterIcon] = [0xD3]
 [_'] = [0xD4]
 [_"] = [0xD5]
+
+[LoadFaceFancy] = [0x80][0x2F]
+[MugLoc] = [0x80][0x2E]
+[3MugsOnRight] = [MugLoc][0x04][0xF][MugLoc][0x05][0x15]

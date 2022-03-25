@@ -42,6 +42,7 @@
 #define Jacinth 0x2A
 #define Nahiza 0x2B
 #define Augur 0x2C
+#define Ilse 0x2D
 
 
 
@@ -95,6 +96,7 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
+#define Chapter3Reinforcements 0xA2
 #define Veid 0x74
 // Chapter 5x
 #define Kwame 0x65
@@ -135,7 +137,15 @@
 #define Pascal 0x9C
 #define Kailani 0x9D
 
+//Chapter 14 Stuff
 #define Tsoureki 0x9F
+
+//Chapter 15 Stuff
+#define Looter 0xA3
+#define Traveler 0xA4
+#define Coralia 0xA5
+#define Catrin 0xA6
+#define Kassandra 0xA7
 
 #define Breguet 0x46
 #define Bazba 0x48

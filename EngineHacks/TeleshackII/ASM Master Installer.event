@@ -41,8 +41,6 @@ ChangeWeaponRankASMC:
 
 #include "StallAIs/StallAI/StallAI.event"
 
-#include "EnemyEscapeHook/EnemyEscapeHook.event"
-
 #include "MapChangeToFlag/Installer.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
@@ -56,6 +54,8 @@ ChangeWeaponRankASMC:
 #include "PromoLevelCheck/PromoLevelCheck.lyn.event" //fixes IER bug where promo can be done at any level
 
 #include "FE7 & 8-Show Heal Amount/FE7 & FE8-Show Heal Amount EA.event"
+
+#include "ChangePortrait/Installer.event"
 
 // thief vision set to 0
 

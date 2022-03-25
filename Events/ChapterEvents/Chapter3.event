@@ -13,25 +13,25 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0, EnemyReinforcementsEvent_A, 7)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
-TurnEventPlayer(0, EnemyReinforcementsEvent_C, 9)
-TurnEventPlayer(0, EnemyReinforcementsEvent_D, 10)
-TurnEventPlayer(0, EnemyReinforcementsEvent_E, 11)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 8)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B, 8)
+TurnEventPlayer(0, EnemyReinforcementsEvent_C, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_D, 11)
+TurnEventPlayer(0, EnemyReinforcementsEvent_E, 12)
 END_MAIN
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Door(18,2)
-DurabilityChest(GrowthScroll, BeiyrScroll,25,3)
+Door(20,2)
+Chest(SteelAxe,23,2)
+Chest(RedGem,26,2)
 Door(26,6)
-Chest(SteelAxe,9,10)
-Chest(RedGem,12,10)
-LOCA 9 AlexAxelDoor [19,11] 0x12
-Door(17,13)
-Door(10,14)
+DurabilityChest(GrowthScroll, BeiyrScroll,20,11)
+Door(17,11)
+Door(15,13)
+LOCA 9 AlexAxelDoor [10,14] 0x12
 Escape(0,EscapeEventCheck,29,11)
 Escape(0,EscapeEventCheck,29,12)
 Escape(0,EscapeEventCheck,29,13)
@@ -104,48 +104,53 @@ ENDTRAP
 ALIGN 4
 
 DraganaUnit:
-UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] NoAI
+UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SteelBow,Vulnerary] NoAI
 UNIT
+
 
 EnemyUnits:
 UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
+UNIT Chapter1Generics Archer   Emory_Ch3 Level(3,Enemy,True) [20,11] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [19,2] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey,ChestKey,ChestKey] NeverMoveAI
 UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
-UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [4,13] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
-UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [6,17] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
-UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey,ChestKey] NeverMoveAI
-UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [Shortsword,Vulnerary] TwoActionAI
-UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [18,17] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
-UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [20,14] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
-UNIT Chapter1Generics SwordArmor   Emory_Ch3 Level(3,Enemy,True) [21,16] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [22,14] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [6,7] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] ChargeAI
+UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(2,Enemy,True) [4,13] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [5,5] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
 UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [6,7] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
-UNIT Chapter1Generics Mage   Emory_Ch3 Level(2,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
-UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [18,8] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey] NeverMoveAI
-UNIT Chapter1Generics LanceArmor  Emory_Ch3 Level(3,Enemy,True) [23,7] 0x0 0x0 0x0 0x0 [ShortLance] NeverMoveAI
-UNIT Chapter1Generics LanceArmor  Emory_Ch3 Level(3,Enemy,True) [23,8] 0x0 0x0 0x0 0x0 [ShortLance] NeverMoveAI
-UNIT Chapter1Generics AxeFighter  Emory_Ch3 Level(2,Enemy,True) [25,8] 0x0 0x0 0x0 0x0 [SlimAxe,Vulnerary] TwoActionAI
-UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(2,Enemy,True) [26,12] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
-UNIT Chapter1Generics AxeFighter  Emory_Ch3 Level(2,Enemy,True) [23,7] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,15] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
-UNIT Chapter1Generics Archer  Emory_Ch3 Level(3,Enemy,True) [10,11] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
-UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(2,Enemy,True) [20,2] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [26,4] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics Mage   Emory_Ch3 Level(2,Enemy,True) [12,6] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [16,4] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [18,8] 0x0 0x0 0x0 0x0 [SteelSword] TwoActionAI
+UNIT Chapter1Generics Freelancer  Emory_Ch3 Level(2,Enemy,True) [21,5] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [25,9] 0x0 0x0 0x0 0x0 [SlimAxe,Vulnerary] TwoActionAI
+UNIT Chapter1Generics Archer  Emory_Ch3 Level(2,Enemy,True) [17,6] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor   Emory_Ch3 Level(3,Enemy,True) [23,7] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Chapter1Generics LanceArmor   Emory_Ch3 Level(3,Enemy,True) [23,8] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [25,7] 0x0 0x0 0x0 0x0 [Shortsword] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(3,Enemy,True) [27,10] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
+UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,14] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(3,Enemy,True) [25,3] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [6,16] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
+UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics Freelancer   Emory_Ch3 Level(2,Enemy,True) [14,15] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] AttackInRangeAI
+UNIT Chapter1Generics SwordArmor   Emory_Ch3 Level(3,Enemy,True) [22,16] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [21,15] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [18,15] 0x0 0x0 0x0 0x0 [Shortsword] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [24,15] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
+UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [24,18] 0x0 0x0 0x0 0x0 [Shortsword] TwoActionAI
 UNIT
 
 AllyUnits:
-UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [22,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [21,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Alex AxeFighter_F Cleo Level(3,NPC,False) [9,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Axel AxeFighter   Cleo Level(3,NPC,False) [11,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 EnemyReinforcements_A:
-UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(3,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
-UNIT Chapter1Generics Archer  Emory_Ch3 Level(5,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [Shortbow] ChargeAI
+UNIT Chapter3Reinforcements LanceSoldier  Emory_Ch3 Level(4,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(4,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter3Reinforcements Archer  Emory_Ch3 Level(4,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [Shortbow] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_A:
@@ -156,8 +161,8 @@ CamOff
 ENDA
 
 EnemyReinforcements_B:
-UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(3,Enemy,True) [5,0] 0x0 0x0 0x0 0x0 [SteelSword] ChargeAI
-UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
+UNIT Chapter3Reinforcements SwordFighter  Emory_Ch3 Level(3,Enemy,True) [5,0] 0x0 0x0 0x0 0x0 [SteelSword] ChargeAI
+UNIT Chapter3Reinforcements Mage  Emory_Ch3 Level(3,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_B:
@@ -169,8 +174,11 @@ CamOff
 ENDA
 
 EnemyReinforcements_C:
-UNIT Chapter1Generics SwordFighter  Emory_Ch3 Level(2,Enemy,True) [13,20] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
-UNIT Chapter1Generics Archer  Emory_Ch3 Level(2,Enemy,True) [15,20] 0x0 0x0 0x0 0x0 [Shortbow] ChargeAI
+UNIT Chapter3Reinforcements SwordFighter  Emory_Ch3 Level(3,Enemy,True) [13,20] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
+UNIT Chapter3Reinforcements Archer  Emory_Ch3 Level(3,Enemy,True) [15,20] 0x0 0x0 0x0 0x0 [Shortbow] ChargeAI
+UNIT Chapter3Reinforcements Freelancer  Emory_Ch3 Level(3,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter3Reinforcements Freelancer  Emory_Ch3 Level(3,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_C:
@@ -181,8 +189,8 @@ CamOff
 ENDA
 
 EnemyReinforcements_D:
-UNIT Chapter1Generics AxeArmor  Emory_Ch3 Level(3,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
-UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [0,10] 0x0 0x0 0x0 0x0 [Wind] ChargeAI
+UNIT Chapter3Reinforcements AxeArmor  Emory_Ch3 Level(3,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
+UNIT Chapter3Reinforcements Mage  Emory_Ch3 Level(3,Enemy,True) [0,10] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_D:
@@ -193,11 +201,11 @@ CamOff
 ENDA
 
 EnemyReinforcements_E:
-UNIT Chapter1Generics Halberdier  Emory_Ch3 Level(1,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
-UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(10,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [SteelLance] ChargeAI
-UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(10,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
-UNIT Chapter1Generics LanceSoldier  Emory_Ch3 Level(10,Enemy,True) [13,20] 0x0 0x0 0x0 0x0 [SteelLance] ChargeAI
-UNIT Chapter1Generics AxeSoldier  Emory_Ch3 Level(10,Enemy,True) [15,20] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
+UNIT Chapter3Reinforcements Halberdier  Emory_Ch3 Level(1,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Chapter3Reinforcements LanceSoldier  Emory_Ch3 Level(10,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [SteelLance] ChargeAI
+UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(10,Enemy,True) [0,11] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
+UNIT Chapter3Reinforcements LanceSoldier  Emory_Ch3 Level(10,Enemy,True) [13,20] 0x0 0x0 0x0 0x0 [SteelLance] ChargeAI
+UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(10,Enemy,True) [15,20] 0x0 0x0 0x0 0x0 [SteelAxe] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_E:
@@ -208,7 +216,7 @@ CamOff
 ENDA
 
 AlexAxelDoor:
-TILECHANGE 5
+TILECHANGE 8
 NoFade
 ENDA
 
@@ -221,8 +229,6 @@ GiveItem(IronAxe,Alex)
 GiveItem(IronAxe,Axel)
 SilentGiveItem(Vulnerary,Alex)
 SilentGiveItem(Vulnerary,Axel)
-SetFatigue(Alex,0)
-SetFatigue(Axel,0)
 NoFade
 ENDA
 

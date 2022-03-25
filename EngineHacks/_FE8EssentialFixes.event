@@ -33,6 +33,10 @@ ORG 0x897C4
 SHORT 0x200E 0x5620 //mov r0, #0x0E; ldsb r0, [r4, r0]
 POP
 
+//Fix coordinate loading in WARP codes when not loading from slot B; gamma
+ORG $10C18
+SHORT $7891 $78D2 $0608
+
 //Set Default Options
   ORG $30d8a  //animations type 2
   SHORT $3306
@@ -202,5 +206,7 @@ ORG $58d64
 WORD $8464400
 ORG $464400
 WORD 0x3D046A3D 0x022D682D 0xA5020C28 0x46AE3501 0x47284D01 0x47004801 0x08071991 0x080596CD
+
 }
 POP
+

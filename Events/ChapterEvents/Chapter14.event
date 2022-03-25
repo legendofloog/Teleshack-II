@@ -86,7 +86,7 @@ UNIT Mahemen AxeFighter Nahiza Level(15,NPC,True)[12,18] 0x0 0x0 0x0 0x0 [SteelA
 UNIT
 
 AugurGroup:
-UNIT Augur 0x0 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x0 REDA11R15 [Vulnerary] NoAI
+UNIT Augur Manakete_2_F 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x0 REDA11R5 [Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -211,6 +211,7 @@ Traps2:
 
 
 BeginningScene:
+COUNTER_SET 0 0
 MountAll
 LOAD1 0x1 EnemyUnits
 ENUN
@@ -343,16 +344,6 @@ CHECK_ACTIVEID Cleo
 BEQ 1 s0 sC
 	COUNTER_INC 0
 LABEL 1
-/*
-CheckIfUnitRescuedByActiveASMC(Loewe)
-BEQ 38 s0 sC
-	COUNTER_INC 0
-LABEL 38
-CheckIfUnitRescuedByActiveASMC(Cleo)
-BEQ 39 s0 sC
-	COUNTER_INC 0
-LABEL 39
-*/
 COUNTER_CHECK 0
 SVAL s1 2
 BNE 3 s1 sC

@@ -44,9 +44,9 @@ LocationBasedEvents:
 	Vendor(Ch6Vendor2,13,16)
 	Chest(Javelin,26,6)
 	Chest(Hammer,27,6)
-	Village(0x10,Ch6Village1,10,25)
-	Village(0x11,Ch6Village2,21,26)
-	Village(0x12,Ch6Village3,27,23)
+	Village(0x10,Ch6Village1Event,10,25)
+	Village(0x11,Ch6Village2Event,21,26)
+	Village(0x12,Ch6Village3Event,27,23)
 	House(0x0,Ch6House1,25,23)
 	House(0x0,Ch6House2,25,27)
 	Seize(27, 9)
@@ -500,21 +500,21 @@ LeinaRecruitCromar:
 NoFade
 ENDA
 
-Ch6Village1:
+Ch6Village1Event:
 	SetBackground(House1)
 	Text(Ch6Village1)
 	GiveItem(KillingEdge,-1)
 NoFade
 ENDA
 
-Ch6Village2:
+Ch6Village2Event:
 	SetBackground(House1)
 	Text(Ch6Village2)
 	GiveItem(Mend,-1)
 NoFade
 ENDA
 
-Ch6Village3:
+Ch6Village3Event:
 	SetBackground(House1)
 	Text(Ch6Village3)
 	GiveItem(Lightning,-1)

@@ -256,6 +256,7 @@ LOAD1 1 GreenUnits
 ENUN
 LOAD1 2 LoeweInterludeGroup
 ENUN
+ENUT 0x8B //loewe eyepatch flag
 //GotoPrepScreen
 NoFade
 ENDA

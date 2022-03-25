@@ -214,7 +214,7 @@
 
 // CorundumChampion
 	setPalette(53,CorundumChampion)
-	setCBSP(53,Corundum, 1, Chmapion)
+	setCBSP(53,Corundum, 1, Champion)
 
 // VeniaminForrest
 	setPalette(54,VeniaminForrest)

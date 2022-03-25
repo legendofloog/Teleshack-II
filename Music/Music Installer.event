@@ -21,10 +21,8 @@ SongTable(Lufia2_RoS_Battle2,lufia2_battle2,BattleMusicGroup)
 SongTable(Sortie_Formation,L_Sortie_Formation,MapMusicGroup)
 #include "MusicEvents/FE9 - With Us (Sme).event"
 SongTable(WithUs_Song,WithUs, MapMusicGroup)
-#include "MusicEvents/TRSBerwickSagaPersonalCombat(RSflame).event"
-SongTable(PersonalCombat,song03A2,BattleMusicGroup)
-#include "MusicEvents/Attack Theme.event"
-SongTable(PersonalCombat,song09,BattleMusicGroup)
+#include "MusicEvents/Personal_Combatant_Berwick.event"
+SongTable(PersonalCombat,song0143,BattleMusicGroup)
 #include "MusicEvents/Tales_Of_Symphonia_Rover(Pandan).event"
 SongTable(Rovers,TalesOfSymphonia_Rover,MapMusicGroup)
 #include "MusicEvents/Valkyrie Profile - The Unfinished Battle with God Syndrome (SaXor_the_Nobody).event"
@@ -69,5 +67,5 @@ SongTable(awaywithyou,song13,BattleMusicGroup)
 SongTable(ncastlebridge,song34,MapMusicGroup)
 #include "MusicEvents/GreatCanyon(Psyche,RW).event"
 SongTable(GreatCanyon,GreatCanyon_Psyche_RW_,MapMusicGroup)
-#include "MusicEvents/Berwick Saga - The Knight_s Pride (MrGreen3339).event"
-SongTable(KnightsPride,song0A,MapMusicGroup)
+#include "MusicEvents/Berwick Saga - Knight's Pride (MrGreen).event"
+SongTable(KnightsPride,songC1,MapMusicGroup)

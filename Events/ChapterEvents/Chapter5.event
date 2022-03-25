@@ -17,7 +17,7 @@ TurnEventPlayer(0, EnemyReinforcementsEvent_A, 3)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 5)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 6)
-TurnEventPlayer(0, EndOfSurvive, 9)
+TurnEventPlayer(0, EndOfSurvive, 10)
 END_MAIN
 
 CharacterBasedEvents:
@@ -93,14 +93,15 @@ UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,19] 0x0 0x0 0x0
 UNIT Chapter1Generics DarkMage  Riggan Level(5,Enemy,True) [16,23] 0x0 0x0 0x0 0x0 [Flux,PureWater] TwoActionAI
 UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [Flux,Heal,PureWater] TwoActionAI
 UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [27,5] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
-UNIT Chapter1Generics LanceSoldier Riggan Level(5,Enemy,True) [22,32] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
-UNIT Chapter1Generics LanceSoldier  Riggan Level(5,Enemy,True) [24,27] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Riggan Level(5,Enemy,True) [22,32] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
+UNIT Chapter1Generics DarkMage Riggan Level(5,Enemy,True) [22,29] 0x0 0x0 0x0 0x0 [Flux] ChargeAI
+UNIT Chapter1Generics LanceSoldier  Riggan Level(5,Enemy,True) [24,27] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [9,17] 0x0 0x0 0x0 0x0 [LongLance,ChestKey] BossAI
 UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [9,18] 0x0 0x0 0x0 0x0 [LongLance,Vulnerary] BossAI
 UNIT Chapter1Generics LanceArmor   Riggan Level(5,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [LongLance,ChestKey] BossAI
 UNIT Chapter1Generics SwordFighter  Riggan Level(5,Enemy,True) [15,15] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] TwoActionAI
-UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Thunder,PureWater] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Fire,PureWater] TwoActionAI
 UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [23,19] 0x0 0x0 0x0 0x0 [SteelAxe,Vulnerary] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
@@ -109,7 +110,7 @@ UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [10,7] 0x0 0x0 0x0 
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Longsword] BossAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [19,6] 0x0 0x0 0x0 0x0 [Longsword] BossAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [19,7] 0x0 0x0 0x0 0x0 [Longsword] BossAI
-UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [27,12] 0x0 0x0 0x0 0x0 [Thunder] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [27,12] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT Chapter1Generics Swordfighter   Riggan Level(5,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [5,4] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,5] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
@@ -140,6 +141,7 @@ UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [32,34] 0x0 0x0 
 UNIT
 
 EnemyReinforcementsEvent_B:
+Text(RigganReinforcement)
 CamOn
 LOAD1 1 EnemyReinforcements_B
 ENUN
@@ -157,6 +159,7 @@ Text(AtPort)
 CenterTextbox(SysTextMomentsLater)
 Text(MeetingLongxia)
 SetBackground(Boat)
+MUSC Rovers
 Text(BoatTalk)
 MUSC Tension
 Text(TensionCh5Text)

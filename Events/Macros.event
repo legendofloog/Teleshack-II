@@ -1,3 +1,4 @@
+#define EraseBackground "CALL $9EE2C4"
 #define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
 #define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 30"
 #define MaxTurns(TurnNum) "256 - TurnNum"
@@ -40,6 +41,7 @@
 #define CameraCursor(character) "CAM1 character; STAL 20; FlashCursor(character,60)"
 #define CameraLong(character,time) "CAM1 character; STAL 20; FlashCursor(character,time)"
 #define CameraMove(character) "CAM1 [character]"
+#define CameraCursorLocation(X,Y,time) "CAMERA [X,Y]; STAL 20; FlashCursor(X,Y,time)"
 #define Highlight(character) "CUMO [character]; STAL 60; CURE"
 #define MusicChange(song) "MUSC song"
 #define Music(song) "MUSC song"
@@ -81,7 +83,7 @@
 #define BrigandAI           [0x0,0x4,0x4,0x0]
 #define WallAI				[0x0,0xB,0x4,0x0]
 #define EscapeAI		    [0x0,0xC,0x4,0x0]
-#define EscapeOnlyAI		[0x6,0xC,0x4,0x40]
+#define EscapeOnlyAI		[0x6,0xC,0x4,0x0]
 #define NMHealAI [0x03,0x03,0x00,0x20]
 
 #define CommanderAI [0xD,3,4,0]
