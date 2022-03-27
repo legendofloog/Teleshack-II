@@ -85,7 +85,7 @@ BYTE HardCharLock
 BYTE Varga
 BYTE EndLockArray
 
-ChargeArray:
+ChargeLanceArray:
 BYTE HardCharLock
 BYTE Emil
 BYTE EndLockArray

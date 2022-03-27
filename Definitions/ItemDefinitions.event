@@ -184,7 +184,7 @@
 #define TrainedAxe 0xD6
 #define TrainedArc 0xD7
 #define AquaBrand 0xD8
-#define Charge 0xD9
+#define ChargeLance 0xD9
 #define Poincare 0xDA
 #define Sink 0xDB
 #define WoodlandsHuke 0xDC

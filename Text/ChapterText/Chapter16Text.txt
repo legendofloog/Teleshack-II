@@ -243,7 +243,7 @@ Sir Elias[Beat][N]
 I have no words.[N]
 I will use it well.[A][X]
 
-## Ch2_Opening_3
+## Ch16_Opening_3
 
 [FarLeft][LoadKwame][Left][LoadLoewe][Right][LoadElias][FarRight][LoadCleo]
 [FarLeft][ThreeLineBox]
@@ -293,7 +293,7 @@ of coffee this morning.[A]
 [Right][OneLineBox]
 We should not linger.[A][X]
 
-## Ch2_Opening_4
+## Ch16_Opening_4
 
 [MidLeft][LoadKwame][MidRight][LoadLoewe]
 [MidRight][ThreeLineBox]
@@ -355,7 +355,7 @@ I do[Beat][N]
 Let's make sure everyone is ready.[N]
 We don't know what to expect[Beat][A][X]
 
-## Ch2_Opening_5
+## Ch16_Opening_5
 
 [FarLeft][LoadKwame][Left][LoadLoewe][Right][LoadCatrin]
 [Right][ThreeLineBox]
@@ -392,7 +392,7 @@ Boro, lead the way.[A]
 [FarRight][OneLineBox]
 [Beat] Alright.[A][X]
 
-## Ch2_Opening_6 
+## Ch16_Opening_6 
 
 [FarLeft][LoadCleo][Left][LoadLoewe][Right][LoadCatrin][FarRight][LoadBoro]
 [Right][TwoLineBox]
@@ -623,6 +623,30 @@ That is all? Will not be a problem.[N]
 To my friends, I am Rashid.[AN]
 To my enemies, I am the Sidewinder![N]
 Come, let me show you how I once fought![A][X]
+
+## Colossus_1
+[MidRight][LoadBoro][MidLeft][LoadCatrin]
+Hngh[Beat] They just keep[N]
+on coming.[A]
+[MidRight]
+We shouldn't stick around much longer.[N]
+There are footsteps down below.[A]
+[MidLeft]
+Yes[Beat] he has awoken from his slumber.[N]
+Boro. We should get going.[AN]
+Let's hope we've done enough to give[N]
+the rest time to escape.[A]
+[MidRight]
+Good. I thought you'd be willing to die here.[N]
+Because I'm not.[AN]
+Let's go.[N]
+Hurry! To the exit![A][X]
+
+## Colossus_2
+
+[MidLeft][LoadColossus]
+[MidLeft][OneLineBox]
+[Beat][A][X]
 
 ## HamdiBossQ
 
@@ -880,7 +904,7 @@ Ah[Beat] alright. I will keep[N]
 what everyone said in mind.[N]
 Thank you[Beat] everyone.[A][X]
 
-## Ch6_Ending_LoeweCleoNight_1
+## Ch16_Ending_LoeweCleoNight_1
 
 [MidRight][LoadLoewe]
 [MidRight][ThreeLineBox]
@@ -894,7 +918,7 @@ Now[Beat] the entire fate of Orodreth[N]
 is at stake? And why do I have this power?[N]
 My mother must know more[Beat][A][X]
 
-## Ch6_Ending_LoeweCleoNight_2
+## Ch16_Ending_LoeweCleoNight_2
 
 [MidRight][LoadLoewe][MidLeft][LoadCleo]
 [MidRight][TwoLineBox]

@@ -333,10 +333,10 @@ Aqua Brand[X]
 ## AquaBrandDesc
 Varga[LockIcon]. Magic damage. +5 SPD.[X]
 
-## ChargeName
+## ChargeLanceName
 Charge[X]
 
-## ChargeDesc
+## ChargeLanceDesc
 Emil[LockIcon]. Brave.[X]
 
 ## PoincareName
@@ -358,7 +358,7 @@ Eff. vs. mages and bards.[X]
 +2 SKL/RES when equipped. +1 Bow Rng.[X]
 
 ## CaptainsHelmName
-[_C][_a][_p][_t][_a][_i][_n][_'][_s] [_H][_e][_l][_m][X]
+[_C][_a][_p][_t][_a][_i][_n]'[_s] [_H][_e][_l][_m][X]
 
 ## CaptainsHelmDesc
 +1 Str/Mag/Skl/Spd/Def/Res. Equip.[X]
