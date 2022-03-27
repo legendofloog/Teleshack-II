@@ -1,0 +1,1275 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	anxietytest_grp  voicegroup000
+	#define	anxietytest_pri  0
+	#define	anxietytest_rev  0
+	#define	anxietytest_mvl  120
+	#define	anxietytest_key  0
+	#define	anxietytest_tbs  1
+	#define	anxietytest_exg  0
+	#define	anxietytest_cmp  1
+
+	// .rodata
+	//	anxietytest
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+anxietytest_1:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   120*anxietytest_tbs/2
+	BYTE		VOICE   50
+	BYTE		VOL     56*anxietytest_mvl/mxv
+	BYTE		PAN     c_v+24
+	BYTE		N23     Dn1   v127
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W60
+// 001   ----------------------------------------
+anxietytest_1_001:
+	BYTE		N23     Dn1   v127
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE	W36
+	BYTE	PEND
+// 002   ----------------------------------------
+anxietytest_1_002:
+	BYTE		N23     Dn1   v127
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W60
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 007   ----------------------------------------
+anxietytest_1_007:
+	BYTE		N23     Dn1   v127
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		        Gs1 
+	BYTE	W36
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_1_007
+// 018   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		PAN     c_v+8
+	BYTE		N92     Ds3   v127
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	anxietytest_1_B1
+anxietytest_1_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+anxietytest_2:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   63
+	BYTE		VOL     46*anxietytest_mvl/mxv
+	BYTE		PAN     c_v-24
+	BYTE		N11     Dn2   v076
+	BYTE	W12
+	BYTE		        Dn2   v024
+	BYTE	W84
+// 001   ----------------------------------------
+anxietytest_2_001:
+	BYTE		N11     Dn2   v076
+	BYTE	W12
+	BYTE		        Dn2   v024
+	BYTE	W84
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 008   ----------------------------------------
+	BYTE		N92     Gs1   v092
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_2_001
+// 018   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		N92     Gs2   v112
+	BYTE		N92     Bn2   v127
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		        Cn3   v112
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		        Cs3 
+	BYTE		N92     Fs3   v127
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		        Cs3   v112
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		        An2 
+	BYTE		N92     Dn3   v127
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Cn3   v112
+	BYTE		N92     Fn3   v127
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		        Ds3   v112
+	BYTE		N92     Gs3   v127
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	anxietytest_2_B1
+anxietytest_2_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+anxietytest_3:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   51
+	BYTE		VOL     52*anxietytest_mvl/mxv
+	BYTE		PAN     c_v+6
+	BYTE		N23     Dn2   v112
+	BYTE	W24
+	BYTE		N05     Ds2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W60
+// 001   ----------------------------------------
+anxietytest_3_001:
+	BYTE		N23     Dn2   v112
+	BYTE	W24
+	BYTE		N05     Ds2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W36
+	BYTE	PEND
+// 002   ----------------------------------------
+anxietytest_3_002:
+	BYTE		N23     Dn2   v112
+	BYTE	W24
+	BYTE		N05     Ds2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W60
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 007   ----------------------------------------
+anxietytest_3_007:
+	BYTE		N23     Dn2   v112
+	BYTE	W24
+	BYTE		N05     Ds2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		        Gs2 
+	BYTE	W36
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_3_007
+// 018   ----------------------------------------
+	BYTE		VOICE   50
+	BYTE		PAN     c_v+32
+	BYTE		N92     Gs1   v127
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        Ds1 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		        Fs1 
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		        As0 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		        Dn1 
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Fn1 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	anxietytest_3_B1
+anxietytest_3_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+anxietytest_4:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   14
+	BYTE		VOL     54*anxietytest_mvl/mxv
+	BYTE		PAN     c_v+20
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE		N92     Gs3   v127
+	BYTE	W96
+// 009   ----------------------------------------
+anxietytest_4_009:
+	BYTE		PAN     c_v-20
+	BYTE		N92     Cn3   v127
+	BYTE	W96
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE		PAN     c_v+20
+	BYTE		N23     Dn3   v072
+	BYTE	W24
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE		N06     Ds3   v032
+	BYTE	W06
+	BYTE		N05     Fn3   v072
+	BYTE	W06
+	BYTE		N06     Fn3   v032
+	BYTE	W54
+// 011   ----------------------------------------
+anxietytest_4_011:
+	BYTE		N23     Dn3   v072
+	BYTE	W24
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE		N06     Ds3   v032
+	BYTE	W06
+	BYTE		N05     Fn3   v072
+	BYTE	W06
+	BYTE		N06     Fn3   v032
+	BYTE	W18
+	BYTE		N05     Cn3   v072
+	BYTE	W06
+	BYTE		N06     Cn3   v032
+	BYTE	W30
+	BYTE	PEND
+// 012   ----------------------------------------
+anxietytest_4_012:
+	BYTE		N23     Dn3   v072
+	BYTE	W24
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE		N06     Ds3   v032
+	BYTE	W06
+	BYTE		N05     Fn3   v072
+	BYTE	W06
+	BYTE		N06     Fn3   v032
+	BYTE	W54
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_4_011
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_4_012
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_4_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_4_012
+// 017   ----------------------------------------
+	BYTE		N23     Dn3   v072
+	BYTE	W24
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE		N06     Ds3   v032
+	BYTE	W06
+	BYTE		N05     Fn3   v072
+	BYTE	W06
+	BYTE		N06     Fn3   v032
+	BYTE	W18
+	BYTE		N05     Gs3   v072
+	BYTE	W06
+	BYTE		N06     Gs3   v032
+	BYTE	W30
+// 018   ----------------------------------------
+	BYTE		VOICE   14
+	BYTE		N92     Gs3   v127
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_4_009
+// 020   ----------------------------------------
+	BYTE		PAN     c_v+24
+	BYTE		N92     Ds3   v127
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		PAN     c_v-20
+	BYTE		N92     Fs3 
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		PAN     c_v+24
+	BYTE		N92     As2 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		PAN     c_v-20
+	BYTE		N92     Dn3 
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		PAN     c_v+24
+	BYTE		N92     Fn3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		PAN     c_v-20
+	BYTE		N92     Gs3 
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	anxietytest_4_B1
+anxietytest_4_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+anxietytest_5:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   47
+	BYTE		VOL     46*anxietytest_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N23     Dn3   v127
+	BYTE	W96
+// 001   ----------------------------------------
+anxietytest_5_001:
+	BYTE		N23     Dn3   v127
+	BYTE	W72
+	BYTE		N05     An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N23     Dn3 
+	BYTE	W96
+// 003   ----------------------------------------
+anxietytest_5_003:
+	BYTE		N23     Dn3   v127
+	BYTE	W72
+	BYTE		N05     An3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE		N23     Dn3 
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_5_001
+// 006   ----------------------------------------
+	BYTE		N23     Dn3   v127
+	BYTE	W96
+// 007   ----------------------------------------
+anxietytest_5_007:
+	BYTE		N23     Dn3   v127
+	BYTE	W36
+	BYTE		N11     Fn3 
+	BYTE	W24
+	BYTE		        Gs3 
+	BYTE	W36
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE		N23     Dn3 
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_5_001
+// 012   ----------------------------------------
+	BYTE		N23     Dn3   v127
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_5_003
+// 014   ----------------------------------------
+	BYTE		N23     Dn3   v127
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_5_001
+// 016   ----------------------------------------
+	BYTE		N23     Dn3   v127
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_5_007
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W60
+	BYTE		N02     Dn3   v127
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+// 026   ----------------------------------------
+	BYTE		N23   
+	BYTE		N11     Dn4 
+	BYTE	W60
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		N05     An3 
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	anxietytest_5_B1
+anxietytest_5_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+anxietytest_6:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     48*anxietytest_mvl/mxv
+	BYTE		PAN     c_v+22
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE		N92     Bn2   v127
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		        Ds3 
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		N44     An3 
+	BYTE	W48
+	BYTE		N10     Cs3 
+	BYTE	W16
+	BYTE		        Ds3 
+	BYTE	W16
+	BYTE		        En3 
+	BYTE	W16
+// 022   ----------------------------------------
+	BYTE		N92     Fn3 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	anxietytest_6_B1
+anxietytest_6_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+anxietytest_7:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   2
+	BYTE		VOL     32*anxietytest_mvl/mxv
+	BYTE		PAN     c_v-34
+	BYTE		N23     Dn1   v116
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W60
+// 001   ----------------------------------------
+anxietytest_7_001:
+	BYTE		N23     Dn1   v116
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE	W36
+	BYTE	PEND
+// 002   ----------------------------------------
+anxietytest_7_002:
+	BYTE		N23     Dn1   v116
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W60
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 007   ----------------------------------------
+anxietytest_7_007:
+	BYTE		N23     Dn1   v116
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		        Gs1 
+	BYTE	W36
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE		VOICE   60
+	BYTE		N92     Gs2   v080
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        Cn2 
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE		VOICE   2
+	BYTE		N23     Dn1   v116
+	BYTE	W24
+	BYTE		N05     Ds1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W60
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_7_007
+// 018   ----------------------------------------
+	BYTE		VOICE   60
+	BYTE		N92     Ds3   v108
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Gs3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	anxietytest_7_B1
+anxietytest_7_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+anxietytest_8:
+	BYTE	KEYSH   anxietytest_key+0
+anxietytest_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     28*anxietytest_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+// 001   ----------------------------------------
+anxietytest_8_001:
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N03     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+anxietytest_8_002:
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_001
+// 004   ----------------------------------------
+	BYTE		N05     Dn1   v096
+	BYTE		N11     Gn2   v088
+	BYTE	W06
+	BYTE		N05     Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_002
+// 007   ----------------------------------------
+anxietytest_8_007:
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N03     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N03     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 008   ----------------------------------------
+anxietytest_8_008:
+	BYTE		N02     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W03
+	BYTE		        Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N02   
+	BYTE	W06
+	BYTE		N02   
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W03
+	BYTE		        Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE	PEND
+// 009   ----------------------------------------
+anxietytest_8_009:
+	BYTE		N02     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+	BYTE		N03     Dn1   v096
+	BYTE	W03
+	BYTE		N02     Dn1   v080
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W06
+	BYTE		N05     Dn1   v096
+	BYTE	W06
+	BYTE		N02     Dn1   v080
+	BYTE	W06
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_002
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_007
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_008
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_009
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_009
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_008
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_009
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	anxietytest_8_008
+	BYTE	GoTo
+	 POIN2	anxietytest_8_B1
+anxietytest_8_B2:
+// 027   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+FFT_Anxiety:
+	BYTE	8	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	anxietytest_pri	// Priority
+	BYTE	anxietytest_rev	// Reverb.
+
+	POIN2	anxietytest_grp
+
+	POIN2	anxietytest_1
+	POIN2	anxietytest_2
+	POIN2	anxietytest_3
+	POIN2	anxietytest_4
+	POIN2	anxietytest_5
+	POIN2	anxietytest_6
+	POIN2	anxietytest_7
+	POIN2	anxietytest_8
+
+	

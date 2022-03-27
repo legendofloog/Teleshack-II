@@ -1,0 +1,7 @@
+// changes it so class id 0x0 gets bonus exp
+
+PUSH
+	ORG $2c3fe
+	BYTE 0x0
+POP
+

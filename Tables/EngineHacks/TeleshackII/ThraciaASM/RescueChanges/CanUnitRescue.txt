@@ -1,0 +1,23 @@
+PUSH {r4,lr}   //CanUnitRescue
+MOV r4 ,r1
+BL 0x080189B8   //GetUnitAid
+LDR r1, [r4, #0x4] // loads class data
+MOV r2, #0x11 
+LDSB r2, [r1, r2] // gets the class con
+LDR r1, [r4, #0x0] // loads char data
+LDSB r1, [r1, #0x13] // gets the char con
+// can ignore? LSL r1, #0x18    
+// ASR r1, #0x18    // casts the unsigned char con byte to be signed
+ADD r2, r1       // adds class and char con
+MOV r1, #0x1A
+LDSB r1, [r4, r1]
+ADD r2 , r1      // adds con bonus to char and class con
+MOV r1, #0x0
+SUB r0, #0x1
+CMP r0 ,r2       // returns r0 - r2 = rescuer aid - rescued con
+BLT #0x8018342 // skips over mov r1 if r0 is less than r2
+    MOV r1, #0x1 // seems nothing here needs to be changed
+MOV r0 ,r1
+POP {r4}
+POP {r1}
+BX r1

@@ -1,0 +1,98 @@
+
+#ifdef ADV_WEAPON_LOCKS
+
+//Original by Vennobennu, rewritten by Sme for skill system/general buildfile compatibility
+
+//Make prf weapons defined via array with no wrank say "Prf" (not thoroughly tested)
+PUSH
+ORG 0x16DD8
+BYTE $00 $3C $3D $FF 
+POP
+
+
+#inctext lyn "AdvWeaponLocks.elf"
+
+#define SoftCharLock 0
+#define HardCharLock 1
+#define SoftClassLock 2
+#define HardClassLock 3
+#define EndLockArray 0
+
+
+KaiserschwertArray:
+BYTE HardClassLock
+BYTE Dragonlord
+BYTE HardClassLock
+BYTE Dragonlord_Dismounted
+BYTE EndLockArray
+
+ArgilabrysArray:
+BYTE HardCharLock
+BYTE Cleo
+BYTE Elias
+BYTE EndLockArray
+
+DevilDaggerArray:
+BYTE HardCharLock
+BYTE Mish
+BYTE EndLockArray
+
+BalladOfWarArray:
+BYTE HardCharLock
+BYTE Cadenza
+BYTE EndLockArray
+
+AxleArray:
+BYTE HardCharLock
+BYTE Alex
+BYTE Axel
+BYTE EndLockArray
+
+StingerArray:
+BYTE HardCharLock
+BYTE Hornet
+BYTE EndLockArray
+
+StormbrandArray:
+BYTE HardCharLock
+BYTE Iskra
+BYTE EndLockArray
+
+MuramasaArray:
+BYTE HardCharLock
+BYTE Carl
+BYTE EndLockArray
+
+BreakerArray:
+BYTE HardCharLock
+BYTE Ellerey
+BYTE EndLockArray
+
+HoundingArray:
+BYTE HardCharLock
+BYTE Darby
+BYTE EndLockArray
+
+DragonstoneArray:
+BYTE HardClassLock
+BYTE Manakete
+BYTE Manakete_2
+BYTE Manakete_2_F
+BYTE EndLockArray
+
+AquaBrandArray:
+BYTE HardCharLock
+BYTE Varga
+BYTE EndLockArray
+
+ChargeArray:
+BYTE HardCharLock
+BYTE Emil
+BYTE EndLockArray
+
+PoincareArray:
+BYTE HardCharLock
+BYTE Rashid
+BYTE EndLockArray
+
+#endif // ADV_WEAPON_LOCKS

@@ -1,0 +1,3524 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	lufia2_battle2_grp  voicegroup000
+	#define	lufia2_battle2_pri  0
+	#define	lufia2_battle2_rev  0
+	#define	lufia2_battle2_mvl  120
+	#define	lufia2_battle2_key  0
+	#define	lufia2_battle2_tbs  1
+	#define	lufia2_battle2_exg  0
+	#define	lufia2_battle2_cmp  1
+
+	// .rodata
+	//	lufia2_battle2
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+lufia2_battle2_1:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   175*lufia2_battle2_tbs/2
+	BYTE		VOICE   36
+	BYTE		VOL     57*lufia2_battle2_mvl/mxv
+	BYTE		N09     Bn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+// 001   ----------------------------------------
+lufia2_battle2_1_001:
+	BYTE		N09     Bn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+lufia2_battle2_1_B1:
+// 004   ----------------------------------------
+lufia2_battle2_1_004:
+	BYTE		N09     Gn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+lufia2_battle2_1_005:
+	BYTE		N09     Gn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+lufia2_battle2_1_006:
+	BYTE		N09     Bn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+lufia2_battle2_1_007:
+	BYTE		N09     Bn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+lufia2_battle2_1_008:
+	BYTE		N09     Gn1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        Gs1 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+lufia2_battle2_1_009:
+	BYTE		N09     An1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        Gs1 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+	BYTE		        As1 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_001
+// 011   ----------------------------------------
+	BYTE		N09     Bn1   v080
+	BYTE	W12
+	BYTE		N12     An2   v072
+	BYTE	W12
+	BYTE		        Gs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_008
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_001
+// 019   ----------------------------------------
+	BYTE		N09     Bn1   v080
+	BYTE	W72
+	BYTE		N24     An1 
+	BYTE	W03
+	BYTE		N06     Gs1   v044
+	BYTE	W21
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_005
+// 022   ----------------------------------------
+lufia2_battle2_1_022:
+	BYTE		N09     Fs1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 023   ----------------------------------------
+lufia2_battle2_1_023:
+	BYTE		N09     Fs1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        En1 
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE	PEND
+// 024   ----------------------------------------
+lufia2_battle2_1_024:
+	BYTE		N09     En1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 025   ----------------------------------------
+lufia2_battle2_1_025:
+	BYTE		N09     En1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE	PEND
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_022
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_022
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_023
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_024
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_025
+// 034   ----------------------------------------
+	BYTE		N32     Fs1   v080
+	BYTE	W36
+	BYTE		N32   
+	BYTE	W36
+	BYTE		N21   
+	BYTE	W24
+// 035   ----------------------------------------
+	BYTE		N84   
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_001
+// 037   ----------------------------------------
+lufia2_battle2_1_037:
+	BYTE		N09     As1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 038   ----------------------------------------
+lufia2_battle2_1_038:
+	BYTE		N09     An1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 039   ----------------------------------------
+lufia2_battle2_1_039:
+	BYTE		N09     Gs1   v080
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE		N09   
+	BYTE	W12
+	BYTE	PEND
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_004
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_022
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_024
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_022
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_001
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_037
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_038
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_039
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_004
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_038
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_1_001
+// 051   ----------------------------------------
+	BYTE		N96     Bn1   v080
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_1_B1
+lufia2_battle2_1_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+lufia2_battle2_2:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     51*lufia2_battle2_mvl/mxv
+	BYTE		PAN     c_v-26
+	BYTE		TIE     Bn2   v064
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE		        An3   v056
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE		        Gn4   v044
+	BYTE	W96
+	BYTE		EOT     Bn2 
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		        An3 
+	BYTE		        Gn4 
+lufia2_battle2_2_B1:
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+lufia2_battle2_2_036:
+	BYTE		N36     Fs4   v064
+	BYTE	W36
+	BYTE		N12     Fs4   v036
+	BYTE		N36     Dn5   v064
+	BYTE	W36
+	BYTE		N24     Cs5 
+	BYTE		N12     Dn5   v036
+	BYTE	W24
+	BYTE	PEND
+// 037   ----------------------------------------
+lufia2_battle2_2_037:
+	BYTE		N72     Fs4   v064
+	BYTE		N12     Cs5   v036
+	BYTE	W72
+	BYTE		        En4   v064
+	BYTE		N12     Fs4   v036
+	BYTE	W12
+	BYTE		        Dn4   v064
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE	PEND
+// 038   ----------------------------------------
+lufia2_battle2_2_038:
+	BYTE		N12     Dn4   v036
+	BYTE		N36     En4   v064
+	BYTE	W36
+	BYTE		N12     En4   v036
+	BYTE		N36     Fs4   v064
+	BYTE	W36
+	BYTE		N12     Fs4   v036
+	BYTE		N24     An4   v064
+	BYTE	W24
+	BYTE	PEND
+// 039   ----------------------------------------
+lufia2_battle2_2_039:
+	BYTE		N36     Fs4   v064
+	BYTE		N12     An4   v036
+	BYTE	W36
+	BYTE		N60     Bn3   v064
+	BYTE		N12     Fs4   v036
+	BYTE	W60
+	BYTE	PEND
+// 040   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE		N60     Dn4   v064
+	BYTE	W60
+	BYTE		N12     Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE		N12     En4   v064
+	BYTE	W12
+// 041   ----------------------------------------
+	BYTE		N36     Dn4 
+	BYTE		N12     En4   v036
+	BYTE	W36
+	BYTE		N36     An3   v064
+	BYTE		N12     Dn4   v036
+	BYTE	W36
+	BYTE		        An3 
+	BYTE		N24     An4   v064
+	BYTE	W24
+// 042   ----------------------------------------
+	BYTE		N60     Gn4 
+	BYTE		N12     An4   v036
+	BYTE	W60
+	BYTE		        Fs4   v064
+	BYTE		N12     Gn4   v036
+	BYTE	W12
+	BYTE		        En4   v064
+	BYTE		N12     Fs4   v036
+	BYTE	W12
+	BYTE		        Dn4   v064
+	BYTE		N12     En4   v036
+	BYTE	W12
+// 043   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE		N96     Fs4   v064
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_2_036
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_2_037
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_2_038
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_2_039
+// 048   ----------------------------------------
+	BYTE		N12     Bn3   v036
+	BYTE		N60     Dn4   v064
+	BYTE	W60
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+// 049   ----------------------------------------
+	BYTE		        Dn4   v036
+	BYTE		N48     En4   v064
+	BYTE	W48
+	BYTE		N12     En4   v036
+	BYTE		N48     An4   v064
+	BYTE	W48
+// 050   ----------------------------------------
+	BYTE		N12     An4   v036
+	BYTE		TIE     Bn4   v064
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_2_B1
+lufia2_battle2_2_B2:
+// 052   ----------------------------------------
+	BYTE		N12     Bn4   v036
+	BYTE	W12
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+lufia2_battle2_3:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   41
+	BYTE		VOL     51*lufia2_battle2_mvl/mxv
+	BYTE		PAN     c_v+24
+	BYTE	W48
+	BYTE		TIE     En3   v064
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE	W48
+	BYTE		        Dn4 
+	BYTE	W48
+// 002   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     En3 
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		        Dn4 
+lufia2_battle2_3_B1:
+// 004   ----------------------------------------
+	BYTE	W24
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE	W12
+	BYTE		        Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE	W36
+// 005   ----------------------------------------
+lufia2_battle2_3_005:
+	BYTE		N06     Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		        Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W18
+	BYTE		N24     En4   v064
+	BYTE	W24
+	BYTE		N12     Dn4 
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE		        Cs4   v064
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+	BYTE		        An3   v064
+	BYTE		N12     Cs4   v036
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+lufia2_battle2_3_006:
+	BYTE		N12     An3   v036
+	BYTE	W24
+	BYTE		        Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE	W12
+	BYTE		        Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE	W36
+	BYTE	PEND
+// 007   ----------------------------------------
+lufia2_battle2_3_007:
+	BYTE		N06     Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		        Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W18
+	BYTE		N24     Cs4   v064
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        An3 
+	BYTE		N12     Cs4   v036
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+lufia2_battle2_3_008:
+	BYTE		N12     An3   v036
+	BYTE	W24
+	BYTE		        Bn3   v064
+	BYTE	W12
+	BYTE		        Bn3   v036
+	BYTE	W12
+	BYTE		        Bn3   v064
+	BYTE	W12
+	BYTE		        Bn3   v036
+	BYTE	W36
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+	BYTE		        Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W18
+	BYTE		N24     Dn4   v064
+	BYTE	W24
+	BYTE		N12     Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE		N12     En4   v064
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		        En4   v036
+	BYTE	W24
+	BYTE		        En4   v064
+	BYTE	W12
+	BYTE		        En4   v036
+	BYTE	W12
+	BYTE		        Fs4   v064
+	BYTE	W12
+	BYTE		        Fs4   v036
+	BYTE	W36
+// 011   ----------------------------------------
+	BYTE		        Bn4   v064
+	BYTE	W12
+	BYTE		        An4 
+	BYTE		N12     Bn4   v036
+	BYTE	W12
+	BYTE		        Gs4   v064
+	BYTE		N12     An4   v036
+	BYTE	W12
+	BYTE		        En4   v064
+	BYTE		N12     Gs4   v036
+	BYTE	W12
+	BYTE		        En4 
+	BYTE		N12     Fs4   v064
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N12     Fs4   v036
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N12     En4   v064
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     En4   v036
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE		        Cs4 
+	BYTE	W24
+	BYTE		        Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE	W12
+	BYTE		        Dn4   v064
+	BYTE	W12
+	BYTE		        Dn4   v036
+	BYTE	W36
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_008
+// 017   ----------------------------------------
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+	BYTE		        Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W18
+	BYTE		N24     Dn4   v064
+	BYTE	W24
+	BYTE		N12     Dn4   v036
+	BYTE		N24     En4   v064
+	BYTE	W24
+	BYTE		N12     En4   v036
+	BYTE		N12     Fs4   v064
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE		        Fs4   v036
+	BYTE	W24
+	BYTE		N24     Gn4   v064
+	BYTE	W24
+	BYTE		        Fs4 
+	BYTE		N12     Gn4   v036
+	BYTE	W24
+	BYTE		N24     En4   v064
+	BYTE		N12     Fs4   v036
+	BYTE	W24
+// 019   ----------------------------------------
+	BYTE		        Dn4   v064
+	BYTE		N12     En4   v036
+	BYTE	W24
+	BYTE		        Dn4   v044
+	BYTE	W24
+	BYTE		        Dn4   v036
+	BYTE	W24
+	BYTE		        Dn4   v064
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+// 020   ----------------------------------------
+lufia2_battle2_3_020:
+	BYTE		N48     Dn3   v064
+	BYTE		N48     Bn3 
+	BYTE		N12     Cs4   v036
+	BYTE	W48
+	BYTE		N72     An3   v064
+	BYTE		N12     Bn3   v036
+	BYTE		N72     Fs4   v064
+	BYTE	W48
+	BYTE	PEND
+// 021   ----------------------------------------
+lufia2_battle2_3_021:
+	BYTE	W24
+	BYTE		N24     Gn3   v064
+	BYTE		N24     En4 
+	BYTE		N12     Fs4   v036
+	BYTE	W24
+	BYTE		N36     Dn3   v064
+	BYTE		N12     En4   v036
+	BYTE		N36     An4   v064
+	BYTE	W36
+	BYTE		N12     En3 
+	BYTE		N12     An4   v036
+	BYTE		N12     Bn4   v064
+	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
+lufia2_battle2_3_022:
+	BYTE		N48     Fs3   v064
+	BYTE		TIE     Fs4 
+	BYTE		N12     Bn4   v036
+	BYTE	W48
+	BYTE		N48     Cs3   v064
+	BYTE	W48
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE		N96     An2 
+	BYTE	W60
+	BYTE		EOT     Fs4 
+	BYTE		N12     Fs3 
+	BYTE		N12     Fs4   v036
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+// 024   ----------------------------------------
+	BYTE		N48     Bn2   v064
+	BYTE		N84     Bn3 
+	BYTE		N12     Cs4   v036
+	BYTE	W48
+	BYTE		N48     Cs3   v064
+	BYTE	W36
+	BYTE		N12     An3 
+	BYTE		N12     Bn3   v036
+	BYTE	W12
+// 025   ----------------------------------------
+	BYTE		N48     Dn3   v064
+	BYTE		N12     An3   v036
+	BYTE		N66     Bn3   v064
+	BYTE	W48
+	BYTE		N24     En3 
+	BYTE	W12
+	BYTE		N12     Fs3 
+	BYTE	W06
+	BYTE		        Bn3   v036
+	BYTE	W06
+	BYTE		N24     Fs3   v064
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE		N72     Gn3   v064
+	BYTE		N72     Bn3 
+	BYTE		N12     Cs4   v036
+	BYTE	W72
+	BYTE		N24     Fs3   v064
+	BYTE		N12     Bn3   v036
+	BYTE		N12     Cs4   v064
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N12     Cs4   v036
+	BYTE	W12
+// 027   ----------------------------------------
+	BYTE		N96     Cs3   v064
+	BYTE		N72     As3 
+	BYTE		N12     Bn3   v036
+	BYTE	W72
+	BYTE		        As3 
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_3_022
+// 031   ----------------------------------------
+	BYTE		N96     An2   v064
+	BYTE	W24
+	BYTE		EOT     Fs4 
+	BYTE		N24     Dn4 
+	BYTE		N12     Fs4   v036
+	BYTE	W24
+	BYTE		N24     Cs4   v064
+	BYTE		N12     Dn4   v036
+	BYTE	W24
+	BYTE		N24     An3   v064
+	BYTE		N12     Cs4   v036
+	BYTE	W24
+// 032   ----------------------------------------
+	BYTE		N48     Bn2   v064
+	BYTE		N12     An3   v036
+	BYTE		N36     Bn3   v064
+	BYTE	W36
+	BYTE		N12     Bn3   v036
+	BYTE		N12     Fs4   v064
+	BYTE	W12
+	BYTE		N48     Cs3 
+	BYTE		N72     Fs4 
+	BYTE	W48
+// 033   ----------------------------------------
+	BYTE		N48     Dn3 
+	BYTE	W24
+	BYTE		N12     Fs4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE		N12     Fs4   v036
+	BYTE	W12
+	BYTE		N24     En3   v064
+	BYTE		N12     En4   v036
+	BYTE		N12     An4   v064
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE		N12     An4   v036
+	BYTE	W12
+	BYTE		N24     Fs3   v064
+	BYTE		N12     Fs4 
+	BYTE		N12     Gn4   v036
+	BYTE	W12
+	BYTE		        En4   v064
+	BYTE		N12     Fs4   v036
+	BYTE	W12
+// 034   ----------------------------------------
+	BYTE		N96     As3   v064
+	BYTE		N12     En4   v036
+	BYTE		TIE     Fs4   v064
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE		N96     Fs3 
+	BYTE	W96
+	BYTE		EOT     Fs4 
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_3_B1
+lufia2_battle2_3_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+lufia2_battle2_4:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     57*lufia2_battle2_mvl/mxv
+	BYTE		PAN     c_v-26
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+lufia2_battle2_4_B1:
+// 004   ----------------------------------------
+	BYTE	W12
+	BYTE		N12     Bn3   v064
+	BYTE	W12
+	BYTE		        Bn3   v036
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+	BYTE		        Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		N24     En4   v064
+	BYTE	W24
+	BYTE		N12     Bn3 
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+// 005   ----------------------------------------
+lufia2_battle2_4_005:
+	BYTE		N06     Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		N36     En4   v064
+	BYTE	W36
+	BYTE		N03     Ds4 
+	BYTE		N03     En4   v036
+	BYTE	W03
+	BYTE		N06     Ds4 
+	BYTE		N09     En4   v064
+	BYTE	W09
+	BYTE		N12     Dn4 
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE		        Cs4   v064
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+	BYTE		        Bn3   v064
+	BYTE		N12     Cs4   v036
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE		N36     Cs4   v064
+	BYTE	W36
+	BYTE		N12     Cs4   v036
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		TIE     Fs3 
+	BYTE		N12     Dn4   v036
+	BYTE	W48
+// 007   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Fs3 
+// 008   ----------------------------------------
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Bn3   v064
+	BYTE	W12
+	BYTE		        Bn3   v036
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+	BYTE		        Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		N24     En4   v064
+	BYTE	W24
+	BYTE		N12     Bn3 
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+// 009   ----------------------------------------
+	BYTE		        Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		N36     En4   v064
+	BYTE	W36
+	BYTE		N03     Ds4 
+	BYTE		N03     En4   v036
+	BYTE	W03
+	BYTE		N06     Ds4 
+	BYTE		N09     En4   v064
+	BYTE	W09
+	BYTE		N12     Dn4 
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE		        Cs4   v064
+	BYTE		N12     Dn4   v036
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		        Dn4   v036
+	BYTE		N36     En4   v064
+	BYTE	W36
+	BYTE		N12     En4   v036
+	BYTE		N12     An4   v064
+	BYTE	W12
+	BYTE		TIE     Fs4 
+	BYTE		N12     An4   v036
+	BYTE	W48
+// 011   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Fs4 
+// 012   ----------------------------------------
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Bn3   v064
+	BYTE	W12
+	BYTE		        Bn3   v036
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+	BYTE		        Dn4   v064
+	BYTE	W06
+	BYTE		        Dn4   v036
+	BYTE	W06
+	BYTE		N24     En4   v064
+	BYTE	W24
+	BYTE		N12     Bn3 
+	BYTE		N12     En4   v036
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N06     Cs4   v064
+	BYTE	W06
+	BYTE		        Cs4   v036
+	BYTE	W06
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_4_005
+// 014   ----------------------------------------
+	BYTE		N12     Bn3   v036
+	BYTE		N36     Cs4   v064
+	BYTE	W36
+	BYTE		N12     Cs4   v036
+	BYTE		N12     Dn4   v064
+	BYTE	W12
+	BYTE		N96     Fs3 
+	BYTE		N12     Dn4   v036
+	BYTE	W48
+// 015   ----------------------------------------
+	BYTE	W48
+	BYTE		N24     En3   v064
+	BYTE		N12     Fs3   v036
+	BYTE	W24
+	BYTE		        En3 
+	BYTE		N24     An3   v064
+	BYTE	W24
+// 016   ----------------------------------------
+	BYTE		N36     Fs3 
+	BYTE		N12     An3   v036
+	BYTE	W36
+	BYTE		        Bn2   v064
+	BYTE		N12     Fs3   v036
+	BYTE	W12
+	BYTE		N60     Bn2   v064
+	BYTE	W48
+// 017   ----------------------------------------
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Bn2   v036
+	BYTE		N12     Cs3   v064
+	BYTE	W12
+	BYTE		        Cs3   v036
+	BYTE		N12     Dn3   v064
+	BYTE	W12
+	BYTE		        Dn3   v036
+	BYTE		N12     En3   v064
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     En3   v036
+	BYTE	W12
+	BYTE		        Cs3   v064
+	BYTE		N12     Dn3   v036
+	BYTE	W12
+	BYTE		        An2   v064
+	BYTE		N12     Cs3   v036
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE		        An2 
+	BYTE		N96     Cs3   v064
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		N24     Bn2 
+	BYTE		N12     Cs3   v036
+	BYTE	W24
+	BYTE		N24     Bn2 
+	BYTE	W24
+	BYTE		        Bn2   v016
+	BYTE	W48
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_4_B1
+lufia2_battle2_4_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+lufia2_battle2_5:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   57
+	BYTE		VOL     51*lufia2_battle2_mvl/mxv
+	BYTE		PAN     c_v+24
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+lufia2_battle2_5_B1:
+// 004   ----------------------------------------
+lufia2_battle2_5_004:
+	BYTE	W12
+	BYTE		N12     Bn2   v064
+	BYTE	W12
+	BYTE		N06     Cs3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		N06     Cs3 
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+lufia2_battle2_5_005:
+	BYTE		N06     Dn3   v064
+	BYTE	W12
+	BYTE		N36     En3 
+	BYTE	W36
+	BYTE		N03     Ds3 
+	BYTE	W03
+	BYTE		N09     En3 
+	BYTE	W09
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE		N36     Cs3 
+	BYTE	W36
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		TIE     Fs2 
+	BYTE	W48
+// 007   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_5_004
+// 009   ----------------------------------------
+	BYTE		N06     Dn3   v064
+	BYTE	W12
+	BYTE		N36     En3 
+	BYTE	W36
+	BYTE		N03     Ds3 
+	BYTE	W03
+	BYTE		N09     En3 
+	BYTE	W09
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		N36     En3 
+	BYTE	W36
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		TIE     Fs3 
+	BYTE	W48
+// 011   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_5_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_5_005
+// 014   ----------------------------------------
+	BYTE		N36     Cs3   v064
+	BYTE	W36
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		N96     Fs2 
+	BYTE	W48
+// 015   ----------------------------------------
+	BYTE	W48
+	BYTE		N24     En2 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE	W24
+// 016   ----------------------------------------
+	BYTE		N36     Fs2 
+	BYTE	W36
+	BYTE		N12     Bn1 
+	BYTE	W12
+	BYTE		N60   
+	BYTE	W48
+// 017   ----------------------------------------
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		        An1 
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE		N96     Cs2 
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		N24     Bn1 
+	BYTE	W24
+	BYTE		        Bn1   v036
+	BYTE	W24
+	BYTE		        Bn1   v016
+	BYTE	W48
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_5_B1
+lufia2_battle2_5_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+lufia2_battle2_6:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     51*lufia2_battle2_mvl/mxv
+	BYTE		PAN     c_v-26
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+lufia2_battle2_6_B1:
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W72
+	BYTE		N12     Dn3   v064
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE		N12     Dn3   v036
+	BYTE	W12
+// 020   ----------------------------------------
+lufia2_battle2_6_020:
+	BYTE		N48     Bn2   v064
+	BYTE		N12     Cs3   v036
+	BYTE	W48
+	BYTE		        Bn2 
+	BYTE		N72     Fs3   v064
+	BYTE	W48
+	BYTE	PEND
+// 021   ----------------------------------------
+lufia2_battle2_6_021:
+	BYTE	W24
+	BYTE		N24     En3   v064
+	BYTE		N12     Fs3   v036
+	BYTE	W24
+	BYTE		        En3 
+	BYTE		N36     An3   v064
+	BYTE	W36
+	BYTE		N12     An3   v036
+	BYTE		N12     Bn3   v064
+	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
+lufia2_battle2_6_022:
+	BYTE		TIE     Fs3   v064
+	BYTE		N12     Bn3   v036
+	BYTE	W96
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE	W60
+	BYTE		EOT     Fs3 
+	BYTE		N12     Fs2   v064
+	BYTE		N12     Fs3   v036
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE		N12     Dn3   v064
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE		N12     Dn3   v036
+	BYTE	W12
+// 024   ----------------------------------------
+	BYTE		N84     Bn2   v064
+	BYTE		N12     Cs3   v036
+	BYTE	W84
+	BYTE		        An2   v064
+	BYTE		N12     Bn2   v036
+	BYTE	W12
+// 025   ----------------------------------------
+	BYTE		        An2 
+	BYTE		N66     Bn2   v064
+	BYTE	W60
+	BYTE		N12     Fs2 
+	BYTE	W06
+	BYTE		        Bn2   v036
+	BYTE	W06
+	BYTE		        Fs2 
+	BYTE		N12     Dn3   v064
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE		N12     Dn3   v036
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE		N72     Bn2   v064
+	BYTE		N12     Cs3   v036
+	BYTE	W72
+	BYTE		        Bn2 
+	BYTE		N12     Cs3   v064
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE		N12     Cs3   v036
+	BYTE	W12
+// 027   ----------------------------------------
+	BYTE		N72     As2   v064
+	BYTE		N12     Bn2   v036
+	BYTE	W72
+	BYTE		        As2 
+	BYTE		N12     Dn3   v064
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE		N12     Dn3   v036
+	BYTE	W12
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_6_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_6_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_6_022
+// 031   ----------------------------------------
+	BYTE	W24
+	BYTE		EOT     Fs3 
+	BYTE		N24     Dn3   v064
+	BYTE		N12     Fs3   v036
+	BYTE	W24
+	BYTE		N24     Cs3   v064
+	BYTE		N12     Dn3   v036
+	BYTE	W24
+	BYTE		N24     An2   v064
+	BYTE		N12     Cs3   v036
+	BYTE	W24
+// 032   ----------------------------------------
+	BYTE		        An2 
+	BYTE		N36     Bn2   v064
+	BYTE	W36
+	BYTE		N12     Bn2   v036
+	BYTE		N12     Fs3   v064
+	BYTE	W12
+	BYTE		N72   
+	BYTE	W48
+// 033   ----------------------------------------
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N12     Fs3   v036
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N12     An3   v064
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE		N12     An3   v036
+	BYTE	W12
+	BYTE		        Fs3   v064
+	BYTE		N12     Gn3   v036
+	BYTE	W12
+	BYTE		        En3   v064
+	BYTE		N12     Fs3   v036
+	BYTE	W12
+// 034   ----------------------------------------
+	BYTE		        En3 
+	BYTE		TIE     Fs3   v064
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 036   ----------------------------------------
+	BYTE		TIE     Dn3 
+	BYTE		N12     Fs3   v036
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT     Dn3 
+	BYTE		N24     En3   v064
+	BYTE	W24
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+// 038   ----------------------------------------
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE		        Fs2 
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE		N48     Fs2 
+	BYTE	W48
+	BYTE		N48   
+	BYTE	W48
+// 044   ----------------------------------------
+	BYTE		TIE     Dn3 
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+// 046   ----------------------------------------
+	BYTE		N96     Dn3 
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE		TIE     Bn2 
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_6_B1
+lufia2_battle2_6_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+lufia2_battle2_7:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     51*lufia2_battle2_mvl/mxv
+	BYTE		PAN     c_v+24
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+lufia2_battle2_7_B1:
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE		TIE     Fs3   v064
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE		N24     Gn3 
+	BYTE	W24
+	BYTE		N12     Fs3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+// 038   ----------------------------------------
+	BYTE		N96     Fs3 
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE		        Gn2 
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE	W48
+// 044   ----------------------------------------
+	BYTE		TIE     Fs3 
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE		N24     Gn3 
+	BYTE	W24
+	BYTE		N12     Fs3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+// 046   ----------------------------------------
+	BYTE		N96     Fs3 
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE		        Cs3 
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE		TIE     Ds3 
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_7_B1
+lufia2_battle2_7_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+lufia2_battle2_8:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   124
+	BYTE		VOL     63*lufia2_battle2_mvl/mxv
+	BYTE		N12     Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     As1   v064
+	BYTE	W12
+	BYTE		        Fs1 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		        Dn1   v080
+	BYTE		N36     Cs2   v064
+	BYTE		N36     Gn2 
+	BYTE		N36     An2   v044
+	BYTE	W12
+	BYTE		N06     Cn1   v080
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Dn1 
+	BYTE		N36     Cs2   v064
+	BYTE		N36     Gn2 
+	BYTE		N36     An2   v044
+	BYTE	W12
+	BYTE		N06     Cn1   v080
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N24     Cs2   v064
+	BYTE		N24     Gn2 
+	BYTE		N24     An2   v044
+	BYTE	W06
+	BYTE		N06     Dn1   v080
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 003   ----------------------------------------
+	BYTE		N24   
+	BYTE		N96     Cs2   v064
+	BYTE		N96     Gn2 
+	BYTE		N96     An2   v044
+	BYTE	W24
+	BYTE		N06     Cn1   v080
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE	W24
+lufia2_battle2_8_B1:
+// 004   ----------------------------------------
+lufia2_battle2_8_004:
+	BYTE		N12     Cn1   v080
+	BYTE		N96     Cs2   v064
+	BYTE		N96     Gn2 
+	BYTE		N96     An2   v044
+	BYTE	W12
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 006   ----------------------------------------
+lufia2_battle2_8_006:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+lufia2_battle2_8_007:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_006
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_007
+// 010   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE		N48     Cs2   v064
+	BYTE		N48     Gn2 
+	BYTE		N48     An2   v044
+	BYTE	W24
+	BYTE		N12     Cn1   v080
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N48     Cs2   v064
+	BYTE		N48     Gn2 
+	BYTE		N48     An2   v044
+	BYTE	W24
+// 011   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N48     Cs2   v064
+	BYTE		N48     Gn2 
+	BYTE		N48     An2   v044
+	BYTE	W12
+	BYTE		N12     Cn1   v080
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE		N24     Cs2   v064
+	BYTE		N24     Gn2 
+	BYTE		N24     An2   v044
+	BYTE	W24
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_004
+// 013   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N06     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N06     Cn1   v080
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N06     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W06
+	BYTE		N06     Cn1   v080
+	BYTE	W06
+	BYTE		N12   
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N06     Fs1   v064
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N06     Fs1   v064
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 015   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N06     Fs1   v064
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N06     Fs1   v064
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N06     Fs1   v064
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N06     Fs1   v064
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 017   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N06     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N06     Cn1   v080
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE		        Cn1   v080
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE		N48     Cs2   v064
+	BYTE		N48     Gn2 
+	BYTE		N48     An2   v044
+	BYTE	W24
+	BYTE		N12     Cn1   v080
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE		N24     Cs2   v064
+	BYTE		N24     Gn2 
+	BYTE		N24     An2   v044
+	BYTE	W24
+// 019   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N72     Cs2   v064
+	BYTE		N72     Gn2 
+	BYTE		N72     An2   v044
+	BYTE	W36
+	BYTE		N12     Cn1   v080
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE		N24     Cs2   v064
+	BYTE		N24     Gn2 
+	BYTE		N24     An2   v044
+	BYTE	W24
+// 020   ----------------------------------------
+lufia2_battle2_8_020:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE		N96     Cs2 
+	BYTE		N96     Gn2 
+	BYTE		N96     An2   v044
+	BYTE	W12
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+// 021   ----------------------------------------
+lufia2_battle2_8_021:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
+lufia2_battle2_8_022:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 024   ----------------------------------------
+lufia2_battle2_8_024:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_021
+// 026   ----------------------------------------
+lufia2_battle2_8_026:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+// 027   ----------------------------------------
+lufia2_battle2_8_027:
+	BYTE		N12     Cn1   v080
+	BYTE		N48     Cs2   v064
+	BYTE		N48     Gn2 
+	BYTE		N48     An2   v044
+	BYTE	W12
+	BYTE		N12     Cn1   v080
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N48     Cs2   v064
+	BYTE		N48     Gn2 
+	BYTE		N48     An2   v044
+	BYTE	W12
+	BYTE		N06     Cn1   v080
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE	W24
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_020
+// 029   ----------------------------------------
+lufia2_battle2_8_029:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+// 030   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+// 031   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_022
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_029
+// 034   ----------------------------------------
+lufia2_battle2_8_034:
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 035   ----------------------------------------
+	BYTE		        Cn1   v080
+	BYTE		N72     Cs2   v064
+	BYTE		N72     Gn2 
+	BYTE		N72     An2   v044
+	BYTE	W24
+	BYTE		N12     Cn1   v080
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE		N24     Cs2   v064
+	BYTE		N24     Gn2 
+	BYTE		N24     An2   v044
+	BYTE	W24
+// 036   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE		N96     Cs2 
+	BYTE		N96     Gn2 
+	BYTE		N96     An2   v044
+	BYTE	W12
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_021
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_024
+// 039   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_024
+// 041   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_020
+// 045   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+// 046   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+// 047   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_022
+// 049   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Fs1   v064
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N12     Cn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W12
+	BYTE		N12     Dn1   v080
+	BYTE		N04     Fs1   v064
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W12
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_8_034
+// 051   ----------------------------------------
+	BYTE		N12     Cn1   v080
+	BYTE		N72     Cs2   v064
+	BYTE		N72     Gn2 
+	BYTE		N72     An2   v044
+	BYTE	W24
+	BYTE		N12     Cn1   v080
+	BYTE		N12     Dn1 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12     Dn1 
+	BYTE		N24     Cs2   v064
+	BYTE		N24     Gn2 
+	BYTE		N24     An2   v044
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_8_B1
+lufia2_battle2_8_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+lufia2_battle2_9:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   30
+	BYTE		VOL     63*lufia2_battle2_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+lufia2_battle2_9_B1:
+// 004   ----------------------------------------
+lufia2_battle2_9_004:
+	BYTE		N06     Gn1   v080
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		N06     Gn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		N06     Gn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+lufia2_battle2_9_005:
+	BYTE		N12     Gn2   v080
+	BYTE	W12
+	BYTE		N06     Gn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		N06     Gn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+lufia2_battle2_9_006:
+	BYTE		N06     Bn1   v080
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		N06     Bn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		N06     Bn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+lufia2_battle2_9_007:
+	BYTE		N12     Bn2   v080
+	BYTE	W12
+	BYTE		N06     Bn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     Gs1 
+	BYTE	W12
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 009   ----------------------------------------
+lufia2_battle2_9_009:
+	BYTE		N12     An2   v080
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     As1 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_006
+// 011   ----------------------------------------
+	BYTE		N12     Bn1   v080
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Gs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_006
+// 019   ----------------------------------------
+	BYTE		N12     Bn1   v080
+	BYTE	W72
+	BYTE		N24     An1 
+	BYTE	W24
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_005
+// 022   ----------------------------------------
+lufia2_battle2_9_022:
+	BYTE		N06     Fs1   v080
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Fs2 
+	BYTE	W12
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Fs2 
+	BYTE	W12
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE	PEND
+// 023   ----------------------------------------
+lufia2_battle2_9_023:
+	BYTE		N12     Fs2   v080
+	BYTE	W12
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Fs2 
+	BYTE	W12
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Fs2 
+	BYTE	W12
+	BYTE		N06     Fs1 
+	BYTE	W12
+	BYTE	PEND
+// 024   ----------------------------------------
+lufia2_battle2_9_024:
+	BYTE		N06     En1   v080
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		N06     En1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		N06     En1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE	PEND
+// 025   ----------------------------------------
+lufia2_battle2_9_025:
+	BYTE		N12     En2   v080
+	BYTE	W12
+	BYTE		N06     En1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		N06     En1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     En2 
+	BYTE	W12
+	BYTE		N06     En1 
+	BYTE	W12
+	BYTE	PEND
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_022
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_023
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_023
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_024
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_025
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_022
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_023
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_006
+// 037   ----------------------------------------
+lufia2_battle2_9_037:
+	BYTE		N12     As2   v080
+	BYTE	W12
+	BYTE		N06     As1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     As2 
+	BYTE	W12
+	BYTE		N06     As1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     As2 
+	BYTE	W12
+	BYTE		N06     As1 
+	BYTE	W12
+	BYTE	PEND
+// 038   ----------------------------------------
+lufia2_battle2_9_038:
+	BYTE		N06     An1   v080
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE	PEND
+// 039   ----------------------------------------
+lufia2_battle2_9_039:
+	BYTE		N12     Gs2   v080
+	BYTE	W12
+	BYTE		N06     Gs1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Gs2 
+	BYTE	W12
+	BYTE		N06     Gs1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Gs2 
+	BYTE	W12
+	BYTE		N06     Gs1 
+	BYTE	W12
+	BYTE	PEND
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_023
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_024
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_023
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_006
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_037
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_038
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_039
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_004
+// 049   ----------------------------------------
+	BYTE		N12     An2   v080
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     An2 
+	BYTE	W12
+	BYTE		N06     An1 
+	BYTE	W12
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	lufia2_battle2_9_006
+// 051   ----------------------------------------
+	BYTE		N12     Bn2   v080
+	BYTE	W12
+	BYTE		N06     Bn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		N06     Bn1 
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		N06     Bn1 
+	BYTE	W12
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_9_B1
+lufia2_battle2_9_B2:
+// 052   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 10 (Midi-Chn.11) ****************//
+
+lufia2_battle2_10:
+	BYTE	KEYSH   lufia2_battle2_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   31
+	BYTE		VOL     63*lufia2_battle2_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W72
+	BYTE		N36     En3   v064
+	BYTE	W24
+lufia2_battle2_10_B1:
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W72
+	BYTE		N36     En3   v064
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	lufia2_battle2_10_B1
+lufia2_battle2_10_B2:
+// 052   ----------------------------------------
+	BYTE	W12
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+lufia2_battle2:
+	BYTE	10	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	lufia2_battle2_pri	// Priority
+	BYTE	lufia2_battle2_rev	// Reverb.
+
+	POIN2	lufia2_battle2_grp
+
+	POIN2	lufia2_battle2_1
+	POIN2	lufia2_battle2_2
+	POIN2	lufia2_battle2_3
+	POIN2	lufia2_battle2_4
+	POIN2	lufia2_battle2_5
+	POIN2	lufia2_battle2_6
+	POIN2	lufia2_battle2_7
+	POIN2	lufia2_battle2_8
+	POIN2	lufia2_battle2_9
+	POIN2	lufia2_battle2_10
+
+	

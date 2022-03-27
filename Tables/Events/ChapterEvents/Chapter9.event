@@ -1,0 +1,297 @@
+EventPointerTable(Chapter9Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0x0, Turn357Spawn, 9) //Might be overkill, so pushed to turn 9
+TurnEventPlayer(0x0, Turn357Spawn, 5)
+TurnEventPlayer(0x0, Turn357Spawn, 7)
+//TurnEventPlayer(0x0, Turn246Spawn, 2) //Disabled
+TurnEventPlayer(0x0, Turn246Spawn, 4)
+TurnEventPlayer(0x0, Turn246Spawn, 6)
+TurnEventPlayer(0x0, Turn101112Spawn, 10)
+TurnEventPlayer(0x0, Turn101112Spawn, 11)
+TurnEventPlayer(0x0, Turn101112Spawn, 12)
+TurnEventPlayer(0x0, Turn121314Spawn,12)
+TurnEventPlayer(0x0, Turn121314Spawn,13)
+TurnEventPlayer(0x0, Turn121314Spawn,14)
+TurnEventPlayer(0x0, JennySpawn, 3)
+TurnEventPlayer(0x0, MeldanSpawn, 6)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(7, JennyTalkCh9, Jenny, 0x0)
+CharacterEventBothWays(8, MeldanTalkCh9, Meldan, 0x0)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+
+LocationBasedEvents:
+Escape(0,EscapeEventCheck,19,0)
+Escape(0,EscapeEventCheck,20,0)
+END_MAIN
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+	COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+	COUNTER_INC 0
+LABEL 1
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+	ENUT 3
+	CALL EndingScene
+LABEL 3
+NoFade
+ENDA
+
+
+Dunno1:
+
+END_MAIN
+
+Dunno2:
+
+END_MAIN
+
+Dunno3:
+
+END_MAIN
+
+Tutorial:
+
+END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [2,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [4,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+//Boss
+UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [Greatbow,Poleaxe] AttackInRangeAI
+
+UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [1,4] 0x0 0x0 0x0 0x0 [IronBow]TwoActionAI 
+UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]TwoActionAI 
+UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [18,3] 0x0 0x0 0x0 0x0 [Shortbow]TwoActionAI 
+UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [17,19] 0x0 0x0 0x0 0x0 [Shortbow,Vulnerary]TwoActionAI 
+
+UNIT Militia Archer Wrathgar Level(6,Enemy,True) [6,3] 0x0 0x0 0x0 0x0 [IronBow]TwoActionAI 
+UNIT Militia Archer Wrathgar Level(6,Enemy,True) [19,16] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]TwoActionAI 
+UNIT Militia Archer Wrathgar Level(6,Enemy,True) [13,2] 0x0 0x0 0x0 0x0 [Shortbow]TwoActionAI 
+UNIT Militia Archer Wrathgar Level(6,Enemy,True) [16,8] 0x0 0x0 0x0 0x0 [Shortbow,Vulnerary]TwoActionAI 
+
+UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [2,8] 0x0 0x0 0x0 0x0 [ShortLance]TwoActionAI 
+UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [11,16] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary]TwoActionAI 
+UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [7,10] 0x0 0x0 0x0 0x0 [IronLance]TwoActionAI 
+UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [20,10] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary]TwoActionAI 
+
+UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [11,13] 0x0 0x0 0x0 0x0 [SteelAxe]TwoActionAI 
+UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [21,4] 0x0 0x0 0x0 0x0 [SteelAxe,Vulnerary]TwoActionAI 
+UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [14,18] 0x0 0x0 0x0 0x0 [IronAxe]TwoActionAI 
+UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary]TwoActionAI 
+
+UNIT Freyse SwordArmor Wrathgar Level(9,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [IronBlade] TwoActionAI
+UNIT Freyse SwordArmor Wrathgar Level(9,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [SteelSword] TwoActionAI
+
+UNIT Freyse LanceArmor Wrathgar Level(9,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Freyse LanceArmor Wrathgar Level(9,Enemy,True) [20,8] 0x0 0x0 0x0 0x0 [Horseslayer] TwoActionAI
+
+UNIT Freyse SwordKnight Wrathgar Level(9,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
+UNIT Freyse SwordKnight Wrathgar Level(9,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
+
+UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [13,10] 0x0 0x0 0x0 0x0 [Hammer] TwoActionAI
+UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
+
+UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
+UNIT Freyse Mage Wrathgar Level(9,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Thoron] TwoActionAI
+
+UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
+UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [SilverLance] TwoActionAI
+UNIT
+
+JennyReinforce:
+UNIT Jenny RookKnight 0x0 Level(6,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [LongLance,Javelin,IronSword] ChargeHealAI
+UNIT
+
+MeldanReinforce:
+UNIT Meldan DukeKnight 0x0 Level(5,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [Greatlance,BraveLance,LightRune] ChargeHealAI
+UNIT
+
+Ch9Reinforce1:
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [IronLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [SteelLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [15,0] 0x0 0x0 0x1 REDA15R0 [IronLance] ChargeHealAI
+UNIT Freyse PegasusRider Wrathgar Level(8,Enemy,True) [16,0] 0x0 0x0 0x1 REDA16R0 [SteelLance] ChargeHealAI
+UNIT
+
+Ch9Reinforce2:
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [IronLance,SteelSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17[SteelLance,IronSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [11,0] 0x0 0x0 0x1 REDA11R0 [IronLance,SteelSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [12,0] 0x0 0x0 0x1 REDA12R0 [SteelLance,IronSword] ChargeHealAI
+UNIT
+
+Ch9Reinforce3:
+UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [KillingEdge,BraveLance,Elixir] ChargeHealAI
+UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [KillerLance,BraveSword,Elixir] ChargeHealAI
+
+Ch9Reinforce4:
+UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
+UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
+UNIT
+
+Traps1:
+RedSigil(19,0)
+RedSigil(20,0)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	COUNTER_SET 0 0 //for escape purposes
+	MountAll
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	SetBackground(VillageRoad)
+	MUSC WindyDayBirdsSoundEffect
+	Text(Ch9OpeningText)
+	FADI 15
+	SetBackground(CastleHallway)
+	MUSC TensionSong
+	Text(Ch9WrathgarRant)
+	FADI 15
+	SetBackground(OvergrownArches)
+	Text(MeldanWorryText)
+	FADI 15
+	ENUN
+	//Senny Rescued
+	CHECK_EVENTID 0x78 
+	BNE 4 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
+	ENUT 7 // sets flag so the talk isn't possible if the flag isn't set
+	LABEL 4 
+	//Helman Rescued
+	CHECK_EVENTID 0x79 
+	BNE 5 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
+	ENUT 8 // sets flag so the talk isn't possible if the flag isn't set
+	LABEL 5 
+	GotoPrepScreen
+	ENDA
+
+Turn246Spawn:	
+ReinforcementEvent(Ch9Reinforce1)
+
+Turn357Spawn:	
+ReinforcementEvent(Ch9Reinforce2)
+
+Turn101112Spawn:	
+ReinforcementEvent(Ch9Reinforce3)
+
+Turn121314Spawn:
+ReinforcementEvent(Ch9Reinforce4)
+
+JennySpawn:
+SpawnReinforcements(JennyReinforce)
+CHECK_EVENTID 0x78
+BEQ 8 s0 sC
+CAMERA Jenny
+FlashCursor(Jenny,60)
+Text(JennySpawnText)
+LABEL 8
+NoFade
+ENDA
+
+MeldanSpawn:
+SpawnReinforcements(MeldanReinforce)
+CHECK_EVENTID 0x79
+BEQ 9 s0 sC
+CAMERA Meldan
+FlashCursor(Meldan,60)
+Text(MeldanSpawnText)
+LABEL 9
+NoFade
+ENDA
+
+JennyTalkCh9:
+MUSS WithUs_Song
+Text(JennyRecruitText)
+CUSA Jenny
+MURE 2
+NoFade
+ENDA
+
+MeldanTalkCh9:
+MUSS WithUs_Song
+Text(MeldanRecruitText)
+CUSA Meldan
+MURE 2
+NoFade
+ENDA
+
+EndingScene:
+CheckIfUnitEscapedASMC(Mira,39)
+CheckIfUnitEscapedASMC(Iskra,72)
+CheckIfUnitEscapedASMC(Emil,308)
+CheckIfUnitEscapedASMC(Svetomir,56)
+CheckIfUnitEscapedASMC(Alena,79)
+CheckIfUnitEscapedASMC(Varga,43)
+CheckIfUnitEscapedASMC(Delilah,98)
+CheckIfUnitEscapedASMC(Alex,876)
+CheckIfUnitEscapedASMC(Axel,233)
+CheckIfUnitEscapedASMC(Filone,58)
+CheckIfUnitEscapedASMC(Zwieback,901)
+CheckIfUnitEscapedASMC(Fangai,765)
+CheckIfUnitEscapedASMC(Longxia,456)
+CheckIfUnitEscapedASMC(Mish,321)
+CheckIfUnitEscapedASMC(Tobie,935)
+CheckIfUnitEscapedASMC(Awa,103)
+CheckIfUnitEscapedASMC(Faolan,257)
+CheckIfUnitEscapedASMC(Cadenza,974)
+CheckIfUnitEscapedASMC(Leina,406)
+CheckIfUnitEscapedASMC(Cromar,845)
+CheckIfUnitEscapedASMC(Iberis,938)
+CheckIfUnitEscapedASMC(Buldak,674)
+CheckIfUnitEscapedASMC(Nora,624)
+CheckIfUnitEscapedASMC(Hans,838)
+CheckIfUnitEscapedASMC(Jenny,253)
+CheckIfUnitEscapedASMC(Meldan,696)
+SetBackground(CastleHallway)
+MUSC FF5_Nostalgia
+Text(Ch9EndingText)
+FADI 15
+SetBackground(OvergrownArches)
+Text(Ch9EndingText2)
+MNC2 Chapter10
+NoFade
+ENDA

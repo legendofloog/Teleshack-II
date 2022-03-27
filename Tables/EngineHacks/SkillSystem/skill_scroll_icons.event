@@ -1,0 +1,12 @@
+ALIGN 4
+SkillScrollIcons:
+
+
+//Icon graphics are uncompressed
+#define SkillScrollIcon(skillID) "128*skillID+SkillScrollIcons"
+
+ORG SkillScrollIcon(AzuriumMightID)
+#incbin "SkillIcons/Azurium.dmp"
+
+ORG SkillScrollIcons+0x8000
+

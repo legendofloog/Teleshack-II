@@ -1,0 +1,61 @@
+
+#define LockedPosition 0
+#define UnlockedPosition 1
+#define ForcedDeployment(char,lockedPosition,mode,chapter) "BYTE char lockedPosition mode chapter"
+#define EndForcedDeploymentList "SHORT 0xFFFF 0"
+
+#define DeploymentGroupChapterEntry(chapterId,pointingToGroupsPointer) "BYTE chapterId 0 0 0; POIN pointingToGroupsPointer"
+#define EndDeploymentGroupChapterList "WORD 0 0"
+
+#define AllModes 0xFF
+PUSH
+
+ORG 0x1D538
+SHORT 0x1C19 //mov r1, r3
+BL(0x3374C)
+SHORT 0x0600 0x2800 //lsl r0, #0x18; cmp r0, #0
+SHORT 0xD105 0x2004 //bne (0x0801D550); mov r0, #4
+SHORT 0xE02B //b (0x0801D5A0)
+
+ORG 0x332F0
+SHORT 0x466D 0x3501 //mov r5, r13; add r5, #1
+SHORT 0x7820 0x2800 //ldrb r0, [r4]; cmp r0, #0
+SHORT 0xD01C //beq (0x08033334)
+BL(0x9541C)
+SHORT 0x2800 //cmp r0, #0
+SHORT 0xD014 0xE000 //beq (0x0803332C); b (0x08033306)
+
+ORG 0x3332E
+SHORT 0xE7E1 //b (0x080332F4)
+
+ORG 0x3374C
+jumpToHack(CheckIfLockedOrInSameGroup)
+ORG 0x84830
+SHORT 0x7810 //ldrb r0, [r2]
+
+
+ORG 0x8483C //Repointing to ForcedDeploymentList when selecting units to deploy for the chapter (if not needed, then can keep commented)
+POIN ForcedDeploymentList
+
+
+ORG 0x9541C
+#include "CheckIfUnitAtLockedPosition.lyn.event"
+ALIGN 4
+
+POP
+
+#include "CheckIfLockedPosition.lyn.event"
+ALIGN 4
+
+#include "CheckIfLockedOrInSameGroup.lyn.event"
+ALIGN 4
+
+ForcedDeploymentList: //Vanilla list at 0x9ED64C
+ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter15)
+ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter15)
+ForcedDeployment(Cleo,UnlockedPosition,AllModes,AllChapters)
+ForcedDeployment(Loewe,UnlockedPosition,AllModes,AllChapters)
+EndForcedDeploymentList
+
+DeploymentGroupChapterList:
+EndDeploymentGroupChapterList

@@ -1,0 +1,205 @@
+#define Cleo 0x01
+#define Mira 0x02
+#define Iskra 0x03
+#define Emil 0x04
+#define Svetomir 0x05
+#define Alena 0x06
+#define Varga 0x07
+#define Delilah 0x08
+#define Alex 0x09
+#define Axel 0x0A
+#define Filone 0x0B
+#define Zwieback 0x0C
+#define Leina 0x0D
+#define Cromar 0x0E
+#define Loewe 0x0F
+#define Longxia 0x10
+#define Fangai 0x11
+#define Gimm 0x12
+#define Mish Gimm
+#define Tobie 0x13
+#define Awa 0x14
+#define Cadenza 0x15
+#define Faolan 0x16
+#define Iberis 0x17
+#define Buldak 0x18
+#define Nora 0x19
+#define Hans 0x1A
+#define Jenny 0x1C
+#define Meldan 0x1D
+#define Valse 0x1E
+#define Hornet 0x1F
+#define Milo 0x20
+#define Ichwep 0x21
+#define Mink 0x22
+#define Tiberius 0x23
+#define Ellerey 0x24
+#define Mantou 0x25
+#define Tippany 0x26
+#define Pelecaye 0x27
+#define Carl 0x28
+#define Darby 0x29
+#define Jacinth 0x2A
+#define Nahiza 0x2B
+#define Augur 0x2C
+#define Ilse 0x2D
+#define Rashid 0x2E
+
+
+#define LyonSummon 0x3B
+#define KnollSummon 0x3E
+#define EvanSummon 0x3F
+#define Lyon_Ch17 0x40
+
+// Chapter 1 Bosses
+#define Boro_Ch1 0x41
+#define Raschwitz_Ch1 0x42
+// Chapter 2 Boss
+#define Tyr_Ch2 0x43
+// Chapter 2 generic guy for eventing battle purposes 
+#define Ch2_Selese_Guy 0x73
+// Chapter 3 Boss
+#define Emory_Ch3 0x68
+// Chapter 4 Boss
+#define Hilmar 0x69
+// Chapter 5 Boss
+#define Riggan 0x44
+// Chapter 7 Boss
+#define Yor 0x83
+#define Radnitz 0x84
+#define Mifan 0x85
+#define Wellworth 0x86
+#define Epony 0x87
+#define TheGiant 0x95
+// Chapter 8 Boss
+#define Hege 0x96
+#define Francis 0x97
+// Chapter 9 Boss
+#define Wrathgar 0x47
+
+// Chapter 10 stuff
+#define Cidor 0x48
+#define Johanna 0x49
+#define Elias 0x4a
+#define SeleseProvoke 0x98
+#define Bandit 0x99
+
+#define Selese 0x6e
+#define Cythes 0x89
+#define Mahemen 0xA1
+
+// Chapter 1 Stuff
+#define Chapter1Generics 0x6E
+#define Senny 0x6F
+#define Helman 0x70
+//Chapter 2 Stuff (uses chapter 1 generics)
+#define Dragana 0x71
+#define Hernandez 0x72
+//Chapter 3 uses chapter 1 generics and adds no NPCs
+#define Chapter3Reinforcements 0xA2
+#define Veid 0x74
+// Chapter 5x
+#define Kwame 0x65
+#define Trajan 0x66
+#define MiraCopy 0x90
+#define IskraCopy 0x91
+#define VargaCopy 0x92
+
+//Chapter 6 stuff
+#define Vladith 0x74
+#define Barod 0x75
+#define McCallum 0x76
+#define Gladiator 0x77
+#define Zeus 0x78
+#define ArenaSpectator 0x79
+#define Civilian1 0x7A
+#define Civilian2 0x7B
+#define LoanShark 0x7C
+#define Ch6Pirate 0x7D
+#define Draken 0x7E
+#define GladiatorMage 0x7F
+#define Fisherman 0x80
+#define Gambler 0x81
+
+//Chapter 7 stuff
+#define Militia 0x82
+#define Freyse 0x88
+
+//Chapter 11 stuff
+#define Aurora 0x45
+
+//Chapter 12 stuff
+#define Eitha 0x4B
+
+//Chapter 13 stuff
+#define Veniamin 0x9A
+#define Corundum 0x9B
+#define Pascal 0x9C
+#define Kailani 0x9D
+
+//Chapter 14 Stuff
+#define Tsoureki 0x9F
+
+//Chapter 15 Stuff
+#define Looter 0xA3
+#define Traveler 0xA4
+#define Coralia 0xA5
+#define Catrin 0xA6
+#define Kassandra 0xA7
+
+//Chapter 16 Stuff
+#define Phantom 0x8A
+#define Hamdi 0x4C
+#define Colossus 0x4D
+
+#define Breguet 0x46
+#define Bazba 0x48
+#define Entombed_boss 0x49
+#define Saar 0x4A
+#define Novala 0x4B
+#define Murray 0x4C
+#define Tirado 0x4D
+#define Binks 0x4E
+#define Pablo 0x4F
+#define Macdaire 0x50
+#define Maelduin_boss 0x50
+#define Aias 0x51
+#define Carlyle 0x52
+#define Caellach 0x53
+#define Pablo_2 0x54
+#define Gorgon_boss 0x56
+#define Riev 0x57
+#define Gheb 0x5A
+#define Beran 0x5B
+#define Cyclops_boss 0x5C
+#define Wight_boss 0x5D
+#define Deathgoyle_boss 0x5E
+#define Zonta 0x6A
+#define Vigarde 0x6B
+#define Lyon_Final 0x6C
+#define Orson_Boss 0x6D
+#define Fomortiis 0xBE
+#define Fado 0xC5
+#define Hayden 0xC7
+#define Mansel 0xC8
+#define Klimt 0xC9
+#define Dara 0xCA
+#define Ismaire 0xCB
+#define PegasusMessenger 0xCC
+#define RiverFolkChild_F 0xF4
+#define RiverFolk_F 0xF5
+#define RiverFolk 0xF6
+#define RiverFolk_F_2 0xF7
+#define RiverFolkChild 0xF8
+#define RenaisCivilianChild_F 0xF9
+#define RenaisCivilian 0xFA
+#define RenaisCivilian_F 0xFB
+#define OldCivilian 0xFC
+#define Wall 0xFE
+#define Snag 0xFF
+
+
+
+// TalkAI Defs
+
+#define Ch1_AlenaAI2 0xA

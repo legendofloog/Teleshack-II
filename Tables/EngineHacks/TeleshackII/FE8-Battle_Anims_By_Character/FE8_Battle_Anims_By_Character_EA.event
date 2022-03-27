@@ -1,0 +1,75 @@
+//Battle animation lists based on character and class
+//By Tequila
+
+PUSH
+
+ORG $573C6
+BL(0x57CAC)
+ORG $573F0
+BL(0x57CAC)
+ORG $57344
+BL(0x57CAC)
+ORG $5735C
+BL(0x57CAC)
+ORG $CD0FC
+BL(0x57CAC)
+
+ORG $57D04
+SHORT 0x4800 0x4700; POIN Battle_Anims_By_Character|1 
+
+POP
+
+ALIGN 4
+Battle_Anims_By_Character:
+#incbin "Battle_Anims_By_Character.dmp"
+POIN BattleAnimListByCharTable
+
+ALIGN 4
+BattleAnimListByCharTable:
+BYTE Nora DragonRider_Dismounted 0 0; POIN NoraDRUnmountedAnimList
+BYTE Nora Dracoknight_Dismounted 0 0; POIN NoraDRUnmountedAnimList
+BYTE Jenny RookKnight 0 0; POIN JennyRKAnimList
+BYTE Jenny RookKnight_Dismounted 0 0; POIN JennyRKUnmountedAnimList
+BYTE Jenny GoldKnight 0 0; POIN JennyGoldKAnimList
+BYTE Jenny GoldKnight_Dismounted 0 0; POIN JennyRKUnmountedAnimList
+BYTE Awa AxeKnight 0 0; POIN AwaAKAnimList
+BYTE Awa AxeKnight_Dismounted 0 0; POIN NoraDRUnmountedAnimList
+BYTE Awa GreatKnight 0 0; POIN AwaGreatKAnimList
+BYTE Awa GreatKnight_Dismounted 0 0; POIN NoraDRUnmountedAnimList
+WORD 0 //Terminator
+
+JennyRKAnimList:
+BYTE 0 0; SHORT FCavSwordAnim //axe
+BYTE 9 0; SHORT FCavLanceAnim //handaxe
+BYTE 18 0; SHORT FCavUnarmedAnim //unarmed
+WORD 0
+
+JennyRKUnmountedAnimList:
+BYTE 0 0; SHORT DismountedFSwordAnim //axe
+BYTE 9 0; SHORT DismountedFLanceAnim //handaxe
+BYTE 18 0; SHORT DismountedFUnarmedAnim //unarmed
+WORD 0
+
+JennyGoldKAnimList:
+BYTE 0 0; SHORT PaladinFSwordAnim //axe
+BYTE 9 0; SHORT PaladinFLanceAnim //handaxe
+BYTE 18 0; SHORT PaladinFUnarmedAnim //unarmed
+WORD 0
+
+NoraDRUnmountedAnimList:
+BYTE 0 0; SHORT DismountedFAxeAnim //axe
+BYTE 9 0; SHORT DismountedFHandAxeAnim //handaxe
+BYTE 18 0; SHORT DismountedFUnarmedAnim //unarmed
+WORD 0 //Terminator
+
+AwaAKAnimList:
+BYTE 0 1; SHORT FCavAxeAnim //axe
+BYTE 9 0; SHORT FCavHandaxeAnim //handaxe
+BYTE 18 0; SHORT FCavUnarmedAnim
+WORD 0 //Terminator
+
+AwaGreatKAnimList:
+BYTE 0 1; SHORT GreatKnightFAxeAnim //axe
+BYTE 9 0; SHORT GreatKnightFUnarmedAnim //handaxe
+BYTE 18 0; SHORT GreatKnightFHandAxeAnim
+WORD 0 //Terminator

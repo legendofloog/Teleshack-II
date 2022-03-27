@@ -1,0 +1,3 @@
+#include "Changing Battle BGM/BattleChanger.event"
+#include "Changing preparation BGM/PrepChanger.event"
+#include "ContinueBattleBGM_20200919/ContinueBattleBGM.event"

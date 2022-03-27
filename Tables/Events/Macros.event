@@ -1,0 +1,96 @@
+#define EraseBackground "CALL $9EE2C4"
+#define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
+#define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 30"
+#define MaxTurns(TurnNum) "256 - TurnNum"
+#define InfiniteTurnEventPlayer(flag,event,turn) "TurnEventPlayer(flag,event,turn,MaxTurns(turn))"
+#define CamOn "EVBIT_T 0x9"
+#define CamOff "EVBIT_F 0x9"
+#define MoveCoords(X1,Y1,X2,Y2) "SVAL 0xB Coords(X1,Y1) ; MOVE 0x0 0xFFFE [X2,Y2]"
+#define MoveCoords(X1,Y1,Speed,X2,Y2) "SVAL 0xB Coords(X1,Y1) ; MOVE Speed 0xFFFE [X2,Y2]"
+#define LoadUnit(x,y) "UNIT 0xF 0x1D 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" //for units in player placement with prep menu
+#define LoadUnit(unitid,x,y) "UNIT unitid Cavalier 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI"
+#define Unit(x,y) "LoadUnit(x,y)"
+#define SetFlag(id) "ENUT id;"
+#define UnsetFlag(id) "ENUF id;"
+#define FlagIsSet(id, label) "CHECK_EVENTID (id); BEQ (label) 0xc 0x0;"
+#define FlagNotSet(id, label) "CHECK_EVENTID (id); BNE (label) 0xc 0x0;"
+#define Unit(unitid,x,y) "LoadUnit(unitid,x,y)"
+#define LoadUnitReda(unitid,x,y,reda) "UNIT unitid Cavalier 0x00 Level(1,Ally,1) [x,y] 0x00 0x00 1 reda [0x00] NoAI" //for units in player placement with prep menu
+#define UnitReda(unitid,x,y,reda) "LoadUnitReda(unitid,x,y,reda)"
+#define UnitReda(x,y,reda) "LoadUnitReda(0x1,x,y,reda)"
+#define Increment(counterID) "COUNTER_ADD counterID 0x0"
+#define Decrement(counterID) "COUNTER_SUBTRACT counterID 0x0"
+#define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
+#define SilentGiveItem(item,unit) "BYTE 0x40 0x0D unit item; POIN SilentGiveItemFunc|1"
+#define GiveGold(money) "CALL $591F40; SVAL 0x3 money; GIVEITEMTOMAIN 0"
+#define MuteMusic "MUSCFAST 0x7FFF"
+#define SetAI(unitid,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI unitid"
+#define SetAI(x,y,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI [x,y]"
+#define SetAI(unitid,ai1,ai2)"SVAL 0x1 ai1|(ai2<<8); CHAI unitid"
+#define SetAI(x,y,ai1,ai2) "SVAL 0x1 ai1|(ai2<<8); CHAI [x,y]"
+#define DoorFlag(flag,doorx,doory) "DOOR flag [doorx,doory] 0x12"
+#define CenterTextbox(textid) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND; REMA"
+#define SetHP(number,x,y) "SVAL 0x1 number; SVAL 0xB Coords(x,y); SET_HP 0xFFFE"
+#define CharacterConditionalDialog(character,alivetext,deadtext) "CHECK_ALIVE character; BEQ 1 0x0 0xC; Text(alivetext); GOTO 2; LABEL 1; Text(deadtext); LABEL 2"
+#define FlagConditionalDialog(flag,alivetext,deadtext) "CHECK_EVENTID flag; BEQ 1 0x0 0xC; Text(alivetext); GOTO 2; LABEL 1; Text(deadtext); LABEL 2"
+#define DoubleConditionalDialog(character,character2,alivetext,deadtext,label,label2) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_ALIVE character2; BEQ label 0x0 0xC; Text(alivetext); GOTO label2; LABEL label; Text(deadtext); LABEL label2"
+#define IfAliveDialog(character,alivetext,label) "CHECK_ALIVE character; BEQ label 0x0 0xC; Text(alivetext); LABEL label"
+#define DoubleIfAliveDialog(character,character2,alivetext,label) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_ALIVE character2; BEQ label 0x0 0xC; Text(alivetext); LABEL label"
+#define TripleIfAliveDialog(character,character2,character3,alivetext,label) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_ALIVE character2; BEQ label 0x0 0xC; CHECK_ALIVE character3; BEQ label 0x0 0xC; Text(alivetext); LABEL label"
+#define ChargeWarning(character,alivetext) "CHECK_ALIVE character; BEQ 1 0x0 0xC;CAM1 character;STAL 20; FlashCursor(character,60); Text(alivetext); LABEL 1"
+#define CameraCursor(character) "CAM1 character; STAL 20; FlashCursor(character,60)"
+#define CameraLong(character,time) "CAM1 character; STAL 20; FlashCursor(character,time)"
+#define CameraMove(character) "CAM1 [character]"
+#define CameraCursorLocation(X,Y,time) "CAMERA [X,Y]; STAL 20; FlashCursor(X,Y,time)"
+#define Highlight(character) "CUMO [character]; STAL 60; CURE"
+#define MusicChange(song) "MUSC song"
+#define Music(song) "MUSC song"
+#define PlayHisWorld "MUSC HisWorld" //Need to add His World/define it first lol
+#define FadeOutMusic "MUSCMID 0x7FFF"
+#define HouseExp(flag,background,text) "Text(background,text); CHECK_EVENTID flag; BNE 0x776 0xC 0x0; GiveExperience(0xFFFF,10); ENUT flag;LABEL 0x776; EVBIT_T 0x7" //Needs Add EXP ASM
+#define QuickRemu(unitID,labelID) "CHECK_EXISTS unitID; BEQ labelID 0xC 0x0; CHECK_ALIVE unitID; BEQ labelID 0xC 0x0; REMU unitID; LABEL labelID"
+#define QuickCheckFlag(flagID,labelID) "CHECK_EVENTID flagID; BEQ labelID 0xC 0x0; LABEL labelID"
+#define RemoveAll "REMOVEALL_BLUE; REMOVEALL_GREEN; REMOVEALL_RED"
+#define DoAllThree "CLEA 0; CLEN 0; CLEE 0"
+#define SystemText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART"
+
+
+#define IBeq(i, label) "SVAL 2 i; BEQ label 0xC 2;"
+#define IBne(i, label) "SVAL 2 i; BNE label 0xC 2;"
+#define IBgt(i, label) "SVAL 2 i; BGT label 0xC 2;"
+#define IBge(i, label) "SVAL 2 i; BGE label 0xC 2;"
+#define IBlt(i, label) "SVAL 2 i; BLT label 0xC 2;"
+#define IBle(i, label) "SVAL 2 i; BLE label 0xC 2;"
+#define BFalse(label) "BEQ label 0xC 0x0;"
+#define BTrue(label) "BNE label 0xC 0x0;"
+
+#define DefaultAI           [0x0,0x0,0x4,0x0]
+#define DefaultHealAI       [0x0,0x0,0x0,0x0]
+#define ChargeAI            [0x0,0x0,0x4,0x0]
+#define ChargeHealAI        [0x0,0x0,0x0,0x0]
+#define BossAI              [0x3,0x3,0x4,0x20]
+#define BossHealAI          [0x3,0x3,0x0,0x20]
+#define NoMoveAI            [0x3,0x3,0x4,0x0]
+#define NoMoveHealAI        [0x3,0x3,0x4,0x0]
+#define StallHealAI(turns)  [0x0,0x11+turns,0x0,0x0]
+#define RangeAI             [0x0,0x3,0x4,0x0]
+#define RangeHealAI         [0x0,0x3,0x0,0x0]
+#define JustMoveAI          [0x6,0x0,0x4,0x0]
+#define DoNothingAI         [0x6,0x3,0x4,0x0]
+#define BossNoAttackAI      [0x6,0x3,0x4,0x20]
+#define HealAI        		[0xE,0x3,0x4,0x0]
+#define ThiefAI        		[0x6,0x5,0x4,0x0]
+#define BrigandAI           [0x0,0x4,0x4,0x0]
+#define WallAI				[0x0,0xB,0x4,0x0]
+#define EscapeAI		    [0x0,0xC,0x4,0x0]
+#define EscapeOnlyAI		[0x6,0xC,0x4,0x0]
+#define NMHealAI [0x03,0x03,0x00,0x20]
+
+#define CommanderAI [0xD,3,4,0]
+#define TwoActionAI [0,6,4,0]
+#define StillAI [0,3,4,32]
+#define StallOneTurnAI [0x0,0x12,0x4,0x0]
+#define DefendAI [0x7,0x1,0x0,0x0]
+#define HalfMoveAI [0xC,0x0,0x0,0x0]
+#define AttackThenLootAI [0x00, 0x04, 0x04, 0x00]
+#define DoNotAttack07AI [0x07, 0x0A, 0x04, 0x00]

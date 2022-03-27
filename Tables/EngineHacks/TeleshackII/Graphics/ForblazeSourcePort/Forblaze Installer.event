@@ -1,0 +1,385 @@
+#include "ForblazeSrc.lyn.event"
+
+//Frame data
+#define SpellFrameData(id,duration) "SHORT id duration"
+#define SpellFrameDataLoop "SHORT $FFFE"
+#define SpellFrameDataTerm "SHORT $FFFF"
+
+#define SpellLoopProc(loopFunc) "SHORT $19 $00; WORD 0; SHORT $03 $00; POIN loopFunc+1; WORD 0 0"
+
+PUSH
+
+	//Add to spell effect pointer table
+	ORG $5D4ED0
+	//5D4ED0 = 1c; use 5D4EC0 for 18
+	POIN StartSpellAnimForForblaze+1
+	
+POP
+
+//0202003C might differ? 201fabc?
+
+Forblaze_MainProcLoop:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN ForblazeAnim_Main+1
+WORD 0 0
+
+Forblaze_MeteorProcLoop:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_MeteorLoop+1
+WORD 0 0
+
+Forblaze_MeteorGlowProc:
+SHORT $19 $00; WORD 0
+SHORT $0F $0A; WORD 0
+SHORT $03 $00; POIN Forblaze_MeteorGlowLoop+1
+WORD 0 0
+
+Forblaze_FireBGLoopProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_FireBGLoop+1
+WORD 0 0
+
+Forblaze_RocksLoopProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_RocksLoop+1
+WORD 0 0
+
+Forblaze_RocksScatterProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_RocksScatterLoop+1
+WORD 0 0
+
+Forblaze_SwirlLoopProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_SwirlLoop+1
+WORD 0 0
+
+Forblaze_EmbersLoopProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_EmbersLoop+1
+WORD 0 0
+
+Forblaze_EmbersRiseLoopProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_EmbersRiseLoop+1
+WORD 0 0
+
+Forblaze_PaletteFlashLoopProc:
+SHORT $19 $00; WORD 0
+SHORT $03 $00; POIN Forblaze_PaletteFlashLoop+1
+WORD 0 0
+
+
+
+MeteorGlowFrame:
+	SpellFrameData($00,2)
+	SpellFrameData($01,2)
+	SpellFrameData($02,2)
+	SpellFrameData($01,2)
+	SpellFrameDataLoop
+	ALIGN 4
+
+//rocks
+Forblaze_1E88CA:
+	SHORT $05 $0A $07 $0A $0D $12 $0B $08
+	ALIGN 4
+Forblaze_1E88DA: //frame data??
+	#incbin "bin/1E88DA.bin"
+	ALIGN 4
+	
+//embers
+Forblaze_1E8968:
+	SHORT $23 $28 $2F $32 $21 $3A $33 $30
+	ALIGN 4
+Forblaze_1E8978:
+	SHORT $13 $10 $18 $0E $14 $0A $12 $08
+	ALIGN 4
+Forblaze_1E8988:
+	SHORT $20 $B0 $50 $90 $C0 $65 $38 $80
+	ALIGN 4
+
+//unknown format (OAM?)
+//rocks
+Forblaze_BD2374:
+SHORT $0000 $8000 $00
+SHORT $FFE7 $FFDA $0
+SHORT $8000 $8000 $04
+SHORT $0007 $FFDA $0
+SHORT $0000 $8000 $06
+SHORT $FFEC $FFFA $0
+SHORT $8000 $8000 $10
+SHORT $0008 $FFF0 $0
+WORD $1 $0 $0
+Forblaze_BD23BC:
+SHORT $0000 $8000 $0C
+SHORT $FFE8 $FFF0 $0
+SHORT $8000 $8000 $10
+SHORT $0008 $FFF0 $0
+WORD $1 $0 $0
+Forblaze_BD23E0:
+SHORT $4000 $8000 $12
+SHORT $FFF0 $FFF0 $0
+SHORT $4000 $4000 $52
+SHORT $FFF0 $0000 $0
+WORD $1 $0 $0
+Forblaze_BD2404:
+SHORT $0000 $4000 $16 //oam0 oam1 oam2
+SHORT $FFF8 $FFF8 $0 //x, y, padding
+WORD $1 $0 $0
+Forblaze_BD241C:
+SHORT $0000 $0000 $74
+SHORT $FFF8 $FFF8 $0
+WORD $1 $0 $0
+Forblaze_BD2434:
+SHORT $0000 $B000 $0C 
+SHORT $FFF8 $FFF0 $0
+SHORT $8000 $B000 $10
+SHORT $FFE8 $FFF0 $0
+WORD $1 $0 $0
+
+Forblaze_BD2458:
+	WORD Forblaze_BD2374+$18000000 $80000000
+Forblaze_BD2460:
+	WORD Forblaze_BD23BC+$18000000 $80000000
+Forblaze_BD2468:
+	WORD Forblaze_BD23E0+$18000000 $80000000
+Forblaze_BD2470:
+	WORD Forblaze_BD2404+$18000000 $80000000
+Forblaze_BD2478:
+	WORD Forblaze_BD241C+$18000000 $80000000
+Forblaze_BD2480:
+	WORD Forblaze_BD2434+$18000000 $80000000
+
+//4ff44 - 22 frames from savestate
+//12ff4
+
+//embers
+Forblaze_BD2488:
+SHORT $0 $0 $0
+SHORT $FFFC $FFFC $0
+WORD $1 $0 $0
+Forblaze_BD24A0:
+SHORT $0 $0 $1 
+SHORT $FFFC $FFFC $0
+WORD $1 $0 $0
+Forblaze_BD24B8:
+SHORT $0 $0 $2 
+SHORT $FFFC $FFFC $0
+WORD $1 $0 $0
+
+/*
+SHORT $0 $0 //oam1 oam0
+SHORT $2 //base oam2
+SHORT $FFFC $FFFC $0 //x, y, padding
+WORD $1 $0 $0
+*/
+
+Forblaze_BD24D0:
+	POIN Forblaze_BD2488+1 Forblaze_BD24A0+1 
+	WORD $82000000
+Forblaze_BD24DC:
+	POIN Forblaze_BD24B8+1 Forblaze_BD24A0+1 
+	WORD $82000000
+
+ALIGN 4
+MeteorFrame: //1e87d0
+    SpellFrameData($00,2)
+	SpellFrameData($01,2)
+	SpellFrameData($02,2)
+	SpellFrameData($03,2)
+	SpellFrameData($04,2)
+	SpellFrameData($05,2)
+	SpellFrameData($06,2)
+	SpellFrameData($07,2)
+	SpellFrameData($08,2)
+	SpellFrameData($09,2)
+	SpellFrameData($0A,2)
+	SpellFrameData($0B,2)
+	SpellFrameDataLoop
+
+ALIGN 4
+MeteorPalette:
+	#incbin "bin/Meteors.pal.bin"
+	ALIGN 4
+MeteorTSA:
+	POIN MeteorTSA1_data
+	POIN MeteorTSA2_data
+	POIN MeteorTSA3_data
+	POIN MeteorTSA4_data
+	POIN MeteorTSA5_data
+	POIN MeteorTSA6_data
+	POIN MeteorTSA7_data
+	POIN MeteorTSA8_data
+	POIN MeteorTSA9_data
+	POIN MeteorTSA10_data
+	POIN MeteorTSA11_data
+	POIN MeteorTSA12_data
+	ALIGN 4
+
+MeteorImage:
+	#incbin "bin/Meteors.img.bin"
+	ALIGN 4
+
+#define FireFrameIteration "SpellFrameData($00,2); SpellFrameData($01,2); SpellFrameData($02,2); SpellFrameData($03,2); SpellFrameData($04,2)"
+
+FireFrame: //1e8814
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	FireFrameIteration
+	SpellFrameDataTerm
+	ALIGN 4
+
+FirePalette:
+	#incbin "bin/FireBG.pal.bin"
+	ALIGN 4
+
+FireTSA:
+	POIN FireBGTSA_data
+	POIN FireBGTSA_data
+	POIN FireBGTSA_data
+	POIN FireBGTSA_data
+	POIN FireBGTSA_data
+
+FireImage:
+	POIN FireImage1_data
+	POIN FireImage2_data
+	POIN FireImage3_data
+	POIN FireImage4_data
+	POIN FireImage5_data
+
+SwirlFrame: //1e895a
+	SpellFrameData($00, 3)
+	SpellFrameData($01, 3)
+	SpellFrameData($02, 3)
+	SpellFrameDataLoop
+	ALIGN 4
+
+SwirlPalette:
+	#incbin "bin/SwirlBG.pal.bin"
+	ALIGN 4
+
+SwirlTSA:
+	POIN SwirlBGTSA_data
+	POIN SwirlBGTSA_data
+	POIN SwirlBGTSA_data
+
+SwirlImage:
+	POIN SwirlImage1_data
+	POIN SwirlImage2_data
+	POIN SwirlImage3_data
+
+
+//Data binaries below here
+ALIGN 4
+EmbersImage: 
+#incbin "bin/Embers.img.bin"
+ALIGN 4
+EmbersPalette: 
+#incbin "bin/Embers.pal.bin"
+
+ALIGN 4
+RocksImage:
+#incbin "bin/Rocks.img.bin"
+ALIGN 4
+RocksPalette:
+#incbin "bin/Rocks.pal.bin"
+
+ALIGN 4
+MeteorTSA1_data:
+#incbin "bin/Meteor_1.tsa.bin"
+ALIGN 4
+MeteorTSA2_data:
+#incbin "bin/Meteor_2.tsa.bin"
+ALIGN 4
+MeteorTSA3_data:
+#incbin "bin/Meteor_3.tsa.bin"
+ALIGN 4
+MeteorTSA4_data:
+#incbin "bin/Meteor_4.tsa.bin"
+ALIGN 4
+MeteorTSA5_data:
+#incbin "bin/Meteor_5.tsa.bin"
+ALIGN 4
+MeteorTSA6_data:
+#incbin "bin/Meteor_6.tsa.bin"
+ALIGN 4
+MeteorTSA7_data:
+#incbin "bin/Meteor_7.tsa.bin"
+ALIGN 4
+MeteorTSA8_data:
+#incbin "bin/Meteor_8.tsa.bin"
+ALIGN 4
+MeteorTSA9_data:
+#incbin "bin/Meteor_9.tsa.bin"
+ALIGN 4
+MeteorTSA10_data:
+#incbin "bin/Meteor_10.tsa.bin"
+ALIGN 4
+MeteorTSA11_data:
+#incbin "bin/Meteor_11.tsa.bin"
+ALIGN 4
+MeteorTSA12_data:
+#incbin "bin/Meteor_12.tsa.bin"
+ALIGN 4
+
+FireImage1_data:
+#incbin "bin/FireBG_1.img.bin"
+ALIGN 4
+FireImage2_data:
+#incbin "bin/FireBG_2.img.bin"
+ALIGN 4
+FireImage3_data:
+#incbin "bin/FireBG_3.img.bin"
+ALIGN 4
+FireImage4_data:
+#incbin "bin/FireBG_4.img.bin"
+ALIGN 4
+FireImage5_data:
+#incbin "bin/FireBG_5.img.bin"
+ALIGN 4
+
+FireBGTSA_data:
+#incbin "bin/FireBG.tsa.bin"
+ALIGN 4
+
+SwirlImage1_data:
+#incbin "bin/SwirlBG_1.img.bin"
+ALIGN 4
+SwirlImage2_data:
+#incbin "bin/SwirlBG_2.img.bin"
+ALIGN 4
+SwirlImage3_data:
+#incbin "bin/SwirlBG_3.img.bin"
+ALIGN 4
+
+SwirlBGTSA_data:
+#incbin "bin/SwirlBG.tsa.bin"
+ALIGN 4
+
+PUSH
+	ORG $212594
+	BYTE $0 $3C $0 $0
+	POIN ForblazeSample_4
+	BYTE $FF $0 $FF $0
+	BYTE $0 $3C $0 $0
+	POIN ForblazeSample_5
+	BYTE $FF $0 $FF $0
+POP
+
+ForblazeSample_4:
+#incbin "bin/inst_18h.wav.bin"
+ForblazeSample_5:
+#incbin "bin/inst_38h.wav.bin"
+
+#include "sfx/song02CA.event"
+SongTable(0x2CA,song02CA,SFXGroup)
+
+#include "sfx/song02CB.event"
+SongTable(0x2CB,song02CB,SFXGroup)
+

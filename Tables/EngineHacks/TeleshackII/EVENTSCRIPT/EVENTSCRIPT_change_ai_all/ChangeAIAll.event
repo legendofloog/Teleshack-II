@@ -1,0 +1,7 @@
+
+#define ChangeAllyAI(unit, class, ai1, ai2) "BYTE 0x40 0x05 0x01 0x00; BYTE ai1 ai2; BYTE 0x00 0x00 0x41 0x0D; BYTE unit class; POIN ChangeAllAI|1"
+#define ChangeEnemyAI(unit, class, ai1, ai2) "BYTE 0x40 0x05 0x01 0x00; BYTE ai1 ai2; BYTE 0x00 0x00 0x40 0x0D; BYTE unit class; POIN ChangeAllAI|1"
+
+ALIGN 4
+ChangeAllAI:
+#incbin "change_ai_all.dmp"

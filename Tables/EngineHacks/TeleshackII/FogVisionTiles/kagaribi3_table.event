@@ -1,0 +1,5 @@
+// map, x, y, range, flag, 0
+KAGARIBI3_Table:
+csvmacro000(Chapter6,7,0,1,0x00,0x00)
+csvmacro000(Chapter6,7,6,7,0x0,0x00)
+csvmacro000(0xFF,0,0,0,0x0,0x00)

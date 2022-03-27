@@ -1,0 +1,90 @@
+#define EnemyEscapeTable 0x5A8188
+#define NPCEscapeTable 0x5A828C
+
+#define EscapeUp 3
+#define EscapeDown 2
+#define EscapeLeft 0
+#define EscapeRight 1
+#define EscapeInPlace 5
+
+#define EscapePointEntry(X,Y,Direction) "BYTE X Y Direction 0"
+#define EscapePointTerminator "BYTE 0xFF 0xFF 0xFF 0xFF"
+#define SetEnemyEscapePoint(ChapterID,EscapePointList) "PUSH; ORG EnemyEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
+#define SetNPCEscapePoint(ChapterID,EscapePointList) "PUSH; ORG NPCEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
+
+Chapter1NPCEscapeTable:
+EscapePointEntry(14,0,EscapeUp)
+EscapePointEntry(15,0,EscapeUp)
+EscapePointTerminator
+
+Chapter2NPCEscapeTable:
+EscapePointEntry(19,9,EscapeRight)
+EscapePointEntry(19,10,EscapeRight)
+EscapePointTerminator
+
+Chapter16NPCEscapeTable:
+EscapePointEntry(21,11,EscapeRight)
+EscapePointEntry(21,12,EscapeRight)
+EscapePointEntry(21,13,EscapeRight)
+EscapePointTerminator
+
+Chapter4EnemyEscapeTable:
+EscapePointEntry(2,16,EscapeDown)
+EscapePointEntry(3,16,EscapeDown)
+EscapePointTerminator
+
+Chapter8EnemyEscapeTable:
+EscapePointEntry(6,0,EscapeUp)
+EscapePointEntry(14,0,EscapeUp)
+EscapePointTerminator
+
+Chapter10EnemyEscapeTable:
+EscapePointEntry(6,0,EscapeUp)
+EscapePointEntry(7,0,EscapeUp)
+EscapePointEntry(8,0,EscapeUp)
+EscapePointEntry(9,0,EscapeUp)
+EscapePointEntry(10,0,EscapeUp)
+EscapePointEntry(11,0,EscapeUp)
+EscapePointEntry(4,17,EscapeDown)
+EscapePointEntry(5,17,EscapeDown)
+EscapePointEntry(6,17,EscapeDown)
+EscapePointEntry(7,17,EscapeDown)
+EscapePointEntry(11,17,EscapeDown)
+EscapePointEntry(12,17,EscapeDown)
+EscapePointEntry(24,13,EscapeRight)
+EscapePointEntry(24,14,EscapeRight)
+EscapePointEntry(24,15,EscapeRight)
+EscapePointEntry(24,16,EscapeRight)
+EscapePointEntry(24,17,EscapeRight)
+EscapePointTerminator
+
+Chapter11EnemyEscapeTable:
+EscapePointEntry(2,0,EscapeUp)
+EscapePointEntry(19,2,EscapeRight)
+EscapePointEntry(19,3,EscapeRight)
+EscapePointTerminator
+
+Chapter15EnemyEscapeTable:
+EscapePointEntry(12,0,EscapeUp)
+EscapePointEntry(13,0,EscapeUp)
+EscapePointEntry(14,0,EscapeUp)
+EscapePointEntry(2,20,EscapeInPlace)
+EscapePointEntry(2,5,EscapeInPlace)
+EscapePointEntry(25,5,EscapeInPlace)
+EscapePointEntry(17,25,EscapeInPlace)
+EscapePointTerminator
+
+Chapter16EnemyEscapeTable:
+EscapePointEntry(12,1,EscapeInPlace)
+EscapePointEntry(18,1,EscapeInPlace)
+EscapePointTerminator
+
+SetNPCEscapePoint(Chapter1,Chapter1NPCEscapeTable)
+SetNPCEscapePoint(Chapter2,Chapter2NPCEscapeTable)
+SetNPCEscapePoint(Chapter16,Chapter16NPCEscapeTable)
+SetEnemyEscapePoint(Chapter4,Chapter4EnemyEscapeTable)
+SetEnemyEscapePoint(Chapter8,Chapter8EnemyEscapeTable)
+SetEnemyEscapePoint(Chapter10,Chapter10EnemyEscapeTable)
+SetEnemyEscapePoint(Chapter11,Chapter11EnemyEscapeTable) 
+SetEnemyEscapePoint(Chapter15,Chapter15EnemyEscapeTable)
+SetEnemyEscapePoint(Chapter16,Chapter16EnemyEscapeTable)

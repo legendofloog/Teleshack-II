@@ -1,0 +1,10 @@
+//placeholder mov getter; used for the staff ai
+//ALIGN 4
+//prGotoMovGetter:
+//#include "MovGetter.lyn.event"
+//ALIGN 4
+
+//update ballista traps when a trap is removed
+#include "RemoveTrapFix.lyn.event"
+
+#include "CustomItems/_CustomItemSetup.event"

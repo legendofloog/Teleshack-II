@@ -1,0 +1,2 @@
+#define GiveItemToCharacter(char, item) "_SETVAL 3 item; GIVEITEMTO char"
+#define CauseGameOverIfLordDies "AFEV 0 GameOverStart 0x65"

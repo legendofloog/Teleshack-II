@@ -1,0 +1,354 @@
+EventPointerTable(Chapter2Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(12, Turn3Spawn, 3)
+TurnEventPlayer(13, BoroSpawn, 10)
+TurnEventPlayer(14, BoroWarning, 9)
+TurnEventPlayer(20, Turn5Spawn, 5)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(1,3)
+Door(6,3)
+Door(14,10)
+Chest(LightRune,6,1)
+Chest(Fire,14,8)
+LOCA 9 DelilahDoor [6,10] 0x12
+LOCA 10 HernandezDoor [18,4] 0x12
+LOCA 3 DraganaDoor [16,18] 0x12
+END_MAIN
+
+MiscBasedEvents:
+AREA 0 CivilianEscape [19, 9] [19, 10]
+AFEV 15 DelilahFreed 9
+AFEV 16 HernandezFreed 10
+CauseGameOverIfLordDies
+AFEV 0 EndingScene 3
+END_MAIN
+
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [2,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [2,0] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [0,1] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
+UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [2,1] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
+UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [0,0] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Tyr_Ch2 AxeArmor 0x0      Level(4,Enemy,False) [11,18] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Chapter1Generics SwordArmor Tyr_Ch2 Level(1,Enemy,True) [6,4] 0x0 0x0 0x0 0x0 [SteelSword, DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics Archer Tyr_Ch2 Level(1,Enemy,True) [6, 16] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+UNIT Chapter1Generics BowArmor Tyr_Ch2 Level(1,Enemy,True) [15, 19] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI
+UNIT
+
+GreenUnits:
+UNIT Hernandez Brigand 0x0 Level(5,NPC,False) [18,2] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT Dragana Sniper_F 0x0 Level(5,NPC,False) [16,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Delilah Sister 0x0 Level(2,NPC,False) [6,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+Turn3Reinforcements:
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,19] 0x0 0x0 0x1 REDA1R18 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [ShortLance] PursueWithoutHeedAI
+UNIT
+
+Turn5Reinforcements:
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x1 REDA1R18 [ShortSword] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronAxe] PursueWithoutHeedAI
+UNIT
+
+BoroUnitGroup2:
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [1,0] 0x0 0x0 0x1 REDA1R0 [MasterLance] PursueWithoutHeedAI
+UNIT
+
+OpeningCutsceneUnits:
+UNIT Varga SwordArmor           Cleo Level(4,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [LongSword,Vulnerary, DoorKey] NoAI // moves to 1,2
+UNIT Ch2_Selese_Guy LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [1,3] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT
+
+OpeningCutsceneAllyUnits:
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI //moves to 0,2
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [1,0] 0x0 0x0 0x0 0x1 [0x0] NoAI //moves to 2,2
+UNIT
+
+EndingCutsceneUnits:
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [14,19] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [15,19] 0x0 0x0 0x0 0x1 [0x0] NoAI 
+UNIT Dragana Sniper_F 0x0 Level(5,NPC,False) [16,16] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+EndingCutsceneEnemies1:
+UNIT Hernandez LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [1,19] 0x0 0x0 0x1 REDA8R11 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Helman LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [2,19] 0x0 0x0 0x1 REDA8R12 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Senny LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [3,19] 0x0 0x0 0x1 REDA8R13 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Ch2_Selese_Guy LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [0,19] 0x0 0x0 0x1 REDA10R12 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT
+
+
+EndingCutsceneUnits3:
+UNIT Tyr_Ch2 LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [17,6] 0x0 0x0 0x1 REDA12R11 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,6] 0x0 0x0 0x1 REDA13R13 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Raschwitz_Ch1 LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [10,6] 0x0 0x0 0x1 REDA10R10 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT 0x4B LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [11,6] 0x0 0x0 0x1 REDA11R10 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Boro_Ch1 Champion 0x00 Level(5,NPC,False) [18,5] 0x0 0x0 0x0 0x0 [MasterLance] PursueWithoutHeedAI
+UNIT
+
+EndingCutsceneUnits2:
+UNIT Hernandez LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [1,19] 0x0 0x0 0x0 REDA7R11 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Helman LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [2,19] 0x0 0x0 0x0 REDA7R12 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Senny LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [3,19] 0x0 0x0 0x0 REDA7R13 [IronLance, DoorKey, ChestKey] NeverMoveAI
+UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	FADI 15
+	LOAD1 1 EnemyUnits
+	LOAD1 1 OpeningCutsceneUnits
+	LOAD1 1 GreenUnits
+	ENUN
+	SetBackground(CastleHallway)
+	//MUSC FF5_Sealed_Away
+	Text(Chapter2OpeningScene1)
+	CALL $9EE2C4
+	FlashCursor(Varga,60)
+	EVBIT_T 5
+	TEXTSTART
+	TEXTSHOW Chapter2OpeningScene2
+	TEXTEND
+	LOAD1 1 OpeningCutsceneAllyUnits
+	ENUN
+	TEXTCONT
+	TEXTEND
+	REMA
+	EVBIT_F 5
+	Text(Chapter2OpeningScene3)
+	CUSN Varga
+	MUSC Sortie_Formation
+	StartBattle
+	NormalDamage(0,14)
+	MissedAttack(1,2)
+	EndAttack
+	FIGHT_MAP Varga Ch2_Selese_Guy LongSword False
+	ENUN
+	MOVE 15 Cleo [0,3]
+	ENUN
+	StartBattle
+	CriticalHit(0,20)
+	EndAttack
+	FIGHT_MAP Cleo Ch2_Selese_Guy Argilabrys False
+	ENUN
+	AWAIT_KILL Ch2_Selese_Guy
+	MOVE 15 Loewe [2,2]
+	ENUN
+	Text(Chapter2OpeningScene4)
+	MOVE 15 Varga [1,2]
+	MOVE 15 Cleo [0,2]
+	ENUN
+	STAL 30
+	CAMERA Dragana
+	FlashCursor(Tyr_Ch2,60)
+	FlashCursor(Dragana,60)
+	FADI 15
+	LOAD3 2 Units1
+	//LOAD1 2 Units1
+	ENUN
+	CUSA Varga
+	FADU 15
+	Text(Chapter2OpeningScene5)
+	NoFade
+	ENDA
+
+Turn3Spawn:
+ReinforcementEvent(Turn3Reinforcements)
+
+Turn5Spawn:
+ReinforcementEvent(Turn5Reinforcements)
+
+BoroSpawn:
+LOAD1 1 BoroUnitGroup2
+ENUN
+CAMERA Boro_Ch1
+Text(Chapter2BoroSpawnText)
+NoFade
+ENDA
+
+BoroWarning:
+CAMERA Loewe
+FlashCursor(Loewe,60)
+Text(Chapter2BoroWarning)
+NoFade
+ENDA
+
+DelilahDoor:
+TILECHANGE 3
+NoFade
+ENDA
+
+DelilahFreed:
+CHECK_ACTIVE
+SVAL s1 Svetomir
+MUSC WithUs_Song
+BNE 1 s1 sC
+	Text(DelilahFreedBySvetText)
+	GOTO 2
+LABEL 1
+Text(DelilahFreedText)
+LABEL 2
+CUSA Delilah
+GiveItem(Heal,Delilah)
+SilentGiveItem(Vulnerary,Delilah)
+NoFade
+ENDA
+
+HernandezDoor:
+TILECHANGE 1
+NoFade
+ENDA
+
+HernandezFreed:
+Text(HernandezFreedText)
+NoFade
+ENDA
+
+CivilianEscape:
+CHECK_CLASS -1
+SVAL s1 Brigand
+BNE 4 s1 sC
+	ENUT 0x7A
+LABEL 4
+NoFade
+ENDA
+
+DraganaDoor:
+TILECHANGE 5
+NoFade
+ENDA
+
+EndingScene:
+FADI 15
+SADD s1 sC s0
+SET_HP Cleo
+CheckMaxHP(Loewe)
+SADD s1 sC s0
+SET_HP Loewe
+RemoveAll
+LOAD1 1 EndingCutsceneUnits
+ENUN
+FADU 15
+MUSC Rovers
+MOVE 15 Dragana [16,19]
+ENUN
+EVBIT_T 5
+TEXTSTART
+TEXTSHOW Chapter2EndingScene1
+TEXTEND
+MOVE 15 Loewe [10,9]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+ENUN
+MUSC Sortie_Formation
+MOVE 15 Cleo [11,14]
+MOVE 15 Loewe [10,14]
+MOVE 15 Dragana [11,15]
+ENUN
+LOAD1 1 EndingCutsceneEnemies1
+ENUN
+LOAD1 1 EndingCutsceneUnits3
+ENUN
+TEXTSTART
+TEXTSHOW Chapter2EndingScene2
+TEXTEND
+MOVE 15 Boro_Ch1 [13,11]
+ENUN
+KILL Tyr_Ch2
+AWAIT_KILL Tyr_Ch2
+MOVE 15 Boro_Ch1 [13,12]
+ENUN
+KILL Chapter1Generics
+AWAIT_KILL Chapter1Generics
+TEXTCONT
+TEXTEND
+REMA
+MOVE 15 Boro_Ch1 [10,13]
+ENUN
+StartBattle
+CriticalHit(0,25)
+EndAttack
+FIGHT_MAP Boro_Ch1 Ch2_Selese_Guy SilverLance False
+ENUN
+MUSC FE5_InTheBattle_Fate
+Text(Chapter2EndingScene3)
+LOAD1 1 EndingCutsceneUnits2
+ENUN
+MOVE 15 Loewe [19,9]
+MOVE 15 Cleo [19,10]
+MOVE 15 Dragana [14,12]
+ENUN
+HIDEUNIT Loewe
+HIDEUNIT Cleo 
+TEXTSTART
+TEXTSHOW Chapter2EndingScene4
+TEXTEND
+MOVE 15 Dragana [19,9]
+ENUN
+REMOVEUNIT Dragana
+TEXTCONT
+TEXTEND
+REMA
+EVBIT_F 5
+FADI 15
+SHOWUNIT Loewe
+SHOWUNIT Cleo
+MNC2 Chapter3
+NoFade
+ENDA

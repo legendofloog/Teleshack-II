@@ -1,0 +1,144 @@
+
+#include "Support.lyn.event"
+
+PUSH
+
+ORG 0x285B0
+jumpToHack(New_GetUnitSupportBonuses)
+
+ORG 0x87698
+jumpToHack(New_DrawUnitScreenSupportList)
+
+ORG 0x281C8 //GetROMUnitSupportCount
+SHORT 0x2000 0x4770 // mov r0, #0x00 ; bx lr.
+
+POP
+
+ALIGN 4
+NewSupportTable:
+#include "NewSupportTable.event"
+
+#define SupportEntry(partner, range, atk, def, hit, avo, crit, ddg) "BYTE partner range atk def hit avo crit ddg"
+#define SupportTerm "WORD 0 0"
+#define SetUnitSupportList(unit, list) "PUSH; ORG NewSupportTable + (unit*4); POIN list; POP"
+
+ALIGN 4
+CleoSupportList:
+SupportEntry(Loewe,3,0,0,5,5,5,5)
+SupportEntry(Varga,3,0,0,7,7,7,7)
+SupportTerm
+
+ALIGN 4
+MiraSupportList:
+SupportEntry(Iskra,3,0,1,10,5,0,0)
+SupportTerm
+
+ALIGN 4
+LoeweSupportList:
+SupportEntry(Cleo,3,0,0,5,5,5,5)
+SupportEntry(Iskra,3,0,1,10,0,5,0)
+SupportTerm
+
+ALIGN 4
+IskraSupportList:
+SupportEntry(Loewe,3,1,0,10,5,0,0)
+SupportEntry(Emil,3,0,0,5,5,5,5)
+SupportEntry(Mira,3,1,0,10,5,0,0)
+SupportTerm
+
+ALIGN 4
+EmilSupportList:
+SupportEntry(Cleo, 3,0,0,5,5,0,0)
+SupportEntry(Mira, 3,0,0,5,5,0,0)
+SupportEntry(Iskra,3,0,0,5,5,5,5)
+SupportTerm
+
+ALIGN 4
+SvetomirSupportList:
+SupportEntry(Alena,3,0,1,0,10,0,5)
+SupportTerm
+
+ALIGN 4
+AlenaSupportList:
+SupportEntry(Svetomir,3,1,0,10,0,5,0)
+SupportTerm
+
+ALIGN 4
+VargaSupportList:
+SupportEntry(Cleo,3,0,0,7,7,7,7)
+SupportTerm
+
+ALIGN 4
+AlexSupportList:
+SupportEntry(Axel, 3, 3, 0, 5, 5, 15, 0)
+SupportTerm
+
+ALIGN 4
+AxelSupportList:
+SupportEntry(Alex, 3, 3, 0, 5, 5, 15, 0)
+SupportTerm
+
+ALIGN 4
+FiloneSupportList:
+SupportEntry(Zwieback, 3, 2, 0, 5, 0, 5, 0)
+SupportTerm
+
+ALIGN 4
+ZwiebackSupportList:
+SupportEntry(Filone, 3, 0, 2, 5, 0, 5, 0)
+SupportTerm
+
+ALIGN 4
+TobieSupportList:
+SupportEntry(Gimm, 3, 0, 0, 20, 15, 0, 0)
+SupportTerm
+
+ALIGN 4
+GimmSupportList:
+SupportEntry(Tobie, 3, 3, 3, 0, 0, 10, 0)
+SupportTerm
+
+ALIGN 4
+ValseSupportList:
+SupportEntry(Hornet, 3, 0, 2, 0, 10, 0, 10)
+SupportTerm
+
+ALIGN 4
+HornetSupportList:
+SupportEntry(Valse, 3, 2, 0, 10, 0, 10, 0)
+SupportTerm
+
+ALIGN 4
+MiloSupportList:
+SupportEntry(Pelecaye, 3, 1, 1, 10, 0, 0, 0)
+SupportTerm
+
+ALIGN 4
+PelecayeSupportList:
+SupportEntry(Milo, 3, 1, 1, 10, 0, 0, 0)
+SupportTerm
+
+ALIGN 4
+CoraliaSupportList:
+SupportEntry(Loewe,3,2,0,0,10,0,0)
+SupportTerm
+
+SetUnitSupportList(Cleo,CleoSupportList)
+SetUnitSupportList(Loewe,LoeweSupportList)
+SetUnitSupportList(Mira,MiraSupportList)
+SetUnitSupportList(Iskra,IskraSupportList)
+SetUnitSupportList(Emil,EmilSupportList)
+SetUnitSupportList(Svetomir,SvetomirSupportList)
+SetUnitSupportList(Alena,AlenaSupportList)
+SetUnitSupportList(Varga,VargaSupportList)
+SetUnitSupportList(Alex,AlexSupportList)
+SetUnitSupportList(Axel,AxelSupportList)
+SetUnitSupportList(Filone,FiloneSupportList)
+SetUnitSupportList(Zwieback,ZwiebackSupportList)
+SetUnitSupportList(Gimm,GimmSupportList)
+SetUnitSupportList(Tobie,TobieSupportList)
+SetUnitSupportList(Valse,ValseSupportList)
+SetUnitSupportList(Hornet,HornetSupportList)
+SetUnitSupportList(Milo,MiloSupportList)
+SetUnitSupportList(Pelecaye,PelecayeSupportList)
+SetUnitSupportList(Coralia,CoraliaSupportList)

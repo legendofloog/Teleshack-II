@@ -1,0 +1,225 @@
+EventPointerTable(Chapter8Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, Recruit, 1)
+TurnEventPlayer(0, FrancisReinforcements, 9)
+TurnEventEnemy(0, Warning, 3)
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(7, NoraCleoTalkCh8, Nora, Cleo)
+CharacterEventBothWays(11, LoeweTobieTalkCh8, Tobie, Loewe)
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+DurabilityChest(GrowthScroll,ZykhraScroll, 2,2)
+Chest(KillerAxe, 18,2)
+LOCA 3 [10,1] 0x11
+END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [9,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [10,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Hege Hero_F 0x0 Level(3,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,HandAxe,Dragonshield] NeverMoveAI
+UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [Flux,ChestKey] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x0 [SteelLance,Vulnerary] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [15,23] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,21] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+UNIT Chapter1Generics Bard Hege Level(8,Enemy,True) [10,19] 0x0 0x0 0x0 0x0 [Thunder] PursueWithoutHeedAI
+UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [6,15] 0x0 0x0 0x0 0x0 [Flux] NeverMoveAI
+UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
+UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [12,2] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Chapter1Generics SwordArmor Hege Level(8,Enemy,True) [9,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics SwordArmor Hege Level(8,Enemy,True) [11,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics AxeArmor Hege Level(8,Enemy,True) [17,0] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [9,9] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [11,9] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [9,7] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [SteelBow,Vulnerary] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [19,20] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [17,13] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [9,13] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [12,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [4,6] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
+UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [13,5] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,6] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] TwoActionAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,7] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [12,6] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
+UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
+UNIT Chapter1Generics Mage Hege Level(8,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [Elfire,Vulnerary] AttackInRangeAI
+	UNIT
+
+Newcomers:
+UNIT Hans SwordKnight 0x0 Level(7,NPC,False) [8,22] 0x0 0x0 0x0 0x0 [SteelSword,Vulnerary] AttackInRangeAI
+UNIT Nora DragonRider 0x0 Level(7,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Vulnerary] AttackInRangeAI
+	UNIT
+	
+TeamFrancis:
+UNIT Chapter1Generics AxeSoldier   Francis Level(20,Enemy,True) [9,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier   Francis Level(20,Enemy,True) [11,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Francis Halberdier 0x0 Level(8,Enemy,False) [10,24] 0x0 0x0 0x0 0x0 [MasterLance,SilverAxe] PursueWithoutHeedAI
+UNIT
+
+Warning:
+CAMERA Hege
+FlashCursor(Hege,60)
+TEXTSHOW HegeWarning
+TEXTEND
+REMA
+NoFade
+ENDA
+
+Recruit:
+CAMERA Cleo
+FADU 15
+FlashCursor(Cleo,60)
+MUSC WithUs_Song
+TEXTSHOW HansAndNoraRecruit
+TEXTEND
+REMA
+CUSA 25
+CUSA 26
+NoFade
+ENDA
+
+FrancisReinforcements:
+CamOn
+LoadReinforcements(TeamFrancis)
+FlashCursor(Francis,60)
+MUSC FF4RedWingsID
+TEXTSHOW FrancisArrives
+TEXTEND
+REMA
+CamOff
+NoFade
+ENDA
+
+LoeweTobieTalkCh8:
+Text(LoeweTobieTalkCh8Text)
+NoFade
+ENDA
+
+NoraCleoTalkCh8:
+Text(NoraCleoTalkCh8Text)
+NoFade
+ENDA
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	MountAll
+	LOAD1 0x1 EnemyUnits
+	LOAD1 0x1 Newcomers
+	ENUN
+	SetBackground(0x18)
+	MUSC Sortie_Formation
+	TEXTSHOW GroupPlans
+	TEXTEND
+	REMA
+	FADI 15
+	MUSC 0x7FFF
+	SetBackground(CastleHallway)
+	FADU 15
+	MUSC SolveTheRiddle
+	TEXTSHOW HegeAndCidor
+	TEXTEND
+	REMA
+	FADI 15
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	SetBackground(CastleHallway)
+	MUSC FF5_Nostalgia
+	TEXTSHOW CleoAndLoeweEndText
+	TEXTEND
+	REMA
+	FADI 15
+	MUSC 0x7FFF
+	SetBackground(0x25)
+	FADU 15
+	MUSC WindyDayBirdsSoundEffect
+	TEXTSHOW HegeAndKwame
+	TEXTEND
+	REMA
+	FADI 15
+	MUSC 0x7FFF
+	SetBackground(0x1C)
+	FADU 15
+	MUSC FF5_Sealed_Away
+	TEXTSHOW MifanAndCidor
+	TEXTEND
+	REMA
+	MNC2 Chapter9
+	NoFade
+	ENDA
+
+EventPointerTable(Chapter8Events, PointerList)

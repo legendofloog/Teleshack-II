@@ -1,0 +1,15 @@
+//Stat Screen
+PUSH
+ORG 0xA03368
+#incbin "SD9k02.dmp"
+ORG 0xA05F10
+#incbin "StatScreenTSA.bin"
+ORG 0xA06460
+#incbin "SD9k02_pal.dmp"
+ORG 0x88590
+BYTE 0 0 0 0
+POP
+
+
+
+

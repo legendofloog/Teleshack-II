@@ -1,0 +1,79 @@
+//EventPointerTable(0x54, FlasubanVillageTileAnimations)
+#define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+
+EventPointerTable(FlasubanVillageTileAnimationsID, FlasubanVillageTileAnimations)
+EventPointerTable(ThraciaCastleTileAnimationsID, ThraciaCastleTileAnimations)
+
+ALIGN 4
+FlasubanVillageTileAnimations0:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims000.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations1:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims001.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations2:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims002.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations3:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims003.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations4:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims004.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations5:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims005.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations6:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims006.dmp"
+ALIGN 4
+FlasubanVillageTileAnimations7:
+#incbin "TilesetAnimations/FlasubanVillage/snowvillageanims007.dmp"
+
+ALIGN 4
+ThraciaCastleTileAnimations0:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims000.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations1:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims001.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations2:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims002.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations3:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims003.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations4:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims004.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations5:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims005.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations6:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims006.dmp"
+ALIGN 4
+ThraciaCastleTileAnimations7:
+#incbin "TilesetAnimations/ThraciaCastleAnims/Dmp/fe5castlev2anims007.dmp"
+
+ALIGN 4
+FlasubanVillageTileAnimations:
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations0)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations1)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations2)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations3)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations4)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations5)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations6)
+tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations7)
+WORD 0 0
+
+ALIGN 4
+ThraciaCastleTileAnimations:
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations0)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations1)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations2)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations3)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations4)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations5)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations6)
+tilesetAnimation(0x1C,0x1000,ThraciaCastleTileAnimations7)
+WORD 0 0

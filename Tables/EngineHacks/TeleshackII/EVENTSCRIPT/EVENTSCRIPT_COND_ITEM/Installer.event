@@ -1,0 +1,6 @@
+
+#define RemoveAllItem(item) "BYTE 0x40 0x0D item 0x00; POIN RemoveAllItem|1;"
+
+RemoveAllItem:
+#incbin "item_collect.bin"
+

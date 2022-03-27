@@ -1,0 +1,9 @@
+PUSH
+ORG $189b8
+jumpToHack(GetAidChanged)
+POP
+
+
+ALIGN 4
+GetAidChanged:
+#incbin "GetAidChanged.dmp"

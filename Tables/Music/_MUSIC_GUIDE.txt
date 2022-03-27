@@ -1,0 +1,9 @@
+This one should be fairly short. If you have your .s file, 
+all you have to do is drag and drop it over s2ea.exe, 
+which will spit out a .event, which you should put in the folder. 
+Include that event in Music Installer.event, and after that, 
+follow the macro to write it to the SongTable. 
+
+The second part in the macro is the label at the end of the .event file,
+and the different music groups just indicate priority.
+You can probably insert the song wherever there's free space (can check builder to see empty spaces).

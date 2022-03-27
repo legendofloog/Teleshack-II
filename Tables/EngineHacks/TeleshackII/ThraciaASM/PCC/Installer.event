@@ -1,0 +1,39 @@
+
+ALIGN 4
+#include "PCC.lyn.event"
+
+ALIGN 4
+PCCTable:
+#include "PCCTable.event"
+
+#define SetUnitPCC(unit, pcc) "PUSH; ORG PCCTable + unit; BYTE pcc; POP"
+
+// replace Proc_Start in proc loop with New_Proc_Start
+SetUnitPCC(Loewe,2)
+SetUnitPCC(Mira,0)
+SetUnitPCC(Iskra,2)
+SetUnitPCC(Svetomir,0)
+SetUnitPCC(Alena,3)
+SetUnitPCC(Alex,2)
+SetUnitPCC(Axel,2)
+SetUnitPCC(Filone,3)
+SetUnitPCC(Leina,2)
+SetUnitPCC(Gimm,2)
+SetUnitPCC(Cadenza,2)
+SetUnitPCC(Iberis,5)
+SetUnitPCC(Buldak,3)
+SetUnitPCC(Jenny,3)
+SetUnitPCC(Meldan,0)
+SetUnitPCC(Valse,2)
+SetUnitPCC(Hornet,4)
+SetUnitPCC(Milo,2)
+SetUnitPCC(Ichwep,2)
+SetUnitPCC(Tippany, 0)
+SetUnitPCC(Pelecaye, 0)
+SetUnitPCC(Carl, 4)
+SetUnitPCC(Jacinth, 3)
+SetUnitPCC(Kailani, 5)
+//Bosses, Generics, and NPCs
+SetUnitPCC(Mifan,5)
+SetUnitPCC(Cidor,2)
+SetUnitPCC(Rashid,0)

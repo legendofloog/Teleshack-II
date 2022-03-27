@@ -1,0 +1,62 @@
+#ifdef USE_FATIGUE
+
+#ifdef _FE8_
+#ifndef FE8_FATIGUE
+#define FE8_FATIGUE
+
+
+//Take the the cannot be deployed hack and make its conditions be if fatigue > max HP
+//Add S Drink, which removes all fatigue when used
+//At the end of the prep screen, set fatigue to 0 for everyone marked undeployed
+
+//Contains check if unit can be fatigued, routines for incrementing fatigue after action, routine for clearing fatigue on undeployed units
+#include "Fatigue.lyn.event"
+
+//Contains fatigue getter for MSS, call before draw_number_at
+#include "FatigueMSS.lyn.event"
+
+//Contains denying deployment if fatigued
+#include "FatiguePrepScreen.lyn.event"
+
+//Contains fatigue-restoring items
+#include "FatigueItems.lyn.event"
+
+//Contains ASMC for setting fatigue
+//#include "FatigueASMC.lyn.event"
+
+//prep screen hooks
+PUSH
+ORG 0x957F8 //call of a function nonexistent in vanilla for deny deployment & restore fatigued if not deployed in the previous chapter
+jumpToHack(DenyDeploymentIfFatigued)
+POP
+
+ALIGN 4
+FatigueExemptCharList:
+BYTE Cleo
+BYTE Loewe
+BYTE 0
+
+ALIGN 4
+FatigueStartingChapter:
+BYTE Chapter4
+BYTE 0
+
+ALIGN 4
+FatigueRestoredTextID:
+SHORT MessageFatigueRestored
+
+ALIGN 4
+CharacterStructFatigueByte: //for EMS
+BYTE 0x3B
+
+ALIGN 4
+FatigueSSTextID:
+SHORT SS_FatigueText
+
+ALIGN 4
+#endif // FE8_FATIGUE
+#else // _FE8_
+ERROR Fatigue is only for FE8!
+#endif // _FE8_
+
+#endif // USE_FATIGUE

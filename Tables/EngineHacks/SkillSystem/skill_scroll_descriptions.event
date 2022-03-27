@@ -1,0 +1,17 @@
+
+
+ALIGN 4
+SkillScrollNameTable:
+ORG 2*0xFF+SkillScrollNameTable
+
+ALIGN 4
+SkillScrollDescTable:
+ORG 2*0xFF+SkillScrollDescTable
+
+#define SkillScrollName(skillID,description) "PUSH; ORG 2*skillID+SkillScrollNameTable; SHORT description; POP"
+
+#define SkillScrollDescription(skillID,description) "PUSH; ORG 2*skillID+SkillScrollDescTable; SHORT description; POP"
+
+
+SkillScrollName(AzuriumMightID,SSN_AzuriumMight)
+SkillScrollDescription(AzuriumMightID,SSD_AzuriumMight)

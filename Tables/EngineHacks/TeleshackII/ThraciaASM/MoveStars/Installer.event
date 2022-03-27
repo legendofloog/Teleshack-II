@@ -1,0 +1,49 @@
+
+/*
+Add "TryProcMoveStar" to PostCombatLoop
+*/
+
+ALIGN 4
+#include "MoveStars.lyn.event"
+
+ALIGN 4
+MoveStarProcEvent:
+POIN MoveStarProcEventRaw
+
+// copied from galeforce
+ALIGN 4
+MoveStarProcEventRaw:
+CAM1 0xFFFF
+SOUN 0x10F
+STAL 0x16
+NoFade
+ENDA
+
+ALIGN 4
+MoveStarTable:
+#include "MoveStarTable.event"
+
+#define SetUnitMoveStars(unit, stars) "PUSH; ORG MoveStarTable + unit; BYTE stars; POP"
+SetUnitMoveStars(Iskra,1)
+SetUnitMoveStars(Svetomir,3)
+SetUnitMoveStars(Alena,2)
+SetUnitMoveStars(Filone,4)
+SetUnitMoveStars(Zwieback,1)
+SetUnitMoveStars(Fangai,1)
+SetUnitMoveStars(Gimm,3)
+SetUnitMoveStars(Tobie,1)
+SetUnitMoveStars(Awa,2)
+SetUnitMoveStars(Cadenza,3)
+SetUnitMoveStars(Faolan,1)
+SetUnitMoveStars(Iberis,5)
+SetUnitMoveStars(Hans,2)
+SetUnitMoveStars(Hornet,1)
+SetUnitMoveStars(Ichwep,2)
+SetUnitMoveStars(Ellerey,1)
+SetUnitMoveStars(Mantou,2)
+SetUnitMoveStars(Tippany,3)
+SetUnitMoveStars(Carl,5)
+SetUnitMoveStars(Darby,2)
+SetUnitMoveStars(Jacinth,3)
+SetUnitMoveStars(Kailani,5)
+SetUnitMoveStars(Rashid,1)

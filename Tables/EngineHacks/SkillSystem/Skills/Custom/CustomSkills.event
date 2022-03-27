@@ -1,0 +1,97 @@
+#include "TeleshackSkills/Installer.event"
+
+ALIGN 4
+RadianceMarking:
+#incbin "RadianceMarking.dmp"
+POIN SkillTester
+WORD RadianceID
+
+ALIGN 4
+RadianceHeal:
+#incbin "RadianceHeal.dmp"
+POIN SkillTester
+WORD RadianceID
+
+ALIGN 4
+Proc_RadianceDamage:
+#incbin "RadianceDamage.dmp"
+POIN SkillTester
+WORD RadianceID
+
+
+ALIGN 4
+Pre_Nightcaller:
+#incbin "NightcallerPreBattle.dmp"
+POIN SkillTester
+WORD NightcallerID
+
+
+ALIGN 4
+Post_Nightcaller:
+#incbin "NightcallerPostBattle.dmp"
+POIN SkillTester
+WORD NightcallerID
+
+ALIGN 4
+Avenger:
+#incbin "Avenger.dmp"
+POIN SkillTester
+WORD AvengerID
+
+ALIGN 4
+RecklessCharge:
+#incbin "RecklessCharge.dmp"
+POIN SkillTester
+WORD RecklessChargeID
+POIN prMovGetter
+
+#include "DullahanEvent.event"
+
+ALIGN 4
+DullahanSkl:
+#incbin "Dullahan.dmp"
+POIN SkillTester
+WORD DullahanID
+POIN DullahanEvent
+
+
+ALIGN 4
+Proc_DullahanCost:
+#incbin "DullahanCost.dmp"
+POIN SkillTester
+WORD DullahanID
+
+ALIGN 4
+TerrainEffective:
+#incbin "TerrainEffective.dmp"
+POIN SkillTester
+WORD TerrainEffectiveID
+
+ALIGN 4
+NonCombatant:
+#incbin "NonCombatant.dmp"
+POIN SkillTester
+WORD NonCombatantID
+
+
+ALIGN 4
+GladiatorsAura:
+#incbin "GladiatorsAura.dmp"
+POIN AuraSkillCheck
+WORD GladiatorsAuraID
+
+
+ALIGN 4
+SpellMirrorSkl:
+#incbin "SpellMirror.dmp"
+POIN SkillTester
+WORD SpellMirrorID
+
+
+ALIGN 4
+Alacrity:
+#incbin "alacrity.dmp"
+POIN SkillTester
+WORD AlacrityID
+POIN AlacrityEvent
+#include "AlacrityEvent.event"

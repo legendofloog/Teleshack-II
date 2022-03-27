@@ -1,0 +1,12 @@
+#include "EVENTSCRIPT_change_ai_all/ChangeAIAll.event"
+
+#include "EVENTSCRIPT_SilentGiveItem/SilentGiveItem.event"
+
+#include "EVENTSCRIPT_COND_ITEM/Installer.event"
+
+#include "EVENTSCRIPT_SendAllTransporter/SendAllTransporter.event"
+
+#include "EVENTSCRIPT_COND_COUNT_RANGE/COUNT_RANGE.event"
+
+#include "EVENTSCRIPT_GetCaptureUnitID_20210109/CheckRescuedRescuer.event"
+

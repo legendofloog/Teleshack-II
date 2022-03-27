@@ -1,0 +1,17 @@
+ALIGN 4
+ExpandedAI2Table:
+#incbin "FE8_AI2.dmp"
+
+// expand by 20
+ALIGN 4
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+//#undef AI2Table
+#define AI2Table ExpandedAI2Table
+
+#define setAI2(ID, offset) "PUSH; ORG (AI2Table+4*ID); POIN (offset | 0x8000000); POP"
+
+PUSH
+ORG $5A91D8
+POIN AI2Table
+POP
