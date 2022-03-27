@@ -27,6 +27,9 @@ DeathQuote(Veniamin, Chapter13, 2, VeniaminDeathQuote)
 DeathQuote(Corundum, Chapter13, 0, CorundumDeathQuote)
 DeathQuote(Pascal, Chapter13, 0, PascalDeathQuote)
 DeathQuote(Tsoureki, Chapter14, 0, TsourekiDeathQuote)
+DeathQuote(Coralia,Chapter15,10,0x0)
+DeathQuote(Hamdi, Chapter16, 0, HamdiDeathQuote)
+DeathQuote(Colossus, Chapter16, 0, ColossusDeathQuote)
 
 //player units
 // ch1
@@ -101,5 +104,8 @@ DeathQuote(Kailani,AllChapters,0x0,KailaniDeathQuote,KailaniGiveAll)
 // ch 13
 DeathQuote(Nahiza,AllChapters,0x0,NahizaDeathQuote,DarbyGiveAll)
 DeathQuote(Augur,AllChapters,0x0,AugurDeathQuote,JacinthGiveAll)
+
+// ch 16
+DeathQuote(Rashid,AllChapters,0x0,RashidDeathQuote,RashidGiveAll)
 
 DeathQuote(0xFFFF,0,0,0)

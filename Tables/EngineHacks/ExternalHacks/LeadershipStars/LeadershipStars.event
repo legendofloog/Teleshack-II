@@ -1,0 +1,105 @@
+#ifdef LEADERSHIP_STARS
+
+
+#ifdef _FE8_
+
+// Leadership Stars FE8. Hack by Zeta/Gilgamesh
+// Free to use/modify
+#ifndef IconTable
+	#define IconTable $5926F4
+#endif
+#define SetIcon(ID) "ORG IconTable + ID * 128"
+
+AllyStarHitBonus:
+BYTE 3
+AllyStarAvoidBonus:
+BYTE 3
+
+EnemyStarHitBonus:
+BYTE 3
+EnemyStarAvoidBonus:
+BYTE 3
+
+NPCStarHitBonus:
+BYTE 3
+NPCStarAvoidBonus:
+BYTE 3
+
+CancelOutOpposingLeadership:
+BYTE 1 // change to 0 if you don't want this behaviour
+
+LeadershipTable:
+// ALLIES
+BYTE Loewe 1
+BYTE Cleo 1
+BYTE Mira 1
+BYTE Dragana 3
+BYTE Kailani 1
+BYTE Augur 1
+// BOSSES
+BYTE Raschwitz_Ch1 1
+BYTE Tyr_Ch2 1
+BYTE Boro_Ch1 3
+BYTE Emory_Ch3 2
+BYTE Wellworth 1
+BYTE Hege 2
+BYTE Cidor 3
+BYTE Johanna 2
+BYTE Elias 5
+BYTE Veniamin 2
+// NPCs
+BYTE Trajan 2
+BYTE Kwame 3
+BYTE Epony 3
+BYTE 0x0 0x0 //delimiter
+
+PUSH
+SetIcon(0xCA) // Change this if you want, but remember to also change it in the MSS code and StatusScreenPlayer/Enemy.s (icon 0xCA is unused by default)
+#incbin "StarIcon.dmp"
+POP
+
+ALIGN 4
+LeadershipHook:
+#incbin "LeadershipHook.dmp"
+POIN ApplyLeadershipBonus
+
+ALIGN 4
+StatusScreenPlayer:
+#incbin "StatusScreenPlayer.dmp"
+POIN GetFactionLeadershipCount
+
+ALIGN 4
+StatusScreenEnemy:
+#incbin "StatusScreenEnemy.dmp"
+POIN GetFactionLeadershipCount
+
+PUSH
+ORG 0x8E4D4
+jumpToHack(StatusScreenPlayer)
+
+ORG 0x8E518
+jumpToHack(StatusScreenEnemy)
+
+// otherwise it'll always show -- for enemy leadership stars in fog of war
+ORG $8E4E9
+BYTE 0xE0
+
+// fix status screen text
+ORG $A01D2A
+SHORT AllyStarCountRText
+
+ORG $A01D46
+SHORT EnemyStarCountRText
+POP
+
+// lyn output of LeadershipFunctions.c
+// no fuck you why would you do that
+#include "LeadershipFunctions.lyn.event"
+
+#else // _FE8_
+  ERROR LEADERSHIP_STARS is for FE8
+#endif // _FE8_
+
+#endif // LEADERSHIP_STARS
+
+#define AddLeadership(unit, amount) "SVAL s1 unit; SVAL s2 amount; ASMC AddLeadershipASMC;"

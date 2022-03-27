@@ -1,0 +1,94 @@
+//Thracia Castle
+    ALIGN 4
+    ThraciaCastleObject:
+    #incbin "Object/fe5castlev2.dmp"
+
+    ALIGN 4
+    ThraciaCastlePalette:
+    #incbin "Palette/fe5castlev2_pal.dmp"
+
+    ALIGN 4
+    ThraciaCastleMapchipConfig:
+    #incbin "Config/fe5castlev2_comp.dmp"
+
+//Flasuban Village
+    ALIGN 4
+    FlasubanVillageObject:
+    #incbin "Object/FlasubanVillageObject.dmp"
+
+    ALIGN 4
+    FlasubanVillagePalette:
+    #incbin "Palette/FlasubanVillageObject_pal.dmp"
+
+    ALIGN 4
+    FlasubanVillageMapchipConfig:
+    #incbin "Config/FixedBridge_comp.dmp"
+	
+//Flasuban Village Edit
+    ALIGN 4
+    FlasubanVillageMapchipConfig2:
+    #incbin "Config/Flasubanvillage2_comp.dmp"
+	
+//Updated village
+
+	ALIGN 4
+	UpdatedVillageMapchipConfig:
+	#incbin "Config/FE8_16_comp.dmp"
+	
+
+// FF5 Cave
+    ALIGN 4
+    FF5CaveObject:
+    #incbin "Object/FF5Cave(Wave).dmp"
+
+    ALIGN 4
+    FF5CavePalette:
+    #incbin "Palette/FF5Cave(Wave)_pal.dmp"
+
+    ALIGN 4
+    FF5CaveConfig:
+    #incbin "Config/FF5Cave(Wave)_comp.dmp"
+
+// DesertBastion
+    ALIGN 4
+    DesertBastionObject:
+    #incbin "Object/DesertBastion.dmp"
+
+    ALIGN 4
+    DesertBastionPalette:
+    #incbin "Palette/DesertBastion_pal.dmp"
+
+    ALIGN 4
+    DesertBastionMapchipConfig:
+    #incbin "Config/DesertBastion_comp.dmp"
+
+//Thracia Fields, Not Inserted	
+//    ThraciaFieldsObject:
+//    #incbin "Object/fe5fields.dmp"
+/*
+    ALIGN 4
+    ThraciaFieldsAutumnPalette:
+    #incbin "Palette/fe5autumnfields_pal.dmp"
+
+    ALIGN 4
+    ThraciaFieldsMapchipConfig:
+    #incbin "Config/fe5fields.mapchip_config"
+*/
+
+    EventPointerTable(DesertBastionObjectID, DesertBastionObject)
+    EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
+    EventPointerTable(DesertBastionMapchipConfigID, DesertBastionMapchipConfig)
+    EventPointerTable(ThraciaCastleObjectID, ThraciaCastleObject)
+    EventPointerTable(ThraciaCastlePaletteID, ThraciaCastlePalette)
+    EventPointerTable(ThraciaCastleMapchipConfigID, ThraciaCastleMapchipConfig)
+    EventPointerTable(FlasubanVillageObjectID, FlasubanVillageObject)
+    EventPointerTable(FlasubanVillageNormalPaletteID, FlasubanVillagePalette)
+    EventPointerTable(FlasubanVillageMapchipConfigID, FlasubanVillageMapchipConfig)
+	  EventPointerTable(0x10,UpdatedVillageMapchipConfig)
+	EventPointerTable(FlasubanVillageMapchipConfig2ID, FlasubanVillageMapchipConfig2)
+    EventPointerTable(FF5CaveObjectID,FF5CaveObject)
+    EventPointerTable(FF5CavePaletteID,FF5CavePalette)
+    EventPointerTable(FF5CaveConfigID,FF5CaveConfig)
+//	EventPointerTable(ThraciaFieldsObjectID, ThraciaFieldsObject)
+//    EventPointerTable(ThraciaFieldsAutumnPaletteID, ThraciaFieldsAutumnPalette)
+//    EventPointerTable(ThraciaFieldsMapchipConfigID, ThraciaFieldsMapchipConfig)

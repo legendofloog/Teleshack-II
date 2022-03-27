@@ -1,0 +1,9 @@
+
+ALIGN 4
+#include "Skills.lyn.event"
+
+ALIGN 4
+gDebuffTable:
+WORD DebuffTable
+
+#include "Aftershock/Aftershock.event"

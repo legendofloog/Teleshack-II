@@ -1,0 +1,10 @@
+#define CheckRescuedUnit(rescuer) "SVAL 0x1 rescuer; ASMC GetRescuedUnit|1"
+#define CheckRescuerUnit(rescued) "SVAL 0x1 rescued; ASMC GetRescuerUnit|1"
+
+ALIGN 4
+GetRescuedUnit:
+	#incbin "ASMC_Who_are_rescued_from.dmp"
+
+ALIGN 4
+GetRescuerUnit:
+	#incbin "ASMC_Who_is_rescued.dmp"

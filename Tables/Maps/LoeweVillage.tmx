@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" source="FlasubanVillage.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+   <property name="ChapterID" value="Ch1LoeweVillage"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Ch1LoeweVillageMapChanges"/>
+   <property name="MapID" value="Ch1LoeweVillageMap"/>
+   <property name="ObjectType" value="FlasubanVillageObjectID"/>
+   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+161,193,226,290,289,130,205,206,130,290,129,420,226,417,548,
+257,91,92,94,258,133,272,166,257,290,289,130,577,578,388,
+226,123,124,126,194,165,272,134,130,161,129,258,609,610,130,
+130,289,257,193,289,194,165,166,290,257,162,91,92,94,258,
+324,162,257,162,420,130,226,162,257,129,225,123,124,126,194,
+482,419,193,193,162,226,91,92,94,257,161,193,194,226,257,
+388,194,290,225,257,193,123,124,126,194,226,226,289,225,161,
+193,162,91,92,94,290,129,289,290,258,420,289,91,92,94,
+420,258,123,124,126,194,226,258,129,257,162,161,123,124,126,
+193,162,162,226,194,226,417,546,419,290,290,289,130,162,225
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="15" height="10" visible="0">
+  <properties>
+   <property name="Height" value="8"/>
+   <property name="ID" value="0"/>
+   <property name="Width" value="14"/>
+   <property name="X" value="1"/>
+   <property name="Y" value="1"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,29,30,31,0,0,0,0,0,0,0,0,0,0,0,
+0,61,62,63,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,29,30,31,0,
+0,0,0,0,0,0,0,0,0,0,0,61,62,63,0,
+0,0,0,0,0,0,29,30,31,0,0,0,0,0,0,
+0,0,0,0,0,0,61,62,63,0,0,0,0,0,0,
+0,0,29,30,31,0,0,0,0,0,0,0,29,30,31,
+0,0,61,62,63,0,0,0,0,0,0,0,61,62,63,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

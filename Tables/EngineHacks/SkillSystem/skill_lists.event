@@ -1,0 +1,34 @@
+RogueSkillList:
+BYTE 255 StealPlusID
+BYTE 255 LocktouchID
+BYTE 00 00
+ALIGN 4
+
+ThiefSkillList:
+BYTE 1 StealPlusID
+BYTE 1 LocktouchID
+BYTE 00 00
+ALIGN 4
+
+CadenzaSkillList:
+BYTE 1 RallyDefenseID
+BYTE 1 RallyResistanceID
+BYTE 00 00
+ALIGN 4
+
+ValseSkillList:
+BYTE 1 SwapID
+BYTE 1 AlacrityID
+BYTE 00 00
+ALIGN 4
+
+PelecayeSkillList:
+BYTE 1 PassID
+BYTE 1 AcrobatID
+BYTE 00 00
+ALIGN 4
+
+DancerSkillList:
+BYTE 255 DanceID
+BYTE 00 00
+ALIGN 4

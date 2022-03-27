@@ -1,0 +1,11 @@
+
+PUSH
+
+ORG 0x2AB74 // BattleLoadAS
+jumpToHack(TomeCon)
+
+POP
+
+ALIGN 4
+TomeCon:
+#incbin "BattleLoadAS.dmp"

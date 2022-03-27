@@ -1,0 +1,25 @@
+
+	/* Post-battle calculation loop*/
+
+PUSH
+ORG $1D308 //hook just before the check for misc event
+jumpToHack(PostCombatLoop)
+POP
+
+PostCombatLoop:
+#incbin "post_loop.dmp"
+POIN PostCombatSkills
+
+
+ALIGN 4
+PostCombatSkills: //I like having savage blow as the first one because it makes the activation sound play first
+POIN SavageBlow BreathOfLife Despoil Lifetaker Fury BemperedRing PoisonStrike GrislyWound//lifetaker should probably go after any messages because it can mess with the palette a bit
+POIN RadianceHeal RadianceMarking
+POIN Post_Nightcaller
+POIN AftershockPostBattle
+POIN Canto CantoPlus TryProcMoveStar Galeforce Powerstaff Alacrity CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested ; Canto (put here to test mount universal canto) - loog
+POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
+POIN DullahanSkl
+WORD 0 //Terminator
+
+PROTECT $1D308 $1D314

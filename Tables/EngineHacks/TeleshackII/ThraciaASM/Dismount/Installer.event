@@ -1,0 +1,103 @@
+
+MESSAGE Dismount starts at currentOffset
+ALIGN 4
+#include "Dismount.lyn.event"
+MESSAGE Dismount ends at currentOffset
+
+#define MountedUnmounted(classIDMounted, classIDUnmounted) "BYTE classIDMounted classIDUnmounted"
+#define EndMountUnmountedTable "BYTE 0x00 0x00"
+
+#define DismountUnit(unit) "SVAL s1 unit; ASMC DismountUnitASMC"
+#define DismountAll "DismountUnit(Cleo); DismountUnit(Loewe); DismountUnit(Emil); DismountUnit(Iskra); DismountUnit(Leina); DismountUnit(Tobie); DismountUnit(Awa); DismountUnit(Faolan); DismountUnit(Nora); DismountUnit(Hans); DismountUnit(Meldan); DismountUnit(Jenny); DismountUnit(Hornet)"
+#define MountUnit(unit) "SVAL s1 unit; ASMC MountUnitASMC"
+#define MountAll "MountUnit(Cleo); MountUnit(Loewe); MountUnit(Emil); MountUnit(Iskra); MountUnit(Leina); MountUnit(Tobie); MountUnit(Awa); MountUnit(Faolan); MountUnit(Nora); MountUnit(Hans); MountUnit(Meldan); MountUnit(Jenny); MountUnit(Hornet)"
+
+ALIGN 4
+MountedClassTable:
+MountedUnmounted(MasterKnight, MasterKnight_Dismounted)
+MountedUnmounted(MasterKnight_F, MasterKnight_F_Dismounted)
+MountedUnmounted(SwordKnight, SwordKnight_Dismounted)
+MountedUnmounted(LanceKnight, LanceKnight_Dismounted)
+MountedUnmounted(AxeKnight, AxeKnight_Dismounted)
+MountedUnmounted(BowKnight, BowKnight_Dismounted)
+MountedUnmounted(ArchKnight, ArchKnight_Dismounted)
+MountedUnmounted(ForrestKnight, ForrestKnight_Dismounted)
+MountedUnmounted(GreatKnight, GreatKnight_Dismounted)
+MountedUnmounted(DukeKnight, DukeKnight_Dismounted)
+MountedUnmounted(Scaleshot, Scaleshot_Dismounted)
+MountedUnmounted(Skyseeker, Skyseeker_Dismounted)
+MountedUnmounted(Dragonlord, Dragonlord_Dismounted)
+MountedUnmounted(Seraphknight, Seraphknight_Dismounted)
+MountedUnmounted(PegasusRider, PegasusRider_Dismounted)
+MountedUnmounted(Falcoknight, Falcoknight_Dismounted)
+MountedUnmounted(DragonRider, DragonRider_Dismounted)
+MountedUnmounted(Dracoknight, Dracoknight_Dismounted)
+MountedUnmounted(MageKnight, MageKnight_Dismounted)
+MountedUnmounted(MageKnight_F, MageKnight_F_Dismounted)
+MountedUnmounted(RookKnight, RookKnight_Dismounted)
+MountedUnmounted(GoldKnight, GoldKnight_Dismounted)
+MountedUnmounted(Troubadour, Troubadour_Dismounted)
+MountedUnmounted(Paladin, Paladin_Dismounted)
+EndMountUnmountedTable
+
+#define rIfUnitIsDismounted(dismountType)            "rWithConstant(dismountType); rIf(MSG_prCheckDismountedType)"
+#define rIfUnitIsDismounted(dismountType, arNext)    "rIfUnitIsDismounted(dismountType); arNext"
+
+#define HorseDismountType 1
+#define PegasusDismountType 2
+#define DragonDismountType 3
+
+#define DISMOUNT_CHECKER DismountTester
+
+ALIGN 4
+MSG_prCheckDismountedType: // Wraps SkillTester for MSG
+	rCallExternal(DismountTester^1)
+
+ALIGN 4
+prDismountedHorseDefDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedPegDefDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonDefDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(5)
+ALIGN 4
+prDismountedHorseSpdDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(2)
+ALIGN 4
+prDismountedPegSpdDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonSpdDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(2)
+ALIGN 4
+prDismountedHorseSklDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedPegSklDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonSklDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(2)
+ALIGN 4
+prDismountedHorseStrDebuff:
+	rIfUnitIsDismounted(HorseDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedPegStrDebuff:
+	rIfUnitIsDismounted(PegasusDismountType)
+		rSubConst(1)
+ALIGN 4
+prDismountedDragonStrDebuff:
+	rIfUnitIsDismounted(DragonDismountType)
+		rSubConst(3)

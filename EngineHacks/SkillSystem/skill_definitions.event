@@ -34,8 +34,9 @@
 #define ImbueID 53
 #define ArmoredBlowID 54
 #define CriticalForceID 55
-#define DanceID 56
-#define HeroesLifeAndDeathID 57
+#define DanceID 57
+#define HeroesLifeAndDeathID 58
+#define LifetakerID 59
 
 // keep it continous for debug purpose
 
@@ -69,3 +70,4 @@
 #define GenesiumMightID 39
 #define AlacrityID 50
 #define SharpshooterID 51
+#define DesolateID 56

@@ -1,0 +1,134 @@
+First things first: I would read and look over Sme's FE8 EA Eventing Guide.
+It's very comprehensive and should help answer most eventing questions you
+may have. https://feuniverse.us/t/fe8-ea-eventing-guide/7080
+
+Now, I'll outline how I typically do events for a more "how does this work
+in practice" approach. I recommend keeping "Chapter1.event" open while
+reading this since I'll be referring to it pretty regularly. 
+
+Starting from the top, "EventPointerTable(Chapter1Events, PointerList)"
+is a macro that writes the events for this chapter, PointerList, to Chapter1Events,
+which is a location in the PList table where maps related things and events are.
+You don't need to check where yours goes because I already set up
+definitions for what each chapter needs in the plist. For example, if
+you're doing Chapter 7, simply replace "1" with 7, and you're good to go.
+
+What's immediately under "PointerList:" is the same across events. Under each of
+the POINs you see there, you can add your own events to them based on category.
+
+TurnBasedEvents are what they sound like: they trigger on a specific turn.
+The formal way to put one would be like this
+	TURN flagID pointer [startTurn, endTurn] phase 0
+
+I would refer to the macros in Sme's guide for this instead of writing this out yourself;
+as you can see, I only used TurnEventPlayer, but you can also do events on enemy or NPC
+phase instead. The pointer, as the name suggests, points to the event. If you follow
+AlenaSpawn, then you'll see the actual event by ctrl+f-ing to find the other mention of it.
+Also, as a general rule, you don't want flagIDs to overlap except in some very niche situations.
+If you want an event to be able to run more than once, set its flagID to 0. If you want it to
+eventually stop, then use ENUF flagID in the case where you want it to reset.
+
+CharacterBasedEvents are Talk conversations. Pretty simple stuff, just do one of these:
+
+
+	CharacterEvent(eventID,pointer,char1,char2)
+	CharacterEventBothWays(eventID,eventPtr,char1,char2)
+
+(please do bothways, one way talks suck and are bad)
+
+LocationBasedEvents have more going on. The format is this:
+
+LOCA flagID offset [xpos,ypos] objectType
+
+The objectTypes are as mentioned in Sme's guide. You will probably just want to use the macros there,
+unless you want a door or chest event to have an offset. If that's the case, then just
+follow what I did "LoeweSvetomirDoor" in Chapter 1. Something to note: Shop lists need to be
+aligned after, so if you do any of those, follow this format (shamelessly taken from JPHack):
+
+Ch5Armory:
+	SHLI IronSword Shortsword SteelSword SlimSword LightBrand IronLance Glaive SteelLance Espontoon SlimLance Javelin IronAxe ScissorAxe SteelAxe Francisca HandAxe Hammer IronBow SteelBow ShortBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+The BYTE 0x0 0x0 is a terminator, and ALIGN 4 makes sure everything afterwards is aligned correctly.
+
+Escape is also a LOCA event. If you plan on doing an Escape for your chapter, you can just
+look at how it's done in Chapter 1: Escape(flagID,offset,X,Y). Since we're doing Thracia
+escape, you can copy the EscapeEventCheck and use it in your events, only changing the X and Y
+positions. For reference, what this event does is end the chapter once Loewe and Cleo have
+escaped. After that, put this at the start of your EndingScene:
+
+EscapeCapturedCheck(Mira, 0x8B)
+EscapeCapturedCheck(Iskra, 0x8C)
+EscapeCapturedCheck(Emil, 0x8D)
+EscapeCapturedCheck(Svetomir, 0x8E)
+EscapeCapturedCheck(Alena, 0x8F)
+
+and add onto it with whatever other non-lord units are added. This makes any units that haven't
+escaped be "captured" (aka REMU'd), and a global flag is set for future reference.
+
+
+
+
+
+MiscBasedEvents can be split into AREA and AFEV events. The format is:
+
+AFEV flagID eventOffset activationFlag
+
+AREA flagID eventOffset [corner1x, corner1y] [corner2x, corner2y]
+
+AFEVs are events that take place after another event which has the activationFlag. DefeatBoss(offset)
+and DefeatAll(offset) are examples of this, along with the gameover event CauseGameOverIfLordDies.
+
+AREA events happen when a unit steps in a square defined by the Corner1 (top left) and 
+Corner2 (bottom right). 
+
+You can do a lot with these kinds of events, so there's not too much specific that can be said.
+Just make sure you always have CauseGameOverIfLordDies and, if you have a win condition that
+applies, DefeatBoss or DefeatAll (with the offset being EndingScene, typically).
+
+
+
+You can ignore Dunno and Tutorial stuff entirely, so just leave it.
+
+
+Units1 is what defines how many units load in preps. Technically, who's there doesn't matter as
+long as you've already certainly loaded them in before (which is why many hacks just put Eirika slot and Seth x however many other slots there are). In Chapter1, there is no preps, so I just
+used it as a normal unit group, but in general, calling PREP will load your army in those
+coordinates. 
+
+Refer to the unit groups I put there and Sme's guide for how to make unit blocks. Just make sure
+that after you're done loading a given set of unit blocks, ENUN. Otherwise, things may break.
+
+
+Traps1 is probably all you'll need to use unless you have a ton of them, and honestly,
+I don't use them often. RedSigil/GreenSigil/BlueSigil are defined to show points on the map
+for things like Escape, Arrive, and Defend without having to use MultiTileMarker. A lot of
+the commonly used traps are done automatically, so there aren't many you'd need to put here.
+Of note is that we're not using Ballista traps since there's a dedicated Ballistician class.
+
+BeginningScene and EndingScene are your start and end events, as the names imply. You can
+add a lot of neat cutscening stuff here if you like, but there are only a few requirements
+here. 
+
+The BeginningScene needs to load in your units and the enemies. In any map with a prep screen,
+writing something like the following should really be all you need.
+
+BeginningScene:
+LOAD1 1 EnemyUnits
+ENUN
+GotoPrepScreen
+
+GotoPrepScreen calls the preparations menu, loads in your units, and then ENDAs (which just ends
+the BeginningScene event). If you have other events after this, I'd recommend just putting them
+in a Turn 1 event, but you can call PREP and then other events before your ENDA if you want to.
+
+EndingScene is also simple, as all you should need is this, as an example:
+
+MNC2 Chapter3
+NoFade
+ENDA
+
+I've defined all all of these in advance, so it should be as simple as replacing the number
+with the chapter after yours. Obviously, you will probably want to put other things in
+your start and end events, like text, so I'd refer to Part 2 of Sme's guide from here. 

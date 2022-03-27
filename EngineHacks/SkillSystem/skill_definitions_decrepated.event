@@ -298,7 +298,7 @@
 
 //Lifetaker: Restore up to 25% HP after attacking and defeating an enemy.
 //Author Unknown (Initial Commit)
-#define LifetakerID 255
+//#define LifetakerID 255
 
 //Poison Strike: Deals damage equal to 20% of the enemy's max HP after battle this unit initiates.
 //By Snakey1

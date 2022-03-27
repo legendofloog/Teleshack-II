@@ -1,0 +1,46 @@
+//designate a new menu; will be a submenu of the unit menu
+//menu command for calling the new menu
+//usability on this is check a loop of all usabilities on the submenu
+//if any return true, then this also does
+//effect just calls the submenu
+//submenu should exit back out to the unit menu
+//existing systems work for skills that are actually combat arts
+
+#include "COPower.lyn.event"
+
+ALIGN 4
+COPowerMenuDef:
+BYTE 1 //x coord
+BYTE 3 //y coord
+BYTE 12 //width
+BYTE 0 //height
+WORD 0 //Unknown
+POIN COPowerMenu //menu commands ptr
+WORD 0 //OnInit
+WORD 0 //OnEnd
+WORD 0 //Unknown
+POIN 0x22861 //On B Press
+POIN 0x4f521 //On R Press
+POIN 0x4f459 //On Help Box
+
+ALIGN 4
+COPowerMenu:
+
+MenuCommand(UM_VictoryMarch, UM_VictoryMarchDesc, NormalText, VictoryMarchUsability, VictoryMarchEffect, $22c31, $22c99)
+
+UM_Separator 
+
+
+
+
+ALIGN 4
+VictoryMarchUsability:
+#incbin "COPowerUsability.dmp"
+POIN SkillTester
+WORD ZoruniumMightID
+
+ALIGN 4
+VictoryMarchEffect:
+#incbin "VictoryMarch.dmp"
+POIN GetDebuffs|1
+

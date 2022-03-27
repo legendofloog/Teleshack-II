@@ -1,0 +1,5 @@
+#define csvmacro000(arg000,arg001,arg002,arg003) "BYTE arg000 00 arg001 arg002; SHORT arg003 00; "
+// UNIT, CLASS, MAPID, EDITION
+MultiSupplyUnits_Table:
+csvmacro000(0x1,0xFF,0xFF,0xFF)  // defualt
+csvmacro000(0x0,0x0,0x0,0x0)    // term

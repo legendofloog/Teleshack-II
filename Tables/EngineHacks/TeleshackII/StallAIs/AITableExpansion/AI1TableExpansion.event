@@ -1,0 +1,26 @@
+ALIGN 4
+ExpandedAI1Table:
+#incbin "FE8_AI1.dmp"
+
+// expand by 128
+ALIGN 4
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+POIN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+//#undef AI1Table
+#define AI1Table ExpandedAI1Table
+
+#define setAI1(ID, offset) "PUSH; ORG (AI1Table+4*ID); POIN (offset | 0x8000000); POP"
+
+PUSH
+ORG $5A91E4
+POIN AI1Table
+POP
+
+

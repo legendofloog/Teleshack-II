@@ -1,0 +1,316 @@
+EventPointerTable(Chapter4Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, OhNoWTF, 1)
+TurnEventPlayer(0, HolyShitItIsDream, 2)
+TurnEventPlayer(0, IWearAMaskWithASmile, 3)
+TurnEventPlayer(0, ForHoursAtATime, 4)
+TurnEventPlayer(0, StareAtTheCeiling, 5)
+TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 6)
+TurnEventPlayer(0, AndWhenTheyAskMeHow, 7)
+TurnEventPlayer(0, ImDoingISayImJustFine, 8)
+TurnEventPlayer(0, AmongUsPartyIsOver, 10)
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	AFEV 0 EndingScene 0x2
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+Chest(TemperedRing, 1,12)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+LoadUnit(5,3)
+LoadUnit(6,3)
+LoadUnit(7,3)
+LoadUnit(8,3)
+LoadUnit(9,3)
+LoadUnit(5,4)
+LoadUnit(6,4)
+LoadUnit(7,4)
+LoadUnit(8,4)
+LoadUnit(9,4)
+	UNIT
+
+EnemyUnits:
+UNIT Hilmar LanceArmor   0x0 Level(8,Enemy,False) [15,16] 0 0 1 REDA14R14 [SteelLance,Javelin,Elixir] BossAI
+UNIT Chapter1Generics AxeFighter   0x0 Level(3,Enemy,True) [0,12] 0 0 1 REDA6R12 [SteelAxe] StallOneTurnAI
+UNIT Chapter1Generics SwordArmor   0x0 Level(4,Enemy,True) [0,12] 0 0 1 REDA5R8 [Greatsword] BossAI
+UNIT Chapter1Generics LanceSoldier   0x0 Level(3,Enemy,True) [0,6] 0 0 1 REDA1R4 [ShortLance] TwoActionAI
+UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,5] 0 0 1 REDA14R5 [Fire,Vulnerary] TwoActionAI
+UNIT Chapter1Generics Archer   0x0 Level(3,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Chapter1Generics AxeKnight   0x0 Level(3,Enemy,True) [15,11] 0 0 1 REDA14R8 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics Mage   0x0 Level(3,Enemy,True) [15,6] 0 0 1 REDA12R7 [Thunder] TwoActionAI
+UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [15,12] 0 0 1 REDA12R13 [Shortsword] ChargeAI
+UNIT Chapter1Generics LanceSoldier   0x0 Level(3,Enemy,True) [2,16] 0 0 1 REDA2R14 [SteelLance] AttackInRangeAI
+UNIT Chapter1Generics Mage   0x0 Level(3,Enemy,True) [0,11] 0 0 1 REDA3R10 [Fire] TwoActionAI
+UNIT Chapter1Generics Archer   0x0 Level(3,Enemy,True) [4,16] 0 0 1 REDA6R15 [Longbow] AttackInRangeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(3,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,1] 0 0x0 0x0 0x0 [ShortLance,PureWater] StallOneTurnAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(3,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics LanceKnight   0x0 Level(3,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics Swordfighter   0x0 Level(3,Enemy,True) [4,0] 0 0 1 REDA4R1 [Shortsword] ChargeAI
+UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [11,16] 0 0 1 REDA10R15 [HandAxe] AttackInRangeAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [9,0] 0 0 1 REDA9R1 [SlimArch] BossAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,13] 0 0 1 REDA0R12 [SlimArch,RedGem] BossAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [14,16] 0 0 1 REDA13R15 [SlimArch] BossAI
+UNIT Chapter1Generics AxeSoldier   0x0 Level(3,Enemy,True) [0,7] 0 0 1 REDA2R7 [IronAxe] AttackInRangeAI
+	UNIT
+	
+WhenTheThiefIsSus:
+UNIT 0x64 Thief   0x0 Level(2,Enemy,True) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
+UNIT
+
+Rein1:
+UNIT Chapter1Generics SwordKnight   0x0 Level(4,Enemy,True) [2,16] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
+UNIT Chapter1Generics LanceKnight   0x0 Level(3,Enemy,True) [3,16] 0x0 0x0 0x0 0x0 [SteelLance] ChargeAI
+UNIT
+
+Rein2:
+UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [Fire] StallOneTurnAI
+UNIT
+
+ReinEPIC:
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics BowKnight   0x0 Level(4,Enemy,True) [0,2] 0x0 0x0 0x0 0x0 [SteelBow] ChargeAI
+UNIT
+
+Rein3:
+UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [15,0] 0 0 1 REDA14R0 [IronAxe] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT
+
+ReinEPIC2:
+UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA0R1 [SteelAxe] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA3R0 [ShortLance] StallOneTurnAI
+UNIT
+
+Rein4:
+UNIT Chapter1Generics Myrmidon   0x0 Level(4,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [SteelSword] ChargeAI
+UNIT
+
+Rein5:
+UNIT Chapter1Generics Archer   0x0 Level(4,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [SteelBow] StallOneTurnAI
+UNIT
+
+Rein6:
+UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,1] 0x0 0x0 0x0 0x0 [IronAxe] StallOneTurnAI
+UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [2,0] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT
+
+CutscenePegasussy:
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,8] 0 0 1 REDA11R0 [SlimSword,SlimSword,SlimSword,SlimSword,] [0x0,0x0,0x0,0x0]
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,9] 0 0 1 REDA12R0 [SlimSword,SlimSword,SlimSword,SlimSword,] [0x0,0x0,0x0,0x0]
+UNIT
+
+CutsceneTheGang:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [11,3] 0x0 0x0 0x0 0x1 [SlimSword,SlimSword,SlimSword,SlimSword,]     NoAI
+UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [10,4] 0x0 0x0 0x0 0x1 [SlimSword,SlimSword,SlimSword,SlimSword,] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [12,4] 0x0 0x0 0x0 0x0 [SlimSword,SlimSword,SlimSword,SlimSword,] NoAI
+UNIT
+
+SickoMode:
+UNIT Cleo 0x1E   Cleo Level(2,Ally,False) [2,4] 0x0 0x0 0x0 0x1 [SlimSword,SlimSword,SlimSword,SlimSword,]     NoAI
+UNIT Loewe 0x1D Cleo Level(5,Ally,False) [3,5] 0x0 0x0 0x0 0x0 [SlimSword,SlimSword,SlimSword,SlimSword,] NoAI
+UNIT
+
+LeEpicRecruits:
+UNIT Zwieback BowArmor 0x1 Level(6, Ally, 0)   [0,5] 0 0 1 REDA8R4 [SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
+UNIT Filone Archer_F 0x1 Level(1, Ally, 0)   [0,4] 0 0 1 REDA7R4 [SlimBow,Elixir] [0x0,0x0,0x0,0x0]
+	UNIT
+	
+HolyShitItIsDream:
+CamOn
+LoadReinforcements(WhenTheThiefIsSus)
+CamOff
+NoFade
+ENDA
+
+IWearAMaskWithASmile:
+CamOn
+LoadReinforcements(Rein1)
+CamOff
+NoFade
+ENDA
+
+ForHoursAtATime:
+CamOn
+LoadReinforcements(Rein2)
+STAL 5
+LoadReinforcements(ReinEPIC)
+CamOff
+NoFade
+ENDA
+
+StareAtTheCeiling:
+CamOn
+LoadReinforcements(Rein3)
+STAL 5
+LoadReinforcements(ReinEPIC2)
+CamOff
+NoFade
+ENDA
+
+WhileIHoldBackWhatsOnMyMind:
+CamOn
+LoadReinforcements(Rein4)
+CamOff
+NoFade
+ENDA
+
+AndWhenTheyAskMeHow:
+CamOn
+LoadReinforcements(Rein5)
+CamOff
+NoFade
+ENDA
+
+ImDoingISayImJustFine:
+CamOn
+LoadReinforcements(Rein6)
+CamOff
+NoFade
+ENDA
+
+AmongUsPartyIsOver:
+ENUT 0x3
+CALL (EndingScene)
+ENDA
+
+OhNoWTF:
+Music(WindyDayBirdsSoundEffect)
+CameraCursor(Hilmar)
+Text(Ch4WarningText)
+STAL 5
+CameraCursor(Loewe)
+Text(Ch4WarningText2)
+NoFade
+ENDA
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+Music(SolveTheRiddle)
+SetBackground(0x10)
+Text(Ch4Intro1)
+STAL 5
+FADI 60
+CLEAN
+Music(0x48)
+FADU 15
+STAL 10
+LOAD2 0x1 CutsceneTheGang
+CameraCursor(Cleo)
+ENUN
+LOAD2 0x1 CutscenePegasussy
+ENUN
+SVAL 0xB 0xB
+DISA_IF 0xFFFE
+SVAL 0xB 0xC
+DISA_IF 0xFFFE
+STAL 25
+Music(AdvanceSong)
+SetBackground(0x1B)
+CharacterConditionalDialog(Mira,Ch4Intro2,Ch4IntroAlt2)
+FADI 60
+CLEAN
+FADU 45
+STAL 5
+CamOn
+LOAD1 0x1 LeEpicRecruits
+ENUN
+CamOff
+CHECK_ALIVE Mira
+BEQ 2 0x0 0xC
+TEXTSTART
+TEXTSHOW Ch4Intro3
+TEXTEND
+MUSC TensionSong
+TEXTCONT
+TEXTEND
+GOTO 3
+LABEL 2
+TEXTSTART
+TEXTSHOW Ch4IntroAlt3
+TEXTEND
+MUSC TensionSong
+TEXTCONT
+TEXTEND
+LABEL 3
+REMA
+CAM1 [8,8]
+LOAD1 0x1 EnemyUnits
+ENUN
+STAL 30
+CameraCursor(Zwieback)
+Text(Ch4Intro4)
+MountAll
+STAL 3
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+FADI 60
+DoAllThree
+LOAD2 0x1 SickoMode
+Music(WindyDaySoundEffect)
+MUSI
+SetBackground(0x1B)
+MUNO
+FlagConditionalDialog(0x2,Ch4EndingDefeatBoss1,Ch4EndingDefend1)
+ClearBackground
+STAL 5
+CameraCursor(Loewe)
+CameraCursor(Cleo)
+Music(LegacySong)
+SetBackground(0x18)
+Text(Ch4Ending2)
+STAL 5
+Music(SoftSwooshSoundEffect)
+SetBackground(0x12)
+Text(Ch4Ending3)
+	MNC2 0x4
+	NoFade
+	ENDA

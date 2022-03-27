@@ -67,7 +67,9 @@
 #define BreakerLock 0x09000000
 #define DragonstoneLock 0x0B000000
 #define PassiveBoosts 0x00800000
-
+#define VargaLock 0x0C000000
+#define EmilLock 0x0D000000
+#define RashidLock 0x0D000000
 
 // Weapon Effect
 #define NoEffect 0x0
@@ -153,6 +155,8 @@
 #define DragonType	0x08
 #define MonsterType	0x10
 #define SwordType	0x20
+#define ArcherType 	0x30
+#define MageType	0x40
 
 //Status Effects
 #define NoStatusID 0

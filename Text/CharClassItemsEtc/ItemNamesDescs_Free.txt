@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade.[X]
+A high quality blade. Eff vs Cavalry[X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -185,13 +185,13 @@ Yor's Yari[X]
 Ignores Defence.[X]
 
 ## DaShootaName
-Da Shoota[X]
+Break Arc[X]
 
 ## DaShootaDesc
 Effective vs horses and armors.[X]
 
 ## BigIronName
-Big Iron[X]
+Meat Cleaver[X]
 
 ## Axle1Name
 Axle[X]
@@ -284,3 +284,87 @@ Hounding Bow[X]
 
 ## HoundingBowDesc
 Eff. vs [HorseIcon]. Darby[LockIcon][X]
+
+## KingShieldName
+King Shield[X]
+
+## KingShieldDesc
+Provokes enemies in range. Armors only.[X]
+
+## EdgedArrowName
+Edged Arrow[X]
+
+## EdgedArrowDesc
+Pierces enemy defense. Bow users only.[X]
+
+## RedScarfName
+Red Scarf[X]
+
+## RedScarfDesc
+Restores 25% HP after killing an enemy.[X]
+
+## SaunionName
+Saunion[X]
+
+## SaunionDesc
+A lance with extended reach.[X]
+
+## KaiserschwertName
+[_K][_a][_i][_s][_e][_r][_s][_c][_h][_w][_e][_r]t[X]
+
+## KaiserschwertDesc *
+Follow-up attacks consecutive. Eff. vs. blessed.[X]
+
+## TrainedEdgeName
+Trained Edge[X]
+
+## TrainedPikeName
+Trained Pike[X]
+
+## TrainedAxeName
+Trained Axe[X]
+
+## TrainedArcName
+Trained Arc[X]
+
+## AquaBrandName
+Aqua Brand[X]
+
+## AquaBrandDesc
+Varga[LockIcon]. Magic damage. +5 SPD.[X]
+
+## ChargeName
+Charge[X]
+
+## ChargeDesc
+Emil[LockIcon]. Brave.[X]
+
+## PoincareName
+Poincare[X]
+
+## PoincareDesc
+Rashid[LockIcon]. Eff. vs. archer/sniper.[X]
+
+## SinkName
+Sink[X]
+
+## SinkDesc
+Eff. vs. mages and bards.[X]
+
+## WoodlandsHukeName
+[_W][_o][_o][_d][_l][_a][_n][_d][_s] [_H][_u][_k][_e][X]
+
+## WoodlandsHukeDesc
++2 SKL/RES when equipped. +1 Bow Rng.[X]
+
+## CaptainsHelmName
+[_C][_a][_p][_t][_a][_i][_n][_'][_s] [_H][_e][_l][_m][X]
+
+## CaptainsHelmDesc
++1 Str/Mag/Skl/Spd/Def/Res. Equip.[X]
+
+## FealtyBowName
+Fealty Bow[X]
+
+## FealtyBowDesc
+-3 Dmg taken, +15 hit when near Lord.[X]
