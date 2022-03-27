@@ -1,4 +1,4 @@
-
+// New
 #define Lufia_Doom 0x4
 #define TreasureOfRudrasBattleTheme 0x5
 #define Lufia2_RoS_Battle2 0x6
@@ -28,6 +28,7 @@
 #define ncastlebridge 0x1F
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
+#define FightingOfTheSpirit 0xC2
 
 // Vanilla
 #define TiesOfFriendship 0x7
@@ -37,5 +38,6 @@
 #define SolveTheRiddle 0x2E
 #define WindyDaySoundEffect 0x47
 #define WindyDayBirdsSoundEffect 0x48
+#define Nighttime 0x4A
 #define WaterFlowingSoundEffect 0x4B
 #define SoftSwooshSoundEffect 0x4D

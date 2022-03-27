@@ -80,4 +80,19 @@ BYTE Manakete_2
 BYTE Manakete_2_F
 BYTE EndLockArray
 
+AquaBrandArray:
+BYTE HardCharLock
+BYTE Varga
+BYTE EndLockArray
+
+ChargeArray:
+BYTE HardCharLock
+BYTE Emil
+BYTE EndLockArray
+
+PoincareArray:
+BYTE HardCharLock
+BYTE Rashid
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

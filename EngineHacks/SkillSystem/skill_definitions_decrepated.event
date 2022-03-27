@@ -468,7 +468,7 @@
 
 //Loyalty: When within 2 spaces of a Lord, -3 damage taken, +15% hit.
 //By Datagne
-#define LoyaltyID 255
+#define LoyaltyID 61
 
 //Lucky Seven: +20 Hit and Avoid until the 7th turn.
 //Author Unknown (Initial Commit)
@@ -767,7 +767,7 @@
 
 //Bow Range +1: Maximum range of equipped bows is increased.
 //By Teraspark
-#define BowRangeUpID 255
+#define BowRangeUpID 60
 
 //Point Blank: Minimum range of equipped bows is set to 1.
 //By Teraspark

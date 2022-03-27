@@ -22,5 +22,8 @@
 #define CastleExterior 0x15
 #define CastleExteriorFlashback 0x16
 #define PrisonRoom 0x17
+#define OutsideFort 0x25
+#define BuildingInterior 0x27
 #define Temple 0x2C
+#define Sand 0x30
 #define BlackBackground 0x35

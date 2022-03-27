@@ -104,7 +104,7 @@
 [LoadNahiza] = [LoadFace][0xCB][0x1]
 [LoadAugur] = [LoadFace][0xCC][0x1]
 [LoadIlse] = [LoadFace][0xD5][0x1]
-
+[LoadRashid] = [LoadFace][0xD7][0x1]
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]
@@ -139,6 +139,9 @@
 [LoadKassandra] = [LoadFace][0xD1][0x1]
 [LoadOrfeas] = [LoadFace][0xD2][0x1]
 [LoadStranger] = [LoadFace][0xD4][0x1]
+[LoadYoungCleo] = [LoadFace][0xD8][0x1]
+[LoadHamdi] = [LoadFace][0xD9][0x1]
+[LoadColossus] = [LoadFace][0xDA][0x1]
 
 
 [LoadMan1] = [LoadFace][0x6A][0x1]

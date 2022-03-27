@@ -168,3 +168,12 @@ VeniaminForrest:
 PascalThfFighter:
 	#incbin "./_palettes/PascalThfFighter.lzpal" 
 
+RashidSniper:
+	#incbin "./_palettes/RashidSniper.lzpal" 
+
+HamdiHalberdier:
+	#incbin "./_palettes/HamdiHalberdier.lzpal" 
+
+ColossusWarrior:
+	#incbin "./_palettes/ColossusWarrior.lzpal" 
+

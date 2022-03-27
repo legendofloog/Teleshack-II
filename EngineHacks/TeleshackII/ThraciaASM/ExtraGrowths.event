@@ -33,6 +33,7 @@ SetUnitConGrowth(Pelecaye,25)
 SetUnitConGrowth(Carl,15)
 SetUnitConGrowth(Darby,10)
 SetUnitConGrowth(Jacinth,3)
+SetUnitConGrowth(Rashid,15)
 
 // Mov Growth Table
 SetUnitMovGrowth(Iskra,2)
@@ -69,3 +70,4 @@ SetUnitMovGrowth(Pelecaye,2)
 SetUnitMovGrowth(Carl,7)
 SetUnitMovGrowth(Darby,5)
 SetUnitMovGrowth(Jacinth,5)
+SetUnitMovGrowth(Rashid,1)
