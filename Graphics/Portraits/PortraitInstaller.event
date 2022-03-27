@@ -607,7 +607,7 @@ AuroraMugData:
 #incbin "Dmp/Aurora(ZessDynamite)_frames.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_palette.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_minimug.dmp"
-setMugEntry(AuroraMug, AuroraMugData, 2, 5, 3, 3)
+setMugEntry(AuroraMug, AuroraMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CarlMugData:
