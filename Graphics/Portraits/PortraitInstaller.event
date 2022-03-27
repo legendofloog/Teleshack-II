@@ -44,6 +44,7 @@
 #define LoeweAngryMug 0xD3
 #define IlseMug 0xD5
 #define LoewePunishedMug 0xD6
+#define RashidMug 0xD7
 
 
 // NPCs
@@ -90,6 +91,9 @@
 #define KassandraMug 0xD1
 #define OrfeasMug 0xD2
 #define TravelerMug 0xD4
+#define YoungCleoMug 0xD8
+#define HamdiMug 0xD9
+#define ColossusMug 0xDA
 
 ALIGN 16
 CleoMugData:
@@ -607,7 +611,7 @@ AuroraMugData:
 #incbin "Dmp/Aurora(ZessDynamite)_frames.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_palette.dmp"
 #incbin "Dmp/Aurora(ZessDynamite)_minimug.dmp"
-setMugEntry(AuroraMug, AuroraMugData, 3, 5, 3, 3)
+setMugEntry(AuroraMug, AuroraMugData, 2, 5, 3, 3)
 
 ALIGN 16
 CarlMugData:
@@ -793,3 +797,35 @@ IlseMugData:
 #incbin "Dmp/Ilse(Loog)_palette.dmp"
 #incbin "Dmp/Ilse(Loog)_minimug.dmp"
 setMugEntry(IlseMug, IlseMugData, 3, 6, 3, 4)
+
+ALIGN 16
+RashidMugData:
+#incbin "Dmp/Rashid_mug.dmp"
+#incbin "Dmp/Rashid_frames.dmp"
+#incbin "Dmp/Rashid_palette.dmp"
+#incbin "Dmp/Rashid_minimug.dmp"
+setMugEntry(RashidMug, RashidMugData, 2, 5, 3, 3)
+
+ALIGN 16
+YoungCleoMugData:
+#incbin "Dmp/YoungCleo_mug.dmp"
+#incbin "Dmp/YoungCleo_frames.dmp"
+#incbin "Dmp/YoungCleo_palette.dmp"
+#incbin "Dmp/YoungCleo_minimug.dmp"
+setMugEntry(YoungCleoMug, YoungCleoMugData, 2, 8, 3, 6)
+
+ALIGN 16
+HamdiMugData:
+#incbin "Dmp/Hamdi(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Hamdi(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Hamdi(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Hamdi(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(HamdiMug, HamdiMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ColossusMugData:
+#incbin "Dmp/Colossus_mug.dmp"
+#incbin "Dmp/Colossus_frames.dmp"
+#incbin "Dmp/Colossus_palette.dmp"
+#incbin "Dmp/Colossus_minimug.dmp"
+setMugEntry(ColossusMug, ColossusMugData, 3, 5, 3, 6)
