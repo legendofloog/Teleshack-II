@@ -62,4 +62,4 @@ SongTable(BattleWithThimale,Battle_With_Thimale,MapMusicGroup)
 #include "MusicEvents/SheepWillSleep(Leche).event"
 SongTable(Sheep_Will_Sleep,SheepWillSleep,MapMusicGroup)
 #include "MusicEvents/CORE(Leche).event"
-SongTable(CORE,----------,MapMusicGroup)
+SongTable(Core,CORE(Leche),MapMusicGroup)
