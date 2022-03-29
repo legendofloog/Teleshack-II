@@ -8,7 +8,7 @@
 
         // .rodata
         // SheepWillSleep
-        .align  2
+        ALIGN 4
 
 //****************** Track 0 (Midi-Chn.0) ******************//
 
@@ -7118,7 +7118,7 @@ SheepWillSleep_6_59:
 
 //********************** End of Song ***********************//
 
-        .align  2
+        ALIGN 4
 SheepWillSleep:
         BYTE   7                       // Num Tracks
         BYTE   0                       // Unknown
