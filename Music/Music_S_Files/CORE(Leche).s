@@ -7,7 +7,7 @@
 
         .section .rodata
         .global CORE
-        .align  2
+        ALIGN 4
 
 @****************** Track 0 (Midi-Chn.0) ******************@
 
@@ -5429,7 +5429,7 @@ CORE_10_35:
 
 @********************** End of Song ***********************@
 
-        .align  2
+        ALIGN 4
 CORE:
         .byte   11                      @ Num Tracks
         .byte   0                       @ Unknown
