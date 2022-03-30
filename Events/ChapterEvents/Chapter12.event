@@ -19,15 +19,15 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Door(9,3)
-Door(15,5)
-Door(5,6)
+LOCA 9 SympathizerDoor [9,3] 0x12
+LOCA 10 TopPrisonerDoor [15,5] 0x12
+LOCA 11 TiberiusDoor [5,6] 0x12
 Door(12,9)
-Door(5,11)
-Door(1,13)
+LOCA 10 RightWestPrisonerDoor [5,11] 0x12
+LOCA 10 LeftWestPrisonerDoor [1,13] 0x12
 Door(14,17)
-Door(14,25)
-Door(30,25)
+LOCA 10 BottomLeftPrisonerDoor [14,25] 0x12
+LOCA 10 BottomRightDoor [30,25] 0x12
 Chest(Mend,18,2)
 Chest(Mend,16,17)
 Chest(Mend,15,18)
