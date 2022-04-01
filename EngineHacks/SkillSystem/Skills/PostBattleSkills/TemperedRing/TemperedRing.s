@@ -23,7 +23,12 @@ mov	lr, r3
 cmp	r0,#0x00
 beq	CheckDefender
 
-@take 7 damage
+@check if dead
+ldrb	r0, [r4,#0x13]
+cmp	r0, #0x00
+beq	End
+
+@heal 4 hp
 ldrb	r1, [r4,#0x12]	@r1=maxhp
 mov r0, #heal4hp
 ldrb	r2, [r4,#0x13]	@r2=currhp
@@ -43,10 +48,10 @@ lsl	r0, #0x10
 add	r3, r0
 ldrb	r0, [r4,#0x10]		@load x coordinate of character
 add	r3, r0
-ldr	r1,=#0x30004E4		@and store them for the event engine
+ldr	r1,=0x30004E4		@and store them for the event engine
 str	r3, [r1]
 
-ldr	r0,=#0x800D07C		@event engine thingy
+ldr	r0,=0x800D07C		@event engine thingy
 mov	lr, r0
 ldr	r0, HealEvent	@this event is just "play sound"
 mov	r1, #0x01		@0x01 = wait for events
@@ -62,7 +67,12 @@ mov lr, r3
 cmp r0,#0x00
 beq End
 
-@take 7 damage
+@check if dead
+ldrb	r0, [r5,#0x13]
+cmp	r0, #0x00
+beq	End
+
+@heal 4 hp
 ldrb  r1, [r5,#0x12]  @r1=maxhp
 mov r0, #heal4hp
 ldrb  r2, [r5,#0x13]  @r2=currhp
@@ -82,10 +92,10 @@ lsl r0, #0x10
 add r3, r0
 ldrb  r0, [r5,#0x10]    @load x coordinate of character
 add r3, r0
-ldr r1,=#0x30004E4    @and store them for the event engine
+ldr r1,=0x30004E4    @and store them for the event engine
 str r3, [r1]
 
-ldr r0,=#0x800D07C    @event engine thingy
+ldr r0,=0x800D07C    @event engine thingy
 mov lr, r0
 ldr r0, HealEvent @this event is just "play sound"
 mov r1, #0x01   @0x01 = wait for events

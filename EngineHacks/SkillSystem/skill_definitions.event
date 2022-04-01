@@ -37,6 +37,7 @@
 #define DanceID 57
 #define HeroesLifeAndDeathID 58
 #define LifetakerID 59
+#define AcrobatID 64
 
 // keep it continous for debug purpose
 

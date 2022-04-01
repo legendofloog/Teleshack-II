@@ -15,23 +15,28 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 //TurnEventPlayer(0, AlenaSpawn, 2)
+TurnEventPlayer(0,CleoWarning, 2)
 TurnEventPlayer(0,CoraliaFlees, 4)
 TurnEventPlayer(0,ThiefSpawn1, 3)
 TurnEventPlayer(0,ThiefSpawn2, 4)
 TurnEventPlayer(0,ReinforceTurn5, 5)
 TurnEventPlayer(0,ThiefSpawn3, 6)
 TurnEventPlayer(0,ThiefSpawn4, 8)
-TurnEventPlayer(0,NoAntiturtle,11)
+TurnEventPlayer(0,NoAntiturtle,13)
 END_MAIN
 
-CoraliaFlees:
-CameraCursor(Coralia)
-Text(Ch15CoraliaFleesText)
+CleoWarning:
 CameraCursor(Cleo)
 Text(Ch15CoraliaFleesResponseText)
 CameraCursorLocation(12,0,20)
 CameraCursorLocation(13,0,20)
 CameraCursorLocation(14,0,20)
+NoFade
+ENDA
+
+CoraliaFlees:
+CameraCursor(Coralia)
+Text(Ch15CoraliaFleesText)
 SVAL s1 0x00040C06
 CHAI Coralia
 NoFade
@@ -240,11 +245,13 @@ Units1:
 UNIT Cleo 0x0 Cleo Level(1,Ally,False) [5,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe 0x0 Cleo Level(1,Ally,False) [22,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -253,7 +260,7 @@ UNIT
 
 CoraliaAndCenterGroup:
 UNIT Cythes Champion 0x0 Level(1,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [Javelin, LongLance] AttackInRangeAI
-UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [11,27] 0x0 0x0 0x0 0x0 [StoneSword] BossAI
+UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [11,27] 0x0 0x0 0x0 0x0 [IceSword] BossAI
 UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT Cythes Hero 0x0 Level(1,Enemy,True) [12,21] 0x0 0x0 0x0 0x0 [LongSword,WhiteGem] AttackInRangeAI
 UNIT Cythes Bard 0x0 Level(15,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
@@ -359,9 +366,13 @@ ENUN
 EVBIT_MODIFY 1
 CHECK_EVENTID 0x86
 BNE 6 s0 sC
+	FADI 15
+	SetBackground(Temple)
 	PROMOTE Loewe Dragonlord Kaiserschwert
+	FADU 15
 	ENUN
 	ENUT 0x86
+	CALL $9EE2C4
 LABEL 6
 MUSC Rovers
 EVBIT_MODIFY 0
@@ -404,9 +415,10 @@ MOVE 15 Raschwitz_Ch1 [13,11]
 ENUN
 REMOVEUNIT Raschwitz_Ch1
 Text(Ch15BeginningScene6Part3)
-MOVE 15 Catrin [13,11]
+MOVE 15 Kassandra [13,11]
 ENUN
-REMOVEUNIT Catrin
+REMOVEUNIT Kassandra
+ENUN
 Text(Ch15BeginningScene6Part4)
 DismountAll
 GotoPrepScreen

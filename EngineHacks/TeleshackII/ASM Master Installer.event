@@ -49,8 +49,6 @@ ChangeWeaponRankASMC:
 
 #include "NarrowFontExtension/SerifExtension.event"
 
-#include "FogVisionTiles/Installer.event"
-
 #include "PromoLevelCheck/PromoLevelCheck.lyn.event" //fixes IER bug where promo can be done at any level
 
 #include "FE7 & 8-Show Heal Amount/FE7 & FE8-Show Heal Amount EA.event"

@@ -23,7 +23,7 @@ int DismountUsability(){
 	if (unit->state & US_CANTOING){
 	return USABILITY_FALSE;
 	}
-	if (GetDismountedClass(unit) && GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] <= 0){
+	if (GetDismountedClass(unit) == 0){
 		return USABILITY_FALSE;
 	}
 	if (CheckIfDismountLocationLegal(unit) == false){
@@ -37,7 +37,7 @@ int MountUsability(){
 	if (unit->state & US_CANTOING){
 	return USABILITY_FALSE;
 	}
-	if (GetMountedClass(unit) && GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] <= 0){
+	if (GetMountedClass(unit) == 0){
 		return USABILITY_FALSE;
 	}
 	if (CheckIfDismountLocationLegal(unit) == false){

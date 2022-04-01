@@ -132,10 +132,10 @@
 #define Eitha 0x4B
 
 //Chapter 13 stuff
-#define Veniamin 0x9A
 #define Corundum 0x9B
 #define Pascal 0x9C
 #define Kailani 0x9D
+#define Veniamin 0x9E
 
 //Chapter 14 Stuff
 #define Tsoureki 0x9F

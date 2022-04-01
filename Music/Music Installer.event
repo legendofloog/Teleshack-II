@@ -69,3 +69,5 @@ SongTable(ncastlebridge,song34,MapMusicGroup)
 SongTable(GreatCanyon,GreatCanyon_Psyche_RW_,MapMusicGroup)
 #include "MusicEvents/Berwick Saga - Knight's Pride (MrGreen).event"
 SongTable(KnightsPride,songC1,MapMusicGroup)
+#include "MusicEvents/TS_CombatResistance(devvy).event"
+SongTable(CombatResistanceID,CombatResistance,MapMusicGroup)

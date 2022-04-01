@@ -49,6 +49,7 @@ BEQ 2 s1 sC
 LABEL 2
 Text(EllereyAcceptedDialogue)
 CUSA Ellerey
+SetFatigue(Ellerey,0)
 MOVE 15 Ellerey [7,9]
 ENUN
 SVAL s1 0x1
@@ -74,6 +75,7 @@ BEQ 4 s1 sC
 LABEL 4
 Text(MantouAcceptedDialogue)
 CUSA Mantou
+SetFatigue(Mantou,0)
 MOVE 15 Mantou [7,9]
 ENUN
 SVAL s1 0x1
@@ -98,6 +100,7 @@ BEQ 6 s1 sC
 LABEL 6
 Text(TippanyAcceptedDialogue)
 CUSA Tippany
+SetFatigue(Tippany,0)
 MOVE 15 Tippany [7,9]
 ENUN
 SVAL s1 0x1
@@ -123,6 +126,7 @@ BEQ 8 s1 sC
 LABEL 8
 Text(PelecayeAcceptedDialogue)
 CUSA Pelecaye
+SetFatigue(Pelecaye,0)
 MOVE 15 Pelecaye [7,9]
 ENUN
 SVAL s1 0x1
@@ -148,6 +152,7 @@ BEQ 10 s1 sC
 LABEL 10
 Text(CarlAcceptedDialogue)
 CUSA Carl
+SetFatigue(Carl,0)
 MOVE 15 Carl [7,9]
 ENUN
 SVAL s1 0x1

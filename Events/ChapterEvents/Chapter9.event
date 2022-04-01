@@ -246,6 +246,7 @@ ENDA
 JennyTalkCh9:
 MUSS WithUs_Song
 Text(JennyRecruitText)
+ENUT 10
 CUSA Jenny
 MURE 2
 NoFade
@@ -254,6 +255,7 @@ ENDA
 MeldanTalkCh9:
 MUSS WithUs_Song
 Text(MeldanRecruitText)
+ENUT 11
 CUSA Meldan
 MURE 2
 NoFade
