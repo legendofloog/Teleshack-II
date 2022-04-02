@@ -39,6 +39,7 @@
 #define LifetakerID 59
 #define BowRangeUpID 60
 #define LoyaltyID 61
+#define ChargeID 62
 
 // keep it continous for debug purpose
 

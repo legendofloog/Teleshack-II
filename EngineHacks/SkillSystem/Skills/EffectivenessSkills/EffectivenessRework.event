@@ -44,13 +44,13 @@ FlierEffectiveness:
 SetWeaponEffectiveness(FlierType, 6)
 WORD 0
 MageEffectiveness: // Mage, Mageknight, Bard, Sage
-SetWeaponEffectiveness(0x41, 6)
+SetWeaponEffectiveness(ArcherType, 6)
 WORD 0
 ArcherEffectiveness: // Archer, Sniper
-SetWeaponEffectiveness(0x40, 6)
+SetWeaponEffectiveness(ArcherType, 6)
 WORD 0 
 PoincareEffectiveness: // Archer, Sniper, Fliers
-SetWeaponEffectiveness(0x40|FlierType, 6)
+SetWeaponEffectiveness(ArcherType|FlierType, 6)
 WORD 0
 
 #define SetProtection(type_list) "SHORT 0 type_list"

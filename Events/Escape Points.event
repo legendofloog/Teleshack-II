@@ -23,6 +23,7 @@ EscapePointEntry(19,10,EscapeRight)
 EscapePointTerminator
 
 Chapter16NPCEscapeTable:
+EscapePointEntry(21,10,EscapeRight)
 EscapePointEntry(21,11,EscapeRight)
 EscapePointEntry(21,12,EscapeRight)
 EscapePointEntry(21,13,EscapeRight)
@@ -77,6 +78,8 @@ EscapePointTerminator
 Chapter16EnemyEscapeTable:
 EscapePointEntry(12,1,EscapeInPlace)
 EscapePointEntry(18,1,EscapeInPlace)
+EscapePointEntry(6,11,EscapeInPlace)
+EscapePointEntry(12,5,EscapeInPlace)
 EscapePointTerminator
 
 SetNPCEscapePoint(Chapter1,Chapter1NPCEscapeTable)

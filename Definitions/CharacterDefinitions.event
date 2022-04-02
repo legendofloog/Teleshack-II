@@ -151,6 +151,7 @@
 #define Phantom 0x8A
 #define Hamdi 0x4C
 #define Colossus 0x4D
+#define Boro_Ch16 0x4E
 
 #define Breguet 0x46
 #define Bazba 0x48
