@@ -40,7 +40,7 @@ POP
 	MagicSwordEntry(IceSword,WeaponTypeAnima,False,HitDef,HitRes)
 	MagicSwordEntry(StoneSword,WeaponTypeAnima,False,HitDef,HitRes)
 	MagicSwordEntry(LunarAxe,0x2,True,HitRes,HitRes)
-	MagicSwordEntry(AquaBrand,WeaponTypeAnima,True,HitDef,HitRes)
+	MagicSwordEntry(AquaBrand,WeaponTypeAnima,False,HitDef,HitRes)
 
 	BYTE 0 0 0 //terminator
 
