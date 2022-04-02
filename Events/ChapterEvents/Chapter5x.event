@@ -51,6 +51,7 @@ Text(MishAcceptedDialogue)
 CHECK_EVENTID 14
 BEQ 14 s0 sC  
 	CUSA Mish
+	SetFatigue(Mish,0)
 	MOVE 15 Mish [14,7]
 	SVAL s1 0x1
 	SET_CONDITION Mish
@@ -79,6 +80,7 @@ LABEL 9
 Text(TobieAcceptedDialogue)
 CALL $9EE2C4
 CUSA Tobie
+SetFatigue(Tobie,0)
 MOVE 15 Tobie [14,6]
 ENUN
 SVAL s1 0x1
@@ -103,6 +105,7 @@ BEQ 11 s1 sC
 LABEL 11
 Text(AwaAcceptedDialogue)
 CUSA Awa
+SetFatigue(Awa,0)
 MOVE 15 Awa [14,6]
 ENUN
 SVAL s1 0x1
@@ -127,6 +130,7 @@ BEQ 19 s1 sC
 LABEL 19
 Text(CadenzaAcceptedDialogue)
 CUSA Cadenza
+SetFatigue(Cadenza,0)
 MOVE 15 Cadenza [14,7]
 ENUN
 SVAL s1 0x1
@@ -151,6 +155,7 @@ BEQ 26 s1 sC
 LABEL 26
 //Text(FaolanAcceptedDialogue)
 CUSA Faolan
+SetFatigue(Faolan,0)
 MOVE 15 Faolan [14,7]
 ENUN
 SVAL s1 0x1
@@ -190,6 +195,7 @@ BNE 13 s1 sC
 		SVAL s1 Mish
 		BNE 15 s1 sC
 			CUSA Mish
+			SetFatigue(Mish,0)
 			MOVE 15 Mish [14,7]
 			ENUN
 			SVAL s1 0x1

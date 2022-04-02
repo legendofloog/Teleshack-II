@@ -51,6 +51,7 @@ BYTE Veniamin 2
 BYTE Trajan 2
 BYTE Kwame 3
 BYTE Epony 3
+BYTE Coralia 1
 BYTE 0x0 0x0 //delimiter
 
 PUSH

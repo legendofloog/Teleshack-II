@@ -40,6 +40,7 @@
 #define BowRangeUpID 60
 #define LoyaltyID 61
 #define ChargeID 62
+#define AcrobatID 63
 
 // keep it continous for debug purpose
 

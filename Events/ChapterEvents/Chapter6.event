@@ -504,6 +504,7 @@ Ch6Village1Event:
 	SetBackground(House1)
 	Text(Ch6Village1)
 	GiveItem(KillingEdge,-1)
+	EraseBackground 
 NoFade
 ENDA
 
@@ -511,6 +512,7 @@ Ch6Village2Event:
 	SetBackground(House1)
 	Text(Ch6Village2)
 	GiveItem(Mend,-1)
+	EraseBackground
 NoFade
 ENDA
 
@@ -518,6 +520,7 @@ Ch6Village3Event:
 	SetBackground(House1)
 	Text(Ch6Village3)
 	GiveItem(Lightning,-1)
+	EraseBackground
 NoFade
 ENDA
 

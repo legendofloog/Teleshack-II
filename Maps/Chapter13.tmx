@@ -13,7 +13,7 @@
    <property name="MapID" value="Chapter13Map"/>
    <property name="ObjectType" value="FlasubanVillageObjectID"/>
    <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
-   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfig2ID"/>
   </properties>
   <data encoding="csv">
 420,193,133,271,271,271,134,385,678,941,942,942,942,942,942,942,942,942,942,942,679,877,878,878,878,783,783,783,

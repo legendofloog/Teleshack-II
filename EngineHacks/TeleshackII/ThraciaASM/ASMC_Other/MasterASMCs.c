@@ -92,5 +92,5 @@ void CheckIfFatigued(){
 }
 
 int GetCurrentPromotedLevelBonus(){
-    return 19; //every promoted unit hits 20 unpromoted
+    return 14; //every promoted unit hits 15 unpromoted
 }

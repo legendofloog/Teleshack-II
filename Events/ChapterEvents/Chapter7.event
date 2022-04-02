@@ -247,7 +247,10 @@ ENDA
 
 RecruitCh7:
 Text(RecruitCh7Text)
-CUSA 24
+SVAL s1 0x00000000
+CHAI Buldak
+CUSA Buldak
+SetFatigue(Buldak,0)
 NoFade
 ENDA
 

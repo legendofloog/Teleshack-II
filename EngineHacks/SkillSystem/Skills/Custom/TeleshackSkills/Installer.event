@@ -7,3 +7,5 @@ gDebuffTable:
 WORD DebuffTable
 
 #include "Aftershock/Aftershock.event"
+
+#include "RecklessCharge/RecklessCharge.event"

@@ -15,12 +15,14 @@ BYTE 0x00 //terminator
 ALIGN 4
 DefenseEquipmentList:
 BYTE KingShield
+BYTE TemperedRing
 BYTE 0x00 // terminator
 
 // Offense equipment loses durability on each attack made
 ALIGN 4
 OffenseEquipmentList:
 BYTE EdgedArrow
+BYTE TemperedRing
 BYTE 0x00 // terminator
 
 // Equipment in neither list will never decrement durability

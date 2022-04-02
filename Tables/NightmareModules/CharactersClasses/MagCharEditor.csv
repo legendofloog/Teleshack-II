@@ -13,7 +13,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x0B Filone,1,20
 0x0C Zwieback,0,5
 0x0D Leina,(-2),5
-0x0E Cromar,-1,35
+0x0E Cromar,0,35
 0x0F Loewe,1,10
 0x10 Longxia,3,35
 0x11 Fangai,5,35
@@ -44,7 +44,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x2A Jacinth,3,30
 0x2B Nahiza,2,5
 0x2C Augur,(-2),50
-0x2D Coralia,3,60
+0x2D Ilse,3,30
 FakeEirika,2,10
 0x2E Rashid,0,5
 0,0,0
@@ -157,14 +157,14 @@ Wraith (Swords),0,0
 0x9B Corundum,0,0
 0x9C Pascal,0,0
 0x9D Kailani,3,100
-0,0,0
-0,0,0
-0,0,0
-0,0,0
-Reinforcement (Chapter 3),4,0
-0,0,0
-0,0,0
-0,0,0
+0x9e,0,0
+0x9f,0,0
+0xa0,0,0
+0xa1,0,0
+0xa2,4,0
+0xa3,0,0
+0xa4,0,0
+0xA5 Coralia,3,35
 0,0,0
 0,0,0
 Mercenary (C9A),0,0

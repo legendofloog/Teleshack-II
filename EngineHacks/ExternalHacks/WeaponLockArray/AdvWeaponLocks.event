@@ -73,6 +73,11 @@ BYTE HardCharLock
 BYTE Darby
 BYTE EndLockArray
 
+DullahanArray:
+BYTE HardCharLock
+BYTE Cromar
+BYTE EndLockArray
+
 DragonstoneArray:
 BYTE HardClassLock
 BYTE Manakete
