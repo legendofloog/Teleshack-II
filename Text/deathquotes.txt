@@ -305,3 +305,8 @@ Impossible[Beat][A][X]
 ## ColossusDeathQuote
 [MidLeft][LoadColossus]
 [Beat][A][X]
+
+## IlseDeathQuoteText
+[MidRight][LoadIlse]
+It seems I[Beat] got carried away.[N]
+What an inglorious death[Beat][AN][CloseEyes][X]

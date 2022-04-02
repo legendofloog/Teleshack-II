@@ -101,9 +101,12 @@ DeathQuote(Darby,AllChapters,0x0,DarbyDeathQuote,DarbyGiveAll)
 DeathQuote(Jacinth,AllChapters,0x0,JacinthDeathQuote,JacinthGiveAll)
 DeathQuote(Kailani,AllChapters,0x0,KailaniDeathQuote,KailaniGiveAll)
 
-// ch 13
+// ch 14
 DeathQuote(Nahiza,AllChapters,0x0,NahizaDeathQuote,DarbyGiveAll)
 DeathQuote(Augur,AllChapters,0x0,AugurDeathQuote,JacinthGiveAll)
+
+// ch 15
+DeathQuote(Ilse,AllChapters,0x0,IlseDeathQuoteText,IlseGiveAll)
 
 // ch 16
 DeathQuote(Rashid,AllChapters,0x0,RashidDeathQuote,RashidGiveAll)

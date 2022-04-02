@@ -256,3 +256,9 @@ RashidGiveAll:
 SendAll(Rashid)
 NoFade
 ENDA
+
+ALIGN 4
+IlseGiveAll:
+SendAll(Ilse)
+NoFade
+ENDA

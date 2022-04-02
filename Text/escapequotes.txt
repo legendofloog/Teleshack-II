@@ -76,7 +76,7 @@ Come on everyone![A][X]
 
 ## MeldanEscapeQuoteText
 [MidRight][LoadMeldan]
-...Oh? We're leaving?[N]
+[Beat]Oh? We're leaving?[N]
 Well, ok then.[A][X]
 
 ## NahizaEscapeQuoteText
@@ -97,3 +97,9 @@ Let us make it a reality[Beat][A][X]
 [MidRight][LoadRashid]
 An opening[Beat][N]
 Fly, my friends. We must go![A][X]
+
+
+## IlseEscapeQuoteText
+[MidRight][LoadIlse]
+What? We're running away?![N]
+I could've taken them all on[Beat][A][X]
