@@ -2,6 +2,9 @@ ALIGN 4
 #include "Macros.event"
 ALIGN 4
 #include "Escape Points.event"
+ALIGN 4
+#include "GiveAllEvents.event"
+
 #include "ChapterEvents/ChapterEventsInstaller.event"
 
 
@@ -26,3 +29,17 @@ ORG 0x5A8A00
 SHORT 0x0070 //Helman
 SHORT 0x006F //Senny
 POP
+/*
+ALIGN 4
+DontAttackUnitAI:
+SHORT 0x001E //Valse
+SHORT 0x001F //Hornet
+
+SHORT 0x0000
+*/
+ALIGN 4
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDB
+ALIGN 4

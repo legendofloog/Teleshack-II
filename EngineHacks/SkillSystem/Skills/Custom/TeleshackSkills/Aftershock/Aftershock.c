@@ -17,6 +17,11 @@ bool IsUsingThunderWeapon(BattleUnit battleUnit){
 
 void AftershockPostBattle(){
 
+	// ignore non combat actions
+	if (gActionData.unitActionType != UNIT_ACTION_COMBAT){
+		return;
+	}
+
 	Unit* target = GetUnit(gBattleTarget.unit.index);
 
 	// ignore dead people
@@ -46,6 +51,13 @@ void New_BattleInitTargetCanCounter(){
 
 	// attacker weapon is uncounterable
 	if (gBattleActor.weaponAttributes & IA_UNCOUNTERABLE){
+		gBattleTarget.weapon = item;
+		gBattleTarget.canCounter = false;
+		return;
+	}
+
+	// target weapon is uncounterable
+	if (gBattleTarget.weaponAttributes & IA_UNCOUNTERABLE){
 		gBattleTarget.weapon = item;
 		gBattleTarget.canCounter = false;
 		return;

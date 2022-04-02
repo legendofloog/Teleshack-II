@@ -27,21 +27,25 @@
 #define Hans 0x1A
 #define Jenny 0x1C
 #define Meldan 0x1D
-#define Myrrh 0x1E
-#define Knoll 0x1F
-#define Joshua 0x20
-#define Syrene 0x21
-#define Tana 0x22
-#define LyonCC 0x23
-#define OrsonCC 0x24
-#define GlenCC 0x25
-#define SelenaCC 0x26
-#define ValterCC 0x27
-#define RievCC 0x28
-#define CaellachCC 0x29
-#define FadoCC 0x2A
-#define IsmaireCC 0x2B
-#define HaydenCC 0x2C
+#define Valse 0x1E
+#define Hornet 0x1F
+#define Milo 0x20
+#define Ichwep 0x21
+#define Mink 0x22
+#define Tiberius 0x23
+#define Ellerey 0x24
+#define Mantou 0x25
+#define Tippany 0x26
+#define Pelecaye 0x27
+#define Carl 0x28
+#define Darby 0x29
+#define Jacinth 0x2A
+#define Nahiza 0x2B
+#define Augur 0x2C
+#define Ilse 0x2D
+#define Rashid 0x2E
+
+
 #define LyonSummon 0x3B
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
@@ -73,6 +77,17 @@
 // Chapter 9 Boss
 #define Wrathgar 0x47
 
+// Chapter 10 stuff
+#define Cidor 0x48
+#define Johanna 0x49
+#define Elias 0x4a
+#define SeleseProvoke 0x98
+#define Bandit 0x99
+
+#define Selese 0x6e
+#define Cythes 0x89
+#define Mahemen 0xA1
+
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
 #define Senny 0x6F
@@ -81,10 +96,14 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
+#define Chapter3Reinforcements 0xA2
 #define Veid 0x74
 // Chapter 5x
 #define Kwame 0x65
 #define Trajan 0x66
+#define MiraCopy 0x90
+#define IskraCopy 0x91
+#define VargaCopy 0x92
 
 //Chapter 6 stuff
 #define Vladith 0x74
@@ -106,7 +125,34 @@
 #define Militia 0x82
 #define Freyse 0x88
 
-#define Valter_Prologue 0x45
+//Chapter 11 stuff
+#define Aurora 0x45
+
+//Chapter 12 stuff
+#define Eitha 0x4B
+
+//Chapter 13 stuff
+#define Corundum 0x9B
+#define Pascal 0x9C
+#define Kailani 0x9D
+#define Veniamin 0x9E
+
+//Chapter 14 Stuff
+#define Tsoureki 0x9F
+
+//Chapter 15 Stuff
+#define Looter 0xA3
+#define Traveler 0xA4
+#define Coralia 0xA5
+#define Catrin 0xA6
+#define Kassandra 0xA7
+
+//Chapter 16 Stuff
+#define Phantom 0x8A
+#define Hamdi 0x4C
+#define Colossus 0x4D
+#define Boro_Ch16 0x4E
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49

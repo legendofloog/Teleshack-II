@@ -15,7 +15,7 @@ ASMC 0x790A4|1		//praise Teq
 NoFade
 ENDA
 
-
+/*
 ThraciaEscapeProcessor: //gets passed a char ID and a flag ID in the event queue
 SLOTS_SETFROMQUEUE 2
 CHECK_DEPLOYED (-3) //uses value in s2
@@ -29,5 +29,5 @@ SLOTS_SETFROMQUEUE 2
 LABEL 777
 NoFade
 ENDA
-
+*/
 

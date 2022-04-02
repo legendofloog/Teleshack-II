@@ -1,4 +1,9 @@
-Alright, so this one is dependent on which table you're trying to edit. If it is in the following list (Character, Item, Chapter), then you can go back to the main folder and click on Buildfile Pro. Select the Teleshack II folder in the directory, and you should see a GUI interface to edit with (this is particularly helpful for people used to Builder, but CSVs are stinky in general). Pik made this and it's pretty epic. However, don't edit the class table since that one's set in stone beyond any numerical changes we may or may not agree on later. Further, don't give your unit any weapon types or character abilities that they wouldn't have available in their class (prf locks are fine though obviously). 
+Alright, so this one is dependent on which table you're trying to edit. If it is in the following list (Character, Item, Chapter), then you can go back to the main folder and click on Buildfile Pro. Note: The Chapter editor has some weirdness where it wipes the Events section - make sure
+you set this to the definition for your chapter's events (Chapter7Events, for example) if you
+use it. The Character editor mostly works, though it does affect the CharMagicEditor csv oddly,
+so make sure you doublecheck that your units have the appropriate base and growth.
+
+Select the Teleshack II folder in the directory, and you should see a GUI interface to edit with (this is particularly helpful for people used to Builder, but CSVs are stinky in general). Pik made this and it's pretty epic. However, don't edit the class table since that one's set in stone beyond any numerical changes we may or may not agree on later. Further, don't give your unit any weapon types or character abilities that they wouldn't have available in their class (prf locks are fine though obviously). 
 
 
 Otherwise, you'll have to edit them in their respective CSVs (the NightmareModules folder) or their EA file (EA_Files folder). This is probably a good time to mention that you're going to want some kind of syntax highlighting so that .event files are more legible. 

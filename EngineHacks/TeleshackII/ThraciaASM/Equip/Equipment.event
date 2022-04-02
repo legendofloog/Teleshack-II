@@ -1,0 +1,59 @@
+
+ALIGN 4
+EquipmentList:
+BYTE TemperedRing
+BYTE GrowthScroll
+BYTE SisterRing
+BYTE RedScarf
+BYTE KingShield
+BYTE EdgedArrow
+BYTE WoodlandsHuke
+BYTE CaptainsHelm
+BYTE 0x00 //terminator
+
+// Defense equipment loses durability on each hit taken
+ALIGN 4
+DefenseEquipmentList:
+BYTE KingShield
+BYTE TemperedRing
+BYTE 0x00 // terminator
+
+// Offense equipment loses durability on each attack made
+ALIGN 4
+OffenseEquipmentList:
+BYTE EdgedArrow
+BYTE TemperedRing
+BYTE 0x00 // terminator
+
+// Equipment in neither list will never decrement durability
+
+ALIGN 4
+KingShieldClassList:
+BYTE SwordArmor
+BYTE AxeArmor
+BYTE LanceArmor
+BYTE BowArmor
+BYTE General
+BYTE MageArmor
+BYTE Baron
+BYTE 0xFF //terminator
+
+ALIGN 4
+EdgedArrowClassList:
+BYTE Scaleshot
+BYTE Scaleshot_Dismounted
+BYTE Dragonlord
+BYTE Dragonlord_Dismounted
+BYTE Warrior
+BYTE Hunter
+BYTE Archer
+BYTE Sniper
+BYTE BowArmor
+BYTE General
+BYTE BowKnight
+BYTE ArchKnight
+BYTE MasterKnight
+BYTE BowKnight_Dismounted
+BYTE ArchKnight_Dismounted
+BYTE MasterKnight_Dismounted
+BYTE 0xFF

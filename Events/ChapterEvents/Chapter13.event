@@ -1,0 +1,257 @@
+EventPointerTable(Chapter13Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1
+	POIN $0 $0 $0 
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, KailaniJoin, 1)
+TurnEventPlayer(0, VeniaminAIChange, 8)
+	END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(7, DarbyRecruit, Loewe, Darby)
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	DefeatBoss(EndingScene)
+	END_MAIN
+
+LocationBasedEvents:
+Door(9,5)
+Door(10,5)
+Door(18,4)
+Door(23,12)
+Door(24,12)
+Armory(Ch7Armory,13,17)
+Vendor(Ch7Vendor,15,13)
+Village(8,JacinthVillage,3,16)
+Village(9,FlameswordVillage,1,8)
+Village(10,GreatbowVillage,14,10)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [22,20] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [23,20] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,20] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [25,20] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,21] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,21] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,21] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [25,21] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [25,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Veniamin ForrestKnight Veniamin Level(5,Enemy,False)[0,5] 0x0 0x0 0x0 0x0 [BraveSword, FlameSword] AttackInRangeAI
+UNIT Corundum Champion Corundum Level(10,Enemy,False)[5,17] 0x0 0x0 0x0 0x0 [Javelin] BossAI
+UNIT Pascal ThiefFighter Pascal Level(1,Enemy,False)[1,23] 0x0 0x0 0x0 0x0 [SilverSword,KnightProof] TwoActionAI
+UNIT Bandit Brigand Pascal Level(10,Enemy,True)[16,25] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary] [0x0 0x4 0x4 0x0]
+UNIT Bandit Brigand Pascal Level(10,Enemy,True)[20,17] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary] [0x0 0x4 0x4 0x0]
+UNIT Darby Hunter_F Veniamin Level(13,Enemy,False)[19,14] 0x0 0x0 0x0 0x0 [HoundingBow,Vulnerary] PursueWithoutHeedAI
+UNIT Cythes Mage Veniamin Level(10,Enemy,True)[20,13] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Cythes DragonRider Veniamin Level(12,Enemy,True)[10,17] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Veniamin Level(12,Enemy,True)[27,15] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
+UNIT Cythes Myrmidon Veniamin Level(12,Enemy,True)[22,16] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+UNIT Cythes SwordFighter Veniamin Level(12,Enemy,True)[25,16] 0x0 0x0 0x0 0x0 [Armorslayer] PursueWithoutHeedAI
+UNIT Cythes LanceArmor Veniamin Level(12,Enemy,True)[23,13] 0x0 0x0 0x0 0x0 [Javelin] BossAI
+UNIT Cythes LanceArmor Veniamin Level(12,Enemy,True)[24,13] 0x0 0x0 0x0 0x0 [Javelin,DoorKey] BossAI
+UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[11,22] 0x0 0x0 0x0 0x0 [KillerAxe] AttackInRangeAI
+UNIT Cythes Mage Veniamin Level(10,Enemy,True)[13,22] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Cythes Archer Veniamin Level(12,Enemy,True)[12,21] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Cythes Hero Veniamin Level(1,Enemy,True)[15,18] 0x0 0x0 0x0 0x0 [LongSword] [0x0 0x12 0x4 0x0]
+UNIT Cythes Hero Veniamin Level(1,Enemy,True)[8,12] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes DarkMage Veniamin Level(10,Enemy,True)[13,15] 0x0 0x0 0x0 0x0 [Flux] BossAI
+UNIT Cythes Hunter Veniamin Level(12,Enemy,True)[13,14] 0x0 0x0 0x0 0x0 [Longbow] BossAI
+UNIT Cythes AxeArmor Veniamin Level(12,Enemy,True)[14,14] 0x0 0x0 0x0 0x0 [SilverAxe] BossAI
+UNIT Cythes AxeArmor Veniamin Level(12,Enemy,True)[14,15] 0x0 0x0 0x0 0x0 [SilverAxe] BossAI
+UNIT Cythes General Veniamin Level(1,Enemy,True)[1,0] 0x0 0x0 0x0 0x0 [BigIron,DaShoota,Miaodao,YorsYari] [0xD 0x3 0x4 0x0]
+UNIT Cythes Hunter Veniamin Level(12,Enemy,True)[15,8] 0x0 0x0 0x0 0x0 [MarksmanBow,GoddessIcon] AttackInRangeAI
+UNIT Cythes MageArmor Veniamin Level(12,Enemy,True)[14,11] 0x0 0x0 0x0 0x0 [Thunder] BossAI
+UNIT Cythes BowKnight Veniamin Level(12,Enemy,True)[4,0] 0x0 0x0 0x0 0x0 [SteelBow] TwoActionAI
+UNIT Cythes AxeKnight Veniamin Level(12,Enemy,True)[5,0] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
+UNIT Cythes LanceKnight Veniamin Level(12,Enemy,True)[4,1] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[6,23] 0x0 0x0 0x0 0x0 [Hurlbat] TwoActionAI
+UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[5,23] 0x0 0x0 0x0 0x0 [SlimAxe] TwoActionAI
+UNIT Cythes SwordFighter Veniamin Level(12,Enemy,True)[8,7] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes SwordFighter Veniamin Level(12,Enemy,True)[1,12] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes LanceSoldier Veniamin Level(12,Enemy,True)[2,11] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Cythes AxeSoldier Veniamin Level(12,Enemy,True)[7,8] 0x0 0x0 0x0 0x0 [SlimAxe] AttackInRangeAI
+UNIT Cythes DukeKnight Veniamin Level(1,Enemy,True)[1,4] 0x0 0x0 0x0 0x0 [SilverLance,RedGem] TwoActionAI
+UNIT Cythes Hunter Veniamin Level(12,Enemy,True)[5,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT
+
+IndoorEnemies:
+UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[23,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[24,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes Myrmidon Veniamin Level(12,Enemy,True)[22,8] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes Myrmidon Veniamin Level(12,Enemy,True)[25,8] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes SwordFighter Veniamin Level(12,Enemy,True)[23,0] 0x0 0x0 0x0 0x0 [SteelSword] TwoActionAI
+UNIT Cythes LanceSoldier Veniamin Level(12,Enemy,True)[24,0] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[24,1] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
+UNIT Cythes LanceArmor Veniamin Level(12,Enemy,True)[18,5] 0x0 0x0 0x0 0x0 [Javelin,DoorKey] BossAI
+UNIT Cythes AxeArmor Veniamin Level(12,Enemy,True)[18,1] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes SwordArmor Veniamin Level(12,Enemy,True)[17,2] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes Mage Veniamin Level(10,Enemy,True)[12,1] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Cythes DarkMage Veniamin Level(10,Enemy,True)[11,2] 0x0 0x0 0x0 0x0 [Flux] PursueWithoutHeedAI
+UNIT Cythes DarkMage Veniamin Level(10,Enemy,True)[10,2] 0x0 0x0 0x0 0x0 [Jormungand,DoorKey] BossAI
+UNIT
+
+KailaniAppears:
+UNIT Kailani HighPriestess Cleo Level(20,Ally,True)[16,16] 0 0 1 REDA22R19 [Lightning,Mend] AttackInRangeAI
+UNIT
+
+JacinthAppears:
+UNIT Jacinth Dancer Cleo Level(1,Ally,True)[3,16] 0 0 1 REDA3R17 [Rapier,Vulnerary] AttackInRangeAI
+UNIT
+
+VeniaminAIChange:
+SVAL 0x1 0x0
+CHAI 0x9A
+EVBIT_T 0x7
+Text(VeniaminWarning)
+NoFade
+ENDA
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+MountAll
+LOAD1 0x1 EnemyUnits
+LOAD1 0x1 IndoorEnemies
+ENUN
+SetBackground(0x0E)
+MUSC SolveTheRiddle
+BROWNBOXTEXT GechrysosTopLeftText[8,8]
+Text(Ch13OrfeasTalk)
+FADI 16
+MUSC 0x7FFF
+SetBackground(0x0A)
+FADU 16
+MUSC FF5_Sealed_Away
+Text(GetTrolledRadnitz)
+FADI 16
+MUSC 0x7FFF
+SetBackground(0x07)
+FADU 16
+MUSC PMDSteamCaveID
+CenterTextbox(Ch13Opening)
+MUSC FFTAnxiety
+Text(CleoAndLoeweNoticeEnemy)
+TEXTEND
+REMA
+GotoPrepScreen
+NoFade
+ENDA
+
+KailaniJoin:
+LOAD1 0x1 KailaniAppears
+FlashCursor(Kailani,60)
+MUSC TensionSong
+Text(KailaniJoinText)
+CenterTextbox(KailaniInfo)
+NoFade
+ENDA
+
+DarbyRecruit:
+MUSS WithUs_Song
+Text(DarbyRecruitText)
+CUSA Darby
+SetFatigue(Darby, 0)
+MURE 2
+NoFade
+ENDA
+
+JacinthVillage:
+SetBackground(0x0)
+Text(JacinthRecruitText)
+CLEAN
+LOAD1 0x1 JacinthAppears
+NoFade
+ENDA
+
+FlameswordVillage:
+SetBackground(0x0)
+Text(FlameSwordVillageText)
+CLEAN
+GiveItem(FlameSword,0xFFFF)
+NoFade
+ENDA
+
+GreatbowVillage:
+SetBackground(0x0)
+Text(GreatbowVillageText)
+CLEAN
+GiveItem(KillerBow,0xFFFF)
+NoFade
+ENDA
+
+
+ALIGN 4
+Ch7Armory:
+SHORT LongSword
+SHORT GreatSword
+SHORT LongLance
+SHORT Greatlance
+SHORT BattleAxe
+SHORT Longbow
+SHORT Greatbow
+SHORT Javelin
+SHORT HandAxe
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch7Vendor:
+SHORT Thunder
+SHORT Mend
+SHORT Physic
+SHORT Sleep
+SHORT Vulnerary
+SHORT Elixir
+SHORT 0
+SHORT 0
+
+EndingScene:
+SendAll(Kailani)
+REMOVEUNIT Kailani
+MUSC FF5_Nostalgia
+SetBackground(0x07)
+Text(Ch13EndingOne)
+MNC2 Chapter14
+NoFade
+ENDA

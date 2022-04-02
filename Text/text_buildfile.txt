@@ -84,6 +84,13 @@ Cleo and Loewe[X]
 Complete this chapter[N]
 by having this unit arrive.[X]
 
+## SeizeName
+ Seize[X]
+
+## SeizeObjectiveDesc
+  Seize with[N]
+Cleo or Loewe[X]
+
 ## LordMustEscapeLastText
 This unit must escape last.[X]
 
@@ -164,4 +171,7 @@ Dragana's cell.[X]
 #include "CharClassItemsEtc/CharacterNamesDescs.txt"
 
 #include "CharClassItemsEtc/ClassNamesDescs.txt"
+
+## HealArrowText
+->[X]
 

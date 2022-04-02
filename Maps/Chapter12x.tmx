@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="Thracia_Castle_v2(Flasuban)" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Thracia_Castle_v2(Flasuban).png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="ThraciaCastleTileAnimationsID"/>
+   <property name="ChapterID" value="Ch12xInterlude"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Ch12xInterludeMapChanges"/>
+   <property name="MapID" value="Ch12xInterludeMap"/>
+   <property name="ObjectType" value="ThraciaCastleObjectID"/>
+   <property name="PaletteID" value="ThraciaCastlePaletteID"/>
+   <property name="TileConfig" value="ThraciaCastleMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+354,354,355,751,983,822,823,824,823,825,985,751,353,354,354,
+354,354,355,751,983,854,855,856,855,857,985,751,353,354,354,
+354,354,355,751,1015,1016,918,984,919,1016,1017,751,353,354,354,
+386,386,387,751,751,751,983,984,985,751,751,751,385,386,386,
+751,751,751,751,751,751,983,984,985,751,751,751,751,751,751,
+751,951,952,952,952,952,886,984,887,952,952,952,952,953,751,
+751,1015,1016,1016,1016,1016,918,984,919,1016,1016,1016,1016,1017,751,
+751,751,751,751,751,751,983,984,985,751,751,751,751,751,751,
+322,322,322,323,751,751,983,984,985,751,751,321,322,322,322,
+354,354,354,355,751,751,983,984,985,751,751,353,354,354,354
+</data>
+ </layer>
+</map>

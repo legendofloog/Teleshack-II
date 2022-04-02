@@ -1,0 +1,8 @@
+#include "MasterASMCs.lyn.event"
+
+#define CheckIfUnitEscapedASMC(charID, labelID) "SVAL s1 charID; ASMC CheckIfUnitEscaped; BEQ labelID s0 sC; HIDEUNIT charID; LABEL labelID"
+#define CheckIfUnitRescuedByActiveASMC(rescuedID) "SVAL s1 rescuedID; ASMC CheckIfUnit1RescuedByActive"
+#define UnitCopyASMC(copiedID,copierID) "SVAL s1 copiedID; SVAL s2 copierID; ASMC UnitCopy"
+#define SetFatigue(charID,ftgValue) "SVAL 1 charID; SVAL 2 ftgValue; ASMC SetFatigue"
+#define SetFatigueOneLess(charID) "SVAL 1 charID; SVAL 2 0xFF; ASMC SetFatigue"
+#define CheckIfFatigued(charID) "SVAL s1 charID; ASMC CheckIfFatigued"

@@ -33,6 +33,7 @@ $RECYCLE.BIN/
 *.ss8
 *.ss9
 *.gba.7z
+*.fetxt
 
 # python cache
 __pycache__
@@ -68,6 +69,6 @@ Temporary Items
 
 #Other Stuff
 EventAssembler/Tools
-Text/_textentries
+Text/.TextEntries/
 Text/InstallTextData.event
 Text/TextDefinitions.event

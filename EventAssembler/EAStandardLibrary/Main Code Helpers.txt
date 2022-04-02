@@ -27,7 +27,7 @@
 #define TurnEventPlayer(eventID,pointer,startTurn,amountOfTurns) "TURN eventID pointer [startTurn, startTurn+amountOfTurns-1] 0"
 #define TurnEventEnemy(eventID,pointer,turn) "TURN eventID pointer [turn, 0] 8"
 #define TurnEventEnemy(eventID,pointer,startTurn,amountOfTurns) "TURN eventID pointer [startTurn, startTurn+amountOfTurns-1] 8"
-#define TurnEventNPC(eventID,pointer,turn) "TURN eventID pointer [startTurn, 0] 0x4"
+#define TurnEventNPC(eventID,pointer,turn) "TURN eventID pointer [turn, 0] 0x4"
 #define TurnEventNPC(eventID,pointer,startTurn,amountOfTurns) "TURN eventID pointer [startTurn, startTurn +amountOfTurns-1] 0x4"
 #define Survive(pointer,endturn) "TURN 0x00 pointer [endturn, 0] 0"
 #define OpeningTurnEvent(pointer) "TURN 0x00 pointer [1,0] 0"
@@ -115,7 +115,7 @@
 #endif
 
 #ifdef _FE8_
-#define CauseGameOverIfLordDies "AFEV 0 0x592104 0x65"
+//#define CauseGameOverIfLordDies "AFEV 0 0x592104 0x65"
 #define DefeatBoss(offset) "AFEV 0 offset 2"
 #define DefeatAll(offset) "AFEV 0 offset 6"
 #define NoFade "EVBIT_T 0x7"

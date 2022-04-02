@@ -44,9 +44,9 @@ LocationBasedEvents:
 	Vendor(Ch6Vendor2,13,16)
 	Chest(Javelin,26,6)
 	Chest(Hammer,27,6)
-	Village(0x10,Ch6Village1,10,25)
-	Village(0x11,Ch6Village2,21,26)
-	Village(0x12,Ch6Village3,27,23)
+	Village(0x10,Ch6Village1Event,10,25)
+	Village(0x11,Ch6Village2Event,21,26)
+	Village(0x12,Ch6Village3Event,27,23)
 	House(0x0,Ch6House1,25,23)
 	House(0x0,Ch6House2,25,27)
 	Seize(27, 9)
@@ -139,12 +139,12 @@ ALIGN 4
 Reinforce0:
 UNIT Gladiator Fighter Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
 UNIT Gladiator Fighter Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [HandAxe, SteelAxe] ChargeAI
-UNIT Gladiator Fighter Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [Hammer, RedGem] ChargeAI
+UNIT Gladiator Fighter Barod Level(6,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [Hammer] ChargeAI
 UNIT
 
 ALIGN 4
 Reinforce1:
-UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [6,0] DropItem 0x0 0x0 0x0 [IronBlade, RedGem] ChargeAI
+UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronBlade] ChargeAI
 UNIT Gladiator AxeSoldier Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
 UNIT Gladiator Soldier Barod Level(6,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
 UNIT
@@ -153,19 +153,20 @@ ALIGN 4
 Reinforce2:
 UNIT Gladiator Myrmidon_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [KillingEdge] ChargeAI
 UNIT Gladiator Myrmidon Barod Level(6,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Claymore] ChargeAI
-UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [IronBlade, RedGem] ChargeAI
+UNIT Gladiator Swordfighter Barod Level(6,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IronBlade] ChargeAI
 UNIT
 
 ALIGN 4
 Reinforce3:
-UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Conversion] ChargeAI
-UNIT Gladiator Sister Barod Level(6,Enemy,True) [8,0] DropItem 0x0 0x0 0x0 [SpellMirror, RedGem] ChargeAI
-UNIT GladiatorMage Mage_F Barod Level(7,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [AlairsGale, SisterRing] ChargeHealAI
+//UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Conversion] ChargeAI
+UNIT Gladiator Shaman_F Barod Level(6,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [Flux] ChargeAI
+UNIT Gladiator Sister Barod Level(6,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [SpellMirror] ChargeAI
+UNIT GladiatorMage Mage_F Barod Level(7,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [AlairsGale] ChargeHealAI
 UNIT
 
 ALIGN 4
 Reinforce4:
-UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] DropItem 0x0 0x0 0x0 [Brenthunder] ChargeAI
+UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Brenthunder] ChargeAI
 UNIT
 
 ALIGN 4
@@ -175,30 +176,27 @@ UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [6,33] 0x0 0x0 0x0 0x1 [IronAxe] S
 
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [11,34] 0x0 0x0 0x0 0x1 [SlimBow] StallAI(4)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [11,33] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(4)
-UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [12,34] 0x0 0x0 0x0 0x1 [SteelLance] StallAI(4)
 UNIT Ch6Pirate Shaman Draken Level(6,Enemy,True) [10,34] 0x0 0x0 0x0 0x1 [Flux] StallAI(4)
 
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,34] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,34] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [18,34] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
 
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [1,30] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(1)
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [0,31] 0x0 0x0 0x0 0x1 [IronBow] StallAI(1)
 
-UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [4,24] 0x0 0x0 0x0 0x1 [IronLance] ChargeAI
+UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [4,24] 0x0 0x0 0x0 0x1 [ShortLance] ChargeAI
 UNIT Ch6Pirate Fighter Draken Level(6,Enemy,True) [5,25] 0x0 0x0 0x0 0x1 [IronAxe] ChargeAI
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [4,26] 0x0 0x0 0x0 0x1 [IronBow] ChargeAI
 
 UNIT Ch6Pirate Mage Draken Level(6,Enemy,True) [10,23] 0x0 0x0 0x0 0x1 [Fire] ChargeAI
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [12,25] 0x0 0x0 0x0 0x1 [IronSword] ChargeAI
 
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [22,24] 0x0 0x0 0x0 0x1 [IronSword] StallAI(6)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [22,24] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(6)
 UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] StallAI(6)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [24,29] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
-UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [27,25] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
-UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [24,21] 0x0 0x0 0x0 0x1 [IronBow] StallAI(6)
 
-UNIT Draken 0x0 Draken Level(6,Enemy,False) [0, 28] DropItem 0x0 0x0 0x1 [HandAxe, IronAxe] BossAI
+UNIT Draken 0x0 Draken Level(6,Enemy,False) [0, 28] 0x0 0x0 0x0 0x1 [HandAxe, IronAxe] BossAI
 UNIT
 
 ALIGN 4
@@ -273,6 +271,7 @@ SHORT 0
 
 ALIGN 4
 BeginningScene:
+	MountAll
 	TILECHANGE 0
 	TILECHANGE 1
 
@@ -290,7 +289,8 @@ BeginningScene:
 	LOAD1 0x1 VeidUnit
 	LOAD1 0x1 McCallumUnit
 	LOAD1 0x1 CromarAndLeina
-	Load1 0x1 BarodUnit
+	LOAD1 0x1 BarodUnit
+	ENUN
 
 	CameraCursor(Barod)
 	Text(Ch6BarodCromarIntro)
@@ -311,9 +311,9 @@ BeginningScene:
 	Text(Ch6CromarMcCallumIntro)
 	STAL 120
 
-	Load1 0x1 PlayerSceneUnits
-	CAM1 Cleo
+	LOAD1 0x1 PlayerSceneUnits
 	ENUN
+	CAM1 Cleo
 	MOVE 40 Cleo [6, 18]
 	MOVE 40 Loewe [7,18]
 	ENUN
@@ -330,7 +330,6 @@ BeginningScene:
 
 	CameraCursor(Barod)
 	Text(Ch6BarodIntro)
-	MountAll
 	GotoPrepScreen
 	CLEAN
 NoFade
@@ -367,24 +366,28 @@ SpawnEnemies:
 	BREAK(0,0)
 	COUNTER_CASE(0, 1)
 		CameraCursor(Barod)
+		GiveItem(RedGem,Cleo)
 		Text(Ch6BarodIntro2)
 		LoadReinforcements(Reinforce1)
 		UnsetFlag(0xA)
 	BREAK(0,1)
 	COUNTER_CASE(0, 2)
 		CameraCursor(Barod)
+		GiveItem(RedGem,Cleo)
 		Text(Ch6BarodIntro3)
 		LoadReinforcements(Reinforce2)
 		UnsetFlag(0xA)
 	BREAK(0,2)
 	COUNTER_CASE(0, 3)
 		CameraCursor(Barod)
+		GiveItem(RedGem,Cleo)
 		Text(Ch6BarodIntro4)
 		LoadReinforcements(Reinforce3)
 		UnsetFlag(0xA)
 	BREAK(0,3)
 	COUNTER_CASE(0, 4)
 		CameraCursor(Barod)
+		GiveItem(SisterRing,Cleo)
 		Text(Ch6BarodIntro5)
 		CameraCursor(Cleo)
 		Text(Ch6BarodIntro5Response)
@@ -448,6 +451,9 @@ ENDA
 
 ALIGN 4
 EndingScene:
+SetBackground(Boat)
+MUSC(Rovers)
+Text(Ch6End)
 MNC2 Chapter7
 NoFade
 ENDA
@@ -494,18 +500,27 @@ LeinaRecruitCromar:
 NoFade
 ENDA
 
-Ch6Village1:
+Ch6Village1Event:
+	SetBackground(House1)
+	Text(Ch6Village1)
 	GiveItem(KillingEdge,-1)
+	EraseBackground 
 NoFade
 ENDA
 
-Ch6Village2:
+Ch6Village2Event:
+	SetBackground(House1)
+	Text(Ch6Village2)
 	GiveItem(Mend,-1)
+	EraseBackground
 NoFade
 ENDA
 
-Ch6Village3:
+Ch6Village3Event:
+	SetBackground(House1)
+	Text(Ch6Village3)
 	GiveItem(Lightning,-1)
+	EraseBackground
 NoFade
 ENDA
 

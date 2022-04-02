@@ -11,7 +11,7 @@ ldrb 	r1, [r2, r1]
 
 
 GetExtraGrowthBoost:
-mov		r2,#17		@index of con boost
+mov		r2,#19		@index of con boost
 ldr		r3,Extra_Growth_Boosts
 bx		r3
 

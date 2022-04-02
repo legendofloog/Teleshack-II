@@ -14,7 +14,7 @@ King Sword[X]
 Paragon Sword[X]
 
 # 0x362 ThunderSwordName
-Thunder Sword[X]
+Bolt Sword[X]
 
 # 0x363 WindSwordName
 Wind Sword[X]
@@ -23,7 +23,7 @@ Wind Sword[X]
 Sleep Sword[X]
 
 # 0x365 MasterSwordName
-Master Sword[X]
+Master Swd[X]
 
 # 0x36d ShortLanceName
 Shortlance[X]
@@ -43,8 +43,8 @@ Poleaxe[X]
 # 0x384 MasterAxeName
 Master Axe[X]
 
-# 0x385 MasterLanceName
-Master Lance[X]
+# 0x385 MasterLanceName 
+Master Lnc[X]
 
 # 0x386 ShortBowName
 Shortbow[X]
@@ -120,12 +120,6 @@ Knight Proof[X]
 # 0x4A5
 For most units Lv. 10 and up[NL]
 who have not changed class.[.][X]
-
-# 0x374
-[_K][_a][_i][_s][_e][_r][_s][_c][_h][_w][_e][_r]t[X]
-
-# 0x424
-Follow-up attacks occur before counter.[X]
 
 # 0x3A4
 Stone Sword[X]

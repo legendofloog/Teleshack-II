@@ -38,13 +38,6 @@ Avenger:
 POIN SkillTester
 WORD AvengerID
 
-ALIGN 4
-RecklessCharge:
-#incbin "RecklessCharge.dmp"
-POIN SkillTester
-WORD RecklessChargeID
-POIN prMovGetter
-
 #include "DullahanEvent.event"
 
 ALIGN 4
@@ -86,3 +79,12 @@ SpellMirrorSkl:
 #incbin "SpellMirror.dmp"
 POIN SkillTester
 WORD SpellMirrorID
+
+
+ALIGN 4
+Alacrity:
+#incbin "alacrity.dmp"
+POIN SkillTester
+WORD AlacrityID
+POIN AlacrityEvent
+#include "AlacrityEvent.event"

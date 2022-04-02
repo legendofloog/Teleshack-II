@@ -382,3 +382,10 @@ CleoStanding:
 ALIGN 4
 CleoMoving:
 #incbin "Dmp/MonaMoving(ArcherBias).dmp"
+
+ALIGN 4
+Loewe_Dismounted_Dragonlord_Standing:
+#incbin "Dmp/Dread Fighter (M) {Nuramon}-stand.dmp"
+ALIGN 4
+Loewe_Dismounted_Dragonlord_Moving:
+#incbin "Dmp/Dread Fighter (M) {Nuramon}-walk.dmp"

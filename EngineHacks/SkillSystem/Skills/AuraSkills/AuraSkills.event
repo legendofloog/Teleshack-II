@@ -76,6 +76,14 @@ POIN SkillTester
 POIN AuraSkillCheck
 WORD FocusID
 
+
+ALIGN 4
+Desolate:
+#incbin "Focus/Desolate.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD DesolateID
+
 ALIGN 4
 Anathema:
 #incbin "Anathema/Anathema.dmp"

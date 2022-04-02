@@ -6,6 +6,11 @@
 #include "MoveStars/Installer.event"
 #include "Support/Installer.event"
 #include "PCC/Installer.event"
+#include "Equip/Installer.event"
+#include "ExtraGrowths.event"
+#include "BattleExpTeleshack2/Installer.event"
+#include "ASMC_Other/Installer.event"
+#include "StaffChanges/Installer.event"
 
 
 // changes Luck's contribution to Hit into lck instead of lck/2
@@ -20,6 +25,7 @@ POP
 //ORG $2ac28
 //BYTE 0x0 0x1C 0x0 0x1C 0x0 0x1C
 //POP
+
 // changes luck cap to 20
 PUSH
 ORG $872AE
@@ -98,3 +104,4 @@ PUSH
 ORG $CC2
 SHORT $E004
 POP
+

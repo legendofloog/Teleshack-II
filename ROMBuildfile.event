@@ -1,4 +1,4 @@
-#ifdef _FE8_
+
     #include "EAstdlib.event"
     #include "CustomDefinitions.event"
     #include "Definitions/DefinitionsInstaller.event"
@@ -39,8 +39,5 @@
     #include "Maps/MasterMapInstaller.event"
 	
     MESSAGE Used free space ends at currentOffset
-#else
-    ERROR "You are not assembling FE8 events!"
-#endif
 
 //Gaiden!!!

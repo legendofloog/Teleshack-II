@@ -15,6 +15,10 @@ RangeSkillsCheck:
 POIN RangeSkillList
 
 ALIGN 4
+SharpshooterBonus:
+#incbin "Sharpshooter.dmp"
+
+ALIGN 4
 BowRangeBonus:
 #incbin "BowRange/BowRange.dmp"
 
@@ -32,6 +36,7 @@ TomeRangeBonus:
 
 ALIGN 4
 RangeSkillList:
+RangeSkill(SharpshooterID, SharpshooterBonus|1)
 RangeSkill(BowRangeUpID, BowRangeBonus|1)
 RangeSkill(StaffSavantID, StaffSavantBonus|1)
 RangeSkill(PointBlankID, PointBlankBonus|1)

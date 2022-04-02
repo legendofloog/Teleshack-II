@@ -1,3 +1,4 @@
 INLINE PromotionItemTable,Promotion Item ID,##UNKNOWN##,Promotion Class List Pointer,Promo Item Usability Pointer
-0x0,0x88,0x0,KnightProofClasses|IsPointer,0x0
+0x0,0x88,0x0,KnightProofClasses|IsPointer,PromoLevelCheck|IsPointer|1
+0x1,0x98,0x0,ArgymosCrestClasses|IsPointer,PromoLevelCheck|IsPointer|1
 End of Table,0xFFFF,0x0,0x0,0x0

@@ -29,6 +29,18 @@
 #define SavageBlowID 46
 #define RenewalID 47
 #define PassID 48
+#define SwapID 49
+#define ProvokeID 52
+#define ImbueID 53
+#define ArmoredBlowID 54
+#define CriticalForceID 55
+#define DanceID 57
+#define HeroesLifeAndDeathID 58
+#define LifetakerID 59
+#define BowRangeUpID 60
+#define LoyaltyID 61
+#define ChargeID 62
+#define AcrobatID 63
 
 // keep it continous for debug purpose
 
@@ -60,3 +72,6 @@
 #define EterniumMightID 37
 #define ZoruniumMightID 38
 #define GenesiumMightID 39
+#define AlacrityID 50
+#define SharpshooterID 51
+#define DesolateID 56

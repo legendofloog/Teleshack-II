@@ -70,22 +70,22 @@ SupportTerm
 
 ALIGN 4
 AlexSupportList:
-SupportEntry(Axel, 2, 2, 0, 0, 5, 10, 0)
+SupportEntry(Axel, 3, 3, 0, 5, 5, 15, 0)
 SupportTerm
 
 ALIGN 4
 AxelSupportList:
-SupportEntry(Alex, 2, 2, 0, 0, 5, 10, 0)
+SupportEntry(Alex, 3, 3, 0, 5, 5, 15, 0)
 SupportTerm
 
 ALIGN 4
 FiloneSupportList:
-SupportEntry(Zwieback, 2, 2, 0, 5, 0, 5, 0)
+SupportEntry(Zwieback, 3, 2, 0, 5, 0, 5, 0)
 SupportTerm
 
 ALIGN 4
 ZwiebackSupportList:
-SupportEntry(Filone, 2, 0, 2, 5, 0, 5, 0)
+SupportEntry(Filone, 3, 0, 2, 5, 0, 5, 0)
 SupportTerm
 
 ALIGN 4
@@ -96,6 +96,31 @@ SupportTerm
 ALIGN 4
 GimmSupportList:
 SupportEntry(Tobie, 3, 3, 3, 0, 0, 10, 0)
+SupportTerm
+
+ALIGN 4
+ValseSupportList:
+SupportEntry(Hornet, 3, 0, 2, 0, 10, 0, 10)
+SupportTerm
+
+ALIGN 4
+HornetSupportList:
+SupportEntry(Valse, 3, 2, 0, 10, 0, 10, 0)
+SupportTerm
+
+ALIGN 4
+MiloSupportList:
+SupportEntry(Pelecaye, 3, 1, 1, 10, 0, 0, 0)
+SupportTerm
+
+ALIGN 4
+PelecayeSupportList:
+SupportEntry(Milo, 3, 1, 1, 10, 0, 0, 0)
+SupportTerm
+
+ALIGN 4
+CoraliaSupportList:
+SupportEntry(Loewe,3,2,0,0,10,0,0)
 SupportTerm
 
 SetUnitSupportList(Cleo,CleoSupportList)
@@ -112,3 +137,8 @@ SetUnitSupportList(Filone,FiloneSupportList)
 SetUnitSupportList(Zwieback,ZwiebackSupportList)
 SetUnitSupportList(Gimm,GimmSupportList)
 SetUnitSupportList(Tobie,TobieSupportList)
+SetUnitSupportList(Valse,ValseSupportList)
+SetUnitSupportList(Hornet,HornetSupportList)
+SetUnitSupportList(Milo,MiloSupportList)
+SetUnitSupportList(Pelecaye,PelecayeSupportList)
+SetUnitSupportList(Coralia,CoraliaSupportList)

@@ -1,0 +1,199 @@
+## Ch12xTitle
+Interlude 2: Justice[X]
+
+
+## EllereyFirstTalkDialogueArmorAlive
+[MidRight][LoadLoewe]
+[MidLeft][LoadEllerey][ThreeLineBox]
+Hey there, commander. Name's Ellerey.[N]
+I know a thing or two about smithing.[N]
+My weapon and armor are even self-made![AN]
+I'd like to tag along with you, since[N]
+I never did like what Cidor was up to.[A]
+[MidRight]
+An armored knight, huh? We've had a[N]
+couple join us already, but none[N]
+with a preference for the lance.[AN]
+I'll give it some thought.[A][X]
+
+## EllereyFirstTalkDialogueArmorDead
+[MidRight][LoadLoewe]
+[MidLeft][LoadEllerey][ThreeLineBox]
+Hey there, commander. Name's Ellerey.[N]
+I know a thing or two about smithing.[N]
+My weapon and armor are even self-made![AN]
+I'd like to tag along with you, since[N]
+I never did like what Cidor was up to.[A]
+[MidRight]
+An armored knight, huh? We don't have[N]
+any with us right now, so your talents[N]
+would stand out. Let me think it over.[A][X]
+
+## EllereyPickDialogue
+[MidRight][LoadLoewe]
+Should I pick Ellerey?[No][X]
+
+## EllereyAcceptedDialogue
+[MidLeft][LoadEllerey][ThreeLineBox]
+Thank you so much, commander.[N]
+I won't let this[N]
+opportunity go to waste![A][X]
+
+## EllereyRejectedDialogue
+[MidLeft][LoadEllerey][ThreeLineBox]
+I understand, sir. I'll hone my[N]
+skills for our next encounter.[N]
+Good luck out there.[A][X]
+
+## MantouFirstTalkDialogue
+[MidRight][LoadLoewe]
+[MidLeft][LoadMantou]
+[MidRight]
+You look like you have quite[N]
+some experience with combat.[A]
+[MidLeft]
+Of course not, sir.
+I am just a humble farmer.
+[MidRight]
+Not many farmers have blade[N]
+wounds all over their arms.[A]
+[MidLeft]
+Those are from[Beat] angry foxes[N]
+attacking the hen cage.[A]
+[MidRight][OneLineBox]
+And that bloodied, worn axe of yours?[A]
+[MidLeft]
+Had to slaughter the hens before I left.[A]
+[MidRight][ThreeLineBox]
+A likely story[Beat] but we need extra[N]
+hands for this expedition, so long as[N]
+they keep well Tippanyy from from our own.[A]
+[MidLeft][OneLineBox]
+What's that supposed to mean?[A][X]
+
+## MantouPickDialogue
+[MidRight][LoadLoewe]
+Should I pick Mantou?[No][X]
+
+## MantouAcceptedDialogue
+[MidRight][LoadLoewe]
+[MidLeft][LoadMantou]
+I'm sure I'll do well on the[N]
+battlefield! You won't regret this.[A]
+[MidRight][OneLineBox]
+Better keep my good eye on this one[Beat][A][X]
+
+## MantouRejectedDialogue
+[MidLeft][LoadMantou]
+Fine. I'll just return[N]
+to my old line of work.[A][X]
+
+## TippanyFirstTalkDialogue
+[MidRight][LoadLoewe]
+[MidLeft][LoadTippany][OneLineBox]
+Oh, um. Sir![A]
+[MidRight]
+At ease, miss. Who are you?[A]
+[MidLeft][TwoLineBox]
+I am Tippany, sir! I am[Beat][N]
+a curate. Of sorts.[A]
+[MidRight][OneLineBox]
+So you can heal wounds?[A]
+[MidLeft][TwoLineBox]
+Yes, sir! I also have some[Beat][N]
+experience[Beat] with dark magic.[A]
+[MidRight][OneLineBox]
+[Beat]I see.[A]
+[MidLeft][TwoLineBox]
+I used to, um[Beat] fall in with[Beat][N]
+a bad crowd. But I want to help![AN]
+And there's only so much[N]
+I can do here in Decia[Beat][A]
+[MidRight]
+Hmm[Beat][A][X]
+
+## TippanyPickDialogue
+[MidRight][LoadLoewe]
+Should I pick Tippany?[No][X]
+
+## TippanyAcceptedDialogue
+[MidLeft][LoadTippany]
+[MidRight][LoadLoewe]
+We'd love to have you, Tippany. I'll[N]
+have the army prepare for you to join us.[A]
+[MidLeft]
+Oh, thank you, sir! I promise I'll[N]
+do my best to keep everyone safe![A][X]
+
+## TippanyRejectedDialogue
+[MidLeft][LoadTippany]
+[MidRight][LoadLoewe]
+I appreciate your enthusiasm Tippany,[N]
+but I'm not so sure about this.[AN]
+If it means anything, I think there's[N]
+still plenty that needs to be done here,[AN]
+in Decia. We'll need good people to[N]
+stay and protect our newly won freedom.[A]
+[MidLeft][ThreeLineBox]
+I see[Beat] Well, either here or there,[N]
+I'll do what I can to help! Although[N]
+do let me know if you change your mind![A]
+[MidRight]
+Of course! Goodbye for now, Tippany.[A][X]
+
+## PelecayeFirstTalkDialogue
+[MidLeft][LoadPelecaye][ThreeLineBox]
+Sir Loewe, I heard you may be traveling[N]
+through the deserts of Mahemen. You see,[N]
+I am in search of a certain plant.[AN]
+I was wondering if I may join your ranks,[N]
+as I have plenty of experience dealing[N]
+with sand, so it won't slow me down.[AN]
+I can even take a hit for frailer allies.[A][X]
+
+## PelecayePickDialogue
+[MidRight][LoadLoewe]
+Should I pick Pelecaye?[No][X]
+
+## PelecayeAcceptedDialogue
+[MidLeft][LoadPelecaye][ThreeLineBox]
+You won't regret this. Let me grab my[N]
+plant encyclopedia so I can rejig[N]
+my memory on what it looks like.[AN]
+I'll be with you shortly.[A][X]
+
+## PelecayeRejectedDialogue
+[MidLeft][LoadPelecaye]
+Very well. Perhaps Lord Radnitz[N]
+will offer me employment instead.[A][X]
+
+## CarlFirstTalkDialogue
+[MidRight][LoadLoewe]
+[MidLeft][LoadCarl][ThreeLineBox]
+You seek aid in your journey to Mahemen?[N]
+Look no further, for I, Carl, offer you[N]
+my assistance. As a fellow swordsman,[AN]
+surely you can recognize that my[N]
+swordsmanship, and my blade,[N]
+are without equal.[AN]
+[MidRight][TwoLineBox]
+Swordsman? You've got me wrong,[N]
+my weapon of choice is the bow.[AN]
+[MidLeft][ThreeLineBox]
+An archer? But your stance, your[N]
+movements, and that sword you[N]
+carry with you[Beat] No matter,[AN]
+I won't pry. So, what'll it be?[A][X]
+
+## CarlPickDialogue
+[MidRight][LoadLoewe]
+Should I pick Carl?[No][X]
+
+## CarlAcceptedDialogue
+[MidLeft][LoadCarl][OneLineBox]
+My blade is at your service.[A][X]
+
+## CarlRejectedDialogue
+[MidLeft][LoadCarl]
+The path of the blade[N]
+is a solitary one[Beat][A][X]

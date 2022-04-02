@@ -93,15 +93,48 @@ Looks like being a soldier[Beat][N]
 isn't all it was supposed[AN]
 to be[Beat] Mish, I'm[Beat] [CloseEyes]sorry[Beat][A][X]
 
+## CadenzaDeathQuoteText
+[MidRight][LoadCadenza]
+My song of life[Beat][N]
+has reached its requiem[Beat][A][CloseEyes][X]
+
+## IberisDeathQuoteText
+[MidRight][LoadIberis]
+This is how I die?[N]
+Really?[Beat]That's pathetic.[CloseEyes][A][X]
+
+## BuldakDeathQuoteText
+[MidRight][LoadBuldak]
+I guess I got my
+just desserts.[CloseEyes][A][X]
+
+## YorDeathQuoteText
+[MidLeft][LoadYor]
+Ouch.[CloseEyes][A][X]
+
+## MifanDeathQuoteText
+[MidLeft][LoadMifan]
+I can't[Beat][Beat][N]
+Must stand[Beat][Beat][CloseEyes][A][X]
+
+## WellworthDeathQuoteText
+[MidLeft][LoadWellworth]
+Mifan, are you safe?[CloseEyes][A][X]
+
+## TheGiantDeathQuoteText
+[MidLeft][LoadTheGiant]
+How did they[Beat][Beat][N]
+Get through?[Beat][CloseEyes][A][X]
+
 ## NoraDeathQuote
 [MidRight][LoadNora]
 Lord Radnitz, please[N]
-forgive me[Beat][CloseEyes][A][X]
+forgive me[Beat][CloseEyes][CloseEyes][A][X]
 
 ## HansDeathQuote
 [MidRight][LoadHans]
 Finally, I can rest[N]
-after all this time[Beat][A][X]
+after all this time[Beat][CloseEyes][A][X]
 
 ## HegeDeathQuote
 [MidLeft][LoadHege]
@@ -112,19 +145,163 @@ I must escape![AN][X]
 ## FrancisDeathQuote
 [MidLeft][LoadFrancis]
 Well, blast[Beat][N]
-Not how I wanted it to end[Beat][A][X]
+Not how I wanted it to end[Beat][CloseEyes][A][X]
 
 ## JennyDeathQuote
 [MidLeft][LoadJenny]
-Sis...[Beat]Sorry.[Beat][N]
-I'm not gonna be coming home...[A][X]
+Sis[Beat][Beat]Sorry.[Beat][N]
+I'm not gonna be coming home[Beat][CloseEyes][A][X]
 
 ## MeldanDeathQuote
 [MidLeft][LoadMeldan]
-Can I be...[Beat] proud?[Beat][N]
-Of...[Beat] the life I led?[A][X]
+Can I be[Beat][Beat] proud?[Beat][N]
+Of[Beat][Beat] the life I led?[CloseEyes][A][X]
 
 ## WrathgarDeathQuote
 [MidRight][LoadWrathgar]
 Yes![Beat]Gooood!!![Beat][N]
-A proper end...[Beat]for a warrior![A][X]
+A proper end[Beat][Beat]for a warrior![CloseEyes][A][X]
+
+## Ch10CidorDeathQuote
+[MidLeft][LoadCidor]
+Bested like this?[Beat]Impossible[Beat][N]
+I can still[Beat][A][X]
+
+## Ch10JohannaDeathQuote
+[MidLeft][LoadJohanna]
+To think I'd fall to these vermin[Beat][N]
+General[Beat] I'm sorry[Beat][CloseEyes][CloseEyes][A][X]
+
+## Ch10EliasDeathQuote
+[MidLeft][LoadElias]
+Impressive. I must fall back for now,[N]
+but next time, I will not lose again.[A][X]
+
+## Ch10MifanDeathQuote
+[MidLeft][LoadMifan]
+Not again[Beat][N]
+Not until I've had my revenge[Beat][CloseEyes][A][X]
+
+## Ch10HernandezDeathQuote
+[MidRight][LoadHernandez]
+Oof[Beat][CloseEyes][A][X]
+
+## RadnitzDeathQuote
+[MidRight][LoadRadnitz]
+Some hero[Beat][N]
+I turned out to be[Beat][CloseEyes][A][X]
+
+## ValseDeathQuote
+[MidRight][LoadValse]
+So this is the end[Beat][CloseEyes][A][X]
+
+## HornetDeathQuote
+[MidRight][LoadHornet]
+Life is[Beat] so fleeting[Beat][CloseEyes][A][X]
+
+## MiloDeathQuote
+[MidRight][LoadMilo]
+Heh. I never did get to have[N]
+that last drink.[Beat][CloseEyes][A][X]
+
+## AuroraDeathQuote
+[MidRight][LoadAurora]
+S-sister, I'm sorry.[A][X]
+
+## EithaDeathQuote
+[MidRight][LoadDragana]
+W[Beat]what happened?[AN] How am I still[Beat]?[AN]
+[Beat]this blood[Beat]these bodies[Beat][AN]
+W-what have I done?[A][X]
+
+## CarlDeathQuote
+[MidRight][LoadCarl]
+So this[Beat] is as far as I go[Beat][CloseEyes][A][X]
+
+## PelecayeDeathQuote
+[MidRight][LoadPelecaye]
+Just[Beat] one[Beat] sip[Beat][CloseEyes][A][X]
+
+## TippanyDeathQuote
+[MidRight][LoadTippany]
+No! I[Beat] just wanted[Beat][N]
+to be.. wanted[Beat][CloseEyes][A][X]
+
+## MantouDeathQuote
+[MidRight][LoadMantou]
+Dying like this for what,[AN]
+glory? Should have[N]
+stayed on my mountain.[CloseEyes][AN][X]
+
+## EllereyDeathQuote
+[MidRight][LoadEllerey]
+Looks like I wasn't up[N]
+to the task[Beat] I'm sorry,[AN]
+Commander[Beat][CloseEyes][A][X]
+
+## KailaniDeathQuote
+[MidRight][LoadKailani]
+I need to fall back[Beat][N]
+My country still needs me[Beat][A][X]
+
+## DarbyDeathQuote
+[MidRight][LoadDarby]
+Heh, overextended[Beat][CloseEyes][A][X]
+
+## JacinthDeathQuote
+[MidRight][LoadJacinth]
+Will my star fade out?[N]
+Please, I want to live[Beat][CloseEyes][A][X]
+
+## VeniaminDeathQuote
+[MidLeft][LoadVeniamin]
+Agh, no[Beat][AN]
+Looks like the rumors[N]
+of your abilities are true[Beat][AN]
+Leonidas, please, prepare[N]
+yourself[Beat][CloseEyes][A][X]
+
+## CorundumDeathQuote
+[MidLeft][LoadCorundum]
+Long live Freyse![N]
+Long live the righteous![AN]
+And to hell with you[N]
+traitors[Beat][CloseEyes][A][X]
+
+## PascalDeathQuote
+[MidLeft][LoadPascal]
+Pah, blasted nincompoops[Beat][AN]
+Always have to be the
+buzzkills[Beat][CloseEyes][A][X]
+
+## NahizaDeathQuote
+[MidRight][LoadNahiza]
+The heck? My ballista's[N]
+gotten all busted up![AN]
+Guess I've gotta[Beat][N]
+[HalfCloseEyes]make tracks[Beat][AN]
+Wait, why's it[N]
+so dark[Beat]?[CloseEyes][A][X]
+
+## AugurDeathQuote
+[MidRight][LoadAugur]
+[Beat]Finally.[A][X]
+
+## TsourekiDeathQuote
+[MidLeft][LoadTsoureki]
+Such is a soldier's death[Beat][AN]
+to fall into a shallow grave,[AN]
+without even knowing the[N]
+reason for[Beat] [CloseEyes]his end[Beat][AN][X]
+
+## RashidDeathQuote
+[MidRight][LoadRashid]
+Impossible[Beat][A][X]
+
+## HamdiDeathQuote
+[MidLeft][LoadHamdi]
+[Beat] Byelen[Beat][A][X]
+
+## ColossusDeathQuote
+[MidLeft][LoadColossus]
+[Beat][A][X]

@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade.[X]
+A high quality blade. Eff vs Cavalry[X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -132,7 +132,7 @@ Arai's Gale[X]
 [_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
 
 ## SisterRingName
-Wife Ring[X]
+Sister Ring[X]
 
 ## SisterRingDesc
 [_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
@@ -170,7 +170,7 @@ Restore life to all units on the map.[X]
 Devil's Dagger[X]
 
 ## DevilDaggerDesc
-Ignores Gim's Atk and enemy Def. Devil.[X]
+Ignores Mish's Atk and enemy Def. Devil.[X]
 
 ## BalladOfWarName ^
 Ballad of War[X]
@@ -185,22 +185,22 @@ Yor's Yari[X]
 Ignores Defence.[X]
 
 ## DaShootaName
-Da Shoota[X]
+Break Arc[X]
 
 ## DaShootaDesc
 Effective vs horses and armors.[X]
 
 ## BigIronName
-Big Iron[X]
+Meat Cleaver[X]
 
 ## Axle1Name
 Axle[X]
 
 ## Axle1Desc
-+8 Con. Axel[LockIcon].[X]
+Uncounterable. Lck +13.  Axel[LockIcon].[X]
 
 ## Axle2Desc
-Brave. Alex[LockIcon].[X]
+Halves enemy health. Alex[LockIcon].[X]
 
 ## MiaodaoName
 Miaodao[X]
@@ -214,3 +214,163 @@ Zykhra Scroll[X]
 ## ZykhraScrollDesc
 +10% HP, +10% Str, +10% Def,[N]
 +10% Bld, -10% Spd[X]
+
+## GrowthScrollName
+Growth Scroll[X]
+
+## GrowthScrollDesc
+Boosts equipped unit's growths.[X]
+
+## StingerName
+Stinger[X]
+
+## StingerDesc
+Spd +5. Hornet[LockIcon][X]
+
+## LunarAxeName
+Lunar Axe[X]
+
+## LunarAxeDesc
+Magic damage.[X]
+
+## StormbrandName
+Stormbrand[X]
+
+## StormbrandDesc
+Brave. Iskra[LockIcon][X]
+
+## BpatItemName
+DUMMY (bpat)[X]
+
+## BpatItemDesc
+Something special :)[X]
+
+## ArgymosCrestName
+Argymos Crest[X]
+
+## ArgymosCrestDesc
+Promotion item for Cleo.[X]
+
+## RaioScrollName
+Raio Scroll[X]
+
+## RaioScrollDesc
++10% Mag, +10% Skl, +20% Spd,[N]
+-15% HP[X]
+
+## LuzenScrollName
+Luzen Scroll[X]
+
+## LuzenScrollDesc
++20% HP, +20% Lck[X]
+
+## DarkbrandName
+Darkbrand[X]
+
+##DarkbrandDesc
+Can be used to buff res. Tiberius[LockIcon][X]
+
+## MuramasaName
+Muramasa[X]
+
+## TheBreakerName
+The Breaker[X]
+
+## TheBreakerDesc
+Effective vs. armors.[X]
+
+## HoundingBowName
+Hounding Bow[X]
+
+## HoundingBowDesc
+Eff. vs [HorseIcon]. Darby[LockIcon][X]
+
+## KingShieldName
+King Shield[X]
+
+## KingShieldDesc
+Provokes enemies in range. Armors only.[X]
+
+## EdgedArrowName
+Edged Arrow[X]
+
+## EdgedArrowDesc
+Pierces enemy defense. Bow users only.[X]
+
+## RedScarfName
+Red Scarf[X]
+
+## RedScarfDesc
+Restores 25% HP after killing an enemy.[X]
+
+## SaunionName
+Saunion[X]
+
+## SaunionDesc
+A lance with extended reach.[X]
+
+## KaiserschwertName
+[_K][_a][_i][_s][_e][_r][_s][_c][_h][_w][_e][_r]t[X]
+
+## KaiserschwertDesc *
+Follow-up attacks consecutive. Eff. vs. blessed.[X]
+
+## TrainedEdgeName
+Trained Edge[X]
+
+## TrainedPikeName
+Trained Pike[X]
+
+## TrainedAxeName
+Trained Axe[X]
+
+## TrainedArcName
+Trained Arc[X]
+
+## AquaBrandName
+Aqua Brand[X]
+
+## AquaBrandDesc
+Varga[LockIcon]. Magic dmg. +5 Spd.[X]
+
+## ChargeLanceName
+Charge[X]
+
+## ChargeLanceDesc
+Emil[LockIcon]. +1 dmg for per 2 squares.[X]
+
+## PoincareName
+Archival[X]
+
+## PoincareDesc
+Rashid[LockIcon]. Eff. vs. archer/sniper.[X]
+
+## SinkName
+Sink[X]
+
+## SinkDesc
+Eff. vs. mages and bards.[X]
+
+## WoodlandsHukeName
+[_W][_o][_o][_d][_l][_a][_n][_d][_s] [_H][_u][_k][_e][X]
+
+## WoodlandsHukeDesc
++2 Skl/Res when equipped. +1 Bow Rng.[X]
+
+## CaptainsHelmName
+[_C][_a][_p][_t][_a][_i][_n]'[_s] [_H][_e][_l][_m][X]
+
+## CaptainsHelmDesc
++1 Str/Mag/Skl/Spd/Def/Res. Equip.[X]
+
+## FealtyBowName
+Fealty Bow[X]
+
+## FealtyBowDesc
+-3 Dmg taken, +15 hit when near Lord.[X]
+
+## DragonstoneName
+Dragonstone[X]
+
+## DragonstoneDesc
+placeholder[X]
