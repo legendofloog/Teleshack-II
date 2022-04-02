@@ -289,7 +289,7 @@ EnemyUnitsCleoSide:
 UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey,ChestKey] BossAI
 UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,11] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey] BossAI
 UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [SlimAxe,DoorKey,ChestKey] BossAI
-UNIT Cythes AxeFighter 0x0 Level(15,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Cythes AxeFighter 0x0 Level(15,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [SlimAxe] PursueWithoutHeedAI
 UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT Cythes Bard 0x0 Level(15,Enemy,True) [2,22] 0x0 0x0 0x0 0x0 [Wind] PursueWithoutHeedAI
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI

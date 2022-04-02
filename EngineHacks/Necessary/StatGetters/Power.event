@@ -25,7 +25,7 @@ prRallyStr:
 	POIN GetDebuffs|1
 
 prLifeAndDeathBonus:
-	_testSkill(HeroesLifeAndDeathID,5,0)
+	_testSkill(HeroesLifeAndDeathID,2,0)
 
 prSkillFury:
   rIfUnitHasSkill(FuryID)

@@ -29,7 +29,7 @@ prRallyRes:
 	POIN GetDebuffs|1
 
 prLifeAndDeathMinus:
-_testSkill(HeroesLifeAndDeathID,0,5)
+_testSkill(HeroesLifeAndDeathID,0,2)
 
 prFortressResistanceRes:
 	_testSkill(FortressResistanceID,5,0)
