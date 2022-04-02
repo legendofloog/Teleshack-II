@@ -33,6 +33,7 @@ SetUnitPCC(Pelecaye, 0)
 SetUnitPCC(Carl, 4)
 SetUnitPCC(Jacinth, 3)
 SetUnitPCC(Kailani, 5)
+SetUnitPCC(Ilse,2)
 //Bosses, Generics, and NPCs
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)
