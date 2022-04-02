@@ -156,8 +156,8 @@
 #define DragonType	0x08
 #define MonsterType	0x10
 #define SwordType	0x20
-#define ArcherType 	0x30
 #define MageType	0x40
+#define ArcherType 	0x80
 
 //Status Effects
 #define NoStatusID 0

@@ -62,7 +62,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="3" name="TopMiddleDoor" width="20" height="20">
+ <layer id="3" name="TopMiddleDoor" width="20" height="20" visible="0">
   <properties>
    <property name="Height" value="2"/>
    <property name="ID" value="1"/>
@@ -93,7 +93,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="MidLeftDoorOpen" width="20" height="20">
+ <layer id="7" name="MidLeftDoorOpen" width="20" height="20" visible="0">
   <properties>
    <property name="Height" value="2"/>
    <property name="ID" value="5"/>
@@ -124,7 +124,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="9" name="MidLeftChestOpen" width="20" height="20">
+ <layer id="9" name="MidLeftChestOpen" width="20" height="20" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="6"/>
@@ -155,7 +155,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="4" name="MiddleChestOpen" width="20" height="20">
+ <layer id="4" name="MiddleChestOpen" width="20" height="20" visible="0">
   <properties>
    <property name="ID" value="2"/>
   </properties>
@@ -182,7 +182,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="5" name="RightDoorOpen" width="20" height="20">
+ <layer id="5" name="RightDoorOpen" width="20" height="20" visible="0">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="3"/>
@@ -213,7 +213,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="6" name="MiddleDoorOpen" width="20" height="20">
+ <layer id="6" name="MiddleDoorOpen" width="20" height="20" visible="0">
   <properties>
    <property name="Height" value="2"/>
    <property name="ID" value="4"/>
