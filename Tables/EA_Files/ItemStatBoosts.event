@@ -42,6 +42,18 @@ Axle1StatBoosts:
 StatBonus(0,0,0,0,0,0,0,13,0,0)
 
 ALIGN 4
+AquaBrandStatBoosts:
+StatBonus(0,0,0,0,5,0,0,0,0,0)
+
+ALIGN 4
+WoodlandsHukeStatBoosts:
+StatBonus(0,0,0,2,0,0,2,0,0,0)
+
+ALIGN 4
+CaptainsHelmStatBoosts:
+StatBonus(0,1,1,1,1,1,1,0,0,0)
+
+ALIGN 4
 GrowthScrollBonuses:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
 GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr

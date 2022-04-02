@@ -179,6 +179,17 @@
 #define EdgedArrow 0xD1
 #define RedScarf 0xD2
 #define Saunion 0xD3
+#define TrainedEdge 0xD4
+#define TrainedPike 0xD5
+#define TrainedAxe 0xD6
+#define TrainedArc 0xD7
+#define AquaBrand 0xD8
+#define ChargeLance 0xD9
+#define Poincare 0xDA
+#define Sink 0xDB
+#define WoodlandsHuke 0xDC
+#define CaptainsHelm 0xDD
+#define FealtyBow 0xDE
 
 #define Stinger 0x8d
 #define BpatItem 0x8e

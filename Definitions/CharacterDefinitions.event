@@ -43,7 +43,7 @@
 #define Nahiza 0x2B
 #define Augur 0x2C
 #define Ilse 0x2D
-
+#define Rashid 0x2E
 
 
 #define LyonSummon 0x3B
@@ -146,6 +146,12 @@
 #define Coralia 0xA5
 #define Catrin 0xA6
 #define Kassandra 0xA7
+
+//Chapter 16 Stuff
+#define Phantom 0x8A
+#define Hamdi 0x4C
+#define Colossus 0x4D
+#define Boro_Ch16 0x4E
 
 #define Breguet 0x46
 #define Bazba 0x48

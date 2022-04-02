@@ -26,6 +26,8 @@ UnspecifiedBattleConvo(Veniamin,Chapter13,1,VeniaminBossQ)
 UnspecifiedBattleConvo(Corundum,Chapter13,11,CorundumBossQ)
 UnspecifiedBattleConvo(Pascal,Chapter13,12,PascalBossQ)
 UnspecifiedBattleConvo(Tsoureki,Chapter14,0x15,TsourekiBossQ)
+UnspecifiedBattleConvo(Hamdi,Chapter16,0x16,HamdiBossQ)
+UnspecifiedBattleConvo(Colossus,Chapter16,0x16,ColossusBossQ)
 
 SpecifiedBattleConvo(Cidor,Cleo,Chapter10,0x16,Ch10CidorCleoBossQuote)
 SpecifiedBattleConvo(Cidor,Loewe,Chapter10,0x17,Ch10CidorLoeweBossQuote)

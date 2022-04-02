@@ -293,3 +293,15 @@ Such is a soldier's death[Beat][AN]
 to fall into a shallow grave,[AN]
 without even knowing the[N]
 reason for[Beat] [CloseEyes]his end[Beat][AN][X]
+
+## RashidDeathQuote
+[MidRight][LoadRashid]
+Impossible[Beat][A][X]
+
+## HamdiDeathQuote
+[MidLeft][LoadHamdi]
+[Beat] Byelen[Beat][A][X]
+
+## ColossusDeathQuote
+[MidLeft][LoadColossus]
+[Beat][A][X]

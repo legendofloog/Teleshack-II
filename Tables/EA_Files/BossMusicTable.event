@@ -18,6 +18,8 @@ BossBGMEntry(Veniamin, awaywithyou)
 BossBGMEntry(Corundum, awaywithyou)
 BossBGMEntry(Pascal, awaywithyou)
 BossBGMEntry(Tsoureki, awaywithyou)
+BossBGMEntry(Hamdi, UnfinishedBattleGodSyndrome)
+BossBGMEntry(Colossus, UnfinishedBattleGodSyndrome)
 BossBGMTerminator
 
 PUSH
