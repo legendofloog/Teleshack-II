@@ -1,0 +1,5 @@
+#define ChangePortraitMacro(portrait_id,unit_id,class_id,map_id,mode,flag_id) "SHORT portrait_id; BYTE unit_id class_id map_id mode; SHORT flag_id; "
+
+ChangeStatusBGEachChapter_Table:
+ChangePortraitMacro(LoewePunishedMug,Loewe,0xFF,0xFF,0xFF,0x8B)
+ChangePortraitMacro(0x00,0x00,0x00,0x00,0x00,0x00)  // term

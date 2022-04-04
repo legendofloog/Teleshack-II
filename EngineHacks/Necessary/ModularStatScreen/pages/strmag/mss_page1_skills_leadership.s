@@ -27,6 +27,7 @@ mov		r0,#0
 IsPlayerUnit:
 str		r0,[sp,#0x14]
 
+
 draw_textID_at 13, 3, textID=0x4fe, growth_func=2 @str
 draw_textID_at 13, 5, textID=0x4ff, growth_func=3 @mag
 draw_textID_at 13, 7, textID=0x4EC, growth_func=4 @skl
@@ -40,6 +41,7 @@ b 	NoRescue
 .ltorg 
 NoRescue:
 
+push 		{r5-r7}
 ldr		r0,=StatScreenStruct
 sub		r0,#1
 mov		r1,r8
@@ -47,13 +49,32 @@ ldrb	r1,[r1,#0xB]
 mov		r2,#0xC0
 tst		r1,r2
 beq		Label2
+mov 		r7, #0x0
+
+InterludeUnitLoop2:
+mov 		r5, r8
+ldr		r5, [r5,#0x0] @ character data
+ldrb		r5, [r5,#0x4] @ character ID
+ldr 		r6, =InterludeUnitsList
+ldrb		r6, [r6,r7]
+cmp		r5, r6
+beq		Label2
+cmp 		r6, #0xFF
+beq 		InterludeUnitLoopEnd2
+add		r7, #0x1
+b 		InterludeUnitLoop2
+
+InterludeUnitLoopEnd2:
+
 ldrb	r1,[r0]
 mov		r2,#0xFE
 and		r1,r2
 strb	r1,[r0]			@don't display enemy growths
+
 Label2:
 ldrb	r0,[r0]
 mov		r1,#1
+pop		{r5-r7}
 tst		r0,r1
 beq		ShowStats
 b		ShowGrowths

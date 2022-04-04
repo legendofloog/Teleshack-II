@@ -8,6 +8,9 @@
 #include "PCC/Installer.event"
 #include "Equip/Installer.event"
 #include "ExtraGrowths.event"
+#include "BattleExpTeleshack2/Installer.event"
+#include "ASMC_Other/Installer.event"
+#include "StaffChanges/Installer.event"
 
 
 // changes Luck's contribution to Hit into lck instead of lck/2

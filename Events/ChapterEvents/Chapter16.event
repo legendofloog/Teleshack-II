@@ -1,0 +1,403 @@
+EventPointerTable(Chapter16Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, RashidRecruitment, 1)
+TurnEventPlayer(0, Thief1_AEvent, 7)
+TurnEventPlayer(0, Thief1_BEvent, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B1, 6)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B1, 7)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B2, 8)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B3, 9)
+TurnEventPlayer(0, EnemyReinforcementsEvent_C, 11)
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(14,3)
+Door(15,3)
+Door(9,17)
+Door(13,14)
+Door(15,17)
+Chest(Sink,7,1)
+Chest(WoodlandsHuke,14,1)
+Chest(FealtyBow,20,1)
+Chest(Restore,10,16)
+Chest(RedGem,12,16)
+Chest(CaptainsHelm,16,16)
+SecretShop(Ch16SecretShop,21,17)
+Escape(0,EscapeEventCheck,21,10)
+Escape(0,EscapeEventCheck,21,11)
+Escape(0,EscapeEventCheck,21,12)
+Escape(0,EscapeEventCheck,21,13)
+END_MAIN
+
+ALIGN 4
+Ch16SecretShop:
+	SHLI TrainedEdge TrainedPike TrainedAxe TrainedArc SilverSword SilverLance SilverAxe SilverBow Thoron Aura Hel Restore Physic Sigil Unlock Rewarp DoorKey ChestKey
+	BYTE 0x0 0x0
+	ALIGN 4
+
+EscapeEventCheck:
+CHECK_ACTIVEID Loewe
+BEQ 0 s0 sC
+    COUNTER_INC 0
+LABEL 0
+CHECK_ACTIVEID Cleo
+BEQ 1 s0 sC
+    COUNTER_INC 0
+LABEL 1
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 3 s1 sC
+    ENUT 3
+    CALL EndingScene
+LABEL 3
+NoFade
+ENDA
+
+MiscBasedEvents:
+CauseGameOverIfLordDies 
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+RedSigil(21,10)
+RedSigil(21,11)
+RedSigil(21,12)
+RedSigil(21,13)
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+Units1:
+LoadUnit(2,1)
+LoadUnit(1,2)
+LoadUnit(0,1)
+LoadUnit(3,2)
+LoadUnit(4,1)
+LoadUnit(0,3)
+LoadUnit(1,4)
+LoadUnit(2,3)
+LoadUnit(3,4)
+LoadUnit(4,3)
+LoadUnit(2,4)
+LoadUnit(0,5)
+LoadUnit(4,4)
+LoadUnit(3,5)
+UNIT
+	
+NewPlayers:
+UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc] NoAI
+UNIT
+
+NPCUnits:
+UNIT Catrin Swordmaster Catrin Level(1,NPC,False) [3,3] 0x0 0x0 0x0 0x0 [MasterSword,Elixir] BossHealAI
+UNIT Boro_Ch16 Champion Catrin Level(5,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [MasterLance,Elixir] BossHealAI
+UNIT
+
+EnemyUnits:
+UNIT Hamdi Halberdier 0x0 Level(7,Enemy,False) [19,12] 0x0 0x0 0x0 0x0 [SilverLance,GoddessIcon] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,16] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [7,9] 0x0 0x0 0x0 0x0 [GaleBow] RangeAI
+UNIT Phantom Mage Hamdi Level(15,Enemy,True) [12,9] 0x0 0x0 0x0 0x0 [Thunder] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,9] 0x0 0x0 0x0 0x0 [TrainedArc] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [1,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [10,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [9,15] 0x0 0x0 0x0 0x0 [TrainedArc] RangeAI
+UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [16,15] 0x0 0x0 0x0 0x0 [Flux,Heal] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [13,1] 0x0 0x0 0x0 0x0 [TrainedArc,ChestKey] RangeAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [TrainedEdge] RangeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [14,2] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [17,2] 0x0 0x0 0x0 0x0 [TrainedArc,ChestKey] RangeAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [20,0] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,1] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [6,5] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [TrainedAxe,ChestKey] TwoActionAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [1,9] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [2,8] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] TwoActionAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
+UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [Flux,DoorKey] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [2,18] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [4,19] 0x0 0x0 0x0 0x0 [Jormungand,Physic,Sigil] BossAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [1,19] 0x0 0x0 0x0 0x0 [KillingEdge,RedGem] RangeAI
+UNIT Phantom AxeArmor Hamdi Level(15,Enemy,True) [6,14] 0x0 0x0 0x0 0x0 [TrainedAxe,DoorKey] BossAI
+UNIT Phantom AxeArmor Hamdi Level(15,Enemy,True) [7,14] 0x0 0x0 0x0 0x0 [TrainedAxe,DoorKey] BossAI
+UNIT Phantom AxeArmor Hamdi Level(15,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [BattleAxe,DoorKey] BossAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [11,13] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [7,16] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [8,18] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [13,19] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [19,21] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [13,12] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [10,12] 0x0 0x0 0x0 0x0 [Flux,ChestKey] TwoActionAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [14,4] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [10,6] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [18,22] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,6] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [18,7] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [17,12] 0x0 0x0 0x0 0x0 [Jormungand] RangeAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [19,15] 0x0 0x0 0x0 0x0 [Claymore] RangeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,9] 0x0 0x0 0x0 0x0 [SteelAxe] RangeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [20,12] 0x0 0x0 0x0 0x0 [SlimAxe] RangeAI
+UNIT
+
+Thief1_A:
+UNIT Phantom Thief Hamdi Level(15,Enemy,True) [12,1] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
+UNIT
+
+Thief1_B:
+UNIT Phantom Thief Hamdi Level(15,Enemy,True) [18,1] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
+UNIT
+
+EnemyReinforcements_A:
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT
+
+EnemyReinforcements_B:
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [3,1] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT
+
+EnemyReinforcements_B1:
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [6,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,15] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,19] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT
+
+EnemyReinforcements_B2:
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [6,11] 0x0 0x0 0x0 0x0 [Shortbow] ChargeAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [2,6] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
+UNIT
+
+EnemyReinforcements_B3:
+UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [6,11] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
+UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [2,6] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT
+
+EnemyReinforcements_C:
+UNIT Colossus Warrior Hamdi Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [MasterAxe] ChargeAI
+UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [3,1] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT
+
+RashidRecruitment:
+CameraCursor(Rashid)
+MUSC WithUs_Song
+Text(Ch16_Rashid_Recruitment)
+CUSA Rashid
+SetFatigue(Rashid,0)
+NoFade
+ENDA
+
+Thief1_AEvent:
+CamOn
+LOAD1 1 Thief1_A
+ENUN
+CamOff
+NoFade
+ENDA
+
+Thief1_BEvent:
+CamOn
+LOAD1 1 Thief1_B
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_A:
+CamOn
+LOAD1 1 EnemyReinforcements_A
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_B:
+Text(Colossus_1)
+CamOn
+LOAD1 1 EnemyReinforcements_B
+ENUN
+CamOff
+SVAL s1 0x0000C06
+CHAI Catrin
+CHAI Boro_Ch16
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_B1:
+CamOn
+LOAD1 1 EnemyReinforcements_B1
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_B2:
+CamOn
+LOAD1 1 EnemyReinforcements_B2
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_B3:
+CamOn
+LOAD1 1 EnemyReinforcements_B3
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_C:
+Text(Colossus_2)
+CamOn
+LOAD1 1 EnemyReinforcements_C
+ENUN
+CamOff
+NoFade
+ENDA
+
+BeginningScene:
+SetBackground(OvergrownArches)
+MUSC(WindyDayBirdsSoundEffect)
+Text(Ch16_Cleo_Open)
+MUSC(Rovers)
+SetBackground(House2)
+Text(Ch16_Cleo_Elias)
+CHECK_EVENTID 0x8A
+	BNE 7 s0 sC
+	GiveItem(ArgymosCrest,Cleo)
+	ENUT 0x8A
+LABEL 7
+CHECK_ALIVE Varga
+	BEQ 2 s0 sC
+    CHECK_EVENTID 0x88
+    BNE 2 s0 sC
+    SetBackground(OutsideFort)
+    MUSC(Advance)
+    Text(VargaPrf)
+    GiveItem(AquaBrand,Varga)
+    ENUT 0x88
+LABEL 2
+CHECK_ALIVE Emil
+	BEQ 4 s0 sC
+	CHECK_EVENTID 0x89
+	BNE 4 s0 sC
+	SetBackground(OutsideFort)
+	MUSC(Advance)
+	Text(EmilPrf)
+	GiveItem(ChargeLance,Emil)
+	ENUT 0x89
+LABEL 4
+SetBackground(OutsideFort)
+MUSC Advance
+Text(Ch16_Opening_3)
+SetBackground(Sand)
+MUSC TiesOfFriendship
+Text(Ch16_Opening_4)
+MUSC WindyDaySoundEffect
+Text(Ch16_Opening_5)
+SetBackground(Temple)
+MUSC Legacy
+Text(Ch16_Opening_6)
+SetBackground(Temple)
+MUSC Tension
+Text(Ch16_Opening_7)
+CALL $9EE2C4
+LOAD1 1 NPCUnits
+LOAD1 1 NewPlayers
+LOAD1 1 EnemyUnits
+ENUN
+DismountAll
+FlashCursor(2,6,60)
+Text(Ch16_PostPreps_RashidIntro)
+GotoPrepScreen
+ENDA
+
+EndingScene:
+CheckIfUnitEscapedASMC(Mira,39)
+CheckIfUnitEscapedASMC(Iskra,72)
+CheckIfUnitEscapedASMC(Emil,308)
+CheckIfUnitEscapedASMC(Svetomir,56)
+CheckIfUnitEscapedASMC(Alena,79)
+CheckIfUnitEscapedASMC(Varga,43)
+CheckIfUnitEscapedASMC(Delilah,98)
+CheckIfUnitEscapedASMC(Alex,876)
+CheckIfUnitEscapedASMC(Axel,233)
+CheckIfUnitEscapedASMC(Filone,58)
+CheckIfUnitEscapedASMC(Zwieback,901)
+CheckIfUnitEscapedASMC(Fangai,765)
+CheckIfUnitEscapedASMC(Longxia,456)
+CheckIfUnitEscapedASMC(Mish,321)
+CheckIfUnitEscapedASMC(Tobie,935)
+CheckIfUnitEscapedASMC(Awa,103)
+CheckIfUnitEscapedASMC(Faolan,257)
+CheckIfUnitEscapedASMC(Cadenza,974)
+CheckIfUnitEscapedASMC(Leina,406)
+CheckIfUnitEscapedASMC(Cromar,845)
+CheckIfUnitEscapedASMC(Iberis,938)
+CheckIfUnitEscapedASMC(Buldak,674)
+CheckIfUnitEscapedASMC(Nora,624)
+CheckIfUnitEscapedASMC(Hans,838)
+CheckIfUnitEscapedASMC(Jenny,253)
+CheckIfUnitEscapedASMC(Meldan,696)
+RemoveAll
+MUSC Tension
+SetBackground(Temple)
+Text(Ch16_Ending)
+MUSC Rovers
+SetBackground(BuildingInterior)
+Text(Ch16_Council_1)
+MUSC Rovers
+Text(Ch16_Council_2)
+Text(Ch16_Council_3)
+SetBackground(PrisonRoom)
+MUSC(Nighttime)
+Text(Ch16_Ending_LoeweCleoNight_1)
+Text(Ch16_Ending_LoeweCleoNight_2)
+MNC2 Chapter17
+NoFade
+ENDA

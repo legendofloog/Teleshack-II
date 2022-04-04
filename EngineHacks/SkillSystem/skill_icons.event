@@ -983,5 +983,9 @@ ORG SkillIcon(AlacrityID)
 ORG SkillIcon(SharpshooterID)
 #incbin "SkillIcons/BowFaire.dmp"
 
+ORG SkillIcon(DesolateID)
+#incbin "SkillIcons/KillingMachine.dmp"
+
+
 ORG SkillIcons+0x8000
 

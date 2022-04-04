@@ -33,7 +33,7 @@ Avo/Dodge equal to his missing HP.[X]
 ## SD_RecklessCharge
 Reckless Charge: When mounted, moving[N]
 full move makes Emil's attacks brave,[N]
-but his AS and Avo drop to 0.[X]
+but he cannot dodge or double foes.[X]
 
 ## SD_Aftershock
 Aftershock: If Iskra attacks with[N]
@@ -96,3 +96,8 @@ for the rest of the turn.[X]
 Sharpshooter: Maximum range[N]
 of bows is increased by 2, but[N]
 minimum range is set to 3.[X]
+
+## SD_Desolate
+Desolate: Gain +40 crit vs[N]
+enemies who are not adjacent[N]
+to any of their allies.[X]

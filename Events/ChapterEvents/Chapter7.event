@@ -79,7 +79,7 @@ EnemyUnits:
 UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,18] 0x0 0x0 0x0 0x0 [YorsYari] BossHealAI
 UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,3] 0x0 0x0 0x0 0x0 [Miaodao] PursueWithoutHeedAI
 UNIT Buldak Thief 0x0      Level(5,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [IronSword] BossHealAI
-UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [FlameSword] BossHealAI
+UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [IceSword] BossHealAI
 UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [HandAxe] BossHealAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [19,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
@@ -93,7 +93,7 @@ UNIT Militia Mage Wellworth Level(7,Enemy,True) [15,14] 0x0 0x0 0x0 0x0 [Fire] A
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [18,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Militia Hunter Wellworth Level(7,Enemy,True) [1,15] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT Militia Hunter Wellworth Level(7,Enemy,True) [1,15] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT Militia Mage Wellworth Level(7,Enemy,True) [11,16] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [2,15] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -121,7 +121,7 @@ UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [Iro
 UNIT
 
 NewRecruit:
-UNIT Iberis MageArmor 0x0      Level(6,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT Iberis MageArmor 0x0      Level(7,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
 UNIT
 
 GreenUnits:
@@ -143,6 +143,7 @@ Traps2:
 
 BeginningScene:
 COUNTER_SET 0 0
+MountAll
 LOAD1 1 NewRecruit
 LOAD1 1 EnemyUnits
 LOAD1 1 GreenUnits
@@ -191,11 +192,9 @@ STAL 60
 REMOVE_CURSORS
 Text(LoeweCleoIberisText)
 CHECK_ALIVE Axel
-SVAL s1 0
-BNE 1 s1 sC
+BEQ 1 s0 sC
 CHECK_ALIVE Alex
-SVAL s1 0
-BNE 1 s1 sC
+BEQ 1 s0 sC
 Text(AxelAlexIfAliveText)
 LABEL 1
 CenterTextbox(InfoText)
@@ -248,7 +247,10 @@ ENDA
 
 RecruitCh7:
 Text(RecruitCh7Text)
-CUSA 24
+SVAL s1 0x00000000
+CHAI Buldak
+CUSA Buldak
+SetFatigue(Buldak,0)
 NoFade
 ENDA
 

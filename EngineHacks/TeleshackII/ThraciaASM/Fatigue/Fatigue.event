@@ -22,7 +22,7 @@
 #include "FatigueItems.lyn.event"
 
 //Contains ASMC for setting fatigue
-#include "FatigueASMC.lyn.event"
+//#include "FatigueASMC.lyn.event"
 
 //prep screen hooks
 PUSH
@@ -52,9 +52,6 @@ BYTE 0x3B
 ALIGN 4
 FatigueSSTextID:
 SHORT SS_FatigueText
-
-#define ClearFatigue(charID) "SVAL 1 charID; SVAL 2 0; ASMC SetFatigueASMC"
-#define SetFatigue(charID,ftgValue) "SVAL 1 charID; SVAL 2 ftgValue; ASMC SetFatigueASMC"
 
 ALIGN 4
 #endif // FE8_FATIGUE

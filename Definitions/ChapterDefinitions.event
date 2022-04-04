@@ -31,6 +31,8 @@
 #define Ch5xInterlude 0x1C
 #define Ch5xBoatScenes 0x1D
 #define Ch5xGechrysos 0x1E
+#define Ch12xInterlude 0x1F
+#define Chapter15Cutscene 0x20
 
 // MapChangesID
 
@@ -65,6 +67,9 @@
 #define Ch5xInterludeMapChanges 0x97
 #define Ch5xBoatScenesMapChanges 0x9E
 #define Ch5xGechrysosMapChanges 0x9D
+#define Ch12xInterludeMapChanges 0xA2
+#define Chapter15CutsceneMapChanges 0xA7
+
 
 // MapID
 
@@ -99,6 +104,8 @@
 #define Ch5xInterludeMap 0x96
 #define Ch5xBoatScenesMap 0x9F
 #define Ch5xGechrysosMap 0xA0
+#define Ch12xInterludeMap 0xA1
+#define Chapter15CutsceneMap 0xA8
 
 // EventsID
 
@@ -131,18 +138,21 @@
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
 #define Ch5xInterludeEvents 0x81
+#define Ch12xInterludeEvents 0xA3
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88
 #define FlasubanVillageObjectID 0x8C
 #define FF5CaveObjectID 0x99
 #define ThraciaFieldsObjectID 0x76
+#define DesertBastionObjectID 0xA4
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
 #define FlasubanVillageNormalPaletteID 0x8F
 #define FF5CavePaletteID 0x9A
 #define ThraciaFieldsAutumnPaletteID 0x77
+#define DesertBastionPaletteID 0xA5
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -150,6 +160,7 @@
 #define FlasubanVillageMapchipConfig2ID 0x80
 #define FF5CaveConfigID 0x9B
 #define ThraciaFieldsMapchipConfigID 0x7C
+#define DesertBastionMapchipConfigID 0xA6
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B

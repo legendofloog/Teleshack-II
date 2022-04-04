@@ -1,8 +1,6 @@
 //All of these expect a char ID in memory slot 1. You can use 0xFFFF to use the active unit's ID.
 //Check item looks for item ID in memory slot 2.
 
-#include "GetRescuerRescuedCheck/GetRescueRescuedUnit.lyn.event"
-
 ALIGN 4
 //check level
 MESSAGE check_level at currentOffset
@@ -120,5 +118,3 @@ CheckMagicASMC:
 #define CheckStatusEffect(Character) "SVAL 0x1 Character; ASMC CheckStatusEffectASMC|1"
 #define CheckStatusDuration(Character) "SVAL 0x1 Character; ASMC CheckStatusDurationASMC|1"
 #define CheckMagic(Character) "SVAL 0x1 Character; ASMC CheckMagicASMC|1"
-#define CheckIfRescuedByRescuer(rescuedUnit,rescuerUnit) "SVAL s1 rescuedUnit; SVAL s2 rescuerUnit; ASMC CheckIfUnit1RescuedByUnit2"
-#define CheckIfRescuedByActive(rescuedUnit) "SVAL s1 rescuedUnit; SVAL s2 0xFFFF; ASMC CheckIfUnit1RescuedByUnit2"

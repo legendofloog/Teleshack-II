@@ -1,13 +1,52 @@
-There isn't a whole lot to say here unless you plan on adding a skill or want to add some bit of ASM. 
-
 The main things of note that you may need to edit:
 
-- Move Stars: You'll edit the table in MoveStars/Installer.event. Just enter in the macro your unit's character definition and what number of move stars you want them to have (only goes up to 5). 
+Unit stuff
 
-- FE8 Battle Anims By Character: If you have a unit that doesn't have a M/F class, such as the majority of cav classes, you may want to give them the right animations here. The readme details how to do this. 
+- Move Stars: You'll edit the table in TeleshackII/ThraciaASM/MoveStars/Installer.event.
+Just enter in the macro your unit's character definition and what number of move stars
+you want them to have (5 is the max). 5% per star change to get another action.
 
-- PortraitHeight: Here if your unit's placement seems odd in the stat screen. 
+- Leadership Stars: In EngineHacks/ExternalHacks/LeadershipStars/LeadershipStars.event.
+Just add the units in question to the LeadershipTable. Each star gives +3/+3 Hit/Avoid to
+all of that unit's allies.
 
-- ReworkForPrepScreenRightTopImage: Add to the table so your chapter displays the correct number in preps. The example should show how to do it.
+- Extra Growths: Con/Move growth rates, located in TeleshackII/ThraciaASM/ExtraGrowths.event.
+Follow the syntax of the examples shown there.
 
-- ToggleDeploymentSwapping: Here primarily as a QoL feature. You can add your own if you want to lock a unit to a chapter but don't want them to be stuck in a specific position (you can also put them in a locked one if you want).
+- PCC: Pursuit Critical Coefficient, aka the multiplier to a follow-up attack's crit. 
+In TeleshackII/ThraciaASM/PCC/Installer.event. By default, it's 1, but SetUnitPCC can be used to change that.
+
+- Supports: Benefits given when two units are within X range (you can change it but I recommend 3 or more).
+Located in TeleshackII/ThraciaASM/Support/Installer.even. A unit's support list indicates what benefits
+they receive when a character with the ID in their list is within X range. Separating it like this allows
+for one-way supports or for differing bonuses for each character.
+Use SetUnitSupportList(charID,charSupportList) to set the list to the given charID.
+
+- FE8 Battle Anims By Character: If you have a unit that doesn't have a F variant,
+such as the majority of cav classes, you may want to give them the right animations
+here. The readme details how to do this. Located in TeleshackII/FE8-Battle_Anims_By_Character
+
+Item stuff
+
+- Equippables: Equip items that give something (skills, stats, etc). 
+Located in TeleshackII/Equip/Equipment.event. If you're doing anything complicated,
+then you'll likely need specific help here, but basic equipment can be added here to
+the EquipmentList. Adding it to the DefenseEquipmentList and OffenseEquipmentList indicate that item
+also loses durability for every attack taken or attack made (still needs to be in EquipmentList).
+
+Chapter stuff
+
+- DismountMount: Located in TeleshackII/ThraciaASM/Dismount/Installer.event.
+If you're adding a mounted unit, then you should add them to the MountAll and
+DismountAll macros, following the way they're done there (; between MountUnit(charID), none at the end).
+If your map has sections of the map that aren't intended to be mount/dismountable, then add those to
+the UnacceptedMountDismountLocationEntryTable. Specify your chapterID, the top left coords of the area,
+and the top right coords of the area. 
+
+- ReworkForPrepScreenRightTopImage: Add to the table so your chapter displays
+the correct number in preps. The example should show how to do it.
+
+- ToggleDeploymentSwapping: Here primarily as a QoL feature.
+You can add your own if you want to lock a unit to a chapter
+but don't want them to be stuck in a specific position 
+(you can also put them in a locked one if you want).

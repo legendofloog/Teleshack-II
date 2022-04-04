@@ -17,6 +17,11 @@ bool IsUsingThunderWeapon(BattleUnit battleUnit){
 
 void AftershockPostBattle(){
 
+	// ignore non combat actions
+	if (gActionData.unitActionType != UNIT_ACTION_COMBAT){
+		return;
+	}
+
 	Unit* target = GetUnit(gBattleTarget.unit.index);
 
 	// ignore dead people
@@ -51,12 +56,12 @@ void New_BattleInitTargetCanCounter(){
 		return;
 	}
 
-	// attacker weapon is uncounterable
-    if (gBattleTarget.weaponAttributes & IA_UNCOUNTERABLE){
-        gBattleTarget.weapon = item;
-        gBattleTarget.canCounter = false;
-        return;
-    }
+	// target weapon is uncounterable
+	if (gBattleTarget.weaponAttributes & IA_UNCOUNTERABLE){
+		gBattleTarget.weapon = item;
+		gBattleTarget.canCounter = false;
+		return;
+	}
 
 	// attacker is berserked and both units are blue
 	if ((gBattleActor.unit.statusIndex == UNIT_STATUS_BERSERK) && (gBattleActor.unit.index & FACTION_BLUE) && (gBattleTarget.unit.index & FACTION_BLUE)){

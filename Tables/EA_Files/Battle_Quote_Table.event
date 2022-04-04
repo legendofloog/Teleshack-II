@@ -21,6 +21,13 @@ UnspecifiedBattleConvo(Francis,Chapter8,12,FrancisBossQ)
 UnspecifiedBattleConvo(Wrathgar,Chapter9,9,WrathgarBossQ)
 UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
 UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
+SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
+UnspecifiedBattleConvo(Veniamin,Chapter13,1,VeniaminBossQ)
+UnspecifiedBattleConvo(Corundum,Chapter13,11,CorundumBossQ)
+UnspecifiedBattleConvo(Pascal,Chapter13,12,PascalBossQ)
+UnspecifiedBattleConvo(Tsoureki,Chapter14,0x15,TsourekiBossQ)
+UnspecifiedBattleConvo(Hamdi,Chapter16,0x16,HamdiBossQ)
+UnspecifiedBattleConvo(Colossus,Chapter16,0x16,ColossusBossQ)
 
 SpecifiedBattleConvo(Cidor,Cleo,Chapter10,0x16,Ch10CidorCleoBossQuote)
 SpecifiedBattleConvo(Cidor,Loewe,Chapter10,0x17,Ch10CidorLoeweBossQuote)
@@ -36,5 +43,10 @@ SpecifiedBattleConvo(Mifan,Hornet,Chapter10,0x27,Ch10MifanHornetBossQuote)
 SpecifiedBattleConvo(Mifan,Radnitz,Chapter10,0x28,Ch10MifanRadnitzBossQuote)
 UnspecifiedBattleConvo(Mifan,Chapter10,0x23,Ch10MifanBossQuote)
 
+//Chapter15
+SpecifiedBattleConvo(Kassandra,Cleo,Chapter15Cutscene,0x0,Ch15KassandraVSCleo)
+SpecifiedBattleConvo(Elias,Kassandra,Chapter15Cutscene,0x0,Ch15EndingScene3EliasKassandraBattleQuote)
+SpecifiedBattleConvo(Loewe,Catrin,Chapter15Cutscene,20,Ch15CatrinLoeweRound1)
+SpecifiedBattleConvo(Loewe,Catrin,Chapter15Cutscene,21,Ch15CatrinLoeweRound2)
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

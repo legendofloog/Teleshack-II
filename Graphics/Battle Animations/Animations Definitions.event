@@ -205,10 +205,10 @@
 #define BrotherMagicAnim 0xAD
 #define BrotherStaffAnim 0xAE
 
-#define MageKnightDismountedMagicAnim 0xB1
-#define MageKnightDismountedSwordAnim 0xB2
-#define MageKnightFDismountedMagicAnim 0xB3
-#define MageKnightFDismountedSwordAnim 0xB4
+#define MageKnightFDismountedMagicAnim 0xB1
+#define MageKnightFDismountedSwordAnim 0xB2
+#define MageKnightDismountedMagicAnim 0xB3
+#define MageKnightDismountedSwordAnim 0xB4
 
 #define ForrestKnightFUnarmedAnim 0xCD
 #define ForrestKnightFSwordAnim 0xF2
@@ -295,7 +295,7 @@ ALIGN 4
 LoeweDragonlordAnims:
 AxeAnim(DracoknightAxeAnim)
 HandAxeAnim(DracoknightHandAxeAnim)
-BowAnim(LoeweScaleshotBowAnim)
+BowAnim(LoeweDragonlordBowAnim)
 SwordAnim(LoeweDragonlordSwordAnim)
 UnarmedAnim(DracoknightUnarmedAnim)
 EndAnim
@@ -303,8 +303,8 @@ EndAnim
 ALIGN 4
 ClaudiaSeraphknightAnims:
 SpearAnim(FalcoknightLanceAnim)
-AxeAnim(ClaudiaSkyseekerAxeAnim)
-HandAxeAnim(ClaudiaSkyseekerHandAxeAnim)
+AxeAnim(ClaudiaSeraphknightAxeAnim)
+HandAxeAnim(ClaudiaSeraphknightHandAxeAnim)
 StaffAnim(ClaudiaSeraphknightStaffAnim)
 UnarmedAnim(FalcoknightUnarmedAnim)
 EndAnim

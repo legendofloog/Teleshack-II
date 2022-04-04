@@ -1,7 +1,0 @@
-PUSH
-ORG 0x03E828
-jumpToHack_r2(EnemyEscapeHook)
-POP 
-
-EnemyEscapeHook:
-#incbin "EnemyEscapeHook.dmp"

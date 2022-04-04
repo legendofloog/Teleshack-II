@@ -1,0 +1,8 @@
+#include "BattleExp.lyn.event"
+
+ALIGN 4
+PrepromoteTable:
+BYTE Mira
+BYTE Cromar
+BYTE Meldan
+BYTE 0xFF

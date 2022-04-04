@@ -58,12 +58,6 @@ escape, you can copy the EscapeEventCheck and use it in your events, only changi
 positions. For reference, what this event does is end the chapter once Loewe and Cleo have
 escaped. After that, put this at the start of your EndingScene:
 
-EscapeCapturedCheck(Mira, 0x8B)
-EscapeCapturedCheck(Iskra, 0x8C)
-EscapeCapturedCheck(Emil, 0x8D)
-EscapeCapturedCheck(Svetomir, 0x8E)
-EscapeCapturedCheck(Alena, 0x8F)
-
 and add onto it with whatever other non-lord units are added. This makes any units that haven't
 escaped be "captured" (aka REMU'd), and a global flag is set for future reference.
 

@@ -76,5 +76,30 @@ Come on everyone![A][X]
 
 ## MeldanEscapeQuoteText
 [MidRight][LoadMeldan]
-...Oh? We're leaving?[N]
+[Beat]Oh? We're leaving?[N]
 Well, ok then.[A][X]
+
+## NahizaEscapeQuoteText
+[MidRight][LoadNahiza]
+Wahaha! What a rush![AN]
+Just gotta finish with[N]
+dragging this here ballista,[AN]
+and I'll be home free![AN]
+[Beat]Whaddya mean,[N]
+[OpenQuote]just leave it behind"?[A][X]
+
+## AugurEscapeQuoteText
+[MidRight][LoadAugur]
+I foresee a path to safety.[N]
+Let us make it a reality[Beat][A][X]
+
+## RashidEscapeQuoteText
+[MidRight][LoadRashid]
+An opening[Beat][N]
+Fly, my friends. We must go![A][X]
+
+
+## IlseEscapeQuoteText
+[MidRight][LoadIlse]
+What? We're running away?![N]
+I could've taken them all on[Beat][A][X]
