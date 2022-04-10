@@ -177,3 +177,6 @@ HamdiHalberdier:
 ColossusWarrior:
 	#incbin "./_palettes/ColossusWarrior.lzpal" 
 
+LoeweCopyScaleshotUnmounted:
+	#incbin "./_palettes/LoeweCopyScaleshotUnmounted.lzpal" 
+

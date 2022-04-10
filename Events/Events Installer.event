@@ -42,4 +42,14 @@ GameOverStart:
 ASMC 0x800D391
 NoFade
 ENDB
+
+ALIGN 4
+PrepShop1:
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux
+BYTE 0x0 0x0
+
+ALIGN 4
+PrepShop2:
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux SlimArch
+BYTE 0x0 0x0
 ALIGN 4

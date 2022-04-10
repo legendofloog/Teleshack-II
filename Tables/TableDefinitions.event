@@ -3,15 +3,11 @@
 
 #define TABLE_DEFINITIONS
 
+
 #ifndef CharacterTable
     #define CharacterTable 0x803D30
 #endif
-#ifndef ClassTable
-  #define ClassTable 0x807110
-#endif
-#ifndef ItemTable
-  #define ItemTable 0x809B10
-#endif
+#define ItemTable NewItemTable
 #ifndef DebuffTable
   #define DebuffTable 0x203f100
 #endif

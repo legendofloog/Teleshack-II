@@ -235,3 +235,7 @@
 // ColossusWarrior
 	setPalette(58,ColossusWarrior)
 	setCBSP(58,Colossus, 1, Warrior)
+
+// LoeweCopyScaleshotUnmounted
+	setPalette(59,LoeweCopyScaleshotUnmounted)
+	setCBSP(59,LoeweCopy, 1, Dragonlord_Dismounted)

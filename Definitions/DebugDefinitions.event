@@ -10,7 +10,7 @@
 #define _test_
 #endif
 
-//#define _test_ch15_
+#define _test_ch15_
 
 #ifdef _test_ch15_
 #define _test_

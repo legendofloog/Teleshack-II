@@ -154,10 +154,8 @@ UNIT Chapter3Reinforcements Archer  Emory_Ch3 Level(4,Enemy,True) [0,11] 0x0 0x0
 UNIT
 
 EnemyReinforcementsEvent_A:
-CamOn
-LOAD1 1 EnemyReinforcements_A
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_A)
+NoFade
 ENDA
 
 EnemyReinforcements_B:
@@ -166,11 +164,9 @@ UNIT Chapter3Reinforcements Mage  Emory_Ch3 Level(3,Enemy,True) [7,0] 0x0 0x0 0x
 UNIT
 
 EnemyReinforcementsEvent_B:
-CamOn
-LOAD1 1 EnemyReinforcements_B
-ENUN
+SpawnReinforcements(EnemyReinforcements_B)
 Text(ReinforcementText)
-CamOff
+NoFade
 ENDA
 
 EnemyReinforcements_C:
@@ -182,10 +178,8 @@ UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 
 UNIT
 
 EnemyReinforcementsEvent_C:
-CamOn
-LOAD1 1 EnemyReinforcements_C
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_C)
+NoFade
 ENDA
 
 EnemyReinforcements_D:
@@ -194,10 +188,8 @@ UNIT Chapter3Reinforcements Mage  Emory_Ch3 Level(3,Enemy,True) [0,10] 0x0 0x0 0
 UNIT
 
 EnemyReinforcementsEvent_D:
-CamOn
-LOAD1 1 EnemyReinforcements_D
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_D)
+NoFade
 ENDA
 
 EnemyReinforcements_E:
@@ -209,10 +201,8 @@ UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(10,Enemy,True) [15,20] 0
 UNIT
 
 EnemyReinforcementsEvent_E:
-CamOn
-LOAD1 1 EnemyReinforcements_E
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_E)
+NoFade
 ENDA
 
 AlexAxelDoor:

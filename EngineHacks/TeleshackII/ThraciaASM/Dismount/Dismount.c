@@ -29,6 +29,9 @@ int DismountUsability(){
 	if (CheckIfDismountLocationLegal(unit) == false){
 		return USABILITY_FALSE;
 	}
+	if (GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] == 0xFF){
+		return USABILITY_FALSE;
+	}
 	return USABILITY_TRUE;
 }
 
@@ -41,6 +44,9 @@ int MountUsability(){
 		return USABILITY_FALSE;
 	}
 	if (CheckIfDismountLocationLegal(unit) == false){
+		return USABILITY_FALSE;
+	}
+	if (GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] == 0xFF){
 		return USABILITY_FALSE;
 	}
 	return USABILITY_TRUE;

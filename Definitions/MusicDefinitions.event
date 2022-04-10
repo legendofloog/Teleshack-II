@@ -27,10 +27,14 @@
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
 
+#define CallOfTheBellsID 0x21
+#define FeelingWoozyID 0x22
+
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
 #define FightingOfTheSpirit 0xC2
 #define CombatResistanceID 0xC3
+#define FirstCampaignID 0xC4
 
 // Vanilla
 #define TiesOfFriendship 0x7

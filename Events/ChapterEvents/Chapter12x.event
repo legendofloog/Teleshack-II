@@ -255,7 +255,7 @@ UNIT
 
 BeginningScene:
 COUNTER_SET 0 0
-RemoveAll
+
 DismountAll
 LOAD1 1 GreenUnits
 ENUN

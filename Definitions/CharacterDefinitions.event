@@ -146,6 +146,7 @@
 #define Coralia 0xA5
 #define Catrin 0xA6
 #define Kassandra 0xA7
+#define LoeweCopy 0xAA
 
 //Chapter 16 Stuff
 #define Phantom 0x8A

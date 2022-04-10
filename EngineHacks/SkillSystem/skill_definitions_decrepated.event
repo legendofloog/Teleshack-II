@@ -633,7 +633,7 @@
 
 //Astra: 5 attacks at half damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-//#define AstraID 15
+//#define AstraID 255
 
 //Bane: Leave the opponent at 1 HP. (Skill/2 % activation)
 //Author Unknown (Initial Commit)

@@ -3,6 +3,7 @@
 
 #define rPassiveStatBoosts(aStatOffset) "rForEachUnitItem; rIfItemHasPassiveStatBoosts; rAddItemPassiveStatBoosts(aStatOffset)"
 #define rPassiveStatBoostsNonStacking(aStatOffset) "rForEachUnitItemUntil; rIfItemHasPassiveStatBoosts; rAddItemPassiveStatBoosts(aStatOffset)"
+#define rEquipmentBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(GetEquipmentStatBonus^1)"
 
 prHalveIfRescuing:
 	rIfUnitHasState(US_RESCUING)

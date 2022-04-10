@@ -54,7 +54,7 @@ CaptainsHelmStatBoosts:
 StatBonus(0,1,1,1,1,1,1,0,0,0)
 
 ALIGN 4
-GrowthScrollBonuses:
+GrowthScrollBonusesTable:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
 GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr
 GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra

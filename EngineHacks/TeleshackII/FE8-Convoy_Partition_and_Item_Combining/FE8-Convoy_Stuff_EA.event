@@ -6,9 +6,15 @@
 
 //NOTE: This hack does NOT expand the amount of items saved! It changes the items you can have, yes, but you're responsible for using Modular Save or some other hack to actually save more stuff.
 
+// default
 #define ConvoyTotalSize 100
-//#define ConvoyTotalSize 150
 #define gConvoyItemArray 0x203A81C
+
+
+/* 200 items
+#define ConvoyTotalSize 200
+#define gConvoyItemArray 0x203B200
+*/
 #define _COMBINE_ITEMS_HACK_ // comment this out if you don't want item combining
 //#define _CONVOY_PARTITION_SETUP_2_ //uncomment this if you're using setup2, detailed in the Readme
 
@@ -17,8 +23,10 @@
 
 
 ConvoyPartitionTable:
-//ConvoyPartition(0, 150, 0)
+// vanilla
 ConvoyPartition(0, 100, 0)
+// 200 items
+//ConvoyPartition(0, 200, 0)
 WORD 0 //terminator
 
 

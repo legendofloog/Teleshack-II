@@ -5,8 +5,7 @@
 .equ SkillTester, Item_Table+4
 .equ BlossomID, SkillTester+4
 .equ AptitudeID, BlossomID+4
-.equ GrowthScrollID, AptitudeID+4
-.equ GrowthScrollBonuses, GrowthScrollID+4
+.equ GetEquipmentStatBonus, AptitudeID+4
 @r0=battle struct or char data ptr, r1 = growth so far (from char data), r2=index in stat booster pointer of growth
 
 push	{r4-r7,r14}
@@ -44,39 +43,12 @@ ScrollCheck:
 mov		r3,#0
 mov		r0,#0x4
 and		r7,r0			@bit is set if scrolls stack
-
 ScrollLoop:
 mov		r0,r4
 add		r0,#0x1E
 ldrh	r0,[r0,r3]
-
-@ loop exit
 cmp		r0,#0
 beq		BlossomCheck
-
-@ check for growth scroll
-push {r4}
-push {r0}
-lsl		r0,#0x18
-lsr		r0,#0x18
-mov r1, r0
-pop {r0}
-ldr r4, GrowthScrollID
-cmp r1, r4
-bne RegularScrollCheck
-
-@ is crusader scroll
-lsr r0, #0x8 @ r0 - durability
-mov r1, #0x14 @ length of stat boost entry
-mul r0, r1
-ldr r1, GrowthScrollBonuses
-add r0, r1
-ldsb r0, [r0, r6]
-add r5, r0
-@b EndOfScrollCheck
-
-
-RegularScrollCheck:
 lsl		r0,#0x18
 lsr		r0,#0x18
 mov		r1,#0x24
@@ -93,13 +65,9 @@ cmp		r0,#0x0
 beq		NextItem
 ldsb	r0,[r0,r6]
 add		r5,r0
-
-EndOfScrollCheck:
 cmp		r7,#0x0
 beq		BlossomCheck
-
 NextItem:
-pop {r4}
 add		r3,#0x2
 cmp		r3,#0x8
 ble		ScrollLoop
@@ -124,10 +92,20 @@ ldr		r2,SkillTester
 mov		r14,r2
 .short	0xF800
 cmp		r0,#1
-bne		GoBack
+bne		EquipmentEffect
 
 AptitudeEffect:
 add		r5,#20 @growth +20%
+
+EquipmentEffect:
+mov r0, r4
+mov r1, r6
+ldr r2, GetEquipmentStatBonus
+mov		r14,r2
+.short	0xF800
+lsl r0,#0x18
+asr r0,#0x18
+add r5, r0
 
 GoBack:
 mov		r1,r8

@@ -95,7 +95,7 @@ SupportTerm
 
 ALIGN 4
 GimmSupportList:
-SupportEntry(Tobie, 3, 3, 3, 0, 0, 10, 0)
+SupportEntry(Tobie, 3, 3, 0, 0, 0, 20, 0)
 SupportTerm
 
 ALIGN 4
@@ -118,10 +118,6 @@ PelecayeSupportList:
 SupportEntry(Milo, 3, 1, 1, 10, 0, 0, 0)
 SupportTerm
 
-ALIGN 4
-CoraliaSupportList:
-SupportEntry(Loewe,3,2,0,0,10,0,0)
-SupportTerm
 
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
@@ -141,4 +137,3 @@ SetUnitSupportList(Valse,ValseSupportList)
 SetUnitSupportList(Hornet,HornetSupportList)
 SetUnitSupportList(Milo,MiloSupportList)
 SetUnitSupportList(Pelecaye,PelecayeSupportList)
-SetUnitSupportList(Coralia,CoraliaSupportList)

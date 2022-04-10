@@ -4,6 +4,7 @@
 #include "WTEditor.event"
 #include "BossMusicTable.event"
 #include "InterludeUnitsTable.event"
+#include "SoundRoomInstaller.event"
 
 ALIGN 4
 BattleQuoteTable:

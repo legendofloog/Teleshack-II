@@ -42,8 +42,6 @@ but if you do need to, ask me about it.
 
 EA_Files has a few more tables to edit, but they're in .event files instead of csvs.
 Currently, this is the location of stat boosts for items (in WeaponStatBoosts.event),
-the battle and death quote tables, and the boss music table.
-If you're looking for Movement Stars or Move/Con growths,
-the macro for setting table entries there is in EngineHacks/TeleshackII/ThraciaASM.
-The macros there should explain well enough how to use those tables. 
+the Battle and Death Quote Tables, and the Boss Music table.
+Also, the Sound Room Table is located in SoundRoomInstaller.event. 
 

@@ -1,4 +1,5 @@
 #define EraseBackground "CALL $9EE2C4"
+#define ShowMap "CALL 0x8592140"
 #define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
 #define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 30"
 #define MaxTurns(TurnNum) "256 - TurnNum"

@@ -118,9 +118,11 @@ ENDA
 
 LocationBasedEvents:
 Seize(21, 3)
+/*
 Village(0xB,VillageEventNorth,14,3)
 Village(0xC,VillageEventSouth,11,17)
 Village(0xD,VillageEventEast,22,15)
+*/
 Village(0xE,VillageEventIsland,16,0)
 END_MAIN
 
