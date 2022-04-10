@@ -59,7 +59,7 @@ SongTable(skytowerbeta,song01,MapMusicGroup)
 SongTable(oppression,song0153,MapMusicGroup)
 #include "MusicEvents/FE5winning.event"
 SongTable(fe5victory,song05,MapMusicGroup)
-#include "MusicEvents/war_s heartbeat.event"
+#include "MusicEvents/away with you.event"
 SongTable(awaywithyou,song13,BattleMusicGroup)
 #include "MusicEvents/ncastlebridge.event"
 SongTable(ncastlebridge,song34,MapMusicGroup)
@@ -77,3 +77,7 @@ SongTable(CallOfTheBellsID,callofthebells,BattleMusicGroup)
 SongTable(FeelingWoozyID,feelingwoozy,BattleMusicGroup)
 #include "MusicEvents/TS_FirstCampaign(devvy).event"
 SongTable(FirstCampaignID,FirstCampaign,BattleMusicGroup)
+#include "MusicEvents/Final_Fantasy_9_-_Festival_of_the_Hunt_RandomWizard_Mr-Wright.event"
+SongTable(FestivalHuntID,song09,MapMusicGroup)
+#include "MusicEvents/war_s heartbeat.event"
+SongTable(War_sHeartbeat,song13,BattleMusicGroup)

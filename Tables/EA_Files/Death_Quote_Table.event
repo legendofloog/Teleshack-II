@@ -30,6 +30,10 @@ DeathQuote(Tsoureki, Chapter14, 0, TsourekiDeathQuote)
 DeathQuote(Coralia,Chapter15,10,0x0)
 DeathQuote(Hamdi, Chapter16, 0, HamdiDeathQuote)
 DeathQuote(Colossus, Chapter16, 0, ColossusDeathQuote)
+DeathQuote(Alto,Chapter17,9,AltoDeathQuoteText)
+DeathQuote(Mureib,Chapter17,2,MureibDeathQuoteText)
+DeathQuote(Mureib2,Chapter17,0,Mureib2DeathQuoteText)
+
 
 //player units
 // ch1
@@ -110,5 +114,9 @@ DeathQuote(Ilse,AllChapters,0x0,IlseDeathQuoteText,IlseGiveAll)
 
 // ch 16
 DeathQuote(Rashid,AllChapters,0x0,RashidDeathQuote,RashidGiveAll)
+
+// ch 17
+DeathQuote(Nikolas,AllChapters,0x0,NikolasDeathQuoteText,NikolasGiveAll)
+DeathQuote(KwameReal,Chapter17,0x65,KwameRealDeathQuoteText)
 
 DeathQuote(0xFFFF,0,0,0)

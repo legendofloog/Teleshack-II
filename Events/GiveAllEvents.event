@@ -262,3 +262,9 @@ IlseGiveAll:
 SendAll(Ilse)
 NoFade
 ENDA
+
+ALIGN 4
+NikolasGiveAll:
+SendAll(Nikolas)
+NoFade
+ENDA
