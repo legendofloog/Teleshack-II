@@ -26,7 +26,6 @@
 #define oppression 0x1D
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
-#define FestivalHuntID 0xC5
 
 #define CallOfTheBellsID 0x21
 #define FeelingWoozyID 0x22
@@ -36,6 +35,8 @@
 #define FightingOfTheSpirit 0xC2
 #define CombatResistanceID 0xC3
 #define FirstCampaignID 0xC4
+#define FestivalHuntID 0xC5
+#define War_sHeartbeat 0xC6
 
 // Vanilla
 #define TiesOfFriendship 0x7

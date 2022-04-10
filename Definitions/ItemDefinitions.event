@@ -146,9 +146,8 @@
 #define HeavySpear 0x95
 
 #define Dragonstone 0xAA
+#define Unmoor 0xAB
 
-#define SunBracelet 0x99
-#define SolarBracelet 0x99
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
 #define GoldGem 0xBB
@@ -191,7 +190,7 @@
 #define CaptainsHelm 0xDD
 #define FealtyBow 0xDE
 #define HeroRing 0xDF
-#define Unmoor 0xAB
+
 
 #define Stinger 0x8d
 #define BpatItem 0x8e
