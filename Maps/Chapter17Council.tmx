@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="16" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="Desert Bastion.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="10">
+  <properties>
+   <property name="ChapterID" value="Chapter17Council"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Chapter17CouncilMapChanges"/>
+   <property name="MapID" value="Chapter17CouncilMap"/>
+   <property name="ObjectType" value="DesertBastionObjectID"/>
+   <property name="PaletteID" value="DesertBastionPaletteID"/>
+   <property name="TileConfig" value="DesertBastionMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+769,769,769,769,769,770,770,769,769,769,769,770,769,769,770,769,
+770,738,771,771,771,771,771,772,771,772,772,772,772,737,769,769,
+770,834,971,908,908,908,908,908,908,908,908,908,908,833,769,769,
+769,834,940,621,555,620,1004,1003,1004,1003,1003,1003,621,833,769,769,
+770,834,940,553,524,549,550,550,550,551,907,1004,525,833,770,769,
+769,834,940,589,1003,481,482,482,482,483,940,1003,1003,833,769,769,
+769,834,940,1004,1004,1000,908,908,908,1000,972,1003,621,833,770,769,
+769,834,940,557,555,620,1004,1003,621,556,1003,557,444,833,769,769,
+769,769,770,770,770,802,939,1004,589,801,770,770,770,770,770,769,
+769,770,769,770,769,834,939,621,556,833,770,770,770,769,770,770
+</data>
+ </layer>
+</map>

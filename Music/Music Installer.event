@@ -73,3 +73,5 @@ SongTable(KnightsPride,songC1,MapMusicGroup)
 SongTable(FightingOfTheSpirit,songC2,MapMusicGroup)
 #include "MusicEvents/TS_CombatResistance(devvy).event"
 SongTable(CombatResistanceID,CombatResistance,MapMusicGroup)
+#include "MusicEvents/Final_Fantasy_9_-_Festival_of_the_Hunt_RandomWizard_Mr-Wright.event"
+SongTable(FestivalHuntID,song09,MapMusicGroup)

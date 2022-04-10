@@ -45,6 +45,9 @@
 #define IlseMug 0xD5
 #define LoewePunishedMug 0xD6
 #define RashidMug 0xD7
+#define NikolasMug 0xDB
+#define AltoMug 0xDC
+#define MysteryMug 0xDD
 
 
 // NPCs
@@ -829,3 +832,19 @@ ColossusMugData:
 #incbin "Dmp/Colossus_palette.dmp"
 #incbin "Dmp/Colossus_minimug.dmp"
 setMugEntry(ColossusMug, ColossusMugData, 3, 5, 3, 6)
+
+ALIGN 16
+NikolasMugData:
+#incbin "Dmp/nikolas_mug.dmp"
+#incbin "Dmp/nikolas_frames.dmp"
+#incbin "Dmp/nikolas_palette.dmp"
+#incbin "Dmp/nikolas_minimug.dmp"
+setMugEntry(NikolasMug, NikolasMugData, 3, 6, 3, 4)
+
+ALIGN 16
+AltoMugData:
+#incbin "Dmp/Alto(XVI)_mug.dmp"
+#incbin "Dmp/Alto(XVI)_frames.dmp"
+#incbin "Dmp/Alto(XVI)_palette.dmp"
+#incbin "Dmp/Alto(XVI)_minimug.dmp"
+setMugEntry(AltoMug, AltoMugData, 3, 5, 3, 3)

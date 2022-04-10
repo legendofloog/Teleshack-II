@@ -26,6 +26,7 @@
 #define oppression 0x1D
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
+#define FestivalHuntID 0xC5
 
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1

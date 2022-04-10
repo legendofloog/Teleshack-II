@@ -44,6 +44,7 @@
 #define Augur 0x2C
 #define Ilse 0x2D
 #define Rashid 0x2E
+#define Nikolas 0x2F
 
 
 #define LyonSummon 0x3B
@@ -152,6 +153,13 @@
 #define Hamdi 0x4C
 #define Colossus 0x4D
 #define Boro_Ch16 0x4E
+
+//Chapter 17 Stuff
+#define Alto 0xA8
+#define Mureib 0xA9
+#define KwameReal 0xAA
+#define Mureib2 0xAB
+
 
 #define Breguet 0x46
 #define Bazba 0x48
