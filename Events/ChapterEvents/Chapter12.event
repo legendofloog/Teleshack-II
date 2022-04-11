@@ -188,29 +188,28 @@ BeginningScene:
   
 
 
-
-SympathizerDoor:
-TILECHANGE 1
-NoFade
-ENDA
-
-SympathizerFreed:
-Text(Ch12PlaceholderText)
-GiveItem(RedGem,0xFFFF)
-SVAL sB [15,3]
-REMOVEUNIT(-2)
-NoFade
-ENDA
-
 TopPrisonerDoor:
-TILECHANGE 2
+TILECHANGE 1
 NoFade
 ENDA
 
 TopPrisonerFreed:
 Text(Ch12PlaceholderText)
 GiveItem(RedGem,0xFFFF)
-SVAL sB [9,1]
+SVAL sB Coords(15,3)
+REMOVEUNIT(-2)
+NoFade
+ENDA
+
+SympathizerDoor:
+TILECHANGE 2
+NoFade
+ENDA
+
+SympathizerFreed:
+Text(Ch12PlaceholderText)
+GiveItem(RedGem,0xFFFF)
+SVAL sB Coords(9,1)
 REMOVEUNIT(-2)
 NoFade
 ENDA
@@ -233,7 +232,7 @@ ENDA
 RightWestPrisonerFreed:
 Text(Ch12PlaceholderText)
 GiveItem(RedGem,0xFFFF)
-SVAL sB [3,11]
+SVAL sB Coords(3,11)
 REMOVEUNIT(-2)
 NoFade
 ENDA
@@ -246,7 +245,7 @@ ENDA
 LeftWestPrisonerFreed:
 Text(Ch12PlaceholderText)
 GiveItem(RedGem,0xFFFF)
-SVAL sB [0,11]
+SVAL sB Coords(0,11)
 REMOVEUNIT(-2)
 NoFade
 ENDA
@@ -259,7 +258,7 @@ ENDA
 BottomLeftPrisonerFreed:
 Text(Ch12PlaceholderText)
 GiveItem(RedGem,0xFFFF)
-SVAL sB [15,27]
+SVAL sB Coords(15,27)
 REMOVEUNIT(-2)
 NoFade
 ENDA
@@ -272,7 +271,7 @@ ENDA
 BottomRightFreed:
 Text(Ch12PlaceholderText)
 GiveItem(RedGem,0xFFFF)
-SVAL sB [31,26]
+SVAL sB Coords(31,26)
 REMOVEUNIT(-2)
 NoFade
 ENDA
