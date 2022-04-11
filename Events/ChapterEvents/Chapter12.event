@@ -19,8 +19,8 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-LOCA 9 SympathizerDoor [9,3] 0x12
-LOCA 10 TopPrisonerDoor [15,5] 0x12
+LOCA 9 SympathizerDoor [15,5] 0x12
+LOCA 10 TopPrisonerDoor [9,3] 0x12
 LOCA 11 TiberiusDoor [5,6] 0x12
 Door(12,9)
 LOCA 12 RightWestPrisonerDoor [5,11] 0x12
@@ -189,7 +189,7 @@ BeginningScene:
 
 
 TopPrisonerDoor:
-TILECHANGE 1
+TILECHANGE 2
 NoFade
 ENDA
 
@@ -202,7 +202,7 @@ NoFade
 ENDA
 
 SympathizerDoor:
-TILECHANGE 2
+TILECHANGE 1
 NoFade
 ENDA
 
