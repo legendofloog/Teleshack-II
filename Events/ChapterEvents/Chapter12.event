@@ -190,7 +190,7 @@ BeginningScene:
 
 
 SympathizerDoor:
-TILECHANGE 2
+TILECHANGE 1
 NoFade
 ENDA
 
@@ -200,7 +200,7 @@ NoFade
 ENDA
 
 TopPrisonerDoor:
-TILECHANGE 3
+TILECHANGE 2
 NoFade
 ENDA
 
@@ -210,7 +210,7 @@ NoFade
 ENDA
 
 TiberiusDoor:
-TILECHANGE 4
+TILECHANGE 3
 NoFade
 ENDA
 
@@ -220,7 +220,7 @@ NoFade
 ENDA
 
 RightWestPrisonerDoor:
-TILECHANGE 6
+TILECHANGE 5
 NoFade
 ENDA
 
@@ -230,7 +230,7 @@ NoFade
 ENDA
 
 LeftWestPrisonerDoor:
-TILECHANGE 7
+TILECHANGE 6
 NoFade
 ENDA
 
@@ -240,7 +240,7 @@ NoFade
 ENDA
 
 BottomLeftPrisonerDoor:
-TILECHANGE 12
+TILECHANGE 11
 NoFade
 ENDA
 
@@ -250,7 +250,7 @@ NoFade
 ENDA
 
 BottomRightDoor:
-TILECHANGE 13
+TILECHANGE 12
 NoFade
 ENDA
 
