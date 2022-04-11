@@ -68,7 +68,7 @@ Traps2:
 	ALIGN 4
 
 Units1:
-  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [34,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [12,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Loewe 0x0 Cleo Level(1,Ally,False) [34,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Emil 0x0 Cleo Level(1,Ally,False) [34,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT Emil 0x0 Cleo Level(1,Ally,False) [35,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -167,7 +167,7 @@ EithaSpawn:
 
 
 PrisonGreens:
-  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [9,1] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [9,1] 0x0 0x0 0x0 0x1 [BlueGem] NoAI
   UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [15,3] 0x0 0x0 0x0 0x1 [RedGem] NoAI
   UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [0,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
   UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [3,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
@@ -189,27 +189,27 @@ BeginningScene:
 
 
 TopPrisonerDoor:
-TILECHANGE 2
+TILECHANGE 1
 NoFade
 ENDA
 
 TopPrisonerFreed:
 Text(Ch12PlaceholderText)
-GiveItem(RedGem,0xFFFF)
-SVAL sB Coords(15,3)
+GiveItem(BlueGem,0xFFFF)
+SVAL sB Coords(9,1)
 REMOVEUNIT(-2)
 NoFade
 ENDA
 
 SympathizerDoor:
-TILECHANGE 1
+TILECHANGE 2
 NoFade
 ENDA
 
 SympathizerFreed:
 Text(Ch12PlaceholderText)
-GiveItem(RedGem,0xFFFF)
-SVAL sB Coords(9,1)
+GiveItem(WhiteGem,0xFFFF)
+SVAL sB Coords(15,3)
 REMOVEUNIT(-2)
 NoFade
 ENDA
@@ -285,10 +285,3 @@ EndingScene:
     ENUN
   NoFade
   ENDA
-
-
-
-
-
-
-
