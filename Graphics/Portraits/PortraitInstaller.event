@@ -594,10 +594,10 @@ setMugEntry(JohannaMug, JohannaMugData, 4, 6, 4, 4)
 
 ALIGN 16
 IchwepMugData:
-#incbin "Dmp/Ichwep(h0lyMushrooms)_mug.dmp"
-#incbin "Dmp/Ichwep(h0lyMushrooms)_frames.dmp"
-#incbin "Dmp/Ichwep(h0lyMushrooms)_palette.dmp"
-#incbin "Dmp/Ichwep(h0lyMushrooms)_minimug.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms, levin)_mug.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms, levin)_frames.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms, levin)_palette.dmp"
+#incbin "Dmp/Ichwep(h0lyMushrooms, levin)_minimug.dmp"
 setMugEntry(IchwepMug, IchwepMugData, 2, 5, 3, 3)
 
 ALIGN 16

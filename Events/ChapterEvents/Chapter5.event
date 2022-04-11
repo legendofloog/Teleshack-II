@@ -16,7 +16,7 @@ TurnBasedEvents:
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 3)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 5)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B, 6)
+TurnEventPlayer(0, EnemyReinforcementsEvent_C, 6)
 TurnEventPlayer(0, EndOfSurvive, 10)
 END_MAIN
 
@@ -142,6 +142,14 @@ UNIT
 
 EnemyReinforcementsEvent_B:
 Text(RigganReinforcement)
+CamOn
+LOAD1 1 EnemyReinforcements_B
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_C:
 CamOn
 LOAD1 1 EnemyReinforcements_B
 ENUN

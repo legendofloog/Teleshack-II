@@ -113,6 +113,7 @@
 [LoadRadnitz] = [LoadFace][0x12][0x1]
 [LoadEpony] = [LoadFace][0x1F][0x1]
 [LoadMifan] = [LoadFace][0x3][0x1]
+[LoadTao] = [LoadFace][0x5E][0x1]
 
 [LoadLeina] = [LoadFace][0x11][0x1]
 [LoadCromar] = [LoadFace][0x13][0x1]

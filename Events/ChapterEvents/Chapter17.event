@@ -14,7 +14,6 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
-TurnEventPlayer(0, EndingScene, 1)
 TurnEventPlayer(0, Reinforcements1, 3)
 TurnEventPlayer(0, Reinforcements2, 5)
 TurnEventPlayer(0, Reinforcements3, 6)
