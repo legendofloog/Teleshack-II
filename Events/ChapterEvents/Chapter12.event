@@ -13,7 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(eventID,DeadlordSpawn,1)
+TurnEventPlayer(23,DeadlordSpawn,1)
 END_MAIN
 
 CharacterBasedEvents:
@@ -278,7 +278,7 @@ ENDA
 
 
 DeadlordSpawn:
-Camera2 [7,20]
+CAMERA_CENTERED [7,20]
 TILECHANGE 7
 LOAD 1 EithaSpawn
 SetFlag(0x4)
