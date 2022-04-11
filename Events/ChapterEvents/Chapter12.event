@@ -23,11 +23,11 @@ LOCA 9 SympathizerDoor [9,3] 0x12
 LOCA 10 TopPrisonerDoor [15,5] 0x12
 LOCA 11 TiberiusDoor [5,6] 0x12
 Door(12,9)
-LOCA 10 RightWestPrisonerDoor [5,11] 0x12
-LOCA 10 LeftWestPrisonerDoor [1,13] 0x12
+LOCA 12 RightWestPrisonerDoor [5,11] 0x12
+LOCA 13 LeftWestPrisonerDoor [1,13] 0x12
 Door(14,17)
-LOCA 10 BottomLeftPrisonerDoor [14,25] 0x12
-LOCA 10 BottomRightDoor [30,25] 0x12
+LOCA 14 BottomLeftPrisonerDoor [14,25] 0x12
+LOCA 15 BottomRightDoor [30,25] 0x12
 Chest(Mend,18,2)
 Chest(Mend,16,17)
 Chest(Mend,15,18)
@@ -35,6 +35,13 @@ Chest(Mend,15,18)
 END_MAIN
 
 MiscBasedEvents:
+AFEV 16 SympathizerFreed 9
+AFEV 17 TopPrisonerFreed 10
+AFEV 18 TiberiusOut 11
+AFEV 19 RightWestPrisonerFreed 12
+AFEV 20 LeftWestPrisonerFreed 13
+AFEV 21 BottomLeftPrisonerFreed 14
+AFEV 22 BottomRightFreed 15
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
@@ -179,10 +186,80 @@ BeginningScene:
   GotoPrepScreen
   ENDA
   
-PrisonerFreed:
-  Text(Ch12PlaceholderText)
-  NoFade
-  ENDA
+
+
+
+SympathizerDoor:
+TILECHANGE 2
+NoFade
+ENDA
+
+SympathizerFreed:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+TopPrisonerDoor:
+TILECHANGE 3
+NoFade
+ENDA
+
+TopPrisonerFreed:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+TiberiusDoor:
+TILECHANGE 4
+NoFade
+ENDA
+
+TiberiusOut:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+RightWestPrisonerDoor:
+TILECHANGE 6
+NoFade
+ENDA
+
+RightWestPrisonerFreed:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+LeftWestPrisonerDoor:
+TILECHANGE 7
+NoFade
+ENDA
+
+LeftWestPrisonerFreed:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+BottomLeftPrisonerDoor:
+TILECHANGE 12
+NoFade
+ENDA
+
+BottomLeftPrisonerFreed:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+BottomRightDoor:
+TILECHANGE 13
+NoFade
+ENDA
+
+BottomRightFreed:
+Text(Ch12PlaceholderText)
+NoFade
+ENDA
+
+
 
 
 EndingScene:
