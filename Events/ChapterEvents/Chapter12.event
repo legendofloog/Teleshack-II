@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(eventID,DeadlordSpawn,1)
 END_MAIN
 
 CharacterBasedEvents:
@@ -181,7 +182,6 @@ BeginningScene:
   LOAD 1 MinkJoin
   LOAD 1 OutdoorEnemy
   LOAD 1 IndoorEnemy
-  LOAD 1 EithaSpawn
   LOAD 1 PrisonGreens
   GotoPrepScreen
   ENDA
@@ -277,6 +277,13 @@ NoFade
 ENDA
 
 
+DeadlordSpawn:
+Camera2 [7,20]
+TILECHANGE 7
+LOAD 1 EithaSpawn
+SetFlag(0x4)
+NoFade
+ENDA
 
 
 EndingScene:
