@@ -172,6 +172,8 @@ Dragana's cell.[X]
 
 #include "CharClassItemsEtc/ClassNamesDescs.txt"
 
+#include "CharClassItemsEtc/MusicNames.txt"
+
 ## HealArrowText
 ->[X]
 

@@ -10,6 +10,7 @@ int GetLevelDifference(BattleUnit* actor, BattleUnit* target);
 int GetBattleUnitStaffExp(BattleUnit* actor);
 const ItemData* GetItemData(int itemId);
 extern u8 PrepromoteTable[];
+int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit);
 
 /*
 SET_FUNC BattleApplyExpGains, 0x802B92D
@@ -170,4 +171,57 @@ int GetBattleUnitStaffExp(BattleUnit* actor){
 	else{ // s rank
 		return 40;
 	}
+}
+
+int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit) {
+    int i, result;
+
+    if (UNIT_FACTION(&battleUnit->unit) != FACTION_BLUE){
+		return -1;
+	}
+    if (battleUnit->unit.curHP == 0){
+		return -1;
+	}
+    if (gChapterData.chapterStateBits & CHAPTER_FLAG_7){
+        return -1;
+	}
+    if (gGameState.statebits & 0x40){ // TODO: GAME STATE BITS CONSTANTS
+ 		return -1;
+	} 
+    if (!(gBattleStats.config & BATTLE_CONFIG_ARENA)) {
+        if (!battleUnit->canCounter){
+ 			return -1;
+		}
+        if (!(battleUnit->weaponAttributes & IA_REQUIRES_WEXP)){
+			return -1;
+		}
+	}
+    
+	result = battleUnit->unit.ranks[battleUnit->weaponType];
+	if (battleUnit->unit.fatigue <= battleUnit->unit.maxHP){ // checks if fatigue is not > maxHP; if so, gives wexp
+		result += GetItemAwardedExp(battleUnit->weapon) * battleUnit->wexpMultiplier;
+	}
+
+    for (i = 0; i < 8; ++i) {
+        if (i == battleUnit->weaponType){
+            continue;
+		}
+        if (battleUnit->unit.pClassData->baseRanks[i] == WPN_EXP_A){
+            continue;
+		}
+        if (battleUnit->unit.ranks[i] < WPN_EXP_A){
+            continue;
+		}
+        if (result >= WPN_EXP_A){
+			result = (WPN_EXP_A - 1);
+		}
+            
+        break;
+    }
+
+   	if (result > WPN_EXP_A){
+        result = WPN_EXP_A;
+    } 
+
+    return result;
 }

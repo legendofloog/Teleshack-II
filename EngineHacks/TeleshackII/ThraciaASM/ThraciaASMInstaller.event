@@ -9,7 +9,7 @@
 #include "Equip/Installer.event"
 #include "ExtraGrowths.event"
 #include "BattleExpTeleshack2/Installer.event"
-#include "ASMC/Installer.event"
+#include "ASMC_Other/Installer.event"
 #include "StaffChanges/Installer.event"
 
 

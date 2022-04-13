@@ -23,10 +23,16 @@ int DismountUsability(){
 	if (unit->state & US_CANTOING){
 	return USABILITY_FALSE;
 	}
-	if (GetDismountedClass(unit) && GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] > 0){
-		return USABILITY_TRUE;
+	if (GetDismountedClass(unit) == 0){
+		return USABILITY_FALSE;
 	}
-	return USABILITY_FALSE;
+	if (CheckIfDismountLocationLegal(unit) == false){
+		return USABILITY_FALSE;
+	}
+	if (GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] == 0xFF){
+		return USABILITY_FALSE;
+	}
+	return USABILITY_TRUE;
 }
 
 int MountUsability(){
@@ -34,10 +40,36 @@ int MountUsability(){
 	if (unit->state & US_CANTOING){
 	return USABILITY_FALSE;
 	}
-	if (GetMountedClass(unit) && GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] > 0){
-		return USABILITY_TRUE;
+	if (GetMountedClass(unit) == 0){
+		return USABILITY_FALSE;
 	}
-	return USABILITY_FALSE;
+	if (CheckIfDismountLocationLegal(unit) == false){
+		return USABILITY_FALSE;
+	}
+	if (GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] == 0xFF){
+		return USABILITY_FALSE;
+	}
+	return USABILITY_TRUE;
+}
+
+bool CheckIfDismountLocationLegal(Unit* unit){
+	int unitXPos = unit->xPos;
+	int unitYPos = unit->yPos;
+	int currentChapter = gChapterData.chapterIndex;
+	int cnt = 0;
+	while(true){
+		if (UnacceptedMountDismountLocationEntryTable[cnt].chapterID == currentChapter){
+			if ( (UnacceptedMountDismountLocationEntryTable[cnt].topLeftX <= unitXPos) && (unitXPos <= UnacceptedMountDismountLocationEntryTable[cnt].bottomRightX) ){
+				if ( (UnacceptedMountDismountLocationEntryTable[cnt].topLeftY <= unitYPos) && (unitYPos <= UnacceptedMountDismountLocationEntryTable[cnt].bottomRightY) ){
+					return false;
+				}
+			}
+		}
+		else if (UnacceptedMountDismountLocationEntryTable[cnt].chapterID == 0xFF){
+			return true;
+		}
+		cnt++;
+	}
 }
 
 const ClassData* GetDismountedClass(Unit* unit){
@@ -83,7 +115,6 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass){
 	unit->res += (newClass->baseRes - oldClass->baseRes);*/
 
 	unit->pClassData = newClass;
-
 	HideUnitSMS(unit);
 	MU_EndAll();
 	MU_Create(unit);

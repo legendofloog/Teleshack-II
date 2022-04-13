@@ -199,3 +199,43 @@
 // HegeMercenary
 	setPalette(49,HegeMercenary)
 	setCBSP(49,Hege, 1, Hero_F)
+
+// DarbyHunter
+	setPalette(50,DarbyHunter)
+	setCBSP(50,Darby, 1, Hunter_F)
+
+// DarbyWarrior
+	setPalette(51,DarbyWarrior)
+	setCBSP(51,Darby, 2, Warrior_F)
+
+// JacinthDancer
+	setPalette(52,JacinthDancer)
+	setCBSP(52,Jacinth, 1, Dancer)
+
+// CorundumChampion
+	setPalette(53,CorundumChampion)
+	setCBSP(53,Corundum, 1, Champion)
+
+// VeniaminForrest
+	setPalette(54,VeniaminForrest)
+	setCBSP(54,Veniamin, 1, ForrestKnight)
+
+// PascalThfFighter
+	setPalette(55,PascalThfFighter)
+	setCBSP(55,Pascal, 1, ThiefFighter)
+
+// RashidSniper
+	setPalette(56,RashidSniper)
+	setCBSP(56,Rashid, 1, Sniper)
+
+// HamdiHalberdier
+	setPalette(57,HamdiHalberdier)
+	setCBSP(57,Hamdi, 1, Halberdier)
+
+// ColossusWarrior
+	setPalette(58,ColossusWarrior)
+	setCBSP(58,Colossus, 1, Warrior)
+
+// LoeweCopyScaleshotUnmounted
+	setPalette(59,LoeweCopyScaleshotUnmounted)
+	setCBSP(59,LoeweCopy, 1, Dragonlord_Dismounted)

@@ -1,9 +1,9 @@
 ## CleoDeathQuoteText
 [MidRight][LoadCleo]
 The end is closing in[Beat] I failed[N]
-to atone for all that I've done.[AN]
+to atone for all I've done.[AN]
 Even so, is this peace I feel?[N]
-My comrades, please live on[Beat][A][CloseEyes][X]
+My comrades, live on[Beat][A][CloseEyes][X]
 
 ## LoeweDeathQuoteText
 [MidRight][LoadLoewe]
@@ -238,3 +238,100 @@ stayed on my mountain.[CloseEyes][AN][X]
 Looks like I wasn't up[N]
 to the task[Beat] I'm sorry,[AN]
 Commander[Beat][CloseEyes][A][X]
+
+## KailaniDeathQuote
+[MidRight][LoadKailani]
+I need to fall back[Beat][N]
+My country still needs me[Beat][A][X]
+
+## DarbyDeathQuote
+[MidRight][LoadDarby]
+Heh, overextended[Beat][CloseEyes][A][X]
+
+## JacinthDeathQuote
+[MidRight][LoadJacinth]
+Will my star fade out?[N]
+Please, I want to live[Beat][CloseEyes][A][X]
+
+## VeniaminDeathQuote
+[MidLeft][LoadVeniamin]
+Agh, no[Beat][AN]
+Looks like the rumors[N]
+of your abilities are true[Beat][AN]
+Leonidas, please, prepare[N]
+yourself[Beat][CloseEyes][A][X]
+
+## CorundumDeathQuote
+[MidLeft][LoadCorundum]
+Long live Freyse![N]
+Long live the righteous![AN]
+And to hell with you[N]
+traitors[Beat][CloseEyes][A][X]
+
+## PascalDeathQuote
+[MidLeft][LoadPascal]
+Pah, blasted nincompoops[Beat][AN]
+Always have to be the
+buzzkills[Beat][CloseEyes][A][X]
+
+## NahizaDeathQuote
+[MidRight][LoadNahiza]
+The heck? My ballista's[N]
+gotten all busted up![AN]
+Guess I've gotta[Beat][N]
+[HalfCloseEyes]make tracks[Beat][AN]
+Wait, why's it[N]
+so dark[Beat]?[CloseEyes][A][X]
+
+## AugurDeathQuote
+[MidRight][LoadAugur]
+[Beat]Finally.[A][X]
+
+## TsourekiDeathQuote
+[MidLeft][LoadTsoureki]
+Such is a soldier's death[Beat][AN]
+to fall into a shallow grave,[AN]
+without even knowing the[N]
+reason for[Beat] [CloseEyes]his end[Beat][AN][X]
+
+## RashidDeathQuote
+[MidRight][LoadRashid]
+Impossible[Beat][A][X]
+
+## HamdiDeathQuote
+[MidLeft][LoadHamdi]
+[Beat] Byelen[Beat][A][X]
+
+## ColossusDeathQuote
+[MidLeft][LoadColossus]
+[Beat][A][X]
+
+## IlseDeathQuoteText
+[MidRight][LoadIlse]
+It seems I[Beat] got carried away.[N]
+What an inglorious death[Beat][AN][CloseEyes][X]
+
+## NikolasDeathQuoteText
+[MidRight][LoadNikolas]
+Buh! Guh! Th-that can't possibly[Beat][N]
+I was[Beat] so good at my job[Beat][AN][CloseEyes][X]
+
+## AltoDeathQuoteText
+[MidLeft][LoadAlto]
+Will they even remember my name[Beat]?[AN][CloseEyes][X]
+
+## MureibDeathQuoteText
+[MidLeft][LoadMureib]
+Well struck[Beat] but your struggle is[N]
+pointless! I am inexorable, Decians![A][X]
+
+## KwameRealDeathQuoteText
+[MidRight][LoadKwame]
+I suppose[Beat] I was rustier[Beat] than
+I thought[Beat] Byelen[Beat] Catrin[Beat][AN][CloseEyes][X]
+
+## Mureib2DeathQuoteText
+[MidLeft][LoadMureib]
+How I wish this were a true[N]
+death[Beat] Ah well[Beat] I suppose[Beat][AN]
+oblivion will have to wait[Beat][A][X]

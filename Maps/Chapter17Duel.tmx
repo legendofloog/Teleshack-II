@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="16" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <properties>
+  <property name="ChapterID" value="Chapter17Duel"/>
+  <property name="Main" value=""/>
+  <property name="MapChangesID" value="Chapter17DuelMapChanges"/>
+  <property name="MapID" value="Chapter17DuelMap"/>
+  <property name="ObjectType" value="DesertBastionObjectID"/>
+  <property name="PaletteID" value="DesertBastionPaletteID"/>
+  <property name="TileConfig" value="DesertBastionMapchipConfigID"/>
+ </properties>
+ <tileset firstgid="1" source="Desert Bastion.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="16" height="10">
+  <properties>
+   <property name="ChapterID" value="Chapter17Duel"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Chapter17DuelMapChanges"/>
+   <property name="MapID" value="Chapter17DuelMap"/>
+   <property name="ObjectType" value="DesertBastionObjectID"/>
+   <property name="PaletteID" value="DesertBastionPaletteID"/>
+   <property name="TileConfig" value="DesertBastionMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+882,418,882,428,517,814,944,421,453,459,421,521,878,943,974,942,
+849,450,849,847,424,878,912,457,519,518,456,438,977,910,943,910,
+424,880,814,880,428,521,878,423,437,457,485,454,942,943,912,975,
+428,521,428,487,458,438,846,457,459,912,910,974,974,974,976,976,
+454,438,454,438,814,815,846,437,453,487,458,453,459,944,911,976,
+814,879,424,879,814,878,814,911,944,879,815,880,457,459,910,911,
+453,487,458,846,878,848,878,911,910,848,846,815,421,974,975,910,
+816,880,816,880,814,490,491,911,910,490,491,423,910,976,943,976,
+816,353,460,492,421,423,422,422,425,847,848,815,912,942,910,912,
+423,426,423,977,425,977,428,521,424,878,816,816,976,976,942,911
+</data>
+ </layer>
+</map>

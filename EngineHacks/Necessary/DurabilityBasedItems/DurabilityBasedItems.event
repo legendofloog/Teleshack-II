@@ -110,6 +110,7 @@ NameTableEntry(BeiyrScrollName)
 NameTableEntry(ZykhraScrollName)
 NameTableEntry(RaioScrollName)
 NameTableEntry(LuzenScrollName)
+NameTableEntry(AmserScrollName)
 
 
 ALIGN 4
@@ -119,4 +120,5 @@ NameTableEntry(BeiyrScrollDesc)
 NameTableEntry(ZykhraScrollDesc)
 NameTableEntry(RaioScrollDesc)
 NameTableEntry(LuzenScrollDesc)
+NameTableEntry(AmserScrollDesc)
 

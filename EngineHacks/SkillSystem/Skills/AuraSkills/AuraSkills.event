@@ -76,6 +76,7 @@ POIN SkillTester
 POIN AuraSkillCheck
 WORD FocusID
 
+
 ALIGN 4
 Desolate:
 #incbin "Focus/Desolate.dmp"

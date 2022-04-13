@@ -26,6 +26,7 @@
 #define SteelLance 0x16
 #define SilverLance 0x17
 #define ShortLance 0x18
+#define Shortlance ShortLance
 #define BraveLance 0x19
 #define KillerLance 0x1A
 #define Horseslayer 0x1B
@@ -141,10 +142,12 @@
 #define BattleAxe 0x86
 #define Ivaldi 0x87
 #define KnightProof 0x88
+#define HoundingBow 0x93
 #define HeavySpear 0x95
 
-#define SunBracelet 0x99
-#define SolarBracelet 0x99
+#define Dragonstone 0xAA
+#define Unmoor 0xAB
+
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
 #define GoldGem 0xBB
@@ -171,6 +174,23 @@
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
+#define KingShield 0xD0
+#define EdgedArrow 0xD1
+#define RedScarf 0xD2
+#define Saunion 0xD3
+#define TrainedEdge 0xD4
+#define TrainedPike 0xD5
+#define TrainedAxe 0xD6
+#define TrainedArc 0xD7
+#define AquaBrand 0xD8
+#define ChargeLance 0xD9
+#define Poincare 0xDA
+#define Sink 0xDB
+#define WoodlandsHuke 0xDC
+#define CaptainsHelm 0xDD
+#define FealtyBow 0xDE
+#define HeroRing 0xDF
+
 
 #define Stinger 0x8d
 #define BpatItem 0x8e

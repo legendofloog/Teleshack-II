@@ -1,0 +1,142 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	feelingwoozy_grp  voicegroup000
+	#define	feelingwoozy_pri  10
+	#define	feelingwoozy_rev  0
+	#define	feelingwoozy_mvl  127
+	#define	feelingwoozy_key  0
+	#define	feelingwoozy_tbs  1
+	#define	feelingwoozy_exg  0
+	#define	feelingwoozy_cmp  1
+
+	// .rodata
+	//	feelingwoozy
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+feelingwoozy_001:
+//  #01 //000   ----------------------------------------
+Label_5473BC:
+ BYTE   TEMPO   80*feelingwoozy_tbs/2
+ BYTE   KEYSH   feelingwoozy_key+0
+ BYTE   VOICE   52
+ BYTE   VOL   68*feelingwoozy_mvl/mxv
+ BYTE   N48  Fn3  v064
+ BYTE   N48  Cs3
+ BYTE   N48  As2
+ BYTE   W48
+ BYTE   Cs3
+ BYTE   N48  Fn3
+ BYTE   N48  As3
+ BYTE   W48
+//  #01 //001   ----------------------------------------
+ BYTE   Ds4
+ BYTE   N48  As3
+ BYTE   N48  Fn3
+ BYTE   W48
+ BYTE   Cs4
+ BYTE   N48  As3
+ BYTE   N48  Cs3
+ BYTE   W48
+//  #01 //002   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_5473BC
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+feelingwoozy_002:
+//  #02 //000   ----------------------------------------
+Label_5473E4:
+ BYTE   TEMPO   80*feelingwoozy_tbs/2
+ BYTE   VOL   80*feelingwoozy_mvl/mxv
+ BYTE   KEYSH   feelingwoozy_key+0
+ BYTE   VOICE   68
+ BYTE   N06  As3  v064
+ BYTE   W06
+ BYTE   An3
+ BYTE   W06
+ BYTE   Gs3
+ BYTE   W06
+ BYTE   Gn3
+ BYTE   W06
+ BYTE   As3
+ BYTE   W06
+ BYTE   An3
+ BYTE   W06
+ BYTE   As3
+ BYTE   W06
+ BYTE   Bn3
+ BYTE   W06
+ BYTE   Ds4
+ BYTE   W06
+ BYTE   Dn4
+ BYTE   W06
+ BYTE   As3
+ BYTE   W06
+ BYTE   Bn3
+ BYTE   W06
+ BYTE   Ds4
+ BYTE   W06
+ BYTE   Dn4
+ BYTE   W06
+ BYTE   Cs4
+ BYTE   W06
+ BYTE   Cn4
+ BYTE   W06
+//  #02 //001   ----------------------------------------
+ BYTE   As3
+ BYTE   W06
+ BYTE   An3
+ BYTE   W06
+ BYTE   Gs3
+ BYTE   W06
+ BYTE   Gn3
+ BYTE   W06
+ BYTE   As3
+ BYTE   W06
+ BYTE   An3
+ BYTE   W06
+ BYTE   As3
+ BYTE   W06
+ BYTE   Bn3
+ BYTE   W06
+ BYTE   Ds4
+ BYTE   W06
+ BYTE   Dn4
+ BYTE   W06
+ BYTE   As3
+ BYTE   W06
+ BYTE   Bn3
+ BYTE   W06
+ BYTE   Ds4
+ BYTE   W06
+ BYTE   Dn4
+ BYTE   W06
+ BYTE   Cs4
+ BYTE   W06
+ BYTE   Cn4
+ BYTE   W06
+//  #02 //002   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_5473E4
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+feelingwoozy:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	feelingwoozy_pri	// Priority
+	BYTE	feelingwoozy_rev	// Reverb.
+    
+	POIN2	feelingwoozy_grp
+    
+	POIN2	feelingwoozy_001
+	POIN2	feelingwoozy_002
+
+	

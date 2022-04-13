@@ -38,10 +38,15 @@
 #define Tippany 0x26
 #define Pelecaye 0x27
 #define Carl 0x28
-#define CaellachCC 0x29
-#define FadoCC 0x2A
-#define IsmaireCC 0x2B
-#define HaydenCC 0x2C
+#define Darby 0x29
+#define Jacinth 0x2A
+#define Nahiza 0x2B
+#define Augur 0x2C
+#define Ilse 0x2D
+#define Rashid 0x2E
+#define Nikolas 0x2F
+
+
 #define LyonSummon 0x3B
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
@@ -82,6 +87,7 @@
 
 #define Selese 0x6e
 #define Cythes 0x89
+#define Mahemen 0xA1
 
 // Chapter 1 Stuff
 #define Chapter1Generics 0x6E
@@ -91,6 +97,7 @@
 #define Dragana 0x71
 #define Hernandez 0x72
 //Chapter 3 uses chapter 1 generics and adds no NPCs
+#define Chapter3Reinforcements 0xA2
 #define Veid 0x74
 // Chapter 5x
 #define Kwame 0x65
@@ -124,6 +131,36 @@
 
 //Chapter 12 stuff
 #define Eitha 0x4B
+
+//Chapter 13 stuff
+#define Corundum 0x9B
+#define Pascal 0x9C
+#define Kailani 0x9D
+#define Veniamin 0x9E
+
+//Chapter 14 Stuff
+#define Tsoureki 0x9F
+
+//Chapter 15 Stuff
+#define Looter 0xA3
+#define Traveler 0xA4
+#define Coralia 0xA5
+#define Catrin 0xA6
+#define Kassandra 0xA7
+#define LoeweCopy 0xAC
+
+//Chapter 16 Stuff
+#define Phantom 0x8A
+#define Hamdi 0x4C
+#define Colossus 0x4D
+#define Boro_Ch16 0x4E
+
+//Chapter 17 Stuff
+#define Alto 0xA8
+#define Mureib 0xA9
+#define KwameReal 0xAA
+#define Mureib2 0xAB
+
 
 #define Breguet 0x46
 #define Bazba 0x48

@@ -34,6 +34,13 @@
 #define ImbueID 53
 #define ArmoredBlowID 54
 #define CriticalForceID 55
+#define DanceID 57
+#define HeroesLifeAndDeathID 58
+#define LifetakerID 59
+#define BowRangeUpID 60
+#define LoyaltyID 61
+#define ChargeID 62
+#define AcrobatID 63
 
 // keep it continous for debug purpose
 

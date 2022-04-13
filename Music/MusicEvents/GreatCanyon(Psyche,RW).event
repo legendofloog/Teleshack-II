@@ -1,0 +1,5320 @@
+//Event file generated from Sappy .s format.
+        #include "MPlayDef.event"
+
+        #define    GreatCanyon_Psyche_RW__grp  voicegroup000
+        #define    GreatCanyon_Psyche_RW__pri  0
+        #define    GreatCanyon_Psyche_RW__rev  0
+        #define    GreatCanyon_Psyche_RW__key  0
+
+        // .rodata
+        // GreatCanyon_Psyche_RW_
+        ALIGN 4
+
+//****************** Track 0 (Midi-Chn.0) ******************//
+
+GreatCanyon_Psyche_RW__0:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE   TEMPO   100/2
+        BYTE           VOICE   73
+        BYTE           VOL     88
+        BYTE           BENDR   12
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W23
+        BYTE           BEND    c_v-4
+        BYTE   W01
+        BYTE           N12     Gs3   v110
+        BYTE   W05
+        BYTE           BEND    c_v-3
+        BYTE   W01
+        BYTE                   c_v-2
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W17
+        BYTE           N30     Gs4   v091
+        BYTE   W36
+        BYTE   W01
+        BYTE           N06     Fs4   v111
+        BYTE   W05
+        BYTE           N05     Gs4   v118
+        BYTE   W03
+        BYTE                   Fs4   v081
+        BYTE   W03
+// 003   ----------------------------------------
+        BYTE   W12
+        BYTE           N04     Cs4   v110
+        BYTE   W11
+        BYTE           BEND    c_v-4
+        BYTE   W01
+        BYTE           N96     Ds4
+        BYTE   W05
+        BYTE           BEND    c_v-3
+        BYTE   W01
+        BYTE                   c_v-2
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W60
+        BYTE   W01
+        BYTE                   c_v-1
+        BYTE   W04
+// 004   ----------------------------------------
+        BYTE                   c_v-2
+        BYTE   W04
+        BYTE                   c_v-3
+        BYTE   W02
+        BYTE                   c_v-4
+        BYTE   W90
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__0_LOOP:
+        BYTE   W92
+        BYTE   W03
+        BYTE           BEND    c_v+0
+        BYTE   W01
+// 015   ----------------------------------------
+        BYTE           N12     Ds3   v127
+        BYTE   W23
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N36     Gs3
+        BYTE   W01
+        BYTE           BEND    c_v-8
+        BYTE   W02
+        BYTE                   c_v-4
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W42
+        BYTE   W01
+        BYTE           N04
+        BYTE   W06
+        BYTE                   Gs3   v075
+        BYTE   W06
+        BYTE                   Fs3   v110
+        BYTE   W06
+        BYTE           N03     Gs3   v127
+        BYTE   W03
+        BYTE                   Gs3   v105
+        BYTE   W03
+// 016   ----------------------------------------
+GreatCanyon_Psyche_RW__0_16:
+        BYTE           N60     Ds4   v125
+        BYTE   W72
+        BYTE           N24     Fs4   v100   gtp3
+        BYTE   W24
+        BYTE   PEND
+// 017   ----------------------------------------
+GreatCanyon_Psyche_RW__0_17:
+        BYTE   W12
+        BYTE           N04     Fs4   v100
+        BYTE   W06
+        BYTE           N06     Gs4
+        BYTE   W06
+        BYTE           N04     Fs4
+        BYTE   W06
+        BYTE                   Fs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v125
+        BYTE   W06
+        BYTE                   Cs4   v075
+        BYTE   W06
+        BYTE           N60     Ds4   v125
+        BYTE   W48
+        BYTE   PEND
+// 018   ----------------------------------------
+GreatCanyon_Psyche_RW__0_18:
+        BYTE   W23
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N24     Cs4   v125   gtp3
+        BYTE   W02
+        BYTE           BEND    c_v-8
+        BYTE   W02
+        BYTE                   c_v-4
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W30
+        BYTE   W01
+        BYTE           N04
+        BYTE   W06
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE           N04     Cs4
+        BYTE   W06
+        BYTE                   Cs4   v075
+        BYTE   W06
+        BYTE                   Bn3   v125
+        BYTE   W06
+        BYTE                   Bn3   v075
+        BYTE   W06
+        BYTE   PEND
+// 019   ----------------------------------------
+        BYTE           N60     Gs3   v125
+        BYTE   W72
+        BYTE           N24     Cs4   v125   gtp3
+        BYTE   W24
+// 020   ----------------------------------------
+        BYTE   W12
+        BYTE           N04
+        BYTE   W06
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE           N04     Cs4
+        BYTE   W06
+        BYTE                   Cs4   v075
+        BYTE   W06
+        BYTE                   Bn3   v125
+        BYTE   W06
+        BYTE                   Bn3   v075
+        BYTE   W06
+        BYTE           N14     Gs3   v127
+        BYTE   W15
+        BYTE           N03
+        BYTE   W03
+        BYTE                   As3   v100
+        BYTE   W03
+        BYTE                   Gs3   v127
+        BYTE   W03
+        BYTE           N30     Fs3   v110
+        BYTE   W24
+// 021   ----------------------------------------
+        BYTE   W12
+        BYTE           N12     Ds3   v127
+        BYTE   W12
+        BYTE           N36     Gs3
+        BYTE   W48
+        BYTE           N04
+        BYTE   W06
+        BYTE                   Gs3   v075
+        BYTE   W06
+        BYTE                   Fs3   v110
+        BYTE   W06
+        BYTE           N03     Gs3   v127
+        BYTE   W03
+        BYTE                   Gs3   v105
+        BYTE   W03
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__0_16
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__0_17
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__0_18
+// 025   ----------------------------------------
+        BYTE           N42     Gs3   v125
+        BYTE   W48
+        BYTE           N04
+        BYTE   W06
+        BYTE                   Gs3   v075
+        BYTE   W06
+        BYTE                   Bn3   v125
+        BYTE   W06
+        BYTE                   Bn3   v075
+        BYTE   W06
+        BYTE           N24     Cs4   v125   gtp3
+        BYTE   W24
+// 026   ----------------------------------------
+        BYTE   W12
+        BYTE           N04
+        BYTE   W06
+        BYTE           N06     Ds4
+        BYTE   W06
+        BYTE           N04     Cs4
+        BYTE   W06
+        BYTE                   Cs4   v075
+        BYTE   W06
+        BYTE                   Bn3   v120
+        BYTE   W06
+        BYTE                   Bn3   v075
+        BYTE   W05
+        BYTE           BEND    c_v-4
+        BYTE   W01
+        BYTE           N72     Ds4   v127
+        BYTE   W04
+        BYTE           BEND    c_v-2
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W40
+        BYTE                   c_v-1
+        BYTE   W03
+// 027   ----------------------------------------
+        BYTE   W05
+        BYTE                   c_v-2
+        BYTE   W07
+        BYTE                   c_v-3
+        BYTE   W02
+        BYTE                   c_v-4
+        BYTE   W04
+        BYTE                   c_v-5
+        BYTE   W02
+        BYTE                   c_v-6
+        BYTE   W76
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE                   c_v-4
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__0_LOOP
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 1 (Midi-Chn.1) ******************//
+
+GreatCanyon_Psyche_RW__1:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   40
+        BYTE           PAN     c_v+9
+        BYTE           VOL     88
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           BEND    c_v-64
+        BYTE   W01
+// 003   ----------------------------------------
+        BYTE           N96     Gs2   v120
+        BYTE   W21
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W66
+        BYTE   W01
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__1_4:
+        BYTE           N72     Bn2   v110
+        BYTE   W68
+        BYTE   W03
+        BYTE           BEND    c_v-64
+        BYTE   W01
+        BYTE           N60     Ds3
+        BYTE   W01
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W15
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__1_5:
+        BYTE   W36
+        BYTE           N04     Cs3   v110
+        BYTE   W04
+        BYTE                   Ds3
+        BYTE   W04
+        BYTE                   Cs3
+        BYTE   W04
+        BYTE           N72     Bn2
+        BYTE   W48
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__1_6:
+        BYTE   W24
+        BYTE           N48     Gs2   v110
+        BYTE   W48
+        BYTE           N24     Bn2
+        BYTE   W24
+        BYTE   PEND
+// 007   ----------------------------------------
+GreatCanyon_Psyche_RW__1_7:
+        BYTE           N48     Ds3   v090
+        BYTE   W48
+        BYTE           N24     Gs3
+        BYTE   W24
+        BYTE           N60     Fs3
+        BYTE   W24
+        BYTE   PEND
+// 008   ----------------------------------------
+        BYTE   W36
+        BYTE           N04
+        BYTE   W04
+        BYTE                   Gs3
+        BYTE   W04
+        BYTE                   Fs3
+        BYTE   W04
+        BYTE           N72     Ds3
+        BYTE   W48
+// 009   ----------------------------------------
+GreatCanyon_Psyche_RW__1_9:
+        BYTE   W24
+        BYTE           N72     Gs2   v110
+        BYTE   W72
+        BYTE   PEND
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_7
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__1_LOOP:
+        BYTE   W36
+        BYTE           N04     Fs3   v090
+        BYTE   W04
+        BYTE                   Gs3
+        BYTE   W04
+        BYTE                   Fs3
+        BYTE   W04
+        BYTE           N72     Ds3
+        BYTE   W48
+// 015   ----------------------------------------
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W72
+        BYTE           N24     Fs2
+        BYTE   W24
+// 019   ----------------------------------------
+        BYTE           N48     Gs2
+        BYTE   W48
+        BYTE           N16     Ds3
+        BYTE   W16
+        BYTE           N05     Cs3
+        BYTE   W05
+        BYTE           N03     Ds3
+        BYTE   W03
+        BYTE           TIE     Cs3
+        BYTE   W24
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W24
+        BYTE           EOT
+        BYTE   W72
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W48
+        BYTE           N24     Cs2   v095
+        BYTE   W24
+        BYTE                   Ds2
+        BYTE   W24
+// 025   ----------------------------------------
+        BYTE                   Fs2
+        BYTE   W24
+        BYTE                   Gs2
+        BYTE   W24
+        BYTE                   Bn2
+        BYTE   W24
+        BYTE           N48     Cs3
+        BYTE   W24
+// 026   ----------------------------------------
+        BYTE   W24
+        BYTE           N24     En3
+        BYTE   W24
+        BYTE           N72     Ds3
+        BYTE   W48
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_9
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__1_7
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__1_LOOP
+        BYTE   W36
+        BYTE           N04     Fs3   v090
+        BYTE   W04
+        BYTE                   Gs3
+        BYTE   W04
+        BYTE                   Fs3
+        BYTE   W04
+        BYTE           N72     Ds3
+        BYTE   W48
+// 033   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 2 (Midi-Chn.2) ******************//
+
+GreatCanyon_Psyche_RW__2:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   42
+        BYTE           VOL     64
+        BYTE           PAN     c_v-8
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W92
+        BYTE   W03
+        BYTE           BEND    c_v-64
+        BYTE   W01
+// 003   ----------------------------------------
+        BYTE           N96     Ds1   v110
+        BYTE   W21
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W66
+        BYTE   W01
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__2_4:
+        BYTE           N72     Ds1   v100
+        BYTE   W68
+        BYTE   W03
+        BYTE           BEND    c_v-64
+        BYTE   W01
+        BYTE           N72     Fs1
+        BYTE   W01
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W15
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__2_5:
+        BYTE   W48
+        BYTE           N72     Fs1   v100
+        BYTE   W48
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__2_6:
+        BYTE   W23
+        BYTE           BEND    c_v-64
+        BYTE   W01
+        BYTE           N48     En1   v100
+        BYTE   W01
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W36
+        BYTE   W03
+        BYTE           N24     Gs1
+        BYTE   W24
+        BYTE   PEND
+// 007   ----------------------------------------
+GreatCanyon_Psyche_RW__2_7:
+        BYTE           N48     Gs1   v100
+        BYTE   W48
+        BYTE           N24     Bn1
+        BYTE   W23
+        BYTE           BEND    c_v-64
+        BYTE   W01
+        BYTE           N24     En1
+        BYTE   W01
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W15
+        BYTE   PEND
+// 008   ----------------------------------------
+        BYTE           N24     Gs1
+        BYTE   W24
+        BYTE                   Bn1
+        BYTE   W24
+        BYTE                   As1
+        BYTE   W24
+        BYTE                   Gs1
+        BYTE   W24
+// 009   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W24
+        BYTE           N72     Ds1
+        BYTE   W72
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_7
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__2_LOOP:
+        BYTE           N24     Gs1   v100
+        BYTE   W24
+        BYTE                   Bn1
+        BYTE   W24
+        BYTE                   As1
+        BYTE   W24
+        BYTE                   Gs1
+        BYTE   W24
+// 015   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W96
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W72
+        BYTE                   Bn0   v090
+        BYTE   W24
+// 019   ----------------------------------------
+        BYTE                   Cs1
+        BYTE   W24
+        BYTE                   Ds1
+        BYTE   W24
+        BYTE                   Fs1
+        BYTE   W24
+        BYTE           N72     Gs1
+        BYTE   W24
+// 020   ----------------------------------------
+        BYTE   W48
+        BYTE                   As1
+        BYTE   W48
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W48
+        BYTE           N24     Fs1   v070
+        BYTE   W24
+        BYTE                   Gs1
+        BYTE   W24
+// 025   ----------------------------------------
+        BYTE                   Bn1   v085
+        BYTE   W24
+        BYTE                   Cs2
+        BYTE   W24
+        BYTE                   Ds2
+        BYTE   W24
+        BYTE           N48     En2   v100
+        BYTE   W24
+// 026   ----------------------------------------
+        BYTE   W24
+        BYTE           N24     Gs2
+        BYTE   W24
+        BYTE           N72     Gn2
+        BYTE   W48
+// 027   ----------------------------------------
+        BYTE   W24
+        BYTE                   Ds1
+        BYTE   W72
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__2_7
+// 032   ----------------------------------------
+        BYTE           N24     Gs1   v100
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__2_LOOP
+        BYTE   W24
+        BYTE                   Bn1
+        BYTE   W24
+        BYTE                   As1
+        BYTE   W24
+        BYTE                   Gs1
+        BYTE   W24
+// 033   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 3 (Midi-Chn.3) ******************//
+
+GreatCanyon_Psyche_RW__3:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   54
+        BYTE           VOL     63
+        BYTE           BENDR   12
+        BYTE   W24
+        BYTE           TIE     Gs1   v105
+        BYTE   W72
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W48
+        BYTE           EOT
+        BYTE   W48
+// 003   ----------------------------------------
+        BYTE   W23
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N48     Gs1   v127
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W42
+        BYTE           N06     Cs1
+        BYTE   W12
+        BYTE           N12     Ds1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__3_4:
+        BYTE           N42     Gs1   v127
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W36
+        BYTE           N06     Cs1
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W12
+        BYTE           N12     Gs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N48     Bn1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W18
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__3_5:
+        BYTE   W24
+        BYTE           N06     Bn1   v127
+        BYTE   W12
+        BYTE           N12     Gs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N36     Bn1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W30
+        BYTE           N06     Bn0
+        BYTE   W12
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__3_6:
+        BYTE           N06     Bn1   v127
+        BYTE   W12
+        BYTE                   Gs1
+        BYTE   W06
+        BYTE                   Bn1
+        BYTE   W05
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N48     Cs2
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W42
+        BYTE           N06
+        BYTE   W12
+        BYTE           N12     Gs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE   PEND
+// 007   ----------------------------------------
+GreatCanyon_Psyche_RW__3_7:
+        BYTE           N36     Cs2   v127
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W30
+        BYTE           N06     Gs1
+        BYTE   W12
+        BYTE                   Cs2
+        BYTE   W12
+        BYTE                   Cs1
+        BYTE   W06
+        BYTE                   Ds1
+        BYTE   W05
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N48     En1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W18
+        BYTE   PEND
+// 008   ----------------------------------------
+        BYTE   W24
+        BYTE           N06
+        BYTE   W12
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W05
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N36     Fs1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W30
+        BYTE           N06     Cs1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W06
+// 009   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W12
+        BYTE           N12     Ds1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N48     Gs1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W42
+        BYTE           N06     Cs1
+        BYTE   W12
+        BYTE           N12     Ds1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_7
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__3_LOOP:
+        BYTE   W24
+        BYTE           N06     En1   v127
+        BYTE   W12
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W05
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N36     Fs1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W30
+        BYTE           N06     Cs1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W06
+// 015   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W12
+        BYTE           N12     Ds1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     Gs1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N18
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W15
+        BYTE           N06     Ds1
+        BYTE   W06
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Gs1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N12     Ds1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W09
+        BYTE                   c_v-27
+        BYTE   W01
+// 016   ----------------------------------------
+GreatCanyon_Psyche_RW__3_16:
+        BYTE           N10     Gs1   v127
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W05
+        BYTE           N04
+        BYTE   W06
+        BYTE                   Gs1
+        BYTE   W06
+        BYTE                   Gs1
+        BYTE   W12
+        BYTE           N12     Cs1
+        BYTE   W11
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N24     Ds1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W21
+        BYTE                   c_v-27
+        BYTE   W01
+        BYTE           N18     Bn1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N12
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W03
+        BYTE   PEND
+// 017   ----------------------------------------
+        BYTE   W06
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Fs1
+        BYTE   W11
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Bn1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Fs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     Bn1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N12
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W09
+        BYTE           N01
+        BYTE   W06
+        BYTE           N06     Fs1
+        BYTE   W06
+        BYTE                   Gs1
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+// 018   ----------------------------------------
+GreatCanyon_Psyche_RW__3_18:
+        BYTE           N06     Ds2   v127
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Bn1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     Cs2
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N18
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W15
+        BYTE           N06     Cs1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Fs1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Bn1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE   PEND
+// 019   ----------------------------------------
+        BYTE           N12     Cs2
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W05
+        BYTE           N06
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Ds2
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W03
+        BYTE           N06     Cs2
+        BYTE   W06
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Bn1
+        BYTE   W11
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Gs1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Fs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     En1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N18
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W03
+// 020   ----------------------------------------
+        BYTE   W12
+        BYTE           N06     Bn0
+        BYTE   W06
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     En1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Gs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N10     Fs1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W05
+        BYTE           N05
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N05
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W03
+        BYTE           N04
+        BYTE   W12
+        BYTE           N12     Cs1
+        BYTE   W11
+        BYTE           BEND    c_v-11
+        BYTE   W01
+// 021   ----------------------------------------
+        BYTE           N12     Ds1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE           N12     Fs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     Gs1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N18
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W15
+        BYTE           N06     Ds1
+        BYTE   W06
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Gs1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N12     Ds1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W09
+        BYTE                   c_v-27
+        BYTE   W01
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_16
+// 023   ----------------------------------------
+        BYTE   W06
+        BYTE           N01     Bn1   v127
+        BYTE   W06
+        BYTE           N06     En1
+        BYTE   W06
+        BYTE                   Fs1
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Bn1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Fs1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     Bn1
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N12
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W09
+        BYTE           N01
+        BYTE   W06
+        BYTE           N06     Fs1
+        BYTE   W06
+        BYTE                   Gs1
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_18
+// 025   ----------------------------------------
+        BYTE           N12     Cs2   v127
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W05
+        BYTE           N06
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Ds2
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W03
+        BYTE           N06     Cs2
+        BYTE   W06
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Bn1
+        BYTE   W11
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     Gs1
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Bn1
+        BYTE   W12
+        BYTE           N18     As1
+        BYTE   W18
+        BYTE           N06
+        BYTE   W06
+// 026   ----------------------------------------
+        BYTE                   As1
+        BYTE   W06
+        BYTE           N01
+        BYTE   W06
+        BYTE           N06     Cs2
+        BYTE   W06
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+        BYTE           N06     En2
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W04
+        BYTE           N01
+        BYTE   W06
+        BYTE           N12     Cs2
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N18     Ds2
+        BYTE   W03
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W10
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE           N06     Gn2
+        BYTE   W02
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W03
+        BYTE           N06     Ds2
+        BYTE   W12
+        BYTE                   Cs2
+        BYTE   W06
+        BYTE           N01
+        BYTE   W05
+        BYTE           BEND    c_v-11
+        BYTE   W01
+// 027   ----------------------------------------
+        BYTE           N24     Ds2
+        BYTE   W01
+        BYTE           BEND    c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W21
+        BYTE                   c_v-27
+        BYTE   W01
+        BYTE           N48     Gs1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W42
+        BYTE           N06     Cs1
+        BYTE   W12
+        BYTE           N12     Ds1
+        BYTE   W11
+        BYTE           BEND    c_v-27
+        BYTE   W01
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__3_7
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__3_LOOP
+        BYTE   W24
+        BYTE           N06     En1   v127
+        BYTE   W12
+        BYTE                   Ds1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W05
+        BYTE           BEND    c_v-27
+        BYTE   W01
+        BYTE           N36     Fs1
+        BYTE   W02
+        BYTE           BEND    c_v-22
+        BYTE   W01
+        BYTE                   c_v-16
+        BYTE   W01
+        BYTE                   c_v-11
+        BYTE   W01
+        BYTE                   c_v-6
+        BYTE   W01
+        BYTE                   c_v+0
+        BYTE   W30
+        BYTE           N06     Cs1
+        BYTE   W06
+        BYTE                   En1
+        BYTE   W06
+// 033   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W12
+        BYTE           N12     Ds1
+        BYTE   W12
+        BYTE   FINE
+
+//****************** Track 4 (Midi-Chn.4) ******************//
+
+GreatCanyon_Psyche_RW__4:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   52
+        BYTE           PAN     c_v+15
+        BYTE           VOL     64
+        BYTE           BEND    c_v-64
+        BYTE           TIE     Ds3   v120
+        BYTE   W21
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W66
+        BYTE   W01
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W48
+        BYTE           EOT
+        BYTE   W48
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__4_LOOP:
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W48
+        BYTE   W01
+        BYTE           BENDR   12
+        BYTE   W44
+        BYTE   W03
+// 016   ----------------------------------------
+        BYTE           N36     Ds3   v105
+        BYTE   W48
+        BYTE           N03     Ds3   v120
+        BYTE   W12
+        BYTE           N04     Cs3   v090
+        BYTE   W06
+        BYTE                   Ds3   v110
+        BYTE   W06
+        BYTE           N60     Fs3
+        BYTE   W24
+// 017   ----------------------------------------
+        BYTE   W66
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE           N03     Fs3   v100
+        BYTE   W12
+        BYTE           N06     Ds3
+        BYTE   W12
+// 018   ----------------------------------------
+        BYTE           N03     Cs3
+        BYTE   W12
+        BYTE           N06     Bn2
+        BYTE   W12
+        BYTE           N60     Cs3   v110
+        BYTE   W72
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE           N24     Gs3   v105
+        BYTE   W24
+        BYTE           N12
+        BYTE   W12
+        BYTE           N04     As3   v090
+        BYTE   W06
+        BYTE                   Gs3   v110
+        BYTE   W06
+        BYTE           N03     Fs3   v120
+        BYTE   W12
+        BYTE                   Gs3
+        BYTE   W12
+        BYTE           N60     Ds3   v110
+        BYTE   W24
+// 023   ----------------------------------------
+        BYTE   W66
+        BYTE           N04     Fs3
+        BYTE   W06
+        BYTE           N03     Gs3   v120
+        BYTE   W12
+        BYTE                   Fs3
+        BYTE   W12
+// 024   ----------------------------------------
+        BYTE           N24     Ds3   v110
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE           BENDR   2
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__4_LOOP
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 5 (Midi-Chn.5) ******************//
+
+GreatCanyon_Psyche_RW__5:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   52
+        BYTE           PAN     c_v-16
+        BYTE           VOL     70
+        BYTE           BEND    c_v-64
+        BYTE           TIE     Gs2   v110
+        BYTE   W21
+        BYTE           BEND    c_v-56
+        BYTE   W02
+        BYTE                   c_v-43
+        BYTE   W02
+        BYTE                   c_v-26
+        BYTE   W02
+        BYTE                   c_v-12
+        BYTE   W02
+        BYTE                   c_v+0
+        BYTE   W66
+        BYTE   W01
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W48
+        BYTE           EOT
+        BYTE   W48
+// 003   ----------------------------------------
+        BYTE   W96
+// 004   ----------------------------------------
+        BYTE   W96
+// 005   ----------------------------------------
+        BYTE   W96
+// 006   ----------------------------------------
+        BYTE   W96
+// 007   ----------------------------------------
+        BYTE   W96
+// 008   ----------------------------------------
+        BYTE   W96
+// 009   ----------------------------------------
+        BYTE   W96
+// 010   ----------------------------------------
+        BYTE   W96
+// 011   ----------------------------------------
+        BYTE   W96
+// 012   ----------------------------------------
+        BYTE   W96
+// 013   ----------------------------------------
+        BYTE   W96
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__5_LOOP:
+        BYTE   W96
+// 015   ----------------------------------------
+        BYTE   W48
+        BYTE   W01
+        BYTE           BENDR   12
+        BYTE   W44
+        BYTE   W03
+// 016   ----------------------------------------
+        BYTE           N36     Gs2   v105
+        BYTE   W48
+        BYTE           N03     Gs2   v120
+        BYTE   W12
+        BYTE           N04     Fs2   v090
+        BYTE   W06
+        BYTE                   Gs2   v110
+        BYTE   W06
+        BYTE           N60     Bn2
+        BYTE   W24
+// 017   ----------------------------------------
+        BYTE   W66
+        BYTE           N04     Ds3   v090
+        BYTE   W06
+        BYTE           N03     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Bn2
+        BYTE   W12
+// 018   ----------------------------------------
+        BYTE           N03     Gs2
+        BYTE   W12
+        BYTE           N06     Fs2
+        BYTE   W12
+        BYTE           N60     En2   v110
+        BYTE   W72
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE           N24     Ds3   v105
+        BYTE   W24
+        BYTE           N12
+        BYTE   W12
+        BYTE           N04     Cs3   v090
+        BYTE   W06
+        BYTE                   Ds3   v110
+        BYTE   W06
+        BYTE           N03     Cs3   v120
+        BYTE   W12
+        BYTE                   Ds3
+        BYTE   W12
+        BYTE           N48     Bn2   v110
+        BYTE   W24
+// 023   ----------------------------------------
+        BYTE   W66
+        BYTE           N04     Cs3
+        BYTE   W06
+        BYTE           N03     Ds3   v120
+        BYTE   W12
+        BYTE                   Cs3
+        BYTE   W12
+// 024   ----------------------------------------
+        BYTE           N24     Bn2   v110
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W96
+// 028   ----------------------------------------
+        BYTE   W96
+// 029   ----------------------------------------
+        BYTE   W96
+// 030   ----------------------------------------
+        BYTE   W96
+// 031   ----------------------------------------
+        BYTE   W96
+// 032   ----------------------------------------
+        BYTE           BENDR   2
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__5_LOOP
+        BYTE   W96
+// 033   ----------------------------------------
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 6 (Midi-Chn.6) ******************//
+
+GreatCanyon_Psyche_RW__6:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   47
+        BYTE           VOL     57
+        BYTE   W12
+        BYTE           N03     Gs1   v095
+        BYTE   W03
+        BYTE                   Gs1   v099
+        BYTE   W06
+        BYTE           N15     Gs1   v127
+        BYTE   W15
+        BYTE           N12     Gs1   v045
+        BYTE   W12
+        BYTE                   Gs1   v020
+        BYTE   W48
+// 001   ----------------------------------------
+        BYTE   W60
+        BYTE           N03     Gs1   v095
+        BYTE   W03
+        BYTE                   Gs1   v099
+        BYTE   W06
+        BYTE           N15     Gs1   v127
+        BYTE   W24
+        BYTE   W03
+// 002   ----------------------------------------
+        BYTE   W96
+// 003   ----------------------------------------
+GreatCanyon_Psyche_RW__6_3:
+        BYTE   W24
+        BYTE           N12     Gs1   v127
+        BYTE   W72
+        BYTE   PEND
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__6_4:
+        BYTE           N12     Gs1   v127
+        BYTE   W60
+        BYTE           N03     Gs1   v095
+        BYTE   W03
+        BYTE                   Gs1   v099
+        BYTE   W06
+        BYTE           N15     Bn1   v127
+        BYTE   W24
+        BYTE   W03
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__6_5:
+        BYTE   W48
+        BYTE           N12     Bn1   v127
+        BYTE   W48
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__6_6:
+        BYTE   W12
+        BYTE           N03     Gs1   v095
+        BYTE   W03
+        BYTE                   Gs1   v099
+        BYTE   W06
+        BYTE           N15     Cs2   v127
+        BYTE   W72
+        BYTE   W03
+        BYTE   PEND
+// 007   ----------------------------------------
+GreatCanyon_Psyche_RW__6_7:
+        BYTE           N12     Cs2   v127
+        BYTE   W60
+        BYTE           N03     Gs1   v095
+        BYTE   W03
+        BYTE                   Gs1   v099
+        BYTE   W06
+        BYTE           N15     En1   v127
+        BYTE   W24
+        BYTE   W03
+        BYTE   PEND
+// 008   ----------------------------------------
+        BYTE   W48
+        BYTE           N12     Fs1
+        BYTE   W48
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_3
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_7
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__6_LOOP:
+        BYTE   W48
+        BYTE           N12     Fs1   v127
+        BYTE   W24
+        BYTE                   Fs1
+        BYTE   W24
+// 015   ----------------------------------------
+GreatCanyon_Psyche_RW__6_15:
+        BYTE           N12     Fs1   v127
+        BYTE   W24
+        BYTE                   Gs1
+        BYTE   W72
+        BYTE   PEND
+// 016   ----------------------------------------
+GreatCanyon_Psyche_RW__6_16:
+        BYTE           N12     Gs1   v127
+        BYTE   W72
+        BYTE                   Bn1
+        BYTE   W24
+        BYTE   PEND
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_5
+// 018   ----------------------------------------
+GreatCanyon_Psyche_RW__6_18:
+        BYTE   W24
+        BYTE           N12     Cs2   v127
+        BYTE   W72
+        BYTE   PEND
+// 019   ----------------------------------------
+        BYTE                   Cs2
+        BYTE   W72
+        BYTE                   En1
+        BYTE   W24
+// 020   ----------------------------------------
+        BYTE   W48
+        BYTE                   Fs1
+        BYTE   W24
+        BYTE                   Fs1
+        BYTE   W24
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_15
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_16
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_5
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_18
+// 025   ----------------------------------------
+        BYTE           N12     Cs2   v127
+        BYTE   W72
+        BYTE                   Dn2
+        BYTE   W24
+// 026   ----------------------------------------
+        BYTE   W48
+        BYTE                   Ds2
+        BYTE   W24
+        BYTE                   Ds2
+        BYTE   W24
+// 027   ----------------------------------------
+        BYTE                   Ds2
+        BYTE   W24
+        BYTE                   Gs1
+        BYTE   W72
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__6_7
+// 032   ----------------------------------------
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__6_LOOP
+        BYTE   W48
+        BYTE           N12     Fs1   v127
+        BYTE   W24
+        BYTE                   Fs1
+        BYTE   W24
+// 033   ----------------------------------------
+        BYTE                   Fs1
+        BYTE   W24
+        BYTE   FINE
+
+//****************** Track 7 (Midi-Chn.7) ******************//
+
+GreatCanyon_Psyche_RW__7:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   24
+        BYTE           VOL     38
+        BYTE           PAN     c_v-63
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W44
+        BYTE   W03
+        BYTE                   c_v-10
+        BYTE   W48
+        BYTE   W01
+// 003   ----------------------------------------
+        BYTE   W24
+        BYTE           N06     Ds1   v100
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v100
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+// 004   ----------------------------------------
+        BYTE           N06     Ds1   v100
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Ds2   v100
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W15
+        BYTE           N06     Ds1   v100
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 005   ----------------------------------------
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v100
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE           N06     Ds1   v100
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 006   ----------------------------------------
+        BYTE                   Ds2   v100
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W15
+        BYTE           N06     Gs1   v100
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v100
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+// 007   ----------------------------------------
+        BYTE           N06     Gs1   v100
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W15
+        BYTE           N06     Gs1   v100
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 008   ----------------------------------------
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v100
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE           N06     Gs1   v100
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v100
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 009   ----------------------------------------
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W15
+        BYTE           N06     Ds1   v127
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+// 010   ----------------------------------------
+GreatCanyon_Psyche_RW__7_10:
+        BYTE           N06     Ds1   v127
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W15
+        BYTE           N06     Ds1   v127
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE   PEND
+// 011   ----------------------------------------
+GreatCanyon_Psyche_RW__7_11:
+        BYTE           N02     Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE           N06     Ds1   v127
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE   PEND
+// 012   ----------------------------------------
+GreatCanyon_Psyche_RW__7_12:
+        BYTE           N02     Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W15
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE   PEND
+// 013   ----------------------------------------
+GreatCanyon_Psyche_RW__7_13:
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W15
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE   PEND
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__7_LOOP:
+        BYTE           N02     Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 015   ----------------------------------------
+GreatCanyon_Psyche_RW__7_15:
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W15
+        BYTE           N06     Gs0   v127
+        BYTE   W06
+        BYTE           N03     Gs0   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Ds2   v080
+        BYTE   W06
+        BYTE                   Ds2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W15
+        BYTE   PEND
+// 016   ----------------------------------------
+GreatCanyon_Psyche_RW__7_16:
+        BYTE           N06     Gs0   v127
+        BYTE   W06
+        BYTE           N03     Gs0   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Ds2   v080
+        BYTE   W06
+        BYTE                   Ds2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W15
+        BYTE           N06     Bn0   v127
+        BYTE   W06
+        BYTE           N03     Bn0   v010
+        BYTE   W06
+        BYTE           N02     Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v060
+        BYTE   W03
+        BYTE                   Fs2   v100
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE   PEND
+// 017   ----------------------------------------
+GreatCanyon_Psyche_RW__7_17:
+        BYTE           N02     Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v001
+        BYTE   W06
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v060
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W15
+        BYTE           N06     Bn0   v127
+        BYTE   W06
+        BYTE           N03     Bn0   v010
+        BYTE   W06
+        BYTE           N02     Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v060
+        BYTE   W03
+        BYTE                   Fs2   v100
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Bn1   v080
+        BYTE   W06
+        BYTE                   Bn1   v001
+        BYTE   W06
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v060
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE   PEND
+// 018   ----------------------------------------
+        BYTE                   Bn1   v127
+        BYTE   W03
+        BYTE                   Bn1   v070
+        BYTE   W03
+        BYTE                   Bn1   v040
+        BYTE   W03
+        BYTE                   Bn1   v030
+        BYTE   W15
+        BYTE           N06     Cs0   v127
+        BYTE   W06
+        BYTE           N03     Cs0   v010
+        BYTE   W06
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Fs1   v127
+        BYTE   W03
+        BYTE                   Fs1   v070
+        BYTE   W03
+        BYTE                   Fs1   v040
+        BYTE   W03
+        BYTE                   Fs1   v030
+        BYTE   W03
+// 019   ----------------------------------------
+        BYTE           N06     Cs0   v127
+        BYTE   W06
+        BYTE           N03     Cs0   v010
+        BYTE   W06
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W15
+        BYTE           N06     En0   v127
+        BYTE   W06
+        BYTE           N03     En0   v010
+        BYTE   W06
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+// 020   ----------------------------------------
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Bn1   v127
+        BYTE   W03
+        BYTE                   Bn1   v060
+        BYTE   W03
+        BYTE                   Bn1   v040
+        BYTE   W03
+        BYTE                   Bn1   v030
+        BYTE   W03
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Bn1   v127
+        BYTE   W03
+        BYTE                   Bn1   v070
+        BYTE   W03
+        BYTE                   Bn1   v040
+        BYTE   W03
+        BYTE                   Bn1   v030
+        BYTE   W03
+        BYTE           N06     Fs0   v127
+        BYTE   W06
+        BYTE           N03     Fs0   v010
+        BYTE   W06
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v060
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_15
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_16
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_17
+// 024   ----------------------------------------
+        BYTE           N02     Bn1   v127
+        BYTE   W03
+        BYTE                   Bn1   v070
+        BYTE   W03
+        BYTE                   Bn1   v040
+        BYTE   W03
+        BYTE                   Bn1   v030
+        BYTE   W15
+        BYTE           N06     Cs1   v127
+        BYTE   W06
+        BYTE           N03     Cs1   v010
+        BYTE   W06
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Bn1   v127
+        BYTE   W03
+        BYTE                   Bn1   v070
+        BYTE   W03
+        BYTE                   Bn1   v040
+        BYTE   W03
+        BYTE                   Bn1   v030
+        BYTE   W03
+// 025   ----------------------------------------
+        BYTE           N06     Cs1   v127
+        BYTE   W06
+        BYTE           N03     Cs1   v010
+        BYTE   W06
+        BYTE           N02     Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v100
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v080
+        BYTE   W06
+        BYTE                   Gs1   v001
+        BYTE   W06
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v060
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Bn1   v127
+        BYTE   W03
+        BYTE                   Bn1   v070
+        BYTE   W03
+        BYTE                   Bn1   v040
+        BYTE   W03
+        BYTE                   Bn1   v030
+        BYTE   W03
+        BYTE           N06     As0   v127
+        BYTE   W06
+        BYTE           N03     As0   v010
+        BYTE   W06
+        BYTE           N02     En2   v127
+        BYTE   W03
+        BYTE                   En2   v060
+        BYTE   W03
+        BYTE                   En2   v100
+        BYTE   W03
+        BYTE                   En2   v040
+        BYTE   W03
+// 026   ----------------------------------------
+        BYTE                   Cs2   v080
+        BYTE   W06
+        BYTE                   Cs2   v001
+        BYTE   W06
+        BYTE                   En2   v127
+        BYTE   W03
+        BYTE                   En2   v060
+        BYTE   W03
+        BYTE                   En2   v040
+        BYTE   W03
+        BYTE                   En2   v030
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE           N06     Gn2   v127
+        BYTE   W06
+        BYTE           N03     Gn2   v010
+        BYTE   W06
+        BYTE           N02     Gn2   v127
+        BYTE   W03
+        BYTE                   Gn2   v060
+        BYTE   W03
+        BYTE                   Gn2   v100
+        BYTE   W03
+        BYTE                   Gn2   v040
+        BYTE   W03
+        BYTE                   Gn2   v080
+        BYTE   W06
+        BYTE                   Gn2   v001
+        BYTE   W18
+// 027   ----------------------------------------
+        BYTE   W24
+        BYTE           N06     Ds1   v127
+        BYTE   W06
+        BYTE           N03     Ds1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_10
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_11
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_12
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__7_13
+// 032   ----------------------------------------
+        BYTE           N02     Gs1   v127
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__7_LOOP
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs1   v127
+        BYTE   W03
+        BYTE                   Gs1   v070
+        BYTE   W03
+        BYTE                   Gs1   v040
+        BYTE   W03
+        BYTE                   Gs1   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 033   ----------------------------------------
+        BYTE                   Cs2   v127
+        BYTE   W03
+        BYTE                   Cs2   v070
+        BYTE   W03
+        BYTE                   Cs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v030
+        BYTE   W15
+        BYTE   FINE
+
+//****************** Track 8 (Midi-Chn.8) ******************//
+
+GreatCanyon_Psyche_RW__8:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   71
+        BYTE           VOL     38
+        BYTE           PAN     c_v+63
+        BYTE   W96
+// 001   ----------------------------------------
+        BYTE   W96
+// 002   ----------------------------------------
+        BYTE   W44
+        BYTE   W03
+        BYTE                   c_v+10
+        BYTE   W48
+        BYTE   W01
+// 003   ----------------------------------------
+GreatCanyon_Psyche_RW__8_3:
+        BYTE   W24
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE   PEND
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__8_4:
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W15
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE           N03     Bn1   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__8_5:
+        BYTE           N02     Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE           N06     Bn1   v127
+        BYTE   W06
+        BYTE           N03     Bn1   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__8_6:
+        BYTE           N02     Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W15
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE           N03     Cs2   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE   PEND
+// 007   ----------------------------------------
+GreatCanyon_Psyche_RW__8_7:
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE           N03     Cs2   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W15
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE           N03     Cs2   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE   PEND
+// 008   ----------------------------------------
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE           N03     Cs2   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+// 009   ----------------------------------------
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W15
+        BYTE           N06     Gs1   v127
+        BYTE   W06
+        BYTE           N03     Gs1   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_7
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__8_LOOP:
+        BYTE           N02     Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE           N03     Cs2   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+// 015   ----------------------------------------
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W24
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Gs2   v080
+        BYTE   W06
+        BYTE                   Gs2   v001
+        BYTE   W06
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W15
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v070
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W03
+// 016   ----------------------------------------
+GreatCanyon_Psyche_RW__8_16:
+        BYTE   W12
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Gs2   v080
+        BYTE   W06
+        BYTE                   Gs2   v001
+        BYTE   W06
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W36
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE   PEND
+// 017   ----------------------------------------
+GreatCanyon_Psyche_RW__8_17:
+        BYTE           N02     Fs2   v080
+        BYTE   W06
+        BYTE                   Fs2   v001
+        BYTE   W06
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W03
+        BYTE                   Bn2   v127
+        BYTE   W03
+        BYTE                   Bn2   v070
+        BYTE   W03
+        BYTE                   Bn2   v040
+        BYTE   W03
+        BYTE                   Bn2   v030
+        BYTE   W03
+        BYTE                   Cs3   v127
+        BYTE   W03
+        BYTE                   Cs3   v070
+        BYTE   W03
+        BYTE                   Cs3   v040
+        BYTE   W03
+        BYTE                   Cs3   v030
+        BYTE   W15
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v080
+        BYTE   W06
+        BYTE                   Fs2   v001
+        BYTE   W06
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W03
+        BYTE   PEND
+// 018   ----------------------------------------
+        BYTE   W12
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W15
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v080
+        BYTE   W06
+        BYTE                   Cs2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE                   En2   v127
+        BYTE   W03
+        BYTE                   En2   v070
+        BYTE   W03
+        BYTE                   En2   v040
+        BYTE   W03
+        BYTE                   En2   v030
+        BYTE   W15
+// 019   ----------------------------------------
+        BYTE   W12
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Cs2   v080
+        BYTE   W06
+        BYTE                   Cs2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W15
+        BYTE                   Bn2   v127
+        BYTE   W03
+        BYTE                   Bn2   v070
+        BYTE   W03
+        BYTE                   Bn2   v040
+        BYTE   W03
+        BYTE                   Bn2   v030
+        BYTE   W15
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+// 020   ----------------------------------------
+        BYTE                   En2   v080
+        BYTE   W06
+        BYTE                   En2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W15
+        BYTE                   Bn2   v127
+        BYTE   W03
+        BYTE                   Bn2   v070
+        BYTE   W03
+        BYTE                   Bn2   v040
+        BYTE   W03
+        BYTE                   Bn2   v030
+        BYTE   W15
+        BYTE                   As2   v127
+        BYTE   W03
+        BYTE                   As2   v060
+        BYTE   W03
+        BYTE                   As2   v100
+        BYTE   W03
+        BYTE                   As2   v040
+        BYTE   W03
+        BYTE                   En2   v080
+        BYTE   W06
+        BYTE                   En2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+// 021   ----------------------------------------
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W24
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Gs2   v080
+        BYTE   W06
+        BYTE                   Gs2   v001
+        BYTE   W06
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W15
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v070
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W03
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_16
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_17
+// 024   ----------------------------------------
+        BYTE   W12
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v030
+        BYTE   W15
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   En2   v080
+        BYTE   W06
+        BYTE                   En2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE                   En2   v127
+        BYTE   W03
+        BYTE                   En2   v070
+        BYTE   W03
+        BYTE                   En2   v040
+        BYTE   W03
+        BYTE                   En2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+// 025   ----------------------------------------
+        BYTE   W12
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v100
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   En2   v080
+        BYTE   W06
+        BYTE                   En2   v001
+        BYTE   W06
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v060
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W15
+        BYTE                   En2   v127
+        BYTE   W03
+        BYTE                   En2   v070
+        BYTE   W03
+        BYTE                   En2   v040
+        BYTE   W03
+        BYTE                   En2   v030
+        BYTE   W15
+        BYTE                   Cs3   v127
+        BYTE   W03
+        BYTE                   Cs3   v060
+        BYTE   W03
+        BYTE                   Cs3   v100
+        BYTE   W03
+        BYTE                   Cs3   v040
+        BYTE   W03
+// 026   ----------------------------------------
+        BYTE                   Gs2   v080
+        BYTE   W06
+        BYTE                   Gs2   v001
+        BYTE   W06
+        BYTE                   Cs3   v127
+        BYTE   W03
+        BYTE                   Cs3   v060
+        BYTE   W03
+        BYTE                   Cs3   v040
+        BYTE   W03
+        BYTE                   Cs3   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE                   En3   v127
+        BYTE   W03
+        BYTE                   En3   v070
+        BYTE   W03
+        BYTE                   En3   v040
+        BYTE   W03
+        BYTE                   En3   v030
+        BYTE   W03
+        BYTE           N06     Ds3   v127
+        BYTE   W06
+        BYTE           N03     Ds3   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds3   v080
+        BYTE   W06
+        BYTE                   Ds3   v001
+        BYTE   W18
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_3
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__8_7
+// 032   ----------------------------------------
+        BYTE           N02     Ds2   v127
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__8_LOOP
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W03
+        BYTE                   Gs2   v127
+        BYTE   W03
+        BYTE                   Gs2   v070
+        BYTE   W03
+        BYTE                   Gs2   v040
+        BYTE   W03
+        BYTE                   Gs2   v030
+        BYTE   W03
+        BYTE           N06     Cs2   v127
+        BYTE   W06
+        BYTE           N03     Cs2   v010
+        BYTE   W06
+        BYTE           N02     Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+        BYTE                   Ds2   v127
+        BYTE   W03
+        BYTE                   Ds2   v070
+        BYTE   W03
+        BYTE                   Ds2   v040
+        BYTE   W03
+        BYTE                   Ds2   v030
+        BYTE   W03
+        BYTE                   Ds3   v127
+        BYTE   W03
+        BYTE                   Ds3   v060
+        BYTE   W03
+        BYTE                   Ds3   v100
+        BYTE   W03
+        BYTE                   Ds3   v040
+        BYTE   W03
+// 033   ----------------------------------------
+        BYTE                   Fs2   v127
+        BYTE   W03
+        BYTE                   Fs2   v070
+        BYTE   W03
+        BYTE                   Fs2   v040
+        BYTE   W03
+        BYTE                   Fs2   v030
+        BYTE   W15
+        BYTE   FINE
+
+//***************** Track 9 (Midi-Chn.10) ******************//
+
+GreatCanyon_Psyche_RW__9:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   11
+        BYTE           VOL     76
+        BYTE   W24
+        BYTE           N04     Gs3   v110
+        BYTE   W06
+        BYTE           N02     Gs3   v055
+        BYTE   W06
+        BYTE           N04     Ds4   v110
+        BYTE   W06
+        BYTE                   Ds4   v100
+        BYTE   W06
+        BYTE                   Cs4   v110
+        BYTE   W06
+        BYTE           N02     Cs4   v055
+        BYTE   W06
+        BYTE           N04     Ds4   v100
+        BYTE   W06
+        BYTE           N02     Ds4   v055
+        BYTE   W06
+        BYTE           N04     Fs4   v100
+        BYTE   W06
+        BYTE           N02     Fs4   v055
+        BYTE   W06
+        BYTE           N04     Gs4   v110
+        BYTE   W06
+        BYTE           N02     Gs4   v055
+        BYTE   W06
+// 001   ----------------------------------------
+        BYTE           N04     Gs3   v110
+        BYTE   W06
+        BYTE           N02     Gs3   v055
+        BYTE   W06
+        BYTE           N04     Ds4   v110
+        BYTE   W06
+        BYTE                   Ds4   v100
+        BYTE   W06
+        BYTE                   Cs4   v110
+        BYTE   W06
+        BYTE           N02     Cs4   v055
+        BYTE   W06
+        BYTE           N04     Ds4   v100
+        BYTE   W06
+        BYTE           N02     Ds4   v055
+        BYTE   W06
+        BYTE           N04     Fs4   v100
+        BYTE   W06
+        BYTE           N02     Fs4   v055
+        BYTE   W18
+        BYTE           N04     Gs3   v110
+        BYTE   W06
+        BYTE           N02     Gs3   v055
+        BYTE   W06
+        BYTE           N04     Ds4   v110
+        BYTE   W06
+        BYTE                   Ds4   v100
+        BYTE   W06
+// 002   ----------------------------------------
+        BYTE                   Cs4   v110
+        BYTE   W06
+        BYTE           N02     Cs4   v055
+        BYTE   W06
+        BYTE           N04     Ds4   v100
+        BYTE   W06
+        BYTE           N02     Ds4   v055
+        BYTE   W06
+        BYTE           N04     Fs4   v100
+        BYTE   W06
+        BYTE           N02     Fs4   v055
+        BYTE   W06
+        BYTE           N04     Gs4   v110
+        BYTE   W06
+        BYTE           N02     Gs4   v055
+        BYTE   W06
+        BYTE           N04     Gs3   v110
+        BYTE   W06
+        BYTE           N02     Gs3   v055
+        BYTE   W42
+// 003   ----------------------------------------
+        BYTE   W23
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs4   v090
+        BYTE   W06
+        BYTE                   Gs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__9_4:
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W17
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__9_5:
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Gs4   v090
+        BYTE   W06
+        BYTE                   Gs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__9_6:
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W06
+        BYTE                   Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs4   v090
+        BYTE   W06
+        BYTE                   Gs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_4
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_5
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_6
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_4
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__9_LOOP:
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Gs4   v090
+        BYTE   W06
+        BYTE                   Gs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+// 015   ----------------------------------------
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W78
+// 016   ----------------------------------------
+        BYTE   W96
+// 017   ----------------------------------------
+        BYTE   W96
+// 018   ----------------------------------------
+        BYTE   W96
+// 019   ----------------------------------------
+        BYTE   W96
+// 020   ----------------------------------------
+        BYTE   W96
+// 021   ----------------------------------------
+        BYTE   W96
+// 022   ----------------------------------------
+        BYTE   W96
+// 023   ----------------------------------------
+        BYTE   W96
+// 024   ----------------------------------------
+        BYTE   W96
+// 025   ----------------------------------------
+        BYTE   W96
+// 026   ----------------------------------------
+        BYTE   W96
+// 027   ----------------------------------------
+        BYTE   W24
+        BYTE                   Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs4   v090
+        BYTE   W06
+        BYTE                   Gs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__9_4
+// 032   ----------------------------------------
+        BYTE           N04     Cs4   v075
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__9_LOOP
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Gs4   v090
+        BYTE   W06
+        BYTE                   Gs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Gs3   v090
+        BYTE   W06
+        BYTE                   Gs3   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE           N02     Ds4   v090
+        BYTE   W03
+        BYTE                   Ds4   v050
+        BYTE   W02
+        BYTE           PAN     c_v+40
+        BYTE   W01
+        BYTE           N04     Cs4   v075
+        BYTE   W06
+        BYTE                   Cs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W05
+        BYTE           PAN     c_v+40
+        BYTE   W01
+// 033   ----------------------------------------
+        BYTE           N04     Fs4   v080
+        BYTE   W06
+        BYTE                   Fs4   v040
+        BYTE   W05
+        BYTE           PAN     c_v-40
+        BYTE   W01
+        BYTE           N04     Ds4   v080
+        BYTE   W06
+        BYTE                   Ds4   v040
+        BYTE   W06
+        BYTE   FINE
+
+//***************** Track 10 (Midi-Chn.11) *****************//
+
+GreatCanyon_Psyche_RW__10:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   124
+        BYTE           PAN     c_v+12
+        BYTE           VOL     57
+        BYTE   W24
+        BYTE           N02     An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+// 001   ----------------------------------------
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE           N24     En2   v065
+        BYTE   W24
+        BYTE           N02     An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+// 002   ----------------------------------------
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE           N08     Ds2   v080
+        BYTE   W48
+// 003   ----------------------------------------
+        BYTE                   Ds2
+        BYTE   W12
+        BYTE           N12     En2   v065
+        BYTE   W12
+        BYTE           N02     An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__10_4:
+        BYTE           N02     An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE           N24     En2   v065
+        BYTE   W24
+        BYTE           N02     An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__10_5:
+        BYTE           N02     An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__10_6:
+        BYTE           N24     En2   v065
+        BYTE   W24
+        BYTE           N02     An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__10_LOOP:
+        BYTE           N02     An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 026   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 027   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__10_4
+// 032   ----------------------------------------
+        BYTE           N02     An3   v090
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__10_LOOP
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+        BYTE                   An3
+        BYTE   W06
+        BYTE                   An3   v060
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W06
+        BYTE                   An3   v030
+        BYTE   W06
+        BYTE                   An3   v090
+        BYTE   W12
+// 033   ----------------------------------------
+        BYTE           N24     En2   v065
+        BYTE   W24
+        BYTE   FINE
+
+//***************** Track 11 (Midi-Chn.12) *****************//
+
+GreatCanyon_Psyche_RW__11:
+        BYTE   KEYSH   GreatCanyon_Psyche_RW__key+0
+// 000   ----------------------------------------
+        BYTE           VOICE   124
+        BYTE           PAN     c_v-13
+        BYTE           VOL     56
+        BYTE   W24
+        BYTE           N06     Fs2   v090
+        BYTE   W48
+        BYTE                   Fs2
+        BYTE   W24
+// 001   ----------------------------------------
+        BYTE           N12     An4   v080
+        BYTE   W48
+        BYTE           N05     Gn1   v090
+        BYTE   W24
+        BYTE           N06     Fs2
+        BYTE   W24
+// 002   ----------------------------------------
+        BYTE   W24
+        BYTE                   Fs2
+        BYTE   W24
+        BYTE           N12     An4   v080
+        BYTE   W48
+// 003   ----------------------------------------
+        BYTE           N05     Gn1   v090
+        BYTE   W24
+        BYTE           N06     Fs2
+        BYTE   W12
+        BYTE           N05     Ds3   v080
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+// 004   ----------------------------------------
+GreatCanyon_Psyche_RW__11_4:
+        BYTE           N12     An4   v080
+        BYTE   W12
+        BYTE           N05     Ds3
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE                   En3   v080
+        BYTE   W12
+        BYTE                   Gn1   v090
+        BYTE   W12
+        BYTE                   Ds3   v080
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Ds3   v080
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE   PEND
+// 005   ----------------------------------------
+GreatCanyon_Psyche_RW__11_5:
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+        BYTE           N12     An4   v080
+        BYTE   W12
+        BYTE           N05     Ds3
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE                   En3   v080
+        BYTE   W12
+        BYTE   PEND
+// 006   ----------------------------------------
+GreatCanyon_Psyche_RW__11_6:
+        BYTE           N05     Gn1   v090
+        BYTE   W12
+        BYTE                   Ds3   v080
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Ds3   v080
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+        BYTE   PEND
+// 007   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 008   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_5
+// 009   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 010   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 011   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_5
+// 012   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 013   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 014   ----------------------------------------
+GreatCanyon_Psyche_RW__11_LOOP:
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+        BYTE           N12     An4   v080
+        BYTE   W12
+        BYTE           N05     Ds3
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE                   En3   v080
+        BYTE   W12
+// 015   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 016   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 017   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_5
+// 018   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 019   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 020   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_5
+// 021   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 022   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 023   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_5
+// 024   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 025   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 026   ----------------------------------------
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+        BYTE           N12     Gn1   v090
+        BYTE   W12
+        BYTE           N05     Ds3   v080
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE           N12     Gn1   v090
+        BYTE   W12
+        BYTE           N05     En3   v080
+        BYTE   W12
+// 027   ----------------------------------------
+        BYTE           N12     Gn1   v090
+        BYTE   W12
+        BYTE           N05     Ds3   v080
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Ds3   v080
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+// 028   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 029   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_5
+// 030   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_6
+// 031   ----------------------------------------
+        BYTE   PATT
+         POIN2  GreatCanyon_Psyche_RW__11_4
+// 032   ----------------------------------------
+        BYTE           N05     Cs3   v100
+        BYTE   GoTo
+         POIN2  GreatCanyon_Psyche_RW__11_LOOP
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W12
+        BYTE           N05     Cs3   v100
+        BYTE   W12
+        BYTE           N06     Fs2   v090
+        BYTE   W06
+        BYTE           N05     Dn3   v120
+        BYTE   W06
+        BYTE           N12     An4   v080
+        BYTE   W12
+        BYTE           N05     Ds3
+        BYTE   W06
+        BYTE                   Dn3   v120
+        BYTE   W06
+        BYTE                   Cs3   v100
+        BYTE   W12
+        BYTE                   En3   v080
+        BYTE   W12
+// 033   ----------------------------------------
+        BYTE                   Gn1   v090
+        BYTE   W12
+        BYTE                   Ds3   v080
+        BYTE   W12
+        BYTE   FINE
+
+
+//********************** End of Song ***********************//
+
+        ALIGN 4
+GreatCanyon_Psyche_RW_:
+        BYTE   12                      // Num Tracks
+        BYTE   0                       // Unknown
+        BYTE   GreatCanyon_Psyche_RW__pri // Priority
+        BYTE   GreatCanyon_Psyche_RW__rev // Reverb
+
+        POIN2   GreatCanyon_Psyche_RW__grp
+
+        POIN2   GreatCanyon_Psyche_RW__0
+        POIN2   GreatCanyon_Psyche_RW__1
+        POIN2   GreatCanyon_Psyche_RW__2
+        POIN2   GreatCanyon_Psyche_RW__3
+        POIN2   GreatCanyon_Psyche_RW__4
+        POIN2   GreatCanyon_Psyche_RW__5
+        POIN2   GreatCanyon_Psyche_RW__6
+        POIN2   GreatCanyon_Psyche_RW__7
+        POIN2   GreatCanyon_Psyche_RW__8
+        POIN2   GreatCanyon_Psyche_RW__9
+        POIN2   GreatCanyon_Psyche_RW__10
+        POIN2   GreatCanyon_Psyche_RW__11
+
+        

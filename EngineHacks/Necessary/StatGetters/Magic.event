@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMagicModifiers: // Magic
-	POIN prAddUnitMagic prHalveIfCapturing prHalveIfRescuing prAddEquipMagic prDebuffMag-1 prRallyMag-1 prSkillFury prFortressDefensePow prFortressResistancePow prItemPassiveMag VigorDanceCheck prLifeAndDeathBonus prDefiantMag prPushMag
+	POIN prAddUnitMagic prHalveIfCapturing prHalveIfRescuing prAddEquipMagic prDebuffMag-1 prRallyMag-1 prSkillFury prFortressDefensePow prFortressResistancePow prItemPassiveMag VigorDanceCheck prLifeAndDeathBonus prDefiantMag prPushMag prEquipmentMag
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -22,5 +22,8 @@ POIN GetDebuffs|1
 
 prItemPassiveMag:
 	rPassiveStatBoosts(0x09)
+
+prEquipmentMag:
+	rEquipmentBonus(0x09)
 
 #endif // MODULAR_GETTER_MAGIC_EVENT

@@ -9,3 +9,9 @@
 #ifdef _test_ch10_
 #define _test_
 #endif
+
+//#define _test_ch15_
+
+#ifdef _test_ch15_
+#define _test_
+#endif

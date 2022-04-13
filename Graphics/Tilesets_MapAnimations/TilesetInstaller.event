@@ -49,6 +49,19 @@
     FF5CaveConfig:
     #incbin "Config/FF5Cave(Wave)_comp.dmp"
 
+// DesertBastion
+    ALIGN 4
+    DesertBastionObject:
+    #incbin "Object/DesertBastion.dmp"
+
+    ALIGN 4
+    DesertBastionPalette:
+    #incbin "Palette/DesertBastion_pal.dmp"
+
+    ALIGN 4
+    DesertBastionMapchipConfig:
+    #incbin "Config/DesertBastion_comp.dmp"
+
 //Thracia Fields, Not Inserted	
 //    ThraciaFieldsObject:
 //    #incbin "Object/fe5fields.dmp"
@@ -62,6 +75,9 @@
     #incbin "Config/fe5fields.mapchip_config"
 */
 
+    EventPointerTable(DesertBastionObjectID, DesertBastionObject)
+    EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
+    EventPointerTable(DesertBastionMapchipConfigID, DesertBastionMapchipConfig)
     EventPointerTable(ThraciaCastleObjectID, ThraciaCastleObject)
     EventPointerTable(ThraciaCastlePaletteID, ThraciaCastlePalette)
     EventPointerTable(ThraciaCastleMapchipConfigID, ThraciaCastleMapchipConfig)
