@@ -88,3 +88,9 @@ POIN SkillTester
 WORD AlacrityID
 POIN AlacrityEvent
 #include "AlacrityEvent.event"
+
+ALIGN 4
+SpurHit:
+#incbin "SpurHit.dmp"
+POIN AuraSkillCheck
+WORD SpurHitID 

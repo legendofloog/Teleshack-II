@@ -93,11 +93,6 @@ ORG 0x2c1a6
 BYTE 251
 POP
 
-PUSH // this part is from alusq, removes kill bonus for wexp
-ORG $2c142
-BYTE 0x01 0x29 0x0 0xDC 
-POP
-
 // changes RN to bugged RN (aka 1RN)
 
 PUSH

@@ -1,6 +1,31 @@
 ## Ch12xTitle
 Interlude 2: Justice[X]
 
+## Ch12xTrajanStopsYou
+[MidLeft][LoadTrajan][ThreeLineBox]
+It seems like you've still got[N]
+some choices to make, Loewe.[N]
+Talk to me when you're done.[A][X]
+
+## Ch12xTrajanConfirmation1
+[MidLeft][LoadTrajan]
+Looks like you've selected some[N]
+fine people. You ready to head out?[A][X]
+
+## Ch12xTrajanConfirmation2
+[MidRight][LoadLoewePunished]
+(Am I?)[No][X]
+
+## Ch12xTrajanRejection
+[MidLeft][LoadTrajan]
+Oh? Well, don't take too long.[N]
+Wouldn't want to keep Radnitz waiting.[A][X]
+
+## Ch12xRecruitedTwoUnits
+[MidRight][LoadLoewePunished]
+That's all sorted, then.[N]
+My business here is done.[A][X]
+
 ## Ch12xBeginningScene1
 [X]
 
@@ -638,15 +663,16 @@ Indeed. Lead the way, then.[A][X]
 ## Ch12xRadnitzEndingScene3
 [MidLeft][LoadCleo][ThreeLineBox]
 The main entrance was damaged, so our[N]
-only route into the castle lies under[N]
-its earth. My apologies for the detour.[A][X]
+only route into the castle lies[N]
+underground. Follow me closely,[AN]
+lest you get lost in the tunnels.[A][X]
 
 ## Ch12xRadnitzEndingScene4
 [MidLeft][LoadCleo]
 [MidRight][LoadEpony][ThreeLineBox]
-Excuse me, but are you certain this[N]
-is the right way? This is quite far from[N]
-the entrance, and I see no one nearby.[AN]
+[Beat]Excuse me, but are you certain this[N]
+is the right way? For a forced detour,[N]
+there seem to be few others near us.[AN]
 And what of your partner? Does our[N]
 arrival not warrant his presence?[A]
 [MidLeft]

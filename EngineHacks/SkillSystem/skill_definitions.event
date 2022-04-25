@@ -42,6 +42,7 @@
 #define ChargeID 62
 #define AcrobatID 63
 
+
 // keep it continous for debug purpose
 
 // custom skills
@@ -75,3 +76,5 @@
 #define AlacrityID 50
 #define SharpshooterID 51
 #define DesolateID 56
+#define SpurHitID 64
+#define FervorID 65
