@@ -317,3 +317,9 @@ Text(NikolasDeathQuoteText)
 SendAll(Nikolas)
 NoFade
 ENDA
+
+ALIGN 4
+SeraGiveAll:
+SendAll(Sera)
+NoFade
+ENDA
