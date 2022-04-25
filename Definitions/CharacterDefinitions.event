@@ -45,6 +45,7 @@
 #define Ilse 0x2D
 #define Rashid 0x2E
 #define Nikolas 0x2F
+#define Sera 0x30
 
 
 #define LyonSummon 0x3B
@@ -160,6 +161,11 @@
 #define Mureib 0xA9
 #define KwameReal 0xAA
 #define Mureib2 0xAB
+
+//Chapter 18 Stuff
+#define Gladiator2 0x8B
+#define Shafaqat 0xAD
+#define Barod2 0xAE
 
 
 #define Breguet 0x46

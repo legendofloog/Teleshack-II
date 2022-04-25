@@ -33,6 +33,8 @@ DeathQuote(Colossus, Chapter16, 0, ColossusDeathQuote)
 DeathQuote(Alto,Chapter17,9,AltoDeathQuoteText)
 DeathQuote(Mureib,Chapter17,2,MureibDeathQuoteText)
 DeathQuote(Mureib2,Chapter17,0,Mureib2DeathQuoteText)
+DeathQuote(Barod2,Chapter18,2,BarodDeathQuoteText)
+DeathQuote(Shafaqat,Chapter18,7,ShafaqatDeathQuoteText)
 
 
 //player units
@@ -120,3 +122,6 @@ DeathQuote(Nikolas,AllChapters,0x0,NikolasDeathQuoteText,NikolasGiveAll)
 DeathQuote(KwameReal,Chapter17,0x65,KwameRealDeathQuoteText)
 
 DeathQuote(0xFFFF,0,0,0)
+
+// ch18
+DeathQuote(Sera,AllChapters,0x0,SeraDeathQuoteText,SeraGiveAll)

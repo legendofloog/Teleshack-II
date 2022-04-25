@@ -48,6 +48,8 @@
 #define NikolasMug 0xDB
 #define AltoMug 0xDC
 #define MysteryMug 0xDD
+#define SeraMug 0xDE
+#define ShafaqatMug 0xDF
 
 
 // NPCs
@@ -848,3 +850,19 @@ AltoMugData:
 #incbin "Dmp/Alto(XVI)_palette.dmp"
 #incbin "Dmp/Alto(XVI)_minimug.dmp"
 setMugEntry(AltoMug, AltoMugData, 3, 5, 3, 3)
+
+ALIGN 16
+SeraMugData:
+#incbin "Dmp/Sera(Nobody)_mug.dmp"
+#incbin "Dmp/Sera(Nobody)_frames.dmp"
+#incbin "Dmp/Sera(Nobody)_palette.dmp"
+#incbin "Dmp/Sera(Nobody)_minimug.dmp"
+setMugEntry(SeraMug, SeraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+ShafaqatMugData:
+#incbin "Dmp/Shafaqat(RW)_mug.dmp"
+#incbin "Dmp/Shafaqat(RW)_frames.dmp"
+#incbin "Dmp/Shafaqat(RW)_palette.dmp"
+#incbin "Dmp/Shafaqat(RW)_minimug.dmp"
+setMugEntry(ShafaqatMug, ShafaqatMugData, 4, 6, 3, 4)

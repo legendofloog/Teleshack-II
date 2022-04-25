@@ -544,6 +544,21 @@ MNC2 Chapter15
 NoFade
 ENDB
 #endif
+#ifdef _test_ch18_
+ENUT FIXED_GROWTHS_FLAG_ID
+LOAD1 1 UnitsCh18
+ENUN
+LOAD1 1 UnitsCh18_2
+ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
+PROMOTE Cleo Seraphknight Argilabrys
+ENUN
+PROMOTE Loewe Dragonlord Kaiserschwert
+ENUN
+MNC2 Chapter18
+NoFade
+ENDB
+#endif
 NoFade
 ENDA
 
@@ -634,4 +649,62 @@ UNIT Jacinth Dancer Cleo Level(3,Ally,True) [2,4] 0 0 0 0 [Rapier,Vulnerary] NoA
 UNIT Darby Hunter_F Veniamin Level(15,Ally,True) [2,5] 0x0 0x0 0x0 0x0 [HoundingBow,Vulnerary] NoAI
 UNIT Nahiza Ballistician 0x0 Level(12,Ally,True) [2,6] 0x0 0x0 0x0 0x0 [SlimArch,LongArch,Elixir] NoAI
 UNIT Augur Manakete_2_F 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [Dragonstone,Vulnerary,KnightProof] NoAI
+UNIT
+
+
+UnitsCh18:
+// Ch 1 - 5
+UNIT Cleo Skyseeker              Cleo Level(UnitLvlCh18,Ally,True) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,Argilabrys,WoodlandsHuke] NoAI
+UNIT Loewe Scaleshot           Cleo Level(UnitLvlCh18,Ally,True) [0,1] 0x0 0x0 0x0 0x1 [IronBow,Kaiserschwert,DaShoota,MarksmanBow] NoAI
+UNIT Mira ThiefFighter_F         Cleo Level(6,Ally,True) [0,2] 0x0 0x0 0x0 0x1 [SilverSword,ShortSword,IronSword] NoAI
+UNIT Iskra Mage_F                Cleo Level(UnitLvlCh18,Ally,True) [0,3] 0x0 0x0 0x0 0x1 [Thunder,Stormbrand,Wind,Elfire] NoAI
+UNIT Emil LanceKnight            Cleo Level(UnitLvlCh18,Ally,True) [0,4] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,YorsYari] NoAI
+UNIT Svetomir Priest            Cleo Level(UnitLvlCh18,Ally,True) [0,5] 0x0 0x0 0x0 0x1 [Rescue,Mend,Physic,Sleep] NoAI
+UNIT Alena Myrmidon_F            Cleo Level(UnitLvlCh18,Ally,True) [0,6] 0x0 0x0 0x0 0x1 [IronSword,Miaodao,KillingEdge,FlameSword] NoAI
+UNIT Varga SwordArmor            Cleo Level(UnitLvlCh18,Ally,True) [0,7] 0x0 0x0 0x0 0x1 [SteelSword,LongSword,Claymore,IronSword] NoAI
+UNIT Delilah Sister            Cleo Level(UnitLvlCh18,Ally,True) [0,8] 0x0 0x0 0x0 0x1 [Lightning,Heal,Mend,KnightProof] NoAI
+UNIT Alex AxeFighter_F            Cleo Level(UnitLvlCh18,Ally,True) [0,9] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,Hammer,KnightProof] NoAI
+UNIT Axel AxeFighter            Cleo Level(UnitLvlCh18,Ally,True) [0,10] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,KnightProof] NoAI
+UNIT Filone Archer_F            Cleo Level(UnitLvlCh18,Ally,True) [0,11] 0x0 0x0 0x0 0x1 [MarksmanBow,IronBow,Shortbow,KillerBow] NoAI
+UNIT Zwieback BowArmor            Cleo Level(UnitLvlCh18,Ally,True) [0,12] 0x0 0x0 0x0 0x1 [SteelBow,IronBow,Longbow,MasterBow] NoAI
+UNIT Longxia Pirate_F            Cleo Level(UnitLvlCh18,Ally,True) [0,13] 0x0 0x0 0x0 0x1 [IronAxe,LunarAxe,Hurlbat,SilverAxe] NoAI
+UNIT Fangai DarkMage            Cleo Level(UnitLvlCh18,Ally,True) [0,14] 0x0 0x0 0x0 0x1 [Flux,Arachnid,Mend,Physic] NoAI
+// Interlude 1
+UNIT Mish Thief            Cleo Level(UnitLvlCh18,Ally,True) [5,0] 0x0 0x0 0x0 0x1 [IronSword,DevilDagger,Vulnerary,KillingEdge] NoAI
+UNIT Tobie PegasusRider            Cleo Level(UnitLvlCh18,Ally,True) [5,1] 0x0 0x0 0x0 0x1 [SlimLance,LongLance,IronLance,Javelin] NoAI
+UNIT Awa AxeKnight            Cleo Level(UnitLvlCh18,Ally,True) [5,2] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,Poleaxe,KnightProof] NoAI
+UNIT Cadenza Bard            Cleo Level(UnitLvlCh18,Ally,True) [5,3] 0x0 0x0 0x0 0x1 [BalladOfWar,Lightning,Wind,Elfire] NoAI
+UNIT Faolan RookKnight            Cleo Level(UnitLvlCh18,Ally,True) [5,4] 0x0 0x0 0x0 0x1 [Rapier,Javelin,IronLance,LightRune] NoAI
+//Ch 6 - 12
+UNIT Leina Troubadour            Cleo Level(UnitLvlCh18,Ally,True) [1,0] 0x0 0x0 0x0 0x1 [Rapier,IronSword,Heal,Mend] NoAI
+UNIT Cromar Hero            Cleo Level(1,Ally,True) [1,0] 0x0 0x0 0x0 0x1 [Dullahan,IronSword,SteelSword,ShortSword] NoAI
+UNIT Iberis MageArmor            Cleo Level(UnitLvlCh18,Ally,True) [1,1] 0x0 0x0 0x0 0x1 [Thunder,Fire,Wind] NoAI
+UNIT Buldak Thief            Cleo Level(UnitLvlCh18,Ally,True) [1,2] 0x0 0x0 0x0 0x1 [IronSword,BigIron,Miaodao,ThunderSword] NoAI
+UNIT Nora DragonRider            Cleo Level(UnitLvlCh18,Ally,True) [1,3] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,IronAxe] NoAI
+UNIT Hans SwordKnight            Cleo Level(UnitLvlCh18,Ally,True) [1,4] 0x0 0x0 0x0 0x1 [SteelSword,IronSword,ShortSword] NoAI
+UNIT Jenny RookKnight            Cleo Level(UnitLvlCh18,Ally,True) [1,5] 0x0 0x0 0x0 0x1 [SteelLance,IronSword,IronLance] NoAI
+UNIT Meldan DukeKnight            Cleo Level(5,Ally,True) [1,6] 0x0 0x0 0x0 0x1 [BraveLance,Greatlance,IronLance] NoAI
+UNIT Leina Troubadour            Cleo Level(UnitLvlCh18,Ally,True) [1,7] 0x0 0x0 0x0 0x1 [Rapier,IronSword,Heal] NoAI
+UNIT Valse Freelancer Cleo Level(UnitLvlCh18,Ally,True) [1,8] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,GrowthScroll,Vulnerary] NoAI
+UNIT Hornet BowKnight Cleo Level(UnitLvlCh18,Ally,True) [1,9] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,GrowthScroll,Vulnerary] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(UnitLvlCh18,Ally,True) [1,10] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(UnitLvlCh18,Ally,True) [1,11] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT Mink Bard Cleo Level(UnitLvlCh18,Ally,True) [1,12] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind] NoAI
+UNIT Tiberius Noble Cidor Level(UnitLvlCh18,Ally,True) [1,13] 0x0 0x0 0x0 0x1 [ThunderSword] NoAI
+// Interlude 2
+UNIT Ellerey LanceArmor Loewe Level(UnitLvlCh18,Ally,True) [1,14] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
+UNIT Mantou Brigand_F Loewe Level(UnitLvlCh18,Ally,True) [2,0] 0x0 0x0 0x0 0x0 [IronAxe,SilverAxe,Vulnerary]     NoAI
+UNIT Tippany DarkMage_F Loewe Level(UnitLvlCh18,Ally,True) [2,1] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
+UNIT 
+
+UnitsCh18_2:
+UNIT Pelecaye General Loewe Level(6,Ally,True) [2,2] 0x0 0x0 0x0 0x0 [MasterAxe,HandAxe,SteelLance] NoAI
+UNIT Carl SwordFighter Loewe Level(UnitLvlCh18,Ally,True) [2,3] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
+//Ch 13 - 14
+UNIT Jacinth Dancer Cleo Level(3,Ally,True) [2,4] 0 0 0 0 [Rapier,Vulnerary] NoAI
+UNIT Darby Hunter_F Veniamin Level(UnitLvlCh18,Ally,True) [2,5] 0x0 0x0 0x0 0x0 [HoundingBow,Vulnerary] NoAI
+UNIT Nahiza Ballistician 0x0 Level(14,Ally,True) [2,6] 0x0 0x0 0x0 0x0 [SlimArch,LongArch,Elixir] NoAI
+UNIT Augur Manakete_2_F 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [Dragonstone,Vulnerary,KnightProof] NoAI
+UNIT Rashid Sniper 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc,Longbow,KnightProof] NoAI
+UNIT Nikolas Falcoknight 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,LongLance,KnightProof] NoAI
 UNIT
