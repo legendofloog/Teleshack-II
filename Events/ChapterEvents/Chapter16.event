@@ -14,6 +14,7 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0, RashidRecruitment, 1)
+TurnEventPlayer(0, KofiRecruitment, 1)
 TurnEventPlayer(0, Thief1_AEvent, 7)
 TurnEventPlayer(0, Thief1_BEvent, 10)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
@@ -119,6 +120,7 @@ UNIT
 	
 NewPlayers:
 UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc] NoAI
+UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [0,0] 0x0 0x0 0x0 [GreatSword,FlameSword] NoAI
 UNIT
 
 NPCUnits:
@@ -228,6 +230,15 @@ MUSC WithUs_Song
 Text(Ch16_Rashid_Recruitment)
 CUSA Rashid
 SetFatigue(Rashid,0)
+NoFade
+ENDA
+
+KofiRecruitment:
+CameraCursor(Kofi)
+MUSC WithUs_Song
+Text(Ch16_Kofi_Recruitment)
+CUSA Kofi
+SetFatigue(Kofi,0)
 NoFade
 ENDA
 

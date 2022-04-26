@@ -50,7 +50,7 @@
 #define MysteryMug 0xDD
 #define SeraMug 0xDE
 #define ShafaqatMug 0xDF
-
+#define KofiMug 0xE0
 
 // NPCs
 #define EliasMug 0xB
@@ -866,3 +866,11 @@ ShafaqatMugData:
 #incbin "Dmp/Shafaqat(RW)_palette.dmp"
 #incbin "Dmp/Shafaqat(RW)_minimug.dmp"
 setMugEntry(ShafaqatMug, ShafaqatMugData, 4, 6, 3, 4)
+
+ALIGN 16
+KofiMugData:
+#incbin "Dmp/Kofi_mug.dmp"
+#incbin "Dmp/Kofi_frames.dmp"
+#incbin "Dmp/Kofi_palette.dmp"
+#incbin "Dmp/Kofi_minimug.dmp"
+setMugEntry(KofiMug, KofiMugData, 2, 4, 2, 2)

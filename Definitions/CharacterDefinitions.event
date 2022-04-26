@@ -57,7 +57,7 @@
 #define LyonSummon 0x3B
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
-#define Lyon_Ch17 0x40
+#define Kofi 0x40
 
 // Chapter 1 Bosses
 #define Boro_Ch1 0x41
