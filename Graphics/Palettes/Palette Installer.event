@@ -180,3 +180,9 @@ ColossusWarrior:
 LoeweCopyScaleshotUnmounted:
 	#incbin "./_palettes/LoeweCopyScaleshotUnmounted.lzpal" 
 
+KofiMageKnight:
+	#incbin "./_palettes/KofiMageKnight.lzpal" 
+
+KofiMageKnightDismounted:
+	#incbin "./_palettes/KofiMageKnightDismounted.lzpal" 
+
