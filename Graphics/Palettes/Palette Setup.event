@@ -239,3 +239,11 @@
 // LoeweCopyScaleshotUnmounted
 	setPalette(59,LoeweCopyScaleshotUnmounted)
 	setCBSP(59,LoeweCopy, 1, Dragonlord_Dismounted)
+
+// KofiMageKnight
+	setPalette(60,KofiMageKnight)
+	setCBSP(60,Kofi, 1, MageKnight)
+
+// KofiMageKnightDismounted
+	setPalette(61,KofiMageKnightDismounted)
+	setCBSP(61,Kofi, 1, MageKnight_Dismounted)

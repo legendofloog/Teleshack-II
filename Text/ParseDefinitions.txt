@@ -148,6 +148,7 @@
 [LoadAlto] = [LoadFace][0xDC][0x1]
 [LoadMystery] = [LoadFace][0xDD][0x1]
 [LoadShafaqat] = [LoadFace][0xDF][0x1]
+[LoadKofi] = [LoadFace][0xE0][0x1]
 
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
