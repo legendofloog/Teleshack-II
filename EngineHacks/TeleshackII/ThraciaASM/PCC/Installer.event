@@ -42,6 +42,7 @@ SetUnitPCC(Darcy,2)
 SetUnitPCC(Groto,0)
 SetUnitPCC(Tao,2)
 SetUnitPCC(Kofi,1)
+SetUnitPCC(Zhara,3)
 //Bosses, Generics, and NPCs
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)

@@ -52,11 +52,8 @@
 #define Darcy 0x34
 #define Groto 0x35
 #define Tao 0x36
+#define Zhara 0x37
 
-
-#define LyonSummon 0x3B
-#define KnollSummon 0x3E
-#define EvanSummon 0x3F
 #define Kofi 0x40
 
 // Chapter 1 Bosses
