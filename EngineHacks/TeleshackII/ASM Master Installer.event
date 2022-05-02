@@ -55,6 +55,8 @@ ChangeWeaponRankASMC:
 
 #include "ChangePortrait/Installer.event"
 
+#include "Reorganize/Installer.event"
+
 #include "prep_shop_each_chapter2/Installer.event"
 
 // thief vision set to 0

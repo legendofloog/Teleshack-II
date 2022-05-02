@@ -34,11 +34,9 @@ BYTE 00 00
 ALIGN 4
 
 ApsisSkillList:
-BYTE SpelltwisterID 1
-BYTE CrownPyreID 1
-BYTE StormbringerID 1
-BYTE AbsoluteZeroID 1
-BYTE DawnEyeID 1
-BYTE WindFaithID 1
+BYTE 1 StormbringerID
+BYTE 1 AbsoluteZeroID
+BYTE 1 DawnEyeID
+BYTE 1 WindFaithID
 BYTE 00 00
 ALIGN 4

@@ -29,7 +29,7 @@ beq End
 @check if its the right tome?
 mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
-cmp     r0, #0x00         @Stormbringer ID
+cmp     r0, #0x9b         @Stormbringer ID
 beq YesThereIsSkill
 b Unequipped        @If not the right tome, go to Unequipped skill
 
@@ -49,7 +49,7 @@ ldrb r1,[r1] @r1 = squares moved
 
 sub r0,r1
 cmp r0,#0 @see if we've moved as far as possible
-bgt GoBack @if not, no bonus
+bgt End @if not, no bonus
 
 @ add 30 crit
 mov r1, #0x66
@@ -76,7 +76,7 @@ Unequipped:
 @Is the second inventory slot the weapon?
 mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
-cmp     r0, #0x00         @Stormbringer ID
+cmp     r0, #0x9B         @Stormbringer ID
 beq OffHandEffect
 b End
 
@@ -89,7 +89,15 @@ cmp r0,#0xFF
 beq End
 
 ldr r3,=0x203a968 @Spaces Moved
+ldrb r2,[r3]
 mov r1, #0x66 @crit
+ldrh r0, [r4, r1]
+mov r3,#0x3
+mul r3,r2
+add r0, r3
+strh r0, [r4,r1]
+
+mov r1, #0x62 @crit
 ldrh r0, [r4, r1]
 mov r3,#0x3
 mul r3,r2
