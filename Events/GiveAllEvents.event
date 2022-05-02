@@ -320,6 +320,49 @@ ENDA
 
 ALIGN 4
 SeraGiveAll:
+Text(SeraDeathQuoteText)
 SendAll(Sera)
+NoFade
+ENDA
+
+ALIGN 4
+ApsisGiveAll:
+Text(ApsisDeathQuoteText)
+SendAll(Apsis)
+NoFade
+ENDA
+
+ALIGN 4
+OjasviGiveAll:
+Text(OjasviDeathQuoteText)
+SendAll(Ojasvi)
+NoFade
+ENDA
+
+ALIGN 4
+TaoGiveAll:
+Text(TaoDeathQuoteText)
+SendAll(Tao)
+NoFade
+ENDA
+
+ALIGN 4
+GrotoGiveAll:
+Text(GrotoDeathQuoteText)
+SendAll(Groto)
+NoFade
+ENDA
+
+ALIGN 4
+DarcyGiveAll:
+Text(DarcyDeathQuoteText)
+SendAll(Darcy)
+NoFade
+ENDA
+
+ALIGN 4
+ZharaGiveAll:
+Text(ZharaDeathQuoteText)
+SendAll(Zhara)
 NoFade
 ENDA

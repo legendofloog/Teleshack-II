@@ -102,4 +102,9 @@ BYTE HardCharLock
 BYTE Rashid
 BYTE EndLockArray
 
+ApsisArray:
+BYTE HardCharLock
+BYTE Apsis
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

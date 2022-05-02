@@ -186,3 +186,6 @@ KofiMageKnight:
 KofiMageKnightDismounted:
 	#incbin "./_palettes/KofiMageKnightDismounted.lzpal" 
 
+OjasviNoble:
+	#incbin "./_palettes/OjasviNoble.lzpal" 
+

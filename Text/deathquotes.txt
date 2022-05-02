@@ -348,11 +348,44 @@ your new champions![A][X]
 
 ## ShafaqatDeathQuoteText
 [MidLeft][LoadShafaqat]
-Defeated by this rabble...[N]
-Ridiculous...[A][CloseEyes][X]
+Defeated by this rabble[Beat][N]
+Ridiculous[Beat][A][CloseEyes][X]
 
 ## KofiDeathQuoteText
-[MidLeft][LoadKofi]
+[MidRight][LoadKofi]
 The past will continue to[N]
 haunt me[Beat] The secrets[Beat][AN]
 never to be[Beat] understood[Beat][A][X]
+
+## ApsisDeathQuoteText
+[MidRight][LoadApsis]
+Through sacrifice[Beat][N]
+All things will[Beat][CloseEyes][A][X]
+
+## OjasviDeathQuoteText
+[MidRight][LoadApsis]
+Mother[Beat] Father[Beat][N]
+is this what became of you[Beat]?[CloseEyes][A][X]
+
+## TaoDeathQuoteText
+[MidRight][LoadTao]
+I[Beat] I got hit? S-Sorry,[N]
+commander. I hope that[Beat][AN]
+this was enough to atone.[N]
+Mi, I'm on my way[Beat][CloseEyes][A][X]
+
+## GrotoDeathQuoteText
+[MidRight][LoadGroto]
+You think Groto's dying?[N]
+Groto is dying[Beat][CloseEyes][A][X]
+
+## DarcyDeathQuoteText
+[MidRight][LoadDarcy]
+Damn[Beat] It wasn't[N]
+spose t' go[Beat] like this[Beat][CloseEyes][AN][X]
+
+## ZharaDeathQuoteText
+[MidRight][LoadZhara]
+Lights fade[Beat][N]
+darkness arises[Beat][AN]
+and yet[Beat][A][X]

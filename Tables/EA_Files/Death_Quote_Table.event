@@ -121,7 +121,14 @@ DeathQuote(Rashid,AllChapters,0x0,0,RashidGiveAll)
 DeathQuote(Nikolas,AllChapters,0x0,0,NikolasGiveAll)
 DeathQuote(KwameReal,Chapter17,0x65,KwameRealDeathQuoteText)
 
-DeathQuote(0xFFFF,0,0,0)
-
 // ch18
-DeathQuote(Sera,AllChapters,0x0,SeraDeathQuoteText,SeraGiveAll)
+DeathQuote(Sera,AllChapters,0x0,0x0,SeraGiveAll)
+
+// ch18x
+DeathQuote(Apsis,AllChapters,0x0,0x0,ApsisGiveAll)
+DeathQuote(Ojasvi,AllChapters,0x0,0x0,OjasviGiveAll)
+DeathQuote(Tao,AllChapters,0x0,0x0,TaoGiveAll)
+DeathQuote(Zhara,AllChapters,0x0,0x0,ZharaGiveAll)
+DeathQuote(Groto,AllChapters,0x0,0x0,GrotoGiveAll)
+DeathQuote(Darcy,AllChapters,0x0,0x0,DarcyGiveAll)
+DeathQuote(0xFFFF,0,0,0)

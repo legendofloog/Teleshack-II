@@ -101,3 +101,38 @@ minimum range is set to 3.[X]
 Desolate: Gain +40 crit vs[N]
 enemies who are not adjacent[N]
 to any of their allies.[X]
+
+## SD_Spelltwister
+Spelltwister: Apsis has access to an arsenal of[N]
+5 personal untradeable tomes, each with an[N]
+Equip and inventory 2nd slot Off-Hand effect.[X]
+
+## SD_CrownPyre
+# pre-battle skill, made for boss-killing, higher than average hit
+Crown Pyre - Equip: Ignores 25% of foe's[N]
+Res. Executes foes below 25% of their max HP.[N]
+Off-Hand: Grants Atk = 25% of foe's missing HP.[X]
+
+## SD_Stormbreaker
+# pre-battle skill, made for crits/chip damage, low hit
+Stormbreaker - Equip: Has bonus range. If[N]
+using all move, +30 Crit (+40 at max range).[N]
+Off-Hand: Grants +3 Hit/Crit per space moved.[X]
+
+## SD_AbsoluteZero
+# aura skill, made for support/tanking, ok hit
+Absolute Zero - Equip: Foes in 2 spaces suffer[N]
+-2 AS (doubled to -4 if foe is in terrain).[N]
+Off-Hand: Grants +2 Def/Res, +10 Avoid in terrain.[X]
+
+## SD_DawnEye
+# post battle skill, made for sustain, has high hit
+Eye of Dawn - Equip: Cannot double. Locked at[N]
+1 range. Restores HP = damage dealt.[N]
+Off-Hand: Restores 7 HP after combat.[X]
+
+## SD_FaithWind
+# weapon triangle skill, made for damage/generalist, high hit
+Faith's Wind - Equip: Hit twice against melee,[N]
+cancels WT disadvantage against ranged.[N]
+Off-Hand: Grants AS = weapon range.[X]

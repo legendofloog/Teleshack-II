@@ -51,6 +51,12 @@
 #define SeraMug 0xDE
 #define ShafaqatMug 0xDF
 #define KofiMug 0xE0
+#define ApsisMug 0xE1
+#define OjasviMug 0xe2
+#define DarcyMug 0xe3
+#define GrotoMug 0xe4
+#define TaoMug 0xe5
+#define ZharaMug 0xe6
 
 // NPCs
 #define EliasMug 0xB
@@ -874,3 +880,11 @@ KofiMugData:
 #incbin "Dmp/Kofi_palette.dmp"
 #incbin "Dmp/Kofi_minimug.dmp"
 setMugEntry(KofiMug, KofiMugData, 2, 4, 2, 2)
+
+ALIGN 16
+ApsisMugData:
+#incbin "Dmp/Apsis(devisio)_mug.dmp"
+#incbin "Dmp/Apsis(devisio)_frames.dmp"
+#incbin "Dmp/Apsis(devisio)_palette.dmp"
+#incbin "Dmp/Apsis(devisio)_minimug.dmp"
+setMugEntry(ApsisMug, ApsisMugData, 3, 6, 3, 4)

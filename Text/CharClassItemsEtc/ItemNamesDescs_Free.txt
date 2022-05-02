@@ -395,3 +395,44 @@ Unmoor[X]
 
 ## UnmoorDesc
 Severs time's threads. Eff. vs. blessed.[X]
+
+## CrownPyreName
+# Unbreakable, Prf, 1-2 Range, 4 Mt, 85 Hit, 4 Wt, 0 Crit
+Crown Pyre[X]
+
+## CrownPyreDesc
+Ignores 25% Res. Executes foes below 25% HP.[X]
+
+## StormbreakerName
+# Unbreakable, Prf, 2-3 Range, 7 Mt, 65 Hit, 8 Wt, 5 Crit
+Stormbreaker[X]
+
+## StormbreakerDesc
+At max move, +30 Crit (+40 at max range).[X]
+
+## AbsoluteZeroName
+# Unbreakable, Prf, 1-2 Range, 2 Mt, 75 Hit, 5 Wt, 0 Crit
+Absolute Zero[X]
+
+## AbsoluteZeroDesc
+-2 AS to foes in 2 spaces, -4 in terrain.[X]
+
+## DawnEyeName
+# Unbreakable, Prf, 1 Range, 3 Mt, 70 Hit, 1 Wt, 0 Crit
+Eye of Dawn[X]
+
+## DawnEyeDesc
+Cannot double. Restores HP = damage dealt.[X]
+
+## FaithWindName
+Faith's Wind[X]
+
+## FaithWindDesc
+# Unbreakable, Prf, 2-3 Range, 5 Mt, 80 Hit, 6 Wt, 0 Crit
+Hits twice vs. melee. Cancels WTD vs. ranged.[X]
+
+## DancingBladeName
+Dancing Bld.[X]
+
+## DancingBladeDesc
+Hits Res. [LockIcon] Ojasvi.[X]

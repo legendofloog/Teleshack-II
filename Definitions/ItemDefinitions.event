@@ -144,6 +144,15 @@
 #define KnightProof 0x88
 #define HoundingBow 0x93
 #define HeavySpear 0x95
+#define CrownPyreItem 0x9a
+#define StormbreakerItem 0x9b
+#define AbsoluteZeroItem 0x9c
+#define EyeOfDawnItem 0x9d
+#define FaithWindItem 0x9e
+#define DancingBladeItem 0x9f
+#define BoneClub 0xa0
+#define RuneArrow 0xa1
+#define Maharaghi 0xa2
 
 #define Dragonstone 0xAA
 #define Unmoor 0xAB

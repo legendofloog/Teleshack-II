@@ -78,3 +78,9 @@
 #define DesolateID 56
 #define SpurHitID 64
 #define FervorID 65
+#define AbsoluteZeroID 66
+#define CrownPyreID 67
+#define DawnEyeID 68
+#define StormbringerID 69
+#define WindFaithID 70
+#define SpelltwisterID 71

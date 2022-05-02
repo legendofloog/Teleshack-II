@@ -246,4 +246,8 @@
 
 // KofiMageKnightDismounted
 	setPalette(61,KofiMageKnightDismounted)
-	setCBSP(61,Kofi, 1, MageKnight_Dismounted)
+	setCBSP(61,Kofi, 2, MageKnight_Dismounted)
+
+// OjasviNoble
+	setPalette(62,OjasviNoble)
+	setCBSP(62,Ojasvi, 1, Noble_F)
