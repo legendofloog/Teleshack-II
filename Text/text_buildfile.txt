@@ -153,6 +153,13 @@ Open Door[X]
 Open the door to[N]
 Dragana's cell.[X]
 
+## ReorganizeName
+Reorg[X]
+
+## ReorganizeDescription
+Move an item to[N]
+the top of inventory.[X]
+
 #include "statusdesc_text.txt"
 
 #include "skilldesc_text.txt"

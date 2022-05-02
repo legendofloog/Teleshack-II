@@ -5,7 +5,7 @@
 .endm
 .equ DawnEyeID, SkillTester+4
 .equ HealSEvent, DawnEyeID+4
-.equ DawnHeal, 4
+.equ DawnHeal, 7
 .thumb
 push	{lr}
 
@@ -17,13 +17,13 @@ bne	End
 @check if eye of dawn is not equipped
 mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
-cmp     r0, #0x00         @Eye of Dawn ID
+cmp     r0, #0x9D         @Eye of Dawn ID
 beq End
 
 @Is the second inventory slot the weapon?
 mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
-cmp     r0, #0x00         @Winds of Faith ID
+cmp     r0, #0x9D         @Winds of Faith ID
 beq OffHandEffect
 b End
 
@@ -46,8 +46,6 @@ beq	End
 ldrb	r1, [r4,#0x12]	@r1=maxhp
 mov r0, #DawnHeal
 ldrb	r2, [r4,#0x13]	@r2=currhp
-@cmp	r1, r2		@check if hp is already max
-@beq	End
 add	r2, r0		@total healing
 cmp r2, #1    @is new hp<1?
 bge	StoreHP

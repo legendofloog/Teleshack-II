@@ -28,7 +28,7 @@ beq End
 @check if AZ is not equipped
 mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
-cmp     r0, #0x00         @Absolute Zero ID
+cmp     r0, #0x9C         @Absolute Zero ID
 beq End
 b Unequipped        @If not the right tome, go to Unequipped skill
 
@@ -37,7 +37,7 @@ Unequipped:
 @Is the second inventory slot the weapon?
 mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
-cmp     r0, #0x00         @Absolute Zero ID
+cmp     r0, #0x9C         @Absolute Zero ID
 beq OffHandEffect
 b End
 
@@ -47,16 +47,17 @@ OffHandEffect:
 mov r1, #0x56
 ldrb r0, [r4,r1] @terrain def
 cmp r0, #0
-bne CheckSkill
+bne AddBuffs
 add r1, #1
 ldrb r0, [r4,r1] @terrain avo
 cmp r0, #0
-bne CheckSkill
+bne AddBuffs
 add r1, #1
 ldrb r0, [r4,r1] @terrain res
 cmp r0, #0
 beq End
 
+AddBuffs:
 @add 10 avoid
 mov r1, #0x62
 ldrh r0, [r4, r1] @avoid

@@ -134,6 +134,12 @@ POIN SkillTester
 WORD WindFaithID
 
 ALIGN 4
+FaithWindWT:
+#incbin "ApsisSkills/WindFaith/WindFaithWT.dmp"
+POIN SkillTester
+WORD WindFaithID
+
+ALIGN 4
 HealSEvent: //same as breath of life
 CAM1 0xFFFF
 SOUN 0x111

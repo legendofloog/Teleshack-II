@@ -28,7 +28,7 @@ beq End
 @check if its the right tome?
 mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
-cmp     r0, #0x00         @Crown Pyre ID
+cmp     r0, #0x9A         @Crown Pyre ID
 beq YesThereIsSkill
 b Unequipped        @If not the right tome, go to Unequipped skill
 
@@ -63,7 +63,7 @@ Unequipped:
 @Is the second inventory slot the weapon?
 mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
-cmp     r0, #0x00         @Crown Pyre ID
+cmp     r0, #0x9A         @Crown Pyre ID
 beq OffHandEffect
 b End
 
