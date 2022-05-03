@@ -883,8 +883,8 @@ setMugEntry(KofiMug, KofiMugData, 2, 4, 2, 2)
 
 ALIGN 16
 ApsisMugData:
-#incbin "Dmp/Apsis(devisio)_mug.dmp"
-#incbin "Dmp/Apsis(devisio)_frames.dmp"
-#incbin "Dmp/Apsis(devisio)_palette.dmp"
-#incbin "Dmp/Apsis(devisio)_minimug.dmp"
-setMugEntry(ApsisMug, ApsisMugData, 3, 6, 3, 4)
+#incbin "Dmp/Apsis(devisio,BuskHusker)_mug.dmp"
+#incbin "Dmp/Apsis(devisio,BuskHusker)_frames.dmp"
+#incbin "Dmp/Apsis(devisio,BuskHusker)_palette.dmp"
+#incbin "Dmp/Apsis(devisio,BuskHusker)_minimug.dmp"
+setMugEntry(ApsisMug, ApsisMugData, 3, 5, 2, 3)

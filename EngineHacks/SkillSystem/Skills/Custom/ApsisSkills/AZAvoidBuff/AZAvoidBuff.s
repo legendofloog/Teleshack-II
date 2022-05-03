@@ -58,6 +58,13 @@ cmp r0, #0
 beq End
 
 AddBuffs:
+
+@add 2 damage
+mov r1, #0x5c
+ldrh r0, [r4, r1] @def
+add r0, #2
+strh r0, [r4,r1]
+
 @add 10 avoid
 mov r1, #0x62
 ldrh r0, [r4, r1] @avoid

@@ -189,3 +189,9 @@ KofiMageKnightDismounted:
 OjasviNoble:
 	#incbin "./_palettes/OjasviNoble.lzpal" 
 
+ApsisBard:
+	#incbin "./_palettes/ApsisBard.lzpal" 
+
+ApsisSage:
+	#incbin "./_palettes/ApsisSage.lzpal" 
+

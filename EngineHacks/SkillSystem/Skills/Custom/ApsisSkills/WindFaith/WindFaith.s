@@ -34,28 +34,13 @@ b Unequipped        @If not the right tome, go to Unequipped skill
 
 YesThereIsSkill:
 
-@ check if foe is melee (physical 1 range)?
-
+@ check if 1 range?
 @check range
 ldr r0,=#0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#1
 bgt End
 
-@check if foes are physical
-mov		r1, #0x50
-ldrb	r0, [r5, r1]
-cmp		r0, #0x03
-ble		IsWeapon
-b		End
-
-mov		r1, #0x50
-ldrb	r0, [r4, r1]
-cmp		r0, #0x2
-ble		IsWeapon
-b		End
-
-IsWeapon:
 @ add the conditional brave
 mov r0,r4
 add r0,#0x4C @item ability word
