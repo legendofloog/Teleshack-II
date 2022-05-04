@@ -23,7 +23,7 @@
 #endif
 #define UnitLvlCh18 18
 
-#define _test_ch18x_
+//#define _test_ch18x_
 #ifdef _test_ch18x_
 #define _test_
 #endif
