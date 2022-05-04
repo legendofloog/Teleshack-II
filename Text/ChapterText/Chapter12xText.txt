@@ -14,7 +14,7 @@ fine people. You ready to head out?[A][X]
 
 ## Ch12xTrajanConfirmation2
 [MidRight][LoadLoewePunished]
-(Am I?)[No][X]
+[ToggleMouthMove](Am I?)[ToggleMouthMove][No][X]
 
 ## Ch12xTrajanRejection
 [MidLeft][LoadTrajan]

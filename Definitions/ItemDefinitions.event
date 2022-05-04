@@ -151,8 +151,9 @@
 #define FaithWindItem 0x9e
 #define DancingBladeItem 0x9f
 #define BoneClub 0xa0
-#define RuneArrow 0xa1
-#define Maharaghi 0xa2
+#define Maharaghi 0xa1
+#define Taodao 0xa2
+#define RuneArrow 0xa3
 
 #define Dragonstone 0xAA
 #define Unmoor 0xAB

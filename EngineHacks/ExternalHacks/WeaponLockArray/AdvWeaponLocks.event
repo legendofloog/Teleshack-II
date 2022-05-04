@@ -107,4 +107,24 @@ BYTE HardCharLock
 BYTE Apsis
 BYTE EndLockArray
 
+DancingBladeArray:
+BYTE HardCharLock
+BYTE Ojasvi
+BYTE EndLockArray
+
+MaharaghiArray:
+BYTE HardCharLock
+BYTE Zhara
+BYTE EndLockArray
+
+BoneClubArray:
+BYTE HardCharLock
+BYTE Groto
+BYTE EndLockArray
+
+TaodaoArray:
+BYTE HardCharLock
+BYTE Tao
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

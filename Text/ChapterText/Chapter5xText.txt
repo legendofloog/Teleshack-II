@@ -827,7 +827,7 @@ your choice. Ready to go?[A][CloseSpeechSlow][X]
 
 ## Ch5xTrajanConfirmation2
 [MidRight][LoadCleo]
-(Are we?)[No][X]
+[ToggleMouthMove](Are we?)[ToggleMouthMove][No][X]
 
 ## Ch5xTrajanRejection
 [MidLeft][LoadTrajan]

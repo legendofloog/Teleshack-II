@@ -559,6 +559,17 @@ MNC2 Chapter18
 NoFade
 ENDB
 #endif
+#ifdef _test_ch18x_
+ENUT FIXED_GROWTHS_FLAG_ID
+LOAD1 1 UnitsCh18
+ENUN
+LOAD1 1 UnitsCh18_2
+ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
+MNC2 Chapter18xInterlude
+NoFade
+ENDB
+#endif
 NoFade
 ENDA
 

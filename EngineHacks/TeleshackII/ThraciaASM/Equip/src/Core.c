@@ -25,6 +25,12 @@ bool CanUnitEquipItem (Unit* unit, Item item){
 	}
 	
 	// Can add extra conditionals here
+	if (item.number == 0xa3){ //tao's rune arrows
+		if (unit->pCharacterData->number == 0x36){ //tao unit ID
+			return true;
+		}
+		return false;
+	}	
 	if (item.number == 0xD0){ //King shield item id check; armors only
 		int i = 0;
 		int currentClass = KingShieldClassList[i];
@@ -100,5 +106,14 @@ void EdgedArrowPreBattle(){
 		BattleUnit* battleTarget = &gBattleTarget;
 		battleTarget->battleDefense = 0;
 
+	}
+}
+
+void RuneArrowPreBattle(){
+	Unit* battleActor = &gBattleActor.unit;
+	Item actorUnitItem = GetUnitEquippedItem(battleActor);
+	if(actorUnitItem.number == 0xa3){ //rune arrow id
+		BattleUnit* battleActorUnit = &gBattleActor;
+		battleActorUnit->weaponAttributes &= IA_MAGIC;
 	}
 }

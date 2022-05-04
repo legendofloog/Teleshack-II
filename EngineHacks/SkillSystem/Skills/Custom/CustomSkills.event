@@ -139,6 +139,11 @@ FaithWindWT:
 POIN SkillTester
 WORD WindFaithID
 
+Telepathy:
+#incbin "Telepathy.dmp"
+POIN SkillTester
+WORD TelepathyID
+
 ALIGN 4
 HealSEvent: //same as breath of life
 CAM1 0xFFFF
