@@ -273,18 +273,25 @@ BeginningScene:
 COUNTER_SET 0 0
 DismountAll
 SetBackground(0x8)
+MUSC WaterFlowingSoundEffect
 Text(Ch18xBeginningScene2OnDaBoat1)
 SetBackground(0x9)
 Text(Ch18xBeginningScene2OnDaBoat2)
+MUSC FE5_InTheBattle_Fate
 Text(Ch18xBeginningScene2OnDaBoat3)
 Text(Ch18xBeginningScene2OnDaBoat4)
+MUSC 0x7FFF
 Text(Ch18xBeginningScene2OnDaBoat5)
+MUSC FF6AwakeningID
 Text(Ch18xBeginningScene2OnDaBoat6)
+MUSC 0x7FFF
 SetBackground(0x8)
 Text(Ch18xBeginningScene3PortLazar1)
 SetBackground(0x7)
+MUSC Rovers
 Text(Ch18xBeginningScene3PortLazar2)
 Text(Ch18xBeginningScene3PortLazar3)
+MUSC FirstCampaignID
 Text(Ch18xBeginningScene3PortLazar4)
 Text(Ch18xBeginningScene3PortLazar5)
 Text(Ch18xBeginningScene3PortLazar6)
@@ -299,15 +306,18 @@ ENDA
 
 EndingScene:
 SetBackground(0x4)
+MUSC Rovers
 Text(Ch18xEndingScene1AtThePort1)
 Text(Ch18xEndingScene2InTheClearing1)
 SetBackground(0x1F)
+MUSC FF5_Nostalgia
 Text(Ch18xEndingScene2InTheClearing2)
 Text(Ch18xEndingScene2InTheClearing3)
 Text(Ch18xEndingScene2InTheClearing4)
 Text(Ch18xEndingScene2InTheClearing5)
 Text(Ch18xEndingScene2InTheClearing6)
 SetBackground(0x15)
+MUSC FF4RedWingsID
 Text(Ch18xEndingScene3OrfeasAndLeonidas)
 MNC2 Chapter19
 NoFade
