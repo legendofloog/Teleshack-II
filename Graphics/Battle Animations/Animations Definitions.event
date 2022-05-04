@@ -498,6 +498,7 @@ ALIGN 4
 BardAnims:
 AnimaAnim(BardMagicAnim)
 LightAnim(BardMagicAnim)
+DarkAnim(BardMagicAnim)
 UnarmedAnim(BardMagicAnim)
 EndAnim
 

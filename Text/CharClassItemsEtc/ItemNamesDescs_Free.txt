@@ -396,8 +396,8 @@ Unmoor[X]
 ## UnmoorDesc
 Severs time's threads. Eff. vs. blessed.[X]
 
-## CrownPyreName
-Crown Pyre[X]
+## CrownPyreName *
+Crowned Pyre[X]
 
 ## CrownPyreDesc *
 Ignores 25% Res. Executes foes below 25% HP.[X]
@@ -406,25 +406,25 @@ Ignores 25% Res. Executes foes below 25% HP.[X]
 [_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
 
 ## StormbreakerDesc *
-At max move, +30 Crit (+40 at max range).[X]
+At max move, +30 Hit/Crit (+40 at max range).[X]
 
 ## AbsoluteZeroName
 [_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
 
-## AbsoluteZeroDesc
--2 AS to foes in 2 spaces, -4 in terrain.[X]
+## AbsoluteZeroDesc *
+-2 Atk/AS to foes in 2 spaces, -4 in terrain.[X]
 
 ## DawnEyeName
 Eye of Dawn[X]
 
 ## DawnEyeDesc *
-Cannot double. Restores HP = damage dealt.[X]
+Restores HP to unit = damage dealt.[X]
 
 ## FaithWindName
 Faith's Wind[X]
 
 ## FaithWindDesc *
-Hits twice vs. melee. Cancels WTD vs. ranged.[X]
+Hits twice at 1 range. Cancels WTD at 2 range.[X]
 
 ## DancingBladeName
 Dancing Bld.[X]

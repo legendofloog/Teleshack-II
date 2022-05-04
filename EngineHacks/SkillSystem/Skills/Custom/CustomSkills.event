@@ -105,7 +105,7 @@ ALIGN 4
 AbsoluteZeroAura:
 #incbin "ApsisSkills/AbsoluteZero/AbsoluteZero.dmp"
 POIN AuraSkillCheck
-WORD AbsoluteZeroID
+WORD AbsoluteZeroTomeID
 
 ALIGN 4
 CrownPyre:

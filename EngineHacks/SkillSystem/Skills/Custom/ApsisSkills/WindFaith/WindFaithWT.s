@@ -1,29 +1,9 @@
 .thumb
-.equ WindFaithID, SkillTester+4
+.equ	WindFaithID,SkillTester+4
 
-push {r4-r7, lr}
+push {r4-r6, lr}
 mov r4, r0 @atkr
 mov r5, r1 @dfdr
-
-@has weapon equipped with skill?
-ldr r0, SkillTester
-mov lr, r0
-mov r0, r4 @attacker data
-ldr r1, WindFaithID
-.short 0xf800
-cmp r0, #0
-beq End
-
-@make sure we're in combat (or combat prep)
-ldrb r3, =gBattleData
-ldrb r3, [r3]
-cmp r3, #4
-beq End		@If not, end skill
-
-@not at stat screen
-ldr r1, [r5,#4] @class data ptr
-cmp r1, #0 @if 0, this is stat screen
-beq End
 
 @check if its the right tome? (mainhand)
 mov     r0, #0x4A      @Move to attacker's weapon (before battle)
@@ -32,7 +12,49 @@ cmp     r0, #0x9E         @Faith's Wind ID
 beq YesThereIsSkill
 b End        @If not the right tome, end
 
-YesThereIsSkill: @if you have wtd you are fighting ranged so cancel it
+YesThereIsSkill:
+
+@ check if 2 range?
+@check range
+ldr r0,=#0x203A4D4 @battle stats
+ldrb r0,[r0,#2] @range
+cmp r0,#2
+bne End
+
+@ Check for skill on defender
+ldr r6,SkillTester
+mov r0,r5
+ldr r1,WindFaithID
+mov r14,r6
+.short 0xF800
+cmp r0,#0
+beq WhenTheImpostorIsSus
+
+@ does defender have wtd
+mov r0,#0x53
+ldsb r1,[r4,r0]
+cmp r1,#0
+ble WhenTheImpostorIsSus
+
+@ Delete everything epically
+mov        r0,#0x53 @wt hit
+ldsb    r1,[r5,r0]
+mov r1,#0
+strb    r1,[r5,r0]
+mov        r0,#0x54 @wt damage
+ldsb    r1,[r5,r0]
+mov r1,#0
+strb    r1,[r5,r0]
+
+@does attacker have it
+WhenTheImpostorIsSus:
+ldr r6,SkillTester
+mov r0,r4
+ldr r1,WindFaithID
+mov r14,r6
+.short 0xF800
+cmp r0,#0
+beq End
 
 @ does attacker have wtd
 mov r0,#0x53
@@ -40,7 +62,7 @@ ldsb r1,[r5,r0]
 cmp r1,#0
 ble End
 
-@if so delete wtd
+@ Delete everything epically (again)
 mov        r0,#0x53
 ldsb    r1,[r4,r0]
 mov r1,#0
@@ -51,9 +73,12 @@ mov r1,#0
 strb    r1,[r4,r0]
 
 End:
-pop {r4-r7, r15}
-.align
+pop {r4-r6}
+pop {r0}
+bx r0
+
+.align 4
 .ltorg
 SkillTester:
-@Poin SkillTester
+@POIN SkillTester
 @WORD WindFaithID

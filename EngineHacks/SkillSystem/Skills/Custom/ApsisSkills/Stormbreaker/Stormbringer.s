@@ -51,7 +51,13 @@ sub r0,r1
 cmp r0,#0 @see if we've moved as far as possible
 bgt End @if not, no bonus
 
-@ add 30 crit
+@ add 30 hit/crit
+
+mov r1, #0x62
+ldrh r0, [r4, r1] @hit
+add r0, #30
+strh r0, [r4,r1]
+
 mov r1, #0x66
 ldrh r0, [r4, r1] @critttttt
 add r0, #30
@@ -64,6 +70,12 @@ cmp r0,#3
 bne End
 
 @ if so, add additional 10 crit
+
+mov r1, #0x62
+ldrh r0, [r4, r1] @hit
+add r0, #10
+strh r0, [r4,r1]
+
 mov r1, #0x66
 ldrh r0, [r4, r1] @critttttt
 add r0, #10
