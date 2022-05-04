@@ -251,3 +251,11 @@
 // OjasviNoble
 	setPalette(62,OjasviNoble)
 	setCBSP(62,Ojasvi, 1, Noble_F)
+
+// ApsisBard
+	setPalette(63,ApsisBard)
+	setCBSP(63,Apsis, 1, 0x7E)
+
+// ApsisSage
+	setPalette(64,ApsisSage)
+	setCBSP(64,Apsis, 3, Sage)
