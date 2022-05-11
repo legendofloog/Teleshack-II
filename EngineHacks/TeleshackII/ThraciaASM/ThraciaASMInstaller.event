@@ -1,5 +1,5 @@
 #include "Fatigue/Fatigue.event"
-#include "TomeCon/Installer.event"
+//#include "TomeCon/Installer.event"
 #include "Dismount/Installer.event"
 #include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
 #include "RescueChanges/RescueChangesEvent.event"
@@ -11,20 +11,7 @@
 #include "BattleExpTeleshack2/Installer.event"
 #include "ASMC_Other/Installer.event"
 #include "StaffChanges/Installer.event"
-
-
-// changes Luck's contribution to Hit into lck instead of lck/2
-PUSH
-ORG $2abc4
-BYTE 0x0 0x1C 0x0 0x1C 0x0 0x1C
-POP
-
-
-// changes skill's contribution to crit into Skl instead of skl/2
-//PUSH
-//ORG $2ac28
-//BYTE 0x0 0x1C 0x0 0x1C 0x0 0x1C
-//POP
+#include "Escape/Installer.event"
 
 // changes luck cap to 20
 PUSH
