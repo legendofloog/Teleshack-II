@@ -21,20 +21,6 @@ void CheckIfUnit1RescuedByActive(){
     gEventSlot[0xC] = 0;
 }
 
-void CheckIfUnitEscaped(){
-    Unit* someUnit = GetUnitByCharId(gEventSlot[1]);
-    if (UNIT_FACTION(someUnit) != UA_BLUE ){
-        gEventSlot[0xC] = 0;
-        return;
-    }
-    if (((someUnit->state & US_UNAVAILABLE) == 0) && ((someUnit->state & US_HIDDEN)) == 0){
-            someUnit->state |= (US_BIT16);
-            gEventSlot[0xC] = 1;
-            return;
-    }
-    gEventSlot[0xC] = 0;
-}
-
 void UnitCopy(){
     Unit* copiedUnit = GetUnitByCharId(gEventSlot[1]);
     Unit* copierUnit = GetUnitByCharId(gEventSlot[2]);
@@ -93,4 +79,16 @@ void CheckIfFatigued(){
 
 int GetCurrentPromotedLevelBonus(){
     return 14; //every promoted unit hits 15 unpromoted
+}
+
+void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
+    bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck);
+
+    if (bu->battleAvoidRate < 0){
+        bu->battleAvoidRate = 0;
+    }
+}
+
+void ComputeBattleUnitHitRate(BattleUnit* bu) {
+    bu->battleHitRate = (bu->unit.skl * 2) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
 }

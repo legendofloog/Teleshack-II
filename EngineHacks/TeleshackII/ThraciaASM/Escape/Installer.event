@@ -1,8 +1,65 @@
-#include "MasterASMCs.lyn.event"
+#include "Escape.lyn.event"
 
-#define CheckIfUnitEscapedASMC(charID, labelID) "SVAL s1 charID; ASMC CheckIfUnitEscaped; BEQ labelID s0 sC; HIDEUNIT charID; LABEL labelID"
-#define CheckIfUnitRescuedByActiveASMC(rescuedID) "SVAL s1 rescuedID; ASMC CheckIfUnit1RescuedByActive"
-#define UnitCopyASMC(copiedID,copierID) "SVAL s1 copiedID; SVAL s2 copierID; ASMC UnitCopy"
-#define SetFatigue(charID,ftgValue) "SVAL 1 charID; SVAL 2 ftgValue; ASMC SetFatigue"
-#define SetFatigueOneLess(charID) "SVAL 1 charID; SVAL 2 0xFF; ASMC SetFatigue"
-#define CheckIfFatigued(charID) "SVAL s1 charID; ASMC CheckIfFatigued"
+#define RemoveIfCapturedASMC(charID) "SVAL s1 charID; ASMC RemoveIfCaptured"
+#define CheckIfCapturedASMC(charID) "SVAL s1 charID; ASMC CheckIfCaptured"
+
+#define RemoveAllIfCaptured "CALL RemoveAllIfCapturedEvent"
+
+ALIGN 4
+RemoveAllIfCapturedEvent:
+RemoveIfCapturedASMC(Mira)
+RemoveIfCapturedASMC(Iskra)
+RemoveIfCapturedASMC(Emil)
+RemoveIfCapturedASMC(Svetomir)
+RemoveIfCapturedASMC(Alena)
+RemoveIfCapturedASMC(Varga)
+RemoveIfCapturedASMC(Delilah)
+RemoveIfCapturedASMC(Alex)
+RemoveIfCapturedASMC(Axel)
+RemoveIfCapturedASMC(Filone)
+RemoveIfCapturedASMC(Zwieback)
+RemoveIfCapturedASMC(Fangai)
+RemoveIfCapturedASMC(Longxia)
+RemoveIfCapturedASMC(Mish)
+RemoveIfCapturedASMC(Tobie)
+RemoveIfCapturedASMC(Awa)
+RemoveIfCapturedASMC(Faolan)
+RemoveIfCapturedASMC(Cadenza)
+RemoveIfCapturedASMC(Leina)
+RemoveIfCapturedASMC(Cromar)
+RemoveIfCapturedASMC(Iberis)
+RemoveIfCapturedASMC(Buldak)
+RemoveIfCapturedASMC(Nora)
+RemoveIfCapturedASMC(Hans)
+RemoveIfCapturedASMC(Jenny)
+RemoveIfCapturedASMC(Meldan)
+RemoveIfCapturedASMC(Valse)
+RemoveIfCapturedASMC(Hornet)
+RemoveIfCapturedASMC(Milo)
+RemoveIfCapturedASMC(Ichwep)
+RemoveIfCapturedASMC(Mink)
+RemoveIfCapturedASMC(Tiberius)
+RemoveIfCapturedASMC(Ellerey)
+RemoveIfCapturedASMC(Mantou)
+RemoveIfCapturedASMC(Tippany)
+RemoveIfCapturedASMC(Pelecaye)
+RemoveIfCapturedASMC(Carl)
+RemoveIfCapturedASMC(Darby)
+RemoveIfCapturedASMC(Jacinth)
+RemoveIfCapturedASMC(Nahiza)
+RemoveIfCapturedASMC(Augur)
+RemoveIfCapturedASMC(Ilse)
+RemoveIfCapturedASMC(Rashid)
+RemoveIfCapturedASMC(Kofi)
+RemoveIfCapturedASMC(Nikolas)
+RemoveIfCapturedASMC(Sera)
+RemoveIfCapturedASMC(Apsis)
+RemoveIfCapturedASMC(Ojasvi)
+RemoveIfCapturedASMC(Darcy)
+RemoveIfCapturedASMC(Groto)
+RemoveIfCapturedASMC(Tao)
+RemoveIfCapturedASMC(Zhara)
+NoFade
+ENDA
+
+ALIGN 4

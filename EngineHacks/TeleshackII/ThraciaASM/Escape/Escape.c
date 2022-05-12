@@ -3,12 +3,13 @@
 #define USABILITY_TRUE 1
 #define USABILITY_GRAY 2
 #define USABILITY_FALSE 3
-
+/*
 int EscapeCommandUsability();
 int GetLocationEventCommandAt(int xPos, int yPos);
 void EscapeCommandEffect(Proc* procState);
 void FinalEscapeThing(Unit* unit);
-
+*/
+/*
 int EscapeCommandUsability(){
     Unit* unit = gActiveUnit;
     if(unit->state & US_CANTOING){ // is unit cantoing
@@ -64,5 +65,29 @@ void EscapeCommandEffect(Proc* procState){
 }
 
 void FinalEscapeThing(Unit* unit){
+
+}
+*/
+
+void RemoveIfCaptured(){
+    Unit* someUnit = GetUnitByCharId(gEventSlot[1]);
+    if (UNIT_FACTION(someUnit) != UA_BLUE ){
+        return;
+    }
+    if ((!(someUnit->state & US_UNAVAILABLE)) && (!(someUnit->state & US_HIDDEN))){
+            someUnit->state = (US_REMOVED | US_HIDDEN | US_UNSELECTABLE | US_JAILED); 
+    }
+}
+
+void CheckIfCaptured(){
+    Unit* someUnit = GetUnitByCharId(gEventSlot[1]);
+    if (UNIT_FACTION(someUnit) != UA_BLUE ){
+        gEventSlot[0xC] = 0; //say that they aren't captured
+        return;
+    }
+    if( (someUnit->state & US_REMOVED) && (someUnit->state & US_JAILED)){
+        gEventSlot[0xC] = 0; //say they are jailed
+        return;
+    }
 
 }

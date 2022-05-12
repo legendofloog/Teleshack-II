@@ -83,25 +83,40 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [18,16] 0x0 0x0 0x1 REDA17R16 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [18,16] 0x0 0x0 0x1 REDA18R16 [SilverSword,IronSword,Vulnerary] NoAI
-UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [18,15] 0x0 0x0 0x1 REDA18R15 [Thunder,Vulnerary]                NoAI
-UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [18,17] 0x0 0x0 0x1 REDA18R17 [IronLance,Vulnerary,DoorKey]              NoAI
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [19,16] 0x0 0x0 0x1 REDA17R16 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
-Flashback1Units:
-UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [9,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Senny Civilian_F   0x0          Level(1,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Raschwitz_Ch1 Civilian 0x0    Level(1,NPC,False) [10,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
+Units2:
+UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [19,16] 0x0 0x0 0x1 REDA18R16 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT
+
+Units3:
+UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [19,15] 0x0 0x0 0x1 REDA18R15 [Thunder,Vulnerary]                NoAI
+UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [19,17] 0x0 0x0 0x1 REDA18R17 [IronLance,Vulnerary,DoorKey]              NoAI
+UNIT 
+
+Flashback1Units1:
 UNIT Chapter1Generics Swordmaster_F 0x0 Level(1,NPC,False) [2,4] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Mira Civilian_2 0x0 Level(1,NPC,False) [13,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Mira Civilian_F_2 0x0 Level(1,NPC,False) [1,6] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Mira Bard_F 0x0 Level(1,NPC,False) [5,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Mira LanceSoldier 0x0 Level(1,NPC,False) [10,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
-Flashback2Units:
-UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [13,0] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
-UNIT Senny Sniper_F   0x0          Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [10,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Chapter1Generics SwordFighter 0x0 Level(1,NPC,False) [12,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Chapter1Generics LanceSoldier 0x0    Level(1,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [0x0] NoAI
+Flashback1Units2:
+UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [14,2] 0x0 0x0 0x1 REDA9R1 [0x0] NoAI
+UNIT Senny Civilian_F   0x0          Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA8R2 [0x0] NoAI
+UNIT Raschwitz_Ch1 Civilian 0x0    Level(1,NPC,False) [14,3] 0x0 0x0 0x1 REDA10R2 [0x0] NoAI
+UNIT 
+
+Flashback2Units1:
+UNIT Helman Civilian Raschwitz_Ch1     Level(1,NPC,True) [14,2] 0x0 0x0 0x1 REDA8R2 [0x0] NoAI
+UNIT 
+
+Flashback2Units2:
+UNIT Senny Sniper_F   0x0          Level(1,NPC,False) [14,2] 0x0 0x0 0x1 REDA9R2 [0x0] NoAI
+UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [13,0] 0x0 0x0 0x1 REDA8R1 [0x0] NoAI
+UNIT Svetomir SwordFighter 0x0 Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA10R1 [0x0] NoAI
 UNIT 
 
 GreenUnits:
@@ -167,24 +182,34 @@ ALIGN 4
 
 
 BeginningScene:
-//ENUT 0xEF
 #ifdef _test_
 CALL TestingEvent //calls the specific chapter testing definitions
 #endif
 COUNTER_SET 0 0
+ENUT GuideUnlockFatigue 
+/*
+ENUT GuideUnlockDismount 
+ENUT GuideUnlockRescue 
+ENUT GuideUnlockCapture 
+ENUT GuideUnlockSteal 
+ENUT GuideUnlockPCC
+*/
 LOMA Ch1LoeweVillage
-LOAD1 1 Flashback1Units
+LOAD1 1 Flashback1Units1
 ENUN
 FADU 15
+MUSC WindyDayBirdsSoundEffect
+BROWNBOXTEXT LinorasTopLeftText[8,8]
+STAL 30
+LOAD1 1 Flashback1Units2
+ENUN
+FlashCursor(Helman,60)
 Text(Ch1KidLoeweTalksToFriendsText)
-MOVE 15 Senny [3,8]
-ENUN
+SingleUnitMove(Senny,15,3,8)
 REMOVEUNIT Senny
-MOVE 15 Raschwitz_Ch1 [12,4]
-ENUN
+SingleUnitMove(Raschwitz_Ch1,15,12,4)
 REMOVEUNIT Raschwitz_Ch1
-MOVE 15 Helman [3,3]
-ENUN
+SingleUnitMove(Helman,15,3,3)
 FlashCursor(Chapter1Generics,60)
 SetBackground(Village1)
 MUSC FF5_Nostalgia
@@ -192,106 +217,94 @@ Text(BeginningSceneLoeweFlashbackText)
 FADI 15
 TILECHANGE 0
 REMOVEALL_GREEN
-LOAD1 1 Flashback2Units
-CenterTutorialTextBox
 SetBackground(BlackBackground)
-SOLOTEXTBOXSTART
-TEXTSHOW Ch1OneYearLater
-TEXTEND
-REMA
-CALL $9EE2C4
-STAL 30
-TEXTSTART
-TEXTSHOW BeginningSceneLoeweFlashback2Text
-TEXTEND
-MOVE 15 Helman [10,2]
+CGText(Ch1LoeweReminiscence)
+WEATHER 5
+EraseBackground
 ENUN
-MOVE 15 Helman [10,5]
-ENUN
-MOVE 15 Helman [12,4]
-ENUN
-TEXTCONT
-TEXTEND
-MOVE 15 Helman [11,6]
-ENUN
-MOVE 15 Helman [11,9]
-ENUN
-MOVE 15 Helman [13,8]
-ENUN
-TEXTCONT
-TEXTEND
-MOVE 15 Helman [13,9]
-ENUN
-MOVE 15 Helman [7,6]
-ENUN
-TEXTCONT
-TEXTEND
-MOVE 15 Helman [5,9]
-ENUN
-MOVE 15 Helman [3,8]
+BROWNBOXTEXT Linoras1YearLaterTopLeftText[8,8]
+LOAD1 1 Flashback2Units1
 ENUN
 STAL 20
-MOVE 15 Helman [3,9]
-ENUN
-MOVE 15 Helman [1,9]
-ENUN
-MOVE 15 Helman [2,4]
-MOVE 15 Senny [3,4]
-ENUN
-TEXTCONT
-TEXTEND
-FlashCursor(2,2,60)
-MOVE 15 Helman [2,2]
+FlashCursor(Helman,60)
+Text(BeginningSceneLoeweFlashback2Text1)
+LOAD1 1 Flashback2Units2
 ENUN
 STAL 30
-MOVE 15 Helman [2,4]
-ENUN
-TEXTCONT
-TEXTEND
-REMA
-ENUN
+FlashCursor(Senny,60)
+Text(Ch1BeginningSceneDraganaFlashback2Text0)
+SingleUnitMove(Helman,15,10,2)
+SingleUnitMove(Helman,15,10,5)
+SingleUnitMove(Helman,15,12,4)
+Text(BeginningSceneLoeweFlashback2Text2)
+SingleUnitMove(Helman,15,11,6)
+SingleUnitMove(Helman,15,11,9)
+SingleUnitMove(Helman,15,13,8)
+Text(BeginningSceneLoeweFlashback2Text3)
+SingleUnitMove(Helman,15,13,9)
+SingleUnitMove(Helman,15,7,6)
+Text(BeginningSceneLoeweFlashback2Text4)
+SingleUnitMove(Helman,15,5,9)
+SingleUnitMove(Helman,15,3,8)
+STAL 30
+SingleUnitMove(Helman,10,3,9)
+SingleUnitMove(Helman,10,1,9)
+MOVE 10 Helman [2,4]
+SingleUnitMove(Senny,15,3,4)
+Text(BeginningSceneLoeweFlashback2Text5)
+FlashCursor(2,2,60)
+SingleUnitMove(Helman,15,2,2)
+STAL 30
+SingleUnitMove(Helman,15,2,4)
+Text(BeginningSceneLoeweFlashback2Text6)
+SingleUnitMove(Senny,15,6,0)
+REMOVEUNIT Senny
+SingleUnitMove(Chapter1Generics,15,6,0)
+REMOVEUNIT Chapter1Generics
+SingleUnitMove(Svetomir,15,7,0)
+REMOVEUNIT Svetomir
+SingleUnitMove(Helman,10,6,1)
+STAL 20
+Text(BeginningSceneLoeweFlashback2Text7)
+SingleUnitMove(Helman,10,6,0)
+REMOVEUNIT Helman
 FADI 5
-REMOVEALL_GREEN
 MUSC 0x7FFF
+WEATHER 0
+REMOVEALL_GREEN
 SetBackground(BlackBackground)
-_0x1A22
-TEXTSHOW Ch1SvetomirPesteringLoeweText1
-TEXTEND
-REMA
-_0x1A22
-TEXTSHOW Ch1SvetomirPesteringLoeweText2
-TEXTEND
-REMA
-_0x1A22
-TEXTSHOW Ch1SvetomirPesteringLoeweText3
-TEXTEND
-REMA
-_0x1A22
-TEXTSHOW Ch1SvetomirPesteringLoeweText4
-TEXTEND
-REMA
+CGText(Ch1SvetomirPesteringLoeweText1)
+CGText(Ch1SvetomirPesteringLoeweText2)
+CGText(Ch1SvetomirPesteringLoeweText3)
+CGText(Ch1SvetomirPesteringLoeweText4)
 FADI 15
 LOMA Chapter1
 LOAD1 1 EnemyUnits
 LOAD1 1 Turn2Reinforcements
 LOAD1 1 GreenUnits
 ENUN
-CAMERA Loewe
+CAMERA_CENTERED Loewe
 FADU 15
+BROWNBOXTEXT CastleSeleseTopLeftText[8,8]
 FlashCursor(Loewe,60)
 FlashCursor(Svetomir,60)
 SetBackground(PrisonRoom)
 Text(BeginningSceneLoeweGroupText)
-CALL $9EE2C4
-STAL 30
+EraseBackground
+CAMERA_CENTERED [19,16]
+FlashCursor(19,16,60)
+STAL 20
 LOAD1 1 Units1
 ENUN
-CAMERA Cleo
+LOAD1 1 Units2
+ENUN
+LOAD1 1 Units3
+ENUN 
 FlashCursor(Cleo,60)
 MUSC Sortie_Formation
 SetBackground(CastleHallway)
 Text(BeginningSceneCleoGroupText)
-CALL $9EE2C4
+EraseBackground
 NoFade
 ENDA
 
@@ -339,7 +352,7 @@ ENDA
 LoeweIskraTalkCh1:
 MUSS Rovers
 Text(LoeweIskraTalkCh1Text)
-GiveItem(Kaiserschwert,Loewe)
+GiveItem(Kaiserschwert_Fake,Loewe)
 MURE 2
 NoFade
 ENDA
@@ -414,16 +427,9 @@ NoFade
 ENDA
 
 EndingScene:
-CheckIfUnitEscapedASMC(Mira,39)
-CheckIfUnitEscapedASMC(Iskra,72)
-CheckIfUnitEscapedASMC(Emil,308)
-CheckIfUnitEscapedASMC(Svetomir,56)
-CheckIfUnitEscapedASMC(Alena,79)
+RemoveAllIfCaptured
+ENUT 0x84 //removes boss icons/talk icons etc
 ENUN
-CHECK_EVENTID 7
-BNE 2 s0 sC
-SilentGiveItem(Kaiserschwert,Loewe)
-LABEL 2
 MUSC 0x7FFF
 FADI 15
 RemoveAll
@@ -431,18 +437,43 @@ LOMA Ch1DraganaPrison
 CAMERA [29,29]
 SPAWN_ALLY Cleo [26,29]
 SPAWN_ALLY Loewe [27,29]
-CheckMaxHP(Cleo)
-SADD s1 sC s0
-SET_HP Cleo
-CheckMaxHP(Loewe)
-SADD s1 sC s0
-SET_HP Loewe
 FADU 15
+STAL 10
 MOVE 15 Cleo [20,26]
 MOVE 15 Loewe [21,26]
 ENUN
-STAL 20
+FlashCursor(Cleo,30)
+FlashCursor(Loewe,30)
+CHECK_EVENTID 7 //did Iskra not give loewe the sword
+BNE 2 s0 sC
+	CHECK_ALIVE Iskra
+	BNE 420 s0 sC //branches if she is alive; if not, keep checking
+		Text(EndingSceneTextLoeweAndCleoIskraDead)
+		GiveItem(Kaiserschwert_Fake,Loewe)
+		GOTO 907
+	LABEL 420
+	//add some check here to see if she's removed
+	BEQ 57 s0 sC //if she's not removed, branch; if so, play captured dialogue
+		Text(EndingSceneTextLoeweAndCleoIskraCaptured)
+		GiveItem(Kaiserschwert_Fake,Loewe)
+	LABEL 57 
+	Text(EndingSceneTextLoeweAndCleoIskraAlive1)
+	SPAWN_ALLY Iskra [20,16]
+	CAMERA Iskra
+	FlashCursor(Iskra,60)
+	CamOn
+	SingleUnitMove(Iskra, 15, 20, 25)
+	CamOff
+	CAMERA_CENTERED Iskra
+	Text(EndingSceneTextLoeweAndCleoIskraAlive2)
+	GiveItem(Kaiserschwert_Fake,Loewe)
+	STAL 20
+	SingleUnitMove(Iskra, 15, 20, 16)
+	Text(EndingSceneTextLoeweAndCleoIskraAlive3)
+	GOTO 907
+LABEL 2
 Text(EndingSceneTextLoeweAndCleo)
+LABEL 907
 MOVE 15 Cleo [20,15]
 MOVE 15 Loewe [21,15]
 ENUN
@@ -451,43 +482,38 @@ STAL 60
 MUSC FF5_Sealed_Away
 LOAD1 1 BoroCutsceneGroup
 ENUN
-FlashCursor(Boro_Ch1,60)
 MOVE 15 Boro_Ch1 [20,26]
 ENUN
+FlashCursor(Boro_Ch1,60)
 Text(EndingSceneTextBoro)
 MOVE 15 Boro_Ch1 [20,15]
 ENUN
 FADI 15
 LOMA Chapter2
 CAMERA [1,19]
+FADU 15
+BROWNBOXTEXT CidorDungeonText[8,8]
 LOAD1 1 DraganaUnitGroup
 ENUN
-FADU 15
-EVBIT_T 9
-STAL 20
+CamOn
 MOVE 15 Senny [16,19]
 ENUN
-CAMERA Helman
-FlashCursor(Helman,60)
+CamOff
+CAMERA_CENTERED Helman
 SOUN 0x00B1
 TILECHANGE 5
-STAL 20
-EVBIT_T 5
-TEXTSTART
-TEXTSHOW EndingSceneTextDraganaAndCidor
-TEXTEND
-EVBIT_F 9
+FlashCursor(Helman,60)
+Text(EndingSceneTextDraganaAndCidor1)
 SOUN 0x00B1
 TILEREVERT 5
 MOVE 15 Senny [0,11]
 ENUN
-TEXTCONT
-TEXTEND
-REMA
-EVBIT_F 5
-FADI 15
+FlashCursor(Helman,30)
+Text(EndingSceneTextDraganaAndCidor2)
+FADI 5
+ENUF 0x84 
 ENUN
-MNC2 Chapter2 // next vanilla chapter currently crashes; not sure why, but putting in a new event seems to work fine
+MNC2 Chapter2
 NoFade
 ENDA
 

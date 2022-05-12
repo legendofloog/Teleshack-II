@@ -28,13 +28,13 @@ LocationBasedEvents:
 Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
-Chest(HeroRing,9,8)
-DurabilityChest(GrowthScroll, BeiyrScroll,11,9)
+//Chest(HeroRing,9,8)
+DurabilityChest(GrowthScroll, AmserScroll,11,9)
 END_MAIN
 
 MiscBasedEvents:
 AFEV 8 MureibBetrayal 9
-DefeatBoss(Mureib)
+DefeatBoss(EndingScene)
 CauseGameOverIfLordDies 
 END_MAIN
 
@@ -160,7 +160,7 @@ UNIT
 ReinforcementsSpawn3:
 UNIT Cythes Swordmaster   0x0 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [SteelSword] DefaultHealAI
 UNIT Cythes BowArmor   0x0 Level(17,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [MasterBow] DefaultHealAI
-UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [3,0] 0x0 0x0 0x0 0x0 [Burn] DefaultHealAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [3,0] 0x0 0x0 0x0 0x0 [IronSword] DefaultHealAI
 UNIT
 
 ThiefSpawn:
@@ -358,6 +358,7 @@ TEXTEND
 REMA
 MOVE 15 Cleo [16,29]
 FADI 5
+REMOVEUNIT KwameReal
 ENUN
 STAL 15
 RemoveAll
@@ -452,6 +453,6 @@ RemoveAll
 SetBackground(Boat)
 FADU 15
 Text(Ch17_ChouwoujTease)
-MNC2 Chapter17
+MNC2 Chapter18
 NoFade
 ENDA

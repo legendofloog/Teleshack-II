@@ -242,16 +242,8 @@ ENUN
 ENDA
 
 EndingScene:
+RemoveAllIfCaptured
 MUSC 0x7FFF
-CheckIfUnitEscapedASMC(Mira,39)
-CheckIfUnitEscapedASMC(Iskra,72)
-CheckIfUnitEscapedASMC(Emil,308)
-CheckIfUnitEscapedASMC(Svetomir,56)
-CheckIfUnitEscapedASMC(Alena,79)
-CheckIfUnitEscapedASMC(Varga,43)
-CheckIfUnitEscapedASMC(Delilah,98)
-CheckIfUnitEscapedASMC(Alex,876)
-CheckIfUnitEscapedASMC(Axel,233)
 Text(MapEndText)
 SetBackground(CastleHallway)
 Text(EndingSceneTextA1)

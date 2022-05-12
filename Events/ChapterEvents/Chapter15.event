@@ -421,6 +421,9 @@ REMOVEUNIT Kassandra
 ENUN
 Text(Ch15BeginningScene6Part4)
 DismountAll
+RemoveAllItem(Kaiserschwert_Fake)
+SendAll(Loewe)
+SilentGiveItem(Kaiserschwert,Loewe)
 GotoPrepScreen
 NoFade
 ENDA
