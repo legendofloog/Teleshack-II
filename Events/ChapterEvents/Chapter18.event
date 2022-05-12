@@ -220,6 +220,6 @@ EndingScene:
 	
 	SetBackground(0x9)
 	Text(Ch18EndBarod)
-	MNC2 Chapter19
+	MNC2 Chapter18xInterlude
 	NoFade
 	ENDA

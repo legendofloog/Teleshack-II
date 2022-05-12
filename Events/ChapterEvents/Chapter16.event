@@ -202,7 +202,7 @@ EnemyReinforcements_B1:
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [6,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,15] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,19] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
 UNIT
 
 EnemyReinforcements_B2:
@@ -369,6 +369,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
+RemoveAllIfCaptured
 RemoveAll
 MUSC Tension
 SetBackground(Temple)

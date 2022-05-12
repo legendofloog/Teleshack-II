@@ -26,7 +26,7 @@ Must have been a real fancy school.[A]
 [Beat]Something like that.[A][X]
 
 
-## Chapter2OpeningScene2
+## Chapter2OpeningScene2_1
 [MidRight][LoadVarga]
 [MidLeft][LoadSoldier][ThreeLineBox]
 Honestly, how incompetent must[N]
@@ -42,10 +42,9 @@ if they're after Kasun![A]
 [MidRight][OneLineBox]
 [Beat][A]
 [MidLeft]
-[Beat]You don't talk much, do you?[A][CloseSpeechSlow]
-[MidRight][ClearFace]
-[MidLeft][ClearFace]
-[Event]
+[Beat]You don't talk much, do you?[A][X]
+
+## Chapter2OpeningScene2_2
 [FarLeft][LoadCleo][TwoLineBox]
 [ToggleMouthMove](Blast, they'll see[N]
 us-Wait, is that...[....])[ToggleMouthMove][A][X]

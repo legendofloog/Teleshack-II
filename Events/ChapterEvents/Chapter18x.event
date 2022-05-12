@@ -43,7 +43,7 @@ LABEL 2
 Text(Ch18xApsisAcceptedDialogue)
 CUSA Apsis
 SetFatigue(Apsis,0)
-MOVE 15 Apsis [6,8]
+MOVE 15 Apsis [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Apsis
@@ -69,7 +69,7 @@ LABEL 4
 Text(Ch18xOjasviAcceptedDialogue)
 CUSA Ojasvi
 SetFatigue(Ojasvi,0)
-MOVE 15 Ojasvi [6,8]
+MOVE 15 Ojasvi [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Ojasvi
@@ -94,7 +94,7 @@ LABEL 6
 Text(Ch18xDarcyAcceptedDialogue)
 CUSA Darcy
 SetFatigue(Darcy,0)
-MOVE 15 Darcy [6,8]
+MOVE 15 Darcy [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Darcy
@@ -120,7 +120,7 @@ LABEL 8
 Text(Ch18xGrotoAcceptedDialogue)
 CUSA Groto
 SetFatigue(Groto,0)
-MOVE 15 Groto [6,8]
+MOVE 15 Groto [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Groto
@@ -146,7 +146,7 @@ LABEL 10
 Text(Ch18xTaoAcceptedDialogue)
 CUSA Tao
 SetFatigue(Tao,0)
-MOVE 15 Tao [6,8]
+MOVE 15 Tao [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Tao
@@ -164,14 +164,14 @@ Text(Ch18xZharaPickDialogue)
 SVAL s1 0x1
 BEQ 15 s1 sC
 	Text(Ch18xZharaRejectedDialogue)
-	ENUF 16
+	ENUF 17
 	NoFade
 	ENDB
 LABEL 15
 Text(Ch18xZharaAcceptedDialogue)
 CUSA Zhara
 SetFatigue(Zhara,0)
-MOVE 15 Zhara [6,8]
+MOVE 15 Zhara [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Zhara
@@ -259,14 +259,14 @@ UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [11,9] 0x0 0x0 0x0 0x0 [
 UNIT
 
 GreenUnits:
-UNIT Apsis Bard_Apsis Loewe Level(12,NPC,False) [13,1] 0x0 0x0 0x0 0x0 [CrownPyreItem,StormbreakerItem,AbsoluteZeroItem,EyeOfDawnItem]     NoAI
+UNIT Apsis Bard_Apsis Loewe Level(9,NPC,False) [13,1] 0x0 0x0 0x0 0x0 [CrownPyreItem,StormbreakerItem,AbsoluteZeroItem,EyeOfDawnItem]     NoAI
 UNIT Groto Berserker Loewe Level(4,NPC,False) [11,15] 0x0 0x0 0x0 0x0 [BoneClub]     NoAI
 UNIT Zhara Paladin Loewe Level(7,NPC,False) [17,7] 0x0 0x0 0x0 0x0 [Maharaghi,Silence,Elixir]     NoAI
 UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBladeItem,ParagonSword] NoAI
 UNIT Tao Archer Loewe Level(10,NPC,False) [21,17] 0x0 0x0 0x0 0x0 [Taodao,RuneArrow]     NoAI
 UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT Boro_Ch16 Champion Loewe Level(5,NPC,False) [22,13] 0x0 0x0 0x0 0x0 [MasterLance]     NoAI
-UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,5] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat, KnightProof] NoAI
+UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat, KnightProof] NoAI
 UNIT
 
 BeginningScene:
@@ -275,8 +275,8 @@ DismountAll
 SetBackground(0x8)
 MUSC WaterFlowingSoundEffect
 Text(Ch18xBeginningScene2OnDaBoat1)
-SetBackground(0x9)
 Text(Ch18xBeginningScene2OnDaBoat2)
+SetBackground(0x9)
 MUSC FE5_InTheBattle_Fate
 Text(Ch18xBeginningScene2OnDaBoat3)
 Text(Ch18xBeginningScene2OnDaBoat4)

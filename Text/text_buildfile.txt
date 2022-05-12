@@ -17,6 +17,15 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x5C9 MechanicsPageTitle
+Mechanics[X]
+
+## LorePageTitle
+Lore[X]
+
+## CreditsPageTitle
+Credits[X]
+
 #0xd4c LikesText
 Likes:[X]
 
@@ -184,3 +193,4 @@ the top of inventory.[X]
 ## HealArrowText
 ->[X]
 
+#include "CharClassItemsEtc/GuideText.txt"

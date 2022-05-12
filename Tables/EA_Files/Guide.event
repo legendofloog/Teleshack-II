@@ -1,0 +1,177 @@
+#define MainGuideEntry(sectionID, chapterID, entryName, entryContent, flagID, readFlagID) "BYTE sectionID chapterID; SHORT entryName entryContent flagID readFlagID 0"
+// Global Flags
+
+#define UnlockGuideFlag 0xCB
+#define GuideUnlockFatigue 0xCB
+#define GuideReadFatigue 0xCC
+#define GuideReadVigor 0xCD
+#define GuideReadDismount 0xCE
+#define GuideReadLeadership 0xCF
+#define GuideReadRescue 0xD0
+#define GuideReadFreeActions 0xD1
+#define GuideReadCapture 0xD2
+#define GuideReadEquips 0xD3
+#define GuideReadSteal 0xD4
+#define GuideReadWeaponTriangle 0xD5
+#define GuideReadPCC 0xD6
+#define GuideReadSupports 0xD7
+#define GuideReadInterludes 0xD8
+#define GuideReadCredits 0xD9
+#define GuideReadOrodreth 0xDA
+#define GuideReadByelen 0xDB
+#define GuideReadCythes 0xDC
+#define GuideReadDecia 0xDD
+#define GuideReadMahemen 0xDE
+#define GuideReadChouwouj 0xDF
+#define GuideReadYuliaIslands 0xE0
+//tale of ternon guide stuff 
+//bonus: disable select button sort feature in guide menu (fixes most problems that come from editing the guide)
+PUSH
+ORG 0xCEF7C 
+SHORT 0xE001
+POP
+
+// Guide
+PUSH
+ORG 0xCEF74
+SHORT 0x2200 // Prevent Sorting
+ORG 0xB19E0C
+MainGuideEntry(1, 0, FatigueMechanicSubPageTitle, FatigueDescGuide, GuideUnlockFatigue, GuideReadFatigue)
+MainGuideEntry(1, 0, DismountMechanicSubPageTitle, DismountDescGuide, UnlockGuideFlag, GuideReadDismount)
+MainGuideEntry(1, 0, RescueMechanicSubPageTitle, RescueDescGuide, UnlockGuideFlag, GuideReadRescue)
+MainGuideEntry(1, 0, CaptureMechanicSubPageTitle, CaptureDescGuide, UnlockGuideFlag, GuideReadCapture)
+MainGuideEntry(1, 0, StealMechanicSubPageTitle, StealDescGuide, UnlockGuideFlag, GuideReadSteal)
+MainGuideEntry(1, 0, PCCMechanicSubPageTitle, PCCDescGuide, UnlockGuideFlag, GuideReadPCC)
+MainGuideEntry(1, 0, LeadershipStarsSubPageTitle, LeadershipDescGuide, UnlockGuideFlag, GuideReadLeadership)
+MainGuideEntry(1, 0, MovementStarsSubPageTitle, MovementStarsDescGuide, UnlockGuideFlag, GuideReadVigor)
+MainGuideEntry(1, 0, FreeActionMechanicSubPageTitle, FreeActionDescGuide, UnlockGuideFlag, GuideReadFreeActions)
+MainGuideEntry(1, 0, EquipsMechanicSubPageTitle, EquipsDescGuide, UnlockGuideFlag, GuideReadEquips)
+MainGuideEntry(1, 0, WeaponTriangleMechanicSubPageTitle, WeaponTriangleDescGuide, UnlockGuideFlag, GuideReadWeaponTriangle)
+MainGuideEntry(1, 0, SupportsMechanicSubPageTitle, SupportsDescGuide, UnlockGuideFlag, GuideReadSupports)
+MainGuideEntry(1, 0, InterludesMechanicSubPageTitle, InterludesDescGuide, UnlockGuideFlag, GuideReadInterludes)
+MainGuideEntry(2, 0, OrodrethLoreSubPageTitle, OrodrethLoreDesc, UnlockGuideFlag, GuideReadOrodreth)
+MainGuideEntry(2, 0, ByelenLoreSubPageTitle, ByelenLoreDesc, UnlockGuideFlag, GuideReadByelen)
+MainGuideEntry(2, 0, CythesLoreSubPageTitle, CythesLoreDesc, UnlockGuideFlag, GuideReadCythes)
+MainGuideEntry(2, 0, DeciaLoreSubPageTitle, DeciaLoreDesc, UnlockGuideFlag, GuideReadDecia)
+MainGuideEntry(2, 0, MahemenLoreSubPageTitle, MahemenLoreDesc, UnlockGuideFlag, GuideReadMahemen)
+MainGuideEntry(2, 0, ChouwoujLoreSubPageTitle, ChouwoujLoreDesc, UnlockGuideFlag, GuideReadChouwouj)
+MainGuideEntry(2, 0, YuliaIslandsLoreSubPageTitle, YuliaIslandsLoreDesc, UnlockGuideFlag, GuideReadYuliaIslands)
+MainGuideEntry(3, 0, TeamDistantRoadsCreditsSubPageTitle, TeamDistantRoadsDesc, UnlockGuideFlag, GuideReadCredits)
+MainGuideEntry(0xC, 0, 0, 0, 0, 0)
+WORD 0 0 0
+POP
+
+/*
+PUSH
+ORG 0xB19E12
+SHORT GuideUnlockFatigue GuideReadFatigue
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadDismount
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadRescue
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadCapture
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadSteal
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadPCC
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadLeadership
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag GuideReadVigor
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+POP
+*/

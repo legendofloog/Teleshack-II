@@ -354,6 +354,7 @@ NoFade
 ENDA
 
 EndingScene:
+RemoveAllIfCaptured
 CHECK_ALIVE Augur
 BNE 20 0x0 0xC
 SetFlag(0x65)
