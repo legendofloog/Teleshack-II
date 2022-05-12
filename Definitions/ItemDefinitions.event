@@ -124,6 +124,7 @@
 #define WhiteGem 0x74
 #define BlueGem 0x75
 #define RedGem 0x76
+#define Kaiserschwert_Fake 0x77
 #define Kaiserschwert 0x78
 #define ChestKey_5 0x79
 #define Mine 0x7A
