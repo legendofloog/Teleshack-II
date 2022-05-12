@@ -21,6 +21,7 @@ END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
+CharacterEventBothWays(A, DelilahFreedBySvetConvoText, Delilah, Svetomir)
 END_MAIN
 
 LocationBasedEvents:
@@ -234,6 +235,7 @@ SVAL s1 Svetomir
 MUSC WithUs_Song
 BNE 1 s1 sC
 	Text(DelilahFreedBySvetText)
+	ENUT 0xA
 	GOTO 2
 LABEL 1
 Text(DelilahFreedText)
