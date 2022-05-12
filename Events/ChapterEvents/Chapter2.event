@@ -21,7 +21,7 @@ END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-CharacterEventBothWays(A, DelilahFreedBySvetConvoText, Delilah, Svetomir)
+CharacterEventBothWays(0xA, DelilahFreedBySvetConvoText, Delilah, Svetomir)
 END_MAIN
 
 LocationBasedEvents:
