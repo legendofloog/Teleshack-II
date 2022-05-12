@@ -25,8 +25,6 @@ struct GrowthScrollEntry{
 
 extern struct GrowthScrollEntry GrowthScrollBonusesTable[];
 
-int ScrollDurabilityGetter(Item item);
-
 int GetEquipmentStatBonus(Unit* unit, int stat){
 	Item item = GetUnitEquippedItem(unit);
 
@@ -34,8 +32,8 @@ int GetEquipmentStatBonus(Unit* unit, int stat){
 		return 0;
 	}
 
-	/*if (item.number == 0xBE){ //durability based scroll
-		int growthScrollID = ScrollDurabilityGetter(item.number); //checks durability and gets ID based off that?
+	if (item.number == 0xBE){ //durability based scroll
+		u8 growthScrollID = item.durability;
 			if (stat == 10){
 				return GrowthScrollBonusesTable[growthScrollID].hpGrowthBonus;
 			}
@@ -69,7 +67,7 @@ int GetEquipmentStatBonus(Unit* unit, int stat){
 			else{
 
 			}
-		}*/
+		}
 
 	const ItemData* itemData = GetItemData(item.number);
 

@@ -5,6 +5,7 @@
 
 ALIGN 4 
 NewSoundRoom: // new entries here
+SoundRoomEntry(RemembranceID,0,RemembranceName)
 SoundRoomEntry(Lufia_Doom,0,Lufia_DoomName)
 SoundRoomEntry(TreasureOfRudrasBattleTheme,0,TreasureofRudrasBattleName)
 SoundRoomEntry(Lufia2_RoS_Battle2,0,Lufia2_RoS_Battle2Name)

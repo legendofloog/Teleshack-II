@@ -1,10 +1,15 @@
+   
+    #include "CustomDefinitions.event"
+    ORG FreeSpace
+    #include "Tables/Repointed/_MasterRepointer.event"
+
+
     #define ClassTable NewClassTable
     #include "EAstdlib.event"
-    #include "CustomDefinitions.event"
+    
     #include "Definitions/DefinitionsInstaller.event"
 
-    ORG FreeSpace
-    #include "repointedTextTable.event"
+    
     
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"

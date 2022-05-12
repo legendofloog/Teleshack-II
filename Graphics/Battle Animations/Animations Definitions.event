@@ -13,7 +13,7 @@
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
 #define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
-#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE MasterAxe 0x00 ; SHORT Animation ; BYTE Hurlbat 0x00 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE MasterAxe 0x00 ; SHORT Animation ; BYTE Hurlbat 0x00 ; SHORT Animation; BYTE BoneClub 0x00; SHORT Animation"
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
 #define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
 #define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
@@ -498,6 +498,7 @@ ALIGN 4
 BardAnims:
 AnimaAnim(BardMagicAnim)
 LightAnim(BardMagicAnim)
+DarkAnim(BardMagicAnim)
 UnarmedAnim(BardMagicAnim)
 EndAnim
 

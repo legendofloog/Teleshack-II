@@ -43,5 +43,12 @@ but if you do need to, ask me about it.
 EA_Files has a few more tables to edit, but they're in .event files instead of csvs.
 Currently, this is the location of stat boosts for items (in WeaponStatBoosts.event),
 the Battle and Death Quote Tables, and the Boss Music table.
+
+If you're making a death quote for a player unit, note that none of them have textIDs
+in the entries here except gameover units. This is because in order to use an event
+in a death quote, the textID needs to be set to 0, and we're using death quote events
+here to send items to convoy on death. You can go over to Events/GiveAllEvents.event
+and put the GiveAll event and death text for your unit there, following the structure of other events.
+
 Also, the Sound Room Table is located in SoundRoomInstaller.event. 
 

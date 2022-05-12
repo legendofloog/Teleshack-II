@@ -9,6 +9,7 @@ BYTE KingShield
 BYTE EdgedArrow
 BYTE WoodlandsHuke
 BYTE CaptainsHelm
+BYTE RuneArrow
 BYTE 0x00 //terminator
 
 // Defense equipment loses durability on each hit taken
@@ -22,7 +23,7 @@ BYTE 0x00 // terminator
 ALIGN 4
 OffenseEquipmentList:
 BYTE EdgedArrow
-BYTE TemperedRing
+BYTE RuneArrow
 BYTE 0x00 // terminator
 
 // Equipment in neither list will never decrement durability

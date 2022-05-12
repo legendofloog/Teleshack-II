@@ -101,3 +101,33 @@ minimum range is set to 3.[X]
 Desolate: Gain +40 crit vs[N]
 enemies who are not adjacent[N]
 to any of their allies.[X]
+
+## SD_Spelltwister *
+Spelltwister: Apsis has access to his arsenal of[N]
+5 personal tomes, each with a mix-and-match[N]
+'Equip' and 'Off-Hand' (inventory 2nd slot) effect.[X]
+
+## SD_CrownPyre *
+Crowned Pyre - Equip: Ignores 25% of foe's Res.[N]
+Executes foes below 25% of their max HP.[N]
+Off-Hand: Grants Atk = 25% of foe's missing HP.[X]
+
+## SD_Stormbreaker *
+Stormbreaker - Equip: Has bonus range. If using[N]
+all move, +30 Hit/Crit (+40 at max range).[N]
+Off-Hand: Grants +3 Hit/Crit per space moved.[X]
+
+## SD_AbsoluteZero *
+Absolute Zero - Equip: Foes in 2 spaces suffer[N]
+-2 Atk/AS (doubled to -4 if foe is in terrain).[N]
+Off-Hand: Grants +2 Def/Res, +10 Avoid in terrain.[X]
+
+## SD_DawnEye *
+Eye of Dawn - Equip: Locked at 1 range.[N]
+Restores HP to unit = damage dealt.[N]
+Off-Hand: Restores 7 HP after combat.[X]
+
+## SD_FaithWind *
+Faith's Wind - Equip: Hit twice at 1 range,[N]
+cancels WT disadvantage at 2 range.[N]
+Off-Hand: Grants AS = weapon range.[X]

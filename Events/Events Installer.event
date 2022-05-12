@@ -45,11 +45,11 @@ ENDB
 
 ALIGN 4
 PrepShop1:
-SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal
 BYTE 0x0 0x0
 
 ALIGN 4
 PrepShop2:
-SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux SlimArch
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal SlimArch
 BYTE 0x0 0x0
 ALIGN 4

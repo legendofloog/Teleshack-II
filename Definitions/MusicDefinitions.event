@@ -30,6 +30,8 @@
 #define CallOfTheBellsID 0x21
 #define FeelingWoozyID 0x22
 
+#define RemembranceID 0x58
+
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
 #define FightingOfTheSpirit 0xC2
@@ -37,6 +39,7 @@
 #define FirstCampaignID 0xC4
 #define FestivalHuntID 0xC5
 #define War_sHeartbeat 0xC6
+
 
 // Vanilla
 #define TiesOfFriendship 0x7

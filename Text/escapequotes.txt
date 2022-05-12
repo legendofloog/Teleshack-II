@@ -98,7 +98,6 @@ Let us make it a reality[Beat][A][X]
 An opening[Beat][N]
 Fly, my friends. We must go![A][X]
 
-
 ## IlseEscapeQuoteText
 [MidRight][LoadIlse]
 What? We're running away?![N]
@@ -112,3 +111,8 @@ actually the way out! Onwards!![A][X]
 ## SeraEscapeQuoteText
 [MidRight][LoadSera]
 Placeholder escape quote[A][X]
+
+## KofiEscapeQuoteText
+[MidRight][LoadKofi]
+There are still many mysteries[N]
+for me to solve[Beat][A][X]

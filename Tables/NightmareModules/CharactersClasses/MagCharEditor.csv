@@ -45,21 +45,21 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x2B Nahiza,2,5
 0x2C Augur,(-2),50
 0x2D Ilse,3,30
+0x2E Rashid,0,5
 0x2F - Nikolas,1,15
-0x2F ???,1,15
 0x30 Sera,2,15
 0x31 ???,0,5
-0x32 ???,0,5
-0,0,0
-#NAME?,0,0
-#NAME?,0,0
-#NAME?,0,0
-#NAME?,0,0
-#NAME?,0,0
-#NAME?,0,0
-#NAME?,0,0
-#NAME?,0,0
-Lyon's Summon,0,0
+0x32 Apsis,0,66
+0x33 Ojasvi,3,35
+0x34 Darcy,0,5
+0x35 Groto,0,125
+0x36 Tao,10,50
+0x37 Zhara,4,30
+0x38 ???,0,0
+0x39 ???,0,0
+0x3A ???,0,0
+0x3B ???,0,0
+0x40 Kofi,5,20
 #NAME?,0,0
 #NAME?,0,0
 Knoll's Summon,0,0

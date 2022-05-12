@@ -540,7 +540,7 @@ ENUN
 LOAD1 1 UnitsCh15_2
 ENUN
 ENUF FIXED_GROWTHS_FLAG_ID
-MNC2 Chapter15
+MNC2 Chapter13
 NoFade
 ENDB
 #endif
@@ -556,6 +556,17 @@ ENUN
 PROMOTE Loewe Dragonlord Kaiserschwert
 ENUN
 MNC2 Chapter18
+NoFade
+ENDB
+#endif
+#ifdef _test_ch18x_
+ENUT FIXED_GROWTHS_FLAG_ID
+LOAD1 1 UnitsCh18
+ENUN
+LOAD1 1 UnitsCh18_2
+ENUN
+ENUF FIXED_GROWTHS_FLAG_ID
+MNC2 Chapter18xInterlude
 NoFade
 ENDB
 #endif
@@ -599,8 +610,8 @@ UNIT
 
 UnitsCh15:
 // Ch 1 - 5
-UNIT Cleo Skyseeker              Cleo Level(17,Ally,True) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,GrowthScroll,WoodlandsHuke] NoAI
-UNIT Loewe Scaleshot           Cleo Level(17,Ally,True) [0,1] 0x0 0x0 0x0 0x1 [IronBow,Kaiserschwert,DaShoota,MarksmanBow] NoAI
+UNIT Cleo Skyseeker              Cleo Level(17,Ally,True) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,WoodlandsHuke] NoAI
+UNIT Loewe Scaleshot           Cleo Level(17,Ally,True) [0,1] 0x0 0x0 0x0 0x1 [IronBow,Kaiserschwert,MarksmanBow,TemperedRing] NoAI
 UNIT Mira ThiefFighter_F         Cleo Level(6,Ally,True) [0,2] 0x0 0x0 0x0 0x1 [SilverSword,ShortSword,IronSword] NoAI
 UNIT Iskra Mage_F                Cleo Level(15,Ally,True) [0,3] 0x0 0x0 0x0 0x1 [Thunder,Stormbrand,Wind,Elfire] NoAI
 UNIT Emil LanceKnight            Cleo Level(15,Ally,True) [0,4] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,YorsYari] NoAI

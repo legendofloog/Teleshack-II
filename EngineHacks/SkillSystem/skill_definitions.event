@@ -42,6 +42,7 @@
 #define ChargeID 62
 #define AcrobatID 63
 
+
 // keep it continous for debug purpose
 
 // custom skills
@@ -75,3 +76,14 @@
 #define AlacrityID 50
 #define SharpshooterID 51
 #define DesolateID 56
+#define SpurHitID 64
+#define FervorID 65
+#define AbsoluteZeroID 66
+#define CrownPyreID 67
+#define DawnEyeID 68
+#define StormbringerID 69
+#define WindFaithID 70
+#define SpelltwisterID 71
+#define TelepathyID 72
+#define PhaseLeapID 73
+#define AbsoluteZeroTomeID 74

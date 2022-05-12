@@ -5,4 +5,14 @@ PrepromoteTable:
 BYTE Mira
 BYTE Cromar
 BYTE Meldan
+BYTE Pelecaye
+BYTE 0xFF
+
+
+ALIGN 4
+MountedInPrepsTable: //list of chapterIDs where units are mounted in preps and have access to promo items
+BYTE Chapter13      // shouldn't start until 13?
+BYTE Chapter14       
+BYTE Chapter17
+BYTE Chapter18
 BYTE 0xFF

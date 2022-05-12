@@ -50,7 +50,13 @@
 #define MysteryMug 0xDD
 #define SeraMug 0xDE
 #define ShafaqatMug 0xDF
-
+#define KofiMug 0xE0
+#define ApsisMug 0xE1
+#define OjasviMug 0xe2
+#define DarcyMug 0xe3
+#define GrotoMug 0xe4
+#define TaoMug 0xe5
+#define ZharaMug 0xe6
 
 // NPCs
 #define EliasMug 0xB
@@ -866,3 +872,60 @@ ShafaqatMugData:
 #incbin "Dmp/Shafaqat(RW)_palette.dmp"
 #incbin "Dmp/Shafaqat(RW)_minimug.dmp"
 setMugEntry(ShafaqatMug, ShafaqatMugData, 4, 6, 3, 4)
+
+ALIGN 16
+KofiMugData:
+#incbin "Dmp/Kofi_mug.dmp"
+#incbin "Dmp/Kofi_frames.dmp"
+#incbin "Dmp/Kofi_palette.dmp"
+#incbin "Dmp/Kofi_minimug.dmp"
+setMugEntry(KofiMug, KofiMugData, 2, 4, 2, 2)
+
+ALIGN 16
+ApsisMugData:
+#incbin "Dmp/Apsis(devisio,BuskHusker)_mug.dmp"
+#incbin "Dmp/Apsis(devisio,BuskHusker)_frames.dmp"
+#incbin "Dmp/Apsis(devisio,BuskHusker)_palette.dmp"
+#incbin "Dmp/Apsis(devisio,BuskHusker)_minimug.dmp"
+setMugEntry(ApsisMug, ApsisMugData, 3, 5, 2, 3)
+
+ALIGN 16
+DarcyMugData:
+#incbin "Dmp/DarcyGabrielKnight_mug.dmp"
+#incbin "Dmp/DarcyGabrielKnight_frames.dmp"
+#incbin "Dmp/DarcyGabrielKnight_palette.dmp"
+#incbin "Dmp/DarcyGabrielKnight_minimug.dmp"
+setMugEntry(DarcyMug, DarcyMugData, 3, 5, 4, 3)
+
+ALIGN 16
+OjasviMugData:
+#incbin "Dmp/Ojasvi(Raymond)_mug.dmp"
+#incbin "Dmp/Ojasvi(Raymond)_frames.dmp"
+#incbin "Dmp/Ojasvi(Raymond)_palette.dmp"
+#incbin "Dmp/Ojasvi(Raymond)_minimug.dmp"
+setMugEntry(OjasviMug, OjasviMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ZharaMugData:
+#incbin "Dmp/Zhara(someone_placeholder)_mug.dmp"
+#incbin "Dmp/Zhara(someone_placeholder)_frames.dmp"
+#incbin "Dmp/Zhara(someone_placeholder)_palette.dmp"
+#incbin "Dmp/Zhara(someone_placeholder)_minimug.dmp"
+setMugEntry(ZharaMug, ZharaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+TaoMugData:
+#incbin "Dmp/Tao(placeholder)_mug.dmp"
+#incbin "Dmp/Tao(placeholder)_frames.dmp"
+#incbin "Dmp/Tao(placeholder)_palette.dmp"
+#incbin "Dmp/Tao(placeholder)_minimug.dmp"
+setMugEntry(TaoMug, TaoMugData, 3, 5, 3, 3)
+
+ALIGN 16
+GrotoMugData:
+#incbin "Dmp/Groto(placeholder)_mug.dmp"
+#incbin "Dmp/Groto(placeholder)_frames.dmp"
+#incbin "Dmp/Groto(placeholder)_palette.dmp"
+#incbin "Dmp/Groto(placeholder)_minimug.dmp"
+setMugEntry(GrotoMug, GrotoMugData, 2, 5, 3, 3)
+

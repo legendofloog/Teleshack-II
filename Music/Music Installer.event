@@ -81,3 +81,5 @@ SongTable(FirstCampaignID,FirstCampaign,BattleMusicGroup)
 SongTable(FestivalHuntID,song09,MapMusicGroup)
 #include "MusicEvents/war_s heartbeat.event"
 SongTable(War_sHeartbeat,song13,BattleMusicGroup)
+#include "MusicEvents/Remembrance(Loog).event"
+SongTable(RemembranceID, Remembrance, MapMusicGroup)

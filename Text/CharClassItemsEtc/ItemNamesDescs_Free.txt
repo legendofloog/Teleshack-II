@@ -373,7 +373,7 @@ Fealty Bow[X]
 Dragonstone[X]
 
 ## DragonstoneDesc
-placeholder[X]
+ special stone[X]
 
 ## EmptyDesc
  [X]
@@ -395,3 +395,63 @@ Unmoor[X]
 
 ## UnmoorDesc
 Severs time's threads. Eff. vs. blessed.[X]
+
+## CrownPyreName *
+Crowned Pyre[X]
+
+## CrownPyreDesc *
+Ignores 25% Res. Executes foes below 25% HP.[X]
+
+## StormbreakerName
+[_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
+
+## StormbreakerDesc *
+At max move, +30 Hit/Crit (+40 at max range).[X]
+
+## AbsoluteZeroName
+[_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
+
+## AbsoluteZeroDesc *
+-2 Atk/AS to foes in 2 spaces, -4 in terrain.[X]
+
+## DawnEyeName
+Eye of Dawn[X]
+
+## DawnEyeDesc *
+Restores HP to unit = damage dealt.[X]
+
+## FaithWindName
+Faith's Wind[X]
+
+## FaithWindDesc *
+Hits twice at 1 range. Cancels WTD at 2 range.[X]
+
+## DancingBladeName
+Dancing Bld.[X]
+
+## DancingBladeDesc
+Hits Res. [LockIcon] Ojasvi.[X]
+
+## TaodaoName
+Taodao[X]
+
+## TaodaoDesc
+[LockIcon] Tao. Brave, long-range.[X]
+
+## RuneArrowName
+Rune Arrow[X]
+
+## RuneArrowDesc
+[LockIcon] Tao. Makes attacks magical.[X]
+
+## BoneClubName
+Bone Club[X]
+
+## BoneClubDesc
+Strong but inaccurate throwing club.[X]
+
+## MaharaghiName
+Maharaghi[X]
+
+## MaharaghiDesc
+Can be used to greatly heal allies.[X]
