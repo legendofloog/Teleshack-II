@@ -102,7 +102,7 @@ IndoorEnemy:
   UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [26,11] 0x0 0x0 0x0 0x1 [SteelAxe] BossAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [34,7] 0x0 0x0 0x0 0x1 [IronSword] PursueWithoutHeedAI 
 //turn 3
-  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,10] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [16,13] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,8] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI 
 //turn 4
@@ -116,7 +116,7 @@ IndoorEnemy:
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [9,4] 0x0 0x0 0x0 0x1 [IronSword,DoorKey] BossAI
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [13,17] 0x0 0x0 0x0 0x1 [IronSword,DoorKey,ChestKey] BossAI
 //turn 6 
-  UNIT Selese Bard Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [Light] AttackInRangeAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [Lightning] AttackInRangeAI
   UNIT Selese Bard Cidor Level(12,Enemy,True) [0,16] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [0,14] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 //turn 7
