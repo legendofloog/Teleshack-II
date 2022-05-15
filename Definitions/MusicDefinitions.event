@@ -29,7 +29,8 @@
 
 #define CallOfTheBellsID 0x21
 #define FeelingWoozyID 0x22
-
+#define CryptequeID 0x59
+#define RiseAboveID 0x5D
 #define RemembranceID 0x58
 
 #define GreatCanyon 0xC0

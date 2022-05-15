@@ -72,6 +72,7 @@
 #define MaharaghiLock 0x12000000
 #define BoneClubLock 0x13000000
 #define TaodaoLock 0x14000000
+#define RunespearLock 0x15000000
 
 // Weapon Effect
 #define NoEffect 0x0
