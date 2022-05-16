@@ -338,7 +338,11 @@ oblivion will have to wait[Beat][A][X]
 
 ## SeraDeathQuoteText
 [MidRight][LoadSera]
-Placeholder death quote.[A][X]
+So far away[Beat][A][CloseEyes][X]
+
+## ShawDeathQuoteText
+[MidRight][LoadShaw]
+It was always a matter of time[Beat][A][CloseEyes][X]
 
 ## BarodDeathQuoteText
 [MidLeft][LoadBarod]

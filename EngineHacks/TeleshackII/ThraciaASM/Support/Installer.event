@@ -129,6 +129,16 @@ SupportEntry(Loewe, 3, 1, 0, 5, 5, 5, 5)
 SupportEntry(Buldak,3, 1, 0, 10, 0, 10, 0)
 SupportTerm
 
+ALIGN 4
+SeraSupportList:
+SupportEntry(Shaw, 3, 1, 0, 5, 5, 5, 5)
+SupportTerm
+
+ALIGN 4
+ShawSupportList:
+SupportEntry(Sera, 3, 1, 0, 5, 5, 5, 5)
+SupportTerm
+
 
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
@@ -150,3 +160,5 @@ SetUnitSupportList(Milo,MiloSupportList)
 SetUnitSupportList(Pelecaye,PelecayeSupportList)
 SetUnitSupportList(Buldak,BuldakSupportList)
 SetUnitSupportList(Tao,TaoSupportList)
+SetUnitSupportList(Sera,SeraSupportList)
+SetUnitSupportList(Shaw,ShawSupportList)

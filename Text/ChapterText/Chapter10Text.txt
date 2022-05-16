@@ -6,6 +6,15 @@ Ch10: Heroes of Freyse[X]
 This is placeholder text!
 [A][X]
 
+##Ch10VillageText
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+[ThreeLineBox]
+A vistor? What a rare occasion.[N]
+This old scroll drifted ashore recently.[N]
+I've no use for it, so you can keep it.[A]
+[X]
+
 ##Ch10CidorBossQuote
 [MidLeft][LoadCidor]
 Your pathetic rebellion ends[N]

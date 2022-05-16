@@ -326,6 +326,13 @@ NoFade
 ENDA
 
 ALIGN 4
+ShawGiveAll:
+Text(ShawDeathQuoteText)
+SendAll(Shaw)
+NoFade
+ENDA
+
+ALIGN 4
 ApsisGiveAll:
 Text(ApsisDeathQuoteText)
 SendAll(Apsis)

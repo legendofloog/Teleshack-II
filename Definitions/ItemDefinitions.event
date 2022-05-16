@@ -204,7 +204,7 @@
 
 
 #define Stinger 0x8d
-#define BpatItem 0x8e
+#define MysticLance 0x8e
 #define LunarAxe 0x8f
 #define Stormbrand 0x91
 #define ArgymosCrest 0x98

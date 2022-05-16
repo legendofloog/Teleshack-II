@@ -555,7 +555,7 @@ SilentGiveItem(Vulnerary, Faolan)
 ENUT 0x78
 ENUT 0x79
 ENUT 0x7a
-MNC2 Chapter12
+MNC2 Chapter10
 NoFade
 ENDB
 #endif
@@ -743,5 +743,7 @@ UNIT Darby Hunter_F Veniamin Level(UnitLvlCh18,Ally,True) [2,5] 0x0 0x0 0x0 0x0 
 UNIT Nahiza Ballistician 0x0 Level(14,Ally,True) [2,6] 0x0 0x0 0x0 0x0 [SlimArch,LongArch,Elixir] NoAI
 UNIT Augur Manakete_2_F 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [Dragonstone,Vulnerary,KnightProof] NoAI
 UNIT Rashid Sniper 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc,Longbow,KnightProof] NoAI
+UNIT Kofi MageKnight 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [GreatSword,FlameSword] NoAI
 UNIT Nikolas Falcoknight 0x0 Level(1,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,LongLance,KnightProof] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(20,Ally,True) [2,7] 0x0 0x0 0x0 0x0 [Unmoor] NoAI
 UNIT

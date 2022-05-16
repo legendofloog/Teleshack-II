@@ -49,6 +49,14 @@ BYTE GrislyWoundID
 
 
 ALIGN 4
+BladeDance:
+#incbin "Despoil/bladedance.dmp"
+POIN SkillTester
+WORD BladeDanceID
+POIN BladeDanceEvent
+#include "Despoil/BladeDanceEvent.event"
+
+ALIGN 4
 Despoil:
 #incbin "Despoil/despoil.dmp"
 POIN SkillTester
