@@ -6,7 +6,7 @@ https://feuniverse.us/t/the-ins-and-outs-of-text-editing/6820
 
 First, some organizational aspects:
 - ChapterText is in the ChapterText folder. Make sure to #include your chapter's text file
-in ChapterTextInstaller.event
+in ChapterTextInstaller.txt
 - Battle, death, and escape quotes are all in this main folder, so make any relevant edits 
 for those tables there.
 - Character, item, and music (used for soundroom) names are all in the CharClassItemsEtc folder.

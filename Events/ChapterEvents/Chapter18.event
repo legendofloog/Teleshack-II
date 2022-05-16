@@ -217,9 +217,10 @@ EndingScene:
 	BNE 1 s0 sC
 	Text(Ch18EndShafaqatAlive)
 	LABEL 1
-	
 	SetBackground(0x9)
 	Text(Ch18EndBarod)
+	FADI 15
+  	InterludeRemovalRoutineASMC
 	MNC2 Chapter18xInterlude
 	NoFade
 	ENDA

@@ -315,8 +315,8 @@ EndingScene:
 FADI 15
 MUSC 0x7FFF
 RemoveAll
-DismountUnit(Loewe)
-DismountUnit(Cleo)
+DismountSingleUnit(Loewe)
+DismountSingleUnit(Cleo)
 LOAD1 1 EndingMureibOwnage
 ENUN
 CAMERA_CENTERED KwameReal
@@ -358,7 +358,6 @@ TEXTEND
 REMA
 MOVE 15 Cleo [16,29]
 FADI 5
-REMOVEUNIT KwameReal
 ENUN
 STAL 15
 RemoveAll

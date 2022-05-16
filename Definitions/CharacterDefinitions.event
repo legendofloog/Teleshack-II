@@ -25,6 +25,7 @@
 #define Buldak 0x18
 #define Nora 0x19
 #define Hans 0x1A
+#define Takai 0x1B //
 #define Jenny 0x1C
 #define Meldan 0x1D
 #define Valse 0x1E

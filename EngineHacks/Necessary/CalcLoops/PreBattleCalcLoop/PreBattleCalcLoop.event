@@ -38,7 +38,7 @@ POIN ElbowRoom NaturalCover Gamble FieryBlood LifeAndDeath WindDisciple Perfecti
 POIN Stormbreaker AbsoluteZeroPreBattle FaithWind Telepathy
 //POIN Daunt BloodTide WhitePool NightTide 
 POIN Insight Culling Prescience Vigilance  DefiantAvo DefiantCrit TowerShield ShortShield IndoorFighter OutdoorFighter Deadeye Fortune
-POIN BlueFlame BlueFlameAura DoubleLion Cultured Thighdeology Thotslayer KeepUp Armorboost Horseguard Skyguard ForeignPrincess ChargePlus RecklessCharge
+POIN BlueFlame BlueFlameAura DoubleLion Cultured Thighdeology Thotslayer KeepUp Armorboost Horseguard Skyguard ForeignPrincess ChargePlus 
 POIN Frenzy Headshot // This was moved here because Str/Mag Split conflict, and... I'm not sure why it wouldn't be here in the first place.
 POIN UpWithArch
 POIN AxefaithHit
@@ -63,7 +63,7 @@ POIN EdgedArrowPreBattle
 //POIN PCCClear
 
 POIN CrownPyre
-
+POIN RecklessCharge
 //tower shield plus needs to go after every other skill that may affect defender's attack
 POIN NonCombatant
 POIN TowerShieldPlus

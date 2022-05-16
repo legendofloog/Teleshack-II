@@ -29,7 +29,7 @@ int DismountUsability(){
 	if (CheckIfDismountLocationLegal(unit) == false){
 		return USABILITY_FALSE;
 	}
-	if (GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] == 0xFF){
+	if (GetDismountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] <= 0){
 		return USABILITY_FALSE;
 	}
 	return USABILITY_TRUE;
@@ -46,7 +46,7 @@ int MountUsability(){
 	if (CheckIfDismountLocationLegal(unit) == false){
 		return USABILITY_FALSE;
 	}
-	if (GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] == 0xFF){
+	if (GetMountedClass(unit)->pMovCostTable[0][gMapTerrain[unit->yPos][unit->xPos]] <= 0){
 		return USABILITY_FALSE;
 	}
 	return USABILITY_TRUE;
@@ -103,46 +103,66 @@ const ClassData* GetMountedClass(Unit* unit){
 }
 
 void UnitChangeClass(Unit* unit, const ClassData* newClass){
-	//const ClassData* oldClass = unit->pClassData;
-	
-	/*unit->maxHP += (newClass->baseHP - oldClass->baseHP);
-	unit->curHP += (newClass->baseHP - oldClass->baseHP);
-	unit->pow += (newClass->basePow - oldClass->basePow);
-	unit->mag += (MagClassTable[newClass->number].baseMag - MagClassTable[oldClass->number].baseMag);
-	unit->skl += (newClass->baseSkl - oldClass->baseSkl);
-	unit->spd += (newClass->baseSpd - oldClass->baseSpd);
-	unit->def += (newClass->baseDef - oldClass->baseDef);
-	unit->res += (newClass->baseRes - oldClass->baseRes);*/
-
 	unit->pClassData = newClass;
 	HideUnitSMS(unit);
 	MU_EndAll();
 	MU_Create(unit);
 }
 
-void DismountUnitASMC(){
-	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
-	if(unit->state & (US_DEAD | US_BIT16))
-	{
+void UnitChangeClassEvent(Unit* unit, const ClassData* newClass){
+	unit->pClassData = newClass;
+	/*HideUnitSMS(unit);
+	MU_EndAll();
+	MU_Create(unit);*/
+}
+
+void DismountUnitASMC(Unit* unit){
+	if(unit->state & (US_DEAD | US_REMOVED)){
 		return;
 	} 
 	const ClassData* dismountedClass = GetDismountedClass(unit);
 	if (dismountedClass != 0){
-		UnitChangeClass(unit, dismountedClass);
+		UnitChangeClassEvent(unit, dismountedClass);
 	}
 }
 
-void MountUnitASMC(){
-	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
-	if(unit->state & (US_DEAD | US_BIT16))
+void MountUnitASMC(Unit* unit){
+	if(unit->state & (US_DEAD | US_REMOVED))
 	{
 		return;
 	} 
 	const ClassData* mountedClass = GetMountedClass(unit);
 	if (mountedClass != 0){
-		UnitChangeClass(unit, mountedClass);
+		UnitChangeClassEvent(unit, mountedClass);
 	}
 }
+
+void MountSingleUnitASMC(){
+	MountUnitASMC(GetUnitByCharId(gEventSlot[0x1]));
+}
+
+void DismountSingleUnitASMC(){
+	DismountUnitASMC(GetUnitByCharId(gEventSlot[0x1]));
+}
+
+void MountAllASMC(){
+	int i;
+    Unit* someUnit;
+    for (i = 0; i <= 60; i++){
+        someUnit = &gUnitArrayBlue[i];
+        MountUnitASMC(someUnit);
+    }
+}
+
+void DismountAllASMC(){
+	int i;
+    Unit* someUnit;
+    for (i = 0; i <= 60; i++){
+        someUnit = &gUnitArrayBlue[i];
+        DismountUnitASMC(someUnit);
+    }
+}
+
 
 bool DismountTester(Unit* unit, int dismountType){
 	const ClassData* mountedClassData = GetMountedClass(unit);

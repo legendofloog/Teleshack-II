@@ -389,3 +389,15 @@ Loewe_Dismounted_Dragonlord_Standing:
 ALIGN 4
 Loewe_Dismounted_Dragonlord_Moving:
 #incbin "Dmp/Dread Fighter (M) {Nuramon}-walk.dmp"
+
+ALIGN 4
+BluEliwoodStanding:
+#incbin "Dmp/Noble_Marth(Dominus_Vobiscum)-stand.dmp"
+
+ALIGN 4
+BluEliwoodMoving:
+#incbin "Dmp/Noble_Marth(Dominus_Vobiscum)-walk.dmp"
+
+ALIGN 4
+BrigandStanding:
+#incbin "Dmp/Brigand_M_Axe(Alusq).dmp"

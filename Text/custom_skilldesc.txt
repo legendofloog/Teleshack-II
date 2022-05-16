@@ -26,9 +26,9 @@ Victory March: Raise movement of[N]
 infantry units by 2 points.[X]
 
 ## SD_Avenger
-Avenger: Loewe gains purpose with each[N]
-wound, gaining Crit/Hit and losing[N]
-Avo/Dodge equal to his missing HP.[X]
+Avenger: Loewe gains purpose with[N]
+each wound, gaining Crit and losing[N]
+Avo equal to his missing HP.[X]
 
 ## SD_RecklessCharge
 Reckless Charge: When mounted, moving[N]
@@ -131,3 +131,12 @@ Off-Hand: Restores 7 HP after combat.[X]
 Faith's Wind - Equip: Hit twice at 1 range,[N]
 cancels WT disadvantage at 2 range.[N]
 Off-Hand: Grants AS = weapon range.[X]
+
+## SD_Telepathy
+Telepathy: +50% Hit/Avo/Crt/C. Avo[N]
+when fighting enemies at 1 range.[X]
+
+## SD_PhaseLeap
+Phase Leap: Tao teleports within a[N]
+4-tile radius and can act after without[N]
+moving, but he cannot move next turn.[X]

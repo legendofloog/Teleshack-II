@@ -242,7 +242,7 @@ ENUN
 ENDA
 
 EndingScene:
-RemoveAllIfCaptured
+EndOfEscapeRoutineASMC
 MUSC 0x7FFF
 Text(MapEndText)
 SetBackground(CastleHallway)

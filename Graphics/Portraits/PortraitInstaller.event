@@ -309,11 +309,11 @@ setMugEntry(FangaiMug, FangaiMugData, 3, 6, 3, 4)
 
 ALIGN 16
 KwameMugData:
-#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_mug.dmp"
-#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_frames.dmp"
-#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_palette.dmp"
-#incbin "Dmp/Kwame (knabepicer,mrgreen,IS)_minimug.dmp"
-setMugEntry(KwameMug, KwameMugData, 2, 5, 3, 2)
+#incbin "Dmp/Kwame(devisio,epicer)_mug.dmp"
+#incbin "Dmp/Kwame(devisio,epicer)_frames.dmp"
+#incbin "Dmp/Kwame(devisio,epicer)_palette.dmp"
+#incbin "Dmp/Kwame(devisio,epicer)_minimug.dmp"
+setMugEntry(KwameMug, KwameMugData, 3, 5, 3, 3)
 
 ALIGN 16
 RigganMugData:

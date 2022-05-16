@@ -369,7 +369,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-RemoveAllIfCaptured
+EndOfEscapeRoutineASMC
 RemoveAll
 MUSC Tension
 SetBackground(Temple)

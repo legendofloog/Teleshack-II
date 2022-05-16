@@ -427,7 +427,7 @@ NoFade
 ENDA
 
 EndingScene:
-RemoveAllIfCaptured
+EndOfEscapeRoutineASMC
 ENUT 0x84 //removes boss icons/talk icons etc
 ENUN
 MUSC 0x7FFF

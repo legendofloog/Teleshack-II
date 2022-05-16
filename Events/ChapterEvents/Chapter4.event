@@ -254,9 +254,7 @@ STAL 25
 Music(AdvanceSong)
 SetBackground(0x1B)
 CharacterConditionalDialog(Mira,Ch4Intro2,Ch4IntroAlt2)
-FADI 60
-CLEAN
-FADU 45
+EraseBackground
 STAL 5
 CamOn
 LOAD1 0x1 LeEpicRecruits
@@ -286,6 +284,7 @@ ENUN
 STAL 30
 CameraCursor(Zwieback)
 Text(Ch4Intro4)
+FADI 15
 MountAll
 STAL 3
 	GotoPrepScreen

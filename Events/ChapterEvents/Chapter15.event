@@ -320,7 +320,7 @@ BeginningScene:
 COUNTER_SET 0 0
 LOMA Chapter15Cutscene
 ENUN
-DismountUnit(Cleo)
+DismountSingleUnit(Cleo)
 LOAD1 0 BeginningCutsceneLoewe 
 ENUN
 CAMERA [7,0]
@@ -442,8 +442,8 @@ EndingScene:
 MUSC 0x7FFF
 FADI 15
 RemoveAll
-DismountUnit(Loewe)
-DismountUnit(Cleo)
+DismountSingleUnit(Loewe)
+DismountSingleUnit(Cleo)
 LOAD1 1 EndingCutscene1Group
 ENUN
 CAMERA_CENTERED Coralia

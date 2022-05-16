@@ -3,13 +3,25 @@
 #define USABILITY_TRUE 1
 #define USABILITY_GRAY 2
 #define USABILITY_FALSE 3
-/*
+
+typedef struct InterludeJoinEntry InterludeJoinEntry;
+
+struct InterludeJoinEntry{
+	/* 00 */ u8 chapterID;
+	/* 01 */ u8 charID;
+};
+
+extern struct InterludeJoinEntry InterludeJoinTable[];
+
+
 int EscapeCommandUsability();
 int GetLocationEventCommandAt(int xPos, int yPos);
-void EscapeCommandEffect(Proc* procState);
-void FinalEscapeThing(Unit* unit);
-*/
 /*
+void EscapeCommandEffect(Proc* procState);
+*/
+
+
+
 int EscapeCommandUsability(){
     Unit* unit = gActiveUnit;
     if(unit->state & US_CANTOING){ // is unit cantoing
@@ -21,6 +33,7 @@ int EscapeCommandUsability(){
     return USABILITY_TRUE;
 }
 
+/*
 void EscapeCommandEffect(Proc* procState){
     Unit* unit = gActiveUnit;
     int rescuerID = unit->pCharacterData->number;
@@ -63,31 +76,102 @@ void EscapeCommandEffect(Proc* procState){
         }
     }
 }
-
-void FinalEscapeThing(Unit* unit){
-
-}
 */
 
-void RemoveIfCaptured(){
-    Unit* someUnit = GetUnitByCharId(gEventSlot[1]);
-    if (UNIT_FACTION(someUnit) != UA_BLUE ){
-        return;
+bool CheckIfLeftBehind(Unit* unit){
+    if (UNIT_FACTION(unit) != UA_BLUE ){
+        return false;
     }
-    if ((!(someUnit->state & US_UNAVAILABLE)) && (!(someUnit->state & US_HIDDEN))){
-            someUnit->state = (US_REMOVED | US_HIDDEN | US_UNSELECTABLE | US_JAILED); 
+    if ((!(unit->state & US_UNAVAILABLE)) && (!(unit->state & US_HIDDEN))){
+        return true;
+    }
+    return false;
+}
+
+bool CheckIfJailed(Unit* unit){
+    if (UNIT_FACTION(unit) != UA_BLUE ){
+        return false;
+    }
+    if( (unit->state & US_REMOVED) && (unit->state & US_GROWTH_BOOST) && (!(unit->state & US_DEAD))){
+        return true;
+    }
+    return false;
+}
+
+void JailOneUnit(){
+    Unit* unit = GetUnitByCharId(gEventSlot[0x1]);
+    unit->state = (US_REMOVED | US_HIDDEN | US_UNSELECTABLE | US_GROWTH_BOOST);
+}
+
+void EndOfEscapeRoutine(){
+    int i;
+    Unit* someUnit;
+    for (i = 0; i <= 60; i++){
+        someUnit = &gUnitArrayBlue[i];
+        if (CheckIfLeftBehind(someUnit)){ //if true, then jail the unit
+            someUnit->state = (US_REMOVED | US_HIDDEN | US_UNSELECTABLE | US_GROWTH_BOOST); 
+        }
     }
 }
 
-void CheckIfCaptured(){
-    Unit* someUnit = GetUnitByCharId(gEventSlot[1]);
-    if (UNIT_FACTION(someUnit) != UA_BLUE ){
-        gEventSlot[0xC] = 0; //say that they aren't captured
-        return;
-    }
-    if( (someUnit->state & US_REMOVED) && (someUnit->state & US_JAILED)){
-        gEventSlot[0xC] = 0; //say they are jailed
-        return;
-    }
+void InterludeRemovalRoutine(){ //related to escape since it checks if units are jailed
+    int i;
+    Unit* someUnit;
+    for (i = 0; i <= 60; i++){
+        someUnit = &gUnitArrayBlue[i];
+        if (someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x1B){ //kwame loewe or cleo
+            //do nothing since they'll be removed in chapter events if necessary
+        }
+        else{
+            if (CheckIfJailed(someUnit)){ //if already jailed, do nothing
 
+            }
+            else{
+                if(someUnit->state & US_NOT_DEPLOYED){ //if the unit isn't deployed on the map
+                    someUnit->fatigue = 0;
+                    someUnit->state |= (US_REMOVED); //unsets fatigue, removes them
+                }
+                else{
+                    someUnit->state |= (US_REMOVED); //just removes them
+                }
+                 
+            }
+        }
+    }
+}
+
+void InterludeReturnRoutine(){
+    int i;
+    Unit* someUnit;
+    for (i = 0; i <= 60; i++){
+        someUnit = &gUnitArrayBlue[i];
+        if ( someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x1B){ //kwame loewe or cleo
+            //do nothing since they'll be returned in chapter events if necessary
+        }
+        else{
+            if (CheckIfJailed(someUnit)){ //if jailed, do nothing
+
+            }
+            else{
+                int j;
+                bool returnUnit = true;
+                for (j = 0; j <=20; j++){
+                    InterludeJoinEntry interludeEntry = InterludeJoinTable[j];
+                    if (someUnit->pCharacterData->number == interludeEntry.charID && gChapterData.chapterIndex == interludeEntry.chapterID){ // unit just joined, give them a pass
+                        returnUnit = false;
+                        break;
+                    }
+                    else if(interludeEntry.charID == 0xFF && interludeEntry.chapterID == 0xFF){ // end of table, not looking at an interlude unit in X time frame so can remove
+                        break;
+                    }
+                    else{ // still cycling through table, do nothing
+
+                    }
+                }
+                if (returnUnit){ // if we can return them, XOR their removed states
+                    someUnit->state = someUnit->state ^ (US_REMOVED|US_HIDDEN|US_REMOVED_2); //gets rid of removed state from all player units
+                }
+            }
+        }
+    }
 }

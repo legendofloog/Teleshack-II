@@ -271,6 +271,7 @@ SHORT 0
 
 ALIGN 4
 BeginningScene:
+	InterludeReturnRoutineASMC
 	MountAll
 	TILECHANGE 0
 	TILECHANGE 1

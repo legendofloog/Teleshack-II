@@ -259,7 +259,7 @@ NoFade
 ENDA
 
 EndingScene:
-RemoveAllIfCaptured
+EndOfEscapeRoutineASMC
 SetBackground(CastleHallway)
 MUSC FF5_Nostalgia
 Text(Ch9EndingText)
