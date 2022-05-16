@@ -107,6 +107,7 @@
 [LoadRashid] = [LoadFace][0xD7][0x1]
 [LoadNikolas] = [LoadFace][0xDB][0x1]
 [LoadSera] = [LoadFace][0xDE][0x1]
+[LoadShaw] = [LoadFace][0xE7][0x1]
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]

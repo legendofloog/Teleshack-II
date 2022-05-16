@@ -227,6 +227,9 @@ Stinger[X]
 ## StingerDesc
 Spd +5. Hornet[LockIcon][X]
 
+## MysticLanceName
+Mystic Lance[X]
+
 ## LunarAxeName
 Lunar Axe[X]
 
@@ -458,3 +461,11 @@ Can be used to greatly heal allies.[X]
 
 ## KaiserschwertFakeDesc
 [LockIcon] Loewe. A sentimental sword.[X]
+
+## WornScrollName
+Worn Scroll[X]
+
+## WornScrollDesc
+Some power still lingers[N]
+within this faded scroll.[N]
++5% HP, +5% Str, +5% Skl[X]

@@ -41,6 +41,7 @@
 #define LoyaltyID 61
 #define ChargeID 62
 #define AcrobatID 63
+#define SmiteID 76
 
 
 // keep it continous for debug purpose
@@ -87,3 +88,4 @@
 #define TelepathyID 72
 #define PhaseLeapID 73
 #define AbsoluteZeroTomeID 74
+#define BladeDanceID 75

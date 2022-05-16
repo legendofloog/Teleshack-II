@@ -900,7 +900,7 @@
 
 //Smite: Allows unit to push other units two tiles away.
 //By StanH
-#define SmiteID 255
+//#define SmiteID 255
 
 //Pivot: Allows unit to move to the opposite side of an adjacent ally.
 //By StanH

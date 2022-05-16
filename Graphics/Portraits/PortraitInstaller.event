@@ -57,6 +57,7 @@
 #define GrotoMug 0xe4
 #define TaoMug 0xe5
 #define ZharaMug 0xe6
+#define ShawMug 0xE7
 
 // NPCs
 #define EliasMug 0xB
@@ -864,6 +865,14 @@ SeraMugData:
 #incbin "Dmp/Sera(Nobody)_palette.dmp"
 #incbin "Dmp/Sera(Nobody)_minimug.dmp"
 setMugEntry(SeraMug, SeraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+ShawMugData:
+#incbin "Dmp/Shaw(XVI)_mug.dmp"
+#incbin "Dmp/Shaw(XVI)_frames.dmp"
+#incbin "Dmp/Shaw(XVI)_palette.dmp"
+#incbin "Dmp/Shaw(XVI)_minimug.dmp"
+setMugEntry(ShawMug, ShawMugData, 3, 5, 3, 3)
 
 ALIGN 16
 ShafaqatMugData:

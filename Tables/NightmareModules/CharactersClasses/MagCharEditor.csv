@@ -47,8 +47,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x2D Ilse,3,30
 0x2E Rashid,0,5
 0x2F - Nikolas,1,15
-0x30 Sera,2,15
-0x31 ???,0,5
+0x30 Sera,0,5
+0x31 Shaw,4,15
 0x32 Apsis,0,66
 0x33 Ojasvi,3,35
 0x34 Darcy,0,5
@@ -172,7 +172,7 @@ Wraith (Swords),0,0
 0xAA KwameReal,13,100
 Monster,0,0
 Monster,0,0
-Monster,0,0
+0xAD Shafaqat,10,0
 Monster,0,0
 Monster,0,0
 Monster,0,0

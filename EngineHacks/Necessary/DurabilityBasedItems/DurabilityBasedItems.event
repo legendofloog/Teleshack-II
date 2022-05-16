@@ -111,6 +111,7 @@ NameTableEntry(ZykhraScrollName)
 NameTableEntry(RaioScrollName)
 NameTableEntry(LuzenScrollName)
 NameTableEntry(AmserScrollName)
+NameTableEntry(WornScrollName)
 
 
 ALIGN 4
@@ -121,4 +122,5 @@ NameTableEntry(ZykhraScrollDesc)
 NameTableEntry(RaioScrollDesc)
 NameTableEntry(LuzenScrollDesc)
 NameTableEntry(AmserScrollDesc)
+NameTableEntry(WornScrollDesc)
 

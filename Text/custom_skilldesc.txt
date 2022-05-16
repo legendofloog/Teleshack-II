@@ -102,6 +102,11 @@ Desolate: Gain +40 crit vs[N]
 enemies who are not adjacent[N]
 to any of their allies.[X]
 
+## SD_BladeDance *
+Blade Dance: When attacking, follow-up attacks[N]
+are consecutive, and if enemy is defeated, evade[N]
+fatal attacks until the start of your next turn.[X]
+
 ## SD_Spelltwister *
 Spelltwister: Apsis has access to his arsenal of[N]
 5 personal tomes, each with a mix-and-match[N]
