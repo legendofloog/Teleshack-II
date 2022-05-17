@@ -14,8 +14,9 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
-TurnEventPlayer(0, Thief1_AEvent, 7)
-TurnEventPlayer(0, Thief1_BEvent, 10)
+TurnEventPlayer(0, ThiefReinforcementsEvent, 7)
+TurnEventPlayer(0, ThiefReinforcementsEvent, 10)
+TurnEventPlayer(0, VolranTaraRecruitment, 1)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
@@ -33,11 +34,6 @@ END_MAIN
 
 
 LocationBasedEvents:
-Door(14,3)
-Door(15,3)
-Door(9,17)
-Door(13,14)
-Door(15,17)
 Chest(Lamfada,29,29)
 Chest(EarthGreataxe,20,7)
 END_MAIN
@@ -60,12 +56,12 @@ Tutorial:
 END_MAIN
 
 Traps1:
-AddTrap(13,40,13)
-AddTrap(13,41,13)
-AddTrap(13,42,13)
-AddTrap(13,40,19)
-AddTrap(13,41,19)
-AddTrap(13,42,19)
+MapSpriteTrap(13,40,12)
+MapSpriteTrap(13,41,12)
+MapSpriteTrap(13,42,12)
+MapSpriteTrap(13,40,20)
+MapSpriteTrap(13,41,20)
+MapSpriteTrap(13,42,20)
 ENDTRAP
 ALIGN 4
 
@@ -101,9 +97,10 @@ UNIT
 
 
 EnemyUnits:
-UNIT C19Boss DarkBishop 0x0 Level(7,Enemy,False) [41,16] 0x0 0x0 0x0 0x0 [Hel,Luna,SecretBook] RangeAI
+UNIT C19Boss DarkBishop 0x0 Level(7,Enemy,False) [41,16] 0x0 0x0 0x0 0x0 [Hel,Luna,SecretBook] BossHealAI
+UNIT C19Mini1 ArchKnight_Dismounted 0x0 Level(6,Enemy,False) [41,16] 0x0 0x0 0x0 0x0 [SilverBow] RangeAI
 UNIT C19Enemy Myrmidon C19Boss Level(19,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [BoldBlade] RangeAI
-UNIT C19Enemy Fighter C19Boss Level(19,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
+UNIT C19Enemy Fighter C19Boss Level(19,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
 UNIT C19Enemy Warrior C19Boss Level(5,Enemy,True) [20,7] 0x0 0x0 0x0 0x0 [BoldCleaver,TrainedArc] RangeAI
 UNIT C19Enemy LanceSoldier C19Boss Level(19,Enemy,True) [14,4] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
 UNIT C19Enemy LanceSoldier C19Boss Level(19,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Lamfada] TwoActionAI
@@ -120,8 +117,9 @@ UNIT C19Enemy DarkMage C19Boss Level(19,Enemy,True) [11,26] 0x0 0x0 0x0 0x0 [Lun
 UNIT C19Enemy Halberdier C19Boss Level(5,Enemy,True) [12,27] 0x0 0x0 0x0 0x0 [TrainedAxe,Lamfada] RangeAI
 UNIT
 
-Thief1_A:
-UNIT C19Enemy Thief C19Boss Level(15,Enemy,True) [12,1] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
+ThiefReinforcements:
+UNIT C19Enemy Thief C19Boss Level(19,Enemy,True) [36,12] 0x0 0x0 0x0 0x0 [BoldBlade,ChestKey] ThiefAI
+UNIT C19Enemy Thief C19Boss Level(19,Enemy,True) [36,20] 0x0 0x0 0x0 0x0 [BoldBlade,ChestKey] ThiefAI
 UNIT
 
 Thief1_B:
@@ -166,21 +164,14 @@ UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SilverL
 UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [3,1] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
 UNIT
 
-Thief1_AEvent:
+ThiefReinforcementsEvent:
 CamOn
-LOAD1 1 Thief1_A
+LOAD1 1 ThiefReinforcements
 ENUN
 CamOff
 NoFade
 ENDA
 
-Thief1_BEvent:
-CamOn
-LOAD1 1 Thief1_B
-ENUN
-CamOff
-NoFade
-ENDA
 
 EnemyReinforcementsEvent_A:
 CamOn
@@ -235,36 +226,37 @@ CamOff
 NoFade
 ENDA
 
+VolranTaraRecruitment:
+CameraCursor(Volran)
+CUSA Volran
+SetFatigue(Volran,0)
+CameraCursor(Tara)
+CUSA Tara
+SetFatigue(Tara,0)
+NoFade
+ENDA
+
 RunespearEvent:
 Text(Ch19_Tobie_Mish_Talk)
-GiveItem(SlimLance,Tobie)
+GiveItem(Runespear,Tobie)
+NoFade
 ENDA
 
 BeginningScene:
 SetBackground(0x33)
-MUSC Advance
-Text(Ch19_Cleo_Loewe_Open)
-LOAD1 1 EnemyUnits
+MUSC PMDSteamCaveID
+Text(Ch19_Loewe_Volran_Open1)
+SetBackground(0x34)
+Text(Ch19_Cleo_Tara_Open1)
+LOAD1 0x1 EnemyUnits
 ENUN
 DismountAll
+LOAD1 0x1 NewPlayers
 GotoPrepScreen
 ENDA
 
 EndingScene:
 RemoveAll
-MUSC Tension
-SetBackground(Temple)
-Text(Ch16_Ending)
-MUSC Rovers
-SetBackground(BuildingInterior)
-Text(Ch16_Council_1)
-MUSC Rovers
-Text(Ch16_Council_2)
-Text(Ch16_Council_3)
-SetBackground(PrisonRoom)
-MUSC(Nighttime)
-Text(Ch16_Ending_LoeweCleoNight_1)
-Text(Ch16_Ending_LoeweCleoNight_2)
 MNC2 Chapter17
 NoFade
 ENDA
