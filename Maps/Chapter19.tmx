@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="47" height="33" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="47" height="33" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
   <property name="ChapterID" value="Chapter19"/>
   <property name="Main" value=""/>
@@ -10,7 +10,6 @@
   <property name="TileConfig" value="FF5CaveConfigID"/>
  </properties>
  <tileset firstgid="1" source="FF5 - Caves 01 - Tileset.tsx"/>
- <tileset firstgid="1025" source="../../../../FF5 - Caves 01 - Tileset.tsx"/>
  <layer id="1" name="Tile Layer 1" width="47" height="33">
   <properties>
    <property name="ChapterID" value="Chapter19"/>
@@ -57,7 +56,7 @@
 44,44,44,44,44,44,44,44,44,44,44,15,15,15,15,16,24,24,24,88,645,578,14,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44,44
 </data>
  </layer>
- <layer id="3" name="Tile Layer 3" width="47" height="33">
+ <layer id="3" name="Tile Layer 3" width="47" height="33" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -94,7 +93,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="2" name="Tile Layer 2" width="47" height="33">
+ <layer id="2" name="Tile Layer 2" width="47" height="33" visible="0">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
