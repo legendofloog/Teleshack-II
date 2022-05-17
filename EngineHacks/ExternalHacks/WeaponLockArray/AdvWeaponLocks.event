@@ -127,4 +127,9 @@ BYTE HardCharLock
 BYTE Tao
 BYTE EndLockArray
 
+RunespearArray:
+BYTE HardCharLock
+BYTE Tobie
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

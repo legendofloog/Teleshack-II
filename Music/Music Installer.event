@@ -83,3 +83,7 @@ SongTable(FestivalHuntID,song09,MapMusicGroup)
 SongTable(War_sHeartbeat,song13,BattleMusicGroup)
 #include "MusicEvents/Remembrance(Loog).event"
 SongTable(RemembranceID, Remembrance, MapMusicGroup)
+#include "MusicEvents/Crypteque - CotND.event"
+SongTable(CryptequeID, crypt, MapMusicGroup)
+#include "MusicEvents/Valkyrie_Profile_-_Rise_Above_the_World_buggo.event"
+SongTable(RiseAboveID, song017B, MapMusicGroup)

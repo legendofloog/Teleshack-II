@@ -66,6 +66,11 @@ WindBowStatBoosts:
 StatBonus(0,0,0,0,5,0,0,0,0,0)
 
 ALIGN 4
+BoldWeaponStatBoosts:
+StatBonus(0,0,0,0,0,(-5),(-5),0,0,0)
+
+
+ALIGN 4
 GrowthScrollBonusesTable:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
 GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr

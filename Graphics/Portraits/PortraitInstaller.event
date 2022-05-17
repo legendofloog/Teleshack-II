@@ -57,7 +57,9 @@
 #define GrotoMug 0xe4
 #define TaoMug 0xe5
 #define ZharaMug 0xe6
-#define ShawMug 0xE7
+#define VolranMug 0xe7
+#define TaraMug 0xe8
+#define ShawMug 0xE9
 #define TakaiMug 0xEA
 
 // NPCs
@@ -946,3 +948,19 @@ TakaiMugData:
 #incbin "Dmp/Takai(MeatOfJustice)_palette.dmp"
 #incbin "Dmp/Takai(MeatOfJustice)_minimug.dmp"
 setMugEntry(TakaiMug, TakaiMugData, 2, 5, 2, 3)
+
+ALIGN 16
+VolranMugData:
+#incbin "Dmp/volran(PLACEHOLDER)_mug.dmp"
+#incbin "Dmp/volran(PLACEHOLDER)_frames.dmp"
+#incbin "Dmp/volran(PLACEHOLDER)_palette.dmp"
+#incbin "Dmp/volran(PLACEHOLDER)_minimug.dmp"
+setMugEntry(VolranMug, VolranMugData, 2, 5, 3, 3)
+
+ALIGN 16
+TaraMugData:
+#incbin "Dmp/tara_mug.dmp"
+#incbin "Dmp/tara_frames.dmp"
+#incbin "Dmp/tara_palette.dmp"
+#incbin "Dmp/tara_minimug.dmp"
+setMugEntry(TaraMug, TaraMugData, 2, 6, 3, 4)

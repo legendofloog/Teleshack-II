@@ -83,3 +83,7 @@ ALIGN 4
   ALIGN 4
   #include "Chapter18x.event"
 }
+{
+  ALIGN 4
+  #include "Chapter19.event"
+}

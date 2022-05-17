@@ -203,8 +203,14 @@
 #define WoodlandsHuke 0xDC
 #define CaptainsHelm 0xDD
 #define FealtyBow 0xDE
-#define HeroRing 0xDF
-
+#define Lamfada 0xDF
+#define BoldBlade 0xE0
+#define BoldPike 0xE1
+#define BoldCleaver 0xE2
+#define Luna 0xE3
+#define HeroRing 0xff
+#define EarthGreataxe 0xE4
+#define Runespear 0xE5
 
 #define Stinger 0x8d
 #define MysticLance 0x8e

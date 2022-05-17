@@ -55,7 +55,8 @@
 #define Groto 0x35
 #define Tao 0x36
 #define Zhara 0x37
-
+#define Volran 0x38
+#define Tara 0x39
 #define Kofi 0x40
 
 // Chapter 1 Bosses
@@ -172,6 +173,12 @@
 #define Shafaqat 0xAD
 #define Barod2 0xAE
 
+//Chapter 19 Stuff
+#define C19Enemy 0x8C
+#define C19Phantom 0x8D
+#define C19Mini1 0x8E
+#define C19Mini2 0x8F
+#define C19Boss 0x56
 
 #define Breguet 0x46
 #define Bazba 0x48
