@@ -91,11 +91,13 @@ SupportTerm
 ALIGN 4
 TobieSupportList:
 SupportEntry(Gimm, 3, 0, 0, 20, 15, 0, 0)
+SupportEntry(Takai, 3, 1, 1, 10, 5, 5, 10)
 SupportTerm
 
 ALIGN 4
 GimmSupportList:
 SupportEntry(Tobie, 3, 3, 0, 0, 0, 20, 0)
+SupportEntry(Takai, 3, 1, 1, 10, 5, 5, 10)
 SupportTerm
 
 ALIGN 4
@@ -139,6 +141,11 @@ ShawSupportList:
 SupportEntry(Sera, 3, 1, 0, 5, 5, 5, 5)
 SupportTerm
 
+ALIGN 4
+TakaiSupportList:
+SupportEntry(Mish, 3, 1, 1, 10, 5, 5, 10)
+SupportEntry(Tobie, 3, 1, 1, 10, 5, 5, 10)
+SupportTerm
 
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)

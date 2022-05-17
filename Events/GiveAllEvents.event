@@ -373,3 +373,10 @@ Text(ZharaDeathQuoteText)
 SendAll(Zhara)
 NoFade
 ENDA
+
+ALIGN 4
+TakaiGiveAll:
+Text(TakaiDeathQuoteText)
+SendAll(Takai)
+NoFade
+ENDA

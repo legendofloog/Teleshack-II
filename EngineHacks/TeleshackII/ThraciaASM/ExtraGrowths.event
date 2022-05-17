@@ -45,6 +45,7 @@ SetUnitConGrowth(Groto,85)
 SetUnitConGrowth(Tao,5)
 SetUnitConGrowth(Kofi,15)
 SetUnitConGrowth(Zhara,10)
+SetUnitConGrowth(Takai,25)
 
 // Mov Growth Table
 SetUnitMovGrowth(Iskra,2)
@@ -92,3 +93,4 @@ SetUnitMovGrowth(Groto,5)
 SetUnitMovGrowth(Tao,3)
 SetUnitMovGrowth(Kofi,1)
 SetUnitMovGrowth(Zhara,1)
+SetUnitMovGrowth(Takai,2)

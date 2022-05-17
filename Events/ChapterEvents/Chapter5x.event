@@ -406,61 +406,57 @@ MOVE 15 Kwame [8,5]
 ENUN
 CHECK_ALIVE Mira
 BEQ 20 s0 sC
-	//CHECK_EVENTID 0x8B
-	//BNE 20 s0 sC
-	TEXTSTART
-	TEXTSHOW Ch5xKwameSceneMiraAlive
-	TEXTEND
-	LOAD1 0 MiraBeginningCutsceneGroup
-	ENUN
-	MOVE 15 MiraCopy [8,6]
-	ENUN
-	TEXTCONT
-	TEXTEND
-	MOVE 15 MiraCopy [9,8]
-	ENUN
-	REMOVEUNIT MiraCopy
-	TEXTCONT
-	TEXTEND
-	REMA
-	GOTO 21
+	CheckUnitJailed(Mira)
+	BNE 20 s0 sC
+		Text(Ch5xKwameSceneMiraAlive1)
+		LOAD1 0 MiraBeginningCutsceneGroup
+		ENUN
+		MOVE 15 MiraCopy [8,6]
+		ENUN
+		Text(Ch5xKwameSceneMiraAlive2)
+		MOVE 15 MiraCopy [9,8]
+		ENUN
+		REMOVEUNIT MiraCopy
+		Text(Ch5xKwameSceneMiraAlive3)
+		GOTO 21
 LABEL 20
 Text(Ch5xKwameSceneMiraDead)
 LABEL 21
 //MUSC WaterFlowingSoundEffect
 CAMERA [18,8]
 TILECHANGE 0
-STAL 20
+STAL 10
 TILECHANGE 1
-STAL 20
+STAL 10
 TILECHANGE 2
-STAL 20
+STAL 10
 TILECHANGE 3
-STAL 20
+STAL 10
 TILECHANGE 4
-STAL 20
+STAL 10
 TILECHANGE 5
-STAL 20
+STAL 10
 TILECHANGE 6
-STAL 20
+STAL 10
 TILECHANGE 7
-STAL 20
+STAL 10
 TILECHANGE 8
-STAL 20
+STAL 10
 TILECHANGE 9
-STAL 20
+STAL 10
 TILECHANGE 10
-STAL 20
+STAL 10
 TILECHANGE 11
-STAL 20
+STAL 10
 TILECHANGE 12
-STAL 20
+STAL 10
 TILECHANGE 13
-STAL 20
+STAL 10
 ENUN
 CamOn
 LOAD1 1 TrajanBeginningGroup
 ENUN
+BROWNBOXTEXT ElmhurstIslandText[8,8]
 MOVE 15 Kwame [9,8]
 ENUN
 REMOVEUNIT Kwame
@@ -485,14 +481,15 @@ FlashCursor(Trajan,60)
 Text(Ch5xTrajanMeeting2)
 CHECK_ALIVE Mira
 BEQ 22 s0 sC
-	//CHECK_EVENTID 0x8B
-	//BEQ 23 s0 sC
-		//Text(Ch5xTrajanMeeting3MiraCaptured)
-		//GOTO 24
-	//LABEL 23
+	CheckUnitJailed(Mira)
+	BEQ 23 s0 sC
+		Text(Ch5xTrajanMeeting3MiraCaptured)
+		GOTO 24
+	LABEL 23
 	LOAD1 1 MiraBeginningCutsceneGroup
 	ENUN
 	MOVE 15 Mira [15,11]
+	ENUN
 	Text(Ch5xTrajanMeeting3MiraAlive)
 	GOTO 24
 LABEL 22
@@ -510,19 +507,15 @@ ENUN
 FADU 5
 Text(Ch5xTrajanMeeting5)
 FlashCursor(8,1,60)
-MOVE 15 Trajan [8,1]
-ENUN
+SingleUnitMove(Trajan, 15, 8, 1)
 REMOVEUNIT Trajan
-MOVE 15 Loewe [8,1]
-ENUN
+SingleUnitMove(Loewe, 15, 8, 1)
 SVAL s1 0x1
 SET_CONDITION Loewe
-MOVE 15 Cleo [8,1]
-ENUN
+SingleUnitMove(Cleo, 15, 8, 1)
 SVAL s1 0x1
 SET_CONDITION Cleo
-MOVE 15 Kwame [8,1]
-ENUN
+SingleUnitMove(Kwame, 15, 8, 1)
 REMOVEUNIT Kwame
 // beginning of war room scene
 FADI 15
@@ -541,20 +534,20 @@ ENUN
 LOAD1 1 GreenUnits
 LOAD1 1 CleoSelectionUnitGroup
 ENUN
-CHECK_ALIVE Iskra
-BEQ 1 s0 sC
+CheckUnitDeadOrJailed(Iskra)
+BNE 1 s0 sC
 	LOAD1 1 IskraCopyGroup
 	ENUN
 	UnitCopyASMC(Iskra,IskraCopy)
 LABEL 1
-CHECK_ALIVE Mira
-BEQ 2 s0 sC
+CheckUnitDeadOrJailed(Mira)
+BNE 2 s0 sC
 	LOAD1 1 MiraCopyGroup
 	ENUN
 	UnitCopyASMC(Mira,MiraCopy)
 LABEL 2
-CHECK_ALIVE Varga
-BEQ 3 s0 sC
+CheckUnitDeadOrJailed(Varga)
+BNE 3 s0 sC
 	LOAD1 1 VargaCopyGroup
 	ENUN
 	UnitCopyASMC(Varga,VargaCopy)

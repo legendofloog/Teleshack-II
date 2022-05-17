@@ -8,13 +8,16 @@ Interlude 1 - Resolve[X]
 [MidRight][LoadLoewe][OneLineBox]
 [Beat][A][X]
 
+## ElmhurstIslandText
+Elmhurst Island[X]
+
 ## Ch5xGechrysosText
 Meanwhile, in Gechrysos,[N]
 the heart of Cythes...[A][X]
 
 ## Ch5xKwameGoesDown
 [MidLeft][LoadKwame]
-Loewe! Cleo! We have[N]
+Loewe! Cleo! We've[N]
 arrived at the island![A][X]
 
 ## Ch5xLoeweCleoTalk
@@ -61,11 +64,13 @@ Excellent. For now, we must both[N]
 survive until that day comes.[A][X]
 
 
-## Ch5xKwameSceneMiraAlive
+## Ch5xKwameSceneMiraAlive1
 [MidLeft][LoadKwame][OneLineBox]
-Well, another time, then[Beat][A]
-[Event]
-[MidRight][LoadMira][TwoLineBox]
+Well, another time, then[Beat][A][X]
+
+## Ch5xKwameSceneMiraAlive2
+[MidLeft][LoadKwame]
+[MidRight][LoadMira]
 Hold a moment, Kwame.[N]
 Why were you watching them?[A]
 [MidLeft]
@@ -101,7 +106,11 @@ As you should, Captain.[N]
 I respect your dedication.[A]
 [MidRight]
 [Beat]That's all I wanted[N]
-to say. I'll be off.[A][CloseSpeechSlow][ClearFace][Event]
+to say. I'll be off.[A][X]
+
+## Ch5xKwameSceneMiraAlive3
+[MidLeft][LoadKwame]
+[MidRight][LoadMira]
 [MidLeft][ThreeLineBox]
 [Beat]It is fortunate that those two have a[N]
 watchful, if abrasive, guardian. I'm sure[N]

@@ -21,8 +21,13 @@ END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-CharacterEventBothWays(0xA, DelilahFreedBySvetConvoText, Delilah, Svetomir)
+CharacterEventBothWays(0xA, DelilahSvetTalk, Delilah, Svetomir)
 END_MAIN
+
+DelilahSvetTalk:
+Text(DelilahFreedBySvetConvoText)
+NoFade
+ENDA
 
 LocationBasedEvents:
 Seize(1,3)

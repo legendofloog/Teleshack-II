@@ -58,6 +58,7 @@
 #define TaoMug 0xe5
 #define ZharaMug 0xe6
 #define ShawMug 0xE7
+#define TakaiMug 0xEA
 
 // NPCs
 #define EliasMug 0xB
@@ -938,3 +939,10 @@ GrotoMugData:
 #incbin "Dmp/Groto(placeholder)_minimug.dmp"
 setMugEntry(GrotoMug, GrotoMugData, 2, 5, 3, 3)
 
+ALIGN 16
+TakaiMugData:
+#incbin "Dmp/Takai(MeatOfJustice)_mug.dmp"
+#incbin "Dmp/Takai(MeatOfJustice)_frames.dmp"
+#incbin "Dmp/Takai(MeatOfJustice)_palette.dmp"
+#incbin "Dmp/Takai(MeatOfJustice)_minimug.dmp"
+setMugEntry(TakaiMug, TakaiMugData, 2, 5, 2, 3)

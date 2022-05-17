@@ -3,6 +3,9 @@
 #define JailOneUnitASMC(charID) "SVAL s1 charID; ASMC JailOneUnit"
 #define EndOfEscapeRoutineASMC "ASMC EndOfEscapeRoutine"
 
+#define CheckUnitJailed(charID) "SVAL s1 charID; ASMC CheckJailed"
+#define CheckUnitDeadOrJailed(charID) "SVAL s1 charID; ASMC CheckDeadOrJailed"
+
 #define InterludeRemovalRoutineASMC "ASMC InterludeRemovalRoutine"
 #define InterludeReturnRoutineASMC "ASMC InterludeReturnRoutine"
 

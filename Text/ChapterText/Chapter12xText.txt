@@ -360,7 +360,29 @@ and Kwame is assisting her there.[AN]
 them myself. Let's hope some[N]
 of them are up for the task[Beat][A][X]
 
+## TakaiFirstTalkDialogue
+[MidLeft][LoadTakai][ThreeLineBox]
+'Ello there! The name's Takai.[N]
+World renowned fighter![N]
+I see yer takin' an interest in me[Beat][AN]
+I'll have ya know, ya won't find[N]
+better battlers than me. Y'see,[N]
+I'm real adept with bows n' axes.[AN]
+'Specially magic kinds![A][X]
 
+## TakaiPickDialogue
+[MidRight][LoadLoewePunished][ToggleMouthMove]
+(Should I pick Takai?)[No][X]
+
+## TakaiAcceptedDialogue
+[MidLeft][LoadTakai][ToggleSmile]
+Hohoho! Ye won't regret it,[N]
+I promise ya![A][X]
+
+## TakaiRejectedDialogue
+[MidLeft][LoadTakai]
+Ah, well[Beat] it was worth a shot.[N]
+Talk to me again if ya reconsider[Beat][A][X]
 
 ## EllereyFirstTalkDialogueArmorAlive
 [MidRight][LoadLoewePunished]

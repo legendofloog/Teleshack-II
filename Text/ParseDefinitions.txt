@@ -156,6 +156,7 @@
 [LoadGroto] = [LoadFace][0xE4][0x1]
 [LoadTao] = [LoadFace][0xE5][0x1]
 [LoadZhara] = [LoadFace][0xE6][0x1]
+[LoadTakai] = [LoadFace][0xEA][0x1]
 
 
 [LoadMan1] = [LoadFace][0x6A][0x1]

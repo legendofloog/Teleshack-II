@@ -102,6 +102,7 @@ DeathQuote(Pelecaye,AllChapters,0x0,0,PelecayeGiveAll)
 DeathQuote(Tippany,AllChapters,0x0,0,TippanyGiveAll)
 DeathQuote(Mantou,AllChapters,0x0,0,MantouGiveAll)
 DeathQuote(Ellerey,AllChapters,0x0,0,EllereyGiveAll)
+DeathQuote(Takai,AllChapters,0x0,0,TakaiGiveAll)
 
 // ch 13
 DeathQuote(Darby,AllChapters,0x0,0,DarbyGiveAll)

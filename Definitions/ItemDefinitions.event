@@ -143,6 +143,9 @@
 #define BattleAxe 0x86
 #define Ivaldi 0x87
 #define KnightProof 0x88
+#define WindBow 0x89
+#define FireDrive 0x8A
+
 #define HoundingBow 0x93
 #define HeavySpear 0x95
 #define CrownPyreItem 0x9a

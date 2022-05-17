@@ -15,13 +15,14 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 END_MAIN
 
-// 7,8,9,10,11 reserved for recruitment
+// 7,8,9,10,11,18 reserved for recruitment
 CharacterBasedEvents:
 CharacterEventBothWays(12, EllereyRecruit, Loewe, Ellerey)
 CharacterEventBothWays(13, MantouRecruit, Loewe, Mantou)
 CharacterEventBothWays(14, TippanyRecruit, Loewe, Tippany)
 CharacterEventBothWays(15, PelecayeRecruit, Loewe, Pelecaye)
 CharacterEventBothWays(16, CarlRecruit, Loewe, Carl)
+CharacterEventBothWays(17, TakaiRecruit, Loewe, Takai)
 CharacterEventBothWays(0, TrajanTalk, Loewe, Trajan)
 END_MAIN
 
@@ -58,6 +59,30 @@ CALL CheckIfDoneSelecting
 NoFade
 ENDA
 
+TakaiRecruit:
+CHECK_EVENTID 18
+BNE 14 s0 sC
+	ENUT 18
+	Text(TakaiFirstTalkDialogue)
+LABEL 14
+Text(TakaiPickDialogue)
+SVAL s1 0x1
+BEQ 15 s1 sC
+	Text(TakaiRejectedDialogue)
+	ENUF 17
+	NoFade
+	ENDB
+LABEL 15
+Text(TakaiAcceptedDialogue)
+CUSA Takai
+SetFatigue(Takai,0)
+MOVE 15 Takai [7,9]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Mantou
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
 
 MantouRecruit:
 CHECK_EVENTID 8
@@ -172,6 +197,7 @@ BNE 11 s1 sC
 	ENUT 14
 	ENUT 15
 	ENUT 16
+	ENUT 17
 LABEL 11
 NoFade
 ENDA
@@ -246,6 +272,7 @@ UNIT Tippany DarkMage_F Loewe Level(6,NPC,False) [12,5] 0x0 0x0 0x0 0x0 [Heal,Fl
 UNIT Trajan Hero Loewe Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT Pelecaye General Loewe Level(1,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
 UNIT Carl SwordFighter Loewe Level(9,NPC,False) [7,7] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
+UNIT Takai Warrior Loewe Level(1,NPC,False) [5,8] 0x0 0x0 0x0 0x0 [WindBow,FireDrive]     NoAI
 UNIT
 
 RedUnits:

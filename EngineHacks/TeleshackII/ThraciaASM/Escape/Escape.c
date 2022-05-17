@@ -98,6 +98,28 @@ bool CheckIfJailed(Unit* unit){
     return false;
 }
 
+void CheckJailed(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]);
+    if (CheckIfJailed(unit)){
+        gEventSlot[0xC] = 1; // if jailed, return 1 (true) to sC
+        return;
+    }
+    gEventSlot[0xC] = 0; // if not, return 0 (false) to sC
+}
+
+void CheckDeadOrJailed(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]);
+    if ( unit->state & US_DEAD){
+        gEventSlot[0xC] = 1; // if dead, return 1 (true) to sC
+        return;
+    }
+    if (CheckIfJailed(unit)){
+        gEventSlot[0xC] = 1; // if jailed, return 1 (true) to sC
+        return;
+    }
+    gEventSlot[0xC] = 0; // if not, return 0 (false) to sC
+}
+
 void JailOneUnit(){
     Unit* unit = GetUnitByCharId(gEventSlot[0x1]);
     unit->state = (US_REMOVED | US_HIDDEN | US_UNSELECTABLE | US_GROWTH_BOOST);
