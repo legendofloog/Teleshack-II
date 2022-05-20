@@ -28,7 +28,7 @@ Door(20,2)
 Chest(SteelAxe,23,2)
 Chest(RedGem,26,2)
 Door(26,6)
-DurabilityChest(GrowthScroll, BeiyrScroll,20,11)
+DurabilityChest(GrowthScroll, BeiyrScroll,21,12)
 Door(17,11)
 Door(15,13)
 LOCA 9 AlexAxelDoor [10,14] 0x12
