@@ -166,21 +166,33 @@ ENDA
 
 
 IskraMiraTalk:
-CHECK_ALIVE Iskra
-BEQ 16 s0 sC
-	CHECK_ALIVE Mira
-	BEQ 17 s0 sC
+CheckUnitDeadOrJailed(Iskra)
+BNE 16 s0 sC //branches if iskra is dead or jailed
+	CheckUnitDeadOrJailed(Mira)
+	BNE 17 s0 sC // branches if mira is dead or jailed
 		SetBackground(0x33)
 		Text(Ch5xMiraIskraTalk)
 		CALL $9EE2C4
 		NoFade
 		ENDB
 	LABEL 17
-		Text(Ch5xIskraTalk)
+		CHECK_ALIVE Mira
+		BNE 567 s0 sC // branches if she is captured
+			Text(Ch5xIskraTalkMiraDead)
+			NoFade
+			ENDB
+		LABEL 567
+		Text(Ch5xIskraTalkMiraCaptured)
 		NoFade
 		ENDB
 LABEL 16
-Text(Ch5xMiraTalk)
+CHECK_ALIVE Iskra
+BNE 789 s0 sC //branches if she is captured
+	Text(Ch5xMiraTalkIskraDead)
+	NoFade
+	ENDB
+LABEL 789
+Text(Ch5xMiraTalkIskraCaptured)
 NoFade
 ENDA
 
@@ -404,21 +416,19 @@ HIDEUNIT Loewe
 STAL 10
 MOVE 15 Kwame [8,5]
 ENUN
-CHECK_ALIVE Mira
-BEQ 20 s0 sC
-	CheckUnitJailed(Mira)
-	BNE 20 s0 sC
-		Text(Ch5xKwameSceneMiraAlive1)
-		LOAD1 0 MiraBeginningCutsceneGroup
-		ENUN
-		MOVE 15 MiraCopy [8,6]
-		ENUN
-		Text(Ch5xKwameSceneMiraAlive2)
-		MOVE 15 MiraCopy [9,8]
-		ENUN
-		REMOVEUNIT MiraCopy
-		Text(Ch5xKwameSceneMiraAlive3)
-		GOTO 21
+CheckUnitDeadOrJailed(Mira)
+BNE 20 s0 sC //branches if she is
+	Text(Ch5xKwameSceneMiraAlive1)
+	LOAD1 0 MiraBeginningCutsceneGroup
+	ENUN
+	MOVE 15 MiraCopy [8,6]
+	ENUN
+	Text(Ch5xKwameSceneMiraAlive2)
+	MOVE 15 MiraCopy [9,8]
+	ENUN
+	REMOVEUNIT MiraCopy
+	Text(Ch5xKwameSceneMiraAlive3)
+	GOTO 21
 LABEL 20
 Text(Ch5xKwameSceneMiraDead)
 LABEL 21
@@ -457,10 +467,11 @@ CamOn
 LOAD1 1 TrajanBeginningGroup
 ENUN
 BROWNBOXTEXT ElmhurstIslandText[8,8]
+Text(Ch5xKwameGoesDown1)
 MOVE 15 Kwame [9,8]
 ENUN
 REMOVEUNIT Kwame
-Text(Ch5xKwameGoesDown)
+Text(Ch5xKwameGoesDown2)
 SPAWN_NPC Kwame [9,8]
 MOVE 15 Kwame [9,11]
 STAL 20
@@ -488,7 +499,7 @@ BEQ 22 s0 sC
 	LABEL 23
 	LOAD1 1 MiraBeginningCutsceneGroup
 	ENUN
-	MOVE 15 Mira [15,11]
+	MOVE 15 MiraCopy [15,11]
 	ENUN
 	Text(Ch5xTrajanMeeting3MiraAlive)
 	GOTO 24
@@ -497,14 +508,32 @@ Text(Ch5xTrajanMeeting3MiraDead)
 LABEL 24
 //MUSC WaterFlowingSoundEffect
 Text(Ch5xTrajanMeeting4)
+CamOff
+MOVE 15 Senny [5,5]
+MOVE 15 Helman [9,8]
+ENUN
+STAL 10
+MOVE 15 Loewe [19,8]
+MOVE 15 Cleo [19,9]
+MOVE 15 Kwame [19,10]
+MOVE 15 Trajan [19,11]
+CheckUnitDeadOrJailed(Mira)
+BNE 435 s0 sC // branches = not alive/present
+	MOVE 15 MiraCopy [19,12]
+LABEL 435
 MUSC 0x7FFF
 FADI 15
+ENUN
+CheckUnitDeadOrJailed(Mira)
+BNE 420 s0 sC // branches = not alive/present
+	REMOVEUNIT MiraCopy
+LABEL 420
 RemoveAll
-REMOVEUNIT MiraCopy
 LOMA Ch5xInterlude //switches map to base map
 LOAD1 0 HeadquartersBeginningCutsceneUnits
 ENUN
 FADU 5
+BROWNBOXTEXT LiberatorBaseText[8,8]
 Text(Ch5xTrajanMeeting5)
 FlashCursor(8,1,60)
 SingleUnitMove(Trajan, 15, 8, 1)
@@ -525,6 +554,7 @@ LOAD1 2 WarRoomUnits
 ENUN
 FADU 5
 MUSC FE5_InTheBattle_Fate
+BROWNBOXTEXT SomeTimeLaterText[8,8]
 FlashCursor(Trajan,60)
 Text(Ch5xStrategyRoom)
 FADI 15
@@ -591,7 +621,7 @@ TEXTEND
 REMA
 CALL $9EE2C4
 MUSC WindyDaySoundEffect
-STAL 20
+BROWNBOXTEXT Ch5xImperialPalaceText[8,8]
 CamOn
 LOAD1 1 EliasUnitGroup
 ENUN
@@ -619,13 +649,14 @@ Text(Ch5xLeonidasLeaves)
 MOVE 15 Senny [14,11]
 ENUN
 REMOVEUNIT Senny
+MUSC 0x7FFF
 STAL 20
+MUSC WindyDaySoundEffect
 Text(Ch5xEliasCoraliaTalk)
 MOVE 15 Helman [0,11]
 ENUN
 REMOVEUNIT Helman
 STAL 10
-MUSC WindyDaySoundEffect
 Text(Ch5xCoraliaEndingText)
 FADI 5
 ENUF 0x84 //brings back boss icons/talk icons etc

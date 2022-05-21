@@ -271,68 +271,62 @@ SHORT 0
 
 ALIGN 4
 BeginningScene:
-	InterludeReturnRoutineASMC
-	MountAll
-	TILECHANGE 0
-	TILECHANGE 1
-
-	FADU 15
-
-	SetBackground(Boat)
-	CenterTextbox(Ch6LongMonologueIntro)
-	CLEAN
-
-	COUNTER_SET 0x0 0x0
-	COUNTER_SET 0x1 0x0
-	SetFlag(0xB)
-
-	LOAD1 0x1 EnemyUnits
-	LOAD1 0x1 VeidUnit
-	LOAD1 0x1 McCallumUnit
-	LOAD1 0x1 CromarAndLeina
-	LOAD1 0x1 BarodUnit
-	ENUN
-
-	CameraCursor(Barod)
-	Text(Ch6BarodCromarIntro)
-	MOVE 40 Cromar [7, 18]
-	ENUN
-	CameraCursor(Cromar)
-	Text(Ch6CromarLeinaIntro)
-	MOVE 15 Leina [3, 17]
-	MOVE 40 Cromar [17, 18]
-	ENUN
-	CameraCursor(Veid)
-	Text(Ch6CromarVeidIntro)
-	MOVE 40 Cromar [21, 10]
-	ENUN
-	MOVE 120 Cromar [27, 10]
-	ENUN
-	CameraCursor(Cromar)
-	Text(Ch6CromarMcCallumIntro)
-	STAL 120
-
-	LOAD1 0x1 PlayerSceneUnits
-	ENUN
-	CAM1 Cleo
-	MOVE 40 Cleo [6, 18]
-	MOVE 40 Loewe [7,18]
-	ENUN
-	CameraCursor(Cleo)
-	Text(Ch6CleoLoeweIntro)
-
-	LoadReinforcements(PirateEnemies)
-	GiveItemWithDurability(SkillScroll,AzuriumMightID,Draken)
-	CameraCursor(Draken)
-	Text(Ch6PirateIntro)
-	STAL 120
-	CameraCursor(Cleo)
-	Text(Ch6CleoLoeweIntro2)
-
-	CameraCursor(Barod)
-	Text(Ch6BarodIntro)
-	GotoPrepScreen
-	CLEAN
+InterludeReturnRoutineASMC
+DismountAll
+TILECHANGE 0
+TILECHANGE 1
+SetBackground(Boat)
+CenterTextbox(Ch6LongMonologueIntro)
+FADI 15
+EraseBackground
+COUNTER_SET 0x0 0x0
+COUNTER_SET 0x1 0x0
+SetFlag(0xB)
+LOAD1 0x1 EnemyUnits
+LOAD1 0x1 VeidUnit
+LOAD1 0x1 McCallumUnit
+LOAD1 0x1 CromarAndLeina
+LOAD1 0x1 BarodUnit
+ENUN
+FADU 5
+CameraCursor(Barod)
+Text(Ch6BarodCromarIntro)
+MOVE 40 Cromar [7, 18]
+ENUN
+CameraCursor(Cromar)
+Text(Ch6CromarLeinaIntro)
+MOVE 15 Leina [3, 17]
+MOVE 40 Cromar [17, 18]
+ENUN
+CameraCursor(Veid)
+Text(Ch6CromarVeidIntro)
+MOVE 40 Cromar [21, 10]
+ENUN
+MOVE 120 Cromar [27, 10]
+ENUN
+CameraCursor(Cromar)
+Text(Ch6CromarMcCallumIntro)
+STAL 120
+LOAD1 0x1 PlayerSceneUnits
+ENUN
+CAM1 Cleo
+MOVE 40 Cleo [6, 18]
+MOVE 40 Loewe [7,18]
+ENUN
+CameraCursor(Cleo)
+Text(Ch6CleoLoeweIntro)
+LoadReinforcements(PirateEnemies)
+GiveItemWithDurability(SkillScroll,AzuriumMightID,Draken)
+CameraCursor(Draken)
+Text(Ch6PirateIntro)
+STAL 120
+CameraCursor(Cleo)
+Text(Ch6CleoLoeweIntro2)
+CameraCursor(Barod)
+Text(Ch6BarodIntro)
+FADI 15
+MountAll
+GotoPrepScreen
 NoFade
 ENDA
 

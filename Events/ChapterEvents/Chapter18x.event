@@ -272,6 +272,8 @@ UNIT
 BeginningScene:
 COUNTER_SET 0 0
 DismountAll
+SetBackground(0xE)
+Text(Ch18xBeginningScene1SacredArrowRebels)
 SetBackground(0x8)
 MUSC WaterFlowingSoundEffect
 Text(Ch18xBeginningScene2OnDaBoat1)
