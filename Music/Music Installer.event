@@ -87,3 +87,7 @@ SongTable(RemembranceID, Remembrance, MapMusicGroup)
 SongTable(CryptequeID, crypt, MapMusicGroup)
 #include "MusicEvents/Valkyrie_Profile_-_Rise_Above_the_World_buggo.event"
 SongTable(RiseAboveID, song017B, MapMusicGroup)
+#include "MusicEvents/CrimeOfTheHeart(devvy).event"
+SongTable(0xD9, CrimeHeart, MapMusicGroup)
+#include "MusicEvents/DrumbeatToRuin.event"
+SongTable(0xDA, DrumbeatRuin, MapMusicGroup)

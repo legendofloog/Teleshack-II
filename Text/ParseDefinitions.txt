@@ -8,6 +8,7 @@
 [ToggleInvert] = [ToggleColorInvert]
 [Red] = [ToggleRed]
 [Blink] = [CloseEyes][.][OpenEyes]
+[MidBlink] = [HalfCloseEyes]
 [AA] = [.....][A]
 [.A] = [.....][A]
 [.4] = [....]
@@ -159,7 +160,8 @@
 [LoadVolran] = [LoadFace][0xE7][0x1]
 [LoadTara] = [LoadFace][0xE8][0x1]
 [LoadTakai] = [LoadFace][0xEA][0x1]
-
+[LoadJerry] = [LoadFace][0xEB][0x1]
+[LoadLyre] = [LoadFace][0xEC][0x1]
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]

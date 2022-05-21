@@ -42,6 +42,8 @@ SoundRoomEntry(FeelingWoozyID,0,FeelingWoozyIDName)
 SoundRoomEntry(FirstCampaignID,0,FirstCampaignIDName)
 SoundRoomEntry(CryptequeID,0,CryptequeIDName)
 SoundRoomEntry(RiseAboveID,0,RiseAboveIDName)
+SoundRoomEntry(0xD9,0,CrimeHeartName)
+SoundRoomEntry(0xDA,0,DrumbeatName)
 SoundRoomTerminator
 
 PUSH

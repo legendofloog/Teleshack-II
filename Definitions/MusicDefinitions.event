@@ -41,6 +41,8 @@
 #define FestivalHuntID 0xC5
 #define War_sHeartbeat 0xC6
 
+#define CrimeHeartID 0xD9
+#define DrumbeatRuinID 0xDA
 
 // Vanilla
 #define TiesOfFriendship 0x7

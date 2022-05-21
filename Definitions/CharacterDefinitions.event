@@ -180,6 +180,11 @@
 #define C19Mini2 0x8F
 #define C19Boss 0x56
 
+//Chapter 20 Stuff
+#define Jerry 0x3A
+#define Lyre 0x3B
+#define C20Enemy 0x93
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49

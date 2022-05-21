@@ -323,6 +323,8 @@ SkillDescription(AftershockID,SD_Aftershock)
 
 SkillDescription(CullingID,SD_Culling)
 SkillDescription(HeadshotID,SD_Headshot)
+SkillDescription(HypeTrainID,SD_HypeTrain)
+SkillDescription(CleoFanID,SD_CleoFan)
 
 SkillDescription(WeakWilledID,SD_WeakWilled)
 SkillDescription(ShowStopperID,SD_ShowStopper)

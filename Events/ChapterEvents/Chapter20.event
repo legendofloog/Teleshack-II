@@ -1,0 +1,210 @@
+EventPointerTable(Chapter20Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
+TurnEventEnemy(0,TomAndJerry,1,0x0)
+TurnEventPlayer(0,CaveGuys,2,0x0)
+TurnEventPlayer(0,GoodbyeDespair,12,0x0)
+END_MAIN
+
+TomAndJerry:
+SpawnReinforcements(Amongitis)
+	CameraCursor(Jerry)
+	CameraCursor(Lyre)
+	STAL 5
+	MUSI
+	Text(Ch20MidBattle)
+	MUNO
+NoFade
+	ENDA
+	
+GoodbyeDespair:
+GameOver
+ENDA
+	
+CaveGuys:
+SpawnReinforcements(SussySpawns)
+NoFade
+	ENDA
+
+ClearSeraFlag:
+ENUF 0xEC
+NoFade
+ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(0x8, Jerrecruit, Loewe, Jerry)
+CharacterEventBothWays(0x8, LyreRecruitEvent, Cleo, Lyre)
+	END_MAIN
+	
+Jerrecruit:
+MUSS 0x8 //with us (is this the recruitment theme idk)
+Text(JerryRecruit)
+MURE 0x2
+CUSA Jerry
+CUSA Lyre
+NoFade
+ENDA
+
+LyreRecruitEvent:
+MUSS 0x8 //with us (is this the recruitment theme idk)
+Text(LyreRecruit)
+MURE 0x2
+CUSA Jerry
+CUSA Lyre
+NoFade
+ENDA
+
+MiscBasedEvents:
+	AFEV 0 EndingScene 0x6
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+Chest(TemperedRing,10,1)
+Chest(Dragonshield,12,0)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+LoadUnit(4,13)
+LoadUnit(5,13)
+LoadUnit(6,13)
+LoadUnit(7,13)
+LoadUnit(8,13)
+LoadUnit(9,13)
+LoadUnit(4,14)
+LoadUnit(5,14)
+LoadUnit(6,14)
+LoadUnit(7,14)
+LoadUnit(8,14)
+LoadUnit(9,14)
+	UNIT
+	
+LesImpostors:
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [0,14] 0 0 1 REDA4R14 [Longsword,Longsword,Longsword,Longsword] NoAI
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [0,15] 0 0 1 REDA4R15 [Longsword,Longsword,Longsword,Longsword] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(20,Ally,False) [0,16] 0 0 1 REDA5R16 [Longsword,Longsword,Longsword,Longsword] NoAI
+UNIT
+	
+Amongitis:
+UNIT Jerry Warrior Loewe Level(13,Enemy,False) [6,0] 0 0 1 REDA4R2 [SteelAxe,DevilAxe,PureWater,] [0x6,0x3,0x4,0x20]
+UNIT Lyre Dracoknight Cleo Level(12,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
+	UNIT
+
+SussySpawns: // :zany_face:
+UNIT Phantom Soldier 0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Phantom AxeSoldier 0x0 Level(16,Enemy,True) [0,17] 0 0 1 REDA1R16 [TrainedAxe] ChargeAI
+	UNIT
+
+EnemyUnits:
+UNIT C20Enemy Myrmidon 0x0 Level(5,Enemy,True) [9,11] 0x0 0x0 0x0 0x0 [TrainedEdge] RangeAI
+UNIT C20Enemy Swordfighter 0x0 Level(20,Enemy,True) [3,3] 0x0 0x0 0x0 0x0 [Longsword] RangeAI
+UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [16,14] 0x0 0x0 0x0 0x0 [SteelBow] TwoActionAI
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [20,1] 0x0 0x0 0x0 0x0 [TrainedArc] StallOneTurnAI
+UNIT C20Enemy Sniper 0x0 Level(5,Enemy,True) [4,5] 0x0 0x0 0x0 0x0 [Longbow,KillerBow] BossAI
+UNIT C20Enemy Warrior 0x0 Level(5,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [KillerAxe,Longbow] BossAI
+UNIT C20Enemy General 0x0 Level(5,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [HandAxe,BraveLance,IronBlade] BossAI
+UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
+UNIT C20Enemy Sage 0x0 Level(6,Enemy,True) [17,5] 0x0 0x0 0x0 0x0 [Fire,Vulnerary] RangeAI
+UNIT C20Enemy Sage 0x0 Level(5,Enemy,True) [13,1] 0x0 0x0 0x0 0x0 [Wind] RangeAI
+UNIT C20Enemy Halberdier 0x0 Level(20,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
+UNIT C20Enemy Sage 0x0 Level(20,Enemy,True) [19,3] 0x0 0x0 0x0 0x0 [Bolting,Thunder] BossAI
+UNIT C20Enemy Dracoknight 0x0 Level(5,Enemy,True) [5,1] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
+UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [7,4] 0x0 0x0 0x0 0x0 [SteelBow] TwoActionAI
+UNIT C20Enemy ArchKnight 0x0 Level(5,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
+UNIT C20Enemy Swordmaster 0x0 Level(20,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [TrainedEdge,FlameSword] BossAI
+UNIT C20Enemy Hero 0x0 Level(5,Enemy,True) [17,7] 0x0 0x0 0x0 0x0 [SteelSword,IronAxe] BossAI
+UNIT C20Enemy Swordfighter 0x0 Level(5,Enemy,True) [20,14] 0x0 0x0 0x0 0x0 [SteelSword,] RangeAI
+UNIT C20Enemy LanceArmor 0x0 Level(20,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [SteelLance] StallOneTurnAI
+UNIT C20Enemy LanceKnight 0x0 Level(20,Enemy,True) [1,9] 0x0 0x0 0x0 0x0 [HeavySpear,TrainedPike] RangeAI
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [SteelBow] RangeAI
+UNIT C20Enemy Dracoknight 0x0 Level(5,Enemy,True) [22,6] 0x0 0x0 0x0 0x0 [TrainedAxe] StallOneTurnAI
+UNIT C20Enemy DragonRider 0x0 Level(20,Enemy,True) [16,10] 0x0 0x0 0x0 0x0 [Hammer] StallOneTurnAI
+UNIT C20Enemy Dracoknight 0x0 Level(5,Enemy,True) [12,14] 0x0 0x0 0x0 0x0 [SlimAxe,HandAxe] RangeAI
+UNIT C20Enemy DragonRider 0x0 Level(20,Enemy,True) [0,6] 0x0 0x0 0x0 0x0 [Poleaxe,Vulnerary] TwoActionAI
+UNIT C20Enemy DragonRider 0x0 Level(20,Enemy,True) [22,12] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
+UNIT C20Enemy GoldKnight 0x0 Level(6,Enemy,True) [6,16] 0x0 0x0 0x0 0x0 [0x1D,HeavySpear] RangeAI
+UNIT C20Enemy GoldKnight 0x0 Level(5,Enemy,True) [14,8] 0x0 0x0 0x0 0x0 [IronBlade,TrainedPike] RangeAI
+UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [10,17] 0x0 0x0 0x0 0x0 [Thunder] RangeAI
+UNIT C20Enemy Halberdier 0x0 Level(5,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [Shortlance,Javelin] BossAI
+UNIT C20Enemy Dracoknight 0x0 Level(5,Enemy,True) [21,9] 0x0 0x0 0x0 0x0 [TrainedAxe] StallOneTurnAI
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [7,9] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
+UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [Fire] RangeAI
+	UNIT
+	
+IMPOSTOR:
+UNIT C20Enemy Thief 0x0 Level(19,Enemy,True) [11,3] 0x0 0x0 0x0 0x0 [KillingEdge,ChestKey] ThiefAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+Music(0xC4) //triangle
+SetBackground(0x34) //caves
+Text(Ch20Opening1)
+STAL 10
+ClearBackground
+DismountAll
+	LOAD1 0x1 LesImpostors
+	ENUN
+MountAll
+CameraCursor(Loewe)
+STAL 5
+SetBackground(0x23) //jg diff
+Music(0x4b) //river
+Text(Ch20Opening2)
+STAL 5
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+RemoveAll //idk what this is
+SetBackground(0x23)
+Music(0x53) //river
+TextCont(Ch20Ending1,0xC1) //knight's pride
+FADI 60
+CLEAN
+STAL 30
+SetBackground(0x19)
+Music(0xD) //sealed away
+TextCont(Ch20Ending2,0xF) //battle fate
+	MNC2 Chapter21
+	NoFade
+	ENDA
