@@ -388,6 +388,19 @@ HeavyBlade:
 POIN SkillTester
 WORD HeavyBladeID
 
+ALIGN 4
+HypeTrainPre:
+#incbin "HypeTrain/HypeTrain.dmp"
+POIN SkillTester
+WORD HypeTrainID
+
+ALIGN 4
+CleoFan:
+#incbin "CleoFan/CleoFan.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD CleoFanID
+
 #include "ElementBoost/ElementBoost.event"
 
 #ifdef MODULAR_PRE_BATTLE_SKILLS

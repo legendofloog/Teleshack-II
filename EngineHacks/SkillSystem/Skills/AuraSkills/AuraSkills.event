@@ -165,6 +165,7 @@ POIN SkillTester
 POIN ArmorMarchList
 POIN IndoorTerrainList
 POIN ForagerList
+WORD HypeTrainID
 WORD KeepUpID
 WORD IndoorMarchID
 WORD NatureRushID

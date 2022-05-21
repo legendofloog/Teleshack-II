@@ -91,6 +91,20 @@ POIN GaleforceEvent
 #include "Galeforce/GaleforceEvent.event"
 
 ALIGN 4
+HypeTrainPost:
+#incbin "HypeTrain/HypeTrain.dmp"
+POIN SkillTester
+WORD HypeTrainID
+POIN HypeTrainEvent
+#include "HypeTrain/HypeTrainEvent.event"
+
+ALIGN 4
+HypeTrainRecoil:
+#incbin "HypeTrain/HypeTrainRecoil.dmp"
+POIN SkillTester
+WORD HypeTrainID
+
+ALIGN 4
 Canto:
 #incbin "Canto/canto.dmp"
 POIN SkillTester

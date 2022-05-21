@@ -61,6 +61,8 @@
 #define TaraMug 0xe8
 #define ShawMug 0xE9
 #define TakaiMug 0xEA
+#define JerryMug 0xEB
+#define LyreMug 0xEC
 
 // NPCs
 #define EliasMug 0xB
@@ -964,3 +966,19 @@ TaraMugData:
 #incbin "Dmp/tara_palette.dmp"
 #incbin "Dmp/tara_minimug.dmp"
 setMugEntry(TaraMug, TaraMugData, 2, 6, 3, 4)
+
+ALIGN 16
+JerryMugData:
+#incbin "Dmp/Jerry(devisio,BuskHusker)_mug.dmp"
+#incbin "Dmp/Jerry(devisio,BuskHusker)_frames.dmp"
+#incbin "Dmp/Jerry(devisio,BuskHusker)_palette.dmp"
+#incbin "Dmp/Jerry(devisio,BuskHusker)_minimug.dmp"
+setMugEntry(JerryMug, JerryMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LyreMugData:
+#incbin "Dmp/Lyre(devisio,BuskHusker)_mug.dmp"
+#incbin "Dmp/Lyre(devisio,BuskHusker)_frames.dmp"
+#incbin "Dmp/Lyre(devisio,BuskHusker)_palette.dmp"
+#incbin "Dmp/Lyre(devisio,BuskHusker)_minimug.dmp"
+setMugEntry(LyreMug, LyreMugData, 3, 5, 3, 3)

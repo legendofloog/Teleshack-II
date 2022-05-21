@@ -398,3 +398,17 @@ and yet[Beat][A][X]
 [MidRight][LoadTakai]
 Gah[Beat] I've been[Beat][N]
 beaten? I'm sorry, kids[Beat][CloseEyes][A][X]
+
+## JerryDeathQuoteText
+[MidRight][LoadJerry]
+[ToggleSmile]Hahahaha! Blood runs red![N][ToggleSmile]
+Ergh[Beat] is this[Beat] my blood?[AN]
+[ToggleSmile]Hahaha[ToggleSmile], so[Beat] That's why they[N]
+all ran off, eh[Beat]?[A][CloseEyes][X]
+
+## LyreDeathQuoteText
+[MidRight][LoadLyre]
+[MidBlink]Like a shining knight with[N]
+glowing wings[Beat][AN]
+Loewe[Beat]? Cleo[Beat]? Are you[N]
+two there[Beat]? Save me[Beat][A][CloseEyes][X]

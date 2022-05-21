@@ -380,3 +380,13 @@ Text(TakaiDeathQuoteText)
 SendAll(Takai)
 NoFade
 ENDA
+
+ALIGN 4
+JerryGiveAll:
+Text(JerryDeathQuoteText)
+SendAll(Jerry)
+
+ALIGN 4
+LyreGiveAll:
+Text(LyreDeathQuoteText)
+SendAll(Lyre)

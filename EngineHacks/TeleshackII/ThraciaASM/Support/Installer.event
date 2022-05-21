@@ -147,6 +147,16 @@ SupportEntry(Mish, 3, 1, 1, 10, 5, 5, 10)
 SupportEntry(Tobie, 3, 1, 1, 10, 5, 5, 10)
 SupportTerm
 
+ALIGN 4
+LyreSupportList: //(partner, range, atk, def, hit, avo, crit, ddg)
+SupportEntry(Cleo,1,3,0,10,0,10,0)
+SupportEntry(Jerry,4,0,2,0,10,5,10)
+SupportTerm
+
+JerrySupportList: //(partner, range, atk, def, hit, avo, crit, ddg)
+SupportEntry(Lyre,3,4,0,17,7,0,7)
+SupportTerm
+
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
@@ -169,3 +179,5 @@ SetUnitSupportList(Buldak,BuldakSupportList)
 SetUnitSupportList(Tao,TaoSupportList)
 SetUnitSupportList(Sera,SeraSupportList)
 SetUnitSupportList(Shaw,ShawSupportList)
+SetUnitSupportList(Jerry,JerrySupportList)
+SetUnitSupportList(Lyre,LyreSupportList)
