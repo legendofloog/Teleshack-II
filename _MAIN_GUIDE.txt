@@ -1,5 +1,38 @@
-Hello Team Distant Roads! This guide is written by Loog, and it's intended to be a tutorial on how to use this buildfile for people who are generally inexperienced with them. As such, I'll try to be as detailed as possible for each step.
+Hello Team Distant Roads! This guide is written by Loog, and it's intended to be a tutorial on
+how to use this buildfile for people who are generally inexperienced with them. As such,
+I'll try to be as detailed as possible for each step.
 
-For this main folder, there isn't much that you need to do here except run MAKE_HACK_full.cmd when you've finished making changes in the other folders. It writes all the changes we've made to FE8 each time it's run. Since this format is easily reversible, it seemed a better fit for a large group project where many ASM changes need to be made. Just make sure you have FE8_clean.gba in the same folder.
+For this main folder, there isn't much that you need to do here except run
+MAKE_HACK_full.cmd when you've finished making changes in the other folders.
+It writes all the changes we've made to FE8 each time it's run.
+Since this format is easily reversible, it seemed a better fit for a large
+group project where many ASM changes need to be made.
+Just make sure you have FE8_clean.gba in the same folder.
 
-As for the rest of the guide, we're going to go in order of install (so if you look at ROMBuildfile.event, you'll see the order), which is Definitions -> Text -> Tables -> Graphics -> Music -> Engine Hacks -> Events -> Maps. Each folder will have a specific guide there that will be more in-depth, so just navigate to them and look at those for specific things. 
+If you didn't modify maps, tables, or text, then you can use 
+MAKE_HACK_quick.cmd instead. This has the advantage of being faster,
+as the mentioned sections are left unchanged from the last build.
+
+One key thing to mention first; always make sure that your changes are being included.
+Putting a given file in a folder doesn't cause it to be written to the ROM by itself
+because every file needs #include "ExampleFile" (with whatever file type as an extension).
+Otherwise, it just sits in that directory and doesn't do anything.
+
+As an example, a common error is forgetting to include one's events,
+causing the chapter to just use vanilla's events. This is because making an event
+file and putting it into Events/ChapterEvents doesn't include it on its own;
+you have to #include your given file in Events/ChapterEvents/ChapterEventsInstaller.event
+before building the ROM. If you're unsure whether your new file is being included,
+try following the #include chain starting from "ROMBuildfile.event". You should
+then be able to see what files are including what and where best to slot in your #include.
+
+As for the rest of the guide, we're going to go in order of install
+(so if you look at ROMBuildfile.event, you'll see the order),
+which is Definitions -> Text -> Tables -> Graphics -> Music ->
+Engine Hacks -> Events -> Maps. Each folder will have a specific
+guide there that will be more in-depth, so just navigate to them
+and look at those for specific things. 
+
+
+
+

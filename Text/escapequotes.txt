@@ -76,7 +76,7 @@ Come on everyone![A][X]
 
 ## MeldanEscapeQuoteText
 [MidRight][LoadMeldan]
-...Oh? We're leaving?[N]
+[Beat]Oh? We're leaving?[N]
 Well, ok then.[A][X]
 
 ## NahizaEscapeQuoteText
@@ -92,3 +92,27 @@ and I'll be home free![AN]
 [MidRight][LoadAugur]
 I foresee a path to safety.[N]
 Let us make it a reality[Beat][A][X]
+
+## RashidEscapeQuoteText
+[MidRight][LoadRashid]
+An opening[Beat][N]
+Fly, my friends. We must go![A][X]
+
+## IlseEscapeQuoteText
+[MidRight][LoadIlse]
+What? We're running away?![N]
+I could've taken them all on[Beat][A][X]
+
+## NikolasEscapeQuoteText
+[MidRight][LoadNikolas]
+Haha, yes! I really hope this is[N]
+actually the way out! Onwards!![A][X]
+
+## SeraEscapeQuoteText
+[MidRight][LoadSera]
+Placeholder escape quote[A][X]
+
+## KofiEscapeQuoteText
+[MidRight][LoadKofi]
+There are still many mysteries[N]
+for me to solve[Beat][A][X]

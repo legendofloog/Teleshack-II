@@ -142,7 +142,8 @@ BeginningScene:
   ENDA
   
 EndingScene:
-  RemoveAll
+  FADI 15
+  InterludeRemovalRoutineASMC
   MNC2 Ch12xInterlude
   NoFade
   ENDA

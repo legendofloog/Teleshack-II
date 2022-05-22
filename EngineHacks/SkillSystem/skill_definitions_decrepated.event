@@ -239,7 +239,6 @@
 
 //Acrobat: All traversable terrain costs 1 movement.
 //By Tequila
-#define AcrobatID 255
 
 //Armor March: At start of turn, if unit is adjacent to an armor ally, unit and adjacent armor allies gain +2 Mov.
 //By Leonarth
@@ -298,7 +297,7 @@
 
 //Lifetaker: Restore up to 25% HP after attacking and defeating an enemy.
 //Author Unknown (Initial Commit)
-#define LifetakerID 255
+//#define LifetakerID 255
 
 //Poison Strike: Deals damage equal to 20% of the enemy's max HP after battle this unit initiates.
 //By Snakey1
@@ -356,7 +355,7 @@
 
 //Charge: Gain +1 damage for every two squares moved.
 //By Datagne
-#define ChargeID 255
+//#define ChargeID 62
 
 //Charge+: Charge+: If unit has used up all movement, gain brave effect.
 //By Sme
@@ -468,7 +467,7 @@
 
 //Loyalty: When within 2 spaces of a Lord, -3 damage taken, +15% hit.
 //By Datagne
-#define LoyaltyID 255
+//#define LoyaltyID 61
 
 //Lucky Seven: +20 Hit and Avoid until the 7th turn.
 //Author Unknown (Initial Commit)
@@ -634,7 +633,7 @@
 
 //Astra: 5 attacks at half damage. (Skill % activation)
 //Author Unknown (Initial Commit)
-//#define AstraID 15
+//#define AstraID 255
 
 //Bane: Leave the opponent at 1 HP. (Skill/2 % activation)
 //Author Unknown (Initial Commit)
@@ -767,7 +766,7 @@
 
 //Bow Range +1: Maximum range of equipped bows is increased.
 //By Teraspark
-#define BowRangeUpID 255
+//#define BowRangeUpID 60
 
 //Point Blank: Minimum range of equipped bows is set to 1.
 //By Teraspark
@@ -901,7 +900,7 @@
 
 //Smite: Allows unit to push other units two tiles away.
 //By StanH
-#define SmiteID 255
+//#define SmiteID 255
 
 //Pivot: Allows unit to move to the opposite side of an adjacent ally.
 //By StanH

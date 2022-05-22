@@ -44,9 +44,9 @@ LocationBasedEvents:
 	Vendor(Ch6Vendor2,13,16)
 	Chest(Javelin,26,6)
 	Chest(Hammer,27,6)
-	Village(0x10,Ch6Village1,10,25)
-	Village(0x11,Ch6Village2,21,26)
-	Village(0x12,Ch6Village3,27,23)
+	Village(0x10,Ch6Village1Event,10,25)
+	Village(0x11,Ch6Village2Event,21,26)
+	Village(0x12,Ch6Village3Event,27,23)
 	House(0x0,Ch6House1,25,23)
 	House(0x0,Ch6House2,25,27)
 	Seize(27, 9)
@@ -176,28 +176,25 @@ UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [6,33] 0x0 0x0 0x0 0x1 [IronAxe] S
 
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [11,34] 0x0 0x0 0x0 0x1 [SlimBow] StallAI(4)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [11,33] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(4)
-UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [12,34] 0x0 0x0 0x0 0x1 [SteelLance] StallAI(4)
 UNIT Ch6Pirate Shaman Draken Level(6,Enemy,True) [10,34] 0x0 0x0 0x0 0x1 [Flux] StallAI(4)
 
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,34] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,34] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [18,34] 0x0 0x0 0x0 0x1 [IronBlade] StallAI(4)
 
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [1,30] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(1)
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [0,31] 0x0 0x0 0x0 0x1 [IronBow] StallAI(1)
 
-UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [4,24] 0x0 0x0 0x0 0x1 [IronLance] ChargeAI
+UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [4,24] 0x0 0x0 0x0 0x1 [ShortLance] ChargeAI
 UNIT Ch6Pirate Fighter Draken Level(6,Enemy,True) [5,25] 0x0 0x0 0x0 0x1 [IronAxe] ChargeAI
 UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [4,26] 0x0 0x0 0x0 0x1 [IronBow] ChargeAI
 
 UNIT Ch6Pirate Mage Draken Level(6,Enemy,True) [10,23] 0x0 0x0 0x0 0x1 [Fire] ChargeAI
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [12,25] 0x0 0x0 0x0 0x1 [IronSword] ChargeAI
 
-UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [22,24] 0x0 0x0 0x0 0x1 [IronSword] StallAI(6)
+UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [22,24] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(6)
 UNIT Ch6Pirate Soldier Draken Level(6,Enemy,True) [22,27] 0x0 0x0 0x0 0x1 [IronLance] StallAI(6)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [24,29] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
-UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [27,25] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(6)
-UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [24,21] 0x0 0x0 0x0 0x1 [IronBow] StallAI(6)
 
 UNIT Draken 0x0 Draken Level(6,Enemy,False) [0, 28] 0x0 0x0 0x0 0x1 [HandAxe, IronAxe] BossAI
 UNIT
@@ -274,67 +271,62 @@ SHORT 0
 
 ALIGN 4
 BeginningScene:
-	MountAll
-	TILECHANGE 0
-	TILECHANGE 1
-
-	FADU 15
-
-	SetBackground(Boat)
-	CenterTextbox(Ch6LongMonologueIntro)
-	CLEAN
-
-	COUNTER_SET 0x0 0x0
-	COUNTER_SET 0x1 0x0
-	SetFlag(0xB)
-
-	LOAD1 0x1 EnemyUnits
-	LOAD1 0x1 VeidUnit
-	LOAD1 0x1 McCallumUnit
-	LOAD1 0x1 CromarAndLeina
-	LOAD1 0x1 BarodUnit
-	ENUN
-
-	CameraCursor(Barod)
-	Text(Ch6BarodCromarIntro)
-	MOVE 40 Cromar [7, 18]
-	ENUN
-	CameraCursor(Cromar)
-	Text(Ch6CromarLeinaIntro)
-	MOVE 15 Leina [3, 17]
-	MOVE 40 Cromar [17, 18]
-	ENUN
-	CameraCursor(Veid)
-	Text(Ch6CromarVeidIntro)
-	MOVE 40 Cromar [21, 10]
-	ENUN
-	MOVE 120 Cromar [27, 10]
-	ENUN
-	CameraCursor(Cromar)
-	Text(Ch6CromarMcCallumIntro)
-	STAL 120
-
-	LOAD1 0x1 PlayerSceneUnits
-	ENUN
-	CAM1 Cleo
-	MOVE 40 Cleo [6, 18]
-	MOVE 40 Loewe [7,18]
-	ENUN
-	CameraCursor(Cleo)
-	Text(Ch6CleoLoeweIntro)
-
-	LoadReinforcements(PirateEnemies)
-	GiveItemWithDurability(SkillScroll,AzuriumMightID,Draken)
-	CameraCursor(Draken)
-	Text(Ch6PirateIntro)
-	STAL 120
-	CameraCursor(Cleo)
-	Text(Ch6CleoLoeweIntro2)
-
-	CameraCursor(Barod)
-	Text(Ch6BarodIntro)
-	GotoPrepScreen
-	CLEAN
+InterludeReturnRoutineASMC
+DismountAll
+TILECHANGE 0
+TILECHANGE 1
+SetBackground(Boat)
+CenterTextbox(Ch6LongMonologueIntro)
+FADI 15
+EraseBackground
+COUNTER_SET 0x0 0x0
+COUNTER_SET 0x1 0x0
+SetFlag(0xB)
+LOAD1 0x1 EnemyUnits
+LOAD1 0x1 VeidUnit
+LOAD1 0x1 McCallumUnit
+LOAD1 0x1 CromarAndLeina
+LOAD1 0x1 BarodUnit
+ENUN
+FADU 5
+CameraCursor(Barod)
+Text(Ch6BarodCromarIntro)
+MOVE 40 Cromar [7, 18]
+ENUN
+CameraCursor(Cromar)
+Text(Ch6CromarLeinaIntro)
+MOVE 15 Leina [3, 17]
+MOVE 40 Cromar [17, 18]
+ENUN
+CameraCursor(Veid)
+Text(Ch6CromarVeidIntro)
+MOVE 40 Cromar [21, 10]
+ENUN
+MOVE 120 Cromar [27, 10]
+ENUN
+CameraCursor(Cromar)
+Text(Ch6CromarMcCallumIntro)
+STAL 120
+LOAD1 0x1 PlayerSceneUnits
+ENUN
+CAM1 Cleo
+MOVE 40 Cleo [6, 18]
+MOVE 40 Loewe [7,18]
+ENUN
+CameraCursor(Cleo)
+Text(Ch6CleoLoeweIntro)
+LoadReinforcements(PirateEnemies)
+GiveItemWithDurability(SkillScroll,AzuriumMightID,Draken)
+CameraCursor(Draken)
+Text(Ch6PirateIntro)
+STAL 120
+CameraCursor(Cleo)
+Text(Ch6CleoLoeweIntro2)
+CameraCursor(Barod)
+Text(Ch6BarodIntro)
+FADI 15
+MountAll
+GotoPrepScreen
 NoFade
 ENDA
 
@@ -454,6 +446,9 @@ ENDA
 
 ALIGN 4
 EndingScene:
+SetBackground(Boat)
+MUSC(Rovers)
+Text(Ch6End)
 MNC2 Chapter7
 NoFade
 ENDA
@@ -500,18 +495,27 @@ LeinaRecruitCromar:
 NoFade
 ENDA
 
-Ch6Village1:
+Ch6Village1Event:
+	SetBackground(House1)
+	Text(Ch6Village1)
 	GiveItem(KillingEdge,-1)
+	EraseBackground 
 NoFade
 ENDA
 
-Ch6Village2:
+Ch6Village2Event:
+	SetBackground(House1)
+	Text(Ch6Village2)
 	GiveItem(Mend,-1)
+	EraseBackground
 NoFade
 ENDA
 
-Ch6Village3:
+Ch6Village3Event:
+	SetBackground(House1)
+	Text(Ch6Village3)
 	GiveItem(Lightning,-1)
+	EraseBackground
 NoFade
 ENDA
 

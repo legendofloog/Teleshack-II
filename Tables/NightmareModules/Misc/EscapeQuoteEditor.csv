@@ -1,51 +1,51 @@
 INLINE EscapeQuoteTable,Text ID
 0x0,0x0
-Cleo,CleoEscapeQuoteText
-Mira,MiraEscapeQuoteText
-Iskra,IskraEscapeQuoteText
-Emil,EmilEscapeQuoteText
-Svetomir,SvetomirEscapeQuoteText
-Alena,AlenaEscapeQuoteText
-Ross,HouseText
-Neimi,HouseText
-Alex,AlexEscapeQuoteText
-Axel,AxelEscapeQuoteText
-Innes,HouseText
-Lute,HouseText
-Natasha,HouseText
-Cormag,HouseText
-Loewe,LoeweEscapeQuoteText
-Longxia,LongxiaEscapeQuoteText
-Fangai,FangaiEscapeQuoteText
-Amelia,HouseText
-Artur,HouseText
-Gerik,HouseText
-Tethys,HouseText
-Marisa,HouseText
-Saleh,HouseText
-Ewan,HouseText
-L'Arachel,HouseText
-Dozla,HouseText
-EMPTY,HouseText
-Jenny,JennyEscapeQuoteText
-Meldan,MeldanEscapeQuoteText
-Myrrh,HouseText
-Knoll,HouseText
-Joshua,HouseText
-Syrene,HouseText
-Tana,HouseText
-Lyon,HouseText
-Orson,HouseText
-Glen,HouseText
-Selena,HouseText
-Valter,HouseText
-Riev,HouseText
-Caellach,HouseText
-fire emblem the last promise 2,HouseText
-0x2C Nahiza,NahizaEscapeQuoteText
-0x2D Augur,AugurEscapeQuoteText
-0x2d,HouseText
-0x2e,HouseText
+0x01 Cleo,CleoEscapeQuoteText
+0x02 Mira,MiraEscapeQuoteText
+0x03 Iskra,IskraEscapeQuoteText
+0x04 Emil,EmilEscapeQuoteText
+0x05 Svetomir,SvetomirEscapeQuoteText
+0x06 Alena,AlenaEscapeQuoteText
+0x07 Varga,HouseText
+0x08 Delilah,HouseText
+0x09 Alex,AlexEscapeQuoteText
+0x0A Axel,AxelEscapeQuoteText
+0x0B Filone,HouseText
+0x0C Zwieback,HouseText
+0x0D Leina,HouseText
+0x0E Cromar,HouseText
+0x0F Loewe,LoeweEscapeQuoteText
+0x10 Longxia,LongxiaEscapeQuoteText
+0x11 Fangai,FangaiEscapeQuoteText
+0x12 Gimm,HouseText
+0x13 Tobie,HouseText
+0x14 Awa,HouseText
+0x15 Cadenza,HouseText
+0x16 Faolan,HouseText
+0x17 Iberis,HouseText
+0x18 Buldak,HouseText
+0x19 Nora,HouseText
+0x1A Hans,HouseText
+0x1B -,HouseText
+0x1C Jenny,JennyEscapeQuoteText
+0x1D Meldan,MeldanEscapeQuoteText
+0x1E Valse,HouseText
+0x1F Hornet,HouseText
+0x20 Milo,HouseText
+0x21 Ichwep,HouseText
+0x22 Mink,HouseText
+0x23 Tiberius,HouseText
+0x24 Ellerey,HouseText
+0x25 Mantou,HouseText
+0x26 Tippany,HouseText
+0x27 Pelecaye,HouseText
+0x28 Carl,HouseText
+0x29 Darby,HouseText
+0x2A Jacinth,HouseText
+0x2B Nahiza,NahizaEscapeQuoteText
+0x2C Augur,AugurEscapeQuoteText
+0x2D Ilse,IlseEscapeQuoteText
+0x2E Rashid,HouseText
 0x2f,HouseText
 0x30,HouseText
 0x31,HouseText

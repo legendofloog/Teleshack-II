@@ -10,6 +10,7 @@
 .endm
 .equ DesperationID, SkillTester+4
 .equ AssassinateID, DesperationID+4
+.equ BladeDanceID, AssassinateID+4
 
 @check range
 ldr r0,=0x203A4D4 @battle stats
@@ -17,6 +18,16 @@ ldrb r0,[r0,#2] @range
 cmp r0,#1
 bne CheckDesperation
 
+@now check if attacker has blade dance
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r5 @defender data
+ldr r1, BladeDanceID
+.short 0xf800
+cmp r0, #0
+bne HasSkill
+
+CheckAssassinate:
 @now check if attacker has assassinate
 ldr r0, SkillTester
 mov lr, r0
@@ -150,3 +161,4 @@ SkillTester:
 @poin SkillTester
 @word DesperationID
 @word AssassinateID
+@word BladeDanceID

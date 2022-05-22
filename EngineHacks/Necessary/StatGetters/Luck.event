@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pLuckModifiers: // Luck
-	POIN prAddUnitLuck prHalveIfCapturing prDebuffLck prAddEquipLuck prItemPassiveLuck prRallyLck prDefiantLck
+	POIN prAddUnitLuck prHalveIfCapturing prDebuffLck prAddEquipLuck prItemPassiveLuck prRallyLck prDefiantLck prEquipmentLck
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -26,5 +26,8 @@ prRallyLck:
 
 prItemPassiveLuck:
 	rPassiveStatBoosts(STAT_LUCK)
+
+prEquipmentLck:
+	rEquipmentBonus(STAT_LUCK)
 
 #endif // MODULAR_GETTER_LUCK_EVENT

@@ -115,7 +115,7 @@
 #endif
 
 #ifdef _FE8_
-#define CauseGameOverIfLordDies "AFEV 0 0x592104 0x65"
+//#define CauseGameOverIfLordDies "AFEV 0 0x592104 0x65"
 #define DefeatBoss(offset) "AFEV 0 offset 2"
 #define DefeatAll(offset) "AFEV 0 offset 6"
 #define NoFade "EVBIT_T 0x7"

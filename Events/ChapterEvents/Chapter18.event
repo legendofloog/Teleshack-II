@@ -1,0 +1,409 @@
+EventPointerTable(Chapter18Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
+TurnEventPlayer(0, Turn1Event, 1)
+
+TurnEventPlayer(0, ArenaWave2Event, 4)
+TurnEventPlayer(0, ArenaWave3Event, 7)
+TurnEventPlayer(0, ArenaWave4Event, 10)
+
+TurnEventPlayer(0, Reinforcements0Event, 2)
+TurnEventPlayer(0, ReinforcementsRigganEvent, 2)
+TurnEventPlayer(0, Reinforcements1Event, 5)
+END_MAIN
+
+ClearSeraFlag:
+ENUF 0xEC
+NoFade
+ENDA
+
+Turn1Event: // Maybe temp until I fix force deploy
+MountAll
+CAM1 [9,11]
+Text(Ch18ArenaIntro0)
+CAM1 [9,0]
+Text(Ch18ArenaIntro1)
+CUSA Sera
+CUSA Shaw
+NoFade
+ENDA
+
+ReinforcementsRigganEvent:
+CHECK_EVENTID 0x7b
+BEQ 1 0 0xC
+SpawnReinforcements(ReinforcementUnitsRiggan)
+FlashCursor(Riggan,60)
+Text(Ch18RigganEvent)
+GOTO 2
+LABEL 1
+SpawnReinforcements(ReinforcementUnitsNoRiggan)
+LABEL 2
+NoFade
+ENDA
+
+Reinforcements0Event:
+SpawnReinforcements(ReinforcementUnits0)
+NoFade
+ENDA
+
+Reinforcements1Event:
+SpawnReinforcements(ReinforcementUnits1)
+NoFade
+ENDA
+
+ArenaWave2Event:
+SpawnReinforcements(ArenaUnits2)
+CAM1 [9,0]
+Text(Ch18ArenaIntro2)
+NoFade
+ENDA
+
+ArenaWave3Event:
+SpawnReinforcements(ArenaUnits3)
+CAM1 [9,0]
+Text(Ch18ArenaIntro3)
+NoFade
+ENDA
+
+ArenaWave4Event:
+SpawnReinforcements(ArenaUnits4)
+CAM1 [9,0]
+Text(Ch18ArenaIntro4)
+NoFade
+ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+AREA 0xA ArenaCheaterEvent [0,0] [19,3]
+AREA 0xA ArenaCheaterEvent [0,0] [5,13]
+AREA 0xA ArenaCheaterEvent [14,0] [19,13]
+END_MAIN
+
+ArenaCheaterEvent:
+Text(Ch18ArenaCheating)
+CALL GameOverStart
+NoFade
+ENDA
+
+LocationBasedEvents:
+	Armory(Ch18Armory,15,15)
+	Vendor(Ch18Vendor,16,15)
+END_MAIN
+
+Dunno1:
+
+END_MAIN
+
+Dunno2:
+
+END_MAIN
+
+Dunno3:
+
+END_MAIN
+
+Tutorial:
+
+END_MAIN
+
+Units1:
+// Arena
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [9,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [10,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+UNIT KwameReal 0x0 Cleo Level(1,Ally,False) [15,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [15,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [16,18] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [16,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [15,20] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+
+
+UNIT
+
+SpectatorUnits:
+UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [3,5] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [2,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [3,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [3,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [16,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [17,4] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [16,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [16,7] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [17,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [16,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT
+
+EnemyUnits:
+UNIT Sera Swordmaster_F 0x0 Level(1,NPC,False) [13,19] 0x0 0x0 0x0 0x0 [SilverSword,KillingEdge,Rapier,Vulnerary] NoAI
+UNIT Shaw Champion 0x0 Level(3,NPC,True) [13,20] 0x0 0x0 0x0 0x0 [SilverLance,MysticLance,Javelin,Elixir] NoAI
+
+// Right water
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+//UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [12,25] 0x0 0x0 0x0 0x0 [Hurlbat] PursueWithoutHeedAI
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [12,25] 0x0 0x0 0x0 0x0 [TrainedAxe] PursueWithoutHeedAI
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [15,24] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [18,23] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+
+
+// Top middle island
+UNIT Cythes LanceSoldier 0x0 Level(18,Enemy,True) [10,18] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
+UNIT Cythes SwordFighter 0x0 Level(18,Enemy,True) [9,20] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [10,22] 0x0 0x0 0x0 0x0 [Rapier] AttackInRangeAI
+UNIT Cythes Hunter 0x0 Level(18,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
+
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [5,26] 0x0 0x0 0x0 0x0 [LunarAxe] AttackInRangeAI
+
+UNIT Cythes AxeArmor 0x0 Level(18,Enemy,True) [8,26] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Cythes LanceArmor 0x0 Level(18,Enemy,True) [9,26] 0x0 0x0 0x0 0x0 [Javelin,PureWater] NeverMoveAI
+UNIT
+
+EnemyUnits2:
+// Left island
+UNIT Cythes Swordmaster 0x0 Level(4,Enemy,True) [1,21] 0x0 0x0 0x0 0x0 [MasterSword] AttackInRangeAI
+//UNIT Cythes SwordFighter 0x0 Level(18,Enemy,True) [4,20] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [4,20] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes LanceSoldier 0x0 Level(18,Enemy,True) [2,24] 0x0 0x0 0x0 0x0 [TrainedPike] AttackInRangeAI
+UNIT Cythes SwordKnight 0x0 Level(18,Enemy,True) [1,28] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+UNIT Cythes Halberdier 0x0 Level(4,Enemy,True) [2,29] 0x0 0x0 0x0 0x0 [BattleAxe,MysticLance] AttackInRangeAI
+
+// Bottom island
+UNIT Cythes Bishop 0x0 Level(4,Enemy,True) [11,37] 0x0 0x0 0x0 0x0 [Purge,Aura,KnightProof] NeverMoveAI
+UNIT Cythes Archer 0x0 Level(18,Enemy,True) [9,36] 0x0 0x0 0x0 0x0 [MarksmanBow] PursueWithoutHeedAI
+UNIT Cythes Mage 0x0 Level(18,Enemy,True) [4,29] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [8,30] 0x0 0x0 0x0 0x0 [TrainedEdge] AttackInRangeAI
+UNIT Cythes AxeFighter 0x0 Level(18,Enemy,True) [10,34] 0x0 0x0 0x0 0x0 [Hammer,PureWater] AttackInRangeAI
+UNIT Cythes Mage 0x0 Level(18,Enemy,True) [11,32] 0x0 0x0 0x0 0x0 [Wind] AttackInRangeAI
+
+// Bottom left water
+UNIT Cythes Berserker 0x0 Level(4,Enemy,True) [1,35] 0x0 0x0 0x0 0x0 [SilverAxe,Hurlbat,KnightProof] AttackInRangeAI
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [2,33] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [5,34] 0x0 0x0 0x0 0x0 [DevilAxe] AttackInRangeAI
+UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [4,37] 0x0 0x0 0x0 0x0 [TrainedPike] PursueWithoutHeedAI
+UNIT
+
+EnemyUnits3:
+// Right boat
+UNIT Cythes SwordArmor 0x0 Level(18,Enemy,True) [14,30] 0x0 0x0 0x0 0x0 [StoneSword] NeverMoveAI
+UNIT Cythes LanceArmor 0x0 Level(18,Enemy,True) [14,31] 0x0 0x0 0x0 0x0 [MasterLance] NeverMoveAI
+
+//UNIT Cythes LanceKnight 0x0 Level(18,Enemy,True) [15,33] 0x0 0x0 0x0 0x0 [ShortLance] PursueWithoutHeedAI
+//UNIT Cythes AxeKnight 0x0 Level(18,Enemy,True) [17,32] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes LanceKnight 0x0 Level(18,Enemy,True) [17,32] 0x0 0x0 0x0 0x0 [ShortLance] PursueWithoutHeedAI
+UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [16,28] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+
+UNIT Shafaqat Sniper 0x0 Level(6,Enemy,False) [16,36] 0x0 0x0 0x0 0x0 [BraveBow,GaleBow,GrowthScroll] AttackInRangeAI
+UNIT
+
+ReinforcementUnitsRiggan:
+UNIT Riggan Mage 0x0 Level(19,Enemy,True) [10,38] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
+UNIT
+
+ReinforcementUnitsNoRiggan:
+UNIT Cythes Sage 0x0 Level(4,Enemy,True) [10,38] 0x0 0x0 0x0 0x0 [Elfire,Physic] PursueWithoutHeedAI
+UNIT
+
+ReinforcementUnits0:
+UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes SwordFighter 0x0 Level(18,Enemy,True) [0,28] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+//UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [0,29] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Cythes Hunter 0x0 Level(18,Enemy,True) [17,37] 0x0 0x0 0x0 0x0 [Longbow] PursueWithoutHeedAI
+UNIT
+
+ReinforcementUnits1:
+UNIT Cythes SwordKnight 0x0 Level(18,Enemy,True) [9,38] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
+UNIT Cythes LanceKnight 0x0 Level(18,Enemy,True) [10,38] 0x0 0x0 0x0 0x0 [ShortLance] PursueWithoutHeedAI
+//UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [17,37] 0x0 0x0 0x0 0x0 [TrainedAxe] PursueWithoutHeedAI
+UNIT Cythes SwordFighter 0x0 Level(18,Enemy,True) [19,32] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+//UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [0,28] 0x0 0x0 0x0 0x0 [TrainedEdge] PursueWithoutHeedAI
+UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [0,29] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
+UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [3,38] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
+UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [5,38] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+UNIT
+
+
+ArenaUnits1:
+UNIT Gladiator2 Mage 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
+UNIT Gladiator2 Mage 0x0 Level(18,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [Thunder] PursueWithoutHeedAI
+UNIT Gladiator2 SwordFighter 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IceSword,SteelSword] PursueWithoutHeedAI
+UNIT Gladiator2 SwordFighter 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [StoneSword,SteelSword] PursueWithoutHeedAI
+UNIT Gladiator2 AxeArmor 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Gladiator2 LanceArmor 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [TrainedPike] PursueWithoutHeedAI
+UNIT
+
+ArenaUnits2:
+UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
+//UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
+UNIT Gladiator2 Freelancer 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
+UNIT Gladiator2 Myrmidon 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [IronBlade] PursueWithoutHeedAI
+UNIT Gladiator2 Pirate 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [Hurlbat] PursueWithoutHeedAI
+UNIT Gladiator2 Brigand 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [Hammer] PursueWithoutHeedAI
+
+UNIT Gladiator2 Warrior 0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] PursueWithoutHeedAI
+UNIT
+
+ArenaUnits3:
+UNIT Gladiator2 Paladin 0x0 Level(4,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [WindSword] PursueWithoutHeedAI
+UNIT Gladiator2 MageKnight 0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
+UNIT Gladiator2 PegasusRider 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
+UNIT Gladiator2 DragonRider 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
+UNIT Gladiator2 LanceKnight 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [TrainedPike] PursueWithoutHeedAI
+UNIT Gladiator2 SwordKnight 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
+UNIT
+
+ArenaUnits4:
+UNIT Barod2 Warrior 0x0 Level(12,Enemy,False) [9,0] 0x0 0x0 0x0 0x0 [Hurlbat,SilverAxe,SilverBow] PursueWithoutHeedAI
+UNIT
+
+
+Traps1:
+RedSigil(5,3)
+RedSigil(6,3)
+RedSigil(7,3)
+RedSigil(8,3)
+RedSigil(9,3)
+RedSigil(10,3)
+RedSigil(11,3)
+RedSigil(12,3)
+RedSigil(13,3)
+RedSigil(14,3)
+RedSigil(5,4)
+RedSigil(5,5)
+RedSigil(5,6)
+RedSigil(5,7)
+RedSigil(5,8)
+RedSigil(5,9)
+RedSigil(5,10)
+RedSigil(5,11)
+RedSigil(5,12)
+RedSigil(14,4)
+RedSigil(14,5)
+RedSigil(14,6)
+RedSigil(14,7)
+RedSigil(14,8)
+RedSigil(14,9)
+RedSigil(14,10)
+RedSigil(14,11)
+RedSigil(14,12)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	MountAll
+	LOAD1 0x1 EnemyUnits
+	LOAD1 0x1 EnemyUnits2
+	LOAD1 0x1 EnemyUnits3
+	LOAD1 0x1 SpectatorUnits
+	LOAD1 0x1 ArenaUnits1
+	ENUN
+	MUSC TiesOfFriendship
+
+	SetUnitItemDurability(Shafaqat,2,WornScroll)
+
+	SetBackground(0x1)
+	Text(Ch18Start1)
+	SetBackground(0x9)
+	Text(Ch18StartBarod1)
+	Text(Ch18StartBarod2)
+
+	CHECK_ALIVE Cromar
+	BEQ 2 s0 sC
+	SetBackground(0x7)
+	Text(Ch18StartCromarAlive)
+	LABEL 2
+
+	SetBackground(0x8)
+	MUSC mutecity
+	Text(Ch18ArenaRules)
+	CAMERA [19,38]
+	MUSC Sortie_Formation
+	ClearBackground
+	FlashCursor(Shafaqat,60)
+	Text(Ch18StartShafaqat)
+
+	CAMERA [13,19]
+	FlashCursor(Shaw,30)
+	FlashCursor(Sera,30)
+	Text(Ch18StartNewUnits)
+
+	GotoPrepScreen
+	ENDA
+
+
+EndingScene:
+	CHECK_EVENTID 7
+	BNE 1 s0 sC
+	Text(Ch18EndShafaqatAlive)
+	LABEL 1
+	MUSC TiesOfFriendship
+	SetBackground(0x9)
+	Text(Ch18EndBarod)
+	FADI 15
+  	InterludeRemovalRoutineASMC
+	MNC2 Chapter18xInterlude
+	NoFade
+	ENDA
+
+ALIGN 4
+Ch18Armory:
+SHORT TrainedEdge
+SHORT KillingEdge
+SHORT SilverSword
+SHORT TrainedPike
+SHORT KillerLance
+SHORT SilverLance
+SHORT Javelin
+SHORT TrainedAxe
+SHORT KillerAxe
+SHORT SilverAxe
+SHORT HandAxe
+SHORT TrainedArc
+SHORT KillerBow
+SHORT SilverBow
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch18Vendor:
+SHORT Wind
+SHORT Elfire
+SHORT Mend
+SHORT Physic
+SHORT Restore
+SHORT Vulnerary
+SHORT Elixir
+SHORT PureWater
+SHORT 0
+SHORT 0

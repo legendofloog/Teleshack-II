@@ -19,10 +19,6 @@ ldrb r0, [r4, #0x12] @maxhp
 ldrb r1, [r4, #0x13] @currhp
 sub r2, r0, r1
 @ lsr r2, #1 @ half of missing hp
-mov r1, #0x60
-ldrh r0, [r4, r1] @hit
-add r0, r2
-strh r0, [r4,r1] @stores new hit
 mov r1, #0x66
 ldrh r0, [r4, r1] @crit
 add r0, r2
@@ -31,10 +27,6 @@ mov r1, #0x62
 ldrh r0, [r4, r1] @avo
 sub r0, r2
 strh r0, [r4, r1] @ stores nonnegative avoid
-mov r1, #0x68
-ldrh r0, [r4, r1] @ crit avo
-sub r0, r2
-strh r0, [r4, r1] @ stores nonnegative crit avo
 
 End:
 pop {r4-r7, r15}

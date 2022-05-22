@@ -1,0 +1,72 @@
+#define SoundRoomEntry(songid,length,name) "WORD songid length 0 name"
+#define SoundRoomTerminator "WORD 0xFFFFFFFF 0 0 0"
+
+// setup courtesy of joe gamer
+
+ALIGN 4 
+NewSoundRoom: // new entries here
+SoundRoomEntry(RemembranceID,0,RemembranceName)
+SoundRoomEntry(Lufia_Doom,0,Lufia_DoomName)
+SoundRoomEntry(TreasureOfRudrasBattleTheme,0,TreasureofRudrasBattleName)
+SoundRoomEntry(Lufia2_RoS_Battle2,0,Lufia2_RoS_Battle2Name)
+SoundRoomEntry(Sortie_Formation,0,Sortie_FormationName)
+SoundRoomEntry(WithUs_Song,0,WithUs_SongName)
+SoundRoomEntry(PersonalCombat,0,PersonalCombatName)
+SoundRoomEntry(Rovers,0,RoversName)
+SoundRoomEntry(UnfinishedBattleGodSyndrome,0,ValkyrieProfile_GodSyndromeName)
+SoundRoomEntry(FF5_Nostalgia,0,FF5_NostalgiaName)
+SoundRoomEntry(FF5_Sealed_Away,0,FF5_Sealed_AwayName)
+SoundRoomEntry(FE5_Adversity,0,FE5_AdversityName)
+SoundRoomEntry(FE5_InTheBattle_Fate,0,FE5_InTheBattle_FateName)
+SoundRoomEntry(Dreaming,0,DreamingName)
+SoundRoomEntry(DawnOfYs,0,DawnOfYsName)
+SoundRoomEntry(HarvestDance,0,HarvestDanceName)
+SoundRoomEntry(mutecity,0,mutecityName)
+SoundRoomEntry(PMDSteamCaveID,0,PMDSteamCaveIDName)
+SoundRoomEntry(FF6AwakeningID,0,FF6AwakeningIDName)
+SoundRoomEntry(FF4RedWingsID,0,FF4RedWingsIDName)
+SoundRoomEntry(ButterBuilding,0,ButterBuildingName)
+SoundRoomEntry(FFTAnxiety,0,FFTAnxietyName)
+SoundRoomEntry(BattleWithThimale,0,BattleWithThimaleName)
+SoundRoomEntry(skytowerbeta,0,skytowerbetaName)
+SoundRoomEntry(oppression,0,oppressionName)
+SoundRoomEntry(fe5victory,0,fe5victoryName)
+SoundRoomEntry(awaywithyou,0,awaywithyouName)
+SoundRoomEntry(ncastlebridge,0,ncastlebridgeName)
+SoundRoomEntry(GreatCanyon,0,GreatCanyonName)
+SoundRoomEntry(KnightsPride,0,KnightsPrideName)
+SoundRoomEntry(FightingOfTheSpirit,0,FightingOfTheSpiritName)
+SoundRoomEntry(CombatResistanceID,0,CombatResistanceIDName)
+SoundRoomEntry(CallOfTheBellsID,0,CallOfTheBellsIDName)
+SoundRoomEntry(FeelingWoozyID,0,FeelingWoozyIDName)
+SoundRoomEntry(FirstCampaignID,0,FirstCampaignIDName)
+SoundRoomEntry(CryptequeID,0,CryptequeIDName)
+SoundRoomEntry(RiseAboveID,0,RiseAboveIDName)
+SoundRoomEntry(0xD9,0,CrimeHeartName)
+SoundRoomEntry(0xDA,0,DrumbeatName)
+SoundRoomTerminator
+
+PUSH
+ORG 0x1BC14   
+POIN NewSoundRoom
+ORG 0x1BCC4
+POIN NewSoundRoom
+ORG 0xAECA8
+POIN NewSoundRoom
+ORG 0xAECD0
+POIN NewSoundRoom
+ORG 0xAED2C
+POIN NewSoundRoom
+ORG 0xAEEBC
+POIN NewSoundRoom
+ORG 0xAF438
+POIN NewSoundRoom
+ORG 0xAF830
+POIN NewSoundRoom
+ORG 0xAFE30
+POIN NewSoundRoom
+ORG 0xB0080
+POIN NewSoundRoom
+ORG 0xB042C
+POIN NewSoundRoom
+POP

@@ -1,4 +1,4 @@
-
+// New
 #define Lufia_Doom 0x4
 #define TreasureOfRudrasBattleTheme 0x5
 #define Lufia2_RoS_Battle2 0x6
@@ -26,8 +26,23 @@
 #define oppression 0x1D
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
+
+#define CallOfTheBellsID 0x21
+#define FeelingWoozyID 0x22
+#define CryptequeID 0x59
+#define RiseAboveID 0x5D
+#define RemembranceID 0x58
+
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
+#define FightingOfTheSpirit 0xC2
+#define CombatResistanceID 0xC3
+#define FirstCampaignID 0xC4
+#define FestivalHuntID 0xC5
+#define War_sHeartbeat 0xC6
+
+#define CrimeHeartID 0xD9
+#define DrumbeatRuinID 0xDA
 
 // Vanilla
 #define TiesOfFriendship 0x7
@@ -37,5 +52,6 @@
 #define SolveTheRiddle 0x2E
 #define WindyDaySoundEffect 0x47
 #define WindyDayBirdsSoundEffect 0x48
+#define Nighttime 0x4A
 #define WaterFlowingSoundEffect 0x4B
 #define SoftSwooshSoundEffect 0x4D

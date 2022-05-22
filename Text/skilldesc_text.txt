@@ -614,7 +614,7 @@ when initiating battle.[X]
 
 ## SD_HeroesLifeAndDeath
 Life and Death: Grants[N]
-+5 Atk/Mag/Spd, -5 Def/Res.[X]
++2 Atk/Mag/Spd, -2 Def/Res.[X]
 
 ## SD_CatchEmAll
 Catch 'Em All: Grants[N]
@@ -688,7 +688,7 @@ Steal: Unit can steal items.[X]
 
 ## SD_StealPlus
 Steal+: Unit can steal weapons[N]
-and staves if con>weight.[X]
+and staves if Bld > Item Wt.[X]
 
 ## SD_Capture
 Capture: Capture an enemy after[N]

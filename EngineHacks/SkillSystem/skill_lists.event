@@ -32,3 +32,11 @@ DancerSkillList:
 BYTE 255 DanceID
 BYTE 00 00
 ALIGN 4
+
+ApsisSkillList:
+BYTE 1 StormbringerID
+BYTE 1 AbsoluteZeroID
+BYTE 1 DawnEyeID
+BYTE 1 WindFaithID
+BYTE 00 00
+ALIGN 4

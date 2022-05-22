@@ -6,17 +6,17 @@ Light Rune[X]
 
 ## SigilStaffDesc
 Create a light rune[NL]
-to block off paths [X]
+to block off paths.[X]
 
 ## LightRuneStaffUseDesc
-Block off a space [NL]
-with a light rune [X]
+Block off a space[NL]
+with a light rune.[X]
 
 ## LightRuneHelpText
 Select where to summon a Light Rune[X]
 
 ## RewarpStaffName
-Rewarp [X]
+Rewarp[X]
 
 ## RewarpStaffDesc
 Teleport user to [NL]
@@ -33,7 +33,7 @@ your target.[X]
 Burglar[X]
 
 ## BurglarStaffDesc
-Opens doors and chests[X]
+Opens doors and chests.[X]
 
 ## BurgularStaffHelpText
 Select door or chest to open[X]

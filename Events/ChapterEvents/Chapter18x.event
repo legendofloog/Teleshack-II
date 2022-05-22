@@ -1,0 +1,326 @@
+EventPointerTable(Chapter18xInterludeEvents, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+// 7,8,9,10,11,18 reserved for recruitment
+CharacterBasedEvents:
+CharacterEventBothWays(12, ApsisRecruit, Cleo, Apsis)
+CharacterEventBothWays(13, OjasviRecruit, Cleo, Ojasvi)
+CharacterEventBothWays(14, DarcyRecruit, Cleo, Darcy)
+CharacterEventBothWays(15, GrotoRecruit, Cleo, Groto)
+CharacterEventBothWays(16, TaoRecruit, Cleo, Tao)
+CharacterEventBothWays(17, ZharaRecruit, Cleo, Zhara)
+CharacterEventBothWays(0, TrajanTalk, Cleo, Trajan)
+END_MAIN
+
+ApsisRecruit:
+CHECK_EVENTID 7
+BNE 1 s0 sC
+	ENUT 7
+	Text(Ch18xApsisFirstTalkDialogue)
+LABEL 1
+Text(Ch18xApsisPickDialogue)
+SVAL s1 0x1
+BEQ 2 s1 sC
+	Text(Ch18ApsisRejectedDialogue)
+	ENUF 12
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch18xApsisAcceptedDialogue)
+CUSA Apsis
+SetFatigue(Apsis,0)
+MOVE 15 Apsis [21,5]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Apsis
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+
+OjasviRecruit:
+CHECK_EVENTID 8
+BNE 3 s0 sC
+	ENUT 8
+	Text(Ch18xOjasviFirstTalkDialogue)
+LABEL 3
+Text(Ch18xOjasviPickDialogue)
+SVAL s1 0x1
+BEQ 4 s1 sC
+	Text(Ch18OjasviRejectedDialogue)
+	ENUF 13
+	NoFade
+	ENDB
+LABEL 4
+Text(Ch18xOjasviAcceptedDialogue)
+CUSA Ojasvi
+SetFatigue(Ojasvi,0)
+MOVE 15 Ojasvi [21,5]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Ojasvi
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+DarcyRecruit:
+CHECK_EVENTID 9
+BNE 5 s0 sC
+	ENUT 9
+	Text(Ch18xDarcyFirstTalkDialogue)
+LABEL 5
+Text(Ch18xDarcyPickDialogue)
+SVAL s1 0x1
+BEQ 6 s1 sC
+	Text(Ch18xDarcyRejectedDialogue)
+	ENUF 14
+	NoFade
+	ENDB
+LABEL 6
+Text(Ch18xDarcyAcceptedDialogue)
+CUSA Darcy
+SetFatigue(Darcy,0)
+MOVE 15 Darcy [21,5]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Darcy
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+
+GrotoRecruit:
+CHECK_EVENTID 10
+BNE 7 s0 sC
+	ENUT 10
+	Text(Ch18xGrotoFirstTalkDialogue)
+LABEL 7
+Text(Ch18xGrotoPickDialogue)
+SVAL s1 0x1
+BEQ 8 s1 sC
+	Text(Ch18xGrotoRejectedDialogue)
+	ENUF 15
+	NoFade
+	ENDB
+LABEL 8
+Text(Ch18xGrotoAcceptedDialogue)
+CUSA Groto
+SetFatigue(Groto,0)
+MOVE 15 Groto [21,5]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Groto
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+
+TaoRecruit:
+CHECK_EVENTID 11
+BNE 9 s0 sC
+	Text(Ch18xTaoFirstTalkDialogue)
+	ENUT 11
+LABEL 9
+Text(Ch18xTaoPickDialogue)
+SVAL s1 0x1
+BEQ 10 s1 sC
+	Text(Ch18xTaoRejectedDialogue)
+	ENUF 16
+	NoFade
+	ENDB
+LABEL 10
+Text(Ch18xTaoAcceptedDialogue)
+CUSA Tao
+SetFatigue(Tao,0)
+MOVE 15 Tao [21,5]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Tao
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+ZharaRecruit:
+CHECK_EVENTID 18
+BNE 14 s0 sC
+	Text(Ch18xZharaFirstTalkDialogue)
+	ENUT 18
+LABEL 14
+Text(Ch18xZharaPickDialogue)
+SVAL s1 0x1
+BEQ 15 s1 sC
+	Text(Ch18xZharaRejectedDialogue)
+	ENUF 17
+	NoFade
+	ENDB
+LABEL 15
+Text(Ch18xZharaAcceptedDialogue)
+CUSA Zhara
+SetFatigue(Zhara,0)
+MOVE 15 Zhara [21,5]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Zhara
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
+
+CheckIfDoneSelecting:
+COUNTER_INC 0
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 11 s1 sC
+	Text(Ch18xRecruitedTwoUnits)
+	ENUT 12
+	ENUT 13
+	ENUT 14
+	ENUT 15
+	ENUT 16
+	ENUT 17
+LABEL 11
+NoFade
+ENDA
+
+TrajanTalk:
+COUNTER_CHECK 0
+SVAL s1 2
+BEQ 12 s1 sC
+	Text(Ch18xTrajanStopsYou)
+	GOTO 30
+LABEL 12
+Text(Ch18xTrajanConfirmation1)
+Text(Ch18xTrajanConfirmation2)
+SVAL s1 0x1
+BEQ 13 s1 sC
+	Text(Ch18xTrajanRejection)
+	GOTO 30
+LABEL 13
+CALL EndingScene
+LABEL 30
+NoFade
+ENDA
+
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+AFEV 0 RefreshCleo 0
+END_MAIN
+
+
+RefreshCleo:
+SVAL s1 0x42
+UNSET_CONDITION Cleo
+NoFade
+ENDA
+
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+Units1:
+UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [6,8] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+CleoInterludeGroup:
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [11,9] 0x0 0x0 0x0 0x0 [0x00]     NoAI
+UNIT
+
+GreenUnits:
+UNIT Apsis Bard_Apsis Loewe Level(9,NPC,False) [13,1] 0x0 0x0 0x0 0x0 [CrownPyreItem,StormbreakerItem,AbsoluteZeroItem,EyeOfDawnItem]     NoAI
+UNIT Groto Berserker Loewe Level(4,NPC,False) [11,15] 0x0 0x0 0x0 0x0 [BoneClub]     NoAI
+UNIT Zhara Paladin Loewe Level(7,NPC,False) [17,7] 0x0 0x0 0x0 0x0 [Maharaghi,Silence,Elixir]     NoAI
+UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBladeItem,ParagonSword] NoAI
+UNIT Tao Archer Loewe Level(10,NPC,False) [21,17] 0x0 0x0 0x0 0x0 [Taodao,RuneArrow]     NoAI
+UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Boro_Ch16 Champion Loewe Level(5,NPC,False) [22,13] 0x0 0x0 0x0 0x0 [MasterLance]     NoAI
+UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat, KnightProof] NoAI
+UNIT
+
+BeginningScene:
+COUNTER_SET 0 0
+DismountAll
+SetBackground(0xE)
+Text(Ch18xBeginningScene1SacredArrowRebels)
+SetBackground(0x8)
+MUSC WaterFlowingSoundEffect
+Text(Ch18xBeginningScene2OnDaBoat1)
+Text(Ch18xBeginningScene2OnDaBoat2)
+SetBackground(0x9)
+MUSC FE5_InTheBattle_Fate
+Text(Ch18xBeginningScene2OnDaBoat3)
+Text(Ch18xBeginningScene2OnDaBoat4)
+MUSC 0x7FFF
+Text(Ch18xBeginningScene2OnDaBoat5)
+MUSC FF6AwakeningID
+Text(Ch18xBeginningScene2OnDaBoat6)
+MUSC 0x7FFF
+SetBackground(0x8)
+Text(Ch18xBeginningScene3PortLazar1)
+SetBackground(0x7)
+MUSC Rovers
+Text(Ch18xBeginningScene3PortLazar2)
+Text(Ch18xBeginningScene3PortLazar3)
+MUSC FirstCampaignID
+Text(Ch18xBeginningScene3PortLazar4)
+Text(Ch18xBeginningScene3PortLazar5)
+Text(Ch18xBeginningScene3PortLazar6)
+Text(Ch18xBeginningScene3PortLazar7)
+EraseBackground
+LOAD1 1 GreenUnits
+LOAD1 2 CleoInterludeGroup
+ENUN
+SilentGiveItem(FaithWindItem,Apsis)
+NoFade
+ENDA
+
+EndingScene:
+SetBackground(0x4)
+MUSC Rovers
+Text(Ch18xEndingScene1AtThePort1)
+Text(Ch18xEndingScene2InTheClearing1)
+SetBackground(0x1F)
+MUSC FF5_Nostalgia
+Text(Ch18xEndingScene2InTheClearing2)
+Text(Ch18xEndingScene2InTheClearing3)
+Text(Ch18xEndingScene2InTheClearing4)
+Text(Ch18xEndingScene2InTheClearing5)
+Text(Ch18xEndingScene2InTheClearing6)
+SetBackground(0x15)
+MUSC FF4RedWingsID
+Text(Ch18xEndingScene3OrfeasAndLeonidas)
+MNC2 Chapter19
+NoFade
+ENDA

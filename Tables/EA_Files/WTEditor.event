@@ -5,12 +5,12 @@
 
 ALIGN 4
 WTTable:
-TwoWayWTEntry(Swords,Axes,5,0)
-TwoWayWTEntry(Lances,Swords,5,0)
-TwoWayWTEntry(Axes,Lances,5,0)
-TwoWayWTEntry(Anima,Light,5,0)
-TwoWayWTEntry(Light,Dark,5,0)
-TwoWayWTEntry(Dark,Anima,5,0)
+TwoWayWTEntry(Swords,Axes,10,1)
+TwoWayWTEntry(Lances,Swords,10,1)
+TwoWayWTEntry(Axes,Lances,10,1)
+TwoWayWTEntry(Anima,Light,10,1)
+TwoWayWTEntry(Light,Dark,10,1)
+TwoWayWTEntry(Dark,Anima,10,1)
 EndWT //Terminator
 
 PUSH

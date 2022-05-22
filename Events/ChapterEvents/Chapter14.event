@@ -86,13 +86,13 @@ UNIT Mahemen AxeFighter Nahiza Level(15,NPC,True)[12,18] 0x0 0x0 0x0 0x0 [SteelA
 UNIT
 
 AugurGroup:
-UNIT Augur 0x0 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x0 REDA11R15 [Vulnerary] NoAI
+UNIT Augur Manakete_2_F 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x0 REDA11R5 [Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
 UNIT Tsoureki General 0x0 Level(6,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [SilverBow,Greatlance,Hurlbat] BossAI
-UNIT Cythes General Tsoureki Level(2,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance,SteelBow] BossAI
-UNIT Cythes Sage_F Tsoureki Level(2,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Elfire,Physic] [0xE 0x3 0x0 0x20]
+UNIT Cythes LanceArmor Tsoureki Level(2,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance] BossAI
+UNIT Cythes Mage_F Tsoureki Level(2,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Elfire] [0xE 0x3 0x0 0x20]
 UNIT Cythes Hero Tsoureki Level(2,Enemy,True)[10,5] 0x0 0x0 0x0 0x0 [Rapier,RedGem,ChestKey] TwoActionAI
 UNIT Cythes Swordmaster_F Tsoureki Level(2,Enemy,True)[23,8] 0x0 0x0 0x0 0x0 [SteelSword,ChestKey] AttackInRangeAI
 UNIT Cythes AxeArmor Tsoureki Level(14,Enemy,True)[14,9] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
@@ -109,7 +109,7 @@ UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[10,11] 0x0 0x0 0x0 0x0 [S
 UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[4,12] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[6,11] 0x0 0x0 0x0 0x0 [Javelin] BossAI
 UNIT Cythes MageArmor Tsoureki Level(14,Enemy,True)[8,11] 0x0 0x0 0x0 0x0 [Wind] BossAI
-UNIT Cythes Sniper_F Tsoureki Level(2,Enemy,True)[11,6] 0x0 0x0 0x0 0x0 [MarksmanBow,ChestKey] AttackInRangeAI
+UNIT Cythes Archer_F Tsoureki Level(2,Enemy,True)[11,6] 0x0 0x0 0x0 0x0 [MarksmanBow,ChestKey] AttackInRangeAI
 UNIT Cythes Hunter Tsoureki Level(14,Enemy,True)[17,15] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
 UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[18,9] 0x0 0x0 0x0 0x0 [SlimAxe,SteelAxe,Vulnerary] TwoActionAI
 UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[18,11] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
@@ -211,6 +211,7 @@ Traps2:
 
 
 BeginningScene:
+COUNTER_SET 0 0
 MountAll
 LOAD1 0x1 EnemyUnits
 ENUN
@@ -343,16 +344,6 @@ CHECK_ACTIVEID Cleo
 BEQ 1 s0 sC
 	COUNTER_INC 0
 LABEL 1
-/*
-CheckIfUnitRescuedByActiveASMC(Loewe)
-BEQ 38 s0 sC
-	COUNTER_INC 0
-LABEL 38
-CheckIfUnitRescuedByActiveASMC(Cleo)
-BEQ 39 s0 sC
-	COUNTER_INC 0
-LABEL 39
-*/
 COUNTER_CHECK 0
 SVAL s1 2
 BNE 3 s1 sC
@@ -363,6 +354,7 @@ NoFade
 ENDA
 
 EndingScene:
+EndOfEscapeRoutineASMC
 CHECK_ALIVE Augur
 BNE 20 0x0 0xC
 SetFlag(0x65)

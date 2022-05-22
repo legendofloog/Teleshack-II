@@ -1,0 +1,49 @@
+To start off, this will assume you know how to and have made a map, and
+you're just looking to insert it. You'll need to use Tiled, which
+you can find here: https://www.mapeditor.org/
+My personal recommendation is to use Tiled all the way through to
+simplify the process, but making a map in other places like Builder
+or FEMapCreator also works.
+
+Assuming your map is already made, the key things to adjust in Tiled
+are Custom Properties and Layers. If you haven't already added tile changes,
+then you'll do so here by adding Layers. Looking at the bottom right of the
+screen, you should see a Layers tab. Click on it, and you'll see Tile Layer 1
+at the very bottom. For each tile change, you'll need a separate layer, which
+you can add by pressing the leftmost button in the Layers tab (should look
+like a piece of paper with a yellow flash) and then press "Tile Layer".
+
+This will create a new layer, which you can add to by clicking the Tilesets tab
+and left clicking the tile you want to put down in that area. Make sure that you
+are adding it to the correct layer; you should see that your desired layer is
+highlighted blue in the Layers menu if you're adding to it. You don't need to
+do anything else but put the tiles down; tmx2ea handles everything else for sublayers.
+If you want to turn a layer's visibility on and off in the editor, click the eye next to it.
+
+Now, for Custom Properties. You can see them at the left of the screen whenever a layer
+is selected, but the only ones that matter are those of Tile Layer 1 (the bottom one and main layer.)
+The following custom properties all apply:
+
+MANDATORY
+ChapterID - example: Chapter1
+Main - Its value is blank. This indicates that this layer is the main one.
+MapChangesID - example: Chapter1MapChanges
+MapID - example: Chapter1Map 
+ObjectType - The object type's ID in the EventPointerTable (where events and map assets go).
+             example: ThraciaCastleObjectID
+PaletteID - The palette ID in the EventPointerTable. example: ThraciaCastlePaletteID
+TileConfig - The mapchip config ID in the EventPointerTable. example: ThraciaCastleMapchipConfigID
+
+You can add these manually if you want with the + button in the bottom left corner, but
+you can also just copy paste them from other maps and adjust them accordingly. If you do add
+them yourself, make sure they are string values. Only the main layer needs these properties,
+so do not add them to other layers unless you want bad things to happen.
+
+The following aren't strictly necessary but may be applicable.
+
+OPTIONAL
+Anims1 - The anims1 ID, if applicable. example - ThraciaCastleTileAnimationsID
+Anims2 - Very few tilesets have these.
+
+With this, your map should be ready for insertion. You don't need to do anything else,
+as running MAKE_HACK_full.cmd in the main folder will automatically insert your map.

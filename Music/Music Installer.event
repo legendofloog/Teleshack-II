@@ -11,8 +11,6 @@ voicegroup000:
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)
-//#include "MusicEvents/Treasure of the Rudras - Battle Theme (RandomWizard).event"
-//SongTable(TreasureOfRudrasBattleTheme,rudras_battle_theme,MapMusicGroup)
 #include "MusicEvents/Battle For The Fields.event"
 SongTable(TreasureOfRudrasBattleTheme,songB2,MapMusicGroup) //hi i commented the top one out because its the same song but if you dont like this version just delete this and uncomment it
 #include "MusicEvents/Lufia 2 Rise of the Sinistrals - Battle 2 (SaXor_the_Nobody).event"
@@ -21,10 +19,8 @@ SongTable(Lufia2_RoS_Battle2,lufia2_battle2,BattleMusicGroup)
 SongTable(Sortie_Formation,L_Sortie_Formation,MapMusicGroup)
 #include "MusicEvents/FE9 - With Us (Sme).event"
 SongTable(WithUs_Song,WithUs, MapMusicGroup)
-#include "MusicEvents/TRSBerwickSagaPersonalCombat(RSflame).event"
-SongTable(PersonalCombat,song03A2,BattleMusicGroup)
-#include "MusicEvents/Attack Theme.event"
-SongTable(PersonalCombat,song09,BattleMusicGroup)
+#include "MusicEvents/Personal_Combatant_Berwick.event"
+SongTable(PersonalCombat,song0143,BattleMusicGroup)
 #include "MusicEvents/Tales_Of_Symphonia_Rover(Pandan).event"
 SongTable(Rovers,TalesOfSymphonia_Rover,MapMusicGroup)
 #include "MusicEvents/Valkyrie Profile - The Unfinished Battle with God Syndrome (SaXor_the_Nobody).event"
@@ -49,7 +45,7 @@ SongTable(mutecity,song58,MapMusicGroup)
 SongTable(PMDSteamCaveID,SteamCave,MapMusicGroup)
 #include "MusicEvents/Awakening(FF6).event"
 SongTable(FF6AwakeningID,FF6Awakening,MapMusicGroup)
-#include "MusicEvents/RedWings(FF4).event"
+#include "MusicEvents/FF4 - Red Wings (RandomWizard).event"
 SongTable(FF4RedWingsID,RedWings,MapMusicGroup)
 #include "MusicEvents/butterbuilding.event"
 SongTable(ButterBuilding,butterbuilding,MapMusicGroup)
@@ -63,11 +59,35 @@ SongTable(skytowerbeta,song01,MapMusicGroup)
 SongTable(oppression,song0153,MapMusicGroup)
 #include "MusicEvents/FE5winning.event"
 SongTable(fe5victory,song05,MapMusicGroup)
-#include "MusicEvents/war_s heartbeat.event"
+#include "MusicEvents/away with you.event"
 SongTable(awaywithyou,song13,BattleMusicGroup)
 #include "MusicEvents/ncastlebridge.event"
 SongTable(ncastlebridge,song34,MapMusicGroup)
 #include "MusicEvents/GreatCanyon(Psyche,RW).event"
 SongTable(GreatCanyon,GreatCanyon_Psyche_RW_,MapMusicGroup)
-#include "MusicEvents/Berwick Saga - The Knight_s Pride (MrGreen3339).event"
-SongTable(KnightsPride,song0A,MapMusicGroup)
+#include "MusicEvents/Berwick Saga - Knight's Pride (MrGreen).event"
+SongTable(KnightsPride,songC1,MapMusicGroup)
+#include "MusicEvents/FightingOfTheSpirit.event"
+SongTable(FightingOfTheSpirit,songC2,MapMusicGroup)
+#include "MusicEvents/TS_CombatResistance(devvy).event"
+SongTable(CombatResistanceID,CombatResistance,MapMusicGroup)
+#include "MusicEvents/Call_of_the_Bells_Pandan.event"
+SongTable(CallOfTheBellsID,callofthebells,BattleMusicGroup)
+#include "MusicEvents/Feeling_Woozy_Pandan.event"
+SongTable(FeelingWoozyID,feelingwoozy,BattleMusicGroup)
+#include "MusicEvents/TS_FirstCampaign(devvy).event"
+SongTable(FirstCampaignID,FirstCampaign,BattleMusicGroup)
+#include "MusicEvents/Final_Fantasy_9_-_Festival_of_the_Hunt_RandomWizard_Mr-Wright.event"
+SongTable(FestivalHuntID,song09,MapMusicGroup)
+#include "MusicEvents/war_s heartbeat.event"
+SongTable(War_sHeartbeat,song13,BattleMusicGroup)
+#include "MusicEvents/Remembrance(Loog).event"
+SongTable(RemembranceID, Remembrance, MapMusicGroup)
+#include "MusicEvents/Crypteque - CotND.event"
+SongTable(CryptequeID, crypt, MapMusicGroup)
+#include "MusicEvents/Valkyrie_Profile_-_Rise_Above_the_World_buggo.event"
+SongTable(RiseAboveID, song017B, MapMusicGroup)
+#include "MusicEvents/CrimeOfTheHeart(devvy).event"
+SongTable(0xD9, CrimeHeart, MapMusicGroup)
+#include "MusicEvents/DrumbeatToRuin.event"
+SongTable(0xDA, DrumbeatRuin, MapMusicGroup)

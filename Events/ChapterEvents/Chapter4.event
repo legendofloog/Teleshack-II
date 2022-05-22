@@ -253,17 +253,21 @@ DISA_IF 0xFFFE
 STAL 25
 Music(AdvanceSong)
 SetBackground(0x1B)
-CharacterConditionalDialog(Mira,Ch4Intro2,Ch4IntroAlt2)
-FADI 60
-CLEAN
-FADU 45
+CheckUnitDeadOrJailed(Mira)
+BNE 420 s0 sC 
+	Text(Ch4Intro2)
+	GOTO 421
+LABEL 420
+Text(Ch4IntroAlt2)
+LABEL 421
+EraseBackground
 STAL 5
 CamOn
 LOAD1 0x1 LeEpicRecruits
 ENUN
 CamOff
-CHECK_ALIVE Mira
-BEQ 2 0x0 0xC
+CheckUnitDeadOrJailed(Mira)
+BNE 2 0x0 0xC
 TEXTSTART
 TEXTSHOW Ch4Intro3
 TEXTEND
@@ -286,6 +290,7 @@ ENUN
 STAL 30
 CameraCursor(Zwieback)
 Text(Ch4Intro4)
+FADI 15
 MountAll
 STAL 3
 	GotoPrepScreen

@@ -34,8 +34,15 @@
 #define ImbueID 53
 #define ArmoredBlowID 54
 #define CriticalForceID 55
-#define DanceID 56
-#define HeroesLifeAndDeathID 57
+#define DanceID 57
+#define HeroesLifeAndDeathID 58
+#define LifetakerID 59
+#define BowRangeUpID 60
+#define LoyaltyID 61
+#define ChargeID 62
+#define AcrobatID 63
+#define SmiteID 76
+
 
 // keep it continous for debug purpose
 
@@ -69,3 +76,18 @@
 #define GenesiumMightID 39
 #define AlacrityID 50
 #define SharpshooterID 51
+#define DesolateID 56
+#define SpurHitID 64
+#define FervorID 65
+#define AbsoluteZeroID 66
+#define CrownPyreID 67
+#define DawnEyeID 68
+#define StormbringerID 69
+#define WindFaithID 70
+#define SpelltwisterID 71
+#define TelepathyID 72
+#define PhaseLeapID 73
+#define AbsoluteZeroTomeID 74
+#define BladeDanceID 75
+#define CleoFanID 77
+#define HypeTrainID 78

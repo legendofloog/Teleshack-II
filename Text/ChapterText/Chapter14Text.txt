@@ -24,7 +24,7 @@ and fear at what[N]
 could come to pass.[A][X]
 
 ## Ch14_OnBoat
-[FarLeft][LoadLoewe]
+[FarLeft][LoadLoewePunished]
 [OpenFarLeft]
 [CloseEyes]Just on the horizon[Beat][N]
 the golden sands of Mahemen.[AN]
@@ -89,7 +89,7 @@ will appreciate such enthusiasm.[A][X]
 
 ## Ch14_InBoat
 [MidRight][LoadKailani]
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [OpenLeft]
 Archbishop Kailani.[AN]
 I've a question for you,[N]
@@ -196,7 +196,7 @@ forgotten His teachings of peace?[AN]
 [ToggleSmile]Or maybe Svetomir's gotten to them.[A][X]
 
 ## Ch14_InBasilica_1
-[FarLeft][LoadLoewe]
+[FarLeft][LoadLoewePunished]
 [Left][LoadKailani]
 [Right][LoadHouvaina]
 [FarRight][LoadMureib]
@@ -401,7 +401,7 @@ who remembers that[N]
 accursed, ancient era[Beat][A][X]
 
 ## Ch14_InBasilica_2
-[FarLeft][LoadLoewe]
+[FarLeft][LoadLoewePunished]
 [Left][LoadCleo]
 [Right][LoadKailani]
 [FarRight][LoadHouvaina]
@@ -617,7 +617,7 @@ end after seizing,[N]
 so stay on guard![A][X]
 
 ## Ch14RecruitAugur
-[FarLeft][LoadLoewe]
+[FarLeft][LoadLoewePunished]
 [Left][LoadCleo]
 [MidRight][LoadAugur]
 [Left]
@@ -751,7 +751,7 @@ as you die, Kailani.[AN]
 I will not let you[N]
 become another Dragana![A]
 [Right][ClearFace]
-[Right][LoadLoewe]
+[Right][LoadLoewePunished]
 [Right]
 Have at you, Grimblade![A][MoveLeft]
 [MidLeft][MoveMidLeft]
@@ -790,7 +790,7 @@ Now.[A]
 
 ## Ch14Ending_Basilica1
 [FarLeft][LoadCleo]
-[Left][LoadLoewe]
+[Left][LoadLoewePunished]
 [MidRight][LoadHouvaina]
 [MidRight]
 [Beat]I still must congratulate[N]
@@ -913,7 +913,7 @@ all foresee be stopped[Beat]?[A][X]
 
 ## Ch14Ending_Messenger
 [FarLeft][LoadCleo]
-[Left][LoadLoewe]
+[Left][LoadLoewePunished]
 [Right][LoadKwame]
 [FarRight][LoadFace][0x6D][0x1]
 [FarRight]

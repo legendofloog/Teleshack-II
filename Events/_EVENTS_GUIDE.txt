@@ -2,6 +2,15 @@ First things first: I would read and look over Sme's FE8 EA Eventing Guide.
 It's very comprehensive and should help answer most eventing questions you
 may have. https://feuniverse.us/t/fe8-ea-eventing-guide/7080
 
+Organizational aspects:
+- Your chapter events go in the ChapterEvents folder. Make sure to #include
+your chapter's event file in ChapterEvents/ChapterEventsInstaller.event
+- Escape points, reda pointers, and various macros to make eventing easier
+are all in this folder. You can also check EventAssembler/EAStandardLibrary/MainCodeHelpers.txt
+to see the vanilla macros that may be useful.
+- GiveAll events are here, which are just there to dump a unit's items into the
+convoy if they die. 
+
 Now, I'll outline how I typically do events for a more "how does this work
 in practice" approach. I recommend keeping "Chapter1.event" open while
 reading this since I'll be referring to it pretty regularly. 
@@ -57,12 +66,6 @@ look at how it's done in Chapter 1: Escape(flagID,offset,X,Y). Since we're doing
 escape, you can copy the EscapeEventCheck and use it in your events, only changing the X and Y
 positions. For reference, what this event does is end the chapter once Loewe and Cleo have
 escaped. After that, put this at the start of your EndingScene:
-
-EscapeCapturedCheck(Mira, 0x8B)
-EscapeCapturedCheck(Iskra, 0x8C)
-EscapeCapturedCheck(Emil, 0x8D)
-EscapeCapturedCheck(Svetomir, 0x8E)
-EscapeCapturedCheck(Alena, 0x8F)
 
 and add onto it with whatever other non-lord units are added. This makes any units that haven't
 escaped be "captured" (aka REMU'd), and a global flag is set for future reference.
