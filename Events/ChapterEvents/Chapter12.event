@@ -25,8 +25,23 @@ LocationBasedEvents:
 LOCA 9 TopLeftPrisonDoor [5,2] 0x12
 Chest(Mend,16,2)
 LOCA 10 TopMiddlePrisonDoor [10,3] 0x12
-
-
+LOCA 9 TopLeftPrisonDoor2 [3,4] 0x12
+LOCA 11 TopRightPrisonDoor [13,4] 0x12
+Seize(2,11)
+Seize(3,11)
+Seize(4,11)
+Door(10,11)
+Door(11,11)
+Door(14,11)
+LOCA 12 Altar [0,12] 0x12
+Chest(Recover,13,12)
+Chest(Heal,15,12)
+Seize(6,15)
+Seize(6,16)
+Seize(2,20)
+Seize(3,20)
+Seize(4,20)
+LOCA 13 OutsidePrisonDoor [14,21] 0x12
 END_MAIN
 
 
