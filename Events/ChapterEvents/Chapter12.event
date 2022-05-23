@@ -200,7 +200,7 @@ TILECHANGE 4
 NoFade
 ENDA
 
-TopLeftPrisonDoor:
+TopLeftPrisonOpened:
 Text(Ch12PlaceholderText)
 GiveItem(BlueGem,0xFFFF)
 SVAL sB Coords(3,2)
