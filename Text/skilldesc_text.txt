@@ -1271,3 +1271,26 @@ Water Boost: Grants +6 Resistance[N]
 if unit's current HP is at[N]
 least 3 higher than the enemy's.[X]
 
+## SD_TriSavant
+Triangle Savant: Grants an extra[N]
++2 atk/def and +10 hit/avoid when[N]
+at weapon triangle advantage.[X]
+
+## SD_WhisperWind
+Whisperwind: Unit gains canto and[N]
+pass after innitiating combat with[N]
+wind magic.[X]
+
+## SD_FarShock
+Far Shock: Thunder magic has[N]
++1 range, -10 hit.[x]
+
+## SD_FuneralPyre
+Funeral Pyre: When killing an enemy[N]
+with fire magic; plant a landmine
+where they died.[X]
+
+## SD_Providence
+Providence: This unit is immune[N]
+to the backfire effects of the[N]
+legendary weapons.[X]
