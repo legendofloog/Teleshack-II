@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="34" height="24" tilewidth="16" tileheight="16" infinite="0" nextlayerid="40" nextobjectid="1">
  <tileset firstgid="1" source="Thracia_Castle_v2(Flasuban).tsx"/>
- <tileset firstgid="1025" source="../../FE Builder/Custom Assests/my maps/Thracia_Castle_v2(Flasuban).tsx"/>
  <layer id="1" name="Tile Layer 1" width="34" height="24">
   <properties>
    <property name="Anims1" value="ThraciaCastleTileAnimationsID"/>
