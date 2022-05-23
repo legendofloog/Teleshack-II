@@ -10,3 +10,9 @@ Poise:
 #incbin "Poise/Poise.dmp"
 POIN SkillTester
 WORD PoiseID
+
+ALIGN 4
+TriangleSavant:
+#incbin "TriangleSavant/TriangleSavant.dmp"
+POIN SkillTester
+WORD TriSavantID
