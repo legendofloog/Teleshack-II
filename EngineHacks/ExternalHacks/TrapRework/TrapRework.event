@@ -150,6 +150,7 @@
 
 	#include "Modules/DragonVeins/DragonVeins.event"
 	#include "Modules/HealTiles/HealTiles.event"
+	#include "Modules/TelliusTorches/TelliusTorches.event"
 
 	#define BlueSigil(x,y) "MapSpriteTrap(SigilTrapID,x,y)"
 	#define RedSigil(x,y) "MapSpriteTrap(RedSigilTrapID,x,y)"
@@ -164,10 +165,6 @@
 	//Tellius Torches are not included in this distribution,
 	//but there are references to it in the code still.
 	//This exists to satiate them, remove it if you add Tellius Torches.
-	TelliusTorchTrapIDLink:
-	TelliusTorchOffMapSpriteIDLink:
-	TelliusTorchOnMapSpriteIDLink:
-	WORD 0
 	
 #endif // TRAP_REWORK_INSTALLED
 

@@ -10,9 +10,14 @@ boat.[X]
 
 ## Ch6ArenaHint
 Put [Red]3[Red] units in the green squares[N]
-to enter or exit the arena.[N]
-Don't cheat and have units standing[N]
-next to them, it won't work.[A][X]
+to enter or exit the arena. Once they[N]
+leave, the arena will close its doors,[N]
+disallowing any future participation.[AN]
+Your units will be healed after every[N]
+victory in the arena, and on the next[N]
+turn, a new round of enemies will arrive.[AN]
+If the red line is crossed, Barod will[N]
+get very angry, resulting in a [Red]Game Over[Red].[A][X]
 
 ## Ch6LongMonologueIntro
 Yuria Islands, known as the[N]
@@ -64,10 +69,10 @@ Whatever it takes.[AN]
 [MidLeft]
 Will you stop,[N]
 just for me?[AN]
-I... I love you.[N]
+I[Beat] I love you.[N]
 I don't want to lose you.[AN]
 [MidRight]
-I... feel the same, but[N]
+I[Beat] feel the same, but[N]
 my sister must be avenged.[AN]
 Go, you don't have to see this.[A][X]
 
@@ -471,7 +476,7 @@ My sister might be alive[Beat][A][X]
 He's dead![N]
 Are you happy now?[AN]
 [MidRight]
-I'm...[N]
+I'm[Beat][N]
 I'm empty inside.[AN]
 [MidLeft]
 I'm following the liberators,[N]
@@ -591,3 +596,51 @@ Loewe[Beat] Cleo[Beat][AN]
 Your resolve will be tested.[N]
 How will you each respond?[N]
 Only time will tell[Beat][A][X]
+
+## Ch6BarodSeethesText
+[MidLeft][LoadBarod][ThreeLineBox]
+You dare disrespect the law of the arena?[N]
+For many years, I contented myself[N]
+with watching others fight[Beat][AN]
+But you broke the code, Liberators.[AN]
+As arenamaster, I can't allow this[N]
+cowardice. Face my wrath, weaklings![A][X]
+
+## Ch6BarodCongratulations1
+[MidLeft][LoadBarod]
+I see you've cleared the first round![N]
+Well done, Liberators. Here, a reward.[A][X]
+
+## Ch6BarodCongratulations2
+[MidLeft][LoadBarod]
+Oho, the second string is defeated?[N]
+Not bad at all. Here, you deserve it.[A][X]
+
+## Ch6BarodCongratulations3
+[MidLeft][LoadBarod]
+Three waves, all felled by your hand[Beat][N]
+Impressive. For your good work, a reward.[A][X]
+
+## Ch6BarodCongratulations4
+[MidLeft][LoadBarod]
+You managed to defeat even the witches?[N]
+Astounding! Take this ring as your prize.[A][X]
+
+## Ch6BarodCongratulations5
+[MidRight][LoadLeina]
+That's[Beat] I know that ring, Liberators.[N]
+Perhaps this may quell Cromar's rage[Beat][N]
+Please allow me to hold onto it.[A][X]
+
+## Ch6LoeweCleoReactToBarod
+[MidLeft][LoadLoewe]
+[MidRight][LoadCleo]
+[MidLeft]
+W-What the hell?! That psycho's going[N]
+to bring this whole damn island down![AN]
+[MidRight][ThreeLineBox]
+All this for an arena's rules? This man[N]
+is insane! Loewe, we have to get out-[MoveMidRight][CloseEyes][N]
+Urgh[Beat] Something[Beat] hit me[Beat][A][CloseSpeechSlow][ClearFace]
+[MidLeft][OneLineBox]
+Cleo? Cleo[Beat] Cleoooooooo![A][X]

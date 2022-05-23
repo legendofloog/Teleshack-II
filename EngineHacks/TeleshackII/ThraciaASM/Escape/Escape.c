@@ -19,8 +19,9 @@ int GetLocationEventCommandAt(int xPos, int yPos);
 /*
 void EscapeCommandEffect(Proc* procState);
 */
-
-
+bool CheckEventId(int eventId);
+void UnsetEventId(int eventId);
+void SetEventId(int eventId);
 
 int EscapeCommandUsability(){
     Unit* unit = gActiveUnit;
@@ -137,6 +138,7 @@ void EndOfEscapeRoutine(){
 }
 
 void InterludeRemovalRoutine(){ //related to escape since it checks if units are jailed
+    UnsetEventId(0x8C);
     int i;
     Unit* someUnit;
     for (i = 0; i <= 60; i++){
@@ -163,6 +165,10 @@ void InterludeRemovalRoutine(){ //related to escape since it checks if units are
 }
 
 void InterludeReturnRoutine(){
+    if (CheckEventId(0x8C)){ //0x8C used to check if interlude flag is set; if so, abort
+        return;
+    }
+    SetEventId(0x8C); //sets the event id if the interlude flag is not set
     int i;
     Unit* someUnit;
     for (i = 0; i <= 60; i++){

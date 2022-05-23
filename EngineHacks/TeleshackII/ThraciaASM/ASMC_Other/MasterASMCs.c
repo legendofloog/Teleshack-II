@@ -65,7 +65,7 @@ void SetFatigue(){
 
 void CheckIfFatigued(){
     Unit* unit = GetUnitByCharId(gEventSlot[1]);
-    if (unit->state & (US_DEAD | US_BIT16) ){
+    if (unit->state & (US_DEAD | US_REMOVED) ){
         gEventSlot[0xC] = 0;
         return;
     }
@@ -91,4 +91,38 @@ void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
 
 void ComputeBattleUnitHitRate(BattleUnit* bu) {
     bu->battleHitRate = (bu->unit.skl * 2) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
+}
+
+void HealBlueUnitsInCh6Arena(){
+    int x;
+    int y;
+    int z;
+    Unit* unitPointer;
+    for (z = 0; z <= 60; z++){ // cycles through unit array
+        unitPointer = &gUnitArrayBlue[z];
+        for (x = 0; x <= 14; x++){ // cycles through x = 0 to x = 14
+            for(y = 0; y <= 14; y++){ // cycles through y = 0 to y = 14
+                if(unitPointer->xPos == x && unitPointer->yPos == y){ //is the current blue unit at that position? 
+                    unitPointer->curHP = unitPointer-> maxHP; //if so, heal them to the max
+                }
+            }
+        }
+    }
+}
+
+void KillAllBlueUnitsInCh6Arena(){
+    int x;
+    int y;
+    int z;
+    Unit* unitPointer;
+    for (z = 0; z <= 60; z++){ // cycles through unit array
+        unitPointer = &gUnitArrayBlue[z];
+        for (x = 0; x <= 14; x++){ // cycles through x = 0 to x = 14
+            for(y = 0; y <= 14; y++){ // cycles through y = 0 to y = 14
+                if(unitPointer->xPos == x && unitPointer->yPos == y){ //is the current blue unit at that position? 
+                    UnitKill(unitPointer);
+                }
+            }
+        }
+    }
 }

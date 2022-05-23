@@ -21,7 +21,6 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0, TurnOne, 1)
 	TurnEventPlayer(0x0, TurnTwo, 2)
 	TurnEventPlayer(0x0, WipeCheck, 1, 255)
-	TurnEventEnemy(0x0, WipeCheck, 1, 255)
 	TurnEventPlayer(0xA, StagingAreaEnter, 1, 255)
 	TurnEventPlayer(0xB, StagingAreaExit, 1, 255)
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
@@ -47,8 +46,7 @@ LocationBasedEvents:
 	Village(0x10,Ch6Village1Event,10,25)
 	Village(0x11,Ch6Village2Event,21,26)
 	Village(0x12,Ch6Village3Event,27,23)
-	House(0x0,Ch6House1,25,23)
-	House(0x0,Ch6House2,25,27)
+	LOCA 3 EndingScene [27,9] 0x11
 	Seize(27, 9)
 END_MAIN
 
@@ -57,8 +55,38 @@ CauseGameOverIfLordDies
 AREA 0xA StagingAreaEnter [6,14] [8,14]
 AREA 0xB StagingAreaExit [6,14] [8,14]
 AREA 0xC SilverBowDesertTreasure [9, 29] [10, 30]
+AREA 0x0 BarodSeethes [2,0] [12,4]
+AFEV 0 SpawnEnemies 0
 END_MAIN
 
+BarodSeethes:
+CHECK_ALLEGIANCE (-1)
+BNE 776 s0 sC // not 0 = not player unit
+FlashCursor(Barod,60)
+MUSS UnfinishedBattleGodSyndrome
+Text(Ch6BarodSeethesText)
+EARTHQUAKE 0 True
+STAL 30
+EARTHQUAKE 1 True
+STAL 30
+EARTHQUAKE 0 True
+STAL 30
+EARTHQUAKE 1 True
+STAL 30
+EARTHQUAKE_END
+FlashCursor(Loewe,30)
+Text(Ch6LoeweCleoReactToBarod)
+SET_ACTIVE Loewe
+KILL Cleo
+AWAIT_KILL Cleo
+ENUN
+EARTHQUAKE 0 True
+STAL 60
+EARTHQUAKE_END
+CALL GameOverStart
+LABEL 776
+NoFade
+ENDA
 
 Dunno1:
 	END_MAIN
@@ -131,8 +159,8 @@ UNIT ArenaSpectator Civilian_F_2 Barod Level(1,Enemy,False) [15,3] 0x0 0x0 0x0 0
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,5] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator Civilian_F_2 Barod Level(1,Enemy,False) [15,6] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
 UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [14,9] 0x0 0x0 0x0 0x1 [0x0] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [19,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [18,7] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [20,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 Barod Level(1,Enemy,False) [15,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT
 
 ALIGN 4
@@ -221,6 +249,17 @@ Traps1:
 	GreenSigil(6,14)
 	GreenSigil(7,14)
 	GreenSigil(8,14)
+	RedSigil(3,5)
+	RedSigil(4,5)
+	RedSigil(5,5)
+	RedSigil(9,5)
+	RedSigil(10,5)
+	RedSigil(11,5)
+	TelliusTorchOn(7,3,5)
+	TelliusTorchOn(3,9,5)
+	TelliusTorchOn(11,9,5)
+	TelliusTorchOn(0,4,5)
+	TelliusTorchOn(14,6,5)
 ENDTRAP
 
 
@@ -354,6 +393,8 @@ ENDA
 
 ALIGN 4
 SpawnEnemies:
+	CountEnemiesInRange(1,0,13,14)
+	IBgt(1, 420)
 	COUNTER_CASE(0, 0)
 		CameraCursor(Barod)
 		Text(Ch6BarodIntro1)
@@ -361,35 +402,52 @@ SpawnEnemies:
 	BREAK(0,0)
 	COUNTER_CASE(0, 1)
 		CameraCursor(Barod)
+		Text(Ch6BarodCongratulations1)
+		HealAllInArena
+		STAL 30
 		GiveItem(RedGem,Cleo)
 		Text(Ch6BarodIntro2)
 		LoadReinforcements(Reinforce1)
-		UnsetFlag(0xA)
 	BREAK(0,1)
 	COUNTER_CASE(0, 2)
 		CameraCursor(Barod)
+		Text(Ch6BarodCongratulations2)
+		HealAllInArena
+		STAL 30
 		GiveItem(RedGem,Cleo)
 		Text(Ch6BarodIntro3)
 		LoadReinforcements(Reinforce2)
-		UnsetFlag(0xA)
 	BREAK(0,2)
 	COUNTER_CASE(0, 3)
 		CameraCursor(Barod)
+		HealAllInArena
+		STAL 30
+		Text(Ch6BarodCongratulations3)
 		GiveItem(RedGem,Cleo)
 		Text(Ch6BarodIntro4)
 		LoadReinforcements(Reinforce3)
-		UnsetFlag(0xA)
 	BREAK(0,3)
 	COUNTER_CASE(0, 4)
 		CameraCursor(Barod)
+		HealAllInArena
+		STAL 30
+		Text(Ch6BarodCongratulations4)
+		CHECK_ALIVE Leina
+		BEQ 865 s0 sC
+			FlashCursor(Leina,60)
+			Text(Ch6BarodCongratulations5)
+			GiveItem(SisterRing,Leina)
+			GOTO 866
+		LABEL 865
 		GiveItem(SisterRing,Cleo)
+		LABEL 866
 		Text(Ch6BarodIntro5)
 		CameraCursor(Cleo)
 		Text(Ch6BarodIntro5Response)
 		LoadReinforcements(Reinforce4)
-		UnsetFlag(0xA)
 	BREAK(0,4)
 	Increment(0)
+LABEL 420
 NoFade
 ENDA
 
@@ -418,7 +476,6 @@ StagingAreaExit:
 		IBne(0, 0)
 			TILECHANGE 0
 			TILEREVERT 1
-			CALL SpawnEnemies
 			GOTO 1
 	LABEL 0
 		UnsetFlag(0xB)
@@ -437,8 +494,6 @@ WipeCheck:
 			UnsetFlag(0xA)
 			GOTO 1
 	LABEL 0
-		CountEnemiesInRange(1,0,13,14)
-		IBgt(1, 1)
 			UnsetFlag(0xB)
 	LABEL 1
 NoFade
@@ -532,14 +587,6 @@ ENDA
 
 Ch6Reinforce3:
 	LoadReinforcements(PirateReinforce3)
-NoFade
-ENDA
-
-Ch6House1:
-NoFade
-ENDA
-
-Ch6House2:
 NoFade
 ENDA
 
