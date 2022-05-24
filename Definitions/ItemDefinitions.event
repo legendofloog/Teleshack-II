@@ -146,8 +146,17 @@
 #define WindBow 0x89
 #define FireDrive 0x8A
 
+#define Stinger 0x8d
+#define MysticLance 0x8e
+#define LunarAxe 0x8f
+#define Stormbrand 0x91
+#define Darkbrand 0x92
 #define HoundingBow 0x93
+#define Daybreak 0x94
 #define HeavySpear 0x95
+
+#define ArgymosCrest 0x98
+
 #define CrownPyreItem 0x9a
 #define StormbreakerItem 0x9b
 #define AbsoluteZeroItem 0x9c
@@ -211,13 +220,5 @@
 #define HeroRing 0xff
 #define EarthGreataxe 0xE4
 #define Runespear 0xE5
-
-#define Stinger 0x8d
-#define MysticLance 0x8e
-#define LunarAxe 0x8f
-#define Stormbrand 0x91
-#define Darkbrand 0x92
-#define Daybreak 0x93
-#define ArgymosCrest 0x98
 
 
