@@ -100,8 +100,8 @@ IndoorEnemy:
   UNIT Tiberius Noble Cidor Level(4,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [28,9] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
-  UNIT Selese Mage Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [28,9] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
 //turn 2
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [23,7] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
   UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [23,8] 0x0 0x0 0x0 0x1 [SteelLance] BossAI
@@ -109,7 +109,7 @@ IndoorEnemy:
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [25,8] 0x0 0x0 0x0 0x1 [IronSword] BossAI 
 //turn 3
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
-  UNIT Selese Mage Cidor Level(12,Enemy,True) [14,8] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [16,10] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [IronAxe] StallOneTurnAI 
 //turn 4
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
@@ -140,7 +140,7 @@ OutdoorEnemy:
   UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [27,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 //turn 2
   UNIT Selese Thief Cidor Level(12,Enemy,True) [17,5] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [22,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [22,5] 0x0 0x0 0x0 0x1 [IronAxe] BossAI
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [22,12] 0x0 0x0 0x0 0x1 [SteelLance] PursueWithoutHeedAI
 //turn 3
   UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,18] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
