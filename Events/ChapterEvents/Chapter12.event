@@ -33,7 +33,7 @@ Seize(4,11)
 Door(10,11)
 Door(11,11)
 Door(14,11)
-Chest(SilverAxe,13,12)
+Chest(KnightProof,13,12)
 Chest(RedGem,15,12)
 Seize(6,15)
 Seize(6,16)
@@ -212,6 +212,7 @@ ENDA
 
 EndingScene:
 FADI 15
+
 InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
 NoFade
