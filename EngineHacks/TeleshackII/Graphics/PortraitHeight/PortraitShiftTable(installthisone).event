@@ -107,6 +107,28 @@ BYTE 0 0 0 0 0 0 0 0
 BYTE 0 0
 //Portrait 0x71 - WhiteSoldier; 0x72 Myrmidon Class Card
 
+// More zeroes!!
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+BYTE 0 0 0 0 0 0 0 0
+
 //0x72 - Myrmidon Class Card
 //I'm skipping over the rest of the Class Cards: 
 //They don't go to this routine at all.

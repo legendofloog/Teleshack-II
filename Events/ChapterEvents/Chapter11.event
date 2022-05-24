@@ -30,7 +30,7 @@ LocationBasedEvents:
 Chest(MasterBow,1,1)
 Door(17,24)
 Door(18,24)
-Chest(KnightProof,9,24)
+Chest(Elixir,9,24)
 Chest(RedGem,18,13)
 Door(1,8)
 Door(2,8)
@@ -111,6 +111,7 @@ UNIT
 
 Turn2Thief:
 UNIT Selese Thief Cleo Level(11,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [IronSword,ChestKey,DoorKey] ThiefAI
+UNIT
 
 Turn3Units:
 UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [4,27] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
@@ -129,6 +130,7 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 EnemyUnits2
 	LOAD1 0x1 PrisonGreens
+	ENUN
 	DismountAll
 	GotoPrepScreen
 	

@@ -41,8 +41,6 @@ ChangeWeaponRankASMC:
 
 #include "StallAIs/StallAI/StallAI.event"
 
-#include "EnemyEscapeHook/EnemyEscapeHook.event"
-
 #include "MapChangeToFlag/Installer.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
@@ -51,11 +49,15 @@ ChangeWeaponRankASMC:
 
 #include "NarrowFontExtension/SerifExtension.event"
 
-#include "FogVisionTiles/Installer.event"
-
 #include "PromoLevelCheck/PromoLevelCheck.lyn.event" //fixes IER bug where promo can be done at any level
 
 #include "FE7 & 8-Show Heal Amount/FE7 & FE8-Show Heal Amount EA.event"
+
+#include "ChangePortrait/Installer.event"
+
+//#include "Reorganize/Installer.event"
+
+#include "prep_shop_each_chapter2/Installer.event"
 
 // thief vision set to 0
 
@@ -105,11 +107,13 @@ ORG $B5237
 BYTE 0xE0
 POP
 
-// staff hitrate: never miss; need to change to be 100% if mag 
+/*
+// staff hitrate: never miss; need to change to be 100% if mag > res
 PUSH
 ORG $2cd30
 BYTE 0xFF
 POP
+*/
 
 //default status duration is infinite
 PUSH
@@ -123,3 +127,32 @@ ORG $2B6A4
 BYTE 21
 POP
 
+// removes drop flag from enemies opening chests
+PUSH
+ORG $1157C
+SHORT 0xE009
+POP
+
+//monster weapon display fix
+PUSH
+ORG $892f2
+BYTE 0x6
+ORG $1e7fc
+BYTE 0xC
+ORG $16e22
+BYTE 0x0B 0x28 0x04 0xD0 0x09 0x49 0x80 0x00 0x08 0x18 0x00 0x68 0x06 0xE0 0x80 0x20 0x80 0x00 0x6B 0x30 0x02 0xE0
+ORG $16E42
+BYTE 0xC0 0x46
+POP
+
+//sets this unit to be un status staffable
+PUSH
+ORG $2CD44
+BYTE 0x00
+POP
+
+// sets all units after this to use class growths
+PUSH
+ORG $17C4C
+BYTE 0x49 //0x48 being last player unit
+POP

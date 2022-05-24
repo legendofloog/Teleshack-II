@@ -182,13 +182,13 @@ PrisonGreens:
 
 
 BeginningScene:
-  MountAll
-  LOAD 1 MinkJoin
-  LOAD 1 OutdoorEnemy
-  LOAD 1 IndoorEnemy
-  LOAD 1 PrisonGreens
-  GotoPrepScreen
-  ENDA
+MountAll
+LOAD 1 MinkJoin
+LOAD 1 OutdoorEnemy
+LOAD 1 IndoorEnemy
+LOAD 1 PrisonGreens
+GotoPrepScreen
+ENDA
   
 TopLeftPrisonDoor:
 TILECHANGE 0
@@ -199,6 +199,14 @@ TopLeftPrisonDoor2:
 TILECHANGE 3
 NoFade
 ENDA
+
+EndingScene:
+FADI 15
+InterludeRemovalRoutineASMC
+MNC2 Ch12xInterlude
+NoFade
+ENDA
+
 
 TopLeftPrisonOpened:
 Text(Ch12PlaceholderText)
@@ -254,11 +262,3 @@ LOAD 1 EithaSpawn
 SetFlag(0x4)
 NoFade
 ENDA
-
-
-EndingScene:
-  RemoveAll
-  MNC2 Ch12xInterlude
-    ENUN
-  NoFade
-  ENDA

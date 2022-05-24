@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade.[X]
+A high quality blade. Eff vs Cavalry[X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -135,7 +135,7 @@ Arai's Gale[X]
 Sister Ring[X]
 
 ## SisterRingDesc
-[_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
+Allows access to ancient power (+1 Mov).[X]
 
 ## CivilianProofName
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
@@ -185,13 +185,13 @@ Yor's Yari[X]
 Ignores Defence.[X]
 
 ## DaShootaName
-Da Shoota[X]
+Break Arc[X]
 
 ## DaShootaDesc
 Effective vs horses and armors.[X]
 
 ## BigIronName
-Big Iron[X]
+Meat Cleaver[X]
 
 ## Axle1Name
 Axle[X]
@@ -200,7 +200,7 @@ Axle[X]
 Uncounterable. Lck +13.  Axel[LockIcon].[X]
 
 ## Axle2Desc
-Halves enemy health. Alex[LockIcon].[X]
+A long range axe. Alex[LockIcon].[X]
 
 ## MiaodaoName
 Miaodao[X]
@@ -226,6 +226,9 @@ Stinger[X]
 
 ## StingerDesc
 Spd +5. Hornet[LockIcon][X]
+
+## MysticLanceName
+Mystic Lance[X]
 
 ## LunarAxeName
 Lunar Axe[X]
@@ -275,3 +278,248 @@ Daybreak[X]
 
 ## DaybreakDesc
 [_V][_e][_r][_d][_i][_u][_m] [_m][_i][_g][_h][_t]. [_N][_o][_t] [_m][_e][_a][_n][_t] [_f][_o][_r] [_m][_o][_r][_t][_a][_l] [_h][_a][_n][_d][_s].[X]
+
+## MuramasaName
+Muramasa[X]
+
+## TheBreakerName
+The Breaker[X]
+
+## TheBreakerDesc
+Effective vs. armors.[X]
+
+## HoundingBowName
+Hounding Bow[X]
+
+## HoundingBowDesc
+Eff. vs [HorseIcon]. Darby[LockIcon][X]
+
+## KingShieldName
+King Shield[X]
+
+## KingShieldDesc
+Provokes enemies in range. Armors only.[X]
+
+## EdgedArrowName
+Edged Arrow[X]
+
+## EdgedArrowDesc
+Pierces enemy defense. Bow users only.[X]
+
+## RedScarfName
+Red Scarf[X]
+
+## RedScarfDesc
+Restores 25% HP after killing an enemy.[X]
+
+## SaunionName
+Saunion[X]
+
+## SaunionDesc
+A lance with extended reach.[X]
+
+## KaiserschwertName
+[_K][_a][_i][_s][_e][_r][_s][_c][_h][_w][_e][_r]t[X]
+
+## KaiserschwertDesc *
+Follow-up attacks consecutive. Eff. vs. blessed.[X]
+
+## TrainedEdgeName
+Trained Edge[X]
+
+## TrainedPikeName
+Trained Pike[X]
+
+## TrainedAxeName
+Trained Axe[X]
+
+## TrainedArcName
+Trained Arc[X]
+
+## AquaBrandName
+Aqua Brand[X]
+
+## AquaBrandDesc
+Varga[LockIcon]. Magic dmg. +5 Spd.[X]
+
+## ChargeLanceName
+Charge[X]
+
+## ChargeLanceDesc
+Emil[LockIcon]. +1 dmg for per 2 squares.[X]
+
+## PoincareName
+Archival[X]
+
+## PoincareDesc
+Rashid[LockIcon]. Eff. vs. archer/sniper.[X]
+
+## SinkName
+Sink[X]
+
+## SinkDesc
+Eff. vs. mages and bards.[X]
+
+## WoodlandsHukeName
+[_W][_o][_o][_d][_l][_a][_n][_d][_s] [_H][_u][_k][_e][X]
+
+## WoodlandsHukeDesc
++2 Skl/Res when equipped. +1 Bow Rng.[X]
+
+## CaptainsHelmName
+[_C][_a][_p][_t][_a][_i][_n]'[_s] [_H][_e][_l][_m][X]
+
+## CaptainsHelmDesc
++1 Str/Mag/Skl/Spd/Def/Res. Equip.[X]
+
+## FealtyBowName
+Fealty Bow[X]
+
+## FealtyBowDesc
+-3 Dmg taken, +15 hit when near Lord.[X]
+
+## DragonstoneName
+Dragonstone[X]
+
+## DragonstoneDesc
+ special stone[X]
+
+## EmptyDesc
+ [X]
+
+## HeroRingName
+Hero Ring[X]
+
+## HeroRingDesc
+Currently does nothing lol.[X]
+
+## AmserScrollName
+Amser Scroll[X]
+
+## AmserScrollDesc
++10% Mov -15% Def -15% Res.[X]
+
+## UnmoorName
+Unmoor[X]
+
+## UnmoorDesc
+Severs time's threads. Eff. vs. blessed.[X]
+
+## CrownPyreName *
+Crowned Pyre[X]
+
+## CrownPyreDesc *
+Ignores 25% Res. Executes foes below 25% HP.[X]
+
+## StormbreakerName
+[_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
+
+## StormbreakerDesc *
+At max move, +30 Hit/Crit (+40 at max range).[X]
+
+## AbsoluteZeroName
+[_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
+
+## AbsoluteZeroDesc *
+-2 Atk/AS to foes in 2 spaces, -4 in terrain.[X]
+
+## DawnEyeName
+Eye of Dawn[X]
+
+## DawnEyeDesc *
+Restores HP to unit = damage dealt.[X]
+
+## FaithWindName
+Faith's Wind[X]
+
+## FaithWindDesc *
+Hits twice at 1 range. Cancels WTD at 2 range.[X]
+
+## DancingBladeName
+Dancing Bld.[X]
+
+## DancingBladeDesc
+Hits Res. [LockIcon] Ojasvi.[X]
+
+## TaodaoName
+Taodao[X]
+
+## TaodaoDesc
+[LockIcon] Tao. Brave, long-range.[X]
+
+## RuneArrowName
+Rune Arrow[X]
+
+## RuneArrowDesc
+[LockIcon] Tao. Makes attacks magical.[X]
+
+## BoneClubName
+Bone Club[X]
+
+## BoneClubDesc
+Strong but inaccurate throwing club.[X]
+
+## MaharaghiName
+Maharaghi[X]
+
+## MaharaghiDesc
+Can be used to greatly heal allies.[X]
+
+## KaiserschwertFakeDesc
+[LockIcon] Loewe. A sentimental sword.[X]
+
+## WornScrollName
+Worn Scroll[X]
+
+## WornScrollDesc
+Some power still lingers[N]
+within this faded scroll.[N]
++5% HP, +5% Str, +5% Skl[X]
+
+## WindBowName
+Wind Bow[X]
+
+## WindBowDesc
+Uses MAG. +5 Spd.[X]
+
+## FireDriveName
+Fire Drive[X]
+
+## FireDriveDesc
+Uses MAG.[X]
+
+## LamfadaName
+Lamfada[X]
+
+## LamfadaDesc
+[_E][_f][_f]. [_v][_s] i[_n][_f][_a][_n]t[_r][_y] [SwordIcon] ([_n][_o]t [ArmorIcon]/[_d]i[_s]m[_o][_u][_n]t[_e][_d] [HorseIcon].)[X]
+
+## BoldBladeName
+Bold Blade[X]
+
+## BoldPikeName
+Bold Pike[X]
+
+## BoldCleaverName
+Bold Cleaver[X]
+
+## BoldWeaponDesc
+Def/Res -5 while equipped.[X]
+
+## LunaName
+Luna[X]
+
+## LunaDesc
+Ignores enemy resistance.[X]
+
+## EarthGreataxeName
+[_E][_a][_r]t[_h] [_G][_r][_e][_a]t[_a][_x][_e][X]
+
+## EarthGreataxeDesc
+Def +5. Strikes twice, but only twice.[X]
+
+## RunespearName
+Runespear[X]
+
+## RunespearDesc
+[LockIcon]Tobie. Magic, drains HP into wielder.[X]

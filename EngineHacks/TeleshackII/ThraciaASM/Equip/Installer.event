@@ -6,7 +6,7 @@
 #include "src/Equip.lyn.event"
 
 // add prEquipmentBonus to each stat getter
-#define rEquipmentBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(GetEquipmentStatBonus^1)"
+//#define rEquipmentBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(GetEquipmentStatBonus^1)"
 
 /*
 add this to draw_stats_box in mss_defs after blh 0x80D74A0

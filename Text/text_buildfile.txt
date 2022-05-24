@@ -17,6 +17,18 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x533 PrfStar
+[0xBD][X]
+
+# 0x5C9 MechanicsPageTitle
+Mechanics[X]
+
+## LorePageTitle
+Lore[X]
+
+## CreditsPageTitle
+Credits[X]
+
 #0xd4c LikesText
 Likes:[X]
 
@@ -153,6 +165,13 @@ Open Door[X]
 Open the door to[N]
 Dragana's cell.[X]
 
+## ReorganizeName
+Reorg[X]
+
+## ReorganizeDescription
+Move an item to[N]
+the top of inventory.[X]
+
 #include "statusdesc_text.txt"
 
 #include "skilldesc_text.txt"
@@ -172,6 +191,9 @@ Dragana's cell.[X]
 
 #include "CharClassItemsEtc/ClassNamesDescs.txt"
 
+#include "CharClassItemsEtc/MusicNames.txt"
+
 ## HealArrowText
 ->[X]
 
+#include "CharClassItemsEtc/GuideText.txt"

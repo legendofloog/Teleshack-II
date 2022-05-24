@@ -1,4 +1,4 @@
-
+// New
 #define Lufia_Doom 0x4
 #define TreasureOfRudrasBattleTheme 0x5
 #define Lufia2_RoS_Battle2 0x6
@@ -10,6 +10,7 @@
 #define FF5_Sealed_Away 0xD
 #define FE5_Adversity 0xE
 #define FE5_InTheBattle_Fate 0xF
+#define fe5victory 0x10
 #define Dreaming 0x11 //Near Victory music is 0x10
 #define DawnOfYs 0x12
 #define HarvestDance 0x13
@@ -17,13 +18,34 @@
 #define PMDSteamCaveID 0x15
 #define FF6AwakeningID 0x16
 #define FF4RedWingsID 0x17
-#define fe2bossarr 0x18
+#define skytowerbeta 0x18
 #define ButterBuilding 0x19
 #define FFTAnxiety 0x1A
 #define BattleWithThimale 0x1B
 #define Sortie_Formation 0x1C
-#define Core 0x1D
-#define Sheep_Will_Sleep 0x1E
+#define oppression 0x1D
+#define awaywithyou 0x1E
+#define ncastlebridge 0x1F
+
+#define CallOfTheBellsID 0x21
+#define FeelingWoozyID 0x22
+#define CryptequeID 0x59
+#define RiseAboveID 0x5D
+#define RemembranceID 0x58
+
+#define GreatCanyon 0xC0
+#define KnightsPride 0xC1
+#define FightingOfTheSpirit 0xC2
+#define CombatResistanceID 0xC3
+#define FirstCampaignID 0xC4
+#define FestivalHuntID 0xC5
+#define War_sHeartbeat 0xC6
+
+#define CrimeHeartID 0xD9
+#define DrumbeatRuinID 0xDA
+#define Core 0xDB
+#define Sheep_Will_Sleep 0xDC
+
 
 // Vanilla
 #define TiesOfFriendship 0x7
@@ -33,5 +55,6 @@
 #define SolveTheRiddle 0x2E
 #define WindyDaySoundEffect 0x47
 #define WindyDayBirdsSoundEffect 0x48
+#define Nighttime 0x4A
 #define WaterFlowingSoundEffect 0x4B
 #define SoftSwooshSoundEffect 0x4D

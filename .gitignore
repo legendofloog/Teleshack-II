@@ -72,3 +72,4 @@ EventAssembler/Tools
 Text/.TextEntries/
 Text/InstallTextData.event
 Text/TextDefinitions.event
+Definitions/DebugDefinitions.event

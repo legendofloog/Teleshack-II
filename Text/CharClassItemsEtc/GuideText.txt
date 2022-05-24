@@ -1,0 +1,308 @@
+## FatigueMechanicSubPageTitle
+Fatigue[X]
+
+## PCCMechanicSubPageTitle
+PCC[X]
+
+## DismountMechanicSubPageTitle
+Dismount[X]
+
+## CaptureMechanicSubPageTitle
+Capture[X]
+
+## StealMechanicSubPageTitle
+Steal[X]
+
+## RescueMechanicSubPageTitle
+Rescue[X]
+
+## SupportsMechanicSubPageTitle
+Supports[X]
+
+## InterludesMechanicSubPageTitle
+Interludes[X]
+
+## WeaponTriangleMechanicSubPageTitle
+Weapon Triangle[X]
+
+## EquipsMechanicSubPageTitle
+Equips[X]
+
+## FreeActionMechanicSubPageTitle
+Free Actions[X]
+
+## LeadershipStarsSubPageTitle
+Leadership Stars[X]
+
+## MovementStarsSubPageTitle
+Movement Stars[X]
+
+## OrodrethLoreSubPageTitle
+Orodreth[X]
+
+## ByelenLoreSubPageTitle
+Byelen[X]
+
+## CythesLoreSubPageTitle
+Cythean Empire[X]
+
+## DeciaLoreSubPageTitle
+Decia[X]
+
+## MahemenLoreSubPageTitle
+Mahemen[X]
+
+## ChouwoujLoreSubPageTitle
+Chouwouj[X]
+
+## YuliaIslandsLoreSubPageTitle
+Yulia Islands[X]
+
+## TeamDistantRoadsCreditsSubPageTitle
+Team Distant Roads[X]
+
+## FatigueDescGuide
+Fatigue simulates unit tiredness.[N]
+If a unit's fatigue exceeds their[N]
+HP, they will no longer gain EXP[N]
+or WEXP on the map, and they can[N]
+not be deployed when fatigued.[N]
+Benching a unit for 1 chapter will[N]
+reset their fatigue to 0, which is[N]
+the only way to remove fatigue.[N]
+[N]
+Fatigue builds for each action[N]
+a unit takes. This includes[N]
+battling (regardless of phase),[N]
+stealing, using a staff, rallying,[N]
+or using repositonal skills.[N]
+Each unit gains 1 fatigue per[N]
+action unless they use staves.[N]
+Staffing gives fatigue scaling[N]
+with staff rank: E gives 1,[N]
+D gives 2, C gives 3, and so on.[N]
+[N]
+Fatigue begins to increment[N]
+starting during chapter 4.[X]
+
+## PCCDescGuide
+PCC stands for "Pursuit[N]
+Critical Coefficient".[N]
+On follow-up attacks,[N]
+a unit's Crit is[N]
+multiplied by this value.[N]
+[N]
+For example, if a unit attacks[N]
+an enemy twice and has a PCC of[N]
+5 and a crit of 1, their first[N]
+attack will have 1% crit rate,[N]
+while the 2nd attack will be 5%.[N]
+[N]
+A brave attack is not considered[N]
+a follow-up, unless the unit[N]
+doubles naturally. In this case,[N]
+the second two attacks[N]
+are considered follow-ups.[X]
+
+## DismountDescGuide
+Units that are mounted, such[N]
+as cavalry, pegasi, and wyverns,[N]
+must dismount indoors.[N]
+[N]
+Units will automatically[N]
+dismount or mount pending[N]
+starting position in each map.[N]
+[N]
+Your unit cannot move after[N]
+dismounting. Mounted units are[N]
+unable to traverse indoor tiles.[N]
+[N]
+Dismount penalties will display[N]
+in red on the unit status screen.[X]
+
+## CaptureDescGuide
+If a unit has greater BLD than[N]
+the enemy, they can Capture.[N]
+Capturing follows the same rules[N]
+as Rescue does, and enemies[N]
+will not capture player units.[N]
+[N]
+Capture halves all attacking[N]
+unit's stats. If the capturing[N]
+unit is able to bring the enemy[N]
+down to 0 HP, the enemy will be[N]
+captured, or held, similar to[N]
+rescuing an ally.[N]
+[N]
+Once captured, units may trade[N]
+items off enemies. This is your[N]
+primary method of gathering new[N]
+items, as drop items do not exist.[N]
+[N]
+Beware, once you release an[N]
+enemy, they will disappear[N]
+from the map.[X]
+
+## StealDescGuide
+Units with the steal command[N]
+are able to steal items from[N]
+adjcaent enemy inventories[N]
+if their SPD is greater than[N]
+or equal to the enemy SPD.[N]
+[N]
+Units can steal any item[N]
+in their inventory, including,[N]
+but not limited to,[N]
+tomes, staves, and weapons,[N]
+as long as their BLD > item WT.[N]
+[N]
+You cannot steal if the stealing[N]
+unit's inventory is full.[X]
+
+## RescueDescGuide
+Units can rescue any ally or[N]
+NPC unit if their BLD is[N]
+greater than the adjacent unit.[N]
+[N]
+Mounted units can rescue any[N]
+dismounted unit, as long as[N]
+that unit does not have 20 Bld.[N]
+[N]
+Mounted units cannot be rescued.[N]
+You must dismount in order[N]
+to be rescued.[X]
+
+## SupportsDescGuide
+Units may have support bonuses[N]
+with other allied units.[N]
+These are hidden bonuses[N]
+that do not grow or scale[N]
+during the game, and there[N]
+is no way to increase their[N]
+potency or gain new supports.[N]
+[N]
+Units with supports must be[N]
+within 3 spaces of each other[N]
+to activate the bonus.[X]
+
+## InterludesDescGuide
+Interlude chapters appear[N]
+multiple times during the game.[N]
+These chapters allow you to[N]
+recruit 2 new units there.[N]
+You may select up to 2 of the[N]
+units available in each interlude.[N]
+If you do not select a unit[N]
+during their interlude,[N]
+they will not appear again.[N]
+[N]
+Interlude chapters do not reset[N]
+fatigue for existing units.[X]
+
+## WeaponTriangleDescGuide
+Weapon triangle bonuses provide[N]
++1 DMG and +10 HIT when at[N]
+advantage, and -1 DMG and[N]
+-10 HIT when at disadvantage.[N]
+[N]
+Weapon Triangle:[N]
+Sword > Lance > Axe > Sword[N]
+[N]
+Magic Triangle[N]
+Anima > Light > Dark > Anima[X]
+
+## EquipsDescGuide
+Some items in this game[N]
+must be equipped to observe[N]
+their effects.[N]
+These items may provide[N]
+skills, stats, or other[N]
+bonuses, such as growth boosts.[X]
+
+## LeadershipDescGuide
+Grants all allies +3 HIT[N]
+and +3 AVO per star.[N]
+These bonuses stack[N]
+for each star per unit[N]
+in your deployed army.[X]
+
+## MovementStarsDescGuide
+Movement stars, or vigor,[N]
+provides a 5% chance per star[N]
+for a unit to move again[N]
+after completing an action.[N]
+[N]
+Movement stars may only[N]
+trigger once per turn.[X]
+
+## FreeActionDescGuide
+Talk, Trade, Give, Take, Mount,[N]
+and Dismount are free actions.[N]
+This means you can continue[N]
+your turn after completing them,[N]
+but may not move your unit.[X]
+
+## OrodrethLoreDesc
+Orodreth[X]
+
+## ByelenLoreDesc
+Byelen[X]
+
+## CythesLoreDesc
+Cythean Empire[X]
+
+## DeciaLoreDesc
+Decia[X]
+
+## MahemenLoreDesc
+Mahemen[X]
+
+## ChouwoujLoreDesc
+Chouwouj[X]
+
+## YuliaIslandsLoreDesc
+Yulian Islands[X]
+
+## TeamDistantRoadsDesc
+Thank you for downloading[N]
+and playing our hack.[N]
+For full credits list,[N]
+please see our thread[N]
+on Fire Emblem Universe.[N]
+[N]
+Team Distant Roads Staff[N]
+[N]
+Project Lead: LegendofLoog[N]
+[N]
+Chapter Creation[N]
+[N]
+LegendofLoog[N]
+knabepicer[N]
+Kyrads[N]
+devisio[N]
+pandan[N]
+MintX[N]
+Rivian[N]
+DrGreen3339[N]
+TDAWS[N]
+bpat[N]
+GodsPetTurle[N]
+Leche[N]
+RandomWizard[N]
+Xilirite[N]
+ArcherBias[N]
+# Pikmin1211[N]
+[N]
+Special Thanks:[N]
+[N]
+Dainn[N]
+hypergammaspaces[N]
+Pikmin1211[N]
+WarPath[N]
+Levin[N]
+sdaht[N]
+Laurent_Lacroix[N]
+Roze[N]
+Knight_Moris[N]
+A_Reliable_Chair[N]
+Pushwall[X]

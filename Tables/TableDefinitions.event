@@ -3,15 +3,11 @@
 
 #define TABLE_DEFINITIONS
 
+
 #ifndef CharacterTable
     #define CharacterTable 0x803D30
 #endif
-#ifndef ClassTable
-  #define ClassTable 0x807110
-#endif
-#ifndef ItemTable
-  #define ItemTable 0x809B10
-#endif
+#define ItemTable NewItemTable
 #ifndef DebuffTable
   #define DebuffTable 0x203f100
 #endif
@@ -63,9 +59,21 @@
 #define AxleLock 0x06000000
 #define StingerLock 0x05000000
 #define StormbrandLock 0x07000000
+#define MuramasaLock 0x08000000
+#define BreakerLock 0x09000000
+#define DragonstoneLock 0x0B000000
+#define DullahanLock 0x10000000
 #define PassiveBoosts 0x00800000
-#define DarkbrandLock 0x09000000
-
+#define VargaLock 0x0C000000
+#define EmilLock 0x0D000000
+#define RashidLock 0x0E000000
+#define ApsisLock 0x0F000000
+#define DancingBladeLock 0x11000000
+#define MaharaghiLock 0x12000000
+#define BoneClubLock 0x13000000
+#define TaodaoLock 0x14000000
+#define RunespearLock 0x15000000
+#define DarkbrandLock 0x16000000
 
 // Weapon Effect
 #define NoEffect 0x0
@@ -151,6 +159,8 @@
 #define DragonType	0x08
 #define MonsterType	0x10
 #define SwordType	0x20
+#define MageType	0x40
+#define ArcherType 	0x80
 
 //Status Effects
 #define NoStatusID 0

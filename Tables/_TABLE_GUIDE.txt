@@ -1,16 +1,54 @@
-Alright, so this one is dependent on which table you're trying to edit. If it is in the following list (Character, Item, Chapter), then you can go back to the main folder and click on Buildfile Pro. Note: The Chapter editor has some weirdness where it wipes the Events section - make sure
-you set this to the definition for your chapter's events (Chapter7Events, for example) if you
+Alright, so this one is dependent on which table you're trying to edit.
+If it is in the following list (Character, Item, Chapter), then you can go
+back to the main folder and click on Buildfile Pro. Note: The Chapter editor
+has some weirdness where it wipes the Events section - make sure you set
+this to the definition for your chapter's events (Chapter7Events, for example) if you
 use it. The Character editor mostly works, though it does affect the CharMagicEditor csv oddly,
 so make sure you doublecheck that your units have the appropriate base and growth.
 
-Select the Teleshack II folder in the directory, and you should see a GUI interface to edit with (this is particularly helpful for people used to Builder, but CSVs are stinky in general). Pik made this and it's pretty epic. However, don't edit the class table since that one's set in stone beyond any numerical changes we may or may not agree on later. Further, don't give your unit any weapon types or character abilities that they wouldn't have available in their class (prf locks are fine though obviously). 
+A few off-limits tables: Don't edit the class table since that one's set
+in stone beyond any numerical changes we may agree on later.
+Further, don't give your unit any weapon types or character abilities
+that they wouldn't have available in their class. 
 
-
-Otherwise, you'll have to edit them in their respective CSVs (the NightmareModules folder) or their EA file (EA_Files folder). This is probably a good time to mention that you're going to want some kind of syntax highlighting so that .event files are more legible. 
+Otherwise, you'll have to edit them in their respective CSVs (the NightmareModules folder)
+or their EA file (EA_Files folder). This is probably a good time to mention that you're
+going to want some kind of syntax highlighting so that .event files are more legible. 
 https://feuniverse.us/t/syntax-highlighting-for-event-assembler/2131
 
-The only relevant CSVs are as follows: EscapeQuoteEditor (which we'll probably make a lot of use of, since this is Thracia-inspired) and maybe the IER folder, depending on what kind of items you add (promo items, for instance, will need to be added to the Promotion_Item_Table, but most weapons will not). 
+For the tables under NightmareModules, many of them are what you've already seen
+in Builder; the ChapterData table, CharacterTable, ItemTable, and SpellAssociationList
+are all free to edit for your turn. Obviously, make sure not to overwrite any changes
+other people have made; for Items, look for DUMMY slots to insert yours.
+You can check what's been defined if you're unsure which slots are vanilla and which are unused.
 
+As for not vanilla tables, editing a unit's magic is done in CharacterClasses/MagCharEditor.csv,
+which is indexed by character ID. In Items/WeaponLockArray.csv, you can add a pointer to an
+array that mandates who can use an item. The steps are:
 
-EA files have a good bit more to edit. Currently, this is the location of stat boosts for items (in WeaponStatBoosts.event), the battle and death quote tables, and the boss music table. If you're looking for Movement Stars or Move/Con growths, the macro for setting table entries there is in EngineHacks/TeleshackII/ThraciaASM. The macros there should explain well enough how to use those tables. 
+1) Define a weapon lock in TableDefinitions.event in the format 0xXX000000
+2) Make the definition one of your item's weapon abilities
+3) In the XX position in WeaponLockArray.csv, put the pointer to your array
+4) Go to EngineHacks/ExternalHacks/WeaponLockArray/AdvWeaponLocks.event and add your array,
+following what every other item has done (using a character or class lock)
+
+Under Misc, you'll only need to edit EscapeQuoteEditor.csv, which just amounts to
+adding a text definition in the slot corresponding with the character ID you want.
+Under Skills, you can add any personal skills to the PersonalSkillTable. If your unit
+is supposed to start with multiple, then add a pointer to CharacterLevelUpSkillEditor.csv
+instead, and add it under EngineHacks/SkillSystem/skill_lists.event.
+The ItemEffectRevamp tables likely don't need to be edited by most contributors,
+but if you do need to, ask me about it.
+
+EA_Files has a few more tables to edit, but they're in .event files instead of csvs.
+Currently, this is the location of stat boosts for items (in WeaponStatBoosts.event),
+the Battle and Death Quote Tables, and the Boss Music table.
+
+If you're making a death quote for a player unit, note that none of them have textIDs
+in the entries here except gameover units. This is because in order to use an event
+in a death quote, the textID needs to be set to 0, and we're using death quote events
+here to send items to convoy on death. You can go over to Events/GiveAllEvents.event
+and put the GiveAll event and death text for your unit there, following the structure of other events.
+
+Also, the Sound Room Table is located in SoundRoomInstaller.event. 
 

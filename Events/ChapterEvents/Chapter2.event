@@ -14,14 +14,20 @@ PointerList:
 
 TurnBasedEvents:
 TurnEventPlayer(12, Turn3Spawn, 3)
-TurnEventPlayer(13, BoroSpawn, 10)
-TurnEventPlayer(14, BoroWarning, 9)
+TurnEventPlayer(13, BoroSpawn, 8)
+TurnEventPlayer(14, BoroWarning, 7)
 TurnEventPlayer(20, Turn5Spawn, 5)
 END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
+CharacterEventBothWays(0x11, DelilahSvetTalk, Delilah, Svetomir)
 END_MAIN
+
+DelilahSvetTalk:
+Text(DelilahFreedBySvetConvoText)
+NoFade
+ENDA
 
 LocationBasedEvents:
 Seize(1,3)
@@ -94,7 +100,7 @@ UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x
 UNIT
 
 Turn5Reinforcements:
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x1 REDA1R18 [ShortSword] PursueWithoutHeedAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,19] 0x0 0x0 0x1 REDA1R13 [ShortSword] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronAxe] PursueWithoutHeedAI
 UNIT
 
@@ -149,7 +155,6 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	FADI 15
 	LOAD1 1 EnemyUnits
 	LOAD1 1 OpeningCutsceneUnits
 	LOAD1 1 GreenUnits
@@ -159,16 +164,11 @@ BeginningScene:
 	Text(Chapter2OpeningScene1)
 	CALL $9EE2C4
 	FlashCursor(Varga,60)
-	EVBIT_T 5
-	TEXTSTART
-	TEXTSHOW Chapter2OpeningScene2
-	TEXTEND
+	Text(Chapter2OpeningScene2_1)
 	LOAD1 1 OpeningCutsceneAllyUnits
 	ENUN
-	TEXTCONT
-	TEXTEND
-	REMA
-	EVBIT_F 5
+	FlashCursor(Cleo,30)
+	Text(Chapter2OpeningScene2_2)
 	Text(Chapter2OpeningScene3)
 	CUSN Varga
 	MUSC Sortie_Formation
@@ -196,9 +196,7 @@ BeginningScene:
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)
-	FADI 15
 	LOAD3 2 Units1
-	//LOAD1 2 Units1
 	ENUN
 	CUSA Varga
 	FADU 15
@@ -207,10 +205,14 @@ BeginningScene:
 	ENDA
 
 Turn3Spawn:
-ReinforcementEvent(Turn3Reinforcements)
+SpawnReinforcements(Turn3Reinforcements)
+NoFade
+ENDA
 
 Turn5Spawn:
-ReinforcementEvent(Turn5Reinforcements)
+SpawnReinforcements(Turn5Reinforcements)
+NoFade
+ENDA
 
 BoroSpawn:
 LOAD1 1 BoroUnitGroup2
@@ -238,6 +240,7 @@ SVAL s1 Svetomir
 MUSC WithUs_Song
 BNE 1 s1 sC
 	Text(DelilahFreedBySvetText)
+	ENUT 0x11
 	GOTO 2
 LABEL 1
 Text(DelilahFreedText)

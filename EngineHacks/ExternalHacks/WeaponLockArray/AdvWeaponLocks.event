@@ -24,6 +24,8 @@ BYTE HardClassLock
 BYTE Dragonlord
 BYTE HardClassLock
 BYTE Dragonlord_Dismounted
+BYTE HardCharLock
+BYTE LoeweCopy
 BYTE EndLockArray
 
 ArgilabrysArray:
@@ -61,6 +63,78 @@ BYTE EndLockArray
 DarkbrandArray:
 BYTE HardCharLock
 BYTE Tiberius
+BYTE EndLockArray
+
+MuramasaArray:
+BYTE HardCharLock
+BYTE Carl
+BYTE EndLockArray
+
+BreakerArray:
+BYTE HardCharLock
+BYTE Ellerey
+BYTE EndLockArray
+
+HoundingArray:
+BYTE HardCharLock
+BYTE Darby
+BYTE EndLockArray
+
+DullahanArray:
+BYTE HardCharLock
+BYTE Cromar
+BYTE EndLockArray
+
+DragonstoneArray:
+BYTE HardClassLock
+BYTE Manakete
+BYTE Manakete_2
+BYTE Manakete_2_F
+BYTE EndLockArray
+
+AquaBrandArray:
+BYTE HardCharLock
+BYTE Varga
+BYTE EndLockArray
+
+ChargeLanceArray:
+BYTE HardCharLock
+BYTE Emil
+BYTE EndLockArray
+
+PoincareArray:
+BYTE HardCharLock
+BYTE Rashid
+BYTE EndLockArray
+
+ApsisArray:
+BYTE HardCharLock
+BYTE Apsis
+BYTE EndLockArray
+
+DancingBladeArray:
+BYTE HardCharLock
+BYTE Ojasvi
+BYTE EndLockArray
+
+MaharaghiArray:
+BYTE HardCharLock
+BYTE Zhara
+BYTE EndLockArray
+
+BoneClubArray:
+BYTE HardCharLock
+BYTE Groto
+BYTE EndLockArray
+
+TaodaoArray:
+BYTE HardCharLock
+BYTE Tao
+BYTE EndLockArray
+
+RunespearArray:
+BYTE HardCharLock
+BYTE Tobie
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS
