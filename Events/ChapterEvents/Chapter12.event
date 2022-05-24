@@ -135,9 +135,9 @@ IndoorEnemy:
 
 OutdoorEnemy:
 //turn 1
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [26,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [29,3] 0x0 0x0 0x0 0x1 [IronSword,Javelin] AttackInRangeAI
-  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronSword,Javelin] AttackInRangeAI
+  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [27,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
 //turn 2
   UNIT Selese Thief Cidor Level(12,Enemy,True) [17,5] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [22,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
