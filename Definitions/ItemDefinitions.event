@@ -158,6 +158,7 @@
 #define Maharaghi 0xa1
 #define Taodao 0xa2
 #define RuneArrow 0xa3
+#define LecheEquip 0xa4
 
 #define Dragonstone 0xAA
 #define Unmoor 0xAB
