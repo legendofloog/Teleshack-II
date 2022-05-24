@@ -73,6 +73,7 @@
 #define BoneClubLock 0x13000000
 #define TaodaoLock 0x14000000
 #define RunespearLock 0x15000000
+#define DarkbrandLock 0x16000000
 
 // Weapon Effect
 #define NoEffect 0x0

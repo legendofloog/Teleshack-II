@@ -4,6 +4,7 @@
 //gale bow by zarg
 // slim bow is by zaneeeeeeee avernathy
 // devil dagger from archer?
+// Daybreak from GabrielKnight, Darkbrand by Ereshkigal
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 /*
 ALIGN 4
@@ -101,6 +102,8 @@ ItemIconSlot(0xA1,"Png/Miaodao.png")
 ItemIconSlot(0xD6,"Png/Stinger.png")
 ItemIconSlot(0xD7,"Png/LunarAxe.png")
 ItemIconSlot(0xD8,"Png/Stormbrand.png")
+//ItemIconSlot(0xDB,"Png/Darkbrand.png")
+//ItemIconSlot(0xDC,"Png/Daybreak.png")
 ItemIconSlot(0x8A,"Png/TemperedRing_Beansy.png")
 ItemIconSlot(0xC2,"Png/AquaBrand.png")
 ItemIconSlot(0xC5,"Png/Charge.png")

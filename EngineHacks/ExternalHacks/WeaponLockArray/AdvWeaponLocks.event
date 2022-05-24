@@ -60,6 +60,11 @@ BYTE HardCharLock
 BYTE Iskra
 BYTE EndLockArray
 
+DarkbrandArray:
+BYTE HardCharLock
+BYTE Tiberius
+BYTE EndLockArray
+
 MuramasaArray:
 BYTE HardCharLock
 BYTE Carl

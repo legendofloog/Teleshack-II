@@ -270,8 +270,14 @@ Luzen Scroll[X]
 ## DarkbrandName
 Darkbrand[X]
 
-##DarkbrandDesc
+## DarkbrandDesc
 Can be used to buff res. Tiberius[LockIcon][X]
+
+## DaybreakName
+Daybreak[X]
+
+## DaybreakDesc
+[_V][_e][_r][_d][_i][_u][_m] [_m][_i][_g][_h][_t]. [_N][_o][_t] [_m][_e][_a][_n][_t] [_f][_o][_r] [_m][_o][_r][_t][_a][_l] [_h][_a][_n][_d][_s].[X]
 
 ## MuramasaName
 Muramasa[X]
@@ -517,4 +523,3 @@ Runespear[X]
 
 ## RunespearDesc
 [LockIcon]Tobie. Magic, drains HP into wielder.[X]
-

@@ -43,6 +43,9 @@
 
 #define CrimeHeartID 0xD9
 #define DrumbeatRuinID 0xDA
+#define Core 0xDB
+#define Sheep_Will_Sleep 0xDC
+
 
 // Vanilla
 #define TiesOfFriendship 0x7
