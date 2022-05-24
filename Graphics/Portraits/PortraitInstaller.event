@@ -63,6 +63,9 @@
 #define TakaiMug 0xEA
 #define JerryMug 0xEB
 #define LyreMug 0xEC
+#define MinkMug 0xED
+#define Tiberius 0xEE
+
 
 // NPCs
 #define EliasMug 0xB
@@ -982,3 +985,20 @@ LyreMugData:
 #incbin "Dmp/Lyre(devisio,BuskHusker)_palette.dmp"
 #incbin "Dmp/Lyre(devisio,BuskHusker)_minimug.dmp"
 setMugEntry(LyreMug, LyreMugData, 3, 5, 3, 3)
+
+ALIGN 16
+MinkMugData:
+#incbin "Dmp/Mink(Leche)_mug.dmp"
+#incbin "Dmp/Mink(Leche)_frames.dmp"
+#incbin "Dmp/Mink(Leche)_palette.dmp"
+#incbin "Dmp/Mink(Leche)_minimug.dmp"
+setMugEntry(MinkMug, MinkMugData, 3, 5, 3, 3)
+
+
+ALIGN 16
+TiberiusMugData:
+#incbin "Dmp/Tiberius(Leche)_mug.dmp"
+#incbin "Dmp/Tiberius(Leche)_frames.dmp"
+#incbin "Dmp/Tiberius(Leche)_palette.dmp"
+#incbin "Dmp/Tiberius(Leche)_minimug.dmp"
+setMugEntry(TiberiusMug, TiberiusMugData, 3, 5, 3, 3)
