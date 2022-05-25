@@ -179,7 +179,7 @@ OutdoorEnemy:
 
   
 EithaSpawn:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [7,21] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
   UNIT
 
 
