@@ -33,7 +33,7 @@ Seize(4,11)
 Door(10,11)
 Door(11,11)
 Door(14,11)
-Chest(KnightProof,13,12)
+Chest(SilverAxe,13,12)
 Chest(RedGem,15,12)
 Seize(6,15)
 Seize(6,16)
@@ -119,7 +119,7 @@ IndoorEnemy:
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [25,8] 0x0 0x0 0x0 0x1 [IronSword] BossAI 
 //turn 3
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
-  UNIT Selese Mage Cidor Level(12,Enemy,True) [16,10] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [13,9] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [IronAxe] StallOneTurnAI 
 //turn 4
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
