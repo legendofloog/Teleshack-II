@@ -137,4 +137,9 @@ BYTE HardCharLock
 BYTE Tobie
 BYTE EndLockArray
 
+LumenArray:
+BYTE HardCharLock
+BYTE Matthias
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

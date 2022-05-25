@@ -123,13 +123,13 @@ Brave Effect.[X]
 Spell Mirror[X]
 
 ## SpellMirrorDesc
-[_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+Mt increased by enemy Atk if magical.[X]
 
 ## AlairsGaleName
 Arai's Gale[X]
 
 ## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+Half the power, half the price. Brave.[X]
 
 ## SisterRingName
 Sister Ring[X]
@@ -523,3 +523,9 @@ Runespear[X]
 
 ## RunespearDesc
 [LockIcon]Tobie. Magic, drains HP into wielder.[X]
+
+## LumenName
+Lumen[X]
+
+## LumenDesc
+[LockIcon]Matthias. Can be used to illuminate.[X]

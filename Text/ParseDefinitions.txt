@@ -85,6 +85,7 @@
 [LoadAwa] = [LoadFace][0x1B][0x1]
 [LoadTrajan] = [LoadFace][0x17][0x1]
 [LoadCadenza] = [LoadFace][0x1c][0x1]
+[LoadFaolan] = [LoadFace][0x1E][0x1]
 [LoadIberis] = [LoadFace][0x20][0x1]
 [LoadBuldak] = [LoadFace][0x21][0x1]
 [LoadNora] = [LoadFace][0x22][0x1]
@@ -109,6 +110,7 @@
 [LoadNikolas] = [LoadFace][0xDB][0x1]
 [LoadSera] = [LoadFace][0xDE][0x1]
 [LoadShaw] = [LoadFace][0xE7][0x1]
+[LoadMatthias] = [LoadFace][0xF0][0x1]
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]

@@ -1016,5 +1016,8 @@ ORG SkillIcon(TelepathyID)
 ORG SkillIcon(BladeDanceID)
 #incbin "SkillIcons/Astra.dmp"
 
+ORG SkillIcon(PhaseLeapID)
+#incbin "SkillIcons/Celerity.dmp"
+
 ORG SkillIcons+0x8000
 

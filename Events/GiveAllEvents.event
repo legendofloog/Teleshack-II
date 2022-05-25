@@ -385,8 +385,19 @@ ALIGN 4
 JerryGiveAll:
 Text(JerryDeathQuoteText)
 SendAll(Jerry)
+NoFade
+ENDA
 
 ALIGN 4
 LyreGiveAll:
 Text(LyreDeathQuoteText)
 SendAll(Lyre)
+NoFade
+ENDA
+
+ALIGN 4
+MatthiasGiveAll:
+Text(MatthiasDeathQuoteText)
+SendAll(Matthias)
+NoFade
+ENDA

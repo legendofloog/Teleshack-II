@@ -174,8 +174,10 @@ General[Beat] I'm sorry[Beat][CloseEyes][CloseEyes][A][X]
 
 ## Ch10EliasDeathQuote
 [MidLeft][LoadElias]
-Impressive. I must fall back for now,[N]
-but next time, I will not lose again.[A][X]
+Impressive. I must[N]
+fall back for now,[AN]
+but next time,[N]
+I will not lose again.[A][X]
 
 ## Ch10MifanDeathQuote
 [MidLeft][LoadMifan]
@@ -322,8 +324,9 @@ Will they even remember my name[Beat]?[AN][CloseEyes][X]
 
 ## MureibDeathQuoteText
 [MidLeft][LoadMureib]
-Well struck[Beat] but your struggle is[N]
-pointless! I am inexorable, Decians![A][X]
+Well struck[Beat][N]
+But your struggle is pointless![AN]
+I am inexorable, Decians![A][X]
 
 ## KwameRealDeathQuoteText
 [MidRight][LoadKwame]
@@ -359,45 +362,45 @@ Ridiculous[Beat][A][CloseEyes][X]
 [MidRight][LoadKofi]
 The past will continue to[N]
 haunt me[Beat] The secrets[Beat][AN]
-never to be[Beat] understood[Beat][A][X]
+never to be[Beat] understood[Beat][A][CloseEyes][X]
 
 ## ApsisDeathQuoteText
 [MidRight][LoadApsis]
 Through sacrifice[Beat][N]
-All things will[Beat][CloseEyes][A][X]
+All things will[Beat][A]][CloseEyes][X]
 
 ## OjasviDeathQuoteText
 [MidRight][LoadApsis]
 Mother[Beat] Father[Beat][N]
-is this what became of you[Beat]?[CloseEyes][A][X]
+is this what became of you[Beat]?[A][CloseEyes][X]
 
 ## TaoDeathQuoteText
 [MidRight][LoadTao]
 I[Beat] I got hit? S-Sorry,[N]
 commander. I hope that[Beat][AN]
 this was enough to atone.[N]
-Mi, I'm on my way[Beat][CloseEyes][A][X]
+Mi, are you[Beat] proud?[A][CloseEyes][X]
 
 ## GrotoDeathQuoteText
 [MidRight][LoadGroto]
 You think Groto's dying?[N]
-Groto is dying[Beat][CloseEyes][A][X]
+Groto is dying[Beat][A][CloseEyes][X]
 
 ## DarcyDeathQuoteText
 [MidRight][LoadDarcy]
 Damn[Beat] It wasn't[N]
-spose t' go[Beat] like this[Beat][CloseEyes][AN][X]
+spose t' go[Beat] like this[Beat][AN][CloseEyes][X]
 
 ## ZharaDeathQuoteText
 [MidRight][LoadZhara]
 Lights fade[Beat][N]
 darkness arises[Beat][AN]
-and yet[Beat][A][X]
+and yet[Beat][A][CloseEyes][X]
 
 ## TakaiDeathQuoteText
 [MidRight][LoadTakai]
 Gah[Beat] I've been[Beat][N]
-beaten? I'm sorry, kids[Beat][CloseEyes][A][X]
+beaten? I'm sorry, kids[Beat][A][CloseEyes][X]
 
 ## JerryDeathQuoteText
 [MidRight][LoadJerry]
@@ -412,3 +415,8 @@ all ran off, eh[Beat]?[A][CloseEyes][X]
 glowing wings[Beat][AN]
 Loewe[Beat]? Cleo[Beat]? Are you[N]
 two there[Beat]? Save me[Beat][A][CloseEyes][X]
+
+## MatthiasDeathQuoteText
+[MidRight][LoadFaolan]
+May our future[N]
+be bathed in light[Beat][A][CloseEyes][X]

@@ -70,6 +70,7 @@ DeathQuote(Awa,AllChapters,0x0,0,AwaGiveAll)
 DeathQuote(Tobie,AllChapters,0x0,0,TobieGiveAll)
 DeathQuote(Cadenza,AllChapters,0x0,0,CadenzaGiveAll)
 DeathQuote(Faolan,AllChapters,0x0,0,FaolanGiveAll)
+DeathQuote(Matthias,AllChapters,0x0,0,MatthiasGiveAll)
 
 //ch 6 empty
 DeathQuote(Leina,AllChapters,0x0,0,LeinaGiveAll)

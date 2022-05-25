@@ -48,7 +48,6 @@
 #define Nikolas 0x2F
 #define Sera 0x30
 #define Shaw 0x31
-
 #define Apsis 0x32
 #define Ojasvi 0x33
 #define Darcy 0x34
@@ -57,6 +56,10 @@
 #define Zhara 0x37
 #define Volran 0x38
 #define Tara 0x39
+#define Jerry 0x3A
+#define Lyre 0x3B
+
+#define Matthias 0x3E
 #define Kofi 0x40
 
 // Chapter 1 Bosses
@@ -181,8 +184,6 @@
 #define C19Boss 0x56
 
 //Chapter 20 Stuff
-#define Jerry 0x3A
-#define Lyre 0x3B
 #define C20Enemy 0x93
 
 #define Breguet 0x46

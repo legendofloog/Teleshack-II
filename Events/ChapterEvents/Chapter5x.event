@@ -21,12 +21,38 @@ CharacterEventBothWays(14, TobieRecruit, Cleo, Tobie)
 CharacterEventBothWays(15, AwaRecruit, Cleo, Awa)
 CharacterEventBothWays(16, CadenzaRecruit, Cleo, Cadenza)
 CharacterEventBothWays(17, FaolanRecruit, Cleo, Faolan)
+CharacterEventBothWays(18, MatthiasRecruit, Cleo, Matthias)
 CharacterEventBothWays(10, IskraMiraTalk, Cleo, IskraCopy)
 CharacterEventBothWays(10, IskraMiraTalk, Cleo, MiraCopy)
 CharacterEventBothWays(11, VargaTalk, Cleo, VargaCopy)
 CharacterEventBothWays(12, KwameTalk, Cleo, Kwame)
 CharacterEventBothWays(0, TrajanTalk, Cleo, Trajan)
 END_MAIN
+
+MatthiasRecruit:
+CHECK_EVENTID 21
+BNE 98 s0 sC
+	ENUT 21
+	Text(MatthiasFirstTalkDialogue)
+LABEL 98
+Text(MatthiasPickDialogue)
+SVAL s1 0x1
+BEQ 99 s1 sC
+	Text(MatthiasRejectedDialogue)
+	ENUF 18
+	NoFade
+	ENDB
+LABEL 99
+Text(MatthiasAcceptedDialogue)
+CUSA Matthias
+SetFatigue(Matthias,0)
+MOVE 15 Matthias [14,6]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Matthias
+CALL CheckIfDoneSelecting
+NoFade
+ENDA
 
 MishRecruit:
 CHECK_EVENTID 7
@@ -142,18 +168,18 @@ ENDA
 FaolanRecruit:
 CHECK_EVENTID 20
 BNE 25 s0 sC
-	//Text(FaolanFirstTalkDialogue)
+	Text(FaolanFirstTalkDialogue)
 	ENUT 20
 LABEL 25
 Text(FaolanPickDialogue)
 SVAL s1 0x1
 BEQ 26 s1 sC
-	//Text(FaolanRejectedDialogue)
+	Text(FaolanRejectedDialogue)
 	ENUF 17
 	NoFade
 	ENDB
 LABEL 26
-//Text(FaolanAcceptedDialogue)
+Text(FaolanAcceptedDialogue)
 CUSA Faolan
 SetFatigue(Faolan,0)
 MOVE 15 Faolan [14,7]
@@ -305,6 +331,7 @@ UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x1 [MasterAxe,IronBl
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x1 [0x0]     NoAI
 UNIT Cadenza Bard Cleo Level(5,NPC,False) [13,6] 0x0 0x0 0x0 0x1 [Wind, BalladOfWar]     NoAI
 UNIT Faolan RookKnight_Dismounted Cleo Level(7,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary, LightRune]     NoAI
+UNIT Matthias Devotee_M Cleo Level(6, NPC, False) [0,3] 0x0 0x0 0x0 0x0 [Lumen,Heal,Vulnerary] NoAI
 UNIT
 
 IskraCopyGroup:

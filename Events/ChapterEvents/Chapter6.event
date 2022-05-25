@@ -138,7 +138,7 @@ UNIT
 
 ALIGN 4
 McCallumUnit:
-UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossHealAI
+UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossNoAttackAI
 UNIT
 
 ALIGN 4

@@ -63,6 +63,7 @@
 #define TakaiMug 0xEA
 #define JerryMug 0xEB
 #define LyreMug 0xEC
+#define MatthiasMug 0xF0
 
 // NPCs
 #define EliasMug 0xB
@@ -982,3 +983,11 @@ LyreMugData:
 #incbin "Dmp/Lyre(devisio,BuskHusker)_palette.dmp"
 #incbin "Dmp/Lyre(devisio,BuskHusker)_minimug.dmp"
 setMugEntry(LyreMug, LyreMugData, 3, 5, 3, 3)
+
+ALIGN 16
+MatthiasMugData:
+#incbin "Dmp/Matthias(Levin)_mug.dmp"
+#incbin "Dmp/Matthias(Levin)_frames.dmp"
+#incbin "Dmp/Matthias(Levin)_palette.dmp"
+#incbin "Dmp/Matthias(Levin)_minimug.dmp"
+setMugEntry(MatthiasMug, MatthiasMugData, 2, 5, 3, 3)

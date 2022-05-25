@@ -42,6 +42,7 @@
 #define ChargeID 62
 #define AcrobatID 63
 #define SmiteID 76
+#define BreathOfLifeID 82
 
 
 // keep it continous for debug purpose
