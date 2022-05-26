@@ -96,6 +96,11 @@ DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 DeathQuote(Milo,AllChapters,0x0,0,MiloGiveAll)
 DeathQuote(Ichwep,AllChapters,0x0,0,IchwepGiveAll)
 
+// ch 12
+DeathQuote(Mink,AllChapters,0x0,0,MinkGiveAll)
+DeathQuote(Tiberius,Chapter12,0x30,Ch12TiberiusDeathQuote)
+DeathQuote(Tiberius,AllChapters,0x0,0,TiberiusGiveAll)
+
 // ch 12x
 DeathQuote(Carl,AllChapters,0x0,0,CarlGiveAll)
 DeathQuote(Pelecaye,AllChapters,0x0,0,PelecayeGiveAll)
