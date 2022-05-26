@@ -209,14 +209,17 @@ that last drink.[Beat][CloseEyes][A][X]
 S-sister, I'm sorry.[A][X]
 
 ## MinkDeathQuote
+[MidRight][LoadMink]
 S-so soon? [AN]
 There was so much I wanted to do[Beat][CloseEyes][A][X]
 
 ## TiberiusDeathQuote
+[MidRight][LoadTiberius]
 A pawn I will remain no longer[Beat][CloseEyes][A][X]
 
 ## Ch12TiberiusDeathQuote
-I deserve this for my indolence[Beat][CloseEyes][A][X]
+[MidRight][LoadTiberius]
+A fitting reward for my indolence[Beat][CloseEyes][A][X]
 
 ## EithaDeathQuote
 [MidRight][LoadDragana]
