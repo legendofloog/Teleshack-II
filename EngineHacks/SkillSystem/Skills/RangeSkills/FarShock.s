@@ -1,6 +1,7 @@
 .thumb
 
-.equ ThunderWeapons, SkillTest+4
+.equ FarShockID, SkillTester+4
+.equ ThunderWeapons, FarshockID+4
 
 .macro _blh to, reg=r3
 	ldr \reg, =\to
@@ -23,12 +24,23 @@ str 	r2, [sp]
 mov 	r0, r1
 _blh GetWeaponType
 cmp 	r0, #BonusWeaponType1	@check if item is matching weapon type
-beq AddRange
+beq ThunderCheck
 b End 	@ Not Matching weapon type
+mov	r7, #0x0
+ThunderCheck:
+ldr 	r6, =ThunderWeapons
+ldrb	r6 [r6,r7]
+cmp	r6, r1
+beq	AddRange
+cmp 	r6, #0xFF
+beq	End 	@not a thunder weapon
+add	r7, #0x1
+b	ThunderCheck
 AddRange:
 mov 	r2, sp
 ldrh 	r0, [r2]
 add 	r0, r0, #MaxRangeBonus
+
 
 @prevent the maximum range from going over 15
 cmp 	r0, #0xF
