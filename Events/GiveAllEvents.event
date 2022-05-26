@@ -224,6 +224,22 @@ SendAll(Ichwep)
 NoFade
 ENDA
 
+//ch12
+
+ALIGN 4
+MinkGiveAll:
+Text(MinkDeathQuote)
+SendAll(Mink)
+NoFade
+ENDA
+
+ALIGN 4
+TiberiusGiveAll:
+Text(TiberiusDeathQuote)
+SendAll(Tiberius)
+NoFade
+ENDA
+
 // ch12x
 
 ALIGN 4
