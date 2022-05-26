@@ -13,6 +13,7 @@ RangeSkillsCheck:
 	POIN SkillTester2
 #endif // RANGE_SKILLS_CHECK_USES_SKILLTESTER2
 POIN RangeSkillList
+WORD ThunderWeapons
 
 ALIGN 4
 SharpshooterBonus:
