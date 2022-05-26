@@ -49,6 +49,7 @@ AFEV 13 TopLeftPrisonOpened 9
 AFEV 14 TopMiddlePrisonDoorOpened 10
 AFEV 15 TopRightPrisonDoorOpened 11
 AFEV 16 OutsidePrisonDoorOpened 12
+AFEV 29 TiberiusCaptureCheck 30
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
@@ -211,8 +212,12 @@ NoFade
 ENDA
 
 EndingScene:
-FADI 15
+CHECK_EVENTID 31
+BEQ 2 sC s0
+CUSA Tiberius
+LABEL 2
 
+FADI 15
 InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
 NoFade
@@ -265,15 +270,21 @@ SVAL sB Coords(13,23)
 REMOVEUNIT(-2)
 NoFade
 ENDA
- 
+
+TiberiusCaptureCheck:
+CHECK_EXISTS Tiberius
+BEQ 5 s0 sC
+ENUT 31
+LABEL 5
+NoFade
+ENDA
+
 DeadlordSpawn:
 RemoveTrapAtCoords(2,11)
 RemoveTrapAtCoords(3,11)
 RemoveTrapAtCoords(4,11)
-
 RemoveTrapAtCoords(6,15)
 RemoveTrapAtCoords(6,16)
-
 RemoveTrapAtCoords(2,20)
 RemoveTrapAtCoords(3,20)
 RemoveTrapAtCoords(4,20)
