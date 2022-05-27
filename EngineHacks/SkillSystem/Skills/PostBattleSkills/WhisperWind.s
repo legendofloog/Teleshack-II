@@ -51,16 +51,18 @@ cmp	r0, #0x00
 bne	End
 
 @check for using wind weapons
-ldr  r8, [r0,#0x48]
-mov	r7, #0x0
+ldrh r0, [ r4, #0x48 ]
+blh GetItemIndex
+@ r0 now has the equipped item ID.
+mov	r2, #0x0
 WindCheck:
-ldr 	r6, =WindWeapons
-ldrb	r6, [r6,r7]
-cmp	r6, r8
+ldr 	r1, =WindWeapons
+ldrb	r1, [r1,r2]
+cmp	r1, r0
 beq	IsWind
-cmp 	r6, #0xFF
+cmp 	r1, #0xFF
 beq	End 	@not a wind weapon
-add	r7, #0x1
+add	r2, #0x1
 b	WindCheck
 
 IsWind:
