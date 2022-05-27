@@ -110,7 +110,7 @@
 [LoadSera] = [LoadFace][0xDE][0x1]
 [LoadShaw] = [LoadFace][0xE7][0x1]
 [LoadMink] = [LoadFace][0xED][0x1]
-[LoadTiberius] = [LoadFace][0xEE]
+[LoadTiberius] = [LoadFace][0xEE][0x1]
 
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]
