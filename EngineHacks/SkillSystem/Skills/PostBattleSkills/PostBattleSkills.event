@@ -148,7 +148,7 @@ WORD ACTION_SWARP
 
 ALIGN 4
 WhisperWind:
-#incbin "WhisperWind.dmp
+#incbin "WhisperWind.dmp"
 POIN SkillTester
 WORD WhisperWindID
 POIN WhisperWindEvent
