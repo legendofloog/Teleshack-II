@@ -1,3 +1,4 @@
 ALIGN 4
 WindWeapons:
-BYTE Wind Tornado Blizzard AlairsGale WindSword WindBow 0
+BYTE Wind Tornado Blizzard AlairsGale WindSword WindBow GaleBow 0
+
