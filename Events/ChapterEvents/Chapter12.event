@@ -13,7 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(23,DeadlordSpawn,9)
+TurnEventPlayer(23,DeadlordSpawn,10)
 END_MAIN
 
 
