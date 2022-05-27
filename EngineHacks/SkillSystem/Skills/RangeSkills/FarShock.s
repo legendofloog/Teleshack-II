@@ -29,7 +29,7 @@ b End 	@ Not Matching weapon type
 mov	r7, #0x0
 ThunderCheck:
 ldr 	r6, =ThunderWeapons
-ldrb	r6 [r6,r7]
+ldrb	r6, [r6,r7]
 cmp	r6, r1
 beq	AddRange
 cmp 	r6, #0xFF
