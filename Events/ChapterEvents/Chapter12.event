@@ -214,9 +214,9 @@ ENDA
 EndingScene:
 CHECK_EVENTID 31
 BEQ 2 sC s0
-CUSA Tiberius
-LABEL 2
 
+LABEL 2
+CUSA Tiberius
 FADI 15
 InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
