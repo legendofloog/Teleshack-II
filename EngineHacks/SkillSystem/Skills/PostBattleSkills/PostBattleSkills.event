@@ -151,7 +151,7 @@ WhisperWind:
 #incbin "WhisperWind.dmp"
 POIN SkillTester
 WORD WhisperWindID
-POIN WhisperWindEvent
+POIN WindWeapons
 #include "WhisperWindEvent.event"
 
 PUSH //some changes to vanilla code to make everything work
