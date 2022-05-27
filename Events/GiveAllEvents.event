@@ -53,12 +53,14 @@ ENDA
 
 ALIGN 4
 AlexGiveAll:
+Text(AlexDeathQuote)
 SendAll(Alex)
 NoFade
 ENDA
 
 ALIGN 4
 AxelGiveAll:
+Text(AxelDeathQuote)
 SendAll(Axel)
 NoFade
 ENDA

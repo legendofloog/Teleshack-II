@@ -5,7 +5,7 @@
 // Bosses
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
-DeathQuote(Emory_Ch3,Chapter3,2,0x0)
+DeathQuote(Emory_Ch3,Chapter3,2,EmoryDeathQuote)
 DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
 DeathQuote(Hilmar,Chapter4,2,HilmarDeathQ)
 DeathQuote(Riggan,Chapter5,2,RigganDeathQuoteText)

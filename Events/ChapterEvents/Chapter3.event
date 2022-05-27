@@ -21,6 +21,8 @@ TurnEventPlayer(0, EnemyReinforcementsEvent_E, 12)
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEventBothWays(12, DraganaCleoTalkCh3, Cleo, Dragana)
+CharacterEventBothWays(14, DraganaLoeweTalkCh3, Loewe, Dragana)
 END_MAIN
 
 LocationBasedEvents:
@@ -104,7 +106,7 @@ ENDTRAP
 ALIGN 4
 
 DraganaUnit:
-UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SteelBow,Vulnerary] NoAI
+UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SilverBow,SteelBow,Vulnerary] NoAI
 UNIT
 
 
@@ -205,8 +207,18 @@ SpawnReinforcements(EnemyReinforcements_E)
 NoFade
 ENDA
 
+DraganaCleoTalkCh3:
+Text(DraganaCleoTalkCh3Text)
+NoFade
+ENDA
+
+DraganaLoeweTalkCh3:
+Text(DraganaLoeweTalkCh3Text)
+NoFade
+ENDA
+
 AlexAxelDoor:
-TILECHANGE 8
+TILECHANGE 9
 NoFade
 ENDA
 
