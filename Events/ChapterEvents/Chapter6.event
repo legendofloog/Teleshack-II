@@ -434,6 +434,7 @@ SpawnEnemies:
 		Text(Ch6BarodCongratulations4)
 		CHECK_ALIVE Leina
 		BEQ 865 s0 sC
+			CameraCursor(Leina)
 			FlashCursor(Leina,60)
 			Text(Ch6BarodCongratulations5)
 			GiveItem(SisterRing,Leina)

@@ -293,6 +293,7 @@ Text(Ch12xBeginningScene4Part2SvetAlive)
 Text(Ch12xBeginningScene4Part3BuldakAlive)
 ENUT 0x8B //loewe eyepatch flag
 Text(Ch12xBeginningScene5)
+HIDEUNIT Cleo
 EraseBackground
 LOAD1 1 GreenUnits
 LOAD1 2 LoeweInterludeGroup
@@ -301,14 +302,21 @@ NoFade
 ENDA
 
 EndingScene:
+SHOWUNIT Cleo
 SetBackground(CastleHallway)
 Text(Ch12xTrajanLoeweEndingScene1)
 Text(Ch12xTrajanLoeweEndingScene2)
 Text(Ch12xRadnitzEndingScene1)
 Text(Ch12xRadnitzEndingScene2)
 Text(Ch12xRadnitzEndingScene3)
-Text(Ch12xBeginningScene4Part2SvetAlive)
-Text(Ch12xBeginningScene4Part3BuldakAlive)
+Text(Ch12xRadnitzEndingScene4)
+Text(Ch12xRadnitzEndingScene5)
+Text(Ch12xRadnitzEndingScene6)
+Text(Ch12xRadnitzEndingScene8BuldakAlive)
+Text(Ch12xRadnitzEndingScene9)
+Text(Ch12xRadnitzEndingScene10)
+Text(Ch12xRadnitzEndingScene11)
+Text(Ch12xRadnitzEndingScene12)
 MNC2 Chapter13
 NoFade
 ENDA

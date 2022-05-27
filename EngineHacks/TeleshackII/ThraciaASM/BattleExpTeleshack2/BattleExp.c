@@ -15,6 +15,7 @@ int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit);
 void ApplyUnitPromotion(struct Unit* unit, u8 classId);
 void ApplyUnitDefaultPromotion(struct Unit* unit);
 bool CheckIfDismountLocationLegal(Unit* unit);
+void BWL_AddExpGained(int charID, int expGain);
 #define USABILITY_TRUE 1
 /*
 SET_FUNC BattleApplyExpGains, 0x802B92D
@@ -199,9 +200,10 @@ int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit) {
         if (!(battleUnit->weaponAttributes & IA_REQUIRES_WEXP)){
 			return -1;
 		}
+            
 	}
     
-	result = battleUnit->unit.ranks[battleUnit->weaponType];
+	result = battleUnit->unit.ranks[GetItemData(battleUnit->weapon.number)->weaponType];
 	if (battleUnit->unit.fatigue <= battleUnit->unit.maxHP){ // checks if fatigue is not > maxHP; if so, gives wexp
 		result += GetItemAwardedExp(battleUnit->weapon);
 	}
@@ -348,4 +350,25 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 
     if (unit->curHP > GetUnitMaxHp(unit))
         unit->curHP = GetUnitMaxHp(unit);
+}
+
+void UpdateUnitDuringBattle(struct Unit* unit, struct BattleUnit* bu) {
+    int wexp;
+
+    unit->curHP = bu->unit.curHP;
+
+    wexp = GetBattleUnitUpdatedWeaponExp(bu);
+
+    if (wexp > 0)
+        unit->ranks[GetItemData(bu->weapon.number)->weaponType] = wexp;
+}
+
+s8 HasBattleUnitGainedWeaponLevel(struct BattleUnit* bu) {
+    int oldWexp = bu->unit.ranks[GetItemData(bu->weapon.number)->weaponType];
+    int newWexp = GetBattleUnitUpdatedWeaponExp(bu);
+
+    if (newWexp < 0)
+        return FALSE;
+
+    return GetWeaponLevelFromExp(oldWexp) != GetWeaponLevelFromExp(newWexp);
 }
