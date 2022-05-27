@@ -50,9 +50,24 @@ and	r0, r1
 cmp	r0, #0x00
 bne	End
 
+@check for using wind weapons
+ldr  r8, [r0,#0x48]
+mov	r7, #0x0
+WindCheck:
+ldr 	r6, =WindWeapons
+ldrb	r6, [r6,r7]
+cmp	r6, r8
+beq	IsWind
+cmp 	r6, #0xFF
+beq	End 	@not a wind weapon
+add	r7, #0x1
+b	WindCheck
+
+IsWind:
+
 @check for skill
 mov	r0, r4
-ldr	r1, CantoPlusID
+ldr	r1, WhisperWindID
 ldr	r3, SkillTester
 mov	lr, r3
 .short	0xf800
@@ -87,4 +102,4 @@ bx	r0
 .align
 SkillTester:
 @POIN SkillTester
-@WORD CantoPlusID
+@WORD WhisperWindID
