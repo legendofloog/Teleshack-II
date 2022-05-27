@@ -156,7 +156,7 @@ OutdoorEnemy:
 //turn 3
   UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,18] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,18] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
-  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [17,17] 0x0 0x0 0x0 0x1 [Greatlance] TwoActionAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [19,15] 0x0 0x0 0x0 0x1 [Greatlance] StallOneTurnAI
 //turn 4
   UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [Hurlbat,IronAxe] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [29,19] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
