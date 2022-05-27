@@ -3,7 +3,8 @@
   mov lr, \reg
   .short 0xf800
 .endm
-.equ CantoPlusID, SkillTester+4
+.equ WhisperWindID, SkillTester+4
+.equ WindWeapons, WhisperWindID+4
 .thumb
 push	{lr}
 @check if dead
