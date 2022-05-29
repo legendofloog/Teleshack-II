@@ -185,6 +185,20 @@
 #define Lyre 0x3B
 #define C20Enemy 0x93
 
+//Chapter 21 stuff
+#define Ngondala 0x3C
+#define CatrinReal 0x3D
+#define Taraji 0xAF
+#define Xlea 0xB0
+#define Vinny 0xB1
+#define Cephalid 0xB2
+#define Temur 0xB3
+#define Sultai 0xB4
+#define Valere 0xB5
+#define Dart 0xB6
+#define DeathRattle 0xB7
+#define Chouwouj 0xB8
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49

@@ -32,7 +32,9 @@
 #define Horseslayer 0x1B
 #define Javelin 0x1C
 #define LongLance 0x1D
+#define Longlance 0x1D
 #define Greatlance 0x1E
+#define GreatLance 0x1E
 #define IronAxe 0x1F
 #define SteelAxe 0x20
 #define SilverAxe 0x21
@@ -47,7 +49,9 @@
 #define MasterAxe 0x29
 #define MasterLance 0x2A
 #define Shortbow 0x2B
+#define ShortBow 0x2B
 #define Greatbow 0x2C
+#define GreatBow 0x2C
 #define IronBow 0x2D
 #define SteelBow 0x2E
 #define SilverBow 0x2F
@@ -56,6 +60,7 @@
 #define BraveBow 0x32
 #define Bolganone 0x33
 #define Longbow 0x34
+#define LongBow 0x34
 #define LongArch 0x35
 #define IronArch 0x36
 #define KillerArch 0x37
@@ -218,3 +223,16 @@
 #define Stormbrand 0x91
 #define ArgymosCrest 0x98
 
+#define FangAndClaw 0xE6
+#define Starcutter 0xE7
+#define FullHelm 0xE8
+#define HoplonGuard 0xE8
+#define IronRune 0xE8
+#define Swordreaver 0xE9
+#define Swordslayer 0xE9
+#define Shieldbearer 0xEA
+#define Malkhut 0xEB
+#define Malkuth 0xEB
+#define Sagittae 0xEC
+#define Kukri 0xED
+#define SlamBrace 0xEE

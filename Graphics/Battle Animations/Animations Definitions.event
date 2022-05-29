@@ -461,6 +461,7 @@ EndAnim
 
 ALIGN 4
 BallisticianAnims:
+SpecialAnim(BallistaAnim,SlimArch)
 SpecialAnim(BallistaAnim,LongArch)
 SpecialAnim(BallistaAnim,IronArch)
 SpecialAnim(BallistaAnim,KillerArch)

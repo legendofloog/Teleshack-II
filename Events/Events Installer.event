@@ -53,3 +53,9 @@ PrepShop2:
 SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal SlimArch
 BYTE 0x0 0x0
 ALIGN 4
+
+ALIGN 4
+PrepShop3:
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal SlimArch KnightProof
+BYTE 0x0 0x0
+ALIGN 4

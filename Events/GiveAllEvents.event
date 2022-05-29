@@ -390,3 +390,13 @@ ALIGN 4
 LyreGiveAll:
 Text(LyreDeathQuoteText)
 SendAll(Lyre)
+
+ALIGN 4
+NgondalaGiveAll:
+Text(NgondalaDeathQuoteText)
+SendAll(Ngondala)
+
+ALIGN 4
+CatrinRealGiveAll:
+Text(CatrinRealDeathQuoteText)
+SendAll(CatrinReal)

@@ -48,6 +48,13 @@ SetUnitConGrowth(Zhara,10)
 SetUnitConGrowth(Takai,25)
 SetUnitConGrowth(Jerry,4)
 SetUnitConGrowth(Lyre,7)
+SetUnitConGrowth(Augur,1)
+SetUnitConGrowth(Nahiza,1)
+SetUnitConGrowth(Ngondala,3)
+SetUnitConGrowth(CatrinReal,10)
+
+
+
 
 // Mov Growth Table
 SetUnitMovGrowth(Iskra,2)
@@ -96,5 +103,9 @@ SetUnitMovGrowth(Tao,3)
 SetUnitMovGrowth(Kofi,1)
 SetUnitMovGrowth(Zhara,1)
 SetUnitMovGrowth(Takai,2)
-SetUnitConGrowth(Jerry,1)
-SetUnitConGrowth(Lyre,2)
+SetUnitMovGrowth(Jerry,1)
+SetUnitMovGrowth(Lyre,2)
+SetUnitMovGrowth(Augur,5)
+SetUnitMovGrowth(Nahiza,10)
+SetUnitMovGrowth(Ngondala,1)
+SetUnitMovGrowth(CatrinReal,4)

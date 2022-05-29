@@ -268,8 +268,8 @@ UNIT
 ReinforcementUnits:
 UNIT Cythes LanceArmor 0x0 Level(10,Enemy,True) [24,3] 0x0 0x0 0x0 0x0 [Javelin] PursueWithoutHeedAI
 UNIT Cythes SwordArmor 0x0 Level(10,Enemy,True) [24,5] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
-UNIT Cythes AxeSoldier 0x0 Level(1,Enemy,True) [24,16] 0x0 0x0 0x0 0x0 [HandAxe] PursueWithoutHeedAI
-UNIT Cythes Freelancer 0x0 Level(1,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
+UNIT Cythes AxeSoldier 0x0 Level(10,Enemy,True) [24,16] 0x0 0x0 0x0 0x0 [HandAxe] PursueWithoutHeedAI
+UNIT Cythes Freelancer 0x0 Level(10,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT
 
 

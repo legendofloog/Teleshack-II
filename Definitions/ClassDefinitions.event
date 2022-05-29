@@ -24,6 +24,7 @@
 #define Swordmaster_F 0x16
 #define Thief_F 0x17
 #define Ballistician 0x18
+#define Ballista 0x18
 #define Archer 0x19
 #define Archer_F 0x1A
 #define Sniper 0x1B
@@ -33,9 +34,12 @@
 #define Dragonlord 0x1F
 #define Seraphknight 0x20
 #define PegasusRider 0x21
+#define PegasusKnight 0x21
 #define Falcoknight 0x22
 #define DragonRider 0x23
+#define WyvernRider 0x23
 #define Dracoknight 0x24
+#define WyvernLord 0x24
 #define Mage 0x25
 #define Mage_F 0x26
 #define Sage 0x27
@@ -97,6 +101,7 @@
 #define GhostFighter 0x51
 #define SwordKnight_Dismounted 0x52
 #define LongBallista 0x53
+#define LongBallistician 0x53
 #define LanceKnight_Dismounted 0x54
 #define AxeKnight_Dismounted 0x55
 #define BowKnight_Dismounted 0x56

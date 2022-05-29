@@ -28,6 +28,7 @@ ItemEffectivenessPtr(KillerArch, FlierEffectiveness)
 ItemEffectivenessPtr(Sink, MageEffectiveness)
 ItemEffectivenessPtr(Poincare, PoincareEffectiveness)
 ItemEffectivenessPtr(Lamfada, SwordslayerEffectiveness)
+ItemEffectivenessPtr(Swordslayer, SwordslayerEffectiveness)
 
 //Protector item (macro still works, even if it's wrongly named)
 

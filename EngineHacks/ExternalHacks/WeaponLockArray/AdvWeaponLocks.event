@@ -48,6 +48,7 @@ AxleArray:
 BYTE HardCharLock
 BYTE Alex
 BYTE Axel
+BYTE Xlea
 BYTE EndLockArray
 
 StingerArray:
@@ -130,6 +131,17 @@ BYTE EndLockArray
 RunespearArray:
 BYTE HardCharLock
 BYTE Tobie
+BYTE EndLockArray
+
+TarajiArray:
+BYTE HardCharLock
+BYTE Taraji
+BYTE EndLockArray
+
+CatrinArray:
+BYTE HardCharLock
+BYTE Catrin
+BYTE CatrinReal
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

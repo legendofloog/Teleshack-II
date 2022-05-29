@@ -60,6 +60,15 @@
 #define TalkConvo(id) "MUSI; Text(id); MUNO; MURE 2; NoFade"
 #define TextCont(id,music) "TEXTSTART; TEXTSHOW id; TEXTEND; MUSC music; TEXTCONT; TEXTEND; REMA"
 
+#define FadeToBlack "FADI 16"
+#define FadeBackFromBlack "FADU 16"
+#define SoundEffect(music) "SOUN music"
+#define SFX(music) "SOUN music"
+
+// RW here. i stole these from pikmin1211 on feucord from a really old post, so they may be bad
+#define LearnSkill(Unit,Skill) "SVAL 0x1 Skill; SVAL 0x2 Unit; ASMC (ASMC_HasSkill|1); BNE 0xED6B 0xC 0x0; ASMC (ASMC_LearnNewSkill|1); LABEL 0xED6B"
+#define ForgetSkill(Unit,Skill) "SVAL 0x1 Skill; SVAL 0x2 Unit; ASMC (ASMC_HasSkill|1); BEQ 0xED6C 0xC 0x0; ASMC (ASMC_ForgetSkill|1); LABEL 0xED6C"
+
 #define IBeq(i, label) "SVAL 2 i; BEQ label 0xC 2;"
 #define IBne(i, label) "SVAL 2 i; BNE label 0xC 2;"
 #define IBgt(i, label) "SVAL 2 i; BGT label 0xC 2;"

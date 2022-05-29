@@ -36,6 +36,11 @@ DeathQuote(Mureib2,Chapter17,0,Mureib2DeathQuoteText)
 DeathQuote(Barod2,Chapter18,2,BarodDeathQuoteText)
 DeathQuote(Shafaqat,Chapter18,7,ShafaqatDeathQuoteText)
 DeathQuote(Riggan,Chapter18,0,RigganDeathQuoteText)
+//ch21
+DeathQuote(Vinny,Chapter21,0,VinnyDeathQuoteText)
+DeathQuote(Cephalid,Chapter21,0x0E,CephalidDeathQuoteText)
+DeathQuote(Xlea,Chapter21,0,XleaDeathQuoteText)
+DeathQuote(Taraji,Chapter21,0x02,TarajiDeathQuoteText)
 
 
 //player units
@@ -139,3 +144,7 @@ DeathQuote(0xFFFF,0,0,0)
 // ch20
 DeathQuote(Jerry,AllChapters,0x0,0x0,JerryGiveAll)
 DeathQuote(Lyre,AllChapters,0x0,0x0,LyreGiveAll)
+
+// ch21
+DeathQuote(Ngondala,AllChapters,0x0,0x0,NgondalaGiveAll)
+DeathQuote(CatrinReal,AllChapters,0x0,0x0,CatrinRealGiveAll)

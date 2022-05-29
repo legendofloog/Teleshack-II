@@ -4,6 +4,16 @@
 //gale bow by zarg
 // slim bow is by zaneeeeeeee avernathy
 // devil dagger from archer?
+
+// fang and claw from xvi
+// timecutter from gabrielknight
+// full helm from final fantasy tactics
+// slam brace from tactics ogre
+// swordslayer from gabrielknight
+// shieldbearer from xvi
+// malkhut, kukri from beansy
+// sagittae from lordglenn
+
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 /*
 ALIGN 4
@@ -112,5 +122,15 @@ ItemIconSlot(0x79,"Png/FealtyBow.png")
 ItemIconSlot(0xAD,"Png/MysticLance.png")
 ItemIconSlot(0xAE,"Png/Luna.png")
 ItemIconSlot(0xB0,"Png/Runespear.png")
+ItemIconSlot(0x7A,"Png/FangAndClaw.png")
+ItemIconSlot(0x7B,"Png/Starcutter.png")
+ItemIconSlot(0x7C,"Png/FullHelm.png")
+ItemIconSlot(0x7D,"Png/Swordslayer.png")
+ItemIconSlot(0x7E,"Png/Shieldbearer.png")
+ItemIconSlot(0x7F,"Png/Malkhut.png")
+ItemIconSlot(0x80,"Png/Sagittae.png")
+ItemIconSlot(0x81,"Png/Kukri.png")
+ItemIconSlot(0x82,"Png/SlamBrace.png")
+// I *think* slots 83 is still free for future stuff, as well as other scattered ones and a couple at the end. Use this knowledge wisely.
 POP
 
