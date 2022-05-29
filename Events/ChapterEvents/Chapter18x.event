@@ -32,7 +32,9 @@ BNE 1 s0 sC
 	ENUT 7
 	Text(Ch18xApsisFirstTalkDialogue)
 LABEL 1
+PreventSkipping
 Text(Ch18xApsisPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 2 s1 sC
 	Text(Ch18ApsisRejectedDialogue)
@@ -58,7 +60,9 @@ BNE 3 s0 sC
 	ENUT 8
 	Text(Ch18xOjasviFirstTalkDialogue)
 LABEL 3
+PreventSkipping
 Text(Ch18xOjasviPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 4 s1 sC
 	Text(Ch18OjasviRejectedDialogue)
@@ -83,7 +87,9 @@ BNE 5 s0 sC
 	ENUT 9
 	Text(Ch18xDarcyFirstTalkDialogue)
 LABEL 5
+PreventSkipping
 Text(Ch18xDarcyPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 6 s1 sC
 	Text(Ch18xDarcyRejectedDialogue)
@@ -109,7 +115,9 @@ BNE 7 s0 sC
 	ENUT 10
 	Text(Ch18xGrotoFirstTalkDialogue)
 LABEL 7
+PreventSkipping
 Text(Ch18xGrotoPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 8 s1 sC
 	Text(Ch18xGrotoRejectedDialogue)
@@ -135,7 +143,9 @@ BNE 9 s0 sC
 	Text(Ch18xTaoFirstTalkDialogue)
 	ENUT 11
 LABEL 9
+PreventSkipping
 Text(Ch18xTaoPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 10 s1 sC
 	Text(Ch18xTaoRejectedDialogue)
@@ -160,7 +170,9 @@ BNE 14 s0 sC
 	Text(Ch18xZharaFirstTalkDialogue)
 	ENUT 18
 LABEL 14
+PreventSkipping
 Text(Ch18xZharaPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 15 s1 sC
 	Text(Ch18xZharaRejectedDialogue)
@@ -203,7 +215,9 @@ BEQ 12 s1 sC
 	GOTO 30
 LABEL 12
 Text(Ch18xTrajanConfirmation1)
+PreventSkipping
 Text(Ch18xTrajanConfirmation2)
+AllowSkipping
 SVAL s1 0x1
 BEQ 13 s1 sC
 	Text(Ch18xTrajanRejection)

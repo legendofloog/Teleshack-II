@@ -40,7 +40,9 @@ BNE 1 s0 sC
 	LABEL 42
 	Text(EllereyFirstTalkDialogueArmorAlive)
 LABEL 1
+PreventSkipping
 Text(EllereyPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 2 s1 sC
 	Text(EllereyRejectedDialogue)
@@ -65,7 +67,9 @@ BNE 14 s0 sC
 	ENUT 18
 	Text(TakaiFirstTalkDialogue)
 LABEL 14
+PreventSkipping
 Text(TakaiPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 15 s1 sC
 	Text(TakaiRejectedDialogue)
@@ -90,7 +94,9 @@ BNE 3 s0 sC
 	ENUT 8
 	Text(MantouFirstTalkDialogue)
 LABEL 3
+PreventSkipping
 Text(MantouPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 4 s1 sC
 	Text(MantouRejectedDialogue)
@@ -115,7 +121,9 @@ BNE 5 s0 sC
 	ENUT 9
 	Text(TippanyFirstTalkDialogue)
 LABEL 5
+PreventSkipping
 Text(TippanyPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 6 s1 sC
 	Text(TippanyRejectedDialogue)
@@ -141,7 +149,9 @@ BNE 7 s0 sC
 	ENUT 10
 	Text(PelecayeFirstTalkDialogue)
 LABEL 7
+PreventSkipping
 Text(PelecayePickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 8 s1 sC
 	Text(PelecayeRejectedDialogue)
@@ -167,7 +177,9 @@ BNE 9 s0 sC
 	Text(CarlFirstTalkDialogue)
 	ENUT 11
 LABEL 9
+PreventSkipping
 Text(CarlPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 10 s1 sC
 	Text(CarlRejectedDialogue)
@@ -210,7 +222,9 @@ BEQ 12 s1 sC
 	GOTO 30
 LABEL 12
 Text(Ch12xTrajanConfirmation1)
+PreventSkipping
 Text(Ch12xTrajanConfirmation2)
+AllowSkipping
 SVAL s1 0x1
 BEQ 13 s1 sC
 	Text(Ch12xTrajanRejection)

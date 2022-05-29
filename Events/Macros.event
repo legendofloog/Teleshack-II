@@ -1,3 +1,6 @@
+#define PreventSkipping "EVBIT_MODIFY 1"
+#define AllowSkipping "EVBIT_MODIFY 0"
+
 #define EraseBackground "CALL $9EE2C4"
 #define ShowMap "CALL 0x8592140"
 #define CGText(textID) "_0x1A22; TEXTSHOW textID; TEXTEND; REMA"

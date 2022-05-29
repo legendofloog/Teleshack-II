@@ -35,7 +35,9 @@ BNE 98 s0 sC
 	ENUT 21
 	Text(MatthiasFirstTalkDialogue)
 LABEL 98
+PreventSkipping
 Text(MatthiasPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 99 s1 sC
 	Text(MatthiasRejectedDialogue)
@@ -65,7 +67,9 @@ BNE 4 s0 sC
 	LABEL 5
 		Text(MishFirstTalkDialogueMiraDead)
 LABEL 4
+PreventSkipping
 Text(MishPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 6 s1 sC
 	Text(MishRejectedDialogue)
@@ -94,7 +98,9 @@ BNE 8 s0 sC
 	ENUT 8
 	Text(TobieFirstTalkDialogue)
 LABEL 8
+PreventSkipping
 Text(TobiePickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 9 s1 sC
 	Text(TobieRejectedDialogue)
@@ -121,7 +127,9 @@ BNE 10 s0 sC
 	ENUT 9
 	Text(AwaFirstTalkDialogue)
 LABEL 10
+PreventSkipping
 Text(AwaPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 11 s1 sC
 	Text(AwaRejectedDialogue)
@@ -146,7 +154,9 @@ BNE 18 s0 sC
 	ENUT 19
 	Text(CadenzaFirstTalkDialogue)
 LABEL 18
+PreventSkipping
 Text(CadenzaPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 19 s1 sC
 	Text(CadenzaRejectedDialogue)
@@ -171,7 +181,9 @@ BNE 25 s0 sC
 	Text(FaolanFirstTalkDialogue)
 	ENUT 20
 LABEL 25
+PreventSkipping
 Text(FaolanPickDialogue)
+AllowSkipping
 SVAL s1 0x1
 BEQ 26 s1 sC
 	Text(FaolanRejectedDialogue)
@@ -269,7 +281,9 @@ BEQ 7 s1 sC
 	ENDB
 LABEL 7
 Text(Ch5xTrajanConfirmation1)
+PreventSkipping
 Text(Ch5xTrajanConfirmation2)
+AllowSkipping
 SVAL s1 0x1
 BEQ 12 s1 sC
 	Text(Ch5xTrajanRejection)
