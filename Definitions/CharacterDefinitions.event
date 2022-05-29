@@ -58,15 +58,16 @@
 #define Tara 0x39
 #define Jerry 0x3A
 #define Lyre 0x3B
-
+#define Ngondala 0x3C
+#define CatrinReal 0x3D
 #define Matthias 0x3E
+#define KwameReal 0x3F
 #define Kofi 0x40
 
 // Chapter 1 Bosses
-#define Boro_Ch1 0x41
-#define Raschwitz_Ch1 0x42
+#define Raschwitz_Ch1 0x55
 // Chapter 2 Boss
-#define Tyr_Ch2 0x43
+#define Tyr_Ch2 0x56
 // Chapter 2 generic guy for eventing battle purposes 
 #define Ch2_Selese_Guy 0x73
 // Chapter 3 Boss
@@ -74,7 +75,7 @@
 // Chapter 4 Boss
 #define Hilmar 0x69
 // Chapter 5 Boss
-#define Riggan 0x44
+#define Riggan 0x57
 // Chapter 7 Boss
 #define Yor 0x83
 #define Radnitz 0x84
@@ -86,10 +87,10 @@
 #define Hege 0x96
 #define Francis 0x97
 // Chapter 9 Boss
-#define Wrathgar 0x47
+#define Wrathgar 0x59
 
 // Chapter 10 stuff
-#define Cidor 0x48
+#define Cidor 0x5A
 #define Johanna 0x49
 #define Elias 0x4a
 #define SeleseProvoke 0x98
@@ -137,7 +138,7 @@
 #define Freyse 0x88
 
 //Chapter 11 stuff
-#define Aurora 0x45
+#define Aurora 0x58
 
 //Chapter 12 stuff
 #define Eitha 0x4B
@@ -164,11 +165,11 @@
 #define Hamdi 0x4C
 #define Colossus 0x4D
 #define Boro_Ch16 0x4E
+#define Boro_Ch1 Boro_Ch16
 
 //Chapter 17 Stuff
 #define Alto 0xA8
 #define Mureib 0xA9
-#define KwameReal 0xAA
 #define Mureib2 0xAB
 
 //Chapter 18 Stuff
@@ -187,8 +188,6 @@
 #define C20Enemy 0x93
 
 //Chapter 21 stuff
-#define Ngondala 0x3C
-#define CatrinReal 0x3D
 #define Taraji 0xAF
 #define Xlea 0xB0
 #define Vinny 0xB1
