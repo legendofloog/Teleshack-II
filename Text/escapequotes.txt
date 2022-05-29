@@ -34,16 +34,16 @@ Sorry, but I'm leaving first.[N]
 No sense in me staying behind.[A][X]
 
 ## AlexEscapeQuoteText
-[MidRight][LoadCleo]
-Unit Escape.[X]
+[MidRight][LoadAlex]
+Time to skedaddle, keep up guys![A][X]
 
 ## AxelEscapeQuoteText
-[MidRight][LoadCleo]
-Unit Escape.[X]
+[MidRight][LoadAxel]
+Keep up guys, time to skedaddle![A][X]
 
 ## LongxiaEscapeQuoteText
 [MidRight][LoadLongxia]
-No sense in dying here.[X]
+No sense in dying here.[A][X]
 
 ## FangaiEscapeQuoteText
 [MidRight][LoadFangai]
@@ -98,8 +98,21 @@ Let us make it a reality[Beat][A][X]
 An opening[Beat][N]
 Fly, my friends. We must go![A][X]
 
-
 ## IlseEscapeQuoteText
 [MidRight][LoadIlse]
 What? We're running away?![N]
 I could've taken them all on[Beat][A][X]
+
+## NikolasEscapeQuoteText
+[MidRight][LoadNikolas]
+Haha, yes! I really hope this is[N]
+actually the way out! Onwards!![A][X]
+
+## SeraEscapeQuoteText
+[MidRight][LoadSera]
+Placeholder escape quote[A][X]
+
+## KofiEscapeQuoteText
+[MidRight][LoadKofi]
+There are still many mysteries[N]
+for me to solve[Beat][A][X]

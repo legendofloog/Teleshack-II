@@ -7,13 +7,14 @@
 // Skill System Stat Screen by circleseverywhere with additions by Tequila, and probably more people too
 
 #ifdef _FE8_
-
+  
   #define Skl_Arrow_X 0x78
   #define Skl_Arrow_Y 0x28
   #define Spd_Arrow_X 0x78
   #define Spd_Arrow_Y 0x38
   #define Trv_Icon_X 0xB8
   #define Trv_Icon_Y 0x2E
+  
   
   #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
   #include "WeaponRankStatScreen/WeaponRankStatScreen.event"
@@ -45,17 +46,19 @@
 
     // Make all the arrows line up with the stats and stuff
 
+    
     ORG $883C0
       BYTE Skl_Arrow_X 0x20 Skl_Arrow_Y
  
     ORG $883CA
       BYTE Spd_Arrow_X 0x20 Spd_Arrow_Y
-
+    
     ORG $883F6
       BYTE Trv_Icon_X 0x21 Trv_Icon_Y
 
     ORG $883B4
       jumpToHack(Rescue_Arrows)
+    
 
     // Display growths hack
     #ifdef PRESS_SELECT_TO_VIEW_GROWTHS

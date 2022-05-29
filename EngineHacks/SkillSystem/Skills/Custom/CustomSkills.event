@@ -88,3 +88,66 @@ POIN SkillTester
 WORD AlacrityID
 POIN AlacrityEvent
 #include "AlacrityEvent.event"
+
+ALIGN 4
+SpurHit:
+#incbin "SpurHit.dmp"
+POIN AuraSkillCheck
+WORD SpurHitID 
+
+ALIGN 4
+AbsoluteZeroPreBattle:
+#incbin "ApsisSkills/AZAvoidBuff/AZAvoidBuff.dmp"
+POIN SkillTester
+WORD AbsoluteZeroID
+
+ALIGN 4
+AbsoluteZeroAura:
+#incbin "ApsisSkills/AbsoluteZero/AbsoluteZero.dmp"
+POIN AuraSkillCheck
+WORD AbsoluteZeroTomeID
+
+ALIGN 4
+CrownPyre:
+#incbin "ApsisSkills/CrownPyre/CrownPyre.dmp"
+POIN SkillTester
+WORD CrownPyreID
+
+ALIGN 4
+DawnEye:
+#incbin "ApsisSkills/DawnEye/DawnEye.dmp"
+POIN SkillTester
+WORD DawnEyeID
+POIN HealSEvent
+
+ALIGN 4
+Stormbreaker:
+#incbin "ApsisSkills/Stormbreaker/Stormbringer.dmp"
+POIN SkillTester
+WORD StormbringerID
+POIN prMovGetter
+
+ALIGN 4
+FaithWind:
+#incbin "ApsisSkills/WindFaith/WindFaith.dmp"
+POIN SkillTester
+WORD WindFaithID
+
+ALIGN 4
+FaithWindWT:
+#incbin "ApsisSkills/WindFaith/WindFaithWT.dmp"
+POIN SkillTester
+WORD WindFaithID
+
+Telepathy:
+#incbin "Telepathy.dmp"
+POIN SkillTester
+WORD TelepathyID
+
+ALIGN 4
+HealSEvent: //same as breath of life
+CAM1 0xFFFF
+SOUN 0x111
+STAL 0x16
+NoFade
+ENDA

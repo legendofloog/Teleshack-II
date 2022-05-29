@@ -378,14 +378,28 @@ LoeweMoving:
 
 ALIGN 4
 CleoStanding:
-#incbin "Dmp/MonaStanding(ArcherBias).dmp"
+#incbin "Dmp/CleoStanding(ArcherBias).dmp"
 ALIGN 4
 CleoMoving:
-#incbin "Dmp/MonaMoving(ArcherBias).dmp"
+#incbin "Dmp/CleoMoving(ArcherBias).dmp"
 
 ALIGN 4
 Loewe_Dismounted_Dragonlord_Standing:
-#incbin "Dmp/Dread Fighter (M) {Nuramon}-stand.dmp"
+#incbin "Dmp/LoeweT2.dmp"
+
 ALIGN 4
 Loewe_Dismounted_Dragonlord_Moving:
-#incbin "Dmp/Dread Fighter (M) {Nuramon}-walk.dmp"
+#incbin "Dmp/LoeweT2Move.dmp"
+
+ALIGN 4
+BluEliwoodStanding:
+#incbin "Dmp/Noble_Marth(Dominus_Vobiscum)-stand.dmp"
+
+ALIGN 4
+BluEliwoodMoving:
+#incbin "Dmp/Noble_Marth(Dominus_Vobiscum)-walk.dmp"
+
+ALIGN 4
+BrigandStanding:
+#incbin "Dmp/Brigand_M_Axe(Alusq).dmp"
+

@@ -1,0 +1,457 @@
+EventPointerTable(Chapter17Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+
+TurnBasedEvents:
+TurnEventPlayer(0, Reinforcements1, 3)
+TurnEventPlayer(0, Reinforcements2, 5)
+TurnEventPlayer(0, Reinforcements3, 6)
+TurnEventPlayer(0, ThiefTime, 7)
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(7, NikolasRecruit, 0x0, Nikolas)
+END_MAIN
+
+LocationBasedEvents:
+Door(18,3)
+Door(6,8)
+Chest(KnightProof,19,1)
+//Chest(HeroRing,9,8)
+DurabilityChest(GrowthScroll, AmserScroll,11,9)
+END_MAIN
+
+MiscBasedEvents:
+AFEV 8 MureibBetrayal 9
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies 
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+Units1:
+LoadUnit(1,28)
+LoadUnit(3,28)
+LoadUnit(5,28)
+LoadUnit(0,29)
+LoadUnit(2,29)
+LoadUnit(4,29)
+LoadUnit(6,29)
+LoadUnit(10,28)
+LoadUnit(12,28)
+LoadUnit(14,28)
+LoadUnit(9,29)
+LoadUnit(11,29)
+LoadUnit(13,29)
+LoadUnit(15,29)
+UNIT
+
+NPCUnits:
+UNIT Nikolas Falcoknight   0x0 Level(1,NPC,False) [11,26] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,Elixir] BossAI
+UNIT
+
+EnemyUnits:
+UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [Claymore,BattleAxe,IceSword,KnightProof] BossHealAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [LongLance] DefaultHealAI 
+UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [3,23] 0x0 0x0 0x0 0x0 [IceSword] NMHealAI
+UNIT Cythes AxeArmor   0x0 Level(17,Enemy,True) [2,23] 0x0 0x0 0x0 0x0 [Hurlbat] NMHealAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [4,26] 0x0 0x0 0x0 0x0 [TrainedEdge] DefaultHealAI 
+UNIT Cythes AxeKnight   0x0 Level(17,Enemy,True) [7,24] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI 
+UNIT Cythes Ballistician   0x0 Level(17,Enemy,True) [6,22] 0x0 0x0 0x0 0x0 [LongArch] NMHealAI
+UNIT Cythes BowKnight   0x0 Level(17,Enemy,True) [3,16] 0x0 0x0 0x0 0x0 [Longbow] DefaultHealAI 
+UNIT Cythes Bard   0x0 Level(17,Enemy,True) [19,26] 0x0 0x0 0x0 0x0 [Meteor,Fire] NMHealAI
+UNIT Cythes PegasusRider   0x0 Level(17,Enemy,True) [19,15] 0x0 0x0 0x0 0x0 [TrainedPike] [0x0,0x12,0x4,0x0]
+UNIT Cythes PegasusRider   0x0 Level(17,Enemy,True) [20,16] 0x0 0x0 0x0 0x0 [TrainedPike] [0x0,0x12,0x4,0x0]
+UNIT Cythes Swordfighter   0x0 Level(17,Enemy,True) [5,19] 0x0 0x0 0x0 0x0 [SteelSword] RangeHealAI
+UNIT Cythes DragonRider   0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI
+UNIT Cythes SwordKnight   0x0 Level(17,Enemy,True) [16,14] 0x0 0x0 0x0 0x0 [BraveSword] DefaultHealAI
+UNIT Cythes LanceKnight   0x0 Level(17,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [Greatlance] DefaultHealAI
+UNIT Cythes Brigand   0x0 Level(17,Enemy,True) [10,25] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI
+UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [14,23] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
+UNIT Cythes Swordfighter   0x0 Level(17,Enemy,True) [18,19] 0x0 0x0 0x0 0x0 [Armorslayer] RangeHealAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [21,5] 0x0 0x0 0x0 0x0 [KillingEdge] [0x00,0x06,0x00,0x00]
+UNIT Cythes Mage   0x0 Level(17,Enemy,True) [12,16] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
+UNIT Cythes Archer   0x0 Level(17,Enemy,True) [16,9] 0x0 0x0 0x0 0x0 [Greatbow] RangeHealAI
+UNIT Cythes Archer   0x0 Level(17,Enemy,True) [10,9] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeHealAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [7,15] 0x0 0x0 0x0 0x0 [SteelLance] RangeHealAI
+UNIT Cythes Bard   0x0 Level(17,Enemy,True) [0,22] 0x0 0x0 0x0 0x0 [Wind] DefaultHealAI
+UNIT Cythes AxeSoldier   0x0 Level(17,Enemy,True) [18,4] 0x0 0x0 0x0 0x0 [HandAxe,DoorKey] NMHealAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [4,6] 0x0 0x0 0x0 0x0 [Rapier] RangeHealAI
+UNIT Cythes Swordfighter   0x0 Level(17,Enemy,True) [3,5] 0x0 0x0 0x0 0x0 [Longsword] [0x00,0x06,0x00,0x00]
+UNIT Cythes Mage   0x0 Level(17,Enemy,True) [4,9] 0x0 0x0 0x0 0x0 [Fire] RangeHealAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [TrainedPike] RangeHealAI
+UNIT Cythes AxeSoldier   0x0 Level(17,Enemy,True) [13,5] 0x0 0x0 0x0 0x0 [SteelAxe] [0x00,0x06,0x00,0x00]
+UNIT Cythes Brigand   0x0 Level(17,Enemy,True) [15,2] 0x0 0x0 0x0 0x0 [Hammer] [0x00,0x06,0x00,0x00]
+UNIT Cythes Freelancer   0x0 Level(17,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [SilverLance] RangeHealAI
+UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [5,7] 0x0 0x0 0x0 0x0 [Poleaxe] RangeHealAI
+UNIT Cythes DukeKnight   0x0 Level(3,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [SilverLance] DefaultHealAI 
+UNIT Cythes ArchKnight   0x0 Level(3,Enemy,True) [12,14] 0x0 0x0 0x0 0x0 [SilverBow] DefaultHealAI 
+UNIT Cythes Warrior   0x0 Level(3,Enemy,True) [11,15] 0x0 0x0 0x0 0x0 [SteelAxe] [0x00,0x06,0x00,0x00]
+UNIT Cythes DarkBishop   0x0 Level(3,Enemy,True) [3,1] 0x0 0x0 0x0 0x0 [Flux] [0x00,0x06,0x00,0x00]
+UNIT Cythes Sage   0x0 Level(3,Enemy,True) [10,4] 0x0 0x0 0x0 0x0 [Elfire,Physic] [0x0E,0x03,0x00,0x20]
+UNIT
+
+MureibSquad:
+UNIT Mureib HighPriest   0x0 Level(10,Enemy,False) [14,29] 0x0 0x0 0x0 0x0 [Lightning] StallOneTurnAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [13,24] 0x0 0x0 0x0 0x0 [LongLance] DefaultAI
+UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [15,24] 0x0 0x0 0x0 0x0 [Longsword] DefaultAI
+UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [16,27] 0x0 0x0 0x0 0x0 [SteelAxe] StallOneTurnAI
+UNIT Cythes SwordFighter   0x0 Level(17,Enemy,True) [12,27] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
+UNIT Cythes Freelancer   0x0 Level(17,Enemy,True) [17,29] 0x0 0x0 0x0 0x0 [TrainedPike] StallOneTurnAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [14,26] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI
+UNIT Cythes Bard   0x0 Level(17,Enemy,True) [13,28] 0x0 0x0 0x0 0x0 [Wind] DefaultAI
+UNIT Cythes Bard   0x0 Level(17,Enemy,True) [15,28] 0x0 0x0 0x0 0x0 [Wind] DefaultAI
+UNIT Cythes DarkMage   0x0 Level(17,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Flux] DefaultAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [0,21] 0x0 0x0 0x0 0x0 [TrainedEdge] DefaultAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [21,14] 0x0 0x0 0x0 0x0 [TrainedPike] DefaultAI
+UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [21,16] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT Cythes AxeSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [Hammer] DefaultAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Greatlance] DefaultAI
+UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [2,29] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT Cythes SwordFighter   0x0 Level(17,Enemy,True) [0,28] 0x0 0x0 0x0 0x0 [Greatsword] DefaultAI
+UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [3,24] 0x0 0x0 0x0 0x0 [Thoron] DefaultAI
+UNIT
+
+ReinforcementsSpawn1:
+UNIT Cythes DarkMage   0x0 Level(17,Enemy,True) [2,29] 0x0 0x0 0x0 0x0 [Jormungand] DefaultHealAI
+UNIT Cythes Bard   0x0 Level(17,Enemy,True) [13,29] 0x0 0x0 0x0 0x0 [Lightning] DefaultHealAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [15,29] 0x0 0x0 0x0 0x0 [HeavySpear] DefaultHealAI
+UNIT
+
+ReinforcementsSpawn2:
+UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [0,2] 0x0 0x0 0x0 0x0 [TrainedAxe] DefaultHealAI
+UNIT Cythes Archer   0x0 Level(17,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [TrainedArc] DefaultHealAI
+UNIT Cythes Swordfighter   0x0 Level(17,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [Greatsword] DefaultHealAI
+UNIT Cythes DarkMage   0x0 Level(17,Enemy,True) [21,9] 0x0 0x0 0x0 0x0 [Flux] DefaultHealAI
+UNIT
+
+ReinforcementsSpawn3:
+UNIT Cythes Swordmaster   0x0 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [SteelSword] DefaultHealAI
+UNIT Cythes BowArmor   0x0 Level(17,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [MasterBow] DefaultHealAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [3,0] 0x0 0x0 0x0 0x0 [IronSword] DefaultHealAI
+UNIT
+
+ThiefSpawn:
+UNIT Looter Thief   0x0 Level(17,Enemy,True) [21,2] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
+UNIT Looter Thief   0x0 Level(17,Enemy,True) [10,10] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey,ChestKey] ThiefAI
+UNIT
+
+KwameSpawn:
+UNIT KwameReal DarkBishop   0x0 Level(20,Ally,False) [10,4] 0x0 0x0 0x0 0x0 [Unmoor] DefaultAI
+UNIT
+
+CouncilMembers:
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [6,3] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT Kwame Civilian_2 0x0 Level(20,NPC,False) [8,3] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Boro_Ch16 Champion 0x0 Level(5,NPC,False) [4,4] 0x0 0x0 0x0 0x0 [MasterLance,Elixir] NoAI
+UNIT Catrin Swordmaster_F 0x0 Level(20,NPC,False) [4,5] 0x0 0x0 0x0 0x0 [SilverSword] NoAI
+UNIT Elias Dracoknight 0x0 Level(17,NPC,False) [10,4] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe] NoAI
+UNIT Coralia Noble_F 0x0 Level(10,NPC,False) [10,5] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT
+
+CouncilLoewe:
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [7,9] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT
+
+EndingMureibOwnage:
+UNIT KwameReal DarkBishop   0x0 Level(20,Ally,False) [15,15] 0x0 0x0 0x0 0x0 [Unmoor] NoAI
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [14,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [16,16] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT Mureib2 HighPriest   0x0 Level(10,Enemy,False) [15,18] 0x0 0x0 0x0 0x0 [Lightning] NoAI
+UNIT
+
+DuelLoewe:
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [6,0] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT
+
+DuelCleo:
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [6,0] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT
+
+CutsceneLords:
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [13,29] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [15,29] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT
+
+NikolasRecruit:
+MUSC WithUs_Song
+Text(Ch17_NikolasRecruitText)
+CUSA Nikolas
+NoFade
+ENDA
+
+MureibBetrayal:
+Text(Ch17_BossDead)
+LOAD1 1 MureibSquad
+ENUN
+CAMERA_CENTERED Mureib
+STAL 20
+CAMERA_CENTERED [10,1]
+Text(Ch17_MureibBetrayalPart1)
+CAMERA_CENTERED Mureib
+Text(Ch17_MureibBetrayalPart2)
+LOAD1 1 KwameSpawn
+ENUN
+CAM1 [10,1]
+FlashCursor(10,1,30)
+Text(Ch17_KwameSoEpic)
+NoFade
+ENDA
+
+Reinforcements1:
+CamOn
+LOAD1 1 ReinforcementsSpawn1
+ENUN
+CamOff
+NoFade
+ENDA
+
+Reinforcements2:
+CamOn
+LOAD1 1 ReinforcementsSpawn2
+ENUN
+CamOff
+NoFade
+ENDA
+
+Reinforcements3:
+CamOn
+LOAD1 1 ReinforcementsSpawn3
+ENUN
+CamOff
+NoFade
+ENDA
+
+ThiefTime:
+CamOn
+LOAD1 1 ThiefSpawn
+ENUN
+CamOff
+NoFade
+ENDA
+
+BeginningScene:
+FADU 15
+SetBackground(CastleHallway)
+FADI 15
+Text(Ch17_RadnitzIntrigue)
+FADI 15
+LOMA Chapter17Council
+DismountAll
+LOAD1 1 CouncilMembers
+ENUN
+FADU 15
+STAL 15
+LOAD1 1 CouncilLoewe
+ENUN
+STAL 15
+MOVE 15 Loewe [7,6]
+ENUN
+STAL 10
+FADI 5
+SetBackground(BuildingInterior)
+FADU 15
+Text(Ch17_Loewe_Decision)
+FADI 15
+RemoveAll
+SetBackground(BlackBackground)
+FADU 15
+BROWNBOXTEXT Ch17_Telyada[8,8]
+FADI 15
+SetBackground(0x0D)
+FADU 15
+Text(Ch17_ReturnToMureib)
+FADI 15
+LOMA Chapter17
+LOAD1 1 EnemyUnits
+ENUN
+LOAD1 1 NPCUnits 
+ENUN
+CAMERA_CENTERED [14,29]
+FADU 15
+BROWNBOXTEXT Ch17_FortKasira[8,8]
+LOAD1 1 CutsceneLords
+ENUN
+STAL 15
+Text(Ch17_Preamble)
+FADI 15
+MountAll
+GotoPrepScreen
+ENDA
+
+EndingScene:
+FADI 15
+MUSC 0x7FFF
+RemoveAll
+DismountSingleUnit(Loewe)
+DismountSingleUnit(Cleo)
+LOAD1 1 EndingMureibOwnage
+ENUN
+CAMERA_CENTERED KwameReal
+FADU 15
+Text(Ch17_MureibKwameSuperEpic)
+MOVE 15 KwameReal [15,17]
+ENUN
+	StartBattle
+	NormalDamage(0,30)
+	EndAttack
+	FIGHT KwameReal Mureib2 Flux False
+ENUN
+MOVE 15 Mureib2 [15,19]
+ENUN
+Text(Ch17_MureibPhilosophyDebatePart1)
+MOVE 20 KwameReal [15,16]
+MOVE 25 Loewe [15,18]
+ENUN
+Text(Ch17_MureibPhilosophyDebatePart2)
+MOVE 5 Loewe [15,17]
+ENUN
+Text(Ch17_MureibPhilosophyDebatePart3)
+MOVE 15 Loewe [15,18]
+ENUN
+	StartBattle
+	NormalDamage(0,30)
+	EndAttack
+	FIGHT Loewe Mureib2 Kaiserschwert False
+ENUN
+KILL 0xAB
+AWAIT_KILL 0xAB
+TEXTSTART
+TEXTSHOW Ch17_Angery
+TEXTEND
+MOVE 15 Loewe [14,29]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+MOVE 15 Cleo [16,29]
+FADI 5
+ENUN
+STAL 15
+RemoveAll
+LOMA Chapter17Duel
+LOAD1 1 DuelLoewe
+ENUN
+MOVE 3 Loewe [6,6]
+FADU 15
+ENUN
+MOVE 3 Loewe [8,6]
+ENUN
+TEXTSTART
+TEXTSHOW Ch17_Confrontation
+TEXTEND
+LOAD1 1 DuelCleo
+MOVE 5 Cleo [6,6]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+MOVE 5 Loewe [10,6]
+ENUN
+STAL 120
+CUSE Loewe
+STAL 120
+MOVE 5 Loewe [8,6]
+Text(Ch17_DuelPart1)
+MOVE 15 Loewe [7,6]
+ENUN
+	StartBattle
+	MissedAttack(0,7)
+	EndAttack
+	FIGHT Loewe Cleo Kaiserschwert Argilabrys
+ENUN
+MOVE 15 Cleo [4,6]
+ENUN
+Text(Ch17_DuelPart2)
+MOVE 15 Loewe [5,6]
+ENUN
+	StartBattle
+	MissedAttack(0,7)
+	MissedAttack(1,9)
+	EndAttack
+	FIGHT Loewe Cleo Kaiserschwert Argilabrys
+ENUN
+MOVE 15 Cleo [6,6]
+MOVE 15 Loewe [7,6]
+ENUN
+Text(Ch17_DuelPart3)
+SetBackground(BlackBackground)
+_0x1A22
+TEXTSHOW Ch17_DuelText1
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch17_DuelText2
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch17_DuelText3
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch17_DuelText4
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch17_DuelText5
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch17_DuelText6
+TEXTEND
+REMA
+_0x1A22
+TEXTSHOW Ch17_DuelText7
+TEXTEND
+REMA
+SetBackground(BlackBackground)
+_0x1A22
+TEXTSHOW Ch17BlackScreenText
+TEXTEND
+REMA
+FADI 5
+CUSA Loewe
+EraseBackground
+STAL 60
+MOVE 5 Cleo [4,6]
+Text(Ch17_DuelEnding)
+FADI 5
+RemoveAll
+SetBackground(Boat)
+FADU 15
+Text(Ch17_ChouwoujTease)
+MNC2 Chapter18
+NoFade
+ENDA

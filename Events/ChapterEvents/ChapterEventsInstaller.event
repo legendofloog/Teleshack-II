@@ -70,4 +70,27 @@ ALIGN 4
 ALIGN 4
   #include "Chapter16.event"
 }
-
+{
+ALIGN 4
+  #include "Chapter17.event"
+}
+{
+ALIGN 4
+  #include "Chapter18.event"
+}
+{
+  ALIGN 4
+  #include "Chapter18x.event"
+}
+{
+  ALIGN 4
+  #include "Chapter19.event"
+}
+{
+  ALIGN 4
+  #include "Chapter20.event"
+}
+{
+  ALIGN 4
+  #include "Chapter21.event"
+}

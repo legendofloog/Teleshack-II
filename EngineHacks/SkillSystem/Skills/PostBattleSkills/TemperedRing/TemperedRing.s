@@ -5,7 +5,7 @@
 .endm
 .equ TemperedRingID, SkillTester+4
 .equ HealEvent, TemperedRingID+4
-.equ heal4hp, 4
+.equ heal5hp, 5
 .thumb
 push	{lr}
 
@@ -28,9 +28,9 @@ ldrb	r0, [r4,#0x13]
 cmp	r0, #0x00
 beq	End
 
-@heal 4 hp
+@heal 5 hp
 ldrb	r1, [r4,#0x12]	@r1=maxhp
-mov r0, #heal4hp
+mov r0, #heal5hp
 ldrb	r2, [r4,#0x13]	@r2=currhp
 @cmp	r1, r2		@check if hp is already max
 @beq	End
@@ -74,7 +74,7 @@ beq	End
 
 @heal 4 hp
 ldrb  r1, [r5,#0x12]  @r1=maxhp
-mov r0, #heal4hp
+mov r0, #heal5hp
 ldrb  r2, [r5,#0x13]  @r2=currhp
 @cmp  r1, r2    @check if hp is already max
 @beq  End

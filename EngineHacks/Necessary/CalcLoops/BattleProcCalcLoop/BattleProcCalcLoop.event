@@ -56,7 +56,7 @@ POIN Proc_CapDamage	//check that damage is not over cap
 
 POIN Proc_Chapter6Magic
 
-POIN Proc_Foresight Proc_Miracle Proc_Mercy Proc_Aegis Proc_Pavise Proc_GreatShield 	//skills that set damage to 0 or lower it
+POIN Proc_Foresight Proc_Miracle Proc_BladeDance Proc_Mercy Proc_Aegis Proc_Pavise Proc_GreatShield 	//skills that set damage to 0 or lower it
 
 POIN Proc_StealHP 
 
@@ -69,8 +69,6 @@ POIN Proc_Conversion
 #endif // COMBAT_ARTS
 
 POIN Proc_AetherHeal	//skills that heal based on final damage
-
-POIN Proc_RadianceDamage
 
 POIN Proc_BlackMagic Proc_Petrify Proc_Enrage Proc_Deadeye //skills that apply a status effect
 

@@ -73,6 +73,5 @@
 	POIN SkillTester
 	WORD BlossomID
 	WORD AptitudeID
-	WORD GrowthScroll
-	POIN GrowthScrollBonuses
+	POIN GetEquipmentStatBonus
 	

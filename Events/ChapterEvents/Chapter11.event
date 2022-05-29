@@ -30,7 +30,7 @@ LocationBasedEvents:
 Chest(MasterBow,1,1)
 Door(17,24)
 Door(18,24)
-Chest(KnightProof,9,24)
+Chest(Elixir,9,24)
 Chest(RedGem,18,13)
 Door(1,8)
 Door(2,8)

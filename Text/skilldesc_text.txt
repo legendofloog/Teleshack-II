@@ -688,7 +688,7 @@ Steal: Unit can steal items.[X]
 
 ## SD_StealPlus
 Steal+: Unit can steal weapons[N]
-and staves if con>weight.[X]
+and staves if Bld > Item Wt.[X]
 
 ## SD_Capture
 Capture: Capture an enemy after[N]

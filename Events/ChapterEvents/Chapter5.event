@@ -16,7 +16,7 @@ TurnBasedEvents:
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 3)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 5)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B, 6)
+TurnEventPlayer(0, EnemyReinforcementsEvent_C, 6)
 TurnEventPlayer(0, EndOfSurvive, 10)
 END_MAIN
 
@@ -149,6 +149,14 @@ CamOff
 NoFade
 ENDA
 
+EnemyReinforcementsEvent_C:
+CamOn
+LOAD1 1 EnemyReinforcements_B
+ENUN
+CamOff
+NoFade
+ENDA
+
 BeginningScene:
 MountAll
 ENUT 0x7B //flag that determines whether riggan is alive
@@ -182,12 +190,14 @@ NoFade
 ENDA
 
 EndingScene:
-RemoveAll
 FlagConditionalDialog(0x2,PostBattleBoss,PostBattleTime)
 CHECK_EVENTID 0x2
 BNE 3 s0 sC
 	ENUF 0x7B //unsets riggan alive flag if he is dead
 LABEL 3
+FADI 15
+InterludeRemovalRoutineASMC
+RemoveAll
 SetBackground(Tavern)
 MUSC Rovers
 Text(LoreCh5Text)

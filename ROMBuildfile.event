@@ -1,14 +1,16 @@
-
-    #include "EAstdlib.event"
+   
     #include "CustomDefinitions.event"
+    ORG FreeSpace
+    #include "Tables/Repointed/_MasterRepointer.event"
+
+
+    #define ClassTable NewClassTable
+    #include "EAstdlib.event"
+    
     #include "Definitions/DefinitionsInstaller.event"
 
- PROTECT $2C56A
- //PROTECT 0x5A800
-    ORG FreeSpace
-
-    #include "repointedTextTable.event"
-
+    
+    
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"
     MESSAGE Used text space ends at currentOffset

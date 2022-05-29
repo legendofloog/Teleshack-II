@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pSkillModifiers: // Skill
-	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl prDismountedHorseSklDebuff prDismountedPegSklDebuff prDismountedDragonSklDebuff
+	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl prDismountedHorseSklDebuff prDismountedPegSklDebuff prDismountedDragonSklDebuff prEquipmentSkl
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -26,5 +26,8 @@ prRallySkl:
 
 prItemPassiveSkl:
 	rPassiveStatBoosts(STAT_SKILL)
+
+prEquipmentSkl:
+	rEquipmentBonus(STAT_SKILL)
 
 #endif // MODULAR_GETTER_SKILL_EVENT

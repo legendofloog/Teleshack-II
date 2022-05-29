@@ -10,12 +10,12 @@ missing HP.[X]
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]
 Her healing and damage actions heal all[N]
-empowered allies by a small amount.[X]
+empowered allies by 10 + Mag.[X]
 
 ## SD_Nightcaller
-Dusk Bringer: Cromar's dark pact call[N]
-down fog of war after each combat,[N]
-empowering his critical hit chance.[X]
+Dusk Bringer: Cromar's dark pact calls[N]
+down fog after combat and increases[N]
+Crit/C.Avo by (7 - Fog Vision) x 5.[X]
 
 ## SD_Dullahan
 Dullahan's Curse:[N]
@@ -26,9 +26,9 @@ Victory March: Raise movement of[N]
 infantry units by 2 points.[X]
 
 ## SD_Avenger
-Avenger: Loewe gains purpose with each[N]
-wound, gaining Crit/Hit and losing[N]
-Avo/Dodge equal to his missing HP.[X]
+Avenger: Loewe gains purpose with[N]
+each wound, gaining Crit and losing[N]
+Avo equal to his missing HP.[X]
 
 ## SD_RecklessCharge
 Reckless Charge: When mounted, moving[N]
@@ -101,3 +101,60 @@ minimum range is set to 3.[X]
 Desolate: Gain +40 crit vs[N]
 enemies who are not adjacent[N]
 to any of their allies.[X]
+
+## SD_BladeDance *
+Blade Dance: When attacking, follow-up attacks[N]
+are consecutive, and if enemy is defeated, evade[N]
+fatal attacks until the start of your next turn.[X]
+
+## SD_Spelltwister *
+Spelltwister: Apsis has access to his arsenal of[N]
+5 personal tomes, each with a mix-and-match[N]
+'Equip' and 'Off-Hand' (inventory 2nd slot) effect.[X]
+
+## SD_CrownPyre *
+Crowned Pyre - Equip: Ignores 25% of foe's Res.[N]
+Executes foes below 25% of their max HP.[N]
+Off-Hand: Grants Atk = 25% of foe's missing HP.[X]
+
+## SD_Stormbreaker *
+Stormbreaker - Equip: Has bonus range. If using[N]
+all move, +30 Hit/Crit (+40 at max range).[N]
+Off-Hand: Grants +3 Hit/Crit per space moved.[X]
+
+## SD_AbsoluteZero *
+Absolute Zero - Equip: Foes in 2 spaces suffer[N]
+-2 Atk/AS (doubled to -4 if foe is in terrain).[N]
+Off-Hand: Grants +2 Def/Res, +10 Avoid in terrain.[X]
+
+## SD_DawnEye *
+Eye of Dawn - Equip: Locked at 1 range.[N]
+Restores HP to unit = damage dealt.[N]
+Off-Hand: Restores 7 HP after combat.[X]
+
+## SD_FaithWind *
+Faith's Wind - Equip: Hit twice at 1 range,[N]
+cancels WT disadvantage at 2 range.[N]
+Off-Hand: Grants AS = weapon range.[X]
+
+## SD_Telepathy
+Telepathy: +50% Hit/Avo/Crt/C. Avo[N]
+when fighting enemies at 1 range.[X]
+
+## SD_PhaseLeap
+Phase Leap: Tao teleports within a[N]
+4-tile radius and can act after without[N]
+moving, but he cannot move next turn.[X]
+
+## SD_HypeTrain *
+# make him a shitty armor or inf??? give him shit base spd and growth/bad defenses/high hp???
+# AS in pre-battle, Mov +2 in aura (merged with keep up), Galeforce and recoil in post-battle
+Adrenaline Rush!!: If Jerry's HP is 25% or less,[N]
+grants AS equal to missing HP, Mov +2 and on kill,[N]
+another action, but take 4 damage after combat.[X]
+
+## SD_CleoFan
+# idk anymore
+Decian Fealty: If Lyre is adjacent to[N]
+Loewe or Cleo, grants +10 Hit/Crit and[N]
+strike twice consecutively.[X]

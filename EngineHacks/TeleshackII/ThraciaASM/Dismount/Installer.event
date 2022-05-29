@@ -7,10 +7,11 @@ MESSAGE Dismount ends at currentOffset
 #define MountedUnmounted(classIDMounted, classIDUnmounted) "BYTE classIDMounted classIDUnmounted"
 #define EndMountUnmountedTable "BYTE 0x00 0x00"
 
-#define DismountUnit(unit) "SVAL s1 unit; ASMC DismountUnitASMC"
-#define DismountAll "DismountUnit(Cleo); DismountUnit(Loewe); DismountUnit(Emil); DismountUnit(Iskra); DismountUnit(Leina); DismountUnit(Tobie); DismountUnit(Awa); DismountUnit(Faolan); DismountUnit(Nora); DismountUnit(Hans); DismountUnit(Meldan); DismountUnit(Jenny); DismountUnit(Hornet)"
-#define MountUnit(unit) "SVAL s1 unit; ASMC MountUnitASMC"
-#define MountAll "MountUnit(Cleo); MountUnit(Loewe); MountUnit(Emil); MountUnit(Iskra); MountUnit(Leina); MountUnit(Tobie); MountUnit(Awa); MountUnit(Faolan); MountUnit(Nora); MountUnit(Hans); MountUnit(Meldan); MountUnit(Jenny); MountUnit(Hornet)"
+#define MountSingleUnit(unit) "SVAL s1 unit; ASMC MountSingleUnitASMC"
+#define DismountSingleUnit(unit) "SVAL s1 unit; ASMC DismountSingleUnitASMC"
+
+#define DismountAll "ASMC DismountAllASMC"
+#define MountAll "ASMC MountAllASMC"
 
 ALIGN 4
 MountedClassTable:
@@ -64,7 +65,7 @@ prDismountedPegDefDebuff:
 ALIGN 4
 prDismountedDragonDefDebuff:
 	rIfUnitIsDismounted(DragonDismountType)
-		rSubConst(5)
+		rSubConst(2)
 ALIGN 4
 prDismountedHorseSpdDebuff:
 	rIfUnitIsDismounted(HorseDismountType)
@@ -76,7 +77,7 @@ prDismountedPegSpdDebuff:
 ALIGN 4
 prDismountedDragonSpdDebuff:
 	rIfUnitIsDismounted(DragonDismountType)
-		rSubConst(2)
+		rSubConst(1)
 ALIGN 4
 prDismountedHorseSklDebuff:
 	rIfUnitIsDismounted(HorseDismountType)
@@ -88,7 +89,7 @@ prDismountedPegSklDebuff:
 ALIGN 4
 prDismountedDragonSklDebuff:
 	rIfUnitIsDismounted(DragonDismountType)
-		rSubConst(2)
+		rSubConst(1)
 ALIGN 4
 prDismountedHorseStrDebuff:
 	rIfUnitIsDismounted(HorseDismountType)
@@ -100,7 +101,7 @@ prDismountedPegStrDebuff:
 ALIGN 4
 prDismountedDragonStrDebuff:
 	rIfUnitIsDismounted(DragonDismountType)
-		rSubConst(3)
+		rSubConst(2)
 
 #define UnacceptedMountDismountLocationEntry(chapterID, TopLeftX, TopLeftY, BottomRightX, BottomRightY) "BYTE chapterID TopLeftX TopLeftY BottomRightX BottomRightY"
 #define EndUnacceptedMountDismountLocationTable "BYTE 0xFF 0xFF 0xFF 0xFF 0xFF"
@@ -111,14 +112,13 @@ UnacceptedMountDismountLocationEntry(Chapter1,0,0,19,19)
 UnacceptedMountDismountLocationEntry(Chapter2,0,0,19,19)
 UnacceptedMountDismountLocationEntry(Chapter3,0,0,29,20)
 UnacceptedMountDismountLocationEntry(Ch5xInterlude,0,0,14,9)
-UnacceptedMountDismountLocationEntry(Chapter7,1,8,4,12)
-UnacceptedMountDismountLocationEntry(Chapter7,1,13,4,15)
-UnacceptedMountDismountLocationEntry(Chapter7,5,17,12,19)
-UnacceptedMountDismountLocationEntry(Chapter7,5,12,7,16)
-UnacceptedMountDismountLocationEntry(Chapter7,8,15,12,16)
-UnacceptedMountDismountLocationEntry(Chapter8,0,0,19,17)
-UnacceptedMountDismountLocationEntry(Chapter8,13,18,19,19)
+UnacceptedMountDismountLocationEntry(Chapter7,0,7,5,19)
+UnacceptedMountDismountLocationEntry(Chapter7,6,11,8,19)
+UnacceptedMountDismountLocationEntry(Chapter7,9,14,13,19)
+UnacceptedMountDismountLocationEntry(Chapter8,0,0,19,15)
+UnacceptedMountDismountLocationEntry(Chapter8,13,16,19,17)
 UnacceptedMountDismountLocationEntry(Chapter11,0,0,19,27)
+/*
 UnacceptedMountDismountLocationEntry(Chapter12,0,0,8,27)
 UnacceptedMountDismountLocationEntry(Chapter12,9,0,15,20)
 UnacceptedMountDismountLocationEntry(Chapter12,16,2,17,18)
@@ -127,17 +127,19 @@ UnacceptedMountDismountLocationEntry(Chapter12,21,24,25,27)
 UnacceptedMountDismountLocationEntry(Chapter12,25,9,27,11)
 UnacceptedMountDismountLocationEntry(Chapter12,28,8,28,12)
 UnacceptedMountDismountLocationEntry(Chapter12,29,6,35,17)
+*/
 UnacceptedMountDismountLocationEntry(Ch12xInterlude,0,0,14,9)
 UnacceptedMountDismountLocationEntry(Chapter13,8,0,27,5)
 UnacceptedMountDismountLocationEntry(Chapter13,17,6,27,8)
 UnacceptedMountDismountLocationEntry(Chapter13,20,9,27,12)
-UnacceptedMountDismountLocationEntry(Chapter15,0,27,26,30)
-UnacceptedMountDismountLocationEntry(Chapter15,3,24,23,26)
-UnacceptedMountDismountLocationEntry(Chapter15,1,22,13,23)
-UnacceptedMountDismountLocationEntry(Chapter15,17,2,25,23)
-UnacceptedMountDismountLocationEntry(Chapter15,0,2,7,21)
-UnacceptedMountDismountLocationEntry(Chapter15,8,2,10,14)
-UnacceptedMountDismountLocationEntry(Chapter15,11,3,16,11)
-UnacceptedMountDismountLocationEntry(Chapter15,11,3,16,11)
-UnacceptedMountDismountLocationEntry(Chapter15,12,12,14,12)
+UnacceptedMountDismountLocationEntry(Chapter15,0,0,26,30)
+UnacceptedMountDismountLocationEntry(Chapter16,0,0,21,22)
+UnacceptedMountDismountLocationEntry(Chapter16,20,0,21,15)
+UnacceptedMountDismountLocationEntry(Chapter17,0,0,21,12)
+UnacceptedMountDismountLocationEntry(Chapter18xInterlude,0,0,24,19)
+UnacceptedMountDismountLocationEntry(Chapter19,0,0,46,32)
+UnacceptedMountDismountLocationEntry(Chapter20,0,12,3,18)
+UnacceptedMountDismountLocationEntry(Chapter20,0,12,3,18)
+UnacceptedMountDismountLocationEntry(Chapter20,8,0,16,2)
+UnacceptedMountDismountLocationEntry(Chapter20,11,3,14,4)
 EndUnacceptedMountDismountLocationTable

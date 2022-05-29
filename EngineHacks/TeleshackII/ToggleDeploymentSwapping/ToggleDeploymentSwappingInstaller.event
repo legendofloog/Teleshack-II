@@ -51,6 +51,9 @@ ALIGN 4
 ALIGN 4
 
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
+ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter18)
+ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter18)
+ForcedDeployment(KwameReal,LockedPosition,AllModes,Chapter18)
 ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter15)
 ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter15)
 ForcedDeployment(Cleo,UnlockedPosition,AllModes,AllChapters)

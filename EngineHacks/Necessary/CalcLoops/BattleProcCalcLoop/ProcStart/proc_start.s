@@ -174,6 +174,7 @@ ldrh r1, [r7, #8] @final def
 lsl r1, #0x10
 asr r1, #0x10
 sub r2, r1
+strh r2, [r7, #4] @final damage
 
 @ mov r1, #4
 @ ldsh r1, [r7, r1]  @ takes the final damage, which is not what we want

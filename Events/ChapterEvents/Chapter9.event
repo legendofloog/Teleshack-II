@@ -259,32 +259,7 @@ NoFade
 ENDA
 
 EndingScene:
-CheckIfUnitEscapedASMC(Mira,39)
-CheckIfUnitEscapedASMC(Iskra,72)
-CheckIfUnitEscapedASMC(Emil,308)
-CheckIfUnitEscapedASMC(Svetomir,56)
-CheckIfUnitEscapedASMC(Alena,79)
-CheckIfUnitEscapedASMC(Varga,43)
-CheckIfUnitEscapedASMC(Delilah,98)
-CheckIfUnitEscapedASMC(Alex,876)
-CheckIfUnitEscapedASMC(Axel,233)
-CheckIfUnitEscapedASMC(Filone,58)
-CheckIfUnitEscapedASMC(Zwieback,901)
-CheckIfUnitEscapedASMC(Fangai,765)
-CheckIfUnitEscapedASMC(Longxia,456)
-CheckIfUnitEscapedASMC(Mish,321)
-CheckIfUnitEscapedASMC(Tobie,935)
-CheckIfUnitEscapedASMC(Awa,103)
-CheckIfUnitEscapedASMC(Faolan,257)
-CheckIfUnitEscapedASMC(Cadenza,974)
-CheckIfUnitEscapedASMC(Leina,406)
-CheckIfUnitEscapedASMC(Cromar,845)
-CheckIfUnitEscapedASMC(Iberis,938)
-CheckIfUnitEscapedASMC(Buldak,674)
-CheckIfUnitEscapedASMC(Nora,624)
-CheckIfUnitEscapedASMC(Hans,838)
-CheckIfUnitEscapedASMC(Jenny,253)
-CheckIfUnitEscapedASMC(Meldan,696)
+EndOfEscapeRoutineASMC
 SetBackground(CastleHallway)
 MUSC FF5_Nostalgia
 Text(Ch9EndingText)

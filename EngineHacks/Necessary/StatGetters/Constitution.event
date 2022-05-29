@@ -4,7 +4,7 @@
 #include "_Common.event"
 ALIGN 4
 pConModifiers: // Consitition
-	POIN prAddUnitBaseCon prAddUnitConBonus prItemPassiveCon (prGetItemConBonus-1)
+	POIN prAddUnitBaseCon prAddUnitConBonus prItemPassiveCon (prGetItemConBonus-1) prEquipmentCon
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -29,4 +29,8 @@ prAddUnitConBonus:
 ALIGN 4
 prItemPassiveCon:
 	rPassiveStatBoosts(STAT_CON)
+
+prEquipmentCon:
+	rEquipmentBonus(STAT_CON)
+	
 #endif // MODULAR_GETTER_CONSITUTION_EVENT

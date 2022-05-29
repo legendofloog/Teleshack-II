@@ -13,26 +13,42 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(23,DeadlordSpawn,9)
 END_MAIN
+
 
 CharacterBasedEvents:
 END_MAIN
 
-LocationBasedEvents:
-Door(9,3)
-Door(15,5)
-Door(5,6)
-Door(3,11)
-Door(6,19)
-Door(13,24)
-Door(30,25)
-Chest(Mend,18,2)
-Chest(Mend,16,17)
-Chest(Mend,17,18)
 
+LocationBasedEvents:
+LOCA 9 TopLeftPrisonDoor [5,2] 0x12
+Chest(Mend,16,2)
+LOCA 10 TopMiddlePrisonDoor [10,3] 0x12
+LOCA 9 TopLeftPrisonDoor2 [3,4] 0x12
+LOCA 11 TopRightPrisonDoor [13,4] 0x12
+Seize(2,11)
+Seize(3,11)
+Seize(4,11)
+Door(10,11)
+Door(11,11)
+Door(14,11)
+Chest(Recover,13,12)
+Chest(Heal,15,12)
+Seize(6,15)
+Seize(6,16)
+Seize(2,20)
+Seize(3,20)
+Seize(4,20)
+LOCA 12 OutsidePrisonDoor [14,21] 0x12
 END_MAIN
 
+
 MiscBasedEvents:
+AFEV 13 TopLeftPrisonOpened 9
+AFEV 14 TopMiddlePrisonDoorOpened 10
+AFEV 15 TopRightPrisonDoorOpened 11
+AFEV 16 OutsidePrisonDoorOpened 12
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
@@ -59,96 +75,190 @@ Traps2:
 	ALIGN 4
 
 Units1:
-  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [2,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Loewe 0x0 Cleo Level(1,Ally,False) [34,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [32,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Loewe 0x0 Cleo Level(1,Ally,False) [32,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [32,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [33,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [33,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [33,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [30,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,10] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [29,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [28,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [29,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [30,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT
  
 MinkJoin:
-  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind] NoAI
+  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
   UNIT
 
-EnemyUnits1:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [1,26] 0x0 0x0 0x0 0x0 [SilverBow] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [34,10] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
-  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [26,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [26,10] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
-  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [26,11] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [26,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [29,3] 0x0 0x0 0x0 0x1 [IronLance,IronSword] AttackInRangeAI
-  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  UNIT Selese Thief Cidor Level(12,Enemy,True) [18,2] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [21,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+
+IndoorEnemy:
+  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
+//turn 1
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [28,9] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
+//turn 2
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [23,7] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
+  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [23,8] 0x0 0x0 0x0 0x1 [SteelLance] BossAI
+  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [23,9] 0x0 0x0 0x0 0x1 [SteelAxe] BossAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [25,8] 0x0 0x0 0x0 0x1 [IronSword] BossAI 
+//turn 3
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [14,8] 0x0 0x0 0x0 0x1 [Fire] TwoActionAI 
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [IronAxe] StallOneTurnAI 
+//turn 4
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+//turn 5
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,10] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronSword,DoorKey] BossAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [14,10] 0x0 0x0 0x0 0x1 [IronSword,DoorKey,ChestKey] BossAI
+//turn 6 
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Lightning] TwoActionAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+//turn 7
+  
+//turn 8
+
+//turn 9
+
   UNIT
 
-EnemyUnits2:
-  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [ThunderSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [5,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,12] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,14] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [2,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [3,16] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [8,17] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,19] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,19] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [20,20] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,22] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [28,22] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [34,23] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [18,24] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese Warrior Cidor Level(1,Enemy,True) [23,26] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] AttackInRangeAI
+OutdoorEnemy:
+//turn 1
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronSword,Javelin] AttackInRangeAI
+  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [27,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+//turn 2
+  UNIT Selese Thief Cidor Level(12,Enemy,True) [17,5] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [22,5] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [22,12] 0x0 0x0 0x0 0x1 [SteelLance] PursueWithoutHeedAI
+//turn 3
+  UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,18] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,18] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [17,17] 0x0 0x0 0x0 0x1 [Greatlance] TwoActionAI
+//turn 4
+  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [Hurlbat,IronAxe] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [29,19] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,20] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+//turn 5
+  UNIT Selese Warrior Cidor Level(1,Enemy,True) [15,19] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] AttackInRangeAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [17,22] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [18,23] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+//turn 6
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [7,21] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [8,22] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese PegasusRider Cidor Level(12,Enemy,True) [33,23] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
+//turn 7
+  UNIT Selese Myrmidon Cidor Level(9,Enemy,True) [4,21] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese Freelancer Cidor Level(9,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+//turn 8
+  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge] BossAI
+  
   UNIT
+
+  
+EithaSpawn:
+  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [7,21] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+  UNIT
+
 
 PrisonGreens:
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [9,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [15,4] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [12,10] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [2,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [14,24] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [31,25] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [3,2] 0x0 0x0 0x0 0x1 [BlueGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [10,1] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [13,2] 0x0 0x0 0x0 0x1 [WhiteGem] NoAI
+  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [13,23] 0x0 0x0 0x0 0x1 [Talisman] NoAI
   UNIT 
 
+
 BeginningScene:
-  MountAll
-  LOAD1 1 MinkJoin
-  LOAD1 1 EnemyUnits1
-  LOAD1 1 EnemyUnits2
-  LOAD1 1 PrisonGreens
-  ENUN
-  GotoPrepScreen
-  ENDA
+MountAll
+LOAD 1 MinkJoin
+LOAD 1 OutdoorEnemy
+LOAD 1 IndoorEnemy
+LOAD 1 PrisonGreens
+GotoPrepScreen
+ENDA
   
+TopLeftPrisonDoor:
+TILECHANGE 0
+NoFade
+ENDA
+
+TopLeftPrisonDoor2:
+TILECHANGE 3
+NoFade
+ENDA
+
 EndingScene:
-  MNC2 Ch12xInterlude
-  NoFade
-  ENDA
+FADI 15
+InterludeRemovalRoutineASMC
+MNC2 Ch12xInterlude
+NoFade
+ENDA
 
 
+TopLeftPrisonOpened:
+Text(Ch12PlaceholderText)
+GiveItem(BlueGem,0xFFFF)
+SVAL sB Coords(3,2)
+REMOVEUNIT(-2)
+NoFade
+ENDA
 
+TopMiddlePrisonDoor:
+TILECHANGE 2
+NoFade
+ENDA
 
+TopMiddlePrisonDoorOpened:
+Text(Ch12PlaceholderText)
+GiveItem(RedGem,0xFFFF)
+SVAL sB Coords(10,1)
+REMOVEUNIT(-2)
+NoFade
+ENDA
 
+TopRightPrisonDoor:
+TILECHANGE 4
+NoFade
+ENDA
 
+TopRightPrisonDoorOpened:
+Text(Ch12PlaceholderText)
+GiveItem(WhiteGem,0xFFFF)
+SVAL sB Coords(13,2)
+REMOVEUNIT(-2)
+NoFade
+ENDA
+  
+OutsidePrisonDoor:
+TILECHANGE 12
+NoFade
+ENDA
 
+OutsidePrisonDoorOpened:
+Text(Ch12PlaceholderText)
+GiveItem(Talisman,0xFFFF)
+SVAL sB Coords(13,23)
+REMOVEUNIT(-2)
+NoFade
+ENDA
+ 
+DeadlordSpawn:
+CAMERA_CENTERED [7,20]
+TILECHANGE 8
+LOAD 1 EithaSpawn
+SetFlag(0x4)
+NoFade
+ENDA

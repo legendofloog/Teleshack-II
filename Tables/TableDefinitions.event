@@ -3,15 +3,11 @@
 
 #define TABLE_DEFINITIONS
 
+
 #ifndef CharacterTable
     #define CharacterTable 0x803D30
 #endif
-#ifndef ClassTable
-  #define ClassTable 0x807110
-#endif
-#ifndef ItemTable
-  #define ItemTable 0x809B10
-#endif
+#define ItemTable NewItemTable
 #ifndef DebuffTable
   #define DebuffTable 0x203f100
 #endif
@@ -71,6 +67,17 @@
 #define VargaLock 0x0C000000
 #define EmilLock 0x0D000000
 #define RashidLock 0x0E000000
+#define ApsisLock 0x0F000000
+#define DancingBladeLock 0x11000000
+#define MaharaghiLock 0x12000000
+#define BoneClubLock 0x13000000
+#define TaodaoLock 0x14000000
+#define RunespearLock 0x15000000
+#define TarajiLock 0x16000000
+#define CatrinLock 0x17000000
+#define DarkbrandLock 0x18000000
+
+#define LumenLock 0x1A000000
 
 // Weapon Effect
 #define NoEffect 0x0

@@ -15,3 +15,15 @@
 #ifdef _test_ch15_
 #define _test_
 #endif
+
+//#define _test_ch18_
+
+#ifdef _test_ch18_
+#define _test_
+#endif
+#define UnitLvlCh18 18
+
+//#define _test_ch18x_
+#ifdef _test_ch18x_
+#define _test_
+#endif

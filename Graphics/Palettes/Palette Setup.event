@@ -235,3 +235,27 @@
 // ColossusWarrior
 	setPalette(58,ColossusWarrior)
 	setCBSP(58,Colossus, 1, Warrior)
+
+// LoeweCopyScaleshotUnmounted
+	setPalette(59,LoeweCopyScaleshotUnmounted)
+	setCBSP(59,LoeweCopy, 1, Dragonlord_Dismounted)
+
+// KofiMageKnight
+	setPalette(60,KofiMageKnight)
+	setCBSP(60,Kofi, 1, MageKnight)
+
+// KofiMageKnightDismounted
+	setPalette(61,KofiMageKnightDismounted)
+	setCBSP(61,Kofi, 2, MageKnight_Dismounted)
+
+// OjasviNoble
+	setPalette(62,OjasviNoble)
+	setCBSP(62,Ojasvi, 1, Noble_F)
+
+// ApsisBard
+	setPalette(63,ApsisBard)
+	setCBSP(63,Apsis, 1, 0x7E)
+
+// ApsisSage
+	setPalette(64,ApsisSage)
+	setCBSP(64,Apsis, 3, Sage)

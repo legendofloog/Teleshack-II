@@ -21,6 +21,8 @@ TurnEventPlayer(0, EnemyReinforcementsEvent_E, 12)
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEventBothWays(12, DraganaCleoTalkCh3, Cleo, Dragana)
+CharacterEventBothWays(14, DraganaLoeweTalkCh3, Loewe, Dragana)
 END_MAIN
 
 LocationBasedEvents:
@@ -28,7 +30,7 @@ Door(20,2)
 Chest(SteelAxe,23,2)
 Chest(RedGem,26,2)
 Door(26,6)
-DurabilityChest(GrowthScroll, BeiyrScroll,20,11)
+DurabilityChest(GrowthScroll, BeiyrScroll,21,12)
 Door(17,11)
 Door(15,13)
 LOCA 9 AlexAxelDoor [10,14] 0x12
@@ -104,7 +106,7 @@ ENDTRAP
 ALIGN 4
 
 DraganaUnit:
-UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SteelBow,Vulnerary] NoAI
+UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SilverBow,SteelBow,Vulnerary] NoAI
 UNIT
 
 
@@ -154,10 +156,8 @@ UNIT Chapter3Reinforcements Archer  Emory_Ch3 Level(4,Enemy,True) [0,11] 0x0 0x0
 UNIT
 
 EnemyReinforcementsEvent_A:
-CamOn
-LOAD1 1 EnemyReinforcements_A
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_A)
+NoFade
 ENDA
 
 EnemyReinforcements_B:
@@ -166,11 +166,9 @@ UNIT Chapter3Reinforcements Mage  Emory_Ch3 Level(3,Enemy,True) [7,0] 0x0 0x0 0x
 UNIT
 
 EnemyReinforcementsEvent_B:
-CamOn
-LOAD1 1 EnemyReinforcements_B
-ENUN
+SpawnReinforcements(EnemyReinforcements_B)
 Text(ReinforcementText)
-CamOff
+NoFade
 ENDA
 
 EnemyReinforcements_C:
@@ -182,10 +180,8 @@ UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(3,Enemy,True) [0,9] 0x0 
 UNIT
 
 EnemyReinforcementsEvent_C:
-CamOn
-LOAD1 1 EnemyReinforcements_C
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_C)
+NoFade
 ENDA
 
 EnemyReinforcements_D:
@@ -194,10 +190,8 @@ UNIT Chapter3Reinforcements Mage  Emory_Ch3 Level(3,Enemy,True) [0,10] 0x0 0x0 0
 UNIT
 
 EnemyReinforcementsEvent_D:
-CamOn
-LOAD1 1 EnemyReinforcements_D
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_D)
+NoFade
 ENDA
 
 EnemyReinforcements_E:
@@ -209,14 +203,22 @@ UNIT Chapter3Reinforcements AxeSoldier  Emory_Ch3 Level(10,Enemy,True) [15,20] 0
 UNIT
 
 EnemyReinforcementsEvent_E:
-CamOn
-LOAD1 1 EnemyReinforcements_E
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_E)
+NoFade
+ENDA
+
+DraganaCleoTalkCh3:
+Text(DraganaCleoTalkCh3Text)
+NoFade
+ENDA
+
+DraganaLoeweTalkCh3:
+Text(DraganaLoeweTalkCh3Text)
+NoFade
 ENDA
 
 AlexAxelDoor:
-TILECHANGE 8
+TILECHANGE 9
 NoFade
 ENDA
 
@@ -252,16 +254,8 @@ ENUN
 ENDA
 
 EndingScene:
+EndOfEscapeRoutineASMC
 MUSC 0x7FFF
-CheckIfUnitEscapedASMC(Mira,39)
-CheckIfUnitEscapedASMC(Iskra,72)
-CheckIfUnitEscapedASMC(Emil,308)
-CheckIfUnitEscapedASMC(Svetomir,56)
-CheckIfUnitEscapedASMC(Alena,79)
-CheckIfUnitEscapedASMC(Varga,43)
-CheckIfUnitEscapedASMC(Delilah,98)
-CheckIfUnitEscapedASMC(Alex,876)
-CheckIfUnitEscapedASMC(Axel,233)
 Text(MapEndText)
 SetBackground(CastleHallway)
 Text(EndingSceneTextA1)

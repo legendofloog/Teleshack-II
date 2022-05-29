@@ -32,7 +32,9 @@
 #define Horseslayer 0x1B
 #define Javelin 0x1C
 #define LongLance 0x1D
+#define Longlance 0x1D
 #define Greatlance 0x1E
+#define GreatLance 0x1E
 #define IronAxe 0x1F
 #define SteelAxe 0x20
 #define SilverAxe 0x21
@@ -47,7 +49,9 @@
 #define MasterAxe 0x29
 #define MasterLance 0x2A
 #define Shortbow 0x2B
+#define ShortBow 0x2B
 #define Greatbow 0x2C
+#define GreatBow 0x2C
 #define IronBow 0x2D
 #define SteelBow 0x2E
 #define SilverBow 0x2F
@@ -56,6 +60,7 @@
 #define BraveBow 0x32
 #define Bolganone 0x33
 #define Longbow 0x34
+#define LongBow 0x34
 #define LongArch 0x35
 #define IronArch 0x36
 #define KillerArch 0x37
@@ -124,6 +129,7 @@
 #define WhiteGem 0x74
 #define BlueGem 0x75
 #define RedGem 0x76
+#define Kaiserschwert_Fake 0x77
 #define Kaiserschwert 0x78
 #define ChestKey_5 0x79
 #define Mine 0x7A
@@ -140,15 +146,36 @@
 #define Sieglind 0x85
 #define Sieglinde 0x85
 #define BattleAxe 0x86
-#define Ivaldi 0x87
+#define Lumen 0x87
 #define KnightProof 0x88
+#define WindBow 0x89
+#define FireDrive 0x8A
+
+#define Stinger 0x8d
+#define MysticLance 0x8e
+#define LunarAxe 0x8f
+#define Stormbrand 0x91
+#define Darkbrand 0x92
 #define HoundingBow 0x93
+#define Daybreak 0x94
 #define HeavySpear 0x95
 
-#define Dragonstone 0xAA
+#define ArgymosCrest 0x98
 
-#define SunBracelet 0x99
-#define SolarBracelet 0x99
+#define CrownPyreItem 0x9a
+#define StormbreakerItem 0x9b
+#define AbsoluteZeroItem 0x9c
+#define EyeOfDawnItem 0x9d
+#define FaithWindItem 0x9e
+#define DancingBladeItem 0x9f
+#define BoneClub 0xa0
+#define Maharaghi 0xa1
+#define Taodao 0xa2
+#define RuneArrow 0xa3
+
+#define Dragonstone 0xAA
+#define Unmoor 0xAB
+
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
 #define GoldGem 0xBB
@@ -190,10 +217,26 @@
 #define WoodlandsHuke 0xDC
 #define CaptainsHelm 0xDD
 #define FealtyBow 0xDE
+#define Lamfada 0xDF
+#define BoldBlade 0xE0
+#define BoldPike 0xE1
+#define BoldCleaver 0xE2
+#define Luna 0xE3
+#define HeroRing 0xff
+#define EarthGreataxe 0xE4
+#define Runespear 0xE5
 
-#define Stinger 0x8d
-#define BpatItem 0x8e
-#define LunarAxe 0x8f
-#define Stormbrand 0x91
-#define ArgymosCrest 0x98
 
+#define FangAndClaw 0xE6
+#define Starcutter 0xE7
+#define FullHelm 0xE8
+#define HoplonGuard 0xE8
+#define IronRune 0xE8
+#define Swordreaver 0xE9
+#define Swordslayer 0xE9
+#define Shieldbearer 0xEA
+#define Malkhut 0xEB
+#define Malkuth 0xEB
+#define Sagittae 0xEC
+#define Kukri 0xED
+#define SlamBrace 0xEE
