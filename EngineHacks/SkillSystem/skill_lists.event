@@ -40,3 +40,9 @@ BYTE 1 DawnEyeID
 BYTE 1 WindFaithID
 BYTE 00 00
 ALIGN 4
+
+DartSkillList:
+BYTE 1 ShadePlusID
+BYTE 1 WatchfulID
+BYTE 00 00
+ALIGN 4

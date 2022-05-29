@@ -95,3 +95,13 @@ SongTable(RiseAboveID, song017B, MapMusicGroup)
 SongTable(0xD9, CrimeHeart, MapMusicGroup)
 #include "MusicEvents/DrumbeatToRuin.event"
 SongTable(0xDA, DrumbeatRuin, MapMusicGroup)
+#include "MusicEvents/SwordOfTheValiantTOTRChair.event"
+SongTable(SwordOfTheValiant, song12, MapMusicGroup)
+#include "MusicEvents/MagusChronoTriggerChair.event"
+SongTable(BattleWithMagus, BWMPointer, MapMusicGroup)
+#include "MusicEvents/TomokoQOHPandan.event"
+SongTable(TomokoQOH, song01A2, MapMusicGroup)
+#include "MusicEvents/SorrowsDistortionCastlevaniaBuggo.event"
+SongTable(SorrowsDistortion, songC3, BattleMusicGroup)
+#include "MusicEvents/GuardianSignsLegendary.event" // credit to sme!
+SongTable(GuardianSignsLegendary, LegendTheme, MapMusicGroup)

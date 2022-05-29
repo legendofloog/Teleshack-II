@@ -15,6 +15,7 @@ ALIGN 4
 PostCombatSkills: //I like having savage blow as the first one because it makes the activation sound play first
 POIN SavageBlow BreathOfLife Despoil BladeDance Lifetaker Fury BemperedRing PoisonStrike GrislyWound//lifetaker should probably go after any messages because it can mess with the palette a bit
 POIN Proc_RadianceDamage RadianceHeal RadianceMarking
+POIN GroupAI
 POIN Post_Nightcaller
 POIN AftershockPostBattle
 POIN DawnEye

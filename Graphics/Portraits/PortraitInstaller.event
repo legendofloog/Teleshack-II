@@ -63,7 +63,16 @@
 #define TakaiMug 0xEA
 #define JerryMug 0xEB
 #define LyreMug 0xEC
-#define MatthiasMug 0xF0
+#define NgondalaMug 0xED
+#define TarajiMug 0xEE
+#define TemurMug 0xEF
+#define SultaiMug 0xF0
+#define ValereMug 0xF1
+#define XleaMug 0xF2
+#define VinnyMug 0xF3
+#define CephalidMug 0xF4
+#define DartMug 0xF5
+#define MatthiasMug 0xF6
 
 // NPCs
 #define EliasMug 0xB
@@ -991,3 +1000,75 @@ MatthiasMugData:
 #incbin "Dmp/Matthias(Levin)_palette.dmp"
 #incbin "Dmp/Matthias(Levin)_minimug.dmp"
 setMugEntry(MatthiasMug, MatthiasMugData, 2, 5, 3, 3)
+
+ALIGN 16
+NgondalaMugData:
+#incbin "Dmp/Ngondala (ZessDynamite)_mug.dmp"
+#incbin "Dmp/Ngondala (ZessDynamite)_frames.dmp"
+#incbin "Dmp/Ngondala (ZessDynamite)_palette.dmp"
+#incbin "Dmp/Ngondala (ZessDynamite)_minimug.dmp"
+setMugEntry(NgondalaMug, NgondalaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TarajiMugData:
+#incbin "Dmp/Taraji (ZessDynamite)_mug.dmp"
+#incbin "Dmp/Taraji (ZessDynamite)_frames.dmp"
+#incbin "Dmp/Taraji (ZessDynamite)_palette.dmp"
+#incbin "Dmp/Taraji (ZessDynamite)_minimug.dmp"
+setMugEntry(TarajiMug, TarajiMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TemurMugData:
+#incbin "Dmp/Temur (Stitch)_mug.dmp"
+#incbin "Dmp/Temur (Stitch)_frames.dmp"
+#incbin "Dmp/Temur (Stitch)_palette.dmp"
+#incbin "Dmp/Temur (Stitch)_minimug.dmp"
+setMugEntry(TemurMug, TemurMugData, 3, 5, 3, 3)
+
+ALIGN 16
+SultaiMugData:
+#incbin "Dmp/Sultai (ZessDynamite)_mug.dmp"
+#incbin "Dmp/Sultai (ZessDynamite)_frames.dmp"
+#incbin "Dmp/Sultai (ZessDynamite)_palette.dmp"
+#incbin "Dmp/Sultai (ZessDynamite)_minimug.dmp"
+setMugEntry(SultaiMug, SultaiMugData, 3, 5, 3, 3)
+
+ALIGN 16
+DartMugData:
+#incbin "Dmp/Dart (ZessDynamite)_mug.dmp"
+#incbin "Dmp/Dart (ZessDynamite)_frames.dmp"
+#incbin "Dmp/Dart (ZessDynamite)_palette.dmp"
+#incbin "Dmp/Dart (ZessDynamite)_minimug.dmp"
+setMugEntry(DartMug, DartMugData, 3, 6, 3, 4)
+
+ALIGN 16
+XleaMugData:
+#incbin "Dmp/Xlea (GenericPretsel)_mug.dmp"
+#incbin "Dmp/Xlea (GenericPretsel)_frames.dmp"
+#incbin "Dmp/Xlea (GenericPretsel)_palette.dmp"
+#incbin "Dmp/Xlea (GenericPretsel)_minimug.dmp"
+setMugEntry(XleaMug, XleaMugData, 2, 5, 3, 3)
+
+ALIGN 16
+CephalidMugData:
+#incbin "Dmp/Cephalid (ZessDynamite)_mug.dmp"
+#incbin "Dmp/Cephalid (ZessDynamite)_frames.dmp"
+#incbin "Dmp/Cephalid (ZessDynamite)_palette.dmp"
+#incbin "Dmp/Cephalid (ZessDynamite)_minimug.dmp"
+setMugEntry(CephalidMug, CephalidMugData, 3, 5, 3, 3)
+
+ALIGN 16
+VinnyMugData:
+#incbin "Dmp/Vinny (WAve)_mug.dmp"
+#incbin "Dmp/Vinny (WAve)_frames.dmp"
+#incbin "Dmp/Vinny (WAve)_palette.dmp"
+#incbin "Dmp/Vinny (WAve)_minimug.dmp"
+setMugEntry(VinnyMug, VinnyMugData, 2, 5, 3, 3)
+
+ALIGN 16
+ValereMugData:
+#incbin "Dmp/Valere (NickT)_mug.dmp"
+#incbin "Dmp/Valere (NickT)_frames.dmp"
+#incbin "Dmp/Valere (NickT)_palette.dmp"
+#incbin "Dmp/Valere (NickT)_minimug.dmp"
+setMugEntry(ValereMug, ValereMugData, 4, 5, 4, 3)

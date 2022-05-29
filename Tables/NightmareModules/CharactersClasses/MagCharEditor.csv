@@ -59,8 +59,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x39 Tara,0,5
 0x3A Jerry,-1,0
 0x3B Lyre,2,10
-0x3C <Summon>,0,0
-0x3D <'Summonern'>,0,0
+0x3C Ngondala,6,30
+0x3D CatrinReal,9,35
 0x3E Matthias,5,45
 0x3F Ewan's Summon,0,0
 0x40 Kofi,5,20
@@ -174,13 +174,13 @@ Wrathgar (Ch 9),2,5
 0xAC Loewe,0,0
 0xAD Shafaqat,10,0
 0xAE Barod2,0,0
-0xAF Monster,0,0
-0xB0 Monster,0,0
-0xB1 Monster,0,0
+0xAF Monster,9,0
+0xB0 Monster,2,0
+0xB1 Monster,7,0
 0xB2 Monster,0,0
 0xB3 Monster,0,0
-0xB4 Monster,0,0
-0xB5 Monster,0,0
+0xB4 Monster,5,0
+0xB5 Monster,7,0
 0xB6 Monster,0,0
 0xB7 Monster,0,0
 0xB8 Monster,0,0

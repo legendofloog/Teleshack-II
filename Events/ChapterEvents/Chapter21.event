@@ -1,0 +1,808 @@
+EventPointerTable(Chapter21Events, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1
+	POIN $0 $0 $0 
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
+	TurnEventPlayer(0,Turn1Scene,1)
+	TurnEventEnemy(0,DartBecomeEvil,1)
+	TurnEventPlayer(0,Ch21ReinfT2,2)
+	TurnEventPlayer(0,Ch21ReinfT5,5)
+	TurnEventPlayer(0,Ch21SpawnThieves,6)
+	TurnEventPlayer(0,Ch21SpawnSneks,8)
+	TurnEventPlayer(0,Ch21ReinforcementWarn,10)
+	TurnEventPlayer(0,Ch21Reinforcements,11)
+END_MAIN
+
+CharacterBasedEvents:
+	CharacterEventBothWays(0xC, SaveValere, 0x00, Valere)
+	CharacterEventBothWays(0xF, SaveDart, 0x00, Dart)
+	CharacterEventBothWays(0x10, AxleTalkEvent, Alex, Axel)
+	CharacterEventBothWays(0x11, JerrySecretEvent, Jerry, Temur)
+	CharacterEventBothWays(0x12, JacinthSecretEvent, Jacinth, Sultai)
+	CharacterEventBothWays(0x13, LeinaSecretEvent, Leina, Valere)
+END_MAIN
+
+MiscBasedEvents:
+	DefeatBoss(EndingScene)
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+	Seize(0x4,EnterPhase2,13,19)
+	Armory(Ch21Armory,24,21)
+	Vendor(Ch21Vendor,21,20)
+	House(0xA,TemurVillage,14,37)
+	House(0xB,SultaiVillage,23,19)
+	House(0xD,NgondalaVillage,1,38)
+END_MAIN
+
+Dunno1:
+	END_MAIN
+
+Dunno2:
+	END_MAIN
+
+Dunno3:
+	END_MAIN
+
+Tutorial:
+	END_MAIN
+
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+MountAll
+DismountSingleUnit(Loewe)
+LOMA Chapter20
+WEATHER 4
+VCWF 6 // holy epic ??? fog ??? gaming ??? real cromar hours
+LOAD1 0x1 StartEventLoewe
+LOAD1 0x1 StartEventTarajiGoons
+ENUN
+CAM1 [22,12]
+FadeBackFromBlack
+CameraCursor(Loewe)
+CameraCursor(Taraji)
+Text(Chapter21Intro_1)
+MoveCoords(19,12,18,12)
+ENUN
+FadeToBlack
+STAL 60
+SoundEffect(0xCE)
+STAL 60
+SoundEffect(0xD8)
+STAL 60
+FadeBackFromBlack
+CameraCursor(Loewe)
+Text(Chapter21Intro_2)
+MUSC FE5_InTheBattle_Fate
+LOAD1 0x1 StartEventCatrin
+ENUN
+MoveCoords(18,18,18,13)
+ENUN
+CameraCursor(Catrin)
+Text(Chapter21Intro_3)
+CameraCursor(Loewe)
+MoveCoords(17,12,16,11,18)
+ENUN
+REMOVEALL_BLUE
+CameraCursor(Catrin)
+CameraCursor(Taraji)
+Text(Chapter21Intro_4)
+FadeToBlack
+STAL 60
+SoundEffect(0xD8)
+STAL 60
+SoundEffect(0xD5)
+STAL 60
+SoundEffect(0xD5)
+STAL 60
+SoundEffect(0xD5)
+STAL 60
+REMOVEALL_GREEN
+REMOVEALL_RED
+LOAD1 0x1 StartEventDuelistsNew
+ENUN
+CAM1 [13,13]
+FadeBackFromBlack
+CameraCursor(Catrin)
+Text(Chapter21Intro_5)
+LOAD1 0x1 StartEventCleo
+ENUN
+MoveCoords(0,11,13,12)
+ENUN
+CameraCursor(Cleo)
+Text(Chapter21Intro_6)
+FadeToBlack
+RemoveAll
+LOMA Chapter21
+MountAll
+WEATHER 0
+VCWF 0 // the fog is HECKING dead, chief
+Music(GuardianSignsLegendary)
+SetBackground(0x21) // this should be some sort of island background. or maybe open sea?
+FadeBackFromBlack
+Text(Chapter21Intro_KassandraSus)
+FadeToBlack
+MUSC FF6AwakeningID
+SetBackground(0x29) // can we replace this with a cool tent/army camp background or something?
+FadeBackFromBlack
+Text(Chapter21Intro_WarCamp)
+FadeToBlack
+MUSC Rovers
+FadeBackFromBlack
+Text(Chapter21Intro_BoroDepressed)
+FadeToBlack
+MUSC Sortie_Formation
+SetBackground(0x1F)
+FadeBackFromBlack
+Text(Chapter21PostPreps_1)
+FadeToBlack
+LOAD1 0x1 InitialValereSquad
+LOAD1 0x1 InitialEnemies
+ENUN
+TILECHANGE 0x0
+ENUN
+CheckIfFatigued(Jerry)
+BEQ 420 s0 sC
+	SetFatigueOneLess(Jerry)
+LABEL 420
+CheckIfFatigued(Jacinth)
+BEQ 690 s0 sC
+	SetFatigueOneLess(Jacinth)
+LABEL 690
+CheckIfFatigued(Leina)
+BEQ 776 s0 sC
+	SetFatigueOneLess(Leina)
+LABEL 776
+GotoPrepScreen
+ENDA
+
+Turn1Scene:
+FadeBackFromBlack
+CenterTextbox(Chapter21PostPreps_2)
+MUSC Sortie_Formation
+CameraCursor(Vinny)
+CameraCursor(Valere)
+Text(Chapter21PostPreps_3)
+CenterTextbox(Ch21_ExplainMasala)
+NoFade
+ENDA
+
+DartBecomeEvil:
+MUSC FFTAnxiety
+CameraCursor(Vinny)
+CameraCursor(Dart)
+Text(Ch21TheSusDart)
+CUSE Dart
+NoFade
+ENDA
+
+TemurVillage:
+// Cephalid's death should set 0x0E
+TILECHANGE 0x04
+FlagIsSet(0x0E,0x01) //jumps to label if cephalid is alive
+MUSC(WithUs_Song)
+Text(Ch21TemurIsGoDialogue)
+CenterTextbox(Ch21TemurIsGo)
+GOTO 0x02
+LABEL 0x01
+Text(Ch21TemurTask)
+UnsetFlag(0x0A)
+TILEREVERSE 0x04
+LABEL 0x02
+NoFade
+ENDA
+
+SultaiVillage:
+TILECHANGE 0x02
+CHECK_MONEY
+IBlt(5999, 0xF0) // choice section below happens if gold is above
+Text(Ch21SultaiTaskPrompt)
+SVAL s1 0x1
+BEQ 0xAE s1 sC
+	Text(Ch21SultaiSayNo)
+	UnsetFlag(0x0B)
+	TILEREVERSE 0x02
+	GOTO 0xE
+LABEL 0xAE
+MUSC(WithUs_Song)
+Text(Ch21SultaiIsGoDialogue)
+CenterTextbox(Ch21SultaiIsGo)
+SVAL s3 6000
+TAKEMONEY
+GOTO 0xE
+LABEL 0xF0
+Text(Ch21SultaiTaskMaidenless)
+UnsetFlag(0x0B)
+TILEREVERSE 0x02
+LABEL 0xE
+NoFade
+ENDA
+
+SaveValere:
+MUSC(WithUs_Song)
+Text(Ch21ValereIsGoDialogue)
+CenterTextbox(Ch21ValereIsGo)
+FadeToBlack
+DISA Valere
+TILECHANGE 0x1
+FadeBackFromBlack
+NoFade
+ENDA
+
+SaveDart:
+Text(Ch21DartTalk)
+FadeToBlack
+DISA Dart
+FadeBackFromBlack
+NoFade
+ENDA
+
+NgondalaVillage:
+TILECHANGE 0x03
+// Dart's rescue should set 0x0F
+FlagIsSet(0x0F,0x01) //jumps to label if cephalid is alive
+MUSC(WithUs_Song)
+Text(Ch21NgondalaIsGoDialogue)
+CenterTextbox(Ch21NgondalaIsGo)
+GOTO 0x02
+LABEL 0x01
+Text(Ch21NgondalaTask)
+UnsetFlag(0x0D)
+TILEREVERSE 0x03
+LABEL 0x02
+NoFade
+ENDA
+
+Ch21SpawnThieves:
+FlagNotSet(0x04,69)
+	Music(FFTAnxiety)
+	SpawnReinforcements(EscapingThieves)
+	SilentGiveItem(GrowthScroll,0x64)
+	SetUnitItemDurability(0x64,1,DreedurScroll)
+	FlagNotSet(0x0E,420)
+		CameraCursor(Cephalid)
+		CameraCursor(0x64)
+		Text(Ch21Thieves_CephAlive)
+		GOTO 69
+	LABEL 420
+	CameraCursor(0x64)
+	Text(Ch21Thieves_CephDead)
+LABEL 69
+NoFade
+ENDA
+
+Ch21ReinforcementWarn:
+FlagNotSet(0x04,69)
+Text(Ch21ReinfWarnText)
+LABEL 69
+NoFade
+ENDA
+
+Ch21Reinforcements:
+FlagNotSet(0x04,69)
+SpawnReinforcements(Ch21ReinforcementSquad)
+LABEL 69
+NoFade
+ENDA
+
+Ch21ReinfT2:
+FlagNotSet(0x04,69)
+SpawnReinforcements(Ch21DudesTurn2)
+LABEL 69
+NoFade
+ENDA
+
+Ch21ReinfT5:
+FlagNotSet(0x04,69)
+SpawnReinforcements(Ch21ArmorsTopLeft)
+LABEL 69
+NoFade
+ENDA
+
+Ch21SpawnSneks:
+FlagNotSet(0x04,69)
+SpawnReinforcements(Ch21Wyverns)
+LABEL 69
+NoFade
+ENDA
+
+// flag A for temur, flag B for sultai, flag C for valere, flag D for ngondala
+
+EnterPhase2:
+FadeOutMusic
+CameraCursor(Loewe)
+CameraCursor(Cleo)
+Text(Ch21_EnterFort_1)
+FadeToBlack
+TILEREVERSE 0x0
+REMOVEALL_GREEN
+REMOVEALL_RED
+LOAD1 0x1 InsideFortressEnemies
+ENUN
+WEATHER 4
+FlagIsSet(0xA, 0xA)
+LOAD1 0x1 TemurSquad
+ENUN
+LABEL 0xA
+FlagIsSet(0xB, 0xB)
+LOAD1 0x1 SultaiSquad
+ENUN
+LABEL 0xB
+FlagIsSet(0xC, 0xC)
+LOAD1 0x1 ValereSquad
+ENUN
+LABEL 0xC
+FlagIsSet(0xD, 0xD)
+LOAD1 0x1 NgondalaSquad
+ENUN
+SilentGiveItem(Sigil,Ngondala)
+LABEL 0xD
+FadeBackFromBlack
+MUSC BattleWithMagus
+CameraCursor(Taraji)
+Text(Ch21_EnterFort_2)
+// begin temur fort entrance event!
+FlagIsSet(0xA, 0xE)
+CameraCursor(Temur)
+Text(Ch21_EnterFort_Temur)
+LABEL 0xE
+// well, it's almost junding them out
+FlagIsSet(0xB, 0xF)
+CameraCursor(Sultai)
+Text(Ch21_EnterFort_Sultai)
+TILECHANGE 0x05
+LABEL 0xF
+// masala moment
+FlagIsSet(0xC, 0x10)
+CameraCursor(Valere)
+Text(Ch21_EnterFort_Valere)
+LABEL 0x10
+// the baron, chief. she's a unit
+FlagIsSet(0xD, 0x11)
+CameraCursor(Ngondala)
+Text(Ch21_EnterFort_Ngondala)
+LABEL 0x11
+CenterTextbox(Ch21_EnterFort_TutorialBox)
+NoFade
+ENDA
+
+EndingScene:
+SetFlag(0x19)
+SetFlag(0x01)
+FadeOutMusic
+FadeToBlack
+RemoveAll
+DismountAll
+LOAD1 0x1 EndingCutsceneGroup1
+ENUN
+SetHP(1,13,1)
+FadeBackFromBlack
+CameraCursor(Taraji)
+CameraCursor(KwameReal)
+Text(Ch21Ending_1)
+// MUSC FTL Faster than Light The Last Stand
+CameraCursor(Cleo)
+MoveCoords(12,3,8,13,2)
+Text(Ch21Ending_2)
+MoveCoords(14,3,16,14,1)
+ENUN
+STAL 16
+StartBattle
+	CriticalHit(0,99)
+	EndAttack
+	FIGHT Loewe Taraji Kaiserschwert False
+FadeToBlack
+STAL 60
+SoundEffect(0xD6)
+DISA Taraji
+STAL 60
+FadeBackFromBlack
+CameraCursor(KwameReal)
+Text(Ch21Ending_3)
+LOAD1 0x1 EndingCutsceneCatrin
+ENUN
+MoveCoords(4,11,8,11,5)
+ENUN
+Music(Rovers)
+CameraCursor(CatrinReal)
+Text(Ch21Ending_Catrin1)
+STAL 16
+SoundEffect(0xCE) // RW PICK A SOUND EFFECT FOR THIS
+STAL 16
+Text(Ch21Ending_Catrin2)
+FadeOutMusic
+CameraCursor(Cleo)
+Text(Ch21Ending_Catrin3)
+FadeToBlack
+RemoveAll
+SpawnReinforcements(EndingCutsceneKassandra)
+ENUN
+Music(GuardianSignsLegendary)
+FadeBackFromBlack
+CameraCursor(Kassandra)
+Text(Ch21Ending_Thievery)
+CameraCursor(Kassandra)
+MoveCoords(13,18,8,24,24)
+ENUN
+DISA Kassandra
+Music(FE5_Adversity)
+CameraCursor(KwameReal)
+Text(Ch21Ending_BadSituation)
+FadeToBlack
+RemoveAll
+SpawnReinforcements(LoeweCatrinStairsChat)
+Music(FF5_Nostalgia)
+FadeBackFromBlack
+CameraCursor(Loewe)
+CameraCursor(CatrinReal)
+Text(Ch21Ending_CatrinBeBlue)
+CUSA CatrinReal
+SilentGiveItem(GrowthScroll,CatrinReal)
+SetUnitItemDurability(CatrinReal,4,CherneScroll)
+CameraCursor(CatrinReal)
+CenterTextbox(Ch21CatrinJoins) // already inserted!
+FadeToBlack
+MUSC FF6AwakeningID
+SetBackground(0x29)
+CHECK_EVENTID 0xD
+BEQ 0x44 0xc 0x0
+	CHECK_ALIVE Ngondala
+	BEQ 0x44 0x0 0xC
+		FadeBackFromBlack
+		Text(Ch21Ending_NgondalaDepressed)
+		FadeToBlack
+LABEL 0x44
+FadeBackFromBlack
+Text(Ch21Ending_BoroLeaves)
+FadeToBlack
+MUSC WindyDaySoundEffect
+SetBackground(0x03) // make this a snowy version
+FadeBackFromBlack
+Text(Ch21Cythes_Trajan)
+FadeToBlack
+SetBackground(0x06) // make this snowy too
+FadeBackFromBlack
+Text(Ch21Cythes_1)
+STAL 16
+Text(Ch21Cythes_2)
+FadeToBlack
+SetBackground(0x0C)
+Music(FFTAnxiety)
+FadeBackFromBlack
+Text(Ch21Cythes_3)
+FadeToBlack
+MNC2 Chapter22
+NoFade
+ENDA
+
+
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [4,38] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [5,39] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT KwameReal 0x0 Cleo Level(1,Ally,False) [4,39] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,37] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,40] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,40] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,38] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,38] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,37] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,39] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,40] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,39] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,37] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,38] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+InitialValereSquad:
+UNIT Valere Paladin 0x0 Level(6,NPC,False) [6,27] 0x0 0x0 0x0 0x0 [StoneSword,Physic,CaptainsHelm] BossAI
+UNIT Chouwouj General 0x0 Level(2,NPC,True) [5,28] 0x0 0x0 0x0 0x0 [MasterAxe,KingShield] BossAI
+UNIT Chouwouj General 0x0 Level(2,NPC,True) [7,28] 0x0 0x0 0x0 0x0 [Shieldbearer,KingShield] BossAI
+UNIT Chouwouj MageArmor 0x0 Level(20,NPC,True) [6,29] 0x0 0x0 0x0 0x0 [Elfire,KingShield] BossAI
+UNIT Dart Noble_F 0x0 Level(1,NPC,False) [1,17] 0x0 0x0 0x0 0x0 [CivilianProof] BossAI
+UNIT
+
+InitialEnemies:
+UNIT Vinny Noble 0x0 Level(10,Enemy,False) [1,19] 0x0 0x0 0x0 0x0 [ParagonSword,FullHelm,BlueGem,KnightProof] BossAI
+UNIT Cephalid Berserker 0x0 Level(3,Enemy,False) [16,29] 0x0 0x0 0x0 0x0 [HandAxe,Swordslayer,BlueGem,KnightProof] BossAI
+UNIT Bandit Ballistician Cephalid Level(20,Enemy,True) [18,31] 0x0 0x0 0x0 0x0 [SlimArch] BossAI
+UNIT Bandit Brigand Cephalid Level(20,Enemy,True) [18,30] 0x0 0x0 0x0 0x0 [TrainedAxe] [0x0,0x3,0x4,0x1]
+UNIT Bandit Brigand Cephalid Level(20,Enemy,True) [19,31] 0x0 0x0 0x0 0x0 [TrainedAxe] [0x0,0x3,0x4,0x1]
+UNIT Bandit Pirate Cephalid Level(20,Enemy,True) [18,28] 0x0 0x0 0x0 0x0 [Swordslayer] RangeAI
+UNIT Bandit Freelancer Cephalid Level(20,Enemy,True) [20,30] 0x0 0x0 0x0 0x0 [Javelin,SteelLance,Vulnerary] BossAI
+UNIT Bandit Brigand Cephalid Level(20,Enemy,True) [16,32] 0x0 0x0 0x0 0x0 [TrainedAxe] [0x0,0x3,0x4,0x2]
+UNIT Bandit SwordFighter Cephalid Level(20,Enemy,True) [15,31] 0x0 0x0 0x0 0x0 [SteelSword] [0x0,0x3,0x4,0x2]
+UNIT Bandit Hunter Cephalid Level(20,Enemy,True) [15,32] 0x0 0x0 0x0 0x0 [SteelBow] [0x0,0x3,0x4,0x2]
+UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [15,18] 0x0 0x0 0x0 0x0 [TrainedArc] [0x0,0x3,0x4,0x3]
+UNIT C20Enemy AxeKnight 0x0 Level(20,Enemy,True) [11,18] 0x0 0x0 0x0 0x0 [SteelAxe] [0x0,0x3,0x4,0x3]
+UNIT C20Enemy Paladin 0x0 Level(6,Enemy,True) [12,18] 0x0 0x0 0x0 0x0 [TrainedEdge,Mend] [0x0,0x3,0x4,0x3]
+UNIT C20Enemy GoldKnight 0x0 Level(6,Enemy,True) [14,18] 0x0 0x0 0x0 0x0 [IceSword] [0x0,0x3,0x4,0x3]
+UNIT C20Enemy AxeFighter 0x0 Level(20,Enemy,True) [5,34] 0x0 0x0 0x0 0x0 [Hammer] ChargeAI
+UNIT C20Enemy AxeFighter 0x0 Level(20,Enemy,True) [7,34] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT C20Enemy DarkBishop 0x0 Level(6,Enemy,True) [6,33] 0x0 0x0 0x0 0x0 [Jormungand] ChargeAI
+UNIT C20Enemy General 0x0 Level(6,Enemy,True) [8,39] 0x0 0x0 0x0 0x0 [8,39] ChargeAI
+UNIT C20Enemy Bard 0x0 Level(20,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
+UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
+UNIT C20Enemy SwordKnight 0x0 Level(20,Enemy,True) [2,25] 0x0 0x0 0x0 0x0 [FlameSword] ChargeAI
+UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [1,35] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
+UNIT C20Enemy Champion 0x0 Level(6,Enemy,True) [1,22] 0x0 0x0 0x0 0x0 [Horseslayer,Javelin] ChargeAI
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [2,18] 0x0 0x0 0x0 0x0 [SteelBow] RangeAI
+UNIT C20Enemy Warrior 0x0 Level(6,Enemy,True) [0,21] 0x0 0x0 0x0 0x0 [WindBow,TrainedAxe,RedGem] [0x0,0x3,0x4,0x4]
+UNIT C20Enemy Berserker 0x0 Level(6,Enemy,True) [3,20] 0x0 0x0 0x0 0x0 [BoldCleaver] [0x0,0x3,0x4,0x4]
+UNIT C20Enemy GreatKnight 0x83 Level(6,Enemy,True) [16,39] 0x0 0x0 0x0 0x0 [SilverAxe] ChargeAI
+UNIT C20Enemy SwordKnight 0x83 Level(20,Enemy,True) [16,38] 0x0 0x0 0x0 0x0 [SteelSword,Vulnerary] ChargeAI
+UNIT C20Enemy SwordKnight 0x83 Level(20,Enemy,True) [16,40] 0x0 0x0 0x0 0x0 [SleepSword] ChargeAI
+UNIT C20Enemy BowKnight 0x83 Level(20,Enemy,True) [17,39] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
+UNIT C20Enemy Warrior 0x84 Level(6,Enemy,True) [20,41] 0x0 0x0 0x0 0x0 [TrainedAxe,TrainedArc,Vulnerary] ChargeAI
+UNIT C20Enemy Myrmidon 0x84 Level(20,Enemy,True) [21,40] 0x0 0x0 0x0 0x0 [Greatsword] ChargeAI
+UNIT C20Enemy SwordFighter 0x0 Level(20,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [Kukri,KnightProof] RangeAI
+UNIT C20Enemy Halberdier 0x0 Level(6,Enemy,True) [10,27] 0x0 0x0 0x0 0x0 [KillerAxe] RangeAI
+UNIT C20Enemy Bard 0x0 Level(20,Enemy,True) [22,21] 0x0 0x0 0x0 0x0 [Thunder] TwoActionAI
+UNIT C20Enemy AxeFighter 0x0 Level(20,Enemy,True) [23,22] 0x0 0x0 0x0 0x0 [TrainedAxe,HandAxe,RedGem,Vulnerary] TwoActionAI
+UNIT C20Enemy HighPriest 0x0 Level(6,Enemy,True) [23,35] 0x0 0x0 0x0 0x0 [Purge,Physic] BossHealAI
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [9,40] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
+UNIT C20Enemy Bard 0x0 Level(20,Enemy,True) [9,38] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] ChargeAI
+UNIT C20Enemy Baron 0x0 Level(6,Enemy,True) [13,19] 0x0 0x0 0x0 0x0 [Brenthunder,LightRune,RedGem] BossAI
+UNIT C20Enemy Freelancer 0x0 Level(20,Enemy,True) [12,19] 0x0 0x0 0x0 0x0 [Shieldbearer,KnightProof] [0x0,0x3,0x4,0x5]
+UNIT C20Enemy Myrmidon 0x0 Level(20,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Greatsword,RedGem] [0x0,0x3,0x4,0x5]
+UNIT C20Enemy Hero 0x0 Level(6,Enemy,True) [23,30] 0x0 0x0 0x0 0x0 [TrainedEdge,TrainedAxe] [0x0,0x3,0x4,0x8]
+UNIT C20Enemy Freelancer 0x0 Level(20,Enemy,True) [24,29] 0x0 0x0 0x0 0x0 [MysticLance] [0x0,0x3,0x4,0x8]
+UNIT C20Enemy Sister 0x0 Level(20,Enemy,True) [23,21] 0x0 0x0 0x0 0x0 [Lightning] RangeAI
+UNIT C20Enemy Champion 0x0 Level(6,Enemy,True) [18,23] 0x0 0x0 0x0 0x0 [SilverLance,RedGem] [0x0,0x3,0x4,0x6]
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [17,21] 0x0 0x0 0x0 0x0 [TrainedArc,Vulnerary] [0x0,0x3,0x4,0x6]
+UNIT
+
+Ch21DudesTurn2:
+UNIT C20Enemy Freelancer 0x0 Level(20,Enemy,True) [20,41] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [21,41] 0x0 0x0 0x0 0x0 [Longbow] ChargeAI
+UNIT
+
+Ch21ArmorsTopLeft:
+UNIT C20Enemy AxeArmor 0x0 Level(20,Enemy,True) [0,21] 0x0 0x0 0x0 0x0 [HandAxe] ChargeAI
+UNIT C20Enemy SwordArmor 0x0 Level(20,Enemy,True) [3,20] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT
+
+EscapingThieves:
+UNIT Bandit Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA17R30 [IronSword,KnightProof,RedGem,Rewarp] EscapeOnlyAI
+UNIT 0x64 Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA16R31 [RitualKnife] EscapeOnlyAI
+UNIT
+
+Ch21Wyverns:
+UNIT C20Enemy DragonRider 0x0 Level(20,Enemy,True) [0,40] 0x0 0x0 0x0 0x0 [TrainedAxe,HandAxe] ChargeAI
+UNIT C20Enemy PegasusRider 0x0 Level(20,Enemy,True) [1,41] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT C20Enemy DragonRider 0x0 Level(20,Enemy,True) [23,41] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT C20Enemy PegasusRider 0x0 Level(20,Enemy,True) [24,40] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT
+
+Ch21ReinforcementSquad:
+UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [11,15] 0x0 0x0 0x1 REDA11R17 [TrainedArc] ChargeAI
+UNIT C20Enemy Halberdier 0x0 Level(6,Enemy,True) [12,15] 0x0 0x0 0x1 REDA12R17 [BoldPike,KnightProof] ChargeAI
+UNIT C20Enemy Sister 0x0 Level(20,Enemy,True) [13,15] 0x0 0x0 0x1 REDA13R17 [Malkhut,Mend] ChargeHealAI
+UNIT C20Enemy Berserker 0x0 Level(6,Enemy,True) [14,15] 0x0 0x0 0x1 REDA14R17 [BraveAxe] ChargeAI
+UNIT C20Enemy SwordFighter 0x0 Level(20,Enemy,True) [15,15] 0x0 0x0 0x1 REDA15R17 [TrainedEdge] ChargeAI
+UNIT
+
+// enemies within the sus fort!
+
+ValereSquad:
+UNIT Valere Paladin_Dismounted 0x0 Level(6,NPC,False) [13,11] 0x0 0x0 0x0 0x0 [StoneSword,Physic,CaptainsHelm] BossAI
+UNIT Chouwouj General 0x0 Level(2,NPC,True) [12,11] 0x0 0x0 0x0 0x0 [MasterAxe,KingShield] BossAI
+UNIT Chouwouj General 0x0 Level(2,NPC,True) [14,11] 0x0 0x0 0x0 0x0 [Shieldbearer,KingShield] BossAI
+UNIT
+
+TemurSquad:
+UNIT Temur Warrior 0x0 Level(1,NPC,False) [13,12] 0x0 0x0 0x0 0x0 [MasterBow,Swordslayer,Vulnerary,Vulnerary] [0x0 0x3 0xB 0x0]
+UNIT Chouwouj Brigand 0x0 Level(20,NPC,True) [11,12] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT Chouwouj Hunter 0x0 Level(20,NPC,True) [12,12] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
+UNIT Chouwouj Freelancer 0x0 Level(20,NPC,True) [14,12] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Chouwouj SwordFighter 0x0 Level(20,NPC,True) [15,12] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT
+
+SultaiSquad:
+UNIT Sultai ThiefFighter 0x0 Level(6,NPC,False) [13,13] 0x0 0x0 0x0 0x0 [KingSword,FullHelm,Elixir] ChargeAI
+UNIT Chouwouj Hero 0x0 Level(3,NPC,True) [8,14] 0x0 0x0 0x0 0x0 [LunarAxe,TrainedEdge] ChargeAI
+UNIT Chouwouj Swordmaster 0x0 Level(3,NPC,True) [17,13] 0x0 0x0 0x0 0x0 [Kukri] ChargeAI
+UNIT
+
+NgondalaSquad:
+UNIT Ngondala Baron 0x0 Level(5,Ally,False) [13,14] 0x0 0x0 0x0 0x0 [Purge,Sagittae,Flux,Mend] ChargeAI
+UNIT Chouwouj DarkBishop 0x0 Level(4,NPC,True) [12,14] 0x0 0x0 0x0 0x0 [Jormungand,Mend] [0xE 0x0 0xC 0x0]
+UNIT Chouwouj HighPriest 0x0 Level(4,NPC,True) [14,14] 0x0 0x0 0x0 0x0 [Malkhut,Mend] [0xE 0x0 0xC 0x0]
+UNIT
+
+InsideFortressEnemies:
+UNIT Taraji Swordmaster_F 0x0 Level(20,Enemy,False) [13,1] 0x0 0x0 0x0 0x0 [FangAndClaw] [0,6,4,7]
+UNIT Xlea Hero 0x0 Level(12,Enemy,False) [13,8] 0x0 0x0 0x0 0x0 [Axle1,Axle2,KnightProof] ChargeAI
+UNIT DeathRattle Berserker 0x0 Level(6,Enemy,True) [12,0] 0x0 0x0 0x0 0x0 [SilverAxe,LightRune] [0,6,4,7]
+UNIT DeathRattle Sniper 0x0 Level(6,Enemy,True) [13,0] 0x0 0x0 0x0 0x0 [SilverBow] [0,6,4,7]
+UNIT DeathRattle Berserker 0x0 Level(6,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [Swordslayer,Vulnerary] [0,6,4,7]
+UNIT DeathRattle Warrior 0x0 Level(6,Enemy,True) [12,9] 0x0 0x0 0x0 0x0 [Poleaxe] ChargeAI
+UNIT DeathRattle Berserker 0x0 Level(6,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [SilverAxe] ChargeAI
+UNIT DeathRattle Warrior 0x0 Level(6,Enemy,True) [14,9] 0x0 0x0 0x0 0x0 [BoldCleaver] ChargeAI
+UNIT DeathRattle Champion 0x0 Level(6,Enemy,True) [11,8] 0x0 0x0 0x0 0x0 [Greatlance] ChargeAI
+UNIT DeathRattle DarkBishop 0x0 Level(6,Enemy,True) [15,8] 0x0 0x0 0x0 0x0 [Hel] ChargeAI
+UNIT DeathRattle LongBallista 0x0 Level(1,Enemy,True) [19,14] 0x0 0x0 0x0 0x0 [SlimArch] BossAI
+UNIT DeathRattle LongBallista 0x0 Level(1,Enemy,True) [7,14] 0x0 0x0 0x0 0x0 [SlimArch,Vulnerary] BossAI
+UNIT DeathRattle Sage 0x0 Level(6,Enemy,True) [9,14] 0x0 0x0 0x0 0x0 [Sagittae,Physic] [0xE 0x3 0x0 0x0]
+UNIT DeathRattle Sniper 0x0 Level(6,Enemy,True) [17,14] 0x0 0x0 0x0 0x0 [GaleBow] TwoActionAI
+UNIT DeathRattle Hero 0x0 Level(6,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [TrainedEdge,TrainedAxe] ChargeAI
+UNIT DeathRattle Sage 0x0 Level(6,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [AlairsGale,Mend] ChargeAI
+UNIT DeathRattle Berserker 0x0 Level(6,Enemy,True) [20,6] 0x0 0x0 0x0 0x0 [FireDrive,LunarAxe] ChargeAI
+UNIT DeathRattle Halberdier 0x0 Level(6,Enemy,True) [21,6] 0x0 0x0 0x0 0x0 [TrainedAxe,TrainedPike] ChargeAI
+UNIT DeathRattle General 0x0 Level(6,Enemy,True) [24,4] 0x0 0x0 0x0 0x0 [SilverAxe,Greatsword,TrainedArc,RedGem] StallOneTurnAI
+UNIT DeathRattle Baron 0x0 Level(6,Enemy,True) [24,3] 0x0 0x0 0x0 0x0 [Elfire,Luna,Torch,Elixir] StallOneTurnAI
+UNIT DeathRattle ThiefFighter 0x0 Level(6,Enemy,True) [1,5] 0x0 0x0 0x0 0x0 [SleepSword] StallOneTurnAI
+UNIT DeathRattle ThiefFighter 0x0 Level(6,Enemy,True) [1,2] 0x0 0x0 0x0 0x0 [MasterSword] StallOneTurnAI
+UNIT DeathRattle Sniper 0x0 Level(6,Enemy,True) [13,4] 0x0 0x0 0x0 0x0 [DaShoota,MarksmanBow] RangeAI
+UNIT DeathRattle HighPriest 0x0 Level(6,Enemy,True) [13,5] 0x0 0x0 0x0 0x0 [Physic,Malkhut] [0xE 0x3 0x0 0x20]
+UNIT DeathRattle Warrior 0x0 Level(6,Enemy,True) [6,4] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
+UNIT DeathRattle Swordmaster 0x0 Level(6,Enemy,True) [20,4] 0x0 0x0 0x0 0x0 [TrainedEdge] RangeAI
+UNIT DeathRattle Halberdier 0x0 Level(6,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
+UNIT DeathRattle DarkBishop 0x0 Level(6,Enemy,True) [17,1] 0x0 0x0 0x0 0x0 [Jormungand,Heal] RangeAI
+UNIT DeathRattle Champion 0x0 Level(6,Enemy,True) [14,6] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT DeathRattle Berserker 0x0 Level(6,Enemy,True) [12,6] 0x0 0x0 0x0 0x0 [Hammer] ChargeAI
+UNIT
+
+ALIGN 4
+Ch21Armory:
+SHORT TrainedEdge
+SHORT Longsword
+SHORT Greatsword
+SHORT FlameSword
+SHORT TrainedPike
+SHORT LongLance
+SHORT Greatlance
+SHORT Shieldbearer
+SHORT TrainedAxe
+SHORT BattleAxe
+SHORT LunarAxe
+SHORT TrainedArc
+SHORT Longbow
+SHORT Greatbow
+SHORT MarksmanBow
+SHORT LongArch
+SHORT DoorKey
+SHORT ChestKey
+SHORT LightRune
+SHORT 0
+SHORT 0
+
+ALIGN 4
+Ch21Vendor:
+SHORT Thunder
+SHORT Elfire
+SHORT AlairsGale
+SHORT Jormungand
+SHORT Arachnid
+SHORT Nosferatu
+SHORT Malkhut
+SHORT Mend
+SHORT Physic
+SHORT Restore
+SHORT Silence
+SHORT Vulnerary
+SHORT Elixir
+SHORT PureWater
+SHORT Torch
+SHORT KnightProof
+SHORT SecretBook
+SHORT GoddessIcon
+SHORT 0
+SHORT 0
+
+
+
+StartEventLoewe:
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(1,Ally,False) [17,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+StartEventTarajiGoons:
+UNIT Taraji Swordmaster_F 0x0 Level(20,Enemy,False) [19,12] 0x0 0x0 0x0 0x0 [FangAndClaw] TwoActionAI
+UNIT C20Enemy Sniper 0x0 Level(1,Enemy,True) [21,12] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Berserker 0x0 Level(1,Enemy,True) [20,13] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Berserker 0x0 Level(1,Enemy,True) [20,11] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Hero 0x0 Level(1,Enemy,True) [21,11] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Hero 0x0 Level(1,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Dracoknight 0x0 Level(1,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Dracoknight 0x0 Level(1,Enemy,True) [21,14] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Dracoknight 0x0 Level(1,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Dracoknight 0x0 Level(1,Enemy,True) [20,9] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT C20Enemy Champion 0x0 Level(1,Enemy,True) [22,12] 0x0 0x0 0x0 0x0 [TemperedRing] NoAI
+UNIT
+
+StartEventCatrin:
+UNIT Catrin Swordmaster_F 0x0 Level(10,NPC,False) [18,18] 0x0 0x0 0x0 0x0 [Starcutter] NoAI
+UNIT
+
+StartEventDuelistsNew:
+UNIT Catrin Swordmaster_F 0x0 Level(10,NPC,False) [14,13] 0x0 0x0 0x0 0x0 [Starcutter] NoAI
+UNIT Taraji Swordmaster_F 0x0 Level(20,Enemy,False) [16,13] 0x0 0x0 0x0 0x0 [FangAndClaw] TwoActionAI
+UNIT
+
+StartEventCleo:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+AxleTalkEvent:
+Text(Chapter21Intro_AxleChat)
+NoFade
+ENDA
+
+ClearSeraFlag:
+ENUF 0xEC
+NoFade
+ENDA
+
+JerrySecretEvent:
+Text(Chapter21_JerrySecretTalk)
+LearnSkill(Jerry,VantageID)
+LearnSkill(Jerry,WrathID)
+NoFade
+ENDA
+
+JacinthSecretEvent:
+Text(Chapter21_JacinthSecretTalk)
+LearnSkill(Jacinth,ShadeID)
+LearnSkill(Jacinth,DeathBlowID)
+NoFade
+ENDA
+
+LeinaSecretEvent:
+Music(Rovers)
+Text(Chapter21_LeinaSecretTalk)
+// GiveItem(Leina,Pedangratu)
+MountSingleUnit(Leina)
+SetBackground(0x35)
+// PROMOTE Leina MasterKnight_F Pedangratu
+PROMOTE Leina MasterKnight_F 0x0
+ENUN
+EraseBackground
+DismountSingleUnit(Leina)
+NoFade
+Music(BattleWithMagus)
+ENDA
+
+
+EndingCutsceneGroup1:
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [14,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [12,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT KwameReal 0x0 Cleo Level(1,Ally,False) [13,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Taraji Swordmaster_F 0x0 Level(20,Enemy,False) [13,1] 0x0 0x0 0x0 0x0 [FangAndClaw] TwoActionAI
+UNIT
+
+EndingCutsceneCatrin:
+UNIT CatrinReal Swordmaster_F 0x0 Level(10,NPC,False) [4,11] 0x0 0x0 0x0 0x0 [Starcutter,KillingEdge,FlameSword,ThunderSword] NoAI
+UNIT
+
+EndingCutsceneKassandra:
+UNIT Kassandra Falcoknight 0x0 Level(10,Enemy,False) [13,18] 0x0 0x0 0x0 0x0 [Starcutter,KillingEdge,FlameSword,ThunderSword] NoAI
+UNIT CatrinReal Swordmaster_F 0x0 Level(10,NPC,False) [13,13] 0x0 0x0 0x0 0x0 [Starcutter,KillingEdge,FlameSword,ThunderSword] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [12,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [13,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT KwameReal 0x0 Cleo Level(1,Ally,False) [14,15] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+LoeweCatrinStairsChat:
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [12,3] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT CatrinReal Swordmaster_F 0x0 Level(10,NPC,False) [14,3] 0x0 0x0 0x0 0x0 [Starcutter,KillingEdge,FlameSword,ThunderSword] NoAI
+UNIT

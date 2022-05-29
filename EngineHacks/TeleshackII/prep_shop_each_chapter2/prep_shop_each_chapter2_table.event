@@ -22,8 +22,9 @@ PrepShopPointer(PrepShop2|IsPointer) // chapter 18
 PrepShopPointer(PrepShop2|IsPointer) // chapter 19
 PrepShopPointer(PrepShop2|IsPointer) // chapter 20
 PrepShopPointer(PrepShop2|IsPointer) // chapter 21
-PrepShopPointer(PrepShop2|IsPointer) // chapter 23
-PrepShopPointer(PrepShop2|IsPointer) // chapter 24
-PrepShopPointer(PrepShop2|IsPointer) // chapter 25
+PrepShopPointer(PrepShop3|IsPointer) // chapter 22
+PrepShopPointer(PrepShop3|IsPointer) // chapter 23
+PrepShopPointer(PrepShop3|IsPointer) // chapter 24
+PrepShopPointer(PrepShop3|IsPointer) // chapter 25
 
 

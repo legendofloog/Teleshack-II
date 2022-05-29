@@ -5,6 +5,15 @@
 // slim bow is by zaneeeeeeee avernathy
 // devil dagger from archer?
 // Daybreak from GabrielKnight, Darkbrand by Ereshkigal
+// fang and claw from xvi
+// timecutter from gabrielknight
+// full helm from final fantasy tactics
+// slam brace from tactics ogre
+// swordslayer from gabrielknight
+// shieldbearer from xvi
+// malkhut, kukri from beansy
+// sagittae from lordglenn
+
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 /*
 ALIGN 4
@@ -60,14 +69,28 @@ ItemIconSlot(0x74,"Png/DancingBlade(Ereshkigal).png")
 ItemIconSlot(0x75,"Png/Maharaghi(LordGlenn).png")
 ItemIconSlot(0x76,"Png/Taodao(Beansy).png")
 ItemIconSlot(0x77,"Png/FireDrive(ArcherBias).png")
+ItemIconSlot(0x78,"Png/WoodlandsHuke.png")
+ItemIconSlot(0x79,"Png/FealtyBow.png")
+ItemIconSlot(0x7A,"Png/FangAndClaw.png")
+ItemIconSlot(0x7B,"Png/Starcutter.png")
+ItemIconSlot(0x7C,"Png/FullHelm.png")
+ItemIconSlot(0x7D,"Png/Swordslayer.png")
+ItemIconSlot(0x7E,"Png/Shieldbearer.png")
+ItemIconSlot(0x7F,"Png/Malkhut.png")
 ItemIconSlot(0x80,"Png/Darkbrand.png")
 ItemIconSlot(0x81,"Png/Daybreak.png")
 ItemIconSlot(0x82,"Png/Thief.png")
 ItemIconSlot(0x83,"Png/Lumen.png")
+ItemIconSlot(0x89,"Png/CaptainsHelm.png")
+ItemIconSlot(0x8A,"Png/TemperedRing_Beansy.png")
 ItemIconSlot(0x8B,"Png/Red Scarf (N426).png")
 ItemIconSlot(0x93,"Png/Stone Sword.png")
 ItemIconSlot(0x94,"Png/Frost Blade.png")
 ItemIconSlot(0x95,"Png/Argilabrys.png")
+ItemIconSlot(0x96,"Png/Sagittae.png")
+ItemIconSlot(0x98,"Png/Kukri.png")
+ItemIconSlot(0x99,"Png/SlamBrace.png")
+ItemIconSlot(0x9B,"Png/MysticLance.png")
 ItemIconSlot(0x9C,"Png/{Beansy}Magic Bow.png")
 ItemIconSlot(0x9D,"Png/YorsYari.png")
 ItemIconSlot(0x9E,"Png/BigIron.png")
@@ -79,6 +102,8 @@ ItemIconSlot(0xb3,"Png/KaiserSchwert.png")
 ItemIconSlot(0xb9,"Png/Greatbow.png")
 ItemIconSlot(0xbc,"Png/Meteor.png")
 ItemIconSlot(0xad,"Png/Lamfada.png")
+ItemIconSlot(0xAE,"Png/Luna.png")
+ItemIconSlot(0xB0,"Png/Runespear.png")
 ItemIconSlot(0xd9,"Png/KnightProof.png")
 ItemIconSlot(0xde,"Png/GaleBow.png")
 ItemIconSlot(0x97,"Png/SlimAxe.png")
@@ -86,6 +111,10 @@ ItemIconSlot(0xBF,"Png/Claymore.png")
 ItemIconSlot(0xBE,"Png/MarksmanBow.png")
 ItemIconSlot(0xC0,"Png/Hurlbat.png")
 ItemIconSlot(0xC1,"Png/Arachnid.png")
+ItemIconSlot(0xC2,"Png/AquaBrand.png")
+ItemIconSlot(0xC5,"Png/Charge.png")
+ItemIconSlot(0xC6,"Png/Poincare.png")
+ItemIconSlot(0xC7,"Png/Sink.png")
 ItemIconSlot(0xCB,"Png/SlimArch.png")
 ItemIconSlot(0xCC,"Png/AlairsGale.png")
 ItemIconSlot(0xCD,"Png/Brenthunder.png")
@@ -105,16 +134,5 @@ ItemIconSlot(0xDF,"Png/SlimBow.png")
 ItemIconSlot(0xD6,"Png/Stinger.png")
 ItemIconSlot(0xD7,"Png/LunarAxe.png")
 ItemIconSlot(0xD8,"Png/Stormbrand.png")
-ItemIconSlot(0x8A,"Png/TemperedRing_Beansy.png")
-ItemIconSlot(0xC2,"Png/AquaBrand.png")
-ItemIconSlot(0xC5,"Png/Charge.png")
-ItemIconSlot(0xC6,"Png/Poincare.png")
-ItemIconSlot(0xC7,"Png/Sink.png")
-ItemIconSlot(0x78,"Png/WoodlandsHuke.png")
-ItemIconSlot(0x89,"Png/CaptainsHelm.png")
-ItemIconSlot(0x79,"Png/FealtyBow.png")
-ItemIconSlot(0xAD,"Png/MysticLance.png")
-ItemIconSlot(0xAE,"Png/Luna.png")
-ItemIconSlot(0xB0,"Png/Runespear.png")
 POP
 

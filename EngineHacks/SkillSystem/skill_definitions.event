@@ -43,7 +43,10 @@
 #define AcrobatID 63
 #define SmiteID 76
 #define BreathOfLifeID 82
-
+#define FortuneID 85
+#define ShadePlusID 86
+#define ShadeID 87
+#define DeathBlowID 88
 
 // keep it continous for debug purpose
 

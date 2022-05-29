@@ -403,3 +403,17 @@ Text(MatthiasDeathQuoteText)
 SendAll(Matthias)
 NoFade
 ENDA
+
+ALIGN 4
+NgondalaGiveAll:
+Text(NgondalaDeathQuoteText)
+SendAll(Ngondala)
+NoFade
+ENDA
+
+ALIGN 4
+CatrinRealGiveAll:
+Text(CatrinRealDeathQuoteText)
+SendAll(CatrinReal)
+NoFade
+ENDA

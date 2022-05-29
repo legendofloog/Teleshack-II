@@ -428,3 +428,55 @@ two there[Beat]? Save me[Beat][A][CloseEyes][X]
 [MidRight][LoadFaolan]
 May our future[N]
 be bathed in light[Beat][A][CloseEyes][X]
+
+## NgondalaDeathQuoteText
+[MidRight][LoadNgondala]
+O Byelen, O spirits, though you[N]
+may take me into your embrace,[AN]
+please, [CloseEyes]spare my family[Beat][A][X]
+
+## CatrinRealDeathQuoteText
+[MidRight][LoadCatrin]
+[Beat]So this is the end.[A][N]
+It was an honor to[N]
+fight alongside you[Beat][A][N]
+[HalfCloseEyes]Please, Loewe, don't give up.[N]
+Finish this, for all of our sakes.[A][N]
+I believe[Beat] [A][CloseEyes]in you[Beat][A][ClearFace]
+[MidLeft][LoadLoewePunished]
+Mom! MOM![AN]
+[CloseEyes]NO!!![A][X]
+
+## VinnyDeathQuoteText
+[MidLeft][LoadVinny]
+Why, you uncouth little[Beat] [HalfCloseEyes]Gkh![AN]
+U-unhand me! Unhand[N]
+me, you dastards![AN]
+I am a nobleman of Decia![N]
+I am a master tactician![AN]
+[OpenEyes]A MASTER![AN]
+[HalfCloseEyes]My talents cannot[Beat] go[N]
+to waste[Beat] [CloseEyes]like this[Beat][A][X]
+
+## CephalidDeathQuoteText
+[MidLeft][LoadCephalid]
+You got me good[Beat][AN]
+Temur, you dastard,[N]
+was this your plan[Beat][CloseEyes]?[A][X]
+
+## XleaDeathQuoteText
+[MidLeft][LoadXlea]
+[HalfCloseEyes]Xale, Alex, Axel, Lexa[Beat][AN]
+I pray that all of you[Beat][N]
+met better fates than I[Beat][AN]
+Long live[Beat] Chouwouj[Beat]![CloseEyes][A][X]
+
+## TarajiDeathQuoteText
+[MidLeft][LoadTaraji]
+After all these years,[AN]
+I finally meet a foe[N]
+I cannot destroy[Beat][AN]
+Is this the vaunted[N]
+strength of Athanasius?[AN]
+No, impossible[Beat] [HalfCloseEyes]it's the[N]
+strength of mortals[Beat]?[A][X]

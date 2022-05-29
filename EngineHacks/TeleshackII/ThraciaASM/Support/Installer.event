@@ -37,6 +37,7 @@ ALIGN 4
 LoeweSupportList:
 SupportEntry(Cleo,3,0,0,5,5,5,5)
 SupportEntry(Iskra,3,0,1,10,0,5,0)
+SupportEntry(CatrinReal,3,2,0,10,10,15,15)
 SupportTerm
 
 ALIGN 4
@@ -153,8 +154,36 @@ SupportEntry(Cleo,1,3,0,10,0,10,0)
 SupportEntry(Jerry,4,0,2,0,10,5,10)
 SupportTerm
 
+ALIGN 4
 JerrySupportList: //(partner, range, atk, def, hit, avo, crit, ddg)
 SupportEntry(Lyre,3,4,0,17,7,0,7)
+SupportTerm
+
+ALIGN 4
+KwameRealSupportList:
+SupportEntry(Catrin,3,1,1,10,0,20,0)
+SupportEntry(Ngondala,3,0,2,0,15,0,15)
+SupportTerm
+
+ALIGN 4
+NgondalaSupportList:
+SupportEntry(KwameReal,3,0,2,0,15,0,15)
+SupportTerm
+
+ALIGN 4
+CatrinRealSupportList:
+SupportEntry(Loewe,3,2,0,10,10,15,15)
+SupportEntry(KwameReal,3,1,1,10,0,20,0)
+SupportTerm
+
+ALIGN 4
+DarbySupportList:
+SupportEntry(Darcy,3,1,1,10,10,0,0)
+SupportTerm
+
+ALIGN 4
+DarcySupportList:
+SupportEntry(Darby,3,1,1,10,10,0,0)
 SupportTerm
 
 SetUnitSupportList(Cleo,CleoSupportList)
@@ -181,3 +210,8 @@ SetUnitSupportList(Sera,SeraSupportList)
 SetUnitSupportList(Shaw,ShawSupportList)
 SetUnitSupportList(Jerry,JerrySupportList)
 SetUnitSupportList(Lyre,LyreSupportList)
+SetUnitSupportList(KwameReal,KwameRealSupportList)
+SetUnitSupportList(Ngondala,NgondalaSupportList)
+SetUnitSupportList(CatrinReal,CatrinRealSupportList)
+SetUnitSupportList(Darby,DarbySupportList)
+SetUnitSupportList(Darcy,DarcySupportList)
