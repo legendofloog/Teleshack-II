@@ -1017,7 +1017,7 @@ ORG SkillIcon(BladeDanceID)
 #incbin "SkillIcons/Astra.dmp"
 
 ORG SkillIcon(FarShockID)
-#incbin "SkillIcons/holyshitAftershockOMG.dmp"
+#incbin "SkillIcons/Thunderstorm.dmp.dmp"
 
 ORG SkillIcon(WhisperWindID)
 #incbin "SkillIcons/WindDisciple.dmp"
