@@ -47,6 +47,10 @@ JohannaEvent:
 SpawnReinforcements(JohannaUnits)
 Text(Ch10JohannaSpawn_v2)
 SetUnitItemDurability(Johanna,1,RaioScroll)
+CHECK_ALIVE Mifan
+BEQ 421 s0 sC
+	SetAI(Mifan,0,0x6,4,0)
+LABEL 421 
 NoFade
 ENDA
 
@@ -176,7 +180,7 @@ UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,
 // Unique
 UNIT Cidor Baron 0x0 Level(5,Enemy,False) [21,3] 0x0 0x0 0x0 0x0 [Jormungand] NeverMoveAI // TODO: give him cooler inventory when we have more reasonable options
 
-UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [21,6] 0x0 0x0 0x0 0x0 [IceSword,KillingEdge] TwoActionAI
+UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [21,6] 0x0 0x0 0x0 0x0 [IceSword,KillingEdge] DoNothingAI
 
 
 UNIT Selese Thief 0x0 Level(10,Enemy,True) [9,9] 0x0 0x0 0x0 0x0 [ShortSword,Rescue] LootingThiefAI
@@ -268,8 +272,8 @@ UNIT
 ReinforcementUnits:
 UNIT Cythes LanceArmor 0x0 Level(10,Enemy,True) [24,3] 0x0 0x0 0x0 0x0 [Javelin] PursueWithoutHeedAI
 UNIT Cythes SwordArmor 0x0 Level(10,Enemy,True) [24,5] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
-UNIT Cythes AxeSoldier 0x0 Level(1,Enemy,True) [24,16] 0x0 0x0 0x0 0x0 [HandAxe] PursueWithoutHeedAI
-UNIT Cythes Freelancer 0x0 Level(1,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
+UNIT Cythes AxeSoldier 0x0 Level(10,Enemy,True) [24,16] 0x0 0x0 0x0 0x0 [HandAxe] PursueWithoutHeedAI
+UNIT Cythes Freelancer 0x0 Level(10,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT
 
 
@@ -316,8 +320,6 @@ EndingScene:
 	MUSC Sortie_Formation 
 	SetBackground(0x15)
 	Text(Ch10End1_v2)
-	//GiveItem(ArgymosCrest,Cleo)
-
 	MUSC TiesOfFriendship
 	SetBackground(0x13)
 	Text(Ch10End2)
@@ -334,7 +336,7 @@ EndingScene:
 	GiveItem(Stormbrand,Iskra)
 
 	LABEL 4
-
+	FADI 15
 	SendAll(Radnitz)
 	REMOVEUNIT Radnitz
 	MNC2 Chapter11

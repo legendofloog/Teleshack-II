@@ -1,5 +1,5 @@
-## KingSwordDesc
-Doubles attacks grants Charisma.[X]
+## KingSwordDesc ^
+A brave blade that strikes twice. Grants Charisma.[X]
 
 ## FlameSwordDesc
 Casts magical flame. Mag +5.[X]
@@ -123,13 +123,13 @@ Brave Effect.[X]
 Spell Mirror[X]
 
 ## SpellMirrorDesc
-[_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+Mt increased by enemy Atk if magical.[X]
 
 ## AlairsGaleName
 Arai's Gale[X]
 
 ## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+Half the power, half the price. Brave.[X]
 
 ## SisterRingName
 Sister Ring[X]
@@ -523,3 +523,82 @@ Runespear[X]
 
 ## RunespearDesc
 [LockIcon]Tobie. Magic, drains HP into wielder.[X]
+
+## LumenName
+Lumen[X]
+
+## LumenDesc
+[LockIcon]Matthias. Can be used to illuminate.[X]
+
+## FangAndClawName ^
+Fang and Claw[X]
+
+## FangAndClawDesc
+Taraji's lethal twin blades. Brave.[X]
+
+## StarcutterName
+Starcutter[X]
+
+## StarcutterDesc ^
+Replica Kaiserschwert. Magic. Eff. vs blessed.[X]
+
+## FullHelmName
+Full Helm[X]
+
+## FullHelmDesc
+Call them ugly all you like; helmets[N]
+are vital for surviving in battle.[N]
+Blocks critical hits. +2 Def/Res.[X]
+
+## SwordslayerName ^
+Blade Crusher[X]
+
+## SwordslayerDesc
+Reverses weapon triangle. Eff. vs swords.[X]
+
+## ShieldbearerName ^
+Shieldbearer[X]
+
+## ShieldbearerDesc ^
+A defensive lance. +5 Def, +2 Res, -1 Mov.[X]
+
+## MalkhutName
+Malkhut[X]
+
+## MalkhutDesc
+Light magic that often critically hits.[X]
+
+## SagittaeName
+Sagittae[X]
+
+## SagittaeDesc
+Arcane arrows with long range.[X]
+
+## DreedurScrollName ^
+Dreedur Scroll[X]
+
+## DreedurScrollDesc
+-5% HP, +5% Str,[N]
++20% Mag, +5% Skl,[N]
+-10% Def, +20% Res[X]
+
+## CherneScrollName ^
+Cherne Scroll[X]
+
+## CherneScrollDesc
+Scrawlings of a raving mind.[N]
+Modifies the user's growths.[X]
+
+## KukriName
+Kukri[X]
+
+## KukriDesc
+A lethal sword common in Chouwouj.[X]
+
+## SlamBraceName
+Slam Brace[X]
+
+## SlamBraceDesc
+Almost strong enough to push a[N]
+whale. Allows user to Smite[N]
+adjacent units 2 tiles away.[X]

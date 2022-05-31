@@ -180,6 +180,10 @@ POP
   
   //Item Effect Revamp by Teraspark
   #include "Necessary/ItemEffectRevamp/IERevamp_Installer.event"
+
+  // RW was here; they have no idea what they were doing. Edit with caution.
+  // GroupAI by PhantomSentine
+  #include "ExternalHacks/GroupAI.event"
   
   //Durability-Based Items, for Skill Scrolls
   #include "Necessary/DurabilityBasedItems/DurabilityBasedItems.event"

@@ -39,7 +39,7 @@
 	
 	ALIGN 4
 	UnlitTorchTrapGfx:
-	#incext Png2Dmp "unlit_torch.png" --lz77*/
+	#incext Png2Dmp "unlit_torch.png" --lz77
 	
 	
 	PUSH

@@ -56,7 +56,7 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 	int newWexp = GetBattleNewWEXP(battleUnit);
 
 	if (newWexp > 0 && battleUnit->weaponType < 8){
-		unit->ranks[battleUnit->weaponType] = newWexp;
+		unit->ranks[GetItemData(battleUnit->weaponBefore.number)->weaponType] = newWexp;
 	}
 
 	/*

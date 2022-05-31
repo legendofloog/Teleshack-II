@@ -23,8 +23,8 @@ BYTE 00 00
 ALIGN 4
 
 PelecayeSkillList:
-BYTE 1 PassID
-BYTE 1 AcrobatID
+BYTE 21 PassID
+BYTE 21 AcrobatID
 BYTE 00 00
 ALIGN 4
 
@@ -46,3 +46,10 @@ MinkSkillList:
 //BYTE 1 WhisperWindID
 BYTE 00 00
 ALIGN 4
+
+DartSkillList:
+BYTE 1 ShadePlusID
+BYTE 1 WatchfulID
+BYTE 00 00
+ALIGN 4
+

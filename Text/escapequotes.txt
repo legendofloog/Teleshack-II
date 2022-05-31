@@ -34,16 +34,16 @@ Sorry, but I'm leaving first.[N]
 No sense in me staying behind.[A][X]
 
 ## AlexEscapeQuoteText
-[MidRight][LoadCleo]
-Unit Escape.[X]
+[MidRight][LoadAlex]
+Time to skedaddle, keep up guys![A][X]
 
 ## AxelEscapeQuoteText
-[MidRight][LoadCleo]
-Unit Escape.[X]
+[MidRight][LoadAxel]
+Keep up guys, time to skedaddle![A][X]
 
 ## LongxiaEscapeQuoteText
 [MidRight][LoadLongxia]
-No sense in dying here.[X]
+No sense in dying here.[A][X]
 
 ## FangaiEscapeQuoteText
 [MidRight][LoadFangai]

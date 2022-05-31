@@ -42,6 +42,7 @@ POP
 	MagicSwordEntry(MysticLance,0x1,True,HitRes,HitRes)
 	MagicSwordEntry(LunarAxe,0x2,True,HitRes,HitRes)
 	MagicSwordEntry(AquaBrand,WeaponTypeAnima,False,HitDef,HitRes)
+	MagicSwordEntry(Starcutter,0x0,True,HitRes,HitRes)
 	BYTE 0 0 0 //terminator
 
 
@@ -77,14 +78,14 @@ POP
 	CheckWexpWeaponTypeHook:
 		WORD 0x19ED2550 0x24287828 0x5C2619E4 0xD0012E00 0x47184B01 0x47184B01 0x802C133 0x802C113
 
-	PUSH
+	//PUSH
 		// remove check for magic sword bit
-		ORG 0x02C108
-			BYTE 0x80
+		//ORG 0x02C108
+			//BYTE 0x80
 
 		// instead check for weapon exp in weapon type
-		ORG 0x02C124
-			WORD 0x47184B00; POIN CheckWexpWeaponTypeHook|1
-	POP
+		//ORG 0x02C124
+			//WORD 0x47184B00; POIN CheckWexpWeaponTypeHook|1
+	//POP
 	
 #endif

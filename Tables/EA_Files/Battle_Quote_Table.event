@@ -7,6 +7,7 @@ SpecifiedBattleConvo(Raschwitz_Ch1,Alena,Chapter1,19,RaschwitzAlenaBattleQuoteTe
 SpecifiedBattleConvo(Tyr_Ch2,Varga,Chapter2,7,TyrVargaBattleConvo)
 UnspecifiedBattleConvo(Raschwitz_Ch1,Chapter1,1,RaschwitzGenericBattleQuoteText)
 UnspecifiedBattleConvo(Tyr_Ch2,Chapter2,1,TyrGenericBattleConvo)
+UnspecifiedBattleConvo(Emory_Ch3,Chapter3,1,EmoryBattleQuote)
 SpecifiedBattleConvo(Hilmar,Loewe,Chapter4,8,HilmarLoeweBossQ)
 SpecifiedBattleConvo(Hilmar,Filone,Chapter4,9,HilmarFiloneBossQ)
 SpecifiedBattleConvo(Hilmar,Cleo,Chapter4,10,HilmarCleoBossQ)
@@ -51,5 +52,20 @@ SpecifiedBattleConvo(Kassandra,Cleo,Chapter15Cutscene,0x0,Ch15KassandraVSCleo)
 SpecifiedBattleConvo(Elias,Kassandra,Chapter15Cutscene,0x0,Ch15EndingScene3EliasKassandraBattleQuote)
 SpecifiedBattleConvo(Loewe,Catrin,Chapter15Cutscene,20,Ch15CatrinLoeweRound1)
 SpecifiedBattleConvo(Loewe,Catrin,Chapter15Cutscene,21,Ch15CatrinLoeweRound2)
+
+// Chapter21
+SpecifiedBattleConvo(Vinny,Iberis,Chapter21,0x14,BQVinnyIberis)
+UnspecifiedBattleConvo(Vinny,Chapter21,0x15,BQVinny)
+UnspecifiedBattleConvo(Cephalid,Chapter21,0x16,BQCephalid)
+SpecifiedBattleConvo(Xlea,Axel,Chapter21,0x17,BQXleaAxel)
+SpecifiedBattleConvo(Xlea,Alex,Chapter21,0x1F,BQXleaAlex)
+UnspecifiedBattleConvo(Xlea,Chapter21,0x19,BQXlea)
+SpecifiedBattleConvo(Taraji,Loewe,Chapter21,0x19,BQTarajiLoewe)
+SpecifiedBattleConvo(Taraji,Cleo,Chapter21,0x1A,BQTarajiCleo)
+SpecifiedBattleConvo(Taraji,Kwame,Chapter21,0x1B,BQTarajiKwame)
+SpecifiedBattleConvo(Taraji,Ngondala,Chapter21,0x1C,BQTarajiNgondala)
+SpecifiedBattleConvo(Taraji,Sera,Chapter21,0x1D,BQTarajiSera)
+SpecifiedBattleConvo(Taraji,Leina,Chapter21,0x1E,BQTarajiLeina)
+UnspecifiedBattleConvo(Taraji,Chapter21,0x1,BQTaraji)
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

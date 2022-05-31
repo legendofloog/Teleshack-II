@@ -75,26 +75,26 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 GreenUnits:
-UNIT Nahiza Ballistician 0x0 Level(12,Ally,False)[11,17] 0x0 0x0 0x0 0x0 [SlimArch,LongArch,Elixir] NoAI
+UNIT Nahiza Ballistician 0x0 Level(12,Ally,False)[11,17] 0x0 0x0 0x0 0x0 [SlimArch,LongArch,SlamBrace,Elixir] NoAI
 UNIT Mahemen Ballistician Nahiza Level(10,NPC,True)[10,17] 0x0 0x0 0x0 0x0 [LongArch] BossAI
 UNIT Mahemen Mage_F Nahiza Level(10,NPC,True)[12,17] 0x0 0x0 0x0 0x0 [Meteor,Fire] BossAI
-UNIT Mahemen Priest Nahiza Level(10,NPC,True)[11,16] 0x0 0x0 0x0 0x0 [Physic] [0xE 0x3 0x0 0x20]
+UNIT Mahemen Priest Nahiza Level(10,NPC,True)[11,16] 0x0 0x0 0x0 0x0 [Physic,Physic,Mend] [0xE 0x3 0x0 0x20]
 UNIT Mahemen AxeSoldier Nahiza Level(15,NPC,True)[8,16] 0x0 0x0 0x0 0x0 [HandAxe,IronAxe,Elixir] BossAI
 UNIT Mahemen LanceSoldier Nahiza Level(15,NPC,True)[7,16] 0x0 0x0 0x0 0x0 [IronLance,Javelin,Elixir] BossAI
 UNIT Mahemen Myrmidon_F Nahiza Level(15,NPC,True)[10,20] 0x0 0x0 0x0 0x0 [IronSword,Elixir] AttackInRangeAI
-UNIT Mahemen AxeFighter Nahiza Level(15,NPC,True)[12,18] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Mahemen AxeFighter Nahiza Level(15,NPC,True)[12,18] 0x0 0x0 0x0 0x0 [TrainedAxe] AttackInRangeAI
 UNIT
 
 AugurGroup:
-UNIT Augur Manakete_2_F 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x0 REDA11R5 [Vulnerary] NoAI
+UNIT Augur Manakete_2_F 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x1 REDA11R5 [Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
-UNIT Tsoureki General 0x0 Level(6,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [SilverBow,Greatlance,Hurlbat] BossAI
-UNIT Cythes LanceArmor Tsoureki Level(2,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance] BossAI
-UNIT Cythes Mage_F Tsoureki Level(2,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Elfire] [0xE 0x3 0x0 0x20]
-UNIT Cythes Hero Tsoureki Level(2,Enemy,True)[10,5] 0x0 0x0 0x0 0x0 [Rapier,RedGem,ChestKey] TwoActionAI
-UNIT Cythes Swordmaster_F Tsoureki Level(2,Enemy,True)[23,8] 0x0 0x0 0x0 0x0 [SteelSword,ChestKey] AttackInRangeAI
+UNIT Tsoureki Halberdier 0x0 Level(6,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [BattleAxe,Saunion] BossAI
+UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance] BossAI
+UNIT Cythes DarkMage_F Tsoureki Level(14,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Flux,Physic,Elfire] [0xE 0x3 0x0 0x20]
+UNIT Cythes Hero Tsoureki Level(1,Enemy,True)[10,5] 0x0 0x0 0x0 0x0 [Rapier,RedGem,ChestKey] TwoActionAI
+UNIT Cythes SwordArmor Tsoureki Level(14,Enemy,True)[23,8] 0x0 0x0 0x0 0x0 [SteelSword,ChestKey] AttackInRangeAI
 UNIT Cythes AxeArmor Tsoureki Level(14,Enemy,True)[14,9] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
 UNIT Cythes SwordArmor Tsoureki Level(14,Enemy,True)[14,11] 0x0 0x0 0x0 0x0 [IronSword] BossAI
 UNIT Cythes Mage_F Tsoureki Level(14,Enemy,True)[8,6] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
@@ -109,7 +109,7 @@ UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[10,11] 0x0 0x0 0x0 0x0 [S
 UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[4,12] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[6,11] 0x0 0x0 0x0 0x0 [Javelin] BossAI
 UNIT Cythes MageArmor Tsoureki Level(14,Enemy,True)[8,11] 0x0 0x0 0x0 0x0 [Wind] BossAI
-UNIT Cythes Archer_F Tsoureki Level(2,Enemy,True)[11,6] 0x0 0x0 0x0 0x0 [MarksmanBow,ChestKey] AttackInRangeAI
+UNIT Cythes Archer_F Tsoureki Level(14,Enemy,True)[11,6] 0x0 0x0 0x0 0x0 [MarksmanBow,ChestKey] AttackInRangeAI
 UNIT Cythes Hunter Tsoureki Level(14,Enemy,True)[17,15] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
 UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[18,9] 0x0 0x0 0x0 0x0 [SlimAxe,SteelAxe,Vulnerary] TwoActionAI
 UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[18,11] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
@@ -123,7 +123,7 @@ UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[12,5] 0x0 0x0 0x0 0x0 [Long
 UNIT Cythes Sister Tsoureki Level(14,Enemy,True)[15,4] 0x0 0x0 0x0 0x0 [Lightning,Mend] [0xE 0x3 0x0 0x20]
 UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[15,3] 0x0 0x0 0x0 0x0 [Hurlbat] BossAI
 UNIT Cythes AxeFighter_F Tsoureki Level(14,Enemy,True)[15,5] 0x0 0x0 0x0 0x0 [LunarAxe] BossAI
-UNIT Cythes Myrmidon Tsoureki Level(14,Enemy,True)[23,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[23,6] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[25,18] 0x0 0x0 0x0 0x0 [Shortsword] PursueWithoutHeedAI
 UNIT Cythes DragonRider Tsoureki Level(14,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes AxeFighter Tsoureki Level(14,Enemy,True)[25,20] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
@@ -141,46 +141,39 @@ UNIT Cythes BowArmor Tsoureki Level(10,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [IronBo
 UNIT
 
 Ch14_T7:
-UNIT Cythes LanceSoldier Tsoureki Level(12,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
-UNIT Cythes DarkMage_F Tsoureki Level(12,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [Flux,Heal] PursueWithoutHeedAI
-UNIT Cythes SwordArmor Tsoureki Level(12,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
-UNIT Cythes AxeArmor Tsoureki Level(12,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Tsoureki Level(12,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Cythes DarkMage_F Tsoureki Level(12,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Flux,Heal] PursueWithoutHeedAI
 UNIT Cythes DragonRider Tsoureki Level(14,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT
 
 
 Ch14_T8:
-UNIT Cythes AxeFighter_F Tsoureki Level(14,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [KillerAxe] PursueWithoutHeedAI
+UNIT Cythes AxeFighter_F Tsoureki Level(14,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [TrainedAxe] PursueWithoutHeedAI
 UNIT Cythes Freelancer Tsoureki Level(14,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
-UNIT Cythes Mage Tsoureki Level(14,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
-UNIT Cythes Myrmidon_F Tsoureki Level(14,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
-UNIT Cythes Warrior Tsoureki Level(2,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [SteelAxe,Longbow] PursueWithoutHeedAI
 UNIT
 
 Ch14_T10:
-UNIT Cythes SwordArmor Tsoureki Level(14,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
-UNIT Cythes BowArmor Tsoureki Level(14,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [IronBow] PursueWithoutHeedAI
-UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
-UNIT Cythes DarkMage Tsoureki Level(14,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Jormungand] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Tsoureki Level(14,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [TrainedPike] PursueWithoutHeedAI
+UNIT Cythes Mage_F Tsoureki Level(14,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Thunder] PursueWithoutHeedAI
 UNIT Cythes DragonRider Tsoureki Level(12,Enemy,True)[0,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes PegasusRider Tsoureki Level(12,Enemy,True)[1,0] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] PursueWithoutHeedAI
 UNIT
 
 Ch14_T11:
-UNIT Cythes BowKnight Tsoureki Level(15,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [SilverBow] PursueWithoutHeedAI
-UNIT Cythes SwordKnight Tsoureki Level(15,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [SilverSword] PursueWithoutHeedAI
+UNIT Cythes BowKnight Tsoureki Level(15,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [TrainedArc] PursueWithoutHeedAI
+UNIT Cythes SwordKnight Tsoureki Level(15,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [TrainedEdge] PursueWithoutHeedAI
 UNIT
 
 Ch14_T12:
-UNIT Cythes AxeArmor Tsoureki Level(18,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [MasterAxe] PursueWithoutHeedAI
+UNIT Cythes AxeArmor Tsoureki Level(18,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [TrainedAxe] PursueWithoutHeedAI
 UNIT Cythes MageArmor Tsoureki Level(18,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [Bolganone] PursueWithoutHeedAI
 UNIT
 
 Ch14_T13:
-UNIT Cythes Hero_F Tsoureki Level(10,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [MasterSword] PursueWithoutHeedAI
-UNIT Cythes DarkBishop Tsoureki Level(10,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Hel,Sleep] PursueWithoutHeedAI
-UNIT Cythes General Tsoureki Level(10,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [SilverSword,SilverLance,SilverAxe] PursueWithoutHeedAI
-UNIT Cythes Baron Tsoureki Level(10,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [Elfire,Nosferatu,Jormungand] PursueWithoutHeedAI
+UNIT Cythes SwordFighter_F Tsoureki Level(20,Enemy,True)[17,3] 0x0 0x0 0x0 0x0 [SilverSword] PursueWithoutHeedAI
+UNIT Cythes Sister Tsoureki Level(20,Enemy,True)[19,3] 0x0 0x0 0x0 0x0 [Malkhut] PursueWithoutHeedAI
+UNIT Cythes General Tsoureki Level(5,Enemy,True)[22,4] 0x0 0x0 0x0 0x0 [SilverSword,SilverLance,SilverAxe] PursueWithoutHeedAI
+UNIT Cythes Baron Tsoureki Level(5,Enemy,True)[23,4] 0x0 0x0 0x0 0x0 [Elfire,Nosferatu,Jormungand] PursueWithoutHeedAI
 UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[23,0] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[25,2] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes DragonRider Tsoureki Level(15,Enemy,True)[24,20] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
@@ -192,8 +185,6 @@ UNIT Cythes DukeKnight Tsoureki Level(20,Enemy,True)[13,2] 0x0 0x0 0x0 0x0 [Silv
 UNIT Cythes ForrestKnight Tsoureki Level(20,Enemy,True)[14,2] 0x0 0x0 0x0 0x0 [SilverSword,MasterSword] PursueWithoutHeedAI
 UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[23,0] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[25,2] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
-UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[24,20] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
-UNIT Cythes Dracoknight Tsoureki Level(20,Enemy,True)[25,19] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
 UNIT
 
 Traps1:
@@ -265,6 +256,8 @@ ENUN
 CameraCursor(Nahiza)
 Text(Ch14AfterPreps_1)
 CenterTextbox(Ch14AfterPreps_2)
+CameraCursor(Cleo)
+Text(Ch14AfterPreps_CleoWarn)
 NoFade
 ENDA
 
@@ -288,46 +281,57 @@ AddTrap(RedSigilTrapID,7,20)
 AddTrap(RedSigilTrapID,8,20)
 UnsetFlag(0x10)
 SetFlag(0x4)
+NoFade
 ENDA
 
 YouDevisianKnights:
 SpawnReinforcements(Ch14_T5)
 ENUN
+NoFade
 ENDA
 
 funnymeme:
 SpawnReinforcements(Ch14_T7)
 ENUN
+NoFade
 ENDA
 
 HowMuchWeight:
 SpawnReinforcements(Ch14_T8)
 ENUN
+NoFade
 ENDA
 
 CanYouHandle:
 SpawnReinforcements(Ch14_T10)
 ENUN
+NoFade
 ENDA
 
 PlayAbsolution:
 SpawnReinforcements(Ch14_T11)
 ENUN
+CameraCursor(Loewe)
+Text(Ch14LoeweWarning)
+NoFade
 ENDA
 
 ByZessDynamite:
 SpawnReinforcements(Ch14_T12)
 ENUN
+NoFade
 ENDA
 
 ElebitsForThe:
 SpawnReinforcements(Ch14_T13)
 ENUN
+NoFade
 ENDA
 
 NintendoWii:
 SpawnReinforcements(Ch14_KeepRunning)
 ENUN
+NoFade
 ENDA
 
 UnderstandableFukingDie:

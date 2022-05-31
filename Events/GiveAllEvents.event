@@ -53,12 +53,14 @@ ENDA
 
 ALIGN 4
 AlexGiveAll:
+Text(AlexDeathQuote)
 SendAll(Alex)
 NoFade
 ENDA
 
 ALIGN 4
 AxelGiveAll:
+Text(AxelDeathQuote)
 SendAll(Axel)
 NoFade
 ENDA
@@ -401,8 +403,33 @@ ALIGN 4
 JerryGiveAll:
 Text(JerryDeathQuoteText)
 SendAll(Jerry)
+NoFade
+ENDA
 
 ALIGN 4
 LyreGiveAll:
 Text(LyreDeathQuoteText)
 SendAll(Lyre)
+NoFade
+ENDA
+
+ALIGN 4
+MatthiasGiveAll:
+Text(MatthiasDeathQuoteText)
+SendAll(Matthias)
+NoFade
+ENDA
+
+ALIGN 4
+NgondalaGiveAll:
+Text(NgondalaDeathQuoteText)
+SendAll(Ngondala)
+NoFade
+ENDA
+
+ALIGN 4
+CatrinRealGiveAll:
+Text(CatrinRealDeathQuoteText)
+SendAll(CatrinReal)
+NoFade
+ENDA

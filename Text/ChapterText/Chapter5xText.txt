@@ -504,8 +504,8 @@ to say, here's hoping the ol'[N]
 knife doesn't let 'em down.[A][X]
 
 ## MishPickDialogue
-[MidRight][LoadCleo]
-Should I pick Mish?[No][X]
+[MidRight][LoadCleo][ToggleMouthMove]
+(Should I pick Mish?)[No][X]
 
 ## MishRejectedDialogue
 [MidLeft][LoadMish]
@@ -542,8 +542,8 @@ person on this whole island.[AN]
 So[Beat] how about it?[A][X]
 
 ## AwaPickDialogue
-[MidRight][LoadCleo]
-Should I pick Awa?[No][X]
+[MidRight][LoadCleo][ToggleMouthMove]
+(Should I pick Awa?)[No][X]
 
 ## AwaAcceptedDialogue
 [MidLeft][LoadAwa]
@@ -630,8 +630,8 @@ nowhere. We've heard enough, Cleo.[A][X]
 
 
 ## TobiePickDialogue
-[MidRight][LoadCleo]
-Should I pick Tobie?[No][X]
+[MidRight][LoadCleo][ToggleMouthMove]
+(Should I pick Tobie?)[No][X]
 
 ## TobieAcceptedDialogue
 [FarLeft][LoadMish]
@@ -673,8 +673,8 @@ more need of flying troops.[A][X]
 support your army with my songs.[A][X]
 
 ## CadenzaPickDialogue
-[MidRight][LoadCleo]
-Should I pick Cadenza?[No][X]
+[MidRight][LoadCleo][ToggleMouthMove]
+(Should I pick Cadenza?)[No][X]
 
 ## CadenzaAcceptedDialogue
 [MidLeft][LoadCadenza]
@@ -686,8 +686,8 @@ I see[Beat] I do not expect you to[N]
 understand the beauty of my music[Beat][A][X]
 
 ## FaolanPickDialogue
-[MidRight][LoadCleo]
-Should I pick Faolan?[No][X]
+[MidRight][LoadCleo][ToggleMouthMove]
+(Should I pick Faolan?)[No][X]
 
 ## Ch5xCleoVargaTalk
 [MidLeft][LoadVarga]
@@ -1455,3 +1455,51 @@ texts, and Grandfather's actions[Beat][AN]
 I will require someone on the inside.[N]
 Elias's resolve wavers[Beat] Perhaps[N]
 he is exactly who I need for this[Beat][A][X]
+
+## FaolanFirstTalkDialogue
+[MidLeft][LoadFaolan][ThreeLineBox]
+Ho there! Sir Trajan[N]
+already told me about your plans,[N]
+and I'd like to join your company.[AN]
+I originally served in the militia[N]
+there, but I fled my town and joined[N]
+the Liberators after Cythes came.[AN]
+If I can be any part in freeing my[N]
+homeland, and all Decia, it'd be my[N]
+honor. As for what I bring to the table,[AN]
+I've got a horse, and I'd like to[N]
+think that I'm a well-rounded fighter.[AN]
+If you need someone like that, look[N]
+no further. Well, what do you say?[AN][X]
+
+## FaolanRejectedDialogue
+[MidLeft][LoadFaolan]
+No? Well, if you change your mind,[N]
+just holler. I'll be right here.[A][X]
+
+## FaolanAcceptedDialogue
+[MidLeft][LoadFaolan][ThreeLineBox]
+Alright, glad to hear it![N]
+I'll fight harder than anyone out[N]
+there for Freyse, you'll see![A][X]
+
+## MatthiasFirstTalkDialogue
+[MidLeft][LoadFaolan]
+May I[Beat] offer[Beat] my assistance?[N]
+I promise I won't be a burden.[AN]
+I have my magic,[N]
+both offensive and healing.[AN][X]
+
+## MatthiasPickDialogue
+[MidRight][LoadCleo][ToggleMouthMove]
+(Should I pick Matthias?)[No][X]
+
+## MatthiasAcceptedDialogue
+[MidLeft][LoadFaolan]
+My magic is yours to command![N]
+I truly hope I can be of service.[AN][X]
+
+## MatthiasRejectedDialogue
+[MidLeft][LoadFaolan]
+I-It's fine. I can still[N]
+make myself useful here.[AN][X]

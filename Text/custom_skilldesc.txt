@@ -10,12 +10,12 @@ missing HP.[X]
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]
 Her healing and damage actions heal all[N]
-empowered allies by a small amount.[X]
+empowered allies by 10 + Mag.[X]
 
 ## SD_Nightcaller
-Dusk Bringer: Cromar's dark pact call[N]
-down fog of war after each combat,[N]
-empowering his critical hit chance.[X]
+Dusk Bringer: Cromar's dark pact calls[N]
+down fog after combat and increases[N]
+Crit/C.Avo by (7 - Fog Vision) x 5.[X]
 
 ## SD_Dullahan
 Dullahan's Curse:[N]

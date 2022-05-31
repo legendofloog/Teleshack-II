@@ -76,6 +76,8 @@ MiscBasedEvents:
 LocationBasedEvents:
 Chest(TemperedRing,10,1)
 Chest(Dragonshield,12,0)
+Door(12,4)
+Door(13,4)
 	END_MAIN
 
 Dunno1:
@@ -135,13 +137,13 @@ UNIT C20Enemy Warrior 0x0 Level(5,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [KillerAxe
 UNIT C20Enemy General 0x0 Level(5,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [HandAxe,BraveLance,IronBlade] BossAI
 UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT C20Enemy Sage 0x0 Level(6,Enemy,True) [17,5] 0x0 0x0 0x0 0x0 [Fire,Vulnerary] RangeAI
-UNIT C20Enemy Sage 0x0 Level(5,Enemy,True) [13,1] 0x0 0x0 0x0 0x0 [Wind] RangeAI
-UNIT C20Enemy Halberdier 0x0 Level(20,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
-UNIT C20Enemy Sage 0x0 Level(20,Enemy,True) [19,3] 0x0 0x0 0x0 0x0 [Bolting,Thunder] BossAI
+UNIT C20Enemy Sage 0x0 Level(5,Enemy,True) [13,1] 0x0 0x0 0x0 0x0 [Wind] BossAI
+UNIT C20Enemy Halberdier 0x0 Level(5,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
+UNIT C20Enemy Sage 0x0 Level(5,Enemy,True) [19,3] 0x0 0x0 0x0 0x0 [Bolting,Thunder] BossAI
 UNIT C20Enemy Dracoknight 0x0 Level(5,Enemy,True) [5,1] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
 UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [7,4] 0x0 0x0 0x0 0x0 [SteelBow] TwoActionAI
 UNIT C20Enemy ArchKnight 0x0 Level(5,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
-UNIT C20Enemy Swordmaster 0x0 Level(20,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [TrainedEdge,FlameSword] BossAI
+UNIT C20Enemy Swordmaster 0x0 Level(5,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [TrainedEdge,FlameSword] BossAI
 UNIT C20Enemy Hero 0x0 Level(5,Enemy,True) [17,7] 0x0 0x0 0x0 0x0 [SteelSword,IronAxe] BossAI
 UNIT C20Enemy Swordfighter 0x0 Level(5,Enemy,True) [20,14] 0x0 0x0 0x0 0x0 [SteelSword,] RangeAI
 UNIT C20Enemy LanceArmor 0x0 Level(20,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [SteelLance] StallOneTurnAI

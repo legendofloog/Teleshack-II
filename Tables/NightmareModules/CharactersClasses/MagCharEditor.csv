@@ -37,7 +37,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x23 Tiberius,2,30
 0x24 Ellerey,2,5
 0x25 Mantou,0,1
-0x26 Tippany,0,0
+0x26 Tippany,0,12
 0x27 Pelecaye,4,35
 0x28 Carl,3,15
 0x29 Darby,0,0
@@ -59,19 +59,19 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x39 Tara,0,5
 0x3A Jerry,-1,0
 0x3B Lyre,2,10
-0x3C <Summon>,0,0
-0x3D <'Summonern'>,0,0
-0x3E Knoll's Summon,0,0
-0x3F Ewan's Summon,0,0
+0x3C Ngondala,6,30
+0x3D CatrinReal,9,35
+0x3E Matthias,5,45
+0x3F KwameReal,13,100
 0x40 Kofi,5,20
-0x41 Boro (Ch 1),0,0
-0x42 Raschwitz (Ch 1),0,0
-0x43 Tyr (Ch 15),0,0
-0x44 Riggan,3,10
-0x45 Aurora,2,55
-0x46 Breguet (Ch 1),10,40
-Wrathgar (Ch 9),2,5
-0x48 Cidor (Ch 10),0,5
+0x41 ,0,0
+0x42 ,0,0
+0x43 ,0,0
+0x44 ,3,10
+0x45 ,2,55
+0x46 ,10,40
+0x47,2,5
+0x48 ,0,5
 0x49 Johanna (Ch 10),3,5
 0x4A Elias (Ch10),0,10
 0x4B Eitha (Ch 6),13,5
@@ -84,13 +84,13 @@ Wrathgar (Ch 9),2,5
 0x52 Carlyle (Ch 14A),2,10
 0x53 Caellach (Ch 15),2,5
 0x54 Pablo (Ch 13A),5,30
-0x55 -,3,5
-0x56 Gorgon (Ch 18),8,50
-0x57 Riev (Ch 19 & 20),0,0
-0x58 -,10,65
-0x59 -,10,45
-0x5A Gheb (Ch 9B),0,0
-0x5B Beran (Ch 10B),0,0
+0x55 Raschwitz (Ch 1),0,0
+0x56 Tyr (Ch 2),0,0
+0x57 Riggan (Ch 5),3,10
+0x58 Aurora (Ch 11),2,55
+0x59 Wrathgar (Ch 9),2,5
+0x5A Cidor (Ch 10),0,5
+0x5B Beran (Ch 10B),0,5
 0x5C Cyclops (Ch 12B),2,5
 0x5D Wight (Ch 11A),3,15
 0x5E Deathgoyle (Ch 11B),2,5
@@ -169,18 +169,18 @@ Wrathgar (Ch 9),2,5
 0xA7 Kassandra,0,0
 0xA8 Alto,4,0
 0xA9 Mureib,8,45
-0xAA KwameReal,13,100
+0xAA,13,100
 0xAB Mureib2,0,0
 0xAC Loewe,0,0
 0xAD Shafaqat,10,0
 0xAE Barod2,0,0
-0xAF Monster,0,0
-0xB0 Monster,0,0
-0xB1 Monster,0,0
+0xAF Monster,9,0
+0xB0 Monster,2,0
+0xB1 Monster,7,0
 0xB2 Monster,0,0
 0xB3 Monster,0,0
-0xB4 Monster,0,0
-0xB5 Monster,0,0
+0xB4 Monster,5,0
+0xB5 Monster,7,0
 0xB6 Monster,0,0
 0xB7 Monster,0,0
 0xB8 Monster,0,0

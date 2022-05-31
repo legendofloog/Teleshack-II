@@ -10,6 +10,8 @@ BYTE EdgedArrow
 BYTE WoodlandsHuke
 BYTE CaptainsHelm
 BYTE RuneArrow
+BYTE FullHelm
+BYTE SlamBrace
 BYTE 0x00 //terminator
 
 // Defense equipment loses durability on each hit taken
@@ -17,6 +19,7 @@ ALIGN 4
 DefenseEquipmentList:
 BYTE KingShield
 BYTE TemperedRing
+BYTE FullHelm
 BYTE 0x00 // terminator
 
 // Offense equipment loses durability on each attack made

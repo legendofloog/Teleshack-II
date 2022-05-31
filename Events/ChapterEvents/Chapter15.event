@@ -16,13 +16,13 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 //TurnEventPlayer(0, AlenaSpawn, 2)
 TurnEventPlayer(0,CleoWarning, 2)
-TurnEventPlayer(0,CoraliaFlees, 4)
+TurnEventPlayer(0,CoraliaFlees, 5)
 TurnEventPlayer(0,ThiefSpawn1, 3)
 TurnEventPlayer(0,ThiefSpawn2, 4)
 TurnEventPlayer(0,ReinforceTurn5, 5)
 TurnEventPlayer(0,ThiefSpawn3, 6)
 TurnEventPlayer(0,ThiefSpawn4, 8)
-TurnEventPlayer(0,NoAntiturtle,13)
+TurnEventPlayer(0,NoAntiturtle,11)
 END_MAIN
 
 CleoWarning:
@@ -259,9 +259,9 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 CoraliaAndCenterGroup:
-UNIT Cythes Champion 0x0 Level(1,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [Javelin, LongLance] AttackInRangeAI
+UNIT Cythes Champion 0x0 Level(1,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
 UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [11,27] 0x0 0x0 0x0 0x0 [IceSword] BossAI
-UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [TrainedArc] AttackInRangeAI
 UNIT Cythes Hero 0x0 Level(1,Enemy,True) [12,21] 0x0 0x0 0x0 0x0 [LongSword,WhiteGem] AttackInRangeAI
 UNIT Cythes Bard 0x0 Level(15,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
 UNIT Cythes AxeArmor 0x0 Level(15,Enemy,True) [11,17] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
@@ -270,30 +270,30 @@ UNIT Raschwitz_Ch1 LanceSoldier  0x0 Level(15,Enemy,False) [13,13] 0x0 0x0 0x0 0
 UNIT
 
 EnemyUnitsLoeweSide:
-UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [21,24] 0x0 0x0 0x0 0x0 [SlimAxe,DoorKey,ChestKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [21,24] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
 UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [18,12] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey,ChestKey] BossAI
-UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [SlimAxe,DoorKey,ChestKey] BossAI
-UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [22,15] 0x0 0x0 0x0 0x0 [SlimAxe,DoorKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [22,15] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey] BossAI
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [23,23] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT Cythes Mage 0x0 Level(15,Enemy,True) [25,22] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
 UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [17,19] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
 UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Greatbow] AttackInRangeAI
-UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [KillingEdge] TwoActionAI
+UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
 UNIT Cythes LanceArmor 0x0 Level(15,Enemy,True) [17,15] 0x0 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
-UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [Greatlance] TwoActionAI
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
 UNIT Cythes SwordArmor 0x0 Level(15,Enemy,True) [17,5] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [23,11] 0x0 0x0 0x0 0x0 [ShortSword] AttackInRangeAI
 UNIT
 
 EnemyUnitsCleoSide:
-UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey,ChestKey] BossAI
-UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,11] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey] BossAI
-UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [SlimAxe,DoorKey,ChestKey] BossAI
-UNIT Cythes AxeFighter 0x0 Level(15,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [SlimAxe] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [IronLance,DoorKey,ChestKey] BossAI
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,11] 0x0 0x0 0x0 0x0 [IronLance,DoorKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
+UNIT Cythes AxeFighter 0x0 Level(15,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT Cythes Bard 0x0 Level(15,Enemy,True) [2,22] 0x0 0x0 0x0 0x0 [Wind] PursueWithoutHeedAI
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI
-UNIT Cythes AxeArmor 0x0 Level(15,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes AxeArmor 0x0 Level(15,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [TrainedAxe] AttackInRangeAI
 UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [7,12] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI
 UNIT Cythes SwordArmor 0x0 Level(15,Enemy,True) [6,10] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 UNIT Cythes DarkMage 0x0 Level(15,Enemy,True) [9,3] 0x0 0x0 0x0 0x0 [Jormungand] AttackInRangeAI

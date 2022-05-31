@@ -48,7 +48,9 @@ SetUnitPCC(Kofi,1)
 SetUnitPCC(Zhara,3)
 SetUnitPCC(Jerry,4)
 SetUnitPCC(Lyre,0)
+SetUnitPCC(Ngondala,0)
+SetUnitPCC(CatrinReal,2)
 //Bosses, Generics, and NPCs
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)
-
+SetUnitPCC(Taraji,0)
