@@ -26,16 +26,19 @@ _blh GetWeaponType
 cmp 	r0, #BonusWeaponType1	@check if item is matching weapon type
 beq ThunderCheck
 b End 	@ Not Matching weapon type
-mov	r7, #0x0
+
+_blh GetUnitEquippedItem
+mov	r1, #0x0
 ThunderCheck:
-ldr 	r6, =ThunderWeapons
-ldrb	r6, [r6,r7]
-cmp	r6, r1
+ldr 	r2, =ThunderWeapons
+ldrb	r2, [r2,r1]
+cmp	r2, r0
 beq	AddRange
-cmp 	r6, #0xFF
+cmp 	r2, #0x0
 beq	End 	@not a thunder weapon
-add	r7, #0x1
+add	r1, #0x1
 b	ThunderCheck
+
 AddRange:
 mov 	r2, sp
 ldrh 	r0, [r2]
