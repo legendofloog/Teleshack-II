@@ -14,6 +14,7 @@ PointerList:
 
 TurnBasedEvents:
 TurnEventPlayer(23,DeadlordSpawn,10)
+TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
 END_MAIN
 
 
@@ -295,4 +296,8 @@ REMOVEALL_RED
 LOAD 1 EithaSpawn
 SetFlag(0x4)
 NoFade
+ENDA
+
+PegasusCharge:
+SetAI(33,23,0,0,4,0)
 ENDA
