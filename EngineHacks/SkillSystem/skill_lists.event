@@ -42,7 +42,7 @@ BYTE 00 00
 ALIGN 4
 
 MinkSkillList:
-BYTE 1 FarShockID
-BYTE 1 WhisperWindID
+//BYTE 1 FarShockID
+//BYTE 1 WhisperWindID
 BYTE 00 00
 ALIGN 4
