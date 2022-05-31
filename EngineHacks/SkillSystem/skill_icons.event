@@ -1016,6 +1016,12 @@ ORG SkillIcon(TelepathyID)
 ORG SkillIcon(BladeDanceID)
 #incbin "SkillIcons/Astra.dmp"
 
+ORG SkillIcon(FarShockID)
+#incbin "SkillIcons/Thunderstorm.dmp"
+
+ORG SkillIcon(WhisperWindID)
+#incbin "SkillIcons/WindDisciple.dmp"
+
 ORG SkillIcon(PhaseLeapID)
 #incbin "SkillIcons/Celerity.dmp"
 

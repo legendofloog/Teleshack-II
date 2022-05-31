@@ -342,6 +342,8 @@ SkillDescription(AlacrityID,SD_Alacrity)
 SkillDescription(SharpshooterID,SD_Sharpshooter)
 SkillDescription(DesolateID,SD_Desolate)
 SkillDescription(BladeDanceID,SD_BladeDance)
+SkillDescription(FarShockID,SD_FarShock)
+SkillDescription(WhisperWindID,SD_WhisperWind)
 
 SkillDescription(SpelltwisterID,SD_Spelltwister)
 SkillDescription(AbsoluteZeroID,SD_AbsoluteZero)

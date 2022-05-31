@@ -146,6 +146,13 @@ WORD ACTION_SWAP
 WORD ACTION_PUSH
 WORD ACTION_SWARP
 
+ALIGN 4
+WhisperWind:
+#incbin "WhisperWind.dmp"
+POIN SkillTester
+WORD WhisperWindID
+POIN WindWeapons
+#include "WhisperWindEvent.event"
 
 PUSH //some changes to vanilla code to make everything work
 ORG $1D24C //check for canto, modified to just check for cantoing bit set

@@ -225,8 +225,6 @@
 #define HeroRing 0xff
 #define EarthGreataxe 0xE4
 #define Runespear 0xE5
-
-
 #define FangAndClaw 0xE6
 #define Starcutter 0xE7
 #define FullHelm 0xE8

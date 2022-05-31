@@ -110,6 +110,8 @@
 [LoadNikolas] = [LoadFace][0xDB][0x1]
 [LoadSera] = [LoadFace][0xDE][0x1]
 [LoadShaw] = [LoadFace][0xE7][0x1]
+[LoadMink] = [LoadFace][0xF7][0x1]
+[LoadTiberius] = [LoadFace][0xF8][0x1]
 [LoadMatthias] = [LoadFace][0xF6][0x1]
 [LoadNgondala] = [LoadFace][0xED][0x1]
 
