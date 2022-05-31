@@ -15,6 +15,7 @@ PointerList:
 TurnBasedEvents:
 TurnEventPlayer(23,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
+TurnEventPlayer(0,ThiefAntiTurtle,1)
 END_MAIN
 
 
@@ -130,10 +131,10 @@ IndoorEnemy:
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 //turn 5
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
-  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,10] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
-  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronSword,DoorKey] BossAI
-  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [14,10] 0x0 0x0 0x0 0x1 [IronSword,DoorKey,ChestKey] BossAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI
 //turn 6 
+  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI
   UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Lightning] TwoActionAI
   UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
@@ -179,6 +180,9 @@ OutdoorEnemy:
   
   UNIT
 
+ThiefSpawn:
+  UNIT Selese Thief Cidor Level(12,Enemy,True) [6,10] 0x0 0x0 0x0 0x1 [ShortSword,DoorKey,ChestKey] ThiefAI
+  UNIT
   
 EithaSpawn:
   UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
@@ -289,7 +293,7 @@ RemoveTrapAtCoords(6,16)
 RemoveTrapAtCoords(2,20)
 RemoveTrapAtCoords(3,20)
 RemoveTrapAtCoords(4,20)
-CAMERA_CENTERED [7,20]
+CAMERA_CENTERED [3,16]
 TILECHANGE 8
 REMOVEALL_GREEN
 REMOVEALL_RED
@@ -300,4 +304,11 @@ ENDA
 
 PegasusCharge:
 SetAI(33,23,0,0,4,0)
+NoFade
+ENDA
+
+ThiefAntiTurtle:
+CAMERA_CENTERED [6,10]
+LOAD 1 ThiefSpawn
+NoFade
 ENDA
