@@ -1,0 +1,83 @@
+EventPointerTable(Chapter22Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+Units1:
+LoadUnit(10,10)
+LoadUnit(10,11)
+LoadUnit(10,12)
+UNIT
+
+BeginningScene:
+LOAD3 2 Units1
+LOAD1 1 BossUnit
+LOAD1 1 EnemyUnits
+LOAD1 1 NewUnits
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+RemoveAll
+MNC2 Chapter23
+NoFade
+ENDA
+
+
+BossUnit:
+UNIT Darmath General  0x0 Level(10,Enemy,False) [15,10] 0x0 0x0 0x0 0x0 [Greatsword] NeverMoveAI
+UNIT
+
+EnemyUnits:
+UNIT Cythes LanceSoldier 0x0 Level(20,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [IronLance] NeverMoveAI
+UNIT
+
+NewUnits:
+UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [10,4] 0x0 0x0 0x0 0x0 [SilverAxe,Claymore,KnightProof] NeverMoveAI
+UNIT Locke ThiefFighter 0x0 Level(3,NPC,False) [10,5] 0x0 0x0 0x0 0x0 [Armorslayer,ShortSword] NeverMoveAI
+UNIT
+
