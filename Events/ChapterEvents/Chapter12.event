@@ -13,7 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 //flags
-// 9 - Top left prison LOCA
+// 18, 19 - Top left prison LOCA
 // 10 - top middle prison LOCA
 // 11 - top right prison LOCA
 // 12 - outside prison LOCA
@@ -21,7 +21,9 @@ PointerList:
 // 14 - Top Middle Prison event
 // 15 - Top Right Prison event
 // 16 - Outside Prison event
-// 23 - turned on when the deadlord spawn event is called on turn 10
+
+// 23 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
+
 // 29 - turned on by the AFEV called by tiberius's death quote
 // 30 - turned on wtih tiberius death quote
 // 31 - turned on if Tiberius was succesfully captured
@@ -29,7 +31,7 @@ PointerList:
 
 
 TurnBasedEvents:
-TurnEventPlayer(23,DeadlordSpawn,10)
+TurnEventPlayer(24,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
 TurnEventPlayer(0,ThiefAntiTurtle,1)
 END_MAIN
@@ -40,30 +42,31 @@ END_MAIN
 
 
 LocationBasedEvents:
-LOCA 9 TopLeftPrisonDoor [5,2] 0x12
+LOCA 18 TopLeftPrisonDoor [5,2] 0x12
 Chest(AngelicRobe,16,2)
 LOCA 10 TopMiddlePrisonDoor [10,3] 0x12
-LOCA 9 TopLeftPrisonDoor2 [3,4] 0x12
+LOCA 19 TopLeftPrisonDoor2 [3,4] 0x12
 LOCA 11 TopRightPrisonDoor [13,4] 0x12
-Seize(2,11)
-Seize(3,11)
-Seize(4,11)
+LOCA 24 DeadlordSpawn [2,11] 0x11
+LOCA 24 DeadlordSpawn [3,11] 0x11
+LOCA 24 DeadlordSpawn [4,11] 0x11
 Door(10,11)
 Door(11,11)
 Door(14,11)
 Chest(AlairsGale,13,12)
 Chest(RedGem,15,12)
-Seize(6,15)
-Seize(6,16)
-Seize(2,20)
-Seize(3,20)
-Seize(4,20)
+LOCA 24 DeadlordSpawn [6,15] 0x11
+LOCA 24 DeadlordSpawn [6,16] 0x11
+LOCA 24 DeadlordSpawn [2,20] 0x11
+LOCA 24 DeadlordSpawn [3,20] 0x11
+LOCA 24 DeadlordSpawn [4,20] 0x11
 LOCA 12 OutsidePrisonDoor [14,21] 0x12
 END_MAIN
 
 
 MiscBasedEvents:
-AFEV 13 TopLeftPrisonOpened 9
+AFEV 13 TopLeftPrisonOpened 18
+AFEV 13 TopLeftPrisonOpened 19
 AFEV 14 TopMiddlePrisonDoorOpened 10
 AFEV 15 TopRightPrisonDoorOpened 11
 AFEV 16 OutsidePrisonDoorOpened 12
@@ -245,10 +248,15 @@ ENDA
 
 
 TopLeftPrisonOpened:
+CHECK_EVENTID 18
+BEQ 16 s0 sC
+CHECK_EVENTID 19
+BEQ 16 s0 sC
 Text(Ch12PlaceholderText)
 GiveItem(Silence,0xFFFF)
 SVAL sB Coords(3,2)
 REMOVEUNIT(-2)
+LABEL 16
 NoFade
 ENDA
 
@@ -256,8 +264,8 @@ TopMiddlePrisonDoor:
 TILECHANGE 2
 NoFade
 ENDA
-
 TopMiddlePrisonDoorOpened:
+
 Text(Ch12PlaceholderText)
 GiveItem(SecretBook,0xFFFF)
 SVAL sB Coords(10,1)
@@ -320,7 +328,7 @@ REMOVEALL_GREEN
 REMOVEALL_RED
 CHECK_EXISTS Tiberius
 BEQ 3 s0 sC
-CUSE Tiberius //turn Tiberius back to red, since the player still has to hold onto him 'till the end
+CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LOAD 1 EithaSpawn
 SetFlag(0x4)
 NoFade
