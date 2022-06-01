@@ -12,6 +12,22 @@ PointerList:
 	POIN $0 $0 $0
 	POIN BeginningScene EndingScene
 
+//flags
+// 9 - Top left prison LOCA
+// 10 - top middle prison LOCA
+// 11 - top right prison LOCA
+// 12 - outside prison LOCA
+// 13 - Top left prison event
+// 14 - Top Middle Prison event
+// 15 - Top Right Prison event
+// 16 - Outside Prison event
+//???? 23 - turned on when the deadlord spawn event is called on turn 10
+// 29 - turned on by the AFEV called by tiberius's death quote
+// 30 - turned on wtih tiberius death quote
+// 31 - turned on if Tiberius was succesfully captured
+
+
+
 TurnBasedEvents:
 TurnEventPlayer(23,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
@@ -279,8 +295,8 @@ ENDA
 TiberiusCaptureCheck:
 CHECK_EXISTS Tiberius
 BEQ 5 s0 sC
-ENUT 31
-LABEL 5
+ENUT 31 
+LABEL 5 //go to here if tiberius was not captured
 NoFade
 ENDA
 
