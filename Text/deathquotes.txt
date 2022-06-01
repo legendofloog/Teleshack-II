@@ -233,10 +233,11 @@ A fitting reward for my[N]
 indolence[Beat][CloseEyes][A][X]
 
 ## EithaDeathQuote
-[MidRight][LoadDragana]
+[MidRight][LoadDragana][ToggleInvert]
 [Beat]m-my[Beat] be[Beat]lov[Beat]ed[Beat][AN]
 [Beat]t-to[Beat]gether[Beat]
 [Beat]for[Beat]for[Beat]ev-[AN]
+[ToggleInvert]
 [Beat]uhnn[Beat] what happened[Beat]?[AN]
 [MidRight][LoadLoewe]
 [Beat]D-dragana?[AN]
