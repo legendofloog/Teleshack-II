@@ -233,11 +233,10 @@ NoFade
 ENDA
 
 EndingScene:
-CHECK_EVENTID 31
-BEQ 2 sC s0
-
-LABEL 2
+CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
+BEQ 2 s0 sC
 CUSA Tiberius
+LABEL 2
 FADI 15
 InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
@@ -296,11 +295,17 @@ TiberiusCaptureCheck:
 CHECK_EXISTS Tiberius
 BEQ 5 s0 sC
 ENUT 31 
-LABEL 5 //go to here if tiberius was not captured
+LABEL 5 //keep flag 31 off if tiberius was not captured
 NoFade
 ENDA
 
 DeadlordSpawn:
+CHECK_EXISTS Tiberius
+BEQ 3 s0 sC
+CHECK_EVENTID 31
+BEQ 3 s0 sC
+CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
+LABEL 3
 RemoveTrapAtCoords(2,11)
 RemoveTrapAtCoords(3,11)
 RemoveTrapAtCoords(4,11)
@@ -313,6 +318,9 @@ CAMERA_CENTERED [3,16]
 TILECHANGE 8
 REMOVEALL_GREEN
 REMOVEALL_RED
+CHECK_EXISTS Tiberius
+BEQ 3 s0 sC
+CUSE Tiberius //turn Tiberius back to red, since the player still has to hold onto him 'till the end
 LOAD 1 EithaSpawn
 SetFlag(0x4)
 NoFade
