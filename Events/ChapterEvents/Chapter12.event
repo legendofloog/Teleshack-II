@@ -21,7 +21,7 @@ PointerList:
 // 14 - Top Middle Prison event
 // 15 - Top Right Prison event
 // 16 - Outside Prison event
-//???? 23 - turned on when the deadlord spawn event is called on turn 10
+// 23 - turned on when the deadlord spawn event is called on turn 10
 // 29 - turned on by the AFEV called by tiberius's death quote
 // 30 - turned on wtih tiberius death quote
 // 31 - turned on if Tiberius was succesfully captured
