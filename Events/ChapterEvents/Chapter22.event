@@ -19,6 +19,22 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Chest(IronSword,26,1)
+Door(23,2)
+Chest(BlueGem,30,6)
+Door(27,9)
+Door(28,9)
+Door(24,12)
+Door(24,13)
+Door(29,16)
+Door(30,16)
+Village(8,VillageA,14,1)
+Village(9,VillageB,12,8)
+Village(10,VillageC,20,11)
+LOCA 11 LockeInn [2,22] 0x10
+Vendor(Ch22Vendor,19,8)
+Armory(Ch22Armory,9,1)
+SecretShop(Ch22SecretShop,8,15)
 END_MAIN
 
 MiscBasedEvents:
@@ -67,13 +83,52 @@ MNC2 Chapter23
 NoFade
 ENDA
 
+VillageA:
+GiveItem(IronSword,0xFFFF)
+ENDA
+
+VillageB:
+GiveItem(IronSword,0xFFFF)
+ENDA
+
+VillageC:
+GiveItem(IronSword,0xFFFF)
+ENDA
+
+LockeInn:
+GiveItem(IronSword,0xFFFF)
+ENDA
+
+ALIGN 4
+Ch22Armory:
+SHORT IronSword
+SHORT 0
+SHORT 0
+ALIGN 4
+
+
+ALIGN 4
+Ch22Vendor:
+SHORT Fire
+SHORT 0
+SHORT 0
+ALIGN 4
+
+
+ALIGN 4
+Ch22SecretShop:
+SHORT SilverCard
+SHORT 0
+SHORT 0
+ALIGN 4
+
 
 BossUnit:
-UNIT Darmath General  0x0 Level(10,Enemy,False) [15,10] 0x0 0x0 0x0 0x0 [Greatsword] NeverMoveAI
+UNIT Darmath General  0x0 Level(10,Enemy,False) [28,23] 0x0 0x0 0x0 0x0 [Greatsword,MasterLance] NeverMoveAI
 UNIT
 
 EnemyUnits:
-UNIT Cythes LanceSoldier 0x0 Level(20,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [IronLance] NeverMoveAI
+UNIT Cythes LanceSoldier 0x0 Level(20,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [TrainedPike] NeverMoveAI
 UNIT
 
 NewUnits:
