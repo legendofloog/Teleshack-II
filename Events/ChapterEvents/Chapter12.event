@@ -146,9 +146,9 @@ IndoorEnemy:
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [IronAxe] StallOneTurnAI 
 //turn 4
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [ShortLance] TwoActionAI
   UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] TwoActionAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI //do not move! thief AI breaks without him
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [ShortSword] AttackInRangeAI //do not move! thief AI breaks without him
 //turn 5
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
