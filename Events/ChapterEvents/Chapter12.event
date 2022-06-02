@@ -206,7 +206,7 @@ ThiefSpawn:
   UNIT
   
 EithaSpawn:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] BossAI
+  UNIT Eitha Sniper_F 0x0 Level(10,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
   UNIT
 
 
@@ -324,6 +324,10 @@ RemoveTrapAtCoords(6,16)
 RemoveTrapAtCoords(2,20)
 RemoveTrapAtCoords(3,20)
 RemoveTrapAtCoords(4,20)
+ENUT 13
+ENUT 14
+ENUT 15 
+ENUT 16
 CAMERA_CENTERED [3,16]
 TILECHANGE 8
 REMOVEALL_GREEN
