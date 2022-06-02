@@ -34,7 +34,7 @@ PointerList:
 TurnBasedEvents:
 TurnEventPlayer(24,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
-TurnEventPlayer(0,ThiefAntiTurtle,3)
+TurnEventPlayer(0,ThiefAntiTurtle,3) //maybe make this guy show up a turn earlier? I don't mind him being really hard to get
 TurnEventEnemy(0,ThiefProofDoor,4,3) //this and the one after are used to prevent the thieves from opening this door
 TurnEventPlayer(0,ThiefProofDoor2,5,3)
 END_MAIN
@@ -54,7 +54,7 @@ LOCA 24 DeadlordSpawn [2,11] 0x11
 LOCA 24 DeadlordSpawn [3,11] 0x11
 LOCA 24 DeadlordSpawn [4,11] 0x11
 Door(11,10)
-Door(14,10)
+Door(14,10) //HUGE BUG
 Door(11,12)
 Chest(AlairsGale,13,12)
 Chest(RedGem,15,12)
@@ -154,11 +154,11 @@ IndoorEnemy:
 //turn 5
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
-  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI
+  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI //change to soldier
 //turn 6 
-  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI
-  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Lightning] TwoActionAI
-  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
+  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI //change to soldier
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Thunder] TwoActionAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Lightning] AttackInRangeAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 //turn 7
   
@@ -183,7 +183,7 @@ OutdoorEnemy:
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [19,15] 0x0 0x0 0x0 0x1 [Greatlance] StallOneTurnAI
 //turn 4
   UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [Hurlbat,IronAxe] TwoActionAI
-  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [29,19] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [28,19] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,20] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
 //turn 5 (GIVE THESE GUYS GROUP AI)
   UNIT Selese Warrior Cidor Level(1,Enemy,True) [15,19] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] AttackInRangeAI
@@ -331,8 +331,9 @@ TILECHANGE 8
 REMOVEALL_GREEN
 REMOVEALL_RED
 CHECK_EXISTS Tiberius
-BEQ 3 s0 sC
+BEQ 2 s0 sC
 CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
+LABEL 2
 LOAD 1 EithaSpawn
 SetFlag(0x4)
 NoFade
