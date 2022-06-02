@@ -21,7 +21,7 @@ PointerList:
 // 14 - Top Middle Prison event
 // 15 - Top Right Prison event
 // 16 - Outside Prison event
-// 17 - middle door
+
 
 // 23 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
 
@@ -53,11 +53,9 @@ LOCA 11 TopRightPrisonDoor [13,4] 0x12
 LOCA 24 DeadlordSpawn [2,11] 0x11
 LOCA 24 DeadlordSpawn [3,11] 0x11
 LOCA 24 DeadlordSpawn [4,11] 0x11
-LOCA 17 MiddleDoor[10,10] 0x12
-LOCA 17 MiddleDoor[11,10] 0x12
+Door(11,10)
 Door(14,10)
-LOCA 17 MiddleDoor[10,11] 0x12
-LOCA 17 MiddleDoor[10,12] 0x12
+Door(11,12)
 Chest(AlairsGale,13,12)
 Chest(RedGem,15,12)
 LOCA 24 DeadlordSpawn [6,15] 0x11
@@ -152,7 +150,7 @@ IndoorEnemy:
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] TwoActionAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI //do not move! thief AI breaks without him
 //turn 5
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
@@ -291,28 +289,6 @@ SVAL sB Coords(13,2)
 REMOVEUNIT(-2)
 NoFade
 ENDA
-
-MiddleDoor:
-TILECHANGE 6
-NoFade
-ENDA
-
-ThiefProofDoor:
-//CHECK_
-//BEQ 23 s0 sC
-ENUT 17
-//LABEL 23
-NoFade
-ENDA
-
-ThiefProofDoor2:
-//CHECK_
-//BEQ 24 s0 sC
-ENUF 17
-//LABEL 24
-NoFade
-ENDA
-
 
 OutsidePrisonDoor:
 TILECHANGE 12
