@@ -38,6 +38,7 @@ SecretShop(Ch22SecretShop,8,15)
 END_MAIN
 
 MiscBasedEvents:
+AREA 12 GuidingMoonlight [30,37][30,38]
 DefeatBoss(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
@@ -99,6 +100,10 @@ LockeInn:
 GiveItem(IronSword,0xFFFF)
 ENDA
 
+GuidingMoonlight:
+GiveItem(MoonlightBlade,0xFFFF)
+ENDA
+
 ALIGN 4
 Ch22Armory:
 SHORT IronSword
@@ -124,7 +129,7 @@ ALIGN 4
 
 
 BossUnit:
-UNIT Darmath General  0x0 Level(10,Enemy,False) [28,23] 0x0 0x0 0x0 0x0 [Greatsword,MasterLance] NeverMoveAI
+UNIT Darmath General  0x0 Level(10,Enemy,False) [28,23] 0x0 0x0 0x0 0x0 [Zweihander,MasterLance] NeverMoveAI
 UNIT
 
 EnemyUnits:

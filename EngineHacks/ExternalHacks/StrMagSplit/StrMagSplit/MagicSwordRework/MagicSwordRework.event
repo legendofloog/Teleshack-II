@@ -43,6 +43,7 @@ POP
 	MagicSwordEntry(LunarAxe,0x2,True,HitRes,HitRes)
 	MagicSwordEntry(AquaBrand,WeaponTypeAnima,False,HitDef,HitRes)
 	MagicSwordEntry(Starcutter,0x0,True,HitRes,HitRes)
+        MagicSwordEntry(MoonlightBlade,WeaponTypeLight,False,HitDef,HitRes)
 	BYTE 0 0 0 //terminator
 
 
