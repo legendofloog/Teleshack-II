@@ -77,6 +77,10 @@ ALIGN 4
 ShieldbearerStatBoosts:
 StatBonus(0,0,0,0,0,5,2,0,(-1),0)
 
+ALIGN 4
+DarkBrandStatBoosts:
+StatBonus(0,0,0,0,0,0,0,10,0,0)
+
 
 
 ALIGN 4
