@@ -43,16 +43,16 @@
 
 #define CrimeHeartID 0xD9
 #define DrumbeatRuinID 0xDA
-#define Sheep_Will_Sleep 0xDC
-#define Core 0xDD
-
-
 #define SwordOfTheValiant 0xDB
+
 #define BattleWithMagus 0xE0
 #define TomokoQOH 0xE1
 #define SorrowsDistortion 0xE4
 
 #define GuardianSignsLegendary 0x12D
+
+#define Sheep_Will_Sleep 0x26D
+#define Core 0x26E
 
 // Vanilla
 #define TiesOfFriendship 0x7
