@@ -184,9 +184,9 @@ OutdoorEnemy:
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [28,19] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,20] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
 //turn 5 
-  UNIT Selese Warrior Cidor Level(1,Enemy,True) [15,19] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] [0x00,0x03,0x09,0x01]
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [17,22] 0x0 0x0 0x0 0x1 [IronLance] [0x00,0x03,0x09,0x01]
-  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [18,23] 0x0 0x0 0x0 0x1 [IronAxe] [0x00,0x03,0x09,0x01]
+  UNIT Selese Warrior Cidor Level(1,Enemy,True) [15,19] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] GroupOneAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [17,22] 0x0 0x0 0x0 0x1 [IronLance] GroupOneAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [18,23] 0x0 0x0 0x0 0x1 [IronAxe] GroupOneAI
 //turn 6 (maybe move the two-action cavs further back, and move the pegasus closer, or have her charge after a certain turn)
   UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [7,21] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [8,22] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
