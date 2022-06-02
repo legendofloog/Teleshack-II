@@ -27,6 +27,7 @@ ALIGN 4
 OffenseEquipmentList:
 BYTE EdgedArrow
 BYTE RuneArrow
+BYTE WoodlandsHuke
 BYTE 0x00 // terminator
 
 // Equipment in neither list will never decrement durability

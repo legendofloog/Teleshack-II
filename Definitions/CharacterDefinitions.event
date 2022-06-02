@@ -182,7 +182,7 @@
 #define C19Phantom 0x8D
 #define C19Mini1 0x8E
 #define C19Mini2 0x8F
-#define C19Boss 0x56
+#define C19Boss 0x54
 
 //Chapter 20 Stuff
 #define C20Enemy 0x93
@@ -211,9 +211,6 @@
 #define Macdaire 0x50
 #define Maelduin_boss 0x50
 #define Aias 0x51
-#define Carlyle 0x52
-#define Caellach 0x53
-#define Pablo_2 0x54
 #define Gorgon_boss 0x56
 #define Riev 0x57
 #define Gheb 0x5A

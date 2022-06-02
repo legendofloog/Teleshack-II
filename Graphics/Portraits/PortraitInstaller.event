@@ -190,18 +190,18 @@ setMugEntry(LoeweKidMug, LoeweKidMugData, 2, 8, 3, 6)
 
 ALIGN 16
 DraganaOldMugData:
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_mug.dmp"
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_frames.dmp"
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_palette.dmp"
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_minimug.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_mug.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_frames.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_palette.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_minimug.dmp"
 setMugEntry(DraganaOldMug, DraganaOldMugData, 3, 5, 3, 3)
 
 ALIGN 16
 DraganaYoungMugData:
-#incbin "Dmp/DraganaYoung(Loog)_mug.dmp"
-#incbin "Dmp/DraganaYoung(Loog)_frames.dmp"
-#incbin "Dmp/DraganaYoung(Loog)_palette.dmp"
-#incbin "Dmp/DraganaYoung(Loog)_minimug.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog)_mug.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog)_frames.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog)_palette.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog)_minimug.dmp"
 setMugEntry(DraganaYoungMug, DraganaYoungMugData, 3, 5, 3, 3)
 
 ALIGN 16

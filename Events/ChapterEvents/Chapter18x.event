@@ -313,6 +313,7 @@ Text(Ch18xBeginningScene3PortLazar5)
 Text(Ch18xBeginningScene3PortLazar6)
 Text(Ch18xBeginningScene3PortLazar7)
 EraseBackground
+HIDEUNIT Loewe
 LOAD1 1 GreenUnits
 LOAD1 2 CleoInterludeGroup
 ENUN
@@ -321,6 +322,7 @@ NoFade
 ENDA
 
 EndingScene:
+SHOWUNIT Loewe
 SetBackground(0x4)
 MUSC Rovers
 Text(Ch18xEndingScene1AtThePort1)

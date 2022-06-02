@@ -26,12 +26,13 @@
 #define oppression 0x1D
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
+#define FeelingWoozyID 0x21
+#define CallOfTheBellsID 0x22
 
-#define CallOfTheBellsID 0x21
-#define FeelingWoozyID 0x22
+#define RemembranceID 0x58
 #define CryptequeID 0x59
 #define RiseAboveID 0x5D
-#define RemembranceID 0x58
+
 
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
@@ -43,14 +44,13 @@
 
 #define CrimeHeartID 0xD9
 #define DrumbeatRuinID 0xDA
-#define Core 0xDB
-#define Sheep_Will_Sleep 0xDC
-
-
 #define SwordOfTheValiant 0xDB
+
 #define BattleWithMagus 0xE0
 #define TomokoQOH 0xE1
 #define SorrowsDistortion 0xE4
+#define Core 0xE8
+#define Sheep_Will_Sleep 0xE9
 
 #define GuardianSignsLegendary 0x12D
 
