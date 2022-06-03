@@ -51,9 +51,8 @@ LOCA 11 TopRightPrisonDoor [13,4] 0x12
 LOCA 24 DeadlordSpawn [2,11] 0x11
 LOCA 24 DeadlordSpawn [3,11] 0x11
 LOCA 24 DeadlordSpawn [4,11] 0x11
-Door(11,10)
-Door(14,10) //HUGE BUG
-Door(11,12)
+Door(11,11)
+Door(14,11)
 Chest(AlairsGale,13,12)
 Chest(RedGem,15,12)
 LOCA 24 DeadlordSpawn [6,15] 0x11
@@ -145,9 +144,9 @@ IndoorEnemy:
   UNIT Selese Mage Cidor Level(12,Enemy,True) [13,9] 0x0 0x0 0x0 0x1 [Fire] StallOneTurnAI 
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [IronAxe] StallOneTurnAI 
 //turn 4
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [ShortLance] TwoActionAI
-  UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] GroupTwoAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [ShortLance] GroupTwoAI
+  UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] GroupTwoAI
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [ShortSword] AttackInRangeAI //do not move! thief AI breaks without him
 //turn 5
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
@@ -336,7 +335,9 @@ BEQ 2 s0 sC
 CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LABEL 2
 LOAD 1 EithaSpawn
+		//give eitha point blank, boon, and maybe renewal
 SetFlag(0x4)
+		//reset player turn
 NoFade
 ENDA
 
