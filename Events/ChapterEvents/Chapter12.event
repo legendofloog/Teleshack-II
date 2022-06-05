@@ -127,6 +127,8 @@ MinkJoin:
   UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
   UNIT
 
+TiberiusJoin:
+   UNIT Tiberius Noble Cleo Level(4,Ally,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] NoAI
 
 IndoorEnemy:
   UNIT Tiberius Noble Cidor Level(4,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
@@ -240,6 +242,9 @@ EndingScene:
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
 CUSA Tiberius
+CHECK_EXISTS Tiberius //temporary
+BNE 2 s0 sC
+LOAD 1 TiberiusJoin
 LABEL 2
 FADI 15
 InterludeRemovalRoutineASMC
