@@ -83,7 +83,7 @@ SetFatigue(Takai,0)
 MOVE 15 Takai [7,9]
 ENUN
 SVAL s1 0x1
-SET_CONDITION Mantou
+SET_CONDITION Takai
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
