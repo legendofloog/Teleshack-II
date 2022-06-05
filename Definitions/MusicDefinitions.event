@@ -54,6 +54,9 @@
 
 #define GuardianSignsLegendary 0x12D
 
+#define Sheep_Will_Sleep 0x26D
+#define Core 0x26E
+
 // Vanilla
 #define TiesOfFriendship 0x7
 #define AdvanceSong 0x24

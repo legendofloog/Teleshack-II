@@ -53,3 +53,7 @@ BYTE 1 WatchfulID
 BYTE 00 00
 ALIGN 4
 
+EithaSkillList:
+BYTE 1 PointBlankID
+BYTE 00 00
+ALIGN 4
