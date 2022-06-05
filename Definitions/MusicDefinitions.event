@@ -49,8 +49,6 @@
 #define BattleWithMagus 0xE0
 #define TomokoQOH 0xE1
 #define SorrowsDistortion 0xE4
-#define Core 0xE8
-#define Sheep_Will_Sleep 0xE9
 
 #define GuardianSignsLegendary 0x12D
 
