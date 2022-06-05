@@ -6,3 +6,34 @@ Defeat Darmath[X]
 
 ## Ch22ObjectiveName
 Defeat Boss[X]
+
+/* ## LockeRecruitmentText1
+[MidLeft][LoadLocke][MidRight][LoadActive]
+
+
+
+Say, you guys seem to be fighting out
+there, what kind of group are ya?[A]
+The liberators you say? Well, I've
+got a bit of an offer for you.[A]
+I'm a mercenary, been stuck up
+here for so long with no work.[A][CloseSpeechSlow]
+[MidLeft][ThreeLineBox]
+Everything is drying up in
+Cythes, so I'm just pissing away
+what little money I have left.[A]
+So heres my offer, I'm good with
+a sword, I can swipe anything you
+need and I can pick any lock.[A]
+All you need to do is pay me say
+a paltry upfront sum of 800 gold
+and I'm yours to command, whatcha say?[A]
+{Option Box}
+
+
+*/
+
+/* ## MyGuidingMoonlightText
+[MidLeft][LoadActive]
+
+*/
