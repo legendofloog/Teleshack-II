@@ -176,6 +176,8 @@
 [LoadCephalid] = [LoadFace][0xF4][0x1]
 [LoadDart] = [LoadFace][0xF5][0x1]
 
+[LoadDraganaDeadlord] = [LoadFace][0xF9][0x1]
+
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]
 

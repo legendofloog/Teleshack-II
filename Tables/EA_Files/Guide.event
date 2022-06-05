@@ -1,8 +1,34 @@
 #define MainGuideEntry(sectionID, chapterID, entryName, entryContent, flagID, readFlagID) "BYTE sectionID chapterID; SHORT entryName entryContent flagID readFlagID 0"
+
+
 // Global Flags
 
 #define UnlockGuideFlag 0xCB
 #define GuideUnlockFatigue 0xCB
+#define GuideUnlockVigor 0xE1
+#define GuideUnlockDismount 0xE2
+#define GuideUnlockLeadership 0xE3
+#define GuideUnlockRescue 0xE4
+#define GuideUnlockFreeActions 0xE5
+#define GuideUnlockCapture 0xE6
+#define GuideUnlockEquips 0xE7
+#define GuideUnlockSteal 0xE8
+#define GuideUnlockWeaponTriangle 0xE9
+#define GuideUnlockPCC 0xEA
+#define GuideUnlockSupports 0xEB
+#define GuideUnlockSkills 0xF9
+#define GuideUnlockCredits 0xED
+#define GuideUnlockOrodreth 0xEE
+#define GuideUnlockByelen 0xEF
+#define GuideUnlockCythes 0xF0
+#define GuideUnlockDecia 0xF1
+#define GuideUnlockMahemen 0xF2
+#define GuideUnlockChouwouj 0xF3
+#define GuideUnlockYuliaIslands 0xF4
+#define GuideUnlockCanto 0xF5
+#define GuideUnlockShove 0xF6
+#define GuideReadCanto 0xF7
+#define GuideReadShove 0xF8
 #define GuideReadFatigue 0xCC
 #define GuideReadVigor 0xCD
 #define GuideReadDismount 0xCE
@@ -15,7 +41,7 @@
 #define GuideReadWeaponTriangle 0xD5
 #define GuideReadPCC 0xD6
 #define GuideReadSupports 0xD7
-#define GuideReadInterludes 0xD8
+#define GuideReadSkills 0xD8
 #define GuideReadCredits 0xD9
 #define GuideReadOrodreth 0xDA
 #define GuideReadByelen 0xDB
@@ -24,95 +50,112 @@
 #define GuideReadMahemen 0xDE
 #define GuideReadChouwouj 0xDF
 #define GuideReadYuliaIslands 0xE0
+#define GuideUnlockEscape 0xFA
+#define GuideReadEscape 0xFB
+#define GuideUnlockFormulaChanges 0xFC
+#define GuideReadFormulaChanges 0xFD
+#define GuideUnlockQoLChanges 0xFE
+#define GuideReadQoLChanges 0xFF
 //tale of ternon guide stuff 
 //bonus: disable select button sort feature in guide menu (fixes most problems that come from editing the guide)
+
 PUSH
 ORG 0xCEF7C 
 SHORT 0xE001
+ORG 0xCEF74
+SHORT 0x2200 // Prevent Sorting
 POP
 
 // Guide
 PUSH
-ORG 0xCEF74
-SHORT 0x2200 // Prevent Sorting
 ORG 0xB19E0C
+MainGuideEntry(1, 0, EscapeMechanicsSubPageTitle, EscapeDescGuide, GuideUnlockEscape, GuideReadEscape)
 MainGuideEntry(1, 0, FatigueMechanicSubPageTitle, FatigueDescGuide, GuideUnlockFatigue, GuideReadFatigue)
-MainGuideEntry(1, 0, DismountMechanicSubPageTitle, DismountDescGuide, UnlockGuideFlag, GuideReadDismount)
-MainGuideEntry(1, 0, RescueMechanicSubPageTitle, RescueDescGuide, UnlockGuideFlag, GuideReadRescue)
-MainGuideEntry(1, 0, CaptureMechanicSubPageTitle, CaptureDescGuide, UnlockGuideFlag, GuideReadCapture)
-MainGuideEntry(1, 0, StealMechanicSubPageTitle, StealDescGuide, UnlockGuideFlag, GuideReadSteal)
-MainGuideEntry(1, 0, PCCMechanicSubPageTitle, PCCDescGuide, UnlockGuideFlag, GuideReadPCC)
-MainGuideEntry(1, 0, LeadershipStarsSubPageTitle, LeadershipDescGuide, UnlockGuideFlag, GuideReadLeadership)
-MainGuideEntry(1, 0, MovementStarsSubPageTitle, MovementStarsDescGuide, UnlockGuideFlag, GuideReadVigor)
-MainGuideEntry(1, 0, FreeActionMechanicSubPageTitle, FreeActionDescGuide, UnlockGuideFlag, GuideReadFreeActions)
-MainGuideEntry(1, 0, EquipsMechanicSubPageTitle, EquipsDescGuide, UnlockGuideFlag, GuideReadEquips)
-MainGuideEntry(1, 0, WeaponTriangleMechanicSubPageTitle, WeaponTriangleDescGuide, UnlockGuideFlag, GuideReadWeaponTriangle)
-MainGuideEntry(1, 0, SupportsMechanicSubPageTitle, SupportsDescGuide, UnlockGuideFlag, GuideReadSupports)
-MainGuideEntry(1, 0, InterludesMechanicSubPageTitle, InterludesDescGuide, UnlockGuideFlag, GuideReadInterludes)
-MainGuideEntry(2, 0, OrodrethLoreSubPageTitle, OrodrethLoreDesc, UnlockGuideFlag, GuideReadOrodreth)
-MainGuideEntry(2, 0, ByelenLoreSubPageTitle, ByelenLoreDesc, UnlockGuideFlag, GuideReadByelen)
-MainGuideEntry(2, 0, CythesLoreSubPageTitle, CythesLoreDesc, UnlockGuideFlag, GuideReadCythes)
-MainGuideEntry(2, 0, DeciaLoreSubPageTitle, DeciaLoreDesc, UnlockGuideFlag, GuideReadDecia)
-MainGuideEntry(2, 0, MahemenLoreSubPageTitle, MahemenLoreDesc, UnlockGuideFlag, GuideReadMahemen)
-MainGuideEntry(2, 0, ChouwoujLoreSubPageTitle, ChouwoujLoreDesc, UnlockGuideFlag, GuideReadChouwouj)
-MainGuideEntry(2, 0, YuliaIslandsLoreSubPageTitle, YuliaIslandsLoreDesc, UnlockGuideFlag, GuideReadYuliaIslands)
-MainGuideEntry(3, 0, TeamDistantRoadsCreditsSubPageTitle, TeamDistantRoadsDesc, UnlockGuideFlag, GuideReadCredits)
+MainGuideEntry(1, 0, DismountMechanicSubPageTitle, DismountDescGuide, GuideUnlockDismount, GuideReadDismount)
+MainGuideEntry(1, 0, ShoveMechanicSubPageTitle, ShoveDescGuide, GuideUnlockShove, GuideReadShove)
+MainGuideEntry(1, 0, CantoMechanicSubPageTitle, CantoDescGuide, GuideUnlockCanto, GuideReadCanto)
+MainGuideEntry(1, 0, RescueMechanicSubPageTitle, RescueDescGuide, GuideUnlockRescue, GuideReadRescue)
+MainGuideEntry(1, 0, CaptureMechanicSubPageTitle, CaptureDescGuide, GuideUnlockCapture, GuideReadCapture)
+MainGuideEntry(1, 0, FormulaChangesMechanicSubPageTitle, FormulaChangesDescGuide, GuideUnlockFormulaChanges, GuideReadFormulaChanges)
+MainGuideEntry(1, 0, QoLChangesMechanicSubPageTitle, QoLChangesDescGuide, GuideUnlockQoLChanges, GuideReadQoLChanges)
+MainGuideEntry(1, 0, SkillsMechanicSubPageTitle, SkillsDescGuide, GuideUnlockSkills, GuideReadSkills)
+MainGuideEntry(1, 0, StealMechanicSubPageTitle, StealDescGuide, GuideUnlockSteal, GuideReadSteal)
+MainGuideEntry(1, 0, PCCMechanicSubPageTitle, PCCDescGuide, GuideUnlockPCC, GuideReadPCC)
+MainGuideEntry(1, 0, LeadershipStarsSubPageTitle, LeadershipDescGuide, GuideUnlockLeadership, GuideReadLeadership)
+MainGuideEntry(1, 0, MovementStarsSubPageTitle, MovementStarsDescGuide, GuideUnlockVigor, GuideReadVigor)
+MainGuideEntry(1, 0, FreeActionMechanicSubPageTitle, FreeActionDescGuide, GuideUnlockFreeActions, GuideReadFreeActions)
+MainGuideEntry(1, 0, EquipsMechanicSubPageTitle, EquipsDescGuide, GuideUnlockEquips, GuideReadEquips)
+MainGuideEntry(1, 0, WeaponTriangleMechanicSubPageTitle, WeaponTriangleDescGuide, GuideUnlockWeaponTriangle, GuideReadWeaponTriangle)
+MainGuideEntry(1, 0, SupportsMechanicSubPageTitle, SupportsDescGuide, GuideUnlockSupports, GuideReadSupports)
+MainGuideEntry(2, 0, OrodrethLoreSubPageTitle, OrodrethLoreDesc, GuideUnlockOrodreth, GuideReadOrodreth)
+MainGuideEntry(2, 0, ByelenLoreSubPageTitle, ByelenLoreDesc, GuideUnlockByelen, GuideReadByelen)
+MainGuideEntry(2, 0, CythesLoreSubPageTitle, CythesLoreDesc, GuideUnlockCythes, GuideReadCythes)
+MainGuideEntry(2, 0, DeciaLoreSubPageTitle, DeciaLoreDesc, GuideUnlockDecia, GuideReadDecia)
+MainGuideEntry(2, 0, MahemenLoreSubPageTitle, MahemenLoreDesc, GuideUnlockMahemen, GuideReadMahemen)
+MainGuideEntry(2, 0, ChouwoujLoreSubPageTitle, ChouwoujLoreDesc, GuideUnlockChouwouj, GuideReadChouwouj)
+MainGuideEntry(2, 0, YuliaIslandsLoreSubPageTitle, YuliaIslandsLoreDesc, GuideUnlockYuliaIslands, GuideReadYuliaIslands)
+MainGuideEntry(3, 0, TeamDistantRoadsCreditsSubPageTitle, TeamDistantRoadsDesc, GuideUnlockCredits, GuideReadCredits)
 MainGuideEntry(0xC, 0, 0, 0, 0, 0)
 WORD 0 0 0
 POP
 
-/*
+//per Ternon
+//Guide data is a series of lists; contained within these lists are the flags to use for unlock and read for each entry
+//This sets all of those flags to the same flag, effectively freeing up all of the guide flags for other uses
+
 PUSH
 ORG 0xB19E12
+SHORT GuideUnlockEscape GuideReadEscape
+ORG CURRENTOFFSET+8
 SHORT GuideUnlockFatigue GuideReadFatigue
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadDismount
+SHORT GuideUnlockDismount GuideReadDismount
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadRescue
+SHORT GuideUnlockShove GuideReadShove
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadCapture
+SHORT GuideUnlockCanto GuideReadCanto
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadSteal
+SHORT GuideUnlockRescue GuideReadRescue
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadPCC
+SHORT GuideUnlockCapture GuideReadCapture
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadLeadership
+SHORT GuideUnlockFormulaChanges GuideReadFormulaChanges
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag GuideReadVigor
+SHORT GuideUnlockQoLChanges GuideReadQoLChanges
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockSkills GuideReadSkills
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockSteal GuideReadSteal
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockPCC GuideReadPCC
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockLeadership GuideReadLeadership
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockVigor GuideReadVigor
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockFreeActions GuideReadFreeActions
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockEquips GuideReadEquips
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockWeaponTriangle GuideReadWeaponTriangle
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockSupports GuideReadSupports
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockOrodreth GuideReadOrodreth
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockByelen GuideReadByelen
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockCythes GuideReadCythes
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockDecia GuideReadDecia
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockMahemen GuideReadMahemen
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockChouwouj GuideReadChouwouj
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockYuliaIslands GuideReadYuliaIslands
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockCredits GuideReadCredits
 ORG CURRENTOFFSET+8
 SHORT UnlockGuideFlag UnlockGuideFlag
 ORG CURRENTOFFSET+8
@@ -174,4 +217,3 @@ SHORT UnlockGuideFlag UnlockGuideFlag
 ORG CURRENTOFFSET+8
 SHORT UnlockGuideFlag UnlockGuideFlag
 POP
-*/

@@ -219,14 +219,37 @@ BeginningScene:
 CALL TestingEvent //calls the specific chapter testing definitions
 #endif
 COUNTER_SET 0 0
-ENUT GuideUnlockFatigue 
-/*
-ENUT GuideUnlockDismount 
-ENUT GuideUnlockRescue 
-ENUT GuideUnlockCapture 
-ENUT GuideUnlockSteal 
+ENUT GuideUnlockVigor
+ENUT GuideUnlockLeadership
+ENUT GuideUnlockRescue
+ENUT GuideUnlockFreeActions
+ENUT GuideUnlockCapture
+ENUT GuideUnlockEquips
+ENUT GuideUnlockSteal
+ENUT GuideUnlockWeaponTriangle 
 ENUT GuideUnlockPCC
-*/
+ENUT GuideUnlockSupports
+ENUT GuideUnlockCredits
+ENUT GuideUnlockOrodreth
+ENUT GuideUnlockByelen
+ENUT GuideUnlockCythes
+ENUT GuideUnlockDecia
+ENUT GuideUnlockMahemen
+ENUT GuideUnlockShove
+ENUT GuideUnlockSkills
+ENUT GuideUnlockFatigue
+ENUT GuideUnlockDismount
+ENUT GuideUnlockCanto
+ENUT GuideUnlockEscape
+ENUT GuideUnlockOrodreth
+ENUT GuideUnlockByelen
+ENUT GuideUnlockCythes
+ENUT GuideUnlockDecia
+ENUT GuideUnlockMahemen
+ENUT GuideUnlockChouwouj
+ENUT GuideUnlockYuliaIslands
+ENUT GuideUnlockFormulaChanges
+ENUT GuideUnlockQoLChanges
 LOMA Ch1LoeweVillage
 LOAD1 1 Flashback1Units1
 ENUN
