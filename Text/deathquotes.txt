@@ -90,6 +90,13 @@ times no, I say! No[Beat][A][CloseEyes][X]
 Ha[Beat] oops[Beat] Shouldn't[N]
 have bet on that one[Beat][A][CloseEyes][X]
 
+## FaolanDeathQuote
+[MidRight][LoadFaolan]
+Cut us down as much[N]
+as you'd like[Beat][AN]
+You will never kill[N]
+our spirit[Beat]![A][X]
+
 ## AwaDeathQuoteText
 [MidRight][LoadAwa]
 W-wait[Beat] what? I'm supposed[N]
@@ -221,7 +228,8 @@ S-sister, I'm sorry.[A][X]
 ## MinkDeathQuote
 [MidRight][LoadMink]
 S-so soon? [AN]
-There was so much I wanted to do[Beat][CloseEyes][A][X]
+There was so much I wanted to do[Beat][N]
+So much to learn[Beat][CloseEyes][A][X]
 
 ## TiberiusDeathQuote
 [MidRight][LoadTiberius]
