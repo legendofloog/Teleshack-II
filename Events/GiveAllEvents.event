@@ -129,6 +129,7 @@ ENDA
 
 ALIGN 4
 FaolanGiveAll:
+Text(FaolanDeathQuote)
 SendAll(Faolan)
 NoFade
 ENDA
