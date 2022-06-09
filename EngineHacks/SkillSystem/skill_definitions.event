@@ -47,6 +47,8 @@
 #define ShadePlusID 86
 #define ShadeID 87
 #define DeathBlowID 88
+#define OpportunistID 89
+#define PuissanceID 90
 
 // keep it continous for debug purpose
 

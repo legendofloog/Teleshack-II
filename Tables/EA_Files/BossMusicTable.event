@@ -32,6 +32,9 @@ BossBGMEntry(Vinny, awaywithyou)
 BossBGMEntry(Xlea, BattleWithMagus)
 BossBGMEntry(DeathRattle,BattleWithMagus)
 BossBGMEntry(Taraji, SorrowsDistortion)
+BossBGMEntry(C19Mini1, UnfinishedBattleGodSyndrome)
+BossBGMEntry(C19Mini2, UnfinishedBattleGodSyndrome)
+BossBGMEntry(C19Phantom, awaywithyou)
 BossBGMTerminator
 
 PUSH
