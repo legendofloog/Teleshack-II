@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 //flags
+// 9 - Eitha/Leina quote
 // 18, 19 - Top left prison LOCA
 // 10 - top middle prison LOCA
 // 11 - top right prison LOCA
@@ -23,6 +24,7 @@ PointerList:
 // 16 - Outside Prison event
 // 21 - top left prison event
 
+// 23 - Eitha generic quote
 // 24 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
 
 // 25 - turned on by the AFEV called by tiberius's death quote
