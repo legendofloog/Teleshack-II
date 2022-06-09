@@ -120,7 +120,7 @@ UNIT
 	
 NewPlayers:
 UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc] NoAI
-UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [0,0] 0x0 0x0 0x0 [GreatSword,FlameSword] NoAI
+UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [3,1] 0x0 0x0 0x0 [GreatSword,FlameSword] NoAI
 UNIT
 
 NPCUnits:

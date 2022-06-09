@@ -133,7 +133,6 @@ BeginningScene:
 	ENUN
 	DismountAll
 	GotoPrepScreen
-	
 	ENDA
 
 	Turn3Reinforcements:
