@@ -75,10 +75,10 @@ BallisticianStanding:
 
 ALIGN 4
 ScaleshotMoving:
-#incbin "Dmp/Wyvern Rider (U) Lance {IS}-move.dmp"
+#incbin "Dmp/Loewe_T1_Moving(knabepicer).dmp"
 ALIGN 4
 ScaleshotStanding:
-#incbin "Dmp/Wyvern Rider (U) Lance {IS}-stand.dmp"
+#incbin "Dmp/Loewe_T1_Standing(knabepicer).dmp"
 
 ALIGN 4
 SkyseekerStanding:

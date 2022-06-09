@@ -27,7 +27,6 @@ TurnEventPlayer(0, EnemyReinforcementsEvent_B3, 9)
 TurnEventPlayer(0, EnemyReinforcementsEvent_C, 11)
 END_MAIN
 
-
 CharacterBasedEvents:
 CharacterEventBothWays(13, RunespearEvent, Tobie, Mish)
 END_MAIN
@@ -36,8 +35,8 @@ END_MAIN
 LocationBasedEvents:
 Chest(Lamfada,29,29)
 Chest(EarthGreataxe,20,7)
+Seize(46,16)
 END_MAIN
-
 
 MiscBasedEvents:
 CauseGameOverIfLordDies 
@@ -56,12 +55,6 @@ Tutorial:
 END_MAIN
 
 Traps1:
-MapSpriteTrap(13,40,12)
-MapSpriteTrap(13,41,12)
-MapSpriteTrap(13,42,12)
-MapSpriteTrap(13,40,20)
-MapSpriteTrap(13,41,20)
-MapSpriteTrap(13,42,20)
 ENDTRAP
 ALIGN 4
 
@@ -243,6 +236,15 @@ NoFade
 ENDA
 
 BeginningScene:
+InterludeReturnRoutineASMC
+/*
+AddTrap(13,40,12)
+AddTrap(13,41,12)
+AddTrap(13,42,12)
+AddTrap(13,40,20)
+AddTrap(13,41,20)
+AddTrap(13,42,20)
+*/
 SetBackground(0x33)
 MUSC PMDSteamCaveID
 Text(Ch19_Loewe_Volran_Open1)
@@ -252,6 +254,7 @@ LOAD1 0x1 EnemyUnits
 ENUN
 DismountAll
 LOAD1 0x1 NewPlayers
+ENUN
 GotoPrepScreen
 ENDA
 

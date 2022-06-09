@@ -249,7 +249,7 @@ DUMMY (bpat)[X]
 Something special :)[X]
 
 ## ArgymosCrestName
-Argymos Crest[X]
+Argymos Seal[X]
 
 ## ArgymosCrestDesc
 Promotion item for Cleo.[X]
@@ -258,8 +258,8 @@ Promotion item for Cleo.[X]
 Raio Scroll[X]
 
 ## RaioScrollDesc
-+10% Mag, +10% Skl, +20% Spd,[N]
--15% HP[X]
++10% Mag, +10% Skl, +10% Spd,[N]
+-10% HP[X]
 
 ## LuzenScrollName
 Luzen Scroll[X]

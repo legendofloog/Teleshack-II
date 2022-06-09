@@ -155,5 +155,11 @@ BYTE Catrin
 BYTE CatrinReal
 BYTE EndLockArray
 
+BallisticianArray:
+BYTE HardClassLock
+BYTE Ballistician
+BYTE LongBallistician
+BYTE EndLockArray
+
 
 #endif // ADV_WEAPON_LOCKS

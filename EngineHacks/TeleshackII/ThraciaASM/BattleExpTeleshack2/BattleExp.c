@@ -118,14 +118,14 @@ int GetUnitEffectiveLevel(Unit* unit){
 	int effectiveLevel = unit->level;
 
 	if (unit->pClassData->attributes & CA_PROMOTED){
-		effectiveLevel += 15;
+		effectiveLevel += 20;
 	}
 	int currentPrepromoteUnit = 0;
 	int i = 0;
 	while( currentPrepromoteUnit != 0xFF){
 		currentPrepromoteUnit = PrepromoteTable[i];
 		if(unit->pCharacterData->number == currentPrepromoteUnit){
-			effectiveLevel -= 5;
+			effectiveLevel -= 10;
 			break;
 		}
 		i++;
@@ -301,9 +301,16 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 
     unit->pow += promotedClass->promotionPow;
 
-    if (unit->pow > promotedClass->maxPow)
-        unit->pow = promotedClass->maxPow;
+    if (unit->pow > promotedClass->maxPow){
+		unit->pow = promotedClass->maxPow;
+	}
 
+	unit->mag += MagClassTable[promotedClass->number].promotionMag;
+
+	if (unit->mag > MagClassTable[promotedClass->number].maxMag){
+		unit->mag = MagClassTable[promotedClass->number].maxMag;
+	}
+	
     unit->skl += promotedClass->promotionSkl;
 
     if (unit->skl > promotedClass->maxSkl)

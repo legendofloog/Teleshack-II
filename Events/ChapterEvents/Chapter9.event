@@ -140,7 +140,7 @@ UNIT Jenny RookKnight 0x0 Level(6,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [Long
 UNIT
 
 MeldanReinforce:
-UNIT Meldan DukeKnight 0x0 Level(5,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [Greatlance,BraveLance,LightRune] ChargeHealAI
+UNIT Meldan DukeKnight 0x0 Level(1,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [Greatlance,BraveLance,LightRune] ChargeHealAI
 UNIT
 
 Ch9Reinforce1:

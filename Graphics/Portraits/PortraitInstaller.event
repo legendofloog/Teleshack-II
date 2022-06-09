@@ -75,6 +75,7 @@
 #define MatthiasMug 0xF6
 #define MinkMug 0xF7
 #define TiberiusMug 0xF8
+#define DraganaDeadlordMug 0xF9
 
 // NPCs
 #define EliasMug 0xB
@@ -190,19 +191,27 @@ setMugEntry(LoeweKidMug, LoeweKidMugData, 2, 8, 3, 6)
 
 ALIGN 16
 DraganaOldMugData:
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_mug.dmp"
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_frames.dmp"
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_palette.dmp"
-#incbin "Dmp/DraganaOld(Loog,knabepicer)_minimug.dmp"
-setMugEntry(DraganaOldMug, DraganaOldMugData, 3, 5, 3, 3)
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_mug.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_frames.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_palette.dmp"
+#incbin "Dmp/DraganaOld(Levin, Loog, knabepicer)_minimug.dmp"
+setMugEntry(DraganaOldMug, DraganaOldMugData, 2, 5, 3, 3)
 
 ALIGN 16
 DraganaYoungMugData:
-#incbin "Dmp/DraganaYoung(Loog)_mug.dmp"
-#incbin "Dmp/DraganaYoung(Loog)_frames.dmp"
-#incbin "Dmp/DraganaYoung(Loog)_palette.dmp"
-#incbin "Dmp/DraganaYoung(Loog)_minimug.dmp"
-setMugEntry(DraganaYoungMug, DraganaYoungMugData, 3, 5, 3, 3)
+#incbin "Dmp/DraganaYoung(Levin, Loog, knabepicer)_mug.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog, knabepicer)_frames.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog, knabepicer)_palette.dmp"
+#incbin "Dmp/DraganaYoung(Levin, Loog, knabepicer)_minimug.dmp"
+setMugEntry(DraganaYoungMug, DraganaYoungMugData, 2, 5, 3, 3)
+
+ALIGN 16
+DraganaDeadlordMugData:
+#incbin "Dmp/DraganaDeadlord(Levin, Loog, knabepicer)_mug.dmp"
+#incbin "Dmp/DraganaDeadlord(Levin, Loog, knabepicer)_frames.dmp"
+#incbin "Dmp/DraganaDeadlord(Levin, Loog, knabepicer)_palette.dmp"
+#incbin "Dmp/DraganaDeadlord(Levin, Loog, knabepicer)_minimug.dmp"
+setMugEntry(DraganaDeadlordMug, DraganaDeadlordMugData, 2, 5, 3, 3)
 
 ALIGN 16
 CidorMugData:

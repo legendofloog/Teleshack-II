@@ -146,6 +146,7 @@ Text(Ch15FreeingIlse)
 CUSA Ilse
 GiveItem(Lightning,Ilse)
 GiveItem(Physic,Ilse)
+GiveItem(Heal,Ilse)
 SilentGiveItem(Vulnerary,Ilse)
 SetFatigue(Ilse,0)
 MURE 2
@@ -440,6 +441,8 @@ UNIT
 
 EndingScene:
 MUSC 0x7FFF
+SetUnitFullHP(Cleo)
+SetUnitFullHP(Loewe)
 FADI 15
 RemoveAll
 DismountSingleUnit(Loewe)

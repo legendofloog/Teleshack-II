@@ -176,6 +176,11 @@
 }
 
 {
+#include "Animations/Devotee_M(Teraspark)/Magic Installer.event"
+#include "Animations/Devotee_M(Teraspark)/Staff Installer.event"
+}
+
+{
 #include "Animations/Thief_Matthew_Repal(Eldritch_Abomination)/Sword Installer.event"
 }
 

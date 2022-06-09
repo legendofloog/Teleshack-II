@@ -93,7 +93,7 @@ UNIT Chapter1Generics AxeSoldier   0x0 Level(3,Enemy,True) [0,7] 0 0 1 REDA2R7 [
 	UNIT
 	
 WhenTheThiefIsSus:
-UNIT 0x64 Thief   0x0 Level(2,Enemy,True) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
+UNIT Looter Thief   0x0 Level(2,Enemy,True) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
 UNIT
 
 Rein1:

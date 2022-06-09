@@ -241,7 +241,7 @@ A fitting reward for my[N]
 indolence[Beat][CloseEyes][A][X]
 
 ## EithaDeathQuote
-[MidLeft][LoadDragana][ToggleInvert]
+[MidLeft][LoadDraganaDeadlord][ToggleInvert]
 [Beat]m-my[Beat] be[Beat]lov[Beat]ed[Beat][AN]
 [Beat]t-to[Beat]gether[Beat]
 [Beat]for[Beat]for[Beat]ev-[AN][ToggleInvert]
@@ -369,7 +369,8 @@ I was[Beat] so good at my job[Beat][AN][CloseEyes][X]
 
 ## AltoDeathQuoteText
 [MidLeft][LoadAlto]
-Will they even remember my name[Beat]?[AN][CloseEyes][X]
+Will they even[N]
+remember my name[Beat]?[AN][CloseEyes][X]
 
 ## MureibDeathQuoteText
 [MidLeft][LoadMureib]

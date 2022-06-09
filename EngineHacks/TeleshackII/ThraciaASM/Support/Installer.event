@@ -176,16 +176,6 @@ SupportEntry(Loewe,3,2,0,10,10,15,15)
 SupportEntry(KwameReal,3,1,1,10,0,20,0)
 SupportTerm
 
-ALIGN 4
-DarbySupportList:
-SupportEntry(Darcy,3,1,1,10,10,0,0)
-SupportTerm
-
-ALIGN 4
-DarcySupportList:
-SupportEntry(Darby,3,1,1,10,10,0,0)
-SupportTerm
-
 SetUnitSupportList(Cleo,CleoSupportList)
 SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
@@ -213,5 +203,3 @@ SetUnitSupportList(Lyre,LyreSupportList)
 SetUnitSupportList(KwameReal,KwameRealSupportList)
 SetUnitSupportList(Ngondala,NgondalaSupportList)
 SetUnitSupportList(CatrinReal,CatrinRealSupportList)
-SetUnitSupportList(Darby,DarbySupportList)
-SetUnitSupportList(Darcy,DarcySupportList)
