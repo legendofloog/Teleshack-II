@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade. Eff vs Cavalry[X]
+A high quality blade. Eff vs. [HorseIcon][X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -602,3 +602,27 @@ Slam Brace[X]
 Almost strong enough to push a[N]
 whale. Allows user to Smite[N]
 adjacent units 2 tiles away.[X]
+
+## ZweihanderName
+Zweihander[X]
+
+## ZweihanderDesc
+Incredible blade. Eff vs. [HorseIcon][X]
+
+## DeadeyeBowName
+[_D][_e][_a][_d][_e][_y][_e][_SP][_B][_o][_w][X]
+
+## DeadeyeBowDesc
+Powerful bow with great range.[X]
+
+## MoonlightBladeName
+[_M][_o][_o][_n][_l][_i][_g][_h][_t][_SP][_B][_l][_a][_d][_e][X]
+
+## MoonlightBladeDesc
+Grants +5 Mag.[X]
+
+## GlaiveName
+Glaive[X]
+
+## GlaiveDesc
+Incredible lance. Eff vs. [HorseIcon][X]

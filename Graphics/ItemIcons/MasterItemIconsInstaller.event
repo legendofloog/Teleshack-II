@@ -13,6 +13,13 @@
 // shieldbearer from xvi
 // malkhut, kukri from beansy
 // sagittae from lordglenn
+// claymore from lordglenn
+// marksman bow from lordglenn
+// slim axe from kyrads
+// zweihander from peerless
+// deadeye bow from lordglenn
+// glaive from lordglenn
+// moonlight blade from kyrads
 
 #define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
 /*
@@ -134,5 +141,9 @@ ItemIconSlot(0xDF,"Png/SlimBow.png")
 ItemIconSlot(0xD6,"Png/Stinger.png")
 ItemIconSlot(0xD7,"Png/LunarAxe.png")
 ItemIconSlot(0xD8,"Png/Stormbrand.png")
+ItemIconSlot(0xAC,"Png/Zweihander.png")
+ItemIconSlot(0xA9,"Png/DeadeyeBow.png")
+ItemIconSlot(0x92,"Png/Moonlight Blade.png")
+ItemIconSlot(0xB4,"Png/Glaive.png")
 POP
 

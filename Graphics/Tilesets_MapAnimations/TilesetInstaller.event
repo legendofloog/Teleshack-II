@@ -23,6 +23,21 @@
     ALIGN 4
     FlasubanVillageMapchipConfig:
     #incbin "Config/FixedBridge_comp.dmp"
+
+
+//Flasuban Village For Snow
+
+    ALIGN 4
+    FlasuVillageV2SnowConfig:
+    #incbin "Config/Village_v2_Config_comp.dmp"
+
+    ALIGN 4
+    FlasuVillageV2SnowObject:
+    #incbin "Object/VillageV2SnowObject.dmp"
+
+    ALIGN 4
+    FlasubanSnowVillagePalette:
+    #incbin "Palette/FlasubanSnowVillage_pal.dmp"
 	
 //Flasuban Village Edit
     ALIGN 4
@@ -89,6 +104,9 @@
     EventPointerTable(FF5CaveObjectID,FF5CaveObject)
     EventPointerTable(FF5CavePaletteID,FF5CavePalette)
     EventPointerTable(FF5CaveConfigID,FF5CaveConfig)
+    EventPointerTable(FlasubanVillageSnowPaletteID,FlasubanSnowVillagePalette)
+    EventPointerTable(FlasuVillage2SnowMapchipConfigID,FlasuVillageV2SnowConfig)
+    EventPointerTable(FlasuVillage2SnowObjectID,FlasuVillageV2SnowObject)
 //	EventPointerTable(ThraciaFieldsObjectID, ThraciaFieldsObject)
 //    EventPointerTable(ThraciaFieldsAutumnPaletteID, ThraciaFieldsAutumnPalette)
 //    EventPointerTable(ThraciaFieldsMapchipConfigID, ThraciaFieldsMapchipConfig)

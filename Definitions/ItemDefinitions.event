@@ -238,3 +238,7 @@
 #define Sagittae 0xEC
 #define Kukri 0xED
 #define SlamBrace 0xEE
+#define Zweihander 0xEF
+#define DeadeyeBow 0xF0
+#define MoonlightBlade 0xF1
+#define Glaive 0xF2

@@ -73,6 +73,7 @@
 #define CephalidMug 0xF4
 #define DartMug 0xF5
 #define MatthiasMug 0xF6
+#define LockeMug 0x37
 #define MinkMug 0xF7
 #define TiberiusMug 0xF8
 #define DraganaDeadlordMug 0xF9
@@ -124,6 +125,7 @@
 #define YoungCleoMug 0xD8
 #define HamdiMug 0xD9
 #define ColossusMug 0xDA
+#define EleanorMug 0xDD
 
 ALIGN 16
 CleoMugData:
@@ -1100,3 +1102,19 @@ ValereMugData:
 #incbin "Dmp/Valere (NickT)_palette.dmp"
 #incbin "Dmp/Valere (NickT)_minimug.dmp"
 setMugEntry(ValereMug, ValereMugData, 4, 5, 4, 3)
+
+ALIGN 16
+EleanorMugData:
+#incbin "Dmp/Eleanor (XVI)_mug.dmp"
+#incbin "Dmp/Eleanor (XVI)_frames.dmp"
+#incbin "Dmp/Eleanor (XVI)_palette.dmp"
+#incbin "Dmp/Eleanor (XVI)_minimug.dmp"
+setMugEntry(EleanorMug, EleanorMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LockeMugData:
+#incbin "Dmp/Locke (RandomWizard)_mug.dmp"
+#incbin "Dmp/Locke (RandomWizard)_frames.dmp"
+#incbin "Dmp/Locke (RandomWizard)_palette.dmp"
+#incbin "Dmp/Locke (RandomWizard)_minimug.dmp"
+setMugEntry(LockeMug, LockeMugData, 3, 5, 3, 3)

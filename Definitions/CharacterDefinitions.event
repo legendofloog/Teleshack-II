@@ -63,6 +63,9 @@
 #define Matthias 0x3E
 #define KwameReal 0x3F
 #define Kofi 0x40
+#define TrajanReal 0x5B
+#define Locke 0x5C
+
 
 // Chapter 1 Bosses
 #define Raschwitz_Ch1 0x55
@@ -199,6 +202,9 @@
 #define DeathRattle 0xB7
 #define Chouwouj 0xB8
 
+//Chapter 22 Stuff
+#define Eleanor 0xBF
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49
@@ -214,8 +220,6 @@
 #define Gorgon_boss 0x56
 #define Riev 0x57
 #define Gheb 0x5A
-#define Beran 0x5B
-#define Cyclops_boss 0x5C
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
 #define Zonta 0x6A

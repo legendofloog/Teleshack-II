@@ -50,6 +50,8 @@ SetUnitPCC(Jerry,4)
 SetUnitPCC(Lyre,0)
 SetUnitPCC(Ngondala,0)
 SetUnitPCC(CatrinReal,2)
+SetUnitPCC(TrajanReal,1)
+SetUnitPCC(Locke,2)
 //Bosses, Generics, and NPCs
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)

@@ -90,8 +90,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x58 Aurora (Ch 11),2,55
 0x59 Wrathgar (Ch 9),2,5
 0x5A Cidor (Ch 10),0,5
-0x5B Beran (Ch 10B),0,5
-0x5C Cyclops (Ch 12B),2,5
+0x5B TrajanReal,-1,1
+0x5C Locke,-1,1
 0x5D Wight (Ch 11A),3,15
 0x5E Deathgoyle (Ch 11B),2,5
 0x5F Entombed (Monster Boss),2,5

@@ -333,7 +333,7 @@
 
 //Battle Veteran: Gain +1 damage and +5% Hit per 10 levels unit has.
 //By Datagne
-#define BattleVeteranID 255
+//#define BattleVeteranID 255
 
 //Blow Skills: Apply a stat bonus when initiating battle.
 //By Rossendale
