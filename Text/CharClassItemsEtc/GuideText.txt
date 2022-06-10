@@ -61,12 +61,42 @@ Yulia Islands[X]
 ## TeamDistantRoadsCreditsSubPageTitle
 Team Distant Roads[X]
 
+## ShoveMechanicSubPageTitle
+Shove[X]
+
+## ShoveDescGuide
+Units can Shove any adjacent[N]
+ally or enemy, regardless of Bld.[N]
+However, mounted units cannot[N]
+Shove and cannot be Shoved.[X]
+
+## CantoMechanicSubPageTitle
+Canto[X]
+
+## CantoDescGuide
+After non-Wait actions, mounted[N]
+units can use up their remaining[N]
+unused movement. No actions[N]
+can be performed while Cantoing[N]
+except Wait.[X]
+
+## SkillsMechanicSubPageTitle
+Skills[X]
+
+## SkillsDescGuide
+Skills are abilities granted[N]
+to units through a few means;[N]
+inherently, by class, and with[N]
+items. No unit will gain skills[N]
+through leveling up, and very[N]
+few of them have more than one.[X]
+
 ## FatigueDescGuide
 Fatigue simulates unit tiredness.[N]
 If a unit's fatigue exceeds their[N]
 HP, they will no longer gain EXP[N]
-or WEXP on the map, and they can[N]
-not be deployed when fatigued.[N]
+or WEXP on the map, and they[N]
+can't be deployed when fatigued.[N]
 Benching a unit for 1 chapter will[N]
 reset their fatigue to 0, which is[N]
 the only way to remove fatigue.[N]
@@ -118,7 +148,12 @@ dismounting. Mounted units are[N]
 unable to traverse indoor tiles.[N]
 [N]
 Dismount penalties will display[N]
-in red on the unit status screen.[X]
+in red on the unit status screen.[N]
+Dismounted units lose 3 Mov,[N]
+giving them 1 less Mov than[N]
+infantry (6/7 promoted).[N]
+This puts them at the same level[N]
+of Mov as armors and healers.[X]
 
 ## CaptureDescGuide
 If a unit has greater BLD than[N]
@@ -220,8 +255,8 @@ skills, stats, or other[N]
 bonuses, such as growth boosts.[X]
 
 ## LeadershipDescGuide
-Grants all allies +3 HIT[N]
-and +3 AVO per star.[N]
+Grants all allies[N]
++3 HIT per star.[N]
 These bonuses stack[N]
 for each star per unit[N]
 in your deployed army.[X]
@@ -306,3 +341,83 @@ Roze[N]
 Knight_Moris[N]
 A_Reliable_Chair[N]
 Pushwall[X]
+
+## EscapeMechanicsSubPageTitle
+Escape[X]
+
+## EscapeDescGuide
+On maps with an Escape goal,[N]
+Cleo and Loewe must both Escape[N]
+on tiles marked by red squares[N]
+to end the map. However, they[N]
+will leave behind any allies who[N]
+do not Escape before them.[N]
+[N]
+Make sure to Escape with every[N]
+unit possible before exiting[N]
+with either Cleo, Loewe, or,[N]
+in some cases, another unit[N]
+who is also required to Escape.[X]
+
+## FormulaChangesMechanicSubPageTitle
+Formula Changes[X]
+
+## FormulaChangesDescGuide
+Various formulas have changed[N]
+from their FE8 incarnations.[N]
+The changes are as follows:[N]
+[N]
+Battle Experience:[N]
+[N]
+0 Exp for damageless round.[N]
+[N]
+(10 + 2 x L.Diff) Exp for[N]
+a hit, with a cap of 50.[N]
+[N]
+(30 x IsBoss + 5 x L.Diff) Exp[N]
+for a kill, with a cap of 100.[N]
+[N]
+L.Diff = (Player Lv - Enemy Lv)[N]
+IsBoss = 2 if enemy boss, 1 if not[N]
+[N]
+Promoted units are considered[N]
+20 levels higher than displayed.[N]
+Certain promoted player units[N]
+have lower internal levels,[N]
+up to Chapter 13.[N]
+Their internal levels will be[N]
+10 levels higher than displayed.[N]
+[N]
+Staff Experience:[N]
+[N]
+10 + 5 x (Staff Rank)[N]
+[N]
+Staff Rank: The required weapon[N]
+rank to use the current staff.[N]
+E = 1, D = 2, C = 3, etc.[N]
+[N]
+Weapon Experience:[N]
+[N]
+There is no bonus for killing[N]
+an enemy. Each hit gives 1 WEXP,[N]
+and the highest rank is A Rank.[N]
+[N]
+Hit Formula:[N]
+True hit is calculated using[N]
+1RN instead of 2RN.[N]
+Therefore, displayed hit is true[N]
+hit. Hitrates have increased[N]
+in various ways to compensate.[N]
+[N]
+Hit:[N]
+Skl x 2 + Lck + Weapon Hit[N]
+[N]
+Avoid:[N]
+Spd + Lck + Weapon Hit[N]
++ Terrain Avoid[X]
+
+## QoLChangesMechanicSubPageTitle
+QoL Changes[X]
+
+## QoLChangesDescGuide
+QoL Changes[X]

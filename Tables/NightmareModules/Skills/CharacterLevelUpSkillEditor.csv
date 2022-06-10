@@ -33,7 +33,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x1F Hornet,0
 0x20 Milo,0
 0x21 Ichwep,0
-0x22 Mink,0
+0x22 Mink,MinkSkillList|IsPointer
 0x23 Tiberius,0
 0x24 Ellerey,0
 0x25 Mantou,0
@@ -74,7 +74,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x48 Bazba (Ch 3),0
 0x49 Entombed (Ch 4),0
 0x4A Saar (Ch 5),0
-0x4B Novala (Ch 6),0
+0x4B Eitha (Ch 6),EithaSkillList|IsPointer
 0x4C Murray (Ch 7),0
 0x4D Tirado (Ch 8),0
 0x4E Binks (Ch 9A),0

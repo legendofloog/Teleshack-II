@@ -60,10 +60,33 @@ NoFade
 ENDA
 
 MiscBasedEvents:
-AFEV 15 AlexAxelFreed 9
+AFEV 15 AlexAxelWall 0
 AFEV 0x65 DraganaDeathResponse 0x0D
 CauseGameOverIfLordDies
 END_MAIN
+
+AlexAxelWall:
+CHECK_EVENTID 9 // is the door event triggered
+BNE 458 s0 sC // if true, branch to end (do nothing)
+	CheckTileChangeTriggered(4)
+	BEQ 457 s0 sC //if the tile change is not triggered, branch
+		MUSC WithUs_Song
+		Text(AlexAxelFreedText)
+		CUSA Alex
+		CUSA Axel
+		SetFatigue(Alex,0)
+		SetFatigue(Axel,0)
+		GiveItem(IronAxe,Alex)
+		GiveItem(IronAxe,Axel)
+		SilentGiveItem(Vulnerary,Alex)
+		SilentGiveItem(Vulnerary,Axel)
+		NoFade
+		ENDB
+	LABEL 457
+	ENUF 15
+LABEL 458
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -111,7 +134,7 @@ UNIT
 
 
 EnemyUnits:
-UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,13] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
+UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,14] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
 UNIT Chapter1Generics Archer   Emory_Ch3 Level(3,Enemy,True) [20,11] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
 UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(2,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey] NeverMoveAI
 UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(2,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey] NeverMoveAI
@@ -131,7 +154,7 @@ UNIT Chapter1Generics LanceArmor   Emory_Ch3 Level(3,Enemy,True) [23,7] 0x0 0x0 
 UNIT Chapter1Generics LanceArmor   Emory_Ch3 Level(3,Enemy,True) [23,8] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [25,7] 0x0 0x0 0x0 0x0 [Shortsword] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   Emory_Ch3 Level(3,Enemy,True) [27,10] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
-UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,14] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
+UNIT Chapter1Generics Mage  Emory_Ch3 Level(3,Enemy,True) [27,13] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
 UNIT Chapter1Generics AxeSoldier   Emory_Ch3 Level(3,Enemy,True) [25,3] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter   Emory_Ch3 Level(2,Enemy,True) [6,16] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
 UNIT Chapter1Generics AxeFighter   Emory_Ch3 Level(2,Enemy,True) [13,17] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
@@ -219,18 +242,19 @@ ENDA
 
 AlexAxelDoor:
 TILECHANGE 9
-NoFade
-ENDA
-
-AlexAxelFreed:
-MUSC WithUs_Song
-Text(AlexAxelFreedText)
-CUSA Alex
-CUSA Axel
-GiveItem(IronAxe,Alex)
-GiveItem(IronAxe,Axel)
-SilentGiveItem(Vulnerary,Alex)
-SilentGiveItem(Vulnerary,Axel)
+CHECK_EVENTID 15 // is wall event set
+BNE 678 s0 sC // if it is set, branch
+	MUSC WithUs_Song
+	Text(AlexAxelFreedText)
+	CUSA Alex
+	CUSA Axel
+	SetFatigue(Alex,0)
+	SetFatigue(Axel,0)
+	GiveItem(IronAxe,Alex)
+	GiveItem(IronAxe,Axel)
+	SilentGiveItem(Vulnerary,Alex)
+	SilentGiveItem(Vulnerary,Axel)
+LABEL 678
 NoFade
 ENDA
 

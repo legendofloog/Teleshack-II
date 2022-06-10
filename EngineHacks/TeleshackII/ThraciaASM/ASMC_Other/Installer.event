@@ -7,3 +7,4 @@
 #define HealAllInArena "ASMC HealBlueUnitsInCh6Arena; SOUN 0x111; STAL 0x16"
 
 #define KillAllInCh6Arena "ASMC KillAllBlueUnitsInCh6Arena; SOUN 0xCB; STAL 0x16; SOUN 0xCB; STAL 0x16; SOUN 0xD5; STAL 0x16"
+#define CheckTileChangeTriggered(tileChangeId) "SVAL s1 tileChangeId; ASMC CheckIfTileChangeTriggered"

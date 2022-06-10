@@ -1,5 +1,6 @@
 #define PreventSkipping "EVBIT_MODIFY 1"
 #define AllowSkipping "EVBIT_MODIFY 0"
+#define SetUnitFullHP(charID) "CheckMaxHP(charID); SADD s1 sC s0; SET_HP charID"
 
 #define EraseBackground "CALL $9EE2C4"
 #define ShowMap "CALL 0x8592140"

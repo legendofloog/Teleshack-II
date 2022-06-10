@@ -59,6 +59,11 @@ mov r1, #0x2
 orr r0, r1
 strb r0, [r6]
 
+@set dmg to 0 to fix no anims bug
+@ldrb r0, [r5, #0x13] @currhp
+mov r0, #0
+strh r0, [r7, #4] @final damage
+
 End:
 pop {r4-r7}
 pop {r15}

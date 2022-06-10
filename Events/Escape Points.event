@@ -65,6 +65,13 @@ EscapePointEntry(19,2,EscapeRight)
 EscapePointEntry(19,3,EscapeRight)
 EscapePointTerminator
 
+Chapter12EnemyEscapeTable:
+EscapePointEntry(16,0,EscapeUp)
+EscapePointEntry(17,0,EscapeUp)
+EscapePointEntry(18,0,EscapeUp)
+EscapePointEntry(14,14,EscapeInPlace)
+EscapePointTerminator
+
 Chapter15EnemyEscapeTable:
 EscapePointEntry(12,0,EscapeUp)
 EscapePointEntry(13,0,EscapeUp)
@@ -105,7 +112,8 @@ SetNPCEscapePoint(Chapter16,Chapter16NPCEscapeTable)
 SetEnemyEscapePoint(Chapter4,Chapter4EnemyEscapeTable)
 SetEnemyEscapePoint(Chapter8,Chapter8EnemyEscapeTable)
 SetEnemyEscapePoint(Chapter10,Chapter10EnemyEscapeTable)
-SetEnemyEscapePoint(Chapter11,Chapter11EnemyEscapeTable) 
+SetEnemyEscapePoint(Chapter11,Chapter11EnemyEscapeTable)
+SetEnemyEscapePoint(Chapter12,Chapter12EnemyEscapeTable) 
 SetEnemyEscapePoint(Chapter15,Chapter15EnemyEscapeTable)
 SetEnemyEscapePoint(Chapter16,Chapter16EnemyEscapeTable)
 SetEnemyEscapePoint(Chapter17,Chapter17EnemyEscapeTable)

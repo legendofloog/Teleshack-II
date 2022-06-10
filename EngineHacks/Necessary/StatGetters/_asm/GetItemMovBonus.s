@@ -41,7 +41,8 @@ mov r0,#0
 b GoBack
 
 RetStat:
-ldrb r0,[r0,#0x7]
+mov r6, #0x7
+ldsb r0,[r0,r6]
 add r5,r0
 
 GoBack:

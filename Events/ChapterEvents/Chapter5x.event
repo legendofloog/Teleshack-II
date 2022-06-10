@@ -344,7 +344,7 @@ UNIT Awa AxeKnight_Dismounted Cleo Level(5,NPC,False) [9,8] 0x0 0x0 0x0 0x1 [Iro
 UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x1 [MasterAxe,IronBlade]     NoAI
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x1 [0x0]     NoAI
 UNIT Cadenza Bard Cleo Level(5,NPC,False) [13,6] 0x0 0x0 0x0 0x1 [Wind, BalladOfWar]     NoAI
-UNIT Faolan RookKnight_Dismounted Cleo Level(7,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary, LightRune]     NoAI
+UNIT Faolan RookKnight_Dismounted Cleo Level(5,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary, LightRune]     NoAI
 UNIT Matthias Devotee_M Cleo Level(6, NPC, False) [0,3] 0x0 0x0 0x0 0x0 [Lumen,Heal,Vulnerary] NoAI
 UNIT
 
