@@ -13,9 +13,14 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,TrajanArrive,3)
+TurnEventPlayer(0,ThiefAppear,6)
+TurnEventPlayer(0,Reinforcements_Spawn_A,7)
 END_MAIN
 
 CharacterBasedEvents:
+CharacterEventBothWays(12, TrajanRecruit, Loewe, TrajanReal)
+CharacterBasedEvents(12, TrajanRecruit, Cleo, TrajanReal)
 END_MAIN
 
 LocationBasedEvents:
@@ -79,7 +84,6 @@ MountAll
 LOAD3 2 Units1
 LOAD1 1 BossUnit
 LOAD1 1 EnemyUnits
-LOAD1 1 NewUnits
 ENUN
 GotoPrepScreen
 ENDA
@@ -92,24 +96,46 @@ ENDA
 
 VillageA:
 GiveItem(IronSword,0xFFFF)
+NoFade
 ENDA
 
 VillageB:
 GiveItem(IronSword,0xFFFF)
+NoFade
 ENDA
 
 VillageC:
 GiveItem(IronSword,0xFFFF)
+NoFade
 ENDA
 
 LockeInn:
 LOAD1 1 LockeSpawn
 ENUN
+NoFade
+ENDA
+
+TrajanArrive:
+CamOn
+LOAD1 1 TrajanSpawn
+ENUN
+CamOff
+NoFade
+ENDA
+
+TrajanRecruit:
+CameraCursor(TrajanReal)
+MUSS WithUs_Song
+CUSA TrajanReal
+SetFatigue(TrajanReal, 0)
+MURE 2
+NoFade
 ENDA
 
 GuidingMoonlight:
 GiveItem(MoonlightBlade,0xFFFF)
 // Intended to be a one off easter egg item
+NoFade
 ENDA
 
 ALIGN 4
@@ -137,36 +163,96 @@ ALIGN 4
 
 
 BossUnit:
-UNIT Eleanor General  0x0 Level(10,Enemy,False) [29,22] 0x0 0x0 0x0 0x0 [Zweihander,MasterLance] NeverMoveAI
+UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22] 0x0 0x0 0x0 0x0 [Zweihander,MasterLance,BattleAxe,CounterBow] AttackInRangeAI
 UNIT
 
 EnemyUnits:
 // UNIT Cythes Class Eleanor Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [Item] TEMPAI
 // Initial group
-UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Greatsword] ChargeAI
+UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [0,23] 0x0 0x0 0x0 0x0 [Hurlbat,Vulnerary] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [Poleaxe,RedGem] ChargeAI
 UNIT Cythes Mage Eleanor Level(20,Enemy,True) [0,19] 0x0 0x0 0x0 0x0 [Burn] TwoActionAI
 UNIT Cythes DarkMage Eleanor Level(20,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [Sink] TwoActionAI
 UNIT Cythes Halberdier Eleanor Level(7,Enemy,True) [2,18] 0x0 0x0 0x0 0x0 [Longlance,Javelin] TwoActionAI
-// Charging group
-UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [1,12] 0x0 0x0 0x0 0x0 [KillerLance] TwoActionAI
-UNIT Cythes Axefighter Eleanor Level(20,Enemy,True) [4,12] 0x0 0x0 0x0 0x0 [LunarAxe] TwoActionAI
+// Sage Group
+UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [0,12] 0x0 0x0 0x0 0x0 [KillerLance] TwoActionAI
+UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [5,13] 0x0 0x0 0x0 0x0 [LunarAxe] TwoActionAI
 UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [BoldCleaver] TwoActionAI
-UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [5,11] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Cythes Archer Eleanor Level(20,Enemy,True) [3,9] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
-UNIT Cythes Sage Eleanor Level(7,Enemy,True) [4,8] 0x0 0x0 0x0 0x0 [Tornado] TwoActionAI
+UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [5,10] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Cythes Archer Eleanor Level(20,Enemy,True) [2,11] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
+UNIT Cythes Sage Eleanor Level(7,Enemy,True) [3,9] 0x0 0x0 0x0 0x0 [Tornado] TwoActionAI
 // Pegasi Group
-// UNIT Cythes Falcoknight Eleanor Level(7,Enemy,True) [0,29] 0x0 0x0 0x0 0x0 [SilverLance,Javelin] ChargeAI
-// UNIT Cythes PegasusKnight Eleanor Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
-// UNIT Cythes PegasusKnight Eleanor Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [Longlance] ChargeAI
+UNIT Cythes Falcoknight Eleanor Level(7,Enemy,True) [0,39] 0x0 0x0 0x0 0x0 [SilverLance,Javelin] ChargeAI
+UNIT Cythes PegasusKnight Eleanor Level(20,Enemy,True) [0,37] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Cythes PegasusKnight Eleanor Level(20,Enemy,True) [2,39] 0x0 0x0 0x0 0x0 [Longlance] ChargeAI
+// Champion Group
+UNIT Cythes Champion Eleanor Level(7,Enemy,True) [3,3] 0x0 0x0 0x0 0x0 [Glaive,Javelin] AttackInRangeAI
+UNIT Cythes BowKnight Eleanor Level(20,Enemy,True) [4,2] 0x0 0x0 0x0 0x0 [TrainedArc] AttackInRangeAI
+UNIT Cythes Archer Eleanor Level(20,Enemy,True) [1,2] 0x0 0x0 0x0 0x0 [DaShoota] AttackInRangeAI
+UNIT Cythes AxeKnight Eleanor Level(20,Enemy,True) [5,4] 0x0 0x0 0x0 0x0 [TrainedAxe] AttackInRangeAI
+UNIT Cythes Freelancer Eleanor Level(20,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
+// Swordmaster Group
+UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [Claymore] TwoActionAI
+UNIT Cythes Freelancer Eleanor Level(20,Enemy,True) [11,4] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Cythes Swordmaster Eleanor Level(7,Enemy,True) [14,3] 0x0 0x0 0x0 0x0 [BoldBlade,RedGem] TwoActionAI
+UNIT Cythes LanceKnight Eleanor Level(20,Enemy,True) [16,2] 0x0 0x0 0x0 0x0 [TrainedPike] AttackInRangeAI
+UNIT Cythes MageKnight Eleanor Level(7,Enemy,True) [17,4] 0x0 0x0 0x0 0x0 [ThunderSword] AttackInRangeAI
+UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [20,1] 0x0 0x0 0x0 0x0 [Hurlbat,DoorKey] AttackInRangeAI
+UNIT Cythes LanceArmour Eleanor Level(20,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [Longlance] AttackInRangeAI
+// Sniper Group
+UNIT Cythes AxeArmour Eleanor Level(20,Enemy,True) [12,10] 0x0 0x0 0x0 0x0 [BattleAxe] AttackInRangeAI
+UNIT Cythes SwordArmour Eleanor Level(20,Enemy,True) [13,12] 0x0 0x0 0x0 0x0 [Greatsword] AttackInRangeAI
+UNIT Cythes DarkMage Eleanor Level(20,Enemy,True) [18,12] 0x0 0x0 0x0 0x0 [Jormungand,Sigil] AttackInRangeAI
+UNIT Cythes Sniper Eleanor Level(7,Enemy,True) [17,10] 0x0 0x0 0x0 0x0 [DeadeyeBow,RedGem,DoorKey] AttackInRangeAI
+UNIT Cythes Hero Eleanor Level(7,Enemy,True) [22,13] 0x0 0x0 0x0 0x0 [Zweihander] TwoActionAI
+UNIT Cythes DarkBishop Eleanor Level(7,Enemy,True) [20,9] 0x0 0x0 0x0 0x0 [Hel] TwoActionAI // Change to conversion if/when it is fixed
+// Treasure Group
+UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [28,2] 0x0 0x0 0x0 0x0 [Greatsword] AttackInRangeAI
+UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [26,3] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes Berserker Eleanor Level(7,Enemy,True) [31,6] 0x0 0x0 0x0 0x0 [TrainedAxe,Hurlbat] AttackInRangeAI
+UNIT Cythes Warrior Eleanor Level(7,Enemy,True) [29,4] 0x0 0x0 0x0 0x0 [BoldCleaver,SlimBow] AttackInRangeAI
+UNIT Cythes Halberdier Eleanor Level(7,Enemy,True) [28,6] 0x0 0x0 0x0 0x0 [Longlance,Poleaxe] AttackInRangeAI
+// Boss Group
+UNIT Cythes Myrmidon Eleanor Level(20,Enemy,True) [26,12] 0x0 0x0 0x0 0x0 [TrainedEdge] AttackInRangeAI
+UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [29,10] 0x0 0x0 0x0 0x0 [Swordslayer] AttackInRangeAI
+UNIT Cythes SwordArmour Eleanor Level(20,Enemy,True) [27,14] 0x0 0x0 0x0 0x0 [Greatsword] NeverMoveAI
+UNIT Cythes LanceArmour Eleanor Level(20,Enemy,True) [29,12] 0x0 0x0 0x0 0x0 [GreatLance] NeverMoveAI
+UNIT Cythes Mage Eleanor Level(20,Enemy,True) [29,16] 0x0 0x0 0x0 0x0 [AlairsGale] TwoActionAI
+UNIT Cythes Halberdier Eleanor Level(7,Enemy,True) [30,20] 0x0 0x0 0x0 0x0 [SilverAxe] AttackInRangeAI
+UNIT Cythes Champion Eleanor Level(7,Enemy,True) [26,20] 0x0 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+UNIT Cythes Sage Eleanor Level(7,Enemy,True) [27,23] 0x0 0x0 0x0 0x0 [Thoron,Mend,EnergyRing] AttackInRangeAI
 UNIT
 
-NewUnits:
-UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [10,4] 0x0 0x0 0x0 0x0 [SilverAxe,Claymore,KnightProof] NeverMoveAI
+TrajanSpawn:
+UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [0,11] 0x0 0x0 0x0 0x0 [SilverAxe,Claymore,KnightProof] AttackInRangeAI
 UNIT
 
 LockeSpawn:
 UNIT Locke ThiefFighter 0x0 Level(3,Ally,False) [2,23] 0x0 0x0 0x0 0x0 [Armorslayer,ShortSword] NeverMoveAI
+UNIT
+
+ThiefAppear:
+CamOn
+LOAD1 1 ThiefSpawn
+ENUN
+CamOff
+ENDA
+
+Reinforcements_A:
+UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [18,0] 0x0 0x0 0x0 0x0 [Longlance] TwoActionAI
+UNIT Cythes DukeKnight Eleanor Level(7,Enemy,True) [20,0] 0x0 0x0 0x0 0x0 [BraveLance] TwoActionAI
+UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [22,0] 0x0 0x0 0x0 0x0 [BoldCleaver] TwoActionAI
+
+
+Reinforcements_Spawn_A:
+CamOn
+LOAD1 1 Reinforcements_A
+ENUN
+CamOff
+ENDA
+
+ThiefSpawn:
+UNIT Cythes Thief Eleanor Level(20,Enemy,True) [31,0] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey,ChestKey] ThiefAI
 UNIT
