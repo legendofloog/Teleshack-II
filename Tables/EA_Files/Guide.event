@@ -56,6 +56,10 @@
 #define GuideReadFormulaChanges 0xFD
 #define GuideUnlockQoLChanges 0xFE
 #define GuideReadQoLChanges 0xFF
+#define GuideUnlockElmhurstIsland 0x100
+#define GuideReadElmhurstIsland 0x101
+#define GuideUnlockDecianLiberators 0x102
+#define GuideReadDecianLiberators 0x103
 //tale of ternon guide stuff 
 //bonus: disable select button sort feature in guide menu (fixes most problems that come from editing the guide)
 
@@ -87,13 +91,15 @@ MainGuideEntry(1, 0, FreeActionMechanicSubPageTitle, FreeActionDescGuide, GuideU
 MainGuideEntry(1, 0, EquipsMechanicSubPageTitle, EquipsDescGuide, GuideUnlockEquips, GuideReadEquips)
 MainGuideEntry(1, 0, WeaponTriangleMechanicSubPageTitle, WeaponTriangleDescGuide, GuideUnlockWeaponTriangle, GuideReadWeaponTriangle)
 MainGuideEntry(1, 0, SupportsMechanicSubPageTitle, SupportsDescGuide, GuideUnlockSupports, GuideReadSupports)
-MainGuideEntry(2, 0, OrodrethLoreSubPageTitle, OrodrethLoreDesc, GuideUnlockOrodreth, GuideReadOrodreth)
+MainGuideEntry(2, 0, DecianLiberatorsLoreSubPageTitle, DecianLiberatorsLoreDesc, GuideUnlockDecianLiberators, GuideReadDecianLiberators)
 MainGuideEntry(2, 0, ByelenLoreSubPageTitle, ByelenLoreDesc, GuideUnlockByelen, GuideReadByelen)
+MainGuideEntry(2, 0, OrodrethLoreSubPageTitle, OrodrethLoreDesc, GuideUnlockOrodreth, GuideReadOrodreth)
 MainGuideEntry(2, 0, CythesLoreSubPageTitle, CythesLoreDesc, GuideUnlockCythes, GuideReadCythes)
 MainGuideEntry(2, 0, DeciaLoreSubPageTitle, DeciaLoreDesc, GuideUnlockDecia, GuideReadDecia)
 MainGuideEntry(2, 0, MahemenLoreSubPageTitle, MahemenLoreDesc, GuideUnlockMahemen, GuideReadMahemen)
 MainGuideEntry(2, 0, ChouwoujLoreSubPageTitle, ChouwoujLoreDesc, GuideUnlockChouwouj, GuideReadChouwouj)
-MainGuideEntry(2, 0, YuliaIslandsLoreSubPageTitle, YuliaIslandsLoreDesc, GuideUnlockYuliaIslands, GuideReadYuliaIslands)
+MainGuideEntry(2, 0, ElmhurstIslandLoreSubPageTitle, ElmhurstIslandLoreDesc, GuideUnlockElmhurstIsland, GuideReadElmhurstIsland)
+MainGuideEntry(2, 0, YuriaIslandsLoreSubPageTitle, YuriaIslandsLoreDesc, GuideUnlockYuliaIslands, GuideReadYuliaIslands)
 MainGuideEntry(3, 0, TeamDistantRoadsCreditsSubPageTitle, TeamDistantRoadsDesc, GuideUnlockCredits, GuideReadCredits)
 MainGuideEntry(0xC, 0, 0, 0, 0, 0)
 WORD 0 0 0
@@ -141,9 +147,11 @@ SHORT GuideUnlockWeaponTriangle GuideReadWeaponTriangle
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockSupports GuideReadSupports
 ORG CURRENTOFFSET+8
-SHORT GuideUnlockOrodreth GuideReadOrodreth
+SHORT GuideUnlockDecianLiberators GuideReadDecianLiberators
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockByelen GuideReadByelen
+ORG CURRENTOFFSET+8
+SHORT GuideUnlockOrodreth GuideReadOrodreth
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockCythes GuideReadCythes
 ORG CURRENTOFFSET+8
@@ -153,13 +161,11 @@ SHORT GuideUnlockMahemen GuideReadMahemen
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockChouwouj GuideReadChouwouj
 ORG CURRENTOFFSET+8
+SHORT UnlockGuideFlag UnlockGuideFlag
+ORG CURRENTOFFSET+8
 SHORT GuideUnlockYuliaIslands GuideReadYuliaIslands
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockCredits GuideReadCredits
-ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
-ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
 ORG CURRENTOFFSET+8
 SHORT UnlockGuideFlag UnlockGuideFlag
 ORG CURRENTOFFSET+8

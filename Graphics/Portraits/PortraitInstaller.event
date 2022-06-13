@@ -952,19 +952,19 @@ setMugEntry(ZharaMug, ZharaMugData, 3, 6, 3, 4)
 
 ALIGN 16
 TaoMugData:
-#incbin "Dmp/Tao(placeholder)_mug.dmp"
-#incbin "Dmp/Tao(placeholder)_frames.dmp"
-#incbin "Dmp/Tao(placeholder)_palette.dmp"
-#incbin "Dmp/Tao(placeholder)_minimug.dmp"
-setMugEntry(TaoMug, TaoMugData, 3, 5, 3, 3)
+#incbin "Dmp/Tao (Loog)_mug.dmp"
+#incbin "Dmp/Tao (Loog)_frames.dmp"
+#incbin "Dmp/Tao (Loog)_palette.dmp"
+#incbin "Dmp/Tao (Loog)_minimug.dmp"
+setMugEntry(TaoMug, TaoMugData, 4, 6, 4, 4)
 
 ALIGN 16
 GrotoMugData:
-#incbin "Dmp/Groto(placeholder)_mug.dmp"
-#incbin "Dmp/Groto(placeholder)_frames.dmp"
-#incbin "Dmp/Groto(placeholder)_palette.dmp"
-#incbin "Dmp/Groto(placeholder)_minimug.dmp"
-setMugEntry(GrotoMug, GrotoMugData, 2, 5, 3, 3)
+#incbin "Dmp/Groto (CapibaraInSpace)_mug.dmp"
+#incbin "Dmp/Groto (CapibaraInSpace)_frames.dmp"
+#incbin "Dmp/Groto (CapibaraInSpace)_palette.dmp"
+#incbin "Dmp/Groto (CapibaraInSpace)_minimug.dmp"
+setMugEntry(GrotoMug, GrotoMugData, 2, 5, 2, 3)
 
 ALIGN 16
 TakaiMugData:
