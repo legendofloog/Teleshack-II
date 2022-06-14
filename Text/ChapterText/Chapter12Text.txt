@@ -23,13 +23,13 @@ the legendary hero.[X]
 
 //first half of the flashback
 ##Ch12BeginningScene1
-[MidRight][LoadCidorYoung][CloseEyes]
+[MidRight][LoadCidor][CloseEyes]
 Thanks be Byelen, whom has blessed us.[AN]
 Thou who hast granted us water to drink,[N]
 whom hast given us food to grow, [AN]
 the very land to thrive on,[N]
 thou to whom we art eternally greatful.[AN]
-[MidLeft][LoadDukeSelese]
+[MidLeft][LoadRadnitz]
 Well said.[AN]
 [MidRight]
 May we begin eating father?[AN]
@@ -78,8 +78,8 @@ Ah yes, right on time! Come in![ToggleSmile][A][X]
 
 //second half of the flashback
 ##Ch12BeginningScene2
-[FarLeft][LoadCidorYoung]
-[Left][LoadDukeSelese]
+[FarLeft][LoadCidor]
+[Left][LoadRadnitz]
 [Left][ToggleSmile]
 Welcome sir Athanasius![AN]
 [FarFarRight]
