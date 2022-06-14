@@ -651,13 +651,13 @@ glad you're both safe.[AN]
 Th-thank you Byelen for[N] 
 protecting them so.[AN]
 
-Cleo: M-mother, we're here for you.
+//Cleo: M-mother, we're here for you.
 
-Dragana: Mother? O-oh Cleo, I n-never realized... you thought t-that way about me.
+//Dragana: Mother? O-oh Cleo, I n-never realized... you thought t-that way about me.
 	  
-	  Th-that makes me so happy, I've always... always wanted to be c-called that.
-	  *or*
-	  I... never thought I'd be called that... It feels nice...
+//	  Th-that makes me so happy, I've always... always wanted to be c-called that.
+//	  *or*
+//	  I... never thought I'd be called that... It feels nice...
 
 [MidLeft]
 [Beat]what happened to Cidor?[AN]
@@ -691,7 +691,7 @@ Be at peace.[AN]
 [Right]
 Please don't leave us. Please![AN]
 
-
+[MidLeft]
 [Beat][Beat][A][X]
 [ClearFace]
 
