@@ -201,7 +201,7 @@ OutdoorEnemy:
   UNIT Selese Myrmidon Cidor Level(9,Enemy,True) [4,21] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese Freelancer Cidor Level(9,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
 //turn 8
-  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge,PureWater] BossAI
+  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge,PureWater,LightRune] BossAI
   
   UNIT
 
@@ -230,18 +230,27 @@ LOAD 1 IndoorEnemy
 LOAD 1 PrisonGreens
 SetBackground(0x0E)//fancy room
 Text(Ch12BeginningScene1)
-Text(Ch12BeginningScene2)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene2
+TEXTEND
 FAWI 1
 FAWU 1
 Text(Ch12BeginningScene3)
-Text(Ch12BeginningScene4)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene4
+TEXTEND
+Music(RiseAboveID)
 Text(Ch12BeginningScene5)
 Text(Ch12BeginningScene6)
 Text(Ch12BeginningScene7)
 Text(Ch12BeginningScene8)
 SetBackground(0x18)//daytime forest
-Text(Ch12BeginningScene9)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene9
+Music(FF6AwakeningID)
+TEXTEND
 SetBackground(0x20)//nighttime forest different from 0x18
+Music(Nighttime)
 Text(Ch12BeginningScene10)
 GotoPrepScreen
 ENDA
