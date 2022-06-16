@@ -114,6 +114,6 @@ void RuneArrowPreBattle(){
 	Item actorUnitItem = GetUnitEquippedItem(battleActor);
 	if(actorUnitItem.number == 0xa3){ //rune arrow id
 		BattleUnit* battleActorUnit = &gBattleActor;
-		battleActorUnit->weaponAttributes &= IA_MAGIC;
+		battleActorUnit->battleCritRate += battleActorUnit->unit.mag;
 	}
 }

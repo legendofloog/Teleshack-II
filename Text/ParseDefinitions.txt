@@ -6,6 +6,7 @@
 [YN] = [Yes]
 [NY] = [No]
 [ToggleInvert] = [ToggleColorInvert]
+[Invert] = [ToggleInvert]
 [Red] = [ToggleRed]
 [Blink] = [CloseEyes][.][OpenEyes]
 [MidBlink] = [HalfCloseEyes]
@@ -154,6 +155,8 @@
 [LoadColossus] = [LoadFace][0xDA][0x1]
 [LoadAlto] = [LoadFace][0xDC][0x1]
 [LoadMystery] = [LoadFace][0xDD][0x1]
+[LoadMithras] = [LoadMystery]
+[LoadByelen] = [LoadMithras]
 [LoadShafaqat] = [LoadFace][0xDF][0x1]
 [LoadKofi] = [LoadFace][0xE0][0x1]
 [LoadApsis] = [LoadFace][0xE1][0x1]
@@ -175,8 +178,8 @@
 [LoadVinny] = [LoadFace][0xF3][0x1]
 [LoadCephalid] = [LoadFace][0xF4][0x1]
 [LoadDart] = [LoadFace][0xF5][0x1]
-
 [LoadDraganaDeadlord] = [LoadFace][0xF9][0x1]
+
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]
@@ -194,6 +197,8 @@
 [LoadSoldier] = [LoadFace][0x6A][0x1]
 [LoadSeleseF] = [LoadFace][0x70][0x1]
 [LoadTikka] = [LoadFace][0x69][0x1]
+[Load23RedSoldier] = [LoadFace][0x6B][0x1]
+[Load23GreenSoldier] = [LoadFace][0x6F][0x1]
 
 [LoadYoungBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadYoungGirlVillager] = [LoadFace][0x63][0x1]

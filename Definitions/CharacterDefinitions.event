@@ -63,8 +63,11 @@
 #define Matthias 0x3E
 #define KwameReal 0x3F
 #define Kofi 0x40
-#define TrajanReal 0x5B
-#define Locke 0x5C
+#define TrajanReal 0x41
+#define Locke 0x42
+#define EliasReal 0x43
+#define Maryn 0x44
+#define Viktor 0x45
 
 
 // Chapter 1 Bosses
@@ -94,7 +97,7 @@
 
 // Chapter 10 stuff
 #define Cidor 0x5A
-#define Johanna 0x49
+#define Johanna 0x5B
 #define Elias 0x4a
 #define SeleseProvoke 0x98
 #define Bandit 0x99
@@ -204,6 +207,13 @@
 
 //Chapter 22 Stuff
 #define Eleanor 0xBF
+
+//Chapter 23 Stuff
+#define KassandraReal 0x5C
+#define Artemis 0x5D
+#define Mihail 0x5E
+#define Saif 0x5F
+#define CoraliaReal 0x60
 
 #define Breguet 0x46
 #define Bazba 0x48

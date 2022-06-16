@@ -105,3 +105,5 @@ SongTable(TomokoQOH, song01A2, MapMusicGroup)
 SongTable(SorrowsDistortion, songC3, BattleMusicGroup)
 #include "MusicEvents/GuardianSignsLegendary.event" // credit to sme!
 SongTable(GuardianSignsLegendary, LegendTheme, MapMusicGroup)
+#include "MusicEvents/WhyAreWeWithoutHope(Devvy).event"
+SongTable(WhyAreWeWithoutHopeID, WhyAreWeWithoutHope, MapMusicGroup)

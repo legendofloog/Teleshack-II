@@ -125,6 +125,10 @@ int GetUnitEffectiveLevel(Unit* unit){
 	while( currentPrepromoteUnit != 0xFF){
 		currentPrepromoteUnit = PrepromoteTable[i];
 		if(unit->pCharacterData->number == currentPrepromoteUnit){
+			if(unit->pCharacterData->number == 0x2){ //unit is Mira
+				effectiveLevel -= 15;
+				break;
+			}
 			effectiveLevel -= 10;
 			break;
 		}

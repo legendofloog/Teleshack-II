@@ -138,13 +138,8 @@ cancels WT disadvantage at 2 range.[N]
 Off-Hand: Grants AS = weapon range.[X]
 
 ## SD_Telepathy
-Telepathy: +50% Hit/Avo/Crt/C. Avo[N]
+Telepathy: +50 Hit/Avo/Crt/Dodge[N]
 when fighting enemies at 1 range.[X]
-
-## SD_PhaseLeap
-Phase Leap: Tao teleports within a[N]
-4-tile radius and can act after without[N]
-moving, but he cannot move next turn.[X]
 
 ## SD_HypeTrain *
 # make him a shitty armor or inf??? give him shit base spd and growth/bad defenses/high hp???

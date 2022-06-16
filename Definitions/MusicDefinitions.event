@@ -54,6 +54,7 @@
 
 #define Sheep_Will_Sleep 0x26D
 #define Core 0x26E
+#define WhyAreWeWithoutHopeID 0x26f
 
 // Vanilla
 #define TiesOfFriendship 0x7

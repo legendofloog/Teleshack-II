@@ -77,6 +77,8 @@
 #define MinkMug 0xF7
 #define TiberiusMug 0xF8
 #define DraganaDeadlordMug 0xF9
+#define MarynMug 0xFA
+#define ViktorMug 0xFB
 
 // NPCs
 #define EliasMug 0xB
@@ -126,6 +128,9 @@
 #define HamdiMug 0xD9
 #define ColossusMug 0xDA
 #define EleanorMug 0xDD
+#define RoxanaMug 0xFC
+#define MihailMug 0xFD
+#define SaifMug 0xFE
 
 ALIGN 16
 CleoMugData:
@@ -952,10 +957,10 @@ setMugEntry(ZharaMug, ZharaMugData, 3, 6, 3, 4)
 
 ALIGN 16
 TaoMugData:
-#incbin "Dmp/Tao (Loog)_mug.dmp"
-#incbin "Dmp/Tao (Loog)_frames.dmp"
-#incbin "Dmp/Tao (Loog)_palette.dmp"
-#incbin "Dmp/Tao (Loog)_minimug.dmp"
+#incbin "Dmp/Tao (Loog, Levin)_mug.dmp"
+#incbin "Dmp/Tao (Loog, Levin)_frames.dmp"
+#incbin "Dmp/Tao (Loog, Levin)_palette.dmp"
+#incbin "Dmp/Tao (Loog, Levin)_minimug.dmp"
 setMugEntry(TaoMug, TaoMugData, 4, 6, 4, 4)
 
 ALIGN 16
@@ -1118,3 +1123,19 @@ LockeMugData:
 #incbin "Dmp/Locke (RandomWizard)_palette.dmp"
 #incbin "Dmp/Locke (RandomWizard)_minimug.dmp"
 setMugEntry(LockeMug, LockeMugData, 3, 5, 3, 3)
+
+ALIGN 16
+MihailMugData:
+#incbin "Dmp/Mihail (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Mihail (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Mihail (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Mihail (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(MihailMug, MihailMugData, 3, 4, 3, 2)
+
+ALIGN 16
+SaifMugData:
+#incbin "Dmp/Saif (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Saif (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Saif (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Saif (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(SaifMug, SaifMugData, 3, 5, 3, 3)

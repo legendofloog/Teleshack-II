@@ -1,0 +1,145 @@
+EventPointerTable(Chapter23Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+//TurnEventPlayer(0, AlenaSpawn, 2)
+END_MAIN
+
+CharacterBasedEvents:
+//CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+LoadUnit(13,6)
+LoadUnit(15,6)
+LoadUnit(17,6)
+LoadUnit(12,3)
+LoadUnit(14,3)
+LoadUnit(16,3)
+LoadUnit(18,3)
+LoadUnit(13,4)
+LoadUnit(15,4)
+LoadUnit(17,4)
+LoadUnit(12,5)
+LoadUnit(14,5)
+LoadUnit(16,5)
+LoadUnit(18,5)
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+FADI 15
+LOMA Ch5xGechrysos
+CAMERA [13,0]
+LOAD1 1 TwoSoldierGroup
+ENUN
+FADU 15
+LOAD1 1 EliasUnitGroup
+STAL 30
+LOAD1 1 CoraliaUnitGroup
+ENUN
+FlashCursor(EliasReal,30)
+Text(Ch23InThePalace1)
+CamOn
+MOVE 15 Cythes [7,11]
+MOVE 15 Barod [9,11]
+ENUN
+CamOff
+FlashCursor(Cythes,30)
+Text(Ch23InThePalace2)
+MOVE 15 Cythes [0,11]
+MOVE 15 Barod [0,12]
+ENUN
+REMOVEUNIT Cythes
+REMOVEUNIT Barod
+CamOn
+MOVE 15 EliasReal [7,11]
+MOVE 15 CoraliaReal [7,12]
+ENUN
+CamOff
+MountSingleUnit(EliasReal)
+STAL 10
+Text(Ch23InThePalace3)
+LOAD1 1 OrfeasMithrasGroup
+STAL 30
+LOAD1 1 LeonidasKassandraGroup
+STAL 30
+Text(Ch23InThePalace4)
+Text(Ch23InThePalace5)
+Text(Ch23InThePalace6)
+Text(Ch23InThePalace7)
+Text(Ch23InThePalace8)
+Text(Ch23InThePalace9)
+Text(Ch23InThePalace10)
+Text(Ch23InThePalace11)
+Text(Ch23InThePalace12)
+LOMA Chapter23
+MountAll
+GotoPrepScreen
+NoFade
+ENDA
+
+TwoSoldierGroup:
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Barod AxeSoldier 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT
+
+EliasUnitGroup:
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R6 [MasterAxe] NoAI
+UNIT
+
+CoraliaUnitGroup:
+UNIT CoraliaReal Noble_F 0x0 Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R5 [StoneSword] NoAI
+UNIT 
+
+OrfeasMithrasGroup: //mithras, orfeas
+UNIT Raschwitz_Ch1 HighPriest 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA9R11 [StoneSword] NoAI
+UNIT Tyr_Ch2 Baron 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneSword] NoAI
+UNIT
+
+LeonidasKassandraGroup: //leonidas, kassandra
+UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA9R11 [StoneSword] NoAI
+UNIT KassandraReal Falcoknight 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneSword] NoAI
+UNIT
+
+EndingScene:
+MNC2 Chapter24
+NoFade
+ENDA
