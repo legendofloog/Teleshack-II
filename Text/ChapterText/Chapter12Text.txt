@@ -194,12 +194,10 @@ also holds the key to our salvation.[AN]
 horrified to even try it.[AN]
 But now I realize all along[N]
 it was our only way out.[AN]
-
-//Cidor reveals the legendary bow
-
+Behold; Daybreak, the bow of Chouwouj.[AN]
 [MidRight]
 !!! No! Why do you have that?![AN]
-
+[Event]
 //screen fades to a black background. The ch8 boss's portrait shows up
 [MidLeft][ClearFace]
 [MidRight][ClearFace]
@@ -218,9 +216,8 @@ She wished to have me relay it to[N]
 general Argymos, presumably because[N]
 of his connection to the Lorekeepers.[AN]
 And that's not all she passed on to me[Beat][AN]
-
+[Event]
 //screen fades back to the throne room
-
 [MidLeft][ClearFace]
 [MidLeft][LoadCidor]
 [MidRight][LoadKwame]
