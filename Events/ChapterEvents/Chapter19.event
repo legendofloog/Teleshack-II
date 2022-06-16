@@ -262,6 +262,10 @@ ENDA
 
 EndingScene:
 RemoveAll
+MUSC PMDSteamCaveID
+SetBackground(0x34)
+Text(Ch19_End)
+EraseBackground
 MNC2 Chapter20
 NoFade
 ENDA
