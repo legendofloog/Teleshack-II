@@ -229,10 +229,13 @@ LOAD 1 OutdoorEnemy
 LOAD 1 IndoorEnemy
 LOAD 1 PrisonGreens
 SetBackground(0x0E)//fancy room
+Music(Rovers)
 Text(Ch12BeginningScene1)
+
 TEXTSTART
 TEXTSHOW Ch12BeginningScene2
 TEXTEND
+MUSCSLOW 0x7FFF
 FAWI 1
 FAWU 1
 Text(Ch12BeginningScene3)
@@ -274,16 +277,23 @@ BNE 2 s0 sC
 LOAD 1 TiberiusJoin
 LABEL 2
 SetBackground(CastleHallway)
+Music(FF5_Nostalgia)
 Text(Ch12End1)
+MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12End2
 TEXTEND
 SetBackground(0x0E)
+Music(Rovers)
 Text(Ch12End3A)
+MUSC 0x7FFF
 Text(Ch12End3B)
 Text(Ch12End3C)
 SetBackground(0x20)
-Text(Ch12End4)
+TEXTSTART
+TEXTSHOW Ch12End4
+TEXTEND
+Music(Nighttime)
 Text(Ch12End5)
 Text(Ch12End6)
 Text(Ch12End7)
