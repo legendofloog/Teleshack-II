@@ -95,7 +95,7 @@ UNIT
 EnemyUnits:
 UNIT C19Phantom ForrestKnight_Dismounted 0x0 Level(7,Enemy,False) [41,16] 0x0 0x0 0x0 0x0 [BoldBlade,BraveSword,KnightProof] BossHealAI
 UNIT C19Mini1 Sniper 0x0 Level(6,Enemy,False) [40,11] 0x0 0x0 0x0 0x0 [SilverBow,Longbow] RangeAI
-UNIT C19Mini2 Halberdier 0x0 Level(6,Enemy,False) [37,25] 0x0 0x0 0x0 0x0 [SilverLance,Lamfada] RangeAI
+UNIT C19Mini2 Halberdier 0x0 Level(6,Enemy,False) [37,25] 0x0 0x0 0x0 0x0 [SilverLance,YorsYari] RangeAI
 UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [BoldBlade] RangeAI
 UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
 UNIT C19Enemy Warrior C19Phantom Level(5,Enemy,True) [20,7] 0x0 0x0 0x0 0x0 [BoldCleaver,TrainedArc] RangeAI
@@ -113,7 +113,7 @@ UNIT C19Enemy Bard C19Phantom Level(19,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [Light
 UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [11,26] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
 UNIT C19Enemy Halberdier C19Phantom Level(5,Enemy,True) [12,27] 0x0 0x0 0x0 0x0 [TrainedAxe,Lamfada] RangeAI
 UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
-UNIT C19Enemy Swordmaster C19Phantom Level(5,Enemy,True) [22,18] 0x0 0x0 0x0 0x0 [StoneSword, BoldBlade] TwoActionAI
+UNIT C19Enemy Swordmaster C19Phantom Level(5,Enemy,True) [22,18] 0x0 0x0 0x0 0x0 [StoneSword, BoldBlade] StallOneTurnAI
 UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [21,17] 0x0 0x0 0x0 0x0 [Elfire] TwoActionAI
 UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [19,10] 0x0 0x0 0x0 0x0 [Elfire] RangeAI
 UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [10,29] 0x0 0x0 0x0 0x0 [TrainedEdge,Horseslayer] TwoActionAI
@@ -125,7 +125,7 @@ UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [29,24] 0x0 0x0 0x0 0x0 [S
 UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [32,29] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
 UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [21,30] 0x0 0x0 0x0 0x0 [Luna,Arachnid] ChargeAI
 UNIT C19Enemy Warrior C19Phantom Level(5,Enemy,True) [29,29] 0x0 0x0 0x0 0x0 [BoldCleaver,Longbow] BossHealAI
-UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [17,25] 0x0 0x0 0x0 0x0 [Nosferatu,Sagittae,Physic] BossHealAI
+UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [27,14] 0x0 0x0 0x0 0x0 [Nosferatu,Sagittae,Physic] BossHealAI
 UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [30,9] 0x0 0x0 0x0 0x0 [BoldBlade] RangeAI
 UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [39,5] 0x0 0x0 0x0 0x0 [Lamfada,BoldPike] TwoActionAI
 UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [40,9] 0x0 0x0 0x0 0x0 [BoldBlade] ChargeAI
@@ -155,17 +155,17 @@ UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,19] 0x0 0x0 0x0 0x0 [
 UNIT
 
 EnemyReinforcements_Hurry1:
-UNIT Phantom DarkMage C19Phantom Level(19,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
-UNIT Phantom DarkMage C19Phantom Level(19,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
-UNIT Phantom Mage C19Phantom Level(19,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Bolganone] ChargeAI
-UNIT Phantom Mage C19Phantom Level(19,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolganone] ChargeAI
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
+UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Bolganone] ChargeAI
+UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolganone] ChargeAI
 UNIT
 
 EnemyReinforcements_Hurry2:
-UNIT Phantom DarkBishop C19Phantom Level(5,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Flux, Fenrir] ChargeAI
-UNIT Phantom DarkBishop C19Phantom Level(5,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [Flux, Fenrir] ChargeAI
-UNIT Phantom Sage C19Phantom Level(5,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Bolganone, Bolting] ChargeAI
-UNIT Phantom Sage C19Phantom Level(5,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolganone, Bolting] ChargeAI
+UNIT C19Enemy DarkBishop C19Phantom Level(5,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Flux, Fenrir] ChargeAI
+UNIT C19Enemy DarkBishop C19Phantom Level(5,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [Flux, Fenrir] ChargeAI
+UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Bolganone, Bolting] ChargeAI
+UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolganone, Bolting] ChargeAI
 UNIT
 
 ThiefReinforcementsEvent:

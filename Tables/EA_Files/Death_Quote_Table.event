@@ -146,6 +146,9 @@ DeathQuote(Zhara,AllChapters,0x0,0x0,ZharaGiveAll)
 DeathQuote(Groto,AllChapters,0x0,0x0,GrotoGiveAll)
 DeathQuote(Darcy,AllChapters,0x0,0x0,DarcyGiveAll)
 
+// ch19
+DeathQuote(C19Phantom,AllChapters,0x02,0x0)
+
 // ch20
 DeathQuote(Jerry,AllChapters,0x0,0x0,JerryGiveAll)
 DeathQuote(Lyre,AllChapters,0x0,0x0,LyreGiveAll)
