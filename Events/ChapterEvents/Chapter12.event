@@ -273,6 +273,20 @@ CHECK_EXISTS Tiberius //temporary
 BNE 2 s0 sC
 LOAD 1 TiberiusJoin
 LABEL 2
+SetBackground(CastleHallway)
+Text(Ch12End1)
+TEXTSTART
+TEXTSHOW Ch12End2
+TEXTEND
+SetBackground(0x0E)
+Text(Ch12End3A)
+Text(Ch12End3B)
+Text(Ch12End3C)
+SetBackground(0x20)
+Text(Ch12End4)
+Text(Ch12End5)
+Text(Ch12End6)
+Text(Ch12End7)
 FADI 15
 InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
@@ -360,6 +374,15 @@ ENUT 15
 ENUT 16
 CAMERA_CENTERED [3,16]
 TILECHANGE 8
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn1
+TEXTEND
+SetBackground(CastleHallway)
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn2
+TEXTEND
+Text(Ch12DeadlordSpawn3)
+Text(Ch12DeadlordSpawn4)
 REMOVEALL_GREEN
 REMOVEALL_RED
 CHECK_EXISTS Tiberius
