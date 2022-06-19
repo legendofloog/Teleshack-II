@@ -118,7 +118,7 @@ POP
 //default status duration is infinite
 PUSH
 ORG $178EA
-BYTE 0
+BYTE 2
 POP
 
 //devil axe backfire to 21 - luck

@@ -91,14 +91,14 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x59 Wrathgar (Ch 9),2,5
 0x5A Cidor (Ch 10),0,5
 0x5B Johanna (Ch 10),3,5
-0x5C,-1,1
-0x5D Wight (Ch 11A),3,15
-0x5E Deathgoyle (Ch 11B),2,5
-0x5F Entombed (Monster Boss),2,5
-0x60 -,3,5
-0x61 -,3,5
-0x62 -,0,0
-0x63 -,0,0
+0x5C Kassandra,0,1
+0x5D Artemis,3,15
+0x5E Mihail,3,5
+0x5F Saif,5,35
+0x60 CoraliaReal,3,5
+0x61 Mihail's,3,5
+0x62 Saif's ,0,0
+0x63 Conscript,0,0
 0x64 Hunter,0,0
 0x65 Kwame,0,0
 0x66 Trajan,0,10

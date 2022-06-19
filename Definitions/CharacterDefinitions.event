@@ -214,6 +214,10 @@
 #define Mihail 0x5E
 #define Saif 0x5F
 #define CoraliaReal 0x60
+#define Mihails 0x61
+#define Saifs 0x62
+#define Conscript 0x63
+
 
 #define Breguet 0x46
 #define Bazba 0x48

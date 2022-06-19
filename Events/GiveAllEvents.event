@@ -434,3 +434,24 @@ Text(CatrinRealDeathQuoteText)
 SendAll(CatrinReal)
 NoFade
 ENDA
+
+ALIGN 4
+EliasGiveAll:
+Text(EliasDeathQuoteText)
+SendAll(EliasReal)
+NoFade
+ENDA
+
+ALIGN 4
+MarynGiveAll:
+Text(MarynDeathQuoteText)
+SendAll(Maryn)
+NoFade
+ENDA
+
+ALIGN 4
+ViktorGiveAll:
+Text(ViktorDeathQuoteText)
+SendAll(Viktor)
+NoFade
+ENDA

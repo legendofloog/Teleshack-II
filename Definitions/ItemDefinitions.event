@@ -159,7 +159,7 @@
 #define HoundingBow 0x93
 #define Daybreak 0x94
 #define HeavySpear 0x95
-
+#define Holyspear 0x96
 #define ArgymosCrest 0x98
 
 #define CrownPyreItem 0x9a

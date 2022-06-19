@@ -56,6 +56,17 @@
 #define Core 0x26E
 #define WhyAreWeWithoutHopeID 0x26f
 
+//used in 23
+#define RenegadesID 0x270
+#define LightGlintID 0x271
+#define SaturosBattleID 0x272
+#define SheenaID 0x273
+#define MarsLighthouseID 0x274
+#define ToV_TragicDecisionID 0x275
+#define GS_TLA_WalkingForwardWithDeterminationID 0x276
+#define FF5_BattleOnTheBigBridgeID 0x277
+
+
 // Vanilla
 #define TiesOfFriendship 0x7
 #define AdvanceSong 0x24

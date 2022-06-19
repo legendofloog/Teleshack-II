@@ -115,14 +115,17 @@
 [LoadShaw] = [LoadFace][0xE9][0x1]
 [LoadMatthias] = [LoadFace][0xF6][0x1]
 [LoadNgondala] = [LoadFace][0xED][0x1]
-
+[LoadMaryn] = [LoadFace][0xFA][0x1]
+[LoadViktor] = [LoadFace][0xFB][0x1]
+[LoadTao] = [LoadFace][0x5E][0x1]
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]
+
 [LoadLeonidas] = [LoadFace][0x1D][0x1]
 [LoadRadnitz] = [LoadFace][0x12][0x1]
 [LoadEpony] = [LoadFace][0x1F][0x1]
 [LoadMifan] = [LoadFace][0x3][0x1]
-[LoadTao] = [LoadFace][0x5E][0x1]
+
 
 [LoadLeina] = [LoadFace][0x11][0x1]
 [LoadCromar] = [LoadFace][0x13][0x1]
@@ -179,7 +182,9 @@
 [LoadCephalid] = [LoadFace][0xF4][0x1]
 [LoadDart] = [LoadFace][0xF5][0x1]
 [LoadDraganaDeadlord] = [LoadFace][0xF9][0x1]
-
+[LoadArtemis] = [LoadFace][0xFC][0x1]
+[LoadMihail] = [LoadFace][0xFD][0x1]
+[LoadSaif] = [LoadFace][0xFE][0x1]
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]

@@ -41,7 +41,7 @@ DeathQuote(Vinny,Chapter21,0,VinnyDeathQuoteText)
 DeathQuote(Cephalid,Chapter21,0x0E,CephalidDeathQuoteText)
 DeathQuote(Xlea,Chapter21,0,XleaDeathQuoteText)
 DeathQuote(Taraji,Chapter21,0x02,TarajiDeathQuoteText)
-
+DeathQuote(Eleanor,Chapter22,0x2,0x0)
 
 //player units
 // ch1
@@ -157,4 +157,9 @@ DeathQuote(Lyre,AllChapters,0x0,0x0,LyreGiveAll)
 DeathQuote(Ngondala,AllChapters,0x0,0x0,NgondalaGiveAll)
 DeathQuote(CatrinReal,AllChapters,0x0,0x0,CatrinRealGiveAll)
 
-DeathQuote(0xFFFF,0,0,0)
+// ch22
+DeathQuote(EliasReal,AllChapters,0x0,0x0,EliasGiveAll)
+DeathQuote(Maryn,AllChapters,0x0,0x0,MarynGiveAll) // samson/arran
+DeathQuote(Viktor,AllChapters,0x0,0x0,ViktorGiveAll)
+
+DeathQuote(0xFFFF,0,0,0) // terminator

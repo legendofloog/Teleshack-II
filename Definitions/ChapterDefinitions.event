@@ -169,6 +169,7 @@
 #define DesertBastionPaletteID 0xA5
 #define FlasubanVillageSnowPaletteID 0xBB
 #define FF2TownPaletteID 0xBF
+#define FF2TownSnowPaletteID 0xc1
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A

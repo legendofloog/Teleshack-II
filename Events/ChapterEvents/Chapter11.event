@@ -83,7 +83,7 @@ UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [3,13] 0x0 0x0 0x0 0x0 [IronSword
 UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [1,13] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT Selese Mage Cleo Level(11,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
 UNIT Selese Mage Cleo Level(11,Enemy,True) [3,14] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
-UNIT Selese SwordArmour Cleo Level(11,Enemy,True) [8,11] 0x0 0x0 0x0 0x0 [FlameSword] NeverMoveAI
+UNIT Selese SwordArmour Cleo Level(11,Enemy,True) [8,11] 0x0 0x0 0x0 0x0 [IceSword] NeverMoveAI
 UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [8,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 UNIT Aurora Halberdier Cleo Level(1,Enemy,False) [9,4] 0x0 0x0 0x0 0x0 [SteelLance,Hurlbat] AttackInRangeAI
 UNIT

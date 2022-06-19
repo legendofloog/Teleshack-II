@@ -48,7 +48,8 @@ beq End
 @ check global flag
 ldr r0,=#0x8083da8 @CheckEventId
 mov r14,r0
-mov r0,#0xEC
+@mov r0,#0xEC
+mov r0,#0x7C
 .short 0xF800
 cmp r0,#1
 bne End

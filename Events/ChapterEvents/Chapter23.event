@@ -13,8 +13,19 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-//TurnEventPlayer(0, AlenaSpawn, 2)
+TurnEventPlayer(0, CoraliaEliasBlue, 1)
 END_MAIN
+
+CoraliaEliasBlue:
+CAMERA EliasReal
+FlashCursor(EliasReal,30)
+CUSA EliasReal
+SetFatigue(EliasReal, 0)
+FlashCursor(CoraliaReal,30)
+CUSA CoraliaReal
+SetFatigue(CoraliaReal, 0)
+NoFade
+ENDA
 
 CharacterBasedEvents:
 //CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
@@ -24,8 +35,14 @@ LocationBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
+AFEV 0 BigBridgeTime 1
 CauseGameOverIfLordDies
 END_MAIN
+
+BigBridgeTime:
+ENUT 4
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -65,24 +82,32 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-FADI 15
 LOMA Ch5xGechrysos
 CAMERA [13,0]
 LOAD1 1 TwoSoldierGroup
 ENUN
 FADU 15
+MUSC WindyDaySoundEffect
+BROWNBOXTEXT Ch5xImperialPalaceText[8,8]
 LOAD1 1 EliasUnitGroup
 STAL 30
 LOAD1 1 CoraliaUnitGroup
 ENUN
 FlashCursor(EliasReal,30)
+FlashCursor(CoraliaReal,30)
+MUSC FE5_InTheBattle_Fate
 Text(Ch23InThePalace1)
 CamOn
 MOVE 15 Cythes [7,11]
 MOVE 15 Barod [9,11]
 ENUN
 CamOff
+MOVE 15 EliasReal [12,8]
+STAL 10
+MOVE 15 CoraliaReal [12,7]
+ENUN
 FlashCursor(Cythes,30)
+FlashCursor(Barod,30)
 Text(Ch23InThePalace2)
 MOVE 15 Cythes [0,11]
 MOVE 15 Barod [0,12]
@@ -94,23 +119,133 @@ MOVE 15 EliasReal [7,11]
 MOVE 15 CoraliaReal [7,12]
 ENUN
 CamOff
-MountSingleUnit(EliasReal)
-STAL 10
 Text(Ch23InThePalace3)
+MUSC 0x7FFF
 LOAD1 1 OrfeasMithrasGroup
 STAL 30
 LOAD1 1 LeonidasKassandraGroup
 STAL 30
+MUSC FF4RedWingsID
 Text(Ch23InThePalace4)
+LOAD1 1 SecondSoldierGroup
+ENUN
+MOVE 15 Ch2_Selese_Guy [9,10]
+MOVE 15 KassandraReal [9,13]
+ENUN
+MUSC MarsLighthouseID
 Text(Ch23InThePalace5)
-Text(Ch23InThePalace6)
-Text(Ch23InThePalace7)
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 10
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 5
 Text(Ch23InThePalace8)
+FAWI 10
+SOUN 0xF0
+STAL 20
+FAWU 5
+CamOn
+MOVE 15 EliasReal [6,11]
+ENUN
+KILL Cythes
+AWAIT_KILL Cythes
+MOVE 15 CoraliaReal [6,12]
+ENUN
+KILL Barod
+AWAIT_KILL Barod
+MOVE 15 EliasReal [0,11]
+MOVE 15 CoraliaReal [0,12]
+ENUN
+CamOff
+REMOVEUNIT EliasReal
+REMOVEUNIT CoraliaReal
+STAL 20
+CAMERA KassandraReal
+FlashCursor(KassandraReal,30)
 Text(Ch23InThePalace9)
+MOVE 15 KassandraReal [0,12]
+ENUN
+REMOVEUNIT KassandraReal
 Text(Ch23InThePalace10)
+MOVE 15 Tyr_Ch2 [8,10]
+ENUN
+SOUN 0x00B1
+TILECHANGE 0
+MOVE 15 Tyr_Ch2 [8,9]
+ENUN
+REMOVEUNIT Tyr_Ch2
 Text(Ch23InThePalace11)
+MOVE 15 Raschwitz_Ch1 [8,9]
+ENUN
+REMOVEUNIT Raschwitz_Ch1
+SOUN 0x00B1
+TILEREVERT 0
+STAL 20
+MOVE 15 Ch2_Selese_Guy [8,11]
+ENUN
 Text(Ch23InThePalace12)
+MUSC 0x7FFF
+FADI 15
+RemoveAll
 LOMA Chapter23
+CAMERA_CENTERED [1,1]
+LOAD1 1 GechrysosCityGroup
+ENUN
+FADU 15
+BROWNBOXTEXT GechrysosBrownBoxText[8,8]
+LOAD1 2 LiberatorsBeginningSceneGroup
+ENUN
+FlashCursor(Loewe,30)
+FlashCursor(Cleo,30)
+MUSC SheenaID
+//text
+LOAD1 2 KwameGroup
+ENUN
+FlashCursor(KwameReal,30)
+//text
+CamOn
+MOVE 15 Loewe [15,4]
+MOVE 15 Cleo [14,3]
+MOVE 15 KwameReal [16,3]
+ENUN
+// text
+LOAD1 1 EnemyUnitsNorthWest //
+ENUN
+MUSC RenegadesID
+// text
+LOAD1 1 EnemyUnitsWest //
+ENUN
+LOAD1 1 EnemyUnitsNorthEast //
+ENUN
+// text
+LOAD1 1 FleeingCoraliaEliasGroup
+ENUN
+// text
+MOVE 20 EliasReal [16,18]
+MOVE 20 CoraliaReal [16,17]
+ENUN
+LOAD1 1 EnemyUnitsEast1 //
+ENUN
+LOAD1 1 EnemyUnitsEast2 //
+ENUN
+// text
+LOAD1 1 KassandraRealGroup
+ENUN
+LOAD1 1 ArtemisGroup
+ENUN
+LOAD1 1 EnemyUnitsSouthwest
+ENUN
+// text
+MOVE 15 KassandraReal [16,27]
+ENUN
+LOAD1 1 BallistaGroup
+ENUN
+//text
+//LOAD1 1 EnemyUnitsWest2
+//ENUN 
 MountAll
 GotoPrepScreen
 NoFade
@@ -126,7 +261,7 @@ UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,NPC,True) [13,0] 0x0 0x0 0x1
 UNIT
 
 CoraliaUnitGroup:
-UNIT CoraliaReal Noble_F 0x0 Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R5 [StoneSword] NoAI
+UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R5 [StoneSword] NoAI
 UNIT 
 
 OrfeasMithrasGroup: //mithras, orfeas
@@ -135,9 +270,86 @@ UNIT Tyr_Ch2 Baron 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneS
 UNIT
 
 LeonidasKassandraGroup: //leonidas, kassandra
-UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA9R11 [StoneSword] NoAI
-UNIT KassandraReal Falcoknight 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneSword] NoAI
+UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA10R10 [StoneSword] NoAI
+UNIT KassandraReal Falcoknight 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA10R13 [StoneSword] NoAI
 UNIT
+
+SecondSoldierGroup:
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [0,11] 0x0 0x0 0x1 REDA5R11 [IronLance] NoAI
+UNIT Barod AxeSoldier 0x0 Level(15,Enemy,True) [0,12] 0x0 0x0 0x1 REDA5R12 [IronAxe] NoAI
+UNIT
+
+LiberatorsBeginningSceneGroup:
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [0,2] 0x0 0x0 0x1 REDA2R3 [IronLance] NoAI
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [0,3] 0x0 0x0 0x1 REDA4R3 [IronLance] NoAI
+UNIT
+
+KwameGroup:
+UNIT KwameReal LanceSoldier 0x0 Level(15,Ally,True) [3,2] 0x0 0x0 0x1 REDA3R3 [IronLance] NoAI
+UNIT
+
+GechrysosCityGroup:
+//UNIT Barod Civilian 0x0 Level(15,Enemy,True) [10,9] 0x0 0x0 0 0 [0x0] NoAI
+UNIT
+
+EnemyUnitsNorthWest:
+UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [3,2] 0x0 0x0 0x1 REDA2R4 [MasterAxe, SilverLance] GroupOneAI 
+UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [0,2] 0x0 0x0 0x1 REDA1R7 [TrainedPike] GroupOneAI 
+UNIT Mihails AxeSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA3R10 [SteelAxe] GroupOneAI 
+UNIT Mihails SwordArmor 0x0 Level(20,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R8 [Longsword] GroupOneAI 
+UNIT
+
+EnemyUnitsWest:
+UNIT Cythes HighPriestess 0x0 Level(8,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R15 [Purge, Lightning] NeverMoveAI
+UNIT Cythes ArchKnight 0x0 Level(8,Enemy,True) [2,11] 0x0 0x0 0x1 REDA4R13 [KillerBow] NoAI
+UNIT Cythes Hero 0x0 Level(8,Enemy,True) [6,7] 0x0 0x0 0x1 REDA10R9 [SilverAxe,TrainedEdge] NoAI
+UNIT Cythes Warrior 0x0 Level(8,Enemy,True) [13,9] 0x0 0x0 0x1 REDA11R12 [TrainedAxe,GreatBow] NoAI
+UNIT 
+
+EnemyUnitsNorthEast:
+UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [31,3] 0x0 0x0 0x1 REDA29R3 [MasterSword, FlameSword] GroupTwoAI 
+UNIT Saifs Myrmidon_F 0x0 Level(20,Enemy,True) [31,4] 0x0 0x0 0x1 REDA26R3 [SilverSword] GroupTwoAI 
+UNIT Saifs Corsair 0x0 Level(20,Enemy,True) [31,7] 0x0 0x0 0x1 REDA24R2 [TrainedAxe] GroupTwoAI 
+UNIT Saifs Freelancer 0x0 Level(20,Enemy,True) [31,5] 0x0 0x0 0x1 REDA25R5 [SilverLance] GroupTwoAI 
+UNIT 
+
+FleeingCoraliaEliasGroup:
+UNIT EliasReal Dracoknight 0x0  Level(10,NPC,False) [3,29] 0x0 0x0 0x1 REDA6R22 [BraveAxe,SilverAxe] NoAI
+UNIT CoraliaReal MasterKnight_F EliasReal Level(5,NPC,False) [4,29] 0x0 0x0 0x1 REDA6R23 [StoneSword] NoAI
+UNIT
+
+EnemyUnitsEast1:
+UNIT Cythes DarkBishop 0x0 Level(8,Enemy,True) [29,11] 0x0 0x0 0x1 REDA28R10 [Hel, Fenrir] BossAI
+UNIT Cythes Sniper 0x0 Level(8,Enemy,True) [31,12] 0x0 0x0 0x1 REDA23R13 [SilverBow] NoAI
+UNIT Cythes Berserker 0x0 Level(8,Enemy,True) [31,13] 0x0 0x0 0x1 REDA24R9 [KillerAxe] NoAI
+UNIT Cythes GoldKnight 0x0 Level(8,Enemy,True) [31,14] 0x0 0x0 0x1 REDA25R15 [TrainedAxe,SilverLance] NoAI
+UNIT 
+
+EnemyUnitsEast2:
+UNIT Maryn DarkBishop_F 0x0 Level(9,Enemy,False) [29,19] 0x0 0x0 0x1 REDA30R20 [Jormungand, Physic] GroupThreeAI
+UNIT Viktor Sage 0x0 Level(11,Enemy,False) [29,19] 0x0 0x0 0x1 REDA28R20 [Brenthunder, Thoron, Mend] GroupThreeAI
+UNIT Cythes HighPriest 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA29R23 [Aura] GroupThreeAI
+UNIT Cythes MageKnight_F 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA24R21 [Tornado,SilverSword] GroupThreeAI
+UNIT
+
+KassandraRealGroup:
+UNIT KassandraReal Falcoknight 0x0 Level(11,Enemy,False) [3,29] 0x0 0x0 0x1 REDA7R26 [Holyspear] NeverMoveAI
+UNIT 
+
+ArtemisGroup:
+UNIT Artemis Sniper_F 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA4R25 [MasterBow, DeadeyeBow] GroupFourAI
+UNIT 
+
+EnemyUnitsSouthwest:
+UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA2R23 [SilverBow] GroupFourAI
+UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA6R22 [TrainedAxe] GroupFourAI
+UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA4R21 [LongSword] GroupFourAI
+UNIT
+
+BallistaGroup:
+UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [19,25] 0x0 0x0 0x0 0x0 [LongArch] NeverMoveAI
+UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [13,25] 0x0 0x0 0x0 0x0 [LongArch] NeverMoveAI
+UNIT 
 
 EndingScene:
 MNC2 Chapter24

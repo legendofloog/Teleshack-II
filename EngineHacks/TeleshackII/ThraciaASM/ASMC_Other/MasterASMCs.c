@@ -78,7 +78,7 @@ void CheckIfFatigued(){
 }
 
 int GetCurrentPromotedLevelBonus(){
-    return 14; //every promoted unit hits 15 unpromoted
+    return 14; //every promoted unit hits 10 unpromoted
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {

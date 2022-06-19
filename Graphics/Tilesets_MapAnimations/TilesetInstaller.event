@@ -89,6 +89,10 @@
     FF2TownMapchipConfig:
     #incbin "Config/FF2 Town 2.0 Config_comp.dmp"
 
+    ALIGN 4
+    FF2TownSnowPalette:
+    #incbin "Palette/FF2 Town 2.0 Object - Winter_pal.dmp"
+
     EventPointerTable(DesertBastionObjectID, DesertBastionObject)
     EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
     EventPointerTable(DesertBastionMapchipConfigID, DesertBastionMapchipConfig)
@@ -109,3 +113,4 @@
     EventPointerTable(FF2TownObjectID, FF2TownObject)
     EventPointerTable(FF2TownPaletteID, FF2TownPalette)
     EventPointerTable(FF2TownConfigID, FF2TownMapchipConfig)
+    EventPointerTable(FF2TownSnowPaletteID, FF2TownSnowPalette)

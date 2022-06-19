@@ -35,7 +35,7 @@ we'll be able to get[Beat][AN]
 
 [OpenFarFarLeft][MoveMidLeft]
 [OpenMidLeft]
-Loewe. Cloe. The scouts have returned. We[N]
+Loewe. Cleo. The scouts have returned. We[N]
 have located her wherabouts.[AN]
 Yet strange power- unknown even to[N]
 me, lies there also.[AN]
@@ -157,7 +157,7 @@ soldiers of Taraji?[AN]
 All this[Beat] carnage. How[Beat] what did[N]
 we do here?[AN]
 How did we slay all of[N]
-them so[Beat] quicky?[AN]
+them so[Beat] quickly?[AN]
 
 [OpenMidLeft]
 You said it yourself; we must continue[N]
@@ -230,7 +230,7 @@ hunt down Taraji at once.[AN]
 
 ## Ch20Ending2
 # do a bgm change here too when the sussy shows up
-[OpenFarFarLeft][LoadLoewe][MoveMidRight]
+[OpenFarFarLeft][LoadLoewePunished][MoveMidRight]
 [OpenMidRight]
 New champions, a seed of the world[Beat][N][CloseEyes]
 Liberators of Orodreth[Beat][AN][OpenEyes]
@@ -245,7 +245,7 @@ I unite everyone under our banner?[AN][Event]
 You there. Seed of Byelen. I admit the[N]
 Liberator's strength is[Beat] unexpected.[AN]
 
-[OpenMidRight][ClearFace][OpenMidRight][LoadLoewe]
+[OpenMidRight][ClearFace][OpenMidRight][LoadLoewePunished]
 [Beat]Show yourself.[AN]
 
 [OpenFarLeft]

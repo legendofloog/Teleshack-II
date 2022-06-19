@@ -128,7 +128,7 @@
 #define HamdiMug 0xD9
 #define ColossusMug 0xDA
 #define EleanorMug 0xDD
-#define RoxanaMug 0xFC
+#define ArtemisMug 0xFC
 #define MihailMug 0xFD
 #define SaifMug 0xFE
 
@@ -1139,3 +1139,12 @@ SaifMugData:
 #incbin "Dmp/Saif (Laurent_Lacroix)_palette.dmp"
 #incbin "Dmp/Saif (Laurent_Lacroix)_minimug.dmp"
 setMugEntry(SaifMug, SaifMugData, 3, 5, 3, 3)
+
+
+ALIGN 16
+ViktorMugData:
+#incbin "Dmp/Viktor(Loog)_mug.dmp"
+#incbin "Dmp/Viktor(Loog)_frames.dmp"
+#incbin "Dmp/Viktor(Loog)_palette.dmp"
+#incbin "Dmp/Viktor(Loog)_minimug.dmp"
+setMugEntry(ViktorMug, ViktorMugData, 3, 5, 3, 3)
