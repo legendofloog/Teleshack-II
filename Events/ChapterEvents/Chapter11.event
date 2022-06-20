@@ -131,9 +131,15 @@ BeginningScene:
 	ENUN
 	DismountAll
 	SetBackground(0x11)
-	Text(Ch11Start1)
+	Text(Ch11Start_CidorElias)
 	SetBackground(0x15)
-	Text(Ch11Start2)
+	Text(Ch11Start_News)
+	Text(Ch11Start_Radnitz)
+	Text(Ch11Start_MiloCaveChat)
+	Text(Ch11Start_IchwepCaveChat)
+	Text(Ch11Start_LordsChat)
+	Text(Ch11Start_KwameAlone)
+	Text(Ch11Start_BadGuysAreHere)
 	FADI 15
 	GotoPrepScreen
 	ENDA
