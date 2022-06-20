@@ -43,6 +43,19 @@ DeathQuote(Xlea,Chapter21,0,XleaDeathQuoteText)
 DeathQuote(Taraji,Chapter21,0x02,TarajiDeathQuoteText)
 DeathQuote(Eleanor,Chapter22,0x2,0x0)
 
+//ch23
+DeathQuote(KassandraReal,Chapter23,2,KassandraDefeatQuoteText)
+DeathQuote(Mihail,Chapter23,7,0)
+DeathQuote(Saif,Chapter23,8,0)
+DeathQuote(Artemis,Chapter23,9,0)
+DeathQuote(Maryn,Chapter23,10,0)
+DeathQuote(Viktor,Chapter23,11,0)
+DeathQuote(Conscript,Chapter23,12,0)
+DeathQuote(Saifs,Chapter23,13,0)
+DeathQuote(Mihails,Chapter23,14,0)
+DeathQuote(EliasReal,Chapter23,0x65,Chapter23EliasDeathQuoteText)
+DeathQuote(CoraliaReal,Chapter23,0x65,Chapter23CoraliaDeathQuoteText)
+
 //player units
 // ch1
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)

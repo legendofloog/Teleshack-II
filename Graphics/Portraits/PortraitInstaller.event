@@ -1142,9 +1142,25 @@ setMugEntry(SaifMug, SaifMugData, 3, 5, 3, 3)
 
 
 ALIGN 16
+MarynMugData:
+#incbin "Dmp/Maryn (Levin)_mug.dmp"
+#incbin "Dmp/Maryn (Levin)_frames.dmp"
+#incbin "Dmp/Maryn (Levin)_palette.dmp"
+#incbin "Dmp/Maryn (Levin)_minimug.dmp"
+setMugEntry(MarynMug, MarynMugData, 3, 5, 3, 3)
+
+ALIGN 16
 ViktorMugData:
 #incbin "Dmp/Viktor(Loog)_mug.dmp"
 #incbin "Dmp/Viktor(Loog)_frames.dmp"
 #incbin "Dmp/Viktor(Loog)_palette.dmp"
 #incbin "Dmp/Viktor(Loog)_minimug.dmp"
 setMugEntry(ViktorMug, ViktorMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ArtemisMugData:
+#incbin "Dmp/Artemis(Loog)_mug.dmp"
+#incbin "Dmp/Artemis(Loog)_frames.dmp"
+#incbin "Dmp/Artemis(Loog)_palette.dmp"
+#incbin "Dmp/Artemis(Loog)_minimug.dmp"
+setMugEntry(ArtemisMug, ArtemisMugData, 3, 6, 3, 4)

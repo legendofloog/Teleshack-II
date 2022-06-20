@@ -207,6 +207,8 @@
 
 [LoadYoungBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadYoungGirlVillager] = [LoadFace][0x63][0x1]
+[LoadOldWomanVillager] = [LoadFace][0x5F][0x1]
+[LoadSilverSoldier] = [LoadFace][0x71][0x1]
 
 [OneLineBox] = [0x80][0x2B][0x01]
 [TwoLineBox] = [0x80][0x2B][0x02]

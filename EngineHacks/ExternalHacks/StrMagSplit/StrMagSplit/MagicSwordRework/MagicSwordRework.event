@@ -44,7 +44,8 @@ POP
 	MagicSwordEntry(FireDrive,0x2,True,HitRes,HitRes)
 	MagicSwordEntry(WindBow,0x3,True,HitRes,HitRes)
 	MagicSwordEntry(Starcutter,0x0,True,HitRes,HitRes)
-        MagicSwordEntry(MoonlightBlade,WeaponTypeLight,False,HitDef,HitRes)
+    MagicSwordEntry(MoonlightBlade,WeaponTypeLight,False,HitDef,HitRes)
+	MagicSwordEntry(Crusher,0x2,True,HitRes,HitRes)
 	BYTE 0 0 0 //terminator
 
 

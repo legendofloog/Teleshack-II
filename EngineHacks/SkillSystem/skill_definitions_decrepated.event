@@ -173,7 +173,7 @@
 
 //Nullify: Unit is protected from all effective attacks.
 //By Tequila
-#define NullifyID 255
+//#define NullifyID 255
 
 //Slayer: Deal effective damage to monster units.
 //By Tequila

@@ -160,6 +160,7 @@
 #define Daybreak 0x94
 #define HeavySpear 0x95
 #define Holyspear 0x96
+#define Crusher 0x97
 #define ArgymosCrest 0x98
 
 #define CrownPyreItem 0x9a
@@ -172,6 +173,7 @@
 #define Maharaghi 0xa1
 #define Taodao 0xa2
 #define RuneArrow 0xa3
+#define BlackAnklet 0xa4
 
 #define Dragonstone 0xAA
 #define Unmoor 0xAB

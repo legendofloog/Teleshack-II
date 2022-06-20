@@ -12,6 +12,11 @@ POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
+/* flags used: 2 (kassandra defeat), 7 (mihail defeat), 8 (saif defeat), 9 (artemis defeat)
+               10 (maryn defeat), 11 (viktor defeat), 12 (conscript defeat),
+               13 (saif lackies defeat), 14 (mihail lackies defeat), 15, 16, 17 (villages)
+*/
+
 TurnBasedEvents:
 TurnEventPlayer(0, CoraliaEliasBlue, 1)
 END_MAIN
@@ -32,15 +37,192 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Armory(Ch23Armory,3,2)
+Vendor(Ch23Vendor,3,2)
+Village(15,LeftVillage,1,20)
+Village(16,MiddleVillage,16,15)
+Village(17,RightVillage,29,19)
 END_MAIN
 
+Ch23Armory:
+SHLI SilverSword BoldBlade SilverAxe BoldCleaver SilverBow DeadeyeBow SilverLance BoldPike
+BYTE 0x0 0x0
+ALIGN 4
+
+Ch23Vendor:
+SHLI Elfire Tornado Thoron Jormungand Hel SpellMirror Aura
+BYTE 0x0 0x0
+ALIGN 4
+
+LeftVillage:
+VillageEventItem(Ch23WindSwordHouseText,House2,WindSword)
+
+MiddleVillage: //teaches a unit "Indoor Fighter" - +1 Move indoors
+NoFade
+ENDA
+
+RightVillage:
+VillageEventItem(Ch23WarpHouseText,Temple,Warp)
+
 MiscBasedEvents:
-AFEV 0 BigBridgeTime 1
+AFEV 0 KassandraDefeat 2
+AFEV 0 MihailDefeat 7
+AFEV 0 SaifDefeat 8
+AFEV 0 ArtemisDefeat 9
+AFEV 0 MarynDefeat 10
+AFEV 0 ViktorDefeat 11
+AFEV 0 ConscriptDefeat 12
+AFEV 0 SaifGruntDefeat 13
+AFEV 0 MihailGruntDefeat 14
 CauseGameOverIfLordDies
 END_MAIN
 
-BigBridgeTime:
-ENUT 4
+KassandraDefeat:
+COUNTER_INC 0
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+MihailDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Mihail
+BEQ 2 s0 sC //if mihail does not exist (returns 0), branch to label 2
+    Text(MihailDefeatQuoteText)
+    ENUF 7 //unsets his death flag to indicate that he's alive for end event
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 2
+Text(MihailDeathQuoteText)
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+SaifDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Saif
+BEQ 3 s0 sC
+    Text(SaifDefeatQuoteText)
+    ENUF 8
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 3
+Text(SaifDeathQuoteText)
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+ArtemisDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Artemis
+BEQ 4 s0 sC
+    Text(ArtemisDefeatQuoteText)
+    ENUF 9
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 4
+Text(ArtemisDeathQuoteText)
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+MarynDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Maryn
+BEQ 5 s0 sC
+    Text(MarynDefeatQuoteText)
+    ENUF 10
+    CameraCursor(Viktor)
+    Text(ViktorFleesText)
+    CamOn
+    MOVE 15 Viktor [31,29]
+    ENUN
+    REMOVEUNIT Viktor
+    CamOff
+    ENUT 11 //sets viktor's death flag so he doesn't show up in end event
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 5
+Text(Ch23MarynDeathQuoteText)
+CameraCursor(Viktor)
+Text(ViktorFleesText)
+CamOn
+MOVE 15 Viktor [31,29]
+ENUN
+REMOVEUNIT Viktor
+CamOff
+ENUT 11
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+ViktorDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Viktor
+BEQ 6 s0 sC
+    Text(ViktorDefeatQuoteText)
+    ENUF 11
+    CameraCursor(Maryn)
+    Text(MarynFleesText)
+    CamOn
+    MOVE 15 Maryn [31,29]
+    ENUN
+    REMOVEUNIT Maryn
+    CamOff
+    ENUT 10
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 6
+Text(Ch23ViktorDeathQuoteText)
+CameraCursor(Maryn)
+Text(MarynFleesText)
+CamOn
+MOVE 15 Maryn [31,29]
+ENUN
+REMOVEUNIT Maryn
+CamOff
+ENUT 10
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+ConscriptDefeat:
+CheckIfDefeatedUnitCaptured
+BEQ 7 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
+    ENUF 12 //indicates that conscripts were not killed
+LABEL 7
+NoFade
+ENDA
+
+SaifGruntDefeat:
+CheckIfDefeatedUnitCaptured
+BEQ 8 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
+    ENUF 13 //indicates that saif's were not killed
+LABEL 8
+NoFade
+ENDA
+
+MihailGruntDefeat:
+CheckIfDefeatedUnitCaptured
+BEQ 9 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
+    ENUF 14 //indicates that mihail's were not killed
+LABEL 9
+NoFade
+ENDA
+
+AreAllBossesDefeated:
+COUNTER_CHECK 0
+SVAL s1 5 //have to defeat 5: kassandra, mihail, artemis, saif, and one of maryn/viktor, since the other retreats when one is killed
+BNE 1 s1 sC //not equal, do not end chapter
+    CameraCursor(Cleo)
+    Text(Ch23VictoryText)
+    ENUT 3
+    CALL EndingScene
+LABEL 1
 NoFade
 ENDA
 
@@ -82,6 +264,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+COUNTER_SET 0 0
 LOMA Ch5xGechrysos
 CAMERA [13,0]
 LOAD1 1 TwoSoldierGroup
@@ -141,11 +324,29 @@ FAWU 10
 FAWI 10
 SOUN 0xF0 // divine weapon sound?
 STAL 20
+SVAL s1 0x2 // set everyone to be gray
+SET_CONDITION CoraliaReal
+SET_CONDITION EliasReal
+SET_CONDITION KassandraReal
+SET_CONDITION Raschwitz_Ch1
+SET_CONDITION Tyr_Ch2
+SET_CONDITION Ch2_Selese_Guy
+SET_CONDITION Barod
+SET_CONDITION Cythes
 FAWU 5
 Text(Ch23InThePalace8)
 FAWI 10
 SOUN 0xF0
 STAL 20
+SVAL s1 0x2
+UNSET_CONDITION CoraliaReal
+UNSET_CONDITION EliasReal
+UNSET_CONDITION KassandraReal
+UNSET_CONDITION Raschwitz_Ch1
+UNSET_CONDITION Tyr_Ch2
+UNSET_CONDITION Ch2_Selese_Guy
+UNSET_CONDITION Barod
+UNSET_CONDITION Cythes
 FAWU 5
 CamOn
 MOVE 15 EliasReal [6,11]
@@ -192,8 +393,6 @@ FADI 15
 RemoveAll
 LOMA Chapter23
 CAMERA_CENTERED [1,1]
-LOAD1 1 GechrysosCityGroup
-ENUN
 FADU 15
 BROWNBOXTEXT GechrysosBrownBoxText[8,8]
 LOAD1 2 LiberatorsBeginningSceneGroup
@@ -201,51 +400,64 @@ ENUN
 FlashCursor(Loewe,30)
 FlashCursor(Cleo,30)
 MUSC SheenaID
-//text
+Text(Ch23TheLiberatorsArrive1)
 LOAD1 2 KwameGroup
 ENUN
 FlashCursor(KwameReal,30)
-//text
+Text(Ch23TheLiberatorsArrive2)
 CamOn
 MOVE 15 Loewe [15,4]
 MOVE 15 Cleo [14,3]
 MOVE 15 KwameReal [16,3]
 ENUN
-// text
-LOAD1 1 EnemyUnitsNorthWest //
+Text(Ch23TheLiberatorsArrive3)
+LOAD1 1 EnemyUnitsNorthWest 
 ENUN
 MUSC RenegadesID
-// text
-LOAD1 1 EnemyUnitsWest //
+FlashCursor(Mihail,30)
+Text(Ch23TheLiberatorsArrive4)
+LOAD1 1 EnemyUnitsWest 
 ENUN
-LOAD1 1 EnemyUnitsNorthEast //
+LOAD1 1 EnemyUnitsWest3
+ENUN 
+LOAD1 1 EnemyUnitsNorthEast 
 ENUN
-// text
+FlashCursor(Saif,30)
+Text(Ch23TheLiberatorsArrive5)
 LOAD1 1 FleeingCoraliaEliasGroup
 ENUN
-// text
-MOVE 20 EliasReal [16,18]
-MOVE 20 CoraliaReal [16,17]
+Text(Ch23TheLiberatorsArrive6)
+MOVE 20 EliasReal [16,17]
+MOVE 20 CoraliaReal [16,16]
 ENUN
 LOAD1 1 EnemyUnitsEast1 //
 ENUN
 LOAD1 1 EnemyUnitsEast2 //
 ENUN
-// text
+CAMERA Viktor
+FlashCursor(Viktor,30)
+FlashCursor(Maryn,30)
+Text(Ch23TheLiberatorsArrive7)
+CAMERA_CENTERED EliasReal
+STAL 20
+Text(Ch23TheLiberatorsArrive8)
 LOAD1 1 KassandraRealGroup
 ENUN
 LOAD1 1 ArtemisGroup
 ENUN
 LOAD1 1 EnemyUnitsSouthwest
 ENUN
-// text
+FlashCursor(Artemis,30)
+FlashCursor(KassandraReal,30)
+Text(Ch23TheLiberatorsArrive9)
 MOVE 15 KassandraReal [16,27]
 ENUN
 LOAD1 1 BallistaGroup
 ENUN
-//text
-//LOAD1 1 EnemyUnitsWest2
-//ENUN 
+Text(Ch23TheLiberatorsArrive10)
+CAMERA KwameReal
+Text(Ch23TheLiberatorsArrive11)
+FADI 15
 MountAll
 GotoPrepScreen
 NoFade
@@ -288,13 +500,9 @@ KwameGroup:
 UNIT KwameReal LanceSoldier 0x0 Level(15,Ally,True) [3,2] 0x0 0x0 0x1 REDA3R3 [IronLance] NoAI
 UNIT
 
-GechrysosCityGroup:
-//UNIT Barod Civilian 0x0 Level(15,Enemy,True) [10,9] 0x0 0x0 0 0 [0x0] NoAI
-UNIT
-
 EnemyUnitsNorthWest:
-UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [3,2] 0x0 0x0 0x1 REDA2R4 [MasterAxe, SilverLance] GroupOneAI 
-UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [0,2] 0x0 0x0 0x1 REDA1R7 [TrainedPike] GroupOneAI 
+UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [0,2] 0x0 0x0 0x1 REDA2R4 [MasterAxe, SilverLance] GroupOneAI 
+UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA1R7 [TrainedPike] GroupOneAI 
 UNIT Mihails AxeSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA3R10 [SteelAxe] GroupOneAI 
 UNIT Mihails SwordArmor 0x0 Level(20,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R8 [Longsword] GroupOneAI 
 UNIT
@@ -303,18 +511,21 @@ EnemyUnitsWest:
 UNIT Cythes HighPriestess 0x0 Level(8,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R15 [Purge, Lightning] NeverMoveAI
 UNIT Cythes ArchKnight 0x0 Level(8,Enemy,True) [2,11] 0x0 0x0 0x1 REDA4R13 [KillerBow] NoAI
 UNIT Cythes Hero 0x0 Level(8,Enemy,True) [6,7] 0x0 0x0 0x1 REDA10R9 [SilverAxe,TrainedEdge] NoAI
+UNIT
+
+EnemyUnitsWest3:
 UNIT Cythes Warrior 0x0 Level(8,Enemy,True) [13,9] 0x0 0x0 0x1 REDA11R12 [TrainedAxe,GreatBow] NoAI
-UNIT 
+UNIT
 
 EnemyUnitsNorthEast:
-UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [31,3] 0x0 0x0 0x1 REDA29R3 [MasterSword, FlameSword] GroupTwoAI 
+UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [31,3] 0x0 0x0 0x1 REDA29R3 [KillingEdge, FlameSword] GroupTwoAI 
 UNIT Saifs Myrmidon_F 0x0 Level(20,Enemy,True) [31,4] 0x0 0x0 0x1 REDA26R3 [SilverSword] GroupTwoAI 
 UNIT Saifs Corsair 0x0 Level(20,Enemy,True) [31,7] 0x0 0x0 0x1 REDA24R2 [TrainedAxe] GroupTwoAI 
 UNIT Saifs Freelancer 0x0 Level(20,Enemy,True) [31,5] 0x0 0x0 0x1 REDA25R5 [SilverLance] GroupTwoAI 
 UNIT 
 
 FleeingCoraliaEliasGroup:
-UNIT EliasReal Dracoknight 0x0  Level(10,NPC,False) [3,29] 0x0 0x0 0x1 REDA6R22 [BraveAxe,SilverAxe] NoAI
+UNIT EliasReal Dracoknight 0x0  Level(10,NPC,False) [3,29] 0x0 0x0 0x1 REDA6R22 [MasterAxe,SilverAxe] NoAI
 UNIT CoraliaReal MasterKnight_F EliasReal Level(5,NPC,False) [4,29] 0x0 0x0 0x1 REDA6R23 [StoneSword] NoAI
 UNIT
 
@@ -322,7 +533,7 @@ EnemyUnitsEast1:
 UNIT Cythes DarkBishop 0x0 Level(8,Enemy,True) [29,11] 0x0 0x0 0x1 REDA28R10 [Hel, Fenrir] BossAI
 UNIT Cythes Sniper 0x0 Level(8,Enemy,True) [31,12] 0x0 0x0 0x1 REDA23R13 [SilverBow] NoAI
 UNIT Cythes Berserker 0x0 Level(8,Enemy,True) [31,13] 0x0 0x0 0x1 REDA24R9 [KillerAxe] NoAI
-UNIT Cythes GoldKnight 0x0 Level(8,Enemy,True) [31,14] 0x0 0x0 0x1 REDA25R15 [TrainedAxe,SilverLance] NoAI
+UNIT Cythes GoldKnight 0x0 Level(8,Enemy,True) [31,14] 0x0 0x0 0x1 REDA25R15 [TrainedEdge,SilverLance] NoAI
 UNIT 
 
 EnemyUnitsEast2:
@@ -337,13 +548,13 @@ UNIT KassandraReal Falcoknight 0x0 Level(11,Enemy,False) [3,29] 0x0 0x0 0x1 REDA
 UNIT 
 
 ArtemisGroup:
-UNIT Artemis Sniper_F 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA4R25 [MasterBow, DeadeyeBow] GroupFourAI
+UNIT Artemis General 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA6R22 [MasterBow, SilverAxe] GroupFourAI
 UNIT 
 
 EnemyUnitsSouthwest:
-UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA2R23 [SilverBow] GroupFourAI
-UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA6R22 [TrainedAxe] GroupFourAI
-UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA4R21 [LongSword] GroupFourAI
+UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA4R23 [SilverBow] GroupFourAI
+UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA8R24 [TrainedAxe] GroupFourAI
+UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA2R21 [LongSword] GroupFourAI
 UNIT
 
 BallistaGroup:
@@ -351,7 +562,28 @@ UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [19,25] 0x0 0x0 0x0 0x0 [LongAr
 UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [13,25] 0x0 0x0 0x0 0x0 [LongArch] NeverMoveAI
 UNIT 
 
-EndingScene:
+EndingScene: //give: saif, king sword; mihail, crusher; artemis, high tier killer bow?
+CHECK_EVENTID 7 //mihail alive?
+BEQ 10 s0 sC
+    CHECK_EVENTID 14 //mihail's alive?
+    BEQ 10 s0 sC
+        Text(MihailGiveText)
+        GiveItem(Crusher,Cleo) //HUGE MAGIC AXE FOUND
+LABEL 10
+CHECK_EVENTID 8 //saif alive?
+BEQ 11 s0 sC
+    CHECK_EVENTID 13 //saif's alive?
+    BEQ 11 s0 sC
+        Text(SaifGiveText)
+        GiveItem(KingSword,Loewe) //brave charisma sword; the epic
+LABEL 11
+CHECK_EVENTID 9 //artemis alive?
+BEQ 12 s0 sC
+    CHECK_EVENTID 12 //conscripts alive?
+    BEQ 12 s0 sC
+        Text(ArtemisGiveText)
+        GiveItem(BlackAnklet,Elias) //increases str/mag by 5 but reduces health by 10 post combat
+LABEL 12
 MNC2 Chapter24
 NoFade
 ENDA

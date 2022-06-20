@@ -286,7 +286,7 @@ We have to find a way out, now!)[AN]
 [FarLeft][ThreeLineBox]
 (But how? They have us surrounded[N]
 on all sides. If we only had a small[N]
-opening, we could escape, but[Beat][.4])[A][X]
+opening, we could escape, but...[.4])[A][X]
 
 //suddenly, there's a flash, and a white background; Mithras speaks to Coralia and Elias
 
@@ -302,10 +302,11 @@ you intend to stop me now?![AN]
 [Left][TwoLineBox]
 You should have checked more thoroughly,[N]
 Byelen. My death won't come that easily![A]
-[FarRight]
-Looks like we're the only ones who can[N]
-move[Beat] Is this some kind of telepathy?[AN]
-[Left]
+[FarRight][ThreeLineBox]
+I'm conscious, but[Beat] I can't move,[N]
+and their voices are echoing in my head,[N]
+[Beat]Is this some kind of telepathy?[AN]
+[Left][TwoLineBox]
 Indeed. Byelen possesses that ability,[N]
 which I'm using for my own purposes.[A]
 [FarRight]
@@ -409,10 +410,332 @@ results in sacrifice, then I[Beat][.4][A][X]
 ## GechrysosBrownBoxText
 Gechrysos[X]
 
-// ## Ch23TheLiberatorsArrive1
+## Ch23TheLiberatorsArrive1
+[MidLeft][LoadCleo]
+[MidRight][LoadLoewePunished]
+[MidLeft][ThreeLineBox]
+Phew[Beat] we made it into town with[N]
+little trouble. Gechrysos's guard[N]
+seems fairly lax up in the north.[AN]
+[MidRight]
+They must be worried about Mahemen[N]
+hitting them from the other end.[N]
+Well, it's lucky for us, eh?[AN]
+[MidLeft]
+Yes, it seems our dreadful march[N]
+through Mount Sarloos paid off.[AN]
+If we make our way south, we'll be[N]
+but a leap away from the palace.[N]
+The only problem is getting in.[AN]
+[MidRight]
+Speaking of, where the hell's Kwame?[N]
+He said he'd meet us here,[N]
+but I don't see him anywhere.[A][X]
 
+## Ch23TheLiberatorsArrive2
+[MidLeft][LoadKwame]
+[Right][LoadLoewePunished]
+[FarRight][LoadCleo]
+[MidLeft][ThreeLineBox]
+You should speak softly, Loewe.[N]
+We may have infiltrated without making[N]
+a stir, but that can always change.[AN]
+[Right][TwoLineBox]
+Yeah, yeah. What's the important[N]
+info that made you call us out here?[AN]
+[FarRight]
+This is hardly the place to discuss it.[N]
+Too many[Beat] prying eyes, so to speak.[AN]
+[MidLeft]
+Mm, Commander Cleo has the right of it.[N]
+Let us find a more private location, hm?[A][X]
 
-// SCENE 2: The Liberators arrive at Gechrysos through the back entrance. Loewe complains about the march through Mount Sarloos, saying how rough it was, but Cleo chides him and tells him to focus on the task ahead. The back way into Gechrysos is lightly guarded, as the majority of their forces are concentrated towards the southwest in order to keep away the Mahemeni forces, led by the Sacred Arrow Rebels. Kwame mentions that they've served as an excellent distraction for them, and that they should help Boro and Barod arrive with relative ease. Just as they make ready to charge, Elias and Coralia run into the center of the town, closely pursued by Kassandra and other knights. When they're surrounded, Kassandra stops, wanting to relish in their panic. The Liberators, noticing this, begin their assault immediately, making ready to charge on the town. MAP START
+## Ch23TheLiberatorsArrive3
+[MidLeft][LoadKwame]
+[Right][LoadLoewePunished]
+[FarRight][LoadCleo]
+This is far enough, Kwame.[N]
+What do you wish to discuss?[AN]
+[MidLeft][ThreeLineBox]
+Right, well[Beat] I've received word from[N]
+Barod. He is en route to Gechrysos,[N]
+planning to enter via the southern port.[AN]
+He seems unconcerned about the guards,[N]
+which is[Beat] unsurprising for him.[N]
+We should make to meet up with him.[AN]
+[Right][OneLineBox]
+And? Any news of Elias and Coralia?[AN]
+[MidLeft][ThreeLineBox]
+I've heard whispers of people matching[N]
+their descriptions in this area. Today,[N]
+it seems they made for the palace.[AN]
+[FarRight]
+Doing reconnaisance, I suppose[Beat][N]
+Either way, it doesn't change what[N]
+we have to do. Are you two prepared?[AN]
+[Right]
+Never been more ready in my life.[N]
+All we have to do is make our[N]
+way to the southern pass, right?[AN]
+[MidLeft]
+Indeed. It is poorly guarded,[N]
+so a force of our size should[N]
+have no trouble breaking through.[AN]
+[FarRight]
+Agreed. With any luck, we'll meet[N]
+Elias and Coralia along the way.[N]
+If that's all, then let's-[A][X]
+
+## Ch23TheLiberatorsArrive4
+[MidLeft][LoadMihail][ThreeLineBox]
+Dame Kassandra spoke of traitors fleeing[N]
+the palace[Beat] They must be headed here.[N]
+It seems Cleo's brother is one of them[Beat][AN]
+We can't afford to let anyone who wishes[N]
+to harm Cythes escape from our grasp.[N]
+Hold strong until Dame Kassandra arrives![A][X]
+
+## Ch23TheLiberatorsArrive5
+[MidLeft][LoadSaif][ThreeLineBox]
+This is where that Mihail guy said[N]
+to go, right? Yawn[Beat] This job doesn't[N]
+seem worth the gold, but whatever.[AN]
+We've never let one go unfinished,[N]
+and being from Mahemen, I'm not sure[N]
+they'd let us just walk away anyway[Beat][AN][X]
+
+## Ch23TheLiberatorsArrive6
+[MidLeft][LoadCoralia]
+[MidRight][LoadElias]
+Looks like the west side is fully[N]
+blocked off. Coralia, follow my lead![A][X]
+
+## Ch23TheLiberatorsArrive7
+[MidLeft][LoadViktor]
+[MidRight][LoadMaryn]
+Why do we have to fight, Chancellor[N]
+Viktor? I'm an academic, not a soldier.[AN]
+[MidLeft][ThreeLineBox]
+I'm afraid Kassandra doesn't care about[N]
+the difference, and she'll run us[N]
+through if she sees any [OpenQuote]disloyalty."[AN]
+[MidRight]
+And the people we're meant to apprehend,[N]
+along with the Liberators? Will they not[N]
+do the same as soon as they can?[AN]
+[MidLeft]
+[Beat]They will, yes. If I go down,[N]
+Kassandra will be distracted[Beat][N]
+Take that chance to flee, Maryn.[A]
+[MidRight][TwoLineBox]
+I[Beat] Yes, chancellor, but you must[N]
+do the same if I die, alright?[A]
+[MidLeft][OneLineBox]
+[Beat]Hm. We'll see about that.[A][X]
+
+## Ch23TheLiberatorsArrive8
+[MidLeft][LoadCoralia]
+[MidRight][LoadElias]
+Looks like this way is no good,[N]
+either[Beat] Any ideas, Coralia?[A]
+[MidLeft][ThreeLineBox]
+We won't last long if we fight,[N]
+and fleeing seems improbable[Beat][N]
+But I see the Liberators nearby.[AN]
+We just have to survive until[N]
+they arrive and save us, right?[AN]
+[MidRight][TwoLineBox]
+I guess that's our best option,[N]
+if we can live that long[Beat][A][X]
+
+## Ch23TheLiberatorsArrive9
+[MidLeft][LoadArtemis]
+[MidRight][LoadKassandra][ThreeLineBox]
+Well, this is it. As a former knight,[N]
+I thought you'd appreciate the honor[N]
+of hunting down a traitor yourself.[A]
+[MidLeft]
+Don't make me laugh. I'm here[N]
+to protect Gechrysos from harm, not[N]
+sate your inflating ego, Kassandra.[AN]
+[MidRight]
+[Beat]Be careful what you say, unless[N]
+you'd like one of those conscripts[N]
+to die prematurely under your watch.[AN]
+[MidLeft][OneLineBox]
+[Beat] [Beat][A]
+[MidRight][ThreeLineBox]
+Ah, silence[Beat] That's better.[N]
+Well, I'll leave you to it,[N]
+so guard the pass well, Artemis.[A][X]
+
+## Ch23TheLiberatorsArrive10
+[FarRight][LoadCoralia]
+[Right][LoadElias]
+[MidLeft][LoadKassandra]
+[Right]
+Kassandra[Beat] I've been waiting for this![N]
+Prepare to meet your-[A]
+[FarRight][ThreeLineBox]
+No, Elias! Don't you see[N]
+the ballistae lying in wait?[N]
+You'll die before you reach her![A]
+[MidLeft]
+That's right, Elias. You can't touch[N]
+me, not with these ballisticians[N]
+and Lord Byelen's spear at my disposal.[AN]
+You're welcome to try, though, if[N]
+you'd like my spear to run you through![AN]
+[MidRight][TwoLineBox]
+[Beat]Gloat while you can, Kassandra.[N]
+You will pay for your actions[Beat][AN][X]
+
+## Ch23TheLiberatorsArrive11
+[MidLeft][LoadKwame]
+[Right][LoadLoewePunished]
+[FarRight][LoadCleo]
+[Right]
+Well, so much for that idea.[N]
+What are we supposed to do now?[AN]
+[FarRight][ThreeLineBox]
+The objective has changed! We must[N]
+rescue Elias and Coralia while[N]
+breaking through the enemy ranks.[AN]
+[MidLeft]
+It appears that we're surrounded[N]
+by groups with competent leaders.[N]
+Their troops will be quite motivated.[AN]
+[Right]
+Then we'll just have to knock them[N]
+down, one by one. That should give[N]
+whoever's left some trouble.[AN]
+[FarRight]
+Perhaps. Still, I'd like to try[N]
+capturing a few of them, if possible.[N]
+They may possess more information,[AN]
+which we could use. However, I doubt[N]
+they will cooperate if we kill their[N]
+subordinates, so we should spare them.[AN]
+[Right][TwoLineBox]
+Sounds like a lot of trouble[Beat][N]
+But it could be worth it in the end.[AN]
+[MidLeft][ThreeLineBox]
+[Beat]Either way, we must be cautious.[N]
+We approach the end of our journey[Beat][N]
+These foes are but one more obstacle![A][X]
+
+## KassandraDefeatQuoteText
+[MidLeft][LoadKassandra]
+I[Beat] I lost? Even with[N]
+Lord Byelen's blessing?[AN]
+Curse you[Beat] Elias[Beat][AN][X]
+
+## MihailDefeatQuoteText
+[MidLeft][LoadMihail]
+[X]
+
+## MihailDeathQuoteText
+[MidLeft][LoadMihail]
+[X]
+
+## MihailGiveText
+[MidLeft][LoadMihail]
+[X]
+
+## SaifDefeatQuoteText
+[MidLeft][LoadSaif]
+[X]
+
+## SaifDeathQuoteText
+[MidLeft][LoadSaif]
+[X]
+
+## SaifGiveText
+[MidLeft][LoadSaif]
+[X]
+
+## ArtemisDefeatQuoteText
+[MidLeft][LoadArtemis]
+[X]
+
+## ArtemisDeathQuoteText
+[MidLeft][LoadArtemis]
+[X]
+
+## ArtemisGiveText
+[MidLeft][LoadArtemis]
+[X]
+
+## MarynDefeatQuoteText
+[MidLeft][LoadMaryn]
+[X]
+
+## Ch23MarynDeathQuoteText
+[MidLeft][LoadMaryn]
+[X]
+
+## ViktorDefeatQuoteText
+[MidLeft][LoadViktor]
+[X]
+
+## Ch23ViktorDeathQuoteText
+[MidLeft][LoadViktor]
+[X]
+
+## MarynFleesText
+[MidLeft][LoadMaryn]
+[X]
+
+## ViktorFleesText
+[MidLeft][LoadViktor]
+[X]
+
+## Chapter23CoraliaDeathQuoteText
+[MidRight][LoadCoralia]
+[X]
+
+## Chapter23EliasDeathQuoteText
+[MidRight][LoadElias]
+Is this really it for me?[N]
+Cleo, I'm[Beat] sorry[Beat][CloseEyes][A][CloseSpeechSlow][ClearFace]
+[MidRight][LoadCleo]
+No, Elias! You can't[Beat][N]
+You can't die like this![AN]
+Please, don't close your eyes![A][X]
+
+## Ch23WarpHouseText
+[MidLeft][LoadOldWomanVillager]
+[MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+You must be one of those Liberators.[N]
+Don't mind me, I mean you no harm.[AN]
+As it happens, we mages are with you.[N]
+Those of us the emperor hasn't forced[N]
+to fight, anyhow... It's quite dreadful.[AN]
+We are scholars, yet he forces us to[N]
+risk our lives like Cythean warriors![N]
+I'm no patriot, so please take this.[AN]
+The Warp staff can send an ally far[N]
+away, so it's quite versatile. Use it[N]
+well, and you'll send Orfeas packing![A][X]
+
+## Ch23WindSwordHouseText
+[MidLeft][LoadOldWomanVillager]
+[MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Hm? Oh, are you a Cythean soldier?[N]
+I'm sorry, but I can't help fight[N]
+off the rebels with my... condition.[AN]
+My ailment is... er... Well, it's hard[N]
+to explain. Here, just take this sword![N]
+I'm sure it'll make up for my absence.[A][X]
+
+## Ch23VictoryText
+[MidRight][LoadCleo][ThreeLineBox]
+That's the last of their leaders...[AN]
+Good work, everyone. All that remains[N]
+are directionless foot soldiers.[N]
+Let us end this and move forward![AN][X]
 
 
 
