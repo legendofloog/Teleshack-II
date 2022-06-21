@@ -230,8 +230,9 @@ No![A] Cidor, you musn't![AN]
 The lost ritual will save Decia, Anthan.[AN]
 It will save Decia from the[N]
 rebels and Cytheans alike.[AN]
-Many[Beat] will die today,[N]
-but many more will die if I don't act.[A][X]
+Many[Beat] will die today,[AN]
+but many more will die if I don't[N]
+take decisive action.[A][X]
 
 
 //Guards and a noble rush in
@@ -498,9 +499,7 @@ me to scream and run![AN]
 Then was the ritual[N]
 real after all?[AN]
 W-were we too late?[AN]
-
-//screen flash
-
+[Event]//screen flash and sound
 [MidRight]
 Huh, Kaiserschwert is glowing?[AN]
 [MidLeft]
@@ -555,9 +554,7 @@ very begining[Beat][AN]
 a sin against Byelen[Beat][AN]
 This is o-our punishment[Beat][N]
 We n-never should've-[AN]
-
-//damage sound effect
-
+[Event]//damage sound effect
 [MidRight]
 ACK![AN]
 [ClearFace]
@@ -718,7 +715,7 @@ Why[Beat]?[AN]
 [MidLeft][OpenEyes]
 Loewe?[AN]
 [FarRight]
-Why[Beat][A][OpenEyes] did you have a spy?[AN]
+Why[Beat][A][OpenEyes][Event] did you have a spy?[AN]
 Why did you never tell us that you[N] 
 had been watching us this whole time?[AN]
 [MidLeft]
@@ -750,9 +747,7 @@ TELL ME KWAME![AN]
 Tell me before I give[N]
 you a reason to wear[N]
 a second eye patch![AN]
-
-//bow draw sound effect
-
+[Event]//bow draw sound effect
 [FarRight][LoadCleo][TwoLineBox]
 Loewe![AN]
 [MidLeft]
@@ -854,6 +849,7 @@ They've surrendered.[A] We have to[N]
 figure out what to do with them.[AN]
 [FarRight][CloseEyes]
 [Beat][AN][OpenEyes]
+[Event]//music to Oppression
 Kill them all.[AN]
 [Right]
 What?![AN]
@@ -913,6 +909,7 @@ burned down my village![AN]
 L-loewe, if she really would[N]
 be ok with this, then[Beat][AN]
 then she[Beat] I[Beat][AN]
+[Event]//silence music
 [MidLeft][LoadCleo][CloseEyes]
 Then Dragana wouldn't have[N]
 let me live.[AN]
@@ -920,6 +917,7 @@ She would've let me be put[N]
 down, like I deserved.[AN]
 [MidRight]
 What?[AN]
+[Event]//song to FF6 awakening
 [MidLeft]
 I[Beat] hurt so many people Loewe.[AN]
 I just[Beat] just followed along[N]
