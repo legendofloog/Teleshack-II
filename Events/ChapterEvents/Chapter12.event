@@ -130,7 +130,7 @@ MinkJoin:
   UNIT
 
 TiberiusJoin:
-  UNIT Tiberius Noble Cleo Level(4,Ally,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] NoAI
+  UNIT Tiberius Noble Cleo Level(4,Ally,False) [4,7] 0x0 0x0 0x0 0x1 [0x00] NoAI
   UNIT
   
 IndoorEnemy:
@@ -223,18 +223,14 @@ PrisonGreens:
 
 
 BeginningScene:
-MountAll
-LOAD 1 MinkJoin
-LOAD 1 OutdoorEnemy
-LOAD 1 IndoorEnemy
-LOAD 1 PrisonGreens
+//load the cutscene map
 SetBackground(0x0E)//fancy room
 Music(Rovers)
 Text(Ch12BeginningScene1)
-
 TEXTSTART
 TEXTSHOW Ch12BeginningScene2
 TEXTEND
+REMA
 MUSCSLOW 0x7FFF
 FAWI 1
 FAWU 1
@@ -242,22 +238,59 @@ Text(Ch12BeginningScene3)
 TEXTSTART
 TEXTSHOW Ch12BeginningScene4
 TEXTEND
+Music(PMDSteamCaveID)
+TEXTCONT
+TEXTEND
+FADI 8
+SetBackground(BlackBackground)
+FADU 15
+TEXTCONT
+TEXTEND
+SetBackground(0x0E)
+//EraseBackground
+MUSC 0x7FFF
+TEXTCONT
+TEXTEND
 Music(RiseAboveID)
+TEXTCONT
+TEXTEND
+REMA
 Text(Ch12BeginningScene5)
 Text(Ch12BeginningScene6)
 Text(Ch12BeginningScene7)
 Text(Ch12BeginningScene8)
-SetBackground(0x18)//daytime forest
+FADI 15
+SetBackground(BlackBackground)
+FADu 15
+MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12BeginningScene9
-Music(FF6AwakeningID)
 TEXTEND
+SetBackground(0x18)//daytime forest
+Music(FF6AwakeningID)
+TEXTCONT
+TEXTEND
+MUSI
+SetBackground(BlackBackground)
+TEXTCONT
+TEXTEND
+SetBackground(0x18)//daytime forest
+MUNO
+TEXTCONT
+TEXTEND
+REMA
 SetBackground(0x20)//nighttime forest different from 0x18
 Music(Nighttime)
 Text(Ch12BeginningScene10)
+MountAll
+LOAD 1 MinkJoin
+LOAD 1 OutdoorEnemy
+LOAD 1 IndoorEnemy
+LOAD 1 PrisonGreens
 GotoPrepScreen
 ENDA
-  
+
+
 TopLeftPrisonDoor:
 TILECHANGE 0
 NoFade
@@ -271,9 +304,6 @@ ENDA
 EndingScene:
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
-CUSA Tiberius
-CHECK_EXISTS Tiberius //temporary
-BNE 2 s0 sC
 LOAD 1 TiberiusJoin
 LABEL 2
 SetBackground(CastleHallway)
@@ -283,6 +313,13 @@ MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12End2
 TEXTEND
+Music(PMDSteamCaveID)//change this to kwame's theme eventually
+TEXTCONT
+TEXTEND
+//bow draw sound effect
+TEXTCONT
+TEXTEND
+REMA
 SetBackground(0x0E)
 Music(Rovers)
 Text(Ch12End3A)
@@ -293,6 +330,16 @@ SetBackground(0x20)
 TEXTSTART
 TEXTSHOW Ch12End4
 TEXTEND
+Music(oppression)
+TEXTCONT
+TEXTEND
+MUSC 0x7FFF
+TEXTCONT
+TEXTEND
+Music(FF6AwakeningID)
+TEXTCONT
+TEXTEND
+REMA
 Music(Nighttime)
 Text(Ch12End5)
 Text(Ch12End6)
@@ -387,10 +434,19 @@ TILECHANGE 8
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn1
 TEXTEND
+FAWI 4
+FAWU 4
+TEXTCONT
+TEXTEND
+REMA
 SetBackground(CastleHallway)
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn2
 TEXTEND
+//damage sounds effect
+TEXTCONT
+TEXTEND
+REMA
 Text(Ch12DeadlordSpawn3)
 Text(Ch12DeadlordSpawn4)
 REMOVEALL_GREEN
@@ -400,11 +456,12 @@ BEQ 2 s0 sC
 CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LABEL 2
 LOAD 1 EithaSpawn
-		//give eitha point blank, boon, and maybe renewal
+		//give eitha point blank, boon, and maybe renewal and/or pass
 SetFlag(0x4)
 		//reset player turn
 NoFade
 ENDA
+
 
 PegasusCharge:
 SetAI(33,23,0,0,4,0)
