@@ -194,11 +194,11 @@ also holds the key to our salvation.[AN]
 horrified to even try it.[AN]
 But now I realize all along[N]
 it was our only way out.[AN]
+[Event]//music change and future map eventing with the bow
 Behold; Daybreak, the bow of Chouwouj.[AN]
 [MidRight]
 !!! No! Why do you have that?![AN]
-[Event]
-//screen fades to a black background. The ch8 boss's portrait shows up
+[Event]//screen fades to a black background. The ch8 boss's portrait shows up
 [MidLeft][ClearFace]
 [MidRight][ClearFace]
 [MidLeft][LoadHege][DisableBlinking]
@@ -216,14 +216,14 @@ She wished to have me relay it to[N]
 general Argymos, presumably because[N]
 of his connection to the Lorekeepers.[AN]
 And that's not all she passed on to me[Beat][AN]
-[Event]
-//screen fades back to the throne room
 [MidLeft][ClearFace]
+[Event]//screen fades back to the throne room
 [MidLeft][LoadCidor]
 [MidRight][LoadKwame]
 [MidLeft][TwoLineBox]
 [Beat]she also passed on the[N]
 true might of this bow.[AN]
+[Event]
 [MidRight]
 No![A] Cidor, you musn't![AN]
 [MidLeft]
@@ -292,9 +292,7 @@ As you wish.[A][X]
 ##Ch12BeginningScene9
 [FarFarLeft]
 What? Are you serious? Mass execution?![AN]
-
-//Fade from black
-
+[Event]//Fade from black
 [MidRight][LoadMink]
 [Left][LoadLoewe]
 [FarLeft][LoadCleo]
@@ -383,8 +381,7 @@ Castle Selese is but a short[N]
 distance away at this point.[AN]
 You might as well strike[N]
 while the iron is hot.[AN]
-
-//Black background, Cleo and Mink disappear
+[Event]//Black background, Cleo and Mink disappear
 [FarLeft][ClearFace]
 [MidRight][ClearFace]
 [Left]
@@ -392,9 +389,7 @@ while the iron is hot.[AN]
 [Left][LoadLoeweAngry]
 Kwame, what else are you hiding[N]
 from us, you trecherous snake?![AN][ToggleMouthMove]
-
-//Loewe and the background switch back to normal, Cleo and Mink reappear
-
+[Event]//Loewe and the background switch back to normal, Cleo and Mink reappear
 [Left][LoadLoewe]
 [MidRight][LoadMink]
 [FarLeft][LoadCleo]
