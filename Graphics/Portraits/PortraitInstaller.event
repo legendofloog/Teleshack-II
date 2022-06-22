@@ -125,7 +125,7 @@
 #define HamdiMug 0xD9
 #define ColossusMug 0xDA
 #define CidorYoungMug 0xFA
-#defint DukeSeleseMug 0xFB
+#define DukeSeleseMug 0xFB
 
 ALIGN 16
 CleoMugData:
