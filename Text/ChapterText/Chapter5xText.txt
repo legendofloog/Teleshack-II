@@ -685,9 +685,67 @@ Very well[Beat] let's boogie[Beat][A][X]
 I see[Beat] I do not expect you to[N]
 understand the beauty of my music[Beat][A][X]
 
+## FaolanFirstTalkDialogue
+[Right][LoadCleo]
+[FarRight][LoadLoewe]
+[MidLeft][LoadFaolan]
+Name's Faolan![AN]
+
+
+
+I've been doing my part,[AN]
+but there's not a lot[N]
+one guy can do on his own.[AN]
+I figured the best way to[N]
+take the fight to them was[AN]
+I'm lookin' for a chance to[N]
+stick 'em like the pigs they are![AN]
+[Right]
+
+[FarRight]
+I can't really fault his[N]
+enthusiasm,[A]
+it's a good thing to have[N]
+for the fights to come.[AN]
+
+[Right]
+[Beat]Well, what are you good at?[AN]
+[MidLeft]
+I ain't the strongest or fastest[N]
+guy around,[A] but I'm not the[N]
+weakest or slowest either.[AN]
+I know my way around a whole[N]
+lotta weapons.[AN]
+Heck, I can take on the empire with[N]
+one arm behind my back;[A] literally![AN]
+Whether I'm giving a helping hand[N]
+to a friend in need,[AN]
+or luggin' around one of those[N]
+Cythean goons,[AN]
+I can fight just fine even[N]
+while carrying someone.[AN]
+[FarRight]
+
+[MidLeft]
+Well, what do say?[A][X]
+
 ## FaolanPickDialogue
 [MidRight][LoadCleo][ToggleMouthMove]
 (Should I pick Faolan?)[No][X]
+
+## FaolanAcceptedDialogue
+[MidLeft][LoadFaolan]
+I'll do you all proud![AN]
+One day at a time, one[N]
+step at a time,[A] we'll[N]
+take back our country,[AN]
+just you watch![A][X]
+
+##FaolanRejectedDialogue
+[MidLeft][LoadFaolan]
+I understand, I'll help[N]
+hold the fort.[AN]
+Give 'em heck for me![A][X]
 
 ## Ch5xCleoVargaTalk
 [MidLeft][LoadVarga]
