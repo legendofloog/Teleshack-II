@@ -411,3 +411,23 @@ I accept your deal. We welcome[N]
 you among the Liberators.[AN]
 [X]
 
+## JerryRecruitAnyone
+[MidLeft][LoadFace][0xFF][0xFF][OpenMidRight][LoadJerry]
+[OpenMidRight]
+Hey,[.4] you're a part of the[N]
+Decian Liberators, eh?[AN]
+How about you humble Ol' Jerry[N]
+join ya?[AN]
+[X]
+
+## LyreRecruitAnyone
+[MidLeft][LoadFace][0xFF][0xFF][OpenMidRight][LoadLyre]
+[OpenMidRight]
+Oh my gosh,[.4] can I join[N]
+you guys?[AN]
+I mean- sorry, you're part of[N]
+the Decian Liberators, right?[AN]
+I'm Lyre. Hi. Nice to[N]
+meet you.[AN]
+[X]
+
