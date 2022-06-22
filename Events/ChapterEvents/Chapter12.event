@@ -427,7 +427,7 @@ RemoveTrapAtCoords(3,20)
 RemoveTrapAtCoords(4,20)
 ENUT 13
 ENUT 14
-ENUT 15 
+ENUT 15
 ENUT 16
 CAMERA_CENTERED [3,16]
 TILECHANGE 8
@@ -456,7 +456,6 @@ BEQ 2 s0 sC
 CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LABEL 2
 LOAD 1 EithaSpawn
-		//give eitha point blank, boon, and maybe renewal and/or pass
 SetFlag(0x4)
 		//reset player turn
 NoFade
