@@ -175,6 +175,8 @@
 #define RuneArrow 0xa3
 #define BlackAnklet 0xa4
 
+#define Boltbrand 0xa8
+#define DawnPendant 0xa9
 #define Dragonstone 0xAA
 #define Unmoor 0xAB
 

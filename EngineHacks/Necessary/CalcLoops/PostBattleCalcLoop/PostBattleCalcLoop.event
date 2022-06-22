@@ -17,10 +17,12 @@ POIN SavageBlow BreathOfLife Despoil BladeDance Lifetaker Fury BemperedRing Pois
 POIN Proc_RadianceDamage RadianceHeal RadianceMarking
 POIN GroupAI
 POIN Post_Nightcaller
+POIN DawnPendantPostBattle
 POIN AftershockPostBattle
 POIN DawnEye
 POIN Canto CantoPlus TryProcMoveStar Galeforce HypeTrainPost HypeTrainRecoil Powerstaff Alacrity CulturedPostCombat Gridmaster //this order for canto and friends is the only one I tested ; Canto (put here to test mount universal canto) - loog
 POIN PostCombatIncrementFatigue PostCombatStaffIncrementFatigue
+POIN BlackAnkletPostBattle
 POIN DullahanSkl
 WORD 0 //Terminator
 

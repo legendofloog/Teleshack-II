@@ -66,8 +66,7 @@
 #define TrajanReal 0x41
 #define Locke 0x42
 #define EliasReal 0x43
-#define Maryn 0x44
-#define Viktor 0x45
+#define BoroReal 0x44
 
 
 // Chapter 1 Bosses

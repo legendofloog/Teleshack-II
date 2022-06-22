@@ -643,5 +643,17 @@ A mighty magic axe gifted by Mihail.[X]
 Black Anklet[X]
 
 ## BlackAnkletDesc
-+5 Str/Mag. Reduces HP by 10 post battle.[N]
-If it would kill, reduces unit HP to 1.[X]
++5 Str/Mag. Reduces HP by 10 after[N]
+combat. Min. HP after this effect is 1.[X]
+
+## BoltbrandName
+Boltbrand[X]
+
+## BoltbrandDesc
+[LockIcon] Tiberius. Brave. Magic sword.[X]
+
+## DawnPendantName
+Dawn Pendant[X]
+
+## DawnPendantDesc
+[LockIcon]Cromar. Banishes the darkness.[X]

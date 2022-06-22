@@ -30,7 +30,13 @@ bool CanUnitEquipItem (Unit* unit, Item item){
 			return true;
 		}
 		return false;
-	}	
+	}
+	if (item.number == 0xa9){ //cromar's dawn pendant
+		if (unit->pCharacterData->number == 0xE){ //cromar unit ID
+			return true;
+		}
+		return false;
+	}
 	if (item.number == 0xD0){ //King shield item id check; armors only
 		int i = 0;
 		int currentClass = KingShieldClassList[i];
@@ -115,5 +121,39 @@ void RuneArrowPreBattle(){
 	if(actorUnitItem.number == 0xa3){ //rune arrow id
 		BattleUnit* battleActorUnit = &gBattleActor;
 		battleActorUnit->battleCritRate += battleActorUnit->unit.mag;
+	}
+}
+
+void BlackAnkletPostBattle(){
+	if (GetUnitEquippedItem(&gBattleActor.unit).number == 0xa4){ //black anklet id
+		if ((&gBattleActor)->unit.curHP <= 0){ //don't do anything they're already dead
+			
+		}
+		else if((&gBattleActor)->unit.curHP <= 10){ //make sure they don't get 0 or less
+			(&gBattleActor)->unit.curHP = 1;
+		}
+		else{
+			(&gBattleActor)->unit.curHP -= 10; //reduce HP by 10 post battle
+		}
+	}
+	if (GetUnitEquippedItem(&gBattleTarget.unit).number == 0xa4){ //black anklet id
+		if ((&gBattleTarget)->unit.curHP <= 0){ //don't do anything they're already dead
+			
+		}
+		else if((&gBattleTarget)->unit.curHP <= 10){ //make sure they don't get 0 or less
+			(&gBattleTarget)->unit.curHP = 1;
+		}
+		else{
+			(&gBattleTarget)->unit.curHP -= 10; //reduce HP by 10 post battle
+		}
+	}
+}
+
+void DawnPendantPostBattle(){
+	if (GetUnitEquippedItem(&gBattleActor.unit).number == 0xa9){ //dawn pendant
+		gChapterData.visionRange = 0; //sets to no fog
+	}
+	if (GetUnitEquippedItem(&gBattleTarget.unit).number == 0xa9){
+		gChapterData.visionRange = 0; //sets to no fog
 	}
 }
