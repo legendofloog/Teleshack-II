@@ -20,11 +20,11 @@ TurnEventPlayer(0, VolranTaraRecruitment, 1)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
-TurnEventPlayer(0, KillLoeweIfNoKaiserschwertEvent, 18)
-TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 14)
-TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 16)
+TurnEventPlayer(0, KillLoeweIfNoKaiserschwertEvent, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 12)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 17)
 TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 18)
-TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 20)
 END_MAIN
 
 CharacterBasedEvents:

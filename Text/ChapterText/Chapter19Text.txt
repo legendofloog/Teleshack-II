@@ -29,8 +29,8 @@ Interesting[CloseEyes][Beat][N]
 My friend found a sword earlier[AN]
 Tones of red, well-worn, doesn't[N]
 cooperate with most wielders?[A]
-[MoveMidLeft]
 [MidLeft][OneLineBox]
+[MoveMidLeft]
 [ToggleMouthMove]...[ToggleMouthMove]![A] Kaiserschwert![A]
 [MidRight][ThreeLineBox]
 That sounds like a yes to me.[.][N]
@@ -141,7 +141,7 @@ Sorry.[A][X]
 ## C19_Intro_Textbox
 Tara must return Kaiserschwert to[N]
 Loewe by [ToggleRed]Talk[ToggleRed]ing with him.[AN]
-If this is not done by turn [ToggleRed]18[ToggleRed], Loewe's[N]
+If this is not done by turn [ToggleRed]10[ToggleRed], Loewe's[N]
 blessing will spell his end.[A][X]
 
 
