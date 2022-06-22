@@ -47,7 +47,9 @@ ENDA
 ALIGN 32
 CharacterBasedEvents:
 CharacterEventBothWays(0x8, Jerrecruit, Loewe, Jerry)
+CharacterEventBothWays(0x8, JerrecruitAny, 0x0, Jerry)
 CharacterEventBothWays(0x8, LyreRecruitEvent, Cleo, Lyre)
+CharacterEventBothWays(0x8, LyreRecruitEventAny, 0x0, Lyre)
 	END_MAIN
 	
 Jerrecruit:
@@ -59,9 +61,27 @@ CUSA Lyre
 NoFade
 ENDA
 
+JerrecruitAny:
+MUSS 0x8 //with us (is this the recruitment theme idk)
+Text(JerryRecruitAnyone)
+MURE 0x2
+CUSA Jerry
+CUSA Lyre
+NoFade
+ENDA
+
 LyreRecruitEvent:
 MUSS 0x8 //with us (is this the recruitment theme idk)
 Text(LyreRecruit)
+MURE 0x2
+CUSA Jerry
+CUSA Lyre
+NoFade
+ENDA
+
+LyreRecruitEventAny:
+MUSS 0x8 //with us (is this the recruitment theme idk)
+Text(LyreRecruitAnyone)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
@@ -118,8 +138,8 @@ UNIT KwameReal DarkBishop 0x0 Level(20,Ally,False) [0,16] 0 0 1 REDA5R16 [Longsw
 UNIT
 	
 Amongitis:
-UNIT Jerry Warrior Loewe Level(13,Enemy,False) [6,0] 0 0 1 REDA4R2 [SteelAxe,DevilAxe,PureWater,] [0x6,0x3,0x4,0x20]
-UNIT Lyre Dracoknight Cleo Level(12,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
+UNIT Jerry Warrior Loewe Level(3,Enemy,False) [6,0] 0 0 1 REDA4R2 [SteelAxe,DevilAxe,PureWater,] [0x6,0x3,0x4,0x20]
+UNIT Lyre Dracoknight Cleo Level(2,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
 	UNIT
 
 SussySpawns: // :zany_face:
@@ -128,12 +148,12 @@ UNIT Phantom AxeSoldier 0x0 Level(16,Enemy,True) [0,17] 0 0 1 REDA1R16 [TrainedA
 	UNIT
 
 EnemyUnits:
-UNIT C20Enemy Myrmidon 0x0 Level(5,Enemy,True) [9,11] 0x0 0x0 0x0 0x0 [TrainedEdge] RangeAI
+UNIT C20Enemy Myrmidon 0x0 Level(20,Enemy,True) [9,11] 0x0 0x0 0x0 0x0 [TrainedEdge] RangeAI
 UNIT C20Enemy Swordfighter 0x0 Level(20,Enemy,True) [3,3] 0x0 0x0 0x0 0x0 [Longsword] RangeAI
 UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [16,14] 0x0 0x0 0x0 0x0 [SteelBow] TwoActionAI
 UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [20,1] 0x0 0x0 0x0 0x0 [TrainedArc] StallOneTurnAI
 UNIT C20Enemy Sniper 0x0 Level(5,Enemy,True) [4,5] 0x0 0x0 0x0 0x0 [Longbow,KillerBow] BossAI
-UNIT C20Enemy Warrior 0x0 Level(5,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [KillerAxe,Longbow] BossAI
+UNIT C20Enemy Warrior 0x0 Level(5,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [KillerAxe,Longbow,KnightProof] BossAI
 UNIT C20Enemy General 0x0 Level(5,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [HandAxe,BraveLance,IronBlade] BossAI
 UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT C20Enemy Sage 0x0 Level(6,Enemy,True) [17,5] 0x0 0x0 0x0 0x0 [Fire,Vulnerary] RangeAI
