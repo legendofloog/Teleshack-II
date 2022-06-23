@@ -27,10 +27,7 @@ PointerList:
 // 23 - Eitha generic quote
 // 24 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
 
-// 25 - turned on by the AFEV called by tiberius's death quote
 // 22 - turned on with tiberius death quote
-// 20 - turned on if Tiberius was succesfully captured
-
 
 
 TurnBasedEvents:
@@ -72,7 +69,6 @@ AFEV 13 TopLeftPrisonOpened 19
 AFEV 14 TopMiddlePrisonDoorOpened 10
 AFEV 15 TopRightPrisonDoorOpened 11
 AFEV 16 OutsidePrisonDoorOpened 12
-AFEV 25 TiberiusCaptureCheck 22
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
@@ -127,10 +123,6 @@ Units1:
  
 MinkJoin:
   UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
-  UNIT
-
-TiberiusJoin:
-  UNIT Tiberius Noble Cleo Level(4,Ally,False) [4,7] 0x0 0x0 0x0 0x1 [0x00] NoAI
   UNIT
   
 IndoorEnemy:
@@ -287,20 +279,63 @@ GotoPrepScreen
 ENDA
 
 
-TopLeftPrisonDoor:
-TILECHANGE 0
+DeadlordSpawn:
+CHECK_EXISTS Tiberius
+BEQ 3 s0 sC
+CHECK_EVENTID 22
+BEQ 3 s0 sC
+CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
+LABEL 3
+RemoveTrapAtCoords(2,11)
+RemoveTrapAtCoords(3,11)
+RemoveTrapAtCoords(4,11)
+RemoveTrapAtCoords(6,15)
+RemoveTrapAtCoords(6,16)
+RemoveTrapAtCoords(2,20)
+RemoveTrapAtCoords(3,20)
+RemoveTrapAtCoords(4,20)
+ENUT 13
+ENUT 14
+ENUT 15
+ENUT 16
+CAMERA_CENTERED [3,16]
+TILECHANGE 8
+MUSC 0x7FFF
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn1
+TEXTEND
+FAWI 4
+FAWU 4
+TEXTCONT
+TEXTEND
+REMA
+SetBackground(CastleHallway)
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn2
+TEXTEND
+//damage sounds effect
+TEXTCONT
+TEXTEND
+REMA
+Text(Ch12DeadlordSpawn3)
+Text(Ch12DeadlordSpawn4)
+REMOVEALL_GREEN
+REMOVEALL_RED
+CHECK_EXISTS Tiberius
+BEQ 2 s0 sC
+CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
+LABEL 2
+LOAD 1 EithaSpawn
+SetFlag(0x4)
+		//reset player turn
 NoFade
 ENDA
 
-TopLeftPrisonDoor2:
-TILECHANGE 3
-NoFade
-ENDA
 
 EndingScene:
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
-LOAD 1 TiberiusJoin
+CUSA Tiberius
 LABEL 2
 SetBackground(CastleHallway)
 Music(FF5_Nostalgia)
@@ -359,6 +394,17 @@ LABEL 16
 NoFade
 ENDA
 
+
+TopLeftPrisonDoor:
+TILECHANGE 0
+NoFade
+ENDA
+
+TopLeftPrisonDoor2:
+TILECHANGE 3
+NoFade
+ENDA
+
 TopMiddlePrisonDoor:
 TILECHANGE 2
 NoFade
@@ -397,67 +443,6 @@ SVAL sB Coords(13,23)
 REMOVEUNIT(-2)
 NoFade
 ENDA
-
-TiberiusCaptureCheck:
-CHECK_EXISTS Tiberius
-BEQ 5 s0 sC
-ENUT 20
-LABEL 5 //keep flag 20 off if tiberius was not captured
-NoFade
-ENDA
-
-DeadlordSpawn:
-CHECK_EXISTS Tiberius
-BEQ 3 s0 sC
-CHECK_EVENTID 20
-BEQ 3 s0 sC
-CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
-LABEL 3
-RemoveTrapAtCoords(2,11)
-RemoveTrapAtCoords(3,11)
-RemoveTrapAtCoords(4,11)
-RemoveTrapAtCoords(6,15)
-RemoveTrapAtCoords(6,16)
-RemoveTrapAtCoords(2,20)
-RemoveTrapAtCoords(3,20)
-RemoveTrapAtCoords(4,20)
-ENUT 13
-ENUT 14
-ENUT 15
-ENUT 16
-CAMERA_CENTERED [3,16]
-TILECHANGE 8
-MUSC 0x7FFF
-TEXTSTART
-TEXTSHOW Ch12DeadlordSpawn1
-TEXTEND
-FAWI 4
-FAWU 4
-TEXTCONT
-TEXTEND
-REMA
-SetBackground(CastleHallway)
-TEXTSTART
-TEXTSHOW Ch12DeadlordSpawn2
-TEXTEND
-//damage sounds effect
-TEXTCONT
-TEXTEND
-REMA
-Text(Ch12DeadlordSpawn3)
-Text(Ch12DeadlordSpawn4)
-REMOVEALL_GREEN
-REMOVEALL_RED
-CHECK_EXISTS Tiberius
-BEQ 2 s0 sC
-CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
-LABEL 2
-LOAD 1 EithaSpawn
-SetFlag(0x4)
-		//reset player turn
-NoFade
-ENDA
-
 
 PegasusCharge:
 SetAI(33,23,0,0,4,0)
