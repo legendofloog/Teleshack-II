@@ -409,19 +409,19 @@ Severs time's threads. Eff. vs. blessed.[X]
 Crowned Pyre[X]
 
 ## CrownPyreDesc *
-Ignores 25% Res. Executes foes below 25% HP.[X]
++Atk = 25% of foe's cur. HP. Ignores 50% Res.[X]
 
 ## StormbreakerName
 [_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
 
 ## StormbreakerDesc *
-At max move, +30 Hit/Crit (+40 at max range).[X]
+At max range, +30 Hit/Crit (+40 at max move).[X]
 
 ## AbsoluteZeroName
 [_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
 
 ## AbsoluteZeroDesc *
--2 Atk/AS to foes in 2 spaces, -4 in terrain.[X]
+-2 Atk/AS to foes in 2 spaces, -6 if unit is in terrain.[X]
 
 ## DawnEyeName
 Eye of Dawn[X]
@@ -433,7 +433,7 @@ Restores HP to unit = damage dealt.[X]
 Faith's Wind[X]
 
 ## FaithWindDesc *
-Hits twice at 1 range. Cancels WTD at 2 range.[X]
+If Spd is higher, AS +3, Brave if foe can't counter.[X]
 
 ## DancingBladeName
 Dancing Bld.[X]

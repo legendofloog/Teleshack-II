@@ -5,21 +5,14 @@ push {r4-r6, lr}
 mov r4, r0 @atkr
 mov r5, r1 @dfdr
 
-@check if its the right tome? (mainhand)
-mov     r0, #0x4A      @Move to attacker's weapon (before battle)
-ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
-cmp     r0, #0x9E         @Faith's Wind ID
-beq YesThereIsSkill
-b End        @If not the right tome, end
+@Is the second inventory slot the weapon?
+mov r1, #0x20
+ldrb r0, [r4, r1] @second item in inventory
+cmp     r0, #0x9E         @Winds of Faith ID
+beq OffHandEffect
+b End
 
-YesThereIsSkill:
-
-@ check if 2 range?
-@check range
-ldr r0,=#0x203A4D4 @battle stats
-ldrb r0,[r0,#2] @range
-cmp r0,#2
-bne End
+OffHandEffect:
 
 @ Check for skill on defender
 ldr r6,SkillTester

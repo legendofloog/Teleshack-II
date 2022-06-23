@@ -23,7 +23,7 @@ beq End
 @Is the second inventory slot the weapon?
 mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
-cmp     r0, #0x9D         @Winds of Faith ID
+cmp     r0, #0x9D         @Eye of Dawn ID
 beq OffHandEffect
 b End
 
