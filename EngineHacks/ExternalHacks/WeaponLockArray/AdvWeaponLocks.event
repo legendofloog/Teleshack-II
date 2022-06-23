@@ -161,5 +161,9 @@ BYTE Ballistician
 BYTE LongBallistician
 BYTE EndLockArray
 
+ImpalerArray:
+BYTE HardCharLock
+BYTE BoroReal
+BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

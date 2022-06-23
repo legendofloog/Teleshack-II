@@ -118,7 +118,7 @@ SongTable(SheenaID, songShihna, MapMusicGroup)
 #include "MusicEvents/Golden Sun - Mars Lighthouse {A Reliable Chair}.event"
 SongTable(MarsLighthouseID, songMarsLighthouse, MapMusicGroup)
 #include "MusicEvents/Tales Of Vesperia - A Tragic Decision {A Reliable Chair}.event"
-SongTable(ToV_TragicDecisionID, songMarsLighthouse, MapMusicGroup)
+SongTable(ToV_TragicDecisionID, ToV_TragicDecision, MapMusicGroup)
 #include "MusicEvents/Golden Sun The Lost Age - Walking Forward With Determination {RandomWizard}.event"
 SongTable(GS_TLA_WalkingForwardWithDeterminationID, WalkingForwardWithDetermination, MapMusicGroup)
 #include "MusicEvents/FF5 - Battle on the Big Bridge {Pandan}.event"

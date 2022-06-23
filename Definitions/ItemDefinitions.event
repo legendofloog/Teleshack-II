@@ -179,6 +179,7 @@
 #define DawnPendant 0xa9
 #define Dragonstone 0xAA
 #define Unmoor 0xAB
+#define Impaler 0xAC
 
 #define JunaFruit 0xB7
 #define BlackGem 0xBA

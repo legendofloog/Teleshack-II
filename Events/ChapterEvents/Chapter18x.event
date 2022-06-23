@@ -306,6 +306,9 @@ Text(Ch18xBeginningScene3PortLazar1)
 SetBackground(0x7)
 MUSC Rovers
 Text(Ch18xBeginningScene3PortLazar2)
+FADI 15
+STAL 120
+FADU 5
 Text(Ch18xBeginningScene3PortLazar3)
 MUSC FirstCampaignID
 Text(Ch18xBeginningScene3PortLazar4)

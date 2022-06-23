@@ -67,8 +67,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x41 TrajanReal,-1,1
 0x42 Locke,-1,1
 0x43 Elias,0,10
-0x44 Maryn,6,30
-0x45 Viktor,11,40
+0x44 Boro,0,0
+0x45,0,0
 0x46 ,10,40
 0x47,2,5
 0x48 ,0,5
@@ -184,8 +184,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0xB6 Monster,0,0
 0xB7 Monster,0,0
 0xB8 Monster,0,0
-0xB9 Monster,0,0
-0xBA Monster (Gorgon Egg?),0,0
+0xb9 Maryn,6,30
+0xba Viktor,11,40
 0xBB Monster,0,0
 0xBC Monster,0,0
 0xBD Monster (Dracozombie?),0,0

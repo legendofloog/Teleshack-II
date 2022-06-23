@@ -11,10 +11,10 @@ beq Select_Not_Pressed
 ldr r0, Clear_Screen
 bl GOTO_R0
 ldr r2, MS_R2
-ldr r1, [r2,#0x18]
-ldr r0, [r2,#0x14]
-ldr r3, MS_Hook
-bl MS_GOTO_R3
+ldr r1, [r2,#0x18] @ cursor map position previously
+ldr r0, [r2,#0x14] @ cursor map position
+ldr r3, MS_Hook @ some hook
+bl MS_GOTO_R3 @ some bl call?
 ldr r0, Dangerzone
 bl GOTO_R0
 
@@ -27,11 +27,11 @@ bx r0
 Dangerzone:
 .long 0x080226F9
 Clear_Screen:
-.long 0x0808D151
+.long 0x0808D151 @ something else
 MS_R2:
-.long 0x0202BCB0
+.long 0x0202BCB0 @ g game state
 MS_Hook:
-.long 0x08027ACB
+.long 0x08027ACB @ some hook i guess
 
 Select_Not_Pressed:
 ldr r2, Something

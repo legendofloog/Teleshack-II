@@ -15,10 +15,14 @@ POIN BeginningScene EndingScene
 /* flags used: 2 (kassandra defeat), 7 (mihail defeat), 8 (saif defeat), 9 (artemis defeat)
                10 (maryn defeat), 11 (viktor defeat), 12 (conscript defeat),
                13 (saif lackies defeat), 14 (mihail lackies defeat), 15, 16, 17 (villages)
+               18 19 20 21 22 23
 */
 
 TurnBasedEvents:
 TurnEventPlayer(0, CoraliaEliasBlue, 1)
+TurnEventPlayer(0, Reinforcement1, 3)
+TurnEventPlayer(0, Reinforcement2, 5)
+TurnEventPlayer(0, KassandraCharges, 7)
 END_MAIN
 
 CoraliaEliasBlue:
@@ -32,13 +36,43 @@ SetFatigue(CoraliaReal, 0)
 NoFade
 ENDA
 
+Reinforcement1:
+CamOn
+LOAD1 1 PegasusWave1
+ENUN
+CamOff
+NoFade
+ENDA
+
+Reinforcement2:
+CamOn
+LOAD1 1 PegasusWave1
+ENUN
+CamOff
+NoFade
+ENDA
+
+KassandraCharges:
+CameraCursor(KassandraReal)
+Text(Ch23KassandraChargesText)
+SetAI(KassandraReal,0,0,4,0)
+NoFade
+ENDA
+
+PegasusWave1:
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [10,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [22,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [21,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT 
+
 CharacterBasedEvents:
 //CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
 END_MAIN
 
 LocationBasedEvents:
 Armory(Ch23Armory,3,2)
-Vendor(Ch23Vendor,3,2)
+Vendor(Ch23Vendor,6,7)
 Village(15,LeftVillage,1,20)
 Village(16,MiddleVillage,16,15)
 Village(17,RightVillage,29,19)
@@ -65,12 +99,12 @@ RightVillage:
 VillageEventItem(Ch23WarpHouseText,Temple,Warp)
 
 MiscBasedEvents:
-AFEV 0 KassandraDefeat 2
-AFEV 0 MihailDefeat 7
-AFEV 0 SaifDefeat 8
-AFEV 0 ArtemisDefeat 9
-AFEV 0 MarynDefeat 10
-AFEV 0 ViktorDefeat 11
+AFEV 20 KassandraDefeat 2
+AFEV 19 MihailDefeat 7
+AFEV 18 SaifDefeat 8
+AFEV 21 ArtemisDefeat 9
+AFEV 22 MarynDefeat 10
+AFEV 23 ViktorDefeat 11
 AFEV 0 ConscriptDefeat 12
 AFEV 0 SaifGruntDefeat 13
 AFEV 0 MihailGruntDefeat 14
@@ -260,7 +294,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-COUNTER_SET 0 0
 LOMA Ch5xGechrysos
 CAMERA [13,0]
 LOAD1 1 TwoSoldierGroup
@@ -454,6 +487,8 @@ Text(Ch23TheLiberatorsArrive10)
 CAMERA KwameReal
 Text(Ch23TheLiberatorsArrive11)
 FADI 15
+LOAD1 1 FinalEnemyGroup
+ENUN
 MountAll
 GotoPrepScreen
 NoFade
@@ -497,15 +532,15 @@ UNIT KwameReal LanceSoldier 0x0 Level(15,Ally,True) [3,2] 0x0 0x0 0x1 REDA3R3 [I
 UNIT
 
 EnemyUnitsNorthWest:
-UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [0,2] 0x0 0x0 0x1 REDA2R4 [MasterAxe, SilverLance] GroupOneAI 
+UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [0,2] 0x0 0x0 0x1 REDA6R3 [MasterAxe, SilverLance] GroupOneAI 
 UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA1R7 [TrainedPike] GroupOneAI 
-UNIT Mihails AxeSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA3R10 [SteelAxe] GroupOneAI 
-UNIT Mihails SwordArmor 0x0 Level(20,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R8 [Longsword] GroupOneAI 
+UNIT Mihails AxeSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA4R10 [SilverAxe] GroupOneAI 
+UNIT Mihails SwordArmor 0x0 Level(20,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R8 [TrainedEdge] GroupOneAI 
 UNIT
 
 EnemyUnitsWest:
-UNIT Cythes HighPriestess 0x0 Level(8,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R15 [Purge, Lightning] NeverMoveAI
-UNIT Cythes ArchKnight 0x0 Level(8,Enemy,True) [2,11] 0x0 0x0 0x1 REDA4R13 [TrainedArc] ChargeAI
+UNIT Cythes HighPriestess 0x0 Level(8,Enemy,True) [0,8] 0x0 0x0 0x1 REDA3R15 [Purge, Lightning] NeverMoveAI
+UNIT Cythes ArchKnight 0x0 Level(8,Enemy,True) [2,11] 0x0 0x0 0x1 REDA4R16 [TrainedArc] ChargeAI
 UNIT Cythes Hero 0x0 Level(8,Enemy,True) [6,7] 0x0 0x0 0x1 REDA10R9 [SilverAxe,TrainedEdge] ChargeAI
 UNIT
 
@@ -514,10 +549,10 @@ UNIT Cythes Warrior 0x0 Level(8,Enemy,True) [13,9] 0x0 0x0 0x1 REDA11R12 [Traine
 UNIT
 
 EnemyUnitsNorthEast:
-UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [31,3] 0x0 0x0 0x1 REDA29R3 [KillingEdge, FlameSword] GroupTwoAI 
+UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [31,5] 0x0 0x0 0x1 REDA31R3 [KillingEdge, FlameSword] GroupTwoAI 
 UNIT Saifs Myrmidon_F 0x0 Level(20,Enemy,True) [31,4] 0x0 0x0 0x1 REDA26R3 [SilverSword] GroupTwoAI 
 UNIT Saifs Corsair 0x0 Level(20,Enemy,True) [31,7] 0x0 0x0 0x1 REDA24R2 [TrainedAxe] GroupTwoAI 
-UNIT Saifs Freelancer 0x0 Level(20,Enemy,True) [31,5] 0x0 0x0 0x1 REDA25R5 [SilverLance] GroupTwoAI 
+UNIT Saifs Freelancer 0x0 Level(20,Enemy,True) [31,5] 0x0 0x0 0x1 REDA25R5 [TrainedPike] GroupTwoAI 
 UNIT 
 
 FleeingCoraliaEliasGroup:
@@ -535,8 +570,8 @@ UNIT
 EnemyUnitsEast2:
 UNIT Maryn DarkBishop_F 0x0 Level(9,Enemy,False) [29,19] 0x0 0x0 0x1 REDA30R20 [Jormungand, Physic] GroupThreeAI
 UNIT Viktor Sage 0x0 Level(11,Enemy,False) [29,19] 0x0 0x0 0x1 REDA28R20 [Brenthunder, Mend] GroupThreeAI
-UNIT Cythes HighPriest 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA29R23 [Aura] TwoActionAI
-UNIT Cythes MageKnight_F 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA26R22 [Tornado,SilverSword] AttackInRangeAI
+UNIT Cythes HighPriest 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA27R22 [Aura] TwoActionAI
+UNIT Cythes MageKnight_F 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA26R23 [Tornado,SilverSword] AttackInRangeAI
 UNIT
 
 KassandraRealGroup:
@@ -544,13 +579,13 @@ UNIT KassandraReal Falcoknight 0x0 Level(11,Enemy,False) [3,29] 0x0 0x0 0x1 REDA
 UNIT 
 
 ArtemisGroup:
-UNIT Artemis General 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA6R22 [MasterBow, SilverAxe] GroupFourAI
+UNIT Artemis General 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA6R21 [MasterBow, SilverAxe] GroupFourAI
 UNIT 
 
 EnemyUnitsSouthwest:
-UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA4R23 [SilverBow] GroupFourAI
-UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA8R24 [TrainedAxe] GroupFourAI
-UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA2R21 [LongSword] GroupFourAI
+UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA3R28 [SilverBow] GroupFourAI
+UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA5R26 [TrainedAxe] GroupFourAI
+UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA0R24 [TrainedEdge] GroupFourAI
 UNIT
 
 BallistaGroup:
@@ -562,6 +597,8 @@ FinalEnemyGroup:
 UNIT Cythes SwordFighter 0x0 Level(8,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
 UNIT Cythes PegasusRider 0x0 Level(8,Enemy,True) [15,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
 UNIT Cythes PegasusRider 0x0 Level(8,Enemy,True) [17,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [6,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [25,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
 UNIT
 
 EndingScene:
@@ -573,6 +610,7 @@ ENUN
 CAMERA_CENTERED CoraliaReal
 MountAll
 FADU 15
+MUSC ToV_TragicDecisionID
 Text(Ch23AfterTheBattle1)
 FADI 15
 STAL 120
@@ -583,21 +621,21 @@ FADI 15
 CHECK_EVENTID 7
 BEQ 13 s0 sC
     CHECK_EVENTID 14 //mihail's alive?
-    BEQ 10 s0 sC
+    BNE 13 s0 sC
         LOAD1 1 MihailCapturedGroup
         ENUN
 LABEL 13
 CHECK_EVENTID 8 //saif alive?
 BEQ 14 s0 sC
     CHECK_EVENTID 13 //saif's alive?
-    BEQ 14 s0 sC
+    BNE 14 s0 sC
         LOAD1 1 SaifCapturedGroup
         ENUN
 LABEL 14
 CHECK_EVENTID 9 //artemis alive?
 BEQ 15 s0 sC
-    CHECK_EVENTID 15 //conscripts alive?
-    BEQ 12 s0 sC
+    CHECK_EVENTID 12 //conscripts alive?
+    BNE 15 s0 sC
         LOAD1 1 ArtemisCapturedGroup
         ENUN
 LABEL 15
@@ -615,7 +653,7 @@ FADU 5
 CHECK_EVENTID 7 //mihail captured?
 BEQ 10 s0 sC
     CHECK_EVENTID 14 //mihail's alive?
-    BEQ 10 s0 sC
+    BNE 10 s0 sC
         MOVE 10 Cleo [15,17]
         ENUN
         FlashCursor(Mihail,30)
@@ -630,7 +668,7 @@ LABEL 10
 CHECK_EVENTID 8 //saif alive?
 BEQ 11 s0 sC
     CHECK_EVENTID 13 //saif's alive?
-    BEQ 11 s0 sC
+    BNE 11 s0 sC
         MOVE 10 Loewe [17,17]
         ENUN
         Text(SaifGiveText)
@@ -644,9 +682,9 @@ LABEL 11
 CHECK_EVENTID 9 //artemis alive?
 BEQ 12 s0 sC
     CHECK_EVENTID 12 //conscripts alive?
-    BEQ 12 s0 sC
+    BNE 12 s0 sC
         Text(ArtemisGiveText)
-        GiveItem(BlackAnklet,Elias)
+        GiveItem(BlackAnklet,EliasReal)
         MOVE 20 Artemis [23,9]
         MOVE 20 Conscript [24,9]
         MOVE 20 Barod [25,9]
@@ -657,12 +695,14 @@ CHECK_EVENTID 10 // maryn captured?
 BEQ 16 s0 sC
     MOVE 15 Loewe [16,20]
     ENUN
+    CameraCursor(Maryn)
     //text; Maryn gives you something
     GiveItem(Again,Loewe)
     CheckUnitDeadOrJailed(Cromar)
     BNE 20 s0 sC //if not around, skip
         LOAD1 0 CromarGroup
         ENUN
+        FlashCursor(Cromar,60)
         CHECK_EVENTID 0x80
         BEQ 21 s0 sC //branch if mccallum is dead
         //text if mccallum isn't dead; gets item
@@ -676,17 +716,16 @@ BEQ 16 s0 sC
         SVAL s1 0x1
         SET_CONDITION Cromar
     LABEL 20
-    MOVE 15 Maryn [29,19]
+    MOVE 15 Maryn [31,29]
     ENUN
-    SVAL s1 0x1
-    SET_CONDITION Maryn
+    REMOVEUNIT Maryn
 LABEL 16
 CHECK_EVENTID 11 // viktor captured?
 BEQ 17 s0 sC
     MOVE 15 Cleo [16,20]
     ENUN
-    //text; Viktor gives you the Impaler
-    GiveItem(Impaler, Cleo)
+    //text; Viktor gives you an item (TBD)
+    //GiveItem(Impaler, Cleo)
     CheckUnitDeadOrJailed(Tiberius)
     BNE 22 s0 sC
         LOAD1 0 TiberiusGroup
@@ -706,7 +745,7 @@ BEQ 17 s0 sC
         SVAL s1 0x1
         SET_CONDITION Tiberius
     LABEL 22
-    MOVE 15 Viktor [29,19]
+    MOVE 15 Viktor [31,29]
     ENUN
     REMOVEUNIT Viktor
 LABEL 17
@@ -721,11 +760,13 @@ SVAL s1 0x1
 SET_CONDITION Cleo
 SET_CONDITION EliasReal
 CamOff
+CAMERA_CENTERED Loewe
+STAL 20
 MOVE 15 Loewe [16,16]
 ENUN
-CAMERA_CENTERED Loewe
 FlashCursor(Loewe,30)
 Text(Ch23AfterTheBattle4)
+MUSC 0x7FFF
 LOAD1 2 KwamePostMapGroup
 ENUN
 CameraCursor(KwameReal)
@@ -737,6 +778,7 @@ ENUN
 CamOff
 FlashCursor(Barod2,30)
 FlashCursor(BoroReal,30)
+MUSC FirstCampaignID
 Text(Ch23AfterTheBattle5)
 FlashCursor(BoroReal,60)
 CUSA BoroReal
@@ -747,9 +789,17 @@ TEXTEND
 REMA
 Text(Ch23AfterTheBattle6)
 FADI 15
+MUSC 0x7FFF
 STAL 120
 FADU 5
-Text(Ch23AfterTheBattle7)
+//MUSC ToV_TragicDecisionID
+TEXTSTART
+TEXTSHOW Ch23AfterTheBattle7
+TEXTEND
+MUSC FightingOfTheSpirit
+TEXTCONT
+TEXTEND
+REMA 
 FADI 15
 RemoveAll
 MNC2 Chapter24
@@ -758,8 +808,8 @@ ENDA
 
 KwamePostMapGroup:
 UNIT KwameReal DarkBishop 0x0 Level(15,Ally,False) [30,29] 0x0 0x0 0 0 [IronLance] NoAI
-UNIT Barod2 Warrior 0x0 Level(15,NPC,False) [3,2] 0x0 0x0 0 0 [IronLance] NoAI
-UNIT BoroReal Champion 0x0 Level(15,NPC,False) [3,2] 0x0 0x0 0 0 [MasterLance] NoAI
+UNIT Barod2 Warrior 0x0 Level(15,NPC,False) [31,29] 0x0 0x0 0 0 [IronLance] NoAI
+UNIT BoroReal Champion 0x0 Level(10,NPC,False) [29,29] 0x0 0x0 0 0 [Impaler,MasterLance] NoAI
 UNIT
 
 

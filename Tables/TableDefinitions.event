@@ -79,6 +79,7 @@
 #define DarkbrandLock 0x18000000
 #define BallisticianLock 0x19000000
 #define LumenLock 0x1A000000
+#define ImpalerLock 0x1B000000
 
 // Weapon Effect
 #define NoEffect 0x0

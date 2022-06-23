@@ -216,6 +216,8 @@
 #define Mihails 0x61
 #define Saifs 0x62
 #define Conscript 0x63
+#define Maryn 0xb9
+#define Viktor 0xba
 
 
 #define Breguet 0x46
