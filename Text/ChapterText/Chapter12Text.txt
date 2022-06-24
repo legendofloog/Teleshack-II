@@ -622,6 +622,10 @@ or we're all doomed![AN]
 I[Beat][CloseEyes][AN]
 Dragana, I'll make you proud.[A][X]
 
+##Ch12PassWarning
+Eitha has Pass.[AN]
+Be careful.[A][X]
+
 ##Ch12EithaBossQuote
 [MidLeft][LoadDraganaDeadlord]
 [ToggleInvert]
@@ -944,7 +948,7 @@ They wanted to execute me.[AN]
 [MidRight]
 [Beat][AN]
 [MidLeft][CloseEyes]
-But[Beat] Dragana[Beat][AN]
+But[Beat] Dragana[Beat] she[Beat][AN]
 [MidLeft][LoadCleo]//use cleo crying
 She spoke up for me![AN]
 I deserved to die Loewe![N]
@@ -955,7 +959,7 @@ Leave them be.[A] Please.[AN]
 [MidRight]
 [Beat][CloseEyes][AN]
 [MidRight][LoadLoewe]//use loewe crying
-Cidor[Beat] took some much from me[Beat][AN]
+Cidor[Beat] took so much from me[Beat][AN]
 I wanted to make hurt him so badly,[AN]
 I wanted to make him pay.[AN]
 It was the only thing[N]
