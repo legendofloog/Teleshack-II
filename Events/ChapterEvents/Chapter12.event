@@ -298,8 +298,6 @@ ENUT 13
 ENUT 14
 ENUT 15
 ENUT 16
-CAMERA_CENTERED [3,16]
-TILECHANGE 8
 MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn1
@@ -309,6 +307,8 @@ FAWU 4
 TEXTCONT
 TEXTEND
 REMA
+CAMERA_CENTERED [3,16]
+TILECHANGE 8
 SetBackground(CastleHallway)
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn2
@@ -322,12 +322,15 @@ Text(Ch12DeadlordSpawn4)
 EraseBackground
 REMOVEALL_GREEN
 REMOVEALL_RED
+CAMERA_CENTERED [3,16]
+TILECHANGE 8
 CHECK_EXISTS Tiberius
 BEQ 2 s0 sC
 CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LABEL 2
 LOAD 1 EithaSpawn
 SetFlag(0x4)
+CenterTextbox(Ch12PassWarning)
 		//reset player turn
 NoFade
 ENDA
