@@ -14,7 +14,6 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
-TurnEventPlayer(0, EndingScene, 1)
 TurnEventPlayer(0, Reinforcements1, 3)
 TurnEventPlayer(0, Reinforcements2, 5)
 TurnEventPlayer(0, Reinforcements3, 6)
@@ -29,8 +28,8 @@ LocationBasedEvents:
 Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
-Chest(HeroRing,9,8)
-DurabilityChest(GrowthScroll, BeiyrScroll,11,9)
+Chest(HeroRing,9,7)
+DurabilityChest(GrowthScroll, AmserScroll,11,8)
 END_MAIN
 
 MiscBasedEvents:
@@ -60,31 +59,31 @@ ENDTRAP
 ALIGN 4
 
 Units1:
-LoadUnit(1,28)
-LoadUnit(3,28)
-LoadUnit(5,28)
-LoadUnit(0,29)
-LoadUnit(2,29)
-LoadUnit(4,29)
-LoadUnit(6,29)
-LoadUnit(10,28)
-LoadUnit(12,28)
-LoadUnit(14,28)
-LoadUnit(9,29)
-LoadUnit(11,29)
-LoadUnit(13,29)
-LoadUnit(15,29)
+LoadUnit(1,24)
+LoadUnit(3,24)
+LoadUnit(5,24)
+LoadUnit(0,25)
+LoadUnit(2,25)
+LoadUnit(4,25)
+LoadUnit(6,25)
+LoadUnit(10,24)
+LoadUnit(12,24)
+LoadUnit(14,24)
+LoadUnit(9,25)
+LoadUnit(11,25)
+LoadUnit(13,25)
+LoadUnit(15,25)
 UNIT
 
 NPCUnits:
-UNIT Nikolas Falcoknight   0x0 Level(1,NPC,False) [11,26] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,Elixir] BossAI
+UNIT Nikolas Falcoknight   0x0 Level(1,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,Elixir] BossAI
 UNIT
 
 EnemyUnits:
-UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [Claymore,BattleAxe,IceSword,KnightProof] BossHealAI
-UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [LongLance] DefaultHealAI 
-UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [3,23] 0x0 0x0 0x0 0x0 [IceSword] NMHealAI
-UNIT Cythes AxeArmor   0x0 Level(17,Enemy,True) [2,23] 0x0 0x0 0x0 0x0 [Hurlbat] NMHealAI
+UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,2] 0x0 0x0 0x0 0x0 [BattleAxe,IceSword] BossHealAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,21] 0x0 0x0 0x0 0x0 [LongLance] DefaultHealAI 
+UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [3,20] 0x0 0x0 0x0 0x0 [IceSword] NMHealAI
+UNIT Cythes AxeArmor   0x0 Level(17,Enemy,True) [2,20] 0x0 0x0 0x0 0x0 [Hurlbat] NMHealAI
 UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [4,26] 0x0 0x0 0x0 0x0 [TrainedEdge] DefaultHealAI 
 UNIT Cythes AxeKnight   0x0 Level(17,Enemy,True) [7,24] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI 
 UNIT Cythes Ballistician   0x0 Level(17,Enemy,True) [6,22] 0x0 0x0 0x0 0x0 [LongArch] NMHealAI
@@ -97,9 +96,9 @@ UNIT Cythes DragonRider   0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [Steel
 UNIT Cythes SwordKnight   0x0 Level(17,Enemy,True) [16,14] 0x0 0x0 0x0 0x0 [BraveSword] DefaultHealAI
 UNIT Cythes LanceKnight   0x0 Level(17,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [Greatlance] DefaultHealAI
 UNIT Cythes Brigand   0x0 Level(17,Enemy,True) [10,25] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI
-UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [14,23] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
-UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
-UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
+UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [3,15] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [4,15] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
 UNIT Cythes Swordfighter   0x0 Level(17,Enemy,True) [18,19] 0x0 0x0 0x0 0x0 [Armorslayer] RangeHealAI
 UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [21,5] 0x0 0x0 0x0 0x0 [KillingEdge] [0x00,0x06,0x00,0x00]
 UNIT Cythes Mage   0x0 Level(17,Enemy,True) [12,16] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
