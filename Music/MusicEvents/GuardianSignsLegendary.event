@@ -1,0 +1,2109 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	LegendTheme_grp  voicegroup000
+	#define	LegendTheme_pri  0
+	#define	LegendTheme_rev  0
+	#define	LegendTheme_mvl  90
+	#define	LegendTheme_key  0
+	#define	LegendTheme_tbs  1
+	#define	LegendTheme_exg  0
+	#define	LegendTheme_cmp  1
+
+	// .rodata
+	//	LegendTheme
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+LegendTheme_1:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   132*LegendTheme_tbs/2
+	BYTE		VOICE   48
+	BYTE		VOL     90*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v+4
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+LegendTheme_1_002:
+	BYTE		N23     Ds3   v127
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE	W24
+	BYTE		N88     Cn3 
+	BYTE	W48
+	BYTE	PEND
+// 003   ----------------------------------------
+LegendTheme_1_003:
+	BYTE	W48
+	BYTE		N07     Ds3   v127
+	BYTE	W08
+	BYTE		        Dn3 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_002
+// 005   ----------------------------------------
+LegendTheme_1_005:
+	BYTE	W48
+	BYTE		N07     Ds3   v127
+	BYTE	W08
+	BYTE		        Dn3 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE		        Fs3 
+	BYTE	W08
+	BYTE	PEND
+// 006   ----------------------------------------
+LegendTheme_1_006:
+	BYTE		N64     Fn3   v127
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Fs3 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE	PEND
+// 007   ----------------------------------------
+LegendTheme_1_007:
+	BYTE		N44     Fs3   v127
+	BYTE	W48
+	BYTE		N15     Fn3 
+	BYTE	W16
+	BYTE		        Cs3 
+	BYTE	W16
+	BYTE		        Cn3 
+	BYTE	W16
+	BYTE	PEND
+// 008   ----------------------------------------
+LegendTheme_1_008:
+	BYTE		N68     Fn2   v127
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N80   
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_008
+// 017   ----------------------------------------
+	BYTE		N56     Fn2   v127
+	BYTE	W72
+	BYTE		N07     Cn3 
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+// 018   ----------------------------------------
+LegendTheme_1_018:
+	BYTE		N07     Fn3   v127
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE		N44     Cs3 
+	BYTE	W48
+	BYTE		N07     Cn3 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE	PEND
+// 019   ----------------------------------------
+LegendTheme_1_019:
+	BYTE		N23     Ds3   v127
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE		        Gs3 
+	BYTE	W24
+	BYTE		        As3 
+	BYTE	W24
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE		N88     Cn4 
+	BYTE	W96
+// 021   ----------------------------------------
+LegendTheme_1_021:
+	BYTE		N07     Fn3   v127
+	BYTE	W08
+	BYTE		        Gs3 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE		        As3 
+	BYTE	W08
+	BYTE		        Cn4 
+	BYTE	W08
+	BYTE		        Cs4 
+	BYTE	W08
+	BYTE		        Ds4 
+	BYTE	W08
+	BYTE		        Gs3 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        As3 
+	BYTE	W08
+	BYTE	PEND
+// 022   ----------------------------------------
+LegendTheme_1_022:
+	BYTE		N64     Gs3   v127
+	BYTE	W72
+	BYTE		N07     Gn3 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Gs3 
+	BYTE	W08
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE		N44     Gn3 
+	BYTE	W48
+	BYTE		N15   
+	BYTE	W16
+	BYTE		        Ds3 
+	BYTE	W16
+	BYTE		        As2 
+	BYTE	W16
+// 024   ----------------------------------------
+	BYTE		TIE     Cn3 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W64
+	BYTE	W01
+	BYTE		EOT   
+	BYTE	W07
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_019
+// 028   ----------------------------------------
+	BYTE		N88     Cn4   v127
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_1_022
+// 031   ----------------------------------------
+	BYTE		N44     Gn3   v127
+	BYTE	W48
+	BYTE		N15   
+	BYTE	W16
+	BYTE		        Gs3 
+	BYTE	W16
+	BYTE		        As3 
+	BYTE	W16
+// 032   ----------------------------------------
+	BYTE		TIE     Cn4 
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W64
+	BYTE	W01
+	BYTE		EOT   
+	BYTE	W07
+	BYTE		N07     Cn3 
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+// 034   ----------------------------------------
+	BYTE		N44     Cs3 
+	BYTE	W48
+	BYTE		        Fn3 
+	BYTE	W48
+// 035   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W48
+	BYTE		N15     Gs3 
+	BYTE	W16
+	BYTE		        Gn3 
+	BYTE	W16
+	BYTE		        Ds3 
+	BYTE	W16
+// 036   ----------------------------------------
+	BYTE		N44     Fn3 
+	BYTE	W48
+	BYTE		        As3 
+	BYTE	W48
+// 037   ----------------------------------------
+	BYTE		N92     Cn4 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	LegendTheme_1_B1
+LegendTheme_1_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+LegendTheme_2:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     70*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+LegendTheme_2_002:
+	BYTE		N23     As2   v127
+	BYTE	W24
+	BYTE		        An2 
+	BYTE	W24
+	BYTE		N88     Gn2 
+	BYTE	W48
+	BYTE	PEND
+// 003   ----------------------------------------
+LegendTheme_2_003:
+	BYTE	W48
+	BYTE		N07     As2   v127
+	BYTE	W08
+	BYTE		        An2 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Fn2 
+	BYTE	W08
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_002
+// 005   ----------------------------------------
+LegendTheme_2_005:
+	BYTE	W48
+	BYTE		N07     As2   v127
+	BYTE	W08
+	BYTE		        An2 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE	PEND
+// 006   ----------------------------------------
+LegendTheme_2_006:
+	BYTE		N64     Cn3   v127
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE	PEND
+// 007   ----------------------------------------
+LegendTheme_2_007:
+	BYTE		N44     Cs3   v127
+	BYTE	W48
+	BYTE		N15     Cn3 
+	BYTE	W16
+	BYTE		        Gs2 
+	BYTE	W16
+	BYTE		        Gn2 
+	BYTE	W16
+	BYTE	PEND
+// 008   ----------------------------------------
+LegendTheme_2_008:
+	BYTE		N68     Cn2   v127
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N80   
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_008
+// 017   ----------------------------------------
+	BYTE		N56     Cn2   v127
+	BYTE	W72
+	BYTE		N07     Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+// 018   ----------------------------------------
+LegendTheme_2_018:
+	BYTE		N07     Cn3   v127
+	BYTE	W08
+	BYTE		        Fn2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		N44     Gs2 
+	BYTE	W48
+	BYTE		N07     Gn2 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE	PEND
+// 019   ----------------------------------------
+LegendTheme_2_019:
+	BYTE		N23     As2   v127
+	BYTE	W24
+	BYTE		N23   
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W24
+	BYTE	PEND
+// 020   ----------------------------------------
+	BYTE		N88     Gs3 
+	BYTE	W96
+// 021   ----------------------------------------
+LegendTheme_2_021:
+	BYTE		N07     Cn3   v127
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE		        Gn3 
+	BYTE	W08
+	BYTE		        Gs3 
+	BYTE	W08
+	BYTE		        As3 
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Fn3 
+	BYTE	W08
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE		N64     Cs3 
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Dn3 
+	BYTE	W08
+// 023   ----------------------------------------
+	BYTE		N44     Ds3 
+	BYTE	W48
+	BYTE		N15   
+	BYTE	W16
+	BYTE		        As2 
+	BYTE	W16
+	BYTE		        Fn2 
+	BYTE	W16
+// 024   ----------------------------------------
+	BYTE		N44     Gn2 
+	BYTE	W48
+	BYTE		        Gs2 
+	BYTE	W48
+// 025   ----------------------------------------
+	BYTE		N64     Gn2 
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_019
+// 028   ----------------------------------------
+	BYTE		N88     Gs3   v127
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_2_021
+// 030   ----------------------------------------
+	BYTE		N64     Cs3   v127
+	BYTE	W72
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+// 031   ----------------------------------------
+	BYTE		N44   
+	BYTE	W48
+	BYTE		N15   
+	BYTE	W16
+	BYTE		        Fn3 
+	BYTE	W16
+	BYTE		        Gn3 
+	BYTE	W16
+// 032   ----------------------------------------
+	BYTE		N44     Gs3 
+	BYTE	W48
+	BYTE		        Gn3 
+	BYTE	W48
+// 033   ----------------------------------------
+	BYTE		N64     Gs3 
+	BYTE	W72
+	BYTE		N07     Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+// 034   ----------------------------------------
+	BYTE		N44     Gs2 
+	BYTE	W48
+	BYTE		        Cn3 
+	BYTE	W48
+// 035   ----------------------------------------
+	BYTE		        Ds3 
+	BYTE	W48
+	BYTE		N15     Fn3 
+	BYTE	W16
+	BYTE		        Ds3 
+	BYTE	W16
+	BYTE		        As2 
+	BYTE	W16
+// 036   ----------------------------------------
+	BYTE		N44     Cn3 
+	BYTE	W48
+	BYTE		        Fn3 
+	BYTE	W48
+// 037   ----------------------------------------
+	BYTE		N92   
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	LegendTheme_2_B1
+LegendTheme_2_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+LegendTheme_3:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   47
+	BYTE		VOL     100*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v-6
+	BYTE		MOD     0
+	BYTE		N18     Cn2   v127
+	BYTE	W72
+	BYTE		N07     Cn2   v096
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+// 001   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 002   ----------------------------------------
+LegendTheme_3_002:
+	BYTE		N18     Cn2   v127
+	BYTE	W72
+	BYTE		N07     Cn2   v096
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 005   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 007   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 009   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 011   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 013   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 015   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_002
+// 017   ----------------------------------------
+	BYTE		N18     Cn2   v127
+	BYTE	W96
+// 018   ----------------------------------------
+LegendTheme_3_018:
+	BYTE		N18     Cn2   v112
+	BYTE	W24
+	BYTE		N15     Fn2   v108
+	BYTE	W24
+	BYTE		N18     Cn2   v100
+	BYTE	W24
+	BYTE		N07     Fn2   v112
+	BYTE	W08
+	BYTE		        Cn2   v096
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 021   ----------------------------------------
+	BYTE		N18     Cn2   v112
+	BYTE	W24
+	BYTE		N15     Fn2   v108
+	BYTE	W16
+	BYTE		N07     Cn2   v080
+	BYTE	W08
+	BYTE		        Cn2   v104
+	BYTE	W08
+	BYTE		        Fn2   v096
+	BYTE	W08
+	BYTE		        Fn2   v100
+	BYTE	W08
+	BYTE		        Fn2   v104
+	BYTE	W08
+	BYTE		        Fn2   v108
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 024   ----------------------------------------
+	BYTE		N18     Cn2   v112
+	BYTE	W24
+	BYTE		N15     Fn2   v108
+	BYTE	W24
+	BYTE		N18     Cn2   v100
+	BYTE	W24
+	BYTE		N07     Fn2   v112
+	BYTE	W08
+	BYTE		        Fn2   v096
+	BYTE	W08
+	BYTE		        Fn2   v100
+	BYTE	W08
+// 025   ----------------------------------------
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Fn2   v104
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Fn2   v112
+	BYTE	W08
+	BYTE		        Fn2   v108
+	BYTE	W08
+	BYTE		        Fn2   v104
+	BYTE	W08
+	BYTE		N15     Fn2   v108
+	BYTE	W16
+	BYTE		        Fn2   v112
+	BYTE	W16
+	BYTE		N03     Cn2   v084
+	BYTE	W04
+	BYTE		        Cn2   v092
+	BYTE	W04
+	BYTE		        Cn2   v096
+	BYTE	W04
+	BYTE		        Cn2   v104
+	BYTE	W04
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 029   ----------------------------------------
+	BYTE		N18     Cn2   v112
+	BYTE	W24
+	BYTE		N15     Fn2   v108
+	BYTE	W16
+	BYTE		N07     Cn2   v084
+	BYTE	W08
+	BYTE		        Cn2   v112
+	BYTE	W08
+	BYTE		        Fn2   v096
+	BYTE	W08
+	BYTE		        Fn2   v100
+	BYTE	W08
+	BYTE		        Fn2   v108
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		        Fn2   v116
+	BYTE	W08
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 035   ----------------------------------------
+	BYTE		N07     Cn2   v092
+	BYTE	W08
+	BYTE		        Cn2   v096
+	BYTE	W08
+	BYTE		N07   
+	BYTE	W08
+	BYTE		N15     Fn2   v108
+	BYTE	W16
+	BYTE		N03     Cn2   v084
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N15     Fn2   v120
+	BYTE	W24
+	BYTE		N03     Cn2   v056
+	BYTE	W04
+	BYTE		        Cn2   v064
+	BYTE	W04
+	BYTE		        Cn2   v068
+	BYTE	W04
+	BYTE		        Cn2   v076
+	BYTE	W04
+	BYTE		        Cn2   v080
+	BYTE	W04
+	BYTE		        Cn2   v088
+	BYTE	W04
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_3_018
+// 037   ----------------------------------------
+	BYTE		N07     Cn2   v096
+	BYTE	W08
+	BYTE		        Fn2   v104
+	BYTE	W08
+	BYTE		        Fn2   v108
+	BYTE	W08
+	BYTE		N15   
+	BYTE	W16
+	BYTE		N07     Cn2   v104
+	BYTE	W08
+	BYTE		        Cn2   v084
+	BYTE	W08
+	BYTE		        Fn2   v088
+	BYTE	W08
+	BYTE		        Fn2   v092
+	BYTE	W08
+	BYTE		        Fn2   v096
+	BYTE	W08
+	BYTE		        Fn2   v100
+	BYTE	W08
+	BYTE		        Fn2   v108
+	BYTE	W08
+	BYTE	GoTo
+	 POIN2	LegendTheme_3_B1
+LegendTheme_3_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+LegendTheme_4:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   20
+	BYTE		VOL     83*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v-14
+	BYTE		MOD     5
+	BYTE		N06     Fn2   v127
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Fn2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+// 001   ----------------------------------------
+LegendTheme_4_001:
+	BYTE		N06     Fn2   v127
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Fn2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        Gn2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 018   ----------------------------------------
+LegendTheme_4_018:
+	BYTE		N06     Fn3   v127
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE		N68     Gs2 
+	BYTE	W72
+	BYTE	PEND
+// 019   ----------------------------------------
+LegendTheme_4_019:
+	BYTE		N44     As2   v127
+	BYTE	W48
+	BYTE		N24     Gs2 
+	BYTE	W24
+	BYTE		        As2 
+	BYTE	W24
+	BYTE	PEND
+// 020   ----------------------------------------
+LegendTheme_4_020:
+	BYTE		N68     Cn3   v127
+	BYTE	W72
+	BYTE		N24     Ds3 
+	BYTE	W24
+	BYTE	PEND
+// 021   ----------------------------------------
+LegendTheme_4_021:
+	BYTE		N44     Fn3   v127
+	BYTE	W48
+	BYTE		N48     Gs3 
+	BYTE	W48
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE		N96     Cs3 
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		N44     Gn3 
+	BYTE	W48
+	BYTE		N12   
+	BYTE	W16
+	BYTE		N12   
+	BYTE	W16
+	BYTE		        Ds3 
+	BYTE	W16
+// 024   ----------------------------------------
+	BYTE		N44     Fn3 
+	BYTE	W48
+	BYTE		N12   
+	BYTE	W16
+	BYTE		N12   
+	BYTE	W16
+	BYTE		        Cn3 
+	BYTE	W16
+// 025   ----------------------------------------
+	BYTE		        Ds3 
+	BYTE	W16
+	BYTE		N12   
+	BYTE	W16
+	BYTE		        Cn3 
+	BYTE	W16
+	BYTE		N21   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W08
+	BYTE		        Cs3 
+	BYTE	W08
+	BYTE		        Ds3 
+	BYTE	W08
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_019
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_021
+// 030   ----------------------------------------
+	BYTE		N96     Cs3   v127
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE		N44     Gn3 
+	BYTE	W48
+	BYTE		N12   
+	BYTE	W16
+	BYTE		        Gs3 
+	BYTE	W16
+	BYTE		        As3 
+	BYTE	W16
+// 032   ----------------------------------------
+	BYTE		N44     Gs3 
+	BYTE	W48
+	BYTE		N12     Cn4 
+	BYTE	W16
+	BYTE		        Cs4 
+	BYTE	W16
+	BYTE		        Ds4 
+	BYTE	W16
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_021
+// 034   ----------------------------------------
+	BYTE		N96     Cs3   v127
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE		N44     Ds3 
+	BYTE	W48
+	BYTE		N06   
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Cn3 
+	BYTE	W08
+	BYTE		        As2 
+	BYTE	W08
+	BYTE		        Gs2 
+	BYTE	W08
+	BYTE		        Ds2 
+	BYTE	W08
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_4_001
+	BYTE	GoTo
+	 POIN2	LegendTheme_4_B1
+LegendTheme_4_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.6) ****************//
+
+LegendTheme_5:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   14
+	BYTE		VOL     75*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v+4
+	BYTE		MOD     3
+	BYTE		N24     Cn4   v100
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE		        Cn4   v100
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE		        Cn4   v108
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	LegendTheme_5_B1
+LegendTheme_5_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.7) ****************//
+
+LegendTheme_6:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   14
+	BYTE		VOL     61*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v-4
+	BYTE		MOD     3
+	BYTE	W18
+	BYTE		BEND    c_v-2
+	BYTE		N12     Cn4   v100
+	BYTE	W78
+// 001   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 002   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 003   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 004   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 005   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 006   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 007   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 008   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 009   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 010   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 011   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 012   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 013   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 014   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 015   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 016   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 017   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 018   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 019   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 020   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 021   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 022   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 023   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 024   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 025   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 026   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 027   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 028   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 029   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 030   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 031   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 032   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 033   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 034   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 035   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+// 036   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v100
+	BYTE	W78
+// 037   ----------------------------------------
+	BYTE	W18
+	BYTE		        Cn4   v108
+	BYTE	W78
+	BYTE	GoTo
+	 POIN2	LegendTheme_6_B1
+LegendTheme_6_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.8) ****************//
+
+LegendTheme_7:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   46
+	BYTE		VOL     100*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v-10
+	BYTE		MOD     0
+	BYTE	W96
+// 001   ----------------------------------------
+LegendTheme_7_001:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N04     Fn2   v064
+	BYTE	W04
+	BYTE		        Gn2   v068
+	BYTE	W04
+	BYTE		        An2   v072
+	BYTE	W04
+	BYTE		        As2 
+	BYTE	W04
+	BYTE		        Cn3   v076
+	BYTE	W04
+	BYTE		        Cs3   v080
+	BYTE	W04
+	BYTE		        Gn2   v084
+	BYTE	W04
+	BYTE		        An2 
+	BYTE	W04
+	BYTE		        As2   v088
+	BYTE	W04
+	BYTE		        Cn3   v092
+	BYTE	W04
+	BYTE		        Cs3   v096
+	BYTE	W04
+	BYTE		        Ds3 
+	BYTE	W04
+	BYTE		N24     Fn3   v104
+	BYTE	W01
+	BYTE	PEND
+// 002   ----------------------------------------
+LegendTheme_7_002:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     As3   v100
+	BYTE	W48
+	BYTE		N36     Ds3   v092
+	BYTE	W01
+	BYTE	PEND
+// 003   ----------------------------------------
+LegendTheme_7_003:
+	BYTE	W92
+	BYTE	W03
+	BYTE		N24     Fn3   v104
+	BYTE	W01
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_003
+// 006   ----------------------------------------
+LegendTheme_7_006:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     As3   v100
+	BYTE	W48
+	BYTE		        Cn4   v092
+	BYTE	W01
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_003
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_003
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_002
+// 017   ----------------------------------------
+	BYTE	W44
+	BYTE	W03
+	BYTE		N04     Fn2   v064
+	BYTE	W04
+	BYTE		        Gn2   v068
+	BYTE	W04
+	BYTE		        An2   v072
+	BYTE	W04
+	BYTE		        As2 
+	BYTE	W04
+	BYTE		        Cn3   v076
+	BYTE	W04
+	BYTE		        Cs3   v080
+	BYTE	W04
+	BYTE		        Gn2   v084
+	BYTE	W04
+	BYTE		        An2 
+	BYTE	W04
+	BYTE		        As2   v088
+	BYTE	W04
+	BYTE		        Cn3   v092
+	BYTE	W04
+	BYTE		        Cs3   v096
+	BYTE	W04
+	BYTE		        Ds3 
+	BYTE	W04
+	BYTE		N24     Fn3   v108
+	BYTE	W01
+// 018   ----------------------------------------
+LegendTheme_7_018:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     Gs3   v100
+	BYTE	W48
+	BYTE		        Ds3   v096
+	BYTE	W01
+	BYTE	PEND
+// 019   ----------------------------------------
+LegendTheme_7_019:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     As3   v100
+	BYTE	W48
+	BYTE		        Gs3   v096
+	BYTE	W01
+	BYTE	PEND
+// 020   ----------------------------------------
+LegendTheme_7_020:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     Gn3   v092
+	BYTE	W48
+	BYTE		        Ds3 
+	BYTE	W01
+	BYTE	PEND
+// 021   ----------------------------------------
+LegendTheme_7_021:
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     Cn3   v096
+	BYTE	W48
+	BYTE		        Fn3   v108
+	BYTE	W01
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_018
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_019
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_020
+// 025   ----------------------------------------
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     Cn3   v096
+	BYTE	W40
+	BYTE		N04     Cn3   v084
+	BYTE	W04
+	BYTE		        Ds3   v088
+	BYTE	W04
+	BYTE		N24     Fn3   v108
+	BYTE	W01
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_019
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_018
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_019
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_7_020
+// 033   ----------------------------------------
+	BYTE	W44
+	BYTE	W03
+	BYTE		N24     Cn3   v096
+	BYTE	W48
+	BYTE		        Cs3   v100
+	BYTE	W01
+// 034   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE		        Ds3   v096
+	BYTE	W01
+// 035   ----------------------------------------
+	BYTE	W84
+	BYTE	W03
+	BYTE		N04     Cn3   v080
+	BYTE	W04
+	BYTE		        Ds3 
+	BYTE	W04
+	BYTE		N24     Fn3   v096
+	BYTE	W01
+// 036   ----------------------------------------
+	BYTE	W44
+	BYTE	W03
+	BYTE		        As3   v104
+	BYTE	W40
+	BYTE		N04     Fn3   v072
+	BYTE	W04
+	BYTE		        As3   v080
+	BYTE	W04
+	BYTE		N24     Cn4   v096
+	BYTE	W01
+// 037   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	LegendTheme_7_B1
+LegendTheme_7_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.9) ****************//
+
+LegendTheme_8:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_8_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   49
+	BYTE		VOL     80*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v+20
+	BYTE		MOD     0
+	BYTE	W08
+	BYTE		N06     Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W08
+// 001   ----------------------------------------
+LegendTheme_8_001:
+	BYTE	W08
+	BYTE		N06     Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Fn2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W08
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 004   ----------------------------------------
+LegendTheme_8_004:
+	BYTE	W08
+	BYTE		N06     Ds2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W16
+	BYTE		        Ds2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W16
+	BYTE		        Ds2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W16
+	BYTE		        Ds2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W08
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 006   ----------------------------------------
+LegendTheme_8_006:
+	BYTE	W08
+	BYTE		N06     Dn2   v080
+	BYTE	W08
+	BYTE		        Dn2   v064
+	BYTE	W16
+	BYTE		        Dn2   v080
+	BYTE	W08
+	BYTE		        Dn2   v064
+	BYTE	W16
+	BYTE		        Dn2   v080
+	BYTE	W08
+	BYTE		        Dn2   v064
+	BYTE	W16
+	BYTE		        Dn2   v080
+	BYTE	W08
+	BYTE		        Dn2   v064
+	BYTE	W08
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 018   ----------------------------------------
+LegendTheme_8_018:
+	BYTE	W08
+	BYTE		N06     Cs2   v080
+	BYTE	W08
+	BYTE		        Cs2   v064
+	BYTE	W16
+	BYTE		        Cs2   v080
+	BYTE	W08
+	BYTE		        Cs2   v064
+	BYTE	W16
+	BYTE		        Cs2   v080
+	BYTE	W08
+	BYTE		        Cs2   v064
+	BYTE	W16
+	BYTE		        Cs2   v080
+	BYTE	W08
+	BYTE		        Cs2   v064
+	BYTE	W08
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 020   ----------------------------------------
+LegendTheme_8_020:
+	BYTE	W08
+	BYTE		N06     Ds2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        As2   v080
+	BYTE	W08
+	BYTE		        Cn3   v064
+	BYTE	W16
+	BYTE		        Ds2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        As2   v080
+	BYTE	W08
+	BYTE		        Cn3   v064
+	BYTE	W08
+	BYTE	PEND
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_020
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_018
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 024   ----------------------------------------
+LegendTheme_8_024:
+	BYTE	W08
+	BYTE		N06     Ds2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Gs2   v080
+	BYTE	W08
+	BYTE		        As2   v064
+	BYTE	W16
+	BYTE		        Ds2   v080
+	BYTE	W08
+	BYTE		        Fn2   v064
+	BYTE	W16
+	BYTE		        Gs2   v080
+	BYTE	W08
+	BYTE		        As2   v064
+	BYTE	W08
+	BYTE	PEND
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_024
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_020
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_018
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_004
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_020
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_020
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_018
+// 035   ----------------------------------------
+	BYTE	W08
+	BYTE		N06     Ds2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W16
+	BYTE		        Ds2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W16
+	BYTE		        As2   v080
+	BYTE	W08
+	BYTE		        Cn3   v064
+	BYTE	W16
+	BYTE		        Gs2   v080
+	BYTE	W08
+	BYTE		        Ds2   v064
+	BYTE	W08
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_8_001
+	BYTE	GoTo
+	 POIN2	LegendTheme_8_B1
+LegendTheme_8_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.11) ****************//
+
+LegendTheme_9:
+	BYTE	KEYSH   LegendTheme_key+0
+LegendTheme_9_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   49
+	BYTE		VOL     80*LegendTheme_mvl/mxv
+	BYTE		PAN     c_v+20
+	BYTE		MOD     0
+	BYTE		N06     Fn2   v112
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+// 001   ----------------------------------------
+LegendTheme_9_001:
+	BYTE		N06     Fn2   v112
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 004   ----------------------------------------
+LegendTheme_9_004:
+	BYTE		N06     Ds2   v112
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 006   ----------------------------------------
+LegendTheme_9_006:
+	BYTE		N06     Dn2   v112
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 018   ----------------------------------------
+LegendTheme_9_018:
+	BYTE		N06     Cs2   v112
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 020   ----------------------------------------
+LegendTheme_9_020:
+	BYTE		N06     Fn2   v112
+	BYTE	W24
+	BYTE		        Gs2 
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		        Gs2 
+	BYTE	W24
+	BYTE	PEND
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_020
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_018
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 024   ----------------------------------------
+LegendTheme_9_024:
+	BYTE		N06     Fn2   v112
+	BYTE	W24
+	BYTE		        Gn2 
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		        Gn2 
+	BYTE	W24
+	BYTE	PEND
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_024
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_018
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_020
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_018
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_004
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_020
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_020
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_018
+// 035   ----------------------------------------
+	BYTE		N06     Ds2   v112
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		        As2 
+	BYTE	W24
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	LegendTheme_9_001
+	BYTE	GoTo
+	 POIN2	LegendTheme_9_B1
+LegendTheme_9_B2:
+// 038   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+LegendTheme:
+	BYTE	9	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	LegendTheme_pri	// Priority
+	BYTE	LegendTheme_rev	// Reverb.
+
+	POIN2	LegendTheme_grp
+
+	POIN2	LegendTheme_1
+	POIN2	LegendTheme_2
+	POIN2	LegendTheme_3
+	POIN2	LegendTheme_4
+	POIN2	LegendTheme_5
+	POIN2	LegendTheme_6
+	POIN2	LegendTheme_7
+	POIN2	LegendTheme_8
+	POIN2	LegendTheme_9
+
+	

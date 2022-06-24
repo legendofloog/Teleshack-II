@@ -1,0 +1,47 @@
+## Chapter12Title
+Ch12: All in Vain[X]
+
+##Ch12PlaceholderText
+[MidLeft][LoadHelman]
+Stay safe.
+[A][X]
+
+## Ch12Objective
+Free Prisoners[X]
+
+##Ch12MapObj1
+Seize[X]
+
+##Ch12ObjDesc1
+Seize the altar.[X]
+
+##Ch12MapObj2
+Defeat Eitha[X]
+
+##Ch12ObjDesc2
+   Defeat Eitha,   [N]
+the legendary hero.[X]
+
+##Ch12EithaBossQuote
+[MidLeft][LoadDraganaDeadlord]
+[ToggleInvert]
+[Beat]where are you[Beat]my beloved[Beat][A][X]
+
+##Ch12EithaLeinaBossQuote
+[MidRight][LoadLeina]
+*gasp*[AN]
+T-that bow[Beat][AN]
+[ClearFace]
+[MidLeft][LoadDraganaDeadlord]
+[ToggleInvert]
+[Beat]come back to me[Beat][N]
+[Beat]my beloved[Beat][AN]
+[Beat][Beat]we can be[Beat][N]
+[Beat]together[Beat]forever[Beat][AN]
+[ClearFace]
+[MidRight][LoadLeina]
+This is all my fault.[CloseEyes][N]
+Why wasn't I more careful[Beat]?[CloseEyes][AN]
+[Beat]I have to do my part.[N]
+I have to take responsibility[N]
+for my mistake.[A][X]

@@ -19,7 +19,7 @@ POP
 
 ALIGN 4
 Load2AlwaysTable:
-BYTE 00 //Add units here
+BYTE KwameReal //Add units here
 BYTE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 // separator
 
 
@@ -42,4 +42,20 @@ GameOverStart:
 ASMC 0x800D391
 NoFade
 ENDB
+
+ALIGN 4
+PrepShop1:
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch
+BYTE 0x0 0x0
+
+ALIGN 4
+PrepShop2:
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch SlimArch 
+BYTE 0x0 0x0
+ALIGN 4
+
+ALIGN 4
+PrepShop3:
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch SlimArch KnightProof
+BYTE 0x0 0x0
 ALIGN 4

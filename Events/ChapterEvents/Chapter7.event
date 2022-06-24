@@ -193,9 +193,9 @@ REMOVE_CURSORS
 Text(LoeweCleoIberisText)
 CHECK_ALIVE Axel
 BEQ 1 s0 sC
-CHECK_ALIVE Alex
-BEQ 1 s0 sC
-Text(AxelAlexIfAliveText)
+	CHECK_ALIVE Alex
+	BEQ 1 s0 sC
+		Text(AxelAlexIfAliveText)
 LABEL 1
 CenterTextbox(InfoText)
 SVAL s1 23
@@ -296,6 +296,8 @@ GameOver
 
 ALIGN 4
 EndingScene:
+CAMERA Radnitz
+FlashCursor(Radnitz,60)
 COUNTER_CHECK 0
 BNE 0 s0 sC
 Text(Rice0Ch7Text)

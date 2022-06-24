@@ -1,0 +1,858 @@
+EventPointerTable(Chapter23Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+/* flags used: 2 (kassandra defeat), 7 (mihail defeat), 8 (saif defeat), 9 (artemis defeat)
+               10 (maryn defeat), 11 (viktor defeat), 12 (conscript defeat),
+               13 (saif lackies defeat), 14 (mihail lackies defeat), 15, 16, 17 (villages)
+               18 19 20 21 22 23
+*/
+
+TurnBasedEvents:
+TurnEventPlayer(0, CoraliaEliasBlue, 1)
+TurnEventPlayer(0, Reinforcement1, 3)
+TurnEventPlayer(0, Reinforcement2, 5)
+TurnEventPlayer(0, KassandraCharges, 7)
+END_MAIN
+
+CoraliaEliasBlue:
+CAMERA EliasReal
+FlashCursor(EliasReal,30)
+CUSA EliasReal
+SetFatigue(EliasReal, 0)
+FlashCursor(CoraliaReal,30)
+CUSA CoraliaReal
+SetFatigue(CoraliaReal, 0)
+NoFade
+ENDA
+
+Reinforcement1:
+CamOn
+LOAD1 1 PegasusWave1
+ENUN
+CamOff
+NoFade
+ENDA
+
+Reinforcement2:
+CamOn
+LOAD1 1 PegasusWave1
+ENUN
+CamOff
+NoFade
+ENDA
+
+KassandraCharges:
+CameraCursor(KassandraReal)
+Text(Ch23KassandraChargesText)
+SetAI(KassandraReal,0,0,4,0)
+NoFade
+ENDA
+
+PegasusWave1:
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [10,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [22,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [21,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT 
+
+CharacterBasedEvents:
+//CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
+END_MAIN
+
+LocationBasedEvents:
+Armory(Ch23Armory,3,2)
+Vendor(Ch23Vendor,6,7)
+Village(15,LeftVillage,1,20)
+Village(16,MiddleVillage,16,15)
+Village(17,RightVillage,29,19)
+END_MAIN
+
+Ch23Armory:
+SHLI SilverSword BoldBlade SilverAxe BoldCleaver SilverBow DeadeyeBow SilverLance BoldPike
+BYTE 0x0 0x0
+ALIGN 4
+
+Ch23Vendor:
+SHLI Elfire Tornado Thoron Jormungand Hel SpellMirror Aura
+BYTE 0x0 0x0
+ALIGN 4
+
+LeftVillage:
+VillageEventItem(Ch23WindSwordHouseText,House2,WindSword)
+
+MiddleVillage: //teaches a unit "Indoor Fighter" - +1 Move indoors
+NoFade
+ENDA
+
+RightVillage:
+VillageEventItem(Ch23WarpHouseText,Temple,Warp)
+
+MiscBasedEvents:
+AFEV 20 KassandraDefeat 2
+AFEV 19 MihailDefeat 7
+AFEV 18 SaifDefeat 8
+AFEV 21 ArtemisDefeat 9
+AFEV 22 MarynDefeat 10
+AFEV 23 ViktorDefeat 11
+AFEV 0 ConscriptDefeat 12
+AFEV 0 SaifGruntDefeat 13
+AFEV 0 MihailGruntDefeat 14
+CauseGameOverIfLordDies
+END_MAIN
+
+KassandraDefeat:
+COUNTER_INC 0
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+MihailDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Mihail
+BEQ 2 s0 sC //if mihail does not exist (returns 0), branch to label 2
+    Text(MihailDefeatQuoteText)
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 2
+Text(MihailDeathQuoteText)
+ENUF 7 //unsets this flag which is used to check whether he is captured
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+SaifDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Saif
+BEQ 3 s0 sC
+    Text(SaifDefeatQuoteText)
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 3
+Text(SaifDeathQuoteText)
+ENUF 8
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+ArtemisDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Artemis
+BEQ 4 s0 sC
+    Text(ArtemisDefeatQuoteText)
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 4
+Text(ArtemisDeathQuoteText)
+ENUF 9
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+MarynDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Maryn
+BEQ 5 s0 sC
+    Text(MarynDefeatQuoteText)
+    CameraCursor(Viktor)
+    Text(ViktorFleesText)
+    CamOn
+    MOVE 15 Viktor [31,29]
+    ENUN
+    REMOVEUNIT Viktor
+    CamOff
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 5
+Text(Ch23MarynDeathQuoteText)
+CameraCursor(Viktor)
+Text(ViktorFleesText)
+CamOn
+MOVE 15 Viktor [31,29]
+ENUN
+REMOVEUNIT Viktor
+CamOff
+ENUF 10
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+ViktorDefeat:
+COUNTER_INC 0
+CHECK_EXISTS Viktor
+BEQ 6 s0 sC
+    Text(ViktorDefeatQuoteText)
+    CameraCursor(Maryn)
+    Text(MarynFleesText)
+    CamOn
+    MOVE 15 Maryn [31,29]
+    ENUN
+    REMOVEUNIT Maryn
+    CamOff
+    CALL AreAllBossesDefeated
+    NoFade
+    ENDB
+LABEL 6
+Text(Ch23ViktorDeathQuoteText)
+CameraCursor(Maryn)
+Text(MarynFleesText)
+CamOn
+MOVE 15 Maryn [31,29]
+ENUN
+REMOVEUNIT Maryn
+CamOff
+ENUF 11
+CALL AreAllBossesDefeated
+NoFade
+ENDA
+
+ConscriptDefeat:
+CheckIfDefeatedUnitCaptured
+BEQ 7 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
+    ENUF 12 //indicates that conscripts were not killed
+LABEL 7
+NoFade
+ENDA
+
+SaifGruntDefeat:
+CheckIfDefeatedUnitCaptured
+BEQ 8 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
+    ENUF 13 //indicates that saif's were not killed
+LABEL 8
+NoFade
+ENDA
+
+MihailGruntDefeat:
+CheckIfDefeatedUnitCaptured
+BEQ 9 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
+    ENUF 14 //indicates that mihail's were not killed
+LABEL 9
+NoFade
+ENDA
+
+AreAllBossesDefeated:
+COUNTER_CHECK 0
+SVAL s1 5 //have to defeat 5: kassandra, mihail, artemis, saif, and one of maryn/viktor, since the other retreats when one is killed
+BNE 1 s1 sC //not equal, do not end chapter
+    CameraCursor(Cleo)
+    Text(Ch23VictoryText)
+    ENUT 3
+    CALL EndingScene
+LABEL 1
+NoFade
+ENDA
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+LoadUnit(13,6)
+LoadUnit(15,6)
+LoadUnit(17,6)
+LoadUnit(12,3)
+LoadUnit(14,3)
+LoadUnit(16,3)
+LoadUnit(18,3)
+LoadUnit(13,4)
+LoadUnit(15,4)
+LoadUnit(17,4)
+LoadUnit(12,5)
+LoadUnit(14,5)
+LoadUnit(16,5)
+LoadUnit(18,5)
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOMA Ch5xGechrysos
+CAMERA [13,0]
+LOAD1 1 TwoSoldierGroup
+ENUN
+FADU 15
+MUSC WindyDaySoundEffect
+BROWNBOXTEXT Ch5xImperialPalaceText[8,8]
+LOAD1 1 EliasUnitGroup
+STAL 30
+LOAD1 1 CoraliaUnitGroup
+ENUN
+FlashCursor(EliasReal,30)
+FlashCursor(CoraliaReal,30)
+MUSC FE5_InTheBattle_Fate
+Text(Ch23InThePalace1)
+CamOn
+MOVE 15 Cythes [7,11]
+MOVE 15 Barod [9,11]
+ENUN
+CamOff
+MOVE 15 EliasReal [12,8]
+STAL 10
+MOVE 15 CoraliaReal [12,7]
+ENUN
+FlashCursor(Cythes,30)
+FlashCursor(Barod,30)
+Text(Ch23InThePalace2)
+MOVE 15 Cythes [0,11]
+MOVE 15 Barod [0,12]
+ENUN
+REMOVEUNIT Cythes
+REMOVEUNIT Barod
+CamOn
+MOVE 15 EliasReal [7,11]
+MOVE 15 CoraliaReal [7,12]
+ENUN
+CamOff
+Text(Ch23InThePalace3)
+MUSC 0x7FFF
+LOAD1 1 OrfeasMithrasGroup
+STAL 30
+LOAD1 1 LeonidasKassandraGroup
+STAL 30
+MUSC FF4RedWingsID
+Text(Ch23InThePalace4)
+LOAD1 1 SecondSoldierGroup
+ENUN
+MOVE 15 Ch2_Selese_Guy [9,10]
+MOVE 15 KassandraReal [9,13]
+ENUN
+MUSC MarsLighthouseID
+Text(Ch23InThePalace5)
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 10
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+SVAL s1 0x2 // set everyone to be gray
+SET_CONDITION CoraliaReal
+SET_CONDITION EliasReal
+SET_CONDITION KassandraReal
+SET_CONDITION Raschwitz_Ch1
+SET_CONDITION Tyr_Ch2
+SET_CONDITION Ch2_Selese_Guy
+SET_CONDITION Barod
+SET_CONDITION Cythes
+FAWU 5
+Text(Ch23InThePalace8)
+FAWI 10
+SOUN 0xF0
+STAL 20
+SVAL s1 0x2
+UNSET_CONDITION CoraliaReal
+UNSET_CONDITION EliasReal
+UNSET_CONDITION KassandraReal
+UNSET_CONDITION Raschwitz_Ch1
+UNSET_CONDITION Tyr_Ch2
+UNSET_CONDITION Ch2_Selese_Guy
+UNSET_CONDITION Barod
+UNSET_CONDITION Cythes
+FAWU 5
+CamOn
+MOVE 15 EliasReal [6,11]
+ENUN
+KILL Cythes
+AWAIT_KILL Cythes
+MOVE 15 CoraliaReal [6,12]
+ENUN
+KILL Barod
+AWAIT_KILL Barod
+MOVE 15 EliasReal [0,11]
+MOVE 15 CoraliaReal [0,12]
+ENUN
+CamOff
+REMOVEUNIT EliasReal
+REMOVEUNIT CoraliaReal
+STAL 20
+CAMERA KassandraReal
+FlashCursor(KassandraReal,30)
+Text(Ch23InThePalace9)
+MOVE 15 KassandraReal [0,12]
+ENUN
+REMOVEUNIT KassandraReal
+Text(Ch23InThePalace10)
+MOVE 15 Tyr_Ch2 [8,10]
+ENUN
+SOUN 0x00B1
+TILECHANGE 0
+MOVE 15 Tyr_Ch2 [8,9]
+ENUN
+REMOVEUNIT Tyr_Ch2
+Text(Ch23InThePalace11)
+MOVE 15 Raschwitz_Ch1 [8,9]
+ENUN
+REMOVEUNIT Raschwitz_Ch1
+SOUN 0x00B1
+TILEREVERT 0
+STAL 20
+MOVE 15 Ch2_Selese_Guy [8,11]
+ENUN
+Text(Ch23InThePalace12)
+MUSC 0x7FFF
+FADI 15
+RemoveAll
+LOMA Chapter23
+CAMERA_CENTERED [1,1]
+FADU 15
+BROWNBOXTEXT GechrysosBrownBoxText[8,8]
+LOAD1 2 LiberatorsBeginningSceneGroup
+ENUN
+FlashCursor(Loewe,30)
+FlashCursor(Cleo,30)
+MUSC SheenaID
+Text(Ch23TheLiberatorsArrive1)
+LOAD1 2 KwameGroup
+ENUN
+FlashCursor(KwameReal,30)
+Text(Ch23TheLiberatorsArrive2)
+CamOn
+MOVE 15 Loewe [15,4]
+MOVE 15 Cleo [14,3]
+MOVE 15 KwameReal [16,3]
+ENUN
+Text(Ch23TheLiberatorsArrive3)
+LOAD1 1 EnemyUnitsNorthWest 
+ENUN
+MUSC RenegadesID
+FlashCursor(Mihail,30)
+Text(Ch23TheLiberatorsArrive4)
+LOAD1 1 EnemyUnitsWest 
+ENUN
+LOAD1 1 EnemyUnitsWest3
+ENUN 
+LOAD1 1 EnemyUnitsNorthEast 
+ENUN
+FlashCursor(Saif,30)
+Text(Ch23TheLiberatorsArrive5)
+LOAD1 1 FleeingCoraliaEliasGroup
+ENUN
+Text(Ch23TheLiberatorsArrive6)
+MOVE 20 EliasReal [16,17]
+MOVE 20 CoraliaReal [16,16]
+ENUN
+LOAD1 1 EnemyUnitsEast1 //
+ENUN
+LOAD1 1 EnemyUnitsEast2 //
+ENUN
+CAMERA Viktor
+FlashCursor(Viktor,30)
+FlashCursor(Maryn,30)
+Text(Ch23TheLiberatorsArrive7)
+CAMERA_CENTERED EliasReal
+STAL 20
+Text(Ch23TheLiberatorsArrive8)
+LOAD1 1 KassandraRealGroup
+ENUN
+LOAD1 1 ArtemisGroup
+ENUN
+LOAD1 1 EnemyUnitsSouthwest
+ENUN
+FlashCursor(Artemis,30)
+FlashCursor(KassandraReal,30)
+Text(Ch23TheLiberatorsArrive9)
+MOVE 15 KassandraReal [16,27]
+ENUN
+LOAD1 1 BallistaGroup
+ENUN
+Text(Ch23TheLiberatorsArrive10)
+CAMERA KwameReal
+Text(Ch23TheLiberatorsArrive11)
+FADI 15
+LOAD1 1 FinalEnemyGroup
+ENUN
+MountAll
+GotoPrepScreen
+NoFade
+ENDA
+
+TwoSoldierGroup:
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Barod AxeSoldier 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT
+
+EliasUnitGroup:
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R6 [MasterAxe] NoAI
+UNIT
+
+CoraliaUnitGroup:
+UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R5 [StoneSword] NoAI
+UNIT 
+
+OrfeasMithrasGroup: //mithras, orfeas
+UNIT Raschwitz_Ch1 HighPriest 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA9R11 [StoneSword] NoAI
+UNIT Tyr_Ch2 Baron 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneSword] NoAI
+UNIT
+
+LeonidasKassandraGroup: //leonidas, kassandra
+UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA10R10 [StoneSword] NoAI
+UNIT KassandraReal Falcoknight 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA10R13 [StoneSword] NoAI
+UNIT
+
+SecondSoldierGroup:
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [0,11] 0x0 0x0 0x1 REDA5R11 [IronLance] NoAI
+UNIT Barod AxeSoldier 0x0 Level(15,Enemy,True) [0,12] 0x0 0x0 0x1 REDA5R12 [IronAxe] NoAI
+UNIT
+
+LiberatorsBeginningSceneGroup:
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [0,2] 0x0 0x0 0x1 REDA2R3 [IronLance] NoAI
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [0,3] 0x0 0x0 0x1 REDA4R3 [IronLance] NoAI
+UNIT
+
+KwameGroup:
+UNIT KwameReal LanceSoldier 0x0 Level(15,Ally,True) [3,2] 0x0 0x0 0x1 REDA3R3 [IronLance] NoAI
+UNIT
+
+EnemyUnitsNorthWest:
+UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [0,2] 0x0 0x0 0x1 REDA6R3 [MasterAxe, SilverLance] GroupOneAI 
+UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA1R7 [TrainedPike] GroupOneAI 
+UNIT Mihails AxeSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA4R10 [SilverAxe] GroupOneAI 
+UNIT Mihails SwordArmor 0x0 Level(20,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R8 [TrainedEdge] GroupOneAI 
+UNIT
+
+EnemyUnitsWest:
+UNIT Cythes HighPriestess 0x0 Level(8,Enemy,True) [0,8] 0x0 0x0 0x1 REDA3R15 [Purge, Lightning] NeverMoveAI
+UNIT Cythes ArchKnight 0x0 Level(8,Enemy,True) [2,11] 0x0 0x0 0x1 REDA4R16 [TrainedArc] ChargeAI
+UNIT Cythes Hero 0x0 Level(8,Enemy,True) [6,7] 0x0 0x0 0x1 REDA10R9 [SilverAxe,TrainedEdge] ChargeAI
+UNIT
+
+EnemyUnitsWest3:
+UNIT Cythes Warrior 0x0 Level(8,Enemy,True) [13,9] 0x0 0x0 0x1 REDA11R12 [TrainedAxe,GreatBow] ChargeAI
+UNIT
+
+EnemyUnitsNorthEast:
+UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [31,5] 0x0 0x0 0x1 REDA31R3 [KillingEdge, FlameSword] GroupTwoAI 
+UNIT Saifs Myrmidon_F 0x0 Level(20,Enemy,True) [31,4] 0x0 0x0 0x1 REDA26R3 [SilverSword] GroupTwoAI 
+UNIT Saifs Corsair 0x0 Level(20,Enemy,True) [31,7] 0x0 0x0 0x1 REDA24R2 [TrainedAxe] GroupTwoAI 
+UNIT Saifs Freelancer 0x0 Level(20,Enemy,True) [31,5] 0x0 0x0 0x1 REDA25R5 [TrainedPike] GroupTwoAI 
+UNIT 
+
+FleeingCoraliaEliasGroup:
+UNIT EliasReal Dracoknight 0x0  Level(10,NPC,False) [3,29] 0x0 0x0 0x1 REDA6R22 [MasterAxe,SilverAxe] NoAI
+UNIT CoraliaReal MasterKnight_F EliasReal Level(5,NPC,False) [4,29] 0x0 0x0 0x1 REDA6R23 [StoneSword, Mend] NoAI
+UNIT
+
+EnemyUnitsEast1:
+UNIT Cythes DarkBishop 0x0 Level(8,Enemy,True) [29,11] 0x0 0x0 0x1 REDA28R10 [Hel, Fenrir] BossAI
+UNIT Cythes Sniper 0x0 Level(8,Enemy,True) [31,12] 0x0 0x0 0x1 REDA31R11 [SilverBow] AttackInRangeAI
+UNIT Cythes Berserker 0x0 Level(8,Enemy,True) [31,13] 0x0 0x0 0x1 REDA23R8 [KillerAxe] ChargeAI
+UNIT Cythes GoldKnight 0x0 Level(8,Enemy,True) [31,14] 0x0 0x0 0x1 REDA25R16 [TrainedEdge,SilverLance] AttackInRangeAI
+UNIT 
+
+EnemyUnitsEast2:
+UNIT Maryn DarkBishop_F 0x0 Level(9,Enemy,False) [29,19] 0x0 0x0 0x1 REDA30R20 [Jormungand, Physic] GroupThreeAI
+UNIT Viktor Sage 0x0 Level(11,Enemy,False) [29,19] 0x0 0x0 0x1 REDA28R20 [Brenthunder, Mend] GroupThreeAI
+UNIT Cythes HighPriest 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA27R22 [Aura] TwoActionAI
+UNIT Cythes MageKnight_F 0x0 Level(8,Enemy,True) [29,19] 0x0 0x0 0x1 REDA26R23 [Tornado,SilverSword] AttackInRangeAI
+UNIT
+
+KassandraRealGroup:
+UNIT KassandraReal Falcoknight 0x0 Level(11,Enemy,False) [3,29] 0x0 0x0 0x1 REDA7R26 [Holyspear] NeverMoveAI
+UNIT 
+
+ArtemisGroup:
+UNIT Artemis General 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA6R21 [MasterBow, SilverAxe] GroupFourAI
+UNIT 
+
+EnemyUnitsSouthwest:
+UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA3R28 [SilverBow] GroupFourAI
+UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA5R26 [TrainedAxe] GroupFourAI
+UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA0R24 [TrainedEdge] GroupFourAI
+UNIT
+
+BallistaGroup:
+UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [19,27] 0x0 0x0 0x0 0x0 [LongArch] NeverMoveAI
+UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [13,27] 0x0 0x0 0x0 0x0 [LongArch] NeverMoveAI
+UNIT 
+
+FinalEnemyGroup:
+UNIT Cythes SwordFighter 0x0 Level(8,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT Cythes PegasusRider 0x0 Level(8,Enemy,True) [15,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Cythes PegasusRider 0x0 Level(8,Enemy,True) [17,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [6,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [25,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT
+
+EndingScene:
+MUSC 0x7FFF
+FADI 15
+RemoveAll
+LOAD1 1 EndingScene1UnitGroup
+ENUN
+CAMERA_CENTERED CoraliaReal
+MountAll
+FADU 15
+MUSC ToV_TragicDecisionID
+Text(Ch23AfterTheBattle1)
+FADI 15
+STAL 120
+FADU 15
+Text(Ch23AfterTheBattle2)
+REMOVEUNIT CoraliaReal
+FADI 15
+CHECK_EVENTID 7
+BEQ 13 s0 sC
+    CHECK_EVENTID 14 //mihail's alive?
+    BNE 13 s0 sC
+        LOAD1 1 MihailCapturedGroup
+        ENUN
+LABEL 13
+CHECK_EVENTID 8 //saif alive?
+BEQ 14 s0 sC
+    CHECK_EVENTID 13 //saif's alive?
+    BNE 14 s0 sC
+        LOAD1 1 SaifCapturedGroup
+        ENUN
+LABEL 14
+CHECK_EVENTID 9 //artemis alive?
+BEQ 15 s0 sC
+    CHECK_EVENTID 12 //conscripts alive?
+    BNE 15 s0 sC
+        LOAD1 1 ArtemisCapturedGroup
+        ENUN
+LABEL 15
+CHECK_EVENTID 10 // maryn captured?
+BEQ 18 s0 sC
+    LOAD1 1 MarynCapturedGroup
+    ENUN 
+LABEL 18
+CHECK_EVENTID 11 // viktor captured?
+BEQ 19 s0 sC
+    LOAD1 1 ViktorCapturedGroup
+    ENUN 
+LABEL 19
+FADU 5
+CHECK_EVENTID 7 //mihail captured?
+BEQ 10 s0 sC
+    CHECK_EVENTID 14 //mihail's alive?
+    BNE 10 s0 sC
+        MOVE 10 Cleo [15,17]
+        ENUN
+        FlashCursor(Mihail,30)
+        Text(MihailGiveText)
+        GiveItem(Crusher,Cleo)
+        MOVE 20 Mihail [4,14]
+        MOVE 20 Mihails [5,14]
+        MOVE 20 KassandraReal [4,15]
+        MOVE 20 Tyr_Ch2 [5,15]
+        ENUN
+LABEL 10
+CHECK_EVENTID 8 //saif alive?
+BEQ 11 s0 sC
+    CHECK_EVENTID 13 //saif's alive?
+    BNE 11 s0 sC
+        MOVE 10 Loewe [17,17]
+        ENUN
+        Text(SaifGiveText)
+        GiveItem(KingSword,Loewe)
+        MOVE 20 Saif [25,4]
+        MOVE 20 Saifs [24,5]
+        MOVE 20 Ch2_Selese_Guy [25,5]
+        MOVE 20 Emory_Ch3 [25,6]
+        ENUN
+LABEL 11
+CHECK_EVENTID 9 //artemis alive?
+BEQ 12 s0 sC
+    CHECK_EVENTID 12 //conscripts alive?
+    BNE 12 s0 sC
+        Text(ArtemisGiveText)
+        GiveItem(BlackAnklet,EliasReal)
+        MOVE 20 Artemis [23,9]
+        MOVE 20 Conscript [24,9]
+        MOVE 20 Barod [25,9]
+        MOVE 20 Raschwitz_Ch1 [24,10]
+        ENUN
+LABEL 12
+CHECK_EVENTID 10 // maryn captured?
+BEQ 16 s0 sC
+    MOVE 15 Loewe [16,20]
+    ENUN
+    CameraCursor(Maryn)
+    //text; Maryn gives you something
+    GiveItem(Again,Loewe)
+    CheckUnitDeadOrJailed(Cromar)
+    BNE 20 s0 sC //if not around, skip
+        LOAD1 0 CromarGroup
+        ENUN
+        FlashCursor(Cromar,60)
+        CHECK_EVENTID 0x80
+        BEQ 21 s0 sC //branch if mccallum is dead
+        //text if mccallum isn't dead; gets item
+            GiveItem(DawnPendant, Cromar)
+            GOTO 25
+        LABEL 21
+        //text if mcallum is dead
+        LABEL 25
+        MOVE 15 Cromar [16,15]
+        ENUN
+        SVAL s1 0x1
+        SET_CONDITION Cromar
+    LABEL 20
+    MOVE 15 Maryn [31,29]
+    ENUN
+    REMOVEUNIT Maryn
+LABEL 16
+CHECK_EVENTID 11 // viktor captured?
+BEQ 17 s0 sC
+    MOVE 15 Cleo [16,20]
+    ENUN
+    //text; Viktor gives you an item (TBD)
+    //GiveItem(Impaler, Cleo)
+    CheckUnitDeadOrJailed(Tiberius)
+    BNE 22 s0 sC
+        LOAD1 0 TiberiusGroup
+        ENUN
+        CHECK_EVENTID 0x8D //did iskra get the sword
+        BEQ 23 s0 sC 
+            CHECK_ALIVE Iskra
+            BEQ 23 s0 sC
+                //text if Iskra got the sword and is alive; Tiberius gets TempestSword
+                GiveItem(Boltbrand,Tiberius)
+                GOTO 24
+        LABEL 23
+        //text if either of these are not true but Tiberius is alive
+        LABEL 24
+        MOVE 15 Tiberius [16,15]
+        ENUN
+        SVAL s1 0x1
+        SET_CONDITION Tiberius
+    LABEL 22
+    MOVE 15 Viktor [31,29]
+    ENUN
+    REMOVEUNIT Viktor
+LABEL 17
+//end of conditional hell
+REMOVEALL_RED //removes the leftover units
+Text(Ch23AfterTheBattle3)
+CamOn
+MOVE 15 Cleo [5,29]
+MOVE 15 EliasReal [6,29]
+ENUN
+SVAL s1 0x1
+SET_CONDITION Cleo
+SET_CONDITION EliasReal
+CamOff
+CAMERA_CENTERED Loewe
+STAL 20
+MOVE 15 Loewe [16,16]
+ENUN
+FlashCursor(Loewe,30)
+Text(Ch23AfterTheBattle4)
+MUSC 0x7FFF
+LOAD1 2 KwamePostMapGroup
+ENUN
+CameraCursor(KwameReal)
+CamOn
+MOVE 15 KwameReal [16,17]
+MOVE 15 Barod2 [15,17]
+MOVE 15 BoroReal [17,17]
+ENUN
+CamOff
+FlashCursor(Barod2,30)
+FlashCursor(BoroReal,30)
+MUSC FirstCampaignID
+Text(Ch23AfterTheBattle5)
+FlashCursor(BoroReal,60)
+CUSA BoroReal
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch23AfterTheBattleBoroJoins
+TEXTEND
+REMA
+Text(Ch23AfterTheBattle6)
+FADI 15
+MUSC 0x7FFF
+STAL 120
+FADU 5
+//MUSC ToV_TragicDecisionID
+TEXTSTART
+TEXTSHOW Ch23AfterTheBattle7
+TEXTEND
+MUSC FightingOfTheSpirit
+TEXTCONT
+TEXTEND
+REMA 
+FADI 15
+RemoveAll
+MNC2 Chapter24
+NoFade
+ENDA
+
+KwamePostMapGroup:
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,False) [30,29] 0x0 0x0 0 0 [IronLance] NoAI
+UNIT Barod2 Warrior 0x0 Level(15,NPC,False) [31,29] 0x0 0x0 0 0 [IronLance] NoAI
+UNIT BoroReal Champion 0x0 Level(10,NPC,False) [29,29] 0x0 0x0 0 0 [Impaler,MasterLance] NoAI
+UNIT
+
+
+MihailCapturedGroup:
+UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [15,18] 0x0 0x0 0 0 [MasterAxe, SilverLance] GroupOneAI 
+UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [15,19] 0x0 0x0 0 0 [TrainedPike] GroupOneAI 
+UNIT KassandraReal AxeSoldier 0x0 Level(20,Enemy,True) [15,20] 0x0 0x0 0 0 [SteelAxe] GroupOneAI 
+UNIT Tyr_Ch2 SwordArmor 0x0 Level(20,Enemy,True) [15,21] 0x0 0x0 0 0 [Longsword] GroupOneAI 
+UNIT
+
+SaifCapturedGroup:
+UNIT Saif Swordmaster 0x0 Level(8,Enemy,False) [17,18] 0x0 0x0 0 0 [KillingEdge, FlameSword] GroupTwoAI 
+UNIT Saifs Myrmidon_F 0x0 Level(20,Enemy,True) [17,19] 0x0 0x00 0 [SilverSword] GroupTwoAI 
+UNIT Ch2_Selese_Guy Corsair 0x0 Level(20,Enemy,True) [17,20] 0x0 0x0 0 0 [TrainedAxe] GroupTwoAI 
+UNIT Emory_Ch3 Freelancer 0x0 Level(20,Enemy,True) [17,21] 0x0 0x0 0 0 [SilverLance] GroupTwoAI 
+UNIT 
+
+ArtemisCapturedGroup:
+UNIT Artemis General 0x0 Level(9,Enemy,False) [16,18] 0x0 0x0 0 0 [MasterBow, SilverAxe] GroupFourAI
+UNIT Conscript Archer 0x0 Level(20,Enemy,True) [16,19] 0x0 0x0 0 0 [SilverBow] GroupFourAI
+UNIT Barod AxeFighter 0x0 Level(20,Enemy,True) [16,20] 0x0 0x0 0 0 [TrainedAxe] GroupFourAI
+UNIT Raschwitz_Ch1 SwordFighter 0x0 Level(20,Enemy,True) [16,21] 0x0 0x0 0 0 [LongSword] GroupFourAI
+UNIT
+
+MarynCapturedGroup:
+UNIT Maryn DarkBishop_F 0x0 Level(9,Enemy,False) [16,22] 0 0 0 0 [0x0] NoAI
+UNIT 
+
+ViktorCapturedGroup:
+UNIT Viktor Sage 0x0 Level(11,Enemy,False) [16,22] 0x0 0x0 0 0 [0x0] NoAI
+UNIT
+
+EndingScene1UnitGroup:
+UNIT EliasReal Dracoknight 0x0  Level(10,Ally,False) [16,16] 0x0 0x0 0 0 [MasterAxe,SilverAxe] NoAI
+UNIT CoraliaReal MasterKnight_F EliasReal Level(5,Ally,False) [16,15] 0x0 0 0 REDA6R23 [StoneSword] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [17,16] 0x0 0x0 0 0 [IronLance] NoAI
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [15,16] 0x0 0x0 0 0 [IronLance] NoAI
+UNIT
+
+TiberiusGroup:
+UNIT Tiberius MasterKnight 0x0  Level(10,Ally,False) [16,15] 0x0 0x0 1 REDA17R21 [0x0] NoAI
+UNIT
+
+CromarGroup:
+UNIT Cromar Hero 0x0 Level(10,Ally,False) [16,15] 0x0 0x0 1 REDA17R21 [0x0] NoAI
+UNIT 

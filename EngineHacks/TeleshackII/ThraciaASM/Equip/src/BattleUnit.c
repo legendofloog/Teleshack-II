@@ -56,7 +56,7 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 	int newWexp = GetBattleNewWEXP(battleUnit);
 
 	if (newWexp > 0 && battleUnit->weaponType < 8){
-		unit->ranks[battleUnit->weaponType] = newWexp;
+		unit->ranks[GetItemData(battleUnit->weaponBefore.number)->weaponType] = newWexp;
 	}
 
 	/*
@@ -79,7 +79,18 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 		int itemSlot = GetUnitEquippedItemSlot(unit);
 
 		if (IsItemOffenseEquipment(item)){
-			DecrementItemSlotDurability(unit, itemSlot, battleUnit->attacksMade);
+			if ((item.number == 0xd2 ) && (gActionData.unitActionType == UNIT_ACTION_COMBAT)){ //red scarf
+				Unit* target = &gBattleTarget.unit;
+				if(target->curHP <= 0){ // did this unit kill the target
+					DecrementItemSlotDurability(unit, itemSlot, battleUnit->attacksMade);
+				}
+			}
+			else if (item.number != 0x84){ //anything else does decrement
+				DecrementItemSlotDurability(unit, itemSlot, battleUnit->attacksMade);
+			}
+			else{
+
+			}
 		}
 		else if (IsItemDefenseEquipment(item)){
 			DecrementItemSlotDurability(unit, itemSlot, battleUnit->hitsTaken);

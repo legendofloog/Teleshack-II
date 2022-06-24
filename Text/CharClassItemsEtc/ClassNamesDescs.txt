@@ -5,7 +5,7 @@ Noble[X]
 Bluebloods that have taken to the field[NL]
 of battle to realize their potential.[X]
 
-## MasterKnightName
+## MasterKnightName ^
 Master Knight[X]
 
 ## MasterKnightDesc
@@ -28,7 +28,7 @@ Bow Knight[X]
 Skilled horsemen that take advantage[N]
 of their mobility on the battlefield.[X]
 
-## ForrestKnightName
+## ForrestKnightName ^
 Forrest Knight[X]
 
 ## GreatKnightName
@@ -76,7 +76,7 @@ Simple fighters that apply their weapon[NL]
 skills to survive against all odds.[X]
 
 ## HeroName
-Mercenary[X]
+Hero[X]
 
 ## HeroDesc
 Veteran fighters that have overcome[NL]
@@ -192,7 +192,7 @@ Mage Knight[X]
 
 ## MageKnightDesc
 Pragmatic magi that traded deeper[N]
-understanding for greater mobility.[X]
+understanding for martial strength.[X]
 
 ## HighPriestName
 High Priest[X]
@@ -223,7 +223,7 @@ Skilled in both anima and light, these[N]
 magic users entertain with the arcane.[X]
 
 ## SisterName
-Sister[X]
+Devotee[X]
 
 ## SisterDesc
 Devout magi that heal their allies[N]

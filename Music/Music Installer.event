@@ -11,8 +11,6 @@ voicegroup000:
 
 #include "MusicEvents/lufiadoom.event"
 SongTable(Lufia_Doom,lufiadoom,MapMusicGroup)
-//#include "MusicEvents/Treasure of the Rudras - Battle Theme (RandomWizard).event"
-//SongTable(TreasureOfRudrasBattleTheme,rudras_battle_theme,MapMusicGroup)
 #include "MusicEvents/Battle For The Fields.event"
 SongTable(TreasureOfRudrasBattleTheme,songB2,MapMusicGroup) //hi i commented the top one out because its the same song but if you dont like this version just delete this and uncomment it
 #include "MusicEvents/Lufia 2 Rise of the Sinistrals - Battle 2 (SaXor_the_Nobody).event"
@@ -31,8 +29,8 @@ SongTable(UnfinishedBattleGodSyndrome,unfinishedbattle_godsyndrome,BattleMusicGr
 SongTable(FF5_Nostalgia,nostalgia,MapMusicGroup)
 #include "MusicEvents/Final Fantasy 5 - Sealed Away (RandomWizard).event"
 SongTable(FF5_Sealed_Away,sealed_away,MapMusicGroup)
-#include "MusicEvents/adversity.event"
-SongTable(FE5_Adversity, song17, MapMusicGroup)
+#include "MusicEvents/FE5 - Adversity (Scraiza).event"
+SongTable(FE5_Adversity, song012D, MapMusicGroup)
 #include "MusicEvents/in_the_battle_fate.event"
 SongTable(FE5_InTheBattle_Fate, song24, MapMusicGroup)
 #include "MusicEvents/Dreaming.event"
@@ -47,7 +45,7 @@ SongTable(mutecity,song58,MapMusicGroup)
 SongTable(PMDSteamCaveID,SteamCave,MapMusicGroup)
 #include "MusicEvents/Awakening(FF6).event"
 SongTable(FF6AwakeningID,FF6Awakening,MapMusicGroup)
-#include "MusicEvents/RedWings(FF4).event"
+#include "MusicEvents/FF4 - Red Wings (RandomWizard).event"
 SongTable(FF4RedWingsID,RedWings,MapMusicGroup)
 #include "MusicEvents/butterbuilding.event"
 SongTable(ButterBuilding,butterbuilding,MapMusicGroup)
@@ -55,13 +53,17 @@ SongTable(ButterBuilding,butterbuilding,MapMusicGroup)
 SongTable(FFTAnxiety,FFT_Anxiety,MapMusicGroup)
 #include "MusicEvents/Lagoon - Battle with Thimale (RandomWizard).event"
 SongTable(BattleWithThimale,Battle_With_Thimale,MapMusicGroup)
+#include "MusicEvents/SheepWillSleep(Leche).event"
+SongTable(Sheep_Will_Sleep,SheepWillSleep,MapMusicGroup)
+#include "MusicEvents/CORE(Leche).event"
+SongTable(Core,CORE,MapMusicGroup)
 #include "MusicEvents/skytowerbeta.event"
 SongTable(skytowerbeta,song01,MapMusicGroup)
 #include "MusicEvents/Dynasty Warriors 3 - Oppression (pandan).event"
 SongTable(oppression,song0153,MapMusicGroup)
 #include "MusicEvents/FE5winning.event"
 SongTable(fe5victory,song05,MapMusicGroup)
-#include "MusicEvents/war_s heartbeat.event"
+#include "MusicEvents/away with you.event"
 SongTable(awaywithyou,song13,BattleMusicGroup)
 #include "MusicEvents/ncastlebridge.event"
 SongTable(ncastlebridge,song34,MapMusicGroup)
@@ -73,5 +75,51 @@ SongTable(KnightsPride,songC1,MapMusicGroup)
 SongTable(FightingOfTheSpirit,songC2,MapMusicGroup)
 #include "MusicEvents/TS_CombatResistance(devvy).event"
 SongTable(CombatResistanceID,CombatResistance,MapMusicGroup)
+#include "MusicEvents/Call_of_the_Bells_Pandan.event"
+SongTable(CallOfTheBellsID,callofthebells,BattleMusicGroup)
+#include "MusicEvents/Feeling_Woozy_Pandan.event"
+SongTable(FeelingWoozyID,feelingwoozy,BattleMusicGroup)
+#include "MusicEvents/TS_FirstCampaign(devvy).event"
+SongTable(FirstCampaignID,FirstCampaign,BattleMusicGroup)
 #include "MusicEvents/Final_Fantasy_9_-_Festival_of_the_Hunt_RandomWizard_Mr-Wright.event"
 SongTable(FestivalHuntID,song09,MapMusicGroup)
+#include "MusicEvents/war_s heartbeat.event"
+SongTable(War_sHeartbeat,song13,BattleMusicGroup)
+#include "MusicEvents/Remembrance(Loog).event"
+SongTable(RemembranceID, Remembrance, MapMusicGroup)
+#include "MusicEvents/Crypteque - CotND.event"
+SongTable(CryptequeID, crypt, MapMusicGroup)
+#include "MusicEvents/Valkyrie_Profile_-_Rise_Above_the_World_buggo.event"
+SongTable(RiseAboveID, song017B, MapMusicGroup)
+#include "MusicEvents/CrimeOfTheHeart(devvy).event"
+SongTable(0xD9, CrimeHeart, MapMusicGroup)
+#include "MusicEvents/DrumbeatToRuin.event"
+SongTable(0xDA, DrumbeatRuin, MapMusicGroup)
+#include "MusicEvents/SwordOfTheValiantTOTRChair.event"
+SongTable(SwordOfTheValiant, song12, MapMusicGroup)
+#include "MusicEvents/MagusChronoTriggerChair.event"
+SongTable(BattleWithMagus, BWMPointer, MapMusicGroup)
+#include "MusicEvents/TomokoQOHPandan.event"
+SongTable(TomokoQOH, song01A2, MapMusicGroup)
+#include "MusicEvents/SorrowsDistortionCastlevaniaBuggo.event"
+SongTable(SorrowsDistortion, songC3, BattleMusicGroup)
+#include "MusicEvents/GuardianSignsLegendary.event" // credit to sme!
+SongTable(GuardianSignsLegendary, LegendTheme, MapMusicGroup)
+#include "MusicEvents/WhyAreWeWithoutHope(Devvy).event"
+SongTable(WhyAreWeWithoutHopeID, WhyAreWeWithoutHope, MapMusicGroup)
+#include "MusicEvents/Tales Of Symphonia - Encounter With The Renegades {A Reliable Chair}.event"
+SongTable(RenegadesID, songEncounterWithRenegades, MapMusicGroup)
+#include "MusicEvents/Tales Of Symphonia - Like A Glint Of Light {A Reliable Chair}.event"
+SongTable(LightGlintID, LikeAGlintOfLight, BattleMusicGroup)
+#include "MusicEvents/Golden Sun - Saturos Battle {Tristan Hollow}.event"
+SongTable(SaturosBattleID, GS_SaturosBattle, BattleMusicGroup)
+#include "MusicEvents/Tales Of Symphonia - Shihna {A Reliable Chair}.event"
+SongTable(SheenaID, songShihna, MapMusicGroup)
+#include "MusicEvents/Golden Sun - Mars Lighthouse {A Reliable Chair}.event"
+SongTable(MarsLighthouseID, songMarsLighthouse, MapMusicGroup)
+#include "MusicEvents/Tales Of Vesperia - A Tragic Decision {A Reliable Chair}.event"
+SongTable(ToV_TragicDecisionID, ToV_TragicDecision, MapMusicGroup)
+#include "MusicEvents/Golden Sun The Lost Age - Walking Forward With Determination {RandomWizard}.event"
+SongTable(GS_TLA_WalkingForwardWithDeterminationID, WalkingForwardWithDetermination, MapMusicGroup)
+#include "MusicEvents/FF5 - Battle on the Big Bridge {Pandan}.event"
+SongTable(FF5_BattleOnTheBigBridgeID, BattleOnTheBigBridge, BattleMusicGroup)

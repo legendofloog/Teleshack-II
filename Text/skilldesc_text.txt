@@ -688,7 +688,7 @@ Steal: Unit can steal items.[X]
 
 ## SD_StealPlus
 Steal+: Unit can steal weapons[N]
-and staves if con>weight.[X]
+and staves if Bld > Item Wt.[X]
 
 ## SD_Capture
 Capture: Capture an enemy after[N]
@@ -1270,4 +1270,3 @@ least 3 higher than the enemy's.[X]
 Water Boost: Grants +6 Resistance[N]
 if unit's current HP is at[N]
 least 3 higher than the enemy's.[X]
-

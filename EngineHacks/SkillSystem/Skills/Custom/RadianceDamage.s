@@ -1,40 +1,38 @@
-.thumb
 .macro blh to, reg=r3
   ldr \reg, =\to
   mov lr, \reg
   .short 0xf800
 .endm
 .equ RadianceID, SkillTester+4
+.thumb
+push	{r4-r7,lr}
 
-@ r0 is attacker, r1 is defender, r2 is current buffer, r3 is battle data
-push {r4-r7,lr}
-mov r4, r0 @attacker
-mov r5, r1 @defender
-mov r6, r2 @battle buffer
-mov r7, r3 @battle data
-ldr     r0,[r2]           @r0 = battle buffer                @ 0802B40A 6800     
-lsl     r0,r0,#0xD                @ 0802B40C 0340     
-lsr     r0,r0,#0xD        @Without damage data                @ 0802B40E 0B40     
-mov r1, #0xC0 @skill flag
-lsl r1, #8 @0xC000
-add r1, #2 @miss @@@@OR BRAVE??????
-tst r0, r1
-bne End
-@if another skill already activated, don't do anything
+@ if target is self, somehow, end
+cmp	r4, r5
+beq	End
 
-@check for Skill
-ldr r0, SkillTester
-mov lr, r0
-mov r0, r4 @attacker data
-ldr r1, RadianceID
-.short 0xf800
-cmp r0, #0
-beq End
+@ check if attack is used
+ldrb 	r0, [r6,#0x11]	@action taken this turn
+cmp	r0, #0x2 @combat
+bne	End
 
-ldrh r3, [r7, #0x4] @damage
+Continue:
+@ check for skill
+mov	r0, r4
+ldr	r1, RadianceID
+ldr	r3, SkillTester
+mov	lr, r3
+.short	0xf800
+cmp	r0,#0x00
+beq	End
+
+@ heal amount
+mov r3, #0x3A
+ldrb 	r3, [r4, r3]
+add r3, #10
 
 ldr r6, =0x0202BE4C
-ldr r4, =#0x85 * 0x48 @Player+Enemy+NPC
+ldr r4, =0x85 * 0x48 @Player+Enemy+NPC
 add r4,r6
 sub r6,#0x48
 
@@ -53,7 +51,12 @@ Loop:
   and  r2,r1
   cmp  r2,#0x0          @maybe dead
   bne  Loop
-  
+
+  @ don't double heal the target
+  ldr r1, [r5]          @unitram->unit
+  ldr r2, [r6]          @unitram->unit
+  cmp r1, r2
+  beq Loop 
 
   @ test status
   mov r1, #0x30
@@ -79,11 +82,13 @@ NotOverflow:
 b Loop
 
 End:
-pop {r4-r7}
-pop {r15}
-
-.align
+pop	{r4-r7}
+pop	{r0}
+bx	r0
 .ltorg
+.align
+UnitList:
+.long 0x0859A5D0
 SkillTester:
 @POIN SkillTester
-@WORD AdeptID
+@WORD RadianceID

@@ -58,16 +58,57 @@ HeroRingStatBoosts:
 StatBonus(0,0,0,0,0,0,0,0,0,0)
 
 ALIGN 4
-GrowthScrollBonuses:
+BoneClubStatBoosts:
+StatBonus(0,0,0,0,0,2,0,0,0,0)
+
+ALIGN 4
+WindBowStatBoosts:
+StatBonus(0,0,0,0,5,0,0,0,0,0)
+
+ALIGN 4
+BoldWeaponStatBoosts:
+StatBonus(0,0,0,0,0,(-5),(-5),0,0,0)
+
+ALIGN 4
+FullHelmStatBoosts:
+StatBonus(0,0,0,0,0,2,2,0,0,0)
+
+ALIGN 4
+ShieldbearerStatBoosts:
+StatBonus(0,0,0,0,0,5,2,0,(-1),0)
+
+ALIGN 4
+DarkBrandStatBoosts:
+StatBonus(0,0,0,0,0,0,0,10,0,0)
+
+ALIGN 4
+HolyspearStatBoosts:
+StatBonus(0,0,0,0,0,5,5,0,0,0)
+
+ALIGN 4
+BlackAnkletStatBoosts:
+StatBonus(0,4,4,0,0,2,2,0,0,0)
+
+
+ALIGN 4
+GrowthScrollBonusesTable:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
 GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr
 GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra
-GrowthBonus((-15),0,10,10,20,0,0,0,0,0) // 0x3 - Raio
+GrowthBonus((-10),0,10,10,10,0,0,0,0,0) // 0x3 - Raio
 GrowthBonus(20,0,0,0,0,0,0,20,0,0) // 0x4 - Luzen
 GrowthBonus(0,0,0,0,0,(-15),(-15),0,10,0) // 0x5 - Amser
+GrowthBonus(5,5,5,0,0,0,0,0,0,0) // 0x6 - WornScroll
+GrowthBonus((-5),5,20,5,0,(-10),20,0,0,0) // 0x7 - Dreedur
+GrowthBonus((-66),13,13,13,13,13,13,(-66),(-66),(-66)) // 0x8 - Cherne
+// GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB)
+
 
 #define BeiyrScroll 0x1
 #define ZykhraScroll 0x2
 #define RaioScroll 0x3
 #define LuzenScroll 0x4
 #define AmserScroll 0x5
+#define WornScroll 0x6
+#define DreedurScroll 0x7
+#define CherneScroll 0x8

@@ -27,17 +27,18 @@ POIN DefendingCheck
 #ifdef BIORHYTHM
   POIN BiorhythmFunc
 #endif //BIORHYTHM
-POIN Wrath Avenger SpurStr SpurMag SpurSpd SpurDef SpurRes
+POIN Wrath Avenger SpurStr SpurMag SpurSpd SpurDef SpurRes RuneArrowPreBattle
 POIN DriveStr DriveMag DriveSpd DriveDef DriveRes
 POIN LuckySeven OddRhythm EvenRhythm QuickBurn SlowBurn
 POIN Pre_Nightcaller
 POIN GladiatorsAura
 POIN TerrainEffective
-POIN Demoiselle Gentilhomme MaleficAura Intimidate Tantivy Focus Desolate Inspiration Charm Solidarity VoiceOfPeace Anathema LilysPoise Charisma Hex Loyalty Infiltrator
+POIN Demoiselle Gentilhomme MaleficAura Intimidate Tantivy Focus Desolate Inspiration Charm Solidarity VoiceOfPeace Anathema LilysPoise Charisma Hex Loyalty Infiltrator SpurHit AbsoluteZeroAura
 POIN ElbowRoom NaturalCover Gamble FieryBlood LifeAndDeath WindDisciple Perfectionist Puissance Hawkeye LightWeight Trample Opportunist BattleVeteran SilentPride Thunderstorm Outrider HeavyStrikes Charge Vanity KnightAspirant AssassinateDamageBonus ArcaneBlade ShowStopper WeakWilled
+POIN Stormbreaker AbsoluteZeroPreBattle FaithWind Telepathy HypeTrainPre CleoFan
 //POIN Daunt BloodTide WhitePool NightTide 
 POIN Insight Culling Prescience Vigilance  DefiantAvo DefiantCrit TowerShield ShortShield IndoorFighter OutdoorFighter Deadeye Fortune
-POIN BlueFlame BlueFlameAura DoubleLion Cultured Thighdeology Thotslayer KeepUp Armorboost Horseguard Skyguard ForeignPrincess ChargePlus RecklessCharge
+POIN BlueFlame BlueFlameAura DoubleLion Cultured Thighdeology Thotslayer KeepUp Armorboost Horseguard Skyguard ForeignPrincess ChargePlus 
 POIN Frenzy Headshot // This was moved here because Str/Mag Split conflict, and... I'm not sure why it wouldn't be here in the first place.
 POIN UpWithArch
 POIN AxefaithHit
@@ -61,6 +62,8 @@ POIN SpellMirrorSkl
 POIN EdgedArrowPreBattle
 //POIN PCCClear
 
+POIN CrownPyre
+POIN RecklessCharge
 //tower shield plus needs to go after every other skill that may affect defender's attack
 POIN NonCombatant
 POIN TowerShieldPlus

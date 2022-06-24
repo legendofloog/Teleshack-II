@@ -21,20 +21,6 @@ void CheckIfUnit1RescuedByActive(){
     gEventSlot[0xC] = 0;
 }
 
-void CheckIfUnitEscaped(){
-    Unit* someUnit = GetUnitByCharId(gEventSlot[1]);
-    if (UNIT_FACTION(someUnit) != UA_BLUE ){
-        gEventSlot[0xC] = 0;
-        return;
-    }
-    if (((someUnit->state & US_UNAVAILABLE) == 0) && ((someUnit->state & US_HIDDEN)) == 0){
-            someUnit->state |= (US_BIT16);
-            gEventSlot[0xC] = 1;
-            return;
-    }
-    gEventSlot[0xC] = 0;
-}
-
 void UnitCopy(){
     Unit* copiedUnit = GetUnitByCharId(gEventSlot[1]);
     Unit* copierUnit = GetUnitByCharId(gEventSlot[2]);
@@ -79,7 +65,7 @@ void SetFatigue(){
 
 void CheckIfFatigued(){
     Unit* unit = GetUnitByCharId(gEventSlot[1]);
-    if (unit->state & (US_DEAD | US_BIT16) ){
+    if (unit->state & (US_DEAD | US_REMOVED) ){
         gEventSlot[0xC] = 0;
         return;
     }
@@ -92,5 +78,69 @@ void CheckIfFatigued(){
 }
 
 int GetCurrentPromotedLevelBonus(){
-    return 14; //every promoted unit hits 15 unpromoted
+    return 14; //every promoted unit hits 10 unpromoted
+}
+
+void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
+    bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck);
+
+    if (bu->battleAvoidRate < 0){
+        bu->battleAvoidRate = 0;
+    }
+}
+
+void ComputeBattleUnitHitRate(BattleUnit* bu) {
+    bu->battleHitRate = (bu->unit.skl * 2) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
+}
+
+void HealBlueUnitsInCh6Arena(){
+    int x;
+    int y;
+    int z;
+    Unit* unitPointer;
+    for (z = 0; z <= 60; z++){ // cycles through unit array
+        unitPointer = &gUnitArrayBlue[z];
+        for (x = 0; x <= 14; x++){ // cycles through x = 0 to x = 14
+            for(y = 0; y <= 14; y++){ // cycles through y = 0 to y = 14
+                if(unitPointer->xPos == x && unitPointer->yPos == y){ //is the current blue unit at that position? 
+                    unitPointer->curHP = unitPointer-> maxHP; //if so, heal them to the max
+                }
+            }
+        }
+    }
+}
+
+void KillAllBlueUnitsInCh6Arena(){
+    int x;
+    int y;
+    int z;
+    Unit* unitPointer;
+    for (z = 0; z <= 60; z++){ // cycles through unit array
+        unitPointer = &gUnitArrayBlue[z];
+        for (x = 0; x <= 14; x++){ // cycles through x = 0 to x = 14
+            for(y = 0; y <= 14; y++){ // cycles through y = 0 to y = 14
+                if(unitPointer->xPos == x && unitPointer->yPos == y){ //is the current blue unit at that position? 
+                    UnitKill(unitPointer);
+                }
+            }
+        }
+    }
+}
+
+void CheckIfTileChangeTriggered(){
+    if (AreMapChangeTriggered(gEventSlot[0x1])){
+        gEventSlot[0xC] = 1;
+        return;
+    }
+    gEventSlot[0xC] = 0;
+}
+
+void CheckIfTargetUnitWasCaptured(){
+    BattleUnit* target = &gBattleTarget;
+    if(target->unit.state & US_DEAD){ //pretty sure captured units aren't considered dead?
+        gEventSlot[0xC] = 0; //return false in 0xC
+        return;
+    }
+    gEventSlot[0xC] = 1; //0 HP + not dead? should be captured
+    return;
 }

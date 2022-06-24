@@ -1,5 +1,5 @@
-## KingSwordDesc
-Doubles attacks grants Charisma.[X]
+## KingSwordDesc ^
+A brave blade that strikes twice. Grants Charisma.[X]
 
 ## FlameSwordDesc
 Casts magical flame. Mag +5.[X]
@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade. Eff vs Cavalry[X]
+A high quality blade. Eff vs. [HorseIcon][X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -123,19 +123,19 @@ Brave Effect.[X]
 Spell Mirror[X]
 
 ## SpellMirrorDesc
-[_R][_e][_f][_l][_e][_c][_t][_s][_SP][_M][_t][_SP][_o][_f][_SP][_m][_a][_g][_i][_c][_a][_l][_SP][_a][_t][_t][_a][_c][_k][_s][_.][X]
+Mt increased by enemy Atk if magical.[X]
 
 ## AlairsGaleName
 Arai's Gale[X]
 
 ## AlairsGaleDesc
-[_H][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_o][_w][_e][_r][_,][_SP][_h][_a][_l][_f][_SP][_t][_h][_e][_SP][_p][_r][_i][_c][_e][_.][X]
+Half the power, half the price. Brave.[X]
 
 ## SisterRingName
 Sister Ring[X]
 
 ## SisterRingDesc
-[_+][_1][_SP][_M][_o][_v][_e][_SP][_a][_l][_l][_o][_w][_SP][_a][_c][_c][_e][_s][_s][_SP][_t][_o][_SP][_a][_n][_SP][_a][_n][_c][_i][_e][_n][_t][_SP][_p][_o][_w][_e][_r][_.][X]
+Allows access to ancient power (+1 Mov).[X]
 
 ## CivilianProofName
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
@@ -200,7 +200,7 @@ Axle[X]
 Uncounterable. Lck +13.  Axel[LockIcon].[X]
 
 ## Axle2Desc
-Halves enemy health. Alex[LockIcon].[X]
+A long range axe. Alex[LockIcon].[X]
 
 ## MiaodaoName
 Miaodao[X]
@@ -227,6 +227,9 @@ Stinger[X]
 ## StingerDesc
 Spd +5. Hornet[LockIcon][X]
 
+## MysticLanceName
+Mystic Lance[X]
+
 ## LunarAxeName
 Lunar Axe[X]
 
@@ -246,7 +249,7 @@ DUMMY (bpat)[X]
 Something special :)[X]
 
 ## ArgymosCrestName
-Argymos Crest[X]
+Argymos Seal[X]
 
 ## ArgymosCrestDesc
 Promotion item for Cleo.[X]
@@ -255,8 +258,8 @@ Promotion item for Cleo.[X]
 Raio Scroll[X]
 
 ## RaioScrollDesc
-+10% Mag, +10% Skl, +20% Spd,[N]
--15% HP[X]
++10% Mag, +10% Skl, +10% Spd,[N]
+-10% HP[X]
 
 ## LuzenScrollName
 Luzen Scroll[X]
@@ -267,8 +270,14 @@ Luzen Scroll[X]
 ## DarkbrandName
 Darkbrand[X]
 
-##DarkbrandDesc
+## DarkbrandDesc
 Can be used to buff res. Tiberius[LockIcon][X]
+
+## DaybreakName
+Daybreak[X]
+
+## DaybreakDesc
+[_V][_e][_r][_d][_i][_u][_m] [_m][_i][_g][_h][_t]. [_N][_o][_t] [_m][_e][_a][_n][_t] [_f][_o][_r] [_m][_o][_r][_t][_a][_l] [_h][_a][_n][_d][_s].[X]
 
 ## MuramasaName
 Muramasa[X]
@@ -373,7 +382,10 @@ Fealty Bow[X]
 Dragonstone[X]
 
 ## DragonstoneDesc
-placeholder[X]
+ special stone[X]
+
+## EmptyDesc
+ [X]
 
 ## HeroRingName
 Hero Ring[X]
@@ -392,3 +404,262 @@ Unmoor[X]
 
 ## UnmoorDesc
 Severs time's threads. Eff. vs. blessed.[X]
+
+## CrownPyreName *
+Crowned Pyre[X]
+
+## CrownPyreDesc *
++Atk = 25% of foe's cur. HP. Ignores 50% Res.[X]
+
+## StormbreakerName
+[_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
+
+## StormbreakerDesc *
+At max range, +30 Hit/Crit (+40 at max move).[X]
+
+## AbsoluteZeroName
+[_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
+
+## AbsoluteZeroDesc *
+-2 Atk/AS to foes in 2 spaces, -6 if unit is in terrain.[X]
+
+## DawnEyeName
+Eye of Dawn[X]
+
+## DawnEyeDesc *
+Restores HP to unit = damage dealt.[X]
+
+## FaithWindName
+Faith's Wind[X]
+
+## FaithWindDesc *
+If Spd is higher, AS +3, Brave if foe can't counter.[X]
+
+## DancingBladeName
+Dancing Bld.[X]
+
+## DancingBladeDesc
+Hits Res. [LockIcon] Ojasvi.[X]
+
+## TaodaoName
+Taodao[X]
+
+## TaodaoDesc
+[LockIcon] Tao. Brave, long-range.[X]
+
+## RuneArrowName
+Rune Arrow[X]
+
+## RuneArrowDesc
+[LockIcon] Tao. Adds Mag to Crit.[X]
+
+## BoneClubName
+Bone Club[X]
+
+## BoneClubDesc
+Strong but inaccurate throwing club.[X]
+
+## MaharaghiName
+Maharaghi[X]
+
+## MaharaghiDesc
+Can be used to greatly heal allies.[X]
+
+## KaiserschwertFakeDesc
+[LockIcon] Loewe. A sentimental sword.[X]
+
+## WornScrollName
+Worn Scroll[X]
+
+## WornScrollDesc
+Some power still lingers[N]
+within this faded scroll.[N]
++5% HP, +5% Str, +5% Skl[X]
+
+## WindBowName
+Wind Bow[X]
+
+## WindBowDesc
+Uses MAG. +5 Spd.[X]
+
+## FireDriveName
+Fire Drive[X]
+
+## FireDriveDesc
+Uses MAG.[X]
+
+## LamfadaName
+Lamfada[X]
+
+## LamfadaDesc
+[_E][_f][_f]. [_v][_s] i[_n][_f][_a][_n]t[_r][_y] [SwordIcon] ([_n][_o]t [ArmorIcon]/[_d]i[_s]m[_o][_u][_n]t[_e][_d] [HorseIcon].)[X]
+
+## BoldBladeName
+Bold Blade[X]
+
+## BoldPikeName
+Bold Pike[X]
+
+## BoldCleaverName
+Bold Cleaver[X]
+
+## BoldWeaponDesc
+Def/Res -5 while equipped.[X]
+
+## LunaName
+Luna[X]
+
+## LunaDesc
+Ignores enemy resistance.[X]
+
+## EarthGreataxeName
+[_E][_a][_r]t[_h] [_G][_r][_e][_a]t[_a][_x][_e][X]
+
+## EarthGreataxeDesc
+Def +5. Strikes twice, but only twice.[X]
+
+## RunespearName
+Runespear[X]
+
+## RunespearDesc
+[LockIcon]Tobie. Magic, drains HP into wielder.[X]
+
+## LumenName
+Lumen[X]
+
+## LumenDesc
+[LockIcon]Matthias. Can be used to illuminate.[X]
+
+## FangAndClawName ^
+Fang and Claw[X]
+
+## FangAndClawDesc
+Taraji's lethal twin blades. Brave.[X]
+
+## StarcutterName
+Starcutter[X]
+
+## StarcutterDesc ^
+Replica Kaiserschwert. Magic. Eff. vs blessed.[X]
+
+## FullHelmName
+Full Helm[X]
+
+## FullHelmDesc
+Call them ugly all you like; helmets[N]
+are vital for surviving in battle.[N]
+Blocks critical hits. +2 Def/Res.[X]
+
+## SwordslayerName ^
+Blade Crusher[X]
+
+## SwordslayerDesc
+Reverses weapon triangle. Eff. vs swords.[X]
+
+## ShieldbearerName ^
+Shieldbearer[X]
+
+## ShieldbearerDesc ^
+A defensive lance. +5 Def, +2 Res, -1 Mov.[X]
+
+## MalkhutName
+Malkhut[X]
+
+## MalkhutDesc
+Light magic that often critically hits.[X]
+
+## SagittaeName
+Sagittae[X]
+
+## SagittaeDesc
+Arcane arrows with long range.[X]
+
+## DreedurScrollName ^
+Dreedur Scroll[X]
+
+## DreedurScrollDesc
+-5% HP, +5% Str,[N]
++20% Mag, +5% Skl,[N]
+-10% Def, +20% Res[X]
+
+## CherneScrollName ^
+Cherne Scroll[X]
+
+## CherneScrollDesc
+Scrawlings of a raving mind.[N]
+Modifies the user's growths.[X]
+
+## KukriName
+Kukri[X]
+
+## KukriDesc
+A lethal sword common in Chouwouj.[X]
+
+## SlamBraceName
+Slam Brace[X]
+
+## SlamBraceDesc
+Almost strong enough to push a[N]
+whale. Allows user to Smite[N]
+adjacent units 2 tiles away.[X]
+
+## ZweihanderName
+Zweihander[X]
+
+## ZweihanderDesc
+Incredible blade. Eff vs. [HorseIcon][X]
+
+## DeadeyeBowName
+[_D][_e][_a][_d][_e][_y][_e][_SP][_B][_o][_w][X]
+
+## DeadeyeBowDesc
+Powerful bow with great range.[X]
+
+## MoonlightBladeName
+[_M][_o][_o][_n][_l][_i][_g][_h][_t][_SP][_B][_l][_a][_d][_e][X]
+
+## MoonlightBladeDesc
+Grants +5 Mag.[X]
+
+## GlaiveName
+Glaive[X]
+
+## GlaiveDesc
+Incredible lance. Eff vs. [HorseIcon][X]
+
+## HolyspearName
+Holyspear[X]
+
+## HolyspearDesc
+Protects from effectives. +5 Def/Res.[X]
+
+## CrusherName
+Crusher[X]
+
+## CrusherDesc
+A mighty magic axe gifted by Mihail.[X]
+
+## BlackAnkletName
+Black Anklet[X]
+
+## BlackAnkletDesc
++5 Str/Mag. Reduces HP by 10 after[N]
+combat. Min. HP after this effect is 1.[X]
+
+## BoltbrandName
+Boltbrand[X]
+
+## BoltbrandDesc
+[LockIcon] Tiberius. Brave. Magic sword.[X]
+
+## DawnPendantName
+Dawn Pendant[X]
+
+## DawnPendantDesc
+[LockIcon]Cromar. Banishes the darkness.[X]
+
+## ImpalerName
+Impaler[X]
+
+## ImpalerDesc
+[LockIcon]Boro. Negates Def. A Chouwoujian lance.[X]

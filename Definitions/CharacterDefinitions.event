@@ -25,6 +25,7 @@
 #define Buldak 0x18
 #define Nora 0x19
 #define Hans 0x1A
+#define Takai 0x1B //interlude 2 unit added later
 #define Jenny 0x1C
 #define Meldan 0x1D
 #define Valse 0x1E
@@ -45,18 +46,33 @@
 #define Ilse 0x2D
 #define Rashid 0x2E
 #define Nikolas 0x2F
+#define Sera 0x30
+#define Shaw 0x31
+#define Apsis 0x32
+#define Ojasvi 0x33
+#define Darcy 0x34
+#define Groto 0x35
+#define Tao 0x36
+#define Zhara 0x37
+#define Volran 0x38
+#define Tara 0x39
+#define Jerry 0x3A
+#define Lyre 0x3B
+#define Ngondala 0x3C
+#define CatrinReal 0x3D
+#define Matthias 0x3E
+#define KwameReal 0x3F
+#define Kofi 0x40
+#define TrajanReal 0x41
+#define Locke 0x42
+#define EliasReal 0x43
+#define BoroReal 0x44
 
-
-#define LyonSummon 0x3B
-#define KnollSummon 0x3E
-#define EvanSummon 0x3F
-#define Lyon_Ch17 0x40
 
 // Chapter 1 Bosses
-#define Boro_Ch1 0x41
-#define Raschwitz_Ch1 0x42
+#define Raschwitz_Ch1 0x55
 // Chapter 2 Boss
-#define Tyr_Ch2 0x43
+#define Tyr_Ch2 0x56
 // Chapter 2 generic guy for eventing battle purposes 
 #define Ch2_Selese_Guy 0x73
 // Chapter 3 Boss
@@ -64,7 +80,7 @@
 // Chapter 4 Boss
 #define Hilmar 0x69
 // Chapter 5 Boss
-#define Riggan 0x44
+#define Riggan 0x57
 // Chapter 7 Boss
 #define Yor 0x83
 #define Radnitz 0x84
@@ -76,11 +92,11 @@
 #define Hege 0x96
 #define Francis 0x97
 // Chapter 9 Boss
-#define Wrathgar 0x47
+#define Wrathgar 0x59
 
 // Chapter 10 stuff
-#define Cidor 0x48
-#define Johanna 0x49
+#define Cidor 0x5A
+#define Johanna 0x5B
 #define Elias 0x4a
 #define SeleseProvoke 0x98
 #define Bandit 0x99
@@ -127,7 +143,7 @@
 #define Freyse 0x88
 
 //Chapter 11 stuff
-#define Aurora 0x45
+#define Aurora 0x58
 
 //Chapter 12 stuff
 #define Eitha 0x4B
@@ -147,18 +163,61 @@
 #define Coralia 0xA5
 #define Catrin 0xA6
 #define Kassandra 0xA7
+#define LoeweCopy 0xAC
 
 //Chapter 16 Stuff
 #define Phantom 0x8A
 #define Hamdi 0x4C
 #define Colossus 0x4D
 #define Boro_Ch16 0x4E
+#define Boro_Ch1 Boro_Ch16
 
 //Chapter 17 Stuff
 #define Alto 0xA8
 #define Mureib 0xA9
-#define KwameReal 0xAA
 #define Mureib2 0xAB
+
+//Chapter 18 Stuff
+#define Gladiator2 0x8B
+#define Shafaqat 0xAD
+#define Barod2 0xAE
+
+//Chapter 19 Stuff
+#define C19Enemy 0x8C
+#define C19Phantom 0x8D
+#define C19Mini1 0x8E
+#define C19Mini2 0x8F
+#define C19Boss 0x54
+
+//Chapter 20 Stuff
+#define C20Enemy 0x93
+
+//Chapter 21 stuff
+#define Taraji 0xAF
+#define Xlea 0xB0
+#define Vinny 0xB1
+#define Cephalid 0xB2
+#define Temur 0xB3
+#define Sultai 0xB4
+#define Valere 0xB5
+#define Dart 0xB6
+#define DeathRattle 0xB7
+#define Chouwouj 0xB8
+
+//Chapter 22 Stuff
+#define Eleanor 0xBF
+
+//Chapter 23 Stuff
+#define KassandraReal 0x5C
+#define Artemis 0x5D
+#define Mihail 0x5E
+#define Saif 0x5F
+#define CoraliaReal 0x60
+#define Mihails 0x61
+#define Saifs 0x62
+#define Conscript 0x63
+#define Maryn 0xb9
+#define Viktor 0xba
 
 
 #define Breguet 0x46
@@ -173,14 +232,9 @@
 #define Macdaire 0x50
 #define Maelduin_boss 0x50
 #define Aias 0x51
-#define Carlyle 0x52
-#define Caellach 0x53
-#define Pablo_2 0x54
 #define Gorgon_boss 0x56
 #define Riev 0x57
 #define Gheb 0x5A
-#define Beran 0x5B
-#define Cyclops_boss 0x5C
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
 #define Zonta 0x6A

@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pResistanceModifiers: // Resistance
-	POIN prAddUnitResistance prHalveIfCapturing prHalveIfRescuing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes
+	POIN prAddUnitResistance prHalveIfCapturing prHalveIfRescuing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes prEquipmentRes
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prAzuriumMight
 	POIN prMinZero
@@ -40,5 +40,8 @@ prItemPassiveResistance:
 prAzuriumMight:
 	rIfUnitHasSkill(AzuriumMightID)
 		rAddConst(3)
+
+prEquipmentRes:
+	rEquipmentBonus(STAT_RESISTANCE)
 
 #endif // MODULAR_GETTER_RESISTANCE_EVENT

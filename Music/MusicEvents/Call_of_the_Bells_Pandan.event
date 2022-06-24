@@ -1,0 +1,96 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	callofthebells_grp  voicegroup000
+	#define	callofthebells_pri  10
+	#define	callofthebells_rev  0
+	#define	callofthebells_mvl  127
+	#define	callofthebells_key  0
+	#define	callofthebells_tbs  1
+	#define	callofthebells_exg  0
+	#define	callofthebells_cmp  1
+
+	// .rodata
+	//	callofthebells
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+callofthebells_001:
+//  #01 //000   ----------------------------------------
+Label_545B74:
+ BYTE   TEMPO   80*callofthebells_tbs/2
+ BYTE   KEYSH   callofthebells_key+0
+ BYTE   VOICE   73
+ BYTE   VOL   68*callofthebells_mvl/mxv
+ BYTE   N48  Ds4  v064
+ BYTE   N48  As3
+ BYTE   N48  Gn3
+ BYTE   W48
+ BYTE   As3
+ BYTE   N48  Ds3
+ BYTE   N48  Gn3
+ BYTE   W48
+//  #01 //001   ----------------------------------------
+ BYTE   As3
+ BYTE   N48  Ds4
+ BYTE   N48  Gn4
+ BYTE   W48
+ BYTE   Ds4
+ BYTE   N48  As3
+ BYTE   N48  Gn3
+ BYTE   W48
+//  #01 //002   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_545B74
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+callofthebells_002:
+//  #02 //000   ----------------------------------------
+Label_545B9C:
+ BYTE   TEMPO   80*callofthebells_tbs/2
+ BYTE   KEYSH   callofthebells_key+0
+ BYTE   VOICE   14
+ BYTE   VOL   105*callofthebells_mvl/mxv
+ BYTE   N24  Ds4  v064
+ BYTE   W24
+ BYTE   Ds4
+ BYTE   W24
+ BYTE   As3
+ BYTE   W24
+ BYTE   As3
+ BYTE   W24
+//  #02 //001   ----------------------------------------
+ BYTE   Gn4
+ BYTE   W24
+ BYTE   Fn4
+ BYTE   W24
+ BYTE   N12  As3
+ BYTE   W12
+ BYTE   Dn4
+ BYTE   W12
+ BYTE   N24  Ds4
+ BYTE   W24
+//  #02 //002   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_545B9C
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+callofthebells:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	callofthebells_pri	// Priority
+	BYTE	callofthebells_rev	// Reverb.
+    
+	POIN2	callofthebells_grp
+    
+	POIN2	callofthebells_001
+	POIN2	callofthebells_002
+
+	

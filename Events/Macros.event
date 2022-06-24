@@ -1,4 +1,11 @@
+#define PreventSkipping "EVBIT_MODIFY 1"
+#define AllowSkipping "EVBIT_MODIFY 0"
+#define SetUnitFullHP(charID) "CheckMaxHP(charID); SADD s1 sC s0; SET_HP charID"
+
 #define EraseBackground "CALL $9EE2C4"
+#define ShowMap "CALL 0x8592140"
+#define CGText(textID) "_0x1A22; TEXTSHOW textID; TEXTEND; REMA"
+#define SingleUnitMove(charID, speed, xPos, yPos) "MOVE speed charID [xPos,yPos]; ENUN"
 #define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
 #define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 30"
 #define MaxTurns(TurnNum) "256 - TurnNum"
@@ -53,7 +60,18 @@
 #define RemoveAll "REMOVEALL_BLUE; REMOVEALL_GREEN; REMOVEALL_RED"
 #define DoAllThree "CLEA 0; CLEN 0; CLEE 0"
 #define SystemText(textID) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART"
+#define PlayerRangeCheck "SVAL 0x2 0x0; CALL 0x9EE1B8"
+#define TalkConvo(id) "MUSI; Text(id); MUNO; MURE 2; NoFade"
+#define TextCont(id,music) "TEXTSTART; TEXTSHOW id; TEXTEND; MUSC music; TEXTCONT; TEXTEND; REMA"
 
+#define FadeToBlack "FADI 16"
+#define FadeBackFromBlack "FADU 16"
+#define SoundEffect(music) "SOUN music"
+#define SFX(music) "SOUN music"
+
+// RW here. i stole these from pikmin1211 on feucord from a really old post, so they may be bad
+#define LearnSkill(Unit,Skill) "SVAL 0x1 Skill; SVAL 0x2 Unit; ASMC (ASMC_HasSkill|1); BNE 0xED6B 0xC 0x0; ASMC (ASMC_LearnNewSkill|1); LABEL 0xED6B"
+#define ForgetSkill(Unit,Skill) "SVAL 0x1 Skill; SVAL 0x2 Unit; ASMC (ASMC_HasSkill|1); BEQ 0xED6C 0xC 0x0; ASMC (ASMC_ForgetSkill|1); LABEL 0xED6C"
 
 #define IBeq(i, label) "SVAL 2 i; BEQ label 0xC 2;"
 #define IBne(i, label) "SVAL 2 i; BNE label 0xC 2;"
@@ -94,3 +112,4 @@
 #define HalfMoveAI [0xC,0x0,0x0,0x0]
 #define AttackThenLootAI [0x00, 0x04, 0x04, 0x00]
 #define DoNotAttack07AI [0x07, 0x0A, 0x04, 0x00]
+

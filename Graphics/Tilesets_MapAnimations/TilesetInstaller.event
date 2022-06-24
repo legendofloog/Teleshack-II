@@ -23,6 +23,21 @@
     ALIGN 4
     FlasubanVillageMapchipConfig:
     #incbin "Config/FixedBridge_comp.dmp"
+
+
+//Flasuban Village For Snow
+
+    ALIGN 4
+    FlasuVillageV2SnowConfig:
+    #incbin "Config/Village_v2_Config_comp.dmp"
+
+    ALIGN 4
+    FlasuVillageV2SnowObject:
+    #incbin "Object/VillageV2SnowObject.dmp"
+
+    ALIGN 4
+    FlasubanSnowVillagePalette:
+    #incbin "Palette/FlasubanSnowVillage_pal.dmp"
 	
 //Flasuban Village Edit
     ALIGN 4
@@ -62,18 +77,21 @@
     DesertBastionMapchipConfig:
     #incbin "Config/DesertBastion_comp.dmp"
 
-//Thracia Fields, Not Inserted	
-//    ThraciaFieldsObject:
-//    #incbin "Object/fe5fields.dmp"
-/*
     ALIGN 4
-    ThraciaFieldsAutumnPalette:
-    #incbin "Palette/fe5autumnfields_pal.dmp"
+    FF2TownObject:
+    #incbin "Object/FF2 Town 2.0 Object - OG.dmp"
 
     ALIGN 4
-    ThraciaFieldsMapchipConfig:
-    #incbin "Config/fe5fields.mapchip_config"
-*/
+    FF2TownPalette:
+    #incbin "Palette/FF2 Town 2.0 Object - OG_pal.dmp"
+
+    ALIGN 4
+    FF2TownMapchipConfig:
+    #incbin "Config/FF2 Town 2.0 Config_comp.dmp"
+
+    ALIGN 4
+    FF2TownSnowPalette:
+    #incbin "Palette/FF2 Town 2.0 Object - Winter_pal.dmp"
 
     EventPointerTable(DesertBastionObjectID, DesertBastionObject)
     EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
@@ -84,11 +102,15 @@
     EventPointerTable(FlasubanVillageObjectID, FlasubanVillageObject)
     EventPointerTable(FlasubanVillageNormalPaletteID, FlasubanVillagePalette)
     EventPointerTable(FlasubanVillageMapchipConfigID, FlasubanVillageMapchipConfig)
-	  EventPointerTable(0x10,UpdatedVillageMapchipConfig)
+	EventPointerTable(0x10,UpdatedVillageMapchipConfig)
 	EventPointerTable(FlasubanVillageMapchipConfig2ID, FlasubanVillageMapchipConfig2)
     EventPointerTable(FF5CaveObjectID,FF5CaveObject)
     EventPointerTable(FF5CavePaletteID,FF5CavePalette)
     EventPointerTable(FF5CaveConfigID,FF5CaveConfig)
-//	EventPointerTable(ThraciaFieldsObjectID, ThraciaFieldsObject)
-//    EventPointerTable(ThraciaFieldsAutumnPaletteID, ThraciaFieldsAutumnPalette)
-//    EventPointerTable(ThraciaFieldsMapchipConfigID, ThraciaFieldsMapchipConfig)
+    EventPointerTable(FlasubanVillageSnowPaletteID,FlasubanSnowVillagePalette)
+    EventPointerTable(FlasuVillage2SnowMapchipConfigID,FlasuVillageV2SnowConfig)
+    EventPointerTable(FlasuVillage2SnowObjectID,FlasuVillageV2SnowObject)
+    EventPointerTable(FF2TownObjectID, FF2TownObject)
+    EventPointerTable(FF2TownPaletteID, FF2TownPalette)
+    EventPointerTable(FF2TownConfigID, FF2TownMapchipConfig)
+    EventPointerTable(FF2TownSnowPaletteID, FF2TownSnowPalette)

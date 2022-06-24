@@ -150,6 +150,8 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+FADI 15
+InterludeReturnRoutineASMC
 MountAll
 LOAD1 0x1 EnemyUnits
 LOAD1 0x1 IndoorEnemies

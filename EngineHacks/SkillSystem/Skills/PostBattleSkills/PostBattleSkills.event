@@ -49,6 +49,14 @@ BYTE GrislyWoundID
 
 
 ALIGN 4
+BladeDance:
+#incbin "Despoil/bladedance.dmp"
+POIN SkillTester
+WORD BladeDanceID
+POIN BladeDanceEvent
+#include "Despoil/BladeDanceEvent.event"
+
+ALIGN 4
 Despoil:
 #incbin "Despoil/despoil.dmp"
 POIN SkillTester
@@ -81,6 +89,20 @@ POIN SkillTester
 WORD GaleforceID
 POIN GaleforceEvent
 #include "Galeforce/GaleforceEvent.event"
+
+ALIGN 4
+HypeTrainPost:
+#incbin "HypeTrain/HypeTrain.dmp"
+POIN SkillTester
+WORD HypeTrainID
+POIN HypeTrainEvent
+#include "HypeTrain/HypeTrainEvent.event"
+
+ALIGN 4
+HypeTrainRecoil:
+#incbin "HypeTrain/HypeTrainRecoil.dmp"
+POIN SkillTester
+WORD HypeTrainID
 
 ALIGN 4
 Canto:
@@ -124,6 +146,13 @@ WORD ACTION_SWAP
 WORD ACTION_PUSH
 WORD ACTION_SWARP
 
+ALIGN 4
+WhisperWind:
+#incbin "WhisperWind.dmp"
+POIN SkillTester
+WORD WhisperWindID
+POIN WindWeapons
+#include "WhisperWindEvent.event"
 
 PUSH //some changes to vanilla code to make everything work
 ORG $1D24C //check for canto, modified to just check for cantoing bit set

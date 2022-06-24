@@ -25,8 +25,10 @@ ItemEffectivenessPtr(Longbow, FlierEffectiveness)
 ItemEffectivenessPtr(LongArch, FlierEffectiveness)
 ItemEffectivenessPtr(IronArch, FlierEffectiveness)
 ItemEffectivenessPtr(KillerArch, FlierEffectiveness)
-ItemEffectivenessPtr(Sink, MageEffectiveness)
+ItemEffectivenessPtr(Sink, SinkEffectiveness)
 ItemEffectivenessPtr(Poincare, PoincareEffectiveness)
+ItemEffectivenessPtr(Lamfada, SwordslayerEffectiveness)
+ItemEffectivenessPtr(Swordslayer, SwordslayerEffectiveness)
 
 //Protector item (macro still works, even if it's wrongly named)
 
@@ -34,23 +36,33 @@ ItemEffectivenessPtr(Poincare, PoincareEffectiveness)
 LordWeaponEffectiveness:
 SetWeaponEffectiveness(ArmorType|HorseType, 6)
 WORD 0 //terminator
+
 ArmorEffectiveness:
 SetWeaponEffectiveness(ArmorType, 6)
 WORD 0
+
 HorseEffectiveness:
 SetWeaponEffectiveness(HorseType, 6)
 WORD 0
+
 FlierEffectiveness:
 SetWeaponEffectiveness(FlierType, 6)
 WORD 0
-MageEffectiveness: // Mage, Mageknight, Bard, Sage
-SetWeaponEffectiveness(ArcherType, 6)
+
+SinkEffectiveness: // Mage, Mageknight, Bard, Sage
+SetWeaponEffectiveness(MageType, 6)
 WORD 0
+
 ArcherEffectiveness: // Archer, Sniper
 SetWeaponEffectiveness(ArcherType, 6)
 WORD 0 
+
 PoincareEffectiveness: // Archer, Sniper, Fliers
 SetWeaponEffectiveness(ArcherType|FlierType, 6)
+WORD 0
+
+SwordslayerEffectiveness: // Myrmidons/Swordmasters, Swordfighters/Heroes, Thieves/Rogues, Dancers
+SetWeaponEffectiveness(SwordType, 6)
 WORD 0
 
 #define SetProtection(type_list) "SHORT 0 type_list"

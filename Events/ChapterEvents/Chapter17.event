@@ -28,13 +28,13 @@ LocationBasedEvents:
 Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
-Chest(HeroRing,9,7)
-DurabilityChest(GrowthScroll, AmserScroll,11,8)
+//Chest(HeroRing,9,8)
+DurabilityChest(GrowthScroll, AmserScroll,11,9)
 END_MAIN
 
 MiscBasedEvents:
 AFEV 8 MureibBetrayal 9
-DefeatBoss(Mureib)
+DefeatBoss(EndingScene)
 CauseGameOverIfLordDies 
 END_MAIN
 
@@ -59,31 +59,31 @@ ENDTRAP
 ALIGN 4
 
 Units1:
-LoadUnit(1,24)
-LoadUnit(3,24)
-LoadUnit(5,24)
-LoadUnit(0,25)
-LoadUnit(2,25)
-LoadUnit(4,25)
-LoadUnit(6,25)
-LoadUnit(10,24)
-LoadUnit(12,24)
-LoadUnit(14,24)
-LoadUnit(9,25)
-LoadUnit(11,25)
-LoadUnit(13,25)
-LoadUnit(15,25)
+LoadUnit(1,28)
+LoadUnit(3,28)
+LoadUnit(5,28)
+LoadUnit(0,29)
+LoadUnit(2,29)
+LoadUnit(4,29)
+LoadUnit(6,29)
+LoadUnit(10,28)
+LoadUnit(12,28)
+LoadUnit(14,28)
+LoadUnit(9,29)
+LoadUnit(11,29)
+LoadUnit(13,29)
+LoadUnit(15,29)
 UNIT
 
 NPCUnits:
-UNIT Nikolas Falcoknight   0x0 Level(1,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,Elixir] BossAI
+UNIT Nikolas Falcoknight   0x0 Level(1,NPC,False) [11,26] 0x0 0x0 0x0 0x0 [KillerLance,TrainedPike,Elixir] BossAI
 UNIT
 
 EnemyUnits:
-UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,2] 0x0 0x0 0x0 0x0 [BattleAxe,IceSword] BossHealAI
-UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,21] 0x0 0x0 0x0 0x0 [LongLance] DefaultHealAI 
-UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [3,20] 0x0 0x0 0x0 0x0 [IceSword] NMHealAI
-UNIT Cythes AxeArmor   0x0 Level(17,Enemy,True) [2,20] 0x0 0x0 0x0 0x0 [Hurlbat] NMHealAI
+UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [Claymore,BattleAxe,IceSword,KnightProof] BossHealAI
+UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [LongLance] DefaultHealAI 
+UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [3,23] 0x0 0x0 0x0 0x0 [IceSword] NMHealAI
+UNIT Cythes AxeArmor   0x0 Level(17,Enemy,True) [2,23] 0x0 0x0 0x0 0x0 [Hurlbat] NMHealAI
 UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [4,26] 0x0 0x0 0x0 0x0 [TrainedEdge] DefaultHealAI 
 UNIT Cythes AxeKnight   0x0 Level(17,Enemy,True) [7,24] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI 
 UNIT Cythes Ballistician   0x0 Level(17,Enemy,True) [6,22] 0x0 0x0 0x0 0x0 [LongArch] NMHealAI
@@ -96,9 +96,9 @@ UNIT Cythes DragonRider   0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [Steel
 UNIT Cythes SwordKnight   0x0 Level(17,Enemy,True) [16,14] 0x0 0x0 0x0 0x0 [BraveSword] DefaultHealAI
 UNIT Cythes LanceKnight   0x0 Level(17,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [Greatlance] DefaultHealAI
 UNIT Cythes Brigand   0x0 Level(17,Enemy,True) [10,25] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultHealAI
-UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
-UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [3,15] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
-UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [4,15] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
+UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [14,23] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
+UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [Greatlance] NMHealAI
 UNIT Cythes Swordfighter   0x0 Level(17,Enemy,True) [18,19] 0x0 0x0 0x0 0x0 [Armorslayer] RangeHealAI
 UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [21,5] 0x0 0x0 0x0 0x0 [KillingEdge] [0x00,0x06,0x00,0x00]
 UNIT Cythes Mage   0x0 Level(17,Enemy,True) [12,16] 0x0 0x0 0x0 0x0 [Thunder] RangeHealAI
@@ -124,24 +124,24 @@ UNIT
 
 MureibSquad:
 UNIT Mureib HighPriest   0x0 Level(10,Enemy,False) [14,29] 0x0 0x0 0x0 0x0 [Lightning] StallOneTurnAI
-UNIT Cythes LanceArmor   0x0 Level(17,Enemy,True) [13,24] 0x0 0x0 0x0 0x0 [LongLance] DefaultAI
-UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [15,24] 0x0 0x0 0x0 0x0 [Longsword] DefaultAI
-UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [16,27] 0x0 0x0 0x0 0x0 [SteelAxe] StallOneTurnAI
-UNIT Cythes SwordFighter   0x0 Level(17,Enemy,True) [12,27] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
-UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
-UNIT Cythes Freelancer   0x0 Level(17,Enemy,True) [17,29] 0x0 0x0 0x0 0x0 [TrainedPike] StallOneTurnAI
-UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [14,26] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI
-UNIT Cythes Bard   0x0 Level(17,Enemy,True) [13,28] 0x0 0x0 0x0 0x0 [Wind] DefaultAI
-UNIT Cythes Bard   0x0 Level(17,Enemy,True) [15,28] 0x0 0x0 0x0 0x0 [Wind] DefaultAI
-UNIT Cythes DarkMage   0x0 Level(17,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Flux] DefaultAI
-UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [0,21] 0x0 0x0 0x0 0x0 [TrainedEdge] DefaultAI
-UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [21,14] 0x0 0x0 0x0 0x0 [TrainedPike] DefaultAI
-UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [21,16] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
-UNIT Cythes AxeSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [Hammer] DefaultAI
-UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Greatlance] DefaultAI
-UNIT Cythes AxeFighter   0x0 Level(17,Enemy,True) [2,29] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
-UNIT Cythes SwordFighter   0x0 Level(17,Enemy,True) [0,28] 0x0 0x0 0x0 0x0 [Greatsword] DefaultAI
-UNIT Cythes MageArmor   0x0 Level(17,Enemy,True) [3,24] 0x0 0x0 0x0 0x0 [Thoron] DefaultAI
+UNIT Mahemen LanceArmor   0x0 Level(17,Enemy,True) [13,24] 0x0 0x0 0x0 0x0 [LongLance] DefaultAI
+UNIT Mahemen SwordArmor   0x0 Level(17,Enemy,True) [15,24] 0x0 0x0 0x0 0x0 [Longsword] DefaultAI
+UNIT Mahemen AxeFighter   0x0 Level(17,Enemy,True) [16,27] 0x0 0x0 0x0 0x0 [SteelAxe] StallOneTurnAI
+UNIT Mahemen SwordFighter   0x0 Level(17,Enemy,True) [12,27] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
+UNIT Mahemen Myrmidon   0x0 Level(17,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
+UNIT Mahemen Freelancer   0x0 Level(17,Enemy,True) [17,29] 0x0 0x0 0x0 0x0 [TrainedPike] StallOneTurnAI
+UNIT Mahemen LanceSoldier   0x0 Level(17,Enemy,True) [14,26] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI
+UNIT Mahemen Bard   0x0 Level(17,Enemy,True) [13,28] 0x0 0x0 0x0 0x0 [Wind] DefaultAI
+UNIT Mahemen Bard   0x0 Level(17,Enemy,True) [15,28] 0x0 0x0 0x0 0x0 [Wind] DefaultAI
+UNIT Mahemen DarkMage   0x0 Level(17,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Flux] DefaultAI
+UNIT Mahemen Myrmidon   0x0 Level(17,Enemy,True) [0,21] 0x0 0x0 0x0 0x0 [TrainedEdge] DefaultAI
+UNIT Mahemen LanceSoldier   0x0 Level(17,Enemy,True) [21,14] 0x0 0x0 0x0 0x0 [TrainedPike] DefaultAI
+UNIT Mahemen AxeFighter   0x0 Level(17,Enemy,True) [21,16] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT Mahemen AxeSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [Hammer] DefaultAI
+UNIT Mahemen LanceSoldier   0x0 Level(17,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Greatlance] DefaultAI
+UNIT Mahemen AxeFighter   0x0 Level(17,Enemy,True) [2,29] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT Mahemen SwordFighter   0x0 Level(17,Enemy,True) [0,28] 0x0 0x0 0x0 0x0 [Greatsword] DefaultAI
+UNIT Mahemen MageArmor   0x0 Level(17,Enemy,True) [3,24] 0x0 0x0 0x0 0x0 [Thoron] DefaultAI
 UNIT
 
 ReinforcementsSpawn1:
@@ -160,7 +160,7 @@ UNIT
 ReinforcementsSpawn3:
 UNIT Cythes Swordmaster   0x0 Level(3,Enemy,True) [0,9] 0x0 0x0 0x0 0x0 [SteelSword] DefaultHealAI
 UNIT Cythes BowArmor   0x0 Level(17,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [MasterBow] DefaultHealAI
-UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [3,0] 0x0 0x0 0x0 0x0 [Burn] DefaultHealAI
+UNIT Cythes Myrmidon   0x0 Level(17,Enemy,True) [3,0] 0x0 0x0 0x0 0x0 [IronSword] DefaultHealAI
 UNIT
 
 ThiefSpawn:
@@ -315,8 +315,8 @@ EndingScene:
 FADI 15
 MUSC 0x7FFF
 RemoveAll
-DismountUnit(Loewe)
-DismountUnit(Cleo)
+DismountSingleUnit(Loewe)
+DismountSingleUnit(Cleo)
 LOAD1 1 EndingMureibOwnage
 ENUN
 CAMERA_CENTERED KwameReal
@@ -452,6 +452,6 @@ RemoveAll
 SetBackground(Boat)
 FADU 15
 Text(Ch17_ChouwoujTease)
-MNC2 Chapter17
+MNC2 Chapter18
 NoFade
 ENDA

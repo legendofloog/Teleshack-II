@@ -23,12 +23,37 @@ BYTE 00 00
 ALIGN 4
 
 PelecayeSkillList:
-BYTE 1 PassID
-BYTE 1 AcrobatID
+BYTE 21 PassID
+BYTE 21 AcrobatID
 BYTE 00 00
 ALIGN 4
 
 DancerSkillList:
 BYTE 255 DanceID
+BYTE 00 00
+ALIGN 4
+
+ApsisSkillList:
+BYTE 1 StormbringerID
+BYTE 1 AbsoluteZeroID
+BYTE 1 DawnEyeID
+BYTE 1 WindFaithID
+BYTE 00 00
+ALIGN 4
+
+MinkSkillList:
+//BYTE 1 FarShockID
+//BYTE 1 WhisperWindID
+BYTE 00 00
+ALIGN 4
+
+DartSkillList:
+BYTE 1 ShadePlusID
+BYTE 1 WatchfulID
+BYTE 00 00
+ALIGN 4
+
+EithaSkillList:
+BYTE 1 PointBlankID
 BYTE 00 00
 ALIGN 4

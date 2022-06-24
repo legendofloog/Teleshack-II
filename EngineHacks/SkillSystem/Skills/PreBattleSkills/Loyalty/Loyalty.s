@@ -39,19 +39,23 @@ sub r2,#0x1
 mul r3,r2
 add r5,r3
 mov r3,#0x4
-ldr r5,[r5,r3]
-ldrb r3,[r5,r3]
-cmp r3,#0x1
+ldr r5,[r5,r3] @ gets class data
+ldrb r3,[r5,r3] @ gets class number
+cmp r3,#0x1d @ scaleshot
 beq Final
-cmp r3,#0x2
+cmp r3,#0x1e @ skyseeker
 beq Final
-cmp r3,#0x3
+cmp r3,#0x1f @ dragonlord
 beq Final
-cmp r3,#0x4
+cmp r3,#0x20 @ seraphknight
 beq Final
-cmp r3,#0x3B
+cmp r3,#0x5B @ all of the above, but dismounted
 beq Final
-cmp r3,#0x3C
+cmp r3,#0x5C
+beq Final
+cmp r3,#0x5D
+beq Final
+cmp r3,#0x5E
 beq Final
 b Loop
 

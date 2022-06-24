@@ -26,12 +26,46 @@
 #define oppression 0x1D
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
-#define FestivalHuntID 0xC5
+#define FeelingWoozyID 0x21
+#define CallOfTheBellsID 0x22
+
+#define RemembranceID 0x58
+#define CryptequeID 0x59
+#define RiseAboveID 0x5D
+
 
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
 #define FightingOfTheSpirit 0xC2
 #define CombatResistanceID 0xC3
+#define FirstCampaignID 0xC4
+#define FestivalHuntID 0xC5
+#define War_sHeartbeat 0xC6
+
+#define CrimeHeartID 0xD9
+#define DrumbeatRuinID 0xDA
+#define SwordOfTheValiant 0xDB
+
+#define BattleWithMagus 0xE0
+#define TomokoQOH 0xE1
+#define SorrowsDistortion 0xE4
+
+#define GuardianSignsLegendary 0x12D
+
+#define Sheep_Will_Sleep 0x26D
+#define Core 0x26E
+#define WhyAreWeWithoutHopeID 0x26f
+
+//used in 23
+#define RenegadesID 0x270
+#define LightGlintID 0x271
+#define SaturosBattleID 0x272
+#define SheenaID 0x273
+#define MarsLighthouseID 0x274
+#define ToV_TragicDecisionID 0x275
+#define GS_TLA_WalkingForwardWithDeterminationID 0x276
+#define FF5_BattleOnTheBigBridgeID 0x277
+
 
 // Vanilla
 #define TiesOfFriendship 0x7
