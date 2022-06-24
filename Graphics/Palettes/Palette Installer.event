@@ -177,3 +177,66 @@ HamdiHalberdier:
 ColossusWarrior:
 	#incbin "./_palettes/ColossusWarrior.lzpal" 
 
+LoeweCopyScaleshotUnmounted:
+	#incbin "./_palettes/LoeweCopyScaleshotUnmounted.lzpal" 
+
+KofiMageKnight:
+	#incbin "./_palettes/KofiMageKnight.lzpal" 
+
+KofiMageKnightDismounted:
+	#incbin "./_palettes/KofiMageKnightDismounted.lzpal" 
+
+OjasviNoble:
+	#incbin "./_palettes/OjasviNoble.lzpal" 
+
+ApsisBard:
+	#incbin "./_palettes/ApsisBard.lzpal" 
+
+ApsisSage:
+	#incbin "./_palettes/ApsisSage.lzpal" 
+
+TobiePegKnight:
+	#incbin "./_palettes/TobiePegKnight.lzpal" 
+
+TobieDismountedPeg:
+	#incbin "./_palettes/TobieDismountedPeg.lzpal" 
+
+TobieDismountedFalco:
+	#incbin "./_palettes/TobieDismountedFalco.lzpal" 
+
+TobieFalconknight:
+	#incbin "./_palettes/TobieFalconknight.lzpal" 
+
+IberisMageArmor:
+	#incbin "./_palettes/IberisMageArmor.lzpal" 
+
+IberisBaron:
+	#incbin "./_palettes/IberisBaron.lzpal" 
+
+DarcyAxeArmor:
+	#incbin "./_palettes/DarcyAxeArmor.lzpal" 
+
+DarcyGeneral:
+	#incbin "./_palettes/DarcyGeneral.lzpal" 
+
+EllereyLanceArmor:
+	#incbin "./_palettes/EllereyLanceArmor.lzpal" 
+
+EllereyGeneral:
+	#incbin "./_palettes/EllereyGeneral.lzpal" 
+
+CromarHero:
+	#incbin "./_palettes/CromarHero.lzpal" 
+
+LyreDracoknight:
+	#incbin "./_palettes/LyreDracoknight.lzpal" 
+
+LyreDismounted:
+	#incbin "./_palettes/LyreDismounted.lzpal" 
+
+NgondalaBaron:
+	#incbin "./_palettes/NgondalaBaron.lzpal" 
+
+IskraDismountedMageKnight:
+	#incbin "./_palettes/IskraDismountedMageKnight.lzpal" 
+

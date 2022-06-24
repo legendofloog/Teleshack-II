@@ -1,0 +1,54 @@
+#include "Escape.lyn.event"
+
+#define JailOneUnitASMC(charID) "SVAL s1 charID; ASMC JailOneUnit"
+#define EndOfEscapeRoutineASMC "ASMC EndOfEscapeRoutine"
+
+#define CheckUnitJailed(charID) "SVAL s1 charID; ASMC CheckJailed"
+#define CheckUnitDeadOrJailed(charID) "SVAL s1 charID; ASMC CheckDeadOrJailed"
+
+#define InterludeRemovalRoutineASMC "ASMC InterludeRemovalRoutine"
+#define InterludeReturnRoutineASMC "ASMC InterludeReturnRoutine"
+
+#define InterludeJoinTableEntry(chapterID,charID) "BYTE chapterID charID"
+#define InterludeJoinTableEnd "BYTE 0xFF 0xFF"
+
+#define MandatoryEscapeTableEntry(chapterID,charID) "BYTE chapterID charID"
+#define MandatoryEscapeTableEnd "BYTE 0xFF 0xFF"
+
+ALIGN 4
+InterludeJoinTable:
+InterludeJoinTableEntry(Chapter6,Mish)
+InterludeJoinTableEntry(Chapter6,Tobie)
+InterludeJoinTableEntry(Chapter6,Awa)
+InterludeJoinTableEntry(Chapter6,Cadenza)
+InterludeJoinTableEntry(Chapter6,Faolan)
+InterludeJoinTableEntry(Chapter6,Matthias) 
+InterludeJoinTableEntry(Chapter13,Takai)
+InterludeJoinTableEntry(Chapter13,Ellerey)
+InterludeJoinTableEntry(Chapter13,Mantou)
+InterludeJoinTableEntry(Chapter13,Tippany)
+InterludeJoinTableEntry(Chapter13,Pelecaye)
+InterludeJoinTableEntry(Chapter13,Carl)
+InterludeJoinTableEntry(Chapter19,Apsis)
+InterludeJoinTableEntry(Chapter19,Ojasvi)
+InterludeJoinTableEntry(Chapter19,Darcy)
+InterludeJoinTableEntry(Chapter19,Groto)
+InterludeJoinTableEntry(Chapter19,Tao)
+InterludeJoinTableEntry(Chapter19,Zhara)
+InterludeJoinTableEnd
+
+ALIGN 4
+MandatoryEscapeTable:
+MandatoryEscapeTableEntry(Chapter1, Loewe)
+MandatoryEscapeTableEntry(Chapter1, Cleo)
+MandatoryEscapeTableEntry(Chapter3, Loewe)
+MandatoryEscapeTableEntry(Chapter3, Cleo)
+MandatoryEscapeTableEntry(Chapter3, Dragana)
+MandatoryEscapeTableEntry(Chapter9, Loewe)
+MandatoryEscapeTableEntry(Chapter9, Cleo)
+MandatoryEscapeTableEntry(Chapter14, Loewe)
+MandatoryEscapeTableEntry(Chapter14, Cleo)
+MandatoryEscapeTableEntry(Chapter14, Augur)
+MandatoryEscapeTableEntry(Chapter16, Loewe)
+MandatoryEscapeTableEntry(Chapter16, Cleo)
+MandatoryEscapeTableEnd

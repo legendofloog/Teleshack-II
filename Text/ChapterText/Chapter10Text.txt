@@ -6,6 +6,15 @@ Ch10: Heroes of Freyse[X]
 This is placeholder text!
 [A][X]
 
+##Ch10VillageText
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+[ThreeLineBox]
+A vistor? What a rare occasion.[N]
+This old scroll drifted ashore recently.[N]
+I've no use for it, so you can keep it.[A]
+[X]
+
 ##Ch10CidorBossQuote
 [MidLeft][LoadCidor]
 Your pathetic rebellion ends[N]
@@ -535,17 +544,6 @@ Goodbye, Cleo. I'll pray for your[N]
 continued safety.[A]
 [FarRight][OneLineBox]
 [Beat][A]
-[Left][ClearFace]
-[FarLeft][ClearFace]
-[Right][MoveLeft]
-[Left][MoveRight]
-[Right][TwoLineBox]
-Looks like he dropped something.[N]
-Cleo, do you know what this is?[A]
-[FarRight][ThreeLineBox]
-It's the Argymos family crest. He'd never[N]
-lose it so carelessly. Elias[Beat] what are[N]
-you trying to tell me?[A]
 [X]
 
 ##Ch10End2

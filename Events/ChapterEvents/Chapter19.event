@@ -1,0 +1,280 @@
+EventPointerTable(Chapter19Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+
+TurnBasedEvents:
+TurnEventPlayer(0, ThiefReinforcementsEvent, 7)
+TurnEventPlayer(0, ThiefReinforcementsEvent, 10)
+TurnEventPlayer(0, VolranTaraRecruitment, 1)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
+TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
+TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
+TurnEventPlayer(0, KillLoeweIfNoKaiserschwertEvent, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 10)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 12)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 17)
+TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 18)
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(13, RunespearEvent, Tobie, Mish)
+CharacterEventBothWays(14, KaiserschwertEvent, Tara, Loewe)
+END_MAIN
+
+
+LocationBasedEvents:
+Chest(Lamfada,29,29)
+Chest(EarthGreataxe,20,7)
+Seize(46,16)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies 
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [5,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [6,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [7,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,25] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,25] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [7,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [7,9] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+
+NewPlayers:
+UNIT Volran Mage Cleo Level(13,NPC,False) [7,28] 0x0 0x0 0x0 0x0 [Fire,Bolganone,Meteor,PureWater] BossHealAI
+UNIT Tara SwordFighter_F Cleo Level(12,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [BoldBlade,Longsword,Elixir,Torch] BossHealAI
+UNIT
+
+
+EnemyUnits:
+UNIT C19Phantom ForrestKnight_Dismounted 0x0 Level(7,Enemy,False) [41,16] 0x0 0x0 0x0 0x0 [BoldBlade,BraveSword,KnightProof] BossHealAI
+UNIT C19Mini1 Sniper 0x0 Level(6,Enemy,False) [40,11] 0x0 0x0 0x0 0x0 [SilverBow,Longbow] RangeAI
+UNIT C19Mini2 Halberdier 0x0 Level(6,Enemy,False) [37,25] 0x0 0x0 0x0 0x0 [SilverLance,YorsYari] RangeAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [BoldBlade] RangeAI
+UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
+UNIT C19Enemy Warrior C19Phantom Level(5,Enemy,True) [20,7] 0x0 0x0 0x0 0x0 [BoldCleaver,TrainedArc] RangeAI
+UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [14,4] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
+UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Lamfada] TwoActionAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [22,3] 0x0 0x0 0x0 0x0 [BigIron] RangeAI
+UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [33,6] 0x0 0x0 0x0 0x0 [BoldPike,Saunion] RangeAI
+UNIT C19Enemy Swordmaster C19Phantom Level(5,Enemy,True) [34,7] 0x0 0x0 0x0 0x0 [Longsword, BoldBlade] TwoActionAI
+UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [33,8] 0x0 0x0 0x0 0x0 [Greatlance] TwoActionAI
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [17,14] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [12,15] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [10,16] 0x0 0x0 0x0 0x0 [TrainedArc,ChestKey] RangeAI
+UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [25,18] 0x0 0x0 0x0 0x0 [SilverAxe] TwoActionAI
+UNIT C19Enemy Bard C19Phantom Level(19,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [Lightning] ChargeAI
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [11,26] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
+UNIT C19Enemy Halberdier C19Phantom Level(5,Enemy,True) [12,27] 0x0 0x0 0x0 0x0 [TrainedAxe,Lamfada] RangeAI
+UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [TrainedPike] RangeAI
+UNIT C19Enemy Swordmaster C19Phantom Level(5,Enemy,True) [22,18] 0x0 0x0 0x0 0x0 [StoneSword, BoldBlade] StallOneTurnAI
+UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [21,17] 0x0 0x0 0x0 0x0 [Elfire] TwoActionAI
+UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [19,10] 0x0 0x0 0x0 0x0 [Elfire] RangeAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [10,29] 0x0 0x0 0x0 0x0 [TrainedEdge,Horseslayer] TwoActionAI
+UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [18,26] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
+UNIT C19Enemy LanceArmor C19Phantom Level(19,Enemy,True) [16,31] 0x0 0x0 0x0 0x0 [Javelin,Lamfada] BossHealAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [23,10] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [32,25] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [29,24] 0x0 0x0 0x0 0x0 [Swordslayer] TwoActionAI
+UNIT C19Enemy Fighter C19Phantom Level(19,Enemy,True) [32,29] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [21,30] 0x0 0x0 0x0 0x0 [Luna,Arachnid] ChargeAI
+UNIT C19Enemy Warrior C19Phantom Level(5,Enemy,True) [29,29] 0x0 0x0 0x0 0x0 [BoldCleaver,Longbow] BossHealAI
+UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [27,14] 0x0 0x0 0x0 0x0 [Nosferatu,Sagittae,Physic] BossHealAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [30,9] 0x0 0x0 0x0 0x0 [BoldBlade] RangeAI
+UNIT C19Enemy LanceSoldier C19Phantom Level(19,Enemy,True) [39,5] 0x0 0x0 0x0 0x0 [Lamfada,BoldPike] TwoActionAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [40,9] 0x0 0x0 0x0 0x0 [BoldBlade] ChargeAI
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [32,20] 0x0 0x0 0x0 0x0 [SilverBow] ChargeAI
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [41,23] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT
+
+ThiefReinforcements:
+UNIT C19Enemy Thief C19Phantom Level(19,Enemy,True) [36,12] 0x0 0x0 0x0 0x0 [BoldBlade,ChestKey] ThiefAI
+UNIT C19Enemy Thief C19Phantom Level(19,Enemy,True) [36,20] 0x0 0x0 0x0 0x0 [BoldBlade,ChestKey] ThiefAI
+UNIT
+
+Thief1_B:
+UNIT C19Enemy Thief C19Phantom Level(15,Enemy,True) [18,1] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
+UNIT
+
+EnemyReinforcements_A:
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [36,12] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,20] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT
+
+EnemyReinforcements_B:
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [35,12] 0x0 0x0 0x0 0x0 [CounterBow] ChargeAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,13] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [35,20] 0x0 0x0 0x0 0x0 [MasterBow] ChargeAI
+UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,19] 0x0 0x0 0x0 0x0 [BoldBlade] ChargeAI
+UNIT
+
+EnemyReinforcements_Hurry1:
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
+UNIT C19Enemy DarkMage C19Phantom Level(19,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [Luna] ChargeAI
+UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Bolganone] ChargeAI
+UNIT C19Enemy Mage C19Phantom Level(19,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolganone] ChargeAI
+UNIT
+
+EnemyReinforcements_Hurry2:
+UNIT C19Enemy DarkBishop C19Phantom Level(5,Enemy,True) [0,14] 0x0 0x0 0x0 0x0 [Flux, Fenrir] ChargeAI
+UNIT C19Enemy DarkBishop C19Phantom Level(5,Enemy,True) [0,17] 0x0 0x0 0x0 0x0 [Flux, Fenrir] ChargeAI
+UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [0,7] 0x0 0x0 0x0 0x0 [Bolganone, Bolting] ChargeAI
+UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolganone, Bolting] ChargeAI
+UNIT
+
+ThiefReinforcementsEvent:
+CamOn
+LOAD1 1 ThiefReinforcements
+ENUN
+CamOff
+NoFade
+ENDA
+
+
+EnemyReinforcementsEvent_A:
+CamOn
+LOAD1 1 EnemyReinforcements_A
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_B:
+CamOn
+LOAD1 1 EnemyReinforcements_B
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_Hurry1:
+CamOn
+LOAD1 1 EnemyReinforcements_Hurry1
+ENUN
+CamOff
+NoFade
+ENDA
+
+EnemyReinforcementsEvent_Hurry2:
+CamOn
+LOAD1 1 EnemyReinforcements_Hurry2
+ENUN
+CamOff
+NoFade
+ENDA
+
+
+VolranTaraRecruitment:
+CameraCursor(Volran)
+CUSA Volran
+SetFatigue(Volran,0)
+CameraCursor(Tara)
+CUSA Tara
+SetFatigue(Tara,0)
+CenterTextbox(C19_Intro_Textbox)
+NoFade
+ENDA
+
+RunespearEvent:
+Text(Ch19_Tobie_Mish_Talk)
+GiveItem(Runespear,Tobie)
+NoFade
+ENDA
+
+KaiserschwertEvent:
+Text(Ch19_Kaiserschwert_Talk)
+GiveItem(Kaiserschwert,Loewe)
+ENUT 8
+NoFade
+ENDA
+
+KillLoeweIfNoKaiserschwertEvent:
+CHECK_EVENTID 8
+BNE 8 s0 sC
+	Text(Kaiser_Fail)
+	CALL GameOverStart
+LABEL 8
+ENDA
+
+BeginningScene:
+InterludeReturnRoutineASMC
+/*
+AddTrap(13,40,12)
+AddTrap(13,41,12)
+AddTrap(13,42,12)
+AddTrap(13,40,20)
+AddTrap(13,41,20)
+AddTrap(13,42,20)
+*/
+SetBackground(0x33)
+MUSC PMDSteamCaveID
+RemoveAllItem(Kaiserschwert)
+Text(Ch19_Loewe_Volran_Open1)
+SetBackground(0x34)
+Text(Ch19_Cleo_Tara_Open1)
+SetBackground(0x33)
+Text(Ch19_Loewe_Volran_Open2)
+EraseBackground
+LOAD1 0x1 EnemyUnits
+ENUN
+DismountAll
+LOAD1 0x1 NewPlayers
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+RemoveAll
+MUSC PMDSteamCaveID
+SetBackground(0x34)
+Text(Ch19_End)
+EraseBackground
+MNC2 Chapter20
+NoFade
+ENDA

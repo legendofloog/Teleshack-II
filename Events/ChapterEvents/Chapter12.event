@@ -12,27 +12,67 @@ PointerList:
 	POIN $0 $0 $0
 	POIN BeginningScene EndingScene
 
+//flags
+// 9 - Eitha/Leina quote
+// 18, 19 - Top left prison LOCA
+// 10 - top middle prison LOCA
+// 11 - top right prison LOCA
+// 12 - outside prison LOCA
+// 13 - Top left prison event
+// 14 - Top Middle Prison event
+// 15 - Top Right Prison event
+// 16 - Outside Prison event
+// 21 - top left prison event
+
+// 23 - Eitha generic quote
+// 24 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
+
+// 25 - turned on by the AFEV called by tiberius's death quote
+// 22 - turned on with tiberius death quote
+// 20 - turned on if Tiberius was succesfully captured
+
+
+
 TurnBasedEvents:
+TurnEventPlayer(24,DeadlordSpawn,10)
+TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
+TurnEventPlayer(0,ThiefAntiTurtle,3) //maybe make this guy show up a turn earlier? I don't mind him being really hard to get
 END_MAIN
+
 
 CharacterBasedEvents:
 END_MAIN
 
-LocationBasedEvents:
-Door(9,3)
-Door(15,5)
-Door(5,6)
-Door(3,11)
-Door(6,19)
-Door(13,24)
-Door(30,25)
-Chest(Mend,18,2)
-Chest(Mend,16,17)
-Chest(Mend,17,18)
 
+LocationBasedEvents:
+LOCA 18 TopLeftPrisonDoor [5,2] 0x12
+Chest(AngelicRobe,16,2)
+LOCA 10 TopMiddlePrisonDoor [10,3] 0x12
+LOCA 19 TopLeftPrisonDoor2 [3,4] 0x12
+LOCA 11 TopRightPrisonDoor [13,4] 0x12
+LOCA 24 DeadlordSpawn [2,11] 0x11
+LOCA 24 DeadlordSpawn [3,11] 0x11
+LOCA 24 DeadlordSpawn [4,11] 0x11
+Door(11,11)
+Door(14,11)
+Chest(AlairsGale,13,12)
+Chest(RedGem,15,12)
+LOCA 24 DeadlordSpawn [6,15] 0x11
+LOCA 24 DeadlordSpawn [6,16] 0x11
+LOCA 24 DeadlordSpawn [2,20] 0x11
+LOCA 24 DeadlordSpawn [3,20] 0x11
+LOCA 24 DeadlordSpawn [4,20] 0x11
+LOCA 12 OutsidePrisonDoor [14,21] 0x12
 END_MAIN
 
+
 MiscBasedEvents:
+AFEV 13 TopLeftPrisonOpened 18
+AFEV 13 TopLeftPrisonOpened 19
+AFEV 14 TopMiddlePrisonDoorOpened 10
+AFEV 15 TopRightPrisonDoorOpened 11
+AFEV 16 OutsidePrisonDoorOpened 12
+AFEV 25 TiberiusCaptureCheck 22
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
@@ -51,6 +91,16 @@ Tutorial:
 END_MAIN
 
 Traps1:
+	GreenSigil(2,11)
+	GreenSigil(3,11)
+	GreenSigil(4,11)
+	
+	GreenSigil(6,15)
+	GreenSigil(6,16)
+	
+	GreenSigil(2,20)
+	GreenSigil(3,20)
+	GreenSigil(4,20)
 	ENDTRAP
 	ALIGN 4
 
@@ -59,96 +109,253 @@ Traps2:
 	ALIGN 4
 
 Units1:
-  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [2,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Loewe 0x0 Cleo Level(1,Ally,False) [34,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [35,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,14] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [34,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,15] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [33,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [32,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
-  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,17] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Cleo 0x0 Cleo Level(1,Ally,False) [32,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Loewe 0x0 Cleo Level(1,Ally,False) [32,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [32,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [33,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [33,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Emil 0x0 Cleo Level(1,Ally,False) [33,3] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [30,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,11] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,10] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [29,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [31,12] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [28,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [29,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
+  UNIT Iskra 0x0 Cleo Level(1,Ally,False) [30,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
   UNIT
  
 MinkJoin:
-  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind] NoAI
+  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
   UNIT
 
-EnemyUnits1:
-  UNIT Eitha Sniper 0x0 Level(10,Enemy,False) [1,26] 0x0 0x0 0x0 0x0 [SilverBow] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [30,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [32,11] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  UNIT Selese Mage Cidor Level(12,Enemy,True) [30,11] 0x0 0x0 0x0 0x1 [Fire] AttackInRangeAI
-  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [34,10] 0x0 0x0 0x0 0x1 [IronLance] AttackInRangeAI
-  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [26,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [26,10] 0x0 0x0 0x0 0x1 [SteelLance] AttackInRangeAI
-  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [26,11] 0x0 0x0 0x0 0x1 [SteelAxe] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [26,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [29,3] 0x0 0x0 0x0 0x1 [IronLance,IronSword] AttackInRangeAI
-  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
-  UNIT Selese Thief Cidor Level(12,Enemy,True) [18,2] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [20,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [23,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [21,13] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [23,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+TiberiusJoin:
+  UNIT Tiberius Noble Cleo Level(4,Ally,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] NoAI
+  UNIT
+  
+IndoorEnemy:
+  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
+//turn 1
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [28,9] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
+//turn 2
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [23,7] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
+  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [23,8] 0x0 0x0 0x0 0x1 [SteelLance] BossAI
+  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [23,9] 0x0 0x0 0x0 0x1 [SteelAxe] BossAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [25,8] 0x0 0x0 0x0 0x1 [IronSword] BossAI 
+//turn 3
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [15,7] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
+  UNIT Selese Mage Cidor Level(12,Enemy,True) [13,9] 0x0 0x0 0x0 0x1 [Fire] StallOneTurnAI 
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [16,9] 0x0 0x0 0x0 0x1 [IronAxe] StallOneTurnAI 
+//turn 4
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] GroupTwoAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [ShortLance] GroupTwoAI
+  UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] GroupTwoAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [ShortSword] AttackInRangeAI //do not move! thief AI breaks without him
+//turn 5
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
+  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI //change to soldier
+//turn 6 
+  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI //change to soldier
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Thunder] TwoActionAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Lightning] AttackInRangeAI
+  UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+//turn 7
+  
+//turn 8
+
+//turn 9
+
   UNIT
 
-EnemyUnits2:
-  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [0,0] 0x0 0x0 0x0 0x1 [ThunderSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,5] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,6] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [9,8] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [5,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,12] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,14] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [2,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,15] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [3,16] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [8,17] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [13,19] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,19] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [20,20] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [15,22] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [28,22] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [34,23] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [18,24] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-  UNIT Selese Warrior Cidor Level(1,Enemy,True) [23,26] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] AttackInRangeAI
+OutdoorEnemy:
+//turn 1
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,2] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese RookKnight Cidor Level(12,Enemy,True) [28,3] 0x0 0x0 0x0 0x1 [IronSword,Javelin] AttackInRangeAI
+  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [27,3] 0x0 0x0 0x0 0x1 [IronAxe] AttackInRangeAI
+//turn 2
+  UNIT Selese Thief Cidor Level(12,Enemy,True) [17,5] 0x0 0x0 0x0 0x1 [IronSword,ChestKey] ThiefAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [22,5] 0x0 0x0 0x0 0x1 [IronAxe] BossAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [22,12] 0x0 0x0 0x0 0x1 [SteelLance] PursueWithoutHeedAI
+//turn 3
+  UNIT Selese Freelancer Cidor Level(12,Enemy,True) [23,18] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,18] 0x0 0x0 0x0 0x1 [IronSword] StallOneTurnAI
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [19,15] 0x0 0x0 0x0 0x1 [Greatlance] StallOneTurnAI
+//turn 4
+  UNIT Selese AxeKnight Cidor Level(12,Enemy,True) [12,18] 0x0 0x0 0x0 0x1 [Hurlbat,IronAxe] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [28,19] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [19,20] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+//turn 5 
+  UNIT Selese Warrior Cidor Level(1,Enemy,True) [15,19] 0x0 0x0 0x0 0x1 [SteelBow,SteelAxe] GroupOneAI
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [17,22] 0x0 0x0 0x0 0x1 [IronLance] GroupOneAI
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [18,23] 0x0 0x0 0x0 0x1 [IronAxe] GroupOneAI
+//turn 6 (maybe move the two-action cavs further back, and move the pegasus closer, or have her charge after a certain turn)
+  UNIT Selese LanceKnight Cidor Level(12,Enemy,True) [7,21] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [8,22] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
+  UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
+  UNIT Selese PegasusRider Cidor Level(12,Enemy,True) [33,23] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [14,20] 0x0 0x0 0x0 0x1 [ShortSword,DoorKey] BossAI
+//turn 7
+  UNIT Selese Myrmidon Cidor Level(9,Enemy,True) [4,21] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
+  UNIT Selese Freelancer Cidor Level(9,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
+//turn 8
+  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge] BossAI
+  
   UNIT
+
+ThiefSpawn:
+  UNIT Selese Thief Cidor Level(12,Enemy,True) [6,10] 0x0 0x0 0x0 0x1 [ShortSword,DoorKey,ChestKey] ThiefAI
+  UNIT
+  
+EithaSpawn:
+  UNIT Eitha Sniper_F 0x0 Level(10,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
+  UNIT
+
 
 PrisonGreens:
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [9,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [15,4] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [12,10] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [2,11] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [14,24] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian 0x0 Level(1,NPC,True) [31,25] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [3,2] 0x0 0x0 0x0 0x1 [Silence] NoAI
+  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [10,1] 0x0 0x0 0x0 0x1 [SecretBook] NoAI
+  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [13,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [13,23] 0x0 0x0 0x0 0x1 [Talisman] NoAI
   UNIT 
 
+
 BeginningScene:
-  MountAll
-  LOAD1 1 MinkJoin
-  LOAD1 1 EnemyUnits1
-  LOAD1 1 EnemyUnits2
-  LOAD1 1 PrisonGreens
-  ENUN
-  GotoPrepScreen
-  ENDA
+MountAll
+LOAD 1 MinkJoin
+LOAD 1 OutdoorEnemy
+LOAD 1 IndoorEnemy
+LOAD 1 PrisonGreens
+GotoPrepScreen
+ENDA
   
+TopLeftPrisonDoor:
+TILECHANGE 0
+NoFade
+ENDA
+
+TopLeftPrisonDoor2:
+TILECHANGE 3
+NoFade
+ENDA
+
 EndingScene:
-  MNC2 Ch12xInterlude
-  NoFade
-  ENDA
+CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
+BEQ 2 s0 sC
+CUSA Tiberius
+CHECK_EXISTS Tiberius //temporary
+BNE 2 s0 sC
+LOAD 1 TiberiusJoin
+LABEL 2
+FADI 15
+InterludeRemovalRoutineASMC
+MNC2 Ch12xInterlude
+NoFade
+ENDA
 
 
+TopLeftPrisonOpened:
+CHECK_EVENTID 21
+BEQ 16 s1 sC
+Text(Ch12PlaceholderText)
+GiveItem(Silence,0xFFFF)
+SVAL sB Coords(3,2)
+REMOVEUNIT(-2)
+ENUT 21
+LABEL 16
+NoFade
+ENDA
 
+TopMiddlePrisonDoor:
+TILECHANGE 2
+NoFade
+ENDA
 
+TopMiddlePrisonDoorOpened:
+Text(Ch12PlaceholderText)
+GiveItem(SecretBook,0xFFFF)
+SVAL sB Coords(10,1)
+REMOVEUNIT(-2)
+NoFade
+ENDA
 
+TopRightPrisonDoor:
+TILECHANGE 4
+NoFade
+ENDA
 
+TopRightPrisonDoorOpened:
+Text(Ch12PlaceholderText)
+GiveItem(RedGem,0xFFFF)
+SVAL sB Coords(13,2)
+REMOVEUNIT(-2)
+NoFade
+ENDA
 
+OutsidePrisonDoor:
+TILECHANGE 12
+NoFade
+ENDA
+
+OutsidePrisonDoorOpened:
+Text(Ch12PlaceholderText)
+GiveItem(Talisman,0xFFFF)
+SVAL sB Coords(13,23)
+REMOVEUNIT(-2)
+NoFade
+ENDA
+
+TiberiusCaptureCheck:
+CHECK_EXISTS Tiberius
+BEQ 5 s0 sC
+ENUT 20
+LABEL 5 //keep flag 20 off if tiberius was not captured
+NoFade
+ENDA
+
+DeadlordSpawn:
+CHECK_EXISTS Tiberius
+BEQ 3 s0 sC
+CHECK_EVENTID 20
+BEQ 3 s0 sC
+CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
+LABEL 3
+RemoveTrapAtCoords(2,11)
+RemoveTrapAtCoords(3,11)
+RemoveTrapAtCoords(4,11)
+RemoveTrapAtCoords(6,15)
+RemoveTrapAtCoords(6,16)
+RemoveTrapAtCoords(2,20)
+RemoveTrapAtCoords(3,20)
+RemoveTrapAtCoords(4,20)
+ENUT 13
+ENUT 14
+ENUT 15 
+ENUT 16
+CAMERA_CENTERED [3,16]
+TILECHANGE 8
+REMOVEALL_GREEN
+REMOVEALL_RED
+CHECK_EXISTS Tiberius
+BEQ 2 s0 sC
+CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
+LABEL 2
+LOAD 1 EithaSpawn
+		//give eitha point blank, boon, and maybe renewal
+SetFlag(0x4)
+		//reset player turn
+NoFade
+ENDA
+
+PegasusCharge:
+SetAI(33,23,0,0,4,0)
+NoFade
+ENDA
+
+ThiefAntiTurtle:
+CAMERA_CENTERED [6,10]
+LOAD 1 ThiefSpawn
+NoFade
+ENDA

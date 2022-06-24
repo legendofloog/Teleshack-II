@@ -22,7 +22,7 @@ void AftershockPostBattle(){
 		return;
 	}
 
-	Unit* target = GetUnit(gBattleTarget.unit.index);
+	Unit* target = &gBattleTarget.unit;
 
 	// ignore dead people
 	if (target->curHP <= 0){

@@ -111,7 +111,9 @@ NameTableEntry(ZykhraScrollName)
 NameTableEntry(RaioScrollName)
 NameTableEntry(LuzenScrollName)
 NameTableEntry(AmserScrollName)
-
+NameTableEntry(WornScrollName)
+NameTableEntry(DreedurScrollName)
+NameTableEntry(CherneScrollName)
 
 ALIGN 4
 GrowthScrollDescTable:
@@ -121,4 +123,6 @@ NameTableEntry(ZykhraScrollDesc)
 NameTableEntry(RaioScrollDesc)
 NameTableEntry(LuzenScrollDesc)
 NameTableEntry(AmserScrollDesc)
-
+NameTableEntry(WornScrollDesc)
+NameTableEntry(DreedurScrollDesc)
+NameTableEntry(CherneScrollDesc)

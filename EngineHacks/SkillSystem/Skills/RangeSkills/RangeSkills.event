@@ -13,6 +13,7 @@ RangeSkillsCheck:
 	POIN SkillTester2
 #endif // RANGE_SKILLS_CHECK_USES_SKILLTESTER2
 POIN RangeSkillList
+WORD ThunderWeapons
 
 ALIGN 4
 SharpshooterBonus:
@@ -35,10 +36,15 @@ TomeRangeBonus:
 #incbin "TomeRange/TomeRange.dmp"
 
 ALIGN 4
+FarShockBonus:
+#incbin "FarShock.dmp"
+
+ALIGN 4
 RangeSkillList:
 RangeSkill(SharpshooterID, SharpshooterBonus|1)
 RangeSkill(BowRangeUpID, BowRangeBonus|1)
 RangeSkill(StaffSavantID, StaffSavantBonus|1)
 RangeSkill(PointBlankID, PointBlankBonus|1)
 RangeSkill(TomeRangeUpID, TomeRangeBonus|1)
+RangeSkill(FarShockID, FarShockBonus|1)
 RangeSkill(0,0)	//End of list

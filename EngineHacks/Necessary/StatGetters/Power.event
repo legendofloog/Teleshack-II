@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pPowerModifiers: // Power
-	POIN prAddUnitPower prHalveIfCapturing prHalveIfRescuing prDebuffStr prAddEquipPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow prResolve prDefiantStr prPushStr prDismountedHorseStrDebuff prDismountedPegStrDebuff prDismountedDragonStrDebuff
+	POIN prAddUnitPower prHalveIfCapturing prHalveIfRescuing prDebuffStr prAddEquipPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow prResolve prDefiantStr prPushStr prDismountedHorseStrDebuff prDismountedPegStrDebuff prDismountedDragonStrDebuff prEquipmentStr
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -39,5 +39,8 @@ prFortressResistancePow:
 
 prItemPassivePow:
 	rPassiveStatBoosts(STAT_POWER)
+
+prEquipmentStr:
+	rEquipmentBonus(STAT_POWER)
 
 #endif // MODULAR_GETTER_POWER_EVENT

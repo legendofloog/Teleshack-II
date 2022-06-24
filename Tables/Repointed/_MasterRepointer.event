@@ -1,0 +1,3 @@
+#include "Portrait/repointedPortraitTable.event"
+#include "Text/repointedTextTable.event"
+//#include "Anim/repointedAnimTable.event"
