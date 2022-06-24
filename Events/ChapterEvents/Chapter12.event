@@ -319,6 +319,7 @@ TEXTEND
 REMA
 Text(Ch12DeadlordSpawn3)
 Text(Ch12DeadlordSpawn4)
+EraseBackground
 REMOVEALL_GREEN
 REMOVEALL_RED
 CHECK_EXISTS Tiberius
