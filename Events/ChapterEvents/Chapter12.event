@@ -126,7 +126,7 @@ MinkJoin:
   UNIT
   
 IndoorEnemy:
-  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
+  UNIT Tiberius Noble Cidor Level(7,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe,PureWater] AttackInRangeAI
@@ -234,6 +234,7 @@ Music(PMDSteamCaveID)
 TEXTCONT
 TEXTEND
 REMA
+SetBackground(BlackBackground)
 Text(Ch12BeginningScene4B)
 MUSC 0x7FFF
 SetBackground(0x0E)
