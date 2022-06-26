@@ -253,7 +253,7 @@ MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12BeginningScene9A
 TEXTEND
-RENA
+REMA
 SetBackground(0x18)//daytime forest
 Music(FF6AwakeningID)
 Text(Ch12BeginningScene9B)
