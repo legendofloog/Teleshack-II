@@ -166,7 +166,7 @@ AAAAAAAAHHHHHHHHHHH![A][X]
 
 //Cidor punches a hole in the wall
 
-##Ch12BeginningScene4
+##Ch12BeginningScene4A
 [MidLeft][LoadCidor][CloseEyes]
 //*hysterical noises in text form*
 [MidRight][LoadKwame]
@@ -180,7 +180,7 @@ It'll all be ok.[AN]
 [MidRight]
 C-cidor?[AN]
 [MidLeft]
-[ToggleSmile]ahh[Beat] hahaha[Beat] ahahaha![AN][OpenEyes]
+ahh[Beat] hahaha[Beat] ahahaha![AN][OpenEyes]
 Oh Athan, I'm the one who[N]
 should be apologizing.[AN]
 I almost gave into despair,[AN]
@@ -197,10 +197,9 @@ it was our only way out.[AN]
 [Event]//music change and future map eventing with the bow
 Behold; Daybreak, the bow of Chouwouj.[AN]
 [MidRight]
-!!! No! Why do you have that?![AN]
-[MidLeft][ClearFace]
-[MidRight][ClearFace]
-[Event]//screen fades to a black background. The ch8 boss's portrait shows up
+!!! No! Why do you have that?![A][X]
+
+##Ch12BeginningScene4B
 [MidLeft][LoadHege][DisableBlinking]
 [ThreeLineBox][FarFarLeft]
 It's quite amazing what people[N]
@@ -215,9 +214,9 @@ taken from the clutches of an[N]
 She wished to have me relay it to[N]
 general Argymos, presumably because[N]
 of his connection to the Lorekeepers.[AN]
-And that's not all she passed on to me[Beat][AN]
-[MidLeft][ClearFace]
-[Event]//screen fades back to the throne room
+And that's not all she passed on to me[Beat][A][X]
+
+##Ch12BeginningScene4C
 [MidLeft][LoadCidor]
 [MidRight][LoadKwame]
 [MidLeft][TwoLineBox]
@@ -290,10 +289,11 @@ As you wish.[A][X]
 
 
 //the scene with the Loewe and Cleo
-##Ch12BeginningScene9
+##Ch12BeginningScene9A
 [FarFarLeft]
-What? Are you serious? Mass execution?![AN]
-[Event]//Fade from black
+What? Are you serious? Mass execution?![A][X]
+
+##Ch12BeginningScene9B
 [MidRight][LoadMink]
 [Left][LoadLoewe]
 [FarLeft][LoadCleo]
@@ -381,16 +381,16 @@ believe me,[AN]
 Castle Selese is but a short[N]
 distance away at this point.[AN]
 You might as well strike[N]
-while the iron is hot.[AN]
-[FarLeft][ClearFace]
-[MidRight][ClearFace]
-[Event]//Black background, Cleo and Mink disappear
-[Left]
+while the iron is hot.[A][X]
+
+##Ch12BeginningScene9C
+[Left][LoadLoewe]
 [ToggleMouthMove]This was planned?[A] Spies?[AN]
 [Left][LoadLoeweAngry]
 Kwame, what else are you hiding[N]
-from us, you trecherous snake?![AN][ToggleMouthMove]
-[Event]//Loewe and the background switch back to normal, Cleo and Mink reappear
+from us, you trecherous snake?![A][X]
+
+##Ch12BeginningScene9D
 [Left][LoadLoewe]
 [MidRight][LoadMink]
 [FarLeft][LoadCleo]
