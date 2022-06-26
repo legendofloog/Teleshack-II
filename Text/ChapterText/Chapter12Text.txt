@@ -383,6 +383,7 @@ distance away at this point.[AN]
 You might as well strike[N]
 while the iron is hot.[A][X]
 
+//black background, loewe thinks to himself
 ##Ch12BeginningScene9C
 [Left][LoadLoewe]
 [ToggleMouthMove]This was planned?[A] Spies?[AN]
@@ -390,6 +391,7 @@ while the iron is hot.[A][X]
 Kwame, what else are you hiding[N]
 from us, you trecherous snake?![A][X]
 
+//return background to normal, conversation continues
 ##Ch12BeginningScene9D
 [Left][LoadLoewe]
 [MidRight][LoadMink]
@@ -643,7 +645,7 @@ T-that bow[Beat][AN]
 [Beat][Beat]we can be[Beat][N]
 [Beat]together[Beat]forever[Beat][AN]
 [ClearFace]
-[MidRight][LoadLeina]
+[MidRight][LoadLeina][ToggleInvert]
 This is all my fault.[CloseEyes][N]
 Why wasn't I more careful[Beat]?[CloseEyes][AN]
 [Beat]I have to do my part.[N]
@@ -658,31 +660,22 @@ for my mistake.[A][X]
 [MidLeft]
 Oh Loewe, Cleo. I'm so[N]
 glad you're both safe.[AN]
-Th-thank you Byelen for[N] 
+Th-thank you Byelen for[N]
 protecting them so.[AN]
-
-//Cleo: M-mother, we're here for you.
-//Dragana: Mother? O-oh Cleo, I n-never realized... you thought t-that way about me.
-//Th-that makes me so happy, I've always... always wanted to be c-called that.
-//*or*
-//I... never thought I'd be called that... It feels nice...
 
 [MidLeft]
 [Beat]what happened to Cidor?[AN]
 [Right]
-We[Beat] finally got him. [N]
+I[Beat] we finally got him. [N]
 Pierced with an arrow,[AN]
 like the pig he was.[N]
 It's finally over.[AN]
 [MidLeft]
+I wish it never had come[N]
+to this,[A] but he made[N]
+his choices.[AN] Nonetheless,[AN]
 I knew my faith in you[N]
 two would be well placed.[AN]
-I'm proud of the[N]
-both of you.[AN]
-With you two around,[AN]
-Decia will have a bright[N]
-future ahead of her.[AN]
-
 [MidLeft]
 But[Beat] this blood[Beat][N]
 these bodies[Beat][AN]
@@ -695,10 +688,22 @@ didn't do anything wrong![AN]
 [MidLeft]
 Oh, Cleo[Beat][N]
 Be at peace.[AN]
-
+*cough*
+[FarRight]
+Someone! Get a medi-[AN]
+[MidLeft]
+C-cleo, it's alright.[A] I don't know[N]
+what happened,[A] but I see the[N]
+writing on the w-wall.[AN]
+I know I shouldn't be here.[AN]
 [Right]
 Please don't leave us. Please![AN]
-
+[MidLeft]
+Y-you two don't need me, anymore[AN]
+you can[Beat] m-make your own[N]
+choices for[Beat] your[Beat][AN]
+[FarLeft]
+Dragana![AN]
 [MidLeft][CloseEyes]
 [Beat][Beat][A][X]
 
@@ -720,7 +725,7 @@ Why[Beat]?[AN]
 Loewe?[AN]
 [FarRight]
 Why[Beat][A][OpenEyes][Event] did you have a spy?[AN]
-Why did you never tell us that you[N] 
+Why did you never tell us that you[N]
 had been watching us this whole time?[AN]
 [MidLeft]
 What?![A] But I-[AN]
@@ -760,7 +765,7 @@ tell you two everything![AN]
 Put your bow down,[N]
 I'll cooperate.[AN][CloseEyes]
 But please give me some time,[AN]
-like you,these past few days[N]
+like you, these past few days[N]
 have taken a toll on me.[AN]
 [Right]
 [Beat][AN]
@@ -826,9 +831,9 @@ Ah, Oh Iskra[Beat][A][X]
 ##Ch12End3B
 [MidRight][LoadIskra]
 [Beat][A][X]
+//Iskra runs off
 
-
-//kwame sus journal
+//kwame sus journal (this bit of dialog is probably gonna get cut)
 ##Ch12End3C
 [FarLeft][LoadKwame][CloseEyes]
 Cidor you poor, desperate fool[Beat][AN]
@@ -975,7 +980,7 @@ I'll[Beat][A] I'll leave them alone.[AN]
 [MidLeft][LoadCleo][OpenEyes]
 Loewe, thank you.[A][X]
 
-//Kwame sus monologue
+//camera pans to kwame who was listening offscreen
 ##Ch12End5
 [MidRight][LoadKwame][ThreeLineBox][CloseEyes]
 They're just children, they[N]
