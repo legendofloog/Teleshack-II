@@ -228,18 +228,17 @@ FAWI 1
 FAWU 1
 Text(Ch12BeginningScene3)
 TEXTSTART
-TEXTSHOW Ch12BeginningScene4
+TEXTSHOW Ch12BeginningScene4A
 TEXTEND
 Music(PMDSteamCaveID)
 TEXTCONT
 TEXTEND
-SetBackground(BlackBackground)
-TEXTCONT
-TEXTEND
-SetBackground(0x0E)
-//EraseBackground
+REMA
+Text(Ch12BeginningScene4B)
 MUSC 0x7FFF
-TEXTCONT
+SetBackground(0x0E)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene4C
 TEXTEND
 Music(RiseAboveID)
 TEXTCONT
@@ -252,21 +251,18 @@ Text(Ch12BeginningScene8)
 SetBackground(BlackBackground)
 MUSC 0x7FFF
 TEXTSTART
-TEXTSHOW Ch12BeginningScene9
+TEXTSHOW Ch12BeginningScene9A
 TEXTEND
+RENA
 SetBackground(0x18)//daytime forest
 Music(FF6AwakeningID)
-TEXTCONT
-TEXTEND
+Text(Ch12BeginningScene9B)
 MUSI
 SetBackground(BlackBackground)
-TEXTCONT
-TEXTEND
+Text(Ch12BeginningScene9C)
 SetBackground(0x18)//daytime forest
 MUNO
-TEXTCONT
-TEXTEND
-REMA
+Text(Ch12BeginningScene9D)
 SetBackground(0x20)//nighttime forest different from 0x18
 Music(Nighttime)
 Text(Ch12BeginningScene10)
