@@ -12,6 +12,8 @@ BYTE CaptainsHelm
 BYTE RuneArrow
 BYTE FullHelm
 BYTE SlamBrace
+BYTE BlackAnklet
+BYTE DawnPendant
 BYTE 0x00 //terminator
 
 // Defense equipment loses durability on each hit taken

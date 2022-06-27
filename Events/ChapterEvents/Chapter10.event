@@ -334,7 +334,7 @@ EndingScene:
 	SetBackground(0x10)
 	Text(Ch10EndStormbrand)
 	GiveItem(Stormbrand,Iskra)
-
+	ENUT 0x8D
 	LABEL 4
 	FADI 15
 	SendAll(Radnitz)

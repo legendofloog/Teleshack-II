@@ -23,6 +23,31 @@
 #define FreelancerClassCard 0xBB
 #define ChampionClassCard 0xBC
 #define LongBallistaClassCard 0xBD
+#define SwordfighterFClassCard 0x150
+#define HeroFClassCard 0x151
+#define MyrmidonFClassCard 0x152
+#define SwordmasterFClassCard 0x153
+#define ArcherFClassCard 0x154
+#define SniperFClassCard 0x155
+#define MageFClassCard 0x156
+#define SageFClassCard 0x157
+#define MageKnightFClassCard 0x158
+#define HighPriestFClassCard 0x159
+#define DarkMageFClassCard 0x15A
+#define DarkBishopFClassCard 0x15B
+#define PriestFClassCard 0x15C
+#define ThiefFClassCard 0x15D
+#define HunterFClassCard 0x15F
+#define WarriorFClassCard 0x160
+#define BrigandFClassCard 0x161
+#define AxefighterClassCard 0x162
+#define AxefighterFClassCard 0x163
+#define ThiefFighterFClassCard 0x164
+#define BardFClassCard 0x165
+#define CorsairFClassCard 0x166
+#define BerserkerFClassCard 0x167
+#define DevoteeMClassCard 0x168
+
 
 ALIGN 4
 LanceArmorClassCardData:
@@ -222,3 +247,195 @@ ALIGN 4
 LongBallistaClassCardPal:
 #incbin "Dmp/Ballistician (U) {Aruka, Yggdra}.png_pal.dmp"
 setCardEntry(LongBallistaClassCard, LongBallistaClassCardData, LongBallistaClassCardPal)
+
+ALIGN 4
+SwordfighterFClassCardData:
+#incbin "Dmp/Mercenary (F) Sword {Uncredited}.dmp"
+ALIGN 4
+SwordfighterFClassCardPal:
+#incbin "Dmp/Mercenary (F) Sword {Uncredited}.png_pal.dmp"
+setCardEntry(SwordfighterFClassCard, SwordfighterFClassCardData, SwordfighterFClassCardPal)
+
+ALIGN 4
+HeroFClassCardData:
+#incbin "Dmp/Hero (F) Sword {RobertFPY}.dmp"
+ALIGN 4
+HeroFClassCardPal:
+#incbin "Dmp/Hero (F) Sword {RobertFPY}.png_pal.dmp"
+setCardEntry(HeroFClassCard, HeroFClassCardData, HeroFClassCardPal)
+
+ALIGN 4
+MyrmidonFClassCardData:
+#incbin "Dmp/Myrmidon (F) Sword {L95}.dmp"
+ALIGN 4
+MyrmidonFClassCardPal:
+#incbin "Dmp/Myrmidon (F) Sword {L95}.png_pal.dmp"
+setCardEntry(MyrmidonFClassCard, MyrmidonFClassCardData, MyrmidonFClassCardPal)
+
+ALIGN 4
+SwordmasterFClassCardData:
+#incbin "Dmp/Swordmaster (F) Sword {L95}.dmp"
+ALIGN 4
+SwordmasterFClassCardPal:
+#incbin "Dmp/Swordmaster (F) Sword {L95}.png_pal.dmp"
+setCardEntry(SwordmasterFClassCard, SwordmasterFClassCardData, SwordmasterFClassCardPal)
+
+ALIGN 4
+ArcherFClassCardData:
+#incbin "Dmp/Archer (F) Bow {L95}.dmp"
+ALIGN 4
+ArcherFClassCardPal:
+#incbin "Dmp/Archer (F) Bow {L95}.png_pal.dmp"
+setCardEntry(ArcherFClassCard, ArcherFClassCardData, ArcherFClassCardPal)
+
+ALIGN 4
+SniperFClassCardData:
+#incbin "Dmp/Sniper (F) Bow {L95}.dmp"
+ALIGN 4
+SniperFClassCardPal:
+#incbin "Dmp/Sniper (F) Bow {L95}.png_pal.dmp"
+setCardEntry(SniperFClassCard, SniperFClassCardData, SniperFClassCardPal)
+
+ALIGN 4
+MageFClassCardData:
+#incbin "Dmp/Mage (F) Magic {Uncredited}.dmp"
+ALIGN 4
+MageFClassCardPal:
+#incbin "Dmp/Mage (F) Magic {Uncredited}.png_pal.dmp"
+setCardEntry(MageFClassCard, MageFClassCardData, MageFClassCardPal)
+
+ALIGN 4
+SageFClassCardData:
+#incbin "Dmp/Sage (F) Reshade {L95, HyperGammaSpaces}.dmp"
+ALIGN 4
+SageFClassCardPal:
+#incbin "Dmp/Sage (F) Reshade {L95, HyperGammaSpaces}.png_pal.dmp"
+setCardEntry(SageFClassCard, SageFClassCardData, SageFClassCardPal)
+
+ALIGN 4
+MageKnightFClassCardData:
+#incbin "Dmp/Mage Knight (F) Magic {L95}.dmp"
+ALIGN 4
+MageKnightFClassCardPal:
+#incbin "Dmp/Mage Knight (F) Magic {L95}.png_pal.dmp"
+setCardEntry(MageKnightFClassCard, MageKnightFClassCardData, MageKnightFClassCardPal)
+
+ALIGN 4
+HighPriestFClassCardData:
+#incbin "Dmp/Bishop (F) Staff {L95}.dmp"
+ALIGN 4
+HighPriestFClassCardPal:
+#incbin "Dmp/Bishop (F) Staff {L95}.png_pal.dmp"
+setCardEntry(HighPriestFClassCard, HighPriestFClassCardData, HighPriestFClassCardPal)
+
+ALIGN 4
+DarkMageFClassCardData:
+#incbin "Dmp/Shaman (F) Magic {Uncredited}.dmp"
+ALIGN 4
+DarkMageFClassCardPal:
+#incbin "Dmp/Shaman (F) Magic {Uncredited}.png_pal.dmp"
+setCardEntry(DarkMageFClassCard, DarkMageFClassCardData, DarkMageFClassCardPal)
+
+ALIGN 4
+DarkBishopFClassCardData:
+#incbin "Dmp/Druid (F) Magic {L95}.dmp"
+ALIGN 4
+DarkBishopFClassCardPal:
+#incbin "Dmp/Druid (F) Magic {L95}.png_pal.dmp"
+setCardEntry(DarkBishopFClassCard, DarkBishopFClassCardData, DarkBishopFClassCardPal)
+
+ALIGN 4
+PriestFClassCardData:
+#incbin "Dmp/Cleric (F) Staff {flasuban}.dmp"
+ALIGN 4
+PriestFClassCardPal:
+#incbin "Dmp/Cleric (F) Staff {flasuban}.png_pal.dmp"
+setCardEntry(PriestFClassCard, PriestFClassCardData, PriestFClassCardPal)
+
+ALIGN 4
+ThiefFClassCardData:
+#incbin "Dmp/Thief (F) Sword {L95}.dmp"
+ALIGN 4
+ThiefFClassCardPal:
+#incbin "Dmp/Thief (F) Sword {L95}.png_pal.dmp"
+setCardEntry(ThiefFClassCard, ThiefFClassCardData, ThiefFClassCardPal)
+
+ALIGN 4
+HunterFClassCardData:
+#incbin "Dmp/Hunter (F) {Spud, Jj09}.dmp"
+ALIGN 4
+HunterFClassCardPal:
+#incbin "Dmp/Hunter (F) {Spud, Jj09}.png_pal.dmp"
+setCardEntry(HunterFClassCard, HunterFClassCardData, HunterFClassCardPal)
+
+ALIGN 4
+WarriorFClassCardData:
+#incbin "Dmp/Warrior (F) Axe {Jj09}.dmp"
+ALIGN 4
+WarriorFClassCardPal:
+#incbin "Dmp/Warrior (F) Axe {Jj09}.png_pal.dmp"
+setCardEntry(WarriorFClassCard, WarriorFClassCardData, WarriorFClassCardPal)
+
+ALIGN 4
+BrigandFClassCardData:
+#incbin "Dmp/Brigand (F) Axe {ltranc, Jj09, HyperGammaSpaces}.dmp"
+ALIGN 4
+BrigandFClassCardPal:
+#incbin "Dmp/Brigand (F) Axe {ltranc, Jj09, HyperGammaSpaces}.png_pal.dmp"
+setCardEntry(BrigandFClassCard, BrigandFClassCardData, BrigandFClassCardPal)
+
+ALIGN 4
+AxefighterFClassCardData:
+#incbin "Dmp/Fighter (F) Axe {Pikmin, flasuban, Jj09}.dmp"
+ALIGN 4
+AxefighterFClassCardPal:
+#incbin "Dmp/Fighter (F) Axe {Pikmin, flasuban, Jj09}.png_pal.dmp"
+setCardEntry(AxefighterFClassCard, AxefighterFClassCardData, AxefighterFClassCardPal)
+
+ALIGN 4
+AxefighterClassCardData:
+#incbin "Dmp/Fighter (M) Tellius-Style Axe {flasuban}.dmp"
+ALIGN 4
+AxefighterClassCardPal:
+#incbin "Dmp/Fighter (M) Tellius-Style Axe {flasuban}.png_pal.dmp"
+setCardEntry(AxefighterClassCard, AxefighterClassCardData, AxefighterClassCardPal)
+
+ALIGN 4
+ThiefFighterFClassCardData:
+#incbin "Dmp/Rogue (F) {L95}.dmp"
+ALIGN 4
+ThiefFighterFClassCardPal:
+#incbin "Dmp/Rogue (F) {L95}.png_pal.dmp"
+setCardEntry(ThiefFighterFClassCard, ThiefFighterFClassCardData, ThiefFighterFClassCardPal)
+
+ALIGN 4
+BardFClassCardData:
+#incbin "Dmp/Mage (F) Hoodless  {L95}.dmp"
+ALIGN 4
+BardFClassCardPal:
+#incbin "Dmp/Mage (F) Hoodless  {L95}.png_pal.dmp"
+setCardEntry(BardFClassCard, BardFClassCardData, BardFClassCardPal)
+
+ALIGN 4
+CorsairFClassCardData:
+#incbin "Dmp/Pirate (F) Axe {HyperGammaSpaces}.dmp"
+ALIGN 4
+CorsairFClassCardPal:
+#incbin "Dmp/Pirate (F) Axe {HyperGammaSpaces}.png_pal.dmp"
+setCardEntry(CorsairFClassCard, CorsairFClassCardData, CorsairFClassCardPal)
+
+ALIGN 4
+BerserkerFClassCardData:
+#incbin "Dmp/Berserker (F) Fixed Leg Axe {ZoramineFae, Der}.dmp"
+ALIGN 4
+BerserkerFClassCardPal:
+#incbin "Dmp/Berserker (F) Fixed Leg Axe {ZoramineFae, Der}.png_pal.dmp"
+setCardEntry(BerserkerFClassCard, BerserkerFClassCardData, BerserkerFClassCardPal)
+
+ALIGN 4
+DevoteeMClassCardData:
+#incbin "Dmp/Monk (M) Magic {Blademaster, ltranc}.dmp"
+ALIGN 4
+DevoteeMClassCardPal:
+#incbin "Dmp/Monk (M) Magic {Blademaster, ltranc}.png_pal.dmp"
+setCardEntry(DevoteeMClassCard, DevoteeMClassCardData, DevoteeMClassCardPal)

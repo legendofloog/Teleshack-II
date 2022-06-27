@@ -56,7 +56,7 @@ A lightweight axe.[X]
 Claymore[X]
 
 ## ClaymoreDesc
-A high quality blade. Eff vs Cavalry[X]
+A high quality blade. Eff vs. [HorseIcon][X]
 
 ## MarksmanBowName
 [_M][_a][_r][_k][_s][_m][_a][_n][_sp][_B][_o][_w][X]
@@ -409,19 +409,19 @@ Severs time's threads. Eff. vs. blessed.[X]
 Crowned Pyre[X]
 
 ## CrownPyreDesc *
-Ignores 25% Res. Executes foes below 25% HP.[X]
++Atk = 25% of foe's cur. HP. Ignores 50% Res.[X]
 
 ## StormbreakerName
 [_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
 
 ## StormbreakerDesc *
-At max move, +30 Hit/Crit (+40 at max range).[X]
+At max range, +30 Hit/Crit (+40 at max move).[X]
 
 ## AbsoluteZeroName
 [_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
 
 ## AbsoluteZeroDesc *
--2 Atk/AS to foes in 2 spaces, -4 in terrain.[X]
+-2 Atk/AS to foes in 2 spaces, -6 if unit is in terrain.[X]
 
 ## DawnEyeName
 Eye of Dawn[X]
@@ -433,7 +433,7 @@ Restores HP to unit = damage dealt.[X]
 Faith's Wind[X]
 
 ## FaithWindDesc *
-Hits twice at 1 range. Cancels WTD at 2 range.[X]
+If Spd is higher, AS +3, Brave if foe can't counter.[X]
 
 ## DancingBladeName
 Dancing Bld.[X]
@@ -451,7 +451,7 @@ Taodao[X]
 Rune Arrow[X]
 
 ## RuneArrowDesc
-[LockIcon] Tao. Makes attacks magical.[X]
+[LockIcon] Tao. Adds Mag to Crit.[X]
 
 ## BoneClubName
 Bone Club[X]
@@ -474,7 +474,7 @@ Worn Scroll[X]
 ## WornScrollDesc
 Some power still lingers[N]
 within this faded scroll.[N]
-+5% HP, +5% Str, +5% Skl[X]
++5% HP, +5% Str, +5% Mag, +5% Skl[X]
 
 ## WindBowName
 Wind Bow[X]
@@ -602,3 +602,64 @@ Slam Brace[X]
 Almost strong enough to push a[N]
 whale. Allows user to Smite[N]
 adjacent units 2 tiles away.[X]
+
+## ZweihanderName
+Zweihander[X]
+
+## ZweihanderDesc
+Incredible blade. Eff vs. [HorseIcon][X]
+
+## DeadeyeBowName
+[_D][_e][_a][_d][_e][_y][_e][_SP][_B][_o][_w][X]
+
+## DeadeyeBowDesc
+Powerful bow with great range.[X]
+
+## MoonlightBladeName
+[_M][_o][_o][_n][_l][_i][_g][_h][_t][_SP][_B][_l][_a][_d][_e][X]
+
+## MoonlightBladeDesc
+Grants +5 Mag.[X]
+
+## GlaiveName
+Glaive[X]
+
+## GlaiveDesc
+Incredible lance. Eff vs. [HorseIcon][X]
+
+## HolyspearName
+Holyspear[X]
+
+## HolyspearDesc
+Protects from effectives. +5 Def/Res.[X]
+
+## CrusherName
+Crusher[X]
+
+## CrusherDesc
+A mighty magic axe gifted by Mihail.[X]
+
+## BlackAnkletName
+Black Anklet[X]
+
+## BlackAnkletDesc
++5 Str/Mag. Reduces HP by 10 after[N]
+combat. Min. HP after this effect is 1.[X]
+
+## BoltbrandName
+Boltbrand[X]
+
+## BoltbrandDesc
+[LockIcon] Tiberius. Brave. Magic sword.[X]
+
+## DawnPendantName
+Dawn Pendant[X]
+
+## DawnPendantDesc
+[LockIcon]Cromar. Banishes the darkness.[X]
+
+## ImpalerName
+Impaler[X]
+
+## ImpalerDesc
+[LockIcon]Boro. Negates Def. A Chouwoujian lance.[X]

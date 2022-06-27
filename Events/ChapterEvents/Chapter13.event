@@ -93,7 +93,7 @@ UNIT Cythes DarkMage Veniamin Level(10,Enemy,True)[13,15] 0x0 0x0 0x0 0x0 [Flux]
 UNIT Cythes Hunter Veniamin Level(12,Enemy,True)[13,14] 0x0 0x0 0x0 0x0 [Longbow] BossAI
 UNIT Cythes AxeArmor Veniamin Level(12,Enemy,True)[14,14] 0x0 0x0 0x0 0x0 [SilverAxe] BossAI
 UNIT Cythes AxeArmor Veniamin Level(12,Enemy,True)[14,15] 0x0 0x0 0x0 0x0 [SilverAxe] BossAI
-UNIT Cythes General Veniamin Level(1,Enemy,True)[1,0] 0x0 0x0 0x0 0x0 [BigIron,DaShoota,Miaodao,YorsYari] [0xD 0x3 0x4 0x0]
+UNIT Cythes General Veniamin Level(1,Enemy,True)[1,0] 0x0 0x0 0x0 0x0 [Greatbow,SilverSword,HandAxe,LongLance] [0xD 0x3 0x4 0x0]
 UNIT Cythes Hunter Veniamin Level(12,Enemy,True)[15,8] 0x0 0x0 0x0 0x0 [MarksmanBow,GoddessIcon] AttackInRangeAI
 UNIT Cythes MageArmor Veniamin Level(12,Enemy,True)[14,11] 0x0 0x0 0x0 0x0 [Thunder] BossAI
 UNIT Cythes BowKnight Veniamin Level(12,Enemy,True)[4,0] 0x0 0x0 0x0 0x0 [SteelBow] TwoActionAI

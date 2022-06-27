@@ -78,7 +78,7 @@ void CheckIfFatigued(){
 }
 
 int GetCurrentPromotedLevelBonus(){
-    return 14; //every promoted unit hits 15 unpromoted
+    return 14; //every promoted unit hits 10 unpromoted
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
@@ -133,4 +133,14 @@ void CheckIfTileChangeTriggered(){
         return;
     }
     gEventSlot[0xC] = 0;
+}
+
+void CheckIfTargetUnitWasCaptured(){
+    BattleUnit* target = &gBattleTarget;
+    if(target->unit.state & US_DEAD){ //pretty sure captured units aren't considered dead?
+        gEventSlot[0xC] = 0; //return false in 0xC
+        return;
+    }
+    gEventSlot[0xC] = 1; //0 HP + not dead? should be captured
+    return;
 }

@@ -61,11 +61,11 @@ prDismountedHorseDefDebuff:
 ALIGN 4
 prDismountedPegDefDebuff:
 	rIfUnitIsDismounted(PegasusDismountType)
-		rSubConst(1)
+		rSubConst(2)
 ALIGN 4
 prDismountedDragonDefDebuff:
 	rIfUnitIsDismounted(DragonDismountType)
-		rSubConst(2)
+		rSubConst(1)
 ALIGN 4
 prDismountedHorseSpdDebuff:
 	rIfUnitIsDismounted(HorseDismountType)

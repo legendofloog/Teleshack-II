@@ -49,13 +49,13 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x2F Nikolas,1,15
 0x30 Sera,0,5
 0x31 Shaw,4,15
-0x32 Apsis,0,66
+0x32 Apsis,7,88
 0x33 Ojasvi,3,35
 0x34 Darcy,0,5
-0x35 Groto,0,125
+0x35 Groto,0,90
 0x36 Tao,10,50
 0x37 Zhara,1,30
-0x38 Volran,4,35
+0x38 Volran,5,40
 0x39 Tara,0,5
 0x3A Jerry,-1,0
 0x3B Lyre,2,10
@@ -64,15 +64,15 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x3E Matthias,5,45
 0x3F KwameReal,13,100
 0x40 Kofi,5,20
-0x41 ,0,0
-0x42 ,0,0
-0x43 ,0,0
-0x44 ,3,10
-0x45 ,2,55
+0x41 TrajanReal,-1,1
+0x42 Locke,-1,1
+0x43 Elias,0,10
+0x44 Boro,0,0
+0x45,0,0
 0x46 ,10,40
 0x47,2,5
 0x48 ,0,5
-0x49 Johanna (Ch 10),3,5
+0x49,3,5
 0x4A Elias (Ch10),0,10
 0x4B Eitha (Ch 6),13,5
 0x4C Hamdi (Ch16),8,5
@@ -90,15 +90,15 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x58 Aurora (Ch 11),2,55
 0x59 Wrathgar (Ch 9),2,5
 0x5A Cidor (Ch 10),0,5
-0x5B Beran (Ch 10B),0,5
-0x5C Cyclops (Ch 12B),2,5
-0x5D Wight (Ch 11A),3,15
-0x5E Deathgoyle (Ch 11B),2,5
-0x5F Entombed (Monster Boss),2,5
-0x60 -,3,5
-0x61 -,3,5
-0x62 -,0,0
-0x63 -,0,0
+0x5B Johanna (Ch 10),3,5
+0x5C Kassandra,0,1
+0x5D Artemis,3,15
+0x5E Mihail,3,5
+0x5F Saif,5,35
+0x60 CoraliaReal,3,5
+0x61 Mihail's,3,5
+0x62 Saif's ,0,0
+0x63 Conscript,0,0
 0x64 Hunter,0,0
 0x65 Kwame,0,0
 0x66 Trajan,0,10
@@ -118,7 +118,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x74 Veid,0,0
 0x75 Barod,0,0
 0x76 McCallum,0,0
-0x77 Gladiator,2,15
+0x77 Gladiator,0,0
 0x78 Zeus,2,20
 0x79 ArenaSpectator,0,0
 0x7A Civilian1,0,0
@@ -184,8 +184,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0xB6 Monster,0,0
 0xB7 Monster,0,0
 0xB8 Monster,0,0
-0xB9 Monster,0,0
-0xBA Monster (Gorgon Egg?),0,0
+0xb9 Maryn,6,30
+0xba Viktor,11,40
 0xBB Monster,0,0
 0xBC Monster,0,0
 0xBD Monster (Dracozombie?),0,0

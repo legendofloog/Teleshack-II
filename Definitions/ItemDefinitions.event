@@ -85,7 +85,7 @@
 #define Meteor 0x4A
 #define Heal 0x4B
 #define Mend 0x4C
-#define Recover 0x4D
+#define Maharaghi 0x4D
 #define Physic 0x4E
 #define Fortify 0x4F
 #define Restore 0x50
@@ -159,7 +159,8 @@
 #define HoundingBow 0x93
 #define Daybreak 0x94
 #define HeavySpear 0x95
-
+#define Holyspear 0x96
+#define Crusher 0x97
 #define ArgymosCrest 0x98
 
 #define CrownPyreItem 0x9a
@@ -169,12 +170,16 @@
 #define FaithWindItem 0x9e
 #define DancingBladeItem 0x9f
 #define BoneClub 0xa0
-#define Maharaghi 0xa1
+
 #define Taodao 0xa2
 #define RuneArrow 0xa3
+#define BlackAnklet 0xa4
 
+#define Boltbrand 0xa8
+#define DawnPendant 0xa9
 #define Dragonstone 0xAA
 #define Unmoor 0xAB
+#define Impaler 0xAC
 
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
@@ -238,3 +243,7 @@
 #define Sagittae 0xEC
 #define Kukri 0xED
 #define SlamBrace 0xEE
+#define Zweihander 0xEF
+#define DeadeyeBow 0xF0
+#define MoonlightBlade 0xF1
+#define Glaive 0xF2

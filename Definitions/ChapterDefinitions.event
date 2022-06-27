@@ -158,6 +158,8 @@
 #define FF5CaveObjectID 0x99
 #define ThraciaFieldsObjectID 0x76
 #define DesertBastionObjectID 0xA4
+#define FlasuVillage2SnowObjectID 0xBD
+#define FF2TownObjectID 0xBE
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
@@ -165,6 +167,9 @@
 #define FF5CavePaletteID 0x9A
 #define ThraciaFieldsAutumnPaletteID 0x77
 #define DesertBastionPaletteID 0xA5
+#define FlasubanVillageSnowPaletteID 0xBB
+#define FF2TownPaletteID 0xBF
+#define FF2TownSnowPaletteID 0xc1
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -173,6 +178,8 @@
 #define FF5CaveConfigID 0x9B
 #define ThraciaFieldsMapchipConfigID 0x7C
 #define DesertBastionMapchipConfigID 0xA6
+#define FlasuVillage2SnowMapchipConfigID 0xBC
+#define FF2TownConfigID 0xC0
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B

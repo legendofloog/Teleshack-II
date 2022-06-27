@@ -387,7 +387,7 @@ NoFade
 ENDA
 
 EndingScene:
-SetFlag(0x19)
+SetFlag(0x20)
 SetFlag(0x01)
 FadeOutMusic
 FadeToBlack

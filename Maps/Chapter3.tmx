@@ -5132,7 +5132,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="20" name="Cracked Wall B" width="30" height="21" visible="0">
+ <layer id="20" name="Cracked Wall B" width="30" height="21" visible="0" locked="1">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="7"/>

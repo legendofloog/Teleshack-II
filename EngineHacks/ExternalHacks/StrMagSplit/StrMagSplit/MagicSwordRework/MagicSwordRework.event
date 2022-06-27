@@ -39,11 +39,14 @@ POP
 	MagicSwordEntry(ThunderSword,0x0,False,HitDef,HitRes)
 	MagicSwordEntry(IceSword,0x0,False,HitDef,HitRes)
 	MagicSwordEntry(StoneSword,0x0,False,HitDef,HitRes)
+	MagicSwordEntry(Boltbrand,0x0,False,HitDef,HitRes)
 	MagicSwordEntry(MysticLance,0x1,True,HitRes,HitRes)
 	MagicSwordEntry(LunarAxe,0x2,True,HitRes,HitRes)
 	MagicSwordEntry(FireDrive,0x2,True,HitRes,HitRes)
 	MagicSwordEntry(WindBow,0x3,True,HitRes,HitRes)
 	MagicSwordEntry(Starcutter,0x0,True,HitRes,HitRes)
+    MagicSwordEntry(MoonlightBlade,WeaponTypeLight,False,HitDef,HitRes)
+	MagicSwordEntry(Crusher,0x2,True,HitRes,HitRes)
 	BYTE 0 0 0 //terminator
 
 

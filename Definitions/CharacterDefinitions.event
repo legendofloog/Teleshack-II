@@ -63,6 +63,11 @@
 #define Matthias 0x3E
 #define KwameReal 0x3F
 #define Kofi 0x40
+#define TrajanReal 0x41
+#define Locke 0x42
+#define EliasReal 0x43
+#define BoroReal 0x44
+
 
 // Chapter 1 Bosses
 #define Raschwitz_Ch1 0x55
@@ -91,7 +96,7 @@
 
 // Chapter 10 stuff
 #define Cidor 0x5A
-#define Johanna 0x49
+#define Johanna 0x5B
 #define Elias 0x4a
 #define SeleseProvoke 0x98
 #define Bandit 0x99
@@ -199,6 +204,22 @@
 #define DeathRattle 0xB7
 #define Chouwouj 0xB8
 
+//Chapter 22 Stuff
+#define Eleanor 0xBF
+
+//Chapter 23 Stuff
+#define KassandraReal 0x5C
+#define Artemis 0x5D
+#define Mihail 0x5E
+#define Saif 0x5F
+#define CoraliaReal 0x60
+#define Mihails 0x61
+#define Saifs 0x62
+#define Conscript 0x63
+#define Maryn 0xb9
+#define Viktor 0xba
+
+
 #define Breguet 0x46
 #define Bazba 0x48
 #define Entombed_boss 0x49
@@ -214,8 +235,6 @@
 #define Gorgon_boss 0x56
 #define Riev 0x57
 #define Gheb 0x5A
-#define Beran 0x5B
-#define Cyclops_boss 0x5C
 #define Wight_boss 0x5D
 #define Deathgoyle_boss 0x5E
 #define Zonta 0x6A

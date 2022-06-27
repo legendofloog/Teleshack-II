@@ -105,3 +105,21 @@ SongTable(TomokoQOH, song01A2, MapMusicGroup)
 SongTable(SorrowsDistortion, songC3, BattleMusicGroup)
 #include "MusicEvents/GuardianSignsLegendary.event" // credit to sme!
 SongTable(GuardianSignsLegendary, LegendTheme, MapMusicGroup)
+#include "MusicEvents/WhyAreWeWithoutHope(Devvy).event"
+SongTable(WhyAreWeWithoutHopeID, WhyAreWeWithoutHope, MapMusicGroup)
+#include "MusicEvents/Tales Of Symphonia - Encounter With The Renegades {A Reliable Chair}.event"
+SongTable(RenegadesID, songEncounterWithRenegades, MapMusicGroup)
+#include "MusicEvents/Tales Of Symphonia - Like A Glint Of Light {A Reliable Chair}.event"
+SongTable(LightGlintID, LikeAGlintOfLight, BattleMusicGroup)
+#include "MusicEvents/Golden Sun - Saturos Battle {Tristan Hollow}.event"
+SongTable(SaturosBattleID, GS_SaturosBattle, BattleMusicGroup)
+#include "MusicEvents/Tales Of Symphonia - Shihna {A Reliable Chair}.event"
+SongTable(SheenaID, songShihna, MapMusicGroup)
+#include "MusicEvents/Golden Sun - Mars Lighthouse {A Reliable Chair}.event"
+SongTable(MarsLighthouseID, songMarsLighthouse, MapMusicGroup)
+#include "MusicEvents/Tales Of Vesperia - A Tragic Decision {A Reliable Chair}.event"
+SongTable(ToV_TragicDecisionID, ToV_TragicDecision, MapMusicGroup)
+#include "MusicEvents/Golden Sun The Lost Age - Walking Forward With Determination {RandomWizard}.event"
+SongTable(GS_TLA_WalkingForwardWithDeterminationID, WalkingForwardWithDetermination, MapMusicGroup)
+#include "MusicEvents/FF5 - Battle on the Big Bridge {Pandan}.event"
+SongTable(FF5_BattleOnTheBigBridgeID, BattleOnTheBigBridge, BattleMusicGroup)

@@ -467,7 +467,7 @@ Loewe[Beat]? Cleo[Beat]? Are you[N]
 two there[Beat]? Save me[Beat][A][CloseEyes][X]
 
 ## MatthiasDeathQuoteText
-[MidRight][LoadFaolan]
+[MidRight][LoadMatthias]
 May our future[N]
 be bathed in light[Beat][A][CloseEyes][X]
 
@@ -522,3 +522,20 @@ Is this the vaunted[N]
 strength of Athanasius?[AN]
 No, impossible[Beat] [HalfCloseEyes]it's the[N]
 strength of mortals[Beat]?[A][X]
+
+## EliasDeathQuoteText
+[MidRight][LoadElias]
+[Beat]Looks like this is the end[N]
+of the line for me, Cleo.[AN]
+I'm leaving the rest[Beat] to you[Beat][CloseEyes][A][X]
+
+## ViktorDeathQuoteText
+[MidRight][LoadViktor]
+Ha[Beat] A fitting way to die[Beat][N]
+Well, Cidor? Are you watching?[AN]
+I was the better man to the end[Beat][CloseEyes][A][X]
+
+## MarynDeathQuoteText
+[MidRight][LoadMaryn]
+My vision[Beat] is fading[Beat][N]
+Cromar[Beat] Where are you?[AN][X]

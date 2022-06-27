@@ -1,11 +1,13 @@
-
-##Chapter12Title
+## Chapter12Title
 Ch12: All in Vain[X]
 
 ##Ch12PlaceholderText
 [MidLeft][LoadHelman]
 Stay safe.
 [A][X]
+
+## Ch12Objective
+Free Prisoners[X]
 
 ##Ch12MapObj1
 Seize[X]
@@ -19,7 +21,6 @@ Defeat Eitha[X]
 ##Ch12ObjDesc2
    Defeat Eitha,   [N]
 the legendary hero.[X]
-
 
 //first half of the flashback
 ##Ch12BeginningScene1

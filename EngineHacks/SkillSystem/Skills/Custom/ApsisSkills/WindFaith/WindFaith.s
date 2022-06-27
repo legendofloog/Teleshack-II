@@ -34,14 +34,28 @@ b Unequipped        @If not the right tome, go to Unequipped skill
 
 YesThereIsSkill:
 
-@ check if 1 range?
-@check range
-ldr r0,=#0x203A4D4 @battle stats
-ldrb r0,[r0,#2] @range
-cmp r0,#1
-bgt End
+@ is spd higher
+ldrb r0, [r4, #0x16] @attacker spd
+ldrb r1, [r5, #0x16] @defender spd
+cmp r0, r1
+ble End @skip if spd is less or equal
 
-@ add the conditional brave
+@add 3 as
+mov r1, #0x5e
+ldrh r0, [r4, r1] @as
+add r0, #3
+strh r0, [r4,r1]
+
+@ can foe counter?
+ldr		r0,[r5,#0x4]
+cmp		r0,#0
+beq		End
+mov		r0,#0x52
+ldrb	r0,[r5,r0]
+cmp		r0,#0
+bne		End
+
+@ cant counter, add the conditional brave
 mov r0,r4
 add r0,#0x4C @item ability word
 ldr r1,[r0]
@@ -62,49 +76,11 @@ b End
 
 OffHandEffect:
 
-@1 range?
-ldr r0,=#0x203A4D4 @battle stats
-ldrb r0,[r0,#2] @range
-cmp r0,#1
-bne CheckTwo
-
-@grants AS +1
-mov r0, r4
-add r0,#0x5E
-ldrh r3,[r0]
-add r3,#1
-strh r3,[r0]
-b End
-
-CheckTwo:
-@2 range?
-ldr r0,=#0x203A4D4 @battle stats
-ldrb r0,[r0,#2] @range
-cmp r0,#2
-bne CheckThree
-
-@grants AS +2
-mov r0, r4
-add r0,#0x5E
-ldrh r3,[r0]
-add r3,#2
-strh r3,[r0]
-b End
-
-CheckThree:
-@3 range?
-ldr r0,=#0x203A4D4 @battle stats
-ldrb r0,[r0,#2] @range
-cmp r0,#3
-bne End @pretty sure its impossible to get here???
-
-@grants AS +3
-mov r0, r4
-add r0,#0x5E
-ldrh r3,[r0]
-add r3,#3
-strh r3,[r0]
-b End
+@add 2 as
+mov r1, #0x5e
+ldrh r0, [r4, r1] @as
+add r0, #2
+strh r0, [r4,r1]
 
 End:
 pop {r4-r7, r15}
