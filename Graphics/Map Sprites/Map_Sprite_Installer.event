@@ -89,10 +89,10 @@ SkyseekerMoving:
 
 ALIGN 4
 DragonlordStanding:
-#incbin "Dmp/Wyvern Lord (U) Armored Lance {SHYUTERz}-stand.dmp"
+#incbin "Dmp/Loewe_Dragonlord_Standing(knabepicer).dmp"
 ALIGN 4
 DragonlordMoving:
-#incbin "Dmp/Wyvern Lord (U) Armored Lance {SHYUTERz}-move.dmp"
+#incbin "Dmp/Loewe_Dragonlord_Moving(knabepicer).dmp"
 
 ALIGN 4
 SeraphknightStanding:

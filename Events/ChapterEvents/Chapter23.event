@@ -76,6 +76,7 @@ Vendor(Ch23Vendor,6,7)
 Village(15,LeftVillage,1,20)
 Village(16,MiddleVillage,16,15)
 Village(17,RightVillage,29,19)
+Seize(13,6)
 END_MAIN
 
 Ch23Armory:
@@ -294,6 +295,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+DismountAll
 LOMA Ch5xGechrysos
 CAMERA [13,0]
 LOAD1 1 TwoSoldierGroup
@@ -583,9 +585,9 @@ UNIT Artemis General 0x0 Level(9,Enemy,False) [3,29] 0x0 0x0 0x1 REDA6R21 [Maste
 UNIT 
 
 EnemyUnitsSouthwest:
-UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA3R28 [SilverBow] GroupFourAI
+UNIT Conscript Archer 0x0 Level(20,Enemy,True) [2,29] 0x0 0x0 0x1 REDA2R29 [SilverBow] GroupFourAI
 UNIT Conscript AxeFighter 0x0 Level(20,Enemy,True) [4,29] 0x0 0x0 0x1 REDA5R26 [TrainedAxe] GroupFourAI
-UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA0R24 [TrainedEdge] GroupFourAI
+UNIT Conscript SwordFighter 0x0 Level(20,Enemy,True) [3,29] 0x0 0x0 0x1 REDA0R23 [TrainedEdge] GroupFourAI
 UNIT
 
 BallistaGroup:
@@ -594,9 +596,9 @@ UNIT Cythes LongBallista 0x0 Level(8,Enemy,True) [13,27] 0x0 0x0 0x0 0x0 [LongAr
 UNIT 
 
 FinalEnemyGroup:
-UNIT Cythes SwordFighter 0x0 Level(8,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
-UNIT Cythes PegasusRider 0x0 Level(8,Enemy,True) [15,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
-UNIT Cythes PegasusRider 0x0 Level(8,Enemy,True) [17,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Cythes SwordFighter 0x0 Level(20,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT Cythes PegasusRider 0x0 Level(20,Enemy,True) [15,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT Cythes PegasusRider 0x0 Level(20,Enemy,True) [17,27] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
 UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [6,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
 UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [25,29] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
 UNIT
@@ -801,10 +803,15 @@ TEXTCONT
 TEXTEND
 REMA 
 FADI 15
-RemoveAll
+ENUN
 MNC2 Chapter24
 NoFade
 ENDA
+
+PrepsGroup24:
+UNIT EliasReal Dracoknight 0x0  Level(10,Ally,False) [16,16] 0x0 0x0 0 0 [MasterAxe,SilverAxe] NoAI
+UNIT BoroReal Champion 0x0 Level(10,Ally,False) [29,29] 0x0 0x0 0 0 [Impaler,MasterLance] NoAI
+UNIT 
 
 KwamePostMapGroup:
 UNIT KwameReal DarkBishop 0x0 Level(15,Ally,False) [30,29] 0x0 0x0 0 0 [IronLance] NoAI

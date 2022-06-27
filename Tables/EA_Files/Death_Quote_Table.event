@@ -170,9 +170,10 @@ DeathQuote(Lyre,AllChapters,0x0,0x0,LyreGiveAll)
 DeathQuote(Ngondala,AllChapters,0x0,0x0,NgondalaGiveAll)
 DeathQuote(CatrinReal,AllChapters,0x0,0x0,CatrinRealGiveAll)
 
-// ch22
+// ch23
 DeathQuote(EliasReal,AllChapters,0x0,0x0,EliasGiveAll)
-DeathQuote(Maryn,AllChapters,0x0,0x0,MarynGiveAll) // samson/arran
-DeathQuote(Viktor,AllChapters,0x0,0x0,ViktorGiveAll)
+
+//DeathQuote(Maryn,AllChapters,0x0,0x0,MarynGiveAll) // samson/arran
+//DeathQuote(Viktor,AllChapters,0x0,0x0,ViktorGiveAll)
 
 DeathQuote(0xFFFF,0,0,0) // terminator

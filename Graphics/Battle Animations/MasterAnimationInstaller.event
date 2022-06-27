@@ -260,12 +260,6 @@
 }
 
 {
-#include "Animations/Troubadour_M_Deacon(credits_inside)/Staff Installer.event"
-#include "Animations/Troubadour_M_Deacon(credits_inside)/Sword Installer.event"
-#include "Animations/Troubadour_M_Deacon(credits_inside)/Unarmed Installer.event"
-}
-
-{
 #include "Animations/Paladin_M(Salvaged,Leo_link,Pikmin1211,others)/Sword Installer.event"
 #include "Animations/Paladin_M(Salvaged,Leo_link,Pikmin1211,others)/Lance Installer.event"
 #include "Animations/Paladin_M(Salvaged,Leo_link,Pikmin1211,others)/Unarmed Installer.event"

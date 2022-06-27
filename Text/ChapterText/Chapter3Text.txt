@@ -255,8 +255,10 @@ We won't leave you here![A][X]
 
 ## EmoryBattleQuote
 [MidLeft][LoadEmory]
-Blasted Liberators, you think your cause is just?[N]
-I will show you your folly beneath my blade![A][X]
+Blasted Liberators,[N]
+you think your cause is just?[AN]
+I will show you your folly[N]
+beneath my blade![A][X]
 
 ## EmoryDeathQuote
 [MidLeft][LoadEmory]

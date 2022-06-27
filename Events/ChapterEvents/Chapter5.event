@@ -29,6 +29,7 @@ Chest(HeavySpear,23,15)
 END_MAIN
 
 MiscBasedEvents:
+CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
 

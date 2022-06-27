@@ -1,8 +1,6 @@
 #include "ThraciaASM/ThraciaASMInstaller.event"
 #include "Music/MusicAsmInstaller.event"
 #include "Fixes/MasterFixesInstaller.event"
-
-#include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
 
 #include "ASMCCheckSuite/ASMC Check Installer.event"
@@ -58,6 +56,10 @@ ChangeWeaponRankASMC:
 //#include "Reorganize/Installer.event"
 
 #include "prep_shop_each_chapter2/Installer.event"
+
+#include "Individual animation_ea_2/Installer.event"
+
+#include "SacredWeapons2/weapon_battle_flash.event"
 
 // thief vision set to 0
 

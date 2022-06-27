@@ -85,7 +85,7 @@
 #define Meteor 0x4A
 #define Heal 0x4B
 #define Mend 0x4C
-#define Recover 0x4D
+#define Maharaghi 0x4D
 #define Physic 0x4E
 #define Fortify 0x4F
 #define Restore 0x50
@@ -170,7 +170,7 @@
 #define FaithWindItem 0x9e
 #define DancingBladeItem 0x9f
 #define BoneClub 0xa0
-#define Maharaghi 0xa1
+
 #define Taodao 0xa2
 #define RuneArrow 0xa3
 #define BlackAnklet 0xa4
