@@ -27,10 +27,7 @@ PointerList:
 // 23 - Eitha generic quote
 // 24 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
 
-// 25 - turned on by the AFEV called by tiberius's death quote
 // 22 - turned on with tiberius death quote
-// 20 - turned on if Tiberius was succesfully captured
-
 
 
 TurnBasedEvents:
@@ -72,7 +69,6 @@ AFEV 13 TopLeftPrisonOpened 19
 AFEV 14 TopMiddlePrisonDoorOpened 10
 AFEV 15 TopRightPrisonDoorOpened 11
 AFEV 16 OutsidePrisonDoorOpened 12
-AFEV 25 TiberiusCaptureCheck 22
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
@@ -128,16 +124,12 @@ Units1:
 MinkJoin:
   UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
   UNIT
-
-TiberiusJoin:
-  UNIT Tiberius Noble Cleo Level(4,Ally,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] NoAI
-  UNIT
   
 IndoorEnemy:
-  UNIT Tiberius Noble Cidor Level(4,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
+  UNIT Tiberius Noble Cidor Level(7,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe,PureWater] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [28,9] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
 //turn 2
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [23,7] 0x0 0x0 0x0 0x1 [SteelSword] BossAI
@@ -159,8 +151,8 @@ IndoorEnemy:
   UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI //change to soldier
 //turn 6 
   UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI //change to soldier
-  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Thunder] TwoActionAI
-  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Lightning] AttackInRangeAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary] TwoActionAI
+  UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Lightning,PureWater] AttackInRangeAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
 //turn 7
   
@@ -196,12 +188,12 @@ OutdoorEnemy:
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [8,22] 0x0 0x0 0x0 0x1 [Claymore] TwoActionAI
   UNIT Selese SwordKnight Cidor Level(12,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese PegasusRider Cidor Level(12,Enemy,True) [33,23] 0x0 0x0 0x0 0x1 [KillerLance] TwoActionAI
-  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [14,20] 0x0 0x0 0x0 0x1 [ShortSword,DoorKey] BossAI
+  UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [14,20] 0x0 0x0 0x0 0x1 [ShortSword,DoorKey,Vulnerary] BossAI
 //turn 7
   UNIT Selese Myrmidon Cidor Level(9,Enemy,True) [4,21] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese Freelancer Cidor Level(9,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
 //turn 8
-  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge] BossAI
+  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge,PureWater,LightRune] BossAI
   
   UNIT
 
@@ -223,6 +215,58 @@ PrisonGreens:
 
 
 BeginningScene:
+//load the cutscene map
+SetBackground(0x0E)//fancy room
+Music(Rovers)
+Text(Ch12BeginningScene1)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene2
+TEXTEND
+REMA
+MUSCSLOW 0x7FFF
+FAWI 1
+FAWU 1
+Text(Ch12BeginningScene3)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene4A
+TEXTEND
+Music(PMDSteamCaveID)
+TEXTCONT
+TEXTEND
+REMA
+SetBackground(BlackBackground)
+Text(Ch12BeginningScene4B)
+MUSC 0x7FFF
+SetBackground(0x0E)
+TEXTSTART
+TEXTSHOW Ch12BeginningScene4C
+TEXTEND
+Music(RiseAboveID)
+TEXTCONT
+TEXTEND
+REMA
+Text(Ch12BeginningScene5)
+Text(Ch12BeginningScene6)
+Text(Ch12BeginningScene7)
+Text(Ch12BeginningScene8)
+SetBackground(BlackBackground)
+MUSC 0x7FFF
+TEXTSTART
+TEXTSHOW Ch12BeginningScene9A
+TEXTEND
+REMA
+SetBackground(0x18)//daytime forest
+Music(FF6AwakeningID)
+Text(Ch12BeginningScene9B)
+MUSI
+SetBackground(BlackBackground)
+Text(Ch12BeginningScene9C)
+SetBackground(0x18)//daytime forest
+MUNO
+Text(Ch12BeginningScene9D)
+SetBackground(0x20)//nighttime forest different from 0x18
+Music(Nighttime)
+Text(Ch12BeginningScene10)
 MountAll
 LOAD 1 MinkJoin
 LOAD 1 OutdoorEnemy
@@ -230,25 +274,108 @@ LOAD 1 IndoorEnemy
 LOAD 1 PrisonGreens
 GotoPrepScreen
 ENDA
-  
-TopLeftPrisonDoor:
-TILECHANGE 0
+
+
+DeadlordSpawn:
+CHECK_EXISTS Tiberius
+BEQ 3 s0 sC
+CHECK_EVENTID 22
+BEQ 3 s0 sC
+CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
+LABEL 3
+RemoveTrapAtCoords(2,11)
+RemoveTrapAtCoords(3,11)
+RemoveTrapAtCoords(4,11)
+RemoveTrapAtCoords(6,15)
+RemoveTrapAtCoords(6,16)
+RemoveTrapAtCoords(2,20)
+RemoveTrapAtCoords(3,20)
+RemoveTrapAtCoords(4,20)
+ENUT 13
+ENUT 14
+ENUT 15
+ENUT 16
+MUSC 0x7FFF
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn1
+TEXTEND
+FAWI 4
+FAWU 4
+TEXTCONT
+TEXTEND
+REMA
+CAMERA_CENTERED [3,16]
+TILECHANGE 8
+SetBackground(CastleHallway)
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn2
+TEXTEND
+//damage sounds effect
+TEXTCONT
+TEXTEND
+REMA
+Text(Ch12DeadlordSpawn3)
+Text(Ch12DeadlordSpawn4)
+EraseBackground
+REMOVEALL_GREEN
+REMOVEALL_RED
+CAMERA_CENTERED [3,16]
+TILECHANGE 8
+CHECK_EXISTS Tiberius
+BEQ 2 s0 sC
+CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
+LABEL 2
+LOAD 1 EithaSpawn
+SetFlag(0x4)
+CenterTextbox(Ch12PassWarning)
+		//reset player turn
 NoFade
 ENDA
 
-TopLeftPrisonDoor2:
-TILECHANGE 3
-NoFade
-ENDA
 
 EndingScene:
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
 CUSA Tiberius
-CHECK_EXISTS Tiberius //temporary
-BNE 2 s0 sC
-LOAD 1 TiberiusJoin
 LABEL 2
+SetBackground(CastleHallway)
+Music(FF5_Nostalgia)
+Text(Ch12End1)
+MUSC 0x7FFF
+TEXTSTART
+TEXTSHOW Ch12End2
+TEXTEND
+Music(PMDSteamCaveID)//change this to kwame's theme eventually
+TEXTCONT
+TEXTEND
+//bow draw sound effect
+TEXTCONT
+TEXTEND
+REMA
+SetBackground(0x0E)
+Music(Rovers)
+Text(Ch12End3A)
+MUSC 0x7FFF
+Text(Ch12End3B)
+Text(Ch12End3C)
+SetBackground(0x20)
+TEXTSTART
+TEXTSHOW Ch12End4
+TEXTEND
+Music(oppression)
+TEXTCONT
+TEXTEND
+MUSC 0x7FFF
+TEXTCONT
+TEXTEND
+Music(FF6AwakeningID)
+TEXTCONT
+TEXTEND
+REMA
+Music(Nighttime)
+Text(Ch12End5)
+Text(Ch12End6)
+Text(Ch12End7)
 FADI 15
 InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
@@ -265,6 +392,17 @@ SVAL sB Coords(3,2)
 REMOVEUNIT(-2)
 ENUT 21
 LABEL 16
+NoFade
+ENDA
+
+
+TopLeftPrisonDoor:
+TILECHANGE 0
+NoFade
+ENDA
+
+TopLeftPrisonDoor2:
+TILECHANGE 3
 NoFade
 ENDA
 
@@ -304,48 +442,6 @@ Text(Ch12PlaceholderText)
 GiveItem(Talisman,0xFFFF)
 SVAL sB Coords(13,23)
 REMOVEUNIT(-2)
-NoFade
-ENDA
-
-TiberiusCaptureCheck:
-CHECK_EXISTS Tiberius
-BEQ 5 s0 sC
-ENUT 20
-LABEL 5 //keep flag 20 off if tiberius was not captured
-NoFade
-ENDA
-
-DeadlordSpawn:
-CHECK_EXISTS Tiberius
-BEQ 3 s0 sC
-CHECK_EVENTID 20
-BEQ 3 s0 sC
-CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
-LABEL 3
-RemoveTrapAtCoords(2,11)
-RemoveTrapAtCoords(3,11)
-RemoveTrapAtCoords(4,11)
-RemoveTrapAtCoords(6,15)
-RemoveTrapAtCoords(6,16)
-RemoveTrapAtCoords(2,20)
-RemoveTrapAtCoords(3,20)
-RemoveTrapAtCoords(4,20)
-ENUT 13
-ENUT 14
-ENUT 15 
-ENUT 16
-CAMERA_CENTERED [3,16]
-TILECHANGE 8
-REMOVEALL_GREEN
-REMOVEALL_RED
-CHECK_EXISTS Tiberius
-BEQ 2 s0 sC
-CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
-LABEL 2
-LOAD 1 EithaSpawn
-		//give eitha point blank, boon, and maybe renewal
-SetFlag(0x4)
-		//reset player turn
 NoFade
 ENDA
 

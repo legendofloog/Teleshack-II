@@ -131,6 +131,8 @@
 #define ArtemisMug 0xFC
 #define MihailMug 0xFD
 #define SaifMug 0xFE
+#define CidorYoungMug 0x104
+#define DukeSeleseMug 0x105
 
 ALIGN 16
 CleoMugData:
@@ -227,6 +229,22 @@ CidorMugData:
 #incbin "Dmp/Cidor(Laurent_Lacroix)_palette.dmp"
 #incbin "Dmp/Cidor(Laurent_Lacroix)_minimug.dmp"
 setMugEntry(CidorMug, CidorMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CidorYoungMugData:
+#incbin "Dmp/CidorYoung(Leche)_mug.dmp"
+#incbin "Dmp/CidorYoung(Leche)_frames.dmp"
+#incbin "Dmp/CidorYoung(Leche)_palette.dmp"
+#incbin "Dmp/CidorYoung(Leche)_minimug.dmp"
+setMugEntry(CidorYoungMug, CidorYoungMugData, 3, 6, 3, 4)
+
+ALIGN 16
+DukeSeleseMugData:
+#incbin "Dmp/DukeSelese(Leche)_mug.dmp"
+#incbin "Dmp/DukeSelese(Leche)_frames.dmp"
+#incbin "Dmp/DukeSelese(Leche)_palette.dmp"
+#incbin "Dmp/DukeSelese(Leche)_minimug.dmp"
+setMugEntry(DukeSeleseMug, DukeSeleseMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CatrinMugData:
