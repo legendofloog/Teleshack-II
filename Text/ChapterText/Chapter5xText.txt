@@ -690,9 +690,6 @@ understand the beauty of my music[Beat][A][X]
 [FarRight][LoadLoewe]
 [MidLeft][LoadFaolan]
 Name's Faolan![AN]
-
-
-
 I've been doing my part,[AN]
 but there's not a lot[N]
 one guy can do on his own.[AN]
@@ -700,14 +697,11 @@ I figured the best way to[N]
 take the fight to them was[AN]
 I'm lookin' for a chance to[N]
 stick 'em like the pigs they are![AN]
-[Right]
-
 [FarRight]
 I can't really fault his[N]
 enthusiasm,[A]
 it's a good thing to have[N]
 for the fights to come.[AN]
-
 [Right]
 [Beat]Well, what are you good at?[AN]
 [MidLeft]
@@ -724,8 +718,6 @@ or luggin' around one of those[N]
 Cythean goons,[AN]
 I can fight just fine even[N]
 while carrying someone.[AN]
-[FarRight]
-
 [MidLeft]
 Well, what do say?[A][X]
 
@@ -1513,33 +1505,6 @@ texts, and Grandfather's actions[Beat][AN]
 I will require someone on the inside.[N]
 Elias's resolve wavers[Beat] Perhaps[N]
 he is exactly who I need for this[Beat][A][X]
-
-## FaolanFirstTalkDialogue
-[MidLeft][LoadFaolan][ThreeLineBox]
-Ho there! Sir Trajan[N]
-already told me about your plans,[N]
-and I'd like to join your company.[AN]
-I originally served in the militia[N]
-there, but I fled my town and joined[N]
-the Liberators after Cythes came.[AN]
-If I can be any part in freeing my[N]
-homeland, and all Decia, it'd be my[N]
-honor. As for what I bring to the table,[AN]
-I've got a horse, and I'd like to[N]
-think that I'm a well-rounded fighter.[AN]
-If you need someone like that, look[N]
-no further. Well, what do you say?[AN][X]
-
-## FaolanRejectedDialogue
-[MidLeft][LoadFaolan]
-No? Well, if you change your mind,[N]
-just holler. I'll be right here.[A][X]
-
-## FaolanAcceptedDialogue
-[MidLeft][LoadFaolan][ThreeLineBox]
-Alright, glad to hear it![N]
-I'll fight harder than anyone out[N]
-there for Freyse, you'll see![A][X]
 
 ## MatthiasFirstTalkDialogue
 [MidLeft][LoadMatthias]
