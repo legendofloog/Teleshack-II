@@ -173,10 +173,10 @@ PriestFMoving:
 
 ALIGN 4
 RookKnightStanding:
-#incbin "Dmp/Cavalier (F) Sword {SALVAGED, Pikmin}-stand.dmp"
+#incbin "Dmp/Cavalier (M) Lance {IS}-stand.dmp"
 ALIGN 4
 RookKnightMoving:
-#incbin "Dmp/Cavalier (F) Sword {SALVAGED, Pikmin}-move.dmp"
+#incbin "Dmp/Cavalier (M) Lance {IS}-walk.dmp"
 
 ALIGN 4
 GoldKnightMoving:
@@ -187,17 +187,17 @@ GoldKnightStanding:
 
 ALIGN 4
 TroubadourFStanding:
-#incbin "Dmp/Troubadour (M) Deacon {Unknown}-stand.dmp"
+#incbin "Dmp/Troubadour (F) {IS}-stand.dmp"
 ALIGN 4
 TroubadourFMoving:
-#incbin "Dmp/Troubadour (M) Deacon {Unknown}-move.dmp"
+#incbin "Dmp/Troubadour (F) {IS}-walk.dmp"
 
 ALIGN 4
 PaladinStanding:
-#incbin "Dmp/Paladin (F) Sword {RobertFPY}-stand.dmp"
+#incbin "Dmp/Valkyrie (F) {IS}-stand.dmp"
 ALIGN 4
 PaladinMoving:
-#incbin "Dmp/Paladin (F) Sword {RobertFPY}-move.dmp"
+#incbin "Dmp/Valkyrie (F) {IS}-walk.dmp"
 
 ALIGN 4
 HunterMoving:
@@ -403,3 +403,34 @@ ALIGN 4
 BrigandStanding:
 #incbin "Dmp/Brigand_M_Axe(Alusq).dmp"
 
+ALIGN 4
+Seraphknight_Dismounted_Standing:
+#incbin "Dmp/Lord (F) Hector Axe {Shin19}-stand.dmp"
+
+ALIGN 4
+Seraphknight_Dismounted_Moving:
+#incbin "Dmp/Lord (F) Hector Axe {Shin19}-walk.dmp"
+
+ALIGN 4
+DarkMageF_Standing:
+#incbin "Dmp/Shaman (F) {IS}-stand.dmp"
+
+ALIGN 4
+DarkMageF_Moving:
+#incbin "Dmp/Shaman (F) {IS}-walk.dmp"
+
+ALIGN 4
+DarkBishopF_Standing:
+#incbin "Dmp/Druid (F) {IS}-stand.dmp"
+
+ALIGN 4
+DarkBishopF_Moving:
+#incbin "Dmp/Druid (F) {IS}-walk.dmp"
+
+ALIGN 4
+MasterKnight_Standing:
+#incbin "Dmp/Great Lord (M) Ephraim Sword {milom}-stand.dmp"
+
+ALIGN 4
+MasterKnight_Moving:
+#incbin "Dmp/Great Lord (M) Ephraim Sword {milom}-walk.dmp"

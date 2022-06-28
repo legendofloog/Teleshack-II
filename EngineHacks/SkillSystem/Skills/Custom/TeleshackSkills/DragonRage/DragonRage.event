@@ -1,0 +1,7 @@
+
+
+ALIGN 4
+DragonRageIDLink:
+BYTE DragonRageID
+
+// Add "DragonRage" to the postbattle loop

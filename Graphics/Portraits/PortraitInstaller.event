@@ -88,6 +88,8 @@
 #define CidorMug 0x2E
 #define CatrinMug 0x2F
 #define EmoryMug 0x30
+#define CidorYoungMug 0x38
+#define DukeSeleseMug 0x2C
 #define RigganMug 0x3f
 #define RaschwitzMug 0x45
 #define TyrMug 0x46
@@ -131,8 +133,6 @@
 #define ArtemisMug 0xFC
 #define MihailMug 0xFD
 #define SaifMug 0xFE
-#define CidorYoungMug 0x104
-#define DukeSeleseMug 0x105
 
 ALIGN 16
 CleoMugData:

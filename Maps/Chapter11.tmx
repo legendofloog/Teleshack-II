@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="28" tilewidth="16" tileheight="16" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="20" height="28" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <properties>
   <property name="Anims1" value="0x0"/>
   <property name="ChapterID" value="Chapter11"/>
@@ -13,7 +13,7 @@
  <tileset firstgid="1" name="99009A9B" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="FF5 - Caves 01 - Tileset.png" trans="ffffff" width="512" height="512"/>
  </tileset>
- <layer name="Tile Layer 1" width="20" height="28">
+ <layer id="1" name="Tile Layer 1" width="20" height="28">
   <properties>
    <property name="Anims1" value="0x0"/>
    <property name="ChapterID" value="Chapter11"/>
@@ -32,16 +32,16 @@
 121,292,290,259,91,91,91,219,122,122,122,91,122,122,91,91,91,54,61,61,
 153,91,164,289,259,91,122,155,122,155,91,122,91,46,47,91,91,91,53,159,
 2,91,91,155,225,91,91,91,91,622,623,622,47,243,91,91,91,91,122,121,
-263,155,91,263,225,623,91,122,91,620,49,91,91,218,243,121,91,91,89,171,
+263,155,91,263,225,623,91,122,91,620,49,91,91,218,91,121,91,91,89,171,
 295,162,163,295,293,655,91,91,91,312,111,111,111,113,112,113,91,89,95,30,
 91,91,91,91,91,122,91,91,122,155,175,143,143,198,144,198,91,89,30,30,
 16,91,122,155,91,122,122,147,91,91,243,175,177,230,155,230,91,122,158,54,
 45,122,91,91,47,48,91,179,122,91,91,155,91,91,91,91,91,91,176,219,
 77,91,155,91,91,91,91,91,91,91,123,155,91,91,122,91,122,219,2,91,
-143,91,91,122,155,91,622,198,47,623,155,91,219,91,91,243,91,91,91,176,
-122,122,155,91,91,347,49,230,88,51,90,91,91,243,14,16,91,11,12,13,
-110,110,91,91,91,622,119,120,164,89,90,91,122,91,43,44,12,44,44,77,
-172,172,166,167,264,172,171,143,119,120,620,155,91,91,75,44,44,44,45,140,
+143,91,91,122,155,91,622,198,47,47,48,91,155,91,91,243,91,91,91,176,
+122,122,155,91,91,347,49,230,88,88,89,91,91,243,14,16,91,11,12,13,
+110,110,91,91,91,622,119,120,164,88,89,91,122,91,43,44,12,44,44,77,
+172,172,166,167,264,172,171,143,119,120,89,155,91,91,75,44,44,44,45,140,
 91,91,122,91,91,91,175,175,114,184,185,91,347,91,171,75,76,44,45,140,
 91,484,91,91,484,91,120,258,146,216,217,155,91,91,175,171,171,75,44,13,
 622,431,431,431,431,431,431,225,178,248,243,91,91,155,91,175,175,654,75,77,
@@ -55,7 +55,7 @@
 44,77,91,122,155,91,75,44,45,171,75,44,13,91,91,91,91,91,91,91
 </data>
  </layer>
- <layer name="BottomDoorOpen" width="20" height="28" visible="0">
+ <layer id="2" name="BottomDoorOpen" width="20" height="28" visible="0">
   <properties>
    <property name="ID" value="0"/>
   </properties>
@@ -90,7 +90,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="TopWallBroken" width="20" height="28" visible="0">
+ <layer id="3" name="TopWallBroken" width="20" height="28" visible="0">
   <properties>
    <property name="ID" value="1"/>
   </properties>
@@ -125,7 +125,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="BottomWallBroken" width="20" height="28" visible="0">
+ <layer id="4" name="BottomWallBroken" width="20" height="28" visible="0">
   <properties>
    <property name="ID" value="2"/>
   </properties>
@@ -160,7 +160,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="MiddleChestOpen" width="20" height="28" visible="0">
+ <layer id="5" name="MiddleChestOpen" width="20" height="28" visible="0">
   <properties>
    <property name="ID" value="3"/>
   </properties>
@@ -195,7 +195,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="TopDoorOpen" width="20" height="28" visible="0">
+ <layer id="6" name="TopDoorOpen" width="20" height="28" visible="0">
   <properties>
    <property name="ID" value="4"/>
   </properties>
@@ -230,7 +230,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="TopChestOpen" width="20" height="28" visible="0">
+ <layer id="7" name="TopChestOpen" width="20" height="28" visible="0">
   <properties>
    <property name="ID" value="5"/>
   </properties>

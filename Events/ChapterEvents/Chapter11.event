@@ -13,8 +13,23 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0, Turn2Reinforcements, 4)
+TurnEventPlayer(0,Turn1Event,1)
+TurnEventPlayer(0, Turn2Reinforcements, 3)
 END_MAIN
+
+Turn1Event:
+MUSC 0x7FFF
+Text(Ch11_KwameGone)
+CameraCursor(Aurora)
+MUSC KwameID
+Text(Ch11_KwameGone2)
+CAMERA_CENTERED [17,22]
+STAL 20
+FlashCursor(17,22,30)
+FlashCursor(18,22,30)
+Text(Ch11_InTheCell)
+NoFade
+ENDA
 
 ALIGN 32
 CharacterBasedEvents:
@@ -26,35 +41,41 @@ DefeatBoss(EndingScene)
 END_MAIN
 
 LocationBasedEvents:
-Chest(TrainedArc,1,5)
+Chest(TrainedArc,0,6)
+LOCA 11 FreeSisters [17,24] 0x12
+LOCA 11 FreeSisters [18,24] 0x12
 Door(17,24)
 Door(18,24)
-Chest(Physic,18,11)
+Chest(Physic,18,12)
 Door(1,8)
 Door(2,8)
 END_MAIN
 
-Dunno1:
+FreeSisters:
+TILECHANGE 0
+Text(Ch11_OpenSisterDoor)
+NoFade
+ENDA
 
+Dunno1:
 END_MAIN
 
 Dunno2:
-
 END_MAIN
 
 Dunno3:
-
 END_MAIN
 
 Tutorial:
-
 END_MAIN
 
 Units1:
-UNIT Cleo 0x0 Cleo Level(1,Ally,False) [3,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,25] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [4,25] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe 0x0 Cleo Level(1,Ally,False) [15,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Loewe 0x0 Cleo Level(1,Ally,False) [17,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(9,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(9,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [17,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -63,8 +84,6 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [15,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [16,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Ichwep LanceSoldier Cleo Level(9,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
-UNIT Milo AxeSoldier Cleo Level(9,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -82,7 +101,7 @@ UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [ShortSwor
 UNIT Selese Mage Cleo Level(11,Enemy,True) [1,12] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
 UNIT Selese SwordArmour Cleo Level(11,Enemy,True) [8,11] 0x0 0x0 0x0 0x0 [IronBlade] NeverMoveAI
 UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [8,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
-UNIT Aurora Halberdier Cleo Level(1,Enemy,False) [9,4] 0x0 0x0 0x0 0x0 [SteelLance,Hurlbat,SecretBook] AttackInRangeAI
+UNIT Aurora Halberdier Cleo Level(1,Enemy,False) [9,3] 0x0 0x0 0x0 0x0 [SteelLance,TrainedAxe,SecretBook] AttackInRangeAI
 UNIT
 
 EnemyUnits2:
@@ -106,63 +125,66 @@ UNIT SisterSelese Sister Cleo Level(5,NPC,True) [18,22] 0x0 0x0 0x0 0x0 [Physic]
 UNIT
 
 Turn2Thief:
-UNIT Selese Thief Cleo Level(11,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [ShortSword,ChestKey,DoorKey] ThiefAI
-UNIT Selese Thief Cleo Level(11,Enemy,True) [19,20] 0x0 0x0 0x0 0x0 [ShortSword,ChestKey] ThiefAI
+UNIT Selese Thief Cleo Level(11,Enemy,True) [0,15] 0x0 0x0 0x1 REDA0R15 [ShortSword,ChestKey,DoorKey] ThiefAI
+UNIT Selese Thief Cleo Level(11,Enemy,True) [13,7] 0x0 0x0 0x1 REDA13R7 [ShortSword,ChestKey] ThiefAI
 UNIT
 
 Traps1:
-	ENDTRAP
-	ALIGN 4
+ENDTRAP
+ALIGN 4
 
 Traps2:
-	ENDTRAP
-	ALIGN 4
+ENDTRAP
+ALIGN 4
 
 BeginningScene:
-	LOAD1 1 Units1
-	LOAD1 0x1 EnemyUnits
-	LOAD1 0x1 EnemyUnits2
-	LOAD1 0x1 PrisonGreens
-	ENUN
-	DismountAll
-	SetBackground(0x11)
-	Text(Ch11Start_CidorElias)
-	SetBackground(0x15)
-	Text(Ch11Start_News)
-	Text(Ch11Start_Radnitz)
-	Text(Ch11Start_RadnitzEpony)
-	Text(Ch11Start_MiloCaveChat)
-	Text(Ch11Start_IchwepCaveChat)
-	Text(Ch11Start_LordsChat)
-	Text(Ch11Start_KwameAlone)
-	Text(Ch11Start_BadGuysAreHere)
-	Text(Ch11_KwameGone)
-	Text(Ch11_KwameGone2)
-	FADI 15
-	GotoPrepScreen
-	ENDA
+LOAD1 0x1 EnemyUnits
+LOAD1 0x1 EnemyUnits2
+LOAD1 0x1 PrisonGreens
+ENUN
+DismountAll
+SetBackground(0x11)
+MUSC FF4RedWingsID
+Text(Ch11Start_CidorElias)
+SetBackground(0x15)
+MUSC FF6AwakeningID
+Text(Ch11Start_News)
+SetBackground(0x1F)
+MUSC KnightsPride
+Text(Ch11Start_Radnitz)
+Text(Ch11Start_RadnitzEpony)
+SetBackground(0x2A)
+MUSC PMDSteamCaveID
+Text(Ch11Start_MiloCaveChat)
+Text(Ch11Start_IchwepCaveChat)
+Text(Ch11Start_LordsChat)
+SetBackground(0x2C)
+MUSC KwameID
+Text(Ch11Start_KwameAlone)
+SetBackground(0x2A)
+Text(Ch11Start_BadGuysAreHere)
+FADI 15
+GotoPrepScreen
+ENDA
 	
-	Turn2Reinforcements:
-	CamOn
-	LOAD1 1 Turn2Thief
-	ENUN
-	CamOff
-	NoFade
-	ENDA
+Turn2Reinforcements:
+CamOn
+LOAD1 1 Turn2Thief
+ENUN
+CamOff
+NoFade
+ENDA
 	
 EndingScene:
-
-SetBackground(0x15)
-MUSC TiesOfFriendship
-Text(Ch11End_Main)
+SetBackground(0x2A)
+MUSC SheenaID
+Text(Ch11End_MainScene)
 LABEL 2
-CheckUnitDeadOrJailed(Sister)
-	BNE 4 s0 sC
-	SetBackground(0x0A)
-	MUSC(Advance)
+CHECK_EVENTID 0xD //did one of the sisters die
+BNE 4 s0 sC //if set, skip
 	Text(Ch11End_Clerics)
 	GiveItem(Silence,Loewe)
 LABEL 4
-	MNC2 Chapter12
-	NoFade
-	ENDA
+MNC2 Chapter12
+NoFade
+ENDA

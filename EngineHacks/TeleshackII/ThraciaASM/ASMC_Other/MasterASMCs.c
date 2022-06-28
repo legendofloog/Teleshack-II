@@ -144,3 +144,8 @@ void CheckIfTargetUnitWasCaptured(){
     gEventSlot[0xC] = 1; //0 HP + not dead? should be captured
     return;
 }
+
+int GetUnitMagBy2Range(const Unit* unit) {
+    int result = (unit->mag / 2) + 5;
+    return result;
+}
