@@ -60,9 +60,8 @@ EscapePointEntry(24,17,EscapeRight)
 EscapePointTerminator
 
 Chapter11EnemyEscapeTable:
-EscapePointEntry(2,0,EscapeUp)
-EscapePointEntry(19,2,EscapeRight)
-EscapePointEntry(19,3,EscapeRight)
+EscapePointEntry(2,5,EscapeInPlace)
+EscapePointEntry(14,9,EscapeInPlace)
 EscapePointTerminator
 
 Chapter12EnemyEscapeTable:

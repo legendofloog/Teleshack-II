@@ -61,6 +61,8 @@ ChangeWeaponRankASMC:
 
 #include "SacredWeapons2/weapon_battle_flash.event"
 
+#include "GroupAI/GroupAI.event"
+
 // thief vision set to 0
 
 PUSH
@@ -118,10 +120,10 @@ POP
 */
 
 //default status duration is infinite
-PUSH
-ORG $178EA
-BYTE 2
-POP
+//PUSH
+//ORG $178EA
+//BYTE 2
+//POP
 
 //devil axe backfire to 21 - luck
 PUSH

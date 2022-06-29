@@ -123,3 +123,5 @@ SongTable(ToV_TragicDecisionID, ToV_TragicDecision, MapMusicGroup)
 SongTable(GS_TLA_WalkingForwardWithDeterminationID, WalkingForwardWithDetermination, MapMusicGroup)
 #include "MusicEvents/FF5 - Battle on the Big Bridge {Pandan}.event"
 SongTable(FF5_BattleOnTheBigBridgeID, BattleOnTheBigBridge, BattleMusicGroup)
+#include "MusicEvents/Kwame (A Reliable Chair).event"
+SongTable(KwameID, KwameTheme, MapMusicGroup)

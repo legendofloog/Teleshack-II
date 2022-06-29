@@ -11,3 +11,5 @@ WORD DebuffTable
 #include "RecklessCharge/RecklessCharge.event"
 
 #include "PiercingBolt/PiercingBolt.event"
+
+#include "DragonRage/DragonRage.event"

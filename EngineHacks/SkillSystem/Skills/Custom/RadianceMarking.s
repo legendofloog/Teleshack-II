@@ -71,7 +71,7 @@ b End
 
 Apply:
 @ apply set’s litany
-mov r0, #0x58
+mov r0, #0x28
 mov r1, #0x30
 strb r0, [r5, r1]
 

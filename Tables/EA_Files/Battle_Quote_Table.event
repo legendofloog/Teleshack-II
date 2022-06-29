@@ -12,6 +12,10 @@ SpecifiedBattleConvo(Hilmar,Loewe,Chapter4,8,HilmarLoeweBossQ)
 SpecifiedBattleConvo(Hilmar,Filone,Chapter4,9,HilmarFiloneBossQ)
 SpecifiedBattleConvo(Hilmar,Cleo,Chapter4,10,HilmarCleoBossQ)
 UnspecifiedBattleConvo(Hilmar,Chapter4,11,HilmarBossQ)
+
+//add riggan battle quotes?
+
+UnspecifiedBattleConvo(Draken,Chapter6,1,DrakenBattleQuoteText)
 UnspecifiedBattleConvo(Mifan,Chapter7,20,MifanBattleQuoteText)
 UnspecifiedBattleConvo(Wellworth,Chapter7,21,WellworthBattleQuoteText)
 UnspecifiedBattleConvo(Yor,Chapter7,22,YorBattleQuoteText)

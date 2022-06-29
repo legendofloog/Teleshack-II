@@ -2,6 +2,7 @@
 SetUnitConGrowth(Cleo,15)
 SetUnitConGrowth(Loewe,10)
 SetUnitConGrowth(Iskra,5)
+SetUnitConGrowth(Mira,5)
 SetUnitConGrowth(Emil,15)
 SetUnitConGrowth(Svetomir,10)
 SetUnitConGrowth(Alena,10)

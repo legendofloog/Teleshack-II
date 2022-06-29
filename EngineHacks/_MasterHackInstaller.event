@@ -68,12 +68,6 @@ POP
   //Danger Zone (select button)
   #include "QualityOfLife/DangerZone/DangerZone.event"
 
-  //Event Writer ASMC
-  #include "QualityOfLife/EventWriter/EventWriter.event"
-
-  //Casual Mode (based on Event ID 0xB0)
-  #include "QualityOfLife/CasualMode/CasualMode.event"
-
   //Movement Arrow doesn't update on allies
   #include "QualityOfLife/MovementArrowHack/MovementArrowHack.event"
 
@@ -82,15 +76,9 @@ POP
 
   //Trap Rework (Dragon Veins & Heal Tiles)
   #include "ExternalHacks/TrapRework/TrapRework.event"
-  
-  //Proper Range Getters
-  #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"
 
   //Leadership Stars
   #include "ExternalHacks/LeadershipStars/LeadershipStars.event"
-  
-  //Biorhythm
-  #include "ExternalHacks/Biorhythm/Biorhythm.event"
 
   //Modular Stat Screen
   #include "Necessary/ModularStatScreen/ModularStatScreen.event"
@@ -102,23 +90,8 @@ POP
 	
   #endif // USE_STRMAG_SPLIT
   
-  //Anima Triangle
-  #include "ExternalHacks/AnimaTriangle/AnimaTriangle.event"
-  
-  //Modular EXP
-  #include "ExternalHacks/ModularEXP/ModularEXP.event"
-  
   //Portrait Selection
   #include "ExternalHacks/PortraitSelectASM/PortraitSelectionASM.event"
-	
-  //Stairs
-  #include "ExternalHacks/Stairs/Stairs.event"
-
-  //PromoteOnLevelUp
-  #include "ExternalHacks/PromoteOnLevelUp/PromoteOnLevelUp.event"
-
-  //Raid
-  #include "ExternalHacks/Raid/Raid.event"
   
   //Escape-Arrive
   #include "ExternalHacks/EscapeArrive/EscapeArrive.event"
@@ -129,9 +102,6 @@ POP
   //Stat Screens palette by allegiance
   #include "ExternalHacks/StatScreenAllegiance/StatScreenAllegiance.event"
 
-  //Menu Semitransparency
-  #include "QualityOfLife/SemitransparencyChanges.event"
-
   //Supply available in prologue
   #include "QualityOfLife/PrologueSupply.event"
   
@@ -141,26 +111,11 @@ POP
   //Chapter Names as Text
   #include "QualityOfLife/TextChNames/TextChNames.event"
 
-  //PC and Generic Music Hack (writes to e80000/e90000)
-  #include "QualityOfLife/PCAndGenericMusic.event"
-
-  #include "QualityOfLife/EventRescue/EventRescue.event"
-  #include "QualityOfLife/EventAddTraps/EventAddTraps.event"
-  #include "QualityOfLife/EventSendToConvoy/EventSendToConvoy.event"
-
   // Fix gaining wexp from weapons you don't have wexp in (for Shadowgift/Lumina)
   #include "Necessary/FixWpnRnk.event"
   
   //Unit Action Rework (required for movement skills)
   #include "Necessary/UnitActionRework/UnitActionRework.event"
-
-  //Change Sick Status to Freeze
-  #include "ExternalHacks/Freeze/Freeze.event"
-  #include "ExternalHacks/Freeze/EventFreeze.event"
-  
-  //Reaver Split
-  ALIGN 4
-  #include "ExternalHacks/ReaverSplit/ReaverSplit.event"
   
   //Cannot Crit
   ALIGN 4
@@ -181,15 +136,11 @@ POP
   //Item Effect Revamp by Teraspark
   #include "Necessary/ItemEffectRevamp/IERevamp_Installer.event"
 
-  // RW was here; they have no idea what they were doing. Edit with caution.
-  // GroupAI by PhantomSentine
-  #include "ExternalHacks/GroupAI.event"
+  //Stairs
+  #include "ExternalHacks/Stairs/Stairs.event"
   
   //Durability-Based Items, for Skill Scrolls
   #include "Necessary/DurabilityBasedItems/DurabilityBasedItems.event"
-
-  // Gaiden Magic 2.0
-  #include "ExternalHacks/GaidenMagic/GaidenMagic.event"
   
   // Unlock working on chests
   #include "ExternalHacks/UnlockChest/UnlockChest.event"

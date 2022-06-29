@@ -102,6 +102,7 @@
 #define Bandit 0x99
 
 #define Selese 0x6e
+#define SisterSelese 0xf3 // Uses Selese text and used in ch11 for green units
 #define Cythes 0x89
 #define Mahemen 0xA1
 

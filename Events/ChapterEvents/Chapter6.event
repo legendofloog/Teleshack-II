@@ -554,17 +554,22 @@ LeinaRecruitCromar:
 	_CountRange(Leina, 0, SisterRing, 0xFF, 0, 0, 30, 34)
 	IBeq(0, 0)
 		MUSC WithUs_Song
-		FlashCursor(Cromar, 40)
+		FlashCursor(Cromar, 30)
 		Text(LeinaRecruitCromarWithRing)
 		CUSA Cromar
+		FlashCursor(McCallum,30)
+		Text(McCallumMovesOutOfTheWay)
 		CUSN McCallum
-		MOVE 20 McCallum [28, 9]
+		MOVE 20 McCallum [21, 0]
+		ENUN
+		ENUT 0x80
+		REMOVEUNIT McCallum
 		GOTO 2
 	LABEL 0
 	CHECK_ALIVE McCallum
 	IBne(0, 1)
 		MUSC WithUs_Song
-		FlashCursor(Cromar, 40)
+		FlashCursor(Cromar, 30)
 		Text(LeinaRecruitCromarWithKill)
 		CUSA Cromar
 		GOTO 2
