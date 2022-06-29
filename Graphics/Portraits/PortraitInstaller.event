@@ -133,6 +133,8 @@
 #define ArtemisMug 0xFC
 #define MihailMug 0xFD
 #define SaifMug 0xFE
+#define CidorYoungMug 0x104
+#define DukeSeleseMug 0x105
 
 ALIGN 16
 CleoMugData:

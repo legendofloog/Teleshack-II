@@ -194,7 +194,6 @@ OutdoorEnemy:
   UNIT Selese Freelancer Cidor Level(9,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
 //turn 8
   UNIT Selese Sister Cidor Level(12,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge,PureWater,LightRune] BossAI
-  
   UNIT
 
 ThiefSpawn:

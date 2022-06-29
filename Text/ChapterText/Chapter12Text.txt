@@ -23,7 +23,6 @@ Defeat Eitha[X]
 the legendary hero.[X]
 
 //first half of the flashback
-
 ## Ch12BeginningScene1
 [MidRight][LoadCidorYoung][CloseEyes]
 Thanks be Byelen, whom has blessed us.[AN]
@@ -72,7 +71,6 @@ Do you understand, son?[AN]
 [Beat]Y-yes Father, I understand.[AN]
 [MidLeft]
 [ToggleSmile]Good. I'm proud of you, Cidor.[AN]
-
 //*knocking*
 [FarFarRight]
 Hello? Duke Selese?[AN]
