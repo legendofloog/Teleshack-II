@@ -17,6 +17,14 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x51E
+Radiant[X]
+
+# 0x55B
+Unit is blessed by Leina's Radiance.[NL]
+They will heal for 10 + Leina's Mag[N]
+after she attacks or heals.[X]
+
 # 0x533 PrfStar
 [0xBD][X]
 

@@ -193,7 +193,7 @@ OutdoorEnemy:
   UNIT Selese Myrmidon Cidor Level(9,Enemy,True) [4,21] 0x0 0x0 0x0 0x1 [IronSword] TwoActionAI
   UNIT Selese Freelancer Cidor Level(9,Enemy,True) [6,23] 0x0 0x0 0x0 0x1 [IronLance] TwoActionAI
 //turn 8
-  UNIT Selese Sister Cidor Level(1,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge,PureWater,LightRune] BossAI
+  UNIT Selese Sister Cidor Level(12,Enemy,True) [0,23] 0x0 0x0 0x0 0x1 [Purge,PureWater,LightRune] BossAI
   
   UNIT
 
@@ -202,7 +202,7 @@ ThiefSpawn:
   UNIT
   
 EithaSpawn:
-  UNIT Eitha Sniper_F 0x0 Level(10,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
+  UNIT Eitha Sniper_F 0x0 Level(1,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
   UNIT
 
 
@@ -234,7 +234,7 @@ Music(PMDSteamCaveID)
 TEXTCONT
 TEXTEND
 REMA
-SetBackground(BlackBackground)
+SetBackground(0x11) // was black background but this broke the display
 Text(Ch12BeginningScene4B)
 MUSC 0x7FFF
 SetBackground(0x0E)
@@ -249,7 +249,7 @@ Text(Ch12BeginningScene5)
 Text(Ch12BeginningScene6)
 Text(Ch12BeginningScene7)
 Text(Ch12BeginningScene8)
-SetBackground(BlackBackground)
+SetBackground(0x11) // was black background but broke the display
 MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12BeginningScene9A
@@ -259,7 +259,7 @@ SetBackground(0x18)//daytime forest
 Music(FF6AwakeningID)
 Text(Ch12BeginningScene9B)
 MUSI
-SetBackground(BlackBackground)
+SetBackground(0x11) // was black background but broke the displa
 Text(Ch12BeginningScene9C)
 SetBackground(0x18)//daytime forest
 MUNO
@@ -336,7 +336,9 @@ ENDA
 EndingScene:
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
-CUSA Tiberius
+RemoveAllItem(Darkbrand)
+LOAD1 1 TiberiusEndSceneGroup
+ENUN 
 LABEL 2
 SetBackground(CastleHallway)
 Music(FF5_Nostalgia)
@@ -345,7 +347,7 @@ MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12End2
 TEXTEND
-Music(PMDSteamCaveID)//change this to kwame's theme eventually
+Music(KwameID)//change this to kwame's theme eventually
 TEXTCONT
 TEXTEND
 //bow draw sound effect
@@ -455,3 +457,7 @@ CAMERA_CENTERED [6,10]
 LOAD 1 ThiefSpawn
 NoFade
 ENDA
+
+TiberiusEndSceneGroup:
+UNIT Tiberius Noble Cidor Level(7,Ally,False) [4,7] 0x0 0x0 0x0 0x0 [Darkbrand] NoAI
+UNIT 
