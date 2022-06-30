@@ -86,6 +86,11 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [16,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
+NewUnits:
+UNIT Ichwep LanceSoldier Cleo Level(9,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(9,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT
+
 EnemyUnits:
 UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [4,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
 UNIT Selese Freelancer Cleo Level(11,Enemy,True) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance] AttackInRangeAI
@@ -138,6 +143,7 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+LOAD1 1 NewUnits
 LOAD1 0x1 EnemyUnits
 LOAD1 0x1 EnemyUnits2
 LOAD1 0x1 PrisonGreens
