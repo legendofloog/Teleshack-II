@@ -5,9 +5,9 @@
 #define Bolganone_index 0x4B
 #define Inferno_index 0x4C
 #define Thoron_index 0x4D
-#define Brenthunder_index 0x4E
-#define AraiGale_index 0x4F
-#define AbsoluteZero_index 0x50
+#define AbsoluteZero_index 0x4E
+#define Brenthunder_index 0x4F
+#define AraiGale_index 0x50
 #define StoneSword_index 0x51
 #define DancingSword_index 0x52
 #define Jormungand_index 0x53
@@ -16,26 +16,28 @@
 #define SpellMirror_index 0x56
 #define Malkhut_index 0x57
 
-
 #include "CSA System FE8/Master Spell Animation Installer.event"
 
+// "safe" spell anims (work)
 #include "Event/Saggitae.event"
 #include "Event/Wind.event"
 #include "Event/Meteor.event"
 #include "Event/Bolganone.event"
 #include "Event/Inferno.event"
-#include "Event/AbsoluteZero.event"
-#include "Event/AraiGale.event"
 #include "Event/Thoron.event"
+#include "Event/AbsoluteZero.event"
+#include "Event/Brenthunder.event"
 #include "Event/DancingSword.event"
 #include "Event/StoneSword.event"
-#include "Event/Brenthunder.event"
-
 #include "Event/Jormungand.event"
 #include "Event/Arachnid.event"
 #include "Event/Sink.event"
 #include "Event/SpellMirror.event"
 #include "Event/Malkhut.event"
+#include "Event/AraiGale.event"
+
+
+
 
 /*
 credits

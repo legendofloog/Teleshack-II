@@ -174,8 +174,6 @@ MUSC PMDSteamCaveID
 CenterTextbox(Ch13Opening)
 MUSC FFTAnxiety
 Text(CleoAndLoeweNoticeEnemy)
-TEXTEND
-REMA
 GotoPrepScreen
 NoFade
 ENDA

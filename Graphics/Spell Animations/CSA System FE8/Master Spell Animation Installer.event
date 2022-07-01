@@ -7,11 +7,14 @@
 ALIGN 4
 #inctext lyn "SpellFix.elf" "SpellFixHook.elf" //Fix dodge to front glitch (thanks Snakey1)
 
-#define SpellTable $5d4e60
+SpellTable: //courtesy of LoA buildfile (thanks Snek)
+#incbin "RepointedSpellTable.dmp"
+
+
 #define CSATable $EF2F20 //CHANGE THIS TO A LOCATION WHERE YOU KNOW THERE ARE 0x13EC BYTES OF FREE SPACE
 PUSH
 ORG CSATable
-#incbin BlankCSATable.dmp
+#incbin "BlankCSATable.dmp"
 
 ORG $95d780
 CSAEngine:
@@ -21,3 +24,4 @@ POP
 
 #define CSAEngine_Dim $95d7ec
 #define CSAEngine_NoDim $95d898 //the last word in the dmp, this should be updated if you edit the engine.
+
