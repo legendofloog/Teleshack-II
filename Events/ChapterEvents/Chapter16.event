@@ -14,7 +14,7 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0, RashidRecruitment, 1)
-TurnEventEnemy(0, EndingScene, 1)
+TurnEventPlayer(0, KofiRecruitment, 1)
 TurnEventPlayer(0, Thief1_AEvent, 7)
 TurnEventPlayer(0, Thief1_BEvent, 10)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
@@ -120,6 +120,7 @@ UNIT
 	
 NewPlayers:
 UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc] NoAI
+UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [3,1] 0x0 0x0 0x0 [GreatSword,FlameSword] NoAI
 UNIT
 
 NPCUnits:
@@ -201,7 +202,7 @@ EnemyReinforcements_B1:
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [6,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,15] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,19] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
+UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
 UNIT
 
 EnemyReinforcements_B2:
@@ -229,6 +230,15 @@ MUSC WithUs_Song
 Text(Ch16_Rashid_Recruitment)
 CUSA Rashid
 SetFatigue(Rashid,0)
+NoFade
+ENDA
+
+KofiRecruitment:
+CameraCursor(Kofi)
+MUSC WithUs_Song
+Text(Ch16_Kofi_Recruitment)
+CUSA Kofi
+SetFatigue(Kofi,0)
 NoFade
 ENDA
 
@@ -309,29 +319,29 @@ MUSC(Rovers)
 SetBackground(House2)
 Text(Ch16_Cleo_Elias)
 CHECK_EVENTID 0x8A
-	BNE 7 s0 sC
+BNE 7 s0 sC
 	GiveItem(ArgymosCrest,Cleo)
 	ENUT 0x8A
 LABEL 7
-CHECK_ALIVE Varga
-	BEQ 2 s0 sC
-    CHECK_EVENTID 0x88
-    BNE 2 s0 sC
-    SetBackground(OutsideFort)
-    MUSC(Advance)
-    Text(VargaPrf)
-    GiveItem(AquaBrand,Varga)
-    ENUT 0x88
+CheckUnitDeadOrJailed(Varga)
+BNE 2 s0 sC
+	CHECK_EVENTID 0x88
+	BNE 2 s0 sC
+    	SetBackground(OutsideFort)
+    	MUSC(Advance)
+    	Text(VargaPrf)
+    	GiveItem(AquaBrand,Varga)
+    	ENUT 0x88
 LABEL 2
-CHECK_ALIVE Emil
-	BEQ 4 s0 sC
+CheckUnitDeadOrJailed(Emil)
+BNE 4 s0 sC
 	CHECK_EVENTID 0x89
 	BNE 4 s0 sC
-	SetBackground(OutsideFort)
-	MUSC(Advance)
-	Text(EmilPrf)
-	GiveItem(ChargeLance,Emil)
-	ENUT 0x89
+		SetBackground(OutsideFort)
+		MUSC(Advance)
+		Text(EmilPrf)
+		GiveItem(ChargeLance,Emil)
+		ENUT 0x89
 LABEL 4
 SetBackground(OutsideFort)
 MUSC Advance
