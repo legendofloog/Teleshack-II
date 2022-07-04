@@ -13,7 +13,6 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0, EndingScene, 1)
 TurnEventPlayer(0, GreenGoBlueEvent, 1)
 TurnEventPlayer(0, Turn1ReinforcementEvent, 2)
 END_MAIN
