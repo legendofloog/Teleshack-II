@@ -46,7 +46,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x2C Augur,(-2),50
 0x2D Ilse,3,30
 0x2E Rashid,0,5
-0x2F Nikolas,1,15
+0x2F Nikolas,4,55
 0x30 Sera,0,5
 0x31 Shaw,4,15
 0x32 Apsis,7,88
@@ -62,13 +62,13 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x3C Ngondala,6,30
 0x3D CatrinReal,9,35
 0x3E Matthias,5,45
-0x3F KwameReal,13,100
+0x3F KwameReal,13,55
 0x40 Kofi,5,20
 0x41 TrajanReal,-1,1
 0x42 Locke,-1,1
 0x43 Elias,0,10
 0x44 Boro,0,0
-0x45,0,0
+0x45 Orfeas,11,60
 0x46 ,10,40
 0x47,2,5
 0x48 ,0,5
@@ -206,10 +206,10 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0xCC Pegasus Messenger,0,0
 0xCD Rausten Knight,0,0
 0xCE Rausten Knight,0,0
-0xCF -,0,0
+0xCF Byelen,11,0
 0xD0 -,0,0
 0xD1 -,0,0
-0xD2 -,0,0
+0xD2 Theimon,14,0
 0xD3 -,0,0
 0xD4 -,0,0
 0xD5 -,0,0

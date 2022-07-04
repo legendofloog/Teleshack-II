@@ -185,6 +185,11 @@
 [LoadArtemis] = [LoadFace][0xFC][0x1]
 [LoadMihail] = [LoadFace][0xFD][0x1]
 [LoadSaif] = [LoadFace][0xFE][0x1]
+[LoadMysteryMug] = [LoadFace][0x3D][0x1]
+[LoadDanu] = [LoadFace][0x3A][0x1]
+[LoadTheimon] = [LoadFace][0x3B][0x1]
+[LoadPerihelios] = [LoadFace][0x3C][0x1]
+[LoadEithaReal] = [LoadFace][0x3E][0x1]
 
 [LoadMan1] = [LoadFace][0x6A][0x1]
 [LoadWoman1] = [LoadFace][0x70][0x1]

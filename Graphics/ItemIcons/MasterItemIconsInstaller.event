@@ -155,5 +155,13 @@ ItemIconSlot(0xDC,"Png/TrainedAxe.png")
 ItemIconSlot(0xDD,"Png/TrainedArc.png")
 ItemIconSlot(0xde,"Png/GaleBow.png")
 ItemIconSlot(0xDF,"Png/SlimBow.png")
+ItemIconSlot(0xBA,"Png/Predestination.png")
+ItemIconSlot(0xBB,"Png/TitansFang.png")
+ItemIconSlot(0xBD,"Png/Svarog.png")
+ItemIconSlot(0xC3,"Png/Worldcleaver.png")
+ItemIconSlot(0xC9,"Png/Indra.png")
+ItemIconSlot(0xB7,"Png/Agni.png")
+ItemIconSlot(0xB6,"Png/SmolderingSeal.png")
+ItemIconSlot(0xB5,"Png/Apotheosis.png")
 POP
 

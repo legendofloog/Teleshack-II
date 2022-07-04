@@ -56,6 +56,13 @@ DeathQuote(Mihails,Chapter23,14,0)
 DeathQuote(EliasReal,Chapter23,0x65,Chapter23EliasDeathQuoteText)
 DeathQuote(CoraliaReal,Chapter23,0x65,Chapter23CoraliaDeathQuoteText)
 
+//ch24
+DeathQuote(Theimon,Chapter24,0,TheimonDeathQuoteText)
+DeathQuote(Danu,Chapter24,0,DanuDeathQuoteText)
+DeathQuote(HamdiReal,Chapter24,0,HamdiRealDeathQuoteText)
+DeathQuote(EithaReal,Chapter24,0,EithaRealDeathQuoteText)
+DeathQuote(Byelen,Chapter24,2,ByelenDeathQuoteText)
+
 //player units
 // ch1
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
@@ -174,5 +181,9 @@ DeathQuote(CatrinReal,AllChapters,0x0,0x0,CatrinRealGiveAll)
 DeathQuote(EliasReal,AllChapters,0x0,0x0,EliasGiveAll)
 DeathQuote(Maryn,AllChapters,0x0,0x0,MarynGiveAll) // samson/arran
 DeathQuote(Viktor,AllChapters,0x0,0x0,ViktorGiveAll)
+
+// ch24
+DeathQuote(Orfeas,AllChapters,0x0,0x0,OrfeasGiveAll)
+DeathQuote(BarodReal,AllChapters,0x0,0x0,BarodGiveAll)
 
 DeathQuote(0xFFFF,0,0,0) // terminator

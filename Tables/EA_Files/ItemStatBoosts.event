@@ -89,6 +89,14 @@ ALIGN 4
 BlackAnkletStatBoosts:
 StatBonus(0,4,4,0,0,2,2,0,0,0)
 
+ALIGN 4
+IndraStatBoosts:
+StatBonus(0,0,0,0,6,0,0,0,0,0)
+
+ALIGN 4
+AgniStatBoosts:
+StatBonus(0,6,0,0,0,0,0,0,0,0)
+
 
 ALIGN 4
 GrowthScrollBonusesTable:

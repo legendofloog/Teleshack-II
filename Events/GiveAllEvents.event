@@ -455,3 +455,17 @@ Text(ViktorDeathQuoteText)
 SendAll(Viktor)
 NoFade
 ENDA
+
+ALIGN 4
+BarodGiveAll:
+Text(BarodDeathQuoteText)
+SendAll(Barod)
+NoFade
+ENDA
+
+ALIGN 4
+OrfeasGiveAll:
+Text(OrfeasDeathQuoteText)
+SendAll(Orfeas)
+NoFade
+ENDA

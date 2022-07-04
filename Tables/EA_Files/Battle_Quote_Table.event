@@ -73,4 +73,17 @@ UnspecifiedBattleConvo(Taraji,Chapter21,0x1,BQTaraji)
 // Chapter23
 UnspecifiedBattleConvo(KassandraReal,Chapter23,1,0x0)
 
+// Chapter24
+SpecifiedBattleConvo(Byelen,Loewe,Chapter24,7,BQByelenLoewe)
+SpecifiedBattleConvo(Byelen,Cleo,Chapter24,8,BQByelenCleo)
+SpecifiedBattleConvo(Byelen,Kwame,Chapter24,9,BQByelenKwame)
+SpecifiedBattleConvo(Byelen,Barod,Chapter24,10,BQByelenBarod)
+SpecifiedBattleConvo(Byelen,Catrin,Chapter24,11,BQByelenCatrin)
+SpecifiedBattleConvo(HamdiReal,Loewe,Chapter24,12,BQHamdiLoewe)
+UnspecifiedBattleConvo(Theimon,Chapter24,13,BQTheimon)
+UnspecifiedBattleConvo(Danu,Chapter24,14,BQDanu)
+UnspecifiedBattleConvo(HamdiReal,Chapter24,15,BQHamdiReal)
+UnspecifiedBattleConvo(EithaReal,Chapter24,16,BQEithaReal)
+UnspecifiedBattleConvo(Byelen,Chapter24,1,BQByelen)
+
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

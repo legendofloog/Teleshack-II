@@ -80,6 +80,7 @@
 #define BallisticianLock 0x19000000
 #define LumenLock 0x1A000000
 #define ImpalerLock 0x1B000000
+#define BarodLock 0x1C000000
 
 // Weapon Effect
 #define NoEffect 0x0

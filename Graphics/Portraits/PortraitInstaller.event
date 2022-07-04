@@ -47,7 +47,6 @@
 #define RashidMug 0xD7
 #define NikolasMug 0xDB
 #define AltoMug 0xDC
-#define MysteryMug 0xDD
 #define SeraMug 0xDE
 #define ShafaqatMug 0xDF
 #define KofiMug 0xE0
@@ -131,6 +130,11 @@
 #define ArtemisMug 0xFC
 #define MihailMug 0xFD
 #define SaifMug 0xFE
+#define DanuMug 0x3A
+#define TheimonMug 0x3B
+#define PeriheliosMug 0x3C
+#define MysteryMug 0x3D
+#define EithaMug 0x3E
 
 ALIGN 16
 CleoMugData:
@@ -1164,3 +1168,43 @@ ArtemisMugData:
 #incbin "Dmp/Artemis(Loog)_palette.dmp"
 #incbin "Dmp/Artemis(Loog)_minimug.dmp"
 setMugEntry(ArtemisMug, ArtemisMugData, 3, 6, 3, 4)
+
+ALIGN 16
+DanuMugData:
+#incbin "Dmp/Danu(Levin,Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Danu(Levin,Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Danu(Levin,Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Danu(Levin,Laurent_Lacroix)_minimug.dmp"
+setMugEntry(DanuMug, DanuMugData, 2, 5, 3, 3)
+
+ALIGN 16
+TheimonMugData:
+#incbin "Dmp/Theimon{Blade, Skitty}_mug.dmp"
+#incbin "Dmp/Theimon{Blade, Skitty}_frames.dmp"
+#incbin "Dmp/Theimon{Blade, Skitty}_palette.dmp"
+#incbin "Dmp/Theimon{Blade, Skitty}_minimug.dmp"
+setMugEntry(TheimonMug, TheimonMugData, 3, 5, 3, 3)
+
+ALIGN 16
+EithaMugData:
+#incbin "Dmp/EithaReal(Melia)_mug.dmp"
+#incbin "Dmp/EithaReal(Melia)_frames.dmp"
+#incbin "Dmp/EithaReal(Melia)_palette.dmp"
+#incbin "Dmp/EithaReal(Melia)_minimug.dmp"
+setMugEntry(EithaMug, EithaMugData, 2, 5, 3, 3)
+
+ALIGN 16
+MysteryMugData:
+#incbin "Dmp/Mystery(Xilirite,Levin,BatimaTheBat,ObsidianDaddy,LaurentLacroix)_mug.dmp"
+#incbin "Dmp/Mystery(Xilirite,Levin,BatimaTheBat,ObsidianDaddy,LaurentLacroix)_frames.dmp"
+#incbin "Dmp/Mystery(Xilirite,Levin,BatimaTheBat,ObsidianDaddy,LaurentLacroix)_palette.dmp"
+#incbin "Dmp/Mystery(Xilirite,Levin,BatimaTheBat,ObsidianDaddy,LaurentLacroix)_minimug.dmp"
+setMugEntry(MysteryMug, MysteryMugData, 2, 5, 2, 3)
+
+ALIGN 16
+PeriheliosMugData:
+#incbin "Dmp/Perihelios(Devisio,Xilirite)_mug.dmp"
+#incbin "Dmp/Perihelios(Devisio,Xilirite)_frames.dmp"
+#incbin "Dmp/Perihelios(Devisio,Xilirite)_palette.dmp"
+#incbin "Dmp/Perihelios(Devisio,Xilirite)_minimug.dmp"
+setMugEntry(PeriheliosMug, PeriheliosMugData, 5, 5, 6, 3)
