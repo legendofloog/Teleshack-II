@@ -26,7 +26,7 @@ bool ShouldApplyPCC(BattleUnit* attacker, NewBattleHit* battleHit, BattleStats* 
 		for(int i = 0; i < BATTLE_HIT_MAX; i++){
 			if(&NewBattleHitArray[i] != battleHit){
 				if (battleHit->attributes & NewBattleHitArray[i].attributes & (BATTLE_HIT_ATTR_ISATTACKER + BATTLE_HIT_ATTR_ISDEFENDER)){
-					if (battleHit->attributes & BATTLE_HIT_ATTR_FOLLOWUP){
+					if (battleHit->attributes & BATTLE_HIT_ATTR_FOLLOWUP){ //i think this works? should check for if the batle hit is a follow up
 						return true;
 					}
 				}

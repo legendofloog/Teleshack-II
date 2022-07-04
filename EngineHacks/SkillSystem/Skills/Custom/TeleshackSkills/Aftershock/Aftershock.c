@@ -1,8 +1,8 @@
 #include "Aftershock.h"
 
-bool IsUsingThunderWeapon(BattleUnit battleUnit){
+bool IsUsingThunderWeapon(BattleUnit* battleUnit){
 
-	Item weapon = battleUnit.weaponBefore;
+	Item weapon = battleUnit->weaponBefore;
 
 	int cnt = 0;
 	while(ThunderWeapons[cnt] != 0){
@@ -33,7 +33,7 @@ void AftershockPostBattle(){
 	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
 
 	// try to apply aftershock
-	if(IsUsingThunderWeapon(gBattleActor) && gSkillTester(&gBattleActor.unit, AftershockIDLink)){
+	if(IsUsingThunderWeapon(&gBattleActor) && gSkillTester(&gBattleActor.unit, AftershockIDLink)){
 		gDebuffTable[target->index].skillState |= SKILLSTATE_AFTERSHOCK;
 	}
 }

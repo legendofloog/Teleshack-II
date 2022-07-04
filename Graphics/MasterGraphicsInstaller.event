@@ -10,7 +10,7 @@
 #include "Class Cards/MasterClassCardInstaller.event"
 #include "ItemIcons/MasterItemIconsInstaller.event"
 #include "StatusScreen/Installer.event"
-
+#include "Backgrounds/BackgroundInstaller.event"
 
 PUSH // menu palettes from pandan
 ORG $5B6BB4 //palette 1 (blue)

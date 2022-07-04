@@ -181,6 +181,8 @@
 #define Unmoor 0xAB
 #define Impaler 0xAC
 
+#define Firestone 0xB2
+
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
 #define GoldGem 0xBB

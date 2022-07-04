@@ -15,6 +15,7 @@
 .equ SkybreakerID, SlayerClassType+4
 .equ SkybreakerClassType,SkybreakerID+4
 .equ ResourcefulID,SkybreakerClassType+4
+.equ FlightID,ResourcefulID+4
 
 push	{r4-r6,r14}
 mov		r4,r0

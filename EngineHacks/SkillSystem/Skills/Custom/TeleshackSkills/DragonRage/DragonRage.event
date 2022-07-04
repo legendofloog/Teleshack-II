@@ -4,4 +4,4 @@ ALIGN 4
 DragonRageIDLink:
 BYTE DragonRageID
 
-// Add "DragonRage" to the postbattle loop
+// Add "DragonRage" to the prebattle loop

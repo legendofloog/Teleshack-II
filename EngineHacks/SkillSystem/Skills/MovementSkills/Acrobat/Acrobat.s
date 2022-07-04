@@ -1,9 +1,11 @@
 .thumb
 .org 0x0
 
+.equ PirateMoveTable, FlierMoveTable+4
 .equ SkillChecker, PirateMoveTable+4
 .equ AcrobatID, SkillChecker+4
 .equ AzuriumMightID, SkillChecker+8
+.equ FlightID, AzuriumMightID+4
 @r0=movement cost table. Function originally at 1A4CC, now jumped to here (jumpToHack)
 push  {r4-r7,r14}
 mov   r4,r0
@@ -32,7 +34,19 @@ beq   NoAzuriumMight
     bne NoAzuriumMight
     
     ldr   r4, PirateMoveTable
+
 NoAzuriumMight:
+mov   r0, r7
+ldr   r1,FlightID
+ldr   r2,SkillChecker
+mov   r14,r2
+.short  0xF800
+cmp   r0, #0x0
+beq   NoFlight
+   
+    ldr   r4, FlierMoveTable
+
+NoFlight:
 mov   r0, r7
 ldr   r1,AcrobatID
 ldr   r2,SkillChecker
@@ -63,4 +77,4 @@ CurrentCharPtr:
 .long 0x03004E50
 MoveCostLoc:
 .long 0x03004BB0
-PirateMoveTable:
+FlierMoveTable:

@@ -26,4 +26,4 @@
 #define BuildingInterior 0x27
 #define Temple 0x2C
 #define Sand 0x30
-#define BlackBackground 0x35
+//#define BlackBackground 0x35

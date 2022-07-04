@@ -38,6 +38,7 @@ LOCA 11 LockeInn [2,22] 0x10
 Vendor(Ch22Vendor,19,8)
 Armory(Ch22Armory,9,1)
 SecretShop(Ch22SecretShop,8,15)
+//Seize(4,28)
 END_MAIN
 
 MiscBasedEvents:

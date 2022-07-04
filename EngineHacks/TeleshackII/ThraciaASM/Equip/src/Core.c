@@ -101,59 +101,38 @@ int GetUnitEquippedItemSlot (Unit* unit){
 	return 0xFF;
 }
 
-void EdgedArrowPreBattle(){
-	Unit* battleActor = &gBattleActor.unit;
-	Item actorUnitItem = GetUnitEquippedItem(battleActor);
-	if(actorUnitItem.number == 0xD1){ // edged arrow id
-		const ItemData* currentWeaponData = GetItemData(GetUnitEquippedWeapon(battleActor).number);
+void EdgedArrowPreBattle(BattleUnit* unit1, BattleUnit* unit2){
+	if(GetUnitEquippedItem(&unit1->unit).number == 0xD1){ // edged arrow id
+		const ItemData* currentWeaponData = GetItemData(GetUnitEquippedWeapon(&unit1->unit).number);
 		if(currentWeaponData->attributes & (IA_MAGIC | IA_MAGICDAMAGE | IA_NEGATE_DEFENSE)){
 			return;
 		}
-		BattleUnit* battleTarget = &gBattleTarget;
-		battleTarget->battleDefense = 0;
-
+		unit2->battleDefense = 0;
 	}
 }
 
-void RuneArrowPreBattle(){
-	Unit* battleActor = &gBattleActor.unit;
-	Item actorUnitItem = GetUnitEquippedItem(battleActor);
-	if(actorUnitItem.number == 0xa3){ //rune arrow id
-		BattleUnit* battleActorUnit = &gBattleActor;
-		battleActorUnit->battleCritRate += battleActorUnit->unit.mag;
+void RuneArrowPreBattle(BattleUnit* unit1, BattleUnit* unit2){
+	if(GetUnitEquippedItem(&unit1->unit).number == 0xa3){ //rune arrow id
+		unit1->battleCritRate += unit1->unit.mag;
 	}
 }
 
-void BlackAnkletPostBattle(){
-	if (GetUnitEquippedItem(&gBattleActor.unit).number == 0xa4){ //black anklet id
-		if ((&gBattleActor)->unit.curHP <= 0){ //don't do anything they're already dead
+void BlackAnkletPostBattle(BattleUnit* unit1, BattleUnit* unit2){
+	if (GetUnitEquippedItem(&unit1->unit).number == 0xa4){ //black anklet id
+		if (unit1->unit.curHP <= 0){ //don't do anything they're already dead
 			
 		}
-		else if((&gBattleActor)->unit.curHP <= 10){ //make sure they don't get 0 or less
-			(&gBattleActor)->unit.curHP = 1;
+		else if(unit1->unit.curHP <= 10){ //make sure they don't get 0 or less
+			unit1->unit.curHP = 1;
 		}
 		else{
-			(&gBattleActor)->unit.curHP -= 10; //reduce HP by 10 post battle
-		}
-	}
-	if (GetUnitEquippedItem(&gBattleTarget.unit).number == 0xa4){ //black anklet id
-		if ((&gBattleTarget)->unit.curHP <= 0){ //don't do anything they're already dead
-			
-		}
-		else if((&gBattleTarget)->unit.curHP <= 10){ //make sure they don't get 0 or less
-			(&gBattleTarget)->unit.curHP = 1;
-		}
-		else{
-			(&gBattleTarget)->unit.curHP -= 10; //reduce HP by 10 post battle
+			unit1->unit.curHP -= 10; //reduce HP by 10 post battle
 		}
 	}
 }
 
-void DawnPendantPostBattle(){
-	if (GetUnitEquippedItem(&gBattleActor.unit).number == 0xa9){ //dawn pendant
-		gChapterData.visionRange = 0; //sets to no fog
-	}
-	if (GetUnitEquippedItem(&gBattleTarget.unit).number == 0xa9){
+void DawnPendantPostBattle(BattleUnit* unit1, BattleUnit* unit2){
+	if (GetUnitEquippedItem(&unit1->unit).number == 0xa9){ //dawn pendant
 		gChapterData.visionRange = 0; //sets to no fog
 	}
 }
