@@ -50,7 +50,7 @@ ENDA
 
 ThiefGroup1:
 UNIT Cythes LanceSoldier 0x0      Level(15,Enemy,True) [1,15] 0x0 0x0 0x1 REDA1R15 [IronLance] PursueWithoutHeedAI
-UNIT Looter Thief 0x0      Level(15,Enemy,True) [15,25] 0x0 0x0 0x1 REDA19R25 [IronSword, ChestKey] ThiefAI
+UNIT Looter Thief 0x0      Level(15,Enemy,True) [15,25] 0x0 0x0 0x1 REDA15R25 [IronSword, ChestKey] ThiefAI
 UNIT
 
 ThiefSpawn2:
@@ -109,7 +109,7 @@ END_MAIN
 
 
 LocationBasedEvents:
-Seize(22,26)
+//Seize(22,26)
 Door(3,6)
 Door(24,6)
 LOCA 11 FreeTheStranger [3,11] 0x12
@@ -135,6 +135,13 @@ MUSS Rovers
 Text(Ch15FreeingTheStranger)
 MURE 2
 ENUT 0x87
+CamOn
+MOVE 15 Traveler [0,29]
+ENUN
+CamOff
+FADI 15
+REMOVEUNIT Traveler
+FADU 15
 NoFade
 ENDA
 
@@ -249,14 +256,14 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,30] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 CoraliaAndCenterGroup:
@@ -278,7 +285,7 @@ UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [22,15] 0x0 0x0 0x0 0x0 [IronAxe
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [23,23] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
 UNIT Cythes Mage 0x0 Level(15,Enemy,True) [25,22] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
 UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [17,19] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
-UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Greatbow] AttackInRangeAI
+UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
 UNIT Cythes LanceArmor 0x0 Level(15,Enemy,True) [17,15] 0x0 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
 UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
@@ -292,7 +299,7 @@ UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,11] 0x0 0x0 0x0 0x0 [IronLa
 UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
 UNIT Cythes AxeFighter 0x0 Level(15,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
-UNIT Cythes Bard 0x0 Level(15,Enemy,True) [2,22] 0x0 0x0 0x0 0x0 [Wind] PursueWithoutHeedAI
+UNIT Cythes Bard 0x0 Level(15,Enemy,True) [2,23] 0x0 0x0 0x0 0x0 [Wind] PursueWithoutHeedAI
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI
 UNIT Cythes AxeArmor 0x0 Level(15,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [TrainedAxe] AttackInRangeAI
 UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [7,12] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI
@@ -328,12 +335,13 @@ CAMERA [7,0]
 ShowMap
 CameraCursor(Cleo)
 ENUN
-MUSC TiesOfFriendship
+MUSC SheenaID
 Text(Ch15BeginningScene1)
 CamOn
 MOVE 10 LoeweCopy [1,5]
 ENUN
 CamOff
+FadeOutMusic
 CAMERA [7,0]
 FlashCursor(7,0,30)
 FlashCursor(8,0,30)
@@ -364,7 +372,7 @@ ENUN
 ENUN
 CUSN Catrin
 ENUN
-SetBackground(House1)
+SetBackground(Sand)
 Text(Ch15BeginningScene3Part2)
 ENUN
 EVBIT_MODIFY 1
@@ -374,7 +382,9 @@ BNE 6 s0 sC
 	ENUN
 	ENUT 0x86
 LABEL 6
+FADI 20
 EraseBackground
+FADU 20
 MUSC Rovers
 EVBIT_MODIFY 0
 Text(Ch15BeginningScene4)
@@ -422,9 +432,12 @@ REMOVEUNIT Kassandra
 ENUN
 Text(Ch15BeginningScene6Part4)
 DismountAll
-SendAll(Loewe)
-RemoveAllItem(Kaiserschwert_Fake)
-SilentGiveItem(Kaiserschwert,Loewe)
+CHECK_EVENTID 0x86 //did the event already happen
+BNE 42 s0 sC
+	SendAll(Loewe)
+	RemoveAllItem(Kaiserschwert_Fake)
+	SilentGiveItem(Kaiserschwert,Loewe)
+LABEL 42
 GotoPrepScreen
 NoFade
 ENDA
@@ -440,6 +453,7 @@ UNIT Kwame Civilian_2 0x0 Level(20,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Kaiserschw
 UNIT
 
 EndingScene:
+ENUT 0x84
 MUSC 0x7FFF
 SetUnitFullHP(Cleo)
 SetUnitFullHP(Loewe)
@@ -483,6 +497,9 @@ MOVE 15 Kassandra [8,24]
 ENUN
 	StartBattle
 	NormalDamage(0,20)
+	MissedAttack(0,20)
+	MissedAttack(1,10)
+	MissedAttack(0,10)
 	EndAttack
 	FIGHT Kassandra Cleo SilverLance False
 ENUN
@@ -496,11 +513,12 @@ ENUN
 Text(Ch15EndingScene3)
 LOAD1 1 EliasUnitGroup
 ENUN
-MOVE 15 Elias [8,23]
+MOVE 15 EliasReal [8,23]
 ENUN
 	StartBattle
 	NormalDamage(0,15)
 	NormalDamage(0,15)
+	MissedAttack(1,10)
 	MissedAttack(1,10)
 	EndAttack
 	FIGHT Elias Kassandra BraveAxe False
@@ -557,6 +575,7 @@ ENUN
 MOVE 15 Loewe [13,14]
 ENUN
 Text(Ch15EndingScene6Part3)
+ENUF 0x84
 MNC2 Chapter16
 NoFade
 ENDA
@@ -576,7 +595,7 @@ UNIT Cythes PegasusRider 0x0 Level(10,Enemy, False) [7,12] 0x0 0x0 0x0 0x0 [Silv
 UNIT
 
 EliasUnitGroup:
-UNIT Elias Dracoknight 0x0 Level(17,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe] PursueWithoutHeedAI
+UNIT EliasReal Dracoknight 0x0 Level(17,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe] PursueWithoutHeedAI
 UNIT
 
 EndingCutscene3Group:

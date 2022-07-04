@@ -76,7 +76,7 @@ Vendor(Ch23Vendor,6,7)
 Village(15,LeftVillage,1,20)
 Village(16,MiddleVillage,16,15)
 Village(17,RightVillage,29,19)
-Seize(13,6)
+//Seize(13,6)
 END_MAIN
 
 Ch23Armory:
@@ -618,8 +618,10 @@ FADI 15
 STAL 120
 FADU 15
 Text(Ch23AfterTheBattle2)
-REMOVEUNIT CoraliaReal
 FADI 15
+SendAll(CoraliaReal)
+CUSN CoraliaReal
+REMOVEUNIT CoraliaReal
 CHECK_EVENTID 7
 BEQ 13 s0 sC
     CHECK_EVENTID 14 //mihail's alive?

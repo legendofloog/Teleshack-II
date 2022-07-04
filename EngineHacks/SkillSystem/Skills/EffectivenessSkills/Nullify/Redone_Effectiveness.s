@@ -3,27 +3,44 @@
 @r0=attacker's item id, r1=defender battle struct
 
 .equ NullifyID, SkillTester+4
+.equ FlightID, NullifyID+4
 
 push	{r4-r7,r14}
-mov		r4,r0
-mov		r5,r1
+mov		r4,r0 @attacker item id
+mov		r5,r1 @defender battle struct
 ldr		r0,[r5,#0x4]
 cmp		r0,#0
 beq		RetFalse
 mov		r0,r4
-ldr		r3,=#0x80176D0		@get effectiveness pointer
+ldr		r3,=0x80176D0		@get effectiveness pointer
 mov		r14,r3
 .short	0xF800
 cmp		r0,#0
 beq		RetFalse			@if weapon isn't effective, end
+
+mov 		r7, r0				@saves the effectiveness ptr in r7
 ldr		r1,[r5,#0x4]
 mov		r6,#0x50
-ldr		r6,[r1,r6]			@class weaknesses
+ldr		r6,[r1,r6]			@class weaknesses in r6
+
+mov		r0, r5
+ldr		r1,FlightID
+ldr		r2, SkillTester
+mov		r14, r2
+.short  0xF800
+cmp   		r0, #0x0
+beq   		NoFlight
+
+mov 		r3, #0x4
+orr		r6, r3			@ 0x4 = flier type; orr it with class weaknesses if have Flight
+
+NoFlight:
 cmp		r6,#0
 beq		RetFalse			@if class has no weaknesses, end
-
-mov		r4,r0				@save effectiveness ptr
+mov		r4,r7				@save effectiveness ptr
 mov		r7,#0				@inventory slot counter
+
+
 ProtectiveItemsLoop:
 lsl		r0,r7,#1
 add		r0,#0x1E
@@ -32,7 +49,7 @@ cmp		r0,#0
 beq		EffectiveWeaponLoop
 mov		r1,#0xFF
 and		r0,r1
-ldr		r3,=#0x80177B0		@get_item_data
+ldr		r3,=0x80177B0		@get_item_data
 mov		r14,r3
 .short	0xF800
 ldr		r1,[r0,#0x8]		@weapon abilities

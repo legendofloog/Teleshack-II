@@ -1,0 +1,18 @@
+//reinstalling black background bc it got borked for some reason; got from jp hack
+#define ConvoBackgroundTable $95DD1C
+#define SetConvoBackground(Index, ImagePointer, TSAPointer, PalettePointer) "PUSH; ORG ConvoBackgroundTable + (Index * 0xC); POIN ImagePointer TSAPointer PalettePointer; POP"
+
+#define BlackBackground 0x35
+SetConvoBackground(BlackBackground, BlackBackgroundImage, BlackBackgroundTSA, BlackBackgroundPal)
+
+ALIGN 4
+BlackBackgroundImage:
+#incbin "Dmp/BlackBackgroundImage.dmp"
+
+ALIGN 4
+BlackBackgroundTSA:
+#incbin "Dmp/BlackBackgroundTSA.dmp"
+
+ALIGN 4
+BlackBackgroundPal:
+#incbin "Dmp/BlackBackgroundPalette.dmp"

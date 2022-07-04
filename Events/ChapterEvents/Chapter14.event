@@ -210,40 +210,27 @@ SetBackground(BlackBackground)
 CenterTextbox(Ch14Opening)
 MUSC 0x4B
 SetBackground(Boat)
-FADU 15
 Text(Ch14_OnBoat)
-FADI 15
 SetBackground(Tavern)
-FADU 15
 Text(Ch14_InBoat)
-FADI 15
 CHECK_ALIVE Longxia
 BEQ 0x69 0x0 0xC
 CHECK_ALIVE Fangai
 BEQ 0x69 0x0 0xC
 SetBackground(Port)
-FADU 15
 Text(Ch14_LongxiaFangaiChat)
-FADI 15
 LABEL 0x69
 CHECK_ALIVE Delilah
 BEQ 0x666 0x0 0xC
 SetBackground(0x0)
-FADU 15
 Text(Ch14_DelilahChat)
-FADI 15
 LABEL 0x666
 MUSC HarvestDance
 SetBackground(0x0D)
-FADU 15
 Text(Ch14_InBasilica_1)
-FADI 15
-FADU 15
 Text(Ch14_InBasilica_2)
-FADI 15
 MUSC FF5_Sealed_Away
 SetBackground(PrisonRoom)
-FADU 15
 Text(Ch14_HornyJail)
 FADI 15
 GotoPrepScreen
@@ -255,6 +242,7 @@ SpawnReinforcements(GreenUnits)
 ENUN
 CameraCursor(Nahiza)
 Text(Ch14AfterPreps_1)
+SilentGiveItem(Firestone,Nahiza)
 CenterTextbox(Ch14AfterPreps_2)
 CameraCursor(Cleo)
 Text(Ch14AfterPreps_CleoWarn)
@@ -262,14 +250,10 @@ NoFade
 ENDA
 
 RescueAugur:
-FADI 15
 Music(KnightsPride)
 SetBackground(PrisonRoom)
-FADU 15
 Text(Ch14RecruitAugur)
-FADI 15
 CALL $9EE2C4
-FADU 15
 LOAD1 0x1 AugurGroup
 ENUN
 CameraCursor(Nahiza)
@@ -363,29 +347,20 @@ CHECK_ALIVE Augur
 BNE 20 0x0 0xC
 SetFlag(0x65)
 LABEL 20
-FADI 15
 SetBackground(0x30)
 MUSC 0x47
-FADU 15
 Text(Ch14Ending_1)
 FadeOutMusic
 Text(Ch14Ending_Grimblade)
-FADI 15
 MUSC FF5_Nostalgia
 SetBackground(0x0D)
-FADU 15
 Text(Ch14Ending_Basilica1)
-FADI 15
 SetBackground(0x0D)
 MUSC FF5_Sealed_Away
-FADU 15
 Text(Ch14Ending_KwameAugur)
-FADI 15
 FadeOutMusic
 SetBackground(0x0D)
-FADU 15
 Text(Ch14Ending_Messenger)
-FADI 15
 CHECK_ALIVE Iberis
 BEQ 0x314 0x0 0xC
 CHECK_ALIVE Nora
@@ -393,13 +368,10 @@ BEQ 0x314 0x0 0xC
 CHECK_ALIVE Hans
 BEQ 0x314 0x0 0xC
 MUSC FF5_Sealed_Away
-FADU 15
 Text(Ch14_RadnitzSquad)
-FADI 15
 LABEL 0x314
 SetBackground(0x30)
 MUSC 0x47
-FADU 15
 Text(Ch14Ending_Boro)
 FADI 15
 MNC2 Chapter15
