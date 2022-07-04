@@ -96,6 +96,24 @@ POIN AuraSkillCheck
 WORD SpurHitID 
 
 ALIGN 4
+ApotheosisPre:
+#incbin "ApsisSkills/Apotheosis/Apotheosis.dmp"
+POIN SkillTester
+WORD ApotheosisID
+
+ALIGN 4
+ApotheosisPost:
+#incbin "ApsisSkills/Apotheosis/ApotheosisHeal.dmp"
+POIN SkillTester
+WORD ApotheosisID
+
+ALIGN 4
+ApotheosisWT:
+#incbin "ApsisSkills/Apotheosis/ApotheosisWT.dmp"
+POIN SkillTester
+WORD ApotheosisID
+
+ALIGN 4
 AbsoluteZeroPreBattle:
 #incbin "ApsisSkills/AZAvoidBuff/AZAvoidBuff.dmp"
 POIN SkillTester
