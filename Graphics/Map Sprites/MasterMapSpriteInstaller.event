@@ -158,4 +158,6 @@ MovingMapSprite(0x7A,0x81E6DF4,FreelancerMoving)
 MovingMapSprite(0x7B,0x8202C04,ChampionMoving)
 MovingMapSprite(Bard_F,0x81D8668,Bard_F_Moving)
 MovingMapSprite(Devotee_M,0x81E7638,BrotherMoving)
+MovingMapSprite(Bard_Apsis,0x81D8668,BardMoving)
+MovingMapSprite(Sage_Apsis,0x81D9B58,0x81D91E4) //sage
 
