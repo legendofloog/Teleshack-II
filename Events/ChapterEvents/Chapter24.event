@@ -67,7 +67,7 @@ LoadUnit(15,27)
 UNIT
 
 NPCUnits:
-UNIT Orfeas Baron   0x0 Level(10,NPC,False) [13,24] 0x0 0x0 0x0 0x0 [Hel,Tornado,Recover,SmolderingSeal] AttackInRangeAI
+UNIT Orfeas Baron   0x0 Level(10,NPC,False) [13,24] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] AttackInRangeAI
 UNIT BarodReal Warrior   0x0 Level(20,NPC,False) [13,29] 0x0 0x0 0x0 0x0 [Indra,Agni] AttackInRangeAI
 UNIT
 
@@ -198,7 +198,7 @@ UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(15,Ally,True) [14,33] 0x0 0
 UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,Ally,True) [15,33] 0x0 0x0 0x0 0x0 [MasterAxe] NoAI
 UNIT Ch2_Selese_Guy GoldKnight_Dismounted 0x0 Level(15,NPC,True) [13,34] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
 UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [13,22] 0x0 0x0 0x0 0x0 [Predestination] NoAI
-UNIT Orfeas Baron   0x0 Level(10,Enemy,False) [12,21] 0x0 0x0 0x0 0x0 [Hel,Tornado,Recover,SmolderingSeal] NoAI
+UNIT Orfeas Baron   0x0 Level(10,Enemy,False) [12,21] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] NoAI
 UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [10,26] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
 UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [9,25] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
 UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [8,26] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
@@ -227,7 +227,7 @@ UNIT TrajanReal Hero 0x0  Level(10,Ally,False) [14,23] 0x0 0x0 0x0 0x0 [IronLanc
 UNIT
 
 OrfeasAppears:
-UNIT Orfeas Baron   0x0 Level(10,NPC,False) [13,22] 0x0 0x0 0x0 0x0 [Hel,Tornado,Recover,SmolderingSeal] NoAI
+UNIT Orfeas Baron   0x0 Level(10,NPC,False) [13,22] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] NoAI
 UNIT BarodReal Warrior 0x0 Level(10,NPC,False) [13,29] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT
 
