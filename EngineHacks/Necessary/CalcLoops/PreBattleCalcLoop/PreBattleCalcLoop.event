@@ -27,7 +27,7 @@ POIN DefendingCheck
 #ifdef BIORHYTHM
   POIN BiorhythmFunc
 #endif //BIORHYTHM
-POIN Wrath Avenger SpurStr SpurMag SpurSpd SpurDef SpurRes RuneArrowPreBattle
+POIN Wrath Avenger SpurStr SpurMag SpurSpd SpurDef SpurRes RuneArrowPreBattle SmolderingSealPreBattle
 POIN DriveStr DriveMag DriveSpd DriveDef DriveRes
 POIN LuckySeven OddRhythm EvenRhythm QuickBurn SlowBurn
 POIN Pre_Nightcaller

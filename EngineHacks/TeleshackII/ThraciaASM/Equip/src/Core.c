@@ -48,6 +48,12 @@ bool CanUnitEquipItem (Unit* unit, Item item){
 			i++;
 		}
 		return false;
+	}	
+	if (item.number == 0xf9){ //orfeas's smoldering seal
+		if (unit->pCharacterData->number == 0x45){ //orfeas unit ID
+			return true;
+		}
+		return false;
 	}
 	
 	if (item.number == 0xD1){ //edged arrow item id check; bow users only, must have one equipped
@@ -135,4 +141,10 @@ void DawnPendantPostBattle(BattleUnit* unit1, BattleUnit* unit2){
 	if (GetUnitEquippedItem(&unit1->unit).number == 0xa9){ //dawn pendant
 		gChapterData.visionRange = 0; //sets to no fog
 	}
+}
+
+void SmolderingSealPreBattle(BattleUnit* unit1, BattleUnit* unit2){
+    if(GetItemIndex(GetUnitEquippedItem(&unit1->unit)) == 0xf9){ //smoldering seal id
+        unit1->battleAttack += unit1->unit.pow;
+    }
 }

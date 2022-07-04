@@ -166,4 +166,9 @@ BYTE HardCharLock
 BYTE BoroReal
 BYTE EndLockArray
 
+BarodArray:
+BYTE HardCharLock
+BYTE BarodReal
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS
