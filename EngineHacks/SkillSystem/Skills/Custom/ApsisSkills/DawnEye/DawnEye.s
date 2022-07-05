@@ -14,21 +14,6 @@ ldrb 	r0, [r6,#0x11]	@action taken this turn
 cmp	r0, #0x2 @attack
 bne	End
 
-@check if eye of dawn is not equipped
-mov     r0, #0x4A      @Move to attacker's weapon (before battle)
-ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
-cmp     r0, #0x9D         @Eye of Dawn ID
-beq End
-
-@Is the second inventory slot the weapon?
-mov r1, #0x20
-ldrb r0, [r4, r1] @second item in inventory
-cmp     r0, #0x9D         @Eye of Dawn ID
-beq OffHandEffect
-b End
-
-OffHandEffect:
-
 @check for skill
 mov	r0, r4
 ldr	r1, DawnEyeID
@@ -43,6 +28,14 @@ ldrb	r0, [r4,#0x13]
 cmp	r0, #0x00
 beq	End
 
+@Is the second inventory slot the weapon? (attacker)
+mov r1, #0x20
+ldrb r0, [r4, r1] @second item in inventory
+cmp     r0, #0x9D         @Eye of Dawn ID
+beq OffHandEffect
+b End
+
+OffHandEffect:
 ldrb	r1, [r4,#0x12]	@r1=maxhp
 mov r0, #DawnHeal
 ldrb	r2, [r4,#0x13]	@r2=currhp
@@ -84,6 +77,14 @@ ldrb	r0, [r5,#0x13]
 cmp	r0, #0x00
 beq	End
 
+@Is the second inventory slot the weapon? (defender)
+mov r1, #0x20
+ldrb r0, [r5, r1] @second item in inventory
+cmp     r0, #0x9D         @Eye of Dawn ID
+beq OffHandEffect2
+b End
+
+OffHandEffect2:
 ldrb  r1, [r5,#0x12]  @r1=maxhp
 mov r0, #DawnHeal
 ldrb  r2, [r5,#0x13]  @r2=currhp
