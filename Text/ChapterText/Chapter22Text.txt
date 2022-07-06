@@ -6,3 +6,82 @@ Defeat Darmath[X]
 
 ## Ch22ObjectiveName
 Defeat Boss[X]
+
+## TrajanArriveText
+[FarFarLeft][LoadTrajan][MoveMidLeft]
+[MidLeft][TwoLineBox]
+Ah hah! I thought I[N]
+heard fighting.[AN]
+Now I just need to join[N]
+up with Cleo and Loewe.[A][X]
+
+## TrajanRecruitText
+
+[MidLeft][LoadTrajan][Right][LoadLoewe][FarRight][LoadCleo]
+[Right][OneLineBox]
+Trajan?! Is that you?[A]
+
+[MidLeft][ThreeLineBox]
+Cleo, Loewe! I thought it[N]
+might be you when I heard[N]
+all of the fighting going on.[A]
+
+[FarRight][ThreeLineBox]
+What are you doing here Trajan?[N]
+I thought you were with[N]
+Coralia and Elias in Gechrysos?[A]
+
+[MidLeft][TwoLineBox]
+We can discuss that after[N]
+we've shook these Cytheans.[AN]
+And besides, I've been out[N]
+of action for far far too long.[A]
+
+[Right][TwoLineBox]
+Good point Trajan, it's[N]
+good to have you back.[A]
+
+[MidLeft][OneLineBox]
+It's good to be back.[A][X]
+
+
+## LockeTavernPrompt
+[MidLeft][LoadLocke][MidRight][LoadActive]
+[MidLeft]
+You there, you with the[N]
+fighting going outside?[A][CloseSpeechSlow]
+
+[MidRight][MoveMidRight]
+
+[MidLeft][ThreeLineBox]
+The Liberators huh? Well look,[N]
+I'm a mercenary, been stuck here[N]
+with no work for so bloody long.[AN]
+Everything is drying up in[N]
+Cythes and I'm just pissing[N]
+away what money I have left.[AN]
+I don't have strong ties to[N]
+the country, and I can pick[N]
+locks and fight for you.[AN]
+All you need to do is pay[N]
+me a paltry sum of say[N]
+[ToggleRed]900 gold[ToggleRed]. What do you say?[Yes][A][X]
+
+## LockeYesText
+Good.[A][X]
+
+## LockeNoText
+[MidLeft][LoadLocke][MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Really? But it's a steal.[N]
+Eh, fine, come back if[N]
+you change your mind though.[A][X]
+
+## LockeNotEnoughText
+[MidLeft][LoadLocke]
+L.[A][X]
+
+## MoonlightBladeText
+[MidLeft][LoadActive][MoveMidLeft]
+[MidLeft][OneLineBox]
+Huh? What on earth is this?[A][X]

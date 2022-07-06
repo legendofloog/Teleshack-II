@@ -77,6 +77,8 @@
 #define MinkMug 0xF7
 #define TiberiusMug 0xF8
 #define DraganaDeadlordMug 0xF9
+#define AlexMug 0xC
+#define AxelMug 0xE
 
 // NPCs
 #define EliasMug 0xB
@@ -1118,3 +1120,20 @@ LockeMugData:
 #incbin "Dmp/Locke (RandomWizard)_palette.dmp"
 #incbin "Dmp/Locke (RandomWizard)_minimug.dmp"
 setMugEntry(LockeMug, LockeMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AlexMugData:
+#incbin "Dmp/Alex (Levin64)_mug.dmp"
+#incbin "Dmp/Alex (Levin64)_frames.dmp"
+#incbin "Dmp/Alex (Levin64)_palette.dmp"
+#incbin "Dmp/Alex (Levin64)_minimug.dmp"
+setMugEntry(AlexMug, AlexMugData, 2, 5, 3, 3)
+
+ALIGN 16
+AxelMugData:
+#incbin "Dmp/Axel (Levin64)_mug.dmp"
+#incbin "Dmp/Axel (Levin64)_frames.dmp"
+#incbin "Dmp/Axel (Levin64)_palette.dmp"
+#incbin "Dmp/Axel (Levin64)_minimug.dmp"
+setMugEntry(AxelMug, AxelMugData, 2, 5, 3, 3)
+

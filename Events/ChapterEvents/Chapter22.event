@@ -20,7 +20,7 @@ END_MAIN
 
 CharacterBasedEvents:
 CharacterEventBothWays(12, TrajanRecruit, Loewe, TrajanReal)
-CharacterBasedEvents(12, TrajanRecruit, Cleo, TrajanReal)
+CharacterEventBothWays(12, TrajanRecruit, Cleo, TrajanReal)
 END_MAIN
 
 LocationBasedEvents:
@@ -110,8 +110,34 @@ NoFade
 ENDA
 
 LockeInn:
+CHECK_MONEY
+IBlt(899, 0xF0) // choice below occurs if gold is above
+// SetBackground(Tavern)
+Text(LockeTavernPrompt)
+SVAL s1 0x1
+BEQ 0xAE s1 sC
+    Text(LockeNoText) // refuse to recruit
+	UnsetFlag(0x11)
+	// CALL $9EE2C4
+	GOTO 0xE
+
+LABEL 0xAE // recruit unit
+MUSC(WithUs_Song)
+Text(LockeYesText)
+// CALL $9EE2C4
 LOAD1 1 LockeSpawn
 ENUN
+SVAL s3 900
+TAKEMONEY
+GOTO 0xE
+
+LABEL 0xF0 // not enough money
+Text(LockeNotEnoughText)
+// CALL $9EE2C4
+UnsetFlag(0x11)
+GOTO 0xE
+
+LABEL 0xE // exit event
 NoFade
 ENDA
 
@@ -119,6 +145,7 @@ TrajanArrive:
 CamOn
 LOAD1 1 TrajanSpawn
 ENUN
+Text(TrajanArriveText)
 CamOff
 NoFade
 ENDA
@@ -133,6 +160,7 @@ NoFade
 ENDA
 
 GuidingMoonlight:
+Text(MoonlightBladeText)
 GiveItem(MoonlightBlade,0xFFFF)
 // Intended to be a one off easter egg item
 NoFade
@@ -230,7 +258,7 @@ UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [0,11] 0x0 0x0 0x0 0x0 [SilverAxe,Cl
 UNIT
 
 LockeSpawn:
-UNIT Locke ThiefFighter 0x0 Level(3,Ally,False) [2,23] 0x0 0x0 0x0 0x0 [Armorslayer,ShortSword] NeverMoveAI
+UNIT Locke ThiefFighter 0x0 Level(3,Ally,False) [2,23] 0x0 0x0 0x0 0x0 [Armorslayer,ShortSword] NoAI
 UNIT
 
 ThiefAppear:
