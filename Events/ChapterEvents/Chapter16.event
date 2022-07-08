@@ -319,25 +319,29 @@ MUSC(Rovers)
 SetBackground(House2)
 Text(Ch16_Cleo_Elias)
 CHECK_EVENTID 0x8A
-	BNE 7 s0 sC
+BNE 7 s0 sC
 	GiveItem(ArgymosCrest,Cleo)
 	ENUT 0x8A
 LABEL 7
 CheckUnitDeadOrJailed(Varga)
 BNE 2 s0 sC
-    SetBackground(OutsideFort)
-    MUSC(Advance)
-    Text(VargaPrf)
-    GiveItem(AquaBrand,Varga)
-    ENUT 0x88
+	CHECK_EVENTID 0x88
+	BNE 2 s0 sC
+    	SetBackground(OutsideFort)
+    	MUSC(Advance)
+    	Text(VargaPrf)
+    	GiveItem(AquaBrand,Varga)
+    	ENUT 0x88
 LABEL 2
 CheckUnitDeadOrJailed(Emil)
+BNE 4 s0 sC
+	CHECK_EVENTID 0x89
 	BNE 4 s0 sC
-	SetBackground(OutsideFort)
-	MUSC(Advance)
-	Text(EmilPrf)
-	GiveItem(ChargeLance,Emil)
-	ENUT 0x89
+		SetBackground(OutsideFort)
+		MUSC(Advance)
+		Text(EmilPrf)
+		GiveItem(ChargeLance,Emil)
+		ENUT 0x89
 LABEL 4
 SetBackground(OutsideFort)
 MUSC Advance
@@ -365,7 +369,6 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-EndOfEscapeRoutineASMC
 RemoveAll
 MUSC Tension
 SetBackground(Temple)
@@ -373,11 +376,11 @@ Text(Ch16_Ending)
 MUSC Rovers
 SetBackground(BuildingInterior)
 Text(Ch16_Council_1)
-Text(Ch16_Council_1_2)
+MUSC Rovers
 Text(Ch16_Council_2)
 Text(Ch16_Council_3)
 SetBackground(PrisonRoom)
-MUSC Nighttime
+MUSC(Nighttime)
 Text(Ch16_Ending_LoeweCleoNight_1)
 Text(Ch16_Ending_LoeweCleoNight_2)
 MNC2 Chapter17

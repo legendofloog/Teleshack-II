@@ -147,4 +147,5 @@
 #define MasterKnight_F_Dismounted 0x7c
 #define Devotee_M 0x7D
 #define Bard_Apsis 0x7E
+#define Sage_Apsis 0x7F
 

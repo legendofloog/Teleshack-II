@@ -67,6 +67,9 @@
 #define Locke 0x42
 #define EliasReal 0x43
 #define BoroReal 0x44
+#define Orfeas 0x45
+#define BarodReal 0x46
+
 
 
 // Chapter 1 Bosses
@@ -220,8 +223,16 @@
 #define Maryn 0xb9
 #define Viktor 0xba
 
+//Chapter 24 Stuff
+#define Byelen 0xCF
+#define EithaReal 0xD0
+#define HamdiReal 0xD1
+#define Theimon 0xD2
+#define Danu 0xD3
+#define Ch24Phantom 0xD4
+#define Perihelios 0xD5
 
-#define Breguet 0x46
+
 #define Bazba 0x48
 #define Entombed_boss 0x49
 #define Saar 0x4A

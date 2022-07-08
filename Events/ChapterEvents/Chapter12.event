@@ -233,7 +233,7 @@ Music(PMDSteamCaveID)
 TEXTCONT
 TEXTEND
 REMA
-SetBackground(0x11) // was black background but this broke the display
+SetBackground(BlackBackground) 
 Text(Ch12BeginningScene4B)
 MUSC 0x7FFF
 SetBackground(0x0E)
@@ -248,7 +248,7 @@ Text(Ch12BeginningScene5)
 Text(Ch12BeginningScene6)
 Text(Ch12BeginningScene7)
 Text(Ch12BeginningScene8)
-SetBackground(0x11) // was black background but broke the display
+SetBackground(BlackBackground) 
 MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12BeginningScene9A
@@ -258,7 +258,7 @@ SetBackground(0x18)//daytime forest
 Music(FF6AwakeningID)
 Text(Ch12BeginningScene9B)
 MUSI
-SetBackground(0x11) // was black background but broke the displa
+SetBackground(BlackBackground) 
 Text(Ch12BeginningScene9C)
 SetBackground(0x18)//daytime forest
 MUNO

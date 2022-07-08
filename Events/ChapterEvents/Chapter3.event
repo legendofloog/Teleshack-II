@@ -287,6 +287,7 @@ Text(EndingSceneTextA2)
 Text(EndingSceneTextA3)
 Text(EndingSceneTextA4)
 SendAll(Dragana)
+CUSN Dragana
 REMOVEUNIT Dragana
 MNC2 Chapter4
 NoFade

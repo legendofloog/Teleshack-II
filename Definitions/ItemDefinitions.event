@@ -181,6 +181,8 @@
 #define Unmoor 0xAB
 #define Impaler 0xAC
 
+#define Firestone 0xB2
+
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
 #define GoldGem 0xBB
@@ -247,3 +249,11 @@
 #define DeadeyeBow 0xF0
 #define MoonlightBlade 0xF1
 #define Glaive 0xF2
+#define Predestination 0xF3
+#define TitansFang 0xF4
+#define Svarog 0xF5
+#define Worldcleaver 0xF6
+#define Indra 0xF7
+#define Agni 0xF8
+#define SmolderingSeal 0xF9
+#define Apotheosis 0xFA

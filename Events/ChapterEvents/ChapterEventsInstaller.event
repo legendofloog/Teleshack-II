@@ -102,3 +102,7 @@ ALIGN 4
   ALIGN 4
   #include "Chapter23.event"
 }
+{
+  ALIGN 4
+  #include "Chapter24.event"
+}

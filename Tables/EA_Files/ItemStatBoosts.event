@@ -7,7 +7,11 @@
 
 ALIGN 4
 DragonstoneStatBoosts:
-StatBonus(0,10,10,10,0,10,10,0,0,0)
+StatBonus(0,10,10,10,10,10,10,0,0,0)
+
+ALIGN 4
+FirestoneStatBoosts:
+StatBonus(0,5,5,5,5,5,5,0,0,0)
 
 ALIGN 4
 FlameSwordStatBoosts:
@@ -89,6 +93,37 @@ ALIGN 4
 BlackAnkletStatBoosts:
 StatBonus(0,4,4,0,0,2,2,0,0,0)
 
+ALIGN 4
+AngelicRobeStatBoosts:
+StatBonus(3,0,0,0,0,0,0,0,0,0)
+
+ALIGN 4
+EnergyRingStatBoosts:
+StatBonus(0,1,0,0,0,0,0,0,0,0)
+
+ALIGN 4
+SpeedwingStatBoosts:
+StatBonus(0,0,0,0,1,0,0,0,0,0)
+
+ALIGN 4
+DragonshieldStatBoosts:
+StatBonus(0,0,0,0,0,1,0,0,0,0)
+
+ALIGN 4
+SwiftsoleStatBoosts:
+StatBonus(0,0,0,0,0,0,0,0,1,0)
+
+ALIGN 4
+BodyRingStatBoosts:
+StatBonus(0,0,0,0,0,0,0,0,0,1)
+
+ALIGN 4
+IndraStatBoosts:
+StatBonus(0,0,0,0,6,0,0,0,0,0)
+
+ALIGN 4
+AgniStatBoosts:
+StatBonus(0,6,0,0,0,0,0,0,0,0)
 
 ALIGN 4
 GrowthScrollBonusesTable:
