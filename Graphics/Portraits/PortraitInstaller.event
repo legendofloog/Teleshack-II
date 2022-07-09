@@ -78,6 +78,7 @@
 #define DraganaDeadlordMug 0xF9
 #define MarynMug 0xFA
 #define ViktorMug 0xFB
+#define AthanasiusMug 0x35
 
 // NPCs
 #define EliasMug 0xB
@@ -137,6 +138,7 @@
 #define PeriheliosMug 0x3C
 #define MysteryMug 0x3D
 #define EithaMug 0x3E
+#define CherneMug 0x39
 
 ALIGN 16
 CleoMugData:
@@ -1226,3 +1228,19 @@ PeriheliosMugData:
 #incbin "Dmp/Perihelios(Devisio,Xilirite)_palette.dmp"
 #incbin "Dmp/Perihelios(Devisio,Xilirite)_minimug.dmp"
 setMugEntry(PeriheliosMug, PeriheliosMugData, 5, 5, 6, 3)
+
+ALIGN 16
+AthanasiusMugData:
+#incbin "Dmp/Athanasius(knabepicer)_mug.dmp"
+#incbin "Dmp/Athanasius(knabepicer)_frames.dmp"
+#incbin "Dmp/Athanasius(knabepicer)_palette.dmp"
+#incbin "Dmp/Athanasius(knabepicer)_minimug.dmp"
+setMugEntry(AthanasiusMug, AthanasiusMugData, 2, 5, 3, 2)
+
+ALIGN 16
+CherneMugData:
+#incbin "Dmp/Cherne(devisio,epicer)_mug.dmp"
+#incbin "Dmp/Cherne(devisio,epicer)_frames.dmp"
+#incbin "Dmp/Cherne(devisio,epicer)_palette.dmp"
+#incbin "Dmp/Cherne(devisio,epicer)_minimug.dmp"
+setMugEntry(CherneMug, CherneMugData, 3, 5, 3, 3)

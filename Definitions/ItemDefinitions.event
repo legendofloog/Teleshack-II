@@ -257,3 +257,8 @@
 #define Agni 0xF8
 #define SmolderingSeal 0xF9
 #define Apotheosis 0xFA
+#define ByelensBell 0xFB
+#define RagnarokVantage 0xAD
+#define RagnarokHawkeye 0xFC
+#define RagnarokPass 0xFD
+#define RagnarokFortune 0xFE

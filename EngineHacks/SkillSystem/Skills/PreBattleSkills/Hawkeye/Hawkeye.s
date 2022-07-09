@@ -12,7 +12,21 @@ mov r0, r4 @attacker data
 ldr r1, HawkeyeID
 .short 0xf800
 cmp r0, #0
+bne Hawkeye
+
+mov  r1, #0xB
+ldrb r0, [r4, r1]
+mov r2, #0x80
+and r0, r2
+cmp r0, #0
 beq End
+
+ldr r0,=#0x8083da8 @CheckEventId
+mov r14,r0
+mov r0,#0x8B
+.short 0xF800
+cmp r0,#1
+bne End
 
 Hawkeye:
 @set hit to 100

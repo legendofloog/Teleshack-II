@@ -192,10 +192,14 @@
 [LoadMihail] = [LoadFace][0xFD][0x1]
 [LoadSaif] = [LoadFace][0xFE][0x1]
 [LoadMysteryMug] = [LoadFace][0x3D][0x1]
+[Load
 [LoadDanu] = [LoadFace][0x3A][0x1]
 [LoadTheimon] = [LoadFace][0x3B][0x1]
 [LoadPerihelios] = [LoadFace][0x3C][0x1]
 [LoadEithaReal] = [LoadFace][0x3E][0x1]
+[LoadAthanasius] = [LoadFace][0x35][0x1]
+[LoadCherne] = [LoadFace][0x39][0x1]
+[LoadKwameReal] = [LoadCherne]
 
 //DO NOT PUT PORTRAITS PAST 0xFF
 
