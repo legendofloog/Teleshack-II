@@ -15,7 +15,7 @@ POIN BeginningScene EndingScene
 /* flags used: 2 (kassandra defeat), 7 (mihail defeat), 8 (saif defeat), 9 (artemis defeat)
                10 (maryn defeat), 11 (viktor defeat), 12 (conscript defeat),
                13 (saif lackies defeat), 14 (mihail lackies defeat), 15, 16, 17 (villages)
-               18 19 20 21 22 23
+               18 19 20 21 22 23 (AFEVs) 24-37 (battlequotes; Cromar, Tiberius, Emil, Nahiza, Varga)
 */
 
 TurnBasedEvents:
@@ -67,14 +67,29 @@ UNIT Cythes Falcoknight 0x0 Level(8,Enemy,True) [21,29] 0x0 0x0 0x0 0x0 [SilverL
 UNIT 
 
 CharacterBasedEvents:
-//CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
+CharacterEventBothWays(35, MarynCromarTalkCh23, Maryn, Cromar)
 END_MAIN
+
+MarynCromarTalkCh23:
+Text(Ch23MarynCromarTalk)
+MOVE 15 Maryn [29,19]
+ENUN
+REMOVEUNIT Maryn
+ENUT 10
+CameraCursor(Viktor)
+Text(ViktorFleesMarynAliveText)
+CamOn
+MOVE 15 Viktor [31,29]
+ENUN
+REMOVEUNIT Viktor
+CamOff
+NoFade
+ENDA
 
 LocationBasedEvents:
 Armory(Ch23Armory,3,2)
 Vendor(Ch23Vendor,6,7)
 Village(15,LeftVillage,1,20)
-Village(16,MiddleVillage,16,15)
 Village(17,RightVillage,29,19)
 //Seize(13,6)
 END_MAIN
@@ -91,10 +106,6 @@ ALIGN 4
 
 LeftVillage:
 VillageEventItem(Ch23WindSwordHouseText,House2,WindSword)
-
-MiddleVillage: //teaches a unit "Indoor Fighter" - +1 Move indoors
-NoFade
-ENDA
 
 RightVillage:
 VillageEventItem(Ch23WarpHouseText,Temple,Warp)
@@ -248,7 +259,7 @@ ENDA
 AreAllBossesDefeated:
 COUNTER_CHECK 0
 SVAL s1 5 //have to defeat 5: kassandra, mihail, artemis, saif, and one of maryn/viktor, since the other retreats when one is killed
-BNE 1 s1 sC //not equal, do not end chapter
+BNE 1 s1 sC //not equal, do not end chapter and do not pass go
     CameraCursor(Cleo)
     Text(Ch23VictoryText)
     ENUT 3
@@ -534,7 +545,7 @@ UNIT KwameReal LanceSoldier 0x0 Level(15,Ally,True) [3,2] 0x0 0x0 0x1 REDA3R3 [I
 UNIT
 
 EnemyUnitsNorthWest:
-UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [0,2] 0x0 0x0 0x1 REDA6R3 [MasterAxe, SilverLance] GroupOneAI 
+UNIT Mihail Halberdier 0x0 Level(9,Enemy,False) [0,2] 0x0 0x0 0x1 REDA6R3 [SilverLance, MasterAxe] GroupOneAI 
 UNIT Mihails LanceSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA1R7 [TrainedPike] GroupOneAI 
 UNIT Mihails AxeSoldier 0x0 Level(20,Enemy,True) [0,3] 0x0 0x0 0x1 REDA4R10 [SilverAxe] GroupOneAI 
 UNIT Mihails SwordArmor 0x0 Level(20,Enemy,True) [0,8] 0x0 0x0 0x1 REDA6R8 [TrainedEdge] GroupOneAI 
@@ -700,7 +711,7 @@ BEQ 16 s0 sC
     MOVE 15 Loewe [16,20]
     ENUN
     CameraCursor(Maryn)
-    //text; Maryn gives you something
+    Text(MarynRecruitText)
     GiveItem(Again,Loewe)
     CheckUnitDeadOrJailed(Cromar)
     BNE 20 s0 sC //if not around, skip
@@ -709,11 +720,11 @@ BEQ 16 s0 sC
         FlashCursor(Cromar,60)
         CHECK_EVENTID 0x80
         BEQ 21 s0 sC //branch if mccallum is dead
-        //text if mccallum isn't dead; gets item
+            Text(MarynCromarTextMcCallumSpared)
             GiveItem(DawnPendant, Cromar)
             GOTO 25
         LABEL 21
-        //text if mcallum is dead
+        Text(MarynCromarTextMcCallumKilled)
         LABEL 25
         MOVE 15 Cromar [16,15]
         ENUN
@@ -728,8 +739,8 @@ CHECK_EVENTID 11 // viktor captured?
 BEQ 17 s0 sC
     MOVE 15 Cleo [16,20]
     ENUN
-    //text; Viktor gives you an item (TBD)
-    //GiveItem(Impaler, Cleo)
+    Text(ViktorRecruitText)
+    GiveItem(Thief, Cleo)
     CheckUnitDeadOrJailed(Tiberius)
     BNE 22 s0 sC
         LOAD1 0 TiberiusGroup
@@ -738,11 +749,11 @@ BEQ 17 s0 sC
         BEQ 23 s0 sC 
             CHECK_ALIVE Iskra
             BEQ 23 s0 sC
-                //text if Iskra got the sword and is alive; Tiberius gets TempestSword
+                Text(ViktorTiberiusIskraSwordAcquiredText)
                 GiveItem(Boltbrand,Tiberius)
                 GOTO 24
         LABEL 23
-        //text if either of these are not true but Tiberius is alive
+        Text(ViktorTiberiusIskraSwordNotAcquiredText)
         LABEL 24
         MOVE 15 Tiberius [16,15]
         ENUN

@@ -16,7 +16,7 @@ WORD 0x85000000
 WORD 0x85000040
 WORD 0x85100829
 WORD 0x85000153
-WORD 0x85010c48
+WORD 0x85012748
 SHORT 1; BYTE 0 0x86; POIN DancingSword_objimg_0; WORD 0 0; POIN DancingSword_bgImage_0 DancingSword_objPalette DancingSword_bgPalette_0 DancingSword_TSA_0
 SHORT 1; BYTE 1 0x86; POIN DancingSword_objimg_0; WORD 12 24; POIN DancingSword_bgImage_1 DancingSword_objPalette DancingSword_bgPalette_1 DancingSword_TSA_1
 SHORT 1; BYTE 2 0x86; POIN DancingSword_objimg_0; WORD 24 48; POIN DancingSword_bgImage_2 DancingSword_objPalette DancingSword_bgPalette_2 DancingSword_TSA_2

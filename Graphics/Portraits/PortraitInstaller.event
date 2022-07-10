@@ -180,11 +180,11 @@ setMugEntry(SvetomirMug, SvetomirMugData, 3, 5, 3, 3)
 
 ALIGN 16
 AlenaMugData:
-#incbin "Dmp/Alena(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Alena(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Alena(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Alena(Laurent_Lacroix)_minimug.dmp"
-setMugEntry(AlenaMug, AlenaMugData, 3, 6, 3, 4)
+#incbin "Dmp/Alena(Relic, sdaht)_mug.dmp"
+#incbin "Dmp/Alena(Relic, sdaht)_frames.dmp"
+#incbin "Dmp/Alena(Relic, sdaht)_palette.dmp"
+#incbin "Dmp/Alena(Relic, sdaht)_minimug.dmp"
+setMugEntry(AlenaMug, AlenaMugData, 2, 6, 3, 4)
 
 ALIGN 16
 LoeweMugData:

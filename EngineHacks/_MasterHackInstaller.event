@@ -183,7 +183,7 @@ POP
     MESSAGE "Using EMS Save/Suspend Expansion"
 
     #include "Necessary/ExpandedModularSave/ExModularSaveFatigue.event"
-    //#include "Necessary/ExpandedModularSave/ExModularSaveFatigue200Items.event"
+    //#include "Necessary/ExpandedModularSave/ExModularSaveFatigue200Items.event" // commented out until we're done since it breaks saves
 
   #else // USE_SAVE_EXPANSION
 

@@ -37,7 +37,7 @@ SHORT 1; BYTE 14 0x86; POIN Inferno_objimg_0; WORD 168 336; POIN Inferno_bgImage
 SHORT 1; BYTE 15 0x86; POIN Inferno_objimg_0; WORD 180 360; POIN Inferno_bgImage_15 Inferno_objPalette Inferno_bgPalette_15 Inferno_TSA_15
 SHORT 1; BYTE 16 0x86; POIN Inferno_objimg_0; WORD 192 384; POIN Inferno_bgImage_16 Inferno_objPalette Inferno_bgPalette_16 Inferno_TSA_16
 SHORT 1; BYTE 17 0x86; POIN Inferno_objimg_0; WORD 204 408; POIN Inferno_bgImage_17 Inferno_objPalette Inferno_bgPalette_17 Inferno_TSA_17
-WORD 0x8502ca48
+WORD 0x85011d48
 SHORT 1; BYTE 18 0x86; POIN Inferno_objimg_0; WORD 216 432; POIN Inferno_bgImage_18 Inferno_objPalette Inferno_bgPalette_18 Inferno_TSA_18
 SHORT 1; BYTE 19 0x86; POIN Inferno_objimg_0; WORD 228 456; POIN Inferno_bgImage_19 Inferno_objPalette Inferno_bgPalette_19 Inferno_TSA_19
 SHORT 1; BYTE 20 0x86; POIN Inferno_objimg_0; WORD 240 480; POIN Inferno_bgImage_20 Inferno_objPalette Inferno_bgPalette_20 Inferno_TSA_20

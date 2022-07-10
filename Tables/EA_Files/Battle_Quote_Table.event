@@ -39,6 +39,8 @@ UnspecifiedBattleConvo(Barod2,Chapter18,0x16,BarodBossQ)
 UnspecifiedBattleConvo(Shafaqat,Chapter18,0x17,ShafaqatBossQ)
 UnspecifiedBattleConvo(Riggan,Chapter18,0x18,Ch18RigganBossQ)
 
+
+//chapter 10
 SpecifiedBattleConvo(Cidor,Cleo,Chapter10,0x16,Ch10CidorCleoBossQuote)
 SpecifiedBattleConvo(Cidor,Loewe,Chapter10,0x17,Ch10CidorLoeweBossQuote)
 SpecifiedBattleConvo(Cidor,Mira,Chapter10,0x18,Ch10CidorMiraBossQuote)
@@ -75,7 +77,21 @@ SpecifiedBattleConvo(Taraji,Leina,Chapter21,0x1E,BQTarajiLeina)
 UnspecifiedBattleConvo(Taraji,Chapter21,0x1,BQTaraji)
 
 // Chapter23
-UnspecifiedBattleConvo(KassandraReal,Chapter23,1,0x0)
+SpecifiedBattleConvo(KassandraReal,Cleo,Chapter23,24,Ch23KassandraVSCleo)
+SpecifiedBattleConvo(KassandraReal,Loewe,Chapter23,25,Ch23KassandraVSLoewe)
+SpecifiedBattleConvo(KassandraReal,EliasReal,Chapter23,26,Ch23KassandraVSElias)
+SpecifiedBattleConvo(KassandraReal,CoraliaReal,Chapter23,27,Ch23KassandraVSCoralia)
+UnspecifiedBattleConvo(KassandraReal,Chapter23,1,Ch23KassandraVS)
+SpecifiedBattleConvo(Mihail,Cleo,Chapter23,28,Ch23MihailVSCleo)
+UnspecifiedBattleConvo(Mihail,Chapter23,30,Ch23MihailVS)
+SpecifiedBattleConvo(Saif,Ojasvi,Chapter23,29,Ch23SaifVSOjasvi)
+UnspecifiedBattleConvo(Saif,Chapter23,31,Ch23SaifVS)
+SpecifiedBattleConvo(Artemis,Varga,Chapter23,33,Ch23ArtemisVSVarga)
+UnspecifiedBattleConvo(Artemis,Chapter23,32,Ch23ArtemisVS)
+UnspecifiedBattleConvo(Maryn,Chapter23,34,Ch23MarynVS)
+SpecifiedBattleConvo(Viktor,Tiberius,Chapter23,37,Ch23ViktorVSTiberius)
+UnspecifiedBattleConvo(Viktor,Chapter23,36,Ch23ViktorVS)
+
 
 // Chapter24
 SpecifiedBattleConvo(Byelen,Loewe,Chapter24,7,BQByelenLoewe)
