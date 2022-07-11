@@ -1,0 +1,11 @@
+#include "256TitleScreen/titlebackgroundinstaller.event"
+
+/*
+ALIGN 4
+GameTitle:
+#incbin "Dmp/saga_of_the_sigilbearers.dmp"
+
+PUSH
+ORG 0xC5830
+POIN GameTitle
+POP*/
