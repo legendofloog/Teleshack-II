@@ -1,0 +1,14 @@
+PUSH
+ORG $84784
+POIN NewSupportConvoTable
+ORG $847FC
+POIN NewSupportConvoTable
+POP
+
+#define SupportConvoEntry(charID1, charID2, CRankTextEntry, BRankTextEntry, ARankTextEntry) "SHORT charID1 charID2 CRankTextEntry BRankTextEntry ARankTextEntry 0 0 0"
+#define SupportConvoTerminator "SHORT 0 0 0 0 0 0 0 0"
+
+ALIGN 4
+NewSupportConvoTable:
+SupportConvoEntry(Cleo, Emil, Ch1KidLoeweTalksToFriendsText, Ch1KidLoeweTalksToFriendsText, Ch1KidLoeweTalksToFriendsText)
+SupportConvoTerminator

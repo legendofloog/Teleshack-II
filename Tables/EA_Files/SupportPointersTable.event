@@ -1,0 +1,22 @@
+/*Note: You can go up to 7, but only 5 display normally in the status screen, so the 6th and 7th entries of these are zeroed out
+Technically, vanilla uses a support count. I won't be using it, but note that that's what 7 is for in SupportDataGrowths.
+The last two zeroes are for termination purposes and padding*/
+#define SupportDataCharacters(char1,char2,char3,char4,char5) "BYTE char1 char2 char3 char4 char5 0 0"
+#define SupportDataInitialValues(value1,value2,value3,value4,value5) "BYTE value1 value2 value3 value4 value5 0 0"
+#define SupportDataGrowths(growth1,growth2,growth3,growth4,growth5) "BYTE growth1 growth2 growth3 growth4 growth5 0 0 7 0 0"
+#define CSupportLevel 81
+#define BSupportLevel 161
+#define ASupportLevel 241
+
+
+ALIGN 4
+CleoSupportPointer:
+SupportDataCharacters(Varga,Emil,Zwieback,Lyre,0)
+SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(0,90,0,0,0)
+
+ALIGN 4
+EmilSupportPointer:
+SupportDataCharacters(Cleo,0,0,0,0)
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(90,0,0,0,0)
