@@ -1,6 +1,9 @@
 typedef struct NewSupportBonuses NewSupportBonuses;
 typedef struct StatScreen StatScreen;
 
+int GetUnitDistance(Unit* firstUnit, Unit* secondUnit);
+int abs(int num);
+
 #define MAX_SUPPORT_NUMBER 5
 #define CSupportLevel 81
 #define BSupportLevel 161

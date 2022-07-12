@@ -158,8 +158,22 @@ bool IsUnitValidSupporter(Unit* unit, Unit* supportingUnit, int supportRank){
     return false;
 }
 
+int GetUnitDistance(Unit* firstUnit, Unit* secondUnit){
+	return abs(firstUnit->xPos - secondUnit->xPos) + abs(firstUnit->yPos - secondUnit->yPos);
+}
+
+int abs(int num){
+	if (num < 0){
+		num *= -1;
+	}
+	return num;
+}
+
 bool IsSupportingUnitInRangeOfDefender(Unit* supportingUnit, Unit* defendingUnit){ 
-    return true; //need: range of highest weapon in supportingUnit item list
+    if (IsItemCoveringRange(GetUnitEquippedWeapon(supportingUnit), GetUnitDistance(supportingUnit, defendingUnit))){
+        return true;
+    }
+    return false;
 } 
 
 void NewGetUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender, NewSupportBonuses* bonuses){ // modified from pik support stuff
