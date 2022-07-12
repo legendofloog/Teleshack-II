@@ -39,6 +39,7 @@ DeathQuote(Mureib2,Chapter17,0,Mureib2DeathQuoteText)
 DeathQuote(Barod2,Chapter18,2,BarodDeathQuoteText)
 DeathQuote(Shafaqat,Chapter18,7,ShafaqatDeathQuoteText)
 DeathQuote(Riggan,Chapter18,0,RigganDeathQuoteText)
+DeathQuote(C19Phantom,Chapter19,0x02,0x0)
 //ch21
 DeathQuote(Vinny,Chapter21,0,VinnyDeathQuoteText)
 DeathQuote(Cephalid,Chapter21,0x0E,CephalidDeathQuoteText)
@@ -70,124 +71,123 @@ DeathQuote(Byelen,Chapter24,2,ByelenDeathQuoteText)
 // ch1
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
 DeathQuote(Cleo,AllChapters,0x65,CleoDeathQuoteText)
-DeathQuote(Mira,AllChapters,0x0,0,MiraGiveAll)
-DeathQuote(Iskra,AllChapters,0x0,0,IskraGiveAll)
-DeathQuote(Emil,AllChapters,0x0,0,EmilGiveAll)
-DeathQuote(Svetomir,AllChapters,0x0,0,SvetomirGiveAll)
-DeathQuote(Alena,AllChapters,0x0,0,AlenaGiveAll)
+DeathQuote(Mira,AllChapters,0x0,MiraDeathQuoteText)
+DeathQuote(Iskra,AllChapters,0x0,IskraDeathQuoteText)
+DeathQuote(Emil,AllChapters,0x0,EmilDeathQuoteText)
+DeathQuote(Svetomir,AllChapters,0x0,SvetomirDeathQuoteText)
+DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText)
 
 // ch2
-DeathQuote(Varga,AllChapters,0x0,0,VargaGiveAll)
-DeathQuote(Delilah,AllChapters,0x0,0,DelilahGiveAll)
+DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote)
+DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote)
 
 //ch 3 empty
-DeathQuote(Alex,AllChapters,0x0,0,AlexGiveAll)
-DeathQuote(Axel,AllChapters,0x0,0,AxelGiveAll)
+DeathQuote(Alex,AllChapters,0x0,AlexDeathQuote)
+DeathQuote(Axel,AllChapters,0x0,AxelDeathQuote)
 
 //ch 4
-DeathQuote(Zwieback,AllChapters,0x0,0,ZwiebackGiveAll)
-DeathQuote(Filone,AllChapters,0x0,0,FiloneGiveAll)
+DeathQuote(Zwieback,AllChapters,0x0,ZwieDeathQuoteText)
+DeathQuote(Filone,AllChapters,0x0,FiloneDeathQuoteText)
 
 //ch 5
-DeathQuote(Longxia,AllChapters,0x0,0,LongxiaGiveAll)
-DeathQuote(Fangai,AllChapters,0x0,0,FangaiGiveAll)
+DeathQuote(Longxia,AllChapters,0x0,LongxiaDeathQuoteText)
+DeathQuote(Fangai,AllChapters,0x0,FangaiDeathQuoteText)
 
 //ch 5x
-DeathQuote(Mish,AllChapters,0x0,0,MishGiveAll)
-DeathQuote(Awa,AllChapters,0x0,0,AwaGiveAll)
-DeathQuote(Tobie,AllChapters,0x0,0,TobieGiveAll)
-DeathQuote(Cadenza,AllChapters,0x0,0,CadenzaGiveAll)
-DeathQuote(Faolan,AllChapters,0x0,0,FaolanGiveAll)
-DeathQuote(Matthias,AllChapters,0x0,0,MatthiasGiveAll)
+DeathQuote(Mish,AllChapters,0x0,MishDeathQuoteText)
+DeathQuote(Awa,AllChapters,0x0,AwaDeathQuoteText)
+DeathQuote(Tobie,AllChapters,0x0,TobieDeathQuoteText)
+DeathQuote(Cadenza,AllChapters,0x0,CadenzaDeathQuoteText)
+DeathQuote(Faolan,AllChapters,0x0,FaolanDeathQuote)
+DeathQuote(Matthias,AllChapters,0x0,MatthiasDeathQuoteText)
 
 //ch 6 empty
-DeathQuote(Leina,AllChapters,0x0,0,LeinaGiveAll)
-DeathQuote(Cromar,AllChapters,0x0,0,CromarGiveAll)
+DeathQuote(Leina,AllChapters,0x0,0)
+DeathQuote(Cromar,AllChapters,0x0,0)
 
 //ch 7
-DeathQuote(Iberis,AllChapters,0x0,0,IberisGiveAll)
-DeathQuote(Buldak,AllChapters,0x0,0,BuldakGiveAll)
+DeathQuote(Iberis,AllChapters,0x0,IberisDeathQuoteText)
+DeathQuote(Buldak,AllChapters,0x0,BuldakDeathQuoteText)
 
 //ch 8
-DeathQuote(Nora,AllChapters,0x0,0,NoraGiveAll)
-DeathQuote(Hans,AllChapters,0x0,0,HansGiveAll)
+DeathQuote(Nora,AllChapters,0x0,NoraDeathQuote)
+DeathQuote(Hans,AllChapters,0x0,HansDeathQuote)
 
 // ch 9
-DeathQuote(Jenny,AllChapters,0x0,0,JennyGiveAll)
-DeathQuote(Meldan,AllChapters,0x0,0,MeldanGiveAll)
+DeathQuote(Jenny,AllChapters,0x0,JennyDeathQuote)
+DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote)
 
 // ch 10
-DeathQuote(Valse,AllChapters,0x0,0,ValseGiveAll)
-DeathQuote(Hornet,AllChapters,0x0,0,HornetGiveAll)
+DeathQuote(Valse,AllChapters,0x0,ValseDeathQuote)
+DeathQuote(Hornet,AllChapters,0x0,HornetDeathQuote)
 DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 
 // ch 11
-DeathQuote(Milo,AllChapters,0x0,0,MiloGiveAll)
+DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote)
 DeathQuote(Ichwep,AllChapters,0x0,0,IchwepGiveAll)
 
 // ch 12
-DeathQuote(Mink,AllChapters,0x0,0,MinkGiveAll)
+DeathQuote(Mink,AllChapters,0x0,MinkDeathQuote)
 DeathQuote(Tiberius,Chapter12,22,Ch12TiberiusDeathQuote)
-DeathQuote(Tiberius,AllChapters,0x0,0,TiberiusGiveAll)
+DeathQuote(Tiberius,AllChapters,0x0,TiberiusDeathQuote)
 
 // ch 12x
-DeathQuote(Carl,AllChapters,0x0,0,CarlGiveAll)
-DeathQuote(Pelecaye,AllChapters,0x0,0,PelecayeGiveAll)
-DeathQuote(Tippany,AllChapters,0x0,0,TippanyGiveAll)
-DeathQuote(Mantou,AllChapters,0x0,0,MantouGiveAll)
-DeathQuote(Ellerey,AllChapters,0x0,0,EllereyGiveAll)
-DeathQuote(Takai,AllChapters,0x0,0,TakaiGiveAll)
+DeathQuote(Carl,AllChapters,0x0,CarlDeathQuote)
+DeathQuote(Pelecaye,AllChapters,0x0,PelecayeDeathQuote)
+DeathQuote(Tippany,AllChapters,0x0,TippanyDeathQuote)
+DeathQuote(Mantou,AllChapters,0x0,MantouDeathQuote)
+DeathQuote(Ellerey,AllChapters,0x0,EllereyDeathQuote)
+DeathQuote(Takai,AllChapters,0x0,TakaiDeathQuoteText)
 
 // ch 13
-DeathQuote(Darby,AllChapters,0x0,0,DarbyGiveAll)
-DeathQuote(Jacinth,AllChapters,0x0,0,JacinthGiveAll)
-DeathQuote(Kailani,AllChapters,0x0,0,KailaniGiveAll)
+DeathQuote(Darby,AllChapters,0x0,DarbyDeathQuote)
+DeathQuote(Jacinth,AllChapters,0x0,JacinthDeathQuote)
+DeathQuote(Kailani,AllChapters,0x0,KailaniDeathQuote)
 
 // ch 14
-DeathQuote(Nahiza,AllChapters,0x0,0,NahizaGiveAll)
-DeathQuote(Augur,AllChapters,0x0,0,AugurGiveAll)
+DeathQuote(Nahiza,AllChapters,0x0,NahizaDeathQuote)
+DeathQuote(Augur,AllChapters,0x0,AugurDeathQuote)
 
 // ch 15
-DeathQuote(Ilse,AllChapters,0x0,0,IlseGiveAll)
+DeathQuote(Ilse,AllChapters,0x0,IlseDeathQuoteText)
 
 // ch 16
-DeathQuote(Rashid,AllChapters,0x0,0,RashidGiveAll)
+DeathQuote(Rashid,AllChapters,0x0,RashidDeathQuote)
 
 // ch 17
-DeathQuote(Nikolas,AllChapters,0x0,0,NikolasGiveAll)
+DeathQuote(Nikolas,AllChapters,0x0,NikolasDeathQuoteText)
 DeathQuote(KwameReal,Chapter17,0x65,KwameRealDeathQuoteText)
 
 // ch18
-DeathQuote(Sera,AllChapters,0x0,0x0,SeraGiveAll)
-DeathQuote(Shaw,AllChapters,0x0,0x0,ShawGiveAll)
+DeathQuote(Sera,AllChapters,0x0,SeraDeathQuoteText)
+DeathQuote(Shaw,AllChapters,0x0,ShawDeathQuoteText)
 
 // ch18x
-DeathQuote(Apsis,AllChapters,0x0,0x0,ApsisGiveAll)
-DeathQuote(Ojasvi,AllChapters,0x0,0x0,OjasviGiveAll)
-DeathQuote(Tao,AllChapters,0x0,0x0,TaoGiveAll)
-DeathQuote(Zhara,AllChapters,0x0,0x0,ZharaGiveAll)
-DeathQuote(Groto,AllChapters,0x0,0x0,GrotoGiveAll)
-DeathQuote(Darcy,AllChapters,0x0,0x0,DarcyGiveAll)
+DeathQuote(Apsis,AllChapters,0x0,ApsisDeathQuoteText)
+DeathQuote(Ojasvi,AllChapters,0x0,OjasviDeathQuoteText)
+DeathQuote(Tao,AllChapters,0x0,TaoDeathQuoteText)
+DeathQuote(Zhara,AllChapters,0x0,ZharaDeathQuoteText)
+DeathQuote(Groto,AllChapters,0x0,GrotoDeathQuoteText)
+DeathQuote(Darcy,AllChapters,0x0,0x0)
 
 // ch19
-DeathQuote(C19Phantom,AllChapters,0x02,0x0)
+DeathQuote(Volran,AllChapters,0x0,0x0)
+DeathQuote(Tara,AllChapters,0x0,0x0)
+
 
 // ch20
-DeathQuote(Jerry,AllChapters,0x0,0x0,JerryGiveAll)
-DeathQuote(Lyre,AllChapters,0x0,0x0,LyreGiveAll)
+DeathQuote(Jerry,AllChapters,0x0,JerryDeathQuoteText)
+DeathQuote(Lyre,AllChapters,0x0,LyreDeathQuoteText)
 
 // ch21
-DeathQuote(Ngondala,AllChapters,0x0,0x0,NgondalaGiveAll)
-DeathQuote(CatrinReal,AllChapters,0x0,0x0,CatrinRealGiveAll)
+DeathQuote(Ngondala,AllChapters,0x0,NgondalaDeathQuoteText)
+DeathQuote(CatrinReal,AllChapters,0x0,CatrinRealDeathQuoteText)
 
 // ch23
-DeathQuote(EliasReal,AllChapters,0x0,0x0,EliasGiveAll)
-
-//DeathQuote(Maryn,AllChapters,0x0,0x0,MarynGiveAll) // samson/arran
-//DeathQuote(Viktor,AllChapters,0x0,0x0,ViktorGiveAll)
+DeathQuote(EliasReal,AllChapters,0x0,EliasDeathQuoteText)
 
 // ch24
-DeathQuote(Orfeas,AllChapters,0x0,0x0,OrfeasGiveAll)
-DeathQuote(BarodReal,AllChapters,0x0,0x0,BarodGiveAll)
+DeathQuote(Orfeas,AllChapters,0x0,OrfeasDeathQuoteText)
+DeathQuote(BarodReal,AllChapters,0x0,BarodDeathQuoteText)
 
 DeathQuote(0xFFFF,0,0,0) // terminator
