@@ -144,6 +144,7 @@ UnitMenuTable:
   // UM_Talk
   MenuCommand(0x680, 0x6c9, GreenText, 0x23c81, 0x23cc5)
   // UM_Support
+  //(name,description,colour,usability,effect)
   MenuCommand(0x681, 0x6ca, GreenText, 0x23d15, 0x23d65)
   UM_Visit
   

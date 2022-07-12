@@ -1,6 +1,27 @@
 #include "gbafe.h"
 #include "NewSupports.h"
 
+static void SetSupportLevelGained(u8 charA, u8 charB)
+{
+    Unit* unit = GetUnitByCharId(charA);
+    int num = GetSupportDataIdForOtherUnit(unit, charB);
+
+    unit->supportBits |= (1 << num);
+
+    unit = GetUnitByCharId(charB);
+    num = GetSupportDataIdForOtherUnit(unit, charA);
+
+    unit->supportBits |= (1 << num);
+}
+
+void UnitGainSupportLevel(struct Unit* unit, int num)
+{
+    unit->supports[num]++;
+    //gRAMChapterData.chapterTotalSupportGain++;
+
+    SetSupportLevelGained(unit->pCharacterData->number, GetUnitSupporterCharacter(unit, num));
+}
+
 int GetSupportLevelBySupportIndex(struct Unit* unit, int num)
 {
     int supportExp = unit->supports[num];
@@ -220,4 +241,39 @@ void ComputeBattleUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender)
         attacker->battleCritRate  += tmpBonuses.bonusCrit;
         attacker->battleDodgeRate += tmpBonuses.bonusDodge;
     }
+}
+
+s8 ActionSupport(Proc* proc){
+    int subjectExp, targetExp;
+
+    Unit* target = GetUnit(gActionData.targetIndex);
+
+    int targetSupportNum = GetSupportDataIdForOtherUnit(gActiveUnit, target->pCharacterData->number);
+    int subjectSupportNum = GetSupportDataIdForOtherUnit(target, gActiveUnit->pCharacterData->number);
+
+    CanUnitSupportCommandWith(target, subjectSupportNum);
+
+    UnitGainSupportLevel(gActiveUnit, targetSupportNum);
+    UnitGainSupportLevel(target, subjectSupportNum);
+
+    sub_808371C(
+        gActiveUnit->pCharacterData->number,
+        target->pCharacterData->number,
+        GetUnitSupportLevel(gActiveUnit, targetSupportNum)
+    );
+
+    subjectExp = gActiveUnit->supports[targetSupportNum];
+    targetExp = target->supports[subjectSupportNum];
+
+    if (subjectExp != targetExp) {
+        if (subjectExp > targetExp) {
+            target->supports[subjectSupportNum] = subjectExp;
+        }
+
+        if (subjectExp < targetExp) { 
+            gActiveUnit->supports[targetSupportNum] = targetExp;
+        }
+    }
+
+    return 0;
 }
