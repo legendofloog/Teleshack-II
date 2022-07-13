@@ -205,7 +205,9 @@
 #define Arachnid 0xC9 
 #define YorsYari 0xCA
 #define DaShoota 0xCB
+#define BreakArc 0xCB
 #define BigIron 0xCC
+#define MeatCleaver 0xCC
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
@@ -239,6 +241,8 @@
 #define IronRune 0xE8
 #define Swordreaver 0xE9
 #define Swordslayer 0xE9
+#define BladeCrusher 0xE9
+#define Bladecrusher 0xE9
 #define Shieldbearer 0xEA
 #define Malkhut 0xEB
 #define Malkuth 0xEB

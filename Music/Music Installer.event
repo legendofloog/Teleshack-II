@@ -125,3 +125,15 @@ SongTable(GS_TLA_WalkingForwardWithDeterminationID, WalkingForwardWithDeterminat
 SongTable(FF5_BattleOnTheBigBridgeID, BattleOnTheBigBridge, BattleMusicGroup)
 #include "MusicEvents/Kwame (A Reliable Chair).event"
 SongTable(KwameID, KwameTheme, MapMusicGroup)
+#include "MusicEvents/FE4 - Vs Julius (SurfingKyogre).event"
+SongTable(VsJuliusID, song0C, BattleMusicGroup)
+#include "MusicEvents/FE16 - Roar of Dominion (Rain) (MrGreen3339).event"
+SongTable(RoarOfDomainID, song0279, MapMusicGroup)
+#include "MusicEvents/mm10 wily machine fixed.event"
+SongTable(MM10WilyMachineID, song92, MapMusicGroup)
+#include "MusicEvents/What Im Made Of.event"
+SongTable(WhatImMadeOfID, song10, MapMusicGroup)
+
+
+
+

@@ -594,3 +594,14 @@ No! I refuse for this[Beat][N]
 to be the Pitviper's end[Beat][CloseEyes][A][X]
 
 ## AthanasiusDeathQuoteText
+[MidLeft][LoadAthanasius]
+[Beat]Rrrr[Beat]my revenge[Beat][CloseEyes][A][X]
+
+## CherneDeathQuoteText
+[MidLeft][LoadCherne]
+How[Beat]how is this possible[Beat]?[N]
+I am Cherne[Beat]knower of all![AN]
+I've followed this plan[N]
+for centuries! [AN]
+Toiled for lifetimes![AN]
+Loewe[Beat]Cleo[Beat] you[Beat][A][X]

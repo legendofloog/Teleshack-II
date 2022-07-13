@@ -147,6 +147,7 @@ BYTE EndLockArray
 TarajiArray:
 BYTE HardCharLock
 BYTE Taraji
+BYTE TarajiReal
 BYTE EndLockArray
 
 CatrinArray:

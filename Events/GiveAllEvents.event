@@ -469,3 +469,17 @@ Text(OrfeasDeathQuoteText)
 SendAll(Orfeas)
 NoFade
 ENDA
+
+ALIGN 4
+TarajiGiveAll:
+Text(TarajiRealDeathQuoteText)
+SendAll(TarajiReal)
+NoFade
+ENDA
+
+ALIGN 4
+AthanasiusGiveAll:
+Text(AthanasiusDeathQuoteText)
+SendAll(Athanasius)
+NoFade
+ENDA

@@ -66,6 +66,9 @@ DeathQuote(HamdiReal,Chapter24,0,HamdiRealDeathQuoteText)
 DeathQuote(EithaReal,Chapter24,0,EithaRealDeathQuoteText)
 DeathQuote(Byelen,Chapter24,2,ByelenDeathQuoteText)
 
+//ch25
+DeathQuote(Cherne,Chapter25,2,CherneDeathQuoteText)
+
 //player units
 // ch1
 DeathQuote(Loewe,AllChapters,0x65,LoeweDeathQuoteText)
@@ -190,4 +193,7 @@ DeathQuote(EliasReal,AllChapters,0x0,0x0,EliasGiveAll)
 DeathQuote(Orfeas,AllChapters,0x0,0x0,OrfeasGiveAll)
 DeathQuote(BarodReal,AllChapters,0x0,0x0,BarodGiveAll)
 
+// ch25
+DeathQuote(TarajiReal,AllChapters,0x0,0x0,TarajiGiveAll)
+DeathQuote(Athanasius,AllChapters,0x0,0x0,AthanasiusGiveAll)
 DeathQuote(0xFFFF,0,0,0) // terminator
