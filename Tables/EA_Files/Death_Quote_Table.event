@@ -124,7 +124,7 @@ DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 
 // ch 11
 DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote)
-DeathQuote(Ichwep,AllChapters,0x0,0,IchwepGiveAll)
+DeathQuote(Ichwep,AllChapters,0x0,0)
 
 // ch 12
 DeathQuote(Mink,AllChapters,0x0,MinkDeathQuote)
