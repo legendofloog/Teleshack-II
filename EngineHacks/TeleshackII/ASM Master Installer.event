@@ -61,6 +61,8 @@ ChangeWeaponRankASMC:
 
 #include "GroupAI/GroupAI.event"
 
+#include "SendInventoryOnDeath/Installer.event"
+
 // thief vision set to 0
 
 PUSH
