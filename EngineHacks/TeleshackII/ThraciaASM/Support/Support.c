@@ -1,14 +1,14 @@
 #include "gbafe.h"
 #include "Support.h"
 
-void New_GetUnitSupportBonuses(BattleUnit* battleUnit, SupportBonuses* supportBonuses){
+void New_GetUnitSupportBonuses(BattleUnit* battleUnit, NewSupportBonuses* supportBonuses){
 	ClearSupportBonuses(supportBonuses);
 
 	if (gGameState.statebits & 0x40){ // disables support bonuses?
 		return;
 	}
 
-	NewSupportData* unitSupportList = NewSupportTable[battleUnit->unit.pCharacterData->number];
+	NewSupportBonuses* unitSupportList = NewSupportTable[battleUnit->unit.pCharacterData->number];
 	if (unitSupportList == 0){
 		return;
 	}
