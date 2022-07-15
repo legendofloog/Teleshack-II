@@ -63,6 +63,7 @@ ChangeWeaponRankASMC:
 
 #include "SendInventoryOnDeath/Installer.event"
 
+#include "NewClearUnit/NewClearUnit.event"
 // thief vision set to 0
 
 PUSH

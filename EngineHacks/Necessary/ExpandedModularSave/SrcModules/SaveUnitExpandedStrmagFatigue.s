@@ -502,8 +502,9 @@ PackPlayerSuspendSaveUnit:
 	ldrb r1, [r4, r1]    @ r1 = u->supportbits
 	strb r1, [r2, #0x05] @ su->supportbits = u->supportbits
 
-	ldr r1, =CharacterStructStairByte
-	ldrb r1, [ r1 ]
+	@ ldr r1, =CharacterStructStairByte
+	mov  r1, #0x47
+	@ ldrb r1, [ r1 ]
 	ldrb r1, [r4, r1]	 @ r1 = u->stairbyte
 	strb r1, [r2, #0x06]	 @ su->stairasmbyte = u->stairbyte
 	
@@ -557,8 +558,9 @@ UnpackPlayerSuspendSaveUnit:
 	ldrb r1, [r2, #0x05] @ r1 = su->supportbits
 	strb r1, [r0, r3]    @ u->supportbits = su->supportbits
 	
-	ldr r3, =CharacterStructStairByte
-	ldrb r3, [ r3 ]
+	@ ldr r3, =CharacterStructStairByte
+	mov  r3, #0x47
+	@ ldrb r3, [ r3 ]
 	ldrb r1, [r2, #0x06]	 @ r1 = su->stairasmbyte
 	strb r1, [r0, r3]	 @ u->stairbyte = su->stairasmbyte
 	
