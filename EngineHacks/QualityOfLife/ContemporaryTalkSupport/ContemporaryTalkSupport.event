@@ -16,7 +16,7 @@
       BL(TalkFix)
 
     ORG $32438
-      BL(SupportFix)
+      BL(SupportFix) // support fix has a notable bug where the support convo replays after the effect
   POP
 
   ALIGN 4
@@ -25,7 +25,7 @@
   
   ALIGN 4
   SupportFix:
-    #incbin "asm/SupportFix.dmp"
+   #incbin "asm/SupportFix.dmp"
 
   }
 
