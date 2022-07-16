@@ -271,17 +271,17 @@ BaronMoving:
 
 ALIGN 4
 AxefighterMoving:
-#incbin "Dmp/Fighter (M) FE10-Style Axe {L95}-move.dmp"
+#incbin "Dmp/Mercenary (M) Axe (Flasuban, ArcherBias)-move.dmp"
 ALIGN 4
 AxefighterStanding:
-#incbin "Dmp/Fighter (M) FE10-Style Axe {L95}-stand.dmp"
+#incbin "Dmp/Mercenary (M) Axe (Flasuban, ArcherBias)-stand.dmp"
 
 ALIGN 4
 AxefighterFMoving:
-#incbin "Dmp/Fighter (F) FE10-Style Axe {Pikmin}-move.dmp"
+#incbin "Dmp/Mercenary (F) Axe (Flasuban, ArcherBias)-move.dmp"
 ALIGN 4
 AxefighterFStanding:
-#incbin "Dmp/Fighter (F) FE10-Style Axe {Pikmin} 1-stand.dmp"
+#incbin "Dmp/Mercenary (F) Axe (Flasuban, ArcherBias)-stand.dmp"
 
 ALIGN 4
 ThiefFighterFMoving:

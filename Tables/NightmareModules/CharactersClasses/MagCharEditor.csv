@@ -69,9 +69,9 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x43 Elias,0,10
 0x44 Boro,0,0
 0x45 Orfeas,11,60
-0x46 ,10,40
-0x47,2,5
-0x48 ,0,5
+0x46 BarodReal,10,40
+0x47 TarajiReal,9,20
+0x48 Cherne,12,200
 0x49,3,5
 0x4A Elias (Ch10),0,10
 0x4B Eitha (Ch 6),13,5
@@ -213,7 +213,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0xD3 -,0,0
 0xD4 -,0,0
 0xD5 -,0,0
-0xD6 -,0,0
+0xD6 Cherne,12,0
 0xD7 -,0,0
 0xD8 -,0,0
 0xD9 -,0,0

@@ -754,3 +754,35 @@ Apotheosis[X]
 
 ## ApotheosisDesc ^
 [LockIcon]Apsis. Enables all mainhand/offhand skills.[X]
+
+## ByelensBellName ^
+Byelen's Bell[X]
+
+## ByelensBellDesc
+Boosts the power dwelling within[N]
+all of humanity. Follow-up [N]
+attacks strike consecutively.[X]
+
+##RagnarokVantageName
+Nibiru[X]
+
+##RagnarokHawkeyeName
+Ragnarok[X]
+
+##RagnarokPassName
+Kali Yuga[X]
+
+##RagnarokFortuneName
+Armageddon[X]
+
+##RagnarokVantageDesc ^
+Self and allies strike first when attacked.[X]
+
+##RagnarokHawkeyeDesc ^
+Self and allies cannot miss.[X]
+
+##RagnarokPassDesc ^
+Self and allies can move through enemies.[X]
+
+##RagnarokFortuneDesc ^
+Self and allies cannot be critically hit.[X]

@@ -196,6 +196,9 @@
 [LoadTheimon] = [LoadFace][0x3B][0x1]
 [LoadPerihelios] = [LoadFace][0x3C][0x1]
 [LoadEithaReal] = [LoadFace][0x3E][0x1]
+[LoadAthanasius] = [LoadFace][0x35][0x1]
+[LoadCherne] = [LoadFace][0x39][0x1]
+[LoadKwameReal] = [LoadCherne]
 
 //DO NOT PUT PORTRAITS PAST 0xFF
 
