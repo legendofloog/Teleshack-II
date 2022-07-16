@@ -19,7 +19,7 @@ void UnitGainSupportLevel(struct Unit* unit, int num)
     unit->supports[num]++;
     //gRAMChapterData.chapterTotalSupportGain++;
 
-    SetSupportLevelGained(unit->pCharacterData->number, GetUnitSupporterCharacter(unit, num));
+    SetSupportLevelGained(unit->pCharacterData->number, GetROMUnitSupportingId(unit, num));
 }
 
 int GetSupportLevelBySupportIndex(struct Unit* unit, int num)
@@ -243,6 +243,7 @@ void ComputeBattleUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender)
     }
 }
 
+/*
 s8 ActionSupport(Proc* proc){
     int subjectExp, targetExp;
 
@@ -277,3 +278,4 @@ s8 ActionSupport(Proc* proc){
 
     return 0;
 }
+*/

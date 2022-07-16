@@ -3,20 +3,473 @@ Technically, vanilla uses a support count. I won't be using it, but note that th
 The last two zeroes are for termination purposes and padding*/
 #define SupportDataCharacters(char1,char2,char3,char4,char5) "BYTE char1 char2 char3 char4 char5 0 0"
 #define SupportDataInitialValues(value1,value2,value3,value4,value5) "BYTE value1 value2 value3 value4 value5 0 0"
-#define SupportDataGrowths(growth1,growth2,growth3,growth4,growth5) "BYTE growth1 growth2 growth3 growth4 growth5 0 0 7 0 0"
+#define SupportDataGrowths(growth1,growth2,growth3,growth4,growth5) "BYTE growth1 growth2 growth3 growth4 growth5 0 0 5 0 0"
 #define CSupportLevel 81
 #define BSupportLevel 161
 #define ASupportLevel 241
 
+// ch1
 
 ALIGN 4
 CleoSupportPointer:
-SupportDataCharacters(Varga,Emil,Zwieback,Lyre,0)
+SupportDataCharacters(Varga,Emil,Zwieback,Lyre,EliasReal) 
+SupportDataInitialValues(CSupportLevel,0,0,0,BSupportLevel)
+SupportDataGrowths(20,20,30,80,30)
+
+ALIGN 4
+LoeweSupportPointer:
+SupportDataCharacters(Iskra,Cromar,Tao,Catrin,0) //maybe add a fifth if we have time
+SupportDataInitialValues(CSupportLevel,0,CSupportLevel,BSupportLevel,0)
+SupportDataGrowths(20,30,40,40,0)
+
+ALIGN 4
+MiraSupportPointer:
+SupportDataCharacters(Iskra,Emil,Tiberius,0,0) 
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(20,20,30,0,0)
+
+ALIGN 4
+IskraSupportPointer:
+SupportDataCharacters(Loewe,Mira,Tiberius,0,0) //maybe add emil
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(0,90,0,0,0)
+SupportDataGrowths(20,20,30,0,0)
 
 ALIGN 4
 EmilSupportPointer:
-SupportDataCharacters(Cleo,0,0,0,0)
+SupportDataCharacters(Cleo,Varga,Mira,0,0)
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(20,0,0,0,0)
+
+ALIGN 4
+SvetomirSupportPointer:
+SupportDataCharacters(Alena,Delilah,Zhara,0,0) 
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(90,0,0,0,0)
+SupportDataGrowths(20,20,80,0,0)
+
+ALIGN 4
+AlenaSupportPointer:
+SupportDataCharacters(Svetomir,Filone,Sera,0,0) 
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(20,20,40,0,0)
+
+// ch2
+
+ALIGN 4
+VargaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+DelilahSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch3
+
+ALIGN 4
+AlexSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+AxelSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch4
+
+ALIGN 4
+FiloneSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+ZwiebackSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch5
+
+ALIGN 4
+FangaiSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+LongxiaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch5x
+
+ALIGN 4
+MishSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+TobieSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+AwaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+MatthiasSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+FaolanSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+CadenzaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch6
+
+ALIGN 4
+LeinaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+CromarSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch7
+
+ALIGN 4
+IberisSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+BuldakSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch8
+
+ALIGN 4
+NoraSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+HansSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch9
+
+ALIGN 4
+MeldanSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+JennySupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch10
+
+ALIGN 4
+HornetSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+ValseSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch11
+
+ALIGN 4
+IchwepSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+MiloSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch12
+
+ALIGN 4
+MinkSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+TiberiusSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch12x
+
+ALIGN 4
+EllereySupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+MantouSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+TippanySupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+PelecayeSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+CarlSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+TakaiSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch13
+
+ALIGN 4
+DarbySupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+JacinthSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch14
+
+ALIGN 4
+NahizaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+AugurSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch15
+
+ALIGN 4
+IlseSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+SitaraSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch16
+
+ALIGN 4
+RashidSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+KofiSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch17
+
+ALIGN 4
+NikolasSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+KwameSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch18
+
+ALIGN 4
+SeraSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+ShawSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch18x
+
+ALIGN 4
+TaoSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+DarcySupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+ApsisSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+ZharaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+OjasviSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+GrotoSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch19
+
+ALIGN 4
+VolranSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+TaraSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch20
+
+ALIGN 4
+JerrySupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+LyreSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch21
+
+ALIGN 4
+NgondalaSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+CatrinSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch22
+
+ALIGN 4
+LockeSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+TrajanSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+// ch23
+
+ALIGN 4
+EliasSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)
+
+ALIGN 4
+BoroSupportPointer:
+SupportDataCharacters(0,0,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(0,0,0,0,0)

@@ -13,12 +13,12 @@ struct NewSupportBonuses
 {
 	/* 00 */ u8 supportPartnerId;
 	/* 01 */ u8 supportRank; //aka C, B, A, etc
-	/* 02 */ u8 bonusAttack;
-	/* 03 */ u8 bonusDefense;
-	/* 04 */ u8 bonusHit;
-	/* 05 */ u8 bonusAvoid;
-	/* 06 */ u8 bonusCrit;
-	/* 07 */ u8 bonusDodge;
+	/* 02 */ s8 bonusAttack;
+	/* 03 */ s8 bonusDefense;
+	/* 04 */ s8 bonusHit;
+	/* 05 */ s8 bonusAvoid;
+	/* 06 */ s8 bonusCrit;
+	/* 07 */ s8 bonusDodge;
 };
 
 struct StatScreen

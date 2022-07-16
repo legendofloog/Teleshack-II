@@ -10,5 +10,5 @@ POP
 
 ALIGN 4
 NewSupportConvoTable:
-SupportConvoEntry(Cleo, Emil, Ch1KidLoeweTalksToFriendsText, Ch1KidLoeweTalksToFriendsText, Ch1KidLoeweTalksToFriendsText)
+SupportConvoEntry(Cleo, Emil, 0, 0, 0)
 SupportConvoTerminator
