@@ -14,6 +14,10 @@ PointerList:
 
 TurnBasedEvents:
 TurnEventPlayer(0x0, CherneSkillSwap, 1, 255)
+TurnEventPlayer(0x0, Turn1Speeches, 1)
+TurnEventPlayer(0x0, CherneVantage, 2)
+TurnEventPlayer(0x0, ChernePass, 4)
+TurnEventPlayer(0x0, CherneFortune, 3)
 TurnEventPlayer(0x0, Turn2Reinforce, 2)
 TurnEventPlayer(0x0, Turn4Reinforce, 4)
 TurnEventPlayer(0x0, Turn6Reinforce, 6)
@@ -65,6 +69,11 @@ LoadUnit(13, 38)
 LoadUnit(15, 38)
 LoadUnit(17, 38)
 LoadUnit(19, 38)
+UNIT
+
+OutOfCatacombsLoeweCleo:
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [26,32] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [24,32] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT
 
 NewRecruits:
@@ -162,7 +171,31 @@ UNIT EndgameGenerics General 0x0 Level(15, Enemy, True) [0,12] 0x0 0x0 0x1 REDA0
 UNIT EndgameGenerics Baron 0x0 Level(15, Enemy, True) [0,31] 0x0 0x0 0x1 REDA0R31 [Hel] ChargeAI
 UNIT
 
+MahemenVsCherneCutscene:
+UNIT Cherne DarkBishop 0x0 Level(20,Enemy,False) [15,5] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
+UNIT EndgameGenerics Swordmaster 0x0 Level(15, Enemy, True) [13,7] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
+UNIT EndgameGenerics Halberdier 0x0 Level(15, Enemy, True) [14,6] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
+UNIT EndgameGenerics Hero 0x0 Level(15, Enemy, True) [16,6] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
+UNIT EndgameGenerics Sage 0x0 Level(15, Enemy, True) [17,7] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
+UNIT Kailani Bishop_F 0x0 Level(20,NPC, True) [15,11] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Swordmaster 0x0 Level(20,NPC, True) [17,8] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch2_Selese_Guy Warrior 0x0 Level(20,NPC, True) [13,8] 0x0 0x0 0x0 0x0 [TrainedEdge]NoAI
+UNIT Houvaina Bishop_F 0x0 Level(20,NPC, True) [15,9] 0x0 0x0 0x0 0x0 [TrainedEdge]NoAI
+UNIT
 
+PreImmortalCutsceneUnits:
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [14,36] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [16,36] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Kailani Bishop_F 0x0 Level(20,NPC, True) [14,38] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Houvaina Bishop_F 0x0 Level(20,NPC, True) [16,38] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT
+
+ImmortalCutsceneUnits:
+UNIT TarajiReal Swordmaster_F 0x0 Level(20,NPC,False) [14,34] 0x0 0x0 0x0 0x0 [FangAndClaw, Elixir] ChargeAI
+UNIT Athanasius DarkBishop 0x0 Level(15,NPC,False) [16,34] 0x0 0x0 0x0 0x0 [Luna, Fenrir, Physic] ChargeAI
+UNIT Mureib Bishop 0x0 Level(20,NPC, True) [18,34] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch2_Selese_Guy Warrior 0x0 Level(20,NPC, True) [12,34] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT
 
 Traps1:
 	ENDTRAP
@@ -172,34 +205,6 @@ Traps2:
 	ENDTRAP
 	ALIGN 4
 
-BeginningScene:
-	DISA_IF Kwame
-	DISA_IF CoraliaReal
-	LOAD1 0x1 NewRecruits
-	ENUN
-	LOAD1 0x1 InitialEnemyUnits
-	ENUN
-	LOAD1 0x1 InitialEnemyUnits2
-	ENUN
-	LOAD1 0x1 InitialEnemyUnits3
-	ENUN
-	LOAD1 0x1 InitialEnemyUnits4
-	ENUN
-	RemoveAllItem(Kaiserschwert)
-	CHECK_EVENTID 0x90
-	BNE 6 s0 sC
-	GiveItem(ByelensBell,Loewe)
-	ENUN
-	ENUT 0x90
-	LABEL 6
-	MountAll
-	GotoPrepScreen
-	ENDA
-
-EndingScene:
-	MNC2 Chapter25
-	NoFade
-	ENDA
 
 Turn2Reinforce:
 SpawnReinforcements(FlierReinforcements1)
@@ -267,5 +272,150 @@ ENUF 0x7D
 ENUT 0x8E
 GOTO 0x9003
 LABEL 0x9003
+NoFade
+ENDA
+
+Turn1Speeches:
+CameraCursor(Loewe)
+Text(EpicSpeechOfEpicness)
+CameraCursor(Cherne)
+Text(CherneHasRegrets)
+CameraCursor(Cleo)
+Text(CleoTellsYouToCheckInventory)
+NoFade
+ENDA
+
+CherneVantage:
+CameraCursor(Cherne)
+Text(CherneVantageWarning)
+NoFade
+ENDA
+
+ChernePass:
+CameraCursor(Cherne)
+Text(ChernePassWarning)
+NoFade
+ENDA
+
+CherneFortune:
+CameraCursor(Cherne)
+Text(CherneFortuneWarning)
+NoFade
+ENDA
+
+
+BeginningScene:
+DISA_IF Kwame
+DISA_IF CoraliaReal
+SetBackground(0x0D)
+Text(RunningOutOfCatacombs)
+CAMERA_CENTERED [24, 33]
+LOAD 1 OutOfCatacombsLoeweCleo
+EraseBackground
+CameraCursor(Loewe)
+Text(OutOfCatacombs)
+MountSingleUnit(Loewe)
+SingleUnitMove(Loewe, 10, 24, 29)
+STAL 30
+Text(SeeingMahemenGetOwned)
+LOAD 1 MahemenVsCherneCutscene
+CAMERA_CENTERED [15, 8]
+SET_SOMETHING Ch2_Selese_Guy
+SET_SOMETHING Ch24Phantom
+DismountSingleUnit(Loewe)
+STAL 20
+Text(MahemenGetsOwned)
+SingleUnitMove(Cherne, 20, 15, 8)
+StartBattle
+CriticalHit(0,40)
+EndAttack
+FIGHT_MAP Cherne Houvaina RagnarokVantage False
+ENUN
+Text(HouvainaGetsABlister)
+SVAL 0xB 0x9000F
+WARP_OUT
+STAL 20
+DISA Houvaina
+CameraCursor(Kailani)
+Text(KailaniMustMakeHerRetreat)
+SingleUnitMove(Kailani, 30, 9, 24)
+DISA Kailani
+CameraCursor(Cherne)
+Text(CherneHasAMoment)
+SetBackground(Village2)
+Text(MahemeniReunionConvoOne)
+FADI 5
+RemoveAll
+CAMERA_CENTERED [15,34]
+LOAD1 1 PreImmortalCutsceneUnits
+STAL 30
+SetBackground(Village2)
+FADU 5
+Text(MahemeniReunionConvoTwo)
+Text(CleoGazesIntoTheAbyss)
+SetBackground(BlackBackground)
+Text(ByelenReturnsToMindDungeon)
+FADI 5
+EraseBackground
+FADU 5
+CameraCursor(Cleo)
+Text(KaiserschwertDoesTheThing)
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 10
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 10
+LOAD 1 ImmortalCutsceneUnits
+ENUN
+CameraCursor(TarajiReal)
+SetBackground(Village2)
+Text(FourImmortalsAppear)
+Text(TalkingToTheGotohs)
+EraseBackground
+STAL 10
+SingleUnitMove(Loewe, 10, 16, 35)
+STAL 30
+SingleUnitMove(Loewe, 10, 16, 36)
+STAL 10
+SetBackground(Village2)
+Text(WoahTheBellOfByelen)
+EraseBackground
+FADI 5
+STAL 20
+RemoveAllItem(Kaiserschwert)
+RemoveAll
+CHECK_EVENTID 0x90
+BNE 6 s0 sC
+GiveItem(ByelensBell,Loewe)
+ENUN
+ENUT 0x90
+LABEL 6
+LOAD1 0x1 NewRecruits
+ENUN
+LOAD1 0x1 InitialEnemyUnits
+ENUN
+LOAD1 0x1 InitialEnemyUnits2
+ENUN
+LOAD1 0x1 InitialEnemyUnits3
+ENUN
+LOAD1 0x1 InitialEnemyUnits4
+ENUN
+MountAll
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+FADI 10
+RemoveAll
+MuteMusic
+SetBackground(Village2)
+FADU 5
+Text(EndingDialogueOne)
+Text(EndingDialogueTwo)
+MNC2 Chapter25
 NoFade
 ENDA
