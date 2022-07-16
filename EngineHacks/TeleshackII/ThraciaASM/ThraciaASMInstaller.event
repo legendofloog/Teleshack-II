@@ -13,6 +13,7 @@
 #include "ASMC_Other/Installer.event"
 #include "StaffChanges/Installer.event"
 #include "Escape/Installer.event"
+#include "BWL_Stuff/Installer.event"
 
 // changes luck cap to 20
 PUSH
