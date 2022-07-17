@@ -416,6 +416,6 @@ SetBackground(Village2)
 FADU 5
 Text(EndingDialogueOne)
 Text(EndingDialogueTwo)
-MNC2 Chapter25
+GOTO_EPILOGUE
 NoFade
 ENDA

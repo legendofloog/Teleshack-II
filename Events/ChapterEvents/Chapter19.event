@@ -88,7 +88,7 @@ UNIT
 
 NewPlayers:
 UNIT Volran Mage Cleo Level(13,NPC,False) [7,28] 0x0 0x0 0x0 0x0 [Fire,Bolganone,Meteor,PureWater] BossHealAI
-UNIT Tara SwordFighter_F Cleo Level(12,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [BoldBlade,Longsword,Elixir,Torch] BossHealAI
+UNIT Tara SwordFighter_F Cleo Level(12,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [BoldBlade,Longsword,Elixir,KnightProof] BossHealAI
 UNIT
 
 

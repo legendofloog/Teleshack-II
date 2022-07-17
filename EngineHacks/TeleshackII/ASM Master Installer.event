@@ -162,11 +162,6 @@ ORG $17C4C
 BYTE 0x4A //0x48 being last player unit
 POP
 
-PUSH // removes supports from prep screen
-ORG $954AE
-BYTE 0x1E 0xE0
-POP
-
 //weather graphics priority stuff, locations from zane
 PUSH 
 ORG $30366 // light snow

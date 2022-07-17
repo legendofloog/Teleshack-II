@@ -190,9 +190,21 @@ int abs(int num){
 	return num;
 }
 
-bool IsSupportingUnitInRangeOfDefender(Unit* supportingUnit, Unit* defendingUnit){ 
-    if (IsItemCoveringRange(GetUnitEquippedWeapon(supportingUnit), GetUnitDistance(supportingUnit, defendingUnit))){
-        return true;
+int GetWeaponType(Item someItem){
+    return (GetItemData(someItem.number))->weaponType;
+}
+
+bool IsSupportingUnitInRangeOfDefender(Unit* supportingUnit, Unit* defendingUnit){
+    if (GetWeaponType(supportingUnit->items[0]) == IA_STAFF){
+        if (IsItemCoveringRange(supportingUnit->items[0],GetUnitDistance(supportingUnit, defendingUnit))){
+            return true;
+        }
+        return false;
+    }
+    if (GetUnitEquippedWeapon(supportingUnit).number != 0){
+        if (IsItemCoveringRange(GetUnitEquippedWeapon(supportingUnit), GetUnitDistance(supportingUnit, defendingUnit))){
+            return true;
+        }
     }
     return false;
 } 
@@ -243,39 +255,69 @@ void ComputeBattleUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender)
     }
 }
 
-/*
-s8 ActionSupport(Proc* proc){
-    int subjectExp, targetExp;
+void New_DrawUnitScreenSupportList(){
+	Unit* current = gStatScreen.curr;
+	TextHandle* textBase = &TileBufferBase;
+	int y = 8;
+	int x = 16;
 
-    Unit* target = GetUnit(gActionData.targetIndex);
+	NewSupportBonuses* unitSupportList = NewSupportTable[current->pCharacterData->number];
 
-    int targetSupportNum = GetSupportDataIdForOtherUnit(gActiveUnit, target->pCharacterData->number);
-    int subjectSupportNum = GetSupportDataIdForOtherUnit(target, gActiveUnit->pCharacterData->number);
+	if (unitSupportList == 0){
+		return;
+	}
 
-    CanUnitSupportCommandWith(target, subjectSupportNum);
+	int cnt = 0;
+	while (unitSupportList[cnt].supportPartnerId != 0){
+		Unit* supportingUnit = GetUnitByCharId(unitSupportList[cnt].supportPartnerId);
+        int num = GetSupportDataIdForOtherUnit(current,supportingUnit->pCharacterData->number);
+		if ((supportingUnit != 0)){
+            if (current->supports[num] >= ASupportLevel && unitSupportList[cnt].supportRank == ASupportLevel){
+                (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
+			    textBase->tileWidth = 8;
+			    DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_NORMAL, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
+                textBase++;
 
-    UnitGainSupportLevel(gActiveUnit, targetSupportNum);
-    UnitGainSupportLevel(target, subjectSupportNum);
+                x = 24;
+			    (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+2;
+			    textBase->tileWidth = 2;
+                DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_GREEN, 0, 2, "A");
+			    textBase++;
+                y += 2;
+            }
+            if (current->supports[num] < BSupportLevel && current->supports[num] >= CSupportLevel && unitSupportList[cnt].supportRank == CSupportLevel){
+                (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
+			    textBase->tileWidth = 8;
+			    DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_NORMAL, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
+                textBase++;
+                
+                //second part inside here yoinked from support rework rework
+                x = 24;
+			    (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+2;
+			    textBase->tileWidth = 2;
+                DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_BLUE, 0, 2, "C");
+                textBase++;
+                y += 2;
+            }
+            if (current->supports[num] < ASupportLevel && current->supports[num] >= BSupportLevel && unitSupportList[cnt].supportRank == BSupportLevel){
+                (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
+			    textBase->tileWidth = 8;
+			    DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_NORMAL, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
+                textBase++;
+                
+                x = 24;
+			    (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+2;
+			    textBase->tileWidth = 2;
+                DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_BLUE, 0, 2, "B");
+			    textBase++;
+                y += 2;
+            }
+            
+			
+		}
+        x = 16;
+		cnt++;
+	}
+    
 
-    sub_808371C(
-        gActiveUnit->pCharacterData->number,
-        target->pCharacterData->number,
-        GetUnitSupportLevel(gActiveUnit, targetSupportNum)
-    );
-
-    subjectExp = gActiveUnit->supports[targetSupportNum];
-    targetExp = target->supports[subjectSupportNum];
-
-    if (subjectExp != targetExp) {
-        if (subjectExp > targetExp) {
-            target->supports[subjectSupportNum] = subjectExp;
-        }
-
-        if (subjectExp < targetExp) { 
-            gActiveUnit->supports[targetSupportNum] = targetExp;
-        }
-    }
-
-    return 0;
 }
-*/

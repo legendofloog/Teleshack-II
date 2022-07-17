@@ -95,7 +95,7 @@ MiscBasedEvents:
 
 LocationBasedEvents:
 Chest(TemperedRing,10,1)
-Chest(Dragonshield,12,0)
+Chest(KnightProof,12,0)
 Door(12,4)
 Door(13,4)
 	END_MAIN

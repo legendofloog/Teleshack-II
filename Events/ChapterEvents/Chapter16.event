@@ -129,7 +129,7 @@ UNIT Boro_Ch16 Champion Catrin Level(5,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [MasterL
 UNIT
 
 EnemyUnits:
-UNIT Hamdi Halberdier 0x0 Level(7,Enemy,False) [19,12] 0x0 0x0 0x0 0x0 [SilverLance,GoddessIcon] RangeAI
+UNIT Hamdi Halberdier 0x0 Level(7,Enemy,False) [19,12] 0x0 0x0 0x0 0x0 [SilverLance,KnightProof,GoddessIcon] RangeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,16] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
 UNIT Phantom Archer Hamdi Level(15,Enemy,True) [7,9] 0x0 0x0 0x0 0x0 [GaleBow] RangeAI
