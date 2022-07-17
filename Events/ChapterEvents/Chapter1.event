@@ -126,7 +126,14 @@ UNIT
 Units3:
 UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [19,15] 0x0 0x0 0x1 REDA18R15 [Thunder,Vulnerary]                NoAI
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [19,17] 0x0 0x0 0x1 REDA18R17 [IronLance,Vulnerary,DoorKey]              NoAI
-UNIT 
+UNIT
+
+GreenUnits:
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT
 
 Flashback1Units1:
 UNIT Chapter1Generics Swordmaster_F 0x0 Level(1,NPC,False) [2,4] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
@@ -151,14 +158,6 @@ UNIT Senny Sniper_F   0x0          Level(1,NPC,False) [14,2] 0x0 0x0 0x1 REDA9R2
 UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [13,0] 0x0 0x0 0x1 REDA8R1 [0x0] NoAI
 UNIT Svetomir SwordFighter 0x0 Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA10R1 [0x0] NoAI
 UNIT 
-
-GreenUnits:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
-UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
-UNIT
-
 
 EnemyUnits:
 UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI

@@ -1,6 +1,6 @@
 // going to go through all the BWL functions and change them to be the address I specify
 
-//0x02026e30 is the address that i'll use 
+//0x02026e30 is the address that i'll use for data storage, 0x02026e20 for data array 
 /*
 necessary functions to change/look at
 
@@ -27,9 +27,39 @@ ALL DONE
 */
 
 #define newBWLDataStorage 0x02026e30
+#define newBWLDataArray 0x02026e20
 
 PUSH
+//BWL data array pointer
+ORG $A2C34
+WORD newBWLDataArray
+ORG $A4524
+WORD newBWLDataArray
+ORG $A458C
+WORD newBWLDataArray
+ORG $A4670
+WORD newBWLDataArray
+ORG $A46DC
+WORD newBWLDataArray
+ORG $A4788
+WORD newBWLDataArray
+ORG $A47C8
+WORD newBWLDataArray
+ORG $A4818
+WORD newBWLDataArray
+ORG $A4878
+WORD newBWLDataArray
+ORG $A48D0
+WORD newBWLDataArray
+ORG $A4A24
+WORD newBWLDataArray
+ORG $A4A70
+WORD newBWLDataArray
+ORG $A4D1C
+WORD newBWLDataArray
 //a bunch of BWL data storage pointers
+ORG $A4280
+WORD newBWLDataStorage
 ORG $A4924
 WORD newBWLDataStorage
 ORG $A4954
@@ -46,48 +76,36 @@ PUSH
 //080a481c  BWL_AddTilesMoved
 ORG $a4826
 SHORT 0x2C49 //49 units saved
-ORG $a4878
-WORD newBWLDataStorage
 POP
 
 PUSH
 // 080A487C BWL_AddExpGained
 ORG $a4886
 SHORT 0x2C49 //49 units saved
-ORG $a48d0
-WORD newBWLDataStorage
 POP
 
 PUSH
 // 080a4104  SaveClearedBWLAndChapterWinData
 ORG $a4134
 SHORT 0x2549 //49 units saved
-ORG $a4184
-WORD newBWLDataStorage
 POP
 
 PUSH
 // 080a4594  BWL_AddLoss
 ORG $a45ac
 SHORT 0x2C49 //49 units saved
-ORG $a4670
-WORD newBWLDataStorage
 POP
 
 PUSH
 // 080a4684  BWL_AddWinOrLossIdk
 ORG $a4692
 SHORT 0x2849 //49 units saved
-ORG $a46dc
-WORD newBWLDataStorage
 POP
 
 PUSH
 // 080a47cc  BWL_IncrementDeployCountMaybe
 ORG $a47d4
 SHORT 0x2C49 //49 units saved
-ORG $A4818
-WORD newBWLDataStorage
 POP
 
 PUSH
@@ -136,7 +154,5 @@ PUSH
 // 080a4cfc  BWL_GetEntry
 ORG $a4d04 
 SHORT 0x2C49 //49 units saved
-ORG $A4D1C
-WORD newBWLDataStorage
 POP
 
