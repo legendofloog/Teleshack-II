@@ -208,3 +208,7 @@ the top of inventory.[X]
 ->[X]
 
 #include "CharClassItemsEtc/GuideText.txt"
+
+#include "CharClassItemsEtc/Supports.txt"
+
+#include "CharClassItemsEtc/CharacterEndings.txt"
