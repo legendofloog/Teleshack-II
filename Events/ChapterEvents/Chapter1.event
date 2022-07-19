@@ -425,6 +425,7 @@ SvetomirAlenaTalkCh1:
 MUSS WithUs_Song
 Text(SvetomirAlenaTalkCh1Text)
 CUSA Alena
+SetFatigue(Alena,0)
 MURE 2
 NoFade
 ENDA
@@ -440,6 +441,7 @@ MUSS WithUs_Song
 Text(LoeweSvetomirFreedText)
 CUSA Loewe
 CUSA Svetomir
+SetFatigue(Svetomir,0)
 GiveItem(IronBow,Loewe)
 GiveItem(Heal,Svetomir)
 SilentGiveItem(Vulnerary,Loewe)

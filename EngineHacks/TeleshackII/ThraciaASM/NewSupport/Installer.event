@@ -29,19 +29,19 @@ NewSupportTable:
 ALIGN 4
 CleoSupportList:
 SupportEntry(Emil,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Emil,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Emil,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Emil,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Varga,CSupportLevel,1,1,5,0,0,5)
 SupportEntry(Varga,BSupportLevel,1,1,10,0,0,10)
 SupportEntry(Varga,ASupportLevel,2,2,10,0,0,10)
 
-SupportEntry(Darby,CSupportLevel,0,1,5,0,5,0)
-SupportEntry(Darby,BSupportLevel,0,2,7,0,7,0)
-SupportEntry(Darby,ASupportLevel,0,3,10,0,10,0)
+SupportEntry(Darby,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Darby,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Darby,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Lyre,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Lyre,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Lyre,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Lyre,ASupportLevel,0,3,0,15,0,0)
 
 SupportEntry(EliasReal,BSupportLevel,2,2,0,0,0,0)
@@ -50,16 +50,16 @@ SupportTerm
 
 ALIGN 4
 LoeweSupportList:
-SupportEntry(Iskra,CSupportLevel,1,1,0,5,0,5)
-SupportEntry(Iskra,BSupportLevel,1,1,0,10,0,10)
-SupportEntry(Iskra,ASupportLevel,2,2,0,10,0,10)
+SupportEntry(Iskra,CSupportLevel,1,1,5,5,0,0)
+SupportEntry(Iskra,BSupportLevel,1,1,10,10,0,0)
+SupportEntry(Iskra,ASupportLevel,2,2,10,10,0,0)
 
 SupportEntry(Cromar,CSupportLevel,1,0,5,0,5,0)
 SupportEntry(Cromar,BSupportLevel,2,0,7,0,7,0)
 SupportEntry(Cromar,ASupportLevel,3,0,10,0,10,0)
 
 SupportEntry(Asha,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Asha,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Asha,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Asha,ASupportLevel,0,3,0,15,0,0)
 
 SupportEntry(Tao,CSupportLevel,1,0,0,0,5,0)
@@ -77,55 +77,55 @@ SupportEntry(Iskra,BSupportLevel,1,1,10,0,0,10)
 SupportEntry(Iskra,ASupportLevel,2,2,10,0,0,10)
 
 SupportEntry(Emil,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Emil,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Emil,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Emil,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Tiberius,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Tiberius,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Tiberius,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Tiberius,ASupportLevel,0,3,0,15,0,0)
 
-SupportEntry(BoroReal,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(BoroReal,ASupportLevel,3,0,10,0,0,0)
+SupportEntry(BoroReal,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(BoroReal,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(TrajanReal,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(TrajanReal,ASupportLevel,0,3,0,10,0,0)
+SupportEntry(TrajanReal,BSupportLevel,0,2,0,10,0,0)
+SupportEntry(TrajanReal,ASupportLevel,0,3,0,15,0,0)
 SupportTerm
 
 ALIGN 4
 IskraSupportList:
-SupportEntry(Loewe,CSupportLevel,1,1,5,0,5,0)
-SupportEntry(Loewe,BSupportLevel,1,1,10,0,10,0)
-SupportEntry(Loewe,ASupportLevel,2,2,10,0,10,0)
+SupportEntry(Loewe,CSupportLevel,1,1,5,5,0,0)
+SupportEntry(Loewe,BSupportLevel,1,1,10,10,0,0)
+SupportEntry(Loewe,ASupportLevel,2,2,10,10,0,0)
 
 SupportEntry(Mira,CSupportLevel,1,1,5,0,0,5)
 SupportEntry(Mira,BSupportLevel,1,1,10,0,0,10)
 SupportEntry(Mira,ASupportLevel,2,2,10,0,0,10)
 
 SupportEntry(Emil,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Emil,BSupportLevel,0,2,7,0,0,0)
+SupportEntry(Emil,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Emil,ASupportLevel,0,3,15,0,0,0)
 
 SupportEntry(Tiberius,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Tiberius,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Tiberius,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Tiberius,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 ALIGN 4
 EmilSupportList:
-SupportEntry(Cleo,CSupportLevel,1,0,5,0,0,5)
-SupportEntry(Cleo,BSupportLevel,2,0,7,0,0,7)
-SupportEntry(Cleo,ASupportLevel,3,0,10,0,0,10)
+SupportEntry(Cleo,CSupportLevel,1,0,5,0,0,0)
+SupportEntry(Cleo,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Cleo,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Mira,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Mira,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Mira,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Mira,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Iskra,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Iskra,BSupportLevel,0,2,7,0,0,0)
+SupportEntry(Iskra,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Iskra,ASupportLevel,0,3,15,0,0,0)
 
 SupportEntry(Varga,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Varga,BSupportLevel,2,0,0,7,0,0)
+SupportEntry(Varga,BSupportLevel,2,0,0,10,0,0)
 SupportEntry(Varga,ASupportLevel,3,0,0,15,0,0)
 SupportTerm
 
@@ -133,14 +133,14 @@ ALIGN 4
 SvetomirSupportList:
 SupportEntry(Alena,CSupportLevel,1,1,0,5,0,5)
 SupportEntry(Alena,BSupportLevel,2,2,0,7,0,7)
-SupportEntry(Alena,ASupportLevel,3,3,0,15,0,15)
+SupportEntry(Alena,ASupportLevel,3,3,0,10,0,10)
 
 SupportEntry(Delilah,CSupportLevel,1,1,0,(-5),5,0)
 SupportEntry(Delilah,BSupportLevel,2,2,0,(-7),7,0)
 SupportEntry(Delilah,ASupportLevel,3,3,0,(-15),15,0)
 
 SupportEntry(Zhara,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Zhara,BSupportLevel,0,2,7,0,0,0)
+SupportEntry(Zhara,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Zhara,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
@@ -151,11 +151,11 @@ SupportEntry(Svetomir,BSupportLevel,2,0,7,0,7,0)
 SupportEntry(Svetomir,ASupportLevel,3,0,10,0,10,0)
 
 SupportEntry(Filone,CSupportLevel,0,0,5,5,0,5)
-SupportEntry(Filone,BSupportLevel,0,0,7,7,0,7)
+SupportEntry(Filone,BSupportLevel,0,0,10,10,0,10)
 SupportEntry(Filone,ASupportLevel,0,0,15,15,0,15)
 
 SupportEntry(Sera,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Sera,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Sera,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Sera,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
@@ -183,9 +183,9 @@ SupportTerm
 
 ALIGN 4
 DelilahSupportList:
-SupportEntry(Svetomir,CSupportLevel,1,0,5,(-5),5,0)
-SupportEntry(Svetomir,BSupportLevel,2,0,7,(-7),7,0)
-SupportEntry(Svetomir,ASupportLevel,3,0,15,(-15),15,0)
+SupportEntry(Svetomir,CSupportLevel,1,0,5,(-5),0,0)
+SupportEntry(Svetomir,BSupportLevel,2,0,7,(-7),0,0)
+SupportEntry(Svetomir,ASupportLevel,3,0,15,(-15),0,0)
 
 SupportEntry(Ilse,CSupportLevel,1,0,0,5,0,0)
 SupportEntry(Ilse,BSupportLevel,2,0,0,7,0,0)
@@ -718,9 +718,9 @@ SupportTerm
 
 ALIGN 4
 DarbySupportList:
-SupportEntry(Cleo,CSupportLevel,1,0,5,0,5,0)
-SupportEntry(Cleo,BSupportLevel,2,0,7,0,7,0)
-SupportEntry(Cleo,ASupportLevel,3,0,10,0,10,0)
+SupportEntry(Cleo,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Cleo,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Cleo,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Jacinth,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Jacinth,BSupportLevel,2,0,7,0,0,0)
