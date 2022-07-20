@@ -5,7 +5,7 @@
  </tileset>
  <layer id="1" name="Tile Layer 1" width="15" height="10">
   <properties>
-   <property name="Anims1" value=""/>
+   <property name="Anims1" value="FF5WaveCaveTileAnimationsID"/>
    <property name="ChapterID" value="Ch5xInterlude"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="Ch5xInterludeMapChanges"/>

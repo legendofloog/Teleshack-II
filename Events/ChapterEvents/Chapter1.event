@@ -176,7 +176,7 @@ UNIT
 
 
 Turn2Reinforcements:
-UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] DoNothingAI
+UNIT Alena Myrmidon_F 0x0 Level(2,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] DoNothingAI
 UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [ShortSword] DoNothingAI
 UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [ShortSword] DoNothingAI
 UNIT

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="20" height="28" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <properties>
-  <property name="Anims1" value="0x0"/>
+  <property name="Anims1" value="FF5WaveCaveTileAnimationsID"/>
   <property name="ChapterID" value="Chapter11"/>
   <property name="Main" value=""/>
   <property name="MapChangesID" value="Chapter11MapChanges"/>
