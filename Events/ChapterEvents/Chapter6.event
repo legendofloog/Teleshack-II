@@ -20,7 +20,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0, TurnOne, 1)
 	TurnEventPlayer(0x0, TurnTwo, 2)
-	TurnEventPlayer(0x0, WipeCheck, 1, 255)
+	//TurnEventPlayer(0x0, WipeCheck, 1, 255)
 	TurnEventPlayer(0xA, StagingAreaEnter, 1, 255)
 	TurnEventPlayer(0xB, StagingAreaExit, 1, 255)
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
@@ -317,8 +317,10 @@ ENUN
 TILECHANGE 0
 TILECHANGE 1
 SetBackground(Boat)
+MUSC Rovers
 CenterTextbox(Ch6LongMonologueIntro)
 EraseBackground
+FadeOutMusic
 COUNTER_SET 0x0 0x0
 COUNTER_SET 0x1 0x0
 SetFlag(0xB)
@@ -329,6 +331,7 @@ CamOn
 MOVE 15 Cromar [7, 18]
 ENUN
 CameraCursor(Cromar)
+MUSC FFTAnxiety
 Text(Ch6CromarLeinaIntro)
 CamOff
 MOVE 15 Cromar [17, 18]
@@ -339,6 +342,7 @@ ENUN
 STAL 20
 CameraCursor(Veid)
 Text(Ch6CromarVeidIntro)
+FadeOutMusic
 CamOn
 MOVE 20 Cromar [27, 10]
 ENUN
@@ -356,11 +360,13 @@ MOVE 15 Cleo [6, 18]
 MOVE 15 Loewe [7,18]
 ENUN
 Text(Ch6CleoLoeweIntro)
+FadeOutMusic
 LOAD1 1 PirateEnemies
 LOAD1 1 PirateEnemies2
 ENUN
 CameraCursor(Draken)
 GiveItemWithDurability(SkillScroll,AzuriumMightID,Draken)
+MUSC RenegadesID
 Text(Ch6PirateIntro)
 CameraCursor(Cleo)
 Text(Ch6CleoLoeweIntro2)
@@ -506,7 +512,7 @@ ENDA
 ALIGN 4
 EndingScene:
 SetBackground(Boat)
-MUSC(Rovers)
+MUSC KwameID
 Text(Ch6End)
 MNC2 Chapter7
 NoFade

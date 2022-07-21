@@ -389,22 +389,22 @@ SupportTerm
 ALIGN 4
 LeinaSupportList:
 SupportEntry(Cromar,CSupportLevel,1,1,0,0,5,0)
-SupportEntry(Cromar,BSupportLevel,1,1,0,0,7,0)
+SupportEntry(Cromar,BSupportLevel,1,1,0,0,10,0)
 SupportEntry(Cromar,ASupportLevel,2,2,0,0,15,0)
 
 SupportEntry(Mantou,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Mantou,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Mantou,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Mantou,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Ngondala,CSupportLevel,0,1,0,5,0,5)
-SupportEntry(Ngondala,BSupportLevel,0,2,0,7,0,7)
+SupportEntry(Ngondala,BSupportLevel,0,2,0,7,0,10)
 SupportEntry(Ngondala,ASupportLevel,0,3,0,10,0,15)
 SupportTerm
 
 ALIGN 4
 CromarSupportList:
 SupportEntry(Leina,CSupportLevel,1,1,0,0,5,0)
-SupportEntry(Leina,BSupportLevel,1,1,0,0,7,0)
+SupportEntry(Leina,BSupportLevel,1,1,0,0,10,0)
 SupportEntry(Leina,ASupportLevel,2,2,0,0,15,0)
 
 SupportEntry(Loewe,CSupportLevel,1,0,5,0,5,0)
@@ -412,7 +412,7 @@ SupportEntry(Loewe,BSupportLevel,2,0,7,0,7,0)
 SupportEntry(Loewe,ASupportLevel,3,0,10,0,10,0)
 
 SupportEntry(Matthias,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Matthias,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Matthias,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Matthias,ASupportLevel,0,3,0,15,0,0)
 SupportTerm
 
@@ -425,22 +425,22 @@ SupportEntry(Axel,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Axel,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Nora,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Nora,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Nora,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Nora,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Hans,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Hans,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Hans,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Hans,ASupportLevel,0,3,0,15,0,0)
 SupportTerm
 
 ALIGN 4
 BuldakSupportList:
 SupportEntry(Faolan,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Faolan,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Faolan,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Faolan,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Valse,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Valse,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Valse,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Valse,ASupportLevel,0,3,0,15,0,0)
 
 SupportEntry(Tao,CSupportLevel,1,0,5,0,5,0)
@@ -452,30 +452,30 @@ SupportTerm
 ALIGN 4
 NoraSupportList:
 SupportEntry(Iberis,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Iberis,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Iberis,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Iberis,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Hans,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Hans,BSupportLevel,1,1,7,0,0,0)
+SupportEntry(Hans,BSupportLevel,1,1,10,0,0,0)
 SupportEntry(Hans,ASupportLevel,2,2,15,0,0,0)
 
 SupportEntry(Ichwep,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Ichwep,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Ichwep,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Ichwep,ASupportLevel,0,3,0,15,0,0)
 SupportTerm
 
 ALIGN 4
 HansSupportList:
 SupportEntry(Iberis,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Iberis,BSupportLevel,0,2,0,7,0,0)
+SupportEntry(Iberis,BSupportLevel,0,2,0,10,0,0)
 SupportEntry(Iberis,ASupportLevel,0,3,0,15,0,0)
 
 SupportEntry(Nora,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Nora,BSupportLevel,1,1,7,0,0,0)
+SupportEntry(Nora,BSupportLevel,1,1,10,0,0,0)
 SupportEntry(Nora,ASupportLevel,2,2,15,0,0,0)
 
 SupportEntry(Milo,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Milo,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Milo,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Milo,ASupportLevel,3,0,15,0,0,0)
 SupportTerm
 
@@ -1038,7 +1038,7 @@ SupportTerm
 ALIGN 4
 NgondalaSupportList:
 SupportEntry(Leina,CSupportLevel,0,1,0,5,0,5)
-SupportEntry(Leina,BSupportLevel,0,2,0,7,0,7)
+SupportEntry(Leina,BSupportLevel,0,2,0,7,0,10)
 SupportEntry(Leina,ASupportLevel,0,3,0,10,0,15)
 
 SupportEntry(KwameReal,CSupportLevel,0,1,0,5,0,0)
