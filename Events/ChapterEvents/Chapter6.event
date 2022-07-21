@@ -137,7 +137,7 @@ UNIT
 
 ALIGN 4
 McCallumUnit:
-UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossNoAttackAI
+UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] [0x6,0x3,0x0,0x20]
 UNIT
 
 ALIGN 4
@@ -342,7 +342,6 @@ ENUN
 STAL 20
 CameraCursor(Veid)
 Text(Ch6CromarVeidIntro)
-FadeOutMusic
 CamOn
 MOVE 20 Cromar [27, 10]
 ENUN
@@ -352,6 +351,7 @@ CamOff
 STAL 60
 LOAD1 0x1 PlayerSceneUnits
 ENUN
+FadeOutMusic
 CAMERA_CENTERED [7,19]
 STAL 20
 FlashCursor(Cleo,30)
@@ -359,14 +359,13 @@ FlashCursor(Loewe,30)
 MOVE 15 Cleo [6, 18]
 MOVE 15 Loewe [7,18]
 ENUN
+MUSC RenegadesID
 Text(Ch6CleoLoeweIntro)
-FadeOutMusic
 LOAD1 1 PirateEnemies
 LOAD1 1 PirateEnemies2
 ENUN
 CameraCursor(Draken)
 GiveItemWithDurability(SkillScroll,AzuriumMightID,Draken)
-MUSC RenegadesID
 Text(Ch6PirateIntro)
 CameraCursor(Cleo)
 Text(Ch6CleoLoeweIntro2)
@@ -444,13 +443,13 @@ SpawnEnemies:
 		CHECK_ALIVE Leina
 		BEQ 865 s0 sC
 			CameraCursor(Leina)
-			FlashCursor(Leina,60)
 			Text(Ch6BarodCongratulations5)
 			GiveItem(SisterRing,Leina)
 			GOTO 866
 		LABEL 865
 		GiveItem(SisterRing,Cleo)
 		LABEL 866
+		CameraCursor(Barod)
 		Text(Ch6BarodIntro5)
 		CameraCursor(Cleo)
 		Text(Ch6BarodIntro5Response)

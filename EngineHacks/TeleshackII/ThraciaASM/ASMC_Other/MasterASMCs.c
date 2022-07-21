@@ -148,3 +148,12 @@ int GetUnitMagBy2Range(const Unit* unit) {
     int result = (unit->mag / 2) + 5;
     return result;
 }
+
+void GiveBlueUnitItemAfterCombat(){ //s1 = item id
+    if (UNIT_FACTION(&gBattleTarget.unit) == UA_BLUE){
+        
+    }
+    if (UNIT_FACTION(&gBattleActor.unit) == UA_BLUE){
+        
+    }
+}
