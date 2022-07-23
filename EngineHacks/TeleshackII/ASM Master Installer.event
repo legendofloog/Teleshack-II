@@ -65,6 +65,7 @@ ChangeWeaponRankASMC:
 
 #include "NewClearUnit/NewClearUnit.event"
 // thief vision set to 0
+#include "FE8U_PrepsAugury-main/PrepsAugury.event"
 
 PUSH
 ORG 0x0178C2
@@ -167,13 +168,13 @@ PUSH
 ORG $30366 // light snow
 BYTE 0xE0
 ORG $3066D // heavy snow
-BYTE 0x1C
+BYTE 0x18
 ORG 0x59D95F // rain
-BYTE 0x1C
+BYTE 0x18
 ORG 0x59D967 // rain
-BYTE 0x1C
+BYTE 0x18
 ORG $3053D // sandstorm
-BYTE 0x1C
+BYTE 0x18
 POP
 /*
 0x030366 change 80 to 80/A0/C0/E0 light snow
@@ -181,3 +182,9 @@ POP
 0x59D95F and 0x59D967 change 10 to 10/14/18/1C rain
 0x03053D change 10 to 10/14/18/1C sandstorm
 */
+
+//Sets Vulnerary HP Recovery to 15hp.
+PUSH
+ORG 0x2FEC6
+BYTE 0x0F
+POP

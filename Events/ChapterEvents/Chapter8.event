@@ -64,7 +64,7 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT Hege Hero_F 0x0 Level(3,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,HandAxe,Dragonshield] NeverMoveAI
+UNIT Hege Hero_F 0x0 Level(1,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,HandAxe,Dragonshield] NeverMoveAI
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
 UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [Flux,ChestKey] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
@@ -124,20 +124,15 @@ UNIT
 Warning:
 CAMERA Hege
 FlashCursor(Hege,60)
-TEXTSHOW HegeWarning
-TEXTEND
-REMA
+Text(HegeWarning)
 NoFade
 ENDA
 
 Recruit:
 CAMERA Cleo
-FADU 15
 FlashCursor(Cleo,60)
 MUSC WithUs_Song
-TEXTSHOW HansAndNoraRecruit
-TEXTEND
-REMA
+Text(HansAndNoraRecruit)
 CUSA 25
 CUSA 26
 NoFade
@@ -148,9 +143,7 @@ CamOn
 LoadReinforcements(TeamFrancis)
 FlashCursor(Francis,60)
 MUSC FF4RedWingsID
-TEXTSHOW FrancisArrives
-TEXTEND
-REMA
+Text(FrancisArrives)
 CamOff
 NoFade
 ENDA
@@ -180,17 +173,13 @@ BeginningScene:
 	ENUN
 	SetBackground(0x18)
 	MUSC Sortie_Formation
-	TEXTSHOW GroupPlans
-	TEXTEND
-	REMA
+	Text(GroupPlans)
 	FADI 15
 	MUSC 0x7FFF
 	SetBackground(CastleHallway)
 	FADU 15
 	MUSC SolveTheRiddle
-	TEXTSHOW HegeAndCidor
-	TEXTEND
-	REMA
+	Text(HegeAndCidor)
 	FADI 15
 	ENUN
 	GotoPrepScreen
@@ -199,25 +188,17 @@ BeginningScene:
 EndingScene:
 	SetBackground(CastleHallway)
 	MUSC FF5_Nostalgia
-	TEXTSHOW CleoAndLoeweEndText
-	TEXTEND
-	REMA
+	Text(CleoAndLoeweEndText)
 	FADI 15
 	MUSC 0x7FFF
 	SetBackground(0x25)
-	FADU 15
 	MUSC WindyDayBirdsSoundEffect
-	TEXTSHOW HegeAndKwame
-	TEXTEND
-	REMA
+	Text(HegeAndKwame)
 	FADI 15
 	MUSC 0x7FFF
 	SetBackground(0x1C)
-	FADU 15
 	MUSC FF5_Sealed_Away
-	TEXTSHOW MifanAndCidor
-	TEXTEND
-	REMA
+	Text(MifanAndCidor)
 	MNC2 Chapter9
 	NoFade
 	ENDA

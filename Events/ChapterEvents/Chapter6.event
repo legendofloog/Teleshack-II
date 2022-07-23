@@ -120,7 +120,7 @@ UNIT
 ALIGN 4
 CromarAndLeina:
 UNIT Leina 0x0 Cleo Level(3,NPC,False) [6,18] 0x0 0x0 0x0 0x1 [Rapier, Heal, Vulnerary] NoAI
-UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir, Elixir, Elixir] BossHealAI
+UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir] BossHealAI
 UNIT
 
 ALIGN 4
@@ -562,6 +562,7 @@ LeinaRecruitCromar:
 		FlashCursor(Cromar, 30)
 		Text(LeinaRecruitCromarWithRing)
 		CUSA Cromar
+		SetFatigue(Cromar,0)
 		FlashCursor(McCallum,30)
 		Text(McCallumMovesOutOfTheWay)
 		CUSN McCallum
