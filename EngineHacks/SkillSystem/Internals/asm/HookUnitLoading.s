@@ -11,7 +11,8 @@
 @	lGetSkills        = EALiterals+0x04
 @	lChargeupTable    = EALiterals+0x08
 
-	BWLTable = 0x0203E884
+	@ BWLTable = 0x0203E884
+	BWLTable = 0x02026e20
 
 	.macro blh to, reg=r3
 		ldr \reg, =\to

@@ -1,0 +1,546 @@
+/*Note: You can go up to 7, but only 5 display normally in the status screen, so the 6th and 7th entries of these are zeroed out
+Technically, vanilla uses a support count. I'm technically not using it, but Builder will scream at you if it's not used
+properly, so I'm doing it anyway with SupportCountAmount. 
+The last two zeroes are for termination purposes and padding*/
+#define SupportDataCharacters(char1,char2,char3,char4,char5) "BYTE char1 char2 char3 char4 char5 0 0"
+#define SupportDataInitialValues(value1,value2,value3,value4,value5) "BYTE value1 value2 value3 value4 value5 0 0"
+#define SupportDataGrowths(growth1,growth2,growth3,growth4,growth5) "BYTE growth1 growth2 growth3 growth4 growth5 0 0"
+#define SupportCountAmount(supportCount) "BYTE supportCount 0 0"
+#define CSupportLevel 81
+#define BSupportLevel 161
+#define ASupportLevel 241
+
+// ch1
+
+ALIGN 4
+CleoSupportPointer:
+SupportDataCharacters(Varga,Emil,Darby,Lyre,EliasReal) 
+SupportDataInitialValues(CSupportLevel,0,0,0,BSupportLevel)
+SupportDataGrowths(15,15,30,80,30)
+SupportCountAmount(5)
+
+ALIGN 4
+LoeweSupportPointer:
+SupportDataCharacters(Iskra,Cromar,Tao,CatrinReal,Asha) //maybe add a fifth if we have time
+SupportDataInitialValues(CSupportLevel,0,CSupportLevel,BSupportLevel,0)
+SupportDataGrowths(15,20,40,40,40)
+SupportCountAmount(5)
+
+ALIGN 4
+MiraSupportPointer:
+SupportDataCharacters(Iskra,Emil,Tiberius,BoroReal,TrajanReal) 
+SupportDataInitialValues(CSupportLevel,0,0,BSupportLevel,BSupportLevel)
+SupportDataGrowths(13,16,30,80,80)
+SupportCountAmount(5)
+
+ALIGN 4
+IskraSupportPointer:
+SupportDataCharacters(Loewe,Mira,Tiberius,Emil,0)
+SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(15,13,40,16,0)
+SupportCountAmount(4)
+
+ALIGN 4
+EmilSupportPointer:
+SupportDataCharacters(Cleo,Varga,Mira,Iskra,0)
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(15,15,16,16,0)
+SupportCountAmount(4)
+
+ALIGN 4
+SvetomirSupportPointer:
+SupportDataCharacters(Alena,Delilah,Zhara,0,0) 
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(15,16,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+AlenaSupportPointer:
+SupportDataCharacters(Svetomir,Filone,Sera,0,0) 
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(15,16,80,0,0)
+SupportCountAmount(3)
+
+// ch2
+
+ALIGN 4
+VargaSupportPointer:
+SupportDataCharacters(Cleo,Emil,Zwieback,EliasReal,0)  
+SupportDataInitialValues(CSupportLevel,0,0,BSupportLevel,0)
+SupportDataGrowths(15,15,16,30,0)
+SupportCountAmount(4)
+
+ALIGN 4
+DelilahSupportPointer:
+SupportDataCharacters(Svetomir,Ilse,Awa,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(16,40,20,0,0)
+SupportCountAmount(3)
+
+// ch3
+
+ALIGN 4
+AlexSupportPointer:
+SupportDataCharacters(Axel,Faolan,Mantou,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(20,20,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+AxelSupportPointer:
+SupportDataCharacters(Alex,Iberis,Pelecaye,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(20,20,30,0,0)
+SupportCountAmount(3)
+
+// ch4
+
+ALIGN 4
+FiloneSupportPointer:
+SupportDataCharacters(Alena,Zwieback,Tobie,0,0)  
+SupportDataInitialValues(0,CSupportLevel,0,0,0)
+SupportDataGrowths(16,15,20,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+ZwiebackSupportPointer:
+SupportDataCharacters(Varga,Filone,Ellerey,0,0)  
+SupportDataInitialValues(0,CSupportLevel,0,0,0)
+SupportDataGrowths(16,15,30,0,0)
+SupportCountAmount(3)
+
+// ch5
+
+ALIGN 4
+FangaiSupportPointer:
+SupportDataCharacters(Longxia,Faolan,Tippany,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(15,20,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+LongxiaSupportPointer:
+SupportDataCharacters(Fangai,Cadenza,Groto,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(15,20,40,0,0)
+SupportCountAmount(3)
+
+// ch5x
+
+ALIGN 4
+MishSupportPointer:
+SupportDataCharacters(Tobie,Takai,Tara,0,0)  
+SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(20,30,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+TobieSupportPointer:
+SupportDataCharacters(Mish,Takai,Filone,0,0)  
+SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(20,30,20,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+AwaSupportPointer:
+SupportDataCharacters(Delilah,Zhara,Nikolas,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(20,80,40,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+MatthiasSupportPointer:
+SupportDataCharacters(Cromar,Tippany,Ilse,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(20,30,40,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+FaolanSupportPointer:
+SupportDataCharacters(Fangai,Alex,Buldak,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(20,20,20,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+CadenzaSupportPointer:
+SupportDataCharacters(Longxia,Mink,Kofi,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(20,30,40,0,0)
+SupportCountAmount(3)
+
+// ch6
+
+ALIGN 4
+LeinaSupportPointer:
+SupportDataCharacters(Mantou,Cromar,Ngondala,0,0)  
+SupportDataInitialValues(0,CSupportLevel,0,0,0)
+SupportDataGrowths(30,20,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+CromarSupportPointer:
+SupportDataCharacters(Loewe,Leina,Matthias,0,0)  
+SupportDataInitialValues(0,CSupportLevel,0,0,0)
+SupportDataGrowths(20,20,20,0,0)
+SupportCountAmount(3)
+
+// ch7
+
+ALIGN 4
+IberisSupportPointer:
+SupportDataCharacters(Nora,Hans,Axel,0,0) 
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,20,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+BuldakSupportPointer:
+SupportDataCharacters(Faolan,Valse,Tao,0,0)  
+SupportDataInitialValues(0,0,CSupportLevel,0,0)
+SupportDataGrowths(20,30,40,0,0)
+SupportCountAmount(3)
+
+// ch8
+
+ALIGN 4
+NoraSupportPointer:
+SupportDataCharacters(Hans,Iberis,Ichwep,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+HansSupportPointer:
+SupportDataCharacters(Nora,Iberis,Milo,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+// ch9
+
+ALIGN 4
+MeldanSupportPointer:
+SupportDataCharacters(Jenny,Volran,Tippany,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,80,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+JennySupportPointer:
+SupportDataCharacters(Tao,Meldan,Zhara,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,30,80,0,0)
+SupportCountAmount(3)
+
+// ch10
+
+ALIGN 4
+HornetSupportPointer:
+SupportDataCharacters(Valse,Nahiza,Shaw,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(30,40,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+ValseSupportPointer:
+SupportDataCharacters(Hornet,Carl,Buldak,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+// ch11
+
+ALIGN 4
+IchwepSupportPointer:
+SupportDataCharacters(Milo,Nora,Mantou,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+MiloSupportPointer:
+SupportDataCharacters(Ichwep,Hans,Pelecaye,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+// ch12
+
+ALIGN 4
+MinkSupportPointer:
+SupportDataCharacters(KwameReal,Cadenza,Augur,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(40,30,40,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+TiberiusSupportPointer:
+SupportDataCharacters(Mira,Iskra,Ojasvi,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,40,80,0,0)
+SupportCountAmount(3)
+
+// ch12x
+
+ALIGN 4
+EllereySupportPointer:
+SupportDataCharacters(Darby,Jacinth,Zwieback,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+MantouSupportPointer:
+SupportDataCharacters(Ichwep,Alex,Leina,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+TippanySupportPointer:
+SupportDataCharacters(Matthias,Fangai,Meldan,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+PelecayeSupportPointer:
+SupportDataCharacters(Milo,Axel,Darcy,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+CarlSupportPointer:
+SupportDataCharacters(Valse,Asha,Sera,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,40,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+TakaiSupportPointer:
+SupportDataCharacters(Tobie,Mish,Shaw,0,0)  
+SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(30,30,80,0,0)
+SupportCountAmount(3)
+
+// ch13
+
+ALIGN 4
+DarbySupportPointer:
+SupportDataCharacters(Ellerey,Jacinth,Cleo,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,30,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+JacinthSupportPointer:
+SupportDataCharacters(Ellerey,Darby,Apsis,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(30,30,80,0,0)
+SupportCountAmount(3)
+
+// ch14
+
+ALIGN 4
+NahizaSupportPointer:
+SupportDataCharacters(Rashid,Hornet,Jerry,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,40,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+AugurSupportPointer:
+SupportDataCharacters(Rashid,CatrinReal,Mink,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,80,40,0,0)
+SupportCountAmount(3)
+
+// ch15
+
+ALIGN 4
+IlseSupportPointer:
+SupportDataCharacters(Matthias,Delilah,Ojasvi,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,40,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+AshaSupportPointer:
+SupportDataCharacters(Loewe,Carl,Ojasvi,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,40,80,0,0)
+SupportCountAmount(3)
+
+// ch16
+
+ALIGN 4
+RashidSupportPointer:
+SupportDataCharacters(Nahiza,Augur,Nikolas,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,40,40,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+KofiSupportPointer:
+SupportDataCharacters(Cadenza,Nikolas,KwameReal,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,40,40,0,0)
+SupportCountAmount(3)
+
+// ch17
+
+ALIGN 4
+NikolasSupportPointer:
+SupportDataCharacters(Awa,Rashid,Kofi,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,40,40,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+KwameSupportPointer:
+SupportDataCharacters(Mink,Kofi,CatrinReal,Ngondala,0)  
+SupportDataInitialValues(CSupportLevel,0,CSupportLevel,CSupportLevel,0)
+SupportDataGrowths(40,40,80,80,0)
+SupportCountAmount(4)
+
+// ch18
+
+ALIGN 4
+SeraSupportPointer:
+SupportDataCharacters(Shaw,Alena,Carl,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(40,80,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+ShawSupportPointer:
+SupportDataCharacters(Sera,Hornet,Takai,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(40,80,80,0,0)
+SupportCountAmount(3)
+
+// ch18x
+
+ALIGN 4
+TaoSupportPointer:
+SupportDataCharacters(Buldak,Loewe,Jenny,0,0)  
+SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(40,40,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+DarcySupportPointer:
+SupportDataCharacters(Pelecaye,Locke,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)
+
+ALIGN 4
+ApsisSupportPointer:
+SupportDataCharacters(Jacinth,Groto,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)
+
+ALIGN 4
+ZharaSupportPointer:
+SupportDataCharacters(Jenny,Svetomir,Awa,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+OjasviSupportPointer:
+SupportDataCharacters(Ilse,Tiberius,Asha,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+GrotoSupportPointer:
+SupportDataCharacters(Longxia,Apsis,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(40,80,0,0,0)
+SupportCountAmount(2)
+
+// ch19
+
+ALIGN 4
+VolranSupportPointer:
+SupportDataCharacters(Tara,Meldan,0,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(40,80,0,0,0)
+SupportCountAmount(2)
+
+ALIGN 4
+TaraSupportPointer:
+SupportDataCharacters(Volran,Mish,0,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(40,80,0,0,0)
+SupportCountAmount(2)
+
+// ch20
+
+ALIGN 4
+JerrySupportPointer:
+SupportDataCharacters(Lyre,Nahiza,0,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)
+
+ALIGN 4
+LyreSupportPointer:
+SupportDataCharacters(Jerry,Cleo,0,0,0)  
+SupportDataInitialValues(CSupportLevel,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)
+
+// ch21
+
+ALIGN 4
+NgondalaSupportPointer:
+SupportDataCharacters(Leina,KwameReal,Locke,0,0)  
+SupportDataInitialValues(0,CSupportLevel,0,0,0)
+SupportDataGrowths(80,80,80,0,0)
+SupportCountAmount(3)
+
+ALIGN 4
+CatrinSupportPointer:
+SupportDataCharacters(Loewe,KwameReal,Augur,0,0)  
+SupportDataInitialValues(BSupportLevel,CSupportLevel,0,0,0)
+SupportDataGrowths(40,80,80,0,0)
+SupportCountAmount(3)
+
+// ch22
+
+ALIGN 4
+LockeSupportPointer:
+SupportDataCharacters(Ngondala,Darcy,0,0,0)  
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)
+
+ALIGN 4
+TrajanSupportPointer:
+SupportDataCharacters(Mira,BoroReal,0,0,0)  
+SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)
+
+// ch23
+
+ALIGN 4
+EliasSupportPointer:
+SupportDataCharacters(Cleo,Varga,0,0,0)  
+SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
+SupportDataGrowths(30,30,0,0,0)
+SupportCountAmount(2)
+
+ALIGN 4
+BoroSupportPointer:
+SupportDataCharacters(TrajanReal,Mira,0,0,0)  
+SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
+SupportCountAmount(2)

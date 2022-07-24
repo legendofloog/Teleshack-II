@@ -4,14 +4,34 @@
 #define setCustomSpell_dim(index) "PUSH; ORG SpellTable+(index*4); POIN CSAEngine_Dim|1; POP"
 #define setCustomSpell_nodim(index) "PUSH; ORG SpellTable+(index*4); POIN CSAEngine_NoDim|1; POP"
 
+#define SpellTable $5d4e60
+
+
 ALIGN 4
 #inctext lyn "SpellFix.elf" "SpellFixHook.elf" //Fix dodge to front glitch (thanks Snakey1)
 
-SpellTable: //courtesy of LoA buildfile (thanks Snek)
+
+
+/*
+PUSH
+ORG SpellTable
+POIN NewSpellTable
+POP
+
+ALIGN 4
+NewSpellTable: //courtesy of LoA buildfile (thanks Snek)
 #incbin "RepointedSpellTable.dmp"
+*/
+
+PUSH
+ORG SpellTable
+#incbin "RepointedSpellTable.dmp"
+POP
+
 
 
 #define CSATable $EF2F20 //CHANGE THIS TO A LOCATION WHERE YOU KNOW THERE ARE 0x13EC BYTES OF FREE SPACE
+
 PUSH
 ORG CSATable
 #incbin "BlankCSATable.dmp"

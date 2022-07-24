@@ -562,7 +562,7 @@ CheckUnitDeadOrJailed(Mira)
 BNE 435 s0 sC // branches = not alive/present
 	MOVE 15 MiraCopy [19,12]
 LABEL 435
-MUSC 0x7FFF
+FadeOutMusic
 FADI 15
 ENUN
 CheckUnitDeadOrJailed(Mira)
@@ -598,7 +598,20 @@ MUSC FE5_InTheBattle_Fate
 BROWNBOXTEXT SomeTimeLaterText[8,8]
 FlashCursor(Trajan,60)
 Text(Ch5xStrategyRoom)
+MOVE 15 Cleo [8,9]
+MOVE 15 Loewe [6,9]
+STAL 60
+HIDEUNIT Cleo
+HIDEUNIT Loewe
+MOVE 15 Kwame [8,9]
+MOVE 15 Trajan [6,9]
+STAL 60
+REMOVEUNIT Kwame
+REMOVEUNIT Trajan
+ENUN
 FADI 15
+SHOWUNIT Cleo
+SHOWUNIT Loewe
 RemoveAll
 TILEREVERT 0
 ENUN
@@ -631,7 +644,7 @@ ENDA
 
 EndingScene:
 ENUT 0x84 //removes boss icons/talk icons etc
-MUSC 0x7FFF
+FadeOutMusic
 FADI 15
 RemoveAll
 SHOWUNIT Loewe
@@ -650,6 +663,7 @@ SET_CONDITION Cleo
 FlashCursor(Trajan,60)
 Text(Ch5xLoeweCleoTrajanTalk2)
 FADI 15
+FadeOutMusic
 RemoveAll
 LOMA Ch5xGechrysos
 LOAD1 1 GechrysosCutsceneGroup
@@ -697,7 +711,7 @@ Text(Ch5xEliasCoraliaTalk)
 MOVE 15 Helman [0,11]
 ENUN
 REMOVEUNIT Helman
-STAL 10
+STAL 30
 Text(Ch5xCoraliaEndingText)
 FADI 5
 ENUF 0x84 //brings back boss icons/talk icons etc

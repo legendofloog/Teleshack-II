@@ -122,6 +122,7 @@
 [LoadTao] = [LoadFace][0x5E][0x1]
 [LoadElias] = [LoadFace][0xB][0x1]
 [LoadCoralia] = [LoadFace][0xD][0x1]
+[LoadAsha] = [LoadFace][0xA4][0x1]
 
 [LoadLeonidas] = [LoadFace][0x1D][0x1]
 [LoadRadnitz] = [LoadFace][0x12][0x1]
@@ -192,7 +193,6 @@
 [LoadMihail] = [LoadFace][0xFD][0x1]
 [LoadSaif] = [LoadFace][0xFE][0x1]
 [LoadMysteryMug] = [LoadFace][0x3D][0x1]
-[Load
 [LoadDanu] = [LoadFace][0x3A][0x1]
 [LoadTheimon] = [LoadFace][0x3B][0x1]
 [LoadPerihelios] = [LoadFace][0x3C][0x1]

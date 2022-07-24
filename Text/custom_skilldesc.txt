@@ -1,11 +1,10 @@
 ## SD_Culling
-Culling: If foe's HP is full, deals damage[N]
-equal to 25% of foe's max HP.[X]
+Culling: If foe's HP is full, deals[N]
+25% of foe's max HP as extra damage.[X]
 
 ## SD_Headshot
 Headshot: If foe's HP is not full, deals[N]
-execute damage equal to 50% of foe's[N]
-missing HP.[X]
+50% of foe's missing HP as extra damage.[X]
 
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]

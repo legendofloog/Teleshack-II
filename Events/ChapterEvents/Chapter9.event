@@ -97,7 +97,7 @@ UNIT
 
 EnemyUnits:
 //Boss
-UNIT Wrathgar Warrior 0x0 Level(3,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [Greatbow,SteelAxe] AttackInRangeAI
+UNIT Wrathgar Warrior 0x0 Level(1,Enemy,False) [20,3] 0x0 0x0 0x0 0x0 [Greatbow,SteelAxe] AttackInRangeAI
 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [1,4] 0x0 0x0 0x0 0x0 [IronBow]TwoActionAI 
 UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]TwoActionAI 

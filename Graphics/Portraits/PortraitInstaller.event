@@ -79,6 +79,7 @@
 #define MarynMug 0xFA
 #define ViktorMug 0xFB
 #define AthanasiusMug 0x35
+#define AshaMug 0xA4
 
 // NPCs
 #define EliasMug 0xB
@@ -182,11 +183,11 @@ setMugEntry(SvetomirMug, SvetomirMugData, 3, 5, 3, 3)
 
 ALIGN 16
 AlenaMugData:
-#incbin "Dmp/Alena(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Alena(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Alena(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Alena(Laurent_Lacroix)_minimug.dmp"
-setMugEntry(AlenaMug, AlenaMugData, 3, 6, 3, 4)
+#incbin "Dmp/Alena(Relic, sdaht)_mug.dmp"
+#incbin "Dmp/Alena(Relic, sdaht)_frames.dmp"
+#incbin "Dmp/Alena(Relic, sdaht)_palette.dmp"
+#incbin "Dmp/Alena(Relic, sdaht)_minimug.dmp"
+setMugEntry(AlenaMug, AlenaMugData, 2, 6, 3, 4)
 
 ALIGN 16
 LoeweMugData:
@@ -1244,3 +1245,11 @@ CherneMugData:
 #incbin "Dmp/Cherne(devisio,epicer)_palette.dmp"
 #incbin "Dmp/Cherne(devisio,epicer)_minimug.dmp"
 setMugEntry(CherneMug, CherneMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AshaMugData:
+#incbin "Dmp/Asha (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Asha (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Asha (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Asha (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(AshaMug, AshaMugData, 3, 7, 3, 5)

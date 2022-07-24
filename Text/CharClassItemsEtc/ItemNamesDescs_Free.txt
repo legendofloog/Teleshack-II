@@ -643,7 +643,7 @@ A mighty magic axe gifted by Mihail.[X]
 Black Anklet[X]
 
 ## BlackAnkletDesc
-+5 Str/Mag. Reduces HP by 10 after[N]
++4 Str/Mag, +2 Def/Res. -10 HP after[N]
 combat. Min. HP after this effect is 1.[X]
 
 ## BoltbrandName
@@ -752,9 +752,8 @@ Orfeas's Strength to magic attacks.[X]
 ## ApotheosisName
 Apotheosis[X]
 
-## ApotheosisDesc
-Apsis unleashed! Activate all mainhand[N]
-and offhand abilities automatically.[X]
+## ApotheosisDesc ^
+[LockIcon]Apsis. Enables all mainhand/offhand skills.[X]
 
 ## ByelensBellName ^
 Byelen's Bell[X]
@@ -787,3 +786,7 @@ Self and allies can move through enemies.[X]
 
 ##RagnarokFortuneDesc ^
 Self and allies cannot be critically hit.[X]
+
+## VulneraryDesc
+A medicinal solution used to heal[N]
+minor wounds. Heals up to 15 HP.[X]

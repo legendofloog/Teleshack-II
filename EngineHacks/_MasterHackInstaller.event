@@ -135,9 +135,6 @@ POP
   
   //Item Effect Revamp by Teraspark
   #include "Necessary/ItemEffectRevamp/IERevamp_Installer.event"
-
-  //Stairs
-  #include "ExternalHacks/Stairs/Stairs.event"
   
   //Durability-Based Items, for Skill Scrolls
   #include "Necessary/DurabilityBasedItems/DurabilityBasedItems.event"
@@ -168,29 +165,7 @@ POP
   #include "Necessary/Popups.event"
   
   #include "Necessary/CalcLoops/CalcLoops.event"
-
-  #ifdef STAIRS_ASM
-    #ifndef USE_SAVE_EXPANSION
-	  #define USE_SAVE_EXPANSION // Force use of EMS with Stairs (for saving the stair debuff byte in suspend).
-	#endif // USE_SAVE_EXPANSION
-  #endif // STAIRS_ASM
   
-  // Save/Suspend Expansion
-  #ifdef USE_SAVE_EXPANSION
+  //#include "Necessary/ExpandedModularSave/ExModularSaveFatigue.event"
+  #include "Necessary/ExpandedModularSave/ExModularSaveFatigue200Items.event" // commented out until we're done since it breaks saves
 
-    // Use new EMS-based expansion
-
-    MESSAGE "Using EMS Save/Suspend Expansion"
-
-    #include "Necessary/ExpandedModularSave/ExModularSaveFatigue.event"
-    //#include "Necessary/ExpandedModularSave/ExModularSaveFatigue200Items.event"
-
-  #else // USE_SAVE_EXPANSION
-
-    // Use legacy suspend expansion (for compatibility)
-
-    MESSAGE "Using Legacy Suspend Expansion"
-
-    #include "Necessary/SuspendDebuffs/SuspendExpansion.event"
-
-  #endif // USE_SAVE_EXPANSION

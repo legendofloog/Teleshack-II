@@ -11,6 +11,8 @@
 #include "ItemIcons/MasterItemIconsInstaller.event"
 #include "StatusScreen/Installer.event"
 #include "Backgrounds/BackgroundInstaller.event"
+#include "TitleScreen/TitleScreen.event"
+#include "BattleFrame/BattleFrameInstaller.event"
 
 PUSH // menu palettes from pandan
 ORG $5B6BB4 //palette 1 (blue)

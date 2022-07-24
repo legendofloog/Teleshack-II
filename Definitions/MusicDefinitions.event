@@ -52,6 +52,8 @@
 
 #define GuardianSignsLegendary 0x12D
 
+//2ca, 2cb used
+
 #define Sheep_Will_Sleep 0x26D
 #define Core 0x26E
 #define WhyAreWeWithoutHopeID 0x26f
@@ -68,6 +70,7 @@
 #define FF5_BattleOnTheBigBridgeID 0x277
 
 #define KwameID 0x278
+#define TheQuestForRudrasMines 0x43
 
 #define VsJuliusID 0x279
 #define RoarOfDomainID 0x27A

@@ -136,16 +136,24 @@ void CheckIfTileChangeTriggered(){
 }
 
 void CheckIfTargetUnitWasCaptured(){
-    BattleUnit* target = &gBattleTarget;
-    if(target->unit.state & US_DEAD){ //pretty sure captured units aren't considered dead?
-        gEventSlot[0xC] = 0; //return false in 0xC
+    if(gBattleTarget.unit.curHP == 0 && gBattleTarget.unit.state & US_RESCUED){ //pretty sure captured units are technically being rescued?
+        gEventSlot[0xC] = 1; //no HP + rescued = captured (on old implementation of capture)
         return;
     }
-    gEventSlot[0xC] = 1; //0 HP + not dead? should be captured
+    gEventSlot[0xC] = 0; //0 HP and not rescued? they dead
     return;
 }
 
 int GetUnitMagBy2Range(const Unit* unit) {
     int result = (unit->mag / 2) + 5;
     return result;
+}
+
+void GiveBlueUnitItemAfterCombat(){ //s1 = item id
+    if (UNIT_FACTION(&gBattleTarget.unit) == UA_BLUE){
+        
+    }
+    if (UNIT_FACTION(&gBattleActor.unit) == UA_BLUE){
+        
+    }
 }

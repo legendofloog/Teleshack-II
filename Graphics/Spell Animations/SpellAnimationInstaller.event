@@ -1,20 +1,20 @@
 // Spells
-#define Sagittae_index 0x48
+#define Saggitae_index 0x48 //yes i know it's misspelled lol
 #define Wind_index 0x49
 #define Meteor_index 0x4A
+#define Inferno_index 0xD
+#define Thoron_index 0x39
+#define AbsoluteZero_index 0x10
+#define Brenthunder_index 0x11
+#define AraiGale_index 0x12
+#define StoneSword_index 0x14
+#define DancingSword_index 0x18
+#define Jormungand_index 0x1C
+#define Arachnid_index 0x21
+#define Sink_index 0x23
+#define SpellMirror_index 0x36
+#define Malkhut_index 0x38
 #define Bolganone_index 0x4B
-#define Inferno_index 0x4C
-#define Thoron_index 0x4D
-#define AbsoluteZero_index 0x4E
-#define Brenthunder_index 0x4F
-#define AraiGale_index 0x50
-#define StoneSword_index 0x51
-#define DancingSword_index 0x52
-#define Jormungand_index 0x53
-#define Arachnid_index 0x54
-#define Sink_index 0x55
-#define SpellMirror_index 0x56
-#define Malkhut_index 0x57
 
 #include "CSA System FE8/Master Spell Animation Installer.event"
 
@@ -22,7 +22,6 @@
 #include "Event/Saggitae.event"
 #include "Event/Wind.event"
 #include "Event/Meteor.event"
-#include "Event/Bolganone.event"
 #include "Event/Inferno.event"
 #include "Event/Thoron.event"
 #include "Event/AbsoluteZero.event"
@@ -35,7 +34,7 @@
 #include "Event/SpellMirror.event"
 #include "Event/Malkhut.event"
 #include "Event/AraiGale.event"
-
+#include "Event/Bolganone.event"
 
 
 
@@ -46,7 +45,6 @@ sagittae - hypergammaspaces
 meteor - Blazer, Jubby
 inferno/burn - Teraspark
 wind - Arch
-bolganone - Mikey Seregon
 Thoron - Arch
 Stormbound, Brenthunder - Arch
 Faith's Wind, Arai's Gale - Blazer, BwdYeti
@@ -58,6 +56,7 @@ Arachnid - Arch
 Sink - Arch
 Spell Mirror - Mikey Seregon
 Malkhut - Arch
+Tornado - Arch
 */
 
 

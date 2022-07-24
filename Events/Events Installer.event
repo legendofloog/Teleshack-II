@@ -2,8 +2,6 @@ ALIGN 4
 #include "Macros.event"
 ALIGN 4
 #include "Escape Points.event"
-ALIGN 4
-#include "GiveAllEvents.event"
 
 #include "ChapterEvents/ChapterEventsInstaller.event"
 

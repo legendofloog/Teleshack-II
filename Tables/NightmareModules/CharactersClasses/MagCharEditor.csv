@@ -49,7 +49,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x2F Nikolas,4,55
 0x30 Sera,0,5
 0x31 Shaw,4,15
-0x32 Apsis,7,88
+0x32 Apsis,7,44
 0x33 Ojasvi,3,35
 0x34 Darcy,0,5
 0x35 Groto,0,90
@@ -72,7 +72,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x46 BarodReal,10,40
 0x47 TarajiReal,9,20
 0x48 Cherne,12,200
-0x49,3,5
+0x49 Asha,8,45
 0x4A Elias (Ch10),0,10
 0x4B Eitha (Ch 6),13,5
 0x4C Hamdi (Ch16),8,5
@@ -100,7 +100,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x62 Saif's ,0,0
 0x63 Conscript,0,0
 0x64 Hunter,0,0
-0x65 Kwame,0,0
+0x65 Kwame,13,55
 0x66 Trajan,0,10
 0x67 Bandit (Unused?),0,0
 0x68 Emory,0,0

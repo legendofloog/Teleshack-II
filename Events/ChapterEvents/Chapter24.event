@@ -156,7 +156,7 @@ UNIT Perihelios Sage   0x0 Level(7,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [Lightnin
 UNIT
 
 LeonidasByelenGroup:
-UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [Predestination] NoAI
+UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [14,12] 0x0 0x0 0x0 0x0 [Predestination] NoAI
 UNIT Ch2_Selese_Guy GoldKnight_Dismounted 0x0 Level(15,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
 UNIT
 
@@ -270,6 +270,7 @@ BeginningScene:
 LOMA Ch5xGechrysos
 CAMERA [0,0]
 LOAD1 1 LeonidasByelenGroup
+ENUN
 TEXTSTART
 TEXTSHOW Ch24_Leonidas
 TEXTEND
@@ -520,6 +521,7 @@ LOAD1 1 AntechamberEnemies
 ENUN
 LOAD1 1 Devisio
 ENUN
+REMOVEUNIT CoraliaReal
 GotoPrepScreen
 ENDA
 

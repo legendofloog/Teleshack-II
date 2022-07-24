@@ -1,0 +1,41 @@
+PUSH
+ORG $B674C
+POIN NewEndingWithdrawalTable
+ORG $B6728
+POIN NewEndingTitleTable
+ORG $A3D1A8
+POIN NewEndingsTable
+ORG $A3D1AC
+POIN NewEndingsTable
+POP
+
+#define RetreatDesignationTrue 2
+#define RetreatDesignationFalse 0
+#define EndingRetreatTableEntry(charID) "BYTE charID RetreatDesignationTrue 0 0"
+#define EndingNoRetreatTableEntry(charID) "BYTE charID RetreatDesignationFalse 0 0"
+#define EndingWithrawalTableTerminator "BYTE 0 0 0 0"
+
+
+#define EndingTitleTableEntry(charID, textID) "BYTE charID 0 0 0; SHORT textID 0"
+#define EndingTitleTableTerminator "BYTE 0 0 0 0; SHORT 0 0"
+
+#define SoloEnding 1
+#define PairedEnding 2
+#define PairedEndingTableEntry(charID1,charID2,textID) "BYTE PairedEnding charID1 charID2 0; SHORT textID 0"
+#define SoloEndingTableEntry(charID, textID) "BYTE SoloEnding charID 0 0; SHORT textID 0"
+#define EndingTableTerminator "BYTE 0 0 0 0; SHORT 0 0"
+
+NewEndingWithdrawalTable:
+EndingNoRetreatTableEntry(Cleo)
+EndingNoRetreatTableEntry(Loewe)
+EndingNoRetreatTableEntry(Mira)
+EndingWithrawalTableTerminator
+
+NewEndingTitleTable:
+EndingTitleTableEntry(Cleo, $7D7)
+EndingTitleTableTerminator
+
+ALIGN 4
+NewEndingsTable:
+SoloEndingTableEntry(Cleo, $7D8)
+EndingTableTerminator

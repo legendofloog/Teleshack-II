@@ -363,13 +363,6 @@ LongBallistaStanding:
 #incbin "Dmp/Ballistician (U) {Aruka, Kenpuhu}-stand.dmp"
 
 ALIGN 4
-DismountedStanding:
-#incbin "Dmp/Lord (M) Roy T1 Generic {AnnoyingAnon}-stand.dmp"
-ALIGN 4
-DismountedMoving:
-#incbin "Dmp/Lord (M) Roy T1 Generic {AnnoyingAnon}-move.dmp"
-
-ALIGN 4
 LoeweStanding:
 #incbin "Dmp/Loewe_Dismounted_Standing(ArcherBias).dmp"
 ALIGN 4

@@ -3,6 +3,8 @@
 //Equipment//
 /////////////
 
+
+
 #include "src/Equip.lyn.event"
 
 // add prEquipmentBonus to each stat getter

@@ -37,7 +37,7 @@ SHORT 3; BYTE 14 0x86; POIN SpellMirror_objimg_0; WORD 168 336; POIN SpellMirror
 SHORT 20; BYTE 15 0x86; POIN SpellMirror_objimg_0; WORD 180 360; POIN SpellMirror_bgImage_0 SpellMirror_objPalette SpellMirror_bgPalette_0 SpellMirror_TSA_0
 WORD 0x85000040
 SHORT 20; BYTE 16 0x86; POIN SpellMirror_objimg_0; WORD 192 384; POIN SpellMirror_bgImage_0 SpellMirror_objPalette SpellMirror_bgPalette_0 SpellMirror_TSA_0
-WORD 0x8502c448
+WORD 0x8502c148
 SHORT 3; BYTE 17 0x86; POIN SpellMirror_objimg_0; WORD 204 408; POIN SpellMirror_bgImage_15 SpellMirror_objPalette SpellMirror_bgPalette_15 SpellMirror_TSA_15
 SHORT 3; BYTE 18 0x86; POIN SpellMirror_objimg_0; WORD 216 432; POIN SpellMirror_bgImage_16 SpellMirror_objPalette SpellMirror_bgPalette_16 SpellMirror_TSA_16
 SHORT 3; BYTE 19 0x86; POIN SpellMirror_objimg_0; WORD 228 456; POIN SpellMirror_bgImage_17 SpellMirror_objPalette SpellMirror_bgPalette_17 SpellMirror_TSA_17

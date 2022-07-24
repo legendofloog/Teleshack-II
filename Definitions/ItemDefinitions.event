@@ -240,9 +240,9 @@
 #define HoplonGuard 0xE8
 #define IronRune 0xE8
 #define Swordreaver 0xE9
-#define Swordslayer 0xE9
 #define BladeCrusher 0xE9
 #define Bladecrusher 0xE9
+#define Swordslayer 0xE9
 #define Shieldbearer 0xEA
 #define Malkhut 0xEB
 #define Malkuth 0xEB

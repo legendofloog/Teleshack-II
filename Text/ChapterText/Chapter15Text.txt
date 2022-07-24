@@ -8,6 +8,10 @@ Capture[X]
   Capture Coralia  [N]
 before she escapes.[X]
 
+## AshaJoins
+[MidLeft][LoadAsha]
+placeholder[A][X]
+
 ## Ch15FreeingTheStranger
 [MidLeft][LoadStranger]
 [MidRight][LoadActive]

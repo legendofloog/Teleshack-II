@@ -6,6 +6,9 @@
 #include "InterludeUnitsTable.event"
 #include "SoundRoomInstaller.event"
 #include "Guide.event"
+#include "EndingsTables.event"
+#include "SupportPointersTable.event"
+#include "SupportConvosTable.event"
 
 ALIGN 4
 BattleQuoteTable:

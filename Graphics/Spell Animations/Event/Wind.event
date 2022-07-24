@@ -27,7 +27,7 @@ WORD 0x85000000
 WORD 0x85061029
 WORD 0x85000153
 SHORT 3; BYTE 0 0x86; POIN Wind_objimg_0; WORD 0 0; POIN Wind_bgImage_0 Wind_objPalette Wind_bgPalette_0 Wind_TSA_0
-WORD 0x85011e48
+WORD 0x85012248
 SHORT 3; BYTE 1 0x86; POIN Wind_objimg_0; WORD 12 24; POIN Wind_bgImage_1 Wind_objPalette Wind_bgPalette_1 Wind_TSA_1
 WORD 0x85061029
 SHORT 3; BYTE 2 0x86; POIN Wind_objimg_0; WORD 24 48; POIN Wind_bgImage_2 Wind_objPalette Wind_bgPalette_2 Wind_TSA_2

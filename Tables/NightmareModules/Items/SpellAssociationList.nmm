@@ -1,57 +1,73 @@
-#by Zeld, Nintenlord
-#fe8 ver by Vennobennu
 1
-FE8 Spell Association Editor by Vennobennu
+Spell Association List Editor by Sme
 0x8AFBD8
-161
+162
 16
 NULL
 NULL
 
-Weapon
+Item ID
 0
-2
-NDHU
-Item List.txt
-
-No. of Chars to Display (1 or 2)
-2
-2
-NEDU
+1
+NEHU
 NULL
 
-Ranged Animation to Use
+N/A
+1
+1
+NEHU
+NULL
+
+Chars to Display (1 or 2)
+2
+1
+NEHU
+NULL
+
+N/A
+3
+1
+NEHU
+NULL
+
+Spell Animation
 4
-1
-NDHU
-FE8_Ranged_Attack_Animations.txt
+2
+NEHU
+NULL
 
-Ranged Animation Enabled
-5
-1
-NDHU
-OnOff.txt
+N/A
+6
+2
+NEHU
+NULL
 
-Alternate Pointer
+Map Effect Proc
 8
 4
 NEHU
 NULL
 
-Return to original position (map)
+Damage
 12
 1
-NDHU
-Returning.txt
+NEHU
+NULL
 
-Facing position (map)
+Facing Direction (Map)
 13
 1
-NDHU
-Facing.txt
+NEHU
+NULL
 
-Enemy's flashing colour (map)
+Color When Hit
 14
 1
-NDHU
-Enemy flash.txt
+NEHU
+NULL
+
+N/A
+15
+1
+NEHU
+NULL
