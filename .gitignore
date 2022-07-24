@@ -51,6 +51,8 @@ __pycache__
 
 # Thumbnails
 ._*
+Thumbs.db
+Thumbs.db:encryptable
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
