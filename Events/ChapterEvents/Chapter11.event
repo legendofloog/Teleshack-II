@@ -183,7 +183,7 @@ ENDA
 	
 EndingScene:
 SetBackground(0x2A)
-MUSC SheenaID
+MUSC FF5_Nostalgia
 Text(Ch11End_MainScene)
 LABEL 2
 CHECK_EVENTID 0xD //did one of the sisters die

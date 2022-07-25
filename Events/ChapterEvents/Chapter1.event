@@ -515,6 +515,7 @@ BNE 2 s0 sC
 	BEQ 57 s0 sC //if she's not removed, branch; if so, play captured dialogue
 		Text(EndingSceneTextLoeweAndCleoIskraCaptured)
 		GiveItem(Kaiserschwert_Fake,Loewe)
+		GOTO 907
 	LABEL 57 
 	Text(EndingSceneTextLoeweAndCleoIskraAlive1)
 	SPAWN_ALLY Iskra [20,16]
