@@ -241,9 +241,9 @@ CamOff
 ENDA
 
 Reinforcements_A:
-UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [18,0] 0x0 0x0 0x0 0x0 [Longlance] TwoActionAI
-UNIT Cythes DukeKnight Eleanor Level(7,Enemy,True) [20,0] 0x0 0x0 0x0 0x0 [BraveLance] TwoActionAI
-UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [22,0] 0x0 0x0 0x0 0x0 [BoldCleaver] TwoActionAI
+UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [18,0] 0x0 0x0 0x1 REDA18R0 [Longlance] TwoActionAI
+UNIT Cythes DukeKnight Eleanor Level(7,Enemy,True) [20,0] 0x0 0x0 0x1 REDA20R0 [BraveLance] TwoActionAI
+UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [22,0] 0x0 0x0 0x1 REDA22R0 [BoldCleaver] TwoActionAI
 UNIT 
 
 Reinforcements_Spawn_A:
