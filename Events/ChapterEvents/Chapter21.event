@@ -45,6 +45,7 @@ LocationBasedEvents:
 	House(0xA,TemurVillage,14,37)
 	House(0xB,SultaiVillage,23,19)
 	House(0xD,NgondalaVillage,1,38)
+	//Seize(3,36)
 END_MAIN
 
 Dunno1:
@@ -387,7 +388,7 @@ NoFade
 ENDA
 
 EndingScene:
-SetFlag(0x19)
+SetFlag(0x20)
 SetFlag(0x01)
 FadeOutMusic
 FadeToBlack

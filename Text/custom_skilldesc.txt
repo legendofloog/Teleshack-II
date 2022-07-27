@@ -1,11 +1,10 @@
 ## SD_Culling
-Culling: If foe's HP is full, deals damage[N]
-equal to 25% of foe's max HP.[X]
+Culling: If foe's HP is full, deals[N]
+25% of foe's max HP as extra damage.[X]
 
 ## SD_Headshot
 Headshot: If foe's HP is not full, deals[N]
-execute damage equal to 50% of foe's[N]
-missing HP.[X]
+50% of foe's missing HP as extra damage.[X]
 
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]
@@ -108,43 +107,43 @@ are consecutive, and if enemy is defeated, evade[N]
 fatal attacks until the start of your next turn.[X]
 
 ## SD_Spelltwister *
-Spelltwister: Apsis has access to his arsenal of[N]
-5 personal tomes, each with a mix-and-match[N]
+Spelltwister: Apsis can only use his arsenal of 5[N]
+personal tomes, each tome having a mix-and-match[N]
 'Equip' and 'Off-Hand' (inventory 2nd slot) effect.[X]
 
 ## SD_CrownPyre *
-Crowned Pyre - Equip: Ignores 25% of foe's Res.[N]
-Executes foes below 25% of their max HP.[N]
-Off-Hand: Grants Atk = 25% of foe's missing HP.[X]
+# DPS
+Crowned Pyre - Equip: Deals damage = 25% of[N]
+foe's current HP. Ignores 50% of foe's Res.[N]
+Off-Hand: Grants Atk = weapon range.[X]
 
 ## SD_Stormbreaker *
-Stormbreaker - Equip: Has bonus range. If using[N]
-all move, +30 Hit/Crit (+40 at max range).[N]
+# poke
+Stormbreaker - Equip: Has bonus range. If at[N]
+max range, +30 Hit/Crit (+40 at max move).[N]
 Off-Hand: Grants +3 Hit/Crit per space moved.[X]
 
 ## SD_AbsoluteZero *
+# support
 Absolute Zero - Equip: Foes in 2 spaces suffer[N]
--2 Atk/AS (doubled to -4 if foe is in terrain).[N]
-Off-Hand: Grants +2 Def/Res, +10 Avoid in terrain.[X]
+-2 Atk/AS (tripled to -6 if unit is in terrain).[N]
+Off-Hand: Grants +2 Def/Res, +20 Avoid in terrain.[X]
 
 ## SD_DawnEye *
+# lifesteal
 Eye of Dawn - Equip: Locked at 1 range.[N]
 Restores HP to unit = damage dealt.[N]
 Off-Hand: Restores 7 HP after combat.[X]
 
 ## SD_FaithWind *
-Faith's Wind - Equip: Hit twice at 1 range,[N]
-cancels WT disadvantage at 2 range.[N]
-Off-Hand: Grants AS = weapon range.[X]
+# hit a lot idk
+Faith's Wind - Equip: If Spd is higher, AS +3, and[N]
+if foe can't counter, strike twice.[N]
+Off-Hand: Grants AS +2, cancels WT disadvantage.[X]
 
 ## SD_Telepathy
-Telepathy: +50% Hit/Avo/Crt/C. Avo[N]
+Telepathy: +50 Hit/Avo/Crt/Dodge[N]
 when fighting enemies at 1 range.[X]
-
-## SD_PhaseLeap
-Phase Leap: Tao teleports within a[N]
-4-tile radius and can act after without[N]
-moving, but he cannot move next turn.[X]
 
 ## SD_HypeTrain *
 # make him a shitty armor or inf??? give him shit base spd and growth/bad defenses/high hp???
@@ -173,3 +172,16 @@ Dragon Breath: Fire magic pierces res.[X]
 ## SD_SpurHit
 Spur Hit: Rashid empowers his friends,[N]
 giving +15 Hit to all adjacent units.[X]
+
+## SD_PiercingBolt
+Piercing Bolt: When Viktor attacks with[N]
+thunder magic, he ignores 1/2 enemy Res.[X]
+
+## SD_DragonRage
+Dragon Rage: If the Augur is past her[N]
+fatigue threshold, her attacks[N]
+are brave when initiating.[X]
+
+## SD_Flight
+Flight: Rashid can fly over obstacles[N]
+but takes effective damage from bows.[X]

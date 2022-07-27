@@ -33,6 +33,16 @@ BossBGMEntry(Vinny, awaywithyou)
 BossBGMEntry(Xlea, BattleWithMagus)
 BossBGMEntry(DeathRattle,BattleWithMagus)
 BossBGMEntry(Taraji, SorrowsDistortion)
+BossBGMEntry(C19Mini1, UnfinishedBattleGodSyndrome)
+BossBGMEntry(C19Mini2, UnfinishedBattleGodSyndrome)
+BossBGMEntry(C19Phantom, awaywithyou)
+BossBGMEntry(Mihail,SaturosBattleID)
+BossBGMEntry(Saif,SaturosBattleID)
+BossBGMEntry(Artemis,SaturosBattleID)
+BossBGMEntry(Maryn,SaturosBattleID)
+BossBGMEntry(Viktor,SaturosBattleID)
+BossBGMEntry(KassandraReal,FF5_BattleOnTheBigBridgeID)
+BossBGMEntry(Cherne, VsJuliusID)
 BossBGMTerminator
 
 PUSH

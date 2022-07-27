@@ -1,0 +1,62 @@
+// Spells
+#define Saggitae_index 0x48 //yes i know it's misspelled lol
+#define Wind_index 0x49
+#define Meteor_index 0x4A
+#define Inferno_index 0xD
+#define Thoron_index 0x39
+#define AbsoluteZero_index 0x10
+#define Brenthunder_index 0x11
+#define AraiGale_index 0x12
+#define StoneSword_index 0x14
+#define DancingSword_index 0x18
+#define Jormungand_index 0x1C
+#define Arachnid_index 0x21
+#define Sink_index 0x23
+#define SpellMirror_index 0x36
+#define Malkhut_index 0x38
+#define Bolganone_index 0x4B
+
+#include "CSA System FE8/Master Spell Animation Installer.event"
+
+// "safe" spell anims (work)
+#include "Event/Saggitae.event"
+#include "Event/Wind.event"
+#include "Event/Meteor.event"
+#include "Event/Inferno.event"
+#include "Event/Thoron.event"
+#include "Event/AbsoluteZero.event"
+#include "Event/Brenthunder.event"
+#include "Event/DancingSword.event"
+#include "Event/StoneSword.event"
+#include "Event/Jormungand.event"
+#include "Event/Arachnid.event"
+#include "Event/Sink.event"
+#include "Event/SpellMirror.event"
+#include "Event/Malkhut.event"
+#include "Event/AraiGale.event"
+#include "Event/Bolganone.event"
+
+
+
+/*
+credits
+
+sagittae - hypergammaspaces
+meteor - Blazer, Jubby
+inferno/burn - Teraspark
+wind - Arch
+Thoron - Arch
+Stormbound, Brenthunder - Arch
+Faith's Wind, Arai's Gale - Blazer, BwdYeti
+Absolute Zero, Ice Sword - Golden Sun, Mikey Seregon
+Stone Sword - Bonzai, Blazer
+Dancing Blade - lovemachine, Mikey Seregon, The Big Dededester
+Jormungand - Orihara Saki
+Arachnid - Arch
+Sink - Arch
+Spell Mirror - Mikey Seregon
+Malkhut - Arch
+Tornado - Arch
+*/
+
+

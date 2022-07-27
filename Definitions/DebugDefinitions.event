@@ -27,3 +27,8 @@
 #ifdef _test_ch18x_
 #define _test_
 #endif
+
+//#define _test_ch23_
+#ifdef _test_ch23_
+#define _test_
+#endif

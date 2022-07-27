@@ -63,8 +63,17 @@
 #define Matthias 0x3E
 #define KwameReal 0x3F
 #define Kofi 0x40
-#define TrajanReal 0x5B
-#define Locke 0x5C
+#define TrajanReal 0x41
+#define Locke 0x42
+#define EliasReal 0x43
+#define BoroReal 0x44
+#define Orfeas 0x45
+#define BarodReal 0x46
+#define TarajiReal 0x47
+#define Athanasius 0x48
+#define Athansius 0x48
+#define Asha 0x49
+
 
 
 // Chapter 1 Bosses
@@ -94,12 +103,13 @@
 
 // Chapter 10 stuff
 #define Cidor 0x5A
-#define Johanna 0x49
+#define Johanna 0x5B
 #define Elias 0x4a
 #define SeleseProvoke 0x98
 #define Bandit 0x99
 
 #define Selese 0x6e
+#define SisterSelese 0xf3 // Uses Selese text and used in ch11 for green units
 #define Cythes 0x89
 #define Mahemen 0xA1
 
@@ -205,7 +215,35 @@
 //Chapter 22 Stuff
 #define Eleanor 0xBF
 
-#define Breguet 0x46
+//Chapter 23 Stuff
+#define KassandraReal 0x5C
+#define Artemis 0x5D
+#define Mihail 0x5E
+#define Saif 0x5F
+#define CoraliaReal 0x60
+#define Mihails 0x61
+#define Saifs 0x62
+#define Conscript 0x63
+#define Maryn 0xb9
+#define Viktor 0xba
+
+//Chapter 24 Stuff
+#define Byelen 0xCF
+#define EithaReal 0xD0
+#define HamdiReal 0xD1
+#define Theimon 0xD2
+#define Danu 0xD3
+#define Ch24Phantom 0xD4
+#define Perihelios 0xD5
+
+//Chapter 25 Stuff
+#define Cherne 0xD6
+#define Chapter25Generics 0xD7
+#define Shades 0xD7
+#define EndgameGenerics 0xD7
+#define Houvaina 0xBB
+
+
 #define Bazba 0x48
 #define Entombed_boss 0x49
 #define Saar 0x4A

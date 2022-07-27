@@ -166,19 +166,23 @@ void DismountAllASMC(){
 
 bool DismountTester(Unit* unit, int dismountType){
 	const ClassData* mountedClassData = GetMountedClass(unit);
+	if ((mountedClassData != 0 ) && (dismountType == 0)){
+		if ((unit->pCharacterData->number == 0x1) || (unit->pCharacterData->number == 0xF)){ //loewe or cleo
+			return true;
+		}
+		return false;
+	}
 	if ((mountedClassData != 0 ) && (dismountType == 1) && (mountedClassData->attributes & CA_MOUNTED )){ // checks if mounted class is a horse
 		return true;
 	}
-	if ((mountedClassData != 0) && (dismountType == 2)){ // checks if mounted class is a pegasus OR Loewe's prf classes
-		if (mountedClassData->attributes & CA_PEGASUS){
-			return true;
+	if ((mountedClassData != 0) && (dismountType == 2) && (mountedClassData->attributes & CA_PEGASUS)){ // checks if mounted class is a pegasus OR Loewe's prf classes
+		if ((unit->pCharacterData->number == 0x1) || (unit->pCharacterData->number == 0xF)){ //loewe or cleo
+			return false;
 		}
-		if ((mountedClassData->number == 0x1D) || (mountedClassData->number == 0x1F)){
-			return true;
-		}
+		return true;
 	}
 	if ((mountedClassData != 0) && (dismountType == 3) && (mountedClassData->attributes & CA_WYVERN)){ // checks if mounted class is a dragon AND not Loewe's prf classe
-		if ((mountedClassData->number == 0x1D) || (mountedClassData->number == 0x1F)){
+		if ((unit->pCharacterData->number == 0x1) || (unit->pCharacterData->number == 0xF)){ //loewe or cleo
 			return false;
 		}
 		return true;

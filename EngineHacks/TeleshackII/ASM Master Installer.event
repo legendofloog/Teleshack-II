@@ -1,8 +1,6 @@
 #include "ThraciaASM/ThraciaASMInstaller.event"
 #include "Music/MusicAsmInstaller.event"
 #include "Fixes/MasterFixesInstaller.event"
-
-#include "FE8-Battle_Anims_By_Character/FE8_Battle_Anims_By_Character_EA.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
 
 #include "ASMCCheckSuite/ASMC Check Installer.event"
@@ -28,8 +26,6 @@ ChangeWeaponRankASMC:
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
 #include "Graphics/NosResire/NosResire.event"
-
-#include "Graphics/ForblazeSourcePort/Forblaze Installer.event"
 
 #include "MultiTileMarker/MultiTileMarker_Install.event"
 
@@ -59,7 +55,17 @@ ChangeWeaponRankASMC:
 
 #include "prep_shop_each_chapter2/Installer.event"
 
+#include "Individual animation_ea_2/Installer.event"
+
+#include "SacredWeapons2/weapon_battle_flash.event"
+
+#include "GroupAI/GroupAI.event"
+
+#include "SendInventoryOnDeath/Installer.event"
+
+#include "NewClearUnit/NewClearUnit.event"
 // thief vision set to 0
+#include "FE8U_PrepsAugury-main/PrepsAugury.event"
 
 PUSH
 ORG 0x0178C2
@@ -116,10 +122,10 @@ POP
 */
 
 //default status duration is infinite
-PUSH
-ORG $178EA
-BYTE 0
-POP
+//PUSH
+//ORG $178EA
+//BYTE 2
+//POP
 
 //devil axe backfire to 21 - luck
 PUSH
@@ -154,10 +160,31 @@ POP
 // sets all units after this to use class growths
 PUSH
 ORG $17C4C
-BYTE 0x49 //0x48 being last player unit
+BYTE 0x4A //0x48 being last player unit
 POP
 
-PUSH // removes supports from prep screen
-ORG $954AE
-BYTE 0x1E 0xE0
+//weather graphics priority stuff, locations from zane
+PUSH 
+ORG $30366 // light snow
+BYTE 0xE0
+ORG $3066D // heavy snow
+BYTE 0x18
+ORG 0x59D95F // rain
+BYTE 0x18
+ORG 0x59D967 // rain
+BYTE 0x18
+ORG $3053D // sandstorm
+BYTE 0x18
+POP
+/*
+0x030366 change 80 to 80/A0/C0/E0 light snow
+0x03066D change 10 to 10/14/18/1C heavy snow
+0x59D95F and 0x59D967 change 10 to 10/14/18/1C rain
+0x03053D change 10 to 10/14/18/1C sandstorm
+*/
+
+//Sets Vulnerary HP Recovery to 15hp.
+PUSH
+ORG 0x2FEC6
+BYTE 0x0F
 POP

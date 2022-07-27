@@ -54,6 +54,11 @@ BYTE 00 00
 ALIGN 4
 
 EithaSkillList:
-BYTE 1 PointBlankID
+BYTE 21 PassID
+BYTE 00 00
+ALIGN 4
+
+RashidSkillList:
+BYTE 21 FlightID
 BYTE 00 00
 ALIGN 4

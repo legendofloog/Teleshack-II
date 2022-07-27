@@ -259,3 +259,63 @@
 // ApsisSage
 	setPalette(64,ApsisSage)
 	setCBSP(64,Apsis, 3, Sage)
+
+// TobiePegKnight
+	setPalette(65,TobiePegKnight)
+	setCBSP(65,Tobie,1,PegasusRider)
+
+// TobieDismountedPeg
+	setPalette(66,TobieDismountedPeg)
+	setCBSP(66,Tobie,2,PegasusRider_Dismounted)
+
+// TobieDismountedFalco
+	setPalette(67,TobieDismountedFalco)
+	setCBSP(67,Tobie,3,Falcoknight_Dismounted)
+
+// TobieFalconknight
+	setPalette(68,TobieFalconknight)
+	setCBSP(68,Tobie,4,Falcoknight)
+
+// IberisMageArmor
+	setPalette(69,IberisMageArmor)
+	setCBSP(69,Iberis,1,MageArmor)
+
+// IberisBaron
+	setPalette(70,IberisBaron)
+	setCBSP(70,Iberis,2,Baron)
+
+// DarcyAxeArmor
+	setPalette(71,DarcyAxeArmor)
+	setCBSP(71,Darcy,1,AxeArmor)
+
+// DarcyGeneral
+	setPalette(72,DarcyGeneral)
+	setCBSP(72,Darcy,2,General)
+
+// EllereyLanceArmor
+	setPalette(73,EllereyLanceArmor)
+	setCBSP(73,Ellerey,1,LanceArmor)
+
+// EllereyGeneral
+	setPalette(74,EllereyGeneral)
+	setCBSP(74,Ellerey,2,General)
+
+// CromarHero
+	setPalette(75,CromarHero)
+	setCBSP(75,Cromar,1,Hero)
+
+// LyreDracoknight
+	setPalette(76,LyreDracoknight)
+	setCBSP(76,Lyre,1,Dracoknight)
+
+// LyreDismounted
+	setPalette(77,LyreDismounted)
+	setCBSP(77,Lyre,2,Dracoknight_Dismounted)
+
+// NgondalaBaron
+	setPalette(78,NgondalaBaron)
+	setCBSP(78,Ngondala,1,Baron)
+
+// IskraDismountedMageKnight
+	setPalette(79,IskraDismountedMageKnight)
+	setCBSP(79,Iskra,2,MageKnight_F_Dismounted)

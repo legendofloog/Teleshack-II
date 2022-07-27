@@ -5,7 +5,7 @@ Noble[X]
 Bluebloods that have taken to the field[NL]
 of battle to realize their potential.[X]
 
-## MasterKnightName
+## MasterKnightName ^
 Master Knight[X]
 
 ## MasterKnightDesc
@@ -28,8 +28,8 @@ Bow Knight[X]
 Skilled horsemen that take advantage[N]
 of their mobility on the battlefield.[X]
 
-## ForrestKnightName
-Scout Knight[X]
+## ForrestKnightName ^
+Forrest Knight[X]
 
 ## GreatKnightName
 Great Knight[X]
@@ -192,7 +192,7 @@ Mage Knight[X]
 
 ## MageKnightDesc
 Pragmatic magi that traded deeper[N]
-understanding for greater mobility.[X]
+understanding for martial strength.[X]
 
 ## HighPriestName
 High Priest[X]

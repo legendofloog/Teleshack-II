@@ -322,7 +322,7 @@ traitors[Beat][CloseEyes][A][X]
 ## PascalDeathQuote
 [MidLeft][LoadPascal]
 Pah, blasted nincompoops[Beat][AN]
-Always have to be the
+Always have to be the[N]
 buzzkills[Beat][CloseEyes][A][X]
 
 ## NahizaDeathQuote
@@ -467,7 +467,7 @@ Loewe[Beat]? Cleo[Beat]? Are you[N]
 two there[Beat]? Save me[Beat][A][CloseEyes][X]
 
 ## MatthiasDeathQuoteText
-[MidRight][LoadFaolan]
+[MidRight][LoadMatthias]
 May our future[N]
 be bathed in light[Beat][A][CloseEyes][X]
 
@@ -522,3 +522,86 @@ Is this the vaunted[N]
 strength of Athanasius?[AN]
 No, impossible[Beat] [HalfCloseEyes]it's the[N]
 strength of mortals[Beat]?[A][X]
+
+## EliasDeathQuoteText
+[MidRight][LoadElias]
+[Beat]Looks like this is the end[N]
+of the line for me, Cleo.[AN]
+I'm leaving the rest[Beat] to you[Beat][CloseEyes][A][X]
+
+## ViktorDeathQuoteText
+[MidRight][LoadViktor]
+Ha[Beat] A fitting way to die[Beat][N]
+Well, Cidor? Are you watching?[AN]
+I was the better man to the end[Beat][CloseEyes][A][X]
+
+## MarynDeathQuoteText
+[MidRight][LoadMaryn]
+My vision[Beat] is fading[Beat][N]
+Cromar[Beat] Where are you?[AN][X]
+
+## OrfeasDeathQuoteText
+[MidRight][LoadOrfeas]
+Coralia[Beat] I'm so sorry[Beat][N]
+I've wasted[Beat] your sacrifice[Beat][A][X]
+
+## BarodRealDeathQuoteText
+[MidRight][LoadBarod]
+Pah, I've grown soft[Beat] I'm[N]
+retreating to the back lines.[A][X]
+
+## TheimonDeathQuoteText
+[MidLeft][LoadTheimon]
+Ridiculous[Beat] I cannot die[N]
+like this[Beat] not so soon[Beat].[AN]
+The immaculate harmony between[N]
+birth and death[Beat] is mine![AN]
+Byelen! My[Beat] domain[Beat]![A][X]
+
+## DanuDeathQuoteText
+[MidLeft][LoadDanu]
+But[Beat] how? Mine are the hands[N]
+that shape the very earth![AN]
+Orodreth[Beat] is the canvas for[N]
+my glorious artwork[Beat] how?[AN]
+How am I bested by[Beat] you[Beat]?[A][X]
+
+## HamdiRealDeathQuoteText
+[MidLeft][LoadHamdi]
+Well fought, Liberators. Now[N]
+you can[Beat] end this charade.[AN]
+Strike him down. I believe in[N]
+you. Make my death count[Beat][A][X]
+
+## EithaRealDeathQuoteText
+[MidLeft][LoadEithaReal]
+No[Beat] I don't want to go[N]
+back[Beat] I want to live![AN]
+I waited for so long to see[N]
+him once again[Beat] and yet[Beat][A][X]
+
+## ByelenDeathQuoteText
+[MidLeft][LoadMysteryMug]
+Y-you[Beat] How[Beat]? You are but[N]
+mortals; sinners like the rest![AN]
+And I[Beat] I am a god![AN]
+Pah[Beat] You will find I am not[N]
+so easily defeated, Liberators.[A][X]
+
+## TarajiRealDeathQuoteText
+[MidLeft][LoadTaraji]
+No! I refuse for this[Beat][N]
+to be the Pitviper's end[Beat][CloseEyes][A][X]
+
+## AthanasiusDeathQuoteText
+[MidLeft][LoadAthanasius]
+[Beat]Rrrr[Beat]my revenge[Beat][CloseEyes][A][X]
+
+## CherneDeathQuoteText
+[MidLeft][LoadCherne]
+How[Beat]how is this possible[Beat]?[N]
+I am Cherne[Beat]knower of all![AN]
+I've followed this plan[N]
+for centuries! [AN]
+Toiled for lifetimes![AN]
+Loewe[Beat]Cleo[Beat] you[Beat][A][X]

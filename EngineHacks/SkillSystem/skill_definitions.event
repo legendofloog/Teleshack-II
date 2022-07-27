@@ -42,11 +42,16 @@
 #define ChargeID 62
 #define AcrobatID 63
 #define SmiteID 76
+#define SwarpID 81
 #define BreathOfLifeID 82
+#define NullifyID 84
 #define FortuneID 85
 #define ShadePlusID 86
 #define ShadeID 87
 #define DeathBlowID 88
+#define OpportunistID 89
+#define PuissanceID 90
+
 
 // keep it continous for debug purpose
 
@@ -90,11 +95,14 @@
 #define WindFaithID 70
 #define SpelltwisterID 71
 #define TelepathyID 72
-#define PhaseLeapID 73
+#define BattleVeteranID 73
 #define AbsoluteZeroTomeID 74
 #define BladeDanceID 75
 #define CleoFanID 77
 #define HypeTrainID 78
 #define FarShockID 79
 #define WhisperWindID 80
-#define BattleVeteranID 89
+#define PiercingBoltID 83
+#define DragonRageID 95
+#define ApotheosisID 96
+#define FlightID 97

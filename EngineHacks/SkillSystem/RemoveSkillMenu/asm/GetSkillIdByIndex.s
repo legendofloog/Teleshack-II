@@ -4,7 +4,8 @@
 	.include "Definitions.inc"
 
 	pExtraItemOrSkill = 0x0202BCDE
-	pBWLTable         = 0x0203E884
+	@ pBWLTable         = 0x0203E884
+	pBWLTable = 0x02026e30
 
 	lpCharSkillTable  = EALiterals+0x00
 	lpClassSkillTable = EALiterals+0x04

@@ -281,7 +281,7 @@ UNIT
 
 GreenUnits:
 UNIT Ellerey LanceArmor Loewe Level(13,NPC,False) [4,2] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
-UNIT Mantou Brigand_F Loewe Level(10,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [IronAxe,SilverAxe,Vulnerary]     NoAI
+UNIT Mantou Brigand_F Loewe Level(10,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [KillerAxe,SilverAxe,Vulnerary]     NoAI
 UNIT Tippany DarkMage_F Loewe Level(6,NPC,False) [12,5] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
 UNIT Trajan Hero Loewe Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT Pelecaye General Loewe Level(1,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
@@ -309,9 +309,11 @@ ENUT 0x8B //loewe eyepatch flag
 Text(Ch12xBeginningScene5)
 HIDEUNIT Cleo
 EraseBackground
+FADI 15
 LOAD1 1 GreenUnits
 LOAD1 2 LoeweInterludeGroup
 ENUN
+FADU 15
 NoFade
 ENDA
 

@@ -24,10 +24,10 @@ bne End
 @check defender's hp >50%
 ldrb r0, [r5,#0x12] @max hp
 ldrb r1, [r5,#0x13] @current hp
-cmp r1, #1 @1hp left?
-ble End
-lsr r0, #1 @max/2
-cmp r1, r0
+@cmp r1, #1 @1hp left?
+@ble End
+@lsr r0, #1 @max/2
+@cmp r1, r0
 @ble End
 
 @check damage >= currhp
@@ -48,7 +48,8 @@ beq End
 @ check global flag
 ldr r0,=#0x8083da8 @CheckEventId
 mov r14,r0
-mov r0,#0xEC
+@mov r0,#0xEC
+mov r0,#0x7C
 .short 0xF800
 cmp r0,#1
 bne End

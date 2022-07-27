@@ -1,63 +1,63 @@
 INLINE MagClassTable,Base Magic,Magic Growth,Magic Cap,Magic Promotion Bonus
 None,0,0,20,0
-Noble,3,10,20,0
-Noble(F),3,10,20,0
-MasterKnight,7,10,20,4
-MasterKnight(F),7,10,20,4
-SwordKnight,0,5,20,0
-LanceKnight,0,5,20,0
-AxeKnight,0,5,20,0
-BowKnight,0,5,20,0
-ArchKnight,1,5,20,1
-ForrestKnight,1,5,20,1
-GreatKnight,1,5,20,1
-DukeKnight,1,5,20,1
-Thief,0,0,20,0
-Manakete,0,0,20,0
-SwordFighter,0,5,20,1
-SwordFighter(F),0,5,20,1
-Hero,1,5,20,1
-Hero (F),1,5,20,1
-Myrmidon,0,5,20,0
-Myrmidon (F),0,5,20,0
-Swordmaster,1,5,20,1
-Swordmaster (F),1,5,20,1
-Thief(F),0,0,20,0
-Ballista,0,0,20,0
-Archer,0,5,20,0
-Archer (F),0,5,20,0
-Sniper,3,5,20,1
-Sniper (F),3,5,20,1
-Scaleshot,0,0,20,0
-Skyseeker,3,0,20,0
-Dragonlord,2,0,20,2
-Seraphknight,7,0,20,3
-Pegasus Rider,3,5,20,0
-Falcoknight,5,5,20,2
-Dragon Rider,0,5,20,1
-Dracoknight,1,5,20,1
-Mage,3,35,20,0
-Mage (F),3,35,20,0
-Sage,6,30,20,4
-Sage (F),6,30,20,4
-Mage Knight,5,35,20,2
-Mage Knight (F),5,35,20,2
-High Priest,8,35,20,3
-High Priestess,8,35,20,3
-Dark Mage,4,40,20,0
-Dark Mage (F),4,40,20,0
-Dark Bishop,7,40,20,3
-Dark Bishop (F),7,40,20,3
-Bard,2,30,20,0
-Sister,2,30,20,0
+Noble,3,20,20,0
+Noble(F),3,20,20,0
+MasterKnight,7,20,20,4
+MasterKnight(F),7,20,20,4
+SwordKnight,0,10,20,0
+LanceKnight,0,10,20,0
+AxeKnight,0,10,20,0
+BowKnight,0,10,20,0
+ArchKnight,1,10,20,1
+ForrestKnight,1,10,20,1
+GreatKnight,1,10,20,1
+DukeKnight,1,10,20,1
+Thief,0,10,20,0
+Manakete,0,10,20,0
+SwordFighter,0,10,20,1
+SwordFighter(F),0,10,20,1
+Hero,1,10,20,1
+Hero (F),1,10,20,1
+Myrmidon,0,10,20,0
+Myrmidon (F),0,10,20,0
+Swordmaster,1,10,20,1
+Swordmaster (F),1,10,20,1
+Thief(F),0,10,20,0
+Ballista,0,10,20,0
+Archer,0,10,20,0
+Archer (F),0,10,20,0
+Sniper,3,10,20,1
+Sniper (F),3,10,20,1
+Scaleshot,0,10,20,0
+Skyseeker,3,30,20,0
+Dragonlord,2,10,20,2
+Seraphknight,7,30,20,3
+Pegasus Rider,3,20,20,0
+Falcoknight,5,20,20,2
+Dragon Rider,0,10,20,1
+Dracoknight,1,10,20,1
+Mage,4,40,20,0
+Mage (F),4,40,20,0
+Sage,7,35,20,4
+Sage (F),7,35,20,4
+Mage Knight,6,40,20,2
+Mage Knight (F),6,40,20,2
+High Priest,8,45,20,3
+High Priestess,8,45,20,3
+Dark Mage,5,45,20,0
+Dark Mage (F),5,45,20,0
+Dark Bishop,8,45,20,3
+Dark Bishop (F),8,45,20,3
+Bard,3,35,20,0
+Sister,3,35,20,0
 Thief Fighter,1,5,20,1
 Gorgon Egg,0,0,20,0
-Priest,5,35,20,0
-Priest (F),5,35,20,0
+Priest,5,40,20,0
+Priest (F),5,40,20,0
 Rook Knight,0,5,20,0
 Gold Knight,1,5,20,1
-Troubadour,3,20,20,0
-Paladin,6,20,20,3
+Troubadour,4,20,20,0
+Paladin,7,20,20,3
 Manakete,2,0,20,0
 Manakete (F),2,0,20,0
 Hunter,0,5,20,0
@@ -124,9 +124,9 @@ Tent,0,0,20,0
 Freelancer,0,5,20,0
 Champion,1,5,20,1
 Master_Knight_F (D),6,10,20,4
-Brother,2,30,20,0
+Brother,3,30,20,0
 Bard 2: Electric Boogaloo (Apsis class),0,30,20,0
-Sage 2: Electric Boogaloo (Apsis class),6,30,20,4
+Sage 2: Electric Boogaloo (Apsis class),7,30,20,4
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0

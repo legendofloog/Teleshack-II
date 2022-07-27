@@ -20,7 +20,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0, TurnOne, 1)
 	TurnEventPlayer(0x0, TurnTwo, 2)
-	TurnEventPlayer(0x0, WipeCheck, 1, 255)
+	//TurnEventPlayer(0x0, WipeCheck, 1, 255)
 	TurnEventPlayer(0xA, StagingAreaEnter, 1, 255)
 	TurnEventPlayer(0xB, StagingAreaExit, 1, 255)
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
@@ -120,7 +120,7 @@ UNIT
 ALIGN 4
 CromarAndLeina:
 UNIT Leina 0x0 Cleo Level(3,NPC,False) [6,18] 0x0 0x0 0x0 0x1 [Rapier, Heal, Vulnerary] NoAI
-UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir, Elixir, Elixir] BossHealAI
+UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir] BossHealAI
 UNIT
 
 ALIGN 4
@@ -137,7 +137,7 @@ UNIT
 
 ALIGN 4
 McCallumUnit:
-UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] BossNoAttackAI
+UNIT McCallum 0x0 0x0 Level(1,Enemy,False) [27,9] 0x0 0x0 0x0 0x1 [SteelAxe, SteelAxe, Elixir] [0x6,0x3,0x0,0x20]
 UNIT
 
 ALIGN 4
@@ -317,8 +317,10 @@ ENUN
 TILECHANGE 0
 TILECHANGE 1
 SetBackground(Boat)
+MUSC Rovers
 CenterTextbox(Ch6LongMonologueIntro)
 EraseBackground
+FadeOutMusic
 COUNTER_SET 0x0 0x0
 COUNTER_SET 0x1 0x0
 SetFlag(0xB)
@@ -329,6 +331,7 @@ CamOn
 MOVE 15 Cromar [7, 18]
 ENUN
 CameraCursor(Cromar)
+MUSC FFTAnxiety
 Text(Ch6CromarLeinaIntro)
 CamOff
 MOVE 15 Cromar [17, 18]
@@ -348,6 +351,7 @@ CamOff
 STAL 60
 LOAD1 0x1 PlayerSceneUnits
 ENUN
+FadeOutMusic
 CAMERA_CENTERED [7,19]
 STAL 20
 FlashCursor(Cleo,30)
@@ -355,6 +359,7 @@ FlashCursor(Loewe,30)
 MOVE 15 Cleo [6, 18]
 MOVE 15 Loewe [7,18]
 ENUN
+MUSC RenegadesID
 Text(Ch6CleoLoeweIntro)
 LOAD1 1 PirateEnemies
 LOAD1 1 PirateEnemies2
@@ -438,13 +443,13 @@ SpawnEnemies:
 		CHECK_ALIVE Leina
 		BEQ 865 s0 sC
 			CameraCursor(Leina)
-			FlashCursor(Leina,60)
 			Text(Ch6BarodCongratulations5)
 			GiveItem(SisterRing,Leina)
 			GOTO 866
 		LABEL 865
 		GiveItem(SisterRing,Cleo)
 		LABEL 866
+		CameraCursor(Barod)
 		Text(Ch6BarodIntro5)
 		CameraCursor(Cleo)
 		Text(Ch6BarodIntro5Response)
@@ -506,7 +511,7 @@ ENDA
 ALIGN 4
 EndingScene:
 SetBackground(Boat)
-MUSC(Rovers)
+MUSC KwameID
 Text(Ch6End)
 MNC2 Chapter7
 NoFade
@@ -554,17 +559,23 @@ LeinaRecruitCromar:
 	_CountRange(Leina, 0, SisterRing, 0xFF, 0, 0, 30, 34)
 	IBeq(0, 0)
 		MUSC WithUs_Song
-		FlashCursor(Cromar, 40)
+		FlashCursor(Cromar, 30)
 		Text(LeinaRecruitCromarWithRing)
 		CUSA Cromar
+		SetFatigue(Cromar,0)
+		FlashCursor(McCallum,30)
+		Text(McCallumMovesOutOfTheWay)
 		CUSN McCallum
-		MOVE 20 McCallum [28, 9]
+		MOVE 20 McCallum [21, 0]
+		ENUN
+		ENUT 0x80
+		REMOVEUNIT McCallum
 		GOTO 2
 	LABEL 0
 	CHECK_ALIVE McCallum
 	IBne(0, 1)
 		MUSC WithUs_Song
-		FlashCursor(Cromar, 40)
+		FlashCursor(Cromar, 30)
 		Text(LeinaRecruitCromarWithKill)
 		CUSA Cromar
 		GOTO 2

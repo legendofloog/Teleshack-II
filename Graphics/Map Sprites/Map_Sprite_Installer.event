@@ -89,10 +89,10 @@ SkyseekerMoving:
 
 ALIGN 4
 DragonlordStanding:
-#incbin "Dmp/Wyvern Lord (U) Armored Lance {SHYUTERz}-stand.dmp"
+#incbin "Dmp/Loewe_Dragonlord_Standing(knabepicer).dmp"
 ALIGN 4
 DragonlordMoving:
-#incbin "Dmp/Wyvern Lord (U) Armored Lance {SHYUTERz}-move.dmp"
+#incbin "Dmp/Loewe_Dragonlord_Moving(knabepicer).dmp"
 
 ALIGN 4
 SeraphknightStanding:
@@ -173,10 +173,10 @@ PriestFMoving:
 
 ALIGN 4
 RookKnightStanding:
-#incbin "Dmp/Cavalier (F) Sword {SALVAGED, Pikmin}-stand.dmp"
+#incbin "Dmp/Cavalier (M) Lance {IS}-stand.dmp"
 ALIGN 4
 RookKnightMoving:
-#incbin "Dmp/Cavalier (F) Sword {SALVAGED, Pikmin}-move.dmp"
+#incbin "Dmp/Cavalier (M) Lance {IS}-walk.dmp"
 
 ALIGN 4
 GoldKnightMoving:
@@ -187,17 +187,17 @@ GoldKnightStanding:
 
 ALIGN 4
 TroubadourFStanding:
-#incbin "Dmp/Troubadour (M) Deacon {Unknown}-stand.dmp"
+#incbin "Dmp/Troubadour (F) {IS}-stand.dmp"
 ALIGN 4
 TroubadourFMoving:
-#incbin "Dmp/Troubadour (M) Deacon {Unknown}-move.dmp"
+#incbin "Dmp/Troubadour (F) {IS}-walk.dmp"
 
 ALIGN 4
 PaladinStanding:
-#incbin "Dmp/Paladin (F) Sword {RobertFPY}-stand.dmp"
+#incbin "Dmp/Valkyrie (F) {IS}-stand.dmp"
 ALIGN 4
 PaladinMoving:
-#incbin "Dmp/Paladin (F) Sword {RobertFPY}-move.dmp"
+#incbin "Dmp/Valkyrie (F) {IS}-walk.dmp"
 
 ALIGN 4
 HunterMoving:
@@ -271,17 +271,17 @@ BaronMoving:
 
 ALIGN 4
 AxefighterMoving:
-#incbin "Dmp/Fighter (M) FE10-Style Axe {L95}-move.dmp"
+#incbin "Dmp/Mercenary (M) Axe (Flasuban, ArcherBias)-move.dmp"
 ALIGN 4
 AxefighterStanding:
-#incbin "Dmp/Fighter (M) FE10-Style Axe {L95}-stand.dmp"
+#incbin "Dmp/Mercenary (M) Axe (Flasuban, ArcherBias)-stand.dmp"
 
 ALIGN 4
 AxefighterFMoving:
-#incbin "Dmp/Fighter (F) FE10-Style Axe {Pikmin}-move.dmp"
+#incbin "Dmp/Mercenary (F) Axe (Flasuban, ArcherBias)-move.dmp"
 ALIGN 4
 AxefighterFStanding:
-#incbin "Dmp/Fighter (F) FE10-Style Axe {Pikmin} 1-stand.dmp"
+#incbin "Dmp/Mercenary (F) Axe (Flasuban, ArcherBias)-stand.dmp"
 
 ALIGN 4
 ThiefFighterFMoving:
@@ -363,13 +363,6 @@ LongBallistaStanding:
 #incbin "Dmp/Ballistician (U) {Aruka, Kenpuhu}-stand.dmp"
 
 ALIGN 4
-DismountedStanding:
-#incbin "Dmp/Lord (M) Roy T1 Generic {AnnoyingAnon}-stand.dmp"
-ALIGN 4
-DismountedMoving:
-#incbin "Dmp/Lord (M) Roy T1 Generic {AnnoyingAnon}-move.dmp"
-
-ALIGN 4
 LoeweStanding:
 #incbin "Dmp/Loewe_Dismounted_Standing(ArcherBias).dmp"
 ALIGN 4
@@ -403,3 +396,42 @@ ALIGN 4
 BrigandStanding:
 #incbin "Dmp/Brigand_M_Axe(Alusq).dmp"
 
+ALIGN 4
+Seraphknight_Dismounted_Standing:
+#incbin "Dmp/Lord (F) Hector Axe {Shin19}-stand.dmp"
+
+ALIGN 4
+Seraphknight_Dismounted_Moving:
+#incbin "Dmp/Lord (F) Hector Axe {Shin19}-walk.dmp"
+
+ALIGN 4
+DarkMageF_Standing:
+#incbin "Dmp/Shaman (F) {IS}-stand.dmp"
+
+ALIGN 4
+DarkMageF_Moving:
+#incbin "Dmp/Shaman (F) {IS}-walk.dmp"
+
+ALIGN 4
+DarkBishopF_Standing:
+#incbin "Dmp/Druid (F) {IS}-stand.dmp"
+
+ALIGN 4
+DarkBishopF_Moving:
+#incbin "Dmp/Druid (F) {IS}-walk.dmp"
+
+ALIGN 4
+MasterKnight_Standing:
+#incbin "Dmp/Great Lord (M) Ephraim Sword {milom}-stand.dmp"
+
+ALIGN 4
+MasterKnight_Moving:
+#incbin "Dmp/Great Lord (M) Ephraim Sword {milom}-walk.dmp"
+
+ALIGN 4
+AugurStanding:
+#incbin "Dmp/augur_standing(knabepicer).dmp"
+
+ALIGN 4
+AugurMoving:
+#incbin "Dmp/augur_walk(knabepicer).dmp"

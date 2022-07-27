@@ -1,0 +1,626 @@
+EventPointerTable(Chapter24Events, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, GreenGoBlueEvent, 1)
+TurnEventPlayer(0, Turn1ReinforcementEvent, 2)
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(7, DevvyMoment, Apsis, Perihelios)
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+Units1:
+LoadUnit(12,25)
+LoadUnit(13,25)
+LoadUnit(14,25)
+LoadUnit(12,26)
+LoadUnit(13,26)
+LoadUnit(14,26)
+LoadUnit(12,27)
+LoadUnit(13,27)
+LoadUnit(14,27)
+LoadUnit(12,28)
+LoadUnit(13,28)
+LoadUnit(14,28)
+LoadUnit(11,26)
+LoadUnit(15,27)
+UNIT
+
+NPCUnits:
+UNIT Orfeas Baron   0x0 Level(10,NPC,False) [13,24] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] AttackInRangeAI
+UNIT BarodReal Warrior   0x0 Level(20,NPC,False) [13,29] 0x0 0x0 0x0 0x0 [Indra,Agni] AttackInRangeAI
+UNIT
+
+EnemyUnitsBosses:
+UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [13,3] 0x0 0x0 0x0 0x0 [Predestination] BossAI
+UNIT EithaReal Sniper   0x0 Level(20,Enemy,False) [13,11] 0x0 0x0 0x0 0x0 [Daybreak] GroupThreeAI
+UNIT HamdiReal Halberdier   0x0 Level(20,Enemy,False) [13,13] 0x0 0x0 0x0 0x0 [TitansFang] GroupThreeAI
+UNIT Theimon Paladin_Dismounted   0x0 Level(20,Enemy,False) [3,14] 0x0 0x0 0x0 0x0 [Svarog] GroupTwoAI
+UNIT Danu Warrior   0x0 Level(20,Enemy,False) [23,13] 0x0 0x0 0x0 0x0 [Worldcleaver] GroupOneAI
+UNIT
+
+BottomChamberEnemies:
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [19,24] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
+UNIT Ch24Phantom Berserker   0x0 Level(10,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [DevilAxe] ChargeAI
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [17,34] 0x0 0x0 0x0 0x0 [Greatlance] ChargeAI
+UNIT Ch24Phantom HighPriest   0x0 Level(10,Enemy,True) [6,28] 0x0 0x0 0x0 0x0 [Aura] ChargeAI
+UNIT Ch24Phantom Warrior   0x0 Level(10,Enemy,True) [7,34] 0x0 0x0 0x0 0x0 [SilverAxe] ChargeAI
+UNIT Ch24Phantom Hero   0x0 Level(10,Enemy,True) [9,27] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
+UNIT Ch24Phantom Warrior   0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x0 0x0 [SilverAxe] ChargeAI
+UNIT Ch24Phantom Sage   0x0 Level(10,Enemy,True) [12,22] 0x0 0x0 0x0 0x0 [Elfire] ChargeAI
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [17,21] 0x0 0x0 0x0 0x0 [BoldCleaver] ChargeAI
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [10,20] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
+UNIT
+
+LeftHallwayEnemies:
+UNIT Ch24Phantom Sniper   0x0 Level(10,Enemy,True) [2,20] 0x0 0x0 0x0 0x0 [MarksmanBow] BossAI
+UNIT Ch24Phantom General   0x0 Level(10,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [MasterLance] BossAI
+UNIT Ch24Phantom Sniper   0x0 Level(10,Enemy,True) [4,20] 0x0 0x0 0x0 0x0 [MarksmanBow] BossAI
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [2,26] 0x0 0x0 0x0 0x0 [TrainedEdge] AttackInRangeAI
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [3,33] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
+UNIT Ch24Phantom Swordfighter   0x0 Level(20,Enemy,True) [1,23] 0x0 0x0 0x0 0x0 [WindSword] ChargeAI
+
+UNIT
+
+RightHallwayEnemies:
+UNIT Ch24Phantom Sage   0x0 Level(10,Enemy,True) [22,20] 0x0 0x0 0x0 0x0 [Sagittae] BossAI
+UNIT Ch24Phantom Baron   0x0 Level(10,Enemy,True) [23,21] 0x0 0x0 0x0 0x0 [Tornado] BossAI
+UNIT Ch24Phantom Sage   0x0 Level(10,Enemy,True) [24,20] 0x0 0x0 0x0 0x0 [Sagittae] BossAI
+UNIT Ch24Phantom Halberdier   0x0 Level(10,Enemy,True) [25,21] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
+UNIT Ch24Phantom Hero   0x0 Level(10,Enemy,True) [24,28] 0x0 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
+UNIT Ch24Phantom Freelancer   0x0 Level(20,Enemy,True) [24,25] 0x0 0x0 0x0 0x0 [HeavySpear] ChargeAI
+UNIT
+
+LeftChamberEnemies:
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [2,10] 0x0 0x0 0x0 0x0 [BraveSword] GroupTwoAI
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [SilverLance] GroupTwoAI
+UNIT Ch24Phantom Swordfighter   0x0 Level(20,Enemy,True) [3,15] 0x0 0x0 0x0 0x0 [SilverSword] AttackInRangeAI
+UNIT Ch24Phantom Sniper   0x0 Level(10,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [MasterBow] GroupTwoAI
+UNIT
+
+RightChamberEnemies:
+UNIT Ch24Phantom Berserker   0x0 Level(10,Enemy,True) [21,11] 0x0 0x0 0x0 0x0 [KillerAxe] GroupOneAI
+UNIT Ch24Phantom General   0x0 Level(10,Enemy,True) [23,10] 0x0 0x0 0x0 0x0 [MasterAxe] GroupOneAI
+UNIT Ch24Phantom Warrior   0x0 Level(10,Enemy,True) [25,11] 0x0 0x0 0x0 0x0 [TrainedAxe] GroupOneAI
+UNIT Ch24Phantom Halberdier   0x0 Level(10,Enemy,True) [25,13] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
+UNIT
+
+CentralChamberEnemies:
+UNIT Ch24Phantom Halberdier   0x0 Level(10,Enemy,True) [16,13] 0x0 0x0 0x0 0x0 [SilverLance] GroupFiveAI
+UNIT Ch24Phantom Warrior   0x0 Level(10,Enemy,True) [16,14] 0x0 0x0 0x0 0x0 [BoldCleaver] GroupFiveAI
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [Armorslayer] GroupSixAI
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [10,14] 0x0 0x0 0x0 0x0 [SilverLance] GroupSixAI
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [11,11] 0x0 0x0 0x0 0x0 [Glaive] GroupTwoAI
+UNIT Ch24Phantom Hero   0x0 Level(10,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [Claymore] GroupOneAI
+UNIT
+
+AntechamberEnemies:
+UNIT Ch24Phantom Champion   0x0 Level(10,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [Glaive] GroupThreeAI
+UNIT Ch24Phantom General   0x0 Level(10,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [Zweihander] GroupFourAI
+UNIT Ch24Phantom Warrior   0x0 Level(10,Enemy,True) [14,7] 0x0 0x0 0x0 0x0 [BattleAxe] GroupThreeAI
+UNIT Ch24Phantom DarkBishop   0x0 Level(10,Enemy,True) [11,3] 0x0 0x0 0x0 0x0 [Luna] GroupFourAI
+UNIT Ch24Phantom Sage   0x0 Level(10,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [Elfire] GroupFourAI
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [BoldBlade] GroupSevenAI
+UNIT Ch24Phantom Swordmaster   0x0 Level(10,Enemy,True) [16,5] 0x0 0x0 0x0 0x0 [BoldBlade] GroupSevenAI
+UNIT
+
+Turn1Reinforcements:
+UNIT Ch24Phantom Sage   0x0 Level(10,Enemy,True) [26,31] 0x0 0x0 0x0 0x0 [Nosferatu] ChargeAI
+UNIT Ch24Phantom Warrior   0x0 Level(10,Enemy,True) [26,23] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
+UNIT Ch24Phantom Sniper   0x0 Level(10,Enemy,True) [0,31] 0x0 0x0 0x0 0x0 [Longbow] ChargeAI
+UNIT Ch24Phantom Hero   0x0 Level(10,Enemy,True) [0,22] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
+UNIT
+
+Devisio:
+UNIT Perihelios Sage   0x0 Level(7,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [Lightning,Apotheosis] BossAI
+UNIT
+
+LeonidasByelenGroup:
+UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [14,12] 0x0 0x0 0x0 0x0 [Predestination] NoAI
+UNIT Ch2_Selese_Guy GoldKnight_Dismounted 0x0 Level(15,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT
+
+CityStreetsGroup:
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [4,9] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [5,20] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [4,20] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(10,Ally,False) [5,9] 0x0 0x0 0x0 0x0 [MasterAxe,SilverAxe] NoAI
+UNIT
+
+LeonidasArrivalGroup:
+UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,NPC,True) [24,17] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [20,3] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [23,9] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(10,Ally,False) [25,9] 0x0 0x0 0x0 0x0 [MasterAxe,SilverAxe] NoAI
+UNIT
+
+LeonidasCleoGroup:
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [4,9] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,9] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,NPC,True) [13,10] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT
+
+PreCatacombsGroup:
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [13,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT BoroReal Champion 0x0 Level(10,Ally,False) [17,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT TrajanReal Hero 0x0  Level(10,Ally,False) [17,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [16,3] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+AntechamberGroup:
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [14,32] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,32] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT BoroReal Champion 0x0 Level(10,Ally,False) [12,33] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT TrajanReal Hero 0x0  Level(10,Ally,False) [11,33] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [12,32] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(15,Ally,True) [14,33] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,Ally,True) [15,33] 0x0 0x0 0x0 0x0 [MasterAxe] NoAI
+UNIT Ch2_Selese_Guy GoldKnight_Dismounted 0x0 Level(15,NPC,True) [13,34] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [13,22] 0x0 0x0 0x0 0x0 [Predestination] NoAI
+UNIT Orfeas Baron   0x0 Level(10,Enemy,False) [12,21] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [10,26] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [9,25] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [8,26] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [8,27] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [9,28] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [10,29] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [15,28] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [16,28] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [17,28] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [16,27] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [18,26] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [17,25] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [15,25] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [11,26] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,NPC,True) [11,29] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian_F   0x0 Level(10,NPC,True) [15,30] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT
+
+RitualAftermathGroup:
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,31] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [12,30] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [14,30] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,Ally,True) [8,27] 0x0 0x0 0x0 0x0 [MasterAxe] NoAI
+UNIT BoroReal Champion 0x0 Level(10,Ally,False) [13,22] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT TrajanReal Hero 0x0  Level(10,Ally,False) [14,23] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+OrfeasAppears:
+UNIT Orfeas Baron   0x0 Level(10,NPC,False) [13,22] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] NoAI
+UNIT BarodReal Warrior 0x0 Level(10,NPC,False) [13,29] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+EndingSceneGroup:
+UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [13,3] 0x0 0x0 0x0 0x0 [Predestination] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [12,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [14,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT BarodReal Warrior 0x0 Level(10,Ally,False) [11,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+MindPalaceGroup:
+UNIT Byelen HighPriest   0x0 Level(20,Enemy,False) [9,4] 0x0 0x0 0x0 0x0 [Predestination] NoAI
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [5,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+EndingSceneGroup2:
+UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [12,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [14,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Ch2_Selese_Guy Warrior 0x0 Level(10,Ally,False) [11,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+EndingSceneSwarm:
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [11,8] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [10,5] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [15,8] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [16,5] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT Ch24Phantom Civilian   0x0 Level(10,Enemy,True) [16,8] 0x0 0x0 0x0 0x0 [TrainedEdge] NoAI
+UNIT
+
+
+
+
+BeginningScene:
+LOMA Ch5xGechrysos
+CAMERA [0,0]
+LOAD1 1 LeonidasByelenGroup
+ENUN
+TEXTSTART
+TEXTSHOW Ch24_Leonidas
+TEXTEND
+MOVE 15 Byelen [5,5]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 10 Byelen [4,0]
+ENUN
+REMOVEUNIT Byelen
+TEXTCONT
+TEXTEND
+REMA
+MOVE 20 Ch2_Selese_Guy [13,4]
+FADI 5
+ENUN
+STAL 10
+RemoveAll
+LOMA Chapter23
+LOAD1 1 CityStreetsGroup
+CAMERA [4,12]
+FADU 5
+STAL 5
+MOVE 15 KwameReal [4,11]
+MOVE 15 Loewe [5,11]
+ENUN
+STAL 5
+Text(Ch24_LoeweCliffhanger)
+STAL 5
+MOVE 15 KwameReal [17,6]
+MOVE 15 EliasReal [17,5]
+ENUN
+STAL 10
+TEXTSTART
+TEXTSHOW Ch24_LoeweCleoSadTalk
+TEXTEND
+MOVE 5 Loewe [17,7]
+TEXTCONT
+TEXTEND
+REMA
+FADI 10
+ENUN
+CAMERA_CENTERED [25,9]
+RemoveAll
+LOAD1 1 LeonidasArrivalGroup
+STAL 5
+MOVE 10 Loewe [24,7]
+FADU 10
+ENUN
+TEXTSTART
+TEXTSHOW Ch24_LeonidasArrival
+TEXTEND
+MOVE 20 Ch2_Selese_Guy [24,10]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+FADI 10
+STAL 10
+RemoveAll
+LOAD1 1 LeonidasCleoGroup
+CAMERA [4,12]
+FADU 10
+STAL 5
+MOVE 10 Loewe [7,9]
+MOVE 10 Ch2_Selese_Guy [8,10]
+ENUN
+TEXTSTART
+TEXTSHOW Ch24_LeonidasCleo
+TEXTEND
+MOVE 20 Ch2_Selese_Guy [5,9]
+MOVE 10 Loewe [8,10]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Cleo [3,9]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Cleo [2,9]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Cleo [3,9]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Cleo [4,9]
+MOVE 5 Ch2_Selese_Guy [6,9]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Ch2_Selese_Guy [7,9]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Cleo [5,9]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 5 Loewe [17,6]
+MOVE 5 Ch2_Selese_Guy [17,5]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+MOVE 10 Loewe [7,9]
+ENUN
+Text(Ch24_LoeweCheersCleoUp)
+FADI 10
+CAMERA_CENTERED [15,0]
+RemoveAll
+LOAD1 1 PreCatacombsGroup
+FADU 10
+Text(Ch24_ThePlan)
+FADI 10
+RemoveAll
+SetBackground(BlackBackground)
+Text(Ch24_IntoTheCatacombs1)
+Text(Ch24_IntoTheCatacombs2)
+FADI 15
+LOMA Chapter24
+CAMERA_CENTERED [13,34]
+DismountAll
+LOAD1 1 AntechamberGroup
+FADU 15
+TEXTSTART
+TEXTSHOW Ch24_IntoTheCatacombs3
+TEXTEND
+CAMERA_CENTERED [13,21]
+FlashCursor(Byelen,30)
+FlashCursor(Orfeas,30)
+TEXTCONT
+TEXTEND
+CAMERA_CENTERED [13,34]
+TEXTCONT
+TEXTEND
+REMA
+CAMERA_CENTERED [13,22]
+Text(Ch24_IntoTheCatacombs4)
+MOVE 10 Loewe [13,26]
+STAL 5
+CAMERA_CENTERED [13,26]
+ENUN
+Text(Ch24_Byelen)
+MOVE 5 Loewe [13,24]
+MOVE 15 KwameReal [12,25]
+MOVE 15 Cleo [14,25]
+MOVE 15 CoraliaReal [15,26]
+MOVE 15 EliasReal [11, 26]
+STAL 10
+MOVE 20 Ch2_Selese_Guy [14,22]
+ENUN
+TEXTSTART
+TEXTSHOW Ch24_LeoBetrayal
+TEXTEND
+KILL Ch2_Selese_Guy
+AWAIT_Kill Ch2_Selese_Guy
+TEXTCONT
+TEXTEND
+REMA
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 10
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+SVAL s1 0x2 // set everyone to be gray
+SET_CONDITION Loewe
+SET_CONDITION Cleo
+SET_CONDITION KwameReal
+SET_CONDITION CoraliaReal
+SET_CONDITION EliasReal
+SET_CONDITION Orfeas
+FAWU 5
+Text(Ch24_ByelenRitual)
+SVAL s1 0x2
+UNSET_CONDITION CoraliaReal
+MOVE 15 CoraliaReal [13,25]
+FAWI 20
+SOUN 0xF0 // divine weapon sound?
+STAL 60
+RemoveAll
+CAMERA_CENTERED [13,31]
+LOAD1 1 RitualAftermathGroup
+FAWU 1
+LOAD1 1 RitualAftermathGroup
+Text(Ch24_RitualAftermath1)
+Text(Ch24_RitualAftermath2)
+CAMERA_CENTERED [5,26]
+Text(Ch24_RitualAftermath3)
+MOVE 2 EliasReal [9,26]
+ENUN
+STAL 30
+MOVE 2 EliasReal [7,26]
+ENUN
+STAL 5
+Text(Ch24_RitualAftermath3_2)
+CAMERA_CENTERED [13,22]
+TEXTSTART
+TEXTSHOW Ch24_RitualAftermath4
+TEXTEND
+LOAD1 1 OrfeasAppears
+MOVE 5 Orfeas [12,23]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 10 BarodReal [13,24]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+Text(Ch24_RitualAftermath5)
+LOAD1 1 EnemyUnitsBosses
+CAMERA_CENTERED [23,13]
+FlashCursor(Danu,30)
+Text(Ch24_RitualAftermath6)
+CAMERA_CENTERED [3,14]
+FlashCursor(Theimon,30)
+Text(Ch24_RitualAftermath7)
+CAMERA_CENTERED [13,12]
+FlashCursor(HamdiReal,30)
+FlashCursor(EithaReal,30)
+Text(Ch24_RitualAftermath8)
+CAMERA_CENTERED [13,3]
+FlashCursor(Byelen,30)
+Text(Ch24_RitualAftermath9)
+FADI 15
+RemoveAll
+LOAD1 1 NPCUnits 
+ENUN
+LOAD1 1 EnemyUnitsBosses
+ENUN
+LOAD1 1 BottomChamberEnemies
+ENUN
+LOAD1 1 LeftHallwayEnemies
+ENUN
+LOAD1 1 RightHallwayEnemies
+ENUN
+LOAD1 1 LeftChamberEnemies
+ENUN
+LOAD1 1 RightChamberEnemies
+ENUN
+LOAD1 1 CentralChamberEnemies
+ENUN
+LOAD1 1 AntechamberEnemies
+ENUN
+LOAD1 1 Devisio
+ENUN
+REMOVEUNIT CoraliaReal
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MUSC WindyDaySoundEffect
+FADI 10
+CAMERA_CENTERED [13,3]
+RemoveAll
+LOAD1 1 EndingSceneGroup
+FADU 10
+TEXTSTART
+TEXTSHOW(Ch24_ByelenDefeated)
+TEXTEND
+MUSC WindyDaySoundEffect
+FAWI 20
+SOUN 0xF0 // divine weapon sound?
+FAWU 20
+TEXTCONT
+TEXTEND
+MUSC WindyDaySoundEffect
+TEXTCONT
+TEXTEND
+REMA
+STAL 5
+FAWI 20
+RemoveAll
+SOUN 0xF0 // divine weapon sound?
+LOAD1 1 MindPalaceGroup
+LOMA Ch1LoeweVillage
+STAL 240
+FAWU 2
+STAL 120
+Text(Ch24_IntoTheMindPalace)
+MOVE 5 Loewe [7,4]
+ENUN
+MOVE 5 Loewe [7,2]
+ENUN
+Text(Ch24_PennyDrop)
+FAWI 2
+STAL 240
+RemoveAll
+LOMA Chapter24
+CAMERA_CENTERED [13,3]
+LOAD1 1 EndingSceneGroup2
+FAWU 2
+Text(Ch24_ReturnToEarth)
+MOVE 5 KwameReal [11,7]
+MUSC 0x7FFF
+ENUN
+STAL 120
+CUSE KwameReal
+MUSC WindyDaySoundEffect
+Text(Ch24_KwameReveal)
+MOVE 20 KwameReal [11,4]
+FADI 30
+SOUN 0xD8
+FADU 10
+STAL 15
+KILL Ch2_Selese_Guy
+AWAIT_Kill Ch2_Selese_Guy
+Text(Ch24_BarodDie)
+FAWI 20
+LOAD1 1 EndingSceneSwarm
+FAWU 10
+TEXTSTART
+TEXTSHOW Ch24_Escape
+TEXTEND
+MOVE 15 Loewe [13,13]
+MOVE 15 Cleo [14,13]
+ENUN
+MOVE 10 KwameReal [13,5]
+TEXTCONT
+TEXTEND
+REMA
+ENUN
+MNC2 Chapter25
+NoFade
+ENDA
+
+GreenGoBlueEvent:
+CAMERA [13,24]
+Text(Ch24_PostPreps)
+CUSA BarodReal
+CUSA Orfeas
+NoFade
+ENDA
+
+DevvyMoment:
+Text(Ch24_Devisio)
+GiveItem(Apotheosis, Apsis)
+KILL Perihelios
+AWAIT_Kill Perihelios
+NoFade
+ENDA
+
+Turn1ReinforcementEvent:
+CamOn
+LOAD1 1 Turn1Reinforcements
+ENUN
+CamOff
+NoFade
+ENDA

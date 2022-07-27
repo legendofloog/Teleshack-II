@@ -125,6 +125,10 @@ int GetUnitEffectiveLevel(Unit* unit){
 	while( currentPrepromoteUnit != 0xFF){
 		currentPrepromoteUnit = PrepromoteTable[i];
 		if(unit->pCharacterData->number == currentPrepromoteUnit){
+			if(unit->pCharacterData->number == 0x2){ //unit is Mira
+				effectiveLevel -= 15;
+				break;
+			}
 			effectiveLevel -= 10;
 			break;
 		}
@@ -203,7 +207,7 @@ int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit) {
             
 	}
     
-	result = battleUnit->unit.ranks[GetItemData(battleUnit->weapon.number)->weaponType];
+	result = battleUnit->unit.ranks[battleUnit->weaponType];
 	if (battleUnit->unit.fatigue <= battleUnit->unit.maxHP){ // checks if fatigue is not > maxHP; if so, gives wexp
 		result += GetItemAwardedExp(battleUnit->weapon);
 	}
@@ -231,6 +235,29 @@ int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit) {
 
     return result;
 }
+
+/*
+void UpdateUnitDuringBattle(struct Unit* unit, struct BattleUnit* bu) {
+    int wexp;
+
+    unit->curHP = bu->unit.curHP;
+
+    wexp = GetBattleUnitUpdatedWeaponExp(bu);
+
+    if (wexp > 0)
+        unit->ranks[GetItemData(bu->weapon.number)->weaponType] = wexp;
+}
+
+s8 HasBattleUnitGainedWeaponLevel(struct BattleUnit* bu) {
+    int oldWexp = bu->unit.ranks[GetItemData(bu->weapon.number)->weaponType];
+    int newWexp = GetBattleUnitUpdatedWeaponExp(bu);
+
+    if (newWexp < 0)
+        return FALSE;
+
+    return GetWeaponLevelFromExp(oldWexp) != GetWeaponLevelFromExp(newWexp);
+}
+*/
 
 void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 	//only two places to promo; on map or in preps
@@ -359,23 +386,3 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
         unit->curHP = GetUnitMaxHp(unit);
 }
 
-void UpdateUnitDuringBattle(struct Unit* unit, struct BattleUnit* bu) {
-    int wexp;
-
-    unit->curHP = bu->unit.curHP;
-
-    wexp = GetBattleUnitUpdatedWeaponExp(bu);
-
-    if (wexp > 0)
-        unit->ranks[GetItemData(bu->weapon.number)->weaponType] = wexp;
-}
-
-s8 HasBattleUnitGainedWeaponLevel(struct BattleUnit* bu) {
-    int oldWexp = bu->unit.ranks[GetItemData(bu->weapon.number)->weaponType];
-    int newWexp = GetBattleUnitUpdatedWeaponExp(bu);
-
-    if (newWexp < 0)
-        return FALSE;
-
-    return GetWeaponLevelFromExp(oldWexp) != GetWeaponLevelFromExp(newWexp);
-}

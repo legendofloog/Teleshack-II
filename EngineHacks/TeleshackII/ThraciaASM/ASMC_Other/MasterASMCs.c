@@ -78,7 +78,7 @@ void CheckIfFatigued(){
 }
 
 int GetCurrentPromotedLevelBonus(){
-    return 14; //every promoted unit hits 15 unpromoted
+    return 9; //every promoted unit hits 10 unpromoted
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
@@ -133,4 +133,27 @@ void CheckIfTileChangeTriggered(){
         return;
     }
     gEventSlot[0xC] = 0;
+}
+
+void CheckIfTargetUnitWasCaptured(){
+    if(gBattleTarget.unit.curHP == 0 && gBattleTarget.unit.state & US_RESCUED){ //pretty sure captured units are technically being rescued?
+        gEventSlot[0xC] = 1; //no HP + rescued = captured (on old implementation of capture)
+        return;
+    }
+    gEventSlot[0xC] = 0; //0 HP and not rescued? they dead
+    return;
+}
+
+int GetUnitMagBy2Range(const Unit* unit) {
+    int result = (unit->mag / 2) + 5;
+    return result;
+}
+
+void GiveBlueUnitItemAfterCombat(){ //s1 = item id
+    if (UNIT_FACTION(&gBattleTarget.unit) == UA_BLUE){
+        
+    }
+    if (UNIT_FACTION(&gBattleActor.unit) == UA_BLUE){
+        
+    }
 }

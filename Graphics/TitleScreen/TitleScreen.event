@@ -1,0 +1,20 @@
+#include "256TitleScreen/titlebackgroundinstaller.event"
+
+ALIGN 4
+GameLogo:
+#incbin "BellsOfByelen_Logo.dmp"
+
+ALIGN 4
+GameTitle:
+#incbin "BellsOfByelen_title.dmp"
+
+PUSH
+ORG 0xC5808
+POIN GameLogo
+
+ORG 0xAADBA8
+#incbin "BellsOfByelen_Logo_pal.dmp"
+
+ORG 0xC5830
+POIN GameTitle
+POP

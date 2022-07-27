@@ -9,3 +9,7 @@ WORD DebuffTable
 #include "Aftershock/Aftershock.event"
 
 #include "RecklessCharge/RecklessCharge.event"
+
+#include "PiercingBolt/PiercingBolt.event"
+
+#include "DragonRage/DragonRage.event"

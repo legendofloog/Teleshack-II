@@ -38,14 +38,14 @@ s8 GetLeadershipStarCount(Unit *unit)
 	for (int x = 0; LeadershipTable[x].UnitID != 0; x++)
 	{
 		if (unit->pCharacterData->number == LeadershipTable[x].UnitID)
-			return LeadershipTable[x].LeadershipStars + unit->supports[0];
+			return LeadershipTable[x].LeadershipStars + unit->supports[5];
 	}
 	
-	if (unit->supports[0] == 0){
+	if (unit->supports[5] == 0){
 		return 0xFF;
 	}
 
-	return unit->supports[0];
+	return unit->supports[5];
 }
 
 s8 GetFactionLeadershipCount(u8 faction)
@@ -117,5 +117,5 @@ void ApplyLeadershipBonus(BattleUnit *bunitOne, BattleUnit *bunitTwo)
 
 void AddLeadershipASMC(){
 	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
-	unit->supports[0] += gEventSlot[2];
+	unit->supports[5] += gEventSlot[2];
 }

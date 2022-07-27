@@ -2,8 +2,6 @@ ALIGN 4
 #include "Macros.event"
 ALIGN 4
 #include "Escape Points.event"
-ALIGN 4
-#include "GiveAllEvents.event"
 
 #include "ChapterEvents/ChapterEventsInstaller.event"
 
@@ -19,7 +17,7 @@ POP
 
 ALIGN 4
 Load2AlwaysTable:
-BYTE 00 //Add units here
+BYTE KwameReal //Add units here
 BYTE 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 // separator
 
 

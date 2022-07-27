@@ -1,7 +1,8 @@
 .thumb
 @adds a skill to the given unit's list of skills. Returns 0 if unit already has 4 skills
 @r0 is unit in ram
-.set BWLTable, 0x203e884
+@ .set BWLTable, 0x203e884
+.set BWLTable, 0x02026e20
 
 push {r4-r5,lr}
 
@@ -9,7 +10,7 @@ mov r5, r1
 
 ldr r4, [r0]
 ldrb r4, [r4, #4] @char num in r4
-cmp r4, #0x46
+cmp r4, #0x4A
 bhi False
 
 ldr r0, =BWLTable

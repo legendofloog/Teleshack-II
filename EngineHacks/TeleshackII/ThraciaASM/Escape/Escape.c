@@ -110,15 +110,24 @@ void CheckJailed(){
 
 void CheckDeadOrJailed(){
     Unit* unit = GetUnitByCharId(gEventSlot[1]);
-    if ( unit->state & US_DEAD){
-        gEventSlot[0xC] = 1; // if dead, return 1 (true) to sC
-        return;
+    int i;
+    for (i = 0; i <= 60; i++){
+        Unit unitToCheck = gUnitArrayBlue[i];
+        if (unitToCheck.pCharacterData->number == unit->pCharacterData->number){
+            if (unit->state & US_DEAD){
+                gEventSlot[0xC] = 1; // if dead, return 1 (true) to sC
+                return;
+            }
+            if (CheckIfJailed(unit)){
+                gEventSlot[0xC] = 1; // if jailed, return 1 (true) to sC
+                return;
+            }
+            gEventSlot[0xC] = 0; // if not, return 0 (false) to sC
+            return;
+        }
     }
-    if (CheckIfJailed(unit)){
-        gEventSlot[0xC] = 1; // if jailed, return 1 (true) to sC
-        return;
-    }
-    gEventSlot[0xC] = 0; // if not, return 0 (false) to sC
+    gEventSlot[0xC] = 1; //never recruited == dead to me
+    return;
 }
 
 void JailOneUnit(){

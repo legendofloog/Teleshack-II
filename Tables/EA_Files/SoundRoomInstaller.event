@@ -44,6 +44,10 @@ SoundRoomEntry(CryptequeID,0,CryptequeIDName)
 SoundRoomEntry(RiseAboveID,0,RiseAboveIDName)
 SoundRoomEntry(0xD9,0,CrimeHeartName)
 SoundRoomEntry(0xDA,0,DrumbeatName)
+SoundRoomEntry(RoarOfDomainID,0,RoarOfDomainName)
+SoundRoomEntry(WhatImMadeOfID,0,WhatImMadeOfName)
+SoundRoomEntry(MM10WilyMachineID,0,MM10WilyMachineName)
+SoundRoomEntry(VsJuliusID,0,VsJuliusName)
 SoundRoomTerminator
 
 PUSH

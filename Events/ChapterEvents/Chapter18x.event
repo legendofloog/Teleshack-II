@@ -273,10 +273,10 @@ UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [11,9] 0x0 0x0 0x0 0x0 [
 UNIT
 
 GreenUnits:
-UNIT Apsis Bard_Apsis Loewe Level(9,NPC,False) [13,1] 0x0 0x0 0x0 0x0 [CrownPyreItem,StormbreakerItem,AbsoluteZeroItem,EyeOfDawnItem]     NoAI
+UNIT Apsis Bard_Apsis Loewe Level(14,NPC,False) [13,1] 0x0 0x0 0x0 0x0 [CrownPyreItem,StormbreakerItem,AbsoluteZeroItem,EyeOfDawnItem]     NoAI
 UNIT Groto Berserker Loewe Level(4,NPC,False) [11,15] 0x0 0x0 0x0 0x0 [BoneClub]     NoAI
 UNIT Zhara Paladin Loewe Level(7,NPC,False) [17,7] 0x0 0x0 0x0 0x0 [Maharaghi,Silence,Elixir]     NoAI
-UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBladeItem,ParagonSword] NoAI
+UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBladeItem] NoAI
 UNIT Tao Archer Loewe Level(10,NPC,False) [21,17] 0x0 0x0 0x0 0x0 [Taodao,RuneArrow]     NoAI
 UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT Boro_Ch16 Champion Loewe Level(5,NPC,False) [22,13] 0x0 0x0 0x0 0x0 [MasterLance]     NoAI
@@ -306,6 +306,9 @@ Text(Ch18xBeginningScene3PortLazar1)
 SetBackground(0x7)
 MUSC Rovers
 Text(Ch18xBeginningScene3PortLazar2)
+FADI 15
+STAL 120
+FADU 5
 Text(Ch18xBeginningScene3PortLazar3)
 MUSC FirstCampaignID
 Text(Ch18xBeginningScene3PortLazar4)

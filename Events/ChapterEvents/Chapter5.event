@@ -29,6 +29,7 @@ Chest(HeavySpear,23,15)
 END_MAIN
 
 MiscBasedEvents:
+CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
 
@@ -172,7 +173,7 @@ Text(BoatTalk)
 MUSC Tension
 Text(TensionCh5Text)
 Text(EnemyCh5Text)
-CALL $9EE2C4
+FADI 15
 LOAD1 1 NewPlayers
 LOAD1 1 EnemyUnits
 ENUN

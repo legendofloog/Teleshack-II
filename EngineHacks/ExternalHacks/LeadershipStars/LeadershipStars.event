@@ -39,13 +39,19 @@ BYTE Augur 1
 BYTE Ngondala 1
 BYTE CatrinReal 1
 BYTE TrajanReal 2
+BYTE Maryn 1
+BYTE Viktor 2
 // BOSSES
 BYTE Raschwitz_Ch1 1
 BYTE Tyr_Ch2 1
 BYTE Boro_Ch1 3
 BYTE Emory_Ch3 2
+BYTE Hilmar 1
+BYTE Riggan 1
+BYTE Draken 1
 BYTE Wellworth 1
 BYTE Hege 2
+BYTE Aurora 2
 BYTE Cidor 3
 BYTE Johanna 2
 BYTE Elias 5
@@ -53,11 +59,16 @@ BYTE Veniamin 2
 BYTE Vinny 4
 BYTE Taraji 2
 BYTE Xlea 2
+BYTE Saif 1
+BYTE Mihail 2
+BYTE Artemis 2
+BYTE KassandraReal 3
+BYTE Cherne 5
 // NPCs
 BYTE Trajan 2
 BYTE Kwame 3
 BYTE Epony 3
-BYTE Coralia 1
+BYTE Coralia 2
 BYTE Catrin 2
 BYTE Valere 5
 BYTE Sultai 2

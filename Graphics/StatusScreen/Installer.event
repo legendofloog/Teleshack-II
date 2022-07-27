@@ -10,6 +10,15 @@ ORG 0x88590
 BYTE 0 0 0 0
 POP
 
+//Chapter Background
 
+/*
+PUSH
+ORG 0xB12DB4
+#incbin "SD9k02.dmp"
+ORG 0xB1754C
+#incbin "SD9k02_pal.dmp"
+POP
 
-
+4798 byte difference
+*/

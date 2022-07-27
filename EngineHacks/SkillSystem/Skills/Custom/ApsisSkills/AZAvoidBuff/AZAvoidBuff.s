@@ -65,10 +65,10 @@ ldrh r0, [r4, r1] @def
 add r0, #2
 strh r0, [r4,r1]
 
-@add 10 avoid
+@add 20 avoid
 mov r1, #0x62
 ldrh r0, [r4, r1] @avoid
-add r0, #10
+add r0, #20
 strh r0, [r4,r1]
 
 End:

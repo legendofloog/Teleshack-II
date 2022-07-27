@@ -173,7 +173,7 @@
 
 //Nullify: Unit is protected from all effective attacks.
 //By Tequila
-#define NullifyID 255
+//#define NullifyID 255
 
 //Slayer: Deal effective damage to monster units.
 //By Tequila
@@ -483,7 +483,7 @@
 
 //Opportunist: +4 damage if the foe cannot counter.
 //By Tequila
-#define OpportunistID 255
+//#define OpportunistID 255
 
 //Outrider: Take -1 damage and gain +3% crit per space moved.
 //By Datagne
@@ -499,7 +499,7 @@
 
 //Puissance: +3 Damage when the user's Strength is higher than the enemy's.
 //By Zeta
-#define PuissanceID 255
+//#define PuissanceID 255
 
 //Quick Riposte: If defending and HP is 50% or higher, unit doubles and attacker does not double.
 //By Sme
@@ -916,7 +916,7 @@
 
 //Swarp: Allows unit to swap positions with a distant ally.
 //Be Sme
-#define SwarpID 255
+//#define SwarpID 255
 
 //Steal: Unit can steal items.
 //By Tequila

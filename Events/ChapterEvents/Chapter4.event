@@ -65,7 +65,7 @@ LoadUnit(6,4)
 LoadUnit(7,4)
 LoadUnit(8,4)
 LoadUnit(9,4)
-	UNIT
+UNIT
 
 EnemyUnits:
 UNIT Hilmar LanceArmor   0x0 Level(8,Enemy,False) [15,16] 0 0 1 REDA14R14 [SteelLance,Javelin,Elixir] BossAI
@@ -241,10 +241,11 @@ CLEAN
 Music(0x48)
 FADU 15
 STAL 10
-LOAD2 0x1 CutsceneTheGang
+LOAD1 2 CutsceneTheGang
+ENUN
 CameraCursor(Cleo)
 ENUN
-LOAD2 0x1 CutscenePegasussy
+LOAD1 2 CutscenePegasussy
 ENUN
 SVAL 0xB 0xB
 DISA_IF 0xFFFE

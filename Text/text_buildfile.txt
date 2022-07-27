@@ -17,6 +17,27 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x51E
+Radiant[X]
+
+# 0x522
+MP/2 + 5[X]
+
+# 0x5B6
+Put items in storage. Up to[NL]
+200 items can be put in storage.[X]
+
+# 0x474
+Restores HP to allies at a distance.[X]
+
+# 0x26B
+Holy[X]
+
+# 0x55B
+Unit is blessed by Leina's Radiance.[NL]
+They will heal for 10 + Leina's Mag[N]
+after she attacks or heals.[X]
+
 # 0x533 PrfStar
 [0xBD][X]
 
@@ -197,3 +218,7 @@ the top of inventory.[X]
 ->[X]
 
 #include "CharClassItemsEtc/GuideText.txt"
+
+#include "CharClassItemsEtc/Supports.txt"
+
+#include "CharClassItemsEtc/CharacterEndings.txt"

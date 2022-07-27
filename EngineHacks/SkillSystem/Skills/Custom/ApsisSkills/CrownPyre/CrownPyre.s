@@ -34,26 +34,21 @@ b Unequipped        @If not the right tome, go to Unequipped skill
 
 YesThereIsSkill:
 
+@add current hp/4 attack
+mov  r1, #0x5A
+ldrh r0, [r4, r1] @give unit attack
+ldrb r2, [r5, #0x13] @current hp
+lsr  r2, #2 //divided by 4
+add  r0, r2
+strh r0, [r4,r1]
+
 @add res/4 attack
 mov  r1, #0x5A
 ldrh r0, [r4, r1] @give unit attack
 ldrb r2, [r5, #0x18] @res
-lsr  r2, #2
+lsr  r2, #1 //divided by 2
 add  r0, r2
 strh r0, [r4,r1]
-
-@foe's hp is below 25%
-ldrb r0,[r5,#0x12] @max hp
-ldrb r1,[r5,#0x13] @cur hp
-lsl r1,r1,#2
-cmp r1,r0
-bgt End
-
-@set your attack to 99 (idk they'll probably die right?)
-mov r0, r4
-add r0,#0x5A
-mov r3,#99
-strh r3,[r0]
 
 b End @end skill
 
@@ -68,15 +63,50 @@ beq OffHandEffect
 b End
 
 OffHandEffect:
-@add 25% of foes missing hp as damage
-ldrb  r0,[r5,#0x12] @defender max hp
-ldrb  r1,[r5,#0x13] @defender current hp
-sub   r0,r1
-lsr   r0,#0x2     @missing hp/4
-mov   r2,#0x5A
-ldrh  r1,[r4,r2]
-add   r1,r0,r1
-strh  r1,[r4,r2]
+
+@1 range?
+ldr r0,=#0x203A4D4 @battle stats
+ldrb r0,[r0,#2] @range
+cmp r0,#1
+bne CheckTwo
+
+@grants AS +1
+mov r0, r4
+add r0,#0x5A
+ldrh r3,[r0]
+add r3,#1
+strh r3,[r0]
+b End
+
+CheckTwo:
+@2 range?
+ldr r0,=#0x203A4D4 @battle stats
+ldrb r0,[r0,#2] @range
+cmp r0,#2
+bne CheckThree
+
+@grants AS +2
+mov r0, r4
+add r0,#0x5A
+ldrh r3,[r0]
+add r3,#2
+strh r3,[r0]
+b End
+
+CheckThree:
+@3 range?
+ldr r0,=#0x203A4D4 @battle stats
+ldrb r0,[r0,#2] @range
+cmp r0,#3
+bne End @pretty sure its impossible to get here???
+
+@grants AS +3
+mov r0, r4
+add r0,#0x5A
+ldrh r3,[r0]
+add r3,#3
+strh r3,[r0]
+b End
 
 End:
 pop {r4-r7, r15}

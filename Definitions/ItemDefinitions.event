@@ -85,7 +85,7 @@
 #define Meteor 0x4A
 #define Heal 0x4B
 #define Mend 0x4C
-#define Recover 0x4D
+#define Maharaghi 0x4D
 #define Physic 0x4E
 #define Fortify 0x4F
 #define Restore 0x50
@@ -159,7 +159,8 @@
 #define HoundingBow 0x93
 #define Daybreak 0x94
 #define HeavySpear 0x95
-
+#define Holyspear 0x96
+#define Crusher 0x97
 #define ArgymosCrest 0x98
 
 #define CrownPyreItem 0x9a
@@ -169,12 +170,18 @@
 #define FaithWindItem 0x9e
 #define DancingBladeItem 0x9f
 #define BoneClub 0xa0
-#define Maharaghi 0xa1
+
 #define Taodao 0xa2
 #define RuneArrow 0xa3
+#define BlackAnklet 0xa4
 
+#define Boltbrand 0xa8
+#define DawnPendant 0xa9
 #define Dragonstone 0xAA
 #define Unmoor 0xAB
+#define Impaler 0xAC
+
+#define Firestone 0xB2
 
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
@@ -198,7 +205,9 @@
 #define Arachnid 0xC9 
 #define YorsYari 0xCA
 #define DaShoota 0xCB
+#define BreakArc 0xCB
 #define BigIron 0xCC
+#define MeatCleaver 0xCC
 #define Axle1 0xCD
 #define Axle2 0xCE 
 #define Miaodao 0xCF
@@ -231,6 +240,8 @@
 #define HoplonGuard 0xE8
 #define IronRune 0xE8
 #define Swordreaver 0xE9
+#define BladeCrusher 0xE9
+#define Bladecrusher 0xE9
 #define Swordslayer 0xE9
 #define Shieldbearer 0xEA
 #define Malkhut 0xEB
@@ -242,3 +253,16 @@
 #define DeadeyeBow 0xF0
 #define MoonlightBlade 0xF1
 #define Glaive 0xF2
+#define Predestination 0xF3
+#define TitansFang 0xF4
+#define Svarog 0xF5
+#define Worldcleaver 0xF6
+#define Indra 0xF7
+#define Agni 0xF8
+#define SmolderingSeal 0xF9
+#define Apotheosis 0xFA
+#define ByelensBell 0xFB
+#define RagnarokVantage 0xAD
+#define RagnarokHawkeye 0xFC
+#define RagnarokPass 0xFD
+#define RagnarokFortune 0xFE

@@ -1,5 +1,5 @@
 ## Chapter15Title
-Ch 15: Accursed Blessing[X]
+Ch15: Accursed Blessing[X]
 
 ## CaptureObjectiveName
 Capture[X]
@@ -7,6 +7,10 @@ Capture[X]
 ## CaptureCoraliaDesc
   Capture Coralia  [N]
 before she escapes.[X]
+
+## AshaJoins
+[MidLeft][LoadAsha]
+placeholder[A][X]
 
 ## Ch15FreeingTheStranger
 [MidLeft][LoadStranger]
@@ -736,9 +740,9 @@ for honor's sake, then you're my enemy.[AN]
 Elias. Kill Coralia, and we can still[N]
 be allies. Just like we've always been.[A]
 [Right]
-[Beat]I can't. Over these long, hellish[N]
-years, I've lost my pride, my purpose.[N]
-Even so, I'm still a knight of Cythes.[AN]
+[CloseEyes][Beat]I can't. Over these long, hellish[N]
+years, I've lost my pride, my purpose.[AN]
+Even so, I'm still a knight of Cythes.[AN][OpenEyes]
 I won't murder any who I am meant to[N]
 protect, no matter what ends justify it![A]
 [Left]

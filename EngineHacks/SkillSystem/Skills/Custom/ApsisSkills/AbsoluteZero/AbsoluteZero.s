@@ -32,29 +32,29 @@ strh r0, [ r4, r1 ]
 
 @if unit's tile has bonuses...
 mov r1, #0x56
-ldrb r0, [r4,r1] @terrain def
+ldrb r0, [r5,r1] @terrain def
 cmp r0, #0
 bne DoubleIt
 add r1, #1
-ldrb r0, [r4,r1] @terrain avo
+ldrb r0, [r5,r1] @terrain avo
 cmp r0, #0
 bne DoubleIt
 add r1, #1
-ldrb r0, [r4,r1] @terrain res
+ldrb r0, [r5,r1] @terrain res
 cmp r0, #0
 beq End
 
 DoubleIt:
-@...double the Atk/AS debuff
+@...triple the Atk/AS debuff
 
 mov r1, #0x5A
 ldrh r0, [ r4, r1 ]
-sub r0, r0, #2
+sub r0, r0, #4
 strh r0, [ r4, r1 ]
 
 mov r1, #0x5E
 ldrh r0, [ r4, r1 ]
-sub r0, r0, #2
+sub r0, r0, #4
 strh r0, [ r4, r1 ]
 
 End:
