@@ -117,6 +117,7 @@
 [LoadShaw] = [LoadFace][0xE9][0x1]
 [LoadMatthias] = [LoadFace][0xF6][0x1]
 [LoadNgondala] = [LoadFace][0xED][0x1]
+[LoadLocke] = [LoadFace][0x37][0x1]
 [LoadMaryn] = [LoadFace][0xFA][0x1]
 [LoadViktor] = [LoadFace][0xFB][0x1]
 [LoadTao] = [LoadFace][0x5E][0x1]
