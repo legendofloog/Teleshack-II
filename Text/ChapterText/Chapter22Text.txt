@@ -2,7 +2,7 @@
 Ch22: Bingus[X]
 
 ## Ch22ObjectiveDesc
-Defeat Darmath[X]
+Defeat Eleanor[X]
 
 ## Ch22ObjectiveName
 Defeat Boss[X]
@@ -72,7 +72,7 @@ What do you say?[Yes][X]
 ## LockeYesText
 [MidLeft][LoadLocke][MidRight][LoadActive]
 [MidLeft][TwoLineBox]
-Good. You won't[X]
+Good. You won't[N]
 regret this one.[A][X]
 
 ## LockeNoText
@@ -85,7 +85,7 @@ you change your mind though.[A][X]
 ## LockeNotEnoughText
 [MidLeft][LoadLocke][MidRight][LoadActive]
 [MidLeft][OneLineBox]
-Ah, that hard up are you?[AN]
+Ah, that hard up are you?[A]
 [CloseSpeechSlow]
 [MidLeft][TwoLineBox]
 Well[Beat] I can't budge[N]
