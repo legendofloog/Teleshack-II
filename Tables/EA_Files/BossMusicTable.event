@@ -42,6 +42,7 @@ BossBGMEntry(Artemis,SaturosBattleID)
 BossBGMEntry(Maryn,SaturosBattleID)
 BossBGMEntry(Viktor,SaturosBattleID)
 BossBGMEntry(KassandraReal,FF5_BattleOnTheBigBridgeID)
+BossBGMEntry(Cherne, VsJuliusID)
 BossBGMTerminator
 
 PUSH

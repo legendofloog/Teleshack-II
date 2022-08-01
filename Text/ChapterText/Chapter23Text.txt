@@ -1159,22 +1159,35 @@ we'd best be off. Time to hit up[N]
 that arena near Mount Sarloos[Beat][A][X]
 
 ## MarynRecruitText
-[X]
+[MidLeft][LoadMaryn]
+[MidRight][LoadLoewe]
+placeholder[A][X]
 
 ## MarynCromarTextMcCallumSpared
-[X]
+[MidLeft][LoadMaryn]
+[MidRight][LoadCromar]
+placeholder[A][X]
+
 
 ## MarynCromarTextMcCallumKilled
-[X]
+[MidLeft][LoadMaryn]
+[MidRight][LoadCromar]
+placeholder[A][X]
 
 ## ViktorRecruitText
-[X]
+[MidLeft][LoadViktor]
+[MidRight][LoadCleo]
+placeholder[A][X]
 
 ## ViktorTiberiusIskraSwordAcquiredText
-[X]
+[MidLeft][LoadViktor]
+[MidRight][LoadTiberius]
+placeholder[A][X]
 
 ## ViktorTiberiusIskraSwordNotAcquiredText
-[X]
+[MidLeft][LoadViktor]
+[MidRight][LoadTiberius]
+placeholder[A][X]
 
 ## Ch23KassandraVS
 [MidLeft][LoadKassandra]

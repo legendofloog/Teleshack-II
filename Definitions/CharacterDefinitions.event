@@ -69,6 +69,10 @@
 #define BoroReal 0x44
 #define Orfeas 0x45
 #define BarodReal 0x46
+#define TarajiReal 0x47
+#define Athanasius 0x48
+#define Athansius 0x48
+#define Asha 0x49
 
 
 
@@ -231,6 +235,13 @@
 #define Danu 0xD3
 #define Ch24Phantom 0xD4
 #define Perihelios 0xD5
+
+//Chapter 25 Stuff
+#define Cherne 0xD6
+#define Chapter25Generics 0xD7
+#define Shades 0xD7
+#define EndgameGenerics 0xD7
+#define Houvaina 0xBB
 
 
 #define Bazba 0x48

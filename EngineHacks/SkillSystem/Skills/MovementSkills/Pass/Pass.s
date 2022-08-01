@@ -4,20 +4,45 @@
 @Bx'd to from 3003D28
 @This function sets the Z flag if the moving unit can cross the other unit's tile, either because they're either both allied/npcs or enemies, or because the mover has Pass
 push  {r0-r6,r14}   @actually necessary to push the scratch registers in this case
+mov r5, r3
 ldrb  r4,[r3,#0xA]  @allegiance byte of current unit
 eor   r4,r7     @r7 is allegiance byte of unit on tile we are looking at
 mov   r0,#0x80
 tst   r0,r4
 beq   GoBack      @if non-zero, then one character is an enemy and one is not. If zero, the z flag is set
+
 ldr   r0,GetCharData
 mov   r14,r0
 ldrb  r0,[r3,#0xA]
 .short  0xF800      @returns char data pointer of moving unit
+
 ldr   r1,SkillTester
 mov   r14,r1
 ldr   r1,PassID
 .short  0xF800
 cmp   r0,#0x1     @set z flag if unit has Pass
+beq GoBack
+
+ldr   r0,GetCharData
+mov   r14,r0
+ldrb  r0,[r5,#0xA]
+.short  0xF800      @returns char data pointer of moving unit
+
+mov r1, #0xB
+ldrb r2, [r0, r1]
+mov r3, #0x80
+and r2, r3
+cmp r2, r3
+beq SkipZero
+bne GoBack
+
+SkipZero:
+ldr r0,=#0x8083da8 @CheckEventId
+mov r14,r0
+mov r0,#0x8C
+.short 0xF800
+cmp r0,#1
+
 GoBack:
 pop   {r0-r6}
 pop   {r4}

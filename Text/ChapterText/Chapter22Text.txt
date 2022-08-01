@@ -2,7 +2,111 @@
 Ch22: Bingus[X]
 
 ## Ch22ObjectiveDesc
-Defeat Darmath[X]
+Defeat Eleanor[X]
 
 ## Ch22ObjectiveName
 Defeat Boss[X]
+
+## TrajanArriveText
+[FarFarLeft][LoadTrajan][MoveMidLeft]
+[MidLeft][TwoLineBox]
+Ah hah! I thought I[N]
+heard fighting.[AN]
+Now I just need to join[N]
+up with Cleo and Loewe.[A][X]
+
+## TrajanRecruitText
+
+[MidLeft][LoadTrajan][Right][LoadLoewe][FarRight][LoadCleo]
+[Right][OneLineBox]
+Trajan?! Is that you?[A]
+
+[MidLeft][ThreeLineBox]
+Cleo, Loewe! I thought it[N]
+might be you when I heard[N]
+all of the fighting going on.[A]
+
+[FarRight][ThreeLineBox]
+What are you doing here Trajan?[N]
+I thought you were with[N]
+Coralia and Elias in Gechrysos?[A]
+
+[MidLeft][TwoLineBox]
+We can discuss that after[N]
+we've shook these Cytheans.[AN]
+And besides, I've been out[N]
+of action for far far too long.[A]
+
+[Right][TwoLineBox]
+Good point Trajan, it's[N]
+good to have you back.[A]
+
+[MidLeft][OneLineBox]
+It's good to be back.[A][X]
+
+
+## LockeTavernPrompt
+[MidLeft][LoadLocke][MidRight][LoadActive]
+[MidLeft]
+You there, you with the[N]
+fighting going outside?[A][CloseSpeechSlow]
+
+[MidRight][MoveMidRight]
+
+[MidLeft][ThreeLineBox]
+The Liberators huh?[......] Well look,[N]
+I'm a mercenary,[....] been stuck here[N]
+with no work for so bloody long.[AN]
+Everything is drying up in[N]
+Cythes[.....] and I'm just pissing[N]
+away what money I have left.[AN]
+I don't have strong ties to[N]
+the country,[......] and I can pick[N]
+locks and fight for you.[AN]
+All you need to do is pay[N]
+me a paltry sum of say[Beat][.....][N]
+[ToggleRed]900 gold[ToggleRed]?[A][CloseSpeechSlow]
+[MidLeft][OneLineBox]
+What do you say?[Yes][X]
+
+## LockeYesText
+[MidLeft][LoadLocke][MidRight][LoadActive]
+[MidLeft][TwoLineBox]
+Good. You won't[N]
+regret this one.[A][X]
+
+## LockeNoText
+[MidLeft][LoadLocke][MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Really?[.....] But it's a steal.[N]
+Eh, fine, come back if[N]
+you change your mind though.[A][X]
+
+## LockeNotEnoughText
+[MidLeft][LoadLocke][MidRight][LoadActive]
+[MidLeft][OneLineBox]
+Ah, that hard up are you?[A]
+[CloseSpeechSlow]
+[MidLeft][TwoLineBox]
+Well[Beat] I can't budge[N]
+on my prices I'm afraid.[AN]
+Let me know if you can[N]
+scrounge up some money though.[A][X]
+
+## MoonlightBladeText
+[MidLeft][LoadActive][MoveMidLeft]
+[MidLeft][OneLineBox]
+Huh? What on earth is this?[A][X]
+
+## NPCVillage1Text
+[MidLeft][LoadFace][0x59][0x1][MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Hey there youngster,[....] I've got[N]
+a little secret if you're[N]
+interested in listenin' to me.[AN]
+Theres a hidden merchant's shop[N]
+down on the docks.[.....] They sell[N]
+all sorts of rare goodies.[AN]
+But you'll need a special[N]
+card for them to let you in.[....][N]
+No idea how you get one though[Beat][A][X]

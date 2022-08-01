@@ -4,7 +4,8 @@
 #include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
 #include "RescueChanges/RescueChangesEvent.event"
 #include "MoveStars/Installer.event"
-#include "Support/Installer.event"
+//#include "Support/Installer.event"
+#include "NewSupport/Installer.event"
 #include "PCC/Installer.event"
 #include "Equip/Installer.event"
 #include "ExtraGrowths.event"
@@ -12,6 +13,7 @@
 #include "ASMC_Other/Installer.event"
 #include "StaffChanges/Installer.event"
 #include "Escape/Installer.event"
+#include "BWL_Stuff/Installer.event"
 
 // changes luck cap to 20
 PUSH

@@ -40,7 +40,6 @@ END_MAIN
 CharacterBasedEvents:
 END_MAIN
 
-
 LocationBasedEvents:
 LOCA 18 TopLeftPrisonDoor [5,2] 0x12
 Chest(AngelicRobe,16,2)
@@ -271,6 +270,7 @@ LOAD 1 MinkJoin
 LOAD 1 OutdoorEnemy
 LOAD 1 IndoorEnemy
 LOAD 1 PrisonGreens
+ENUN
 GotoPrepScreen
 ENDA
 
@@ -333,6 +333,7 @@ ENDA
 
 
 EndingScene:
+FADI 15
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
 RemoveAllItem(Darkbrand)

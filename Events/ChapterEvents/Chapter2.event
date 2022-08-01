@@ -276,6 +276,7 @@ NoFade
 ENDA
 
 EndingScene:
+MUSC 0x7FFF
 FADI 15
 SADD s1 sC s0
 SET_HP Cleo
@@ -286,10 +287,15 @@ RemoveAll
 LOAD1 1 EndingCutsceneUnits
 ENUN
 FADU 15
-MUSC Rovers
 MOVE 15 Dragana [16,19]
 ENUN
+STAL 20
+MOVE 15 Dragana [10,16]
+MOVE 15 Cleo [11,16]
+MOVE 15 Loewe [11,17]
+ENUN
 EVBIT_T 5
+MUSC Rovers
 TEXTSTART
 TEXTSHOW Chapter2EndingScene1
 TEXTEND
@@ -311,6 +317,7 @@ ENUN
 TEXTSTART
 TEXTSHOW Chapter2EndingScene2
 TEXTEND
+FadeOutMusic
 MOVE 15 Boro_Ch1 [13,11]
 ENUN
 KILL Tyr_Ch2
@@ -333,8 +340,8 @@ MUSC FE5_InTheBattle_Fate
 Text(Chapter2EndingScene3)
 LOAD1 1 EndingCutsceneUnits2
 ENUN
-MOVE 15 Loewe [19,9]
-MOVE 15 Cleo [19,10]
+MOVE 15 Loewe [19,10]
+MOVE 15 Cleo [19,9]
 MOVE 15 Dragana [14,12]
 ENUN
 HIDEUNIT Loewe
@@ -342,7 +349,7 @@ HIDEUNIT Cleo
 TEXTSTART
 TEXTSHOW Chapter2EndingScene4
 TEXTEND
-MOVE 15 Dragana [19,9]
+MOVE 15 Dragana [19,10]
 ENUN
 REMOVEUNIT Dragana
 TEXTCONT

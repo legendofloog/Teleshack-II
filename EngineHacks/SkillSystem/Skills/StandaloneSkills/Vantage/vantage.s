@@ -16,6 +16,21 @@ ldr r1, VantagePlusID
 cmp r0, #0
 bne VantagePlus
 
+mov r1, #0xB
+ldrb r0, [r5, r1]
+mov r2, #0x80
+and r0, r2
+cmp r0, #0
+beq Vantage
+
+ldr r0,=#0x8083da8 @CheckEventId
+mov r14,r0
+mov r0,#0x7D
+.short 0xF800
+cmp r0,#1
+beq VantagePlus
+
+Vantage:
 ldr r0, SkillTester
 mov lr, r0
 mov r0, r5 @defender data

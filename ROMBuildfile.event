@@ -7,8 +7,6 @@
     #include "EAstdlib.event"
     
     #include "Definitions/DefinitionsInstaller.event"
-
-    
     
     //Text first for Text ID definitions
     #include "Text/InstallTextData.event"

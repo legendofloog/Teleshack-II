@@ -1,0 +1,290 @@
+PUSH
+ORG $84784
+POIN NewSupportConvoTable
+ORG $847FC
+POIN NewSupportConvoTable
+POP
+
+#define SupportConvoEntry(charID1, charID2, CRankTextEntry, BRankTextEntry, ARankTextEntry) "SHORT charID1 charID2 CRankTextEntry BRankTextEntry ARankTextEntry 0 0 0"
+#define SupportConvoTerminator "SHORT 0xFFFF 0 0 0 0 0 0 0"
+
+ALIGN 4
+NewSupportConvoTable:
+SupportConvoEntry(Cleo, Emil, 0, 0, 0) 
+SupportConvoEntry(Cleo, Varga, 0, 0, 0)
+SupportConvoEntry(Cleo, Darby, 0, 0, 0) 
+SupportConvoEntry(Cleo, Lyre, 0, 0, 0)
+SupportConvoEntry(Cleo, EliasReal, 0, 0, 0)
+
+SupportConvoEntry(Loewe, Iskra, 0, 0, 0) 
+SupportConvoEntry(Loewe, Cromar, 0, 0, 0)
+SupportConvoEntry(Loewe, Asha, 0, 0, 0)
+SupportConvoEntry(Loewe, Tao, 0, 0, 0)
+SupportConvoEntry(Loewe, Catrin, 0, 0, 0)
+
+SupportConvoEntry(Mira, Iskra, 0, 0, 0) 
+SupportConvoEntry(Mira, Emil, 0, 0, 0)
+SupportConvoEntry(Mira, Tiberius, 0, 0, 0) 
+SupportConvoEntry(Mira, BoroReal, 0, 0, 0)
+SupportConvoEntry(Mira, TrajanReal, 0, 0, 0)
+
+SupportConvoEntry(Iskra, Loewe, 0, 0, 0) 
+SupportConvoEntry(Iskra, Mira, 0, 0, 0)
+SupportConvoEntry(Iskra, Tiberius, 0, 0, 0)
+SupportConvoEntry(Iskra, Emil, 0, 0, 0)
+
+SupportConvoEntry(Emil, Cleo, 0, 0, 0) 
+SupportConvoEntry(Emil, Varga, 0, 0, 0)
+SupportConvoEntry(Emil, Mira, 0, 0, 0)
+SupportConvoEntry(Emil, Iskra, 0, 0, 0)
+
+SupportConvoEntry(Svetomir, Alena, 0, 0, 0) 
+SupportConvoEntry(Svetomir, Delilah, 0, 0, 0)
+SupportConvoEntry(Svetomir, Zhara, 0, 0, 0)
+
+SupportConvoEntry(Alena, Svetomir, 0, 0, 0) 
+SupportConvoEntry(Alena, Filone, 0, 0, 0)
+SupportConvoEntry(Alena, Sera, 0, 0, 0)
+
+SupportConvoEntry(Varga, Cleo, 0, 0, 0) 
+SupportConvoEntry(Varga, Emil, 0, 0, 0)
+SupportConvoEntry(Varga, Zwieback, 0, 0, 0)
+SupportConvoEntry(Varga, EliasReal, 0, 0, 0)
+
+SupportConvoEntry(Delilah, Svetomir, 0, 0, 0) 
+SupportConvoEntry(Delilah, Ilse, 0, 0, 0)
+SupportConvoEntry(Delilah, Awa, 0, 0, 0)
+
+SupportConvoEntry(Alex, Axel, 0, 0, 0) 
+SupportConvoEntry(Alex, Faolan, 0, 0, 0)
+SupportConvoEntry(Alex, Mantou, 0, 0, 0)
+
+SupportConvoEntry(Axel, Alex, 0, 0, 0) 
+SupportConvoEntry(Axel, Iberis, 0, 0, 0)
+SupportConvoEntry(Axel, Pelecaye, 0, 0, 0) 
+
+SupportConvoEntry(Zwieback, Varga, 0, 0, 0) 
+SupportConvoEntry(Zwieback, Filone, 0, 0, 0)
+SupportConvoEntry(Zwieback, Ellerey, 0, 0, 0)
+
+SupportConvoEntry(Filone, Alena, 0, 0, 0)
+SupportConvoEntry(Filone, Zwieback, 0, 0, 0)
+SupportConvoEntry(Filone, Tobie, 0, 0, 0)
+
+SupportConvoEntry(Longxia, Fangai, 0, 0, 0)
+SupportConvoEntry(Longxia, Cadenza, 0, 0, 0)
+SupportConvoEntry(Longxia, Groto, 0, 0, 0)
+
+SupportConvoEntry(Fangai, Longxia, 0, 0, 0)
+SupportConvoEntry(Fangai, Faolan, 0, 0, 0)
+SupportConvoEntry(Fangai, Tippany, 0, 0, 0)
+
+SupportConvoEntry(Mish, Tobie, 0, 0, 0) 
+SupportConvoEntry(Mish, Takai, 0, 0, 0)
+SupportConvoEntry(Mish, Tara, 0, 0, 0)
+
+SupportConvoEntry(Tobie, Mish, 0, 0, 0) 
+SupportConvoEntry(Tobie, Takai, 0, 0, 0)
+SupportConvoEntry(Tobie, Filone, 0, 0, 0)
+
+SupportConvoEntry(Awa, Delilah, 0, 0, 0)
+SupportConvoEntry(Awa, Zhara, 0, 0, 0)
+SupportConvoEntry(Awa, Nikolas, 0, 0, 0)
+
+SupportConvoEntry(Matthias, Cromar, 0, 0, 0)
+SupportConvoEntry(Matthias, Tippany, 0, 0, 0)
+SupportConvoEntry(Matthias, Ilse, 0, 0, 0)
+
+SupportConvoEntry(Faolan, Fangai, 0, 0, 0)
+SupportConvoEntry(Faolan, Alex, 0, 0, 0)
+SupportConvoEntry(Faolan, Buldak, 0, 0, 0)
+
+SupportConvoEntry(Cadenza, Longxia, 0, 0, 0)
+SupportConvoEntry(Cadenza, Mink, 0, 0, 0)
+SupportConvoEntry(Cadenza, Kofi, 0, 0, 0)
+
+SupportConvoEntry(Leina, Mantou, 0, 0, 0)
+SupportConvoEntry(Leina, Cromar, 0, 0, 0)
+SupportConvoEntry(Leina, Ngondala, 0, 0, 0)
+
+SupportConvoEntry(Cromar, Loewe, 0, 0, 0)
+SupportConvoEntry(Cromar, Leina, 0, 0, 0)
+SupportConvoEntry(Cromar, Matthias, 0, 0, 0)
+
+SupportConvoEntry(Iberis, Nora, 0, 0, 0)
+SupportConvoEntry(Iberis, Hans, 0, 0, 0)
+SupportConvoEntry(Iberis, Axel, 0, 0, 0)
+
+SupportConvoEntry(Buldak, Faolan, 0, 0, 0)
+SupportConvoEntry(Buldak, Valse, 0, 0, 0)
+SupportConvoEntry(Buldak, Tao, 0, 0, 0)
+
+SupportConvoEntry(Nora, Hans, 0, 0, 0)
+SupportConvoEntry(Nora, Iberis, 0, 0, 0)
+SupportConvoEntry(Nora, Ichwep, 0, 0, 0)
+
+SupportConvoEntry(Hans, Nora, 0, 0, 0)
+SupportConvoEntry(Hans, Iberis, 0, 0, 0)
+SupportConvoEntry(Hans, Milo, 0, 0, 0)
+
+SupportConvoEntry(Meldan, Jenny, 0, 0, 0)
+SupportConvoEntry(Meldan, Volran, 0, 0, 0)
+SupportConvoEntry(Meldan, Tippany, 0, 0, 0)
+
+SupportConvoEntry(Jenny, Tao, 0, 0, 0)
+SupportConvoEntry(Jenny, Meldan, 0, 0, 0)
+SupportConvoEntry(Jenny, Zhara, 0, 0, 0)
+
+SupportConvoEntry(Hornet, Valse, 0, 0, 0)
+SupportConvoEntry(Hornet, Nahiza, 0, 0, 0)
+SupportConvoEntry(Hornet, Shaw, 0, 0, 0)
+
+SupportConvoEntry(Valse, Hornet, 0, 0, 0)
+SupportConvoEntry(Valse, Carl, 0, 0, 0)
+SupportConvoEntry(Valse, Buldak, 0, 0, 0)
+
+SupportConvoEntry(Ichwep, Milo, 0, 0, 0)
+SupportConvoEntry(Ichwep, Nora, 0, 0, 0)
+SupportConvoEntry(Ichwep, Mantou, 0, 0, 0)
+
+SupportConvoEntry(Milo, Ichwep, 0, 0, 0)
+SupportConvoEntry(Milo, Hans, 0, 0, 0)
+SupportConvoEntry(Milo, Pelecaye, 0, 0, 0)
+
+SupportConvoEntry(Mink, KwameReal, 0, 0, 0)
+SupportConvoEntry(Mink, Cadenza, 0, 0, 0)
+SupportConvoEntry(Mink, Augur, 0, 0, 0)
+
+SupportConvoEntry(Tiberius, Mira, 0, 0, 0)
+SupportConvoEntry(Tiberius, Iskra, 0, 0, 0)
+SupportConvoEntry(Tiberius, Ojasvi, 0, 0, 0)
+
+SupportConvoEntry(Ellerey, Darby, 0, 0, 0)
+SupportConvoEntry(Ellerey, Jacinth, 0, 0, 0)
+SupportConvoEntry(Ellerey, Zwieback, 0, 0, 0)
+
+SupportConvoEntry(Mantou, Ichwep, 0, 0, 0)
+SupportConvoEntry(Mantou, Alex, 0, 0, 0)
+SupportConvoEntry(Mantou, Leina, 0, 0, 0)
+
+SupportConvoEntry(Tippany, Matthias, 0, 0, 0)
+SupportConvoEntry(Tippany, Fangai, 0, 0, 0)
+SupportConvoEntry(Tippany, Meldan, 0, 0, 0)
+
+SupportConvoEntry(Pelecaye, Milo, 0, 0, 0)
+SupportConvoEntry(Pelecaye, Axel, 0, 0, 0)
+SupportConvoEntry(Pelecaye, Darcy, 0, 0, 0)
+
+SupportConvoEntry(Carl, Valse, 0, 0, 0)
+SupportConvoEntry(Carl, Asha, 0, 0, 0)
+SupportConvoEntry(Carl, Sera, 0, 0, 0)
+
+SupportConvoEntry(Takai, Tobie, 0, 0, 0)
+SupportConvoEntry(Takai, Mish, 0, 0, 0)
+SupportConvoEntry(Takai, Shaw, 0, 0, 0)
+
+SupportConvoEntry(Darby, Ellerey, 0, 0, 0)
+SupportConvoEntry(Darby, Jacinth, 0, 0, 0)
+SupportConvoEntry(Darby, Cleo, 0, 0, 0)
+
+SupportConvoEntry(Jacinth, Ellerey, 0, 0, 0)
+SupportConvoEntry(Jacinth, Darby, 0, 0, 0)
+SupportConvoEntry(Jacinth, Apsis, 0, 0, 0)
+
+SupportConvoEntry(Nahiza, Rashid, 0, 0, 0)
+SupportConvoEntry(Nahiza, Hornet, 0, 0, 0)
+SupportConvoEntry(Nahiza, Jerry, 0, 0, 0)
+
+SupportConvoEntry(Augur, Rashid, 0, 0, 0)
+SupportConvoEntry(Augur, Catrin, 0, 0, 0)
+SupportConvoEntry(Augur, Mink, 0, 0, 0)
+
+SupportConvoEntry(Ilse, Matthias, 0, 0, 0)
+SupportConvoEntry(Ilse, Delilah, 0, 0, 0)
+SupportConvoEntry(Ilse, Ojasvi, 0, 0, 0)
+
+SupportConvoEntry(Asha, Loewe, 0, 0, 0)
+SupportConvoEntry(Asha, Ojasvi, 0, 0, 0)
+SupportConvoEntry(Asha, Carl, 0, 0, 0)
+
+SupportConvoEntry(Rashid, Nahiza, 0, 0, 0)
+SupportConvoEntry(Rashid, Augur, 0, 0, 0)
+SupportConvoEntry(Rashid, Nikolas, 0, 0, 0)
+
+SupportConvoEntry(Kofi, Cadenza, 0, 0, 0)
+SupportConvoEntry(Kofi, Nikolas, 0, 0, 0)
+SupportConvoEntry(Kofi, KwameReal, 0, 0, 0)
+
+SupportConvoEntry(Nikolas, Awa, 0, 0, 0)
+SupportConvoEntry(Nikolas, Rashid, 0, 0, 0)
+SupportConvoEntry(Nikolas, Kofi, 0, 0, 0)
+
+SupportConvoEntry(KwameReal, Mink, 0, 0, 0)
+SupportConvoEntry(KwameReal, Kofi, 0, 0, 0)
+SupportConvoEntry(KwameReal, Catrin, 0, 0, 0)
+SupportConvoEntry(KwameReal, Ngondala, 0, 0, 0)
+
+SupportConvoEntry(Sera, Shaw, 0, 0, 0)
+SupportConvoEntry(Sera, Alena, 0, 0, 0)
+SupportConvoEntry(Sera, Carl, 0, 0, 0)
+
+SupportConvoEntry(Shaw, Sera, 0, 0, 0)
+SupportConvoEntry(Shaw, Hornet, 0, 0, 0)
+SupportConvoEntry(Shaw, Takai, 0, 0, 0)
+
+//interlude
+
+SupportConvoEntry(Tao, Buldak, 0, 0, 0)
+SupportConvoEntry(Tao, Loewe, 0, 0, 0)
+SupportConvoEntry(Tao, Jenny, 0, 0, 0)
+
+SupportConvoEntry(Darcy, Pelecaye, 0, 0, 0)
+SupportConvoEntry(Darcy, Locke, 0, 0, 0)
+
+SupportConvoEntry(Apsis, Jacinth, 0, 0, 0)
+SupportConvoEntry(Apsis, Groto, 0, 0, 0)
+
+SupportConvoEntry(Zhara, Jenny, 0, 0, 0)
+SupportConvoEntry(Zhara, Svetomir, 0, 0, 0)
+SupportConvoEntry(Zhara, Awa, 0, 0, 0)
+
+SupportConvoEntry(Ojasvi, Ilse, 0, 0, 0)
+SupportConvoEntry(Ojasvi, Tiberius, 0, 0, 0)
+SupportConvoEntry(Ojasvi, Asha, 0, 0, 0)
+
+SupportConvoEntry(Groto, Longxia, 0, 0, 0)
+SupportConvoEntry(Groto, Apsis, 0, 0, 0)
+
+SupportConvoEntry(Volran, Tara, 0, 0, 0)
+SupportConvoEntry(Volran, Meldan, 0, 0, 0)
+
+SupportConvoEntry(Tara, Mish, 0, 0, 0)
+SupportConvoEntry(Tara, Volran, 0, 0, 0)
+
+SupportConvoEntry(Jerry, Lyre, 0, 0, 0)
+SupportConvoEntry(Jerry, Nahiza, 0, 0, 0)
+
+SupportConvoEntry(Lyre, Cleo, 0, 0, 0)
+SupportConvoEntry(Lyre, Jerry, 0, 0, 0)
+
+SupportConvoEntry(Ngondala, Leina, 0, 0, 0)
+SupportConvoEntry(Ngondala, KwameReal, 0, 0, 0)
+SupportConvoEntry(Ngondala, Locke, 0, 0, 0)
+
+SupportConvoEntry(CatrinReal, Loewe, 0, 0, 0)
+SupportConvoEntry(CatrinReal, KwameReal, 0, 0, 0)
+SupportConvoEntry(CatrinReal, Augur, 0, 0, 0)
+
+SupportConvoEntry(Locke, Ngondala, 0, 0, 0)
+SupportConvoEntry(Locke, Darcy, 0, 0, 0)
+
+SupportConvoEntry(TrajanReal,Mira,0,0,0)
+SupportConvoEntry(TrajanReal,BoroReal,0,0,0)
+
+SupportConvoEntry(EliasReal,Cleo,0,0,0)
+SupportConvoEntry(EliasReal,Varga,0,0,0)
+
+SupportConvoEntry(BoroReal,Mira,0,0,0)
+SupportConvoEntry(BoroReal,TrajanReal,0,0,0)
+
+SupportConvoTerminator

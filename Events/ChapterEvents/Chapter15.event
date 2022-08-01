@@ -23,7 +23,16 @@ TurnEventPlayer(0,ReinforceTurn5, 5)
 TurnEventPlayer(0,ThiefSpawn3, 6)
 TurnEventPlayer(0,ThiefSpawn4, 8)
 TurnEventPlayer(0,NoAntiturtle,11)
+TurnEventPlayer(0,AshaSpawn,1)
 END_MAIN
+
+AshaSpawn:
+CameraCursor(Asha)
+Text(AshaJoins)
+CUSA Asha
+SetFatigue(Asha,0)
+NoFade
+ENDA
 
 CleoWarning:
 CameraCursor(Cleo)
@@ -266,6 +275,10 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
+AshaGroup:
+UNIT Asha Thief_F Cleo Level(15,NPC,False) [5,26] 0x0 0x0 0x0 0x1 [KillingEdge,IronSword] NoAI
+UNIT 
+
 CoraliaAndCenterGroup:
 UNIT Cythes Champion 0x0 Level(1,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
 UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [11,27] 0x0 0x0 0x0 0x0 [IceSword] BossAI
@@ -431,6 +444,7 @@ ENUN
 REMOVEUNIT Kassandra
 ENUN
 Text(Ch15BeginningScene6Part4)
+FADI 15
 DismountAll
 CHECK_EVENTID 0x86 //did the event already happen
 BNE 42 s0 sC
@@ -438,6 +452,8 @@ BNE 42 s0 sC
 	RemoveAllItem(Kaiserschwert_Fake)
 	SilentGiveItem(Kaiserschwert,Loewe)
 LABEL 42
+LOAD1 1 AshaGroup
+ENUN
 GotoPrepScreen
 NoFade
 ENDA

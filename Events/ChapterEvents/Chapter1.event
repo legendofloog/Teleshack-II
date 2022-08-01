@@ -126,7 +126,14 @@ UNIT
 Units3:
 UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [19,15] 0x0 0x0 0x1 REDA18R15 [Thunder,Vulnerary]                NoAI
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [19,17] 0x0 0x0 0x1 REDA18R17 [IronLance,Vulnerary,DoorKey]              NoAI
-UNIT 
+UNIT
+
+GreenUnits:
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
+UNIT
 
 Flashback1Units1:
 UNIT Chapter1Generics Swordmaster_F 0x0 Level(1,NPC,False) [2,4] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
@@ -152,14 +159,6 @@ UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [13,0] 0x0 0x0 0x1 RE
 UNIT Svetomir SwordFighter 0x0 Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA10R1 [0x0] NoAI
 UNIT 
 
-GreenUnits:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
-UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
-UNIT
-
-
 EnemyUnits:
 UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
@@ -177,7 +176,7 @@ UNIT
 
 
 Turn2Reinforcements:
-UNIT Alena Myrmidon_F 0x0 Level(3,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] DoNothingAI
+UNIT Alena Myrmidon_F 0x0 Level(2,Enemy,False) [2,14] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] DoNothingAI
 UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,13] 0x0 0x0 0x0 0x0 [ShortSword] DoNothingAI
 UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,15] 0x0 0x0 0x0 0x0 [ShortSword] DoNothingAI
 UNIT
@@ -426,6 +425,7 @@ SvetomirAlenaTalkCh1:
 MUSS WithUs_Song
 Text(SvetomirAlenaTalkCh1Text)
 CUSA Alena
+SetFatigue(Alena,0)
 MURE 2
 NoFade
 ENDA
@@ -441,6 +441,7 @@ MUSS WithUs_Song
 Text(LoeweSvetomirFreedText)
 CUSA Loewe
 CUSA Svetomir
+SetFatigue(Svetomir,0)
 GiveItem(IronBow,Loewe)
 GiveItem(Heal,Svetomir)
 SilentGiveItem(Vulnerary,Loewe)
@@ -514,6 +515,7 @@ BNE 2 s0 sC
 	BEQ 57 s0 sC //if she's not removed, branch; if so, play captured dialogue
 		Text(EndingSceneTextLoeweAndCleoIskraCaptured)
 		GiveItem(Kaiserschwert_Fake,Loewe)
+		GOTO 907
 	LABEL 57 
 	Text(EndingSceneTextLoeweAndCleoIskraAlive1)
 	SPAWN_ALLY Iskra [20,16]

@@ -24,6 +24,7 @@ struct GrowthScrollEntry{
 };
 
 extern struct GrowthScrollEntry GrowthScrollBonusesTable[];
+int GetEquipmentStatBonus(Unit* unit, int stat);
 
 int GetEquipmentStatBonus(Unit* unit, int stat){
 	Item item = GetUnitEquippedItem(unit);

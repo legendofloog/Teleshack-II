@@ -4,6 +4,8 @@
 // Contemporary talk and support.
 // Hack by circleseverywhere
 
+//support fix update by 7743
+
 // include while in BL range, with inBLRange defined
 
 #ifdef _FE8_
@@ -16,7 +18,7 @@
       BL(TalkFix)
 
     ORG $32438
-      BL(SupportFix)
+      BL(SupportFix) // support fix has a notable bug where the support convo replays after the effect
   POP
 
   ALIGN 4
@@ -25,7 +27,7 @@
   
   ALIGN 4
   SupportFix:
-    #incbin "asm/SupportFix.dmp"
+   #incbin "asm/SupportFix.dmp"
 
   }
 

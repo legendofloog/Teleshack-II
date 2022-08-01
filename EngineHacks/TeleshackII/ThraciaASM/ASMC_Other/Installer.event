@@ -10,3 +10,4 @@
 #define CheckTileChangeTriggered(tileChangeId) "SVAL s1 tileChangeId; ASMC CheckIfTileChangeTriggered"
 
 #define CheckIfDefeatedUnitCaptured "ASMC CheckIfTargetUnitWasCaptured"
+//#define GiveBlueUnitItemAfterCombatASMC(item) "SVAL s1 item; ASMC GiveBlueUnitItemAfterCombat"

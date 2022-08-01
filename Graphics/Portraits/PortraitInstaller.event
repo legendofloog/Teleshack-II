@@ -76,8 +76,12 @@
 #define MinkMug 0xF7
 #define TiberiusMug 0xF8
 #define DraganaDeadlordMug 0xF9
+#define AlexMug 0xC
+#define AxelMug 0xE
 #define MarynMug 0xFA
 #define ViktorMug 0xFB
+#define AthanasiusMug 0x35
+#define AshaMug 0xA4
 
 // NPCs
 #define EliasMug 0xB
@@ -137,6 +141,7 @@
 #define PeriheliosMug 0x3C
 #define MysteryMug 0x3D
 #define EithaMug 0x3E
+#define CherneMug 0x39
 
 ALIGN 16
 CleoMugData:
@@ -1147,6 +1152,22 @@ LockeMugData:
 setMugEntry(LockeMug, LockeMugData, 3, 5, 3, 3)
 
 ALIGN 16
+AlexMugData:
+#incbin "Dmp/Alex (Levin64)_mug.dmp"
+#incbin "Dmp/Alex (Levin64)_frames.dmp"
+#incbin "Dmp/Alex (Levin64)_palette.dmp"
+#incbin "Dmp/Alex (Levin64)_minimug.dmp"
+setMugEntry(AlexMug, AlexMugData, 2, 5, 3, 3)
+
+ALIGN 16
+AxelMugData:
+#incbin "Dmp/Axel (Levin64)_mug.dmp"
+#incbin "Dmp/Axel (Levin64)_frames.dmp"
+#incbin "Dmp/Axel (Levin64)_palette.dmp"
+#incbin "Dmp/Axel (Levin64)_minimug.dmp"
+setMugEntry(AxelMug, AxelMugData, 2, 5, 3, 3)
+
+ALIGN 16
 MihailMugData:
 #incbin "Dmp/Mihail (Laurent_Lacroix)_mug.dmp"
 #incbin "Dmp/Mihail (Laurent_Lacroix)_frames.dmp"
@@ -1226,3 +1247,27 @@ PeriheliosMugData:
 #incbin "Dmp/Perihelios(Devisio,Xilirite)_palette.dmp"
 #incbin "Dmp/Perihelios(Devisio,Xilirite)_minimug.dmp"
 setMugEntry(PeriheliosMug, PeriheliosMugData, 5, 5, 6, 3)
+
+ALIGN 16
+AthanasiusMugData:
+#incbin "Dmp/Athanasius(knabepicer)_mug.dmp"
+#incbin "Dmp/Athanasius(knabepicer)_frames.dmp"
+#incbin "Dmp/Athanasius(knabepicer)_palette.dmp"
+#incbin "Dmp/Athanasius(knabepicer)_minimug.dmp"
+setMugEntry(AthanasiusMug, AthanasiusMugData, 2, 5, 3, 2)
+
+ALIGN 16
+CherneMugData:
+#incbin "Dmp/Cherne(devisio,epicer)_mug.dmp"
+#incbin "Dmp/Cherne(devisio,epicer)_frames.dmp"
+#incbin "Dmp/Cherne(devisio,epicer)_palette.dmp"
+#incbin "Dmp/Cherne(devisio,epicer)_minimug.dmp"
+setMugEntry(CherneMug, CherneMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AshaMugData:
+#incbin "Dmp/Asha (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Asha (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Asha (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Asha (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(AshaMug, AshaMugData, 3, 7, 3, 5)

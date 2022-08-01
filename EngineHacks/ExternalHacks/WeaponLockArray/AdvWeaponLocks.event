@@ -32,6 +32,7 @@ ArgilabrysArray:
 BYTE HardCharLock
 BYTE Cleo
 BYTE Elias
+BYTE EliasReal
 BYTE EndLockArray
 
 DevilDaggerArray:
@@ -147,6 +148,7 @@ BYTE EndLockArray
 TarajiArray:
 BYTE HardCharLock
 BYTE Taraji
+BYTE TarajiReal
 BYTE EndLockArray
 
 CatrinArray:
