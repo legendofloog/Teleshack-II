@@ -280,7 +280,7 @@ UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBla
 UNIT Tao Archer Loewe Level(10,NPC,False) [21,17] 0x0 0x0 0x0 0x0 [Taodao,RuneArrow]     NoAI
 UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT Boro_Ch16 Champion Loewe Level(5,NPC,False) [22,13] 0x0 0x0 0x0 0x0 [MasterLance]     NoAI
-UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat, KnightProof] NoAI
+UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat] NoAI
 UNIT
 
 BeginningScene:
@@ -296,11 +296,11 @@ SetBackground(0x9)
 MUSC FE5_InTheBattle_Fate
 Text(Ch18xBeginningScene2OnDaBoat3)
 Text(Ch18xBeginningScene2OnDaBoat4)
-MUSC 0x7FFF
+FadeOutMusic
 Text(Ch18xBeginningScene2OnDaBoat5)
 MUSC FF6AwakeningID
 Text(Ch18xBeginningScene2OnDaBoat6)
-MUSC 0x7FFF
+FadeOutMusic
 SetBackground(0x8)
 Text(Ch18xBeginningScene3PortLazar1)
 SetBackground(0x7)
@@ -331,12 +331,14 @@ MUSC Rovers
 Text(Ch18xEndingScene1AtThePort1)
 Text(Ch18xEndingScene2InTheClearing1)
 SetBackground(0x1F)
-MUSC FF5_Nostalgia
+FadeOutMusic
 Text(Ch18xEndingScene2InTheClearing2)
+MUSC FF5_Nostalgia
 Text(Ch18xEndingScene2InTheClearing3)
 Text(Ch18xEndingScene2InTheClearing4)
 Text(Ch18xEndingScene2InTheClearing5)
 Text(Ch18xEndingScene2InTheClearing6)
+FadeOutMusic
 SetBackground(0x15)
 MUSC FF4RedWingsID
 Text(Ch18xEndingScene3OrfeasAndLeonidas)

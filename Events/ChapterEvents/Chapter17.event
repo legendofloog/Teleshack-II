@@ -28,7 +28,7 @@ LocationBasedEvents:
 Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
-//Chest(HeroRing,9,8)
+Chest(Elixir,9,8)
 DurabilityChest(GrowthScroll, AmserScroll,11,9)
 END_MAIN
 

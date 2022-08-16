@@ -17,7 +17,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x0F Loewe,0x0
 0x10 Longxia,0
 0x11 Fangai,0
-0x12 Gimm,0
+0x12 Mish,0
 0x13 Tobie,0
 0x14 Awa,0
 0x15 Cadenza,CadenzaSkillList|IsPointer
@@ -26,7 +26,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x18 Buldak,0
 0x19 Nora,0
 0x1A Hans,0
-0x1B -,0
+0x1B Takai,0
 0x1C Jenny,0
 0x1D Meldan,0
 0x1E Valse,ValseSkillList|IsPointer
@@ -48,31 +48,31 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x2E Rashid,RashidSkillList|IsPointer
 0x2F Nikolas,0
 0x30 Sera,0
-0x31 -,0
+0x31 Shaw,0
 0x32 Apsis,ApsisSkillList|IsPointer
 0x33 Ojasvi,0
 0x34 Darcy,0
 0x35 Groto,0
 0x36 Tao,0
 0x37 Zhara,0
-0x38 -,0
-0x39 -,0
-0x3A -,0
-0x3B Lyon's Summon,0
-0x3C <Summon>,0
-0x3D <'Summonern'>,0
-0x3E Knoll's Summon,0
-0x3F Ewan's Summon,0
-0x40 Lyon (Ch 17),0
-0x41 Morva (Ch 20),0
-0x42 Orson (Ch 5x),0
-0x43 Valter (Ch 15),0
-0x44 Selena (Ch 10B & 13B),0
-0x45 Valter (Prologue),0
-0x46 Breguet (Ch 1),0
-0x47 Bone (Ch 2),0
-0x48 Bazba (Ch 3),0
-0x49 Entombed (Ch 4),0
+0x38 Volran,0
+0x39 Tara,0
+0x3A Jerry,0
+0x3B Lyre,0
+0x3C Ngondala,0
+0x3D CatrinReal,0
+0x3E Matthias,0
+0x3F KwameReal,0
+0x40 Kofi,0
+0x41 Trajan,0
+0x42 Locke,0
+0x43 EliasReal,0
+0x44 BoroReal,0
+0x45 Orfeas,0
+0x46 BarodReal,0
+0x47 Taraji,0
+0x48 Athanasius,0
+0x49 Asha,0
 0x4A Saar (Ch 5),0
 0x4B Eitha (Ch 6),EithaSkillList|IsPointer
 0x4C Murray (Ch 7),0

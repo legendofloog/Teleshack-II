@@ -261,15 +261,19 @@
 #define ArchKnightFBowAnim 0xEC
 #define ArchKnightFUnarmedAnim 0xED
 
+#define AugurDragonstoneAnim 0xC7
+
 
 ALIGN 4
 PriestAnims:
 StaffAnim(PriestStaffAnim)
+UnarmedAnim(PriestStaffAnim)
 EndAnim
 
 ALIGN 4
 ClericAnims:
 StaffAnim(ClericStaffAnim)
+UnarmedAnim(ClericStaffAnim)
 EndAnim
 
 
@@ -734,10 +738,9 @@ HandAxeAnim(0x1D)
 UnarmedAnim(0x1F)
 EndAnim
 
-/*
+
 ALIGN 4
 AugurAnims:
-SpecialAnim(Animation,Dragonstone)
-SpecialAnim(Animation,Firestone)
+SpecialAnim(AugurDragonstoneAnim,Dragonstone)
+UnarmedAnim(AugurDragonstoneAnim)
 EndAnim
-*/

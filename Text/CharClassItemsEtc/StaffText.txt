@@ -5,12 +5,10 @@ Sigil[X]
 Light Rune[X]
 
 ## SigilStaffDesc
-Create a light rune[NL]
-to block off paths.[X]
+Create a light rune to block off paths.[X]
 
 ## LightRuneStaffUseDesc
-Block off a space[NL]
-with a light rune.[X]
+Block off a space with a light rune.[X]
 
 ## LightRuneHelpText
 Select where to summon a Light Rune[X]
@@ -19,21 +17,19 @@ Select where to summon a Light Rune[X]
 Rewarp[X]
 
 ## RewarpStaffDesc
-Teleport user to [NL]
-another area.[X]
+Teleport user to another area.[X]
 
 ## StealStaffName
 Thief[X]
 
 ## StealStaffDesc
-Steal an item from[NL]
-your target.[X]
+Steal an item from your target.[X]
 
 ## BurglarStaffName
 Burglar[X]
 
 ## BurglarStaffDesc
-Opens doors and chests.[X]
+Opens doors and chests at range.[X]
 
 ## BurgularStaffHelpText
 Select door or chest to open[X]
@@ -42,5 +38,4 @@ Select door or chest to open[X]
 Again[X]
 
 ## AgainStaffDesc
-Allow an ally to[NL]
-move again.[X]
+Allow an ally to move again.[X]

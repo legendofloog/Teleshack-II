@@ -334,3 +334,9 @@
 {
 #include "Animations/Ballistician(Spud,Ren_Ookami,Pushwall)/Bow Installer.event"
 }
+{
+#include "Animations/Augur(knabepicer)/Dragonstone Installer.event"
+#include "Animations/Augur(knabepicer)/Transform Installer.event"
+#include "Animations/Augur(knabepicer)/Revert Installer.event"
+#include "Animations/Augur(knabepicer)/Unarmed Installer.event"
+}

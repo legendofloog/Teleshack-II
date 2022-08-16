@@ -328,7 +328,7 @@ BNE 2 s0 sC
 	CHECK_EVENTID 0x88
 	BNE 2 s0 sC
     	SetBackground(OutsideFort)
-    	MUSC(Advance)
+    	MUSC Advance
     	Text(VargaPrf)
     	GiveItem(AquaBrand,Varga)
     	ENUT 0x88
@@ -338,7 +338,7 @@ BNE 4 s0 sC
 	CHECK_EVENTID 0x89
 	BNE 4 s0 sC
 		SetBackground(OutsideFort)
-		MUSC(Advance)
+		MUSC Advance
 		Text(EmilPrf)
 		GiveItem(ChargeLance,Emil)
 		ENUT 0x89

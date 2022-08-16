@@ -32,7 +32,7 @@ beq End
 
 ldr r3,=0x203a968 @Spaces Moved
 ldrb r2,[r3]
-lsr r2,#0x1
+@ lsr r2,#0x1 //divides by 2 which I don't want - Loog
 mov r1, #0x5A
 ldrh r0, [r4, r1]
 add r0, r2

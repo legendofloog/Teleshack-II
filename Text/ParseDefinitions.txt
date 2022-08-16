@@ -162,7 +162,7 @@
 [LoadHamdi] = [LoadFace][0xD9][0x1]
 [LoadColossus] = [LoadFace][0xDA][0x1]
 [LoadAlto] = [LoadFace][0xDC][0x1]
-[LoadMystery] = [LoadFace][0xDD][0x1]
+[LoadMystery] = [LoadFace][0x3D][0x1]
 [LoadMithras] = [LoadMystery]
 [LoadByelen] = [LoadMithras]
 [LoadShafaqat] = [LoadFace][0xDF][0x1]

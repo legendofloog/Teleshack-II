@@ -32,10 +32,155 @@ EndingNoRetreatTableEntry(Mira)
 EndingWithrawalTableTerminator
 
 NewEndingTitleTable:
-EndingTitleTableEntry(Cleo, $7D7)
+EndingTitleTableEntry(Cleo, CleoTitle)
+EndingTitleTableEntry(Loewe,LoeweTitle)
+EndingTitleTableEntry(Mira,MiraTitle)
+EndingTitleTableEntry(Iskra,IskraTitle)
+EndingTitleTableEntry(Emil,EmilTitle)
+EndingTitleTableEntry(Svetomir,SvetomirTitle)
+EndingTitleTableEntry(Alena,AlenaTitle)
+
+EndingTitleTableEntry(Varga,VargaTitle)
+EndingTitleTableEntry(Delilah,DelilahTitle)
+
+EndingTitleTableEntry(Longxia,LongxiaTitle)
+EndingTitleTableEntry(Fangai,FangaiTitle)
+
+EndingTitleTableEntry(Tobie, TobieTitle)
+
+EndingTitleTableEntry(Nora, NoraTitle)
+EndingTitleTableEntry(Hans, HansTitle)
+
+EndingTitleTableEntry(Ellerey, EllereyTitle)
+
+EndingTitleTableEntry(Darby, DarbyTitle)
+EndingTitleTableEntry(Jacinth, JacinthTitle)
+
+EndingTitleTableEntry(Augur, AugurTitle)
+EndingTitleTableEntry(Nahiza, NahizaTitle)
+
+EndingTitleTableEntry(Ilse, IlseTitle)
+EndingTitleTableEntry(Asha, AshaTitle)
+
+EndingTitleTableEntry(Rashid, RashidTitle)
+EndingTitleTableEntry(Kofi, KofiTitle)
+
+EndingTitleTableEntry(Tao, TaoTitle)
+EndingTitleTableEntry(Ojasvi, OjasviTitle)
+
+EndingTitleTableEntry(Ngondala, NgondalaTitle)
+EndingTitleTableEntry(CatrinReal, CatrinTitle)
+
+EndingTitleTableEntry(EliasReal, EliasTitle)
+EndingTitleTableEntry(BoroReal,BoroTitle)
+
+EndingTitleTableEntry(TarajiReal, TarajiTitle)
+EndingTitleTableEntry(Athanasius, AthanTitle)
 EndingTitleTableTerminator
 
 ALIGN 4
 NewEndingsTable:
-SoloEndingTableEntry(Cleo, $7D8)
+SoloEndingTableEntry(Iskra, IskraEnding)
+SoloEndingTableEntry(Emil, EmilEnding)
+PairedEndingTableEntry(Svetomir, Delilah, SvetomirDelilahEnding)
+SoloEndingTableEntry(Svetomir, SvetomirEnding)
+
+SoloEndingTableEntry(Alena, AlenaEnding)
+
+//2
+PairedEndingTableEntry(Varga, Zwieback, VargaZwiebackEnding)
+//SoloEndingTableEntry(Varga,VargaEnding)
+
+//4
+PairedEndingTableEntry(Filone, Zwieback, FiloneZwiebackEnding)
+
+//5
+PairedEndingTableEntry(Longxia, Cadenza, LongxiaCadenzaEnding)
+PairedEndingTableEntry(Longxia, Fangai, LongxiaFangaiEnding)
+PairedEndingTableEntry(Longxia, Groto, LongxiaGrotoEnding)
+SoloEndingTableEntry(Longxia,LongxiaEnding)
+
+SoloEndingTableEntry(Fangai, FangaiEnding)
+
+//5x
+PairedEndingTableEntry(Matthias, Tippany, MatthiasTippanyEnding)
+PairedEndingTableEntry(Cadenza, Kofi, CadenzaKofiEnding)
+
+PairedEndingTableEntry(Mish,Ellerey,MishEllereyEnding)
+PairedEndingTableEntry(Mish,Tobie,MishTobieEnding)
+
+SoloEndingTableEntry(Tobie, TobieEnding)
+
+//8
+SoloEndingTableEntry(Hans,HansEnding)
+
+//12x
+SoloEndingTableEntry(Ellerey,EllereyEnding)
+
+//13
+SoloEndingTableEntry(Jacinth,JacinthEnding)
+SoloEndingTableEntry(Darby,DarbyEnding)
+
+//14
+SoloEndingTableEntry(Nahiza, NahizaEnding)
+SoloEndingTableEntry(Augur, AugurEnding)
+
+//15
+PairedEndingTableEntry(Ilse, Ojasvi, IlseOjasviEnding)
+SoloEndingTableEntry(Ilse, IlseEnding)
+SoloEndingTableEntry(Asha, AshaEnding)
+
+//16
+SoloEndingTableEntry(Kofi, KofiEnding)
+PairedEndingTableEntry(Rashid,Nikolas,RashidNikolasEnding)
+SoloEndingTableEntry(Rashid, RashidEnding)
+
+
+//18x
+
+SoloEndingTableEntry(Ojasvi, OjasviEnding)
+SoloEndingTableEntry(Tao, TaoEnding)
+
+//21 (Ngondala)
+SoloEndingTableEntry(Ngondala, NgondalaEnding)
+
+//Athan, Taraji, Barod
+SoloEndingTableEntry(Athanasius, AthanEnding)
+SoloEndingTableEntry(TarajiReal, TarajiEnding)
+
+//Orfeas, Elias, Catrin
+
+PairedEndingTableEntry(EliasReal, Varga, VargaEliasEnding)
+SoloEndingTableEntry(EliasReal, EliasEnding)
+
+//Catrin
+SoloEndingTableEntry(CatrinReal, CatrinEnding)
+
+//Trajan, Mira, Boro
+PairedEndingTableEntry(TrajanReal,BoroReal,TrajanBoroEnding)
+PairedEndingTableEntry(TrajanReal,Mira,MiraTrajanEnding)
+
+PairedEndingTableEntry(Mira, Iskra, MiraIskraEnding)
+PairedEndingTableEntry(Mira, BoroReal, MiraBoroEnding)
+PairedEndingTableEntry(Mira, TrajanReal, MiraTrajanEnding)
+SoloEndingTableEntry(Mira, MiraEnding)
+
+PairedEndingTableEntry(BoroReal,Mira,MiraBoroEnding)
+SoloEndingTableEntry(BoroReal, BoroEnding)
+
+
+// Lords
+PairedEndingTableEntry(Loewe, Asha, LoeweAshaEnding)
+PairedEndingTableEntry(Loewe, Iskra, LoeweIskraEnding)
+PairedEndingTableEntry(Loewe, Cromar, LoeweEnding)
+PairedEndingTableEntry(Loewe, Tao, LoeweTaoEnding)
+PairedEndingTableEntry(Loewe, CatrinReal, LoeweCatrinEnding)
+SoloEndingTableEntry(Loewe, LoeweEnding)
+
+PairedEndingTableEntry(Cleo, Emil, CleoEmilEnding)
+PairedEndingTableEntry(Cleo, EliasReal, CleoEliasEnding)
+PairedEndingTableEntry(Cleo, Varga, CleoEnding)
+PairedEndingTableEntry(Cleo, Lyre, CleoLyreEnding)
+PairedEndingTableEntry(Cleo, Darby, CleoDarbyEnding)
+SoloEndingTableEntry(Cleo, CleoEnding)
 EndingTableTerminator

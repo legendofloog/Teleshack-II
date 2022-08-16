@@ -33,6 +33,7 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
+Seize(1,6)
 Seize(0x11,RescueAugur,11,4)
 Chest(LightRune,10,6)
 Chest(KnightProof,12,6)
@@ -90,7 +91,7 @@ UNIT Augur Manakete_2_F 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x1 REDA11R5 [Vul
 UNIT
 
 EnemyUnits:
-UNIT Tsoureki Halberdier 0x0 Level(6,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [BattleAxe,Saunion] BossAI
+UNIT Tsoureki Halberdier 0x0 Level(2,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [BattleAxe,Saunion] BossAI
 UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance] BossAI
 UNIT Cythes DarkMage_F Tsoureki Level(14,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Flux,Physic,Elfire] [0xE 0x3 0x0 0x20]
 UNIT Cythes Hero Tsoureki Level(1,Enemy,True)[10,5] 0x0 0x0 0x0 0x0 [Rapier,RedGem,ChestKey] TwoActionAI

@@ -240,17 +240,9 @@ ENUT GuideUnlockFatigue
 ENUT GuideUnlockDismount
 ENUT GuideUnlockCanto
 ENUT GuideUnlockEscape
-ENUT GuideUnlockOrodreth
-ENUT GuideUnlockByelen
-ENUT GuideUnlockCythes
-ENUT GuideUnlockDecia
-ENUT GuideUnlockMahemen
-ENUT GuideUnlockChouwouj
-ENUT GuideUnlockYuliaIslands
 ENUT GuideUnlockFormulaChanges
-ENUT GuideUnlockQoLChanges
-ENUT GuideUnlockElmhurstIsland
 ENUT GuideUnlockDecianLiberators
+ENUT GuideUnlockQoLChanges
 LOMA Ch1LoeweVillage
 LOAD1 1 Flashback1Units1
 ENUN
@@ -326,11 +318,12 @@ Text(BeginningSceneLoeweFlashback2Text7)
 SingleUnitMove(Helman,10,6,0)
 REMOVEUNIT Helman
 FADI 5
-MUSC 0x7FFF
+FadeOutMusic
 WEATHER 0
 REMOVEALL_GREEN
-SetBackground(BlackBackground)
+SetBackground(BlackBackground)		
 CGText(Ch1SvetomirPesteringLoeweText1)
+MUSC FE5_InTheBattle_Fate
 CGText(Ch1SvetomirPesteringLoeweText2)
 CGText(Ch1SvetomirPesteringLoeweText3)
 CGText(Ch1SvetomirPesteringLoeweText4)
@@ -357,6 +350,7 @@ LOAD1 1 Units2
 ENUN
 LOAD1 1 Units3
 ENUN 
+FadeOutMusic
 FlashCursor(Cleo,60)
 MUSC Sortie_Formation
 SetBackground(CastleHallway)

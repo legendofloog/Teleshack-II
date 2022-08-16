@@ -179,6 +179,7 @@ NoFade
 ENDA
 
 KailaniJoin:
+FadeOutMusic
 LOAD1 0x1 KailaniAppears
 ENUN
 FlashCursor(Kailani,60)

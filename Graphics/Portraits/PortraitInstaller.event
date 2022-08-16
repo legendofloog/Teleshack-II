@@ -12,6 +12,7 @@
 #define ZwiebackMug 0x10
 #define LeinaMug 0x11
 #define CromarMug 0x13
+#define CromarFogMug 0x42
 #define LoeweMug 0x14
 #define LongxiaMug 0x16
 #define TrajanMug 0x17
@@ -175,11 +176,11 @@ setMugEntry(EmilMug, EmilMugData, 3, 5, 3, 3)
 
 ALIGN 16
 SvetomirMugData:
-#incbin "Dmp/Svetomir(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Svetomir(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Svetomir(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Svetomir(Laurent_Lacroix)_minimug.dmp"
-setMugEntry(SvetomirMug, SvetomirMugData, 3, 5, 3, 3)
+#incbin "Dmp/Svetomir(knabepicer)_mug.dmp"
+#incbin "Dmp/Svetomir(knabepicer)_frames.dmp"
+#incbin "Dmp/Svetomir(knabepicer)_palette.dmp"
+#incbin "Dmp/Svetomir(knabepicer)_minimug.dmp"
+setMugEntry(SvetomirMug, SvetomirMugData, 2, 5, 2, 2)
 
 ALIGN 16
 AlenaMugData:
@@ -352,10 +353,10 @@ setMugEntry(HilmarMug, HilmarMugData, 3, 5, 3, 3)
 
 ALIGN 16
 LongxiaMugData:
-#incbin "Dmp/Longxia (Capibara)_mug.dmp"
-#incbin "Dmp/Longxia (Capibara)_frames.dmp"
-#incbin "Dmp/Longxia (Capibara)_palette.dmp"
-#incbin "Dmp/Longxia (Capibara)_minimug.dmp"
+#incbin "Dmp/Longxia(RandomWizard)_mug.dmp"
+#incbin "Dmp/Longxia(RandomWizard)_frames.dmp"
+#incbin "Dmp/Longxia(RandomWizard)_palette.dmp"
+#incbin "Dmp/Longxia(RandomWizard)_minimug.dmp"
 setMugEntry(LongxiaMug, LongxiaMugData, 3, 5, 3, 3)
 
 ALIGN 16
@@ -501,11 +502,19 @@ setMugEntry(LeinaMug, LeinaMugData, 3, 6, 3, 4)
 
 ALIGN 16
 CromarMugData:
-#incbin "Dmp/Cromar_mug.dmp"
-#incbin "Dmp/Cromar_frames.dmp"
-#incbin "Dmp/Cromar_palette.dmp"
-#incbin "Dmp/Cromar_minimug.dmp"
+#incbin "Dmp/Cromar(knabepicer)_mug.dmp"
+#incbin "Dmp/Cromar(knabepicer)_frames.dmp"
+#incbin "Dmp/Cromar(knabepicer)_palette.dmp"
+#incbin "Dmp/Cromar(knabepicer)_minimug.dmp"
 setMugEntry(CromarMug, CromarMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CromarFoggingOutMugData:
+#incbin "Dmp/CromarFoggingOut(knabepicer)_mug.dmp"
+#incbin "Dmp/CromarFoggingOut(knabepicer)_frames.dmp"
+#incbin "Dmp/CromarFoggingOut(knabepicer)_palette.dmp"
+#incbin "Dmp/CromarFoggingOut(knabepicer)_minimug.dmp"
+setMugEntry(CromarFogMug, CromarFoggingOutMugData, 3, 5, 3, 3)
 
 ALIGN 16
 McCallumMugData:
