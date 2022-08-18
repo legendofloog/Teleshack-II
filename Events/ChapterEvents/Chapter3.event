@@ -26,6 +26,7 @@ CharacterEventBothWays(14, DraganaLoeweTalkCh3, Loewe, Dragana)
 END_MAIN
 
 LocationBasedEvents:
+House(3, DebugHouse, 6,9)
 Door(20,2)
 Chest(SteelAxe,23,2)
 Chest(RedGem,26,2)
@@ -39,6 +40,7 @@ Escape(0,EscapeEventCheck,29,12)
 Escape(0,EscapeEventCheck,29,13)
 Escape(0,EscapeEventCheck,29,14)
 Escape(0,EscapeEventCheck,29,15)
+//Escape(0,EscapeEventCheck,0,9)
 END_MAIN
 
 EscapeEventCheck:
@@ -64,6 +66,9 @@ AFEV 15 AlexAxelWall 0
 AFEV 0x65 DraganaDeathResponse 0x0D
 CauseGameOverIfLordDies
 END_MAIN
+
+DebugHouse:
+ENDA
 
 AlexAxelWall:
 CHECK_EVENTID 9 // is the door event triggered
@@ -103,16 +108,16 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT
+	UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+	UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT
 
 Traps1:
 RedSigil(29,11)
@@ -132,6 +137,25 @@ DraganaUnit:
 UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SilverBow,SteelBow,Vulnerary] NoAI
 UNIT
 
+CutsceneUnits:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R8 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R9 [0x0]     NoAI
+UNIT Mira ThiefFighter   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R10 [0x0]     NoAI
+UNIT Alena Myrmidon_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R7 [0x0]     NoAI
+UNIT Varga SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R11 [0x0]     NoAI
+UNIT Emil LanceKnight_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R10 [0x0]     NoAI
+UNIT Svetomir Priest   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R8 [0x0]     NoAI
+UNIT Iskra Mage_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R7 [0x0]     NoAI
+UNIT Delilah Sister   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R11 [0x0]     NoAI
+UNIT Dragana Sniper_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R9 [0x0]     NoAI
+UNIT
+
+CutsceneUnits2:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [8,0] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [10,0] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT Dragana Sniper_F   Cleo Level(2,Ally,False) [9,0] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT Mira ThiefFighter   Cleo Level(2,Ally,False) [7,0] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+UNIT
 
 EnemyUnits:
 UNIT Emory_Ch3 SwordKnight_Dismounted  0x0 Level(7,Enemy,False) [28,14] 0x0 0x0 0x0 0x0 [Claymore] AttackInRangeAI
@@ -267,29 +291,69 @@ BeginningScene:
 COUNTER_SET 0 0
 SetBackground(CastleHallway)
 Text(BeginningSceneTextA)
+FADI 5
+FADU 5
 Text(BeginningSceneTextB)
-Text(BeginningSceneTextC)
-CALL $9EE2C4
-LOAD3 2 Units1
-LOAD1 1 DraganaUnit
+FADI 10
 LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
+CAMERA [4,9]
+CALL $9EE2C4
 ENUN
+CamOn
+LOAD1 2 CutsceneUnits //loads cutscene units only if alive
+ENUN
+CamOff
+CAMERA Dragana
+CURSOR_FLASHING Dragana
+STAL 50
+REMOVE_CURSORS
+TEXTSTART
+TEXTSHOW BeginningSceneTextC
+TEXTEND
+CAMERA Emory_Ch3
+CURSOR_FLASHING Emory_Ch3
+REMOVEALL_BLUE
+LOAD1 1 DraganaUnit
+LOAD1 0 Units1
+STAL 50
+REMOVE_CURSORS
+TEXTCONT
+TEXTEND
+REMA
+// CAMERA [3,6]
+ENUN
+NoFade
 ENDA
 
 EndingScene:
+/*
 EndOfEscapeRoutineASMC
+ENUN
 MUSC 0x7FFF
 Text(MapEndText)
+FADI 10*/
+RemoveAll
+LOMA Chapter3Cutscene
+/*CAMERA_CENTERED [9,3]
+FADU 15
+CamOn*/
+//LOAD1 3 CutsceneUnits2
+//ENUN
+STAL 40000
+/*
+CamOff
+CAMERA_CENTERED Dragana
 SetBackground(CastleHallway)
 Text(EndingSceneTextA1)
-Text(EndingSceneTextA2)
-Text(EndingSceneTextA3)
-Text(EndingSceneTextA4)
+CALL $9EE2C4
+STAL 4000
 SendAll(Dragana)
 FADI 15
 CUSN Dragana
 REMOVEUNIT Dragana
+*/
 MNC2 Chapter4
 NoFade
 ENDA
+

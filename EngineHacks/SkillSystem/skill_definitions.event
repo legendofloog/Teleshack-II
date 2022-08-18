@@ -41,6 +41,7 @@
 #define LoyaltyID 61
 #define ChargeID 62
 #define AcrobatID 63
+#define BattleVeteranID 73
 #define SmiteID 76
 #define SwarpID 81
 #define BreathOfLifeID 82
@@ -95,7 +96,6 @@
 #define WindFaithID 70
 #define SpelltwisterID 71
 #define TelepathyID 72
-#define BattleVeteranID 73
 #define AbsoluteZeroTomeID 74
 #define BladeDanceID 75
 #define CleoFanID 77
