@@ -1,0 +1,5 @@
+ALIGN 4
+ClearUnitASMC:
+#incbin "ClearUnitASMC.dmp"
+
+#define ClearUnit(unitId) "SVAL 2 unitId; ASMC ClearUnitASMC"

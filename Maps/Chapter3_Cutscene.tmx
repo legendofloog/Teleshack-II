@@ -3,7 +3,7 @@
  <tileset firstgid="1" source="Thracia_Castle.tsx"/>
  <layer id="1" name="Tile Layer 1" width="19" height="26">
   <properties>
-   <property name="Anims1" value="ThraciaCastleTileAnimations"/>
+   <property name="Anims1" value="ThraciaCastleTileAnimationsID"/>
    <property name="ChapterID" value="Chapter3Cutscene"/>
    <property name="Main" value=""/>
    <property name="MapID" value="Chapter3CutsceneMap"/>
