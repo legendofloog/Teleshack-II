@@ -2,4 +2,4 @@ ALIGN 4
 ClearUnitASMC:
 #incbin "ClearUnitASMC.dmp"
 
-#define ClearUnit(unitId) "SVAL 2 unitId; ASMC ClearUnitASMC"
+#define ClearUnit(unitId) "SVAL 0x2 unitId; ASMC ClearUnitASMC +1"

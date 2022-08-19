@@ -89,6 +89,30 @@ where our compatriots couldn't![A]
 [MidLeft][OneLineBox]
 Yes captain![A][X]
 
+## BeginningSceneTextAB
+[MidLeft][LoadLoewe]
+No Mira.[A][X]
+
+## BeginningSceneTextAC
+[MidLeft][LoadLoewe]
+No Varga.[A][X]
+
+## BeginningSceneTextAD
+[MidLeft][LoadLoewe]
+No Mira or Varga.[A][X]
+
+## BeginningSceneTextBB
+[MidLeft][LoadLoewe]
+No Mira.[A][X]
+
+## BeginningSceneTextBC
+[MidLeft][LoadLoewe]
+No Varga.[A][X]
+
+## BeginningSceneTextBD
+[MidLeft][LoadLoewe]
+No bitches?[A][X]
+
 ## ReinforcementText
 
 [MidLeft][LoadLoewe][MidRight][LoadCleo]
@@ -273,15 +297,19 @@ move, not much further now![A][X]
 ## EndingSceneTextA1
 [FarLeft][LoadDragana][Left][LoadMira][Right][LoadCleo][FarRight][LoadLoewe]
 [Right][TwoLineBox]
-Gods, so much running[Beat] I[N]
-don't think I can keep going[Beat][A]
+Gods,[.4] so much running[Beat][.5] I[N]
+don't think I can keep going[Beat][.4][A]
 [Left]
-We're almost there, the[N]
-exit is just ahead![A]
+We're almost there,[.5] the[N]
+exit is just ahead![A][.6]
 [FarFarLeft][OneLineBox]
-You're not out of the woods yet.[A]
+[Beat]You're not out of the woods yet.[A]
 [FarLeft][MoveFarLeft]
 [Beat]![A][X]
+
+## EndingSceneTextA1B
+[MidLeft][LoadLoewe]
+You killed mira lol.[A][X]
 
 ## EndingSceneTextA2
 [FarFarLeft][LoadCidor][Right][LoadMira][FarRight][LoadDragana]
@@ -291,38 +319,50 @@ You really thought you[N]
 could slip out from under[N]
 me just like that?[A]
 [Right][TwoLineBox]
-But of course, how[N]
+But of course,[.5] how[N]
 hard could it be?[A]
-[MidLeft][CloseEyes]
-Hmph.[......][OpenEyes] Your blasted rebellion[N]
-has been a thorn in my side[AN]
-long enough.[....] I'm putting an[N]
-end to this pointless conflict[AN]
-here and now,[....] today.[A]
+
+[MidLeft][ThreeLineBox][CloseEyes]
+Hmph.[.6][OpenEyes] Your blasted rebellion[N]
+has been a thorn in my[N]
+side for long enough.[.4][AN]
+I'm putting an end to this[N]
+pointless conflict,[.5] here[N]
+and now,[.6] today.[.4][A]
+
 [FarRight][ThreeLineBox]
-Cidor! Don't you see the[N]
+Cidor![.6] Don't you see the[N]
 harm this is doing to our[N]
-country? Why do you-[A]
-[MidLeft]
-Enough of your political drivel,[N]
-you don't even understand what[N]
-you're fighting against. I do[AN]
-what I must for Decia.[A]
-[FarRight]
+country?[.6] Why do you-[A]
+
+[MidLeft][ThreeLineBox]
+Enough of your political drivel.[.6][N]
+You don't even understand what[N]
+you're fighting against.[AN]
+I do what I must for Decia,[.5][N]
+even if naysayers such as[N]
+yourself stand in our way.[A]
+
+[FarRight][ThreeLineBox]
 Even if that amounts to killing[N]
-your own countrymen? Letting[N]
+your own countrymen?[.6] Letting[N]
 Cythes stomp all over us?[AN]
 Just that you might become[N]
 their favourite pet?[A]
+
 [MidLeft][ThreeLineBox]
 You know nothing of what[N]
-I work towards, why I do this.[N]
-But enough Kasun, this ends[AN]
-here. Your 'liberation'[N]
-shall fall with you![A]
-[FarRight]
+I work towards,[.5] why I do this.[.6][N]
+But enough Kasun, this ends here.[AN]
+Your [OpenQuote]liberation"[.4] shall fall with you.[A]
+
+[FarRight][TwoLineBox]
 Pah, like I'd fall to a[N]
 traitorous swine like you![A][X]
+
+## EndingSceneTextA2B
+[MidLeft][LoadKwame]
+XDDDDD.[A][X]
 
 ## EndingSceneTextA3
 [MidLeft][LoadCidor][CloseEyes][MidRight][LoadDragana][CloseEyes]
@@ -370,6 +410,10 @@ We have to go! Now![A]
 [FarLeft][CloseEyes][Beat][A]
 [Left]
 Now![A][X]
+
+## EndingSceneTextA3B
+[MidLeft][LoadLoewe]
+Elebits.[A][X]
 
 ## EndingSceneTextA4
 [MidLeft][LoadMira][MidRight][LoadDragana]
