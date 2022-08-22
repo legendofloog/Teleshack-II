@@ -141,3 +141,5 @@ SongTable(RoarOfDomainID, RoarOfDominionSong, MapMusicGroup)
 SongTable(MM10WilyMachineID, song92, MapMusicGroup)
 #include "MusicEvents/What Im Made Of.event"
 SongTable(WhatImMadeOfID, song10, MapMusicGroup)
+#include "MusicEvents/FE05 - Prep Screen {hypergammaspaces}.event"
+SongTable(ThraciaPreparationsID,PrepScreenFE5,MapMusicGroup)

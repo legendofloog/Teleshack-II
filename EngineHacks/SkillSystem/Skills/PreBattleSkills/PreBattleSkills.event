@@ -45,12 +45,6 @@ WORD BattleVeteranID
 
 #include "BreakerSkills/BreakerSkills.event"
 
-ALIGN 4
-Charge:
-#incbin "Charge/Charge.dmp"
-POIN SkillTester
-WORD ChargeID
-
 #include "CriticalSkills/CriticalSkills.event"
 
 ALIGN 4

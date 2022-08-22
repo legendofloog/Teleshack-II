@@ -25,7 +25,7 @@
 #define Chapter23 0x16
 #define Chapter24 0x17
 #define Chapter25 0x18
-#define Chapter26 0x19
+#define PostgameHub 0x19
 #define Ch1LoeweVillage 0x1A
 #define Ch1DraganaPrison 0x1B
 #define Ch5xInterlude 0x1C
@@ -36,6 +36,7 @@
 #define Chapter17Council 0x21
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
+#define EpilogueChapter 0x2A
 
 // MapChangesID
 
@@ -143,7 +144,7 @@
 #define Chapter23Events 0x67
 #define Chapter24Events 0x6B
 #define Chapter25Events 0x71
-#define Chapter26Events 0x75
+#define PostgameHubEvents 0x75
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
 #define Ch5xInterludeEvents 0x81
@@ -151,6 +152,7 @@
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7
 #define Chapter18xInterludeEvents 0xBA
+#define EpilogueEvents 0xCA
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88
@@ -185,4 +187,5 @@
 #define ThraciaCastleTileAnimationsID 0x8B
 #define FlasubanVillageTileAnimationsID 0x95
 #define FF5WaveCaveTileAnimationsID 0x9C
+#define FieldsTileAnimationsID 0x05
 

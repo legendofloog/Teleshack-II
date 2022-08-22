@@ -23,7 +23,7 @@ CharacterEventBothWays(7, DarbyRecruit, Loewe, Darby)
 
 MiscBasedEvents:
 	CauseGameOverIfLordDies
-	DefeatBoss(EndingScene)
+	DefeatBoss
 	END_MAIN
 
 LocationBasedEvents:

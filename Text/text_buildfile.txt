@@ -17,6 +17,14 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x581
+Save any changes.[NL]
+Choose Restart Chapter[NL]
+to restart this chapter.[NL][X]
+
+# 0x04C2
+Raises strength.[X]
+
 # 0x51E
 Radiant[X]
 

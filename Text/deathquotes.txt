@@ -227,8 +227,8 @@ S-sister, I'm sorry.[A][X]
 
 ## MinkDeathQuote
 [MidRight][LoadMink]
-S-so soon? [AN]
-There was so much I wanted to do[Beat][N]
+S-so soon?[A] There was so[N]
+much I wanted to do[Beat][AN]
 So much to learn[Beat][CloseEyes][A][X]
 
 ## TiberiusDeathQuote
@@ -553,7 +553,7 @@ retreating to the back lines.[A][X]
 ## TheimonDeathQuoteText
 [MidLeft][LoadTheimon]
 Ridiculous[Beat] I cannot die[N]
-like this[Beat] not so soon[Beat].[AN]
+like this[Beat] not so soon[Beat][AN]
 The immaculate harmony between[N]
 birth and death[Beat] is mine![AN]
 Byelen! My[Beat] domain[Beat]![A][X]
@@ -605,3 +605,71 @@ I've followed this plan[N]
 for centuries! [AN]
 Toiled for lifetimes![AN]
 Loewe[Beat]Cleo[Beat] you[Beat][A][X]
+
+## VolranDeathQuoteText
+[MidRight][LoadVolran]
+No[Beat] I still had so[N]
+so many relics to find![AN]
+This can't be[Beat] the end[Beat][CloseEyes][AN][X]
+
+## TaraDeathQuoteText
+[MidRight][LoadTara]
+Ah[Beat] I guess this is my last[N]
+adventure. Gotta say[Beat][AN]
+This one's a bit of a letdown.[CloseEyes][AN][X]
+
+## BoroDeathQuoteText
+[MidRight][LoadBoroScarred]
+Damn, I really messed up.[AN]
+My spear arm's gonna need some[N]
+time to recover... Cleo, Loewe,[AN]
+victory is all up to you two now.[N]
+Give that bastard hell for me![AN][X]
+
+## AshaDeathQuoteText
+[MidRight][LoadAsha]
+U-Urk[Beat] Sorry, Miss Houvaina.[N]
+I can't[Beat] repay you anymore.[CloseEyes][AN][X]
+
+## IchwepDeathQuote
+[MidRight][LoadIchwep]
+This[Beat] is the last time I'll[N]
+raise my lance, it seems.[AN]
+Commander Cleo[Beat] Don't let[N]
+my sacrifice be in vain[Beat][CloseEyes][AN][X]
+
+## LeinaDeathQuoteText
+[MidRight][LoadLeina]
+Ah[Beat] Is this my blood?[AN]
+I can't[Beat] Not yet[Beat][N]
+Not until[Beat] my birthright[Beat][CloseEyes][AN][X]
+
+## CromarDeathQuoteText
+[MidRight][LoadCromar]
+My vision[Beat] is fading?[N]
+What a sad way to die[Beat][CloseEyes][AN][X]
+
+## LockeDeathQuoteText
+[MidRight][LoadLocke]
+Damn[Beat] This job wasn't[N]
+worth a measly 900 gold.[AN]
+I guess I should've[N]
+sat this one out[Beat][CloseEyes][AN][X]
+
+## TrajanRealDeathQuoteText
+[MidRight][LoadTrajan]
+Hell[Beat] I want to keep fighting,[AN]
+but I can't let Dragana down[N]
+by dying here like a fool.[AN]
+Loewe, Cleo, I have to retreat.[N]
+The rest is in your hands![AN][X]
+
+## KwameRealDeathQuoteTextGeneral
+[MidRight][LoadKwame]
+Urgh[Beat] These old bones don't[N]
+work like they used to, hm?[AN]
+My apologies, Loewe, Cleo,[AN]
+but I'll be returning my[N]
+focus to our strategems.[AN]
+Best of luck to you both[N]
+in your efforts on the field![AN][X]

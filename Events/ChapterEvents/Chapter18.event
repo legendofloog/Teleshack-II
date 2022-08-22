@@ -92,7 +92,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatBoss(EndingScene)
+DefeatBoss
 AREA 0xA ArenaCheaterEvent [0,0] [19,3]
 AREA 0xA ArenaCheaterEvent [0,0] [5,13]
 AREA 0xA ArenaCheaterEvent [14,0] [19,13]

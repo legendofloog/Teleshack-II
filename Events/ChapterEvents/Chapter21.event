@@ -34,7 +34,7 @@ CharacterBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
-	DefeatBoss(EndingScene)
+	DefeatBoss
 	CauseGameOverIfLordDies
 	END_MAIN
 

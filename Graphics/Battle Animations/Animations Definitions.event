@@ -585,6 +585,13 @@ UnarmedAnim(BrigandFUnarmedAnim)
 EndAnim
 
 ALIGN 4
+BrigandMAnims:
+AxeAnim(0x20) //vanilla brigand anims; done to include new handaxes like hurlbat
+HandAxeAnim(0x21)
+UnarmedAnim(0x22)
+EndAnim
+
+ALIGN 4
 ArmorAnims:
 SwordAnim(ArmorSwordAnim)
 AxeAnim(ArmorAxeAnim)

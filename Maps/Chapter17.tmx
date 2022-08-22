@@ -3,6 +3,7 @@
  <tileset firstgid="1" source="Desert Bastion.tsx"/>
  <layer id="1" name="Tile Layer 1" width="22" height="30">
   <properties>
+   <property name="Anims1" value="FieldsTileAnimationsID"/>
    <property name="ChapterID" value="Chapter17"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="Chapter17MapChanges"/>

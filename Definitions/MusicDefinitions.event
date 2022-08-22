@@ -32,6 +32,7 @@
 #define RemembranceID 0x58
 #define CryptequeID 0x59
 #define RiseAboveID 0x5D
+#define ThraciaPreparationsID 0x5E
 
 
 #define GreatCanyon 0xC0

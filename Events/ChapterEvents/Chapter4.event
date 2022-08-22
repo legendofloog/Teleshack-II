@@ -30,9 +30,9 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
-	AFEV 0 EndingScene 0x2
-	CauseGameOverIfLordDies
-	END_MAIN
+DefeatBoss
+CauseGameOverIfLordDies
+END_MAIN
 
 LocationBasedEvents:
 Chest(TemperedRing, 1,12)
@@ -210,7 +210,7 @@ ENDA
 
 AmongUsPartyIsOver:
 ENUT 0x3
-CALL (EndingScene)
+CALL EndingScene
 ENDA
 
 OhNoWTF:
@@ -298,6 +298,7 @@ STAL 3
 	ENDA
 
 EndingScene:
+ENUT 3
 FADI 60
 DoAllThree
 LOAD2 0x1 SickoMode

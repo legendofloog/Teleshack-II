@@ -100,6 +100,7 @@
 #define HernandezMug 0x47
 #define HilmarMug 0x4b
 #define BoroMug 0x4E
+#define BoroEarlyMug 0x98
 #define KwameMug 0x57
 #define SeleseFMug 0x70
 #define BarodMug 0x48
@@ -170,10 +171,10 @@ setMugEntry(IskraMug, IskraMugData, 3, 6, 3, 4)
 
 ALIGN 16
 EmilMugData:
-#incbin "Dmp/Emil(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Emil(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Emil(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Emil(Laurent_Lacroix)_minimug.dmp"
+#incbin "Dmp/Emil(knabepicer,devisio)_mug.dmp"
+#incbin "Dmp/Emil(knabepicer,devisio)_frames.dmp"
+#incbin "Dmp/Emil(knabepicer,devisio)_palette.dmp"
+#incbin "Dmp/Emil(knabepicer,devisio)_minimug.dmp"
 setMugEntry(EmilMug, EmilMugData, 3, 5, 3, 3)
 
 ALIGN 16
@@ -274,11 +275,19 @@ setMugEntry(RaschwitzMug, RaschwitzMugData, 3, 5, 3, 3)
 
 ALIGN 16
 BoroMugData:
-#incbin "Dmp/Boro(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Boro(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Boro(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Boro(Laurent_Lacroix)_minimug.dmp"
+#incbin "Dmp/BoroScarred(RandomWizard,LaurentLacroix)_mug.dmp"
+#incbin "Dmp/BoroScarred(RandomWizard,LaurentLacroix)_frames.dmp"
+#incbin "Dmp/BoroScarred(RandomWizard,LaurentLacroix)_palette.dmp"
+#incbin "Dmp/BoroScarred(RandomWizard,LaurentLacroix)_minimug.dmp"
 setMugEntry(BoroMug, BoroMugData, 3, 5, 3, 3)
+
+ALIGN 16
+BoroEarlyMugData:
+#incbin "Dmp/Boro(RandomWizard,LaurentLacroix)_mug.dmp"
+#incbin "Dmp/Boro(RandomWizard,LaurentLacroix)_frames.dmp"
+#incbin "Dmp/Boro(RandomWizard,LaurentLacroix)_palette.dmp"
+#incbin "Dmp/Boro(RandomWizard,LaurentLacroix)_minimug.dmp"
+setMugEntry(BoroEarlyMug, BoroEarlyMugData, 3, 5, 3, 3)
 
 ALIGN 16
 VargaMugData:
@@ -985,11 +994,11 @@ setMugEntry(OjasviMug, OjasviMugData, 3, 5, 3, 3)
 
 ALIGN 16
 ZharaMugData:
-#incbin "Dmp/Zhara(someone_placeholder)_mug.dmp"
-#incbin "Dmp/Zhara(someone_placeholder)_frames.dmp"
-#incbin "Dmp/Zhara(someone_placeholder)_palette.dmp"
-#incbin "Dmp/Zhara(someone_placeholder)_minimug.dmp"
-setMugEntry(ZharaMug, ZharaMugData, 3, 6, 3, 4)
+#incbin "Dmp/Zhara(knabepicer)_mug.dmp"
+#incbin "Dmp/Zhara(knabepicer)_frames.dmp"
+#incbin "Dmp/Zhara(knabepicer)_palette.dmp"
+#incbin "Dmp/Zhara(knabepicer)_minimug.dmp"
+setMugEntry(ZharaMug, ZharaMugData, 3, 5, 3, 3)
 
 ALIGN 16
 TaoMugData:

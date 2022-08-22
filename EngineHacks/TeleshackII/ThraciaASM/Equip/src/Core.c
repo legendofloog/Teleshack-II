@@ -123,8 +123,8 @@ void RuneArrowPreBattle(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
-void BlackAnkletPostBattle(BattleUnit* unit1, BattleUnit* unit2){
-	if (GetUnitEquippedItem(&unit1->unit).number == 0xa4){ //black anklet id
+void BlackAnkletPostBattle(BattleUnit* unit1, BattleUnit* unit2, ActionData actionData){
+	if (GetUnitEquippedItem(&(unit1->unit)).number == 0xa4){ //black anklet id
 		if (unit1->unit.curHP <= 0){ //don't do anything they're already dead
 			
 		}
@@ -137,8 +137,9 @@ void BlackAnkletPostBattle(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
-void DawnPendantPostBattle(BattleUnit* unit1, BattleUnit* unit2){
-	if (GetUnitEquippedItem(&unit1->unit).number == 0xa9){ //dawn pendant
+void DawnPendantPostBattle(BattleUnit* unit1, BattleUnit* unit2, ActionData actionData){
+	Item item = GetUnitEquippedItem(&unit1->unit);
+	if (item.number == 0xa9){ //dawn pendant
 		gChapterData.visionRange = 0; //sets to no fog
 	}
 }

@@ -97,7 +97,7 @@ NoFade
 ENDA
 
 MiscBasedEvents:
-	AFEV 0 EndingScene 0x6
+	DefeatBoss
 	CauseGameOverIfLordDies
 	END_MAIN
 

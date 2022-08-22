@@ -37,7 +37,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatBoss(EndingScene)
+DefeatBoss
 END_MAIN
 
 LocationBasedEvents:

@@ -23,7 +23,7 @@ SupportConvoEntry(Loewe, Tao, 0, LoeweTaoBSupport, LoeweTaoASupport)
 SupportConvoEntry(Loewe, CatrinReal, 0, 0, LoeweCatrinASupport)
 
 SupportConvoEntry(Mira, Iskra, 0, MiraIskraBSupport, MiraIskraASupport) 
-SupportConvoEntry(Mira, Emil, 0, 0, 0)
+SupportConvoEntry(Mira, Emil, MiraEmilCSupport, MiraEmilBSupport, MiraEmilASupport)
 SupportConvoEntry(Mira, Tiberius, 0, 0, 0) 
 SupportConvoEntry(Mira, BoroReal, 0, 0, MiraBoroASupport)
 SupportConvoEntry(Mira, TrajanReal, 0, 0, MiraTrajanASupport)
@@ -35,7 +35,7 @@ SupportConvoEntry(Iskra, Emil, 0, 0, 0)
 
 SupportConvoEntry(Emil, Cleo, CleoEmilCSupport, CleoEmilBSupport, CleoEmilASupport)  
 SupportConvoEntry(Emil, Varga, 0, 0, 0)
-SupportConvoEntry(Emil, Mira, 0, 0, 0)
+SupportConvoEntry(Emil, Mira, MiraEmilCSupport, MiraEmilBSupport, MiraEmilASupport)
 SupportConvoEntry(Emil, Iskra, 0, 0, 0)
 
 SupportConvoEntry(Svetomir, Alena, 0, 0, 0) 
@@ -215,14 +215,14 @@ SupportConvoEntry(Rashid, Nikolas, Rashid_Nikolas_C, Rashid_Nikolas_B, Rashid_Ni
 
 SupportConvoEntry(Kofi, Cadenza, 0, 0, 0)
 SupportConvoEntry(Kofi, Nikolas, 0, 0, 0)
-SupportConvoEntry(Kofi, KwameReal, 0, 0, 0)
+SupportConvoEntry(Kofi, KwameReal, Kofi_Kwame_C, Kofi_Kwame_B, Kofi_Kwame_A)
 
 SupportConvoEntry(Nikolas, Awa, 0, 0, 0)
 SupportConvoEntry(Nikolas, Rashid, Rashid_Nikolas_C, Rashid_Nikolas_B, Rashid_Nikolas_A)
 SupportConvoEntry(Nikolas, Kofi, 0, 0, 0)
 
 SupportConvoEntry(KwameReal, Mink, 0, 0, 0)
-SupportConvoEntry(KwameReal, Kofi, 0, 0, 0)
+SupportConvoEntry(KwameReal, Kofi, Kofi_Kwame_C, Kofi_Kwame_B, Kofi_Kwame_A)
 SupportConvoEntry(KwameReal, CatrinReal, 0, 0, 0)
 SupportConvoEntry(KwameReal, Ngondala, 0, 0, 0)
 

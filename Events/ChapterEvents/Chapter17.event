@@ -34,7 +34,7 @@ END_MAIN
 
 MiscBasedEvents:
 AFEV 8 MureibBetrayal 9
-DefeatBoss(EndingScene)
+DefeatBoss
 CauseGameOverIfLordDies 
 END_MAIN
 

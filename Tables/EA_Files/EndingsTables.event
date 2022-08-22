@@ -161,6 +161,7 @@ PairedEndingTableEntry(TrajanReal,BoroReal,TrajanBoroEnding)
 PairedEndingTableEntry(TrajanReal,Mira,MiraTrajanEnding)
 
 PairedEndingTableEntry(Mira, Iskra, MiraIskraEnding)
+PairedEndingTableEntry(Mira, Emil, MiraEmilEnding)
 PairedEndingTableEntry(Mira, BoroReal, MiraBoroEnding)
 PairedEndingTableEntry(Mira, TrajanReal, MiraTrajanEnding)
 SoloEndingTableEntry(Mira, MiraEnding)
@@ -168,6 +169,10 @@ SoloEndingTableEntry(Mira, MiraEnding)
 PairedEndingTableEntry(BoroReal,Mira,MiraBoroEnding)
 SoloEndingTableEntry(BoroReal, BoroEnding)
 
+//Sussy
+
+PairedEndingTableEntry(KwameReal,Kofi,KofiKwameEnding)
+//SoloEndingTableEntry(Kwame, KwameEnding)
 
 // Lords
 PairedEndingTableEntry(Loewe, Asha, LoeweAshaEnding)
