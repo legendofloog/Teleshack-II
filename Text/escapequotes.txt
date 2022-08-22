@@ -1,3 +1,6 @@
+//needed: varga, delilah, filone, zwieback, leina, cromar, mish, tobie, awa, cadenza, faolan, matthias
+//valse, hornet, milo, ichwep, mink, tiberius, ellerey, mantou, tippany, pelecaye, carl, takai, darby, jacinth
+
 ## CleoEscapeQuoteText
 [MidRight][LoadCleo]
 Finally, our path of escape is[N]
@@ -52,8 +55,8 @@ will not be tonight![A][X]
 
 ## IberisEscapeQuoteText
 [MidRight][LoadFangai]
-Maybe... Should have...[N]
-brought lighter... armour.[A][X]
+Maybe[Beat] Should have[Beat][N]
+brought lighter[Beat] armour.[A][X]
 
 ## BuldakEscapeQuoteText
 [MidRight][LoadBuldak]
@@ -93,26 +96,24 @@ and I'll be home free![AN]
 I foresee a path to safety.[N]
 Let us make it a reality[Beat][A][X]
 
-## RashidEscapeQuoteText
-[MidRight][LoadRashid]
-An opening[Beat][N]
-Fly, my friends. We must go![A][X]
-
 ## IlseEscapeQuoteText
 [MidRight][LoadIlse]
 What? We're running away?![N]
 I could've taken them all on[Beat][A][X]
 
-## NikolasEscapeQuoteText
-[MidRight][LoadNikolas]
-Haha, yes! I really hope this is[N]
-actually the way out! Onwards!![A][X]
+## AshaEscapeQuoteText
+[MidRight][LoadAsha]
+Heh, now that was an easy escape![N]
+The rest of you better keep up![AN][X]
 
-## SeraEscapeQuoteText
-[MidRight][LoadSera]
-Placeholder escape quote[A][X]
+## RashidEscapeQuoteText
+[MidRight][LoadRashid]
+An opening[Beat][N]
+Fly, my friends. We must go![A][X]
 
 ## KofiEscapeQuoteText
 [MidRight][LoadKofi]
 There are still many mysteries[N]
 for me to solve[Beat][A][X]
+
+

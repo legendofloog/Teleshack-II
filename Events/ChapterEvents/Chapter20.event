@@ -97,7 +97,7 @@ NoFade
 ENDA
 
 MiscBasedEvents:
-	DefeatBoss
+	DefeatAll
 	CauseGameOverIfLordDies
 	END_MAIN
 

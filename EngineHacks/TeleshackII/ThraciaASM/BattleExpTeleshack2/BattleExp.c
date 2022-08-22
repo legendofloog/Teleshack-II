@@ -135,6 +135,7 @@ int GetUnitEffectiveLevel(Unit* unit){
 			effectiveLevel -= BossExpReductionTable[i].levelsToDecreaseBy;
 			break;
 		}
+		j++;
 	}
 	return effectiveLevel;
 
