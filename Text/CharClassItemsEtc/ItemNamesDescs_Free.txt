@@ -790,3 +790,13 @@ Self and allies cannot be critically hit.[X]
 ## VulneraryDesc
 A medicinal solution used to heal[N]
 minor wounds. Heals up to 15 HP.[X]
+
+## SpiritDustName
+Spirit Dust[X]
+
+## SpiritDustDesc
+Increases Mag by 1 point.[NL]
+Vanishes after use.[X]
+
+## SpiritDustUseDesc
+Raises magic.[X]
