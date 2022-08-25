@@ -83,6 +83,7 @@
 #define ViktorMug 0xFB
 #define AthanasiusMug 0x35
 #define AshaMug 0xA4
+#define CatrinMug 0x2F
 
 // NPCs
 #define EliasMug 0xB
@@ -90,7 +91,7 @@
 #define LoeweKidMug 0x15
 #define LeonidasMug 0x1D
 #define CidorMug 0x2E
-#define CatrinMug 0x2F
+#define CatrinYoungMug 0x51
 #define EmoryMug 0x30
 #define CidorYoungMug 0x38
 #define DukeSeleseMug 0x2C
@@ -259,11 +260,19 @@ setMugEntry(DukeSeleseMug, DukeSeleseMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CatrinMugData:
-#incbin "Dmp/Catrin(Levin)_mug.dmp"
-#incbin "Dmp/Catrin(Levin)_frames.dmp"
-#incbin "Dmp/Catrin(Levin)_palette.dmp"
-#incbin "Dmp/Catrin(Levin)_minimug.dmp"
-setMugEntry(CatrinMug, CatrinMugData, 2, 6, 3, 4)
+#incbin "Dmp/Catrin(knabepicer)_mug.dmp"
+#incbin "Dmp/Catrin(knabepicer)_frames.dmp"
+#incbin "Dmp/Catrin(knabepicer)_palette.dmp"
+#incbin "Dmp/Catrin(knabepicer)_minimug.dmp"
+setMugEntry(CatrinMug, CatrinMugData, 3, 6, 3, 4)
+
+ALIGN 16
+CatrinYoungMugData:
+#incbin "Dmp/Catrin_Young(knabepicer)_mug.dmp"
+#incbin "Dmp/Catrin_Young(knabepicer)_frames.dmp"
+#incbin "Dmp/Catrin_Young(knabepicer)_palette.dmp"
+#incbin "Dmp/Catrin_Young(knabepicer)_minimug.dmp"
+setMugEntry(CatrinYoungMug, CatrinYoungMugData, 3, 6, 3, 4)
 
 ALIGN 16
 RaschwitzMugData:
@@ -834,11 +843,11 @@ setMugEntry(MureibMug, MureibMugData, 2, 5, 2, 3)
 
 ALIGN 16
 GrimbladeMugData:
-#incbin "Dmp/Grimblade(CanDy)_mug.dmp"
-#incbin "Dmp/Grimblade(CanDy)_frames.dmp"
-#incbin "Dmp/Grimblade(CanDy)_palette.dmp"
-#incbin "Dmp/Grimblade(CanDy)_minimug.dmp"
-setMugEntry(GrimbladeMug, GrimbladeMugData, 4, 5, 4, 3)
+#incbin "Dmp/Grimblade(knabepicer)_mug.dmp"
+#incbin "Dmp/Grimblade(knabepicer)_frames.dmp"
+#incbin "Dmp/Grimblade(knabepicer)_palette.dmp"
+#incbin "Dmp/Grimblade(knabepicer)_minimug.dmp"
+setMugEntry(GrimbladeMug, GrimbladeMugData, 3, 6, 3, 4)
 
 ALIGN 16
 KassandraMugData:
@@ -882,10 +891,10 @@ setMugEntry(LoewePunishedMug, LoeweEyepatchMugData, 3, 5, 3, 3)
 
 ALIGN 16
 IlseMugData:
-#incbin "Dmp/Ilse(Loog)_mug.dmp"
-#incbin "Dmp/Ilse(Loog)_frames.dmp"
-#incbin "Dmp/Ilse(Loog)_palette.dmp"
-#incbin "Dmp/Ilse(Loog)_minimug.dmp"
+#incbin "Dmp/Ilse(Loog, Roze)_mug.dmp"
+#incbin "Dmp/Ilse(Loog, Roze)_frames.dmp"
+#incbin "Dmp/Ilse(Loog, Roze)_palette.dmp"
+#incbin "Dmp/Ilse(Loog, Roze)_minimug.dmp"
 setMugEntry(IlseMug, IlseMugData, 3, 6, 3, 4)
 
 ALIGN 16

@@ -15,6 +15,56 @@
 #define MandatoryEscapeTableEntry(chapterID,charID) "BYTE chapterID charID"
 #define MandatoryEscapeTableEnd "BYTE 0xFF 0xFF"
 
+#define ConfirmFinalEscape "ASMC EscapeEventYes"
+
+ALIGN 4
+RequiredEscapeesTable:
+#include "RequiredEscapeesTable.event"
+
+#include "EscapeEndEvent.event"
+
+#define RequiredEscapee(unit) "BYTE unit"
+#define RequiredEscapeeTerm "BYTE 0"
+#define SetRequiredEscapeesList(chapter, list) "PUSH; ORG RequiredEscapeesTable + (chapter*4); POIN list; POP"
+
+ALIGN 4
+Chapter1EscapeeList:
+RequiredEscapee(Cleo)
+RequiredEscapee(Loewe)
+RequiredEscapeeTerm
+
+ALIGN 4
+Chapter3EscapeeList:
+RequiredEscapee(Cleo)
+RequiredEscapee(Loewe)
+RequiredEscapee(Dragana)
+RequiredEscapeeTerm
+
+ALIGN 4
+Chapter9EscapeeList:
+RequiredEscapee(Cleo)
+RequiredEscapee(Loewe)
+RequiredEscapeeTerm
+
+ALIGN 4
+Chapter14EscapeeList:
+RequiredEscapee(Cleo)
+RequiredEscapee(Loewe)
+RequiredEscapee(Augur)
+RequiredEscapeeTerm
+
+ALIGN 4
+Chapter16EscapeeList:
+RequiredEscapee(Cleo)
+RequiredEscapee(Loewe)
+RequiredEscapeeTerm
+
+SetRequiredEscapeesList(Chapter1, Chapter1EscapeeList)
+SetRequiredEscapeesList(Chapter3, Chapter3EscapeeList)
+SetRequiredEscapeesList(Chapter9, Chapter9EscapeeList)
+SetRequiredEscapeesList(Chapter14, Chapter14EscapeeList)
+SetRequiredEscapeesList(Chapter16, Chapter16EscapeeList)
+
 ALIGN 4
 InterludeJoinTable:
 InterludeJoinTableEntry(Chapter6,Mish)
@@ -37,18 +87,3 @@ InterludeJoinTableEntry(Chapter19,Tao)
 InterludeJoinTableEntry(Chapter19,Zhara)
 InterludeJoinTableEnd
 
-ALIGN 4
-MandatoryEscapeTable:
-MandatoryEscapeTableEntry(Chapter1, Loewe)
-MandatoryEscapeTableEntry(Chapter1, Cleo)
-MandatoryEscapeTableEntry(Chapter3, Loewe)
-MandatoryEscapeTableEntry(Chapter3, Cleo)
-MandatoryEscapeTableEntry(Chapter3, Dragana)
-MandatoryEscapeTableEntry(Chapter9, Loewe)
-MandatoryEscapeTableEntry(Chapter9, Cleo)
-MandatoryEscapeTableEntry(Chapter14, Loewe)
-MandatoryEscapeTableEntry(Chapter14, Cleo)
-MandatoryEscapeTableEntry(Chapter14, Augur)
-MandatoryEscapeTableEntry(Chapter16, Loewe)
-MandatoryEscapeTableEntry(Chapter16, Cleo)
-MandatoryEscapeTableEnd

@@ -1,3 +1,5 @@
+void UnsetEventId(int flag);
+
 bool IsItemEquipment (Item item){
 	extern u8 EquipmentList[];
 
@@ -17,64 +19,66 @@ bool IsItemEquipment (Item item){
 	return false;
 }
 
+bool IsUnitInClassList(Unit* unit, u8* classList){
+    int class = unit->pClassData->number;
+    int cur = 0;
+    while(classList[cur] != 0){
+        if(classList[cur] == class){
+            return true;
+        }
+        ++cur;
+    }
+    return false;
+}
+
 bool CanUnitEquipItem (Unit* unit, Item item){
-	extern u8 KingShieldClassList[];
-	extern u8 EdgedArrowClassList[];
-	if (!IsItemEquipment(item)){
-		return false;
-	}
-	
-	// Can add extra conditionals here
-	if (item.number == 0xa3){ //tao's rune arrows
-		if (unit->pCharacterData->number == 0x36){ //tao unit ID
-			return true;
-		}
-		return false;
-	}
-	if (item.number == 0xa9){ //cromar's dawn pendant
-		if (unit->pCharacterData->number == 0xE){ //cromar unit ID
-			return true;
-		}
-		return false;
-	}
-	if (item.number == 0xD0){ //King shield item id check; armors only
-		int i = 0;
-		int currentClass = KingShieldClassList[i];
-		while( currentClass != 0xFF){	
-			currentClass = KingShieldClassList[i];
-			if(unit->pClassData->number == currentClass){
-				return true;
-			}
-			i++;
-		}
-		return false;
-	}	
-	if (item.number == 0xf9){ //orfeas's smoldering seal
-		if (unit->pCharacterData->number == 0x45){ //orfeas unit ID
-			return true;
-		}
-		return false;
-	}
-	
-	if (item.number == 0xD1){ //edged arrow item id check; bow users only, must have one equipped
-		int i = 0;
-		int currentClass2 = EdgedArrowClassList[i];
-		while ( currentClass2 != 0xFF ){
-			currentClass2 = EdgedArrowClassList[i];
-			if(unit->pClassData->number == currentClass2){
-				const ItemData* currentWeaponData = GetItemData(GetUnitEquippedWeapon(unit).number);
-				if (currentWeaponData->weaponType == ITYPE_BOW){
-					return true;
-				}
-				else{
-					return  false;
-				}
-			}
-			i++;
-		}
-		return false;
-	}
-	return true;
+    extern u8 KingShieldClassList[];
+    extern u8 EdgedArrowClassList[];
+
+    if (!IsItemEquipment(item)){
+        return false;
+    }
+
+    u8 unitId = unit->pCharacterData->number;
+
+    switch(item.number){
+
+        case(0xa3): // tao's rune arrows
+            if (unitId == 0x36){ //tao unit ID
+                return true;
+            }
+            return false;
+
+        case(0xa9): //cromar's dawn pendant
+            if (unitId == 0xE){ //cromar unit ID
+                return true;
+            }
+            return false;
+
+        case(0xd0): // king shield item id check; armors only
+            if (IsUnitInClassList(unit, KingShieldClassList)){
+                return true;
+            }
+            return false;
+
+        case(0xf9): // orfeas's smoldering seal
+            if (unitId == 0x45){ //orfeas unit ID
+                return true;
+            }
+            return false;
+
+        case(0xd1): //edged arrow item id check; bow users only, must have one equipped
+            if (GetItemData(GetUnitEquippedWeapon(unit).number)->weaponType != ITYPE_BOW){
+                return false;
+            }
+            if (IsUnitInClassList(unit, EdgedArrowClassList)){
+                return true;
+            }
+            return false;
+
+        default:
+            return true;
+    }
 }
 
 Item GetUnitEquippedItem (Unit* unit){
@@ -123,24 +127,58 @@ void RuneArrowPreBattle(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
-void BlackAnkletPostBattle(BattleUnit* unit1, BattleUnit* unit2, ActionData actionData){
-	if (GetUnitEquippedItem(&(unit1->unit)).number == 0xa4){ //black anklet id
-		if (unit1->unit.curHP <= 0){ //don't do anything they're already dead
+void BlackAnkletPostBattle(){
+	if (gActionData.unitActionType != UNIT_ACTION_COMBAT && gActionData.unitActionType != UNIT_ACTION_STAFF){
+		return;
+	}
+	if (GetItemIndex(GetUnitEquippedItem(&gBattleActor.unit)) == 0xa4){ //black anklet id
+		if (gBattleActor.unit.curHP <= 0){ //don't do anything they're already dead
 			
 		}
-		else if(unit1->unit.curHP <= 10){ //make sure they don't get 0 or less
-			unit1->unit.curHP = 1;
+		else if(gBattleActor.unit.curHP <= 10){ //make sure they don't get 0 or less
+			gActiveUnit->curHP = 1;
+			if (!gChapterData.muteSfxOption){
+ 				m4aSongNumStart(0xB7);
+			}
 		}
 		else{
-			unit1->unit.curHP -= 10; //reduce HP by 10 post battle
+			gActiveUnit->curHP -= 10; //reduce HP by 10 post battle
+			if (!gChapterData.muteSfxOption){
+ 				m4aSongNumStart(0xB7);
+			}
+		}
+	}
+	if (GetItemIndex(GetUnitEquippedItem(&gBattleTarget.unit)) == 0xa4){ //black anklet id
+		Unit* defendingUnit = GetUnitByCharId(gBattleTarget.unit.pCharacterData->number);
+		if (gBattleTarget.unit.curHP <= 0){ //don't do anything they're already dead
+			
+		}
+		else if(gBattleTarget.unit.curHP <= 10){ //make sure they don't get 0 or less
+			defendingUnit->curHP = 1;
+			if (!gChapterData.muteSfxOption){
+ 				m4aSongNumStart(0xB7);
+			}
+		}
+		else{
+			defendingUnit->curHP -= 10; //reduce HP by 10 post battle
+			if (!gChapterData.muteSfxOption){
+ 				m4aSongNumStart(0xB7);
+			}
 		}
 	}
 }
 
-void DawnPendantPostBattle(BattleUnit* unit1, BattleUnit* unit2, ActionData actionData){
-	Item item = GetUnitEquippedItem(&unit1->unit);
-	if (item.number == 0xa9){ //dawn pendant
+void DawnPendantPostBattle(){
+	if (gActionData.unitActionType != UNIT_ACTION_COMBAT){
+		return;
+	}
+	if (GetItemIndex(GetUnitEquippedItem(&gBattleActor.unit)) == 0xa9){ //dawn pendant
 		gChapterData.visionRange = 0; //sets to no fog
+		UnsetEventId(40);
+	}
+	if (GetItemIndex(GetUnitEquippedItem(&gBattleTarget.unit)) == 0xa9){ //dawn pendant
+		gChapterData.visionRange = 0; //sets to no fog
+		UnsetEventId(40);
 	}
 }
 

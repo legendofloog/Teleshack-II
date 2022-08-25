@@ -8,28 +8,6 @@
 
 #include "UnitMenu.lyn.event"
 
-ALIGN 4
-LordMustEscapeLastFlagLink:
-SHORT LordMustEscapeLastFlag
-ALIGN 4
-AllUnitsMustEscapeFlagLink:
-SHORT AllUnitsMustEscapeFlag
-ALIGN 4
-LordMustEscapeLastTextIDLink:
-SHORT LordMustEscapeLastText
-
-ALIGN 4
-RefEscapeTable:
-#incbin "RefEscapeTable.dmp"
-POIN EscapeQuoteTable
-
-ALIGN 4
-FinalEscapeThing: //hooks with post-action calc loop
-#incbin "PostActionCorrection.dmp"
-
-#include "EscapeEvent.event"
-
-
 PUSH
 	//fix a jump table allowing for us to be separate map objects
 	ORG ($8410C + (4*0x19))

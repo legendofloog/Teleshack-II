@@ -212,6 +212,7 @@
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
 [LoadCatrin] = [LoadLoeweMom]
 [LoadCatrinReal] = [LoadLoeweMom]
+[LoadCatrinYoung] = [LoadFace][0x51][0x1]
 [LoadAlenaGrunt1] = [LoadFace][0x4C][0x1]
 [LoadAlenaGrunt2] = [LoadFace][0x4D][0x1]
 [LoadSenny] = [LoadFace][0x62][0x1]

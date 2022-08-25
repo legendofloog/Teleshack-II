@@ -230,3 +230,8 @@ the top of inventory.[X]
 #include "CharClassItemsEtc/Supports.txt"
 
 #include "CharClassItemsEtc/CharacterEndings.txt"
+
+## EscapeWarningText
+Do you want to Escape?[N]
+[Red]All other units will be left behind.[Red][.4][N]
+[No][X]

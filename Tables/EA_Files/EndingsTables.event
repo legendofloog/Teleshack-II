@@ -103,6 +103,7 @@ SoloEndingTableEntry(Longxia,LongxiaEnding)
 SoloEndingTableEntry(Fangai, FangaiEnding)
 
 //5x
+PairedEndingTableEntry(Matthias, Cromar, Matthias_Cromar_Ending)
 PairedEndingTableEntry(Matthias, Tippany, MatthiasTippanyEnding)
 PairedEndingTableEntry(Cadenza, Kofi, CadenzaKofiEnding)
 

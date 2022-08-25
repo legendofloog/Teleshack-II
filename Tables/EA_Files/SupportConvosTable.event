@@ -92,8 +92,8 @@ SupportConvoEntry(Awa, Delilah, 0, 0, 0)
 SupportConvoEntry(Awa, Zhara, 0, 0, 0)
 SupportConvoEntry(Awa, Nikolas, 0, 0, 0)
 
-SupportConvoEntry(Matthias, Cromar, 0, 0, 0)
-SupportConvoEntry(Matthias, Tippany, 0, 0, 0)
+SupportConvoEntry(Matthias, Cromar, Matthias_Cromar_C, Matthias_Cromar_B, Matthias_Cromar_A)
+SupportConvoEntry(Matthias, Tippany, Matthias_Tippany_C, Matthias_Tippany_B, Matthias_Tippany_A)
 SupportConvoEntry(Matthias, Ilse, 0, 0, 0)
 
 SupportConvoEntry(Faolan, Fangai, 0, 0, 0)
@@ -110,7 +110,7 @@ SupportConvoEntry(Leina, Ngondala, 0, 0, 0)
 
 SupportConvoEntry(Cromar, Loewe, 0, 0, 0)
 SupportConvoEntry(Cromar, Leina, 0, 0, 0)
-SupportConvoEntry(Cromar, Matthias, 0, 0, 0)
+SupportConvoEntry(Cromar, Matthias, Matthias_Cromar_C, Matthias_Cromar_B, Matthias_Cromar_A)
 
 SupportConvoEntry(Iberis, Nora, 0, 0, 0)
 SupportConvoEntry(Iberis, Hans, 0, 0, 0)
@@ -169,7 +169,7 @@ SupportConvoEntry(Mantou, Ichwep, 0, 0, 0)
 SupportConvoEntry(Mantou, Alex, 0, 0, 0)
 SupportConvoEntry(Mantou, Leina, 0, 0, 0)
 
-SupportConvoEntry(Tippany, Matthias, 0, 0, 0)
+SupportConvoEntry(Tippany, Matthias, Matthias_Tippany_C, Matthias_Tippany_B, Matthias_Tippany_A)
 SupportConvoEntry(Tippany, Fangai, 0, 0, 0)
 SupportConvoEntry(Tippany, Meldan, 0, 0, 0)
 
