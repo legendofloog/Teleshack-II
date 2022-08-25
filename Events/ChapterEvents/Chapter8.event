@@ -68,49 +68,42 @@ UNIT Hege Hero_F 0x0 Level(1,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,Han
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
 UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [Flux,ChestKey] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x0 [SteelLance,Vulnerary] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [15,23] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,21] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
-UNIT Chapter1Generics Bard Hege Level(8,Enemy,True) [10,19] 0x0 0x0 0x0 0x0 [Thunder] PursueWithoutHeedAI
 UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [6,15] 0x0 0x0 0x0 0x0 [Flux] NeverMoveAI
 UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
 UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [12,2] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
-UNIT Chapter1Generics SwordArmor Hege Level(8,Enemy,True) [9,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
-UNIT Chapter1Generics SwordArmor Hege Level(8,Enemy,True) [11,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [12,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
 UNIT Chapter1Generics AxeArmor Hege Level(8,Enemy,True) [17,0] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [9,9] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [11,9] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [9,7] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [SteelBow,Vulnerary] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [19,20] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
-UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [9,7] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] TwoActionAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [19,20] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [17,13] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [17,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [9,13] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] AttackInRangeAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [12,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [4,6] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [13,5] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,6] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] TwoActionAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,7] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [12,6] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,7] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
 UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
-UNIT Chapter1Generics Mage Hege Level(8,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [Elfire,Vulnerary] AttackInRangeAI
+UNIT Chapter1Generics Mage Hege Level(8,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
 	UNIT
 
 Newcomers:
-UNIT Hans SwordKnight 0x0 Level(7,NPC,False) [8,22] 0x0 0x0 0x0 0x0 [SteelSword,Vulnerary] AttackInRangeAI
-UNIT Nora DragonRider 0x0 Level(7,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Vulnerary] AttackInRangeAI
+UNIT Hans SwordKnight 0x0 Level(7,NPC,False) [8,22] 0x0 0x0 0x0 0x0 [SteelSword,IronSword,Vulnerary] AttackInRangeAI
+UNIT Nora DragonRider 0x0 Level(7,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [IronAxe,HandAxe,Vulnerary] AttackInRangeAI
 	UNIT
 	
 TeamFrancis:
