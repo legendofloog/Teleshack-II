@@ -144,7 +144,6 @@
 #include "Animations/Falcoknight_v2_Weapons(Flasuban)/Axe Installer.event"
 #include "Animations/Falcoknight_v2_Weapons(Flasuban)/Handaxe Installer.event"
 #include "Animations/Falcoknight_v2_Weapons(Flasuban)/Lance Installer.event"
-#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Staff Installer.event"
 #include "Animations/Falcoknight_v2_Weapons(Flasuban)/Unarmed Installer.event"
 }
 
@@ -159,25 +158,15 @@
 }
 
 {
-#include "Animations/Dark_Mage_Staff_Anims/Staff Installer_F(Jeorge_Reds).event"
-}
-
-{
-#include "Animations/Dark_Mage_Staff_Anims/Staff Installer_M(Temp).event"
-}
-
-{
 #include "Animations/Bard_M(L95,Leo_link,Flasuban)/Magic Installer.event"
 }
 
 {
 #include "Animations/Devotee_F(Teraspark)/Magic Installer.event"
-#include "Animations/Devotee_F(Teraspark)/Staff Installer.event"
 }
 
 {
 #include "Animations/Devotee_M(Teraspark)/Magic Installer.event"
-#include "Animations/Devotee_M(Teraspark)/Staff Installer.event"
 }
 
 {
@@ -216,15 +205,9 @@
 }
 
 {
-#include "Animations/Ranger(IS)/Sword Installer.event"
-#include "Animations/Ranger(IS)/Unarmed Installer.event"
+#include "Animations/Forrest_Knight(leo_link)/Sword Installer.event"
+#include "Animations/Forrest_Knight(leo_link)/Unarmed Installer.event"
 }
-
-{
-#include "Animations/Ranger_F(IS)/Sword Installer.event"
-#include "Animations/Ranger_F(IS)/Unarmed Installer.event"
-}
-
 
 {
 #include "Animations/Nomad_Trooper_F(Pikmin1211,Maiser6)/Bow Installer.event"
@@ -242,19 +225,12 @@
 }
 
 {
-#include "Animations/GrandPaladin(Aruku,Kenpuhu,Nuramon)/Axe Installer.event"
-#include "Animations/GrandPaladin(Aruku,Kenpuhu,Nuramon)/Handaxe Installer.event"
-#include "Animations/GrandPaladin(Aruku,Kenpuhu,Nuramon)/Unarmed Installer.event"
+#include "Animations/GoldKnight(Nuramon)/Axe Installer.event"
+#include "Animations/GoldKnight(Nuramon)/Handaxe Installer.event"
+#include "Animations/GoldKnight(Nuramon)/Unarmed Installer.event"
 }
 
 {
-#include "Animations/GrandPaladinF(Aruku,Kenpuhu,Nuramon,LordTweed)/Axe Installer.event"
-#include "Animations/GrandPaladinF(Aruku,Kenpuhu,Nuramon,LordTweed)/Handaxe Installer.event"
-#include "Animations/GrandPaladinF(Aruku,Kenpuhu,Nuramon,LordTweed)/Unarmed Installer.event"
-}
-
-{
-#include "Animations/Troubadour_F(Pikmin1211,Maiser6,TBA)/Staff Installer.event"
 #include "Animations/Troubadour_F(Pikmin1211,Maiser6,TBA)/Sword Installer.event"
 #include "Animations/Troubadour_F(Pikmin1211,Maiser6,TBA)/Unarmed Installer.event"
 }
@@ -275,14 +251,12 @@
 #include "Animations/Master_Knight_M(St_jack)/Sword Installer.event"
 #include "Animations/Master_Knight_M(St_jack)/Bow Installer.event"
 #include "Animations/Master_Knight_M(St_jack)/Magic Installer.event"
-#include "Animations/Master_Knight_M(St_jack)/Staff Installer.event"
 }
 
 {
 #include "Animations/Master_Knight_F(St_jack)/Sword Installer.event"
 #include "Animations/Master_Knight_F(St_jack)/Bow Installer.event"
 #include "Animations/Master_Knight_F(St_jack)/Magic Installer.event"
-#include "Animations/Master_Knight_F(St_jack)/Staff Installer.event"
 }
 
 {
@@ -291,17 +265,16 @@
 }
 
 {
-#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Sword Installer.event"
-#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Axe Installer.event"
-#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Handaxe Installer.event"
-#include "Animations/Hero_F_Brown_Shield(Pikmin1211,Pushwall,St_jack)/Unarmed Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Sword Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Axe Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Handaxe Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Unarmed Installer.event"
 }
 
 {
 #include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Bow Installer.event"
 #include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Axe Installer.event"
 #include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Handaxe Installer.event"
-#include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Staff Installer.event"
 #include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Sword Installer.event"
 #include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Lance Installer.event"
 #include "Animations/Dismounted_F(DerTheVaporeon,Pikmin1211,ZoramineFae)/Unarmed Installer.event"
@@ -311,7 +284,6 @@
 #include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Bow Installer.event"
 #include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Axe Installer.event"
 #include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Handaxe Installer.event"
-#include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Staff Installer.event"
 #include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Sword Installer.event"
 #include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Lance Installer.event"
 #include "Animations/Dismounted_M(DerTheVaporeon,Pikmin1211,ZoramineFae)/Unarmed Installer.event"
@@ -339,4 +311,42 @@
 #include "Animations/Augur(knabepicer)/Transform Installer.event"
 #include "Animations/Augur(knabepicer)/Revert Installer.event"
 #include "Animations/Augur(knabepicer)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/Warrior_M_Repal (Pushwall)/Axe Installer.event"
+    #include "Animations/Warrior_M_Repal (Pushwall)/Bow Installer.event"
+    #include "Animations/Warrior_M_Repal (Pushwall)/Handaxe Installer.event"
+    #include "Animations/Warrior_M_Repal (Pushwall)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/Archer_F_Repal (flasuban, Der)/Bow Installer.event"
+    #include "Animations/Archer_F_Repal (flasuban, Der)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/Archer_M_Repal (flasuban, Der)/Bow Installer.event"
+    #include "Animations/Archer_M_Repal (flasuban, Der)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/Priest_Repal_v2 (flasuban, EldritchAbomination)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/High_Priest_Repal (MikeySeregon, EldritchAbomination)/Magic Installer.event"
+    #include "Animations/High_Priest_Repal (MikeySeregon, EldritchAbomination)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/Ballistician_F (St_jack)/Bow Installer.event"
+}
+
+{
+    #include "Animations/Long_Ballistician (Seal)/Bow Installer.event"
+}
+
+{
+    #include "Animations/Long_Ballistician_F (St_jack, Seal)/Bow Installer.event"
 }

@@ -37,28 +37,9 @@ Chest(SteelBow,10,11)
 LOCA 9 LoeweSvetomirDoor [16,10] 0x12
 LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
-Escape(0,EscapeEventCheck,2,0)
-Escape(0,EscapeEventCheck,3,0)
+Escape(2,0)
+Escape(3,0)
 END_MAIN
-
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-NoFade
-ENDA
-
 
 MiscBasedEvents:
 AREA 0 CivilianEscape [14, 0] [15, 0]

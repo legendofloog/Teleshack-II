@@ -396,8 +396,3 @@ POIN AuraSkillCheck
 WORD CleoFanID
 
 #include "ElementBoost/ElementBoost.event"
-
-#ifdef MODULAR_PRE_BATTLE_SKILLS
-	ALIGN 4
-	#include "ModularPreBattleSkills/ModularPreBattleSkill.event"
-#endif //MODULAR_PRE_BATTLE_SKILLS

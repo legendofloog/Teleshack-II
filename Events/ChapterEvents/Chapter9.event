@@ -41,28 +41,9 @@ END_MAIN
 
 
 LocationBasedEvents:
-Escape(0,EscapeEventCheck,19,0)
-Escape(0,EscapeEventCheck,20,0)
+Escape(19,0)
+Escape(20,0)
 END_MAIN
-
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-NoFade
-ENDA
-
 
 Dunno1:
 

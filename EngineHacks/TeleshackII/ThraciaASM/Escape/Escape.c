@@ -63,9 +63,9 @@ int EscapeCommandEffect(MenuProc* proc){
         }
     }
     //play the unit's escape quote based on the chapter they escape in
+    PlayEscapeQuote();
     EscapeState |= ES_ESCAPE;
     gActionData.unitActionType = UNIT_ACTION_WAIT;
-    //supposedly Escape sets some flag at end of ram; don't know if i actually need to do this
     gActiveUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
     if (gActiveUnit->rescueOtherUnit != 0){
         GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN | US_UNSELECTABLE);
@@ -74,12 +74,32 @@ int EscapeCommandEffect(MenuProc* proc){
 
 }
 
+void PlayEscapeQuote(){
+    CallMapEventEngine(EscapeQuoteEvent, EV_RUN_CUTSCENE);
+    return;
+}
+
+void ReturnEscapeQuote(){
+    int charID = gEventSlot[0x2];
+    CharEscapeQuoteEntry* charEscapeQuoteList = CharEscapeQuoteEntriesTable[charID];
+    int cnt = 0;
+    while (charEscapeQuoteList[cnt].chapterID != 0xFF){
+        if (charEscapeQuoteList[cnt].chapterID == gChapterData.chapterIndex){
+            gEventSlot[0x2] = charEscapeQuoteList[cnt].textID;
+            return;
+        }
+        cnt++;
+    }
+}
+
 void EscapeEventCall(){
     CallMapEventEngine(RequiredEscapeeEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
     return;
 }
 
 void EscapeEventYes(){
+    PlayFinalEscapeQuote();
+    EscapeState |= ES_ESCAPE;
     gActionData.unitActionType = UNIT_ACTION_WAIT;
     gActiveUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
     if (gActiveUnit->rescueOtherUnit != 0){
@@ -87,6 +107,24 @@ void EscapeEventYes(){
     }
     SeizeCommandEffect();
     return;
+}
+
+void PlayFinalEscapeQuote(){
+    CallMapEventEngine(FinalEscapeQuoteEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
+    return;
+}
+
+void ReturnFinalEscapeQuote(){
+    int charID = gEventSlot[0x2];
+    CharEscapeQuoteEntry* charEscapeQuoteList = RequiredCharFinalEscapeQuoteEntriesTable[charID];
+    int cnt = 0;
+    while (charEscapeQuoteList[cnt].chapterID != 0xFF){
+        if (charEscapeQuoteList[cnt].chapterID == gChapterData.chapterIndex){
+            gEventSlot[0x2] = charEscapeQuoteList[cnt].textID;
+            return;
+        }
+        cnt++;
+    }
 }
 
 void FinalEscapeThing(Unit* someUnit){

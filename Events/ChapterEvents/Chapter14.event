@@ -42,7 +42,7 @@ Escape(0x10,EscapeEventCheck,0,6)
 Escape(0x10,EscapeEventCheck,0,7)
 Escape(0x10,EscapeEventCheck,7,20)
 Escape(0x10,EscapeEventCheck,8,20)
-	END_MAIN
+END_MAIN
 
 Dunno1:
 
@@ -325,20 +325,6 @@ ENDA
 
 EscapeEventCheck:
 UnsetFlag(0x10)
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
 NoFade
 ENDA
 

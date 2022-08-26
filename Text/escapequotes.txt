@@ -1,15 +1,20 @@
 //needed: varga, delilah, filone, zwieback, leina, cromar, mish, tobie, awa, cadenza, faolan, matthias
 //valse, hornet, milo, ichwep, mink, tiberius, ellerey, mantou, tippany, pelecaye, carl, takai, darby, jacinth
 
+## LoeweChapter1EscapeQuoteText
+[MidRight][LoadLoewe]
+Wish I could stay to wipe out the rest[N]
+of them, but the mission comes first.[A][X]
+
+## LoeweChapter3EscapeQuoteText
+[MidRight][LoadLoewe]
+Phew, we're almost out of these accursed[N]
+jails.[.4] The rest of you better keep up![A][X]
+
 ## CleoEscapeQuoteText
 [MidRight][LoadCleo]
 Finally, our path of escape is[N]
 clear. Follow my lead, everyone![A][X]
-
-## LoeweEscapeQuoteText
-[MidRight][LoadLoewe]
-Wish I could stay to wipe out the rest[N]
-of them, but the mission comes first.[A][X]
 
 ## MiraEscapeQuoteText
 [MidRight][LoadMira]
@@ -35,6 +40,17 @@ Cytheans, for Svetomir approaches![A][X]
 [MidRight][LoadAlena]
 Sorry, but I'm leaving first.[N]
 No sense in me staying behind.[A][X]
+
+## DraganaEscapeQuoteText
+[MidRight][LoadDragana]
+Alright, I'm going on ahead first.[N]
+Cleo, Loewe, I'll leave the rest to you![AN][X]
+
+## DraganaFinalEscapeQuoteText
+[MidRight][LoadDragana][ToggleSmile][ThreeLineBox]
+Heh[Beat] Honestly, I wasn't sure if we[N]
+could pull it off, but you two delivered.[.4][N]
+Let's have a feast back home to celebrate![AN][X]
 
 ## AlexEscapeQuoteText
 [MidRight][LoadAlex]
