@@ -364,7 +364,7 @@ ENUN
 MOVE 15 Ch2_Selese_Guy [9,10]
 MOVE 15 KassandraReal [9,13]
 ENUN
-MUSC MarsLighthouseID
+MUSC PMD_PowerOfDarknessID
 Text(Ch23InThePalace5)
 FAWI 10
 SOUN 0xF0 // divine weapon sound?
@@ -383,6 +383,7 @@ SET_CONDITION Ch2_Selese_Guy
 SET_CONDITION Barod
 SET_CONDITION Cythes
 FAWU 5
+MUSC MarsLighthouseID
 Text(Ch23InThePalace8)
 FAWI 10
 SOUN 0xF0
@@ -480,6 +481,8 @@ MOVE 20 EliasReal [16,17]
 MOVE 20 CoraliaReal [16,16]
 ENUN
 LOAD1 1 EnemyUnitsEast1 //
+ENUN
+LOAD 1 EnemyUnitsEast3
 ENUN
 LOAD1 1 EnemyUnitsEast2 //
 ENUN
@@ -583,8 +586,11 @@ EnemyUnitsEast1:
 UNIT Cythes DarkBishop 0x0 Level(8,Enemy,True) [29,11] 0x0 0x0 0x1 REDA28R10 [Hel, Fenrir] BossAI
 UNIT Cythes Sniper 0x0 Level(8,Enemy,True) [31,12] 0x0 0x0 0x1 REDA31R11 [SilverBow] AttackInRangeAI
 UNIT Cythes Berserker 0x0 Level(8,Enemy,True) [31,13] 0x0 0x0 0x1 REDA23R8 [KillerAxe] ChargeAI
+UNIT
+
+EnemyUnitsEast3:
 UNIT Cythes GoldKnight 0x0 Level(8,Enemy,True) [31,14] 0x0 0x0 0x1 REDA25R16 [TrainedEdge,SilverLance] AttackInRangeAI
-UNIT 
+UNIT
 
 EnemyUnitsEast2:
 UNIT Maryn DarkBishop_F 0x0 Level(9,Enemy,False) [29,19] 0x0 0x0 0x1 REDA30R20 [Jormungand, Physic] GroupThreeAI

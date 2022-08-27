@@ -199,7 +199,6 @@ BeginningScene:
 	LOAD3 2 Units1
 	ENUN
 	CUSA Varga
-	FADU 15
 	Text(Chapter2OpeningScene5)
 	NoFade
 	ENDA

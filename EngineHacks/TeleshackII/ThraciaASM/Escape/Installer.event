@@ -178,8 +178,6 @@ CharEscapeQuote(Chapter14,AlenaEscapeQuoteText)
 CharEscapeQuote(Chapter16,AlenaEscapeQuoteText)
 CharEscapeQuoteTerm
 
-/*
-
 ALIGN 4
 DelilahEscapeQuoteList:
 CharEscapeQuote(Chapter3,DelilahEscapeQuoteText)
@@ -195,8 +193,6 @@ CharEscapeQuote(Chapter9,VargaEscapeQuoteText)
 CharEscapeQuote(Chapter14,VargaEscapeQuoteText)
 CharEscapeQuote(Chapter16,VargaEscapeQuoteText)
 CharEscapeQuoteTerm
-
-*/
 
 ALIGN 4
 DraganaEscapeQuoteList:
@@ -219,7 +215,6 @@ CharEscapeQuote(Chapter14,AxelEscapeQuoteText)
 CharEscapeQuote(Chapter16,AxelEscapeQuoteText)
 CharEscapeQuoteTerm
 
-/*
 ALIGN 4
 FiloneEscapeQuoteList:
 CharEscapeQuote(Chapter9,FiloneEscapeQuoteText)
@@ -233,7 +228,6 @@ CharEscapeQuote(Chapter9,ZwiebackEscapeQuoteText)
 CharEscapeQuote(Chapter14,ZwiebackEscapeQuoteText)
 CharEscapeQuote(Chapter16,ZwiebackEscapeQuoteText)
 CharEscapeQuoteTerm
-*/
 
 ALIGN 4
 LongxiaEscapeQuoteList:
@@ -249,7 +243,6 @@ CharEscapeQuote(Chapter14,FangaiEscapeQuoteText)
 CharEscapeQuote(Chapter16,FangaiEscapeQuoteText)
 CharEscapeQuoteTerm
 
-/*
 ALIGN 4
 FaolanEscapeQuoteList:
 CharEscapeQuote(Chapter9,FaolanEscapeQuoteText)
@@ -305,7 +298,82 @@ CharEscapeQuote(Chapter9,CromarEscapeQuoteText)
 CharEscapeQuote(Chapter14,CromarEscapeQuoteText)
 CharEscapeQuote(Chapter16,CromarEscapeQuoteText)
 CharEscapeQuoteTerm
-*/
+
+ALIGN 4
+IberisEscapeQuoteList:
+CharEscapeQuote(Chapter9,IberisEscapeQuoteText)
+CharEscapeQuote(Chapter14,IberisEscapeQuoteText)
+CharEscapeQuote(Chapter16,IberisEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+BuldakEscapeQuoteList:
+CharEscapeQuote(Chapter9,BuldakEscapeQuoteText)
+CharEscapeQuote(Chapter14,BuldakEscapeQuoteText)
+CharEscapeQuote(Chapter16,BuldakEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+NoraEscapeQuoteList:
+CharEscapeQuote(Chapter9,NoraEscapeQuoteText)
+CharEscapeQuote(Chapter14,NoraEscapeQuoteText)
+CharEscapeQuote(Chapter16,NoraEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+HansEscapeQuoteList:
+CharEscapeQuote(Chapter9,HansEscapeQuoteText)
+CharEscapeQuote(Chapter14,HansEscapeQuoteText)
+CharEscapeQuote(Chapter16,HansEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+JennyEscapeQuoteList:
+CharEscapeQuote(Chapter9,JennyEscapeQuoteText)
+CharEscapeQuote(Chapter14,JennyEscapeQuoteText)
+CharEscapeQuote(Chapter16,JennyEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+MeldanEscapeQuoteList:
+CharEscapeQuote(Chapter9,MeldanEscapeQuoteText)
+CharEscapeQuote(Chapter14,MeldanEscapeQuoteText)
+CharEscapeQuote(Chapter16,MeldanEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+NahizaEscapeQuoteList:
+CharEscapeQuote(Chapter14,NahizaEscapeQuoteText)
+CharEscapeQuote(Chapter16,NahizaEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+AugurEscapeQuoteList:
+CharEscapeQuote(Chapter14,AugurEscapeQuoteText)
+CharEscapeQuote(Chapter16,AugurEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+IlseEscapeQuoteList:
+CharEscapeQuote(Chapter14,IlseEscapeQuoteText)
+CharEscapeQuote(Chapter16,IlseEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+AshaEscapeQuoteList:
+CharEscapeQuote(Chapter14,AshaEscapeQuoteText)
+CharEscapeQuote(Chapter16,AshaEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+RashidEscapeQuoteList:
+CharEscapeQuote(Chapter16,RashidEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+KofiEscapeQuoteList:
+CharEscapeQuote(Chapter16,KofiEscapeQuoteText)
+CharEscapeQuoteTerm
 
 SetCharEscapeQuoteList(Loewe,LoeweEscapeQuoteList)
 SetCharEscapeQuoteList(Cleo,CleoEscapeQuoteList)
@@ -314,20 +382,15 @@ SetCharEscapeQuoteList(Emil,EmilEscapeQuoteList)
 SetCharEscapeQuoteList(Iskra,IskraEscapeQuoteList)
 SetCharEscapeQuoteList(Svetomir,SvetomirEscapeQuoteList)
 SetCharEscapeQuoteList(Alena,AlenaEscapeQuoteList)
-/*
 SetCharEscapeQuoteList(Varga,VargaEscapeQuoteList)
 SetCharEscapeQuoteList(Delilah,DelilahEscapeQuoteList)
-*/
 SetCharEscapeQuoteList(Dragana,DraganaEscapeQuoteList)
 SetCharEscapeQuoteList(Alex,AlexEscapeQuoteList)
 SetCharEscapeQuoteList(Axel,AxelEscapeQuoteList)
-/*
 SetCharEscapeQuoteList(Filone,FiloneEscapeQuoteList)
 SetCharEscapeQuoteList(Zwieback,ZwiebackEscapeQuoteList)
-*/
 SetCharEscapeQuoteList(Fangai,FangaiEscapeQuoteList)
 SetCharEscapeQuoteList(Longxia,LongxiaEscapeQuoteList)
-/*
 SetCharEscapeQuoteList(Mish,MishEscapeQuoteList)
 SetCharEscapeQuoteList(Tobie,TobieEscapeQuoteList)
 SetCharEscapeQuoteList(Cadenza,CadenzaEscapeQuoteList)
@@ -336,7 +399,21 @@ SetCharEscapeQuoteList(Matthias,MatthiasEscapeQuoteList)
 SetCharEscapeQuoteList(Awa,AwaEscapeQuoteList)
 SetCharEscapeQuoteList(Leina,LeinaEscapeQuoteList)
 SetCharEscapeQuoteList(Cromar,CromarEscapeQuoteList)
-*/
+SetCharEscapeQuoteList(Iberis,IberisEscapeQuoteList)
+SetCharEscapeQuoteList(Buldak,BuldakEscapeQuoteList)
+SetCharEscapeQuoteList(Nora,NoraEscapeQuoteList)
+SetCharEscapeQuoteList(Hans,HansEscapeQuoteList)
+SetCharEscapeQuoteList(Meldan,MeldanEscapeQuoteList)
+SetCharEscapeQuoteList(Jenny,JennyEscapeQuoteList)
+
+
+
+SetCharEscapeQuoteList(Nahiza,NahizaEscapeQuoteList)
+SetCharEscapeQuoteList(Augur,AugurEscapeQuoteList)
+SetCharEscapeQuoteList(Ilse,IlseEscapeQuoteList)
+SetCharEscapeQuoteList(Asha,AshaEscapeQuoteList)
+SetCharEscapeQuoteList(Kofi,KofiEscapeQuoteList)
+SetCharEscapeQuoteList(Rashid,RashidEscapeQuoteList)
 
 ALIGN 4
 InterludeJoinTable:
