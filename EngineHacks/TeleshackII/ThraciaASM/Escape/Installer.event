@@ -44,6 +44,8 @@ CharEscapeQuoteEntriesTable:
 
 #include "EscapeQuoteEvent.event"
 
+#include "LoadCaptured/Installer.event"
+
 ALIGN 4
 Chapter1EscapeeList:
 RequiredEscapee(Cleo)
