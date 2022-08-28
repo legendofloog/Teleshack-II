@@ -8,6 +8,11 @@
 #define MapSprite16x32 1
 #define MapSprite32x32 2
 
+PUSH
+ORG 0x9A8F74 //location of manakete attack map sprite palette; new palette by knabepicer
+BYTE 0x13 0x4F 0xA5 0x14 0x8D 0x53 0xF2 0x63 0xC1 0x21 0xE6 0x3A 0xE6 0x3A 0xAA 0x49 0x0E 0x4E 0x93 0x62 0x37 0x6B 0x99 0x7B 0xFE 0x7F 0x30 0x3A 0xFF 0x7F 0x1F 0x7C
+POP
+
 StandingMapSprite(0x0,0,BluEliwoodStanding)
 StandingMapSprite(0x2,1,MasterKnight_Standing)
 StandingMapSprite(0x4,1,SwordCavStanding)
@@ -30,6 +35,7 @@ StandingMapSprite(0x2b,0,PriestStanding)
 StandingMapSprite(0x2c,1,RookKnightStanding)
 StandingMapSprite(0x2d,1,GoldKnightStanding)
 StandingMapSprite(0x2e,1,TroubadourFStanding)
+StandingMapSprite(0x30,1,AugurStanding)
 StandingMapSprite(0x31,1,WarriorFStanding)
 StandingMapSprite(0x33,0,BrigandStanding)
 StandingMapSprite(0x34,0,BrigandFStanding)
@@ -107,6 +113,7 @@ MovingMapSprite(0x37,0x81E7638,RookKnightMoving)
 MovingMapSprite(0x38,0x81E7638,GoldKnightMoving)
 MovingMapSprite(0x39,0x81E7638,TroubadourFMoving)
 MovingMapSprite(0x3a,0x81E7638,PaladinMoving)
+MovingMapSprite(0x3c,0x81E39EC,AugurMoving)
 MovingMapSprite(0x3d,0x81E582C,HunterMoving)
 MovingMapSprite(0x3e,0x81E582C,HunterFMoving)
 MovingMapSprite(0x3f,0x81E582C,WarriorFMoving)

@@ -1,27 +1,6 @@
 #include "gbafe.h"
 
-#define USABILITY_TRUE 1
-#define USABILITY_GRAY 2
-#define USABILITY_FALSE 3
-
-typedef struct InterludeJoinEntry InterludeJoinEntry;
-
-struct InterludeJoinEntry{
-	/* 00 */ u8 chapterID;
-	/* 01 */ u8 charID;
-};
-
-extern struct InterludeJoinEntry InterludeJoinTable[];
-
-
-int EscapeCommandUsability();
-int GetLocationEventCommandAt(int xPos, int yPos);
-/*
-void EscapeCommandEffect(Proc* procState);
-*/
-bool CheckEventId(int eventId);
-void UnsetEventId(int eventId);
-void SetEventId(int eventId);
+#include "Escape.h"
 
 int EscapeCommandUsability(){
     Unit* unit = gActiveUnit;
@@ -34,50 +13,127 @@ int EscapeCommandUsability(){
     return USABILITY_TRUE;
 }
 
-/*
-void EscapeCommandEffect(Proc* procState){
-    Unit* unit = gActiveUnit;
-    int rescuerID = unit->pCharacterData->number;
-    if (unit->pClassData->attributes & CA_LORD){ //checks if they are a lord
-        if (rescuerID == 0x1){ //is cleo active unit
-            if (GetUnitByCharId(0xF)->state & (US_HIDDEN)){ // is loewe hidden (escaped)
+//goals for Escape effect:
 
-            }
-            else{
+//for checking if the unit is one of the required units to escape, pulls from a list of pointers indexed by chapter ID; each pointer is then a byte list of character IDs that have to escape, terminated with 0x0
 
-            }
-        } 
-        if (rescuerID == 0xF){ // is it loewe
-            if (GetUnitByCharId(0x1)->state & (US_HIDDEN)){ // is cleo hidden (escaped) already
+//if the unit escaping is the last one that must escape, then do an event to play a specific text id that asks the player if they want to escape, noting that all other units will be left behind: gives a yes/no choice, and this result is stored in sC to be used to determine whether to end the map (leaving behind all units) or rejecting the escape request
 
-            }
-            else{
+//if the active unit is not any of the required units to escape, then it checks nothing; it plays the unit's escape quote for the chapter, pulling from a pointer list that is then a list of shorts (textIDs) for each unit terminated by 0x0; gets the unit and the unit they're rescuing from rescued unit index, if any, and orrs their unit state with US_HIDDEN and US_UNSELECTABLE (does not say they're undeployed because being deployed is important for removing units that haven't escaped)
 
+//return 0x8 if escape is declined, return 0x94 if it is allowed
+int EscapeCommandEffect(MenuProc* proc){
+    RequiredEscapee* chapterRequiredEscapees = RequiredEscapeesTable[gChapterData.chapterIndex];
+    int cnt = 0;
+    bool isActiveUnitRequiredEscapee = false;
+    while (chapterRequiredEscapees[cnt].charID != 0){ //first, we'll check whether the active unit or their rescuee requires an escape
+        Unit* currentUnit = (GetUnitByCharId(chapterRequiredEscapees[cnt].charID));
+        if (currentUnit->pCharacterData->number == gActiveUnit->pCharacterData->number){
+            isActiveUnitRequiredEscapee = true;
+            break;
+        }
+        if (gActiveUnit->rescueOtherUnit != 0){
+            if (currentUnit->pCharacterData->number == GetUnit(gActiveUnit->rescueOtherUnit)->pCharacterData->number){
+                isActiveUnitRequiredEscapee = true;
+                break;
             }
+        }
+        cnt++;
+    }
+    if (isActiveUnitRequiredEscapee){ //if they are, then check the following
+        cnt = 0;
+        int requiredEscapeeTotal = 0;
+        int currentRequiredEscapees = 0;
+        while (chapterRequiredEscapees[cnt].charID != 0){ //next, we'll sum up required units and those who have escaped
+            Unit* currentUnit = GetUnitByCharId(chapterRequiredEscapees[cnt].charID);
+            if (currentUnit->state & US_HIDDEN && currentUnit->state & US_UNSELECTABLE && !(currentUnit->state & US_UNAVAILABLE)){
+                currentRequiredEscapees++;
+            }
+            if (gActiveUnit->rescueOtherUnit != 0){
+                if (currentUnit->pCharacterData->number == GetUnit(gActiveUnit->rescueOtherUnit)->pCharacterData->number){
+                    currentRequiredEscapees++; //although rescued unit hasn't escaped yet, they are counted here
+                }
+            }
+            requiredEscapeeTotal++;
+            cnt++;
+        }
+        if ( (requiredEscapeeTotal - currentRequiredEscapees) <= 1){ //if only one/two more unit(s) (rescued and/or active) must escape
+            EscapeEventCall();
+            return 0x94;
         }
     }
-    Unit* rescueeUnit = GetUnit(unit->rescueOtherUnit)
-    int rescueeID = rescueeUnit->pCharacterData->number;
-    if (rescueeUnit->pClassData->attributes & CA_LORD){ // is the rescued unit a lord
-        if (rescueeID == 0x1){ //is cleo the rescued unit
-            if (GetUnitByCharId(0xF)->state & (US_HIDDEN)){ // is loewe hidden (escaped)
+    //play the unit's escape quote based on the chapter they escape in
+    PlayEscapeQuote();
+    EscapeState |= ES_ESCAPE;
+    gActionData.unitActionType = UNIT_ACTION_WAIT;
+    gActiveUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
+    if (gActiveUnit->rescueOtherUnit != 0){
+        GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN | US_UNSELECTABLE);
+    }
+    return 0x94;
 
-            }
-            else{
+}
 
-            }
+void PlayEscapeQuote(){
+    CallMapEventEngine(EscapeQuoteEvent, EV_RUN_CUTSCENE);
+    return;
+}
+
+void ReturnEscapeQuote(){
+    int charID = gEventSlot[0x2];
+    CharEscapeQuoteEntry* charEscapeQuoteList = CharEscapeQuoteEntriesTable[charID];
+    int cnt = 0;
+    while (charEscapeQuoteList[cnt].chapterID != 0xFF){
+        if (charEscapeQuoteList[cnt].chapterID == gChapterData.chapterIndex){
+            gEventSlot[0x2] = charEscapeQuoteList[cnt].textID;
+            return;
         }
-        if (rescueeID == 0xF){ // is loewe the rescued unit
-            if (GetUnitByCharId(0x1)->state & (US_HIDDEN)){ // is cleo hidden (escaped) already
-
-            }
-            else{
-
-            }
-        }
+        cnt++;
     }
 }
-*/
+
+void EscapeEventCall(){
+    CallMapEventEngine(RequiredEscapeeEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
+    return;
+}
+
+void EscapeEventYes(){
+    PlayFinalEscapeQuote();
+    EscapeState |= ES_ESCAPE;
+    gActionData.unitActionType = UNIT_ACTION_WAIT;
+    gActiveUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
+    if (gActiveUnit->rescueOtherUnit != 0){
+        GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN | US_UNSELECTABLE);
+    }
+    SeizeCommandEffect();
+    return;
+}
+
+void PlayFinalEscapeQuote(){
+    CallMapEventEngine(FinalEscapeQuoteEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
+    return;
+}
+
+void ReturnFinalEscapeQuote(){
+    int charID = gEventSlot[0x2];
+    CharEscapeQuoteEntry* charEscapeQuoteList = RequiredCharFinalEscapeQuoteEntriesTable[charID];
+    int cnt = 0;
+    while (charEscapeQuoteList[cnt].chapterID != 0xFF){
+        if (charEscapeQuoteList[cnt].chapterID == gChapterData.chapterIndex){
+            gEventSlot[0x2] = charEscapeQuoteList[cnt].textID;
+            return;
+        }
+        cnt++;
+    }
+}
+
+void FinalEscapeThing(Unit* someUnit){
+    if (EscapeState & ES_ESCAPE){
+        EscapeState ^= ES_ESCAPE;
+        someUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
+    }
+    return;
+}
 
 bool CheckIfLeftBehind(Unit* unit){
     if (UNIT_FACTION(unit) != UA_BLUE ){

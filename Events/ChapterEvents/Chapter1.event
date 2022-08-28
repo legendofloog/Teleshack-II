@@ -37,28 +37,9 @@ Chest(SteelBow,10,11)
 LOCA 9 LoeweSvetomirDoor [16,10] 0x12
 LOCA 10 SennyDoor [16,3] 0x12
 LOCA 11 HelmanDoor [10,5] 0x12
-Escape(0,EscapeEventCheck,2,0)
-Escape(0,EscapeEventCheck,3,0)
+Escape(2,0)
+Escape(3,0)
 END_MAIN
-
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-NoFade
-ENDA
-
 
 MiscBasedEvents:
 AREA 0 CivilianEscape [14, 0] [15, 0]
@@ -240,17 +221,9 @@ ENUT GuideUnlockFatigue
 ENUT GuideUnlockDismount
 ENUT GuideUnlockCanto
 ENUT GuideUnlockEscape
-ENUT GuideUnlockOrodreth
-ENUT GuideUnlockByelen
-ENUT GuideUnlockCythes
-ENUT GuideUnlockDecia
-ENUT GuideUnlockMahemen
-ENUT GuideUnlockChouwouj
-ENUT GuideUnlockYuliaIslands
 ENUT GuideUnlockFormulaChanges
-ENUT GuideUnlockQoLChanges
-ENUT GuideUnlockElmhurstIsland
 ENUT GuideUnlockDecianLiberators
+ENUT GuideUnlockQoLChanges
 LOMA Ch1LoeweVillage
 LOAD1 1 Flashback1Units1
 ENUN
@@ -326,11 +299,12 @@ Text(BeginningSceneLoeweFlashback2Text7)
 SingleUnitMove(Helman,10,6,0)
 REMOVEUNIT Helman
 FADI 5
-MUSC 0x7FFF
+FadeOutMusic
 WEATHER 0
 REMOVEALL_GREEN
-SetBackground(BlackBackground)
+SetBackground(BlackBackground)		
 CGText(Ch1SvetomirPesteringLoeweText1)
+MUSC FE5_InTheBattle_Fate
 CGText(Ch1SvetomirPesteringLoeweText2)
 CGText(Ch1SvetomirPesteringLoeweText3)
 CGText(Ch1SvetomirPesteringLoeweText4)
@@ -357,6 +331,7 @@ LOAD1 1 Units2
 ENUN
 LOAD1 1 Units3
 ENUN 
+FadeOutMusic
 FlashCursor(Cleo,60)
 MUSC Sortie_Formation
 SetBackground(CastleHallway)
@@ -511,10 +486,11 @@ BNE 2 s0 sC
 		GiveItem(Kaiserschwert_Fake,Loewe)
 		GOTO 907
 	LABEL 420
-	//add some check here to see if she's removed
+	CheckUnitDeadOrJailed(Iskra)
 	BEQ 57 s0 sC //if she's not removed, branch; if so, play captured dialogue
 		Text(EndingSceneTextLoeweAndCleoIskraCaptured)
 		GiveItem(Kaiserschwert_Fake,Loewe)
+		GOTO 907
 	LABEL 57 
 	Text(EndingSceneTextLoeweAndCleoIskraAlive1)
 	SPAWN_ALLY Iskra [20,16]

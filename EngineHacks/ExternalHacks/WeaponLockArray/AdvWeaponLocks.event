@@ -132,6 +132,7 @@ BYTE EndLockArray
 TaodaoArray:
 BYTE HardCharLock
 BYTE Tao
+BYTE Tao_Fake
 BYTE EndLockArray
 
 RunespearArray:

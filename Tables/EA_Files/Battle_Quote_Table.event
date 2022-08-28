@@ -29,6 +29,7 @@ UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
 SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
 SpecifiedBattleConvo(Eitha,Leina,Chapter12,9,Ch12EithaLeinaBossQuote)
 UnspecifiedBattleConvo(Eitha,Chapter12,23,Ch12EithaBossQuote)
+UnspecifiedBattleConvo(Tao_Fake,Chapter12,0x0,Ch12xBeginningScene3Part2TaoBattleQuote)
 UnspecifiedBattleConvo(Veniamin,Chapter13,1,VeniaminBossQ)
 UnspecifiedBattleConvo(Corundum,Chapter13,11,CorundumBossQ)
 UnspecifiedBattleConvo(Pascal,Chapter13,12,PascalBossQ)
@@ -54,6 +55,9 @@ SpecifiedBattleConvo(Mifan,Valse,Chapter10,0x26,Ch10MifanValseBossQuote)
 SpecifiedBattleConvo(Mifan,Hornet,Chapter10,0x27,Ch10MifanHornetBossQuote)
 SpecifiedBattleConvo(Mifan,Radnitz,Chapter10,0x28,Ch10MifanRadnitzBossQuote)
 UnspecifiedBattleConvo(Mifan,Chapter10,0x23,Ch10MifanBossQuote)
+
+
+
 
 //Chapter15
 SpecifiedBattleConvo(Kassandra,Cleo,Chapter15Cutscene,0x0,Ch15KassandraVSCleo)

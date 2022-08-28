@@ -1,6 +1,6 @@
 .thumb
 
-//fetches the appropriate palette based on unit allegiance and returns to 80885a4
+@ fetches the appropriate palette based on unit allegiance and returns to 80885a4
 
 ldr r2,=0x202bcc4
 ldrh r0,[r2] @xcoord
@@ -13,15 +13,16 @@ ldrb r0,[r0]
 CheckAlleg:
 mov r1,#0xc0
 and r1,r0
-ldr r0,=0x8a06460
+ldr r0,=0x8088640
+ldr r0,[r0]
 cmp r1,#0
-beq End //if ally, we're done
+beq End @ if ally, we're done
 cmp r1,#0x40
 beq NPC
 cmp r1,#0x80
 beq Enemy
 cmp r1,#0xc0
-bne End //default to ally (just in case)
+bne End @ default to ally (just in case)
 add r0,#0x60
 b End
 NPC:

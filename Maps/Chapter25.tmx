@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
  <tileset firstgid="1" name="Village v2 - Snow Tileset" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="Village v2 - Snow Tileset.png" width="512" height="512"/>
  </tileset>
@@ -11,7 +11,7 @@
    <property name="MapChangesID" value="Chapter25MapChanges"/>
    <property name="MapID" value="Chapter25Map"/>
    <property name="ObjectType" value="FlasuVillage2SnowObjectID"/>
-   <property name="PaletteID" value="FlasubanVillageSnowPaletteID"/>
+   <property name="PaletteID" value="ActualEndgamePaletteID"/>
    <property name="TileConfig" value="FlasuVillage2SnowMapchipConfigID"/>
   </properties>
   <data>

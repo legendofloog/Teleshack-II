@@ -1,5 +1,7 @@
 #include "gbafe.h"
 
+#include "BattleExp.h"
+
 #define CA_NO_EXP CA_NEGATE_LETHALITY // idk why its labelled wrong
 
 int GetBattleUnitExpGain(BattleUnit* actor, BattleUnit* target);
@@ -9,7 +11,6 @@ int GetUnitEffectiveLevel(Unit* unit);
 int GetLevelDifference(BattleUnit* actor, BattleUnit* target);
 int GetBattleUnitStaffExp(BattleUnit* actor);
 const ItemData* GetItemData(int itemId);
-extern u8 PrepromoteTable[];
 extern u8 MountedInPrepsTable[];
 int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit);
 void ApplyUnitPromotion(struct Unit* unit, u8 classId);
@@ -120,21 +121,22 @@ int GetUnitEffectiveLevel(Unit* unit){
 	if (unit->pClassData->attributes & CA_PROMOTED){
 		effectiveLevel += 20;
 	}
-	int currentPrepromoteUnit = 0;
 	int i = 0;
-	while( currentPrepromoteUnit != 0xFF){
-		currentPrepromoteUnit = PrepromoteTable[i];
-		if(unit->pCharacterData->number == currentPrepromoteUnit){
-			if(unit->pCharacterData->number == 0x2){ //unit is Mira
-				effectiveLevel -= 15;
-				break;
-			}
-			effectiveLevel -= 10;
+	while( PrepromoteTable[i].charID != 0xFF){
+		if(unit->pCharacterData->number == PrepromoteTable[i].charID){
+			effectiveLevel -= PrepromoteTable[i].levelsToDecreaseBy;
 			break;
 		}
 		i++;
 	}
-
+	int j = 0;
+	while( BossExpReductionTable[j].charID != 0xFF){
+		if(unit->pCharacterData->number == BossExpReductionTable[j].charID && gChapterData.chapterIndex == BossExpReductionTable[j].chapterID){
+			effectiveLevel -= BossExpReductionTable[i].levelsToDecreaseBy;
+			break;
+		}
+		j++;
+	}
 	return effectiveLevel;
 
 }

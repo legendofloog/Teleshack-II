@@ -52,31 +52,6 @@ void UnitCopy(){
     copierUnit->ranks[7] = copiedUnit->ranks[7];
 }
 
-void SetFatigue(){
-    Unit* unit = GetUnitByCharId(gEventSlot[1]);
-    int fatigueAmount = gEventSlot[2];
-    if (fatigueAmount == 0xFF){
-        unit->fatigue = unit->maxHP;
-    }
-    else{
-        unit->fatigue = fatigueAmount;
-    }
-}
-
-void CheckIfFatigued(){
-    Unit* unit = GetUnitByCharId(gEventSlot[1]);
-    if (unit->state & (US_DEAD | US_REMOVED) ){
-        gEventSlot[0xC] = 0;
-        return;
-    }
-    if (unit->fatigue > unit->maxHP){
-        gEventSlot[0xC] = 1;
-    }
-    else{
-        gEventSlot[0xC] = 0;
-    }
-}
-
 int GetCurrentPromotedLevelBonus(){
     return 9; //every promoted unit hits 10 unpromoted
 }
@@ -136,11 +111,11 @@ void CheckIfTileChangeTriggered(){
 }
 
 void CheckIfTargetUnitWasCaptured(){
-    if(gBattleTarget.unit.curHP == 0 && gBattleTarget.unit.state & US_RESCUED){ //pretty sure captured units are technically being rescued?
-        gEventSlot[0xC] = 1; //no HP + rescued = captured (on old implementation of capture)
+    if(gBattleActor.unit.state & US_CAPTURE){ //after defeating an enemy, was your unit capturing
+        gEventSlot[0xC] = 1; // if so, return as 1
         return;
     }
-    gEventSlot[0xC] = 0; //0 HP and not rescued? they dead
+    gEventSlot[0xC] = 0; //if not, return as 0
     return;
 }
 
@@ -155,5 +130,46 @@ void GiveBlueUnitItemAfterCombat(){ //s1 = item id
     }
     if (UNIT_FACTION(&gBattleActor.unit) == UA_BLUE){
         
+    }
+}
+
+void CheckIfFatigued(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]);
+    if (unit->state & (US_DEAD | US_REMOVED) ){
+        gEventSlot[0xC] = 0;
+        return;
+    }
+    if (unit->fatigue > unit->maxHP){
+        gEventSlot[0xC] = 1;
+    }
+    else{
+        gEventSlot[0xC] = 0;
+    }
+}
+
+void SetFatigue(Unit* unit, int value){
+    if (value == 0xFF){
+        unit->fatigue = unit->maxHP;
+    }
+    else{
+        unit->fatigue = value;
+    }
+}
+
+void SetFatigueEvent(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]);
+    int fatigueAmount = gEventSlot[2];
+    SetFatigue(unit, fatigueAmount);
+}
+
+void FatiguePartyWipe(){
+    int x;
+    for (x = 0; x <= 60; x++){ // cycles through unit array
+        if (gUnitArrayBlue[x].state & (US_DEAD | US_REMOVED | US_GROWTH_BOOST)){ // dead, removed, jailed
+
+        }
+        else{
+            SetFatigue(&gUnitArrayBlue[x], 0);
+        }
     }
 }

@@ -25,7 +25,7 @@
 #define Chapter23 0x16
 #define Chapter24 0x17
 #define Chapter25 0x18
-#define Chapter26 0x19
+#define PostgameHub 0x19
 #define Ch1LoeweVillage 0x1A
 #define Ch1DraganaPrison 0x1B
 #define Ch5xInterlude 0x1C
@@ -36,6 +36,8 @@
 #define Chapter17Council 0x21
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
+#define Chapter12xDarkness 0x29
+#define EpilogueChapter 0x2A
 
 // MapChangesID
 
@@ -75,6 +77,7 @@
 #define Chapter17CouncilMapChanges 0xB1
 #define Chapter17DuelMapChanges 0xB5
 #define Chapter18xInterludeMapChanges 0xB8
+#define Chapter12xDarknessMapChanges 0xC6
 
 
 // MapID
@@ -115,6 +118,7 @@
 #define Chapter17CouncilMap 0xB2
 #define Chapter17DuelMap 0xB6
 #define Chapter18xInterludeMap 0xB9
+#define Chapter12xDarknessMap 0xC7
 
 // EventsID
 
@@ -143,7 +147,7 @@
 #define Chapter23Events 0x67
 #define Chapter24Events 0x6B
 #define Chapter25Events 0x71
-#define Chapter26Events 0x75
+#define PostgameHubEvents 0x75
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
 #define Ch5xInterludeEvents 0x81
@@ -151,6 +155,7 @@
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7
 #define Chapter18xInterludeEvents 0xBA
+#define EpilogueEvents 0xCA
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88
@@ -160,6 +165,7 @@
 #define DesertBastionObjectID 0xA4
 #define FlasuVillage2SnowObjectID 0xBD
 #define FF2TownObjectID 0xBE
+#define EndgameObjectID 0xC5
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
@@ -170,6 +176,9 @@
 #define FlasubanVillageSnowPaletteID 0xBB
 #define FF2TownPaletteID 0xBF
 #define FF2TownSnowPaletteID 0xc1
+#define EndgamePaletteID 0xc8
+#define ActualEndgamePaletteID 0xcb
+#define Chapter4VillagePaletteID 0xcc
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -180,9 +189,11 @@
 #define DesertBastionMapchipConfigID 0xA6
 #define FlasuVillage2SnowMapchipConfigID 0xBC
 #define FF2TownConfigID 0xC0
+#define EndgameConfigID 0xc9
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B
 #define FlasubanVillageTileAnimationsID 0x95
 #define FF5WaveCaveTileAnimationsID 0x9C
+#define FieldsTileAnimationsID 0x05
 

@@ -16,7 +16,7 @@ int BoundDamage(int damage){
 	return damage;
 }
 
-bool ShouldApplyPCC(BattleUnit* attacker, NewBattleHit* battleHit, BattleStats* battleStats){
+bool ShouldApplyPCC(BattleUnit* attacker, BattleUnit* defender, NewBattleHit* battleHit, BattleStats* battleStats){
 
 	if (!(battleStats->config &= BATTLE_CONFIG_REAL)){
 		return false;
@@ -27,6 +27,12 @@ bool ShouldApplyPCC(BattleUnit* attacker, NewBattleHit* battleHit, BattleStats* 
 			if(&NewBattleHitArray[i] != battleHit){
 				if (battleHit->attributes & NewBattleHitArray[i].attributes & (BATTLE_HIT_ATTR_ISATTACKER + BATTLE_HIT_ATTR_ISDEFENDER)){
 					if (battleHit->attributes & BATTLE_HIT_ATTR_FOLLOWUP){ //i think this works? should check for if the batle hit is a follow up
+						return true;
+					}
+					if (gSkillTester(&attacker->unit, DesperationIDLink) || gSkillTester(&attacker->unit, BladeDanceIDLink)){ //if they have desperation, keep going
+						if (battleHit->attributes & BATTLE_HIT_ATTR_BRAVE){
+							return false; //brave desperation does not trigger PCC at all
+						}
 						return true;
 					}
 				}
@@ -48,7 +54,7 @@ void New_Proc_Start(BattleUnit* attacker, BattleUnit* defender, NewBattleHit* ba
 
 	if (BattleRoll1RN(battleStats->hitRate, 1)){
 
-		if (ShouldApplyPCC(attacker, battleHit, battleStats)){
+		if (ShouldApplyPCC(attacker, defender, battleHit, battleStats)){
 			battleStats->critRate *= GetUnitPCC(&attacker->unit);
 		}
 

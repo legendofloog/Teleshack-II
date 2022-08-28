@@ -92,15 +92,18 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatBoss(EndingScene)
+DefeatBoss
 AREA 0xA ArenaCheaterEvent [0,0] [19,3]
 AREA 0xA ArenaCheaterEvent [0,0] [5,13]
 AREA 0xA ArenaCheaterEvent [14,0] [19,13]
 END_MAIN
 
 ArenaCheaterEvent:
-Text(Ch18ArenaCheating)
-CALL GameOverStart
+CHECK_ALLEGIANCE (-1)
+BNE 776 s0 sC
+	Text(Ch18ArenaCheating)
+	CALL GameOverStart
+LABEL 776
 NoFade
 ENDA
 
@@ -245,32 +248,31 @@ UNIT
 
 
 ArenaUnits1:
-UNIT Gladiator2 Mage 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
-UNIT Gladiator2 Mage 0x0 Level(18,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [Thunder] PursueWithoutHeedAI
 UNIT Gladiator2 SwordFighter 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [IceSword,SteelSword] PursueWithoutHeedAI
 UNIT Gladiator2 SwordFighter 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [StoneSword,SteelSword] PursueWithoutHeedAI
 UNIT Gladiator2 AxeArmor 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
 UNIT Gladiator2 LanceArmor 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [TrainedPike] PursueWithoutHeedAI
+UNIT Gladiator2 Mage 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
+UNIT Gladiator2 Mage 0x0 Level(18,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [Thunder] PursueWithoutHeedAI
 UNIT
 
 ArenaUnits2:
-UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
 //UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
 UNIT Gladiator2 Freelancer 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
 UNIT Gladiator2 Myrmidon 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [IronBlade] PursueWithoutHeedAI
-UNIT Gladiator2 Pirate 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [Hurlbat] PursueWithoutHeedAI
 UNIT Gladiator2 Brigand 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [Hammer] PursueWithoutHeedAI
-
+UNIT Gladiator2 Pirate 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [Hurlbat] PursueWithoutHeedAI
+UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
 UNIT Gladiator2 Warrior 0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] PursueWithoutHeedAI
 UNIT
 
 ArenaUnits3:
-UNIT Gladiator2 Paladin 0x0 Level(4,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [WindSword] PursueWithoutHeedAI
-UNIT Gladiator2 MageKnight 0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
 UNIT Gladiator2 PegasusRider 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
 UNIT Gladiator2 DragonRider 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI
 UNIT Gladiator2 LanceKnight 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [TrainedPike] PursueWithoutHeedAI
 UNIT Gladiator2 SwordKnight 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
+UNIT Gladiator2 Paladin 0x0 Level(4,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [WindSword] PursueWithoutHeedAI
+UNIT Gladiator2 MageKnight 0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [Elfire] PursueWithoutHeedAI
 UNIT
 
 ArenaUnits4:

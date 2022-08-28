@@ -427,3 +427,11 @@ MasterKnight_Standing:
 ALIGN 4
 MasterKnight_Moving:
 #incbin "Dmp/Great Lord (M) Ephraim Sword {milom}-walk.dmp"
+
+ALIGN 4
+AugurStanding:
+#incbin "Dmp/augur_standing(knabepicer).dmp"
+
+ALIGN 4
+AugurMoving:
+#incbin "Dmp/augur_walk(knabepicer).dmp"

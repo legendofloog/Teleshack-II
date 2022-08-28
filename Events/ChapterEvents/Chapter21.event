@@ -34,7 +34,7 @@ CharacterBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
-	DefeatBoss(EndingScene)
+	DefeatBoss
 	CauseGameOverIfLordDies
 	END_MAIN
 
@@ -145,7 +145,6 @@ Text(Chapter21Intro_KassandraSus)
 FadeToBlack
 MUSC FF6AwakeningID
 SetBackground(0x29) // can we replace this with a cool tent/army camp background or something?
-FadeBackFromBlack
 Text(Chapter21Intro_WarCamp)
 FadeToBlack
 MUSC Rovers
@@ -154,7 +153,6 @@ Text(Chapter21Intro_BoroDepressed)
 FadeToBlack
 MUSC Sortie_Formation
 SetBackground(0x1F)
-FadeBackFromBlack
 Text(Chapter21PostPreps_1)
 FadeToBlack
 LOAD1 0x1 InitialValereSquad
@@ -240,13 +238,14 @@ NoFade
 ENDA
 
 SaveValere:
-MUSC(WithUs_Song)
+MUSS WithUs_Song
 Text(Ch21ValereIsGoDialogue)
 CenterTextbox(Ch21ValereIsGo)
 FadeToBlack
 DISA Valere
 TILECHANGE 0x1
 FadeBackFromBlack
+MURE 2
 NoFade
 ENDA
 
@@ -469,7 +468,6 @@ CHECK_EVENTID 0xD
 BEQ 0x44 0xc 0x0
 	CHECK_ALIVE Ngondala
 	BEQ 0x44 0x0 0xC
-		FadeBackFromBlack
 		Text(Ch21Ending_NgondalaDepressed)
 		FadeToBlack
 LABEL 0x44
@@ -478,18 +476,15 @@ Text(Ch21Ending_BoroLeaves)
 FadeToBlack
 MUSC WindyDaySoundEffect
 SetBackground(0x03) // make this a snowy version
-FadeBackFromBlack
 Text(Ch21Cythes_Trajan)
 FadeToBlack
 SetBackground(0x06) // make this snowy too
-FadeBackFromBlack
 Text(Ch21Cythes_1)
 STAL 16
 Text(Ch21Cythes_2)
 FadeToBlack
 SetBackground(0x0C)
 Music(FFTAnxiety)
-FadeBackFromBlack
 Text(Ch21Cythes_3)
 FadeToBlack
 MNC2 Chapter22

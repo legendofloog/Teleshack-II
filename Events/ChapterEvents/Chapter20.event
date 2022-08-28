@@ -58,6 +58,8 @@ Text(JerryRecruit)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
@@ -67,6 +69,8 @@ Text(JerryRecruitAnyone)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
@@ -76,6 +80,8 @@ Text(LyreRecruit)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
@@ -85,11 +91,13 @@ Text(LyreRecruitAnyone)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
 MiscBasedEvents:
-	AFEV 0 EndingScene 0x6
+	DefeatAll
 	CauseGameOverIfLordDies
 	END_MAIN
 

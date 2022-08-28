@@ -78,6 +78,7 @@
 
 // Chapter 1 Bosses
 #define Raschwitz_Ch1 0x55
+#define Boro_Ch1 0x4E
 // Chapter 2 Boss
 #define Tyr_Ch2 0x56
 // Chapter 2 generic guy for eventing battle purposes 
@@ -156,6 +157,9 @@
 //Chapter 12 stuff
 #define Eitha 0x4B
 
+//Chapter 12x stuff
+#define Tao_Fake 0x4F
+
 //Chapter 13 stuff
 #define Corundum 0x9B
 #define Pascal 0x9C
@@ -177,8 +181,7 @@
 #define Phantom 0x8A
 #define Hamdi 0x4C
 #define Colossus 0x4D
-#define Boro_Ch16 0x4E
-#define Boro_Ch1 Boro_Ch16
+#define Boro_Ch16 0x67
 
 //Chapter 17 Stuff
 #define Alto 0xA8
@@ -251,7 +254,6 @@
 #define Murray 0x4C
 #define Tirado 0x4D
 #define Binks 0x4E
-#define Pablo 0x4F
 #define Macdaire 0x50
 #define Maelduin_boss 0x50
 #define Aias 0x51

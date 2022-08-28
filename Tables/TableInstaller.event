@@ -34,25 +34,11 @@
 
 #include "NightmareModules\ItemEffectRevamp\Staff_AI_Table.event"
 
-#include "NightmareModules\Items\GaidenSpellCostTable.event"
-
 #include "NightmareModules\Items\ItemTable.event"
 
 #include "NightmareModules\Items\SpellAssociationList.event"
 
 #include "NightmareModules\Items\WeaponLockArray.event"
-
-#include "NightmareModules\Misc\BiorhythmEditor.event"
-
-#include "NightmareModules\Misc\EscapeQuoteEditor.event"
-
-#include "NightmareModules\Misc\ModularEXPClassTable.event"
-
-#include "NightmareModules\Misc\ModularPreBattleTable.event"
-
-#include "NightmareModules\Misc\PersonalDataEditor.event"
-
-#include "NightmareModules\Misc\PromotionLevelList.event"
 
 #include "NightmareModules\Skills\CharacterLevelUpSkillEditor.event"
 

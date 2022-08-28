@@ -43,10 +43,10 @@ Chest(Restore,10,16)
 Chest(RedGem,12,16)
 Chest(CaptainsHelm,16,16)
 SecretShop(Ch16SecretShop,21,17)
-Escape(0,EscapeEventCheck,21,10)
-Escape(0,EscapeEventCheck,21,11)
-Escape(0,EscapeEventCheck,21,12)
-Escape(0,EscapeEventCheck,21,13)
+Escape(21,10)
+Escape(21,11)
+Escape(21,12)
+Escape(21,13)
 END_MAIN
 
 ALIGN 4
@@ -54,24 +54,6 @@ Ch16SecretShop:
 	SHLI TrainedEdge TrainedPike TrainedAxe TrainedArc SilverSword SilverLance SilverAxe SilverBow Thoron Aura Hel Restore Physic Sigil Unlock Rewarp DoorKey ChestKey
 	BYTE 0x0 0x0
 	ALIGN 4
-
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-    COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-    COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-    ENUT 3
-    CALL EndingScene
-LABEL 3
-NoFade
-ENDA
 
 MiscBasedEvents:
 CauseGameOverIfLordDies 
@@ -328,7 +310,7 @@ BNE 2 s0 sC
 	CHECK_EVENTID 0x88
 	BNE 2 s0 sC
     	SetBackground(OutsideFort)
-    	MUSC(Advance)
+    	MUSC Advance
     	Text(VargaPrf)
     	GiveItem(AquaBrand,Varga)
     	ENUT 0x88
@@ -338,7 +320,7 @@ BNE 4 s0 sC
 	CHECK_EVENTID 0x89
 	BNE 4 s0 sC
 		SetBackground(OutsideFort)
-		MUSC(Advance)
+		MUSC Advance
 		Text(EmilPrf)
 		GiveItem(ChargeLance,Emil)
 		ENUT 0x89

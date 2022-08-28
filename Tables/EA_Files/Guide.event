@@ -161,7 +161,7 @@ SHORT GuideUnlockMahemen GuideReadMahemen
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockChouwouj GuideReadChouwouj
 ORG CURRENTOFFSET+8
-SHORT UnlockGuideFlag UnlockGuideFlag
+SHORT GuideUnlockElmhurstIsland GuideReadElmhurstIsland
 ORG CURRENTOFFSET+8
 SHORT GuideUnlockYuliaIslands GuideReadYuliaIslands
 ORG CURRENTOFFSET+8

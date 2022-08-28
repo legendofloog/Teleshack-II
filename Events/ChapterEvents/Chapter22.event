@@ -24,9 +24,9 @@ CharacterEventBothWays(12, TrajanRecruit, Cleo, TrajanReal)
 END_MAIN
 
 LocationBasedEvents:
-Chest(IronSword,26,1)
+Chest(Dracoshield,26,1)
 Door(23,2)
-Chest(BlueGem,30,6)
+Chest(WhiteGem,30,6)
 Door(27,9)
 Door(28,9)
 Door(24,12)
@@ -35,6 +35,7 @@ Village(8,VillageA,14,1)
 Village(9,VillageB,12,8)
 Village(10,VillageC,20,11)
 LOCA 11 LockeInn [2,22] 0x10
+LOCA 0 NPCVillage1 [14,11] 0x10
 Vendor(Ch22Vendor,19,8)
 Armory(Ch22Armory,9,1)
 SecretShop(Ch22SecretShop,8,15)
@@ -43,7 +44,7 @@ END_MAIN
 
 MiscBasedEvents:
 AREA 12 GuidingMoonlight [30,37][30,38]
-DefeatBoss(EndingScene)
+DefeatBoss
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -71,13 +72,15 @@ Units1:
 LoadUnit(5,28)
 LoadUnit(7,26)
 LoadUnit(7,28)
-LoadUnit(8,30)
-LoadUnit(6,30)
+LoadUnit(7,30)
 LoadUnit(4,29)
 LoadUnit(8,27)
 LoadUnit(9,26)
-LoadUnit(9,29)
+LoadUnit(8,29)
 LoadUnit(10,27)
+LoadUnit(5,30)
+LoadUnit(6,29)
+LoadUnit(6,27) //added two deploy slots because 10 is pain - Loog
 UNIT
 
 BeginningScene:
@@ -89,29 +92,56 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-RemoveAll
 MNC2 Chapter23
 NoFade
 ENDA
 
 VillageA:
-GiveItem(IronSword,0xFFFF)
+GiveItem(KnightProof,0xFFFF)
 NoFade
 ENDA
 
-VillageB:
-GiveItem(IronSword,0xFFFF)
+VillageB: 
+GiveItem(IronRune,0xFFFF)
 NoFade
 ENDA
 
 VillageC:
-GiveItem(IronSword,0xFFFF)
+GiveItem(Barrier,0xFFFF)
 NoFade
 ENDA
 
 LockeInn:
+CHECK_MONEY
+IBlt(899, 0xF0) // choice below occurs if gold is above
+SetBackground(Tavern)
+PreventSkipping
+Text(LockeTavernPrompt)
+AllowSkipping
+SVAL s1 0x1
+BEQ 0xAE s1 sC
+    Text(LockeNoText) // refuse to recruit
+	UnsetFlag(11)
+	CALL $9EE2C4
+	GOTO 0xE
+
+LABEL 0xAE // recruit unit
+MUSC(WithUs_Song)
+Text(LockeYesText)
+CALL $9EE2C4
 LOAD1 1 LockeSpawn
 ENUN
+SVAL s3 900
+TAKEMONEY
+GOTO 0xE
+
+LABEL 0xF0 // not enough money
+Text(LockeNotEnoughText)
+// CALL $9EE2C4
+UnsetFlag(11)
+GOTO 0xE
+
+LABEL 0xE // exit event
 NoFade
 ENDA
 
@@ -119,6 +149,7 @@ TrajanArrive:
 CamOn
 LOAD1 1 TrajanSpawn
 ENUN
+Text(TrajanArriveText)
 CamOff
 NoFade
 ENDA
@@ -133,14 +164,38 @@ NoFade
 ENDA
 
 GuidingMoonlight:
+Text(MoonlightBladeText)
 GiveItem(MoonlightBlade,0xFFFF)
 // Intended to be a one off easter egg item
 NoFade
 ENDA
 
+NPCVillage1:
+SetBackground(House1)
+Text(NPCVillage1Text)
+CALL $9EE2C4
+NoFade
+ENDA
+
 ALIGN 4
 Ch22Armory:
-SHORT IronSword
+SHORT Longsword
+SHORT Greatsword
+SHORT TrainedEdge
+SHORT Claymore
+SHORT Armorslayer
+SHORT Longlance
+SHORT GreatLance
+SHORT TrainedPike
+SHORT Horseslayer
+SHORT HeavySpear
+SHORT SteelAxe
+SHORT TrainedAxe
+SHORT Halberd
+SHORT Hammer
+SHORT Longbow
+SHORT Greatbow
+SHORT MarksmanBow
 SHORT 0
 SHORT 0
 ALIGN 4
@@ -148,7 +203,19 @@ ALIGN 4
 
 ALIGN 4
 Ch22Vendor:
-SHORT Fire
+SHORT Thunder
+SHORT Elfire
+SHORT Tornado
+SHORT Lightning
+SHORT Malkuth
+SHORT Aura
+SHORT Flux
+SHORT Jormungand
+SHORT Hel
+SHORT Heal
+SHORT Mend
+SHORT Physic
+SHORT Restore
 SHORT 0
 SHORT 0
 ALIGN 4
@@ -156,20 +223,39 @@ ALIGN 4
 
 ALIGN 4
 Ch22SecretShop:
-SHORT SilverCard
+SHORT SilverSword
+SHORT KillingEdge
+SHORT Zweihander
+SHORT BigIron
+SHORT SilverLance
+SHORT KillerLance
+SHORT Glaive
+SHORT SilverAxe
+SHORT KillerAxe
+SHORT Swordreaver
+SHORT DeadeyeBow
+SHORT DaShoota
+SHORT Bolting
+SHORT Thoron
+SHORT Purge
+SHORT Fenrir
+SHORT Sleep
+SHORT Sigil
+SHORT Berserk
 SHORT 0
 SHORT 0
 ALIGN 4
 
 
 BossUnit:
-UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22] 0x0 0x0 0x0 0x0 [Zweihander,MasterLance,BattleAxe,CounterBow] AttackInRangeAI
+UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22] 0x0 0x0 0x0 0x0 [Zweihander,GreatLance,BattleAxe,CounterBow] AttackInRangeAI
 UNIT
 
 EnemyUnits:
 // UNIT Cythes Class Eleanor Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [Item] TEMPAI
 // Initial group
-UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
+//UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
+UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [0,23] 0x0 0x0 0x0 0x0 [Hurlbat,Vulnerary] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [Poleaxe,RedGem] ChargeAI
@@ -226,11 +312,11 @@ UNIT Cythes Sage Eleanor Level(7,Enemy,True) [27,23] 0x0 0x0 0x0 0x0 [Thoron,Men
 UNIT
 
 TrajanSpawn:
-UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [0,11] 0x0 0x0 0x0 0x0 [SilverAxe,Claymore,KnightProof] AttackInRangeAI
+UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [0,11] 0x0 0x0 0x1 REDA0R11 [SilverAxe,Claymore,KnightProof] AttackInRangeAI
 UNIT
 
 LockeSpawn:
-UNIT Locke ThiefFighter 0x0 Level(3,Ally,False) [2,23] 0x0 0x0 0x0 0x0 [Armorslayer,ShortSword] NeverMoveAI
+UNIT Locke ThiefFighter 0x0 Level(3,Ally,False) [2,22] 0x0 0x0 0x1 REDA2R23 [Armorslayer,ShortSword] NoAI
 UNIT
 
 ThiefAppear:
@@ -241,9 +327,9 @@ CamOff
 ENDA
 
 Reinforcements_A:
-UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [18,0] 0x0 0x0 0x0 0x0 [Longlance] TwoActionAI
-UNIT Cythes DukeKnight Eleanor Level(7,Enemy,True) [20,0] 0x0 0x0 0x0 0x0 [BraveLance] TwoActionAI
-UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [22,0] 0x0 0x0 0x0 0x0 [BoldCleaver] TwoActionAI
+UNIT Cythes LanceSoldier Eleanor Level(20,Enemy,True) [18,0] 0x0 0x0 0x1 REDA18R0 [Longlance] TwoActionAI
+UNIT Cythes DukeKnight Eleanor Level(7,Enemy,True) [20,0] 0x0 0x0 0x1 REDA20R0 [BraveLance] TwoActionAI
+UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [22,0] 0x0 0x0 0x1 REDA22R0 [BoldCleaver] TwoActionAI
 UNIT 
 
 Reinforcements_Spawn_A:

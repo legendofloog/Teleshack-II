@@ -17,11 +17,26 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x581
+Save any changes.[NL]
+Choose Restart Chapter[NL]
+to restart this chapter.[NL][X]
+
+# 0x04C2
+Raises strength.[X]
+
 # 0x51E
 Radiant[X]
 
 # 0x522
 MP/2 + 5[X]
+
+# 0x5B6
+Put items in storage. Up to[NL]
+200 items can be put in storage.[X]
+
+# 0x474
+Restores HP to allies at a distance.[X]
 
 # 0x26B
 Holy[X]
@@ -215,3 +230,8 @@ the top of inventory.[X]
 #include "CharClassItemsEtc/Supports.txt"
 
 #include "CharClassItemsEtc/CharacterEndings.txt"
+
+## EscapeWarningText
+Do you want to Escape?[N]
+[Red]All other units will be left behind.[Red][.4][N]
+[No][X]

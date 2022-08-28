@@ -687,8 +687,8 @@ when foe initiates battle.[X]
 Steal: Unit can steal items.[X]
 
 ## SD_StealPlus
-Steal+: Unit can steal weapons[N]
-and staves if Bld > Item Wt.[X]
+Steal+: Unit can steal weapons and staves[N]
+if Bld >= Item Wt and Spd >= enemy Spd.[X]
 
 ## SD_Capture
 Capture: Capture an enemy after[N]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <tileset firstgid="1" name="A400A5A6" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="A400A5A6.png" trans="ffffff" width="512" height="512"/>
  </tileset>
@@ -342,7 +342,7 @@
    <tile gid="1003"/>
    <tile gid="194"/>
    <tile gid="176"/>
-   <tile gid="1003"/>
+   <tile gid="99"/>
    <tile gid="100"/>
    <tile gid="99"/>
    <tile gid="100"/>

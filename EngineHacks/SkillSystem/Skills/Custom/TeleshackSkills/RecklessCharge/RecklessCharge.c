@@ -14,6 +14,22 @@ void RecklessCharge(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
+void Charge(BattleUnit* unit1, BattleUnit* unit2){
+	if (&gBattleActor != unit1){
+		return;
+	}
+	if (unit2->unit.pClassData == 0){ //is the defender existent
+		return;
+	}
+	if (gActionData.moveCount == 0xFF){
+		return;
+	}
+	
+	if (gSkillTester(&unit1->unit, ChargeIDLink)){ //do they have charge
+		unit1->battleAttack += gActionData.moveCount;
+	}
+}
+
 int RecklessChargeDoublingFunc(){
 	Unit* actingUnit = &gBattleActor.unit;
 	ActionData currentActionData = gActionData;

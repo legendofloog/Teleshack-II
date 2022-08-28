@@ -1,6 +1,6 @@
 
 .equ NightcallerID, SkillTester+4
-
+.equ SetEventId, 0x8083D81
 .thumb
 
 push {r4-r5,lr} 
@@ -34,6 +34,10 @@ bne	Continue
 b End
 
 Continue:
+mov r0, #40
+ldr r1, =SetEventId
+mov r14, r1
+.short 0xF800
 ldr r0, =0x202BCFD @ fow vision
 ldrb r1, [r0]
 cmp r1, #3
@@ -45,6 +49,7 @@ Reset:
     mov r1, #6
 Apply:
 strb r1, [r0]
+
 
 
 End:

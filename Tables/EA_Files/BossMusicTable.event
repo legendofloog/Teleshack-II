@@ -3,45 +3,80 @@
 
 ALIGN 4
 BossBGMTable:
+//ch 1
 BossBGMEntry(Raschwitz_Ch1, Lufia2_RoS_Battle2)
 BossBGMEntry(Boro_Ch1, UnfinishedBattleGodSyndrome)
-BossBGMEntry(Hilmar, Lufia2_RoS_Battle2)
+// ch2
 BossBGMEntry(Tyr_Ch2, Lufia2_RoS_Battle2)
+// ch3
 BossBGMEntry(Emory_Ch3, Lufia2_RoS_Battle2)
+// ch4
+BossBGMEntry(Hilmar, Lufia2_RoS_Battle2)
+//ch 5
 BossBGMEntry(Riggan, Lufia2_RoS_Battle2)
-BossBGMEntry(Hege, Lufia2_RoS_Battle2)
-BossBGMEntry(Francis, Lufia2_RoS_Battle2)
-BossBGMEntry(Yor, Lufia2_RoS_Battle2)
-BossBGMEntry(Wellworth, Lufia2_RoS_Battle2)
-BossBGMEntry(TheGiant, Lufia2_RoS_Battle2)
-BossBGMEntry(Mifan, Lufia2_RoS_Battle2)
-BossBGMEntry(Cidor, SorrowsDistortion)
+//ch 6
+BossBGMEntry(McCallum, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(Draken, Lufia2_RoS_Battle2)
+// ch7
+BossBGMEntry(Yor, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(Wellworth, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(TheGiant, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(Mifan, KingOfDragons_IntoTheCastleID)
+// ch 8
+BossBGMEntry(Hege, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(Francis, UnfinishedBattleGodSyndrome)
+// ch 9
+BossBGMEntry(Wrathgar, KingOfDragons_IntoTheCastleID)
+// ch 10
+BossBGMEntry(Cidor, UnfinishedBattleGodSyndrome)
+// ch 11
+BossBGMEntry(Aurora, KingOfDragons_IntoTheCastleID)
+// ch 12
+BossBGMEntry(Eitha, Sheep_Will_Sleep)
+// ch 13
 BossBGMEntry(Veniamin, awaywithyou)
-BossBGMEntry(Eitha, Sheep_Will_Sleep )
 BossBGMEntry(Corundum, awaywithyou)
 BossBGMEntry(Pascal, awaywithyou)
+// ch 14
 BossBGMEntry(Tsoureki, awaywithyou)
-BossBGMEntry(Hamdi, UnfinishedBattleGodSyndrome)
-BossBGMEntry(Colossus, UnfinishedBattleGodSyndrome)
+// ch 15
 BossBGMEntry(Coralia,awaywithyou)
-BossBGMEntry(Alto, Lufia2_RoS_Battle2)
+// ch 16
+BossBGMEntry(Hamdi, SorrowsDistortion)
+BossBGMEntry(Colossus, UnfinishedBattleGodSyndrome)
+// ch 17
+BossBGMEntry(Alto, awaywithyou)
 BossBGMEntry(Mureib, SorrowsDistortion)
+// ch 18
 BossBGMEntry(Shafaqat, awaywithyou)
 BossBGMEntry(Barod2, SorrowsDistortion)
+//ch 19
+BossBGMEntry(C19Mini1, UnfinishedBattleGodSyndrome)
+BossBGMEntry(C19Mini2, UnfinishedBattleGodSyndrome)
+BossBGMEntry(C19Phantom, awaywithyou)
+//ch 20 (has no bosses)
+//ch 21 
 BossBGMEntry(Cephalid, awaywithyou)
 BossBGMEntry(Vinny, awaywithyou)
 BossBGMEntry(Xlea, BattleWithMagus)
 BossBGMEntry(DeathRattle,BattleWithMagus)
 BossBGMEntry(Taraji, SorrowsDistortion)
-BossBGMEntry(C19Mini1, UnfinishedBattleGodSyndrome)
-BossBGMEntry(C19Mini2, UnfinishedBattleGodSyndrome)
-BossBGMEntry(C19Phantom, awaywithyou)
-BossBGMEntry(Mihail,SaturosBattleID)
-BossBGMEntry(Saif,SaturosBattleID)
-BossBGMEntry(Artemis,SaturosBattleID)
-BossBGMEntry(Maryn,SaturosBattleID)
-BossBGMEntry(Viktor,SaturosBattleID)
+//ch 22
+BossBGMEntry(Eleanor,LightGlintID)
+//ch 23
+BossBGMEntry(Mihail,LightGlintID)
+BossBGMEntry(Saif,LightGlintID)
+BossBGMEntry(Artemis,LightGlintID)
+BossBGMEntry(Maryn,LightGlintID)
+BossBGMEntry(Viktor,LightGlintID)
 BossBGMEntry(KassandraReal,FF5_BattleOnTheBigBridgeID)
+// ch 24
+BossBGMEntry(EithaReal, SaturosBattleID)
+BossBGMEntry(HamdiReal, SaturosBattleID)
+BossBGMEntry(Theimon, SaturosBattleID)
+BossBGMEntry(Danu, SaturosBattleID)
+BossBGMEntry(Byelen, FightingOfTheSpirit)
+// ch 25
 BossBGMEntry(Cherne, VsJuliusID)
 BossBGMTerminator
 

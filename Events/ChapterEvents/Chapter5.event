@@ -181,6 +181,7 @@ STAL 3
 GotoPrepScreen
 FADU 60
 Text(PostPrepsCh5Text)
+ENUT GuideUnlockElmhurstIsland
 NoFade
 ENDA
 
@@ -203,6 +204,8 @@ SetBackground(Tavern)
 MUSC Rovers
 Text(LoreCh5Text)
 Text(Lore2Ch5Text)
+ENUT GuideUnlockChouwouj
+ENUT GuideUnlockYuliaIslands
 MNC2 Ch5xInterlude
 NoFade
 ENDA

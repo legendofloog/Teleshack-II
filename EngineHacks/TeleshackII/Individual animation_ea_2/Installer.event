@@ -29,10 +29,6 @@ POIN CustomAnimeTable
 CustomAnimeTable:
 IndividualAnimationEntry(Nora,DragonRider_Dismounted,DismountedFAnims|IsPointer)
 IndividualAnimationEntry(Nora,Dracoknight_Dismounted,DismountedFAnims|IsPointer)
-IndividualAnimationEntry(Awa,AxeKnight,FCavalierAnims|IsPointer)
-IndividualAnimationEntry(Awa,AxeKnight_Dismounted,DismountedFAnims|IsPointer)
-IndividualAnimationEntry(Awa,GreatKnight_Dismounted,DismountedFAnims|IsPointer)
-IndividualAnimationEntry(Awa,GreatKnight,GreatKnightFAnims|IsPointer)
 IndividualAnimationEntry(Jenny,RookKnight,FCavalierAnims|IsPointer)
 IndividualAnimationEntry(Jenny,GoldKnight,GoldKnightFAnims|IsPointer)
 IndividualAnimationEntry(Jenny,RookKnight_Dismounted,DismountedFAnims|IsPointer)
@@ -41,4 +37,6 @@ IndividualAnimationEntry(Hornet,BowKnight,FBowCavAnims|IsPointer)
 IndividualAnimationEntry(Hornet,ArchKnight,ArchKnightFAnims|IsPointer)
 IndividualAnimationEntry(Hornet,BowKnight_Dismounted,DismountedFAnims|IsPointer)
 IndividualAnimationEntry(Hornet,ArchKnight_Dismounted,DismountedFAnims|IsPointer)
+IndividualAnimationEntry(Nahiza,Ballistician,NahizaBallistician|IsPointer)
+IndividualAnimationEntry(Nahiza,LongBallistician,NahizaLongBallistician|IsPointer)
 IndividualAnimationTerminator
