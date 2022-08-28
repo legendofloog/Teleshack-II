@@ -53,6 +53,7 @@ __pycache__
 ._*
 Thumbs.db
 Thumbs.db:encryptable
+Thumbs.db/encryptable
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
