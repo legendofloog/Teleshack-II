@@ -486,7 +486,7 @@ BNE 2 s0 sC
 		GiveItem(Kaiserschwert_Fake,Loewe)
 		GOTO 907
 	LABEL 420
-	//add some check here to see if she's removed
+	CheckUnitDeadOrJailed(Iskra)
 	BEQ 57 s0 sC //if she's not removed, branch; if so, play captured dialogue
 		Text(EndingSceneTextLoeweAndCleoIskraCaptured)
 		GiveItem(Kaiserschwert_Fake,Loewe)

@@ -55,6 +55,8 @@
 //DO NOT PUT PORTRAITS PAST 0xFF
 
 [LoadCleo] = [LoadFace][0x2][0x1]
+[LoadCleoSad] = [LoadFace][0x99][0x1]
+[LoadCleoAngry] = [LoadFace][0x9A][0x1]
 [LoadLoewe] = [LoadFace][0x14][0x1]
 [LoadLoeweAngry] = [LoadFace][0xD3][0x1]
 [LoadLoewePunished] = [LoadFace][0xD6][0x1]

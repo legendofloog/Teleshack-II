@@ -157,6 +157,9 @@
 //Chapter 12 stuff
 #define Eitha 0x4B
 
+//Chapter 12x stuff
+#define Tao_Fake 0x4F
+
 //Chapter 13 stuff
 #define Corundum 0x9B
 #define Pascal 0x9C
@@ -251,7 +254,6 @@
 #define Murray 0x4C
 #define Tirado 0x4D
 #define Binks 0x4E
-#define Pablo 0x4F
 #define Macdaire 0x50
 #define Maelduin_boss 0x50
 #define Aias 0x51

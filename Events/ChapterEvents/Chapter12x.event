@@ -17,13 +17,13 @@ END_MAIN
 
 // 7,8,9,10,11,18 reserved for recruitment
 CharacterBasedEvents:
+CharacterEventBothWays(0, TrajanTalk, Loewe, Trajan)
 CharacterEventBothWays(12, EllereyRecruit, Loewe, Ellerey)
 CharacterEventBothWays(13, MantouRecruit, Loewe, Mantou)
 CharacterEventBothWays(14, TippanyRecruit, Loewe, Tippany)
 CharacterEventBothWays(15, PelecayeRecruit, Loewe, Pelecaye)
 CharacterEventBothWays(16, CarlRecruit, Loewe, Carl)
 CharacterEventBothWays(17, TakaiRecruit, Loewe, Takai)
-CharacterEventBothWays(0, TrajanTalk, Loewe, Trajan)
 END_MAIN
 
 EllereyRecruit:
@@ -289,31 +289,192 @@ UNIT Carl SwordFighter Loewe Level(9,NPC,False) [7,7] 0x0 0x0 0x0 0x0 [Muramasa]
 UNIT Takai Warrior Loewe Level(1,NPC,False) [5,8] 0x0 0x0 0x0 0x0 [WindBow,FireDrive]     NoAI
 UNIT
 
-RedUnits:
-UNIT Radnitz DukeKnight_Dismounted Epony Level(1,Enemy,False) [14,7] 0x0 0x0 0x0 0x0 [ShortLance] NeverMoveAI
-UNIT Epony Noble_F 0x0 Level(7,Enemy,False) [13,7] 0x0 0x0 0x0 0x0 [ShortSword] NeverMoveAI
+CleoGroup:
+UNIT Cleo Skyseeker Cleo Level(1,Ally,False) [0,21] 0x0 0x0 0 0 [IronAxe] NoAI
+UNIT Militia AxeFighter 0x0 Level(5,Enemy,True) [9,21] 0x0 0x0 0 0 [IronAxe] NoAI
+UNIT Cythes LanceSoldier Cleo Level(10,Enemy,True) [4,12] 0x0 0x0 0 0 [IronLance] NoAI
+UNIT Elias Dracoknight Orfeas Level(10,Enemy,False) [14,14] 0 0 0 0 [Argilabrys] NoAI
+UNIT Ch2_Selese_Guy GoldKnight Orfeas Level(15,Enemy,False) [16,14] 0 0 0 0 [SilverLance] NoAI
+UNIT
+
+LoeweCleoGroup:
+UNIT Cleo Skyseeker Cleo Level(1,Ally,False) [7,21] 0x0 0x0 0 0 [ShortLance] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(1,Ally,False) [5,21] 0x0 0x0 0 0 [ShortLance] NoAI
+UNIT
+
+Tao_FakeGroup:
+UNIT Tao_Fake Archer Mifan Level(1,NPC,False) [0,22] 0 0 1 REDA6R22 [Taodao,RuneArrow] NoAI
+UNIT
+
+SvetomirGroup:
+UNIT Svetomir Priest Cleo Level(1,Ally,False) [0,22] 0 0 1 REDA9R20 [0x0] NoAI
+UNIT
+
+PriestGroup:
+UNIT Cythes Priest Cleo Level(1,NPC,False) [0,22] 0 0 1 REDA9R20 [0x0] NoAI
+UNIT
+
+BuldakGroup:
+UNIT Buldak Thief Cleo Level(1,Ally,False) [11,12] 0 0 1 REDA8R23 [0x0] NoAI
+UNIT
+
+ThiefGroup:
+UNIT Militia Thief Cleo Level(1,NPC,False) [11,12] 0 0 1 REDA8R23 [0x0] NoAI
 UNIT
 
 BeginningScene:
 COUNTER_SET 0 0
 DismountAll
-SetBackground(CastleHallway)
-Text(Ch12xBeginningScene1)
+LOMA Chapter12xDarkness
+CAMERA_CENTERED [0,21]
+FOGVISION 5 
+FADU 15
+LOAD1 1 CleoGroup
+ENUN
+CameraCursor(Cleo)
+CamOn
+MUSC PMD_MystifyingForestID
+Text(Ch12CleoNightmare1)
+MOVE 10 Cleo [2,21]
+ENUN
+STAL 10
+Text(Ch12CleoNightmare2)
+FadeOutMusic
+MOVE 10 Cleo [4,21]
+ENUN
+STAL 20
+TILECHANGE 0
+STAL 10
+CameraCursor(Militia)
+MUSC FF_MysticQuest_IceDungeonID
+Text(Ch12CleoNightmare3)
+STAL 30
+KILL Militia
+AWAIT_KILL Militia
+ENUN
+STAL 20
+TILEREVERT 0
+STAL 10
+Text(Ch12CleoNightmare4)
+STAL 10
+MOVE 15 Cleo [4,17]
+ENUN
+TILECHANGE 1
+STAL 10
+CameraCursor(Cythes)
+Text(Ch12CleoNightmare5)
+STAL 30
+KILL Cythes
+AWAIT_KILL Cythes
+STAL 20
+TILEREVERT 1
+STAL 10
+Text(Ch12CleoNightmare6)
+MOVE 20 Cleo [15,17]
+ENUN
+TILECHANGE 2
+STAL 10
+CAMERA_CENTERED Cleo
+FlashCursor(Elias,60)
+FlashCursor(Ch2_Selese_Guy,60)
+Text(Ch12CleoNightmare7)
+STAL 10
+MOVE_1STEP 5 Cleo 2
+ENUN
+STAL 30
+MOVE_1STEP 5 Cleo 2
+ENUN
+STAL 30
+Text(Ch12CleoNightmare8)
+STAL 10
+MOVE 20 Cleo [7,21]
+ENUN
+STAL 10
+Text(Ch12CleoNightmare9)
+FADI 10
+FadeOutMusic
+CamOff
+RemoveAll
+LOMA Chapter12
+LOAD1 1 LoeweCleoGroup
+ENUN
+CAMERA_CENTERED Cleo
+FADU 10
+BROWNBOXTEXT Ch12xCastleSelese[8,8]
+CameraCursor(Loewe)
+MUSC FF6AwakeningID
 Text(Ch12xBeginningScene2)
+FadeOutMusic
+CamOn
+LOAD1 1 Tao_FakeGroup
+ENUN 
+CameraCursor(Tao_Fake)
+MUSC PMD_MystifyingForestID
 Text(Ch12xBeginningScene3)
+MOVE 15 Loewe [9,19]
+MOVE 10 Tao_Fake [9,22]
+ENUN
+FlashCursor(Tao_Fake,30)
+FadeOutMusic
 Text(Ch12xBeginningScene3Part2)
+STAL 30
+CUSE Tao_Fake
+MOVE_1STEP 20 Tao_Fake 3
+ENUN
+StartBattle
+	NormalDamage(0,8)
+	MissedAttack(0,8)
+	MissedAttack(1,15)
+	CriticalHit(0,16)
+EndAttack
+FIGHT Tao_Fake Loewe Taodao False
+STAL 10
 Text(Ch12xBeginningScene4)
-Text(Ch12xBeginningScene4Part2SvetAlive)
-Text(Ch12xBeginningScene4Part3BuldakAlive)
-ENUT 0x8B //loewe eyepatch flag
-Text(Ch12xBeginningScene5)
-HIDEUNIT Cleo
-EraseBackground
-FADI 15
+MOVE 15 Cleo [9,22]
+ENUN
+MOVE_1STEP 5 Cleo 2
+MOVE_1STEP 5 Tao_Fake 2
+MOVE_1STEP 5 Cleo 2
+MOVE_1STEP 5 Tao_Fake 2
+CheckUnitDeadOrJailed(Svetomir)
+BNE 420 s0 sC
+	LOAD1 0 SvetomirGroup
+	ENUN
+	CameraCursor(Svetomir)
+	Text(Ch12xBeginningScene4Part2SvetAlive)
+	GOTO 421
+LABEL 420
+	LOAD1 1 PriestGroup
+	ENUN
+	CameraCursor(Cythes)
+	Text(Ch12xBeginningScene4Part2SvetGone)
+LABEL 421
+CheckUnitDeadOrJailed(Buldak)
+BNE 422 s0 sC
+	LOAD1 0 BuldakGroup
+	ENUN
+	CameraCursor(Buldak)
+	Text(Ch12xBeginningScene4Part3BuldakAlive)
+	GOTO 423
+LABEL 422
+	LOAD1 1 ThiefGroup
+	ENUN
+	CameraCursor(Militia)
+	Text(Ch12xBeginningScene4Part3BuldakGone)
+	GOTO 423
+LABEL 423
+FADI 10
+RemoveAll
+LOMA Ch12xInterlude
 LOAD1 1 GreenUnits
 LOAD1 2 LoeweInterludeGroup
+SetUnitFullHP(Loewe)
+HIDEUNIT Cleo
 ENUN
-FADU 15
+FADU 10
+ENUT 0x8B //loewe eyepatch flag
+BROWNBOXTEXT Ch12xOneWeekLater[8,8]
+Text(Ch12xBeginningScene5)
 NoFade
 ENDA
 

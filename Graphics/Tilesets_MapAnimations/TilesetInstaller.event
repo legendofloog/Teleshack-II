@@ -24,7 +24,9 @@
     FlasubanVillageMapchipConfig:
     #incbin "Config/FixedBridge_comp.dmp"
 
-
+    ALIGN 4
+    FlasubanVillageSunsetPalette:
+    #incbin "Palette/village_v2_actual_pal.dmp"
 //Flasuban Village For Snow
 
     ALIGN 4
@@ -93,6 +95,22 @@
     FF2TownSnowPalette:
     #incbin "Palette/FF2 Town 2.0 Object - Winter_pal.dmp"
 
+    ALIGN 4
+    EndgameObject:
+    #incbin "Object/endgame.dmp"
+
+    ALIGN 4
+    EndgamePalette:
+    #incbin "Palette/endgame_pal.dmp"
+
+    ALIGN 4
+    EndgameConfig:
+    #incbin "Config/endgame_comp.dmp"
+
+    ALIGN 4
+    TrueEndgamePalette:
+    #incbin "Palette/endgame_palette_pal.dmp"
+
     EventPointerTable(DesertBastionObjectID, DesertBastionObject)
     EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
     EventPointerTable(DesertBastionMapchipConfigID, DesertBastionMapchipConfig)
@@ -114,3 +132,8 @@
     EventPointerTable(FF2TownPaletteID, FF2TownPalette)
     EventPointerTable(FF2TownConfigID, FF2TownMapchipConfig)
     EventPointerTable(FF2TownSnowPaletteID, FF2TownSnowPalette)
+    EventPointerTable(Chapter4VillagePaletteID, FlasubanVillageSunsetPalette)
+    EventPointerTable(ActualEndgamePaletteID,TrueEndgamePalette)
+    EventPointerTable(EndgameObjectID,EndgameObject)
+    EventPointerTable(EndgamePaletteID,EndgamePalette)
+    EventPointerTable(EndgameConfigID,EndgameConfig)

@@ -47,6 +47,7 @@
 #define PMD_SkyPeakFinalPassID 0xA9
 
 #define PMD_PowerOfDarknessID 0xAD
+#define PMD_MystifyingForestID 0xAE
 
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
@@ -90,6 +91,7 @@
 #define RoarOfDomainID 0x27A
 #define MM10WilyMachineID 0x27B
 #define WhatImMadeOfID 0x27C
+#define FF_MysticQuest_IceDungeonID 0x27D
 
 // Vanilla
 #define TiesOfFriendship 0x7

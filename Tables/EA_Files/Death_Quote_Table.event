@@ -193,7 +193,7 @@ DeathQuote(Locke,AllChapters,0x0,LockeDeathQuoteText)
 DeathQuote(TrajanReal,AllChapters,0x0,TrajanRealDeathQuoteText)
 
 // ch23
-DeathQuote(EliasReal,AllChapters,0x0,EliasDeathQuoteText)
+DeathQuote(EliasReal,AllChapters,0x0,EliasRealDeathQuoteText)
 DeathQuote(BoroReal,AllChapters,0x0,BoroDeathQuoteText)
 
 // ch24

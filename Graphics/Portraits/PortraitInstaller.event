@@ -1,6 +1,8 @@
 // setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)
 #define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
 #define CleoMug 0x2
+#define CleoSadMug 0x99
+#define CleoAngryMug 0x9A
 #define MiraMug 0x4
 #define IskraMug 0x5
 #define EmilMug 0x6
@@ -153,6 +155,22 @@ CleoMugData:
 #incbin "Dmp/Cleo(hypergammaspaces, Loog)_palette.dmp"
 #incbin "Dmp/Cleo(hypergammaspaces, Loog)_minimug.dmp"
 setMugEntry(CleoMug, CleoMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CleoSadMugData:
+#incbin "Dmp/CleoSad(hypergammaspaces, Loog, knabepicer)_mug.dmp"
+#incbin "Dmp/CleoSad(hypergammaspaces, Loog, knabepicer)_frames.dmp"
+#incbin "Dmp/CleoSad(hypergammaspaces, Loog, knabepicer)_palette.dmp"
+#incbin "Dmp/CleoSad(hypergammaspaces, Loog, knabepicer)_minimug.dmp"
+setMugEntry(CleoSadMug, CleoSadMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CleoAngryMugData:
+#incbin "Dmp/CleoAngry(hypergammaspaces, Loog, knabepicer)_mug.dmp"
+#incbin "Dmp/CleoAngry(hypergammaspaces, Loog, knabepicer)_frames.dmp"
+#incbin "Dmp/CleoAngry(hypergammaspaces, Loog, knabepicer)_palette.dmp"
+#incbin "Dmp/CleoAngry(hypergammaspaces, Loog, knabepicer)_minimug.dmp"
+setMugEntry(CleoAngryMug, CleoAngryMugData, 3, 5, 3, 3)
 
 ALIGN 16
 MiraMugData:

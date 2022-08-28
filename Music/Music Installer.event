@@ -163,3 +163,7 @@ SongTable(PMD_SkyPeakFinalPassID,PMD_Explorers_SPFP,MapMusicGroup)
 SongTable(PMD_RescueTeam_MtThunderID,PMD_RescueTeam_MT,MapMusicGroup)
 #include "MusicEvents/Pokemon MD Explorers of Sky - Power of Darkness {Psyche}.event"
 SongTable(PMD_PowerOfDarknessID,PMD_Explorers_PoD,MapMusicGroup)
+#include "MusicEvents/Pokemon MD Explorers of Time Darkness and Sky - Mystifying Forest {Shtick}.event"
+SongTable(PMD_MystifyingForestID,PMD_MF,MapMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Ice Dungeon {RandomWizard}.event"
+SongTable(FF_MysticQuest_IceDungeonID,FF_MQ_ID,MapMusicGroup)
