@@ -26,8 +26,8 @@ CharacterEventBothWays(14, DraganaLoeweTalkCh3, Loewe, Dragana)
 END_MAIN
 
 LocationBasedEvents:
-House(3, DebugHouse, 6,9)
-House(3, KillMiraHouse, 6,10)
+//House(3, DebugHouse, 6,9)
+//House(3, KillMiraHouse, 6,10)
 Door(20,2)
 Chest(SteelAxe,23,2)
 Chest(RedGem,26,2)
@@ -41,7 +41,7 @@ Escape(0,EscapeEventCheck,29,12)
 Escape(0,EscapeEventCheck,29,13)
 Escape(0,EscapeEventCheck,29,14)
 Escape(0,EscapeEventCheck,29,15)
-Escape(0,EscapeEventCheck,0,9)
+//Escape(0,EscapeEventCheck,0,9)
 END_MAIN
 
 EscapeEventCheck:
@@ -68,13 +68,13 @@ AFEV 0x65 DraganaDeathResponse 0x0D
 CauseGameOverIfLordDies
 END_MAIN
 
-DebugHouse:
+/*DebugHouse:
 ENDA
 
 KillMiraHouse:
 KILL Mira
 AWAIT_KILL Mira
-ENDA
+ENDA*/
 
 AlexAxelWall:
 CHECK_EVENTID 9 // is the door event triggered
@@ -82,7 +82,14 @@ BNE 458 s0 sC // if true, branch to end (do nothing)
 	CheckTileChangeTriggered(4)
 	BEQ 457 s0 sC //if the tile change is not triggered, branch
 		MUSC WithUs_Song
+		CHECK_ACTIVE
+	SVAL s1 Mira
+	BNE 6967 s1 sC
+		Text(AlexAxelFreedTextMira)
+		GOTO 9697
+	LABEL 6967
 		Text(AlexAxelFreedText)
+	LABEL 9697
 		CUSA Alex
 		CUSA Axel
 		SetFatigue(Alex,0)
@@ -118,10 +125,10 @@ Units1:
 	UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-	UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Mira ThiefFighter_F Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-	UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [DoorKey] NoAI
 	UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT
 
@@ -146,7 +153,7 @@ UNIT
 CutsceneUnits:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R8 [0x0]     NoAI
 UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R9 [0x0]     NoAI
-UNIT Mira ThiefFighter   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R10 [0x0]     NoAI
+UNIT Mira ThiefFighter_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R10 [0x0]     NoAI
 UNIT Alena Myrmidon_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R7 [0x0]     NoAI
 UNIT Varga SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R11 [0x0]     NoAI
 UNIT Emil LanceKnight_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R10 [0x0]     NoAI
@@ -163,7 +170,7 @@ UNIT Dragana Sniper_F   Cleo Level(2,Ally,False) [9,0] 0x0 0x0 0x1 REDA9R16 [Sil
 UNIT
 
 CutsceneUnitMira:
-UNIT Mira ThiefFighter   Cleo Level(2,Ally,False) [7,0] 0x0 0x0 0x1 REDA8R17 [0x0]     NoAI
+UNIT Mira ThiefFighter_F   Cleo Level(2,Ally,False) [7,0] 0x0 0x0 0x1 REDA8R17 [0x0]     NoAI
 UNIT
 
 CutsceneUnits3:
@@ -300,7 +307,14 @@ TILECHANGE 9
 CHECK_EVENTID 15 // is wall event set
 BNE 678 s0 sC // if it is set, branch
 	MUSC WithUs_Song
-	Text(AlexAxelFreedText)
+	CHECK_ACTIVE
+	SVAL s1 Mira
+	BNE 6969 s1 sC
+		Text(AlexAxelFreedTextMira)
+		GOTO 9696
+	LABEL 6969
+		Text(AlexAxelFreedText)
+	LABEL 9696
 	CUSA Alex
 	CUSA Axel
 	SetFatigue(Alex,0)
@@ -328,12 +342,12 @@ UNIT
 
 BeginningScene:
 COUNTER_SET 0 0
-LOAD1 1 MiraDeathChamber
+/*LOAD1 1 MiraDeathChamber
 KILL Mira
 AWAIT_KILL Mira
 LOAD1 1 VargaDeathChamber
 KILL Varga
-AWAIT_KILL Varga
+AWAIT_KILL Varga*/
 SetBackground(CastleHallway)
 CheckUnitDeadOrJailed(Mira)
 BNE 1 s0 sC
@@ -353,6 +367,8 @@ LABEL 4
 	Text(BeginningSceneTextAD)
 LABEL 3
 FADI 5
+PreventSkipping
+AllowSkipping
 FADU 5
 CheckUnitDeadOrJailed(Mira)
 BNE 5 s0 sC
@@ -364,13 +380,15 @@ LABEL 5
 CheckUnitDeadOrJailed(Varga)
 BNE 8 s0 sC
 	Text(BeginningSceneTextBB)
-	GOTO 3
+	GOTO 7
 LABEL 6
 	Text(BeginningSceneTextBC)
-	GOTO 3
+	GOTO 7
 LABEL 8
 	Text(BeginningSceneTextBD)
 LABEL 7
+PreventSkipping
+AllowSkipping
 FADI 10
 LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
@@ -481,6 +499,14 @@ TEXTCONT
 TEXTEND
 REMA
 CAMERA_CENTERED [9,15]
+CheckUnitDeadOrJailed(Mira)
+BEQ 500 s0 sC
+	STAL 20
+	SendAll(Dragana)
+	KILL Dragana
+	AWAIT_KILL Dragana
+	STAL 50
+LABEL 500
 MOVE 25 Cleo [8,25]
 MOVE 25 Loewe [9,25]
 ENUN
@@ -489,12 +515,12 @@ BNE 27 s0 sC
 	TEXTSTART
 	TEXTSHOW EndingSceneTextA4
 	TEXTEND
+	SendAll(Dragana)
+	KILL Dragana
+	//CUSN Dragana
+	AWAIT_KILL Dragana
+	STAL 50
 LABEL 27
-SendAll(Dragana)
-KILL Dragana
-//CUSN Dragana
-AWAIT_KILL Dragana
-STAL 35
 CheckUnitDeadOrJailed(Mira)
 BNE 28 s0 sC
 	TEXTCONT
