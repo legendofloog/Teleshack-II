@@ -196,4 +196,5 @@
 #define FlasubanVillageTileAnimationsID 0x95
 #define FF5WaveCaveTileAnimationsID 0x9C
 #define FieldsTileAnimationsID 0x05
+#define EndgameAnimationsID 0xcd
 

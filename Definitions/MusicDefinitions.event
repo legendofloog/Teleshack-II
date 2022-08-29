@@ -92,6 +92,7 @@
 #define MM10WilyMachineID 0x27B
 #define WhatImMadeOfID 0x27C
 #define FF_MysticQuest_IceDungeonID 0x27D
+#define FF_MysticQuest_FocusTowerID 0x27E
 
 // Vanilla
 #define TiesOfFriendship 0x7

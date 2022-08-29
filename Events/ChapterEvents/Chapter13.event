@@ -228,7 +228,7 @@ ENDA
 GreatbowVillage:
 SetBackground(0x0)
 Text(GreatbowVillageText)
-GiveItem(KillerBow,0xFFFF)
+GiveItem(Greatbow,0xFFFF)
 EraseBackground
 NoFade
 ENDA

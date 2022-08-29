@@ -53,10 +53,13 @@ LABEL 2
 Text(EllereyAcceptedDialogue)
 CUSA Ellerey
 SetFatigue(Ellerey,0)
-MOVE 15 Ellerey [7,9]
+CamOn
+MOVE 15 Ellerey [7,19]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Ellerey
+CamOff
+CAMERA_CENTERED Loewe
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -80,10 +83,13 @@ LABEL 15
 Text(TakaiAcceptedDialogue)
 CUSA Takai
 SetFatigue(Takai,0)
-MOVE 15 Takai [7,9]
+CamOn
+MOVE 15 Takai [7,19]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Takai
+CamOff
+CAMERA_CENTERED Loewe
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -107,10 +113,13 @@ LABEL 4
 Text(MantouAcceptedDialogue)
 CUSA Mantou
 SetFatigue(Mantou,0)
-MOVE 15 Mantou [7,9]
+CamOn
+MOVE 15 Mantou [7,19]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Mantou
+CamOff
+CAMERA_CENTERED Loewe
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -134,10 +143,13 @@ LABEL 6
 Text(TippanyAcceptedDialogue)
 CUSA Tippany
 SetFatigue(Tippany,0)
-MOVE 15 Tippany [7,9]
+CamOn
+MOVE 15 Tippany [7,19]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Tippany
+CamOff
+CAMERA_CENTERED Loewe
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -162,10 +174,13 @@ LABEL 8
 Text(PelecayeAcceptedDialogue)
 CUSA Pelecaye
 SetFatigue(Pelecaye,0)
-MOVE 15 Pelecaye [7,9]
+CamOn
+MOVE 15 Pelecaye [7,19]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Pelecaye
+CamOff
+CAMERA_CENTERED Loewe
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -190,10 +205,12 @@ LABEL 10
 Text(CarlAcceptedDialogue)
 CUSA Carl
 SetFatigue(Carl,0)
-MOVE 15 Carl [7,9]
+CamOn
+MOVE 15 Carl [7,19]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Carl
+CamOff
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -276,17 +293,17 @@ UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 
 UNIT
 
 LoeweInterludeGroup:
-UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [14,1] 0x0 0x0 0 0 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
 GreenUnits:
-UNIT Ellerey LanceArmor Loewe Level(13,NPC,False) [4,2] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
-UNIT Mantou Brigand_F Loewe Level(10,NPC,False) [11,0] 0x0 0x0 0x0 0x0 [KillerAxe,SilverAxe,Vulnerary]     NoAI
-UNIT Tippany DarkMage_F Loewe Level(9,NPC,False) [12,5] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
+UNIT Ellerey LanceArmor Loewe Level(13,NPC,False) [2,2] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
+UNIT Mantou Brigand_F Loewe Level(10,NPC,False) [11,4] 0x0 0x0 0x0 0x0 [KillerAxe,SilverAxe,Vulnerary]     NoAI
+UNIT Tippany DarkMage_F Loewe Level(9,NPC,False) [14,12] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
 UNIT Trajan Hero Loewe Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
-UNIT Pelecaye General Loewe Level(1,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
-UNIT Carl SwordFighter Loewe Level(9,NPC,False) [7,7] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
-UNIT Takai Warrior Loewe Level(1,NPC,False) [5,8] 0x0 0x0 0x0 0x0 [WindBow,FireDrive]     NoAI
+UNIT Pelecaye General Loewe Level(1,NPC,False) [1,10] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
+UNIT Carl SwordFighter Loewe Level(9,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
+UNIT Takai Warrior Loewe Level(1,NPC,False) [5,14] 0x0 0x0 0x0 0x0 [WindBow,FireDrive]     NoAI
 UNIT
 
 CleoGroup:
@@ -328,34 +345,45 @@ DismountAll
 LOMA Chapter12xDarkness
 CAMERA_CENTERED [0,21]
 FOGVISION 5 
-FADU 15
+FADU 5
 LOAD1 1 CleoGroup
 ENUN
+MOVE 5 Cleo [1,21]
+ENUN
+STAL 30
+MOVE 5 Cleo [2,21]
+ENUN
+STAL 30
 CameraCursor(Cleo)
 CamOn
 MUSC PMD_MystifyingForestID
 Text(Ch12CleoNightmare1)
-MOVE 10 Cleo [2,21]
+MOVE 10 Cleo [3,21]
 ENUN
 STAL 10
 Text(Ch12CleoNightmare2)
-FadeOutMusic
 MOVE 10 Cleo [4,21]
 ENUN
+CameraCursor(Militia)
+TEXTSTART
+TEXTSHOW Ch12CleoNightmare3
+TEXTEND
+FadeOutMusic
 STAL 20
 TILECHANGE 0
-STAL 10
-CameraCursor(Militia)
+STAL 20
 MUSC FF_MysticQuest_IceDungeonID
-Text(Ch12CleoNightmare3)
+TEXTCONT
+TEXTEND
+REMA
 STAL 30
 KILL Militia
 AWAIT_KILL Militia
 ENUN
 STAL 20
-TILEREVERT 0
-STAL 10
 Text(Ch12CleoNightmare4)
+STAL 10
+TILEREVERT 0
 STAL 10
 MOVE 15 Cleo [4,17]
 ENUN
@@ -390,7 +418,25 @@ STAL 10
 MOVE 20 Cleo [7,21]
 ENUN
 STAL 10
-Text(Ch12CleoNightmare9)
+TEXTSTART
+TEXTSHOW Ch12CleoNightmare9
+TEXTEND
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 10
+FAWI 10
+SOUN 0xF0 // divine weapon sound?
+STAL 20
+FAWU 5
+STAL 10
+TEXTCONT
+TEXTEND
+REMA
+STAL 30
+WARPOUT [7, 21]
+HIDEUNIT Cleo
+ENDWARP
 FADI 10
 FadeOutMusic
 CamOff
@@ -429,6 +475,7 @@ StartBattle
 EndAttack
 FIGHT Tao_Fake Loewe Taodao False
 STAL 10
+MUSC FF_MysticQuest_FocusTowerID
 Text(Ch12xBeginningScene4)
 MOVE 15 Cleo [9,22]
 ENUN
@@ -436,18 +483,31 @@ MOVE_1STEP 5 Cleo 2
 MOVE_1STEP 5 Tao_Fake 2
 MOVE_1STEP 5 Cleo 2
 MOVE_1STEP 5 Tao_Fake 2
+CamOff
 CheckUnitDeadOrJailed(Svetomir)
 BNE 420 s0 sC
 	LOAD1 0 SvetomirGroup
 	ENUN
 	CameraCursor(Svetomir)
 	Text(Ch12xBeginningScene4Part2SvetAlive)
+	MOVE 15 Loewe [0,22]
+	MOVE 15 Svetomir [0,23]
+	ENUN
+	HIDEUNIT Loewe
+	HIDEUNIT Svetomir
+	ENUN
 	GOTO 421
 LABEL 420
 	LOAD1 1 PriestGroup
 	ENUN
 	CameraCursor(Cythes)
 	Text(Ch12xBeginningScene4Part2SvetGone)
+	MOVE 15 Loewe [0,22]
+	MOVE 15 Cythes [0,23]
+	ENUN
+	HIDEUNIT Loewe
+	REMOVEUNIT Cythes
+	ENUN
 LABEL 421
 CheckUnitDeadOrJailed(Buldak)
 BNE 422 s0 sC
@@ -463,17 +523,27 @@ LABEL 422
 	Text(Ch12xBeginningScene4Part3BuldakGone)
 	GOTO 423
 LABEL 423
-FADI 10
+FADI 5
+SHOWUNIT Loewe
+FadeOutMusic
+FOGVISION 0
+SetUnitFullHP(Loewe)
 RemoveAll
+HIDEUNIT Cleo
 LOMA Ch12xInterlude
 LOAD1 1 GreenUnits
-LOAD1 2 LoeweInterludeGroup
-SetUnitFullHP(Loewe)
-HIDEUNIT Cleo
-ENUN
-FADU 10
-ENUT 0x8B //loewe eyepatch flag
+CAMERA_CENTERED [14,1]
+FADU 5
+STAL 30
 BROWNBOXTEXT Ch12xOneWeekLater[8,8]
+STAL 20
+LOAD1 1 LoeweInterludeGroup
+ENUN
+MOVE 10 Loewe [7,3]
+ENUN
+ENUT 0x8B //loewe eyepatch flag
+CameraCursor(Loewe)
+MUSC ToV_TragicDecisionID
 Text(Ch12xBeginningScene5)
 NoFade
 ENDA
