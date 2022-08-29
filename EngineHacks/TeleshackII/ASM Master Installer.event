@@ -67,6 +67,8 @@ ChangeWeaponRankASMC:
 // thief vision set to 0
 #include "FE8U_PrepsAugury-main/PrepsAugury.event"
 
+#include "ClearUnitASMC/ClearUnitASMCInstaller.event"
+
 PUSH
 ORG 0x0178C2
 BYTE 0x00

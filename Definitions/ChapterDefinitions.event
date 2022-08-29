@@ -36,6 +36,7 @@
 #define Chapter17Council 0x21
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
+#define Chapter3Cutscene 0x24
 #define Chapter12xDarkness 0x29
 #define EpilogueChapter 0x2A
 
@@ -77,6 +78,7 @@
 #define Chapter17CouncilMapChanges 0xB1
 #define Chapter17DuelMapChanges 0xB5
 #define Chapter18xInterludeMapChanges 0xB8
+#define Chapter3CutsceneMapChanges 0xce
 #define Chapter12xDarknessMapChanges 0xC6
 
 
@@ -118,6 +120,7 @@
 #define Chapter17CouncilMap 0xB2
 #define Chapter17DuelMap 0xB6
 #define Chapter18xInterludeMap 0xB9
+#define Chapter3CutsceneMap 0xBC
 #define Chapter12xDarknessMap 0xC7
 
 // EventsID
@@ -155,6 +158,7 @@
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7
 #define Chapter18xInterludeEvents 0xBA
+#define Chapter3CutsceneEvents 0xcf
 #define EpilogueEvents 0xCA
 
 // ObjectType 

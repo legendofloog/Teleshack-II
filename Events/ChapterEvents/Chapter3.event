@@ -26,6 +26,8 @@ CharacterEventBothWays(14, DraganaLoeweTalkCh3, Loewe, Dragana)
 END_MAIN
 
 LocationBasedEvents:
+//House(3, DebugHouse, 6,9)
+//House(3, KillMiraHouse, 6,10)
 Door(20,2)
 Chest(SteelAxe,23,2)
 Chest(RedGem,26,2)
@@ -49,13 +51,28 @@ AFEV 0x65 DraganaDeathResponse 0x0D
 CauseGameOverIfLordDies
 END_MAIN
 
+/*DebugHouse:
+ENDA
+
+KillMiraHouse:
+KILL Mira
+AWAIT_KILL Mira
+ENDA*/
+
 AlexAxelWall:
 CHECK_EVENTID 9 // is the door event triggered
 BNE 458 s0 sC // if true, branch to end (do nothing)
 	CheckTileChangeTriggered(4)
 	BEQ 457 s0 sC //if the tile change is not triggered, branch
 		MUSC WithUs_Song
+		CHECK_ACTIVE
+	SVAL s1 Mira
+	BNE 6967 s1 sC
+		Text(AlexAxelFreedTextMira)
+		GOTO 9697
+	LABEL 6967
 		Text(AlexAxelFreedText)
+	LABEL 9697
 		CUSA Alex
 		CUSA Axel
 		SetFatigue(Alex,0)
@@ -87,16 +104,16 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Mira ThiefFighter Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
-UNIT
+	UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
+	UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Mira ThiefFighter_F Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [DoorKey] NoAI
+	UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT
 
 Traps1:
 RedSigil(29,11)
@@ -114,6 +131,50 @@ ALIGN 4
 
 DraganaUnit:
 UNIT Dragana Sniper_F Cleo Level(5,Ally,False) [0,9] 0x0 0x0 0x0 0x0 [SilverBow,SteelBow,Vulnerary] NoAI
+UNIT
+
+CutsceneUnits:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R8 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R9 [0x0]     NoAI
+UNIT Mira ThiefFighter_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R10 [0x0]     NoAI
+UNIT Alena Myrmidon_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R7 [0x0]     NoAI
+UNIT Varga SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R11 [0x0]     NoAI
+UNIT Emil LanceKnight_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R10 [0x0]     NoAI
+UNIT Svetomir Priest   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R8 [0x0]     NoAI
+UNIT Iskra Mage_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R7 [0x0]     NoAI
+UNIT Delilah Sister   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R11 [0x0]     NoAI
+UNIT Dragana Sniper_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R9 [0x0]     NoAI
+UNIT
+
+CutsceneUnits2:
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [8,0] 0x0 0x0 0x1 REDA9R18 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [10,0] 0x0 0x0 0x1 REDA10R17 [0x0]     NoAI
+UNIT Dragana Sniper_F   Cleo Level(2,Ally,False) [9,0] 0x0 0x0 0x1 REDA9R16 [SilverBow]     NoAI
+UNIT
+
+CutsceneUnitMira:
+UNIT Mira ThiefFighter_F   Cleo Level(2,Ally,False) [7,0] 0x0 0x0 0x1 REDA8R17 [0x0]     NoAI
+UNIT
+
+CutsceneUnits3:
+UNIT Cidor Baron   Cidor Level(2,Enemy,False) [9,7] 0x0 0x0 0x0 0x0 [Jormungand]     NoAI
+UNIT
+
+CutsceneUnits4:
+//UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [6,4] 0x0 0x0 0x1 REDA0R0 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [7,4] 0x0 0x0 0x1 REDA6R12 [0x0]     NoAI
+UNIT Chapter3Reinforcements LanceSoldier   Cidor Level(2,Enemy,False) [9,4] 0x0 0x0 0x1 REDA8R12 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [8,4] 0x0 0x0 0x1 REDA7R13 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [10,4] 0x0 0x0 0x1 REDA10R12 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [11,4] 0x0 0x0 0x1 REDA11R13 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [12,4] 0x0 0x0 0x1 REDA12R12 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [7,3] 0x0 0x0 0x1 REDA6R10 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [8,3] 0x0 0x0 0x1 REDA8R9 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [9,3] 0x0 0x0 0x1 REDA9R10 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [10,3] 0x0 0x0 0x1 REDA10R9 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [11,3] 0x0 0x0 0x1 REDA12R10 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [11,3] 0x0 0x0 0x1 REDA14R11 [0x0]     NoAI
+UNIT Chapter1Generics LanceSoldier   Cidor Level(2,Enemy,False) [11,3] 0x0 0x0 0x1 REDA4R11 [0x0]     NoAI
 UNIT
 
 
@@ -229,7 +290,14 @@ TILECHANGE 9
 CHECK_EVENTID 15 // is wall event set
 BNE 678 s0 sC // if it is set, branch
 	MUSC WithUs_Song
-	Text(AlexAxelFreedText)
+	CHECK_ACTIVE
+	SVAL s1 Mira
+	BNE 6969 s1 sC
+		Text(AlexAxelFreedTextMira)
+		GOTO 9696
+	LABEL 6969
+		Text(AlexAxelFreedText)
+	LABEL 9696
 	CUSA Alex
 	CUSA Axel
 	SetFatigue(Alex,0)
@@ -247,33 +315,216 @@ CAMERA_CENTERED Loewe
 Text(DraganaDeathResponseText)
 ENDA
 
+VargaDeathChamber:
+UNIT Varga SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x0 REDA0R0 [0x0]     NoAI
+UNIT
+
+MiraDeathChamber:
+UNIT Mira SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x0 REDA0R0 [0x0]     NoAI
+UNIT
+
 BeginningScene:
 COUNTER_SET 0 0
+/*LOAD1 1 MiraDeathChamber
+KILL Mira
+AWAIT_KILL Mira
+LOAD1 1 VargaDeathChamber
+KILL Varga
+AWAIT_KILL Varga*/
 SetBackground(CastleHallway)
-Text(BeginningSceneTextA)
-Text(BeginningSceneTextB)
-Text(BeginningSceneTextC)
-CALL $9EE2C4
-LOAD3 2 Units1
-LOAD1 1 DraganaUnit
+CheckUnitDeadOrJailed(Mira)
+BNE 1 s0 sC
+	CheckUnitDeadOrJailed(Varga)
+	BNE 2 s0 sC
+		Text(BeginningSceneTextA)
+		GOTO 3
+LABEL 1
+CheckUnitDeadOrJailed(Varga)
+BNE 4 s0 sC
+	Text(BeginningSceneTextAB)
+	GOTO 3
+LABEL 2
+	Text(BeginningSceneTextAC)
+	GOTO 3
+LABEL 4
+	Text(BeginningSceneTextAD)
+LABEL 3
+FADI 5
+PreventSkipping
+AllowSkipping
+FADU 5
+CheckUnitDeadOrJailed(Mira)
+BNE 5 s0 sC
+	CheckUnitDeadOrJailed(Varga)
+	BNE 6 s0 sC
+		Text(BeginningSceneTextB)
+		GOTO 7
+LABEL 5
+CheckUnitDeadOrJailed(Varga)
+BNE 8 s0 sC
+	Text(BeginningSceneTextBB)
+	GOTO 7
+LABEL 6
+	Text(BeginningSceneTextBC)
+	GOTO 7
+LABEL 8
+	Text(BeginningSceneTextBD)
+LABEL 7
+PreventSkipping
+AllowSkipping
+FADI 10
 LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
+CAMERA [4,9]
+CALL $9EE2C4
 ENUN
+CamOn
+LOAD1 2 CutsceneUnits //loads cutscene units only if alive
+ENUN
+CamOff
+CAMERA Dragana
+CURSOR_FLASHING Dragana
+STAL 50
+REMOVE_CURSORS
+TEXTSTART
+TEXTSHOW BeginningSceneTextC
+TEXTEND
+CAMERA Emory_Ch3
+CURSOR_FLASHING Emory_Ch3
+REMOVEALL_BLUE
+LOAD1 1 DraganaUnit
+LOAD1 0 Units1
+STAL 50
+REMOVE_CURSORS
+TEXTCONT
+TEXTEND
+REMA
+// CAMERA [3,6]
+ENUN
+NoFade
 ENDA
 
 EndingScene:
 EndOfEscapeRoutineASMC
+ENUN
 MUSC 0x7FFF
 Text(MapEndText)
-SetBackground(CastleHallway)
-Text(EndingSceneTextA1)
-Text(EndingSceneTextA2)
-Text(EndingSceneTextA3)
-Text(EndingSceneTextA4)
-SendAll(Dragana)
-FADI 15
-CUSN Dragana
-REMOVEUNIT Dragana
+FADI 10
+RemoveAll
+LOMA Chapter3Cutscene
+CAMERA_CENTERED [9,3]
+FADU 10
+CamOn
+CheckUnitDeadOrJailed(Mira)
+BNE 20 s0 sC
+	LOAD1 3 CutsceneUnitMira
+LABEL 20
+LOAD1 3 CutsceneUnits2
+ENUN
+CamOff
+CAMERA_CENTERED [9,15]
+STAL 30
+CheckUnitDeadOrJailed(Mira)
+BNE 21 s0 sC
+	Text(EndingSceneTextA1)
+	GOTO 22
+LABEL 21
+	Text(EndingSceneTextA1B)
+LABEL 22
+LOAD1 1 CutsceneUnits3
+ENUN
+MOVE 5 Cidor [9,13]
+ENUN
+CAMERA_CENTERED [9,14]
+STAL 15
+CheckUnitDeadOrJailed(Mira)
+BNE 23 s0 sC
+	Text(EndingSceneTextA2)
+	GOTO 24
+LABEL 23
+	Text(EndingSceneTextA2B)
+LABEL 24
+MOVE 15 Dragana [9,15]
+ENUN
+StartBattle
+NormalDamage(0,15)
+MissedAttack(1,0)
+MissedAttack(0,0)
+CriticalHit(1,28)
+EndAttack
+FIGHT Dragana Cidor SilverBow 0
+TEXTSTART
+CheckUnitDeadOrJailed(Mira)
+BNE 25 s0 sC
+	TEXTSHOW EndingSceneTextA3
+	GOTO 26
+LABEL 25
+	TEXTSHOW EndingSceneTextA3B
+LABEL 26
+TEXTEND
+CAMERA_CENTERED [9,15]
+MOVE 15 Loewe [8,15]
+MOVE 15 Cleo [9,16]
+TEXTCONT
+TEXTEND
+ENUN
+TEXTEND
+MOVE 20 Dragana [10,15]
+MOVE 20 Loewe [9,15]
+ENUN
+TEXTCONT
+TEXTEND
+CAMERA_CENTERED [9,13]
+LOAD1 1 CutsceneUnits4
+ENUN
+STAL 60
+TEXTCONT
+TEXTEND
+REMA
+CAMERA_CENTERED [9,15]
+CheckUnitDeadOrJailed(Mira)
+BEQ 500 s0 sC
+	STAL 20
+	SendAll(Dragana)
+	KILL Dragana
+	AWAIT_KILL Dragana
+	STAL 50
+LABEL 500
+MOVE 25 Cleo [8,25]
+MOVE 25 Loewe [9,25]
+ENUN
+CheckUnitDeadOrJailed(Mira)
+BNE 27 s0 sC
+	TEXTSTART
+	TEXTSHOW EndingSceneTextA4
+	TEXTEND
+	SendAll(Dragana)
+	KILL Dragana
+	//CUSN Dragana
+	AWAIT_KILL Dragana
+	STAL 50
+LABEL 27
+CheckUnitDeadOrJailed(Mira)
+BNE 28 s0 sC
+	TEXTCONT
+	TEXTEND
+	REMA
+	MOVE 25 Mira [10,25]
+	ENUN
+LABEL 28
+STAL 15
+CAMERA_CENTERED [9,13]
+MOVE 15 Chapter3Reinforcements [8,14]
+ENUN
+CURSOR_FLASHING Chapter3Reinforcements
+STAL 50
+REMOVE_CURSORS
+Text(EndingSceneTextA5)
+STAL 40
+FADI 1
+STAL 40
+ClearUnit(Dragana)
 MNC2 Chapter4
 NoFade
 ENDA
+
