@@ -23,21 +23,21 @@ ALIGN 4
 LoeweSupportPointer:
 SupportDataCharacters(Iskra,Cromar,Tao,CatrinReal,Asha) //maybe add a fifth if we have time
 SupportDataInitialValues(CSupportLevel,0,CSupportLevel,BSupportLevel,0)
-SupportDataGrowths(15,20,40,40,40)
+SupportDataGrowths(13,20,40,40,40)
 SupportCountAmount(5)
 
 ALIGN 4
 MiraSupportPointer:
 SupportDataCharacters(Iskra,Emil,Tiberius,BoroReal,TrajanReal) 
 SupportDataInitialValues(CSupportLevel,0,0,BSupportLevel,BSupportLevel)
-SupportDataGrowths(13,16,30,80,80)
+SupportDataGrowths(13,16,30,40,30)
 SupportCountAmount(5)
 
 ALIGN 4
 IskraSupportPointer:
 SupportDataCharacters(Loewe,Mira,Tiberius,Emil,0)
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(15,13,40,16,0)
+SupportDataGrowths(13,13,40,16,0)
 SupportCountAmount(4)
 
 ALIGN 4
@@ -526,7 +526,7 @@ ALIGN 4
 TrajanSupportPointer:
 SupportDataCharacters(Mira,BoroReal,0,0,0)  
 SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
-SupportDataGrowths(80,80,0,0,0)
+SupportDataGrowths(30,40,0,0,0)
 SupportCountAmount(2)
 
 // ch23
@@ -542,5 +542,5 @@ ALIGN 4
 BoroSupportPointer:
 SupportDataCharacters(TrajanReal,Mira,0,0,0)  
 SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
-SupportDataGrowths(80,80,0,0,0)
+SupportDataGrowths(40,40,0,0,0)
 SupportCountAmount(2)

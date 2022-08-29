@@ -45,12 +45,6 @@ WORD BattleVeteranID
 
 #include "BreakerSkills/BreakerSkills.event"
 
-ALIGN 4
-Charge:
-#incbin "Charge/Charge.dmp"
-POIN SkillTester
-WORD ChargeID
-
 #include "CriticalSkills/CriticalSkills.event"
 
 ALIGN 4
@@ -402,8 +396,3 @@ POIN AuraSkillCheck
 WORD CleoFanID
 
 #include "ElementBoost/ElementBoost.event"
-
-#ifdef MODULAR_PRE_BATTLE_SKILLS
-	ALIGN 4
-	#include "ModularPreBattleSkills/ModularPreBattleSkill.event"
-#endif //MODULAR_PRE_BATTLE_SKILLS

@@ -49,9 +49,6 @@ POIN StancesASM
 //POIN LethalitySkill NonGBALethalitySkill Bane
 //#endif
 
-#ifdef MODULAR_PRE_BATTLE_SKILLS
-	POIN ModularPreBattleSkill 
-#endif // MODULAR_PRE_BATTLE_SKILLS
 //add any new ones before here
 
 //quick riposte goes after everything that might touch AS

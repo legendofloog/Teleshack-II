@@ -69,7 +69,7 @@ AFEV 14 TopMiddlePrisonDoorOpened 10
 AFEV 15 TopRightPrisonDoorOpened 11
 AFEV 16 OutsidePrisonDoorOpened 12
 CauseGameOverIfLordDies
-DefeatBoss(EndingScene)
+DefeatBoss
 END_MAIN
 
 

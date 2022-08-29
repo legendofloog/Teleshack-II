@@ -32,7 +32,22 @@
 #define RemembranceID 0x58
 #define CryptequeID 0x59
 #define RiseAboveID 0x5D
+#define ThraciaPreparationsID 0x5E
+#define KingOfDragons_IntoTheCastleID 0x5F
 
+#define FF_MysticQuest_Battle1ID 0x62
+#define FF_MysticQuest_HillofDestinyID 0x63
+#define GS_VenusLighthouse 0x64
+
+#define FF_MysticQuest_DoomCastleID 0x92
+#define SSBB_Tournament_PrepsID 0x93
+#define FF_MysticQuest_DarkKingThemeID 0x94
+
+#define PMD_RescueTeam_MtThunderID 0xA8
+#define PMD_SkyPeakFinalPassID 0xA9
+
+#define PMD_PowerOfDarknessID 0xAD
+#define PMD_MystifyingForestID 0xAE
 
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
@@ -76,6 +91,8 @@
 #define RoarOfDomainID 0x27A
 #define MM10WilyMachineID 0x27B
 #define WhatImMadeOfID 0x27C
+#define FF_MysticQuest_IceDungeonID 0x27D
+#define FF_MysticQuest_FocusTowerID 0x27E
 
 // Vanilla
 #define TiesOfFriendship 0x7

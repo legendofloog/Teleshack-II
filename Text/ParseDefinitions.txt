@@ -56,6 +56,8 @@
 //DO NOT PUT PORTRAITS PAST 0xFF
 
 [LoadCleo] = [LoadFace][0x2][0x1]
+[LoadCleoSad] = [LoadFace][0x99][0x1]
+[LoadCleoAngry] = [LoadFace][0x9A][0x1]
 [LoadLoewe] = [LoadFace][0x14][0x1]
 [LoadLoeweAngry] = [LoadFace][0xD3][0x1]
 [LoadLoewePunished] = [LoadFace][0xD6][0x1]
@@ -66,6 +68,7 @@
 [LoadAlena] = [LoadFace][0x8][0x1]
 [LoadDragana] = [LoadFace][0x2D][0x1]
 [LoadDraganaYoung] = [LoadFace][0xBE][0x1]
+[LoadBoroScarred] = [LoadFace][0x98][0x1]
 [LoadBoro] = [LoadFace][0x4E][0x1]
 [LoadRaschwitz] = [LoadFace][0x45][0x1]
 [LoadCidor] = [LoadFace][0x2E][0x1]
@@ -164,7 +167,7 @@
 [LoadHamdi] = [LoadFace][0xD9][0x1]
 [LoadColossus] = [LoadFace][0xDA][0x1]
 [LoadAlto] = [LoadFace][0xDC][0x1]
-[LoadMystery] = [LoadFace][0xDD][0x1]
+[LoadMystery] = [LoadFace][0x3D][0x1]
 [LoadMithras] = [LoadMystery]
 [LoadByelen] = [LoadMithras]
 [LoadShafaqat] = [LoadFace][0xDF][0x1]
@@ -212,6 +215,7 @@
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
 [LoadCatrin] = [LoadLoeweMom]
 [LoadCatrinReal] = [LoadLoeweMom]
+[LoadCatrinYoung] = [LoadFace][0x51][0x1]
 [LoadAlenaGrunt1] = [LoadFace][0x4C][0x1]
 [LoadAlenaGrunt2] = [LoadFace][0x4D][0x1]
 [LoadSenny] = [LoadFace][0x62][0x1]

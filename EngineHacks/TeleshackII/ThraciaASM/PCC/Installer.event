@@ -6,6 +6,14 @@ ALIGN 4
 PCCTable:
 #include "PCCTable.event"
 
+ALIGN 4
+DesperationIDLink:
+BYTE DesperationID
+
+ALIGN 4
+BladeDanceIDLink:
+BYTE BladeDanceID
+
 #define SetUnitPCC(unit, pcc) "PUSH; ORG PCCTable + unit; BYTE pcc; POP"
 
 // replace Proc_Start in proc loop with New_Proc_Start

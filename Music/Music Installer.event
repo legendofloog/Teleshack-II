@@ -141,3 +141,31 @@ SongTable(RoarOfDomainID, RoarOfDominionSong, MapMusicGroup)
 SongTable(MM10WilyMachineID, song92, MapMusicGroup)
 #include "MusicEvents/What Im Made Of.event"
 SongTable(WhatImMadeOfID, song10, MapMusicGroup)
+#include "MusicEvents/FE05 - Prep Screen {hypergammaspaces}.event"
+SongTable(ThraciaPreparationsID,PrepScreenFE5,MapMusicGroup)
+#include "MusicEvents/King of Dragons - Into the Castle (Sme).event"
+SongTable(KingOfDragons_IntoTheCastleID,kodcastle,BattleMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Battle 1 {RandomWizard}.event"
+SongTable(FF_MysticQuest_Battle1ID,FF_MQ_battle1,BattleMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Hill of Destiny {RandomWizard}.event"
+SongTable(FF_MysticQuest_HillofDestinyID,FF_MQ_HoD,MapMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Doom Castle {RandomWizard}.event"
+SongTable(FF_MysticQuest_DoomCastleID,FF_MQ_DoomCastle,MapMusicGroup)
+#include "MusicEvents/Golden Sun 1 2 TLA - Venus Lighthouse {tristan}.event"
+SongTable(GS_VenusLighthouse, GS_VL, MapMusicGroup)
+#include "MusicEvents/tourney_prep.event"
+SongTable(SSBB_Tournament_PrepsID,SSBB_Tournament_Preps,MapMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Dark King's Theme {RandomWizard}.event"
+SongTable(FF_MysticQuest_DarkKingThemeID,FF_MQ_DKT,MapMusicGroup)
+#include "MusicEvents/Pokemon MD Explorers - Sky Peak Final Pass {RandomWizard}.event"
+SongTable(PMD_SkyPeakFinalPassID,PMD_Explorers_SPFP,MapMusicGroup)
+#include "MusicEvents/Pokemon MD Rescue Team - Mount Thunder {RandomWizard}.event"
+SongTable(PMD_RescueTeam_MtThunderID,PMD_RescueTeam_MT,MapMusicGroup)
+#include "MusicEvents/Pokemon MD Explorers of Sky - Power of Darkness {Psyche}.event"
+SongTable(PMD_PowerOfDarknessID,PMD_Explorers_PoD,MapMusicGroup)
+#include "MusicEvents/Pokemon MD Explorers of Time Darkness and Sky - Mystifying Forest {Shtick}.event"
+SongTable(PMD_MystifyingForestID,PMD_MF,MapMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Ice Dungeon {RandomWizard}.event"
+SongTable(FF_MysticQuest_IceDungeonID,FF_MQ_ID,MapMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Focus Tower {RandomWizard}.event"
+SongTable(FF_MysticQuest_FocusTowerID,FF_MQ_FT,MapMusicGroup)

@@ -170,7 +170,7 @@ o mighty Grimblade.[A][X]
 // fade to black and stuff. war camp background
 
 ## Chapter21Intro_WarCamp
-[FarLeft][LoadBoro]
+[FarLeft][LoadBoroScarred]
 [Left][LoadCleo]
 [Right][LoadLoewePunished]
 [FarRight][LoadKwame]
@@ -257,7 +257,7 @@ Into the Himbasha Mountains, and[N]
 towards the last Immortal's end.[A][X]
 
 ## Chapter21Intro_BoroDepressed
-[MidLeft][LoadBoro]
+[MidLeft][LoadBoroScarred]
 [MidRight][LoadCleo]
 [MidRight][OneLineBox]
 Boro? You wanted to talk?[A]
@@ -609,7 +609,7 @@ make it worth my while.[A][N]
 How about a little gift[N]
 of [ToggleRed]6,000 Gold[ToggleRed]?[A][N]
 I do believe that might sway[N]
-my opinions a bit.[Yes][A][X]
+my opinions a bit.[Yes][X]
 
 ## Ch21SultaiTaskMaidenless
 [MidLeft][LoadActive]
@@ -1641,7 +1641,7 @@ I swear it.[A][X]
 [FarLeft][LoadDart]
 [Left][LoadTikka]
 [Right][LoadNgondala]
-[FarRight][LoadBoro]
+[FarRight][LoadBoroScarred]
 [Left]
 Ngondala, dear[Beat][A][N]
 you finally did it.[N]
@@ -1746,7 +1746,7 @@ bosses that I'm staying here,[A][N]
 at least for now.[A][X]
 
 ## Ch21Ending_BoroLeaves
-[MidLeft][LoadBoro]
+[MidLeft][LoadBoroScarred]
 [MidRight][LoadCleo]
 [MidLeft][ThreeLineBox]
 Hey, Cleo.[A][N]

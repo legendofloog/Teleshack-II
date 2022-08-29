@@ -44,7 +44,7 @@ END_MAIN
 
 MiscBasedEvents:
 AREA 12 GuidingMoonlight [30,37][30,38]
-DefeatBoss(EndingScene)
+DefeatBoss
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -72,13 +72,15 @@ Units1:
 LoadUnit(5,28)
 LoadUnit(7,26)
 LoadUnit(7,28)
-LoadUnit(8,30)
-LoadUnit(6,30)
+LoadUnit(7,30)
 LoadUnit(4,29)
 LoadUnit(8,27)
 LoadUnit(9,26)
-LoadUnit(9,29)
+LoadUnit(8,29)
 LoadUnit(10,27)
+LoadUnit(5,30)
+LoadUnit(6,29)
+LoadUnit(6,27) //added two deploy slots because 10 is pain - Loog
 UNIT
 
 BeginningScene:
@@ -90,7 +92,6 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
-RemoveAll
 MNC2 Chapter23
 NoFade
 ENDA
@@ -100,7 +101,7 @@ GiveItem(KnightProof,0xFFFF)
 NoFade
 ENDA
 
-VillageB:
+VillageB: 
 GiveItem(IronRune,0xFFFF)
 NoFade
 ENDA
@@ -253,7 +254,8 @@ UNIT
 EnemyUnits:
 // UNIT Cythes Class Eleanor Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [Item] TEMPAI
 // Initial group
-UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
+//UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [Longsword] ChargeAI
+UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [1,26] 0x0 0x0 0x0 0x0 [IronSword] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [0,23] 0x0 0x0 0x0 0x0 [Hurlbat,Vulnerary] ChargeAI
 UNIT Cythes Corsair Eleanor Level(20,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [Poleaxe,RedGem] ChargeAI

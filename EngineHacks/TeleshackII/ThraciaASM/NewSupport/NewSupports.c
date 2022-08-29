@@ -114,6 +114,10 @@ s8 CanUnitSupportCommandWith(struct Unit* unit, int num)
         return false;
     }
 
+    if (exp == ASupportLevel){
+        return false;
+    }
+
     return (exp == maxExp) ? TRUE : FALSE;
 }
 

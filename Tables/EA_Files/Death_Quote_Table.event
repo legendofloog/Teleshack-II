@@ -84,7 +84,7 @@ DeathQuote(Alena,AllChapters,0x0,AlenaDeathQuoteText)
 DeathQuote(Varga,AllChapters,0x0,VargaDeathQuote)
 DeathQuote(Delilah,AllChapters,0x0,DelilahDeathQuote)
 
-//ch 3 empty
+//ch 3 
 DeathQuote(Alex,AllChapters,0x0,AlexDeathQuote)
 DeathQuote(Axel,AllChapters,0x0,AxelDeathQuote)
 
@@ -104,9 +104,9 @@ DeathQuote(Cadenza,AllChapters,0x0,CadenzaDeathQuoteText)
 DeathQuote(Faolan,AllChapters,0x0,FaolanDeathQuote)
 DeathQuote(Matthias,AllChapters,0x0,MatthiasDeathQuoteText)
 
-//ch 6 empty
-DeathQuote(Leina,AllChapters,0x0,0)
-DeathQuote(Cromar,AllChapters,0x0,0)
+//ch 6
+DeathQuote(Leina,AllChapters,0x0,LeinaDeathQuoteText)
+DeathQuote(Cromar,AllChapters,0x0,CromarDeathQuoteText)
 
 //ch 7
 DeathQuote(Iberis,AllChapters,0x0,IberisDeathQuoteText)
@@ -127,7 +127,7 @@ DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
 
 // ch 11
 DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote)
-DeathQuote(Ichwep,AllChapters,0x0,0)
+DeathQuote(Ichwep,AllChapters,0x0,IchwepDeathQuote)
 
 // ch 12
 DeathQuote(Mink,AllChapters,0x0,MinkDeathQuote)
@@ -153,13 +153,16 @@ DeathQuote(Augur,AllChapters,0x0,AugurDeathQuote)
 
 // ch 15
 DeathQuote(Ilse,AllChapters,0x0,IlseDeathQuoteText)
+DeathQuote(Asha,AllChapters,0x0,AshaDeathQuoteText)
 
 // ch 16
 DeathQuote(Rashid,AllChapters,0x0,RashidDeathQuote)
+DeathQuote(Kofi,AllChapters,0x0,KofiDeathQuoteText)
 
 // ch 17
 DeathQuote(Nikolas,AllChapters,0x0,NikolasDeathQuoteText)
 DeathQuote(KwameReal,Chapter17,0x65,KwameRealDeathQuoteText)
+DeathQuote(KwameReal,AllChapters,0x0,KwameRealDeathQuoteTextGeneral)
 
 // ch18
 DeathQuote(Sera,AllChapters,0x0,SeraDeathQuoteText)
@@ -171,12 +174,11 @@ DeathQuote(Ojasvi,AllChapters,0x0,OjasviDeathQuoteText)
 DeathQuote(Tao,AllChapters,0x0,TaoDeathQuoteText)
 DeathQuote(Zhara,AllChapters,0x0,ZharaDeathQuoteText)
 DeathQuote(Groto,AllChapters,0x0,GrotoDeathQuoteText)
-DeathQuote(Darcy,AllChapters,0x0,0x0)
+DeathQuote(Darcy,AllChapters,0x0,DarcyDeathQuoteText)
 
 // ch19
-DeathQuote(Volran,AllChapters,0x0,0x0)
-DeathQuote(Tara,AllChapters,0x0,0x0)
-
+DeathQuote(Volran,AllChapters,0x0,VolranDeathQuoteText)
+DeathQuote(Tara,AllChapters,0x0,TaraDeathQuoteText)
 
 // ch20
 DeathQuote(Jerry,AllChapters,0x0,JerryDeathQuoteText)
@@ -186,8 +188,13 @@ DeathQuote(Lyre,AllChapters,0x0,LyreDeathQuoteText)
 DeathQuote(Ngondala,AllChapters,0x0,NgondalaDeathQuoteText)
 DeathQuote(CatrinReal,AllChapters,0x0,CatrinRealDeathQuoteText)
 
+// ch22
+DeathQuote(Locke,AllChapters,0x0,LockeDeathQuoteText)
+DeathQuote(TrajanReal,AllChapters,0x0,TrajanRealDeathQuoteText)
+
 // ch23
-DeathQuote(EliasReal,AllChapters,0x0,EliasDeathQuoteText)
+DeathQuote(EliasReal,AllChapters,0x0,EliasRealDeathQuoteText)
+DeathQuote(BoroReal,AllChapters,0x0,BoroDeathQuoteText)
 
 // ch24
 DeathQuote(Orfeas,AllChapters,0x0,OrfeasDeathQuoteText)

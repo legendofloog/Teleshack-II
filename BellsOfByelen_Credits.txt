@@ -1,0 +1,403 @@
+CREDITS
+
+Event Assembler - Nintenlord, Crazycolorz
+
+ENGINE HACKS
+
+
+Anything unmentioned is unique to Bells of Byelen.
+
+Skill System- Circles, Sme, Tequila, Rossendale, StanH, Leonarth, 2WB,
+Teraspark, Darrman, SD9k, Kao, blademaster, Snakey1, Zeta, Kirb, Ganzap, Mikey Seregon,
+7743, Monkeybard, Blaze, vlak, Pikmin1211, 2WB, Zaim,
+Reds
+
+External Hacks (in Skillsys)
+
+Cannot Crit (Sme), Escape Arrive (Sme), Leadership Stars (Zeta/Gilgamesh),
+Narrow Font (Scraiza, Bly, Mintx), Portrait Select ASM (Snek), Status Weapons (Sme),
+Str/Mag Split (Tequila, RobertFPY, Pikmin1211, Snakey1), Trap Rework (Sme),
+Unlock Chest (Gamma, Snek), Weapon Lock Array (Vennobennu)
+
+QoL Hacks (in Skillsys)
+
+Battle Stats With Anims Off(Tequila), Contemporary Talk Support (Circles), Danger Zone (Circles),
+Display WRank on Level Up (Teq, Stan), HPBars (Circles, Teq, Gamma),
+Improved Sound Mixer (ipatix, Circles), LToggle (Circles)
+Movement Arrow Hack(Circles), Negative Wt/Crit Display (Circles, StanH),
+Text Chapter Names (Circles), Prologue Supply (Circles)
+
+
+Fancy Staves - Teraspark
+Fatigue - Sme
+
+Changing Prep/Battle BGM, Continue Battle BGM - 7743
+
+Fixes
+
+Multi Seize Units -
+New CHAI - Tequila, hypergammaspaces, Walking Sounds Fix - Tequila, Minimug Palette - Huichelaar
+Fixed Difficulty, Fixed Autolevels - StanH, Prevent Freeze for Check Alive - 7743?
+
+//removal: bonus exp class removal hack (don't need it), weapon rank removal (don't need it)
+
+Text Engine Rework - Tequila, ASMC Check Suite - Sme, Fixed Damage Weapons - Sme
+EVENTSCRIPT ASMCs - 7743
+
+//removal: change weapon rank asmc (unused)
+
+Toggle Deployment Swapping - Aura Wolf, Set Condition - Tequila, MMB - Zane
+Portrait Height Fix - 2WB,
+Rework for Prep Screen Right Top Image - ?
+//removal: StanAI, StallAIs, depending on whether this fixes the ai problem
+Conditional NosResire Palette - Sme, Tequila; Forblaze Source Port - hypergammaspaces
+//remove multi tile marker
+EventGetCountOfUnit -  7743; Convoy Partition and Item Combining - Tequila
+Ring Rework - 7743, Narrow Font Extension (Mint?), Promo Level Check  - Snek
+Show Heal Amount - Tequila, Prep Shop Each Chapter - 7743, Individual Animations - (7743?)
+Sacred Weapons Flash Patch - 7743, Group AI - Phantom Sentine
+//remove map change to flag (no idea what this does)
+
+
+
+
+
+
+GRAPHICS
+
+
+Portraits
+
+Cleo - hypergammaspaces, Loog
+Loewe - hypergammaspaces, Loog, knabepicer (angry)
+Young Loewe, Cleo - placeholder, IS
+Dragana - Levin, Loog, knabepicer
+Kwame - devisio, knabepicer
+Varga, Delilah, Tyr - knabepicer
+Alex, Axel, Matthias - Levin
+Zwieback - devvy
+Trajan, Elias, Leonidas, Coralia, Ilse, Viktor, Artemis - Loog
+Tao - Loog, Levin
+Faolan, Tiberius, Mink - Leche
+Apsis, Jerry, Lyre - devisio, BuskHusker
+Nikolas - Xilirite
+Barod - placeholder? Laurent_Lacroix
+Orfeas - placeholder, Nickt
+Rashid, Colossus - placeholder, IS
+Catrin - Levin (placeholder)
+Boro - Laurent_Lacroix (placeholder)
+
+Iskra, Emil, Svetomir, Alena, Filone, Kofi, Leina, Cromar - Laurent_Lacroix
+Kailani, Nahiza, Augur, Tippany, Ngondala - ZessDynamite
+Mira, Darby - Laurent_Lacroix, Levin
+Nora, Jacinth - Levin
+Iberis, Hans - Nickt
+Awa - placeholder? Nickt
+Longxia, Groto - CapibaraInSpace
+Fangai, Buldak, Locke - RandomWizard
+Tobie - ZoramineFae
+Tara - ArcherBias?
+Cadenza - JiroPaiPai
+Jenny - CapibaraInSpace
+Meldan - Relic, RandomWizard
+Valse, Carl, Shaw - XVI
+Hornet - Sterling Glovner
+Ichwep - h0lyMushrooms, Levin (edited from f2e mug)
+Milo - MegaCowmanSam
+Ellerey - DrGreen
+Pelecaye - flasuban, Godspetturtle, Sterling Glovner
+Mantou - MrKarkino, Glaceo
+Sera - Nobody, placeholder?
+Darcy - GabrielKnight
+Ojasvi - Raymond
+Zhara - placeholder?
+Takai - MeatOfJustice
+Volran - placeholder?
+
+Cidor - Laurent_Lacroix (placeholder?)
+Aurora, Taraji, Sultai, Dart, Cephalid - ZessDynamite
+Hilmar, McCallum, Hamdi, Mihail, Saif, Veid - Laurent_Lacroix
+The Giant, Kassandra, Traveler - CapibaraInSpace
+Francis, Johanna, Alto, Eleanor - XVI
+Wellworth, Valere - Nickt
+Veniamin, Maryn - Levin
+Hernandez, Draken, Shafaqat - RandomWizard
+Yor, Hege - RandomWizard
+Mifan - MK404, flasuban
+""Radnitz"" - Wasspix2, Shark3134
+Emory - ambrosiac
+Selese Soldier (F) - Kyrads
+Riggan - (placeholder, currently Lugh)
+
+Zeus - ??
+
+Epony - RisingSolaris
+Wrathgar - DerTheVaporeon
+Corundrum - Flasuban
+Pascal - JiroPaiPai
+Tsoureki - SterlingGlovner
+Houvaina - Alusq
+Mureib - CanDy
+Temur - Stitch
+Xlea - GenericPretsel
+Vinny - WAve
+
+
+Class Cards
+
+Dragon Rider, Dracoknight - flasuban
+Lance/Axe/Sword/Bow Armor - SALVAGED
+Mage Armor - Flasuban
+Baron - SamirPlayz
+Sword/Axe Knight - SALVAGED
+Forrest/Great Knight - Schtick, SALVAGED
+Bard (M and F) - L95
+Sister - RobertFPY
+Brother - Blademaster, ltranc
+Rook Knight - L95
+Gold Knight - Flasuban
+Hunter - Spud, Jj09 (F version)
+Axe Soldier - L95
+Halberdier - TBA
+Freelancer - Rasdel
+Champion - Spud, Rasdel
+Hero (F) - RobertFPY
+Myrmidon (F), Swordmaster (F) - L95
+Archer (F), Sniper (F) - L95
+Ballistician - Arch
+Sage (F) - L95, hypergammaspaces
+Mage Knight (F) - L95
+High Priest (F) - L95
+Dark Bishop (F) - L95
+Priest (F) - flasuban
+Thief (F) - L95
+Warrior (F) - Jj09
+Brigand (F) - ltranc, Jj09, hypergammaspaces
+Axefighter - flasuban, Pikmin1211 (F version), Jj09 (F version)
+Thief Fighter (F) - L95
+Corsair (F) - hypergammaspaces
+Berserker (F) - ZoramineFae, DerTheVaporeon
+Long Ballistician - Aruka, Yggdra
+
+Battle Animations
+
+Scaleshot - PrincessKilvas, Spud, Blue Druid, Pushwall
+Skyseeker - Flasuban
+Dracoknight/Dragonlord - Nuramon
+Falcoknight/Seraphknight - Flasuban
+Ballistician - Spud, Ren Ookami, Pushwall
+
+Sword/Axe/Lance Knight - SALVAGED
+Bow Knight - eCut, Pikmin1211 (F only), Maiser6 (F only)
+Arch Knight - Pikmin1211, Maiser6
+Duke Knight - Temp
+Great Knight - Aruku, Kenpuhu, Nuramon, LordTweed (F only)
+Dismounted - DerTheVaporeon, Pikmin1211, ZoramineFae, Permafrost
+Troubadour - (Pikmin1211, Maiser6, TBA)
+Paladin/Gold Knight (M) - SALVAGED Leo_link, Pikmin1211, The Big Dededester
+Paladin/Gold Knight (F) - SALVAGED, Leo_link, Flasuban
+
+Rogue (M) - Eldritch Abomination
+Rogue (F) - Pikmin1211, Maiser6, Ukelele, SD9k, Temp, Black Mage, Wan, Sme
+Thief (M and F) - Eldritch Abomination
+
+Sword/Axe/Lance/Bow Armor - SALVAGED
+Mage Armor - Iscaneus, Nuramon, Jeorge Reds, flasuban
+General - TBA, knabepicer, Dabmaster110
+Baron - Leo_link, Nuramon, Iscaneus, The_Big_Dededester, DerTheVaporeon
+
+Deserter - Alusq
+Mercenary (F) - TBA
+Hero - Pikmin1211, Pushwall, St_jack (F only)
+Axefighter - MK404; Axefighter (F) - MK404, Pikmin1211, Maiser6
+Brigand (F) - eCut, Skitty
+Berserker (F) - eCut, Skitty, Serif
+Pirate (F) - Nuramon
+Hunter (M) - Leo_link, knabepicer
+Hunter (F) - Leo_link, Spud, MeatOfJustice
+
+Lance Soldier - Alusq; Soldier (F) - Alusq, Maiser6, Jey_The_Count
+Axe Soldier - Waleed, Pushwall, Lord_Tweed
+Halberdier - TBA, Spud, MeatOfJustice
+Warrior (F) - Temp, Pushwall
+Sergeant - Spud
+Dragon Rider - Mikey Seregon, Alfred Kamon
+
+Mage Knight (M and F) - Aruka, Kenpuhu
+Dark Mage - Jeorge Reds (F staff), Temp (M staff)
+Bard - L95, Leo_link, Flasuban
+Devotee (M and F) - Teraspark
+Mage Knight (Dismounted) - St_jack
+
+Noble (M) - Teraspark
+Master Knight - St_jack; Master Knight (F) - St_jack, Pushwall
+
+
+Spell Animations
+
+Sagittae - hypergammaspaces
+Meteor - Blazer, Jubby
+Burn/Crowned Pyre - Teraspark
+Wind - Arch
+Bolganon - Mikey Seregon
+Thoron - Arch
+Stormbreaker, Brenthunder - Arch
+Faith's Wind, Arai's Gale - Blazer, BwdYeti
+Absolute Zero, Ice Sword - Golden Sun, Mikey Seregon
+Stone Sword - Bonzai, Blazer
+Dancing Blade - lovemachine, Mikey Seregon, The Big Dededester
+Jormungand - Orihara Saki
+Arachnid - Arch
+Sink - Arch
+Spell Mirror - Mikey Seregon
+Malkhut - Arch
+
+
+Tilesets
+
+Thracia Castle - flasuban
+Flasuban Village - flasuban, N426, ZoramineFae, Vennobennu
+FF5 Cave - WAve, N426
+Desert Bastion - hypergammaspaces, ZoramineFae, Vennobennu
+FF2 Town - WAVE, N426
+
+
+Map Sprites
+
+Scaleshot - knabepicer
+Scaleshot (Dismounted) - ArcherBias
+Dragonlord - knabepicer
+Dragonlord (Dismounted) - ArcherBias
+Skyseeker - Flasuban
+Skyseeker (Dismounted) - ArcherBias
+Seraphknight - Blademaster, knabepicer
+Seraphknight (Dismounted) - Shin19 (placeholder)
+Sword/Axe/Lance Knight - SALVAGED
+Forrest/Great Knight - RobertFPY
+Swordfighter (F) - Agro
+Ballistician - flasuban, DerTheVaporeon
+Dracoknight - flasuban
+Bard - ArcherBias
+Bard (F) - Leo_Link, L95
+Acolyte (F) - Teraspark
+Gold Knight - hypergammaspaces
+Hunter (M and F) - MeatOfJustice
+Warrior (F) - FEGirls
+Brigand (F) - Skitty
+Sword/Axe/Bow Armors - Agro, knabepicer
+Brigand (M) - Alusq, knabepicer
+Mage Armor - flasuban
+Baron - WarPath
+Axefighter - L95
+Axefighter (F) - Pikmin
+Lance Soldier - Rexacuse, Peerless, Alusq
+Axe Soldier - Pikmin, L95
+Corsair (F) - StreetHero
+Berserker (F) - Pikmin, DerTheVaporeon
+Halberdier - TBA
+Freelancer - Alusq
+Champion - Spud
+Long Ballistician - DrGreen, Aruka, Kenpuhu
+Noble - Dominus_Vobiscum
+Master Knight (M) - milom
+
+Item Icons - Lisandra Brave, Beansy, LordGlenn, GabrielKnight, XVI, Kyrads, Peerless, Zarg, Ereshkigal, Celice, CardCafe, ArcherBias, N426, EldritchAbomination, Indogutsu Tenbuki
+
+//would like a more comprehensive list but most individual item icons don't have credits
+
+
+Title Screen - ?
+
+Status Screen - SD9k02 (placeholder?)
+
+Battle Palettes - knabepicer, Dainn, Kyrads, pandan, Loog
+
+Menu Palettes - pandan
+
+
+MUSIC
+
+
+
+NIMAP 2 - Alusq
+Drumfix - ??
+
+Songs
+
+Call of the Bells (pandan)
+Feeling Woozy (pandan)
+Kwame (A Reliable Chair)
+
+Away With You (Runa)
+
+War's Heartbeat (??)
+
+FE5 - Adversity (Scraiza)
+FE5 - In the Battle ~ Fate (knabepicer?)
+FE5 - Victory is Near (DrGreen)
+FE9 - With Us (Sme)
+
+Berwick Saga - Man-to-Man Fight (pandan)
+Berwick Saga - Knight's Pride (DrGreen)
+
+Triangle Strategy - Combat: Resistance (devisio, from Musescore)
+Triangle Strategy - Combat: First Campaign (devisio, from Musescore)
+
+Tales of Symphonia - Rovers (pandan)
+Tales of Symphonia - Fighting of the Spirit (A Reliable Chair)
+Tales of Symphonia - Encounter With The Renegades (A Reliable Chair)
+Tales of Symphonia - Like a Glint of Light (A Reliable Chair)
+Tales of Symphonia - Sheena (A Reliable Chair)
+Tales of Vesperia - A Tragic Decision (A Reliable Chair)
+
+Golden Sun - Saturos Battle (Tristan Hollow)
+Golden Sun - Mars Lighthouse (A Reliable Chair)
+Golden Sun: The Lost Age - Walking Forward With Determination (RandomWizard)
+
+Ys I - Dreaming (devisio)
+Ys III - Drumbeat of Doom ~ Genos's Island (devisio)
+Ys IV - The Dawn of Ys (devisio)
+
+FF4 - Red Wings (RandomWizard)
+FF5 - Nostalgia (A_Reliable_Chair)
+FF5 - Battle on the Big Bridge (pandan)
+FF5 - Sealed Away (RandomWizard)
+FF6 - Awakening (Loog)
+FF9 - Festival of the Hunt (RandomWizard, Mr_Wright)
+FFT - Anxiety (Alusq)
+
+Treasure of the Rudras - Battle For The Fields (RandomWizard, devisio)
+Treasure of the Rudras - Crime of the Heart (devisio)
+Treasure of the Rudras - Sword of the Valiant (A Reliable Chair)
+
+Pokemon Black and White - N's Castle Bridge (DrGreen)
+PMD: Rescue Team - Great Canyon (Psyche, RandomWizard)
+PMD: Explorers - Steam Cave (Leche)
+Pokemon Ranger: Guardian Signs - Legendary Pokemon Battle (Sme)
+
+Kirby's Adventure: Butter Building (DrGreen)
+Kirby: Return to Dreamland - Sky Tower Beta(DrGreen)
+
+Lufia and the Fortress of Doom - Island in the Void (Sme)
+Lufia 2: Rise of the Sinistrals - Battle 2 (Saxor_The_Nobody)
+
+Valkyrie Profile - The Unfinished Battle with God Syndrome (Saxor_The_Nobody)
+Valkyrie Profile - Rise Above the World (buggo)
+
+Heroes of Mana - Why are We Without Hope (devisio)
+Chrono Trigger - Battle With Magus (A Reliable Chair)
+Knights in the Nightmare - Sortie Formation (Saxor_The_Nobody)
+Crypt of the Necrodancer - Crypteque (ArcherBias)
+The Queen of Heart - Tomoko (pandan)
+Castlevania: Order of Ecclesia - Sorrow's Distortion (buggo)
+F-Zero - Mute City (pandan)
+Tactics Ogre: Let Us Cling Together - Harvest Dance (Loog)
+Lagoon - Battle With Thimale (RandomWizard)
+Guilty Gear Isuka - Sheep Will Sleep (Leche)
+Undertale - CORE (Leche)
+Dynasty Warriors 3 - Oppression (pandan)
+
+
+
+
+

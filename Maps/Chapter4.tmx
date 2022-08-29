@@ -9,7 +9,7 @@
    <property name="MapChangesID" value="Chapter4MapChanges"/>
    <property name="MapID" value="Chapter4Map"/>
    <property name="ObjectType" value="FlasubanVillageObjectID"/>
-   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="PaletteID" value="Chapter4VillagePaletteID"/>
    <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
   </properties>
   <data encoding="csv">

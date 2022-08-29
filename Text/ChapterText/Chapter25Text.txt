@@ -1,11 +1,11 @@
 ## Chapter25Title
-Endgame: Uniting Melody[X]
+Finale: Universal Ring[X]
 
 ## Ch25Objective
 Defeat Cherne[X]
 
 ## RunningOutOfCatacombs
-[FarLeft][LoadLoewe]
+[FarLeft][LoadLoewePunished]
 [FarLeft]
 Huff[Beat]huff[Beat][N]
 I can see a light[Beat][A]
@@ -14,7 +14,7 @@ I can see a light[Beat][A]
 Yes[Beat]just a little[Beat]further[Beat][A][X]
 
 ## OutOfCatacombs
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [MidRight][LoadCleo]
 [MidLeft]
 Gah, that's bright.[N]
@@ -63,7 +63,7 @@ it for now.[A]
 Right. Just one second[Beat][A][X]
 
 ## SeeingMahemenGetOwned
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [MidRight][LoadCleo]
 [MidLeft][OneLineBox]
 Oh.[A] Oh no.[A]
@@ -130,7 +130,7 @@ prize of these new bodies[Beat][A][X]
 
 ## MahemeniReunionConvoOne
 [FarLeft][LoadCleo]
-[Left][LoadLoewe]
+[Left][LoadLoewePunished]
 [MidRight][LoadKailani]
 [Left][ThreeLineBox]
 Archbishop Kailani![N]
@@ -153,7 +153,7 @@ watching if this is a trick.[A]
 
 ## MahemeniReunionConvoTwo
 [FarLeft][LoadCleo]
-[Left][LoadLoewe]
+[Left][LoadLoewePunished]
 [FarRight][LoadKailani]
 [Right][LoadHouvaina]
 [Right]
@@ -236,7 +236,7 @@ Loewe! For gods' sake![A][X]
 
 ## CleoGazesIntoTheAbyss
 [MidRight][LoadCleo]
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [MidLeft][TwoLineBox]
 I[Beat]sorry. The last thing we[N]
 need is useless self pity.[A]
@@ -313,7 +313,7 @@ but still, it's going to be a tough fight,[N]
 with those troops he has[Beat][A][X]
 
 ## ByelenReturnsToMindDungeon
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [MidRight][ToggleColorInvert]
 Heh[Beat] glad she snapped you out of it.[AN]
 It'd be quite ridiculous for you to[N]
@@ -380,7 +380,7 @@ Loewe![A][X]
 
 ## KaiserschwertDoesTheThing
 [MidRight][LoadCleo]
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [MidRight][ThreeLineBox]
 Loewe, what's going on?[N]
 You spaced out, and now[N]
@@ -402,7 +402,7 @@ Hmph. As if you made better company.[A]
 
 ## TalkingToTheGotohs
 [FarLeft][LoadCleo]
-[Left][LoadLoewe]
+[Left][LoadLoewePunished]
 [FarLeft][OneLineBox]
 I- Did[Beat][A]
 [Left][TwoLineBox]
@@ -548,7 +548,7 @@ You dropped it right[Beat]there.[N]
 Is that[Beat]a bell?[A][X]
 
 ## WoahTheBellOfByelen
-[MidLeft][LoadLoewe]
+[MidLeft][LoadLoewePunished]
 [MidRight][LoadCleo]
 [MidLeft]
 [Beat]Yeah, it is. I feel different while[N] 
@@ -584,7 +584,7 @@ for this one final fight.[A][X]
 
 ## EpicSpeechOfEpicness
 [MidLeft][LoadCleo]
-[MidRight][LoadLoewe]
+[MidRight][LoadLoewePunished]
 [MidLeft][OneLineBox]
 Alright, we're just about ready.[A]
 [MidRight][OneLineBox]
@@ -674,7 +674,7 @@ and prevent lethal blows![A][X]
 
 ## EndingDialogueOne
 [FarLeft][LoadCleo]
-[Left][LoadLoewe]
+[Left][LoadLoewePunished]
 [MidRight][LoadCherne]
 [MidRight][ThreeLineBox]
 How[Beat]vexing. To have come so far,[N]
@@ -714,7 +714,7 @@ talking to him any further.[A]
 
 ##EndingDialogueTwo
 [MidLeft][LoadCleo]
-[MidRight][LoadLoewe]
+[MidRight][LoadLoewePunished]
 [MidLeft]
 [Beat]I guess it's over now.[N]
 Truly over, this time.[A]

@@ -30,12 +30,11 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
-	DefeatBoss(EndingScene)
+	DefeatBoss
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
-
 	END_MAIN
 
 Dunno1:
@@ -137,8 +136,8 @@ UNIT EndgameGenerics WyvernLord 0x0 Level(15, Enemy, True) [27,0] 0x0 0x0 0x1 RE
 UNIT
 
 FlierReinforcements2:
-UNIT EndgameGenerics Falcoknight 0x0 Level(15, Enemy, True) [0, 17] 0x0 0x0 0x1 REDA0R17 [SilverSword] ChargeAI
-UNIT EndgameGenerics WyvernLord 0x0 Level(15, Enemy, True) [29,25] 0x0 0x0 0x1 REDA29R25 [SilverLance] ChargeAI
+UNIT EndgameGenerics Falcoknight 0x0 Level(15, Enemy, True) [0, 17] 0x0 0x0 0x1 REDA0R17 [SilverLance] ChargeAI
+UNIT EndgameGenerics WyvernLord 0x0 Level(15, Enemy, True) [29,25] 0x0 0x0 0x1 REDA29R25 [SilverAxe] ChargeAI
 UNIT
 
 BackReinforcements1:
@@ -305,8 +304,8 @@ ENDA
 
 
 BeginningScene:
+EraseAllFatigue
 DISA_IF Kwame
-DISA_IF CoraliaReal
 SetBackground(0x0D)
 Text(RunningOutOfCatacombs)
 CAMERA_CENTERED [24, 33]
@@ -416,6 +415,6 @@ SetBackground(Village2)
 FADU 5
 Text(EndingDialogueOne)
 Text(EndingDialogueTwo)
-GOTO_EPILOGUE
+MNC2 EpilogueChapter
 NoFade
 ENDA

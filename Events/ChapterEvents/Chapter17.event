@@ -28,13 +28,13 @@ LocationBasedEvents:
 Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
-//Chest(HeroRing,9,8)
+Chest(Elixir,9,8)
 DurabilityChest(GrowthScroll, AmserScroll,11,9)
 END_MAIN
 
 MiscBasedEvents:
 AFEV 8 MureibBetrayal 9
-DefeatBoss(EndingScene)
+DefeatBoss
 CauseGameOverIfLordDies 
 END_MAIN
 
@@ -227,6 +227,7 @@ ENUN
 CAM1 [10,1]
 FlashCursor(10,1,30)
 Text(Ch17_KwameSoEpic)
+ENUT 4
 NoFade
 ENDA
 

@@ -36,31 +36,14 @@ DurabilityChest(GrowthScroll, BeiyrScroll,21,12)
 Door(17,11)
 Door(15,13)
 LOCA 9 AlexAxelDoor [10,14] 0x12
-Escape(0,EscapeEventCheck,29,11)
-Escape(0,EscapeEventCheck,29,12)
-Escape(0,EscapeEventCheck,29,13)
-Escape(0,EscapeEventCheck,29,14)
-Escape(0,EscapeEventCheck,29,15)
-//Escape(0,EscapeEventCheck,0,9)
+Escape(29,11)
+Escape(29,12)
+Escape(29,13)
+Escape(29,14)
+Escape(29,15)
 END_MAIN
 
-EscapeEventCheck:
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-SVAL s1 2
-COUNTER_CHECK 0
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
-NoFade
-ENDA
+
 
 MiscBasedEvents:
 AFEV 15 AlexAxelWall 0

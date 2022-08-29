@@ -8,28 +8,6 @@
 
 #include "UnitMenu.lyn.event"
 
-ALIGN 4
-LordMustEscapeLastFlagLink:
-SHORT LordMustEscapeLastFlag
-ALIGN 4
-AllUnitsMustEscapeFlagLink:
-SHORT AllUnitsMustEscapeFlag
-ALIGN 4
-LordMustEscapeLastTextIDLink:
-SHORT LordMustEscapeLastText
-
-ALIGN 4
-RefEscapeTable:
-#incbin "RefEscapeTable.dmp"
-POIN EscapeQuoteTable
-
-ALIGN 4
-FinalEscapeThing: //hooks with post-action calc loop
-#incbin "PostActionCorrection.dmp"
-
-#include "EscapeEvent.event"
-
-
 PUSH
 	//fix a jump table allowing for us to be separate map objects
 	ORG ($8410C + (4*0x19))
@@ -51,6 +29,7 @@ POP
 #define Arrive(eventID,offset,seizeX,seizeY) "LOCA eventID offset [seizeX,seizeY] 0x12"
 #define Escape(seizeX,seizeY) "LOCA 3 [seizeX,seizeY] 0x13"
 #define Escape(eventID,offset,seizeX,seizeY) "LOCA eventID offset [seizeX,seizeY] 0x13"
+#define Escape(eventID,seizeX,seizeY) "LOCA eventID [seizeX,seizeY] 0x13"
 
 #endif // ESCAPE_ARRIVE_INSTALLED
 

@@ -6,7 +6,7 @@
 	// NOTE ON MAGIC SWORDS: TO MAKE MAGIC SWORDS USE MAGIC INSTEAD OF STRENGTH, SET THE "MAGIC DAMAGE" (0x2) BIT IN THE ITEM ABILITY BITFIELD.
 	
 	#ifndef SpiritDust
-		#define SpiritDust 0x5C // Energy Ring by default
+		#define SpiritDust 0x6f // redefined to be somewhere else because it's annoying that it overwrites str booster by default
 	#endif
 	
 	// If uncommented, a level up screen with an extra row to fit Mov and Con will be used.
@@ -17,11 +17,11 @@
 	//Spirit Dust item icon
 	#ifndef SpiritDustIcon
 		
-		//#define SpiritDustIcon 0xAB
-		//PUSH
-		//ORG $5926F4 + ( SpiritDustIcon * 0x80 )
-		//#incext Png2Dmp "SpiritDust.png"
-		//POP
+		#define SpiritDustIcon 0x85
+		PUSH
+		ORG $5926F4 + ( SpiritDustIcon * 0x80 )
+		#incext Png2Dmp "SpiritDust.png"
+		POP
 	
 	#endif // SpiritDustIcon
 	

@@ -13,8 +13,8 @@
 #define SetNPCEscapePoint(ChapterID,EscapePointList) "PUSH; ORG NPCEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
 
 Chapter1NPCEscapeTable:
-EscapePointEntry(14,0,EscapeUp)
-EscapePointEntry(15,0,EscapeUp)
+EscapePointEntry(2,0,EscapeUp)
+EscapePointEntry(3,0,EscapeUp)
 EscapePointTerminator
 
 Chapter2NPCEscapeTable:

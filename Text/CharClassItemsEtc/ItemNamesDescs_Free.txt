@@ -346,7 +346,7 @@ Varga[LockIcon]. Magic dmg. +5 Spd.[X]
 Charge[X]
 
 ## ChargeLanceDesc
-Emil[LockIcon]. +1 dmg for per 2 squares.[X]
+Emil[LockIcon]. +1 dmg per square moved.[X]
 
 ## PoincareName
 Archival[X]
@@ -360,8 +360,8 @@ Sink[X]
 ## SinkDesc
 Eff. vs. mages and bards.[X]
 
-## WoodlandsHukeName
-[_W][_o][_o][_d][_l][_a][_n][_d][_s] [_H][_u][_k][_e][X]
+## WoodlandsHukeName ^
+Woodland Huke[X]
 
 ## WoodlandsHukeDesc
 +2 Skl/Res when equipped. +1 Bow Rng.[X]
@@ -643,8 +643,9 @@ A mighty magic axe gifted by Mihail.[X]
 Black Anklet[X]
 
 ## BlackAnkletDesc
-+4 Str/Mag, +2 Def/Res. -10 HP after[N]
-combat. Min. HP after this effect is 1.[X]
+Str/Mag +4 and Def/Res +2.[N]
+-10 HP after combat or healing.[N]
+Min. HP after this effect is 1.[X]
 
 ## BoltbrandName
 Boltbrand[X]
@@ -652,7 +653,7 @@ Boltbrand[X]
 ## BoltbrandDesc
 [LockIcon]Tiberius. Brave. Magic sword.[X]
 
-## DawnPendantName
+## DawnPendantName ^
 Dawn Pendant[X]
 
 ## DawnPendantDesc
@@ -790,3 +791,13 @@ Self and allies cannot be critically hit.[X]
 ## VulneraryDesc
 A medicinal solution used to heal[N]
 minor wounds. Heals up to 15 HP.[X]
+
+## SpiritDustName
+Spirit Dust[X]
+
+## SpiritDustDesc
+Increases Mag by 1 point.[NL]
+Vanishes after use.[X]
+
+## SpiritDustUseDesc
+Raises magic.[X]

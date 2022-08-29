@@ -60,7 +60,7 @@ not_extra_learn_skill:
 	ldrb r2, [r2, #4]
 
 	@ if CharID > 0x46 then return 0
-	cmp r2, #0x46
+	cmp r2, #0x4A
 	bhi return_zero
 
 	lsl  r2, #4

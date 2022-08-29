@@ -30,11 +30,12 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
-	AFEV 0 EndingScene 0x2
-	CauseGameOverIfLordDies
-	END_MAIN
+DefeatBoss
+CauseGameOverIfLordDies
+END_MAIN
 
 LocationBasedEvents:
+//Seize(3,3)
 Chest(TemperedRing, 1,12)
 	END_MAIN
 
@@ -210,7 +211,7 @@ ENDA
 
 AmongUsPartyIsOver:
 ENUT 0x3
-CALL (EndingScene)
+CALL EndingScene
 ENDA
 
 OhNoWTF:
@@ -294,10 +295,12 @@ Text(Ch4Intro4)
 FADI 15
 MountAll
 STAL 3
-	GotoPrepScreen
+	CALL $591FD8 // prep screen
+	//LoadCapturedUnits(CapturedUnitsTest)
 	ENDA
 
 EndingScene:
+ENUT 3
 FADI 60
 DoAllThree
 LOAD2 0x1 SickoMode
@@ -320,3 +323,9 @@ Text(Ch4Ending3)
 	MNC2 0x4
 	NoFade
 	ENDA
+
+CapturedUnitsTest:
+UNIT Cleo Skyseeker 0 Level(1,0,0) [0,15] 0 0 0 0 [0] [0]
+UNIT Cleo Skyseeker 0 Level(1,0,0) [1,15] 0 0 0 0 [0] [0]
+UNIT Cleo Skyseeker 0 Level(1,0,0) [2,15] 0 0 0 0 [0] [0]
+UNIT
