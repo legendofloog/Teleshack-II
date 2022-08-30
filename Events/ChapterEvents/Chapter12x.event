@@ -403,8 +403,8 @@ ENUN
 TILECHANGE 2
 STAL 10
 CAMERA_CENTERED Cleo
-FlashCursor(Elias,60)
-FlashCursor(Ch2_Selese_Guy,60)
+FlashCursor(Elias,30)
+FlashCursor(Ch2_Selese_Guy,30)
 Text(Ch12CleoNightmare7)
 STAL 10
 MOVE_1STEP 5 Cleo 2
@@ -415,7 +415,7 @@ ENUN
 STAL 30
 Text(Ch12CleoNightmare8)
 STAL 10
-MOVE 20 Cleo [7,21]
+MOVE 20 Cleo [4,21]
 ENUN
 STAL 10
 TEXTSTART
@@ -434,7 +434,7 @@ TEXTCONT
 TEXTEND
 REMA
 STAL 30
-WARPOUT [7, 21]
+WARPOUT [4, 21]
 HIDEUNIT Cleo
 ENDWARP
 FADI 10
@@ -444,23 +444,23 @@ RemoveAll
 LOMA Chapter12
 LOAD1 1 LoeweCleoGroup
 ENUN
+STAL 60
 CAMERA_CENTERED Cleo
 FADU 10
 BROWNBOXTEXT Ch12xCastleSelese[8,8]
 CameraCursor(Loewe)
 MUSC FF6AwakeningID
 Text(Ch12xBeginningScene2)
-FadeOutMusic
 CamOn
 LOAD1 1 Tao_FakeGroup
 ENUN 
 CameraCursor(Tao_Fake)
 Text(Ch12xBeginningScene3)
+FadeOutMusic
 MOVE 15 Loewe [9,19]
 MOVE 10 Tao_Fake [9,22]
 ENUN
 FlashCursor(Tao_Fake,30)
-FadeOutMusic
 Text(Ch12xBeginningScene3Part2)
 STAL 30
 CUSE Tao_Fake
@@ -483,6 +483,8 @@ MOVE_1STEP 5 Tao_Fake 2
 MOVE_1STEP 5 Cleo 2
 MOVE_1STEP 5 Tao_Fake 2
 CamOff
+ENUN
+STAL 30
 CheckUnitDeadOrJailed(Svetomir)
 BNE 420 s0 sC
 	LOAD1 0 SvetomirGroup
@@ -508,6 +510,7 @@ LABEL 420
 	REMOVEUNIT Cythes
 	ENUN
 LABEL 421
+STAL 30
 CheckUnitDeadOrJailed(Buldak)
 BNE 422 s0 sC
 	LOAD1 0 BuldakGroup
@@ -532,6 +535,7 @@ HIDEUNIT Cleo
 LOMA Ch12xInterlude
 LOAD1 1 GreenUnits
 CAMERA_CENTERED [14,1]
+STAL 60
 FADU 5
 STAL 30
 BROWNBOXTEXT Ch12xOneWeekLater[8,8]
@@ -571,13 +575,49 @@ MOVE 15 Loewe [7,19]
 ENUN
 HIDEUNIT Loewe
 STAL 20
-FadeOutMusic
 FADI 5
 SHOWUNIT Loewe
 RemoveAll
+LOMA Ch5xGechrysos
+STAL 60
+LOAD1 1 GechrysosCutsceneGroup
+ENUN
+CAMERA_CENTERED [0,11]
+FADU 5
+FadeOutMusic
+BROWNBOXTEXT Ch5xImperialPalaceText[8,8]
+STAL 10
+LOAD1 1 EliasUnitGroup
+ENUN
+STAL 10
+FlashCursor(Elias, 30)
+MUSC FF4RedWingsID
+Text(Ch12xGechrysos1)
+MOVE 15 Elias [8,12]
+ENUN
+STAL 10
+Text(Ch12xGechrysos2)
+STAL 10
+LOAD1 1 KassandraUnitGroup
+ENUN
+STAL 10
+CameraCursor(Kassandra)
+Text(Ch12xGechrysos3)
+STAL 10
+MOVE 15 Kassandra [14,11]
+ENUN
+REMOVEUNIT Kassandra
+STAL 10
+CameraCursor(Elias)
+Text(Ch12xGechrysos4)
+STAL 10
+FADI 5
+RemoveAll
 LOMA Chapter12xPass
+STAL 60
 ENUN
 FADU 5
+FadeOutMusic
 BROWNBOXTEXT Ch12xRaioPass[8,8]
 CAMERA_CENTERED [12,9]
 CamOn
@@ -614,6 +654,7 @@ ENUN
 RemoveAll
 LOMA Chapter11
 CAMERA_CENTERED [16,27]
+STAL 60
 FADU 10
 STAL 10
 BROWNBOXTEXT Ch12xTenetCavesText[8,8]
@@ -734,17 +775,21 @@ StartBattle
 	NormalDamage(0,20)
 	NormalDamage(1,17)
 	MissedAttack(0,20)
+	MissedAttack(1,17)
+	MissedAttack(0,20)
 	NormalDamage(1,17)
 EndAttack
 FIGHT Korovai Cleo SilverLance False
 ENUN
 KILL Korovai
 AWAIT_KILL Korovai
-FadeOutMusic
 STAL 30
-LOAD1 1 KwameGroup
-ENUN
 MOVE 15 Cleo [12,13]
+ENUN
+FlashCursor(Cleo,30)
+Text(Ch12xKorovaiEndingScene10)
+FadeOutMusic
+LOAD1 1 KwameGroup
 ENUN
 CAMERA_CENTERED Kwame
 FlashCursor(Kwame,30)
@@ -837,3 +882,23 @@ UNIT
 KwameGroup:
 UNIT Kwame Civilian_2 Cleo Level(10,NPC,True) [14,10] 0x0 0x0 1 REDA12R12 [LongArch] NoAI
 UNIT 
+
+GechrysosCutsceneGroup:
+UNIT Chapter1Generics SwordArmor Cleo Level(2,Enemy,False) [2,11] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics AxeArmor Cleo Level(2,Enemy,False) [2,12] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics SwordArmor Cleo Level(2,Enemy,False) [13,11] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics LanceArmor Cleo Level(2,Enemy,False) [13,12] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics AxeArmor Cleo Level(2,Enemy,False) [9,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics LanceArmor Cleo Level(2,Enemy,False) [10,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics General Cleo Level(2,Enemy,False) [3,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics Halberdier Cleo Level(2,Enemy,False) [5,4] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT Chapter1Generics Hero Cleo Level(2,Enemy,False) [12,6] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
+UNIT 
+
+EliasUnitGroup:
+UNIT Elias Dracoknight Orfeas Level(2,Enemy,False) [0,12] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe,Vulnerary]		NoAI
+UNIT
+
+KassandraUnitGroup:
+UNIT Kassandra PegasusKnight Orfeas Level(2,Enemy,False) [14,11] 0x0 0x0 0x1 REDA8R11 [SilverLance]		NoAI
+UNIT
