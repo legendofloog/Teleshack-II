@@ -37,6 +37,7 @@
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
 #define Chapter3Cutscene 0x24
+#define Chapter12xPass 0x28
 #define Chapter12xDarkness 0x29
 #define EpilogueChapter 0x2A
 
@@ -80,6 +81,7 @@
 #define Chapter18xInterludeMapChanges 0xB8
 #define Chapter3CutsceneMapChanges 0xce
 #define Chapter12xDarknessMapChanges 0xC6
+#define Chapter12xPassMapChanges 0xd0
 
 
 // MapID
@@ -122,6 +124,7 @@
 #define Chapter18xInterludeMap 0xB9
 #define Chapter3CutsceneMap 0xBC
 #define Chapter12xDarknessMap 0xC7
+#define Chapter12xPassMap 0xd1
 
 // EventsID
 

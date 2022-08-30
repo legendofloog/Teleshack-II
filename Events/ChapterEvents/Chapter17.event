@@ -267,7 +267,7 @@ BeginningScene:
 FADU 15
 SetBackground(CastleHallway)
 FADI 15
-Text(Ch17_RadnitzIntrigue)
+Text(Ch17_KorovaiIntrigue)
 FADI 15
 LOMA Chapter17Council
 DismountAll

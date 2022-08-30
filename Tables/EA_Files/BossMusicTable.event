@@ -33,6 +33,9 @@ BossBGMEntry(Cidor, UnfinishedBattleGodSyndrome)
 BossBGMEntry(Aurora, KingOfDragons_IntoTheCastleID)
 // ch 12
 BossBGMEntry(Eitha, Sheep_Will_Sleep)
+//ch 12x
+BossBGMEntry(Epony, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(Korovai,UnfinishedBattleGodSyndrome)
 // ch 13
 BossBGMEntry(Veniamin, awaywithyou)
 BossBGMEntry(Corundum, awaywithyou)

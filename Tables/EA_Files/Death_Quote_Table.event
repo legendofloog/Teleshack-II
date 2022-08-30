@@ -24,6 +24,9 @@ DeathQuote(Elias,Chapter10,0,Ch10EliasDeathQuote)
 DeathQuote(Mifan,Chapter10,0,Ch10MifanDeathQuote)
 DeathQuote(Hernandez,Chapter10,0,Ch10HernandezDeathQuote)
 DeathQuote(Aurora,Chapter11,0x2,AuroraDeathQuote)
+DeathQuote(Pelecaye,Chapter11,0,Ch12xPelecayeDeathQuote)
+DeathQuote(Epony,Chapter11,0,Ch12xEponyDeathQuote)
+DeathQuote(Korovai,Chapter11,0,Ch12xKorovaiEndingScene10KorovaiDeathQuote)
 DeathQuote(SisterSelese,Chapter11,0xD,0x0)
 DeathQuote(Eitha, Chapter12, 2, EithaDeathQuote)
 DeathQuote(Veniamin, Chapter13, 2, VeniaminDeathQuote)
@@ -123,7 +126,7 @@ DeathQuote(Meldan,AllChapters,0x0,MeldanDeathQuote)
 // ch 10
 DeathQuote(Valse,AllChapters,0x0,ValseDeathQuote)
 DeathQuote(Hornet,AllChapters,0x0,HornetDeathQuote)
-DeathQuote(Radnitz,AllChapters,0x65,RadnitzDeathQuote)
+DeathQuote(Korovai,AllChapters,0x65,KorovaiDeathQuote)
 
 // ch 11
 DeathQuote(Milo,AllChapters,0x0,MiloDeathQuote)

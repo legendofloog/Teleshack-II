@@ -355,7 +355,7 @@ BEQ 0x314 0x0 0xC
 CHECK_ALIVE Hans
 BEQ 0x314 0x0 0xC
 MUSC FF5_Sealed_Away
-Text(Ch14_RadnitzSquad)
+Text(Ch14_KorovaiSquad)
 LABEL 0x314
 SetBackground(0x30)
 MUSC 0x47

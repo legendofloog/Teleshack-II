@@ -455,7 +455,6 @@ CamOn
 LOAD1 1 Tao_FakeGroup
 ENUN 
 CameraCursor(Tao_Fake)
-MUSC PMD_MystifyingForestID
 Text(Ch12xBeginningScene3)
 MOVE 15 Loewe [9,19]
 MOVE 10 Tao_Fake [9,22]
@@ -549,21 +548,292 @@ NoFade
 ENDA
 
 EndingScene:
+ENUT 0x84 //removes boss icons/talk icons etc
+FadeOutMusic
 SHOWUNIT Cleo
-SetBackground(CastleHallway)
+FADI 10
+RemoveAll
+LOAD1 1 AfterSelectionGroup
+ENUN
+CAMERA_CENTERED Loewe
+FADU 10
+CameraCursor(Loewe)
+MUSC ToV_TragicDecisionID
 Text(Ch12xTrajanLoeweEndingScene1)
+CamOn
+MOVE 15 Loewe [7,17]
+ENUN
+FlashCursor(Loewe,60)
+CamOff
 Text(Ch12xTrajanLoeweEndingScene2)
-Text(Ch12xRadnitzEndingScene1)
-Text(Ch12xRadnitzEndingScene2)
-Text(Ch12xRadnitzEndingScene3)
-Text(Ch12xRadnitzEndingScene4)
-Text(Ch12xRadnitzEndingScene5)
-Text(Ch12xRadnitzEndingScene6)
-Text(Ch12xRadnitzEndingScene8BuldakAlive)
-Text(Ch12xRadnitzEndingScene9)
-Text(Ch12xRadnitzEndingScene10)
-Text(Ch12xRadnitzEndingScene11)
-Text(Ch12xRadnitzEndingScene12)
+STAL 20
+MOVE 15 Loewe [7,19]
+ENUN
+HIDEUNIT Loewe
+STAL 20
+FadeOutMusic
+FADI 5
+SHOWUNIT Loewe
+RemoveAll
+LOMA Chapter12xPass
+ENUN
+FADU 5
+BROWNBOXTEXT Ch12xRaioPass[8,8]
+CAMERA_CENTERED [12,9]
+CamOn
+CHECK_EVENTID 15 //if returns 1 = pelecaye recruited
+BEQ 7760 s0 sC //if not set, pelecaye is DEAD
+	LOAD1 1 KorovaiEponyGroupPelecaye
+	ENUN
+	GOTO 7761
+LABEL 7760
+LOAD1 1 KorovaiEponyGroupNoPelecaye
+ENUN
+LABEL 7761
+CamOff
+CAMERA_CENTERED Korovai
+FlashCursor(Korovai,60)
+FlashCursor(Epony,60)
+MUSC KwameID
+Text(Ch12xKorovaiEndingScene1)
+CAMERA_CENTERED [2,2]
+STAL 30
+CamOn
+LOAD1 1 EndingSceneCleo1
+ENUN
+STAL 10
+CameraCursor(Cleo)
+Text(Ch12xKorovaiEndingScene2)
+STAL 10
+MOVE 15 Cleo [2,2]
+MOVE 15 Korovai [2,3]
+MOVE 15 Epony [2,4]
+STAL 10
+FADI 10
+ENUN
+RemoveAll
+LOMA Chapter11
+CAMERA_CENTERED [16,27]
+FADU 10
+STAL 10
+BROWNBOXTEXT Ch12xTenetCavesText[8,8]
+STAL 10
+CHECK_EVENTID 15 //if returns 1 = pelecaye recruited
+BEQ 7762 s0 sC //if not set, pelecaye is DEAD
+	LOAD1 1 CavesGroupPelecaye
+	ENUN
+	GOTO 7763
+LABEL 7762
+LOAD1 1 CavesGroupNoPelecaye
+ENUN
+LABEL 7763
+STAL 30
+LOAD1 1 CavesGroupArmors
+ENUN
+STAL 30
+CAMERA_CENTERED Cleo
+STAL 30
+FlashCursor(Epony,30)
+Text(Ch12xKorovaiEndingScene4)
+MUSC FF_MysticQuest_FocusTowerID
+LOAD1 1 Ch12xAmbushGroup1
+ENUN
+CAMERA_CENTERED Liberator1
+StartBattle
+	CriticalHit(0,30)
+EndAttack
+FIGHT_MAP Liberator1 Freyse2 LongArch False
+ENUN
+CAMERA_CENTERED Liberator2
+StartBattle
+	CriticalHit(0,30)
+EndAttack
+FIGHT_MAP Liberator2 Freyse3 LongArch False
+ENUN
+CAMERA_CENTERED Liberator3
+StartBattle
+	CriticalHit(0,30)
+EndAttack
+FIGHT_MAP Liberator3 Freyse4 LongArch False
+ENUN
+STAL 30
+MOVE 15 Liberator4 [12,16]
+ENUN
+CHECK_EVENTID 15 //if returns 1 = pelecaye recruited
+BEQ 7764 s0 sC //if not set, pelecaye is DEAD
+	StartBattle
+		NormalDamage(0,12)
+		NormalDamage(1,15)
+		MissedAttack(1,15)
+		CriticalHit(0,30)
+	EndAttack
+	FIGHT Liberator4 Pelecaye SilverBow False
+	KILL Pelecaye
+	AWAIT_KILL Pelecaye
+	ENUN
+	GOTO 7765
+LABEL 7764
+StartBattle
+	NormalDamage(0,12)
+	NormalDamage(1,15)
+	MissedAttack(1,15)
+	CriticalHit(0,30)
+EndAttack
+FIGHT_MAP Liberator4 Freyse SilverBow False
+ENUN
+LABEL 7765
+CAMERA_CENTERED Cleo
+STAL 30
+FlashCursor(Korovai,30)
+CUSE Korovai
+STAL 30
+FlashCursor(Epony,30)
+CUSE Epony
+STAL 30
+Text(Ch12xKorovaiEndingScene5)
+STAL 10
+MOVE 20 Epony [13,16]
+ENUN
+MOVE 20 Korovai [11,16]
+ENUN
+StartBattle
+	NormalDamage(0,10)
+EndAttack
+FIGHT_MAP Epony Liberator4 ShortSword False
+ENUN
+StartBattle
+	CriticalHit(0,20)
+EndAttack
+FIGHT_MAP Korovai Liberator4 SilverLance False
+ENUN
+Text(Ch12xKorovaiEndingScene5_5)
+MOVE 25 Cleo [13,15]
+ENUN
+StartBattle
+	NormalDamage(0,15)
+	MissedAttack(1,10)
+	MissedAttack(0,15)
+	MissedAttack(1,10)
+EndAttack
+FIGHT Cleo Epony IronAxe False
+ENUN
+Text(Ch12xKorovaiEndingScene6)
+StartBattle
+	NormalDamage(0,15)
+EndAttack
+FIGHT Cleo Epony IronAxe False
+ENUN
+KILL Epony
+AWAIT_KILL Epony
+STAL 30
+FlashCursor(Korovai,30)
+Text(Ch12xKorovaiEndingScene9)
+MOVE 20 Korovai [13,16]
+ENUN
+StartBattle
+	NormalDamage(0,20)
+	NormalDamage(1,17)
+	MissedAttack(0,20)
+	NormalDamage(1,17)
+EndAttack
+FIGHT Korovai Cleo SilverLance False
+ENUN
+KILL Korovai
+AWAIT_KILL Korovai
+FadeOutMusic
+STAL 30
+LOAD1 1 KwameGroup
+ENUN
+MOVE 15 Cleo [12,13]
+ENUN
+CAMERA_CENTERED Kwame
+FlashCursor(Kwame,30)
+MUSC FF_MysticQuest_IceDungeonID
+CheckUnitDeadOrJailed(Iberis)
+BNE 1776 s0 sC //if she's not alive, branch
+	Text(Ch12xKorovaiEndingScene11IberisAlive)
+	GOTO 1777
+LABEL 1776
+Text(Ch12xKorovaiEndingScene11IberisDead)
+LABEL 1777
+CamOff
+MOVE 15 Kwame [11,3]
+ENUN
+CamOn
+MOVE 5 Cleo [14,10]
+ENUN
+CamOff
+STAL 30
+FlashCursor(Cleo,60)
+Text(Ch12xKorovaiEndingScene12)
+FADI 5
+CUSN Liberator1
+REMOVEUNIT Liberator1
+ENUN
+CUSN Liberator2
+REMOVEUNIT Liberator2
+ENUN
+CUSN Liberator3
+REMOVEUNIT Liberator3
+ENUN
 MNC2 Chapter13
 NoFade
 ENDA
+
+AfterSelectionGroup:
+UNIT Trajan Hero Loewe Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [7,3] 0x0 0x0 0x0 0x1 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT
+
+KorovaiEponyGroupPelecaye:
+UNIT Korovai DukeKnight Epony Level(1,NPC,False) [12,9] 0x0 0x0 1 REDA8R7 [SilverLance]     NoAI
+UNIT Epony Noble_F 0x0 Level(1,NPC,False) [11,9] 0x0 0x0 1 REDA8R8 [ShortSword]     NoAI
+UNIT Freyse2 BowArmor 0x0 Level(10,NPC,True) [10,9] 0x0 0x0 1 REDA9R6 [Greatbow]     NoAI
+UNIT Pelecaye General 0x0 Level(1,NPC,False) [11,9] 0x0 0x0 1 REDA10R7 [MasterAxe]     NoAI
+UNIT Freyse3 SwordArmor 0x0 Level(10,NPC,True) [12,9] 0x0 0x0 1 REDA9R7 [GreatSword]     NoAI
+UNIT Freyse4 LanceArmor 0x0 Level(10,NPC,True) [13,9] 0x0 0x0 1 REDA9R8 [Greatlance]     NoAI
+UNIT 
+
+KorovaiEponyGroupNoPelecaye:
+UNIT Korovai DukeKnight Epony Level(1,NPC,False) [12,9] 0x0 0x0 1 REDA8R7 [SilverLance]     NoAI
+UNIT Epony Noble_F 0x0 Level(1,NPC,False) [11,9] 0x0 0x0 1 REDA8R8 [ShortSword]     NoAI
+UNIT Freyse2 BowArmor 0x0 Level(10,NPC,True) [10,9] 0x0 0x0 1 REDA9R6 [Greatbow]     NoAI
+UNIT Freyse General 0x0 Level(1,NPC,True) [11,9] 0x0 0x0 1 REDA10R7 [MasterAxe]     NoAI
+UNIT Freyse3 SwordArmor 0x0 Level(10,NPC,True) [12,9] 0x0 0x0 1 REDA9R7 [GreatSword]     NoAI
+UNIT Freyse4 LanceArmor 0x0 Level(10,NPC,True) [13,9] 0x0 0x0 1 REDA9R8 [Greatlance]     NoAI
+UNIT 
+
+EndingSceneCleo1:
+UNIT Cleo Skyseeker 0x0 Level(1,Ally,False) [2,2] 0x0 0x0 1 REDA8R6 [Argilabrys]     NoAI
+UNIT 
+
+CavesGroupPelecaye:
+UNIT Cleo Skyseeker 0x0 Level(1,Ally,False) [13,27] 0x0 0x0 1 REDA12R10 [Argilabrys]     NoAI
+UNIT Korovai DukeKnight_Dismounted Epony Level(1,NPC,False) [14,27] 0x0 0x0 1 REDA11R13 [SilverLance]     NoAI
+UNIT Epony Noble_F 0x0 Level(10,NPC,False) [15,27] 0x0 0x0 1 REDA13R13 [ShortSword]     NoAI
+UNIT Pelecaye General 0x0 Level(1,NPC,False) [16,27] 0x0 0x0 1 REDA12R14 [MasterAxe]     NoAI
+UNIT
+
+CavesGroupArmors:
+UNIT Freyse2 BowArmor 0x0 Level(10,NPC,True) [17,27] 0x0 0x0 1 REDA11R15 [Greatbow]     NoAI
+UNIT Freyse3 SwordArmor 0x0 Level(10,NPC,True) [18,27] 0x0 0x0 1 REDA12R15 [GreatSword]     NoAI
+UNIT Freyse4 LanceArmor 0x0 Level(10,NPC,True) [19,27] 0x0 0x0 1 REDA13R15 [Greatlance]     NoAI
+UNIT
+
+CavesGroupNoPelecaye:
+UNIT Cleo Skyseeker 0x0 Level(1,Ally,False) [13,27] 0x0 0x0 1 REDA12R10 [Argilabrys]     NoAI
+UNIT Korovai DukeKnight_Dismounted Epony Level(1,NPC,False) [14,27] 0x0 0x0 1 REDA11R13 [SilverLance]     NoAI
+UNIT Epony Noble_F 0x0 Level(10,NPC,False) [15,27] 0x0 0x0 1 REDA13R13 [ShortSword]     NoAI
+UNIT Freyse General 0x0 Level(1,NPC,False) [16,27] 0x0 0x0 1 REDA12R14 [MasterAxe]     NoAI
+UNIT
+
+Ch12xAmbushGroup1:
+UNIT Liberator1 Ballistician Cleo Level(10,Ally,True) [13,7] 0x0 0x0 0x0 0x0 [LongArch] NoAI
+UNIT Liberator2 Ballistician Cleo Level(10,Ally,True) [8,15] 0x0 0x0 0x0 0x0 [LongArch] NoAI
+UNIT Liberator3 Ballistician Cleo Level(10,Ally,True) [15,20] 0x0 0x0 0x0 0x0 [LongArch] NoAI
+UNIT Liberator4 Sniper Cleo Level(1, Ally, True) [9,19] 0x0 0x0 0 0 [SilverBow] NoAI
+UNIT 
+
+KwameGroup:
+UNIT Kwame Civilian_2 Cleo Level(10,NPC,True) [14,10] 0x0 0x0 1 REDA12R12 [LongArch] NoAI
+UNIT 

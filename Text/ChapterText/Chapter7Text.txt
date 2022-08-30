@@ -3,14 +3,14 @@ Ch7: Crimson Harvest[X]
 
 ## Chapter7Obj
 Seize throne and talk[N]
-to Radnitz with lords.[X]
+to Korovai with lords.[X]
 
 ## Chapter7MapObj
 Seize + Talk[X]
 
-## RadnitzMifanText
+## KorovaiMifanText
 [MidRight][LoadMifan]
-[MidLeft][LoadRadnitz]
+[MidLeft][LoadKorovai]
 [MidLeft]
 I will ask you one more time.[N]
 We need those supplies.[A]
@@ -40,15 +40,15 @@ Men! Forward! Crush these[N]
 scum before Freyse's might![A][X]
 
 
-## RadnitzEponyText
+## KorovaiEponyText
 [MidRight][LoadEpony]
-[MidLeft][LoadRadnitz]
+[MidLeft][LoadKorovai]
 [MidLeft][ThreeLineBox]
 Oof! Putting my life on the[N]
 line for a few bags of rice?[N]
 Nothing has changed.[A]
 [MidRight][TwoLineBox]
-Lord Radnitz, you must fall back![N]
+Lord Korovai, you must fall back![N]
 You can't risk your life like this.[A]
 [MidLeft]
 I can defeat him![N]
@@ -102,7 +102,7 @@ their supplies would be an easy[N]
 task for you.[A]
 [FarRight][TwoLineBox]
 And you want us to do all this, just[N]
-for an audience with Lord Radnitz?[A]
+for an audience with Lord Korovai?[A]
 [MidLeft]
 We must be sure that you are[N]
 worthy of assisting his lordship.[A]
@@ -189,7 +189,7 @@ Jackal Gang doesn't give up it's own.[A][X]
 ## EndEvent1Text
 [Right][LoadLoewe]
 [FarRight][LoadCleo]
-[Left][LoadRadnitz]
+[Left][LoadKorovai]
 [FarLeft][LoadEpony]
 [FarLeft][OneLineBox]
 You've done well. [A]
@@ -284,7 +284,7 @@ course of action doesn't change.[AN]
 A victory in Freyse may be the[N]
 turning point we need.[A]
 [MidLeft]
-This Radnitz fellow doesn't[N]
+This Korovai fellow doesn't[N]
 seem like an easy ally to make.[A]
 [MidRight]
 It's what we've got. Being an ass[N]
@@ -339,12 +339,12 @@ crime will not go unanswered.[A][X]
 
 ## AxelTalkCh7Text
 [MidRight][LoadAxel]
-[MidLeft][LoadRadnitz]
+[MidLeft][LoadKorovai]
 [MidRight][OneLineBox]
-Xale? Is that you?[A]
+Kjell? Is that you?[A]
 [MidLeft][TwoLineBox]
-Xale? You're speaking to Lord[N]
-Radnitz, heir to House of Freyse![A]
+Kjell? You're speaking to Lord[N]
+Korovai, heir to House Freyse![A]
 [MidRight][OneLineBox]
 No, that's definitely you! Surely-[A]
 [MidLeft][TwoLineBox]
@@ -357,7 +357,7 @@ You are forgiven. I can tell[N]
 that you're a fine warrior,[N]
 so this should serve you well.[A]
 [MidRight][OneLineBox]
-Xa- Milord-[A]
+Kje- Milord-[A]
 [MidLeft][TwoLineBox]
 I have more important matters[N]
 to attend to. [A]
@@ -369,7 +369,7 @@ forgotten us, good man.[A][X]
 
 ## AlexTalkCh7Text
 [MidRight][LoadAlex]
-[MidLeft][LoadRadnitz]
+[MidLeft][LoadKorovai]
 [MidRight][OneLineBox]
 When the birds sings thrice,[A]
 [MidLeft]
@@ -402,16 +402,16 @@ Looking out for an old pal, huh?[A][X]
 
 
 
-## RadnitzTalkCh7Text
-[Left][LoadRadnitz]
+## KorovaiTalkCh7Text
+[Left][LoadKorovai]
 [Right][LoadActive]
 [Left]
 Have you seized their[N]
 safehouse yet? Get that done.[A][X]
 
-## RadnitzEndCh7Text
+## KorovaiEndCh7Text
 [Right][LoadActive]
-[Left][LoadRadnitz]
+[Left][LoadKorovai]
 So you liberators live up to your[N]
 reputation after all. Let's talk.[A][X]
 
@@ -458,31 +458,31 @@ Rice supplies secured.[A][X]
 ## InfoText
 You have two objectives.[N]
 Using Cleo and Loewe, you must:[N]
-1) Talk to Radnitz[N]
+1) Talk to Korovai[N]
 2) Seize throne[N]
 Both Lords are able to do either task.[A][X]
 
 ## Rice0Ch7Text
-[Left][LoadRadnitz]
+[Left][LoadKorovai]
 [Left]
 You got none of the supplies?[N]
 Disappointing, but as expected.[A][X]
 
 ## Rice1Ch7Text
-[Left][LoadRadnitz]
+[Left][LoadKorovai]
 [Left]
 Did you bunch loot a shack or a supply depot?[N]
 I could probably finish all this myself.[A][X]
 
 ## Rice2Ch7Text
-[Left][LoadRadnitz]
+[Left][LoadKorovai]
 [Left]
 This is all the rice you secured? Wow,[N]
 what an incredible accomplishment![AN]
 For an army half your size, maybe.[A][X]
 
 ## Rice3Ch7Text
-[Left][LoadRadnitz]
+[Left][LoadKorovai]
 [Left]
 Are you expecting some kind of[N]
 praise of doing the bare minimum?[AN]

@@ -43,8 +43,8 @@ Cidor. Let's finish this.[A][X]
 [MidLeft][LoadCidor]
 Byelen forgive me[CloseEyes][Beat][A][X]
 
-##Ch10CidorRadnitzBossQuote
-[MidRight][LoadRadnitz]
+##Ch10CidorKorovaiBossQuote
+[MidRight][LoadKorovai]
 For the liberation of Freyse,[N]
 I will cut you down, tyrant![A][X]
 
@@ -77,7 +77,7 @@ to keep my word.[A][X]
 
 ##Ch10MifanValseBossQuote
 [MidRight][LoadValse]
-Mi, just hear Radnitz out.[N]
+Mi, just hear Korovai out.[N]
 He ain't such a bad guy![A]
 [ClearFace]
 [MidLeft][LoadMifan]
@@ -97,13 +97,13 @@ Mi[Beat] I'm so sorry[Beat][A][X]
 Even you've betrayed us[Beat][N]
 Then I'll just kill you too![A][X]
 
-##Ch10MifanRadnitzBossQuote
+##Ch10MifanKorovaiBossQuote
 [MidLeft][LoadMifan]
 I've been waiting for this.[N]
 [CloseEyes]At last, I'll have my revenge[Beat][A][X]
 
 ##Ch10Start1
-[FarLeft][LoadEpony][Left][LoadRadnitz][Right][LoadCleo][FarRight][LoadLoewe]
+[FarLeft][LoadEpony][Left][LoadKorovai][Right][LoadCleo][FarRight][LoadLoewe]
 [Left][OneLineBox]
 How bad's it look?[A]
 [FarRight][ThreeLineBox]
@@ -135,7 +135,7 @@ I'll take to the battlefield myself.[N]
 Should I encounter any of my people,[N]
 I'll try my best to talk them down.[A]
 [FarLeft][ThreeLineBox]
-Load Radnitz, you must reconsider![N]
+Load Korovai, you must reconsider![N]
 If you fall, our liberation movement[N]
 is finished.[AN]
 Without the heir to Freyse, we'll have[N]
@@ -149,7 +149,7 @@ I cannot back down from this fight.[A]
 ##Ch10Start2
 [Right][LoadCidor][ThreeLineBox]
 Citizens of Freyse, the so-called [0x93]Lord[N]
-Radnitz" robs you, razes your towns,[N]
+Korovai" robs you, razes your towns,[N]
 and kills your friends and families![AN]
 Will you take this lying down, or will[N]
 you join me in driving out this tyrant?[A]
@@ -182,7 +182,7 @@ we're trading one tyrant for another.[AN]
 You've been awfully quiet, Hornet.[N]
 What do you think about all this?[A]
 [FarLeft][ThreeLineBox]
-Radnitz... I'll look into his eyes,[N]
+Korovai... I'll look into his eyes,[N]
 and if I don't like what I see, I'll[N]
 put an arrow between them.[A]
 [Left][TwoLineBox]
@@ -220,10 +220,10 @@ buy you a drink and we'll be square.[A]
 Unbelievable...[A]
 [X]
 
-##Ch10RadnitzValseTalk
-[MidLeft][LoadRadnitz][MidRight][LoadValse]
+##Ch10KorovaiValseTalk
+[MidLeft][LoadKorovai][MidRight][LoadValse]
 [MidLeft][ThreeLineBox]
-I am Radnitz, heir to Freyse. I have no wish[N]
+I am Korovai, heir to Freyse. I have no wish[N]
 to fight against my people. Please, don't[N]
 waste your life here. Lay down your weapon,[AN]
 and I can guarantee your safety.[A]
@@ -244,8 +244,8 @@ stick around and hold you to your words.[N]
 I was never too fond of Cidor anyway.[A]
 [X]
 
-##Ch10RadnitzHornetTalk
-[MidLeft][LoadRadnitz][MidRight][LoadHornet]
+##Ch10KorovaiHornetTalk
+[MidLeft][LoadKorovai][MidRight][LoadHornet]
 [MidRight][OneLineBox]
 [Beat] Any last words?[A]
 [MidLeft][ThreeLineBox]
@@ -265,7 +265,7 @@ you don't disappoint me.[A]
 [MidLeft][LoadValse][MidRight][LoadHornet]
 [MidLeft]
 Hey, Hornet, I really think you should[N]
-hear out this Radnitz fella. He doesn't[N]
+hear out this Korovai fella. He doesn't[N]
 seem like such a bad guy.[A]
 [MidRight]
 Alright[Beat][A]
@@ -349,7 +349,7 @@ just have to finish this myself.[A]
 [X]
 
 ##Ch10End1
-[Left][LoadCidor][Right][LoadRadnitz][FarRight][LoadLoewe]
+[Left][LoadCidor][Right][LoadKorovai][FarRight][LoadLoewe]
 [Left][OneLineBox]
 Gah[Beat][A]
 [Right][TwoLineBox]
@@ -447,7 +447,7 @@ continued safety.[A]
 [X]
 
 ##Ch10End1_v2
-[Left][LoadCidor][Right][LoadRadnitz][FarRight][LoadLoewe]
+[Left][LoadCidor][Right][LoadKorovai][FarRight][LoadLoewe]
 [Left][OneLineBox]
 Gah[Beat][A]
 [Right][TwoLineBox]
@@ -547,7 +547,7 @@ continued safety.[A]
 [X]
 
 ##Ch10End2
-[FarLeft][LoadEpony][Left][LoadRadnitz][Right][LoadCleo][FarRight][LoadLoewe]
+[FarLeft][LoadEpony][Left][LoadKorovai][Right][LoadCleo][FarRight][LoadLoewe]
 [FarRight][OneLineBox]
 Dragana[Beat] We were so close.[A]
 [Right][TwoLineBox]
