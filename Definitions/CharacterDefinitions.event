@@ -91,7 +91,7 @@
 #define Riggan 0x57
 // Chapter 7 Boss
 #define Yor 0x83
-#define Radnitz 0x84
+#define Korovai 0x84
 #define Mifan 0x85
 #define Wellworth 0x86
 #define Epony 0x87
@@ -159,6 +159,14 @@
 
 //Chapter 12x stuff
 #define Tao_Fake 0x4F
+#define Freyse2 0x50
+#define Freyse3 0x51
+#define Freyse4 0x52
+#define Liberator1 0xc2
+#define Liberator2 0xc3
+#define Liberator3 0xc4
+#define Liberator4 0xc5
+#define Liberator5 0xc6
 
 //Chapter 13 stuff
 #define Corundum 0x9B

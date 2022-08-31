@@ -65,6 +65,7 @@ STAL 90
 ASMC 0xC4879 //Roll Credits - CGs are borked when I try to use it normally?
 STAL 90
 MNC2 PostgameHub
+//MNTS 0x0
 NoFade
 ENDA
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="20" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="FF2 Town 2.0 Tileset - OG" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="FF2 Town 2.0 Tileset - OG.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="20" height="10">
+  <properties>
+   <property name="ChapterID" value="Chapter12xPass"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Chapter12xPassMapChanges"/>
+   <property name="MapID" value="Chapter12xPassMap"/>
+   <property name="ObjectType" value="FF2TownObjectID"/>
+   <property name="PaletteID" value="FF2TownPaletteID"/>
+   <property name="TileConfig" value="FF2TownConfigID"/>
+  </properties>
+  <data encoding="csv">
+721,385,423,430,498,131,67,870,234,870,99,385,419,430,498,99,721,131,629,598,
+385,525,455,430,430,498,804,933,805,933,806,496,457,430,430,498,100,163,68,601,
+560,716,161,491,430,593,836,837,837,837,838,496,620,521,427,430,498,68,685,565,
+99,203,204,496,427,498,163,163,397,163,163,496,588,621,459,430,497,132,68,629,
+721,235,236,496,522,593,721,163,361,131,721,560,525,588,491,430,430,498,817,882,
+68,100,131,560,559,163,163,163,132,131,100,100,560,525,588,547,518,427,498,722,
+100,99,163,131,99,132,203,273,131,132,131,132,131,560,525,588,621,522,430,498,
+67,721,99,132,131,131,235,233,274,200,99,68,131,99,560,716,588,424,430,593,
+783,99,721,67,163,132,99,235,305,233,202,273,268,163,68,100,496,522,497,721,
+787,818,164,131,99,68,99,67,68,235,305,295,238,131,163,131,496,522,529,722
+</data>
+ </layer>
+</map>

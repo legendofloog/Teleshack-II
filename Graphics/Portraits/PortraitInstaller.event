@@ -113,7 +113,7 @@
 #define DrakenMug 0x50
 #define EponyMug 0x1F
 #define WellworthMug 0x27
-#define RadnitzMug 0x12
+#define KorovaiMug 0x12
 #define MifanMug 0x03
 #define TheGiantMug 0x41
 #define YorMug 0x28
@@ -595,12 +595,12 @@ MifanMugData:
 setMugEntry(MifanMug, MifanMugData, 3, 6, 3, 4)
 
 ALIGN 16
-RadnitzMugData:
-#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_mug.dmp"
-#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_frames.dmp"
-#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_palette.dmp"
-#incbin "Dmp/Radnitz(Wasspix2,Shark3134)_minimug.dmp"
-setMugEntry(RadnitzMug, RadnitzMugData, 3, 5, 3, 3)
+KorovaiMugData:
+#incbin "Dmp/Korovai(Wasspix2,Shark3134)_mug.dmp"
+#incbin "Dmp/Korovai(Wasspix2,Shark3134)_frames.dmp"
+#incbin "Dmp/Korovai(Wasspix2,Shark3134)_palette.dmp"
+#incbin "Dmp/Korovai(Wasspix2,Shark3134)_minimug.dmp"
+setMugEntry(KorovaiMug, KorovaiMugData, 3, 5, 3, 3)
 
 ALIGN 16
 TheGiantMugData:

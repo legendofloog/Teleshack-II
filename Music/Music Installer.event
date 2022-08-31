@@ -167,3 +167,5 @@ SongTable(PMD_PowerOfDarknessID,PMD_Explorers_PoD,MapMusicGroup)
 SongTable(PMD_MystifyingForestID,PMD_MF,MapMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Ice Dungeon {RandomWizard}.event"
 SongTable(FF_MysticQuest_IceDungeonID,FF_MQ_ID,MapMusicGroup)
+#include "MusicEvents/FF Mystic Quest - Focus Tower {RandomWizard}.event"
+SongTable(FF_MysticQuest_FocusTowerID,FF_MQ_FT,MapMusicGroup)

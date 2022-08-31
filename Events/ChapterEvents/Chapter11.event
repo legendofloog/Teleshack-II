@@ -157,8 +157,8 @@ MUSC FF6AwakeningID
 Text(Ch11Start_News)
 SetBackground(0x1F)
 MUSC KnightsPride
-Text(Ch11Start_Radnitz)
-Text(Ch11Start_RadnitzEpony)
+Text(Ch11Start_Korovai)
+Text(Ch11Start_KorovaiEpony)
 SetBackground(0x2A)
 MUSC PMDSteamCaveID
 Text(Ch11Start_MiloCaveChat)

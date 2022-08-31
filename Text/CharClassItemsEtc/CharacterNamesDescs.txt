@@ -345,10 +345,10 @@ Yor[X]
 A drunkard and a menace, but was[N]
 a vicious soldier in his prime.[X]
 
-## RadnitzName
-Radnitz[X]
+## KorovaiName
+Korovai[X]
 
-## RadnitzDesc
+## KorovaiDesc
 The heir of House Freyse, leading[N]
 a rebellion against Cythean rule.[X]
 
@@ -377,7 +377,7 @@ become a legendary swordsmaster.[X]
 Epony[X]
 
 ## EponyDesc
-The tactician to Lord Radnitz and the[N]
+The tactician to Lord Korovai and the[N]
 Freyse resistance, runs the show.[X]
 
 ## IberisName
@@ -398,7 +398,7 @@ a big dream and a big heart.[X]
 Nora[X]
 
 ## NoraDesc
-A retainer to Lord Radnitz[N]
+A retainer to Lord Korovai[N]
 of Freyse. Extremely loyal.[X]
 
 ## HansName
@@ -490,13 +490,15 @@ Vermillion Knight. Cleo's older brother.[X]
 Milo[X]
 
 ## MiloDesc
-PlaceholderText[X]
+A soldier in House Freyse's army.[N]
+Has a penchant for poor jokes.[X]
 
 ## IchwepName
 Ichwep[X]
 
 ## IchwepDesc
-PlaceHolderText[X]
+A soldier in House Freyse's army.[N]
+Dutiful and capable, but humorless.[X]
 
 ## AuroraName
 Aurora[X]
@@ -1145,3 +1147,6 @@ Asha[X]
 A member of the Sacred Arrow Rebels,[N]
 under the command of the Liberators.[N]
 Has a love for treasure and adventure.[X]
+
+## LiberatorName
+Liberator[X]

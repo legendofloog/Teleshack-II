@@ -17,6 +17,7 @@
 [.6] = [......]
 [.7] = [.......]
 [Beat] = [ToggleMouthMove]...[.4][ToggleMouthMove]
+[LongBeat] = [ToggleMouthMove].[.4].[.4].[.5][ToggleMouthMove]
 [Event] = [LoadOverworldFaces]
 [OpenQuote] = [0x93]
 
@@ -129,7 +130,7 @@
 [LoadAsha] = [LoadFace][0xA4][0x1]
 
 [LoadLeonidas] = [LoadFace][0x1D][0x1]
-[LoadRadnitz] = [LoadFace][0x12][0x1]
+[LoadKorovai] = [LoadFace][0x12][0x1]
 [LoadEpony] = [LoadFace][0x1F][0x1]
 [LoadMifan] = [LoadFace][0x3][0x1]
 
