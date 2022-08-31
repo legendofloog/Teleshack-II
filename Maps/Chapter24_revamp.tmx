@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="27" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="27" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
  <tileset firstgid="1" name="8800898A" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="8800898A.png" trans="ffffff" width="512" height="512"/>
  </tileset>
@@ -134,11 +134,11 @@
    <tile gid="2"/>
    <tile gid="645"/>
    <tile gid="341"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="298"/>
    <tile gid="264"/>
    <tile gid="264"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="266"/>
    <tile gid="645"/>
    <tile gid="2"/>
@@ -190,7 +190,7 @@
    <tile gid="341"/>
    <tile gid="264"/>
    <tile gid="264"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="298"/>
    <tile gid="264"/>
    <tile gid="265"/>
@@ -697,7 +697,7 @@
    <tile gid="367"/>
    <tile gid="645"/>
    <tile gid="341"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="298"/>
    <tile gid="264"/>
    <tile gid="264"/>
@@ -709,7 +709,7 @@
    <tile gid="264"/>
    <tile gid="264"/>
    <tile gid="264"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="266"/>
    <tile gid="645"/>
    <tile gid="335"/>
@@ -778,7 +778,7 @@
    <tile gid="367"/>
    <tile gid="197"/>
    <tile gid="341"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="298"/>
    <tile gid="264"/>
    <tile gid="264"/>
@@ -790,7 +790,7 @@
    <tile gid="264"/>
    <tile gid="264"/>
    <tile gid="264"/>
-   <tile gid="174"/>
+   <tile gid="18"/>
    <tile gid="266"/>
    <tile gid="197"/>
    <tile gid="335"/>

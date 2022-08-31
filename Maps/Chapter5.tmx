@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="34" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="34" height="35" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
  <properties>
   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
   <property name="ChapterID" value="Chapter5"/>
@@ -7,7 +7,7 @@
   <property name="MapChangesID" value="Chapter5MapChanges"/>
   <property name="MapID" value="Chapter5Map"/>
   <property name="ObjectType" value="FlasubanVillageObjectID"/>
-  <property name="PaletteID" value="FlasubanVillageSteamlPaletteID"/>
+  <property name="PaletteID" value="FlasubanVillageSteamPaletteID"/>
   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
  </properties>
  <tileset firstgid="1" name="0E007210" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
@@ -21,7 +21,7 @@
    <property name="MapChangesID" value="Chapter5MapChanges"/>
    <property name="MapID" value="Chapter5Map"/>
    <property name="ObjectType" value="FlasubanVillageObjectID"/>
-   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="PaletteID" value="FlasubanVillageSteamPaletteID"/>
    <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
   </properties>
   <data>
