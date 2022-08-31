@@ -27,6 +27,10 @@
     ALIGN 4
     FlasubanVillageSunsetPalette:
     #incbin "Palette/village_v2_actual_pal.dmp"
+
+    ALIGN 4
+    FlasubanVillageSteamPalette:
+    #incbin "Palette/FlasubanSteam_pal.dmp"
 //Flasuban Village For Snow
 
     ALIGN 4
@@ -137,3 +141,4 @@
     EventPointerTable(EndgameObjectID,EndgameObject)
     EventPointerTable(EndgamePaletteID,EndgamePalette)
     EventPointerTable(EndgameConfigID,EndgameConfig)
+    EventPointerTable(FlasubanVillageSteamPaletteID,FlasubanVillageSteamPalette)

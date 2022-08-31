@@ -319,3 +319,11 @@
 // IskraDismountedMageKnight
 	setPalette(79,IskraDismountedMageKnight)
 	setCBSP(79,Iskra,2,MageKnight_F_Dismounted)
+
+// TaraMerc
+	setPalette(80,TaraMerc)
+	setCBSP(80,Tara, 1, Swordfighter_F)
+
+// VolranMage
+	setPalette(81,VolranMage)
+	setCBSP(81,Volran, 1, Mage)

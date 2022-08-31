@@ -335,8 +335,8 @@
 }
 
 {
-    #include "Animations/High_Priest_Repal (MikeySeregon, EldritchAbomination)/Magic Installer.event"
-    #include "Animations/High_Priest_Repal (MikeySeregon, EldritchAbomination)/Unarmed Installer.event"
+    #include "Animations/High_Priest (FE6)/Magic Installer.event"
+    #include "Animations/High_Priest (FE6)/Unarmed Installer.event"
 }
 
 {

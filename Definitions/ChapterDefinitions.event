@@ -122,7 +122,7 @@
 #define Chapter17CouncilMap 0xB2
 #define Chapter17DuelMap 0xB6
 #define Chapter18xInterludeMap 0xB9
-#define Chapter3CutsceneMap 0xBC
+#define Chapter3CutsceneMap 0xc2
 #define Chapter12xDarknessMap 0xC7
 #define Chapter12xPassMap 0xd1
 
@@ -186,6 +186,7 @@
 #define EndgamePaletteID 0xc8
 #define ActualEndgamePaletteID 0xcb
 #define Chapter4VillagePaletteID 0xcc
+#define FlasubanVillageSteamPaletteID 0xd2
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
