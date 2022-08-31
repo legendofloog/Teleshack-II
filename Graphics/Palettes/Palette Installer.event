@@ -240,3 +240,9 @@ NgondalaBaron:
 IskraDismountedMageKnight:
 	#incbin "./_palettes/IskraDismountedMageKnight.lzpal" 
 
+TaraMerc:
+	#incbin "./_palettes/TaraMerc.lzpal" 
+
+VolranMage:
+	#incbin "./_palettes/VolranMage.lzpal" 
+

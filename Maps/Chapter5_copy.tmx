@@ -7,7 +7,7 @@
   <property name="MapChangesID" value="Chapter5MapChanges"/>
   <property name="MapID" value="Chapter5Map"/>
   <property name="ObjectType" value="FlasubanVillageObjectID"/>
-  <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+  <property name="PaletteID" value="FlasubanVillageSteamlPaletteID"/>
   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
  </properties>
  <tileset firstgid="1" name="0E007210" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
