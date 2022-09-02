@@ -18,7 +18,7 @@
 #define PMDSteamCaveID 0x15
 #define FF6AwakeningID 0x16
 #define FF4RedWingsID 0x17
-#define skytowerbeta 0x18
+#define RS1Battle 0x18
 #define ButterBuilding 0x19
 #define FFTAnxiety 0x1A
 #define BattleWithThimale 0x1B

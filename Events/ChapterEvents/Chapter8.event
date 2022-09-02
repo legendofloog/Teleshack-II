@@ -137,6 +137,9 @@ LoadReinforcements(TeamFrancis)
 FlashCursor(Francis,60)
 MUSC FF4RedWingsID
 Text(FrancisArrives)
+CAMERA Cleo
+FlashCursor(Cleo,60)
+Text(CleoReactsToFrancis)
 CamOff
 NoFade
 ENDA

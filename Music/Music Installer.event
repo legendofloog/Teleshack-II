@@ -63,8 +63,8 @@ SongTable(BattleWithThimale,Battle_With_Thimale,MapMusicGroup)
 SongTable(Sheep_Will_Sleep,SheepWillSleep,MapMusicGroup)
 #include "MusicEvents/CORE(Leche).event"
 SongTable(Core,CORE,MapMusicGroup)
-#include "MusicEvents/skytowerbeta.event"
-SongTable(skytowerbeta,song01,MapMusicGroup)
+#include "MusicEvents/RomancingSaGaBattle.event"
+SongTable(RS1Battle,song01,MapMusicGroup)
 #include "MusicEvents/Dynasty Warriors 3 - Oppression (pandan).event"
 SongTable(oppression,song0153,MapMusicGroup)
 #include "MusicEvents/FE5winning.event"
