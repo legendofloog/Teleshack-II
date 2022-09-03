@@ -327,3 +327,55 @@
 // VolranMage
 	setPalette(81,VolranMage)
 	setCBSP(81,Volran, 1, Mage)
+
+// TaoArcher
+	setPalette(82,TaoArcher)
+	setCBSP(82,Tao,1,Archer)
+
+// TaoSniper
+	setPalette(83,TaoSniper)
+	setCBSP(83,Tao,3,Sniper)
+
+// TaoFakeArcher
+	setPalette(84,TaoFakeArcher)
+	setCBSP(84,Tao_Fake,1,Archer)
+
+// AshaThief
+	setPalette(85,AshaThief)
+	setCBSP(85,Asha,1,Thief_F)
+
+// AshaThiefFighter
+	setPalette(86,AshaThiefFighter)
+	setCBSP(86,Asha,3,ThiefFighter_F)
+
+// IlseHighPriest
+	setPalette(87,IlseHighPriest)
+	setCBSP(87,Ilse,1,HighPriest_F)
+
+// SaifSwordmaster
+	setPalette(88,SaifSwordmaster)
+	setCBSP(88,Saif,1,Swordmaster)
+
+// KassandraFalco
+	setPalette(89,KassandraFalco)
+	setCBSP(89,Kassandra,1,PegasusKnight)
+
+// ViktorSage
+	setPalette(90,ViktorSage)
+	setCBSP(90,Viktor,1,Sage)
+
+// MarynDarkBishop
+	setPalette(91,MarynDarkBishop)
+	setCBSP(91,Maryn, 1, DarkBishop_F)
+
+// ArtemisGeneral
+	setPalette(92,ArtemisGeneral)
+	setCBSP(92,Artemis, 1, General)
+
+// MihailHalb
+	setPalette(93,MihailHalb)
+	setCBSP(93,Mihail, 1, Halberdier)
+
+// KassandraRealFalco
+	setPalette(94,KassandraRealFalco)
+	setCBSP(94,KassandraReal,1,PegasusKnight)

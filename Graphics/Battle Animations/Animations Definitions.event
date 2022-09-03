@@ -53,6 +53,12 @@
 #define BerserkerHandAxeAnim 0x24
 #define BerserkerUnarmedAnim 0x25
 
+#define SniperBowAnim 0x2a
+#define SniperUnarmedAnim 0x2b
+
+#define SniperFBowAnim 0x2c
+#define SniperFUnarmedAnim 0x2d
+
 #define FighterFAxeAnim 0x2E
 #define FighterFHandAxeAnim 0x2F
 #define FighterFUnarmedAnim 0x30
@@ -733,4 +739,16 @@ ALIGN 4
 AugurAnims:
 SpecialAnim(AugurDragonstoneAnim,Dragonstone)
 UnarmedAnim(AugurDragonstoneAnim)
+EndAnim
+
+ALIGN 4
+SniperAnims:
+BowAnim(SniperBowAnim)
+UnarmedAnim(SniperUnarmedAnim)
+EndAnim
+
+ALIGN 4
+SniperFAnims:
+BowAnim(SniperFBowAnim)
+UnarmedAnim(SniperFUnarmedAnim)
 EndAnim
