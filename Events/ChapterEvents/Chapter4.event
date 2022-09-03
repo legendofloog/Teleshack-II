@@ -131,8 +131,8 @@ UNIT Chapter1Generics Archer   0x0 Level(4,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [St
 UNIT
 
 Rein6:
-UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,1] 0x0 0x0 0x0 0x0 [IronAxe] StallOneTurnAI
-UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [2,0] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,1] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
+UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [2,0] 0x0 0x0 0x0 0x0 [Fire] ChargeAI
 UNIT
 
 CutscenePegasussy:

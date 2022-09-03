@@ -1,10 +1,10 @@
 ## SD_Culling
-Culling: If foe's HP is full, deals[N]
-25% of foe's max HP as extra damage.[X]
+Culling: If foe's HP is full, adds[N]
+25% of foe's max HP to unit's Atk.[X]
 
 ## SD_Headshot
-Headshot: If foe's HP is not full,[N]
-adds 50% of foe's missing HP to Atk.[X]
+Headshot: Adds 50% of foe's[N]
+missing HP to unit's Atk.[X]
 
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]
@@ -163,7 +163,7 @@ Whisperwind: Can canto after attacking[N]
 with wind magic. [X]
 
 ## SD_FarShock
-Far Shock: Thunder magic get's -10 hit[N]
+Far Shock: Thunder magic gets -10 hit[N]
 and +1 range. [X]
 
 ## SD_DragonBreath
