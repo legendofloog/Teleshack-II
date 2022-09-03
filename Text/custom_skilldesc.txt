@@ -3,8 +3,8 @@ Culling: If foe's HP is full, deals[N]
 25% of foe's max HP as extra damage.[X]
 
 ## SD_Headshot
-Headshot: If foe's HP is not full, deals[N]
-50% of foe's missing HP as extra damage.[X]
+Headshot: If foe's HP is not full,[N]
+adds 50% of foe's missing HP to Atk.[X]
 
 ## SD_Radiance
 Radiance: Leina empowers allies she heals.[N]

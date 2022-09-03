@@ -246,3 +246,42 @@ TaraMerc:
 VolranMage:
 	#incbin "./_palettes/VolranMage.lzpal" 
 
+TaoArcher:
+	#incbin "./_palettes/TaoArcher.lzpal" 
+
+TaoSniper:
+	#incbin "./_palettes/TaoSniper.lzpal" 
+
+TaoFakeArcher:
+	#incbin "./_palettes/TaoFakeArcher.lzpal" 
+
+AshaThief:
+	#incbin "./_palettes/AshaThief.lzpal" 
+
+AshaThiefFighter:
+	#incbin "./_palettes/AshaThiefFighter.lzpal" 
+
+IlseHighPriest:
+	#incbin "./_palettes/IlseHighPriest.lzpal" 
+
+SaifSwordmaster:
+	#incbin "./_palettes/SaifSwordmaster.lzpal" 
+
+KassandraFalco:
+	#incbin "./_palettes/KassandraFalco.lzpal" 
+
+ViktorSage:
+	#incbin "./_palettes/ViktorSage.lzpal" 
+
+MarynDarkBishop:
+	#incbin "./_palettes/MarynDarkBishop.lzpal" 
+
+ArtemisGeneral:
+	#incbin "./_palettes/ArtemisGeneral.lzpal" 
+
+MihailHalb:
+	#incbin "./_palettes/MihailHalb.lzpal" 
+
+KassandraRealFalco:
+	#incbin "./_palettes/KassandraRealFalco.lzpal" 
+

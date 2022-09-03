@@ -917,11 +917,11 @@ setMugEntry(IlseMug, IlseMugData, 3, 6, 3, 4)
 
 ALIGN 16
 RashidMugData:
-#incbin "Dmp/Rashid_mug.dmp"
-#incbin "Dmp/Rashid_frames.dmp"
-#incbin "Dmp/Rashid_palette.dmp"
-#incbin "Dmp/Rashid_minimug.dmp"
-setMugEntry(RashidMug, RashidMugData, 2, 5, 3, 3)
+#incbin "Dmp/Rashid(knabepicer)_mug.dmp"
+#incbin "Dmp/Rashid(knabepicer)_frames.dmp"
+#incbin "Dmp/Rashid(knabepicer)_palette.dmp"
+#incbin "Dmp/Rashid(knabepicer)_minimug.dmp"
+setMugEntry(RashidMug, RashidMugData, 2, 5, 2, 3)
 
 ALIGN 16
 YoungCleoMugData:
