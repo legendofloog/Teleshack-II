@@ -53,8 +53,8 @@ SongTable(PMDSteamCaveID,SteamCave,MapMusicGroup)
 SongTable(FF6AwakeningID,FF6Awakening,MapMusicGroup)
 #include "MusicEvents/FF4 - Red Wings (RandomWizard).event"
 SongTable(FF4RedWingsID,RedWings,MapMusicGroup)
-#include "MusicEvents/butterbuilding.event"
-SongTable(ButterBuilding,butterbuilding,MapMusicGroup)
+#include "MusicEvents/Ogre Battle 64 - Wall of Defense (Alusq).event"
+SongTable(WallOfDefense,obwalltest,MapMusicGroup)
 #include "MusicEvents/Final Fantasy Tactics - Anxiety (Alusq).event"
 SongTable(FFTAnxiety,FFT_Anxiety,MapMusicGroup)
 #include "MusicEvents/Lagoon - Battle with Thimale (RandomWizard).event"
