@@ -114,6 +114,14 @@ UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [12,24] 0x0 0x
 UNIT Francis Halberdier 0x0 Level(8,Enemy,False) [10,24] 0x0 0x0 0x0 0x0 [MasterLance,SilverAxe] PursueWithoutHeedAI
 UNIT
 
+EndSceneKorovai:
+UNIT Korovai DukeKnight Epony Level(1,NPC,False) [7,3] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT 
+
+EndSceneTwo:
+UNIT Epony Noble_F 0x0 Level(7,NPC,False) [6,0] 0 0 1 REDA6R3 [ShortSword] BossHealAI
+UNIT
+
 Warning:
 CAMERA Hege
 FlashCursor(Hege,60)
@@ -195,6 +203,24 @@ EndingScene:
 	SetBackground(0x1C)
 	MUSC FF5_Sealed_Away
 	Text(MifanAndCidor)
+	FADI 15
+	RemoveAll
+	MUSC 0x7FFF
+	LOMA Chapter8End
+	FOGVISION 0
+	LOAD1 0x1 EndSceneKorovai
+	SetBackground(CastleHallwayNight)
+	FADU 15
+	MUSC FF4RedWingsID
+	Text(LoeweConfrontsKorovai)
+	FADI 15
+	MUSC 0x7FFF
+	CLEAN
+	FADU 15
+	LOAD1 0x1 EndSceneTwo
+	FlashCursor(Epony,60)
+	MUSC FFTAnxiety
+	Text(KorovaiAndEpony)
 	MNC2 Chapter9
 	NoFade
 	ENDA
