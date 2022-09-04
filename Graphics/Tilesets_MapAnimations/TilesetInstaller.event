@@ -115,6 +115,20 @@
     TrueEndgamePalette:
     #incbin "Palette/endgame_palette_pal.dmp"
 
+// Manster
+    ALIGN 4
+    MansterObject:
+    #incbin "Object/manster.dmp"
+
+    ALIGN 4
+    MansterPalette:
+    #incbin "Palette/manster_pal.dmp"
+
+    ALIGN 4
+    MansterConfig:
+    #incbin "Config/manster_comp.dmp"
+
+
     EventPointerTable(DesertBastionObjectID, DesertBastionObject)
     EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
     EventPointerTable(DesertBastionMapchipConfigID, DesertBastionMapchipConfig)
@@ -142,3 +156,7 @@
     EventPointerTable(EndgamePaletteID,EndgamePalette)
     EventPointerTable(EndgameConfigID,EndgameConfig)
     EventPointerTable(FlasubanVillageSteamPaletteID,FlasubanVillageSteamPalette)
+    EventPointerTable(MansterObjectID,MansterObject)
+    EventPointerTable(MansterPaletteID,MansterPalette)
+    EventPointerTable(MansterConfigID,MansterConfig)
+  
