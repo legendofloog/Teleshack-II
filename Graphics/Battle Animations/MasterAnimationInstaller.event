@@ -350,3 +350,11 @@
 {
     #include "Animations/Long_Ballistician_F (St_jack, Seal)/Bow Installer.event"
 }
+{
+    #include "Animations/Sniper_Recoil(Nuramon,Swain,Temp,Pushwall)/Bow Installer.event"
+    #include "Animations/Sniper_Recoil(Nuramon,Swain,Temp,Pushwall)/Unarmed Installer.event"
+}
+{
+    #include "Animations/Sniper_Recoil_F(Nuramon,Swain,Temp,Pushwall)/Bow Installer.event"
+    #include "Animations/Sniper_Recoil_F(Nuramon,Swain,Temp,Pushwall)/Unarmed Installer.event"
+}

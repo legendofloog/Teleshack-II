@@ -193,7 +193,7 @@ FadeOutMusic
 LOAD1 0x1 KailaniAppears
 ENUN
 FlashCursor(Kailani,60)
-MUSC TensionSong
+MUSC BattleWithThimale
 Text(KailaniJoinText)
 CenterTextbox(KailaniInfo)
 NoFade

@@ -749,7 +749,7 @@ BEQ 16 s0 sC
         SVAL s1 0x1
         SET_CONDITION Cromar
     LABEL 20
-    MOVE 15 Maryn [31,29]
+    MOVE 15 Maryn [29,19]
     ENUN
     REMOVEUNIT Maryn
 LABEL 16
@@ -778,7 +778,7 @@ BEQ 17 s0 sC
         SVAL s1 0x1
         SET_CONDITION Tiberius
     LABEL 22
-    MOVE 15 Viktor [31,29]
+    MOVE 15 Viktor [29,19]
     ENUN
     REMOVEUNIT Viktor
 LABEL 17
