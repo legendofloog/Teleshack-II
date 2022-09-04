@@ -5,6 +5,7 @@ EventPointerTable(FlasubanVillageTileAnimationsID, FlasubanVillageTileAnimations
 EventPointerTable(ThraciaCastleTileAnimationsID, ThraciaCastleTileAnimations)
 EventPointerTable(FF5WaveCaveTileAnimationsID, FF5WaveCaveTileAnimations)
 EventPointerTable(EndgameAnimationsID, EndgameAnimations)
+EventPointerTable(MansterAnimationsID, MansterAnimations)
 
 ALIGN 4
 FlasubanVillageTileAnimations0:
@@ -153,6 +154,34 @@ EndgameAnimations7:
 #incbin "TilesetAnimations/EndgameAnims/animations_007.dmp"
 
 ALIGN 4
+MansterAnimations0:
+#incbin "TilesetAnimations/MansterAnims/animations_000.dmp"
+
+ALIGN 4
+MansterAnimations1:
+#incbin "TilesetAnimations/MansterAnims/animations_001.dmp"
+
+ALIGN 4
+MansterAnimations2:
+#incbin "TilesetAnimations/MansterAnims/animations_002.dmp"
+
+ALIGN 4
+MansterAnimations3:
+#incbin "TilesetAnimations/MansterAnims/animations_003.dmp"
+
+ALIGN 4
+MansterAnimations4:
+#incbin "TilesetAnimations/MansterAnims/animations_004.dmp"
+
+ALIGN 4
+MansterAnimations5:
+#incbin "TilesetAnimations/MansterAnims/animations_005.dmp"
+
+ALIGN 4
+MansterAnimations6:
+#incbin "TilesetAnimations/MansterAnims/animations_006.dmp"
+
+ALIGN 4
 FlasubanVillageTileAnimations:
 tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations0)
 tilesetAnimation(0x1C,0x1000,FlasubanVillageTileAnimations1)
@@ -206,4 +235,15 @@ tilesetAnimation(16,0x1000,EndgameAnimations4)
 tilesetAnimation(16,0x1000,EndgameAnimations5)
 tilesetAnimation(16,0x1000,EndgameAnimations6)
 tilesetAnimation(16,0x1000,EndgameAnimations7)
+WORD 0 0
+
+ALIGN 4
+MansterAnimations:
+tilesetAnimation(0xC,0x1000,MansterAnimations0)
+tilesetAnimation(0xC,0x1000,MansterAnimations1)
+tilesetAnimation(0xC,0x1000,MansterAnimations2)
+tilesetAnimation(0xC,0x1000,MansterAnimations3)
+tilesetAnimation(0xC,0x1000,MansterAnimations4)
+tilesetAnimation(0xC,0x1000,MansterAnimations5)
+tilesetAnimation(0xC,0x1000,MansterAnimations6)
 WORD 0 0

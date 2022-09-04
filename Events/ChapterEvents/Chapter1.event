@@ -363,6 +363,7 @@ LOAD1 1 BoroUnitGroup
 ENUN
 CAMERA Boro_Ch1
 Text(BoroSpawnText)
+ENUT 0x4
 NoFade
 ENDA
 

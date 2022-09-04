@@ -177,6 +177,7 @@
 #define FlasuVillage2SnowObjectID 0xBD
 #define FF2TownObjectID 0xBE
 #define EndgameObjectID 0xC5
+#define MansterObjectID 0xD3
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
@@ -191,6 +192,7 @@
 #define ActualEndgamePaletteID 0xcb
 #define Chapter4VillagePaletteID 0xcc
 #define FlasubanVillageSteamPaletteID 0xd2
+#define MansterPaletteID 0xD4
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -202,6 +204,7 @@
 #define FlasuVillage2SnowMapchipConfigID 0xBC
 #define FF2TownConfigID 0xC0
 #define EndgameConfigID 0xc9
+#define MansterConfigID 0xD5
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B
@@ -209,4 +212,5 @@
 #define FF5WaveCaveTileAnimationsID 0x9C
 #define FieldsTileAnimationsID 0x05
 #define EndgameAnimationsID 0xcd
+#define MansterAnimationsID 0xD6
 
