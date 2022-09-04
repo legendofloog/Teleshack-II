@@ -285,3 +285,75 @@ MihailHalb:
 KassandraRealFalco:
 	#incbin "./_palettes/KassandraRealFalco.lzpal" 
 
+CoraliaNoble:
+	#incbin "./_palettes/CoraliaNoble.lzpal" 
+
+CoraliaMasterKnight:
+	#incbin "./_palettes/CoraliaMasterKnight.lzpal" 
+
+CoraliaMasterKnightDismounted:
+	#incbin "./_palettes/CoraliaMasterKnightDismounted.lzpal" 
+
+BoroMidgameChampion:
+	#incbin "./_palettes/BoroMidgameChampion.lzpal" 
+
+BoroRealChampion:
+	#incbin "./_palettes/BoroRealChampion.lzpal" 
+
+EliasDracoknight:
+	#incbin "./_palettes/EliasDracoknight.lzpal" 
+
+EliasRealDracoknight:
+	#incbin "./_palettes/EliasRealDracoknight.lzpal" 
+
+EliasRealDismounted:
+	#incbin "./_palettes/EliasRealDismounted.lzpal" 
+
+AxelFighter:
+	#incbin "./_palettes/AxelFighter.lzpal" 
+
+AxelHero:
+	#incbin "./_palettes/AxelHero.lzpal" 
+
+AlexFighter:
+	#incbin "./_palettes/AlexFighter.lzpal" 
+
+AlexHero:
+	#incbin "./_palettes/AlexHero.lzpal" 
+
+ZharaPaladin:
+	#incbin "./_palettes/ZharaPaladin.lzpal" 
+
+ZharaDismounted:
+	#incbin "./_palettes/ZharaDismounted.lzpal" 
+
+TrajanHero:
+	#incbin "./_palettes/TrajanHero.lzpal" 
+
+CatrinSwordmaster:
+	#incbin "./_palettes/CatrinSwordmaster.lzpal" 
+
+CatrinRealSwordmaster:
+	#incbin "./_palettes/CatrinRealSwordmaster.lzpal" 
+
+CidorBaron:
+	#incbin "./_palettes/CidorBaron.lzpal" 
+
+LeinaTroubadour:
+	#incbin "./_palettes/LeinaTroubadour.lzpal" 
+
+LeinaTroubDismounted:
+	#incbin "./_palettes/LeinaTroubDismounted.lzpal" 
+
+LeinaPaladin:
+	#incbin "./_palettes/LeinaPaladin.lzpal" 
+
+LeinaPaladinDismounted:
+	#incbin "./_palettes/LeinaPaladinDismounted.lzpal" 
+
+LeinaMasterKnight:
+	#incbin "./_palettes/LeinaMasterKnight.lzpal" 
+
+LeinaMasterKnightDismounted:
+	#incbin "./_palettes/LeinaMasterKnightDismounted.lzpal" 
+

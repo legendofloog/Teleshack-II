@@ -965,10 +965,10 @@ setMugEntry(AltoMug, AltoMugData, 3, 5, 3, 3)
 
 ALIGN 16
 SeraMugData:
-#incbin "Dmp/Sera(Nobody)_mug.dmp"
-#incbin "Dmp/Sera(Nobody)_frames.dmp"
-#incbin "Dmp/Sera(Nobody)_palette.dmp"
-#incbin "Dmp/Sera(Nobody)_minimug.dmp"
+#incbin "Dmp/Sera(Roze)_mug.dmp"
+#incbin "Dmp/Sera(Roze)_frames.dmp"
+#incbin "Dmp/Sera(Roze)_palette.dmp"
+#incbin "Dmp/Sera(Roze)_minimug.dmp"
 setMugEntry(SeraMug, SeraMugData, 3, 6, 3, 4)
 
 ALIGN 16

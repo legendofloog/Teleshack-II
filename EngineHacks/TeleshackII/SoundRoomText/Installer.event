@@ -1,0 +1,154 @@
+
+// credit to pikmin1211
+
+#define SoundRoomSongTable NewSoundRoom
+
+ALIGN 4
+#include "DrawSoundRoomText.lyn.event"
+
+gSoundRoomUIProc:
+WORD 0x8A21338
+
+PUSH
+
+// dont draw the completion number
+ORG 0xAF4F4 // DrawUiNumber()
+SHORT 0x46C0 0x46C0 // nop nop
+
+ORG 0xB0094
+jumpToHack(DrawSoundRoomSongSourceHook)
+
+// center the title text properly
+ORG 0xB0052
+BYTE 0xA8
+
+POP
+
+#define SoundRoomSource(songId, textId) "WORD songId; SHORT textId 0"
+
+ALIGN 4
+SoundRoomSourceTable:
+// bells of byelen
+SoundRoomSource(KwameID, BellsOfByelenSource)
+
+//final fantasy
+SoundRoomSource(FF5_Nostalgia, FF5Source)
+SoundRoomSource(FF5_Sealed_Away, FF5Source)
+SoundRoomSource(FF5_BattleOnTheBigBridgeID, FF5Source)
+SoundRoomSource(FF6AwakeningID, FF6Source)
+SoundRoomSource(FF4RedWingsID, FF4Source)
+SoundRoomSource(FFTAnxiety, FFTSource)
+SoundRoomSource(FestivalHuntID, FinalFantasy9Source)
+SoundRoomSource(FF_MysticQuest_Battle1ID, FinalFantasyMysticQuestSource)
+SoundRoomSource(FF_MysticQuest_HillofDestinyID, FinalFantasyMysticQuestSource)
+SoundRoomSource(FF_MysticQuest_DoomCastleID, FinalFantasyMysticQuestSource)
+SoundRoomSource(FF_MysticQuest_DarkKingThemeID, FinalFantasyMysticQuestSource)
+SoundRoomSource(FF_MysticQuest_IceDungeonID, FinalFantasyMysticQuestSource)
+SoundRoomSource(FF_MysticQuest_FocusTowerID, FinalFantasyMysticQuestSource)
+
+//fire emblem
+SoundRoomSource(VsJuliusID, FE4Source)
+SoundRoomSource(FE5_Adversity, FE5Source)
+SoundRoomSource(FE5_InTheBattle_Fate, FE5Source)
+SoundRoomSource(ThraciaPreparationsID, FE5Source)
+SoundRoomSource(KnightsPride, BerwickSagaSource)
+SoundRoomSource(WithUs_Song, FE9Source)
+SoundRoomSource(RoarOfDomainID, FE16Source)
+SoundRoomSource(PersonalCombat, BerwickSagaSource)
+
+//pokemon
+SoundRoomSource(ncastlebridge, PokemonBlackAndWhiteSource)
+SoundRoomSource(GreatCanyon, PMDSource)
+SoundRoomSource(PMD_RescueTeam_MtThunderID, PMDSource)
+SoundRoomSource(PMDSteamCaveID, PMDExplorersSource)
+SoundRoomSource(PMD_SkyPeakFinalPassID, PMDExplorersSource)
+SoundRoomSource(PMD_PowerOfDarknessID, PMDExplorersSource)
+SoundRoomSource(PMD_MystifyingForestID, PMDExplorersSource)
+SoundRoomSource(GuardianSignsLegendary, PokemonRangerGuardianSignsSource)
+
+
+
+//tales of
+SoundRoomSource(Rovers,ToS_Source)
+SoundRoomSource(FightingOfTheSpirit,ToS_Source)
+SoundRoomSource(RenegadesID,ToS_Source)
+SoundRoomSource(LightGlintID,ToS_Source)
+SoundRoomSource(SheenaID,ToS_Source)
+SoundRoomSource(ToV_TragicDecisionID,ToV_Source)
+
+//treasure of the rudras
+SoundRoomSource(TreasureOfRudrasBattleTheme,TreasureoftheRudrasSource)
+SoundRoomSource(CrimeHeartID,TreasureoftheRudrasSource)
+SoundRoomSource(SwordOfTheValiant,TreasureoftheRudrasSource)
+SoundRoomSource(TheQuestForRudrasMines,TreasureoftheRudrasSource)
+
+//golden sun
+SoundRoomSource(SaturosBattleID,GoldenSunSource)
+SoundRoomSource(GS_VenusLighthouse,GoldenSunSource)
+SoundRoomSource(MarsLighthouseID,GoldenSunTLASource)
+SoundRoomSource(GS_TLA_WalkingForwardWithDeterminationID,GoldenSunTLASource)
+
+// ys
+SoundRoomSource(Dreaming, Ys1Name)
+SoundRoomSource(DawnOfYs, Ys4Name)
+SoundRoomSource(DrumbeatRuinID, Ys3Source)
+
+//lufia
+SoundRoomSource(Lufia_Doom, LufiaName)
+SoundRoomSource(Lufia2_RoS_Battle2, Lufia2RoS_Source)
+
+//triangle strategy
+SoundRoomSource(CombatResistanceID, TriangleStrategySource)
+SoundRoomSource(FirstCampaignID, TriangleStrategySource)
+
+// ogre battle
+SoundRoomSource(HarvestDance, TacticsOgreSource)
+SoundRoomSource(WallOfDefense, OgreBattle64Source)
+
+//valkyrie profile
+SoundRoomSource(UnfinishedBattleGodSyndrome, ValkyrieProfileSource)
+SoundRoomSource(RiseAboveID, ValkyrieProfileSource)
+
+//chrono trigger
+SoundRoomSource(BattleWithMagus, ChronoTriggerSource)
+
+//castlevania
+SoundRoomSource(SorrowsDistortion, CastlevaniaOrderOfEcclesia)
+
+//sonic
+SoundRoomSource(WhatImMadeOfID, SonicHeroesSource)
+
+// f-zero
+SoundRoomSource(mutecity, FZeroSource)
+
+//crypt of the necrodancer
+SoundRoomSource(CryptequeID, CryptOfTheNecrodancerSource)
+
+//heroes of mana
+SoundRoomSource(WhyAreWeWithoutHopeID, HeroesOfManaSource)
+
+// lagoon
+SoundRoomSource(BattleWithThimale,LagoonSource)
+
+//guilty gear
+SoundRoomSource(Sheep_Will_Sleep, GuiltyGearIsukaSource)
+
+// undertale
+SoundRoomSource(Core, UndertaleSource)
+
+//dynasty warriors 3
+SoundRoomSource(oppression, DynastyWarriors3Source)
+
+//romancing saga
+SoundRoomSource(RS1Battle, RomancingSagaSource)
+
+//knights in the nightmare
+SoundRoomSource(Sortie_Formation, KnightsInTheNightmareSource)
+
+//king of dragons
+SoundRoomSource(KingOfDragons_IntoTheCastleID,KingOfDragonsSource)
+
+//super smash bros brawl
+SoundRoomSource(SSBB_Tournament_PrepsID,SSBBSource)
+
+WORD 0 0 // term

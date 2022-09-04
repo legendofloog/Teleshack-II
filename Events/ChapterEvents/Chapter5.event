@@ -201,7 +201,7 @@ FADI 15
 InterludeRemovalRoutineASMC
 RemoveAll
 SetBackground(Tavern)
-MUSC Rovers
+MUSC KwameID
 Text(LoreCh5Text)
 Text(Lore2Ch5Text)
 ENUT GuideUnlockChouwouj

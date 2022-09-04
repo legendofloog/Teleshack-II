@@ -31,7 +31,6 @@
 #define Ch5xInterlude 0x1C
 #define Ch5xBoatScenes 0x1D
 #define Ch5xGechrysos 0x1E
-#define Chapter8End 0x2B
 #define Ch12xInterlude 0x1F
 #define Chapter15Cutscene 0x20
 #define Chapter17Council 0x21
@@ -41,6 +40,7 @@
 #define Chapter12xPass 0x28
 #define Chapter12xDarkness 0x29
 #define EpilogueChapter 0x2A
+#define Chapter8End 0x2B
 
 // MapChangesID
 
@@ -160,7 +160,6 @@
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
 #define Ch5xInterludeEvents 0x81
-#define Ch8EEvents 0xD4
 #define Ch12xInterludeEvents 0xA3
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7

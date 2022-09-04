@@ -379,3 +379,99 @@
 // KassandraRealFalco
 	setPalette(94,KassandraRealFalco)
 	setCBSP(94,KassandraReal,1,PegasusKnight)
+
+// CoraliaNoble
+	setPalette(95,CoraliaNoble)
+	setCBSP(95,Coralia,1,Noble_F)
+
+// CoraliaMasterKnight
+	setPalette(96,CoraliaMasterKnight)
+	setCBSP(96,CoraliaReal,1,MasterKnight_F)
+
+// CoraliaMasterKnightDismounted
+	setPalette(97,CoraliaMasterKnightDismounted)
+	setCBSP(97,CoraliaReal,2,MasterKnight_F_Dismounted)
+
+// BoroMidgameChampion
+	setPalette(98,BoroMidgameChampion)
+	setCBSP(98,Boro_Ch16, 3, Champion)
+
+// BoroRealChampion
+	setPalette(99,BoroRealChampion)
+	setCBSP(99,BoroReal, 3, Champion)
+
+// EliasDracoknight
+	setPalette(100,EliasDracoknight)
+	setCBSP(100,Elias, 3, Dracoknight)
+
+// EliasRealDracoknight
+	setPalette(101,EliasRealDracoknight)
+	setCBSP(101,EliasReal, 3, Dracoknight)
+
+// EliasRealDismounted
+	setPalette(102,EliasRealDismounted)
+	setCBSP(102,EliasReal, 2, Dracoknight_Dismounted)
+
+// AxelFighter
+	setPalette(103,AxelFighter)
+	setCBSP(103,Axel, 1, AxeFighter)
+
+// AxelHero
+	setPalette(104,AxelHero)
+	setCBSP(104,Axel, 3, Hero)
+
+// AlexFighter
+	setPalette(105,AlexFighter)
+	setCBSP(105,Alex, 1, AxeFighter_F)
+
+// AlexHero
+	setPalette(106,AlexHero)
+	setCBSP(106,Alex, 3, Hero_F)
+
+// ZharaPaladin
+	setPalette(107,ZharaPaladin)
+	setCBSP(107,Zhara, 1, Paladin)
+
+// ZharaDismounted
+	setPalette(108,ZharaDismounted)
+	setCBSP(108,Zhara, 3, Paladin_Dismounted)
+
+// TrajanHero
+	setPalette(109,TrajanHero)
+	setCBSP(109,TrajanReal, 1, Hero)
+
+// CatrinSwordmaster
+	setPalette(110,CatrinSwordmaster)
+	setCBSP(110,Catrin, 1, Swordmaster_F)
+
+// CatrinRealSwordmaster
+	setPalette(111,CatrinRealSwordmaster)
+	setCBSP(111,CatrinReal, 1, Swordmaster_F)
+
+// CidorBaron
+	setPalette(112,CidorBaron)
+	setCBSP(112,Cidor, 1, Baron)
+
+// LeinaTroubadour
+	setPalette(113,LeinaTroubadour)
+	setCBSP(113,Leina, 1, Troubadour)
+
+// LeinaTroubDismounted
+	setPalette(114,LeinaTroubDismounted)
+	setCBSP(114,Leina, 2, Troubadour_Dismounted)
+
+// LeinaPaladin
+	setPalette(115,LeinaPaladin)
+	setCBSP(115,Leina, 3, Paladin)
+
+// LeinaPaladinDismounted
+	setPalette(116,LeinaPaladinDismounted)
+	setCBSP(116,Leina, 4, Paladin_Dismounted)
+
+// LeinaMasterKnight
+	setPalette(117,LeinaMasterKnight)
+	setCBSP(117,Leina, 5, MasterKnight_F)
+
+// LeinaMasterKnightDismounted
+	setPalette(118,LeinaMasterKnightDismounted)
+	setCBSP(118,Leina, 6, MasterKnight_F_Dismounted)

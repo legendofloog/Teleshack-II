@@ -1,128 +1,341 @@
-## Lufia_DoomName 
-Lufia - The Island in the Void[X]
+## LufiaName 
+Lufia & The Fortress of Doom[X]
+
+## TheIslandInTheVoidName
+The Island in the Void[X]
+
+## TreasureoftheRudrasSource
+Treasure of the Rudras[X]
 
 ## TreasureofRudrasBattleName
-Treasure of Rudras - Battle[X]
+Battle for the Fields[X]
+
+## Lufia2RoS_Source
+Lufia 2: Rise of the Sinistrals[X]
 
 ## Lufia2_RoS_Battle2Name
-Lufia 2: RotS - Battle 2[X]
+Boss Battle Theme[X]
+
+## KnightsInTheNightmareSource
+Knights in the Nightmare[X]
 
 ## Sortie_FormationName
-KitN - Sortie Formation[X]
+Sortie Formation[X]
+
+## FE9Source
+FE9 - Path of Radiance[X]
 
 ## WithUs_SongName
-FE9 - With Us[X]
+With Us![X]
+
+## BerwickSagaSource
+Berwick Saga[X]
 
 ## PersonalCombatName
-BS - Man-to-Man Fight[X]
+Man-to-Man Fight[X]
+
+## ToS_Source
+Tales of Symphonia[X]
 
 ## RoversName
-Tales of Symphonia - Rovers[X]
+Rovers[X]
+
+## ValkyrieProfileSource
+Valkyrie Profile[X]
 
 ## ValkyrieProfile_GodSyndromeName *
-'Unfinished Battle with God' Syndrome[X]
+The Unfinished Battle with God Syndrome[X]
 
 ## FF5_NostalgiaName
-FF5 - Nostalgia[X]
+Nostalgia[X]
 
 ## FF5_Sealed_AwayName
-FF5 - Sealed Away[X]
+Sealed Away[X]
+
+## FF5Source
+Final Fantasy 5[X]
+
+## FE5Source
+FE5: Thracia 776[X]
 
 ## FE5_AdversityName
-FE5 - Adversity[X]
+Adversity[X]
 
 ## FE5_InTheBattle_FateName
-FE5 - In the Battle ~ Fate[X]
+In the Battle ~ Fate[X]
+
+## Ys1Name
+Ys I[X]
+
+## Ys4Name
+Ys IV[X]
 
 ## DreamingName
-Ys I - Dreaming[X]
+Dreaming[X]
 
 ## DawnOfYsName
-Ys IV - The Dawn of Ys[X]
+The Dawn of Ys[X]
+
+## TacticsOgreSource
+Tactics Ogre[X]
 
 ## HarvestDanceName
-Tactics Ogre - Harvest Dance[X]
+Harvest Dance[X]
+
+## FZeroSource
+F-Zero[X]
 
 ## mutecityName
-F-Zero - Mute City[X]
+Mute City[X]
+
+## PMDExplorersSource
+PMD: Explorers of Sky[X]
 
 ## PMDSteamCaveIDName
-PMD: Explorers - Steam Cave[X]
+Steam Cave[X]
+
+## FF6Source
+Final Fantasy 6[X]
+
+## FF4Source
+Final Fantasy 4[X]
 
 ## FF6AwakeningIDName
-FF6 - Awakening[X]
+Awakening[X]
 
 ## FF4RedWingsIDName
-FF4 - Red Wings[X]
+Red Wings[X]
 
-## WallOfDefenseName *
-Ogre Battle 64 - Wall of Defense[X]
+## OgreBattle64Source
+Ogre Battle 64[X]
+
+## WallOfDefenseName
+Wall of Defense[X]
+
+## FFTSource
+Final Fantasy Tactics[X]
 
 ## FFTAnxietyName
-Final Fantasy Tactics - Anxiety[X]
+Anxiety[X]
+
+## LagoonSource
+Lagoon[X]
 
 ## BattleWithThimaleName
-Lagoon - Battle with Thimale[X]
+Battle with Thimale[X]
+
+## RomancingSagaSource
+Romancing Saga[X]
 
 ## RSBattleName
-Romancing SaGa - Battle[X]
+The Conflict (Battle 1)[X]
+
+## DynastyWarriors3Source
+Dynasty Warriors 3[X]
 
 ## oppressionName
-Dynasty Warriors 3 - Oppression[X]
-
-## fe5victoryName
-FE5 - Victory is Near[X]
+Oppression[X]
 
 ## awaywithyouName
 Away With You (Runa)[X]
 
+## PokemonBlackAndWhiteSource
+Pokemon Black/White[X]
+
 ## ncastlebridgeName
-Pokemon BW - N's Castle Bridge[X]
+N's Castle Bridge[X]
+
+## PMDSource
+PMD: Red/Blue Rescue Team[X]
 
 ## GreatCanyonName
-PMD - Great Canyon[X]
+Great Canyon[X]
+
+## TriangleStrategySource
+Triangle Strategy[X]
 
 ## KnightsPrideName
-Berwick Saga - Knight's Pride[X]
+Knight's Pride[X]
 
 ## FightingOfTheSpiritName
-ToS - Fighting of the Spirit[X]
+Fighting of the Spirit[X]
 
 ## CombatResistanceIDName
-TS - Combat: Resistance[X]
-
-## CallOfTheBellsIDName
-Call of the Bells (pandan)[X]
-
-## FeelingWoozyIDName
-Feeling Woozy (pandan)[X]
+Combat: Resistance[X]
 
 ## FirstCampaignIDName
-TS - Combat: First Campaign[X]
+Combat: First Campaign[X]
 
-## RemembranceName
-Remembrance (Loog)[X]
+## CryptOfTheNecrodancerSource
+Crypt of the Necrodancer[X]
 
 ## CryptequeIDName
-Necrodancer - Crypteque[X]
+Crypteque[X]
 
 ## RiseAboveIDName
-Rise Above The World (buggo)[X]
+Rise Above The World[X]
 
 ## CrimeHeartName
-Rudras - Crime of the Heart[X]
+Crime of the Heart[X]
+
+## Ys3Source
+Ys III[X]
 
 ## DrumbeatName
-Ys - Drumbeat to Ruin[X]
+Drumbeat of Doom ~ Genos's Island[X]
 
 ## WhatImMadeOfName
 What I'm Made Of[X]
 
 ## VsJuliusName
-FE4 - Vs Julius (SurfingKyogre)[X]
+Vs Julius[X]
 
 ## RoarOfDomainName
-FE16 - Roar of Domain (Green)[X]
+Roar of Domain[X]
 
-## MM10WilyMachineName
-Mega Man 10 - Wily Machine[X]
+## TheQuestForRudrasMinesName
+The Quest For Rudra's Mines[X]
+
+## KwameSongName
+Kwame's Theme[X]
+
+## BellsOfByelenSource
+Bells of Byelen[X]
+
+## ThraciaPreparationsName
+Sortie[X]
+
+## KingOfDragonsSource
+King of Dragons[X]
+
+## IntoTheCastleName
+Treasure in an Old Castle[X]
+
+## MysticQuestBattle1Name
+Battle Theme 1[X]
+
+## HillOfDestinyName
+Hill of Fate[X]
+
+## RenegadesName
+Encounter with the Renegades[X]
+
+## GuiltyGearIsukaSource
+Guilty Gear Isuka[X]
+
+## SheepWillSleepName
+Sheep Will Sleep[X]
+
+## UndertaleSource
+Undertale[X]
+
+## CoreName
+CORE[X]
+
+## MtThunderName
+Mt. Thunder[X]
+
+## ToV_Source
+Tales of Vesperia[X]
+
+## TragicDecisionName
+A Tragic Decision[X]
+
+## MystifyingForestName
+Mystifying Forest[X]
+
+## IceDungeonName
+Dungeon of Ice[X]
+
+## FocusTowerName
+Middle Tower[X]
+
+## SheenaName
+Sheena's Theme[X]
+
+## FinalFantasy9Source
+Final Fantasy 9[X]
+
+## FestivalHuntName
+Festival of the Hunt[X]
+
+## SkyPeakFinalPassName
+Sky Peak Final Pass[X]
+
+## SSBBSource
+Super Smash Bros. Brawl[X]
+
+## SSBBTournamentPrepsName
+Tournament Registration[X]
+
+## SwordOfTheValiantName
+Sword of the Valiant[X]
+
+## ChronoTriggerSource
+Chrono Trigger[X]
+
+## BattleWithMagusName
+Battle With Magus[X]
+
+## CastlevaniaOrderOfEcclesia
+CV: Order of Ecclesia[X]
+
+## SorrowsDistortionName
+Sorrow's Distortion[X]
+
+## PokemonRangerGuardianSignsSource
+Pokemon Ranger: GS[X]
+
+## GuardianSignsLegendaryName
+Legendary Pokemon Encounter![X]
+
+## HeroesOfManaSource
+Heroes of Mana[X]
+
+## WhyAreWeWithoutHopeName
+Why Are We Without Hope...[X]
+
+## DoomCastleName
+Last Castle[X]
+
+## VenusLighthouseName
+Venus Lighthouse[X]
+
+## PowerOfDarknessName
+The Power of Darkness[X]
+
+## LightGlintName
+Like a Glint of Light[X]
+
+## WalkingForwardWithDeterminationName
+Walking Forward With Determination[X]
+
+## GoldenSunTLASource
+Golden Sun - The Lost Age[X]
+
+## MarsLighthouseName
+Mars Lighthouse[X]
+
+## GoldenSunSource
+Golden Sun[X]
+
+## SaturosBattleName
+Versus Saturos[X]
+
+## DarkKingName
+Dark King's Theme[X]
+
+## FE4Source
+FE4: Genealogy of the Holy War[X]
+
+## FE16Source
+FE16: Three Houses[X]
+
+## SonicHeroesSource
+Sonic Heroes[X]
+
+## FinalFantasyMysticQuestSource
+Final Fantasy: Mystic Quest[X]
+
+## BattleOnTheBigBridgeName
+Battle on the Big Bridge[X]
