@@ -80,7 +80,7 @@ SupportConvoEntry(Fangai, Faolan, 0, 0, 0)
 SupportConvoEntry(Fangai, Tippany, 0, 0, 0)
 
 SupportConvoEntry(Mish, Tobie, 0, Mish_Tobie_B, Mish_Tobie_A) 
-SupportConvoEntry(Mish, Takai, 0, 0, 0)
+SupportConvoEntry(Mish, Takai, 0, MishTakaiB, MishTakaiA)
 SupportConvoEntry(Mish, Tara, 0, 0, 0)
 SupportConvoEntry(Mish, Ellerey, MishEllereyCSupport, MishEllereyBSupport, MishEllereyASupport)
 
@@ -182,7 +182,7 @@ SupportConvoEntry(Carl, Asha, 0, 0, 0)
 SupportConvoEntry(Carl, Sera, 0, 0, 0)
 
 SupportConvoEntry(Takai, Tobie, 0, 0, 0)
-SupportConvoEntry(Takai, Mish, 0, 0, 0)
+SupportConvoEntry(Takai, Mish, 0, MishTakaiB, MishTakaiA)
 SupportConvoEntry(Takai, Shaw, 0, 0, 0)
 
 SupportConvoEntry(Darby, Ellerey, 0, 0, 0)

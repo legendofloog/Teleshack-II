@@ -357,3 +357,63 @@ LeinaMasterKnight:
 LeinaMasterKnightDismounted:
 	#incbin "./_palettes/LeinaMasterKnightDismounted.lzpal" 
 
+MeldanDukeKnight:
+	#incbin "./_palettes/MeldanDukeKnight.lzpal" 
+
+MeldanDismounted:
+	#incbin "./_palettes/MeldanDismounted.lzpal" 
+
+JennyRookKnight:
+	#incbin "./_palettes/JennyRookKnight.lzpal" 
+
+JennyRookKnightDismounted:
+	#incbin "./_palettes/JennyRookKnightDismounted.lzpal" 
+
+JennyGoldKnight:
+	#incbin "./_palettes/JennyGoldKnight.lzpal" 
+
+JennyGoldKnightDismounted:
+	#incbin "./_palettes/JennyGoldKnightDismounted.lzpal" 
+
+IchwepSoldier:
+	#incbin "./_palettes/IchwepSoldier.lzpal" 
+
+IchwepHalberdier:
+	#incbin "./_palettes/IchwepHalberdier.lzpal" 
+
+MiloSoldier:
+	#incbin "./_palettes/MiloSoldier.lzpal" 
+
+MiloHalberdier:
+	#incbin "./_palettes/MiloHalberdier.lzpal" 
+
+CadenzaBard:
+	#incbin "./_palettes/CadenzaBard.lzpal" 
+
+CadenzaSage:
+	#incbin "./_palettes/CadenzaSage.lzpal" 
+
+MatthiasDevotee:
+	#incbin "./_palettes/MatthiasDevotee.lzpal" 
+
+MatthiasSage:
+	#incbin "./_palettes/MatthiasSage.lzpal" 
+
+TakaiWarrior:
+	#incbin "./_palettes/TakaiWarrior.lzpal" 
+
+JerryWarrior:
+	#incbin "./_palettes/JerryWarrior.lzpal" 
+
+GrotoBerserker:
+	#incbin "./_palettes/GrotoBerserker.lzpal" 
+
+PelecayeGeneral:
+	#incbin "./_palettes/PelecayeGeneral.lzpal" 
+
+TippanyDarkMage:
+	#incbin "./_palettes/TippanyDarkMage.lzpal" 
+
+TippanyDarkBishop:
+	#incbin "./_palettes/TippanyDarkBishop.lzpal" 
+

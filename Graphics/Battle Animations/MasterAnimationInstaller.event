@@ -254,9 +254,9 @@
 }
 
 {
-#include "Animations/Master_Knight_F(St_jack)/Sword Installer.event"
-#include "Animations/Master_Knight_F(St_jack)/Bow Installer.event"
-#include "Animations/Master_Knight_F(St_jack)/Magic Installer.event"
+#include "Animations/Master_Knight_F_Repal(St_jack, Loog)/Sword Installer.event"
+#include "Animations/Master_Knight_F_Repal(St_jack, Loog)/Bow Installer.event"
+#include "Animations/Master_Knight_F_Repal(St_jack, Loog)/Magic Installer.event"
 }
 
 {
@@ -357,4 +357,8 @@
 {
     #include "Animations/Sniper_Recoil_F(Nuramon,Swain,Temp,Pushwall)/Bow Installer.event"
     #include "Animations/Sniper_Recoil_F(Nuramon,Swain,Temp,Pushwall)/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/Sage_FE6_7_Pants(Levin64)/Magic Installer.event"
 }

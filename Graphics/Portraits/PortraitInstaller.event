@@ -532,10 +532,10 @@ setMugEntry(DrakenMug, DrakenMugData, 3, 5, 3, 3)
 
 ALIGN 16
 LeinaMugData:
-#incbin "Dmp/Leina_mug.dmp"
-#incbin "Dmp/Leina_frames.dmp"
-#incbin "Dmp/Leina_palette.dmp"
-#incbin "Dmp/Leina_minimug.dmp"
+#incbin "Dmp/Leina(RandomWizard)_mug.dmp"
+#incbin "Dmp/Leina(RandomWizard)_frames.dmp"
+#incbin "Dmp/Leina(RandomWizard)_palette.dmp"
+#incbin "Dmp/Leina(RandomWizard)_minimug.dmp"
 setMugEntry(LeinaMug, LeinaMugData, 3, 6, 3, 4)
 
 ALIGN 16

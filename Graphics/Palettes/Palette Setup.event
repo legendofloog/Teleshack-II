@@ -475,3 +475,83 @@
 // LeinaMasterKnightDismounted
 	setPalette(118,LeinaMasterKnightDismounted)
 	setCBSP(118,Leina, 6, MasterKnight_F_Dismounted)
+
+// MeldanDukeKnight
+	setPalette(119,MeldanDukeKnight)
+	setCBSP(119,Meldan, 3, DukeKnight)
+
+// MeldanDismounted
+	setPalette(120,MeldanDismounted)
+	setCBSP(120,Meldan, 4, DukeKnight_Dismounted)
+
+// JennyRookKnight
+	setPalette(121,JennyRookKnight)
+	setCBSP(121,Jenny, 1, DukeKnight)
+
+// JennyRookKnightDismounted
+	setPalette(122,JennyRookKnightDismounted)
+	setCBSP(122,Jenny, 2, DukeKnight_Dismounted)
+
+// JennyGoldKnight
+	setPalette(123,JennyGoldKnight)
+	setCBSP(123,Jenny, 3, GoldKnight)
+
+// JennyGoldKnightDismounted
+	setPalette(124,JennyGoldKnightDismounted)
+	setCBSP(124,Jenny, 4, GoldKnight_Dismounted)
+
+// IchwepSoldier
+	setPalette(125,IchwepSoldier)
+	setCBSP(125,Ichwep, 1, LanceSoldier)
+
+// IchwepHalberdier
+	setPalette(126,IchwepHalberdier)
+	setCBSP(126,Ichwep, 3, Halberdier)
+
+// MiloSoldier
+	setPalette(127,MiloSoldier)
+	setCBSP(127,Milo, 1, AxeSoldier)
+
+// MiloHalberdier
+	setPalette(128,MiloHalberdier)
+	setCBSP(128,Milo, 3, Halberdier)
+
+// CadenzaBard
+	setPalette(129,CadenzaBard)
+	setCBSP(129,Cadenza, 1, Bard)
+
+// CadenzaSage
+	setPalette(130,CadenzaSage)
+	setCBSP(130,Cadenza, 3, Sage)
+
+// MatthiasDevotee
+	setPalette(131,MatthiasDevotee)
+	setCBSP(131,Matthias, 1, Devotee_M)
+
+// MatthiasSage
+	setPalette(132,MatthiasSage)
+	setCBSP(132,Matthias, 3, Sage)
+
+// TakaiWarrior
+	setPalette(133,TakaiWarrior)
+	setCBSP(133,Takai, 1, Warrior)
+
+// JerryWarrior
+	setPalette(134,JerryWarrior)
+	setCBSP(134,Jerry, 1, Warrior)
+
+// GrotoBerserker
+	setPalette(135,GrotoBerserker)
+	setCBSP(135,Groto, 1, Berserker)
+
+// PelecayeGeneral
+	setPalette(136,PelecayeGeneral)
+	setCBSP(136,Pelecaye, 1, General)
+
+// TippanyDarkMage
+	setPalette(137,TippanyDarkMage)
+	setCBSP(137,Tippany, 1, DarkMage_F)
+
+// TippanyDarkBishop
+	setPalette(138,TippanyDarkBishop)
+	setCBSP(138,Tippany, 3, DarkBishop_F)

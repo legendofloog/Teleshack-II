@@ -93,7 +93,7 @@
 #define LncSoldierFUnarmedAnim 0x45
 
 #define AxeSoldierAxeAnim 0x46
-#define AxeSolderHandAxeAnim 0xF0
+#define AxeSolderHandAxeAnim 0xec
 #define AxeSoldierUnarmedAnim 0x47
 
 #define HalberdierAxeAnim 0x48
@@ -156,7 +156,7 @@
 
 #define BardMagicAnim 0xe1
 
-#define SisterMagicAnim 0x85
+#define SisterMagicAnim 0xed
 
 #define ThiefMatthewSwordAnim 0x87
 
@@ -250,6 +250,15 @@
 #define ArchKnightFUnarmedAnim 0xd3
 
 #define AugurDragonstoneAnim 0xC7
+
+#define SageMagicAnim 0x6d
+
+ALIGN 4
+SageMAnims:
+AnimaAnim(SageMagicAnim)
+LightAnim(SageMagicAnim)
+UnarmedAnim(SageMagicAnim)
+EndAnim
 
 
 ALIGN 4

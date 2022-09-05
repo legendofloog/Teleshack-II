@@ -37,6 +37,7 @@ IndividualAnimationEntry(Hornet,BowKnight,FBowCavAnims|IsPointer)
 IndividualAnimationEntry(Hornet,ArchKnight,ArchKnightFAnims|IsPointer)
 IndividualAnimationEntry(Hornet,BowKnight_Dismounted,DismountedFAnims|IsPointer)
 IndividualAnimationEntry(Hornet,ArchKnight_Dismounted,DismountedFAnims|IsPointer)
+IndividualAnimationEntry(Ichwep,LanceSoldier,LanceSoldierFAnims|IsPointer)
 IndividualAnimationEntry(Nahiza,Ballistician,NahizaBallistician|IsPointer)
 IndividualAnimationEntry(Nahiza,LongBallistician,NahizaLongBallistician|IsPointer)
 IndividualAnimationTerminator
