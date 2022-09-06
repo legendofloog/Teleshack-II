@@ -6,6 +6,7 @@
 ALIGN 4
 #include "DrawSoundRoomText.lyn.event"
 
+ALIGN 4
 gSoundRoomUIProc:
 WORD 0x8A21338
 

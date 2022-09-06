@@ -1,5 +1,12 @@
 extern ProcInstruction* gSoundRoomUIProc; // FE8U! 0x8A21338
 
+typedef struct SoundRoomProc SoundRoomProc;
+
+struct SoundRoomProc{
+	PROC_FIELDS;
+	u8 PROC_BODY[];
+};
+
 // for PROC_BODY
 enum{
 	CURRENT_SONG_INDEX = 0xC

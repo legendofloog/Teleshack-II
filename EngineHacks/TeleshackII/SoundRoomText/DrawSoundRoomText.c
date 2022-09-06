@@ -27,7 +27,7 @@ u16 GetSourceTextFromSongId(u32 number){
 }
 
 u16 GetCurrentSoundRoomSongSourceText(){
-	Proc* currentSoundRoomUIProc = ProcFind(gSoundRoomUIProc);
+	SoundRoomProc* currentSoundRoomUIProc = (SoundRoomProc*)ProcFind(gSoundRoomUIProc);
 	u8 currentSoundRoomIndex = currentSoundRoomUIProc->PROC_BODY[CURRENT_SONG_INDEX];
 	SoundRoomSongEntry currentSoundRoomSong = SoundRoomSongTable[currentSoundRoomIndex];
 	u32 currentSongIndex = currentSoundRoomSong.number;
@@ -62,10 +62,10 @@ void DrawSoundRoomText(){ // FE8U! 0x80AFF30
 	songTitleObjAttr.attr2_id = (maskedVramAddress>>5) & 0x3FF;
 	songTitleObjAttr.attr2_palbank = 0xA;
 
-	/*
 	Text_SetFont(0);
 	Text_SetFontStandardGlyphSet(0);
 
+	/*
 	// draw "Success"
 	Text_InitClear(someTextHandleArray, 5);
 	Text_Clear(someTextHandleArray);
@@ -77,24 +77,32 @@ void DrawSoundRoomText(){ // FE8U! 0x80AFF30
 	Text_DrawString(someTextHandleArray+6, GetStringFromIndex(0x5AE));
 	*/
 
+	Text_InitClear(someTextHandleArray, 32);
+
 }
 
 // void DrawSoundRoomSongTitle // FE8U! 0x80B0088
 
 void DrawSoundRoomSongSource(){
-	Text_SetFont(&gDefaultFontData);
-	Text_SetFontStandardGlyphSet(0);
+	//Text_SetFont(&gDefaultFontData);
+	//Text_SetFontStandardGlyphSet(0);
 
-	u16 prevTileNext = gDefaultFontData.tileNext;
+	//u16 prevTileNext = gDefaultFontData.tileNext;
 
-	Text_InitClear(someTextHandleArray, 16);
+	//Text_InitClear(someTextHandleArray, 16);
 	Text_Clear(someTextHandleArray);
 	
 	Text_InsertString(someTextHandleArray, 0, 0, GetStringFromIndex(GetCurrentSoundRoomSongSourceText()));
 	Text_Display(someTextHandleArray, gBg0MapBuffer+204);
 
-	gDefaultFontData.tileNext = prevTileNext;
+	//gDefaultFontData.tileNext = prevTileNext;
 
+}
+
+void EraseSoundRoomSongSource(){
+	//Text_InitClear(someTextHandleArray, 16);
+	Text_Clear(someTextHandleArray);
+	Text_Display(someTextHandleArray, gBg0MapBuffer+204);
 }
 
 
@@ -108,4 +116,5 @@ void DrawSoundRoomSongSourceHook(){
 	asm("ldr r0, =0x80B009E+1");
 	asm("bx r0");
 }
+
 
