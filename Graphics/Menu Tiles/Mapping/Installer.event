@@ -1,0 +1,38 @@
+
+PUSH
+
+// Unit Menu
+ORG 0xDA2F4
+	// Top
+	SHORT $1003 // Left End
+	SHORT $1002 // Right of above
+	SHORT $1002 // Middle
+	SHORT $1403 // Right End
+
+	// Second to Top
+	SHORT $1024 // Left End
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)
+	SHORT $1424 // Right End
+
+	// Middle
+	SHORT $1024 // Left End
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)
+	SHORT $1424 // Right End
+
+	// Bottom
+	SHORT $1803 // Left End
+	SHORT $1802 // Middle
+	SHORT $1802 // Middle (Alternating)
+	SHORT $1C03 // Right End
+
+	// Fill when highlight is cleared
+	ORG 0xDA374 + 0xC
+	SHORT $1001 $1001
+
+	// Highlight tiles
+	ORG 0x4E9FC 
+	WORD $1001 $1001 $1001
+
+POP

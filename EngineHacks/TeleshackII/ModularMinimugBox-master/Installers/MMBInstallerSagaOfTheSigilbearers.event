@@ -32,6 +32,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	ALIGN 4
 
+	/*
 	MMBTilemap:
 	BYTE (MMBWidth - 1) (MMBHeight - 1) // Don't touch these
 
@@ -48,6 +49,7 @@ After each set of module options are definitions that you can use to adjust the 
 	SHORT $0B $0E $0E $0E $0E $0E $0E $0E $0E $0E $0E $0E $0F//Row3
 	SHORT $17 $18 $19 $0E $0E $0E $0E $0E $0E $0E $0E $0E $0F//Row2
 	SHORT $10 $11 $12 $13 $03 $03 $03 $03 $03 $03 $03 $04 $05//Row1
+	*/
 
 	ALIGN 4
 

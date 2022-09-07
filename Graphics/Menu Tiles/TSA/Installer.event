@@ -1,0 +1,12 @@
+PUSH
+ORG 0xA1742C
+#incbin "dmp/TerrainWindow.tmx.dmp"
+
+ORG 0xA17744
+#incbin "dmp/ObjectiveWindow.tmx.dmp"
+POP
+
+ALIGN 4
+MinimugBoxTSA:
+#incbin "dmp/MinimugBox.tmx.dmp"
+#define MMBTilemap MinimugBoxTSA

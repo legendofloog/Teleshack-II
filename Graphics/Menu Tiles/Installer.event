@@ -1,0 +1,46 @@
+#include "TSA/Installer.event"
+#include "Mapping/Installer.event"
+
+ALIGN 4
+BobMenuTiles:
+#incbin "Image/Dmp/BobMenuTiles.dmp"
+
+ALIGN 4
+BobMenuTilesPalette:
+#incbin "Image/Dmp/BobMenuTiles.png_pal.dmp"
+
+#define BobMenuTilesPaletteBlue  BobMenuTilesPalette
+#define BobMenuTilesPaletteRed   BobMenuTilesPalette + 0x20
+#define BobMenuTilesPaletteGreen BobMenuTilesPalette + 0x40
+#define BobMenuTilesPaletteGray  BobMenuTilesPalette + 0x60
+
+PUSH
+
+ORG 0x5B6450
+// Palletes
+POIN BobMenuTilesPaletteBlue
+POIN BobMenuTilesPaletteRed
+POIN BobMenuTilesPaletteGreen
+POIN BobMenuTilesPaletteGray
+
+// For the stat screen
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+
+// For each color style
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+
+// For the Minimug Box
+ORG 0x8C2EC
+POIN BobMenuTilesPaletteBlue
+ORG 0x8C2F4
+POIN BobMenuTilesPaletteRed
+ORG 0x8C2FC
+POIN BobMenuTilesPaletteGreen
+
+POP
