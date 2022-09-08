@@ -4,6 +4,9 @@ ORG 0xA1742C
 
 ORG 0xA17744
 #incbin "dmp/ObjectiveWindow.tmx.dmp"
+
+ORG 0xA173EC
+#incbin "dmp/TradeWindowTop.tmx.dmp"
 POP
 
 ALIGN 4
