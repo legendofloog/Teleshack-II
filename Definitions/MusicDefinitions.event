@@ -86,6 +86,7 @@
 #define WhatImMadeOfID 0x27C
 #define FF_MysticQuest_IceDungeonID 0x27D
 #define FF_MysticQuest_FocusTowerID 0x27E
+#define GoldenSun_TLA_TheGoldenSunRisesID 0x27F
 
 // Vanilla
 #define TiesOfFriendship 0x7

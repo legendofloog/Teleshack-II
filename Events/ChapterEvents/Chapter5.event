@@ -13,12 +13,50 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, PostPrepsScene,1)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 3)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
 TurnEventPlayer(0, EnemyReinforcementsEvent_B, 5)
 TurnEventPlayer(0, EnemyReinforcementsEvent_C, 6)
 TurnEventPlayer(0, EndOfSurvive, 10)
 END_MAIN
+
+PostPrepsScene:
+CAMERA_CENTERED Cleo
+STAL 30
+FlashCursor(Cleo,30)
+FlashCursor(Loewe,30)
+Text(PostPrepsCh5Text)
+CAMERA_CENTERED [9, 6]
+AddTrap(RedSigilTrapID,9,6)
+AddTrap(RedSigilTrapID,9,7)
+ENUN
+STAL 60
+CAMERA_CENTERED [20, 6]
+AddTrap(RedSigilTrapID,20,5)
+AddTrap(RedSigilTrapID,20,6)
+AddTrap(RedSigilTrapID,20,7)
+ENUN
+STAL 60
+CAMERA_CENTERED [10, 18]
+AddTrap(RedSigilTrapID,10,17)
+AddTrap(RedSigilTrapID,10,18)
+AddTrap(RedSigilTrapID,10,19)
+ENUN
+STAL 60
+CAMERA_CENTERED [19, 18]
+AddTrap(RedSigilTrapID,19,18)
+AddTrap(RedSigilTrapID,19,19)
+ENUN
+STAL 60
+CAMERA_CENTERED [19, 29]
+AddTrap(RedSigilTrapID,19,28)
+AddTrap(RedSigilTrapID,19,29)
+AddTrap(RedSigilTrapID,19,30)
+ENUN
+STAL 60
+NoFade
+ENDA
 
 CharacterBasedEvents:
 END_MAIN
@@ -173,15 +211,16 @@ Text(BoatTalk)
 MUSC Tension
 Text(TensionCh5Text)
 Text(EnemyCh5Text)
+ENUT GuideUnlockElmhurstIsland
 FADI 15
 LOAD1 1 NewPlayers
 LOAD1 1 EnemyUnits
 ENUN
 STAL 3
 GotoPrepScreen
+CAMERA_CENTERED Cleo
+STAL 10
 FADU 60
-Text(PostPrepsCh5Text)
-ENUT GuideUnlockElmhurstIsland
 NoFade
 ENDA
 

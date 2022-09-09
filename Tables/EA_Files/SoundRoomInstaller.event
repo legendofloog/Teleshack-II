@@ -75,6 +75,7 @@ SoundRoomEntry(FF_MysticQuest_DarkKingThemeID,0,DarkKingName)
 SoundRoomEntry(RoarOfDomainID,0,RoarOfDomainName)
 SoundRoomEntry(WhatImMadeOfID,0,WhatImMadeOfName)
 SoundRoomEntry(VsJuliusID,0,VsJuliusName)
+SoundRoomEntry(GoldenSun_TLA_TheGoldenSunRisesID,0,TheGoldenSunRisesName)
 SoundRoomTerminator
 
 PUSH

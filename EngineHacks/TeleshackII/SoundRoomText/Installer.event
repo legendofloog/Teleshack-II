@@ -76,17 +76,20 @@ SoundRoomSource(LightGlintID,ToS_Source)
 SoundRoomSource(SheenaID,ToS_Source)
 SoundRoomSource(ToV_TragicDecisionID,ToV_Source)
 
+//golden sun
+SoundRoomSource(SaturosBattleID,GoldenSunSource)
+SoundRoomSource(GS_VenusLighthouse,GoldenSunSource)
+SoundRoomSource(MarsLighthouseID,GoldenSunTLASource)
+SoundRoomSource(GS_TLA_WalkingForwardWithDeterminationID,GoldenSunTLASource)
+SoundRoomSource(GoldenSun_TLA_TheGoldenSunRisesID,GoldenSunTLASource)
+
 //treasure of the rudras
 SoundRoomSource(TreasureOfRudrasBattleTheme,TreasureoftheRudrasSource)
 SoundRoomSource(CrimeHeartID,TreasureoftheRudrasSource)
 SoundRoomSource(SwordOfTheValiant,TreasureoftheRudrasSource)
 SoundRoomSource(TheQuestForRudrasMines,TreasureoftheRudrasSource)
 
-//golden sun
-SoundRoomSource(SaturosBattleID,GoldenSunSource)
-SoundRoomSource(GS_VenusLighthouse,GoldenSunSource)
-SoundRoomSource(MarsLighthouseID,GoldenSunTLASource)
-SoundRoomSource(GS_TLA_WalkingForwardWithDeterminationID,GoldenSunTLASource)
+
 
 // ys
 SoundRoomSource(Dreaming, Ys1Name)

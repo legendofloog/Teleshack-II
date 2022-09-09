@@ -75,7 +75,7 @@
 #define Ch5xInterludeMapChanges 0x97
 #define Ch5xBoatScenesMapChanges 0x9E
 #define Ch5xGechrysosMapChanges 0x9D
-#define Chapter8EMapChanges 0xD3
+#define Chapter8EMapChanges 0xc3
 #define Ch12xInterludeMapChanges 0xA2
 #define Chapter15CutsceneMapChanges 0xA7
 #define Chapter17CouncilMapChanges 0xB1
@@ -84,6 +84,7 @@
 #define Chapter3CutsceneMapChanges 0xce
 #define Chapter12xDarknessMapChanges 0xC6
 #define Chapter12xPassMapChanges 0xd0
+#define PostgameHubMapChanges 0xd7
 
 
 // MapID
@@ -119,7 +120,7 @@
 #define Ch5xInterludeMap 0x96
 #define Ch5xBoatScenesMap 0x9F
 #define Ch5xGechrysosMap 0xA0
-#define Chapter8EMap 0xD2
+#define Chapter8EMap 0xc4
 #define Ch12xInterludeMap 0xA1
 #define Chapter15CutsceneMap 0xA8
 #define Chapter17CouncilMap 0xB2
@@ -128,6 +129,7 @@
 #define Chapter3CutsceneMap 0xc2
 #define Chapter12xDarknessMap 0xC7
 #define Chapter12xPassMap 0xd1
+#define PostgameHubMap 0xd8
 
 // EventsID
 

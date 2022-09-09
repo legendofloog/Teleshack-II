@@ -17,11 +17,23 @@ END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
+CharacterEventBothWays(0x0, ArenaSoonTM, Cleo, Gladiator)
 END_MAIN
 
+ArenaSoonTM:
+Text(PostgameArenaSoonTMText)
+NoFade
+ENDA
+
 MiscBasedEvents:
-CauseGameOverIfLordDies
+AFEV 0 RefreshCleo 0
 END_MAIN
+
+RefreshCleo:
+SVAL s1 0x42
+UNSET_CONDITION Cleo
+NoFade
+ENDA
 
 
 LocationBasedEvents:
@@ -40,7 +52,11 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Cleo 0x0 Cleo Level(1,Ally,False) [2,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [7,13] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT
+
+GreenUnits:
+UNIT Gladiator Hero 0x0 Level(10,NPC,True) [7,2] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Traps1:
@@ -52,6 +68,8 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+SetBackground(Boat)
+CenterTextbox(PostgameMessage)
 GotoPrepScreen
 ENDA
 

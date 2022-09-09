@@ -215,12 +215,26 @@ to explore the world for the rest of her days,[N]
 often dragging along her rather[N]
 less interested family.[X]
 
+## CadenzaEnding
+Cadenza, as the war concluded, finally found[N]
+a muse from the battles against true divinity.[N]
+He furiously set his pen to paper, writing[N]
+songs that would later spread throughout[N]
+all of Orodreth, despite liberties taken.[X]
+
 ## CadenzaKofiEnding
 Cadenza would write and perform his[N]
 song about the fall of Cherne and[N]
 their supposed love for pistachios.[N]
 While Kofi winced at the inaccuracies,[N]
 he still managed to enjoy the tune.[X]
+
+## MatthiasEnding
+With a heavy heart after discovering Byelen's[N]
+true form, Matthias cast aside the cloth.[N]
+Instead, he wandered Decia and healed the ill,[N]
+refusing compensation. He died with not[N]
+a gold piece to his name, forever a pauper.[X]
 
 ## Matthias_Cromar_Ending
 Matthias insisted on helping Cromar[N]
@@ -257,6 +271,20 @@ they used it to make and sell incredible weapons.[N]
 Mish retired rich, but Ellerey continued to spend[N]
 xyr life working the forge.[X]
 
+## CromarEnding
+After Cherne's defeat, Cromar resolved to never[N]
+again raise his blade and settled in Chouwouj.[N]
+For many years, he held true to this vow,[N]
+but when a succession crisis in Chouwouj arose,[N]
+reports of a strange fog circulated in the land.[X]
+
+## LeinaEnding
+The Liberators never found Daybreak when[N]
+they returned to the catacombs in Cythes.[N]
+With bow in hand, Leina returned to Chowouj[N]
+and announced her right as heir to the land,[N]
+sparking another conflict among the warlords.[X]
+
 ## NoraEnding
 Nora drifted with no purpose for some time,[N]
 but once she heard of the Freyse rebellion,[N]
@@ -264,10 +292,38 @@ she sided with her homeland,[N]
 where she'd go out in a blaze of glory.[X]
 
 ## HansEnding
-With the war over and Radnitz gone, Hans[N]
+With the war over and Korovai gone, Hans[N]
 drifted from one odd job to another, never[N]
 able to hold one down. Historians have tracked[N]
 his path, but none know if he was truly happy.[X]
+
+## JennyEnding
+Having repaid her debt to the Liberators,[N]
+Jenny returned to Decia a hometown hero.[N]
+She spent most of her remaining days[N]
+with her sister and family, quietly[N]
+living the life she always had before.[X]
+
+## MeldanEnding
+Meldan left for his home as soon as he could,[N]
+satisfied with what he'd done for Helman.[N]
+However, he soon became involved in conflicts[N]
+across Decia, easily influenced by any who[N]
+would ask nicely for his help.[X]
+
+## MiloEnding
+Still banned from his beloved pub and having[N]
+lost Korovai, Milo returned home unemployed.[N]
+He decided to open a tavern with money saved[N]
+during the war, which proved successful despite[N]
+much grumbling about the owner's humor.[X]
+
+## IchwepEnding
+With Korovai gone, Ichwep came home to Freyse[N]
+uncertain of her future. After some time,[N]
+she decided to join the new Decian Republic[N]
+government, and her experience as a soldier[N]
+gave her additional insight in politics.[X]
 
 ## EllereyEnding
 Ellerey decided to further xer steelworking[N]
@@ -275,12 +331,26 @@ skills, and wound up becoming Decia's finest.[N]
 In xer old age, xe instead opted[N]
 to teach a new generation xer skills.[X]
 
+## TippanyEnding
+Tippany's quest to help others continued,[N]
+despite Cherne's defeat. She remained behind[N]
+in Cythes, using her healing aptitude to aid[N]
+the common people. One day, she collapsed from[N]
+overwork, surrounded by those she had helped.[X]
+
 ## TakaiEnding
 After the war, Takai went back to his hometown.[N] 
 His good nature led him to helping people[N]
 from all walks of life in any way he could.[N]
 Despite this hard work, he still made[N]
 countless hours with his family.[X]
+
+## PelecayeEnding
+Having failed to have found the plant he searched[N]
+for while he was in Mahemen with the Liberators,[N]
+Pelecaye returned to the country after the war.[N]
+A new plant used for beverages soon spread in[N]
+Mahemen, but Pelecaye was never seen again.[X]
 
 ## JacinthEnding
 Jacinth returned to Chouwouj a hero.[N]
@@ -379,6 +449,13 @@ For a short while, anyways. Even god's[N]
 treachery couldn't stay her from destiny,[N]
 and she resumed her travels anew.[X]
 
+## GrotoEnding
+For reasons as unknown to scholars as his[N]
+original joining, Groto left the Liberators[N]
+immediately after the war. However, tales[N]
+of his telepathic exploits became children's[N]
+stories that became popular throughout Orodreth.[X]
+
 ## CatrinEnding
 Catrin assisted with the rebuilding of[N]
 Wustheim, and was later elected mayor.[N]
@@ -456,7 +533,7 @@ Varga, Stalwart Knight[X]
 Delilah, Irksome Cleric[X]
 
 ## LongxiaTitle
-Queen of Merchants[X]
+Queen of Merchants, Longxia[X]
 
 ## FangaiTitle
 Chef Fangai[X]
@@ -464,17 +541,47 @@ Chef Fangai[X]
 ## TobieTitle
 Sky Knight Tobie[X]
 
+## MatthiasTitle
+Matthias the Devoted[X]
+
+## CadenzaTitle
+Cadenza, Enigmatic Maestro[X]
+
+## CromarTitle
+Cromar the Nightcaller[X]
+
+## LeinaTitle
+Leina, Lady of Chouwouj[X]
+
 ## NoraTitle
-Nora, Radnitz's Blade[X]
+Nora, Korovai's Blade[X]
 
 ## HansTitle
 Hans, Aimless Knight[X]
+
+## MeldanTitle
+Weathervane Meldan[X]
+
+## JennyTitle
+Jenny, Cautious Cavalier[X]
+
+## IchwepTitle
+Taciturn Soldier, Ichwep[X]
+
+## MiloTitle
+Boisterous Soldier, Milo[X]
 
 ## EllereyTitle
 Ellerey, Steel Guru[X]
 
 ## TakaiTitle
 Takai, Fierce Father[X]
+
+## TippanyTitle
+Tippany, Repenting Curate[X]
+
+## PelecayeTitle
+Desert Seeker, Pelecaye[X]
 
 ## JacinthTitle
 Jacinth, Scintillating Dancer[X]
@@ -508,6 +615,9 @@ Wanderer Zhara[X]
 
 ## OjasviTitle
 Ojasvi Srivastana[X]
+
+## GrotoTitle
+Groto the Genius[X]
 
 ## NgondalaTitle
 Warlord Ngondala[X]

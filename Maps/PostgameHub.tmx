@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="FlasubanVillage" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="8C008F92.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="15">
+  <properties>
+   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+   <property name="ChapterID" value="PostgameHub"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="PostgameHubMapChanges"/>
+   <property name="MapID" value="PostgameHubMap"/>
+   <property name="ObjectType" value="FlasubanVillageObjectID"/>
+   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+321,546,548,321,323,716,486,487,488,716,321,323,548,546,323,
+353,19,20,21,355,780,274,274,274,780,353,16,17,18,355,
+385,51,52,53,387,194,306,306,306,289,385,48,49,50,387,
+225,193,193,161,203,138,162,290,257,129,161,290,162,161,129,
+130,162,258,139,168,170,137,207,138,258,162,130,161,162,289,
+194,290,137,135,172,137,135,272,136,138,289,226,137,197,271,
+271,134,199,232,225,237,80,81,82,200,129,137,135,303,230,
+239,229,303,200,129,171,112,113,114,232,137,269,236,258,290,
+321,129,420,231,134,161,205,272,272,238,169,170,289,193,257,
+548,387,161,171,303,202,297,272,272,172,129,226,758,825,826,
+825,757,758,757,193,716,231,272,232,716,420,162,728,853,853,
+853,853,853,853,761,780,169,239,170,780,129,420,760,853,853,
+853,853,853,853,853,757,687,688,689,760,757,758,853,853,853,
+853,853,853,853,853,853,719,720,721,853,853,853,853,853,853,
+853,853,853,853,853,853,751,752,753,853,853,853,853,853,853
+</data>
+ </layer>
+</map>

@@ -216,6 +216,9 @@ ENDA
 
 OhNoWTF:
 Music(WindyDayBirdsSoundEffect)
+CameraCursor(Cleo)
+Text(LoeweCleoFatigueTalk)
+STAL 5
 CameraCursor(Hilmar)
 Text(Ch4WarningText)
 STAL 5
