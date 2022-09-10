@@ -6,6 +6,7 @@ EventPointerTable(ThraciaCastleTileAnimationsID, ThraciaCastleTileAnimations)
 EventPointerTable(FF5WaveCaveTileAnimationsID, FF5WaveCaveTileAnimations)
 EventPointerTable(EndgameAnimationsID, EndgameAnimations)
 EventPointerTable(MansterAnimationsID, MansterAnimations)
+EventPointerTable(ThraciaFieldsAnimationsID, ThraciaFieldsAnimations)
 
 ALIGN 4
 FlasubanVillageTileAnimations0:
@@ -180,6 +181,50 @@ MansterAnimations5:
 ALIGN 4
 MansterAnimations6:
 #incbin "TilesetAnimations/MansterAnims/animations_006.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations0:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_000.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations1:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_001.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations2:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_002.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations3:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_003.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations4:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_004.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations5:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_005.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations6:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_006.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations7:
+#incbin "TilesetAnimations/ThraciaFieldsAnims/animations_007.dmp"
+
+ALIGN 4
+ThraciaFieldsAnimations:
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations0)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations1)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations2)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations3)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations4)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations5)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations6)
+tilesetAnimation(16,0x1000,ThraciaFieldsAnimations7)
+WORD 0 0
 
 ALIGN 4
 FlasubanVillageTileAnimations:
