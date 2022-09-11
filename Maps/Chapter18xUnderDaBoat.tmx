@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="FlasubanVillage" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="FlasubanVillage.png" width="512" height="512"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+   <property name="ChapterID" value="Ch18xBoatScenes"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Ch18xBoatScenesMapChanges"/>
+   <property name="MapID" value="Ch18xBoatScenesMap"/>
+   <property name="ObjectType" value="FlasubanVillageObjectID"/>
+   <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+885,885,885,853,709,845,852,771,644,772,818,709,885,885,885,
+885,885,885,856,709,877,846,846,846,846,846,709,885,885,885,
+885,885,885,885,709,877,818,709,878,711,879,709,886,887,885,
+885,885,885,885,675,820,644,772,878,771,820,676,888,885,885,
+885,885,885,885,709,852,846,846,878,846,852,709,853,885,885,
+885,885,885,888,709,877,878,878,878,878,846,709,853,885,885,
+885,885,885,853,709,877,878,878,878,878,785,709,888,885,885,
+885,885,885,853,709,877,786,787,787,879,817,709,853,885,885,
+885,885,885,853,709,877,878,819,819,445,878,709,888,885,885,
+885,885,885,856,709,877,878,878,786,878,351,709,854,885,885
+</data>
+ </layer>
+</map>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="16" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="16" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="1">
  <tileset firstgid="1" source="Desert Bastion.tsx"/>
  <layer id="1" name="Tile Layer 1" width="16" height="10">
   <properties>
+   <property name="Anims1" value="FieldsTileAnimationsID"/>
    <property name="ChapterID" value="Chapter17Council"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="Chapter17CouncilMapChanges"/>
@@ -22,6 +23,23 @@
 769,834,940,557,555,620,1004,1003,621,556,1003,557,444,833,769,769,
 769,769,770,770,770,802,939,1004,589,801,770,770,770,770,770,769,
 769,770,769,770,769,834,939,621,556,833,770,770,770,769,770,770
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="16" height="10" visible="0">
+  <properties>
+   <property name="ID" value="0"/>
+  </properties>
+  <data encoding="csv">
+132,267,273,268,194,26,159,671,25,194,199,403,402,402,202,204,
+267,201,404,202,270,131,62,736,57,99,297,429,430,431,403,202,
+201,403,921,403,234,100,94,736,21,99,265,461,462,463,193,403,
+403,436,434,296,300,58,191,23,194,199,436,493,494,495,434,298,
+233,193,403,264,204,24,767,53,164,295,434,921,402,404,402,202,
+235,295,434,404,202,204,28,767,57,199,918,404,434,921,918,403,
+163,100,297,434,296,236,68,97,98,523,523,523,523,523,523,523,
+67,99,299,302,100,163,131,129,130,622,623,1003,1003,1003,622,559,
+68,915,132,164,916,13,14,161,162,701,701,701,701,701,701,701,
+15,100,131,100,68,45,46,28,703,565,533,535,565,566,567,567
 </data>
  </layer>
 </map>

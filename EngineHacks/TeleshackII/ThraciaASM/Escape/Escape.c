@@ -208,7 +208,7 @@ void InterludeRemovalRoutine(){ //related to escape since it checks if units are
     Unit* someUnit;
     for (i = 0; i <= 60; i++){
         someUnit = &gUnitArrayBlue[i];
-        if (someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x1B){ //kwame loewe or cleo
+        if (someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x3F){ //kwame loewe or cleo
             //do nothing since they'll be removed in chapter events if necessary
         }
         else{
@@ -238,7 +238,7 @@ void InterludeReturnRoutine(){
     Unit* someUnit;
     for (i = 0; i <= 60; i++){
         someUnit = &gUnitArrayBlue[i];
-        if ( someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x1B){ //kwame loewe or cleo
+        if ( someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x3F){ //kwame loewe or cleo
             //do nothing since they'll be returned in chapter events if necessary
         }
         else{

@@ -358,7 +358,7 @@
 
 // KassandraFalco
 	setPalette(89,KassandraFalco)
-	setCBSP(89,Kassandra,1,PegasusKnight)
+	setCBSP(89,Kassandra,1,Falcoknight)
 
 // ViktorSage
 	setPalette(90,ViktorSage)
@@ -378,7 +378,7 @@
 
 // KassandraRealFalco
 	setPalette(94,KassandraRealFalco)
-	setCBSP(94,KassandraReal,1,PegasusKnight)
+	setCBSP(94,KassandraReal,1,Falcoknight)
 
 // CoraliaNoble
 	setPalette(95,CoraliaNoble)
@@ -555,3 +555,15 @@
 // TippanyDarkBishop
 	setPalette(138,TippanyDarkBishop)
 	setCBSP(138,Tippany, 3, DarkBishop_F)
+
+// KorovaiDukeKnight
+	setPalette(139,KorovaiDukeKnight)
+	setCBSP(139,Korovai, 1, DukeKnight)
+
+// EponyNoble
+	setPalette(140,EponyNoble)
+	setCBSP(140,Epony, 1, Noble_F)
+
+// KailaniHighPriest
+	setPalette(141,KailaniHighPriest)
+	setCBSP(141,Kailani, 1, HighPriest_F)

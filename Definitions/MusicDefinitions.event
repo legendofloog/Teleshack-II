@@ -99,3 +99,5 @@
 #define Nighttime 0x4A
 #define WaterFlowingSoundEffect 0x4B
 #define SoftSwooshSoundEffect 0x4D
+#define SwordUnsheathingEffect 0xCE
+#define DivineWeaponEffect 0xF0

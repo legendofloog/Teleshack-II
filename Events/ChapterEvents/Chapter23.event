@@ -367,11 +367,11 @@ ENUN
 MUSC PMD_PowerOfDarknessID
 Text(Ch23InThePalace5)
 FAWI 10
-SOUN 0xF0 // divine weapon sound?
+SOUN DivineWeaponEffect // divine weapon sound?
 STAL 20
 FAWU 10
 FAWI 10
-SOUN 0xF0 // divine weapon sound?
+SOUN DivineWeaponEffect // divine weapon sound?
 STAL 20
 SVAL s1 0x2 // set everyone to be gray
 SET_CONDITION CoraliaReal
@@ -386,7 +386,7 @@ FAWU 5
 MUSC MarsLighthouseID
 Text(Ch23InThePalace8)
 FAWI 10
-SOUN 0xF0
+SOUN DivineWeaponEffect
 STAL 20
 SVAL s1 0x2
 UNSET_CONDITION CoraliaReal

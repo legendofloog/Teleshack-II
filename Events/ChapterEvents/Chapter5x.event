@@ -435,6 +435,8 @@ RECLASS Loewe Scaleshot_Dismounted
 LOAD1 0 LoeweBeginningCutsceneGroup
 ENUN
 FADU 15
+BROWNBOXTEXT Ch18xDecianSea[8,8]
+STAL 10
 MUSC WaterFlowingSoundEffect
 CAMERA Loewe
 FlashCursor(Loewe,60)

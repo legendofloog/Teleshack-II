@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="16" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="16" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <tileset firstgid="1" source="FlasubanVillage.tsx"/>
- <layer id="1" name="Tile Layer 1" width="16" height="17">
+ <layer id="1" name="Tile Layer 1" width="16" height="17" visible="0">
   <properties>
    <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
    <property name="ChapterID" value="Chapter4"/>
@@ -32,7 +32,7 @@
 354,324,329,331,35,758,915,915,761,100,68,11,810,811,489,362
 </data>
  </layer>
- <layer id="3" name="EpicChest" width="16" height="17">
+ <layer id="3" name="EpicChest" width="16" height="17" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="0"/>
@@ -58,6 +58,30 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Ch18xMap" width="16" height="17">
+  <properties>
+   <property name="ID" value="1"/>
+  </properties>
+  <data encoding="csv">
+225,420,796,857,858,727,226,193,420,194,162,420,916,917,481,482,
+194,129,728,886,858,761,193,162,420,225,324,162,954,923,385,482,
+420,225,420,796,858,725,225,257,290,321,484,916,986,955,193,386,
+162,193,258,690,692,193,420,130,420,353,484,922,986,986,981,162,
+322,323,257,754,756,161,420,162,226,385,484,954,986,986,955,420,
+482,760,826,915,915,759,129,194,420,257,388,948,1016,1017,1013,289,
+514,796,854,855,856,727,290,420,258,225,226,290,162,225,289,193,
+826,854,885,858,729,420,323,225,129,130,225,420,290,161,162,420,
+855,885,885,858,757,513,484,419,258,225,417,418,419,129,162,129,
+890,891,886,885,856,759,388,226,193,420,762,759,194,194,257,420,
+420,130,726,886,885,856,825,826,759,760,854,856,687,689,759,194,
+162,257,420,728,886,885,885,885,855,855,885,888,751,753,853,757,
+257,130,193,258,726,889,890,891,887,885,885,795,225,130,728,853,
+420,257,129,161,162,161,420,289,728,886,888,725,420,129,420,730,
+129,161,225,420,257,193,161,290,161,690,692,161,193,417,419,290,
+257,226,162,193,420,760,826,759,129,754,756,289,258,290,290,323,
+420,161,417,418,547,728,854,855,859,915,915,759,225,420,385,514
 </data>
  </layer>
 </map>

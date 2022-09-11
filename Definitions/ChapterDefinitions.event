@@ -37,6 +37,7 @@
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
 #define Chapter3Cutscene 0x24
+#define Ch18xBoatScenes 0x27
 #define Chapter12xPass 0x28
 #define Chapter12xDarkness 0x29
 #define EpilogueChapter 0x2A
@@ -85,6 +86,7 @@
 #define Chapter12xDarknessMapChanges 0xC6
 #define Chapter12xPassMapChanges 0xd0
 #define PostgameHubMapChanges 0xd7
+#define Ch18xBoatScenesMapChanges 0xd9
 
 
 // MapID
@@ -130,6 +132,7 @@
 #define Chapter12xDarknessMap 0xC7
 #define Chapter12xPassMap 0xd1
 #define PostgameHubMap 0xd8
+#define Ch18xBoatScenesMap 0xda
 
 // EventsID
 

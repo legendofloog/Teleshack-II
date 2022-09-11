@@ -417,3 +417,12 @@ TippanyDarkMage:
 TippanyDarkBishop:
 	#incbin "./_palettes/TippanyDarkBishop.lzpal" 
 
+KorovaiDukeKnight:
+	#incbin "./_palettes/KorovaiDukeKnight.lzpal" 
+
+EponyNoble:
+	#incbin "./_palettes/EponyNoble.lzpal" 
+
+KailaniHighPriest:
+	#incbin "./_palettes/KailaniHighPriest.lzpal" 
+
