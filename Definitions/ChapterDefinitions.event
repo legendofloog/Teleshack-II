@@ -197,7 +197,7 @@
 #define Chapter4VillagePaletteID 0xcc
 #define FlasubanVillageSteamPaletteID 0xd2
 #define MansterPaletteID 0xD4
-#define ThraciaFieldsNormalPaletteID 0xD7
+#define ThraciaFieldsNormalPaletteID 0xDC
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -218,5 +218,5 @@
 #define FieldsTileAnimationsID 0x05
 #define EndgameAnimationsID 0xcd
 #define MansterAnimationsID 0xD6
-#define ThraciaFieldsAnimationsID 0xD9
+#define ThraciaFieldsAnimationsID 0xDb
 
