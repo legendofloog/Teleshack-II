@@ -128,7 +128,23 @@
     MansterConfig:
     #incbin "Config/manster_comp.dmp"
 
+// Thracia Fields
+ALIGN 4
+    ThraciaFieldsObject:
+    #incbin "Object/fe5plainsimproved.dmp"
 
+    ALIGN 4
+    ThraciaFieldsNormalPalette:
+    #incbin "Palette/fe5plainsimproved_pal.dmp"
+
+    ALIGN 4
+    ThraciaFieldsMapchipConfig:
+    #incbin "Config/fe5plainsv2_comp.dmp"
+
+
+    EventPointerTable(ThraciaFieldsObjectID,ThraciaFieldsObject)
+    EventPointerTable(ThraciaFieldsNormalPaletteID,ThraciaFieldsNormalPalette)
+    EventPointerTable(ThraciaFieldsMapchipConfigID,ThraciaFieldsMapchipConfig)
     EventPointerTable(DesertBastionObjectID, DesertBastionObject)
     EventPointerTable(DesertBastionPaletteID, DesertBastionPalette)
     EventPointerTable(DesertBastionMapchipConfigID, DesertBastionMapchipConfig)
