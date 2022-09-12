@@ -254,13 +254,13 @@ END_MAIN
 
 ALIGN 4
 Ch18xVendor:
-	SHLI Fire Elfire Thunder Wind Lightning Flux Jormungand
+	SHLI Thunder AlairsGale Elfire Lightning SpellMirror Flux Arachnid Jormungand
 	BYTE 0x0 0x0
 	ALIGN 4
 
 ALIGN 4
 Ch18xArmory:
-	SHLI IronSword SteelSword Armorslayer IronLance SteelLance Horseslayer IronAxe SteelAxe Hammer IronBow SteelBow DaShoota
+	SHLI SteelSword Longsword KillingEdge SteelLance Longlance MysticLance SteelAxe BattleAxe DevilAxe SteelBow Longbow GaleBow
 	BYTE 0x0 0x0
 	ALIGN 4
 
@@ -415,7 +415,7 @@ CAMERA_CENTERED Loewe
 FlashCursor(Loewe,30)
 FlashCursor(Cleo,30)
 STAL 10
-MUSC Rovers
+MUSC SheenaID
 Text(Ch18xBeginningScene3PortLazar1)
 STAL 10
 MOVE 15 Loewe [11, 5]
@@ -575,18 +575,27 @@ CAMERA_CENTERED [0,14]
 STAL 120
 FADU 10
 STAL 10
+BROWNBOXTEXT Ch18xHourLaterText[8,8]
+STAL 10
 LOAD1 2 KwameCleoGroupEndScene
 ENUN
 STAL 10
 FlashCursor(KwameReal,30)
 FlashCursor(Cleo,30)
 Text(Ch18xEndingScene2InTheClearing1)
+CAMERA_CENTERED Loewe
+ENUN
+FlashCursor(Loewe,60)
+CAMERA_CENTERED Cleo
+ENUN
 STAL 10
-FadeOutMusic
+Text(Ch18xEndingScene2InTheClearing1_2)
+STAL 10
 CamOn
 MOVE 15 Cleo [8,7]
 MOVE 10 KwameReal [10,7]
 ENUN
+FadeOutMusic
 CamOff
 CAMERA_CENTERED Loewe
 FlashCursor(Loewe,60)
@@ -615,7 +624,7 @@ Text(Ch18xEndingScene2InTheClearing4)
 MOVE 15 KwameReal [0,15]
 ENUN
 MOVE_1STEP 5 Cleo 1
-STAL 10
+STAL 30
 Text(Ch18xEndingScene2InTheClearing5)
 STAL 10
 MOVE 20 Cleo [0,14]
