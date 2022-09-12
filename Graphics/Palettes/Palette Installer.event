@@ -426,3 +426,6 @@ EponyNoble:
 KailaniHighPriest:
 	#incbin "./_palettes/KailaniHighPriest.lzpal" 
 
+ChernePalette:
+	#incbin "./_palettes/ChernePalette.lzpal" 
+

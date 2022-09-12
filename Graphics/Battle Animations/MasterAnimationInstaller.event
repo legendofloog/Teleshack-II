@@ -362,3 +362,16 @@
 {
     #include "Animations/Sage_FE6_7_Pants(Levin64)/Magic Installer.event"
 }
+
+{
+    #include "Animations/Bulwark King (Leo_link)/Sword Installer.event"
+    #include "Animations/Bulwark King (Leo_link)/Magic Installer.event"
+}
+
+{
+    #include "Animations/Nergal (IS)/Magic Installer.event"
+}
+
+{
+    #include "Animations/Patriarch (MrNight48, DerTheVaporeon)/Magic Installer.event"
+}

@@ -81,7 +81,7 @@ UNIT Athanasius DarkBishop 0x0 Level(15,Ally,False) [16,35] 0x0 0x0 0x0 0x0 [Lun
 UNIT
 
 InitialEnemyUnits:
-UNIT Cherne DarkBishop 0x0 Level(20,Enemy,False) [15,1] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
+UNIT Cherne CherneClass 0x0 Level(20,Enemy,False) [15,1] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
 UNIT EndgameGenerics Swordmaster 0x0 Level(15, Enemy, True) [11,34] 0x0 0x0 0x0 0x0 [MasterSword] AttackInRangeAI
 UNIT EndgameGenerics Sage 0x0 Level(15, Enemy, True) [7,35] 0x0 0x0 0x0 0x0 [Tornado] AttackInRangeAI
 UNIT EndgameGenerics HighPriest 0x0 Level(15, Enemy, True) [19,33] 0x0 0x0 0x0 0x0 [Nosferatu, Malkhut] AttackInRangeAI
@@ -171,7 +171,7 @@ UNIT EndgameGenerics Baron 0x0 Level(15, Enemy, True) [0,31] 0x0 0x0 0x1 REDA0R3
 UNIT
 
 MahemenVsCherneCutscene:
-UNIT Cherne DarkBishop 0x0 Level(20,Enemy,False) [15,5] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
+UNIT Cherne CherneClass 0x0 Level(20,Enemy,False) [15,5] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
 UNIT EndgameGenerics Swordmaster 0x0 Level(15, Enemy, True) [13,7] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
 UNIT EndgameGenerics Halberdier 0x0 Level(15, Enemy, True) [14,6] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
 UNIT EndgameGenerics Hero 0x0 Level(15, Enemy, True) [16,6] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI

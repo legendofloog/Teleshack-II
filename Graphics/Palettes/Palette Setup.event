@@ -567,3 +567,7 @@
 // KailaniHighPriest
 	setPalette(141,KailaniHighPriest)
 	setCBSP(141,Kailani, 1, HighPriest_F)
+
+// ChernePalette
+	setPalette(142,ChernePalette)
+	setCBSP(142,Cherne, 1, CherneClass)

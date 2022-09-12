@@ -531,8 +531,8 @@ UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(15,NPC,True) [13,0] 0x0 0x0
 UNIT 
 
 OrfeasMithrasGroup: //mithras, orfeas
-UNIT Raschwitz_Ch1 HighPriest 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA9R11 [StoneSword] NoAI
-UNIT Tyr_Ch2 Baron 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneSword] NoAI
+UNIT Raschwitz_Ch1 ByelenClass 0x0 Level(15,Enemy,True) [14,11] 0x0 0x0 0x1 REDA9R11 [StoneSword] NoAI
+UNIT Tyr_Ch2 Emperor 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x1 REDA9R12 [StoneSword] NoAI
 UNIT
 
 LeonidasKassandraGroup: //leonidas, kassandra

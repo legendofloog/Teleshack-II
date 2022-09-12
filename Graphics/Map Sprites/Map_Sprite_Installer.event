@@ -435,3 +435,27 @@ AugurStanding:
 ALIGN 4
 AugurMoving:
 #incbin "Dmp/augur_walk(knabepicer).dmp"
+
+ALIGN 4
+EmperorStanding:
+#incbin "Dmp/Marshall (U) Sword {Nuramon}-stand.dmp"
+
+ALIGN 4
+EmperorMoving:
+#incbin "Dmp/Marshall (U) Sword {Nuramon}-walk.dmp"
+
+ALIGN 4
+ByelenStanding:
+#incbin "Dmp/Patriarch (M) {Unknown}-stand.dmp"
+
+ALIGN 4
+ByelenMoving:
+#incbin "Dmp/Patriarch (M) {Unknown}-walk.dmp"
+
+ALIGN 4
+CherneStanding:
+#incbin "Dmp/Dark Druid (M) {IS}-stand.dmp"
+
+ALIGN 4
+CherneMoving:
+#incbin "Dmp/Dark Druid (M) {IS}-walk.dmp"

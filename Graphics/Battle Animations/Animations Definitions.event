@@ -253,6 +253,12 @@
 
 #define SageMagicAnim 0x6d
 
+#define EmperorSwordAnim 0xB5
+#define EmperorMagicAnim 0xB6
+
+#define CherneMagicAnim 0xB7
+#define ByelenMagicAnim 0xB8
+
 ALIGN 4
 SageMAnims:
 AnimaAnim(SageMagicAnim)
@@ -743,7 +749,6 @@ HandAxeAnim(0x1D)
 UnarmedAnim(0x1F)
 EndAnim
 
-
 ALIGN 4
 AugurAnims:
 SpecialAnim(AugurDragonstoneAnim,Dragonstone)
@@ -760,4 +765,24 @@ ALIGN 4
 SniperFAnims:
 BowAnim(SniperFBowAnim)
 UnarmedAnim(SniperFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+EmperorAnims:
+SwordAnim(EmperorSwordAnim)
+AnimaAnim(EmperorMagicAnim)
+DarkAnim(EmperorMagicAnim)
+UnarmedAnim(EmperorMagicAnim)
+EndAnim
+
+ALIGN 4
+CherneAnims:
+DarkAnim(CherneMagicAnim)
+UnarmedAnim(CherneMagicAnim)
+EndAnim
+
+ALIGN 4
+ByelenAnims:
+LightAnim(ByelenMagicAnim)
+UnarmedAnim(ByelenMagicAnim)
 EndAnim
