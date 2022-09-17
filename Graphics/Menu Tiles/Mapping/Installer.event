@@ -6,25 +6,25 @@ PUSH
 	SHORT $102A // Left End
 	SHORT $1028 // Right of above
 	SHORT $1028 // Middle
-	SHORT $142A // Right End
+	SHORT $1045 // Right End
 
 	// Second to Top
 	SHORT $1029 // Left End
 	SHORT $1001 // Middle
 	SHORT $1001 // Middle (Alternating)
-	SHORT $1429 // Right End
+	SHORT $1441 // Right End
 
 	// Middle
 	SHORT $1029 // Left End
 	SHORT $1001 // Middle
 	SHORT $1001 // Middle (Alternating)
-	SHORT $1429 // Right End
+	SHORT $1441 // Right End
 
 	// Bottom
-	SHORT $182A // Left End
-	SHORT $1828 // Middle
-	SHORT $1828 // Middle (Alternating)
-	SHORT $1C2A // Right End
+	SHORT $1844 // Left End
+	SHORT $1840 // Middle
+	SHORT $1840 // Middle (Alternating)
+	SHORT $1C42 // Right End
 
 	// Fill when highlight is cleared
 	ORG 0xDA374 + 0xC

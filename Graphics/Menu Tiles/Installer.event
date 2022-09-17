@@ -43,4 +43,14 @@ POIN BobMenuTilesPaletteRed
 ORG 0x8C2FC
 POIN BobMenuTilesPaletteGreen
 
+// Battle Forecast
+ORG 0x36D2C
+POIN BobMenuTilesPaletteBlue
+ORG 0x36D34
+POIN BobMenuTilesPaletteRed
+ORG 0x36D3C
+POIN BobMenuTilesPaletteGreen
+ORG 0x36D48
+POIN BobMenuTilesPaletteGray
+
 POP
