@@ -25,7 +25,13 @@ TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 10)
 TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry1, 12)
 TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 17)
 TurnEventPlayer(0, EnemyReinforcementsEvent_Hurry2, 18)
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 END_MAIN
+
+ClearSeraFlag:
+ENUF 0x7C
+NoFade
+ENDA
 
 CharacterBasedEvents:
 CharacterEventBothWays(13, RunespearEvent, Tobie, Mish)

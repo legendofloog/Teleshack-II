@@ -253,6 +253,8 @@
 #define Shades 0xD7
 #define EndgameGenerics 0xD7
 #define Houvaina 0xBB
+#define MureibEndgame 0xD8
+#define MureibFinal 0xD8
 
 
 #define Bazba 0x48

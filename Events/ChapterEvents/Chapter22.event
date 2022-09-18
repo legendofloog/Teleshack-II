@@ -16,6 +16,7 @@ TurnBasedEvents:
 TurnEventPlayer(0,TrajanArrive,3)
 TurnEventPlayer(0,ThiefAppear,6)
 TurnEventPlayer(0,Reinforcements_Spawn_A,7)
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 END_MAIN
 
 CharacterBasedEvents:
@@ -174,6 +175,11 @@ NPCVillage1:
 SetBackground(House1)
 Text(NPCVillage1Text)
 CALL $9EE2C4
+NoFade
+ENDA
+
+ClearSeraFlag:
+ENUF 0x7C
 NoFade
 ENDA
 

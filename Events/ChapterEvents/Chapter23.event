@@ -23,6 +23,7 @@ TurnEventPlayer(0, CoraliaEliasBlue, 1)
 TurnEventPlayer(0, Reinforcement1, 3)
 TurnEventPlayer(0, Reinforcement2, 5)
 TurnEventPlayer(0, KassandraCharges, 7)
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 END_MAIN
 
 CoraliaEliasBlue:
@@ -514,6 +515,11 @@ LOAD1 1 FinalEnemyGroup
 ENUN
 MountAll
 GotoPrepScreen
+NoFade
+ENDA
+
+ClearSeraFlag:
+ENUF 0x7C
 NoFade
 ENDA
 

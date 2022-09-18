@@ -18,11 +18,14 @@ TurnEventPlayer(0x0, Turn1Speeches, 1)
 TurnEventPlayer(0x0, CherneVantage, 2)
 TurnEventPlayer(0x0, ChernePass, 4)
 TurnEventPlayer(0x0, CherneFortune, 3)
+TurnEventPlayer(0x0, MureibFinalLoad, 3)
 TurnEventPlayer(0x0, Turn2Reinforce, 2)
 TurnEventPlayer(0x0, Turn4Reinforce, 4)
 TurnEventPlayer(0x0, Turn6Reinforce, 6)
 TurnEventPlayer(0x0, Turn8Reinforce, 8)
 TurnEventPlayer(0x0, Turn10Reinforce, 10)
+TurnEventPlayer(0x0, EternalReinforce, 12, 255)
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 	END_MAIN
 
 ALIGN 32
@@ -68,6 +71,8 @@ LoadUnit(13, 38)
 LoadUnit(15, 38)
 LoadUnit(17, 38)
 LoadUnit(19, 38)
+LoadUnit(14, 39)
+LoadUnit(16, 39)
 UNIT
 
 OutOfCatacombsLoeweCleo:
@@ -160,6 +165,11 @@ UNIT EndgameGenerics Warrior 0x0 Level(15, Enemy, True) [0,22] 0x0 0x0 0x1 REDA0
 UNIT EndgameGenerics Champion 0x0 Level(15, Enemy, True) [29,22] 0x0 0x0 0x1 REDA29R22 [SilverLance] ChargeAI
 UNIT
 
+MidReinforcements3:
+UNIT EndgameGenerics Sniper 0x0 Level(15, Enemy, True) [0,22] 0x0 0x0 0x1 REDA0R22 [SilverBow] ChargeAI
+UNIT EndgameGenerics DarkBishop 0x0 Level(15, Enemy, True) [29,22] 0x0 0x0 0x1 REDA29R22 [Jormungand] ChargeAI
+UNIT
+
 UpperReinforcements1:
 UNIT EndgameGenerics MageKnight 0x0 Level(15, Enemy, True) [0,12] 0x0 0x0 0x1 REDA0R12 [Tornado] ChargeAI
 UNIT EndgameGenerics ArchKnight 0x0 Level(15, Enemy, True) [0,31] 0x0 0x0 0x1 REDA0R31 [SilverBow] ChargeAI
@@ -168,6 +178,10 @@ UNIT
 UpperReinforcements2:
 UNIT EndgameGenerics General 0x0 Level(15, Enemy, True) [0,12] 0x0 0x0 0x1 REDA0R12 [SilverAxe] ChargeAI
 UNIT EndgameGenerics Baron 0x0 Level(15, Enemy, True) [0,31] 0x0 0x0 0x1 REDA0R31 [Hel] ChargeAI
+UNIT
+
+MureibFinalGroup:
+UNIT MureibEndgame Bishop 0x0 Level(20,NPC, False) [18,39] 0x0 0x0 0x1 REDA18R34 [Nosferatu, Sleep] ChargeAI
 UNIT
 
 MahemenVsCherneCutscene:
@@ -211,6 +225,11 @@ SpawnReinforcements(MidReinforcements2)
 NoFade
 ENDA
 
+ClearSeraFlag:
+ENUF 0x7C
+NoFade
+ENDA
+
 Turn4Reinforce:
 SpawnReinforcements(FlierReinforcements2)
 SpawnReinforcements(BackReinforcements1)
@@ -220,12 +239,14 @@ ENDA
 Turn6Reinforce:
 SpawnReinforcements(BackReinforcements2)
 SpawnReinforcements(MidReinforcements1)
+SpawnReinforcements(FlierReinforcements1)
 NoFade
 ENDA
 
 Turn8Reinforce:
 SpawnReinforcements(FlierReinforcements1)
 SpawnReinforcements(FlierReinforcements2)
+SpawnReinforcements(BackReinforcements1)
 NoFade
 ENDA
 
@@ -233,6 +254,18 @@ Turn10Reinforce:
 SpawnReinforcements(FlierReinforcements1)
 SpawnReinforcements(MidReinforcements2)
 SpawnReinforcements(BackReinforcements1)
+NoFade
+ENDA
+
+EternalReinforce:
+CHECK_TURNS
+SVAL 0x7 0x1
+SAND 0xC7C
+BNE 0x9000 0xC 0x0
+SpawnReinforcements(FlierReinforcements2)
+SpawnReinforcements(MidReinforcements1)
+SpawnReinforcements(BackReinforcements1)
+LABEL 0x9000
 NoFade
 ENDA
 
@@ -275,10 +308,13 @@ NoFade
 ENDA
 
 Turn1Speeches:
+MUSC FE5_InTheBattle_Fate
 CameraCursor(Loewe)
 Text(EpicSpeechOfEpicness)
+MUSC KwameID
 CameraCursor(Cherne)
 Text(CherneHasRegrets)
+MUSC WindyDaySoundEffect
 CameraCursor(Cleo)
 Text(CleoTellsYouToCheckInventory)
 NoFade
@@ -302,12 +338,19 @@ Text(CherneFortuneWarning)
 NoFade
 ENDA
 
+MureibFinalLoad:
+SpawnReinforcements(MureibFinalGroup)
+CameraCursor(MureibEndgame)
+Text(MureibFinalSpawnText)
+NoFade
+ENDA
 
 BeginningScene:
 EraseAllFatigue
 DISA_IF Kwame
 SetBackground(0x0D)
 Text(RunningOutOfCatacombs)
+MUSC WindyDaySoundEffect
 CAMERA_CENTERED [24, 33]
 LOAD 1 OutOfCatacombsLoeweCleo
 EraseBackground
@@ -317,6 +360,7 @@ MountSingleUnit(Loewe)
 SingleUnitMove(Loewe, 10, 24, 29)
 STAL 30
 Text(SeeingMahemenGetOwned)
+MUSC FFTAnxiety
 LOAD 1 MahemenVsCherneCutscene
 CAMERA_CENTERED [15, 8]
 SET_SOMETHING Ch2_Selese_Guy
@@ -340,8 +384,10 @@ Text(KailaniMustMakeHerRetreat)
 SingleUnitMove(Kailani, 30, 9, 24)
 DISA Kailani
 CameraCursor(Cherne)
+MUSC KwameID
 Text(CherneHasAMoment)
 SetBackground(Village2)
+MUSC Sortie_Formation
 Text(MahemeniReunionConvoOne)
 FADI 5
 RemoveAll
@@ -351,8 +397,10 @@ STAL 30
 SetBackground(Village2)
 FADU 5
 Text(MahemeniReunionConvoTwo)
+MUSC FE5_InTheBattle_Fate
 Text(CleoGazesIntoTheAbyss)
 SetBackground(BlackBackground)
+MUSC 0x7FFF
 Text(ByelenReturnsToMindDungeon)
 FADI 5
 EraseBackground
@@ -371,6 +419,7 @@ LOAD 1 ImmortalCutsceneUnits
 ENUN
 CameraCursor(TarajiReal)
 SetBackground(Village2)
+MUSC SheenaID
 Text(FourImmortalsAppear)
 Text(TalkingToTheGotohs)
 EraseBackground

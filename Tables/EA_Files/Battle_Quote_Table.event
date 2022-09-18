@@ -116,4 +116,12 @@ UnspecifiedBattleConvo(HamdiReal,Chapter24,15,BQHamdiReal)
 UnspecifiedBattleConvo(EithaReal,Chapter24,16,BQEithaReal)
 UnspecifiedBattleConvo(Byelen,Chapter24,1,BQByelen)
 
+// Chapter25
+SpecifiedBattleConvo(Cherne,Loewe,Chapter25,7,CherneLoeweBattleQuote)
+SpecifiedBattleConvo(Cherne,Cleo,Chapter25,8,CherneCleoBattleQuote)
+SpecifiedBattleConvo(Cherne,Athanasius,Chapter25,9,CherneAthanBattleQuote)
+SpecifiedBattleConvo(Cherne,TarajiReal,Chapter25,10,CherneTarajiBattleQuote)
+SpecifiedBattleConvo(Cherne,BarodReal,Chapter25,11,CherneBarodBattleQuote)
+UnspecifiedBattleConvo(Cherne,Chapter25,12,CherneGenericBattleQuote)
+
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

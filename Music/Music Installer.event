@@ -157,3 +157,5 @@ SongTable(FF_MysticQuest_IceDungeonID,FF_MQ_ID,MapMusicGroup)
 SongTable(FF_MysticQuest_FocusTowerID,FF_MQ_FT,MapMusicGroup)
 #include "MusicEvents/GoldenSun_TLA_TheGoldenSunRises.event"
 SongTable(GoldenSun_TLA_TheGoldenSunRisesID,TheGoldenSunRises,MapMusicGroup)
+#include "MusicEvents/chaos_angel_act_3_final.event"
+SongTable(ChaosAngelAct3ID,ChaosAngelAct3,MapMusicGroup)
