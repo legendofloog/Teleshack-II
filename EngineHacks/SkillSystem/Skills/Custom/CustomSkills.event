@@ -7,14 +7,13 @@ POIN SkillTester
 WORD RadianceID
 
 ALIGN 4
-RadianceHeal:
-#incbin "RadianceHeal.dmp"
+Proc_RadianceDamage:
+#incbin "RadianceDamage.dmp"
 POIN SkillTester
 WORD RadianceID
 
 ALIGN 4
-Proc_RadianceDamage:
-#incbin "RadianceDamage.dmp"
+RadianceHeal:
 POIN SkillTester
 WORD RadianceID
 

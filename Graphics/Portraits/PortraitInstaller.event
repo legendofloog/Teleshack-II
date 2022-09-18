@@ -1,5 +1,6 @@
 // setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)
 #define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
+
 #define CleoMug 0x2
 #define CleoSadMug 0x99
 #define CleoAngryMug 0x9A
@@ -1122,7 +1123,7 @@ TarajiMugData:
 #incbin "Dmp/Taraji (ZessDynamite)_frames.dmp"
 #incbin "Dmp/Taraji (ZessDynamite)_palette.dmp"
 #incbin "Dmp/Taraji (ZessDynamite)_minimug.dmp"
-setMugEntry(TarajiMug, TarajiMugData, 3, 5, 3, 3)
+setMugEntryExtend(TarajiMug, TarajiMugData, 3, 5, 3, 3, 0, 5, 10, 4)
 
 ALIGN 16
 TemurMugData:

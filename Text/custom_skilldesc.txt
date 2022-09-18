@@ -6,10 +6,10 @@ Culling: If foe's HP is full, adds[N]
 Headshot: Adds 50% of foe's[N]
 missing HP to unit's Atk.[X]
 
-## SD_Radiance
-Radiance: Leina empowers allies she heals.[N]
-Her healing and damage actions heal all[N]
-empowered allies by 10 + Mag.[X]
+## SD_Radiance ^
+Radiance: Leina's heals make allies Radiant.[N]
+Her healing and attacks heal Radiant allies[N]
+by 10 + Mag (unless ally is being healed by Leina).[X]
 
 ## SD_Nightcaller
 Dusk Bringer: Cromar's dark pact calls[N]

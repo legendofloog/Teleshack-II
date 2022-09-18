@@ -31,6 +31,10 @@ CameraCursor(Asha)
 Text(AshaJoins)
 CUSA Asha
 SetFatigue(Asha,0)
+CameraCursor(Ilse)
+Text(IlseContext)
+CameraCursor(Traveler)
+Text(TravelerContext)
 NoFade
 ENDA
 

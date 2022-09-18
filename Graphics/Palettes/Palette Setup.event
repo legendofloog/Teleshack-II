@@ -571,3 +571,31 @@
 // ChernePalette
 	setPalette(142,ChernePalette)
 	setCBSP(142,Cherne, 1, CherneClass)
+
+// OjasviMasterKnight
+	setPalette(143,OjasviMasterKnight)
+	setCBSP(143,Ojasvi, 3, MasterKnight_F)
+
+// OjasviDismounted
+	setPalette(144,OjasviDismounted)
+	setCBSP(144,Ojasvi, 2, MasterKnight_F_Dismounted)
+
+// NikolasFalcoknight
+	setPalette(145,NikolasFalcoknight)
+	setCBSP(145,Nikolas, 1, Falcoknight)
+
+// NikolasDismounted
+	setPalette(146,NikolasDismounted)
+	setCBSP(146,Nikolas, 3, Falcoknight_Dismounted)
+
+// TaraHero
+	setPalette(147,TaraHero)
+	setCBSP(147,Tara, 3, Hero_F)
+
+// VolranMageKnight
+	setPalette(148,VolranMageKnight)
+	setCBSP(148,Volran, 3, MageKnight)
+
+// VolranMKDismounted
+	setPalette(149,VolranMKDismounted)
+	setCBSP(149,Volran, 4, MageKnight_Dismounted)
