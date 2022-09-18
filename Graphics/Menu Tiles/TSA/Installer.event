@@ -23,3 +23,13 @@ ALIGN 4
 MinimugBoxTSA:
 #incbin "dmp/MinimugBox.tmx.dmp"
 #define MMBTilemap MinimugBoxTSA
+
+ALIGN 4
+BattleStatsAnimsOffLeftTSA:
+#incbin "dmp/BattleStatsLeft.tmx.dmp"
+#define New_Battle_Anims_Off_Left_TSA BattleStatsAnimsOffLeftTSA
+
+ALIGN 4
+BattleStatsAnimsOffRightTSA:
+#incbin "dmp/BattleStatsRight.tmx.dmp"
+#define New_Battle_Anims_Off_Right_TSA BattleStatsAnimsOffRightTSA

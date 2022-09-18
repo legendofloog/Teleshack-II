@@ -9,6 +9,11 @@ ALIGN 4
 BobMenuTilesPalette:
 #incbin "Image/Dmp/BobMenuTiles.png_pal.dmp"
 
+ALIGN 4
+BobAnimsOffTiles:
+#incbin "Image/Dmp/BobAnimsOffTiles.dmp"
+#define New_Battle_Anims_Off_Graphics BobAnimsOffTiles
+
 #define BobMenuTilesPaletteBlue  BobMenuTilesPalette
 #define BobMenuTilesPaletteRed   BobMenuTilesPalette + 0x20
 #define BobMenuTilesPaletteGreen BobMenuTilesPalette + 0x40
@@ -52,5 +57,16 @@ ORG 0x36D3C
 POIN BobMenuTilesPaletteGreen
 ORG 0x36D48
 POIN BobMenuTilesPaletteGray
+
+// Battle Stats Anims Off
+ORG 0x7BDF8
+POIN BobMenuTilesPaletteBlue
+ORG 0x7BE00
+POIN BobMenuTilesPaletteRed
+ORG 0x7BE08
+POIN BobMenuTilesPaletteGreen
+ORG 0x7BE10
+POIN BobMenuTilesPaletteGray
+
 
 POP

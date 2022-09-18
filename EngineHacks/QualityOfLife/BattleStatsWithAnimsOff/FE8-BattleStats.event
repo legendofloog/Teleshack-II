@@ -42,6 +42,7 @@
 	
 	POP
 	
+	/*
 	ALIGN 4
 	New_Battle_Anims_Off_Graphics:
 	//#incext Png2Dmp "Anims_Off_Battle_Graphic New.png" --lz77
@@ -54,6 +55,7 @@
 	ALIGN 4
 	New_Battle_Anims_Off_Left_TSA:
 	#incbin "New_Battle_Anims_Off_Left_TSA.dmp"
+	*/
 	
 	ALIGN 4
 	Show_Battle_Stats:
