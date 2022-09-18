@@ -277,7 +277,7 @@ Can be used to buff res. Tiberius[LockIcon][X]
 Daybreak[X]
 
 ## DaybreakDesc
-Not meant for mortal hands.[X]
+Shatter the sky.[X]
 
 ## MuramasaName
 Muramasa[X]
@@ -321,8 +321,8 @@ A lance with extended reach.[X]
 ## KaiserschwertName
 [_K][_a][_i][_s][_e][_r][_s][_c][_h][_w][_e][_r]t[X]
 
-## KaiserschwertDesc *
-Follow-up attacks consecutive. Eff. vs. blessed.[X]
+## KaiserschwertDesc
+Follow-up attacks strike consecutively.[X]
 
 ## TrainedEdgeName
 Trained Edge[X]
@@ -403,7 +403,7 @@ Amser Scroll[X]
 Unmoor[X]
 
 ## UnmoorDesc
-Severs time's threads. Eff. vs. blessed.[X]
+Severs time's threads.[X]
 
 ## CrownPyreName *
 Crowned Pyre[X]
@@ -539,8 +539,8 @@ Taraji's lethal twin blades. Brave.[X]
 ## StarcutterName
 Starcutter[X]
 
-## StarcutterDesc ^
-Replica Kaiserschwert. Magic. Eff. vs blessed.[X]
+## StarcutterDesc
+Replica Kaiserschwert. Magic.[X]
 
 ## FullHelmName
 Full Helm[X]
@@ -786,7 +786,7 @@ Self and allies cannot miss.[X]
 Self and allies can move through enemies.[X]
 
 ##RagnarokFortuneDesc ^
-Self and allies cannot be critically hit.[X]
+Allies cannot be critically hit.[X]
 
 ## VulneraryDesc
 A medicinal solution used to heal[N]

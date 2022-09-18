@@ -186,6 +186,11 @@ CenterTextbox(Ch21_ExplainMasala)
 NoFade
 ENDA
 
+ClearSeraFlag:
+ENUF 0x7C
+NoFade
+ENDA
+
 DartBecomeEvil:
 MUSC FFTAnxiety
 CameraCursor(Vinny)
@@ -741,11 +746,6 @@ UNIT
 
 AxleTalkEvent:
 Text(Chapter21Intro_AxleChat)
-NoFade
-ENDA
-
-ClearSeraFlag:
-ENUF 0xEC
 NoFade
 ENDA
 

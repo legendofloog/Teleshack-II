@@ -120,6 +120,7 @@ SoundRoomSource(SorrowsDistortion, CastlevaniaOrderOfEcclesia)
 
 //sonic
 SoundRoomSource(WhatImMadeOfID, SonicHeroesSource)
+SoundRoomSource(ChaosAngelAct3ID, SonicAdvance3Source)
 
 // f-zero
 SoundRoomSource(mutecity, FZeroSource)

@@ -22,6 +22,7 @@ TurnEventPlayer(0,OMGThiefNooo,9,0x0)
 TurnEventPlayer(0,GoodbyeDespair,12,0x0)
 END_MAIN
 
+
 TomAndJerry:
 SpawnReinforcements(Amongitis)
 	CameraCursor(Jerry)
@@ -43,7 +44,7 @@ NoFade
 	ENDA
 
 ClearSeraFlag:
-ENUF 0xEC
+ENUF 0x7C
 NoFade
 ENDA
 

@@ -15,6 +15,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0, GreenGoBlueEvent, 1)
 TurnEventPlayer(0, Turn1ReinforcementEvent, 2)
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 END_MAIN
 
 CharacterBasedEvents:
@@ -166,6 +167,11 @@ UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [5,20] 0x0 0x0 0x0 0x0 
 UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [4,20] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT EliasReal Dracoknight_Dismounted 0x0  Level(10,Ally,False) [5,9] 0x0 0x0 0x0 0x0 [MasterAxe,SilverAxe] NoAI
 UNIT
+
+ClearSeraFlag:
+ENUF 0x7C
+NoFade
+ENDA
 
 LeonidasArrivalGroup:
 UNIT Ch2_Selese_Guy GoldKnight 0x0 Level(15,NPC,True) [24,17] 0x0 0x0 0x0 0x0 [StoneSword] NoAI

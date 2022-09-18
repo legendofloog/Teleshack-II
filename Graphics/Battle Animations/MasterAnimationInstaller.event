@@ -307,10 +307,10 @@
 #include "Animations/Ballistician(Spud,Ren_Ookami,Pushwall)/Bow Installer.event"
 }
 {
-#include "Animations/Augur(knabepicer)/Dragonstone Installer.event"
-#include "Animations/Augur(knabepicer)/Transform Installer.event"
-#include "Animations/Augur(knabepicer)/Revert Installer.event"
-#include "Animations/Augur(knabepicer)/Unarmed Installer.event"
+#include "Animations/Augur(knabepicer, Melia, HGS, Feier)/Dragonstone Installer.event"
+#include "Animations/Augur(knabepicer, Melia, HGS, Feier)/Transform Installer.event"
+#include "Animations/Augur(knabepicer, Melia, HGS, Feier)/Revert Installer.event"
+#include "Animations/Augur(knabepicer, Melia, HGS, Feier)/Unarmed Installer.event"
 }
 
 {

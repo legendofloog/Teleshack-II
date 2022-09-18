@@ -36,7 +36,7 @@ ORG SkillIcon(PassID)
 #incbin "SkillIcons/Pass.dmp"
 
 ORG SkillIcon(CantoPlusID)
-#incbin "SkillIcons/CantoPlus.dmp"
+#incbin "SkillIcons/Canto.dmp"
 
 ORG SkillIcon(WaryFighterID)
 #incbin "SkillIcons/WaryFighter.dmp"
@@ -525,7 +525,7 @@ ORG SkillIcon(StealID)
 #incbin "SkillIcons/Steal.dmp"
 
 ORG SkillIcon(StealPlusID)
-#incbin "SkillIcons/StealPlus.dmp"
+#incbin "SkillIcons/Steal.dmp"
 
 ORG SkillIcon(FortressDefenseID)
 #incbin "SkillIcons/FortressDefense.dmp"
