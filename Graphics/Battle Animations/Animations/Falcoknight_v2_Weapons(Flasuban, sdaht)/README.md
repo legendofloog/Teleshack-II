@@ -10,4 +10,4 @@
 
 Improved Falcoknight by Flasuban.
 
-Bow by Knabepicer, Nuramon.
+sdaht: repalette for lance and unarmed

@@ -29,7 +29,7 @@ Raises strength.[X]
 Radiant[X]
 
 # 0x522
-MP/2 + 5[X]
+M/2 +5[X]
 
 # 0x5B6
 Put items in storage. Up to[NL]
@@ -235,3 +235,5 @@ the top of inventory.[X]
 Do you want to Escape?[N]
 [Red]All other units will be left behind.[Red][.4][N]
 [No][X]
+
+#include "finalbattlequotes.txt"

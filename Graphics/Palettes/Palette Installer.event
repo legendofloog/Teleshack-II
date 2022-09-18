@@ -429,3 +429,24 @@ KailaniHighPriest:
 ChernePalette:
 	#incbin "./_palettes/ChernePalette.lzpal" 
 
+OjasviMasterKnight:
+	#incbin "./_palettes/OjasviMasterKnight.lzpal" 
+
+OjasviDismounted:
+	#incbin "./_palettes/OjasviDismounted.lzpal" 
+
+NikolasFalcoknight:
+	#incbin "./_palettes/NikolasFalcoknight.lzpal" 
+
+NikolasDismounted:
+	#incbin "./_palettes/NikolasDismounted.lzpal" 
+
+TaraHero:
+	#incbin "./_palettes/TaraHero.lzpal" 
+
+VolranMageKnight:
+	#incbin "./_palettes/VolranMageKnight.lzpal" 
+
+VolranMKDismounted:
+	#incbin "./_palettes/VolranMKDismounted.lzpal" 
+

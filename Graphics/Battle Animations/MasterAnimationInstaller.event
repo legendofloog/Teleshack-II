@@ -141,10 +141,10 @@
 }
 
 {
-#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Axe Installer.event"
-#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Handaxe Installer.event"
-#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Lance Installer.event"
-#include "Animations/Falcoknight_v2_Weapons(Flasuban)/Unarmed Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban, sdaht)/Axe Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban, sdaht)/Handaxe Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban, sdaht)/Lance Installer.event"
+#include "Animations/Falcoknight_v2_Weapons(Flasuban, sdaht)/Unarmed Installer.event"
 }
 
 {

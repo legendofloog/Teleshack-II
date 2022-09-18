@@ -1,8 +1,13 @@
+#include "Supports/AlenaSupports.txt"
+#include "Supports/AlexSupports.txt"
 #include "Supports/AwaSupports.txt"
 #include "Supports/CadenzaSupports.txt"
 #include "Supports/CleoSupports.txt"
+#include "Supports/EmilSupports.txt"
 #include "Supports/FiloneSupports.txt"
+#include "Supports/GrotoSupports.txt"
 #include "Supports/IlseSupports.txt"
+#include "Supports/IskraSupports.txt
 #include "Supports/KofiSupports.txt"
 #include "Supports/LoeweSupports.txt"
 #include "Supports/LongxiaSupports.txt"

@@ -71,6 +71,8 @@ ChangeWeaponRankASMC:
 
 #include "SoundRoomText/Installer.event"
 
+#include "mug_exceed/Installer.event"
+
 PUSH
 ORG 0x0178C2
 BYTE 0x00
