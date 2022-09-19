@@ -31,11 +31,25 @@ ORG 0xA2C4C8
 
 ORG 0xB1C84
 POIN OptionsMenuTSA
+
+ORG 0x8E07C
+POIN StatusScreenTSA
+
+ORG 0xCEEFC
+POIN GuideMenuTSA
 POP
 
 ALIGN 4
 OptionsMenuTSA:
 #incbin "dmp/OptionsMenu.tmx.dmp"
+
+ALIGN 4
+StatusScreenTSA:
+#incbin "dmp/StatusScreen.tmx.dmp"
+
+ALIGN 4
+GuideMenuTSA:
+#incbin "dmp/GuideMenu.tmx.dmp"
 
 ALIGN 4
 MinimugBoxTSA:

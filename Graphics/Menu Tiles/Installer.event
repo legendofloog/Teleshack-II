@@ -21,6 +21,15 @@ BobAnimsOffTiles:
 
 PUSH
 
+/*
+ORG 0x5B6C34
+#incbin "Image/Dmp/BobMenuTiles.png_pal.dmp"
+*/
+
+// Dark Palette
+ORG 0xCEF08
+POIN BobMenuTilesPalette
+
 ORG 0x5B6450
 // Palletes
 POIN BobMenuTilesPaletteBlue
