@@ -138,11 +138,10 @@ help. Look, here's a spare staff.[A]
 [MidLeft][ThreeLineBox]
 They did not bring an extremely[N]
 rare light tome for their[N]
-breakout plan, no. Honestly,[AN]
-is using those the only[N]
-reason you became a sister?[A]
+breakout plan, no. [A]
 [MidRight][OneLineBox]
-[Beat]Maybe?[A][X]
+Alright, alright.[N]
+Geez.[A][X]
 
 ## DelilahFreedText
 [MidRight][LoadDelilah]
@@ -160,7 +159,7 @@ I ain't going back to that prison cell.[A]
 [MidLeft][OneLineBox]
 Just a staff.[A]
 [MidRight]
-Good enough, I guess[Beat][A][X]
+Good enough, I guess.[A][X]
 
 ## DelilahFreedBySvetConvoText
 [MidLeft][LoadSvetomir]
