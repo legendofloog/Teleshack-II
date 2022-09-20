@@ -23,6 +23,7 @@ CharacterEventBothWays(7, DevvyMoment, Apsis, Perihelios)
 END_MAIN
 
 LocationBasedEvents:
+Seize(12,24)
 END_MAIN
 
 MiscBasedEvents:
@@ -529,6 +530,7 @@ GotoPrepScreen
 ENDA
 
 EndingScene:
+EraseAllFatigue
 MUSC WindyDaySoundEffect
 FADI 10
 CAMERA_CENTERED [13,3]
@@ -596,6 +598,7 @@ MOVE 15 Loewe [13,13]
 MOVE 15 Cleo [14,13]
 ENUN
 MOVE 10 KwameReal [13,5]
+ENUN
 TEXTCONT
 TEXTEND
 REMA

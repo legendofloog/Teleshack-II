@@ -28,8 +28,8 @@ Raises strength.[X]
 # 0x51E
 Radiant[X]
 
-# 0x522
-M/2 +5[X]
+# 0x522 ^
+M/2+5[X]
 
 # 0x5B6
 Put items in storage. Up to[NL]

@@ -1,7 +1,4 @@
-#ifdef USE_FATIGUE
 
-#ifdef _FE8_
-#ifndef FE8_FATIGUE
 #define FE8_FATIGUE
 
 
@@ -54,9 +51,3 @@ FatigueSSTextID:
 SHORT SS_FatigueText
 
 ALIGN 4
-#endif // FE8_FATIGUE
-#else // _FE8_
-ERROR Fatigue is only for FE8!
-#endif // _FE8_
-
-#endif // USE_FATIGUE

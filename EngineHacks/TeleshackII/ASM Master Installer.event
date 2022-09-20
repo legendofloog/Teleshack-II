@@ -49,8 +49,6 @@ ChangeWeaponRankASMC:
 
 #include "FE7 & 8-Show Heal Amount/FE7 & FE8-Show Heal Amount EA.event"
 
-#include "ChangePortrait/Installer.event"
-
 //#include "Reorganize/Installer.event"
 
 #include "prep_shop_each_chapter2/Installer.event"
@@ -64,8 +62,6 @@ ChangeWeaponRankASMC:
 #include "SendInventoryOnDeath/Installer.event"
 
 #include "NewClearUnit/NewClearUnit.event"
-// thief vision set to 0
-#include "FE8U_PrepsAugury-main/PrepsAugury.event"
 
 #include "ClearUnitASMC/ClearUnitASMCInstaller.event"
 
@@ -73,6 +69,9 @@ ChangeWeaponRankASMC:
 
 #include "mug_exceed/Installer.event"
 
+#include "DynamicPortraits/DynamicPortraitsInstaller.event"
+
+// thief vision set to 0
 PUSH
 ORG 0x0178C2
 BYTE 0x00
@@ -198,4 +197,14 @@ POP
 PUSH
 ORG 0xB8126
 BYTE 0x0 0x0 0x0 0x0
+POP
+
+//unlocks all support convos in support viewer
+PUSH
+ORG $A36C4
+BYTE 0x03 0x20
+ORG $AB93A
+BYTE 0x0 0x0
+ORG $A3824
+BYTE 0x1
 POP

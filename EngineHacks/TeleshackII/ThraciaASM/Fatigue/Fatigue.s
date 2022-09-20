@@ -16,7 +16,6 @@
 .type PostPrepRestoreFatigue, %function
 
 
-
 @Relevant EA Literals
 @FatigueExemptCharList: null-terminated list of characters for whom fatigue should not be incremented ever
 

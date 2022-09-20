@@ -14,6 +14,7 @@ WORD RadianceID
 
 ALIGN 4
 RadianceHeal:
+#incbin "RadianceHeal.dmp"
 POIN SkillTester
 WORD RadianceID
 

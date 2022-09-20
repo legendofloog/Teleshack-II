@@ -51,7 +51,7 @@ ALIGN 4
 SvetomirSupportPointer:
 SupportDataCharacters(Alena,Delilah,Zhara,0,0) 
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(15,16,80,0,0)
+SupportDataGrowths(15,16,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
@@ -448,7 +448,7 @@ ALIGN 4
 ZharaSupportPointer:
 SupportDataCharacters(Jenny,Svetomir,Awa,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(80,80,80,0,0)
+SupportDataGrowths(80,40,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4

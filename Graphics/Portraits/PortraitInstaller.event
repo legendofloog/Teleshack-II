@@ -52,6 +52,7 @@
 #define NikolasMug 0xDB
 #define AltoMug 0xDC
 #define SeraMug 0xDE
+#define SeraZoomingMug 0x74
 #define ShafaqatMug 0xDF
 #define KofiMug 0xE0
 #define ApsisMug 0xE1
@@ -368,18 +369,18 @@ setMugEntry(SeleseFMug, SeleseFMugData, 3, 6, 3, 4)
 
 ALIGN 16
 FiloneMugData:
-#incbin "Dmp/Filone (Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Filone (Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Filone (Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Filone (Laurent_Lacroix)_minimug.dmp"
-setMugEntry(FiloneMug, FiloneMugData, 4, 5, 4, 3)
+#incbin "Dmp/Filone(devvy, epicer)_mug.dmp"
+#incbin "Dmp/Filone(devvy, epicer)_frames.dmp"
+#incbin "Dmp/Filone(devvy, epicer)_palette.dmp"
+#incbin "Dmp/Filone(devvy, epicer)_minimug.dmp"
+setMugEntry(FiloneMug, FiloneMugData, 3, 5, 3, 3)
 
 ALIGN 16
 ZwiebackMugData:
-#incbin "Dmp/Zwieback (devvy)_mug.dmp"
-#incbin "Dmp/Zwieback (devvy)_frames.dmp"
-#incbin "Dmp/Zwieback (devvy)_palette.dmp"
-#incbin "Dmp/Zwieback (devvy)_minimug.dmp"
+#incbin "Dmp/Zwieback (devvy, epicer)_mug.dmp"
+#incbin "Dmp/Zwieback (devvy, epicer)_frames.dmp"
+#incbin "Dmp/Zwieback (devvy, epicer)_palette.dmp"
+#incbin "Dmp/Zwieback (devvy, epicer)_minimug.dmp"
 setMugEntry(ZwiebackMug, ZwiebackMugData, 3, 5, 3, 3)
 
 ALIGN 16
@@ -971,6 +972,14 @@ SeraMugData:
 #incbin "Dmp/Sera(Roze)_palette.dmp"
 #incbin "Dmp/Sera(Roze)_minimug.dmp"
 setMugEntry(SeraMug, SeraMugData, 3, 6, 3, 4)
+
+ALIGN 16
+SeraZoomingMugData:
+#incbin "Dmp/SeraZooming(Roze,knabepicer)_mug.dmp"
+#incbin "Dmp/SeraZooming(Roze,knabepicer)_frames.dmp"
+#incbin "Dmp/SeraZooming(Roze,knabepicer)_palette.dmp"
+#incbin "Dmp/SeraZooming(Roze,knabepicer)_minimug.dmp"
+setMugEntryExtend(SeraZoomingMug, SeraZoomingMugData, 2, 6, 2, 4, 0, 4, 0, 2)
 
 ALIGN 16
 ShawMugData:

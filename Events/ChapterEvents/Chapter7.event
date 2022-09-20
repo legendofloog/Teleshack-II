@@ -321,8 +321,11 @@ LABEL 3
 MUSCFAST 0x47
 SetBackground(CastleRoom)
 Text(EndEvent1Text)
-SetBackground(VillageRoadSunset)
-Text(EndEvent2Text)
+CHECK_ALIVE Buldak //had no conditional, so i added it - loog
+BEQ 776 s0 sC
+	SetBackground(VillageRoadSunset)
+	Text(EndEvent2Text)
+LABEL 776
 MNC2 Chapter8
 NoFade
 ENDA

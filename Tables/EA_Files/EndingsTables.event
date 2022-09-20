@@ -196,12 +196,15 @@ PairedEndingTableEntry(Svetomir, Alena, SvetomirAlenaEnding)
 PairedEndingTableEntry(Svetomir, Delilah, SvetomirDelilahEnding)
 SoloEndingTableEntry(Svetomir, SvetomirEnding)
 
+PairedEndingTableEntry(Alena, Sera, AlenaSeraEnding)
 PairedEndingTableEntry(Alena,Filone, AlenaFiloneEnding)
 SoloEndingTableEntry(Alena, AlenaEnding)
 
 //2
 PairedEndingTableEntry(Varga, Zwieback, VargaZwiebackEnding)
 SoloEndingTableEntry(Varga,VargaEnding)
+PairedEndingTableEntry(Delilah,Awa, DelilahAwaEnding)
+PairedEndingTableEntry(Delilah, Ilse, DelilahIlseEnding)
 SoloEndingTableEntry(Delilah,DelilahEnding)
 
 //3
@@ -234,15 +237,23 @@ SoloEndingTableEntry(Mish, MishEnding)
 
 SoloEndingTableEntry(Tobie, TobieEnding)
 
+PairedEndingTableEntry(Awa, Nikolas, AwaNikolasEnding)
+
 //6
 SoloEndingTableEntry(Cromar, CromarEnding)
 SoloEndingTableEntry(Leina,LeinaEnding)
 
+//7
+PairedEndingTableEntry(Buldak, Tao, BuldakTaoEnding)
+PairedEndingTableEntry(Iberis, Nora, IberisNoraEnding)
+
 //8
+PairedEndingTableEntry(Nora,Hans,NoraHansEnding)
 SoloEndingTableEntry(Hans,HansEnding)
 SoloEndingTableEntry(Nora,NoraEnding)
 
 //9
+PairedEndingTableEntry(Jenny, Tao, JennyTaoEnding)
 SoloEndingTableEntry(Jenny,JennyEnding)
 SoloEndingTableEntry(Meldan,MeldanEnding)
 
@@ -250,6 +261,7 @@ SoloEndingTableEntry(Meldan,MeldanEnding)
 SoloEndingTableEntry(Valse,ValseEnding)
 
 //11
+PairedEndingTableEntry(Ichwep, Milo, Ichwep_Milo_Ending)
 SoloEndingTableEntry(Ichwep,IchwepEnding)
 SoloEndingTableEntry(Milo,MiloEnding)
 
@@ -258,6 +270,8 @@ SoloEndingTableEntry(Ellerey,EllereyEnding)
 SoloEndingTableEntry(Takai,TakaiEnding)
 SoloEndingTableEntry(Tippany,TippanyEnding)
 SoloEndingTableEntry(Pelecaye,PelecayeEnding)
+
+PairedEndingTableEntry(Carl, Sera, CarlSeraEnding)
 SoloEndingTableEntry(Carl, CarlEnding)
 
 //13
@@ -265,12 +279,14 @@ SoloEndingTableEntry(Jacinth,JacinthEnding)
 SoloEndingTableEntry(Darby,DarbyEnding)
 
 //14
+PairedEndingTableEntry(Nahiza, Jerry, NahizaJerryEnding)
 SoloEndingTableEntry(Nahiza, NahizaEnding)
 SoloEndingTableEntry(Augur, AugurEnding)
 
 //15
 PairedEndingTableEntry(Ilse, Ojasvi, IlseOjasviEnding)
 SoloEndingTableEntry(Ilse, IlseEnding)
+PairedEndingTableEntry(Asha, Ojasvi, AshaOjasviEnding)
 SoloEndingTableEntry(Asha, AshaEnding)
 
 //16

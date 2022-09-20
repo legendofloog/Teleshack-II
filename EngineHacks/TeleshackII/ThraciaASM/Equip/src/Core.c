@@ -131,6 +131,9 @@ void BlackAnkletPostBattle(){
 	if (gActionData.unitActionType != UNIT_ACTION_COMBAT && gActionData.unitActionType != UNIT_ACTION_STAFF){
 		return;
 	}
+	if (gActionData.unitActionType == UNIT_ACTION_STAFF && GetItemIndex(GetUnitEquippedItem(&gBattleActor.unit)) != 0xa4){
+		return; //if the staffer is not the one with the black anklet, don't penalize the unit being healed
+	}
 	if (GetItemIndex(GetUnitEquippedItem(&gBattleActor.unit)) == 0xa4){ //black anklet id
 		if (gBattleActor.unit.curHP <= 0){ //don't do anything they're already dead
 			

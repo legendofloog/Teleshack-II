@@ -346,8 +346,8 @@ NoFade
 ENDA
 
 BeginningScene:
-EraseAllFatigue
-DISA_IF Kwame
+//add something here for support/paired ending purposes
+DISA_IF KwameReal
 SetBackground(0x0D)
 Text(RunningOutOfCatacombs)
 MUSC WindyDaySoundEffect

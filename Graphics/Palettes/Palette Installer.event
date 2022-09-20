@@ -450,3 +450,9 @@ VolranMageKnight:
 VolranMKDismounted:
 	#incbin "./_palettes/VolranMKDismounted.lzpal" 
 
+NahizaBallisticianPal:
+	#incbin "./_palettes/NahizaBallisticianPal.lzpal" 
+
+NahizaLongBallisticianPal:
+	#incbin "./_palettes/NahizaLongBallisticianPal.lzpal" 
+

@@ -599,3 +599,11 @@
 // VolranMKDismounted
 	setPalette(149,VolranMKDismounted)
 	setCBSP(149,Volran, 4, MageKnight_Dismounted)
+
+// NahizaBallisticianPal
+	setPalette(150,NahizaBallisticianPal)
+	setCBSP(150,Nahiza, 1, Ballistician)
+
+// NahizaLongBallisticianPal
+	setPalette(151,NahizaLongBallisticianPal)
+	setCBSP(151,Nahiza, 3, LongBallistician)
