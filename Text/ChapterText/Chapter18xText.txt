@@ -285,7 +285,7 @@ a good soldier. What do you say, Cleo?[A][X]
 
 ## Ch18xDarcyPickDialogue
 [MidRight][LoadCleo]
-Should I pick Darcy?[No][X]
+Should I pick Joie?[No][X]
 
 ## Ch18xDarcyAcceptedDialogue
 [MidLeft][LoadDarcy][ThreeLineBox]
