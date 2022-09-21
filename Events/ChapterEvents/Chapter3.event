@@ -315,12 +315,18 @@ CAMERA_CENTERED Loewe
 Text(DraganaDeathResponseText)
 ENDA
 
-VargaDeathChamber:
+/*VargaDeathChamber:
 UNIT Varga SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x0 REDA0R0 [0x0]     NoAI
 UNIT
 
 MiraDeathChamber:
 UNIT Mira SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x0 REDA0R0 [0x0]     NoAI
+UNIT*/
+
+UnitLoadTest:
+UNIT TrajanReal Hero Cleo Level(8,Ally,False) [5,0] 0x0 0x0 0x0 REDA0R0 [Claymore]     NoAI
+UNIT Darcy AxeArmor Cleo Level(16,Ally,False) [6,0] 0x0 0x0 0x0 REDA0R0 [IronAxe,KnightProof]     NoAI
+UNIT Locke ThiefFighter Cleo Level(3,Ally,False) [7,0] 0x0 0x0 0x0 REDA0R0 [IronSword]     NoAI
 UNIT
 
 BeginningScene:
@@ -394,6 +400,7 @@ CURSOR_FLASHING Emory_Ch3
 REMOVEALL_BLUE
 LOAD1 1 DraganaUnit
 LOAD1 0 Units1
+// LOAD1 0 UnitLoadTest
 STAL 50
 REMOVE_CURSORS
 TEXTCONT
@@ -417,9 +424,9 @@ FADU 10
 CamOn
 CheckUnitDeadOrJailed(Mira)
 BNE 20 s0 sC
-	LOAD1 1 CutsceneUnitMira
+	LOAD1 2 CutsceneUnitMira
 LABEL 20
-LOAD1 1 CutsceneUnits2
+LOAD1 2 CutsceneUnits2
 ENUN
 CamOff
 CAMERA_CENTERED [9,15]

@@ -204,17 +204,17 @@ CharEscapeQuoteTerm
 ALIGN 4
 AlexEscapeQuoteList:
 CharEscapeQuote(Chapter3,AlexEscapeQuoteText)
-CharEscapeQuote(Chapter9,AlexEscapeQuoteText)
-CharEscapeQuote(Chapter14,AlexEscapeQuoteText)
-CharEscapeQuote(Chapter16,AlexEscapeQuoteText)
+CharEscapeQuote(Chapter9,AlexEscapeQuoteTextCh9)
+CharEscapeQuote(Chapter14,AlexEscapeQuoteTextCh14)
+CharEscapeQuote(Chapter16,AlexEscapeQuoteTextCh16)
 CharEscapeQuoteTerm
 
 ALIGN 4
 AxelEscapeQuoteList:
 CharEscapeQuote(Chapter3,AxelEscapeQuoteText)
-CharEscapeQuote(Chapter9,AxelEscapeQuoteText)
-CharEscapeQuote(Chapter14,AxelEscapeQuoteText)
-CharEscapeQuote(Chapter16,AxelEscapeQuoteText)
+CharEscapeQuote(Chapter9,AxelEscapeQuoteTextCh9)
+CharEscapeQuote(Chapter14,AxelEscapeQuoteTextCh14)
+CharEscapeQuote(Chapter16,AxelEscapeQuoteTextCh16)
 CharEscapeQuoteTerm
 
 ALIGN 4
