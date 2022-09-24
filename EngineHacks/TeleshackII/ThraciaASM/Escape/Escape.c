@@ -46,7 +46,7 @@ int EscapeCommandEffect(MenuProc* proc){
         int currentRequiredEscapees = 0;
         while (chapterRequiredEscapees[cnt].charID != 0){ //next, we'll sum up required units and those who have escaped
             Unit* currentUnit = GetUnitByCharId(chapterRequiredEscapees[cnt].charID);
-            if (currentUnit->state & US_HIDDEN && currentUnit->state & US_UNSELECTABLE && !(currentUnit->state & US_UNAVAILABLE)){
+            if (currentUnit->state & US_HIDDEN && currentUnit->state && !(currentUnit->state & US_UNAVAILABLE)){
                 currentRequiredEscapees++;
             }
             if (gActiveUnit->rescueOtherUnit != 0){

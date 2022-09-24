@@ -51,6 +51,7 @@
 #define Apsis 0x32
 #define Ojasvi 0x33
 #define Darcy 0x34
+#define Joie Darcy
 #define Groto 0x35
 #define Tao 0x36
 #define Zhara 0x37

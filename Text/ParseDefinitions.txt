@@ -177,6 +177,7 @@
 [LoadApsis] = [LoadFace][0xE1][0x1]
 [LoadOjasvi] = [LoadFace][0xE2][0x1]
 [LoadDarcy] = [LoadFace][0xE3][0x1]
+[LoadJoie] = [LoadDarcy]
 [LoadGroto] = [LoadFace][0xE4][0x1]
 [LoadTao] = [LoadFace][0xE5][0x1]
 [LoadZhara] = [LoadFace][0xE6][0x1]

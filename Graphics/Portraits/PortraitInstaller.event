@@ -184,11 +184,11 @@ setMugEntry(MiraMug, MiraMugData, 3, 6, 3, 4)
 
 ALIGN 16
 IskraMugData:
-#incbin "Dmp/Iskra(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Iskra(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Iskra(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Iskra(Laurent_Lacroix)_minimug.dmp"
-setMugEntry(IskraMug, IskraMugData, 3, 6, 3, 4)
+#incbin "Dmp/Iskra(LaurentLacroix, Levin)_mug.dmp"
+#incbin "Dmp/Iskra(LaurentLacroix, Levin)_frames.dmp"
+#incbin "Dmp/Iskra(LaurentLacroix, Levin)_palette.dmp"
+#incbin "Dmp/Iskra(LaurentLacroix, Levin)_minimug.dmp"
+setMugEntry(IskraMug, IskraMugData, 2, 6, 2, 4)
 
 ALIGN 16
 EmilMugData:
@@ -879,11 +879,11 @@ setMugEntry(KassandraMug, KassandraMugData, 3, 5, 3, 3)
 
 ALIGN 16
 OrfeasMugData:
-#incbin "Dmp/Orfeas(Nickt)_mug.dmp"
-#incbin "Dmp/Orfeas(Nickt)_frames.dmp"
-#incbin "Dmp/Orfeas(Nickt)_palette.dmp"
-#incbin "Dmp/Orfeas(Nickt)_minimug.dmp"
-setMugEntry(OrfeasMug, OrfeasMugData, 3, 4, 3, 2)
+#incbin "Dmp/Orfeas(devisio, knabepicer)_mug.dmp"
+#incbin "Dmp/Orfeas(devisio, knabepicer)_frames.dmp"
+#incbin "Dmp/Orfeas(devisio, knabepicer)_palette.dmp"
+#incbin "Dmp/Orfeas(devisio, knabepicer)_minimug.dmp"
+setMugEntryExtend(OrfeasMug, OrfeasMugData, 4, 4, 4, 2, 12, 8, 12, 6)
 
 ALIGN 16
 LoeweAngryMugData:

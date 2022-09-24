@@ -208,11 +208,13 @@ PairedEndingTableEntry(Delilah, Ilse, DelilahIlseEnding)
 SoloEndingTableEntry(Delilah,DelilahEnding)
 
 //3
-PairedEndingTableEntry(Alex,Mantou,AlexMantouEnding)
+PairedEndingTableEntry(Alex, Mantou,AlexMantouEnding)
+PairedEndingTableEntry(Axel, Iberis, Axel_Iberis_Ending)
 
 //4
 PairedEndingTableEntry(Filone, Zwieback, FiloneZwiebackEnding)
 SoloEndingTableEntry(Filone, FiloneEnding)
+PairedEndingTableEntry(Zwieback, Ellerey, Zwieback_Ellerey_Ending)
 SoloEndingTableEntry(Zwieback, ZwiebackEnding)
 
 //5
@@ -246,15 +248,22 @@ SoloEndingTableEntry(Leina,LeinaEnding)
 //7
 PairedEndingTableEntry(Buldak, Tao, BuldakTaoEnding)
 PairedEndingTableEntry(Iberis, Nora, IberisNoraEnding)
+PairedEndingTableEntry(Iberis, Hans, IberisHansEnding)
 
 //8
 PairedEndingTableEntry(Nora,Hans,NoraHansEnding)
-SoloEndingTableEntry(Hans,HansEnding)
+PairedEndingTableEntry(Nora,Ichwep,NoraIchwepEnding)
 SoloEndingTableEntry(Nora,NoraEnding)
+PairedEndingTableEntry(Hans, Milo, HansMiloEnding)
+SoloEndingTableEntry(Hans,HansEnding)
+
 
 //9
 PairedEndingTableEntry(Jenny, Tao, JennyTaoEnding)
+PairedEndingTableEntry(Jenny, Meldan, JennyMeldanEnding)
 SoloEndingTableEntry(Jenny,JennyEnding)
+PairedEndingTableEntry(Meldan, Tippany, MeldanTippanyEnding)
+PairedEndingTableEntry(Meldan, Volran, MeldanVolranEnding)
 SoloEndingTableEntry(Meldan,MeldanEnding)
 
 //10
@@ -262,8 +271,13 @@ SoloEndingTableEntry(Valse,ValseEnding)
 
 //11
 PairedEndingTableEntry(Ichwep, Milo, Ichwep_Milo_Ending)
+PairedEndingTableEntry(Ichwep, Mantou, Ichwep_Mantou_Ending)
 SoloEndingTableEntry(Ichwep,IchwepEnding)
+PairedEndingTableEntry(Milo, Pelecaye, Milo_Pelecaye_Ending)
 SoloEndingTableEntry(Milo,MiloEnding)
+
+//12
+PairedEndingTableEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_Ending)
 
 //12x
 SoloEndingTableEntry(Ellerey,EllereyEnding)
@@ -271,10 +285,12 @@ SoloEndingTableEntry(Takai,TakaiEnding)
 SoloEndingTableEntry(Tippany,TippanyEnding)
 SoloEndingTableEntry(Pelecaye,PelecayeEnding)
 
+PairedEndingTableEntry(Carl, Asha, CarlAshaEnding)
 PairedEndingTableEntry(Carl, Sera, CarlSeraEnding)
 SoloEndingTableEntry(Carl, CarlEnding)
 
 //13
+PairedEndingTableEntry(Jacinth, Darby, DarbyJacinthEnding)
 SoloEndingTableEntry(Jacinth,JacinthEnding)
 SoloEndingTableEntry(Darby,DarbyEnding)
 
@@ -302,6 +318,7 @@ SoloEndingTableEntry(Shaw, ShawEnding)
 
 SoloEndingTableEntry(Ojasvi, OjasviEnding)
 SoloEndingTableEntry(Tao, TaoEnding)
+PairedEndingTableEntry(Joie, Locke, JoieLockeEnding)
 PairedEndingTableEntry(Groto, Apsis,GrotoApsis_Ending)
 SoloEndingTableEntry(Groto, GrotoEnding)
 SoloEndingTableEntry(Apsis, ApsisEnding)
@@ -310,10 +327,12 @@ SoloEndingTableEntry(Apsis, ApsisEnding)
 SoloEndingTableEntry(Volran,VolranEnding)
 
 // 20
+PairedEndingTableEntry(Jerry, Lyre, JerryLyreEnding)
 SoloEndingTableEntry(Jerry,JerryEnding)
 SoloEndingTableEntry(Lyre, LyreEnding)
 
 //21 (Ngondala)
+PairedEndingTableEntry(Ngondala, Locke, Ngondala_Locke_Ending)
 SoloEndingTableEntry(Ngondala, NgondalaEnding)
 
 //Athan, Taraji, Barod

@@ -237,7 +237,6 @@ ENDA
 ConscriptDefeat:
 CheckIfDefeatedUnitCaptured
 BEQ 7 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
-    Text(MarynCromarTextMcCallumSpared)
     ENUF 12 //indicates that conscripts were not killed
 LABEL 7
 NoFade
@@ -246,7 +245,6 @@ ENDA
 SaifGruntDefeat:
 CheckIfDefeatedUnitCaptured
 BEQ 8 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
-    Text(MarynCromarTextMcCallumSpared)
     ENUF 13 //indicates that saif's were not killed
 LABEL 8
 NoFade
@@ -255,7 +253,6 @@ ENDA
 MihailGruntDefeat:
 CheckIfDefeatedUnitCaptured
 BEQ 9 s0 sC //if they weren't captured (0), then skip (unit was killed, locking rewards)
-    Text(MarynCromarTextMcCallumSpared)
     ENUF 14 //indicates that mihail's were not killed
 LABEL 9
 NoFade
