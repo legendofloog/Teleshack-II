@@ -242,8 +242,9 @@ SoloEndingTableEntry(Tobie, TobieEnding)
 PairedEndingTableEntry(Awa, Nikolas, AwaNikolasEnding)
 
 //6
-SoloEndingTableEntry(Cromar, CromarEnding)
+PairedEndingTableEntry(Leina, Mantou, Leina_Mantou_Ending)
 SoloEndingTableEntry(Leina,LeinaEnding)
+SoloEndingTableEntry(Cromar, CromarEnding)
 
 //7
 PairedEndingTableEntry(Buldak, Tao, BuldakTaoEnding)
@@ -281,6 +282,7 @@ PairedEndingTableEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_Ending)
 
 //12x
 SoloEndingTableEntry(Ellerey,EllereyEnding)
+PairedEndingTableEntry(Takai, Shaw, TakaiShawEnding)
 SoloEndingTableEntry(Takai,TakaiEnding)
 SoloEndingTableEntry(Tippany,TippanyEnding)
 SoloEndingTableEntry(Pelecaye,PelecayeEnding)
