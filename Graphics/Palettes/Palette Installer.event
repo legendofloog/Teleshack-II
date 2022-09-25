@@ -456,6 +456,21 @@ NahizaBallisticianPal:
 NahizaLongBallisticianPal:
 	#incbin "./_palettes/NahizaLongBallisticianPal.lzpal" 
 
+OrfeasEmperor:
+	#incbin "./_palettes/OrfeasEmperor.lzpal" 
+
+AwaDismounted:
+	#incbin "./_palettes/AwaDismounted.lzpal" 
+
+AwaAxeKnight:
+	#incbin "./_palettes/AwaAxeKnight.lzpal" 
+
+AwaGreatKnight:
+	#incbin "./_palettes/AwaGreatKnight.lzpal" 
+
+AwaGreatKnightDismounted:
+	#incbin "./_palettes/AwaGreatKnightDismounted.lzpal" 
+
 KwameDarkBishop:
 	#incbin "./_palettes/KwameDarkBishop.lzpal" 
 

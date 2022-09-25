@@ -608,10 +608,28 @@
 	setPalette(151,NahizaLongBallisticianPal)
 	setCBSP(151,Nahiza, 3, LongBallistician)
 
+// OrfeasEmperor
+	setPalette(152,OrfeasEmperor)
+	setCBSP(152,Orfeas, 1, Emperor)
+
+// AwaDismounted
+	setPalette(153,AwaDismounted)
+
+// AwaAxeKnight
+	setPalette(154,AwaAxeKnight)
+
+// AwaGreatKnight
+	setPalette(155,AwaGreatKnight)
+	setCBSP(155,Awa, 3, GreatKnight)
+
+// AwaGreatKnightDismounted
+	setPalette(155,AwaGreatKnightDismounted)
+	setCBSP(155,Awa, 4, GreatKnight_Dismounted)
+
 // KwameDarkBishop
-	setPalette(152,KwameDarkBishop)
-	setCBSP(152,Kwame, 1, DarkBishop)
+	setPalette(156,KwameDarkBishop)
+	setCBSP(156,Kwame, 1, DarkBishop)
 
 // AthanDarkBishop
-	setPalette(152,AthanDarkBishop)
-	setCBSP(152,Athanasius, 1, DarkBishop)
+	setPalette(157,AthanDarkBishop)
+	setCBSP(157,Athanasius, 1, DarkBishop)
