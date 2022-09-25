@@ -446,10 +446,10 @@ setMugEntry(TobieMug, TobieMugData, 3, 5, 3, 3)
 
 ALIGN 16
 AwaMugData:
-#incbin "Dmp/Awa(Nickt)_mug.dmp"
-#incbin "Dmp/Awa(Nickt)_frames.dmp"
-#incbin "Dmp/Awa(Nickt)_palette.dmp"
-#incbin "Dmp/Awa(Nickt)_minimug.dmp"
+#incbin "Dmp/Awa(Nickt, Roze)_mug.dmp"
+#incbin "Dmp/Awa(Nickt, Roze)_frames.dmp"
+#incbin "Dmp/Awa(Nickt, Roze)_palette.dmp"
+#incbin "Dmp/Awa(Nickt, Roze)_minimug.dmp"
 setMugEntry(AwaMug, AwaMugData, 2, 5, 2, 3)
 
 ALIGN 16

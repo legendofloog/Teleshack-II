@@ -104,7 +104,7 @@ SupportConvoEntry(Cadenza, Longxia, Cadenza_Longxia_C, Cadenza_Longxia_B, Cadenz
 SupportConvoEntry(Cadenza, Mink, 0, 0, 0)
 SupportConvoEntry(Cadenza, Kofi, Cadenza_Kofi_C, Cadenza_Kofi_B, Cadenza_Kofi_A)
 
-SupportConvoEntry(Leina, Mantou, 0, 0, 0)
+SupportConvoEntry(Leina, Mantou, Leina_Mantou_C, Leina_Mantou_B, Leina_Mantou_A)
 SupportConvoEntry(Leina, Cromar, 0, 0, 0)
 SupportConvoEntry(Leina, Ngondala, 0, 0, 0)
 
@@ -167,7 +167,7 @@ SupportConvoEntry(Ellerey, Mish, MishEllereyCSupport, MishEllereyBSupport, MishE
 
 SupportConvoEntry(Mantou, Ichwep, Ichwep_Mantou_C, Ichwep_Mantou_B, Ichwep_Mantou_A)
 SupportConvoEntry(Mantou, Alex, AlexMantouCSupport, AlexMantouBSupport, AlexMantouASupport)
-SupportConvoEntry(Mantou, Leina, 0, 0, 0)
+SupportConvoEntry(Mantou, Leina, Leina_Mantou_C, Leina_Mantou_B, Leina_Mantou_A)
 
 SupportConvoEntry(Tippany, Matthias, Matthias_Tippany_C, Matthias_Tippany_B, Matthias_Tippany_A)
 SupportConvoEntry(Tippany, Fangai, 0, 0, 0)
@@ -183,7 +183,7 @@ SupportConvoEntry(Carl, Sera, CarlSeraCSupport, CarlSeraBSupport, CarlSeraASuppo
 
 SupportConvoEntry(Takai, Tobie, 0, 0, 0)
 SupportConvoEntry(Takai, Mish, 0, MishTakaiB, MishTakaiA)
-SupportConvoEntry(Takai, Shaw, 0, 0, 0)
+SupportConvoEntry(Takai, Shaw, TakaiShawCSupport, TakaiShawBSupport, TakaiShawASupport)
 
 SupportConvoEntry(Darby, Ellerey, 0, 0, 0)
 SupportConvoEntry(Darby, Jacinth, DarbyJacinthC, DarbyJacinthB, DarbyJacinthA)
@@ -232,7 +232,7 @@ SupportConvoEntry(Sera, Carl, CarlSeraCSupport, CarlSeraBSupport, CarlSeraASuppo
 
 SupportConvoEntry(Shaw, Sera, 0, 0, 0)
 SupportConvoEntry(Shaw, Hornet, 0, 0, 0)
-SupportConvoEntry(Shaw, Takai, 0, 0, 0)
+SupportConvoEntry(Shaw, Takai, TakaiShawCSupport, TakaiShawBSupport, TakaiShawASupport)
 
 //interlude
 
