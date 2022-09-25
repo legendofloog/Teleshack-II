@@ -7,6 +7,7 @@ EventPointerTable(FF5WaveCaveTileAnimationsID, FF5WaveCaveTileAnimations)
 EventPointerTable(EndgameAnimationsID, EndgameAnimations)
 EventPointerTable(MansterAnimationsID, MansterAnimations)
 EventPointerTable(ThraciaFieldsAnimationsID, ThraciaFieldsAnimations)
+EventPointerTable(JungleMountainousAnimationsID, JungleMountainousAnimations)
 
 ALIGN 4
 FlasubanVillageTileAnimations0:
@@ -215,6 +216,70 @@ ThraciaFieldsAnimations7:
 #incbin "TilesetAnimations/ThraciaFieldsAnims/animations_007.dmp"
 
 ALIGN 4
+JungleMountainousAnimations0: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_000.dmp"
+
+ALIGN 4
+JungleMountainousAnimations1: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_001.dmp"
+
+ALIGN 4
+JungleMountainousAnimations2: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_002.dmp"
+
+ALIGN 4
+JungleMountainousAnimations3: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_003.dmp"
+
+ALIGN 4
+JungleMountainousAnimations4: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_004.dmp"
+
+ALIGN 4
+JungleMountainousAnimations5: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_005.dmp"
+
+ALIGN 4
+JungleMountainousAnimations6: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_006.dmp"
+
+ALIGN 4
+JungleMountainousAnimations7: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_007.dmp"
+
+ALIGN 4
+JungleMountainousAnimations8: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_008.dmp"
+
+ALIGN 4
+JungleMountainousAnimations9: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_009.dmp"
+
+ALIGN 4
+JungleMountainousAnimations10: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_010.dmp"
+
+ALIGN 4
+JungleMountainousAnimations11: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_011.dmp"
+
+ALIGN 4
+JungleMountainousAnimations12: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_012.dmp"
+
+ALIGN 4
+JungleMountainousAnimations13: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_013.dmp"
+
+ALIGN 4
+JungleMountainousAnimations14: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_014.dmp"
+
+ALIGN 4
+JungleMountainousAnimations15: ALIGN 4
+#incbin "TilesetAnimations/JungleMountainousAnims/animations_015.dmp"
+
+ALIGN 4
 ThraciaFieldsAnimations:
 tilesetAnimation(16,0x1000,ThraciaFieldsAnimations0)
 tilesetAnimation(16,0x1000,ThraciaFieldsAnimations1)
@@ -291,4 +356,24 @@ tilesetAnimation(0xC,0x1000,MansterAnimations3)
 tilesetAnimation(0xC,0x1000,MansterAnimations4)
 tilesetAnimation(0xC,0x1000,MansterAnimations5)
 tilesetAnimation(0xC,0x1000,MansterAnimations6)
+WORD 0 0
+
+ALIGN 4
+JungleMountainousAnimations:
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations0)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations1)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations2)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations3)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations4)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations5)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations6)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations7)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations8)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations9)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations10)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations11)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations12)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations13)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations14)
+tilesetAnimation(0x1C,0x1000,JungleMountainousAnimations15)
 WORD 0 0

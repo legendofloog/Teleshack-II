@@ -182,6 +182,7 @@
 #define FF2TownObjectID 0xBE
 #define EndgameObjectID 0xC5
 #define MansterObjectID 0xD3
+#define JungleMountainousObjectID 0xDF
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
@@ -198,6 +199,7 @@
 #define FlasubanVillageSteamPaletteID 0xd2
 #define MansterPaletteID 0xD4
 #define ThraciaFieldsNormalPaletteID 0xDC
+#define JungleMountainousPaletteID 0xDD
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -210,6 +212,7 @@
 #define FF2TownConfigID 0xC0
 #define EndgameConfigID 0xc9
 #define MansterConfigID 0xD5
+#define JungleMountainousMapchipConfigID 0xDE
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B
@@ -219,4 +222,5 @@
 #define EndgameAnimationsID 0xcd
 #define MansterAnimationsID 0xD6
 #define ThraciaFieldsAnimationsID 0xDb
+#define JungleMountainousAnimationsID 0xE0
 
