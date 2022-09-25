@@ -259,6 +259,9 @@
 #define CherneMagicAnim 0xB7
 #define ByelenMagicAnim 0xB8
 
+#define SwordfighterMSwordAnim 0xB
+#define SwordfighterMUnarmedAnim 0xC
+
 ALIGN 4
 SageMAnims:
 AnimaAnim(SageMagicAnim)
@@ -785,4 +788,10 @@ ALIGN 4
 ByelenAnims:
 LightAnim(ByelenMagicAnim)
 UnarmedAnim(ByelenMagicAnim)
+EndAnim
+
+ALIGN 4
+SwordfighterMAnims:
+SwordAnim(SwordfighterMSwordAnim)
+UnarmedAnim(SwordfighterMUnarmedAnim)
 EndAnim
