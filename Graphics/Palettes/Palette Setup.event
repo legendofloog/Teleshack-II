@@ -607,3 +607,11 @@
 // NahizaLongBallisticianPal
 	setPalette(151,NahizaLongBallisticianPal)
 	setCBSP(151,Nahiza, 3, LongBallistician)
+
+// KwameDarkBishop
+	setPalette(152,KwameDarkBishop)
+	setCBSP(152,Kwame, 1, DarkBishop)
+
+// AthanDarkBishop
+	setPalette(152,AthanDarkBishop)
+	setCBSP(152,Athanasius, 1, DarkBishop)

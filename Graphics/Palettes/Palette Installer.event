@@ -456,3 +456,9 @@ NahizaBallisticianPal:
 NahizaLongBallisticianPal:
 	#incbin "./_palettes/NahizaLongBallisticianPal.lzpal" 
 
+KwameDarkBishop:
+	#incbin "./_palettes/KwameDarkBishop.lzpal" 
+
+AthanDarkBishop:
+	#incbin "./_palettes/AthanDarkBishop.lzpal" 
+
