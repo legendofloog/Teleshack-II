@@ -608,28 +608,172 @@
 	setPalette(151,NahizaLongBallisticianPal)
 	setCBSP(151,Nahiza, 3, LongBallistician)
 
+// LockeThiefFighter
+	setPalette(152,LockeThiefFighter)
+	setCBSP(152,Locke, 3, ThiefFighter)
+
+// EmoryKnightDismounted
+	setPalette(153,EmoryKnightDismounted)
+	setCBSP(153,Emory_Ch3, 2, SwordKnight_Dismounted)
+
+// EleanorGeneral
+	setPalette(154,EleanorGeneral)
+	setCBSP(154,Eleanor, 3, General)
+
+// WrathgarWarrior
+	setPalette(155,WrathgarWarrior)
+	setCBSP(155,Wrathgar, 3, Warrior)
+
+// AuroraHalberdier
+	setPalette(156,AuroraHalberdier)
+	setCBSP(156,Aurora, 3, Halberdier)
+
+// HilmarLanceArmour
+	setPalette(157,HilmarLanceArmour)
+	setCBSP(157,Hilmar, 1, LanceArmor)
+
+// JohannaHero
+	setPalette(158,JohannaHero)
+	setCBSP(158,Johanna, 3, Hero_F)
+
+// SeraSwordmaster
+	setPalette(159,SeraSwordmaster)
+	setCBSP(159,Sera, 3, Swordmaster_F)
+
+// MantouBrigand
+	setPalette(160,MantouBrigand)
+	setCBSP(160,Mantou, 1, Brigand_F)
+
+// MantouWarrior
+	setPalette(161,MantouWarrior)
+	setCBSP(161,Mantou, 3, Warrior_F)
+
+// HernandezWarrior
+	setPalette(162,HernandezWarrior)
+	setCBSP(162,Hernandez, 3, Warrior)
+
+// CarlSwordfighter
+	setPalette(163,CarlSwordfighter)
+	setCBSP(163,Carl, 1, Swordfighter)
+
+// CarlHero
+	setPalette(164,CarlHero)
+	setCBSP(164,Carl, 3, Hero)
+
+// BarodWarrior
+	setPalette(165,BarodWarrior)
+	setCBSP(165,Barod, 3, Warrior)
+
+// Barod2Warrior
+	setPalette(166,Barod2Warrior)
+	setCBSP(166,Barod2, 3, Warrior)
+
+// BarodRealWarrior
+	setPalette(167,BarodRealWarrior)
+	setCBSP(167,BarodReal, 3, Warrior)
+
+// McCallumBerserker
+	setPalette(168,McCallumBerserker)
+	setCBSP(168,McCallum, 3, Berserker)
+
+// ZeusBaron
+	setPalette(169,ZeusBaron)
+	setCBSP(169,Zeus, 3, Baron)
+
+// DrakenCorsair
+	setPalette(170,DrakenCorsair)
+	setCBSP(170,Draken, 1, Corsair)
+
+// YorLanceSoldier
+	setPalette(171,YorLanceSoldier)
+	setCBSP(171,Yor, 1, LanceSoldier)
+
+// MifanMyrmidon
+	setPalette(172,MifanMyrmidon)
+	setCBSP(172,Mifan, 1, Myrmidon_F)
+
+// MifanSwordmaster
+	setPalette(173,MifanSwordmaster)
+	setCBSP(173,Mifan, 3, Swordmaster_F)
+
+// WellworthSwordfighter
+	setPalette(174,WellworthSwordfighter)
+	setCBSP(174,Wellworth, 1, Swordfighter)
+
+// TheGiantWarrior
+	setPalette(175,TheGiantWarrior)
+	setCBSP(175,TheGiant, 3, Warrior)
+
+// TsourekiHalberdier
+	setPalette(176,TsourekiHalberdier)
+	setCBSP(176,Tsoureki, 3, Halberdier)
+
+// AltoHero
+	setPalette(177,AltoHero)
+	setCBSP(177,Alto, 3, Hero)
+
+// MureibHighPriest
+	setPalette(178,MureibHighPriest)
+	setCBSP(178,Mureib, 3, HighPriest)
+
+// MureibHighPriest2
+	setPalette(179,MureibHighPriest2)
+	setCBSP(179,Mureib2, 3, HighPriest)
+
+// MureibHighPriestEndgame
+	setPalette(180,MureibHighPriestEndgame)
+	setCBSP(180,MureibEndgame, 3, HighPriest)
+
+// ShafaqatSniper
+	setPalette(181,ShafaqatSniper)
+	setCBSP(181,Shafaqat, 3, Sniper_F)
+
+// TarajiSwordmaster
+	setPalette(182,TarajiSwordmaster)
+	setCBSP(182,Taraji, 3, Swordmaster_F)
+
+// TarajiSwordmasterReal
+	setPalette(183,TarajiSwordmasterReal)
+	setCBSP(183,TarajiReal, 3, Swordmaster_F)
+
+// XleaHero
+	setPalette(184,XleaHero)
+	setCBSP(184,Xlea, 3, Hero)
+
 // OrfeasEmperor
-	setPalette(152,OrfeasEmperor)
-	setCBSP(152,Orfeas, 1, Emperor)
+	setPalette(185,OrfeasEmperor)
+	setCBSP(185,Orfeas, 1, Emperor)
 
 // AwaDismounted
-	setPalette(153,AwaDismounted)
+	setPalette(186,AwaDismounted)
 
 // AwaAxeKnight
-	setPalette(154,AwaAxeKnight)
+	setPalette(187,AwaAxeKnight)
 
 // AwaGreatKnight
-	setPalette(155,AwaGreatKnight)
-	setCBSP(155,Awa, 3, GreatKnight)
+	setPalette(188,AwaGreatKnight)
+	setCBSP(188,Awa, 3, GreatKnight)
 
 // AwaGreatKnightDismounted
-	setPalette(155,AwaGreatKnightDismounted)
-	setCBSP(155,Awa, 4, GreatKnight_Dismounted)
+	setPalette(189,AwaGreatKnightDismounted)
+	setCBSP(189,Awa, 4, GreatKnight_Dismounted)
 
 // KwameDarkBishop
-	setPalette(156,KwameDarkBishop)
-	setCBSP(156,Kwame, 1, DarkBishop)
+	setPalette(190,KwameDarkBishop)
+	setCBSP(190,Kwame, 1, DarkBishop)
 
 // AthanDarkBishop
-	setPalette(157,AthanDarkBishop)
-	setCBSP(157,Athanasius, 1, DarkBishop)
+	setPalette(191,AthanDarkBishop)
+	setCBSP(191,Athanasius, 1, DarkBishop)
+
+// BuldakThief
+	setPalette(192,BuldakThief)
+	setCBSP(192,Buldak, 1, Thief)
+
+// BuldakThiefFighter
+	setPalette(193,BuldakThiefFighter)
+	setCBSP(193,Buldak, 1, ThiefFighter)
+
+// MinkBard
+	setPalette(194,MinkBard)
+	setCBSP(194,Mink, 1, Bard)

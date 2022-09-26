@@ -176,6 +176,11 @@ Come on everyone![A][X]
 [Beat]Oh? We're leaving?[N]
 Well, ok then.[A][X]
 
+## MantouEscapeQuoteText
+[MidRight][LoadMantou]
+A bandit's greatest gift,[N]
+knowing when to run for it![A][X]
+
 ## NahizaEscapeQuoteText
 [MidRight][LoadNahiza]
 Wahaha! What a rush![AN]

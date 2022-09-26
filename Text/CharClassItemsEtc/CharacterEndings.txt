@@ -407,12 +407,26 @@ tirelessly to repay their debt, and rose through[N]
 the ranks to become Leina's trusted general[N]
 when war broke out in Chouwouj years later.[X]
 
+## BuldakEnding
+His services no longer needed after the war,[N]
+Buldak never freed himself from the guilt of what[N]
+he brought upon his former home. When he finally[N]
+worked up the courage to return forty years later,[N]
+he found the remnants of a village long abandoned.[X]
+
 ## BuldakTaoEnding
 Following their oath, the pair returned to their[N]
 village of Shagahn, intent on honoring Mifan.[N]
 Tao's passionate words brought many former[N]
 villagers home, and Buldak's tireless work[N]
 earned him admiration, though he spurned it.[X]
+
+## IberisEnding
+While Iberis's accolades landed her as a founding[N]
+member of the Decian Republic, the weakening of[N]
+noble influence made her fearful. In desperation,[N]
+she raised a rebellion from Freyse's remnants and[N]
+sparked a new war in the aftermath of the old.[X]
 
 ## IberisNoraEnding
 When rebellion stirred in Freyse,[N]
@@ -550,11 +564,32 @@ One day, Tiberius disappeared, and Ojasvi[N]
 was deeply saddened to lose her friend,[N]
 but would later cross a familiar masked rider.[X]
 
+## MantouEnding
+Mantou hated the discipline and stringent[N]
+rules of the army. Convincing a few disgruntled[N]
+soldiers to defect, they took to the mountains[N]
+as brigands. Somehow, they were remembered as[N]
+folk heroes despite never doing any good.[X]
+
 ## EllereyEnding
 Ellerey decided to further xer steelworking[N]
 skills, and wound up becoming Decia's finest.[N]
 In xer old age, xe instead opted[N]
 to teach a new generation xer skills.[X]
+
+## DarbyEllereyEnding
+Following the war, Ellerey expanded[N]
+xer skills under the teachings of Darby.[N]
+Ellerey's mastery of metalworking and[N]
+weaponry only expanded, and xe[N]
+shared a close lifelong bond with Darby.[X]
+
+## JacinthEllereyEnding
+After Cherne's defeat, Ellerey put[N]
+xer lance down and focused solely[N]
+on smithing. Jacinth always supported[N]
+xem in all aspects, and they were[N]
+forever happy together.[X]
 
 ## TippanyEnding
 Tippany's quest to help others continued,[N]
@@ -610,6 +645,13 @@ Jacinth returned to Chouwouj a hero.[N]
 She ended up leaving dancing,[N]
 favoring the research of producing[N]
 her favorite types of sparkling drink.[X]
+
+## ApsisJacinthEnding
+Following the war, Jacinth and[N]
+Apsis tracked down Veid, where they[N]
+managed to retrieve Cherne's Inkwell.[N]
+The inkwell was a fraud, prompting the[N]
+two to go on a journey to find the truth.[X]
 
 ## DarbyJacinthEnding
 Following the war, Darby and[N]
@@ -716,6 +758,13 @@ career, he devoted his efforts to managing[N]
 and promoting the Grand Oceanic Arena,[N]
 which he found both lucrative and fulfilling.[X]
 
+## ShawSeraEnding
+After the war's end, Sera and Shaw proved[N]
+triumphant in the finals of Grand Oceanic[N]
+Arena. Sera left to travel the world, but[N]
+returned every five years to compete[N]
+alongside her friend.[X]
+
 ## OjasviEnding
 She returned to Mahemen to learn her family[N]
 had all perished in the war. She'd attempt[N]
@@ -814,12 +863,26 @@ warlord. Once peace returned to the[N]
 land, she spent a simple life with her[N]
 family in the mountains.[X]
 
+## NgondalaKwameEnding
+Following a traitor's advice, Ngondala tried[N]
+to continue her campaign to bring Chouwouj[N]
+peace. However, her efforts ended in ruin. The[N]
+jungles burned, and Ngondala and her family[N]
+fled the wartorn lands to an unknown fate.[X]
+
 ## Ngondala_Locke_Ending
 Locke went back with Ngondala to Chouwouj.[N]
 Although Locke thought it'd just be one job,[N]
 he fell in love with Chouwouj's climate.[N]
 Ngondala treated him well, and he took on jobs[N]
 some might even consider honorable.[X]
+
+## TrajanEnding
+Trajan returned to Decia, establishing a[N]
+council chosen by representatives of each town.[N]
+He used his experience as a Liberator veteran[N]
+to lead Decia's reconstruction, devoting all[N]
+his time to his vow with a fallen friend.[X]
 
 ## TrajanBoroEnding
 Trajan returned to Decia, establishing a[N]
@@ -913,6 +976,12 @@ Cromar the Nightcaller[X]
 ## LeinaTitle
 Leina, Lady of Chouwouj[X]
 
+## IberisTitle
+Iberis, Hope of Freyse[X]
+
+## BuldakTitle
+Buldak, Mournful Tracker[X]
+
 ## NoraTitle
 Nora, Korovai's Blade[X]
 
@@ -933,6 +1002,9 @@ Taciturn Soldier, Ichwep[X]
 
 ## MiloTitle
 Boisterous Soldier, Milo[X]
+
+## MantouTitle
+Law-Abiding Citizen, Mantou[X]
 
 ## EllereyTitle
 Ellerey, Steel Guru[X]
@@ -1008,6 +1080,9 @@ Warlord Ngondala[X]
 
 ## CatrinTitle
 Catrin, the Grimblade[X]
+
+## TrajanTitle
+Trajan, Decia's Shield[X]
 
 ## EliasTitle
 Vermillion Knight, Elias[X]

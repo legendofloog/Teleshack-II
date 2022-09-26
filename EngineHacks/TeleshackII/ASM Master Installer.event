@@ -1,4 +1,7 @@
-#include "ThraciaASM/ThraciaASMInstaller.event"
+#include "Fatigue/Fatigue.event"
+#include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
+
+#include "TeleshackII/TeleshackII_Installer.event"
 #include "Music/MusicAsmInstaller.event"
 #include "Fixes/MasterFixesInstaller.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
@@ -8,10 +11,6 @@
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 #include "FixedDamage/FixedDamageWeapons.event"
-
-ALIGN 4
-ChangeWeaponRankASMC:
-#incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
 
 #include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
 
@@ -27,8 +26,6 @@ ChangeWeaponRankASMC:
 
 #include "Graphics/NosResire/NosResire.event"
 
-#include "MultiTileMarker/MultiTileMarker_Install.event"
-
 #include "EventGetCountOfUnit/Installer.event"
 
 #include "StallAIs/AITableExpansion/AI1TableExpansion.event"
@@ -36,8 +33,6 @@ ChangeWeaponRankASMC:
 #include "StallAIs/AITableExpansion/AI2TableExpansion.event"
 
 #include "StallAIs/StallAI/StallAI.event"
-
-#include "MapChangeToFlag/Installer.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 

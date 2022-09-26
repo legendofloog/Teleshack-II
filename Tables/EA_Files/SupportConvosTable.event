@@ -160,8 +160,8 @@ SupportConvoEntry(Tiberius, Mira, 0, 0, 0)
 SupportConvoEntry(Tiberius, Iskra, 0, 0, 0)
 SupportConvoEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_C, Tiberius_Ojasvi_B, Tiberius_Ojasvi_A)
 
-SupportConvoEntry(Ellerey, Darby, 0, 0, 0)
-SupportConvoEntry(Ellerey, Jacinth, 0, 0, 0)
+SupportConvoEntry(Ellerey, Darby, DarbyEllereyC, DarbyEllereyB, DarbyEllereyA)
+SupportConvoEntry(Ellerey, Jacinth, EllereyJacinthC, EllereyJacinthB, EllereyJacinthA)
 SupportConvoEntry(Ellerey, Zwieback, Zwieback_Ellerey_C, Zwieback_Ellerey_B, Zwieback_Ellerey_A)
 SupportConvoEntry(Ellerey, Mish, MishEllereyCSupport, MishEllereyBSupport, MishEllereyASupport)
 
@@ -185,13 +185,13 @@ SupportConvoEntry(Takai, Tobie, 0, 0, 0)
 SupportConvoEntry(Takai, Mish, 0, MishTakaiB, MishTakaiA)
 SupportConvoEntry(Takai, Shaw, TakaiShawCSupport, TakaiShawBSupport, TakaiShawASupport)
 
-SupportConvoEntry(Darby, Ellerey, 0, 0, 0)
+SupportConvoEntry(Darby, Ellerey, DarbyEllereyC, DarbyEllereyB, DarbyEllereyA)
 SupportConvoEntry(Darby, Jacinth, DarbyJacinthC, DarbyJacinthB, DarbyJacinthA)
 SupportConvoEntry(Darby, Cleo, CleoDarbyCSupport, CleoDarbyBSupport, CleoDarbyASupport)
 
-SupportConvoEntry(Jacinth, Ellerey, 0, 0, 0)
+SupportConvoEntry(Jacinth, Ellerey, EllereyJacinthC, EllereyJacinthB, EllereyJacinthA)
 SupportConvoEntry(Jacinth, Darby, DarbyJacinthC, DarbyJacinthB, DarbyJacinthA)
-SupportConvoEntry(Jacinth, Apsis, 0, 0, 0)
+SupportConvoEntry(Jacinth, Apsis, ApsisJacinthC, ApsisJacinthB, ApsisJacinthA)
 
 SupportConvoEntry(Nahiza, Rashid, 0, 0, 0)
 SupportConvoEntry(Nahiza, Hornet, 0, 0, 0)
@@ -224,13 +224,13 @@ SupportConvoEntry(Nikolas, Kofi, Kofi_Nikolas_C, Kofi_Nikolas_B, Kofi_Nikolas_A)
 SupportConvoEntry(KwameReal, Mink, 0, 0, 0)
 SupportConvoEntry(KwameReal, Kofi, Kofi_Kwame_C, Kofi_Kwame_B, Kofi_Kwame_A)
 SupportConvoEntry(KwameReal, CatrinReal, 0, 0, 0)
-SupportConvoEntry(KwameReal, Ngondala, 0, 0, 0)
+SupportConvoEntry(KwameReal, Ngondala, 0, KwameNgondalaB, KwameNgondalaA)
 
-SupportConvoEntry(Sera, Shaw, 0, 0, 0)
+SupportConvoEntry(Sera, Shaw, 0, ShawSeraBSupport, ShawSeraASupport)
 SupportConvoEntry(Sera, Alena, AlenaSeraCSupport, AlenaSeraBSupport, AlenaSeraASupport)
 SupportConvoEntry(Sera, Carl, CarlSeraCSupport, CarlSeraBSupport, CarlSeraASupport)
 
-SupportConvoEntry(Shaw, Sera, 0, 0, 0)
+SupportConvoEntry(Shaw, Sera, 0, ShawSeraBSupport, ShawSeraASupport)
 SupportConvoEntry(Shaw, Hornet, 0, 0, 0)
 SupportConvoEntry(Shaw, Takai, TakaiShawCSupport, TakaiShawBSupport, TakaiShawASupport)
 
@@ -243,7 +243,7 @@ SupportConvoEntry(Tao, Jenny, JennyTaoCSupport, JennyTaoBSupport, JennyTaoASuppo
 SupportConvoEntry(Joie, Pelecaye, 0, 0, 0)
 SupportConvoEntry(Joie, Locke, JoieLockeCSupport, JoieLockeBSupport, JoieLockeASupport)
 
-SupportConvoEntry(Apsis, Jacinth, 0, 0, 0)
+SupportConvoEntry(Apsis, Jacinth, ApsisJacinthC, ApsisJacinthB, ApsisJacinthA)
 SupportConvoEntry(Apsis, Groto, Apsis_Groto_C, Apsis_Groto_B, Apsis_Groto_A)
 
 SupportConvoEntry(Zhara, Jenny, 0, 0, 0)
@@ -270,7 +270,7 @@ SupportConvoEntry(Lyre, Cleo, CleoLyreCSupport, CleoLyreBSupport, CleoLyreASuppo
 SupportConvoEntry(Lyre, Jerry, 0, JerryLyreBSupport, JerryLyreASupport)
 
 SupportConvoEntry(Ngondala, Leina, 0, 0, 0)
-SupportConvoEntry(Ngondala, KwameReal, 0, 0, 0)
+SupportConvoEntry(Ngondala, KwameReal, 0, KwameNgondalaB, KwameNgondalaA)
 SupportConvoEntry(Ngondala, Locke, Ngondala_Locke_C, Ngondala_Locke_B, Ngondala_Locke_A)
 
 SupportConvoEntry(CatrinReal, Loewe, 0, 0, LoeweCatrinASupport)
