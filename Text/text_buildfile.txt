@@ -41,6 +41,16 @@ Restores HP to allies at a distance.[X]
 # 0x26B
 Holy[X]
 
+# 0x08FE
+[Left][LoadStranger]
+What, you wanna take a breather?[N]
+[Yes][X]
+
+# 0x08FF
+[Left]
+Well, no shame in it. Rest up,[N]
+and come back when you're ready.[X]
+
 # 0x55B
 Unit is blessed by Leina's Radiance.[NL]
 They will heal for 10 + Leina's Mag[N]
