@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="11" height="7" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="11" height="7" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
  <tileset firstgid="1" name="BobAnimsOffTiles" tilewidth="8" tileheight="8" tilecount="32" columns="8">
   <image source="../../Image/Png/BobAnimsOffTiles.png" width="64" height="32"/>
  </tileset>
