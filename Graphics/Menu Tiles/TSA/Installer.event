@@ -1,0 +1,145 @@
+PUSH
+ORG 0xA1742C
+#incbin "dmp/TerrainWindow.tmx.dmp"
+
+ORG 0xA17744
+#incbin "dmp/ObjectiveWindow.tmx.dmp"
+
+ORG 0xA176BC
+#incbin "dmp/ObjectiveWindowTall.tmx.dmp"
+
+ORG 0xA173EC
+#incbin "dmp/TradeWindowTop.tmx.dmp"
+
+ORG 0x5A09A8
+#incbin "dmp/BattleForecast.tmx.dmp"
+
+ORG 0x5A0AEC
+#incbin "dmp/BattleForecastTall.tmx.dmp"
+
+ORG 0xA1C8B4
+#incbin "dmp/UnitMenu.tmx.dmp"
+
+ORG 0x5A0D4C
+#incbin "dmp/NameAndMugWindow.tmx.dmp"
+
+ORG 0xA2C5A8
+#incbin "dmp/SoundRoomSongList.tmx.dmp"
+
+ORG 0xA2C4C8
+#incbin "dmp/SoundRoomPlayer.tmx.dmp"
+
+ORG 0xB1C84
+POIN OptionsMenuTSA
+
+ORG 0x8E07C
+POIN StatusScreenTSA
+
+ORG 0xCEEFC
+POIN GuideMenuTSA
+
+ORG 0x95EAC
+POIN PrepMenuHeaderTSA
+
+ORG 0x9A8E0
+POIN PrepMenuUnitsTSA
+ORG 0x9A8A0 // this loads extra ui tiles over the normal ones for some reason
+SHORT 0x46C0 0x46C0 // nop nop
+
+ORG 0x98D78
+POIN PrepMenuItemsTSA
+ORG 0x995C0
+POIN PrepMenuItemsTSA
+ORG 0x99C40
+POIN PrepMenuItemsTSA
+
+ORG 0x99C4C
+POIN PrepMenuItemsSecondUnitTSA
+
+ORG 0x9C804
+POIN PrepMenuItemUseTSA
+ORG 0x9C65C // this loads extra ui tiles over the normal ones for some reason (again?!)
+SHORT 0x46C0 0x46C0 // nop nop
+
+ORG 0xA14D8
+POIN SupportMenuTSA
+
+ORG 0xB4E04
+POIN ShopMugWindowTSA
+
+ORG 0x9DC38
+POIN SupplyMenuTSA
+
+ORG 0x9DC44
+POIN SupplyMenuMugTSA
+
+POP
+
+ALIGN 4
+OptionsMenuTSA:
+#incbin "dmp/OptionsMenu.tmx.dmp"
+
+ALIGN 4
+StatusScreenTSA:
+#incbin "dmp/StatusScreen.tmx.dmp"
+
+ALIGN 4
+GuideMenuTSA:
+#incbin "dmp/GuideMenu.tmx.dmp"
+
+ALIGN 4
+PrepMenuHeaderTSA:
+#incbin "dmp/PrepMenuHeader.tmx.dmp"
+
+ALIGN 4
+PrepMenuUnitsTSA:
+#incbin "dmp/PrepMenuUnits.tmx.dmp"
+
+ALIGN 4
+PrepMenuItemsTSA:
+#incbin "dmp/PrepMenuItems.tmx.dmp"
+
+ALIGN 4
+PrepMenuItemsSecondUnitTSA:
+#incbin "dmp/PrepMenuItemsSecondUnit.tmx.dmp"
+
+ALIGN 4
+SupportMenuTSA:
+#incbin "dmp/SupportMenu.tmx.dmp"
+
+ALIGN 4
+ShopMugWindowTSA:
+#incbin "dmp/ShopMugWindow.tmx.dmp"
+
+ALIGN 4
+SupplyMenuTSA:
+#incbin "dmp/SupplyMenu.tmx.dmp"
+
+ALIGN 4
+SupplyMenuMugTSA:
+#incbin "dmp/SupplyMenuMug.tmx.dmp"
+
+ALIGN 4
+MinimugBoxTSA:
+#incbin "dmp/MinimugBox.tmx.dmp"
+#define MMBTilemap MinimugBoxTSA
+
+ALIGN 4
+BattleStatsAnimsOffLeftTSA:
+#incbin "dmp/BattleStatsLeft.tmx.dmp"
+#define New_Battle_Anims_Off_Left_TSA BattleStatsAnimsOffLeftTSA
+
+ALIGN 4
+BattleStatsAnimsOffRightTSA:
+#incbin "dmp/BattleStatsRight.tmx.dmp"
+#define New_Battle_Anims_Off_Right_TSA BattleStatsAnimsOffRightTSA
+
+ALIGN 4
+PrepMenuTSA:
+#incbin "dmp/PrepMenu.tmx.dmp"
+#define PREEXT_NewPrepTSA PrepMenuTSA
+
+ALIGN 4
+PrepMenuItemUseTSA:
+#incbin "dmp/PrepMenuItemUse.tmx.dmp"
+//#define New_TSA PrepMenuItemUseTSA
