@@ -1,0 +1,87 @@
+ALIGN 4
+BobMenuTiles:
+#incbin "Dmp/BobMenuTiles.dmp"
+
+ALIGN 4
+BobMenuTilesPalette:
+#incbin "Dmp/BobMenuTiles.png_pal.dmp"
+
+ALIGN 4
+BobAnimsOffTiles:
+#incbin "Dmp/BobAnimsOffTiles.dmp"
+#define New_Battle_Anims_Off_Graphics BobAnimsOffTiles
+
+ALIGN 4
+BobPrepMenuItemsUnitHeader:
+#incbin "Dmp/PrepMenuItemsUnitHeader.dmp"
+
+#define BobMenuTilesPaletteBlue  BobMenuTilesPalette
+#define BobMenuTilesPaletteRed   BobMenuTilesPalette + 0x20
+#define BobMenuTilesPaletteGreen BobMenuTilesPalette + 0x40
+#define BobMenuTilesPaletteGray  BobMenuTilesPalette + 0x60
+
+PUSH
+
+/*
+ORG 0x5B6C34
+#incbin "Image/Dmp/BobMenuTiles.png_pal.dmp"
+*/
+
+// Dark Palette
+ORG 0xCEF08
+POIN BobMenuTilesPalette
+
+ORG 0x5B6450
+// Palletes
+POIN BobMenuTilesPaletteBlue
+POIN BobMenuTilesPaletteRed
+POIN BobMenuTilesPaletteGreen
+POIN BobMenuTilesPaletteGray
+
+// For the stat screen
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+
+// For each color style
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+POIN BobMenuTiles
+
+// For the Minimug Box
+ORG 0x8C2EC
+POIN BobMenuTilesPaletteBlue
+ORG 0x8C2F4
+POIN BobMenuTilesPaletteRed
+ORG 0x8C2FC
+POIN BobMenuTilesPaletteGreen
+
+// Battle Forecast
+ORG 0x36D2C
+POIN BobMenuTilesPaletteBlue
+ORG 0x36D34
+POIN BobMenuTilesPaletteRed
+ORG 0x36D3C
+POIN BobMenuTilesPaletteGreen
+ORG 0x36D48
+POIN BobMenuTilesPaletteGray
+
+// Battle Stats Anims Off
+ORG 0x7BDF8
+POIN BobMenuTilesPaletteBlue
+ORG 0x7BE00
+POIN BobMenuTilesPaletteRed
+ORG 0x7BE08
+POIN BobMenuTilesPaletteGreen
+ORG 0x7BE10
+POIN BobMenuTilesPaletteGray
+
+// Prep Menu Items Unit Header
+ORG 0x98468
+POIN BobPrepMenuItemsUnitHeader
+ORG 0x98528
+POIN BobMenuTilesPaletteBlue
+
+POP

@@ -17,6 +17,8 @@ PUSH
 
 POP
 
+/*
 ALIGN 4
 PREEXT_NewPrepTSA:
 #incbin "NewPrepTSA.dmp"
+*/

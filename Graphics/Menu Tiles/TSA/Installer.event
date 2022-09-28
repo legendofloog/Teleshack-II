@@ -37,6 +37,42 @@ POIN StatusScreenTSA
 
 ORG 0xCEEFC
 POIN GuideMenuTSA
+
+ORG 0x95EAC
+POIN PrepMenuHeaderTSA
+
+ORG 0x9A8E0
+POIN PrepMenuUnitsTSA
+ORG 0x9A8A0 // this loads extra ui tiles over the normal ones for some reason
+SHORT 0x46C0 0x46C0 // nop nop
+
+ORG 0x98D78
+POIN PrepMenuItemsTSA
+ORG 0x995C0
+POIN PrepMenuItemsTSA
+ORG 0x99C40
+POIN PrepMenuItemsTSA
+
+ORG 0x99C4C
+POIN PrepMenuItemsSecondUnitTSA
+
+ORG 0x9C804
+POIN PrepMenuItemUseTSA
+ORG 0x9C65C // this loads extra ui tiles over the normal ones for some reason (again?!)
+SHORT 0x46C0 0x46C0 // nop nop
+
+ORG 0xA14D8
+POIN SupportMenuTSA
+
+ORG 0xB4E04
+POIN ShopMugWindowTSA
+
+ORG 0x9DC38
+POIN SupplyMenuTSA
+
+ORG 0x9DC44
+POIN SupplyMenuMugTSA
+
 POP
 
 ALIGN 4
@@ -52,6 +88,38 @@ GuideMenuTSA:
 #incbin "dmp/GuideMenu.tmx.dmp"
 
 ALIGN 4
+PrepMenuHeaderTSA:
+#incbin "dmp/PrepMenuHeader.tmx.dmp"
+
+ALIGN 4
+PrepMenuUnitsTSA:
+#incbin "dmp/PrepMenuUnits.tmx.dmp"
+
+ALIGN 4
+PrepMenuItemsTSA:
+#incbin "dmp/PrepMenuItems.tmx.dmp"
+
+ALIGN 4
+PrepMenuItemsSecondUnitTSA:
+#incbin "dmp/PrepMenuItemsSecondUnit.tmx.dmp"
+
+ALIGN 4
+SupportMenuTSA:
+#incbin "dmp/SupportMenu.tmx.dmp"
+
+ALIGN 4
+ShopMugWindowTSA:
+#incbin "dmp/ShopMugWindow.tmx.dmp"
+
+ALIGN 4
+SupplyMenuTSA:
+#incbin "dmp/SupplyMenu.tmx.dmp"
+
+ALIGN 4
+SupplyMenuMugTSA:
+#incbin "dmp/SupplyMenuMug.tmx.dmp"
+
+ALIGN 4
 MinimugBoxTSA:
 #incbin "dmp/MinimugBox.tmx.dmp"
 #define MMBTilemap MinimugBoxTSA
@@ -65,3 +133,13 @@ ALIGN 4
 BattleStatsAnimsOffRightTSA:
 #incbin "dmp/BattleStatsRight.tmx.dmp"
 #define New_Battle_Anims_Off_Right_TSA BattleStatsAnimsOffRightTSA
+
+ALIGN 4
+PrepMenuTSA:
+#incbin "dmp/PrepMenu.tmx.dmp"
+#define PREEXT_NewPrepTSA PrepMenuTSA
+
+ALIGN 4
+PrepMenuItemUseTSA:
+#incbin "dmp/PrepMenuItemUse.tmx.dmp"
+//#define New_TSA PrepMenuItemUseTSA
