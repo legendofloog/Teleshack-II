@@ -38,6 +38,9 @@ POIN StatusScreenTSA
 ORG 0xCEEFC
 POIN GuideMenuTSA
 
+ORG 0x95EB8
+POIN PrepMenuTSA
+
 ORG 0x95EAC
 POIN PrepMenuHeaderTSA
 
@@ -88,6 +91,10 @@ GuideMenuTSA:
 #incbin "dmp/GuideMenu.tmx.dmp"
 
 ALIGN 4
+PrepMenuTSA:
+#incbin "dmp/PrepMenu.tmx.dmp"
+
+ALIGN 4
 PrepMenuHeaderTSA:
 #incbin "dmp/PrepMenuHeader.tmx.dmp"
 
@@ -134,10 +141,13 @@ BattleStatsAnimsOffRightTSA:
 #incbin "dmp/BattleStatsRight.tmx.dmp"
 #define New_Battle_Anims_Off_Right_TSA BattleStatsAnimsOffRightTSA
 
+// This was for the Augury
+/*
 ALIGN 4
-PrepMenuTSA:
-#incbin "dmp/PrepMenu.tmx.dmp"
-#define PREEXT_NewPrepTSA PrepMenuTSA
+PrepMenuTallTSA:
+#incbin "dmp/PrepMenuTall.tmx.dmp"
+#define PREEXT_NewPrepTSA PrepMenuTallTSA
+*/
 
 ALIGN 4
 PrepMenuItemUseTSA:
