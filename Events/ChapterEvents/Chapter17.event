@@ -264,9 +264,7 @@ NoFade
 ENDA
 
 BeginningScene:
-FADU 15
 SetBackground(CastleHallway)
-FADI 15
 CHECK_ALIVE Nora //this needs a conditional - loog
 BEQ 776 s0 sC
 	CHECK_ALIVE Hans

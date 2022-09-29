@@ -123,7 +123,7 @@ SongTable(KwameID, KwameTheme, MapMusicGroup)
 SongTable(TheQuestForRudrasMines, the_quest_for_rudras_mines, MapMusicGroup)
 #include "MusicEvents/FE4 - Vs Julius (SurfingKyogre).event"
 SongTable(VsJuliusID, song0C, BattleMusicGroup)
-#include "MusicEvents/FE16 - Roar of Dominion (Rain) (MrGreen3339).event"
+#include "MusicEvents/FE16 - Roar of Dominion (Rain) (DrGreen3339).event"
 SongTable(RoarOfDomainID, RoarOfDominionSong, MapMusicGroup)
 #include "MusicEvents/What Im Made Of.event"
 SongTable(WhatImMadeOfID, song10, MapMusicGroup)
