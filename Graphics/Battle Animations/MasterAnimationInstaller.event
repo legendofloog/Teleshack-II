@@ -31,6 +31,13 @@
 }
 
 {
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Sword Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Axe Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Handaxe Installer.event"
+#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Unarmed Installer.event"
+}
+
+{
 #include "Animations/FE9_Fighter(MK404)/Axe Installer.event"
 #include "Animations/FE9_Fighter(MK404)/Handaxe Installer.event"
 #include "Animations/FE9_Fighter(MK404)/Unarmed Installer.event"
@@ -220,11 +227,6 @@
 }
 
 {
-#include "Animations/Eliwood_Repal(Temp)/Lance Installer.event"
-#include "Animations/Eliwood_Repal(Temp)/Unarmed Installer.event"
-}
-
-{
 #include "Animations/GoldKnight(Nuramon)/Axe Installer.event"
 #include "Animations/GoldKnight(Nuramon)/Handaxe Installer.event"
 #include "Animations/GoldKnight(Nuramon)/Unarmed Installer.event"
@@ -262,13 +264,6 @@
 {
 #include "Animations/Mercenary_F(TBA)/Sword Installer.event"
 #include "Animations/Mercenary_F(TBA)/Unarmed Installer.event"
-}
-
-{
-#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Sword Installer.event"
-#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Axe Installer.event"
-#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Handaxe Installer.event"
-#include "Animations/Hero_F_Pants_Repal (Pushwall,Pikmin1211,St_jack)/Unarmed Installer.event"
 }
 
 {

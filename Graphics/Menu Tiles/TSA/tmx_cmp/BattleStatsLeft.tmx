@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="11" height="7" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="BobAnimsOffTiles" tilewidth="8" tileheight="8" tilecount="32" columns="8">
+  <image source="../../Image/Png/BobAnimsOffTiles.png" width="64" height="32"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="11" height="7">
+  <data encoding="csv">
+1,2147483666,13,13,13,13,13,13,13,13,13,
+2147483663,2147483665,7,7,7,7,7,7,7,7,7,
+16,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,1073741830,
+19,2,2,2,2,2,2,2,2,2,2,
+19,2,2,2,2,2,2,2,2,2,2,
+19,2,2,2,2,2,2,2,2,2,2,
+20,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827,1073741827
+</data>
+ </layer>
+</map>

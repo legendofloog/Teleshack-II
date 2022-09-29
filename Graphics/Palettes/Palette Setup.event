@@ -780,3 +780,14 @@
 // FalcoTweak
 	setGenericPalette(0x68,FalcoTweak)
 	setGenericPalette( 0x69,FalcoTweak)
+// BuldakThief
+	setPalette(192,BuldakThief)
+	setCBSP(192,Buldak, 1, Thief)
+
+// BuldakThiefFighter
+	setPalette(193,BuldakThiefFighter)
+	setCBSP(193,Buldak, 1, ThiefFighter)
+
+// MinkBard
+	setPalette(194,MinkBard)
+	setCBSP(194,Mink, 1, Bard)

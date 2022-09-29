@@ -470,15 +470,15 @@ SupportCountAmount(2)
 ALIGN 4
 VolranSupportPointer:
 SupportDataCharacters(Tara,Meldan,0,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(40,80,0,0,0)
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
 SupportCountAmount(2)
 
 ALIGN 4
 TaraSupportPointer:
 SupportDataCharacters(Volran,Mish,0,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(40,80,0,0,0)
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
 SupportCountAmount(2)
 
 // ch20

@@ -587,4 +587,12 @@ HunterTweak:
 
 FalcoTweak:
 	#incbin "./_palettes/FalcoTweak.lzpal" 
+BuldakThief:
+	#incbin "./_palettes/BuldakThief.lzpal" 
+
+BuldakThiefFighter:
+	#incbin "./_palettes/BuldakThiefFighter.lzpal" 
+
+MinkBard:
+	#incbin "./_palettes/MinkBard.lzpal" 
 
