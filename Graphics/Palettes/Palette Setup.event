@@ -791,3 +791,35 @@
 // MinkBard
 	setPalette(194,MinkBard)
 	setCBSP(194,Mink, 1, Bard)
+
+// ShawChampion
+	setPalette(195,ShawChampion)
+	setCBSP(195,Shaw, 3, Champion)
+
+// ValseFreelancer
+	setPalette(196,ValseFreelancer)
+	setCBSP(196,Valse, 1, Freelancer)
+
+// ValseChampion
+	setPalette(197,ValseChampion)
+	setCBSP(197,Valse, 3, Champion)
+
+// MinkSage
+	setPalette(198,MinkSage)
+	setCBSP(198,Mink, 3, Sage)
+
+// TiberiusNoble
+	setPalette(199,TiberiusNoble)
+	setCBSP(199,Tiberius, 1, Noble)
+
+// TiberiusMasterKnight
+	setPalette(200,TiberiusMasterKnight)
+	setCBSP(200,Tiberius, 3, MasterKnight)
+
+// HornetBowKnight
+	setPalette(201,HornetBowKnight)
+	setCBSP(201,Hornet, 1, BowKnight)
+
+// HornetArchKnight
+	setPalette(202,HornetArchKnight)
+	setCBSP(202,Hornet, 3, ArchKnight)
