@@ -13,6 +13,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,CleoRemark,1)
 TurnEventPlayer(0,TrajanArrive,3)
 TurnEventPlayer(0,ThiefAppear,6)
 TurnEventPlayer(0,Reinforcements_Spawn_A,7)
@@ -20,8 +21,8 @@ TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(12, TrajanRecruit, Loewe, TrajanReal)
-CharacterEventBothWays(12, TrajanRecruit, Cleo, TrajanReal)
+//CharacterEventBothWays(12, TrajanRecruit, Loewe, TrajanReal)
+//CharacterEventBothWays(12, TrajanRecruit, Cleo, TrajanReal)
 END_MAIN
 
 LocationBasedEvents:
@@ -37,6 +38,7 @@ Village(9,VillageB,12,8)
 Village(10,VillageC,20,11)
 LOCA 11 LockeInn [2,22] 0x10
 LOCA 0 NPCVillage1 [14,11] 0x10
+LOCA 0 NPCVillage2 [4,1] 0x10
 Vendor(Ch22Vendor,19,8)
 Armory(Ch22Armory,9,1)
 SecretShop(Ch22SecretShop,8,15)
@@ -71,6 +73,7 @@ ALIGN 4
 
 Units1:
 LoadUnit(5,28)
+//(5,28)
 LoadUnit(7,26)
 LoadUnit(7,28)
 LoadUnit(7,30)
@@ -85,30 +88,73 @@ LoadUnit(6,27) //added two deploy slots because 10 is pain - Loog
 UNIT
 
 BeginningScene:
+MUSC WaterFlowingSoundEffect
+SetBackground(Boat)
+Text(Ch22BeginningScene1)
+SetBackground(Tavern)
+Text(Ch22BeginningScene2)
+PreventSkipping
+AllowSkipping
+SetBackground(Fields)
+MUSC WindyDayBirdsSoundEffect
+Text(Ch22BeginningScene3)
+PreventSkipping
+AllowSkipping
+SetBackground(Forest0)
+Text(Ch22BeginningScene4)
+FADI 5
+FADU 5
+Text(Ch22BeginningScene5)
+CALL $9EE2C4
+FADI 5
 MountAll
 LOAD1 1 BossUnit
 LOAD1 1 EnemyUnits
 ENUN
+CAMERA_CENTERED [6,28]
 GotoPrepScreen
+FADU 5
+//Text(Ch22CleoPostPreps)
 ENDA
 
 EndingScene:
+MUSC WindyDayBirdsSoundEffect
+SetBackground(Village2)
+Text(Ch22EndingScene1)
+FADI 5
+FADU 5
+Text(Ch22EndingScene2)
 MNC2 Chapter23
 NoFade
 ENDA
 
 VillageA:
+SetBackground(House1)
+Text(VillageAText22)
+CALL $9EE2C4
 GiveItem(KnightProof,0xFFFF)
 NoFade
 ENDA
 
-VillageB: 
-GiveItem(IronRune,0xFFFF)
+VillageB:
+SetBackground(House2)
+Text(VillageBText22)
+CALL $9EE2C4
+GiveItem(LightRune,0xFFFF)
 NoFade
 ENDA
 
 VillageC:
+SetBackground(House1)
+Text(VillageCText22)
+CALL $9EE2C4
 GiveItem(Barrier,0xFFFF)
+NoFade
+ENDA
+
+CleoRemark:
+CAMERA Cleo
+Text(Ch22CleoPostPreps)
 NoFade
 ENDA
 
@@ -155,14 +201,14 @@ CamOff
 NoFade
 ENDA
 
-TrajanRecruit:
+/*TrajanRecruit:
 CameraCursor(TrajanReal)
 MUSS WithUs_Song
 CUSA TrajanReal
 SetFatigue(TrajanReal, 0)
 MURE 2
 NoFade
-ENDA
+ENDA*/
 
 GuidingMoonlight:
 Text(MoonlightBladeText)
@@ -177,6 +223,14 @@ Text(NPCVillage1Text)
 CALL $9EE2C4
 NoFade
 ENDA
+
+NPCVillage2:
+SetBackground(House2)
+Text(NPCVillage2Text)
+CALL $9EE2C4
+NoFade
+ENDA
+
 
 ClearSeraFlag:
 ENUF 0x7C
@@ -254,7 +308,7 @@ ALIGN 4
 
 
 BossUnit:
-UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22] 0x0 0x0 0x0 0x0 [Zweihander,GreatLance,BattleAxe,CounterBow] AttackInRangeAI
+UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22]/*[4,26]*/ 0x0 0x0 0x0 0x0 [Zweihander,GreatLance,BattleAxe,CounterBow] AttackInRangeAI
 UNIT
 
 EnemyUnits:
@@ -318,7 +372,7 @@ UNIT Cythes Sage Eleanor Level(7,Enemy,True) [27,23] 0x0 0x0 0x0 0x0 [Thoron,Men
 UNIT
 
 TrajanSpawn:
-UNIT TrajanReal Hero 0x0 Level(8,NPC,False) [0,11] 0x0 0x0 0x1 REDA0R11 [SilverAxe,Claymore,KnightProof] AttackInRangeAI
+UNIT TrajanReal Hero 0x0 Level(8,Ally,False) [0,11] 0x0 0x0 0x1 REDA0R11 [SilverAxe,Claymore,KnightProof] AttackInRangeAI
 UNIT
 
 LockeSpawn:

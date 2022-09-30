@@ -48,7 +48,9 @@ DeathQuote(Vinny,Chapter21,0,VinnyDeathQuoteText)
 DeathQuote(Cephalid,Chapter21,0x0E,CephalidDeathQuoteText)
 DeathQuote(Xlea,Chapter21,0,XleaDeathQuoteText)
 DeathQuote(Taraji,Chapter21,0x02,TarajiDeathQuoteText)
-DeathQuote(Eleanor,Chapter22,0x2,0x0)
+
+//ch22
+DeathQuote(Eleanor,Chapter22,0x2,EleanorDeathQuoteText)
 
 //ch23
 DeathQuote(KassandraReal,Chapter23,2,KassandraDefeatQuoteText)
