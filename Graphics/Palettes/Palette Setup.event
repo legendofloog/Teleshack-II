@@ -724,22 +724,56 @@
 	setPalette(180,MureibHighPriestEndgame)
 	setCBSP(180,MureibEndgame, 3, HighPriest)
 
-// MureibHighPriestFinal
-	setPalette(181,MureibHighPriestFinal)
-	setCBSP(181,MureibFinal, 3, HighPriest)
-
 // ShafaqatSniper
-	setPalette(182,ShafaqatSniper)
-	setCBSP(182,Shafaqat, 3, Sniper_F)
+	setPalette(181,ShafaqatSniper)
+	setCBSP(181,Shafaqat, 3, Sniper_F)
 
 // TarajiSwordmaster
-	setPalette(183,TarajiSwordmaster)
-	setCBSP(183,Taraji, 3, Swordmaster_F)
+	setPalette(182,TarajiSwordmaster)
+	setCBSP(182,Taraji, 3, Swordmaster_F)
 
 // TarajiSwordmasterReal
-	setPalette(184,TarajiSwordmasterReal)
-	setCBSP(184,TarajiReal, 3, Swordmaster_F)
+	setPalette(183,TarajiSwordmasterReal)
+	setCBSP(183,TarajiReal, 3, Swordmaster_F)
 
 // XleaHero
-	setPalette(185,XleaHero)
-	setCBSP(185,Xlea, 3, Hero)
+	setPalette(184,XleaHero)
+	setCBSP(184,Xlea, 3, Hero)
+
+// OrfeasEmperor
+	setPalette(185,OrfeasEmperor)
+	setCBSP(185,Orfeas, 1, Emperor)
+
+// AwaDismounted
+	setPalette(186,AwaDismounted)
+
+// AwaAxeKnight
+	setPalette(187,AwaAxeKnight)
+
+// AwaGreatKnight
+	setPalette(188,AwaGreatKnight)
+	setCBSP(188,Awa, 3, GreatKnight)
+
+// AwaGreatKnightDismounted
+	setPalette(189,AwaGreatKnightDismounted)
+	setCBSP(189,Awa, 4, GreatKnight_Dismounted)
+
+// KwameDarkBishop
+	setPalette(190,KwameDarkBishop)
+	setCBSP(190,Kwame, 1, DarkBishop)
+
+// AthanDarkBishop
+	setPalette(191,AthanDarkBishop)
+	setCBSP(191,Athanasius, 1, DarkBishop)
+
+// BuldakThief
+	setPalette(192,BuldakThief)
+	setCBSP(192,Buldak, 1, Thief)
+
+// BuldakThiefFighter
+	setPalette(193,BuldakThiefFighter)
+	setCBSP(193,Buldak, 1, ThiefFighter)
+
+// MinkBard
+	setPalette(194,MinkBard)
+	setCBSP(194,Mink, 1, Bard)

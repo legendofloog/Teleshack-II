@@ -267,7 +267,17 @@ BeginningScene:
 FADU 15
 SetBackground(CastleHallway)
 FADI 15
-Text(Ch17_KorovaiIntrigue)
+CHECK_ALIVE Nora //this needs a conditional - loog
+BEQ 776 s0 sC
+	CHECK_ALIVE Hans
+	BEQ 776 s0 sC
+		CHECK_ALIVE Iberis
+		BEQ 776 s0 sC
+		Text(Ch17_KorovaiIntrigue)
+		GOTO 777
+LABEL 776
+//space here dedicated for if one of them is dead and alt scene is needed
+LABEL 777
 FADI 15
 LOMA Chapter17Council
 DismountAll

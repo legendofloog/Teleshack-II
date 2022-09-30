@@ -141,7 +141,22 @@ ALIGN 4
     ThraciaFieldsMapchipConfig:
     #incbin "Config/fe5plainsv2_comp.dmp"
 
+// Jungle Mountainous
+    ALIGN 4
+    JungleMountainousObject:
+    #incbin "Object/mountainous_jungle.dmp"
 
+    ALIGN 4
+    JungleMountainousPalette:
+    #incbin "Palette/mountainous_jungle_pal.dmp"
+
+    ALIGN 4
+    JungleMountainousMapchipConfig:
+    #incbin "Config/mountainous_jungle_comp.dmp"
+
+    EventPointerTable(JungleMountainousObjectID,JungleMountainousObject)
+    EventPointerTable(JungleMountainousPaletteID,JungleMountainousPalette)
+    EventPointerTable(JungleMountainousMapchipConfigID,JungleMountainousMapchipConfig)
     EventPointerTable(ThraciaFieldsObjectID,ThraciaFieldsObject)
     EventPointerTable(ThraciaFieldsNormalPaletteID,ThraciaFieldsNormalPalette)
     EventPointerTable(ThraciaFieldsMapchipConfigID,ThraciaFieldsMapchipConfig)

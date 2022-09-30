@@ -543,9 +543,6 @@ MureibHighPriest2:
 MureibHighPriestEndgame:
 	#incbin "./_palettes/MureibHighPriestEndgame.lzpal" 
 
-MureibHighPriestFinal:
-	#incbin "./_palettes/MureibHighPriestFinal.lzpal" 
-
 ShafaqatSniper:
 	#incbin "./_palettes/ShafaqatSniper.lzpal" 
 
@@ -557,4 +554,34 @@ TarajiSwordmasterReal:
 
 XleaHero:
 	#incbin "./_palettes/XleaHero.lzpal" 
+
+OrfeasEmperor:
+	#incbin "./_palettes/OrfeasEmperor.lzpal" 
+
+AwaDismounted:
+	#incbin "./_palettes/AwaDismounted.lzpal" 
+
+AwaAxeKnight:
+	#incbin "./_palettes/AwaAxeKnight.lzpal" 
+
+AwaGreatKnight:
+	#incbin "./_palettes/AwaGreatKnight.lzpal" 
+
+AwaGreatKnightDismounted:
+	#incbin "./_palettes/AwaGreatKnightDismounted.lzpal" 
+
+KwameDarkBishop:
+	#incbin "./_palettes/KwameDarkBishop.lzpal" 
+
+AthanDarkBishop:
+	#incbin "./_palettes/AthanDarkBishop.lzpal" 
+
+BuldakThief:
+	#incbin "./_palettes/BuldakThief.lzpal" 
+
+BuldakThiefFighter:
+	#incbin "./_palettes/BuldakThiefFighter.lzpal" 
+
+MinkBard:
+	#incbin "./_palettes/MinkBard.lzpal" 
 

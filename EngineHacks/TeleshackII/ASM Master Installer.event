@@ -1,4 +1,7 @@
-#include "ThraciaASM/ThraciaASMInstaller.event"
+#include "Fatigue/Fatigue.event"
+#include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
+
+#include "TeleshackII/TeleshackII_Installer.event"
 #include "Music/MusicAsmInstaller.event"
 #include "Fixes/MasterFixesInstaller.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
@@ -8,10 +11,6 @@
 
 #include "EVENTSCRIPT/EVENTSCRIPT_Installer.event"
 #include "FixedDamage/FixedDamageWeapons.event"
-
-ALIGN 4
-ChangeWeaponRankASMC:
-#incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
 
 #include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
 
@@ -27,8 +26,6 @@ ChangeWeaponRankASMC:
 
 #include "Graphics/NosResire/NosResire.event"
 
-#include "MultiTileMarker/MultiTileMarker_Install.event"
-
 #include "EventGetCountOfUnit/Installer.event"
 
 #include "StallAIs/AITableExpansion/AI1TableExpansion.event"
@@ -36,8 +33,6 @@ ChangeWeaponRankASMC:
 #include "StallAIs/AITableExpansion/AI2TableExpansion.event"
 
 #include "StallAIs/StallAI/StallAI.event"
-
-#include "MapChangeToFlag/Installer.event"
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
@@ -208,3 +203,30 @@ BYTE 0x0 0x0
 ORG $A3824
 BYTE 0x1
 POP
+
+//separates chapter turn count for demon king chapters (aera)
+PUSH
+ORG $B7A86
+BYTE 0x7F
+POP
+
+//stolen from tmgc
+//turn counts (seems to fill it with garbage?)
+/*
+PUSH
+ORG 0xb7a86
+BYTE 0x7f
+ORG 0xa4168
+BYTE 0x02
+ORG 0xa42d6
+BYTE 0x02
+ORG 0xa4318
+BYTE 0x02
+ORG 0xa429c
+BYTE 0x40
+ORG 0xa43ac
+BYTE 0x01 0x4B 0x18 0x68 0x70 0x47 0x00 0x00 0xF0 0xBC 0x02 0x02
+ORG 0x0A43A0
+BYTE 0x00 0x00
+POP
+*/
