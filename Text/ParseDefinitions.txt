@@ -110,6 +110,7 @@
 [LoadPelecaye] = [LoadFace][0xC3][0x1]
 [LoadCarl] = [LoadFace][0xC4][0x1]
 [LoadDarby] = [LoadFace][0xC5][0x1]
+[LoadJoie] = [LoadDarby]
 [LoadJacinth] = [LoadFace][0xC6][0x1]
 [LoadNahiza] = [LoadFace][0xCB][0x1]
 [LoadAugur] = [LoadFace][0xCC][0x1]
@@ -141,6 +142,7 @@
 
 [LoadLeina] = [LoadFace][0x11][0x1]
 [LoadCromar] = [LoadFace][0x13][0x1]
+[LoadCromarFog] = [LoadFace][0x42][0x1]
 [LoadBarod] = [LoadFace][0x48][0x1]
 [LoadMcCallum] = [LoadFace][0x49][0x1]
 [LoadZeus] = [LoadFace][0x4A][0x1]
@@ -204,6 +206,7 @@
 [LoadPerihelios] = [LoadFace][0x3C][0x1]
 [LoadEithaReal] = [LoadFace][0x3E][0x1]
 [LoadAthanasius] = [LoadFace][0x35][0x1]
+[LoadAthan] = [LoadAthanasius]
 [LoadCherne] = [LoadFace][0x39][0x1]
 [LoadKwameReal] = [LoadCherne]
 

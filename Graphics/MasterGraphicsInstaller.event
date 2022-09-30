@@ -14,3 +14,8 @@
 #include "TitleScreen/TitleScreen.event"
 #include "BattleFrame/BattleFrameInstaller.event"
 #include "Menu Tiles/Installer.event"
+
+PUSH
+ORG $5A2DDC
+BYTE $55 $53 $FB $7F $ED $7F $E0 $7F $20 $7F $40 $7E $E0 $7D $80 $7D $20 $7D $E0 $70 $C1 $64 $A0 $60 $80 $5C $55 $53 $55 $53 $55 $53
+POP

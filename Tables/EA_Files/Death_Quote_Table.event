@@ -152,6 +152,7 @@ DeathQuote(Kailani,AllChapters,0x0,KailaniDeathQuote)
 
 // ch 14
 DeathQuote(Nahiza,AllChapters,0x0,NahizaDeathQuote)
+DeathQuote(Augur, Chapter14, 0x65, AugurDeathQuote)
 DeathQuote(Augur,AllChapters,0x0,AugurDeathQuote)
 
 // ch 15
