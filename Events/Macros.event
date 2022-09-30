@@ -66,6 +66,7 @@
 #define PlayerRangeCheck "SVAL 0x2 0x0; CALL 0x9EE1B8"
 #define TalkConvo(id) "MUSI; Text(id); MUNO; MURE 2; NoFade"
 #define TextCont(id,music) "TEXTSTART; TEXTSHOW id; TEXTEND; MUSC music; TEXTCONT; TEXTEND; REMA"
+#define FinalBattleFlash(character,alivetext,label) "CHECK_ALIVE character; BEQ label 0x0 0xC; CHECK_DEPLOYED character; BEQ label 0x0 0xC; CAM1 character; STAL 20; FlashCursor(character,60); Text(alivetext); LABEL label"
 
 #define FadeToBlack "FADI 16"
 #define FadeBackFromBlack "FADU 16"

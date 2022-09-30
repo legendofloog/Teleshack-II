@@ -766,6 +766,20 @@
 	setPalette(191,AthanDarkBishop)
 	setCBSP(191,Athanasius, 1, DarkBishop)
 
+// BardTweak
+	setGenericPalette(0xE1,BardTweak)
+	setGenericPalette( 0xAC,BardTweak)
+
+// ChampionTweak
+	setGenericPalette(0x3E,ChampionTweak)
+	setGenericPalette( 0x3F,ChampionTweak)
+
+// HunterTweak
+	setGenericPalette(0x40,HunterTweak)
+
+// FalcoTweak
+	setGenericPalette(0x68,FalcoTweak)
+	setGenericPalette( 0x69,FalcoTweak)
 // BuldakThief
 	setPalette(192,BuldakThief)
 	setCBSP(192,Buldak, 1, Thief)

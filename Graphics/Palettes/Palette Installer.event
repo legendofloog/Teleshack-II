@@ -576,6 +576,17 @@ KwameDarkBishop:
 AthanDarkBishop:
 	#incbin "./_palettes/AthanDarkBishop.lzpal" 
 
+BardTweak:
+	#incbin "./_palettes/BardTweak.lzpal" 
+
+ChampionTweak:
+	#incbin "./_palettes/ChampionTweak.lzpal" 
+
+HunterTweak:
+	#incbin "./_palettes/HunterTweak.lzpal" 
+
+FalcoTweak:
+	#incbin "./_palettes/FalcoTweak.lzpal" 
 BuldakThief:
 	#incbin "./_palettes/BuldakThief.lzpal" 
 

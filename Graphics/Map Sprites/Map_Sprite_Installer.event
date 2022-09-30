@@ -450,7 +450,7 @@ ByelenStanding:
 
 ALIGN 4
 ByelenMoving:
-#incbin "Dmp/Patriarch (M) {Unknown}-walk.dmp"
+#incbin "Dmp/Patriarch (M) {Unknown}-move.dmp"
 
 ALIGN 4
 CherneStanding:
