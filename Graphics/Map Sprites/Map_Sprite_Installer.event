@@ -459,3 +459,52 @@ CherneStanding:
 ALIGN 4
 CherneMoving:
 #incbin "Dmp/Dark Druid (M) {IS}-walk.dmp"
+
+ALIGN 4
+Dismounted_Sword_M_Walking:
+#incbin "Dmp/dismountedswordm (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Sword_M_Moving:
+#incbin "Dmp/dismountswordmmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Sword_F_Walking:
+#incbin "Dmp/dismountedswordf (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Sword_F_Moving:
+#incbin "Dmp/dismountswordfmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_M_Walking:
+#incbin "Dmp/dismountedlancem (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_M_Moving:
+#incbin "Dmp/dismountlancemmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_F_Walking:
+#incbin "Dmp/dismountedlancef (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_F_Moving:
+#incbin "Dmp/dismountlancefmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_M_Walking:
+#incbin "Dmp/dismountedaxem (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_M_Moving:
+#incbin "Dmp/dismountedaxemmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_F_Walking:
+#incbin "Dmp/dismountedaxef (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_F_Moving:
+#incbin "Dmp/dismountedaxefmove (archerbias).dmp"
+

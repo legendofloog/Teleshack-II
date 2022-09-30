@@ -344,9 +344,87 @@ CharEscapeQuote(Chapter16,MeldanEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
+HornetEscapeQuoteList:
+CharEscapeQuote(Chapter14, HornetEscapeQuoteText)
+CharEscapeQuote(Chapter16, HornetEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+ValseEscapeQuoteList:
+CharEscapeQuote(Chapter14, ValseEscapeQuoteText)
+CharEscapeQuote(Chapter16, ValseEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+IchwepEscapeQuoteList:
+CharEscapeQuote(Chapter14, IchwepEscapeQuoteText)
+CharEscapeQuote(Chapter16, IchwepEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+MiloEscapeQuoteList:
+CharEscapeQuote(Chapter14, MiloEscapeQuoteText)
+CharEscapeQuote(Chapter16, MiloEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+TiberiusEscapeQuoteList:
+CharEscapeQuote(Chapter14, TiberiusEscapeQuoteText)
+CharEscapeQuote(Chapter16, TiberiusEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+MinkEscapeQuoteList:
+CharEscapeQuote(Chapter14, MinkEscapeQuoteText)
+CharEscapeQuote(Chapter16, MinkEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
 MantouEscapeQuoteList:
 CharEscapeQuote(Chapter14, MantouEscapeQuoteText)
 CharEscapeQuote(Chapter16, MantouEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+TippanyEscapeQuoteList:
+CharEscapeQuote(Chapter14, TippanyEscapeQuoteText)
+CharEscapeQuote(Chapter16, TippanyEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+CarlEscapeQuoteList:
+CharEscapeQuote(Chapter14, CarlEscapeQuoteText)
+CharEscapeQuote(Chapter16, CarlEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+PelecayeEscapeQuoteList:
+CharEscapeQuote(Chapter14, PelecayeEscapeQuoteText)
+CharEscapeQuote(Chapter16, PelecayeEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+EllereyEscapeQuoteList:
+CharEscapeQuote(Chapter14, EllereyEscapeQuoteText)
+CharEscapeQuote(Chapter16, EllereyEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+TakaiEscapeQuoteList:
+CharEscapeQuote(Chapter14, TakaiEscapeQuoteText)
+CharEscapeQuote(Chapter16, TakaiEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+JacinthEscapeQuoteList:
+CharEscapeQuote(Chapter14, JacinthEscapeQuoteText)
+CharEscapeQuote(Chapter16, JacinthEscapeQuoteText)
+CharEscapeQuoteTerm
+
+ALIGN 4
+DarbyEscapeQuoteList:
+CharEscapeQuote(Chapter14, DarbyEscapeQuoteText)
+CharEscapeQuote(Chapter16, DarbyEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
@@ -390,36 +468,61 @@ SetCharEscapeQuoteList(Emil,EmilEscapeQuoteList)
 SetCharEscapeQuoteList(Iskra,IskraEscapeQuoteList)
 SetCharEscapeQuoteList(Svetomir,SvetomirEscapeQuoteList)
 SetCharEscapeQuoteList(Alena,AlenaEscapeQuoteList)
+
 SetCharEscapeQuoteList(Varga,VargaEscapeQuoteList)
 SetCharEscapeQuoteList(Delilah,DelilahEscapeQuoteList)
+
 SetCharEscapeQuoteList(Dragana,DraganaEscapeQuoteList)
 SetCharEscapeQuoteList(Alex,AlexEscapeQuoteList)
 SetCharEscapeQuoteList(Axel,AxelEscapeQuoteList)
+
 SetCharEscapeQuoteList(Filone,FiloneEscapeQuoteList)
 SetCharEscapeQuoteList(Zwieback,ZwiebackEscapeQuoteList)
+
 SetCharEscapeQuoteList(Fangai,FangaiEscapeQuoteList)
 SetCharEscapeQuoteList(Longxia,LongxiaEscapeQuoteList)
+
 SetCharEscapeQuoteList(Mish,MishEscapeQuoteList)
 SetCharEscapeQuoteList(Tobie,TobieEscapeQuoteList)
 SetCharEscapeQuoteList(Cadenza,CadenzaEscapeQuoteList)
 SetCharEscapeQuoteList(Faolan,FaolanEscapeQuoteList)
 SetCharEscapeQuoteList(Matthias,MatthiasEscapeQuoteList)
 SetCharEscapeQuoteList(Awa,AwaEscapeQuoteList)
+
 SetCharEscapeQuoteList(Leina,LeinaEscapeQuoteList)
 SetCharEscapeQuoteList(Cromar,CromarEscapeQuoteList)
+
 SetCharEscapeQuoteList(Iberis,IberisEscapeQuoteList)
 SetCharEscapeQuoteList(Buldak,BuldakEscapeQuoteList)
+
 SetCharEscapeQuoteList(Nora,NoraEscapeQuoteList)
 SetCharEscapeQuoteList(Hans,HansEscapeQuoteList)
+
 SetCharEscapeQuoteList(Meldan,MeldanEscapeQuoteList)
 SetCharEscapeQuoteList(Jenny,JennyEscapeQuoteList)
 
+SetCharEscapeQuoteList(Hornet,HornetEscapeQuoteList)
+SetCharEscapeQuoteList(Valse,ValseEscapeQuoteList)
 
+SetCharEscapeQuoteList(Ichwep,IchwepEscapeQuoteList)
+SetCharEscapeQuoteList(Milo,MiloEscapeQuoteList)
+
+SetCharEscapeQuoteList(Tiberius,TiberiusEscapeQuoteList)
+SetCharEscapeQuoteList(Mink,MinkEscapeQuoteList)
+
+SetCharEscapeQuoteList(Mantou,MantouEscapeQuoteList)
+SetCharEscapeQuoteList(Tippany,TippanyEscapeQuoteList)
+SetCharEscapeQuoteList(Takai,TakaiEscapeQuoteList)
+SetCharEscapeQuoteList(Pelecaye,PelecayeEscapeQuoteList)
+SetCharEscapeQuoteList(Ellerey,EllereyEscapeQuoteList)
+SetCharEscapeQuoteList(Carl,CarlEscapeQuoteList)
 
 SetCharEscapeQuoteList(Nahiza,NahizaEscapeQuoteList)
 SetCharEscapeQuoteList(Augur,AugurEscapeQuoteList)
+
 SetCharEscapeQuoteList(Ilse,IlseEscapeQuoteList)
 SetCharEscapeQuoteList(Asha,AshaEscapeQuoteList)
+
 SetCharEscapeQuoteList(Kofi,KofiEscapeQuoteList)
 SetCharEscapeQuoteList(Rashid,RashidEscapeQuoteList)
 

@@ -19,9 +19,9 @@ mov 	r0, #0x3
 lsl 	r0, r0, #0x2
 add 	r7, r0
 ldr 	r0, =gChapterData
-ldrb 	r0, [r0, #0xE]
-_blh #0x80346B0 @return pointer to chapter events
-ldr 	r6, [r0, #0x8]
+ldrb 	r0, [r0, #0xE] @ gets the chapter index of the current chapter
+_blh 0x80346B0 @ return ChapterEventInfo pointer in r0
+ldr 	r6, [r0, #0x8] @ gets EventCheckBuffer pointer
 
 @check all chest events for one on the current tile
 EventLoop:
@@ -83,7 +83,7 @@ HasEvent:
 cmp 	r0, #0x0
 beq End
 mov 	r7, r0
-ldrh 	r0, [r7, #0x2]
+ldrh 	r0, [r6, #0x2]
 _blh SetEventID	@set event id for event
 mov 	r0, r7
 mov 	r1, #0x1

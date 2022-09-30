@@ -320,7 +320,7 @@ NoFade
 ENDA
 
 UnderstandableFukingDie:
-SetFlag(0x65)
+CALL GameOverStart
 ENDA
 
 EscapeEventCheck:
@@ -330,10 +330,6 @@ ENDA
 
 EndingScene:
 EndOfEscapeRoutineASMC
-CHECK_ALIVE Augur
-BNE 20 0x0 0xC
-SetFlag(0x65)
-LABEL 20
 SetBackground(0x30)
 MUSC 0x47
 Text(Ch14Ending_1)

@@ -41,9 +41,9 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-LOCA 18 TopLeftPrisonDoor [5,2] 0x12
 Chest(AngelicRobe,16,2)
 LOCA 10 TopMiddlePrisonDoor [10,3] 0x12
+LOCA 18 TopLeftPrisonDoor [5,2] 0x12
 LOCA 19 TopLeftPrisonDoor2 [3,4] 0x12
 LOCA 11 TopRightPrisonDoor [13,4] 0x12
 LOCA 24 DeadlordSpawn [2,11] 0x11
@@ -63,11 +63,6 @@ END_MAIN
 
 
 MiscBasedEvents:
-AFEV 13 TopLeftPrisonOpened 18
-AFEV 13 TopLeftPrisonOpened 19
-AFEV 14 TopMiddlePrisonDoorOpened 10
-AFEV 15 TopRightPrisonDoorOpened 11
-AFEV 16 OutsidePrisonDoorOpened 12
 CauseGameOverIfLordDies
 DefeatBoss
 END_MAIN
@@ -385,8 +380,9 @@ NoFade
 ENDA
 
 
-TopLeftPrisonOpened:
-CHECK_EVENTID 21
+TopLeftPrisonDoor:
+TILECHANGE 0
+CHECK_EVENTID 19
 BEQ 16 s1 sC
 Text(Ch12PlaceholderText)
 GiveItem(Silence,0xFFFF)
@@ -397,23 +393,21 @@ LABEL 16
 NoFade
 ENDA
 
-
-TopLeftPrisonDoor:
-TILECHANGE 0
-NoFade
-ENDA
-
 TopLeftPrisonDoor2:
 TILECHANGE 3
+CHECK_EVENTID 18
+BEQ 420 s1 sC
+Text(Ch12PlaceholderText)
+GiveItem(Silence,0xFFFF)
+SVAL sB Coords(3,2)
+REMOVEUNIT(-2)
+ENUT 21
+LABEL 420
 NoFade
 ENDA
 
 TopMiddlePrisonDoor:
 TILECHANGE 2
-NoFade
-ENDA
-
-TopMiddlePrisonDoorOpened:
 Text(Ch12PlaceholderText)
 GiveItem(SecretBook,0xFFFF)
 SVAL sB Coords(10,1)
@@ -423,10 +417,6 @@ ENDA
 
 TopRightPrisonDoor:
 TILECHANGE 4
-NoFade
-ENDA
-
-TopRightPrisonDoorOpened:
 Text(Ch12PlaceholderText)
 GiveItem(RedGem,0xFFFF)
 SVAL sB Coords(13,2)
@@ -434,12 +424,9 @@ REMOVEUNIT(-2)
 NoFade
 ENDA
 
+
 OutsidePrisonDoor:
 TILECHANGE 12
-NoFade
-ENDA
-
-OutsidePrisonDoorOpened:
 Text(Ch12PlaceholderText)
 GiveItem(Talisman,0xFFFF)
 SVAL sB Coords(13,23)
