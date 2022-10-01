@@ -72,6 +72,10 @@
 	setPalette(17,DraganaSniper)
 	setCBSP(17,Dragana, 3, Sniper_F)
 
+// DraganaDeadlord
+	setPalette(17,DraganaDeadlord)
+	setCBSP(17,Eitha, 3, Sniper_F)
+
 // RaschwitzBowArmor
 	setPalette(18,RaschwitzBowArmor)
 	setCBSP(18,Raschwitz_Ch1, 4, BowArmor)
@@ -231,6 +235,10 @@
 // HamdiHalberdier
 	setPalette(57,HamdiHalberdier)
 	setCBSP(57,Hamdi, 1, Halberdier)
+
+// HamdiRealHalberdier
+	setPalette(57,HamdiRealHalberdier)
+	setCBSP(57,HamdiReal, 1, Halberdier)
 
 // ColossusWarrior
 	setPalette(58,ColossusWarrior)
@@ -814,17 +822,57 @@
 	setPalette(203,FaolanGoldKnight)
 	setCBSP(203,Faolan, 3, GoldKnight)
 
+// VinnyNoble
+	setPalette(204,VinnyNoble)
+	setCBSP(204,Vinny, 1, Noble)
+
+// CephalidBerserker
+	setPalette(205,CephalidBerserker)
+	setCBSP(205,Cephalid, 1, Berserker)
+
+// MasalaPaladin
+	setPalette(206,MasalaPaladin)
+	setCBSP(206,Masala, 1, Paladin)
+
+// MasalaDismounted
+	setPalette(207,MasalaDismounted)
+	setCBSP(207,Masala, 2, Paladin_Dismounted)
+
+// TemurWarrior
+	setPalette(208,TemurWarrior)
+	setCBSP(208,Temur, 1, Warrior)
+
+// SultaiThiefFighter
+	setPalette(209,SultaiThiefFighter)
+	setCBSP(209,Sultai, 1, ThiefFighter)
+
+// DartNoble
+	setPalette(210,DartNoble)
+	setCBSP(210,Dart, 1, Noble_F)
+
+// TheimonDismounted
+	setPalette(211,TheimonDismounted)
+	setCBSP(211,Theimon, 1, Paladin_Dismounted)
+
+// DanuWarrior
+	setPalette(212,DanuWarrior)
+	setCBSP(212,Danu, 1, Warrior)
+
+// EithaSniper
+	setPalette(213,EithaSniper)
+	setCBSP(213,EithaReal, 1, Sniper_F)
+
 // FaolanDismounted
-	setPalette(204,FaolanDismounted)
-	setCBSP(204,Faolan, 2, RookKnight_Dismounted)
+	setPalette(214,FaolanDismounted)
+	setCBSP(214,Faolan, 2, RookKnight_Dismounted)
 
 // FaolanGKDismounted
-	setPalette(205,FaolanGKDismounted)
-	setCBSP(205,Faolan, 4, GoldKnight_Dismounted)
+	setPalette(215,FaolanGKDismounted)
+	setCBSP(215,Faolan, 4, GoldKnight_Dismounted)
 
 // TiberiusMKDismounted
-	setPalette(206,TiberiusMKDismounted)
-	setCBSP(206,Tiberius, 2, MasterKnight_Dismounted)
+	setPalette(216,TiberiusMKDismounted)
+	setCBSP(216,Tiberius, 2, MasterKnight_Dismounted)
 
 // BardTweak
 	setGenericPalette(0xE1,BardTweak)
@@ -840,3 +888,8 @@
 // FalcoTweak
 	setGenericPalette(0x68,FalcoTweak)
 	setGenericPalette( 0x69,FalcoTweak)
+
+// GoldKnightTweak
+	setGenericPalette(0xd6,GoldKnightTweak)
+	setGenericPalette(0xd8,GoldKnightTweak)
+	setGenericPalette(0xd9,GoldKnightTweak)

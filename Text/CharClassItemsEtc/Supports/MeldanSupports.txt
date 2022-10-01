@@ -232,9 +232,8 @@ You're welcome![A][N]
 If I have any questions about[N]
 the story, I'll definitely ask you.[A][X]
 
-
-
 ## MeldanVolranB
+[MidLeft][LoadMeldan][MidRight][LoadVolran]
 [MidRight]
 Oh hi, Meldan.[A][N]
 I was reading more of[N]
@@ -314,9 +313,8 @@ kindred spirit in you, Volran.[A][N]
 real version of the story[Beat][A][N]
 then what is[Beat]?[A][X]
 
-
-
 ## MeldanVolranA
+[MidLeft][LoadMeldan][MidRight][LoadVolran]
 [MidLeft]
 [Beat]Volran[Beat][A][N]
 [Beat][CloseEyes]I wish to apologize for[N]

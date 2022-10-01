@@ -263,12 +263,14 @@ SoloEndingTableEntry(Cadenza, CadenzaEnding)
 PairedEndingTableEntry(Mish,Takai,MishTakaiEnding)
 PairedEndingTableEntry(Mish,Ellerey,MishEllereyEnding)
 PairedEndingTableEntry(Mish,Tobie,MishTobieEnding)
+PairedEndingTableEntry(Mish, Tara, MishTaraEnding)
 SoloEndingTableEntry(Mish, MishEnding)
 
 PairedEndingTableEntry(Tobie, Takai, TobieTakaiEnding)
 SoloEndingTableEntry(Tobie, TobieEnding)
 
 PairedEndingTableEntry(Awa, Nikolas, AwaNikolasEnding)
+PairedEndingTableEntry(Awa, Zhara, AwaZharaEnding)
 SoloEndingTableEntry(Awa, AwaEnding)
 
 SoloEndingTableEntry(Faolan, FaolanEnding)
@@ -319,7 +321,8 @@ SoloEndingTableEntry(Milo,MiloEnding)
 //12
 PairedEndingTableEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_Ending)
 SoloEndingTableEntry(Tiberius, TiberiusEnding)
-PairedEndingTableEntry(Augur, Mink, MinkAugurEnding)
+PairedEndingTableEntry(Mink, Augur, MinkAugurEnding)
+
 
 //12x
 SoloEndingTableEntry(Mantou, MantouEnding)
@@ -428,6 +431,7 @@ SoloEndingTableEntry(BoroReal, BoroEnding)
 PairedEndingTableEntry(Ngondala, KwameReal, NgondalaKwameEnding)
 PairedEndingTableEntry(Kofi,KwameReal,KofiKwameEnding)
 PairedEndingTableEntry(CatrinReal, KwameReal, KwameCatrinEnding)
+PairedEndingTableEntry(Mink, KwameReal, MinkKwameEnding)
 //SoloEndingTableEntry(Kwame, KwameEnding)
 
 // Lords

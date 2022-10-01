@@ -22,7 +22,7 @@ TheGoldenSunRises_001:
  BYTE   KEYSH   TheGoldenSunRises_key+0
  BYTE   TEMPO   120*TheGoldenSunRises_tbs/2
  BYTE   VOICE   57
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   N48  Gn2  v108
  BYTE   N48  Cn3
  BYTE   W48
@@ -262,7 +262,7 @@ Label_016F42A5:
 
 TheGoldenSunRises_002:
 //  #02 //000   ----------------------------------------
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   KEYSH   TheGoldenSunRises_key+0
  BYTE   VOICE   48
  BYTE   N96  Cn4  v108
@@ -594,9 +594,9 @@ TheGoldenSunRises_003:
 //  #03 //000   ----------------------------------------
  BYTE   KEYSH   TheGoldenSunRises_key+0
  BYTE   VOICE   33
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   PAN   c_v+0
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N20  Cn1  v112
  BYTE   W24
@@ -783,9 +783,9 @@ Label_016F4595:
   POIN2 Label_016F4527
 //  #03 //032   ----------------------------------------
 Label_016F45DF:
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   PAN   c_v+0
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N20  Cn1  v112
  BYTE   W24
@@ -899,7 +899,7 @@ TheGoldenSunRises_004:
 //  #04 //000   ----------------------------------------
  BYTE   KEYSH   TheGoldenSunRises_key+0
  BYTE   VOICE   75
- BYTE   VOL   54*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   34*TheGoldenSunRises_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N05  Gn3  v112
  BYTE   W06
@@ -1432,7 +1432,7 @@ Label_016F4886:
   POIN2 Label_016F4782
 //  #04 //032   ----------------------------------------
 Label_016F48D1:
- BYTE   VOL   54*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   34*TheGoldenSunRises_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   N05  Gn3  v112
  BYTE   W06
@@ -1568,7 +1568,7 @@ Label_016F48D1:
 
 TheGoldenSunRises_005:
 //  #05 //000   ----------------------------------------
- BYTE   VOL   67*TheGoldenSunRises_mvl/mxv
+ BYTE   VOL   47*TheGoldenSunRises_mvl/mxv
  BYTE   KEYSH   TheGoldenSunRises_key+0
  BYTE   VOICE   0
  BYTE   N12  Bn0  v108

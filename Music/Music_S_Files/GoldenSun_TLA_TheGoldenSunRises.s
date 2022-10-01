@@ -21,7 +21,7 @@ TheGoldenSunRises_001:
  .byte   KEYSH , TheGoldenSunRises_key+0
  .byte   TEMPO , 120*TheGoldenSunRises_tbs/2
  .byte   VOICE , 57
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   N48 ,Gn2 ,v108
  .byte   N48 ,Cn3
  .byte   W48
@@ -261,7 +261,7 @@ Label_016F42A5:
 
 TheGoldenSunRises_002:
 @  #02 @000   ----------------------------------------
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   KEYSH , TheGoldenSunRises_key+0
  .byte   VOICE , 48
  .byte   N96 ,Cn4 ,v108
@@ -593,9 +593,9 @@ TheGoldenSunRises_003:
 @  #03 @000   ----------------------------------------
  .byte   KEYSH , TheGoldenSunRises_key+0
  .byte   VOICE , 33
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N20 ,Cn1 ,v112
  .byte   W24
@@ -782,9 +782,9 @@ Label_016F4595:
   .word Label_016F4527
 @  #03 @032   ----------------------------------------
 Label_016F45DF:
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   PAN , c_v+0
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N20 ,Cn1 ,v112
  .byte   W24
@@ -898,7 +898,7 @@ TheGoldenSunRises_004:
 @  #04 @000   ----------------------------------------
  .byte   KEYSH , TheGoldenSunRises_key+0
  .byte   VOICE , 75
- .byte   VOL , 54*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 34*TheGoldenSunRises_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N05 ,Gn3 ,v112
  .byte   W06
@@ -1431,7 +1431,7 @@ Label_016F4886:
   .word Label_016F4782
 @  #04 @032   ----------------------------------------
 Label_016F48D1:
- .byte   VOL , 54*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 34*TheGoldenSunRises_mvl/mxv
  .byte   PAN , c_v+0
  .byte   N05 ,Gn3 ,v112
  .byte   W06
@@ -1567,7 +1567,7 @@ Label_016F48D1:
 
 TheGoldenSunRises_005:
 @  #05 @000   ----------------------------------------
- .byte   VOL , 67*TheGoldenSunRises_mvl/mxv
+ .byte   VOL , 47*TheGoldenSunRises_mvl/mxv
  .byte   KEYSH , TheGoldenSunRises_key+0
  .byte   VOICE , 0
  .byte   N12 ,Bn0 ,v108

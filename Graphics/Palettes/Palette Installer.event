@@ -54,6 +54,9 @@ BoroChampion:
 DraganaSniper:
 	#incbin "./_palettes/DraganaSniper.lzpal" 
 
+DraganaDeadlord:
+	#incbin "./_palettes/DraganaDeadlord.lzpal" 
+
 RaschwitzBowArmor:
 	#incbin "./_palettes/RaschwitzBowArmor.lzpal" 
 
@@ -173,6 +176,9 @@ RashidSniper:
 
 HamdiHalberdier:
 	#incbin "./_palettes/HamdiHalberdier.lzpal" 
+
+HamdiRealHalberdier:
+	#incbin "./_palettes/HamdiRealHalberdier.lzpal" 
 
 ColossusWarrior:
 	#incbin "./_palettes/ColossusWarrior.lzpal" 
@@ -612,6 +618,36 @@ HornetArchKnight:
 FaolanGoldKnight:
 	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
 
+VinnyNoble:
+	#incbin "./_palettes/VinnyNoble.lzpal" 
+
+CephalidBerserker:
+	#incbin "./_palettes/CephalidBerserker.lzpal" 
+
+MasalaPaladin:
+	#incbin "./_palettes/MasalaPaladin.lzpal" 
+
+MasalaDismounted:
+	#incbin "./_palettes/MasalaDismounted.lzpal" 
+
+TemurWarrior:
+	#incbin "./_palettes/TemurWarrior.lzpal" 
+
+SultaiThiefFighter:
+	#incbin "./_palettes/SultaiThiefFighter.lzpal" 
+
+DartNoble:
+	#incbin "./_palettes/DartNoble.lzpal" 
+
+TheimonDismounted:
+	#incbin "./_palettes/TheimonDismounted.lzpal" 
+
+DanuWarrior:
+	#incbin "./_palettes/DanuWarrior.lzpal" 
+
+EithaSniper:
+	#incbin "./_palettes/EithaSniper.lzpal" 
+
 FaolanDismounted:
 	#incbin "./_palettes/FaolanDismounted.lzpal" 
 
@@ -632,4 +668,7 @@ HunterTweak:
 
 FalcoTweak:
 	#incbin "./_palettes/FalcoTweak.lzpal" 
+
+GoldKnightTweak:
+	#incbin "./_palettes/GoldKnightTweak.lzpal" 
 
