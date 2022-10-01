@@ -23,6 +23,7 @@ POP
 #define PairedEnding 2
 #define PairedEndingTableEntry(charID1,charID2,textID) "BYTE PairedEnding charID1 charID2 0; SHORT textID 0"
 #define SoloEndingTableEntry(charID, textID) "BYTE SoloEnding charID 0 0; SHORT textID 0"
+#define SoloEndingFlagTableEntry(charID, textID, flag) "BYTE SoloEnding charID 0 flag; SHORT textID 0"
 #define EndingTableTerminator "BYTE 0 0 0 0; SHORT 0 0"
 
 NewEndingWithdrawalTable:
@@ -322,7 +323,7 @@ SoloEndingTableEntry(Milo,MiloEnding)
 PairedEndingTableEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_Ending)
 SoloEndingTableEntry(Tiberius, TiberiusEnding)
 PairedEndingTableEntry(Mink, Augur, MinkAugurEnding)
-
+SoloEndingFlagTableEntry(Mink, MinkKwameEnding, 0x93)
 
 //12x
 SoloEndingTableEntry(Mantou, MantouEnding)
@@ -364,6 +365,7 @@ SoloEndingTableEntry(Asha, AshaEnding)
 
 //16
 PairedEndingTableEntry(Kofi, Nikolas,Kofi_Nikolas_Ending)
+SoloEndingFlagTableEntry(Kofi, KofiKwameEnding, 0x94)
 SoloEndingTableEntry(Kofi, KofiEnding)
 PairedEndingTableEntry(Rashid,Nikolas,RashidNikolasEnding)
 SoloEndingTableEntry(Rashid, RashidEnding)
@@ -397,6 +399,7 @@ SoloEndingTableEntry(Lyre, LyreEnding)
 
 //21 (Ngondala)
 PairedEndingTableEntry(Ngondala, Locke, Ngondala_Locke_Ending)
+SoloEndingFlagTableEntry(Ngondala, NgondalaKwameEnding, 0x96)
 SoloEndingTableEntry(Ngondala, NgondalaEnding)
 //SoloEndingTableEntry(Locke, LockeEnding)
 
@@ -410,6 +413,7 @@ SoloEndingTableEntry(TarajiReal, TarajiEnding)
 
 PairedEndingTableEntry(EliasReal, Varga, VargaEliasEnding)
 SoloEndingTableEntry(EliasReal, EliasEnding)
+SoloEndingFlagTableEntry(CatrinReal, KwameCatrinEnding, 0x95)
 SoloEndingTableEntry(CatrinReal, CatrinEnding)
 
 //Trajan, Mira, Boro
@@ -425,14 +429,6 @@ SoloEndingTableEntry(Mira, MiraEnding)
 
 PairedEndingTableEntry(BoroReal,Mira,MiraBoroEnding)
 SoloEndingTableEntry(BoroReal, BoroEnding)
-
-//Sussy
-
-PairedEndingTableEntry(Ngondala, KwameReal, NgondalaKwameEnding)
-PairedEndingTableEntry(Kofi,KwameReal,KofiKwameEnding)
-PairedEndingTableEntry(CatrinReal, KwameReal, KwameCatrinEnding)
-PairedEndingTableEntry(Mink, KwameReal, MinkKwameEnding)
-//SoloEndingTableEntry(Kwame, KwameEnding)
 
 // Lords
 PairedEndingTableEntry(Loewe, Asha, LoeweAshaEnding)
