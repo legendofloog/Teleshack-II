@@ -220,6 +220,7 @@
 #define Cephalid 0xB2
 #define Temur 0xB3
 #define Sultai 0xB4
+#define Masala 0xB5
 #define Valere 0xB5
 #define Dart 0xB6
 #define DeathRattle 0xB7
