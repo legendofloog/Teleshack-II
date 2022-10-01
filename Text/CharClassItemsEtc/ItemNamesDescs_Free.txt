@@ -117,7 +117,7 @@ Ritual Knife[X]
 Brenthunder[X]
 
 ## BrenthunderDesc
-Brave Effect.[X]
+Can strike consecutively.[X]
 
 ## SpellMirrorName
 Spell Mirror[X]
@@ -147,7 +147,7 @@ Holder cannot enter combat.[X]
 Arachnid[X]
 
 ## ArachnidDesc
-Brave Effect.[X]
+Can strike consecutively.[X]
 
 ## HurlbatName
 Hurlbat[X]
@@ -206,7 +206,7 @@ A long range axe. Alex[LockIcon].[X]
 Miaodao[X]
 
 ## MiaodaoDesc
-Brave.[X]
+Can strike consecutively.[X]
 
 ## ZykhraScrollName
 Zykhra Scroll[X]
@@ -553,8 +553,8 @@ Blocks critical hits. +2 Def/Res.[X]
 ## SwordslayerName ^
 Blade Crusher[X]
 
-## SwordslayerDesc
-Reverses weapon triangle. Eff. vs swords.[X]
+## SwordslayerDesc ^
+Reverses/doubles weapon triangle. Eff. vs [SwordIcon].[X]
 
 ## ShieldbearerName ^
 Shieldbearer[X]
