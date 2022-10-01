@@ -415,12 +415,12 @@ NoFade
 ENDA
 
 EndingScene:
+Text(MapEndText)
+FADI 15
 EndOfEscapeRoutineASMC
 ENUN
-Text(MapEndText)
-FADI 10
-RemoveAll
 MUSC 0x7FFF
+RemoveAll
 LOMA Chapter3Cutscene
 CAMERA_CENTERED [9,3]
 FADU 10

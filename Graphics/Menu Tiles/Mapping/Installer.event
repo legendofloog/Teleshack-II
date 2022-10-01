@@ -1,0 +1,103 @@
+PUSH
+
+// Unit Menu
+	ORG 0xDA2F4
+	// Top
+	SHORT $102A // Left End
+	SHORT $1028 // Right of above
+	SHORT $1028 // Middle
+	SHORT $1045 // Right End
+
+	// Second to Top
+	SHORT $1029 // Left End
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)
+	SHORT $1441 // Right End
+
+	// Middle
+	SHORT $1029 // Left End
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)
+	SHORT $1441 // Right End
+
+	// Bottom
+	SHORT $1844 // Left End
+	SHORT $1840 // Middle
+	SHORT $1840 // Middle (Alternating)
+	SHORT $1C42 // Right End
+
+	// Fill when highlight is cleared
+	ORG 0xDA374 + 0xC
+	SHORT $1001 $1001
+
+	// Highlight tiles
+	ORG 0x4E9FC 
+	WORD $1001 $1001 $1001
+
+// Item Menu (Equip, Discard, Yes/No...)
+	ORG 0xDA334
+	// Top
+	SHORT $1027 // Left End
+	SHORT $1025 // Middle
+	SHORT $1025 // Middle (Alternating)
+	SHORT $1427 // Right End
+
+	// Second to Top
+	SHORT $1026 // Left End
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)
+	SHORT $1426 // Right End
+
+	// Middle
+	SHORT $1026 // Left End
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)
+	SHORT $1426 // Right End
+
+	// Bottom
+	SHORT $1827 // Left End
+	SHORT $1825 // Middle
+	SHORT $1825 // Middle (Alternating)
+	SHORT $1C27 // Right End
+
+// Trade Right Side
+	ORG 0xD7F92 // Needs 0x10 for palette
+	// Top
+	SHORT $1002 // Middle
+	SHORT $1002 // Middle (Alternating)
+	SHORT $1005 // Second to Right End
+	SHORT $1000 // Right End
+
+	// Second to Top
+	SHORT $1001 // Middle
+	SHORT $1001 // Middle (Alternating)?
+	SHORT $1006 // Second to Right End?
+	SHORT $1012 // Right End
+
+	// Middle
+	SHORT $1004 // Middle
+	SHORT $1004 // Middle (Alternating)?
+	SHORT $1004 // Second to Right End?
+	SHORT $100F // Right End
+
+// Trade Bottom
+	ORG 0xDA314 + 8 // Needs 0x10 for palette
+	// Second to Top
+	SHORT $1024 // Left End
+	SHORT $102E // Middle
+	SHORT $102E // Middle (Alternating)
+	SHORT $1013 // Right End
+
+	// Middle
+	SHORT $1024 // Left End
+	SHORT $102E // Middle
+	SHORT $102E // Middle (Alternating)
+	SHORT $1013 // Right End
+
+	// Bottom
+	SHORT $1019 // Left End
+	SHORT $1017 // Middle
+	SHORT $1017 // Middle (Alternating)
+	SHORT $102F // Right End
+
+POP

@@ -82,15 +82,15 @@ SupportCountAmount(3)
 ALIGN 4
 AlexSupportPointer:
 SupportDataCharacters(Axel,Faolan,Mantou,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(20,20,30,0,0)
+SupportDataInitialValues(BSupportLevel,0,0,0,0)
+SupportDataGrowths(10,20,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 AxelSupportPointer:
 SupportDataCharacters(Alex,Iberis,Pelecaye,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(20,20,30,0,0)
+SupportDataInitialValues(BSupportLevel,0,0,0,0)
+SupportDataGrowths(10,20,30,0,0)
 SupportCountAmount(3)
 
 // ch4
@@ -470,15 +470,15 @@ SupportCountAmount(2)
 ALIGN 4
 VolranSupportPointer:
 SupportDataCharacters(Tara,Meldan,0,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(40,80,0,0,0)
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
 SupportCountAmount(2)
 
 ALIGN 4
 TaraSupportPointer:
 SupportDataCharacters(Volran,Mish,0,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(40,80,0,0,0)
+SupportDataInitialValues(0,0,0,0,0)
+SupportDataGrowths(80,80,0,0,0)
 SupportCountAmount(2)
 
 // ch20

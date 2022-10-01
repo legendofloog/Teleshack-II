@@ -585,3 +585,51 @@ BuldakThiefFighter:
 MinkBard:
 	#incbin "./_palettes/MinkBard.lzpal" 
 
+ShawChampion:
+	#incbin "./_palettes/ShawChampion.lzpal" 
+
+ValseFreelancer:
+	#incbin "./_palettes/ValseFreelancer.lzpal" 
+
+ValseChampion:
+	#incbin "./_palettes/ValseChampion.lzpal" 
+
+MinkSage:
+	#incbin "./_palettes/MinkSage.lzpal" 
+
+TiberiusNoble:
+	#incbin "./_palettes/TiberiusNoble.lzpal" 
+
+TiberiusMasterKnight:
+	#incbin "./_palettes/TiberiusMasterKnight.lzpal" 
+
+HornetBowKnight:
+	#incbin "./_palettes/HornetBowKnight.lzpal" 
+
+HornetArchKnight:
+	#incbin "./_palettes/HornetArchKnight.lzpal" 
+
+FaolanGoldKnight:
+	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
+
+FaolanDismounted:
+	#incbin "./_palettes/FaolanDismounted.lzpal" 
+
+FaolanGKDismounted:
+	#incbin "./_palettes/FaolanGKDismounted.lzpal" 
+
+TiberiusMKDismounted:
+	#incbin "./_palettes/TiberiusMKDismounted.lzpal" 
+
+BardTweak:
+	#incbin "./_palettes/BardTweak.lzpal" 
+
+ChampionTweak:
+	#incbin "./_palettes/ChampionTweak.lzpal" 
+
+HunterTweak:
+	#incbin "./_palettes/HunterTweak.lzpal" 
+
+FalcoTweak:
+	#incbin "./_palettes/FalcoTweak.lzpal" 
+

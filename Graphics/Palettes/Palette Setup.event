@@ -486,11 +486,11 @@
 
 // JennyRookKnight
 	setPalette(121,JennyRookKnight)
-	setCBSP(121,Jenny, 1, DukeKnight)
+	setCBSP(121,Jenny, 1, RookKnight)
 
 // JennyRookKnightDismounted
 	setPalette(122,JennyRookKnightDismounted)
-	setCBSP(122,Jenny, 2, DukeKnight_Dismounted)
+	setCBSP(122,Jenny, 2, RookKnight_Dismounted)
 
 // JennyGoldKnight
 	setPalette(123,JennyGoldKnight)
@@ -777,3 +777,66 @@
 // MinkBard
 	setPalette(194,MinkBard)
 	setCBSP(194,Mink, 1, Bard)
+
+// ShawChampion
+	setPalette(195,ShawChampion)
+	setCBSP(195,Shaw, 3, Champion)
+
+// ValseFreelancer
+	setPalette(196,ValseFreelancer)
+	setCBSP(196,Valse, 1, Freelancer)
+
+// ValseChampion
+	setPalette(197,ValseChampion)
+	setCBSP(197,Valse, 3, Champion)
+
+// MinkSage
+	setPalette(198,MinkSage)
+	setCBSP(198,Mink, 3, Sage)
+
+// TiberiusNoble
+	setPalette(199,TiberiusNoble)
+	setCBSP(199,Tiberius, 1, Noble)
+
+// TiberiusMasterKnight
+	setPalette(200,TiberiusMasterKnight)
+	setCBSP(200,Tiberius, 3, MasterKnight)
+
+// HornetBowKnight
+	setPalette(201,HornetBowKnight)
+	setCBSP(201,Hornet, 1, BowKnight)
+
+// HornetArchKnight
+	setPalette(202,HornetArchKnight)
+	setCBSP(202,Hornet, 3, ArchKnight)
+
+// FaolanGoldKnight
+	setPalette(203,FaolanGoldKnight)
+	setCBSP(203,Faolan, 3, GoldKnight)
+
+// FaolanDismounted
+	setPalette(204,FaolanDismounted)
+	setCBSP(204,Faolan, 2, RookKnight_Dismounted)
+
+// FaolanGKDismounted
+	setPalette(205,FaolanGKDismounted)
+	setCBSP(205,Faolan, 4, GoldKnight_Dismounted)
+
+// TiberiusMKDismounted
+	setPalette(206,TiberiusMKDismounted)
+	setCBSP(206,Tiberius, 2, MasterKnight_Dismounted)
+
+// BardTweak
+	setGenericPalette(0xE1,BardTweak)
+	setGenericPalette( 0xAC,BardTweak)
+
+// ChampionTweak
+	setGenericPalette(0x3E,ChampionTweak)
+	setGenericPalette( 0x3F,ChampionTweak)
+
+// HunterTweak
+	setGenericPalette(0x40,HunterTweak)
+
+// FalcoTweak
+	setGenericPalette(0x68,FalcoTweak)
+	setGenericPalette( 0x69,FalcoTweak)

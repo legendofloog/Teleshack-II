@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="15" height="12" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="BobMenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
+  <image source="../../Image/Png/BobMenuTiles.png" width="128" height="64"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="15" height="12">
+  <data encoding="csv">
+90,88,88,88,88,88,88,88,88,88,88,88,88,88,91,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+37,47,47,47,47,47,47,47,47,47,47,47,47,47,86,
+26,24,24,24,24,24,24,24,24,24,24,24,24,24,35
+</data>
+ </layer>
+</map>

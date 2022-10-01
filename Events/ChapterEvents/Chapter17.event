@@ -264,9 +264,7 @@ NoFade
 ENDA
 
 BeginningScene:
-FADU 15
 SetBackground(CastleHallway)
-FADI 15
 CHECK_ALIVE Nora //this needs a conditional - loog
 BEQ 776 s0 sC
 	CHECK_ALIVE Hans
@@ -373,8 +371,10 @@ ENUN
 STAL 15
 RemoveAll
 LOMA Chapter17Duel
+DismountSingleUnit(Loewe)
 LOAD1 1 DuelLoewe
 ENUN
+DismountSingleUnit(Loewe)
 MOVE 3 Loewe [6,6]
 FADU 15
 ENUN
@@ -383,9 +383,11 @@ ENUN
 TEXTSTART
 TEXTSHOW Ch17_Confrontation
 TEXTEND
+DismountSingleUnit(Cleo)
 LOAD1 1 DuelCleo
 MOVE 5 Cleo [6,6]
 ENUN
+DismountSingleUnit(Cleo)
 TEXTCONT
 TEXTEND
 REMA
@@ -459,6 +461,7 @@ STAL 60
 MOVE 5 Cleo [4,6]
 Text(Ch17_DuelEnding)
 FADI 5
+MountAll
 RemoveAll
 SetBackground(Boat)
 FADU 15

@@ -230,3 +230,11 @@ ORG 0x0A43A0
 BYTE 0x00 0x00
 POP
 */
+
+// remove extra menu stuff
+PUSH
+//ORG 0xAB932 // support viewer
+//BYTE 0 0 0 0x20
+ORG 0xAB90E // link arena
+BYTE 0 0 0 0x20
+POP

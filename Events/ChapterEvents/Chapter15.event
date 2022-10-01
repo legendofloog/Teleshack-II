@@ -57,7 +57,6 @@ ENDA
 
 ThiefSpawn1:
 SpawnReinforcements(ThiefGroup1)
-Text(Ch15ThiefWarning)
 NoFade
 ENDA
 
@@ -467,7 +466,7 @@ UNIT Catrin Swordmaster_F 0x0 Level(20,NPC,False) [1,7] 0x0 0x0 0x0 0x0 [SilverS
 UNIT
 
 BeginningCutsceneLoewe:
-UNIT LoeweCopy Dragonlord_Dismounted 0x0 Level(15,Ally,False) [6,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT LoeweCopy Scaleshot_Dismounted 0x0 Level(15,Ally,False) [6,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [7,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT Kwame Civilian_2 0x0 Level(20,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT
