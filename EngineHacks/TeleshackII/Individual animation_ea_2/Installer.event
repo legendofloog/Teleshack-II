@@ -40,4 +40,5 @@ IndividualAnimationEntry(Hornet,ArchKnight_Dismounted,DismountedFAnims|IsPointer
 IndividualAnimationEntry(Ichwep,LanceSoldier,LanceSoldierFAnims|IsPointer)
 IndividualAnimationEntry(Nahiza,Ballistician,NahizaBallistician|IsPointer)
 IndividualAnimationEntry(Nahiza,LongBallistician,NahizaLongBallistician|IsPointer)
+IndividualAnimationEntry(Theimon, Paladin_Dismounted,DismountedMAnims|IsPointer)
 IndividualAnimationTerminator

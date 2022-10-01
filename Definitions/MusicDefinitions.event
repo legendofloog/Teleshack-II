@@ -13,7 +13,8 @@
 #define Dreaming 0x11 //Near Victory music is 0x10
 #define DawnOfYs 0x12
 #define HarvestDance 0x13
-#define mutecity 0x14
+#define ToTheSorrowfulBattlefieldID 0x14
+#define mutecity ToTheSorrowfulBattlefieldID
 #define PMDSteamCaveID 0x15
 #define FF6AwakeningID 0x16
 #define FF4RedWingsID 0x17
@@ -89,6 +90,7 @@
 #define FF_MysticQuest_FocusTowerID 0x27E
 #define GoldenSun_TLA_TheGoldenSunRisesID 0x27F
 #define DenpaMen2PalaceID 0x23
+#define HollowLightOfTheSealedLandID 0x281
 
 // Vanilla
 #define TiesOfFriendship 0x7

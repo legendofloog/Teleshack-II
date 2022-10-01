@@ -338,8 +338,8 @@ EndingScene:
 	LABEL 4
 	FADI 15
 	SendAll(Korovai)
-	CUSN Korovai
 	REMOVEUNIT Korovai
+	ClearUnit(Korovai)
 	MNC2 Chapter11
 	NoFade
 	ENDA

@@ -23,7 +23,6 @@ CharacterEventBothWays(7, DevvyMoment, Apsis, Perihelios)
 END_MAIN
 
 LocationBasedEvents:
-Seize(12,24)
 END_MAIN
 
 MiscBasedEvents:
@@ -278,6 +277,7 @@ LOMA Ch5xGechrysos
 CAMERA [0,0]
 LOAD1 1 LeonidasByelenGroup
 ENUN
+MUSC FF5_Sealed_Away
 TEXTSTART
 TEXTSHOW Ch24_Leonidas
 TEXTEND
@@ -295,6 +295,7 @@ MOVE 20 Ch2_Selese_Guy [13,4]
 FADI 5
 ENUN
 STAL 10
+FadeOutMusic
 RemoveAll
 LOMA Chapter23
 LOAD1 2 CityStreetsGroup
@@ -305,12 +306,15 @@ MOVE 15 KwameReal [4,11]
 MOVE 15 Loewe [5,11]
 ENUN
 STAL 5
+MUSC FE5_InTheBattle_Fate
 Text(Ch24_LoeweCliffhanger)
 STAL 5
 MOVE 15 KwameReal [17,6]
 MOVE 15 EliasReal [17,5]
 ENUN
+FadeOutMusic
 STAL 10
+MUSC WindyDaySoundEffect
 TEXTSTART
 TEXTSHOW Ch24_LoeweCleoSadTalk
 TEXTEND
@@ -320,6 +324,8 @@ TEXTEND
 REMA
 FADI 10
 ENUN
+STAL 10
+FadeOutMusic
 CAMERA_CENTERED [25,9]
 RemoveAll
 LOAD1 2 LeonidasArrivalGroup
@@ -327,6 +333,7 @@ STAL 5
 MOVE 10 Loewe [24,7]
 FADU 10
 ENUN
+MUSC FE5_InTheBattle_Fate
 TEXTSTART
 TEXTSHOW Ch24_LeonidasArrival
 TEXTEND
@@ -341,10 +348,12 @@ RemoveAll
 LOAD1 1 LeonidasCleoGroup
 CAMERA [4,12]
 FADU 10
-STAL 5
+STAL 10
+FadeOutMusic
 MOVE 10 Loewe [7,9]
 MOVE 10 Ch2_Selese_Guy [8,10]
 ENUN
+MUSC CrimeHeartID
 TEXTSTART
 TEXTSHOW Ch24_LeonidasCleo
 TEXTEND
@@ -388,12 +397,17 @@ MOVE 10 Loewe [7,9]
 ENUN
 Text(Ch24_LoeweCheersCleoUp)
 FADI 10
+STAL 10
+FadeOutMusic
 CAMERA_CENTERED [15,0]
 RemoveAll
 LOAD1 2 PreCatacombsGroup
 FADU 10
+MUSC FE5_InTheBattle_Fate
 Text(Ch24_ThePlan)
 FADI 10
+STAL 10
+FadeOutMusic
 RemoveAll
 SetBackground(BlackBackground)
 Text(Ch24_IntoTheCatacombs1)
@@ -417,6 +431,7 @@ TEXTCONT
 TEXTEND
 REMA
 CAMERA_CENTERED [13,22]
+MUSC FF5_Sealed_Away
 Text(Ch24_IntoTheCatacombs4)
 MOVE 10 Loewe [13,26]
 STAL 5
@@ -451,19 +466,22 @@ SET_CONDITION EliasReal
 SET_CONDITION Orfeas
 FAWU 5
 Text(Ch24_ByelenRitual)
+FadeOutMusic
 SVAL s1 0x2
 UNSET_CONDITION CoraliaReal
 MOVE 15 CoraliaReal [13,25]
 FAWI 20
 SOUN 0xF0 // divine weapon sound?
 STAL 60
-CUSN CoraliaReal
 REMOVEUNIT CoraliaReal
+ClearUnit(CoraliaReal)
 RemoveAll
 CAMERA_CENTERED [13,31]
 LOAD1 2 RitualAftermathGroup
 FAWU 1
 LOAD1 2 RitualAftermathGroup
+ENUN
+MUSC FF5_Nostalgia
 Text(Ch24_RitualAftermath1)
 Text(Ch24_RitualAftermath2)
 CAMERA_CENTERED [5,26]
@@ -490,9 +508,11 @@ TEXTCONT
 TEXTEND
 REMA
 Text(Ch24_RitualAftermath5)
+FadeOutMusic
 LOAD1 1 EnemyUnitsBosses
 CAMERA_CENTERED [23,13]
 FlashCursor(Danu,30)
+MUSC GuardianSignsLegendary
 Text(Ch24_RitualAftermath6)
 CAMERA_CENTERED [3,14]
 FlashCursor(Theimon,30)
@@ -531,14 +551,16 @@ ENDA
 
 EndingScene:
 EraseAllFatigue
-MUSC WindyDaySoundEffect
+FadeOutMusic
 FADI 10
 CAMERA_CENTERED [13,3]
 RemoveAll
 LOAD1 2 EndingSceneGroup
 FADU 10
+STAL 10
+MUSC FF5_Nostalgia
 TEXTSTART
-TEXTSHOW(Ch24_ByelenDefeated)
+TEXTSHOW Ch24_ByelenDefeated
 TEXTEND
 MUSC WindyDaySoundEffect
 FAWI 20
@@ -552,6 +574,7 @@ TEXTEND
 REMA
 STAL 5
 FAWI 20
+FadeOutMusic
 RemoveAll
 SOUN 0xF0 // divine weapon sound?
 LOAD1 1 MindPalaceGroup
@@ -559,7 +582,9 @@ LOMA Ch1LoeweVillage
 STAL 240
 FAWU 2
 STAL 120
+MUSC WindyDayBirdsSoundEffect
 Text(Ch24_IntoTheMindPalace)
+FadeOutMusic
 MOVE 5 Loewe [7,4]
 ENUN
 MOVE 5 Loewe [7,2]
@@ -572,13 +597,14 @@ LOMA Chapter24
 CAMERA_CENTERED [13,3]
 LOAD1 2 EndingSceneGroup2
 FAWU 2
+MUSC Rovers
 Text(Ch24_ReturnToEarth)
 MOVE 5 KwameReal [11,7]
-MUSC 0x7FFF
+FadeOutMusic
 ENUN
 STAL 120
 CUSE KwameReal
-MUSC WindyDaySoundEffect
+MUSC PMD_PowerOfDarknessID
 Text(Ch24_KwameReveal)
 MOVE 20 KwameReal [11,4]
 FADI 30

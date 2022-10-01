@@ -219,6 +219,7 @@ ENUN
 CAMERA_CENTERED Mureib
 STAL 20
 CAMERA_CENTERED [10,1]
+MUSC FF4RedWingsID
 Text(Ch17_MureibBetrayalPart1)
 CAMERA_CENTERED Mureib
 Text(Ch17_MureibBetrayalPart2)
@@ -271,6 +272,7 @@ BEQ 776 s0 sC
 	BEQ 776 s0 sC
 		CHECK_ALIVE Iberis
 		BEQ 776 s0 sC
+		MUSC FFTAnxiety
 		Text(Ch17_KorovaiIntrigue)
 		GOTO 777
 LABEL 776
@@ -281,6 +283,7 @@ LOMA Chapter17Council
 DismountAll
 LOAD1 1 CouncilMembers
 ENUN
+FadeOutMusic
 FADU 15
 STAL 15
 LOAD1 1 CouncilLoewe
@@ -291,16 +294,17 @@ ENUN
 STAL 10
 FADI 5
 SetBackground(BuildingInterior)
-FADU 15
+MUSC FE5_InTheBattle_Fate
 Text(Ch17_Loewe_Decision)
 FADI 15
 RemoveAll
 SetBackground(BlackBackground)
 FADU 15
+FadeOutMusic
 BROWNBOXTEXT Ch17_Telyada[8,8]
 FADI 15
 SetBackground(0x0D)
-FADU 15
+MUSC Rovers
 Text(Ch17_ReturnToMureib)
 FADI 15
 LOMA Chapter17
@@ -310,6 +314,7 @@ LOAD1 1 NPCUnits
 ENUN
 CAMERA_CENTERED [14,29]
 FADU 15
+FadeOutMusic
 BROWNBOXTEXT Ch17_FortKasira[8,8]
 LOAD1 1 CutsceneLords
 ENUN
@@ -340,11 +345,13 @@ ENUN
 ENUN
 MOVE 15 Mureib2 [15,19]
 ENUN
+MUSC Rovers
 Text(Ch17_MureibPhilosophyDebatePart1)
 MOVE 20 KwameReal [15,16]
 MOVE 25 Loewe [15,18]
 ENUN
 Text(Ch17_MureibPhilosophyDebatePart2)
+FadeOutMusic
 MOVE 5 Loewe [15,17]
 ENUN
 Text(Ch17_MureibPhilosophyDebatePart3)
@@ -357,6 +364,7 @@ ENUN
 ENUN
 KILL 0xAB
 AWAIT_KILL 0xAB
+MUSC FF5_Nostalgia
 TEXTSTART
 TEXTSHOW Ch17_Angery
 TEXTEND
@@ -391,12 +399,14 @@ DismountSingleUnit(Cleo)
 TEXTCONT
 TEXTEND
 REMA
+FadeOutMusic
 MOVE 5 Loewe [10,6]
 ENUN
 STAL 120
 CUSE Loewe
 STAL 120
 MOVE 5 Loewe [8,6]
+MUSC WindyDaySoundEffect
 Text(Ch17_DuelPart1)
 MOVE 15 Loewe [7,6]
 ENUN
@@ -420,35 +430,43 @@ MOVE 15 Cleo [6,6]
 MOVE 15 Loewe [7,6]
 ENUN
 Text(Ch17_DuelPart3)
+FadeOutMusic
 SetBackground(BlackBackground)
 _0x1A22
 TEXTSHOW Ch17_DuelText1
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText2
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText3
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText4
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText5
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText6
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText7
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 SetBackground(BlackBackground)
 _0x1A22
 TEXTSHOW Ch17BlackScreenText
@@ -459,12 +477,15 @@ CUSA Loewe
 EraseBackground
 STAL 60
 MOVE 5 Cleo [4,6]
+MUSC CrimeHeartID
 Text(Ch17_DuelEnding)
 FADI 5
-MountAll
+FadeOutMusic
+STAL 10
 RemoveAll
 SetBackground(Boat)
 FADU 15
+MUSC FF5_Sealed_Away
 Text(Ch17_ChouwoujTease)
 MNC2 Chapter18
 NoFade

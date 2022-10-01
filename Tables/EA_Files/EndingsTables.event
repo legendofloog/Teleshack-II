@@ -131,6 +131,7 @@ EndingTitleTableEntry(Tobie, TobieTitle)
 EndingTitleTableEntry(Matthias, MatthiasTitle)
 EndingTitleTableEntry(Cadenza, CadenzaTitle)
 EndingTitleTableEntry(Faolan, FaolanTitle)
+EndingTitleTableEntry(Awa, AwaTitle)
 
 EndingTitleTableEntry(Cromar, CromarTitle)
 EndingTitleTableEntry(Leina, LeinaTitle)
@@ -199,6 +200,9 @@ EndingTitleTableEntry(Locke, LockeTitle)
 EndingTitleTableEntry(EliasReal, EliasTitle)
 EndingTitleTableEntry(BoroReal,BoroTitle)
 
+EndingTitleTableEntry(BarodReal, BarodTitle)
+EndingTitleTableEntry(Orfeas, OrfeasTitle)
+
 EndingTitleTableEntry(TarajiReal, TarajiTitle)
 EndingTitleTableEntry(Athanasius, AthanTitle)
 EndingTitleTableTerminator
@@ -251,6 +255,7 @@ PairedEndingTableEntry(Longxia, Fangai, LongxiaFangaiEnding)
 PairedEndingTableEntry(Longxia, Groto, LongxiaGrotoEnding)
 SoloEndingTableEntry(Longxia,LongxiaEnding)
 PairedEndingTableEntry(Fangai, Tippany, Tippany_Fangai_Ending)
+PairedEndingTableEntry(Fangai, Faolan, FaolanFangaiEnding)
 SoloEndingTableEntry(Fangai, FangaiEnding)
 
 //5x
@@ -258,6 +263,7 @@ PairedEndingTableEntry(Matthias, Cromar, Matthias_Cromar_Ending)
 PairedEndingTableEntry(Matthias, Tippany, MatthiasTippanyEnding)
 SoloEndingTableEntry(Matthias, MatthiasEnding)
 
+PairedEndingTableEntry(Cadenza, Mink, CadenzaMinkEnding)
 PairedEndingTableEntry(Cadenza, Kofi, CadenzaKofiEnding)
 SoloEndingTableEntry(Cadenza, CadenzaEnding)
 
@@ -274,6 +280,7 @@ PairedEndingTableEntry(Awa, Nikolas, AwaNikolasEnding)
 PairedEndingTableEntry(Awa, Zhara, AwaZharaEnding)
 SoloEndingTableEntry(Awa, AwaEnding)
 
+PairedEndingTableEntry(Faolan, Buldak, FaolanBuldakEnding)
 SoloEndingTableEntry(Faolan, FaolanEnding)
 
 //6
@@ -285,6 +292,7 @@ SoloEndingTableEntry(Cromar, CromarEnding)
 
 //7
 PairedEndingTableEntry(Buldak, Tao, BuldakTaoEnding)
+PairedEndingTableEntry(Buldak, Valse, ValseBuldakEnding)
 SoloEndingTableEntry(Buldak, BuldakEnding)
 PairedEndingTableEntry(Iberis, Nora, IberisNoraEnding)
 PairedEndingTableEntry(Iberis, Hans, IberisHansEnding)
@@ -308,10 +316,13 @@ PairedEndingTableEntry(Meldan, Volran, MeldanVolranEnding)
 SoloEndingTableEntry(Meldan,MeldanEnding)
 
 //10
+PairedEndingTableEntry(Valse, Hornet, ValseHornetEnding)
+PairedEndingTableEntry(Valse, Carl, ValseCarlEnding)
+SoloEndingTableEntry(Valse,ValseEnding)
 PairedEndingTableEntry(Hornet, Nahiza, NahizaHornetEnding)
 PairedEndingTableEntry(Hornet, Shaw, HornetShawEnding)
 SoloEndingTableEntry(Hornet, HornetEnding)
-SoloEndingTableEntry(Valse,ValseEnding)
+
 
 //11
 PairedEndingTableEntry(Ichwep, Milo, Ichwep_Milo_Ending)
@@ -414,13 +425,14 @@ SoloEndingTableEntry(Locke, LockeEnding)
 //Athan, Taraji, Barod
 SoloEndingTableEntry(Athanasius, AthanEnding)
 SoloEndingTableEntry(TarajiReal, TarajiEnding)
+SoloEndingTableEntry(BarodReal, BarodEnding)
 
 //Orfeas, Elias, Catrin
 
-//SoloEndingTableEntry(Orfeas, OrfeasEnding)
-
+SoloEndingTableEntry(Orfeas, OrfeasEnding)
 PairedEndingTableEntry(EliasReal, Varga, VargaEliasEnding)
 SoloEndingTableEntry(EliasReal, EliasEnding)
+PairedEndingTableEntry(CatrinReal, Augur, AugurCatrinEnding)
 SoloEndingFlagTableEntry(CatrinReal, KwameCatrinEnding, 0x95)
 SoloEndingTableEntry(CatrinReal, CatrinEnding)
 
@@ -433,6 +445,7 @@ PairedEndingTableEntry(Mira, Iskra, MiraIskraEnding)
 PairedEndingTableEntry(Mira, Emil, MiraEmilEnding)
 PairedEndingTableEntry(Mira, BoroReal, MiraBoroEnding)
 PairedEndingTableEntry(Mira, TrajanReal, MiraTrajanEnding)
+PairedEndingTableEntry(Mira, Tiberius, MiraTiberiusEnding)
 SoloEndingTableEntry(Mira, MiraEnding)
 
 PairedEndingTableEntry(BoroReal,Mira,MiraBoroEnding)

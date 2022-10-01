@@ -42,7 +42,6 @@ LOCA 0 NPCVillage2 [4,1] 0x10
 Vendor(Ch22Vendor,19,8)
 Armory(Ch22Armory,9,1)
 SecretShop(Ch22SecretShop,8,15)
-//Seize(4,28)
 END_MAIN
 
 MiscBasedEvents:
@@ -92,6 +91,7 @@ MUSC WaterFlowingSoundEffect
 SetBackground(Boat)
 Text(Ch22BeginningScene1)
 SetBackground(Tavern)
+MUSC FF6AwakeningID
 Text(Ch22BeginningScene2)
 PreventSkipping
 AllowSkipping
@@ -104,8 +104,8 @@ SetBackground(Forest0)
 Text(Ch22BeginningScene4)
 FADI 5
 FADU 5
+MUSC FirstCampaignID
 Text(Ch22BeginningScene5)
-CALL $9EE2C4
 FADI 5
 MountAll
 LOAD1 1 BossUnit
@@ -118,11 +118,13 @@ FADU 5
 ENDA
 
 EndingScene:
-MUSC WindyDayBirdsSoundEffect
+MUSC FF6AwakeningID
 SetBackground(Village2)
 Text(Ch22EndingScene1)
+FadeOutMusic
 FADI 5
 FADU 5
+MUSC KwameID
 Text(Ch22EndingScene2)
 MNC2 Chapter23
 NoFade

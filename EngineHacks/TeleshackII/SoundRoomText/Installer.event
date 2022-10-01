@@ -122,6 +122,9 @@ SoundRoomSource(SorrowsDistortion, CastlevaniaOrderOfEcclesia)
 SoundRoomSource(WhatImMadeOfID, SonicHeroesSource)
 SoundRoomSource(ChaosAngelAct3ID, SonicAdvance3Source)
 
+//trails in the sky
+SoundRoomSource(HollowLightOfTheSealedLandID,TrailsInTheSkySource)
+
 // f-zero
 SoundRoomSource(mutecity, FZeroSource)
 

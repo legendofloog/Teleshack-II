@@ -50,6 +50,7 @@ BossBGMEntry(Colossus, UnfinishedBattleGodSyndrome)
 // ch 17
 BossBGMEntry(Alto, awaywithyou)
 BossBGMEntry(Mureib, SorrowsDistortion)
+BossBGMEntry(Mureib2,SorrowsDistortion)
 // ch 18
 BossBGMEntry(Shafaqat, awaywithyou)
 BossBGMEntry(Barod2, SorrowsDistortion)

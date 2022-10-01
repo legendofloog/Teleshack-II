@@ -728,10 +728,10 @@ setMugEntry(ValseMug, ValseMugData, 3, 5, 3, 3)
 
 ALIGN 16
 HornetMugData:
-#incbin "Dmp/Hornet(Sterling Glovner)_mug.dmp"
-#incbin "Dmp/Hornet(Sterling Glovner)_frames.dmp"
-#incbin "Dmp/Hornet(Sterling Glovner)_palette.dmp"
-#incbin "Dmp/Hornet(Sterling Glovner)_minimug.dmp"
+#incbin "Dmp/Hornet(bpat)_mug.dmp"
+#incbin "Dmp/Hornet(bpat)_frames.dmp"
+#incbin "Dmp/Hornet(bpat)_palette.dmp"
+#incbin "Dmp/Hornet(bpat)_minimug.dmp"
 setMugEntry(HornetMug, HornetMugData, 3, 5, 3, 3)
 
 ALIGN 16

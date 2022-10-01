@@ -45,8 +45,8 @@ SongTable(Dreaming,songDB,MapMusicGroup)
 SongTable(DawnOfYs,songD9,MapMusicGroup)
 #include "MusicEvents/harvestdancegba.event"
 SongTable(HarvestDance,HarvestDance_TOLUCT,MapMusicGroup)
-#include "MusicEvents/mutecity.event"
-SongTable(mutecity,song58,MapMusicGroup)
+#include "MusicEvents/ToTheSorrowfulBattlefield (pandan).event"
+SongTable(ToTheSorrowfulBattlefieldID,ToTheSorrowfulBattlefield,MapMusicGroup)
 #include "MusicEvents/SteamCave(Leche).event" // steam cave rip: psycommando
 SongTable(PMDSteamCaveID,SteamCave,MapMusicGroup)
 #include "MusicEvents/Awakening(FF6).event"
@@ -161,3 +161,5 @@ SongTable(GoldenSun_TLA_TheGoldenSunRisesID,TheGoldenSunRises,MapMusicGroup)
 SongTable(ChaosAngelAct3ID,ChaosAngelAct3,MapMusicGroup)
 #include "MusicEvents/DenpaMen2BtW_Palace(ArcherBias).event"
 SongTable(DenpaMen2PalaceID,DenpaMen2Palace,MapMusicGroup)
+#include "MusicEvents/Trails in the Sky - Hollow Light of the Sealed Land (RandomWizard).event"
+SongTable(HollowLightOfTheSealedLandID, HollowLightOfTheSealedLand, MapMusicGroup)

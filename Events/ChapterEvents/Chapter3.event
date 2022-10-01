@@ -511,7 +511,6 @@ BNE 27 s0 sC
 	TEXTEND
 	SendAll(Dragana)
 	KILL Dragana
-	//CUSN Dragana
 	AWAIT_KILL Dragana
 	STAL 50
 LABEL 27

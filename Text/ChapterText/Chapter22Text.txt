@@ -27,7 +27,7 @@ might be you when I heard[N]
 all of the fighting going on.[A]
 
 [FarRight][ThreeLineBox]
-What are you doing here Trajan?[N]
+What are you doing here, Trajan?[N]
 I thought you were with[N]
 Coralia and Elias in Gechrysos?[A]
 
@@ -308,7 +308,7 @@ You don't know either, huh?[A]
 
 
 [MidRight][TwoLineBox]
-Th-there are few things I do not know.[N]
+Th-there are few things I do not know.[AN]
 Wisdom is simply the act of recognizing[N]
 that which is beyond your own ken.[A]
 
@@ -490,10 +490,10 @@ All of you, keep it down, would you!?[A]
 
 [FarLeft]
 Wait, is that[Beat] No way![A]
-[MoveFarFarRight]
+[MoveFarFarRight][CloseSpeechSlow]
 [ClearFace]
 [Left]
-Hey, wait up![A]
+Hey, wait up![A][CloseSpeechSlow]
 [MoveFarFarRight]
 [ClearFace]
 

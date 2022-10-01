@@ -646,8 +646,8 @@ FADU 15
 Text(Ch23AfterTheBattle2)
 FADI 15
 SendAll(CoraliaReal)
-CUSN CoraliaReal
 REMOVEUNIT CoraliaReal
+ClearUnit(CoraliaReal)
 CHECK_EVENTID 7
 BEQ 13 s0 sC
     CHECK_EVENTID 14 //mihail's dead?

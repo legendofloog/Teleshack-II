@@ -70,7 +70,6 @@ Narrow Font Extension - Mint, bly
 Sacred Weapons Flash Patch - 7743
 Prep Shop Each Chapter - 7743
 Toggle Deployment Swapping - Aura Wolf
-Forblaze Source Port - hypergammaspaces
 EventGetCountOfUnit -  7743
 Ring Rework - 7743
 Promo Level Check - Snek
@@ -82,7 +81,6 @@ StallAIs - MintX
 
 
 GRAPHICS
-
 
 Portraits
 
@@ -135,7 +133,8 @@ Draken, Leina - RandomWizard
 Cromar - knabepicer
 
 Chapter 7
-Buldak, Yor - RandomWizard
+Buldak - RandomWizard
+Yor - RandomWizard, epicer
 Iberis - NickT
 Epony - RisingSolaris
 Mifan - MK404, flasuban
@@ -156,7 +155,7 @@ Wrathgar - DerTheVaporeon
 
 Chapter 10
 Valse, Johanna - XVI
-Hornet - bpat
+Hornet - bpat, epicer
 
 Chapter 11
 Ichwep - h0lymushrooms, Levin
@@ -414,92 +413,99 @@ Long Ballistician - DrGreen, Aruka, Kenpuhu
 Noble - Dominus_Vobiscum
 Master Knight (M) - milom
 
-Item Icons -
-Lisandra Brave, Beansy, LordGlenn, GabrielKnight, XVI, Kyrads, Peerless, Zarg,
+Item Icons - Lisandra Brave, Beansy, LordGlenn, GabrielKnight, XVI, Kyrads, Peerless, Zarg,
 Ereshkigal, Celice, CardCafe, ArcherBias, N426, EldritchAbomination, Indogutsu Tenbuki
-
-//would like a more comprehensive list but most individual item icons don't have credits
 
 Status Screen - SD9k02 
 
 Battle Palettes - knabepicer, Dainn, Kyrads, pandan, Loog
 
+Battle Screen - hypergammaspaces
+
+Menu Tiles - Pikmin1211
+
 MUSIC
 
 NIMAP 2 - Alusq
-Drumfix - ??
+Drumfix - circleseverywhere
 
 Songs
 
-Kwame (A Reliable Chair)
-
-Away With You (Runa)
-
-War's Heartbeat (??)
-
-FE5 - Adversity (Scraiza)
-FE5 - In the Battle ~ Fate (knabepicer?)
-FE5 - Victory is Near (DrGreen)
-FE9 - With Us (Sme)
-
-Berwick Saga - Man-to-Man Fight (pandan)
-Berwick Saga - Knight's Pride (DrGreen)
-
-Triangle Strategy - Combat: Resistance (devisio, from Musescore)
-Triangle Strategy - Combat: First Campaign (devisio, from Musescore)
-
-Tales of Symphonia - Rovers (pandan)
-Tales of Symphonia - Fighting of the Spirit (A Reliable Chair)
-Tales of Symphonia - Encounter With The Renegades (A Reliable Chair)
-Tales of Symphonia - Like a Glint of Light (A Reliable Chair)
-Tales of Symphonia - Sheena (A Reliable Chair)
-Tales of Vesperia - A Tragic Decision (A Reliable Chair)
-
-Golden Sun - Saturos Battle (Tristan Hollow)
-Golden Sun - Mars Lighthouse (A Reliable Chair)
-Golden Sun: The Lost Age - Walking Forward With Determination (RandomWizard)
-
-Ys I - Dreaming (devisio)
-Ys III - Drumbeat of Doom ~ Genos's Island (devisio)
-Ys IV - The Dawn of Ys (devisio)
-
-FF4 - Red Wings (RandomWizard)
-FF5 - Nostalgia (A_Reliable_Chair)
-FF5 - Battle on the Big Bridge (pandan)
-FF5 - Sealed Away (RandomWizard)
-FF6 - Awakening (Loog)
-FF9 - Festival of the Hunt (RandomWizard, Mr_Wright)
-FFT - Anxiety (Alusq)
-
-Treasure of the Rudras - Battle For The Fields (RandomWizard, devisio)
-Treasure of the Rudras - Crime of the Heart (devisio)
-Treasure of the Rudras - Sword of the Valiant (A Reliable Chair)
-
-Pokemon Black and White - N's Castle Bridge (DrGreen)
-PMD: Rescue Team - Great Canyon (Psyche, RandomWizard)
-PMD: Explorers - Steam Cave (Leche)
-Pokemon Ranger: Guardian Signs - Legendary Pokemon Battle (Sme)
-
 Lufia and the Fortress of Doom - Island in the Void (Sme)
+Treasure of the Rudras - Battle For The Fields (RandomWizard, devisio)
 Lufia 2: Rise of the Sinistrals - Battle 2 (Saxor_The_Nobody)
-
-Valkyrie Profile - The Unfinished Battle with God Syndrome (Saxor_The_Nobody)
-Valkyrie Profile - Rise Above the World (buggo)
-
-Heroes of Mana - Why are We Without Hope (devisio)
-Chrono Trigger - Battle With Magus (A Reliable Chair)
 Knights in the Nightmare - Sortie Formation (Saxor_The_Nobody)
-Crypt of the Necrodancer - Crypteque (ArcherBias)
-The Queen of Heart - Tomoko (pandan)
-Castlevania: Order of Ecclesia - Sorrow's Distortion (buggo)
-F-Zero - Mute City (pandan)
+FE9 - With Us (Sme)
+Berwick Saga - Man-to-Man Fight (Agro)
+Tales of Symphonia - Rovers (pandan)
+Valkyrie Profile - The Unfinished Battle with God Syndrome (Saxor_The_Nobody)
+FF5 - Nostalgia (A_Reliable_Chair)
+FF5 - Sealed Away (RandomWizard)
+FE5 - Adversity (Scraiza)
+FE5 - In the Battle ~ Fate (knabepicer)
+Ys I - Dreaming (devisio)
+Ys IV - The Dawn of Ys (devisio)
 Tactics Ogre: Let Us Cling Together - Harvest Dance (Loog)
+Super Robot Wars 64 - To the Sorrowful Battlefield (pandan)
+PMD: Explorers - Steam Cave (Leche)
+FF6 - Awakening (Loog)
+FF4 - Red Wings (RandomWizard)
+FFT - Anxiety (Alusq)
 Lagoon - Battle With Thimale (RandomWizard)
+Ogre Battle 64 - Wall of Defense (Alusq)
+Romancing SaGa - Battle (DrGreen)
 Guilty Gear Isuka - Sheep Will Sleep (Leche)
 Undertale - CORE (Leche)
 Dynasty Warriors 3 - Oppression (pandan)
-Romancing SaGa - Battle (DrGreen)
-Ogre Battle 64 - Wall of Defense (Alusq)
+Away With You (Runa)
+Pokemon Black and White - N's Castle Bridge (DrGreen)
+PMD: Rescue Team - Great Canyon (Psyche, RandomWizard)
+Berwick Saga - Knight's Pride (DrGreen)
+Tales of Symphonia - Fighting of the Spirit (A Reliable Chair)
+Triangle Strategy - Combat: Resistance (devisio, Musescore)
+Triangle Strategy - Combat: First Campaign (devisio, Musescore)
+FF9 - Festival of the Hunt (RandomWizard, Mr_Wright)
+Crypt of the Necrodancer - Crypteque (ArcherBias)
+Valkyrie Profile - Rise Above the World (buggo)
+Treasure of the Rudras - Crime of the Heart (devisio)
+Ys III - Drumbeat of Doom ~ Genos's Island (devisio)
+Treasure of the Rudras - Sword of the Valiant (A Reliable Chair)
+Chrono Trigger - Battle With Magus (A Reliable Chair)
+Castlevania: Order of Ecclesia - Sorrow's Distortion (buggo)
+Pokemon Ranger: Guardian Signs - Legendary Pokemon Battle (Sme)
+Heroes of Mana - Why are We Without Hope (devisio)
+Tales of Symphonia - Encounter With The Renegades (A Reliable Chair)
+Tales of Symphonia - Like a Glint of Light (A Reliable Chair)
+Golden Sun - Saturos Battle (Tristan Hollow)
+Tales of Symphonia - Sheena (A Reliable Chair)
+Tales of Vesperia - A Tragic Decision (A Reliable Chair)
+Golden Sun - Mars Lighthouse (A Reliable Chair)
+Golden Sun: The Lost Age - Walking Forward With Determination (RandomWizard)
+Trails in the Sky - Hollow Light of the Sealed Land (RandomWizard)
+FF5 - Battle on the Big Bridge (pandan)
+Kwame (A Reliable Chair)
+Treasure of the Rudras - The Quest For Rudras's Mines (Loog)
+FE4 - Vs Julius (SurfingKyogre)
+FE16 - Roar of Dominion (Rain) (DrGreen3339)
+Sonic Heroes - What Im Made Of (epicer)
+FE5 - Prep Screen (hypergammaspaces)
+King of Dragons - Into the Castle (Sme)
+FF Mystic Quest - Battle 1 (RandomWizard)
+FF Mystic Quest - Hill of Destiny (RandomWizard)
+FF Mystic Quest - Doom Castle (RandomWizard)
+Golden Sun - Venus Lighthouse (tristan)
+Super Smash Bros. Brawl - Tournament Registration (epicer)
+FF Mystic Quest - Dark King's Theme {RandomWizard)
+PMD: Explorers - Sky Peak Final Pass {RandomWizard}
+PMD: Rescue Team - Mount Thunder {RandomWizard}
+PMD: Explorers - Power of Darkness {Psyche}
+PMD: Explorers - Mystifying Forest {Shtick}
+FF Mystic Quest - Ice Dungeon {RandomWizard}
+FF Mystic Quest - Focus Tower {RandomWizard}
+Golden Sun The Lost Age - The Golden Sun Rises (Loog)
+Sonic Advance 3 - Chaos Angel Act 3 (epicer)
+Denpa Men 2: Beyond the Waves - Palace (ArcherBias)
+
 
 
 

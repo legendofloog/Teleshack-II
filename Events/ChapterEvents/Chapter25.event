@@ -440,6 +440,7 @@ BLT 0x9003 0xC 0x1
 ENUT 0x96
 LABEL 0x9003
 DISA_IF KwameReal
+ClearUnit(KwameReal)
 SetBackground(0x0D)
 Text(RunningOutOfCatacombs)
 MUSC WindyDaySoundEffect
