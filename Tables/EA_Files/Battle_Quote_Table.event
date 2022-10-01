@@ -86,6 +86,9 @@ SpecifiedBattleConvo(Taraji,Sera,Chapter21,0x1D,BQTarajiSera)
 SpecifiedBattleConvo(Taraji,Leina,Chapter21,0x1E,BQTarajiLeina)
 UnspecifiedBattleConvo(Taraji,Chapter21,0x1,BQTaraji)
 
+// Chapter22
+UnspecifiedBattleConvo(Eleanor,Chapter22,15,Ch22EleanorVSText)
+
 // Chapter23
 SpecifiedBattleConvo(KassandraReal,Cleo,Chapter23,24,Ch23KassandraVSCleo)
 SpecifiedBattleConvo(KassandraReal,Loewe,Chapter23,25,Ch23KassandraVSLoewe)

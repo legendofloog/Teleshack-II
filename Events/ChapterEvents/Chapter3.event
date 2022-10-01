@@ -41,6 +41,7 @@ Escape(29,12)
 Escape(29,13)
 Escape(29,14)
 Escape(29,15)
+//Escape(0,9)
 END_MAIN
 
 
@@ -337,6 +338,7 @@ AWAIT_KILL Mira
 LOAD1 1 VargaDeathChamber
 KILL Varga
 AWAIT_KILL Varga*/
+//MUSC Sortie_Formation
 SetBackground(CastleHallway)
 CheckUnitDeadOrJailed(Mira)
 BNE 1 s0 sC
@@ -383,6 +385,7 @@ LOAD1 1 EnemyUnits
 LOAD1 1 AllyUnits
 CAMERA [4,9]
 CALL $9EE2C4
+MUSC TreasureOfRudrasBattleTheme
 ENUN
 CamOn
 LOAD1 2 CutsceneUnits //loads cutscene units only if alive
@@ -438,6 +441,7 @@ BNE 21 s0 sC
 LABEL 21
 	Text(EndingSceneTextA1B)
 LABEL 22
+MUSC Sortie_Formation
 LOAD1 1 CutsceneUnits3
 ENUN
 MOVE 5 Cidor [9,13]

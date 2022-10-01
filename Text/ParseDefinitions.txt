@@ -209,6 +209,7 @@
 [LoadAthan] = [LoadAthanasius]
 [LoadCherne] = [LoadFace][0x39][0x1]
 [LoadKwameReal] = [LoadCherne]
+[LoadEleanor] = [LoadFace][0xDD][0x1]
 
 //DO NOT PUT PORTRAITS PAST 0xFF
 
