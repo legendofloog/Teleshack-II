@@ -240,3 +240,20 @@ PUSH
 ORG 0xAB90E // link arena
 BYTE 0 0 0 0x20
 POP
+
+//changing support room bgm and extras -> support viewer bgm
+PUSH
+//extras -> support viewer bgm
+ORG $A9C92
+BYTE DenpaMen2PalaceID
+ORG $A2BE2
+BYTE DenpaMen2PalaceID
+//extras -> support viewer bgm when selected
+ORG $A2BAC
+BYTE DenpaMen2PalaceID
+//support room ost; nops the bgm switch function calls
+ORG $951FC
+SHORT $1C00 $1C00
+ORG $960C6
+SHORT $1C00 $1C00
+POP

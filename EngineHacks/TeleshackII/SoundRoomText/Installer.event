@@ -158,4 +158,7 @@ SoundRoomSource(SSBB_Tournament_PrepsID,SSBBSource)
 //runa does a thing
 SoundRoomSource(awaywithyou, RunaDoesAThingSource)
 
+//denpa men 2 beyond the waves
+SoundRoomSource(DenpaMen2PalaceID, DenpaMen2Source)
+
 WORD 0 0 // term

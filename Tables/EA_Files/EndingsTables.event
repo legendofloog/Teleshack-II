@@ -310,6 +310,7 @@ SoloEndingTableEntry(Meldan,MeldanEnding)
 //10
 PairedEndingTableEntry(Hornet, Nahiza, NahizaHornetEnding)
 PairedEndingTableEntry(Hornet, Shaw, HornetShawEnding)
+SoloEndingTableEntry(Hornet, HornetEnding)
 SoloEndingTableEntry(Valse,ValseEnding)
 
 //11
@@ -324,6 +325,8 @@ PairedEndingTableEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_Ending)
 SoloEndingTableEntry(Tiberius, TiberiusEnding)
 PairedEndingTableEntry(Mink, Augur, MinkAugurEnding)
 SoloEndingFlagTableEntry(Mink, MinkKwameEnding, 0x93)
+SoloEndingTableEntry(Mink, MinkEnding)
+
 
 //12x
 SoloEndingTableEntry(Mantou, MantouEnding)
@@ -370,15 +373,18 @@ SoloEndingTableEntry(Kofi, KofiEnding)
 PairedEndingTableEntry(Rashid,Nikolas,RashidNikolasEnding)
 SoloEndingTableEntry(Rashid, RashidEnding)
 
+//17
+SoloEndingTableEntry(Nikolas, NikolasEnding)
+
 //18
 PairedEndingTableEntry(Shaw, Sera, ShawSeraEnding)
 SoloEndingTableEntry(Shaw, ShawEnding)
-//SoloEndingTableEntry(Sera, SeraEnding)
+SoloEndingTableEntry(Sera, SeraEnding)
 
 //18x
 
 PairedEndingTableEntry(Joie, Locke, JoieLockeEnding)
-//SoloEndingTableEntry(Joie, JoieEnding)
+SoloEndingTableEntry(Joie, JoieEnding)
 SoloEndingTableEntry(Ojasvi, OjasviEnding)
 SoloEndingTableEntry(Tao, TaoEnding)
 PairedEndingTableEntry(Groto, Apsis,GrotoApsis_Ending)
@@ -401,7 +407,9 @@ SoloEndingTableEntry(Lyre, LyreEnding)
 PairedEndingTableEntry(Ngondala, Locke, Ngondala_Locke_Ending)
 SoloEndingFlagTableEntry(Ngondala, NgondalaKwameEnding, 0x96)
 SoloEndingTableEntry(Ngondala, NgondalaEnding)
-//SoloEndingTableEntry(Locke, LockeEnding)
+
+// 22 (Locke)
+SoloEndingTableEntry(Locke, LockeEnding)
 
 //Athan, Taraji, Barod
 SoloEndingTableEntry(Athanasius, AthanEnding)

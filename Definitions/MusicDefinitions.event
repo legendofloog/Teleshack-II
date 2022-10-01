@@ -88,6 +88,7 @@
 #define FF_MysticQuest_IceDungeonID 0x27D
 #define FF_MysticQuest_FocusTowerID 0x27E
 #define GoldenSun_TLA_TheGoldenSunRisesID 0x27F
+#define DenpaMen2PalaceID 0x23
 
 // Vanilla
 #define TiesOfFriendship 0x7
