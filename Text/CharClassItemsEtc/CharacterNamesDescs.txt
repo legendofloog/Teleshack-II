@@ -509,7 +509,7 @@ Suspects something is awry in Selese.[X]
 Eitha[X]
 
 ## EithaDesc
-"Hero" of the reclaimation wars;[N]
+Hero of the reclaimation wars;[N]
 wielder of the Daybreak.[N]
 Eternally calling out to her lover.[X]
 
@@ -1145,3 +1145,15 @@ Asha[X]
 A member of the Sacred Arrow Rebels,[N]
 under the command of the Liberators.[N]
 Has a love for treasure and adventure.[X]
+
+## PrisonerName
+Prisoner[X]
+
+## PrisonerDesc
+A prisoner held by Duke Cidor.[X]
+
+## MysteryName
+???[X]
+
+## MysteryDesc
+.[X]

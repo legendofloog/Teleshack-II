@@ -36,6 +36,7 @@
 #define Chapter17Council 0x21
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
+#define Chapter12Cutscene 0x24
 
 // MapChangesID
 
@@ -75,6 +76,7 @@
 #define Chapter17CouncilMapChanges 0xB1
 #define Chapter17DuelMapChanges 0xB5
 #define Chapter18xInterludeMapChanges 0xB8
+#define Chapter12CutsceneMapChanges 0xC2
 
 
 // MapID
@@ -115,6 +117,7 @@
 #define Chapter17CouncilMap 0xB2
 #define Chapter17DuelMap 0xB6
 #define Chapter18xInterludeMap 0xB9
+#define Chapter12CutsceneMap 0xC3
 
 // EventsID
 
@@ -151,6 +154,7 @@
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7
 #define Chapter18xInterludeEvents 0xBA
+#define Chapter12CutsceneEvents 0xC4
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88
