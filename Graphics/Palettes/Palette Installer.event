@@ -576,17 +576,6 @@ KwameDarkBishop:
 AthanDarkBishop:
 	#incbin "./_palettes/AthanDarkBishop.lzpal" 
 
-BardTweak:
-	#incbin "./_palettes/BardTweak.lzpal" 
-
-ChampionTweak:
-	#incbin "./_palettes/ChampionTweak.lzpal" 
-
-HunterTweak:
-	#incbin "./_palettes/HunterTweak.lzpal" 
-
-FalcoTweak:
-	#incbin "./_palettes/FalcoTweak.lzpal" 
 BuldakThief:
 	#incbin "./_palettes/BuldakThief.lzpal" 
 
@@ -619,4 +608,28 @@ HornetBowKnight:
 
 HornetArchKnight:
 	#incbin "./_palettes/HornetArchKnight.lzpal" 
+
+FaolanGoldKnight:
+	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
+
+FaolanDismounted:
+	#incbin "./_palettes/FaolanDismounted.lzpal" 
+
+FaolanGKDismounted:
+	#incbin "./_palettes/FaolanGKDismounted.lzpal" 
+
+TiberiusMKDismounted:
+	#incbin "./_palettes/TiberiusMKDismounted.lzpal" 
+
+BardTweak:
+	#incbin "./_palettes/BardTweak.lzpal" 
+
+ChampionTweak:
+	#incbin "./_palettes/ChampionTweak.lzpal" 
+
+HunterTweak:
+	#incbin "./_palettes/HunterTweak.lzpal" 
+
+FalcoTweak:
+	#incbin "./_palettes/FalcoTweak.lzpal" 
 

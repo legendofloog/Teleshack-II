@@ -56,15 +56,15 @@ BeginningScene:
 //ripped from VBA
 LOMA 0x1 //loads arbitrary map
 MUSC GoldenSun_TLA_TheGoldenSunRisesID
-REMOVEPORTRAITS
-ASMC 0xB8175 //turn counts display
-STAL 1
+//REMOVEPORTRAITS
+//ASMC 0xB8175 //turn counts display; commented out until i figure out why it's breaking
+//STAL 1
 REMOVEPORTRAITS
 CALL 0xA0036C //Character Endings
 STAL 90
-MUSC TheQuestForRudrasMines
-ASMC 0xC4879 //Roll Credits - CGs are borked when I try to use it normally?
-STAL 90
+//MUSC TheQuestForRudrasMines
+//ASMC 0xC4879 //credits roll; commented out until i actually add these images
+//STAL 90
 MNC2 PostgameHub
 NoFade
 ENDA

@@ -486,11 +486,11 @@
 
 // JennyRookKnight
 	setPalette(121,JennyRookKnight)
-	setCBSP(121,Jenny, 1, DukeKnight)
+	setCBSP(121,Jenny, 1, RookKnight)
 
 // JennyRookKnightDismounted
 	setPalette(122,JennyRookKnightDismounted)
-	setCBSP(122,Jenny, 2, DukeKnight_Dismounted)
+	setCBSP(122,Jenny, 2, RookKnight_Dismounted)
 
 // JennyGoldKnight
 	setPalette(123,JennyGoldKnight)
@@ -766,20 +766,6 @@
 	setPalette(191,AthanDarkBishop)
 	setCBSP(191,Athanasius, 1, DarkBishop)
 
-// BardTweak
-	setGenericPalette(0xE1,BardTweak)
-	setGenericPalette( 0xAC,BardTweak)
-
-// ChampionTweak
-	setGenericPalette(0x3E,ChampionTweak)
-	setGenericPalette( 0x3F,ChampionTweak)
-
-// HunterTweak
-	setGenericPalette(0x40,HunterTweak)
-
-// FalcoTweak
-	setGenericPalette(0x68,FalcoTweak)
-	setGenericPalette( 0x69,FalcoTweak)
 // BuldakThief
 	setPalette(192,BuldakThief)
 	setCBSP(192,Buldak, 1, Thief)
@@ -823,3 +809,34 @@
 // HornetArchKnight
 	setPalette(202,HornetArchKnight)
 	setCBSP(202,Hornet, 3, ArchKnight)
+
+// FaolanGoldKnight
+	setPalette(203,FaolanGoldKnight)
+	setCBSP(203,Faolan, 3, GoldKnight)
+
+// FaolanDismounted
+	setPalette(204,FaolanDismounted)
+	setCBSP(204,Faolan, 2, RookKnight_Dismounted)
+
+// FaolanGKDismounted
+	setPalette(205,FaolanGKDismounted)
+	setCBSP(205,Faolan, 4, GoldKnight_Dismounted)
+
+// TiberiusMKDismounted
+	setPalette(206,TiberiusMKDismounted)
+	setCBSP(206,Tiberius, 2, MasterKnight_Dismounted)
+
+// BardTweak
+	setGenericPalette(0xE1,BardTweak)
+	setGenericPalette( 0xAC,BardTweak)
+
+// ChampionTweak
+	setGenericPalette(0x3E,ChampionTweak)
+	setGenericPalette( 0x3F,ChampionTweak)
+
+// HunterTweak
+	setGenericPalette(0x40,HunterTweak)
+
+// FalcoTweak
+	setGenericPalette(0x68,FalcoTweak)
+	setGenericPalette( 0x69,FalcoTweak)
