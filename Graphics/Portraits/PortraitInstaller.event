@@ -188,7 +188,7 @@ MiraMugData:
 #incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_frames.dmp"
 #incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_palette.dmp"
 #incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_minimug.dmp"
-setMugEntry(MiraMug, MiraMugData, 3, 6, 3, 4)
+setMugEntryExtend(MiraMug, MiraMugData, 5, 5, 4, 3, 10, 2, 10, 4)
 
 ALIGN 16
 IskraMugData:
