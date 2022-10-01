@@ -81,7 +81,7 @@ SupportConvoEntry(Fangai, Tippany, Fangai_Tippany_C, Fangai_Tippany_B, Fangai_Ti
 
 SupportConvoEntry(Mish, Tobie, 0, Mish_Tobie_B, Mish_Tobie_A) 
 SupportConvoEntry(Mish, Takai, 0, MishTakaiB, MishTakaiA)
-SupportConvoEntry(Mish, Tara, 0, 0, 0)
+SupportConvoEntry(Mish, Tara, MishTaraCSupport, MishTaraBSupport, MishTaraASupport)
 SupportConvoEntry(Mish, Ellerey, MishEllereyCSupport, MishEllereyBSupport, MishEllereyASupport)
 
 SupportConvoEntry(Tobie, Mish, 0, Mish_Tobie_B, Mish_Tobie_A) 
@@ -89,7 +89,7 @@ SupportConvoEntry(Tobie, Takai, 0, TobieTakaiBSupport, TobieTakaiASupport)
 SupportConvoEntry(Tobie, Filone, FiloneTobieCSupport, FiloneTobieBSupport, FiloneTobieASupport)
 
 SupportConvoEntry(Awa, Delilah, Awa_Delilah_C, Awa_Delilah_B, Awa_Delilah_A)
-SupportConvoEntry(Awa, Zhara, 0, 0, 0)
+SupportConvoEntry(Awa, Zhara, Awa_Zhara_C, Awa_Zhara_B, Awa_Zhara_A)
 SupportConvoEntry(Awa, Nikolas, Awa_Nikolas_C, Awa_Nikolas_B, Awa_Nikolas_A)
 
 SupportConvoEntry(Matthias, Cromar, Matthias_Cromar_C, Matthias_Cromar_B, Matthias_Cromar_A)
@@ -152,7 +152,7 @@ SupportConvoEntry(Milo, Ichwep, Ichwep_Milo_C, Ichwep_Milo_B, Ichwep_Milo_A)
 SupportConvoEntry(Milo, Hans, MiloHansC, MiloHansB, MiloHansA)
 SupportConvoEntry(Milo, Pelecaye, Milo_Pelecaye_C, Milo_Pelecaye_B, Milo_Pelecaye_A)
 
-SupportConvoEntry(Mink, KwameReal, 0, 0, 0)
+SupportConvoEntry(Mink, KwameReal, MinkKwame_C, MinkKwame_B, MinkKwame_A)
 SupportConvoEntry(Mink, Cadenza, 0, 0, 0)
 SupportConvoEntry(Mink, Augur, MinkAugur_C, MinkAugur_B, MinkAugur_A)
 
@@ -221,7 +221,7 @@ SupportConvoEntry(Nikolas, Awa, Awa_Nikolas_C, Awa_Nikolas_B, Awa_Nikolas_A)
 SupportConvoEntry(Nikolas, Rashid, Rashid_Nikolas_C, Rashid_Nikolas_B, Rashid_Nikolas_A)
 SupportConvoEntry(Nikolas, Kofi, Kofi_Nikolas_C, Kofi_Nikolas_B, Kofi_Nikolas_A)
 
-SupportConvoEntry(KwameReal, Mink, 0, 0, 0)
+SupportConvoEntry(KwameReal, Mink, MinkKwame_C, MinkKwame_B, MinkKwame_A)
 SupportConvoEntry(KwameReal, Kofi, Kofi_Kwame_C, Kofi_Kwame_B, Kofi_Kwame_A)
 SupportConvoEntry(KwameReal, CatrinReal, 0, KwameCatrinBSupport, KwameCatrinASupport)
 SupportConvoEntry(KwameReal, Ngondala, 0, KwameNgondalaB, KwameNgondalaA)
@@ -248,7 +248,7 @@ SupportConvoEntry(Apsis, Groto, Apsis_Groto_C, Apsis_Groto_B, Apsis_Groto_A)
 
 SupportConvoEntry(Zhara, Jenny, JennyZharaCSupport, JennyZharaBSupport, JennyZharaASupport)
 SupportConvoEntry(Zhara, Svetomir, SvetomirZharaCSupport, SvetomirZharaBSupport, SvetomirZharaASupport)
-SupportConvoEntry(Zhara, Awa, 0, 0, 0)
+SupportConvoEntry(Zhara, Awa, Awa_Zhara_C, Awa_Zhara_B, Awa_Zhara_A)
 
 SupportConvoEntry(Ojasvi, Ilse, Ilse_Ojasvi_C, Ilse_Ojasvi_B, Ilse_Ojasvi_A)
 SupportConvoEntry(Ojasvi, Tiberius, Tiberius_Ojasvi_C, Tiberius_Ojasvi_B, Tiberius_Ojasvi_A)
@@ -260,7 +260,7 @@ SupportConvoEntry(Groto, Apsis, Apsis_Groto_C, Apsis_Groto_B, Apsis_Groto_A)
 SupportConvoEntry(Volran, Tara, VolranTaraCSupport, VolranTaraBSupport, VolranTaraASupport)
 SupportConvoEntry(Volran, Meldan, MeldanVolranC, MeldanVolranB, MeldanVolranA)
 
-SupportConvoEntry(Tara, Mish, 0, 0, 0)
+SupportConvoEntry(Tara, Mish, MishTaraCSupport, MishTaraBSupport, MishTaraASupport)
 SupportConvoEntry(Tara, Volran, VolranTaraCSupport, VolranTaraBSupport, VolranTaraASupport)
 
 SupportConvoEntry(Jerry, Lyre, 0, JerryLyreBSupport, JerryLyreASupport)

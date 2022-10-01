@@ -155,4 +155,7 @@ SoundRoomSource(KingOfDragons_IntoTheCastleID,KingOfDragonsSource)
 //super smash bros brawl
 SoundRoomSource(SSBB_Tournament_PrepsID,SSBBSource)
 
+//runa does a thing
+SoundRoomSource(awaywithyou, RunaDoesAThingSource)
+
 WORD 0 0 // term

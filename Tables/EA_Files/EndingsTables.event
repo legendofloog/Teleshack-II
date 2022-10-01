@@ -264,12 +264,14 @@ SoloEndingTableEntry(Cadenza, CadenzaEnding)
 PairedEndingTableEntry(Mish,Takai,MishTakaiEnding)
 PairedEndingTableEntry(Mish,Ellerey,MishEllereyEnding)
 PairedEndingTableEntry(Mish,Tobie,MishTobieEnding)
+PairedEndingTableEntry(Mish, Tara, MishTaraEnding)
 SoloEndingTableEntry(Mish, MishEnding)
 
 PairedEndingTableEntry(Tobie, Takai, TobieTakaiEnding)
 SoloEndingTableEntry(Tobie, TobieEnding)
 
 PairedEndingTableEntry(Awa, Nikolas, AwaNikolasEnding)
+PairedEndingTableEntry(Awa, Zhara, AwaZharaEnding)
 SoloEndingTableEntry(Awa, AwaEnding)
 
 SoloEndingTableEntry(Faolan, FaolanEnding)
@@ -320,9 +322,8 @@ SoloEndingTableEntry(Milo,MiloEnding)
 //12
 PairedEndingTableEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_Ending)
 SoloEndingTableEntry(Tiberius, TiberiusEnding)
-PairedEndingTableEntry(Augur, Mink, MinkAugurEnding)
-//uncomment this when added
-//SoloEndingFlagTableEntry(Mink, MinkKwameEnding, 0x93)
+PairedEndingTableEntry(Mink, Augur, MinkAugurEnding)
+SoloEndingFlagTableEntry(Mink, MinkKwameEnding, 0x93)
 
 //12x
 SoloEndingTableEntry(Mantou, MantouEnding)
@@ -428,14 +429,6 @@ SoloEndingTableEntry(Mira, MiraEnding)
 
 PairedEndingTableEntry(BoroReal,Mira,MiraBoroEnding)
 SoloEndingTableEntry(BoroReal, BoroEnding)
-
-//Sussy
-
-
-//PairedEndingTableEntry(Ngondala, KwameReal, NgondalaKwameEnding)
-//PairedEndingTableEntry(Kofi,KwameReal,KofiKwameEnding)
-//PairedEndingTableEntry(CatrinReal, KwameReal, KwameCatrinEnding)
-//SoloEndingTableEntry(KwameReal, KwameEnding)
 
 // Lords
 PairedEndingTableEntry(Loewe, Asha, LoeweAshaEnding)
