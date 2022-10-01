@@ -54,9 +54,6 @@ BoroChampion:
 DraganaSniper:
 	#incbin "./_palettes/DraganaSniper.lzpal" 
 
-DraganaDeadlord:
-	#incbin "./_palettes/DraganaDeadlord.lzpal" 
-
 RaschwitzBowArmor:
 	#incbin "./_palettes/RaschwitzBowArmor.lzpal" 
 
@@ -176,9 +173,6 @@ RashidSniper:
 
 HamdiHalberdier:
 	#incbin "./_palettes/HamdiHalberdier.lzpal" 
-
-HamdiRealHalberdier:
-	#incbin "./_palettes/HamdiRealHalberdier.lzpal" 
 
 ColossusWarrior:
 	#incbin "./_palettes/ColossusWarrior.lzpal" 
@@ -582,21 +576,6 @@ KwameDarkBishop:
 AthanDarkBishop:
 	#incbin "./_palettes/AthanDarkBishop.lzpal" 
 
-BardTweak:
-	#incbin "./_palettes/BardTweak.lzpal" 
-
-ChampionTweak:
-	#incbin "./_palettes/ChampionTweak.lzpal" 
-
-HunterTweak:
-	#incbin "./_palettes/HunterTweak.lzpal" 
-
-FalcoTweak:
-	#incbin "./_palettes/FalcoTweak.lzpal" 
-
-GoldKnightTweak:
-	#incbin "./_palettes/GoldKnightTweak.lzpal" 
-
 BuldakThief:
 	#incbin "./_palettes/BuldakThief.lzpal" 
 
@@ -633,33 +612,24 @@ HornetArchKnight:
 FaolanGoldKnight:
 	#incbin "./_palettes/FaolanGoldKnight.lzpal" 
 
-VinnyNoble:
-	#incbin "./_palettes/VinnyNoble.lzpal" 
+FaolanDismounted:
+	#incbin "./_palettes/FaolanDismounted.lzpal" 
 
-CephalidBerserker:
-	#incbin "./_palettes/CephalidBerserker.lzpal" 
+FaolanGKDismounted:
+	#incbin "./_palettes/FaolanGKDismounted.lzpal" 
 
-MasalaPaladin:
-	#incbin "./_palettes/MasalaPaladin.lzpal" 
+TiberiusMKDismounted:
+	#incbin "./_palettes/TiberiusMKDismounted.lzpal" 
 
-MasalaDismounted:
-	#incbin "./_palettes/MasalaDismounted.lzpal" 
+BardTweak:
+	#incbin "./_palettes/BardTweak.lzpal" 
 
-TemurWarrior:
-	#incbin "./_palettes/TemurWarrior.lzpal" 
+ChampionTweak:
+	#incbin "./_palettes/ChampionTweak.lzpal" 
 
-SultaiThiefFighter:
-	#incbin "./_palettes/SultaiThiefFighter.lzpal" 
+HunterTweak:
+	#incbin "./_palettes/HunterTweak.lzpal" 
 
-DartNoble:
-	#incbin "./_palettes/DartNoble.lzpal" 
-
-TheimonDismounted:
-	#incbin "./_palettes/TheimonDismounted.lzpal" 
-
-DanuWarrior:
-	#incbin "./_palettes/DanuWarrior.lzpal" 
-
-EithaSniper:
-	#incbin "./_palettes/EithaSniper.lzpal" 
+FalcoTweak:
+	#incbin "./_palettes/FalcoTweak.lzpal" 
 

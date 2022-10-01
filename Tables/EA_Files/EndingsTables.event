@@ -117,6 +117,9 @@ EndingTitleTableEntry(Alena,AlenaTitle)
 EndingTitleTableEntry(Varga,VargaTitle)
 EndingTitleTableEntry(Delilah,DelilahTitle)
 
+EndingTitleTableEntry(Alex,AlexTitle)
+EndingTitleTableEntry(Axel,AxelTitle)
+
 EndingTitleTableEntry(Filone,FiloneTitle)
 EndingTitleTableEntry(Zwieback,ZwiebackTitle)
 
@@ -142,11 +145,13 @@ EndingTitleTableEntry(Meldan,MeldanTitle)
 EndingTitleTableEntry(Jenny,JennyTitle)
 
 EndingTitleTableEntry(Valse, ValseTitle)
+EndingTitleTableEntry(Hornet, HornetTitle)
 
 EndingTitleTableEntry(Ichwep, IchwepTitle)
 EndingTitleTableEntry(Milo, MiloTitle)
 
 EndingTitleTableEntry(Tiberius, TiberiusTitle)
+EndingTitleTableEntry(Mink, MinkTitle)
 
 EndingTitleTableEntry(Ellerey, EllereyTitle)
 EndingTitleTableEntry(Takai, TakaiTitle)
@@ -167,13 +172,17 @@ EndingTitleTableEntry(Asha, AshaTitle)
 EndingTitleTableEntry(Rashid, RashidTitle)
 EndingTitleTableEntry(Kofi, KofiTitle)
 
+EndingTitleTableEntry(Nikolas, NikolasTitle)
+
 EndingTitleTableEntry(Shaw, ShawTitle)
+EndingTitleTableEntry(Sera, SeraTitle)
 
 EndingTitleTableEntry(Tao, TaoTitle)
 EndingTitleTableEntry(Ojasvi, OjasviTitle)
 EndingTitleTableEntry(Zhara, ZharaTitle)
 EndingTitleTableEntry(Groto, GrotoTitle)
 EndingTitleTableEntry(Apsis, ApsisTitle)
+EndingTitleTableEntry(Joie, JoieTitle)
 
 EndingTitleTableEntry(Volran,VolranTitle)
 EndingTitleTableEntry(Tara, TaraTitle)
@@ -185,6 +194,7 @@ EndingTitleTableEntry(Ngondala, NgondalaTitle)
 EndingTitleTableEntry(CatrinReal, CatrinTitle)
 
 EndingTitleTableEntry(TrajanReal, TrajanTitle)
+EndingTitleTableEntry(Locke, LockeTitle)
 
 EndingTitleTableEntry(EliasReal, EliasTitle)
 EndingTitleTableEntry(BoroReal,BoroTitle)
@@ -196,6 +206,7 @@ EndingTitleTableTerminator
 ALIGN 4
 NewEndingsTable:
 PairedEndingTableEntry(Iskra,Emil,IskraEmilEnding)
+PairedEndingTableEntry(Iskra, Tiberius, IskraTiberiusEnding)
 SoloEndingTableEntry(Iskra, IskraEnding)
 
 PairedEndingTableEntry(Emil,Varga, EmilVargaEnding)
@@ -221,9 +232,11 @@ SoloEndingTableEntry(Delilah,DelilahEnding)
 PairedEndingTableEntry(Alex, Mantou,AlexMantouEnding)
 PairedEndingTableEntry(Alex, Faolan, AlexFaolanEnding)
 PairedEndingTableEntry(Alex, Axel, Axel_Alex_Ending)
+SoloEndingTableEntry(Alex, AlexEnding)
 
 PairedEndingTableEntry(Axel, Iberis, Axel_Iberis_Ending)
 PairedEndingTableEntry(Axel, Pelecaye, Axel_Pelecaye_Ending)
+SoloEndingTableEntry(Axel, AxelEnding)
 
 //4
 PairedEndingTableEntry(Filone, Zwieback, FiloneZwiebackEnding)
@@ -257,6 +270,7 @@ PairedEndingTableEntry(Tobie, Takai, TobieTakaiEnding)
 SoloEndingTableEntry(Tobie, TobieEnding)
 
 PairedEndingTableEntry(Awa, Nikolas, AwaNikolasEnding)
+SoloEndingTableEntry(Awa, AwaEnding)
 
 SoloEndingTableEntry(Faolan, FaolanEnding)
 

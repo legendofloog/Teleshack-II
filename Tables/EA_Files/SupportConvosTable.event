@@ -30,7 +30,7 @@ SupportConvoEntry(Mira, TrajanReal, 0, 0, MiraTrajanASupport)
 
 SupportConvoEntry(Iskra, Loewe, 0, LoeweIskraBSupport, LoeweIskraASupport) 
 SupportConvoEntry(Iskra, Mira, 0, MiraIskraBSupport, MiraIskraASupport) 
-SupportConvoEntry(Iskra, Tiberius, 0, 0, 0)
+SupportConvoEntry(Iskra, Tiberius, IskraTiberiusCSupport, IskraTiberiusBSupport, IskraTiberiusASupport)
 SupportConvoEntry(Iskra, Emil, IskraEmilCSupport, IskraEmilBSupport, IskraEmilASupport)
 
 SupportConvoEntry(Emil, Cleo, CleoEmilCSupport, CleoEmilBSupport, CleoEmilASupport)  
@@ -157,7 +157,7 @@ SupportConvoEntry(Mink, Cadenza, 0, 0, 0)
 SupportConvoEntry(Mink, Augur, MinkAugur_C, MinkAugur_B, MinkAugur_A)
 
 SupportConvoEntry(Tiberius, Mira, 0, 0, 0)
-SupportConvoEntry(Tiberius, Iskra, 0, 0, 0)
+SupportConvoEntry(Tiberius, Iskra, IskraTiberiusCSupport, IskraTiberiusBSupport, IskraTiberiusASupport)
 SupportConvoEntry(Tiberius, Ojasvi, Tiberius_Ojasvi_C, Tiberius_Ojasvi_B, Tiberius_Ojasvi_A)
 
 SupportConvoEntry(Ellerey, Darby, DarbyEllereyC, DarbyEllereyB, DarbyEllereyA)

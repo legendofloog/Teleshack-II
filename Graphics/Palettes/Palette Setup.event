@@ -72,10 +72,6 @@
 	setPalette(17,DraganaSniper)
 	setCBSP(17,Dragana, 3, Sniper_F)
 
-// DraganaDeadlord
-	setPalette(17,DraganaDeadlord)
-	setCBSP(17,Eitha, 3, Sniper_F)
-
 // RaschwitzBowArmor
 	setPalette(18,RaschwitzBowArmor)
 	setCBSP(18,Raschwitz_Ch1, 4, BowArmor)
@@ -235,10 +231,6 @@
 // HamdiHalberdier
 	setPalette(57,HamdiHalberdier)
 	setCBSP(57,Hamdi, 1, Halberdier)
-
-// HamdiRealHalberdier
-	setPalette(57,HamdiRealHalberdier)
-	setCBSP(57,HamdiReal, 1, Halberdier)
 
 // ColossusWarrior
 	setPalette(58,ColossusWarrior)
@@ -494,11 +486,11 @@
 
 // JennyRookKnight
 	setPalette(121,JennyRookKnight)
-	setCBSP(121,Jenny, 1, DukeKnight)
+	setCBSP(121,Jenny, 1, RookKnight)
 
 // JennyRookKnightDismounted
 	setPalette(122,JennyRookKnightDismounted)
-	setCBSP(122,Jenny, 2, DukeKnight_Dismounted)
+	setCBSP(122,Jenny, 2, RookKnight_Dismounted)
 
 // JennyGoldKnight
 	setPalette(123,JennyGoldKnight)
@@ -774,26 +766,6 @@
 	setPalette(191,AthanDarkBishop)
 	setCBSP(191,Athanasius, 1, DarkBishop)
 
-// BardTweak
-	setGenericPalette(0xE1,BardTweak)
-	setGenericPalette( 0xAC,BardTweak)
-
-// ChampionTweak
-	setGenericPalette(0x3E,ChampionTweak)
-	setGenericPalette( 0x3F,ChampionTweak)
-
-// HunterTweak
-	setGenericPalette(0x40,HunterTweak)
-
-// FalcoTweak
-	setGenericPalette(0x68,FalcoTweak)
-	setGenericPalette( 0x69,FalcoTweak)
-
-// GoldKnightTweak
-	setGenericPalette(0xd6,GoldKnightTweak)
-	setGenericPalette(0xd8,GoldKnightTweak)
-	setGenericPalette(0xd9,GoldKnightTweak)
-
 // BuldakThief
 	setPalette(192,BuldakThief)
 	setCBSP(192,Buldak, 1, Thief)
@@ -842,42 +814,29 @@
 	setPalette(203,FaolanGoldKnight)
 	setCBSP(203,Faolan, 3, GoldKnight)
 
-// VinnyNoble
-	setPalette(204,VinnyNoble)
-	setCBSP(204,Vinny, 1, Noble)
+// FaolanDismounted
+	setPalette(204,FaolanDismounted)
+	setCBSP(204,Faolan, 2, RookKnight_Dismounted)
 
-// CephalidBerserker
-	setPalette(205,CephalidBerserker)
-	setCBSP(205,Cephalid, 1, Berserker)
+// FaolanGKDismounted
+	setPalette(205,FaolanGKDismounted)
+	setCBSP(205,Faolan, 4, GoldKnight_Dismounted)
 
-// MasalaPaladin
-	setPalette(206,MasalaPaladin)
-	setCBSP(206,Masala, 1, Paladin)
+// TiberiusMKDismounted
+	setPalette(206,TiberiusMKDismounted)
+	setCBSP(206,Tiberius, 2, MasterKnight_Dismounted)
 
-// MasalaDismounted
-	setPalette(207,MasalaDismounted)
-	setCBSP(207,Masala, 2, Paladin_Dismounted)
+// BardTweak
+	setGenericPalette(0xE1,BardTweak)
+	setGenericPalette( 0xAC,BardTweak)
 
-// TemurWarrior
-	setPalette(208,TemurWarrior)
-	setCBSP(208,Temur, 1, Warrior)
+// ChampionTweak
+	setGenericPalette(0x3E,ChampionTweak)
+	setGenericPalette( 0x3F,ChampionTweak)
 
-// SultaiThiefFighter
-	setPalette(209,SultaiThiefFighter)
-	setCBSP(209,Sultai, 1, ThiefFighter)
+// HunterTweak
+	setGenericPalette(0x40,HunterTweak)
 
-// DartNoble
-	setPalette(210,DartNoble)
-	setCBSP(210,Dart, 1, Noble_F)
-
-// TheimonDismounted
-	setPalette(211,TheimonDismounted)
-	setCBSP(211,Theimon, 1, Paladin_Dismounted)
-
-// DanuWarrior
-	setPalette(212,DanuWarrior)
-	setCBSP(212,Danu, 1, Warrior)
-
-// EithaSniper
-	setPalette(213,EithaSniper)
-	setCBSP(213,EithaReal, 1, Sniper_F)
+// FalcoTweak
+	setGenericPalette(0x68,FalcoTweak)
+	setGenericPalette( 0x69,FalcoTweak)
