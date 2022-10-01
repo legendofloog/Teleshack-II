@@ -12,10 +12,10 @@ ORG 0xA173EC
 #incbin "dmp/TradeWindowTop.tmx.dmp"
 
 ORG 0x5A09A8
-#incbin "dmp/BattleForecast.tmx.dmp"
+#incbin "dmp/BattleForecastEnemy.tmx.dmp"
 
 ORG 0x5A0AEC
-#incbin "dmp/BattleForecastTall.tmx.dmp"
+#incbin "dmp/BattleForecastTallEnemy.tmx.dmp"
 
 ORG 0xA1C8B4
 #incbin "dmp/UnitMenu.tmx.dmp"
