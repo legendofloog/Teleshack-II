@@ -66,6 +66,8 @@
 
 #include "DynamicPortraits/DynamicPortraitsInstaller.event"
 
+#include "AddFlagByCharacterED/Installer.event"
+
 // thief vision set to 0
 PUSH
 ORG 0x0178C2
