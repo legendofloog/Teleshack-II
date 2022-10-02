@@ -399,6 +399,7 @@ Text(Ch12BeginningScene9D)
 SetBackground(0x20)//nighttime forest different from 0x18
 Music(Nighttime)
 Text(Ch12BeginningScene10)
+FADI 15
 LOMA Chapter12
 MountAll
 LOAD 1 MinkJoin
