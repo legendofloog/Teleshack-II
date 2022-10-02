@@ -33,7 +33,6 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-Seize(1,6)
 Seize(0x11,RescueAugur,11,4)
 Chest(LightRune,10,6)
 Chest(KnightProof,12,6)
