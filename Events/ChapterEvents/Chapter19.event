@@ -42,7 +42,6 @@ END_MAIN
 LocationBasedEvents:
 Chest(Lamfada,29,29)
 Chest(EarthGreataxe,20,7)
-Seize(46,16)
 END_MAIN
 
 MiscBasedEvents:
