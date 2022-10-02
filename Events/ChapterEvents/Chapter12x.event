@@ -542,16 +542,16 @@ FADI 5
 SHOWUNIT Loewe
 FadeOutMusic
 FOGVISION 0
-CHECK_ALIVE Tiberius
-BEQ 27 s0 sC
-	LOAD1 1 TiberiusDummy
-	ENUN
-LABEL 27
 SetUnitFullHP(Loewe)
 RemoveAll
 HIDEUNIT Cleo
 LOMA Ch12xInterlude
 LOAD1 1 GreenUnits
+CHECK_ALIVE Tiberius
+BEQ 27 s0 sC
+	LOAD1 1 TiberiusDummy
+	ENUN
+LABEL 27
 CAMERA_CENTERED [14,1]
 STAL 60
 FADU 5

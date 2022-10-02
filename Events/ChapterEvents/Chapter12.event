@@ -31,12 +31,14 @@ PointerList:
 
 // 22 - turned on with tiberius death quote/when he is defeated
 // 25 - tiberius deathquote AFEV
+// 27 - turned on when tiberius is captured
 
 
 TurnBasedEvents:
 TurnEventPlayer(24,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
 TurnEventPlayer(0,ThiefAntiTurtle,3) //maybe make this guy show up a turn earlier? I don't mind him being really hard to get
+TurnEventPlayer(0,TimeWarning,7)
 TurnEventPlayer(0,TiberiusCidorTalk,1)
 END_MAIN
 
@@ -122,7 +124,7 @@ MinkJoin:
   UNIT
   
 IndoorEnemy:
-  UNIT Tiberius Noble Cidor Level(9,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
+  UNIT Tiberius Noble Cidor Level(9,Enemy,False) [31,1] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI //4,7
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe,PureWater] AttackInRangeAI
@@ -197,7 +199,7 @@ ThiefSpawn:
   UNIT
   
 EithaSpawn:
-  UNIT Eitha Sniper_F 0x0 Level(1,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
+  UNIT Eitha Sniper_F 0x0 Level(1,Enemy,False) [30,1] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI //3,16
   UNIT
   
 MysterySpawn:
@@ -500,8 +502,10 @@ ENDA
 
 EndingScene:
 FADI 15
-CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
+CHECK_EVENTID 27
 BEQ 2 s0 sC
+//CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
+//BEQ 2 s0 sC
 	//Text(Ch12PlaceholderText)
 	RemoveAllItem(Darkbrand)
 	LOAD 1 TiberiusEndSceneGroup
@@ -629,6 +633,7 @@ ENDA
 TiberiusDefeat:
 CHECK_EXISTS Tiberius
 BEQ 4 s0 sC
+	ENUT 27
     Text(TiberiusCaptureQuote)
 	Text(TiberiusCaptured)
     NoFade
@@ -636,4 +641,9 @@ BEQ 4 s0 sC
 LABEL 4
 Text(TiberiusCh12DeathQuote)
 NoFade
+ENDA
+
+TimeWarning:
+Text(Ch12Turn7)
+CenterTextbox(Bandage)
 ENDA
