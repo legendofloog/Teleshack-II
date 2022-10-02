@@ -1,15 +1,15 @@
 ## SD_Culling
-Culling: If foe's HP is full, deals[N]
-25% of foe's max HP as extra damage.[X]
+Culling: If foe's HP is full, adds[N]
+25% of foe's max HP to unit's Atk.[X]
 
 ## SD_Headshot
-Headshot: If foe's HP is not full, deals[N]
-50% of foe's missing HP as extra damage.[X]
+Headshot: Adds 50% of foe's[N]
+missing HP to unit's Atk.[X]
 
-## SD_Radiance
-Radiance: Leina empowers allies she heals.[N]
-Her healing and damage actions heal all[N]
-empowered allies by 10 + Mag.[X]
+## SD_Radiance ^
+Radiance: Leina's heals make allies Radiant.[N]
+Her healing and attacks heal Radiant allies[N]
+by 10 + Mag (unless ally is being healed by Leina).[X]
 
 ## SD_Nightcaller
 Dusk Bringer: Cromar's dark pact calls[N]
@@ -61,8 +61,7 @@ of magical attacks.[X]
 
 ## SD_AzuriumMight
 Azurium Might: This unit can cross[N]
-water tiles with no penalty. +3 res.[N]
-Power: Summon rain that hinders fliers.[X]
+water tiles with no penalty. +3 res.[X]
 
 ## SSN_AzuriumMight
 Azurium[X]
@@ -163,7 +162,7 @@ Whisperwind: Can canto after attacking[N]
 with wind magic. [X]
 
 ## SD_FarShock
-Far Shock: Thunder magic get's -10 hit[N]
+Far Shock: Thunder magic gets -10 hit[N]
 and +1 range. [X]
 
 ## SD_DragonBreath

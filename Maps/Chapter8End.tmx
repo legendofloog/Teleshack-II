@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="15" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <properties>
+  <property name="Anims1" value="ThraciaCastleTileAnimationsID"/>
+  <property name="ChapterID" value="Chapter8"/>
+  <property name="Main" value=""/>
+  <property name="MapChangesID" value="Chapter8MapChanges"/>
+  <property name="MapID" value="Chapter8Map"/>
+  <property name="ObjectType" value="ThraciaCastleObjectID"/>
+  <property name="PaletteID" value="ThraciaCastlePaletteID"/>
+  <property name="TileConfig" value="ThraciaCastleMapchipConfigID"/>
+ </properties>
+ <tileset firstgid="1" source="Thracia_Castle.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="ThraciaCastleTileAnimationsID"/>
+   <property name="ChapterID" value="Chapter8End"/>
+   <property name="Main" value=""/>
+   <property name="MapChangesID" value="Chapter8EMapChanges"/>
+   <property name="MapID" value="Chapter8EMap"/>
+   <property name="ObjectType" value="ThraciaCastleObjectID"/>
+   <property name="PaletteID" value="ThraciaCastlePaletteID"/>
+   <property name="TileConfig" value="ThraciaCastleMapchipConfigID"/>
+  </properties>
+  <data encoding="csv">
+1007,983,984,984,984,984,984,984,984,984,984,984,984,985,1007,
+1007,983,984,919,1016,1016,1016,1016,1016,1016,1016,918,984,985,1007,
+1007,983,984,985,1007,1007,1007,1007,1007,1007,1007,983,984,985,1007,
+1007,983,984,985,1007,823,1006,1007,1007,823,1006,983,984,985,1007,
+1007,983,984,985,1007,977,1007,1007,1007,977,1007,983,984,985,1007,
+1007,1015,1016,1017,1007,1007,1007,1007,1007,1007,1007,1015,1016,1017,1007,
+1007,1007,1007,1007,1007,823,1006,1007,1007,823,1006,1007,1007,1007,1007,
+1007,1007,1007,1007,1007,977,1007,1007,1007,977,1007,1007,1007,1007,1007,
+1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,
+1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007,1007
+</data>
+ </layer>
+</map>

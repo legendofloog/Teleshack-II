@@ -28,13 +28,13 @@ LocationBasedEvents:
 Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
-//Chest(HeroRing,9,8)
+Chest(Elixir,9,8)
 DurabilityChest(GrowthScroll, AmserScroll,11,9)
 END_MAIN
 
 MiscBasedEvents:
 AFEV 8 MureibBetrayal 9
-DefeatBoss(EndingScene)
+DefeatBoss
 CauseGameOverIfLordDies 
 END_MAIN
 
@@ -219,6 +219,7 @@ ENUN
 CAMERA_CENTERED Mureib
 STAL 20
 CAMERA_CENTERED [10,1]
+MUSC FF4RedWingsID
 Text(Ch17_MureibBetrayalPart1)
 CAMERA_CENTERED Mureib
 Text(Ch17_MureibBetrayalPart2)
@@ -227,6 +228,7 @@ ENUN
 CAM1 [10,1]
 FlashCursor(10,1,30)
 Text(Ch17_KwameSoEpic)
+ENUT 4
 NoFade
 ENDA
 
@@ -263,15 +265,25 @@ NoFade
 ENDA
 
 BeginningScene:
-FADU 15
 SetBackground(CastleHallway)
-FADI 15
-Text(Ch17_RadnitzIntrigue)
+CHECK_ALIVE Nora //this needs a conditional - loog
+BEQ 776 s0 sC
+	CHECK_ALIVE Hans
+	BEQ 776 s0 sC
+		CHECK_ALIVE Iberis
+		BEQ 776 s0 sC
+		MUSC FFTAnxiety
+		Text(Ch17_KorovaiIntrigue)
+		GOTO 777
+LABEL 776
+//space here dedicated for if one of them is dead and alt scene is needed
+LABEL 777
 FADI 15
 LOMA Chapter17Council
 DismountAll
 LOAD1 1 CouncilMembers
 ENUN
+FadeOutMusic
 FADU 15
 STAL 15
 LOAD1 1 CouncilLoewe
@@ -282,16 +294,17 @@ ENUN
 STAL 10
 FADI 5
 SetBackground(BuildingInterior)
-FADU 15
+MUSC FE5_InTheBattle_Fate
 Text(Ch17_Loewe_Decision)
 FADI 15
 RemoveAll
 SetBackground(BlackBackground)
 FADU 15
+FadeOutMusic
 BROWNBOXTEXT Ch17_Telyada[8,8]
 FADI 15
 SetBackground(0x0D)
-FADU 15
+MUSC Rovers
 Text(Ch17_ReturnToMureib)
 FADI 15
 LOMA Chapter17
@@ -301,6 +314,7 @@ LOAD1 1 NPCUnits
 ENUN
 CAMERA_CENTERED [14,29]
 FADU 15
+FadeOutMusic
 BROWNBOXTEXT Ch17_FortKasira[8,8]
 LOAD1 1 CutsceneLords
 ENUN
@@ -331,11 +345,13 @@ ENUN
 ENUN
 MOVE 15 Mureib2 [15,19]
 ENUN
+MUSC Rovers
 Text(Ch17_MureibPhilosophyDebatePart1)
 MOVE 20 KwameReal [15,16]
 MOVE 25 Loewe [15,18]
 ENUN
 Text(Ch17_MureibPhilosophyDebatePart2)
+FadeOutMusic
 MOVE 5 Loewe [15,17]
 ENUN
 Text(Ch17_MureibPhilosophyDebatePart3)
@@ -348,6 +364,7 @@ ENUN
 ENUN
 KILL 0xAB
 AWAIT_KILL 0xAB
+MUSC FF5_Nostalgia
 TEXTSTART
 TEXTSHOW Ch17_Angery
 TEXTEND
@@ -362,8 +379,10 @@ ENUN
 STAL 15
 RemoveAll
 LOMA Chapter17Duel
+DismountSingleUnit(Loewe)
 LOAD1 1 DuelLoewe
 ENUN
+DismountSingleUnit(Loewe)
 MOVE 3 Loewe [6,6]
 FADU 15
 ENUN
@@ -372,18 +391,22 @@ ENUN
 TEXTSTART
 TEXTSHOW Ch17_Confrontation
 TEXTEND
+DismountSingleUnit(Cleo)
 LOAD1 1 DuelCleo
 MOVE 5 Cleo [6,6]
 ENUN
+DismountSingleUnit(Cleo)
 TEXTCONT
 TEXTEND
 REMA
+FadeOutMusic
 MOVE 5 Loewe [10,6]
 ENUN
 STAL 120
 CUSE Loewe
 STAL 120
 MOVE 5 Loewe [8,6]
+MUSC WindyDaySoundEffect
 Text(Ch17_DuelPart1)
 MOVE 15 Loewe [7,6]
 ENUN
@@ -407,35 +430,43 @@ MOVE 15 Cleo [6,6]
 MOVE 15 Loewe [7,6]
 ENUN
 Text(Ch17_DuelPart3)
+FadeOutMusic
 SetBackground(BlackBackground)
 _0x1A22
 TEXTSHOW Ch17_DuelText1
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText2
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText3
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText4
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText5
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText6
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 _0x1A22
 TEXTSHOW Ch17_DuelText7
 TEXTEND
 REMA
+SOUN SwordUnsheathingEffect
 SetBackground(BlackBackground)
 _0x1A22
 TEXTSHOW Ch17BlackScreenText
@@ -446,11 +477,15 @@ CUSA Loewe
 EraseBackground
 STAL 60
 MOVE 5 Cleo [4,6]
+MUSC CrimeHeartID
 Text(Ch17_DuelEnding)
 FADI 5
+FadeOutMusic
+STAL 10
 RemoveAll
 SetBackground(Boat)
 FADU 15
+MUSC FF5_Sealed_Away
 Text(Ch17_ChouwoujTease)
 MNC2 Chapter18
 NoFade

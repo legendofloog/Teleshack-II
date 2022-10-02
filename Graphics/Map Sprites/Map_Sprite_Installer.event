@@ -102,6 +102,36 @@ SeraphknightMoving:
 #incbin "Dmp/Pegasi (F) T2 Staff {Blademaster}-move.dmp"
 
 ALIGN 4
+Seraphknight_Dismounted_Standing:
+#incbin "Dmp/Lord (F) Hector Axe {Shin19}-stand.dmp"
+
+ALIGN 4
+Seraphknight_Dismounted_Moving:
+#incbin "Dmp/Lord (F) Hector Axe {Shin19}-walk.dmp"
+
+ALIGN 4
+LoeweStanding:
+#incbin "Dmp/Loewe_Dismounted_Standing(ArcherBias).dmp"
+ALIGN 4
+LoeweMoving:
+#incbin "Dmp/Loewe_Dismounted_Moving(ArcherBias).dmp"
+
+ALIGN 4
+Loewe_Dismounted_Dragonlord_Standing:
+#incbin "Dmp/LoeweT2.dmp"
+
+ALIGN 4
+Loewe_Dismounted_Dragonlord_Moving:
+#incbin "Dmp/LoeweT2Move.dmp"
+
+ALIGN 4
+CleoStanding:
+#incbin "Dmp/CleoStanding(ArcherBias).dmp"
+ALIGN 4
+CleoMoving:
+#incbin "Dmp/CleoMoving(ArcherBias).dmp"
+
+ALIGN 4
 PegasusRiderStanding:
 #incbin "Dmp/Pegasi (F) T1 Lance {IS}-stand.dmp"
 ALIGN 4
@@ -224,6 +254,10 @@ BrigandFMoving:
 #incbin "Dmp/Brigand (F) Axe {Skitty}-move.dmp"
 BrigandFStanding:
 #incbin "Dmp/Brigand (F) Axe {Skitty}-stand.dmp"
+
+ALIGN 4
+BrigandStanding:
+#incbin "Dmp/Brigand_M_Axe(Alusq).dmp"
 
 
 ALIGN 4
@@ -362,27 +396,7 @@ ALIGN 4
 LongBallistaStanding:
 #incbin "Dmp/Ballistician (U) {Aruka, Kenpuhu}-stand.dmp"
 
-ALIGN 4
-LoeweStanding:
-#incbin "Dmp/Loewe_Dismounted_Standing(ArcherBias).dmp"
-ALIGN 4
-LoeweMoving:
-#incbin "Dmp/Loewe_Dismounted_Moving(ArcherBias).dmp"
 
-ALIGN 4
-CleoStanding:
-#incbin "Dmp/CleoStanding(ArcherBias).dmp"
-ALIGN 4
-CleoMoving:
-#incbin "Dmp/CleoMoving(ArcherBias).dmp"
-
-ALIGN 4
-Loewe_Dismounted_Dragonlord_Standing:
-#incbin "Dmp/LoeweT2.dmp"
-
-ALIGN 4
-Loewe_Dismounted_Dragonlord_Moving:
-#incbin "Dmp/LoeweT2Move.dmp"
 
 ALIGN 4
 BluEliwoodStanding:
@@ -391,18 +405,6 @@ BluEliwoodStanding:
 ALIGN 4
 BluEliwoodMoving:
 #incbin "Dmp/Noble_Marth(Dominus_Vobiscum)-walk.dmp"
-
-ALIGN 4
-BrigandStanding:
-#incbin "Dmp/Brigand_M_Axe(Alusq).dmp"
-
-ALIGN 4
-Seraphknight_Dismounted_Standing:
-#incbin "Dmp/Lord (F) Hector Axe {Shin19}-stand.dmp"
-
-ALIGN 4
-Seraphknight_Dismounted_Moving:
-#incbin "Dmp/Lord (F) Hector Axe {Shin19}-walk.dmp"
 
 ALIGN 4
 DarkMageF_Standing:
@@ -435,3 +437,83 @@ AugurStanding:
 ALIGN 4
 AugurMoving:
 #incbin "Dmp/augur_walk(knabepicer).dmp"
+
+ALIGN 4
+EmperorStanding:
+#incbin "Dmp/Marshall (U) Sword {Nuramon}-stand.dmp"
+
+ALIGN 4
+EmperorMoving:
+#incbin "Dmp/Marshall (U) Sword {Nuramon}-walk.dmp"
+
+ALIGN 4
+ByelenStanding:
+#incbin "Dmp/Patriarch (M) {Unknown}-stand.dmp"
+
+ALIGN 4
+ByelenMoving:
+#incbin "Dmp/Patriarch (M) {Unknown}-move.dmp"
+
+ALIGN 4
+CherneStanding:
+#incbin "Dmp/Dark Druid (M) {IS}-stand.dmp"
+
+ALIGN 4
+CherneMoving:
+#incbin "Dmp/Dark Druid (M) {IS}-walk.dmp"
+
+ALIGN 4
+Dismounted_Sword_M_Walking:
+#incbin "Dmp/dismountedswordm (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Sword_M_Moving:
+#incbin "Dmp/dismountswordmmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Sword_F_Walking:
+#incbin "Dmp/dismountedswordf (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Sword_F_Moving:
+#incbin "Dmp/dismountswordfmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_M_Walking:
+#incbin "Dmp/dismountedlancem (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_M_Moving:
+#incbin "Dmp/dismountlancemmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_F_Walking:
+#incbin "Dmp/dismountedlancef (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Lance_F_Moving:
+#incbin "Dmp/dismountlancefmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_M_Walking:
+#incbin "Dmp/dismountedaxem (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_M_Moving:
+#incbin "Dmp/dismountedaxemmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_F_Walking:
+#incbin "Dmp/dismountedaxef (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Axe_F_Moving:
+#incbin "Dmp/dismountedaxefmove (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Bow_F_Walking:
+#incbin "Dmp/dismountedbowf (archerbias).dmp"
+
+ALIGN 4
+Dismounted_Bow_F_Moving:
+#incbin "Dmp/dismountbowfmove (archerbias).dmp"

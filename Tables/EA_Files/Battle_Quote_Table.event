@@ -26,11 +26,16 @@ UnspecifiedBattleConvo(Francis,Chapter8,12,FrancisBossQ)
 UnspecifiedBattleConvo(Wrathgar,Chapter9,9,WrathgarBossQ)
 UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
 UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
-SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
+
 SpecifiedBattleConvo(Eitha,Leina,Chapter12,9,Ch12EithaLeinaBossQuote)
 SpecifiedBattleConvo(Eitha,Cleo,Chapter12,18,Ch12EithaCleoBossQuote)
 SpecifiedBattleConvo(Eitha,Cleo,Chapter12,19,Ch12EithaLoeweBossQuote)
 UnspecifiedBattleConvo(Eitha,Chapter12,23,Ch12EithaBossQuote)
+SpecifiedBattleConvo(Cleo,Epony,Chapter11,25,Ch12xCleoEponyBattleQuote)
+SpecifiedBattleConvo(Cleo,Epony,Chapter11,26,Ch12xCleoEponyBattleQuote2)
+SpecifiedBattleConvo(Korovai,Cleo,Chapter11,27,Ch12xKorovaiEndingScene10CleoBattleQuote)
+SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
+UnspecifiedBattleConvo(Tao_Fake,Chapter12,0x0,Ch12xBeginningScene3Part2TaoBattleQuote)
 UnspecifiedBattleConvo(Tiberius,Chapter12,17,Ch12TiberiusBossQuote)
 UnspecifiedBattleConvo(Veniamin,Chapter13,1,VeniaminBossQ)
 UnspecifiedBattleConvo(Corundum,Chapter13,11,CorundumBossQ)
@@ -48,15 +53,18 @@ SpecifiedBattleConvo(Cidor,Cleo,Chapter10,0x16,Ch10CidorCleoBossQuote)
 SpecifiedBattleConvo(Cidor,Loewe,Chapter10,0x17,Ch10CidorLoeweBossQuote)
 SpecifiedBattleConvo(Cidor,Mira,Chapter10,0x18,Ch10CidorMiraBossQuote)
 SpecifiedBattleConvo(Cidor,Iskra,Chapter10,0x19,Ch10CidorIskraBossQuote)
-SpecifiedBattleConvo(Cidor,Radnitz,Chapter10,0x24,Ch10CidorRadnitzBossQuote)
+SpecifiedBattleConvo(Cidor,Korovai,Chapter10,0x24,Ch10CidorKorovaiBossQuote)
 UnspecifiedBattleConvo(Cidor,Chapter10,0x20,Ch10CidorBossQuote)
 UnspecifiedBattleConvo(Johanna,Chapter10,0x21,Ch10JohannaBossQuote)
 UnspecifiedBattleConvo(Elias,Chapter10,0x22,Ch10EliasBossQuote)
 SpecifiedBattleConvo(Mifan,Buldak,Chapter10,0x25,Ch10MifanBuldakBossQuote)
 SpecifiedBattleConvo(Mifan,Valse,Chapter10,0x26,Ch10MifanValseBossQuote)
 SpecifiedBattleConvo(Mifan,Hornet,Chapter10,0x27,Ch10MifanHornetBossQuote)
-SpecifiedBattleConvo(Mifan,Radnitz,Chapter10,0x28,Ch10MifanRadnitzBossQuote)
+SpecifiedBattleConvo(Mifan,Korovai,Chapter10,0x28,Ch10MifanKorovaiBossQuote)
 UnspecifiedBattleConvo(Mifan,Chapter10,0x23,Ch10MifanBossQuote)
+
+
+
 
 //Chapter15
 SpecifiedBattleConvo(Kassandra,Cleo,Chapter15Cutscene,0x0,Ch15KassandraVSCleo)
@@ -78,6 +86,9 @@ SpecifiedBattleConvo(Taraji,Ngondala,Chapter21,0x1C,BQTarajiNgondala)
 SpecifiedBattleConvo(Taraji,Sera,Chapter21,0x1D,BQTarajiSera)
 SpecifiedBattleConvo(Taraji,Leina,Chapter21,0x1E,BQTarajiLeina)
 UnspecifiedBattleConvo(Taraji,Chapter21,0x1,BQTaraji)
+
+// Chapter22
+UnspecifiedBattleConvo(Eleanor,Chapter22,15,Ch22EleanorVSText)
 
 // Chapter23
 SpecifiedBattleConvo(KassandraReal,Cleo,Chapter23,24,Ch23KassandraVSCleo)
@@ -102,11 +113,21 @@ SpecifiedBattleConvo(Byelen,Cleo,Chapter24,8,BQByelenCleo)
 SpecifiedBattleConvo(Byelen,Kwame,Chapter24,9,BQByelenKwame)
 SpecifiedBattleConvo(Byelen,Barod,Chapter24,10,BQByelenBarod)
 SpecifiedBattleConvo(Byelen,Catrin,Chapter24,11,BQByelenCatrin)
+SpecifiedBattleConvo(Byelen,Augur,Chapter24,17,BQByelenAugur)
 SpecifiedBattleConvo(HamdiReal,Loewe,Chapter24,12,BQHamdiLoewe)
 UnspecifiedBattleConvo(Theimon,Chapter24,13,BQTheimon)
 UnspecifiedBattleConvo(Danu,Chapter24,14,BQDanu)
 UnspecifiedBattleConvo(HamdiReal,Chapter24,15,BQHamdiReal)
 UnspecifiedBattleConvo(EithaReal,Chapter24,16,BQEithaReal)
 UnspecifiedBattleConvo(Byelen,Chapter24,1,BQByelen)
+
+// Chapter25
+SpecifiedBattleConvo(Cherne,Loewe,Chapter25,7,CherneLoeweBattleQuote)
+SpecifiedBattleConvo(Cherne,Cleo,Chapter25,8,CherneCleoBattleQuote)
+SpecifiedBattleConvo(Cherne,Athanasius,Chapter25,9,CherneAthanBattleQuote)
+SpecifiedBattleConvo(Cherne,TarajiReal,Chapter25,10,CherneTarajiBattleQuote)
+SpecifiedBattleConvo(Cherne,BarodReal,Chapter25,11,CherneBarodBattleQuote)
+SpecifiedBattleConvo(Cherne,Augur,Chapter25,13,CherneAugurBattleQuote)
+UnspecifiedBattleConvo(Cherne,Chapter25,12,CherneGenericBattleQuote)
 
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 // Terminator

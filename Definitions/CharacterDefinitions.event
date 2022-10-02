@@ -51,6 +51,7 @@
 #define Apsis 0x32
 #define Ojasvi 0x33
 #define Darcy 0x34
+#define Joie Darcy
 #define Groto 0x35
 #define Tao 0x36
 #define Zhara 0x37
@@ -72,12 +73,14 @@
 #define TarajiReal 0x47
 #define Athanasius 0x48
 #define Athansius 0x48
+#define Athan 0x48
 #define Asha 0x49
 
 
 
 // Chapter 1 Bosses
 #define Raschwitz_Ch1 0x55
+#define Boro_Ch1 0x4E
 // Chapter 2 Boss
 #define Tyr_Ch2 0x56
 // Chapter 2 generic guy for eventing battle purposes 
@@ -90,7 +93,7 @@
 #define Riggan 0x57
 // Chapter 7 Boss
 #define Yor 0x83
-#define Radnitz 0x84
+#define Korovai 0x84
 #define Mifan 0x85
 #define Wellworth 0x86
 #define Epony 0x87
@@ -155,8 +158,19 @@
 
 //Chapter 12 stuff
 #define Eitha 0x4B
-#define Mystery 0xD8
+#define Mystery 0xDA
 #define Prisoner 0xD9
+
+//Chapter 12x stuff
+#define Tao_Fake 0x4F
+#define Freyse2 0x50
+#define Freyse3 0x51
+#define Freyse4 0x52
+#define Liberator1 0xc2
+#define Liberator2 0xc3
+#define Liberator3 0xc4
+#define Liberator4 0xc5
+#define Liberator5 0xc6
 
 //Chapter 13 stuff
 #define Corundum 0x9B
@@ -179,8 +193,7 @@
 #define Phantom 0x8A
 #define Hamdi 0x4C
 #define Colossus 0x4D
-#define Boro_Ch16 0x4E
-#define Boro_Ch1 Boro_Ch16
+#define Boro_Ch16 0x67
 
 //Chapter 17 Stuff
 #define Alto 0xA8
@@ -209,6 +222,7 @@
 #define Cephalid 0xB2
 #define Temur 0xB3
 #define Sultai 0xB4
+#define Masala 0xB5
 #define Valere 0xB5
 #define Dart 0xB6
 #define DeathRattle 0xB7
@@ -244,6 +258,8 @@
 #define Shades 0xD7
 #define EndgameGenerics 0xD7
 #define Houvaina 0xBB
+#define MureibEndgame 0xD8
+#define MureibFinal 0xD8
 
 
 #define Bazba 0x48
@@ -253,7 +269,6 @@
 #define Murray 0x4C
 #define Tirado 0x4D
 #define Binks 0x4E
-#define Pablo 0x4F
 #define Macdaire 0x50
 #define Maelduin_boss 0x50
 #define Aias 0x51

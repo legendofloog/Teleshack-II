@@ -1,0 +1,34 @@
+
+EscapeQuoteEvent: //mostly ripped off from Sme's Escape
+CHECK_ACTIVE //returns active unit's id to sC
+SADD s2 sC s0 //moves this to s2
+GetActiveUnitEscapeQuote		//Returns active unit's escape quote text ID in slot 2
+TEXTSTART
+TEXTSHOW 0xFFFF		//display text ID in slot 2
+TEXTEND
+REMA
+
+//Unit flees map    //idk what this part actually does but may as well keep it
+//ENUT 0x23
+CHECK_ACTIVE 
+SADD 0xC2
+ASMC 0x790A4|1		//praise Teq
+NoFade
+ENDA
+
+FinalEscapeQuoteEvent: //mostly ripped off from Sme's Escape
+CHECK_ACTIVE //returns active unit's id to sC
+SADD s2 sC s0 //moves this to s2
+GetActiveUnitFinalEscapeQuote		//Returns active unit's escape quote text ID in slot 2
+TEXTSTART
+TEXTSHOW 0xFFFF		//display text ID in slot 2
+TEXTEND
+REMA
+
+//Unit flees map    //idk what this part actually does but may as well keep it
+//ENUT 0x23
+CHECK_ACTIVE 
+SADD 0xC2
+ASMC 0x790A4|1		//praise Teq
+NoFade
+ENDA

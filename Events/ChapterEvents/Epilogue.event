@@ -1,0 +1,74 @@
+EventPointerTable(EpilogueEvents, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+
+LocationBasedEvents:
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [2,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [4,16] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+//ripped from VBA
+LOMA 0x1 //loads arbitrary map
+MUSC GoldenSun_TLA_TheGoldenSunRisesID
+//REMOVEPORTRAITS
+//ASMC 0xB8175 //turn counts display; commented out until i figure out why it's breaking
+//STAL 1
+REMOVEPORTRAITS
+CALL 0xA0036C //Character Endings
+STAL 90
+//MUSC TheQuestForRudrasMines
+//ASMC 0xC4879 //credits roll; commented out until i actually add these images
+//STAL 90
+MNC2 PostgameHub
+NoFade
+ENDA
+
+EndingScene:
+NoFade
+ENDA

@@ -28,8 +28,10 @@
 	BYTE 0x0A
 	
 	//Repoint the TSA
+	/*
 	ORG $9C660
 	jumpToHack(Prep_Screen_New_TSA)
+	*/
 	
 	//Move stat numbers down and insert new ones as needed
 	ORG $9C2B0
@@ -220,6 +222,7 @@
 	Prep_Screen_Stat_Name_Table:
 	#incbin "PrepScreenStatNameTable.dmp"
 	
+	/*
 	ALIGN 4
 	Prep_Screen_New_TSA: //IMG: A1D8D0 TSA: A1BAE4 PAL: A1D850
 	#incbin "NewTSA.dmp"
@@ -228,6 +231,7 @@
 	ALIGN 4
 	New_TSA:
 	#incbin "TSA.dmp"
+	*/
 	
 	ALIGN 4
 	Prep_Screen_Mag_Number:
@@ -286,7 +290,7 @@
 	
 	ALIGN 4
 	Mag_Booster_Item_Ptr:
-	BYTE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x02 0x00 0x00
+	BYTE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x01 0x00 0x00
 	
 #else
 	ERROR "You're not assembling FE8 events!"

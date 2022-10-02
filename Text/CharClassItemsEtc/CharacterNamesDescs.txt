@@ -113,7 +113,7 @@ sister of Vetheim's abbey.[X]
 Hernandez[X]
  
 ## HernandezDesc
-A loathsome but incompetent[N]
+A contemptible but incompetent[N]
 brigand.[X]
 
 ## DraganaName
@@ -179,15 +179,15 @@ dead set on vengeance.[X]
 Veid[X]
 
 ## VeidDesc
-A mysterious dark merchants,[N]
-he sells dark enchants.[X]
+A mysterious dark merchant,[N]
+he sells dark enchantments.[X]
 
 ## BarodName
 Barod[X]
 
 ## BarodDesc
 The Fightmonger, master of the[N]
-arena, the undefeated legend.[X]
+arena. An undefeated legend.[X]
 
 ## ZeusName
 Zeus[X]
@@ -223,7 +223,7 @@ Pirate[X]
 
 ## Ch6PirateDesc
 Ruthless pirate under the[N]
-Banner of Draken.[X]
+banner of Draken.[X]
 
 ## DrakenName
 Draken[X]
@@ -271,15 +271,15 @@ Riggan[X]
 
 ## RigganDesc
 A magic prodigy who has[N]
-ascended Selessian military[N]
+ascended Selesian military[N]
 ranks. Brooding, yet egotistical.[X]
 
 ## GimmName
 Mish[X]
 
 ## GimmDesc
-Wants to be helpful, but really[N]
-needs on work on being reliable.[X]
+Wants to be helpful, but they really[N]
+need to work on being reliable.[X]
 
 ## TobieName
 Tobie[X]
@@ -345,10 +345,10 @@ Yor[X]
 A drunkard and a menace, but was[N]
 a vicious soldier in his prime.[X]
 
-## RadnitzName
-Radnitz[X]
+## KorovaiName
+Korovai[X]
 
-## RadnitzDesc
+## KorovaiDesc
 The heir of House Freyse, leading[N]
 a rebellion against Cythean rule.[X]
 
@@ -377,7 +377,7 @@ become a legendary swordsmaster.[X]
 Epony[X]
 
 ## EponyDesc
-The tactician to Lord Radnitz and the[N]
+The tactician to Lord Korovai and the[N]
 Freyse resistance, runs the show.[X]
 
 ## IberisName
@@ -398,7 +398,7 @@ a big dream and a big heart.[X]
 Nora[X]
 
 ## NoraDesc
-A retainer to Lord Radnitz[N]
+A retainer to Lord Korovai[N]
 of Freyse. Extremely loyal.[X]
 
 ## HansName
@@ -406,7 +406,7 @@ Hans[X]
 
 ## HansDesc
 A knight of Freyse. His past[N]
-has left him carefree and hedonistic.[X]
+has left him cynical and nihilistic.[X]
 
 ## HegeName
 Hege[X]
@@ -426,7 +426,7 @@ from Cythes.[X]
 Jenny[X]
 
 ## JennyDesc
-Senny's Sister. Suspicious of[N]
+Senny's sister. Suspicious of[N]
 the Cythean Empire.[X]
 
 ## MeldanName
@@ -441,7 +441,7 @@ Valse[X]
 
 ## ValseDesc
 An easy-going Freysian[N]
-fights for justice.[X]
+that fights for justice.[X]
 
 ## HornetName
 Hornet[X]
@@ -490,13 +490,15 @@ Vermillion Knight. Cleo's older brother.[X]
 Milo[X]
 
 ## MiloDesc
-PlaceholderText[X]
+A soldier in House Freyse's army.[N]
+Has a penchant for poor jokes.[X]
 
 ## IchwepName
 Ichwep[X]
 
 ## IchwepDesc
-PlaceHolderText[X]
+A soldier in House Freyse's army.[N]
+Dutiful and capable, but humorless.[X]
 
 ## AuroraName
 Aurora[X]
@@ -509,7 +511,7 @@ Suspects something is awry in Selese.[X]
 Eitha[X]
 
 ## EithaDesc
-Hero of the reclaimation wars;[N]
+[OpenQuote]Hero" of the Reclamation Wars;[N]
 wielder of the Daybreak.[N]
 Eternally calling out to her lover.[X]
 
@@ -741,7 +743,7 @@ Her fiery disposition strikes fear[N]
 despite her inexperience.[X]
 
 ## DarcyName
-Darcy[X]
+Joie[X]
 
 ## DarcyDesc
 Former knight of Freyse serving[N]
@@ -781,7 +783,7 @@ both fighting and money.[X]
 Shafaqat[X]
 
 ## ShafaqatDesc
-A former Selessian commander, now[N]
+A former Selesian commander, now[N]
 serving Cythes. Confident to a fault.[X]
 
 ## KofiName
@@ -946,13 +948,15 @@ skilled warriors who fight them.[X]
 Locke[X]
 
 ## LockeDesc
-Lock xd.[X]
+A mercenary from a backwater town.[N]
+Just wants to live somewhere else.[X]
 
 ## EleanorName
 Eleanor[X]
 
 ## EleanorDesc
-She is unit.[X]
+A coastguard from north Cythes.[N]
+Her talent is far beyond her post.[X]
 
 ## EliasRealDesc
 A former Knight of the Iris, he has[N]
@@ -1115,8 +1119,8 @@ scour the continent of humanity and[N]
 recreate the world as he desires.[X]
 
 ## TarajiRealDesc
-The Pitviper, who swings her blades[N]
-one last time, to carve her name[N]
+The Pitviper, swinging her blades[N]
+one last time to carve her name[N]
 into history.[X]
 
 ## AthanasiusName 
@@ -1146,6 +1150,14 @@ A member of the Sacred Arrow Rebels,[N]
 under the command of the Liberators.[N]
 Has a love for treasure and adventure.[X]
 
+## LiberatorName
+Liberator[X]
+
+## MureibEndgameDesc
+A Mahemeni archbishop and former[N]
+immortal. Now simply a dying wisp of[N]
+a man.[X]
+
 ## PrisonerName
 Prisoner[X]
 
@@ -1156,4 +1168,4 @@ A prisoner held by Duke Cidor.[X]
 ???[X]
 
 ## MysteryDesc
-.[X]
+ [X]

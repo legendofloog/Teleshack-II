@@ -1,8 +1,8 @@
 INLINE PromotionBranchTable,Class Selection 1,Class Selection 2
 Noble,MasterKnight,0x0
-MasterKnight,MasterKnight_F,0x0
+Noble_F,MasterKnight_F,0x0
+MasterKnight,0x0,0x0
 MasterKnight(F),0x0,0x0
-SwordKnight,0x0,0x0
 SwordKnight,ForrestKnight,0x0
 LanceKnight,DukeKnight,0x0
 AxeKnight,GreatKnight,0x0

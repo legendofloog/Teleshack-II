@@ -10,8 +10,8 @@ Flame Sword[X]
 # 0x35e KingSwordName
 King Sword[X]
 
-# 0x361 ParagonSwordName
-Paragon Swd.[X]
+# 0x361 ParagonSwordName ^
+Paragon Sword.[X]
 
 # 0x362 ThunderSwordName ^
 Thunder Sword[X]
@@ -43,8 +43,8 @@ Poleaxe[X]
 # 0x384 MasterAxeName
 Master Axe[X]
 
-# 0x385 MasterLanceName 
-Master Lnc[X]
+# 0x385 MasterLanceName ^
+Master Lance[X]
 
 # 0x386 ShortBowName
 Shortbow[X]

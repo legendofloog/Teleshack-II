@@ -10,3 +10,5 @@
 
 #include "EVENTSCRIPT_GetCaptureUnitID_20210109/CheckRescuedRescuer.event"
 
+#include "EVENTSCRIPT_GetSupport_20220520/GetSupport.event"
+

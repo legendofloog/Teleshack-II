@@ -148,4 +148,6 @@
 #define Devotee_M 0x7D
 #define Bard_Apsis 0x7E
 #define Sage_Apsis 0x7F
-
+#define Emperor 0x80
+#define ByelenClass 0x81
+#define CherneClass 0x82

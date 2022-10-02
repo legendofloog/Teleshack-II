@@ -16,8 +16,12 @@ TurnBasedEvents:
 TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 TurnEventEnemy(0,TomAndJerry,1,0x0)
 TurnEventPlayer(0,CaveGuys,2,0x0)
+TurnEventPlayer(0,MoreSussies,5,0x0)
+TurnEventPlayer(0,MoreSussies2,7,0x0)
+TurnEventPlayer(0,OMGThiefNooo,9,0x0)
 TurnEventPlayer(0,GoodbyeDespair,12,0x0)
 END_MAIN
+
 
 TomAndJerry:
 SpawnReinforcements(Amongitis)
@@ -40,7 +44,7 @@ NoFade
 	ENDA
 
 ClearSeraFlag:
-ENUF 0xEC
+ENUF 0x7C
 NoFade
 ENDA
 
@@ -58,6 +62,8 @@ Text(JerryRecruit)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
@@ -67,6 +73,8 @@ Text(JerryRecruitAnyone)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
@@ -76,6 +84,8 @@ Text(LyreRecruit)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
 NoFade
 ENDA
 
@@ -85,11 +95,28 @@ Text(LyreRecruitAnyone)
 MURE 0x2
 CUSA Jerry
 CUSA Lyre
+SetFatigue(Jerry,0)
+SetFatigue(Lyre,0)
+NoFade
+ENDA
+
+MoreSussies:
+SpawnReinforcements(TheGamers)
+NoFade
+ENDA
+
+MoreSussies2:
+SpawnReinforcements(TheGamers2)
+NoFade
+ENDA
+
+OMGThiefNooo:
+SpawnReinforcements(IMPOSTOR)
 NoFade
 ENDA
 
 MiscBasedEvents:
-	AFEV 0 EndingScene 0x6
+	DefeatAll
 	CauseGameOverIfLordDies
 	END_MAIN
 
@@ -183,8 +210,18 @@ UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [7,9] 0x0 0x0 0x0 0x0 [TrainedArc]
 UNIT C20Enemy Mage 0x0 Level(20,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [Fire] RangeAI
 	UNIT
 	
+TheGamers:
+UNIT C20Enemy Sage 0x0 Level(5,Enemy,True) [6,1] 0x0 0x0 0x0 0x0 [Thunder] ChargeAI
+UNIT C20Enemy Halberdier 0x0 Level(5,Enemy,True) [6,1] 0 0 1 REDA5R1 [TrainedPike] ChargeAI
+	UNIT
+	
+TheGamers2:
+UNIT C20Enemy ArchKnight 0x0 Level(6,Enemy,True) [20,11] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
+UNIT C20Enemy Warrior 0x0 Level(6,Enemy,True) [20,11] 0 0 1 REDA20R10 [TrainedAxe,TrainedArc] ChargeAI
+	UNIT
+	
 IMPOSTOR:
-UNIT C20Enemy Thief 0x0 Level(19,Enemy,True) [11,3] 0x0 0x0 0x0 0x0 [KillingEdge,ChestKey] ThiefAI
+UNIT C20Enemy Thief 0x0 Level(19,Enemy,True) [11,3] 0x0 0x0 0x0 0x0 [KillingEdge,ChestKey,ChestKey] ThiefAI
 	UNIT
 
 Traps1:
@@ -230,3 +267,4 @@ TextCont(Ch20Ending2,0xF) //battle fate
 	MNC2 Chapter21
 	NoFade
 	ENDA
+	

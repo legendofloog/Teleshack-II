@@ -45,10 +45,13 @@ LABEL 2
 Text(Ch18xApsisAcceptedDialogue)
 CUSA Apsis
 SetFatigue(Apsis,0)
+CamOn
 MOVE 15 Apsis [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Apsis
+CamOff
+CAMERA_CENTERED Cleo
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -73,10 +76,13 @@ LABEL 4
 Text(Ch18xOjasviAcceptedDialogue)
 CUSA Ojasvi
 SetFatigue(Ojasvi,0)
+CamOn
 MOVE 15 Ojasvi [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Ojasvi
+CamOff
+CAMERA_CENTERED Cleo
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -100,10 +106,13 @@ LABEL 6
 Text(Ch18xDarcyAcceptedDialogue)
 CUSA Darcy
 SetFatigue(Darcy,0)
+CamOn
 MOVE 15 Darcy [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Darcy
+CamOff
+CAMERA_CENTERED Cleo
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -128,10 +137,13 @@ LABEL 8
 Text(Ch18xGrotoAcceptedDialogue)
 CUSA Groto
 SetFatigue(Groto,0)
+CamOn
 MOVE 15 Groto [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Groto
+CamOff
+CAMERA_CENTERED Cleo
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -156,10 +168,13 @@ LABEL 10
 Text(Ch18xTaoAcceptedDialogue)
 CUSA Tao
 SetFatigue(Tao,0)
+CamOn
 MOVE 15 Tao [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Tao
+CamOff
+CAMERA_CENTERED Cleo
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -183,10 +198,13 @@ LABEL 15
 Text(Ch18xZharaAcceptedDialogue)
 CUSA Zhara
 SetFatigue(Zhara,0)
+CamOn
 MOVE 15 Zhara [21,5]
 ENUN
 SVAL s1 0x1
 SET_CONDITION Zhara
+CamOff
+CAMERA_CENTERED Cleo
 CALL CheckIfDoneSelecting
 NoFade
 ENDA
@@ -230,7 +248,21 @@ ENDA
 
 
 LocationBasedEvents:
+Vendor(Ch18xVendor,16,3)
+Armory(Ch18xArmory,23,9)
 END_MAIN
+
+ALIGN 4
+Ch18xVendor:
+	SHLI Thunder AlairsGale Elfire Lightning SpellMirror Flux Arachnid Jormungand
+	BYTE 0x0 0x0
+	ALIGN 4
+
+ALIGN 4
+Ch18xArmory:
+	SHLI SteelSword Longsword KillingEdge SteelLance Longlance MysticLance SteelAxe BattleAxe DevilAxe SteelBow Longbow GaleBow
+	BYTE 0x0 0x0
+	ALIGN 4
 
 MiscBasedEvents:
 AFEV 0 RefreshCleo 0
@@ -268,8 +300,189 @@ Units1:
 UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [6,8] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
+BeginningScene:
+COUNTER_SET 0 0
+DismountAll
+
+// Mahemen Scene
+LOMA Chapter17Council
+TILECHANGE 0
+CAMERA_CENTERED [0,3]
+LOAD1 1 TelyadaGroup
+ENUN 
+FADU 10
+BROWNBOXTEXT Ch18xTelyada[8,8]
+STAL 10
+LOAD1 1 KailaniGroup
+ENUN
+STAL 10
+FlashCursor(Kailani,30)
+FlashCursor(Ch2_Selese_Guy,30)
+STAL 10
+MUSC HarvestDance
+SetBackground(Port)
+Text(Ch18xBeginningScene1SacredArrowRebels)
+STAL 10
+
+// On the Boat Scene
+FADI 10
+FadeOutMusic
+RemoveAll
+LOMA Ch5xBoatScenes
+LOAD1 1 BoatGroup
+ENUN
+CAMERA_CENTERED Cleo
+FADU 10
+BROWNBOXTEXT Ch18xDecianSea[8,8]
+STAL 10
+FlashCursor(Cleo,60)
+MUSC WaterFlowingSoundEffect
+Text(Ch18xBeginningScene2OnDaBoat1)
+LOAD1 1 EliasGroup
+ENUN
+FlashCursor(Elias,60)
+Text(Ch18xBeginningScene2OnDaBoat2)
+STAL 10
+
+// Below Deck Scene
+FADI 5
+FadeOutMusic
+RemoveAll
+LOMA Ch18xBoatScenes
+LOAD1 2 BelowTheDeckGroup
+ENUN
+STAL 60
+FADU 5
+LOAD1 1 CleoGroupUnderBoat
+STAL 10
+LOAD1 1 EliasGroupUnderBoat
+ENUN
+STAL 10
+MUSC FE5_InTheBattle_Fate
+Text(Ch18xBeginningScene2OnDaBoat3)
+STAL 10
+MOVE 15 BoroReal [10,0]
+ENUN
+REMOVEUNIT BoroReal
+MOVE 15 Loewe [10,0]
+ENUN
+HIDEUNIT Loewe
+STAL 10
+Text(Ch18xBeginningScene2OnDaBoat4)
+STAL 10
+MOVE 10 KwameReal [6,2]
+ENUN
+HIDEUNIT KwameReal
+STAL 10
+Text(Ch18xBeginningScene2OnDaBoat5)
+STAL 10
+FadeOutMusic
+MOVE 10 Coralia [6,2]
+ENUN
+REMOVEUNIT Coralia
+STAL 10
+MOVE 15 Elias [7,5]
+ENUN
+STAL 10
+MUSC FF6AwakeningID
+Text(Ch18xBeginningScene2OnDaBoat6)
+STAL 10
+MOVE 15 Cleo [10,0]
+MOVE 15 Elias [10,0]
+STAL 10
+
+// Port Lazar Scene
+FADI 10
+FadeOutMusic
+STAL 60
+SHOWUNIT Loewe
+SHOWUNIT KwameReal
+ENUN
+RemoveAll
+LOMA Chapter18xInterlude
+CAMERA_CENTERED [6,8]
+LOAD1 1 TrajanGroup
+ENUN
+FADU 10
+BROWNBOXTEXT PortLazarText[8,8]
+STAL 10
+CamOn
+LOAD1 1 LoeweGroup2
+STAL 10
+LOAD1 1 CleoGroup2
+ENUN
+CAMERA_CENTERED Loewe
+FlashCursor(Loewe,30)
+FlashCursor(Cleo,30)
+STAL 10
+MUSC SheenaID
+Text(Ch18xBeginningScene3PortLazar1)
+STAL 10
+MOVE 15 Loewe [11, 5]
+ENUN
+STAL 10
+CameraCursor(Trajan)
+CamOff
+Text(Ch18xBeginningScene3PortLazar2)
+FADI 15
+STAL 120
+FADU 5
+Text(Ch18xBeginningScene3PortLazar3)
+STAL 10
+LOAD1 1 TaoGroup
+ENUN
+CameraCursor(Tao)
+MUSC FirstCampaignID
+Text(Ch18xBeginningScene3PortLazar4)
+STAL 10
+MOVE 15 Tao [21,5]
+ENUN
+STAL 10
+LOAD1 1 EliasGroup2
+STAL 10
+LOAD1 1 CoraliaGroup2
+ENUN
+FlashCursor(Elias,30)
+FlashCursor(Coralia,30)
+Text(Ch18xBeginningScene3PortLazar5)
+STAL 10
+MOVE 15 Elias [21,5]
+MOVE 15 Coralia [21,5]
+ENUN
+STAL 10
+Text(Ch18xBeginningScene3PortLazar6)
+STAL 10
+MOVE 15 Loewe [24,4]
+ENUN
+HIDEUNIT Loewe
+LOAD1 2 KwameGroup2
+ENUN
+CamOn
+MOVE 15 Cleo [11,5]
+MOVE 15 KwameReal [11,6]
+ENUN
+CAMERA_CENTERED Trajan
+FlashCursor(Cleo,30)
+FlashCursor(KwameReal,30)
+Text(Ch18xBeginningScene3PortLazar7)
+STAL 10
+FADI 10
+FadeOutMusic
+STAL 60
+RemoveAll
+HIDEUNIT KwameReal
+LOAD1 1 GreenUnits
+LOAD1 2 CleoInterludeGroup
+ENUN
+STAL 60
+FADU 5
+ENUT 0x84
+SilentGiveItem(FaithWindItem,Apsis)
+NoFade
+ENDA
+
 CleoInterludeGroup:
-UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [11,9] 0x0 0x0 0x0 0x0 [0x00]     NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(2,Ally,False) [11,5] 0x0 0x0 0x0 0x0 [0x00]     NoAI
 UNIT
 
 GreenUnits:
@@ -280,66 +493,189 @@ UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBla
 UNIT Tao Archer Loewe Level(10,NPC,False) [21,17] 0x0 0x0 0x0 0x0 [Taodao,RuneArrow]     NoAI
 UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
 UNIT Boro_Ch16 Champion Loewe Level(5,NPC,False) [22,13] 0x0 0x0 0x0 0x0 [MasterLance]     NoAI
-UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat, KnightProof] NoAI
+UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat] NoAI
 UNIT
 
-BeginningScene:
-COUNTER_SET 0 0
-DismountAll
-SetBackground(0xE)
-Text(Ch18xBeginningScene1SacredArrowRebels)
-SetBackground(0x8)
-MUSC WaterFlowingSoundEffect
-Text(Ch18xBeginningScene2OnDaBoat1)
-Text(Ch18xBeginningScene2OnDaBoat2)
-SetBackground(0x9)
-MUSC FE5_InTheBattle_Fate
-Text(Ch18xBeginningScene2OnDaBoat3)
-Text(Ch18xBeginningScene2OnDaBoat4)
-MUSC 0x7FFF
-Text(Ch18xBeginningScene2OnDaBoat5)
-MUSC FF6AwakeningID
-Text(Ch18xBeginningScene2OnDaBoat6)
-MUSC 0x7FFF
-SetBackground(0x8)
-Text(Ch18xBeginningScene3PortLazar1)
-SetBackground(0x7)
-MUSC Rovers
-Text(Ch18xBeginningScene3PortLazar2)
-FADI 15
-STAL 120
-FADU 5
-Text(Ch18xBeginningScene3PortLazar3)
-MUSC FirstCampaignID
-Text(Ch18xBeginningScene3PortLazar4)
-Text(Ch18xBeginningScene3PortLazar5)
-Text(Ch18xBeginningScene3PortLazar6)
-Text(Ch18xBeginningScene3PortLazar7)
-EraseBackground
-HIDEUNIT Loewe
-LOAD1 1 GreenUnits
-LOAD1 2 CleoInterludeGroup
-ENUN
-SilentGiveItem(FaithWindItem,Apsis)
-NoFade
-ENDA
+TelyadaGroup:
+UNIT Ch2_Selese_Guy HighPriest_F 0x0 Level(1,NPC,False) [11,8] 0 0 0 0 [0x0] NoAI //houvaina
+UNIT Mahemen Civilian_2 0x0 Level(1,NPC,False) [3,2] 0 0 0 0 [0x0] NoAI
+UNIT Mahemen Civilian 0x0 Level(1,NPC,False) [5,6] 0 0 0 0 [0x0] NoAI
+UNIT Mahemen Civilian_F 0x0 Level(1,NPC,False) [9,3] 0 0 0 0 [0x0] NoAI
+UNIT Mahemen Civilian_F_2 0x0 Level(1,NPC,False) [15,5] 0 0 0 0 [0x0] NoAI
+UNIT
+
+BoatGroup:
+UNIT Cleo 0x0 0x0 Level(1,Ally,False) [6,5] 0 0 0 0 [0x0] NoAI
+UNIT
+
+KailaniGroup:
+UNIT Kailani HighPriest_F 0x0 Level(1,NPC,False) [0,3] 0 0 1 REDA10R8 [0x0] NoAI 
+UNIT
+
+EliasGroup:
+UNIT Elias Dracoknight_Dismounted 0x0 Level(1,NPC,False) [9,8] 0 0 1 REDA7R5 [0x0] NoAI
+UNIT
+
+BelowTheDeckGroup:
+UNIT Loewe 0x0 0x0 Level(1,Ally,False) [7,5] 0 0 0 0 [0x0] NoAI
+UNIT BoroReal Champion 0x0 Level(1,NPC,False) [5,4] 0 0 0 0 [0x0] NoAI
+UNIT KwameReal 0x0 0x0 Level(1,Ally,False) [9,6] 0 0 0 0 [0x0] NoAI
+UNIT Coralia Noble_F 0x0 Level(1,NPC,False) [10,5] 0 0 0 0 [0x0] NoAI
+UNIT
+
+CleoGroupUnderBoat:
+UNIT Cleo 0x0 0x0 Level(1,Ally,False) [10,0] 0 0 1 REDA8R5 [0x0] NoAI
+UNIT
+
+EliasGroupUnderBoat:
+UNIT Elias Dracoknight_Dismounted 0x0 Level(1,NPC,False) [10,0] 0 0 1 REDA8R3 [0x0] NoAI
+UNIT
+
+LoeweGroup2:
+UNIT Loewe 0x0 0x0 Level(1,Ally,False) [6,8] 0 0 1 REDA9R11 [0x0] NoAI
+UNIT
+
+TrajanGroup:
+UNIT Trajan Hero Loewe Level(5,NPC,False) [11,3] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT
+
+TaoGroup:
+UNIT Tao Archer Loewe Level(10,NPC,False) [10,1] 0x0 0x0 1 REDA12R3 [Taodao,RuneArrow]     NoAI
+UNIT
+
+CleoGroup2:
+UNIT Cleo 0x0 0x0 Level(1,Ally,False) [6,8] 0 0 1 REDA9R12 [0x0] NoAI
+UNIT
+
+EliasGroup2:
+UNIT Elias Dracoknight_Dismounted 0x0 Level(1,NPC,False) [6,8] 0 0 1 REDA12R6 [0x0] NoAI
+UNIT
+
+CoraliaGroup2:
+UNIT Coralia Noble_F 0x0 Level(1,NPC,False) [6,8] 0 0 1 REDA10R6 [0x0] NoAI
+UNIT
+
+KwameGroup2:
+UNIT KwameReal 0x0 0x0 Level(1,Ally,False) [6,8] 0 0 1 REDA9R11 [0x0] NoAI
+UNIT
 
 EndingScene:
-SHOWUNIT Loewe
-SetBackground(0x4)
+STAL 10
+SetBackground(VillageRoadSunset)
+STAL 10
 MUSC Rovers
 Text(Ch18xEndingScene1AtThePort1)
+FADI 10
+RemoveAll
+SHOWUNIT Loewe
+SHOWUNIT KwameReal
+LOMA Chapter4
+TILECHANGE 1
+CAMERA_CENTERED [0,14]
+STAL 120
+FADU 10
+STAL 10
+BROWNBOXTEXT Ch18xHourLaterText[8,8]
+STAL 10
+LOAD1 2 KwameCleoGroupEndScene
+ENUN
+STAL 10
+FlashCursor(KwameReal,30)
+FlashCursor(Cleo,30)
 Text(Ch18xEndingScene2InTheClearing1)
-SetBackground(0x1F)
+CAMERA_CENTERED Loewe
+ENUN
+FlashCursor(Loewe,60)
+CAMERA_CENTERED Cleo
+ENUN
+STAL 10
+Text(Ch18xEndingScene2InTheClearing1_2)
+STAL 10
+CamOn
+MOVE 15 Cleo [8,7]
+MOVE 10 KwameReal [10,7]
+ENUN
+FadeOutMusic
+CamOff
+CAMERA_CENTERED Loewe
+FlashCursor(Loewe,60)
+STAL 10
 MUSC FF5_Nostalgia
 Text(Ch18xEndingScene2InTheClearing2)
+STAL 10
+MOVE_1STEP 5 Loewe 2
+ENUN
+FlashCursor(Loewe,30)
+SOUN SwordUnsheathingEffect
+STAL 60
+FAWI 10
+SOUN DivineWeaponEffect
+STAL 60
+FAWU 10
+STAL 10
 Text(Ch18xEndingScene2InTheClearing3)
+STAL 10
+SOUN SwordUnsheathingEffect
+STAL 60
+MOVE_1STEP 5 Loewe 3
+ENUN
+STAL 10
 Text(Ch18xEndingScene2InTheClearing4)
+MOVE 15 KwameReal [0,15]
+ENUN
+MOVE_1STEP 5 Cleo 1
+STAL 30
 Text(Ch18xEndingScene2InTheClearing5)
+STAL 10
+MOVE 20 Cleo [0,14]
+ENUN
+MOVE 5 Loewe [13,7]
+ENUN
+FlashCursor(Loewe,60)
+STAL 10
 Text(Ch18xEndingScene2InTheClearing6)
-SetBackground(0x15)
+MOVE 15 Loewe [1,14]
+STAL 10
+FADI 10
+ENUN
+RemoveAll
+FadeOutMusic
+LOMA Ch5xGechrysos
+LOAD1 1 EmperorGroup
+ENUN
+CAMERA_CENTERED [0,11]
+STAL 60
+FADU 10
+STAL 10
+BROWNBOXTEXT Ch5xImperialPalaceText[8,8]
+STAL 10
+CamOn
+LOAD1 1 LeonidasGroup
+ENUN
+CamOff
+STAL 10
+CAMERA_CENTERED [8,11]
+FlashCursor(Ch2_Selese_Guy,30)
+FlashCursor(Orfeas,30)
+STAL 10
 MUSC FF4RedWingsID
 Text(Ch18xEndingScene3OrfeasAndLeonidas)
+FADI 15
+ENUF 0x84
 MNC2 Chapter19
 NoFade
 ENDA
+
+KwameCleoGroupEndScene:
+UNIT Loewe 0x0 0x0 Level(1,Ally,False) [9,5] 0 0 0 0 [0x0] NoAI
+UNIT Cleo 0x0 0x0 Level(1,Ally,False) [0,14] 0 0 1 REDA2R13 [0x0] NoAI
+UNIT KwameReal 0x0 0x0 Level(1,Ally,False) [0,15] 0 0 1 REDA1R13 [0x0] NoAI
+UNIT
+
+EmperorGroup:
+UNIT Orfeas 0x0 0x0 Level(1,Enemy,False) [9,11] 0 0 0 0 [0x0] NoAI
+UNIT
+
+LeonidasGroup:
+UNIT Ch2_Selese_Guy GoldKnight 0 Level(1,Enemy,False) [0,11] 0 0 1 REDA7R11 [0x0] NoAI
+UNIT

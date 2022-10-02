@@ -18,10 +18,10 @@ TurnEventEnemy(0, YouSuck, 14)
 END_MAIN
 
 CharacterBasedEvents:
-CharacterEventBothWays(7, AxelTalkCh7, Axel, Radnitz)
-CharacterEventBothWays(8, AlexTalkCh7, Alex, Radnitz)
-CharacterEventBothWays(10, RadnitzTalkCh7, Loewe, Radnitz)
-CharacterEventBothWays(10, RadnitzTalkCh7, Cleo, Radnitz)
+CharacterEventBothWays(7, AxelTalkCh7, Axel, Korovai)
+CharacterEventBothWays(8, AlexTalkCh7, Alex, Korovai)
+CharacterEventBothWays(10, KorovaiTalkCh7, Loewe, Korovai)
+CharacterEventBothWays(10, KorovaiTalkCh7, Cleo, Korovai)
 CharacterEventBothWays(11, RecruitCh7, 0, Buldak)
 END_MAIN
 
@@ -125,7 +125,7 @@ UNIT Iberis MageArmor 0x0      Level(7,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunde
 UNIT
 
 GreenUnits:
-UNIT Radnitz DukeKnight Epony Level(1,NPC,False) [0,2] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT Korovai DukeKnight Epony Level(1,NPC,False) [0,2] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
 UNIT Epony Noble_F 0x0 Level(7,NPC,False) [1,1] 0x0 0x0 0x0 0x0 [ShortSword] BossHealAI
 UNIT Freyse LanceArmor          Epony Level(12,NPC,True) [0,5] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
 UNIT Freyse AxeArmor         Epony Level(12,NPC,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] BossHealAI
@@ -150,17 +150,17 @@ LOAD1 1 GreenUnits
 ENUN
 FADU 15
 MUSCFAST 0x1b
-CAMERA Radnitz
-CURSOR Radnitz
+CAMERA Korovai
+CURSOR Korovai
 STAL 60
 REMOVE_CURSORS
-MOVE 15 Radnitz [3, 3]
+MOVE 15 Korovai [3, 3]
 ENUN
-Text(RadnitzMifanText)
+Text(KorovaiMifanText)
 StartBattle 
 NormalDamage(0,15)
 EndAttack
-FIGHT_MAP Radnitz Mifan ShortLance 0
+FIGHT_MAP Korovai Mifan ShortLance 0
 MOVE 15 Mifan [5, 3]
 ENUN
 MOVE 15 TheGiant [4, 3]
@@ -168,11 +168,11 @@ ENUN
 StartBattle 
 CriticalHit(0,30)
 EndAttack
-FIGHT_MAP TheGiant Radnitz HandAxe 0 
+FIGHT_MAP TheGiant Korovai HandAxe 0 
 ENUN
-MOVE 15 Radnitz [0, 2]
+MOVE 15 Korovai [0, 2]
 ENUN
-Text(RadnitzEponyText)
+Text(KorovaiEponyText)
 CURSOR TheGiant
 STAL 60
 REMOVE_CURSORS
@@ -221,14 +221,14 @@ CUSA 23
 NoFade
 ENDA
 
-RadnitzTalkCh7:
+KorovaiTalkCh7:
 CHECK_EVENTID 9
 BEQ 1 s0 sC
-Text(RadnitzEndCh7Text)
+Text(KorovaiEndCh7Text)
 ENUT 3
 GOTO 2
 LABEL 1
-Text(RadnitzTalkCh7Text)
+Text(KorovaiTalkCh7Text)
 LABEL 2
 NoFade
 ENDA
@@ -296,8 +296,8 @@ GameOver
 
 ALIGN 4
 EndingScene:
-CAMERA Radnitz
-FlashCursor(Radnitz,60)
+CAMERA Korovai
+FlashCursor(Korovai,60)
 COUNTER_CHECK 0
 BNE 0 s0 sC
 Text(Rice0Ch7Text)
@@ -321,8 +321,11 @@ LABEL 3
 MUSCFAST 0x47
 SetBackground(CastleRoom)
 Text(EndEvent1Text)
-SetBackground(VillageRoadSunset)
-Text(EndEvent2Text)
+CHECK_ALIVE Buldak //had no conditional, so i added it - loog
+BEQ 776 s0 sC
+	SetBackground(VillageRoadSunset)
+	Text(EndEvent2Text)
+LABEL 776
 MNC2 Chapter8
 NoFade
 ENDA

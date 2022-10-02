@@ -1,12 +1,20 @@
+//needed: chapter 2, 4, 5x, 6, 10, 11, 12, 12x (except mantou), 13
+//hopefully: lord specific escape quotes for 1, 3, 9, 14, 16 along with last one out variants
+
+## LoeweChapter1EscapeQuoteText
+[MidRight][LoadLoewe]
+Wish I could stay to wipe out the rest[N]
+of them, but the mission comes first.[A][X]
+
+## LoeweChapter3EscapeQuoteText
+[MidRight][LoadLoewe]
+Phew, we're almost out of these accursed[N]
+jails.[.4] The rest of you better keep up![A][X]
+
 ## CleoEscapeQuoteText
 [MidRight][LoadCleo]
 Finally, our path of escape is[N]
 clear. Follow my lead, everyone![A][X]
-
-## LoeweEscapeQuoteText
-[MidRight][LoadLoewe]
-Wish I could stay to wipe out the rest[N]
-of them, but the mission comes first.[A][X]
 
 ## MiraEscapeQuoteText
 [MidRight][LoadMira]
@@ -33,13 +41,73 @@ Cytheans, for Svetomir approaches![A][X]
 Sorry, but I'm leaving first.[N]
 No sense in me staying behind.[A][X]
 
+## VargaEscapeQuoteText
+[MidRight][LoadVarga]
+[Beat]I can't stop here.[A][X]
+
+## DelilahEscapeQuoteText
+[MidRight][LoadDelilah]
+Ugh, all this running[Beat][N]
+Why did I ever join these guys?[A][X]
+
+## DraganaEscapeQuoteText
+[MidRight][LoadDragana]
+Alright, I'm going on ahead first.[N]
+Cleo, Loewe, I'll leave the rest to you![AN][X]
+
+## DraganaFinalEscapeQuoteText
+[MidRight][LoadDragana][ToggleSmile][ThreeLineBox]
+Heh[Beat] Honestly, I wasn't sure if we[N]
+could pull it off, but you two delivered.[.4][N]
+Let's have a feast back home to celebrate![AN][X]
+
 ## AlexEscapeQuoteText
 [MidRight][LoadAlex]
 Time to skedaddle, keep up guys![A][X]
 
+## AlexEscapeQuoteTextCh9
+[MidRight][LoadAlex]
+See you on the other[N]
+side, best get going.[A][X]
+
+## AlexEscapeQuoteTextCh14
+[MidRight][LoadAlex]
+hope they don't follow[N]
+us, no time to lose.[A][X]
+
+## AlexEscapeQuoteTextCh16
+[MidRight][LoadAlex]
+Too spooky, I've had[N]
+enough of this![A][X]
+
 ## AxelEscapeQuoteText
 [MidRight][LoadAxel]
 Keep up guys, time to skedaddle![A][X]
+
+## AxelEscapeQuoteTextCh9
+[MidRight][LoadAxel]
+Best get going, see you[N]
+on the other side.[A][X]
+
+## AxelEscapeQuoteTextCh14
+[MidRight][LoadAxel]
+No time to lose, hope[N]
+they dont follow us.[A][X]
+
+## AxelEscapeQuoteTextCh16
+[MidRight][LoadAxel]
+I've had enough of[N]
+this, too spooky![A][X]
+
+## FiloneEscapeQuoteText
+[MidRight][LoadFilone]
+Phew, I'm finally outta there.[N]
+That was one heck of a close call![A][X]
+
+## ZwiebackEscapeQuoteText
+[MidRight][LoadZwieback]
+Looks like I ain't the last one out.[N]
+Lemme shoot down anyone in our way![A][X]
 
 ## LongxiaEscapeQuoteText
 [MidRight][LoadLongxia]
@@ -50,10 +118,50 @@ No sense in dying here.[A][X]
 Uwa ha ha! My last meal[N]
 will not be tonight![A][X]
 
+## FaolanEscapeQuoteText
+[MidRight][LoadFaolan]
+You sure you don't need me to stick[N]
+around? Alright, then I'm off![A][X]
+
+## MishEscapeQuoteText
+[MidRight][LoadMish]
+Heh heh heh[Beat][N]
+Luck's on my side today![A][X]
+
+## TobieEscapeQuoteText
+[MidRight][LoadTobie]
+Yikes, they almost got me[Beat] Well,[N]
+it's better than being stuck at the base![A][X]
+
+## CadenzaEscapeQuoteText
+[MidRight][LoadCadenza]
+Very well, our commanders may[N]
+deliver the crescendo, this time[Beat][A][X]
+
+## MatthiasEscapeQuoteText
+[MidRight][LoadMatthias]
+Ah[Beat] Is everyone alright? Once we're[N]
+out, I can heal all of your wounds![A][X]
+
+## AwaEscapeQuoteText
+[MidRight][LoadAwa]
+Heh, was my daring escape ever in doubt?[N]
+I told you I wouldn't die![A][X]
+
+## LeinaEscapeQuoteText
+[MidRight][LoadLeina]
+Excellent! I am one step closer[N]
+to achieving my goal[Beat][A][X]
+
+## CromarEscapeQuoteText
+[MidRight][LoadCromar]
+[Beat]As if my darkness could ever be[N]
+overcome. This was but a certainty[Beat][A][X]
+
 ## IberisEscapeQuoteText
 [MidRight][LoadFangai]
-Maybe... Should have...[N]
-brought lighter... armour.[A][X]
+Maybe[Beat] Should have[Beat][N]
+brought lighter[Beat] armor.[A][X]
 
 ## BuldakEscapeQuoteText
 [MidRight][LoadBuldak]
@@ -79,6 +187,75 @@ Come on everyone![A][X]
 [Beat]Oh? We're leaving?[N]
 Well, ok then.[A][X]
 
+## HornetEscapeQuoteText
+[MidRight][LoadHornet]
+[Beat]On to the next fight.[A][X]
+
+## ValseEscapeQuoteText
+[MidRight][LoadValse]
+I'm leavin' first? Alright, then.[N]
+The rest of y'all, stay safe![A][X]
+
+## IchwepEscapeQuoteText
+[MidRight][LoadIchwep]
+My duty here is done? Very well,[N]
+then I'll leave the rest to you all![A][X]
+
+## MiloEscapeQuoteText
+[MidRight][LoadMilo]
+Ha, I'm gonna make like a tree and-[.4][N]
+Actually, even I know that one's bad.[A][X]
+
+## TiberiusEscapeQuoteText
+[MidRight][LoadTiberius]
+[Beat]Looks like I get to live another day.[N]
+I cannot waste this opportunity![A][X]
+
+## MinkEscapeQuoteText
+[MidRight][LoadMink]
+[Beat]Another risky escape, eh?[N]
+I have much yet to learn[Beat][A][X]
+
+## MantouEscapeQuoteText
+[MidRight][LoadMantou]
+A bandit's greatest gift,[N]
+knowing when to run for it![A][X]
+
+## TippanyEscapeQuoteText
+[MidRight][LoadTippany]
+A-Are you sure I should go? There are[N]
+still so many of our allies I can help![A][X]
+
+## CarlEscapeQuoteText
+[MidRight][LoadCarl]
+[Beat]I'll lend my blade to securing our[N]
+escape. Worry not, it is well-honed.[A][X]
+
+## PelecayeEscapeQuoteText
+[MidRight][LoadPelecaye]
+I've escaped with time to spare, hm?[N]
+Perhaps I can search for the plant[Beat][A][X]
+
+## EllereyEscapeQuoteText
+[MidRight][LoadEllerey]
+Hm[Beat] It looks like this custom-made
+armor could use mobility adjustments[Beat][A][X]
+
+## TakaiEscapeQuoteText
+[MidRight][LoadTakai]
+What, they want me to leave already?[N]
+Not much of a brawl, but it'll do.[A][X]
+
+## JacinthEscapeQuoteText
+[MidRight][LoadJacinth]
+Oh? You don't need me to motivate[N]
+the rest? Then I'll take my leave![A][X]
+
+## DarbyEscapeQuoteText
+[MidRight][LoadDarby]
+More fighting[Beat][N]
+When will it end?[A][X]
+
 ## NahizaEscapeQuoteText
 [MidRight][LoadNahiza]
 Wahaha! What a rush![AN]
@@ -93,26 +270,24 @@ and I'll be home free![AN]
 I foresee a path to safety.[N]
 Let us make it a reality[Beat][A][X]
 
-## RashidEscapeQuoteText
-[MidRight][LoadRashid]
-An opening[Beat][N]
-Fly, my friends. We must go![A][X]
-
 ## IlseEscapeQuoteText
 [MidRight][LoadIlse]
 What? We're running away?![N]
 I could've taken them all on[Beat][A][X]
 
-## NikolasEscapeQuoteText
-[MidRight][LoadNikolas]
-Haha, yes! I really hope this is[N]
-actually the way out! Onwards!![A][X]
+## AshaEscapeQuoteText
+[MidRight][LoadAsha]
+Heh, now that was an easy escape![N]
+The rest of you better keep up![AN][X]
 
-## SeraEscapeQuoteText
-[MidRight][LoadSera]
-Placeholder escape quote[A][X]
+## RashidEscapeQuoteText
+[MidRight][LoadRashid]
+An opening[Beat][N]
+Fly, my friends. We must go![A][X]
 
 ## KofiEscapeQuoteText
 [MidRight][LoadKofi]
 There are still many mysteries[N]
 for me to solve[Beat][A][X]
+
+

@@ -10,29 +10,41 @@
 #define FF5_Sealed_Away 0xD
 #define FE5_Adversity 0xE
 #define FE5_InTheBattle_Fate 0xF
-#define fe5victory 0x10
 #define Dreaming 0x11 //Near Victory music is 0x10
 #define DawnOfYs 0x12
 #define HarvestDance 0x13
-#define mutecity 0x14
+#define ToTheSorrowfulBattlefieldID 0x14
+#define mutecity ToTheSorrowfulBattlefieldID
 #define PMDSteamCaveID 0x15
 #define FF6AwakeningID 0x16
 #define FF4RedWingsID 0x17
-#define skytowerbeta 0x18
-#define ButterBuilding 0x19
+#define RS1Battle 0x18
+#define WallOfDefense 0x19
 #define FFTAnxiety 0x1A
 #define BattleWithThimale 0x1B
 #define Sortie_Formation 0x1C
 #define oppression 0x1D
 #define awaywithyou 0x1E
 #define ncastlebridge 0x1F
-#define FeelingWoozyID 0x21
-#define CallOfTheBellsID 0x22
 
-#define RemembranceID 0x58
 #define CryptequeID 0x59
 #define RiseAboveID 0x5D
+#define ThraciaPreparationsID 0x5E
+#define KingOfDragons_IntoTheCastleID 0x5F
 
+#define FF_MysticQuest_Battle1ID 0x62
+#define FF_MysticQuest_HillofDestinyID 0x63
+#define GS_VenusLighthouse 0x64
+
+#define FF_MysticQuest_DoomCastleID 0x92
+#define SSBB_Tournament_PrepsID 0x93
+#define FF_MysticQuest_DarkKingThemeID 0x94
+
+#define PMD_RescueTeam_MtThunderID 0xA8
+#define PMD_SkyPeakFinalPassID 0xA9
+
+#define PMD_PowerOfDarknessID 0xAD
+#define PMD_MystifyingForestID 0xAE
 
 #define GreatCanyon 0xC0
 #define KnightsPride 0xC1
@@ -40,14 +52,12 @@
 #define CombatResistanceID 0xC3
 #define FirstCampaignID 0xC4
 #define FestivalHuntID 0xC5
-#define War_sHeartbeat 0xC6
 
 #define CrimeHeartID 0xD9
 #define DrumbeatRuinID 0xDA
 #define SwordOfTheValiant 0xDB
 
 #define BattleWithMagus 0xE0
-#define TomokoQOH 0xE1
 #define SorrowsDistortion 0xE4
 
 #define GuardianSignsLegendary 0x12D
@@ -74,8 +84,13 @@
 
 #define VsJuliusID 0x279
 #define RoarOfDomainID 0x27A
-#define MM10WilyMachineID 0x27B
 #define WhatImMadeOfID 0x27C
+#define ChaosAngelAct3ID 0x280
+#define FF_MysticQuest_IceDungeonID 0x27D
+#define FF_MysticQuest_FocusTowerID 0x27E
+#define GoldenSun_TLA_TheGoldenSunRisesID 0x27F
+#define DenpaMen2PalaceID 0x23
+#define HollowLightOfTheSealedLandID 0x281
 
 // Vanilla
 #define TiesOfFriendship 0x7
@@ -88,3 +103,5 @@
 #define Nighttime 0x4A
 #define WaterFlowingSoundEffect 0x4B
 #define SoftSwooshSoundEffect 0x4D
+#define SwordUnsheathingEffect 0xCE
+#define DivineWeaponEffect 0xF0

@@ -1,0 +1,47 @@
+#include "BattleExp.lyn.event"
+
+#define BossExpReduction(charID, chapterID,levelsToSubtract) "BYTE charID chapterID"
+#define PrepromoteTableEntry(charID,levelsToSubtract) "BYTE charID levelsToSubtract"
+
+ALIGN 4
+PrepromoteTable:
+PrepromoteTableEntry(Mira,15)
+PrepromoteTableEntry(Cromar,10)
+PrepromoteTableEntry(Meldan,10)
+PrepromoteTableEntry(Pelecaye,10)
+PrepromoteTableEntry(Takai,10)
+BYTE 0xFF 0xFF
+
+ALIGN 4
+BossExpReductionTable: //added to reduce exp granted by early promoted bosses; goal is for them to be 5 levels up on other enemies internally
+BossExpReduction(Boro_Ch1, Chapter1,15)
+BossExpReduction(Boro_Ch1, Chapter2,15)
+BossExpReduction(McCallum,Chapter6,10)
+BossExpReduction(TheGiant,Chapter7,9)
+BossExpReduction(Hege,Chapter8,8)
+BossExpReduction(Francis,Chapter8,8)
+BossExpReduction(Wrathgar,Chapter9,7)
+BossExpReduction(Elias,Chapter10,6)
+BossExpReduction(Cidor,Chapter10,6)
+BossExpReduction(Mifan,Chapter10,6)
+BossExpReduction(Johanna,Chapter10,6)
+BossExpReduction(Aurora,Chapter11,5)
+BossExpReduction(Eitha,Chapter12,4)
+BossExpReduction(Corundum,Chapter13,3)
+BossExpReduction(Pascal,Chapter13,3)
+BossExpReduction(Veniamin,Chapter13,2)
+BossExpReduction(Tsoureki,Chapter14,2)
+BYTE 0xFF 0xFF 0xFF
+
+ALIGN 4
+MountedInPrepsTable: //list of chapterIDs where units are mounted in preps and have access to promo items
+BYTE Chapter13      // shouldn't start until 13?
+BYTE Chapter14 
+BYTE Chapter17
+BYTE Chapter18
+BYTE Chapter20
+BYTE Chapter21
+BYTE Chapter22
+BYTE Chapter23
+BYTE Chapter25
+BYTE 0xFF

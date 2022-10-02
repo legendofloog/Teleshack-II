@@ -25,7 +25,7 @@
 #define Chapter23 0x16
 #define Chapter24 0x17
 #define Chapter25 0x18
-#define Chapter26 0x19
+#define PostgameHub 0x19
 #define Ch1LoeweVillage 0x1A
 #define Ch1DraganaPrison 0x1B
 #define Ch5xInterlude 0x1C
@@ -36,7 +36,14 @@
 #define Chapter17Council 0x21
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
-#define Chapter12Cutscene 0x24
+#define Chapter3Cutscene 0x24
+#define Chapter12Cutscene 0x25
+#define Ch18xBoatScenes 0x27
+#define Chapter12xPass 0x28
+#define Chapter12xDarkness 0x29
+#define EpilogueChapter 0x2A
+#define Chapter8End 0x2B
+
 
 // MapChangesID
 
@@ -71,12 +78,18 @@
 #define Ch5xInterludeMapChanges 0x97
 #define Ch5xBoatScenesMapChanges 0x9E
 #define Ch5xGechrysosMapChanges 0x9D
+#define Chapter8EMapChanges 0xc3
 #define Ch12xInterludeMapChanges 0xA2
 #define Chapter15CutsceneMapChanges 0xA7
 #define Chapter17CouncilMapChanges 0xB1
 #define Chapter17DuelMapChanges 0xB5
 #define Chapter18xInterludeMapChanges 0xB8
-#define Chapter12CutsceneMapChanges 0xC2
+#define Chapter3CutsceneMapChanges 0xce
+#define Chapter12xDarknessMapChanges 0xC6
+#define Chapter12xPassMapChanges 0xd0
+#define PostgameHubMapChanges 0xd7
+#define Ch18xBoatScenesMapChanges 0xd9
+#define Chapter12CutsceneMapChanges 0xe1
 
 
 // MapID
@@ -112,12 +125,18 @@
 #define Ch5xInterludeMap 0x96
 #define Ch5xBoatScenesMap 0x9F
 #define Ch5xGechrysosMap 0xA0
+#define Chapter8EMap 0xc4
 #define Ch12xInterludeMap 0xA1
 #define Chapter15CutsceneMap 0xA8
 #define Chapter17CouncilMap 0xB2
 #define Chapter17DuelMap 0xB6
 #define Chapter18xInterludeMap 0xB9
-#define Chapter12CutsceneMap 0xC3
+#define Chapter3CutsceneMap 0xc2
+#define Chapter12xDarknessMap 0xC7
+#define Chapter12xPassMap 0xd1
+#define PostgameHubMap 0xd8
+#define Ch18xBoatScenesMap 0xda
+#define Chapter12CutsceneMap 0xe2
 
 // EventsID
 
@@ -146,7 +165,7 @@
 #define Chapter23Events 0x67
 #define Chapter24Events 0x6B
 #define Chapter25Events 0x71
-#define Chapter26Events 0x75
+#define PostgameHubEvents 0x75
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
 #define Ch5xInterludeEvents 0x81
@@ -154,7 +173,9 @@
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7
 #define Chapter18xInterludeEvents 0xBA
-#define Chapter12CutsceneEvents 0xC4
+#define Chapter3CutsceneEvents 0xcf
+#define EpilogueEvents 0xCA
+#define Chapter12CutsceneEvents 0xe3
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88
@@ -164,6 +185,9 @@
 #define DesertBastionObjectID 0xA4
 #define FlasuVillage2SnowObjectID 0xBD
 #define FF2TownObjectID 0xBE
+#define EndgameObjectID 0xC5
+#define MansterObjectID 0xD3
+#define JungleMountainousObjectID 0xDF
 
 // PaletteID
 #define ThraciaCastlePaletteID 0x89
@@ -174,6 +198,13 @@
 #define FlasubanVillageSnowPaletteID 0xBB
 #define FF2TownPaletteID 0xBF
 #define FF2TownSnowPaletteID 0xc1
+#define EndgamePaletteID 0xc8
+#define ActualEndgamePaletteID 0xcb
+#define Chapter4VillagePaletteID 0xcc
+#define FlasubanVillageSteamPaletteID 0xd2
+#define MansterPaletteID 0xD4
+#define ThraciaFieldsNormalPaletteID 0xDC
+#define JungleMountainousPaletteID 0xDD
 
 // TileConfig
 #define ThraciaCastleMapchipConfigID 0x8A
@@ -184,9 +215,17 @@
 #define DesertBastionMapchipConfigID 0xA6
 #define FlasuVillage2SnowMapchipConfigID 0xBC
 #define FF2TownConfigID 0xC0
+#define EndgameConfigID 0xc9
+#define MansterConfigID 0xD5
+#define JungleMountainousMapchipConfigID 0xDE
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B
 #define FlasubanVillageTileAnimationsID 0x95
 #define FF5WaveCaveTileAnimationsID 0x9C
+#define FieldsTileAnimationsID 0x05
+#define EndgameAnimationsID 0xcd
+#define MansterAnimationsID 0xD6
+#define ThraciaFieldsAnimationsID 0xDb
+#define JungleMountainousAnimationsID 0xE0
 

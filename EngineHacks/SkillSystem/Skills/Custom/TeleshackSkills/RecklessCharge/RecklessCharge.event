@@ -3,5 +3,9 @@ ALIGN 4
 RecklessChargeIDLink:
 BYTE RecklessChargeID
 
+ALIGN 4
+ChargeIDLink:
+BYTE ChargeID
+
 // Add "RecklessChargePreBattle" to the postbattle loop
 // and ""RecklessChargePostBattle"

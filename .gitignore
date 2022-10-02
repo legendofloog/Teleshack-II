@@ -53,6 +53,7 @@ __pycache__
 ._*
 Thumbs.db
 Thumbs.db:encryptable
+Thumbs.db/encryptable
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
@@ -75,3 +76,9 @@ Text/.TextEntries/
 Text/InstallTextData.event
 Text/TextDefinitions.event
 Definitions/DebugDefinitions.event
+
+# project files
+*.sublime-project
+*.sublime-workspace
+*.tiled-project
+*.tiled-session

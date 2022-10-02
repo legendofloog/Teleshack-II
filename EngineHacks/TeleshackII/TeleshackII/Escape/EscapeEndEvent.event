@@ -1,0 +1,15 @@
+ALIGN 4
+RequiredEscapeeEvent:
+EVBIT_MODIFY 4
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART
+TEXTSHOW EscapeWarningText
+TEXTEND
+REMA
+EVBIT_MODIFY 0
+IfNoSelectedGoto(7760)
+    ConfirmFinalEscape
+    ENUT 3 
+LABEL 7760
+NoFade
+ENDA

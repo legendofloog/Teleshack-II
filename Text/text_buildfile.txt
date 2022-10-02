@@ -17,11 +17,19 @@ Learned  [X]
 
 #include "unitmenu_text.txt"
 
+# 0x581
+Save any changes.[NL]
+Choose Restart Chapter[NL]
+to restart this chapter.[NL][X]
+
+# 0x04C2
+Raises strength.[X]
+
 # 0x51E
 Radiant[X]
 
-# 0x522
-MP/2 + 5[X]
+# 0x522 ^
+M/2+5[X]
 
 # 0x5B6
 Put items in storage. Up to[NL]
@@ -32,6 +40,16 @@ Restores HP to allies at a distance.[X]
 
 # 0x26B
 Holy[X]
+
+# 0x08FE
+[Left][LoadStranger]
+What, you wanna take a breather?[N]
+[Yes][X]
+
+# 0x08FF
+[Left]
+Well, no shame in it. Rest up,[N]
+and come back when you're ready.[X]
 
 # 0x55B
 Unit is blessed by Leina's Radiance.[NL]
@@ -222,3 +240,10 @@ the top of inventory.[X]
 #include "CharClassItemsEtc/Supports.txt"
 
 #include "CharClassItemsEtc/CharacterEndings.txt"
+
+## EscapeWarningText
+Do you want to Escape?[N]
+[Red]All other units will be left behind.[Red][.4][N]
+[No][X]
+
+#include "finalbattlequotes.txt"

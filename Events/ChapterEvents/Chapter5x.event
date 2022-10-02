@@ -421,7 +421,7 @@ UNIT Senny GoldKnight Cleo Level(2,Enemy,False) [14,11] 0x0 0x0 0x1 REDA9R12 [Ar
 UNIT
 
 OrfeasUnitGroup:
-UNIT Raschwitz_Ch1 Baron Cleo Level(2,Enemy,False) [8,10] 0x0 0x0 0x1 REDA7R10 [Argilabrys,IronAxe,Vulnerary]	NoAI
+UNIT Orfeas Emperor Cleo Level(2,Enemy,False) [8,10] 0x0 0x0 0x1 REDA7R10 [Argilabrys,IronAxe,Vulnerary]	NoAI
 UNIT Boro_Ch1 Noble_F Cleo Level(2,Enemy,False) [8,9] 0x0 0x0 0x1 REDA9R10 [Argilabrys,IronAxe,Vulnerary]		NoAI
 UNIT
 
@@ -435,6 +435,8 @@ RECLASS Loewe Scaleshot_Dismounted
 LOAD1 0 LoeweBeginningCutsceneGroup
 ENUN
 FADU 15
+BROWNBOXTEXT Ch18xDecianSea[8,8]
+STAL 10
 MUSC WaterFlowingSoundEffect
 CAMERA Loewe
 FlashCursor(Loewe,60)
@@ -694,9 +696,9 @@ TILECHANGE 0
 LOAD1 1 OrfeasUnitGroup
 ENUN
 Text(Ch5xOrfeasCoraliaIntroduction)
-MOVE 15 Raschwitz_Ch1 [8,9]
+MOVE 15 Orfeas [8,9]
 ENUN
-REMOVEUNIT Raschwitz_Ch1
+REMOVEUNIT Orfeas
 SOUN 0x00B1
 TILEREVERT 0
 STAL 10

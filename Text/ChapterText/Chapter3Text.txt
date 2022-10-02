@@ -1,286 +1,651 @@
 ## Chapter3Title
-Ch3: Pursuit[X]
+Ch3: Make or Break[X]
 
 ## BeginningSceneTextA
 
 [FarLeft][LoadMira][Left][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
 [FarRight][TwoLineBox]
-Huff[Beat][....] Huff[Beat][....] I think-[....] I think[N]
+Huff[Beat][.4] Huff[Beat][.4] I think-[.5] I think[N]
 we're clear of them.[A]
+
 [FarLeft]
 We're just lucky Boro had a[N]
 change of heart when he did[Beat][A]
+
 [Right][OneLineBox]
 How are you feeling General?[A]
+
 [Left][ThreeLineBox]
-Hah, it'll take more than this[N]
-to put me out of commission.[N]
-But I have to say, thank you all,[AN]
-normally I would reprimand[N]
-this kind of foolishness but-[....][N]
+Hah,[.6] it'll take more than this[N]
+to put me out of commission.[.6][N]
+But I have to say,[.4] thank you all.[AN]
+Normally I would reprimand[N]
+this kind of foolishness but-[.5][N]
 you've done a fine job.[A]
+
 [FarLeft]
 We're not exactly out of the[N]
 woods so I wouldn't thank[N]
 us yet, this place is a maze.[A]
+
 [Left]
-Of course, no doubt every soldier[N]
-Cidor has is after us.[N]
+Of course,[.4] no doubt every soldier[N]
+Cidor has is after us.[.6][N]
 Do we have an escape plan?[A]
+
 [Right][TwoLineBox]
-Not exactly but I think[N]
-Varga might know.[AN][CloseSpeechSlow]
+Not exactly[Beat][.5] but I think[N]
+Varga might have an idea.[AN][CloseSpeechSlow]
+
 [FarLeft][ClearFace][Left][ClearFace]
 [FarFarLeft][LoadVarga][MoveMidLeft]
 [Right]
-Varga, where-[A]
+Varga,[.4] where-[A]
+
 [MidLeft]
-Follow me.[....] It's this way.[A][CloseSpeechSlow]
-[MoveFarFarRight]
+Follow me.[.6] It's this way.[A][CloseSpeechSlow]
+[ClearFace]
 [Right]
 [CloseEyes][Beat][A][X]
+
+
+
+
 
 ## BeginningSceneTextB
 
 [FarLeft][LoadLoewe][Left][LoadDragana][Right][LoadVarga][FarRight][LoadCleo]
 [Right][ThreeLineBox]
-If we can get through here,[N]
+If we can get through here,[.4][N]
 we should be able to[N]
 make a break for it.[A]
+
 [FarRight][OneLineBox]
 You're sure about this Varga?[A]
+
 [Right][TwoLineBox]
-Not exactly, there will[N]
+Not exactly,[.4] there will[N]
 be plenty of guards.[A]
 [FarLeft][ThreeLineBox]
 You're sure we can trust this guy[N]
-Cleo? I mean he was awful keen[N]
+Cleo?[.4] I mean he was awful keen[N]
 to turn on his former allies.[A]
+
 [FarRight][TwoLineBox]
-I'm certain, trust me on this.[N]
+I'm certain,[.5] trust me on this.[.6][N]
 I'll explain it all later.[A]
+
 [FarLeft][ThreeLineBox]
-Yeah, I trust you, alright then.[N]
+Yeah,[.4] I trust you,[.4] alright then.[.6][N]
 Well I think no matter what we do[N]
 we're going to run into soldiers,[AN]
 so I don't see anything wrong[N]
-with Varga's proposal. General?[A]
+with Varga's proposal.[.6] General?[A]
+
 [Left]
-If we can get the drop on them we[N]
+If we can get the drop on them.[.4] we[N]
 should be able to push through[N]
-before they can react,[AN]
-but we'll have to be fast if we[N]
-want everyone to escape. Of course[N]
+before they can react.[AN]
+But we'll have to be fast if we[N]
+want everyone to escape.[.6] Of course[N]
 that should be no trouble for us.[A]
+
 [FarRight][TwoLineBox]
 Alright then, if there's no[N]
-objections, lets move.[A][X]
+objections,[.7] lets move.[A][X]
 
 ## BeginningSceneTextC
 [MidLeft][LoadDragana][OneLineBox]
-Liberators! With me, for Decia!!![A]
+Liberators![.6] With me,[.4] for Decia!!![A]
 [ClearFace]
+[LoadOverworldFaces]
 [MidRight][LoadEmory][MidLeft][LoadSeleseF]
 [MidRight][ThreeLineBox]
-Drat! The Liberators! Men, to[N]
+Drat![.5] The Liberators![.4] Men,[.4] to[N]
 arms! Let's quash this rebel scum[N]
 where our compatriots couldn't![A]
 [MidLeft][OneLineBox]
 Yes captain![A][X]
+
+
+
+
+
+## BeginningSceneTextAB
+[MidLeft][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
+[FarRight][TwoLineBox]
+Huff[Beat][.4] Huff[Beat][.4] I think-[.5] I think[N]
+we're clear of them.[A]
+
+[FarLeft]
+We're just lucky Boro had a[N]
+change of heart when he did[Beat][A]
+
+[Right][OneLineBox]
+How are you feeling General?[A]
+
+[MidLeft][ThreeLineBox]
+Hah,[.6] it'll take more than this[N]
+to put me out of commission.[.6][N]
+But I have to say,[.4] thank you both.[AN]
+Normally I would reprimand[N]
+this kind of foolishness but-[.5][N]
+you've done a fine job.[A]
+
+[Right][ThreeLineBox]
+I wouldn't thank us yet commander.[.6][N]
+This place is a maze, we may[N]
+not even find our way out yet.[A]
+
+[Left][ThreeLineBox]
+Of course,[.4] no doubt every soldier[N]
+Cidor has is after us.[.6][N]
+Do we have an escape plan?[A]
+
+[Right][TwoLineBox]
+Not exactly[Beat][.5] but I think[N]
+Varga might have an idea.[AN][CloseSpeechSlow]
+
+[MidLeft][ClearFace]
+[FarFarLeft][LoadVarga][MoveMidLeft]
+[Right]
+Varga,[.4] where-[A]
+
+[MidLeft]
+Follow me.[.6] It's this way.[A][CloseSpeechSlow]
+[ClearFace]
+[Right]
+[CloseEyes][Beat][A][X]
+
+
+
+
+## BeginningSceneTextAC
+
+[FarLeft][LoadMira][Left][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
+[FarRight][TwoLineBox]
+Huff[Beat][.4] Huff[Beat][.4] I think-[.5] I think[N]
+we're clear of them.[A]
+
+[FarLeft]
+We're just lucky Boro had a[N]
+change of heart when he did[Beat][A]
+
+[Right][OneLineBox]
+How are you feeling General?[A]
+
+[Left][ThreeLineBox]
+Hah,[.6] it'll take more than this[N]
+to put me out of commission.[.6][N]
+But I have to say,[.4] thank you all.[AN]
+Normally I would reprimand[N]
+this kind of foolishness but-[.5][N]
+you've done a fine job.[A]
+
+[FarLeft]
+We're not exactly out of the[N]
+woods so I wouldn't thank[N]
+us yet, this place is a maze.[A]
+
+[Left]
+Of course,[.4] no doubt every soldier[N]
+Cidor has is after us.[.6][N]
+Do we have an escape plan?[A]
+
+[FarLeft][TwoLineBox]
+Not exactly[Beat][.5] but I think[N]
+I might know the way.[AN][CloseSpeechSlow][X]
+
+
+
+
+
+## BeginningSceneTextAD
+
+[MidLeft][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
+[FarRight][TwoLineBox]
+Huff[Beat][.4] Huff[Beat][.4] I think-[.5] I think[N]
+we're clear of them.[A]
+
+[MidLeft]
+We're just lucky Boro had a[N]
+change of heart when he did[Beat][A]
+
+[Right][OneLineBox]
+How are you feeling General?[A]
+
+[MidLeft][ThreeLineBox]
+Hah,[.6] it'll take more than this[N]
+to put me out of commission.[.6][N]
+But I have to say,[.4] thank you both.[AN]
+Normally I would reprimand[N]
+this kind of foolishness but-[.5][N]
+you've done a fine job.[A]
+
+[Right][ThreeLineBox]
+I wouldn't thank us yet commander.[.6][N]
+This place is a maze, we may[N]
+not even find our way out yet.[A]
+
+[MidLeft][ThreeLineBox]
+Of course,[.4] no doubt every soldier[N]
+Cidor has is after us.[.6][N]
+Do we have an escape plan?[A]
+
+[Right][ThreeLineBox]
+Not exactly[Beat][.5] But I overheard[N]
+one of the guards mentioning[N]
+an exit to the east.[AN]
+
+[MidLeft][OneLineBox]
+Alright then.[.5] Lead the way.[AN][X]
+
+
+
+
+## BeginningSceneTextBB
+
+[FarLeft][LoadLoewe][Left][LoadDragana][Right][LoadVarga][FarRight][LoadCleo]
+[Right][ThreeLineBox]
+If we can get through here,[.4][N]
+we should be able to[N]
+make a break for it.[A]
+
+[FarRight][OneLineBox]
+You're sure about this Varga?[A]
+
+[Right][TwoLineBox]
+Not exactly,[.4] there will[N]
+be plenty of guards.[A]
+[FarLeft][ThreeLineBox]
+You're sure we can trust this guy[N]
+Cleo?[.4] I mean he was awful keen[N]
+to turn on his former allies.[A]
+
+[FarRight][TwoLineBox]
+I'm certain,[.5] trust me on this.[.6][N]
+I'll explain it all later.[A]
+
+[FarLeft][ThreeLineBox]
+Yeah,[.4] I trust you,[.4] alright then.[.6][N]
+Well I think no matter what we do[N]
+we're going to run into soldiers,[AN]
+so I don't see anything wrong[N]
+with Varga's proposal.[.6] General?[A]
+
+[Left]
+If we can get the drop on them.[.4] we[N]
+should be able to push through[N]
+before they can react.[AN]
+But we'll have to be fast if we[N]
+want everyone to escape.[.6] Of course[N]
+that should be no trouble for us.[A]
+
+[FarRight][TwoLineBox]
+Alright then, if there's no[N]
+objections,[.7] lets move.[A][X]
+
+
+
+
+
+
+## BeginningSceneTextBC
+
+[FarLeft][LoadLoewe][Left][LoadDragana][Right][LoadCleo][FarRight][LoadMira]
+[FarRight][ThreeLineBox]
+If we can get through here,[.4][N]
+we should be able to[N]
+make a break for it.[A]
+
+[FarLeft][OneLineBox]
+You're sure about this Mira?[A]
+
+[FarRight][TwoLineBox]
+Not exactly,[.4] there will[N]
+be plenty of guards.[A]
+
+[Right][ThreeLineBox]
+Well I think no matter what we do[N]
+we're going to run into soldiers,[AN]
+so I don't see anything wrong[N]
+with that plan.[.6] General?[A]
+
+[Left]
+If we can get the drop on them.[.4] we[N]
+should be able to push through[N]
+before they can react.[AN]
+But we'll have to be fast if we[N]
+want everyone to escape.[.6] Of course[N]
+that should be no trouble for us.[A]
+
+[FarRight][TwoLineBox]
+Alright then, if there's no[N]
+objections,[.7] lets move.[A][X]
+
+
+
+
+## BeginningSceneTextBD
+
+[MidLeft][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
+[Right][ThreeLineBox]
+If we can get through here,[.4][N]
+we should be able to[N]
+make a break for it.[A]
+
+[FarRight][OneLineBox]
+You're sure about this Cleo?[A]
+
+[Right][TwoLineBox]
+Not exactly,[.4] there will[N]
+be a lot of guards most likely.[A]
+
+[FarRight][ThreeLineBox]
+Well I think no matter what we do[N]
+we're going to run into soldiers,[AN]
+so I don't see anything wrong[N]
+with that plan.[.6] General?[A]
+
+[MidLeft]
+If we can get the drop on them.[.4] we[N]
+should be able to push through[N]
+before they can react.[AN]
+But we'll have to be fast if we[N]
+want everyone to escape.[.6] Of course[N]
+that should be no trouble for us.[A]
+
+[Right][TwoLineBox]
+Alright then, if there's no[N]
+objections,[.7] lets move.[A][X]
+
 
 ## ReinforcementText
 
 [MidLeft][LoadLoewe][MidRight][LoadCleo]
 [MidRight][OneLineBox]
 Reinforcements from behind![A]
+
 [MidLeft][TwoLineBox]
 They must have gotten through[N]
-Boro. what do we do?[AN]
+Boro.[.6] what do we do?[AN]
 We can't just leave him[N]
 after he did that for us[Beat][A]
+
 [MidRight]
-We have to push on, it's too[N]
+We have to push on,[.4] it's too[N]
 late to turn around now![A]
+
 [MidLeft][OneLineBox]
 But he-[A][CloseSpeechSlow]
-[MidRight][MoveFarRight][MidLeft][MoveRight][ClearFace][Right][LoadLoewe][FarFarLeft][LoadDragana][MoveFarLeft]
+
+[MidRight][MoveFarRight][MidLeft][ClearFace][Right][LoadLoewe][MidLeft][LoadDragana]
 [FarLeft][ThreeLineBox]
 Don't let his sacrifice be in[N]
-vain, we have to push forward[N]
+vain,[.4] we have to push forward[N]
 before they catch up to us.[A]
+
 [Right][OneLineBox]
-[Beat]Of course General.[A][X]
+[Beat][.4]Of course General.[A][X]
 
 ## AlexAxelFreedText
+[MidLeft][LoadActive][Right][LoadAlex][FarRight][LoadAxel]
+[Right][OneLineBox]
+Oh hey![.6] You freed us![A]
+
+[FarRight][TwoLineBox]
+We kinda got caught in here[N]
+trying to come help you guys[Beat][A]
+
+[Right][TwoLineBox][ToggleSmile]
+But now we can help you guys[N]
+smash in some Selesian heads![A]
+
+[FarRight][OneLineBox]
+So let's get moving![A][X]
+
+
+
+
+## AlexAxelFreedTextMira
 [MidLeft][LoadMira][Right][LoadAlex][FarRight][LoadAxel]
 [MidLeft][TwoLineBox]
-Wh- Alex, Axel? What on earth[N]
+Wh-[.5] Alex,[.5] Axel?[.6] What on earth[N]
 are you two doing in here?[A]
+
 [Right][OneLineBox]
-Ah boss, we can explain![A]
+Ah boss,[.4] we can explain![A]
+
 [FarRight][TwoLineBox]
 We came in to help you[N]
-guys out but, well-[A]
+guys out but,[.5] well-[A]
+
 [Right]
 We might've gotten[N]
-found out, oops.[A]
+found out,[.6] oops.[A]
+
 [MidLeft]
-Idiots! You were supposed to[N]
+Idiots![.6] You were supposed to[N]
 stay with the rest of the squad![A]
+
 [FarRight]
 Yeah but they're fine[N]
 on their own outside![A]
+
 [Right][MoveRight]
 And you guys probably[N]
 needed the help more![A]
+
 [MidLeft]
-Thats not the point! What if[N]
+Thats not the point![.6] What if[N]
 we hadn't come this way?[AN]
 You'd be rotting in Cidors jail[N]
 for the rest of your days.[AN]
 And I don't think you'd be any[N]
 use to us like that![A]
-[Right]
+
+[Right][ToggleSmile]
 Yeah but we aren't and[N]
 thats what matters![A]
-[FarRight][OneLineBox][ToggleSmile]
+
+[FarRight][OneLineBox]
 And now we can help you![A]
+
 [MidLeft][ThreeLineBox][ToggleSmile]
 Sometimes I wonder how[N]
 I ever let you two onto[N]
 the recon squad[Beat][CloseEyes][A]
+
 [FarRight][TwoLineBox][ToggleSmile]
 I mean you need someone who can[N]
 handle themselves in a brawl.[A]
+
 [Right][ThreeLineBox]
 It's not like Iskra is going[N]
 toe to toe with a knight in a[N]
 one versus one swordfight.[A]
+
 [FarRight][TwoLineBox]
 And we're two for[N]
 the price of one![A]
+
 [MidLeft][ThreeLineBox][OpenEyes]
 Hah, whatever you knuckleheads.[N]
-Come on, do what you[N]
-do best, let's move![A]
+Come on,[.5] do what you[N]
+do best,[.5] let's move![A]
+
 [Right][OneLineBox]
 [MoveRight]
 Aye aye cap'n![A]
+
 [FarRight]
 [MoveFarRight]
 Sure thing boss![A][X]
 
+
+
+
 ## DraganaCleoTalkCh3Text
 [MidLeft][LoadDragana][MidRight][LoadCleo]
 [MidLeft][OneLineBox]
-Cleo, I wish to speak with you.[A]
+Cleo,[.5] I wish to speak with you.[A]
+
 [MidRight][OneLineBox]
 Yes General?[A]
+
 [MidLeft][TwoLineBox]
-I want you to know, I am so impressed[N]
+I wanted you to know,[.6] I am so impressed[N]
 with what you have done here today.[A]
+
 [MidRight][TwoLineBox]
-Thank you General, but I have[N]
+Thank you General,[.4] but I have[N]
 so much more to learn from you.[AN]
 The academy never gave me the kind[N]
 of real world experience you do.[A]
+
 [MidLeft][ThreeLineBox]
-And there will be time for that,[N]
+And there will be time for that,[.5][N]
 but you are my Adjudant for a[N]
-reason, I trust in your capability.[A]
+reason,[.4] I trust in your capability.[A]
+
 [MidRight][OneLineBox]
 Of course General[Beat][A]
+
 [MidLeft][TwoLineBox]
-What's wrong Cleo? I can tell[N]
+What's wrong Cleo?[.6] I can tell[N]
 something is eating at you.[A]
+
 [MidRight][TwoLineBox]
-Well I[Beat] I don't know how[N]
+Well I[Beat][.6] I don't know how[N]
 you stay strong at times like[N]
-this, doing this, it's terrifying.[AN]
+this,[.4] doing this,[.4] it's terrifying.[AN]
 Any of us could've died on this[N]
-mission, what if we had lost you?[N]
+mission,[.4] what if we had lost you?[.6][N]
 What would happen to the Liberators?[A]
+
 [MidLeft][ThreeLineBox]
-[CloseEyes][Beat][......][A][OpenEyes]Cleo, the truth is I'm always[N]
-scared, everyone is. I put on a brave[N]
+[CloseEyes][Beat][.7][OpenEyes]Cleo, the truth is I'm always[N]
+scared,[.5] everyone is.[.6] I put on a brave[N]
 face because people need someone to.[AN]
 They need it so they can feel[N]
-brave themselves. But even as a[N]
+brave themselves.[.6] But even as a[N]
 leader the fear still affects us all.[A]
+
 [MidRight][TwoLineBox]
 Ah I see,[.....] thank you[N]
 General, it means a lot.[A]
+
 [MidLeft][TwoLineBox]
-Of course Cleo any time,[N]
-now, lead the way![A]
-[MidRight][MoveMidRight][OneLineBox][ToggleSmile]
+Of course Cleo[.4] any time,[.4][N]
+now,[ToggleSmile][.5] lead the way![A]
+
+[MidRight][MoveMidRight][OneLineBox]
 Yes General![A][X]
+
+
+
+
 
 ## DraganaLoeweTalkCh3Text
 
 [MidLeft][LoadDragana][MidRight][LoadLoewe]
 [MidLeft][TwoLineBox]
-Loewe, I hear this rescue[N]
+Loewe,[.5] I hear this rescue[N]
 attempt was of your doing.[A]
+
 [MidRight][ThreeLineBox]
-If you can call it that, I only[N]
-wound up getting myself caught.[N]
+If you can call it that,[.5] I only[N]
+wound up getting myself caught.[.6][N]
 Cleo is the one that made it work[Beat][A]
+
 [MidLeft][ThreeLineBox]
-That's not true Loewe, it's your[N]
+That's not true Loewe,[.4] it's your[N]
 decisiveness that brought everyone[N]
 here to begin with at all.[A]
+
 [MidRight][TwoLineBox]
-[CloseEyes][Beat][A]But I still got captured, I just[N]
+[CloseEyes][Beat][.6]But I still got captured,[.4] I just[N]
 wound up making it harder to rescue you.[A]
+
 [MidLeft][TwoLineBox]
-And I also got captured Loewe.[N]
+And I also got captured Loewe.[.6][N]
 Does that make me a bad leader?[A]
+
 [MidRight][OneLineBox][OpenEyes]
-Well[Beat] No, it doesn't[Beat][A]
+
+Well[Beat][.4] No,[.4] it doesn't[Beat][A]
+
 [MidLeft][TwoLineBox]
-Then neither are you, you[N]
+Then neither are you,[.4] you[N]
 did what you thought was right.[AN]
 Even if you made mistakes what matters[N]
 Is you tried,[.....] your mother would be proud.[A]
+
 [MidRight][OneLineBox]
 General[Beat][A]
+
 [MidLeft][TwoLineBox][ToggleSmile]
-And I'm proud of you too, now come[N]
-on, let's go make up our mistakes![A][X]
+And I'm proud of you too,[.4] now come[N]
+on,[.5] let's go make up our mistakes![A][X]
+
+
+
+
+
 ## DraganaDeathResponseText
 [MidLeft][LoadLoewe]
-No! General you can't![N]
+No![.6] General you can't![.6][N]
 We won't leave you here![A][X]
 
 ## EmoryBattleQuote
 [MidLeft][LoadEmory]
-Blasted Liberators,[N]
+Blasted Liberators,[.4][N]
 you think your cause is just?[AN]
 I will show you your folly[N]
 beneath my blade![A][X]
 
 ## EmoryDeathQuote
 [MidLeft][LoadEmory]
-Lise I[Beat] Why[Beat] [CloseEyes][.....]No[Beat][A][X]
+Lise I-[.5] Why[Beat] [CloseEyes][.5]No[LongBeat][A][X]
 
 ## MapEndText
 [MidRight][LoadLoewe][TwoLineBox]
-Alright, we're free! Let's[N]
-move, not much further now![A][X]
+Alright,[.5] we're free![.6] Let's[N]
+move,[.4] not much further now![A][X]
 
 ## EndingSceneTextA1
 [FarLeft][LoadDragana][Left][LoadMira][Right][LoadCleo][FarRight][LoadLoewe]
-[Right][TwoLineBox]
-Gods, so much running[Beat] I[N]
-don't think I can keep going[Beat][A]
+[FarRight][TwoLineBox]
+Gods,[.4] so much running[Beat][.5] I[N]
+don't think I can keep going[Beat][.4][A]
 [Left]
-We're almost there, the[N]
-exit is just ahead![A]
+We're almost there,[.5] the[N]
+exit is just ahead![A][.6]
+
 [FarFarLeft][OneLineBox]
-You're not out of the woods yet.[A]
-[FarLeft]
+[Beat][.5]You're not out of the woods yet.[A]
+[FarLeft][MoveFarLeft]
 [Beat]![A][X]
+
+
+
+
+## EndingSceneTextA1B
+
+[MidLeft][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
+[FarRight][TwoLineBox]
+Gods,[.4] so much running[Beat][.5] I[N]
+don't think I can keep going[Beat][.4][A]
+[Right]
+We're almost there,[.5] the[N]
+exit is just ahead![A][.6]
+[FarFarLeft][OneLineBox]
+[Beat]You're not out of the woods yet.[A]
+[MidLeft][MoveMidLeft]
+[Beat]![A][X]
+
+
+
 
 ## EndingSceneTextA2
 [FarFarLeft][LoadCidor][Right][LoadMira][FarRight][LoadDragana]
@@ -289,105 +654,276 @@ You're not out of the woods yet.[A]
 You really thought you[N]
 could slip out from under[N]
 me just like that?[A]
+
 [Right][TwoLineBox]
-But of course, how[N]
+But of course,[.5] how[N]
 hard could it be?[A]
-[MidLeft][CloseEyes]
-Hmph.[......][OpenEyes] Your blasted rebellion[N]
-has been a thorn in my side[AN]
-long enough.[....] I'm putting an[N]
-end to this pointless conflict[AN]
-here and now,[....] today.[A]
+
+[MidLeft][ThreeLineBox][CloseEyes]
+Hmph.[.6][OpenEyes] Your blasted rebellion[N]
+has been a thorn in my[N]
+side for long enough.[AN]
+I'm putting an end to this[N]
+pointless conflict,[.5] here[N]
+and now,[.6] today.[A]
+
 [FarRight][ThreeLineBox]
-Cidor! Don't you see the[N]
+Cidor![.6] Don't you see the[N]
 harm this is doing to our[N]
-country? Why do you-[A]
-[MidLeft]
-Enough of your political drivel,[N]
-you don't even understand what[N]
-you're fighting against. I do[AN]
-what I must for Decia.[A]
-[FarRight]
+country?[.6] Why do you-[A]
+
+[MidLeft][ThreeLineBox]
+Enough of your political drivel.[.6][N]
+You don't even understand what[N]
+you're fighting against.[AN]
+I do what I must for Decia,[.5][N]
+even if naysayers such as[N]
+yourself stand in our way.[A]
+
+[FarRight][ThreeLineBox]
 Even if that amounts to killing[N]
-your own countrymen? Letting[N]
+your own countrymen?[.6] Letting[N]
 Cythes stomp all over us?[AN]
 Just that you might become[N]
 their favourite pet?[A]
+
 [MidLeft][ThreeLineBox]
 You know nothing of what[N]
-I work towards, why I do this.[N]
-But enough Kasun, this ends[AN]
-here. Your 'liberation'[N]
-shall fall with you![A]
-[FarRight]
-Pah, like I'd fall to a[N]
+I work towards,[.5] why I do this.[.6][N]
+But enough Kasun[.5] this ends here.[AN]
+Your [.6][OpenQuote]liberation"[.6] shall fall with you.[A]
+
+[FarRight][TwoLineBox]
+Pah,[.5] like I'd fall to a[N]
 traitorous swine like you![A][X]
 
+
+
+
+
+
+## EndingSceneTextA2B
+
+[FarFarLeft][LoadCidor][MidRight][LoadDragana]
+[FarFarLeft][MoveMidLeft]
+[MidLeft][ThreeLineBox]
+You really thought you[N]
+could slip out from under[N]
+me just like that?[A]
+
+[MidRight][TwoLineBox]
+Not on my own,[.5] but[N]
+I have my allies on my side.[A]
+
+
+[MidLeft][ThreeLineBox][CloseEyes]
+Hmph.[.6][OpenEyes] Your blasted rebellion[N]
+has been a thorn in my[N]
+side for long enough.[AN]
+I'm putting an end to this[N]
+pointless conflict,[.5] here[N]
+and now,[.6] today.[A]
+
+[MidRight][ThreeLineBox]
+Cidor![.6] Don't you see the[N]
+harm this is doing to our[N]
+country?[.6] Why do you-[A]
+
+[MidLeft][ThreeLineBox]
+Enough of your political drivel.[.6][N]
+You don't even understand what[N]
+you're fighting against.[AN]
+I do what I must for Decia,[.5][N]
+even if naysayers such as[N]
+yourself stand in our way.[A]
+
+[MidRight][ThreeLineBox]
+Even if that amounts to killing[N]
+your own countrymen?[.6] Letting[N]
+Cythes stomp all over us?[AN]
+Just that you might become[N]
+their favourite pet?[A]
+
+[MidLeft][ThreeLineBox]
+You know nothing of what[N]
+I work towards,[.5] why I do this.[.6][N]
+But enough Kasun[.5] this ends here.[AN]
+Your [.6][OpenQuote]liberation"[.6] shall fall with you.[A]
+
+[MidRight][TwoLineBox]
+Pah,[.5] like I'd fall to a[N]
+traitorous swine like you![A][X]
+
+
+
+
+
+
+
 ## EndingSceneTextA3
-[MidLeft][LoadCidor][CloseEyes][MidRight][LoadDragana]
+[MidLeft][LoadCidor][CloseEyes][MidRight][LoadDragana][CloseEyes]
 [MidLeft][MoveMidLeft]
 [MidLeft][OneLineBox]
 Urkg![A][CloseSpeechSlow]
+
 [MidLeft][ClearFace][MidRight][MoveRight]
-[FarFarRight][LoadLoewe][MoveMidLeft][ClearFace][MidLeft][LoadLoewe][FarFarRight][LoadCleo][MoveFarRight]
-[FarRight]
+[Event]
+
+[FarFarRight][LoadLoewe][MoveMidLeft][ClearFace][MidLeft][LoadLoewe][FarRight][LoadCleo][MoveFarRight]
 General!!![A]
-[Right]
-Ahh[Beat] my[Beat] blood?[A]
+[Right][MidBlink]
+Ahh[LongBeat] my[LongBeat] blood?[A]
+
 [MidLeft]
-General?! No this can't-[A]
+General?![.6] No this can't-[A]
+
 [Right]
-Urgh[Beat][CloseEyes][....][A][CloseSpeechSlow][ClearFace]
-[MidLeft][MoveRight][ClearFace][Right][LoadLoewe]
+Urgh[Beat][CloseEyes][.4][A][CloseSpeechSlow][ClearFace]
+
+[MidLeft][ClearFace][Right][LoadLoewe]
 [FarLeft][LoadCidor][TwoLineBox]
-Hahh[Beat] do you see now?[N]
+Hahh[Beat][.6] do you see now?[.6][N]
 Your rebellion is futile![A]
-[Right]
-Cidor! You'll pay for[N]
-this! I'll kill you![A]
-[FarLeft][OneLineBox]
-[Beat]I suggest you flee boy.[A]
-[Right]
-You-[....] you dastard![A][CloseSpeechSlow]
+
+[Right][MoveRight]
+Cidor![.6] You'll pay for[N]
+this![.6] I'll kill you![A][CloseSpeechSlow]
+[Event]
+
+[FarLeft][OneLineBox][.6]
+[Beat][.6]I suggest you flee,[.4] boy.[A][CloseSpeechSlow]
+[Event]
+
+[Right][MoveRight]
+You-[.5] you dastard![A][CloseSpeechSlow]
 [FarLeft][ClearFace]
-[Right][MoveMidLeft][ClearFace][MidLeft][LoadLoewe][Right][LoadDragana]
+[Right][ClearFace][MidLeft][LoadLoewe][Right][LoadDragana]
+
 [FarRight]
-General! Slow down![A]
+General![.6] Slow down![A]
+
 [Right]
-All of you[Beat] Must go[Beat][A]
+All of you[LongBeat] Must go[LongBeat][A]
+
 [FarRight][TwoLineBox]
-General! I- we can't,[N]
+General![.6] I-[.5] we can't,[.5][N]
 not without you.[A]
+
 [Right][OneLineBox]
-You can, both of you[Beat] I know[Beat][A]
+You can,[.4] both of you[Beat][.5][MidBlink] I know[LongBeat][A]
+
 [MidLeft]But-[A][CloseSpeechSlow]
+
 [MidLeft][MoveFarLeft][Left][LoadMira]
 [Left]
-We have to go! Now![A]
-[FarLeft][CloseEyes][Beat][A]
+We have to go![.5] Now![A]
+
+[FarLeft][CloseEyes][LongBeat][A]
 [Left]
-Now![AN][CloseSpeechSlow]
-[FarRight][MoveFarFarRight][ClearFace][FarLeft][MoveFarFarRight][ClearFace]
-[Left][MoveMidLeft]
-Kasun[Beat][A]
+Now![A][X]
+
+
+
+
+
+## EndingSceneTextA3B
+
+[MidLeft][LoadCidor][CloseEyes][MidRight][LoadDragana][CloseEyes]
+[MidLeft][MoveMidLeft]
+[MidLeft][OneLineBox]
+Urkg![A][CloseSpeechSlow]
+
+[MidLeft][ClearFace][MidRight][MoveRight]
+[Event]
+
+[FarFarRight][LoadLoewe][MoveMidLeft][ClearFace][MidLeft][LoadLoewe][FarRight][LoadCleo][MoveFarRight]
+General!!![A]
+[Right][MidBlink]
+Ahh[LongBeat] my[LongBeat] blood?[A]
+
+[MidLeft]
+General?![.6] No this can't-[A]
+
+[Right]
+Urgh[Beat][CloseEyes][.4][A][CloseSpeechSlow][ClearFace]
+
+[MidLeft][ClearFace][Right][LoadLoewe]
+[FarLeft][LoadCidor][TwoLineBox]
+Hahh[Beat][.6] do you see now?[.6][N]
+Your rebellion is futile![A]
+
+[Right][MoveRight]
+Cidor![.6] You'll pay for[N]
+this![.6] I'll kill you![A][CloseSpeechSlow]
+[Event]
+
+[FarLeft][OneLineBox][.6]
+[Beat][.6]I suggest you flee,[.4] boy.[A][CloseSpeechSlow]
+[Event]
+
+[Right][MoveRight]
+You-[.5] you dastard![A][CloseSpeechSlow]
+[FarLeft][ClearFace]
+[Right][ClearFace][MidLeft][LoadLoewe][Right][LoadDragana]
+
+[FarRight]
+General![.6] Slow down![A]
+
+[Right]
+All of you[LongBeat] Must go[LongBeat][A]
+
+[FarRight][TwoLineBox]
+General![.6] I-[.5] we can't,[.5][N]
+not without you.[A]
+
+[Right][OneLineBox]
+You can,[.4] both of you[Beat][.5][MidBlink] I know[LongBeat][A]
+
+[MidLeft]But-[A][CloseSpeechSlow]
+
 [MidRight]
-Mira[Beat][CloseEyes][A][CloseSpeechSlow]
-[MidLeft][MoveFarFarRight][ClearFace]
-[X]
+[Beat][.5]She's right Loewe,[.5]
+we have to go.[A]
+
+[MidLeft][CloseEyes][LongBeat][A][X]
+
+
+
+
 
 ## EndingSceneTextA4
+[MidLeft][LoadMira][MidRight][LoadDragana]
+[MidLeft][OneLineBox]
+Kasun[Beat][A]
+
+[MidRight][CloseEyes]
+Mira[ToggleMouthMove].[.6].[.6].[.6][ToggleMouthMove][A][CloseSpeechSlow]
+[Event]
+
+[MidRight][ClearFace]
+
+[MidLeft][CloseEyes][.7][X]
+
+
+
+
+## EndingSceneTextA5
 [MidLeft][LoadCidor][MidRight][LoadSeleseF]
 [MidRight][OneLineBox]
-My lord, what should we do?[A]
+My lord,[.6] what should we do?[A]
+
 [MidLeft][TwoLineBox]
-Call my lieutenant, I will[N]
+Call my lieutenant,[.5] I will[N]
 send him to pursue them.[A]
+
 [MidRight][MoveMidRight][OneLineBox]
 Of course my lord![A]
+
 [MidLeft][ThreeLineBox]
 While we have cut off the serpent's[N]
-head, if you do not finish the beast it[N]
+head,[.5] if you do not finish the beast it[N]
 will simply sprout another two.[A][CloseSpeechSlow]
-[MidLeft][MoveMidLeft][TwoLineBox][CloseEyes]
-[.....]Now[Beat][....] Find me a healer,[N]
+
+[MidLeft][MoveMidLeft][TwoLineBox][CloseEyes][.7]
+[.5]Now[Beat][.6] Find me a healer,[.6][N]
 I need some time to think[Beat][OpenEyes][A][X]

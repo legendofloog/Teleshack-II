@@ -1,5 +1,5 @@
 ## Chapter22Title
-Ch22: Bingus[X]
+Ch22: Homecoming[X]
 
 ## Ch22ObjectiveDesc
 Defeat Eleanor[X]
@@ -27,7 +27,7 @@ might be you when I heard[N]
 all of the fighting going on.[A]
 
 [FarRight][ThreeLineBox]
-What are you doing here Trajan?[N]
+What are you doing here, Trajan?[N]
 I thought you were with[N]
 Coralia and Elias in Gechrysos?[A]
 
@@ -110,3 +110,708 @@ all sorts of rare goodies.[AN]
 But you'll need a special[N]
 card for them to let you in.[....][N]
 No idea how you get one though[Beat][A][X]
+
+
+
+
+
+
+
+## Ch22BeginningScene1
+[MidRight][LoadCleo]
+[Beat][A]
+[FarFarLeft][LoadLoewePunished]
+[MoveMidLeft]
+
+[MidLeft][TwoLineBox]
+Ah, there are you! I've been looking for[N]
+you. We're nearly at the Cythean coast.[A]
+
+
+[MidRight][OneLineBox]
+[CloseEyes]Indeed we are.[A]
+
+
+[MidLeft][TwoLineBox]
+We were going to discuss strategy if[N]
+you'd like to[Beat] to uh[Beat] hey, Cleo?[AN]
+You look[Beat] pale. You're not gonna[N]
+get all seasick on us, are you?[A]
+
+
+[MidRight]
+[OpenEyes]W-what? No! I'm not ill, I'm just[Beat][AN]
+It's[Beat] been a long time[Beat][A]
+
+
+[MidLeft]
+Ah, right. I should've figured as much.[N]
+That was[Beat] insensitive of me.[A]
+
+
+[MidRight][ThreeLineBox]
+It's alright. I knew this day would[N]
+come eventually, but I thought I could[N]
+prepare myself for when it arrived.[AN]
+Now that I'm here, though[Beat] I[Beat][N]
+can't shake this horrible feeling[Beat][A]
+
+
+[MidLeft][TwoLineBox]
+Is it that different from the fighting[N]
+we've already been through, really?[AN]
+We've fought the Cytheans for so long![A]
+
+
+
+[MidRight][ThreeLineBox]
+And it never got any easier. At least,[N]
+not enough to ever feel[Beat] normal.[AN]
+This time, I won't be protecting people.[AN]
+We're[Beat] we're invading them, Loewe.[N]
+Families, innocent men, local militia.[N]
+Ordinary folks, fighting for their homes.[AN]
+For[Beat] for my home.[A] Or[Beat] maybe not.[AN]
+Maybe now, it's no different than Freyse[N]
+or Mahemen or Chouwouj; a nation to some,[N]
+but just another battlefield for us.[AN]
+But if Cythes is no longer a home[N]
+to me, then[Beat] then that means[Beat][A]
+
+
+[MidLeft][OneLineBox]
+Cleo. What is a home to you?[A]
+
+
+[MidRight][TwoLineBox]
+I[Beat] it's[Beat] I suppose it would be the[N]
+place where my life is, so to speak.[AN]
+Where I can feel grounded; where those I[N]
+care about are nearest; where I belong.[A]
+
+
+[MidLeft]
+But isn't that what the Liberation is?[N]
+Isn't this where you belong, now?[A]
+
+
+[MidRight][OneLineBox]
+I[Beat] it doesn't[Beat] really[Beat][A]
+
+
+
+[MidLeft]
+O-oh. I see.[A]
+
+
+
+[MidRight][TwoLineBox]
+I'm sorry, Loewe. I know that's not the[N]
+answer you wanted to hear, but I just[Beat][AN]
+I don't mean to imply that I feel[Beat][N]
+that is to say, I'm not[Beat] er[Beat][A]
+
+
+[MidLeft]
+Don't worry, I, uh[Beat] I get it. I do.[AN]
+But[Beat] what about your father?[A]
+
+
+[MidRight][OneLineBox]
+My father[Beat] he's[Beat] not the same.[A]
+
+
+[MidLeft][TwoLineBox]
+[Beat] I'll meet you below decks. We'll[N]
+probably just start if you don't show.[A]
+
+
+[MidRight]
+Right. Don't trouble yourself on my[N]
+behalf, please. I'll be okay.[A]
+
+
+[MidLeft][OneLineBox]
+I hope that's true[Beat][A]
+
+
+[ClearFace]
+[MidRight][TwoLineBox]
+My father[Beat] he's waiting for me, too.[AN]
+I hadn't even considered[Beat][A][X]
+
+
+
+
+
+
+## Ch22BeginningScene2
+
+
+
+[MidRight][LoadKwame]
+[FarFarLeft][LoadLoewePunished]
+[MoveLeft]
+[Left][OneLineBox]
+Sorry I'm late, Kwame..[A]
+
+
+[MidRight][ThreeLineBox]
+It would not be the first time,[N]
+but no matter. I thought you[N]
+were going to go retrieve Cleo?[A]
+
+
+[Left][TwoLineBox]
+She's[Beat] working through something[N]
+right now. She'll be here[Beat] maybe.[A]
+
+[MidRight]
+I[Beat] see. Not much of a meeting then,[N]
+is it, with just the two of us alone?[A]
+
+
+[Left]
+It does sort of feel that way, huh?[AN]
+Ever since we left Boro behind, things[N]
+have been so[Beat] quiet. I kinda hate it?[A]
+
+
+[MidRight][ThreeLineBox]
+I assure you, had this been an eventful[N]
+boat ride, we would likely be sunken at[N]
+the bottom of the Cythean sea by now.[AN]
+It's a lucky thing the intel we used[N]
+was accurate; a chance encounter with[N]
+the Cythean navy could've lost this war.[A]
+
+
+[Left][ThreeLineBox]
+We would have found a way out.[N]
+We always do, don't we? But[Beat][AN]
+This will sound sappy as all hell,[N]
+but for all the foes I've defeated,[AN]
+I've never been able to win in[N]
+battles against my own inner[N]
+demons without all of your help.[AN]
+Now, the shoe's on the other foot,[N]
+and[Beat] I just don't know how to help.[AN]
+I just[Beat] left her above deck[N]
+to figure things out herself.[A]
+
+
+[MidRight][OneLineBox]
+[Beat] Well[Beat] you could try[Beat] er[Beat][A]
+
+[Left]
+You don't know either, huh?[A]
+
+
+[MidRight][TwoLineBox]
+Th-there are few things I do not know.[AN]
+Wisdom is simply the act of recognizing[N]
+that which is beyond your own ken.[A]
+
+
+[Left][OneLineBox]
+And this is one of them?[A]
+
+
+[MidRight][ThreeLineBox]
+Precisely.[A] Listen well, Loewe;[N]
+not every battle is yours to fight.[AN]
+Cleo already has the answers she needs.[N]
+She will find her way again soon. All[N]
+you need do is what you've always done.[A]
+
+
+[Left][OneLineBox]
+[Beat] Brooding[Beat]?[A]
+
+
+[MidRight][ThreeLineBox]
+I would thank you not to. No, Loewe;[AN]
+just be there for her, as you've been[N]
+since we started this journey, and as[N]
+she's done for you countless times.[A]
+
+
+[Left][OneLineBox]
+But[Beat][A]
+
+[FarFarLeft]
+What happened to discussing strategy?[A]
+
+[FarFarLeft][LoadCleo]
+[MoveFarLeft]
+[Left]
+Cleo![A]
+
+
+[MidRight][TwoLineBox]
+[ToggleSmile]Ah, there you are. I was beginning[N]
+to worry you weren't coming.[A]
+
+
+[FarLeft]
+Ah, then I must be mistaken; surely, you[N]
+two have been hard at work, yes?[AN]
+What have we discussed so far? Troop[N]
+movements? Allocation of supplies?[AN]
+Do you even have a map of the city?[A]
+
+
+[MidRight][OneLineBox]
+[ToggleSmile]I, ah[Beat] we were simply[Beat][A]
+
+
+[FarLeft][TwoLineBox]
+Wasting time? Flapping your gums?[N]
+Come now, we've a war to plan, don't we?[A]
+
+
+[MidRight]
+Yes, of course, you're right.[N]
+Now, let us begin with-[A]
+
+
+[FarLeft][OneLineBox]
+The intel I've just picked up.[A]
+
+
+[MidRight]
+Oh?[A]
+
+
+[FarLeft][TwoLineBox]
+I may have gone for a little bit of a,[N]
+uh, recreational flight on my pegasus.[AN]
+And I think, before we discuss too much[N]
+further, you two should come with me.[A]
+
+
+[Left][OneLineBox]
+Why? Did you find something?[A]
+
+
+[FarLeft][TwoLineBox]
+You could say that. Come on, we should[N]
+hurry; he'll surely be on the move.[A]
+
+
+[ClearFace]
+[Left]
+You heard her, Kwame.[N]
+Let's get a move on![A]
+[ClearFace]
+
+
+[MidRight][OneLineBox]
+[OpenQuote]He?" Who has the girl found, I wonder?[A][X]
+
+
+
+
+## Ch22BeginningScene3
+
+[MidLeft][LoadKwame]
+[Left][LoadLoewePunished]
+[MidRight][LoadCleo][OneLineBox]
+It should be just over this way.[A]
+
+[MidLeft][TwoLineBox]
+Y-you two[Beat] fly like this[Beat][N]
+every day? H-how!? Why!?[A]
+
+[Left][OneLineBox]
+What's wrong, Kwame? Afraid of heights?[A]
+
+[MidLeft][TwoLineBox]
+C-could you at least consider slowing[N]
+down? Spare an old man some courtesy[Beat][A]
+
+[Left]
+Aww, come on, what's a little fresh air[N]
+gonna do? You're, what, like, a thousand?[AN]
+Don't you think you should live a little?[A]
+
+[MidLeft]
+I've lived a great deal, Loewe. Long[N]
+enough to know I h-hate flying![A]
+
+[MidRight]
+Are you two done back there? We're[N]
+coming up on what I saw earlier.[A]
+
+[Left]
+We appear to be at an impasse, so[Beat][N]
+yeah, I guess we're pretty much done.[A]
+
+[MidLeft]
+[OpenQuote]An impasse." Kids these days[Beat][A][X]
+
+
+
+
+## Ch22BeginningScene4
+
+
+[Left][LoadCleo]
+[FarLeft][LoadLoewePunished][TwoLineBox]
+Alright, Cleo, I trust you and all, but[N]
+this looks like an empty forest to me.[A]
+
+
+[Left]
+Yeah, yeah; he's around here somewhere.[N]
+Maybe if make a bunch of noise?[A]
+
+[FarFarRight][LoadKwame]
+[MoveMidRight]
+[MidRight]
+Cleo, perhaps you should explain what[N]
+we're meant to be looking for out here?[A]
+
+[Left][OneLineBox]
+And ruin the surprise?[A]
+
+
+[FarLeft]
+Oh, great, she's finding this fun, Kwame.[A]
+
+
+[MidRight]
+Children and their games[Beat][A]
+
+
+[FarFarRight]
+All of you, keep it down, would you!?[A]
+
+
+[FarLeft]
+Wait, is that[Beat] No way![A]
+[MoveFarFarRight][CloseSpeechSlow]
+[ClearFace]
+[Left]
+Hey, wait up![A][CloseSpeechSlow]
+[MoveFarFarRight]
+[ClearFace]
+
+[MidRight][TwoLineBox]
+And off they go, again, leaving an old[N]
+man to hobble off after them as usual.[A][X]
+
+
+
+
+## Ch22BeginningScene5
+
+[MidRight][LoadTrajan]
+[FarLeft][LoadLoewePunished]
+[Left][LoadCleo]
+[MidRight][OneLineBox]
+Hey.[A]
+
+[FarLeft]
+Trajan![A]
+
+[MidRight]
+How's it going, Loewe? Miss me?[A]
+
+[Left]
+It's good to see you again.[A]
+
+[MidRight][ThreeLineBox]
+Right back at you, Cleo. Though, maybe[N]
+you could have found a more inconspicuous[N]
+way of reuniting? It's not safe here.[A]
+
+[FarLeft]
+But[Beat] What are you doing here?[N]
+I thought you were supposed to be with[N]
+Coralia and Elias in Gechrysos?[A]
+
+[MidRight]
+We can discuss that later; there's[N]
+Cytheans on my trail, and if they[N]
+didn't know I was before, they do now.[A]
+
+[Left][OneLineBox]
+W-wait, you're being followed? And I-?[A]
+
+
+[MidRight][ThreeLineBox]
+It's too late now; It was gonna have to[N]
+come to blows eventually. At least this[N]
+way, I have some friends backing me up.[AN]
+And besides, I've been out[N]
+of action for far far too long.[AN]
+A good old-fashioned scrap could do[N]
+me some good, wouldn't you agree?[A]
+
+
+[FarLeft][ClearFace][LoadKwame][TwoLineBox]
+As nice a reunion as this is, we can't[N]
+fight here; our forces are still at sea,[AN]
+and we can't afford to take risks when[N]
+we're so close to the end of this war.[AN]
+Trajan, you should accompany us back to[N]
+the boat; we'll be arriving soon, and-[A]
+
+
+[MidRight][ThreeLineBox]
+Thanks, old timer, but no thanks.[AN]
+If you guys don't wanna fight here,[N]
+you should just head on back, and I[N]
+can just meet up with you in town.[A]
+
+
+[Left][OneLineBox]
+Um[Beat] is that not[Beat] reckless of you?[A]
+
+[MidRight][ThreeLineBox]
+Cleo, the entire reason I'm out here is[N]
+to draw their forces away from where[N]
+they're supposed to be. I'll be fine.[AN]
+You three, on the other hand, have a[N]
+mission to attend to. Don't you worry;[AN]
+I'll be right behind you. Promise.[A]
+
+[Left][OneLineBox]
+We're in a boat.[A]
+
+[MidRight]
+I have long legs.[A]
+
+[FarLeft][TwoLineBox]
+He's clearly made up his mind. Well,[N]
+I wish you luck in this[Beat] endeavour.[A]
+
+[MidRight][ThreeLineBox]
+And I wish you the same. Don't worry,[N]
+it'll take more than some stray Cytheans[N]
+to stop me. I'll meet you at port![A]
+
+[ClearFace]
+[FarLeft][TwoLineBox]
+I can see where you two get[N]
+your headstrong streak from.[A]
+
+
+[Left][TwoLineBox]
+Yeah, we learned from the best.[AN]
+Though, if they know Trajan is here,[N]
+the port will likely be heavily guarded.[AN]
+We may be in for a fight once we land.[A]
+
+[FarLeft]
+Best to head back quickly, then,[N]
+so we can prepare for battle.[A]
+
+[Left][OneLineBox]
+Right. Let's get back on the pegasi.[A]
+
+[FarLeft][TwoLineBox]
+O-oh, right. The pegasi. Perhaps I[N]
+should have asked to stay behind[Beat][A][X]
+
+## Ch22CleoPostPreps
+
+[MidLeft][LoadCleo]
+Okay, stay calm, Cleo. It's just another[N]
+battle; it's just like all the rest.[AN]
+Even if you recognize the streets[Beat][N]
+or the f-faces[Beat][A][CloseEyes] it's just[Beat][A][X]
+
+
+
+
+
+## Ch22EndingScene1
+
+
+[Right][LoadLoewePunished]
+The fighting's stopped[Beat] Looks like[N]
+we won. How's everyone holding up?[A]
+[FarRight][LoadKwame]
+The port is secured, and our forces[N]
+have all made landfall safely.[A]
+[FarLeft][LoadTrajan]
+A couple scrapes, but nothing major.[N]
+It's good to be back in the fight![A]
+[Left][LoadCleo][OneLineBox]
+I'm[Beat] glad we made it out okay.[A]
+[FarRight][TwoLineBox]
+[Beat] ahem. Trajan, it may do the men[N]
+some good if you come speak to them.[AN]
+They'll be gladdened to see their leader[N]
+on the front lines with them, no?[A]
+[FarLeft]
+Ah, perhaps you're right. Morale is[N]
+crucial, especially in enemy territory.[AN]
+When I get back, I'll explain how I[N]
+got separated from the others.[A]
+[ClearFace]
+[FarRight][OneLineBox]
+Cleo[Beat][A]
+[Left]
+[Beat][A]
+[FarRight][TwoLineBox]
+Sigh[Beat] be at ease, child.[N]
+You are not here alone.[A]
+[ClearFace]
+[Left][OneLineBox]
+[Beat][A]
+[Right]
+Uh[Beat] Are you[Beat] feeling alright?[A]
+[Left][TwoLineBox]
+I said something unkind. On the boat.[N]
+I just want to apologize for implying-[A]
+[Right][ThreeLineBox]
+No, Cleo, I told you. I understand.[AN]
+It's[Beat] complicated. Family, that is.[AN]
+I still don't really know how I ought to[N]
+feel about Catrin[Beat] about my mother[Beat][AN]
+It must be hard, coming home to a place[N]
+that you love, knowing that it holds[N]
+somebody you hate within its walls.[A]
+[Left][TwoLineBox]
+[Beat] Yeah.[A] I don't know.[AN]
+He's an[Beat] awful man. Truly.[A]
+[Right][OneLineBox]
+And yet[Beat][A]
+[Left][TwoLineBox]
+And yet, indeed. He's still my father.[N]
+If he were any other man, I'd hate him.[AN]
+I still do, even. But it's not clean.[A]
+[Right][OneLineBox]
+Do you know if you're ready to face him?[A]
+[Left][TwoLineBox]
+[Beat][A] Maybe.[A] I have a feeling[Beat][N]
+the words will come when I see him.[A][X]
+
+## Ch22EndingScene2
+
+
+[MidRight][LoadTrajan]
+[MidLeft][LoadKwame]
+[MidRight]
+So that's the full story. I couldn't[N]
+risk Coralia getting caught, so[Beat][AN]
+we split up. I decided to come meet you[N]
+here, to establish a foothold in town.[AN]
+As far as I'm aware, the two of them[N]
+have already arrived in the city by now.[A]
+[MidLeft]
+I see. How[Beat] confident you are in[N]
+your abilities to do such a thing.[A]
+[MidRight]
+Ahaha, you think me a fool? Let me tell[N]
+you, Kwame; there are no sensible rebels.[AN]
+Only a fool would fight in this war,[N]
+and only a coward would choose not to.[A]
+[MidLeft]
+Is that right? I suppose I am glad[N]
+to be in the company of fools, then.[A]
+[MidRight]
+Damn right.[A] Heh, you know[Beat][N]
+those kids really look up to you.[A]
+[MidLeft][OneLineBox]
+They[Beat] do they now?[A]
+[MidRight][TwoLineBox]
+I can't say I trusted you the first time[N]
+we met. I don't think they did, either.[AN]
+But, with Dragana gone[Beat] they needed[N]
+somebody to keep them from unraveling.[AN]
+I'm glad you were there for them, when[N]
+they needed somebody the most.[A] Thanks.[A]
+[MidLeft]
+I-I[Beat] You are most welcome, Trajan.[AN]
+I don't presume to be a good role model,[N]
+but[Beat] I believe in them. Very much so.[AN]
+If anyone can pull it off, it's them[Beat][A][X]
+
+## VillageAText22
+
+[MidLeft][LoadFace][0x59][0x1][MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Back in my day I used to be a knight[N]
+up in the capital, famous I was.[AN]
+And I earned it too, wasn't born into[N]
+no wealth, I fought out there for real.[AN]
+Have this crest they gave me when I was[N]
+knighted but, I don't have much use for[N]
+it anymore.[A] Only reminds me of old[N]
+friends long gone from my life now.[AN]
+Thanks for listening to an old codger[N]
+sit and ramble, it means a lot.[AN]
+Take this with you, I can't use it now,[N]
+but it might provide you with some luck.[AN]
+Good fortune on your travels adventurer.[A][X]
+
+## VillageBText22
+
+[FarLeft][LoadFace][0x5A][0x1][Left][LoadFace][0x60][0x1][MidRight][LoadActive]
+[FarLeft]
+Oh? Travellers? Perfect, here I have[N]
+this light rune, take it, It's useless.[AN]
+Can't find a damn use for the thing.[A]
+[Left]
+Oh come now dear, that was a gift from your[N]
+sister, it's got to be worth something.[AN]
+Why would they make it if it does nothing?[A]
+[FarLeft]
+I don't know, but even if it did, what[N]
+use is it if we can't figure it out?[AN]
+It's just crowding up space and[N]
+collecting dust in the house.[A]
+[Left]
+So you're just going to[N]
+dump it on these travellers?[A]
+[FarLeft][OneLineBox]
+Yes.[A]
+[Left][MoveLeft][TwoLineBox]
+Bah, fine, no use arguing with[N]
+you, always the stubborn oaf![A]
+[ClearFace]
+[FarLeft]
+Darn it! Ah just take this[N]
+she'll forget about it soon enough.[A][X]
+
+## VillageCText22
+
+[MidLeft][LoadFace][0x62][0x1][MidRight][LoadActive]
+[MidLeft]
+W-who are you? You don't look local.[AN]
+Are you from Decia? I hear the fightin'[N]
+outside[Beat] Please, I don't have anythin![AN]
+Oh w-wait I, here, take this staff.[AN]
+It's my sister's but[Beat] I ain't no[N]
+use for it just, please, let me be.[A][X]
+
+## Ch22EleanorVSText
+[MidLeft][LoadEleanor]
+So, the Decian rebels trying[N]
+to slip in the back door eh?[AN]
+Well you can think again[N]
+prepare to meet your end![A][X]
+
+## NPCVillage2Text
+
+[MidLeft][LoadFace][0x5D][0x1][MidRight][LoadActive]
+[MidLeft]
+For the last year things up here have[N]
+been getting more and more dire.[AN]
+We're pretty cut off from the rest[N]
+of Cythes so we rely a lot on ourselves.[AN]
+But we can't grow our crops, and the[N]
+weather has been beyond tumultuous.[AN]
+It even started snowing a couple of[N]
+months back, utterly unheard of.[AN]
+To be honest with you, it's only gettin[N]
+worse, and I hear it's as bad elsewhere.[AN]
+I've even been hearing rumours it's[Beat][AN]
+Well it's somethin with Byelen, heard[N]
+worrying things from those further inland.[AN]
+If you're headed towards Gechrysos just,[N]
+be careful, the air is wrong, I can feel it.[A][X]

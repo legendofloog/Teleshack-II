@@ -22,7 +22,7 @@ TurnEventPlayer(0, ReinforcementEvent, 7)
 END_MAIN
 
 Turn1Event:
-CUSA Radnitz
+CUSA Korovai
 //CUSA Carl
 NoFade
 ENDA
@@ -67,22 +67,22 @@ ENDA
 
 ALIGN 32
 CharacterBasedEvents:
-CharacterEventBothWays(0x14,RadnitzValseTalk, Radnitz, Valse)
-CharacterEventBothWays(0x15,RadnitzHornetTalk, Radnitz, Hornet)
+CharacterEventBothWays(0x14,KorovaiValseTalk, Korovai, Valse)
+CharacterEventBothWays(0x15,KorovaiHornetTalk, Korovai, Hornet)
 
 END_MAIN
 
-RadnitzValseTalk:
+KorovaiValseTalk:
 MUSC WithUs_Song 
-Text(Ch10RadnitzValseTalk)
+Text(Ch10KorovaiValseTalk)
 CUSA Valse
 SetFatigue(Valse,0)
 NoFade
 ENDA
 
-RadnitzHornetTalk:
+KorovaiHornetTalk:
 MUSC WithUs_Song 
-Text(Ch10RadnitzHornetTalk)
+Text(Ch10KorovaiHornetTalk)
 CUSA Hornet
 SetFatigue(Hornet,0)
 NoFade
@@ -172,7 +172,7 @@ UNIT
 
 EnemyUnits:
 // Ally
-UNIT Radnitz DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary] NoAI
+UNIT Korovai DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary] NoAI
 
 UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,Vulnerary] NeverMoveAI
 UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI
@@ -293,7 +293,7 @@ BeginningScene:
 	//SetUnitItemDurability(Valse,2,LuzenScroll)
 	//SetUnitItemDurability(Hornet,2,RaioScroll)
 
-	AddLeadership(Radnitz,3)
+	AddLeadership(Korovai,3)
 
 	MUSC Sortie_Formation 
 
@@ -337,9 +337,9 @@ EndingScene:
 	ENUT 0x8D
 	LABEL 4
 	FADI 15
-	SendAll(Radnitz)
-	CUSN Radnitz
-	REMOVEUNIT Radnitz
+	SendAll(Korovai)
+	REMOVEUNIT Korovai
+	ClearUnit(Korovai)
 	MNC2 Chapter11
 	NoFade
 	ENDA

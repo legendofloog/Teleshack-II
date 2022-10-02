@@ -1,0 +1,5 @@
+
+ALIGN 4
+#include "LoadCapturedUnits.lyn.event"
+
+#define LoadCapturedUnits(units) "SVAL 0x1 (units+0x8000000); ASMC LoadCapturedUnitsASMC"

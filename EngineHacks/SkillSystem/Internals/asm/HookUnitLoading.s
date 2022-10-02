@@ -29,7 +29,7 @@ HookUnitLoading:
 	ldr  r4, [r5]
 	ldrb r4, [r4, #4] @char num in r4
 
-	cmp r4, #0x46
+	cmp r4, #0x4A
 	bhi no_skills
 
 	ldr r0, =BWLTable

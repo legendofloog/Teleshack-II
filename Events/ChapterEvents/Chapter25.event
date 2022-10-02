@@ -18,11 +18,14 @@ TurnEventPlayer(0x0, Turn1Speeches, 1)
 TurnEventPlayer(0x0, CherneVantage, 2)
 TurnEventPlayer(0x0, ChernePass, 4)
 TurnEventPlayer(0x0, CherneFortune, 3)
+TurnEventPlayer(0x0, MureibFinalLoad, 3)
 TurnEventPlayer(0x0, Turn2Reinforce, 2)
 TurnEventPlayer(0x0, Turn4Reinforce, 4)
 TurnEventPlayer(0x0, Turn6Reinforce, 6)
 TurnEventPlayer(0x0, Turn8Reinforce, 8)
 TurnEventPlayer(0x0, Turn10Reinforce, 10)
+TurnEventPlayer(0x0, EternalReinforce, 12, 255)
+TurnEventPlayer(0,ClearSeraFlag,1,0xFF)
 	END_MAIN
 
 ALIGN 32
@@ -30,12 +33,11 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
-	DefeatBoss(EndingScene)
+	DefeatBoss
 	CauseGameOverIfLordDies
 	END_MAIN
 
 LocationBasedEvents:
-
 	END_MAIN
 
 Dunno1:
@@ -69,6 +71,8 @@ LoadUnit(13, 38)
 LoadUnit(15, 38)
 LoadUnit(17, 38)
 LoadUnit(19, 38)
+LoadUnit(14, 39)
+LoadUnit(16, 39)
 UNIT
 
 OutOfCatacombsLoeweCleo:
@@ -82,7 +86,7 @@ UNIT Athanasius DarkBishop 0x0 Level(15,Ally,False) [16,35] 0x0 0x0 0x0 0x0 [Lun
 UNIT
 
 InitialEnemyUnits:
-UNIT Cherne DarkBishop 0x0 Level(20,Enemy,False) [15,1] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
+UNIT Cherne CherneClass 0x0 Level(20,Enemy,False) [15,1] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
 UNIT EndgameGenerics Swordmaster 0x0 Level(15, Enemy, True) [11,34] 0x0 0x0 0x0 0x0 [MasterSword] AttackInRangeAI
 UNIT EndgameGenerics Sage 0x0 Level(15, Enemy, True) [7,35] 0x0 0x0 0x0 0x0 [Tornado] AttackInRangeAI
 UNIT EndgameGenerics HighPriest 0x0 Level(15, Enemy, True) [19,33] 0x0 0x0 0x0 0x0 [Nosferatu, Malkhut] AttackInRangeAI
@@ -137,8 +141,8 @@ UNIT EndgameGenerics WyvernLord 0x0 Level(15, Enemy, True) [27,0] 0x0 0x0 0x1 RE
 UNIT
 
 FlierReinforcements2:
-UNIT EndgameGenerics Falcoknight 0x0 Level(15, Enemy, True) [0, 17] 0x0 0x0 0x1 REDA0R17 [SilverSword] ChargeAI
-UNIT EndgameGenerics WyvernLord 0x0 Level(15, Enemy, True) [29,25] 0x0 0x0 0x1 REDA29R25 [SilverLance] ChargeAI
+UNIT EndgameGenerics Falcoknight 0x0 Level(15, Enemy, True) [0, 17] 0x0 0x0 0x1 REDA0R17 [SilverLance] ChargeAI
+UNIT EndgameGenerics WyvernLord 0x0 Level(15, Enemy, True) [29,25] 0x0 0x0 0x1 REDA29R25 [SilverAxe] ChargeAI
 UNIT
 
 BackReinforcements1:
@@ -161,6 +165,11 @@ UNIT EndgameGenerics Warrior 0x0 Level(15, Enemy, True) [0,22] 0x0 0x0 0x1 REDA0
 UNIT EndgameGenerics Champion 0x0 Level(15, Enemy, True) [29,22] 0x0 0x0 0x1 REDA29R22 [SilverLance] ChargeAI
 UNIT
 
+MidReinforcements3:
+UNIT EndgameGenerics Sniper 0x0 Level(15, Enemy, True) [0,22] 0x0 0x0 0x1 REDA0R22 [SilverBow] ChargeAI
+UNIT EndgameGenerics DarkBishop 0x0 Level(15, Enemy, True) [29,22] 0x0 0x0 0x1 REDA29R22 [Jormungand] ChargeAI
+UNIT
+
 UpperReinforcements1:
 UNIT EndgameGenerics MageKnight 0x0 Level(15, Enemy, True) [0,12] 0x0 0x0 0x1 REDA0R12 [Tornado] ChargeAI
 UNIT EndgameGenerics ArchKnight 0x0 Level(15, Enemy, True) [0,31] 0x0 0x0 0x1 REDA0R31 [SilverBow] ChargeAI
@@ -171,8 +180,12 @@ UNIT EndgameGenerics General 0x0 Level(15, Enemy, True) [0,12] 0x0 0x0 0x1 REDA0
 UNIT EndgameGenerics Baron 0x0 Level(15, Enemy, True) [0,31] 0x0 0x0 0x1 REDA0R31 [Hel] ChargeAI
 UNIT
 
+MureibFinalGroup:
+UNIT MureibEndgame Bishop 0x0 Level(20,NPC, False) [18,39] 0x0 0x0 0x1 REDA18R34 [Nosferatu, Sleep] ChargeAI
+UNIT
+
 MahemenVsCherneCutscene:
-UNIT Cherne DarkBishop 0x0 Level(20,Enemy,False) [15,5] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
+UNIT Cherne CherneClass 0x0 Level(20,Enemy,False) [15,5] 0x0 0x0 0x0 0x0 [RagnarokPass, RagnarokHawkeye, RagnarokVantage, RagnarokFortune] AttackInRangeAI
 UNIT EndgameGenerics Swordmaster 0x0 Level(15, Enemy, True) [13,7] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
 UNIT EndgameGenerics Halberdier 0x0 Level(15, Enemy, True) [14,6] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
 UNIT EndgameGenerics Hero 0x0 Level(15, Enemy, True) [16,6] 0x0 0x0 0x0 0x0 [SilverSword] ChargeAI
@@ -212,6 +225,11 @@ SpawnReinforcements(MidReinforcements2)
 NoFade
 ENDA
 
+ClearSeraFlag:
+ENUF 0x7C
+NoFade
+ENDA
+
 Turn4Reinforce:
 SpawnReinforcements(FlierReinforcements2)
 SpawnReinforcements(BackReinforcements1)
@@ -221,12 +239,14 @@ ENDA
 Turn6Reinforce:
 SpawnReinforcements(BackReinforcements2)
 SpawnReinforcements(MidReinforcements1)
+SpawnReinforcements(FlierReinforcements1)
 NoFade
 ENDA
 
 Turn8Reinforce:
 SpawnReinforcements(FlierReinforcements1)
 SpawnReinforcements(FlierReinforcements2)
+SpawnReinforcements(BackReinforcements1)
 NoFade
 ENDA
 
@@ -234,6 +254,18 @@ Turn10Reinforce:
 SpawnReinforcements(FlierReinforcements1)
 SpawnReinforcements(MidReinforcements2)
 SpawnReinforcements(BackReinforcements1)
+NoFade
+ENDA
+
+EternalReinforce:
+CHECK_TURNS
+SVAL 0x7 0x1
+SAND 0xC7C
+BNE 0x9000 0xC 0x0
+SpawnReinforcements(FlierReinforcements2)
+SpawnReinforcements(MidReinforcements1)
+SpawnReinforcements(BackReinforcements1)
+LABEL 0x9000
 NoFade
 ENDA
 
@@ -276,10 +308,85 @@ NoFade
 ENDA
 
 Turn1Speeches:
+MUSC FE5_InTheBattle_Fate
 CameraCursor(Loewe)
 Text(EpicSpeechOfEpicness)
+FinalBattleFlash(Mira,MiraFinalBattleQuote,200)
+FinalBattleFlash(Iskra,IskraFinalBattleQuote,201)
+FinalBattleFlash(Emil,EmilFinalBattleQuote,202)
+FinalBattleFlash(Svetomir,SvetomirFinalBattleQuote,203)
+FinalBattleFlash(Alena,AlenaFinalBattleQuote,204)
+FinalBattleFlash(Varga,VargaFinalBattleQuote,205)
+FinalBattleFlash(Delilah,DelilahFinalBattleQuote,206)
+FinalBattleFlash(Alex,AlexFinalBattleQuote,207)
+FinalBattleFlash(Axel,AxelFinalBattleQuote,208)
+FinalBattleFlash(Zwieback,ZwiebackFinalBattleQuote,209)
+FinalBattleFlash(Filone,FiloneFinalBattleQuote,210)
+FinalBattleFlash(Longxia,LongxiaFinalBattleQuote,211)
+FinalBattleFlash(Fangai,FangaiFinalBattleQuote,212)
+FinalBattleFlash(Mish,MishFinalBattleQuote,213)
+FinalBattleFlash(Tobie,TobieFinalBattleQuote,214)
+FinalBattleFlash(Awa,AwaFinalBattleQuote,215)
+FinalBattleFlash(Matthias,MatthiasFinalBattleQuote,216)
+FinalBattleFlash(Faolan,FaolanFinalBattleQuote,217)
+FinalBattleFlash(Cadenza,CadenzaFinalBattleQuote,218)
+FinalBattleFlash(Leina,LeinaFinalBattleQuote,219)
+FinalBattleFlash(Cromar,CromarFinalBattleQuote,220)
+FinalBattleFlash(Iberis,IberisFinalBattleQuote,221)
+FinalBattleFlash(Buldak,BuldakFinalBattleQuote,222)
+FinalBattleFlash(Nora,NoraFinalBattleQuote,223)
+FinalBattleFlash(Hans,HansFinalBattleQuote,224)
+FinalBattleFlash(Meldan,MeldanFinalBattleQuote,225)
+FinalBattleFlash(Jenny,JennyFinalBattleQuote,226)
+FinalBattleFlash(Hornet,HornetFinalBattleQuote,227)
+FinalBattleFlash(Valse,ValseFinalBattleQuote,228)
+FinalBattleFlash(Ichwep,IchwepFinalBattleQuote,229)
+FinalBattleFlash(Milo,MiloFinalBattleQuote,230)
+FinalBattleFlash(Mink,MinkFinalBattleQuote,231)
+FinalBattleFlash(Tiberius,TiberiusFinalBattleQuote,232)
+FinalBattleFlash(Ellerey,EllereyFinalBattleQuote,233)
+FinalBattleFlash(Mantou,MantouFinalBattleQuote,234)
+FinalBattleFlash(Tippany,TippanyFinalBattleQuote,235)
+FinalBattleFlash(Pelecaye,PelecayeFinalBattleQuote,236)
+FinalBattleFlash(Carl,CarlFinalBattleQuote,237)
+FinalBattleFlash(Takai,TakaiFinalBattleQuote,238)
+FinalBattleFlash(Darby,DarbyFinalBattleQuote,239)
+FinalBattleFlash(Jacinth,JacinthFinalBattleQuote,240)
+FinalBattleFlash(Nahiza,NahizaFinalBattleQuote,241)
+FinalBattleFlash(Augur,AugurFinalBattleQuote,242)
+FinalBattleFlash(Ilse,IlseFinalBattleQuote,243)
+FinalBattleFlash(Asha,AshaFinalBattleQuote,244)
+FinalBattleFlash(Rashid,RashidFinalBattleQuote,245)
+FinalBattleFlash(Kofi,KofiFinalBattleQuote,246)
+FinalBattleFlash(Nikolas,NikolasFinalBattleQuote,247)
+FinalBattleFlash(Sera,SeraFinalBattleQuote,248)
+FinalBattleFlash(Shaw,ShawFinalBattleQuote,249)
+FinalBattleFlash(Tao,TaoFinalBattleQuote,250)
+FinalBattleFlash(Joie,JoieFinalBattleQuote,251)
+FinalBattleFlash(Apsis,ApsisFinalBattleQuote,252)
+FinalBattleFlash(Zhara,ZharaFinalBattleQuote,253)
+FinalBattleFlash(Ojasvi,OjasviFinalBattleQuote,254)
+FinalBattleFlash(Groto,GrotoFinalBattleQuote,255)
+FinalBattleFlash(Volran,VolranFinalBattleQuote,256)
+FinalBattleFlash(Tara,TaraFinalBattleQuote,257)
+FinalBattleFlash(Jerry,JerryFinalBattleQuote,258)
+FinalBattleFlash(Lyre,LyreFinalBattleQuote,259)
+FinalBattleFlash(Ngondala,NgondalaFinalBattleQuote,260)
+FinalBattleFlash(CatrinReal,CatrinFinalBattleQuote,261)
+FinalBattleFlash(Locke,LockeFinalBattleQuote,262)
+FinalBattleFlash(TrajanReal,TrajanFinalBattleQuote,263)
+FinalBattleFlash(EliasReal,EliasFinalBattleQuote,264)
+FinalBattleFlash(BoroReal,BoroFinalBattleQuote,265)
+FinalBattleFlash(BarodReal,BarodFinalBattleQuote,266)
+FinalBattleFlash(Orfeas,OrfeasFinalBattleQuote,267)
+FinalBattleFlash(TarajiReal,TarajiFinalBattleQuote,268)
+FinalBattleFlash(Athan,AthanFinalBattleQuote,269)
+EVBIT_F 2
+MUSC KwameID
 CameraCursor(Cherne)
 Text(CherneHasRegrets)
+EVBIT_F 2
+MUSC WindyDaySoundEffect
 CameraCursor(Cleo)
 Text(CleoTellsYouToCheckInventory)
 NoFade
@@ -303,12 +410,40 @@ Text(CherneFortuneWarning)
 NoFade
 ENDA
 
+MureibFinalLoad:
+SpawnReinforcements(MureibFinalGroup)
+CameraCursor(MureibEndgame)
+Text(MureibFinalSpawnText)
+NoFade
+ENDA
 
 BeginningScene:
-DISA_IF Kwame
-DISA_IF CoraliaReal
+//add something here for support/paired ending purposes
+GetSupportLevel(KwameReal, Mink)
+SVAL 0x1 0xF1
+BLT 0x9000 0xC 0x1 
+ENUT 0x93
+LABEL 0x9000
+GetSupportLevel(KwameReal, Kofi)
+SVAL 0x1 0xF1
+BLT 0x9001 0xC 0x1 
+ENUT 0x94
+LABEL 0x9001
+GetSupportLevel(KwameReal, CatrinReal)
+SVAL 0x1 0xF1
+BLT 0x9002 0xC 0x1 
+ENUT 0x95
+LABEL 0x9002
+GetSupportLevel(KwameReal, Ngondala)
+SVAL 0x1 0xF1
+BLT 0x9003 0xC 0x1 
+ENUT 0x96
+LABEL 0x9003
+DISA_IF KwameReal
+ClearUnit(KwameReal)
 SetBackground(0x0D)
 Text(RunningOutOfCatacombs)
+MUSC WindyDaySoundEffect
 CAMERA_CENTERED [24, 33]
 LOAD 1 OutOfCatacombsLoeweCleo
 EraseBackground
@@ -318,6 +453,7 @@ MountSingleUnit(Loewe)
 SingleUnitMove(Loewe, 10, 24, 29)
 STAL 30
 Text(SeeingMahemenGetOwned)
+MUSC FFTAnxiety
 LOAD 1 MahemenVsCherneCutscene
 CAMERA_CENTERED [15, 8]
 SET_SOMETHING Ch2_Selese_Guy
@@ -341,8 +477,10 @@ Text(KailaniMustMakeHerRetreat)
 SingleUnitMove(Kailani, 30, 9, 24)
 DISA Kailani
 CameraCursor(Cherne)
+MUSC KwameID
 Text(CherneHasAMoment)
 SetBackground(Village2)
+MUSC Sortie_Formation
 Text(MahemeniReunionConvoOne)
 FADI 5
 RemoveAll
@@ -352,8 +490,10 @@ STAL 30
 SetBackground(Village2)
 FADU 5
 Text(MahemeniReunionConvoTwo)
+MUSC FE5_InTheBattle_Fate
 Text(CleoGazesIntoTheAbyss)
 SetBackground(BlackBackground)
+MUSC 0x7FFF
 Text(ByelenReturnsToMindDungeon)
 FADI 5
 EraseBackground
@@ -372,6 +512,7 @@ LOAD 1 ImmortalCutsceneUnits
 ENUN
 CameraCursor(TarajiReal)
 SetBackground(Village2)
+MUSC SheenaID
 Text(FourImmortalsAppear)
 Text(TalkingToTheGotohs)
 EraseBackground
@@ -416,6 +557,6 @@ SetBackground(Village2)
 FADU 5
 Text(EndingDialogueOne)
 Text(EndingDialogueTwo)
-GOTO_EPILOGUE
+MNC2 EpilogueChapter
 NoFade
 ENDA

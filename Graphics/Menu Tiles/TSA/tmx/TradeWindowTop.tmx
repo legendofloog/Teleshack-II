@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.1" orientation="orthogonal" renderorder="right-down" width="10" height="3" tilewidth="8" tileheight="8" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="BobMenuTiles" tilewidth="8" tileheight="8" tilecount="128" columns="16">
+  <image source="../../Image/Png/BobMenuTiles.png" width="128" height="64"/>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="10" height="3">
+  <data encoding="csv">
+4,3,3,3,3,3,3,3,6,1,
+37,2,2,2,2,2,2,2,7,19,
+17,5,5,5,5,5,5,5,5,16
+</data>
+ </layer>
+</map>

@@ -117,7 +117,7 @@ Ritual Knife[X]
 Brenthunder[X]
 
 ## BrenthunderDesc
-Brave Effect.[X]
+Can strike consecutively.[X]
 
 ## SpellMirrorName
 Spell Mirror[X]
@@ -147,7 +147,7 @@ Holder cannot enter combat.[X]
 Arachnid[X]
 
 ## ArachnidDesc
-Brave Effect.[X]
+Can strike consecutively.[X]
 
 ## HurlbatName
 Hurlbat[X]
@@ -206,7 +206,7 @@ A long range axe. Alex[LockIcon].[X]
 Miaodao[X]
 
 ## MiaodaoDesc
-Brave.[X]
+Can strike consecutively.[X]
 
 ## ZykhraScrollName
 Zykhra Scroll[X]
@@ -321,8 +321,8 @@ A lance with extended reach.[X]
 ## KaiserschwertName
 [_K][_a][_i][_s][_e][_r][_s][_c][_h][_w][_e][_r]t[X]
 
-## KaiserschwertDesc *
-Follow-up attacks consecutive. Eff. vs. blessed.[X]
+## KaiserschwertDesc
+Follow-up attacks strike consecutively.[X]
 
 ## TrainedEdgeName
 Trained Edge[X]
@@ -346,7 +346,7 @@ Varga[LockIcon]. Magic dmg. +5 Spd.[X]
 Charge[X]
 
 ## ChargeLanceDesc
-Emil[LockIcon]. +1 dmg for per 2 squares.[X]
+Emil[LockIcon]. +1 dmg per square moved.[X]
 
 ## PoincareName
 Archival[X]
@@ -360,8 +360,8 @@ Sink[X]
 ## SinkDesc
 Eff. vs. mages and bards.[X]
 
-## WoodlandsHukeName
-[_W][_o][_o][_d][_l][_a][_n][_d][_s] [_H][_u][_k][_e][X]
+## WoodlandsHukeName ^
+Woodland Huke[X]
 
 ## WoodlandsHukeDesc
 +2 Skl/Res when equipped. +1 Bow Rng.[X]
@@ -403,7 +403,7 @@ Amser Scroll[X]
 Unmoor[X]
 
 ## UnmoorDesc
-Severs time's threads. Eff. vs. blessed.[X]
+Severs time's threads.[X]
 
 ## CrownPyreName *
 Crowned Pyre[X]
@@ -439,7 +439,7 @@ If Spd is higher, AS +3, Brave if foe can't counter.[X]
 Dancing Bld.[X]
 
 ## DancingBladeDesc
-Hits Res. [LockIcon] Ojasvi.[X]
+Hits Res at long range. [LockIcon] Ojasvi.[X]
 
 ## TaodaoName
 Taodao[X]
@@ -539,8 +539,8 @@ Taraji's lethal twin blades. Brave.[X]
 ## StarcutterName
 Starcutter[X]
 
-## StarcutterDesc ^
-Replica Kaiserschwert. Magic. Eff. vs blessed.[X]
+## StarcutterDesc
+Replica Kaiserschwert. Magic.[X]
 
 ## FullHelmName
 Full Helm[X]
@@ -553,8 +553,8 @@ Blocks critical hits. +2 Def/Res.[X]
 ## SwordslayerName ^
 Blade Crusher[X]
 
-## SwordslayerDesc
-Reverses weapon triangle. Eff. vs swords.[X]
+## SwordslayerDesc ^
+Reverses/doubles weapon triangle. Eff. vs [SwordIcon].[X]
 
 ## ShieldbearerName ^
 Shieldbearer[X]
@@ -643,8 +643,9 @@ A mighty magic axe gifted by Mihail.[X]
 Black Anklet[X]
 
 ## BlackAnkletDesc
-+4 Str/Mag, +2 Def/Res. -10 HP after[N]
-combat. Min. HP after this effect is 1.[X]
+Str/Mag +4 and Def/Res +2.[N]
+-10 HP after combat or healing.[N]
+Min. HP after this effect is 1.[X]
 
 ## BoltbrandName
 Boltbrand[X]
@@ -652,7 +653,7 @@ Boltbrand[X]
 ## BoltbrandDesc
 [LockIcon]Tiberius. Brave. Magic sword.[X]
 
-## DawnPendantName
+## DawnPendantName ^
 Dawn Pendant[X]
 
 ## DawnPendantDesc
@@ -785,8 +786,18 @@ Self and allies cannot miss.[X]
 Self and allies can move through enemies.[X]
 
 ##RagnarokFortuneDesc ^
-Self and allies cannot be critically hit.[X]
+Allies cannot be critically hit.[X]
 
 ## VulneraryDesc
 A medicinal solution used to heal[N]
 minor wounds. Heals up to 15 HP.[X]
+
+## SpiritDustName
+Spirit Dust[X]
+
+## SpiritDustDesc
+Increases Mag by 1 point.[NL]
+Vanishes after use.[X]
+
+## SpiritDustUseDesc
+Raises magic.[X]

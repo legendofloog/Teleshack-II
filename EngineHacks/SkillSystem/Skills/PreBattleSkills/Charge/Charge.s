@@ -1,5 +1,5 @@
 .thumb
-.equ DominateID, SkillTester+4
+.equ ChargeID, SkillTester+4
 
 push {r4-r7, lr}
 ldr     r5,=0x203a4ec @attacker
@@ -13,7 +13,7 @@ ldr r1, [r5,#4] @class data ptr
 cmp r1, #0 @if 0, this is stat screen
 beq End
 
-@not broken movement map
+@ not broken movement map
 ldr r0,=0x203a968
 ldrb r0,[r0]
 cmp r0,#0xFF
@@ -23,7 +23,7 @@ beq End
 ldr r0, SkillTester
 mov lr, r0
 mov r0, r4 @Attacker data
-ldr r1, DominateID
+ldr r1, ChargeID
 .short 0xf800
 cmp r0, #0
 beq End
@@ -32,7 +32,7 @@ beq End
 
 ldr r3,=0x203a968 @Spaces Moved
 ldrb r2,[r3]
-lsr r2,#0x1
+@ lsr r2,#0x1 @ divides by 2 which I don't want - Loog
 mov r1, #0x5A
 ldrh r0, [r4, r1]
 add r0, r2

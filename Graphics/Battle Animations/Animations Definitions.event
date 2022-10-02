@@ -7,7 +7,7 @@
   #endif
 #endif
 
-#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+#define AnimTableEntry(index) "ORG ClassAnimTable + ((index-1) * 0x20)"
 
 //////////////Installed animations go here:
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
@@ -25,17 +25,17 @@
 #define Unarmed Disarmed
 #define Spears Lances
 
-#define NobleMSwordAnim 0x01
+#define NobleMSwordAnim 0xcd
 #define NobleMUnarmedAnim 0x02
 
 #define NobleFSwordAnim 0x03
 #define NobleFUnarmedAnim 0x04
 
-#define LoeweScaleshotBowAnim 0x05
-#define DragonRiderUnarmedAnim 0x06
+#define LoeweScaleshotBowAnim 0xd7
+#define DragonRiderUnarmedAnim 0xe5
 
-#define ClaudiaSkyseekerAxeAnim 0x07
-#define ClaudiaSkyseekerHandAxeAnim 0x08
+#define ClaudiaSkyseekerAxeAnim 0xd4
+#define ClaudiaSkyseekerHandAxeAnim 0xd5
 
 #define FreelancerLanceAnim 0x09
 #define FreelancerUnarmedAnim 0xA
@@ -52,6 +52,12 @@
 #define BerserkerAxeAnim 0x23
 #define BerserkerHandAxeAnim 0x24
 #define BerserkerUnarmedAnim 0x25
+
+#define SniperBowAnim 0x2a
+#define SniperUnarmedAnim 0x2b
+
+#define SniperFBowAnim 0x2c
+#define SniperFUnarmedAnim 0x2d
 
 #define FighterFAxeAnim 0x2E
 #define FighterFHandAxeAnim 0x2F
@@ -70,8 +76,8 @@
 #define CorsairFUnarmedAnim 0x39
 
 #define WarriorFAxeAnim 0x3A
-#define WarriorFHandAxeAnim 0x3B
-#define WarriorFBowAnim 0x3C
+#define WarriorFHandAxeAnim 0xce
+#define WarriorFBowAnim 0xcf
 #define WarriorFUnarmedAnim 0x3D
 
 #define ChampionLanceAnim 0x3E
@@ -87,7 +93,7 @@
 #define LncSoldierFUnarmedAnim 0x45
 
 #define AxeSoldierAxeAnim 0x46
-#define AxeSolderHandAxeAnim 0xF0
+#define AxeSolderHandAxeAnim 0xec
 #define AxeSoldierUnarmedAnim 0x47
 
 #define HalberdierAxeAnim 0x48
@@ -117,8 +123,10 @@
 
 #define BaronMagicAnim 0x5d
 
-#define BallistaAnim 0x5e //not implemented
-#define LongBallistaAnim 0x5f //not implemented
+#define BallistaAnim 0xdb
+#define LongBallistaAnim 0x5 //not implemented
+#define NahizaBallistaAnim 0x6
+#define NahizaLongBallistaAnim 0x7
 
 #define LoeweDragonlordBowAnim 0x60
 #define LoeweDragonlordSwordAnim 0x61
@@ -135,8 +143,8 @@
 #define DragonRiderHandAxeAnim 0xEE
 #define DracoknightHandAxeAnim 0xEF
 
-#define PriestStaffAnim 0x7F
-#define ClericStaffAnim 0x80
+#define PriestUnarmedAnim 0x7F
+#define ClericUnarmedAnim 0x80
 
 #define MageKnightMagicAnim 0x71
 #define MageKnightSwordAnim 0x72
@@ -145,13 +153,10 @@
 
 #define DarkMageMagicAnim 0x75
 #define DarkMageFMagicAnim 0x76
-#define DarkMageStaffAnim 0x7C
-#define DarkMageFStaffAnim 0x7D
 
-#define BardMagicAnim 0x7E
+#define BardMagicAnim 0xe1
 
-#define SisterMagicAnim 0x85
-#define SisterStaffAnim 0x86
+#define SisterMagicAnim 0xed
 
 #define ThiefMatthewSwordAnim 0x87
 
@@ -189,48 +194,33 @@
 #define DismountedFSwordAnim 0xA2
 #define DismountedFLanceAnim 0xA3
 #define DismountedFBowAnim 0xA4
-#define DismountedFStaffAnim 0xA5
 #define DismountedFUnarmedAnim 0xA6
 
 #define DismountedMAxeAnim 0xA7
 #define DismountedMHandAxeAnim 0xA8
 #define DismountedMSwordAnim 0xA9
 #define DismountedMBowAnim 0xAA
-#define DismountedMStaffAnim 0xAB
 #define DismountedMLanceAnim 0xAF
 #define DismountedMUnarmedAnim 0xB0
 
 #define BardFMagicAnim 0xAC
 
 #define BrotherMagicAnim 0xAD
-#define BrotherStaffAnim 0xAE
 
 #define MageKnightFDismountedMagicAnim 0xB1
 #define MageKnightFDismountedSwordAnim 0xB2
 #define MageKnightDismountedMagicAnim 0xB3
 #define MageKnightDismountedSwordAnim 0xB4
 
-#define ForrestKnightFUnarmedAnim 0xCD
-#define ForrestKnightFSwordAnim 0xF2
-
-#define DukeKnightLanceAnim 0x9F
-#define DukeKnightUnarmedAnim 0xC8
+#define DukeKnightLanceAnim 0x3B
+#define DukeKnightUnarmedAnim 0x3c
 
 #define GreatKnightAxeAnim 0xCA
 #define GreatKnightHandAxeAnim 0xCB
 #define GreatKnightUnarmedAnim 0xCC
 
-#define GreatKnightFAxeAnim 0xCE
-#define GreatKnightFUnarmedAnim 0xCF
-#define GreatKnightFHandAxeAnim 0xF1
-
-#define TroubaritzStaffAnim 0xD0
 #define TroubaritzUnarmedAnim 0xD1
 #define TroubaritzSwordAnim 0xD2
-
-#define TroubadourStaffAnim 0xD3
-#define TroubadourUnarmedAnim 0xD4
-#define TroubadourSwordAnim 0xD5
 
 #define PaladinMSwordAnim 0xD6
 #define PaladinMLanceAnim 0xD8
@@ -243,12 +233,10 @@
 #define MasterKnightMSwordAnim 0xDE
 #define MasterKnightMBowAnim 0xDF
 #define MasterKnightMMagicAnim 0xE0
-#define MasterKnightMStaffAnim 0xE1
 
 #define MasterKnightFSwordAnim 0xE2
 #define MasterKnightFBowAnim 0xE3
 #define MasterKnightFMagicAnim 0xE4
-#define MasterKnightFStaffAnim 0xE5
 
 #define FSwordFighterSwordAnim 0xE6
 #define FSwordFighterUnarmedAnim 0xE7
@@ -258,18 +246,38 @@
 #define FHeroHandAxeAnim 0xEA
 #define FHeroUnarmedAnim 0xEB
 
-#define ArchKnightFBowAnim 0xEC
-#define ArchKnightFUnarmedAnim 0xED
+#define ArchKnightFBowAnim 0xd0
+#define ArchKnightFUnarmedAnim 0xd3
+
+#define AugurDragonstoneAnim 0xC7
+
+#define SageMagicAnim 0x6d
+
+#define EmperorSwordAnim 0xB5
+#define EmperorMagicAnim 0xB6
+
+#define CherneMagicAnim 0xB7
+#define ByelenMagicAnim 0xB8
+
+#define SwordfighterMSwordAnim 0xB
+#define SwordfighterMUnarmedAnim 0xC
+
+ALIGN 4
+SageMAnims:
+AnimaAnim(SageMagicAnim)
+LightAnim(SageMagicAnim)
+UnarmedAnim(SageMagicAnim)
+EndAnim
 
 
 ALIGN 4
 PriestAnims:
-StaffAnim(PriestStaffAnim)
+UnarmedAnim(PriestUnarmedAnim)
 EndAnim
 
 ALIGN 4
 ClericAnims:
-StaffAnim(ClericStaffAnim)
+UnarmedAnim(ClericUnarmedAnim)
 EndAnim
 
 
@@ -303,7 +311,6 @@ ClaudiaSeraphknightAnims:
 SpearAnim(FalcoknightLanceAnim)
 AxeAnim(ClaudiaSeraphknightAxeAnim)
 HandAxeAnim(ClaudiaSeraphknightHandAxeAnim)
-StaffAnim(ClaudiaSeraphknightStaffAnim)
 UnarmedAnim(FalcoknightUnarmedAnim)
 EndAnim
 
@@ -323,7 +330,6 @@ ALIGN 4
 MasterKnightFAnims:
 SwordAnim(MasterKnightFSwordAnim)
 BowAnim(MasterKnightFBowAnim)
-StaffAnim(MasterKnightFStaffAnim)
 LightAnim(MasterKnightFMagicAnim)
 UnarmedAnim(MasterKnightFMagicAnim)
 EndAnim
@@ -332,7 +338,6 @@ ALIGN 4
 MasterKnightMAnims:
 SwordAnim(MasterKnightMSwordAnim)
 BowAnim(MasterKnightMBowAnim)
-StaffAnim(MasterKnightMStaffAnim)
 LightAnim(MasterKnightMMagicAnim)
 UnarmedAnim(MasterKnightMMagicAnim)
 EndAnim
@@ -404,23 +409,10 @@ UnarmedAnim(ForrestKnightUnarmedAnim)
 EndAnim
 
 ALIGN 4
-ForrestKnightFAnims:
-SwordAnim(ForrestKnightFSwordAnim)
-UnarmedAnim(ForrestKnightFUnarmedAnim)
-EndAnim
-
-ALIGN 4
 GreatKnightAnims:
 AxeAnim(GreatKnightAxeAnim)
 HandAxeAnim(GreatKnightHandAxeAnim)
 UnarmedAnim(GreatKnightUnarmedAnim)
-EndAnim
-
-ALIGN 4
-GreatKnightFAnims:
-AxeAnim(GreatKnightFAxeAnim)
-HandAxeAnim(GreatKnightFHandAxeAnim)
-UnarmedAnim(GreatKnightFUnarmedAnim)
 EndAnim
 
 ALIGN 4
@@ -463,6 +455,38 @@ SpecialAnim(BallistaAnim,SlimArch)
 SpecialAnim(BallistaAnim,LongArch)
 SpecialAnim(BallistaAnim,IronArch)
 SpecialAnim(BallistaAnim,KillerArch)
+BowAnim(BallistaAnim)
+UnarmedAnim(BallistaAnim)
+EndAnim
+
+ALIGN 4
+LongBallisticianAnims:
+SpecialAnim(LongBallistaAnim,SlimArch)
+SpecialAnim(LongBallistaAnim,LongArch)
+SpecialAnim(LongBallistaAnim,IronArch)
+SpecialAnim(LongBallistaAnim,KillerArch)
+BowAnim(LongBallistaAnim)
+UnarmedAnim(LongBallistaAnim)
+EndAnim
+
+ALIGN 4
+NahizaBallistician:
+SpecialAnim(NahizaBallistaAnim,SlimArch)
+SpecialAnim(NahizaBallistaAnim,LongArch)
+SpecialAnim(NahizaBallistaAnim,IronArch)
+SpecialAnim(NahizaBallistaAnim,KillerArch)
+BowAnim(NahizaBallistaAnim)
+UnarmedAnim(NahizaBallistaAnim)
+EndAnim
+
+ALIGN 4
+NahizaLongBallistician:
+SpecialAnim(NahizaLongBallistaAnim,SlimArch)
+SpecialAnim(NahizaLongBallistaAnim,LongArch)
+SpecialAnim(NahizaLongBallistaAnim,IronArch)
+SpecialAnim(NahizaLongBallistaAnim,KillerArch)
+BowAnim(NahizaLongBallistaAnim)
+UnarmedAnim(NahizaLongBallistaAnim)
 EndAnim
 
 ALIGN 4
@@ -482,14 +506,12 @@ EndAnim
 ALIGN 4
 DarkMageAnims:
 DarkAnim(DarkMageMagicAnim)
-StaffAnim(DarkMageStaffAnim)
 UnarmedAnim(DarkMageMagicAnim)
 EndAnim
 
 ALIGN 4
 DarkMageFAnims:
 DarkAnim(DarkMageFMagicAnim)
-StaffAnim(DarkMageFStaffAnim)
 UnarmedAnim(DarkMageFMagicAnim)
 EndAnim
 
@@ -511,14 +533,12 @@ EndAnim
 ALIGN 4
 SisterAnims:
 LightAnim(SisterMagicAnim)
-StaffAnim(SisterStaffAnim)
 UnarmedAnim(SisterMagicAnim)
 EndAnim
 
 ALIGN 4
 BrotherAnims:
 LightAnim(BrotherMagicAnim)
-StaffAnim(BrotherStaffAnim)
 UnarmedAnim(BrotherMagicAnim)
 EndAnim
 
@@ -581,6 +601,13 @@ UnarmedAnim(BrigandFUnarmedAnim)
 EndAnim
 
 ALIGN 4
+BrigandMAnims:
+AxeAnim(0x20) //vanilla brigand anims; done to include new handaxes like hurlbat
+HandAxeAnim(0x21)
+UnarmedAnim(0x22)
+EndAnim
+
+ALIGN 4
 ArmorAnims:
 SwordAnim(ArmorSwordAnim)
 AxeAnim(ArmorAxeAnim)
@@ -611,7 +638,6 @@ BaronAnims:
 AnimaAnim(BaronMagicAnim)
 DarkAnim(BaronMagicAnim)
 LightAnim(BaronMagicAnim)
-StaffAnim(BaronMagicAnim)
 UnarmedAnim(BaronMagicAnim)
 EndAnim
 
@@ -682,13 +708,7 @@ SpearAnim(ChampionLanceAnim)
 UnarmedAnim(ChampionUnarmedAnim)
 EndAnim
 
-ALIGN 4
-LongBallisticianAnims:
-SpecialAnim(BallistaAnim,SlimArch)
-SpecialAnim(BallistaAnim,LongArch)
-SpecialAnim(BallistaAnim,IronArch)
-SpecialAnim(BallistaAnim,KillerArch)
-EndAnim
+
 
 ALIGN 4
 DismountedFAnims:
@@ -697,7 +717,6 @@ AxeAnim(DismountedFAxeAnim)
 HandAxeAnim(DismountedFHandAxeAnim)
 SpearAnim(DismountedFLanceAnim)
 BowAnim(DismountedFBowAnim)
-StaffAnim(DismountedFStaffAnim)
 UnarmedAnim(DismountedFUnarmedAnim)
 EndAnim
 
@@ -708,7 +727,6 @@ AxeAnim(DismountedMAxeAnim)
 HandAxeAnim(DismountedMHandAxeAnim)
 SpearAnim(DismountedMLanceAnim)
 BowAnim(DismountedMBowAnim)
-StaffAnim(DismountedMStaffAnim)
 UnarmedAnim(DismountedMUnarmedAnim)
 EndAnim
 
@@ -734,10 +752,46 @@ HandAxeAnim(0x1D)
 UnarmedAnim(0x1F)
 EndAnim
 
-/*
 ALIGN 4
 AugurAnims:
-SpecialAnim(Animation,Dragonstone)
-SpecialAnim(Animation,Firestone)
+SpecialAnim(AugurDragonstoneAnim,Dragonstone)
+UnarmedAnim(AugurDragonstoneAnim)
 EndAnim
-*/
+
+ALIGN 4
+SniperAnims:
+BowAnim(SniperBowAnim)
+UnarmedAnim(SniperUnarmedAnim)
+EndAnim
+
+ALIGN 4
+SniperFAnims:
+BowAnim(SniperFBowAnim)
+UnarmedAnim(SniperFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+EmperorAnims:
+SwordAnim(EmperorSwordAnim)
+AnimaAnim(EmperorMagicAnim)
+DarkAnim(EmperorMagicAnim)
+UnarmedAnim(EmperorMagicAnim)
+EndAnim
+
+ALIGN 4
+CherneAnims:
+DarkAnim(CherneMagicAnim)
+UnarmedAnim(CherneMagicAnim)
+EndAnim
+
+ALIGN 4
+ByelenAnims:
+LightAnim(ByelenMagicAnim)
+UnarmedAnim(ByelenMagicAnim)
+EndAnim
+
+ALIGN 4
+SwordfighterMAnims:
+SwordAnim(SwordfighterMSwordAnim)
+UnarmedAnim(SwordfighterMUnarmedAnim)
+EndAnim

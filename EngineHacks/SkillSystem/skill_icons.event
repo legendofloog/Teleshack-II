@@ -9,7 +9,7 @@ ORG SkillIcon(HypeTrainID)
 #incbin "SkillIcons/AdrenalineRush.dmp"
 
 ORG SkillIcon(CleoFanID)
-#incbin "SkillIcons/ArcaneCleaver.dmp"
+#incbin "SkillIcons/DecianFealty(JeorgeReds).dmp"
 
 ORG SkillIcon(SpelltwisterID)
 #incbin "SkillIcons/Spelltwister.dmp"
@@ -36,7 +36,7 @@ ORG SkillIcon(PassID)
 #incbin "SkillIcons/Pass.dmp"
 
 ORG SkillIcon(CantoPlusID)
-#incbin "SkillIcons/CantoPlus.dmp"
+#incbin "SkillIcons/Canto.dmp"
 
 ORG SkillIcon(WaryFighterID)
 #incbin "SkillIcons/WaryFighter.dmp"
@@ -525,7 +525,7 @@ ORG SkillIcon(StealID)
 #incbin "SkillIcons/Steal.dmp"
 
 ORG SkillIcon(StealPlusID)
-#incbin "SkillIcons/StealPlus.dmp"
+#incbin "SkillIcons/Steal.dmp"
 
 ORG SkillIcon(FortressDefenseID)
 #incbin "SkillIcons/FortressDefense.dmp"
@@ -933,7 +933,7 @@ ORG SkillIcon(HeavyBladeID)
 #incbin "SkillIcons/HeavyBlade.dmp"
 
 ORG SkillIcon(DancingBladeID)
-#incbin "SkillIcons/DancingBlade.dmp"
+#incbin "SkillIcons/DancingBlade(JeorgeReds).dmp"
 
 ORG SkillIcon(WindBoostID)
 #incbin "SkillIcons/WindBoost.dmp"
@@ -1005,16 +1005,16 @@ ORG SkillIcon(AlacrityID)
 #incbin "SkillIcons/DefiantSpd.dmp"
 
 ORG SkillIcon(SharpshooterID)
-#incbin "SkillIcons/BowFaire.dmp"
+#incbin "SkillIcons/Sharpshooter(JeorgeReds).dmp"
 
 ORG SkillIcon(DesolateID)
 #incbin "SkillIcons/KillingMachine.dmp"
 
 ORG SkillIcon(TelepathyID)
-#incbin "SkillIcons/Poise.dmp"
+#incbin "SkillIcons/Telepathy(MeatOfJustice).dmp"
 
 ORG SkillIcon(BladeDanceID)
-#incbin "SkillIcons/Astra.dmp"
+#incbin "SkillIcons/DancingBlade(JeorgeReds).dmp"
 
 ORG SkillIcon(FarShockID)
 #incbin "SkillIcons/Thunderstorm.dmp"
@@ -1029,10 +1029,10 @@ ORG SkillIcon(PiercingBoltID)
 #incbin "SkillIcons/holyshitAftershockOMG.dmp"
 
 ORG SkillIcon(DragonRageID)
-#incbin "SkillIcons/DragonFang.dmp"
+#incbin "SkillIcons/DragonRage(MeatOfJustice).dmp"
 
 ORG SkillIcon(FlightID)
-#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/Flight.dmp"
 
 ORG SkillIcons+0x8000
 

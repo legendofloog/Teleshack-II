@@ -13,6 +13,7 @@
  <tileset firstgid="1" source="FF5 - Caves 01 - Tileset.tsx"/>
  <layer id="1" name="Tile Layer 1" width="47" height="33">
   <properties>
+   <property name="Anims1" value="FF5WaveCaveTileAnimationsID"/>
    <property name="ChapterID" value="Chapter19"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="Chapter19MapChanges"/>

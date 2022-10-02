@@ -33,6 +33,7 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
+Seize(1,6)
 Seize(0x11,RescueAugur,11,4)
 Chest(LightRune,10,6)
 Chest(KnightProof,12,6)
@@ -41,7 +42,7 @@ Escape(0x10,EscapeEventCheck,0,6)
 Escape(0x10,EscapeEventCheck,0,7)
 Escape(0x10,EscapeEventCheck,7,20)
 Escape(0x10,EscapeEventCheck,8,20)
-	END_MAIN
+END_MAIN
 
 Dunno1:
 
@@ -90,7 +91,7 @@ UNIT Augur Manakete_2_F 0x0 Level(1,Ally,False) [11,5] 0x0 0x0 0x1 REDA11R5 [Vul
 UNIT
 
 EnemyUnits:
-UNIT Tsoureki Halberdier 0x0 Level(6,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [BattleAxe,Saunion] BossAI
+UNIT Tsoureki Halberdier 0x0 Level(2,Enemy,False)[11,4] 0x0 0x0 0x0 0x0 [BattleAxe,Saunion] BossAI
 UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[14,10] 0x0 0x0 0x0 0x0 [LongLance] BossAI
 UNIT Cythes DarkMage_F Tsoureki Level(14,Enemy,True)[12,10] 0x0 0x0 0x0 0x0 [Flux,Physic,Elfire] [0xE 0x3 0x0 0x20]
 UNIT Cythes Hero Tsoureki Level(1,Enemy,True)[10,5] 0x0 0x0 0x0 0x0 [Rapier,RedGem,ChestKey] TwoActionAI
@@ -319,34 +320,16 @@ NoFade
 ENDA
 
 UnderstandableFukingDie:
-SetFlag(0x65)
+CALL GameOverStart
 ENDA
 
 EscapeEventCheck:
 UnsetFlag(0x10)
-CHECK_ACTIVEID Loewe
-BEQ 0 s0 sC
-	COUNTER_INC 0
-LABEL 0
-CHECK_ACTIVEID Cleo
-BEQ 1 s0 sC
-	COUNTER_INC 0
-LABEL 1
-COUNTER_CHECK 0
-SVAL s1 2
-BNE 3 s1 sC
-	ENUT 3
-	CALL EndingScene
-LABEL 3
 NoFade
 ENDA
 
 EndingScene:
 EndOfEscapeRoutineASMC
-CHECK_ALIVE Augur
-BNE 20 0x0 0xC
-SetFlag(0x65)
-LABEL 20
 SetBackground(0x30)
 MUSC 0x47
 Text(Ch14Ending_1)
@@ -368,7 +351,7 @@ BEQ 0x314 0x0 0xC
 CHECK_ALIVE Hans
 BEQ 0x314 0x0 0xC
 MUSC FF5_Sealed_Away
-Text(Ch14_RadnitzSquad)
+Text(Ch14_KorovaiSquad)
 LABEL 0x314
 SetBackground(0x30)
 MUSC 0x47

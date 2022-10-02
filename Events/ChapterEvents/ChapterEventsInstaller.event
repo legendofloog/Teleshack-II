@@ -110,3 +110,11 @@ ALIGN 4
   ALIGN 4
   #include "Chapter25.event"
 }
+{
+  ALIGN 4
+  #include "Epilogue.event"
+}
+{
+  ALIGN 4
+  #include "PostgameHub.event"
+}

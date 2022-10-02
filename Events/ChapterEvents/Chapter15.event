@@ -31,6 +31,10 @@ CameraCursor(Asha)
 Text(AshaJoins)
 CUSA Asha
 SetFatigue(Asha,0)
+CameraCursor(Ilse)
+Text(IlseContext)
+CameraCursor(Traveler)
+Text(TravelerContext)
 NoFade
 ENDA
 
@@ -53,7 +57,6 @@ ENDA
 
 ThiefSpawn1:
 SpawnReinforcements(ThiefGroup1)
-Text(Ch15ThiefWarning)
 NoFade
 ENDA
 
@@ -276,7 +279,7 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 AshaGroup:
-UNIT Asha Thief_F Cleo Level(15,NPC,False) [5,26] 0x0 0x0 0x0 0x1 [KillingEdge,IronSword] NoAI
+UNIT Asha Thief_F Cleo Level(15,NPC,False) [5,26] 0x0 0x0 0x0 0x1 [KillingEdge,IronSword,Vulnerary] NoAI
 UNIT 
 
 CoraliaAndCenterGroup:
@@ -296,7 +299,7 @@ UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [18,12] 0x0 0x0 0x0 0x0 [Short
 UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
 UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [22,15] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey] BossAI
 UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [23,23] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
-UNIT Cythes Mage 0x0 Level(15,Enemy,True) [25,22] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Cythes Mage 0x0 Level(15,Enemy,True) [24,22] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
 UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [17,19] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
 UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
 UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
@@ -391,11 +394,10 @@ ENUN
 EVBIT_MODIFY 1
 CHECK_EVENTID 0x86
 BNE 6 s0 sC
+	FADI 15
 	PROMOTE Loewe Dragonlord Kaiserschwert
 	ENUN
-	ENUT 0x86
 LABEL 6
-FADI 20
 EraseBackground
 FADU 20
 MUSC Rovers
@@ -451,6 +453,7 @@ BNE 42 s0 sC
 	SendAll(Loewe)
 	RemoveAllItem(Kaiserschwert_Fake)
 	SilentGiveItem(Kaiserschwert,Loewe)
+	ENUT 0x86
 LABEL 42
 LOAD1 1 AshaGroup
 ENUN
@@ -463,7 +466,7 @@ UNIT Catrin Swordmaster_F 0x0 Level(20,NPC,False) [1,7] 0x0 0x0 0x0 0x0 [SilverS
 UNIT
 
 BeginningCutsceneLoewe:
-UNIT LoeweCopy Dragonlord_Dismounted 0x0 Level(15,Ally,False) [6,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT LoeweCopy Scaleshot_Dismounted 0x0 Level(15,Ally,False) [6,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [7,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT Kwame Civilian_2 0x0 Level(20,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT
@@ -529,21 +532,21 @@ ENUN
 Text(Ch15EndingScene3)
 LOAD1 1 EliasUnitGroup
 ENUN
-MOVE 15 EliasReal [8,23]
+MOVE 20 EliasReal [8,23]
 ENUN
 	StartBattle
 	NormalDamage(0,15)
 	NormalDamage(0,15)
-	MissedAttack(1,10)
-	MissedAttack(1,10)
+	NormalDamage(1,15)
+	MissedAttack(1,15)
 	EndAttack
-	FIGHT Elias Kassandra BraveAxe False
+	FIGHT EliasReal Kassandra BraveAxe False
 ENUN
 CUSN Coralia
 Text(Ch15EndingScene3EliasKassandraRuns)
 MOVE 15 Kassandra [7,20]
 MOVE 15 Coralia [7,25]
-MOVE 15 Elias [7,24]
+MOVE 15 EliasReal [7,24]
 MOVE 15 Cleo [8,26]
 MOVE 15 Loewe [6,26]
 ENUN
@@ -553,7 +556,7 @@ ENUN
 REMOVEUNIT Kassandra
 MOVE 15 Coralia [7,23]
 ENUN
-MOVE 15 Elias [7,24]
+MOVE 15 EliasReal [7,24]
 ENUN
 Text(Ch15EndingScene5)
 MUSC 0x7FFF
@@ -592,6 +595,9 @@ MOVE 15 Loewe [13,14]
 ENUN
 Text(Ch15EndingScene6Part3)
 ENUF 0x84
+ENUF 0x89
+ENUF 0x88
+ENUF 0x8A
 MNC2 Chapter16
 NoFade
 ENDA
