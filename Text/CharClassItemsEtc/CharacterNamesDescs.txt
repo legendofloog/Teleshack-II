@@ -511,7 +511,7 @@ Suspects something is awry in Selese.[X]
 Eitha[X]
 
 ## EithaDesc
-"Hero" of the Reclamation Wars;[N]
+[OpenQuote]Hero" of the Reclamation Wars;[N]
 wielder of the Daybreak.[N]
 Eternally calling out to her lover.[X]
 
@@ -1157,3 +1157,15 @@ Liberator[X]
 A Mahemeni archbishop and former[N]
 immortal. Now simply a dying wisp of[N]
 a man.[X]
+
+## PrisonerName
+Prisoner[X]
+
+## PrisonerDesc
+A prisoner held by Duke Cidor.[X]
+
+## MysteryName
+???[X]
+
+## MysteryDesc
+ [X]

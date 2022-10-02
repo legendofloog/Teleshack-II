@@ -33,7 +33,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x1F Hornet,6,50
 0x20 Milo,2,25
 0x21 Ichwep,3,30
-0x22 Mink,5,40
+0x22 Mink,5,20
 0x23 Tiberius,2,30
 0x24 Ellerey,2,5
 0x25 Mantou,0,1
@@ -74,7 +74,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x48 Cherne,12,200
 0x49 Asha,8,45
 0x4A Elias (Ch10),0,10
-0x4B Eitha (Ch 6),13,5
+0x4B Eitha (Ch 6),0,5
 0x4C Hamdi (Ch16),8,5
 0x4D Colossus (Ch16),8,50
 0x4E Boro (Ch 16),2,5

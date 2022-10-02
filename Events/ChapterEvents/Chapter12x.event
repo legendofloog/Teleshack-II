@@ -16,6 +16,7 @@ TurnBasedEvents:
 END_MAIN
 
 // 7,8,9,10,11,18 reserved for recruitment
+//19 for tiberius talk
 CharacterBasedEvents:
 CharacterEventBothWays(0, TrajanTalk, Loewe, Trajan)
 CharacterEventBothWays(12, EllereyRecruit, Loewe, Ellerey)
@@ -24,6 +25,7 @@ CharacterEventBothWays(14, TippanyRecruit, Loewe, Tippany)
 CharacterEventBothWays(15, PelecayeRecruit, Loewe, Pelecaye)
 CharacterEventBothWays(16, CarlRecruit, Loewe, Carl)
 CharacterEventBothWays(17, TakaiRecruit, Loewe, Takai)
+CharacterEventBothWays(19, TiberiusTalk, Loewe, Tiberius)
 END_MAIN
 
 EllereyRecruit:
@@ -247,11 +249,18 @@ BEQ 13 s1 sC
 	Text(Ch12xTrajanRejection)
 	GOTO 30
 LABEL 13
+CHECK_EXISTS Tiberius
+BEQ 31 s0 sC
+	CUSA Tiberius
+LABEL 31
 CALL EndingScene
 LABEL 30
 NoFade
 ENDA
 
+TiberiusTalk:
+Text(TiberiusRecruitment)
+ENDA
 
 LocationBasedEvents:
 END_MAIN
@@ -337,6 +346,10 @@ UNIT
 
 ThiefGroup:
 UNIT Militia Thief Cleo Level(1,NPC,False) [11,12] 0 0 1 REDA8R23 [0x0] NoAI
+UNIT
+
+TiberiusDummy:
+UNIT Tiberius Noble Loewe Level(9,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [Darkbrand] NoAI
 UNIT
 
 BeginningScene:
@@ -529,6 +542,11 @@ FADI 5
 SHOWUNIT Loewe
 FadeOutMusic
 FOGVISION 0
+CHECK_ALIVE Tiberius
+BEQ 27 s0 sC
+	LOAD1 1 TiberiusDummy
+	ENUN
+LABEL 27
 SetUnitFullHP(Loewe)
 RemoveAll
 HIDEUNIT Cleo

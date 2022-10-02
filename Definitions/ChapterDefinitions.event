@@ -37,11 +37,13 @@
 #define Chapter17Duel 0x22
 #define Chapter18xInterlude 0x23
 #define Chapter3Cutscene 0x24
+#define Chapter12Cutscene 0x25
 #define Ch18xBoatScenes 0x27
 #define Chapter12xPass 0x28
 #define Chapter12xDarkness 0x29
 #define EpilogueChapter 0x2A
 #define Chapter8End 0x2B
+
 
 // MapChangesID
 
@@ -87,6 +89,7 @@
 #define Chapter12xPassMapChanges 0xd0
 #define PostgameHubMapChanges 0xd7
 #define Ch18xBoatScenesMapChanges 0xd9
+#define Chapter12CutsceneMapChanges 0xe1
 
 
 // MapID
@@ -133,6 +136,7 @@
 #define Chapter12xPassMap 0xd1
 #define PostgameHubMap 0xd8
 #define Ch18xBoatScenesMap 0xda
+#define Chapter12CutsceneMap 0xe2
 
 // EventsID
 
@@ -171,6 +175,7 @@
 #define Chapter18xInterludeEvents 0xBA
 #define Chapter3CutsceneEvents 0xcf
 #define EpilogueEvents 0xCA
+#define Chapter12CutsceneEvents 0xe3
 
 // ObjectType 
 #define ThraciaCastleObjectID 0x88

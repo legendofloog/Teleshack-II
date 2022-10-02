@@ -136,7 +136,7 @@ DeathQuote(Ichwep,AllChapters,0x0,IchwepDeathQuote)
 
 // ch 12
 DeathQuote(Mink,AllChapters,0x0,MinkDeathQuote)
-DeathQuote(Tiberius,Chapter12,22,Ch12TiberiusDeathQuote)
+DeathQuote(Tiberius,Chapter12,22,0)
 DeathQuote(Tiberius,AllChapters,0x0,TiberiusDeathQuote)
 
 // ch 12x

@@ -28,14 +28,15 @@ UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
 UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
 
 SpecifiedBattleConvo(Eitha,Leina,Chapter12,9,Ch12EithaLeinaBossQuote)
+SpecifiedBattleConvo(Eitha,Cleo,Chapter12,18,Ch12EithaCleoBossQuote)
+SpecifiedBattleConvo(Eitha,Cleo,Chapter12,19,Ch12EithaLoeweBossQuote)
 UnspecifiedBattleConvo(Eitha,Chapter12,23,Ch12EithaBossQuote)
-
 SpecifiedBattleConvo(Cleo,Epony,Chapter11,25,Ch12xCleoEponyBattleQuote)
 SpecifiedBattleConvo(Cleo,Epony,Chapter11,26,Ch12xCleoEponyBattleQuote2)
 SpecifiedBattleConvo(Korovai,Cleo,Chapter11,27,Ch12xKorovaiEndingScene10CleoBattleQuote)
-
 SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
 UnspecifiedBattleConvo(Tao_Fake,Chapter12,0x0,Ch12xBeginningScene3Part2TaoBattleQuote)
+UnspecifiedBattleConvo(Tiberius,Chapter12,17,Ch12TiberiusBossQuote)
 UnspecifiedBattleConvo(Veniamin,Chapter13,1,VeniaminBossQ)
 UnspecifiedBattleConvo(Corundum,Chapter13,11,CorundumBossQ)
 UnspecifiedBattleConvo(Pascal,Chapter13,12,PascalBossQ)

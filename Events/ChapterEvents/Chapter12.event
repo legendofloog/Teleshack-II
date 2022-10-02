@@ -14,26 +14,30 @@ PointerList:
 
 //flags
 // 9 - Eitha/Leina quote
-// 18, 19 - Top left prison LOCA
+// 19 - Top left prison LOCA
 // 10 - top middle prison LOCA
 // 11 - top right prison LOCA
 // 12 - outside prison LOCA
-// 13 - Top left prison event
-// 14 - Top Middle Prison event
-// 15 - Top Right Prison event
-// 16 - Outside Prison event
-// 21 - top left prison event
-
+// 13 - Top left prison AFEV
+// 14 - Top Middle Prison AFEV
+// 15 - Top Right Prison AFEV
+// 16 - Outside Prison AFEV
+// 21 - top left prison AFEV
+// 17 - tiberius battle quote
+// 18 - cleo/eitha quote
+// 19 - loewe/eitha quote
 // 23 - Eitha generic quote
 // 24 - turned on when deadlordSpawn occurs; used to remove the seize command and/or prevent the turn version playing
 
-// 22 - turned on with tiberius death quote
+// 22 - turned on with tiberius death quote/when he is defeated
+// 25 - tiberius deathquote AFEV
 
 
 TurnBasedEvents:
 TurnEventPlayer(24,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
 TurnEventPlayer(0,ThiefAntiTurtle,3) //maybe make this guy show up a turn earlier? I don't mind him being really hard to get
+TurnEventPlayer(0,TiberiusCidorTalk,1)
 END_MAIN
 
 
@@ -41,7 +45,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Chest(AngelicRobe,16,2)
+Chest(GoddessIcon,16,2)
 LOCA 10 TopMiddlePrisonDoor [10,3] 0x12
 LOCA 18 TopLeftPrisonDoor [5,2] 0x12
 LOCA 19 TopLeftPrisonDoor2 [3,4] 0x12
@@ -49,12 +53,9 @@ LOCA 11 TopRightPrisonDoor [13,4] 0x12
 LOCA 24 DeadlordSpawn [2,11] 0x11
 LOCA 24 DeadlordSpawn [3,11] 0x11
 LOCA 24 DeadlordSpawn [4,11] 0x11
-Door(11,11)
 Door(14,11)
-Chest(AlairsGale,13,12)
-Chest(RedGem,15,12)
-LOCA 24 DeadlordSpawn [6,15] 0x11
-LOCA 24 DeadlordSpawn [6,16] 0x11
+Chest(AlairsGale,15,12)
+Chest(RedGem,13,12)
 LOCA 24 DeadlordSpawn [2,20] 0x11
 LOCA 24 DeadlordSpawn [3,20] 0x11
 LOCA 24 DeadlordSpawn [4,20] 0x11
@@ -63,6 +64,7 @@ END_MAIN
 
 
 MiscBasedEvents:
+AFEV 25 TiberiusDefeat 22
 CauseGameOverIfLordDies
 DefeatBoss
 END_MAIN
@@ -84,13 +86,13 @@ Traps1:
 	GreenSigil(2,11)
 	GreenSigil(3,11)
 	GreenSigil(4,11)
-	
-	GreenSigil(6,15)
-	GreenSigil(6,16)
-	
 	GreenSigil(2,20)
 	GreenSigil(3,20)
 	GreenSigil(4,20)
+	RedSigil(16,0)
+	RedSigil(17,0)
+	RedSigil(18,0)
+	RedSigil(14,14)
 	ENDTRAP
 	ALIGN 4
 
@@ -120,7 +122,7 @@ MinkJoin:
   UNIT
   
 IndoorEnemy:
-  UNIT Tiberius Noble Cidor Level(7,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
+  UNIT Tiberius Noble Cidor Level(9,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe,PureWater] AttackInRangeAI
@@ -138,13 +140,13 @@ IndoorEnemy:
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [14,5] 0x0 0x0 0x0 0x1 [IronSword] GroupTwoAI
   UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,9] 0x0 0x0 0x0 0x1 [ShortLance] GroupTwoAI
   UNIT Selese Archer Cidor Level(12,Enemy,True) [9,6] 0x0 0x0 0x0 0x1 [IronBow] GroupTwoAI
-  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [ShortSword] AttackInRangeAI //do not move! thief AI breaks without him
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [11,10] 0x0 0x0 0x0 0x1 [ShortSword] BossAI //do not move! thief AI breaks without him
 //turn 5
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [7,3] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
   UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [6,9] 0x0 0x0 0x0 0x1 [IronAxe] TwoActionAI
-  UNIT Selese AxeArmor Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI //change to soldier
+  UNIT Selese AxeSoldier Cidor Level(12,Enemy,True) [13,5] 0x0 0x0 0x0 0x1 [IronAxe,DoorKey] BossAI //change to soldier
 //turn 6 
-  UNIT Selese LanceArmor Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI //change to soldier
+  UNIT Selese LanceSoldier Cidor Level(12,Enemy,True) [10,4] 0x0 0x0 0x0 0x1 [Javelin,DoorKey] BossAI //change to soldier
   UNIT Selese Bard Cidor Level(12,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary] TwoActionAI
   UNIT Selese Bard Cidor Level(12,Enemy,True) [1,10] 0x0 0x0 0x0 0x1 [Lightning,PureWater] AttackInRangeAI
   UNIT Selese Myrmidon Cidor Level(12,Enemy,True) [1,9] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
@@ -197,34 +199,109 @@ ThiefSpawn:
 EithaSpawn:
   UNIT Eitha Sniper_F 0x0 Level(1,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
   UNIT
-
+  
+MysterySpawn:
+  UNIT Mystery Sniper_F 0x0 Level(1,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI
+  UNIT
+  
+CidorSpawn:
+  UNIT Cidor Baron 0x0 Level(5,Enemy,False) [3,18] 0x0 0x0 0x0 0x0 [Jormungand] NeverMoveAI
+  UNIT
 
 PrisonGreens:
-  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [3,2] 0x0 0x0 0x0 0x1 [Silence] NoAI
-  UNIT Selese Civilian_2 0x0 Level(1,NPC,True) [10,1] 0x0 0x0 0x0 0x1 [SecretBook] NoAI
-  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [13,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
-  UNIT Selese Civilian_F_2 0x0 Level(1,NPC,True) [13,23] 0x0 0x0 0x0 0x1 [Talisman] NoAI
+  UNIT Prisoner Civilian_2 0x0 Level(1,NPC,True) [3,2] 0x0 0x0 0x0 0x1 [AngelicRobe] NoAI
+  UNIT Prisoner Civilian_2 0x0 Level(1,NPC,True) [10,1] 0x0 0x0 0x0 0x1 [SecretBook] NoAI
+  UNIT Prisoner Civilian_F_2 0x0 Level(1,NPC,True) [13,2] 0x0 0x0 0x0 0x1 [RedGem] NoAI
+  UNIT Prisoner Civilian 0x0 Level(1,NPC,True) [13,23] 0x0 0x0 0x0 0x1 [Talisman] NoAI
   UNIT 
 
 
+//cutscene groups
+CidorFlashback:
+  UNIT Selese Sage 0x0 Level(1,NPC,True) [13,5] 0x0 0x0 0x0 0x1 [0x00] NoAI 
+  UNIT Cidor Noble 0x0 Level(1,NPC,True) [14,4] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT
+  
+KwameFlashback:
+  UNIT Kwame Civilian_2 0x0 Level(1,NPC,True) [2,6] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT
+
+CidorPresent:
+  UNIT Cidor Baron 0x0 Level(1,Enemy,True) [12,4] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT
+
+TiberiusAndFriends:
+  UNIT Boro_Ch1 Noble 0x0 Level(1,Enemy,True) [2,6] 0x0 0x0 0x0 0x1 [0x00] NoAI //Tiberius in cutscene
+  UNIT Hernandez LanceSoldier 0x0 Level(1,Enemy,True) [2,7] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT VargaCopy LanceSoldier 0x0 Level(1,Enemy,True) [2,8] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT Selese Bard 0x0 Level(1,Enemy,True) [2,4] 0x0 0x0 0x0 0x1 [0x00] NoAI //Mink in cutscene
+  UNIT MiraCopy Mage 0x0 Level(1,Enemy,True) [1,6] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT IskraCopy Mage 0x0 Level(1,Enemy,True) [1,8] 0x0 0x0 0x0 0x1 [0x00] NoAI
+  UNIT
+  
+PoWs:
+  UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [25,2] 0x0 0x0 0x0 0x1 [0x00] AttackInRangeAI
+  UNIT
+
+//the tiberius the player recruits
+TiberiusEndSceneGroup:
+  UNIT Tiberius Noble Loewe Level(9,Ally,False) [31,1] 0x0 0x0 0x0 0x0 [Darkbrand] NoAI
+  UNIT 
+
+WarCriminals:
+  UNIT 
+  UNIT
+
+
+
 BeginningScene:
-//load the cutscene map
+LOMA Chapter12Cutscene
 SetBackground(0x0E)//fancy room
 Music(Rovers)
 Text(Ch12BeginningScene1)
-TEXTSTART
-TEXTSHOW Ch12BeginningScene2
+EraseBackground
+CAMERA[14,0]
+LOAD 1 CidorFlashback
+Text(Ch12BeginningScene2A)
+SOUN 0xB1 //lockpick sound
+TILECHANGE 1
+LOAD 1 KwameFlashback
+SingleUnitMove(Kwame,5,6,6)
+SingleUnitMove(Kwame,5,6,4)
+SingleUnitMove(Kwame,5,8,4)
+TEXTSTART 
+TEXTSHOW Ch12BeginningScene2B
+TEXTEND
+SingleUnitMove(Cidor,5,12,4)
+TEXTCONT
 TEXTEND
 REMA
 MUSCSLOW 0x7FFF
 FAWI 1
+TILEREVERT 1
+REMOVEUNIT Cidor
+REMOVEUNIT Selese
+LOAD 1 CidorPresent
+STAL 30
 FAWU 1
 Text(Ch12BeginningScene3)
+SingleUnitMove(Cidor,20,16,4)
+SOUN 0x02D2 //axe crashing sound
+EARTHQUAKE 0 False
+STAL 10
+EARTHQUAKE_END
+TILECHANGE 0
+STAL 75
+SingleUnitMove(Kwame,5,12,4)
 TEXTSTART
 TEXTSHOW Ch12BeginningScene4A
 TEXTEND
 Music(PMDSteamCaveID)
 TEXTCONT
+//TEXTEND
+//future eventing with cidor placing the bow on the ground
+//kwame exclamation point
+//TEXTCONT
 TEXTEND
 REMA
 SetBackground(BlackBackground) 
@@ -238,18 +315,80 @@ Music(RiseAboveID)
 TEXTCONT
 TEXTEND
 REMA
+EraseBackground
+SOUN 0xB1 //lockpick sound
+TILECHANGE 1
+LOAD 1 TiberiusAndFriends
+MOVE 9 Boro_Ch1 [8,4]
+MOVE 9 Hernandez [7,3]
+MOVE 9 VargaCopy [7,5]
+ENUN
 Text(Ch12BeginningScene5)
+MOVE 9 Boro_Ch1 [8,2]
+ENUN
+MOVE 13 Hernandez [12,3]
+MOVE 13 VargaCopy [12,5]
+ENUN
+//have the guards drag kwame kicking and screaming
+MOVE 5 Kwame [7,4]
+MOVE 5 Hernandez [7,3]
+MOVE 5 VargaCopy [7,5]
+ENUN
+MOVE_1STEP 9 Kwame 1
+ENUN
 Text(Ch12BeginningScene6)
+MOVE_1STEP 9 Hernandez 1
+MOVE_1STEP 9 VargaCopy 1
+ENUN
+MOVE 5 Hernandez [6,3]
+MOVE 5 Kwame [6,4]
+MOVE 5 VargaCopy [6,5]
+ENUN
+//have camera follow kwame
+//they continue to drag him out. brief phase as he makes eye contact with mink. all guards and bards go down the stairs. mink stops at the top of the stairs, pauses, and rushes back to the open door
+MOVE 5 Hernandez [6,6]
+MOVE 5 Kwame [6,7]
+MOVE 5 VargaCopy [5,7]
+ENUN
+MOVE 5 Hernandez [6,7]
+MOVE 5 Kwame [5,7]
+MOVE 5 VargaCopy [4,7]
+ENUN
+CAMERA [2,0]
+MOVE 5 Hernandez [3,7]
+MOVE 5 Kwame [2,7]
+MOVE 5 VargaCopy [2,8]
+ENUN
+FlashCursor(Selese,60)
+Text(MinkEyeContact)
+MOVE 5 Hernandez [2,15]
+MOVE 5 Kwame [2,15]
+MOVE 5 VargaCopy [2,15]
+CAMERA [3,10]
+STAL 30
+MOVE 5 Selese [2,12]
+MOVE 5 IskraCopy [1,15]
+MOVE 5 MiraCopy [1,15]
+ENUN
+STAL 90
+SingleUnitMove(Selese,20,2,8)
+STAL 30
+CAMERA[12,0]
+MOVE 9 Boro_Ch1 [8,4]
+MOVE 9 Cidor [12,4]
+ENUN
 Text(Ch12BeginningScene7)
 Text(Ch12BeginningScene8)
-SetBackground(BlackBackground) 
+REMOVEALL_GREEN
+REMOVEALL_RED
+SetBackground(BlackBackground)
 MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12BeginningScene9A
 TEXTEND
 REMA
 SetBackground(0x18)//daytime forest
-Music(FF6AwakeningID)
+Music(TiesOfFriendship)
 Text(Ch12BeginningScene9B)
 MUSI
 SetBackground(BlackBackground) 
@@ -260,6 +399,7 @@ Text(Ch12BeginningScene9D)
 SetBackground(0x20)//nighttime forest different from 0x18
 Music(Nighttime)
 Text(Ch12BeginningScene10)
+LOMA Chapter12
 MountAll
 LOAD 1 MinkJoin
 LOAD 1 OutdoorEnemy
@@ -275,7 +415,7 @@ CHECK_EXISTS Tiberius
 BEQ 3 s0 sC
 CHECK_EVENTID 22
 BEQ 3 s0 sC
-CUSA Tiberius //if tiberius exists and his death quote has played, only possible if he was captured and is being held, temporarily turn him blue
+CUSA Tiberius //if tiberius exists and his death quote has played(flag 22), only possible if he was captured and is being held, temporarily turn him blue
 LABEL 3
 RemoveTrapAtCoords(2,11)
 RemoveTrapAtCoords(3,11)
@@ -298,19 +438,6 @@ FAWU 4
 TEXTCONT
 TEXTEND
 REMA
-CAMERA_CENTERED [3,16]
-TILECHANGE 8
-SetBackground(CastleHallway)
-TEXTSTART
-TEXTSHOW Ch12DeadlordSpawn2
-TEXTEND
-//damage sounds effect
-TEXTCONT
-TEXTEND
-REMA
-Text(Ch12DeadlordSpawn3)
-Text(Ch12DeadlordSpawn4)
-EraseBackground
 REMOVEALL_GREEN
 REMOVEALL_RED
 CAMERA_CENTERED [3,16]
@@ -319,10 +446,53 @@ CHECK_EXISTS Tiberius
 BEQ 2 s0 sC
 CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LABEL 2
+TILECHANGE 8
+MOVE -1 Loewe [3, 20]
+LOAD 1 CidorSpawn
+SetBackground(CastleHallway)
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn2
+TEXTEND
+//damage sounds effect
+TEXTCONT
+TEXTEND
+REMA
+EraseBackground
+LOAD 1 MysterySpawn
+ENUN
+	StartBattle
+	NormalDamage(0,20)
+	MissedAttack(1,23)
+	CriticalHit(0,60)
+	EndAttack
+	Fight Mystery Cidor Daybreak Jormungand
+ENUN
+KILL Cidor
+AWAIT_KILL Cidor
+REMOVEUNIT Mystery
+SetBackground(CastleHallway)
+TEXTSTART
+TEXTSHOW Ch12DeadlordSpawn3
+TEXTEND
+Music(Sheep_Will_Sleep)
+TEXTCONT
+TEXTEND
+REMA
+EraseBackground
 LOAD 1 EithaSpawn
+ENUN
+	StartBattle
+	MissedAttack(0,18)
+	EndAttack
+	Fight Eitha Loewe Daybreak IronBow
+ENUN
+SetBackground(CastleHallway)
+Text(Ch12DeadlordSpawn4)
+EraseBackground
 SetFlag(0x4)
-CenterTextbox(Ch12PassWarning)
-		//reset player turn
+Text(Ch12PassWarning)
+UNSET_CONDITION Loewe
+UNSET_CONDITION Cleo
 NoFade
 ENDA
 
@@ -331,9 +501,10 @@ EndingScene:
 FADI 15
 CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
 BEQ 2 s0 sC
-RemoveAllItem(Darkbrand)
-LOAD1 1 TiberiusEndSceneGroup
-ENUN 
+	//Text(Ch12PlaceholderText)
+	RemoveAllItem(Darkbrand)
+	LOAD 1 TiberiusEndSceneGroup
+ENUN
 LABEL 2
 SetBackground(CastleHallway)
 Music(FF5_Nostalgia)
@@ -384,8 +555,8 @@ TopLeftPrisonDoor:
 TILECHANGE 0
 CHECK_EVENTID 19
 BEQ 16 s1 sC
-Text(Ch12PlaceholderText)
-GiveItem(Silence,0xFFFF)
+Text(Ch12Civilian4)
+GiveItem(AngelicRobe,0xFFFF)
 SVAL sB Coords(3,2)
 REMOVEUNIT(-2)
 ENUT 21
@@ -408,7 +579,7 @@ ENDA
 
 TopMiddlePrisonDoor:
 TILECHANGE 2
-Text(Ch12PlaceholderText)
+Text(Ch12Civilian2)
 GiveItem(SecretBook,0xFFFF)
 SVAL sB Coords(10,1)
 REMOVEUNIT(-2)
@@ -417,17 +588,18 @@ ENDA
 
 TopRightPrisonDoor:
 TILECHANGE 4
-Text(Ch12PlaceholderText)
+Text(Ch12Civilian1)
 GiveItem(RedGem,0xFFFF)
 SVAL sB Coords(13,2)
 REMOVEUNIT(-2)
+Text(CleoIdea)
 NoFade
 ENDA
 
 
 OutsidePrisonDoor:
 TILECHANGE 12
-Text(Ch12PlaceholderText)
+Text(Ch12Civilian3)
 GiveItem(Talisman,0xFFFF)
 SVAL sB Coords(13,23)
 REMOVEUNIT(-2)
@@ -445,6 +617,22 @@ LOAD 1 ThiefSpawn
 NoFade
 ENDA
 
-TiberiusEndSceneGroup:
-UNIT Tiberius Noble Cidor Level(7,Ally,False) [4,7] 0x0 0x0 0x0 0x0 [Darkbrand] NoAI
-UNIT 
+TiberiusCidorTalk:
+Music(TiesOfFriendship)
+SetBackground(CastleHallway)
+Text(Ch12Turn1)
+EraseBackground
+NoFade
+ENDA
+
+TiberiusDefeat:
+CHECK_EXISTS Tiberius
+BEQ 4 s0 sC
+    Text(TiberiusCaptureQuote)
+	Text(TiberiusCaptured)
+    NoFade
+    ENDB
+LABEL 4
+Text(TiberiusCh12DeathQuote)
+NoFade
+ENDA
