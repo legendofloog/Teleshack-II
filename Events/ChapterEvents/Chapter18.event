@@ -362,6 +362,7 @@ BeginningScene:
 
 EndingScene:
 	InterludeRemovalRoutineASMC
+	ENUN
 	CHECK_EVENTID 7
 	BNE 1 s0 sC
 	Text(Ch18EndShafaqatAlive)
