@@ -132,7 +132,7 @@ SongTable(ThraciaPreparationsID,PrepScreenFE5,MapMusicGroup)
 #include "MusicEvents/King of Dragons - Into the Castle (Sme).event"
 SongTable(KingOfDragons_IntoTheCastleID,kodcastle,BattleMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Battle 1 {RandomWizard}.event"
-SongTable(FF_MysticQuest_Battle1ID,FF_MQ_battle1,BattleMusicGroup)
+SongTable(FF_MysticQuest_Battle1ID,FF_MQ_battle1,MapMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Hill of Destiny {RandomWizard}.event"
 SongTable(FF_MysticQuest_HillofDestinyID,FF_MQ_HoD,MapMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Doom Castle {RandomWizard}.event"

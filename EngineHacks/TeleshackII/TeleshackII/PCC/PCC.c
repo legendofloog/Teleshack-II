@@ -58,7 +58,7 @@ void New_Proc_Start(BattleUnit* attacker, BattleUnit* defender, NewBattleHit* ba
 			battleStats->critRate *= GetUnitPCC(&attacker->unit);
 		}
 
-		if (BattleRoll1RN(battleStats->critRate, 0)){ // crit
+		if (BattleRoll1RN(battleStats->critRate, 0) && (battleStats->critRate > 0) ){ // crit
 			battleStats->damage = BoundDamage(battleStats->attack*2 - battleStats->defense);
 			battleHit->attributes |= BATTLE_HIT_ATTR_CRIT;
 		}
