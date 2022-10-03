@@ -42,7 +42,7 @@ Escape(3,0)
 END_MAIN
 
 MiscBasedEvents:
-AREA 0 CivilianEscape [14, 0] [15, 0]
+AREA 0 CivilianEscape [2, 0] [3, 0]
 AFEV 12 LoeweSvetomirFreed 9
 AFEV 13 SennyFreed 10
 AFEV 15 HelmanFreed 11
