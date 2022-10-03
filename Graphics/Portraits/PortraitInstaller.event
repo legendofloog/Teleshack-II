@@ -468,7 +468,7 @@ AwaMugData:
 #incbin "Dmp/Awa(Xilirite)_frames.dmp"
 #incbin "Dmp/Awa(Xilirite)_palette.dmp"
 #incbin "Dmp/Awa(Xilirite)_minimug.dmp"
-setMugEntry(AwaMug, AwaMugData, 2, 5, 2, 3)
+setMugEntry(AwaMug, AwaMugData, 5, 5, 5, 3)
 
 ALIGN 16
 TrajanMugData:

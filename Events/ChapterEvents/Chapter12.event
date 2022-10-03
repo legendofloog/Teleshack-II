@@ -124,7 +124,7 @@ MinkJoin:
   UNIT
   
 IndoorEnemy:
-  UNIT Tiberius Noble Cidor Level(9,Enemy,False) [31,1] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI //4,7
+  UNIT Tiberius Noble Cidor Level(9,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI //4,7
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
   UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe,PureWater] AttackInRangeAI
@@ -199,7 +199,7 @@ ThiefSpawn:
   UNIT
   
 EithaSpawn:
-  UNIT Eitha Sniper_F 0x0 Level(1,Enemy,False) [30,1] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI //3,16
+  UNIT Eitha Sniper_F 0x0 Level(1,Enemy,False) [3,16] 0x0 0x0 0x0 0x0 [Daybreak] PursueWithoutHeedAI //3,16
   UNIT
   
 MysterySpawn:
@@ -502,6 +502,7 @@ ENDA
 
 EndingScene:
 FADI 15
+InterludeRemovalRoutineASMC
 CHECK_EVENTID 27
 BEQ 2 s0 sC
 //CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
@@ -509,6 +510,7 @@ BEQ 2 s0 sC
 	//Text(Ch12PlaceholderText)
 	RemoveAllItem(Darkbrand)
 	LOAD 1 TiberiusEndSceneGroup
+  ENUN
 ENUN
 LABEL 2
 SetBackground(CastleHallway)
@@ -550,7 +552,6 @@ Text(Ch12End5)
 Text(Ch12End6)
 Text(Ch12End7)
 FADI 15
-InterludeRemovalRoutineASMC
 MNC2 Ch12xInterlude
 NoFade
 ENDA

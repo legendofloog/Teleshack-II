@@ -30,7 +30,6 @@ NoFade
 ENDA
 
 LocationBasedEvents:
-Seize(1,3)
 Door(6,3)
 Door(14,10)
 Chest(LightRune,6,1)

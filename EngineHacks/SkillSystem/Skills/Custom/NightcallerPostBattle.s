@@ -34,7 +34,7 @@ bne	Continue
 b End
 
 Continue:
-mov r0, #40
+mov r0, #0x28
 ldr r1, =SetEventId
 mov r14, r1
 .short 0xF800

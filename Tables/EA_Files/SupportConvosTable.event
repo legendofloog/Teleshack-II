@@ -94,7 +94,7 @@ SupportConvoEntry(Awa, Nikolas, Awa_Nikolas_C, Awa_Nikolas_B, Awa_Nikolas_A)
 
 SupportConvoEntry(Matthias, Cromar, Matthias_Cromar_C, Matthias_Cromar_B, Matthias_Cromar_A)
 SupportConvoEntry(Matthias, Tippany, Matthias_Tippany_C, Matthias_Tippany_B, Matthias_Tippany_A)
-SupportConvoEntry(Matthias, Ilse, 0, 0, 0)
+SupportConvoEntry(Matthias, Ilse, Matthias_Ilse_C, Matthias_Ilse_B, Matthias_Ilse_A)
 
 SupportConvoEntry(Faolan, Fangai, FaolanFangai_C, FaolanFangai_B, FaolanFangai_A)
 SupportConvoEntry(Faolan, Alex, AlexFaolanCSupport, AlexFaolanBSupport, AlexFaolanASupport)
@@ -201,7 +201,7 @@ SupportConvoEntry(Augur, Rashid, AugurRashidC, AugurRashidB, AugurRashidA)
 SupportConvoEntry(Augur, CatrinReal, AugurCatrinCSupport, AugurCatrinBSupport, AugurCatrinASupport)
 SupportConvoEntry(Augur, Mink, MinkAugur_C, MinkAugur_B, MinkAugur_A)
 
-SupportConvoEntry(Ilse, Matthias, 0, 0, 0)
+SupportConvoEntry(Ilse, Matthias, Matthias_Ilse_C, Matthias_Ilse_B, Matthias_Ilse_A)
 SupportConvoEntry(Ilse, Delilah, DelilahIlseCSupport, DelilahIlseBSupport, DelilahIlseASupport)
 SupportConvoEntry(Ilse, Ojasvi, Ilse_Ojasvi_C, Ilse_Ojasvi_B, Ilse_Ojasvi_A)
 

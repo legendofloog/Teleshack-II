@@ -261,6 +261,7 @@ SoloEndingTableEntry(Fangai, FangaiEnding)
 //5x
 PairedEndingTableEntry(Matthias, Cromar, Matthias_Cromar_Ending)
 PairedEndingTableEntry(Matthias, Tippany, MatthiasTippanyEnding)
+PairedEndingTableEntry(Matthias, Ilse, Matthias_Ilse_Ending)
 SoloEndingTableEntry(Matthias, MatthiasEnding)
 
 PairedEndingTableEntry(Cadenza, Mink, CadenzaMinkEnding)

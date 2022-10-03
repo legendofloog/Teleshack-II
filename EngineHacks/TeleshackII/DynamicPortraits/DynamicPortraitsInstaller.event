@@ -75,13 +75,13 @@ BYTE 0
 SHORT 0x0013 //cromar mug
 SHORT 0x0042 //cromar fog mug
 SHORT 0x0028
-BYTE Cromar
+BYTE 0
 BYTE 0
 
 SHORT 0x00DE //sera mug
 SHORT 0x0074
 SHORT 0x007C
-BYTE Sera
+BYTE 0
 BYTE 0
 
 WORD 0x0 0x0//Terminator, don't delete this or very bad things will happen

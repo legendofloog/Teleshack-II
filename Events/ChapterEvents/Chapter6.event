@@ -20,7 +20,7 @@ PointerList:
 TurnBasedEvents:
 	TurnEventPlayer(0x0, TurnOne, 1)
 	TurnEventPlayer(0x0, TurnTwo, 2)
-	//TurnEventPlayer(0x0, WipeCheck, 1, 255)
+	TurnEventPlayer(0x0, WipeCheck, 1, 255)
 	TurnEventPlayer(0xA, StagingAreaEnter, 1, 255)
 	TurnEventPlayer(0xB, StagingAreaExit, 1, 255)
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
@@ -406,7 +406,7 @@ SpawnEnemies:
 	COUNTER_CASE(0, 0)
 		CameraCursor(Barod)
 		Text(Ch6BarodIntro1)
-		LoadReinforcements(Reinforce0)
+		LoadReinforcements(Reinforce3)
 	BREAK(0,0)
 	COUNTER_CASE(0, 1)
 		CameraCursor(Barod)

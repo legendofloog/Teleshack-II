@@ -5,8 +5,8 @@
 #define ChapterTileAnims(chapter, anim1, anim2) "PUSH; ORG 0x8b0890 + (148* chapter) + 9; BYTE anim1 anim2; POP"
 
 #ifndef DebuffTable
-  //#define DebuffTable     0x0203F2D0
-  #define DebuffTable     0x0203Fa58
+  #define DebuffTable     0x0203F2D0
+  //#define DebuffTable     0x0203Fa58
   #define DebuffTableSize 0x00000440
 #endif
 

@@ -6,4 +6,3 @@
 #include "RecklessCharge/RecklessCharge.c"
 #include "PiercingBolt/PiercingBolt.c"
 #include "DragonRage/DragonRage.c"
-#include "RadianceHeal/RadianceHeal.c"
