@@ -28,31 +28,19 @@ FlashCursor(Cleo,30)
 FlashCursor(Loewe,30)
 Text(PostPrepsCh5Text)
 CAMERA_CENTERED [9, 6]
-AddTrap(RedSigilTrapID,9,6)
-AddTrap(RedSigilTrapID,9,7)
 ENUN
+ENUT 39
 STAL 60
 CAMERA_CENTERED [20, 6]
-AddTrap(RedSigilTrapID,20,5)
-AddTrap(RedSigilTrapID,20,6)
-AddTrap(RedSigilTrapID,20,7)
 ENUN
 STAL 60
 CAMERA_CENTERED [10, 18]
-AddTrap(RedSigilTrapID,10,17)
-AddTrap(RedSigilTrapID,10,18)
-AddTrap(RedSigilTrapID,10,19)
 ENUN
 STAL 60
 CAMERA_CENTERED [19, 18]
-AddTrap(RedSigilTrapID,19,18)
-AddTrap(RedSigilTrapID,19,19)
 ENUN
 STAL 60
 CAMERA_CENTERED [19, 29]
-AddTrap(RedSigilTrapID,19,28)
-AddTrap(RedSigilTrapID,19,29)
-AddTrap(RedSigilTrapID,19,30)
 ENUN
 STAL 60
 NoFade
@@ -64,6 +52,7 @@ END_MAIN
 LocationBasedEvents:
 Chest(Unlock,3,7)
 Chest(HeavySpear,23,15)
+//Seize(11,25)
 END_MAIN
 
 MiscBasedEvents:
@@ -233,6 +222,8 @@ ENDA
 EndingScene:
 FlagConditionalDialog(0x2,PostBattleBoss,PostBattleTime)
 FADI 15
+RemoveAll
+ENUN
 InterludeRemovalRoutineASMC
 ENUN
 CHECK_EVENTID 0x2

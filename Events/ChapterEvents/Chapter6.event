@@ -307,6 +307,7 @@ SHORT 0
 ALIGN 4
 BeginningScene:
 InterludeReturnRoutineASMC
+//SHOWUNIT Varga
 DismountAll
 LOAD1 0x1 EnemyUnits
 LOAD1 0x1 VeidUnit
@@ -406,7 +407,7 @@ SpawnEnemies:
 	COUNTER_CASE(0, 0)
 		CameraCursor(Barod)
 		Text(Ch6BarodIntro1)
-		LoadReinforcements(Reinforce3)
+		LoadReinforcements(Reinforce0)
 	BREAK(0,0)
 	COUNTER_CASE(0, 1)
 		CameraCursor(Barod)
@@ -527,7 +528,8 @@ Text(Ch6ArranSamsonChoice1)
 PreventSkipping
 Text(Ch6ArranSamsonYesNo)
 AllowSkipping
-BEQ 446 s0 sC
+SVAL s1 0x1
+BNE 446 s1 sC
 	Text(Ch6ArranSamsonChoice1_2)
 	GiveItem(Physic,-1)
 	ENUT 0x8
@@ -544,7 +546,8 @@ Text(Ch6ArranSamsonChoice2)
 PreventSkipping
 Text(Ch6ArranSamsonYesNo) //if no, returns 0
 AllowSkipping
-BEQ 445 s0 sC
+SVAL s1 0x1
+BNE 445 s1 sC
 	Text(Ch6ArranSamsonChoice2_2)
 	GiveItem(Barrier,-1)
 	ENUT 0x7
