@@ -68,6 +68,8 @@
 
 #include "AddFlagByCharacterED/Installer.event"
 
+#include "MultiTileMarker/MultiTileMarker_Install.event"
+
 // thief vision set to 0
 PUSH
 ORG 0x0178C2

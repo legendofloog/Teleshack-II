@@ -361,6 +361,8 @@ BeginningScene:
 
 
 EndingScene:
+	RemoveAll
+	ENUN
 	InterludeRemovalRoutineASMC
 	ENUN
 	CHECK_EVENTID 7
