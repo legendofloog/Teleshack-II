@@ -56,10 +56,10 @@ wish to support the Liberators'[N]
 ambitions of stopping Cythes.[AN]
 [MidLeft]
 Hmm, I see.[AN]
-Very well, Nora.
+Very well, Nora.[N]
 You may be on your way.[AN][ClearFace]
 [MidRight]
-Does she think I'm a[N] 
+Does she think I'm a[N]
 traitor?[AN]
 Preposterous![AN][X]
 
@@ -169,7 +169,7 @@ That's no way to speak[N]
 to a superior![AN][X]
 
 ## IberisHansA
-[MidLeft][LoadNora][MidRight][LoadIchwep]
+[MidLeft][LoadIberis][MidRight][LoadHans]
 [MidLeft][OneLineBox]
 There you are, Hans.[AN]
 [MidRight][TwoLineBox]
