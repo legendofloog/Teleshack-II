@@ -69,7 +69,6 @@ ALIGN 32
 CharacterBasedEvents:
 CharacterEventBothWays(0x14,KorovaiValseTalk, Korovai, Valse)
 CharacterEventBothWays(0x15,KorovaiHornetTalk, Korovai, Hornet)
-
 END_MAIN
 
 KorovaiValseTalk:

@@ -369,6 +369,12 @@ EndingScene:
 	BNE 1 s0 sC
 	Text(Ch18EndShafaqatAlive)
 	LABEL 1
+	CHECK_EVENTID 0x7B
+	BEQ 776 s0 sC
+		CHECK_EVENTID 39
+		BEQ 776 s0 sC
+			ENUF 0x7B //if 0x7B was set before but Riggan death quote played, turn off alive flag
+	LABEL 776
 	MUSC TiesOfFriendship
 	SetBackground(0x9)
 	Text(Ch18EndBarod)

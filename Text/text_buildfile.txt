@@ -51,6 +51,10 @@ What, you wanna take a breather?[N]
 Well, no shame in it. Rest up,[N]
 and come back when you're ready.[X]
 
+# 0xC52
+This unit is fatigued[N]
+and cannot be deployed.[X]
+
 # 0x55B
 Unit is blessed by Leina's Radiance.[NL]
 They will heal for 10 + Leina's Mag[N]

@@ -74,7 +74,7 @@ UNIT
 
 EnemyUnitsBosses:
 UNIT Byelen ByelenClass   0x0 Level(20,Enemy,False) [13,3] 0x0 0x0 0x0 0x0 [Predestination] BossAI
-UNIT EithaReal Sniper   0x0 Level(20,Enemy,False) [13,11] 0x0 0x0 0x0 0x0 [Daybreak] GroupThreeAI
+UNIT EithaReal Sniper_F   0x0 Level(20,Enemy,False) [13,11] 0x0 0x0 0x0 0x0 [Daybreak] GroupThreeAI
 UNIT HamdiReal Halberdier   0x0 Level(20,Enemy,False) [13,13] 0x0 0x0 0x0 0x0 [TitansFang] GroupThreeAI
 UNIT Theimon Paladin_Dismounted   0x0 Level(20,Enemy,False) [3,14] 0x0 0x0 0x0 0x0 [Svarog] GroupTwoAI
 UNIT Danu Warrior   0x0 Level(20,Enemy,False) [23,13] 0x0 0x0 0x0 0x0 [Worldcleaver] GroupOneAI

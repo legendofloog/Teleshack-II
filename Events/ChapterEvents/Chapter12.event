@@ -321,6 +321,7 @@ EraseBackground
 SOUN 0xB1 //lockpick sound
 TILECHANGE 1
 LOAD 1 TiberiusAndFriends
+ENUN
 MOVE 9 Boro_Ch1 [8,4]
 MOVE 9 Hernandez [7,3]
 MOVE 9 VargaCopy [7,5]
