@@ -126,6 +126,24 @@ void DismountUnitASMC(Unit* unit){
 	}
 }
 
+void DismountAllUnitsInCh12IndoorStartingPosition(){
+	int x;
+	int y;
+	int z;
+	Unit* unitPointer;
+	for (z = 0; z <= 60; z++){
+		unitPointer = &gUnitArrayBlue[z];
+		for (x = 27; x <= 33; x++){ //dimensions of indoor prep area
+			for (y = 6; y <= 15; y++){
+				if(unitPointer->xPos == x && unitPointer->yPos == y){
+					DismountUnitASMC(unitPointer);
+				}
+			}
+		}
+	}
+	
+}
+
 void MountUnitASMC(Unit* unit){
 	if(unit->state & (US_DEAD | US_REMOVED))
 	{

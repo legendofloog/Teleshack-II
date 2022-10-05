@@ -25,6 +25,8 @@
 #define Unarmed Disarmed
 #define Spears Lances
 
+#define DancerSwordAnim 0xAB
+
 #define NobleMSwordAnim 0xcd
 #define NobleMUnarmedAnim 0x02
 
@@ -266,17 +268,24 @@ ALIGN 4
 SageMAnims:
 AnimaAnim(SageMagicAnim)
 LightAnim(SageMagicAnim)
+StaffAnim(SageMagicAnim)
 UnarmedAnim(SageMagicAnim)
 EndAnim
 
+ALIGN 4
+DancerAnims:
+SwordAnim(DancerSwordAnim)
+EndAnim
 
 ALIGN 4
 PriestAnims:
+StaffAnim(PriestUnarmedAnim)
 UnarmedAnim(PriestUnarmedAnim)
 EndAnim
 
 ALIGN 4
 ClericAnims:
+StaffAnim(ClericUnarmedAnim)
 UnarmedAnim(ClericUnarmedAnim)
 EndAnim
 
@@ -331,6 +340,7 @@ MasterKnightFAnims:
 SwordAnim(MasterKnightFSwordAnim)
 BowAnim(MasterKnightFBowAnim)
 LightAnim(MasterKnightFMagicAnim)
+StaffAnim(MasterKnightFMagicAnim)
 UnarmedAnim(MasterKnightFMagicAnim)
 EndAnim
 
@@ -339,6 +349,7 @@ MasterKnightMAnims:
 SwordAnim(MasterKnightMSwordAnim)
 BowAnim(MasterKnightMBowAnim)
 LightAnim(MasterKnightMMagicAnim)
+StaffAnim(MasterKnightMMagicAnim)
 UnarmedAnim(MasterKnightMMagicAnim)
 EndAnim
 
@@ -375,11 +386,13 @@ EndAnim
 ALIGN 4
 ThiefAnims:
 SwordAnim(ThiefMatthewSwordAnim)
+UnarmedAnim(ThiefMatthewSwordAnim)
 EndAnim
 
 ALIGN 4
 FThiefAnims:
 SwordAnim(ThiefFSwordAnim)
+UnarmedAnim(ThiefFSwordAnim)
 EndAnim
 
 ALIGN 4
@@ -506,12 +519,14 @@ EndAnim
 ALIGN 4
 DarkMageAnims:
 DarkAnim(DarkMageMagicAnim)
+StaffAnim(DarkMageMagicAnim)
 UnarmedAnim(DarkMageMagicAnim)
 EndAnim
 
 ALIGN 4
 DarkMageFAnims:
 DarkAnim(DarkMageFMagicAnim)
+StaffAnim(DarkMageFMagicAnim)
 UnarmedAnim(DarkMageFMagicAnim)
 EndAnim
 
@@ -519,7 +534,6 @@ ALIGN 4
 BardAnims:
 AnimaAnim(BardMagicAnim)
 LightAnim(BardMagicAnim)
-DarkAnim(BardMagicAnim)
 UnarmedAnim(BardMagicAnim)
 EndAnim
 
@@ -533,12 +547,14 @@ EndAnim
 ALIGN 4
 SisterAnims:
 LightAnim(SisterMagicAnim)
+StaffAnim(SisterMagicAnim)
 UnarmedAnim(SisterMagicAnim)
 EndAnim
 
 ALIGN 4
 BrotherAnims:
 LightAnim(BrotherMagicAnim)
+StaffAnim(BrotherMagicAnim)
 UnarmedAnim(BrotherMagicAnim)
 EndAnim
 
@@ -557,6 +573,7 @@ EndAnim
 ALIGN 4
 TroubaritzAnims:
 SwordAnim(TroubaritzSwordAnim)
+StaffAnim(TroubaritzUnarmedAnim)
 UnarmedAnim(TroubaritzUnarmedAnim)
 EndAnim
 
@@ -571,6 +588,7 @@ ALIGN 4
 GoldKnightFAnims:
 SwordAnim(PaladinFSwordAnim)
 SpearAnim(PaladinFLanceAnim)
+StaffAnim(PaladinFUnarmedAnim)
 //SpecialAnim(0x0,Maharaghi)
 UnarmedAnim(PaladinFUnarmedAnim)
 EndAnim
@@ -638,6 +656,7 @@ BaronAnims:
 AnimaAnim(BaronMagicAnim)
 DarkAnim(BaronMagicAnim)
 LightAnim(BaronMagicAnim)
+StaffAnim(BaronMagicAnim)
 UnarmedAnim(BaronMagicAnim)
 EndAnim
 
@@ -717,6 +736,7 @@ AxeAnim(DismountedFAxeAnim)
 HandAxeAnim(DismountedFHandAxeAnim)
 SpearAnim(DismountedFLanceAnim)
 BowAnim(DismountedFBowAnim)
+StaffAnim(DismountedFUnarmedAnim)
 UnarmedAnim(DismountedFUnarmedAnim)
 EndAnim
 
@@ -727,6 +747,7 @@ AxeAnim(DismountedMAxeAnim)
 HandAxeAnim(DismountedMHandAxeAnim)
 SpearAnim(DismountedMLanceAnim)
 BowAnim(DismountedMBowAnim)
+StaffAnim(DismountedMUnarmedAnim)
 UnarmedAnim(DismountedMUnarmedAnim)
 EndAnim
 
@@ -775,6 +796,7 @@ EmperorAnims:
 SwordAnim(EmperorSwordAnim)
 AnimaAnim(EmperorMagicAnim)
 DarkAnim(EmperorMagicAnim)
+StaffAnim(EmperorMagicAnim)
 UnarmedAnim(EmperorMagicAnim)
 EndAnim
 

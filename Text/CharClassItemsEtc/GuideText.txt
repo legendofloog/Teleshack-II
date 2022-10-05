@@ -274,7 +274,11 @@ during their interlude,[N]
 they will not appear again.[N]
 [N]
 Interlude chapters do not reset[N]
-fatigue for existing units.[X]
+fatigue for existing units.[N]
+Additionally, you can check[N]
+interlude unit growths by[N]
+pressing Select, even though[N]
+they are green units.[X]
 
 ## WeaponTriangleDescGuide
 Weapon triangle bonuses provide[N]
@@ -582,12 +586,28 @@ Hit:[N]
 Skl x 2 + Lck + Weapon Hit[N]
 [N]
 Avoid:[N]
-Spd + Lck + Terrain Avoid[X]
+Spd + Lck + Terrain Avoid[N]
+[N]
+Staff Range:[N]
+(Magic / 2) + 5[N]
+[N]
+Status Staff Accuracy:[N]
+If staffer Mag > target Res,[N]
+100%. Otherwise, 0%.[X]
 
 ## QoLChangesMechanicSubPageTitle
 QoL Changes[X]
 
 ## QoLChangesDescGuide
-QoL Changes[X]
+Many of the common QoL changes[N]
+in the Skill System are here,[N]
+including:[N]
+- Talk display[N]
+- Battle Anim Toggle (Hold L)[N]
+- Enemy attack radius[N]
+- HP Bars[N]
+- Growth display with Select[N]
+Also, staff and dance animations[N]
+are automatically disabled.[X]
 
 

@@ -874,6 +874,14 @@
 	setPalette(216,TiberiusMKDismounted)
 	setCBSP(216,Tiberius, 2, MasterKnight_Dismounted)
 
+// HornetDismounted
+	setPalette(217,HornetDismounted)
+	setCBSP(217,Hornet, 2, BowKnight_Dismounted)
+
+// HornetAKDismounted
+	setPalette(218,HornetAKDismounted)
+	setCBSP(218,Hornet, 4, ArchKnight_Dismounted)
+
 // BardTweak
 	setGenericPalette(0xE1,BardTweak)
 	setGenericPalette( 0xAC,BardTweak)

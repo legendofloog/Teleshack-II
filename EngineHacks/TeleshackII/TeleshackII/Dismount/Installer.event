@@ -13,6 +13,8 @@ MESSAGE Dismount ends at currentOffset
 #define DismountAll "ASMC DismountAllASMC"
 #define MountAll "ASMC MountAllASMC"
 
+#define DismountAfter12Preps "ASMC DismountAllUnitsInCh12IndoorStartingPosition"
+
 ALIGN 4
 MountedClassTable:
 MountedUnmounted(MasterKnight, MasterKnight_Dismounted)

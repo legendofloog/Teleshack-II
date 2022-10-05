@@ -657,6 +657,12 @@ FaolanGKDismounted:
 TiberiusMKDismounted:
 	#incbin "./_palettes/TiberiusMKDismounted.lzpal" 
 
+HornetDismounted:
+	#incbin "./_palettes/HornetDismounted.lzpal" 
+
+HornetAKDismounted:
+	#incbin "./_palettes/HornetAKDismounted.lzpal" 
+
 BardTweak:
 	#incbin "./_palettes/BardTweak.lzpal" 
 

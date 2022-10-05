@@ -87,6 +87,9 @@ POIN SupplyMenuTSA
 ORG 0x9DC44
 POIN SupplyMenuMugTSA
 
+ORG 0x9F0C8
+POIN SupplyMenuTSA
+
 POP
 
 ALIGN 4
