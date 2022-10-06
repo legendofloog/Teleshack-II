@@ -370,8 +370,11 @@
 {
     #include "Animations/Patriarch (MrNight48, DerTheVaporeon)/Magic Installer.event"
 }
+{
     #include "Animations/Mercenary_Repal_V2(Eldritch)/Sword Installer.event"
     #include "Animations/Mercenary_Repal_V2(Eldritch)/Unarmed Installer.event"
-{
+}
 
+{
+    #include "Animations/Dancer (circleseverywhere)/Sword Installer.event"
 }

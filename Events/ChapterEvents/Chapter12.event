@@ -321,6 +321,7 @@ EraseBackground
 SOUN 0xB1 //lockpick sound
 TILECHANGE 1
 LOAD 1 TiberiusAndFriends
+ENUN
 MOVE 9 Boro_Ch1 [8,4]
 MOVE 9 Hernandez [7,3]
 MOVE 9 VargaCopy [7,5]
@@ -504,8 +505,6 @@ EndingScene:
 FADI 15
 RemoveAll
 ENUN
-InterludeRemovalRoutineASMC
-ENUN
 CHECK_EVENTID 27
 BEQ 2 s0 sC
 //CHECK_EXISTS Tiberius //Tiberius can only exist at this point if he has captured and held during the enemy wipe when phase 2 begins
@@ -514,8 +513,9 @@ BEQ 2 s0 sC
 	RemoveAllItem(Darkbrand)
 	LOAD 1 TiberiusEndSceneGroup
   ENUN
-ENUN
 LABEL 2
+InterludeRemovalRoutineASMC
+ENUN
 SetBackground(CastleHallway)
 Music(FF5_Nostalgia)
 Text(Ch12End1)
@@ -627,6 +627,10 @@ NoFade
 ENDA
 
 TiberiusCidorTalk:
+FADI 10
+DismountAfter12Preps
+ENUN
+FADU 5
 Music(TiesOfFriendship)
 SetBackground(CastleHallway)
 Text(Ch12Turn1)
@@ -635,13 +639,13 @@ NoFade
 ENDA
 
 TiberiusDefeat:
-CHECK_EXISTS Tiberius
-BEQ 4 s0 sC
+CHECK_EXISTS Tiberius // if 0 (no), if 1 (yes)
+BEQ 4 s0 sC //branches if he is dead
 	ENUT 27
-    Text(TiberiusCaptureQuote)
+  Text(TiberiusCaptureQuote)
 	Text(TiberiusCaptured)
-    NoFade
-    ENDB
+  NoFade
+  ENDB
 LABEL 4
 Text(TiberiusCh12DeathQuote)
 NoFade

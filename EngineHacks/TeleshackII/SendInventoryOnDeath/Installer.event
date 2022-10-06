@@ -10,3 +10,5 @@ POP
 ALIGN 4
 SendInventoryOnDeath:
 #incbin "SendInventoryOnDeath.dmp"
+POIN SkillTester
+WORD DullahanID

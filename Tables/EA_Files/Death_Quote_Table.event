@@ -41,7 +41,7 @@ DeathQuote(Mureib,Chapter17,2,MureibDeathQuoteText)
 DeathQuote(Mureib2,Chapter17,0,Mureib2DeathQuoteText)
 DeathQuote(Barod2,Chapter18,2,BarodDeathQuoteText)
 DeathQuote(Shafaqat,Chapter18,7,ShafaqatDeathQuoteText)
-DeathQuote(Riggan,Chapter18,0,RigganDeathQuoteText)
+DeathQuote(Riggan,Chapter18,39,RigganDeathQuoteText)
 DeathQuote(C19Phantom,Chapter19,0x02,0x0)
 //ch21
 DeathQuote(Vinny,Chapter21,0,VinnyDeathQuoteText)

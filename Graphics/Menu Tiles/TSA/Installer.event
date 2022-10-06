@@ -73,6 +73,11 @@ SHORT 0x46C0 0x46C0 // nop nop
 ORG 0xA14D8
 POIN SupportMenuTSA
 
+ORG 0xA2420
+POIN SupportListMenuTSA
+ORG 0xA2AA0
+POIN SupportListMenuTSA
+
 ORG 0xB4E04
 POIN ShopMugWindowTSA
 
@@ -81,6 +86,9 @@ POIN SupplyMenuTSA
 
 ORG 0x9DC44
 POIN SupplyMenuMugTSA
+
+ORG 0x9F0C8
+POIN SupplyMenuTSA
 
 POP
 
@@ -123,6 +131,10 @@ PrepMenuItemsSecondUnitTSA:
 ALIGN 4
 SupportMenuTSA:
 #incbin "dmp/SupportMenu.tmx.dmp"
+
+ALIGN 4
+SupportListMenuTSA:
+#incbin "dmp/SupportListMenu.tmx.dmp"
 
 ALIGN 4
 ShopMugWindowTSA:

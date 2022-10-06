@@ -1,9 +1,12 @@
 #include "RecklessCharge.h"
 
 void RecklessCharge(BattleUnit* unit1, BattleUnit* unit2){
-	Unit* actingUnit = &gBattleActor.unit;
+	if (unit1->unit.pCharacterData->number != gActiveUnit->pCharacterData->number){
+		return;
+	}
+	Unit* actingUnit = &unit1->unit;
 	ActionData currentActionData = gActionData;
-	int tilesLeftToMove = gActiveUnit->pClassData->baseMov + gActiveUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
+	int tilesLeftToMove = actingUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
 	// try to apply reckless charge
 	if((gSkillTester(actingUnit, RecklessChargeIDLink)) && (actingUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
 		BattleUnit* actingBattleUnit = &gBattleActor;
