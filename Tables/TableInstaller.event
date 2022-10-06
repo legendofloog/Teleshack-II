@@ -2,49 +2,49 @@
 
 #include "TableDefinitions.event"
 
-#include "NightmareModules\ChapterData\ChapterData.event"
+#include "NightmareModules\CharactersClasses\PromotionBranchEditor.event"
 
-#include "NightmareModules\CharactersClasses\CharacterTable.event"
+#include "NightmareModules\CharactersClasses\MagCharEditor.event"
 
 #include "NightmareModules\CharactersClasses\ClassLevelCapTable.event"
 
-#include "NightmareModules\CharactersClasses\ClassTable.event"
-
-#include "NightmareModules\CharactersClasses\MagCharEditor.event"
+#include "NightmareModules\CharactersClasses\WalkingSoundEditor.event"
 
 #include "NightmareModules\CharactersClasses\MagClassEditor.event"
 
 #include "NightmareModules\CharactersClasses\MiscMapSpriteEditor.event"
 
-#include "NightmareModules\CharactersClasses\PromotionBranchEditor.event"
+#include "NightmareModules\CharactersClasses\CharacterTable.event"
 
-#include "NightmareModules\CharactersClasses\WalkingSoundEditor.event"
+#include "NightmareModules\CharactersClasses\ClassTable.event"
+
+#include "NightmareModules\ItemEffectRevamp\Staff_AI_Table.event"
+
+#include "NightmareModules\ItemEffectRevamp\ItemBox_Effect.event"
 
 #include "NightmareModules\ItemEffectRevamp\Effect_Anim_Association_Editor.event"
 
-#include "NightmareModules\ItemEffectRevamp\IER_StatboosterText.event"
-
-#include "NightmareModules\ItemEffectRevamp\ItemBox_Effect.event"
+#include "NightmareModules\ItemEffectRevamp\Promotion_Item_Table.event"
 
 #include "NightmareModules\ItemEffectRevamp\Item_AI_Table.event"
 
 #include "NightmareModules\ItemEffectRevamp\Item_Effect_Revamp.event"
 
-#include "NightmareModules\ItemEffectRevamp\Promotion_Item_Table.event"
-
-#include "NightmareModules\ItemEffectRevamp\Staff_AI_Table.event"
-
-#include "NightmareModules\Items\ItemTable.event"
-
-#include "NightmareModules\Items\SpellAssociationList.event"
-
-#include "NightmareModules\Items\WeaponLockArray.event"
+#include "NightmareModules\ItemEffectRevamp\IER_StatboosterText.event"
 
 #include "NightmareModules\Skills\CharacterLevelUpSkillEditor.event"
-
-#include "NightmareModules\Skills\ClassLevelUpSkillEditor.event"
 
 #include "NightmareModules\Skills\ClassSkillEditor.event"
 
 #include "NightmareModules\Skills\PersonalSkillEditor.event"
+
+#include "NightmareModules\Skills\ClassLevelUpSkillEditor.event"
+
+#include "NightmareModules\Items\WeaponLockArray.event"
+
+#include "NightmareModules\Items\SpellAssociationList.event"
+
+#include "NightmareModules\Items\ItemTable.event"
+
+#include "NightmareModules\ChapterData\ChapterData.event"
 
