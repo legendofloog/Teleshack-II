@@ -13,7 +13,7 @@ We're just lucky Boro had a[N]
 change of heart when he did[Beat][A]
 
 [Right][OneLineBox]
-How are you feeling General?[A]
+How are you feeling, General?[A]
 
 [Left][ThreeLineBox]
 Hah,[.6] it'll take more than this[N]
@@ -24,12 +24,12 @@ this kind of foolishness but-[.5][N]
 you've done a fine job.[A]
 
 [FarLeft]
-We're not exactly out of the[N]
-woods so I wouldn't thank[N]
-us yet, this place is a maze.[A]
+We're not quite out of the[N]
+woods, so I wouldn't thank[N]
+us yet. This place is a maze.[A]
 
 [Left]
-Of course,[.4] no doubt every soldier[N]
+Of course. No doubt every soldier[N]
 Cidor has is after us.[.6][N]
 Do we have an escape plan?[A]
 
@@ -61,38 +61,38 @@ we should be able to[N]
 make a break for it.[A]
 
 [FarRight][OneLineBox]
-You're sure about this Varga?[A]
+You're sure about this, Varga?[A]
 
 [Right][TwoLineBox]
-Not exactly,[.4] there will[N]
+Not exactly. There will[N]
 be plenty of guards.[A]
 [FarLeft][ThreeLineBox]
 You're sure we can trust this guy[N]
-Cleo?[.4] I mean he was awful keen[N]
+Cleo?[.4] He was awfully keen[N]
 to turn on his former allies.[A]
 
 [FarRight][TwoLineBox]
-I'm certain,[.5] trust me on this.[.6][N]
+I'm certain.[.5] Trust me on this.[.6][N]
 I'll explain it all later.[A]
 
 [FarLeft][ThreeLineBox]
-Yeah,[.4] I trust you,[.4] alright then.[.6][N]
-Well I think no matter what we do[N]
+Yeah,[.4] I trust you.[.4][N]
+Well, I think no matter what we do,[N]
 we're going to run into soldiers,[AN]
 so I don't see anything wrong[N]
 with Varga's proposal.[.6] General?[A]
 
 [Left]
-If we can get the drop on them.[.4] we[N]
+If we can get the drop on them,[.4] we[N]
 should be able to push through[N]
 before they can react.[AN]
 But we'll have to be fast if we[N]
-want everyone to escape.[.6] Of course[N]
+want everyone to escape.[.6] Of course,[N]
 that should be no trouble for us.[A]
 
 [FarRight][TwoLineBox]
 Alright then, if there's no[N]
-objections,[.7] lets move.[A][X]
+objections,[.7] let's move.[A][X]
 
 ## BeginningSceneTextC
 [MidLeft][LoadDragana][OneLineBox]
@@ -105,7 +105,7 @@ Drat![.5] The Liberators![.4] Men,[.4] to[N]
 arms! Let's quash this rebel scum[N]
 where our compatriots couldn't![A]
 [MidLeft][OneLineBox]
-Yes captain![A][X]
+Yes, Captain![A][X]
 
 
 
@@ -122,7 +122,7 @@ We're just lucky Boro had a[N]
 change of heart when he did[Beat][A]
 
 [Right][OneLineBox]
-How are you feeling General?[A]
+How are you feeling, General?[A]
 
 [MidLeft][ThreeLineBox]
 Hah,[.6] it'll take more than this[N]
@@ -133,12 +133,13 @@ this kind of foolishness but-[.5][N]
 you've done a fine job.[A]
 
 [Right][ThreeLineBox]
-I wouldn't thank us yet commander.[.6][N]
-This place is a maze, we may[N]
-not even find our way out yet.[A]
+We're not quite out of the[N]
+woods, so I wouldn't thank[N]
+us yet, Commander.[AN]
+This place is a maze.[A]
 
 [Left][ThreeLineBox]
-Of course,[.4] no doubt every soldier[N]
+Of course. No doubt every soldier[N]
 Cidor has is after us.[.6][N]
 Do we have an escape plan?[A]
 
@@ -172,7 +173,7 @@ We're just lucky Boro had a[N]
 change of heart when he did[Beat][A]
 
 [Right][OneLineBox]
-How are you feeling General?[A]
+How are you feeling, General?[A]
 
 [Left][ThreeLineBox]
 Hah,[.6] it'll take more than this[N]
@@ -182,13 +183,14 @@ Normally I would reprimand[N]
 this kind of foolishness but-[.5][N]
 you've done a fine job.[A]
 
-[FarLeft]
-We're not exactly out of the[N]
-woods so I wouldn't thank[N]
-us yet, this place is a maze.[A]
+[Right][ThreeLineBox]
+We're not quite out of the[N]
+woods, so I wouldn't thank[N]
+us yet, Commander.[AN]
+This place is a maze.[A]
 
 [Left]
-Of course,[.4] no doubt every soldier[N]
+Of course. No doubt every soldier[N]
 Cidor has is after us.[.6][N]
 Do we have an escape plan?[A]
 
@@ -212,7 +214,7 @@ We're just lucky Boro had a[N]
 change of heart when he did[Beat][A]
 
 [Right][OneLineBox]
-How are you feeling General?[A]
+How are you feeling, General?[A]
 
 [MidLeft][ThreeLineBox]
 Hah,[.6] it'll take more than this[N]
@@ -223,9 +225,10 @@ this kind of foolishness but-[.5][N]
 you've done a fine job.[A]
 
 [Right][ThreeLineBox]
-I wouldn't thank us yet commander.[.6][N]
-This place is a maze, we may[N]
-not even find our way out yet.[A]
+We're not quite out of the[N]
+woods, so I wouldn't thank[N]
+us yet, Commander.[AN]
+This place is a maze.[A]
 
 [MidLeft][ThreeLineBox]
 Of course,[.4] no doubt every soldier[N]
@@ -233,12 +236,12 @@ Cidor has is after us.[.6][N]
 Do we have an escape plan?[A]
 
 [Right][ThreeLineBox]
-Not exactly[Beat][.5] But I overheard[N]
+Not exactly[Beat][.5] But, I overheard[N]
 one of the guards mentioning[N]
 an exit to the east.[AN]
 
 [MidLeft][OneLineBox]
-Alright then.[.5] Lead the way.[AN][X]
+Alright, then.[.5] Lead the way.[AN][X]
 
 
 
@@ -252,23 +255,24 @@ we should be able to[N]
 make a break for it.[A]
 
 [FarRight][OneLineBox]
-You're sure about this Varga?[A]
+You're sure about this, Varga?[A]
 
 [Right][TwoLineBox]
-Not exactly,[.4] there will[N]
+Not exactly. There will[N]
 be plenty of guards.[A]
 [FarLeft][ThreeLineBox]
 You're sure we can trust this guy[N]
-Cleo?[.4] I mean he was awful keen[N]
+Cleo?[.4] He was awfully keen[N]
 to turn on his former allies.[A]
 
+
 [FarRight][TwoLineBox]
-I'm certain,[.5] trust me on this.[.6][N]
+I'm certain.[.5] Trust me on this.[.6][N]
 I'll explain it all later.[A]
 
 [FarLeft][ThreeLineBox]
-Yeah,[.4] I trust you,[.4] alright then.[.6][N]
-Well I think no matter what we do[N]
+Yeah,[.4] I trust you.[.4][N]
+Well, I think no matter what we do,[N]
 we're going to run into soldiers,[AN]
 so I don't see anything wrong[N]
 with Varga's proposal.[.6] General?[A]
@@ -283,7 +287,7 @@ that should be no trouble for us.[A]
 
 [FarRight][TwoLineBox]
 Alright then, if there's no[N]
-objections,[.7] lets move.[A][X]
+objections,[.7] let's move.[A][X]
 
 
 
@@ -299,14 +303,14 @@ we should be able to[N]
 make a break for it.[A]
 
 [FarLeft][OneLineBox]
-You're sure about this Mira?[A]
+You're sure about this, Mira?[A]
 
 [FarRight][TwoLineBox]
-Not exactly,[.4] there will[N]
+Not exactly. There will[N]
 be plenty of guards.[A]
 
 [Right][ThreeLineBox]
-Well I think no matter what we do[N]
+Well, I think no matter what we do,[N]
 we're going to run into soldiers,[AN]
 so I don't see anything wrong[N]
 with that plan.[.6] General?[A]
@@ -321,7 +325,7 @@ that should be no trouble for us.[A]
 
 [FarRight][TwoLineBox]
 Alright then, if there's no[N]
-objections,[.7] lets move.[A][X]
+objections,[.7] let's move.[A][X]
 
 
 
@@ -335,14 +339,14 @@ we should be able to[N]
 make a break for it.[A]
 
 [FarRight][OneLineBox]
-You're sure about this Cleo?[A]
+You're sure about this, Cleo?[A]
 
 [Right][TwoLineBox]
-Not exactly,[.4] there will[N]
-be a lot of guards most likely.[A]
+Not exactly.[.4] There will[N]
+most likely be a lot of guards.[A]
 
 [FarRight][ThreeLineBox]
-Well I think no matter what we do[N]
+Well, I think no matter what we do,[N]
 we're going to run into soldiers,[AN]
 so I don't see anything wrong[N]
 with that plan.[.6] General?[A]
@@ -382,7 +386,7 @@ But he-[A][CloseSpeechSlow]
 [MidRight][MoveFarRight][MidLeft][ClearFace][Right][LoadLoewe][MidLeft][LoadDragana]
 [FarLeft][ThreeLineBox]
 Don't let his sacrifice be in[N]
-vain,[.4] we have to push forward[N]
+vain![.4] We have to push forward[N]
 before they catch up to us.[A]
 
 [Right][OneLineBox]
@@ -414,7 +418,7 @@ Wh-[.5] Alex,[.5] Axel?[.6] What on earth[N]
 are you two doing in here?[A]
 
 [Right][OneLineBox]
-Ah boss,[.4] we can explain![A]
+Oh Boss,[.4] we can explain![A]
 
 [FarRight][TwoLineBox]
 We came in to help you[N]
@@ -445,7 +449,7 @@ And I don't think you'd be any[N]
 use to us like that![A]
 
 [Right][ToggleSmile]
-Yeah but we aren't and[N]
+Yeah but we aren't, and[N]
 thats what matters![A]
 
 [FarRight][OneLineBox]
@@ -457,30 +461,30 @@ I ever let you two onto[N]
 the recon squad[Beat][CloseEyes][A]
 
 [FarRight][TwoLineBox][ToggleSmile]
-I mean you need someone who can[N]
+I mean, you need someone who can[N]
 handle themselves in a brawl.[A]
 
 [Right][ThreeLineBox]
 It's not like Iskra is going[N]
 toe to toe with a knight in a[N]
-one versus one swordfight.[A]
+one-on-one sword fight.[A]
 
 [FarRight][TwoLineBox]
 And we're two for[N]
 the price of one![A]
 
 [MidLeft][ThreeLineBox][OpenEyes]
-Hah, whatever you knuckleheads.[N]
+Hah, whatever, you knuckleheads.[N]
 Come on,[.5] do what you[N]
 do best,[.5] let's move![A]
 
 [Right][OneLineBox]
 [MoveRight]
-Aye aye cap'n![A]
+Aye aye, Cap'n![A]
 
 [FarRight]
 [MoveFarRight]
-Sure thing boss![A][X]
+Sure thing, Boss![A][X]
 
 
 
@@ -491,10 +495,10 @@ Sure thing boss![A][X]
 Cleo,[.5] I wish to speak with you.[A]
 
 [MidRight][OneLineBox]
-Yes General?[A]
+Yes, General?[A]
 
 [MidLeft][TwoLineBox]
-I wanted you to know,[.6] I am so impressed[N]
+I wanted you to know[Beat][.6] I am so impressed[N]
 with what you have done here today.[A]
 
 [MidRight][TwoLineBox]
@@ -505,11 +509,11 @@ of real world experience you do.[A]
 
 [MidLeft][ThreeLineBox]
 And there will be time for that,[.5][N]
-but you are my Adjudant for a[N]
-reason,[.4] I trust in your capability.[A]
+but you are my adjudant for a[N]
+reason.[.4] I trust in your capability.[A]
 
 [MidRight][OneLineBox]
-Of course General[Beat][A]
+Of course, General[Beat][A]
 
 [MidLeft][TwoLineBox]
 What's wrong Cleo?[.6] I can tell[N]
@@ -518,29 +522,29 @@ something is eating at you.[A]
 [MidRight][TwoLineBox]
 Well I[Beat][.6] I don't know how[N]
 you stay strong at times like[N]
-this,[.4] doing this,[.4] it's terrifying.[AN]
+this.[.4] Doing this,[.4] it's terrifying.[AN]
 Any of us could've died on this[N]
 mission,[.4] what if we had lost you?[.6][N]
 What would happen to the Liberators?[A]
 
 [MidLeft][ThreeLineBox]
 [CloseEyes][Beat][.7][OpenEyes]Cleo, the truth is I'm always[N]
-scared,[.5] everyone is.[.6] I put on a brave[N]
+scared.[.5] Everyone is.[.6] I put on a brave[N]
 face because people need someone to.[AN]
 They need it so they can feel[N]
 brave themselves.[.6] But even as a[N]
-leader the fear still affects us all.[A]
+leader, the fear still affects us all.[A]
 
 [MidRight][TwoLineBox]
-Ah I see,[.....] thank you[N]
+Ah. I see[Beat] Thank you,[N]
 General, it means a lot.[A]
 
 [MidLeft][TwoLineBox]
-Of course Cleo[.4] any time,[.4][N]
-now,[ToggleSmile][.5] lead the way![A]
+Of course, Cleo[.4] any time.[.4][N]
+Now,[ToggleSmile][.5] lead the way![A]
 
 [MidRight][MoveMidRight][OneLineBox]
-Yes General![A][X]
+Yes, General![A][X]
 
 
 
@@ -554,39 +558,40 @@ Loewe,[.5] I hear this rescue[N]
 attempt was of your doing.[A]
 
 [MidRight][ThreeLineBox]
-If you can call it that,[.5] I only[N]
+If you can call it that.[.5] I only[N]
 wound up getting myself caught.[.6][N]
 Cleo is the one that made it work[Beat][A]
 
 [MidLeft][ThreeLineBox]
-That's not true Loewe,[.4] it's your[N]
+That's not true, Loewe.[.4] It's your[N]
 decisiveness that brought everyone[N]
 here to begin with at all.[A]
 
 [MidRight][TwoLineBox]
-[CloseEyes][Beat][.6]But I still got captured,[.4] I just[N]
+[CloseEyes][Beat][.6]But, I still got captured.[.4] I just[N]
 wound up making it harder to rescue you.[A]
 
 [MidLeft][TwoLineBox]
-And I also got captured Loewe.[.6][N]
-Does that make me a bad leader?[A]
+And I also got captured, Loewe.[.6][N]
+Am I a bad leader?[A]
 
 [MidRight][OneLineBox][OpenEyes]
 
-Well[Beat][.4] No,[.4] it doesn't[Beat][A]
+Well[Beat][.4] no,[.4] you're not[Beat][A]
 
 [MidLeft][TwoLineBox]
-Then neither are you,[.4] you[N]
+Then neither are you.[.4] You[N]
 did what you thought was right.[AN]
-Even if you made mistakes what matters[N]
-Is you tried,[.....] your mother would be proud.[A]
+Even if you made mistakes, what matters[N]
+is you tried.[.....] Your mother would be proud.[A]
 
 [MidRight][OneLineBox]
 General[Beat][A]
 
-[MidLeft][TwoLineBox][ToggleSmile]
-And I'm proud of you too,[.4] now come[N]
-on,[.5] let's go make up our mistakes![A][X]
+[MidLeft][ThreeLineBox][ToggleSmile]
+And I'm proud of you too.[.4][N]
+Now come on,[.5][N]
+let's go make up for our mistakes![A][X]
 
 
 
@@ -594,7 +599,7 @@ on,[.5] let's go make up our mistakes![A][X]
 
 ## DraganaDeathResponseText
 [MidLeft][LoadLoewe]
-No![.6] General you can't![.6][N]
+No![.6] General, you can't![.6][N]
 We won't leave you here![A][X]
 
 ## EmoryBattleQuote
@@ -623,7 +628,7 @@ We're almost there,[.5] the[N]
 exit is just ahead![A][.6]
 
 [FarFarLeft][OneLineBox]
-[Beat][.5]You're not out of the woods yet.[A]
+[Beat][.5]Where do you think you're going?[A]
 [FarLeft][MoveFarLeft]
 [Beat]![A][X]
 
@@ -640,7 +645,7 @@ don't think I can keep going[Beat][.4][A]
 We're almost there,[.5] the[N]
 exit is just ahead![A][.6]
 [FarFarLeft][OneLineBox]
-[Beat]You're not out of the woods yet.[A]
+[Beat]Where do you think you're going?[A]
 [MidLeft][MoveMidLeft]
 [Beat]![A][X]
 
@@ -656,7 +661,7 @@ could slip out from under[N]
 me just like that?[A]
 
 [Right][TwoLineBox]
-But of course,[.5] how[N]
+Well yeah,[.5] how[N]
 hard could it be?[A]
 
 [MidLeft][ThreeLineBox][CloseEyes]
@@ -665,7 +670,7 @@ has been a thorn in my[N]
 side for long enough.[AN]
 I'm putting an end to this[N]
 pointless conflict,[.5] here[N]
-and now,[.6] today.[A]
+and now.[A]
 
 [FarRight][ThreeLineBox]
 Cidor![.6] Don't you see the[N]
@@ -689,12 +694,12 @@ their favourite pet?[A]
 
 [MidLeft][ThreeLineBox]
 You know nothing of what[N]
-I work towards,[.5] why I do this.[.6][N]
-But enough Kasun[.5] this ends here.[AN]
+I work towards.[.5] Why I do this![.6][N]
+But enough, Kasun[.5]. This ends here.[AN]
 Your [.6][OpenQuote]liberation"[.6] shall fall with you.[A]
 
 [FarRight][TwoLineBox]
-Pah,[.5] like I'd fall to a[N]
+Pah,[.5] like I'd fall to[N]
 traitorous swine like you![A][X]
 
 
@@ -722,7 +727,7 @@ has been a thorn in my[N]
 side for long enough.[AN]
 I'm putting an end to this[N]
 pointless conflict,[.5] here[N]
-and now,[.6] today.[A]
+and now.[A]
 
 [MidRight][ThreeLineBox]
 Cidor![.6] Don't you see the[N]
@@ -746,12 +751,12 @@ their favourite pet?[A]
 
 [MidLeft][ThreeLineBox]
 You know nothing of what[N]
-I work towards,[.5] why I do this.[.6][N]
-But enough Kasun[.5] this ends here.[AN]
+I work towards.[.5] Why I do this![.6][N]
+But enough, Kasun[.5]. This ends here.[AN]
 Your [.6][OpenQuote]liberation"[.6] shall fall with you.[A]
 
 [MidRight][TwoLineBox]
-Pah,[.5] like I'd fall to a[N]
+Pah,[.5] like I'd fall to[N]
 traitorous swine like you![A][X]
 
 
@@ -775,7 +780,7 @@ General!!![A]
 Ahh[LongBeat] my[LongBeat] blood?[A]
 
 [MidLeft]
-General?![.6] No this can't-[A]
+General?![.6] No- this can't-[A]
 
 [Right]
 Urgh[Beat][CloseEyes][.4][A][CloseSpeechSlow][ClearFace]
@@ -795,7 +800,7 @@ this![.6] I'll kill you![A][CloseSpeechSlow]
 [Event]
 
 [Right][MoveRight]
-You-[.5] you dastard![A][CloseSpeechSlow]
+You-[.5] you bastard![A][CloseSpeechSlow]
 [FarLeft][ClearFace]
 [Right][ClearFace][MidLeft][LoadLoewe][Right][LoadDragana]
 
@@ -842,7 +847,7 @@ General!!![A]
 Ahh[LongBeat] my[LongBeat] blood?[A]
 
 [MidLeft]
-General?![.6] No this can't-[A]
+General?![.6] No- this can't-[A]
 
 [Right]
 Urgh[Beat][CloseEyes][.4][A][CloseSpeechSlow][ClearFace]
@@ -862,7 +867,7 @@ this![.6] I'll kill you![A][CloseSpeechSlow]
 [Event]
 
 [Right][MoveRight]
-You-[.5] you dastard![A][CloseSpeechSlow]
+You-[.5] you bastard![A][CloseSpeechSlow]
 [FarLeft][ClearFace]
 [Right][ClearFace][MidLeft][LoadLoewe][Right][LoadDragana]
 
@@ -913,11 +918,11 @@ Mira[ToggleMouthMove].[.6].[.6].[.6][ToggleMouthMove][A][CloseSpeechSlow]
 My lord,[.6] what should we do?[A]
 
 [MidLeft][TwoLineBox]
-Call my lieutenant,[.5] I will[N]
+Call my lieutenant.[.5] I will[N]
 send him to pursue them.[A]
 
 [MidRight][MoveMidRight][OneLineBox]
-Of course my lord![A]
+Of course, my lord![A]
 
 [MidLeft][ThreeLineBox]
 While we have cut off the serpent's[N]
@@ -925,5 +930,5 @@ head,[.5] if you do not finish the beast it[N]
 will simply sprout another two.[A][CloseSpeechSlow]
 
 [MidLeft][MoveMidLeft][TwoLineBox][CloseEyes][.7]
-[.5]Now[Beat][.6] Find me a healer,[.6][N]
+[.5]Now[Beat][.6]find me a healer.[.6][N]
 I need some time to think[Beat][OpenEyes][A][X]
