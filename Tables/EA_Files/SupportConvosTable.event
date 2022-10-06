@@ -76,7 +76,7 @@ SupportConvoEntry(Longxia, Cadenza, Cadenza_Longxia_C, Cadenza_Longxia_B, Cadenz
 SupportConvoEntry(Longxia, Groto, Longxia_Groto_C, Longxia_Groto_B, Longxia_Groto_A)
 
 SupportConvoEntry(Fangai, Longxia, 0, Longxia_Fangai_B, Longxia_Fangai_A)
-SupportConvoEntry(Fangai, Faolan, 0, 0, 0)
+SupportConvoEntry(Fangai, Faolan, FaolanFangai_C, FaolanFangai_B, FaolanFangai_A)
 SupportConvoEntry(Fangai, Tippany, Fangai_Tippany_C, Fangai_Tippany_B, Fangai_Tippany_A)
 
 SupportConvoEntry(Mish, Tobie, 0, Mish_Tobie_B, Mish_Tobie_A) 
