@@ -352,6 +352,13 @@ ShowMap
 CameraCursor(Cleo)
 ENUN
 MUSC SheenaID
+
+Text(Ch15CoraliaKilled)
+SetBackground(Temple)
+Text(Ch15LoeweDiesBadEnding1)
+Text(Ch15LoeweDiesBadEnding2)
+Text(Ch15CleoDiesBadEnding)
+
 Text(Ch15BeginningScene1)
 CamOn
 MOVE 10 LoeweCopy [1,5]
