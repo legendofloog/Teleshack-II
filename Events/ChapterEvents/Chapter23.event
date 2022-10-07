@@ -697,6 +697,7 @@ BEQ 10 s0 sC
         MOVE 20 KassandraReal [4,15]
         MOVE 20 Tyr_Ch2 [5,15]
         ENUN
+        ENUT 0x97
 LABEL 10
 CHECK_EVENTID 8 //saif alive?
 BEQ 11 s0 sC
@@ -711,6 +712,7 @@ BEQ 11 s0 sC
         MOVE 20 Ch2_Selese_Guy [25,5]
         MOVE 20 Emory_Ch3 [25,6]
         ENUN
+        ENUT 0x98
 LABEL 11
 CHECK_EVENTID 9 //artemis alive?
 BEQ 12 s0 sC
@@ -723,6 +725,7 @@ BEQ 12 s0 sC
         MOVE 20 Barod [25,9]
         MOVE 20 Raschwitz_Ch1 [24,10]
         ENUN
+        ENUT 0x99
 LABEL 12
 CHECK_EVENTID 38 //maryn and viktor spared?
 BNE 423 s0 sC //if this is set, skip to the maryn event
@@ -754,6 +757,7 @@ BEQ 16 s0 sC
     LABEL 20
     MOVE 15 Maryn [29,19]
     ENUN
+    ENUT 0x9A
     REMOVEUNIT Maryn
 LABEL 16
 CHECK_EVENTID 11 // viktor captured?
@@ -783,6 +787,7 @@ BEQ 17 s0 sC
     LABEL 22
     MOVE 15 Viktor [29,19]
     ENUN
+    ENUT 0x9B
     REMOVEUNIT Viktor
 LABEL 17
 //end of conditional hell

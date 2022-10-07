@@ -275,7 +275,7 @@ void New_DrawUnitScreenSupportList(){
 	while (unitSupportList[cnt].supportPartnerId != 0){
 		Unit* supportingUnit = GetUnitByCharId(unitSupportList[cnt].supportPartnerId);
         int num = GetSupportDataIdForOtherUnit(current,supportingUnit->pCharacterData->number);
-		if ((supportingUnit != 0)){
+		if ((supportingUnit->pCharacterData->number != 0)){
             if (current->supports[num] >= ASupportLevel && unitSupportList[cnt].supportRank == ASupportLevel){
                 (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
 			    textBase->tileWidth = 8;
@@ -316,12 +316,8 @@ void New_DrawUnitScreenSupportList(){
 			    textBase++;
                 y += 2;
             }
-            
-			
 		}
         x = 16;
 		cnt++;
 	}
-    
-
 }
