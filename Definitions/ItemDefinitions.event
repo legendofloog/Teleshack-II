@@ -181,6 +181,9 @@
 #define Unmoor 0xAB
 #define Impaler 0xAC
 
+#define ZykhraScrollID 0xae
+#define AmserScrollID 0xaf
+
 #define Firestone 0xB2
 
 #define JunaFruit 0xB7

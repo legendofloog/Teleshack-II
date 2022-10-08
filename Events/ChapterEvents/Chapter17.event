@@ -29,7 +29,7 @@ Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
 Chest(Elixir,9,8)
-DurabilityChest(GrowthScroll, AmserScroll,11,9)
+Chest(AmserScrollID,11,9)
 END_MAIN
 
 MiscBasedEvents:
