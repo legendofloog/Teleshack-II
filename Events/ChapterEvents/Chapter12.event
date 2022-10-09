@@ -577,8 +577,8 @@ TopLeftPrisonDoor2:
 TILECHANGE 3
 CHECK_EVENTID 18
 BEQ 420 s1 sC
-Text(Ch12PlaceholderText)
-GiveItem(Silence,0xFFFF)
+Text(Ch12Civilian4)
+GiveItem(AngelicRobe,0xFFFF)
 SVAL sB Coords(3,2)
 REMOVEUNIT(-2)
 ENUT 21
