@@ -16,6 +16,8 @@ BYTE BlackAnklet
 BYTE DawnPendant
 BYTE SmolderingSeal
 BYTE ByelensBell
+BYTE AmserScrollID
+BYTE ZykhraScrollID
 BYTE 0x00 //terminator
 
 // Defense equipment loses durability on each hit taken
@@ -46,7 +48,7 @@ BYTE BowArmor
 BYTE General
 BYTE MageArmor
 BYTE Baron
-BYTE 0xFF //terminator
+BYTE 0 //terminator
 
 ALIGN 4
 EdgedArrowClassList:
@@ -66,4 +68,4 @@ BYTE MasterKnight
 BYTE BowKnight_Dismounted
 BYTE ArchKnight_Dismounted
 BYTE MasterKnight_Dismounted
-BYTE 0xFF
+BYTE 0

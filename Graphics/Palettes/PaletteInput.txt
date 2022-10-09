@@ -190,10 +190,10 @@
 #char{62} "OjasviNoble" set{Ojasvi, 1, Noble_F}
 	55533A77BC3AB42D4E210B196F4D0B39C724B76EF2614D4D6F39CB28A81CA514
 
-#char{63} "ApsisBard" set{Apsis, 1, 0x7E}
+#char{63} "ApsisBard" set{Apsis, 1, Bard_Apsis}
 55530721FF6F3F4F382AFE7FD5663152E94D4535C424FF33DF169456EE3DA514
 
-#char{64} "ApsisSage" set{Apsis, 3, Sage}
+#char{64} "ApsisSage" set{Apsis, 3, Sage_Apsis}
 5553FF7FFF6B1F4B2E19FE7FD5663152304AAC390721AF66E94D4535C424A514
 
 #char{65} "TobiePegKnight" set{Tobie,1,PegasusRider}

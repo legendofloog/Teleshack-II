@@ -31,7 +31,7 @@ bool IsUnitInClassList(Unit* unit, u8* classList){
     return false;
 }
 
-bool CanUnitEquipItem (Unit* unit, Item item){
+bool CanUnitEquipItem(Unit* unit, Item item){
     extern u8 KingShieldClassList[];
     extern u8 EdgedArrowClassList[];
 
@@ -81,7 +81,7 @@ bool CanUnitEquipItem (Unit* unit, Item item){
     }
 }
 
-Item GetUnitEquippedItem (Unit* unit){
+Item GetUnitEquippedItem(Unit* unit){
 	Item item;
 
 	if (unit->state & US_UNEQUIPMENT){
@@ -97,7 +97,7 @@ Item GetUnitEquippedItem (Unit* unit){
 	return item;
 }
 
-int GetUnitEquippedItemSlot (Unit* unit){
+int GetUnitEquippedItemSlot(Unit* unit){
 	if (unit->state & US_UNEQUIPMENT){
 		return 0xFF;
 	}
@@ -117,7 +117,7 @@ void EdgedArrowPreBattle(BattleUnit* unit1, BattleUnit* unit2){
 		if(currentWeaponData->attributes & (IA_MAGIC | IA_MAGICDAMAGE | IA_NEGATE_DEFENSE)){
 			return;
 		}
-		unit2->battleDefense = 0;
+		unit1->weaponAttributes |= IA_NEGATE_DEFENSE;
 	}
 }
 

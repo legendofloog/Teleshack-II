@@ -174,6 +174,7 @@ BEQ 8 s1 sC
 	ENDB
 LABEL 8
 Text(PelecayeAcceptedDialogue)
+ENUT 40
 CUSA Pelecaye
 SetFatigue(Pelecaye,0)
 CamOn
@@ -639,7 +640,7 @@ FadeOutMusic
 BROWNBOXTEXT Ch12xRaioPass[8,8]
 CAMERA_CENTERED [12,9]
 CamOn
-CHECK_EVENTID 15 //if returns 1 = pelecaye recruited
+CHECK_EVENTID 40 //if returns 1 = pelecaye recruited
 BEQ 7760 s0 sC //if not set, pelecaye is DEAD
 	LOAD1 1 KorovaiEponyGroupPelecaye
 	ENUN
@@ -677,8 +678,8 @@ FADU 10
 STAL 10
 BROWNBOXTEXT Ch12xTenetCavesText[8,8]
 STAL 10
-CHECK_EVENTID 15 //if returns 1 = pelecaye recruited
-BEQ 7762 s0 sC //if not set, pelecaye is DEAD
+CHECK_EVENTID 40 //if returns 1 = pelecaye recruited
+BNE 7762 s0 sC //if not set, pelecaye is DEAD
 	LOAD1 1 CavesGroupPelecaye
 	ENUN
 	GOTO 7763
@@ -718,8 +719,8 @@ ENUN
 STAL 30
 MOVE 15 Liberator4 [12,16]
 ENUN
-CHECK_EVENTID 15 //if returns 1 = pelecaye recruited
-BEQ 7764 s0 sC //if not set, pelecaye is DEAD
+CHECK_EVENTID 40 //if returns 1 = pelecaye recruited
+BNE 7764 s0 sC //if not set, pelecaye is DEAD
 	StartBattle
 		NormalDamage(0,12)
 		NormalDamage(1,15)

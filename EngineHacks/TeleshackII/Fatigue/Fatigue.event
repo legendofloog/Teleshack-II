@@ -21,6 +21,9 @@
 //Contains ASMC for setting fatigue
 //#include "FatigueASMC.lyn.event"
 
+//Includes Fatigue Map Display
+#include "FatigueDisplay/DisplayFatigue.event"
+
 //prep screen hooks
 PUSH
 ORG 0x957F8 //call of a function nonexistent in vanilla for deny deployment & restore fatigued if not deployed in the previous chapter

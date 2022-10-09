@@ -16,8 +16,8 @@
 SendInventoryOnDeath:
 push   {r2, r4}
 
-mov	r0, r2
 mov	r4, r2
+mov	r0, r2
 ldr	r1, DullahanID
 ldr	r3, SkillTester
 mov	lr, r3
@@ -25,18 +25,18 @@ mov	lr, r3
 cmp	r0,#0x00
 bne	End	@ if dullahan, do not send inventory bc they're not dead
 
-ldr    r0, [r2, #0xC]
+ldr    r0, [r4, #0xC]
 mov    r1, #0x5
 orr    r0, r1
-str    r0, [r2, #0xC]
+str    r0, [r4, #0xC]
 
-ldrb	r0, [r2, #0xB]
+ldrb	r0, [r4, #0xB]
 mov	r1, #0xC0
 and	r0, r1
 cmp	r0, #0x00 @ are they an allied unit
 bne	End	@ if not, do nothing
 
-mov    r0, r2
+mov    r0, r4
 blh    SendInventoryToConvoy, r3
 
 End:

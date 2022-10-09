@@ -35,7 +35,6 @@ CauseGameOverIfLordDies
 END_MAIN
 
 LocationBasedEvents:
-//Seize(3,3)
 Chest(TemperedRing, 1,12)
 	END_MAIN
 

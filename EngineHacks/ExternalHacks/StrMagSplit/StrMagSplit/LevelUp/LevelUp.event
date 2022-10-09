@@ -98,8 +98,8 @@ PUSH
 	//##### Growths: Animations on #####
 	#ifdef ExpandedLevelUpScreen
 		//Repoint TSA Graphics: 8035B0 (1054) Palette 803B10 TSA 8039E8 32x15
-		ORG $73D90
-		POIN NewLevelUpTsa
+		//ORG $73D90
+		//POIN NewLevelUpTsa
 	
 		//Shift the background upwards
 		ORG $73D98
@@ -123,8 +123,8 @@ PUSH
 	//###### Growths: Animations off #####
 	#ifdef ExpandedLevelUpScreen
 		//Repoint TSA Graphics: 8035B0 (1054) Palette 803B10 TSA 8039E8 32x15
-		ORG $7EB8C
-		POIN NewLevelUpTsa
+		//ORG $7EB8C
+		//POIN NewLevelUpTsa
 	
 		//Shift things upward
 		ORG $7F33A

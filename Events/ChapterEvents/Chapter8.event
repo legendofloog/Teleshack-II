@@ -29,7 +29,7 @@ MiscBasedEvents:
 	END_MAIN
 
 LocationBasedEvents:
-DurabilityChest(GrowthScroll,ZykhraScroll, 2,2)
+Chest(ZykhraScrollID,2,2)
 Chest(KillerAxe, 18,2)
 LOCA 3 [10,1] 0x11
 END_MAIN

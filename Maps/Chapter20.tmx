@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="23" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <tileset firstgid="1" name="A400A5A6" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
   <image source="A400A5A6.png" trans="ffffff" width="512" height="512"/>
  </tileset>
@@ -18,7 +18,7 @@
    <tile gid="598"/>
    <tile gid="225"/>
    <tile gid="226"/>
-   <tile gid="260"/>
+   <tile gid="164"/>
    <tile gid="617"/>
    <tile gid="649"/>
    <tile gid="225"/>
@@ -41,7 +41,7 @@
    <tile gid="601"/>
    <tile gid="257"/>
    <tile gid="258"/>
-   <tile gid="292"/>
+   <tile gid="164"/>
    <tile gid="109"/>
    <tile gid="104"/>
    <tile gid="917"/>
@@ -66,8 +66,8 @@
    <tile gid="290"/>
    <tile gid="679"/>
    <tile gid="101"/>
-   <tile gid="13"/>
-   <tile gid="14"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="109"/>
    <tile gid="869"/>
    <tile gid="870"/>
@@ -85,12 +85,12 @@
    <tile gid="291"/>
    <tile gid="665"/>
    <tile gid="665"/>
-   <tile gid="321"/>
-   <tile gid="322"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="132"/>
    <tile gid="133"/>
-   <tile gid="45"/>
-   <tile gid="46"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="100"/>
    <tile gid="225"/>
    <tile gid="869"/>
@@ -250,8 +250,8 @@
    <tile gid="100"/>
    <tile gid="133"/>
    <tile gid="133"/>
-   <tile gid="13"/>
-   <tile gid="14"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="100"/>
    <tile gid="100"/>
    <tile gid="100"/>
@@ -273,8 +273,8 @@
    <tile gid="617"/>
    <tile gid="131"/>
    <tile gid="165"/>
-   <tile gid="45"/>
-   <tile gid="46"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="99"/>
    <tile gid="100"/>
    <tile gid="101"/>
@@ -284,13 +284,13 @@
    <tile gid="194"/>
    <tile gid="71"/>
    <tile gid="617"/>
-   <tile gid="260"/>
+   <tile gid="164"/>
    <tile gid="99"/>
    <tile gid="163"/>
    <tile gid="99"/>
    <tile gid="917"/>
-   <tile gid="13"/>
-   <tile gid="14"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="771"/>
    <tile gid="771"/>
    <tile gid="774"/>
@@ -307,13 +307,13 @@
    <tile gid="631"/>
    <tile gid="103"/>
    <tile gid="10"/>
-   <tile gid="292"/>
-   <tile gid="13"/>
-   <tile gid="14"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="131"/>
    <tile gid="239"/>
-   <tile gid="45"/>
-   <tile gid="46"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="734"/>
    <tile gid="734"/>
    <tile gid="734"/>
@@ -331,8 +331,8 @@
    <tile gid="99"/>
    <tile gid="100"/>
    <tile gid="131"/>
-   <tile gid="45"/>
-   <tile gid="46"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="101"/>
    <tile gid="164"/>
    <tile gid="194"/>
@@ -367,8 +367,8 @@
    <tile gid="131"/>
    <tile gid="100"/>
    <tile gid="100"/>
-   <tile gid="13"/>
-   <tile gid="14"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="133"/>
    <tile gid="99"/>
    <tile gid="100"/>
@@ -390,11 +390,11 @@
    <tile gid="194"/>
    <tile gid="99"/>
    <tile gid="99"/>
-   <tile gid="45"/>
-   <tile gid="46"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="101"/>
-   <tile gid="13"/>
-   <tile gid="14"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="101"/>
    <tile gid="71"/>
    <tile gid="3"/>
@@ -416,8 +416,8 @@
    <tile gid="194"/>
    <tile gid="617"/>
    <tile gid="72"/>
-   <tile gid="45"/>
-   <tile gid="46"/>
+   <tile gid="164"/>
+   <tile gid="164"/>
    <tile gid="133"/>
    <tile gid="614"/>
    <tile gid="601"/>
@@ -454,7 +454,7 @@
    <tile gid="85"/>
   </data>
  </layer>
- <layer id="2" name="Chest 1" width="23" height="19" locked="1">
+ <layer id="2" name="Chest 1" width="23" height="19" visible="0" locked="1">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="0"/>
@@ -902,7 +902,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="3" name="Chest 2" width="23" height="19">
+ <layer id="3" name="Chest 2" width="23" height="19" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="1"/>
@@ -1350,7 +1350,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="4" name="Door" width="23" height="19">
+ <layer id="4" name="Door" width="23" height="19" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="2"/>
@@ -1798,7 +1798,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="5" name="SussySnag1" width="23" height="19">
+ <layer id="5" name="SussySnag1" width="23" height="19" visible="0">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="3"/>
@@ -2246,7 +2246,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="6" name="SussySnag2" width="23" height="19">
+ <layer id="6" name="SussySnag2" width="23" height="19" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="4"/>
@@ -2694,7 +2694,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="7" name="Tile Layer 7" width="23" height="19">
+ <layer id="7" name="Tile Layer 7" width="23" height="19" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="5"/>

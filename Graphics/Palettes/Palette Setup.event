@@ -262,11 +262,11 @@
 
 // ApsisBard
 	setPalette(63,ApsisBard)
-	setCBSP(63,Apsis, 1, 0x7E)
+	setCBSP(63,Apsis, 1, Bard_Apsis)
 
 // ApsisSage
 	setPalette(64,ApsisSage)
-	setCBSP(64,Apsis, 3, Sage)
+	setCBSP(64,Apsis, 3, Sage_Apsis)
 
 // TobiePegKnight
 	setPalette(65,TobiePegKnight)

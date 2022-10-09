@@ -227,7 +227,7 @@ ENUN
 InterludeRemovalRoutineASMC
 ENUN
 CHECK_EVENTID 0x2
-BNE 3 s0 sC
+BEQ 3 s0 sC
 	ENUF 0x7B //unsets riggan alive flag if he is dead
 LABEL 3
 SetBackground(Tavern)
