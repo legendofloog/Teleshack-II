@@ -133,7 +133,11 @@ with staff rank: E gives 1,[N]
 D gives 2, C gives 3, and so on.[N]
 [N]
 Fatigue begins to increment[N]
-starting during chapter 4.[X]
+starting during chapter 4.[N]
+When a unit is fatigued on the[N]
+battlefield, a visual indicator[N]
+in the form of a water drop[N]
+will blink on their map sprite.[X]
 
 ## PCCDescGuide
 PCC stands for "Pursuit[N]

@@ -144,10 +144,12 @@ UNIT Jacinth Dancer Cleo Level(1,Ally,True)[3,16] 0 0 1 REDA14R11 [Rapier,Vulner
 UNIT
 
 VeniaminAIChange:
-SVAL 0x1 0x0
-CHAI 0x9A
-EVBIT_T 0x7
-Text(VeniaminWarning)
+CHECK_EXISTS Veniamin //if alive, returns 1; if dead, returns 0
+BEQ 776 s0 sC //if sC is EQual to s0, Branch to 776
+	SetAI(Veniamin,0,0,4,0)
+	CameraCursor(Veniamin)
+	Text(VeniaminWarning)
+LABEL 776
 NoFade
 ENDA
 

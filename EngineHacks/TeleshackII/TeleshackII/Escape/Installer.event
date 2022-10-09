@@ -88,9 +88,9 @@ ALIGN 4
 LoeweFinalEscapeQuoteList:
 CharEscapeQuote(Chapter1,LoeweChapter1EscapeQuoteText)
 CharEscapeQuote(Chapter3,LoeweChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,LoeweChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter14,LoeweChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter16,LoeweChapter3EscapeQuoteText)
+CharEscapeQuote(Chapter9,LoeweChapter1EscapeQuoteText)
+CharEscapeQuote(Chapter14,LoeweChapter1EscapeQuoteText)
+CharEscapeQuote(Chapter16,LoeweChapter1EscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
