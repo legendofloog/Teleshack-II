@@ -696,10 +696,10 @@ setMugEntry(FrancisMug, FrancisMugData, 3, 5, 3, 3)
 
 ALIGN 16
 JennyMugData:
-#incbin "Dmp/Jenny(CapibaraInSpace)_mug.dmp"
-#incbin "Dmp/Jenny(CapibaraInSpace)_frames.dmp"
-#incbin "Dmp/Jenny(CapibaraInSpace)_palette.dmp"
-#incbin "Dmp/Jenny(CapibaraInSpace)_minimug.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace, knabepicer)_mug.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace, knabepicer)_frames.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace, knabepicer)_palette.dmp"
+#incbin "Dmp/Jenny(CapibaraInSpace, knabepicer)_minimug.dmp"
 setMugEntry(JennyMug, JennyMugData, 3, 6, 3, 4)
 
 ALIGN 16
