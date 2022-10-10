@@ -754,9 +754,11 @@
 
 // AwaDismounted
 	setPalette(186,AwaDismounted)
+	setCBSP(186,Awa, 2, AxeKnight_Dismounted)
 
 // AwaAxeKnight
 	setPalette(187,AwaAxeKnight)
+	setCBSP(187,Awa, 1, AxeKnight)
 
 // AwaGreatKnight
 	setPalette(188,AwaGreatKnight)
@@ -780,7 +782,7 @@
 
 // BuldakThiefFighter
 	setPalette(193,BuldakThiefFighter)
-	setCBSP(193,Buldak, 1, ThiefFighter)
+	setCBSP(193,Buldak, 3, ThiefFighter)
 
 // MinkBard
 	setPalette(194,MinkBard)
