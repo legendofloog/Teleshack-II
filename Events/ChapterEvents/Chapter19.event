@@ -270,6 +270,14 @@ ENUN
 DismountAll
 LOAD1 0x1 NewPlayers
 ENUN
+CheckIfFatigued(Mish)
+BEQ 420 s0 sC
+	SetFatigueOneLess(Mish)
+LABEL 420
+CheckIfFatigued(Tobie)
+BEQ 421 s0 sC
+	SetFatigueOneLess(Tobie)
+LABEL 421
 GotoPrepScreen
 ENDA
 

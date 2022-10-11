@@ -439,6 +439,8 @@ SVAL 0x1 0xF1
 BLT 0x9003 0xC 0x1 
 ENUT 0x96
 LABEL 0x9003
+SendAll(KwameReal)
+ENUN
 DISA_IF KwameReal
 ClearUnit(KwameReal)
 SetBackground(0x0D)

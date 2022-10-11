@@ -246,7 +246,7 @@
 
 // LoeweCopyScaleshotUnmounted
 	setPalette(59,LoeweCopyScaleshotUnmounted)
-	setCBSP(59,LoeweCopy, 1, Dragonlord_Dismounted)
+	setCBSP(59,LoeweCopy, 1, Scaleshot_Dismounted)
 
 // KofiMageKnight
 	setPalette(60,KofiMageKnight)
@@ -770,7 +770,7 @@
 
 // KwameDarkBishop
 	setPalette(190,KwameDarkBishop)
-	setCBSP(190,Kwame, 1, DarkBishop)
+	setCBSP(190,KwameReal, 1, DarkBishop)
 
 // AthanDarkBishop
 	setPalette(191,AthanDarkBishop)

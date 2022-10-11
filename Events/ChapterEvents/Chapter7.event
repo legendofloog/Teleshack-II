@@ -197,6 +197,14 @@ BEQ 1 s0 sC
 	BEQ 1 s0 sC
 		Text(AxelAlexIfAliveText)
 LABEL 1
+CheckIfFatigued(Alex)
+BEQ 420 s0 sC
+	SetFatigueOneLess(Alex)
+LABEL 420
+CheckIfFatigued(Axel)
+BEQ 421 s0 sC
+	SetFatigueOneLess(Axel)
+LABEL 421
 CenterTextbox(InfoText)
 SVAL s1 23
 SET_HP Mifan
@@ -217,7 +225,8 @@ NoFade
 ENDA
 
 IberisGreen:
-CUSA 23
+CUSA Iberis
+SetFatigue(Iberis,0)
 NoFade
 ENDA
 
