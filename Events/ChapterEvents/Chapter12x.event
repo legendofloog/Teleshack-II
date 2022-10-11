@@ -33,10 +33,11 @@ CHECK_EVENTID 7
 BNE 1 s0 sC
 	ENUT 7
 	CHECK_ALIVE Varga
-	SADD s1 s0 sC
+	BNE 42 s0 sC //if varga alive, branch to 42
 	CHECK_ALIVE Zwieback
-	SADD s1 s1 sC
-	BEQ 42 s0 s1
+	BNE 42 s0 sC //same thing
+	CHECK_ALLEGIANCE Pelecaye
+	BEQ 42 s0 sC //if sC = 0, pelecaye recruited
 		Text(EllereyFirstTalkDialogueArmorDead)
 		GOTO 1
 	LABEL 42

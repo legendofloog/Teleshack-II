@@ -193,7 +193,7 @@ UNIT
 
 ALIGN 4
 Reinforce4:
-UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Brenthunder] ChargeAI
+UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Brenthunder] StallOneTurnAI
 UNIT
 
 ALIGN 4

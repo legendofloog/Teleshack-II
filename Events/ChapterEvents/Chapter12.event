@@ -262,12 +262,14 @@ SetBackground(0x0E)//fancy room
 Music(Rovers)
 Text(Ch12BeginningScene1)
 EraseBackground
-CAMERA[14,0]
-LOAD 1 CidorFlashback
+CAMERA [14,0]
+LOAD1 1 CidorFlashback
+ENUN
 Text(Ch12BeginningScene2A)
 SOUN 0xB1 //lockpick sound
 TILECHANGE 1
-LOAD 1 KwameFlashback
+LOAD1 1 KwameFlashback
+ENUN
 SingleUnitMove(Kwame,5,6,6)
 SingleUnitMove(Kwame,5,6,4)
 SingleUnitMove(Kwame,5,8,4)
@@ -283,7 +285,8 @@ FAWI 1
 TILEREVERT 1
 REMOVEUNIT Cidor
 REMOVEUNIT Selese
-LOAD 1 CidorPresent
+LOAD1 1 CidorPresent
+ENUN
 STAL 30
 FAWU 1
 Text(Ch12BeginningScene3)
@@ -320,7 +323,7 @@ REMA
 EraseBackground
 SOUN 0xB1 //lockpick sound
 TILECHANGE 1
-LOAD 1 TiberiusAndFriends
+LOAD1 1 TiberiusAndFriends
 ENUN
 MOVE 9 Boro_Ch1 [8,4]
 MOVE 9 Hernandez [7,3]
@@ -405,10 +408,10 @@ Text(Ch12BeginningScene10)
 FADI 15
 LOMA Chapter12
 MountAll
-LOAD 1 MinkJoin
-LOAD 1 OutdoorEnemy
-LOAD 1 IndoorEnemy
-LOAD 1 PrisonGreens
+LOAD1 1 MinkJoin
+LOAD1 1 OutdoorEnemy
+LOAD1 1 IndoorEnemy
+LOAD1 1 PrisonGreens
 ENUN
 GotoPrepScreen
 ENDA
@@ -417,9 +420,9 @@ ENDA
 DeadlordSpawn:
 CHECK_EXISTS Tiberius
 BEQ 3 s0 sC
-CHECK_EVENTID 22
-BEQ 3 s0 sC
-CUSA Tiberius //if tiberius exists and his death quote has played(flag 22), only possible if he was captured and is being held, temporarily turn him blue
+  CHECK_EVENTID 22
+  BEQ 3 s0 sC
+    CUSA Tiberius //if tiberius exists and his death quote has played(flag 22), only possible if he was captured and is being held, temporarily turn him blue
 LABEL 3
 RemoveTrapAtCoords(2,11)
 RemoveTrapAtCoords(3,11)
@@ -448,11 +451,13 @@ CAMERA_CENTERED [3,16]
 TILECHANGE 8
 CHECK_EXISTS Tiberius
 BEQ 2 s0 sC
-CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
+  CUSE Tiberius //turn Tiberius if he exists back to red, since the player still has to hold onto him 'till the end
 LABEL 2
 TILECHANGE 8
-MOVE -1 Loewe [3, 20]
-LOAD 1 CidorSpawn
+FADI 15
+LOAD1 1 CidorSpawn
+ENUN
+FADU 5
 SetBackground(CastleHallway)
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn2
@@ -462,18 +467,22 @@ TEXTCONT
 TEXTEND
 REMA
 EraseBackground
-LOAD 1 MysterySpawn
+LOAD1 1 MysterySpawn
 ENUN
 	StartBattle
-	NormalDamage(0,20)
-	MissedAttack(1,23)
+	NormalDamage(0,9)
+	MissedAttack(1,19)
 	CriticalHit(0,60)
 	EndAttack
-	Fight Mystery Cidor Daybreak Jormungand
+	FIGHT Mystery Cidor Daybreak False
 ENUN
 KILL Cidor
 AWAIT_KILL Cidor
+FADI 15
+MOVE -1 Loewe [3, 20]
+ENUN
 REMOVEUNIT Mystery
+STAL 30
 SetBackground(CastleHallway)
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn3
@@ -483,20 +492,18 @@ TEXTCONT
 TEXTEND
 REMA
 EraseBackground
-LOAD 1 EithaSpawn
+LOAD1 1 EithaSpawn
 ENUN
 	StartBattle
 	MissedAttack(0,18)
 	EndAttack
-	Fight Eitha Loewe Daybreak IronBow
+	FIGHT Eitha Loewe Daybreak False
 ENUN
 SetBackground(CastleHallway)
 Text(Ch12DeadlordSpawn4)
 EraseBackground
 SetFlag(0x4)
 Text(Ch12PassWarning)
-UNSET_CONDITION Loewe
-UNSET_CONDITION Cleo
 NoFade
 ENDA
 
@@ -511,7 +518,7 @@ BEQ 2 s0 sC
 //BEQ 2 s0 sC
 	//Text(Ch12PlaceholderText)
 	RemoveAllItem(Darkbrand)
-	LOAD 1 TiberiusEndSceneGroup
+	LOAD1 1 TiberiusEndSceneGroup
   ENUN
 LABEL 2
 InterludeRemovalRoutineASMC
@@ -622,7 +629,7 @@ ENDA
 
 ThiefAntiTurtle:
 CAMERA_CENTERED [6,10]
-LOAD 1 ThiefSpawn
+LOAD1 1 ThiefSpawn
 NoFade
 ENDA
 

@@ -663,6 +663,9 @@ HornetDismounted:
 HornetAKDismounted:
 	#incbin "./_palettes/HornetAKDismounted.lzpal" 
 
+KorovaiDismounted:
+	#incbin "./_palettes/KorovaiDismounted.lzpal" 
+
 BardTweak:
 	#incbin "./_palettes/BardTweak.lzpal" 
 
