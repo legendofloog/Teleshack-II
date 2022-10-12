@@ -15,6 +15,7 @@
 #include "TitleScreen/TitleScreen.event"
 #include "BattleFrame/BattleFrameInstaller.event"
 #include "Menu Tiles/Installer.event"
+#include "TitleMenuBoB/TitleMenu.event"
 
 PUSH
 ORG $5A2DDC
