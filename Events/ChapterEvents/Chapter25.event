@@ -546,6 +546,12 @@ LOAD1 0x1 InitialEnemyUnits3
 ENUN
 LOAD1 0x1 InitialEnemyUnits4
 ENUN
+CHECK_ALIVE Liberator4
+BEQ 776 s0 sC
+	CUSN Liberator4
+	REMOVEUNIT Liberator4
+	ENUN
+LABEL 776
 MountAll
 GotoPrepScreen
 NoFade

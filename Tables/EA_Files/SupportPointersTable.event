@@ -23,7 +23,7 @@ ALIGN 4
 LoeweSupportPointer:
 SupportDataCharacters(Iskra,Cromar,Tao,CatrinReal,Asha) //maybe add a fifth if we have time
 SupportDataInitialValues(CSupportLevel,0,CSupportLevel,BSupportLevel,0)
-SupportDataGrowths(13,20,40,40,40)
+SupportDataGrowths(13,30,40,40,40)
 SupportCountAmount(5)
 
 ALIGN 4
@@ -152,7 +152,7 @@ ALIGN 4
 MatthiasSupportPointer:
 SupportDataCharacters(Cromar,Tippany,Ilse,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(20,30,40,0,0)
+SupportDataGrowths(30,30,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
@@ -182,7 +182,7 @@ ALIGN 4
 CromarSupportPointer:
 SupportDataCharacters(Loewe,Leina,Matthias,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(20,20,20,0,0)
+SupportDataGrowths(30,20,30,0,0)
 SupportCountAmount(3)
 
 // ch7

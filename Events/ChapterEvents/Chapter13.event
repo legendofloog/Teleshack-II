@@ -175,13 +175,11 @@ Text(Ch13OrfeasTalk)
 FADI 16
 MUSC 0x7FFF
 SetBackground(0x0A)
-FADU 16
 MUSC FF5_Sealed_Away
 Text(GetTrolledKorovai)
 FADI 16
 MUSC 0x7FFF
 SetBackground(0x07)
-FADU 16
 MUSC PMDSteamCaveID
 CenterTextbox(Ch13Opening)
 MUSC FFTAnxiety
