@@ -1,0 +1,48 @@
+PUSH
+
+ORG 0xB6800
+POIN EndingTiles
+
+ORG 0xB6EAC
+POIN SingleEndingTSA
+
+ORG 0xB6EB8
+POIN SingleEndingNameTSA
+
+ORG 0xB71A4
+POIN PairedEndingTSA
+
+ORG 0xB71B0
+POIN PairedEndingNameTSA
+
+ORG 0xA3F710
+#incbin "EndingMenuPalette.pal"
+
+ORG 0xA3F730
+#incbin "EndingMenuPalette.pal"
+
+
+POP
+
+
+ALIGN 4
+EndingTiles:
+#incext Png2Dmp "EndingTiles.png" --lz77
+
+ALIGN 4
+SingleEndingTSA:
+#incbin "singleendingbox.tsa.dmp"
+
+ALIGN 4
+SingleEndingNameTSA:
+#incbin "singleendingname.tsa.dmp"
+
+ALIGN 4
+PairedEndingTSA:
+#incbin "pairedendingbox.tsa.dmp"
+
+ALIGN 4
+PairedEndingNameTSA:
+#incbin "pairedendingname.tsa.dmp"
+
+

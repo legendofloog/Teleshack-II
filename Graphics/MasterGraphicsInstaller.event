@@ -16,6 +16,7 @@
 #include "BattleFrame/BattleFrameInstaller.event"
 #include "Menu Tiles/Installer.event"
 #include "TitleMenuBoB/TitleMenu.event"
+#include "EndingMenuTiles/Installer.event"
 
 PUSH
 ORG $5A2DDC
