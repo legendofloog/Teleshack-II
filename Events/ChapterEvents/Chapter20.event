@@ -170,8 +170,8 @@ UNIT Lyre Dracoknight Cleo Level(2,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,Kil
 	UNIT
 
 SussySpawns: // :zany_face:
-UNIT Phantom Soldier 0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
-UNIT Phantom AxeSoldier 0x0 Level(16,Enemy,True) [0,17] 0 0 1 REDA1R16 [TrainedAxe] ChargeAI
+UNIT C20Enemy Soldier 0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
+UNIT C20Enemy AxeSoldier 0x0 Level(16,Enemy,True) [0,17] 0 0 1 REDA1R16 [TrainedAxe] ChargeAI
 	UNIT
 
 EnemyUnits:
