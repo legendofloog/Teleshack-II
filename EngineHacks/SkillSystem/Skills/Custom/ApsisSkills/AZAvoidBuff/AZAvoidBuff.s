@@ -59,10 +59,10 @@ beq End
 
 AddBuffs:
 
-@add 2 damage
+@add 4 in combat defense
 mov r1, #0x5c
 ldrh r0, [r4, r1] @def
-add r0, #2
+add r0, #4
 strh r0, [r4,r1]
 
 @add 20 avoid
