@@ -769,7 +769,7 @@ BEQ 17 s0 sC
     MOVE 15 Cleo [16,20]
     ENUN
     Text(ViktorRecruitText)
-    GiveItem(Thief, Cleo)
+    GiveItem(ThiefStaff, Cleo)
     CheckUnitDeadOrJailed(Tiberius)
     BNE 22 s0 sC
         LOAD1 0 TiberiusGroup
