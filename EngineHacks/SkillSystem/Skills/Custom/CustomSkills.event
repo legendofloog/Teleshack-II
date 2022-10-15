@@ -139,6 +139,12 @@ WORD DawnEyeID
 POIN HealSEvent
 
 ALIGN 4
+DEStrConversion:
+#incbin "ApsisSkills/DEStrConversion/DEStr.dmp"
+POIN SkillTester
+WORD DawnEyeID
+
+ALIGN 4
 Stormbreaker:
 #incbin "ApsisSkills/Stormbreaker/Stormbringer.dmp"
 POIN SkillTester
