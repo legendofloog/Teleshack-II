@@ -41,7 +41,8 @@ int RecklessChargeDoublingFunc(){
 
 int EarthGreataxeDoublingFunc(){
 	BattleUnit* actingUnit = &gBattleActor;
-	if (actingUnit->weapon.number == 0xe4){ //earth greataxe item id
+	u16 weapon = actingUnit->weaponBefore & 0xFF;
+	if (weapon == 0xe4){ //earth greataxe item id
 		return 0; // cannot double with it
 	}
 	return 2;
