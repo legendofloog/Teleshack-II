@@ -74,6 +74,8 @@
 
 #include "Ranged Animation by Table/Ranged Animation by Table Installer.event"
 
+#include "StaffBGM/Installer.event"
+
 // thief vision set to 0
 PUSH
 ORG 0x0178C2

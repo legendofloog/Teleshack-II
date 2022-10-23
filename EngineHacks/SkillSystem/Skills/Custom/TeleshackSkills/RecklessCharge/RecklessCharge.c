@@ -29,12 +29,13 @@ void Charge(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
-int RecklessChargeDoublingFunc(){
-	Unit* actingUnit = &gBattleActor.unit;
+int RecklessChargeDoublingFunc(BattleUnit* unit1, BattleUnit* unit2){
 	ActionData currentActionData = gActionData;
-	int tilesLeftToMove = gActiveUnit->pClassData->baseMov + gActiveUnit->movBonus - currentActionData.moveCount;
-	if((gSkillTester(actingUnit, RecklessChargeIDLink)) && (actingUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
-		return 0;
+	int tilesLeftToMove = gActiveUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
+	if((gSkillTester(gActiveUnit, RecklessChargeIDLink)) && (gActiveUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
+		if (unit1->unit.pCharacterData->number == gActiveUnit->pCharacterData->number){
+			return 0;
+		}
 	}
 	return 2;
 }
