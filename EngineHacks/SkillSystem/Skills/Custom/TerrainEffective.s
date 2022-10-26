@@ -12,7 +12,7 @@ mov r0, r4
 ldr r1, TerrainEffectiveID
 .short 0xf800
 cmp r0, #0
-beq SkillEnd
+beq End2
 
 mov r1, #0x56
 ldrb r0, [r5,r1] @terrain def

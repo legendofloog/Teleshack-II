@@ -9,11 +9,14 @@
 #include "Palettes/Palette Setup.event"
 #include "Class Cards/MasterClassCardInstaller.event"
 #include "ItemIcons/MasterItemIconsInstaller.event"
-#include "StatusScreen/Installer.event"
+//#include "StatusScreen/Installer.event"
+#include "Stat Screen/Installer.event"
 #include "Backgrounds/BackgroundInstaller.event"
 #include "TitleScreen/TitleScreen.event"
 #include "BattleFrame/BattleFrameInstaller.event"
 #include "Menu Tiles/Installer.event"
+#include "TitleMenuBoB/TitleMenu.event"
+#include "EndingMenuTiles/Installer.event"
 
 PUSH
 ORG $5A2DDC

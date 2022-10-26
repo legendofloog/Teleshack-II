@@ -517,6 +517,9 @@ SetCharEscapeQuoteList(Pelecaye,PelecayeEscapeQuoteList)
 SetCharEscapeQuoteList(Ellerey,EllereyEscapeQuoteList)
 SetCharEscapeQuoteList(Carl,CarlEscapeQuoteList)
 
+SetCharEscapeQuoteList(Darby, DarbyEscapeQuoteList)
+SetCharEscapeQuoteList(Jacinth, JacinthEscapeQuoteList)
+
 SetCharEscapeQuoteList(Nahiza,NahizaEscapeQuoteList)
 SetCharEscapeQuoteList(Augur,AugurEscapeQuoteList)
 

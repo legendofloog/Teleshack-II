@@ -510,6 +510,10 @@ Text(Ch23TheLiberatorsArrive11)
 FADI 15
 LOAD1 1 FinalEnemyGroup
 ENUN
+CheckIfFatigued(Cromar)
+BEQ 420 s0 sC
+	SetFatigueOneLess(Cromar)
+LABEL 420
 MountAll
 GotoPrepScreen
 NoFade
@@ -686,7 +690,7 @@ FADU 5
 CHECK_EVENTID 7 //mihail captured?
 BEQ 10 s0 sC
     CHECK_EVENTID 14 //mihail's alive?
-    BEQ 10 s0 sC
+    BNE 10 s0 sC
         MOVE 10 Cleo [15,17]
         ENUN
         FlashCursor(Mihail,30)
@@ -702,7 +706,7 @@ LABEL 10
 CHECK_EVENTID 8 //saif alive?
 BEQ 11 s0 sC
     CHECK_EVENTID 13 //saif's alive?
-    BEQ 11 s0 sC
+    BNE 11 s0 sC
         MOVE 10 Loewe [17,17]
         ENUN
         Text(SaifGiveText)
@@ -717,7 +721,7 @@ LABEL 11
 CHECK_EVENTID 9 //artemis alive?
 BEQ 12 s0 sC
     CHECK_EVENTID 12 //conscripts alive?
-    BEQ 12 s0 sC
+    BNE 12 s0 sC
         Text(ArtemisGiveText)
         GiveItem(BlackAnklet,EliasReal)
         MOVE 20 Artemis [23,9]
@@ -765,7 +769,7 @@ BEQ 17 s0 sC
     MOVE 15 Cleo [16,20]
     ENUN
     Text(ViktorRecruitText)
-    GiveItem(Thief, Cleo)
+    GiveItem(ThiefStaff, Cleo)
     CheckUnitDeadOrJailed(Tiberius)
     BNE 22 s0 sC
         LOAD1 0 TiberiusGroup

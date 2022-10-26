@@ -193,7 +193,7 @@ UNIT
 
 ALIGN 4
 Reinforce4:
-UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Brenthunder] ChargeAI
+UNIT Zeus Baron Zeus Level(20,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [Brenthunder] StallOneTurnAI
 UNIT
 
 ALIGN 4
@@ -504,8 +504,15 @@ WipeCheck:
 			UnsetFlag(0xA)
 			GOTO 1
 	LABEL 0
+		CountPlayersInRange(6,14,8,14)
+		BGT 1 sC s0 //if more than 1 player unit there, do not unset flag automatically
 			UnsetFlag(0xB)
-	LABEL 1
+		LABEL 1
+		CountPlayersInRange(6,14,8,14)
+		SVAL s1 3
+		BNE 2 s1 sC //if there are 3 exactly, unset the flag
+			UnsetFlag(0xB)
+		LABEL 2
 NoFade
 ENDA
 

@@ -209,6 +209,7 @@ NikolasRecruit:
 MUSC WithUs_Song
 Text(Ch17_NikolasRecruitText)
 CUSA Nikolas
+SetFatigue(Nikolas,0)
 NoFade
 ENDA
 

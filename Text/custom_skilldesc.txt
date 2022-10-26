@@ -1,10 +1,10 @@
 ## SD_Culling
-Culling: If foe's HP is full, adds[N]
-25% of foe's max HP to unit's Atk.[X]
+Culling: If foe's HP is full, adds 25%[N]
+of foe's max HP to Zwieback's Atk.[X]
 
 ## SD_Headshot
 Headshot: Adds 50% of foe's[N]
-missing HP to unit's Atk.[X]
+missing HP to Filone's Atk.[X]
 
 ## SD_Radiance ^
 Radiance: Leina's heals make allies Radiant.[N]
@@ -32,7 +32,7 @@ Avo equal to his missing HP.[X]
 ## SD_RecklessCharge
 Reckless Charge: When mounted, moving[N]
 full move makes Emil's attacks brave,[N]
-but he cannot dodge or double foes.[X]
+but he cannot double foes.[X]
 
 ## SD_Aftershock
 Aftershock: If Iskra attacks with[N]
@@ -69,7 +69,6 @@ Azurium[X]
 ## SSD_AzuriumMight
 The divine element Azurium.[N]
 Use to grant mastery over water.[X]
-
 
 ## SD_EterniumMight
 Eternium Might: Revives upon defeat.[N]
@@ -119,25 +118,25 @@ Off-Hand: Grants Atk = weapon range.[X]
 ## SD_Stormbreaker *
 # poke
 Stormbreaker - Equip: Has bonus range. If at[N]
-max range, +30 Hit/Crit (+40 at max move).[N]
+max range, +15 Hit/Crit (+30 at max move).[N]
 Off-Hand: Grants +3 Hit/Crit per space moved.[X]
 
 ## SD_AbsoluteZero *
 # support
 Absolute Zero - Equip: Foes in 2 spaces suffer[N]
 -2 Atk/AS (tripled to -6 if unit is in terrain).[N]
-Off-Hand: Grants +2 Def/Res, +20 Avoid in terrain.[X]
+Off-Hand: Grants +4 Def/Res, +20 Avoid in terrain.[X]
 
 ## SD_DawnEye *
 # lifesteal
-Eye of Dawn - Equip: Locked at 1 range.[N]
-Restores HP to unit = damage dealt.[N]
+Eye of Dawn - Equip: Locked at 1 range. +Mt[N]
+= Str. Restores HP to unit = damage dealt.[N]
 Off-Hand: Restores 7 HP after combat.[X]
 
 ## SD_FaithWind *
 # hit a lot idk
 Faith's Wind - Equip: If Spd is higher, AS +3, and[N]
-if foe can't counter, strike twice.[N]
+if foe also can't counter, strike twice.[N]
 Off-Hand: Grants AS +2, cancels WT disadvantage.[X]
 
 ## SD_Telepathy

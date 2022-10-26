@@ -2,11 +2,11 @@
 
 bool IsUsingThunderWeapon(BattleUnit* battleUnit){
 
-	Item weapon = battleUnit->weaponBefore;
+	u16 weapon = battleUnit->weaponBefore & 0xFF;
 
 	int cnt = 0;
 	while(ThunderWeapons[cnt] != 0){
-		if (weapon.number == ThunderWeapons[cnt]){
+		if (weapon == ThunderWeapons[cnt]){
 			return true;
 		}
 		cnt++;
@@ -29,6 +29,11 @@ void AftershockPostBattle(){
 		return;
 	}
 
+	// make sure the enemy is real
+	if (!target->pClassData){
+		return;
+	}
+
 	// unset aftershock
 	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
 
@@ -38,48 +43,46 @@ void AftershockPostBattle(){
 	}
 }
 
-void New_BattleInitTargetCanCounter(){
-
-	Item item;
+void New_BattleInitTargetCanCounter(){;
 
 	// eggs
 	if (gBattleTarget.unit.pClassData->number == 0x34 || gBattleTarget.unit.pClassData->number == 0x62){
-		gBattleTarget.weapon = item;
+		gBattleTarget.weapon = 0;
 		gBattleTarget.canCounter = false;
 		return;
 	}
 
 	// attacker weapon is uncounterable
 	if (gBattleActor.weaponAttributes & IA_UNCOUNTERABLE){
-		gBattleTarget.weapon = item;
+		gBattleTarget.weapon = 0;
 		gBattleTarget.canCounter = false;
 		return;
 	}
 
 	// target weapon is uncounterable
 	if (gBattleTarget.weaponAttributes & IA_UNCOUNTERABLE){
-		gBattleTarget.weapon = item;
+		gBattleTarget.weapon = 0;
 		gBattleTarget.canCounter = false;
 		return;
 	}
 
 	// attacker is berserked and both units are blue
 	if ((gBattleActor.unit.statusIndex == UNIT_STATUS_BERSERK) && (gBattleActor.unit.index & FACTION_BLUE) && (gBattleTarget.unit.index & FACTION_BLUE)){
-		gBattleTarget.weapon = item;
+		gBattleTarget.weapon = 0;
 		gBattleTarget.canCounter = false;
 		return;
 	}
 
 	// attacker has dazzle
 	if (gSkillTester(&gBattleActor.unit, DazzleIDLink)){
-		gBattleTarget.weapon = item;
+		gBattleTarget.weapon = 0;
 		gBattleTarget.canCounter = false;
 		return;
 	}
 
 	// defender is aftershocked
 	if (gDebuffTable[gBattleTarget.unit.index].skillState & SKILLSTATE_AFTERSHOCK){
-		gBattleTarget.weapon = item;
+		gBattleTarget.weapon = 0;
 		gBattleTarget.canCounter = false;
 		return;
 	}

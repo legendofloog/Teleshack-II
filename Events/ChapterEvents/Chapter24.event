@@ -546,6 +546,10 @@ LOAD1 1 AntechamberEnemies
 ENUN
 LOAD1 1 Devisio
 ENUN
+CheckIfFatigued(Apsis)
+BEQ 420 s0 sC
+	SetFatigueOneLess(Apsis)
+LABEL 420
 GotoPrepScreen
 ENDA
 

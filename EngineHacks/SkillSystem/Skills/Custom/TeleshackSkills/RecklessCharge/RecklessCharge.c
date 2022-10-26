@@ -9,11 +9,7 @@ void RecklessCharge(BattleUnit* unit1, BattleUnit* unit2){
 	int tilesLeftToMove = actingUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
 	// try to apply reckless charge
 	if((gSkillTester(actingUnit, RecklessChargeIDLink)) && (actingUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
-		BattleUnit* actingBattleUnit = &gBattleActor;
-		BattleUnit* targetBattleUnit = &gBattleTarget;
-		actingBattleUnit->weaponAttributes |= IA_BRAVE; //acting battle unit weapon brave
-		//actingBattleUnit->battleHitRate = 0xFF; //target unit can't dodge
-		targetBattleUnit->battleHitRate = 0xFF; //acting unit can't dodge
+		unit1->weaponAttributes |= IA_BRAVE; //acting battle unit weapon brave
 	}
 }
 
@@ -33,19 +29,21 @@ void Charge(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
-int RecklessChargeDoublingFunc(){
-	Unit* actingUnit = &gBattleActor.unit;
+int RecklessChargeDoublingFunc(BattleUnit* unit1, BattleUnit* unit2){
 	ActionData currentActionData = gActionData;
-	int tilesLeftToMove = gActiveUnit->pClassData->baseMov + gActiveUnit->movBonus - currentActionData.moveCount;
-	if((gSkillTester(actingUnit, RecklessChargeIDLink)) && (actingUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
-		return 0;
+	int tilesLeftToMove = gActiveUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
+	if((gSkillTester(gActiveUnit, RecklessChargeIDLink)) && (gActiveUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
+		if (unit1->unit.pCharacterData->number == gActiveUnit->pCharacterData->number){
+			return 0;
+		}
 	}
 	return 2;
 }
 
 int EarthGreataxeDoublingFunc(){
 	BattleUnit* actingUnit = &gBattleActor;
-	if (actingUnit->weapon.number == 0xe4){ //earth greataxe item id
+	u16 weapon = actingUnit->weaponBefore & 0xFF;
+	if (weapon == 0xe4){ //earth greataxe item id
 		return 0; // cannot double with it
 	}
 	return 2;

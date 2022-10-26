@@ -420,25 +420,27 @@ ENDA
 BeginningScene:
 //add something here for support/paired ending purposes
 GetSupportLevel(KwameReal, Mink)
-SVAL 0x1 0xF1
+SVAL 0x1 0x3
 BLT 0x9000 0xC 0x1 
 ENUT 0x93
 LABEL 0x9000
 GetSupportLevel(KwameReal, Kofi)
-SVAL 0x1 0xF1
+SVAL 0x1 0x3
 BLT 0x9001 0xC 0x1 
 ENUT 0x94
 LABEL 0x9001
 GetSupportLevel(KwameReal, CatrinReal)
-SVAL 0x1 0xF1
+SVAL 0x1 0x3
 BLT 0x9002 0xC 0x1 
 ENUT 0x95
 LABEL 0x9002
 GetSupportLevel(KwameReal, Ngondala)
-SVAL 0x1 0xF1
+SVAL 0x1 0x3
 BLT 0x9003 0xC 0x1 
 ENUT 0x96
 LABEL 0x9003
+SendAll(KwameReal)
+ENUN
 DISA_IF KwameReal
 ClearUnit(KwameReal)
 SetBackground(0x0D)
@@ -544,6 +546,12 @@ LOAD1 0x1 InitialEnemyUnits3
 ENUN
 LOAD1 0x1 InitialEnemyUnits4
 ENUN
+CHECK_ALIVE Liberator4
+BEQ 776 s0 sC
+	CUSN Liberator4
+	REMOVEUNIT Liberator4
+	ENUN
+LABEL 776
 MountAll
 GotoPrepScreen
 NoFade

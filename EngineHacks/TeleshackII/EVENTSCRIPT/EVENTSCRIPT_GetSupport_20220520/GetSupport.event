@@ -1,5 +1,10 @@
 #define GetSupportLevel(unitA, unitB) "BYTE 0x40 0x0D; BYTE unitA unitB; POIN GetSupport|1"
+#define SetSupportLevel(unitA, unitB, supportLevel) "BYTE 0x40 0x05; BYTE 0x02 0x00; BYTE supportLevel 0x00; BYTE 0x00 0x00; BYTE 0x40 0x0D; BYTE unitA unitB; POIN SetSupport|1"
 
 ALIGN 4
 GetSupport:
 #incbin "ASMC_GetSupport.dmp"
+
+ALIGN 4
+SetSupport:
+#incbin "ASMC_SetSupport.dmp"

@@ -41,16 +41,16 @@ ldrb r0,[r0,#2] @range
 cmp r0,#3
 bne End
 
-@ add 30 hit/crit
+@ add 15 hit/crit
 
 mov r1, #0x62
 ldrh r0, [r4, r1] @hit
-add r0, #30
+add r0, #15
 strh r0, [r4,r1]
 
 mov r1, #0x66
 ldrh r0, [r4, r1] @critttttt
-add r0, #30
+add r0, #15
 strh r0, [r4,r1]
 
 ldr r0,MovGetter
@@ -69,16 +69,16 @@ sub r0,r1
 cmp r0,#0 @see if we've moved as far as possible
 bgt End @if not, no bonus
 
-@ if so, add additional 10 crit
+@ if so, add additional 15 crit
 
 mov r1, #0x62
 ldrh r0, [r4, r1] @hit
-add r0, #10
+add r0, #15
 strh r0, [r4,r1]
 
 mov r1, #0x66
 ldrh r0, [r4, r1] @critttttt
-add r0, #10
+add r0, #15
 strh r0, [r4,r1]
 
 b End @end skill

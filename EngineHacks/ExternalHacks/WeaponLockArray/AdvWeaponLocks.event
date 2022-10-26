@@ -20,12 +20,9 @@ POP
 
 
 KaiserschwertArray:
-BYTE HardClassLock
-BYTE Dragonlord
-BYTE HardClassLock
-BYTE Dragonlord_Dismounted
 BYTE HardCharLock
 BYTE LoeweCopy
+BYTE Loewe
 BYTE EndLockArray
 
 ArgilabrysArray:

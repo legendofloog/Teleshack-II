@@ -15,6 +15,7 @@ ALIGN 4
 BobPrepMenuItemsUnitHeader:
 #incbin "Dmp/PrepMenuItemsUnitHeader.dmp"
 
+
 #define BobMenuTilesPaletteBlue  BobMenuTilesPalette
 #define BobMenuTilesPaletteRed   BobMenuTilesPalette + 0x20
 #define BobMenuTilesPaletteGreen BobMenuTilesPalette + 0x40
@@ -30,6 +31,10 @@ ORG 0x5B6C34
 // Dark Palette
 ORG 0xCEF08
 POIN BobMenuTilesPalette
+
+//SupportMenu
+ORG 0xA1DD0C
+#incbin "Dmp/SupportMenuGraphics.dmp"
 
 ORG 0x5B6450
 // Palletes

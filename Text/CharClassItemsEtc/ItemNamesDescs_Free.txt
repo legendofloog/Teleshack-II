@@ -415,7 +415,7 @@ Crowned Pyre[X]
 [_S]t[_o][_r][_m][_b][_r][_e][_a][_k][_e][_r][X]
 
 ## StormbreakerDesc *
-At max range, +30 Hit/Crit (+40 at max move).[X]
+At max range, +15 Hit/Crit (+30 at max move).[X]
 
 ## AbsoluteZeroName
 [_A][_b][_s][_o][_l][_u]t[_e][_SP][_Z][_e][_r][_o][X]
@@ -427,7 +427,7 @@ At max range, +30 Hit/Crit (+40 at max move).[X]
 Eye of Dawn[X]
 
 ## DawnEyeDesc *
-Restores HP to unit = damage dealt.[X]
++Mt = Str. Restores HP to unit = damage dealt.[X]
 
 ## FaithWindName
 Faith's Wind[X]
