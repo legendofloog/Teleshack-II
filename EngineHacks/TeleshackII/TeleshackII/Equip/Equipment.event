@@ -58,8 +58,12 @@ BYTE Dragonlord
 BYTE Dragonlord_Dismounted
 BYTE Warrior
 BYTE Hunter
+BYTE Hunter_F
+BYTE Warrior_F
 BYTE Archer
+BYTE Archer_F
 BYTE Sniper
+BYTE Sniper_F
 BYTE BowArmor
 BYTE General
 BYTE BowKnight

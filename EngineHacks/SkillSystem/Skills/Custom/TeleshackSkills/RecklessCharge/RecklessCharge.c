@@ -23,8 +23,8 @@ void Charge(BattleUnit* unit1, BattleUnit* unit2){
 	if (gActionData.moveCount == 0xFF){
 		return;
 	}
-	
-	if (gSkillTester(&unit1->unit, ChargeIDLink)){ //do they have charge
+	u16 weapon = unit1->weaponBefore & 0xFF;
+	if (weapon == 0xd9 && (unit1->unit.pCharacterData->number == gActiveUnit->pCharacterData->number)){
 		unit1->battleAttack += gActionData.moveCount;
 	}
 }
