@@ -45,6 +45,7 @@ SHORT 2; BYTE 22 0x86; POIN AbsoluteZero_objimg_0; WORD 264 528; POIN AbsoluteZe
 SHORT 2; BYTE 23 0x86; POIN AbsoluteZero_objimg_0; WORD 276 552; POIN AbsoluteZero_bgImage_23 AbsoluteZero_objPalette AbsoluteZero_bgPalette_23 AbsoluteZero_TSA_23
 SHORT 2; BYTE 24 0x86; POIN AbsoluteZero_objimg_0; WORD 288 576; POIN AbsoluteZero_bgImage_24 AbsoluteZero_objPalette AbsoluteZero_bgPalette_24 AbsoluteZero_TSA_24
 SHORT 2; BYTE 25 0x86; POIN AbsoluteZero_objimg_0; WORD 300 600; POIN AbsoluteZero_bgImage_25 AbsoluteZero_objPalette AbsoluteZero_bgPalette_25 AbsoluteZero_TSA_25
+WORD 0x80000100
 WORD 0x85012348
 SHORT 2; BYTE 26 0x86; POIN AbsoluteZero_objimg_0; WORD 312 624; POIN AbsoluteZero_bgImage_26 AbsoluteZero_objPalette AbsoluteZero_bgPalette_26 AbsoluteZero_TSA_26
 SHORT 2; BYTE 27 0x86; POIN AbsoluteZero_objimg_0; WORD 324 648; POIN AbsoluteZero_bgImage_27 AbsoluteZero_objPalette AbsoluteZero_bgPalette_27 AbsoluteZero_TSA_27
@@ -78,7 +79,6 @@ SHORT 2; BYTE 52 0x86; POIN AbsoluteZero_objimg_0; WORD 624 1248; POIN AbsoluteZ
 SHORT 2; BYTE 53 0x86; POIN AbsoluteZero_objimg_0; WORD 636 1272; POIN AbsoluteZero_bgImage_52 AbsoluteZero_objPalette AbsoluteZero_bgPalette_52 AbsoluteZero_TSA_52
 SHORT 2; BYTE 54 0x86; POIN AbsoluteZero_objimg_0; WORD 648 1296; POIN AbsoluteZero_bgImage_53 AbsoluteZero_objPalette AbsoluteZero_bgPalette_53 AbsoluteZero_TSA_53
 SHORT 2; BYTE 55 0x86; POIN AbsoluteZero_objimg_0; WORD 660 1320; POIN AbsoluteZero_bgImage_0 AbsoluteZero_objPalette AbsoluteZero_bgPalette_0 AbsoluteZero_TSA_0
-WORD 0x80000100
 WORD 0x85000053
 WORD 0x80000000
 
