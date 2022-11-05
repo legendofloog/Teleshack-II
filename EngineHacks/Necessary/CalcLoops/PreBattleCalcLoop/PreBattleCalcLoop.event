@@ -20,7 +20,7 @@ POIN BlowCheck
 #ifdef LEADERSHIP_STARS
   POIN LeadershipHook
 #endif //LEADERSHIP_STARS
-POIN Wrath Avenger RuneArrowPreBattle SmolderingSealPreBattle OddRhythm EvenRhythm Pre_Nightcaller GladiatorsAura TerrainEffective SpurHit AbsoluteZeroAura
+POIN Wrath Avenger RuneArrowPreBattle SmolderingSealPreBattle OddRhythm EvenRhythm Pre_Nightcaller GladiatorsAura BurnPreBattleEffect SpurHit AbsoluteZeroAura
 POIN Desolate Charisma Hex Loyalty Puissance Opportunist BattleVeteran Charge Culling Fortune DragonRage //check if loyalty actually works
 POIN Headshot Stormbreaker AbsoluteZeroPreBattle FaithWind DEStrConversion Telepathy HypeTrainPre CleoFan ApotheosisPre
 POIN SpellMirrorSkl
