@@ -41,11 +41,10 @@ ALIGN 4
 StealStaff_TCondition:
 	#incbin "Usability/StealStaff_TCondition.dmp"
 	POIN 0x24D8C
-	#ifdef StealStaff_TakeWeapons
-		POIN rfTrueCheck
-	#else
-		POIN 0x17054
-	#endif
+	POIN rfTrueCheck
+	POIN SkillTester
+	WORD WatchfulID
+	Word NonCombatantID
 
 StealStaff_RangeSetup:
 rfItemRangeSetup(StealStaff_TCondition, Item_TURange) //based on Steal 0x25BA0

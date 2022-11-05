@@ -1,5 +1,13 @@
 #include "gbafe.h"
 
+extern bool(*gSkillTester)(Unit* unit, int skillID);
+extern u8 NonCombatantIDLink;
+extern u8 CromarCharIDLink;
+extern u8 MarynCharIDLink;
+s8 AreUnitsAllied(int left, int right);
+bool IsUnitAValidTarget(Unit* target, Unit* actor);
+
+
 void CheckIfUnit1RescuedByActive();
 void CheckIfUnitEscaped();
 
@@ -172,4 +180,34 @@ void FatiguePartyWipe(){
             SetFatigue(&gUnitArrayBlue[x], 0);
         }
     }
+}
+
+s8 AreUnitsAllied(int left, int right) {
+    int a = left & 0x80;
+    int b = right & 0x80;
+    return (a == b);
+}
+
+bool IsUnitAValidTarget(Unit* actor, Unit* target){
+    if (AreUnitsAllied(target->index, actor->index)){
+        return false;
+    }
+    if (gSkillTester(target, NonCombatantIDLink)){
+        return false;
+    }
+    if ( (target->pCharacterData->number == CromarCharIDLink) && (actor->pCharacterData->number == MarynCharIDLink) ){
+        return false;
+    }
+    if ( (target->pCharacterData->number == MarynCharIDLink) && (actor->pCharacterData->number == CromarCharIDLink) ){
+        return false;
+    }
+    return true;
+}
+
+void AddUnitToTargetListIfNotAllied(struct Unit* unit) {
+
+    if (IsUnitAValidTarget(gActiveUnit, unit)){
+        AddTarget(unit->xPos, unit->yPos, unit->index, 0);
+    }
+    return;
 }

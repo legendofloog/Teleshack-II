@@ -13,3 +13,16 @@
 
 #define CheckIfDefeatedUnitCaptured "ASMC CheckIfTargetUnitWasCaptured"
 //#define GiveBlueUnitItemAfterCombatASMC(item) "SVAL s1 item; ASMC GiveBlueUnitItemAfterCombat"
+
+ALIGN 4
+NonCombatantIDLink:
+BYTE NonCombatantID
+
+ALIGN 4
+CromarCharIDLink:
+BYTE Cromar
+
+ALIGN 4
+MarynCharIDLink:
+BYTE Maryn
+
