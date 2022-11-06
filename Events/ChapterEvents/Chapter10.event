@@ -262,7 +262,7 @@ UNIT Cythes Myrmidon 0x0 Level(10,Enemy,True) [24,6] 0x0 0x0 0x1 REDA22R6 [Short
 UNIT
 
 EliasUnits:
-UNIT Elias Dracoknight 0x0 Level(17,Enemy,False) [0,0] 0x0 0x0 0x1 REDA0R0 [Argilabrys,BraveAxe] PursueWithoutHeedAI
+UNIT Elias Dracoknight 0x0 Level(5,Enemy,False) [0,0] 0x0 0x0 0x1 REDA0R0 [Argilabrys,BraveAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,2] 0x0 0x0 0x1 REDA0R2 [SilverAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,1] 0x0 0x0 0x1 REDA1R1 [MasterAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [1,0] 0x0 0x0 0x1 REDA2R0 [SilverAxe] PursueWithoutHeedAI

@@ -8,9 +8,6 @@
 #include "DragonRage/DragonRage.c"
 
 void BurnPreBattleEffect(BattleUnit* unit1, BattleUnit* unit2){
-    if (&gBattleActor != unit1){
-		return;
-	}
 	if (unit2->unit.pClassData == 0){ //is the defender existent
 		return;
 	}
