@@ -24,6 +24,9 @@ void AftershockPostBattle(){
 
 	Unit* target = &gBattleTarget.unit;
 
+	// unset aftershock
+	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
+
 	// ignore dead people
 	if (target->curHP <= 0){
 		return;
@@ -33,9 +36,6 @@ void AftershockPostBattle(){
 	if (!target->pClassData){
 		return;
 	}
-
-	// unset aftershock
-	gDebuffTable[target->index].skillState &= ~SKILLSTATE_AFTERSHOCK;
 
 	// try to apply aftershock
 	if(IsUsingThunderWeapon(&gBattleActor) && gSkillTester(&gBattleActor.unit, AftershockIDLink)){
