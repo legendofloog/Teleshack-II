@@ -26,6 +26,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
 	TurnEventPlayer(0x0, Ch6Reinforce2, 5)
 	TurnEventPlayer(0x0, Ch6Reinforce3, 7)
+	TurnEventPlayer(0x0, SpawnEnemies, 2, 255)
 END_MAIN
 
 ALIGN 32
@@ -55,7 +56,6 @@ AREA 0xA StagingAreaEnter [6,14] [8,14]
 AREA 0xB StagingAreaExit [6,14] [8,14]
 AREA 0xC SilverBowDesertTreasure [9, 29] [10, 30]
 AREA 0x0 BarodSeethes [2,0] [12,4]
-AFEV 0 SpawnEnemies 0
 END_MAIN
 
 BarodSeethes:
