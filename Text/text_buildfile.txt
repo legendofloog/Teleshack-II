@@ -203,7 +203,8 @@ Fatigue restored[X]
 Ftg[X]
 
 ## SS_FatigueRText
-This unit's level of fatigue.[X]
+This unit's exhaustion. When their Ftg[N]
+is more than max HP, they are Fatigued.[X]
 
 ## Dismount_Name_TextID
  Dismount[X]

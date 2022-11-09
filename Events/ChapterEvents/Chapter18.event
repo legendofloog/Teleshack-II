@@ -338,8 +338,10 @@ BeginningScene:
 
 	CHECK_ALIVE Cromar
 	BEQ 2 s0 sC
-	SetBackground(0x7)
-	Text(Ch18StartCromarAlive)
+		CHECK_EVENTID 0x80 //if McCallum is dead = 0; if McCallum is alive = 1
+		BNE 2 s0 sC        // 0 != 1; if McCallum is alive, skip this
+			SetBackground(0x7)
+			Text(Ch18StartCromarAlive)
 	LABEL 2
 
 	SetBackground(0x8)
