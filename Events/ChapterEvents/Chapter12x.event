@@ -254,6 +254,7 @@ LABEL 13
 CHECK_EXISTS Tiberius
 BEQ 31 s0 sC
 	CUSA Tiberius
+	SetFatigue(Tiberius,0)
 LABEL 31
 CALL EndingScene
 LABEL 30
