@@ -55,6 +55,18 @@ and come back when you're ready.[A][X]
 This unit is fatigued[N]
 and cannot be deployed.[X]
 
+# 0x477
+Halts all enemy magic[NL]
+for a turn.[X]
+
+# 0x478
+Puts enemies to sleep[N]
+for a turn.[X]
+
+# 0x479
+Maddens enemies into attacking[N]
+friend or foe for a turn.[X]
+
 # 0x55B
 Unit is blessed by Leina's Radiance.[NL]
 They will heal for 10 + Leina's Mag[N]
@@ -191,7 +203,8 @@ Fatigue restored[X]
 Ftg[X]
 
 ## SS_FatigueRText
-This unit's level of fatigue.[X]
+This unit's exhaustion. When their Ftg[N]
+is more than max HP, they are Fatigued.[X]
 
 ## Dismount_Name_TextID
  Dismount[X]

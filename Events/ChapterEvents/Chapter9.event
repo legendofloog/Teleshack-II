@@ -133,18 +133,18 @@ UNIT
 
 Ch9Reinforce2:
 UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [IronLance,SteelSword] ChargeHealAI
-UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17[SteelLance,IronSword] ChargeHealAI
+UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [SteelLance,IronSword] ChargeHealAI
 UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [11,0] 0x0 0x0 0x1 REDA11R0 [IronLance,SteelSword] ChargeHealAI
 UNIT Freyse RookKnight Wrathgar Level(10,Enemy,True) [12,0] 0x0 0x0 0x1 REDA12R0 [SteelLance,IronSword] ChargeHealAI
 UNIT
 
 Ch9Reinforce3:
-UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [KillingEdge,BraveLance,Elixir] ChargeHealAI
-UNIT Freyse GoldKnight Wrathgar Level(5, Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [KillerLance,BraveSword,Elixir] ChargeHealAI
+UNIT Freyse GoldKnight Wrathgar Level(1, Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [KillingEdge,BraveLance,Elixir] ChargeHealAI
+UNIT Freyse GoldKnight Wrathgar Level(1, Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [KillerLance,BraveSword,Elixir] ChargeHealAI
 
 Ch9Reinforce4:
-UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
-UNIT Freyse Dracoknight Wrathgar Level(5, Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
+UNIT Freyse Dracoknight Wrathgar Level(1, Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
+UNIT Freyse Dracoknight Wrathgar Level(1, Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [KillerAxe,BraveAxe,Elixir] ChargeHealAI
 UNIT
 
 Traps1:

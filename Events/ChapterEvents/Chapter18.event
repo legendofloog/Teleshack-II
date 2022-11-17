@@ -146,15 +146,12 @@ UNIT
 
 SpectatorUnits:
 UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [3,5] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [2,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [3,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [3,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 
 UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [16,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [17,4] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [16,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [16,7] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [17,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [16,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT
@@ -338,8 +335,10 @@ BeginningScene:
 
 	CHECK_ALIVE Cromar
 	BEQ 2 s0 sC
-	SetBackground(0x7)
-	Text(Ch18StartCromarAlive)
+		CHECK_EVENTID 0x80 //if McCallum is dead = 0; if McCallum is alive = 1
+		BNE 2 s0 sC        // 0 != 1; if McCallum is alive, skip this
+			SetBackground(0x7)
+			Text(Ch18StartCromarAlive)
 	LABEL 2
 
 	SetBackground(0x8)

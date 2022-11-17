@@ -16,7 +16,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0, AlenaSpawn, 2)
 TurnEventPlayer(0, AlenaCharge, 3)
-TurnEventPlayer(0, BoroSpawn, 8)
+TurnEventPlayer(0, BoroSpawn, 9)
 TurnEventPlayer(0,RaschwitzWarning,4)
 TurnEventPlayer(0,LastBoroWarning,7)
 END_MAIN

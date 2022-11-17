@@ -64,19 +64,19 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT Hege Hero_F 0x0 Level(1,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,HandAxe,Dragonshield] NeverMoveAI
+UNIT Hege Hero_F 0x0 Level(1,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,HandAxe,Dragonshield] BossAI
 UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
 UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [Flux,ChestKey] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [15,23] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,21] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
-UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [6,15] 0x0 0x0 0x0 0x0 [Flux] NeverMoveAI
-UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
-UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [6,15] 0x0 0x0 0x0 0x0 [Flux] BossAI
+UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [Thunder] BossAI
+UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [Thunder] BossAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [Javelin] BossAI
+UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Javelin] BossAI
+UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
 UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
 UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
 UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
@@ -107,10 +107,10 @@ UNIT Nora DragonRider 0x0 Level(7,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [IronAxe,Ha
 	UNIT
 	
 TeamFrancis:
-UNIT Chapter1Generics AxeSoldier   Francis Level(20,Enemy,True) [9,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeSoldier   Francis Level(20,Enemy,True) [11,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier   Francis Level(20,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Chapter3Reinforcements AxeSoldier   Francis Level(10,Enemy,True) [9,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Chapter3Reinforcements AxeSoldier   Francis Level(10,Enemy,True) [11,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
+UNIT Chapter3Reinforcements LanceSoldier   Francis Level(10,Enemy,True) [8,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
+UNIT Chapter3Reinforcements LanceSoldier   Francis Level(10,Enemy,True) [12,24] 0x0 0x0 0x0 0x0 [SilverLance] PursueWithoutHeedAI
 UNIT Francis Halberdier 0x0 Level(8,Enemy,False) [10,24] 0x0 0x0 0x0 0x0 [MasterLance,SilverAxe] PursueWithoutHeedAI
 UNIT
 

@@ -33,6 +33,7 @@ POIN prConGetter
 POIN SkillTester
 WORD StealPlusID
 WORD WatchfulID
+WORD NonCombatantID
 
 //#ifndef prConGetter
 //	ALIGN 4

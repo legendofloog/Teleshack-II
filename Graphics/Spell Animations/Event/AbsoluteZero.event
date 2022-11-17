@@ -57,8 +57,8 @@ SHORT 2; BYTE 33 0x86; POIN AbsoluteZero_objimg_0; WORD 396 792; POIN AbsoluteZe
 SHORT 2; BYTE 34 0x86; POIN AbsoluteZero_objimg_0; WORD 408 816; POIN AbsoluteZero_bgImage_33 AbsoluteZero_objPalette AbsoluteZero_bgPalette_33 AbsoluteZero_TSA_33
 SHORT 2; BYTE 35 0x86; POIN AbsoluteZero_objimg_0; WORD 420 840; POIN AbsoluteZero_bgImage_34 AbsoluteZero_objPalette AbsoluteZero_bgPalette_34 AbsoluteZero_TSA_34
 SHORT 2; BYTE 36 0x86; POIN AbsoluteZero_objimg_0; WORD 432 864; POIN AbsoluteZero_bgImage_35 AbsoluteZero_objPalette AbsoluteZero_bgPalette_35 AbsoluteZero_TSA_35
-WORD 0x8500001f
 WORD 0x8500001a
+WORD 0x8500001f
 SHORT 2; BYTE 37 0x86; POIN AbsoluteZero_objimg_0; WORD 444 888; POIN AbsoluteZero_bgImage_36 AbsoluteZero_objPalette AbsoluteZero_bgPalette_36 AbsoluteZero_TSA_36
 SHORT 2; BYTE 38 0x86; POIN AbsoluteZero_objimg_0; WORD 456 912; POIN AbsoluteZero_bgImage_37 AbsoluteZero_objPalette AbsoluteZero_bgPalette_37 AbsoluteZero_TSA_37
 SHORT 2; BYTE 39 0x86; POIN AbsoluteZero_objimg_0; WORD 468 936; POIN AbsoluteZero_bgImage_38 AbsoluteZero_objPalette AbsoluteZero_bgPalette_38 AbsoluteZero_TSA_38
@@ -76,9 +76,9 @@ SHORT 2; BYTE 50 0x86; POIN AbsoluteZero_objimg_0; WORD 600 1200; POIN AbsoluteZ
 SHORT 2; BYTE 51 0x86; POIN AbsoluteZero_objimg_0; WORD 612 1224; POIN AbsoluteZero_bgImage_50 AbsoluteZero_objPalette AbsoluteZero_bgPalette_50 AbsoluteZero_TSA_50
 SHORT 2; BYTE 52 0x86; POIN AbsoluteZero_objimg_0; WORD 624 1248; POIN AbsoluteZero_bgImage_51 AbsoluteZero_objPalette AbsoluteZero_bgPalette_51 AbsoluteZero_TSA_51
 SHORT 2; BYTE 53 0x86; POIN AbsoluteZero_objimg_0; WORD 636 1272; POIN AbsoluteZero_bgImage_52 AbsoluteZero_objPalette AbsoluteZero_bgPalette_52 AbsoluteZero_TSA_52
+WORD 0x80000100
 SHORT 2; BYTE 54 0x86; POIN AbsoluteZero_objimg_0; WORD 648 1296; POIN AbsoluteZero_bgImage_53 AbsoluteZero_objPalette AbsoluteZero_bgPalette_53 AbsoluteZero_TSA_53
 SHORT 2; BYTE 55 0x86; POIN AbsoluteZero_objimg_0; WORD 660 1320; POIN AbsoluteZero_bgImage_0 AbsoluteZero_objPalette AbsoluteZero_bgPalette_0 AbsoluteZero_TSA_0
-WORD 0x80000100
 WORD 0x85000053
 WORD 0x80000000
 

@@ -83,6 +83,7 @@ BEQ 14 s0 sC
 	CUSA Mish
 	SetFatigue(Mish,0)
 	MOVE 15 Mish [14,7]
+	ENUN
 	SVAL s1 0x1
 	SET_CONDITION Mish
 	ENUN

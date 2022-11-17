@@ -4,12 +4,18 @@ void RecklessCharge(BattleUnit* unit1, BattleUnit* unit2){
 	if (unit1->unit.pCharacterData->number != gActiveUnit->pCharacterData->number){
 		return;
 	}
+	if (unit2->unit.pClassData == 0){ //is the defender existent
+		return;
+	}
 	Unit* actingUnit = &unit1->unit;
 	ActionData currentActionData = gActionData;
 	int tilesLeftToMove = actingUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
 	// try to apply reckless charge
 	if((gSkillTester(actingUnit, RecklessChargeIDLink)) && (actingUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
 		unit1->weaponAttributes |= IA_BRAVE; //acting battle unit weapon brave
+		if((unit1->battleSpeed - 4) >= unit2->battleSpeed){
+			unit1->battleSpeed = unit2->battleSpeed; //sets the first unit's speed down so they don't double
+		}
 	}
 }
 
@@ -23,8 +29,8 @@ void Charge(BattleUnit* unit1, BattleUnit* unit2){
 	if (gActionData.moveCount == 0xFF){
 		return;
 	}
-	
-	if (gSkillTester(&unit1->unit, ChargeIDLink)){ //do they have charge
+	u16 weapon = unit1->weaponBefore & 0xFF;
+	if (weapon == 0xd9 && (unit1->unit.pCharacterData->number == gActiveUnit->pCharacterData->number)){
 		unit1->battleAttack += gActionData.moveCount;
 	}
 }

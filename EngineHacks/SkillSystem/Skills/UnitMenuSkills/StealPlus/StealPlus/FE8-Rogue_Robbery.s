@@ -5,6 +5,7 @@
 .equ SkillTester, Con_Getter+4
 .equ StealPlusID, SkillTester+4
 .equ WatchfulID, StealPlusID+4
+.equ NonCombatantID, WatchfulID+4
 
 push	{r4-r7,r14}
 mov		r4,r0
@@ -15,28 +16,38 @@ mov		r14,r3
 .short	0xF800
 cmp		r0,#1
 beq		RetFalse 		@can't steal if they have watchful
+
+mov 		r0, r4
+ldr		r1,NonCombatantID
+ldr		r3,SkillTester
+mov		r14,r3
+.short	0xF800
+cmp		r0,#1
+beq		RetFalse 		@can't steal from a noncombatant
+
+
 lsl		r6,r5,#1
 add		r6,#0x1E
 ldrh	r6,[r4,r6]		@item id
 cmp		r6,#0
 beq		RetFalse
 mov		r0,r6
-ldr		r3,=#0x8017548	@get item type
+ldr		r3,=0x8017548	@get item type
 mov		r14,r3
 .short	0xF800
 cmp		r0,#0xB   @monster wpn
 beq		RetFalse
 cmp		r0,#0x11  @dragon stone
 beq		RetFalse
-ldr		r7,=#0x3004E50
+ldr		r7,=0x3004E50
 ldr		r7,[r7]
 mov		r0,r4
-ldr		r3,=#0x8016B58	@GetUnitEquippedItemSlot
+ldr		r3,=0x8016B58	@GetUnitEquippedItemSlot
 mov		r14,r3
 .short	0xF800
 cmp		r0,r5 @changed from original steal+, can steal equipped weapons
 mov		r0,r6
-ldr		r3,=#0x801760C	@get item weight
+ldr		r3,=0x801760C	@get item weight
 mov		r14,r3
 .short	0xF800
 mov		r5,r0

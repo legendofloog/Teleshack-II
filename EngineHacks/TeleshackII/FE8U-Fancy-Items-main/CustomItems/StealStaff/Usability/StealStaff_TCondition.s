@@ -1,8 +1,11 @@
 .thumb
 .include "_TargetSelectionDefinitions.s"
 
-.equ AllegianceCheck, OffsetList + 0x0
-.equ StealableItemCheck, OffsetList + 0x4
+.equ AllegianceCheck, OffsetList
+.equ StealableItemCheck, OffsetList+4
+.equ SkillTester, StealableItemCheck+4
+.equ WatchfulID, SkillTester+4
+.equ NonCombatantID, WatchfulID+4
 @arguments
 	@r0 = unit pointer of target
 	
@@ -18,6 +21,25 @@ ldr 	r3, AllegianceCheck
 _blr 	r3
 cmp 	r0, #0x0
 bne End
+
+@does the target have Watchful or Noncombatant
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @defender data
+ldr r1, WatchfulID
+.short 0xf800
+cmp r0, #0
+bne End @ if they don't (r0 = 0), then continue
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @defender data
+ldr r1, NonCombatantID
+.short 0xf800
+cmp r0, #0
+bne End 
+
+
 mov 	r0, r4
 _blh Unit_GetRes
 mov 	r6, r0

@@ -265,3 +265,10 @@ SHORT $1C00 $1C00
 ORG $960C6
 SHORT $1C00 $1C00
 POP
+
+PUSH //changes the item ids that play sacred weapon music from Sieglinde and Siegmund to 0xFF (no item)
+ORG $58B12
+BYTE 0xFF
+ORG $58B16
+BYTE 0xFF
+POP

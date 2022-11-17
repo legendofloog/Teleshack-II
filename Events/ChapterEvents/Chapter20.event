@@ -64,6 +64,8 @@ CUSA Jerry
 CUSA Lyre
 SetFatigue(Jerry,0)
 SetFatigue(Lyre,0)
+SetAI(Jerry,0,0,0,0)
+SetAI(Lyre,0,0,0,0)
 NoFade
 ENDA
 
@@ -75,6 +77,8 @@ CUSA Jerry
 CUSA Lyre
 SetFatigue(Jerry,0)
 SetFatigue(Lyre,0)
+SetAI(Jerry,0,0,0,0)
+SetAI(Lyre,0,0,0,0)
 NoFade
 ENDA
 
@@ -86,6 +90,8 @@ CUSA Jerry
 CUSA Lyre
 SetFatigue(Jerry,0)
 SetFatigue(Lyre,0)
+SetAI(Jerry,0,0,0,0)
+SetAI(Lyre,0,0,0,0)
 NoFade
 ENDA
 
@@ -97,6 +103,8 @@ CUSA Jerry
 CUSA Lyre
 SetFatigue(Jerry,0)
 SetFatigue(Lyre,0)
+SetAI(Jerry,0,0,0,0)
+SetAI(Lyre,0,0,0,0)
 NoFade
 ENDA
 
@@ -192,7 +200,7 @@ UNIT C20Enemy BowKnight 0x0 Level(20,Enemy,True) [7,4] 0x0 0x0 0x0 0x0 [SteelBow
 UNIT C20Enemy ArchKnight 0x0 Level(5,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
 UNIT C20Enemy Swordmaster 0x0 Level(5,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [TrainedEdge,FlameSword] BossAI
 UNIT C20Enemy Hero 0x0 Level(5,Enemy,True) [17,7] 0x0 0x0 0x0 0x0 [SteelSword,IronAxe] BossAI
-UNIT C20Enemy Swordfighter 0x0 Level(5,Enemy,True) [20,14] 0x0 0x0 0x0 0x0 [SteelSword,] RangeAI
+UNIT C20Enemy Swordfighter 0x0 Level(20,Enemy,True) [20,14] 0x0 0x0 0x0 0x0 [SteelSword,] RangeAI
 UNIT C20Enemy LanceArmor 0x0 Level(20,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [SteelLance] StallOneTurnAI
 UNIT C20Enemy LanceKnight 0x0 Level(20,Enemy,True) [1,9] 0x0 0x0 0x0 0x0 [HeavySpear,TrainedPike] RangeAI
 UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [SteelBow] RangeAI

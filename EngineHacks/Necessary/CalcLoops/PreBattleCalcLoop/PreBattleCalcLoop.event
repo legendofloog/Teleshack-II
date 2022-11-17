@@ -16,54 +16,18 @@ BtlLoopParent:
 #incbin "FE8_battle_calc_loop.dmp"
 BtlLoopTable:
 POIN BC_DefRes BC_Power BC_ASpd BC_Hit BC_Avo BC_Crit CritUpSkill BC_Dodge BC_Support BC_WRank BC_Status //these are the existing battle calculation routines
-POIN Lull //This is effectively a stat modifier routine, so it has to go first
-POIN FaireCheck HolyAura
-POIN BreakerCheck MageSlayer
 POIN BlowCheck
-POIN DefendingCheck
 #ifdef LEADERSHIP_STARS
   POIN LeadershipHook
 #endif //LEADERSHIP_STARS
-#ifdef BIORHYTHM
-  POIN BiorhythmFunc
-#endif //BIORHYTHM
-POIN Wrath Avenger SpurStr SpurMag SpurSpd SpurDef SpurRes RuneArrowPreBattle SmolderingSealPreBattle
-POIN DriveStr DriveMag DriveSpd DriveDef DriveRes
-POIN LuckySeven OddRhythm EvenRhythm QuickBurn SlowBurn
-POIN Pre_Nightcaller
-POIN GladiatorsAura
-POIN TerrainEffective
-POIN Demoiselle Gentilhomme MaleficAura Intimidate Tantivy Focus Desolate Inspiration Charm Solidarity VoiceOfPeace Anathema LilysPoise Charisma Hex Loyalty Infiltrator SpurHit AbsoluteZeroAura
-POIN ElbowRoom NaturalCover Gamble FieryBlood LifeAndDeath WindDisciple Perfectionist Puissance Hawkeye LightWeight Trample Opportunist BattleVeteran SilentPride Thunderstorm Outrider HeavyStrikes Charge Vanity KnightAspirant AssassinateDamageBonus ArcaneBlade ShowStopper WeakWilled
-POIN Stormbreaker AbsoluteZeroPreBattle FaithWind DEStrConversion Telepathy HypeTrainPre CleoFan ApotheosisPre
-//POIN Daunt BloodTide WhitePool NightTide 
-POIN Insight Culling Prescience Vigilance  DefiantAvo DefiantCrit TowerShield ShortShield IndoorFighter OutdoorFighter Deadeye Fortune
-POIN BlueFlame BlueFlameAura DoubleLion DragonRage Cultured Thighdeology Thotslayer KeepUp Armorboost Horseguard Skyguard ForeignPrincess ChargePlus 
-POIN Frenzy Headshot // This was moved here because Str/Mag Split conflict, and... I'm not sure why it wouldn't be here in the first place.
-POIN UpWithArch
-POIN AxefaithHit
-POIN StancesASM
-//#ifdef ENABLE_GBA_LETHALITY
-//POIN LethalitySkill Bane
-//#else
-//POIN LethalitySkill NonGBALethalitySkill Bane
-//#endif
-
-//add any new ones before here
-
-//quick riposte goes after everything that might touch AS
-POIN QuickRiposte
-
+POIN Wrath Avenger RuneArrowPreBattle SmolderingSealPreBattle OddRhythm EvenRhythm Pre_Nightcaller GladiatorsAura BurnPreBattleEffect SpurHit AbsoluteZeroAura
+POIN Desolate Charisma Hex Loyalty Puissance Opportunist BattleVeteran Charge Culling Fortune DragonRage //check if loyalty actually works
+POIN Headshot Stormbreaker AbsoluteZeroPreBattle FaithWind DEStrConversion Telepathy HypeTrainPre CleoFan ApotheosisPre
 POIN SpellMirrorSkl
-
 POIN EdgedArrowPreBattle
-//POIN PCCClear
-
 POIN CrownPyre
 POIN RecklessCharge
-//tower shield plus needs to go after every other skill that may affect defender's attack
 POIN NonCombatant
-POIN TowerShieldPlus
 // Because of how killing machine works, critical check should always be done last
 POIN CriticalCheck
 #ifdef CANNOT_CRIT
