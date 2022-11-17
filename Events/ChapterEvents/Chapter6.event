@@ -26,7 +26,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
 	TurnEventPlayer(0x0, Ch6Reinforce2, 5)
 	TurnEventPlayer(0x0, Ch6Reinforce3, 7)
-	TurnEventPlayer(0x0, SpawnEnemies, 2, 255)
+	TurnEventPlayer(0x0, SpawnEnemies, 1, 255)
 END_MAIN
 
 ALIGN 32
@@ -382,7 +382,7 @@ ALIGN 4
 TurnOne:
 	TILEREVERT 1
 	CenterTextbox(Ch6ArenaHint)
-	CALL SpawnEnemies
+	//CALL SpawnEnemies
 	CameraCursor(Leina)
 	MUSC WithUs_Song
 	Text(Ch6CleoLeinaIntro)
