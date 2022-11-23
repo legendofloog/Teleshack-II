@@ -566,16 +566,16 @@ NoFade
 ENDA
 
 LeinaRecruitCromar:
-	_CountRange(Leina, 0, SisterRing, 0xFF, 0, 0, 30, 34)
-	IBeq(0, 0)
-		CHECK_ALIVE McCallum
-		IBne(0, 1)
+	CHECK_ALIVE McCallum //is he dead, if so auto recruit
+	IBne(0, 1)
 			MUSC WithUs_Song
 			FlashCursor(Cromar, 30)
 			Text(LeinaRecruitCromarWithKill)
 			CUSA Cromar
 			GOTO 2
-		LABEL 1
+	LABEL 1
+	_CountRange(Leina, 0, SisterRing, 0xFF, 0, 0, 30, 34)
+	IBeq(0, 0) //is mccallum alive and sister ring in leina's inventory, if so recruit and set flag
 			MUSC WithUs_Song
 			FlashCursor(Cromar, 30)
 			Text(LeinaRecruitCromarWithRing)

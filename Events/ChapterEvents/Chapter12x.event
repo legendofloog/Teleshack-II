@@ -263,6 +263,7 @@ ENDA
 
 TiberiusTalk:
 Text(TiberiusRecruitment)
+NoFade
 ENDA
 
 LocationBasedEvents:
@@ -643,7 +644,7 @@ BROWNBOXTEXT Ch12xRaioPass[8,8]
 CAMERA_CENTERED [12,9]
 CamOn
 CHECK_EVENTID 40 //if returns 1 = pelecaye recruited
-BEQ 7760 s0 sC //if not set, pelecaye is DEAD
+BNE 7760 s0 sC //if it is set, do not have pelecaye group spawn in
 	LOAD1 1 KorovaiEponyGroupPelecaye
 	ENUN
 	GOTO 7761
