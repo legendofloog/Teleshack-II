@@ -26,7 +26,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0, Ch6Reinforce1, 3)
 	TurnEventPlayer(0x0, Ch6Reinforce2, 5)
 	TurnEventPlayer(0x0, Ch6Reinforce3, 7)
-	TurnEventPlayer(0x0, SpawnEnemies, 2, 255)
+	TurnEventPlayer(0x0, SpawnEnemies, 1, 255)
 END_MAIN
 
 ALIGN 32
@@ -382,7 +382,7 @@ ALIGN 4
 TurnOne:
 	TILEREVERT 1
 	CenterTextbox(Ch6ArenaHint)
-	CALL SpawnEnemies
+	//CALL SpawnEnemies
 	CameraCursor(Leina)
 	MUSC WithUs_Song
 	Text(Ch6CleoLeinaIntro)
@@ -566,32 +566,32 @@ NoFade
 ENDA
 
 LeinaRecruitCromar:
-	_CountRange(Leina, 0, SisterRing, 0xFF, 0, 0, 30, 34)
-	IBeq(0, 0)
-		MUSC WithUs_Song
-		FlashCursor(Cromar, 30)
-		Text(LeinaRecruitCromarWithRing)
-		CUSA Cromar
-		SetFatigue(Cromar,0)
-		FlashCursor(McCallum,30)
-		Text(McCallumMovesOutOfTheWay)
-		CUSN McCallum
-		MOVE 20 McCallum [21, 0]
-		ENUN
-		ENUT 0x80
-		REMOVEUNIT McCallum
-		GOTO 2
-	LABEL 0
-	CHECK_ALIVE McCallum
+	CHECK_ALIVE McCallum //is he dead, if so auto recruit
 	IBne(0, 1)
-		MUSC WithUs_Song
-		FlashCursor(Cromar, 30)
-		Text(LeinaRecruitCromarWithKill)
-		CUSA Cromar
-		GOTO 2
+			MUSC WithUs_Song
+			FlashCursor(Cromar, 30)
+			Text(LeinaRecruitCromarWithKill)
+			CUSA Cromar
+			GOTO 2
 	LABEL 1
-		Text(CromarYellAtLeina)
-		UnsetFlag(0x9)
+	_CountRange(Leina, 0, SisterRing, 0xFF, 0, 0, 30, 34)
+	IBeq(0, 0) //is mccallum alive and sister ring in leina's inventory, if so recruit and set flag
+			MUSC WithUs_Song
+			FlashCursor(Cromar, 30)
+			Text(LeinaRecruitCromarWithRing)
+			CUSA Cromar
+			SetFatigue(Cromar,0)
+			FlashCursor(McCallum,30)
+			Text(McCallumMovesOutOfTheWay)
+			CUSN McCallum
+			MOVE 20 McCallum [21, 0]
+			ENUN
+			ENUT 0x80
+			REMOVEUNIT McCallum
+			GOTO 2
+	LABEL 0
+	Text(CromarYellAtLeina)
+	UnsetFlag(0x9)
 	LABEL 2
 NoFade
 ENDA
