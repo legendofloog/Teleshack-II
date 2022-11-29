@@ -19,7 +19,7 @@ mov		r4,r0
 
 @ ldr		r0, [r0, #0x4] @ class data pointer
 @ ldrb		r0, [r0, #0x4] @ class id
-@ cmp r0, #0x0
+@ cmp r0, #0x1
 @ beq		GoBack
 
 ldr 		r0,=gActiveUnit	
