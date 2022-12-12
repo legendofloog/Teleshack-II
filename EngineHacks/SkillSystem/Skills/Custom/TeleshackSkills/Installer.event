@@ -13,3 +13,5 @@ WORD DebuffTable
 #include "PiercingBolt/PiercingBolt.event"
 
 #include "DragonRage/DragonRage.event"
+
+#include "Nightcaller/Nightcaller.event"

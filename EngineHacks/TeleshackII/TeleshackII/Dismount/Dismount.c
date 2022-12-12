@@ -170,6 +170,12 @@ void MountAllASMC(){
         someUnit = &gUnitArrayBlue[i];
         MountUnitASMC(someUnit);
     }
+	if ((GetUnitByCharId(0xE))->state & US_UNAVAILABLE){
+		
+	}
+	else{
+		UnitChangeClassEvent(GetUnitByCharId(0xE), GetClassData(0x11)); //if cromar is not unavailable, reclass him to his normal class
+	}
 }
 
 void DismountAllASMC(){
@@ -179,6 +185,12 @@ void DismountAllASMC(){
         someUnit = &gUnitArrayBlue[i];
         DismountUnitASMC(someUnit);
     }
+	if ((GetUnitByCharId(0xE))->state & US_UNAVAILABLE){
+		
+	}
+	else{
+		UnitChangeClassEvent(GetUnitByCharId(0xE), GetClassData(0x11)); //if cromar is not unavailable, reclass him to his normal class
+	}
 }
 
 

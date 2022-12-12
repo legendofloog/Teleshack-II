@@ -25,13 +25,13 @@ Pre_Nightcaller:
 POIN SkillTester
 WORD NightcallerID
 
-
+/*
 ALIGN 4
 Post_Nightcaller:
 #incbin "NightcallerPostBattle.dmp"
 POIN SkillTester
 WORD NightcallerID
-
+*/
 ALIGN 4
 Avenger:
 #incbin "Avenger.dmp"

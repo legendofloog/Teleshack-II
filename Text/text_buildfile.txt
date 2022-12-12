@@ -67,6 +67,9 @@ for a turn.[X]
 Maddens enemies into attacking[N]
 friend or foe for a turn.[X]
 
+# 0x4F1
+Type[X]
+
 # 0x55B
 Unit is blessed by Leina's Radiance.[NL]
 They will heal for 10 + Leina's Mag[N]
@@ -203,8 +206,9 @@ Fatigue restored[X]
 Ftg[X]
 
 ## SS_FatigueRText
-This unit's exhaustion. When their Ftg[N]
-is more than max HP, they are Fatigued.[X]
+This unit's exhaustion. When [N]
+Ftg > M. HP, they are Fatigued,[N]
+unable to gain experience.[X]
 
 ## Dismount_Name_TextID
  Dismount[X]

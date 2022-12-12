@@ -517,3 +517,11 @@ Dismounted_Bow_F_Walking:
 ALIGN 4
 Dismounted_Bow_F_Moving:
 #incbin "Dmp/dismountbowfmove (archerbias).dmp"
+
+ALIGN 4
+CromarMorbingStanding:
+#incbin "Dmp/thelastcromar2 (ArcherBias).dmp"
+
+ALIGN 4
+CromarMorbingMoving:
+#incbin "Dmp/cromarmove (ArcherBias).dmp"

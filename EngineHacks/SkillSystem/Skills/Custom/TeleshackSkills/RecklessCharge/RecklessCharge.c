@@ -4,7 +4,7 @@ void RecklessCharge(BattleUnit* unit1, BattleUnit* unit2){
 	if (unit1->unit.pCharacterData->number != gActiveUnit->pCharacterData->number){
 		return;
 	}
-	if (unit2->unit.pClassData == 0){ //is the defender existent
+	if (unit2->unit.pClassData->number == 0){ //is the defender existent
 		return;
 	}
 	Unit* actingUnit = &unit1->unit;
@@ -13,8 +13,8 @@ void RecklessCharge(BattleUnit* unit1, BattleUnit* unit2){
 	// try to apply reckless charge
 	if((gSkillTester(actingUnit, RecklessChargeIDLink)) && (actingUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
 		unit1->weaponAttributes |= IA_BRAVE; //acting battle unit weapon brave
-		if((unit1->battleSpeed - 4) >= unit2->battleSpeed){
-			unit1->battleSpeed = unit2->battleSpeed; //sets the first unit's speed down so they don't double
+		if((unit1->battleSpeed - 4) >= unit2->battleSpeed){ //if emil's (battle speed - 4) is greater than or equal to enemy unit (aka is he doubling)
+			gBattleActor.battleSpeed = unit2->battleSpeed; //sets the first unit's speed down so they don't double
 		}
 	}
 }
@@ -35,15 +35,13 @@ void Charge(BattleUnit* unit1, BattleUnit* unit2){
 	}
 }
 
-int RecklessChargeDoublingFunc(BattleUnit* unit1, BattleUnit* unit2){
+int RecklessChargeDoublingFunc(BattleUnit* actor, BattleUnit* target, int currentDoublingResult){
 	ActionData currentActionData = gActionData;
-	int tilesLeftToMove = gActiveUnit->movBonus - currentActionData.moveCount; //actiondata seems to work
-	if((gSkillTester(gActiveUnit, RecklessChargeIDLink)) && (gActiveUnit->pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
-		if (unit1->unit.pCharacterData->number == gActiveUnit->pCharacterData->number){
-			return 0;
-		}
+	int tilesLeftToMove = actor->unit.movBonus - currentActionData.moveCount; //actiondata seems to work
+	if((gSkillTester(&actor->unit, RecklessChargeIDLink)) && (actor->unit.pClassData->attributes & CA_MOUNTED) && (tilesLeftToMove == 0)){
+		return 0;
 	}
-	return 2;
+	return 1;
 }
 
 int EarthGreataxeDoublingFunc(){
@@ -52,5 +50,5 @@ int EarthGreataxeDoublingFunc(){
 	if (weapon == 0xe4){ //earth greataxe item id
 		return 0; // cannot double with it
 	}
-	return 2;
+	return 1;
 }

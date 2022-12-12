@@ -49,7 +49,11 @@ Reset:
     mov r1, #6
 Apply:
 strb r1, [r0]
-
+mov r0, #0xE
+ldr r1, =GetUnitByCharId
+mov r14, r1
+.short 0xF800
+mov r1, 
 
 
 End:

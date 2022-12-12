@@ -1,4 +1,5 @@
 void UnsetEventId(int flag);
+void UnitChangeClassEvent(Unit* unit, const ClassData* newClass);
 
 bool IsItemEquipment (Item item){
 	extern u8 EquipmentList[];
@@ -178,10 +179,12 @@ void DawnPendantPostBattle(){
 	if (GetItemIndex(GetUnitEquippedItem(&gBattleActor.unit)) == 0xa9){ //dawn pendant
 		gChapterData.visionRange = 0; //sets to no fog
 		UnsetEventId(40);
+		UnitChangeClassEvent(GetUnitByCharId(0xE), GetClassData(0x11)); //changes cromar back to regular hero
 	}
 	if (GetItemIndex(GetUnitEquippedItem(&gBattleTarget.unit)) == 0xa9){ //dawn pendant
 		gChapterData.visionRange = 0; //sets to no fog
 		UnsetEventId(40);
+		UnitChangeClassEvent(GetUnitByCharId(0xE), GetClassData(0x11));
 	}
 }
 
