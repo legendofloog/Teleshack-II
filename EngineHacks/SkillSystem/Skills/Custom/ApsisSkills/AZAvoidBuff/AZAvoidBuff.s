@@ -1,5 +1,6 @@
 .thumb
 .equ AbsoluteZeroID, SkillTester+4
+.equ ApotheosisID, AbsoluteZeroID+4
 
 push {r4-r7, lr}
 mov r4, r0 @atkr
@@ -29,7 +30,17 @@ beq End
 mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
 cmp     r0, #0x9C         @Absolute Zero ID
+beq Continue
+
+Continue:
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #0
 beq End
+
 b Unequipped        @If not the right tome, go to Unequipped skill
 
 Unequipped:
@@ -39,6 +50,16 @@ mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
 cmp     r0, #0x9C         @Absolute Zero ID
 beq OffHandEffect
+
+@has weapon equipped with apotheosis
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq OffHandEffect
+
 b End
 
 OffHandEffect:

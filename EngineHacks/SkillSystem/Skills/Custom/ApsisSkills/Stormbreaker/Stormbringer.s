@@ -1,6 +1,7 @@
 .thumb
 .equ StormbringerID, SkillTester+4
 .equ MovGetter, StormbringerID+4
+.equ ApotheosisID, MovGetter+4
 
 push {r4-r7, lr}
 mov r4, r0 @atkr
@@ -31,15 +32,24 @@ mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
 cmp     r0, #0x9b         @Stormbringer ID
 beq YesThereIsSkill
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq YesThereIsSkill
+
 b Unequipped        @If not the right tome, go to Unequipped skill
 
 YesThereIsSkill:
 
 @ are we attacking at 3 range? (max)
-ldr r0,=#0x203A4D4 @battle stats
+ldr r0,=0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#3
-bne End
+bne Continue
 
 @ add 15 hit/crit
 
@@ -67,7 +77,7 @@ ldrb r1,[r1] @r1 = squares moved
 
 sub r0,r1
 cmp r0,#0 @see if we've moved as far as possible
-bgt End @if not, no bonus
+bgt Continue @if not, no bonus
 
 @ if so, add additional 15 crit
 
@@ -81,6 +91,15 @@ ldrh r0, [r4, r1] @critttttt
 add r0, #15
 strh r0, [r4,r1]
 
+Continue:
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq Unequipped
+
 b End @end skill
 
 Unequipped:
@@ -90,6 +109,15 @@ mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
 cmp     r0, #0x9B         @Stormbringer ID
 beq OffHandEffect
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq OffHandEffect
+
 b End
 
 OffHandEffect:

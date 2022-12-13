@@ -1,4 +1,5 @@
 .equ AbsoluteZeroTomeID, AuraSkillCheck+4
+.equ ApotheosisID, AbsoluteZeroTomeID+4
 .thumb
 push {r4-r7,lr}
 @goes in the battle loop.
@@ -15,9 +16,24 @@ ldr r1, AbsoluteZeroTomeID
 mov r2, #3 @are enemies
 mov r3, #2 @range
 .short 0xf800
-cmp r0, #0
-beq End
+cmp r0, #1
+beq Continue
 
+@now check for apotheosis
+ldr r0, AuraSkillCheck
+mov lr, r0
+mov r0, r4 @attacker
+ldr r1, ApotheosisID
+mov r2, #3 @are enemies
+mov r3, #2 @range
+.short 0xf800
+cmp r0, #1
+beq Continue
+
+b End
+
+
+Continue:
 @debuff enemy Atk/AS if tome is equipped
 
 mov r1, #0x5A
