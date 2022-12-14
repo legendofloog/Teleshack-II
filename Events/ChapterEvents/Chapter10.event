@@ -171,7 +171,7 @@ UNIT
 
 EnemyUnits:
 // Ally
-UNIT Korovai DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary] NoAI
+UNIT Korovai DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary, KnightProof] NoAI
 
 UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,Vulnerary] NeverMoveAI
 UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI

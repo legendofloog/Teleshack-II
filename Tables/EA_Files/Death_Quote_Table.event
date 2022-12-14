@@ -204,7 +204,7 @@ DeathQuote(BoroReal,AllChapters,0x0,BoroDeathQuoteText)
 
 // ch24
 DeathQuote(Orfeas,AllChapters,0x0,OrfeasDeathQuoteText)
-DeathQuote(BarodReal,AllChapters,0x0,BarodDeathQuoteText)
+DeathQuote(BarodReal,AllChapters,0x0,BarodRealDeathQuoteText)
 
 // ch25
 DeathQuote(TarajiReal,AllChapters,0x0,TarajiRealDeathQuoteText)

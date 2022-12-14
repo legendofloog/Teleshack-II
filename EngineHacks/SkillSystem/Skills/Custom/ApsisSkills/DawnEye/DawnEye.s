@@ -5,7 +5,9 @@
 .endm
 .equ DawnEyeID, SkillTester+4
 .equ HealSEvent, DawnEyeID+4
+.equ ApotheosisID, HealSEvent+4
 .equ DawnHeal, 7
+
 .thumb
 push	{lr}
 
@@ -33,6 +35,16 @@ mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
 cmp     r0, #0x9D         @Eye of Dawn ID
 beq OffHandEffect
+
+@has weapon equipped with skill?
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq OffHandEffect
+
 b End
 
 OffHandEffect:
@@ -53,10 +65,10 @@ lsl	r0, #0x10
 add	r3, r0
 ldrb	r0, [r4,#0x10]		@load x coordinate of character
 add	r3, r0
-ldr	r1,=#0x30004E4		@and store them for the event engine
+ldr	r1,=0x30004E4		@and store them for the event engine
 str	r3, [r1]
 
-ldr	r0,=#0x800D07C		@event engine thingy
+ldr	r0,=0x800D07C		@event engine thingy
 mov	lr, r0
 ldr	r0, HealSEvent	@this event is just "play sound"
 mov	r1, #0x01		@0x01 = wait for events
@@ -82,6 +94,16 @@ mov r1, #0x20
 ldrb r0, [r5, r1] @second item in inventory
 cmp     r0, #0x9D         @Eye of Dawn ID
 beq OffHandEffect2
+
+@has weapon equipped with skill?
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r5 @ defender data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq OffHandEffect2
+
 b End
 
 OffHandEffect2:
@@ -104,10 +126,10 @@ lsl r0, #0x10
 add r3, r0
 ldrb  r0, [r5,#0x10]    @load x coordinate of character
 add r3, r0
-ldr r1,=#0x30004E4    @and store them for the event engine
+ldr r1,=0x30004E4    @and store them for the event engine
 str r3, [r1]
 
-ldr r0,=#0x800D07C    @event engine thingy
+ldr r0,=0x800D07C    @event engine thingy
 mov lr, r0
 ldr r0, HealSEvent @this event is just "play sound"
 mov r1, #0x01   @0x01 = wait for events

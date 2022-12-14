@@ -76,6 +76,8 @@
 
 #include "StaffBGM/Installer.event"
 
+#include "ScriptedBattleNumbers/ScriptedBattles.event"
+
 // thief vision set to 0
 PUSH
 ORG 0x0178C2

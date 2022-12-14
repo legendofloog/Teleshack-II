@@ -140,7 +140,7 @@ UNIT Kailani HighPriestess Cleo Level(20,Ally,True)[16,16] 0 0 1 REDA22R19 [Ligh
 UNIT
 
 JacinthAppears:
-UNIT Jacinth Dancer Cleo Level(1,Ally,True)[3,16] 0 0 1 REDA14R11 [Rapier,Vulnerary] AttackInRangeAI
+UNIT Jacinth Dancer Cleo Level(1,Ally,True)[14,10] 0 0 1 REDA14R11 [Rapier,Vulnerary] AttackInRangeAI
 UNIT
 
 VeniaminAIChange:

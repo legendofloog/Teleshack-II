@@ -186,7 +186,7 @@ Ch15Vendor:
 
 ALIGN 4
 Ch15Armory:
-	SHLI IronSword SteelSword Armorslayer IronLance SteelLance Horseslayer IronAxe SteelAxe Hammer IronBow SteelBow DaShoota
+	SHLI IronSword SteelSword Armorslayer IronLance SteelLance Horseslayer IronAxe SteelAxe Hammer IronBow SteelBow MarksmanBow
 	BYTE 0x0 0x0
 	ALIGN 4
 

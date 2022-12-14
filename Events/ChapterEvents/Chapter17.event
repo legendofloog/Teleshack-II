@@ -169,7 +169,7 @@ UNIT Looter Thief   0x0 Level(17,Enemy,True) [10,10] 0x0 0x0 0x0 0x0 [TrainedEdg
 UNIT
 
 KwameSpawn:
-UNIT KwameReal DarkBishop   0x0 Level(20,Ally,False) [10,4] 0x0 0x0 0x0 0x0 [Unmoor] DefaultAI
+UNIT KwameReal DarkBishop   0x0 Level(20,Ally,False) [10,1] 0x0 0x0 0x0 0x0 [Unmoor] DefaultAI
 UNIT
 
 CouncilMembers:
@@ -177,7 +177,7 @@ UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [6,3] 0x0 0x0 0x0 0x0 [IronAxe] NoA
 UNIT Kwame Civilian_2 0x0 Level(20,NPC,False) [8,3] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
 UNIT Boro_Ch16 Champion 0x0 Level(5,NPC,False) [4,4] 0x0 0x0 0x0 0x0 [MasterLance,Elixir] NoAI
 UNIT Catrin Swordmaster_F 0x0 Level(20,NPC,False) [4,5] 0x0 0x0 0x0 0x0 [SilverSword] NoAI
-UNIT Elias Dracoknight 0x0 Level(17,NPC,False) [10,4] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe] NoAI
+UNIT Elias Dracoknight_Dismounted 0x0 Level(17,NPC,False) [10,4] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe] NoAI
 UNIT Coralia Noble_F 0x0 Level(10,NPC,False) [10,5] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
 UNIT
 

@@ -9,7 +9,6 @@ WTACalcFunctions:
 POIN TriangleAdept
 POIN Poise
 POIN FaithWindWT
-POIN ApotheosisWT
 #ifdef REAVER_SPLIT
 	POIN DoubleWeaponTriangle
 #endif // REAVER_SPLIT

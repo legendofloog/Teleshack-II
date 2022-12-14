@@ -25,12 +25,12 @@ TurnBasedEvents:
 END_MAIN
 
 CharacterBasedEvents:
+	CharacterEventBothWays(0x13, LeinaSecretEvent, Leina, Valere)
 	CharacterEventBothWays(0xC, SaveValere, 0x00, Valere)
 	CharacterEventBothWays(0xF, SaveDart, 0x00, Dart)
 	CharacterEventBothWays(0x10, AxleTalkEvent, Alex, Axel)
 	CharacterEventBothWays(0x11, JerrySecretEvent, Jerry, Temur)
 	CharacterEventBothWays(0x12, JacinthSecretEvent, Jacinth, Sultai)
-	CharacterEventBothWays(0x13, LeinaSecretEvent, Leina, Valere)
 END_MAIN
 
 MiscBasedEvents:
@@ -556,7 +556,7 @@ UNIT C20Enemy SwordKnight 0x83 Level(20,Enemy,True) [16,40] 0x0 0x0 0x0 0x0 [Tra
 UNIT C20Enemy BowKnight 0x83 Level(20,Enemy,True) [17,39] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
 UNIT C20Enemy Warrior 0x84 Level(6,Enemy,True) [20,41] 0x0 0x0 0x0 0x0 [TrainedAxe,TrainedArc,Vulnerary] ChargeAI
 UNIT C20Enemy Myrmidon 0x84 Level(20,Enemy,True) [21,40] 0x0 0x0 0x0 0x0 [Greatsword] ChargeAI
-UNIT C20Enemy SwordFighter 0x0 Level(20,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [Kukri,KnightProof] RangeAI
+UNIT C20Enemy SwordFighter 0x0 Level(20,Enemy,True) [11,29] 0x0 0x0 0x0 0x0 [Kukri] RangeAI
 UNIT C20Enemy Halberdier 0x0 Level(6,Enemy,True) [10,27] 0x0 0x0 0x0 0x0 [KillerAxe] RangeAI
 UNIT C20Enemy Bard 0x0 Level(20,Enemy,True) [22,21] 0x0 0x0 0x0 0x0 [Thunder] TwoActionAI
 UNIT C20Enemy AxeFighter 0x0 Level(20,Enemy,True) [23,22] 0x0 0x0 0x0 0x0 [TrainedAxe,HandAxe,RedGem,Vulnerary] TwoActionAI
@@ -564,7 +564,7 @@ UNIT C20Enemy HighPriest 0x0 Level(6,Enemy,True) [23,35] 0x0 0x0 0x0 0x0 [Purge,
 UNIT C20Enemy Hunter 0x0 Level(20,Enemy,True) [9,40] 0x0 0x0 0x0 0x0 [TrainedArc] ChargeAI
 UNIT C20Enemy Bard 0x0 Level(20,Enemy,True) [9,38] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] ChargeAI
 UNIT C20Enemy Baron 0x0 Level(6,Enemy,True) [13,19] 0x0 0x0 0x0 0x0 [Brenthunder,LightRune,RedGem] BossAI
-UNIT C20Enemy Freelancer 0x0 Level(20,Enemy,True) [12,19] 0x0 0x0 0x0 0x0 [Shieldbearer,KnightProof] [0x0,0x3,0x4,0x5]
+UNIT C20Enemy Freelancer 0x0 Level(20,Enemy,True) [12,19] 0x0 0x0 0x0 0x0 [Shieldbearer] [0x0,0x3,0x4,0x5]
 UNIT C20Enemy Myrmidon 0x0 Level(20,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Greatsword,RedGem] [0x0,0x3,0x4,0x5]
 UNIT C20Enemy Hero 0x0 Level(6,Enemy,True) [23,30] 0x0 0x0 0x0 0x0 [TrainedEdge,TrainedAxe] [0x0,0x3,0x4,0x8]
 UNIT C20Enemy Freelancer 0x0 Level(20,Enemy,True) [24,29] 0x0 0x0 0x0 0x0 [MysticLance] [0x0,0x3,0x4,0x8]
@@ -584,7 +584,7 @@ UNIT C20Enemy SwordArmor 0x0 Level(20,Enemy,True) [3,20] 0x0 0x0 0x0 0x0 [Traine
 UNIT
 
 EscapingThieves:
-UNIT Bandit Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA17R30 [IronSword,KnightProof,RedGem,Rewarp] EscapeOnlyAI
+UNIT Bandit Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA17R30 [IronSword,RedGem,Rewarp] EscapeOnlyAI
 UNIT 0x64 Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA16R31 [RitualKnife] EscapeOnlyAI
 UNIT
 

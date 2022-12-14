@@ -25,13 +25,13 @@ Pre_Nightcaller:
 POIN SkillTester
 WORD NightcallerID
 
-
+/*
 ALIGN 4
 Post_Nightcaller:
 #incbin "NightcallerPostBattle.dmp"
 POIN SkillTester
 WORD NightcallerID
-
+*/
 ALIGN 4
 Avenger:
 #incbin "Avenger.dmp"
@@ -96,40 +96,25 @@ POIN AuraSkillCheck
 WORD SpurHitID 
 
 ALIGN 4
-ApotheosisPre:
-#incbin "ApsisSkills/Apotheosis/Apotheosis.dmp"
-POIN SkillTester
-WORD ApotheosisID
-
-ALIGN 4
-ApotheosisPost:
-#incbin "ApsisSkills/Apotheosis/ApotheosisHeal.dmp"
-POIN SkillTester
-WORD ApotheosisID
-
-ALIGN 4
-ApotheosisWT:
-#incbin "ApsisSkills/Apotheosis/ApotheosisWT.dmp"
-POIN SkillTester
-WORD ApotheosisID
-
-ALIGN 4
 AbsoluteZeroPreBattle:
 #incbin "ApsisSkills/AZAvoidBuff/AZAvoidBuff.dmp"
 POIN SkillTester
 WORD AbsoluteZeroID
+WORD ApotheosisID
 
 ALIGN 4
 AbsoluteZeroAura:
 #incbin "ApsisSkills/AbsoluteZero/AbsoluteZero.dmp"
 POIN AuraSkillCheck
 WORD AbsoluteZeroTomeID
+WORD ApotheosisID
 
 ALIGN 4
 CrownPyre:
 #incbin "ApsisSkills/CrownPyre/CrownPyre.dmp"
 POIN SkillTester
 WORD CrownPyreID
+WORD ApotheosisID
 
 ALIGN 4
 DawnEye:
@@ -137,12 +122,14 @@ DawnEye:
 POIN SkillTester
 WORD DawnEyeID
 POIN HealSEvent
+WORD ApotheosisID
 
 ALIGN 4
 DEStrConversion:
 #incbin "ApsisSkills/DEStrConversion/DEStr.dmp"
 POIN SkillTester
 WORD DawnEyeID
+WORD ApotheosisID
 
 ALIGN 4
 Stormbreaker:
@@ -150,18 +137,21 @@ Stormbreaker:
 POIN SkillTester
 WORD StormbringerID
 POIN prMovGetter
+WORD ApotheosisID
 
 ALIGN 4
 FaithWind:
 #incbin "ApsisSkills/WindFaith/WindFaith.dmp"
 POIN SkillTester
 WORD WindFaithID
+WORD ApotheosisID
 
 ALIGN 4
 FaithWindWT:
 #incbin "ApsisSkills/WindFaith/WindFaithWT.dmp"
 POIN SkillTester
 WORD WindFaithID
+WORD ApotheosisID
 
 Telepathy:
 #incbin "Telepathy.dmp"

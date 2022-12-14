@@ -226,6 +226,7 @@ MUSS WithUs_Song
 Text(JennyRecruitText)
 ENUT 10
 CUSA Jenny
+SetFatigue(Jenny,0)
 MURE 2
 NoFade
 ENDA
@@ -235,6 +236,7 @@ MUSS WithUs_Song
 Text(MeldanRecruitText)
 ENUT 11
 CUSA Meldan
+SetFatigue(Meldan,0)
 MURE 2
 NoFade
 ENDA

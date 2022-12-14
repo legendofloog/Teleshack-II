@@ -1,5 +1,6 @@
 .thumb
 .equ DawnEyeID, SkillTester+4
+.equ ApotheosisID, DawnEyeID+4
 .equ gBattleData, 0x203A4D4
 
 push {r4-r7, lr}
@@ -31,6 +32,15 @@ mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
 cmp     r0, #0x9D         @Eye of Dawn ID
 beq YesThereIsSkill
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1,  ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq YesThereIsSkill
+
 b End        @If not the right tome, End because the Off-Hand is a postbattle effect
 
 YesThereIsSkill:

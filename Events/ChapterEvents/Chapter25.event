@@ -71,8 +71,8 @@ LoadUnit(13, 38)
 LoadUnit(15, 38)
 LoadUnit(17, 38)
 LoadUnit(19, 38)
-LoadUnit(14, 39)
-LoadUnit(16, 39)
+//LoadUnit(14, 39)
+//LoadUnit(16, 39)
 UNIT
 
 OutOfCatacombsLoeweCleo:
@@ -81,8 +81,8 @@ UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [24,32] 0x0 0x0 0x0 0x0
 UNIT
 
 NewRecruits:
-UNIT TarajiReal Swordmaster_F 0x0 Level(20,Ally,False) [14,35] 0x0 0x0 0x0 0x0 [FangAndClaw, Elixir] ChargeAI
-UNIT Athanasius DarkBishop 0x0 Level(15,Ally,False) [16,35] 0x0 0x0 0x0 0x0 [Luna, Fenrir, Physic] ChargeAI
+UNIT TarajiReal Swordmaster_F 0x0 Level(20,NPC,False) [14,39] 0x0 0x0 0x0 0x0 [FangAndClaw, Elixir] NoAI
+UNIT Athanasius DarkBishop 0x0 Level(15,NPC,False) [16,39] 0x0 0x0 0x0 0x0 [Luna, Fenrir, Physic] NoAI
 UNIT
 
 InitialEnemyUnits:
@@ -380,7 +380,13 @@ FinalBattleFlash(BoroReal,BoroFinalBattleQuote,265)
 FinalBattleFlash(BarodReal,BarodFinalBattleQuote,266)
 FinalBattleFlash(Orfeas,OrfeasFinalBattleQuote,267)
 FinalBattleFlash(TarajiReal,TarajiFinalBattleQuote,268)
+CUSA TarajiReal
+STAL 30
+SetFatigue(TarajiReal,0)
 FinalBattleFlash(Athan,AthanFinalBattleQuote,269)
+CUSA Athan
+STAL 30
+SetFatigue(Athan,0)
 EVBIT_F 2
 MUSC KwameID
 CameraCursor(Cherne)

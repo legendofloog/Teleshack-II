@@ -43,15 +43,15 @@ SongTable(FE5_InTheBattle_Fate, song24, MapMusicGroup)
 SongTable(Dreaming,songDB,MapMusicGroup)
 #include "MusicEvents/DawnOfYs.event"
 SongTable(DawnOfYs,songD9,MapMusicGroup)
-#include "MusicEvents/harvestdancegba.event"
+#include "MusicEvents/Tactics Ogre - Harvest Dance {Leche}.event"
 SongTable(HarvestDance,HarvestDance_TOLUCT,MapMusicGroup)
 #include "MusicEvents/ToTheSorrowfulBattlefield (pandan).event"
 SongTable(ToTheSorrowfulBattlefieldID,ToTheSorrowfulBattlefield,MapMusicGroup)
 #include "MusicEvents/SteamCave(Leche).event" // steam cave rip: psycommando
 SongTable(PMDSteamCaveID,SteamCave,MapMusicGroup)
-#include "MusicEvents/Awakening(FF6).event"
+#include "MusicEvents/Final Fantasy 6 - Awakening {Leche}.event"
 SongTable(FF6AwakeningID,FF6Awakening,MapMusicGroup)
-#include "MusicEvents/FF4 - Red Wings (RandomWizard).event"
+#include "MusicEvents/Final Fantasy 4 - Red Wings {Leche}.event"
 SongTable(FF4RedWingsID,RedWings,MapMusicGroup)
 #include "MusicEvents/Final Fantasy Tactics - Anxiety (Alusq).event"
 SongTable(FFTAnxiety,FFT_Anxiety,MapMusicGroup)
@@ -59,11 +59,11 @@ SongTable(FFTAnxiety,FFT_Anxiety,MapMusicGroup)
 SongTable(BattleWithThimale,Battle_With_Thimale,MapMusicGroup)
 #include "MusicEvents/Ogre Battle 64 - Wall of Defense (Alusq).event"
 SongTable(WallOfDefense,obwalltest,MapMusicGroup)
-#include "MusicEvents/RomancingSaGaBattle.event"
+#include "MusicEvents/Romancing Saga - Battle 1 {DrGreen3339, Leche}.event"
 SongTable(RS1Battle,song01,MapMusicGroup)
 #include "MusicEvents/SheepWillSleep(Leche).event"
 SongTable(Sheep_Will_Sleep,SheepWillSleep,MapMusicGroup)
-#include "MusicEvents/CORE(Leche).event"
+#include "MusicEvents/Undertale - CORE {Leche, devvy}.event"
 SongTable(Core,CORE,MapMusicGroup)
 #include "MusicEvents/Dynasty Warriors 3 - Oppression (pandan).event"
 SongTable(oppression,song0153,MapMusicGroup)
@@ -73,7 +73,7 @@ SongTable(awaywithyou,song1A,BattleMusicGroup)
 SongTable(ncastlebridge,song34,MapMusicGroup)
 #include "MusicEvents/GreatCanyon(Psyche,RW).event"
 SongTable(GreatCanyon,GreatCanyon_Psyche_RW_,MapMusicGroup)
-#include "MusicEvents/Berwick Saga - Knight's Pride (MrGreen).event"
+#include "MusicEvents/Berwick Saga - Knight's Pride {DrGreen3339, Leche}.event"
 SongTable(KnightsPride,songC1,MapMusicGroup)
 #include "MusicEvents/FightingOfTheSpirit.event"
 SongTable(FightingOfTheSpirit,songC2,MapMusicGroup)
@@ -107,7 +107,7 @@ SongTable(RenegadesID, songEncounterWithRenegades, MapMusicGroup)
 SongTable(LightGlintID, LikeAGlintOfLight, BattleMusicGroup)
 #include "MusicEvents/Golden Sun - Saturos Battle {Tristan Hollow}.event"
 SongTable(SaturosBattleID, GS_SaturosBattle, BattleMusicGroup)
-#include "MusicEvents/Tales Of Symphonia - Shihna {A Reliable Chair}.event"
+#include "MusicEvents/Tales of Symphonia - Sheena's Theme {Leche}.event"
 SongTable(SheenaID, songShihna, MapMusicGroup)
 #include "MusicEvents/Golden Sun - Mars Lighthouse {A Reliable Chair}.event"
 SongTable(MarsLighthouseID, songMarsLighthouse, MapMusicGroup)
@@ -131,9 +131,9 @@ SongTable(WhatImMadeOfID, song10, MapMusicGroup)
 SongTable(ThraciaPreparationsID,PrepScreenFE5,MapMusicGroup)
 #include "MusicEvents/King of Dragons - Into the Castle (Sme).event"
 SongTable(KingOfDragons_IntoTheCastleID,kodcastle,BattleMusicGroup)
-#include "MusicEvents/FF Mystic Quest - Battle 1 {RandomWizard}.event"
+#include "MusicEvents/FF Mystic Quest - Battle 1 {RandomWizard, Leche}.event"
 SongTable(FF_MysticQuest_Battle1ID,FF_MQ_battle1,MapMusicGroup)
-#include "MusicEvents/FF Mystic Quest - Hill of Destiny {RandomWizard}.event"
+#include "MusicEvents/FF Mystic Quest - Hill of Destiny {RandomWizard, Leche}.event"
 SongTable(FF_MysticQuest_HillofDestinyID,FF_MQ_HoD,MapMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Doom Castle {RandomWizard}.event"
 SongTable(FF_MysticQuest_DoomCastleID,FF_MQ_DoomCastle,MapMusicGroup)
@@ -149,13 +149,13 @@ SongTable(PMD_SkyPeakFinalPassID,PMD_Explorers_SPFP,MapMusicGroup)
 SongTable(PMD_RescueTeam_MtThunderID,PMD_RescueTeam_MT,MapMusicGroup)
 #include "MusicEvents/Pokemon MD Explorers of Sky - Power of Darkness {Psyche}.event"
 SongTable(PMD_PowerOfDarknessID,PMD_Explorers_PoD,MapMusicGroup)
-#include "MusicEvents/Pokemon MD Explorers of Time Darkness and Sky - Mystifying Forest {Shtick}.event"
+#include "MusicEvents/Pokemon MD Explorers - Mystifying Forest {Leche}.event"
 SongTable(PMD_MystifyingForestID,PMD_MF,MapMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Ice Dungeon {RandomWizard}.event"
 SongTable(FF_MysticQuest_IceDungeonID,FF_MQ_ID,MapMusicGroup)
 #include "MusicEvents/FF Mystic Quest - Focus Tower {RandomWizard}.event"
 SongTable(FF_MysticQuest_FocusTowerID,FF_MQ_FT,MapMusicGroup)
-#include "MusicEvents/GoldenSun_TLA_TheGoldenSunRises.event"
+#include "MusicEvents/Golden Sun The Lost Age - The Golden Sun Rises {Leche}.event"
 SongTable(GoldenSun_TLA_TheGoldenSunRisesID,TheGoldenSunRises,MapMusicGroup)
 #include "MusicEvents/chaos_angel_act_3_final.event"
 SongTable(ChaosAngelAct3ID,ChaosAngelAct3,MapMusicGroup)

@@ -1,6 +1,6 @@
 .thumb
 .equ CrownPyreID, SkillTester+4
-
+.equ ApotheosisID, CrownPyreID+4
 push {r4-r7, lr}
 mov r4, r0 @atkr
 mov r5, r1 @dfdr
@@ -30,6 +30,16 @@ mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
 cmp     r0, #0x9A         @Crown Pyre ID
 beq YesThereIsSkill
+
+@has weapon equipped with skill?
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq YesThereIsSkill
+
 b Unequipped        @If not the right tome, go to Unequipped skill
 
 YesThereIsSkill:
@@ -38,7 +48,7 @@ YesThereIsSkill:
 mov  r1, #0x5A
 ldrh r0, [r4, r1] @give unit attack
 ldrb r2, [r5, #0x13] @current hp
-lsr  r2, #2 //divided by 4
+lsr  r2, #2 @ divided by 4
 add  r0, r2
 strh r0, [r4,r1]
 
@@ -46,9 +56,18 @@ strh r0, [r4,r1]
 mov  r1, #0x5A
 ldrh r0, [r4, r1] @give unit attack
 ldrb r2, [r5, #0x18] @res
-lsr  r2, #1 //divided by 2
+lsr  r2, #1 @ divided by 2
 add  r0, r2
 strh r0, [r4,r1]
+
+@has weapon equipped with skill?
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq OffHandEffect
 
 b End @end skill
 
@@ -65,7 +84,7 @@ b End
 OffHandEffect:
 
 @1 range?
-ldr r0,=#0x203A4D4 @battle stats
+ldr r0,=0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#1
 bne CheckTwo
@@ -80,7 +99,7 @@ b End
 
 CheckTwo:
 @2 range?
-ldr r0,=#0x203A4D4 @battle stats
+ldr r0,=0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#2
 bne CheckThree
@@ -95,7 +114,7 @@ b End
 
 CheckThree:
 @3 range?
-ldr r0,=#0x203A4D4 @battle stats
+ldr r0,=0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#3
 bne End @pretty sure its impossible to get here???

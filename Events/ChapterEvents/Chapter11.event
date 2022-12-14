@@ -41,7 +41,7 @@ DefeatBoss
 END_MAIN
 
 LocationBasedEvents:
-Chest(TrainedArc,0,6)
+Chest(KnightProof,0,6)
 LOCA 11 FreeSisters [17,24] 0x12
 LOCA 11 FreeSisters [18,24] 0x12
 Door(17,24)

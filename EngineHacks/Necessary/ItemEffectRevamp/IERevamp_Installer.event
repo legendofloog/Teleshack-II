@@ -35,9 +35,9 @@ ALIGN 4
 		//#include "ItemEffects/MigVul_Setup.event"
 		
 		//Update Items
-		PUSH
-			SetItemUseID(0x8C, 0x37)	//give Latona an item effect id
-		POP
+		//PUSH
+			//SetItemUseID(0x8C, 0x37)	//give Latona an item effect id
+		//POP
 	#else
 		ERROR "This is for FE8 only"
 	#endif

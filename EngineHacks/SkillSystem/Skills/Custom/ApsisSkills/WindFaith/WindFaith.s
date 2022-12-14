@@ -1,5 +1,6 @@
 .thumb
 .equ WindFaithID, SkillTester+4
+.equ ApotheosisID, WindFaithID+4
 
 push {r4-r7, lr}
 mov r4, r0 @atkr
@@ -30,6 +31,15 @@ mov     r0, #0x4A      @Move to attacker's weapon (before battle)
 ldrb    r0, [r4, r0]   @Load attackers weap (before battle)
 cmp     r0, #0x9E         @Faith's Wind ID
 beq YesThereIsSkill
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq YesThereIsSkill
+
 b Unequipped        @If not the right tome, go to Unequipped skill
 
 YesThereIsSkill:
@@ -38,7 +48,7 @@ YesThereIsSkill:
 ldrb r0, [r4, #0x16] @attacker spd
 ldrb r1, [r5, #0x16] @defender spd
 cmp r0, r1
-ble End @skip if spd is less or equal
+ble Continue @skip if spd is less or equal
 
 @add 3 as
 mov r1, #0x5e
@@ -53,7 +63,7 @@ beq		End
 mov		r0,#0x52
 ldrb	r0,[r5,r0]
 cmp		r0,#0
-bne		End
+bne		Continue
 
 @ cant counter, add the conditional brave
 mov r0,r4
@@ -63,7 +73,26 @@ mov r2,#0x20 @brave flag
 orr r1,r2
 str r1,[r0]
 
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq Unequipped
+
 b End @end skill
+
+Continue:
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq Unequipped
+
+b End
 
 Unequipped:
 
@@ -72,6 +101,15 @@ mov r1, #0x20
 ldrb r0, [r4, r1] @second item in inventory
 cmp     r0, #0x9E         @Winds of Faith ID
 beq OffHandEffect
+
+ldr r0, SkillTester
+mov lr, r0
+mov r0, r4 @attacker data
+ldr r1, ApotheosisID
+.short 0xf800
+cmp r0, #1
+beq OffHandEffect
+
 b End
 
 OffHandEffect:

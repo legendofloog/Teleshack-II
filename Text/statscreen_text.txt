@@ -92,8 +92,9 @@ star gives a 5% chance to move again.[X]
 PCC[X]
 
 ## PursuitCriticalRText
-If this unit doubles, their critical[N]
-rate is multiplied by this coefficient.[X]
+Pursuit critical coefficient.[N]
+On follow-up attacks, this unit's Crit[N]
+is multiplied by this coefficient.[X]
 
 ## LikesDesc
 A list of things this[N]
