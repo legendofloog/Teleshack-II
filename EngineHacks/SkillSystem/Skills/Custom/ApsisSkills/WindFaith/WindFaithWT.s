@@ -18,7 +18,7 @@ mov r0,r4
 ldr r1,ApotheosisID
 mov r14,r6
 .short 0xF800
-cmp r0,#0
+cmp r0,#1
 beq OffHandEffect
 
 @Is the second inventory slot the weapon?
@@ -32,7 +32,7 @@ mov r0,r5
 ldr r1,ApotheosisID
 mov r14,r6
 .short 0xF800
-cmp r0,#0
+cmp r0,#1
 beq OffHandEffect
 
 b End
