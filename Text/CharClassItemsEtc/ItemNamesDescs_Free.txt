@@ -22,6 +22,9 @@ Drives enemies mad if it hits.[X]
 ## WindName
 Wind[X]
 
+## WindDesc
+Eff. vs fliers.[X]
+
 ## BlizzardDesc
 Long-range storm. Puts enemy to sleep.[X]
 
@@ -304,7 +307,8 @@ Provokes enemies in range. Armors only.[X]
 Edged Arrow[X]
 
 ## EdgedArrowDesc
-Pierces enemy defense. Bow users only.[X]
+Pierces enemy defense. Bow users only.[N]
+Cannot make any consecutive attacks.[X]
 
 ## RedScarfName
 Red Scarf[X]
@@ -801,3 +805,9 @@ Vanishes after use.[X]
 
 ## SpiritDustUseDesc
 Raises magic.[X]
+
+## LeatherShieldName
+Hide Shield[X]
+
+## LeatherShieldDesc
+Made from tanned leather. Def +2.[X]

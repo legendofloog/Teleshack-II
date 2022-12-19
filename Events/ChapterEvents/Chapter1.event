@@ -14,6 +14,7 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
+TurnEventPlayer(0, TutorialTime, 1)
 TurnEventPlayer(0, AlenaSpawn, 2)
 TurnEventPlayer(0, AlenaCharge, 3)
 TurnEventPlayer(0, BoroSpawn, 9)
@@ -21,6 +22,11 @@ TurnEventPlayer(0,RaschwitzWarning,4)
 TurnEventPlayer(0,LastBoroWarning,7)
 END_MAIN
 
+TutorialTime:
+FlashCursor(Mira,30)
+Text(MiraCaptureText)
+NoFade
+ENDA
 
 CharacterBasedEvents:
 CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
@@ -152,7 +158,7 @@ UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [4,10] 0x0 
 UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
 UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [5,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
 UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
-UNIT Chapter1Generics Freelancer Raschwitz_Ch1 Level(1,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
+UNIT Chapter1Generics Freelancer Raschwitz_Ch1 Level(1,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [IronLance, LeatherShield] AttackInRangeAI
 UNIT
 
 
@@ -302,6 +308,7 @@ FADI 5
 FadeOutMusic
 WEATHER 0
 REMOVEALL_GREEN
+STAL 60
 SetBackground(BlackBackground)		
 CGText(Ch1SvetomirPesteringLoeweText1)
 MUSC FE5_InTheBattle_Fate
@@ -324,6 +331,7 @@ Text(BeginningSceneLoeweGroupText)
 EraseBackground
 CAMERA_CENTERED [19,16]
 FlashCursor(19,16,60)
+FadeOutMusic
 STAL 20
 LOAD1 1 Units1
 ENUN
@@ -331,7 +339,6 @@ LOAD1 1 Units2
 ENUN
 LOAD1 1 Units3
 ENUN 
-FadeOutMusic
 FlashCursor(Cleo,60)
 MUSC Sortie_Formation
 SetBackground(CastleHallway)

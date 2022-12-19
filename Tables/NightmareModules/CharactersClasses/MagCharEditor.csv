@@ -1,10 +1,10 @@
 INLINE MagCharTable,Base Magic,Magic Growth
 0x0,0,0
-0x01 Cleo,0,30
+0x01 Cleo,0,25
 0x02 Mira,0,5
-0x03 Iskra,3,45
+0x03 Iskra,4,40
 0x04 Emil,0,5
-0x05 Svetomir,2,35
+0x05 Svetomir,1,35
 0x06 Alena,1,10
 0x07 Varga,0,2
 0x08 Delilah,3,30
@@ -15,8 +15,8 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x0D Leina,(-3),5
 0x0E Cromar,7,35
 0x0F Loewe,1,10
-0x10 Longxia,3,35
-0x11 Fangai,4,30
+0x10 Longxia,4,35
+0x11 Fangai,4,35
 0x12 Gimm,1,15
 0x13 Tobie,1,10
 0x14 Awa,0,5
@@ -61,7 +61,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x3B Lyre,2,10
 0x3C Ngondala,6,30
 0x3D CatrinReal,9,35
-0x3E Matthias,5,45
+0x3E Matthias,6,45
 0x3F KwameReal,13,55
 0x40 Kofi,5,20
 0x41 TrajanReal,-1,1
