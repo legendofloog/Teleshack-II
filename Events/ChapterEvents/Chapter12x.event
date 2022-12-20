@@ -483,7 +483,7 @@ STAL 30
 CUSE Tao_Fake
 MOVE_1STEP 20 Tao_Fake 3
 ENUN
-SetBattleNumbers(95,8,5,90,15,0)
+//SetBattleNumbers(95,8,5,90,15,0)
 StartBattle
 	NormalDamage(0,8)
 	MissedAttack(0,8)
@@ -773,7 +773,7 @@ ENUN
 Text(Ch12xKorovaiEndingScene5_5)
 MOVE 25 Cleo [13,15]
 ENUN
-SetBattleNumbers(80,15,0,90,10,0)
+//SetBattleNumbers(80,15,0,90,10,0)
 StartBattle
 	NormalDamage(0,15)
 	MissedAttack(1,10)
@@ -783,7 +783,7 @@ EndAttack
 FIGHT Cleo Epony IronAxe False
 ENUN
 Text(Ch12xKorovaiEndingScene6)
-SetBattleNumbers(80,15,0,90,10,0)
+//SetBattleNumbers(80,15,0,90,10,0)
 StartBattle
 	NormalDamage(0,15)
 EndAttack
@@ -796,7 +796,7 @@ FlashCursor(Korovai,30)
 Text(Ch12xKorovaiEndingScene9)
 MOVE 20 Korovai [13,16]
 ENUN
-SetBattleNumbers(85,20,0,92,17,0)
+//SetBattleNumbers(85,20,0,92,17,0)
 StartBattle
 	NormalDamage(0,20)
 	NormalDamage(1,17)

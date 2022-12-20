@@ -1105,10 +1105,10 @@ setMugEntry(GrotoMug, GrotoMugData, 2, 5, 2, 3)
 
 ALIGN 16
 VolranMugData:
-#incbin "Dmp/volran(PLACEHOLDER)_mug.dmp"
-#incbin "Dmp/volran(PLACEHOLDER)_frames.dmp"
-#incbin "Dmp/volran(PLACEHOLDER)_palette.dmp"
-#incbin "Dmp/volran(PLACEHOLDER)_minimug.dmp"
+#incbin "Dmp/Volran_mug.dmp"
+#incbin "Dmp/Volran_frames.dmp"
+#incbin "Dmp/Volran_palette.dmp"
+#incbin "Dmp/Volran_minimug.dmp"
 setMugEntry(VolranMug, VolranMugData, 2, 5, 3, 3)
 
 ALIGN 16

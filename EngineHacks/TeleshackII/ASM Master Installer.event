@@ -76,7 +76,7 @@
 
 #include "StaffBGM/Installer.event"
 
-#include "ScriptedBattleNumbers/ScriptedBattles.event"
+//#include "ScriptedBattleNumbers/ScriptedBattles.event"
 
 // thief vision set to 0
 PUSH
