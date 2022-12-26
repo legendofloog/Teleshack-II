@@ -64,6 +64,74 @@ LOCA 24 DeadlordSpawn [4,20] 0x11
 LOCA 12 OutsidePrisonDoor [14,21] 0x12
 END_MAIN
 
+TopLeftPrisonDoor:
+TILECHANGE 0
+CHECK_EVENTID 24
+BNE 16 s0 sC
+  CHECK_EVENTID 19
+  BNE 16 s0 sC
+    Text(Ch12Civilian4)
+    GiveItem(AngelicRobe,0xFFFF)
+    SVAL sB Coords(3,2)
+    REMOVEUNIT(-2)
+    ENUT 21
+LABEL 16
+NoFade
+ENDA
+
+TopLeftPrisonDoor2:
+TILECHANGE 3
+CHECK_EVENTID 24
+BNE 420 s0 sC
+  CHECK_EVENTID 18
+  BNE 420 s0 sC
+  Text(Ch12Civilian4)
+  GiveItem(AngelicRobe,0xFFFF)
+  SVAL sB Coords(3,2)
+  REMOVEUNIT(-2)
+  ENUT 21
+LABEL 420
+NoFade
+ENDA
+
+TopMiddlePrisonDoor:
+TILECHANGE 2
+CHECK_EVENTID 24
+BNE 420 s0 sC
+  Text(Ch12Civilian2)
+  GiveItem(SecretBook,0xFFFF)
+  SVAL sB Coords(10,1)
+  REMOVEUNIT(-2)
+LABEL 420
+NoFade
+ENDA
+
+TopRightPrisonDoor:
+TILECHANGE 4
+CHECK_EVENTID 24
+BNE 420 s0 sC
+  Text(Ch12Civilian1)
+  GiveItem(RedGem,0xFFFF)
+  SVAL sB Coords(13,2)
+  REMOVEUNIT(-2)
+  Text(CleoIdea)
+LABEL 420
+NoFade
+ENDA
+
+
+OutsidePrisonDoor:
+TILECHANGE 12
+CHECK_EVENTID 24
+BNE 420 s0 sC
+  Text(Ch12Civilian3)
+  GiveItem(Talisman,0xFFFF)
+  SVAL sB Coords(13,23)
+  REMOVEUNIT(-2)
+LABEL 420
+NoFade
+ENDA
+
 
 MiscBasedEvents:
 AFEV 25 TiberiusDefeat 22
@@ -432,10 +500,6 @@ RemoveTrapAtCoords(6,16)
 RemoveTrapAtCoords(2,20)
 RemoveTrapAtCoords(3,20)
 RemoveTrapAtCoords(4,20)
-ENUT 13
-ENUT 14
-ENUT 15
-ENUT 16
 MUSC 0x7FFF
 TEXTSTART
 TEXTSHOW Ch12DeadlordSpawn1
@@ -563,62 +627,6 @@ Text(Ch12End6)
 Text(Ch12End7)
 FADI 15
 MNC2 Ch12xInterlude
-NoFade
-ENDA
-
-
-TopLeftPrisonDoor:
-TILECHANGE 0
-CHECK_EVENTID 19
-BEQ 16 s1 sC
-Text(Ch12Civilian4)
-GiveItem(AngelicRobe,0xFFFF)
-SVAL sB Coords(3,2)
-REMOVEUNIT(-2)
-ENUT 21
-LABEL 16
-NoFade
-ENDA
-
-TopLeftPrisonDoor2:
-TILECHANGE 3
-CHECK_EVENTID 18
-BEQ 420 s1 sC
-Text(Ch12Civilian4)
-GiveItem(AngelicRobe,0xFFFF)
-SVAL sB Coords(3,2)
-REMOVEUNIT(-2)
-ENUT 21
-LABEL 420
-NoFade
-ENDA
-
-TopMiddlePrisonDoor:
-TILECHANGE 2
-Text(Ch12Civilian2)
-GiveItem(SecretBook,0xFFFF)
-SVAL sB Coords(10,1)
-REMOVEUNIT(-2)
-NoFade
-ENDA
-
-TopRightPrisonDoor:
-TILECHANGE 4
-Text(Ch12Civilian1)
-GiveItem(RedGem,0xFFFF)
-SVAL sB Coords(13,2)
-REMOVEUNIT(-2)
-Text(CleoIdea)
-NoFade
-ENDA
-
-
-OutsidePrisonDoor:
-TILECHANGE 12
-Text(Ch12Civilian3)
-GiveItem(Talisman,0xFFFF)
-SVAL sB Coords(13,23)
-REMOVEUNIT(-2)
 NoFade
 ENDA
 
