@@ -264,6 +264,12 @@
 #define SwordfighterMSwordAnim 0xB
 #define SwordfighterMUnarmedAnim 0xC
 
+#define SlayerSwordAnim 0xB9
+#define SlayerAxeAnim 0xBA	
+#define SlayerHandaxeAnim 0xBB
+#define SlayerUnarmedAnim 0xBC
+
+
 ALIGN 4
 SageMAnims:
 AnimaAnim(SageMagicAnim)
@@ -816,4 +822,12 @@ ALIGN 4
 SwordfighterMAnims:
 SwordAnim(SwordfighterMSwordAnim)
 UnarmedAnim(SwordfighterMUnarmedAnim)
+EndAnim
+
+ALIGN 4
+CromarSlayerAnims:
+SwordAnim(SlayerSwordAnim)
+AxeAnim(SlayerAxeAnim)
+HandAxeAnim(SlayerHandaxeAnim)
+UnarmedAnim(SlayerUnarmedAnim)
 EndAnim

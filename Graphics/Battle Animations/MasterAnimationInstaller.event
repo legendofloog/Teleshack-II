@@ -378,3 +378,10 @@
 {
     #include "Animations/Dancer (circleseverywhere)/Sword Installer.event"
 }
+
+{
+	#include "Animations/Hero_Cromar(Pikmin1211,Pushwall,knabepicer)/Sword Installer.event"
+	#include "Animations/Hero_Cromar(Pikmin1211,Pushwall,knabepicer)/Unarmed Installer.event"
+	#include "Animations/Hero_Cromar(Pikmin1211,Pushwall,knabepicer)/Axe Installer.event"
+	#include "Animations/Hero_Cromar(Pikmin1211,Pushwall,knabepicer)/Handaxe Installer.event"
+}
