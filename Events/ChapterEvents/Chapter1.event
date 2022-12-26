@@ -24,7 +24,7 @@ END_MAIN
 
 TutorialTime:
 FlashCursor(Mira,30)
-Text(MiraCaptureText)
+//Text(MiraCaptureText)
 NoFade
 ENDA
 

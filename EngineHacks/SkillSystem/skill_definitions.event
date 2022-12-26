@@ -5,7 +5,7 @@
 #define StealID 1
 #define StealPlusID 2
 #define VantageID 3
-#define NihilID 4
+
 #define LockTouchID 5
 #define AdeptID 6
 #define AstraID 7

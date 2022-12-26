@@ -65,7 +65,7 @@ int GetCurrentPromotedLevelBonus(){
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
-    bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck);
+    bu->battleAvoidRate = (bu->battleSpeed * 2) + bu->terrainAvoid + (bu->unit.lck);
 
     if (bu->battleAvoidRate < 0){
         bu->battleAvoidRate = 0;
