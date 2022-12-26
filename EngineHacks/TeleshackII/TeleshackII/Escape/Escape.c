@@ -46,18 +46,22 @@ int EscapeCommandEffect(MenuProc* proc){
         int currentRequiredEscapees = 0;
         while (chapterRequiredEscapees[cnt].charID != 0){ //next, we'll sum up required units and those who have escaped
             Unit* currentUnit = GetUnitByCharId(chapterRequiredEscapees[cnt].charID);
-            if (currentUnit->state & US_HIDDEN && !(currentUnit->state & US_UNAVAILABLE)){
-                currentRequiredEscapees++;
-            }
             if (gActiveUnit->rescueOtherUnit != 0){
                 if (currentUnit->pCharacterData->number == GetUnit(gActiveUnit->rescueOtherUnit)->pCharacterData->number){
                     currentRequiredEscapees++; //although rescued unit hasn't escaped yet, they are counted here
                 }
             }
+            else if (currentUnit->state & US_HIDDEN && !(currentUnit->state & US_UNAVAILABLE)){
+                currentRequiredEscapees++;
+            }
+            else //if neither of these, the current required escapee has not left yet
+            {
+
+            }
             requiredEscapeeTotal++;
             cnt++;
         }
-        if ( (requiredEscapeeTotal - currentRequiredEscapees) < 1){ //if only one/two more unit(s) (rescued and/or active) must escape
+        if ( (requiredEscapeeTotal - currentRequiredEscapees) <= 0){ //if only one/two more unit(s) (rescued and/or active) must escape
             EscapeEventCall();
             return 0x94;
         }

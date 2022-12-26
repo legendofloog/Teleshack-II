@@ -251,6 +251,7 @@ BNE 13 s1 sC
 			ENUN
 			SVAL s1 0x1
 			SET_CONDITION Mish
+			ENUN
 	LABEL 15
 	Text(Ch5xRecruitedTwoUnits)
 	ENUT 13
