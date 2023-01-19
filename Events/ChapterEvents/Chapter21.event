@@ -585,7 +585,7 @@ UNIT
 
 EscapingThieves:
 UNIT Bandit Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA17R30 [IronSword,RedGem,Rewarp] EscapeOnlyAI
-UNIT 0x64 Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA16R31 [RitualKnife] EscapeOnlyAI
+UNIT Bandit Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA16R31 [RitualKnife] EscapeOnlyAI
 UNIT
 
 Ch21Wyverns:

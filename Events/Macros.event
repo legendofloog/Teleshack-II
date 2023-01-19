@@ -1,3 +1,13 @@
+#define ChangeAI(UnitID, AI1, AI2) "SVAL s1 AI2 << 8 | AI1; CHAI UnitID"
+#define LootOnlyThenEscapeAI [0x6,0x5,0x4,0x0]
+#define StationaryBossAI [0x3, 0x3, 0x0, 0x20]
+#define AttackInPlaceAI [0x3,0x3,0x4,0x0]
+#define RemoveBackground "CALL $9EEC24"
+#define MoveUnit(UnitID, X, Y) "MOVE 0 UnitID [X, Y]; ENUN" // these two are kind of useless but I'm using them anyway
+#define MoveUnitWithSpeed(UnitID, X, Y, Speed) "MOVE Speed UnitID [X, Y]; ENUN"
+#define NormalSpeed 0
+#define SlowSpeed 1
+
 #define PreventSkipping "EVBIT_MODIFY 1"
 #define AllowSkipping "EVBIT_MODIFY 0"
 #define SetUnitFullHP(charID) "CheckMaxHP(charID); SADD s1 sC s0; SET_HP charID"

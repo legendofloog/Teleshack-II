@@ -38,8 +38,14 @@ Continue:
 
 mov r1, #0x5A
 ldrh r0, [ r4, r1 ]
+cmp r0, #1
 sub r0, r0, #2
 strh r0, [ r4, r1 ]
+
+mov r1, #0x5E
+ldrh r0, [ r4, r1 ]
+cmp r0, #2		@ set enemy AS to 0 if too little
+blt SetToZero
 
 mov r1, #0x5E
 ldrh r0, [ r4, r1 ]
@@ -70,8 +76,21 @@ strh r0, [ r4, r1 ]
 
 mov r1, #0x5E
 ldrh r0, [ r4, r1 ]
+cmp r0, #6		@ set enemy AS to 0 if too little
+blt SetToZero
+
+mov r1, #0x5E
+ldrh r0, [ r4, r1 ]
 sub r0, r0, #4
 strh r0, [ r4, r1 ]
+
+b End
+
+SetToZero:
+mov r1, #0x5E
+mov r0, #0x0
+strh r0, [ r4, r1 ]
+
 
 End:
 pop {r4-r7}
