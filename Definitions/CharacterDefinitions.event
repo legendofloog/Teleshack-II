@@ -216,6 +216,7 @@
 #define C20Enemy 0x93
 
 //Chapter 21 stuff
+#define Bandit2 0x64
 #define Taraji 0xAF
 #define Xlea 0xB0
 #define Vinny 0xB1
