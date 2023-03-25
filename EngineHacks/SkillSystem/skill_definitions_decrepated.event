@@ -16,7 +16,7 @@
 #define SD_WeakWilled 0
 #define SD_ShowStopper 0
 
-
+#define NihilID 255
 
 
 

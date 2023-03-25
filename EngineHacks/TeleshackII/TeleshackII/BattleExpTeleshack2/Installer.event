@@ -8,8 +8,8 @@ PrepromoteTable:
 PrepromoteTableEntry(Mira,15)
 PrepromoteTableEntry(Cromar,10)
 PrepromoteTableEntry(Meldan,10)
-PrepromoteTableEntry(Pelecaye,10)
-PrepromoteTableEntry(Takai,10)
+PrepromoteTableEntry(Pelecaye,5)
+PrepromoteTableEntry(Takai,5)
 BYTE 0xFF 0xFF
 
 ALIGN 4
