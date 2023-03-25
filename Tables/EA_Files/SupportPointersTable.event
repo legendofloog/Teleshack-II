@@ -129,9 +129,9 @@ SupportCountAmount(3)
 
 ALIGN 4
 MishSupportPointer:
-SupportDataCharacters(Tobie,Takai,Tara,0,0)  
+SupportDataCharacters(Tobie,Takai,Tara,Ellerey,0)  
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(20,30,80,0,0)
+SupportDataGrowths(20,30,80,30,0)
 SupportCountAmount(3)
 
 ALIGN 4
@@ -285,9 +285,9 @@ SupportCountAmount(3)
 
 ALIGN 4
 EllereySupportPointer:
-SupportDataCharacters(Darby,Jacinth,Zwieback,0,0)  
+SupportDataCharacters(Darby,Jacinth,Zwieback,Mish,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,30,30,0,0)
+SupportDataGrowths(30,30,30,30,0)
 SupportCountAmount(3)
 
 ALIGN 4

@@ -65,16 +65,20 @@ UnitMenuTable:
   //Color options: NormalText, GrayText, BlueText, OrangeText, GreenText (flashes), BlackText
   //MenuCommand(DualAtkTxtID,DualAtkDescId,0,DualAtkCheck,DualAtkSelected) 
   
+  #ifdef ESCAPE_ARRIVE
+    MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeCommandUsability, EscapeCommandEffect)
+  #endif // ESCAPE_ARIVE
+
+  MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
+  // UM_Seize
+
   // UM_Attack
   MenuCommand(0x67b, 0x6c0, NormalText, $249ac, AttackEffect, $22c31, $22c99) //to clear flags
   // UM_Attack_B
   MenuCommand(0x67b, 0x6c0, NormalText, $24a28, AttackEffect, $22c31, $22c99)
   
-  MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
-  // UM_Seize
-  #ifdef ESCAPE_ARRIVE
-    MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeCommandUsability, EscapeCommandEffect)
-  #endif // ESCAPE_ARIVE
+  
+  
   
   #ifdef DRAGON_VEINS
   MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
@@ -103,12 +107,9 @@ UnitMenuTable:
 
   UM_Staff
   UM_Play
-  
+
   //UM_Dance
   MenuCommand(0x67E,0x6C2,NormalText,NewDanceUsability,0x231D0)
-
-  UM_Item
-  UM_Trade
 
   MenuCommand(Dismount_Name_TextID, Dismount_Description_TextID, OrangeText, DismountUsability, DismountRoutine)
   MenuCommand(Mount_Name_TextID, Mount_Description_TextID, OrangeText, MountUsability, MountRoutine)
@@ -186,6 +187,9 @@ UnitMenuTable:
   #ifdef __DEBUG__
     MenuCommand(UM_EditSkill, UM_EditSkillDesc, OrangeText, $04F449, SkillDebugCommand_OnSelect)
   #endif
+
+  UM_Item
+  UM_Trade
 
   //UM_Supply
   

@@ -322,6 +322,10 @@ SupportEntry(Tobie,ASupportLevel,0,0,0,0,30,0)
 SupportEntry(Takai,CSupportLevel,1,1,0,5,0,0)
 SupportEntry(Takai,BSupportLevel,1,1,0,10,0,0)
 SupportEntry(Takai,ASupportLevel,2,2,0,15,0,0)
+
+SupportEntry(Ellerey,CSupportLevel,0,1,0,0,5,0)
+SupportEntry(Ellerey,BSupportLevel,0,2,0,0,10,0)
+SupportEntry(Ellerey,ASupportLevel,0,3,0,0,15,0)
 SupportTerm
 
 ALIGN 4
@@ -667,6 +671,10 @@ SupportEntry(Darby,ASupportLevel,0,3,15,0,0,0)
 SupportEntry(Jacinth,CSupportLevel,1,0,0,0,0,5)
 SupportEntry(Jacinth,BSupportLevel,2,0,0,0,0,7)
 SupportEntry(Jacinth,ASupportLevel,3,0,0,0,0,15)
+
+SupportEntry(Mish,CSupportLevel,0,1,0,0,5,0)
+SupportEntry(Mish,BSupportLevel,0,2,0,0,10,0)
+SupportEntry(Mish,ASupportLevel,0,3,0,0,15,0)
 SupportTerm
 
 ALIGN 4
