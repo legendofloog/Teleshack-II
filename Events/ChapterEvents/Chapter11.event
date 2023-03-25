@@ -41,13 +41,12 @@ DefeatBoss
 END_MAIN
 
 LocationBasedEvents:
-Chest(KnightProof,0,6)
+Chest(KnightProof,2,6)
 LOCA 11 FreeSisters [17,24] 0x12
 LOCA 11 FreeSisters [18,24] 0x12
 Door(17,24)
 Door(18,24)
 Chest(Physic,18,12)
-Door(1,8)
 Door(2,8)
 END_MAIN
 
@@ -92,7 +91,7 @@ UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe
 UNIT
 
 EnemyUnits:
-UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [4,10] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
+UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [4,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
 UNIT Selese Freelancer Cleo Level(11,Enemy,True) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance] AttackInRangeAI
 UNIT Selese Archer Cleo Level(11,Enemy,True) [7,15] 0x0 0x0 0x0 0x1 [MarksmanBow] AttackInRangeAI
 UNIT Selese Mage Cleo Level(11,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
@@ -102,7 +101,7 @@ UNIT Selese Archer Cleo Level(11,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [MarksmanBow
 UNIT Selese Fighter Cleo Level(11,Enemy,True) [4,16] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
 UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [2,13] 0x0 0x0 0x0 0x0 [SteelLance] StallOneTurnAI
 UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [3,12] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
-UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
+UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [1,15] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
 UNIT Selese Mage Cleo Level(11,Enemy,True) [1,12] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
 UNIT Selese SwordArmour Cleo Level(11,Enemy,True) [8,11] 0x0 0x0 0x0 0x0 [IronBlade] NeverMoveAI
 UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [8,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
@@ -130,7 +129,7 @@ UNIT SisterSelese Sister Cleo Level(5,NPC,True) [18,22] 0x0 0x0 0x0 0x0 [Physic]
 UNIT
 
 Turn2Thief:
-UNIT Selese Thief Cleo Level(11,Enemy,True) [0,15] 0x0 0x0 0x1 REDA0R15 [ShortSword,ChestKey,DoorKey] ThiefAI
+UNIT Selese Thief Cleo Level(11,Enemy,True) [0,14] 0x0 0x0 0x1 REDA0R14 [ShortSword,ChestKey,DoorKey] ThiefAI
 UNIT Selese Thief Cleo Level(11,Enemy,True) [13,7] 0x0 0x0 0x1 REDA13R7 [ShortSword,ChestKey] ThiefAI
 UNIT
 

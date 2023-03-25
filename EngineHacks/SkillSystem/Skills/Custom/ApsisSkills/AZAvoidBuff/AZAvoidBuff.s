@@ -38,8 +38,8 @@ mov lr, r0
 mov r0, r4 @attacker data
 ldr r1, ApotheosisID
 .short 0xf800
-cmp r0, #0
-beq End
+cmp r0, #1
+beq Unequipped
 
 b Unequipped        @If not the right tome, go to Unequipped skill
 

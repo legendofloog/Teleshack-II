@@ -129,6 +129,8 @@ ALIGN 4
 gExtra_Growth_Boosts:
 POIN Extra_Growth_Boosts|1
 
+
+ALIGN 4
 gGetHPGrowth:
 POIN Get_Hp_Growth|1
 

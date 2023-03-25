@@ -106,7 +106,7 @@ UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [3,1] 0x0 0x0 0x0 [Great
 UNIT
 
 NPCUnits:
-UNIT Catrin Swordmaster Catrin Level(1,NPC,False) [3,3] 0x0 0x0 0x0 0x0 [MasterSword,Elixir] BossHealAI
+UNIT Catrin Swordmaster_F Catrin Level(1,NPC,False) [3,3] 0x0 0x0 0x0 0x0 [MasterSword,Elixir] BossHealAI
 UNIT Boro_Ch16 Champion Catrin Level(5,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [MasterLance,Elixir] BossHealAI
 UNIT
 

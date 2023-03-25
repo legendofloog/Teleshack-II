@@ -110,7 +110,7 @@ UNIT Freyse SwordKnight Wrathgar Level(9,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [Armo
 UNIT Freyse SwordKnight Wrathgar Level(9,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 
 UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [13,10] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
-UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [21,13] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Freyse AxeKnight Wrathgar Level(9,Enemy,True) [20,13] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Freyse PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI

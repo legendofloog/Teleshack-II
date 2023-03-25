@@ -53,7 +53,7 @@ bne Continue
 
 @ add 15 hit/crit
 
-mov r1, #0x62
+mov r1, #0x60
 ldrh r0, [r4, r1] @hit
 add r0, #15
 strh r0, [r4,r1]
@@ -81,7 +81,7 @@ bgt Continue @if not, no bonus
 
 @ if so, add additional 15 crit
 
-mov r1, #0x62
+mov r1, #0x60
 ldrh r0, [r4, r1] @hit
 add r0, #15
 strh r0, [r4,r1]
@@ -137,7 +137,7 @@ mul r3,r2
 add r0, r3
 strh r0, [r4,r1]
 
-mov r1, #0x62 @crit
+mov r1, #0x60 @hit
 ldrh r0, [r4, r1]
 mov r3,#0x3
 mul r3,r2

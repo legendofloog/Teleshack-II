@@ -603,10 +603,15 @@ TEXTEND
 REMA
 SetBackground(0x0E)
 Music(Rovers)
-Text(Ch12End3A)
-MUSC 0x7FFF
-Text(Ch12End3B)
+CHECK_ALIVE Mira
+BEQ 776 s0 sC //if mira not alive, end
+CHECK_ALIVE Iskra
+BEQ 776 s0 sC
+  Text(Ch12End3A)
+  Text(Ch12End3B)
+LABEL 776
 Text(Ch12End3C)
+FadeOutMusic
 SetBackground(0x20)
 TEXTSTART
 TEXTSHOW Ch12End4

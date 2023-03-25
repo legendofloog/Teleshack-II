@@ -282,15 +282,15 @@ Ch21SpawnThieves:
 FlagNotSet(0x04,69)
 	Music(FFTAnxiety)
 	SpawnReinforcements(EscapingThieves)
-	SilentGiveItem(GrowthScroll,0x64)
-	SetUnitItemDurability(0x64,1,DreedurScroll)
+	SilentGiveItem(GrowthScroll,Bandit2)
+	SetUnitItemDurability(Bandit2,1,DreedurScroll)
 	FlagNotSet(0x0E,420)
 		CameraCursor(Cephalid)
-		CameraCursor(0x64)
+		CameraCursor(Bandit)
 		Text(Ch21Thieves_CephAlive)
 		GOTO 69
 	LABEL 420
-	CameraCursor(0x64)
+	CameraCursor(Bandit)
 	Text(Ch21Thieves_CephDead)
 LABEL 69
 NoFade
@@ -585,7 +585,7 @@ UNIT
 
 EscapingThieves:
 UNIT Bandit Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA17R30 [IronSword,RedGem,Rewarp] EscapeOnlyAI
-UNIT 0x64 Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA16R31 [RitualKnife] EscapeOnlyAI
+UNIT Bandit2 Thief 0x0 Level(10,Enemy,True) [16,29] 0x0 0x0 0x1 REDA16R31 [RitualKnife] EscapeOnlyAI
 UNIT
 
 Ch21Wyverns:
