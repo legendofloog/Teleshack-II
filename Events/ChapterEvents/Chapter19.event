@@ -152,7 +152,7 @@ UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,20] 0x0 0x0 0x0 0x0 [
 UNIT
 
 EnemyReinforcements_B:
-UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [35,12] 0x0 0x0 0x0 0x0 [CounterBow] ChargeAI
+UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [35,12] 0x0 0x0 0x0 0x0 [Greatbow] ChargeAI
 UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,13] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
 UNIT C19Enemy Archer C19Phantom Level(19,Enemy,True) [35,20] 0x0 0x0 0x0 0x0 [MasterBow] ChargeAI
 UNIT C19Enemy Myrmidon C19Phantom Level(19,Enemy,True) [36,19] 0x0 0x0 0x0 0x0 [BoldBlade] ChargeAI
