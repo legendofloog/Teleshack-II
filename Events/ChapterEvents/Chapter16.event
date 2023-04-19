@@ -225,35 +225,23 @@ NoFade
 ENDA
 
 Thief1_AEvent:
-CamOn
-LOAD1 1 Thief1_A
-ENUN
-CamOff
+SpawnReinforcements(Thief1_A)
 NoFade
 ENDA
 
 Thief1_BEvent:
-CamOn
-LOAD1 1 Thief1_B
-ENUN
-CamOff
+SpawnReinforcements(Thief1_B)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_A:
-CamOn
-LOAD1 1 EnemyReinforcements_A
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_A)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_B:
 Text(Colossus_1)
-CamOn
-LOAD1 1 EnemyReinforcements_B
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B)
 SVAL s1 0x0000C06
 CHAI Catrin
 CHAI Boro_Ch16
@@ -261,35 +249,23 @@ NoFade
 ENDA
 
 EnemyReinforcementsEvent_B1:
-CamOn
-LOAD1 1 EnemyReinforcements_B1
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B1)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_B2:
-CamOn
-LOAD1 1 EnemyReinforcements_B2
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B2)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_B3:
-CamOn
-LOAD1 1 EnemyReinforcements_B3
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B3)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_C:
 Text(Colossus_2)
-CamOn
-LOAD1 1 EnemyReinforcements_C
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_C)
 NoFade
 ENDA
 
@@ -310,7 +286,7 @@ BNE 2 s0 sC
 	CHECK_EVENTID 0x88
 	BNE 2 s0 sC
     	SetBackground(OutsideFort)
-    	MUSC Advance
+    	MUSC SheenaID
     	Text(VargaPrf)
     	GiveItem(AquaBrand,Varga)
     	ENUT 0x88
@@ -320,24 +296,24 @@ BNE 4 s0 sC
 	CHECK_EVENTID 0x89
 	BNE 4 s0 sC
 		SetBackground(OutsideFort)
-		MUSC Advance
+		MUSC SheenaID
 		Text(EmilPrf)
 		GiveItem(ChargeLance,Emil)
 		ENUT 0x89
 LABEL 4
 SetBackground(OutsideFort)
-MUSC Advance
+MUSC SheenaID
 Text(Ch16_Opening_3)
 SetBackground(Sand)
-MUSC TiesOfFriendship
+MUSC FF6EdgarAndSabin
 Text(Ch16_Opening_4)
 MUSC WindyDaySoundEffect
 Text(Ch16_Opening_5)
 SetBackground(Temple)
-MUSC Legacy
+MUSC ToV_TragicDecisionID
 Text(Ch16_Opening_6)
 SetBackground(Temple)
-MUSC Tension
+MUSC Sortie_Formation
 Text(Ch16_Opening_7)
 CALL $9EE2C4
 LOAD1 1 NPCUnits
@@ -352,7 +328,7 @@ ENDA
 
 EndingScene:
 RemoveAll
-MUSC Tension
+MUSC Sortie_Formation
 SetBackground(Temple)
 Text(Ch16_Ending)
 MUSC Rovers

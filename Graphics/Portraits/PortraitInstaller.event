@@ -149,6 +149,8 @@
 #define MysteryMug 0x3D
 #define EithaMug 0x3E
 #define CherneMug 0x39
+#define TrajanYoungMug 0x9B
+#define BoroYoungMug 0x9C
 
 ALIGN 16
 CleoMugData:
@@ -327,6 +329,14 @@ BoroEarlyMugData:
 setMugEntry(BoroEarlyMug, BoroEarlyMugData, 3, 5, 3, 3)
 
 ALIGN 16
+BoroYoungMugData:
+#incbin "Dmp/BoroYoung(RandomWizard,LaurentLacroix, Loog)_mug.dmp"
+#incbin "Dmp/BoroYoung(RandomWizard,LaurentLacroix, Loog)_frames.dmp"
+#incbin "Dmp/BoroYoung(RandomWizard,LaurentLacroix, Loog)_palette.dmp"
+#incbin "Dmp/BoroYoung(RandomWizard,LaurentLacroix, Loog)_minimug.dmp"
+setMugEntry(BoroYoungMug, BoroYoungMugData, 3, 5, 3, 3)
+
+ALIGN 16
 VargaMugData:
 #incbin "Dmp/Varga (knabepicer)_mug.dmp"
 #incbin "Dmp/Varga (knabepicer)_frames.dmp"
@@ -440,11 +450,11 @@ setMugEntry(KwameMug, KwameMugData, 3, 5, 3, 3)
 
 ALIGN 16
 RigganMugData:
-#incbin "Dmp/Riggan_mug.dmp"
-#incbin "Dmp/Riggan_frames.dmp"
-#incbin "Dmp/Riggan_palette.dmp"
-#incbin "Dmp/Riggan_minimug.dmp"
-setMugEntry(RigganMug, RigganMugData, 2, 6, 3, 4)
+#incbin "Dmp/Riggan(Levin, Loog)_mug.dmp"
+#incbin "Dmp/Riggan(Levin, Loog)_frames.dmp"
+#incbin "Dmp/Riggan(Levin, Loog)_palette.dmp"
+#incbin "Dmp/Riggan(Levin, Loog)_minimug.dmp"
+setMugEntry(RigganMug, RigganMugData, 2, 5, 3, 3)
 
 ALIGN 16
 GimmMugData:
@@ -477,6 +487,14 @@ TrajanMugData:
 #incbin "Dmp/Trajan(Loog)_palette.dmp"
 #incbin "Dmp/Trajan(Loog)_minimug.dmp"
 setMugEntry(TrajanMug, TrajanMugData, 2, 5, 2, 3)
+
+ALIGN 16
+TrajanYoungMugData:
+#incbin "Dmp/TrajanYoung(Loog)_mug.dmp"
+#incbin "Dmp/TrajanYoung(Loog)_frames.dmp"
+#incbin "Dmp/TrajanYoung(Loog)_palette.dmp"
+#incbin "Dmp/TrajanYoung(Loog)_minimug.dmp"
+setMugEntry(TrajanYoungMug, TrajanYoungMugData, 2, 5, 2, 3)
 
 ALIGN 16
 CadenzaMugData:
@@ -536,11 +554,11 @@ setMugEntry(CoraliaMug, CoraliaMugData, 3, 5, 3, 3)
 
 ALIGN 16
 BarodMugData:
-#incbin "Dmp/Barod_mug.dmp"
-#incbin "Dmp/Barod_frames.dmp"
-#incbin "Dmp/Barod_palette.dmp"
-#incbin "Dmp/Barod_minimug.dmp"
-setMugEntry(BarodMug, BarodMugData, 2, 5, 2, 3)
+#incbin "Dmp/Barod(RandomWizard)_mug.dmp"
+#incbin "Dmp/Barod(RandomWizard)_frames.dmp"
+#incbin "Dmp/Barod(RandomWizard)_palette.dmp"
+#incbin "Dmp/Barod(RandomWizard)_minimug.dmp"
+setMugEntry(BarodMug, BarodMugData, 2, 4, 2, 2)
 
 ALIGN 16
 ZeusMugData:

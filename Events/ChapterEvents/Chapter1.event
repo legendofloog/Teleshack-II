@@ -14,17 +14,33 @@ POIN BeginningScene EndingScene
 
 
 TurnBasedEvents:
-TurnEventPlayer(0, TutorialTime, 1)
+TurnEventPlayer(0, TutorialZero, 1)
+TurnEventPlayer(0, TutorialTime, 2)
 TurnEventPlayer(0, AlenaSpawn, 2)
+TurnEventPlayer(0, TutorialTime2, 3)
 TurnEventPlayer(0, AlenaCharge, 3)
 TurnEventPlayer(0, BoroSpawn, 9)
 TurnEventPlayer(0,RaschwitzWarning,4)
 TurnEventPlayer(0,LastBoroWarning,7)
 END_MAIN
 
+TutorialZero:
+CenterTextbox(CheckTheGuide)
+NoFade
+ENDA
+
 TutorialTime:
-FlashCursor(Mira,30)
-//Text(MiraCaptureText)
+CameraCursor(Mira)
+Text(Chapter1MiraCaptureText)
+CenterTextbox(Chapter1CaptureStealTutorialBox)
+NoFade
+ENDA
+
+TutorialTime2:
+CAMERA_CENTERED [5,18]
+FlashCursor(5,18,30)
+Text(Chapter1FreelancerEquipText)
+CenterTextbox(Chapter1EquipTutorialBox)
 NoFade
 ENDA
 
@@ -48,7 +64,7 @@ Escape(3,0)
 END_MAIN
 
 MiscBasedEvents:
-AREA 0 CivilianEscape [2, 0] [3, 0]
+AREA 0 CivilianEscape [14, 0] [15, 0]
 AFEV 12 LoeweSvetomirFreed 9
 AFEV 13 SennyFreed 10
 AFEV 15 HelmanFreed 11
@@ -103,7 +119,7 @@ UNIT Faolan RookKnight            Cleo Level(12,Ally,True) [5,4] 0x0 0x0 0x0 0x1
 UNIT
 
 Units1:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [19,16] 0x0 0x0 0x1 REDA17R16 [Argilabrys,IronAxe,Vulnerary]     NoAI
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(3,Ally,False) [19,16] 0x0 0x0 0x1 REDA17R16 [Argilabrys,IronAxe,Vulnerary]     NoAI
 UNIT
 
 Units2:
@@ -116,7 +132,7 @@ UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [19,17] 0x0 0x0 0x1 RE
 UNIT
 
 GreenUnits:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(4,NPC,False) [18,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Svetomir Priest            Cleo Level(2,NPC,False) [18,12] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Senny Civilian_F_2         0x0 Level(1,NPC,False) [18,3] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
 UNIT Helman Civilian_2          0x0 Level(1,NPC,False) [10,7] 0x0 0x0 0x0 0x0 [0x0] EscapeOnlyAI
@@ -143,7 +159,7 @@ UNIT
 Flashback2Units2:
 UNIT Senny Sniper_F   0x0          Level(1,NPC,False) [14,2] 0x0 0x0 0x1 REDA9R2 [0x0] NoAI
 UNIT Chapter1Generics AxeFighter 0x0    Level(1,NPC,False) [13,0] 0x0 0x0 0x1 REDA8R1 [0x0] NoAI
-UNIT Svetomir SwordFighter 0x0 Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA10R1 [0x0] NoAI
+UNIT Svetomir Freelancer 0x0 Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA10R1 [0x0] NoAI
 UNIT 
 
 EnemyUnits:
@@ -170,11 +186,11 @@ UNIT
 
 
 BoroUnitGroup:
-UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [MasterLance] DoNotAttack07AI
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [Impaler] PursueWithoutHeedAI
 UNIT
 
 BoroCutsceneGroup:
-UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [MasterLance] DoNotAttack07AI
+UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [Impaler] PursueWithoutHeedAI
 UNIT
 
 DraganaUnitGroup:
@@ -184,19 +200,16 @@ UNIT
 
 
 Traps1:
-RedSigil(2,0)
-RedSigil(3,0)
+BlueSigil(2,0)
+BlueSigil(3,0)
+GreenSigil(14,0)
+GreenSigil(15,0)
 ENDTRAP
 ALIGN 4
 
 
 Traps2:
 ENDTRAP
-ALIGN 4
-
-AlenaAi2: 
-	AiTryTalkToCharacter(Alena)
-	InjectAi2(Ch1_AlenaAI2, AlenaAi2)
 ALIGN 4
 
 
@@ -267,6 +280,10 @@ Text(BeginningSceneLoeweFlashback2Text1)
 LOAD1 1 Flashback2Units2
 ENUN
 STAL 30
+FlashCursor(Svetomir,30)
+Text(Ch1BeginningSceneBoroFlashback2Text0)
+FlashCursor(Chapter1Generics,30)
+Text(Ch1BeginningSceneTrajanFlashback2Text0)
 FlashCursor(Senny,60)
 Text(Ch1BeginningSceneDraganaFlashback2Text0)
 SingleUnitMove(Helman,15,10,2)
@@ -349,16 +366,18 @@ ENDA
 
 AlenaSpawn:
 CAMERA Alena
+FlashCursor(Alena,30)
 Text(AlenaSpawnText)
 NoFade
 ENDA
 
 AlenaCharge:
 CAMERA Alena
+FlashCursor(Alena,30)
 Text(AlenaChargeText)
 SVAL s1 0x00040A06
 CHAI Alena
-SVAL s1 0x00040000
+SVAL s1 0x00000000
 CHAI [1,13]
 CHAI [1,15]
 NoFade
@@ -366,9 +385,8 @@ ENDA
 
 
 BoroSpawn:
-LOAD1 1 BoroUnitGroup
-ENUN
-CAMERA Boro_Ch1
+SpawnReinforcements(BoroUnitGroup)
+CameraCursor(Boro_Ch1)
 Text(BoroSpawnText)
 ENUT 0x4
 NoFade
@@ -430,6 +448,7 @@ GiveItem(Heal,Svetomir)
 SilentGiveItem(Vulnerary,Loewe)
 SilentGiveItem(Vulnerary,Svetomir)
 MURE 2
+CenterTextbox(Chapter1EscapeTutorialBox)
 NoFade
 ENDA
 
@@ -473,7 +492,8 @@ EndOfEscapeRoutineASMC
 ENUT 0x84 //removes boss icons/talk icons etc
 ENUN
 MUSC 0x7FFF
-FADI 15
+FADI 10
+STAL 30
 RemoveAll
 LOMA Ch1DraganaPrison
 CAMERA [29,29]

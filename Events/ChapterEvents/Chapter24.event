@@ -654,9 +654,6 @@ NoFade
 ENDA
 
 Turn1ReinforcementEvent:
-CamOn
-LOAD1 1 Turn1Reinforcements
-ENUN
-CamOff
+SpawnReinforcements(Turn1Reinforcements)
 NoFade
 ENDA

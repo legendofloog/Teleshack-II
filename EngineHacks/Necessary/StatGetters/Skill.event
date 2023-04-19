@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pSkillModifiers: // Skill
-	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl prEquipmentSkl
+	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl prEquipmentSkl prUmbraliumMight
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -29,5 +29,9 @@ prItemPassiveSkl:
 
 prEquipmentSkl:
 	rEquipmentBonus(STAT_SKILL)
+
+prUmbraliumMight:
+	rIfUnitHasSkill(UmbraliumMightID)
+		rAddConst(5)
 
 #endif // MODULAR_GETTER_SKILL_EVENT

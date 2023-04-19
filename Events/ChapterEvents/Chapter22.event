@@ -133,7 +133,7 @@ ENDA
 VillageA:
 SetBackground(House1)
 Text(VillageAText22)
-CALL $9EE2C4
+EraseBackground
 GiveItem(KnightProof,0xFFFF)
 NoFade
 ENDA
@@ -141,7 +141,7 @@ ENDA
 VillageB:
 SetBackground(House2)
 Text(VillageBText22)
-CALL $9EE2C4
+EraseBackground
 GiveItem(LightRune,0xFFFF)
 NoFade
 ENDA
@@ -149,7 +149,7 @@ ENDA
 VillageC:
 SetBackground(House1)
 Text(VillageCText22)
-CALL $9EE2C4
+EraseBackground
 GiveItem(Barrier,0xFFFF)
 NoFade
 ENDA
@@ -171,7 +171,7 @@ SVAL s1 0x1
 BEQ 0xAE s1 sC
     Text(LockeNoText) // refuse to recruit
 	UnsetFlag(11)
-	CALL $9EE2C4
+	EraseBackground
 	GOTO 0xE
 
 LABEL 0xAE // recruit unit
@@ -195,11 +195,8 @@ NoFade
 ENDA
 
 TrajanArrive:
-CamOn
-LOAD1 1 TrajanSpawn
-ENUN
+SpawnReinforcements(TrajanSpawn)
 Text(TrajanArriveText)
-CamOff
 NoFade
 ENDA
 
@@ -382,10 +379,8 @@ UNIT Locke ThiefFighter 0x0 Level(3,Ally,False) [2,22] 0x0 0x0 0x1 REDA2R23 [Arm
 UNIT
 
 ThiefAppear:
-CamOn
-LOAD1 1 ThiefSpawn
-ENUN
-CamOff
+SpawnReinforcements(ThiefSpawn)
+NoFade
 ENDA
 
 Reinforcements_A:
@@ -395,10 +390,8 @@ UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [22,0] 0x0 0x0 0x1 REDA22R0 
 UNIT 
 
 Reinforcements_Spawn_A:
-CamOn
-LOAD1 1 Reinforcements_A
-ENUN
-CamOff
+SpawnReinforcements(Reinforcements_A)
+NoFade
 ENDA
 
 ThiefSpawn:

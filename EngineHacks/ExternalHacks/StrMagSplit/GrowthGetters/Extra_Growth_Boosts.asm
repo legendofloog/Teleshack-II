@@ -6,6 +6,8 @@
 .equ BlossomID, SkillTester+4
 .equ AptitudeID, BlossomID+4
 .equ GetEquipmentStatBonus, AptitudeID+4
+.equ UmbraliumMightID, GetEquipmentStatBonus+4
+
 @r0=battle struct or char data ptr, r1 = growth so far (from char data), r2=index in stat booster pointer of growth
 
 push	{r4-r7,r14}
@@ -70,10 +72,31 @@ ldr		r2,SkillTester
 mov		r14,r2
 .short	0xF800
 cmp		r0,#1
-bne		EquipmentEffect
+bne		UmbraliumMightCheck
 
 AptitudeEffect:
 add		r5,#20 @growth +20%
+
+UmbraliumMightCheck:
+mov 		r0, r4
+ldr		r1, UmbraliumMightID
+ldr		r2, SkillTester
+mov		r14, r2
+.short	0xF800
+cmp		r0,#1
+bne EquipmentEffect
+
+UmbraliumMightEffect:
+ldr		r0, ChapterFogRadius @ fow vision
+ldrb		r0, [r0]	@ gets current fog vision
+cmp 		r0, #0x0
+beq 		EquipmentEffect	@if no fog, do nothing
+
+mov		r1, #0x7
+sub		r1, r0
+mov		r0, #0x5	
+mul		r0, r1	@subtracts 7 by fog vision, maximum of 4; then multiplies it by 5 and adds it to growths
+add		r5, r0
 
 EquipmentEffect:
 mov r0, r4
@@ -102,5 +125,10 @@ bx		r2
 .align
 Check_Event_ID:
 .long 0x08083DA8
+
+.align
+ChapterFogRadius:
+.long 0x0202BCFD
+
 Growth_Options:
 @

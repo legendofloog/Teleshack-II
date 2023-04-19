@@ -46,9 +46,9 @@ ST_Level:
 ST_Exp:
   RMenu(ST_Class,ST_HP,ST_Level,ST_Res,0x26,0x78,0x543)
 ST_HP:
-  RMenu(ST_Level,0,0,ST_Mov,0x6,0x88,0x544)
+  RMenu(ST_Level,0,0,ST_Bld,0x6,0x88,0x544)
 ST_Str:
-  RMenu(PersonalDataRText,ST_Mag,ST_Name,ST_Bld,0x66,0x18,0x546)
+  RMenu(PersonalDataRText,ST_Mag,ST_Name,ST_Mov,0x66,0x18,0x546)
 ST_Mag:
   RMenu(ST_Str,ST_Skl,ST_Name,ST_Cond,0x66,0x28,0x547)
 ST_Skl:
@@ -60,19 +60,19 @@ ST_Luck:
 ST_Def:
   RMenu(ST_Luck,ST_Res,ST_Class,ST_PursuitCritical,0x66,0x68,0x54b)
 ST_Res:
-  RMenu(ST_Def,ST_Mov,ST_Exp,ST_Skill1,0x66,0x78,0x54c)
-ST_Mov:
-  RMenu(ST_Res,ST_Bld,ST_Exp,ST_Skill1,0x66,0x88,0x54d)
+  RMenu(ST_Def,ST_Bld,ST_Exp,ST_Skill1,0x66,0x78,0x54c)
+ST_Bld:
+  RMenu(ST_Res,ST_Mov,ST_Exp,ST_Skill1,0x66,0x88,0x54e)
 POP
 
 //the rest of these are here because space
 ALIGN 4
 /*#define RMenu(up,down,left,right,xcoord,ycoord,TID) "POIN up down left right;BYTE xcoord ycoord; SHORT TID; WORD 0 0;"
 #define RMenu(up,down,left,right,xcoord,ycoord,TID,Getter) "POIN up down left right; BYTE xcoord ycoord; SHORT TID; POIN 0 Getter|1"*/
-ST_Bld:
-  RMenu(PersonalDataRText,ST_Cond,ST_Str,0,0xA6,0x18,0x54e)
+ST_Mov:
+  RMenu(PersonalDataRText,ST_Cond,ST_Str,0,0xA6,0x18,0x54d)
 ST_Cond:
-  RMenu(ST_Bld,ST_Talk,ST_Mag,0,0xa6,0x28,0x552,ConditionGetter)
+  RMenu(ST_Mov,ST_Talk,ST_Mag,0,0xa6,0x28,0x552,ConditionGetter)
 ST_Talk:
   RMenu(ST_Cond,ST_Lead,ST_Skl,0,0xA6,0x38,SS_TalkRText)
 ST_Lead:

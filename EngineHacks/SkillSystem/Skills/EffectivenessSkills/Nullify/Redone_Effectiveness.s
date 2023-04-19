@@ -4,13 +4,42 @@
 
 .equ NullifyID, SkillTester+4
 .equ FlightID, NullifyID+4
+.equ Burn, FlightID+4
 
 push	{r4-r7,r14}
-mov		r4,r0 @attacker item id
+mov		r4,r0 @attacker item!!! (not id, whoever said that is a liar)
 mov		r5,r1 @defender battle struct
 ldr		r0,[r5,#0x4]
 cmp		r0,#0
 beq		RetFalse
+
+ldr		r1, Burn
+mov		r0, r4
+lsl		r0, #0x18		@ shifts durability bytes out
+lsr		r0, #0x18
+cmp		r0, r1			@ is the item id Burn?
+bne		NotBurn			@ if the answer is false, branch
+
+mov		r1, #0x56
+ldrb 		r0, [r5, r1]			@ loads terrain defense of opponent
+mov 		r1, #0x0
+cmp 		r1, r0
+bge		MightNotBeBurn			@ if 0 < Terrain Defense, you are on Terrain
+
+mov 		r0, #0x6				@ 3x effeciveness x 2
+b		GoBack
+
+MightNotBeBurn:
+mov 		r1, #0x57
+ldrb		r0, [r5, r1]
+mov 		r1, #0x0
+cmp		r1, r0
+bge		NotBurn				@ if no terrain defense or avoid, does not burn
+
+mov 		r0, #0x6				@ 3x effeciveness x 2
+b		GoBack
+
+NotBurn:
 mov		r0,r4
 ldr		r3,=0x80176D0		@get effectiveness pointer
 mov		r14,r3

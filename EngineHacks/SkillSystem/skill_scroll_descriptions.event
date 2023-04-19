@@ -15,3 +15,6 @@ ORG 2*0xFF+SkillScrollDescTable
 
 SkillScrollName(AzuriumMightID,SSN_AzuriumMight)
 SkillScrollDescription(AzuriumMightID,SSD_AzuriumMight)
+
+SkillScrollName(UmbraliumMightID,SSN_UmbraliumMight)
+SkillScrollDescription(UmbraliumMightID,SSD_UmbraliumMight)

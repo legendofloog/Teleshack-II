@@ -2,22 +2,6 @@
 
 #include "BattleExp.h"
 
-#define CA_NO_EXP CA_NEGATE_LETHALITY // idk why its labelled wrong
-
-int GetBattleUnitExpGain(BattleUnit* actor, BattleUnit* target);
-bool CanBattleUnitGainLevels(BattleUnit* battleUnit);
-bool CanBattleUnitGainExp(BattleUnit* actor, BattleUnit* target);
-int GetUnitEffectiveLevel(Unit* unit);
-int GetLevelDifference(BattleUnit* actor, BattleUnit* target);
-int GetBattleUnitStaffExp(BattleUnit* actor);
-const ItemData* GetItemData(int itemId);
-extern u8 MountedInPrepsTable[];
-int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit);
-void ApplyUnitPromotion(struct Unit* unit, u8 classId);
-void ApplyUnitDefaultPromotion(struct Unit* unit);
-bool CheckIfDismountLocationLegal(Unit* unit);
-void BWL_AddExpGained(int charID, int expGain);
-#define USABILITY_TRUE 1
 /*
 SET_FUNC BattleApplyExpGains, 0x802B92D
 ^ Exp calc loop hooks here
@@ -270,7 +254,7 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 			isMountPromoAllowed = true;
 		}
 	}
-	
+	const ClassData* currentClass = unit->pClassData;
 	const struct ClassData* promotedClass = 0;
 	if (classId == 0x3){ // master knight; need special cases for dismounted units who become mounted 
 		if (!isMountPromoAllowed){ //does preps not allow mounting
@@ -310,39 +294,36 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 
     // Apply stat ups
 
-    unit->maxHP += promotedClass->promotionHp;
+	
 
-    if (unit->maxHP > promotedClass->maxHP)
-        unit->maxHP = promotedClass->maxHP;
-
-    unit->pow += promotedClass->promotionPow;
+	unit->pow += (promotedClass->basePow - currentClass->basePow);
 
     if (unit->pow > promotedClass->maxPow){
 		unit->pow = promotedClass->maxPow;
 	}
 
-	unit->mag += MagClassTable[promotedClass->number].promotionMag;
+	unit->mag += (MagClassTable[promotedClass->number].promotionMag - MagClassTable[currentClass->number].promotionMag);
 
 	if (unit->mag > MagClassTable[promotedClass->number].maxMag){
 		unit->mag = MagClassTable[promotedClass->number].maxMag;
 	}
 	
-    unit->skl += promotedClass->promotionSkl;
+    unit->skl += (promotedClass->baseSkl - currentClass->baseSkl);
 
     if (unit->skl > promotedClass->maxSkl)
         unit->skl = promotedClass->maxSkl;
 
-    unit->spd += promotedClass->promotionSpd;
+    unit->spd += (promotedClass->baseSpd - currentClass->baseSpd);
 
     if (unit->spd > promotedClass->maxSpd)
         unit->spd = promotedClass->maxSpd;
 
-    unit->def += promotedClass->promotionDef;
+    unit->def += (promotedClass->baseDef - currentClass->baseDef);
 
     if (unit->def > promotedClass->maxDef)
         unit->def = promotedClass->maxDef;
 
-    unit->res += promotedClass->promotionRes;
+    unit->res += (promotedClass->baseRes - currentClass->baseRes);
 
     if (unit->res > promotedClass->maxRes)
         unit->res = promotedClass->maxRes;
@@ -375,3 +356,75 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
         unit->curHP = GetUnitMaxHp(unit);
 }
 
+void BattleApplyMiscActionExpGains(void) {
+    if (UNIT_FACTION(&gBattleActor.unit) != FACTION_BLUE){
+		return;
+	}  
+    if (!CanBattleUnitGainLevels(&gBattleActor)){
+		return;
+	}    
+    if (gChapterData.chapterStateBits & CHAPTER_FLAG_7){
+		return;
+	}
+	if (gBattleActor.unit.fatigue > gBattleActor.unit.maxHP){
+		return;
+	}
+    gBattleActor.expGain = 10;
+    gBattleActor.unit.exp += 10;
+
+    CheckBattleUnitLevelUp(&gBattleActor);
+}
+
+int GetWeaponLevelFromExp(int wexp) {
+    if (wexp < WPN_EXP_E)
+        return WPN_LEVEL_0;
+
+    if (wexp < WPN_EXP_D)
+        return WPN_LEVEL_E;
+
+    if (wexp < WPN_EXP_C)
+        return WPN_LEVEL_D;
+
+    if (wexp < WPN_EXP_B)
+        return WPN_LEVEL_C;
+
+    if (wexp < WPN_EXP_A)
+        return WPN_LEVEL_B;
+
+    if (wexp < WPN_EXP_S)
+        return WPN_LEVEL_A;
+
+    return WPN_LEVEL_S;
+}
+
+void GetWeaponExpProgressState(int wrank, int* valOut, int* maxOut) {
+    int currentRank = GetWeaponLevelFromExp(wrank);
+	if (currentRank == WPN_LEVEL_0){
+		*valOut = 0;
+        *maxOut = 0;
+	}
+	else if(currentRank == WPN_LEVEL_E){
+		*valOut = wrank      - WPN_EXP_E;
+        *maxOut   = WPN_EXP_D - WPN_EXP_E;
+	}
+	else if(currentRank == WPN_LEVEL_D){
+		*valOut = wrank      - WPN_EXP_D;
+        *maxOut   = WPN_EXP_C - WPN_EXP_D;		
+	}
+	else if(currentRank == WPN_LEVEL_C){
+		*valOut = wrank      - WPN_EXP_C;
+        *maxOut   = WPN_EXP_B - WPN_EXP_C;
+	}
+	else if(currentRank == WPN_LEVEL_B){
+		*valOut = wrank      - WPN_EXP_B;
+        *maxOut   = WPN_EXP_A - WPN_EXP_B;
+	}
+	else if(currentRank == WPN_LEVEL_A){
+		*valOut = 0;
+        *maxOut   = 0;
+	}
+	else{
+
+	}
+	return;
+}

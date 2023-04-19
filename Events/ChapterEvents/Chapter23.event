@@ -38,18 +38,12 @@ NoFade
 ENDA
 
 Reinforcement1:
-CamOn
-LOAD1 1 PegasusWave1
-ENUN
-CamOff
+SpawnReinforcements(PegasusWave1)
 NoFade
 ENDA
 
 Reinforcement2:
-CamOn
-LOAD1 1 PegasusWave1
-ENUN
-CamOff
+SpawnReinforcements(PegasusWave1)
 NoFade
 ENDA
 

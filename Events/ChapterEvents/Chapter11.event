@@ -173,10 +173,7 @@ GotoPrepScreen
 ENDA
 	
 Turn2Reinforcements:
-CamOn
-LOAD1 1 Turn2Thief
-ENUN
-CamOff
+SpawnReinforcements(Turn2Thief)
 NoFade
 ENDA
 	

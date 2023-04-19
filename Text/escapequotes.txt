@@ -2,64 +2,180 @@
 //hopefully: lord specific escape quotes for 1, 3, 9, 14, 16 along with last one out variants
 
 ## LoeweChapter1EscapeQuoteText
-[MidRight][LoadLoewe]
-Wish I could stay to wipe out the rest[N]
-of them, but the mission comes first.[A][X]
+[MidRight][LoadLoewe][ThreeLineBox]
+The warden got his dues[Beat][N]
+A fitting fate for a blowhard.[N]
+I'll clear a path to Dragana![A][X]
+
+## LoeweChapter1FinalEscapeQuoteText
+[MidRight][LoadLoewe][ThreeLineBox]
+The warden got his dues[Beat][N]
+But we can't wait any longer here.[N]
+Gotta hurry[Beat] We have to save her![A][X]
 
 ## LoeweChapter3EscapeQuoteText
 [MidRight][LoadLoewe]
 Phew, we're almost out of these accursed[N]
+jails. The rest of you better keep up![A][X]
+
+## LoeweChapter3FinalEscapeQuoteText
+[MidRight][LoadLoewe][ThreeLineBox]
+Dragana and Cleo made it out?[N]
+I'd better not fall behind, then.[N][.5][ToggleSmile]
+See you later, Selesian dogs![A][X]
+
+## LoeweChapter9EscapeQuoteText
+[MidRight][LoadLoewe]
+Phew, we're almost out of these accursed[N]
 jails.[.4] The rest of you better keep up![A][X]
 
-## CleoEscapeQuoteText
+## LoeweChapter14EscapeQuoteText
+[MidRight][LoadLoewe]
+Phew, we're almost out of these accursed[N]
+jails.[.4] The rest of you better keep up![A][X]
+
+## LoeweChapter16EscapeQuoteText
+[MidRight][LoadLoewe]
+Phew, we're almost out of these accursed[N]
+jails.[.4] The rest of you better keep up![A][X]
+
+## CleoChapter1EscapeQuoteText
+[MidRight][LoadCleo][ThreeLineBox]
+It seems I'm not the last one out[Beat][N]
+Everyone, please hurry if you can![N]
+The general is counting on us![A][X]
+
+## CleoChapter1FinalEscapeQuoteText
+[MidRight][LoadCleo][ThreeLineBox]
+Alright, we've held off long enough.[N]
+I can only hope my leadership was[N]
+enough until General Dragana's return[Beat][A][X]
+
+## CleoChapter3EscapeQuoteText
+[MidRight][LoadCleo]
+Our mission is almost a success[Beat][N]
+Just a little longer, everyone![A][X]
+
+## CleoChapter3FinalEscapeQuoteText
+[MidRight][LoadCleo][ThreeLineBox]
+Loewe and Dragana already escaped,[N]
+so I'll bring up the rearguard.[N][.5][ToggleSmile]
+Thank Byelen, I didn't fail her[Beat][A][X]
+
+## CleoChapter9EscapeQuoteText
 [MidRight][LoadCleo]
 Finally, our path of escape is[N]
 clear. Follow my lead, everyone![A][X]
+
+## CleoChapter14EscapeQuoteText
+[MidRight][LoadCleo]
+Finally, our path of escape is[N]
+clear. Follow my lead, everyone![A][X]
+
+## CleoChapter16EscapeQuoteText
+[MidRight][LoadCleo]
+Finally, our path of escape is[N]
+clear. Follow my lead, everyone![A][X]
+
+## MiraChapter1EscapeQuoteText
+[MidRight][LoadMira][ThreeLineBox]
+I hoped I'd never have to return[Beat][N]
+But to free Kasun, I'll do anything.[N]
+Follow me, everyone. I know the way.[A][X]
+
+## MiraChapter3EscapeQuoteText
+[MidRight][LoadMira]
+I'll scout ahead for any Selesians.[N]
+We can't relax until we're home free![A][X]
 
 ## MiraEscapeQuoteText
 [MidRight][LoadMira]
 The others aren't out yet? They should[N]
 hurry, or our enemies may overcome us.[A][X]
 
+## IskraChapter1EscapeQuoteText
+[MidRight][LoadIskra][ThreeLineBox]
+So this is what Mom and Loewe faced,[N]
+fighting for the rebellion[Beat][N]
+I have to do my part, too![A][X]
+
+## IskraChapter3EscapeQuoteText
+[MidRight][LoadIskra]
+We're almost out of here, aren't we?[N]
+Heh, the Selesians never saw it coming![A][X]
+
 ## IskraEscapeQuoteText
 [MidRight][LoadIskra]
 Looks like I've got an opening.[N]
 I'm going on ahead, Loewe![A][X]
+
+## EmilChapter1EscapeQuoteText
+[MidRight][LoadEmil][ThreeLineBox]
+Heck, I wasn't expecting battles like[N]
+these when I joined the captain's unit.[N]
+If only I had my horse right now![A][X]
+
+## EmilChapter3EscapeQuoteText
+[MidRight][LoadEmil]
+I can almost see the daylight, guys![N]
+You all better be right behind me![A][X]
 
 ## EmilEscapeQuoteText
 [MidRight][LoadEmil]
 Phew, I kept my head after all.[N]
 Better hurry up now while I can![A][X]
 
+## SvetomirChapter1EscapeQuoteText
+[MidRight][LoadSvetomir][ThreeLineBox]
+Urgh[Beat] I guess I'd better get used[N]
+to running again, now that I'm a rebel.[N]
+If anyone's in danger, call my name![A][X]
+
+## SvetomirChapter3EscapeQuoteText
+[MidRight][LoadSvetomir]
+It seems a path has cleared for me.[N]
+Allow me to join the vanguard![A][X]
+
 ## SvetomirEscapeQuoteText
 [MidRight][LoadSvetomir]
 I escaped? Excellent! Watch out,[N]
 Cytheans, for Svetomir approaches![A][X]
+
+## AlenaChapter1EscapeQuoteText
+[MidRight][LoadAlena][ThreeLineBox]
+We're breaking out some general, right?[N]
+Fine by me, but we should make it quick[N]
+if we want to live. Don't fall behind![A][X]
+
+## AlenaChapter3EscapeQuoteText
+[MidRight][LoadAlena]
+The job's not done yet, not until[N]
+we see the surface. Keep running![A][X]
 
 ## AlenaEscapeQuoteText
 [MidRight][LoadAlena]
 Sorry, but I'm leaving first.[N]
 No sense in me staying behind.[A][X]
 
+## VargaChapter3EscapeQuoteText
+[MidRight][LoadVarga]
+I'll form the frontline.[N]
+Stay behind me to survive.[A][X]
+
 ## VargaEscapeQuoteText
 [MidRight][LoadVarga]
 [Beat]I can't stop here.[A][X]
+
+## DelilahChapter3EscapeQuoteText
+[MidRight][LoadDelilah][ThreeLineBox]
+Not too much further to run, I hope.[N]
+I never should've been here[Beat][N]
+Svetomir, I won't forgive you![A][X]
 
 ## DelilahEscapeQuoteText
 [MidRight][LoadDelilah]
 Ugh, all this running[Beat][N]
 Why did I ever join these guys?[A][X]
-
-## DraganaEscapeQuoteText
-[MidRight][LoadDragana]
-Alright, I'm going on ahead first.[N]
-Cleo, Loewe, I'll leave the rest to you![AN][X]
-
-## DraganaFinalEscapeQuoteText
-[MidRight][LoadDragana][ToggleSmile][ThreeLineBox]
-Heh[Beat] Honestly, I wasn't sure if we[N]
-could pull it off, but you two delivered.[.4][N]
-Let's have a feast back home to celebrate![AN][X]
 
 ## AlexEscapeQuoteText
 [MidRight][LoadAlex]
@@ -72,7 +188,7 @@ side, best get going.[A][X]
 
 ## AlexEscapeQuoteTextCh14
 [MidRight][LoadAlex]
-hope they don't follow[N]
+Hope they don't follow[N]
 us, no time to lose.[A][X]
 
 ## AlexEscapeQuoteTextCh16
@@ -290,4 +406,18 @@ Fly, my friends. We must go![A][X]
 There are still many mysteries[N]
 for me to solve[Beat][A][X]
 
+## DraganaEscapeQuoteText
+[MidRight][LoadDragana]
+Alright, I'm going on ahead first.[N]
+Cleo, Loewe, I'll leave the rest to you![AN][X]
 
+## DraganaFinalEscapeQuoteText
+[MidRight][LoadDragana][ToggleSmile][ThreeLineBox]
+Heh[Beat] Honestly, I wasn't sure if we[N]
+could pull it off, but you two delivered.[.4][N]
+Let's have a feast back home to celebrate![AN][X]
+
+## AugurFinalEscapeQuoteText
+[MidRight][LoadAugur]
+I foresee a path to safety.[N]
+Let us make it a reality[Beat][A][X]

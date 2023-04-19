@@ -1,7 +1,6 @@
 #include "Fatigue/Fatigue.event"
 #include "FE8U-Fancy-Items-main/_MasterHackInstaller.event"
 
-#include "TeleshackII/TeleshackII_Installer.event"
 #include "Music/MusicAsmInstaller.event"
 #include "Fixes/MasterFixesInstaller.event"
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
@@ -76,6 +75,8 @@
 
 #include "StaffBGM/Installer.event"
 
+#include "TeleshackII/TeleshackII_Installer.event"
+
 //#include "ScriptedBattleNumbers/ScriptedBattles.event"
 
 // thief vision set to 0
@@ -142,7 +143,7 @@ POP
 //devil axe backfire to 21 - luck
 PUSH
 ORG $2B6A4
-BYTE 21
+BYTE 26
 POP
 
 // removes drop flag from enemies opening chests
@@ -172,7 +173,7 @@ POP
 // sets all units after this to use class growths
 PUSH
 ORG $17C4C
-BYTE 0x4A //0x48 being last player unit
+BYTE 0x4A //0x49 being last player unit
 POP
 
 //weather graphics priority stuff, locations from zane
@@ -222,26 +223,6 @@ ORG $B7A86
 BYTE 0x7F
 POP
 
-//stolen from tmgc
-//turn counts (seems to fill it with garbage?)
-/*
-PUSH
-ORG 0xb7a86
-BYTE 0x7f
-ORG 0xa4168
-BYTE 0x02
-ORG 0xa42d6
-BYTE 0x02
-ORG 0xa4318
-BYTE 0x02
-ORG 0xa429c
-BYTE 0x40
-ORG 0xa43ac
-BYTE 0x01 0x4B 0x18 0x68 0x70 0x47 0x00 0x00 0xF0 0xBC 0x02 0x02
-ORG 0x0A43A0
-BYTE 0x00 0x00
-POP
-*/
 
 // remove extra menu stuff
 PUSH

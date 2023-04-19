@@ -1,8 +1,8 @@
+
     #include "CustomDefinitions.event"
     ORG FreeSpace
     #include "Tables/Repointed/_MasterRepointer.event"
     
-
     #define ClassTable NewClassTable
     #include "EAstdlib.event"
     

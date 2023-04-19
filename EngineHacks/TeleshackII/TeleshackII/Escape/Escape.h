@@ -36,6 +36,7 @@ int EscapeCommandEffect(MenuProc* procState);
 bool CheckEventId(int eventId);
 void UnsetEventId(int eventId);
 void SetEventId(int eventId);
+unsigned GetPhaseAbleUnitCount(unsigned faction);
 
 
 

@@ -15,7 +15,7 @@
 
 #include "BattleProcCalcLoop/BattleProcCalcLoop.event"
 
-#include "CanUnitDoubleCalcLoop/CanUnitDoubleCalcLoop.event"
+//#include "CanUnitDoubleCalcLoop/CanUnitDoubleCalcLoop.event"
 
 #include "HPRestorationCalcLoop/HPRestorationCalcLoop.event"
 

@@ -1,0 +1,14 @@
+#include "LuckCapStuff.lyn.event"
+
+//these functions should all use luck getters
+//SET_FUNC DrawPrepScreenItemUseStatBars, 0x809C0B5
+//SET_FUNC DrawPrepScreenItemUseStatValues, 0x809C255
+//changes luck cap to 20
+PUSH
+ORG $926FC
+BYTE 25
+ORG $9C154
+BYTE 25
+ORG $9C31C
+BYTE 25
+POP

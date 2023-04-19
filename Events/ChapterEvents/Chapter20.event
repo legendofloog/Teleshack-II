@@ -25,23 +25,24 @@ END_MAIN
 
 TomAndJerry:
 SpawnReinforcements(Amongitis)
-	CameraCursor(Jerry)
-	CameraCursor(Lyre)
-	STAL 5
-	MUSI
-	Text(Ch20MidBattle)
-	MUNO
+CameraCursor(Jerry)
+CameraCursor(Lyre)
+STAL 5
+MUSI
+Text(Ch20MidBattle)
+MUNO
 NoFade
-	ENDA
+ENDA
 	
 GoodbyeDespair:
-GameOver
+CALL GameOverStart
+NoFade
 ENDA
 	
 CaveGuys:
 SpawnReinforcements(SussySpawns)
 NoFade
-	ENDA
+ENDA
 
 ClearSeraFlag:
 ENUF 0x7C

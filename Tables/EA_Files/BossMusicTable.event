@@ -33,7 +33,6 @@ BossBGMEntry(Cidor, UnfinishedBattleGodSyndrome)
 BossBGMEntry(Aurora, KingOfDragons_IntoTheCastleID)
 // ch 12
 BossBGMEntry(Eitha, Sheep_Will_Sleep)
-BossBGMEntry(Cidor, SorrowsDistortion)
 //ch 12x
 BossBGMEntry(Epony, KingOfDragons_IntoTheCastleID)
 BossBGMEntry(Korovai,UnfinishedBattleGodSyndrome)
@@ -63,8 +62,6 @@ BossBGMEntry(C19Phantom, awaywithyou)
 //ch 21 
 BossBGMEntry(Cephalid, awaywithyou)
 BossBGMEntry(Vinny, awaywithyou)
-BossBGMEntry(Xlea, BattleWithMagus)
-BossBGMEntry(DeathRattle,BattleWithMagus)
 BossBGMEntry(Taraji, SorrowsDistortion)
 //ch 22
 BossBGMEntry(Eleanor,LightGlintID)

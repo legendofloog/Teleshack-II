@@ -140,8 +140,7 @@ NoFade
 ENDA
 
 FrancisReinforcements:
-CamOn
-LoadReinforcements(TeamFrancis)
+SpawnReinforcements(TeamFrancis)
 FlashCursor(Francis,60)
 MUSC FF4RedWingsID
 Text(FrancisArrives)
@@ -182,7 +181,7 @@ BeginningScene:
 	MUSC 0x7FFF
 	SetBackground(CastleHallway)
 	FADU 15
-	MUSC SolveTheRiddle
+	MUSC FFTAnxiety
 	Text(HegeAndCidor)
 	FADI 15
 	ENUN

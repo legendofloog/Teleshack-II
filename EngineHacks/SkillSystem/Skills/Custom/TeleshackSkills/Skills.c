@@ -12,8 +12,9 @@ void BurnPreBattleEffect(BattleUnit* unit1, BattleUnit* unit2){
 	if (unit2->unit.pClassData == 0){ //is the defender existent
 		return;
 	}
-    u16 weapon = unit1->weaponBefore & 0xFF;
-	if (weapon == 0xc0 && (unit2->terrainDefense > 0)){
-		unit1->battleAttack += 12; //add burn tome * 2
+	if (unit1->weaponBefore.number == 0xc0 ){ //if unit is using burn
+		if (unit2->terrainDefense > 0 || unit2->terrainAvoid > 0){ //if enemy has terrain avoid or def
+			unit1->battleHitRate += unit2->terrainAvoid; //nullifies enemy avo from terrain
+		}
 	}
 }

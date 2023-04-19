@@ -36,6 +36,14 @@ mov	lr, r3
 cmp	r0, #0x00
 beq	End
 
+@check for not fatigued
+mov	r0, #0x12
+ldrb	r0, [r4, r0]	@ loads max hp
+mov	r1, #0x3B
+ldrb	r1, [r4, r1]	@ loads fatigue
+cmp	r1, r0
+bgt	End		@ if fatigue > max hp, doesn't work
+
 @set galeforce bit (super lazy powerstaff copypaste)
 @ldr r0, [r4,#0x0C]  @status bitfield
 @mov r1, #0x04
@@ -54,7 +62,7 @@ beq	End
 
 @successful roll, give item/money
 Event:
-ldr	r0,=#0x800D07C		@event engine thingy
+ldr	r0,=0x800D07C		@event engine thingy
 mov	lr, r0
 ldr	r0, BladeDanceEvent	@this event is just "give gem"
 mov	r1, #0x01		@0x01 = wait for events

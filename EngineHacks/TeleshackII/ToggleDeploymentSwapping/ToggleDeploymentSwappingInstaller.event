@@ -64,6 +64,11 @@ ForcedDeployment(Ichwep,LockedPosition,AllModes,Chapter11)
 ForcedDeployment(Milo,LockedPosition,AllModes,Chapter11)
 ForcedDeployment(Cleo,UnlockedPosition,AllModes,AllChapters)
 ForcedDeployment(Loewe,UnlockedPosition,AllModes,AllChapters)
+ForcedDeployment(Zwieback,UnlockedPosition,AllModes,Chapter4)
+ForcedDeployment(Filone,UnlockedPosition,AllModes,Chapter4)
+ForcedDeployment(Longxia,UnlockedPosition,AllModes,Chapter5)
+ForcedDeployment(Fangai,UnlockedPosition,AllModes,Chapter5)
+ForcedDeployment(Leina,UnlockedPosition,AllModes,Chapter6)
 EndForcedDeploymentList
 
 DeploymentGroupChapterList:

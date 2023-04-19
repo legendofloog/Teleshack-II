@@ -72,6 +72,7 @@
 	POIN SkillTester
 	WORD NullifyID
 	WORD FlightID
+	WORD Burn
 
 	ALIGN 4
 	Redone_Redone_Slayer:

@@ -164,6 +164,7 @@ BYTE EndLockArray
 ImpalerArray:
 BYTE HardCharLock
 BYTE BoroReal
+BYTE Boro_Ch1
 BYTE EndLockArray
 
 BarodArray:

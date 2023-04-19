@@ -149,7 +149,7 @@ LOAD1 1 EnemyUnits
 LOAD1 1 GreenUnits
 ENUN
 FADU 15
-MUSCFAST 0x1b
+MUSCFAST BattleWithThimale
 CAMERA Korovai
 CURSOR Korovai
 STAL 60
@@ -185,7 +185,7 @@ STAL 60
 REMOVE_CURSORS
 Text(WellworthMifanText)
 MOVE 15 Mifan [14, 3]
-MUSCFAST 0x1A
+MUSCFAST FFTAnxiety
 CAMERA Iberis
 CURSOR Iberis
 STAL 60
@@ -301,7 +301,9 @@ SHORT 0
 SHORT 0
 
 YouSuck:
-GameOver
+CALL GameOverStart
+NoFade
+ENDA
 
 ALIGN 4
 EndingScene:
@@ -327,7 +329,7 @@ Text(Rice3Ch7Text)
 GiveItem(RedGem,Cleo)
 GiveItem(BlueGem,Cleo)
 LABEL 3
-MUSCFAST 0x47
+MUSCFAST WindyDaySoundEffect
 SetBackground(CastleRoom)
 Text(EndEvent1Text)
 CHECK_ALIVE Buldak //had no conditional, so i added it - loog

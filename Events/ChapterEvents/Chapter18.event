@@ -42,8 +42,10 @@ NoFade
 ENDA
 
 ReinforcementsRigganEvent:
-CHECK_EVENTID 0x7b
-BEQ 1 0 0xC
+CHECK_EVENTID 0xA0 //if captured branch
+BNE 1 s0 sC
+CHECK_EVENTID 0x7b //if dead, branch
+BEQ 1 s0 sC
 SpawnReinforcements(ReinforcementUnitsRiggan)
 FlashCursor(Riggan,60)
 Text(Ch18RigganEvent)
@@ -82,6 +84,7 @@ ArenaWave4Event:
 SpawnReinforcements(ArenaUnits4)
 CAM1 [9,0]
 Text(Ch18ArenaIntro4)
+ENUT 4
 NoFade
 ENDA
 
@@ -145,15 +148,15 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [15,20] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 SpectatorUnits:
-UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [2,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [3,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [3,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,NPC,False) [2,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,NPC,False) [3,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 
-UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [16,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [17,4] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,Enemy,False) [17,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
-UNIT ArenaSpectator 0x0 0x0 Level(1,Enemy,False) [16,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,NPC,False) [16,3] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,NPC,False) [17,4] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator Civilian_F_2 0x0 Level(1,NPC,False) [17,8] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
+UNIT ArenaSpectator 0x0 0x0 Level(1,NPC,False) [16,9] 0x0 0x0 0x0 0x1 [CivilianProof] BossNoAttackAI
 UNIT
 
 EnemyUnits:
@@ -323,7 +326,7 @@ BeginningScene:
 	LOAD1 0x1 SpectatorUnits
 	LOAD1 0x1 ArenaUnits1
 	ENUN
-	MUSC TiesOfFriendship
+	MUSC FF6EdgarAndSabin
 
 	SetUnitItemDurability(Shafaqat,2,WornScroll)
 
@@ -375,7 +378,7 @@ EndingScene:
 		BEQ 776 s0 sC
 			ENUF 0x7B //if 0x7B was set before but Riggan death quote played, turn off alive flag
 	LABEL 776
-	MUSC TiesOfFriendship
+	MUSC FF6EdgarAndSabin
 	SetBackground(0x9)
 	Text(Ch18EndBarod)
 	FADI 15

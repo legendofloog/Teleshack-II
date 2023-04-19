@@ -13,7 +13,13 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, InterludeExplanation, 1)
 END_MAIN
+
+InterludeExplanation:
+CenterTextbox(InterludeExplanationText)
+NoFade
+ENDA
 
 CharacterBasedEvents:
 CharacterEventBothWays(13, MishRecruit, Cleo, Mish)

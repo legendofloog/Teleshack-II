@@ -8,5 +8,8 @@ SkillScrollIcons:
 ORG SkillScrollIcon(AzuriumMightID)
 #incbin "SkillIcons/Azurium.dmp"
 
+ORG SkillScrollIcon(UmbraliumMightID)
+#incbin "SkillIcons/Umbralium.dmp"
+
 ORG SkillScrollIcons+0x8000
 

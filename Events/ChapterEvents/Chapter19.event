@@ -173,43 +173,28 @@ UNIT C19Enemy Sage C19Phantom Level(5,Enemy,True) [0,25] 0x0 0x0 0x0 0x0 [Bolgan
 UNIT
 
 ThiefReinforcementsEvent:
-CamOn
-LOAD1 1 ThiefReinforcements
-ENUN
-CamOff
+SpawnReinforcements(ThiefReinforcements)
 NoFade
 ENDA
 
 
 EnemyReinforcementsEvent_A:
-CamOn
-LOAD1 1 EnemyReinforcements_A
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_A)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_B:
-CamOn
-LOAD1 1 EnemyReinforcements_B
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_Hurry1:
-CamOn
-LOAD1 1 EnemyReinforcements_Hurry1
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_Hurry1)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_Hurry2:
-CamOn
-LOAD1 1 EnemyReinforcements_Hurry2
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_Hurry2)
 NoFade
 ENDA
 
@@ -244,6 +229,7 @@ BNE 8 s0 sC
 	Text(Kaiser_Fail)
 	CALL GameOverStart
 LABEL 8
+NoFade
 ENDA
 
 BeginningScene:

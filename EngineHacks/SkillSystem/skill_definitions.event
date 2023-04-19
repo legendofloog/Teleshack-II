@@ -16,6 +16,7 @@
 #define CritUpID 12
 #define DesperationID 13
 #define HexID 21
+#define HeartseekerID HexID
 #define EvenRhythmID 22
 #define OddRhythmID 23
 #define DazzleID 40
@@ -82,8 +83,6 @@
 #define DespoilID 35
 #define AzuriumMightID 36
 #define EterniumMightID 37
-#define ZoruniumMightID 38
-#define GenesiumMightID 39
 #define AlacrityID 50
 #define SharpshooterID 51
 #define DesolateID 56
@@ -106,3 +105,4 @@
 #define DragonRageID 95
 #define ApotheosisID 96
 #define FlightID 97
+#define UmbraliumMightID 98

@@ -363,7 +363,9 @@ We don't know what to expect[Beat][A][X]
 
 ## Ch16_Opening_5
 
-[FarLeft][LoadKwame][Left][LoadLoewePunished][Right][LoadCatrin]
+[FarLeft][LoadKwame]
+[Left][LoadLoewePunished]
+[Right][LoadCatrin]
 [Right][ThreeLineBox]
 So, you have come to learn the truth?[N]
 It warms my heart to see you again.[N]
@@ -400,7 +402,10 @@ Boro, lead the way.[A]
 
 ## Ch16_Opening_6 
 
-[FarLeft][LoadCleo][Left][LoadLoewePunished][Right][LoadCatrin][FarRight][LoadBoroScarred]
+[FarLeft][LoadCleo]
+[Left][LoadLoewePunished]
+[Right][LoadCatrin]
+[FarRight][LoadBoroScarred]
 [Right][TwoLineBox]
 This is it[Beat] The Titan's Fang.[N]
 One of the four legendary weapons.[A]
@@ -548,7 +553,8 @@ They call for you, Loewe.[A]
 I am[Beat] the Seed of Byelen?[N]
 The pain I feel without the blade[Beat][N]
 The bells of Byelen ring in my ears?[AN]
-[FarRight][ClearFace][FarRight][LoadCatrin]
+[FarRight][ClearFace]
+[FarRight][LoadCatrin]
 Yes[Beat] what Hamdi says is true.[N]
 I wanted you to live a normal life,[N]
 Loewe[Beat] I am sorry[Beat][AN]

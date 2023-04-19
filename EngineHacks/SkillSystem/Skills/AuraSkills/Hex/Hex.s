@@ -20,7 +20,7 @@ beq End
 
 mov r1, #0x62
 ldrh r0, [ r4, r1 ]
-sub r0, r0, #15
+sub r0, r0, #20
 strh r0, [ r4, r1 ]
 
 End:

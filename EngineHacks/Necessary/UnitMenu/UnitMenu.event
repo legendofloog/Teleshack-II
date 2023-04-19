@@ -124,7 +124,6 @@ UnitMenuTable:
   MenuCommand(0x693,0x6DD,NormalText,NewSummonUsability,0x244B8)
   
   UM_Summon_DK
-  MenuCommand(UM_COPower, UM_COPowerDesc, NormalText, COPowerUsability, COPowerEffect, $22c31, $22c99)
 
 
 #ifndef COMBAT_ARTS

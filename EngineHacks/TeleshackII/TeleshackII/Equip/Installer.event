@@ -182,25 +182,3 @@ Add SHORT 0x46C0; jumpToHack(WriteNewGrowthsToRAMAnimStruct) after "#incbin "Wri
 /*
 Make sure to #define ExpandedLevelUpScreen
 */
-
-/*
-// mokha's fix for level up screen related issues
-
-PUSH
-	ORG 	$7EF18
-	SHORT	$2332	// mov r3,#0x32
-	SHORT	$021B	// lsl r3, #8
-	SHORT	0 0
-	
-	ORG $7F2A0
-	// ldr at $7F1F6
-	// y-Pos start
-	// when put LevelUpScreen on screen
-	WORD $FF80	
-	
-	ORG $7F382
-	// Set y-Pos end (-0x80=0xFF70 in Vanilla)
-	// when put LevelUpScreen off screen
-	SHORT $2080 // mov r0,#0x80
-POP
-*/

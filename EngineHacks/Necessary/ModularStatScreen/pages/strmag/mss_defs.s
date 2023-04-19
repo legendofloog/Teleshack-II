@@ -278,13 +278,14 @@
 
 .macro draw_luck_bar_at, bar_x, bar_y
   mov r0, r8
-  blh      LuckGetter
-  mov r1, r8  
+  blh     LuckGetter   
+  str     r0,[sp]
+  mov 	  r0, r8
+  blh	  GetUnitLuckCap
+  str     r0,[sp,#0x4]  
+  mov     r1, r8  
   mov     r3, #0x19
-  ldsb    r3,[r1,r3]     
-  str     r0,[sp]     
-  mov r0, #0x14  @cap is always 30, changed to 20
-  str     r0,[sp,#0x4]    
+  ldsb    r3,[r1,r3]  
   mov     r0,#0x6   
   mov     r1,#(\bar_x-11)
   mov     r2,#(\bar_y-2)

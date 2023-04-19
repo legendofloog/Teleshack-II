@@ -59,8 +59,8 @@ void New_WriteGrowthsToBattleStruct(BattleUnit* battleUnit){
 		if (levelingUnit->res < battleUnit->unit.pClassData->maxRes){
 			battleUnit->changeRes = GetStatIncrease(gGetResGrowth(&battleUnit->unit));
 		}
-
-		if (levelingUnit->lck < 20){
+		
+		if (levelingUnit->lck < GetUnitLuckCap(levelingUnit)){
 			battleUnit->changeLck = GetStatIncrease(gGetLukGrowth(&battleUnit->unit));
 		}
 
@@ -126,7 +126,7 @@ void New_WriteGrowthsToBattleStruct(BattleUnit* battleUnit){
 					}
 				}
 				
-				if (levelingUnit->lck < 20){
+				if (levelingUnit->lck < GetUnitLuckCap(levelingUnit)){
 					battleUnit->changeLck = GetStatIncrease(gGetLukGrowth(&battleUnit->unit));
 					if (battleUnit->changeLck){
 						break;

@@ -667,7 +667,7 @@ Dawn Pendant[X]
 Impaler[X]
 
 ## ImpalerDesc
-[LockIcon]Boro. Negates Def. A Chouwoujian lance.[X]
+[LockIcon]Boro. Negates Def.[X]
 
 ## AngelicRobeDesc
 Increases HP by 3 points.[NL]
@@ -810,4 +810,18 @@ Raises magic.[X]
 Hide Shield[X]
 
 ## LeatherShieldDesc
+Defensive accessory.[N]
 Made from tanned leather. Def +2.[X]
+
+## HealDesc
+Heals an ally for (Mag + 10) HP.[X]
+
+## MendDesc
+Heals an ally for (Mag + 15) HP.[X]
+
+## PhysicDesc
+Heals a distant ally for (Mag + 10) HP.[X]
+
+## FortifyDesc
+Heals all allies in range[N]
+for (Mag + 15) HP.[X]

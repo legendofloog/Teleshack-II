@@ -70,9 +70,9 @@ int EscapeCommandEffect(MenuProc* proc){
     PlayEscapeQuote();
     EscapeState |= ES_ESCAPE;
     gActionData.unitActionType = UNIT_ACTION_WAIT;
-    gActiveUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
+    gActiveUnit->state |= (US_HIDDEN);
     if (gActiveUnit->rescueOtherUnit != 0){
-        GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN | US_UNSELECTABLE);
+        GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN);
     }
     return 0x94;
 
@@ -105,9 +105,9 @@ void EscapeEventYes(){
     PlayFinalEscapeQuote();
     EscapeState |= ES_ESCAPE;
     gActionData.unitActionType = UNIT_ACTION_WAIT;
-    gActiveUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
+    gActiveUnit->state |= (US_HIDDEN);
     if (gActiveUnit->rescueOtherUnit != 0){
-        GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN | US_UNSELECTABLE);
+        GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN);
     }
     SeizeCommandEffect();
     return;
@@ -134,7 +134,7 @@ void ReturnFinalEscapeQuote(){
 void FinalEscapeThing(Unit* someUnit){
     if (EscapeState & ES_ESCAPE){
         EscapeState ^= ES_ESCAPE;
-        someUnit->state |= (US_HIDDEN | US_UNSELECTABLE);
+        someUnit->state |= (US_HIDDEN);
     }
     return;
 }
@@ -271,4 +271,31 @@ void InterludeReturnRoutine(){
             }
         }
     }
+}
+
+unsigned GetPhaseAbleUnitCount(unsigned faction) {
+    int count = 0;
+    int id;
+    for (id = faction + 1; id < faction + 0x40; id++) {
+        struct Unit *unit = GetUnit(id);
+        if (UNIT_IS_VALID(unit)) {
+            u32 state = unit->state;
+            u32 notAble = (US_HIDDEN | US_UNSELECTABLE | US_DEAD | US_NOT_DEPLOYED | US_RESCUED | US_UNDER_A_ROOF | US_REMOVED);
+            if (!(state & notAble)) {
+                if (unit->statusIndex != UNIT_STATUS_SLEEP
+                    && unit->statusIndex != UNIT_STATUS_BERSERK)
+                {
+                    if (!(UNIT_CATTRIBUTES(unit) & CA_UNSELECTABLE)) {
+                        count += 1;
+                    }
+                }
+            }
+        }
+    }
+    return count;
+}
+
+void UndoCleoJailedASMC(){
+    Unit* unit = GetUnitByCharId(0x1); //this is cleo
+    unit->state = 0; //resets unit state
 }

@@ -274,6 +274,7 @@ ALIGN 4
 SageMAnims:
 AnimaAnim(SageMagicAnim)
 LightAnim(SageMagicAnim)
+DarkAnim(SageMagicAnim)
 StaffAnim(SageMagicAnim)
 UnarmedAnim(SageMagicAnim)
 EndAnim

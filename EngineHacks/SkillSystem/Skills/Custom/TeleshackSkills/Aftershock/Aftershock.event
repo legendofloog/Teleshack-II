@@ -11,6 +11,10 @@ ALIGN 4
 DazzleIDLink:
 BYTE DazzleID
 
+ALIGN 4
+AftershockFlagIDLink:
+BYTE 0xA1
+
 PUSH
 ORG 0x2C844
 jumpToHack(New_BattleInitTargetCanCounter)

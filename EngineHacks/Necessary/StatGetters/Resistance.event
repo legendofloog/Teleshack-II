@@ -39,7 +39,7 @@ prItemPassiveResistance:
 
 prAzuriumMight:
 	rIfUnitHasSkill(AzuriumMightID)
-		rAddConst(3)
+		rAddConst(5)
 
 prEquipmentRes:
 	rEquipmentBonus(STAT_RESISTANCE)

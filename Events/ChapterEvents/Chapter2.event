@@ -76,16 +76,16 @@ UNIT
 
 EnemyUnits:
 UNIT Tyr_Ch2 AxeArmor 0x0      Level(4,Enemy,False) [11,18] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey] NeverMoveAI
-UNIT Chapter1Generics SwordArmor Tyr_Ch2 Level(1,Enemy,True) [6,4] 0x0 0x0 0x0 0x0 [SteelSword, DoorKey] NeverMoveAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
-UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
-UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Chapter1Generics Archer Tyr_Ch2 Level(1,Enemy,True) [6, 16] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
-UNIT Chapter1Generics BowArmor Tyr_Ch2 Level(1,Enemy,True) [15, 19] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [2,4] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(2,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(2,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(2,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey] NeverMoveAI
+UNIT Chapter1Generics SwordArmor Tyr_Ch2 Level(2,Enemy,True) [6,4] 0x0 0x0 0x0 0x0 [SteelSword, DoorKey] NeverMoveAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(2,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(2,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [Shortsword] AttackInRangeAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(2,Enemy,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics Archer Tyr_Ch2 Level(2,Enemy,True) [6, 16] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
+UNIT Chapter1Generics BowArmor Tyr_Ch2 Level(2,Enemy,True) [15, 19] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(2,Enemy,True) [2,4] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
 UNIT
 
 GreenUnits:
@@ -95,14 +95,14 @@ UNIT Delilah Sister 0x0 Level(2,NPC,False) [6,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 Turn3Reinforcements:
-UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(1,Enemy,True) [2,19] 0x0 0x0 0x1 REDA2R18 [ShortSword] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(1,Enemy,True) [1,19] 0x0 0x0 0x1 REDA1R18 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [ShortLance] PursueWithoutHeedAI
+UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(2,Enemy,True) [2,19] 0x0 0x0 0x1 REDA2R18 [ShortSword] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(2,Enemy,True) [1,19] 0x0 0x0 0x1 REDA1R18 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(2,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [ShortLance] PursueWithoutHeedAI
 UNIT
 
 Turn5Reinforcements:
-UNIT Chapter1Generics Myrmidon    0x0 Level(1,Enemy,True)  [1,19] 0x0 0x0 0x1 REDA1R13 [ShortSword] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(1,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronAxe] PursueWithoutHeedAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(2,Enemy,True)  [1,19] 0x0 0x0 0x1 REDA1R13 [ShortSword] PursueWithoutHeedAI
+UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(2,Enemy,True) [19,9] 0x0 0x0 0x1 REDA18R9 [IronAxe] PursueWithoutHeedAI
 UNIT
 
 BoroUnitGroup2:
@@ -110,7 +110,7 @@ UNIT Boro_Ch1 Champion 0x00 Level(5,Enemy,False) [1,0] 0x0 0x0 0x1 REDA1R0 [Mast
 UNIT
 
 OpeningCutsceneUnits:
-UNIT Varga SwordArmor           Cleo Level(4,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [LongSword,Vulnerary, DoorKey] NoAI // moves to 1,2
+UNIT Varga SwordArmor           Cleo Level(5,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [LongSword,Vulnerary, DoorKey] NoAI // moves to 1,2
 UNIT Ch2_Selese_Guy LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [1,3] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey] NeverMoveAI
 UNIT
 
@@ -148,8 +148,10 @@ UNIT Senny LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [3,19] 0x0 0x0 0x0 REDA7R13 
 UNIT
 
 Traps1:
-	ENDTRAP
-	ALIGN 4
+GreenSigil(19,9)
+GreenSigil(19,10)
+ENDTRAP
+ALIGN 4
 
 Traps2:
 	ENDTRAP
@@ -161,7 +163,7 @@ BeginningScene:
 	LOAD1 1 GreenUnits
 	ENUN
 	SetBackground(CastleHallway)
-	//MUSC FF5_Sealed_Away
+	MUSC FFTAnxiety
 	Text(Chapter2OpeningScene1)
 	CALL $9EE2C4
 	FlashCursor(Varga,60)
@@ -170,6 +172,7 @@ BeginningScene:
 	ENUN
 	FlashCursor(Cleo,30)
 	Text(Chapter2OpeningScene2_2)
+	FadeOutMusic
 	Text(Chapter2OpeningScene3)
 	CUSN Varga
 	MUSC Sortie_Formation
@@ -197,7 +200,7 @@ BeginningScene:
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)
-	LOAD3 2 Units1
+	LOAD3 0 Units1
 	ENUN
 	CUSA Varga
 	Text(Chapter2OpeningScene5)
@@ -215,9 +218,8 @@ NoFade
 ENDA
 
 BoroSpawn:
-LOAD1 1 BoroUnitGroup2
-ENUN
-CAMERA Boro_Ch1
+SpawnReinforcements(BoroUnitGroup2)
+CameraCursor(Boro_Ch1)
 Text(Chapter2BoroSpawnText)
 ENUT 0x4
 NoFade
@@ -306,7 +308,7 @@ TEXTCONT
 TEXTEND
 REMA
 ENUN
-MUSC Sortie_Formation
+MUSC FE5_InTheBattle_Fate
 MOVE 15 Cleo [11,14]
 MOVE 15 Loewe [10,14]
 MOVE 15 Dragana [11,15]
@@ -318,7 +320,6 @@ ENUN
 TEXTSTART
 TEXTSHOW Chapter2EndingScene2
 TEXTEND
-FadeOutMusic
 MOVE 15 Boro_Ch1 [13,11]
 ENUN
 KILL Tyr_Ch2
@@ -337,7 +338,6 @@ CriticalHit(0,25)
 EndAttack
 FIGHT_MAP Boro_Ch1 Ch2_Selese_Guy SilverLance False
 ENUN
-MUSC FE5_InTheBattle_Fate
 Text(Chapter2EndingScene3)
 LOAD1 1 EndingCutsceneUnits2
 ENUN

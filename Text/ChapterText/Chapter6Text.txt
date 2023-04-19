@@ -204,13 +204,6 @@ no, make it double![N]
 Tremble before the might[N]
 of Brenthunder!!!!![A][X]
 
-## Ch6BarodIntro5Response
-[MidLeft][LoadCleo][MidRight][LoadLoewe]
-[MidLeft]
-I'm not fighting that.[AN]
-[MidRight]
-Agreed.[A][X]
-
 ## Ch6BarodTurn2
 [MidRight][LoadBarod]
 Who put the lights out?[N]
@@ -399,30 +392,28 @@ Maybe I am crazy, but this is the[N]
 perfect chance to make a name for[N]
 ourselves. You joining us?[AN]
 [MidRight][OneLineBox]
-Wherever you go, Leina.[A][X]
+[Beat]Wherever you go, Leina.[A][X]
 
 ## CromarYellAtLeina
 [MidLeft][LoadLeina][MidRight][LoadCromar]
 This is my fight![A][X]
 
 ## Ch6Village1
-
 [MidLeft][LoadMan1]
 [MidRight][LoadActive]
 [MidLeft][ThreeLineBox]
 Folks from all over Orodreth come to[N]
 these islands to try their hand at the arena.[N]
 It is a well-loved bloodsport to many.[AN]
-This blade, the killing edge,[N]
-is a popular choice among sword-wielders[N]
-who dare to test their mettle.[AN]
+This spear, the javelin, is a popular[N]
+choice among lance-wielders[N]
+who wish to attack from afar.[AN]
 You look pretty tough. I bet you'd[N]
 make good use out of it.[N]
-Go on. Take the blade![A][X]
+Go on. Take the spear![A][X]
 
 ## Ch6Village2
-
-[MidLeft][LoadMan1]
+[MidLeft][LoadHelman]
 [MidRight][LoadActive]
 [MidLeft][ThreeLineBox]
 I never recommend leaving your home[N]
@@ -440,7 +431,7 @@ If you don't have any healing, this will help.[A][X]
 
 ## Ch6Village3
 
-[MidLeft][LoadMan1]
+[MidLeft][LoadMiddleAgedBlondVillager]
 [MidRight][LoadActive]
 [MidLeft][ThreeLineBox]
 That Cromar[Beat][N]
@@ -514,22 +505,22 @@ As arenamaster, I can't allow this[N]
 cowardice. Face my wrath, weaklings![A][X]
 
 ## Ch6BarodCongratulations1
-[MidLeft][LoadBarod]
+[MidLeft][LoadBarod][ToggleSmile]
 I see you've cleared the first round![N]
 Well done, Liberators. Here, a reward.[A][X]
 
 ## Ch6BarodCongratulations2
-[MidLeft][LoadBarod]
+[MidLeft][LoadBarod][ToggleSmile]
 Oho, the second string is defeated?[N]
 Not bad at all. Here, you deserve it.[A][X]
 
 ## Ch6BarodCongratulations3
-[MidLeft][LoadBarod]
+[MidLeft][LoadBarod][ToggleSmile]
 Three waves, all felled by your hand[Beat][N]
 Impressive. For your good work, a reward.[A][X]
 
 ## Ch6BarodCongratulations4
-[MidLeft][LoadBarod][ThreeLineBox]
+[MidLeft][LoadBarod][ThreeLineBox][ToggleSmile]
 You managed to defeat even the witches?[N]
 Astounding! Take this ring as your prize.[N]
 It was the entry fee for these sisters,[AN]
@@ -538,9 +529,35 @@ mage. It's all yours now, though![AN][X]
 
 ## Ch6BarodCongratulations5
 [MidRight][LoadLeina][ThreeLineBox]
-That's[Beat] I know that ring, Liberators.[N]
+That's[Beat] I know that ring, Liberators.[AN]
 Perhaps this may quell Cromar's rage[Beat][N]
-Please allow me to hold onto it.[A][X]
+Please allow me to hold onto it[N]
+and speak to him to end this![A][X]
+
+## Ch6ZeusCongratulations
+[MidLeft][LoadZeus]
+[Beat]It seems there was no need[N]
+for me to hold back, hm?[AN]
+Impressive work. I cede this[N]
+bout to you, Liberators.[AN][X]
+
+## Ch6BarodFinalCongratulations
+[MidLeft][LoadBarod][ThreeLineBox][ToggleSmile]
+Incredible! Absolutely astounding![AN][MoveMidLeft]
+I never expected a challenger would[N]
+beat Zeus, but it's happened twice[N]
+in one day. Ah, that's right![AN]
+Here, your reward. Apparently,[N]
+it's an element called Umbralium.[AN]
+Cromar won the rest of it,[N]
+but even this small an amount[N]
+should be useful for something.[AN]
+Well, that's enough yapping.[AN]
+If you ever get bored of that[N]
+rebellion nonsense, my arena[N]
+is always open to you lot![AN][X]
+
+
 
 ## Ch6LoeweCleoReactToBarod
 [MidLeft][LoadLoewe]
@@ -555,7 +572,7 @@ Urgh[Beat] Something[Beat] hit me[Beat][A][CloseSpeechSlow][ClearFace]
 [MidLeft][OneLineBox]
 Cleo? Cleo[Beat] Cleoooooooo![A][X]
 
-## Ch6VeidTalk
+## Ch6VeidTalk1
 [MidLeft][LoadVeid]
 [MidRight][LoadActive]
 [MidLeft][ThreeLineBox]
@@ -565,12 +582,39 @@ rebels unless you have coin and[Beat][AN]
 A certain material. If you manage to[N]
 clear the arena in its entirety,[N]
 perhaps the arenamaster will grant it.[AN]
-Part with it and some coin, if you[N]
-wish to gain unimaginable power.[N]
-Though I doubt you will succeed[Beat][AN]
-The King of the Arena has returned,[N]
-so your chances are null and void.[N]
-Perhaps another time, then[Beat][AN][X]
+Though I doubt you will succeed[Beat][N]
+The King of the Arena has returned:[N]
+a fearsome mage clad in armor, named Zeus.[AN]
+Only Cromar has managed to best the man.[N]
+Beg his aid, or defeat Zeus yourself[Beat][N]
+Either way, the choice is yours alone.[A][X]
+
+## Ch6VeidTalk2
+[MidLeft][LoadVeid]
+[MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Did I not make myself clear?[N]
+I have nothing to say to you,[N]
+unless you defeat Zeus. Begone.[A][X]
+
+## Ch6VeidTalk3
+[MidLeft][LoadVeid]
+[MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+[Beat]It seems you managed it, after all.[N]
+I expected you would die in the process,[N]
+but clearly, I underestimated you all.[AN]
+Ah, the gold? Well[Beat] considering how[N]
+little you managed to bring back,[N]
+consider this a free sample, Liberators.[AN]
+Allow me to refine that Umbralium,[N]
+and we shall see what form it takes[Beat][AN][MoveMidLeft][.7][MoveMidLeft]
+Curious, indeed. It lacks potency,[N]
+but if one takes this into themselves,[N]
+the night could bring out great power[Beat][AN]
+I have business to attend to elsewhere,[N]
+so this is the end of our meeting.[N]
+Take care. May we meet again[Beat][AN][X]
 
 ## McCallumDeathQuoteText
 [MidLeft][LoadMcCallum]
@@ -583,7 +627,7 @@ the Dread Pirate[Beat][A][CloseEyes][X]
 [MidLeft][LoadDraken]
 Urk! I can't even last a[N]
 day as the new captain?[AN]
-That's a bit[Beat] embarassing[Beat][A][X]
+That's a bit[Beat] embarrassing[Beat][A][X]
 
 ## DrakenBattleQuoteText
 [MidLeft][LoadDraken]
@@ -615,10 +659,16 @@ Become a better man, as Bartolomeu[N]
 or whatever name you prefer. But if[N]
 I ever hear of the Dread Pirate again-[A]
 [MidLeft]
-You won't, lad[Beat] My thanks for letting[N]
+You won't, lad. My thanks for letting[N]
 me live, but since the Liberators are[N]
 here, I'll have to find another boat.[AN]
 I suppose that if I'm going straight,[N]
 it's probably best not to steal[Beat][N]
 I'll obtain one through honest means.[A][X]
+
+## Ch6DuelHint
+Cromar will not heed Leina's words[N]
+while his duel with McCallum continues,[AN]
+which can only end through McCallum's[N]
+death or his rage being quelled.[AN][X]
 

@@ -4,8 +4,18 @@ extern bool(*gSkillTester)(Unit* unit, int skillID);
 extern u8 NonCombatantIDLink;
 extern u8 CromarCharIDLink;
 extern u8 MarynCharIDLink;
+extern u8 BoroCharIDLink;
+extern u8 AlenaCharIDLink;
+extern u8 SvetomirCharIDLink;
 s8 AreUnitsAllied(int left, int right);
 bool IsUnitAValidTarget(Unit* target, Unit* actor);
+int GetNPCStatIncrease(int growth);
+void SetUnitSpeedASMC();
+s8 IsUnitEnemyWithActiveUnit(struct Unit* unit);
+s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** outDefender);
+extern bool(*gSkillTester)(Unit* unit, int skillID);
+bool CanUnitRecklessCharge(Unit* actingUnit);
+
 
 
 void CheckIfUnit1RescuedByActive();
@@ -65,7 +75,7 @@ int GetCurrentPromotedLevelBonus(){
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
-    bu->battleAvoidRate = (bu->battleSpeed * 2) + bu->terrainAvoid + (bu->unit.lck);
+    bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck);
 
     if (bu->battleAvoidRate < 0){
         bu->battleAvoidRate = 0;
@@ -195,13 +205,33 @@ bool IsUnitAValidTarget(Unit* actor, Unit* target){
     if (gSkillTester(target, NonCombatantIDLink)){
         return false;
     }
-    if ( (target->pCharacterData->number == CromarCharIDLink) && (actor->pCharacterData->number == MarynCharIDLink) ){
-        return false;
-    }
-    if ( (target->pCharacterData->number == MarynCharIDLink) && (actor->pCharacterData->number == CromarCharIDLink) ){
-        return false;
+    if ((actor->pCharacterData->number == CromarCharIDLink) && (target->pCharacterData->number == MarynCharIDLink)){
+        return false; //cromar does not consider maryn a target
     }
     return true;
+}
+
+s8 IsUnitEnemyWithActiveUnit(struct Unit* unit) {
+
+    if (AreUnitsAllied(gActiveUnit->index, unit->index)) {
+        return 0;
+    }
+    if ((gActiveUnit->pCharacterData->number == MarynCharIDLink) && (unit->pCharacterData->number == CromarCharIDLink)){
+        return 0; //maryn  will not attack cromar
+    }
+    if ((gActiveUnit->pCharacterData->number == BoroCharIDLink) && (UNIT_FACTION(unit) == FACTION_GREEN)){
+        return 0; //boro will not target green units in selese arc
+    }
+    if ((gActiveUnit->pCharacterData->number == AlenaCharIDLink) && (unit->pCharacterData->number == SvetomirCharIDLink)){
+        return 0; //alena will not attack svet
+    }
+    if (gSkillTester(unit, NonCombatantIDLink)){
+        return 0;
+    }
+    if (gSkillTester(gActiveUnit, NonCombatantIDLink)){ //if actor or target noncombatant, cannot fight
+        return 0;
+    }
+    return 1;
 }
 
 void AddUnitToTargetListIfNotAllied(struct Unit* unit) {
@@ -210,4 +240,67 @@ void AddUnitToTargetListIfNotAllied(struct Unit* unit) {
         AddTarget(unit->xPos, unit->yPos, unit->index, 0);
     }
     return;
+}
+
+// makes autolevels fixed
+int GetAutoleveledStatIncrease(int growth, int levelCount) {
+    return GetNPCStatIncrease(growth * (levelCount + 1));
+}
+
+int GetNPCStatIncrease(int growth){
+	int result = 0;
+	
+	while (growth >= 100) {
+        result++;
+        growth -= 100;
+    }
+
+	return result;
+}
+
+void SetUnitSpeedASMC(){
+    Unit* unit = GetUnitByCharId(gEventSlot[1]); //event slot 1 has charID
+    unit->spd = gEventSlot[2]; //goes to struct place of s2 and sets it to s3
+}
+
+
+bool CheckIfInInterlude(){
+    if ((gChapterData.chapterIndex == 0x1C) || (gChapterData.chapterIndex == 0x1F) || (gChapterData.chapterIndex == 0x23)){
+        return false; //if in interlude, do not allow
+    }
+    return true;
+}
+
+s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** outDefender) {
+    if (gBattleTarget.battleSpeed > 250)
+        return FALSE;
+
+    if (ABS(gBattleActor.battleSpeed - gBattleTarget.battleSpeed) < BATTLE_FOLLOWUP_SPEED_THRESHOLD)
+        return FALSE;
+
+    if (gBattleActor.battleSpeed > gBattleTarget.battleSpeed) {
+        *outAttacker = &gBattleActor;
+        *outDefender = &gBattleTarget;
+    } else {
+        *outAttacker = &gBattleTarget;
+        *outDefender = &gBattleActor;
+    }
+
+    if (GetItemWeaponEffect((*outAttacker)->weaponBefore) == WPN_EFFECT_HPHALVE)
+        return FALSE;
+
+    if (GetItemIndex((*outAttacker)->weapon) == 0xE4) //earth greataxe cannot double
+        return FALSE;
+
+    if (GetItemWeaponEffect((*outAttacker)->weaponBefore) == WPN_EFFECT_CANNOTDOUBLE)
+        return FALSE;
+
+    if (GetItemWeaponEffect((*outAttacker)->weaponBefore) == WPN_EFFECT_PETRIFY)
+        return FALSE;
+
+    if(CanUnitRecklessCharge(&(*outAttacker)->unit)){
+		return FALSE; //no doublerino for reckless charge
+	}
+
+    return TRUE;
 }

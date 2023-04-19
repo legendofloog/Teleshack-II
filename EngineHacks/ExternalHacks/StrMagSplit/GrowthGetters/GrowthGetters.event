@@ -74,4 +74,5 @@
 	WORD BlossomID
 	WORD AptitudeID
 	POIN GetEquipmentStatBonus
+	WORD UmbraliumMightID
 	

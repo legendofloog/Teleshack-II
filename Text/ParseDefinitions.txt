@@ -210,6 +210,8 @@
 [LoadCherne] = [LoadFace][0x39][0x1]
 [LoadKwameReal] = [LoadCherne]
 [LoadEleanor] = [LoadFace][0xDD][0x1]
+[LoadTrajanYoung] = [LoadFace][0x9B][0x1]
+[LoadBoroYoung] = [LoadFace][0x9C][0x1]
 
 //DO NOT PUT PORTRAITS PAST 0xFF
 
@@ -236,6 +238,7 @@
 [LoadYoungBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadYoungGirlVillager] = [LoadFace][0x63][0x1]
 [LoadOldWomanVillager] = [LoadFace][0x5F][0x1]
+[LoadMiddleAgedBlondVillager] = [LoadFace][0x5B][0x1]
 [LoadSilverSoldier] = [LoadFace][0x71][0x1]
 
 [OneLineBox] = [0x80][0x2B][0x01]

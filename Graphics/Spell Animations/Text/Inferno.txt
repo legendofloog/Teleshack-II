@@ -1,18 +1,22 @@
-C000000
-C000000
-C000000
-C000000
-C000000
-C000000
-C000000
-C000040
-C100C29
-C000153
+#######################################################
+#
+#When importing to CSA_Creator delete # and after each line.
+#######################################################
+C000000                              
+C000000                              
+C000000                              
+C000000                               
+C000000                              
+C000000                              
+C000000                             
+C000040                               
+C100C29                               
+C000153                               
 O Inferno_o_000.png
 B Inferno_b_001.png
 1
 
-C00BF48
+C00BF48                               
 O Inferno_o_000.png
 B Inferno_b_002.png
 1
@@ -81,7 +85,7 @@ O Inferno_o_000.png
 B Inferno_b_018.png
 1
 
-C011D48
+C011D48                              
 O Inferno_o_000.png
 B Inferno_b_019.png
 1
@@ -102,14 +106,14 @@ O Inferno_o_000.png
 B Inferno_b_023.png
 1
 
-C00001A
-C00001F
-C00F248
+C00001A                               
+C00001F                               
+C00F248                               
 O Inferno_o_000.png
 B Inferno_b_024.png
 1
 
-C100829
+C100829                              
 O Inferno_o_000.png
 B Inferno_b_025.png
 1
@@ -138,7 +142,7 @@ O Inferno_o_000.png
 B Inferno_b_031.png
 1
 
-C0D0F29
+C0D0F29                               
 O Inferno_o_000.png
 B Inferno_b_032.png
 1
@@ -175,10 +179,10 @@ O Inferno_o_000.png
 B Inferno_b_040.png
 1
 
-O Inferno_o_000.png
-B Inferno_b_041.png
+~~~                               
+O Inferno_o_041.png
+B Inferno_b_042.png
 1
 
-~~~
-C000053
+C000053                               
 /// - End of animation

@@ -12,6 +12,7 @@
 #define CheckTileChangeTriggered(tileChangeId) "SVAL s1 tileChangeId; ASMC CheckIfTileChangeTriggered"
 
 #define CheckIfDefeatedUnitCaptured "ASMC CheckIfTargetUnitWasCaptured"
+#define SetUnitStatus(charID, value) "SVAL s1 charID; SVAL s2 value; ASMC SetUnitSpeedASMC"
 //#define GiveBlueUnitItemAfterCombatASMC(item) "SVAL s1 item; ASMC GiveBlueUnitItemAfterCombat"
 
 ALIGN 4
@@ -26,3 +27,14 @@ ALIGN 4
 MarynCharIDLink:
 BYTE Maryn
 
+ALIGN 4
+BoroCharIDLink:
+BYTE Boro_Ch1
+
+ALIGN 4
+AlenaCharIDLink:
+BYTE Alena
+
+ALIGN 4
+SvetomirCharIDLink:
+BYTE Svetomir

@@ -3,7 +3,7 @@
 #define TreasureOfRudrasBattleTheme 0x5
 #define Lufia2_RoS_Battle2 0x6
 #define WithUs_Song 0x8
-#define PersonalCombat 0x9
+#define FF6EdgarAndSabin 0x9
 #define Rovers 0xA
 #define UnfinishedBattleGodSyndrome 0xB
 #define FF5_Nostalgia 0xC
@@ -93,11 +93,6 @@
 #define HollowLightOfTheSealedLandID 0x281
 
 // Vanilla
-#define TiesOfFriendship 0x7
-#define AdvanceSong 0x24
-#define TensionSong 0x25
-#define LegacySong 0x2B
-#define SolveTheRiddle 0x2E
 #define WindyDaySoundEffect 0x47
 #define WindyDayBirdsSoundEffect 0x48
 #define Nighttime 0x4A

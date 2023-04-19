@@ -1,23 +1,27 @@
-C000000
-C000000
-C000000
-C000000
-C000040
-C000000
-C000153
+#######################################################
+#
+#When importing to CSA_Creator delete # and after each line.
+#######################################################
+C000000                               
+C000000                               
+C000000                               
+C000000                              
+C000040                              
+C000000                               
+C000153                              
 O Brenthunder_o_000.png
 B Brenthunder_b_001.png
 4
 
-C101029
+C101029                              
 O Brenthunder_o_000.png
 B Brenthunder_b_002.png
 2
 
-C000051
-C00001A
-C00001F
-C011A48
+C000051                               
+C00001A                              
+C00001F                              
+C011A48                               
 O Brenthunder_o_000.png
 B Brenthunder_b_003.png
 1
@@ -78,6 +82,10 @@ O Brenthunder_o_000.png
 B Brenthunder_b_001.png
 10
 
-~~~
-C000053
+~~~                               
+O Brenthunder_o_016.png
+B Brenthunder_b_017.png
+1
+
+C000053                              
 /// - End of animation

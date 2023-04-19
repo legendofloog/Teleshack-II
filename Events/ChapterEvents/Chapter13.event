@@ -169,7 +169,7 @@ LOAD1 0x1 EnemyUnits
 LOAD1 0x1 IndoorEnemies
 ENUN
 SetBackground(0x0E)
-MUSC SolveTheRiddle
+MUSC FFTAnxiety
 BROWNBOXTEXT GechrysosTopLeftText[8,8]
 Text(Ch13OrfeasTalk)
 FADI 16
@@ -234,9 +234,7 @@ NoFade
 ENDA
 
 CavReinforcements:
-CamOn
-LoadReinforcements(CavGang)
-CamOff
+SpawnReinforcements(CavGang)
 NoFade
 ENDA
 

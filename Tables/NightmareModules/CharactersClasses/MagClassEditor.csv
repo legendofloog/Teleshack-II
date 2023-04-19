@@ -2,111 +2,111 @@ INLINE MagClassTable,Base Magic,Magic Growth,Magic Cap,Magic Promotion Bonus
 None,0,0,20,0
 Noble,3,20,20,0
 Noble(F),3,20,20,0
-MasterKnight,7,20,20,4
-MasterKnight(F),7,20,20,4
+MasterKnight,7,20,25,4
+MasterKnight(F),7,20,25,4
 SwordKnight,0,10,20,0
 LanceKnight,0,10,20,0
 AxeKnight,0,10,20,0
 BowKnight,0,10,20,0
-ArchKnight,1,10,20,1
-ForrestKnight,1,10,20,1
-GreatKnight,1,10,20,1
-DukeKnight,1,10,20,1
+ArchKnight,1,10,25,1
+ForrestKnight,1,10,25,1
+GreatKnight,1,10,25,1
+DukeKnight,1,10,25,1
 Thief,0,10,20,0
 Manakete,0,10,20,0
 SwordFighter,0,10,20,1
 SwordFighter(F),0,10,20,1
-Hero,1,10,20,1
-Hero (F),1,10,20,1
+Hero,1,10,25,1
+Hero (F),1,10,25,1
 Myrmidon,0,10,20,0
 Myrmidon (F),0,10,20,0
-Swordmaster,1,10,20,1
-Swordmaster (F),1,10,20,1
+Swordmaster,1,10,25,1
+Swordmaster (F),1,10,25,1
 Thief(F),0,10,20,0
 Ballista,0,10,20,0
 Archer,0,10,20,0
 Archer (F),0,10,20,0
-Sniper,3,10,20,1
-Sniper (F),3,10,20,1
+Sniper,3,10,25,1
+Sniper (F),3,10,25,1
 Scaleshot,0,10,20,0
-Skyseeker,3,30,20,0
-Dragonlord,2,10,20,2
-Seraphknight,7,30,20,3
+Skyseeker,4,30,20,0
+Dragonlord,2,10,25,2
+Seraphknight,7,30,25,3
 Pegasus Rider,3,20,20,0
-Falcoknight,5,20,20,2
+Falcoknight,5,20,25,2
 Dragon Rider,0,10,20,1
-Dracoknight,1,10,20,1
+Dracoknight,1,10,25,1
 Mage,5,40,20,0
 Mage (F),5,40,20,0
-Sage,6,35,20,2
-Sage (F),6,35,20,2
-Mage Knight,7,40,20,2
-Mage Knight (F),7,40,20,2
-High Priest,8,45,20,3
-High Priestess,8,45,20,3
+Sage,6,35,25,2
+Sage (F),6,35,25,2
+Mage Knight,7,40,25,2
+Mage Knight (F),7,40,25,2
+High Priest,11,50,25,3
+High Priestess,11,50,25,3
 Dark Mage,6,45,20,0
 Dark Mage (F),6,45,20,0
-Dark Bishop,9,45,20,3
-Dark Bishop (F),9,45,20,3
+Dark Bishop,9,45,25,3
+Dark Bishop (F),9,45,25,3
 Bard,4,35,20,0
 Sister,4,35,20,0
-Thief Fighter,1,5,20,1
+Thief Fighter,1,5,25,1
 Gorgon Egg,0,0,20,0
-Priest,5,40,20,0
-Priest (F),5,40,20,0
+Priest,8,50,20,0
+Priest (F),8,50,20,0
 Rook Knight,0,5,20,0
-Gold Knight,1,5,20,1
-Troubadour,4,20,20,0
-Paladin,7,20,20,3
-Manakete,2,0,20,0
-Manakete (F),2,0,20,0
+Gold Knight,1,5,25,1
+Troubadour,4,30,20,0
+Paladin,7,30,25,3
+Manakete,2,0,25,0
+Manakete (F),2,0,25,0
 Hunter,0,5,20,0
 Hunter (F),0,5,20,0
-Warrior (F),1,5,20,1
-Warrior,1,5,20,1
+Warrior (F),1,5,25,1
+Warrior,1,5,25,1
 Brigand,0,5,20,0
 Brigand (F),0,5,20,0
 Sword Armor,0,5,20,0
 Axe Armor,0,5,20,0
 Lance Armor,0,5,20,0
 Bow Armor,0,5,20,0
-General,1,5,20,1
+General,1,5,25,1
 Mage Armor,4,35,20,0
-Baron,7,35,20,3
+Baron,7,35,25,3
 Axe Fighter,0,5,20,0
 Axe Fighter (F),0,5,20,0
-Thief Fighter (F),1,5,20,1
+Thief Fighter (F),1,5,25,1
 Dancer,1,5,20,0
 Lance Soldier,0,5,20,0
 Axe Soldier,0,5,20,0
 Fleet,0,0,20,0
 Phantom,0,0,20,0
 SwordKnight (D),0,5,20,0
-LongBallista,1,0,20,1
+LongBallista,1,0,25,1
 LanceKnight (D),0,5,20,0
 AxeKnight (D),0,5,20,0
 BowKnight (D),0,5,20,0
-ArchKnight (D),1,5,20,1
-ForrestKnight (D),1,5,20,1
-GreatKnight (D),1,5,20,1
-DukeKnight (D),1,5,20,1
+ArchKnight (D),1,5,25,1
+ForrestKnight (D),1,5,25,1
+GreatKnight (D),1,5,25,1
+DukeKnight (D),1,5,25,1
 Scaleshot (D),0,5,20,0
-Skyseeker (D),3,5,20,0
-Dragonlord (D),2,5,20,2
-Seraphknight (D),3,0,20,3
+Skyseeker (D),4,5,20,0
+Dragonlord (D),2,5,25,2
+Seraphknight (D),7,0,25,3
 Pegasus Rider (D),0,5,20,0
-Falcoknight (D),2,5,20,2
+Falcoknight (D),2,5,25,2
 Dragon Rider (D),0,5,20,0
 Gorgon Egg,0,0,20,0
-Dracoknight (D),0,5,20,1
-Mage Knight (D),6,30,20,2
+Dracoknight (D),0,5,25,1
+Mage Knight (D),6,30,25,2
 Dracozombie,1,30,20,0
 Demon King,23,40,20,0
-Mage Knight (F) (D),6,30,20,2
+Mage Knight (F) (D),6,30,25,2
 Rook Knight (D),0,0,20,0
-Gold Knight (D),1,5,20,1
-Troubadour (D),3,20,20,0
-Paladin (D),6,20,20,3
+Gold Knight (D),1,5,25,1
+Troubadour (D),4,30,20,0
+Paladin (D),7,30,25,3
 Bard (F),3,30,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
@@ -116,20 +116,20 @@ Civilian,0,0,20,0
 Civilian (F),0,0,20,0
 Corsair,0,5,20,0
 Corsair (F),0,5,20,0
-Berserker,1,5,20,1
-Berserker (F),1,5,20,1
-Master Knight (D),7,10,20,4
-Halberdier,2,5,20,1
+Berserker,1,5,25,1
+Berserker (F),1,5,25,1
+Master Knight (D),7,10,25,4
+Halberdier,2,5,25,1
 Tent,0,0,20,0
 Freelancer,0,5,20,0
-Champion,1,5,20,1
-Master_Knight_F (D),7,10,20,4
+Champion,1,5,25,1
+Master_Knight_F (D),7,10,25,4
 Brother,3,30,20,0
 Bard 2: Electric Boogaloo (Apsis class),0,30,20,0
-Sage 2: Electric Boogaloo (Apsis class),4,30,20,4
-Emperor,7,35,20,3
-ByelenClass,8,45,20,3
-CherneClass,8,45,20,3
+Sage 2: Electric Boogaloo (Apsis class),4,30,25,4
+Emperor,7,35,25,3
+ByelenClass,8,45,25,3
+CherneClass,8,45,25,3
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0

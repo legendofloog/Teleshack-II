@@ -12,9 +12,13 @@ Her healing and attacks heal Radiant allies[N]
 by 10 + Mag (unless ally is being healed by Leina).[X]
 
 ## SD_Nightcaller
-Dusk Bringer: Cromar's dark pact calls[N]
+Duskbringer: Cromar's dark pact calls[N]
 down fog after combat and increases[N]
 Crit/C.Avo by (7 - Fog Vision) x 5.[X]
+
+## SD_EterniumMight
+Eternium Might: Revives upon defeat.[N]
+Cancelled by other divine elements. +7 hp.[X]
 
 ## SD_Dullahan
 Dullahan's Curse:[N]
@@ -35,9 +39,9 @@ full move makes Emil's attacks brave,[N]
 but he cannot double foes.[X]
 
 ## SD_Aftershock
-Aftershock: If Iskra attacks with[N]
-thunder magic, the enemy cannot[N]
-counter during their next battle.[X]
+Aftershock: If Iskra uses thunder magic[N]
+on PP and hits an enemy, they cannot[N]
+counter for their next battle this turn.[X]
 
 ## SD_Conversion
 Conversion: Swap HP with higher health[N]
@@ -61,7 +65,7 @@ of magical attacks.[X]
 
 ## SD_AzuriumMight
 Azurium Might: This unit can cross[N]
-water tiles with no penalty. +3 res.[X]
+water tiles with no penalty. +5 Res.[X]
 
 ## SSN_AzuriumMight
 Azurium[X]
@@ -70,19 +74,16 @@ Azurium[X]
 The divine element Azurium.[N]
 Use to grant mastery over water.[X]
 
-## SD_EterniumMight
-Eternium Might: Revives upon defeat.[N]
-Cancelled by other divine elements. +7 hp.[N]
-Power: Fully restore HP to all allies.[X]
+## SSN_UmbraliumMight
+Umbralium[X]
 
-## SD_ZoruniumMight
-Zoleinium Might: Unit gain +1 move.[N]
-Power: +2 move to all ally infantry.[X]
+## SSD_UmbraliumMight
+The divine element Umbralium.[N]
+Use to grant mastery over night.[X]
 
-## SD_GenesiumMight
-Genesium Might: Grants user power of[N]
-genesis and deicide. +1 all stats.[N]
-Power: Create 4 ally generals.[X]
+## SD_UmbraliumMight
+Umbralium Might: All growths increased[N]
+by (7 - Fog Vision) * 5. +5 Skl.[X]
 
 ## SD_Alacrity
 Alacrity: Can act again after[N]
@@ -100,9 +101,9 @@ enemies who are not adjacent[N]
 to any of their allies.[X]
 
 ## SD_BladeDance *
-Blade Dance: When attacking, follow-up attacks[N]
-are consecutive, and if enemy is defeated, evade[N]
-fatal attacks until the start of your next turn.[X]
+Blade Dance: On initiation, follow-up attacks[N]
+are consecutive. If enemy dies and Ftg < M. HP,[N]
+unit evades fatal attacks until next turn.[X]
 
 ## SD_Spelltwister *
 Spelltwister: Apsis can only use his arsenal of 5[N]
@@ -183,3 +184,4 @@ are brave when initiating.[X]
 ## SD_Flight
 Flight: Rashid can fly over obstacles[N]
 but takes effective damage from bows.[X]
+

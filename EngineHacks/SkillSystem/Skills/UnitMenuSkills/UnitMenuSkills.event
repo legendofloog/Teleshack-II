@@ -62,6 +62,3 @@ MercyEffect:
 
 
 #include "CombatArts/CombatArts.event"
-
-#include "COPowers/COPowers.event"
-

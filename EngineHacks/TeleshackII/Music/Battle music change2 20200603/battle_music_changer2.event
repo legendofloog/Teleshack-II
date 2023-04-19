@@ -1,0 +1,10 @@
+#define UniqueBattleMusicEntry(songID,charID,chapterID,item,flagID) "SHORT songID; BYTE charID chapterID; SHORT item flagID;"
+
+BattleBGM_Table:
+UniqueBattleMusicEntry(Sheep_Will_Sleep,0x0,Chapter12,0x00,0x4)
+UniqueBattleMusicEntry(KnightsPride,0x0,Chapter14,0x00,0x4)
+UniqueBattleMusicEntry(BattleWithMagus,0x0,Chapter17,0x00,0x4)
+UniqueBattleMusicEntry(BattleWithMagus,0x0,Chapter18,0x00,0x4)
+UniqueBattleMusicEntry(BattleWithMagus,0x0,Chapter21,0x00,0x4)
+UniqueBattleMusicEntry(FF5_BattleOnTheBigBridgeID,0x0,Chapter23,0x00,0x4)
+UniqueBattleMusicEntry(0x0,0x0,0x0,0x0,0x0)

@@ -462,7 +462,7 @@ TEXTSHOW Ch12BeginningScene9A
 TEXTEND
 REMA
 SetBackground(0x18)//daytime forest
-Music(TiesOfFriendship)
+Music(FF6EdgarAndSabin)
 Text(Ch12BeginningScene9B)
 MUSI
 SetBackground(BlackBackground) 
@@ -568,6 +568,7 @@ Text(Ch12DeadlordSpawn4)
 EraseBackground
 SetFlag(0x4)
 Text(Ch12PassWarning)
+RefreshSMS
 NoFade
 ENDA
 
@@ -603,12 +604,12 @@ TEXTEND
 REMA
 SetBackground(0x0E)
 Music(Rovers)
-CHECK_ALIVE Mira
-BEQ 776 s0 sC //if mira not alive, end
-CHECK_ALIVE Iskra
-BEQ 776 s0 sC
+CheckUnitDeadOrJailed(Mira)
+BNE 776 s0 sC //if mira not alive, end
   Text(Ch12End3A)
-  Text(Ch12End3B)
+  CheckUnitDeadOrJailed(Iskra)
+  BNE 776 s0 sC //if iskra not alive, end
+    Text(Ch12End3B)
 LABEL 776
 Text(Ch12End3C)
 FadeOutMusic
@@ -641,8 +642,7 @@ NoFade
 ENDA
 
 ThiefAntiTurtle:
-CAMERA_CENTERED [6,10]
-LOAD1 1 ThiefSpawn
+SpawnReinforcements(ThiefSpawn)
 NoFade
 ENDA
 
@@ -651,7 +651,7 @@ FADI 10
 DismountAfter12Preps
 ENUN
 FADU 5
-Music(TiesOfFriendship)
+Music(FF6EdgarAndSabin)
 SetBackground(CastleHallway)
 Text(Ch12Turn1)
 EraseBackground

@@ -15,6 +15,7 @@ int GetConGrowth(Unit* unit);
 int GetUnitMagic(Unit* unit);
 int GetUnitMovement(Unit* unit);
 int GetUnitConstitution(Unit* unit);
+int GetUnitLuckCap(Unit* unit);
 
 extern bool(*gSkillTester)(Unit* unit, int skillID);
 extern u8 FixedGrowthsFlagIDLink;

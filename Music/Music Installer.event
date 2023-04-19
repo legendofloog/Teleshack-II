@@ -25,8 +25,8 @@ SongTable(Lufia2_RoS_Battle2,lufia2_battle2,BattleMusicGroup)
 SongTable(Sortie_Formation,L_Sortie_Formation,MapMusicGroup)
 #include "MusicEvents/FE9 - With Us (Sme).event"
 SongTable(WithUs_Song,WithUs, MapMusicGroup)
-#include "MusicEvents/Personal_Combatant_Berwick.event"
-SongTable(PersonalCombat,song0143,BattleMusicGroup)
+#include "MusicEvents/edgarsabin4.event"
+SongTable(FF6EdgarAndSabin,edgarsabin4,MapMusicGroup)
 #include "MusicEvents/Tales_Of_Symphonia_Rover(Pandan).event"
 SongTable(Rovers,TalesOfSymphonia_Rover,MapMusicGroup)
 #include "MusicEvents/Valkyrie Profile - The Unfinished Battle with God Syndrome (SaXor_the_Nobody).event"

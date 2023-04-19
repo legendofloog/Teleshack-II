@@ -167,7 +167,7 @@ BeginningScene:
 	Text(Ch9OpeningText)
 	FADI 15
 	SetBackground(CastleHallway)
-	MUSC TensionSong
+	MUSC Sortie_Formation
 	Text(Ch9WrathgarRant)
 	FADI 15
 	SetBackground(OvergrownArches)
@@ -188,16 +188,24 @@ BeginningScene:
 	ENDA
 
 Turn246Spawn:	
-ReinforcementEvent(Ch9Reinforce1)
+SpawnReinforcements(Ch9Reinforce1)
+NoFade
+ENDA
 
 Turn357Spawn:	
-ReinforcementEvent(Ch9Reinforce2)
+SpawnReinforcements(Ch9Reinforce2)
+NoFade
+ENDA
 
 Turn101112Spawn:	
-ReinforcementEvent(Ch9Reinforce3)
+SpawnReinforcements(Ch9Reinforce3)
+NoFade
+ENDA
 
 Turn121314Spawn:
-ReinforcementEvent(Ch9Reinforce4)
+SpawnReinforcements(Ch9Reinforce4)
+NoFade
+ENDA
 
 JennySpawn:
 SpawnReinforcements(JennyReinforce)

@@ -112,7 +112,7 @@ prSmite_TargetLegality:
     rGetWrapper // Defaults to 0
         rIfUnitHasNotGuardAI
         	rIfUnitHasNotAttribute(CA_MOUNTEDAID)
-            	rConstant(True)
+            	rCallExternal(CheckIfInInterlude-1)
 		
 // class lists, if enabled
 #ifndef HEROES_MOVEMENT_SKILL_REQUIRED

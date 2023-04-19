@@ -1,0 +1,8 @@
+#include "TargetingAI.lyn.event"
+
+
+ALIGN 4
+ProvokeIDLink:
+BYTE ProvokeID
+
+

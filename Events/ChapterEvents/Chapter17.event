@@ -215,8 +215,7 @@ ENDA
 
 MureibBetrayal:
 Text(Ch17_BossDead)
-LOAD1 1 MureibSquad
-ENUN
+SpawnReinforcements(MureibSquad) 
 CAMERA_CENTERED Mureib
 STAL 20
 CAMERA_CENTERED [10,1]
@@ -226,7 +225,7 @@ CAMERA_CENTERED Mureib
 Text(Ch17_MureibBetrayalPart2)
 LOAD1 1 KwameSpawn
 ENUN
-CAM1 [10,1]
+CAMERA_CENTERED [10,1]
 FlashCursor(10,1,30)
 Text(Ch17_KwameSoEpic)
 ENUT 4
@@ -234,34 +233,22 @@ NoFade
 ENDA
 
 Reinforcements1:
-CamOn
-LOAD1 1 ReinforcementsSpawn1
-ENUN
-CamOff
+SpawnReinforcements(ReinforcementsSpawn1)
 NoFade
 ENDA
 
 Reinforcements2:
-CamOn
-LOAD1 1 ReinforcementsSpawn2
-ENUN
-CamOff
+SpawnReinforcements(ReinforcementsSpawn2)
 NoFade
 ENDA
 
 Reinforcements3:
-CamOn
-LOAD1 1 ReinforcementsSpawn3
-ENUN
-CamOff
+SpawnReinforcements(ReinforcementsSpawn3)
 NoFade
 ENDA
 
 ThiefTime:
-CamOn
-LOAD1 1 ThiefSpawn
-ENUN
-CamOff
+SpawnReinforcements(ThiefSpawn)
 NoFade
 ENDA
 

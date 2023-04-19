@@ -56,9 +56,19 @@ Chest(HeavySpear,23,15)
 END_MAIN
 
 MiscBasedEvents:
+AFEV 22 RigganCaptureCheck 2
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
+
+RigganCaptureCheck:
+CHECK_EXISTS Riggan
+BEQ 776 s0 sC
+	ENUT 0xA0 //indicates riggan was captured, might use later
+	CALL EndingScene
+LABEL 776
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -86,6 +96,8 @@ FireTrap(20,7,3,3)
 FireTrap(19,29,1,3)
 FireTrap(19,28,1,3)
 FireTrap(19,30,1,3)
+TelliusTorchOn(13,2,5)
+TelliusTorchOn(16,2,5)
 ENDTRAP
 ALIGN 4
 
@@ -96,25 +108,25 @@ ALIGN 4
 Units1:
 LoadUnit(12,25)
 LoadUnit(13,25)
+LoadUnit(15,25)
+LoadUnit(16,25)
 LoadUnit(13,26)
 LoadUnit(14,26)
 LoadUnit(15,26)
-LoadUnit(16,25)
 LoadUnit(16,26)
 LoadUnit(17,26)
-LoadUnit(17,27)
-LoadUnit(14,27)
-LoadUnit(15,25)
 LoadUnit(13,27)
+LoadUnit(14,27)
+LoadUnit(17,27)
 UNIT
-	
-NewPlayers:
+
+NewPlayerUnits:
 UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [13,27] 0x0 0x0 0x0 0x0 [SlimAxe,Hurlbat] NoAI
 UNIT Fangai DarkMage Cleo Level(5,Ally,False) [15,25] 0x0 0x0 0x0 0x0 [Arachnid,Heal,TorchStaff] NoAI
 UNIT
-
+	
 EnemyUnits:
-UNIT Riggan Mage 0x0 Level(10,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GoddessIcon] AttackInRangeAI
+UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GoddessIcon] AttackInRangeAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Fire,Lightning,PureWater] TwoActionAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Rapier,Torch] BossAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,19] 0x0 0x0 0x0 0x0 [Longsword,ChestKey] BossAI
@@ -147,48 +159,39 @@ UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0
 UNIT
 
 EnemyReinforcements_A:
-UNIT Chapter1Generics AxeSoldier   Riggan Level(4,Enemy,True) [3,17] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
-UNIT Chapter1Generics Bard   Riggan Level(4,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [Fire] ChargeAI
-UNIT Chapter1Generics AxeSoldier   Riggan Level(4,Enemy,True) [13,0] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
-UNIT Chapter1Generics LanceSoldier   Riggan Level(4,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [3,17] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [Fire] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [13,0] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_A:
-CamOn
-LOAD1 1 EnemyReinforcements_A
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_A)
 NoFade
 ENDA
 
 EnemyReinforcements_B:
-UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [2,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [3,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [31,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics PegasusRider   Riggan Level(4,Enemy,True) [32,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [2,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [3,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [31,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [32,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_B:
 Text(RigganReinforcement)
-CamOn
-LOAD1 1 EnemyReinforcements_B
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B)
 NoFade
 ENDA
 
 EnemyReinforcementsEvent_C:
-CamOn
-LOAD1 1 EnemyReinforcements_B
-ENUN
-CamOff
+SpawnReinforcements(EnemyReinforcements_B)
 NoFade
 ENDA
 
 BeginningScene:
 MountAll
 ENUT 0x7B //flag that determines whether riggan is alive
-MUSC AdvanceSong
+MUSC SheenaID
 SetBackground(Port)
 CenterTextbox(SysTextOpening)
 Text(AtPort)
@@ -197,12 +200,12 @@ Text(MeetingLongxia)
 SetBackground(Boat)
 MUSC KwameID
 Text(BoatTalk)
-MUSC Tension
+MUSC Sortie_Formation
 Text(TensionCh5Text)
 Text(EnemyCh5Text)
 ENUT GuideUnlockElmhurstIsland
 FADI 15
-LOAD1 1 NewPlayers
+LOAD1 0 NewPlayerUnits
 LOAD1 1 EnemyUnits
 ENUN
 STAL 3
@@ -228,7 +231,11 @@ InterludeRemovalRoutineASMC
 ENUN
 CHECK_EVENTID 0x2
 BEQ 3 s0 sC
-	ENUF 0x7B //unsets riggan alive flag if he is dead
+	CHECK_EVENTID 0xA0
+	BEQ 776 s0 sC //if 0xA0 is set, riggan is alive still, so do not unset his alive flag
+		GOTO 3 
+	LABEL 776
+	ENUF 0x7B
 LABEL 3
 SetBackground(Tavern)
 MUSC KwameID

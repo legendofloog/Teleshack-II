@@ -1,0 +1,1 @@
+int GetUnitLuckCap(Unit* unit);

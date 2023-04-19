@@ -319,7 +319,7 @@ EndingScene:
 	MUSC Sortie_Formation 
 	SetBackground(0x15)
 	Text(Ch10End1_v2)
-	MUSC TiesOfFriendship
+	MUSC FF6EdgarAndSabin
 	SetBackground(0x13)
 	Text(Ch10End2)
 
