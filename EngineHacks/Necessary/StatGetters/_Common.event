@@ -13,6 +13,8 @@ prHalveIfRescuing:
 prHalveIfCapturing:
 	#incbin "_asm/HalveIfCapturing.bin"
 	POIN Is_Capture_Set
+	WORD SaviorID
+	POIN SkillTester
 	
 prMinZero:
 {

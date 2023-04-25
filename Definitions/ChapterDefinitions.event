@@ -38,11 +38,13 @@
 #define Chapter18xInterlude 0x23
 #define Chapter3Cutscene 0x24
 #define Chapter12Cutscene 0x25
+#define Chapter5PortNeufchatel 0x26
 #define Ch18xBoatScenes 0x27
 #define Chapter12xPass 0x28
 #define Chapter12xDarkness 0x29
 #define EpilogueChapter 0x2A
 #define Chapter8End 0x2B
+
 
 
 // MapChangesID
@@ -90,6 +92,7 @@
 #define PostgameHubMapChanges 0xd7
 #define Ch18xBoatScenesMapChanges 0xd9
 #define Chapter12CutsceneMapChanges 0xe1
+#define Chapter5PortNeufchatelMapChanges 0xe5
 
 
 // MapID
@@ -137,6 +140,7 @@
 #define PostgameHubMap 0xd8
 #define Ch18xBoatScenesMap 0xda
 #define Chapter12CutsceneMap 0xe2
+#define Chapter5PortNeufchatelMap 0xe4
 
 // EventsID
 

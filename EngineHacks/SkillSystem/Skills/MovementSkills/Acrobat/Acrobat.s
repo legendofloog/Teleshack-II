@@ -16,6 +16,17 @@ bne   NoDZ
     mov   r0, r2 @if the active unit is 0, we're being called from dangerzone
 NoDZ:
 mov   r7, r0
+ldr   r1,FlightID
+ldr   r2,SkillChecker
+mov   r14,r2
+.short  0xF800
+cmp   r0, #0x0
+beq   NoFlight
+   
+    ldr   r4, FlierMoveTable
+
+NoFlight:
+mov   r0, r7
 ldr   r1,AzuriumMightID
 ldr   r2,SkillChecker
 mov   r14,r2
@@ -29,24 +40,25 @@ beq   NoAzuriumMight
     ldr r1, [r3, #0x28]
     orr r0, r1
     mov r1, #0x1
+    lsl r1, #12			@ shift 0x1 3 bits to the left, that's peg icon
     and r0, r1
-    cmp r0, #0x0               @checks if unit is mounted
-    bne NoAzuriumMight
+    cmp r0, #0x0               @if unit is peg, branch
+    bne NoAzuriumMight		
+
+    ldr r2, [r7, #0x4]         @loads class data
+    ldr r0, [r2, #0x28]
+    ldr r3, [r7, #0x0]         @loads char data
+    ldr r1, [r3, #0x28]
+    orr r0, r1
+    mov r1, #0x8
+    lsl r1, #8
+    and r0, r1
+    cmp r0, #0x0
+    bne NoAzuriumMight		@ checks if unit has dragon icon, if it does, branch
     
     ldr   r4, PirateMoveTable
 
 NoAzuriumMight:
-mov   r0, r7
-ldr   r1,FlightID
-ldr   r2,SkillChecker
-mov   r14,r2
-.short  0xF800
-cmp   r0, #0x0
-beq   NoFlight
-   
-    ldr   r4, FlierMoveTable
-
-NoFlight:
 mov   r0, r7
 ldr   r1,AcrobatID
 ldr   r2,SkillChecker

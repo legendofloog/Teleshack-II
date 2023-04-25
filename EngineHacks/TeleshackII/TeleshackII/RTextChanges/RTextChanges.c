@@ -4,25 +4,19 @@
 
 int GetHelpBoxItemInfoKind(Item item)
 {
-    if (item.durability == 0xFF && item.number == 0xFE){
+    if (item.durability == 0xFF && item.number == 0xFE)
         return HB_EXTINFO_SAVEINFO;
-    }
-        
-    if (GetItemAttributes(item) & IA_LOCK_3){
-        return HB_EXTINFO_NONE;
-    }
 
-    if (GetItemAttributes(item) & IA_WEAPON){
+    if (GetItemAttributes(item) & IA_WEAPON)
         return HB_EXTINFO_WEAPON;
-    }
-        
-    if (GetItemAttributes(item) & IA_STAFF){
+
+    if (GetItemAttributes(item) & IA_STAFF)
         return HB_EXTINFO_STAFF;
-    }
 
     return HB_EXTINFO_NONE;
 }
 
+/*
 void HbPopulate_AutoItem(struct HelpBoxProc* proc)
 {
     Item item = proc->info->mid;
@@ -36,7 +30,7 @@ void HbPopulate_AutoItem(struct HelpBoxProc* proc)
         proc->mid = GetItemDescId(item);
     } 
 }
-
+*/
 
 void ApplyHelpBoxContentSize(struct HelpBoxProc* proc, int width, int height){
     width = 0xF0 & (width + 15); // align to 16 pixel multiple

@@ -22,27 +22,7 @@ TurnEventPlayer(0, EndOfSurvive, 10)
 END_MAIN
 
 PostPrepsScene:
-CAMERA_CENTERED Cleo
-STAL 30
-FlashCursor(Cleo,30)
-FlashCursor(Loewe,30)
-Text(PostPrepsCh5Text)
-CAMERA_CENTERED [9, 6]
-ENUN
 ENUT 39
-STAL 60
-CAMERA_CENTERED [20, 6]
-ENUN
-STAL 60
-CAMERA_CENTERED [10, 18]
-ENUN
-STAL 60
-CAMERA_CENTERED [19, 18]
-ENUN
-STAL 60
-CAMERA_CENTERED [19, 29]
-ENUN
-STAL 60
 NoFade
 ENDA
 
@@ -119,14 +99,14 @@ LoadUnit(13,27)
 LoadUnit(14,27)
 LoadUnit(17,27)
 UNIT
-
-NewPlayerUnits:
-UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [13,27] 0x0 0x0 0x0 0x0 [SlimAxe,Hurlbat] NoAI
-UNIT Fangai DarkMage Cleo Level(5,Ally,False) [15,25] 0x0 0x0 0x0 0x0 [Arachnid,Heal,TorchStaff] NoAI
-UNIT
 	
 EnemyUnits:
 UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GoddessIcon] AttackInRangeAI
+UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [13,7] 0x0 0x0 0x0 0x0 [Flux,Heal] TwoActionAI
+UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [Heal,Vulnerary] TwoActionAI
+UNIT
+
+EnemyUnits2:
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Fire,Lightning,PureWater] TwoActionAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Rapier,Torch] BossAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,19] 0x0 0x0 0x0 0x0 [Longsword,ChestKey] BossAI
@@ -154,8 +134,6 @@ UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [27,12] 0x0 0x0 0x0 0x0 
 UNIT Chapter1Generics Swordfighter   Riggan Level(5,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [5,4] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,5] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
-UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [13,7] 0x0 0x0 0x0 0x0 [Flux,Heal] TwoActionAI
-UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [Heal,Vulnerary] TwoActionAI
 UNIT
 
 EnemyReinforcements_A:
@@ -188,33 +166,145 @@ SpawnReinforcements(EnemyReinforcements_B)
 NoFade
 ENDA
 
+LoeweCleoPortGroup:
+UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [6,24] 0x0 0x0 1 REDA6R22 [SlimAxe,Hurlbat] NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [8,24] 0x0 0x0 1 REDA8R22 [SlimAxe,Hurlbat] NoAI
+UNIT
+
+LongxiaGroup:
+UNIT Senny Corsair_F Cleo Level(6,NPC,False) [8,0] 0x0 0x0 1 REDA8R12 [SlimAxe,Hurlbat] NoAI
+UNIT
+
+LoeweCleoBoatGroup:
+UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [6,17] 0x0 0x0 0 0 [SlimAxe,Hurlbat] NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [6,16] 0x0 0x0 0 0 [SlimAxe,Hurlbat] NoAI
+UNIT
+
+KwameBoatGroup:
+UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,13] 0x0 0x0 1 REDA8R16 [0x0]     NoAI
+UNIT
+
+LongxiaBoatGroup:
+UNIT Senny Corsair_F Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA8R17 [SlimAxe,Hurlbat] NoAI
+UNIT
+
+FangaiBoatGroup:
+UNIT Helman DarkMage Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA9R14 [SlimAxe,Hurlbat] NoAI
+UNIT
+
 BeginningScene:
-MountAll
+DismountAll
+LOMA Chapter5PortNeufchatel
+FOGVISION 0
 ENUT 0x7B //flag that determines whether riggan is alive
 MUSC SheenaID
 SetBackground(Port)
 CenterTextbox(SysTextOpening)
+FADI 10
+CAMERA_CENTERED [7,24]
+LOAD1 2 LoeweCleoPortGroup
+ENUN
+STAL 60
+EraseBackground
+FlashCursor(Loewe,30)
+FlashCursor(Cleo,30)
 Text(AtPort)
-CenterTextbox(SysTextMomentsLater)
-Text(MeetingLongxia)
-SetBackground(Boat)
+MOVE 20 Loewe [0,12]
+MOVE 20 Cleo [14,12]
+STAL 60
+FADI 10
+ENUN
+SetBackground(BlackBackground)
+CGText(SysTextMomentsLater)
+CAMERA_CENTERED [7,12]
+EraseBackground
+MOVE 10 Loewe [6,12]
+MOVE 10 Cleo [7,12]
+ENUN
+Text(MeetingLongxia1)
+CamOn
+LOAD1 1 LongxiaGroup
+ENUN
+CamOff
+FlashCursor(Senny,60)
+Text(MeetingLongxia2)
+MOVE 15 Loewe [7,0]
+MOVE 15 Cleo [8,0]
+MOVE 15 Senny [8,1]
+STAL 60
+FADI 10
+FadeOutMusic
+ENUN
+RemoveAll
+TILECHANGE 0
+LOAD1 1 LoeweCleoBoatGroup
+ENUN
+CAMERA_CENTERED Cleo
+STAL 120
+FADU 10
+FlashCursor(Loewe,30)
+FlashCursor(Cleo,30)
+MUSC WaterFlowingSoundEffect
+Text(BoatTalk1)
+FadeOutMusic
+CamOn
+LOAD1 1 KwameBoatGroup
+STAL 15
+LOAD1 1 LongxiaBoatGroup
+ENUN
+CamOff
+FlashCursor(Kwame,60)
 MUSC KwameID
-Text(BoatTalk)
+Text(BoatTalk2)
+FadeOutMusic
+LOAD1 1 FangaiBoatGroup
+ENUN
+FlashCursor(Helman,60)
 MUSC Sortie_Formation
-Text(TensionCh5Text)
-Text(EnemyCh5Text)
-ENUT GuideUnlockElmhurstIsland
-FADI 15
-LOAD1 0 NewPlayerUnits
+Text(TensionChapter5Text)
+FADI 10
+FOGVISION 5
+RemoveAll
+LOMA Chapter5
 LOAD1 1 EnemyUnits
 ENUN
+CAMERA_CENTERED Riggan
+FADU 10
+FlashCursor(Riggan,60)
+Text(EnemyCh5Text)
+CamOn
+LOAD1 1 FinalPreBattleGroup1
+ENUN
+CamOff
+TEXTSTART
+TEXTSHOW PostPrepsCh5Text
+TEXTEND
+MOVE 20 Kwame [22,34]
+LOAD1 0 NewPlayerUnits
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+ENUT GuideUnlockElmhurstIsland
+FADI 15
+LOAD1 1 EnemyUnits2
+ENUN
+MountAll
 STAL 3
 GotoPrepScreen
-CAMERA_CENTERED Cleo
-STAL 10
-FADU 60
 NoFade
 ENDA
+
+FinalPreBattleGroup1:
+UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [21,34] 0x0 0x0 1 REDA13R27 [SlimAxe,Hurlbat] NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA13R26 [SlimAxe,Hurlbat] NoAI
+UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [23,34] 0x0 0x0 1 REDA15R27 [0x0]     NoAI
+UNIT
+
+NewPlayerUnits:
+UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA15R26 [SlimAxe,Hurlbat] NoAI
+UNIT Fangai DarkMage Cleo Level(5,Ally,False) [23,34] 0x0 0x0 1 REDA15R27 [Arachnid,Heal,TorchStaff] NoAI
+UNIT
 
 EndOfSurvive:
 ENUT 0x3

@@ -1,20 +1,32 @@
 .thumb
-.org 0x0
+
+.equ SaviorID, Is_Capture_Set+4
+.equ SkillTester, SaviorID+4
 
 @r0 = stat, r1 = unit pointer
 
-push	{r4,r14}
+push	{r4-r5,r14}
 mov		r4,r0
+mov		r5,r1
 mov		r0,r1
 ldr		r3,Is_Capture_Set
 mov		r14,r3
 .short	0xF800
 cmp		r0,#0
 beq		GoBack
+
+mov 		r0, r5
+ldr		r1, SaviorID
+ldr		r3, SkillTester
+mov		r14,r3
+.short	0xF800
+cmp		r0,#1
+beq		GoBack		@ if unit has savior, no penalty
+
 lsr		r4,#1
 GoBack:
 mov		r0,r4
-pop		{r4}
+pop		{r4-r5}
 pop		{r1}
 bx		r1
 
