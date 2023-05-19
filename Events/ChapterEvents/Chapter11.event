@@ -86,8 +86,8 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 NewUnits:
-UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
-UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(9,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(9,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:

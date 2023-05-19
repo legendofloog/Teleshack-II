@@ -174,7 +174,7 @@ EnemyUnits:
 UNIT Korovai DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary, KnightProof] NoAI
 
 UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,Vulnerary] NeverMoveAI
-UNIT Hornet BowKnight Cleo Level(9,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI
+UNIT Hornet BowKnight Cleo Level(5,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI
 
 // Unique
 UNIT Cidor Baron 0x0 Level(5,Enemy,False) [21,3] 0x0 0x0 0x0 0x0 [Jormungand] NeverMoveAI // TODO: give him cooler inventory when we have more reasonable options

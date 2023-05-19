@@ -286,11 +286,11 @@ FlagNotSet(0x04,69)
 	SetUnitItemDurability(Bandit2,1,DreedurScroll)
 	FlagNotSet(0x0E,420)
 		CameraCursor(Cephalid)
-		CameraCursor(Bandit)
+		CameraCursor(Bandit2)
 		Text(Ch21Thieves_CephAlive)
 		GOTO 69
 	LABEL 420
-	CameraCursor(Bandit)
+	CameraCursor(Bandit2)
 	Text(Ch21Thieves_CephDead)
 LABEL 69
 NoFade
