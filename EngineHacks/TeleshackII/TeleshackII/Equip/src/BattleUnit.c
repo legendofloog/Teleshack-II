@@ -79,18 +79,7 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 		int itemSlot = GetUnitEquippedItemSlot(unit);
 
 		if (IsItemOffenseEquipment(item)){
-			if ((item.number == 0xd2 ) && (gActionData.unitActionType == UNIT_ACTION_COMBAT)){ //red scarf
-				Unit* target = &gBattleTarget.unit;
-				if(target->curHP <= 0){ // did this unit kill the target
-					DecrementItemSlotDurability(unit, itemSlot, battleUnit->attacksMade);
-				}
-			}
-			else if (item.number != 0x84){ //anything else does decrement
-				DecrementItemSlotDurability(unit, itemSlot, battleUnit->attacksMade);
-			}
-			else{
-
-			}
+			DecrementItemSlotDurability(unit, itemSlot, battleUnit->attacksMade);
 		}
 		else if (IsItemDefenseEquipment(item)){
 			DecrementItemSlotDurability(unit, itemSlot, battleUnit->hitsTaken);

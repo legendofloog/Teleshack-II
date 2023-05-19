@@ -1,5 +1,6 @@
 EventPointerTable(Chapter15Events, PointerList)
-
+//note to future loog: make sekrititem2 give a new weapon based on needs
+//also, add pelecaye event here
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -211,7 +212,7 @@ NoFade
 ENDA
 
 SekritItem2:
-GiveItem(RedScarf,0xFFFF)
+//GiveItem(RedScarf,0xFFFF)
 NoFade
 ENDA
 

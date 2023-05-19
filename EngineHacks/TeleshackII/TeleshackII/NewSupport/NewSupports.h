@@ -49,3 +49,6 @@ bool IsUnitValidSupporter(Unit* unit, Unit* supportingUnit, int supportRank);
 bool IsSupportingUnitInRangeOfDefender(Unit* supportingUnit, Unit* defendingUnit);
 bool DoesUnitAHaveSupportWithUnitB(Unit* unit1, Unit* unit2, int supportRank);
 void NewGetUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender, NewSupportBonuses* bonuses);
+extern bool(*gSkillTester)(Unit* unit, int skillID);
+
+extern u8 DullahanIDLink;

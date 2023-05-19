@@ -41,7 +41,7 @@
 	
 	#define ExampleMapSpriteTrapID 0x10
 	#define ExampleMapSpriteID 0x78
-	#define SigilTrapID 0x11
+	#define BlueSigilTrapID 0x11
 	#define RedSigilTrapID 0x12
 	#define GreenSigilTrapID 0x13
 	#define SigilTrapMapSprite 0x78
@@ -66,7 +66,7 @@
 	SetTrapEventInit(MineTrapID,$378D6)
 	SetTrapEventInit(GorgonEggTrapID,$378EC)
 	SetTrapEventInit(LightRuneTrapID,0)
-	SetTrapEventInit(SigilTrapID,TrapRework_GenericInitializer)
+	SetTrapEventInit(BlueSigilTrapID,TrapRework_GenericInitializer)
 	SetTrapEventInit(RedSigilTrapID,TrapRework_GenericInitializer)
 	SetTrapEventInit(GreenSigilTrapID,TrapRework_GenericInitializer)
 	
@@ -87,7 +87,7 @@
 	SetTrapMapSprite(MineTrapID,0)
 	SetTrapMapSprite(GorgonEggTrapID,0)
 	SetTrapMapSprite(LightRuneTrapID,0x66) //light rune map sprite
-	SetTrapMapSprite(SigilTrapID,SigilTrapMapSprite)
+	SetTrapMapSprite(BlueSigilTrapID,SigilTrapMapSprite)
 	SetTrapMapSprite(RedSigilTrapID,SigilTrapMapSprite)
 	SetTrapMapSprite(GreenSigilTrapID,SigilTrapMapSprite)
 
@@ -101,7 +101,7 @@
 	#define SetTrapMapSpritePalette(trapID,paletteWord) "PUSH; ORG TrapMapSpritePaletteTable+(4*(trapID-1)); WORD paletteWord; POP"
 	
 	SetTrapMapSpritePalette(LightRuneTrapID,LightRuneTrapPaletteWord)
-	SetTrapMapSpritePalette(SigilTrapID,PlayerTrapPaletteWord)
+	SetTrapMapSpritePalette(BlueSigilTrapID,PlayerTrapPaletteWord)
 	SetTrapMapSpritePalette(RedSigilTrapID,EnemyTrapPaletteWord)
 	SetTrapMapSpritePalette(GreenSigilTrapID,NPCTrapPaletteWord)
 	
@@ -152,7 +152,7 @@
 	#include "Modules/HealTiles/HealTiles.event"
 	#include "Modules/TelliusTorches/TelliusTorches.event"
 
-	#define BlueSigil(x,y) "MapSpriteTrap(SigilTrapID,x,y)"
+	#define BlueSigil(x,y) "MapSpriteTrap(BlueSigilTrapID,x,y)"
 	#define RedSigil(x,y) "MapSpriteTrap(RedSigilTrapID,x,y)"
 	#define GreenSigil(x,y) "MapSpriteTrap(GreenSigilTrapID,x,y)"
 	

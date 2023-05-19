@@ -29,7 +29,7 @@ Door(18,3)
 Door(6,8)
 Chest(KnightProof,19,1)
 Chest(Elixir,9,8)
-Chest(AmserScrollID,11,9)
+DurabilityChest(GrowthScroll,AmserScroll,11,9)
 END_MAIN
 
 MiscBasedEvents:
@@ -80,7 +80,7 @@ UNIT Nikolas Falcoknight   0x0 Level(1,NPC,False) [11,26] 0x0 0x0 0x0 0x0 [Mysti
 UNIT
 
 EnemyUnits:
-UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [Claymore,BattleAxe,IceSword,KnightProof] BossHealAI
+UNIT Alto Hero   0x0 Level(5,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [BattleAxe,IceSword,KnightProof] BossHealAI
 UNIT Cythes LanceSoldier   0x0 Level(17,Enemy,True) [1,25] 0x0 0x0 0x0 0x0 [LongLance] DefaultHealAI 
 UNIT Cythes SwordArmor   0x0 Level(17,Enemy,True) [3,23] 0x0 0x0 0x0 0x0 [IceSword] NMHealAI
 UNIT Cythes AxeArmor   0x0 Level(17,Enemy,True) [2,23] 0x0 0x0 0x0 0x0 [Hurlbat] NMHealAI

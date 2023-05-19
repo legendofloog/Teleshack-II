@@ -46,7 +46,7 @@ Loop:
 	mov		r0, r5
 	lsl		r1, r6, #0x01
 	add		r1, #UnitInventory
-	ldrb	r0, [r0, r1]
+	ldrb		r0, [r0, r1]
 	cmp		r0, #0x00
 	beq		End
 	ldr		r1, =GetROMItemStructPtr
@@ -56,19 +56,41 @@ Loop:
 	@ get icon
 
 	ldrb	r0, [r0, #ItemDataIconID]
+	cmp	r0, #0xFF
+	bne	NotDurabilityBasedItem
+
+		mov		r0, r5
+		lsl		r1, r6, #1
+		add		r1, #UnitInventory
+		ldrh		r0, [r0, r1]
+		lsr		r2, r0, #8	@ r2 - durability
+		lsl		r1, r0, #24
+		lsr		r1, #24		@ r1 - item id
+		mov		r0, r2		@ moves durability to r0 bc that is item icon id for external sheets
+		cmp		r1, #0xbc	@ checks if it's a skill scroll
+		bne		IsAGrowthScroll
+				
+			mov		r1, #5		@ skill scrolls use 5th sheet
+			b GetTileIndex
+		
+		IsAGrowthScroll:
+		mov		r1, #6
+		b GetTileIndex
 
 	@ This is to comply with the icon rework
 	@ if it is installed.
 
+	NotDurabilityBasedItem:
 	ldr		r1, =MMBItemSheet
-	ldrb	r1, [r1]
+	ldrb		r1, [r1]
+	
+	GetTileIndex:
 	lsl		r1, #8
 	orr		r0, r1
-
 	@ get tile index
-
+	
 	ldr		r1, =MMBInventoryTileIndex
-	ldrh	r1, [r1]
+	ldrh		r1, [r1]
 	lsl		r2, r6, #0x01
 	add		r1, r1, r2
 

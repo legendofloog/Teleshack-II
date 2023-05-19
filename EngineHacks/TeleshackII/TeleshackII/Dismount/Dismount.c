@@ -220,3 +220,126 @@ bool DismountTester(Unit* unit, int dismountType){
 	return false;
 }
 
+void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
+	//only two places to promo; on map or in preps
+	int i;
+	bool isMountPromoAllowed = false;
+	if(gChapterData.chapterStateBits & CHAPTER_FLAG_PREPSCREEN){ //are we in preps?
+		i = 0;
+		int mountInPrepsChapter = 0;
+		
+		while( mountInPrepsChapter != 0xFF){
+			mountInPrepsChapter = MountedInPrepsTable[i];
+			if(gChapterData.chapterIndex == mountInPrepsChapter){
+				isMountPromoAllowed = true;
+				break;
+			}
+			i++;
+		}
+	}
+	else{ // are we on map?
+		if(CheckIfDismountLocationLegal(unit)){
+			isMountPromoAllowed = true;
+		}
+	}
+	const ClassData* currentClass = unit->pClassData;
+	const struct ClassData* promotedClass = 0;
+	if (classId == 0x3){ // master knight; need special cases for dismounted units who become mounted 
+		if (!isMountPromoAllowed){ //does preps not allow mounting
+			promotedClass = GetClassData(0x77); // m master knight dismounted
+		}
+		else{
+			promotedClass = GetClassData(classId);
+		}
+	}
+	else if (classId == 0x4){ // female master knight
+		if (!isMountPromoAllowed){ //does preps not allow mounting
+			promotedClass = GetClassData(0x7c); // f master knight dismounted
+		}
+		else{
+			promotedClass = GetClassData(classId);
+		}
+	}
+	else if( classId == 0x29 ){ // mage knight
+		if (!isMountPromoAllowed){ //does preps not allow mounting
+			promotedClass = GetClassData(0x64); // m mage knight dismounted
+		}
+		else{
+			promotedClass = GetClassData(classId);
+		}
+	}
+	else if( classId == 0x2A ){ // female mage knight
+		if (!isMountPromoAllowed){ //does preps not allow mounting
+			promotedClass = GetClassData(0x67); // f mage knight dismounted
+		}
+		else{
+			promotedClass = GetClassData(classId);
+		}
+	}
+	else{
+		promotedClass = GetClassData(classId);
+	}
+
+    // Apply stat ups
+
+	
+
+	unit->pow += (promotedClass->basePow - currentClass->basePow);
+
+    if (unit->pow > promotedClass->maxPow){
+		unit->pow = promotedClass->maxPow;
+	}
+
+	unit->mag += (MagClassTable[promotedClass->number].promotionMag - MagClassTable[currentClass->number].promotionMag);
+
+	if (unit->mag > MagClassTable[promotedClass->number].maxMag){
+		unit->mag = MagClassTable[promotedClass->number].maxMag;
+	}
+	
+    unit->skl += (promotedClass->baseSkl - currentClass->baseSkl);
+
+    if (unit->skl > promotedClass->maxSkl)
+        unit->skl = promotedClass->maxSkl;
+
+    unit->spd += (promotedClass->baseSpd - currentClass->baseSpd);
+
+    if (unit->spd > promotedClass->maxSpd)
+        unit->spd = promotedClass->maxSpd;
+
+    unit->def += (promotedClass->baseDef - currentClass->baseDef);
+
+    if (unit->def > promotedClass->maxDef)
+        unit->def = promotedClass->maxDef;
+
+    unit->res += (promotedClass->baseRes - currentClass->baseRes);
+
+    if (unit->res > promotedClass->maxRes)
+        unit->res = promotedClass->maxRes;
+
+    // Remove base class' base wexp from unit wexp
+    for (i = 0; i < 8; ++i)
+        unit->ranks[i] -= unit->pClassData->baseRanks[i];
+
+    // Update unit class
+    unit->pClassData = promotedClass;
+
+    // Add promoted class' base wexp to unit wexp
+    for (i = 0; i < 8; ++i) {
+        int wexp = unit->ranks[i];
+
+        wexp += unit->pClassData->baseRanks[i];
+
+        if (wexp > WPN_EXP_A)
+            wexp = WPN_EXP_A;
+
+        unit->ranks[i] = wexp;
+    }
+
+    unit->level = 1;
+    unit->exp   = 0;
+
+    unit->curHP += promotedClass->promotionHp;
+
+    if (unit->curHP > GetUnitMaxHp(unit))
+        unit->curHP = GetUnitMaxHp(unit);
+}

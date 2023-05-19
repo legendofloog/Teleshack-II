@@ -3,8 +3,7 @@
 .include "../../_ItemEffectDefinitions.h.s"
 
 @add check for event ids
-.equ ChestCashEvent, OffsetList + 0x0
-.equ ChestItemEvent, OffsetList + 0x4
+.equ ChestItemEvent, OffsetList + 0x0
 
 push 	{r4-r7,lr}
 @mov 	r4, r0
@@ -27,9 +26,9 @@ ldr 	r6, [r0, #0x8] @ gets EventCheckBuffer pointer
 EventLoop:
 
 mov 	r0, #0x8
-ldsb 	r0, [r6,r0]
+ldsb 	r0, [r6,r0]	@ x location
 mov 	r1, #0x9
-ldsb 	r1, [r6,r1]
+ldsb 	r1, [r6,r1]	@ y location
 cmp 	r0, r4	@make sure the chest is at the given location
 bne reloop
 cmp 	r1, r5
@@ -58,21 +57,23 @@ cmp 	r0, r1
 blt End
 b HasEvent
 
-ChestEvent:
+ChestEvent:	@ money stuff is commented out bc no chests give money and it causes issues  w/ durability items
 ldr 	r0, [r6,#0x4]
-mov 	r1, #0xFF
-cmp 	r0, r1
-blt ChestHasItem	@check if chest has an item
+@ mov 	r1, #0xFF
+@ cmp 	r0, r1
+@ blt ChestHasItem	@check if chest has an item
 
-and 	r1, r0
-mov 	r2, #0x77	@check if chest is giving money
-cmp r1, r2
-bne HasEvent
-ChestHasMoney:	@go here if chest has money
-ldrh 	r0, [r6, #0x6]
-str 	r0, [r7]
-ldr 	r0, ChestCashEvent
-b HasEvent
+@ and 	r1, r0
+@ mov 	r2, #0x77	@check if chest is giving money
+@ cmp r1, r2
+@ bne HasEvent
+
+@ ChestHasMoney:	@go here if chest has money
+@ ldrh 	r0, [r6, #0x6]
+@ str 	r0, [r7]
+@ ldr 	r0, ChestCashEvent
+@ b HasEvent
+
 ChestHasItem:
 cmp 	r0, #0x0
 beq End

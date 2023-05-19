@@ -7,6 +7,9 @@ extern u8 MarynCharIDLink;
 extern u8 BoroCharIDLink;
 extern u8 AlenaCharIDLink;
 extern u8 SvetomirCharIDLink;
+extern u8 BuldakCharIDLink;
+extern u8 IberisCharIDLink;
+extern u8 MifanCharIDLink;
 s8 AreUnitsAllied(int left, int right);
 bool IsUnitAValidTarget(Unit* target, Unit* actor);
 int GetNPCStatIncrease(int growth);
@@ -71,7 +74,7 @@ void UnitCopy(){
 }
 
 int GetCurrentPromotedLevelBonus(){
-    return 9; //every promoted unit hits 10 unpromoted
+    return 14; //every promoted unit hits 10 unpromoted
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
@@ -208,6 +211,16 @@ bool IsUnitAValidTarget(Unit* actor, Unit* target){
     if ((actor->pCharacterData->number == CromarCharIDLink) && (target->pCharacterData->number == MarynCharIDLink)){
         return false; //cromar does not consider maryn a target
     }
+    if ((actor->pCharacterData->number == IberisCharIDLink) && (target->pCharacterData->number == BuldakCharIDLink)){
+        if (gChapterData.chapterIndex == 0x06){ //in chapter 7
+            return true; //iberis will not attack buldak in chapter 7
+        }
+    }
+    if ((actor->pCharacterData->number == BuldakCharIDLink) && (target->pCharacterData->number == MifanCharIDLink)){
+        if (gChapterData.chapterIndex == 0x06){ //in chapter 7
+            return true; //buldak won't attack mifan in chapter 7
+        }
+    }
     return true;
 }
 
@@ -224,6 +237,11 @@ s8 IsUnitEnemyWithActiveUnit(struct Unit* unit) {
     }
     if ((gActiveUnit->pCharacterData->number == AlenaCharIDLink) && (unit->pCharacterData->number == SvetomirCharIDLink)){
         return 0; //alena will not attack svet
+    }
+    if ((gActiveUnit->pCharacterData->number == MifanCharIDLink) && (unit->pCharacterData->number == BuldakCharIDLink)){
+        if (gChapterData.chapterIndex == 0x06){ //in chapter 7
+            return true; //mifan won't attack buldak in 7
+        }
     }
     if (gSkillTester(unit, NonCombatantIDLink)){
         return 0;

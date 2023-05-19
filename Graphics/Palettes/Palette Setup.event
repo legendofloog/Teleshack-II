@@ -170,7 +170,7 @@
 
 // NoraDracoknight
 	setPalette(41,NoraDracoknight)
-	setCBSP(41,Nora, 2, Dracoknight)
+	setCBSP(41,Nora, 2, Dracoknight_F)
 
 // NoraRiderUnmounted
 	setPalette(42,NoraRiderUnmounted)
@@ -178,7 +178,7 @@
 
 // NoraKnightUnmounted
 	setPalette(43,NoraKnightUnmounted)
-	setCBSP(43,Nora, 4, Dracoknight_Dismounted)
+	setCBSP(43,Nora, 4, Dracoknight_F_Dismounted)
 
 // HansSwordKnight
 	setPalette(44,HansSwordKnight)
@@ -314,11 +314,11 @@
 
 // LyreDracoknight
 	setPalette(76,LyreDracoknight)
-	setCBSP(76,Lyre,1,Dracoknight)
+	setCBSP(76,Lyre,1,Dracoknight_F)
 
 // LyreDismounted
 	setPalette(77,LyreDismounted)
-	setCBSP(77,Lyre,2,Dracoknight_Dismounted)
+	setCBSP(77,Lyre,2,Dracoknight_F_Dismounted)
 
 // NgondalaBaron
 	setPalette(78,NgondalaBaron)

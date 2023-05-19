@@ -152,3 +152,5 @@
 #define ByelenClass 0x81
 #define CherneClass 0x82
 #define CromarMorbing 0x83
+#define Dracoknight_F 0x84
+#define Dracoknight_F_Dismounted 0x85

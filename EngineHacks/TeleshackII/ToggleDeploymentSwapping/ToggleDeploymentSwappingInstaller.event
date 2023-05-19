@@ -51,24 +51,27 @@ ALIGN 4
 ALIGN 4
 
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
-ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter18)
-ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter18)
 ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter19)
 ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter19)
-ForcedDeployment(KwameReal,LockedPosition,AllModes,Chapter18)
+ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter18)
+ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter18)
 ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter15)
 ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter15)
 ForcedDeployment(Cleo,LockedPosition,AllModes,Chapter11)
 ForcedDeployment(Loewe,LockedPosition,AllModes,Chapter11)
-ForcedDeployment(Ichwep,LockedPosition,AllModes,Chapter11)
-ForcedDeployment(Milo,LockedPosition,AllModes,Chapter11)
 ForcedDeployment(Cleo,UnlockedPosition,AllModes,AllChapters)
 ForcedDeployment(Loewe,UnlockedPosition,AllModes,AllChapters)
 ForcedDeployment(Zwieback,UnlockedPosition,AllModes,Chapter4)
 ForcedDeployment(Filone,UnlockedPosition,AllModes,Chapter4)
 ForcedDeployment(Longxia,UnlockedPosition,AllModes,Chapter5)
 ForcedDeployment(Fangai,UnlockedPosition,AllModes,Chapter5)
-ForcedDeployment(Leina,UnlockedPosition,AllModes,Chapter6)
+ForcedDeployment(Leina,LockedPosition,AllModes,Chapter6)
+ForcedDeployment(Iberis,LockedPosition,AllModes,Chapter7)
+ForcedDeployment(Hans,LockedPosition,AllModes,Chapter8)
+ForcedDeployment(Nora,LockedPosition,AllModes,Chapter8)
+ForcedDeployment(Ichwep,LockedPosition,AllModes,Chapter11)
+ForcedDeployment(Milo,LockedPosition,AllModes,Chapter11)
+ForcedDeployment(KwameReal,LockedPosition,AllModes,Chapter18)
 EndForcedDeploymentList
 
 DeploymentGroupChapterList:

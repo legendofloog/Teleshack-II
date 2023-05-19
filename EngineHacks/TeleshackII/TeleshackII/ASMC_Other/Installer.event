@@ -38,3 +38,15 @@ BYTE Alena
 ALIGN 4
 SvetomirCharIDLink:
 BYTE Svetomir
+
+ALIGN 4
+BuldakCharIDLink:
+BYTE Buldak
+
+ALIGN 4
+IberisCharIDLink:
+BYTE Iberis
+
+ALIGN 4
+MifanCharIDLink:
+BYTE Mifan

@@ -27,6 +27,10 @@ NewSupportTable:
 */
 
 ALIGN 4
+DullahanIDLink:
+BYTE DullahanID
+
+ALIGN 4
 CleoSupportList:
 SupportEntry(Emil,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Emil,BSupportLevel,2,0,10,0,0,0)

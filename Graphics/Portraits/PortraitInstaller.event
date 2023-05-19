@@ -282,11 +282,11 @@ setMugEntry(DraganaDeadlordMug, DraganaDeadlordMugData, 2, 5, 3, 3)
 
 ALIGN 16
 CidorMugData:
-#incbin "Dmp/Cidor(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Cidor(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Cidor(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Cidor(Laurent_Lacroix)_minimug.dmp"
-setMugEntry(CidorMug, CidorMugData, 3, 5, 3, 3)
+#incbin "Dmp/Cidor(Levin)_mug.dmp"
+#incbin "Dmp/Cidor(Levin)_frames.dmp"
+#incbin "Dmp/Cidor(Levin)_palette.dmp"
+#incbin "Dmp/Cidor(Levin)_minimug.dmp"
+setMugEntry(CidorMug, CidorMugData, 2, 4, 3, 2)
 
 ALIGN 16
 CatrinMugData:
@@ -306,11 +306,11 @@ setMugEntry(CatrinYoungMug, CatrinYoungMugData, 3, 6, 3, 4)
 
 ALIGN 16
 RaschwitzMugData:
-#incbin "Dmp/Raschwitz(Laurent_Lacroix)_mug.dmp"
-#incbin "Dmp/Raschwitz(Laurent_Lacroix)_frames.dmp"
-#incbin "Dmp/Raschwitz(Laurent_Lacroix)_palette.dmp"
-#incbin "Dmp/Raschwitz(Laurent_Lacroix)_minimug.dmp"
-setMugEntry(RaschwitzMug, RaschwitzMugData, 3, 5, 3, 3)
+#incbin "Dmp/Raschwitz (Loog)_mug.dmp"
+#incbin "Dmp/Raschwitz (Loog)_frames.dmp"
+#incbin "Dmp/Raschwitz (Loog)_palette.dmp"
+#incbin "Dmp/Raschwitz (Loog)_minimug.dmp"
+setMugEntry(RaschwitzMug, RaschwitzMugData, 4, 4, 4, 2)
 
 ALIGN 16
 BoroMugData:
@@ -730,11 +730,11 @@ setMugEntry(MeldanMug, MeldanMugData, 2, 5, 3, 3)
 
 ALIGN 16
 WrathgarMugData:
-#incbin "Dmp/Wrathgar(DerTheVaporeon)_mug.dmp"
-#incbin "Dmp/Wrathgar(DerTheVaporeon)_frames.dmp"
-#incbin "Dmp/Wrathgar(DerTheVaporeon)_palette.dmp"
-#incbin "Dmp/Wrathgar(DerTheVaporeon)_minimug.dmp"
-setMugEntry(WrathgarMug, WrathgarMugData, 2, 5, 2, 3)
+#incbin "Dmp/Wrathgar {Sterling Glovner}_mug.dmp"
+#incbin "Dmp/Wrathgar {Sterling Glovner}_frames.dmp"
+#incbin "Dmp/Wrathgar {Sterling Glovner}_palette.dmp"
+#incbin "Dmp/Wrathgar {Sterling Glovner}_minimug.dmp"
+setMugEntry(WrathgarMug, WrathgarMugData, 3, 4, 3, 2)
 
 ALIGN 16
 ValseMugData:
@@ -802,11 +802,11 @@ setMugEntry(TiberiusMug, TiberiusMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CidorYoungMugData:
-#incbin "Dmp/CidorYoung(Leche)_mug.dmp"
-#incbin "Dmp/CidorYoung(Leche)_frames.dmp"
-#incbin "Dmp/CidorYoung(Leche)_palette.dmp"
-#incbin "Dmp/CidorYoung(Leche)_minimug.dmp"
-setMugEntry(CidorYoungMug, CidorYoungMugData, 3, 6, 3, 4)
+#incbin "Dmp/CidorYoung(Levin)_mug.dmp"
+#incbin "Dmp/CidorYoung(Levin)_frames.dmp"
+#incbin "Dmp/CidorYoung(Levin)_palette.dmp"
+#incbin "Dmp/CidorYoung(Levin)_minimug.dmp"
+setMugEntry(CidorYoungMug, CidorYoungMugData, 2, 6, 3, 4)
 
 ALIGN 16
 DukeSeleseMugData:

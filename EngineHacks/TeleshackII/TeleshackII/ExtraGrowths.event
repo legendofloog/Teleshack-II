@@ -1,31 +1,40 @@
 // Con Growth Table
+
 SetUnitConGrowth(Cleo,15)
 SetUnitConGrowth(Loewe,10)
 SetUnitConGrowth(Iskra,5)
-SetUnitConGrowth(Mira,5)
+SetUnitConGrowth(Mira,1)
 SetUnitConGrowth(Emil,15)
 SetUnitConGrowth(Svetomir,20)
 SetUnitConGrowth(Alena,10)
+
 SetUnitConGrowth(Varga,15)
 SetUnitConGrowth(Delilah,5)
+
 SetUnitConGrowth(Alex,10)
 SetUnitConGrowth(Axel,10)
+
 SetUnitConGrowth(Filone,5)
 SetUnitConGrowth(Zwieback,15)
+
 SetUnitConGrowth(Leina,5)
 SetUnitConGrowth(Cromar,5)
+
 SetUnitConGrowth(Longxia,5)
 SetUnitConGrowth(Fangai,10)
+
 SetUnitConGrowth(Gimm,5)
 SetUnitConGrowth(Tobie,2)
 SetUnitConGrowth(Awa,25)
 SetUnitConGrowth(Cadenza,20)
 SetUnitConGrowth(Faolan,10)
-SetUnitConGrowth(Iberis,10)
 
+SetUnitConGrowth(Iberis,10)
 SetUnitConGrowth(Buldak,20)
+
 SetUnitConGrowth(Nora,10)
-SetUnitConGrowth(Hans,10)
+SetUnitConGrowth(Hans,15)
+
 SetUnitConGrowth(Jenny,10)
 SetUnitConGrowth(Meldan,15)
 SetUnitConGrowth(Valse,15)
@@ -51,7 +60,7 @@ SetUnitConGrowth(Shaw,15)
 SetUnitConGrowth(Apsis,4)
 SetUnitConGrowth(Ojasvi,1)
 SetUnitConGrowth(Darcy,20)
-SetUnitConGrowth(Groto,85)
+SetUnitConGrowth(Groto,50)
 SetUnitConGrowth(Tao,5)
 SetUnitConGrowth(Kofi,15)
 SetUnitConGrowth(Zhara,10)
@@ -103,6 +112,9 @@ SetUnitMovGrowth(Buldak, 2)
 
 SetUnitMovGrowth(Nora, 1)
 SetUnitMovGrowth(Hans, 4)
+
+SetUnitMovGrowth(Jenny, 3)
+SetUnitMovGrowth(Meldan, 1)
 
 SetUnitMovGrowth(Valse, 2)
 SetUnitMovGrowth(Hornet, 3)

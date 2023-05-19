@@ -32,8 +32,8 @@ beq	End
 ldrb	r1, [r4,#0x12]	@r1=maxhp
 mov r0, #heal5hp
 ldrb	r2, [r4,#0x13]	@r2=currhp
-@cmp	r1, r2		@check if hp is already max
-@beq	End
+cmp	r1, r2		@check if hp is already max
+beq	End
 add	r2, r0		@total healing
 cmp r2, #1    @is new hp<1?
 bge	StoreHP

@@ -203,10 +203,27 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
     if (!(gBattleHitIterator->attributes & BATTLE_HIT_ATTR_MISS) || attacker->weaponAttributes & (IA_UNCOUNTERABLE | IA_MAGIC)) {
         attacker->weapon = GetItemAfterUse(attacker->weapon);
 
-        if (!(attacker->weapon.number) && !(attacker->weapon.durability))
+        if ((attacker->weapon.number == 0) && (attacker->weapon.durability == 0))
             attacker->weaponBroke = TRUE;
     }
 }
+
+Item GetItemAfterUse(Item item) {
+    if (GetItemAttributes(item) & IA_UNBREAKABLE){
+		return item; // unbreakable items don't lose uses!
+	}
+
+    item.durability -= 1; // lose one use
+
+    if (item.durability == 0){
+		item.number = 0;
+		item.durability = 0;
+        return item; // return no item if uses < 0
+	}
+
+    return item; // return used item
+}
+
 /*
 s8 CanUnitUseWeapon(Unit* unit, Item item) {
     if (item.number == 0 && item.durability == 0){

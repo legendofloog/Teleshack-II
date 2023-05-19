@@ -13,17 +13,35 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0, IberisGreen, 1)
+TurnEventPlayer(0, Ch7ObjectiveExplanation, 1)
 TurnEventEnemy(0, YouSuck, 14)
 END_MAIN
+
+Ch7ObjectiveExplanation:
+CenterTextbox(InfoText)
+CameraCursor(Buldak)
+Text(BuldakIntroductionText)
+NoFade
+ENDA
 
 CharacterBasedEvents:
 CharacterEventBothWays(7, AxelTalkCh7, Axel, Korovai)
 CharacterEventBothWays(8, AlexTalkCh7, Alex, Korovai)
 CharacterEventBothWays(10, KorovaiTalkCh7, Loewe, Korovai)
 CharacterEventBothWays(10, KorovaiTalkCh7, Cleo, Korovai)
+CharacterEvent(11, IberisRecruitCh7, Iberis, Buldak)
 CharacterEventBothWays(11, RecruitCh7, 0, Buldak)
 END_MAIN
+
+IberisRecruitCh7:
+Text(Ch7BuldakRecruitWithIberis)
+SVAL s1 0x00000000
+CHAI Buldak
+CUSA Buldak
+SetFatigue(Buldak,0)
+ENUT 28
+NoFade
+ENDA 
 
 LocationBasedEvents:
 Door(2,12)
@@ -45,8 +63,84 @@ Vendor(Ch7Vendor,14,6)
 END_MAIN
 
 MiscBasedEvents:
+AFEV 24 MifanCaptureCheck 16
+AFEV 25 TheGiantCaptureCheck 17
+AFEV 26 YorCaptureCheck 18
+AFEV 27 WellworthCaptureCheck 19
+AFEV 30 BuldakCaptureCheck 29
+AFEV 31 BuldakRunsAway 28
 CauseGameOverIfLordDies
 END_MAIN
+
+BuldakRunsAway:
+CHECK_ALIVE Buldak
+BEQ 776 s0 sC
+	Text(Ch7BuldakBails)
+	SetAI(Buldak,6,0x0C,4,0)
+	ENUT 11
+LABEL 776
+NoFade
+ENDA
+
+MifanCaptureCheck:
+CHECK_EXISTS Mifan
+BEQ 2 s0 sC
+	Text(MifanCaptureQuoteText)
+	ENUF 16	//if capture flag is set, but death quote isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(MifanDeathQuoteText)
+NoFade
+ENDA
+
+TheGiantCaptureCheck:
+CHECK_EXISTS TheGiant
+BEQ 2 s0 sC
+	Text(TheGiantCaptureQuoteText)
+	ENUF 17	//if capture flag is set, but death quote isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(TheGiantDeathQuoteText)
+NoFade
+ENDA
+
+YorCaptureCheck:
+CHECK_EXISTS Yor
+BEQ 2 s0 sC
+	Text(YorCaptureQuoteText)
+	ENUF 18	//if capture flag is set, but death quote flag isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(YorDeathQuoteText)
+NoFade
+ENDA
+
+WellworthCaptureCheck:
+CHECK_EXISTS Wellworth
+BEQ 2 s0 sC
+	Text(WellworthCaptureQuoteText)
+	ENUF 19	//if capture flag is set, but death quote flag isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(WellworthDeathQuoteText)
+NoFade
+ENDA
+
+BuldakCaptureCheck:
+CHECK_EXISTS Buldak
+BEQ 2 s0 sC
+	Text(BuldakCaptureQuoteText)
+	ENUF 29	//if capture flag is set, but death quote flag isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(BuldakDeathQuoteText)
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -63,6 +157,7 @@ END_MAIN
 Units1:
 UNIT Cleo 0x0 Cleo Level(1,Ally,False) [22,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe 0x0 Cleo Level(1,Ally,False) [22,9] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iberis 0x0 Cleo Level(1,Ally,False) [21,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,9] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -78,7 +173,7 @@ UNIT
 EnemyUnits:
 UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,18] 0x0 0x0 0x0 0x0 [YorsYari] BossHealAI
 UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,3] 0x0 0x0 0x0 0x0 [Miaodao] PursueWithoutHeedAI
-UNIT Buldak Thief 0x0      Level(7,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [IronSword] BossHealAI
+UNIT Buldak Thief 0x0      Level(7,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] BossNoAttackAI
 UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [IceSword] BossHealAI
 UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [HandAxe] BossHealAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -121,7 +216,14 @@ UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [Iro
 UNIT
 
 NewRecruit:
-UNIT Iberis MageArmor 0x0      Level(7,NPC,False) [21,8] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT Iberis MageArmor 0x0 Level(7,Ally,False) [25,5] 0x0 0x0 0 0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(1,Ally,False) [26,5] 0x0 0x0 0 0 [0x0] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(1,Ally,False) [26,6] 0x0 0x0 0 0 [0x0] NoAI
+UNIT
+
+AlexAxelGroup:
+UNIT Axel 0x0 Cleo Level(1,Ally,False) [26,15] 0x0 0x0 1 REDA25R15 [0x0] NoAI
+UNIT Alex 0x0 Cleo Level(1,Ally,False) [26,15] 0x0 0x0 1 REDA27R15 [0x0] NoAI
 UNIT
 
 GreenUnits:
@@ -143,17 +245,15 @@ Traps2:
 
 BeginningScene:
 COUNTER_SET 0 0
-MountAll
-LOAD1 1 NewRecruit
+DismountAll
 LOAD1 1 EnemyUnits
 LOAD1 1 GreenUnits
+LOAD1 0 NewRecruit
 ENUN
 FADU 15
-MUSCFAST BattleWithThimale
-CAMERA Korovai
-CURSOR Korovai
-STAL 60
-REMOVE_CURSORS
+BROWNBOXTEXT ShagahnLocationText[8,8]
+MUSC BattleWithThimale
+CameraCursor(Korovai)
 MOVE 15 Korovai [3, 3]
 ENUN
 Text(KorovaiMifanText)
@@ -173,28 +273,34 @@ ENUN
 MOVE 15 Korovai [0, 2]
 ENUN
 Text(KorovaiEponyText)
-CURSOR TheGiant
-STAL 60
-REMOVE_CURSORS
+FlashCursor(TheGiant,60)
 Text(MifanGiantText)
 MOVE 15 Mifan [6, 8]
 ENUN
-CAMERA Wellworth
-CURSOR Wellworth
-STAL 60
-REMOVE_CURSORS
+CameraCursor(Wellworth)
 Text(WellworthMifanText)
 MOVE 15 Mifan [14, 3]
-MUSCFAST FFTAnxiety
-CAMERA Iberis
-CURSOR Iberis
-STAL 60
-REMOVE_CURSORS
+ENUN
+FadeOutMusic
+CamOn
+MOVE 15 Iberis [21,8]
+MOVE 15 Cleo [22,8]
+MOVE 15 Loewe [22,9]
+ENUN
+CamOff
+CameraCursor(Iberis)
+MUSC FFTAnxiety
 Text(LoeweCleoIberisText)
 CHECK_ALIVE Axel
 BEQ 1 s0 sC
 	CHECK_ALIVE Alex
 	BEQ 1 s0 sC
+		CamOn
+		LOAD1 0 AlexAxelGroup
+		ENUN
+		CamOff
+		FlashCursor(Alex,30)
+		FlashCursor(Axel,30)
 		Text(AxelAlexIfAliveText)
 LABEL 1
 CheckIfFatigued(Alex)
@@ -205,9 +311,12 @@ CheckIfFatigued(Axel)
 BEQ 421 s0 sC
 	SetFatigueOneLess(Axel)
 LABEL 421
-CenterTextbox(InfoText)
 SVAL s1 23
 SET_HP Mifan
+FADI 10
+MountAll
+STAL 10
+ENUN
 GotoPrepScreen
 NoFade
 ENDA
@@ -221,12 +330,6 @@ ENDA
 AlexTalkCh7:
 Text(AlexTalkCh7Text)
 GiveItem(Axle2,Alex)
-NoFade
-ENDA
-
-IberisGreen:
-CUSA Iberis
-SetFatigue(Iberis,0)
 NoFade
 ENDA
 
@@ -260,14 +363,12 @@ SVAL s1 0x00000000
 CHAI Buldak
 CUSA Buldak
 SetFatigue(Buldak,0)
+ENUT 28
 NoFade
 ENDA
 
 VillageCh7:
-Text(VillageCh7Text)
-GiveItem(KillerBow,0xFFFF)
-NoFade
-ENDA
+VillageEventItem(VillageCh7Text,House1,KillerBow)
 
 SupplyCh7:
 CenterTextbox(SupplyCh7Text)
@@ -329,14 +430,180 @@ Text(Rice3Ch7Text)
 GiveItem(RedGem,Cleo)
 GiveItem(BlueGem,Cleo)
 LABEL 3
-MUSCFAST WindyDaySoundEffect
-SetBackground(CastleRoom)
+FADI 10
+RemoveAll
+MountAll
+LOAD1 0 PostBattleGroup
+ENUN
+CAMERA_CENTERED Epony
+TILECHANGE 5
+STAL 60
+FadeOutMusic
+FADU 10
+FlashCursor(Epony,60)
+MUSC FF6EdgarAndSabin //add actual music here
 Text(EndEvent1Text)
-CHECK_ALIVE Buldak //had no conditional, so i added it - loog
-BEQ 776 s0 sC
-	SetBackground(VillageRoadSunset)
-	Text(EndEvent2Text)
+MOVE 15 Korovai [0,2]
+ENUN
+REMOVEUNIT Korovai
+STAL 10
+Text(EndEvent2Text)
+MOVE 15 Epony [0,2]
+ENUN
+REMOVEUNIT Epony
+STAL 10
+Text(EndEvent3Text)
+LABEL 420
+FADI 10
+RemoveAll
+CAMERA_CENTERED [4,10]
+STAL 60
+FadeOutMusic
+FADU 10
+FlashCursor(4,10,60)
+SetBackground(PrisonRoom)
+MUSC FF4RedWingsID
+Text(EndEvent4Text)
+CHECK_ALIVE Buldak //have buldak join mifan if not recruited
+BEQ 776 s0 sC //if he's alive, then he betrayed
+	Text(EndEvent5TextBuldakAliveBetrayed)
+	GOTO 777
 LABEL 776
+CHECK_EVENTID 29
+BNE 420 s0 sC //if buldak death quote set, then he gone
+	Text(EndEvent5TextBuldakAliveJoinsMifan) //if death quote not set, then he was captured or unrecruited
+	ENUT 0xA2 // global flag that indicates buldak is mifan's bud
+	GOTO 777
+LABEL 420
+Text(EndEvent5TextBuldakDead)
+LABEL 777
+FADI 10
+STAL 60
+EraseBackground
+CHECK_EVENTID 0xA2
+BEQ 333 s0 sC //if not set, skip
+	LOAD1 1 PostBattleMifanBuldakGroup
+	ENUN
+	GOTO 334
+LABEL 333
+LOAD1 1 PostBattleMifanGroup
+ENUN
+LABEL 334
+FlashCursor(Mifan,30)
+Text(EndEvent6Text)
+CamOn
+MOVE 15 Mifan [2,17]
+CHECK_EVENTID 0xA2
+BEQ 2222 s0 sC //if buldak not joining, skip
+	MOVE 15 Buldak [1,17]
+LABEL 2222
+ENUN
+CamOff
+BranchIfEnemyWasNotKilled(18, 778) //if yor lived, do not branch
+	CamOn
+	LOAD1 1 PostBattleYorGroup
+	ENUN
+	CamOff
+	FlashCursor(Yor,60)
+	Text(EndEvent7TextYorAlive)
+	ENUT 0xA3
+	GOTO 421
+LABEL 778
+Text(EndEvent7TextYorDead)
+LABEL 421
+CamOn
+MOVE 15 Mifan [5,3]
+CHECK_EXISTS Yor
+BEQ 222 s0 sC
+	MOVE 15 Yor [7,3]
+LABEL 222
+CHECK_EVENTID 0xA2
+BEQ 444 s0 sC //if buldak not joining, skip
+	MOVE 15 Buldak [6,4]
+LABEL 444
+ENUN
+CamOff
+BranchIfEnemyWasNotKilled(17, 779) //if the giant lived
+	CamOn
+	LOAD1 1 PostBattleTheGiantGroup
+	ENUN
+	CamOff
+	FlashCursor(TheGiant,60)
+	Text(EndEvent7TextTheGiantAlive)
+	ENUT 0xA4
+	GOTO 422
+LABEL 779
+Text(EndEvent7TextTheGiantDead)
+LABEL 422
+CAMERA_CENTERED [2,8]
+STAL 30
+BranchIfEnemyWasNotKilled(19, 780) //if wellworth lived
+	CamOn
+	LOAD1 1 PostBattleWellworthGroup
+	ENUN
+	CamOff
+	FlashCursor(Wellworth,60)
+	Text(EndEvent7TextWellworthAlive)
+	ENUT 0xA5
+	GOTO 423
+LABEL 780
+Text(EndEvent7TextWellworthDead)
+LABEL 423
+CameraCursor(Mifan)
+Text(EndEvent8Text)
+CHECK_EXISTS Yor
+BEQ 40 s0 sC
+	SingleUnitMoveThenErase(Yor, 15, 0, 3)
+LABEL 40
+CHECK_EXISTS TheGiant
+BEQ 50 s0 sC
+	SingleUnitMoveThenErase(TheGiant, 15, 0, 3)
+LABEL 50
+CHECK_EXISTS Wellworth
+BEQ 60 s0 sC
+	SingleUnitMoveThenErase(Wellworth, 15, 0, 3)
+LABEL 60
+CHECK_EVENTID 0xA2
+BEQ 70 s0 sC
+	SingleUnitMoveThenErase(Buldak, 15, 0, 3)
+LABEL 70
+STAL 60
+SingleUnitMoveThenErase(Mifan, 5, 0, 3)
+FADI 10
+//add capturee stuff here
 MNC2 Chapter8
 NoFade
 ENDA
+
+
+
+
+
+
+PostBattleGroup:
+UNIT Korovai DukeKnight Epony Level(1,NPC,False) [2,1] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT Epony Noble_F 0x0 Level(7,NPC,False) [1,1] 0x0 0x0 0x0 0x0 [ShortSword] BossHealAI
+UNIT Cleo Skyseeker Cleo Level(1,Ally,False) [1,3] 0x0 0x0 0 0 [0x0] NoAI
+UNIT Loewe Scaleshot Cleo Level(1,Ally,False) [2,3] 0x0 0x0 0 0 [0x0] NoAI
+UNIT
+
+PostBattleMifanGroup:
+UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,10] 0x0 0x0 0 0 [Miaodao] PursueWithoutHeedAI
+UNIT
+
+PostBattleMifanBuldakGroup:
+UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,10] 0x0 0x0 0 0 [Miaodao] PursueWithoutHeedAI
+UNIT Buldak Thief 0x0      Level(7,Enemy,False) [3,10] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] BossHealAI
+UNIT
+
+PostBattleYorGroup:
+UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,19] 0x0 0x0 1 REDA2R19 [YorsYari] BossHealAI
+UNIT
+
+PostBattleTheGiantGroup:
+UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [3,2] 0x0 0x0 1 REDA4R3 [HandAxe] BossHealAI
+UNIT
+
+PostBattleWellworthGroup:
+UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [4,9] 0x0 0x0 1 REDA6R3 [IceSword] BossHealAI
+UNIT

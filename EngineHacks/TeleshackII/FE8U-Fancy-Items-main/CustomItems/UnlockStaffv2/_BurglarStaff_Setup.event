@@ -51,7 +51,7 @@ BurglarStaff_Unlock:
 #include "EAstdlib.event"
 
 //Event Stuff
-	
+	ALIGN 4
 	Unlock_ChestEvent:
 	//_6C_WHILE_EXISTS(0x8591AC0)
 	//_6C_SLEEP(0x20)
@@ -61,32 +61,9 @@ BurglarStaff_Unlock:
 	_6C_WHILE_ROUTINE(0x0800D198|1)	//while map event engine exists
 	_6C_END
 
+ALIGN 4
 ASRewardFromChestAt:
 #include "Effect/GiveItemFromChestAt.lyn.event"
-POIN ASGiveCashEvent ASGiveItemEvent
-
-ALIGN 4
-ASGiveItemEvent:
-{
-//CAM1 0xFFFF
-//CUMO 0xFFFF
-//STAL 0x24
-//CURE
-GIVEITEMTO 0xFFFF
-NoFade 
-ENDA
-}
-ALIGN 4
-ASGiveCashEvent:
-{
-//CAM1 0xFFFF
-//CUMO 0xFFFF
-//STAL 0x24
-//CURE
-GIVEITEMTO 0x0
-NoFade 
-ENDA
-}
-ALIGN 4
+POIN NewChestGiveItemEvent
 
 //AI Stuff here

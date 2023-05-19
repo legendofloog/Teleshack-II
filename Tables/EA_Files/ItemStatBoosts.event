@@ -129,26 +129,20 @@ ALIGN 4
 LeatherShieldStatBoosts:
 StatBonus(0,0,0,0,0,2,0,0,0,0)
 
-ALIGN 4
-ZykhraScrollBoosts:
-GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra
-
-ALIGN 4
-AmserScrollBoosts:
-GrowthBonus(0,0,0,0,0,(-15),(-15),0,10,0) // 0x5 - Amser
-
 
 ALIGN 4
 GrowthScrollBonusesTable:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
-GrowthBonus(0,10,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr
+GrowthBonus(0,15,0,10,0,0,0,10,0,0)    // 0x1 - Beiyr
 GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra
-GrowthBonus((-10),0,10,10,10,0,0,0,0,0) // 0x3 - Raio
-GrowthBonus(20,0,0,0,0,0,0,20,0,0) // 0x4 - Luzen
-GrowthBonus(0,0,0,0,0,(-15),(-15),0,10,0) // 0x5 - Amser
-GrowthBonus(5,5,5,5,0,0,0,0,0,0) // 0x6 - WornScroll 
+GrowthBonus((-10),0,10,10,15,0,0,0,0,0) // 0x3 - Raio
+GrowthBonus(30,0,0,0,0,0,0,20,0,0) // 0x4 - Luzen
+GrowthBonus((-10),0,0,0,0,(-20),(-20),0,15,0) // 0x5 - Amser
+GrowthBonus(3,3,3,3,3,3,3,3,3,3) // 0x6 - WornScroll 
 GrowthBonus((-5),5,20,5,0,(-10),20,0,0,0) // 0x7 - Dreedur
 GrowthBonus((-66),13,13,13,13,13,13,(-66),(-66),(-66)) // 0x8 - Cherne
+GrowthBonus(0,0,15,0,0,0,0,20,0,0) //0x9 - Egan
+GrowthBonus(20,0,0,(-10),(-15),20,0,0,0,10) //0xa - Brynja
 // GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB)
 
 
@@ -160,3 +154,5 @@ GrowthBonus((-66),13,13,13,13,13,13,(-66),(-66),(-66)) // 0x8 - Cherne
 #define WornScroll 0x6
 #define DreedurScroll 0x7
 #define CherneScroll 0x8
+#define EganScroll 0x9
+#define BrynjaScroll 0xa

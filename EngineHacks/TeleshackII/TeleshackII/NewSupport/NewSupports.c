@@ -321,3 +321,104 @@ void New_DrawUnitScreenSupportList(){
 		cnt++;
 	}
 }
+
+void ClearUnitSupports(struct Unit* unit){
+    
+    if(gSkillTester(unit,DullahanIDLink)){
+        return; //no wipe
+    }
+    int i, count = GetROMUnitSupportCount(unit);
+
+    for (i = 0; i < count; ++i)
+    {
+        struct Unit* other = GetUnitSupportingUnit(unit, i);
+
+        if (!other)
+            continue;
+
+        other->supports[GetSupportDataIdForOtherUnit(other, unit->pCharacterData->number)] = 0;
+        unit->supports[i] = 0;
+    }
+}
+
+
+/*
+void SupportSubScreen_SetupGraphics(struct SubScreenProc* proc) {
+    gLCDControlBuffer.dispcnt.mode = 0;
+
+    SetupBackgrounds(0);
+
+    gLCDControlBuffer.bg0cnt.priority = 1;
+    gLCDControlBuffer.bg1cnt.priority = 3;
+    gLCDControlBuffer.bg2cnt.priority = 1;
+    gLCDControlBuffer.bg3cnt.priority = 3;
+
+    Font_InitForUIDefault();
+    ResetIconGraphics_();
+
+    LoadUiFrameGraphics();
+    LoadObjUIGfx();
+
+    SetupMapSpritesPalettes();
+    sub_80A221C();
+    LoadIconPalettes(0xd);
+
+    NewGreenTextColorManager((void*)proc);
+
+    if (!proc->fromPrepScreen) {
+        gPlaySt.cfgTextSpeed = 1; // TODO: Text speed constants
+
+        ResetPrepScreenHandCursor(proc);
+        sub_80AD4A0(0x600, 1);
+        sub_80AD594(1);
+
+        proc->unk_3a = -1;
+
+        if (proc->unk_3b != 0) {
+            ShowPrepScreenHandCursor(
+                (proc->unk_39 & 3) * 8 + 0xc4,
+                ((proc->unk_39 >> 2) & 7) * 16 + 0x18,
+                1,
+                0x800
+            );
+        }
+    }
+
+    BG_SetPosition(0, 4, 0);
+    BG_SetPosition(1, 4, 0);
+    BG_SetPosition(2, 0, 0);
+
+    SetSpecialColorEffectsParameters(1, 0xd, 3, 0);
+    SetBlendTargetA(0, 1, 0, 0, 0);
+    SetBlendTargetB(0, 0, 0, 1, 0);
+
+    sub_8001F48(0);
+    sub_8001F64(0);
+
+    EndSlidingWallEffectMaybe();
+
+    sub_8098C3C(0x4000, 5);
+
+    Decompress(gTsa_SupportSubScreen, gGenericBuffer);
+    CallARM_FillTileRect(gBG1TilemapBuffer, gGenericBuffer, 0x1000);
+
+    PutFace80x72(
+        (struct Proc*)proc,
+        gUnknown_02022CEC,
+        gCharacterData[GetSupportScreenCharIdAt(proc->unitIdx) - 1].portraitId,
+        0x200,
+        2
+    );
+
+    DrawSupportSubScreenUnitPartnerDetails(proc);
+    DrawSupportSubScreenRemainingText(proc);
+
+    Decompress(gGfx_SupportMenu, (void*)0x06017800);
+    CopyToPaletteBuffer(gPal_SupportMenu, 0x340, 0x20);
+    CopyToPaletteBuffer(Pal_MapBattleInfoNum, 0x240, 0x20);
+
+    StartParallelWorker(DrawSupportSubScreenSprites, proc);
+
+    return;
+}
+*/

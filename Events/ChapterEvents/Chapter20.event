@@ -175,8 +175,8 @@ UNIT
 	
 Amongitis:
 UNIT Jerry Warrior Loewe Level(3,Enemy,False) [6,0] 0 0 1 REDA4R2 [SteelAxe,DevilAxe,PureWater,] [0x6,0x3,0x4,0x20]
-UNIT Lyre Dracoknight Cleo Level(2,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
-	UNIT
+UNIT Lyre Dracoknight_F Cleo Level(2,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
+UNIT
 
 SussySpawns: // :zany_face:
 UNIT C20Enemy Soldier 0x0 Level(17,Enemy,True) [0,15] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI

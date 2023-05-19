@@ -85,9 +85,15 @@ cmp r0,#3 @Staff; additional fatigue from staff usage is handled elsewhere
 beq IncrementAttackerFatigue
 cmp r0,#4 @Dance/Play
 beq IncrementAttackerFatigue
-cmp r0,#6 @Steal
+cmp r0,#6 @Steal; additional fatigue from steal usage is handled elsewhere
 beq IncrementAttackerFatigue
 cmp r0,#7 @Summon
+beq IncrementAttackerFatigue
+cmp r0, #9 @Rescue
+beq IncrementAttackerFatigue
+cmp r0, #0xA @Drop
+beq IncrementAttackerFatigue
+cmp r0, #0x15 @Pick
 beq IncrementAttackerFatigue
 cmp r0,#0x23 @reposition
 beq IncrementAttackerFatigue

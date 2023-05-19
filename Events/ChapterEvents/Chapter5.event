@@ -101,7 +101,7 @@ LoadUnit(17,27)
 UNIT
 	
 EnemyUnits:
-UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GoddessIcon] AttackInRangeAI
+UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GrowthScroll] AttackInRangeAI
 UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [13,7] 0x0 0x0 0x0 0x0 [Flux,Heal] TwoActionAI
 UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [Heal,Vulnerary] TwoActionAI
 UNIT
@@ -289,6 +289,7 @@ ENUT GuideUnlockElmhurstIsland
 FADI 15
 LOAD1 1 EnemyUnits2
 ENUN
+SetUnitItemDurability(Riggan,1,EganScroll)
 MountAll
 STAL 3
 GotoPrepScreen

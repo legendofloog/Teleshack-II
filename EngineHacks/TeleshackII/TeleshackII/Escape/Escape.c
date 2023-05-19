@@ -70,35 +70,13 @@ int EscapeCommandEffect(MenuProc* proc){
     PlayEscapeQuote();
     EscapeState |= ES_ESCAPE;
     gActionData.unitActionType = UNIT_ACTION_WAIT;
+    
     gActiveUnit->state |= (US_HIDDEN);
     if (gActiveUnit->rescueOtherUnit != 0){
         GetUnit(gActiveUnit->rescueOtherUnit)->state |= (US_HIDDEN);
     }
     return 0x94;
 
-}
-
-void PlayEscapeQuote(){
-    CallMapEventEngine(EscapeQuoteEvent, EV_RUN_CUTSCENE);
-    return;
-}
-
-void ReturnEscapeQuote(){
-    int charID = gEventSlot[0x2];
-    CharEscapeQuoteEntry* charEscapeQuoteList = CharEscapeQuoteEntriesTable[charID];
-    int cnt = 0;
-    while (charEscapeQuoteList[cnt].chapterID != 0xFF){
-        if (charEscapeQuoteList[cnt].chapterID == gChapterData.chapterIndex){
-            gEventSlot[0x2] = charEscapeQuoteList[cnt].textID;
-            return;
-        }
-        cnt++;
-    }
-}
-
-void EscapeEventCall(){
-    CallMapEventEngine(RequiredEscapeeEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
-    return;
 }
 
 void EscapeEventYes(){
@@ -113,9 +91,32 @@ void EscapeEventYes(){
     return;
 }
 
+void PlayEscapeQuote(){
+    CallMapEventEngine(EscapeQuoteEvent, EV_RUN_CUTSCENE);
+    return;
+}
+
 void PlayFinalEscapeQuote(){
     CallMapEventEngine(FinalEscapeQuoteEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
     return;
+}
+
+void EscapeEventCall(){
+    CallMapEventEngine(RequiredEscapeeEvent, EV_RUN_CUTSCENE); //offer choice via text event between going through with the escape or rejecting it (Yes/No)
+    return;
+}
+
+void ReturnEscapeQuote(){
+    int charID = gEventSlot[0x2];
+    CharEscapeQuoteEntry* charEscapeQuoteList = CharEscapeQuoteEntriesTable[charID];
+    int cnt = 0;
+    while (charEscapeQuoteList[cnt].chapterID != 0xFF){
+        if (charEscapeQuoteList[cnt].chapterID == gChapterData.chapterIndex){
+            gEventSlot[0x2] = charEscapeQuoteList[cnt].textID;
+            return;
+        }
+        cnt++;
+    }
 }
 
 void ReturnFinalEscapeQuote(){

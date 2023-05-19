@@ -643,31 +643,13 @@ NoFade
 ENDA
 
 Ch6Village1Event:
-	SetBackground(House1)
-	Text(Ch6Village1)
-	EraseBackground
-	STAL 10
-	GiveItem(Javelin,-1)
-NoFade
-ENDA
+VillageEventItem(Ch6Village1,House2,KillingEdge)
 
 Ch6Village2Event:
-	SetBackground(House1)
-	Text(Ch6Village2)
-	EraseBackground
-	STAL 10
-	GiveItem(Mend,-1)
-NoFade
-ENDA
+VillageEventItem(Ch6Village2,House1,Mend)
 
 Ch6Village3Event:
-	SetBackground(House1)
-	Text(Ch6Village3)
-	EraseBackground
-	STAL 10
-	GiveItem(Lightning,-1)
-NoFade
-ENDA
+VillageEventItem(Ch6Village3,House1,Lightning)
 
 
 Ch6Reinforce1:

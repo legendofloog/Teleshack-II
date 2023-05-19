@@ -1,17 +1,5 @@
 #include "Escape.lyn.event"
 
-ALIGN 4
-RequiredEscapeesTable:
-#include "RequiredEscapeesTable.event"
-
-ALIGN 4
-RequiredCharFinalEscapeQuoteEntriesTable:
-#include "RequiredCharFinalEscapeQuoteEntriesTable.event"
-
-ALIGN 4
-CharEscapeQuoteEntriesTable:
-#include "CharEscapeQuoteEntriesTable.event"
-
 #define JailOneUnitASMC(charID) "SVAL s1 charID; ASMC JailOneUnit"
 #define EndOfEscapeRoutineASMC "ASMC EndOfEscapeRoutine"
 
@@ -40,13 +28,23 @@ CharEscapeQuoteEntriesTable:
 #define SetCharEscapeQuoteList(character, list) "PUSH; ORG CharEscapeQuoteEntriesTable + (character*4); POIN list; POP"
 #define SetRequiredCharFinalEscapeQuoteList(character, list) "PUSH; ORG RequiredCharFinalEscapeQuoteEntriesTable + (character*4); POIN list; POP"
 
-#define UndoCleoJailed "ASMC UndoCleoJailedASMC"
-
 #include "EscapeEndEvent.event"
 
 #include "EscapeQuoteEvent.event"
 
 #include "LoadCaptured/Installer.event"
+
+ALIGN 4
+RequiredEscapeesTable:
+#include "RequiredEscapeesTable.event"
+
+ALIGN 4
+RequiredCharFinalEscapeQuoteEntriesTable:
+#include "RequiredCharFinalEscapeQuoteEntriesTable.event"
+
+ALIGN 4
+CharEscapeQuoteEntriesTable:
+#include "CharEscapeQuoteEntriesTable.event"
 
 ALIGN 4
 Chapter1EscapeeList:
@@ -552,4 +550,5 @@ InterludeJoinTableEntry(Chapter19,Groto)
 InterludeJoinTableEntry(Chapter19,Tao)
 InterludeJoinTableEntry(Chapter19,Zhara)
 InterludeJoinTableEnd
+
 

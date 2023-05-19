@@ -29,6 +29,8 @@ PUSH
 ORG $D2F8
 POIN NewChestGiveItemEvent
 POP
+
+
 ALIGN 4
 NewChestGiveItemEvent:
     // s3 is item id or gold amt
@@ -48,5 +50,6 @@ LABEL 0
     GIVEITEMTOMAIN 0xFFFF
 
 LABEL 1
+    NoFade
     ENDA
 

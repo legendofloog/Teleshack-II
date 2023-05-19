@@ -72,10 +72,10 @@ Tutorial:
 END_MAIN
 
 Traps1:
-RedSigil(21,10)
-RedSigil(21,11)
-RedSigil(21,12)
-RedSigil(21,13)
+BlueSigil(21,10)
+BlueSigil(21,11)
+BlueSigil(21,12)
+BlueSigil(21,13)
 ENDTRAP
 ALIGN 4
 

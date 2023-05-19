@@ -41,6 +41,7 @@ MountedUnmounted(RookKnight, RookKnight_Dismounted)
 MountedUnmounted(GoldKnight, GoldKnight_Dismounted)
 MountedUnmounted(Troubadour, Troubadour_Dismounted)
 MountedUnmounted(Paladin, Paladin_Dismounted)
+MountedUnmounted(Dracoknight_F,Dracoknight_F_Dismounted)
 EndMountUnmountedTable
 
 #define rIfUnitIsDismounted(dismountType)            "rWithConstant(dismountType); rIf(MSG_prCheckDismountedType)"

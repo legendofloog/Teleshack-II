@@ -71,7 +71,8 @@ A bow with exceptional range.[X]
 Beiyr Scroll[X]
 
 ## BeiyrScrollDesc
-+10% Str +10% Skl +10% Lck.[X]
++15% Str, +10% Skl/Lck.[N]
+Blocks crits.[X]
 
 ## TemperedName
 [_T][_e]m[_p][_e][_r][_e][_d][_sp][_R]i[_n][_g][X]
@@ -173,7 +174,7 @@ Restore life to all units on the map.[X]
 Devil's Dagger[X]
 
 ## DevilDaggerDesc
-Ignores Mish's Atk and enemy Def. Devil.[X]
+Fixed damage of 10. (25-Lck)% backfire.[X]
 
 ## BalladOfWarName ^
 Ballad of War[X]
@@ -215,8 +216,8 @@ Can strike consecutively.[X]
 Zykhra Scroll[X]
 
 ## ZykhraScrollDesc
-+10% HP, +10% Str, +10% Def,[N]
-+10% Bld, -10% Spd[X]
++10% HP/Str/Def/Bld, -10% Spd.[N]
+Blocks crits.[X]
 
 ## GrowthScrollName
 Growth Scroll[X]
@@ -261,14 +262,15 @@ Promotion item for Cleo.[X]
 Raio Scroll[X]
 
 ## RaioScrollDesc
-+10% Mag, +10% Skl, +10% Spd,[N]
--10% HP[X]
++10% Mag/Skl, +15% Spd, -10% HP.[N]
+Blocks crits.[X]
 
 ## LuzenScrollName
 Luzen Scroll[X]
 
 ## LuzenScrollDesc
-+20% HP, +20% Lck[X]
++30% HP, +20% Lck.[N]
+Blocks crits.[X]
 
 ## DarkbrandName
 Darkbrand[X]
@@ -401,7 +403,8 @@ Currently does nothing lol.[X]
 Amser Scroll[X]
 
 ## AmserScrollDesc
-+10% Mov -15% Def -15% Res.[X]
++15% Mov, -10% HP, -20% Def/Res.[N]
+Blocks crits.[X]
 
 ## UnmoorName
 Unmoor[X]
@@ -476,9 +479,8 @@ Can be used to greatly heal allies.[X]
 Worn Scroll[X]
 
 ## WornScrollDesc
-Some power still lingers[N]
-within this faded scroll.[N]
-+5% HP, +5% Str, +5% Mag, +5% Skl[X]
+Some power lingers in faded scroll.[N]
++3% to all stats. Blocks crits.[X]
 
 ## WindBowName
 Wind Bow[X]
@@ -582,16 +584,15 @@ Arcane arrows with long range.[X]
 Dreedur Scroll[X]
 
 ## DreedurScrollDesc
--5% HP, +5% Str,[N]
-+20% Mag, +5% Skl,[N]
--10% Def, +20% Res[X]
++5% Str/Skl, +20% Mag/Res, -5% HP,[N]
+-10% Def. Blocks crits.[X]
 
 ## CherneScrollName ^
 Cherne Scroll[X]
 
 ## CherneScrollDesc
 Scrawlings of a raving mind.[N]
-Modifies the user's growths.[X]
+Modifies user's growths and blocks crits.[X]
 
 ## KukriName
 Kukri[X]
@@ -825,3 +826,20 @@ Heals a distant ally for (Mag + 10) HP.[X]
 ## FortifyDesc
 Heals all allies in range[N]
 for (Mag + 15) HP.[X]
+
+## EganScrollName
+Egan Scroll[X]
+
+## EganScrollDesc
+A scroll said to impart arcane strength.[N]
++15% Mag, +20% Lck. Blocks crits.[X]
+
+## BrynjaScrollName
+Brynja Scroll[X]
+
+## BrynjaScrollDesc
++20% HP/Def, +10% Bld, -10% Skl,[N]
+-15% Spd. Blocks crits.[X]
+
+## DevilAxeDesc
+Grants 2 WEXP. (25-Lck)% backfire.[X]

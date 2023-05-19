@@ -263,46 +263,10 @@
 #define MureibFinal 0xD8
 
 
-#define Bazba 0x48
-#define Entombed_boss 0x49
-#define Saar 0x4A
-#define Novala 0x4B
-#define Murray 0x4C
-#define Tirado 0x4D
-#define Binks 0x4E
-#define Macdaire 0x50
-#define Maelduin_boss 0x50
-#define Aias 0x51
-#define Gorgon_boss 0x56
-#define Riev 0x57
-#define Gheb 0x5A
-#define Wight_boss 0x5D
-#define Deathgoyle_boss 0x5E
-#define Zonta 0x6A
-#define Vigarde 0x6B
-#define Lyon_Final 0x6C
-#define Orson_Boss 0x6D
-#define Fomortiis 0xBE
-#define Fado 0xC5
-#define Hayden 0xC7
-#define Mansel 0xC8
-#define Klimt 0xC9
-#define Dara 0xCA
-#define Ismaire 0xCB
-#define PegasusMessenger 0xCC
-#define RiverFolkChild_F 0xF4
-#define RiverFolk_F 0xF5
-#define RiverFolk 0xF6
-#define RiverFolk_F_2 0xF7
-#define RiverFolkChild 0xF8
-#define RenaisCivilianChild_F 0xF9
-#define RenaisCivilian 0xFA
-#define RenaisCivilian_F 0xFB
-#define OldCivilian 0xFC
 #define Wall 0xFE
 #define Snag 0xFF
 
-
+#define ImposterCharID 0xE0
 
 // TalkAI Defs
 

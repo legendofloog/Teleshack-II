@@ -9,6 +9,9 @@ void UnitChangeClass(Unit* unit, const ClassData* newClass);
 void DismountAllASMC();
 void MountAllASMC();
 bool CheckIfDismountLocationLegal(Unit* unit);
+extern u8 MountedInPrepsTable[];
+void ApplyUnitPromotion(struct Unit* unit, u8 classId);
+
 
 typedef struct DismountEntry DismountEntry;
 

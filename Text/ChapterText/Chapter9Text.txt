@@ -1,7 +1,7 @@
-##Chapter9Title
+## Chapter9Title
 Ch9: Reap What You Sow[X]
 
-##Ch9OpeningText
+## Ch9OpeningText
 [MidLeft][LoadCleo]
 [MidRight][LoadLoewe]
 [Beat]So what is our next goal?[AN]
@@ -40,26 +40,26 @@ buy ourselves time to escape.[AN]
 [Beat]It'll have to do.[N]
 Let's go join the others.[A][X]
 
-##Ch9WrathgarRant
+## Ch9WrathgarRant
 [FarLeft][LoadSoldier]
 [Left][LoadSoldier]
 They're almost here![AN]
 Soon I'll be able to[N]
 avenge me folks![AN]
 [MidRight][LoadWrathgar]
-Oho? Now that's the spirit![AN]
-I know ya'll have[Beat][Beat][N]
+Oh? Now that's the spirit![AN]
+I know y'all have[Beat][Beat][N]
 Mixed feelings on o' empire.[AN]
-But we've got ya backs![N]
+But we've got yer backs![N]
 Go give em' hell![AN]
 [Left]
 Yes Sir![AN]
 [ClearFace]
 [FarLeft][ClearFace]
 [MidRight]
-[Beat]Daft pigs.[AN]
-Give em slop and they'll[N]
-feed on up.[AN]
+[Beat]Daft pigs.[AN][ToggleSmile]
+Give em slop,[N]
+and they'll feed on up.[AN]
 Gotta thank them rebels for[N]
 givin' us good slop though.[AN]
 Gwahahaha![AN]
@@ -67,7 +67,7 @@ Gwahahaha![AN]
 [FarLeft][LoadJenny]
 [Beat][A][X]
 
-##MeldanWorryText
+## MeldanWorryText
 [MidRight][LoadMeldan]
 [Beat]Oh Helman, what have I[N]
 gotten myself into now?[AN]
@@ -128,22 +128,22 @@ No need to thank me![AN]
 [Beat]Phew, looks like[N]
 they bought it.[A][X]
 
-##WrathgarBossQ
+## WrathgarBossQ
 [MidRight][LoadWrathgar]
-So! You've arrived![N]
+So, you've arrived![N]
 Gwahahaha![AN]
 May the worst man win![A][X]
 
-##JennyBossQ
+## JennyBossQ
 [MidRight][LoadJenny]
-[Beat]I'm sorry sis.[N]
-I hope you can forgive me.[A][X]
+Didn't wanna do this[Beat][N]
+But it's you or me![A][X]
 
-##MeldanBossQ
+## MeldanBossQ
 [MidRight][LoadMeldan]
-[Beat]Oh!!! I guess[N]
-we're fighting!?![AN]
-Well, no hard feelings[N]
+[Beat]Oh! I guess[N]
+we're fighting?![AN]
+Well, no hard feelings,[N]
 I hope? Oh dear[Beat][A][X]
 
 ##Ch9EndingText
@@ -209,3 +209,73 @@ Nevermind for now. We need[N]
 to focus. On what comes next.[A]
 [FarLeft]
 Right. Let's.[A][X]
+
+## Ch9KillerAxeText
+[MidLeft][LoadMiddleAgedBlondVillager]
+[MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+Eh? Who the blazes are ya?[AN]
+More of them damned Cythean[N]
+curs askin' me to raise m' axe,[N]
+or countrymen bowin' at their feet?[AN]
+[Beat]Yer with the Liberators, hm?[AN]
+Heh, thought I'd never see the day.[N]
+Not a lotta folks come through this[N]
+forest, 'cept empire bootlickers.[AN]
+Just a few days ago, a real nasty[N]
+piece of work went house to house,[N]
+tryin' to rouse us against you lot.[AN]
+Those who tried to tell him no[Beat][N]
+Well, ya see the homes around here.[AN]
+I told the dastard that he'd get my ol'[N]
+woodcuttin' axe to get him off my back,[N]
+but y'all came at a great time.[AN]
+Take this axe and kill Wrathgar![AN][X]
+
+## Ch9RedScarfText
+[MidLeft][LoadOldWomanVillager]
+[MidRight][LoadActive]
+[MidLeft][ThreeLineBox]
+A visitor? Not often we get your like[N]
+'round here[Beat] And a rebel, ya say?[N]
+Then I reckon there's no time fer tea.[AN]
+I was hopin' to give ya a bit of rest,[N]
+given how much y'all are doing for us[Beat][N]
+I've heard th' rumors, but I'm no fool.[AN]
+Long as them Cytheans have been here,[N]
+they've tried to make us fight our own.[N]
+That tool Wrathgar ain't the first.[AN]
+But too many listened, and fer what?[N]
+Bread on th' table? Gold in yer pockets?[N]
+Even my own[Beat] Ah, sorry 'bout that.[AN]
+Talked yer ear right off, eh?[N]
+Before ya go, let me give ya this.[AN]
+I knitted this scarf fer my grandson,[N]
+and[Beat] Well, no use keepin' it now.[N]
+Hopefully, it'll do ya some good.[AN][X]
+
+## Ch9BrigandText
+[MidLeft][Load9Brigand1][ThreeLineBox]
+Heh heh heh[Beat] Lookie here![AN]
+Two of them armies fightin',[N][.4]
+and neither the wiser to us![AN]
+Not much left to pillage,[N][.4]
+thanks to them Cytheans[N]
+getting here faster 'n us[Beat][AN]
+But better than nothin',[.4] I say.[N][.5]
+Just gotta raze what's left[N]
+and skedaddle with the score![AN][X]
+
+## Ch9JennyFleesText
+[MidLeft][LoadJenny]
+Looks like these Liberators are bad news,[N]
+after all[Beat] Gotta change my plans.[AN]
+I ain't gonna die like this,[N]
+so it's time to [Red]run,[Red] fast![AN][X]
+
+## Ch9MeldanFleesText
+[MidLeft][LoadMeldan]
+Oh, no! I wasn't expecting that[N]
+I would actually need to fight![AN]
+Helman, I know what you would say[Beat][N]
+But I don't care! I'm [Red]fleeing![Red][AN][X]

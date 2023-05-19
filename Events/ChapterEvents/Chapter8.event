@@ -13,8 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0, Recruit, 1)
-TurnEventPlayer(0, FrancisReinforcements, 9)
+TurnEventPlayer(0, FrancisReinforcements, 8)
 TurnEventEnemy(0, Warning, 3)
 	END_MAIN
 
@@ -25,12 +24,12 @@ CharacterEventBothWays(11, LoeweTobieTalkCh8, Tobie, Loewe)
 	END_MAIN
 
 MiscBasedEvents:
-	CauseGameOverIfLordDies
-	END_MAIN
+CauseGameOverIfLordDies
+END_MAIN
 
 LocationBasedEvents:
-Chest(ZykhraScrollID,2,2)
-Chest(KillerAxe, 18,2)
+DurabilityChest(GrowthScroll,ZykhraScroll,2,2)
+Chest(Malkhut, 18,2)
 LOCA 3 [10,1] 0x11
 END_MAIN
 
@@ -53,6 +52,8 @@ Tutorial:
 Units1:
 UNIT Cleo 0x0 Cleo Level(1,Ally,False) [9,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe 0x0 Cleo Level(1,Ally,False) [10,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Hans 0x0 Cleo Level(7,Ally,False) [8,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
+UNIT Nora 0x0 Cleo Level(7,Ally,False) [11,22] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -61,50 +62,50 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [8,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [7,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [12,24] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 EnemyUnits:
 UNIT Hege Hero_F 0x0 Level(1,Enemy,False) [10,1] 0x0 0x0 0x0 0x0 [GreatSword,HandAxe,Dragonshield] BossAI
-UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
-UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [Flux,ChestKey] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] PursueWithoutHeedAI
-UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [15,23] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
-UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,21] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
-UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [6,15] 0x0 0x0 0x0 0x0 [Flux] BossAI
-UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [Thunder] BossAI
-UNIT Chapter1Generics MageArmor Hege Level(8,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [Thunder] BossAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [Javelin] BossAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [16,17] 0x0 0x0 0x0 0x0 [Javelin] BossAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [17,17] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [1,10] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
-UNIT Chapter1Generics LanceArmor Hege Level(8,Enemy,True) [12,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
-UNIT Chapter1Generics AxeArmor Hege Level(8,Enemy,True) [17,0] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [9,7] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] TwoActionAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
-UNIT Chapter1Generics Archer Hege Level(8,Enemy,True) [19,20] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
-UNIT Chapter1Generics AxeFighter Hege Level(8,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
-UNIT Chapter1Generics Myrmidon Hege Level(8,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [17,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [9,13] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] AttackInRangeAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [12,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT Chapter1Generics SwordFighter Hege Level(8,Enemy,True) [13,5] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [14,6] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
-UNIT Chapter1Generics LanceSoldier Hege Level(8,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] TwoActionAI
-UNIT Chapter1Generics AxeSoldier Hege Level(8,Enemy,True) [5,7] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI
-UNIT Chapter1Generics DarkMage Hege Level(8,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
-UNIT Chapter1Generics Mage Hege Level(8,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
-	UNIT
+UNIT Cythes SwordFighter Hege Level(8,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
+UNIT Cythes DarkMage Hege Level(8,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [Flux,ChestKey] PursueWithoutHeedAI
+UNIT Cythes AxeSoldier Hege Level(8,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier Hege Level(8,Enemy,True) [14,22] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] PursueWithoutHeedAI
+UNIT Cythes AxeFighter Hege Level(8,Enemy,True) [15,23] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes Myrmidon Hege Level(8,Enemy,True) [16,21] 0x0 0x0 0x0 0x0 [SteelSword] PursueWithoutHeedAI
+UNIT Cythes MageArmor Hege Level(8,Enemy,True) [2,5] 0x0 0x0 0x0 0x0 [Thunder] BossAI
+UNIT Cythes MageArmor Hege Level(8,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [Thunder] BossAI
+UNIT Cythes LanceArmor Hege Level(8,Enemy,True) [3,10] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
+UNIT Cythes LanceArmor Hege Level(8,Enemy,True) [19,12] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
+UNIT Cythes LanceArmor Hege Level(8,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Cythes LanceArmor Hege Level(8,Enemy,True) [12,2] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Cythes SwordArmor Hege Level(8,Enemy,True) [7,6] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes SwordArmor Hege Level(8,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Cythes AxeArmor Hege Level(8,Enemy,True) [17,0] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes Archer Hege Level(8,Enemy,True) [9,7] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Cythes Archer Hege Level(8,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary] AttackInRangeAI
+UNIT Cythes AxeFighter Hege Level(8,Enemy,True) [6,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Cythes SwordFighter Hege Level(8,Enemy,True) [5,11] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes Myrmidon Hege Level(8,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes LanceSoldier Hege Level(8,Enemy,True) [17,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Cythes LanceSoldier Hege Level(8,Enemy,True) [9,13] 0x0 0x0 0x0 0x0 [IronLance,Vulnerary] AttackInRangeAI
+UNIT Cythes LanceSoldier Hege Level(8,Enemy,True) [12,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Cythes AxeSoldier Hege Level(8,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes SwordFighter Hege Level(8,Enemy,True) [13,8] 0x0 0x0 0x0 0x0 [LongSword] TwoActionAI
+UNIT Cythes LanceSoldier Hege Level(8,Enemy,True) [17,6] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
+UNIT Cythes LanceSoldier Hege Level(8,Enemy,True) [2,7] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary] TwoActionAI
+UNIT Cythes AxeSoldier Hege Level(8,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
+UNIT Cythes DarkMage Hege Level(8,Enemy,True) [15,7] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
+UNIT Cythes Mage Hege Level(8,Enemy,True) [1,6] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT Cythes AxeFighter Hege Level(8,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Cythes AxeFighter Hege Level(8,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT
 
 Newcomers:
-UNIT Hans SwordKnight 0x0 Level(7,NPC,False) [8,22] 0x0 0x0 0x0 0x0 [SteelSword,IronSword,Vulnerary] AttackInRangeAI
-UNIT Nora DragonRider 0x0 Level(7,NPC,False) [11,22] 0x0 0x0 0x0 0x0 [IronAxe,HandAxe,Vulnerary] AttackInRangeAI
-	UNIT
+UNIT Hans SwordKnight 0x0 Level(7,Ally,False) [8,22] 0x0 0x0 0x0 0x0 [SteelSword,IronSword,Vulnerary] NoAI
+UNIT Nora DragonRider 0x0 Level(7,Ally,False) [11,22] 0x0 0x0 0x0 0x0 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT
 	
 TeamFrancis:
 UNIT Chapter3Reinforcements AxeSoldier   Francis Level(10,Enemy,True) [9,24] 0x0 0x0 0x0 0x0 [SilverAxe] PursueWithoutHeedAI
@@ -126,16 +127,6 @@ Warning:
 CAMERA Hege
 FlashCursor(Hege,60)
 Text(HegeWarning)
-NoFade
-ENDA
-
-Recruit:
-CAMERA Cleo
-FlashCursor(Cleo,60)
-MUSC WithUs_Song
-Text(HansAndNoraRecruit)
-CUSA 25
-CUSA 26
 NoFade
 ENDA
 
@@ -180,7 +171,6 @@ BeginningScene:
 	FADI 15
 	MUSC 0x7FFF
 	SetBackground(CastleHallway)
-	FADU 15
 	MUSC FFTAnxiety
 	Text(HegeAndCidor)
 	FADI 15
@@ -217,6 +207,7 @@ EndingScene:
 	CLEAN
 	FADU 15
 	LOAD1 0x1 EndSceneTwo
+	ENUN
 	FlashCursor(Epony,60)
 	MUSC FFTAnxiety
 	Text(KorovaiAndEpony)
