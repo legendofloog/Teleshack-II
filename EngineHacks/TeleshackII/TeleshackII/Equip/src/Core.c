@@ -113,12 +113,21 @@ int GetUnitEquippedItemSlot(Unit* unit){
 }
 
 void EdgedArrowPreBattle(BattleUnit* unit1, BattleUnit* unit2){
+	if (unit2->unit.pClassData == 0){ //is the defender existent
+		return;
+	}
 	if(GetUnitEquippedItem(&unit1->unit).number == 0xD1){ // edged arrow id
 		const ItemData* currentWeaponData = GetItemData(GetUnitEquippedWeapon(&unit1->unit).number);
 		if(currentWeaponData->attributes & (IA_MAGIC | IA_MAGICDAMAGE | IA_NEGATE_DEFENSE)){
 			return;
 		}
 		unit1->weaponAttributes |= IA_NEGATE_DEFENSE;
+		if(currentWeaponData->attributes & (IA_BRAVE)){
+			unit1->weaponAttributes ^= IA_BRAVE;
+		}
+		if(unit1->battleSpeed >= (unit2->battleSpeed + 4)){ //if unit 1 doubles
+			unit1->battleSpeed = unit2->battleSpeed;
+		}
 	}
 }
 
