@@ -126,10 +126,6 @@ AgniStatBoosts:
 StatBonus(0,6,0,0,0,0,0,0,0,0)
 
 ALIGN 4
-LeatherShieldStatBoosts:
-StatBonus(0,0,0,0,0,2,0,0,0,0)
-
-ALIGN 4
 ZykhraScrollBoosts:
 GrowthBonus(10,10,0,0,(-10),10,0,0,0,10) // 0x2 - Zykhra
 

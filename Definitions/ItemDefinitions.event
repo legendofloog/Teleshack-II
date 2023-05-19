@@ -132,7 +132,7 @@
 #define Kaiserschwert_Fake 0x77
 #define Kaiserschwert 0x78
 #define ChestKey_5 0x79
-#define LeatherShield 0x7A
+#define Mine 0x7A
 #define LightRune 0x7B
 #define FillasMight 0x7D
 #define NinissGrace 0x7E

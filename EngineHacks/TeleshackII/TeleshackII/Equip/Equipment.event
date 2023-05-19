@@ -18,7 +18,6 @@ BYTE SmolderingSeal
 BYTE ByelensBell
 BYTE AmserScrollID
 BYTE ZykhraScrollID
-BYTE LeatherShield
 BYTE 0x00 //terminator
 
 // Defense equipment loses durability on each hit taken
@@ -27,7 +26,6 @@ DefenseEquipmentList:
 BYTE KingShield
 BYTE TemperedRing
 BYTE FullHelm
-BYTE LeatherShield
 BYTE 0x00 // terminator
 
 // Offense equipment loses durability on each attack made
