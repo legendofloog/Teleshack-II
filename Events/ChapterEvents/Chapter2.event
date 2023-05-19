@@ -249,6 +249,7 @@ LABEL 2
 CUSA Delilah
 GiveItem(Heal,Delilah)
 SilentGiveItem(Vulnerary,Delilah)
+SetFatigue(Delilah,0)
 NoFade
 ENDA
 
