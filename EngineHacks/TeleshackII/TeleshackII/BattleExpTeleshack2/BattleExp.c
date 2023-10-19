@@ -15,7 +15,7 @@ int GetBattleUnitExpGain(BattleUnit* actor, BattleUnit* target){
 			if (target->unit.pCharacterData->attributes & CA_BOSS){
 				bossFactor = 2;
 			}
-			int initialKillExp = 30*bossFactor + (6 * GetLevelDifference(actor, target));
+			int initialKillExp = (30 + (6 * GetLevelDifference(actor, target))) * bossFactor;
 			if(initialKillExp <= 0){
 				return 1;
 			}

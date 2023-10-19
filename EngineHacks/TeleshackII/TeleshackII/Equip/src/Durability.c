@@ -1,3 +1,5 @@
+#include "Durability.h"
+
 bool IsItemDefenseEquipment(Item item){
 	extern u8 DefenseEquipmentList[];
 
@@ -51,7 +53,7 @@ bool CheckIfOffenseEquipmentBroke(BattleUnit* battleUnit, Item item){
 }
 
 bool CheckIfEquipmentBroke(BattleUnit* battleUnit){
-	if (!(battleUnit->unit.index & FACTION_BLUE)){
+	if ((battleUnit->unit.index & FACTION_RED) || (battleUnit->unit.index & FACTION_GREEN)){
 		return false; // no popups for npcs
 	}
 
@@ -81,20 +83,21 @@ void DecrementItemSlotDurability(Unit* unit, int itemSlot, int amount){
 		item.durability = 0;
 	}
 	unit->items[itemSlot] = item;
+	return;
 }
 
-bool PopR_InitEquipmentBroke(void) {
+int PopR_InitEquipmentBroke(void) {
 	// Check Active Unit
 	if (CheckIfEquipmentBroke(&gBattleActor)) {
 		SetPopupItem(GetUnitEquippedItem(&gBattleActor.unit).number);
-		return true;
+		return TRUE;
 	}
 
 	// Check Target Unit
 	if (CheckIfEquipmentBroke(&gBattleTarget)) {
 		SetPopupItem(GetUnitEquippedItem(&gBattleTarget.unit).number);
-		return true;
+		return TRUE;
 	}
 
-	return false;
+	return FALSE;
 }

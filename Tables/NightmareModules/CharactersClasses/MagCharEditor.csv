@@ -2,43 +2,43 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x0,0,0
 0x01 Cleo,0,25
 0x02 Mira,0,5
-0x03 Iskra,3,45
+0x03 Iskra,4,50
 0x04 Emil,0,5
-0x05 Svetomir,(-2),30
+0x05 Svetomir,(-1),30
 0x06 Alena,1,10
 0x07 Varga,0,2
-0x08 Delilah,3,30
-0x09 Alex,0,10
-0x0A Axel,0,10
-0x0B Filone,1,20
+0x08 Delilah,3,35
+0x09 Alex,1,10
+0x0A Axel,1,10
+0x0B Filone,3,20
 0x0C Zwieback,0,5
 0x0D Leina,(-3),5
 0x0E Cromar,7,35
 0x0F Loewe,1,10
-0x10 Longxia,5,35
-0x11 Fangai,2,35
-0x12 Gimm,1,15
-0x13 Tobie,1,10
+0x10 Longxia,6,35
+0x11 Fangai,1,35
+0x12 Gimm,2,15
+0x13 Tobie,0,20
 0x14 Awa,0,5
-0x15 Cadenza,3,30
+0x15 Cadenza,2,30
 0x16 Faolan,0,5
 0x17 Iberis,3,30
 0x18 Buldak,0,5
-0x19 Nora,2,5
-0x1A Hans,4,40
-0x1B Takai,11,40
-0x1C Jenny,3,30
+0x19 Nora,1,5
+0x1A Hans,7,40
+0x1B Takai,12,35
+0x1C Jenny,5,30
 0x1D Meldan,4,25
 0x1E Valse,2,10
-0x1F Hornet,8,50
+0x1F Hornet,9,50
 0x20 Milo,4,20
 0x21 Ichwep,6,30
-0x22 Mink,5,30
-0x23 Tiberius,1,30
+0x22 Mink,5,35
+0x23 Tiberius,4,30
 0x24 Ellerey,2,5
 0x25 Mantou,0,1
-0x26 Tippany,0,12
-0x27 Pelecaye,8,35
+0x26 Tippany,(-1),12
+0x27 Pelecaye,12,35
 0x28 Carl,3,15
 0x29 Darby,0,0
 0x2A Jacinth,3,30
@@ -61,7 +61,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x3B Lyre,2,10
 0x3C Ngondala,6,30
 0x3D CatrinReal,9,35
-0x3E Matthias,7,45
+0x3E Matthias,6,45
 0x3F KwameReal,13,55
 0x40 Kofi,4,20
 0x41 TrajanReal,-1,1
@@ -89,7 +89,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x57 Riggan (Ch 5),3,10
 0x58 Aurora (Ch 11),2,55
 0x59 Wrathgar (Ch 9),2,5
-0x5A Cidor (Ch 10),0,5
+0x5A Cidor (Ch 10),4,50
 0x5B Johanna (Ch 10),3,5
 0x5C Kassandra,0,1
 0x5D Artemis,3,15

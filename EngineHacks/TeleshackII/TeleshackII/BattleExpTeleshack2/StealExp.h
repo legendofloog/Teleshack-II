@@ -7,6 +7,7 @@ void UpdateActorFromBattle(void);
 void BeginMapAnimForSteal(void);
 void BattleInitItemEffect(struct Unit* actor, int itemSlot);
 void InitBattleUnit(struct BattleUnit* bUnit, struct Unit* unit);
+void CheckBattleUnitLevelUp(struct BattleUnit* bu);
 
 static const struct ProcInstruction sProcScr_BattleAnimSimpleLock[] = {
     PROC_SLEEP(1),

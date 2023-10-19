@@ -7,7 +7,10 @@
 #define MoveUnitWithSpeed(UnitID, X, Y, Speed) "MOVE Speed UnitID [X, Y]; ENUN"
 #define NormalSpeed 0
 #define SlowSpeed 1
+#define LoadInOneOfTwoUnitGroupsBasedOnEID(eventID, label1, label2, unitgroup1, unitgroup2) "CHECK_EVENTID eventID; BEQ label1 s0 sC; LOAD1 1 unitgroup1; GOTO label2; LABEL label1; LOAD1 1 unitgroup2; LABEL label2; ENUN"
 
+
+#define CheckUnitExistsThenHighlightPlusText(charID, label, textID) "CHECK_EXISTS charID; BEQ label s0 sC; CameraCursor(charID); Text(textID); LABEL label" 
 #define PreventSkipping "EVBIT_MODIFY 1"
 #define AllowSkipping "EVBIT_MODIFY 0"
 #define SetUnitFullHP(charID) "CheckMaxHP(charID); SADD s1 sC s0; SET_HP charID"
@@ -23,7 +26,7 @@
 #define SingleUnitMove(charID, speed, xPos, yPos) "MOVE speed charID [xPos,yPos]; ENUN"
 #define SingleUnitMoveThenErase(charID, speed, xPos, yPos) "SingleUnitMove(charID, speed, xPos, yPos); REMOVEUNIT charID"
 #define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
-#define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; RefreshSMS; STAL 30"
+#define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; RefreshSMS; ENUN; STAL 30"
 #define MaxTurns(TurnNum) "256 - TurnNum"
 #define InfiniteTurnEventPlayer(flag,event,turn) "TurnEventPlayer(flag,event,turn,MaxTurns(turn))"
 #define CamOn "EVBIT_T 0x9"

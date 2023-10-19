@@ -15,31 +15,39 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0, Turn1Event, 1)
 TurnEventNPC(0, HernandezEvent, 1)
-//TurnEventPlayer(0, JohannaEvent, 3)
 TurnEventPlayer(0, JohannaEvent, 5)
-TurnEventPlayer(0, EliasEvent, 10)
-TurnEventPlayer(0, ReinforcementEvent, 7)
+TurnEventPlayer(33, EliasEvent, 6, 250)
 END_MAIN
 
 Turn1Event:
-CUSA Korovai
-//CUSA Carl
+ENUT 33 //set the flag so elias doesn't spawn immediately
+CheckUnitExistsThenHighlightPlusText(Wellworth, 3, Ch10WellworthIntroduction)
+CheckUnitExistsThenHighlightPlusText(TheGiant, 4, Ch10TheGiantIntroduction)
+CheckUnitExistsThenHighlightPlusText(Yor, 5, Ch10YorIntroduction)
+CHECK_ALIVE Buldak
+BEQ 2 s0 sC
+	CHECK_ALLEGIANCE Buldak
+	BEQ 3 s0 sC //if he's not blue, don't worry about it
+		CameraCursor(Buldak)
+		Text(Ch10BuldakIntroduction)
+		GOTO 2
+	LABEL 3
+	ENUT 20
+	ENUT 30 //if he is blue, set both of these flags so that the events don't play
+LABEL 2
+CameraCursor(Mifan)
+Text(Ch10MifanResolution)
 NoFade
 ENDA
 
 HernandezEvent:
-
 CHECK_EVENTID 0x7a
 BEQ 3 0 0xC
-
 MUSC mutecity
-
 SpawnReinforcements(HernandezUnits)
-FlashCursor(Hernandez,0x40)
+FlashCursor(Hernandez,60)
 Text(Ch10HernandezSpawn)
-
 LABEL 3
-
 NoFade
 ENDA
 
@@ -49,7 +57,8 @@ Text(Ch10JohannaSpawn_v2)
 SetUnitItemDurability(Johanna,1,RaioScroll)
 CHECK_ALIVE Mifan
 BEQ 421 s0 sC
-	SetAI(Mifan,0,0x6,4,0)
+	Text(Ch10MifanCharge)
+	SetAI(Mifan,0,0,4,0)
 LABEL 421 
 NoFade
 ENDA
@@ -60,15 +69,10 @@ Text(Ch10EliasSpawm)
 NoFade
 ENDA
 
-ReinforcementEvent:
-SpawnReinforcements(ReinforcementUnits)
-NoFade
-ENDA
-
 ALIGN 32
 CharacterBasedEvents:
-CharacterEventBothWays(0x14,KorovaiValseTalk, Korovai, Valse)
-CharacterEventBothWays(0x15,KorovaiHornetTalk, Korovai, Hornet)
+CharacterEventBothWays(14,KorovaiValseTalk, Korovai, Valse)
+CharacterEventBothWays(15,KorovaiHornetTalk, Korovai, Hornet)
 END_MAIN
 
 KorovaiValseTalk:
@@ -88,75 +92,118 @@ NoFade
 ENDA
 
 MiscBasedEvents:
-//AREA 0xA CrossingBridgeEvent [18,0] [24,7]
-//AREA 0xA CrossingBridgeEvent [16,8] [24,17]
+AFEV 24 MifanCaptureCheck 16
+AFEV 25 TheGiantCaptureCheck 17
+AFEV 26 YorCaptureCheck 18
+AFEV 27 WellworthCaptureCheck 19
+AFEV 30 BuldakCaptureCheck 20
+AREA 34 EliasPrelude [18,0] [24,10]
 CauseGameOverIfLordDies
 END_MAIN
 
-CrossingBridgeEvent:
-
-CHECK_ALLEGIANCE 0xFFFF
-BNE 1 0 0xC
-
-CAM1 [24,0]
-FlashCursor(21,3,0x40)
-Text(Ch10JohannaCharge)
-
-SetAI(Johanna,0,0,4,0)
-SetAI(Cythes,0,0,0,0)
-
-
-FlashCursor(20,7,0x40)
-Text(Ch10MifanCharge)
-
-SetAI(Mifan,0,0,4,0)
-
-GOTO 2
-LABEL 1
-ENUF 0xA
-
+EliasPrelude:
+CHECK_ALLEGIANCE -1
+BNE 2 s0 sC //if it does not equal 0 (player), ignore
+	ENUF 33 //if it is a player, unset the flag that stops elias from spawning
+	GOTO 3
 LABEL 2
+ENUF 34
+LABEL 3
+NoFade
+ENDA
+
+
+MifanCaptureCheck:
+CHECK_EXISTS Mifan
+BEQ 2 s0 sC
+	Text(Ch10MifanCaptureQuoteText)
+	ENUF 16	//if capture flag is set, but death quote isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch10MifanDeathQuoteText)
+NoFade
+ENDA
+
+TheGiantCaptureCheck:
+CHECK_EXISTS TheGiant
+BEQ 2 s0 sC
+	Text(Ch10TheGiantCaptureQuoteText)
+	ENUF 17	//if capture flag is set, but death quote isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch10TheGiantDeathQuoteText)
+NoFade
+ENDA
+
+YorCaptureCheck:
+CHECK_EXISTS Yor
+BEQ 2 s0 sC
+	Text(Ch10YorCaptureQuoteText)
+	ENUF 18	//if capture flag is set, but death quote flag isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch10YorDeathQuoteText)
+NoFade
+ENDA
+
+WellworthCaptureCheck:
+CHECK_EXISTS Wellworth
+BEQ 2 s0 sC
+	Text(Ch10WellworthCaptureQuoteText)
+	ENUF 19	//if capture flag is set, but death quote flag isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch10WellworthDeathQuoteText)
+NoFade
+ENDA
+
+BuldakCaptureCheck:
+CHECK_EXISTS Buldak
+BEQ 2 s0 sC
+	Text(Ch10BuldakCaptureQuoteText)
+	ENUF 20	//if capture flag is set, but death quote flag isn't, unit was captured
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch10BuldakDeathQuoteText)
 NoFade
 ENDA
 
 LocationBasedEvents:
 Seize(21, 3)
-Village(0xE,VillageEventIsland,16,0)
+Village(7,VillageEventIsland,16,0)
 END_MAIN
-
 
 VillageEventIsland:
 MUSI
-SMOV 0x2 Village
-SMOV 0x3 Ch10VillageText
-CALL $9EE310
+SetBackground(Village)
+Text(Ch10VillageText)
 MUNO
-CALL $591F40
-//SMOV 0x3 SilverSword
-//GIVEITEMTO 0xFFFF
+EraseBackground
 GiveItemWithDurability(GrowthScroll,LuzenScroll,0xFFFF)
-EVBIT_T 0x7
+NoFade
 ENDA
 
 Dunno1:
-
 END_MAIN
 
 Dunno2:
-
 END_MAIN
 
 Dunno3:
-
 END_MAIN
 
 Tutorial:
-
 END_MAIN
 
 Units1:
 UNIT Cleo 0x0 Cleo Level(1,Ally,False) [1,5] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe 0x0 Cleo Level(1,Ally,False) [0,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Korovai DukeKnight Cleo Level(2,Ally,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary, KnightProof] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [2,6] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,7] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [0,8] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -171,15 +218,14 @@ UNIT
 
 EnemyUnits:
 // Ally
-UNIT Korovai DukeKnight Cleo Level(1,NPC,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary, KnightProof] NoAI
 
 UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance,Vulnerary] NeverMoveAI
 UNIT Hornet BowKnight Cleo Level(9,Enemy,False) [7,15] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI
 
 // Unique
-UNIT Cidor Baron 0x0 Level(5,Enemy,False) [21,3] 0x0 0x0 0x0 0x0 [Jormungand] NeverMoveAI // TODO: give him cooler inventory when we have more reasonable options
+UNIT Cidor Baron 0x0 Level(5,Enemy,False) [21,3] 0x0 0x0 0x0 0x0 [Thoron, Jormungand, Yseod] NeverMoveAI
 
-UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [21,6] 0x0 0x0 0x0 0x0 [IceSword,KillingEdge] DoNothingAI
+UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [21,6] 0x0 0x0 0x0 0x0 [IceSword,KillingEdge] BossAI
 
 
 UNIT Selese Thief 0x0 Level(10,Enemy,True) [9,9] 0x0 0x0 0x0 0x0 [ShortSword,Rescue] LootingThiefAI
@@ -207,14 +253,6 @@ UNIT Selese AxeSoldier 0x0 Level(10,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [LunarAx
 UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,4] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
 UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
 
-
-// Bridge
-
-UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ThunderSword] NeverMoveAI
-UNIT Selese LanceArmor 0x0 Level(10,Enemy,True) [15,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
-UNIT Selese Mage 0x0 Level(10,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
-UNIT Selese Bard 0x0 Level(10,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [Fire] NeverMoveAI
-
 // Left side
 UNIT Selese AxeFighter 0x0 Level(10,Enemy,True) [4,4] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [5,5] 0x0 0x0 0x0 0x0 [Claymore] PursueWithoutHeedAI
@@ -231,14 +269,11 @@ UNIT Selese AxeFighter 0x0 Level(10,Enemy,True) [11,4] 0x0 0x0 0x0 0x0 [Hurlbat]
 UNIT Selese Ballistician 0x0 Level(10,Enemy,True) [11,10] 0x0 0x0 0x0 0x0 [SlimArch] NeverMoveAI
 UNIT Selese BowArmor 0x0 Level(10,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [MarksmanBow] AttackInRangeAI
 
-//UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [ThunderSword] PursueWithoutHeedAI
 UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [4,14] 0x0 0x0 0x0 0x0 [Greatsword] PursueWithoutHeedAI
 UNIT Selese LanceArmor 0x0 Level(10,Enemy,True) [5,14] 0x0 0x0 0x0 0x0 [Greatlance] PursueWithoutHeedAI
 UNIT Selese LanceSoldier 0x0 Level(10,Enemy,True) [5,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT Selese AxeKnight 0x0 Level(10,Enemy,True) [14,15] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Selese Myrmidon 0x0 Level(10,Enemy,True) [14,13] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
-
-
 UNIT
 
 HernandezUnits:
@@ -262,9 +297,9 @@ UNIT Cythes Myrmidon 0x0 Level(10,Enemy,True) [24,6] 0x0 0x0 0x1 REDA22R6 [Short
 UNIT
 
 EliasUnits:
-UNIT Elias Dracoknight 0x0 Level(5,Enemy,False) [0,0] 0x0 0x0 0x1 REDA0R0 [BraveAxe,Argilabrys] PursueWithoutHeedAI
+UNIT Elias Dracoknight 0x0 Level(5,Enemy,False) [0,1] 0x0 0x0 0x1 REDA1R1 [MasterAxe,Argilabrys] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,2] 0x0 0x0 0x1 REDA0R2 [SilverAxe] PursueWithoutHeedAI
-UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,1] 0x0 0x0 0x1 REDA1R1 [MasterAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [SilverAxe] PursueWithoutHeedAI
 UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [1,0] 0x0 0x0 0x1 REDA2R0 [SilverAxe] PursueWithoutHeedAI
 UNIT
 
@@ -275,6 +310,41 @@ UNIT Cythes AxeSoldier 0x0 Level(10,Enemy,True) [24,16] 0x0 0x0 0x0 0x0 [HandAxe
 UNIT Cythes Freelancer 0x0 Level(10,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
 UNIT
 
+ThunderSwordArmorGroup:
+UNIT Selese SwordArmor 0x0 Level(10,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ThunderSword] NeverMoveAI
+UNIT
+
+JavelinArmorGroup:
+UNIT Selese LanceArmor 0x0 Level(10,Enemy,True) [15,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT
+
+ThunderMageGroup:
+UNIT Selese Mage 0x0 Level(10,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
+UNIT
+
+FireBardGroup:
+UNIT Selese Bard 0x0 Level(10,Enemy,True) [16,12] 0x0 0x0 0x0 0x0 [Fire] NeverMoveAI
+UNIT
+
+WellworthGroup:
+UNIT Wellworth Hero 0x0 Level(1,Enemy,False) [15,11] 0x0 0x0 0x0 0x0 [StoneSword] NeverMoveAI
+UNIT
+
+YorGroup:
+UNIT Yor Halberdier 0x0 Level(1,Enemy,False) [15,12] 0x0 0x0 0x0 0x0 [YorsYari] NeverMoveAI
+UNIT
+
+TheGiantGroup:
+UNIT TheGiant Warrior 0x0 Level(1,Enemy,False) [16,11] 0x0 0x0 0x0 0x0 [SteelBow,TrainedAxe] NeverMoveAI
+UNIT
+
+BuldakGroup:
+UNIT Buldak ThiefFighter 0x0 Level(1,Enemy,False) [16,12] 0x0 0x0 0x0 0x0 [Buldirk] NeverMoveAI
+UNIT
+
+KorovaiGroup:
+UNIT Korovai DukeKnight Cleo Level(1,Ally,False) [3,9] 0x0 0x0 0x0 0x1 [SilverLance,Javelin,Vulnerary, KnightProof] NoAI
+UNIT
 
 Traps1:
 	ENDTRAP
@@ -288,28 +358,33 @@ BeginningScene:
 	MountAll
 	LOAD1 0x1 EnemyUnits
 	LOAD1 0x1 EnemyUnits2
+	LOAD1 1 KorovaiGroup
 	ENUN
-	//SetUnitItemDurability(Valse,2,LuzenScroll)
-	//SetUnitItemDurability(Hornet,2,RaioScroll)
-
-	AddLeadership(Korovai,3)
-
-	MUSC Sortie_Formation 
-
+	LoadInOneOfTwoUnitGroupsBasedOnEID(0xA3, 776, 777, YorGroup, JavelinArmorGroup)
+	LoadInOneOfTwoUnitGroupsBasedOnEID(0xA5, 778, 779, WellworthGroup, ThunderSwordArmorGroup)
+	LoadInOneOfTwoUnitGroupsBasedOnEID(0xA4, 780, 781, TheGiantGroup, ThunderMageGroup)
+	LoadInOneOfTwoUnitGroupsBasedOnEID(0xA2, 782, 783, BuldakGroup, FireBardGroup)
+	CHECK_EVENTID 0xA6
+	BNE 421 s0 sC
+		AddLeadership(Korovai,3)
+		ENUT 0xA6
+	LABEL 421
+	MUSC Sortie_Formation
 	SetBackground(0x1b)
 	Text(Ch10Start1)
 	FADI 15
-
 	MUSC FF4RedWingsID
-
 	SetBackground(0x15)
 	Text(Ch10Start2)
 	FADI 15
 	SetBackground(0x1b)
 	Text(Ch10Start3)
-	CheckIfFatigued(Iskra)
+	CHECK_ALIVE Iskra
 	BEQ 420 s0 sC
-		SetFatigueOneLess(Iskra)
+		Text(Ch10IskraHint)
+		CheckIfFatigued(Iskra)
+		BEQ 420 s0 sC
+			SetFatigueOneLess(Iskra)
 	LABEL 420
 	GotoPrepScreen
 	ENDA
@@ -322,18 +397,14 @@ EndingScene:
 	MUSC FF6EdgarAndSabin
 	SetBackground(0x13)
 	Text(Ch10End2)
-
 	SetBackground(0x0A)
 	Text(Ch10End3)
-
-
-	CHECK_EVENTID 0x19
+	CHECK_EVENTID 11
 	BEQ 4 0 0xC
-
-	SetBackground(0x10)
-	Text(Ch10EndStormbrand)
-	GiveItem(Stormbrand,Iskra)
-	ENUT 0x8D
+		SetBackground(0x10)
+		Text(Ch10EndStormbrand)
+		GiveItem(Stormbrand,Iskra)
+		ENUT 0x8D
 	LABEL 4
 	FADI 15
 	SendAll(Korovai)

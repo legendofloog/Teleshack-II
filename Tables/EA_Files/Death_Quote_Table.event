@@ -1,11 +1,11 @@
 //DeathQuote(Character,Chapter,EventID,TextID)
-
-#define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
+#define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
+
 // Bosses
+
 DeathQuote(Boro_Ch1,Chapter1, 0, BoroSeleseRetreatQuote)
 DeathQuote(Boro_Ch1,Chapter2, 0, BoroSeleseRetreatQuote)
-
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
@@ -38,13 +38,19 @@ DeathQuote(Wrathgar,Chapter9,2,WrathgarDeathQuote)
 DeathQuote(Cidor,Chapter10,0,Ch10CidorDeathQuote)
 DeathQuote(Johanna,Chapter10,0,Ch10JohannaDeathQuote)
 DeathQuote(Elias,Chapter10,0,Ch10EliasDeathQuote)
-DeathQuote(Mifan,Chapter10,0,Ch10MifanDeathQuote)
 DeathQuote(Hernandez,Chapter10,0,Ch10HernandezDeathQuote)
+DeathQuote(Mifan,Chapter10,16,0)
+DeathQuote(TheGiant,Chapter10,17,0)
+DeathQuote(Yor,Chapter10,18,0)
+DeathQuote(Wellworth,Chapter10,19,0)
+DeathQuote(Buldak,Chapter10,20,0)
+
 DeathQuote(Aurora,Chapter11,0x2,AuroraDeathQuote)
 DeathQuote(Pelecaye,Chapter11,0,Ch12xPelecayeDeathQuote)
 DeathQuote(Epony,Chapter11,0,Ch12xEponyDeathQuote)
 DeathQuote(Korovai,Chapter11,0,Ch12xKorovaiEndingScene10KorovaiDeathQuote)
 DeathQuote(SisterSelese,Chapter11,0xD,0x0)
+
 DeathQuote(Eitha, Chapter12, 2, EithaDeathQuote)
 DeathQuote(Veniamin, Chapter13, 2, VeniaminDeathQuote)
 DeathQuote(Corundum, Chapter13, 0, CorundumDeathQuote)

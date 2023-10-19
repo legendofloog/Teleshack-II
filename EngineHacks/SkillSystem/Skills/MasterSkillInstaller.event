@@ -13,7 +13,6 @@ SHORT 0x46C0
 
 POP
 
-#include "AISkills/AISkills.event"
 #include "AuraSkills/AuraSkills.event"
 #include "DebuffSkills/DebuffSkills.event"
 #include "EffectivenessSkills/EffectivenessSkills.event"

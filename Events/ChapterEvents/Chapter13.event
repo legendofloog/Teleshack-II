@@ -256,6 +256,11 @@ SHORT 0
 ALIGN 4
 Ch7Vendor:
 SHORT Thunder
+SHORT Elfire
+SHORT Lightning
+SHORT Yseod
+SHORT Flux
+SHORT Arachnid
 SHORT Mend
 SHORT Physic
 SHORT Sleep
@@ -263,6 +268,8 @@ SHORT Vulnerary
 SHORT Elixir
 SHORT 0
 SHORT 0
+
+ALIGN 4
 
 EndingScene:
 SendAll(Kailani)

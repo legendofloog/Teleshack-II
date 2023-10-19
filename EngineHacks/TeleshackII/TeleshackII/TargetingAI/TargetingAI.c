@@ -3,28 +3,35 @@
 
 //AiTryDoOffensiveAction, 0x803D451
 
+s8 AiSimulateBattleAgainstTargetAtPosition(struct AiCombatSimulationSt* st) {
+        
+    BattleGenerateSimulation(gActiveUnit, GetUnit(st->targetId), st->xMove, st->yMove, st->itemSlot);
+    AiComputeCombatScore(st);
+    return 1;
+}
+
 void ComputeAiAttackWeight(struct AiCombatSimulationSt* st) {
     int score;
-    int backup;
 
-    score = AiBattleGetDamageDealtWeight(); //max score: 110
-    backup = score;
+    score = AiBattleGetDamageDealtWeight(); //max score: 60
 
-    score -= AiBattleGetDamageTakenWeight(); //minimum score: -110
+    score -= AiBattleGetDamageTakenWeight(); //minimum score: -40
 
     if (score < 0) {
         score = 0;
     }
 
+    
+
     if (gSkillTester(&gBattleTarget.unit, ProvokeIDLink)){ //does target have provoke?
-        score = 70 * 255; //target over everything, even another possible kill
-        score /= 100;
+        score = 91; //target over everything, even another possible kill
     }
 
     if (score != 0) {
         score = score * 10;
-    } else {
-        score = backup;
+    }
+    else{
+        score = 1;
     }
 
     st->score = score;
@@ -50,13 +57,11 @@ int AiBattleGetDamageDealtWeight(void) {
     score = (gBattleActor.battleAttack - gBattleTarget.battleDefense) * (gBattleActor.battleEffectiveHitRate);
     score /= 100; //the score for a single attack = damage * hit rate (as a percent)
 
-    if (gBattleActor.unit.curHP > 0 || gBattleTarget.battleEffectiveHitRate == 0){ //applies if unit doesn't die on counter
-        if (gBattleActor.battleSpeed - gBattleTarget.battleSpeed >= BATTLE_FOLLOWUP_SPEED_THRESHOLD){
+    if (gBattleActor.battleSpeed - gBattleTarget.battleSpeed >= BATTLE_FOLLOWUP_SPEED_THRESHOLD){
             score *= 2; //if actor follows up, score doubled
-        }
-        if (gBattleActor.weaponAttributes & IA_BRAVE){
+    }
+    if (gBattleActor.weaponAttributes & IA_BRAVE){
             score *= 2; //if actor braves, score doubled
-        }
     }
 
     score *= 2; //double score once more
@@ -66,7 +71,7 @@ int AiBattleGetDamageDealtWeight(void) {
     }
 
     if (score > 50) { 
-        score = 50; //cap for non-kills is 40
+        score = 50; //cap for non-kills is 50
     }
 
     return score;
@@ -76,17 +81,15 @@ int AiBattleGetDamageTakenWeight(void) {
     int score;
 
     if (gBattleTarget.unit.curHP <= 0){
-        return 0; //if they would kill, consider no damage taken to prioritize it
-    }
-
-    if (gBattleTarget.weapon.number == 0 && gBattleTarget.weapon.durability == 0) {
-        return 0; //they have no weapon, so no counter
+        return (-30); //if they would kill, consider no damage taken to prioritize it
     }
 
     if ((gBattleTarget.battleAttack - gBattleActor.battleDefense) <= 0){
-        return 0; //no damage, no fear
+        return (-20); //no damage, no fear
     }
-
+    if ((gBattleTarget.weapon.number == 0) && (gBattleTarget.weapon.durability == 0)){
+        return (-20); //no enemy weapon, no fear
+    }
     if (gBattleActor.unit.curHP == 0){
         return 50; //if the unit dies in the combat, lowered priority
     } 
@@ -94,13 +97,11 @@ int AiBattleGetDamageTakenWeight(void) {
     score = (gBattleTarget.battleAttack - gBattleActor.battleDefense) * (gBattleTarget.battleEffectiveHitRate);
     score /= 100; //score for one attack from the enemy
 
-    if (gBattleTarget.unit.curHP > 0 || gBattleActor.battleEffectiveHitRate == 0){ //applies if target doesn't die on counter
-        if (gBattleTarget.battleSpeed - gBattleActor.battleSpeed >= BATTLE_FOLLOWUP_SPEED_THRESHOLD){
+    if (gBattleTarget.battleSpeed - gBattleActor.battleSpeed >= BATTLE_FOLLOWUP_SPEED_THRESHOLD){
             score *= 2; //if target follows up, score doubled
-        }
-        if (gBattleTarget.weaponAttributes & IA_BRAVE){
+    }
+    if (gBattleTarget.weaponAttributes & IA_BRAVE){
             score *= 2; //if target braves, score doubled
-        }
     }
 
     if (score < 0) {

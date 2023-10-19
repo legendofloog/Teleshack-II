@@ -12,21 +12,34 @@ PrepromoteTableEntry(Cromar,10)
 PrepromoteTableEntry(Meldan,10)
 PrepromoteTableEntry(Pelecaye,5)
 PrepromoteTableEntry(Takai,5)
+PrepromoteTableEntry(Jacinth,5)
 PrepromoteTableTerminator
 
 ALIGN 4
 BossExpReductionTable: //added to reduce exp granted by early promoted bosses; goal is for them to be 5 levels up on other enemies internally
 BossExpReduction(Boro_Ch1, Chapter1,15)
+
 BossExpReduction(Boro_Ch1, Chapter2,15)
+
 BossExpReduction(McCallum,Chapter6,10)
+
 BossExpReduction(TheGiant,Chapter7,9)
+
 BossExpReduction(Hege,Chapter8,8)
 BossExpReduction(Francis,Chapter8,8)
+
 BossExpReduction(Wrathgar,Chapter9,7)
+BossExpReduction(Meldan,Chapter9,7)
+
 BossExpReduction(Elias,Chapter10,6)
 BossExpReduction(Cidor,Chapter10,6)
-BossExpReduction(Mifan,Chapter10,6)
 BossExpReduction(Johanna,Chapter10,6)
+BossExpReduction(Mifan,Chapter10,6)
+BossExpReduction(Yor,Chapter10,6)
+BossExpReduction(Wellworth,Chapter10,6)
+BossExpReduction(TheGiant,Chapter10,6)
+BossExpReduction(Buldak,Chapter10,6)
+
 BossExpReduction(Aurora,Chapter11,5)
 BossExpReduction(Eitha,Chapter12,4)
 BossExpReduction(Corundum,Chapter13,3)

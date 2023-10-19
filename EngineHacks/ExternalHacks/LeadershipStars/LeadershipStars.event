@@ -11,22 +11,22 @@
 #define SetIcon(ID) "ORG IconTable + ID * 128"
 
 AllyStarHitBonus:
-BYTE 3
+BYTE 5
 AllyStarAvoidBonus:
-BYTE 0
+BYTE 5
 
 EnemyStarHitBonus:
-BYTE 3
+BYTE 5
 EnemyStarAvoidBonus:
-BYTE 0
+BYTE 5
 
 NPCStarHitBonus:
-BYTE 3
+BYTE 5
 NPCStarAvoidBonus:
-BYTE 0
+BYTE 5
 
 CancelOutOpposingLeadership:
-BYTE 0 // change to 0 if you don't want this behaviour
+BYTE 1 // change to 0 if you don't want this behaviour
 
 LeadershipTable:
 // ALLIES
@@ -46,15 +46,16 @@ BYTE Raschwitz_Ch1 1
 BYTE Tyr_Ch2 1
 BYTE Boro_Ch1 3
 BYTE Emory_Ch3 2
-BYTE Hilmar 1
+BYTE Hilmar 2
 BYTE Riggan 1
 BYTE Draken 1
+BYTE McCallum 2
 BYTE Wellworth 1
 BYTE Hege 2
 BYTE Aurora 2
 BYTE Cidor 3
 BYTE Johanna 2
-BYTE Elias 5
+BYTE Elias 4
 BYTE Veniamin 2
 BYTE Vinny 4
 BYTE Taraji 2
@@ -62,7 +63,7 @@ BYTE Xlea 2
 BYTE Saif 1
 BYTE Mihail 2
 BYTE Artemis 2
-BYTE KassandraReal 3
+BYTE KassandraReal 4
 BYTE Cherne 6
 BYTE Maryn 1
 BYTE Viktor 2
@@ -76,7 +77,7 @@ BYTE Boro_Ch16 2
 BYTE Trajan 2
 BYTE Kwame 3
 BYTE Epony 3
-BYTE Coralia 2
+BYTE Coralia 3
 BYTE Catrin 2
 BYTE Valere 5
 BYTE Sultai 2
@@ -132,4 +133,5 @@ POP
 
 #endif // LEADERSHIP_STARS
 
-#define AddLeadership(unit, amount) "SVAL s1 unit; SVAL s2 amount; ASMC AddLeadershipASMC;"
+#define AddLeadership(unit, amount) "SVAL s1 unit; SVAL s2 amount; ASMC AddLeadershipASMC"
+#define SetLeadership(unit, amount) "SVAL s1 unit; SVAL s2 amount; ASMC SetLeadershipASMC"

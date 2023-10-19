@@ -19,7 +19,7 @@
 
 #include "Graphics/PortraitHeight/PortraitShiftTable(installthisone).event"
 
-#include "StanAI/StanAI.event" 
+//#include "StanAI/StanAI.event" 
 
 #include "ReworkForPrepScreenRightTopImage/Installer.event"
 
@@ -253,5 +253,14 @@ PUSH //changes the item ids that play sacred weapon music from Sieglinde and Sie
 ORG $58B12
 BYTE 0xFF
 ORG $58B16
+BYTE 0xFF
+POP
+
+PUSH //changes nightmare hardcoding to item id 0xFF
+ORG $2FF78
+BYTE 0xFF
+ORG $32036
+BYTE 0xFF
+ORG $322C6
 BYTE 0xFF
 POP

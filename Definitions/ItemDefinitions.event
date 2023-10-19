@@ -170,10 +170,12 @@
 #define FaithWindItem 0x9e
 #define DancingBladeItem 0x9f
 #define BoneClub 0xa0
-
+#define Yseod 0xa1
 #define Taodao 0xa2
 #define RuneArrow 0xa3
 #define BlackAnklet 0xa4
+//#define Dance 0xa5
+#define Buldirk 0xa6
 
 #define Boltbrand 0xa8
 #define DawnPendant 0xa9

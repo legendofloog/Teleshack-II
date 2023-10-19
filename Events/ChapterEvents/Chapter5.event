@@ -121,7 +121,7 @@ UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [9,18] 0x0 0x0 0x0 
 UNIT Chapter1Generics LanceArmor   Riggan Level(5,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [LongLance,ChestKey] BossAI
 UNIT Chapter1Generics SwordFighter  Riggan Level(5,Enemy,True) [15,15] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] TwoActionAI
-UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Fire,PureWater] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Yseod,PureWater] TwoActionAI
 UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [23,19] 0x0 0x0 0x0 0x0 [SteelAxe,Vulnerary] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI

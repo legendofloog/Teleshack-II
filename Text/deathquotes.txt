@@ -194,11 +194,6 @@ fall back for now,[AN]
 but next time,[N]
 I will not lose again.[A][X]
 
-## Ch10MifanDeathQuote
-[MidLeft][LoadMifan]
-Not again[Beat][N]
-Not until I've had my revenge[Beat][CloseEyes][A][X]
-
 ## Ch10HernandezDeathQuote
 [MidRight][LoadHernandez]
 Oof[Beat][CloseEyes][A][X]

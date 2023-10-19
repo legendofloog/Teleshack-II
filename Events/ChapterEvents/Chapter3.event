@@ -158,7 +158,7 @@ UNIT Mira ThiefFighter_F   Cleo Level(2,Ally,False) [7,0] 0x0 0x0 0x1 REDA8R17 [
 UNIT
 
 CutsceneUnits3:
-UNIT Cidor Baron   Cidor Level(2,Enemy,False) [9,7] 0x0 0x0 0x0 0x0 [Jormungand]     NoAI
+UNIT Cidor Baron   Cidor Level(2,Enemy,False) [9,7] 0x0 0x0 0x0 0x0 [Thoron]     NoAI
 UNIT
 
 CutsceneUnits4:
@@ -453,12 +453,13 @@ LABEL 24
 MOVE 15 Dragana [9,15]
 ENUN
 StartBattle
-NormalDamage(0,15)
+NormalDamage(0,12)
 MissedAttack(1,0)
 MissedAttack(0,0)
 CriticalHit(1,28)
 EndAttack
 FIGHT Dragana Cidor SilverBow 0
+ENUN
 TEXTSTART
 CheckUnitDeadOrJailed(Mira)
 BNE 25 s0 sC

@@ -50,6 +50,12 @@ int EscapeCommandEffect(MenuProc* proc){
                 if (currentUnit->pCharacterData->number == GetUnit(gActiveUnit->rescueOtherUnit)->pCharacterData->number){
                     currentRequiredEscapees++; //although rescued unit hasn't escaped yet, they are counted here
                 }
+                else if (currentUnit->state & US_HIDDEN && !(currentUnit->state & US_UNAVAILABLE)){
+                    currentRequiredEscapees++;
+                }
+                else{
+                    
+                }
             }
             else if (currentUnit->state & US_HIDDEN && !(currentUnit->state & US_UNAVAILABLE)){
                 currentRequiredEscapees++;

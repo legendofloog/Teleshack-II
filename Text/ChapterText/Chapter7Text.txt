@@ -733,7 +733,12 @@ Better hope you don't regret it.[AN][X]
 ## WellworthCaptureQuoteText
 [MidLeft][LoadWellworth]
 Sparing an old man, are you?[N]
-Well, at least you have manners.[A][X]
+Well, you won't see me complain.[A][X]
+
+## BuldakCaptureQuoteText
+[MidLeft][LoadBuldak]
+Urgh[Beat] Damn you, Iberis[Beat][N]
+This wasn't supposed to happen.[A][X]
 
 ## BuldakEnemyBattleQuoteText
 [MidLeft][LoadBuldak]
@@ -741,11 +746,6 @@ Hey, hold on a second![AN]
 I'm Iberis's contact.[AN]
 Didn't she tell you that?[N]
 Seriously, don't kill me![AN][X]
-
-## BuldakCaptureQuoteText
-[MidLeft][LoadBuldak]
-Urgh[Beat] Damn you, Iberis[Beat][N]
-This wasn't supposed to happen.[A][X]
 
 ## BuldakIntroductionText
 [MidLeft][LoadBuldak][ThreeLineBox]
@@ -784,9 +784,10 @@ Buldak. We have an uprising to quell.[AN][CloseSpeechSlow][ClearFace]
 [Beat]I won't forget this, Iberis.[A][X]
 
 ## Ch7BuldakBails
-[MidLeft][LoadBuldak]
+[MidLeft][LoadBuldak][ThreeLineBox]
 Iberis's forces are attacking me?![N]
-Alright, that's it. I'm out of here![A][X]
+I never should've trusted her[Beat][N]
+Time to get out of here![A][X]
 
 ## BuldakTheGiantBattleConvo
 [MidLeft][LoadTheGiant]
@@ -821,7 +822,7 @@ to raise it against me now?[AN]
 Find the courage, Buldak, or[N]
 I'll gut you where you stand![AN][CloseSpeechSlow][ClearFace]
 [MidRight][LoadBuldak]
-Fine[Beat] Fine, damn you![AN]
-I'll show you that I surpassed[N]
-you long ago, Wellworth![AN][X]
+Fine[Beat] Fine, old man![AN]
+If you want a fight so bad,[N]
+then I'll give it to you![AN][X]
 

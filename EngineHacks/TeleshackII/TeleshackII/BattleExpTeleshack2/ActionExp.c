@@ -25,8 +25,10 @@ int GetUnitEffectiveLevel(Unit* unit){
 	int j = 0;
 	while( BossExpReductionTable[j].charID != 0xFF){
 		if(unit->pCharacterData->number == BossExpReductionTable[j].charID && gChapterData.chapterIndex == BossExpReductionTable[j].chapterID){
-			effectiveLevel -= BossExpReductionTable[j].levelsToDecreaseBy;
-			break;
+			if (UNIT_FACTION(unit) != FACTION_BLUE){
+				effectiveLevel -= BossExpReductionTable[j].levelsToDecreaseBy;
+				break;
+			}
 		}
 		j++;
 	}

@@ -45,6 +45,12 @@ add POIN GetEquipmentSkill to both skillTesterOriginal lit pools in Internals/Sk
 Add POIN IncrementAttackCount to battle proc loop
 */
 
+/*
+Add to Popups.event
+
+PopRBattlePopup(PopR_InitEquipmentBroke, 0x592420, 96)
+*/
+
 // Battle Struct: Changing STRB on 0x7E to STRH to also clear 0x7F
 PUSH
 ORG 0x1D1E6
@@ -52,12 +58,6 @@ SHORT $8001
 ORG 0x322C4
 SHORT $800A
 POP
-
-/*
-Add to Popups.event
-
-PopRBattlePopup(PopR_InitEquipmentBroke, 0x592420, 96)
-*/
 
 PUSH
 ORG 0x2C1EC

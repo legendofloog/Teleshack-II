@@ -579,7 +579,7 @@ UNIT Saifs Freelancer 0x0 Level(20,Enemy,True) [31,5] 0x0 0x0 0x1 REDA25R5 [Trai
 UNIT 
 
 FleeingCoraliaEliasGroup:
-UNIT EliasReal Dracoknight 0x0  Level(10,NPC,False) [3,29] 0x0 0x0 0x1 REDA6R22 [BraveAxe,SilverAxe,Argilabrys] NoAI
+UNIT EliasReal Dracoknight 0x0  Level(10,NPC,False) [3,29] 0x0 0x0 0x1 REDA6R22 [MasterAxe,SilverAxe,Argilabrys] NoAI
 UNIT CoraliaReal MasterKnight_F EliasReal Level(5,NPC,False) [4,29] 0x0 0x0 0x1 REDA6R23 [StoneSword, Mend] NoAI
 UNIT
 

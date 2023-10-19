@@ -49,50 +49,57 @@ UnspecifiedBattleConvo(Wrathgar,Chapter9,1,WrathgarBossQ)
 UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
 UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
 
+//chapter 10
+SpecifiedBattleConvo(Cidor,Cleo,Chapter10,8,Ch10CidorCleoBossQuote)
+SpecifiedBattleConvo(Cidor,Loewe,Chapter10,9,Ch10CidorLoeweBossQuote)
+SpecifiedBattleConvo(Cidor,Mira,Chapter10,10,Ch10CidorMiraBossQuote)
+SpecifiedBattleConvo(Cidor,Iskra,Chapter10,11,Ch10CidorIskraBossQuote)
+SpecifiedBattleConvo(Cidor,Korovai,Chapter10,12,Ch10CidorKorovaiBossQuote)
+UnspecifiedBattleConvo(Cidor,Chapter10,13,Ch10CidorBossQuote)
+UnspecifiedBattleConvo(Johanna,Chapter10,14,Ch10JohannaBossQuote)
+UnspecifiedBattleConvo(Elias,Chapter10,15,Ch10EliasBossQuote)
+SpecifiedBattleConvo(Mifan,Buldak,Chapter10,21,Ch10MifanBuldakBossQuote)
+SpecifiedBattleConvo(Mifan,Valse,Chapter10,22,Ch10MifanValseBossQuote)
+SpecifiedBattleConvo(Mifan,Hornet,Chapter10,23,Ch10MifanHornetBossQuote)
+SpecifiedBattleConvo(Mifan,Korovai,Chapter10,31,Ch10MifanKorovaiBossQuote)
+UnspecifiedBattleConvo(Mifan,Chapter10,32,Ch10MifanBossQuote)
+
+//Chapter 11
+SpecifiedBattleConvo(Cleo,Epony,Chapter11,25,Ch12xCleoEponyBattleQuote)
+SpecifiedBattleConvo(Cleo,Epony,Chapter11,26,Ch12xCleoEponyBattleQuote2)
+SpecifiedBattleConvo(Korovai,Cleo,Chapter11,27,Ch12xKorovaiEndingScene10CleoBattleQuote)
+
+//Chapter 12
 SpecifiedBattleConvo(Eitha,Leina,Chapter12,9,Ch12EithaLeinaBossQuote)
 SpecifiedBattleConvo(Eitha,Cleo,Chapter12,18,Ch12EithaCleoBossQuote)
 SpecifiedBattleConvo(Eitha,Cleo,Chapter12,19,Ch12EithaLoeweBossQuote)
 UnspecifiedBattleConvo(Eitha,Chapter12,23,Ch12EithaBossQuote)
-SpecifiedBattleConvo(Cleo,Epony,Chapter11,25,Ch12xCleoEponyBattleQuote)
-SpecifiedBattleConvo(Cleo,Epony,Chapter11,26,Ch12xCleoEponyBattleQuote2)
-SpecifiedBattleConvo(Korovai,Cleo,Chapter11,27,Ch12xKorovaiEndingScene10CleoBattleQuote)
-SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
 UnspecifiedBattleConvo(Tao_Fake,Chapter12,0x0,Ch12xBeginningScene3Part2TaoBattleQuote)
 UnspecifiedBattleConvo(Tiberius,Chapter12,17,Ch12TiberiusBossQuote)
+
+//Chapter 13
+SpecifiedBattleConvo(Veniamin,Cleo,Chapter13,13,VeniaminCleoBossQ)
 UnspecifiedBattleConvo(Veniamin,Chapter13,1,VeniaminBossQ)
 UnspecifiedBattleConvo(Corundum,Chapter13,11,CorundumBossQ)
 UnspecifiedBattleConvo(Pascal,Chapter13,12,PascalBossQ)
+
+// Chapter 14
 UnspecifiedBattleConvo(Tsoureki,Chapter14,0x15,TsourekiBossQ)
-UnspecifiedBattleConvo(Hamdi,Chapter16,0x16,HamdiBossQ)
-UnspecifiedBattleConvo(Colossus,Chapter16,0x16,ColossusBossQ)
-UnspecifiedBattleConvo(Barod2,Chapter18,0x16,BarodBossQ)
-UnspecifiedBattleConvo(Shafaqat,Chapter18,0x17,ShafaqatBossQ)
-UnspecifiedBattleConvo(Riggan,Chapter18,0x18,Ch18RigganBossQ)
-
-
-//chapter 10
-SpecifiedBattleConvo(Cidor,Cleo,Chapter10,0x16,Ch10CidorCleoBossQuote)
-SpecifiedBattleConvo(Cidor,Loewe,Chapter10,0x17,Ch10CidorLoeweBossQuote)
-SpecifiedBattleConvo(Cidor,Mira,Chapter10,0x18,Ch10CidorMiraBossQuote)
-SpecifiedBattleConvo(Cidor,Iskra,Chapter10,0x19,Ch10CidorIskraBossQuote)
-SpecifiedBattleConvo(Cidor,Korovai,Chapter10,0x24,Ch10CidorKorovaiBossQuote)
-UnspecifiedBattleConvo(Cidor,Chapter10,0x20,Ch10CidorBossQuote)
-UnspecifiedBattleConvo(Johanna,Chapter10,0x21,Ch10JohannaBossQuote)
-UnspecifiedBattleConvo(Elias,Chapter10,0x22,Ch10EliasBossQuote)
-SpecifiedBattleConvo(Mifan,Buldak,Chapter10,0x25,Ch10MifanBuldakBossQuote)
-SpecifiedBattleConvo(Mifan,Valse,Chapter10,0x26,Ch10MifanValseBossQuote)
-SpecifiedBattleConvo(Mifan,Hornet,Chapter10,0x27,Ch10MifanHornetBossQuote)
-SpecifiedBattleConvo(Mifan,Korovai,Chapter10,0x28,Ch10MifanKorovaiBossQuote)
-UnspecifiedBattleConvo(Mifan,Chapter10,0x23,Ch10MifanBossQuote)
-
-
-
 
 //Chapter15
 SpecifiedBattleConvo(Kassandra,Cleo,Chapter15Cutscene,0x0,Ch15KassandraVSCleo)
 SpecifiedBattleConvo(Elias,Kassandra,Chapter15Cutscene,0x0,Ch15EndingScene3EliasKassandraBattleQuote)
 SpecifiedBattleConvo(Loewe,Catrin,Chapter15Cutscene,20,Ch15CatrinLoeweRound1)
 SpecifiedBattleConvo(Loewe,Catrin,Chapter15Cutscene,21,Ch15CatrinLoeweRound2)
+
+// Chapter 16
+UnspecifiedBattleConvo(Hamdi,Chapter16,0x16,HamdiBossQ)
+UnspecifiedBattleConvo(Colossus,Chapter16,0x16,ColossusBossQ)
+
+// Chapter 18
+UnspecifiedBattleConvo(Barod2,Chapter18,0x16,BarodBossQ)
+UnspecifiedBattleConvo(Shafaqat,Chapter18,0x17,ShafaqatBossQ)
+UnspecifiedBattleConvo(Riggan,Chapter18,0x18,Ch18RigganBossQ)
 
 // Chapter21
 SpecifiedBattleConvo(Vinny,Iberis,Chapter21,0x14,BQVinnyIberis)

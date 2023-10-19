@@ -119,3 +119,8 @@ void AddLeadershipASMC(){
 	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
 	unit->supports[5] += gEventSlot[2];
 }
+
+void SetLeadershipASMC(){
+	Unit* unit = GetUnitStructFromEventParameter(gEventSlot[1]);
+	unit->supports[5] = gEventSlot[2];
+}

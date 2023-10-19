@@ -18,6 +18,7 @@ s8 IsUnitEnemyWithActiveUnit(struct Unit* unit);
 s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** outDefender);
 extern bool(*gSkillTester)(Unit* unit, int skillID);
 bool CanUnitRecklessCharge(Unit* actingUnit);
+Item GetUnitEquippedItem(Unit* unit);
 
 
 
@@ -78,7 +79,7 @@ int GetCurrentPromotedLevelBonus(){
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
-    bu->battleAvoidRate = (bu->battleSpeed) + bu->terrainAvoid + (bu->unit.lck);
+    bu->battleAvoidRate = (bu->battleSpeed * 2) + bu->terrainAvoid + bu->unit.lck;
 
     if (bu->battleAvoidRate < 0){
         bu->battleAvoidRate = 0;
@@ -86,7 +87,7 @@ void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
 }
 
 void ComputeBattleUnitHitRate(BattleUnit* bu) {
-    bu->battleHitRate = (bu->unit.skl * 2) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
+    bu->battleHitRate = (bu->unit.skl * 3) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
 }
 
 void HealBlueUnitsInCh6Arena(){
@@ -321,4 +322,24 @@ s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** o
 	}
 
     return TRUE;
+}
+
+void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct BattleUnit* defender) {
+
+    attacker->battleEffectiveCritRate = attacker->battleCritRate - defender->battleDodgeRate;
+
+    if (attacker->battleEffectiveCritRate < 0){
+        attacker->battleEffectiveCritRate = 0;
+    }
+
+
+    Item item = GetUnitEquippedItem(&defender->unit);
+    if (item.number == 0 && item.durability == 0){
+        // no equip so don't check for it
+    }
+    else{
+        if (GetItemAttributes(item) & IA_NEGATE_CRIT){
+            attacker->battleEffectiveCritRate = 0;
+        }
+    }
 }

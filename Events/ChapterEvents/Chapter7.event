@@ -227,7 +227,7 @@ UNIT Alex 0x0 Cleo Level(1,Ally,False) [26,15] 0x0 0x0 1 REDA27R15 [0x0] NoAI
 UNIT
 
 GreenUnits:
-UNIT Korovai DukeKnight Epony Level(1,NPC,False) [0,2] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
+UNIT Korovai DukeKnight Epony Level(2,NPC,False) [0,2] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
 UNIT Epony Noble_F 0x0 Level(7,NPC,False) [1,1] 0x0 0x0 0x0 0x0 [ShortSword] BossHealAI
 UNIT Freyse LanceArmor          Epony Level(12,NPC,True) [0,5] 0x0 0x0 0x0 0x0 [ShortLance] BossHealAI
 UNIT Freyse AxeArmor         Epony Level(12,NPC,True) [1,6] 0x0 0x0 0x0 0x0 [IronAxe] BossHealAI
@@ -236,6 +236,7 @@ UNIT Freyse AxeArmor         Epony Level(12,NPC,True) [3,0] 0x0 0x0 0x0 0x0 [Iro
 UNIT
 
 Traps1:
+	RedSigil(6,0)
 	ENDTRAP
 	ALIGN 4
 
@@ -393,6 +394,8 @@ SHORT 0
 ALIGN 4
 Ch7Vendor:
 SHORT Thunder
+SHORT Lightning
+SHORT Flux
 SHORT Mend
 SHORT Physic
 SHORT Sleep
@@ -400,6 +403,8 @@ SHORT Vulnerary
 SHORT Elixir
 SHORT 0
 SHORT 0
+
+ALIGN 4
 
 YouSuck:
 CALL GameOverStart
