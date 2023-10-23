@@ -1,53 +1,53 @@
 INLINE MagClassTable,Base Magic,Magic Growth,Magic Cap,Magic Promotion Bonus
 None,0,0,20,0
-Noble,3,25,20,0
-Noble(F),3,25,20,0
-MasterKnight,7,25,25,4
-MasterKnight(F),7,25,25,4
-SwordKnight,0,10,20,0
-LanceKnight,0,10,20,0
-AxeKnight,0,10,20,0
-BowKnight,0,10,20,0
-ArchKnight,1,10,25,1
-ForrestKnight,1,10,25,1
-GreatKnight,1,10,25,1
-DukeKnight,1,10,25,1
-Thief,0,10,20,0
+Noble,3,45,20,0
+Noble(F),3,45,20,0
+MasterKnight,9,45,25,6
+MasterKnight(F),9,45,25,6
+SwordKnight,0,5,20,0
+LanceKnight,0,5,20,0
+AxeKnight,0,5,20,0
+BowKnight,0,5,20,0
+ArchKnight,1,5,25,1
+ForrestKnight,1,5,25,1
+GreatKnight,1,5,25,1
+DukeKnight,1,5,25,1
+Thief,0,5,20,0
 Manakete,0,10,20,0
-SwordFighter,0,10,20,1
-SwordFighter(F),0,10,20,1
-Hero,1,10,25,1
-Hero (F),1,10,25,1
-Myrmidon,0,10,20,0
-Myrmidon (F),0,10,20,0
-Swordmaster,1,10,25,1
-Swordmaster (F),1,10,25,1
-Thief(F),0,10,20,0
-Ballista,0,10,20,0
-Archer,0,10,20,0
-Archer (F),0,10,20,0
-Sniper,3,10,25,1
-Sniper (F),3,10,25,1
-Scaleshot,0,10,20,0
-Skyseeker,4,30,20,0
-Dragonlord,2,10,25,2
-Seraphknight,7,30,25,3
-Pegasus Rider,3,20,20,0
-Falcoknight,5,20,25,2
-Dragon Rider,0,10,20,1
-Dracoknight,1,10,25,1
-Mage,5,35,20,0
-Mage (F),5,35,20,0
+SwordFighter,0,5,20,1
+SwordFighter(F),0,5,20,1
+Hero,1,5,25,1
+Hero (F),1,5,25,1
+Myrmidon,2,15,20,0
+Myrmidon (F),2,15,20,0
+Swordmaster,4,15,25,2
+Swordmaster (F),4,15,25,2
+Thief(F),0,5,20,0
+Ballista,0,5,20,0
+Archer,1,10,20,0
+Archer (F),1,10,20,0
+Sniper,2,10,25,1
+Sniper (F),2,10,25,1
+Scaleshot,1,10,20,0
+Skyseeker,3,25,20,0
+Dragonlord,2,10,25,1
+Seraphknight,5,25,25,2
+Pegasus Rider,2,15,20,0
+Falcoknight,4,15,25,2
+Dragon Rider,0,5,20,1
+Dracoknight,1,5,25,1
+Mage,6,40,20,0
+Mage (F),6,40,20,0
 Sage,6,30,25,2
 Sage (F),6,30,25,2
-Mage Knight,7,35,25,2
-Mage Knight (F),7,35,25,2
+Mage Knight,9,40,25,3
+Mage Knight (F),9,40,25,3
 High Priest,10,45,25,3
 High Priestess,10,45,25,3
-Dark Mage,6,40,20,0
-Dark Mage (F),6,40,20,0
-Dark Bishop,9,40,25,3
-Dark Bishop (F),9,40,25,3
+Dark Mage,5,35,20,0
+Dark Mage (F),5,35,20,0
+Dark Bishop,7,35,25,3
+Dark Bishop (F),7,35,25,3
 Bard,4,30,20,0
 Sister,4,30,20,0
 Thief Fighter,1,5,25,1
@@ -56,8 +56,8 @@ Priest,7,45,20,0
 Priest (F),7,45,20,0
 Rook Knight,0,5,20,0
 Gold Knight,1,5,25,1
-Troubadour,4,30,20,0
-Paladin,6,30,25,2
+Troubadour,4,25,20,0
+Paladin,6,25,25,2
 Manakete,2,0,25,0
 Manakete (F),2,0,25,0
 Hunter,0,5,20,0
@@ -71,8 +71,8 @@ Axe Armor,0,5,20,0
 Lance Armor,0,5,20,0
 Bow Armor,0,5,20,0
 General,1,5,25,1
-Mage Armor,5,35,20,0
-Baron,8,30,25,3
+Mage Armor,6,40,20,0
+Baron,9,40,25,3
 Axe Fighter,0,5,20,0
 Axe Fighter (F),0,5,20,0
 Thief Fighter (F),1,5,25,1
@@ -82,7 +82,7 @@ Axe Soldier,0,5,20,0
 Fleet,0,0,20,0
 Phantom,0,0,20,0
 SwordKnight (D),0,5,20,0
-LongBallista,1,0,25,1
+LongBallista,1,5,25,1
 LanceKnight (D),0,5,20,0
 AxeKnight (D),0,5,20,0
 BowKnight (D),0,5,20,0
@@ -90,23 +90,23 @@ ArchKnight (D),1,5,25,1
 ForrestKnight (D),1,5,25,1
 GreatKnight (D),1,5,25,1
 DukeKnight (D),1,5,25,1
-Scaleshot (D),0,5,20,0
-Skyseeker (D),4,5,20,0
-Dragonlord (D),2,5,25,2
-Seraphknight (D),7,0,25,3
-Pegasus Rider (D),0,5,20,0
-Falcoknight (D),2,5,25,2
+Scaleshot (D),1,10,20,0
+Skyseeker (D),3,25,20,0
+Dragonlord (D),2,10,25,1
+Seraphknight (D),5,25,25,2
+Pegasus Rider (D),2,15,20,0
+Falcoknight (D),4,15,25,2
 Dragon Rider (D),0,5,20,0
 Gorgon Egg,0,0,20,0
-Dracoknight (D),0,5,25,1
+Dracoknight (D),1,5,25,1
 Mage Knight (D),7,35,25,2
 Dracozombie,1,30,20,0
 Demon King,23,40,20,0
 Mage Knight (F) (D),7,35,25,2
 Rook Knight (D),0,0,20,0
 Gold Knight (D),1,5,25,1
-Troubadour (D),4,30,20,0
-Paladin (D),6,30,25,2
+Troubadour (D),4,25,20,0
+Paladin (D),6,25,25,2
 Bard (F),4,30,20,0
 Civilian,0,0,20,0
 Civilian (F),0,0,20,0
@@ -118,21 +118,21 @@ Corsair,0,5,20,0
 Corsair (F),0,5,20,0
 Berserker,1,5,25,1
 Berserker (F),1,5,25,1
-Master Knight (D),7,25,25,4
+Master Knight (D),9,45,25,6
 Halberdier,2,5,25,1
 Tent,0,0,20,0
 Freelancer,0,5,20,0
 Champion,1,5,25,1
-Master_Knight_F (D),7,25,25,4
-Brother,3,30,20,0
-Bard 2: Electric Boogaloo (Apsis class),0,30,20,0
-Sage 2: Electric Boogaloo (Apsis class),4,30,25,4
+Master_Knight_F (D),9,45,25,6
+Brother,4,30,20,0
+Bard 2: Electric Boogaloo (Apsis class),4,30,20,0
+Sage 2: Electric Boogaloo (Apsis class),6,30,25,2
 Emperor,7,35,25,3
 ByelenClass,8,45,25,3
 CherneClass,8,45,25,3
 CromarMorbing,1,10,25,1
-Dracoknight (F) (D),1,10,25,1
-Ephraim Lord,1,10,20,0
+Dracoknight (F),1,5,25,1
+Dracoknight (F) (D),1,5,20,0
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0

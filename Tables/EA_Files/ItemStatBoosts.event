@@ -99,15 +99,31 @@ StatBonus(3,0,0,0,0,0,0,0,0,0)
 
 ALIGN 4
 EnergyRingStatBoosts:
-StatBonus(0,1,0,0,0,0,0,0,0,0)
+StatBonus(0,2,0,0,0,0,0,0,0,0)
+
+ALIGN 4
+SpiritDustStatBoosts:
+StatBonus(0,0,2,0,0,0,0,0,0,0)
+
+ALIGN 4
+SecretBookStatBoosts:
+StatBonus(0,0,0,3,0,0,0,0,0,0)
 
 ALIGN 4
 SpeedwingStatBoosts:
 StatBonus(0,0,0,0,1,0,0,0,0,0)
 
 ALIGN 4
+GoddessIconStatBoosts:
+StatBonus(0,0,0,0,0,0,0,3,0,0)
+
+ALIGN 4
 DragonshieldStatBoosts:
 StatBonus(0,0,0,0,0,1,0,0,0,0)
+
+ALIGN 4
+TalismanStatBoosts:
+StatBonus(0,0,0,0,0,0,3,0,0,0)
 
 ALIGN 4
 SwiftsoleStatBoosts:

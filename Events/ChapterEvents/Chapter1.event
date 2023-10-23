@@ -17,11 +17,10 @@ TurnBasedEvents:
 TurnEventPlayer(0, TutorialZero, 1)
 TurnEventPlayer(0, TutorialTime, 2)
 TurnEventPlayer(0, AlenaSpawn, 2)
-TurnEventPlayer(0, TutorialTime2, 3)
 TurnEventPlayer(0, AlenaCharge, 3)
-TurnEventPlayer(0, BoroSpawn, 9)
 TurnEventPlayer(0,RaschwitzWarning,4)
 TurnEventPlayer(0,LastBoroWarning,7)
+TurnEventPlayer(0, BoroSpawn, 9)
 END_MAIN
 
 TutorialZero:
@@ -33,14 +32,6 @@ TutorialTime:
 CameraCursor(Mira)
 Text(Chapter1MiraCaptureText)
 CenterTextbox(Chapter1CaptureStealTutorialBox)
-NoFade
-ENDA
-
-TutorialTime2:
-CAMERA_CENTERED [5,18]
-FlashCursor(5,18,30)
-Text(Chapter1FreelancerEquipText)
-CenterTextbox(Chapter1EquipTutorialBox)
 NoFade
 ENDA
 
@@ -163,18 +154,20 @@ UNIT Svetomir Freelancer 0x0 Level(1,NPC,False) [14,1] 0x0 0x0 0x1 REDA10R1 [0x0
 UNIT 
 
 EnemyUnits:
-UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
+UNIT Raschwitz_Ch1 BowArmor 0x0      Level(3,Enemy,False) [2,0] 0x0 0x0 0x0 0x0 [SteelBow, LeatherShield] AttackInRangeAI
+UNIT Chapter1Generics AxeArmor 0x0      Level(1,Enemy,True) [3,0] 0x0 0x0 0x0 0x0 [SteelAxe] NeverMoveAI
 UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [13,16] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
-UNIT Chapter1Generics SwordArmor Raschwitz_Ch1 Level(1,Enemy,True) [4,7] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics SwordArmor Raschwitz_Ch1 Level(1,Enemy,True) [4,8] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
 UNIT Chapter1Generics AxeSoldier Raschwitz_Ch1 Level(1,Enemy,True) [14,13] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Chapter1Generics SwordFighter Raschwitz_Ch1 Level(1,Enemy,True) [14,7] 0x0 0x0 0x0 0x0 [ShortSword] AttackInRangeAI
 UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,14] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey_5] NeverMoveAI
 UNIT Chapter1Generics AxeSoldier Raschwitz_Ch1 Level(1,Enemy,True) [10,4] 0x0 0x0 0x0 0x0 [IronAxe, DoorKey] NeverMoveAI
 UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
 UNIT Chapter1Generics LanceSoldier Raschwitz_Ch1 Level(1,Enemy,True) [15,3] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey] NeverMoveAI
-UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [5,3] 0x0 0x0 0x0 0x0 [Shortbow] AttackInRangeAI
-UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
-UNIT Chapter1Generics Freelancer Raschwitz_Ch1 Level(1,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [IronLance, LeatherShield] AttackInRangeAI
+UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [5,3] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Chapter1Generics Archer Raschwitz_Ch1 Level(1,Enemy,True) [2,6] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
+UNIT Chapter1Generics LanceArmor Raschwitz_Ch1 Level(1,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Chapter1Generics Freelancer Raschwitz_Ch1 Level(1,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT
 
 
@@ -299,7 +292,7 @@ SingleUnitMove(Helman,15,7,6)
 Text(BeginningSceneLoeweFlashback2Text4)
 SingleUnitMove(Helman,15,5,9)
 SingleUnitMove(Helman,15,3,8)
-STAL 30
+Text(BeginningSceneLoeweFlashback2Text4_5)
 SingleUnitMove(Helman,10,3,9)
 SingleUnitMove(Helman,10,1,9)
 MOVE 10 Helman [2,4]
@@ -396,6 +389,7 @@ RaschwitzWarning:
 CAMERA Raschwitz_Ch1
 FlashCursor(Raschwitz_Ch1,60)
 Text(RaschwitzWarningBoroText)
+CenterTextbox(Chapter1EquipTutorialBox)
 NoFade
 ENDA
 
@@ -425,8 +419,7 @@ ENDA
 SvetomirAlenaTalkCh1:
 MUSS WithUs_Song
 Text(SvetomirAlenaTalkCh1Text)
-CUSA Alena
-SetFatigue(Alena,0)
+NPCToAlly(Alena)
 MURE 2
 NoFade
 ENDA
@@ -440,9 +433,8 @@ ENDA
 LoeweSvetomirFreed:
 MUSS WithUs_Song
 Text(LoeweSvetomirFreedText)
-CUSA Loewe
-CUSA Svetomir
-SetFatigue(Svetomir,0)
+NPCToAlly(Loewe)
+NPCToAlly(Svetomir)
 GiveItem(IronBow,Loewe)
 GiveItem(Heal,Svetomir)
 SilentGiveItem(Vulnerary,Loewe)

@@ -9,6 +9,8 @@
 #define SlowSpeed 1
 #define LoadInOneOfTwoUnitGroupsBasedOnEID(eventID, label1, label2, unitgroup1, unitgroup2) "CHECK_EVENTID eventID; BEQ label1 s0 sC; LOAD1 1 unitgroup1; GOTO label2; LABEL label1; LOAD1 1 unitgroup2; LABEL label2; ENUN"
 
+#define NPCToAlly(charId) "CUSA charId; SetFatigue(charId, 0)"
+#define CheckIfExistentAllyThenLoadGroup(charId, labelId, unitGroup) "CheckUnitDeadOrJailed(charId); BNE labelId s0 sC; LOAD1 0 unitGroup; ENUN; LABEL labelId"
 
 #define CheckUnitExistsThenHighlightPlusText(charID, label, textID) "CHECK_EXISTS charID; BEQ label s0 sC; CameraCursor(charID); Text(textID); LABEL label" 
 #define PreventSkipping "EVBIT_MODIFY 1"

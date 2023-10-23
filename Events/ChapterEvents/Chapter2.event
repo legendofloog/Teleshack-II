@@ -13,11 +13,18 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, TutorialTime2, 1)
 TurnEventPlayer(12, Turn3Spawn, 3)
 TurnEventPlayer(13, BoroSpawn, 7)
 TurnEventPlayer(14, BoroWarning, 6)
 TurnEventPlayer(20, Turn5Spawn, 5)
 END_MAIN
+
+TutorialTime2:
+CameraCursor(Cleo)
+CenterTextbox(Chapter2Tutorial)
+NoFade
+ENDA
 
 ALIGN 32
 CharacterBasedEvents:
@@ -66,16 +73,36 @@ Tutorial:
 
 Units1:
 UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Svetomir Priest            Cleo Level(2,Ally,False) [2,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [2,0] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
+UNIT Loewe Priest            Cleo Level(2,Ally,False) [2,2] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra Mage_F                Cleo Level(1,Ally,False) [2,1] 0x0 0x0 0x0 0x1 [Thunder,Vulnerary]                NoAI
 UNIT Emil LanceKnight_Dismounted Cleo Level(1,Ally,False) [0,1] 0x0 0x0 0x0 0x1 [IronLance,Vulnerary]              NoAI
-UNIT Mira ThiefFighter           Cleo Level(1,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
+UNIT Mira ThiefFighter_F           Cleo Level(1,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [SilverSword,Shortsword,Vulnerary] NoAI
 UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [2,1] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
 UNIT Alena Myrmidon_F 0x0 Level(3,Ally,False) [0,0] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] NoAI
 UNIT
 
+MiraGroup:
+UNIT Mira ThiefFighter_F            Cleo Level(2,Ally,False) [1,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+IskraGroup:
+UNIT Iskra Mage_F            Cleo Level(2,Ally,False) [0,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+EmilGroup:
+UNIT Emil LanceKnight_Dismounted            Cleo Level(2,Ally,False) [2,1] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+SvetomirGroup:
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [2,0] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+AlenaGroup:
+UNIT Alena Myrmidon            Cleo Level(2,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT 
+
 EnemyUnits:
-UNIT Tyr_Ch2 AxeArmor 0x0      Level(4,Enemy,False) [11,18] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Tyr_Ch2 AxeArmor 0x0      Level(4,Enemy,False) [11,18] 0x0 0x0 0x0 0x0 [SteelAxe, GoddessIcon] AttackInRangeAI
 UNIT Chapter1Generics SwordFighter Tyr_Ch2 Level(2,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [Rapier] PursueWithoutHeedAI
 UNIT Chapter1Generics AxeFighter Tyr_Ch2 Level(2,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(2,Enemy,True) [14,11] 0x0 0x0 0x0 0x0 [ShortLance, DoorKey, ChestKey] NeverMoveAI
@@ -193,16 +220,20 @@ BeginningScene:
 	MOVE 15 Loewe [2,2]
 	ENUN
 	Text(Chapter2OpeningScene4)
-	MOVE 15 Varga [1,2]
-	MOVE 15 Cleo [0,2]
+	MOVE 15 Varga [2,2]
+	MOVE 15 Cleo [1,2]
+	MOVE 15 Loewe [0,2]
 	ENUN
+	NPCToAlly(Varga)
 	STAL 30
 	CAMERA Dragana
 	FlashCursor(Tyr_Ch2,60)
 	FlashCursor(Dragana,60)
-	LOAD3 0 Units1
-	ENUN
-	CUSA Varga
+	CheckIfExistentAllyThenLoadGroup(Mira, 6, MiraGroup)
+	CheckIfExistentAllyThenLoadGroup(Iskra, 7, IskraGroup)
+	CheckIfExistentAllyThenLoadGroup(Emil, 8, EmilGroup)
+	CheckIfExistentAllyThenLoadGroup(Svetomir, 9, SvetomirGroup)
+	CheckIfExistentAllyThenLoadGroup(Alena, 10, AlenaGroup)
 	Text(Chapter2OpeningScene5)
 	NoFade
 	ENDA
@@ -248,10 +279,9 @@ BNE 1 s1 sC
 LABEL 1
 Text(DelilahFreedText)
 LABEL 2
-CUSA Delilah
+NPCToAlly(Delilah)
 GiveItem(Heal,Delilah)
 SilentGiveItem(Vulnerary,Delilah)
-SetFatigue(Delilah,0)
 NoFade
 ENDA
 

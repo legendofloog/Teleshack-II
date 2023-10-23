@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pPowerModifiers: // Power
-	POIN prAddUnitPower prHalveIfCapturing prHalveIfRescuing prDebuffStr prAddEquipPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow prResolve prDefiantStr prPushStr prDismountedLordStrDebuff prDismountedHorseStrDebuff prDismountedPegStrDebuff prDismountedDragonStrDebuff prEquipmentStr
+	POIN prAddUnitPower prHalveIfCapturing prHalveIfRescuing prDebuffStr prAddEquipPower prItemPassivePow prRallyStr prLifeAndDeathBonus prSkillFury prFortressDefensePow VigorDanceCheck prFortressResistancePow prResolve prDefiantStr prPushStr prEquipmentStr
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif

@@ -26,8 +26,6 @@ CharacterEventBothWays(14, DraganaLoeweTalkCh3, Loewe, Dragana)
 END_MAIN
 
 LocationBasedEvents:
-//House(3, DebugHouse, 6,9)
-//House(3, KillMiraHouse, 6,10)
 Door(20,2)
 Chest(SteelAxe,23,2)
 Chest(RedGem,26,2)
@@ -41,7 +39,6 @@ Escape(29,12)
 Escape(29,13)
 Escape(29,14)
 Escape(29,15)
-//Escape(0,9)
 END_MAIN
 
 
@@ -51,14 +48,6 @@ AFEV 15 AlexAxelWall 0
 AFEV 0x65 DraganaDeathResponse 0x0D
 CauseGameOverIfLordDies
 END_MAIN
-
-/*DebugHouse:
-ENDA
-
-KillMiraHouse:
-KILL Mira
-AWAIT_KILL Mira
-ENDA*/
 
 AlexAxelWall:
 CHECK_EVENTID 9 // is the door event triggered
@@ -107,14 +96,42 @@ END_MAIN
 Units1:
 	UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [3,8] 0x0 0x0 0x0 0x0 [0x0]     NoAI
 	UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [3,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
+	UNIT Mira ThiefFighter_F Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Iskra Mage_F Cleo Level(5,Ally,False) [0,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Emil LanceKnight_Dismounted Cleo Level(5,Ally,False) [1,10] 0x0 0x0 0x0 0x0 [0x0] NoAI
-	UNIT Mira ThiefFighter_F Cleo Level(5,Ally,False) [2,9] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Svetomir Priest Cleo Level(5,Ally,False) [1,8] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Alena Myrmidon_F Cleo Level(5,Ally,False) [2,7] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT Varga SwordArmor Cleo Level(5,Ally,False) [2,11] 0x0 0x0 0x0 0x0 [DoorKey] NoAI
 	UNIT Delilah Sister Cleo Level(5,Ally,False) [0,11] 0x0 0x0 0x0 0x0 [0x0] NoAI
 	UNIT
+
+MiraGroup:
+UNIT Mira ThiefFighter_F            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA2R9 [0x0] NoAI
+UNIT
+
+IskraGroup:
+UNIT Iskra Mage_F            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA0R7 [0x0] NoAI
+UNIT
+
+EmilGroup:
+UNIT Emil LanceKnight_Dismounted            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA1R10 [0x0] NoAI
+UNIT
+
+SvetomirGroup:
+UNIT Svetomir Priest            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA1R8 [0x0] NoAI
+UNIT
+
+AlenaGroup:
+UNIT Alena Myrmidon            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA2R7 [0x0] NoAI
+UNIT 
+
+VargaGroup:
+UNIT Varga SwordArmor            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA2R11 [0x0] NoAI
+UNIT 
+
+DelilahGroup:
+UNIT Delilah Sister            Cleo Level(2,Ally,False) [0,9] 0x0 0x0 1 REDA0R11 [0x0] NoAI
+UNIT 
 
 Traps1:
 BlueSigil(29,11)
@@ -136,14 +153,7 @@ UNIT
 
 CutsceneUnits:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R8 [0x0]     NoAI
-UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R9 [0x0]     NoAI
-UNIT Mira ThiefFighter_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R10 [0x0]     NoAI
-UNIT Alena Myrmidon_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R7 [0x0]     NoAI
-UNIT Varga SwordArmor   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA2R11 [0x0]     NoAI
-UNIT Emil LanceKnight_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R10 [0x0]     NoAI
-UNIT Svetomir Priest   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA1R8 [0x0]     NoAI
-UNIT Iskra Mage_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R7 [0x0]     NoAI
-UNIT Delilah Sister   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R11 [0x0]     NoAI
+UNIT Loewe Scaleshot_Dismounted   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA3R10 [0x0]     NoAI
 UNIT Dragana Sniper_F   Cleo Level(2,Ally,False) [0,9] 0x0 0x0 0x1 REDA0R9 [0x0]     NoAI
 UNIT
 
@@ -382,7 +392,14 @@ CALL $9EE2C4
 MUSC TreasureOfRudrasBattleTheme
 ENUN
 CamOn
-LOAD1 2 CutsceneUnits //loads cutscene units only if alive
+LOAD1 1 CutsceneUnits //loads cutscene units only if alive
+CheckIfExistentAllyThenLoadGroup(Mira, 10, MiraGroup)
+CheckIfExistentAllyThenLoadGroup(Iskra, 11, IskraGroup)
+CheckIfExistentAllyThenLoadGroup(Emil, 12, EmilGroup)
+CheckIfExistentAllyThenLoadGroup(Svetomir, 13, SvetomirGroup)
+CheckIfExistentAllyThenLoadGroup(Alena, 14, AlenaGroup)
+CheckIfExistentAllyThenLoadGroup(Varga, 15, VargaGroup)
+CheckIfExistentAllyThenLoadGroup(Delilah, 16, DelilahGroup)
 ENUN
 CamOff
 CAMERA Dragana
@@ -394,17 +411,11 @@ TEXTSHOW BeginningSceneTextC
 TEXTEND
 CAMERA Emory_Ch3
 CURSOR_FLASHING Emory_Ch3
-REMOVEALL_BLUE
-LOAD1 1 DraganaUnit
-LOAD3 0 Units1
-ENUN
-//LOAD1 0 UnitLoadTest
 STAL 50
 REMOVE_CURSORS
 TEXTCONT
 TEXTEND
 REMA
-// CAMERA [3,6]
 ENUN
 NoFade
 ENDA

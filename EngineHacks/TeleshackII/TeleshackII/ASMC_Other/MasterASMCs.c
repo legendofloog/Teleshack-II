@@ -79,7 +79,7 @@ int GetCurrentPromotedLevelBonus(){
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
-    bu->battleAvoidRate = (bu->battleSpeed * 2) + bu->terrainAvoid + bu->unit.lck;
+    bu->battleAvoidRate = bu->battleSpeed * 2 + bu->terrainAvoid + bu->unit.lck *  3 / 2;
 
     if (bu->battleAvoidRate < 0){
         bu->battleAvoidRate = 0;
@@ -87,7 +87,7 @@ void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
 }
 
 void ComputeBattleUnitHitRate(BattleUnit* bu) {
-    bu->battleHitRate = (bu->unit.skl * 3) + GetItemHit(bu->weapon) + (bu->unit.lck) + bu->wTriangleHitBonus;
+    bu->battleHitRate = (bu->unit.skl * 3) + bu->unit.lck + GetItemHit(bu->weapon) + bu->wTriangleHitBonus;
 }
 
 void HealBlueUnitsInCh6Arena(){
