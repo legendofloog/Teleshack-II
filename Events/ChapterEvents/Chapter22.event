@@ -357,7 +357,7 @@ UNIT Cythes DarkBishop Eleanor Level(7,Enemy,True) [20,9] 0x0 0x0 0x0 0x0 [Hel] 
 UNIT Cythes Swordfighter Eleanor Level(20,Enemy,True) [28,2] 0x0 0x0 0x0 0x0 [Greatsword] AttackInRangeAI
 UNIT Cythes AxeSoldier Eleanor Level(20,Enemy,True) [26,3] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 UNIT Cythes Berserker Eleanor Level(7,Enemy,True) [31,6] 0x0 0x0 0x0 0x0 [TrainedAxe,Hurlbat] AttackInRangeAI
-UNIT Cythes Warrior Eleanor Level(7,Enemy,True) [29,4] 0x0 0x0 0x0 0x0 [BoldCleaver,SlimBow] AttackInRangeAI
+UNIT Cythes Warrior Eleanor Level(7,Enemy,True) [29,4] 0x0 0x0 0x0 0x0 [BoldCleaver,IronBow] AttackInRangeAI
 UNIT Cythes Halberdier Eleanor Level(7,Enemy,True) [28,6] 0x0 0x0 0x0 0x0 [Longlance,Poleaxe] AttackInRangeAI
 // Boss Group
 UNIT Cythes Myrmidon Eleanor Level(20,Enemy,True) [26,12] 0x0 0x0 0x0 0x0 [TrainedEdge] AttackInRangeAI

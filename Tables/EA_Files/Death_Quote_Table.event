@@ -1,16 +1,17 @@
 //DeathQuote(Character,Chapter,EventID,TextID)
-#define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
-#define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
-
+//#define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "BYTE Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
+#define DeathQuote(Character,Chapter,EventID,TextID) "BYTE Character; BYTE Chapter; SHORT EventID EventID TextID TextID 0 0"
+#define CaptureQuote(Character,Chapter,DeathEID,CaptureEID, DeathTextID, CaptureTextID) "BYTE Character Chapter; SHORT DeathEID CaptureEID DeathTextID CaptureTextID 0 0"
 // Bosses
 
-DeathQuote(Boro_Ch1,Chapter1, 0, BoroSeleseRetreatQuote)
-DeathQuote(Boro_Ch1,Chapter2, 0, BoroSeleseRetreatQuote)
+DeathQuote(Boro_Ch1,Chapter1, 0xA7, BoroSeleseRetreatQuote)
+DeathQuote(Boro_Ch1,Chapter2, 0xA7, BoroSeleseRetreatQuote)
+
 DeathQuote(Raschwitz_Ch1,Chapter1,2,RaschwitzDeathQuoteText)
 
 DeathQuote(Tyr_Ch2,Chapter2,2,TyrDeathQuote)
 
-DeathQuote(Emory_Ch3,Chapter3,2,EmoryDeathQuote)
+CaptureQuote(Emory_Ch3,Chapter3,2,2, EmoryDeathQuote, EmoryCaptureQuote)
 
 DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
 
@@ -233,4 +234,4 @@ DeathQuote(BarodReal,AllChapters,0x0,BarodRealDeathQuoteText)
 DeathQuote(TarajiReal,AllChapters,0x0,TarajiRealDeathQuoteText)
 DeathQuote(Athanasius,AllChapters,0x0,AthanasiusDeathQuoteText)
 
-DeathQuote(0xFFFF,0,0,0) // terminator
+DeathQuote(0xFF,0,0,0) // terminator

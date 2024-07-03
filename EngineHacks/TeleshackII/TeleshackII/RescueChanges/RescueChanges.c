@@ -18,7 +18,7 @@ s8 CanUnitRescue(struct Unit* actor, struct Unit* target){
     int actorAid  = GetUnitAid(actor);
     int targetCon = UNIT_CON(target);
 
-    return (actorAid > targetCon) ? TRUE : FALSE;
+    return (actorAid >= targetCon) ? TRUE : FALSE;
 }
 
 int GetUnitAid(struct Unit* unit) {

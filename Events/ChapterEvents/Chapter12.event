@@ -195,7 +195,7 @@ IndoorEnemy:
   UNIT Tiberius Noble Cidor Level(9,Enemy,False) [4,7] 0x0 0x0 0x0 0x1 [Darkbrand] AttackInRangeAI //4,7
 //turn 1
   UNIT Selese SwordFighter Cidor Level(12,Enemy,True) [29,8] 0x0 0x0 0x0 0x1 [IronSword] AttackInRangeAI
-  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [SlimAxe,PureWater] AttackInRangeAI
+  UNIT Selese AxeFighter Cidor Level(12,Enemy,True) [27,11] 0x0 0x0 0x0 0x1 [ShortAxe,PureWater] AttackInRangeAI
   UNIT Selese Mage Cidor Level(12,Enemy,True) [28,9] 0x0 0x0 0x0 0x1 [Thunder] AttackInRangeAI
 //turn 2
   UNIT Selese SwordArmor Cidor Level(12,Enemy,True) [23,7] 0x0 0x0 0x0 0x1 [SteelSword] BossAI

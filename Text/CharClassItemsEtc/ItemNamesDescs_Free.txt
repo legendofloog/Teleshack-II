@@ -41,7 +41,7 @@ Meteor[X]
 Casts long-range flames.[X]
 
 ## ShortSwordName
-Short Sword[X]
+Shortsword[X]
 
 ## GaleBowName
 Gale Bow[X]
@@ -49,11 +49,8 @@ Gale Bow[X]
 ## GaleBowDesc
 Long-range magic bow of the winds.[X]
 
-## SlimAxeName
-Slim Axe[X]
-
-## SlimAxeDesc
-A lightweight axe.[X]
+## ShortaxeName
+Shortaxe[X]
 
 ## ClaymoreName
 Claymore[X]
@@ -71,8 +68,7 @@ A bow with exceptional range.[X]
 Beiyr Scroll[X]
 
 ## BeiyrScrollDesc
-+15% Str, +10% Skl/Lck.[N]
-Blocks crits.[X]
++15% Str/Skl/Lck.[X]
 
 ## TemperedName
 [_T][_e]m[_p][_e][_r][_e][_d][_sp][_R]i[_n][_g][X]
@@ -201,10 +197,10 @@ Meat Cleaver[X]
 Axle[X]
 
 ## Axle1Desc
-Uncounterable. Lck +13.  Axel[LockIcon].[X]
+Uncounterable. Lck +13.  Axel/Alex[LockIcon].[X]
 
 ## Axle2Desc
-A long range axe. Alex[LockIcon].[X]
+A long range axe. Alex/Axel[LockIcon].[X]
 
 ## MiaodaoName
 Miaodao[X]
@@ -687,7 +683,7 @@ Increases Spd by 1 point.[NL]
 Vanishes after use.[X]
 
 ## GoddessIconDesc
-Increases Lck by 2 points.[NL]
+Increases Lck by 3 points.[NL]
 Vanishes after use.[X]
 
 ## DragonshieldDesc
@@ -855,3 +851,6 @@ Buldirk[X]
 
 ## BuldirkDesc
 Negates DEF. Can be used at range.[X]
+
+## CannotCritDesc
+Cannot crit.[X]

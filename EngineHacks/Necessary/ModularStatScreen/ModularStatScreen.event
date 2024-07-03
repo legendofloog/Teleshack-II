@@ -166,15 +166,7 @@
   
     #include "pages/mss_page2_original.lyn.event"
   
-  #ifdef ONLY_SHOW_USED_RANKS
-  
 	#include "pages/mss_page3_newranks.lyn.event"
-  
-  #else // ONLY_SHOW_USED_RANKS
-	
-	#include "pages/mss_page3_original.lyn.event"
-  
-  #endif  // ONLY_SHOW_USED_RANKS
   
   #ifdef ENABLE_PERSONAL_INFO
   

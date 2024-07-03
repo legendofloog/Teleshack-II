@@ -1,4 +1,33 @@
-
-
 #include "RTextChanges.lyn.event"
 
+ALIGN 4
+AtkTextIDLink:
+SHORT AtkTextID
+
+ALIGN 4
+HitTextIDLink:
+SHORT HitTextID
+
+ALIGN 4
+CritTextIDLink:
+SHORT CritTextID
+
+ALIGN 4
+DefTextIDLink:
+SHORT DefTextID
+
+ALIGN 4
+AvoTextIDLink:
+SHORT AvoTextID
+
+ALIGN 4
+DodgeTextIDLink:
+SHORT DodgeTextID
+
+ALIGN 4
+MSSPAGE2PCCTextIDLink:
+SHORT SS_PursuitCriticalCoefficient
+
+ALIGN 4
+ASTextIDLink:
+SHORT ASText

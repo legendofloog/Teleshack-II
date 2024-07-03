@@ -1,5 +1,5 @@
 #define IronSword 0x01
-#define SlimSword 0x02
+//#define SlimSword 0x02
 #define SteelSword 0x03
 #define SilverSword 0x04
 #define IronBlade 0x05
@@ -10,7 +10,7 @@
 #define FlameSword 0x08
 #define Rapier 0x09
 #define Shortsword 0x0A
-#define ShortSword 0x0A
+#define ShortSword Shortsword
 #define BraveSword 0x0B
 #define KingSword 0x0C
 #define KillingEdge 0x0D
@@ -22,7 +22,7 @@
 #define SleepSword 0x12
 #define MasterSword 0x13
 #define IronLance 0x14
-#define SlimLance 0x15
+//#define SlimLance 0x15
 #define SteelLance 0x16
 #define SilverLance 0x17
 #define ShortLance 0x18
@@ -109,7 +109,7 @@
 #define Talisman 0x61
 #define Boots 0x62
 #define BodyRing 0x63
-#define SlimBow 0x64
+//#define SlimBow 0x64
 #define DevilDagger 0x65
 #define BalladOfWar 0x66
 #define TheBreaker 0x67
@@ -187,14 +187,17 @@
 //#define AmserScrollID 0xaf
 
 #define Firestone 0xB2
-
+#define MarksmanBow 0xB3
+#define Claymore 0xB4
+//#define SlimAxe  0xB6
+#define Shortaxe 0xB6
+#define ShortAxe Shortaxe
 #define JunaFruit 0xB7
 #define BlackGem 0xBA
 #define GoldGem 0xBB
 #define GaleBow 0xBD
-#define SlimAxe  0xB6
-#define Claymore 0xB4
-#define MarksmanBow 0xB3
+
+
 #define GrowthScroll 0xBE
 #define SlimArch 0x8c
 #define Dullahan 0xBF

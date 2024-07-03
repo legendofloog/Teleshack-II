@@ -8,10 +8,7 @@
 	@ jumptohack at 8017EF4
 
 	lAutoloadSkills   = EALiterals+0x00
-@	lGetSkills        = EALiterals+0x04
-@	lChargeupTable    = EALiterals+0x08
 
-	@ BWLTable = 0x0203E884
 	BWLTable = 0x02026e20
 
 	.macro blh to, reg=r3
@@ -29,11 +26,13 @@ HookUnitLoading:
 	ldr  r4, [r5]
 	ldrb r4, [r4, #4] @char num in r4
 
-	cmp r4, #0x4A
+	cmp r4, #0x51
 	bhi no_skills
 
 	ldr r0, =BWLTable
-	lsl r1, r4, #4 @ r1 = char*0x10
+	mov r1, r4
+	mov r2, #8
+	mul r1, r2 @ r1 = char*0x8
 	add r0, r1
 	add r0, #1 @ start at byte 1, not 0
 

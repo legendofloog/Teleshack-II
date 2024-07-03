@@ -6,7 +6,6 @@
 
 #ifndef DebuffTable 
   #define DebuffTable     0x0203F100
-  //#define DebuffTable     0x0203Fa58
   #define DebuffTableSize 0x00000440
 #endif
 

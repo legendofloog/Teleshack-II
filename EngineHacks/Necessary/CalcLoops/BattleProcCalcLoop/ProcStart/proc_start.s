@@ -168,12 +168,11 @@ blh SkillTester, r3
 ldrh r2, [r7, #6] @final mt
 lsl r2, #0x10
 asr r2, #0x10
-mov r1, #2
-mul r2, r1        @ multiply the mt by 2 first
 ldrh r1, [r7, #8] @final def
 lsl r1, #0x10
 asr r1, #0x10
 sub r2, r1
+add r2, r2		@ should double critical damage
 strh r2, [r7, #4] @final damage
 
 @ mov r1, #4

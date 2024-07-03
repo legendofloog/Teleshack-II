@@ -12,6 +12,8 @@ ORG 0x87698
 jumpToHack(New_DrawUnitScreenSupportList)
 POP
 
+#define GiveSupportPointsToChar(charID, num, supportLevel) "SVAL s1 supportLevel; SVAL s2 charID; SVAL s3 num; ASMC GiveSupportPointsToCharASMC"
+
 ALIGN 4
 NewSupportTable:
 #include "NewSupportTable.event"
@@ -32,78 +34,79 @@ BYTE DullahanID
 
 ALIGN 4
 CleoSupportList:
+SupportEntry(Varga,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Varga,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Varga,ASupportLevel,0,3,15,0,0,15)
+
 SupportEntry(Emil,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Emil,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Emil,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Varga,CSupportLevel,1,1,5,0,0,5)
-SupportEntry(Varga,BSupportLevel,1,1,10,0,0,10)
-SupportEntry(Varga,ASupportLevel,2,2,10,0,0,10)
+SupportEntry(Darby,CSupportLevel,0,0,0,0,5,5)
+SupportEntry(Darby,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(Darby,ASupportLevel,0,0,0,0,15,15)
 
-SupportEntry(Darby,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Darby,BSupportLevel,2,0,0,0,10,0)
-SupportEntry(Darby,ASupportLevel,3,0,0,0,15,0)
-
-SupportEntry(Lyre,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Lyre,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Lyre,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Lyre,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(Lyre,BSupportLevel,0,0,0,10,0,10) // One way
+SupportEntry(Lyre,ASupportLevel,0,0,0,15,0,15)
 
 SupportEntry(EliasReal,BSupportLevel,2,2,0,0,0,0)
-SupportEntry(EliasReal,ASupportLevel,3,3,0,0,0,0)
+SupportEntry(EliasReal,ASupportLevel,4,4,0,0,0,0)
 SupportTerm
 
 ALIGN 4
 LoeweSupportList:
-SupportEntry(Iskra,CSupportLevel,1,1,5,5,0,0)
-SupportEntry(Iskra,BSupportLevel,1,1,10,10,0,0)
-SupportEntry(Iskra,ASupportLevel,2,2,10,10,0,0)
+SupportEntry(Iskra,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Iskra,BSupportLevel,0,2,10,0,0,10) // One way
+SupportEntry(Iskra,ASupportLevel,0,3,15,0,0,15)
 
 SupportEntry(Cromar,CSupportLevel,1,0,5,0,5,0)
 SupportEntry(Cromar,BSupportLevel,2,0,7,0,7,0)
 SupportEntry(Cromar,ASupportLevel,3,0,10,0,10,0)
 
-SupportEntry(Asha,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Asha,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Asha,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Asha,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(Asha,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(Asha,ASupportLevel,0,0,0,15,0,15)
 
-SupportEntry(Tao,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Tao,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Tao,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Tao,CSupportLevel,0,0,0,0,7,0)
+SupportEntry(Tao,BSupportLevel,0,0,0,0,14,0)
+SupportEntry(Tao,ASupportLevel,0,0,0,0,20,0)
 
 SupportEntry(CatrinReal,BSupportLevel,2,2,0,0,0,0)
-SupportEntry(CatrinReal,ASupportLevel,3,3,0,0,0,0)
+SupportEntry(CatrinReal,ASupportLevel,4,4,0,0,0,0)
 SupportTerm
 
 ALIGN 4
 MiraSupportList:
-SupportEntry(Iskra,CSupportLevel,1,1,5,0,0,5)
-SupportEntry(Iskra,BSupportLevel,1,1,10,0,0,10)
-SupportEntry(Iskra,ASupportLevel,2,2,10,0,0,10)
+SupportEntry(Iskra,CSupportLevel,0,1,0,5,0,5)
+SupportEntry(Iskra,BSupportLevel,0,2,0,7,0,7)
+SupportEntry(Iskra,ASupportLevel,0,3,0,10,0,10)
 
 SupportEntry(Emil,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Emil,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Emil,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Tiberius,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Tiberius,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Tiberius,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Tiberius,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Tiberius,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Tiberius,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(BoroReal,BSupportLevel,2,0,10,0,0,0)
-SupportEntry(BoroReal,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(BoroReal,CSupportLevel,1,0,(-5),0,5,0)
+SupportEntry(BoroReal,BSupportLevel,2,0,(-10),0,10,0)
+SupportEntry(BoroReal,ASupportLevel,3,0,0,0,15,0) //one way
 
-SupportEntry(TrajanReal,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(TrajanReal,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(TrajanReal,BSupportLevel,1,1,5,5,0,0)
+SupportEntry(TrajanReal,ASupportLevel,2,2,7,7,0,0)
 SupportTerm
 
 ALIGN 4
 IskraSupportList:
-SupportEntry(Loewe,CSupportLevel,1,1,5,5,0,0)
-SupportEntry(Loewe,BSupportLevel,1,1,10,10,0,0)
-SupportEntry(Loewe,ASupportLevel,2,2,10,10,0,0)
+SupportEntry(Loewe,CSupportLevel,1,0,5,0,5,0)
+SupportEntry(Loewe,BSupportLevel,2,0,10,0,10,0)
+SupportEntry(Loewe,ASupportLevel,3,0,15,0,15,0)
 
-SupportEntry(Mira,CSupportLevel,1,1,5,0,0,5)
-SupportEntry(Mira,BSupportLevel,1,1,10,0,0,10)
-SupportEntry(Mira,ASupportLevel,2,2,10,0,0,10)
+SupportEntry(Mira,CSupportLevel,0,1,0,5,0,5)
+SupportEntry(Mira,BSupportLevel,0,2,0,10,0,10)
+SupportEntry(Mira,ASupportLevel,0,3,0,15,0,15)
 
 SupportEntry(Emil,CSupportLevel,0,1,5,0,0,0)
 SupportEntry(Emil,BSupportLevel,0,2,10,0,0,0)
@@ -128,121 +131,121 @@ SupportEntry(Iskra,CSupportLevel,0,1,5,0,0,0)
 SupportEntry(Iskra,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Iskra,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Varga,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Varga,BSupportLevel,2,0,0,10,0,0)
-SupportEntry(Varga,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Varga,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Varga,BSupportLevel,0,2,0,0,0,15) //one way
+SupportEntry(Varga,ASupportLevel,0,3,0,0,0,20)
 SupportTerm
 
 ALIGN 4
 SvetomirSupportList:
-SupportEntry(Alena,CSupportLevel,1,1,0,5,0,5)
-SupportEntry(Alena,BSupportLevel,2,2,0,7,0,7)
-SupportEntry(Alena,ASupportLevel,3,3,0,10,0,10)
+SupportEntry(Alena,CSupportLevel,0,1,0,5,0,5)
+SupportEntry(Alena,BSupportLevel,0,2,0,7,0,7)
+SupportEntry(Alena,ASupportLevel,0,3,0,10,0,10)
 
-SupportEntry(Delilah,CSupportLevel,1,1,0,(-5),5,0)
-SupportEntry(Delilah,BSupportLevel,2,2,0,(-7),7,0)
-SupportEntry(Delilah,ASupportLevel,3,3,0,(-15),15,0)
+SupportEntry(Delilah,CSupportLevel,0,1,0,5,0,(-5))
+SupportEntry(Delilah,BSupportLevel,0,2,0,10,0,(-10)) //one way
+SupportEntry(Delilah,ASupportLevel,0,3,0,15,0,0)
 
-SupportEntry(Zhara,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Zhara,BSupportLevel,0,2,10,0,0,0)
-SupportEntry(Zhara,ASupportLevel,0,3,15,0,0,0)
+SupportEntry(Zhara,CSupportLevel,1,0,5,0,0,0)
+SupportEntry(Zhara,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Zhara,ASupportLevel,3,0,15,0,0,0)
 SupportTerm
 
 ALIGN 4
 AlenaSupportList:
-SupportEntry(Svetomir,CSupportLevel,1,0,5,0,5,0)
-SupportEntry(Svetomir,BSupportLevel,2,0,7,0,7,0)
-SupportEntry(Svetomir,ASupportLevel,3,0,10,0,10,0)
+SupportEntry(Svetomir,CSupportLevel,0,1,5,0,5,0)
+SupportEntry(Svetomir,BSupportLevel,0,2,7,0,7,0)
+SupportEntry(Svetomir,ASupportLevel,0,3,10,0,10,0)
 
-SupportEntry(Filone,CSupportLevel,0,0,5,5,0,5)
-SupportEntry(Filone,BSupportLevel,0,0,10,10,0,10)
-SupportEntry(Filone,ASupportLevel,0,0,15,15,0,15)
+SupportEntry(Filone,CSupportLevel,0,0,5,0,5,0)
+SupportEntry(Filone,BSupportLevel,0,0,10,0,10,0)
+SupportEntry(Filone,ASupportLevel,0,0,15,0,15,0)
 
-SupportEntry(Sera,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Sera,BSupportLevel,2,0,0,0,10,0)
-SupportEntry(Sera,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Sera,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Sera,BSupportLevel,2,0,0,10,0,0) //one way
+SupportEntry(Sera,ASupportLevel,3,0,0,15,0,0)
 SupportTerm
 
 //2
 
 ALIGN 4
 VargaSupportList:
-SupportEntry(Cleo,CSupportLevel,1,1,5,0,0,5)
-SupportEntry(Cleo,BSupportLevel,1,1,10,0,0,10)
-SupportEntry(Cleo,ASupportLevel,2,2,10,0,0,10)
+SupportEntry(Cleo,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Cleo,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Cleo,ASupportLevel,0,3,15,0,0,15)
 
-SupportEntry(Emil,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Emil,BSupportLevel,2,0,0,10,0,0)
-SupportEntry(Emil,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Emil,CSupportLevel,1,0,5,0,0,0)
+SupportEntry(Emil,BSupportLevel,2,0,10,0,0,0) //one way
+SupportEntry(Emil,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Zwieback,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Zwieback,BSupportLevel,0,2,10,0,0,0)
-SupportEntry(Zwieback,ASupportLevel,0,3,15,0,0,0)
+SupportEntry(Zwieback,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Zwieback,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Zwieback,ASupportLevel,3,3,0,0,0,0)
 
-SupportEntry(EliasReal,BSupportLevel,0,2,0,0,10,0)
-SupportEntry(EliasReal,ASupportLevel,0,3,0,0,15,0)
+SupportEntry(EliasReal,BSupportLevel,0,0,0,0,15,0)
+SupportEntry(EliasReal,ASupportLevel,0,0,0,0,25,0) //one way
 SupportTerm
 
 
 
 ALIGN 4
 DelilahSupportList:
-SupportEntry(Svetomir,CSupportLevel,1,0,5,(-5),0,0)
-SupportEntry(Svetomir,BSupportLevel,2,0,10,(-10),0,0)
-SupportEntry(Svetomir,ASupportLevel,3,0,15,(-15),0,0)
-
-SupportEntry(Ilse,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Ilse,BSupportLevel,2,0,0,10,0,0)
-SupportEntry(Ilse,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Svetomir,CSupportLevel,1,0,0,(-5),5,0)
+SupportEntry(Svetomir,BSupportLevel,2,0,0,(-10),10,0) //one way
+SupportEntry(Svetomir,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Awa,CSupportLevel,0,1,5,0,0,0)
 SupportEntry(Awa,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Awa,ASupportLevel,0,3,15,0,0,0)
+
+SupportEntry(Ilse,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Ilse,BSupportLevel,2,0,0,10,0,0)
+SupportEntry(Ilse,ASupportLevel,3,0,0,15,0,0)
 SupportTerm
 
 //3
 
 ALIGN 4
 AlexSupportList:
-SupportEntry(Axel,CSupportLevel,2,0,5,5,5,0)
-SupportEntry(Axel,BSupportLevel,3,0,10,10,10,0)
-SupportEntry(Axel,ASupportLevel,4,0,15,15,15,0)
+SupportEntry(Axel,CSupportLevel,0,0,0,0,0,0)
+SupportEntry(Axel,BSupportLevel,1,1,10,0,10,0)
+SupportEntry(Axel,ASupportLevel,2,2,15,0,15,0)
 
-SupportEntry(Faolan,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Faolan,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Faolan,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Faolan,CSupportLevel,0,0,0,5,0,10)
+SupportEntry(Faolan,BSupportLevel,0,0,0,10,0,15)
+SupportEntry(Faolan,ASupportLevel,0,0,0,15,0,20)
 
-SupportEntry(Mantou,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Mantou,BSupportLevel,2,0,10,0,0,0)
-SupportEntry(Mantou,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Mantou,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Mantou,BSupportLevel,0,2,10,0,0,0) // 1 way
+SupportEntry(Mantou,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
 ALIGN 4
 AxelSupportList:
-SupportEntry(Alex,CSupportLevel,2,0,5,5,5,0)
-SupportEntry(Alex,BSupportLevel,3,0,10,10,10,0)
-SupportEntry(Alex,ASupportLevel,4,0,15,15,15,0)
+SupportEntry(Alex,CSupportLevel,0,0,0,0,0,0)
+SupportEntry(Alex,BSupportLevel,1,1,10,0,10,0)
+SupportEntry(Alex,ASupportLevel,2,2,15,0,15,0)
 
-SupportEntry(Iberis,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Iberis,BSupportLevel,2,0,10,0,0,0)
-SupportEntry(Iberis,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Iberis,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Iberis,BSupportLevel,2,0,0,10,0,0) //one way
+SupportEntry(Iberis,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Pelecaye,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Pelecaye,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Pelecaye,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Pelecaye,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Pelecaye,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Pelecaye,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
 //4
 
 ALIGN 4
 FiloneSupportList:
-SupportEntry(Alena,CSupportLevel,0,0,5,5,0,5)
-SupportEntry(Alena,BSupportLevel,0,0,7,7,0,7)
-SupportEntry(Alena,ASupportLevel,0,0,15,15,0,15)
+SupportEntry(Alena,CSupportLevel,0,0,5,0,5,0)
+SupportEntry(Alena,BSupportLevel,0,0,10,0,10,0)
+SupportEntry(Alena,ASupportLevel,0,0,15,0,15,0)
 
-SupportEntry(Zwieback,CSupportLevel,0,1,5,5,0,0)
-SupportEntry(Zwieback,BSupportLevel,0,2,7,7,0,0)
-SupportEntry(Zwieback,ASupportLevel,0,3,10,10,0,0)
+SupportEntry(Zwieback,CSupportLevel,1,0,5,0,0,5)
+SupportEntry(Zwieback,BSupportLevel,2,0,10,0,0,10) //one way
+SupportEntry(Zwieback,ASupportLevel,3,0,15,0,0,15)
 
 SupportEntry(Tobie,CSupportLevel,1,0,0,0,5,0)
 SupportEntry(Tobie,BSupportLevel,2,0,0,0,10,0)
@@ -251,30 +254,30 @@ SupportTerm
 
 ALIGN 4
 ZwiebackSupportList:
-SupportEntry(Varga,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Varga,BSupportLevel,0,2,10,0,0,0)
-SupportEntry(Varga,ASupportLevel,0,3,15,0,0,0)
+SupportEntry(Varga,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Varga,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Varga,ASupportLevel,3,3,0,0,0,0)
 
-SupportEntry(Filone,CSupportLevel,0,1,5,5,0,0)
-SupportEntry(Filone,BSupportLevel,0,2,7,7,0,0)
-SupportEntry(Filone,ASupportLevel,0,3,10,10,0,0)
+SupportEntry(Filone,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Filone,BSupportLevel,0,2,10,0,0,10) //one way
+SupportEntry(Filone,ASupportLevel,0,3,15,0,0,15)
 
-SupportEntry(Ellerey,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Ellerey,BSupportLevel,2,0,0,10,0,0)
-SupportEntry(Ellerey,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Ellerey,CSupportLevel,1,0,5,0,0,0)
+SupportEntry(Ellerey,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Ellerey,ASupportLevel,3,0,15,0,0,0)
 SupportTerm
 
 //5
 
 ALIGN 4
 FangaiSupportList:
-SupportEntry(Longxia,CSupportLevel,1,1,5,0,0,5)
-SupportEntry(Longxia,BSupportLevel,1,1,10,0,0,10)
-SupportEntry(Longxia,ASupportLevel,2,2,10,0,0,10)
+SupportEntry(Longxia,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Longxia,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Longxia,ASupportLevel,0,3,15,0,0,15)
 
-SupportEntry(Faolan,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Faolan,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Faolan,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Faolan,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Faolan,BSupportLevel,2,0,0,0,10,0) // 2way
+SupportEntry(Faolan,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Tippany,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Tippany,BSupportLevel,2,0,10,0,0,0)
@@ -283,17 +286,17 @@ SupportTerm
 
 ALIGN 4
 LongxiaSupportList:
-SupportEntry(Fangai,CSupportLevel,1,1,5,0,0,5)
-SupportEntry(Fangai,BSupportLevel,1,1,10,0,0,10)
-SupportEntry(Fangai,ASupportLevel,2,2,10,0,0,10)
+SupportEntry(Fangai,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Fangai,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Fangai,ASupportLevel,0,3,15,0,0,15)
 
-SupportEntry(Cadenza,CSupportLevel,0,0,0,5,5,5)
-SupportEntry(Cadenza,BSupportLevel,0,0,0,10,10,10)
-SupportEntry(Cadenza,ASupportLevel,0,0,0,15,15,15)
+SupportEntry(Cadenza,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Cadenza,BSupportLevel,2,0,0,10,0,0)
+SupportEntry(Cadenza,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Groto,CSupportLevel,1,0,0,5,5,0)
-SupportEntry(Groto,BSupportLevel,2,0,0,7,7,0)
-SupportEntry(Groto,ASupportLevel,3,0,0,10,10,0)
+SupportEntry(Groto,CSupportLevel,1,0,5,(-5),5,0)
+SupportEntry(Groto,BSupportLevel,2,0,10,(-10),10,0) // 1 way
+SupportEntry(Groto,ASupportLevel,3,0,15,(-15),15,0)
 SupportTerm
 
 //5x
@@ -304,58 +307,58 @@ SupportEntry(Filone,CSupportLevel,1,0,0,0,5,0)
 SupportEntry(Filone,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Filone,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Mish,CSupportLevel,0,0,0,10,0,0)
-SupportEntry(Mish,BSupportLevel,0,0,0,20,0,0)
-SupportEntry(Mish,ASupportLevel,0,0,0,30,0,0)
+SupportEntry(Mish,CSupportLevel,0,0,0,5,0,(-10))
+SupportEntry(Mish,BSupportLevel,0,0,0,15,0,(-15))
+SupportEntry(Mish,ASupportLevel,0,0,0,25,0,(-20))
 
-SupportEntry(Takai,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Takai,BSupportLevel,1,1,10,0,0,0)
-SupportEntry(Takai,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Takai,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Takai,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Takai,ASupportLevel,3,3,0,0,0,0)
 SupportTerm
 
 ALIGN 4
 MishSupportList:
+SupportEntry(Tobie,CSupportLevel,0,0,(-5),0,5,0)
+SupportEntry(Tobie,BSupportLevel,0,0,(-10),0,15,0) // 2 way
+SupportEntry(Tobie,ASupportLevel,0,0,(-15),0,25,0)
+
+SupportEntry(Takai,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Takai,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Takai,ASupportLevel,3,3,0,0,0,0)
+
+SupportEntry(Ellerey,CSupportLevel,0,0,0,0,5,5)
+SupportEntry(Ellerey,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(Ellerey,ASupportLevel,0,0,0,0,15,15)
+
 SupportEntry(Tara,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Tara,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Tara,ASupportLevel,3,0,15,0,0,0)
-
-SupportEntry(Tobie,CSupportLevel,0,0,0,0,10,0)
-SupportEntry(Tobie,BSupportLevel,0,0,0,0,20,0)
-SupportEntry(Tobie,ASupportLevel,0,0,0,0,30,0)
-
-SupportEntry(Takai,CSupportLevel,1,1,0,5,0,0)
-SupportEntry(Takai,BSupportLevel,1,1,0,10,0,0)
-SupportEntry(Takai,ASupportLevel,2,2,0,15,0,0)
-
-SupportEntry(Ellerey,CSupportLevel,0,1,0,0,5,0)
-SupportEntry(Ellerey,BSupportLevel,0,2,0,0,10,0)
-SupportEntry(Ellerey,ASupportLevel,0,3,0,0,15,0)
 SupportTerm
 
 ALIGN 4
 CadenzaSupportList:
-SupportEntry(Longxia,CSupportLevel,0,0,0,5,5,5)
-SupportEntry(Longxia,BSupportLevel,0,0,0,10,10,10)
-SupportEntry(Longxia,ASupportLevel,0,0,0,15,15,15)
+SupportEntry(Longxia,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Longxia,BSupportLevel,2,0,0,10,0,0)
+SupportEntry(Longxia,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Mink,CSupportLevel,1,5,0,0,0,0)
-SupportEntry(Mink,BSupportLevel,2,10,0,0,0,0)
-SupportEntry(Mink,ASupportLevel,3,15,0,0,0,0)
+SupportEntry(Mink,CSupportLevel,1,(-1),0,0,5,0)
+SupportEntry(Mink,BSupportLevel,2,(-2),0,0,10,0) // 2 way
+SupportEntry(Mink,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Kofi,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Kofi,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Kofi,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Kofi,CSupportLevel,0,0,5,5,0,0)
+SupportEntry(Kofi,BSupportLevel,0,0,10,10,0,0)
+SupportEntry(Kofi,ASupportLevel,0,0,15,15,0,0)
 SupportTerm
 
 ALIGN 4
 FaolanSupportList:
-SupportEntry(Alex,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Alex,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Alex,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Alex,CSupportLevel,0,0,0,5,0,10)
+SupportEntry(Alex,BSupportLevel,0,0,0,10,0,15)
+SupportEntry(Alex,ASupportLevel,0,0,0,15,0,20)
 
-SupportEntry(Fangai,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Fangai,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Fangai,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Fangai,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Fangai,BSupportLevel,0,2,10,0,0,0) //two way
+SupportEntry(Fangai,ASupportLevel,0,3,15,0,0,0)
 
 SupportEntry(Buldak,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Buldak,BSupportLevel,2,0,10,0,0,0)
@@ -372,23 +375,23 @@ SupportEntry(Zhara,CSupportLevel,1,0,0,0,5,0)
 SupportEntry(Zhara,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Zhara,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Nikolas,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Nikolas,BSupportLevel,2,0,0,10,0,0)
-SupportEntry(Nikolas,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Nikolas,CSupportLevel,0,0,0,5,0,10)
+SupportEntry(Nikolas,BSupportLevel,0,0,0,10,0,15) // 1 way
+SupportEntry(Nikolas,ASupportLevel,0,0,0,15,0,20)
 SupportTerm
 
 ALIGN 4
 MatthiasSupportList:
-SupportEntry(Cromar,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Cromar,BSupportLevel,2,0,10,0,0,0)
-SupportEntry(Cromar,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Cromar,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Cromar,BSupportLevel,2,0,0,10,0,0)
+SupportEntry(Cromar,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Tippany,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Tippany,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Tippany,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Tippany,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Tippany,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Tippany,ASupportLevel,3,3,0,0,0,0)
 
 SupportEntry(Ilse,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Ilse,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Ilse,BSupportLevel,2,0,0,0,10,0) // 1 way
 SupportEntry(Ilse,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
@@ -396,49 +399,49 @@ SupportTerm
 
 ALIGN 4
 LeinaSupportList:
-SupportEntry(Cromar,CSupportLevel,1,1,0,0,5,0)
-SupportEntry(Cromar,BSupportLevel,1,1,0,0,10,0)
-SupportEntry(Cromar,ASupportLevel,2,2,0,0,15,0)
+SupportEntry(Cromar,CSupportLevel,1,0,0,0,5,5)
+SupportEntry(Cromar,BSupportLevel,2,0,0,0,10,10) //2 way
+SupportEntry(Cromar,ASupportLevel,3,0,0,0,15,15)
 
 SupportEntry(Mantou,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Mantou,BSupportLevel,2,0,10,0,0,0)
-SupportEntry(Mantou,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Mantou,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Ngondala,CSupportLevel,0,1,0,5,0,5)
-SupportEntry(Ngondala,BSupportLevel,0,2,0,7,0,10)
-SupportEntry(Ngondala,ASupportLevel,0,3,0,10,0,15)
+SupportEntry(Ngondala,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Ngondala,BSupportLevel,0,2,0,0,0,15)
+SupportEntry(Ngondala,ASupportLevel,0,3,0,0,0,20)
 SupportTerm
 
 ALIGN 4
 CromarSupportList:
-SupportEntry(Leina,CSupportLevel,1,1,0,0,5,0)
-SupportEntry(Leina,BSupportLevel,1,1,0,0,10,0)
-SupportEntry(Leina,ASupportLevel,2,2,0,0,15,0)
+SupportEntry(Leina,CSupportLevel,0,1,0,5,0,5)
+SupportEntry(Leina,BSupportLevel,0,2,0,10,0,10)  //1 way
+SupportEntry(Leina,ASupportLevel,0,3,0,15,0,15)
 
 SupportEntry(Loewe,CSupportLevel,1,0,5,0,5,0)
 SupportEntry(Loewe,BSupportLevel,2,0,7,0,7,0)
 SupportEntry(Loewe,ASupportLevel,3,0,10,0,10,0)
 
-SupportEntry(Matthias,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Matthias,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Matthias,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Matthias,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Matthias,BSupportLevel,2,0,0,10,0,0)
+SupportEntry(Matthias,ASupportLevel,3,0,0,15,0,0)
 SupportTerm
 
 // 7
 
 ALIGN 4
 IberisSupportList:
-SupportEntry(Axel,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Axel,BSupportLevel,2,0,10,0,0,0)
-SupportEntry(Axel,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Axel,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Axel,BSupportLevel,2,0,0,0,10,0) // 1 way
+SupportEntry(Axel,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Nora,CSupportLevel,1,0,0,0,5,0)
 SupportEntry(Nora,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Nora,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Hans,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Hans,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Hans,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Hans,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Hans,BSupportLevel,0,2,0,0,0,15)
+SupportEntry(Hans,ASupportLevel,0,3,0,0,0,20)
 SupportTerm
 
 ALIGN 4
@@ -447,13 +450,13 @@ SupportEntry(Faolan,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Faolan,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Faolan,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Valse,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Valse,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Valse,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Valse,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Valse,BSupportLevel,0,2,0,0,0,15)
+SupportEntry(Valse,ASupportLevel,0,3,0,0,0,20)
 
-SupportEntry(Tao,CSupportLevel,1,0,5,0,5,0)
-SupportEntry(Tao,BSupportLevel,2,0,7,0,7,0)
-SupportEntry(Tao,ASupportLevel,3,0,10,0,10,0)
+SupportEntry(Tao,CSupportLevel,0,0,5,(-5),5,0)
+SupportEntry(Tao,BSupportLevel,0,0,10,(-10),10,0) // 1 way
+SupportEntry(Tao,ASupportLevel,0,0,0,0,15,0)
 SupportTerm
 
 // 8
@@ -463,24 +466,24 @@ SupportEntry(Iberis,CSupportLevel,1,0,0,0,5,0)
 SupportEntry(Iberis,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Iberis,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Hans,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Hans,BSupportLevel,1,1,10,0,0,0)
-SupportEntry(Hans,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Hans,CSupportLevel,1,0,0,5,0,5)
+SupportEntry(Hans,BSupportLevel,2,0,0,10,0,10) // 1 way
+SupportEntry(Hans,ASupportLevel,3,0,0,15,0,15)
 
-SupportEntry(Ichwep,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Ichwep,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Ichwep,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Ichwep,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Ichwep,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Ichwep,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
 ALIGN 4
 HansSupportList:
-SupportEntry(Iberis,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Iberis,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Iberis,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Iberis,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Iberis,BSupportLevel,0,2,0,0,0,15)
+SupportEntry(Iberis,ASupportLevel,0,3,0,0,0,20)
 
-SupportEntry(Nora,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Nora,BSupportLevel,1,1,10,0,0,0)
-SupportEntry(Nora,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Nora,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Nora,BSupportLevel,0,2,10,0,0,10) // 1 way
+SupportEntry(Nora,ASupportLevel,0,3,15,0,0,15)
 
 SupportEntry(Milo,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Milo,BSupportLevel,2,0,10,0,0,0)
@@ -491,128 +494,128 @@ SupportTerm
 
 ALIGN 4
 MeldanSupportList:
-SupportEntry(Jenny,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Jenny,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Jenny,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Jenny,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Jenny,BSupportLevel,0,2,0,0,0,15) // 1 way
+SupportEntry(Jenny,ASupportLevel,0,3,0,0,0,20)
 
-SupportEntry(Volran,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Volran,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Volran,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Tippany,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Tippany,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Tippany,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Tippany,CSupportLevel,0,0,0,5,5,5)
-SupportEntry(Tippany,BSupportLevel,0,0,0,7,7,7)
-SupportEntry(Tippany,ASupportLevel,0,0,0,15,15,15)
+SupportEntry(Volran,CSupportLevel,0,0,5,5,0,0)
+SupportEntry(Volran,BSupportLevel,0,0,10,10,0,0)
+SupportEntry(Volran,ASupportLevel,0,0,15,15,0,0)
 SupportTerm
 
 ALIGN 4
 JennySupportList:
-SupportEntry(Meldan,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Meldan,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Meldan,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Meldan,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Meldan,BSupportLevel,2,0,0,10,0,0) // 1 way
+SupportEntry(Meldan,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Tao,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Tao,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Tao,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Tao,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Tao,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Tao,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Zhara,CSupportLevel,0,0,5,0,5,5)
-SupportEntry(Zhara,BSupportLevel,0,0,7,0,7,7)
-SupportEntry(Zhara,ASupportLevel,0,0,15,0,15,15)
+SupportEntry(Zhara,CSupportLevel,0,0,10,0,0,10)
+SupportEntry(Zhara,BSupportLevel,0,0,15,0,0,15)
+SupportEntry(Zhara,ASupportLevel,0,0,20,0,0,20)
 SupportTerm
 
 //10
 
 ALIGN 4
 ValseSupportList:
-SupportEntry(Buldak,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Buldak,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Buldak,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Buldak,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Buldak,BSupportLevel,0,2,0,0,0,15)
+SupportEntry(Buldak,ASupportLevel,0,3,0,0,0,20)
 
-SupportEntry(Hornet,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Hornet,BSupportLevel,1,1,7,0,0,0)
-SupportEntry(Hornet,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Hornet,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Hornet,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Hornet,ASupportLevel,0,3,15,0,0,15)
 
 SupportEntry(Carl,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Carl,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Carl,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Carl,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 ALIGN 4
 HornetSupportList:
-SupportEntry(Valse,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Valse,BSupportLevel,1,1,7,0,0,0)
-SupportEntry(Valse,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Valse,CSupportLevel,1,0,0,0,5,5)
+SupportEntry(Valse,BSupportLevel,2,0,0,0,10,10)
+SupportEntry(Valse,ASupportLevel,3,0,0,0,15,15)
 
 SupportEntry(Nahiza,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Nahiza,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Nahiza,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Nahiza,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Shaw,CSupportLevel,0,1,0,0,5,5)
-SupportEntry(Shaw,BSupportLevel,0,2,0,0,7,7)
-SupportEntry(Shaw,ASupportLevel,0,3,0,0,10,10)
+SupportEntry(Shaw,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(Shaw,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(Shaw,ASupportLevel,0,0,0,15,0,15)
 SupportTerm
 
 //11
 
 ALIGN 4
 IchwepSupportList:
-SupportEntry(Nora,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Nora,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Nora,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Nora,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Nora,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Nora,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Milo,CSupportLevel,1,1,5,5,0,0)
-SupportEntry(Milo,BSupportLevel,1,1,7,7,0,0)
-SupportEntry(Milo,ASupportLevel,2,2,10,10,0,0)
+SupportEntry(Milo,CSupportLevel,1,0,0,0,5,5)
+SupportEntry(Milo,BSupportLevel,2,0,0,0,10,10)
+SupportEntry(Milo,ASupportLevel,3,0,0,0,15,15)
 
-SupportEntry(Mantou,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Mantou,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Mantou,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Mantou,CSupportLevel,0,0,0,0,5,5)
+SupportEntry(Mantou,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(Mantou,ASupportLevel,0,0,0,0,15,15)
 SupportTerm
 
 ALIGN 4
 MiloSupportList:
 SupportEntry(Hans,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Hans,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Hans,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Hans,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Ichwep,CSupportLevel,1,1,5,5,0,0)
-SupportEntry(Ichwep,BSupportLevel,1,1,7,7,0,0)
-SupportEntry(Ichwep,ASupportLevel,2,2,10,10,0,0)
+SupportEntry(Ichwep,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Ichwep,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Ichwep,ASupportLevel,0,3,15,0,0,15)
 
-SupportEntry(Pelecaye,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Pelecaye,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Pelecaye,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Pelecaye,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Pelecaye,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Pelecaye,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
 // 12
 
 ALIGN 4
 MinkSupportList:
-SupportEntry(Cadenza,CSupportLevel,1,5,0,0,0,0)
-SupportEntry(Cadenza,BSupportLevel,2,7,0,0,0,0)
-SupportEntry(Cadenza,ASupportLevel,3,15,0,0,0,0)
+SupportEntry(Cadenza,CSupportLevel,(-1),1,0,0,5,0)
+SupportEntry(Cadenza,BSupportLevel,(-2),2,0,0,10,0) // 2 way
+SupportEntry(Cadenza,ASupportLevel,0,3,0,0,15,0)
 
-SupportEntry(Augur,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Augur,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Augur,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Augur,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Augur,BSupportLevel,(-1),(-1),0,0,0,0)
+SupportEntry(Augur,ASupportLevel,3,3,0,0,10,10)
 
-SupportEntry(KwameReal,CSupportLevel,1,5,0,0,0,0)
-SupportEntry(KwameReal,BSupportLevel,2,7,0,0,0,0)
-SupportEntry(KwameReal,ASupportLevel,3,15,0,0,0,0)
+SupportEntry(KwameReal,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(KwameReal,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(KwameReal,ASupportLevel,5,(-5),0,0,15,0)
 SupportTerm
 
 ALIGN 4
 TiberiusSupportList:
-SupportEntry(Mira,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Mira,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Mira,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Mira,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Mira,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Mira,ASupportLevel,0,3,15,0,0,0)
 
 SupportEntry(Iskra,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Iskra,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Iskra,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Iskra,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Ojasvi,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Ojasvi,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Ojasvi,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Ojasvi,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Ojasvi,BSupportLevel,2,0,0,0,10,0) // 1 way
+SupportEntry(Ojasvi,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 // 12x
@@ -620,12 +623,12 @@ SupportTerm
 ALIGN 4
 CarlSupportList:
 SupportEntry(Valse,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Valse,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Valse,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Valse,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Asha,CSupportLevel,1,0,5,0,0,5)
-SupportEntry(Asha,BSupportLevel,2,0,7,0,0,7)
-SupportEntry(Asha,ASupportLevel,3,0,10,0,0,10)
+SupportEntry(Asha,CSupportLevel,0,0,5,5,0,0)
+SupportEntry(Asha,BSupportLevel,0,0,10,10,0,0) // 1 way
+SupportEntry(Asha,ASupportLevel,0,0,10,15,0,0)
 
 SupportEntry(Sera,CSupportLevel,0,1,0,5,0,0)
 SupportEntry(Sera,BSupportLevel,0,2,0,7,0,0)
@@ -635,50 +638,50 @@ SupportTerm
 ALIGN 4
 MantouSupportList:
 SupportEntry(Alex,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Alex,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Alex,BSupportLevel,2,0,10,0,0,0) //2 way
 SupportEntry(Alex,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Leina,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Leina,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Leina,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Leina,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Leina,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Ichwep,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Ichwep,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Ichwep,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Ichwep,CSupportLevel,0,0,0,0,5,5)
+SupportEntry(Ichwep,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(Ichwep,ASupportLevel,0,0,0,0,15,15)
 SupportTerm
 
 ALIGN 4
 PelecayeSupportList:
-SupportEntry(Axel,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Axel,BSupportLevel,0,2,0,10,0,0)
-SupportEntry(Axel,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Axel,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Axel,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Axel,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Milo,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Milo,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Milo,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Milo,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Milo,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Milo,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Darcy,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Darcy,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Darcy,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Joie,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Joie,BSupportLevel,0,2,10,0,0,0) 
+SupportEntry(Joie,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
 ALIGN 4
 EllereySupportList:
-SupportEntry(Zwieback,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Zwieback,BSupportLevel,2,0,0,7,0,0)
-SupportEntry(Zwieback,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Zwieback,CSupportLevel,1,0,5,0,0,0)
+SupportEntry(Zwieback,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Zwieback,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Darby,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Darby,BSupportLevel,0,2,7,0,0,0)
+SupportEntry(Darby,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Darby,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Jacinth,CSupportLevel,1,0,0,0,0,5)
-SupportEntry(Jacinth,BSupportLevel,2,0,0,0,0,7)
-SupportEntry(Jacinth,ASupportLevel,3,0,0,0,0,15)
+SupportEntry(Jacinth,CSupportLevel,1,0,0,0,0,10)
+SupportEntry(Jacinth,BSupportLevel,2,0,0,0,0,15)
+SupportEntry(Jacinth,ASupportLevel,3,0,0,0,0,20)
 
-SupportEntry(Mish,CSupportLevel,0,1,0,0,5,0)
-SupportEntry(Mish,BSupportLevel,0,2,0,0,10,0)
-SupportEntry(Mish,ASupportLevel,0,3,0,0,15,0)
+SupportEntry(Mish,CSupportLevel,0,0,0,0,5,5)
+SupportEntry(Mish,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(Mish,ASupportLevel,0,0,0,0,15,15)
 SupportTerm
 
 ALIGN 4
@@ -687,59 +690,59 @@ SupportEntry(Fangai,CSupportLevel,1,0,5,0,0,0)
 SupportEntry(Fangai,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Fangai,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Matthias,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Matthias,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Matthias,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Matthias,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Matthias,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Matthias,ASupportLevel,3,3,0,0,0,0)
 
-SupportEntry(Meldan,CSupportLevel,0,0,0,5,5,5)
-SupportEntry(Meldan,BSupportLevel,0,0,0,7,7,7)
-SupportEntry(Meldan,ASupportLevel,0,0,0,15,15,15)
+SupportEntry(Meldan,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Meldan,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Meldan,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 ALIGN 4
 TakaiSupportList:
-SupportEntry(Mish,CSupportLevel,1,1,0,5,0,0)
-SupportEntry(Mish,BSupportLevel,1,1,0,10,0,0)
-SupportEntry(Mish,ASupportLevel,2,2,0,15,0,0)
+SupportEntry(Mish,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Mish,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Mish,ASupportLevel,3,3,0,0,0,0)
 
-SupportEntry(Tobie,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Tobie,BSupportLevel,1,1,10,0,0,0)
-SupportEntry(Tobie,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Tobie,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Tobie,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Tobie,ASupportLevel,3,3,0,0,0,0)
 
-SupportEntry(Shaw,CSupportLevel,1,0,0,0,5,5)
-SupportEntry(Shaw,BSupportLevel,2,0,0,0,7,7)
-SupportEntry(Shaw,ASupportLevel,3,0,0,0,10,10)
+SupportEntry(Shaw,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Shaw,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Shaw,ASupportLevel,3,3,0,0,0,0)
 SupportTerm
 
 //13
 
 ALIGN 4
 JacinthSupportList:
-SupportEntry(Ellerey,CSupportLevel,1,0,0,0,0,5)
-SupportEntry(Ellerey,BSupportLevel,2,0,0,0,0,7)
-SupportEntry(Ellerey,ASupportLevel,3,0,0,0,0,15)
+SupportEntry(Ellerey,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Ellerey,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Ellerey,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Darby,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Darby,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Darby,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Darby,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(Darby,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(Darby,ASupportLevel,0,0,0,15,0,15)
 
-SupportEntry(Apsis,CSupportLevel,0,1,0,0,0,5)
-SupportEntry(Apsis,BSupportLevel,0,2,0,0,0,7)
-SupportEntry(Apsis,ASupportLevel,0,3,0,0,0,15)
+SupportEntry(Apsis,CSupportLevel,0,0,3,3,3,3)
+SupportEntry(Apsis,BSupportLevel,0,0,7,7,7,7)
+SupportEntry(Apsis,ASupportLevel,0,0,10,10,10,10)
 SupportTerm
 
 ALIGN 4
 DarbySupportList:
-SupportEntry(Cleo,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Cleo,BSupportLevel,2,0,0,0,10,0)
-SupportEntry(Cleo,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Cleo,CSupportLevel,0,0,0,0,5,5)
+SupportEntry(Cleo,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(Cleo,ASupportLevel,0,0,0,0,15,15)
 
-SupportEntry(Jacinth,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Jacinth,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Jacinth,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Jacinth,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Jacinth,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Jacinth,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Ellerey,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Ellerey,BSupportLevel,0,2,7,0,0,0)
+SupportEntry(Ellerey,BSupportLevel,0,2,10,0,0,0)
 SupportEntry(Ellerey,ASupportLevel,0,3,15,0,0,0)
 SupportTerm
 
@@ -747,31 +750,31 @@ SupportTerm
 ALIGN 4
 NahizaSupportList:
 SupportEntry(Hornet,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Hornet,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Hornet,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Hornet,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Rashid,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Rashid,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Rashid,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Rashid,CSupportLevel,0,0,10,0,0,10)
+SupportEntry(Rashid,BSupportLevel,0,0,15,0,0,15)
+SupportEntry(Rashid,ASupportLevel,0,0,20,0,0,20)
 
-SupportEntry(Jerry,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Jerry,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Jerry,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Jerry,CSupportLevel,1,0,(-5),0,0,0)
+SupportEntry(Jerry,BSupportLevel,3,0,(-10),0,0,0)
+SupportEntry(Jerry,ASupportLevel,5,0,(-15),0,0,0)
 SupportTerm
 
 ALIGN 4
 AugurSupportList:
-SupportEntry(Mink,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Mink,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Mink,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Mink,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Mink,BSupportLevel,(-1),(-1),0,0,0,0)
+SupportEntry(Mink,ASupportLevel,3,3,0,0,10,10)
 
-SupportEntry(Rashid,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Rashid,BSupportLevel,0,2,7,0,0,0)
-SupportEntry(Rashid,ASupportLevel,0,3,15,0,0,0)
+SupportEntry(Rashid,CSupportLevel,0,1,0,3,0,3)
+SupportEntry(Rashid,BSupportLevel,0,2,0,7,0,7)
+SupportEntry(Rashid,ASupportLevel,0,3,0,10,0,10)
 
-SupportEntry(CatrinReal,CSupportLevel,0,1,0,0,5,0)
-SupportEntry(CatrinReal,BSupportLevel,0,2,0,0,7,0)
-SupportEntry(CatrinReal,ASupportLevel,0,3,0,0,15,0)
+SupportEntry(CatrinReal,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(CatrinReal,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(CatrinReal,ASupportLevel,0,0,0,15,0,15)
 SupportTerm
 
 // 15
@@ -779,98 +782,108 @@ SupportTerm
 ALIGN 4
 IlseSupportList:
 SupportEntry(Delilah,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Delilah,BSupportLevel,2,0,0,7,0,0)
+SupportEntry(Delilah,BSupportLevel,2,0,0,10,0,0)
 SupportEntry(Delilah,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Matthias,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Matthias,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Matthias,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Matthias,CSupportLevel,0,1,0,5,0,0)
+SupportEntry(Matthias,BSupportLevel,0,2,0,10,0,0)
+SupportEntry(Matthias,ASupportLevel,0,3,0,15,0,0)
 
-SupportEntry(Ojasvi,CSupportLevel,0,1,0,5,0,5)
-SupportEntry(Ojasvi,BSupportLevel,0,2,0,7,0,7)
-SupportEntry(Ojasvi,ASupportLevel,0,3,0,10,0,10)
+SupportEntry(Ojasvi,CSupportLevel,0,1,0,0,5,0)
+SupportEntry(Ojasvi,BSupportLevel,0,2,0,0,10,0)
+SupportEntry(Ojasvi,ASupportLevel,0,3,0,0,15,0)
 SupportTerm
 
 ALIGN 4
 AshaSupportList:
-SupportEntry(Loewe,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Loewe,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Loewe,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Loewe,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(Loewe,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(Loewe,ASupportLevel,0,0,0,15,0,15)
 
-SupportEntry(Ojasvi,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Ojasvi,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Ojasvi,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Ojasvi,CSupportLevel,0,0,0,5,0,10)
+SupportEntry(Ojasvi,BSupportLevel,0,0,0,10,0,15)
+SupportEntry(Ojasvi,ASupportLevel,0,0,0,15,0,20)
 
-SupportEntry(Carl,CSupportLevel,1,0,5,0,0,5)
-SupportEntry(Carl,BSupportLevel,2,0,7,0,0,7)
-SupportEntry(Carl,ASupportLevel,3,0,10,0,0,10)
+SupportEntry(Carl,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Carl,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Carl,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 // 16
 ALIGN 4
 KofiSupportList:
-SupportEntry(Cadenza,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Cadenza,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Cadenza,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Cadenza,CSupportLevel,0,0,5,5,0,0)
+SupportEntry(Cadenza,BSupportLevel,0,0,10,10,0,0)
+SupportEntry(Cadenza,ASupportLevel,0,0,15,15,0,0)
 
-SupportEntry(Nikolas,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Nikolas,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Nikolas,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Nikolas,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Nikolas,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Nikolas,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(KwameReal,CSupportLevel,1,0,0,5,5,0)
-SupportEntry(KwameReal,BSupportLevel,2,0,0,7,7,0)
-SupportEntry(KwameReal,ASupportLevel,3,0,0,10,10,0)
+SupportEntry(KwameReal,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(KwameReal,BSupportLevel,2,0,0,10,0,0)
+SupportEntry(KwameReal,ASupportLevel,3,0,(-20),20,0,0)
 SupportTerm
 
 ALIGN 4
 RashidSupportList:
-SupportEntry(Nahiza,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Nahiza,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Nahiza,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Nahiza,CSupportLevel,0,0,10,0,0,10)
+SupportEntry(Nahiza,BSupportLevel,0,0,15,0,0,15)
+SupportEntry(Nahiza,ASupportLevel,0,0,20,0,0,20)
 
-SupportEntry(Augur,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Augur,BSupportLevel,0,2,7,0,0,0)
-SupportEntry(Augur,ASupportLevel,0,3,15,0,0,0)
+SupportEntry(Augur,CSupportLevel,1,0,3,0,3,0)
+SupportEntry(Augur,BSupportLevel,2,0,7,0,7,0) // 1 way
+SupportEntry(Augur,ASupportLevel,3,0,10,0,10,0)
 
-SupportEntry(Nikolas,CSupportLevel,0,0,5,5,0,5)
-SupportEntry(Nikolas,BSupportLevel,0,0,7,7,0,7)
-SupportEntry(Nikolas,ASupportLevel,0,0,15,15,0,15)
+SupportEntry(Nikolas,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Nikolas,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Nikolas,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 //17
 
 ALIGN 4
 NikolasSupportList:
-SupportEntry(Awa,CSupportLevel,1,0,0,5,0,0)
-SupportEntry(Awa,BSupportLevel,2,0,0,7,0,0)
-SupportEntry(Awa,ASupportLevel,3,0,0,15,0,0)
+SupportEntry(Awa,CSupportLevel,0,0,5,0,5,0)
+SupportEntry(Awa,BSupportLevel,0,0,10,0,10,0)
+SupportEntry(Awa,ASupportLevel,0,0,15,0,15,0)
 
-SupportEntry(Kofi,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Kofi,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Kofi,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Kofi,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Kofi,BSupportLevel,0,2,10,0,0,0)
+SupportEntry(Kofi,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Rashid,CSupportLevel,0,0,5,5,0,5)
-SupportEntry(Rashid,BSupportLevel,0,0,7,7,0,7)
-SupportEntry(Rashid,ASupportLevel,0,0,15,15,0,15)
+SupportEntry(Rashid,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Rashid,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Rashid,ASupportLevel,3,0,0,0,15,0)
+SupportTerm
+
+ALIGN 4
+BoroSupportList:
+SupportEntry(Mira,CSupportLevel,0,1,(-5),5,0,0)
+SupportEntry(Mira,BSupportLevel,0,2,(-10),10,0,0)
+SupportEntry(Mira,ASupportLevel,0,3,0,15,0,0)
+
+SupportEntry(TrajanReal,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(TrajanReal,ASupportLevel,0,0,0,0,20,20)
 SupportTerm
 
 ALIGN 4
 KwameSupportList:
-SupportEntry(Mink,CSupportLevel,1,5,0,0,0,0)
-SupportEntry(Mink,BSupportLevel,2,7,0,0,0,0)
-SupportEntry(Mink,ASupportLevel,3,15,0,0,0,0)
+SupportEntry(Mink,CSupportLevel,0,1,0,0,0,5)
+SupportEntry(Mink,BSupportLevel,0,2,0,0,0,10)
+SupportEntry(Mink,ASupportLevel,0,5,0,0,0,15)
 
-SupportEntry(Kofi,CSupportLevel,1,0,0,5,5,0)
-SupportEntry(Kofi,BSupportLevel,2,0,0,7,7,0)
-SupportEntry(Kofi,ASupportLevel,3,0,0,10,10,0)
+SupportEntry(Kofi,CSupportLevel,0,0,5,0,0,5)
+SupportEntry(Kofi,BSupportLevel,0,0,10,0,0,10)
+SupportEntry(Kofi,ASupportLevel,0,0,20,0,0,15)
 
-SupportEntry(CatrinReal,CSupportLevel,0,1,0,0,5,0)
-SupportEntry(CatrinReal,BSupportLevel,0,2,0,0,7,0)
-SupportEntry(CatrinReal,ASupportLevel,0,3,0,0,15,0)
+SupportEntry(CatrinReal,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(CatrinReal,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(CatrinReal,ASupportLevel,0,0,0,25,0,15)
 
-SupportEntry(Ngondala,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Ngondala,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Ngondala,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Ngondala,CSupportLevel,1,0,0,0,0,5)
+SupportEntry(Ngondala,BSupportLevel,2,0,0,0,0,10)
+SupportEntry(Ngondala,ASupportLevel,5,0,0,0,0,15)
 SupportTerm
 //18
 
@@ -880,66 +893,66 @@ SupportEntry(Hornet,CSupportLevel,0,1,0,0,5,5)
 SupportEntry(Hornet,BSupportLevel,0,2,0,0,7,7)
 SupportEntry(Hornet,ASupportLevel,0,3,0,0,10,10)
 
-SupportEntry(Takai,CSupportLevel,1,0,0,0,5,5)
-SupportEntry(Takai,BSupportLevel,2,0,0,0,7,7)
-SupportEntry(Takai,ASupportLevel,3,0,0,0,10,10)
+SupportEntry(Takai,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Takai,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Takai,ASupportLevel,3,3,0,0,0,0)
 
-SupportEntry(Sera,CSupportLevel,1,1,5,5,0,0)
-SupportEntry(Sera,BSupportLevel,1,1,7,7,0,0)
-SupportEntry(Sera,ASupportLevel,2,2,10,10,0,0)
+SupportEntry(Sera,CSupportLevel,0,1,5,0,0,5)
+SupportEntry(Sera,BSupportLevel,0,2,10,0,0,10)
+SupportEntry(Sera,ASupportLevel,0,3,15,0,0,15)
 SupportTerm
 
 ALIGN 4
 SeraSupportList:
 SupportEntry(Alena,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Alena,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Alena,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Alena,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Carl,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(Carl,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Carl,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(Carl,CSupportLevel,0,1,0,0,5,0)
+SupportEntry(Carl,BSupportLevel,0,2,0,0,10,0)
+SupportEntry(Carl,ASupportLevel,0,3,0,0,15,0)
 
-SupportEntry(Shaw,CSupportLevel,1,1,5,5,0,0)
-SupportEntry(Shaw,BSupportLevel,1,1,7,7,0,0)
-SupportEntry(Shaw,ASupportLevel,2,2,10,10,0,0)
+SupportEntry(Shaw,CSupportLevel,1,0,5,0,0,5)
+SupportEntry(Shaw,BSupportLevel,2,0,10,0,0,10)
+SupportEntry(Shaw,ASupportLevel,3,0,15,0,0,15)
 SupportTerm
 
 //18x
 
 ALIGN 4
 DarcySupportList:
-SupportEntry(Pelecaye,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Pelecaye,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Pelecaye,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Pelecaye,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(Pelecaye,BSupportLevel,0,2,10,0,0,0) 
+SupportEntry(Pelecaye,ASupportLevel,0,3,15,0,0,0)
 
-SupportEntry(Locke,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Locke,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Locke,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Locke,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Locke,BSupportLevel,2,2,0,0,0,0) // 1 way
+SupportEntry(Locke,ASupportLevel,3,3,0,0,0,0)
 SupportTerm
 
 ALIGN 4
 TaoSupportList:
-SupportEntry(Loewe,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Loewe,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Loewe,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Loewe,CSupportLevel,0,0,0,0,7,0)
+SupportEntry(Loewe,BSupportLevel,0,0,0,0,14,0)
+SupportEntry(Loewe,ASupportLevel,0,0,0,0,20,0)
 
-SupportEntry(Buldak,CSupportLevel,1,0,5,0,5,0)
-SupportEntry(Buldak,BSupportLevel,2,0,7,0,7,0)
-SupportEntry(Buldak,ASupportLevel,3,0,10,0,10,0)
+SupportEntry(Buldak,CSupportLevel,1,0,(-5),0,5,0)
+SupportEntry(Buldak,BSupportLevel,2,0,(-10),0,10,0) //one way
+SupportEntry(Buldak,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Jenny,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Jenny,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Jenny,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Jenny,CSupportLevel,1,0,0,0,5,0)
+SupportEntry(Jenny,BSupportLevel,2,0,0,0,10,0)
+SupportEntry(Jenny,ASupportLevel,3,0,0,0,15,0)
 SupportTerm
 
 ALIGN 4
 ZharaSupportList:
-SupportEntry(Svetomir,CSupportLevel,0,1,5,0,0,0)
-SupportEntry(Svetomir,BSupportLevel,0,2,7,0,0,0)
-SupportEntry(Svetomir,ASupportLevel,0,3,15,0,0,0)
+SupportEntry(Svetomir,CSupportLevel,1,0,5,0,0,0)
+SupportEntry(Svetomir,BSupportLevel,2,0,10,0,0,0)
+SupportEntry(Svetomir,ASupportLevel,3,0,15,0,0,0)
 
 SupportEntry(Awa,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Awa,BSupportLevel,2,0,0,0,7,0)
+SupportEntry(Awa,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Awa,ASupportLevel,3,0,0,0,15,0)
 
 SupportEntry(Jenny,CSupportLevel,0,0,5,0,5,5)
@@ -949,62 +962,62 @@ SupportTerm
 
 ALIGN 4
 GrotoSupportList:
-SupportEntry(Longxia,CSupportLevel,1,0,0,5,5,0)
-SupportEntry(Longxia,BSupportLevel,2,0,0,7,7,0)
-SupportEntry(Longxia,ASupportLevel,3,0,0,10,10,0)
+SupportEntry(Longxia,CSupportLevel,0,1,5,5,(-5),0)
+SupportEntry(Longxia,BSupportLevel,0,2,10,10,(-10),0) // 2 way
+SupportEntry(Longxia,ASupportLevel,0,3,15,15,(-15),0)
 
-SupportEntry(Apsis,CSupportLevel,1,0,0,0,5,5)
-SupportEntry(Apsis,BSupportLevel,2,0,0,0,7,7)
-SupportEntry(Apsis,ASupportLevel,3,0,0,0,10,10)
+SupportEntry(Apsis,CSupportLevel,(-1),(-1),5,5,0,5)
+SupportEntry(Apsis,BSupportLevel,(-2),(-2),10,10,0,10)
+SupportEntry(Apsis,ASupportLevel,0,0,15,15,0,15)
 SupportTerm
 
 ALIGN 4
 OjasviSupportList:
-SupportEntry(Tiberius,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Tiberius,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Tiberius,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Tiberius,CSupportLevel,1,0,0,5,0,0)
+SupportEntry(Tiberius,BSupportLevel,2,0,0,10,0,0) // 1 way
+SupportEntry(Tiberius,ASupportLevel,3,0,0,15,0,0)
 
-SupportEntry(Ilse,CSupportLevel,0,1,0,5,0,5)
-SupportEntry(Ilse,BSupportLevel,0,2,0,7,0,7)
-SupportEntry(Ilse,ASupportLevel,0,3,0,10,0,10)
+SupportEntry(Ilse,CSupportLevel,0,1,0,0,0,5)
+SupportEntry(Ilse,BSupportLevel,0,2,0,0,0,10)
+SupportEntry(Ilse,ASupportLevel,0,3,0,0,0,15)
 
-SupportEntry(Asha,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Asha,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Asha,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Asha,CSupportLevel,0,0,0,5,0,10)
+SupportEntry(Asha,BSupportLevel,0,0,0,10,0,15)
+SupportEntry(Asha,ASupportLevel,0,0,0,15,0,20)
 SupportTerm
 
 ALIGN 4
 ApsisSupportList:
-SupportEntry(Jacinth,CSupportLevel,0,1,0,0,0,5)
-SupportEntry(Jacinth,BSupportLevel,0,2,0,0,0,7)
-SupportEntry(Jacinth,ASupportLevel,0,3,0,0,0,15)
+SupportEntry(Jacinth,CSupportLevel,0,0,3,3,3,3)
+SupportEntry(Jacinth,BSupportLevel,0,0,7,7,7,7)
+SupportEntry(Jacinth,ASupportLevel,0,0,10,10,10,10)
 
-SupportEntry(Groto,CSupportLevel,1,0,0,0,5,5)
-SupportEntry(Groto,BSupportLevel,2,0,0,0,7,7)
-SupportEntry(Groto,ASupportLevel,3,0,0,0,10,10)
+SupportEntry(Groto,CSupportLevel,1,1,(-5),(-5),5,0)
+SupportEntry(Groto,BSupportLevel,2,2,(-10),(-10),10,0) // 1 way
+SupportEntry(Groto,ASupportLevel,3,3,0,0,15,0)
 SupportTerm
 
 //19
 ALIGN 4
 VolranSupportList:
-SupportEntry(Meldan,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Meldan,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Meldan,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Meldan,CSupportLevel,0,0,5,5,0,0)
+SupportEntry(Meldan,BSupportLevel,0,0,10,10,0,0)
+SupportEntry(Meldan,ASupportLevel,0,0,15,15,0,0)
 
-SupportEntry(Tara,CSupportLevel,1,1,0,0,5,5)
-SupportEntry(Tara,BSupportLevel,1,1,0,0,7,7)
-SupportEntry(Tara,ASupportLevel,2,2,0,0,10,10)
+SupportEntry(Tara,CSupportLevel,1,0,5,0,0,5)
+SupportEntry(Tara,BSupportLevel,2,0,10,0,0,10)
+SupportEntry(Tara,ASupportLevel,3,0,15,0,0,15)
 SupportTerm
 
 ALIGN 4
 TaraSupportList:
 SupportEntry(Mish,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Mish,BSupportLevel,2,0,7,0,0,0)
+SupportEntry(Mish,BSupportLevel,2,0,10,0,0,0)
 SupportEntry(Mish,ASupportLevel,3,0,15,0,0,0)
 
-SupportEntry(Volran,CSupportLevel,1,1,0,0,5,5)
-SupportEntry(Volran,BSupportLevel,1,1,0,0,7,7)
-SupportEntry(Volran,ASupportLevel,2,2,0,0,10,10)
+SupportEntry(Volran,CSupportLevel,1,1,0,0,0,5)
+SupportEntry(Volran,BSupportLevel,2,2,0,0,0,10)
+SupportEntry(Volran,ASupportLevel,3,3,0,0,0,15)
 SupportTerm
 
 // 20
@@ -1012,23 +1025,23 @@ SupportTerm
 ALIGN 4
 LyreSupportList:
 SupportEntry(Cleo,CSupportLevel,1,0,5,(-5),5,0)
-SupportEntry(Cleo,BSupportLevel,2,0,7,(-7),7,0)
+SupportEntry(Cleo,BSupportLevel,2,0,10,(-10),10,0)
 SupportEntry(Cleo,ASupportLevel,3,0,15,(-15),15,0)
 
 SupportEntry(Jerry,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Jerry,BSupportLevel,1,1,7,0,0,0)
-SupportEntry(Jerry,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Jerry,BSupportLevel,2,2,10,0,0,0)
+SupportEntry(Jerry,ASupportLevel,3,3,15,0,0,0)
 SupportTerm
 
 ALIGN 4
 JerrySupportList:
-SupportEntry(Nahiza,CSupportLevel,1,0,5,0,0,0)
-SupportEntry(Nahiza,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Nahiza,ASupportLevel,3,0,15,0,0,0)
+SupportEntry(Nahiza,CSupportLevel,0,1,(-5),0,0,0)
+SupportEntry(Nahiza,BSupportLevel,0,3,(-10),0,0,0)
+SupportEntry(Nahiza,ASupportLevel,0,5,(-15),0,0,0)
 
 SupportEntry(Lyre,CSupportLevel,1,1,5,0,0,0)
-SupportEntry(Lyre,BSupportLevel,1,1,7,0,0,0)
-SupportEntry(Lyre,ASupportLevel,2,2,15,0,0,0)
+SupportEntry(Lyre,BSupportLevel,2,2,10,0,0,0)
+SupportEntry(Lyre,ASupportLevel,3,3,15,0,0,0)
 SupportTerm
 
 //21
@@ -1036,52 +1049,52 @@ SupportTerm
 ALIGN 4
 CatrinSupportList:
 SupportEntry(Loewe,BSupportLevel,2,2,0,0,0,0)
-SupportEntry(Loewe,ASupportLevel,3,3,0,0,0,0)
+SupportEntry(Loewe,ASupportLevel,4,4,0,0,0,0)
 
-SupportEntry(Augur,CSupportLevel,0,1,0,0,5,0)
-SupportEntry(Augur,BSupportLevel,0,2,0,0,7,0)
-SupportEntry(Augur,ASupportLevel,0,3,0,0,15,0)
+SupportEntry(Augur,CSupportLevel,0,0,0,5,0,5)
+SupportEntry(Augur,BSupportLevel,0,0,0,10,0,10)
+SupportEntry(Augur,ASupportLevel,0,0,0,15,0,15)
 
-SupportEntry(KwameReal,CSupportLevel,0,1,0,0,5,0)
-SupportEntry(KwameReal,BSupportLevel,0,2,0,0,7,0)
-SupportEntry(KwameReal,ASupportLevel,0,3,0,0,15,0)
+SupportEntry(KwameReal,CSupportLevel,0,0,5,0,5,0)
+SupportEntry(KwameReal,BSupportLevel,0,0,10,0,10,0)
+SupportEntry(KwameReal,ASupportLevel,0,0,15,(-25),25,0)
 SupportTerm
 
 ALIGN 4
 NgondalaSupportList:
-SupportEntry(Leina,CSupportLevel,0,1,0,5,0,5)
-SupportEntry(Leina,BSupportLevel,0,2,0,7,0,10)
-SupportEntry(Leina,ASupportLevel,0,3,0,10,0,15)
+SupportEntry(Leina,CSupportLevel,0,1,0,0,0,10)
+SupportEntry(Leina,BSupportLevel,0,2,0,0,0,15)
+SupportEntry(Leina,ASupportLevel,0,3,0,0,0,20)
 
-SupportEntry(KwameReal,CSupportLevel,0,1,0,5,0,0)
-SupportEntry(KwameReal,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(KwameReal,ASupportLevel,0,3,0,15,0,0)
+SupportEntry(KwameReal,CSupportLevel,0,1,5,0,0,0)
+SupportEntry(KwameReal,BSupportLevel,0,2,10,0,0,0) // 1 way
+SupportEntry(KwameReal,ASupportLevel,(-5),5,15,0,0,0)
 
-SupportEntry(Locke,CSupportLevel,1,0,5,0,5,0)
-SupportEntry(Locke,BSupportLevel,2,0,7,0,7,0)
-SupportEntry(Locke,ASupportLevel,3,0,10,0,10,0)
+SupportEntry(Locke,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Locke,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Locke,ASupportLevel,3,3,0,0,0,0)
 SupportTerm
 
 // 22
 
 ALIGN 4
 TrajanSupportList:
-SupportEntry(Mira,BSupportLevel,0,2,0,7,0,0)
-SupportEntry(Mira,ASupportLevel,0,3,0,10,0,0)
+SupportEntry(Mira,BSupportLevel,1,1,5,5,0,0)
+SupportEntry(Mira,ASupportLevel,2,2,7,7,0,0)
 
-SupportEntry(BoroReal,BSupportLevel,2,2,0,0,0,0)
-SupportEntry(BoroReal,ASupportLevel,3,3,0,0,0,0)
+SupportEntry(BoroReal,BSupportLevel,0,0,0,0,10,10)
+SupportEntry(BoroReal,ASupportLevel,0,0,0,0,20,20)
 SupportTerm
 
 ALIGN 4
 LockeSupportList:
-SupportEntry(Darcy,CSupportLevel,1,0,0,0,5,0)
-SupportEntry(Darcy,BSupportLevel,2,0,0,0,7,0)
-SupportEntry(Darcy,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Darcy,CSupportLevel,0,0,3,3,3,3)
+SupportEntry(Darcy,BSupportLevel,0,0,7,7,7,7) // 1 way
+SupportEntry(Darcy,ASupportLevel,0,0,10,10,10,10)
 
-SupportEntry(Ngondala,CSupportLevel,1,0,5,0,5,0)
-SupportEntry(Ngondala,BSupportLevel,2,0,7,0,7,0)
-SupportEntry(Ngondala,ASupportLevel,3,0,10,0,10,0)
+SupportEntry(Ngondala,CSupportLevel,1,1,0,0,0,0)
+SupportEntry(Ngondala,BSupportLevel,2,2,0,0,0,0)
+SupportEntry(Ngondala,ASupportLevel,3,3,0,0,0,0)
 SupportTerm
 
 // 23
@@ -1089,19 +1102,10 @@ SupportTerm
 ALIGN 4
 EliasSupportList:
 SupportEntry(Cleo,BSupportLevel,2,2,0,0,0,0)
-SupportEntry(Cleo,ASupportLevel,3,3,0,0,0,0)
+SupportEntry(Cleo,ASupportLevel,4,4,0,0,0,0)
 
-SupportEntry(Varga,BSupportLevel,0,2,0,0,10,0)
-SupportEntry(Varga,ASupportLevel,0,3,0,0,15,0)
-SupportTerm
-
-ALIGN 4
-BoroSupportList:
-SupportEntry(Mira,BSupportLevel,2,0,7,0,0,0)
-SupportEntry(Mira,ASupportLevel,3,0,10,0,0,0)
-
-SupportEntry(TrajanReal,BSupportLevel,2,2,0,0,0,0)
-SupportEntry(TrajanReal,ASupportLevel,3,3,0,0,0,0)
+SupportEntry(Varga,BSupportLevel,0,0,5,5,5,5)
+SupportEntry(Varga,ASupportLevel,0,0,10,10,10,10) // one way
 SupportTerm
 
 SetUnitSupportList(Cleo,CleoSupportList)
@@ -1109,7 +1113,7 @@ SetUnitSupportList(Loewe,LoeweSupportList)
 SetUnitSupportList(Mira,MiraSupportList)
 SetUnitSupportList(Iskra,IskraSupportList)
 SetUnitSupportList(Emil,EmilSupportList)
-SetUnitSupportList(Svetomir,EmilSupportList)
+SetUnitSupportList(Svetomir,SvetomirSupportList)
 SetUnitSupportList(Alena,AlenaSupportList)
 SetUnitSupportList(Varga,VargaSupportList)
 SetUnitSupportList(Delilah,DelilahSupportList)

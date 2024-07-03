@@ -102,7 +102,7 @@ UNIT Cythes LanceKnight Veniamin Level(12,Enemy,True)[4,1] 0x0 0x0 0x0 0x0 [Stee
 UNIT Cythes SwordFighter Veniamin Level(12,Enemy,True)[8,7] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
 UNIT Cythes SwordFighter Veniamin Level(12,Enemy,True)[1,12] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
 UNIT Cythes LanceSoldier Veniamin Level(12,Enemy,True)[2,11] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-UNIT Cythes AxeSoldier Veniamin Level(12,Enemy,True)[7,8] 0x0 0x0 0x0 0x0 [SlimAxe] AttackInRangeAI
+UNIT Cythes AxeSoldier Veniamin Level(12,Enemy,True)[7,8] 0x0 0x0 0x0 0x0 [ShortAxe] AttackInRangeAI
 UNIT Cythes LanceKnight Veniamin Level(12,Enemy,True)[1,4] 0x0 0x0 0x0 0x0 [SilverLance,RedGem] TwoActionAI
 UNIT Cythes DarkMage Veniamin Level(10,Enemy,True)[11,9] 0x0 0x0 0x0 0x0 [Flux] AttackInRangeAI
 UNIT Cythes Fighter Veniamin Level(12,Enemy,True)[1,18] 0x0 0x0 0x0 0x0 [IronAxe] TwoActionAI

@@ -10,8 +10,8 @@ MSS_page2:
 
 page_start
 
-draw_stats_box
-
 draw_items_text
+
+blh DisplayPage1
 
 page_end

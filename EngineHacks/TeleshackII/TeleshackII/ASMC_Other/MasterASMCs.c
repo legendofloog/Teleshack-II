@@ -79,7 +79,7 @@ int GetCurrentPromotedLevelBonus(){
 }
 
 void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
-    bu->battleAvoidRate = bu->battleSpeed * 2 + bu->terrainAvoid + bu->unit.lck *  3 / 2;
+    bu->battleAvoidRate = bu->battleSpeed * 2 + bu->terrainAvoid + bu->unit.lck;
 
     if (bu->battleAvoidRate < 0){
         bu->battleAvoidRate = 0;
@@ -87,7 +87,11 @@ void ComputeBattleUnitAvoidRate(BattleUnit* bu) {
 }
 
 void ComputeBattleUnitHitRate(BattleUnit* bu) {
-    bu->battleHitRate = (bu->unit.skl * 3) + bu->unit.lck + GetItemHit(bu->weapon) + bu->wTriangleHitBonus;
+    bu->battleHitRate = (bu->unit.skl * 2) + bu->unit.lck + GetItemHit(bu->weapon) + bu->wTriangleHitBonus;
+}
+
+void ComputeBattleUnitCritRate(struct BattleUnit* bu) {
+    bu->battleCritRate = GetItemCrit(bu->weapon) + (bu->unit.skl / 2);
 }
 
 void HealBlueUnitsInCh6Arena(){
@@ -342,4 +346,100 @@ void ComputeBattleUnitEffectiveCritRate(struct BattleUnit* attacker, struct Batt
             attacker->battleEffectiveCritRate = 0;
         }
     }
+}
+
+enum unit_ai1_data_enum {
+    // Unit::ai_a
+
+    AI_CMD_CONDITIONAL            = 0x00,
+    AI_CMD_CALL_FUNC              = 0x01,
+    AI_CMD_SET_AI                 = 0x02,
+    AI_CMD_GOTO                   = 0x03,
+    AI_CMD_ACTION_ON_CHAR         = 0x04,
+    AI_CMD_ACTION                 = 0x05,
+    AI_CMD_NOP                    = 0x06,
+    AI_CMD_ACTION_IN_PLACE        = 0x07,
+    AI_CMD_ACTION_ON_CLASS        = 0x08,
+    AI_CMD_STAFF_ACTION           = 0x09,
+    AI_CMD_STAFF_ACTION_2         = 0x0A,
+    AI_CMD_STAFF_ACTION_3         = 0x0B,
+    AI_CMD_MOVE_TOWARDS           = 0x0C,
+    AI_CMD_MOVE_TOWARDS_CHAR      = 0x0D,
+    AI_CMD_NOP_0E                 = 0x0E,
+    AI_CMD_MOVE_TOWARDS_CLASS     = 0x0F,
+    AI_CMD_PILLAGE                = 0x10,
+    AI_CMD_MOVE_TO_SAFETY         = 0x11,
+    AI_CMD_MOVE_TO_ENEMY          = 0x12,
+    AI_CMD_MOVE_TO_ENEMY_2        = 0x13,
+    AI_CMD_NOP_14                 = 0x14,
+    AI_CMD_NOP_15                 = 0x15,
+    AI_CMD_MOVE_RANDOM            = 0x16,
+    AI_CMD_ESCAPE                 = 0x17,
+    AI_CMD_ATTACK_WALLS           = 0x18,
+    AI_CMD_MOVE_TO_TERRAIN        = 0x19,
+    AI_CMD_MOVE_TO_LISTED_TERRAIN = 0x1A,
+    AI_CMD_1B                     = 0x1B,
+    AI_CMD_LABEL                  = 0x1C,
+
+    AI_CMD_COUNT                  = 0x1D,
+};
+
+struct AiScr
+{
+    /* 00 */ u8 cmd;
+    /* 01 */ u8 unk_01;
+    /* 02 */ u8 unk_02;
+    /* 03 */ u8 unk_03;
+    /* 04 */ u32 unk_04;
+    /* 08 */ const void* unk_08;
+    /* 0C */ const void* unk_0C;
+};
+
+#define AI_ACTION_IGNORING(chance, list) { AI_CMD_ACTION, (chance), -1, 0, 0, (list), NULL }
+#define AI_GOTO(target)                  { AI_CMD_GOTO, 0, -1, (target), 0, NULL, NULL }
+#define AI_GOTO_START AI_GOTO(0)
+
+#define Senny_ID 0x6F
+#define Helman_ID 0x70
+
+const u8 gListNotToAttack[] = { Senny_ID, Helman_ID, 0, 0 };
+
+// 0x07 = Do not attack character 0xD (Natasha, character at 5A8A00)
+const struct AiScr gAiScript_ActionInRange_ExceptNatasha[] = {
+    AI_ACTION_IGNORING(100, gListNotToAttack),
+    AI_GOTO_START,
+};
+
+void UnitLoadStatsFromChracter(struct Unit* unit, const struct CharacterData* character) { //this is where i will add internal level
+    int i;
+
+    unit->maxHP = character->baseHP + unit->pClassData->baseHP;
+    unit->pow   = character->basePow + unit->pClassData->basePow;
+	unit->mag   = MagCharTable[character->number].baseMag + MagClassTable[unit->pClassData->number].baseMag;
+    unit->skl   = character->baseSkl + unit->pClassData->baseSkl;
+    unit->spd   = character->baseSpd + unit->pClassData->baseSpd;
+    unit->def   = character->baseDef + unit->pClassData->baseDef;
+    unit->res   = character->baseRes + unit->pClassData->baseRes;
+    unit->lck   = character->baseLck + unit->pClassData->baseLck;
+
+    unit->conBonus = 0;
+
+    for (i = 0; i < 8; ++i) {
+        unit->ranks[i] = unit->pClassData->baseRanks[i];
+
+        if (unit->pCharacterData->baseRanks[i])
+		{
+			unit->ranks[i] = unit->pCharacterData->baseRanks[i];
+		}
+            
+    }
+
+    if (UNIT_FACTION(unit) == FACTION_BLUE && (unit->level != UNIT_LEVEL_MAX))
+	{
+		unit->exp = 0;
+	}
+    else
+	{
+		unit->exp = UNIT_EXP_DISABLED;
+	}
 }

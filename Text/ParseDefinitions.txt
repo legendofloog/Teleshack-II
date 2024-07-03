@@ -21,6 +21,7 @@
 [Event] = [LoadOverworldFaces]
 [OpenQuote] = [0x93]
 [HashTag] = [0x23]
+[CSSCF] = [CloseSpeechSlow][ClearFace]
 
 [FarFarLeft] = [OpenFarFarLeft]
 [FarLeft] = [OpenFarLeft]
@@ -61,6 +62,7 @@
 [LoadCleoAngry] = [LoadFace][0x9A][0x1]
 [LoadLoewe] = [LoadFace][0x14][0x1]
 [LoadLoeweAngry] = [LoadFace][0xD3][0x1]
+[LoadLoeweSad] = [LoadFace][0x14][0x1]
 [LoadLoewePunished] = [LoadFace][0xD6][0x1]
 [LoadMira] = [LoadFace][0x4][0x1]
 [LoadIskra] = [LoadFace][0x5][0x1]
@@ -220,7 +222,8 @@
 
 
 [LoadActive] = [LoadFace][0xFF][0xFF]
-[LoadLoeweKid] = [LoadFace][0x15][0x1]
+[LoadLoeweYoung] = [LoadFace][0x9D][0x1]
+[LoadLoeweYoungSad] = [LoadFace][0x9E][0x1]
 [LoadLoeweMom] = [LoadFace][0x2F][0x1]
 [LoadCatrin] = [LoadLoeweMom]
 [LoadCatrinReal] = [LoadLoeweMom]

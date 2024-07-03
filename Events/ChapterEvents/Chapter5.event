@@ -103,11 +103,11 @@ UNIT
 EnemyUnits:
 UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GrowthScroll] AttackInRangeAI
 UNIT Chapter1Generics DarkMage   Riggan Level(5,Enemy,True) [13,7] 0x0 0x0 0x0 0x0 [Flux,Heal] TwoActionAI
-UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [Heal,Vulnerary] TwoActionAI
+UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [Mend,Vulnerary] TwoActionAI
 UNIT
 
 EnemyUnits2:
-UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Fire,Lightning,PureWater] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Lightning,PureWater] TwoActionAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [Rapier,Torch] BossAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [20,19] 0x0 0x0 0x0 0x0 [Longsword,ChestKey] BossAI
 UNIT Chapter1Generics DarkMage  Riggan Level(5,Enemy,True) [16,23] 0x0 0x0 0x0 0x0 [Flux,PureWater] TwoActionAI
@@ -121,9 +121,9 @@ UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [9,18] 0x0 0x0 0x0 
 UNIT Chapter1Generics LanceArmor   Riggan Level(5,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [LongLance,ChestKey] BossAI
 UNIT Chapter1Generics SwordFighter  Riggan Level(5,Enemy,True) [15,15] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] TwoActionAI
-UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Yseod,PureWater] TwoActionAI
-UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [23,19] 0x0 0x0 0x0 0x0 [SteelAxe,Vulnerary] TwoActionAI
-UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Yseod] TwoActionAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [23,19] 0x0 0x0 0x0 0x0 [Hammer,Vulnerary] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [10,6] 0x0 0x0 0x0 0x0 [LongLance] BossAI
 UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [LongLance] BossAI
@@ -132,14 +132,14 @@ UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [19,6] 0x0 0x0 0x0 
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [19,7] 0x0 0x0 0x0 0x0 [Longsword] BossAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [27,12] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT Chapter1Generics Swordfighter   Riggan Level(5,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
-UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [5,4] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [5,4] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,5] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
 UNIT
 
 EnemyReinforcements_A:
-UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [3,17] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [3,17] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [Fire] ChargeAI
-UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [13,0] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [13,0] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT
 
@@ -149,10 +149,10 @@ NoFade
 ENDA
 
 EnemyReinforcements_B:
-UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [2,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [3,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [31,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [32,34] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [2,34] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [3,34] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [31,34] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   Riggan Level(5,Enemy,True) [32,34] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
 UNIT
 
 EnemyReinforcementsEvent_B:
@@ -167,17 +167,17 @@ NoFade
 ENDA
 
 LoeweCleoPortGroup:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [6,24] 0x0 0x0 1 REDA6R22 [SlimAxe,Hurlbat] NoAI
-UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [8,24] 0x0 0x0 1 REDA8R22 [SlimAxe,Hurlbat] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [6,24] 0x0 0x0 1 REDA6R22 [0x0] NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [8,24] 0x0 0x0 1 REDA8R22 [0x0] NoAI
 UNIT
 
 LongxiaGroup:
-UNIT Senny Corsair_F Cleo Level(6,NPC,False) [8,0] 0x0 0x0 1 REDA8R12 [SlimAxe,Hurlbat] NoAI
+UNIT Senny Corsair_F Cleo Level(6,NPC,False) [8,0] 0x0 0x0 1 REDA8R12 [0x0] NoAI
 UNIT
 
 LoeweCleoBoatGroup:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [6,17] 0x0 0x0 0 0 [SlimAxe,Hurlbat] NoAI
-UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [6,16] 0x0 0x0 0 0 [SlimAxe,Hurlbat] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [6,17] 0x0 0x0 0 0 [0x0] NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [6,16] 0x0 0x0 0 0 [0x0] NoAI
 UNIT
 
 KwameBoatGroup:
@@ -185,11 +185,11 @@ UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,13] 0x0 0x0 1 REDA8R16 [0x0]  
 UNIT
 
 LongxiaBoatGroup:
-UNIT Senny Corsair_F Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA8R17 [SlimAxe,Hurlbat] NoAI
+UNIT Senny Corsair_F Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA8R17 [0x0] NoAI
 UNIT
 
 FangaiBoatGroup:
-UNIT Helman DarkMage Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA9R14 [SlimAxe,Hurlbat] NoAI
+UNIT Helman DarkMage Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA9R14 [0x0] NoAI
 UNIT
 
 BeginningScene:
@@ -282,29 +282,30 @@ TEXTEND
 MOVE 20 Kwame [22,34]
 LOAD1 0 NewPlayerUnits
 ENUN
+REMOVEUNIT Kwame
 TEXTCONT
 TEXTEND
 REMA
 ENUT GuideUnlockElmhurstIsland
 FADI 15
+STAL 3
 LOAD1 1 EnemyUnits2
 ENUN
-SetUnitItemDurability(Riggan,1,EganScroll)
 MountAll
-STAL 3
+SetUnitItemDurability(Riggan,1,EganScroll)
 GotoPrepScreen
 NoFade
 ENDA
 
 FinalPreBattleGroup1:
-UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [21,34] 0x0 0x0 1 REDA13R27 [SlimAxe,Hurlbat] NoAI
-UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA13R26 [SlimAxe,Hurlbat] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(6,Ally,False) [21,34] 0x0 0x0 1 REDA13R27 [0x0] NoAI
+UNIT Cleo Skyseeker_Dismounted Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA13R26 [0x0] NoAI
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [23,34] 0x0 0x0 1 REDA15R27 [0x0]     NoAI
 UNIT
 
 NewPlayerUnits:
-UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA15R26 [SlimAxe,Hurlbat] NoAI
-UNIT Fangai DarkMage Cleo Level(5,Ally,False) [23,34] 0x0 0x0 1 REDA15R27 [Arachnid,Heal,TorchStaff] NoAI
+UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA15R26 [ShortAxe,Hurlbat] NoAI
+UNIT Fangai DarkMage Cleo Level(4,Ally,False) [23,34] 0x0 0x0 1 REDA15R27 [Arachnid,Heal,TorchStaff] NoAI
 UNIT
 
 EndOfSurvive:

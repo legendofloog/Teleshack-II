@@ -10,6 +10,13 @@ Skl[X]
 #0x4f7 BldText
 Bld[X]
 
+# 0x0504 ASText
+AS[X]
+
+# 0x572 ASDesc
+Attack Speed.[.][NL]
+Determines number of attacks.[.][X]
+
 #0x3B SS_TalkText
 Talk[X]
 
@@ -118,3 +125,6 @@ Unequip[X]
 
 ## UnequipEquipmentDescription
 Remove this equipment.[X]
+
+## BWLDesc
+This unit's combat usage statistics.[X]

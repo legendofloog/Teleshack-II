@@ -1,156 +1,7 @@
 // setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)
 #define setMugEntryExtend(mugEntry, mugLocation, mouthX, mouthY, eyeX, eyeY, extend1X, extend1Y, extend2X, extend2Y)"PUSH; ORG PortraitTable+mugEntry*0x1C; POIN mugLocation; POIN mugLocation+0x1624; POIN mugLocation+0x1604; POIN mugLocation+0x1004; BYTE extend1X extend1Y extend2X extend2Y; BYTE mouthX mouthY eyeX eyeY; BYTE 1 0 1 0; POP"
 
-#define CleoMug 0x2
-#define CleoSadMug 0x99
-#define CleoAngryMug 0x9A
-#define MiraMug 0x4
-#define IskraMug 0x5
-#define EmilMug 0x6
-#define SvetomirMug 0x7
-#define AlenaMug 0x8
-#define VargaMug 0x9
-#define DelilahMug 0xA
-#define FiloneMug 0xF
-#define ZwiebackMug 0x10
-#define LeinaMug 0x11
-#define CromarMug 0x13
-#define CromarFogMug 0x42
-#define LoeweMug 0x14
-#define LongxiaMug 0x16
-#define TrajanMug 0x17
-#define FangaiMug 0x18
-#define GimmMug 0x19
-#define TobieMug 0x1A
-#define AwaMug 0x1B
-#define CadenzaMug 0x1C
-#define FaolanMug 0x1E
-#define DraganaOldMug 0x2D
-#define IberisMug 0x20
-#define BuldakMug 0x21
-#define NoraMug 0x22
-#define HansMug 0x23
-#define JennyMug 0x24
-#define MeldanMug 0x25
-#define ValseMug 0x26
-#define HornetMug 0x29
-#define MiloMug 0x2A
-#define IchwepMug 0x2B
-#define EllereyMug 0xC0
-#define MantouMug 0xC1
-#define TippanyMug 0xC2
-#define PelecayeMug 0xC3
-#define CarlMug 0xC4
-#define DarbyMug 0xC5
-#define JacinthMug 0xC6
-#define NahizaMug 0xCB
-#define AugurMug 0xCC
-#define LoeweAngryMug 0xD3
-#define IlseMug 0xD5
-#define LoewePunishedMug 0xD6
-#define RashidMug 0xD7
-#define NikolasMug 0xDB
-#define AltoMug 0xDC
-#define SeraMug 0xDE
-#define SeraZoomingMug 0x74
-#define ShafaqatMug 0xDF
-#define KofiMug 0xE0
-#define ApsisMug 0xE1
-#define OjasviMug 0xe2
-#define DarcyMug 0xe3
-#define GrotoMug 0xe4
-#define TaoMug 0xe5
-#define ZharaMug 0xe6
-#define VolranMug 0xe7
-#define TaraMug 0xe8
-#define ShawMug 0xE9
-#define TakaiMug 0xEA
-#define JerryMug 0xEB
-#define LyreMug 0xEC
-#define NgondalaMug 0xED
-#define TarajiMug 0xEE
-#define TemurMug 0xEF
-#define SultaiMug 0xF0
-#define ValereMug 0xF1
-#define XleaMug 0xF2
-#define VinnyMug 0xF3
-#define CephalidMug 0xF4
-#define DartMug 0xF5
-#define MatthiasMug 0xF6
-#define LockeMug 0x37
-#define MinkMug 0xF7
-#define TiberiusMug 0xF8
-#define DraganaDeadlordMug 0xF9
-#define AlexMug 0xC
-#define AxelMug 0xE
-#define MarynMug 0xFA
-#define ViktorMug 0xFB
-#define AthanasiusMug 0x35
-#define AshaMug 0xA4
-#define CatrinMug 0x2F
 
-// NPCs
-#define EliasMug 0xB
-#define CoraliaMug 0xD
-#define LoeweKidMug 0x15
-#define LeonidasMug 0x1D
-#define CidorMug 0x2E
-#define CatrinYoungMug 0x51
-#define EmoryMug 0x30
-#define CidorYoungMug 0x38
-#define DukeSeleseMug 0x2C
-#define RigganMug 0x3f
-#define RaschwitzMug 0x45
-#define TyrMug 0x46
-#define HernandezMug 0x47
-#define HilmarMug 0x4b
-#define BoroMug 0x4E
-#define BoroEarlyMug 0x98
-#define KwameMug 0x57
-#define SeleseFMug 0x70
-#define BarodMug 0x48
-#define McCallumMug 0x49
-#define ZeusMug 0x4A
-#define VeidMug 0x4f
-#define DrakenMug 0x50
-#define EponyMug 0x1F
-#define WellworthMug 0x27
-#define KorovaiMug 0x12
-#define MifanMug 0x03
-#define TheGiantMug 0x41
-#define YorMug 0x28
-#define HegeMug 0xBF
-#define FrancisMug 0x31
-#define WrathgarMug 0x32
-#define JohannaMug 0x33
-#define DraganaYoungMug 0xBE
-#define AuroraMug 0x34
-#define VeniaminMug 0xC7
-#define CorundumMug 0xC8
-#define KailaniMug 0xC9
-#define PascalMug 0xCA
-#define TsourekiMug 0xCD
-#define HouvainaMug 0xCE
-#define MureibMug 0xCF
-#define GrimbladeMug 0xD0
-#define KassandraMug 0xD1
-#define OrfeasMug 0xD2
-#define TravelerMug 0xD4
-#define YoungCleoMug 0xD8
-#define HamdiMug 0xD9
-#define ColossusMug 0xDA
-#define EleanorMug 0xDD
-#define ArtemisMug 0xFC
-#define MihailMug 0xFD
-#define SaifMug 0xFE
-#define DanuMug 0x3A
-#define TheimonMug 0x3B
-#define PeriheliosMug 0x3C
-#define MysteryMug 0x3D
-#define EithaMug 0x3E
-#define CherneMug 0x39
-#define TrajanYoungMug 0x9B
-#define BoroYoungMug 0x9C
 
 ALIGN 16
 CleoMugData:
@@ -233,14 +84,6 @@ LoeweMugData:
 setMugEntry(LoeweMug, LoeweMugData, 3, 5, 3, 3)
 
 ALIGN 16
-LoeweKidMugData:
-#incbin "Dmp/LoeweKid_mug.dmp"
-#incbin "Dmp/LoeweKid_frames.dmp"
-#incbin "Dmp/LoeweKid_palette.dmp"
-#incbin "Dmp/LoeweKid_minimug.dmp"
-setMugEntry(LoeweKidMug, LoeweKidMugData, 2, 8, 3, 6)
-
-ALIGN 16
 LoeweEyepatchMugData:
 #incbin "Dmp/LoewePunished(hypergammaspaces, Loog)_mug.dmp"
 #incbin "Dmp/LoewePunished(hypergammaspaces, Loog)_frames.dmp"
@@ -255,6 +98,22 @@ LoeweAngryMugData:
 #incbin "Dmp/LoeweAngry(hypergammaspaces,Loog,epicer)_palette.dmp"
 #incbin "Dmp/LoeweAngry(hypergammaspaces,Loog,epicer)_minimug.dmp"
 setMugEntry(LoeweAngryMug, LoeweAngryMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LoeweYoungMugData:
+#incbin "Dmp/LoeweYoung (Levin, Loog)_mug.dmp"
+#incbin "Dmp/LoeweYoung (Levin, Loog)_frames.dmp"
+#incbin "Dmp/LoeweYoung (Levin, Loog)_palette.dmp"
+#incbin "Dmp/LoeweYoung (Levin, Loog)_minimug.dmp"
+setMugEntry(LoeweYoungMug, LoeweYoungMugData, 3, 7, 3, 5)
+
+ALIGN 16
+LoeweYoungSadMugData:
+#incbin "Dmp/LoeweYoungSad (Levin, Loog)_mug.dmp"
+#incbin "Dmp/LoeweYoungSad (Levin, Loog)_frames.dmp"
+#incbin "Dmp/LoeweYoungSad (Levin, Loog)_palette.dmp"
+#incbin "Dmp/LoeweYoungSad (Levin, Loog)_minimug.dmp"
+setMugEntry(LoeweYoungSadMug, LoeweYoungSadMugData, 3, 7, 3, 5)
 
 ALIGN 16
 DraganaOldMugData:
@@ -306,11 +165,11 @@ setMugEntry(CatrinYoungMug, CatrinYoungMugData, 3, 6, 3, 4)
 
 ALIGN 16
 RaschwitzMugData:
-#incbin "Dmp/Raschwitz (Loog)_mug.dmp"
-#incbin "Dmp/Raschwitz (Loog)_frames.dmp"
-#incbin "Dmp/Raschwitz (Loog)_palette.dmp"
-#incbin "Dmp/Raschwitz (Loog)_minimug.dmp"
-setMugEntry(RaschwitzMug, RaschwitzMugData, 4, 4, 4, 2)
+#incbin "Dmp/Raschwitz (Levin, Loog)_mug.dmp"
+#incbin "Dmp/Raschwitz (Levin, Loog)_frames.dmp"
+#incbin "Dmp/Raschwitz (Levin, Loog)_palette.dmp"
+#incbin "Dmp/Raschwitz (Levin, Loog)_minimug.dmp"
+setMugEntry(RaschwitzMug, RaschwitzMugData, 3, 4, 3, 2)
 
 ALIGN 16
 BoroMugData:
@@ -794,11 +653,11 @@ setMugEntry(MinkMug, MinkMugData, 3, 5, 3, 3)
 
 ALIGN 16
 TiberiusMugData:
-#incbin "Dmp/Tiberius(Leche)_mug.dmp"
-#incbin "Dmp/Tiberius(Leche)_frames.dmp"
-#incbin "Dmp/Tiberius(Leche)_palette.dmp"
-#incbin "Dmp/Tiberius(Leche)_minimug.dmp"
-setMugEntry(TiberiusMug, TiberiusMugData, 3, 5, 3, 3)
+#incbin "Dmp/Tiberius(Levin, Leche)_mug.dmp"
+#incbin "Dmp/Tiberius(Levin, Leche)_frames.dmp"
+#incbin "Dmp/Tiberius(Levin, Leche)_palette.dmp"
+#incbin "Dmp/Tiberius(Levin, Leche)_minimug.dmp"
+setMugEntry(TiberiusMug, TiberiusMugData, 2, 5, 3, 3)
 
 ALIGN 16
 CidorYoungMugData:

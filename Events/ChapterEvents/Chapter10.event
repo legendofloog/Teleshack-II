@@ -250,8 +250,8 @@ UNIT Selese Archer 0x0 Level(10,Enemy,True) [24,2] 0x0 0x0 0x0 0x0 [Longbow] Att
 UNIT Selese SwordFighter 0x0 Level(10,Enemy,True) [22,16] 0x0 0x0 0x0 0x0 [LongSword] PursueWithoutHeedAI
 UNIT Selese AxeSoldier 0x0 Level(10,Enemy,True) [18,11] 0x0 0x0 0x0 0x0 [LunarAxe] PursueWithoutHeedAI
 
-UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,4] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
-UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,4] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
+UNIT Selese PegasusRider 0x0 Level(10,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
 
 // Left side
 UNIT Selese AxeFighter 0x0 Level(10,Enemy,True) [4,4] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI

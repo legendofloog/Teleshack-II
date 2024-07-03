@@ -9,7 +9,7 @@
 @jumped to at 22410 (fe6)
 @r4 = char data ptr
 
-.equ crit_warning_cutoff, 24	@anything less than or equal this won't trigger the !
+.equ crit_warning_cutoff, 20	@anything less than or equal this won't trigger the !
 
 .if FE6 == 1
 	.equ WarningCache, 			0x0203ACC0	@free space in ram. Change this if necessary.
@@ -120,7 +120,7 @@ mov		r1,#1
 str		r1,[sp]					@change bool to true (display whatever)
 str		r3,[sp,#0x4]			@sp+4 = x - x'
 str		r2,[sp,#0x8]			@sp+8 = y - y'
-ldr		r1,=#0x201
+ldr		r1,=0x201
 str		r1,[sp,#0xC]			@constant to determine where things get drawn
 @Find out whether we even need to display an hp bar
 @.if FE8 == 1 @ TODO: other games
@@ -265,6 +265,8 @@ ldrh	r0,[r4,r5]
 ldr		r1,=Get_Item_Crit
 mov		r14,r1
 .short	0xF800
+cmp 		r0, #0xFF
+beq		NextItem @ don't do anything if it's cannot crit
 cmp		r0,#crit_warning_cutoff
 bgt		IsCritty
 NextItem:

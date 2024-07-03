@@ -151,3 +151,16 @@ UnacceptedMountDismountLocationEntry(Chapter22,25,6,31,19)
 UnacceptedMountDismountLocationEntry(Chapter22,24,20,31,24)
 UnacceptedMountDismountLocationEntry(Chapter24,0,0,26,34)
 EndUnacceptedMountDismountLocationTable
+
+ALIGN 4
+MountedInPrepsTable: //list of chapterIDs where units are mounted in preps and have access to promo items
+BYTE Chapter13      // shouldn't start until 13?
+BYTE Chapter14 
+BYTE Chapter17
+BYTE Chapter18
+BYTE Chapter20
+BYTE Chapter21
+BYTE Chapter22
+BYTE Chapter23
+BYTE Chapter25
+BYTE 0xFF

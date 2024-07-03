@@ -1,21 +1,21 @@
 // Con Growth Table
 
 SetUnitConGrowth(Cleo,10)
-SetUnitConGrowth(Loewe,10)
+SetUnitConGrowth(Loewe,5)
 SetUnitConGrowth(Iskra,5)
 SetUnitConGrowth(Mira,1)
 SetUnitConGrowth(Emil,15)
 SetUnitConGrowth(Svetomir,15)
 SetUnitConGrowth(Alena,10)
 
-SetUnitConGrowth(Varga,15)
+SetUnitConGrowth(Varga,20)
 SetUnitConGrowth(Delilah,5)
 
 SetUnitConGrowth(Alex,10)
 SetUnitConGrowth(Axel,10)
 
 SetUnitConGrowth(Filone,5)
-SetUnitConGrowth(Zwieback,15)
+SetUnitConGrowth(Zwieback,25)
 
 SetUnitConGrowth(Leina,5)
 SetUnitConGrowth(Cromar,15)
@@ -24,7 +24,7 @@ SetUnitConGrowth(Longxia,15)
 SetUnitConGrowth(Fangai,10)
 
 SetUnitConGrowth(Gimm,5)
-SetUnitConGrowth(Tobie,2)
+SetUnitConGrowth(Tobie,1)
 SetUnitConGrowth(Awa,20)
 SetUnitConGrowth(Cadenza,20)
 SetUnitConGrowth(Faolan,10)
@@ -80,30 +80,32 @@ SetUnitConGrowth(EliasReal,15)
 SetUnitConGrowth(BoroReal,20)
 
 // Mov Growth Table
-SetUnitMovGrowth(Iskra,4)
+SetUnitMovGrowth(Cleo,1)
+
+SetUnitMovGrowth(Iskra,3)
 SetUnitMovGrowth(Mira,1)
 SetUnitMovGrowth(Emil,2)
 SetUnitMovGrowth(Svetomir,2)
 SetUnitMovGrowth(Alena,4)
 
-SetUnitMovGrowth(Varga,1)
+SetUnitMovGrowth(Varga,3)
 SetUnitMovGrowth(Delilah,5)
 
 SetUnitMovGrowth(Alex,3)
 SetUnitMovGrowth(Axel,3)
 
-SetUnitMovGrowth(Filone,5)
-SetUnitMovGrowth(Zwieback,3)
+SetUnitMovGrowth(Filone,10)
+SetUnitMovGrowth(Zwieback,2)
 
-SetUnitMovGrowth(Longxia,4)
-SetUnitMovGrowth(Fangai,5)
+SetUnitMovGrowth(Longxia,2)
+SetUnitMovGrowth(Fangai,4)
 
 SetUnitMovGrowth(Gimm,5)
-SetUnitMovGrowth(Matthias,8)
-SetUnitMovGrowth(Tobie,4)
+SetUnitMovGrowth(Matthias,3)
+SetUnitMovGrowth(Tobie,5)
 SetUnitMovGrowth(Awa,1)
 SetUnitMovGrowth(Cadenza,1)
-SetUnitMovGrowth(Faolan,3)
+SetUnitMovGrowth(Faolan,4)
 
 SetUnitMovGrowth(Leina,4)
 SetUnitMovGrowth(Cromar,4)

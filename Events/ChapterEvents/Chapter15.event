@@ -103,7 +103,7 @@ NoFade
 ENDA
 
 Turn5Group:
-UNIT Cythes LanceSoldier 0x0      Level(15,Enemy,True) [1,8] 0x0 0x0 0x1 REDA1R8 [SlimLance] PursueWithoutHeedAI
+UNIT Cythes LanceSoldier 0x0      Level(15,Enemy,True) [1,8] 0x0 0x0 0x1 REDA1R8 [Shortlance] PursueWithoutHeedAI
 UNIT
 
 NoAntiturtle:

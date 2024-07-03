@@ -59,7 +59,7 @@ void New_Proc_Start(BattleUnit* attacker, BattleUnit* defender, NewBattleHit* ba
 		}
 
 		if (BattleRoll1RN(battleStats->critRate, 1) && (battleStats->critRate > 0) ){ // crit
-			battleStats->damage = BoundDamage(battleStats->attack*2 - battleStats->defense);
+			battleStats->damage = BoundDamage(battleStats->attack - battleStats->defense) * 2;
 			battleHit->attributes |= BATTLE_HIT_ATTR_CRIT;
 		}
 		else{ // hit

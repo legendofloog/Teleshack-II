@@ -215,7 +215,7 @@ UNIT Cythes LanceArmor 0x0 Level(18,Enemy,True) [14,31] 0x0 0x0 0x0 0x0 [MasterL
 //UNIT Cythes LanceKnight 0x0 Level(18,Enemy,True) [15,33] 0x0 0x0 0x0 0x0 [ShortLance] PursueWithoutHeedAI
 //UNIT Cythes AxeKnight 0x0 Level(18,Enemy,True) [17,32] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes LanceKnight 0x0 Level(18,Enemy,True) [17,32] 0x0 0x0 0x0 0x0 [ShortLance] PursueWithoutHeedAI
-UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [16,28] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [16,28] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
 
 UNIT Shafaqat Sniper_F 0x0 Level(6,Enemy,False) [16,36] 0x0 0x0 0x0 0x0 [BraveBow,GaleBow,GrowthScroll] AttackInRangeAI
 UNIT
@@ -243,7 +243,7 @@ UNIT Cythes SwordFighter 0x0 Level(18,Enemy,True) [19,32] 0x0 0x0 0x0 0x0 [LongS
 //UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [0,28] 0x0 0x0 0x0 0x0 [TrainedEdge] PursueWithoutHeedAI
 UNIT Cythes Myrmidon 0x0 Level(18,Enemy,True) [0,29] 0x0 0x0 0x0 0x0 [ShortSword] PursueWithoutHeedAI
 UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [3,38] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
-UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [5,38] 0x0 0x0 0x0 0x0 [SlimLance] PursueWithoutHeedAI
+UNIT Cythes PegasusRider 0x0 Level(18,Enemy,True) [5,38] 0x0 0x0 0x0 0x0 [IronLance] PursueWithoutHeedAI
 UNIT
 
 

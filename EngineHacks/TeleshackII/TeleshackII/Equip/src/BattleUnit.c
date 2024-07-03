@@ -72,6 +72,8 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 	unit->items[3] = battleUnit->unit.items[3];
 	unit->items[4] = battleUnit->unit.items[4];
 
+	unit->supports[6] = battleUnit->unit.supports[6]; //make sure internal level is updating
+
 	// Equipment
 	Item item = GetUnitEquippedItem(unit);
 
@@ -88,10 +90,6 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 	// Equipment
 
 	RemoveUnitBlankItems(unit);
-
-	if (battleUnit->expGain != 0){
-		BWL_AddExpGained(unit->pCharacterData->number, battleUnit->expGain);
-	}
 
 }
 
@@ -114,11 +112,14 @@ void New_InitBattleUnitFromUnit(BattleUnit* battleUnit, Unit* unit){
 	battleUnit->unit.movBonus = GetUnitMovement(unit);
 	battleUnit->unit.conBonus = GetUnitConstitution(unit);
 
+	
+
 	battleUnit->expGain = 0;
 	battleUnit->statusOut = 0;
 
 	battleUnit->levelPrevious = unit->level;
 	battleUnit->expPrevious = unit->exp;
+	battleUnit->unit.supports[6] = unit->supports[6]; //keep internal level consistent
 
 	battleUnit->hpInitial = unit->curHP;
 

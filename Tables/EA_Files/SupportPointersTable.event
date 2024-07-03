@@ -16,49 +16,49 @@ ALIGN 4
 CleoSupportPointer:
 SupportDataCharacters(Emil, Varga, Darby, Lyre, EliasReal) 
 SupportDataInitialValues(0,CSupportLevel,0,0,BSupportLevel)
-SupportDataGrowths(16,16,40,80,30)
+SupportDataGrowths(15,15,30,80,40)
 SupportCountAmount(5)
 
 ALIGN 4
 LoeweSupportPointer:
 SupportDataCharacters(Iskra, Cromar, Asha, Tao, CatrinReal) //maybe add a fifth if we have time
 SupportDataInitialValues(CSupportLevel,0,0,CSupportLevel,BSupportLevel)
-SupportDataGrowths(15,30,40,80,20)
+SupportDataGrowths(15,20,40,40,16)
 SupportCountAmount(5)
 
 ALIGN 4
 MiraSupportPointer:
-SupportDataCharacters(Iskra,Emil,Tiberius, TrajanReal, BoroReal) 
-SupportDataInitialValues(CSupportLevel,0,0,BSupportLevel,BSupportLevel)
-SupportDataGrowths(15,16,40,30,40)
+SupportDataCharacters(Iskra,Emil,Tiberius, BoroReal, TrajanReal) 
+SupportDataInitialValues(CSupportLevel,0,0,CSupportLevel,BSupportLevel)
+SupportDataGrowths(12,15,30,30,20)
 SupportCountAmount(5)
 
 ALIGN 4
 IskraSupportPointer:
 SupportDataCharacters(Loewe,Mira,Emil,Tiberius,0)
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(15,15,16,40,0)
+SupportDataGrowths(15,12,15,30,0)
 SupportCountAmount(4)
 
 ALIGN 4
 EmilSupportPointer:
 SupportDataCharacters(Cleo,Mira,Iskra,Varga,0)
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(16,16,16,16,0)
+SupportDataGrowths(15,15,15,15,0)
 SupportCountAmount(4)
 
 ALIGN 4
 SvetomirSupportPointer:
 SupportDataCharacters(Alena,Delilah,Zhara,0,0) 
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(16,16,80,0,0)
+SupportDataGrowths(15,16,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 AlenaSupportPointer:
 SupportDataCharacters(Svetomir,Filone,Sera,0,0) 
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(16,20,80,0,0)
+SupportDataGrowths(15,16,40,0,0)
 SupportCountAmount(3)
 
 // ch2
@@ -67,14 +67,14 @@ ALIGN 4
 VargaSupportPointer:
 SupportDataCharacters(Cleo,Emil,Zwieback,EliasReal,0)  
 SupportDataInitialValues(CSupportLevel,0,0,BSupportLevel,0)
-SupportDataGrowths(16,16,20,30,0)
+SupportDataGrowths(15,15,16,30,0)
 SupportCountAmount(4)
 
 ALIGN 4
 DelilahSupportPointer:
 SupportDataCharacters(Svetomir,Awa,Ilse,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(16,30,40,0,0)
+SupportDataGrowths(16,20,40,0,0)
 SupportCountAmount(3)
 
 // ch3
@@ -83,14 +83,14 @@ ALIGN 4
 AlexSupportPointer:
 SupportDataCharacters(Axel,Faolan,Mantou,0,0)  
 SupportDataInitialValues(BSupportLevel,0,0,0,0)
-SupportDataGrowths(10,30,40,0,0)
+SupportDataGrowths(10,20,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 AxelSupportPointer:
 SupportDataCharacters(Alex,Iberis,Pelecaye,0,0)  
 SupportDataInitialValues(BSupportLevel,0,0,0,0)
-SupportDataGrowths(10,20,40,0,0)
+SupportDataGrowths(10,20,30,0,0)
 SupportCountAmount(3)
 
 // ch4
@@ -99,14 +99,14 @@ ALIGN 4
 FiloneSupportPointer:
 SupportDataCharacters(Alena,Zwieback,Tobie,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(20,20,30,0,0)
+SupportDataGrowths(16,16,20,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 ZwiebackSupportPointer:
 SupportDataCharacters(Varga,Filone,Ellerey,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(20,20,40,0,0)
+SupportDataGrowths(16,16,30,0,0)
 SupportCountAmount(3)
 
 // ch5
@@ -115,14 +115,14 @@ ALIGN 4
 FangaiSupportPointer:
 SupportDataCharacters(Longxia,Faolan,Tippany,0,0)  
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(20,30,40,0,0)
+SupportDataGrowths(16,20,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 LongxiaSupportPointer:
 SupportDataCharacters(Fangai,Cadenza,Groto,0,0)  
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(20,30,80,0,0)
+SupportDataGrowths(16,20,80,0,0)
 SupportCountAmount(3)
 
 // ch5x
@@ -131,42 +131,42 @@ ALIGN 4
 MishSupportPointer:
 SupportDataCharacters(Tobie,Takai,Ellerey,Tara,0)  
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(30,40,40,80,0)
+SupportDataGrowths(20,40,30,80,0)
 SupportCountAmount(4)
 
 ALIGN 4
 TobieSupportPointer:
-SupportDataCharacters(Mish,Filone,Takai,0,0)  
-SupportDataInitialValues(CSupportLevel,0,CSupportLevel,0,0)
-SupportDataGrowths(30,30,40,0,0)
+SupportDataCharacters(Filone,Mish,Takai,0,0)  
+SupportDataInitialValues(0,CSupportLevel,CSupportLevel,0,0)
+SupportDataGrowths(20,20,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 AwaSupportPointer:
 SupportDataCharacters(Delilah,Nikolas,Zhara,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,80,80,0,0)
+SupportDataGrowths(20,40,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 MatthiasSupportPointer:
 SupportDataCharacters(Cromar,Tippany,Ilse,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,40,40,0,0)
+SupportDataGrowths(20,30,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 FaolanSupportPointer:
 SupportDataCharacters(Alex,Fangai,Buldak,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,30,30,0,0)
+SupportDataGrowths(20,20,20,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 CadenzaSupportPointer:
 SupportDataCharacters(Longxia,Mink,Kofi,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,40,40,0,0)
+SupportDataGrowths(20,30,40,0,0)
 SupportCountAmount(3)
 
 // ch6
@@ -175,14 +175,14 @@ ALIGN 4
 LeinaSupportPointer:
 SupportDataCharacters(Cromar,Mantou,Ngondala,0,0)  
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(30,40,80,0,0)
+SupportDataGrowths(30,30,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 CromarSupportPointer:
 SupportDataCharacters(Loewe,Matthias,Leina,0,0)  
 SupportDataInitialValues(0,0,CSupportLevel,0,0)
-SupportDataGrowths(30,30,30,0,0)
+SupportDataGrowths(20,20,30,0,0)
 SupportCountAmount(3)
 
 // ch7
@@ -191,14 +191,14 @@ ALIGN 4
 IberisSupportPointer:
 SupportDataCharacters(Axel,Nora,Hans,0,0) 
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(20,30,30,0,0)
+SupportDataGrowths(20,20,20,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 BuldakSupportPointer:
 SupportDataCharacters(Faolan,Valse,Tao,0,0)  
 SupportDataInitialValues(0,0,CSupportLevel,0,0)
-SupportDataGrowths(30,30,80,0,0)
+SupportDataGrowths(20,30,80,0,0)
 SupportCountAmount(3)
 
 // ch8
@@ -207,14 +207,14 @@ ALIGN 4
 NoraSupportPointer:
 SupportDataCharacters(Iberis, Hans,Ichwep,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(30,30,30,0,0)
+SupportDataGrowths(20,30,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 HansSupportPointer:
 SupportDataCharacters(Iberis,Nora,Milo,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(30,30,30,0,0)
+SupportDataGrowths(20,30,30,0,0)
 SupportCountAmount(3)
 
 // ch9
@@ -223,14 +223,14 @@ ALIGN 4
 MeldanSupportPointer:
 SupportDataCharacters(Jenny,Tippany,Volran,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,40,80,0,0)
+SupportDataGrowths(40,30,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 JennySupportPointer:
 SupportDataCharacters(Meldan,Zhara,Tao,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(30,80,80,0,0)
+SupportDataGrowths(40,80,80,0,0)
 SupportCountAmount(3)
 
 // ch10
@@ -239,14 +239,14 @@ ALIGN 4
 HornetSupportPointer:
 SupportDataCharacters(Valse,Nahiza,Shaw,0,0)  
 SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(30,40,80,0,0)
+SupportDataGrowths(30,40,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 ValseSupportPointer:
 SupportDataCharacters(Buldak,Hornet,Carl,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(30,30,40,0,0)
+SupportDataGrowths(30,30,30,0,0)
 SupportCountAmount(3)
 
 // ch11
@@ -255,14 +255,14 @@ ALIGN 4
 IchwepSupportPointer:
 SupportDataCharacters(Nora,Milo,Mantou,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(30,30,40,0,0)
+SupportDataGrowths(30,40,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 MiloSupportPointer:
 SupportDataCharacters(Hans,Ichwep,Pelecaye,0,0)  
 SupportDataInitialValues(0,CSupportLevel,0,0,0)
-SupportDataGrowths(30,30,40,0,0)
+SupportDataGrowths(30,40,30,0,0)
 SupportCountAmount(3)
 
 // ch12
@@ -271,14 +271,14 @@ ALIGN 4
 MinkSupportPointer:
 SupportDataCharacters(Cadenza,Augur,KwameReal,0,0)  
 SupportDataInitialValues(0,0,CSupportLevel,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(30,30,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 TiberiusSupportPointer:
 SupportDataCharacters(Mira,Iskra,Ojasvi,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(30,30,80,0,0)
 SupportCountAmount(3)
 
 // ch12x
@@ -287,74 +287,74 @@ ALIGN 4
 EllereySupportPointer:
 SupportDataCharacters(Zwieback,Mish,Darby,Jacinth,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,40,40,0)
+SupportDataGrowths(30,30,30,30,0)
 SupportCountAmount(4)
 
 ALIGN 4
 MantouSupportPointer:
 SupportDataCharacters(Alex,Leina,Ichwep,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,40,0,0)
+SupportDataGrowths(30,30,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 TippanySupportPointer:
 SupportDataCharacters(Fangai,Matthias,Meldan,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,40,0,0)
+SupportDataGrowths(30,30,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 PelecayeSupportPointer:
 SupportDataCharacters(Axel,Milo,Darcy,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(30,30,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 CarlSupportPointer:
 SupportDataCharacters(Valse,Asha,Sera,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(30,30,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 TakaiSupportPointer:
 SupportDataCharacters(Tobie,Mish,Shaw,0,0)  
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(40,40,40,0,0)
 SupportCountAmount(3)
 
 // ch13
 
 ALIGN 4
 DarbySupportPointer:
-SupportDataCharacters(Ellerey,Jacinth,Cleo,0,0)  
+SupportDataCharacters(Cleo, Ellerey,Jacinth,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,40,0,0)
+SupportDataGrowths(30,30,30,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 JacinthSupportPointer:
 SupportDataCharacters(Ellerey,Darby,Apsis,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(30,30,80,0,0)
 SupportCountAmount(3)
 
 // ch14
 
 ALIGN 4
 NahizaSupportPointer:
-SupportDataCharacters(Rashid,Hornet,Jerry,0,0)  
+SupportDataCharacters(Hornet,Rashid,Jerry,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
 SupportDataGrowths(40,40,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 AugurSupportPointer:
-SupportDataCharacters(Rashid,CatrinReal,Mink,0,0)  
+SupportDataCharacters(Mink,Rashid,CatrinReal,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,80,40,0,0)
+SupportDataGrowths(30,40,80,0,0)
 SupportCountAmount(3)
 
 // ch15
@@ -370,7 +370,7 @@ ALIGN 4
 AshaSupportPointer:
 SupportDataCharacters(Loewe,Carl,Ojasvi,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(40,30,80,0,0)
 SupportCountAmount(3)
 
 // ch16
@@ -379,14 +379,14 @@ ALIGN 4
 RashidSupportPointer:
 SupportDataCharacters(Nahiza,Augur,Nikolas,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,40,80,0,0)
+SupportDataGrowths(40,40,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 KofiSupportPointer:
 SupportDataCharacters(Cadenza,Nikolas,KwameReal,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(40,80,80,0,0)
+SupportDataGrowths(40,40,40,0,0)
 SupportCountAmount(3)
 
 // ch17
@@ -395,30 +395,37 @@ ALIGN 4
 NikolasSupportPointer:
 SupportDataCharacters(Awa,Rashid,Kofi,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(80,80,80,0,0)
+SupportDataGrowths(40,40,40,0,0)
 SupportCountAmount(3)
+
+ALIGN 4
+BoroSupportPointer:
+SupportDataCharacters(Mira,TrajanReal,0,0,0)  
+SupportDataInitialValues(CSupportLevel,BSupportLevel,0,0,0)
+SupportDataGrowths(30,20,0,0,0)
+SupportCountAmount(2)
 
 ALIGN 4
 KwameSupportPointer:
 SupportDataCharacters(Mink,Kofi,CatrinReal,Ngondala,0)  
 SupportDataInitialValues(CSupportLevel,0,CSupportLevel,CSupportLevel,0)
-SupportDataGrowths(80,80,80,80,0)
+SupportDataGrowths(40,40,80,80,0)
 SupportCountAmount(4)
 
 // ch18
 
 ALIGN 4
 SeraSupportPointer:
-SupportDataCharacters(Shaw,Alena,Carl,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(40,80,80,0,0)
+SupportDataCharacters(Carl,Alena,Shaw,0,0)  
+SupportDataInitialValues(0,0,CSupportLevel,0,0)
+SupportDataGrowths(40,40,40,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
 ShawSupportPointer:
-SupportDataCharacters(Sera,Hornet,Takai,0,0)  
-SupportDataInitialValues(CSupportLevel,0,0,0,0)
-SupportDataGrowths(40,80,80,0,0)
+SupportDataCharacters(Hornet,Takai,Sera,0,0)  
+SupportDataInitialValues(0,0,CSupportLevel,0,0)
+SupportDataGrowths(40,40,40,0,0)
 SupportCountAmount(3)
 
 // ch18x
@@ -427,7 +434,7 @@ ALIGN 4
 TaoSupportPointer:
 SupportDataCharacters(Buldak,Loewe,Jenny,0,0)  
 SupportDataInitialValues(CSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(80,80,80,0,0)
+SupportDataGrowths(80,40,80,0,0)
 SupportCountAmount(3)
 
 ALIGN 4
@@ -441,7 +448,7 @@ ALIGN 4
 ApsisSupportPointer:
 SupportDataCharacters(Jacinth,Groto,0,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(80,80,0,0,0)
+SupportDataGrowths(80,40,0,0,0)
 SupportCountAmount(2)
 
 ALIGN 4
@@ -462,7 +469,7 @@ ALIGN 4
 GrotoSupportPointer:
 SupportDataCharacters(Longxia,Apsis,0,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
-SupportDataGrowths(80,80,0,0,0)
+SupportDataGrowths(80,40,0,0,0)
 SupportCountAmount(2)
 
 // ch19
@@ -508,16 +515,16 @@ SupportCountAmount(3)
 
 ALIGN 4
 CatrinSupportPointer:
-SupportDataCharacters(Loewe,KwameReal,Augur,0,0)  
-SupportDataInitialValues(BSupportLevel,CSupportLevel,0,0,0)
-SupportDataGrowths(20,80,80,0,0)
+SupportDataCharacters(Loewe,Augur,KwameReal,0,0)  
+SupportDataInitialValues(BSupportLevel,0,CSupportLevel,0,0)
+SupportDataGrowths(16,80,80,0,0)
 SupportCountAmount(3)
 
 // ch22
 
 ALIGN 4
 LockeSupportPointer:
-SupportDataCharacters(Ngondala,Darcy,0,0,0)  
+SupportDataCharacters(Ngondala,Joie,0,0,0)  
 SupportDataInitialValues(0,0,0,0,0)
 SupportDataGrowths(80,80,0,0,0)
 SupportCountAmount(2)
@@ -526,7 +533,7 @@ ALIGN 4
 TrajanSupportPointer:
 SupportDataCharacters(Mira,BoroReal,0,0,0)  
 SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
-SupportDataGrowths(30,40,0,0,0)
+SupportDataGrowths(20,20,0,0,0)
 SupportCountAmount(2)
 
 // ch23
@@ -535,12 +542,5 @@ ALIGN 4
 EliasSupportPointer:
 SupportDataCharacters(Cleo,Varga,0,0,0)  
 SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
-SupportDataGrowths(30,30,0,0,0)
-SupportCountAmount(2)
-
-ALIGN 4
-BoroSupportPointer:
-SupportDataCharacters(TrajanReal,Mira,0,0,0)  
-SupportDataInitialValues(BSupportLevel,BSupportLevel,0,0,0)
-SupportDataGrowths(40,40,0,0,0)
+SupportDataGrowths(40,30,0,0,0)
 SupportCountAmount(2)

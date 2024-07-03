@@ -3,6 +3,11 @@
 .global MS_BWLSaveHook
 .type   MS_BWLSaveHook, %function
 
+.equ WriteAndVerifySramFast, 0x080D184C @ r0 = source, r1 = destination, r2 = size.
+.equ GetSaveWriteAddr, 0x080A3065
+.equ ReadSaveBlockInfo, 0x080A2EF8
+.equ WriteSaveBlockInfo, 0x080A2F95
+
 ReturnLocation = (0x080A4662+1)
 
 MS_BWLSaveHook:
@@ -11,14 +16,14 @@ MS_BWLSaveHook:
 	@ KNOWN STATE:
 	@  r0-r4 free
 	@  r5 = RAM BWL entry
-	@  r6 = BWL offset (aka CharID*$10)
+	@  r6 = BWL offset (aka CharID*$8)
 	@  r7 = gChapterData
 	@  r8 = CharID
 
 	@ STEP 1 : SUSPEND SAVE
 
 	mov r0, #3
-	ldr r3, =GetSaveTargetAddress
+	ldr r3, =GetSaveWriteAddr
 	bl  BXR3
 
 	@ var r4 = Suspend Save target address
@@ -33,7 +38,7 @@ MS_BWLSaveHook:
 
 	@ r1 = save target
 	ldrh r1, [r0, #0x00] @ +00 | offset
-	sub  r1, #0x10
+	sub  r1, #0x8
 	add  r1, r6
 	add  r1, r4
 
@@ -47,19 +52,19 @@ MS_BWLSaveHook:
 	mov r0, sp @ arg r0 = $10 byte buffer
 	mov r1, #3 @ arg r1 = block id
 
-	ldr r3, =SaveMetadata_Load
+	ldr r3, =ReadSaveBlockInfo
 	bl  BXR3
 
 	mov r0, sp @ arg r0 = $10 byte buffer
 	mov r1, #3 @ arg r1 = block id
 
-	ldr r3, =SaveMetadata_Save
+	ldr r3, =WriteSaveBlockInfo
 	bl  BXR3
 
 	@ STEP 2 : GAME SAVE
 
 	ldrb r0, [r7, #0x0C] @ ChapterSate.saveSlot
-	ldr r3, =GetSaveTargetAddress
+	ldr r3, =GetSaveWriteAddr
 	bl  BXR3
 
 	@ var r4 = Game Save target address
@@ -74,7 +79,7 @@ MS_BWLSaveHook:
 
 	@ r1 = save target
 	ldrh r1, [r0, #0x00] @ +00 | offset
-	sub  r1, #0x10
+	sub  r1, #0x8
 	add  r1, r6
 	add  r1, r4
 
@@ -91,13 +96,13 @@ MS_BWLSaveHook:
 	mov  r0, sp          @ arg r0 = $10 byte buffer
 	ldrb r1, [r7, #0x0C] @ arg r1 = block id
 
-	ldr r3, =SaveMetadata_Load
+	ldr r3, =ReadSaveBlockInfo
 	bl  BXR3
 
 	mov  r0, sp          @ arg r0 = $10 byte buffer
 	ldrb r1, [r7, #0x0C] @ arg r1 = block id
 
-	ldr r3, =SaveMetadata_Save
+	ldr r3, =WriteSaveBlockInfo
 	bl  BXR3
 
 	ldr r3, =ReturnLocation

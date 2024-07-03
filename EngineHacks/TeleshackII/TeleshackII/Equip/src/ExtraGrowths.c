@@ -22,6 +22,7 @@ void New_WriteGrowthsToBattleStruct(BattleUnit* battleUnit){
 	if (CanBattleUnitGainLevels(battleUnit) && (battleUnit->unit.exp > 99)){
 
 		battleUnit->unit.level += 1;
+		battleUnit->unit.supports[6] += 1;//increase internal level as well
 
 		if (battleUnit->unit.level == Class_Level_Cap_Table[battleUnit->unit.pClassData->number]){
 			battleUnit->expGain -= (battleUnit->unit.exp - 100);

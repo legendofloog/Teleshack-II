@@ -55,11 +55,11 @@ Here of all[Beat] places?[CloseEyes][A][X]
 
 ## AlexDeathQuote
 [MidRight][LoadAlex]
-Brother[Beat] I'm so sorry, I-[CloseEyes][.....][A][X]
+Brother[Beat] I'm so sorry, I-[CloseEyes][A][X]
 
 ## AxelDeathQuote
 [MidRight][LoadAlex]
-Sister[Beat] I'm so sorry, I-[CloseEyes][.....][A][X]
+Sister[Beat] I'm so sorry, I-[CloseEyes][A][X]
 
 ## FiloneDeathQuoteText
 [MidRight][LoadFilone]
@@ -620,8 +620,7 @@ This one's a bit of a letdown.[CloseEyes][AN][X]
 Damn, I really messed up.[AN]
 My spear arm's gonna need some[N]
 time to recover[Beat] Cleo, Loewe,[AN]
-victory is all up to you two now.[N]
-Give that bastard hell for me![AN][X]
+don't screw this up, alright?[AN][X]
 
 ## AshaDeathQuoteText
 [MidRight][LoadAsha]

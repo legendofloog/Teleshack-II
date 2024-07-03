@@ -6,28 +6,30 @@
 	@ GameSaveUnit:
 	@   +00 | u8 character
 	@   +01 | u8 class
-	@   +02 | u8 mhp
-	@   +03 | u8 str / pow
-	@   +04 | u8 mag
-	@   +05 | u8 skl
-	@   +06 | u8 spd
-	@   +07 | u8 def
-	@   +08 | u8 res
-	@   +09 | u8 lck
-	@   +0A | u8 conBonus
-	@   +0B | u8 movBonus
-	@   +0C | 3 bytes:
+	@   +02 | 2 bytes:
+	@	+000 | mhp : 6
+	@	+006 | str /pow : 5
+	@	+011 | mag : 5
+	@   +04 | u8 skl
+	@   +05 | u8 spd
+	@   +06 | u8 def
+	@   +07 | u8 res
+	@   +08 | u8 lck
+	@   +09 | u8 conBonus
+	@   +0A | u8 movBonus
+	@   +0B | 3 bytes:
 	@       +000 | xPos  : 6
 	@       +006 | yPos  : 6
 	@       +012 | level : 5
 	@       +017 | exp   : 7
-	@   +0F | u8[8] wexp
-	@   +17 | u8[7] supports
-	@   +1E | u16[5] items
-	@   +28 | u32 state
+	@   +0E | u8[8] wexp
+	@   +16 | u8[7] supports
+	@   +1D | u16[5] items
+	@   +27 | u32 state
+	@   +2B | u8 fatigue
 	@   +2C | (end)
 
-	GameSaveUnit.size = 0x30
+	GameSaveUnit.size = 0x2C
 
 	@ SuspendSaveUnit (Common):
 	@   +00 | <GameSaveUnit>
@@ -118,36 +120,48 @@ PackGameSaveUnit.set_class:
 
 	@ STATS
 
+	mov  r4, #0x3F @ 6 bits set
+
 	ldrb r2, [r1, #0x12] @ r2 = Unit->mhp
-	strb r2, [r0, #0x02] @ GameSaveUnit->mhp = Unit->mhp
+	and  r2, r4
 
-	ldrb r2, [r1, #0x14] @ r2 = Unit->pow
-	strb r2, [r0, #0x03] @ GameSaveUnit->str = Unit->pow
+	mov  r4, #0x1F @ 5 bits set @ start here
 
-	mov r3, #0x3A
-	ldrb r2, [r1, r3] @ r2 = Unit->mag
-	strb r2, [r0, #0x04] @ GameSaveUnit->mag = Unit->mag
+	ldrb r3, [r1, #0x14] @ r2 = Unit->pow
+	and  r3, r4
+
+	lsl  r3, #6
+	orr  r2, r3 @ r2 |= Unit->pow << 6: puts pow and HP together in r2
+
+	mov r5, #0x3A
+	ldrb r3, [r1, r5] @ r2 = Unit->mag
+	and r3, r4 @ gets 5 bits of mag
+
+	lsl  r3, #11
+	orr  r2, r3 @ r2 |= Unit->mag << 11: puts mag, pow, and HP together in r2
+
+	strh r2, [r0, #0x02] @ stores these 16 bits (2 bytes) at 02
 
 	ldrb r2, [r1, #0x15] @ r2 = Unit->skl
-	strb r2, [r0, #0x05] @ GameSaveUnit->skl = Unit->skl
+	strb r2, [r0, #0x04] @ GameSaveUnit->skl = Unit->skl
 
 	ldrb r2, [r1, #0x16] @ r2 = Unit->spd
-	strb r2, [r0, #0x06] @ GameSaveUnit->spd = Unit->spd
+	strb r2, [r0, #0x05] @ GameSaveUnit->spd = Unit->spd
 
 	ldrb r2, [r1, #0x17] @ r2 = Unit->def
-	strb r2, [r0, #0x07] @ GameSaveUnit->def = Unit->def
+	strb r2, [r0, #0x06] @ GameSaveUnit->def = Unit->def
 
 	ldrb r2, [r1, #0x18] @ r2 = Unit->res
-	strb r2, [r0, #0x08] @ GameSaveUnit->res = Unit->res
+	strb r2, [r0, #0x07] @ GameSaveUnit->res = Unit->res
 
 	ldrb r2, [r1, #0x19] @ r2 = Unit->lck
-	strb r2, [r0, #0x09] @ GameSaveUnit->lck = Unit->lck
+	strb r2, [r0, #0x08] @ GameSaveUnit->lck = Unit->lck
 
 	ldrb r2, [r1, #0x1A] @ r2 = Unit->conBonus
-	strb r2, [r0, #0x0A] @ GameSaveUnit->conBonus = Unit->conBonus
+	strb r2, [r0, #0x09] @ GameSaveUnit->conBonus = Unit->conBonus
 
 	ldrb r2, [r1, #0x1D] @ r2 = Unit->movBonus
-	strb r2, [r0, #0x0B] @ GameSaveUnit->movBonus = Unit->movBonus
+	strb r2, [r0, #0x0A] @ GameSaveUnit->movBonus = Unit->movBonus
 
 	@ THE ONE PACKED BIT (position, level, exp)
 
@@ -175,14 +189,15 @@ PackGameSaveUnit.set_class:
 
 	lsl  r3, #17
 	orr  r2, r3 @ r2 |= Unit->level << 17
-
-	strh r2, [r0, #0x0C]
+	
+	mov r3, #0x0B
+	strh r2, [r0, r3]
 	lsr  r2, #16
-	strb r2, [r0, #0x0E]
+	strb r2, [r0, #0x0D]
 
 	@ WEAPON EXP
 
-	mov r3, #0x0F
+	mov r3, #0x0E
 	add r3, r0 @ r3 = &GameSaveUnit->wexp
 
 	mov r4, #0x28
@@ -199,7 +214,7 @@ PackGameSaveUnit.lop_wexp:
 
 	@ SUPPORTS
 
-	mov r3, #0x17
+	mov r3, #0x16
 	add r3, r0 @ r3 = &GameSaveUnit->supports
 
 	mov r4, #0x32
@@ -216,33 +231,37 @@ PackGameSaveUnit.lop_supports:
 
 	@ ITEMS
 
-	@ Okay so here we're going to be sneaky
-	@ Since the Unit's and GameSaveUnit items happen to both start at +1E
-	@ We'll use the same "offset" register for both.
+	mov r3, #0x1D
+	add r3, r0 @ r3 = &GameSaveUnit->items
 
-	mov r3, #0x1E @ r3 = offsetof(Unit, items) = offsetof(GameSaveUnit, items)
+	mov r4, #0x1E
+	add r4, r1 @ r4 = &Unit->items
+
 	mov r5, #4
 
 PackGameSaveUnit.lop_items:
-	ldrh r2, [r1, r3]
-	strh r2, [r0, r3]
+	ldrh r2, [r1, r4] @ r4 - load from the unit
+	strh r2, [r0, r3] @ r3 - store in the GameSaveUnit
 
 	add r3, #2
+	add r4, #2
 
 	sub r5, #1
 	bge PackGameSaveUnit.lop_items
 
 	@ STATE
-
-	ldr r2, [r1, #0x0C] @ r2 = Unit->state
-	str r2, [r0, #0x28] @ GameSaveUnit->state = Unit->state
-
+	
+	mov r3, #0x0C
+	ldr r2, [r1, r3] @ r2 = Unit->state
+	mov r3, #0x27
+	str r2, [r0, r3] @ GameSaveUnit->state = Unit->state
+	
 	@FATIGUE
 		
 	mov r4,r1
 	add r4,#0x3B
 	mov r5,r0
-	add r5,#0x2C
+	add r5,#0x2B
 	
 	ldrb r2, [r4]
 	strb r2, [r5]
@@ -291,40 +310,50 @@ UnpackGameSaveUnit:
 
 	@ STATS
 
-	ldrb r2, [r5, #0x02] @ r2 = GameSaveUnit->mhp
-	strb r2, [r4, #0x12] @  = GameSaveUnit->mhp
+	ldrh r2, [r5, #0x02]
+	
+	mov  r3, #0x3F
+	and  r3, r2 @ r3 = GameSaveUnit->mHP
+	
+	strb r3, [r4, #0x12]
 
-	ldrb r2, [r5, #0x03] @ r2 = GameSaveUnit->pow
-	strb r2, [r4, #0x14] @ GameSaveUnit->str = GameSaveUnit->pow
+	lsr  r2, #6 @ move over 6 bits
+	mov  r3, #0x1F
+	and  r3, r2 @ r3 = GameSaveUnit->pow
 
-	ldrb r2, [r5, #0x04] @ r2 = GameSaveUnit->mag
-	mov r3, #0x3A
-	strb r2, [r4, r3]
+	strb r3, [r4, #0x14] @ Unit->str = GameSaveUnit->pow
 
-	ldrb r2, [r5, #0x05] @ r2 = GameSaveUnit->skl
+	lsr  r2, #5 @ move over 5 bits
+	mov  r3, #0x1F
+	and  r3, r2 @ r3 = GameSaveUnit->mag
+
+	mov r0, #0x3A
+	strb r3, [r4, r0]
+
+	ldrb r2, [r5, #0x04] @ r2 = GameSaveUnit->skl
 	strb r2, [r4, #0x15] @ Unit->skl = GameSaveUnit->skl
 
-	ldrb r2, [r5, #0x06] @ r2 = GameSaveUnit->spd
+	ldrb r2, [r5, #0x05] @ r2 = GameSaveUnit->spd
 	strb r2, [r4, #0x16] @ Unit->spd = GameSaveUnit->spd
 
-	ldrb r2, [r5, #0x07] @ r2 = GameSaveUnit->def
+	ldrb r2, [r5, #0x06] @ r2 = GameSaveUnit->def
 	strb r2, [r4, #0x17] @ Unit->def = GameSaveUnit->def
 
-	ldrb r2, [r5, #0x08] @ r2 = GameSaveUnit->res
+	ldrb r2, [r5, #0x07] @ r2 = GameSaveUnit->res
 	strb r2, [r4, #0x18] @ Unit->res = GameSaveUnit->res
 
-	ldrb r2, [r5, #0x09] @ r2 = GameSaveUnit->lck
+	ldrb r2, [r5, #0x08] @ r2 = GameSaveUnit->lck
 	strb r2, [r4, #0x19] @ Unit->lck = GameSaveUnit->lck
 
-	ldrb r2, [r5, #0x0A] @ r2 = GameSaveUnit->conBonus
+	ldrb r2, [r5, #0x09] @ r2 = GameSaveUnit->conBonus
 	strb r2, [r4, #0x1A] @ Unit->conBonus = GameSaveUnit->conBonus
 
-	ldrb r2, [r5, #0x0B] @ r2 = GameSaveUnit->movBonus
+	ldrb r2, [r5, #0x0A] @ r2 = GameSaveUnit->movBonus
 	strb r2, [r4, #0x1D] @ Unit->movBonus = GameSaveUnit->movBonus
 
 	@ THE ONE PACKED BIT (position, level, exp)
-
-	ldr  r2, [r5, #0x0C]
+	mov r3, #0x0B
+	ldr  r2, [r5, r3]
 
 	mov  r3, #0x3F
 	and  r3, r2 @ r3 = GameSaveUnit->xPos
@@ -375,7 +404,7 @@ UnpackGameSaveUnit.yes_exp:
 	mov r0, #0x28
 	add r0, r4 @ r0 = &Unit->wexp
 
-	mov r1, #0x0F
+	mov r1, #0x0E
 	add r1, r5 @ r1 = &GameSaveUnit->wexp
 
 	mov r3, #7
@@ -392,7 +421,7 @@ UnpackGameSaveUnit.lop_wexp:
 	mov r0, #0x32
 	add r0, r4 @ r0 = &Unit->supports
 
-	mov r1, #0x17
+	mov r1, #0x16
 	add r1, r5 @ r1 = &GameSaveUnit->supports
 
 	mov r3, #6
@@ -406,32 +435,33 @@ UnpackGameSaveUnit.lop_supports:
 
 	@ ITEMS
 
-	@ Same trick as for packing (see PackGameSaveUnit)
-
-	mov r1, #0x1E @ r1 = offsetof(Unit, items) = offsetof(GameSaveUnit, items)
+	mov r0, #0x1E @ r0 = offsetof(Unit, items)
+	mov r1, #0x1D @ r1 = offsetof(GameSaveUnit, items)
 	mov r3, #4
 
 UnpackGameSaveUnit.lop_items:
-	ldrh r2, [r5, r1]
-	strh r2, [r4, r1]
+	ldrh r2, [r5, r1] @ load from the game save unit
+	strh r2, [r4, r0] @ store in the unit
 
 	add r1, #2
+	add r0, #2
 
 	sub r3, #1
 	bge UnpackGameSaveUnit.lop_items
 
 	@ STATE
 
-	ldr r2, [r5, #0x28] @ r2 = GameSaveUnit->state
+	mov r3, #0x27
+	ldr r2, [r5, r3] @ r2 = GameSaveUnit->state
 	str r2, [r4, #0x0C] @ Unit->state = GameSaveUnit->state
 	
 	@FATIGUE
 	
-	add r5,#0x2C
+	add r5,#0x2B
 	add r4,#0x3B
 	ldrb r2, [r5] @r2 = GameSaveUnit->fatigue
 	strb r2, [r4] @Unit->fatigue = GameSaveUnit->fatigue
-	sub r5,#0x2C
+	sub r5,#0x2B
 	sub r4,#0x3B
 
 

@@ -9,28 +9,10 @@
 
 int GetUnitEffectiveLevel(Unit* unit){
 
-	int effectiveLevel = unit->level;
+	int effectiveLevel = unit->supports[6]; //gets the last byte of supports, aka internal level
 
 	if (unit->pClassData->attributes & CA_PROMOTED){
-		effectiveLevel += 20;
-	}
-	int i = 0;
-	while( PrepromoteTable[i].charID != 0xFF){
-		if(unit->pCharacterData->number == PrepromoteTable[i].charID){
-			effectiveLevel -= PrepromoteTable[i].levelsToDecreaseBy;
-			break;
-		}
-		i++;
-	}
-	int j = 0;
-	while( BossExpReductionTable[j].charID != 0xFF){
-		if(unit->pCharacterData->number == BossExpReductionTable[j].charID && gChapterData.chapterIndex == BossExpReductionTable[j].chapterID){
-			if (UNIT_FACTION(unit) != FACTION_BLUE){
-				effectiveLevel -= BossExpReductionTable[j].levelsToDecreaseBy;
-				break;
-			}
-		}
-		j++;
+		effectiveLevel += 5;
 	}
 	return effectiveLevel;
 
@@ -72,4 +54,35 @@ bool CanBattleUnitGainLevels(BattleUnit* battleUnit) {
     }
 
     return true;
+}
+
+void UnitLoadSupports(struct Unit* unit) {
+    int i, count = GetROMUnitSupportCount(unit);
+
+    for (i = 0; i < count; ++i)
+	{
+		unit->supports[i] = GetUnitStartingSupportValue(unit, i);
+	}
+        
+	int effectiveLevel = unit->level; //by default, internal level is just level
+	i = 0;
+	
+	while(InternalLevelTable[i].charID != 0xFF){
+		if(unit->pCharacterData->number == InternalLevelTable[i].charID){
+			effectiveLevel = InternalLevelTable[i].level;
+			break;
+		}
+		i++;
+	}
+
+	unit->supports[6] = effectiveLevel; //sets the "internal level" to last support byte
+
+	struct UnitUsageStats* stats = BWL_GetEntry(unit->pCharacterData->number);
+	
+	stats->skill1 = 0;
+	stats->skill2 = 0;
+	stats->skill3 = 0;
+	stats->skill4 = 0;
+
+	struct Unit* returnedUnit = gAutoloadSkills(unit);
 }

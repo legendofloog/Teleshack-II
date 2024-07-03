@@ -87,6 +87,7 @@
 #define Ch2_Selese_Guy 0x73
 // Chapter 3 Boss
 #define Emory_Ch3 0x68
+#define Emory Emory_Ch3
 // Chapter 4 Boss
 #define Hilmar 0x69
 // Chapter 5 Boss

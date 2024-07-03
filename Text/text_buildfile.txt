@@ -22,6 +22,21 @@ Save any changes.[NL]
 Choose Restart Chapter[NL]
 to restart this chapter.[NL][X]
 
+# 0x4F3 AtkTextID
+Atk[X]
+
+# 0x4F4 HitTextID
+Hit[X]
+
+# 0x501 CritTextID
+Crit[X]
+
+# 0x4EF DefTextID
+Def[X]
+
+# 0x4F5 AvoTextID
+Avo[X]
+
 # 0x04C2
 Raises strength.[X]
 
@@ -151,6 +166,10 @@ leave this chapter.[X]
   Escape with[N]
 Cleo and Loewe[X]
 
+## Ch3EscapeObjectiveDesc
+ Escape with Cleo,[N]
+Loewe, and Dragana[X]
+
 ## ArriveName
  Arrive[X]
 
@@ -235,6 +254,9 @@ Reorg[X]
 ## ReorganizeDescription
 Move an item to[N]
 the top of inventory.[X]
+
+## DodgeTextID
+Ddg[X]
 
 #include "statusdesc_text.txt"
 

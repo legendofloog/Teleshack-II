@@ -11,19 +11,19 @@
 #define SetIcon(ID) "ORG IconTable + ID * 128"
 
 AllyStarHitBonus:
-BYTE 5
+BYTE 3
 AllyStarAvoidBonus:
-BYTE 5
+BYTE 3
 
 EnemyStarHitBonus:
-BYTE 5
+BYTE 3
 EnemyStarAvoidBonus:
-BYTE 5
+BYTE 3
 
 NPCStarHitBonus:
-BYTE 5
+BYTE 3
 NPCStarAvoidBonus:
-BYTE 5
+BYTE 3
 
 CancelOutOpposingLeadership:
 BYTE 1 // change to 0 if you don't want this behaviour
@@ -44,7 +44,6 @@ BYTE EliasReal 1
 // BOSSES
 BYTE Raschwitz_Ch1 1
 BYTE Tyr_Ch2 2
-BYTE Boro_Ch1 3
 BYTE Emory_Ch3 2
 BYTE Hilmar 2
 BYTE Riggan 1

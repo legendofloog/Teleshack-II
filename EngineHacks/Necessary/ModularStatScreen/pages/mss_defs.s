@@ -23,7 +23,7 @@
 .equ AppendText, 0x8004480
 .equ AffinityGetter, 0x80286BC
 .equ EquippedWeaponGetter, 0x8016B28
-.equ DrawBWLNumbers, 0x8086FAC
+.equ DrawBWLNumbers, 0x08086FAC
 .equ DrawWeaponRank, 0x8087788
 .equ DrawSupports, 0x8087698
 .equ StatScreenStruct, 0x2003BFC
@@ -139,7 +139,7 @@
   strb r1, [r3, #4] @store width
   strb r2, [r3, #8] @assign the next one.
   .if \textID
-    ldr r0, =#\textID @otherwise assume it's in r0
+    ldr r0, =\textID @otherwise assume it's in r0
   .endif
   blh BufferText
   bl GetSkillNameFromSkillDesc
@@ -627,21 +627,21 @@
 .endm
 
 .macro draw_stats_box
-  ldr     r0,=#0x8A02204        @0808748A @buffer TSA
-  ldr     r4,=#0x2020188        @0808748C
+  ldr     r0,=0x8A02204        @0808748A @buffer TSA
+  ldr     r4,=0x2020188        @0808748C
   mov     r1,r4       @0808748E
-  blh      #0x8012F50       @08087490
-  ldr     r0,=#0x20049EE        @08087494
+  blh      0x8012F50       @08087490
+  ldr     r0,=0x20049EE        @08087494
   mov     r2,#0xC1        @08087496
   lsl     r2,r2,#0x6        @08087498
   mov     r1,r4       @0808749A
-  blh      #0x80D74A0       @0808749C
-  ldr     r0,=#0x8205A24        @080874A0
-  blh      #0x8086E00        @080874A2
+  blh      0x80D74A0       @0808749C
+  ldr     r0,=0x8205A24        @080874A0
+  blh      0x8086E00        @080874A2
   @numbers
   ldr     r6,=StatScreenStruct        @08087532
   ldr     r0,[r6,#0xC]        @08087534
-  blh      #0x8016B58       @08087536
+  blh      0x8016B58       @08087536
   mov     r4,r0       @0808753A
   mov     r5,#0x0       @0808753C
   ldr     r0,[r6,#0xC]        @0808753E
@@ -656,16 +656,16 @@
   lsl     r4,r4,#0x1        @08087550
   add     r0,r4,#1       @08087552
   lsl     r0,r0,#0x6        @08087554
-  ldr     r1,=#0x2003D4C        @08087556
+  ldr     r1,=0x2003D4C        @08087556
   add     r0,r0,r1        @08087558
   mov     r1,#0x0       @0808755A
   mov     r2,#0x35        @0808755C
   blh      0x8004B0C        @0808755E
   add     r0,r4,#2       @08087562
   lsl     r0,r0,#0x6        @08087564
-  ldr     r1,=#0x200472E        @08087566
+  ldr     r1,=0x200472E        @08087566
   add     r0,r0,r1        @08087568
-  ldr     r1,=#0x8A02250        @0808756A
+  ldr     r1,=0x8A02250        @0808756A
   mov     r2,#0xC1        @0808756C
   lsl     r2,r2,#0x6        @0808756E
   blh      0x80D74A0        @08087570
@@ -684,15 +684,15 @@
   beq     loc_0x80875F8        @08087586
   cmp     r0,#0x34        @08087588
   beq     loc_0x80875F8        @0808758A
-  ldr     r4,=#0x200407C        @0808758C
-  ldr     r6,=#0x203A4EC        @0808758E
+  ldr     r4,=0x200407C        @0808758C
+  ldr     r6,=0x203A4EC        @0808758E
   mov     r0,r6       @08087590
   add     r0,#0x5A        @08087592
   mov     r1,#0x0       @08087594
   ldsh    r2,[r0,r1]        @08087596
   mov     r0,r4       @08087598
   mov     r1,#0x2       @0808759A
-  blh      #0x8004B94        @0808759C
+  blh      0x8004B94        @0808759C
   mov     r0,r4       @080875A0
   add     r0,#0x80        @080875A2
   mov     r1,r6       @080875A4
@@ -700,7 +700,7 @@
   mov     r3,#0x0       @080875A8
   ldsh    r2,[r1,r3]        @080875AA
   mov     r1,#0x2       @080875AC
-  blh      #0x8004B94        @080875AE
+  blh      0x8004B94        @080875AE
   mov     r0,r4       @080875B2
   add     r0,#0xE       @080875B4
   mov     r1,r6       @080875B6
@@ -708,7 +708,7 @@
   mov     r3,#0x0       @080875BA
   ldsh    r2,[r1,r3]        @080875BC
   mov     r1,#0x2       @080875BE
-  blh      #0x8004B94       @080875C0
+  blh      0x8004B94       @080875C0
   add     r4,#0x8E        @080875C4
   mov     r0,r6       @080875C6
   add     r0,#0x62        @080875C8
@@ -716,52 +716,52 @@
   ldsh    r2,[r0,r6]        @080875CC
   mov     r0,r4       @080875CE
   mov     r1,#0x2       @080875D0
-  blh      #0x8004B94        @080875D2
+  blh      0x8004B94        @080875D2
   b       loc_0x8087630        @080875D6
   loc_0x80875F8:
-  ldr     r4,=#0x200407C        @080875F8
+  ldr     r4,=0x200407C        @080875F8
   mov     r0,r4       @080875FA
   mov     r1,#0x2       @080875FC
   mov     r2,#0xFF        @080875FE
-  blh      #0x8004B94        @08087600
+  blh      0x8004B94        @08087600
   mov     r0,r4       @08087604
   add     r0,#0x80        @08087606
   mov     r1,#0x2       @08087608
   mov     r2,#0xFF        @0808760A
-  blh      #0x8004B94        @0808760C
+  blh      0x8004B94        @0808760C
   mov     r0,r4       @08087610
   add     r0,#0xE       @08087612
   mov     r1,#0x2       @08087614
   mov     r2,#0xFF        @08087616
-  blh      #0x8004B94        @08087618
+  blh      0x8004B94        @08087618
   add     r4,#0x8E        @0808761C
-  ldr     r0,=#0x203A4EC        @0808761E
+  ldr     r0,=0x203A4EC        @0808761E
   add     r0,#0x62        @08087620
   mov     r1,#0x0       @08087622
   ldsh    r2,[r0,r1]        @08087624
   mov     r0,r4       @08087626
   mov     r1,#0x2       @08087628
-  blh      #0x8004B94        @0808762A
+  blh      0x8004B94        @0808762A
   mov     r5,#0x0       @0808762E
   loc_0x8087630:
   mov     r0,r5       @08087630
-  blh      #0x8016CC0        @08087632
+  blh      0x8016CC0        @08087632
   mov     r5,r0       @08087636
-  ldr     r4,=#0x2003CB4        @08087638
-  blh      #0x8003EDC        @0808763A
+  ldr     r4,=0x2003CB4        @08087638
+  blh      0x8003EDC        @0808763A
   mov     r1,#0x37        @0808763E
   sub     r1,r1,r0        @08087640
   mov     r0,r4       @08087642
   mov     r2,#0x2       @08087644
   mov     r3,r5       @08087646
-  blh      #0x8004480, r4        @08087648
+  blh      0x8004480, r4        @08087648
   mov     r4,#0x0       @0808764C
-  ldr     r0,=#0x2003D2C        @0808764E
-  ldr     r3,=#0x7060       @08087650
+  ldr     r0,=0x2003D2C        @0808764E
+  ldr     r3,=0x7060       @08087650
   mov     r5,r3       @08087652
-  ldr     r6,=#0x2C2        @08087654
+  ldr     r6,=0x2C2        @08087654
   add     r2,r0,r6        @08087656
-  ldr     r1,=#0x7068       @08087658
+  ldr     r1,=0x7068       @08087658
   mov     r3,r1       @0808765A
   add     r6,#0x40        @0808765C
   add     r1,r0,r6        @0808765E
@@ -808,7 +808,7 @@ SkipPool:
   cmp     r0,#0x0       @080874CE
   beq     loc_0x80874F8       @080874D0
   mov     r0,r2       @080874D2
-  blh      #0x80179D8       @080874D4
+  blh      0x80179D8       @080874D4
   sub     r0,#0x1       @080874D8
   cmp     r4,r0       @080874DA
   bne     loc_0x80874F8       @080874DC
@@ -818,7 +818,7 @@ SkipPool:
   loc_0x80874F8:
   ldr     r0,[r7,#0xC]        @080874F8
   mov     r1,r5       @080874FA
-  blh      #0x8016EE4       @080874FC
+  blh      0x8016EE4       @080874FC
   mov     r2,#0x0       @08087500
   lsl     r0,r0,#0x18       @08087502
   cmp     r0,#0x0       @08087504
@@ -826,12 +826,12 @@ SkipPool:
   mov     r2,#0x1       @08087508
   loc_0x808750A:
   lsl     r0,r4,#0x3        @0808750A
-  ldr     r1,=#0x2003C8C        @0808750C
+  ldr     r1,=0x2003C8C        @0808750C
   add     r0,r0,r1        @0808750E
-  ldr     r3,=#0x2003D2E        @08087510
+  ldr     r3,=0x2003D2E        @08087510
   add     r3,r6,r3        @08087512
   mov     r1,r5       @08087514
-  blh      #0x8016A2C, r5       @08087516
+  blh      0x8016A2C, r5       @08087516
   mov     r0,#0x2       @0808751A
   add     r8,r0       @0808751C
   add     r6,#0x80        @0808751E
@@ -919,7 +919,7 @@ SkipPool:
 .endm
 
 .macro get_attack
-  ldr     r6,=#0x203A4EC        @0808758E
+  ldr     r6,=0x203A4EC        @0808758E
   mov     r0,r6       @08087590
   add     r0,#0x5A        @08087592
   mov     r1,#0x0       @08087594
@@ -934,7 +934,7 @@ SkipPool:
 .endm
 
 .macro get_avoid
-  ldr     r0,=#0x203A4EC        @0808761E
+  ldr     r0,=0x203A4EC        @0808761E
   add     r0,#0x62        @08087620
   mov     r1,#0x0       @08087622
   ldsh    r0,[r0,r1]        @08087624

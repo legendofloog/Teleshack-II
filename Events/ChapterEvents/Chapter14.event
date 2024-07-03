@@ -111,7 +111,7 @@ UNIT Cythes LanceArmor Tsoureki Level(14,Enemy,True)[6,11] 0x0 0x0 0x0 0x0 [Jave
 UNIT Cythes MageArmor Tsoureki Level(14,Enemy,True)[8,11] 0x0 0x0 0x0 0x0 [Wind] BossAI
 UNIT Cythes Archer_F Tsoureki Level(14,Enemy,True)[11,6] 0x0 0x0 0x0 0x0 [MarksmanBow,ChestKey] AttackInRangeAI
 UNIT Cythes Hunter Tsoureki Level(14,Enemy,True)[17,15] 0x0 0x0 0x0 0x0 [GaleBow] AttackInRangeAI
-UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[18,9] 0x0 0x0 0x0 0x0 [SlimAxe,SteelAxe,Vulnerary] TwoActionAI
+UNIT Cythes AxeSoldier Tsoureki Level(14,Enemy,True)[18,9] 0x0 0x0 0x0 0x0 [ShortAxe,SteelAxe,Vulnerary] TwoActionAI
 UNIT Cythes SwordFighter_F Tsoureki Level(14,Enemy,True)[18,11] 0x0 0x0 0x0 0x0 [Armorslayer] TwoActionAI
 UNIT Cythes DarkMage_F Tsoureki Level(14,Enemy,True)[18,10] 0x0 0x0 0x0 0x0 [Flux] TwoActionAI
 UNIT Cythes Freelancer Tsoureki Level(14,Enemy,True)[17,10] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI

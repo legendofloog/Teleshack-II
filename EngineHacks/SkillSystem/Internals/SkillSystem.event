@@ -34,20 +34,20 @@ ORG $a41c8 //seems to be saving/loading
 BYTE $70 $47
 ORG $a421c //same here
 BYTE $70 $47 */
-ORG $a474c
-BYTE $70 $47
-ORG $a478c
-BYTE $70 $47
-ORG $a4a34
-BYTE $70 $47
+//ORG $a474c
+//BYTE $70 $47 //noping mov value, stat screen check, and favoritism values
+//ORG $a478c
+//BYTE $70 $47
+//ORG $a4a34
+//BYTE $70 $47
 // ORG $a4cfc //breaks at credits
 // BYTE $70 $47
 
-ORG $a464c //only save 1 byte when dying (as opposed to 3)
-BYTE 1
+//ORG $a464c //only save 1 byte when dying (as opposed to 3)
+//BYTE 1 //this is in get total turncount2 function?
 
-ORG $a4140
-SHORT 0 //nop the 0x200000
+//ORG $a4140 // in save cleared BWL and Chapter win data
+//SHORT 0 //nop the 0x200000
 
 // now managed via InitLevelUpSkillPopup (see SkillPopups.event, Engine Hacks/Popups.event and Engine Hacks/PopupRework) -Stan
 // ORG $76018
@@ -202,13 +202,6 @@ BYTE ForeignPrincessID
 */
 BYTE 0x00//terminator
 ALIGN 4
-
-ALIGN 4
-SkillDescGetter: //given skill number, get description text ID
-#incbin skillDescGetter.dmp
-POIN SkillDescTable
-POIN Skill_Getter
-WORD SS_SkillsDefaultRText
 
 ALIGN 4
 SkillAdder: //given chardata in r0, skill in r1, add skill if possible

@@ -157,7 +157,7 @@ UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [18,7] 0x0 0x0 0x0 0x0 [Tra
 UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [17,12] 0x0 0x0 0x0 0x0 [Jormungand] RangeAI
 UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [19,15] 0x0 0x0 0x0 0x0 [Claymore] RangeAI
 UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,9] 0x0 0x0 0x0 0x0 [SteelAxe] RangeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [20,12] 0x0 0x0 0x0 0x0 [SlimAxe] RangeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [20,12] 0x0 0x0 0x0 0x0 [ShortAxe] RangeAI
 UNIT
 
 Thief1_A:
@@ -196,7 +196,7 @@ UNIT
 EnemyReinforcements_B3:
 UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [6,11] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
 UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [2,6] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
 UNIT
 
 EnemyReinforcements_C:

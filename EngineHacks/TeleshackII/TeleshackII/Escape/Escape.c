@@ -46,19 +46,24 @@ int EscapeCommandEffect(MenuProc* proc){
         int currentRequiredEscapees = 0;
         while (chapterRequiredEscapees[cnt].charID != 0){ //next, we'll sum up required units and those who have escaped
             Unit* currentUnit = GetUnitByCharId(chapterRequiredEscapees[cnt].charID);
-            if (gActiveUnit->rescueOtherUnit != 0){
-                if (currentUnit->pCharacterData->number == GetUnit(gActiveUnit->rescueOtherUnit)->pCharacterData->number){
+            if (currentUnit->pCharacterData->number == gActiveUnit->pCharacterData->number) //is the active unit also the current escapee
+            {
+                currentRequiredEscapees++;
+            }
+            else if ((currentUnit->state & US_HIDDEN) && !(currentUnit->state & US_RESCUED) && !(currentUnit->state & US_UNAVAILABLE)){ //if they already escaped, add them to the pool
+                currentRequiredEscapees++;
+            }
+            else if ((currentUnit->state & US_RESCUED) && (GetUnit(currentUnit->rescueOtherUnit)->state & US_HIDDEN)) //if the unit is rescued but escaped with someone else already
+            {
+                currentRequiredEscapees++;
+            } 
+            else if (gActiveUnit->rescueOtherUnit != 0){
+                if (currentUnit->index == GetUnit(gActiveUnit->rescueOtherUnit)->index){ //is the unit's index the same as the one being rescued right now
                     currentRequiredEscapees++; //although rescued unit hasn't escaped yet, they are counted here
-                }
-                else if (currentUnit->state & US_HIDDEN && !(currentUnit->state & US_UNAVAILABLE)){
-                    currentRequiredEscapees++;
                 }
                 else{
                     
                 }
-            }
-            else if (currentUnit->state & US_HIDDEN && !(currentUnit->state & US_UNAVAILABLE)){
-                currentRequiredEscapees++;
             }
             else //if neither of these, the current required escapee has not left yet
             {

@@ -77,11 +77,13 @@ no_personal:
 
 no_class:
 	@ learned skills, up to 4
-	cmp r6, #0x4A
+	cmp r6, #0x51
 	bhi generic_unit
 
 	ldr r0, =BWLTable
-	lsl r1, r6, #4 @ r1 = char*0x10
+	mov r1, r6
+	mov r2, #8
+	mul r1, r2	@ r1 = char*0x8
 	add r0, r1
 	add r0, #1 @start at byte 1, not 0
 	mov r2, #0

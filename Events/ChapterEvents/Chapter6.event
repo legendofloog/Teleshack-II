@@ -129,7 +129,7 @@ UNIT
 
 ALIGN 4
 CromarAndLeina:
-UNIT Leina 0x0 Cleo Level(4,NPC,False) [6,18] 0x0 0x0 0x0 0x1 [Rapier, Heal, Vulnerary] NoAI
+UNIT Leina 0x0 Cleo Level(5,NPC,False) [6,18] 0x0 0x0 0x0 0x1 [Rapier, Heal, Vulnerary] NoAI
 UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,11] 0x0 0x0 0x0 0x1 [Dullahan, Elixir] BossHealAI
 UNIT
 
@@ -209,7 +209,7 @@ PirateEnemies:
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [5,34] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(3)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [6,33] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(3)
 
-UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [11,34] 0x0 0x0 0x0 0x1 [SlimBow] StallAI(4)
+UNIT Ch6Pirate Archer Draken Level(6,Enemy,True) [11,34] 0x0 0x0 0x0 0x1 [IronBow] StallAI(4)
 UNIT Ch6Pirate 0x0 Draken Level(6,Enemy,True) [11,33] 0x0 0x0 0x0 0x1 [IronAxe] StallAI(4)
 UNIT Ch6Pirate Shaman Draken Level(6,Enemy,True) [10,34] 0x0 0x0 0x0 0x1 [Flux] StallAI(4)
 UNIT Ch6Pirate Swordfighter Draken Level(6,Enemy,True) [19,33] 0x0 0x0 0x0 0x1 [ShortSword] StallAI(4)

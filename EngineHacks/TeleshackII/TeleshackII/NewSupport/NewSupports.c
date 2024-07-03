@@ -1,6 +1,14 @@
 #include "gbafe.h"
 #include "NewSupports.h"
 
+void GiveSupportPointsToCharASMC(){
+    int supportPoints = gEventSlot[0x1];
+    int charId = gEventSlot[0x2];
+    int num = gEventSlot[0x3];
+    Unit* unit = GetUnitByCharId(charId);
+    unit->supports[num] += supportPoints;
+}
+
 static void SetSupportLevelGained(u8 charA, u8 charB)
 {
     Unit* unit = GetUnitByCharId(charA);
@@ -106,7 +114,7 @@ s8 CanUnitSupportCommandWith(struct Unit* unit, int num)
     if (gChapterData.chapterStateBits & CHAPTER_FLAG_3) //i don't know what these flags do
         return FALSE;
 
-    Unit* supporterUnit = GetUnitByCharId(GetUnitSupportingUnit(unit, num)->pCharacterData->number);
+    Unit* supporterUnit = GetUnitSupportingUnit(unit, num);
     exp    = unit->supports[num];
     maxExp = sSupportMaxExpLookup[GetSupportLevelBySupportIndex(unit, num)];
     
@@ -173,7 +181,7 @@ void NewInitSupportBonuses(NewSupportBonuses* bonuses){
 	bonuses->bonusAvoid = 0;
 	bonuses->bonusCrit = 0;
 	bonuses->bonusDodge = 0;
-}
+} //todo, fix staff users not displaying bonuses
 
 
 bool IsUnitValidSupporter(Unit* unit, Unit* supportingUnit, int supportRank){
@@ -193,23 +201,12 @@ int abs(int num){
 	}
 	return num;
 }
+bool IsSupportingUnitInRangeOfAttacker(Unit* supportingUnit, Unit* attackingUnit){
 
-int GetWeaponType(Item someItem){
-    return (GetItemData(someItem.number))->weaponType;
-}
-
-bool IsSupportingUnitInRangeOfDefender(Unit* supportingUnit, Unit* defendingUnit){
-    if (GetWeaponType(supportingUnit->items[0]) == IA_STAFF){
-        if (IsItemCoveringRange(supportingUnit->items[0],GetUnitDistance(supportingUnit, defendingUnit))){
-            return true;
-        }
-        return false;
+    if (GetUnitDistance(attackingUnit, supportingUnit) <= 3){
+        return true;
     }
-    if (GetUnitEquippedWeapon(supportingUnit).number != 0){
-        if (IsItemCoveringRange(GetUnitEquippedWeapon(supportingUnit), GetUnitDistance(supportingUnit, defendingUnit))){
-            return true;
-        }
-    }
+    
     return false;
 } 
 
@@ -219,8 +216,10 @@ void NewGetUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender, NewSup
     if (gGameState.statebits & 0x40){
         return;
     }
+    
+    int charId = attacker->unit.pCharacterData->number;
 
-    NewSupportBonuses* unitSupportList = NewSupportTable[attacker->unit.pCharacterData->number];
+    NewSupportBonuses* unitSupportList = NewSupportTable[charId];
     if (unitSupportList == 0){
 		return;
 	}
@@ -229,7 +228,7 @@ void NewGetUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender, NewSup
 	while (unitSupportList[cnt].supportPartnerId != 0){
 		Unit* supportingUnit = GetUnitByCharId(unitSupportList[cnt].supportPartnerId);
         if (IsUnitValidSupporter(&attacker->unit,supportingUnit,unitSupportList[cnt].supportRank)){
-            if (IsSupportingUnitInRangeOfDefender(supportingUnit, &defender->unit)){
+            if (IsSupportingUnitInRangeOfAttacker(supportingUnit, &attacker->unit)){
                 bonuses->bonusAttack += unitSupportList[cnt].bonusAttack;
 			    bonuses->bonusDefense += unitSupportList[cnt].bonusDefense;
 			    bonuses->bonusHit += unitSupportList[cnt].bonusHit;
@@ -245,7 +244,7 @@ void NewGetUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender, NewSup
 
 
 void ComputeBattleUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender) {
-    if (!(gBattleStats.config & BATTLE_CONFIG_ARENA) && attacker == (&gBattleActor)){ //not arena and the attacker is the acting unit (PP only)
+    if (!(gBattleStats.config & BATTLE_CONFIG_ARENA)){ //not arena and the attacker is the acting unit (PP only)
         struct NewSupportBonuses tmpBonuses;
 
         NewGetUnitSupportBonuses(attacker, defender, &tmpBonuses);
@@ -260,66 +259,76 @@ void ComputeBattleUnitSupportBonuses(BattleUnit* attacker, BattleUnit* defender)
 }
 
 void New_DrawUnitScreenSupportList(){
-	Unit* current = gStatScreen.curr;
-	TextHandle* textBase = &TileBufferBase;
-	int y = 8;
-	int x = 16;
+	
+    Unit* unit = gStatScreen.unit;
 
-	NewSupportBonuses* unitSupportList = NewSupportTable[current->pCharacterData->number];
+    if (UNIT_FACTION(unit) == FACTION_GREEN || UNIT_FACTION(unit) == FACTION_RED)
+    {
+        return;
+    }
 
-	if (unitSupportList == 0){
-		return;
-	}
+    int yTile = 5, lineNum = 0;
 
-	int cnt = 0;
-	while (unitSupportList[cnt].supportPartnerId != 0){
-		Unit* supportingUnit = GetUnitByCharId(unitSupportList[cnt].supportPartnerId);
-        int num = GetSupportDataIdForOtherUnit(current,supportingUnit->pCharacterData->number);
-		if ((supportingUnit->pCharacterData->number != 0)){
-            if (current->supports[num] >= ASupportLevel && unitSupportList[cnt].supportRank == ASupportLevel){
-                (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
-			    textBase->tileWidth = 8;
-			    DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_NORMAL, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
-                textBase++;
+    int textColor = TEXT_COLOR_SYSTEM_WHITE;
 
-                x = 24;
-			    (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+2;
-			    textBase->tileWidth = 2;
-                DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_GREEN, 0, 2, "A");
-			    textBase++;
-                y += 2;
+    int supportAmt = GetROMUnitSupportCount(unit);
+    int supportId  = 0;
+
+    Unit* supportingUnit;
+
+    while (supportId < supportAmt)
+    {
+        int level = GetSupportLevelBySupportIndex(unit, supportId);
+
+        if (level != 0)
+        {
+            int rankColor;
+
+            u8 pid = GetROMUnitSupportingId(unit, supportId);
+
+            supportingUnit = GetUnitByCharId(pid);
+
+            if (supportingUnit == NULL) //unit does not exist?
+            {
+                supportId++;
+                continue;
             }
-            if (current->supports[num] < BSupportLevel && current->supports[num] >= CSupportLevel && unitSupportList[cnt].supportRank == CSupportLevel){
-                (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
-			    textBase->tileWidth = 8;
-			    DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_NORMAL, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
-                textBase++;
-                
-                //second part inside here yoinked from support rework rework
-                x = 24;
-			    (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+2;
-			    textBase->tileWidth = 2;
-                DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_BLUE, 0, 2, "C");
-                textBase++;
-                y += 2;
+
+            if (UNIT_FACTION(unit) != UNIT_FACTION(supportingUnit)) //not the same allegiance
+            {
+                supportId++;
+                continue;
             }
-            if (current->supports[num] < ASupportLevel && current->supports[num] >= BSupportLevel && unitSupportList[cnt].supportRank == BSupportLevel){
-                (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+8;
-			    textBase->tileWidth = 8;
-			    DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_NORMAL, 4, 8, GetStringFromIndex(supportingUnit->pCharacterData->nameTextId));
-                textBase++;
-                
-                x = 24;
-			    (textBase+1)->tileIndexOffset = textBase->tileIndexOffset+2;
-			    textBase->tileWidth = 2;
-                DrawTextInline(textBase, &Tile_Origin[y][x], TEXT_COLOR_BLUE, 0, 2, "B");
-			    textBase++;
-                y += 2;
+
+            if (supportingUnit->state & US_UNAVAILABLE || !(IsSupportingUnitInRangeOfAttacker(unit, supportingUnit)))
+            {
+                textColor = TEXT_COLOR_SYSTEM_GRAY;
             }
-		}
-        x = 16;
-		cnt++;
-	}
+
+            DrawTextInline(&gStatScreen.text[STATSCREEN_TEXT_SUPPORT0 + lineNum],
+                gpStatScreenPageBg0Map + TILEMAP_INDEX(4, yTile),
+                textColor, 0, 0,
+                GetStringFromIndex(GetCharacterData(pid)->nameTextId));
+
+            rankColor = TEXT_COLOR_SYSTEM_BLUE;
+
+            if (level == 3)
+                rankColor = TEXT_COLOR_SYSTEM_GREEN;
+
+            if (supportingUnit->state & US_UNAVAILABLE || !(IsSupportingUnitInRangeOfAttacker(unit, supportingUnit)))
+            {
+                rankColor = TEXT_COLOR_SYSTEM_GRAY;
+            }
+
+            DrawSpecialUiChar(gpStatScreenPageBg0Map + TILEMAP_INDEX(13, yTile),
+                rankColor, GetSupportLevelUiChar(level));
+
+            yTile += 2;
+            lineNum++;
+        }
+
+        supportId++;
+    }
 }
 
 void ClearUnitSupports(struct Unit* unit){
@@ -340,85 +349,3 @@ void ClearUnitSupports(struct Unit* unit){
         unit->supports[i] = 0;
     }
 }
-
-
-/*
-void SupportSubScreen_SetupGraphics(struct SubScreenProc* proc) {
-    gLCDControlBuffer.dispcnt.mode = 0;
-
-    SetupBackgrounds(0);
-
-    gLCDControlBuffer.bg0cnt.priority = 1;
-    gLCDControlBuffer.bg1cnt.priority = 3;
-    gLCDControlBuffer.bg2cnt.priority = 1;
-    gLCDControlBuffer.bg3cnt.priority = 3;
-
-    Font_InitForUIDefault();
-    ResetIconGraphics_();
-
-    LoadUiFrameGraphics();
-    LoadObjUIGfx();
-
-    SetupMapSpritesPalettes();
-    sub_80A221C();
-    LoadIconPalettes(0xd);
-
-    NewGreenTextColorManager((void*)proc);
-
-    if (!proc->fromPrepScreen) {
-        gPlaySt.cfgTextSpeed = 1; // TODO: Text speed constants
-
-        ResetPrepScreenHandCursor(proc);
-        sub_80AD4A0(0x600, 1);
-        sub_80AD594(1);
-
-        proc->unk_3a = -1;
-
-        if (proc->unk_3b != 0) {
-            ShowPrepScreenHandCursor(
-                (proc->unk_39 & 3) * 8 + 0xc4,
-                ((proc->unk_39 >> 2) & 7) * 16 + 0x18,
-                1,
-                0x800
-            );
-        }
-    }
-
-    BG_SetPosition(0, 4, 0);
-    BG_SetPosition(1, 4, 0);
-    BG_SetPosition(2, 0, 0);
-
-    SetSpecialColorEffectsParameters(1, 0xd, 3, 0);
-    SetBlendTargetA(0, 1, 0, 0, 0);
-    SetBlendTargetB(0, 0, 0, 1, 0);
-
-    sub_8001F48(0);
-    sub_8001F64(0);
-
-    EndSlidingWallEffectMaybe();
-
-    sub_8098C3C(0x4000, 5);
-
-    Decompress(gTsa_SupportSubScreen, gGenericBuffer);
-    CallARM_FillTileRect(gBG1TilemapBuffer, gGenericBuffer, 0x1000);
-
-    PutFace80x72(
-        (struct Proc*)proc,
-        gUnknown_02022CEC,
-        gCharacterData[GetSupportScreenCharIdAt(proc->unitIdx) - 1].portraitId,
-        0x200,
-        2
-    );
-
-    DrawSupportSubScreenUnitPartnerDetails(proc);
-    DrawSupportSubScreenRemainingText(proc);
-
-    Decompress(gGfx_SupportMenu, (void*)0x06017800);
-    CopyToPaletteBuffer(gPal_SupportMenu, 0x340, 0x20);
-    CopyToPaletteBuffer(Pal_MapBattleInfoNum, 0x240, 0x20);
-
-    StartParallelWorker(DrawSupportSubScreenSprites, proc);
-
-    return;
-}
-*/

@@ -13,6 +13,7 @@
 #include "TargetingAI/Installer.event"
 #include "RTextChanges/Installer.event"
 #include "LuckCapStuff/Installer.event"
+#include "CaptureQuotes/Installer.event"
 
 // installs thracia trade
 PUSH
@@ -27,3 +28,16 @@ ORG $CC2
 SHORT $E004
 POP
 
+//makes max bar 25 instead of 30
+PUSH
+ORG $87132
+BYTE 25
+ORG $87142
+BYTE 25
+ORG $870fe
+BYTE 25
+ORG $87102
+BYTE 25
+ORG $87154
+BYTE 25
+POP

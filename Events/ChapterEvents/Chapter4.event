@@ -80,9 +80,9 @@ UNIT Chapter1Generics Swordfighter   0x0 Level(4,Enemy,True) [15,12] 0 0 1 REDA1
 UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [2,16] 0 0 1 REDA2R14 [SteelLance] AttackInRangeAI
 UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [0,11] 0 0 1 REDA3R10 [Fire] TwoActionAI
 UNIT Chapter1Generics Archer   0x0 Level(4,Enemy,True) [4,16] 0 0 1 REDA6R15 [Longbow] AttackInRangeAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [SlimLance] TwoActionAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,1] 0 0x0 0x0 0x0 [ShortLance,PureWater] StallOneTurnAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,1] 0 0x0 0x0 0x0 [IronLance,PureWater] StallOneTurnAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [IronLance] StallOneTurnAI
 UNIT Chapter1Generics LanceKnight   0x0 Level(4,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
 UNIT Chapter1Generics Swordfighter   0x0 Level(4,Enemy,True) [4,0] 0 0 1 REDA4R1 [Shortsword] ChargeAI
 UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [11,16] 0 0 1 REDA10R15 [HandAxe] AttackInRangeAI
@@ -93,7 +93,7 @@ UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [0,7] 0 0 1 REDA2R7 [
 	UNIT
 	
 WhenTheThiefIsSus:
-UNIT Looter Thief   0x0 Level(2,Enemy,True) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
+UNIT Looter Thief  0x0 Level(1,Enemy,False) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
 UNIT
 
 Rein1:
@@ -102,7 +102,7 @@ UNIT Chapter1Generics LanceKnight   0x0 Level(4,Enemy,True) [3,16] 0x0 0x0 0x0 0
 UNIT
 
 Rein2:
-UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [SlimAxe] ChargeAI
+UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
 UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [Fire] StallOneTurnAI
 UNIT
 
@@ -135,24 +135,24 @@ UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [2,0] 0x0 0x0 0x0 0x0 [Fire
 UNIT
 
 CutscenePegasussy:
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,8] 0 0 1 REDA11R0 [SlimSword,SlimSword,SlimSword,SlimSword,] [0x0,0x0,0x0,0x0]
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,9] 0 0 1 REDA12R0 [SlimSword,SlimSword,SlimSword,SlimSword,] [0x0,0x0,0x0,0x0]
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,8] 0 0 1 REDA11R0 [0x0] [0x0,0x0,0x0,0x0]
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,9] 0 0 1 REDA12R0 [0x0] [0x0,0x0,0x0,0x0]
 UNIT
 
 CutsceneTheGang:
-UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [11,3] 0x0 0x0 0x0 0x1 [SlimSword,SlimSword,SlimSword,SlimSword,]     NoAI
-UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [10,4] 0x0 0x0 0x0 0x1 [SlimSword,SlimSword,SlimSword,SlimSword,] NoAI
-UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [12,4] 0x0 0x0 0x0 0x0 [SlimSword,SlimSword,SlimSword,SlimSword,] NoAI
+UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [11,3] 0x0 0x0 0x0 0x1 [0x0]     NoAI
+UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [10,4] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [12,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 SickoMode:
-UNIT Cleo 0x1E   Cleo Level(2,Ally,False) [2,4] 0x0 0x0 0x0 0x1 [SlimSword,SlimSword,SlimSword,SlimSword,]     NoAI
-UNIT Loewe 0x1D Cleo Level(5,Ally,False) [3,5] 0x0 0x0 0x0 0x0 [SlimSword,SlimSword,SlimSword,SlimSword,] NoAI
+UNIT Cleo 0x1E   Cleo Level(2,Ally,False) [2,4] 0x0 0x0 0x0 0x1 [0x0]     NoAI
+UNIT Loewe 0x1D Cleo Level(5,Ally,False) [3,5] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
 LeEpicRecruits:
 UNIT Zwieback BowArmor 0x1 Level(5, Ally, 0)   [0,5] 0 0 1 REDA8R4 [SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
-UNIT Filone Archer_F 0x1 Level(1, Ally, 0)   [0,4] 0 0 1 REDA7R4 [SlimBow,Elixir] [0x0,0x0,0x0,0x0]
+UNIT Filone Archer_F 0x1 Level(1, Ally, 0)   [0,4] 0 0 1 REDA7R4 [IronBow,Elixir] [0x0,0x0,0x0,0x0]
 	UNIT
 	
 HolyShitItIsDream:
@@ -247,7 +247,8 @@ STAL 25
 Music(SheenaID)
 SetBackground(0x1B)
 CheckUnitDeadOrJailed(Mira)
-BNE 420 s0 sC 
+BNE 420 s0 sC
+	SetFatigue(Mira,0)
 	Text(Ch4Intro2)
 	GOTO 421
 LABEL 420
@@ -286,9 +287,9 @@ Text(Ch4Intro4)
 FADI 15
 MountAll
 STAL 3
-	CALL $591FD8 // prep screen
-	//LoadCapturedUnits(CapturedUnitsTest)
-	ENDA
+GotoPrepScreen
+//LoadCapturedUnits(CapturedUnitsTest)
+ENDA
 
 EndingScene:
 ENUT 3
@@ -308,12 +309,11 @@ Music(ToV_TragicDecisionID)
 SetBackground(0x18)
 Text(Ch4Ending2)
 STAL 5
-Music(SoftSwooshSoundEffect)
 SetBackground(0x12)
 Text(Ch4Ending3)
-	MNC2 0x4
-	NoFade
-	ENDA
+MNC2 Chapter5
+NoFade
+ENDA
 
 CapturedUnitsTest:
 UNIT Cleo Skyseeker 0 Level(1,0,0) [0,15] 0 0 0 0 [0] [0]
