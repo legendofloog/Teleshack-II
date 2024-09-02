@@ -33,8 +33,7 @@
     //Events
     #include "Events/Events Installer.event"
     MESSAGE Used event space ends at currentOffset
-    //#include "Events/WorldMapEvents.event"
-
+    
     //Maps
     #include "Maps/MasterMapInstaller.event"
 

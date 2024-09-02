@@ -1,0 +1,17 @@
+WorldMapPointerTable(Chapter1,WM_Events)
+
+WM_Events:
+_0xC220
+EVBIT_MODIFY 0x1
+WM_SPAWNLORD 0 0 Cleo GMLoc_Ch2 0
+WM_SPAWNLORD 0x0 0x0 0x1 0x0 0x0
+WM_CENTERCAMONLORD
+SKIPWN
+ENDA
+
+WorldMapIntroPointerTable(0,Intro)
+
+Intro:
+EVBIT_MODIFY 0x1
+ENUT 0x89
+ENDA

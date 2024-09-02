@@ -175,9 +175,9 @@
    <tile gid="171"/>
    <tile gid="171"/>
    <tile gid="47"/>
-   <tile gid="69"/>
-   <tile gid="67"/>
-   <tile gid="67"/>
+   <tile gid="499"/>
+   <tile gid="80"/>
+   <tile gid="529"/>
    <tile gid="70"/>
    <tile gid="80"/>
    <tile gid="34"/>
@@ -196,7 +196,7 @@
    <tile gid="67"/>
    <tile gid="67"/>
    <tile gid="113"/>
-   <tile gid="113"/>
+   <tile gid="98"/>
    <tile gid="113"/>
    <tile gid="227"/>
    <tile gid="80"/>
@@ -2472,7 +2472,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="7" name="Map Change 5" width="20" height="20" visible="0">
+ <layer id="7" name="Map Change 5" width="20" height="20">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="5"/>
@@ -2717,7 +2717,7 @@
    <tile/>
    <tile/>
    <tile/>
-   <tile gid="130"/>
+   <tile gid="98"/>
    <tile gid="98"/>
    <tile/>
    <tile/>

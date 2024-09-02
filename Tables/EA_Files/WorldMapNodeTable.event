@@ -1,0 +1,182 @@
+#define setAlternateChapter(nodeID,eid,chTrue,destTrue1,destTrue2) "PUSH; ORG (WorldMapNodeList+(nodeID*0x20)+5); BYTE chTrue; SHORT eid; ORG (WorldMapNodeList+(nodeID*0x20)+10); BYTE destTrue1 destTrue2; POP"
+#define setParalogue(nodeID,eid) "PUSH; ORG (WorldMapNodeList+(nodeID*0x20)+6); SHORT eid; WORD 0xFFFFFFFF; ORG (WorldMapNodeList+(nodeID*0x20)+31); BYTE True; POP"
+#define setShopsPtr(nodeID,armoryPtr,shopPtr,secretPtr) "PUSH; ORG (WorldMapNodeList+(nodeID*0x20)+12); POIN armoryPtr shopPtr secretPtr; POP"
+
+#define WorldMapNodeEntry(icon,chapterID, nextDest, xPos,yPos,nameStr,boatFlag) "BYTE 0x0 0x1 icon icon chapterID chapterID; SHORT 0xFFFF; BYTE nextDest nextDest nextDest nextDest; POIN NoShop NoShop NoShop; SHORT xPos yPos nameStr; BYTE boatFlag 0"
+#define NoShop $A3EFB4
+
+#define WorldMapNodeEntry(icon,chapterID, conditionalFlag, nextDest1, nextDest2, xPos,yPos,nameStr,boatFlag) "BYTE 0x0 0x1 icon icon chapterID chapterID; SHORT conditionalFlag; BYTE nextDest1 nextDest1 nextDest2 nextDest2; POIN NoShop NoShop NoShop; SHORT xPos yPos nameStr; BYTE boatFlag 0"
+
+
+//Node Locations
+//initial location is not an actual chapter
+#define GMLoc_Linoras 0x0
+#define GMLoc_Ch1 0x1
+#define GMLoc_Ch2 0x2
+#define GMLoc_Ch3 0x3
+#define GMLoc_Ch4 0x4
+#define GMLoc_Ch5 0x5
+#define GMLoc_Ch5x 0x6
+//freyse arc
+#define GMLoc_Ch6 0x7
+#define GMLoc_Ch7 0x8
+#define GMLoc_Ch8 0x9
+#define GMLoc_Ch9 0xA
+#define GMLoc_Ch10 0xB
+#define GMLoc_Ch11 0xC
+#define GMLoc_Ch12 0xD
+#define GMLoc_Ch12x 0xE
+#define GMLoc_Ch13 0xF
+// mahemen arc
+
+//Node Icon Types
+#define WMRedClassicCastle 0x0
+#define WMRedBoxCastle 0x1
+#define WMBlueBoxCastle 0x2
+#define WMSmallCastle 0x5
+#define WMBlueChurchCastle 0x6
+#define WMPyramid 0x7
+#define WMRedFort 0x8
+#define WMSmallForestVillage 0x9
+#define WMSmallVillage 0xA
+#define WMFort 0xB
+#define WMForestRuins 0xC
+#define WMTower 0xD
+#define WMTemple 0xE
+#define WMBluePoint 0xF
+
+PUSH
+ORG $BE84
+POIN WorldMapNodeList
+ORG $BED0
+POIN WorldMapNodeList
+ORG $BF9C
+POIN WorldMapNodeList
+ORG $C04C
+POIN WorldMapNodeList
+ORG $CB44
+POIN WorldMapNodeList
+ORG $B8CBC
+POIN WorldMapNodeList
+ORG $B8D2C
+POIN WorldMapNodeList
+ORG $B9070
+POIN WorldMapNodeList
+ORG $B9310
+POIN WorldMapNodeList
+ORG $B93C8
+POIN WorldMapNodeList
+ORG $B9618
+POIN WorldMapNodeList
+ORG $B96D0
+POIN WorldMapNodeList
+ORG $B9B74
+POIN WorldMapNodeList
+ORG $B9CAC
+POIN WorldMapNodeList
+ORG $B9D78
+POIN WorldMapNodeList
+ORG $B9E3C
+POIN WorldMapNodeList
+ORG $BB5D0
+POIN WorldMapNodeList
+ORG $BB5E0
+POIN WorldMapNodeList
+ORG $BB614
+POIN WorldMapNodeList
+ORG $BB66C
+POIN WorldMapNodeList
+ORG $BB7F0
+POIN WorldMapNodeList
+ORG $BB8D8
+POIN WorldMapNodeList
+ORG $BBA48
+POIN WorldMapNodeList
+ORG $BC6A0
+POIN WorldMapNodeList
+ORG $BC6D8
+POIN WorldMapNodeList
+ORG $BC71C
+POIN WorldMapNodeList
+ORG $BCF04
+POIN WorldMapNodeList
+ORG $BCFB0
+POIN WorldMapNodeList
+ORG $BD1E8
+POIN WorldMapNodeList
+ORG $BD370
+POIN WorldMapNodeList
+ORG $BD3E4
+POIN WorldMapNodeList
+ORG $BD5A0
+POIN WorldMapNodeList
+ORG $BD9D0
+POIN WorldMapNodeList
+ORG $BDA74
+POIN WorldMapNodeList
+ORG $BDFA0
+POIN WorldMapNodeList
+ORG $BE290
+POIN WorldMapNodeList
+ORG $BE3E4
+POIN WorldMapNodeList
+ORG $BEA10
+POIN WorldMapNodeList
+ORG $BFA44
+POIN WorldMapNodeList
+ORG $BFA6C
+POIN WorldMapNodeList
+ORG $BFAE0
+POIN WorldMapNodeList
+ORG $C1A48
+POIN WorldMapNodeList
+ORG $C1B58
+POIN WorldMapNodeList
+ORG $C37F8
+POIN WorldMapNodeList
+ORG $C3FB0
+POIN WorldMapNodeList
+ORG $C3FDC
+POIN WorldMapNodeList
+ORG $C4008
+POIN WorldMapNodeList
+POP
+
+
+//#define WorldMapNodeEntry(preClearIcon, postClearIcon,chapterID, nextDest, xPos,yPos,nameStr,boatFlag) "BYTE 0x0 0x1 preClearIcon postClearIcon chapterID chapterID; SHORT 0xFFFF; BYTE nextDest nextDest nextDest nextDest; POIN NoShop NoShop NoShop; SHORT xPos yPos nameStr; BYTE boatFlag 0"
+
+
+ALIGN 4
+WorldMapNodeList:
+//GMLoc_Linoras (not a real chapter?)
+WorldMapNodeEntry(WMBlueChurchCastle, Chapter1, 0x89, GMLoc_Linoras, GMLoc_Ch1, 333, 117, GMLoc_Linoras_Name,0)
+//GMLoc_Ch1
+WorldMapNodeEntry(WMBlueChurchCastle, Chapter2, GMLoc_Ch2, 332, 117, Chapter1Title,0)
+//GMLoc_Ch2
+WorldMapNodeEntry(WMBlueChurchCastle, Chapter3, GMLoc_Ch3, 331, 117, Chapter2Title,0)
+//GMLoc_Ch3
+WorldMapNodeEntry(WMBluePoint, Chapter4, GMLoc_Ch4, 333, 144, Chapter3Title,0)
+//GMLoc_Ch4
+WorldMapNodeEntry(WMSmallVillage, Chapter5, GMLoc_Ch5, 327, 157, Chapter4Title,0)
+//GMLoc_Ch5
+WorldMapNodeEntry(WMSmallVillage, Ch5xInterlude, GMLoc_Ch5x, 304, 159, Chapter5Title,1)
+//GMLoc_Ch5x
+WorldMapNodeEntry(WMFort, Chapter6, GMLoc_Ch6, 294, 194, Ch5xTitle,1)
+//GMLoc_Ch6
+WorldMapNodeEntry(WMSmallVillage, Chapter7, GMLoc_Ch7, 356, 204, Chapter6Title,0)
+//GMLoc_Ch7
+WorldMapNodeEntry(WMFort, Chapter8, GMLoc_Ch8, 388, 178, Chapter7Title,0)
+//GMLoc_Ch8
+WorldMapNodeEntry(WMFort, Chapter9, GMLoc_Ch8, 388, 178, Chapter8Title,0)
+//GMLoc_FreysianVillage (Ch 9)
+WorldMapNodeEntry(WMBluePoint, Chapter10, GMLoc_Ch9, 388, 163, Chapter9Title,0)
+//GMLoc_CastleFreyse (Ch 10)
+WorldMapNodeEntry(WMRedClassicCastle, Chapter11, GMLoc_Ch10, 379, 155, Chapter10Title,0)
+//GMLoc_CastleSeleseTunnel (Ch 11)
+WorldMapNodeEntry(WMBluePoint, Chapter12, GMLoc_Ch11, 338, 124, Ch11Title,0)
+//GMLoc_CastleSeleseCourtyard (Ch 12)
+WorldMapNodeEntry(WMBlueChurchCastle, Ch12xInterlude, GMLoc_Ch12, 333, 118, Chapter12Title,0)
+//GMLoc_CastleSeleseInterlude (Ch 12x)
+WorldMapNodeEntry(WMBlueChurchCastle, Chapter13, GMLoc_Ch12x, 332, 118, Ch12xTitle,0)
+
+//rest i will fill out later

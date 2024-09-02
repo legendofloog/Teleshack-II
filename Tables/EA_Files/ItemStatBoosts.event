@@ -149,7 +149,7 @@ StatBonus(0,0,0,0,0,2,0,0,0,0)
 ALIGN 4
 GrowthScrollBonusesTable:
 GrowthBonus(0,0,0,0,0,0,0,0,0,0)          // 0x0 - Nothing
-GrowthBonus(0,15,0,15,0,0,0,15,0,0)    // 0x1 - Beiyr
+GrowthBonus(0,20,0,20,0,0,0,20,0,0)    // 0x1 - Beiyr
 GrowthBonus(20,0,0,0,(-10),20,0,0,0,10) // 0x2 - Zykhra
 GrowthBonus((-15),0,10,15,20,0,0,0,0,0) // 0x3 - Raio
 GrowthBonus(50,0,0,0,0,0,0,30,0,0) // 0x4 - Luzen

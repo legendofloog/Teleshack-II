@@ -1,0 +1,6 @@
+WorldMapIntroPointerTable(Chapter2,Intro)
+
+Intro:
+EVBIT_MODIFY 1
+ENUT 0x89
+ENDA

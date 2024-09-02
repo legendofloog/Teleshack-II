@@ -1,0 +1,7 @@
+WorldMapPointerTable(Chapter2,WM_Events) //always make these 1 higher than they are
+
+WM_Events:
+_0xC220
+EVBIT_MODIFY 1
+SKIPWN
+ENDA

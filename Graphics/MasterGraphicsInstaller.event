@@ -17,6 +17,7 @@
 #include "Menu Tiles/Installer.event"
 #include "TitleMenuBoB/TitleMenu.event"
 #include "EndingMenuTiles/Installer.event"
+#include "WorldMap/MasterWorldMapInstaller.event"
 
 PUSH
 ORG $5A2DDC

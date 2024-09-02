@@ -294,3 +294,5 @@ Do you want to Escape?[N]
 [No][X]
 
 #include "finalbattlequotes.txt"
+
+#include "CharClassItemsEtc/WorldMapNames.txt"

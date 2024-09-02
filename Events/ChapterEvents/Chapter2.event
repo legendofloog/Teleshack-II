@@ -15,8 +15,8 @@ PointerList:
 TurnBasedEvents:
 TurnEventPlayer(0, TutorialTime2, 1)
 TurnEventPlayer(12, Turn3Spawn, 3)
-TurnEventPlayer(13, BoroSpawn, 7)
-TurnEventPlayer(14, BoroWarning, 6)
+TurnEventPlayer(13, BoroSpawn, 8)
+TurnEventPlayer(14, BoroWarning, 7)
 TurnEventPlayer(20, Turn5Spawn, 5)
 END_MAIN
 
@@ -150,7 +150,7 @@ UNIT Boro_Ch1 Halberdier 0x00 Level(5,Enemy,False) [1,0] 0x0 0x0 0x1 REDA1R0 [Im
 UNIT
 
 OpeningCutsceneUnits:
-UNIT Varga SwordArmor           Cleo Level(5,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [LongSword,Vulnerary, DoorKey] NoAI // moves to 1,2
+UNIT Varga SwordArmor           Cleo Level(5,Enemy,False) [2,3] 0x0 0x0 0x0 0x1 [LongSword,ShortSword, Vulnerary, DoorKey] NoAI // moves to 1,2
 UNIT Ch2_Selese_Guy LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [1,3] 0x0 0x0 0x0 0x0 [IronLance, DoorKey, ChestKey] NeverMoveAI
 UNIT
 

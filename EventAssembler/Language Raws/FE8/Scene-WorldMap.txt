@@ -281,3 +281,9 @@ WM_TEXT, 0xC640, 8, -game:FE8 -indexMode:8
 WM_TEXTSTART, 0xC720, 4, -game:FE8 -indexMode:8
 
 WM_REMOVETEXT, 0xC920, 4, -game:FE8 -indexMode:8
+
+#Name from FEBuilder; there might be newer raws somewhere
+WM_SETNEXTLOCATION, 0xA640, 8, -game:FE8 -indexMode:8
+	Value1, 2, 2
+	Value2, 4, 2
+	Location, 6, 2

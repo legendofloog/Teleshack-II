@@ -1,0 +1,6 @@
+WorldMapIntroPointerTable(Chapter3,Intro) //always make these 1 higher than they are
+
+Intro:
+EVBIT_MODIFY 1
+ENUT 0x89
+ENDA

@@ -1,0 +1,6 @@
+WorldMapPointerTable(Chapter3,WM_Events) 
+
+WM_Events:
+EVBIT_MODIFY 1
+SKIPWN
+ENDA

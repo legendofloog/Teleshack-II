@@ -163,3 +163,5 @@ SongTable(ChaosAngelAct3ID,ChaosAngelAct3,MapMusicGroup)
 SongTable(DenpaMen2PalaceID,DenpaMen2Palace,MapMusicGroup)
 #include "MusicEvents/Trails in the Sky - Hollow Light of the Sealed Land (RandomWizard).event"
 SongTable(HollowLightOfTheSealedLandID, HollowLightOfTheSealedLand, MapMusicGroup)
+#include "MusicEvents/Final Fantasy 6 - Under Martial Law (TrikkiNikki).event"
+SongTable(FF6MartialLawID, MartialLawFin_FINAL, MapMusicGroup)

@@ -2,3 +2,24 @@
 //8A99140
 //8A9E4C4
 //8A9DF74
+
+PUSH //small world map
+ORG 0xA99140
+#incbin "BoBWorldMapInsertable.png.dmp"
+ORG 0xA9E4C4
+#incbin "BoBWorldMapInsertable.png.pal.dmp"
+ORG 0xA9DF74
+#incbin "BoBWorldMapInsertable.png.tsa.dmp"
+POP
+
+PUSH //big world map
+ORG 0xA83364
+#incbin "BoBWorldMapNew.dmp"
+ORG 0xA95F64 //dark palette?
+#incbin "BoBWorldMapNew_pal.dmp"
+ORG 0xA95FE4 //light palette?
+#incbin "BoBWorldMapNew_pal.dmp"
+ORG 0xa96064 // the palette map
+#incbin "WorldMap_NewPaletteMap.dmp"
+POP
+

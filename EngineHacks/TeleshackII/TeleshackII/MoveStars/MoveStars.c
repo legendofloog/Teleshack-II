@@ -46,10 +46,10 @@ bool IsReMoveAllowed(Unit* unit){
 	if (gActionData.unitActionType == UNIT_ACTION_SEIZE){
 		return false;
 	}
-	if (GetLocationEventCommandAt(unit->xPos, unit->yPos) != 0x13 && gActionData.unitActionType == UNIT_ACTION_WAIT){ //escape point
+	if (GetLocationEventCommandAt(unit->xPos, unit->yPos) == 0x13 && gActionData.unitActionType == UNIT_ACTION_WAIT){ //escape point, escaped
 		return false;
 	}
-	if (GetLocationEventCommandAt(unit->xPos, unit->yPos) != 0x19 && gActionData.unitActionType == UNIT_ACTION_WAIT){ //arrive point
+	if (GetLocationEventCommandAt(unit->xPos, unit->yPos) == 0x19 && gActionData.unitActionType == UNIT_ACTION_WAIT){ //arrive point, arrived
 		return false;
 	}
 	return true;

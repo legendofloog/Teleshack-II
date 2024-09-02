@@ -1,6 +1,6 @@
 #include "gbafe.h"
 
-typedef uintptr_t EventScr;
+//typedef uintptr_t EventScr;
 
 s8 CheckEventId_(u16 triggerId);
 void SetPidDefeatedFlag(u8 pid, int flag);
@@ -15,37 +15,42 @@ struct DefeatTalkEnt {
     /* 04 */ u16 captureFlag;
     /* 06 */ u16 deathMsg;
     /* 08 */ u16 captureMsg;
-    /* 0A */ EventScr * event;
 };
 
 extern struct DefeatTalkEnt DeathQuoteTable[];
 
 struct DefeatTalkEnt* GetCharDeathQuoteEntry(u8 pid) {
-    struct DefeatTalkEnt* it;
-
-    for (it = DeathQuoteTable; it->pid != 0xFF; it++)
+    struct DefeatTalkEnt it;
+    int i = 0;
+    it = DeathQuoteTable[i];
+    while (it.pid != 0xFF)
     {
-        if ((it->chapter != 0xff) && (it->chapter != gChapterData.chapterIndex))
+        it = DeathQuoteTable[i];
+        if ((it.chapter != 0xff) && (it.chapter != gChapterData.chapterIndex))
         {
-            continue;
+            i++;
+            continue; //if chapter is not all, and not chapter right now
         }
 
-        if (CheckEventId_(it->deathFlag) != 0)
+        if (CheckEventId_(it.deathFlag) != 0)
         {
-            continue;
+            i++;
+            continue; //if event id for death or capture is already set. say no
         }
 
-        if (CheckEventId_(it->captureFlag) != 0)
+        if (CheckEventId_(it.captureFlag) != 0)
         {
-            continue;
+            i++;
+            continue; //if event id for death or capture is already set. say no
         }
 
-        if (pid != it->pid)
+        if (pid != it.pid)
         {
-            continue;
+            i++;
+            continue; //if unit id here is not correct unit id, skip
         }
 
-        return it;
+        return (&DeathQuoteTable[i]);
     }
 
     return NULL;
@@ -58,11 +63,11 @@ s8 ShouldDisplayDeathQuoteForChar(u8 pid) {
 
     if (ent)
     {
-        if (ent->deathMsg == 0 && ent->event == 0)
+        if (ent->deathMsg == 0) //if no death msg
         {
             if (gBattleActor.unit.state & US_CAPTURE && gBattleTarget.unit.pCharacterData->number == pid)
             {
-                SetPidDefeatedFlag(pid, ent->captureFlag);
+                SetPidDefeatedFlag(pid, ent->captureFlag); //set the flags
             }
             else
             {
@@ -108,10 +113,7 @@ void DisplayDeathQuoteForChar(u8 pid) {
         }
         else
         {
-            if (ent->event)
-            {
-                StartBattleEventEngine((u16 *)ent->event);
-            }
+
         }
 
         if (gBattleActor.unit.state & US_CAPTURE && gBattleTarget.unit.pCharacterData->number == pid)

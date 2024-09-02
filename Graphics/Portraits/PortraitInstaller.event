@@ -37,10 +37,10 @@ setMugEntry(YoungCleoMug, YoungCleoMugData, 2, 8, 3, 6)
 
 ALIGN 16
 MiraMugData:
-#incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_mug.dmp"
-#incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_frames.dmp"
-#incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_palette.dmp"
-#incbin "Dmp/Mira(Laurent_Lacroix,Levin,RedBean,knabepicer)_minimug.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin, RedBean, knabepicer, dt)_mug.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin, RedBean, knabepicer, dt)_frames.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin, RedBean, knabepicer, dt)_palette.dmp"
+#incbin "Dmp/Mira(Laurent_Lacroix, Levin, RedBean, knabepicer, dt)_minimug.dmp"
 setMugEntryExtend(MiraMug, MiraMugData, 5, 5, 4, 3, 10, 2, 10, 4)
 
 ALIGN 16
@@ -333,10 +333,10 @@ setMugEntry(TobieMug, TobieMugData, 3, 5, 3, 3)
 
 ALIGN 16
 AwaMugData:
-#incbin "Dmp/Awa(Xilirite)_mug.dmp"
-#incbin "Dmp/Awa(Xilirite)_frames.dmp"
-#incbin "Dmp/Awa(Xilirite)_palette.dmp"
-#incbin "Dmp/Awa(Xilirite)_minimug.dmp"
+#incbin "Dmp/Awa(Xilirite, dt)_mug.dmp"
+#incbin "Dmp/Awa(Xilirite, dt)_frames.dmp"
+#incbin "Dmp/Awa(Xilirite, dt)_palette.dmp"
+#incbin "Dmp/Awa(Xilirite, dt)_minimug.dmp"
 setMugEntry(AwaMug, AwaMugData, 5, 5, 5, 3)
 
 ALIGN 16
@@ -405,11 +405,11 @@ setMugEntry(LeonidasMug, LeonidasMugData, 3, 5, 3, 3)
 
 ALIGN 16
 CoraliaMugData:
-#incbin "Dmp/Coralia(Loog)_mug.dmp"
-#incbin "Dmp/Coralia(Loog)_frames.dmp"
-#incbin "Dmp/Coralia(Loog)_palette.dmp"
-#incbin "Dmp/Coralia(Loog)_minimug.dmp"
-setMugEntry(CoraliaMug, CoraliaMugData, 3, 5, 3, 3)
+#incbin "Dmp/Coralia(Levin, Loog)_mug.dmp"
+#incbin "Dmp/Coralia(Levin, Loog)_frames.dmp"
+#incbin "Dmp/Coralia(Levin, Loog)_palette.dmp"
+#incbin "Dmp/Coralia(Levin, Loog)_minimug.dmp"
+setMugEntry(CoraliaMug, CoraliaMugData, 2, 5, 3, 3)
 
 ALIGN 16
 BarodMugData:

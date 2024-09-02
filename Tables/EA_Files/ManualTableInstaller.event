@@ -9,6 +9,9 @@
 #include "EndingsTables.event"
 #include "SupportPointersTable.event"
 #include "SupportConvosTable.event"
+#include "WorldMapNodeTable.event"
+
+
 
 ALIGN 4
 BattleQuoteTable:
@@ -19,10 +22,7 @@ DeathQuoteTable:
 #include "Death_Quote_Table.event"
 
 PUSH
-ORG $8472C
-POIN DeathQuoteTable
-
 ORG $846AC
 POIN BattleQuoteTable
-
 POP
+

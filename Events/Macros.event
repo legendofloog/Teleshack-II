@@ -135,3 +135,22 @@
 #define AttackThenLootAI [0x00, 0x04, 0x04, 0x00]
 #define DoNotAttack07AI [0x07, 0x0A, 0x04, 0x00]
 
+#define WorldMapTextStart(textID) "WM_TEXTDECORATE; WM_SHOWTEXTWINDOW 0x0 0x28 0x1; WM_WAITFORTEXT; FADU 16; WM_TEXTSTART; WM_TEXT textID"
+#define TerminateWorldMapText "TEXTEND; WM_REMOVETEXT"
+#define WorldMapPortraitDisplayRight(portraitID) "WM_SHOWPORTRAIT portraitID 0x2BC"
+#define WorldMapPortraitDisplayLeft(portraitID) "WM_SHOWPORTRAIT portraitID 0x534"
+#define WorldMapClearRightPortrait "WM_CLEARPORTRAIT 0x0 0x1BC 0x0"
+#define WorldMapClearLeftPortrait "WM_CLEARPORTRAIT 0x0 0x634 0x0"
+#define LoadWorldMapLocation(node) "WM_LOADLOCATION2 0 node 0"
+#define RemoveWorldMapLocation(node) "WM_REMOVELOCATION 0 node 0"
+#define WorldMapPlaceDot(color,node, effect) "PLACEDOT color node effect"
+
+#define WMCenterCameraOnLord "WM_CENTERCAMONLORD; WM_WAITFORCAM"
+#define WMSpawnSprite(id, classId, allegiance, node) "PUTSPRITE id classId allegiance node"
+#define WMMoveSprite(id, acceleration, xStart, yStart, xEnd, yEnd, time, flags, delay) "WM_PUTMOVINGSPRITE 0 id acceleration xStart yStart xEnd yEnd time flags delay 0"
+#define WMMoveSprite(id, location1, location2) "WM_MOVESPRITETO 0 0 id location1 location2 0xFFF9 0"
+#define WMShowSprite(id) "WM_MAKELORDVISIBLE id"
+#define WMWaitForSprites "WM_WAITFORSPRITES 0 0xFFFF 0xFFFF"
+#define WMRemoveSprite(id) "REMSPRITE id"
+#define WMMoveCam2 "WM_MOVECAM2 0 0 0 0 16 0 0"
+#define WMMoveCamTo(xPos, yPos, location, delay) "WM_MOVECAMTO xPos yPos location 0x20 delay; WM_WAITFORCAM"

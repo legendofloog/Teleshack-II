@@ -1,0 +1,33 @@
+//World Map Events Installer
+//#define WorldMapPointerTable(id,offset) "PUSH; ORG 0x8B39F0+(4*id); POIN offset; POP"
+// #define WorldMapIntroPointerTable(id,offset) "PUSH; ORG 0x8B3ad8+(4*id); POIN offset; POP"
+{
+  ALIGN 4
+  #include "Chapter01_WM.event"
+}
+{
+  ALIGN 4
+  #include "Chapter02_WM.event"
+}
+{
+  ALIGN 4
+  #include "Chapter02_WM2.event"
+}
+{
+  ALIGN 4
+  #include "Chapter03_WM.event"
+}
+{
+  ALIGN 4
+  #include "Chapter03_WM2.event"
+}
+{
+  ALIGN 4
+  #include "Chapter04_WM.event"
+}
+{
+  ALIGN 4
+  #include "Chapter04_WM2.event"
+}
+ALIGN 4
+// #include "EpilogueEvents.event"

@@ -1,2 +1,5 @@
 #define GiveItemToCharacter(char, item) "_SETVAL 3 item; GIVEITEMTO char"
 #define CauseGameOverIfLordDies "AFEV 0 GameOverStart 0x65"
+
+#define DeathQuote(Character,Chapter,EventID,TextID) "BYTE Character; BYTE Chapter; SHORT EventID EventID TextID TextID"
+#define CaptureQuote(Character,Chapter,DeathEID,CaptureEID, DeathTextID, CaptureTextID) "BYTE Character Chapter; SHORT DeathEID CaptureEID DeathTextID CaptureTextID"
