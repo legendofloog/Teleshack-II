@@ -15,7 +15,7 @@ TEXTEND //display loewe
 STAL 30
 WMSpawnSprite(0x2, Scaleshot_Dismounted, 0, GMLoc_Ch2)
 WM_MAKELORDVISIBLE 2
-WorldMapPortraitDisplayRight(LoeweMug)
+WorldMapPortraitDisplayRight(LoeweSadMug)
 TEXTCONT
 TEXTEND //erase loewe and display cleo
 WorldMapClearRightPortrait

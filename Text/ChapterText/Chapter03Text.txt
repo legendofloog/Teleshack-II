@@ -619,32 +619,24 @@ so I'll return to my wife.[N]
 [Beat]Thank you for your mercy.[A][X]
 
 ## EndingSceneTextA1
-[FarLeft][LoadDragana][Left][LoadMira][Right][LoadCleo][FarRight][LoadLoewe]
-[FarLeft][TwoLineBox]
-Gods, so much running[Beat][N]
-If only I was bit younger[Beat][AN]
-[Left]
-We're almost there.[N]
-The exit is just ahead![A]
-[FarFarLeft][OneLineBox]
-[Beat]Where do you think you're going?[A][X]
-
-
-
-
-## EndingSceneTextA1B
-
 [MidLeft][LoadDragana][Right][LoadCleo][FarRight][LoadLoewe]
 [FarLeft][TwoLineBox]
 Gods, so much running[Beat][N]
-If only I was bit younger[Beat][AN]
+Sorry, give me a second.[Beat][AN]
 [FarRight]
-We're almost there.[N]
-The exit is just ahead![A]
+The rest of us could use a break, too,[N]
+so nothing wrong with a breather, right?[AN]
+[Right]
+Perhaps, but we can't take too long.[AN]
+General Dragana, can you still stand?[N]
+If not, Loewe and I can carry-[A]
+[MidLeft]
+No, that's not necessary. The slop they[N]
+serve here slowed me down a bit, is all.[AN]
+[Beat]But if I was just a few years[N]
+younger, we'd be free and-[A]
 [FarFarLeft][OneLineBox]
-[Beat]Where do you think you're going?[A][X]
-
-
+[Beat]Clear? I don't think so.[A][X]
 
 
 ## EndingSceneTextA2
@@ -669,7 +661,7 @@ Being a Liberator was her choice, Cidor.[N]
 Besides, she's not YOUR daughter,[N]
 not after everything you've thrown away.[AN]
 You decided that being a lapdog[N]
-to Cythes was worth more than[N]
+to Cythes was more important than[N]
 your family[Beat] Was it worth it?[AN]
 
 [MidLeft]
@@ -700,15 +692,15 @@ Cythes stomp all over us?[AN]
 Just that you might become[N]
 their favourite pet?[A]
 
-[MidLeft][ThreeLineBox]
+[MidLeft][TwoLineBox]
 You know nothing of what[N]
-I work towards. Why I do this![N]
-But enough, general. This ends here.[AN]
+I work towards. Why I do this![AN]
+But enough, general. This ends here.[N]
 Your [OpenQuote]liberation" shall die with you.[A]
 
-[FarRight][TwoLineBox]
-Pah, like I'd fall to[N]
-traitorous swine like you![A][X]
+[FarRight]
+Pah, like I'd die at the hands[N]
+of traitorous swine like you![A][X]
 
 
 
@@ -753,18 +745,18 @@ yourself stand in our way.[A]
 Even if that amounts to killing[N]
 your own countrymen? Letting[N]
 Cythes stomp all over us?[AN]
-Just that you might become[N]
+Just so you might become[N]
 their favourite pet?![A]
 
-[MidLeft][ThreeLineBox]
+[MidLeft][TwoLineBox]
 You know nothing of what[N]
-I work towards. Why I do this![N]
-But enough, Kasun. This ends here.[AN]
+I work towards. Why I do this![AN]
+But enough, Kasun. This ends here.[N]
 Your [OpenQuote]liberation" shall die with you.[A]
 
-[MidRight][TwoLineBox]
-Pah, like I'd fall to[N]
-traitorous swine like you![A][X]
+[MidRight]
+Pah, like I'd die at the hands[N]
+of traitorous swine like you![A][X]
 
 ## EndingSceneTextA3
 [MidLeft][LoadCidor][CloseEyes][MidRight][LoadDragana][CloseEyes]

@@ -149,7 +149,7 @@ POP
 ALIGN 4
 WorldMapNodeList:
 //GMLoc_Linoras (not a real chapter?)
-WorldMapNodeEntry(WMBlueChurchCastle, Chapter1, 0x89, GMLoc_Linoras, GMLoc_Ch1, 333, 117, GMLoc_Linoras_Name,0)
+WorldMapNodeEntry(WMBlueChurchCastle, Chapter1, GMLoc_Ch1, 333, 117, GMLoc_Linoras_Name,0)
 //GMLoc_Ch1
 WorldMapNodeEntry(WMBlueChurchCastle, Chapter2, GMLoc_Ch2, 332, 117, Chapter1Title,0)
 //GMLoc_Ch2

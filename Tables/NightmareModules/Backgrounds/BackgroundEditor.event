@@ -1,0 +1,72 @@
+#define _C2EA_BackgroundEditor(arg000,arg001,arg002) "WORD arg000 arg001 arg002 "
+
+PUSH
+ORG $E894
+POIN ConvoBackgroundTable
+ORG $ECF4
+POIN ConvoBackgroundTable
+ORG $EDF8
+POIN ConvoBackgroundTable
+ORG $10E44
+POIN ConvoBackgroundTable
+POP
+ALIGN 4
+ConvoBackgroundTable:
+_C2EA_BackgroundEditor(0x88d2700,0x88d5d24,0x88d61d8)
+_C2EA_BackgroundEditor(0x88d62d8,0x88d9ff4,0x88da4a8)
+_C2EA_BackgroundEditor(0x88da5a8,0x88dd8f4,0x88ddda8)
+_C2EA_BackgroundEditor(0x88ddea8,0x88e0e20,0x88e12d4)
+_C2EA_BackgroundEditor(0x88ddea8,0x88e0e20,0x88e13d4)
+_C2EA_BackgroundEditor(0x88e14d4,0x88e5340,0x88e57f4)
+_C2EA_BackgroundEditor(0x88e14d4,0x88e5340,0x88e58f4)
+_C2EA_BackgroundEditor(0x88e59f4,0x88e81ac,0x88e8660)
+_C2EA_BackgroundEditor(0x88e8760,0x88eb6c8,0x88ebb7c)
+_C2EA_BackgroundEditor(0x88ebc7c,0x88ee960,0x88eee14)
+_C2EA_BackgroundEditor(0x88eef14,0x88f0b58,0x88f100c)
+_C2EA_BackgroundEditor(0x88eef14,0x88f0b58,0x88f110c)
+_C2EA_BackgroundEditor(0x88f120c,0x88f5af4,0x88f5fa8)
+_C2EA_BackgroundEditor(0x88f120c,0x88f5af4,0x88f60a8)
+_C2EA_BackgroundEditor(0x88f61a8,0x88f9598,0x88f9a4c)
+_C2EA_BackgroundEditor(0x88f61a8,0x88f9598,0x88f9b4c)
+_C2EA_BackgroundEditor(0x88f9c4c,0x88fb350,0x88fb804)
+_C2EA_BackgroundEditor(0x88f9c4c,0x88fb350,0x88fb904)
+_C2EA_BackgroundEditor(0x88fba04,0x88fd424,0x88fd8d8)
+_C2EA_BackgroundEditor(0x88fd9d8,0x89018a0,0x8901d54)
+_C2EA_BackgroundEditor(0x88fd9d8,0x89018a0,0x8901e54)
+_C2EA_BackgroundEditor(0x8901f54,0x8904dec,0x89052a0)
+_C2EA_BackgroundEditor(0x8901f54,0x8904dec,0x89053a0)
+_C2EA_BackgroundEditor(0x89054a0,0x890792c,0x8907de0)
+_C2EA_BackgroundEditor(0x8907ee0,0x8909c64,0x890a118)
+_C2EA_BackgroundEditor(0x8907ee0,0x8909c64,0x890a218)
+_C2EA_BackgroundEditor(0x8907ee0,0x8909c64,0x890a318)
+_C2EA_BackgroundEditor(0x890a418,0x890c7d4,0x890cc88)
+_C2EA_BackgroundEditor(0x890cd88,0x890e7e8,0x890ec9c)
+_C2EA_BackgroundEditor(0x890ed9c,0x8912060,0x8912514)
+_C2EA_BackgroundEditor(0x890ed9c,0x8912060,0x8912614)
+_C2EA_BackgroundEditor(0x890ed9c,0x8912060,0x8912714)
+_C2EA_BackgroundEditor(0x890ed9c,0x8912060,0x8912814)
+_C2EA_BackgroundEditor(0x8912914,0x8914cb8,0x891516c)
+_C2EA_BackgroundEditor(0x891526c,0x89195bc,0x8919a70)
+_C2EA_BackgroundEditor(0x8919b70,0x891e9d4,0x891ee88)
+_C2EA_BackgroundEditor(0x891ef88,0x8922974,0x8922e28)
+_C2EA_BackgroundEditor(0x8922f28,0x89260e8,0x892659c)
+_C2EA_BackgroundEditor(0x892669c,0x8929210,0x89296c4)
+_C2EA_BackgroundEditor(0x892669c,0x8929210,0x89297c4)
+_C2EA_BackgroundEditor(0x89298c4,0x892d5e4,0x892da98)
+_C2EA_BackgroundEditor(0x892db98,0x893226c,0x8932720)
+_C2EA_BackgroundEditor(0x8932820,0x8937134,0x89375e8)
+_C2EA_BackgroundEditor(0x89376e8,0x893c47c,0x893c930)
+_C2EA_BackgroundEditor(0x893ca30,0x893f1d4,0x893f688)
+_C2EA_BackgroundEditor(0x893ca30,0x893f1d4,0x893f788)
+_C2EA_BackgroundEditor(0x893f888,0x8942b38,0x8942fec)
+_C2EA_BackgroundEditor(0x89430ec,0x8947398,0x894784c)
+_C2EA_BackgroundEditor(0x894794c,0x8949f70,0x894a424)
+_C2EA_BackgroundEditor(0x894a524,0x894eef8,0x894f3ac)
+_C2EA_BackgroundEditor(0x894f4ac,0x8953538,0x89539ec)
+_C2EA_BackgroundEditor(0x8953aec,0x89584a4,0x8958958)
+_C2EA_BackgroundEditor(0x8958a58,0x895d1a8,0x895d65c)
+_C2EA_BackgroundEditor(BlackBackgroundImage|IsPointer,BlackBackgroundTSA|IsPointer,BlackBackgroundPal|IsPointer)
+_C2EA_BackgroundEditor(0x895d75c,0x895d768,0x895dc1c)
+_C2EA_BackgroundEditor(0x895d75c,0x895d768,0x895dc1c)
+_C2EA_BackgroundEditor(OrodrethMapImage|IsPointer,OrodrethMapTSA|IsPointer,OrodrethMapPal|IsPointer)
+_C2EA_BackgroundEditor(0x00ffffff,0x0,0x0)

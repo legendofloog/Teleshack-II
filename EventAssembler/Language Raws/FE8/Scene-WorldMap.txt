@@ -287,3 +287,16 @@ WM_SETNEXTLOCATION, 0xA640, 8, -game:FE8 -indexMode:8
 	Value1, 2, 2
 	Value2, 4, 2
 	Location, 6, 2
+
+## Set a stationary sprite at a map location
+WM_DRAWSPRITEAT, 0xC360, 12, -game:FE8 -indexMode:8
+	0x00, 2, 2, -fixed
+	Actor ID, 4, 2
+	Character ID, 6, 2
+	World map location, 8, 2
+	0x00, 10, 2, -fixed
+
+## Instantly reposition an existing sprite onto a given location.
+WM_SETSPRITELOCATION, 0xA640, 8, -game:FE8 -indexMode:8
+	ID, 4, 2
+	World map location, 6, 2

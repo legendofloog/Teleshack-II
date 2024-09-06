@@ -525,3 +525,19 @@ CromarMorbingStanding:
 ALIGN 4
 CromarMorbingMoving:
 #incbin "Dmp/cromarmove (ArcherBias).dmp"
+
+ALIGN 4
+DragonStanding:
+#incbin "Dmp/Wyvern Wild (U) {Faeriefruit}-stand.dmp"
+
+ALIGN 4
+DragonWalking:
+#incbin "Dmp/Wyvern Wild (U) {Faeriefruit}-walk.dmp"
+
+ALIGN 4
+PegasusStanding:
+#incbin "Dmp/pegasus standing {N426}.dmp"
+
+ALIGN 4
+PegasusWalking:
+#incbin "Dmp/pegasus moving {N426}.dmp"

@@ -3,6 +3,8 @@
 
 // I'm sorry this took this long
 
+#define UnitForgetSkill(skillId, charId) "SVAL s1 skillId; SVAL s2 charId; ASMC (ASMC_ForgetSkill|1)"
+
 // Things to know:
 /*
 	I changed the skill adding routine to set the short at 0202BCDE to (0x8000 | SkillID) when trying to learn a skill but the unit ran out of slots.

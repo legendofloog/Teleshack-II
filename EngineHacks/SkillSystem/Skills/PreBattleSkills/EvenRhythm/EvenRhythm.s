@@ -6,7 +6,7 @@ mov	r4, r0 @attacker
 mov	r5, r1 @defender
 
 @check if turn is even
-ldr	r0,=#0x202BCF0
+ldr	r0,=0x202BCF0
 ldrh	r0, [r0,#0x10]
 mov	r1, #0x01
 and	r0, r1
@@ -25,12 +25,22 @@ beq	End
 @add 10 to hit and avoid
 mov	r0, #0x60
 ldrh	r1, [r4,r0]	@load hit
-add	r1, #0x0A	@add 20 to hit
+add	r1, #0x0A	@add 10 to hit
 strh	r1, [r4,r0]     @store
 
 mov	r0, #0x62
 ldrh	r1, [r4,r0]	@load avoid
-add	r1, #0x0A	@add 20 to avoid
+add	r1, #0x0A	@add 10 to avoid
+strh	r1, [r4,r0]     @store
+
+mov	r0, #0x66
+ldrh	r1, [r4,r0]	@load crit
+add	r1, #0x0A	@add 10 to crit
+strh	r1, [r4,r0]     @store
+
+mov 	r0, #0x68
+ldrh	r1, [r4,r0]	@load crit avoid
+add	r1, #0x0A	@add 10 to crit avoid
 strh	r1, [r4,r0]     @store
 
 End:

@@ -101,7 +101,7 @@
   ST_Vigor:
     RMenu(ST_Lead,ST_Ftg,ST_Luck,0,0xa6,0x58,VigorRText)
   ST_Ftg:
-    RMenu(ST_Vigor,ST_Skill6,ST_Def,0,0xa6,0x68,SS_FatigueRText)
+    RMenu(ST_Vigor,ST_Skill1,ST_Def,0,0xa6,0x68,SS_FatigueRText)
 
   //below both of these
   ST_Skill1:

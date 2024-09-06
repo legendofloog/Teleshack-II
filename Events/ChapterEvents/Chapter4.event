@@ -12,43 +12,47 @@ PointerList:
 	POIN $0 $0 $0
 	POIN BeginningScene EndingScene
 
+
+
+
+//8-11 - some battle quotes
+
 TurnBasedEvents:
 TurnEventPlayer(0, OhNoWTF, 1)
-TurnEventPlayer(0, HolyShitItIsDream, 2)
-//TurnEventPlayer(0, IWearAMaskWithASmile, 3)
 TurnEventPlayer(0, ForHoursAtATime, 4)
 TurnEventPlayer(0, StareAtTheCeiling, 5)
-TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 6)
-TurnEventPlayer(0, AndWhenTheyAskMeHow, 7)
-TurnEventPlayer(0, ImDoingISayImJustFine, 8)
-TurnEventPlayer(0, AmongUsPartyIsOver, 10)
-	END_MAIN
+TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 7)
+TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 9)
+END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
-
-	END_MAIN
+END_MAIN
 
 MiscBasedEvents:
-DefeatBoss
+DefeatAll //rout map now
+AFEV 1 HilmarQuoteGone 8 //dummy event triggered by flag 8, sets flag 1
+AFEV 1 HilmarQuoteGone 9
+AFEV 1 HilmarQuoteGone 10 
+AFEV 1 HilmarQuoteGone 11 
 CauseGameOverIfLordDies
 END_MAIN
 
+HilmarQuoteGone:
+NoFade
+ENDA
+
 LocationBasedEvents:
-Chest(TemperedRing, 1,12)
-	END_MAIN
+END_MAIN
 
 Dunno1:
-
-	END_MAIN
+END_MAIN
 
 Dunno2:
-
-	END_MAIN
+END_MAIN
 
 Dunno3:
-
-	END_MAIN
+END_MAIN
 
 Tutorial:
 
@@ -67,71 +71,69 @@ LoadUnit(8,4)
 LoadUnit(9,4)
 UNIT
 
-EnemyUnits:
-UNIT Hilmar LanceArmor   0x0 Level(8,Enemy,False) [15,16] 0 0 1 REDA14R14 [SteelLance,Javelin,Elixir] BossAI
-UNIT Chapter1Generics AxeFighter   0x0 Level(4,Enemy,True) [0,12] 0 0 1 REDA6R12 [SteelAxe] StallOneTurnAI
-UNIT Chapter1Generics SwordArmor   0x0 Level(4,Enemy,True) [0,12] 0 0 1 REDA5R8 [Greatsword] BossAI
-UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [0,6] 0 0 1 REDA1R4 [ShortLance] TwoActionAI
-UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,5] 0 0 1 REDA14R5 [Fire,Vulnerary] TwoActionAI
-UNIT Chapter1Generics Archer   0x0 Level(4,Enemy,True) [0,8] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
-UNIT Chapter1Generics AxeKnight   0x0 Level(4,Enemy,True) [15,11] 0 0 1 REDA14R8 [IronAxe] AttackInRangeAI
-UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,6] 0 0 1 REDA12R7 [Thunder] TwoActionAI
-UNIT Chapter1Generics Swordfighter   0x0 Level(4,Enemy,True) [15,12] 0 0 1 REDA12R13 [Shortsword] ChargeAI
-UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [2,16] 0 0 1 REDA2R14 [SteelLance] AttackInRangeAI
-UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [0,11] 0 0 1 REDA3R10 [Fire] TwoActionAI
-UNIT Chapter1Generics Archer   0x0 Level(4,Enemy,True) [4,16] 0 0 1 REDA6R15 [Longbow] AttackInRangeAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,1] 0 0x0 0x0 0x0 [IronLance,PureWater] StallOneTurnAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [IronLance] StallOneTurnAI
-UNIT Chapter1Generics LanceKnight   0x0 Level(4,Enemy,True) [15,11] 0x0 0x0 0x0 0x0 [ShortLance] StallOneTurnAI
-UNIT Chapter1Generics Swordfighter   0x0 Level(4,Enemy,True) [4,0] 0 0 1 REDA4R1 [Shortsword] ChargeAI
-UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [11,16] 0 0 1 REDA10R15 [HandAxe] AttackInRangeAI
-UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [9,0] 0 0 1 REDA9R1 [SlimArch] BossAI
-UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,13] 0 0 1 REDA0R12 [SlimArch,RedGem] BossAI
-UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [14,16] 0 0 1 REDA13R15 [SlimArch] BossAI
-UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [0,7] 0 0 1 REDA2R7 [IronAxe] AttackInRangeAI
-	UNIT
-	
-WhenTheThiefIsSus:
-UNIT Looter Thief  0x0 Level(1,Enemy,False) [11,16] 0 0 1 REDA10R16 [KillingEdge, ChestKey] ThiefAI
+HilmarGroup:
+//UNIT Hilmar LanceArmor   0x0 Level(8,Enemy,False) [7,20] 0 0 1 REDA6R19 [SteelLance,Javelin, TemperedRing] BossHealAI
+UNIT Hilmar LanceArmor   0x0 Level(8,Enemy,False) [7,20] 0 0 1 REDA6R19 [SteelLance,Javelin, TemperedRing] BossHealAI
+UNIT Chapter1Generics Priest 0x0 Level(4, Enemy, True) [7, 20] 0 0 1 REDA6R20 [Physic, RedGem] [0xE, 0x3, 0x4, 0x20]
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [7,20] 0 0 1 REDA7R19 [SlimArch] BossAI
 UNIT
 
+EnemyTopLeftUnits:
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,6] 0 0 0 0 [SlimArch] BossAI
+UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [1,1] 0 0 1 REDA1R4 [ShortLance] TwoActionAI
+UNIT
+
+EnemyTopRightUnits:
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [11,0] 0 0 0 0 [SlimArch] BossAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [14,0] 0x0 0x0 0x0 0x0 [IronLance, PureWater] AttackInRangeAI
+UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [12,3] 0 0 1 REDA12R7 [Thunder] TwoActionAI
+UNIT
+
+BottomLeftUnits:
+UNIT Chapter1Generics Bard   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA3R10 [Wind] TwoActionAI
+UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA2R13 [IronLance] AttackInRangeAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,14] 0 0 0 0 [SlimArch] BossAI
+UNIT Chapter1Generics Bard   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA0R18 [Lightning] AttackInRangeAI
+UNIT
+
+BottomRightUnits:
+UNIT Chapter1Generics LanceKnight   0x0 Level(4,Enemy,True) [14,11] 0x0 0x0 1 REDA15R11 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics AxeKnight   0x0 Level(4,Enemy,True) [14,11] 0 0 1 REDA14R8 [IronAxe] AttackInRangeAI
+UNIT Chapter1Generics SwordKnight   0x0 Level(4,Enemy,True) [14,11] 0 0 1 REDA14R15 [SteelSword] AttackInRangeAI
+UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [15,16] 0 0 0 0 [SlimArch] BossAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [14,21] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,20] 0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT
+
+
 Rein1:
-UNIT Chapter1Generics SwordKnight   0x0 Level(4,Enemy,True) [2,16] 0x0 0x0 0x0 0x0 [SteelSword] StallOneTurnAI
-UNIT Chapter1Generics LanceKnight   0x0 Level(4,Enemy,True) [3,16] 0x0 0x0 0x0 0x0 [SteelLance] ChargeAI
+UNIT Chapter1Generics SwordKnight   0x0 Level(4,Enemy,True) [0,12] 0x0 0x0 1 REDA0R12 [SteelSword] ChargeAI
+UNIT Chapter1Generics LanceKnight   0x0 Level(4,Enemy,True) [0,13] 0x0 0x0 1 REDA0R13 [SteelLance] ChargeAI
 UNIT
 
 Rein2:
-UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [14,16] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
-UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [15,16] 0x0 0x0 0x0 0x0 [Fire] StallOneTurnAI
-UNIT
-
-ReinEPIC:
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [1,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT Chapter1Generics BowKnight   0x0 Level(4,Enemy,True) [0,2] 0x0 0x0 0x0 0x0 [SteelBow] ChargeAI
+UNIT Chapter1Generics AxeKnight   0x0 Level(4,Enemy,True) [15,14] 0x0 0x0 1 REDA15R14 [SteelAxe] ChargeAI
+UNIT Chapter1Generics BowKnight   0x0 Level(4,Enemy,True) [15,15] 0x0 0x0 1 REDA15R15 [SteelBow] ChargeAI
 UNIT
 
 Rein3:
-UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [15,0] 0 0 1 REDA14R0 [IronAxe] ChargeAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
-UNIT
-
-ReinEPIC2:
-UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA0R1 [SteelAxe] ChargeAI
-UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0 0 1 REDA3R0 [ShortLance] StallOneTurnAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,21] 0x0 0x0 1 REDA0R20 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,21] 0x0 0x0 1 REDA1R21 [IronLance] ChargeAI
 UNIT
 
 Rein4:
-UNIT Chapter1Generics Myrmidon   0x0 Level(4,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [SteelSword] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,21] 0x0 0x0 1 REDA15R20 [IronLance] ChargeAI
+UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [15,21] 0x0 0x0 1 REDA14R21 [IronLance] ChargeAI
 UNIT
 
+
 Rein5:
-UNIT Chapter1Generics Archer   0x0 Level(4,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [SteelBow] StallOneTurnAI
+UNIT Chapter1Generics Hunter   0x0 Level(4,Enemy,True) [0,16] 0x0 0x0 1 REDA0R18 [Longbow] ChargeAI
 UNIT
 
 Rein6:
-UNIT Chapter1Generics Brigand   0x0 Level(4,Enemy,True) [0,1] 0x0 0x0 0x0 0x0 [IronAxe] ChargeAI
-UNIT Chapter1Generics Mage   0x0 Level(4,Enemy,True) [2,0] 0x0 0x0 0x0 0x0 [Fire] ChargeAI
+UNIT Chapter1Generics AxeSoldier   0x0 Level(4,Enemy,True) [11,21] 0x0 0x0 1 REDA11R21 [HandAxe] ChargeAI
 UNIT
 
 CutscenePegasussy:
@@ -141,7 +143,6 @@ UNIT
 
 CutsceneTheGang:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [11,3] 0x0 0x0 0x0 0x1 [0x0]     NoAI
-UNIT Mira ThiefFighter_F         Cleo Level(1,Ally,False) [10,4] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe Scaleshot_Dismounted Cleo Level(5,Ally,False) [12,4] 0x0 0x0 0x0 0x0 [0x0] NoAI
 UNIT
 
@@ -153,12 +154,9 @@ UNIT
 LeEpicRecruits:
 UNIT Zwieback BowArmor 0x1 Level(5, Ally, 0)   [0,5] 0 0 1 REDA8R4 [SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
 UNIT Filone Archer_F 0x1 Level(1, Ally, 0)   [0,4] 0 0 1 REDA7R4 [IronBow,Elixir] [0x0,0x0,0x0,0x0]
-	UNIT
-	
-HolyShitItIsDream:
-SpawnReinforcements(WhenTheThiefIsSus)
-NoFade
-ENDA
+UNIT Helman DragonClass 0x1 Level(5, NPC, 0)   [0,6] 0 0 1 REDA11R4 [SteelBow,Vulnerary] [0x0,0x0,0x0,0x0]
+UNIT Senny PegasusClass 0x1 Level(1, NPC, 0)   [0,7] 0 0 1 REDA10R3 [IronBow,Elixir] [0x0,0x0,0x0,0x0]
+UNIT
 
 IWearAMaskWithASmile:
 SpawnReinforcements(Rein1)
@@ -168,34 +166,19 @@ ENDA
 ForHoursAtATime:
 SpawnReinforcements(Rein1)
 SpawnReinforcements(Rein2)
-SpawnReinforcements(ReinEPIC)
 NoFade
 ENDA
 
 StareAtTheCeiling:
-SpawnReinforcements(Rein3)
-SpawnReinforcements(ReinEPIC2)
-NoFade
-ENDA
-
-WhileIHoldBackWhatsOnMyMind:
-SpawnReinforcements(Rein4)
-NoFade
-ENDA
-
-AndWhenTheyAskMeHow:
 SpawnReinforcements(Rein5)
-NoFade
-ENDA
-
-ImDoingISayImJustFine:
 SpawnReinforcements(Rein6)
 NoFade
 ENDA
 
-AmongUsPartyIsOver:
-ENUT 0x3
-CALL EndingScene
+WhileIHoldBackWhatsOnMyMind:
+SpawnReinforcements(Rein3)
+SpawnReinforcements(Rein4)
+NoFade
 ENDA
 
 OhNoWTF:
@@ -203,18 +186,10 @@ Music(WindyDayBirdsSoundEffect)
 CameraCursor(Cleo)
 Text(LoeweCleoFatigueTalk)
 CenterTextbox(FatigueExplanation)
-STAL 5
-CameraCursor(Hilmar)
-Text(Ch4WarningText)
-STAL 5
-CameraCursor(Loewe)
-Text(Ch4WarningText2)
 NoFade
 ENDA
 
 Traps1:
-	RedSigil(2,16)
-	RedSigil(3,16)
 	ENDTRAP
 	ALIGN 4
 
@@ -224,9 +199,10 @@ Traps2:
 
 BeginningScene:
 DismountAll
-Music(FFTAnxiety)
+EraseAllFatigue
+MUSC FF5_Sealed_Away
 SetBackground(0x10)
-Text(Ch4Intro1)
+Text(Ch4BeginningScene1)
 STAL 5
 FADI 60
 CLEAN
@@ -244,15 +220,9 @@ DISA_IF 0xFFFE
 SVAL 0xB 0xC
 DISA_IF 0xFFFE
 STAL 25
-Music(SheenaID)
+MUSC SheenaID
 SetBackground(0x1B)
-CheckUnitDeadOrJailed(Mira)
-BNE 420 s0 sC
-	SetFatigue(Mira,0)
-	Text(Ch4Intro2)
-	GOTO 421
-LABEL 420
-Text(Ch4IntroAlt2)
+Text(Ch4BeginningScene2_1)
 LABEL 421
 EraseBackground
 STAL 5
@@ -260,31 +230,38 @@ CamOn
 LOAD1 0 LeEpicRecruits
 ENUN
 CamOff
-CheckUnitDeadOrJailed(Mira)
-BNE 2 0x0 0xC
-TEXTSTART
-TEXTSHOW Ch4Intro3
-TEXTEND
-MUSC Sortie_Formation
-TEXTCONT
-TEXTEND
-GOTO 3
-LABEL 2
-TEXTSTART
-TEXTSHOW Ch4IntroAlt3
-TEXTEND
-MUSC Sortie_Formation
-TEXTCONT
-TEXTEND
-LABEL 3
-REMA
-CAM1 [8,8]
-LOAD1 0x1 EnemyUnits
+Text(Ch4BeginningScene2_2)
+FadeOutMusic
+CamOn
+LOAD1 1 HilmarGroup
 ENUN
+MUSC Sortie_Formation
 STAL 30
-CameraCursor(Zwieback)
-Text(Ch4Intro4)
+CameraCursor(Hilmar)
+Text(Ch4BeginningScene3_1)
+MOVE 15 Loewe [10,3]
+MOVE 15 Cleo [10,4]
+MOVE 15 Helman [9,3]
+MOVE 15 Senny [9,4]
+ENUN
+MOVE 15 Zwieback [6,3]
+MOVE 15 Filone [6,4]
+ENUN
+LOAD1 1 BottomRightUnits
+ENUN
+LOAD1 1 BottomLeftUnits
+ENUN
+LOAD1 1 EnemyTopLeftUnits
+ENUN
+LOAD1 1 EnemyTopRightUnits
+ENUN
+CameraCursor(Cleo)
+Text(Ch4BeginningScene3_2)
+CameraCursor(Hilmar)
+Text(Ch4BeginningScene3_3)
 FADI 15
+REMOVEUNIT Senny
+REMOVEUNIT Helman
 MountAll
 STAL 3
 GotoPrepScreen
@@ -293,25 +270,28 @@ ENDA
 
 EndingScene:
 ENUT 3
-FADI 60
+FADI 10
+FadeOutMusic
 DoAllThree
 LOAD2 0x1 SickoMode
-Music(WindyDaySoundEffect)
-MUSI
-SetBackground(0x1B)
-MUNO
-FlagConditionalDialog(0x2,Ch4EndingDefeatBoss1,Ch4EndingDefend1)
-ClearBackground
-STAL 5
+ENUN
+CAMERA_CENTERED Loewe
+STAL 30
+FADU 10
 CameraCursor(Loewe)
 CameraCursor(Cleo)
-Music(ToV_TragicDecisionID)
-SetBackground(0x18)
-Text(Ch4Ending2)
-STAL 5
-SetBackground(0x12)
-Text(Ch4Ending3)
-MNC2 Chapter5
+Music(Explorer_RuinaForgottenRuinsID)
+Text(Ch4EndingScene1)
+MOVE 15 Cleo [0,13]
+ENUN
+Text(Ch4EndingScene2)
+MOVE 10 Loewe [0,14]
+FADI 5
+ENUN
+WM_LOADLOCATION2 0 Chapter5 0 //Required to fix chapter name
+WM_SETDESTINATION 0 Chapter5 0 //World map node. Keep these equal.
+WM_SETNEXTLOCATION 0 0 Chapter4 //Needed for world map narration.
+MNCH Chapter5
 NoFade
 ENDA
 

@@ -2,7 +2,7 @@
 	.thumb
 
 	@ gBWLTable  = 0x0203E884 @ Where the skills are stored
-	gBWLTable = 0x02026e30
+	gBWLTable = 0x02026e20
 	gEventSlot = 0x030004B8 @ Where the event slot values are stored
 
 	GetUnitFromEventParam = 0x0800BC50|1 @ Given an event parameter (either a char id or -1/-2/-3 special values), gets a Unit*
@@ -31,7 +31,7 @@ ASMC_ForgetSkill:
 
 	@ r3 = Learned Skill List for Active Char
 	ldr r3, =gBWLTable
-	lsl r0, #4 @ CharId * sizeof(BWLEntry)
+	lsl r0, #3 @ CharId * sizeof(BWLEntry)
 	add r3, r0
 	add r3, #1 @ Learned Skills start at byte 1 in BWL Entry
 

@@ -15,9 +15,9 @@ CaptureQuote(Emory_Ch3,Chapter3, 2, 2, EmoryDeathQuote, EmoryCaptureQuote)
 
 DeathQuote(Dragana,Chapter3, 0xD, DraganaDeathQuote)
 
-DeathQuote(Hilmar,Chapter4,2,HilmarDeathQ)
+CaptureQuote(Hilmar,Chapter4,2, 2, HilmarDeathQuote, HilmarCaptureQuote)
 
-DeathQuote(Riggan,Chapter5,2,RigganDeathQuoteText)
+CaptureQuote(Riggan,Chapter5, 2, 7, RigganDeathQuoteText, RigganCaptureQuoteText)
 
 DeathQuote(McCallum, Chapter6, 0, McCallumDeathQuoteText)
 DeathQuote(Draken, Chapter6, 0, DrakenDeathQuoteText)

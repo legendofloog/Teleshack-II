@@ -92,6 +92,7 @@
 #define DenpaMen2PalaceID 0x37
 #define HollowLightOfTheSealedLandID 0x281
 #define FF6MartialLawID 0x282
+#define Explorer_RuinaForgottenRuinsID 0x283
 
 // Vanilla
 #define WindyDaySoundEffect 0x47

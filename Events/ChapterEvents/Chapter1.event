@@ -104,11 +104,18 @@ AFEV 1 RaschwitzQuoteGone 18
 AFEV 1 RaschwitzQuoteGone 19
 AFEV 1 RaschwitzQuoteGone 20
 AFEV 1 RaschwitzQuoteGone 21
+AFEV 0x9F BoroQuoteGone 0x9C
+AFEV 0x9F BoroQuoteGone 0x9D
+AFEV 0x9F BoroQuoteGone 0x9E
 CauseGameOverIfLordDies
 END_MAIN
 
 RaschwitzQuoteGone:
 NoFade //doesn't actually need to be an event, just sets the battle quote
+ENDA
+
+BoroQuoteGone:
+NoFade
 ENDA
 
 Dunno1:
@@ -270,8 +277,27 @@ REMOVEUNIT Raschwitz_Ch1
 SingleUnitMove(Helman,15,3,3)
 FlashCursor(Chapter1Generics,60)
 SetBackground(Village1)
-MUSC FF5_Nostalgia
+MUSC Explorer_RuinaForgottenRuinsID
 Text(BeginningSceneLoeweFlashbackText)
+SetBackground(OrodrethMap)
+TEXTSTART
+TEXTSHOW BeginningSceneLoeweHistoryLesson
+TEXTEND
+FlashCursor(10, 3, 60)
+TEXTCONT
+TEXTEND
+FlashCursor(3, 5, 60)
+TEXTCONT
+TEXTEND
+FlashCursor(6, 3, 60)
+TEXTCONT
+TEXTEND
+FlashCursor(8, 9, 60)
+TEXTCONT
+TEXTEND
+REMA
+SetBackground(Village1)
+Text(BeginningSceneLoeweHistoryLesson2)
 FADI 15
 TILECHANGE 0
 REMOVEALL_GREEN
@@ -280,11 +306,13 @@ CGText(Ch1LoeweReminiscence)
 WEATHER 5
 EraseBackground
 ENUN
+FadeOutMusic
 BROWNBOXTEXT Linoras1YearLaterTopLeftText[8,8]
 LOAD1 1 Flashback2Units1
 ENUN
 STAL 20
 FlashCursor(Helman,60)
+MUSC FF5_Nostalgia
 Text(BeginningSceneLoeweFlashback2Text1)
 LOAD1 1 Flashback2Units2
 ENUN

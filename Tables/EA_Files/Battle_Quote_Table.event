@@ -33,8 +33,12 @@ UnspecifiedBattleConvo(Emory_Ch3,Chapter3,1,EmoryBattleQuote)
 SpecifiedBattleConvo(Hilmar,Loewe,Chapter4,8,HilmarLoeweBossQ)
 SpecifiedBattleConvo(Hilmar,Filone,Chapter4,9,HilmarFiloneBossQ)
 SpecifiedBattleConvo(Hilmar,Cleo,Chapter4,10,HilmarCleoBossQ)
-UnspecifiedBattleConvo(Hilmar,Chapter4,11,HilmarBossQ)
+SpecifiedBattleConvo(Hilmar,Zwieback,Chapter4,11, HilmarZwiebackBossQ)
+UnspecifiedBattleConvo(Hilmar,Chapter4,1,HilmarBossQ)
 
+SpecifiedBattleConvo(Riggan,Fangai,Chapter5,8,RigganFangaiBattleQuote)
+SpecifiedBattleConvo(Riggan,Longxia,Chapter5,9,RigganLongxiaBattleQuote)
+SpecifiedBattleConvo(Riggan,Iskra,Chapter5,10,RigganIskraBattleQuote)
 UnspecifiedBattleConvo(Riggan,Chapter5,1,RigganBattleQuoteText)
 
 UnspecifiedBattleConvo(Draken,Chapter6,1,DrakenBattleQuoteText)

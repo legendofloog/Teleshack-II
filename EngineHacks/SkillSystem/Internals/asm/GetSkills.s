@@ -94,6 +94,9 @@ lop:
 	cmp  r1, #0
 	beq  continue
 
+	cmp r1, #1
+	beq continue @ hopefully this gets rid of steal shit
+
 	strb r1, [r5]
 	add  r5, #1
 

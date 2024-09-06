@@ -68,7 +68,7 @@ A bow with exceptional range.[X]
 Beiyr Scroll[X]
 
 ## BeiyrScrollDesc
-+15% Str/Skl/Lck.[X]
++20% Str/Skl/Lck.[X]
 
 ## TemperedName
 [_T][_e]m[_p][_e][_r][_e][_d][_sp][_R]i[_n][_g][X]
@@ -827,8 +827,7 @@ for (Mag + 15) HP.[X]
 Egan Scroll[X]
 
 ## EganScrollDesc
-A scroll said to impart arcane strength.[N]
-+15% Mag, +20% Lck. Blocks crits.[X]
++20% Mag/Res/Lck.[X]
 
 ## BrynjaScrollName
 Brynja Scroll[X]

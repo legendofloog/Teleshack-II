@@ -20,7 +20,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x12 Mish,2,10
 0x13 Tobie,1,15
 0x14 Awa,0,5
-0x15 Cadenza,2,30
+0x15 Cadenza,5,40
 0x16 Faolan,0,5
 0x17 Iberis,3,30
 0x18 Buldak,0,5
@@ -86,7 +86,7 @@ INLINE MagCharTable,Base Magic,Magic Growth
 0x54 Ch 19 Boss,5,30
 0x55 Raschwitz (Ch 1),0,0
 0x56 Tyr (Ch 2),0,0
-0x57 Riggan (Ch 5),3,10
+0x57 Riggan (Ch 5),5,10
 0x58 Aurora (Ch 11),2,55
 0x59 Wrathgar (Ch 9),2,5
 0x5A Cidor (Ch 10),4,50

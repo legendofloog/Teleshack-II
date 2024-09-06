@@ -22,7 +22,7 @@
 [OpenQuote] = [0x93]
 [HashTag] = [0x23]
 [CSSCF] = [CloseSpeechSlow][ClearFace]
-
+[CSS] = [CloseSpeechSlow]
 [FarFarLeft] = [OpenFarFarLeft]
 [FarLeft] = [OpenFarLeft]
 [MidLeft] = [OpenMidLeft]

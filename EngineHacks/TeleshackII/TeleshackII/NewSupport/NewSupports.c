@@ -262,10 +262,10 @@ void New_DrawUnitScreenSupportList(){
 	
     Unit* unit = gStatScreen.unit;
 
-    if (UNIT_FACTION(unit) == FACTION_GREEN || UNIT_FACTION(unit) == FACTION_RED)
-    {
-        return;
-    }
+    //if (UNIT_FACTION(unit) == FACTION_GREEN || UNIT_FACTION(unit) == FACTION_RED)
+    //{
+      //  return;
+    //}
 
     int yTile = 5, lineNum = 0;
 

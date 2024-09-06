@@ -154,3 +154,5 @@
 #define CromarMorbing 0x83
 #define Dracoknight_F 0x84
 #define Dracoknight_F_Dismounted 0x85
+#define DragonClass 0x86
+#define PegasusClass 0x87

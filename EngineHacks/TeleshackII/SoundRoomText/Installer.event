@@ -165,4 +165,7 @@ SoundRoomSource(awaywithyou, RunaDoesAThingSource)
 //denpa men 2 beyond the waves
 SoundRoomSource(DenpaMen2PalaceID, DenpaMen2Source)
 
+// ruina
+SoundRoomSource(Explorer_RuinaForgottenRuinsID,RuinaFairyTaleSource)
+
 WORD 0 0 // term

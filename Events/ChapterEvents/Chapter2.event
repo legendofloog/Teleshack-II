@@ -59,8 +59,22 @@ AFEV 15 DelilahFreed 9
 AFEV 16 HernandezFreed 10
 CauseGameOverIfLordDies
 AFEV 0 EndingScene 3
+AFEV 1 TyrQuoteGone 0x15
+AFEV 1 TyrQuoteGone 0x16
+AFEV 1 TyrQuoteGone 0x17
+AFEV 1 TyrQuoteGone 7
+AFEV 0x9F BoroQuoteGone 0x9C
+AFEV 0x9F BoroQuoteGone 0x9D
+AFEV 0x9F BoroQuoteGone 0x9E
 END_MAIN
 
+TyrQuoteGone:
+NoFade
+ENDA
+
+BoroQuoteGone:
+NoFade
+ENDA
 
 Dunno1:
 
