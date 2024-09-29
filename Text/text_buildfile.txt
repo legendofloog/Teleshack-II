@@ -29,7 +29,7 @@ Atk[X]
 Hit[X]
 
 # 0x501 CritTextID
-Crit[X]
+Crt[X]
 
 # 0x4EF DefTextID
 Def[X]
@@ -88,7 +88,7 @@ Type[X]
 # 0x55B
 Unit is blessed by Leina's Radiance.[NL]
 They will heal for 10 + Leina's Mag[N]
-after she attacks or heals.[X]
+after Leina attacks or heals.[X]
 
 # 0x0855
 This item is too heavy[NL]
@@ -256,7 +256,10 @@ Move an item to[N]
 the top of inventory.[X]
 
 ## DodgeTextID
-Ddg[X]
+Eva[X]
+
+## DashTextID
+-[X]
 
 #include "statusdesc_text.txt"
 

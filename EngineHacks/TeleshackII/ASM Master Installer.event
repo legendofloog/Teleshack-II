@@ -27,12 +27,6 @@
 
 #include "EventGetCountOfUnit/Installer.event"
 
-#include "StallAIs/AITableExpansion/AI1TableExpansion.event"
-
-#include "StallAIs/AITableExpansion/AI2TableExpansion.event"
-
-#include "StallAIs/StallAI/StallAI.event"
-
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
 #include "RingRework/RingRework_Installer.event"
@@ -139,12 +133,6 @@ POP
 //ORG $178EA
 //BYTE 2
 //POP
-
-//devil axe backfire to 21 - luck
-PUSH
-ORG $2B6A4
-BYTE 26
-POP
 
 // removes drop flag from enemies opening chests
 PUSH

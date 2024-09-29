@@ -5,8 +5,8 @@
 
 pResistanceModifiers: // Resistance
 	POIN prAddUnitResistance prHalveIfCapturing prHalveIfRescuing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes prEquipmentRes
+	POIN prUmbraliumMight
 	#ifdef DEBUFFS_MIN_ZERO
-	POIN prAzuriumMight
 	POIN prMinZero
 	#endif
 WORD 0
@@ -37,11 +37,11 @@ prFortressResistanceRes:
 prItemPassiveResistance:
 	rPassiveStatBoosts(STAT_RESISTANCE)
 
-prAzuriumMight:
-	rIfUnitHasSkill(AzuriumMightID)
-		rAddConst(5)
-
 prEquipmentRes:
 	rEquipmentBonus(STAT_RESISTANCE)
+
+prUmbraliumMight:
+	rIfUnitHasSkill(UmbraliumMightID)
+		rAddConst(4)
 
 #endif // MODULAR_GETTER_RESISTANCE_EVENT

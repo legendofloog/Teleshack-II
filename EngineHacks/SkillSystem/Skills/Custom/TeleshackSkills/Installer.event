@@ -15,3 +15,5 @@ WORD DebuffTable
 #include "DragonRage/DragonRage.event"
 
 #include "Nightcaller/Nightcaller.event"
+
+#include "BladeDance/BladeDance.event"

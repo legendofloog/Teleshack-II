@@ -50,7 +50,18 @@ DukeKnightStanding:
 
 ALIGN 4
 ThiefMStanding:
-#incbin "Dmp/Thief (M) {IS}-stand.dmp"
+#incbin "Dmp/thraciathiefstand.dmp"
+
+ALIGN 4
+ThiefMMoving:
+#incbin "Dmp/thraciathiefmove.dmp"
+
+ALIGN 4
+ThiefFStanding:
+#incbin "Dmp/ashastand.dmp"
+ALIGN 4
+ThiefFMoving:
+#incbin "Dmp/ashamove.dmp"
 
 ALIGN 4
 SwordFighterFStanding:
@@ -58,13 +69,6 @@ SwordFighterFStanding:
 ALIGN 4
 SwordFighterFMoving:
 #incbin "Dmp/Mercenary (F) Sword {Agro}-move.dmp"
-
-ALIGN 4
-ThiefFStanding:
-#incbin "Dmp/Thief (F) {IS}-stand.dmp"
-ALIGN 4
-ThiefFMoving:
-#incbin "Dmp/Thief (F) {IS}-move.dmp"
 
 ALIGN 4
 BallisticianMoving:
@@ -541,3 +545,19 @@ PegasusStanding:
 ALIGN 4
 PegasusWalking:
 #incbin "Dmp/pegasus moving {N426}.dmp"
+
+ALIGN 4
+FreebladeStanding:
+#incbin "Dmp/serabladedance_2.dmp"
+
+ALIGN 4
+FreebladeWalking:
+#incbin "Dmp/serafreeblade_walk.dmp"
+
+ALIGN 4
+DraganaDeadStanding:
+#incbin "Dmp/draganadead.dmp"
+
+ALIGN 4
+LoeweSadStanding:
+#incbin "Dmp/loewesad.dmp"

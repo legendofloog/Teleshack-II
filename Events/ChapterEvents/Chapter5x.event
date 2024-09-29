@@ -347,13 +347,13 @@ UNIT
 
 GreenUnits:
 UNIT Gimm Thief Cleo Level(4,NPC,False) [2,8] 0x0 0x0 0x0 0x1 [DevilDagger,Vulnerary]     NoAI
-UNIT Tobie PegasusRider_Dismounted Cleo Level(5,NPC,False) [2,9] 0x0 0x0 0x0 0x1 [IronLance,LongLance,Vulnerary]     NoAI
+UNIT Tobie PegasusRider_Dismounted Cleo Level(4,NPC,False) [2,9] 0x0 0x0 0x0 0x1 [IronLance,DuelistLance,Vulnerary]     NoAI
 UNIT Awa AxeKnight_Dismounted Cleo Level(5,NPC,False) [9,8] 0x0 0x0 0x0 0x1 [IronAxe,Poleaxe,Vulnerary] NoAI
-UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x1 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x1 [MasterAxe,Longsword]     NoAI
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [11,1] 0x0 0x0 0x0 0x1 [0x0]     NoAI
-UNIT Cadenza Bard Cleo Level(5,NPC,False) [13,6] 0x0 0x0 0x0 0x1 [Wind, Yseod]     NoAI
-UNIT Faolan RookKnight_Dismounted Cleo Level(5,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary]     NoAI
-UNIT Matthias Devotee_M Cleo Level(4, NPC, False) [0,3] 0x0 0x0 0x0 0x0 [Lumen,Mend,Vulnerary] NoAI
+UNIT Cadenza Bard Cleo Level(6,NPC,False) [13,6] 0x0 0x0 0x0 0x1 [Wind, Yseod]     NoAI
+UNIT Faolan RookKnight_Dismounted Cleo Level(6,NPC,False) [6,4] 0x0 0x0 0x0 0x1 [Rapier, Javelin, Vulnerary]     NoAI
+UNIT Matthias Devotee_M Cleo Level(5, NPC, False) [0,3] 0x0 0x0 0x0 0x0 [Lumen,Mend,Vulnerary] NoAI
 UNIT
 
 IskraCopyGroup:
@@ -371,14 +371,14 @@ UNIT
 HeadquartersBeginningCutsceneUnits:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [0,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
 UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [1,3] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Trajan Hero Cleo Level(5,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [1,4] 0x0 0x0 0x0 0x0 [MasterAxe,Longsword]     NoAI
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [0,4] 0x0 0x0 0x0 0x0 [0x0]     NoAI
 UNIT
 
 WarRoomUnits:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [9,9] 0x0 0x0 0x1 REDA10R5 [Argilabrys,IronAxe,Vulnerary]		NoAI
 UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [5,9] 0x0 0x0 0x1 REDA5R5 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Trajan Hero Cleo Level(5,NPC,False) [6,9] 0x0 0x0 0x1 REDA5R6 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [6,9] 0x0 0x0 0x1 REDA5R6 [MasterAxe,Longsword]     NoAI
 UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [8,9] 0x0 0x0 0x1 REDA10R6 [0x0]     NoAI
 UNIT
 
@@ -397,7 +397,7 @@ UNIT
 
 
 TrajanBeginningGroup:
-UNIT Trajan Hero Cleo Level(5,NPC,False) [19,10] 0x0 0x0 0x1 REDA17R10 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [19,10] 0x0 0x0 0x1 REDA17R10 [MasterAxe,Longsword]     NoAI
 UNIT Senny AxeSoldier   Cleo Level(2,NPC,False) [19,9] 0x0 0x0 0x1 REDA18R9 [Argilabrys,IronAxe,Vulnerary]		NoAI
 UNIT Helman LanceSoldier   Cleo Level(2,NPC,False) [19,11] 0x0 0x0 0x1 REDA18R11 [Argilabrys,IronAxe,Vulnerary]		NoAI
 UNIT
@@ -405,7 +405,7 @@ UNIT
 LoeweEndingCutsceneGroup:
 UNIT Cleo Skyseeker_Dismounted   Cleo Level(2,Ally,False) [7,4] 0x0 0x0 0x0 0x0 [Argilabrys,IronAxe,Vulnerary]		NoAI
 UNIT Loewe Skyseeker_Dismounted   Cleo Level(2,Ally,False) [9,4] 0x0 0x0 0x0 REDA5R5 [Argilabrys,IronAxe,Vulnerary]     NoAI
-UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Cleo Level(5,NPC,False) [8,2] 0x0 0x0 0x0 0x0 [MasterAxe,Longsword]     NoAI
 UNIT
 
 GechrysosCutsceneGroup:
@@ -658,6 +658,7 @@ FadeOutMusic
 FADI 15
 RemoveAll
 SHOWUNIT Loewe
+CALL GiveBackKaiserschwertFake
 LOAD1 0 LoeweEndingCutsceneGroup
 ENUN
 CAMERA Trajan
@@ -725,6 +726,9 @@ STAL 30
 Text(Ch5xCoraliaEndingText)
 FADI 5
 ENUF 0x84 //brings back boss icons/talk icons etc
-MNC2 Chapter6
+WM_LOADLOCATION2 0 Chapter7 0 //Required to fix chapter name
+WM_SETDESTINATION 0 Chapter7 0 //World map node. Keep these equal.
+WM_SETNEXTLOCATION 0 0 Chapter6 //Needed for world map narration.
+MNCH Chapter6
 NoFade
 ENDA

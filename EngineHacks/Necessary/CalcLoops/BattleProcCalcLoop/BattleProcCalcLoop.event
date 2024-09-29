@@ -4,9 +4,7 @@
 
 ProcLoopParent:
 #incbin "ProcLoop/proc_loop.dmp"
-POIN New_Proc_Start	//start
-
-//Proc_Expertise Proc_PursuitCritical
+POIN New_Proc_Start
 
 POIN Proc_Devil	//devil effect
 
@@ -14,9 +12,9 @@ POIN IncrementAttackCount
 
 POIN Proc_CapDamage	//check that damage is not over cap
 
-POIN Proc_Chapter6Magic
-
 POIN Proc_BladeDance //skills that set damage to 0 or lower it
+
+POIN Proc_Headshot
 
 POIN Proc_StealHP
 
@@ -52,13 +50,4 @@ Chargeups:
 PUSH
 ORG $2b3ec
 jumpToHack(ProcLoopParent)
-
-//skip hp substraction if devil effect
-ORG $2B69E
-SHORT 0xE00B
-ORG $2B6C4
-SHORT 0x4001
-SHORT 0x2900
-SHORT 0xD123
-SHORT 0xE011
 POP

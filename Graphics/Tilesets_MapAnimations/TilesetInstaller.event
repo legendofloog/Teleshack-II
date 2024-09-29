@@ -49,6 +49,10 @@
     ALIGN 4
     FlasubanVillageMapchipConfig2:
     #incbin "Config/Flasubanvillage2_comp.dmp"
+
+    ALIGN 4
+    FlasubanVillageMapchipConfigCh6:
+    #incbin "Config/FlasubanVillageMapchipConfigCh6_comp.dmp"
 	
 //Updated village
 
@@ -169,6 +173,7 @@ ALIGN 4
     EventPointerTable(FlasubanVillageObjectID, FlasubanVillageObject)
     EventPointerTable(FlasubanVillageNormalPaletteID, FlasubanVillagePalette)
     EventPointerTable(FlasubanVillageMapchipConfigID, FlasubanVillageMapchipConfig)
+    EventPointerTable(FlasubanVillageMapchipConfigCh6ID,FlasubanVillageMapchipConfigCh6)
 	EventPointerTable(0x10,UpdatedVillageMapchipConfig)
 	EventPointerTable(FlasubanVillageMapchipConfig2ID, FlasubanVillageMapchipConfig2)
     EventPointerTable(FF5CaveObjectID,FF5CaveObject)

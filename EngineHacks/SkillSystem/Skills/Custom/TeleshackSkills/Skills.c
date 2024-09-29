@@ -7,6 +7,7 @@
 #include "PiercingBolt/PiercingBolt.c"
 #include "DragonRage/DragonRage.c"
 #include "Nightcaller/Nightcaller.c"
+#include "BladeDance/BladeDance.c"
 
 void BurnPreBattleEffect(BattleUnit* unit1, BattleUnit* unit2){
 	if (unit2->unit.pClassData == 0){ //is the defender existent

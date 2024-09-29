@@ -190,9 +190,9 @@ SupportTerm
 
 ALIGN 4
 DelilahSupportList:
-SupportEntry(Svetomir,CSupportLevel,1,0,0,(-5),5,0)
-SupportEntry(Svetomir,BSupportLevel,2,0,0,(-10),10,0) //one way
-SupportEntry(Svetomir,ASupportLevel,3,0,0,0,15,0)
+SupportEntry(Svetomir,CSupportLevel,1,0,5,(-5),5,0)
+SupportEntry(Svetomir,BSupportLevel,2,0,10,(-10),10,0) //one way
+SupportEntry(Svetomir,ASupportLevel,3,0,15,0,15,0)
 
 SupportEntry(Awa,CSupportLevel,0,1,5,0,0,0)
 SupportEntry(Awa,BSupportLevel,0,2,10,0,0,0)
@@ -307,9 +307,9 @@ SupportEntry(Filone,CSupportLevel,1,0,0,0,5,0)
 SupportEntry(Filone,BSupportLevel,2,0,0,0,10,0)
 SupportEntry(Filone,ASupportLevel,3,0,0,0,15,0)
 
-SupportEntry(Mish,CSupportLevel,0,0,0,5,0,(-10))
-SupportEntry(Mish,BSupportLevel,0,0,0,15,0,(-15))
-SupportEntry(Mish,ASupportLevel,0,0,0,25,0,(-20))
+SupportEntry(Mish,CSupportLevel,0,0,0,10,(-5),0)
+SupportEntry(Mish,BSupportLevel,0,0,0,15,(-10),0)
+SupportEntry(Mish,ASupportLevel,0,0,0,20,0,0)
 
 SupportEntry(Takai,CSupportLevel,1,1,0,0,0,0)
 SupportEntry(Takai,BSupportLevel,2,2,0,0,0,0)
@@ -318,9 +318,9 @@ SupportTerm
 
 ALIGN 4
 MishSupportList:
-SupportEntry(Tobie,CSupportLevel,0,0,(-5),0,5,0)
-SupportEntry(Tobie,BSupportLevel,0,0,(-10),0,15,0) // 2 way
-SupportEntry(Tobie,ASupportLevel,0,0,(-15),0,25,0)
+SupportEntry(Tobie,CSupportLevel,0,0,(-5),0,10,0)
+SupportEntry(Tobie,BSupportLevel,0,0,(-10),0,20,0) // 2 way
+SupportEntry(Tobie,ASupportLevel,0,0,0,0,30,0)
 
 SupportEntry(Takai,CSupportLevel,1,1,0,0,0,0)
 SupportEntry(Takai,BSupportLevel,2,2,0,0,0,0)

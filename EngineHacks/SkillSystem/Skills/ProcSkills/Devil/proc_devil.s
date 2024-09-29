@@ -56,7 +56,7 @@ beq	isDevil
 mov	r0,r5
 mov	r1,#0x4A    @Move to the attacker's weapon
 ldrh	r0,[r0,r1]
-ldr	r1,=#0x8017724	@get item word
+ldr	r1,=0x8017724	@get item word
 mov	lr,r1
 .short	0xF800
 cmp	r0,#0x04	@devil effect
@@ -93,7 +93,7 @@ beq	isDevil
 mov	r0,r4
 mov	r1,#0x4A    @Move to the attacker's weapon
 ldrh	r0,[r0,r1]
-ldr	r1,=#0x8017724	@get item word
+ldr	r1,=0x8017724	@get item word
 mov	lr,r1
 .short	0xF800
 cmp	r0,#0x04	@devil effect
@@ -102,14 +102,14 @@ bne     End	@do nothing if not devil
 @roll devil chance
 isDevil:
 mov	r0,r4
-ldr	r1,=#0x8019298	@luck getter
+ldr	r1,=0x8019298	@luck getter
 mov	lr,r1
 .short	0xF800
 cmp	r0,#31	@check if luck is over cap, just in case
 bhi	End
-mov	r1,#31	@devil chance
+mov	r1,#26	@devil chance
 sub	r0,r1,r0	@devil chance - luck
-ldr	r1,=#0x8000CA0	@roll 1rn
+ldr	r1,=0x8000CA0	@roll 1rn
 mov	lr,r1
 .short	0xF800
 lsl	r0,#0x18
@@ -124,7 +124,7 @@ mov     r0, #0x40
 lsl     r0, #8		@0x4000, attacker skill activated
 add	r0,#0x80	@+ devil flag
 orr     r1, r0
-ldr     r0,=#0xFFF80000                @ 0802B434 4804     
+ldr     r0,=0xFFF80000                @ 0802B434 4804     
 and     r0,r2                @ 0802B436 4010     
 orr     r0,r1                @ 0802B438 4308     
 str     r0,[r6]                @ 0802B43A 6018 
@@ -169,7 +169,7 @@ mov     r0,#0x80
 mvn	r0,r0
 and     r1,r0
 
-ldr     r0,=#0xFFF80000                @ 0802B434 4804     
+ldr     r0,=0xFFF80000                @ 0802B434 4804     
 and     r0,r2                @ 0802B436 4010     
 orr     r0,r1                @ 0802B438 4308     
 str     r0,[r6]                @ 0802B43A 6018

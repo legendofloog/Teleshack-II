@@ -41,6 +41,11 @@ SpecifiedBattleConvo(Riggan,Longxia,Chapter5,9,RigganLongxiaBattleQuote)
 SpecifiedBattleConvo(Riggan,Iskra,Chapter5,10,RigganIskraBattleQuote)
 UnspecifiedBattleConvo(Riggan,Chapter5,1,RigganBattleQuoteText)
 
+SpecifiedBattleConvo(McCallum, Cromar, Chapter6, 0x16, McCallumCromarBattleQuoteText)
+SpecifiedBattleConvo(McCallum, Leina, Chapter6, 0x17, McCallumLeinaBattleQuoteText)
+
+SpecifiedBattleConvo(Draken, Longxia, Chapter6, 0x18, DrakenLongxiaBattleQuoteText)
+SpecifiedBattleConvo(Draken, Mira, Chapter6, 0x19, DrakenMiraBattleQuoteText)
 UnspecifiedBattleConvo(Draken,Chapter6,1,DrakenBattleQuoteText)
 
 //add 7 boss battle quotes?

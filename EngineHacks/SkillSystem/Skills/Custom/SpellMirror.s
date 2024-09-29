@@ -42,11 +42,11 @@ bne SkillEnd
 mov r0, r5       @Move defender data into r1.
 mov r1, #0x4c    @Move to the defender's weapon ability
 ldr r1, [r0, r1]
-mov r2, #0x42
+mov r2, #0x42	@ magical + magic weapon
 tst r1, r2
 beq SkillEnd
 
-mov r0, #0x5A
+mov r0, #0x5A	@ getting attack and adding the defender's to the attacker's
 ldrh r1, [r5, r0]
 ldrh r2, [r4, r0]
 add r1, r2

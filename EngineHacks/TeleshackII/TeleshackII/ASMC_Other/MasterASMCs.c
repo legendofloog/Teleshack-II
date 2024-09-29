@@ -294,6 +294,13 @@ bool CheckIfInInterlude(){
     return true;
 }
 
+bool CheckIfInInterludeMSG(Unit* unit){
+    if ((gChapterData.chapterIndex == 0x1C) || (gChapterData.chapterIndex == 0x1F) || (gChapterData.chapterIndex == 0x23)){
+        return true; //if in interlude, do allow
+    }
+    return false;
+}
+
 s8 BattleGetFollowUpOrder(struct BattleUnit** outAttacker, struct BattleUnit** outDefender) {
     if (gBattleTarget.battleSpeed > 250)
         return FALSE;

@@ -6,7 +6,7 @@ void Post_Nightcaller(){ //fog rolls in after combat
 	if (gActionData.unitActionType != UNIT_ACTION_COMBAT){
 		return;
 	}
-	if((gSkillTester(&gBattleActor.unit, NightcallerIDLink))){
+	if((gSkillTester(&gBattleActor.unit, NightcallerIDLink)) || (gSkillTester(&gBattleActor.unit, UmbralWisdomIDLink))){
 		SetEventId(40);
 		if(gChapterData.visionRange <= 3){
 			gChapterData.visionRange = 6;

@@ -1,6 +1,7 @@
 
 #define RemoveAllItem(item) "BYTE 0x40 0x0D item 0x00; POIN RemoveAllItem|1;"
 #define RemoveItemFromUnit(unit, item) "BYTE 0x40 0x0D unit item; POIN RemoveItemFromUnit|1;"
+#define CheckForItem(item) "SVAL s2 item; ASMC CheckIfItemIsInConvoy|1"
 
 ALIGN 4
 RemoveAllItem:
@@ -9,3 +10,8 @@ RemoveAllItem:
 ALIGN 4
 RemoveItemFromUnit:
 #incbin "item_collect_by_unit.dmp"
+
+ALIGN 4
+CheckIfItemIsInConvoy:
+#incbin "item_find.bin"
+

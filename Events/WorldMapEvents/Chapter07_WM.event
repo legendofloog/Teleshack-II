@@ -1,0 +1,8 @@
+WorldMapPointerTable(Chapter8,WM_Events)
+
+WM_Events:
+WM_SETNEXTLOCATION 0 0 Chapter8 //Needed for world map narration.
+SKIPWN
+WM_FXCLEAR1 0x0 0xFFFF 0xFFFF
+WM_FXCLEAR2 0x0 0xFFFF 0xFFFF
+ENDA

@@ -173,7 +173,7 @@ UNIT
 EnemyUnits:
 UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,18] 0x0 0x0 0x0 0x0 [YorsYari] BossHealAI
 UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,3] 0x0 0x0 0x0 0x0 [Miaodao] PursueWithoutHeedAI
-UNIT Buldak Thief 0x0      Level(7,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] BossNoAttackAI
+UNIT Buldak Thief 0x0      Level(5,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [SteelSword, Vulnerary] BossNoAttackAI
 UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [IceSword] BossHealAI
 UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [HandAxe] BossHealAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -216,7 +216,7 @@ UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [Iro
 UNIT
 
 NewRecruit:
-UNIT Iberis MageArmor 0x0 Level(7,Ally,False) [25,5] 0x0 0x0 0 0 [Thunder,Vulnerary] AttackInRangeAI
+UNIT Iberis MageArmor 0x0 Level(7,Ally,False) [25,5] 0x0 0x0 0 0 [Elfire,Vulnerary] NoAI
 UNIT Cleo Skyseeker_Dismounted Cleo Level(1,Ally,False) [26,5] 0x0 0x0 0 0 [0x0] NoAI
 UNIT Loewe Scaleshot_Dismounted Cleo Level(1,Ally,False) [26,6] 0x0 0x0 0 0 [0x0] NoAI
 UNIT
@@ -598,7 +598,7 @@ UNIT
 
 PostBattleMifanBuldakGroup:
 UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,10] 0x0 0x0 0 0 [Miaodao] PursueWithoutHeedAI
-UNIT Buldak Thief 0x0      Level(7,Enemy,False) [3,10] 0x0 0x0 0x0 0x0 [IronSword, Vulnerary] BossHealAI
+UNIT Buldak Thief 0x0      Level(5,Enemy,False) [3,10] 0x0 0x0 0x0 0x0 [SteelSword, Vulnerary] BossHealAI
 UNIT
 
 PostBattleYorGroup:

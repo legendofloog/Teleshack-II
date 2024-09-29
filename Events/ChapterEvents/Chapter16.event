@@ -291,6 +291,7 @@ BNE 2 s0 sC
     	GiveItem(AquaBrand,Varga)
     	ENUT 0x88
 LABEL 2
+/*
 CheckUnitDeadOrJailed(Emil)
 BNE 4 s0 sC
 	CHECK_EVENTID 0x89
@@ -301,6 +302,7 @@ BNE 4 s0 sC
 		GiveItem(ChargeLance,Emil)
 		ENUT 0x89
 LABEL 4
+*/
 SetBackground(OutsideFort)
 MUSC SheenaID
 Text(Ch16_Opening_3)

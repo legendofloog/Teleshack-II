@@ -33,7 +33,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x1F Hornet,0
 0x20 Milo,0
 0x21 Ichwep,0
-0x22 Mink,MinkSkillList|IsPointer
+0x22 Mink,0
 0x23 Tiberius,0
 0x24 Ellerey,0
 0x25 Mantou,0

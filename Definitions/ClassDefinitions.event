@@ -156,3 +156,6 @@
 #define Dracoknight_F_Dismounted 0x85
 #define DragonClass 0x86
 #define PegasusClass 0x87
+#define Freeblade 0x88
+#define LoeweSadClass 0x89
+#define DraganaDeadClass 0x8A

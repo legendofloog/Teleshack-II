@@ -138,15 +138,24 @@ void BattleGenerateHitEffects(struct BattleUnit* attacker, struct BattleUnit* de
 
         } // switch (GetItemWeaponEffect(attacker->weapon))
 
-    	if ((GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_DEVIL) && (BattleRoll1RN(31 - attacker->unit.lck, FALSE))) {
-        	gBattleHitIterator->attributes |= BATTLE_HIT_ATTR_DEVIL;
+    	if ((GetItemWeaponEffect(attacker->weapon) == WPN_EFFECT_DEVIL)) {
+        	if (gBattleHitIterator->attributes & BATTLE_HIT_ATTR_DEVIL)
+			{
 
-        	attacker->unit.curHP -= gBattleStats.damage;
+			}
+			else
+			{
+				if (gBattleStats.damage > defender->unit.curHP)
+            	gBattleStats.damage = defender->unit.curHP;
 
-        	if (attacker->unit.curHP < 0)
-            	attacker->unit.curHP = 0;
-    		}
-		else {
+        		defender->unit.curHP -= gBattleStats.damage;
+
+        		if (defender->unit.curHP < 0)
+            		defender->unit.curHP = 0;
+			}
+		}
+		else
+		{
         	if (gBattleStats.damage > defender->unit.curHP)
             	gBattleStats.damage = defender->unit.curHP;
 

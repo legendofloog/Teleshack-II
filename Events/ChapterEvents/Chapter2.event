@@ -47,7 +47,7 @@ LocationBasedEvents:
 Door(6,3)
 Door(14,10)
 Chest(LightRune,6,1)
-Chest(Fire,14,8)
+Chest(SteelAxe,14,8)
 LOCA 9 DelilahDoor [6,10] 0x12
 LOCA 10 HernandezDoor [18,4] 0x12
 LOCA 3 DraganaDoor [16,18] 0x12
@@ -152,7 +152,7 @@ UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(2,Enemy,True) [19,9] 0x0 0x0 0x
 UNIT
 
 Turn5ReinforcementsBottom:
-UNIT Chapter1Generics Myrmidon    0x0 Level(2,Enemy,True)  [1,19] 0x0 0x0 0x1 REDA1R13 [ShortSword] PursueWithoutHeedAI
+UNIT Chapter1Generics Myrmidon    0x0 Level(2,Enemy,True)  [1,19] 0x0 0x0 0x1 REDA1R19 [ShortSword] PursueWithoutHeedAI
 UNIT
 
 Turn5ReinforcementsRight:
@@ -353,6 +353,7 @@ ENDA
 EndingScene:
 CameraCursor(Dragana)
 Text(Ch2DraganaWinResponseText)
+CALL GiveBackKaiserschwertFake
 CHECK_EXISTS Boro_Ch1
 BEQ 776 s0 sC // if boro doesn't exist, then we skip him saying something at the end of the map
 	STAL 30

@@ -5,6 +5,21 @@ SkillIcons:
 //Icon graphics are uncompressed
 #define SkillIcon(skillID) "128*skillID+SkillIcons"
 
+ORG SkillIcon(DoubleCriticalID)
+#incbin "SkillIcons/Critical_Double_Icon.dmp"
+
+ORG SkillIcon(TripleCriticalID)
+#incbin "SkillIcons/Adept.dmp"
+
+ORG SkillIcon(QuadraCriticalID)
+#incbin "SkillIcons/Adept.dmp"
+
+ORG SkillIcon(PentaCriticalID)
+#incbin "SkillIcons/Adept.dmp"
+
+ORG SkillIcon(OmniCriticalID)
+#incbin "SkillIcons/Adept.dmp"
+
 ORG SkillIcon(HypeTrainID)
 #incbin "SkillIcons/AdrenalineRush.dmp"
 

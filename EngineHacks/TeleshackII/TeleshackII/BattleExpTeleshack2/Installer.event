@@ -12,6 +12,8 @@ InternalLevelEntry(Dragana,10)
 //InternalLevelEntry(Pelecaye,15)
 //InternalLevelEntry(Takai,15)
 //InternalLevelEntry(Jacinth,15)
+InternalLevelEntry(Zeus, 20)
+InternalLevelEntry(McCallum, 10)
 InternalLevelTerminator
 
 ALIGN 4

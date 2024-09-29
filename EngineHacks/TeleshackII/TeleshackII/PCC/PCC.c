@@ -2,6 +2,8 @@
 #include "gbafe.h"
 #include "PCC.h"
 
+u8 ApplyCriticalRolls(short critRate);
+
 int GetUnitPCC(Unit* unit){
 	return PCCTable[unit->pCharacterData->number];
 }
@@ -10,7 +12,7 @@ int BoundDamage(int damage){
 	if (damage < 0){
 		damage = 0;
 	}
-	if (damage > 0x7F){
+	if (damage > 0x7F){ //127 is the max damage you can do
 		damage = 0x7F;
 	}
 	return damage;
@@ -58,17 +60,97 @@ void New_Proc_Start(BattleUnit* attacker, BattleUnit* defender, NewBattleHit* ba
 			battleStats->critRate *= GetUnitPCC(&attacker->unit);
 		}
 
-		if (BattleRoll1RN(battleStats->critRate, 1) && (battleStats->critRate > 0) ){ // crit
-			battleStats->damage = BoundDamage(battleStats->attack - battleStats->defense) * 3;
-			battleHit->attributes |= BATTLE_HIT_ATTR_CRIT;
-		}
-		else{ // hit
-			battleStats->damage = BoundDamage(battleStats->attack - battleStats->defense);
-		}
+		//now, we check the actual critrate before rolling for a complicated web of criticals (awesome)
+
+		u8 criticalCoefficient = ApplyCriticalRolls(battleStats->critRate);
+		battleStats->damage = BoundDamage((battleStats->attack - battleStats->defense) * criticalCoefficient);
+		battleHit->attributes |= BATTLE_HIT_ATTR_CRIT; //gives it crit attribute, unsets if not a crit
+		battleHit->attributes |= BATTLE_HIT_ATTR_ATTACKER_SKILL;
+		switch (criticalCoefficient)
+		{
+			case 1:
+				battleHit->attributes ^= BATTLE_HIT_ATTR_CRIT; //XORs the bit
+				battleHit->attributes ^= BATTLE_HIT_ATTR_ATTACKER_SKILL;
+				break;
+			case 2:		
+				battleHit->skillID = DoubleCriticalIDLink;
+				break;
+			case 3:
+				battleHit->skillID = TripleCriticalIDLink;
+				break;
+			case 4:
+				battleHit->skillID = QuadraCriticalIDLink;
+				break;
+			case 5:
+				battleHit->skillID = PentaCriticalIDLink;
+				break;
+			case 10:
+				battleHit->skillID = OmniCriticalIDLink;
+				break;
+		}		
 	}
 	else { // miss
 		battleStats->damage = 0;
 		battleHit->attributes |= BATTLE_HIT_ATTR_MISS;
 	}
 
+}
+
+u8 ApplyCriticalRolls(short critRate)
+{
+	u8 dmgCoefficient = 1; //we'll set this and then multiply the damage by this at the end
+	
+	if (critRate >= 0 && critRate <= 100)
+	{
+		if (BattleRoll1RN(critRate, 1))
+		{
+			dmgCoefficient = 2;
+		}
+	}
+	else if (critRate > 100 && critRate <= 200)
+	{
+		if (BattleRoll1RN(critRate - 100, 1)) //shift crit down by a 100 for new roll
+		{
+			dmgCoefficient = 3;
+		}
+		else
+		{
+			dmgCoefficient = 2;
+		}
+	}
+	else if (critRate > 200 && critRate <= 300)
+	{
+		if (BattleRoll1RN(critRate - 200, 1)) //shift crit down by a 100 for new roll
+		{
+			dmgCoefficient = 4;
+		}
+		else
+		{
+			dmgCoefficient = 3;
+		}
+	}
+	else if (critRate > 300 && critRate <= 400)
+	{
+		if (BattleRoll1RN(critRate - 300, 1)) //shift crit down by a 100 for new roll
+		{
+			dmgCoefficient = 5;
+		}
+		else
+		{
+			dmgCoefficient = 4;
+		}
+	}
+	else //only possible way this happens is > 400
+	{
+		if (BattleRoll1RN(critRate - 400, 1)) //shift crit down by a 100 for new roll
+		{
+			dmgCoefficient = 10; //OmniCritical - fuck it just let them kill the guy
+		}
+		else
+		{
+			dmgCoefficient = 5;
+		}
+	}
+	
+	return dmgCoefficient;
 }

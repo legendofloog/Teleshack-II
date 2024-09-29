@@ -225,11 +225,6 @@ SpawnReinforcements(MidReinforcements2)
 NoFade
 ENDA
 
-ClearSeraFlag:
-ENUF 0x7C
-NoFade
-ENDA
-
 Turn4Reinforce:
 SpawnReinforcements(FlierReinforcements2)
 SpawnReinforcements(BackReinforcements1)

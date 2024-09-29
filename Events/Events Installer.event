@@ -29,6 +29,25 @@ NoFade
 ENDB
 
 ALIGN 4
+ClearSeraFlag:
+ENUF 0x7C
+CHECK_DEPLOYED Sera
+BEQ 1023 s0 sC
+	RECLASS Sera Swordmaster_F
+LABEL 1023
+NoFade
+ENDA
+
+ALIGN 4
+GiveBackKaiserschwertFake:
+CheckForItem(Kaiserschwert_Fake)
+BNE 1179 s0 sC //if it's here, then we skip this
+	SilentGiveItem(Kaiserschwert_Fake,Loewe)
+LABEL 1179
+NoFade
+ENDA
+
+ALIGN 4
 PrepShop1:
 SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch
 BYTE 0x0 0x0
@@ -44,3 +63,4 @@ PrepShop3:
 SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch SlimArch KnightProof
 BYTE 0x0 0x0
 ALIGN 4
+

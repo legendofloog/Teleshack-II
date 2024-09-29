@@ -30,8 +30,8 @@ SetUnitConGrowth(Cadenza,15)
 SetUnitConGrowth(Faolan,10)
 SetUnitConGrowth(Matthias,10)
 
-SetUnitConGrowth(Iberis,10)
-SetUnitConGrowth(Buldak,20)
+SetUnitConGrowth(Iberis,15)
+SetUnitConGrowth(Buldak,15)
 
 SetUnitConGrowth(Nora,15)
 SetUnitConGrowth(Hans,15)
@@ -102,15 +102,15 @@ SetUnitMovGrowth(Fangai,4)
 
 SetUnitMovGrowth(Gimm,5)
 SetUnitMovGrowth(Matthias,3)
-SetUnitMovGrowth(Tobie,5)
+SetUnitMovGrowth(Tobie,3)
 SetUnitMovGrowth(Awa,1)
 SetUnitMovGrowth(Cadenza,1)
 SetUnitMovGrowth(Faolan,4)
 
 SetUnitMovGrowth(Leina,4)
-SetUnitMovGrowth(Cromar,4)
+SetUnitMovGrowth(Cromar,1)
 
-SetUnitMovGrowth(Iberis,10)
+SetUnitMovGrowth(Iberis, 6)
 SetUnitMovGrowth(Buldak, 2)
 
 SetUnitMovGrowth(Nora, 1)

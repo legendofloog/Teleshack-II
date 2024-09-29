@@ -491,7 +491,7 @@ UNIT Groto Berserker Loewe Level(4,NPC,False) [11,15] 0x0 0x0 0x0 0x0 [BoneClub]
 UNIT Zhara Paladin Loewe Level(7,NPC,False) [17,7] 0x0 0x0 0x0 0x0 [Maharaghi,Silence,Elixir]     NoAI
 UNIT Ojasvi Noble_F Loewe Level(1,NPC,False) [16,11] 0x0 0x0 0x0 0x0 [DancingBladeItem] NoAI
 UNIT Tao Archer Loewe Level(10,NPC,False) [21,17] 0x0 0x0 0x0 0x0 [Taodao,RuneArrow]     NoAI
-UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Loewe Level(5,NPC,False) [21,13] 0x0 0x0 0x0 0x0 [MasterAxe,Longsword]     NoAI
 UNIT Boro_Ch16 Champion Loewe Level(5,NPC,False) [22,13] 0x0 0x0 0x0 0x0 [MasterLance]     NoAI
 UNIT Darcy AxeArmor Loewe Level(16,NPC,False) [21,6] 0x0 0x0 0x0 0x0 [BattleAxe, Hurlbat] NoAI
 UNIT
@@ -536,7 +536,7 @@ UNIT Loewe 0x0 0x0 Level(1,Ally,False) [6,8] 0 0 1 REDA9R11 [0x0] NoAI
 UNIT
 
 TrajanGroup:
-UNIT Trajan Hero Loewe Level(5,NPC,False) [11,3] 0x0 0x0 0x0 0x0 [MasterAxe,IronBlade]     NoAI
+UNIT Trajan Hero Loewe Level(5,NPC,False) [11,3] 0x0 0x0 0x0 0x0 [MasterAxe,Longsword]     NoAI
 UNIT
 
 TaoGroup:

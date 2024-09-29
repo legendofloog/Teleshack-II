@@ -203,7 +203,7 @@ int abs(int num){
 }
 bool IsSupportingUnitInRangeOfAttacker(Unit* supportingUnit, Unit* attackingUnit){
 
-    if (GetUnitDistance(attackingUnit, supportingUnit) <= 3){
+    if (GetUnitDistance(supportingUnit, attackingUnit) <= 3){
         return true;
     }
     
@@ -269,8 +269,6 @@ void New_DrawUnitScreenSupportList(){
 
     int yTile = 5, lineNum = 0;
 
-    int textColor = TEXT_COLOR_SYSTEM_WHITE;
-
     int supportAmt = GetROMUnitSupportCount(unit);
     int supportId  = 0;
 
@@ -283,7 +281,8 @@ void New_DrawUnitScreenSupportList(){
         if (level != 0)
         {
             int rankColor;
-
+            int textColor;
+            
             u8 pid = GetROMUnitSupportingId(unit, supportId);
 
             supportingUnit = GetUnitByCharId(pid);
@@ -299,6 +298,8 @@ void New_DrawUnitScreenSupportList(){
                 supportId++;
                 continue;
             }
+
+            textColor = TEXT_COLOR_SYSTEM_WHITE;
 
             if (supportingUnit->state & US_UNAVAILABLE || !(IsSupportingUnitInRangeOfAttacker(unit, supportingUnit)))
             {

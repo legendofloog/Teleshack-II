@@ -31,7 +31,7 @@ Door(16,11)
 Door(19,2)
 Door(24,6)
 DurabilityChest(GrowthScroll, BeiyrScroll,19,11)
-Chest(SteelAxe,22,2)
+Chest(Lightning,22,2)
 Chest(RedGem,24,3)
 Escape(27,11)
 Escape(27,12)
@@ -436,6 +436,7 @@ SET_HP Dragana
 ENUN
 EndOfEscapeRoutineASMC
 ENUN
+CALL GiveBackKaiserschwertFake
 MUSC 0x7FFF
 RemoveAll
 LOMA Chapter3Cutscene
@@ -510,9 +511,9 @@ CheckUnitDeadOrJailed(Mira)
 BEQ 500 s0 sC
 	STAL 20
 	SendAll(Dragana)
-	KILL Dragana
-	AWAIT_KILL Dragana
-	STAL 50
+	STAL 30
+	RECLASS Dragana DraganaDeadClass
+	STAL 30
 LABEL 500
 MOVE 25 Cleo [8,25]
 MOVE 25 Loewe [9,25]
@@ -523,9 +524,9 @@ BNE 27 s0 sC
 	TEXTSHOW EndingSceneTextA4
 	TEXTEND
 	SendAll(Dragana)
-	KILL Dragana
-	AWAIT_KILL Dragana
-	STAL 50
+	STAL 30
+	RECLASS Dragana DraganaDeadClass
+	STAL 30
 LABEL 27
 CheckUnitDeadOrJailed(Mira)
 BNE 28 s0 sC

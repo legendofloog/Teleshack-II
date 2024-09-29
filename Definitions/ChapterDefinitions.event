@@ -222,6 +222,7 @@
 #define EndgameConfigID 0xc9
 #define MansterConfigID 0xD5
 #define JungleMountainousMapchipConfigID 0xDE
+#define FlasubanVillageMapchipConfigCh6ID 0xe6
 
 // TileAnimations
 #define ThraciaCastleTileAnimationsID 0x8B

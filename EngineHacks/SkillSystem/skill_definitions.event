@@ -106,3 +106,8 @@
 #define ApotheosisID 96
 #define FlightID 97
 #define UmbraliumMightID 98
+#define DoubleCriticalID 99
+#define TripleCriticalID 100
+#define QuadraCriticalID 101
+#define PentaCriticalID 102
+#define OmniCriticalID 103

@@ -265,7 +265,7 @@ UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Iro
 UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [14,18] 0x0 0x0 0x0 0x0 [IronAxe]TwoActionAI 
 UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary]TwoActionAI 
 
-UNIT Cythes SwordArmor Wrathgar Level(9,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [IronBlade] AttackInRangeAI
+UNIT Cythes SwordArmor Wrathgar Level(9,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [Longsword] AttackInRangeAI
 
 UNIT Cythes LanceArmor Wrathgar Level(9,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
 UNIT Cythes LanceArmor Wrathgar Level(9,Enemy,True) [20,8] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI

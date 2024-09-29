@@ -14,7 +14,10 @@ s8 CanUnitRescue(struct Unit* actor, struct Unit* target){
     if (gSkillTester(target, NonCombatantIDLink)){
         return false; //cannot rescue noncombatants
     }
-    
+
+    if (gChapterData.chapterIndex == 0x05 && UNIT_FACTION(target) == UA_GREEN){ //is it ch 6 + green unit
+        return false; //can't do this bc it breaks how ch 6 functions
+    }
     int actorAid  = GetUnitAid(actor);
     int targetCon = UNIT_CON(target);
 

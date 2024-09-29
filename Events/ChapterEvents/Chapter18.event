@@ -25,11 +25,6 @@ TurnEventPlayer(0, ReinforcementsRigganEvent, 2)
 TurnEventPlayer(0, Reinforcements1Event, 5)
 END_MAIN
 
-ClearSeraFlag:
-ENUF 0x7C
-NoFade
-ENDA
-
 Turn1Event: // Maybe temp until I fix force deploy
 MountAll
 CAM1 [9,11]
@@ -259,7 +254,7 @@ UNIT
 ArenaUnits2:
 //UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [10,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI
 UNIT Gladiator2 Freelancer 0x0 Level(18,Enemy,True) [8,0] 0x0 0x0 0x0 0x0 [SteelLance] PursueWithoutHeedAI
-UNIT Gladiator2 Myrmidon 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [IronBlade] PursueWithoutHeedAI
+UNIT Gladiator2 Myrmidon 0x0 Level(18,Enemy,True) [11,0] 0x0 0x0 0x0 0x0 [Longsword] PursueWithoutHeedAI
 UNIT Gladiator2 Brigand 0x0 Level(18,Enemy,True) [10,1] 0x0 0x0 0x0 0x0 [Hammer] PursueWithoutHeedAI
 UNIT Gladiator2 Pirate 0x0 Level(18,Enemy,True) [9,1] 0x0 0x0 0x0 0x0 [Hurlbat] PursueWithoutHeedAI
 UNIT Gladiator2 Hunter 0x0 Level(18,Enemy,True) [9,0] 0x0 0x0 0x0 0x0 [SteelBow] PursueWithoutHeedAI

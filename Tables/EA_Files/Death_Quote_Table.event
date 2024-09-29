@@ -20,7 +20,7 @@ CaptureQuote(Hilmar,Chapter4,2, 2, HilmarDeathQuote, HilmarCaptureQuote)
 CaptureQuote(Riggan,Chapter5, 2, 7, RigganDeathQuoteText, RigganCaptureQuoteText)
 
 DeathQuote(McCallum, Chapter6, 0, McCallumDeathQuoteText)
-DeathQuote(Draken, Chapter6, 0, DrakenDeathQuoteText)
+CaptureQuote(Draken, Chapter6, 0, 0, DrakenDeathQuoteText, DrakenCaptureQuoteText)
 DeathQuote(Zeus, Chapter6, 20,Ch6ZeusCongratulations)
 
 DeathQuote(Mifan,Chapter7,16,0)

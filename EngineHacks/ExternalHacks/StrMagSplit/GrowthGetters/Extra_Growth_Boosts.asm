@@ -87,10 +87,17 @@ cmp		r0,#1
 bne EquipmentEffect
 
 UmbraliumMightEffect:
+cmp		r6, #18
+beq EquipmentEffect
+
+cmp 		r6, #19	@ skip if it's mov or con, don't boost these
+beq EquipmentEffect
+
 ldr		r0, ChapterFogRadius @ fow vision
 ldrb		r0, [r0]	@ gets current fog vision
 cmp 		r0, #0x0
 beq 		EquipmentEffect	@if no fog, do nothing
+
 
 mov		r1, #0x7
 sub		r1, r0

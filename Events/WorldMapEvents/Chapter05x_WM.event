@@ -21,6 +21,7 @@ WM_WAITFORSPRITES 0 0xFFFF 0xFFFF
 TEXTEND
 TerminateWorldMapText
 FADI 5 //show the two moving towards their destination before fading
+WMRemoveSprite(2)
 WM_SETNEXTLOCATION 0 0 Chapter6 //Needed for world map narration.
 SKIPWN
 WM_FXCLEAR1 0x0 0xFFFF 0xFFFF

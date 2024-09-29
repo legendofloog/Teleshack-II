@@ -19,10 +19,9 @@ PointerList:
 
 TurnBasedEvents:
 TurnEventPlayer(0, OhNoWTF, 1)
-TurnEventPlayer(0, ForHoursAtATime, 4)
 TurnEventPlayer(0, StareAtTheCeiling, 5)
 TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 7)
-TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 9)
+TurnEventPlayer(0, ForHoursAtATime, 9)
 END_MAIN
 
 ALIGN 32
@@ -81,7 +80,7 @@ UNIT
 EnemyTopLeftUnits:
 UNIT Chapter1Generics PegasusRider   0x0 Level(4,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [IronLance] ChargeAI
 UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,6] 0 0 0 0 [SlimArch] BossAI
-UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [1,1] 0 0 1 REDA1R4 [ShortLance] TwoActionAI
+UNIT Chapter1Generics AxeFighter   0x0 Level(4,Enemy,True) [1,1] 0 0 1 REDA1R4 [IronAxe] TwoActionAI
 UNIT
 
 EnemyTopRightUnits:
@@ -94,7 +93,7 @@ BottomLeftUnits:
 UNIT Chapter1Generics Bard   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA3R10 [Wind] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA2R13 [IronLance] AttackInRangeAI
 UNIT Chapter1Generics Ballistician   0x0 Level(4,Enemy,True) [0,14] 0 0 0 0 [SlimArch] BossAI
-UNIT Chapter1Generics Bard   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA0R18 [Lightning] AttackInRangeAI
+UNIT Chapter1Generics Bard   0x0 Level(4,Enemy,True) [0,16] 0 0 1 REDA0R18 [Yseod] AttackInRangeAI
 UNIT
 
 BottomRightUnits:
@@ -273,6 +272,7 @@ ENUT 3
 FADI 10
 FadeOutMusic
 DoAllThree
+CALL GiveBackKaiserschwertFake
 LOAD2 0x1 SickoMode
 ENUN
 CAMERA_CENTERED Loewe
@@ -284,7 +284,11 @@ Music(Explorer_RuinaForgottenRuinsID)
 Text(Ch4EndingScene1)
 MOVE 15 Cleo [0,13]
 ENUN
+STAL 15
+RECLASS Loewe LoeweSadClass
+STAL 15
 Text(Ch4EndingScene2)
+RECLASS Loewe Scaleshot
 MOVE 10 Loewe [0,14]
 FADI 5
 ENUN

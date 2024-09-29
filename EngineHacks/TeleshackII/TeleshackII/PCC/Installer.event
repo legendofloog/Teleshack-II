@@ -14,6 +14,22 @@ ALIGN 4
 BladeDanceIDLink:
 BYTE BladeDanceID
 
+ALIGN 4
+DoubleCriticalIDLink:
+BYTE DoubleCriticalID
+ALIGN 4
+TripleCriticalIDLink:
+BYTE TripleCriticalID
+ALIGN 4
+QuadraCriticalIDLink:
+BYTE QuadraCriticalID
+ALIGN 4
+PentaCriticalIDLink:
+BYTE PentaCriticalID
+ALIGN 4
+OmniCriticalIDLink:
+BYTE OmniCriticalID
+
 #define SetUnitPCC(unit, pcc) "PUSH; ORG PCCTable + unit; BYTE pcc; POP"
 
 // replace Proc_Start in proc loop with New_Proc_Start
@@ -22,17 +38,18 @@ SetUnitPCC(Mira,0)
 SetUnitPCC(Iskra,1)
 SetUnitPCC(Svetomir,0)
 SetUnitPCC(Alena,4)
-SetUnitPCC(Delilah,2)
+SetUnitPCC(Delilah,3)
 SetUnitPCC(Alex,2)
 SetUnitPCC(Axel,2)
-SetUnitPCC(Filone,3)
-SetUnitPCC(Tobie,3)
-SetUnitPCC(Gimm,2)
+SetUnitPCC(Filone,2)
+SetUnitPCC(Tobie,2)
+SetUnitPCC(Gimm,3)
 SetUnitPCC(Cadenza,2)
 SetUnitPCC(Leina,2)
 
-SetUnitPCC(Iberis,5)
+SetUnitPCC(Iberis,0)
 SetUnitPCC(Buldak,2)
+
 SetUnitPCC(Jenny,3)
 SetUnitPCC(Meldan,0)
 SetUnitPCC(Valse,2)

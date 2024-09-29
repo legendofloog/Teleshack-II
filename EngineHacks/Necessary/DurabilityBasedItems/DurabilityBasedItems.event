@@ -116,6 +116,7 @@ NameTableEntry(DreedurScrollName)
 NameTableEntry(CherneScrollName)
 NameTableEntry(EganScrollName)
 NameTableEntry(BrynjaScrollName)
+NameTableEntry(AsgeirScrollName)
 
 ALIGN 4
 GrowthScrollDescTable:
@@ -130,3 +131,4 @@ NameTableEntry(DreedurScrollDesc)
 NameTableEntry(CherneScrollDesc)
 NameTableEntry(EganScrollDesc)
 NameTableEntry(BrynjaScrollDesc)
+NameTableEntry(AsgeirScrollDesc)

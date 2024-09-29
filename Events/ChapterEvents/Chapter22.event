@@ -230,12 +230,6 @@ CALL $9EE2C4
 NoFade
 ENDA
 
-
-ClearSeraFlag:
-ENUF 0x7C
-NoFade
-ENDA
-
 ALIGN 4
 Ch22Armory:
 SHORT Longsword
@@ -307,7 +301,7 @@ ALIGN 4
 
 
 BossUnit:
-UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22]/*[4,26]*/ 0x0 0x0 0x0 0x0 [Zweihander,GreatLance,BattleAxe,CounterBow] AttackInRangeAI
+UNIT Eleanor General  0x0 Level(10,Enemy,False) [28,22]/*[4,26]*/ 0x0 0x0 0x0 0x0 [Zweihander,GreatLance,BattleAxe, BraveBow] AttackInRangeAI
 UNIT
 
 EnemyUnits:

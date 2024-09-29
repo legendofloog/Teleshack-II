@@ -325,11 +325,11 @@ setMugEntry(GimmMug, GimmMugData, 3, 7, 3, 5)
 
 ALIGN 16
 TobieMugData:
-#incbin "Dmp/Tobie(ZoramineFae)_mug.dmp"
-#incbin "Dmp/Tobie(ZoramineFae)_frames.dmp"
-#incbin "Dmp/Tobie(ZoramineFae)_palette.dmp"
-#incbin "Dmp/Tobie(ZoramineFae)_minimug.dmp"
-setMugEntry(TobieMug, TobieMugData, 3, 5, 3, 3)
+#incbin "Dmp/Tobie (ArcherBias)_mug.dmp"
+#incbin "Dmp/Tobie (ArcherBias)_frames.dmp"
+#incbin "Dmp/Tobie (ArcherBias)_palette.dmp"
+#incbin "Dmp/Tobie (ArcherBias)_minimug.dmp"
+setMugEntry(TobieMug, TobieMugData, 2, 6, 3, 4)
 
 ALIGN 16
 AwaMugData:

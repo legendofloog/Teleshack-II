@@ -25,6 +25,10 @@ DodgeTextIDLink:
 SHORT DodgeTextID
 
 ALIGN 4
+DashTextIDLink:
+SHORT DashTextID
+
+ALIGN 4
 MSSPAGE2PCCTextIDLink:
 SHORT SS_PursuitCriticalCoefficient
 

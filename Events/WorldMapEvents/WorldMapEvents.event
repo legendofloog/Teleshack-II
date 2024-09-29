@@ -45,5 +45,21 @@
   ALIGN 4
   #include "Chapter05x_WM2.event"
 }
+{
+  ALIGN 4
+  #include "Chapter06_WM.event"
+}
+{
+  ALIGN 4
+  #include "Chapter06_WM2.event"
+}
+{
+  ALIGN 4
+  #include "Chapter07_WM.event"
+}
+{
+  ALIGN 4
+  #include "Chapter07_WM2.event"
+}
 ALIGN 4
 // #include "EpilogueEvents.event"

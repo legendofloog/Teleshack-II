@@ -4,60 +4,77 @@
 #include "_Common.event"
 ALIGN 4
 pMovModifiers: // Movement
-	POIN prAddUnitBaseMov prAddUnitMovBonus (prGetItemMovBonus-1) prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prNullifyIfGuardAI prArmorMarchCheck prEquipmentMov
+	POIN prAddUnitBaseMov prAddUnitMovBonus prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prArmorMarchCheck prEquipmentMov 
 	#ifdef STAIRS_ASM
 	POIN StairsMoveDebuff-1
 	#endif
 	POIN prNullifyIfFreeze
+	POIN prPowerstaffCheck
+	POIN prInterludeMovement
+	POIN prNullifyIfGuardAI
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
-	POIN prPowerstaffCheck
+	
 WORD 0
 
+ALIGN 4
 prAddUnitBaseMov: // byte 0x12 in ROM class data is base class movement
 	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12))) 
 
-
-prPowerstaffCheck:
-	rIfUnitHasState(0x400)
-		rIfUnitHasSkill(AlacrityID)
-			rConstant(0)
-
+ALIGN 4
 prAddUnitMovBonus:
 	rAdd(rSByteAt(UNIT_MOV_BONUS))
 
+ALIGN 4
 prSkillCelerity:
 	rIfUnitHasSkill(CelerityID)
 		rAddConst(2)
-		
+
+ALIGN 4		
 prSkillPoise:
 	rIfUnitHasSkill(PoiseID)
 		rAddConst(1)
-
-prNullifyIfGuardAI:
-	rIfUnitHasNotAllegience(UA_BLUE)
-		rIfUnitHasGuardAI
-			rConstant(0)
-
-prNullifyIfFreeze:
-	rIfUnitHasStatus(0x9)
-		rConstant(0)
-
-prRallyMov:
-	#include "_asm/RallyMov.lyn.event"
-	POIN GetDebuffs|1
-
-ALIGN 4
-prAddEquipMov:
-	rAdd(rForUnitEquipped(rCallExternal(prGetItemMovBonus)))
-	#include "_asm/GetItemMovBonus.lyn.event"
 
 ALIGN 4
 prItemPassiveMov:
 	rPassiveStatBoosts(STAT_MOV)
 
+ALIGN 4
 prEquipmentMov:
 	rEquipmentBonus(STAT_MOV)
 
+ALIGN 4
+prNullifyIfGuardAI:
+	rIfUnitHasNotAllegience(UA_BLUE)
+		rIfUnitHasGuardAI
+			rConstant(0)
+
+ALIGN 4
+prNullifyIfFreeze:
+	rIfUnitHasStatus(0x9)
+		rConstant(0)
+
+ALIGN 4
+prInterludeMovement:
+	rIfUnitHasAllegience(UA_BLUE)
+		rIf(prCheckIfInInterlude)
+			rConstant(15)
+	
+ALIGN 4
+prCheckIfInInterlude:
+	rCallExternal(CheckIfInInterludeMSG^1)
+
+ALIGN 4
+prPowerstaffCheck:
+rIfUnitHasState(0x400)
+	rIfUnitHasSkill(AlacrityID)
+		rConstant(0)
+
+ALIGN 4
+prRallyMov:
+	#include "_asm/RallyMov.lyn.event"
+	POIN GetDebuffs|1
+
+ALIGN 4
 #endif // MODULAR_GETTER_MOVEMENT_EVENT

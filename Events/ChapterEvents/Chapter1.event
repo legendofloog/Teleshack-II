@@ -18,9 +18,9 @@ TurnEventPlayer(0, TutorialZero, 1)
 TurnEventPlayer(0, TutorialTime, 2)
 TurnEventPlayer(0, AlenaSpawn, 2)
 TurnEventPlayer(0, AlenaCharge, 3)
-TurnEventPlayer(0,RaschwitzWarning,4)
-TurnEventPlayer(0,LastBoroWarning,8)
-TurnEventPlayer(0, BoroSpawn, 10)
+TurnEventPlayer(0,RaschwitzWarning,5)
+TurnEventPlayer(0,LastBoroWarning,7)
+TurnEventPlayer(0, BoroSpawn, 9)
 END_MAIN
 
 TutorialZero:
@@ -308,12 +308,6 @@ EraseBackground
 ENUN
 FadeOutMusic
 BROWNBOXTEXT Linoras1YearLaterTopLeftText[8,8]
-LOAD1 1 Flashback2Units1
-ENUN
-STAL 20
-FlashCursor(Helman,60)
-MUSC FF5_Nostalgia
-Text(BeginningSceneLoeweFlashback2Text1)
 LOAD1 1 Flashback2Units2
 ENUN
 STAL 30
@@ -323,6 +317,12 @@ FlashCursor(Chapter1Generics,30)
 Text(Ch1BeginningSceneTrajanFlashback2Text0)
 FlashCursor(Senny,60)
 Text(Ch1BeginningSceneDraganaFlashback2Text0)
+LOAD1 1 Flashback2Units1
+ENUN
+STAL 20
+FlashCursor(Helman,60)
+MUSC FF5_Nostalgia
+Text(BeginningSceneLoeweFlashback2Text1)
 SingleUnitMove(Helman,15,10,2)
 SingleUnitMove(Helman,15,10,5)
 SingleUnitMove(Helman,15,12,4)
@@ -528,6 +528,7 @@ BNE 2 s0 sC
 	Text(EndingSceneTextLoeweAndCleoIskraAlive3)
 	GOTO 907
 LABEL 2
+CALL GiveBackKaiserschwertFake
 Text(EndingSceneTextLoeweAndCleo)
 LABEL 907
 MOVE 15 Cleo [20,15]

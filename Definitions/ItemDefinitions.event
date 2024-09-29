@@ -2,7 +2,7 @@
 //#define SlimSword 0x02
 #define SteelSword 0x03
 #define SilverSword 0x04
-#define IronBlade 0x05
+//#define IronBlade 0x05
 #define Longsword 0x06
 #define LongSword 0x06
 #define Greatsword 0x07
@@ -229,6 +229,7 @@
 #define TrainedArc 0xD7
 #define AquaBrand 0xD8
 #define ChargeLance 0xD9
+#define DuelistLance ChargeLance
 #define Poincare 0xDA
 #define Sink 0xDB
 #define WoodlandsHuke 0xDC

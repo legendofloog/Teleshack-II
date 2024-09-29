@@ -1,10 +1,4 @@
 ALIGN 4
-Headshot:
-#incbin "Headshot/Headshot.dmp"
-POIN SkillTester
-WORD HeadshotID
-
-ALIGN 4
 Culling:
 #incbin "Culling/Culling.dmp"
 POIN SkillTester

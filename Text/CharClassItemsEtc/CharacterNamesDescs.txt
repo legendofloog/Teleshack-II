@@ -92,7 +92,7 @@ his taxes. An expert metalworker.[X]
 Varga[X]
 
 ## VargaDesc
-Seems to be a turncoat Selesian.[N]
+A turncoat knight, connected to Cleo.[N]
 Surly and secretive.[X]
 
 ## TyrName
@@ -113,8 +113,8 @@ sister of Vetheim's abbey.[X]
 Hernandez[X]
  
 ## HernandezDesc
-A contemptible but incompetent[N]
-brigand.[X]
+A contemptible but[N]
+incompetent brigand.[X]
 
 ## DraganaName
 Dragana[X]
@@ -151,7 +151,7 @@ her father's steps. A steady learner.[X]
 Zwieback[X]
 
 ## ZwiebackDesc
-A former village guardsman. [N]
+A former village guardsman.[N]
 He's troubled yet stalwart.[X]
 
 ## HilName
@@ -159,21 +159,21 @@ Hilmar[X]
 
 ## HilDesc
 A knight of Cidor's guards.[N]
-Loyal to the end.[X]
+Conniving, but undyingly loyal.[X]
 
 ## LeinaName
 Leina[X]
 
 ## LeinaDesc
-A young lady from Chouwouj.[N]
-Looking for the divine bow.[X]
+A courteous young lady from Chouwouj,[N]
+traveling Orodreth to find her place.[X]
 
 ## CromarName
 Cromar[X]
 
 ## CromarDesc
-A mysterious swordsman[N]
-dead set on vengeance.[X]
+A mysterious swordsman imbued[N]
+with the power of night. Brooding.[X]
 
 ## VeidName
 Veid[X]
@@ -193,37 +193,36 @@ arena. An undefeated legend.[X]
 Zeus[X]
 
 ## ZeusDesc
-The God King of the arena.[N]
-Rumored to be royalty.[X]
+The God King of the arena. Many rumors[N]
+abound about the face under the armor.[X]
 
 ## McCallumName
 McCallum[X]
 
 ## McCallumDesc
-A pirate cruel in his younger days[N]
-now seeking atonement.[X]
+A pirate cruel in his younger[N]
+days, now seeking atonement.[X]
 
 ## GladiatorName
 Gladiator[X]
 
 ## GladiatorDesc
-A ruthless pitfighter.[X]
+A ruthless pitfighter, risking death[N]
+in hopes of gaining the grand prize.[X]
 
 ## ArenaSpectatorName
 Spectator[X]
 
-## CivilianName
-Civilian[X]
-
-## CivilianDesc
-A regular civilian.[X]
+## SpectatorDesc
+Lovers of bloodsport, these civilians[N]
+eagerly wait for the arena's champion.[X]
 
 ## Ch6PirateName
 Pirate[X]
 
 ## Ch6PirateDesc
-Ruthless pirate under the[N]
-banner of Draken.[X]
+Ruthless pirates under Draken's banner,[N]
+set on taking over the Yuria Islands.[X]
 
 ## DrakenName
 Draken[X]
@@ -231,24 +230,6 @@ Draken[X]
 ## DrakenDesc
 The former first mate of[N]
 McCallum, now the captain.[X]
-
-## FishermanName
-Fisherman[X]
-
-## FishermanDesc
-A fisherman.[X]
-
-## LoanSharkName
-Loanshark[X]
-
-## LoanSharkDesc
-A loanshark.[X]
-
-## GamblerName
-Gambler[X]
-
-## GamblerDesc
-A Gambler.[X]
 
 ## LongxiaName
 Longxia[X]

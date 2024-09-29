@@ -20,6 +20,9 @@
 // Attribute for defining items with passive stat bonuses
 #define PASSIVE_ITEM_BOOSTS_ATTR 0x00800000
 
+#define PASSIVE_ITEM_SKILL_ATTR 0x00800000
+
+
 //item ID for skill scroll
 #define SkillScroll 0xBC
 

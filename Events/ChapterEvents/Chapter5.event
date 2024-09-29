@@ -36,9 +36,16 @@ END_MAIN
 
 MiscBasedEvents:
 AFEV 3 EndingScene 7 //basically, if riggan is captured, jump to the ending scene also
+AFEV 1 RigganQuoteGone 8 //dummy event triggered by flag 8, sets flag 1
+AFEV 1 RigganQuoteGone 9
+AFEV 1 RigganQuoteGone 10 
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
 END_MAIN
+
+RigganQuoteGone:
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -91,10 +98,9 @@ LoadUnit(17,27)
 UNIT
 	
 EnemyUnits:
-UNIT Riggan Mage 0x0 Level(7,Enemy,False) [17,23] 0x0 0x0 0x0 0x0 [Thunder,GrowthScroll] AttackInRangeAI
-//UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GrowthScroll] AttackInRangeAI
+UNIT Riggan Mage 0x0 Level(7,Enemy,False) [15,4] 0x0 0x0 0x0 0x0 [Thunder,GrowthScroll] AttackInRangeAI
 UNIT Chapter1Generics Priest   Riggan Level(5,Enemy,True) [16,3] 0x0 0x0 0x0 0x0 [Mend] TwoActionAI
-UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [14,3] 0x0 0x0 0x0 0x0 [Hammer] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [14,3] 0x0 0x0 0x0 0x0 [Malkhut,PureWater] TwoActionAI
 UNIT
 
 EnemyUnits2:
@@ -113,7 +119,7 @@ UNIT Chapter1Generics SwordFighter  Riggan Level(5,Enemy,True) [14,15] 0x0 0x0 0
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [Thunder,Vulnerary] TwoActionAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [7,13] 0x0 0x0 0x0 0x0 [Yseod, PureWater] TwoActionAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
-UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
+UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [3,11] 0x0 0x0 0x0 0x0 [Lightning] TwoActionAI
 UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [10,6] 0x0 0x0 0x0 0x0 [LongLance] BossAI
 UNIT Chapter1Generics LanceArmor  Riggan Level(5,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [LongLance] BossAI
 UNIT Chapter1Generics SwordArmor  Riggan Level(5,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [Longsword] BossAI
@@ -128,7 +134,7 @@ UNIT
 EnemyReinforcements_A:
 UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [3,17] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
 UNIT Chapter1Generics Bard   Riggan Level(5,Enemy,True) [23,17] 0x0 0x0 0x0 0x0 [Fire] ChargeAI
-UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [12,3] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
+UNIT Chapter1Generics AxeSoldier   Riggan Level(5,Enemy,True) [12,3] 0x0 0x0 0x0 0x0 [Hammer] ChargeAI
 UNIT Chapter1Generics LanceSoldier   Riggan Level(5,Enemy,True) [17,3] 0x0 0x0 0x0 0x0 [ShortLance] ChargeAI
 UNIT
 
@@ -279,7 +285,7 @@ UNIT Kwame Civilian_2 Cleo Level(1,NPC,False) [23,34] 0x0 0x0 1 REDA15R27 [0x0] 
 UNIT
 
 NewPlayerUnits:
-UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA15R26 [ShortAxe,Hurlbat] NoAI
+UNIT Longxia Corsair_F Cleo Level(6,Ally,False) [22,34] 0x0 0x0 1 REDA15R26 [LunarAxe,Hurlbat] NoAI
 UNIT Fangai DarkMage Cleo Level(4,Ally,False) [23,34] 0x0 0x0 1 REDA15R27 [Arachnid,Heal,TorchStaff] NoAI
 UNIT
 
@@ -307,6 +313,7 @@ Text(PostBattleTime)
 LABEL 3
 FADI 15
 RemoveAll
+CALL GiveBackKaiserschwertFake
 ENUN
 InterludeRemovalRoutineASMC
 ENUN

@@ -126,10 +126,10 @@ Spell Mirror[X]
 Mt increased by enemy Atk if magical.[X]
 
 ## AlairsGaleName
-Arai's Gale[X]
+Twin Gale[X]
 
 ## AlairsGaleDesc
-Half the power, half the price. Brave.[X]
+Brave.[X]
 
 ## SisterRingName
 Sister Ring[X]
@@ -170,7 +170,7 @@ Restore life to all units on the map.[X]
 Devil's Dagger[X]
 
 ## DevilDaggerDesc
-Fixed damage of 10. (25-Lck)% backfire.[X]
+Fixed damage. (26-Lck)% backfire.[X]
 
 ## BalladOfWarName ^
 Ballad of War[X]
@@ -345,10 +345,10 @@ Aqua Brand[X]
 Varga[LockIcon]. Magic dmg. +5 Spd.[X]
 
 ## ChargeLanceName
-Charge[X]
+Chargelance[X]
 
 ## ChargeLanceDesc
-Emil[LockIcon]. +1 dmg per square moved.[X]
++1 dmg per square moved.[X]
 
 ## PoincareName
 Archival[X]
@@ -667,31 +667,31 @@ Impaler[X]
 [LockIcon]Boro. Negates Def.[X]
 
 ## AngelicRobeDesc
-Increases HP by 3 points.[NL]
+Increases HP by 4 points.[NL]
 Vanishes after use.[X]
 
 ## EnergyRingDesc
-Increases Str by 1 point.[NL]
+Increases Str by 3 points.[NL]
 Vanishes after use.[X]
 
 ## SkillBookDesc
-Increases Skill by 2 points.[NL]
+Increases Skill by 4 points.[NL]
 Vanishes after use.[X]
 
 ## SpeedwingDesc
-Increases Spd by 1 point.[NL]
+Increases Spd by 2 points.[NL]
 Vanishes after use.[X]
 
 ## GoddessIconDesc
-Increases Lck by 3 points.[NL]
+Increases Lck by 4 points.[NL]
 Vanishes after use.[X]
 
 ## DragonshieldDesc
-Increases Def by 1 point.[NL]
+Increases Def by 2 points.[NL]
 Vanishes after use.[X]
 
 ## TalismanDesc
-Increases Res by 2 points.[NL]
+Increases Res by 4 points.[NL]
 Vanishes after use.[X]
 
 ## BootsDesc
@@ -699,7 +699,7 @@ Increases Mov by 1 point.[NL]
 Vanishes after use.[X]
 
 ## BodyRingDesc
-Increases Con by 1 point.[NL]
+Increases Con by 2 points.[NL]
 Vanishes after use.[X]
 
 ## FirestoneName
@@ -853,3 +853,9 @@ Negates DEF. Can be used at range.[X]
 
 ## CannotCritDesc
 Cannot crit.[X]
+
+## AsgeirScrollName
+Asgeir Scroll[X]
+
+## AsgeirScrollDesc
++10% Spd/Def. +20% Lck.[X]

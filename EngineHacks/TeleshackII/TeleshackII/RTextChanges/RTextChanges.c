@@ -2,6 +2,8 @@
 #include "gbafe.h"
 #include "RTextChanges.h"
 
+void DrawSupportNumber(int number, int x, int y, int amountToMoveRight);
+
 int GetHelpBoxItemInfoKind(Item item)
 {
     if (item.durability == 0xFF && item.number == 0xFE)
@@ -175,25 +177,51 @@ int DrawHelpBoxSupportLabels(Item item) {
         cnt++;
     }
 
+    // plan: separate out each digit
+    // ones can be gotten by using modulo
+    //once i have the ones, i can subtract that from the original, and divide by 10 to get tens place
+    //if tens is 0, don't draw
+    //then, if number is negative, draw a negative sign
+
+    
+
     Text_InsertString(&gHelpBoxSt.text[0], 0, 8, GetStringFromIndex(AtkTextIDLink)); // this is Atk
-    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[0], 24, 7, atkDisplay);
-    
+    DrawSupportNumber(atkDisplay, 0, 0, 25);
+
     Text_InsertString(&gHelpBoxSt.text[0], 40, 8, GetStringFromIndex(HitTextIDLink)); // this is Hit
-    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[0], 72, 7, hitDisplay);
+    DrawSupportNumber(hitDisplay, 40, 0, 35);
     
-    Text_InsertString(&gHelpBoxSt.text[0], 88, 8, GetStringFromIndex(CritTextIDLink)); // this is Crit
-    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[0], 120, 7, crtDisplay);
+    Text_InsertString(&gHelpBoxSt.text[0], 85, 8, GetStringFromIndex(CritTextIDLink)); // this is Crit
+    DrawSupportNumber(crtDisplay, 85, 0, 35);
     
     Text_InsertString(&gHelpBoxSt.text[1], 0, 8, GetStringFromIndex(DefTextIDLink)); // this is Def
-    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[1], 24, 7, defDisplay);
+    DrawSupportNumber(defDisplay, 0, 1, 25);
     
     Text_InsertString(&gHelpBoxSt.text[1], 40, 8, GetStringFromIndex(AvoTextIDLink)); // this is Avo
-    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[1], 72, 7, avoDisplay);
+    DrawSupportNumber(avoDisplay, 40, 1, 35);
     
-    Text_InsertString(&gHelpBoxSt.text[1], 88, 8, GetStringFromIndex(DodgeTextIDLink)); // this is Dodge
-    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[1], 120, 7, evaDisplay);
-    
+    Text_InsertString(&gHelpBoxSt.text[1], 85, 8, GetStringFromIndex(DodgeTextIDLink)); // this is Dodge
+    DrawSupportNumber(evaDisplay, 85, 1, 35);    
     return 2;
+}
+
+void DrawSupportNumber(int number, int x, int y, int amountToMoveRight)
+{
+    bool isNegative = false;
+    if (number < 0)
+    {
+        isNegative = true;
+        number *= -1;
+    }
+    Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[y], x+amountToMoveRight, 7, number);
+    if (number >= 10 && isNegative)
+    {
+        Text_InsertString(&gHelpBoxSt.text[y], x+amountToMoveRight-15, 7, GetStringFromIndex(DashTextIDLink)); // this is Atk
+    }
+    if (number < 10 && isNegative)
+    {
+        Text_InsertString(&gHelpBoxSt.text[y], x+amountToMoveRight-5, 7, GetStringFromIndex(DashTextIDLink));
+    }
 }
 
 //not really R text but it is related

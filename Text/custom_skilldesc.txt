@@ -3,13 +3,13 @@ Culling: If foe's HP is full, adds 25%[N]
 of foe's max HP to Zwieback's Atk.[X]
 
 ## SD_Headshot
-Headshot: Adds 50% of foe's[N]
-missing HP to Filone's Atk.[X]
+Headshot: When this unit initiates,[N]
+each attack's damage is increased[N]
+by 50% of the foe's missing HP.[X]
 
-## SD_Radiance ^
-Radiance: Leina's heals make allies Radiant.[N]
-Her healing and attacks heal Radiant allies[N]
-by 10 + Mag (unless ally is being healed by Leina).[X]
+## SD_Radiance
+Radiance: When Leina heals an ally,[N]
+they gain the Radiant status.[X]
 
 ## SD_Nightcaller
 Duskbringer: Cromar's dark pact calls[N]
@@ -30,8 +30,8 @@ infantry units by 2 points.[X]
 
 ## SD_Avenger
 Avenger: Loewe gains purpose with[N]
-each wound, gaining Crit and losing[N]
-Avo equal to his missing HP.[X]
+each wound, gaining Crit/Hit and[N]
+losing Avo equal to his missing HP.[X]
 
 ## SD_RecklessCharge
 Reckless Charge: When mounted, moving[N]
@@ -43,47 +43,32 @@ Aftershock: If Iskra uses thunder magic[N]
 on PP and hits an enemy, they cannot[N]
 counter for their next battle this turn.[X]
 
-## SD_Conversion
-Conversion: Swap HP with higher health[N]
-foes before doing damage.[X]
-
-## SD_TerrainEffective
-Terrain Effective: +12 damage, +20 hit[N]
-against enemies on defensive terrain.[X]
-
 ## SD_NonCombatant
-Noncombatant: Not part of the conflict,[N]
-immune to damage and getting hit.[X]
-
-## SD_GladiatorsAura
-Gladiator's Aura: All characters[N]
-within 5 tiles have +15 avoid.[X]
-
-## SD_SpellMirror
-Spell Mirror: Reflects Mt[N]
-of magical attacks.[X]
+Noncombatant: Not part of the conflict.[N]
+Cannot be attacked by any faction.[X]
 
 ## SD_AzuriumMight
-Azurium Might: This unit can cross[N]
-water tiles with no penalty. +5 Res.[X]
+Azure Grace: This unit can cross[N]
+water tiles with no penalty. +2 Spd.[X]
 
 ## SSN_AzuriumMight
 Azurium[X]
 
 ## SSD_AzuriumMight
-The divine element Azurium.[N]
+The magic material Azurium.[N]
 Use to grant mastery over water.[X]
 
 ## SSN_UmbraliumMight
 Umbralium[X]
 
 ## SSD_UmbraliumMight
-The divine element Umbralium.[N]
+The magic material Umbralium.[N]
 Use to grant mastery over night.[X]
 
 ## SD_UmbraliumMight
-Umbralium Might: All growths increased[N]
-by (7 - Fog Vision) * 5. +5 Skl.[X]
+Umbral Wisdom: Res +4. This unit[N]
+calls fog after combat. Non Mov/Con[N]
+growths go up by (7 - Fog Vision) * 5.[X]
 
 ## SD_Alacrity
 Alacrity: Can act again after[N]
@@ -102,7 +87,7 @@ to any of their allies.[X]
 
 ## SD_BladeDance *
 Blade Dance: On initiation, follow-up attacks[N]
-are consecutive. If enemy dies and Ftg < M. HP,[N]
+are consecutive. If enemy dies and Ftg <= M. HP,[N]
 unit evades fatal attacks until next turn.[X]
 
 ## SD_Spelltwister *
@@ -157,24 +142,9 @@ Decian Fealty: If Lyre is adjacent to[N]
 Loewe or Cleo, grants +10 Hit/Crit and[N]
 strike twice consecutively.[X]
 
-## SD_WhisperWind
-Whisperwind: Can canto after attacking[N]
-with wind magic. [X]
-
-## SD_FarShock
-Far Shock: Thunder magic gets -10 hit[N]
-and +1 range. [X]
-
-## SD_DragonBreath
-Dragon Breath: Fire magic pierces res.[X]
-
 ## SD_SpurHit
 Spur Hit: Rashid empowers his friends,[N]
 giving +15 Hit to all adjacent units.[X]
-
-## SD_PiercingBolt
-Piercing Bolt: When Viktor attacks with[N]
-thunder magic, he ignores 1/2 enemy Res.[X]
 
 ## SD_DragonRage
 Dragon Rage: If the Augur is past her[N]
@@ -185,3 +155,17 @@ are brave when initiating.[X]
 Flight: Rashid can fly over obstacles[N]
 but takes effective damage from bows.[X]
 
+## SD_DoubleCritical
+Critical![X]
+
+## SD_TripleCritical
+Critical!![X]
+
+## SD_QuadraCritical
+Critical!!![X]
+
+## SD_PentaCritical
+Critical!!!![X]
+
+## SD_OmniCritical
+Critical!!!!![X]
