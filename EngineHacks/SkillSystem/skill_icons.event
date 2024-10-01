@@ -9,16 +9,16 @@ ORG SkillIcon(DoubleCriticalID)
 #incbin "SkillIcons/Critical_Double_Icon.dmp"
 
 ORG SkillIcon(TripleCriticalID)
-#incbin "SkillIcons/Adept.dmp"
+#incbin "SkillIcons/Critical_Triple.dmp"
 
 ORG SkillIcon(QuadraCriticalID)
-#incbin "SkillIcons/Adept.dmp"
+#incbin "SkillIcons/Critical_Quadra.dmp"
 
 ORG SkillIcon(PentaCriticalID)
-#incbin "SkillIcons/Adept.dmp"
+#incbin "SkillIcons/Critical_Penta.dmp"
 
 ORG SkillIcon(OmniCriticalID)
-#incbin "SkillIcons/Adept.dmp"
+#incbin "SkillIcons/Critical_Omni.dmp"
 
 ORG SkillIcon(HypeTrainID)
 #incbin "SkillIcons/AdrenalineRush.dmp"

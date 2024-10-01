@@ -299,10 +299,10 @@ NoFade
 ENDA
 
 CidorGameOverArrival:
-SpawnReinforcements(CidorReinforcements1)
-SpawnReinforcements(CidorReinforcements2)
-SpawnReinforcements(CidorReinforcements3)
-SpawnReinforcements(CidorReinforcements4)
+LoadReinforcements(CidorReinforcements1)
+LoadReinforcements(CidorReinforcements2)
+LoadReinforcements(CidorReinforcements3)
+LoadReinforcements(CidorReinforcements4)
 CameraCursor(Cidor)
 Text(Ch3CidorGameOverText)
 CALL GameOverStart

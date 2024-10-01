@@ -607,7 +607,24 @@ FADU 5
 MUSC FE5_InTheBattle_Fate
 BROWNBOXTEXT SomeTimeLaterText[8,8]
 FlashCursor(Trajan,60)
-Text(Ch5xStrategyRoom)
+SetBackground(OrodrethMap)
+TEXTSTART
+TEXTSHOW Ch5xStrategyRoom
+TEXTEND
+FlashCursor(10, 4, 60)
+TEXTCONT
+TEXTEND
+FlashCursor(3, 5, 60)
+TEXTCONT
+TEXTEND
+FlashCursor(8, 9, 60)
+TEXTCONT
+TEXTEND
+FlashCursor(11, 6, 60)
+TEXTCONT
+TEXTEND
+REMA
+EraseBackground
 MOVE 15 Cleo [8,9]
 MOVE 15 Loewe [6,9]
 STAL 60
