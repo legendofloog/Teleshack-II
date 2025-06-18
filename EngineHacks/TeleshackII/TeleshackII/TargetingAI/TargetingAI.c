@@ -6,7 +6,7 @@
 s8 AiSimulateBattleAgainstTargetAtPosition(struct AiCombatSimulationSt* st) {
         
     BattleGenerateSimulation(gActiveUnit, GetUnit(st->targetId), st->xMove, st->yMove, st->itemSlot);
-    AiComputeCombatScore(st);
+    ComputeAiAttackWeight(st);
     return 1;
 }
 
@@ -15,17 +15,20 @@ void ComputeAiAttackWeight(struct AiCombatSimulationSt* st) {
 
     score = AiBattleGetDamageDealtWeight(); //max score: 60
 
+    if ((gBattleTarget.canCounter == false) && (gBattleActor.battleAttack - gBattleTarget.battleDefense) > 0) {
+        score += (50 * gBattleActor.battleEffectiveHitRate) / 100; 
+    }
     score -= AiBattleGetDamageTakenWeight(); //minimum score: -40
 
     if (score < 0) {
         score = 0;
     }
 
-    
-
     if (gSkillTester(&gBattleTarget.unit, ProvokeIDLink)){ //does target have provoke?
-        score = 91; //target over everything, even another possible kill
+        score += 91; //target over everything, even another possible kill
     }
+
+   
 
     if (score != 0) {
         score = score * 10;
@@ -81,18 +84,15 @@ int AiBattleGetDamageTakenWeight(void) {
     int score;
 
     if (gBattleTarget.unit.curHP <= 0){
-        return (-30); //if they would kill, consider no damage taken to prioritize it
+        return 0; //if they would kill, consider no damage taken to prioritize it
     }
 
     if ((gBattleTarget.battleAttack - gBattleActor.battleDefense) <= 0){
-        return (-20); //no damage, no fear
+        return 0; //no damage, no fear
     }
-    if ((gBattleTarget.weapon.number == 0) && (gBattleTarget.weapon.durability == 0)){
-        return (-20); //no enemy weapon, no fear
+    if (gBattleTarget.canCounter == false){
+        return 0; //no enemy weapon, no fear
     }
-    if (gBattleActor.unit.curHP == 0){
-        return 50; //if the unit dies in the combat, lowered priority
-    } 
     
     score = (gBattleTarget.battleAttack - gBattleActor.battleDefense) * (gBattleTarget.battleEffectiveHitRate);
     score /= 100; //score for one attack from the enemy

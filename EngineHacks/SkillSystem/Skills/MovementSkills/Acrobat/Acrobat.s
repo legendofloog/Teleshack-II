@@ -1,8 +1,7 @@
 .thumb
 .org 0x0
 
-.equ PirateMoveTable, FlierMoveTable+4
-.equ SkillChecker, PirateMoveTable+4
+.equ SkillChecker, FlierMoveTable+4
 .equ AcrobatID, SkillChecker+4
 .equ AzuriumMightID, SkillChecker+8
 .equ FlightID, AzuriumMightID+4
@@ -25,7 +24,8 @@ beq   NoFlight
    
     ldr   r4, FlierMoveTable
 
-NoFlight:
+NoFlight:	@ have to do the azurium check last, otherwise i want to end it all
+mov   r5, r3 	@ need to preserve r3 since that's where all the acrobat info is being stored
 mov   r0, r7
 ldr   r1,AzuriumMightID
 ldr   r2,SkillChecker
@@ -34,41 +34,48 @@ mov   r14,r2
 cmp   r0, #0x0
 beq   NoAzuriumMight
 
-    ldr r2, [r7, #0x4]         @loads class data
-    ldr r0, [r2, #0x28]
-    ldr r3, [r7, #0x0]         @loads char data
-    ldr r1, [r3, #0x28]
-    orr r0, r1
-    mov r1, #0x1
-    lsl r1, #12			@ shift 0x1 3 bits to the left, that's peg icon
-    and r0, r1
-    cmp r0, #0x0               @if unit is peg, branch
-    bne NoAzuriumMight		
-
-    ldr r2, [r7, #0x4]         @loads class data
-    ldr r0, [r2, #0x28]
-    ldr r3, [r7, #0x0]         @loads char data
-    ldr r1, [r3, #0x28]
-    orr r0, r1
-    mov r1, #0x8
-    lsl r1, #8
-    and r0, r1
-    cmp r0, #0x0
-    bne NoAzuriumMight		@ checks if unit has dragon icon, if it does, branch
-    
-    ldr   r4, PirateMoveTable
+	mov r6, #1
+	b AcrobatTime
 
 NoAzuriumMight:
+mov r6, #0 @ this is being tracked so i can check it during the acrobat loop
+
+AcrobatTime:
 mov   r0, r7
 ldr   r1,AcrobatID
 ldr   r2,SkillChecker
 mov   r14,r2
 .short  0xF800
 mov   r1,#0x0       @counter
-ldr   r5,MoveCostLoc
+ldr   r5, MoveCostLoc
 Loop1:
+        
+
     add   r2,r4,r1
     add   r3,r5,r1
+
+    cmp   r6, #1
+    bne NoAzuriumCheck @ if azurium is not active, do normal acrobat things
+
+	cmp r1, #16 @ river
+	beq AzuriumSetter 
+
+	cmp r1, #21 @ sea
+	beq AzuriumSetter	
+
+	cmp r1, #22 @ lake
+	beq AzuriumSetter
+
+	cmp r1, #60 @ water
+	beq AzuriumSetter
+
+	b NoAzuriumCheck
+
+	AzuriumSetter:
+	mov r2, #0x1
+	b NoAcrobat
+
+    NoAzuriumCheck:	
     ldrb  r2,[r2]
     cmp   r0,#0x0
     beq   NoAcrobat

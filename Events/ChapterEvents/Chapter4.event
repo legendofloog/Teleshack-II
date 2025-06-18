@@ -200,7 +200,8 @@ BeginningScene:
 DismountAll
 EraseAllFatigue
 MUSC FF5_Sealed_Away
-SetBackground(0x10)
+SetBackground(CastleHallway)
+BROWNBOXTEXT CastleSeleseTopLeftText[8,8]
 Text(Ch4BeginningScene1)
 STAL 5
 FADI 60
@@ -271,7 +272,7 @@ EndingScene:
 ENUT 3
 FADI 10
 FadeOutMusic
-DoAllThree
+RemoveAllDouble
 CALL GiveBackKaiserschwertFake
 LOAD2 0x1 SickoMode
 ENUN

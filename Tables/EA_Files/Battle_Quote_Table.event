@@ -1,6 +1,7 @@
 #define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
 #define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
 
+//c1
 SpecifiedBattleConvo(Raschwitz_Ch1,Loewe,Chapter1,18,RaschwitzLoeweBattleQuoteText) // always put your specified battle convos above unspecified
 SpecifiedBattleConvo(Raschwitz_Ch1,Alena,Chapter1,19,RaschwitzAlenaBattleQuoteText)
 SpecifiedBattleConvo(Raschwitz_Ch1, Iskra, Chapter1, 20, RaschwitzIskraBattleQuoteText)
@@ -12,6 +13,7 @@ SpecifiedBattleConvo(Boro_Ch1, Loewe, Chapter1, 0x9D, Chapter1BoroLoeweBattleQuo
 SpecifiedBattleConvo(Boro_Ch1, Cleo, Chapter1, 0x9E, Chapter1BoroCleoBattleQuoteText)
 UnspecifiedBattleConvo(Boro_Ch1, Chapter1, 0x9F, BoroGenericBattleQuoteText)
 
+//c2
 SpecifiedBattleConvo(Tyr_Ch2,Cleo,Chapter2,0x15,TyrCleoBattleConvo)
 SpecifiedBattleConvo(Tyr_Ch2,Mira,Chapter2,0x16,TyrMiraBattleConvo)
 SpecifiedBattleConvo(Tyr_Ch2,Delilah,Chapter2,0x17,TyrDelilahBattleConvo)
@@ -23,24 +25,27 @@ SpecifiedBattleConvo(Boro_Ch1, Loewe, Chapter2, 0x9D, Chapter1BoroLoeweBattleQuo
 SpecifiedBattleConvo(Boro_Ch1, Cleo, Chapter2, 0x9E, Chapter1BoroCleoBattleQuoteText)
 UnspecifiedBattleConvo(Boro_Ch1, Chapter2, 0x9F, BoroGenericBattleQuoteText)
 
-//add emory battle quotes?
+//c3
 SpecifiedBattleConvo(Emory_Ch3, Alex, Chapter3, 0x10, EmoryAlexBattleQuote)
 SpecifiedBattleConvo(Emory_Ch3, Axel, Chapter3, 0x11, EmoryAxelBattleQuote)
 SpecifiedBattleConvo(Emory_Ch3, Dragana, Chapter3, 0x12, EmoryDraganaBattleQuote)
 SpecifiedBattleConvo(Emory_Ch3, Emil, Chapter3, 0x13, EmoryEmilBattleQuote)
 UnspecifiedBattleConvo(Emory_Ch3,Chapter3,1,EmoryBattleQuote)
 
+//c4
 SpecifiedBattleConvo(Hilmar,Loewe,Chapter4,8,HilmarLoeweBossQ)
 SpecifiedBattleConvo(Hilmar,Filone,Chapter4,9,HilmarFiloneBossQ)
 SpecifiedBattleConvo(Hilmar,Cleo,Chapter4,10,HilmarCleoBossQ)
 SpecifiedBattleConvo(Hilmar,Zwieback,Chapter4,11, HilmarZwiebackBossQ)
 UnspecifiedBattleConvo(Hilmar,Chapter4,1,HilmarBossQ)
 
+//c5
 SpecifiedBattleConvo(Riggan,Fangai,Chapter5,8,RigganFangaiBattleQuote)
 SpecifiedBattleConvo(Riggan,Longxia,Chapter5,9,RigganLongxiaBattleQuote)
 SpecifiedBattleConvo(Riggan,Iskra,Chapter5,10,RigganIskraBattleQuote)
 UnspecifiedBattleConvo(Riggan,Chapter5,1,RigganBattleQuoteText)
 
+//c6
 SpecifiedBattleConvo(McCallum, Cromar, Chapter6, 0x16, McCallumCromarBattleQuoteText)
 SpecifiedBattleConvo(McCallum, Leina, Chapter6, 0x17, McCallumLeinaBattleQuoteText)
 
@@ -48,38 +53,78 @@ SpecifiedBattleConvo(Draken, Longxia, Chapter6, 0x18, DrakenLongxiaBattleQuoteTe
 SpecifiedBattleConvo(Draken, Mira, Chapter6, 0x19, DrakenMiraBattleQuoteText)
 UnspecifiedBattleConvo(Draken,Chapter6,1,DrakenBattleQuoteText)
 
-//add 7 boss battle quotes?
-UnspecifiedBattleConvo(Mifan,Chapter7,20,MifanBattleQuoteText)
-UnspecifiedBattleConvo(Wellworth,Chapter7,21,WellworthBattleQuoteText)
-UnspecifiedBattleConvo(Yor,Chapter7,22,YorBattleQuoteText)
-UnspecifiedBattleConvo(TheGiant,Chapter7,23,TheGiantBattleQuoteText)
+//c7
 UnspecifiedBattleConvo(Buldak, Chapter7,28, BuldakEnemyBattleQuoteText)
-SpecifiedBattleConvo(Buldak,TheGiant,Chapter7,32,BuldakTheGiantBattleConvo)
-SpecifiedBattleConvo(Buldak,Wellworth,Chapter7,33,BuldakWellworthBattleConvo)
 
+SpecifiedBattleConvo(Mifan, Loewe, Chapter7,34, MifanLoeweBattleConvo)
+SpecifiedBattleConvo(Mifan, Iberis, Chapter7,35, MifanIberisBattleConvo)
+UnspecifiedBattleConvo(Mifan,Chapter7,20,MifanBattleQuoteText)
+
+SpecifiedBattleConvo(Buldak,Wellworth,Chapter7,33,BuldakWellworthBattleConvo)
+SpecifiedBattleConvo(Cleo, Wellworth,Chapter7,36, WellworthCleoBattleConvo)
+UnspecifiedBattleConvo(Wellworth,Chapter7,21,WellworthBattleQuoteText)
+
+SpecifiedBattleConvo(Cadenza,Yor, Chapter7, 37, YorCadenzaBattleConvo)
+SpecifiedBattleConvo(Buldak,Yor, Chapter7, 16, BuldakYorBattleConvo)
+UnspecifiedBattleConvo(Yor,Chapter7,22,YorBattleQuoteText)
+
+SpecifiedBattleConvo(Faolan,TheGiant,Chapter7,38,TheGiantFaolanBattleConvo)
+SpecifiedBattleConvo(Buldak,TheGiant,Chapter7,32,BuldakTheGiantBattleConvo)
+UnspecifiedBattleConvo(TheGiant,Chapter7,23,TheGiantBattleQuoteText)
+
+//c8
+SpecifiedBattleConvo(Hege,Nora,Chapter8,14,HegeNoraBossQ)
+SpecifiedBattleConvo(Hege,Hans,Chapter8,13,HegeHansBossQ)
+SpecifiedBattleConvo(Hege,Emil,Chapter8,12,HegeEmilBossQ)
+SpecifiedBattleConvo(Hege,Varga,Chapter8,11,HegeVargaBossQ)
 SpecifiedBattleConvo(Hege,Cleo,Chapter8,10,HegeCleoBossQ)
 UnspecifiedBattleConvo(Hege,Chapter8,1,HegeBossQ)
 
-UnspecifiedBattleConvo(Francis,Chapter8,12,FrancisBossQ)
+//c9
+SpecifiedBattleConvo(Wrathgar,Loewe,Chapter9,20,WrathgarLoeweBattleQuote)
+SpecifiedBattleConvo(Wrathgar,Jenny,Chapter9,21,WrathgarJennyBattleQuote)
+SpecifiedBattleConvo(Wrathgar,Meldan,Chapter9,22,WrathgarMeldanBattleQuote)
+SpecifiedBattleConvo(Wrathgar,Mish,Chapter9,24,WrathgarMishBattleQuote)
+SpecifiedBattleConvo(Wrathgar,Tobie,Chapter9,25,WrathgarTobieBattleQuote)
+
+UnspecifiedBattleConvo(Elias,Chapter9,23,Ch9EliasBossQuote)
+
 
 UnspecifiedBattleConvo(Wrathgar,Chapter9,1,WrathgarBossQ)
 UnspecifiedBattleConvo(Jenny,Chapter9,10,JennyBossQ)
 UnspecifiedBattleConvo(Meldan,Chapter9,11,MeldanBossQ)
 
 //chapter 10
-SpecifiedBattleConvo(Cidor,Cleo,Chapter10,8,Ch10CidorCleoBossQuote)
-SpecifiedBattleConvo(Cidor,Loewe,Chapter10,9,Ch10CidorLoeweBossQuote)
-SpecifiedBattleConvo(Cidor,Mira,Chapter10,10,Ch10CidorMiraBossQuote)
-SpecifiedBattleConvo(Cidor,Iskra,Chapter10,11,Ch10CidorIskraBossQuote)
-SpecifiedBattleConvo(Cidor,Korovai,Chapter10,12,Ch10CidorKorovaiBossQuote)
-UnspecifiedBattleConvo(Cidor,Chapter10,13,Ch10CidorBossQuote)
-UnspecifiedBattleConvo(Johanna,Chapter10,14,Ch10JohannaBossQuote)
-UnspecifiedBattleConvo(Elias,Chapter10,15,Ch10EliasBossQuote)
-SpecifiedBattleConvo(Mifan,Buldak,Chapter10,21,Ch10MifanBuldakBossQuote)
-SpecifiedBattleConvo(Mifan,Valse,Chapter10,22,Ch10MifanValseBossQuote)
-SpecifiedBattleConvo(Mifan,Hornet,Chapter10,23,Ch10MifanHornetBossQuote)
-SpecifiedBattleConvo(Mifan,Korovai,Chapter10,31,Ch10MifanKorovaiBossQuote)
-UnspecifiedBattleConvo(Mifan,Chapter10,32,Ch10MifanBossQuote)
+
+SpecifiedBattleConvo(Cidor,Cleo,Chapter10,10,Ch10CidorCleoBQ)
+SpecifiedBattleConvo(Cidor,Loewe,Chapter10,11,Ch10CidorLoeweBQ)
+SpecifiedBattleConvo(Cidor,Mira,Chapter10,12,Ch10CidorMiraBQ)
+SpecifiedBattleConvo(Cidor,Iskra,Chapter10,13,Ch10CidorIskraBQ)
+SpecifiedBattleConvo(Cidor,Korovai,Chapter10,14,Ch10CidorKorovaiBQ)
+SpecifiedBattleConvo(Cidor, Alena,Chapter10,15,Ch10CidorAlenaBQ)
+SpecifiedBattleConvo(Cidor,Svetomir,Chapter10,39,Ch10CidorSvetomirBQ)
+SpecifiedBattleConvo(Cidor,Delilah,Chapter10,17,Ch10CidorDelilahBQ)
+UnspecifiedBattleConvo(Cidor,Chapter10,1,Ch10CidorBQ)
+
+//done
+SpecifiedBattleConvo(Mifan,Buldak,Chapter10,18,Ch10MifanBuldakBQ)
+SpecifiedBattleConvo(Mifan,Valse,Chapter10,19,Ch10MifanValseBQ)
+SpecifiedBattleConvo(Mifan,Hornet,Chapter10,20,Ch10MifanHornetBQ)
+SpecifiedBattleConvo(Mifan,Korovai,Chapter10,21,Ch10MifanKorovaiBQ)
+SpecifiedBattleConvo(Mifan,Loewe,Chapter10,30,Ch10MifanLoeweBQ)
+UnspecifiedBattleConvo(Mifan,Chapter10,22,Ch10MifanBQ)
+
+SpecifiedBattleConvo(Johanna,Cleo,Chapter10,23,Ch10JohannaCleoBossQuote)
+SpecifiedBattleConvo(Johanna,Varga,Chapter10,24,Ch10JohannaVargaBossQuote)
+UnspecifiedBattleConvo(Johanna,Chapter10,25,Ch10JohannaBossQuote)
+
+UnspecifiedBattleConvo(Wellworth,Chapter10,26,Ch10WellworthBQ)
+UnspecifiedBattleConvo(TheGiant,Chapter10,27,Ch10TheGiantBQ)
+UnspecifiedBattleConvo(Yor,Chapter10,28,Ch10YorBQ)
+
+SpecifiedBattleConvo(Buldak,Iberis,Chapter10,37,Ch10BuldakIberisBQ)
+UnspecifiedBattleConvo(Buldak,Chapter10,29,Ch10BuldakBQ)
+
 
 //Chapter 11
 SpecifiedBattleConvo(Cleo,Epony,Chapter11,25,Ch12xCleoEponyBattleQuote)

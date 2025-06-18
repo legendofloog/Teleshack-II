@@ -118,24 +118,6 @@ Really?[Beat]That's pathetic.[CloseEyes][A][X]
 I guess I got my[N]
 just desserts.[CloseEyes][A][X]
 
-## YorDeathQuoteText
-[MidLeft][LoadYor]
-Ouch.[CloseEyes][A][X]
-
-## MifanDeathQuoteText
-[MidLeft][LoadMifan]
-I can't[Beat][Beat][N]
-Must stand[Beat][Beat][CloseEyes][A][X]
-
-## WellworthDeathQuoteText
-[MidLeft][LoadWellworth]
-Mifan, are you safe?[CloseEyes][A][X]
-
-## TheGiantDeathQuoteText
-[MidLeft][LoadTheGiant]
-How did they[Beat][Beat][N]
-Get through?[Beat][CloseEyes][A][X]
-
 ## NoraDeathQuote
 [MidRight][LoadNora]
 Lord Korovai, please[N]
@@ -146,17 +128,6 @@ forgive me[Beat][CloseEyes][CloseEyes][A][X]
 Finally, I can rest[N]
 after all this time[Beat][CloseEyes][A][X]
 
-## HegeDeathQuote
-[MidLeft][LoadHege]
-How could I lose to these[N]
-traitors?[AN]
-I must escape![AN][X]
-
-## FrancisDeathQuote
-[MidLeft][LoadFrancis]
-Well, blast[Beat][N]
-Not how I wanted it to end[Beat][CloseEyes][A][X]
-
 ## JennyDeathQuote
 [MidLeft][LoadJenny]
 Sis[Beat][Beat]Sorry.[Beat][N]
@@ -166,32 +137,6 @@ I'm not gonna be coming home[Beat][CloseEyes][A][X]
 [MidLeft][LoadMeldan]
 Can I be[Beat][Beat] proud?[Beat][N]
 Of[Beat][Beat] the life I led?[CloseEyes][A][X]
-
-## WrathgarDeathQuote
-[MidRight][LoadWrathgar]
-Yes![Beat]Gooood!!![Beat][N]
-A proper end[Beat][Beat]for a warrior![CloseEyes][A][X]
-
-## Ch10CidorDeathQuote
-[MidLeft][LoadCidor]
-Bested like this?[Beat]Impossible[Beat][N]
-I can still[Beat][A][X]
-
-## Ch10JohannaDeathQuote
-[MidLeft][LoadJohanna]
-To think I'd fall to these[N]
-vermin[Beat] General[Beat] I'm sorry[Beat][CloseEyes][CloseEyes][A][X]
-
-## Ch10EliasDeathQuote
-[MidLeft][LoadElias]
-Impressive. I must[N]
-fall back for now,[AN]
-but next time,[N]
-I will not lose again.[A][X]
-
-## Ch10HernandezDeathQuote
-[MidRight][LoadHernandez]
-Oof[Beat][CloseEyes][A][X]
 
 ## KorovaiDeathQuote
 [MidRight][LoadKorovai]
@@ -387,7 +332,8 @@ So far away[Beat][A][CloseEyes][X]
 
 ## ShawDeathQuoteText
 [MidRight][LoadShaw]
-It was always a matter of time[Beat][A][CloseEyes][X]
+It was always[Beat][N]
+a matter of time[Beat][A][CloseEyes][X]
 
 ## BarodDeathQuoteText
 [MidLeft][LoadBarod]

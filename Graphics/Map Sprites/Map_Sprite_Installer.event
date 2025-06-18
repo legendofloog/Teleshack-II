@@ -561,3 +561,11 @@ DraganaDeadStanding:
 ALIGN 4
 LoeweSadStanding:
 #incbin "Dmp/loewesad.dmp"
+
+ALIGN 4
+WarMonkStanding:
+#incbin "Dmp/War Monk (M) Axe {Der}-stand.dmp"
+
+ALIGN 4
+WarMonkWalking:
+#incbin "Dmp/War Monk (M) Axe {Der}-walk.dmp"

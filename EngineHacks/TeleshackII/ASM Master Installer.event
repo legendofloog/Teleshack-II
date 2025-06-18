@@ -29,8 +29,6 @@
 
 #include "FE8-Convoy_Partition_and_Item_Combining/FE8-Convoy_Stuff_EA.event" //soley being used for item combination
 
-#include "RingRework/RingRework_Installer.event"
-
 #include "NarrowFontExtension/SerifExtension.event"
 
 #include "PromoLevelCheck/PromoLevelCheck.lyn.event" //fixes IER bug where promo can be done at any level
@@ -72,6 +70,8 @@
 #include "TeleshackII/TeleshackII_Installer.event"
 
 #include "ScriptedBattleNumbers/ScriptedBattles.event"
+
+#include "SummonRework/SummonReworkInstaller.event"
 
 // thief vision set to 0
 PUSH
@@ -127,12 +127,6 @@ ORG $2cd30
 BYTE 0xFF
 POP
 */
-
-//default status duration is infinite
-//PUSH
-//ORG $178EA
-//BYTE 2
-//POP
 
 // removes drop flag from enemies opening chests
 PUSH
@@ -251,4 +245,60 @@ ORG $32036
 BYTE 0xFF
 ORG $322C6
 BYTE 0xFF
+POP
+
+// removes throne and floor RES
+PUSH
+ORG $80c513 //floor
+BYTE 0
+ORG $80c51A //throne
+BYTE 0
+POP
+
+// modifies Terrain def
+PUSH
+ORG $80C4D9 // throne 
+BYTE 5
+ORG $80C4C6 //forest
+BYTE 0
+ORG $80C4C7 //thicket
+BYTE 1
+ORG $80C4D7 //pillar
+BYTE 2
+POP
+
+//modifies terrain avo
+PUSH
+ORG $80C483 
+BYTE 10 //fort
+ORG $80C484
+BYTE 10 //gate
+ORG $80C485
+BYTE 15 //forest
+ORG $80C486
+BYTE 20 //thicket
+ORG $80C48A
+BYTE 15 //mountain
+ORG $80C48B
+BYTE 20 //peak
+ORG $80C496
+BYTE 10 //pillar
+ORG $80C498
+BYTE 15 //throne
+ORG $80C94C
+BYTE 10 //gate again
+POP
+
+// removes Terrain healing
+PUSH
+ORG $80C74E //fort
+BYTE 0
+ORG $80C74F //gate
+BYTE 0
+ORG $80C763 //throne
+BYTE 0
+ORG $80C767 //gate
+BYTE 0
+ORG $80C768 //church
+BYTE 0
 POP

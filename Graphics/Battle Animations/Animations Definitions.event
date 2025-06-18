@@ -13,7 +13,7 @@
 #define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
 #define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
 #define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
-#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Hurlbat 0x00 ; SHORT Animation; BYTE BoneClub 0x00; SHORT Animation; BYTE Axle2 0x00; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Hurlbat 0x00 ; SHORT Animation; BYTE BoneClub 0x00; SHORT Animation; BYTE Axle2 0x00; SHORT Animation; BYTE Tomahawk 0x00; SHORT Animation; BYTE MasterAxe 0x00; SHORT Animation"
 #define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
 #define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
 #define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
@@ -268,6 +268,12 @@
 #define SlayerAxeAnim 0xBA	
 #define SlayerHandaxeAnim 0xBB
 #define SlayerUnarmedAnim 0xBC
+
+#define WarMonkStaffAnim 0xBD
+#define WarMonkAxeAnim 0xBE
+#define WarMonkHandaxeAnim 0xBF
+#define WarMonkUnarmedAnim 0xC0
+
 
 
 ALIGN 4
@@ -833,4 +839,12 @@ SwordAnim(SlayerSwordAnim)
 AxeAnim(SlayerAxeAnim)
 HandAxeAnim(SlayerHandaxeAnim)
 UnarmedAnim(SlayerUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WarMonkAnims:
+AxeAnim(WarMonkAxeAnim)
+HandAxeAnim(WarMonkHandaxeAnim)
+StaffAnim(WarMonkStaffAnim)
+UnarmedAnim(WarMonkUnarmedAnim)
 EndAnim

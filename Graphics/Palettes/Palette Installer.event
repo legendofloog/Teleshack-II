@@ -12,8 +12,8 @@ IskraMageKnight:
 SvetomirPriest:
 	#incbin "./_palettes/SvetomirPriest.lzpal" 
 
-SvetomirHighPriest:
-	#incbin "./_palettes/SvetomirHighPriest.lzpal" 
+SvetomirWarMonk:
+	#incbin "./_palettes/SvetomirWarMonk.lzpal" 
 
 MiraThiefFighter:
 	#incbin "./_palettes/MiraThiefFighter.lzpal" 
@@ -666,8 +666,14 @@ HornetAKDismounted:
 KorovaiDismounted:
 	#incbin "./_palettes/KorovaiDismounted.lzpal" 
 
-CromarHero2:
-	#incbin "./_palettes/CromarHero2.lzpal" 
+CromarSlayer:
+	#incbin "./_palettes/CromarSlayer.lzpal" 
+
+YorHalberdier:
+	#incbin "./_palettes/YorHalberdier.lzpal" 
+
+WellworthHero:
+	#incbin "./_palettes/WellworthHero.lzpal" 
 
 BardTweak:
 	#incbin "./_palettes/BardTweak.lzpal" 

@@ -16,7 +16,6 @@ ALIGN 4
 AcrobatCheck:
 #incbin "Acrobat/Acrobat.dmp"
 POIN RashidMovementCost
-POIN AzuriumMovementCost
 POIN SkillTester
 WORD AcrobatID
 WORD AzuriumMightID

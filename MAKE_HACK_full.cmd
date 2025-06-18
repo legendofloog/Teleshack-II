@@ -10,9 +10,9 @@ set "source_rom=%~dp0FE8_clean.gba"
 
 set "main_event=%~dp0ROMBuildfile.event"
 
-set "target_rom=%~dp0Bells_Of_Byelen_v1_6.gba"
-set "target_ups=%~dp0Bells_Of_Byelen_v1_6.ups"
-set "target_sym=%~dp0Bells_Of_Byelen_v1_6.sym"
+set "target_rom=%~dp0Bells_Of_Byelen_v1_7.gba"
+set "target_ups=%~dp0Bells_Of_Byelen_v1_7.ups"
+set "target_sym=%~dp0Bells_Of_Byelen_v1_7.sym"
 
 @rem defining tools
 

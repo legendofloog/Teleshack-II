@@ -160,7 +160,7 @@ UNIT Chapter1Generics AxeSoldier Tyr_Ch2 Level(2,Enemy,True) [19,9] 0x0 0x0 0x1 
 UNIT
 
 BoroUnitGroup2:
-UNIT Boro_Ch1 Halberdier 0x00 Level(5,Enemy,False) [1,0] 0x0 0x0 0x1 REDA1R0 [Impaler] PursueWithoutHeedAI
+UNIT Boro_Ch1 Halberdier 0x00 Level(1,Enemy,False) [1,0] 0x0 0x0 0x1 REDA1R0 [Javelin, SilverAxe, SilverLance] PursueWithoutHeedAI
 UNIT
 
 OpeningCutsceneUnits:
@@ -192,7 +192,7 @@ UNIT Tyr_Ch2 LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [17,6] 0x0 0x0 0x1 REDA12R
 UNIT Chapter1Generics LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [18,6] 0x0 0x0 0x1 REDA13R13 [IronLance, DoorKey, ChestKey] NeverMoveAI
 UNIT Raschwitz_Ch1 LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [10,6] 0x0 0x0 0x1 REDA10R10 [IronLance, DoorKey, ChestKey] NeverMoveAI
 UNIT 0x4B LanceSoldier Tyr_Ch2 Level(1,Enemy,True) [11,6] 0x0 0x0 0x1 REDA11R10 [IronLance, DoorKey, ChestKey] NeverMoveAI
-UNIT Boro_Ch1 Halberdier 0x00 Level(5,NPC,False) [18,5] 0x0 0x0 0x0 0x0 [Impaler] PursueWithoutHeedAI
+UNIT Boro_Ch1 Halberdier 0x00 Level(5,NPC,False) [18,5] 0x0 0x0 0x0 0x0 [Javelin] PursueWithoutHeedAI
 UNIT
 
 EndingCutsceneUnits2:
@@ -369,7 +369,7 @@ SET_HP Cleo
 CheckMaxHP(Loewe)
 SADD s1 sC s0
 SET_HP Loewe
-RemoveAll
+RemoveAllDouble
 LOAD1 1 EndingCutsceneUnits
 ENUN
 CAMERA_CENTERED Dragana
@@ -422,7 +422,7 @@ StartBattle
 CriticalHit(0,25)
 EndAttack
 SetScriptedBattle(100,25,10,80,8,0)
-FIGHT_MAP Boro_Ch1 Ch2_Selese_Guy Impaler False
+FIGHT_MAP Boro_Ch1 Ch2_Selese_Guy SilverLance False
 ENUN
 Text(Chapter2EndingScene3)
 LOAD1 1 EndingCutsceneUnits2

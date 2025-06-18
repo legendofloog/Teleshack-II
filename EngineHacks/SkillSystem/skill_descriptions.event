@@ -321,8 +321,9 @@ SkillDescription(AftershockID,SD_Aftershock)
 
 SkillDescription(CullingID,SD_Culling)
 SkillDescription(HeadshotID,SD_Headshot)
-SkillDescription(HypeTrainID,SD_HypeTrain)
+SkillDescription(HypeTrainID,SD_AdrenalineRush)
 SkillDescription(CleoFanID,SD_CleoFan)
+SkillDescription(BattleJunkieID, SD_BattleJunkie)
 
 SkillDescription(NonCombatantID, SD_NonCombatant)
 SkillDescription(AzuriumMightID, SD_AzuriumMight)

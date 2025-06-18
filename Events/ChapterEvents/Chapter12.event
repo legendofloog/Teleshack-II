@@ -188,7 +188,7 @@ Units1:
   UNIT
  
 MinkJoin:
-  UNIT Mink Bard Cleo Level(10,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
+  UNIT Mink Bard Cleo Level(12,Ally,False) [32,15] 0x0 0x0 0x0 0x0 [Fire, Thunder, Wind, DoorKey] NoAI
   UNIT
   
 IndoorEnemy:

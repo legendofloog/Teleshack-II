@@ -519,11 +519,11 @@ UNIT Barod AxeSoldier 0x0 Level(15,Enemy,True) [14,12] 0x0 0x0 0x0 0x0 [IronAxe]
 UNIT
 
 EliasUnitGroup:
-UNIT EliasReal Dracoknight_Dismounted 0x0  Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R6 [MasterAxe] NoAI
+UNIT EliasReal Dracoknight_Dismounted 0x0  Level(10,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R6 [MasterAxe] NoAI
 UNIT
 
 CoraliaUnitGroup:
-UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(15,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R5 [StoneSword] NoAI
+UNIT CoraliaReal MasterKnight_F_Dismounted 0x0 Level(5,NPC,True) [13,0] 0x0 0x0 0x1 REDA14R5 [StoneSword] NoAI
 UNIT 
 
 OrfeasMithrasGroup: //mithras, orfeas

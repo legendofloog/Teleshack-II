@@ -1,5 +1,5 @@
 .thumb
-.equ HypeTrainID, SkillTester+4
+.equ BattleJunkieID, SkillTester+4
 
 push {r4-r7, lr}
 mov r4, r0 @atkr
@@ -9,7 +9,7 @@ mov r5, r1 @dfdr
 ldr r0, SkillTester
 mov lr, r0
 mov r0, r4 @defender data
-ldr r1, HypeTrainID
+ldr r1, BattleJunkieID
 .short 0xf800
 cmp r0, #0
 beq End
@@ -17,7 +17,7 @@ beq End
 @hp check
 ldrb r0,[r4,#0x12] @max hp
 ldrb r1,[r4,#0x13] @cur hp
-lsl r1,r1,#2 @cur hp x4
+lsl r1,r1,#1 @cur hp x2
 cmp r1,r0
 bgt End
 
@@ -37,4 +37,4 @@ pop {r4-r7, r15}
 .ltorg
 SkillTester:
 @Poin SkillTester
-@WORD HypeTrainID
+@WORD BattleJunkieID

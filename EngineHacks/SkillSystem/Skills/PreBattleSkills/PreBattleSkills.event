@@ -380,7 +380,7 @@ ALIGN 4
 HypeTrainPre:
 #incbin "HypeTrain/HypeTrain.dmp"
 POIN SkillTester
-WORD HypeTrainID
+WORD BattleJunkieID
 
 ALIGN 4
 CleoFan:

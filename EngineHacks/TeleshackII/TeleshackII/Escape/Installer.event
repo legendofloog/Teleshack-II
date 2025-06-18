@@ -35,6 +35,18 @@
 #include "LoadCaptured/Installer.event"
 
 ALIGN 4
+MertlocCharIDLink:
+BYTE Mertloc
+
+ALIGN 4
+LoeweCharIDLink:
+BYTE Loewe
+
+ALIGN 4
+KwameCharIDLink:
+BYTE Kwame
+
+ALIGN 4
 RequiredEscapeesTable:
 #include "RequiredEscapeesTable.event"
 
@@ -88,7 +100,7 @@ ALIGN 4
 LoeweFinalEscapeQuoteList:
 CharEscapeQuote(Chapter1,LoeweChapter1FinalEscapeQuoteText)
 CharEscapeQuote(Chapter3,LoeweChapter3FinalEscapeQuoteText)
-CharEscapeQuote(Chapter9,LoeweChapter9EscapeQuoteText)
+CharEscapeQuote(Chapter9,LoeweChapter9FinalEscapeQuoteText)
 CharEscapeQuote(Chapter14,LoeweChapter14EscapeQuoteText)
 CharEscapeQuote(Chapter16,LoeweChapter16EscapeQuoteText)
 CharEscapeQuoteTerm
@@ -96,8 +108,8 @@ CharEscapeQuoteTerm
 ALIGN 4
 CleoFinalEscapeQuoteList:
 CharEscapeQuote(Chapter1,CleoChapter1FinalEscapeQuoteText)
-CharEscapeQuote(Chapter3,CleoChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,CleoChapter9EscapeQuoteText)
+CharEscapeQuote(Chapter3,CleoChapter3FinalEscapeQuoteText)
+CharEscapeQuote(Chapter9,CleoChapter9FinalEscapeQuoteText)
 CharEscapeQuote(Chapter14,CleoChapter14EscapeQuoteText)
 CharEscapeQuote(Chapter16,CleoChapter16EscapeQuoteText)
 CharEscapeQuoteTerm
@@ -139,7 +151,7 @@ ALIGN 4
 MiraEscapeQuoteList:
 CharEscapeQuote(Chapter1,MiraChapter1EscapeQuoteText)
 CharEscapeQuote(Chapter3,MiraChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,MiraEscapeQuoteText)
+CharEscapeQuote(Chapter9,MiraChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,MiraEscapeQuoteText)
 CharEscapeQuote(Chapter16,MiraEscapeQuoteText)
 CharEscapeQuoteTerm
@@ -148,7 +160,7 @@ ALIGN 4
 EmilEscapeQuoteList:
 CharEscapeQuote(Chapter1,EmilChapter1EscapeQuoteText)
 CharEscapeQuote(Chapter3,EmilChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,EmilEscapeQuoteText)
+CharEscapeQuote(Chapter9,EmilChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,EmilEscapeQuoteText)
 CharEscapeQuote(Chapter16,EmilEscapeQuoteText)
 CharEscapeQuoteTerm
@@ -157,7 +169,7 @@ ALIGN 4
 IskraEscapeQuoteList:
 CharEscapeQuote(Chapter1,IskraChapter1EscapeQuoteText)
 CharEscapeQuote(Chapter3,IskraChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,IskraEscapeQuoteText)
+CharEscapeQuote(Chapter9,IskraChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,IskraEscapeQuoteText)
 CharEscapeQuote(Chapter16,IskraEscapeQuoteText)
 CharEscapeQuoteTerm
@@ -166,7 +178,7 @@ ALIGN 4
 SvetomirEscapeQuoteList:
 CharEscapeQuote(Chapter1,SvetomirChapter1EscapeQuoteText)
 CharEscapeQuote(Chapter3,SvetomirChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,SvetomirEscapeQuoteText)
+CharEscapeQuote(Chapter9,SvetomirChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,SvetomirEscapeQuoteText)
 CharEscapeQuote(Chapter16,SvetomirEscapeQuoteText)
 CharEscapeQuoteTerm
@@ -175,7 +187,7 @@ ALIGN 4
 AlenaEscapeQuoteList:
 CharEscapeQuote(Chapter1,AlenaChapter1EscapeQuoteText)
 CharEscapeQuote(Chapter3,AlenaChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,AlenaEscapeQuoteText)
+CharEscapeQuote(Chapter9,AlenaChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,AlenaEscapeQuoteText)
 CharEscapeQuote(Chapter16,AlenaEscapeQuoteText)
 CharEscapeQuoteTerm
@@ -183,15 +195,15 @@ CharEscapeQuoteTerm
 ALIGN 4
 DelilahEscapeQuoteList:
 CharEscapeQuote(Chapter3,DelilahChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,DelilahEscapeQuoteText)
-CharEscapeQuote(Chapter14,DelilahEscapeQuoteText)
-CharEscapeQuote(Chapter16,DelilahEscapeQuoteText)
+CharEscapeQuote(Chapter9,DelilahChapter9EscapeQuoteText)
+CharEscapeQuote(Chapter14,DelilahChapter9EscapeQuoteText)
+CharEscapeQuote(Chapter16,DelilahChapter9EscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 VargaEscapeQuoteList:
 CharEscapeQuote(Chapter3,VargaChapter3EscapeQuoteText)
-CharEscapeQuote(Chapter9,VargaEscapeQuoteText)
+CharEscapeQuote(Chapter9,VargaChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,VargaEscapeQuoteText)
 CharEscapeQuote(Chapter16,VargaEscapeQuoteText)
 CharEscapeQuoteTerm
@@ -219,126 +231,126 @@ CharEscapeQuoteTerm
 
 ALIGN 4
 FiloneEscapeQuoteList:
-CharEscapeQuote(Chapter9,FiloneEscapeQuoteText)
+CharEscapeQuote(Chapter9,FiloneChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,FiloneEscapeQuoteText)
 CharEscapeQuote(Chapter16,FiloneEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 ZwiebackEscapeQuoteList:
-CharEscapeQuote(Chapter9,ZwiebackEscapeQuoteText)
+CharEscapeQuote(Chapter9,ZwiebackChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,ZwiebackEscapeQuoteText)
 CharEscapeQuote(Chapter16,ZwiebackEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 LongxiaEscapeQuoteList:
-CharEscapeQuote(Chapter9,LongxiaEscapeQuoteText)
+CharEscapeQuote(Chapter9,LongxiaChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,LongxiaEscapeQuoteText)
 CharEscapeQuote(Chapter16,LongxiaEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 FangaiEscapeQuoteList:
-CharEscapeQuote(Chapter9,FangaiEscapeQuoteText)
+CharEscapeQuote(Chapter9,FangaiChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,FangaiEscapeQuoteText)
 CharEscapeQuote(Chapter16,FangaiEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 FaolanEscapeQuoteList:
-CharEscapeQuote(Chapter9,FaolanEscapeQuoteText)
+CharEscapeQuote(Chapter9,FaolanChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,FaolanEscapeQuoteText)
 CharEscapeQuote(Chapter16,FaolanEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 MatthiasEscapeQuoteList:
-CharEscapeQuote(Chapter9,MatthiasEscapeQuoteText)
+CharEscapeQuote(Chapter9,MatthiasChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,MatthiasEscapeQuoteText)
 CharEscapeQuote(Chapter16,MatthiasEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 AwaEscapeQuoteList:
-CharEscapeQuote(Chapter9,AwaEscapeQuoteText)
+CharEscapeQuote(Chapter9,AwaChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,AwaEscapeQuoteText)
 CharEscapeQuote(Chapter16,AwaEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 CadenzaEscapeQuoteList:
-CharEscapeQuote(Chapter9,CadenzaEscapeQuoteText)
+CharEscapeQuote(Chapter9,CadenzaChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,CadenzaEscapeQuoteText)
 CharEscapeQuote(Chapter16,CadenzaEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 TobieEscapeQuoteList:
-CharEscapeQuote(Chapter9,TobieEscapeQuoteText)
-CharEscapeQuote(Chapter14,TobieEscapeQuoteText)
-CharEscapeQuote(Chapter16,TobieEscapeQuoteText)
+CharEscapeQuote(Chapter9,TobieChapter9EscapeQuoteText)
+CharEscapeQuote(Chapter14,TobieChapter9EscapeQuoteText)
+CharEscapeQuote(Chapter16,TobieChapter9EscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 MishEscapeQuoteList:
-CharEscapeQuote(Chapter9,MishEscapeQuoteText)
+CharEscapeQuote(Chapter9,MishChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,MishEscapeQuoteText)
 CharEscapeQuote(Chapter16,MishEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 LeinaEscapeQuoteList:
-CharEscapeQuote(Chapter9,LeinaEscapeQuoteText)
+CharEscapeQuote(Chapter9,LeinaChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,LeinaEscapeQuoteText)
 CharEscapeQuote(Chapter16,LeinaEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 CromarEscapeQuoteList:
-CharEscapeQuote(Chapter9,CromarEscapeQuoteText)
+CharEscapeQuote(Chapter9,CromarChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,CromarEscapeQuoteText)
 CharEscapeQuote(Chapter16,CromarEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 IberisEscapeQuoteList:
-CharEscapeQuote(Chapter9,IberisEscapeQuoteText)
+CharEscapeQuote(Chapter9,IberisChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,IberisEscapeQuoteText)
 CharEscapeQuote(Chapter16,IberisEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 BuldakEscapeQuoteList:
-CharEscapeQuote(Chapter9,BuldakEscapeQuoteText)
+CharEscapeQuote(Chapter9,BuldakChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,BuldakEscapeQuoteText)
 CharEscapeQuote(Chapter16,BuldakEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 NoraEscapeQuoteList:
-CharEscapeQuote(Chapter9,NoraEscapeQuoteText)
+CharEscapeQuote(Chapter9,NoraChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,NoraEscapeQuoteText)
 CharEscapeQuote(Chapter16,NoraEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 HansEscapeQuoteList:
-CharEscapeQuote(Chapter9,HansEscapeQuoteText)
+CharEscapeQuote(Chapter9,HansChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,HansEscapeQuoteText)
 CharEscapeQuote(Chapter16,HansEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 JennyEscapeQuoteList:
-CharEscapeQuote(Chapter9,JennyEscapeQuoteText)
+CharEscapeQuote(Chapter9,JennyChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,JennyEscapeQuoteText)
 CharEscapeQuote(Chapter16,JennyEscapeQuoteText)
 CharEscapeQuoteTerm
 
 ALIGN 4
 MeldanEscapeQuoteList:
-CharEscapeQuote(Chapter9,MeldanEscapeQuoteText)
+CharEscapeQuote(Chapter9,MeldanChapter9EscapeQuoteText)
 CharEscapeQuote(Chapter14,MeldanEscapeQuoteText)
 CharEscapeQuote(Chapter16,MeldanEscapeQuoteText)
 CharEscapeQuoteTerm

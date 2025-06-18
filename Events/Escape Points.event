@@ -28,12 +28,16 @@ EscapePointEntry(3,16,EscapeDown)
 EscapePointTerminator
 
 Chapter7EnemyEscapeTable:
+EscapePointEntry(5,0,EscapeUp)
 EscapePointEntry(6,0,EscapeUp)
+EscapePointEntry(9,19,EscapeInPlace)
 EscapePointTerminator
 
 Chapter8EnemyEscapeTable:
-EscapePointEntry(6,0,EscapeUp)
-EscapePointEntry(14,0,EscapeUp)
+EscapePointEntry(1,1,EscapeInPlace)
+EscapePointEntry(20,0,EscapeInPlace)
+EscapePointEntry(0,26,EscapeInPlace)
+EscapePointEntry(20,29,EscapeInPlace)
 EscapePointTerminator
 
 Chapter9EnemyEscapeTable:
@@ -51,17 +55,7 @@ EscapePointEntry(8,0,EscapeUp)
 EscapePointEntry(9,0,EscapeUp)
 EscapePointEntry(10,0,EscapeUp)
 EscapePointEntry(11,0,EscapeUp)
-EscapePointEntry(4,17,EscapeDown)
-EscapePointEntry(5,17,EscapeDown)
-EscapePointEntry(6,17,EscapeDown)
-EscapePointEntry(7,17,EscapeDown)
-EscapePointEntry(11,17,EscapeDown)
-EscapePointEntry(12,17,EscapeDown)
-EscapePointEntry(24,13,EscapeRight)
-EscapePointEntry(24,14,EscapeRight)
-EscapePointEntry(24,15,EscapeRight)
-EscapePointEntry(24,16,EscapeRight)
-EscapePointEntry(24,17,EscapeRight)
+EscapePointEntry(12,0,EscapeUp)
 EscapePointTerminator
 
 Chapter11EnemyEscapeTable:

@@ -16,9 +16,9 @@
 	setPalette(3,SvetomirPriest)
 	setCBSP(3,Svetomir, 1, Priest)
 
-// SvetomirHighPriest
-	setPalette(4,SvetomirHighPriest)
-	setCBSP(4,Svetomir, 3, HighPriest)
+// SvetomirWarMonk
+	setPalette(4,SvetomirWarMonk)
+	setCBSP(4,Svetomir, 3, WarMonk)
 
 // MiraThiefFighter
 	setPalette(5,MiraThiefFighter)
@@ -888,9 +888,17 @@
 	setPalette(219,KorovaiDismounted)
 	setCBSP(219,Korovai, 3, DukeKnight_Dismounted)
 
-// CromarHero2
-	setPalette(220,CromarHero2)
+// CromarSlayer
+	setPalette(220,CromarSlayer)
 	setCBSP(220,Cromar,1,CromarMorbing)
+
+// YorHalberdier
+	setPalette(221,YorHalberdier)
+	setCBSP(221,Yor, 3, Halberdier)
+
+// WellworthHero
+	setPalette(222,WellworthHero)
+	setCBSP(222,Wellworth, 3, Hero)
 
 // BardTweak
 	setGenericPalette(0xE1,BardTweak)

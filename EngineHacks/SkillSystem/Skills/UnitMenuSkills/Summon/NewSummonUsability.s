@@ -18,38 +18,22 @@
 @old at 80243D8
 
 push {r4-r6,r14}
+
+@ first, check if the EID is set
+mov 		r0,#0x7E
+ldr		r1,CheckEventID			@make sure the talk hasn't occurred yet
+mov		r14,r1
+.short	0xF800
+cmp		r0,#0x1
+beq ReturnFalse @ if the flag is set, then don't do it
+
 ldr r5,=gActiveUnit
-ldr r2,[r5]
+ldr r2,[r5] @ the unit
 
-
-ldr r0, SkillTester
-mov lr, r0
-mov r0, r2
-ldr r1, SummonID
-.short  0xf800
-cmp r0, #1
-beq CantoCheck
-
-ldr r1,AlsoUseVanillaCheck
-cmp r1,#0
-beq ReturnFalse
-
-
-@vanilla summon flag check
-ldr r5,=gActiveUnit
-ldr r2,[r5]
-
-ldr r0,[r2]
-ldr r1,[r2,#4]
-ldr r0,[r0,#0x28]
-ldr r1,[r1,#0x28]
-orr r0,r1
-mov r1,#0x80
-lsl r1,r1,#20
-and r0,r1
-cmp r0,#0
-beq ReturnFalse
-
+ldr r0, [r2] @ the character data
+ldrb r0, [r0, #0x4] @ the character id
+cmp r0, #0xF @ Loewe's character id
+bne ReturnFalse
 
 CantoCheck:
 ldr r0,[r2,#0xC]
@@ -65,20 +49,7 @@ blh GetTargetListSize,r6
 cmp r0,#0
 beq ReturnFalse
 
-@summon char ID config check
-ldr r4,=0xFFFF
-mov r2,#0
-ldr r0,[r5]
-ldr r0,[r0]
-ldr r1,=0x0802442C
-ldr r1,[r1]   @Get SummonTable
-ldrb r0,[r0,#4]
-mov r3,r1
-ldrb r1,[r3]
-cmp r0,r1
-bne LoopStart
-mov r4,#0
-b PostLoop
+b ReturnTrue
 
 ReturnFalse:
 mov r0,#3
@@ -164,6 +135,9 @@ bx r1
 
 .ltorg
 .align
+
+CheckEventID:
+.long 0x08083DA8
 
 SkillTester:
 @POIN SkillTester

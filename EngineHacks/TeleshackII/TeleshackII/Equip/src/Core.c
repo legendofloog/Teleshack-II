@@ -199,6 +199,11 @@ void DawnPendantPostBattle(){
 
 void SmolderingSealPreBattle(BattleUnit* unit1, BattleUnit* unit2){
     if(GetItemIndex(GetUnitEquippedItem(&unit1->unit)) == 0xf9){ //smoldering seal id
-        unit1->battleAttack += unit1->unit.pow;
+        if (unit1->weaponAttributes & IA_MAGIC || unit1->weaponAttributes & IA_MAGICDAMAGE){ //if orfeas is using magic damage already, don't add magic to his attack
+
+		}
+		else{ //if the attack type is physical, then we use 
+			unit1->battleAttack += unit1->unit.mag;
+		}
     }
 }

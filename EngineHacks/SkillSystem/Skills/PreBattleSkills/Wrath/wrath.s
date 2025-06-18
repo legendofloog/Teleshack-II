@@ -5,12 +5,10 @@ push {r4-r7, lr}
 mov r4, r0 @atkr
 mov r5, r1 @dfdr
 
-@under 50% hp
-ldrb r0, [r4, #0x12]
-lsr r0, #1 @max hp/2
-ldrb r1, [r4, #0x13] @currhp
-cmp r1, r0
-bgt End
+@ checks if unit 1 (the one we're modifying) is the defender; if not, then we don't care
+ldr r0, =0x0203A56C
+cmp r0, r4
+bne End
 
 @has Wrath
 ldr r0, SkillTester
@@ -23,8 +21,9 @@ beq End
 
 @add 20 crit
 mov r1, #0x66
-ldrh r0, [r4, r1] @crit
-add r0, #20
+ldrh r0, [r4, r1] @loads the user's crit
+mov r0, #3
+mul r1, r0 @ multiplies the user's crit by 3
 strh r0, [r4,r1]
 
 End:

@@ -324,6 +324,9 @@
 #define GridmasterID 255
 
 
+#define ImbueID 255
+
+
 //Pre-Battle Skills
 
 //Axefaith: Axes can't lose durability, and grants +Luck*1.5 Hit when wielding axes.
@@ -340,7 +343,6 @@
 #define DuelistsBlowID 255
 //#define DeathBlowID 255
 #define DartingBlowID 255
-#define WardingBlowID 255
 //#define ArmoredBlowID 255
 //By Darrman
 #define HeroesDeathBlowID 255
@@ -890,10 +892,6 @@
 //By Sme
 #define SummonID 255
 
-//Supply: This unit has access to the convoy.
-//By Sme
-#define SupplyID 255
-
 //Shove: Allows unit to push other units one tile away.
 //By StanH
 #define ShoveID 255
@@ -935,7 +933,7 @@
 
 //Discipline: Weapon experience gains are doubled.
 //Author Unknown (Initial Commit)
-#define DisciplineID 255
+//#define DisciplineID 255
 
 //Vantage: If HP < 50%, strike first when attacked.
 //Author Unknown (Initial Commit)

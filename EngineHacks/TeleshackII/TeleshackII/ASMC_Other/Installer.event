@@ -20,6 +20,10 @@ NonCombatantIDLink:
 BYTE NonCombatantID
 
 ALIGN 4
+WatchfulIDLink:
+BYTE WatchfulID
+
+ALIGN 4
 CromarCharIDLink:
 BYTE Cromar
 
@@ -50,3 +54,31 @@ BYTE Iberis
 ALIGN 4
 MifanCharIDLink:
 BYTE Mifan
+
+ALIGN 4
+CleoCharIDLink:
+BYTE Cleo
+
+ALIGN 4
+EliasCharIDLink:
+BYTE Elias
+
+ALIGN 4
+CythesCharIDLink:
+BYTE Cythes
+
+ALIGN 4
+VargaCharIDLink:
+BYTE Varga
+
+ALIGN 4
+CidorCharIDLink:
+BYTE Cidor
+
+ALIGN 4
+IskraCharIDLink:
+BYTE Iskra
+
+ALIGN 4
+DragonClassIDLink:
+BYTE DragonClass

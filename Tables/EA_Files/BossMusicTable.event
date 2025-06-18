@@ -24,11 +24,12 @@ BossBGMEntry(TheGiant, KingOfDragons_IntoTheCastleID)
 BossBGMEntry(Mifan, KingOfDragons_IntoTheCastleID)
 // ch 8
 BossBGMEntry(Hege, KingOfDragons_IntoTheCastleID)
-BossBGMEntry(Francis, UnfinishedBattleGodSyndrome)
 // ch 9
 BossBGMEntry(Wrathgar, KingOfDragons_IntoTheCastleID)
 // ch 10
 BossBGMEntry(Cidor, UnfinishedBattleGodSyndrome)
+BossBGMEntry(Johanna, KingOfDragons_IntoTheCastleID)
+BossBGMEntry(Mifan, KingOfDragons_IntoTheCastleID)
 // ch 11
 BossBGMEntry(Aurora, KingOfDragons_IntoTheCastleID)
 // ch 12

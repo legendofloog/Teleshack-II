@@ -1,6 +1,27 @@
 WorldMapPointerTable(Chapter8,WM_Events)
 
 WM_Events:
+_0xC220
+WM_MAKELORDDISAPPEAR
+WM_SPAWNLORD 0 0 Cleo GMLoc_Ch5x 0
+CALL RemoveLocationsAndPaths
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch5x, 0)
+WM_LOADLOCATION2 0 GMLoc_Ch5x 0
+MUSC FF6MartialLawID
+WMSpawnSprite(0x2, Fleet, 0, GMLoc_Ch5x)
+WM_MAKELORDVISIBLE 2
+WorldMapTextStart(Ch7_WM_Text)
+TEXTEND
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch6, 30)
+WM_LOADLOCATION2 0 GMLoc_Ch6 0
+STAL 30
+WMMoveSprite(2, 0, 295, 195, 340, 210, 150, 1, 10)
+TEXTCONT
+TEXTEND
+TerminateWorldMapText
+FADI 5
+STAL 15
+WMRemoveSprite(2)
 WM_SETNEXTLOCATION 0 0 Chapter8 //Needed for world map narration.
 SKIPWN
 WM_FXCLEAR1 0x0 0xFFFF 0xFFFF

@@ -46,41 +46,72 @@ SetUnitPCC(Tobie,2)
 SetUnitPCC(Gimm,3)
 SetUnitPCC(Cadenza,2)
 SetUnitPCC(Leina,2)
+SetUnitPCC(Awa,0)
 
 SetUnitPCC(Iberis,0)
 SetUnitPCC(Buldak,2)
 
+SetUnitPCC(Hans, 0)
+
 SetUnitPCC(Jenny,3)
-SetUnitPCC(Meldan,0)
+
 SetUnitPCC(Valse,2)
 SetUnitPCC(Hornet,4)
+
 SetUnitPCC(Milo,2)
-SetUnitPCC(Ichwep,2)
+SetUnitPCC(Ichwep,3)
+
 SetUnitPCC(Mink,2)
+
+SetUnitPCC(Ellerey,2)
 SetUnitPCC(Tippany, 0)
 SetUnitPCC(Pelecaye, 0)
-SetUnitPCC(Carl, 4)
+SetUnitPCC(Carl, 5)
+
 SetUnitPCC(Jacinth, 3)
+SetUnitPCC(Darby,2)
+
 SetUnitPCC(Kailani, 5)
 SetUnitPCC(Ilse,2)
+
+SetUnitPCC(Kofi, 0)
 SetUnitPCC(Rashid,0)
+
+SetUnitPCC(BoroReal,0)
 SetUnitPCC(Nikolas,2)
-SetUnitPCC(Apsis,2)
+SetUnitPCC(Kwame,0)
+
+SetUnitPCC(Hartmann,2)
+
 SetUnitPCC(Sera,5)
-SetUnitPCC(Shaw,2)
+SetUnitPCC(Shaw,3)
+
 SetUnitPCC(Ojasvi,5)
-SetUnitPCC(Darcy,2)
-SetUnitPCC(Groto,0)
+SetUnitPCC(Apsis,4)
 SetUnitPCC(Tao,5)
-SetUnitPCC(Zhara,3)
+SetUnitPCC(Joie,3)
+SetUnitPCC(Groto,0)
+SetUnitPCC(Zhara,5)
+
+
+
 SetUnitPCC(Jerry,4)
 SetUnitPCC(Lyre,0)
+
 SetUnitPCC(Ngondala,0)
-SetUnitPCC(CatrinReal,2)
-SetUnitPCC(Locke,3)
+SetUnitPCC(CatrinReal,3)
+
+SetUnitPCC(Locke,0)
+
+SetUnitPCC(EliasReal,0)
+
+SetUnitPCC(BarodReal,0)
+SetUnitPCC(Orfeas,0)
+
 SetUnitPCC(TarajiReal,0)
-SetUnitPCC(Athanasius,3)
+SetUnitPCC(Athanasius,4)
 //Bosses, Generics, and NPCs
+SetUnitPCC(Elias,0)
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)
 SetUnitPCC(Taraji,0)

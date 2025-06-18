@@ -35,7 +35,7 @@ END_MAIN
 
 
 LocationBasedEvents:
-Chest(Lamfada,29,29)
+Chest(Bolganone,29,29)
 Chest(EarthGreataxe,20,7)
 END_MAIN
 
@@ -87,8 +87,8 @@ UNIT
 
 
 NewPlayers:
-UNIT Volran Mage Cleo Level(13,NPC,False) [7,28] 0x0 0x0 0x0 0x0 [Fire,Bolganone,Meteor,PureWater] NoAI
-UNIT Tara SwordFighter_F Cleo Level(12,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [BoldBlade,Longsword,Elixir,KnightProof] NoAI
+UNIT Volran Mage Cleo Level(16,NPC,False) [7,28] 0x0 0x0 0x0 0x0 [Elfire,Thoron,Bolting,PureWater] NoAI
+UNIT Tara SwordFighter_F Cleo Level(15,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [BoldBlade,Longsword,Elixir,KnightProof] NoAI
 UNIT
 
 

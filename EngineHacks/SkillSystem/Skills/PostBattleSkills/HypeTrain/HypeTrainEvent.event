@@ -7,5 +7,6 @@ SOUN 0x7B
 STAL 0x10
 SOUN 0x13D
 STAL 0x16
+COUNTER_INC 1 //never used anywhere else, so we'll make use of it here for the jerry skill
 NoFade
 ENDA

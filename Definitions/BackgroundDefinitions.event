@@ -30,3 +30,4 @@
 #define Sand 0x30
 #define BlackBackground 0x35
 #define OrodrethMap 0x38
+#define CampTent 0x39

@@ -87,7 +87,7 @@
   ST_Res:
     RMenu(ST_Def,ST_Bld,ST_Exp,ST_Skill1,0x66,0x78,0x54c)
   ST_Bld:
-    RMenu(ST_Res,0,ST_Str,ST_Skill4,0x66,0x88,0x54e)
+    RMenu(ST_Res,0,ST_HP,ST_Skill4,0x66,0x88,0x54e)
 
   //column 2
   ST_Mov:
@@ -189,10 +189,10 @@
   RMenu(ST_WRank2,ST_Supports1,ST_WRank3,0,0xA8,0x28,3,WeaponDescLooper,WeaponDescGetter)
 
   ST_Supports1: 
-  RMenu(0,ST_Supports2,ST_Name3,0,0x80,0x38,0,SupportDescLooper,SupportDescGetter)
+  RMenu(ST_WRank1,ST_Supports2,ST_Name3,0,0x80,0x38,0,SupportDescLooper,SupportDescGetter)
 
   ST_Supports2: 
-  RMenu(ST_Supports1,ST_Supports2,ST_Name3,0,0x80,0x48,1,SupportDescLooper,SupportDescGetter)
+  RMenu(ST_Supports1,ST_Supports3,ST_Name3,0,0x80,0x48,1,SupportDescLooper,SupportDescGetter)
 
   ST_Supports3: 
   RMenu(ST_Supports2,ST_Supports4,ST_Name3,0,0x80,0x58,2,SupportDescLooper,SupportDescGetter)
@@ -207,19 +207,19 @@
   //RMenu_Cond(ST_Supports1,0,ST_HP3,0,0x98,0x88,BWLDesc, BWLConditional)
 
   ST_Name3:
-  RMenu(0,ST_Class3,0,ST_Supports1,0x18,0x50,0,NameDescGetter)
+  RMenu(0,ST_Class3,0,ST_WRank1,0x18,0x50,0,NameDescGetter)
 
   ST_Class3:
-  RMenu(ST_Name3,ST_Level3,0,ST_Supports1,0x6,0x68,0x6E8,ClassDescGetter)
+  RMenu(ST_Name3,ST_Level3,0,ST_WRank1,0x6,0x68,0x6E8,ClassDescGetter)
 
   ST_Level3:
-  RMenu(ST_Class3,ST_HP3,0,ST_Exp3,0x6,0x78,0x542)
+  RMenu(ST_Class3,ST_HP3,0,ST_WRank1,0x6,0x78,0x542)
 
   ST_Exp3:
-  RMenu(ST_Class3,ST_HP3,ST_Level3,ST_Supports1,0x26,0x78,0x543)
+  RMenu(ST_Class3,ST_HP3,ST_Level3,ST_WRank1,0x26,0x78,0x543)
 
   ST_HP3:
-  RMenu(ST_Level3,0,0,ST_Supports1,0x6,0x88,0x544)
+  RMenu(ST_Level3,0,0,ST_WRank1,0x6,0x88,0x544)
 
   
 

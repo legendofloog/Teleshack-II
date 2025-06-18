@@ -310,12 +310,12 @@ UNIT Loewe Scaleshot_Dismounted Loewe Level(2,Ally,False) [14,1] 0x0 0x0 0 0 [Ar
 UNIT
 
 GreenUnits:
-UNIT Ellerey LanceArmor Loewe Level(13,NPC,False) [2,2] 0x0 0x0 0x0 0x0 [TheBreaker,Javelin,Vulnerary]     NoAI
-UNIT Mantou Brigand_F Loewe Level(12,NPC,False) [11,4] 0x0 0x0 0x0 0x0 [KillerAxe,SilverAxe,Vulnerary]     NoAI
-UNIT Tippany DarkMage_F Loewe Level(10,NPC,False) [14,12] 0x0 0x0 0x0 0x0 [Heal,Flux,Physic,Vulnerary] NoAI
-UNIT Trajan Hero Loewe Level(5,NPC,False) [7,1] 0x0 0x0 0x0 0x0 [MasterAxe,Longsword]     NoAI
-UNIT Pelecaye General Loewe Level(1,NPC,False) [1,10] 0x0 0x0 0x0 0x0 [MasterAxe, HandAxe, SteelLance]     NoAI
-UNIT Carl SwordFighter Loewe Level(11,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
+UNIT Ellerey LanceArmor Loewe Level(13,NPC,False) [2,2] 0x0 0x0 0x0 0x0 [Greatlance,HeavySpear,Vulnerary]     NoAI
+UNIT Carl SwordFighter Loewe Level(13,NPC,False) [7,17] 0x0 0x0 0x0 0x0 [Muramasa]     NoAI
+UNIT Mantou Brigand_F Loewe Level(12,NPC,False) [11,4] 0x0 0x0 0x0 0x0 [KillerAxe,HandAxe,Vulnerary]     NoAI
+UNIT Tippany DarkMage_F Loewe Level(8,NPC,False) [14,12] 0x0 0x0 0x0 0x0 [Physic, Flux, Vulnerary] NoAI
+UNIT Trajan Hero Loewe Level(3,NPC,True) [7,1] 0x0 0x0 0x0 0x0 [Tomahawk,SilverSword]     NoAI
+UNIT Pelecaye General Loewe Level(1,NPC,False) [1,10] 0x0 0x0 0x0 0x0 [MasterAxe, IceSword, SteelLance]     NoAI
 UNIT Takai Warrior Loewe Level(1,NPC,False) [5,14] 0x0 0x0 0x0 0x0 [WindBow,FireDrive]     NoAI
 UNIT
 

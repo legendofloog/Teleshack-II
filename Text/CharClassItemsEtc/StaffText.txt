@@ -39,3 +39,23 @@ Again[X]
 
 ## AgainStaffDesc
 Allow an ally to move again.[X]
+
+## FocusName
+Focus[X]
+
+## FocusDesc
+Grants +20 Hit to an ally for 3 turns.[X]
+
+## FocusUseDesc
+Use to sharpen[N]
+an ally's focus.[X]
+
+## EmpowerName
+Empower[X]
+
+## EmpowerDesc
+Grants +5 Atk to an ally for 3 turns.[X]
+
+## EmpowerUseDesc
+Use to strengthen[N]
+an ally's attacks.[X]

@@ -117,13 +117,15 @@ ALIGN 4
 UnacceptedMountDismountLocationEntryTable:
 UnacceptedMountDismountLocationEntry(Chapter1,0,0,19,19)
 UnacceptedMountDismountLocationEntry(Chapter2,0,0,19,19)
-UnacceptedMountDismountLocationEntry(Chapter3,0,0,29,20)
+UnacceptedMountDismountLocationEntry(Chapter3,0,0,27,20)
 UnacceptedMountDismountLocationEntry(Ch5xInterlude,0,0,14,9)
 UnacceptedMountDismountLocationEntry(Chapter7,0,7,5,19)
 UnacceptedMountDismountLocationEntry(Chapter7,6,11,8,19)
 UnacceptedMountDismountLocationEntry(Chapter7,9,14,13,19)
-UnacceptedMountDismountLocationEntry(Chapter8,0,0,19,15)
-UnacceptedMountDismountLocationEntry(Chapter8,13,16,19,17)
+UnacceptedMountDismountLocationEntry(Chapter8,0,0,20,7)
+UnacceptedMountDismountLocationEntry(Chapter8,0,26,0,26)
+UnacceptedMountDismountLocationEntry(Chapter8,20,29,20,29)
+UnacceptedMountDismountLocationEntry(Chapter8,11,13,11,13)
 UnacceptedMountDismountLocationEntry(Chapter11,0,0,19,27)
 UnacceptedMountDismountLocationEntry(Chapter12,0,0,15,13)
 UnacceptedMountDismountLocationEntry(Chapter12,1,14,5,19)
@@ -154,6 +156,8 @@ EndUnacceptedMountDismountLocationTable
 
 ALIGN 4
 MountedInPrepsTable: //list of chapterIDs where units are mounted in preps and have access to promo items
+BYTE Chapter10
+BYTE Chapter12
 BYTE Chapter13      // shouldn't start until 13?
 BYTE Chapter14 
 BYTE Chapter17

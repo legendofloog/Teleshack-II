@@ -34,14 +34,17 @@ BYTE Loewe 1
 BYTE Cleo 1
 BYTE Mira 1
 BYTE Dragana 3
+BYTE Tiberius 1
 BYTE Kailani 1
 BYTE Augur 1
+BYTE BoroReal 1
+BYTE KwameReal 1
 BYTE Ngondala 1
 BYTE CatrinReal 1
 BYTE TrajanReal 2
-BYTE BoroReal 1
-BYTE EliasReal 1
+BYTE EliasReal 2
 // BOSSES
+BYTE Boro_Ch1 1
 BYTE Raschwitz_Ch1 1
 BYTE Tyr_Ch2 2
 BYTE Emory_Ch3 2
@@ -49,7 +52,9 @@ BYTE Hilmar 2
 BYTE Riggan 1
 BYTE Draken 1
 BYTE Wellworth 1
+BYTE Mifan 1
 BYTE Hege 2
+BYTE Wrathgar 2
 BYTE Aurora 2
 BYTE Cidor 3
 BYTE Johanna 2

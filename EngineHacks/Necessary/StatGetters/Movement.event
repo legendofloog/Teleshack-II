@@ -4,7 +4,7 @@
 #include "_Common.event"
 ALIGN 4
 pMovModifiers: // Movement
-	POIN prAddUnitBaseMov prAddUnitMovBonus prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prArmorMarchCheck prEquipmentMov 
+	POIN prAddUnitBaseMov prAddCharBaseMov prAddUnitMovBonus prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prArmorMarchCheck prEquipmentMov prHypeTrainMovReduction
 	#ifdef STAIRS_ASM
 	POIN StairsMoveDebuff-1
 	#endif
@@ -20,7 +20,11 @@ WORD 0
 
 ALIGN 4
 prAddUnitBaseMov: // byte 0x12 in ROM class data is base class movement
-	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12))) 
+	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12)))
+
+ALIGN 4
+prAddCharBaseMov:
+	rAdd(rForWordAt(UNIT_ROMCHAR, rSByteAt(0x23)))
 
 ALIGN 4
 prAddUnitMovBonus:
@@ -43,6 +47,15 @@ prItemPassiveMov:
 ALIGN 4
 prEquipmentMov:
 	rEquipmentBonus(STAT_MOV)
+
+ALIGN 4
+prHypeTrainMovReduction:
+	rIfUnitHasSkill(HypeTrainID)
+		rWithResultOfExt(prReturnHypeTrainMovReduction, rSub) //subtract the hype train mov reduction?
+
+ALIGN 4
+prReturnHypeTrainMovReduction:
+	rCallExternal(ReturnHypeTrainMovReduction^1)		
 
 ALIGN 4
 prNullifyIfGuardAI:

@@ -1,9 +1,9 @@
 INLINE MagClassTable,Base Magic,Magic Growth,Magic Cap,Magic Promotion Bonus
 None,0,0,20,0
-Noble,6,35,20,0
-Noble(F),6,35,20,0
-MasterKnight,9,35,25,0
-MasterKnight(F),9,35,25,0
+Noble,5,30,20,0
+Noble(F),5,30,20,0
+MasterKnight,8,30,25,0
+MasterKnight(F),8,30,25,0
 SwordKnight,0,5,20,0
 LanceKnight,0,5,20,0
 AxeKnight,0,5,20,0
@@ -42,8 +42,8 @@ Sage,6,25,25,2
 Sage (F),6,25,25,2
 Mage Knight,8,35,25,3
 Mage Knight (F),8,35,25,3
-High Priest,11,45,25,3
-High Priestess,11,45,25,3
+High Priest,10,40,25,3
+High Priestess,10,40,25,3
 Dark Mage,6,35,20,0
 Dark Mage (F),6,35,20,0
 Dark Bishop,8,35,25,3
@@ -52,8 +52,8 @@ Bard,4,25,20,0
 Sister,4,25,20,0
 Thief Fighter,1,5,25,1
 Gorgon Egg,0,0,20,0
-Priest,8,45,20,0
-Priest (F),8,45,20,0
+Priest,7,40,20,0
+Priest (F),7,40,20,0
 Rook Knight,0,5,20,0
 Gold Knight,1,5,25,1
 Troubadour,4,25,20,0
@@ -118,12 +118,12 @@ Corsair,1,10,20,0
 Corsair (F),1,10,20,0
 Berserker,2,10,25,0
 Berserker (F),2,10,25,0
-Master Knight (D),9,35,25,0
+Master Knight (D),8,30,25,0
 Halberdier,1,5,25,0
 Tent,0,0,20,0
 Freelancer,0,5,20,0
 Champion,1,5,25,0
-Master_Knight_F (D),9,35,25,0
+Master_Knight_F (D),8,30,25,0
 Brother,4,30,20,0
 Bard 2: Electric Boogaloo (Apsis class),4,25,20,0
 Sage 2: Electric Boogaloo (Apsis class),6,25,25,0
@@ -133,125 +133,125 @@ CherneClass,8,45,25,0
 CromarMorbing,1,10,25,0
 Dracoknight (F),1,5,25,0
 Dracoknight (F) (D),1,5,25,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
+Dragon Rider,1,10,20,0
+Pegasus Rider,1,10,20,0
+Freeblade,1,10,25,0
+Scaleshot (D) Sad,1,10,20,0
+Sniper (F) Dead,1,10,20,0
+None,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0
+Ephraim Lord,0,0,0,0

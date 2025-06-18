@@ -101,13 +101,13 @@ LoadUnit(3,5)
 UNIT
 	
 NewPlayers:
-UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare,TrainedArc] NoAI
-UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [3,1] 0x0 0x0 0x0 [GreatSword,FlameSword] NoAI
+UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare, MasterBow, TrainedArc] NoAI
+UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [3,1] 0x0 0x0 0x0 [WindSword, GreatSword] NoAI
 UNIT
 
 NPCUnits:
-UNIT Catrin Swordmaster_F Catrin Level(1,NPC,False) [3,3] 0x0 0x0 0x0 0x0 [MasterSword,Elixir] BossHealAI
-UNIT Boro_Ch16 Champion Catrin Level(5,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [MasterLance,Elixir] BossHealAI
+UNIT Catrin Swordmaster_F Catrin Level(4,NPC,False) [3,3] 0x0 0x0 0x0 0x0 [MasterSword,Elixir] BossHealAI
+UNIT Boro_Ch16 Champion Catrin Level(4,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [Impaler,SilverAxe, Elixir] BossHealAI
 UNIT
 
 EnemyUnits:

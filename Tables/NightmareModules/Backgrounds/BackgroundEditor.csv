@@ -56,4 +56,5 @@ Temple_Ruins_Inside 0x34,0x8958a58,0x895d1a8,0x895d65c
 0x36 Unused,0x895d75c,0x895d768,0x895dc1c
 0x37 Load Random (DON'T USE),0x895d75c,0x895d768,0x895dc1c
 0x38 OrodrethMap,OrodrethMapImage|IsPointer,OrodrethMapTSA|IsPointer,OrodrethMapPal|IsPointer
+0x39 CampTent,CampTentImage|IsPointer,CampTentTSA|IsPointer,CampTentPal|IsPointer
 Terminator (Place at end),0x00ffffff,0x0,0x0

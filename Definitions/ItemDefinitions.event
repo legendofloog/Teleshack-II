@@ -1,8 +1,8 @@
 #define IronSword 0x01
-//#define SlimSword 0x02
+#define FocusStaff 0x02
 #define SteelSword 0x03
 #define SilverSword 0x04
-//#define IronBlade 0x05
+#define EmpowerStaff 0x05
 #define Longsword 0x06
 #define LongSword 0x06
 #define Greatsword 0x07
@@ -22,7 +22,7 @@
 #define SleepSword 0x12
 #define MasterSword 0x13
 #define IronLance 0x14
-//#define SlimLance 0x15
+#define Spear 0x15
 #define SteelLance 0x16
 #define SilverLance 0x17
 #define ShortLance 0x18
@@ -120,7 +120,7 @@
 #define Vulnerary 0x6C
 #define Elixir 0x6D
 #define PureWater 0x6E
-#define Antitoxin 0x6F
+#define SpiritDust 0x6F
 #define Torch 0x70
 #define TorchItem 0x70
 #define ThiefStaff 0x71
@@ -183,7 +183,7 @@
 #define Unmoor 0xAB
 #define Impaler 0xAC
 
-//#define ZykhraScrollID 0xae
+#define Tomahawk 0xae
 //#define AmserScrollID 0xaf
 
 #define Firestone 0xB2
@@ -227,6 +227,10 @@
 #define TrainedPike 0xD5
 #define TrainedAxe 0xD6
 #define TrainedArc 0xD7
+#define PlatSword TrainedEdge
+#define PlatLance TrainedPike
+#define PlatAxe TrainedAxe
+#define PlatBow TrainedArc
 #define AquaBrand 0xD8
 #define ChargeLance 0xD9
 #define DuelistLance ChargeLance

@@ -165,18 +165,18 @@ WorldMapNodeEntry(WMFort, Chapter6, GMLoc_Ch6, 294, 194, Ch5xTitle,1)
 //GMLoc_Ch6
 WorldMapNodeEntry(WMSmallVillage, Chapter7, GMLoc_Ch7, 356, 204, Chapter6Title,0)
 //GMLoc_Ch7
-WorldMapNodeEntry(WMFort, Chapter8, GMLoc_Ch8, 388, 178, Chapter7Title,0)
+WorldMapNodeEntry(WMSmallVillage, Chapter8, GMLoc_Ch8, 388, 178, Chapter7Title,0)
 //GMLoc_Ch8
-WorldMapNodeEntry(WMFort, Chapter9, GMLoc_Ch8, 388, 178, Chapter8Title,0)
+WorldMapNodeEntry(WMFort, Chapter9, GMLoc_Ch9, 380, 180, Chapter8Title,0)
 //GMLoc_FreysianVillage (Ch 9)
-WorldMapNodeEntry(WMBluePoint, Chapter10, GMLoc_Ch9, 388, 163, Chapter9Title,0)
+WorldMapNodeEntry(WMBluePoint, Chapter10, GMLoc_Ch10, 388, 173, Chapter9Title,0)
 //GMLoc_CastleFreyse (Ch 10)
-WorldMapNodeEntry(WMRedClassicCastle, Chapter11, GMLoc_Ch10, 379, 155, Chapter10Title,0)
+WorldMapNodeEntry(WMRedClassicCastle, Chapter11, GMLoc_Ch11, 388, 163, Chapter10Title,0)
 //GMLoc_CastleSeleseTunnel (Ch 11)
-WorldMapNodeEntry(WMBluePoint, Chapter12, GMLoc_Ch11, 338, 124, Ch11Title,0)
+WorldMapNodeEntry(WMBluePoint, Chapter12, GMLoc_Ch12, 338, 124, Ch11Title,0)
 //GMLoc_CastleSeleseCourtyard (Ch 12)
-WorldMapNodeEntry(WMBlueChurchCastle, Ch12xInterlude, GMLoc_Ch12, 333, 118, Chapter12Title,0)
+WorldMapNodeEntry(WMBlueChurchCastle, Ch12xInterlude, GMLoc_Ch12x, 333, 118, Chapter12Title,0)
 //GMLoc_CastleSeleseInterlude (Ch 12x)
-WorldMapNodeEntry(WMBlueChurchCastle, Chapter13, GMLoc_Ch12x, 332, 118, Ch12xTitle,0)
+WorldMapNodeEntry(WMBlueChurchCastle, Chapter13, GMLoc_Ch13, 332, 118, Ch12xTitle,0)
 
 //rest i will fill out later

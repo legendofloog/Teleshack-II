@@ -24,7 +24,6 @@ ALIGN 4
 
 	#define IER_setItemEffect(effectid,usability,prepscreen_usability,targeting,effect) "PUSH; ORG IERevampTable + (effectid * 0x10); POIN usability prepscreen_usability targeting effect; POP"
 
-	#ifdef _FE8_
 		#include "IERevamp_Core/_UseIDSetup.event" 	//still need to find and fix all mini jump tables
 		#include "IERevamp_Core/_EffectIDAI_Setup.event"
 		//Promo Items
@@ -38,7 +37,5 @@ ALIGN 4
 		//PUSH
 			//SetItemUseID(0x8C, 0x37)	//give Latona an item effect id
 		//POP
-	#else
-		ERROR "This is for FE8 only"
-	#endif
+
 #endif

@@ -11,7 +11,7 @@
 .equ xMask2,						0x1FF
 .equ yMask2,						0xFF
 .equ IconID,						0x865 @ Also sets priority to 2.
-.equ IconID2,						0x869 @ Also sets priority to 2.
+.equ IconID2,						0x861 @ Also sets priority to 2.
 
 push	{r2, r4, r14}
 

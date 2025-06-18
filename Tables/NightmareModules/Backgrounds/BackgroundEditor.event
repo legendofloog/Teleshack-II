@@ -69,4 +69,5 @@ _C2EA_BackgroundEditor(BlackBackgroundImage|IsPointer,BlackBackgroundTSA|IsPoint
 _C2EA_BackgroundEditor(0x895d75c,0x895d768,0x895dc1c)
 _C2EA_BackgroundEditor(0x895d75c,0x895d768,0x895dc1c)
 _C2EA_BackgroundEditor(OrodrethMapImage|IsPointer,OrodrethMapTSA|IsPointer,OrodrethMapPal|IsPointer)
+_C2EA_BackgroundEditor(CampTentImage|IsPointer,CampTentTSA|IsPointer,CampTentPal|IsPointer)
 _C2EA_BackgroundEditor(0x00ffffff,0x0,0x0)

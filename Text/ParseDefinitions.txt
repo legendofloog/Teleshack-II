@@ -23,6 +23,7 @@
 [HashTag] = [0x23]
 [CSSCF] = [CloseSpeechSlow][ClearFace]
 [CSS] = [CloseSpeechSlow]
+[CF] = [ClearFace]
 [FarFarLeft] = [OpenFarFarLeft]
 [FarLeft] = [OpenFarLeft]
 [MidLeft] = [OpenMidLeft]
@@ -238,6 +239,8 @@
 [Load23RedSoldier] = [LoadFace][0x6B][0x1]
 [Load23GreenSoldier] = [LoadFace][0x6F][0x1]
 
+[LoadOldManVillager] = [LoadFace][0x59][0x1]
+[LoadRedHairedVillager] = [LoadFace][0x5D][0x1]
 [LoadYoungBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadYoungGirlVillager] = [LoadFace][0x63][0x1]
 [LoadOldWomanVillager] = [LoadFace][0x5F][0x1]

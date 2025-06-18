@@ -385,3 +385,15 @@
 	#include "Animations/Hero_Cromar(Pikmin1211,Pushwall,knabepicer)/Axe Installer.event"
 	#include "Animations/Hero_Cromar(Pikmin1211,Pushwall,knabepicer)/Handaxe Installer.event"
 }
+
+{
+    #include "Animations/WarMonk/Staff Installer.event"
+    #include "Animations/WarMonk/Axe Installer.event"
+    #include "Animations/WarMonk/Handaxe Installer.event"
+    #include "Animations/WarMonk/Unarmed Installer.event"
+}
+
+{
+    #include "Animations/DukeKnight/Lance Installer.event"
+    #include "Animations/DukeKnight/Unarmed Installer.event"
+}

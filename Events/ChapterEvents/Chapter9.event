@@ -16,18 +16,19 @@ TurnBasedEvents:
 TurnEventPlayer(13, MeldanSpawn,1,255)
 TurnEventPlayer(0x0, BrigandSpawn, 2)
 TurnEventPlayer(0x0, JennySpawn, 2)
-TurnEventPlayer(0x0, Turn357Spawn, 3)
-TurnEventPlayer(0x0, Turn246Spawn, 4)
-TurnEventPlayer(0x0, Turn357Spawn, 5)
-TurnEventPlayer(0x0, Turn246Spawn, 6)
-TurnEventPlayer(0x0, Turn357Spawn, 7)
-TurnEventPlayer(0x0, Turn8910Spawn, 8)
-TurnEventPlayer(0x0, Turn8910Spawn, 9)
-TurnEventPlayer(0x0, Turn8910Spawn, 10)
-TurnEventPlayer(0x0, Turn111213Spawn,11)
-TurnEventPlayer(0x0, Turn111213Spawn,12)
-TurnEventPlayer(0x0, Turn111213Spawn,13)
+TurnEventPlayer(0x0, Turn35Spawn, 3)
+TurnEventPlayer(0x0, Turn46Spawn, 4)
+TurnEventPlayer(0x0, Turn35Spawn, 5)
+TurnEventPlayer(0x0, Turn46Spawn, 6)
+TurnEventPlayer(0x0, Turn35Spawn, 7)
+TurnEventPlayer(0x0, EliasWarning, 7)
+TurnEventPlayer(0x0, EliasSpawn, 8)
 END_MAIN
+
+EliasWarning:
+Text(Ch9EliasWarning)
+NoFade
+ENDA
 
 JennySpawn:
 SpawnReinforcements(JennyReinforce)
@@ -59,12 +60,30 @@ ENUF 13
 NoFade
 ENDA
 
+EliasSpawn:
+SpawnReinforcements(EliasGroup)
+CameraCursor(Elias)
+Text(Ch9EliasArrives)
+CameraCursor(Cleo)
+Text(Ch9ResponseToEliasArrival)
+NoFade
+ENDA
+
+EliasGroup:
+UNIT Elias Dracoknight 0x0 Level(10,Enemy,False) [0,6] 0x0 0x0 0x1 REDA2R6 [MasterAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,4] 0x0 0x0 0x1 REDA0R4 [Tomahawk] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,5] 0x0 0x0 0x1 REDA1R5 [BraveAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,6] 0x0 0x0 0x1 REDA0R6 [Tomahawk] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,7] 0x0 0x0 0x1 REDA1R7 [BraveAxe] PursueWithoutHeedAI
+UNIT Cythes Dracoknight 0x0 Level(1,Enemy,True) [0,8] 0x0 0x0 0x1 REDA0R8 [Tomahawk] PursueWithoutHeedAI
+UNIT
+
 JennyReinforce:
-UNIT Jenny RookKnight 0x0 Level(5,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [LongLance,Javelin,IronSword] ChargeAI
+UNIT Jenny RookKnight 0x0 Level(5,Enemy,False) [0,17] 0x0 0x0 0x1 REDA0R17 [ChargeLance,IronSword, Vulnerary] ChargeAI
 UNIT
 
 MeldanReinforce:
-UNIT Meldan DukeKnight 0x0 Level(1,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [Greatlance,BraveLance,LightRune] ChargeAI
+UNIT Meldan DukeKnight 0x0 Level(1,Enemy,False) [21,4] 0x0 0x0 0x1 REDA21R4 [BraveLance,PlatLance,Shortlance] ChargeAI
 UNIT
 
 BrigandSpawn:
@@ -83,55 +102,32 @@ NoFade
 ENDA
 
 Brigand1Group:
-UNIT Looter Brigand 0 Level(8,Enemy,True) [0,6] 0x0 0x0 0x0 0x0 [SteelAxe] AttackThenLootAI
+UNIT Looter Brigand 0 Level(8,Enemy,True) [0,6] 0x0 0x0 0x0 0x0 [IronAxe] AttackThenLootAI
 UNIT
 
 Brigand2Group:
-UNIT Looter Brigand 0 Level(8,Enemy,True) [21,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackThenLootAI
+UNIT Looter Brigand 0 Level(8,Enemy,True) [21,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackThenLootAI
 UNIT
 
-Turn246Spawn:	
+Turn46Spawn:	
 SpawnReinforcements(Ch9Reinforce1)
 NoFade
 ENDA
 
-Turn357Spawn:	
+Turn35Spawn:	
 SpawnReinforcements(Ch9Reinforce2)
 NoFade
 ENDA
 
-Turn8910Spawn:	
-SpawnReinforcements(Ch9Reinforce3)
-NoFade
-ENDA
-
-Turn111213Spawn:
-SpawnReinforcements(Ch9Reinforce4)
-NoFade
-ENDA
 
 Ch9Reinforce1:
-UNIT Cythes PegasusRider Wrathgar Level(9,Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [IronLance] PursueWithoutHeedAI
-UNIT Cythes PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [SteelLance] PursueWithoutHeedAI
-UNIT Cythes PegasusRider Wrathgar Level(9,Enemy,True) [15,0] 0x0 0x0 0x1 REDA15R0 [IronLance] PursueWithoutHeedAI
-UNIT Cythes PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x1 REDA16R0 [SteelLance] PursueWithoutHeedAI
+UNIT Cythes DragonRider Wrathgar Level(10,Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [SteelAxe] PursueWithoutHeedAI
+UNIT Cythes DragonRider Wrathgar Level(10,Enemy,True) [16,0] 0x0 0x0 0x1 REDA16R0 [SteelAxe] PursueWithoutHeedAI
 UNIT
 
 Ch9Reinforce2:
-UNIT Cythes RookKnight Wrathgar Level(9,Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [IronLance,SteelSword] PursueWithoutHeedAI
-UNIT Cythes RookKnight Wrathgar Level(9,Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [SteelLance,IronSword] PursueWithoutHeedAI
-UNIT Cythes RookKnight Wrathgar Level(9,Enemy,True) [11,0] 0x0 0x0 0x1 REDA11R0 [IronLance,SteelSword] PursueWithoutHeedAI
-UNIT Cythes RookKnight Wrathgar Level(9,Enemy,True) [12,0] 0x0 0x0 0x1 REDA12R0 [SteelLance,IronSword] PursueWithoutHeedAI
-UNIT
-
-Ch9Reinforce3:
-UNIT Cythes GoldKnight Wrathgar Level(1, Enemy,True) [0,16] 0x0 0x0 0x1 REDA0R16 [KillingEdge,MasterLance] PursueWithoutHeedAI
-UNIT Cythes GoldKnight Wrathgar Level(1, Enemy,True) [0,17] 0x0 0x0 0x1 REDA0R17 [KillerLance,MasterSword] PursueWithoutHeedAI
-UNIT
-
-Ch9Reinforce4:
-UNIT Cythes Dracoknight Wrathgar Level(1, Enemy,True) [0,0] 0x0 0x0 0x1 REDA0R0 [KillerAxe,BraveAxe] PursueWithoutHeedAI
-UNIT Cythes Dracoknight Wrathgar Level(1, Enemy,True) [0,1] 0x0 0x0 0x1 REDA0R1 [KillerAxe,BraveAxe] PursueWithoutHeedAI
+UNIT Cythes RookKnight Wrathgar Level(10,Enemy,True) [11,0] 0x0 0x0 0x1 REDA11R0 [IronLance,SteelSword] PursueWithoutHeedAI
+UNIT Cythes RookKnight Wrathgar Level(10,Enemy,True) [12,0] 0x0 0x0 0x1 REDA12R0 [SteelLance,IronSword] PursueWithoutHeedAI
 UNIT
 
 
@@ -146,8 +142,7 @@ MUSS WithUs_Song
 Text(JennyRecruitText)
 ENUT 10
 ENUT 15
-CUSA Jenny
-SetFatigue(Jenny,0)
+NPCToAlly(Jenny)
 MURE 2
 NoFade
 ENDA
@@ -157,8 +152,7 @@ MUSS WithUs_Song
 Text(MeldanRecruitText)
 ENUT 11
 ENUT 16
-CUSA Meldan
-SetFatigue(Meldan,0)
+NPCToAlly(Meldan)
 MURE 2
 NoFade
 ENDA
@@ -167,8 +161,14 @@ MiscBasedEvents:
 AFEV 15 SetJennyFleeAI 10
 AFEV 16 SetMeldanFleeAI 11
 AREA 14 MeldanReinforcementSet [8, 0] [21, 13]
+AFEV 1 SetGenericBossQ 20
+AFEV 1 SetGenericBossQ 21
+AFEV 1 SetGenericBossQ 22
+AFEV 1 SetGenericBossQ 24
+AFEV 1 SetGenericBossQ 25
 CauseGameOverIfLordDies
 END_MAIN
+
 
 SetJennyFleeAI:
 CHECK_EXISTS Jenny
@@ -180,7 +180,7 @@ NoFade
 ENDA
 
 SetMeldanFleeAI:
-CHECK_EXISTS Jenny
+CHECK_EXISTS Meldan
 BEQ 776 s0 sC
 	Text(Ch9MeldanFleesText)
 	SetAI(Meldan,6,0xC,4,0)
@@ -241,42 +241,40 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [1,19] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-//Boss
-UNIT Wrathgar Warrior 0x0 Level(1,Enemy,False) [20,1] 0x0 0x0 0x0 0x0 [Greatbow,SteelAxe] AttackInRangeAI
-UNIT Cythes AxeArmor Wrathgar Level(9,Enemy,True) [19,1] 0x0 0x0 0x0 0x0 [BattleAxe] AttackInRangeAI
+UNIT Wrathgar Warrior 0x0 Level(1,Enemy,False) [20,1] 0x0 0x0 0 0 [Greatbow,SteelAxe, SecretBook] AttackInRangeAI
+
+UNIT Militia Hunter Wrathgar Level(7,Enemy,True) [0,4] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI 
+UNIT Militia Hunter Wrathgar Level(7,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [ShortBow] TwoActionAI 
+UNIT Militia Hunter Wrathgar Level(7,Enemy,True) [18,3] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Militia Hunter Wrathgar Level(7,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI 
+UNIT Militia Hunter Wrathgar Level(7,Enemy,True) [16,19] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI 
+
+UNIT Militia Archer Wrathgar Level(7,Enemy,True) [6,3] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI
+UNIT Militia Archer Wrathgar Level(7,Enemy,True) [14,2] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI
+UNIT Militia Archer Wrathgar Level(7,Enemy,True) [21,6] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI 
+UNIT Militia Archer Wrathgar Level(7,Enemy,True) [21,16] 0x0 0x0 0x0 0x0 [IronBow] TwoActionAI 
+
+UNIT Militia LanceSoldier Wrathgar Level(7,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI 
+UNIT Militia LanceSoldier Wrathgar Level(7,Enemy,True) [7,11] 0x0 0x0 0x0 0x0 [ShortLance] GroupOneAI 
+UNIT Militia LanceSoldier Wrathgar Level(7,Enemy,True) [11,17] 0x0 0x0 0x0 0x0 [IronLance] GroupOneAI 
+
+UNIT Militia AxeSoldier Wrathgar Level(7,Enemy,True) [2,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI 
+UNIT Militia AxeSoldier Wrathgar Level(7,Enemy,True) [9,15] 0x0 0x0 0x0 0x0 [ShortAxe] GroupOneAI 
+UNIT Militia AxeSoldier Wrathgar Level(7,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI 
 
 
-UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [1,4] 0x0 0x0 0x0 0x0 [IronBow]TwoActionAI 
-UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]TwoActionAI 
-UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [18,3] 0x0 0x0 0x0 0x0 [Shortbow]TwoActionAI 
-UNIT Militia Hunter Wrathgar Level(6,Enemy,True) [17,19] 0x0 0x0 0x0 0x0 [Shortbow,Vulnerary]TwoActionAI 
 
-UNIT Militia Archer Wrathgar Level(6,Enemy,True) [6,3] 0x0 0x0 0x0 0x0 [IronBow]TwoActionAI 
-UNIT Militia Archer Wrathgar Level(6,Enemy,True) [20,18] 0x0 0x0 0x0 0x0 [IronBow,Vulnerary]TwoActionAI 
-UNIT Militia Archer Wrathgar Level(6,Enemy,True) [13,2] 0x0 0x0 0x0 0x0 [Shortbow]TwoActionAI 
-UNIT Militia Archer Wrathgar Level(6,Enemy,True) [16,8] 0x0 0x0 0x0 0x0 [Shortbow,Vulnerary]TwoActionAI 
+UNIT Cythes AxeArmor Wrathgar Level(10,Enemy,True) [7,6] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
+UNIT Cythes LanceArmor Wrathgar Level(10,Enemy,True) [12,11] 0x0 0x0 0x0 0x0 [Javelin] BossAI
+UNIT Cythes AxeArmor Wrathgar Level(10,Enemy,True) [17,9] 0x0 0x0 0x0 0x0 [HandAxe] BossAI
+UNIT Cythes LanceArmor Wrathgar Level(10,Enemy,True) [20,8] 0x0 0x0 0x0 0x0 [Javelin] BossAI
 
-UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [2,8] 0x0 0x0 0x0 0x0 [ShortLance]TwoActionAI 
-UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [11,16] 0x0 0x0 0x0 0x0 [ShortLance,Vulnerary]TwoActionAI 
-UNIT Militia LanceSoldier Wrathgar Level(6,Enemy,True) [7,10] 0x0 0x0 0x0 0x0 [IronLance]TwoActionAI 
+UNIT Cythes RookKnight Wrathgar Level(10,Enemy,True) [19,1] 0x0 0x0 0x0 0x0 [SteelSword, SteelLance] AttackInRangeAI
+UNIT Cythes RookKnight Wrathgar Level(10,Enemy,True) [17,6] 0x0 0x0 0x0 0x0 [IronSword, SteelLance] AttackInRangeAI
+UNIT Cythes RookKnight Wrathgar Level(10,Enemy,True) [16,11] 0x0 0x0 0x0 0x0 [IronLance, SteelSword] AttackInRangeAI
 
-UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [11,13] 0x0 0x0 0x0 0x0 [IronAxe]TwoActionAI 
-UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [19,5] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary]TwoActionAI 
-UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [14,18] 0x0 0x0 0x0 0x0 [IronAxe]TwoActionAI 
-UNIT Militia AxeSoldier Wrathgar Level(6,Enemy,True) [12,7] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary]TwoActionAI 
-
-UNIT Cythes SwordArmor Wrathgar Level(9,Enemy,True) [4,3] 0x0 0x0 0x0 0x0 [Longsword] AttackInRangeAI
-
-UNIT Cythes LanceArmor Wrathgar Level(9,Enemy,True) [16,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
-UNIT Cythes LanceArmor Wrathgar Level(9,Enemy,True) [20,8] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
-
-UNIT Cythes SwordKnight Wrathgar Level(9,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [Armorslayer] AttackInRangeAI
-
-UNIT Cythes AxeKnight Wrathgar Level(9,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT Cythes AxeKnight Wrathgar Level(9,Enemy,True) [20,13] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-
-UNIT Cythes PegasusRider Wrathgar Level(9,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
-UNIT Cythes PegasusRider Wrathgar Level(9,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [IronLance] TwoActionAI
+UNIT Cythes DragonRider Wrathgar Level(10,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT Cythes DragonRider Wrathgar Level(10,Enemy,True) [16,0] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
 UNIT
 
 Traps1:
@@ -294,43 +292,182 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	COUNTER_SET 0 0 //for escape purposes
-	MountAll
-	LOAD1 0x1 EnemyUnits
-	ENUN
-	SetBackground(VillageRoad)
-	MUSC WindyDayBirdsSoundEffect
-	Text(Ch9OpeningText)
-	FADI 15
-	SetBackground(CastleHallway)
-	MUSC Sortie_Formation
-	Text(Ch9WrathgarRant)
-	FADI 15
-	SetBackground(OvergrownArches)
-	Text(MeldanWorryText)
-	FADI 15
-	ENUN
-	//Senny Rescued
-	CHECK_EVENTID 0x78 
-	BNE 4 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
-	ENUT 7 // sets flag so the talk isn't possible if the flag isn't set
-	LABEL 4 
-	//Helman Rescued
-	CHECK_EVENTID 0x79 
-	BNE 5 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
-	ENUT 8 // sets flag so the talk isn't possible if the flag isn't set
-	LABEL 5 
-	GotoPrepScreen
-	ENDA
+COUNTER_SET 0 0 //for escape purposes
+MountAll
+LOAD1 1 InitialMapUnits
+ENUN
+SetBackground(CampTent)
+MUSC FF6EdgarAndSabin
+Text(Ch9BeginningSceneLoeweCleoKwameDiscussion)
+FADI 15
+FadeOutMusic
+CAMERA_CENTERED [0,17]
+STAL 60
+EraseBackground
+CamOn
+MOVE 15 Korovai [17,15]
+MOVE 15 Epony [18,16]
+ENUN
+CamOff
+CAMERA_CENTERED Korovai
+FlashCursor(Korovai,30)
+FlashCursor(Epony,30)
+MUSC WindyDayBirdsSoundEffect
+Text(Ch9BeginningSceneKorovaiEponySpeakWithVillager)
+LOAD1 1 WrathgarUnits
+ENUN
+Text(Ch9BeginningSceneWrathgarShowsUp)
+FadeOutMusic
+StartBattle 
+NormalDamage(0,25)
+EndAttack
+SetScriptedBattle(90,25,0,0,0,0)
+FIGHT_MAP Wrathgar Raschwitz SteelAxe 0
+ENUN
+AWAIT_KILL Raschwitz
+MUSC Sortie_Formation
+Text(Ch9BeginningSceneWrathgarKilledAMan)
+MOVE 15 Helman [19,0]
+ENUN
+Text(Ch9BeginningSceneWrathgarGloats)
+MOVE 15 Wrathgar [19,0]
+MOVE 15 Militia [19,0]
+MOVE 15 Senny [19,0]
+ENUN
+Text(Ch9BeginningSceneKorovaiEponyResponseToWrathgar)
+MOVE 15 Korovai [2,16]
+MOVE 15 Epony [2,17]
+FADI 15
+ENUN
+STAL 60
+SetBackground(VillageRoad)
+Text(Ch9BeginningSceneLoeweCleoRespondToComingThreat)
+FADI 15
+RemoveAll
+ENUN
+LOAD1 0x1 EnemyUnits
+ENUN
+//Senny Rescued
+CHECK_EVENTID 0x78 
+BNE 4 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
+ENUT 7 // sets flag so the talk isn't possible if the flag isn't set
+LABEL 4 
+//Helman Rescued
+CHECK_EVENTID 0x79 
+BNE 5 s0 sC // s0 always 0, sC = 1 if flag is set, 0 if not
+ENUT 8 // sets flag so the talk isn't possible if the flag isn't set
+LABEL 5
+GotoPrepScreen
+ENDA
+
+InitialMapUnits:
+UNIT Korovai DukeKnight 0 Level(10,NPC,True) [0,16] 0x0 0x0 0x0 0x0 [SteelSword, SteelLance] AttackInRangeAI
+UNIT Epony Noble 0 Level(10,NPC,True) [0,17] 0x0 0x0 0x0 0x0 [SteelSword, SteelLance] AttackInRangeAI
+UNIT Raschwitz Civilian_2 0 Level(10,NPC,True) [19,14] 0x0 0x0 0x0 0x0 [0x0] AttackInRangeAI
+UNIT 
+
+WrathgarUnits:
+UNIT Wrathgar Warrior 0x0 Level(1,Enemy,False) [19,0] 0x0 0x0 1 REDA19R13 [SteelAxe,Greatbow, SecretBook] AttackInRangeAI
+UNIT Militia AxeSoldier Wrathgar Level(7,Enemy,True) [20,0] 0x0 0x0 1 REDA18R12 [IronAxe] AttackInRangeAI 
+UNIT Helman AxeSoldier Wrathgar Level(7,Enemy,True) [19,0] 0x0 0x0 1 REDA19R12 [ShortAxe] GroupOneAI 
+UNIT Senny AxeSoldier Wrathgar Level(7,Enemy,True) [20,0] 0x0 0x0 1 REDA20R12 [IronAxe] AttackInRangeAI 
+UNIT
 
 EndingScene:
-EndOfEscapeRoutineASMC
-SetBackground(CastleHallway)
-MUSC FF5_Nostalgia
-Text(Ch9EndingText)
 FADI 15
-SetBackground(OvergrownArches)
-Text(Ch9EndingText2)
-MNC2 Chapter10
+ENUT 3
+ENUN
+EndOfEscapeRoutineASMC
+ENUN
+STAL 1
+SHOWUNIT Loewe
+SHOWUNIT Cleo //just in case... i've seen loewe disappear here once or twice
+CALL GiveBackKaiserschwertFake
+RemoveAllDouble
+SetBackground(0x22)
+MUSC FE5_InTheBattle_Fate
+Text(Ch9EndingSceneLoeweCleoBriefDiscussion)
+FADI 15
+STAL 60
+SetBackground(0x23)
+Text(Ch9EndingSceneLoeweCleoArgueWithKorovaiEpony1)
+FadeOutMusic
+STAL 60
+MUSC oppression
+Text(Ch9EndingSceneKorovaiEponyConfrontation1)
+FADI 15
+FadeOutMusic
+LOMA Chapter10
+LOAD1 1 HornetValseGroup
+ENUN
+CAMERA_CENTERED Hornet
+FADU 15
+FlashCursor(Hornet,30)
+FlashCursor(Valse,30)
+MUSC FFTAnxiety
+Text(Ch9EndingSceneMifanScene1)
+LOAD1 1 MifanGroup
+ENUN
+//check some flags
+CHECK_EVENTID 0xA5
+BEQ 1 s0 sC //if it's not set, skip it
+	LOAD1 1 WellworthGroup
+LABEL 1
+CHECK_EVENTID 0xA3
+BEQ 2 s0 sC //if it's not set, skip it
+	LOAD1 1 YorGroup
+LABEL 2
+CHECK_EVENTID 0xA4
+BEQ 3 s0 sC //if it's not set, skip it
+	LOAD1 1 TheGiantGroup
+LABEL 3
+CHECK_EVENTID 0xA2
+BEQ 4 s0 sC //if it's not set, skip it
+	LOAD1 1 BuldakGroup
+LABEL 4
+ENUN
+CameraCursor(Mifan)
+Text(Ch9EndingSceneMifanScene2)
+FADI 15
+WM_LOADLOCATION2 0 Chapter11 0 //Required to fix chapter name
+WM_SETDESTINATION 0 Chapter11 0 //World map node. Keep these equal.
+WM_SETNEXTLOCATION 0 0 Chapter10 //Needed for world map narration.
+MNCH Chapter10
 NoFade
 ENDA
+
+HornetValseGroup:
+UNIT Valse Freelancer Cleo Level(8,Enemy,False) [11,5] 0x0 0x0 0x0 0x1 [Greatlance,Javelin,Vulnerary] NeverMoveAI
+UNIT Hornet BowKnight Cleo Level(11,Enemy,False) [9,5] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] DoNotAttack07AI
+UNIT Cythes SwordArmor Cleo Level(11,Enemy,False) [9,6] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes Hunter Cleo Level(11,Enemy,False) [10,6] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes LanceArmor Cleo Level(11,Enemy,False) [11,6] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes Axefighter Cleo Level(11,Enemy,False) [9,7] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes LanceSoldier Cleo Level(11,Enemy,False) [10,7] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes Swordfighter Cleo Level(11,Enemy,False) [11,7] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes LanceArmor Cleo Level(11,Enemy,False) [9,8] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes Archer Cleo Level(11,Enemy,False) [10,8] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes AxeArmor Cleo Level(11,Enemy,False) [11,8] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT Cythes Hero_F Cleo Level(11,Enemy,False) [10,9] 0x0 0x0 0x0 0x1 [Stinger,GaleBow,Vulnerary] NeverMoveAI
+UNIT
+
+
+MifanGroup:
+UNIT Mifan Swordmaster_F 0x0 Level(1,Enemy,False) [9,0] 0x0 0x0 1 REDA10R4 [IceSword,KillingEdge] BossAI
+UNIT
+
+WellworthGroup:
+UNIT Wellworth Hero 0x0 Level(1,Enemy,False) [8,0] 0x0 0x0 1 REDA9R3 [StoneSword] NeverMoveAI
+UNIT
+
+YorGroup:
+UNIT Yor Halberdier 0x0 Level(1,Enemy,False) [7,0] 0x0 0x0 1 REDA8R3 [YorsYari] NeverMoveAI
+UNIT
+
+TheGiantGroup:
+UNIT TheGiant Warrior 0x0 Level(1,Enemy,False) [9,0] 0x0 0x0 1 REDA11R3 [SteelBow,TrainedAxe] NeverMoveAI
+UNIT
+
+BuldakGroup:
+UNIT Buldak ThiefFighter 0x0 Level(1,Enemy,False) [10,0] 0x0 0x0 1 REDA12R3 [Buldirk] NeverMoveAI
+UNIT

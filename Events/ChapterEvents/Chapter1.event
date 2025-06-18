@@ -206,11 +206,11 @@ UNIT
 
 
 BoroUnitGroup:
-UNIT Boro_Ch1 Halberdier 0x00 Level(3,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [Impaler] PursueWithoutHeedAI
+UNIT Boro_Ch1 Halberdier 0x00 Level(1,Enemy,False) [19,16] 0x0 0x0 0x1 REDA19R16 [Javelin] PursueWithoutHeedAI
 UNIT
 
 BoroCutsceneGroup:
-UNIT Boro_Ch1 Halberdier 0x00 Level(3,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [Impaler, SilverAxe] PursueWithoutHeedAI
+UNIT Boro_Ch1 Halberdier 0x00 Level(1,Enemy,False) [27,29] 0x0 0x0 0x0 0x0 [Javelin, SilverAxe, SilverLance] PursueWithoutHeedAI
 UNIT
 
 DraganaUnitGroup:
@@ -487,7 +487,7 @@ ENUN
 MUSC 0x7FFF
 FADI 10
 STAL 30
-RemoveAll
+RemoveAllDouble
 LOMA Ch1DraganaPrison
 CAMERA [29,29]
 SPAWN_ALLY Cleo [26,29]

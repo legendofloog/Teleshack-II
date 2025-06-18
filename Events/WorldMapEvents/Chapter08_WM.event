@@ -1,0 +1,37 @@
+WorldMapPointerTable(Chapter9,WM_Events)
+
+WM_Events:
+_0xC220
+WM_MAKELORDDISAPPEAR
+CALL RemoveLocationsAndPaths
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch6, 0)
+WM_LOADLOCATION2 0 GMLoc_Ch6 0
+MUSC FF6MartialLawID
+WorldMapTextStart(Ch8_WM_Text)
+TEXTEND
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch7, 30)
+WM_LOADLOCATION2 0 GMLoc_Ch7 0
+TEXTCONT
+TEXTEND
+WM_LOADLOCATION2 0 GMLoc_Ch10 0
+TEXTCONT
+TEXTEND
+TEXTCONT
+WMSpawnSprite(0x2, Skyseeker, 0, GMLoc_Ch6)
+STAL 30
+WMMoveSprite(2, 0, 355, 215, 375, 180, 150, 1, 10)
+STAL 30
+WMSpawnSprite(0x3, Scaleshot, 0, GMLoc_Ch6)
+STAL 30
+WMMoveSprite(3, 0, 355, 215, 375, 180, 150, 1, 10)
+TEXTEND
+TerminateWorldMapText
+FADI 5
+STAL 15
+WMRemoveSprite(2)
+WMRemoveSprite(3)
+WM_SETNEXTLOCATION 0 0 Chapter9 //Needed for world map narration.
+SKIPWN
+WM_FXCLEAR1 0x0 0xFFFF 0xFFFF
+WM_FXCLEAR2 0x0 0xFFFF 0xFFFF
+ENDA

@@ -356,7 +356,11 @@
   mov r1, r8
   ldr     r0,[r1,#0x4] @class
   mov     r3,#0x12     @move
-  ldsb    r3,[r0,r3]  
+  ldsb    r3,[r0,r3]
+  ldr	  r0,[r1]	@char?
+  mov 	  r2, #0x23
+  ldsb	  r2,[r0,r2]
+  add	  r3, r2
   @ mov     r0,#0x1D     @bonus
   @ ldsb    r0,[r1,r0]   
   @ add     r0,r0,r3    

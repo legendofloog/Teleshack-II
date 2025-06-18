@@ -91,7 +91,7 @@ ldr r0, =0x203a4ec
 @testing
 add r0, #0x5c @attacker defense
 ldrh r3, [r0]
-add r3, #20
+add r3, #15
 strh r3, [r0]
 
 b       SkillReturn
@@ -99,7 +99,7 @@ CertainSkill:
 ldr     r0,=0x203A4EC       @Move attacker data into r0.
 add     r0,#0x60    @Move to the attacker's hit.
 ldrh    r3,[r0]     @Load the attacker's hit into r3.
-add     r3,#25    @Add 25 to the attacker's hit.
+add     r3,#50   @Add 25 to the attacker's hit.
 strh    r3,[r0]     @Store attacker hit.
 b       SkillReturn
 ArmoredSkill:
@@ -122,7 +122,7 @@ ldr r0, =0x203a4ec
 @testing
 add r0, #0x5c @attacker defense
 ldrh r3, [r0]
-add r3, #4
+add r3, #5
 strh r3, [r0]
 b SkillReturn
 

@@ -23,6 +23,10 @@ ORG SkillIcon(OmniCriticalID)
 ORG SkillIcon(HypeTrainID)
 #incbin "SkillIcons/AdrenalineRush.dmp"
 
+//placeholder
+ORG SkillIcon(SD_BattleJunkie)
+#incbin "SkillIcons/Wrath.dmp"
+
 ORG SkillIcon(CleoFanID)
 #incbin "SkillIcons/DecianFealty(JeorgeReds).dmp"
 
@@ -1005,7 +1009,7 @@ ORG SkillIcon(SpellMirrorID)
 #incbin "SkillIcons/CounterMagic.dmp"
 
 ORG SkillIcon(AzuriumMightID)
-#incbin "SkillIcons/ElbowRoom.dmp"
+#incbin "SkillIcons/Glacies.dmp"
 
 ORG SkillIcon(EterniumMightID)
 #incbin "SkillIcons/DoubleLion.dmp"

@@ -60,8 +60,8 @@ Multi-Skill Scroll,MultiScrollUsability|IsPointer,MultiScrollPrepUsability|IsPoi
 0x3a Thief,StealStaff_Usability|IsPointer,0x8028b2c,StealStaff_Targeting|IsPointer,StealStaff_ItemEffect|IsPointer
 0x3b Sigil,LightRuneStaff_Usability|IsPointer,0x8028b2c,LightRuneStaff_Targeting|IsPointer,LightRuneStaff_Effect|IsPointer
 0x3c Again,AgainStaff_Usability|IsPointer,0x802a100,AgainStaff_Targeting|IsPointer,AgainStaff_Effect|IsPointer
-0x3d,0x8028c04,0x802a100,0x802905c,0x802ff76
-0x3e,0x8028b60,0x802a100,0x802905c,0x802ff76
+0x3d Focus,FocusEmpowerUsabilityWrapper|IsPointer,0x802a100,0x8028fac,FocusEmpowerEffectWrapper|IsPointer
+0x3e Empower,FocusEmpowerUsabilityWrapper|IsPointer,0x802a100,0x8028fac,FocusEmpowerEffectWrapper|IsPointer
 0x3f,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x40,0x8028c04,0x802a100,0x802905c,0x802ff76
 0x41,0x8028c04,0x802a100,0x802905c,0x802ff76

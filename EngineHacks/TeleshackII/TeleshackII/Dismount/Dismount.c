@@ -290,7 +290,7 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 		unit->pow = promotedClass->maxPow;
 	}
 
-	unit->mag += (MagClassTable[promotedClass->number].promotionMag - MagClassTable[currentClass->number].promotionMag);
+	unit->mag += (MagClassTable[promotedClass->number].baseMag - MagClassTable[currentClass->number].baseMag);
 
 	if (unit->mag > MagClassTable[promotedClass->number].maxMag){
 		unit->mag = MagClassTable[promotedClass->number].maxMag;

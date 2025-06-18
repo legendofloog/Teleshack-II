@@ -6,13 +6,14 @@
 #include "StealExp.c"
 #include "WeaponExp.c"
 
+extern u8 BuldakCharIDLink;
 
 int GetUnitEffectiveLevel(Unit* unit){
 
 	int effectiveLevel = unit->supports[6]; //gets the last byte of supports, aka internal level
 
 	if (unit->pClassData->attributes & CA_PROMOTED){
-		effectiveLevel += 5;
+		effectiveLevel += 10;
 	}
 	return effectiveLevel;
 
@@ -66,13 +67,25 @@ void UnitLoadSupports(struct Unit* unit) {
         
 	int effectiveLevel = unit->level; //by default, internal level is just level
 	i = 0;
+	bool isInTable = false;
 	
 	while(InternalLevelTable[i].charID != 0xFF){
 		if(unit->pCharacterData->number == InternalLevelTable[i].charID){
 			effectiveLevel = InternalLevelTable[i].level;
+			isInTable = true;
 			break;
 		}
 		i++;
+	}
+
+	if ((!isInTable) && unit->pClassData->attributes & CA_PROMOTED) //is it a generic who's promoted
+	{
+		effectiveLevel = 14 + unit->level; //all generic enemies who are promoted are 14 + displayed level (15->34)
+	}
+
+	if (unit->pCharacterData->number == BuldakCharIDLink && unit->pClassData->attributes & CA_PROMOTED) //is it promoted buldak loading in, because then that's an enemy who's not in the table
+	{
+		effectiveLevel = 10; // special case
 	}
 
 	unit->supports[6] = effectiveLevel; //sets the "internal level" to last support byte

@@ -80,7 +80,7 @@ UNIT Corundum Champion Corundum Level(1,Enemy,False)[13,3] 0x0 0x0 0x0 0x0 [Silv
 UNIT Pascal ThiefFighter Pascal Level(1,Enemy,False)[6,23] 0x0 0x0 0x0 0x0 [SilverSword,KnightProof] TwoActionAI
 UNIT Bandit Brigand Pascal Level(10,Enemy,True)[13,25] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary] [0x0, 0x4, 0x4, 0x0]
 UNIT Bandit Brigand Pascal Level(10,Enemy,True)[17,17] 0x0 0x0 0x0 0x0 [IronAxe,Vulnerary] [0x0, 0x4, 0x4, 0x0]
-UNIT Darby Hunter_F Veniamin Level(13,Enemy,False)[18,11] 0x0 0x0 0x0 0x0 [HoundingBow,Vulnerary] PursueWithoutHeedAI
+UNIT Darby Hunter_F Veniamin Level(13,Enemy,False)[18,11] 0x0 0x0 0x0 0x0 [KillerBow,IronBow,Vulnerary] PursueWithoutHeedAI
 UNIT Cythes Mage Veniamin Level(10,Enemy,True)[20,13] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
 UNIT Cythes DragonRider Veniamin Level(12,Enemy,True)[10,17] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Cythes DragonRider Veniamin Level(12,Enemy,True)[14,7] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
@@ -140,7 +140,7 @@ UNIT Kailani HighPriestess Cleo Level(20,Ally,True)[16,16] 0 0 1 REDA22R19 [Ligh
 UNIT
 
 JacinthAppears:
-UNIT Jacinth Dancer Cleo Level(1,Ally,True)[14,10] 0 0 1 REDA14R11 [Rapier,Vulnerary] AttackInRangeAI
+UNIT Jacinth Dancer Cleo Level(8,Ally,False)[14,10] 0 0 1 REDA14R11 [Rapier,Vulnerary] AttackInRangeAI
 UNIT
 
 VeniaminAIChange:

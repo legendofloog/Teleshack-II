@@ -5,17 +5,62 @@
 
 ALIGN 4
 InternalLevelTable:
+InternalLevelEntry(Boro_Ch1, 15)
 InternalLevelEntry(Mira,10)
 InternalLevelEntry(Cromar,10)
 InternalLevelEntry(Meldan,10)
 InternalLevelEntry(Dragana,10)
-//InternalLevelEntry(Pelecaye,15)
-//InternalLevelEntry(Takai,15)
-//InternalLevelEntry(Jacinth,15)
+InternalLevelEntry(Pelecaye,10)
+InternalLevelEntry(Takai,10)
 InternalLevelEntry(Zeus, 20)
 InternalLevelEntry(McCallum, 10)
+InternalLevelEntry(TheGiant, 10)
+InternalLevelEntry(Wrathgar, 12)
+
+InternalLevelEntry(Yor, 10)
+InternalLevelEntry(Wellworth, 10)
+InternalLevelEntry(Johanna, 13)
+InternalLevelEntry(Mifan, 10)
+InternalLevelEntry(Cidor, 15)
+
+InternalLevelEntry(Ilse, 11)
+
+InternalLevelEntry(Kofi, 10)
+InternalLevelEntry(Rashid, 10)
+
+InternalLevelEntry(BoroReal, 15)
+InternalLevelEntry(Nikolas, 10)
+InternalLevelEntry(KwameReal, 30)
+
+InternalLevelEntry(Hartmann, 10)
+
+InternalLevelEntry(Sera, 10)
+InternalLevelEntry(Shaw, 13)
+
+InternalLevelEntry(Groto,10)
+InternalLevelEntry(Zhara,17)
+
+InternalLevelEntry(Lyre,10)
+
+InternalLevelEntry(Jerry,15)
+
+InternalLevelEntry(Ngondala,15)
+
+InternalLevelEntry(CatrinReal,20)
+
+InternalLevelEntry(Locke, 10)
+InternalLevelEntry(TrajanReal,20)
+
+InternalLevelEntry(Elias, 20)
+InternalLevelEntry(EliasReal, 20)
+
+InternalLevelEntry(BarodReal, 30)
 InternalLevelTerminator
 
 ALIGN 4
 gAutoloadSkills:
 POIN AutoloadSkills+1
+
+ALIGN 4
+DisciplineIDLink:
+BYTE DisciplineID

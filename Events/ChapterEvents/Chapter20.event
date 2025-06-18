@@ -169,8 +169,8 @@ UNIT KwameReal DarkBishop 0x0 Level(20,Ally,False) [0,16] 0 0 1 REDA5R16 [Longsw
 UNIT
 	
 Amongitis:
-UNIT Jerry Warrior Loewe Level(3,Enemy,False) [6,0] 0 0 1 REDA4R2 [SteelAxe,DevilAxe,PureWater,] [0x6,0x3,0x4,0x20]
-UNIT Lyre Dracoknight_F Cleo Level(2,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
+UNIT Jerry Warrior Loewe Level(5,Enemy,False) [6,0] 0 0 1 REDA4R2 [SteelAxe,DevilAxe,PureWater,] [0x6,0x3,0x4,0x20]
+UNIT Lyre Dracoknight_F Cleo Level(1,Enemy,False) [0,0] 0 0 1 REDA3R1 [Poleaxe,KillerAxe,Elixir] [0x6,0x3,0x4,0x20]
 UNIT
 
 SussySpawns: // :zany_face:

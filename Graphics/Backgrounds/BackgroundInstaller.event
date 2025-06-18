@@ -24,6 +24,20 @@ ALIGN 4
 OrodrethMapPal:
 #incbin "Dmp/OrodrethMap.png.pal.dmp"
 
+ALIGN 4
+CampTentImage:
+#incbin "Dmp/CampTent.png.dmp"
+
+ALIGN 4
+CampTentTSA:
+#incbin "Dmp/CampTent.png.tsa.dmp"
+
+ALIGN 4
+CampTentPal:
+#incbin "Dmp/CampTent.png.pal.dmp"
+
+
+
 //battle backgrounds
 
 #define BattleBackgroundTable $75A794

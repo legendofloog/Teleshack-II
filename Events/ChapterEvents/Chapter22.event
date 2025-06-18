@@ -365,7 +365,7 @@ UNIT Cythes Sage Eleanor Level(7,Enemy,True) [27,23] 0x0 0x0 0x0 0x0 [Thoron,Men
 UNIT
 
 TrajanSpawn:
-UNIT TrajanReal Hero 0x0 Level(8,Ally,False) [0,11] 0x0 0x0 0x1 REDA0R11 [SilverAxe,Claymore,KnightProof] AttackInRangeAI
+UNIT TrajanReal Hero 0x0 Level(10,Ally,False) [0,11] 0x0 0x0 0x1 REDA0R11 [Tomahawk,SilverSword,KnightProof] AttackInRangeAI
 UNIT
 
 LockeSpawn:

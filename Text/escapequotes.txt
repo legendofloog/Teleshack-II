@@ -25,9 +25,15 @@ I'd better not fall behind, then.[N][.5][ToggleSmile]
 See you later, Selesian dogs![A][X]
 
 ## LoeweChapter9EscapeQuoteText
-[MidRight][LoadLoewe]
-Phew, we're almost out of these accursed[N]
-jails.[.4] The rest of you better keep up![A][X]
+[MidRight][LoadLoeweAngry]
+Hmph[Beat] What, no more Decians to throw[N]
+at us? Cythean bastards[Beat] they'll pay![A][X]
+
+## LoeweChapter9FinalEscapeQuoteText
+[MidRight][LoadLoewe][ThreeLineBox]
+Looks like enough of us made it out[Beat][N]
+Too many Decians died today.[N]
+By our hand, even[Beat] It's all wrong.[A][X]
 
 ## LoeweChapter14EscapeQuoteText
 [MidRight][LoadLoewe]
@@ -64,8 +70,14 @@ Thank Byelen, I didn't fail her[Beat][A][X]
 
 ## CleoChapter9EscapeQuoteText
 [MidRight][LoadCleo]
-Finally, our path of escape is[N]
-clear. Follow my lead, everyone![A][X]
+We don't have much longer until Elias[N]
+catches up[Beat] Keep up the pace![AN][X]
+
+## CleoChapter9FinalEscapeQuoteText
+[MidRight][LoadCleo][ThreeLineBox]
+We can't wait any longer[Beat][N]
+I'd better take my leave.[N]
+Elias[Beat] I'm sorry, brother.[A][X]
 
 ## CleoChapter14EscapeQuoteText
 [MidRight][LoadCleo]
@@ -88,6 +100,11 @@ Follow me, everyone. I know the way.[A][X]
 I'll scout ahead for any Selesians.[N]
 We can't relax until we're home free![A][X]
 
+## MiraChapter9EscapeQuoteText
+[MidRight][LoadMira]
+Dragana[Beat] What would you think,[N]
+if you could see our actions now?[A][X]
+
 ## MiraEscapeQuoteText
 [MidRight][LoadMira]
 The others aren't out yet? They should[N]
@@ -103,6 +120,11 @@ I have to do my part, too![A][X]
 [MidRight][LoadIskra]
 We're almost out of here, aren't we?[N]
 Heh, the Selesians never saw it coming![A][X]
+
+## IskraChapter9EscapeQuoteText
+[MidRight][LoadIskra]
+This isn't why I joined the Liberators.[N]
+We're supposed to be the good guys[Beat][A][X]
 
 ## IskraEscapeQuoteText
 [MidRight][LoadIskra]
@@ -120,6 +142,11 @@ If only I had my horse right now![A][X]
 I can almost see the daylight, guys![N]
 You all better be right behind me![A][X]
 
+## EmilChapter9EscapeQuoteText
+[MidRight][LoadEmil]
+Some of these folks looked like farmers,[N]
+not soldiers[Beat] This ain't right.[A][X]
+
 ## EmilEscapeQuoteText
 [MidRight][LoadEmil]
 Phew, I kept my head after all.[N]
@@ -135,6 +162,11 @@ If anyone's in danger, call my name![A][X]
 [MidRight][LoadSvetomir]
 It seems a path has cleared for me.[N]
 Allow me to join the vanguard![A][X]
+
+## SvetomirChapter9EscapeQuoteText
+[MidRight][LoadSvetomir]
+Hm[Beat] Striking down Cytheans is all[N]
+well and good, but our own people?[A][X]
 
 ## SvetomirEscapeQuoteText
 [MidRight][LoadSvetomir]
@@ -152,6 +184,11 @@ if we want to live. Don't fall behind![A][X]
 The job's not done yet, not until[N]
 we see the surface. Keep running![A][X]
 
+## AlenaChapter9EscapeQuoteText
+[MidRight][LoadAlena]
+We can't waste our time mourning people[N]
+who wanted us dead. I'm going ahead![A][X]
+
 ## AlenaEscapeQuoteText
 [MidRight][LoadAlena]
 Sorry, but I'm leaving first.[N]
@@ -162,6 +199,10 @@ No sense in me staying behind.[A][X]
 We're almost out of this pit.[N]
 Now comes the hard part[Beat][A][X]
 
+## VargaChapter9EscapeQuoteText
+[MidRight][LoadVarga]
+[Beat]Good to see the boy still breathes.[N]
+He won't chase us. I'm certain.[A][X]
 
 ## VargaEscapeQuoteText
 [MidRight][LoadVarga]
@@ -173,7 +214,7 @@ Not too much further to run, I hope.[N]
 I never should've been here[Beat][N]
 Svetomir, I won't forgive you![A][X]
 
-## DelilahEscapeQuoteText
+## DelilahChapter9EscapeQuoteText
 [MidRight][LoadDelilah]
 Ugh, all this running[Beat][N]
 Why did I ever join these guys?[A][X]
@@ -216,88 +257,173 @@ they dont follow us.[A][X]
 I've had enough of[N]
 this, too spooky![A][X]
 
+## FiloneChapter9EscapeQuoteText
+[MidRight][LoadFilone]
+My bow arm's still shakin'[Beat][N]
+I'd better get outta here.[A][X]
+
 ## FiloneEscapeQuoteText
 [MidRight][LoadFilone]
 Phew, I'm finally outta there.[N]
 That was one heck of a close call![A][X]
+
+## ZwiebackChapter9EscapeQuoteText
+[MidRight][LoadZwieback]
+[Beat]I've been a Liberator a long time.[N]
+This ain't who we are, not at all.[A][X]
 
 ## ZwiebackEscapeQuoteText
 [MidRight][LoadZwieback]
 Looks like I ain't the last one out.[N]
 Lemme shoot down anyone in our way![A][X]
 
+## LongxiaChapter9EscapeQuoteText
+[MidRight][LoadLongxia]
+Running on land's a real pain[Beat][N]
+I'm not getting paid enough for this![A][X]
+
 ## LongxiaEscapeQuoteText
 [MidRight][LoadLongxia]
 No sense in dying here.[A][X]
+
+## FangaiChapter9EscapeQuoteText
+[MidRight][LoadFangai]
+Hm[Beat] Some of the plantlife here looks[N]
+quite edible. Perhaps just a smidge[Beat][A][X]
 
 ## FangaiEscapeQuoteText
 [MidRight][LoadFangai]
 Uwa ha ha! My last meal[N]
 will not be tonight![A][X]
 
+## FaolanChapter9EscapeQuoteText
+[MidRight][LoadFaolan]
+It's a damn shame that these folks[N]
+got the wool pulled over their eyes[Beat][A][X]
+
 ## FaolanEscapeQuoteText
 [MidRight][LoadFaolan]
 You sure you don't need me to stick[N]
 around? Alright, then I'm off![A][X]
+
+## MishChapter9EscapeQuoteText
+[MidRight][LoadMish]
+Wow, that was one mess![N]
+Don't take too long, guys![A][X]
 
 ## MishEscapeQuoteText
 [MidRight][LoadMish]
 Heh heh heh[Beat][N]
 Luck's on my side today![A][X]
 
-## TobieEscapeQuoteText
+## TobieChapter9EscapeQuoteText
 [MidRight][LoadTobie]
 Yikes, they almost got me[Beat] Well,[N]
 it's better than being stuck at the base![A][X]
+
+## CadenzaChapter9EscapeQuoteText
+[MidRight][LoadCadenza]
+A truly vexing performance[Beat][N]
+I am glad to see it end.[A][X]
 
 ## CadenzaEscapeQuoteText
 [MidRight][LoadCadenza]
 Very well, our commanders may[N]
 deliver the crescendo, this time[Beat][A][X]
 
+## MatthiasChapter9EscapeQuoteText
+[MidRight][LoadMatthias]
+What senseless violence[Beat][N]
+I'll heal whoever I can![A][X]
+
 ## MatthiasEscapeQuoteText
 [MidRight][LoadMatthias]
 Ah[Beat] Is everyone alright? Once we're[N]
 out, I can heal all of your wounds![A][X]
+
+## AwaChapter9EscapeQuoteText
+[MidRight][LoadAwa]
+I'm leaving first. You all had better[N]
+hurry up because I'm not waiting around![A][X]
 
 ## AwaEscapeQuoteText
 [MidRight][LoadAwa]
 Heh, was my daring escape ever in doubt?[N]
 I told you I wouldn't die![A][X]
 
+## LeinaChapter9EscapeQuoteText
+[MidRight][LoadLeina]
+I have seen enough unneeded bloodshed[N]
+for one day[Beat] Follow me, everyone![A][X]
+
 ## LeinaEscapeQuoteText
 [MidRight][LoadLeina]
 Excellent! I am one step closer[N]
 to achieving my goal[Beat][A][X]
+
+## CromarChapter9EscapeQuoteText
+[MidRight][LoadCromar]
+Hmph. I draw no satisfaction from weak[N]
+foes[Beat] I'm leaving now, understand?[A][X]
 
 ## CromarEscapeQuoteText
 [MidRight][LoadCromar]
 [Beat]As if my darkness could ever be[N]
 overcome. This was but a certainty[Beat][A][X]
 
+## IberisChapter9EscapeQuoteText
+[MidRight][LoadIberis]
+The traitors to House Freyse got their[N]
+dues. You're welcome, Liberators![A][X]
+
 ## IberisEscapeQuoteText
 [MidRight][LoadIberis]
 Maybe[Beat] Should have[Beat][N]
 brought lighter[Beat] armor.[A][X]
+
+## BuldakChapter9EscapeQuoteText
+[MidRight][LoadBuldak]
+More deaths on my conscience, huh?[N]
+The weight gets less and less[Beat][A][X]
 
 ## BuldakEscapeQuoteText
 [MidRight][LoadBuldak]
 Another day, another brush with[N]
 death. Only a matter of time.[A][X]
 
+## NoraChapter9EscapeQuoteText
+[MidRight][LoadNora]
+Yet more Cythean villains defeated[Beat][N]
+Lord Korovai, are you proud?[A][X]
+
 ## NoraEscapeQuoteText
 [MidRight][LoadNora]
 For Lord Korovai's sake,[N]
 I must make my retreat![A][X]
 
+## HansChapter9EscapeQuoteText
+[MidRight][LoadHans]
+This is what being a knight means, huh?[N]
+Sure isn't like the bedtime stories[Beat][A][X]
+
 ## HansEscapeQuoteText
 [MidRight][LoadHans]
 [Beat][A][X]
+
+## JennyChapter9EscapeQuoteText
+[MidRight][LoadJenny]
+Good goin', guys, takin' Wrathgar out[Beat][N]
+Tomas, I'll make you proud. Count on it![A][X]
 
 ## JennyEscapeQuoteText
 [MidRight][LoadJenny]
 No sense staying here.[N]
 Come on everyone![A][X]
+
+## MeldanChapter9EscapeQuoteText
+[MidRight][LoadMeldan]
+Ha[Beat] Hahaha! No need to thank me,[N]
+Liberators! I live to serve![A][X]
 
 ## MeldanEscapeQuoteText
 [MidRight][LoadMeldan]

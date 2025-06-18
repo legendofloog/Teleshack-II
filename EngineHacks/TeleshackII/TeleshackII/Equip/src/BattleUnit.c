@@ -34,7 +34,7 @@ void New_SaveUnitFromBattle(Unit* unit, BattleUnit* battleUnit){
 	// Synchronize
 
 	if (battleUnit->statusOut > 0){
-		SetUnitNewStatus(unit, battleUnit->statusOut);
+		SetUnitStatus(unit, battleUnit->statusOut);
 	}
 
 	unit->maxHP += battleUnit->changeHP;

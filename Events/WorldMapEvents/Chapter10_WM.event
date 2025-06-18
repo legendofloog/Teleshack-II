@@ -1,0 +1,57 @@
+WorldMapPointerTable(Chapter11,WM_Events)
+
+WM_Events:
+_0xC220
+WM_MAKELORDDISAPPEAR
+CALL RemoveLocationsAndPaths
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch9, 0)
+WM_LOADLOCATION2 0 GMLoc_Ch10 0
+MUSC FF6MartialLawID
+WorldMapTextStart(Ch10_WM_Text)
+TEXTEND
+//pan to cidor location, have him move down while text is happening
+WM_LOADLOCATION2 0 GMLoc_Ch12 0
+WM_WAITFORFX
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch12, 60)
+STAL 30
+WMSpawnSprite(0x4, Baron, 1, GMLoc_Ch12)
+WM_WAITFORSPRITELOAD
+WM_MAKELORDVISIBLE 4
+STAL 30
+WorldMapPortraitDisplayLeft(CidorMug)
+TEXTCONT
+WMMoveSprite(4, 0, 333, 118, 395, 165, 120, 1, 10)
+WMMoveCamTo(0xFFFF, 0xFFFF, GMLoc_Ch10, 120)
+WM_WAITFORSPRITES 0 0xFFFF 0xFFFF
+TEXTEND
+WorldMapClearLeftPortrait
+STAL 30
+WMSpawnSprite(0x2, Skyseeker, 0, GMLoc_Ch8)
+WM_MAKELORDVISIBLE 2
+STAL 30
+WorldMapPortraitDisplayRight(CleoMug)
+TEXTCONT
+TEXTEND
+WorldMapClearRightPortrait
+STAL 30
+WMSpawnSprite(0x3, Scaleshot, 0, GMLoc_Ch8)
+WM_MAKELORDVISIBLE 3
+STAL 30
+WorldMapPortraitDisplayRight(LoeweMug)
+TEXTCONT
+TEXTEND
+WorldMapClearRightPortrait
+TEXTCONT
+TEXTEND
+WMMoveSprite(2, 0, 380, 180, 380, 160, 90, 1, 10)
+WMMoveSprite(3, 0, 380, 180, 380, 160, 90, 1, 10)
+TerminateWorldMapText
+STAL 30
+FADI 5
+WMRemoveSprite(2)
+WMRemoveSprite(3)
+WM_SETNEXTLOCATION 0 0 Chapter11 //Needed to go to next chapter
+SKIPWN
+WM_FXCLEAR1 0x0 0xFFFF 0xFFFF
+WM_FXCLEAR2 0x0 0xFFFF 0xFFFF
+ENDA

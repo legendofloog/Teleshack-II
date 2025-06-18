@@ -71,8 +71,8 @@ END_MAIN
 Units1:
 UNIT Cleo 0x0 Cleo Level(1,Ally,False) [4,25] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Loewe 0x0 Cleo Level(1,Ally,False) [15,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Ichwep LanceSoldier Cleo Level(9,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
-UNIT Milo AxeSoldier Cleo Level(9,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [17,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
@@ -87,7 +87,7 @@ UNIT
 
 NewUnits:
 UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
-UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [Hammer,HandAxe,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:

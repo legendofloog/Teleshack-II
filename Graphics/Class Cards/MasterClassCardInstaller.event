@@ -47,6 +47,7 @@
 #define CorsairFClassCard 0x166
 #define BerserkerFClassCard 0x167
 #define DevoteeMClassCard 0x168
+#define WarMonkClassCard 0x169
 
 
 ALIGN 4
@@ -439,3 +440,11 @@ ALIGN 4
 DevoteeMClassCardPal:
 #incbin "Dmp/Monk (M) Magic {Blademaster, ltranc}.png_pal.dmp"
 setCardEntry(DevoteeMClassCard, DevoteeMClassCardData, DevoteeMClassCardPal)
+
+ALIGN 4
+WarMonkClassCardData:
+#incbin "Dmp/War Monk (M)  {Der}.dmp"
+ALIGN 4
+WarMonkClassCardPal:
+#incbin "Dmp/War Monk (M)  {Der}.png_pal.dmp"
+setCardEntry(WarMonkClassCard, WarMonkClassCardData, WarMonkClassCardPal)

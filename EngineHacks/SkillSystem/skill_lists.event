@@ -28,6 +28,11 @@ BYTE 21 AcrobatID
 BYTE 00 00
 ALIGN 4
 
+SeraSkillList:
+BYTE 21 DesperationID
+BYTE 00 00
+ALIGN 4
+
 DancerSkillList:
 BYTE 255 DanceID
 BYTE 00 00

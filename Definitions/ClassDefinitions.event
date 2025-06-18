@@ -89,6 +89,7 @@
 #define MageArmor 0x48
 #define Baron 0x49
 #define AxeFighter 0x4A 
+#define Axefighter AxeFighter 
 #define AxeFighter_F 0x4B
 #define Fighter 0x4A 
 #define Fighter_F 0x4B
@@ -146,6 +147,7 @@
 #define Champion 0x7B
 #define MasterKnight_F_Dismounted 0x7c
 #define Devotee_M 0x7D
+#define Brother Devotee_M
 #define Bard_Apsis 0x7E
 #define Sage_Apsis 0x7F
 #define Emperor 0x80
@@ -159,3 +161,4 @@
 #define Freeblade 0x88
 #define LoeweSadClass 0x89
 #define DraganaDeadClass 0x8A
+#define WarMonk 0x8B

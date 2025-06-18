@@ -32,7 +32,7 @@
 #define PassID 48
 #define SwapID 49
 #define ProvokeID 52
-#define ImbueID 53
+#define WardingBlowID 53
 #define ArmoredBlowID 54
 #define CriticalForceID 55
 #define DanceID 57
@@ -53,7 +53,8 @@
 #define DeathBlowID 88
 #define OpportunistID 89
 #define PuissanceID 90
-
+#define DisciplineID 104
+#define SupplyID 105
 
 // keep it continous for debug purpose
 
@@ -111,3 +112,4 @@
 #define QuadraCriticalID 101
 #define PentaCriticalID 102
 #define OmniCriticalID 103
+#define BattleJunkieID 106

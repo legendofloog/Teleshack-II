@@ -123,15 +123,15 @@ Darting Blow: +5 Attack Speed[N]
 when initiating battle.[X]
 
 ## SD_WardingBlow
-Warding Blow: +20 Res[N]
+Warding Blow: +15 Res[N]
 when initiating battle.[X]
 
 ## SD_CertainBlow
-Certain Blow: +25 Hit[N]
+Certain Blow: +50 Hit[N]
 when initiating battle.[X]
 
 ## SD_ArmoredBlow
-Armored Blow: +4 Def[N]
+Armored Blow: +5 Def[N]
 when initiating battle.[X]
 
 ## SD_Vantage
@@ -143,8 +143,8 @@ Desperation: If HP < 50%,[N]
 double attacks occur immediately.[X]
 
 ## SD_Wrath
-Wrath: If HP < 50%,[N]
-+20 critical rate.[X]
+Wrath: If an enemy initiates battle[N]
+with this unit, Crit is tripled.[X]
 
 ## SD_Counter
 Counter: Reflect damage taken[N]
@@ -481,8 +481,8 @@ Killing Machine: Total critical[N]
 rate is doubled.[X]
 
 ## SD_CriticalForce
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Critical Force: This unit's[N]
+Crit is increased by their Skl.[X]
 
 ## SD_Chivalry
 Chivalry: When foe is at full HP,[N]
@@ -1154,8 +1154,8 @@ Shade+: Enemies won't[N]
 target this unit.[X]
 
 ## SD_Imbue
-Imbue: Heal HP equal to magic[N]
-at the start of each turn.[X]
+Imbue: Heal HP equal to Mag x 2[N]
+at the start of every turn.[X]
 
 ## SD_Thighdeology
 Thighdeology: If a unit within[N]

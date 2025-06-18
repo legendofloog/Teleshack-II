@@ -75,11 +75,12 @@
 #define Athansius 0x48
 #define Athan 0x48
 #define Asha 0x49
-
-
+#define Mertloc 0x4A
+#define Hartmann 0x4b
 
 // Chapter 1 Bosses
 #define Raschwitz_Ch1 0x55
+#define Raschwitz Raschwitz_Ch1
 #define Boro_Ch1 0x4E
 // Chapter 2 Boss
 #define Tyr_Ch2 0x56
@@ -108,7 +109,7 @@
 // Chapter 10 stuff
 #define Cidor 0x5A
 #define Johanna 0x5B
-#define Elias 0x4a
+#define Elias 0xDB
 #define SeleseProvoke 0x98
 #define Bandit 0x99
 
@@ -158,7 +159,7 @@
 #define Aurora 0x58
 
 //Chapter 12 stuff
-#define Eitha 0x4B
+#define Eitha 0x80
 #define Mystery 0xDA
 #define Prisoner 0xD9
 

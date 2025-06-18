@@ -13,8 +13,8 @@ King Sword[X]
 # 0x361 ParagonSwordName ^
 Paragon Sword[X]
 
-# 0x362 ThunderSwordName ^
-Thunder Sword[X]
+# 0x362 ThunderSwordName
+Bolt Sword[X]
 
 # 0x363 WindSwordName
 Wind Sword[X]
@@ -125,13 +125,13 @@ who have not changed class.[.][X]
 Stone Sword[X]
 
 # 0x454
-Casts magical earth. Def +5.[X]
+Casts Earth at range. Def +5.[X]
 
 # 0x3A5
 Ice Sword[X]
 
 #0x455
-Casts magical ice. Res + 5.[X]
+Casts Ice at range. Res +5.[X]
 
 # 0x3A6
 Argilabrys[X]

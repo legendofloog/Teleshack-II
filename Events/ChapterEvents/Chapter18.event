@@ -156,7 +156,7 @@ UNIT
 
 EnemyUnits:
 UNIT Sera Swordmaster_F 0x0 Level(1,NPC,False) [13,19] 0x0 0x0 0x0 0x0 [SilverSword,KillingEdge,Rapier,Vulnerary] NoAI
-UNIT Shaw Champion 0x0 Level(3,NPC,True) [13,20] 0x0 0x0 0x0 0x0 [SilverLance,MysticLance,Javelin,Elixir] NoAI
+UNIT Shaw Champion 0x0 Level(3,NPC,False) [13,20] 0x0 0x0 0x0 0x0 [SilverLance,MysticLance,Javelin,Elixir] NoAI
 
 // Right water
 UNIT Cythes Pirate 0x0 Level(18,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [SteelAxe] PursueWithoutHeedAI

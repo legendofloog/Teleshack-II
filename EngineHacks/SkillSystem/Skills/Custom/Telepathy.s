@@ -20,7 +20,7 @@ ldrb r0,[r0,#2] @range
 cmp r0,#1
 bne End
 
-mov r0, #50
+mov r0, #25
 
 mov r1, #0x60
 ldrh r2, [r4, r1]

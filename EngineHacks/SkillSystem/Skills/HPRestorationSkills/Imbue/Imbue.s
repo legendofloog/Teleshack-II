@@ -26,6 +26,7 @@ beq GoBack
 mov r0,r4
 add r0,#0x3A
 ldrb r0,[r0] @r0 = mag
+lsr r0, #2
 
 @multiply it by 100
 mov r1,#100

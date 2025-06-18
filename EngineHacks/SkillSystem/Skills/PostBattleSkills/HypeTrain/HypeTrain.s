@@ -16,13 +16,6 @@ ldrb    r0, [r5,#0x13]
 cmp    r0, #0x00
 bne    End
 
-@hp check
-ldrb r0,[r4,#0x12] @max hp
-ldrb r1,[r4,#0x13] @cur hp
-lsl r1,r1,#2 @cur hp x4
-cmp r1,r0
-bgt End
-
 @check if attacked this turn
 ldrb 	r0, [r6,#0x11]	@action taken this turn
 cmp	r0, #0x2 @attack
@@ -52,7 +45,7 @@ orr	r0, r1
 str	r0, [r4,#0x0C]
 
 Event:
-ldr	r0,=#0x800D07C		@event engine thingy
+ldr	r0,=0x800D07C		@event engine thingy
 mov	lr, r0
 ldr	r0, HypeTrainEvent	@this event is just "play some sound effects"
 mov	r1, #0x01		@0x01 = wait for events

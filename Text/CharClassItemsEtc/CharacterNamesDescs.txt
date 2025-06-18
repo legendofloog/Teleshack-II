@@ -344,7 +344,7 @@ leader of a small port town.[X]
 Buldak[X]
 
 ## BuldakDesc
-A young tracker who joined the[N]
+A glum tracker who joined the[N]
 rebels in hope of future glory.[X]
 
 ## MifanName
@@ -365,8 +365,8 @@ Freyse resistance. Runs the show.[X]
 Iberis[X]
 
 ## IberisDesc
-A prideful noble of House Freyse, her[N]
-exile has not reduced her haughtiness.[X]
+A prideful noble of House Freyse.[N]
+Exile has not reduced her haughtiness.[X]
 
 ## TheGiantName
 The Giant[X]
@@ -971,7 +971,7 @@ Artemis[X]
 ## ArtemisDesc
 An old woman who once served as a[N]
 Knight of the Iris. Hearing of Cythes's[N]
-plight, the "Onyx Wolf" rejoined them.[X]
+plight, the [OpenQuote]Onyx Wolf" rejoined them.[X]
 
 ## MihailName
 Mihail[X]
@@ -1055,7 +1055,6 @@ all the world drown in his terrible wake.[X]
 Theimon[X]
 
 ## TheimonDesc
-
 With a word, he renews life; with the[N]
 blade, he takes it. A corrupt adjudicator[N]
 who has come to deliver your sentence.[X]
@@ -1064,7 +1063,6 @@ who has come to deliver your sentence.[X]
 Danu[X]
 
 ## DanuDesc
-
 All the world a canvas for his art; he[N]
 shapes the land with each swing of his[N]
 axe, and mankind's history follows suit.[X]
@@ -1150,3 +1148,17 @@ A prisoner held by Duke Cidor.[X]
 
 ## MysteryDesc
  [X]
+
+## MertlocName
+Mertloc[X]
+
+## MertlocDesc
+Dragana's former partner in the skies.[N]
+Now only answers to Loewe's call.[X]
+
+## HartmannName
+Hartmann[X]
+
+## HartmannDesc
+A former knight of Mahemen's fallen king.[N]
+Sullen, but always repays his debts.[X]

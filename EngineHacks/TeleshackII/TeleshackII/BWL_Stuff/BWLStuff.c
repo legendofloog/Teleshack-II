@@ -285,3 +285,14 @@ void BWL_AddLoss(u8 pid)
         SaveMetadata_Save(&buf, gPlaySt.gameSaveSlot);
     }
 }
+
+void BWL_AddFavoritismValue(u8 pid, int val)
+{
+    int cur;
+    
+    struct UnitUsageStats *bwl = BWL_GetEntry(pid);
+    if (NULL == bwl)
+        return;
+
+    cur++; //doesn't actually do anything, intentionally
+}

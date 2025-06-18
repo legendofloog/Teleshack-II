@@ -28,13 +28,14 @@ ASMC 0x800D391
 NoFade
 ENDB
 
-ALIGN 4
+ALIGN 4 //also used for Jerry 
 ClearSeraFlag:
 ENUF 0x7C
 CHECK_DEPLOYED Sera
 BEQ 1023 s0 sC
 	RECLASS Sera Swordmaster_F
 LABEL 1023
+COUNTER_SET 1 0 //reset's jerry galeforce counter
 NoFade
 ENDA
 
@@ -49,18 +50,21 @@ ENDA
 
 ALIGN 4
 PrepShop1:
-SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal
 BYTE 0x0 0x0
 
 ALIGN 4
 PrepShop2:
-SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch SlimArch 
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal SlimArch 
 BYTE 0x0 0x0
 ALIGN 4
 
 ALIGN 4
 PrepShop3:
-SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal Torch SlimArch KnightProof
+SHLI IronSword IronAxe IronBow IronLance Fire Thunder Lightning Flux Heal SlimArch KnightProof
 BYTE 0x0 0x0
 ALIGN 4
 
+SetGenericBossQ:
+NoFade
+ENDA

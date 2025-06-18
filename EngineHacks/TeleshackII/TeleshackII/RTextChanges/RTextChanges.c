@@ -118,7 +118,15 @@ int DrawHelpBoxStaffLabels(Item item) {
     Text_InsertString(&gHelpBoxSt.text[0], 0, 8, GetStringFromIndex(0x509)); // TODO: msg id "Staff[.]"
     Text_InsertString(&gHelpBoxSt.text[0], 30, 7, GetItemDisplayRankString(item));
     Text_InsertString(&gHelpBoxSt.text[0], 48, 8, GetStringFromIndex(0x500)); // TODO: msg id "Rng[.]"
-    Text_InsertString(&gHelpBoxSt.text[0], 70, 7, GetItemDisplayRangeString(item));
+
+    if ((GetItemData(item.number))->encodedRange == 0x10) //this is mag / 2 stuff
+    {
+        Text_InsertString(&gHelpBoxSt.text[0], 70, 7, GetStringFromIndex(0x522));
+    }
+    else
+    {
+        Text_InsertString(&gHelpBoxSt.text[0], 70, 7, GetItemDisplayRangeString(item));
+    }
     Text_InsertString(&gHelpBoxSt.text[0], 107, 8, GetStringFromIndex(0x502)); // TODO: msg id "Wt"
     Text_InsertNumberOr2Dashes(&gHelpBoxSt.text[0], 135, 7, GetItemWeight(item));
     
@@ -242,15 +250,17 @@ void DisplayPage1(void)
 
     int color;
 
+    struct Unit* unit = gStatScreen.unit;
+
     for (i = 0; (i < UNIT_ITEM_COUNT); ++i)
     {
-        item = gStatScreen.unit->items[i];
+        item = unit->items[i];
         if (item.durability == 0 && item.number == 0)
         {
             continue;
         }
 
-        color = IsItemDisplayUsable(gStatScreen.unit, item)
+        color = IsItemDisplayUsable(unit, item)
             ? TEXT_COLOR_SYSTEM_WHITE
             : TEXT_COLOR_SYSTEM_GRAY;
 
@@ -261,7 +271,7 @@ void DisplayPage1(void)
 
     }
 
-    i = GetUnitEquippedWeaponSlot(gStatScreen.unit);
+    i = GetUnitEquippedWeaponSlot(unit);
 
     if (i >= 0)
     {
@@ -275,7 +285,7 @@ void DisplayPage1(void)
 
     }
 
-    i = GetUnitEquippedItemSlot(gStatScreen.unit);
+    i = GetUnitEquippedItemSlot(unit);
     DrawSpecialUiChar(
         gpStatScreenPageBg0Map + TILEMAP_INDEX(16, 1 + i*2),
         TEXT_COLOR_SYSTEM_WHITE, TEXT_SPECIAL_35);

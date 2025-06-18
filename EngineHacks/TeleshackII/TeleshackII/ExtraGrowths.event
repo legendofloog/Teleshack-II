@@ -1,92 +1,115 @@
 // Con Growth Table
 
-SetUnitConGrowth(Cleo,10)
-SetUnitConGrowth(Loewe,5)
-SetUnitConGrowth(Iskra,5)
-SetUnitConGrowth(Mira,1)
-SetUnitConGrowth(Emil,15)
-SetUnitConGrowth(Svetomir,15)
-SetUnitConGrowth(Alena,10)
+SetUnitConGrowth(Cleo,25)
+SetUnitConGrowth(Loewe,15)
+SetUnitConGrowth(Iskra,10)
+SetUnitConGrowth(Mira,10)
+SetUnitConGrowth(Emil,25)
+SetUnitConGrowth(Svetomir,30)
+SetUnitConGrowth(Alena,15)
 
-SetUnitConGrowth(Varga,20)
+SetUnitConGrowth(Varga,35)
 SetUnitConGrowth(Delilah,5)
 
-SetUnitConGrowth(Alex,10)
-SetUnitConGrowth(Axel,10)
+SetUnitConGrowth(Alex,15)
+SetUnitConGrowth(Axel,15)
 
 SetUnitConGrowth(Filone,5)
-SetUnitConGrowth(Zwieback,25)
+SetUnitConGrowth(Zwieback,40)
 
 SetUnitConGrowth(Leina,5)
-SetUnitConGrowth(Cromar,15)
+SetUnitConGrowth(Cromar,20)
 
-SetUnitConGrowth(Longxia,15)
-SetUnitConGrowth(Fangai,10)
+SetUnitConGrowth(Longxia,30)
+SetUnitConGrowth(Fangai,25)
 
 SetUnitConGrowth(Gimm,5)
 SetUnitConGrowth(Tobie,1)
-SetUnitConGrowth(Awa,20)
-SetUnitConGrowth(Cadenza,15)
-SetUnitConGrowth(Faolan,10)
+SetUnitConGrowth(Awa,35)
+SetUnitConGrowth(Cadenza,20)
+SetUnitConGrowth(Faolan,20)
 SetUnitConGrowth(Matthias,10)
 
-SetUnitConGrowth(Iberis,15)
-SetUnitConGrowth(Buldak,15)
+SetUnitConGrowth(Iberis,20)
+SetUnitConGrowth(Buldak,20)
 
-SetUnitConGrowth(Nora,15)
+SetUnitConGrowth(Nora,30)
 SetUnitConGrowth(Hans,15)
 
-SetUnitConGrowth(Jenny,10)
-SetUnitConGrowth(Meldan,15)
-SetUnitConGrowth(Valse,15)
-SetUnitConGrowth(Hornet,5)
-SetUnitConGrowth(Milo,10)
-SetUnitConGrowth(Ichwep,5)
-SetUnitConGrowth(Mink,10)
-SetUnitConGrowth(Tiberius,15)
-SetUnitConGrowth(Ellerey,5)
+SetUnitConGrowth(Jenny,5)
+SetUnitConGrowth(Meldan,25)
+
+SetUnitConGrowth(Valse,20)
+SetUnitConGrowth(Hornet,15)
+
+SetUnitConGrowth(Milo,30)
+SetUnitConGrowth(Ichwep,15)
+
+SetUnitConGrowth(Mink,15)
+SetUnitConGrowth(Tiberius,5)
+
+SetUnitConGrowth(Mantou,25)
+SetUnitConGrowth(Ellerey,35)
 SetUnitConGrowth(Tippany,5)
-SetUnitConGrowth(Pelecaye,25)
-SetUnitConGrowth(Carl,15)
+SetUnitConGrowth(Pelecaye,30)
+SetUnitConGrowth(Carl,20)
+SetUnitConGrowth(Takai,20)
+
 SetUnitConGrowth(Darby,10)
-SetUnitConGrowth(Jacinth,3)
+SetUnitConGrowth(Jacinth,1)
+
 SetUnitConGrowth(Augur,1)
-SetUnitConGrowth(Nahiza,1)
-SetUnitConGrowth(Ilse,5)
-SetUnitConGrowth(Asha,5)
+SetUnitConGrowth(Nahiza,30)
+
+SetUnitConGrowth(Ilse,10)
+SetUnitConGrowth(Asha,1)
+
+SetUnitConGrowth(Kofi,25)
 SetUnitConGrowth(Rashid,15)
+
+SetUnitConGrowth(BoroReal,25)
 SetUnitConGrowth(Nikolas,10)
-SetUnitConGrowth(Sera,1)
-SetUnitConGrowth(Shaw,15)
-SetUnitConGrowth(Apsis,4)
-SetUnitConGrowth(Ojasvi,1)
-SetUnitConGrowth(Darcy,20)
+
+SetUnitConGrowth(Hartmann,30)
+
+SetUnitConGrowth(Sera,5)
+SetUnitConGrowth(Shaw,20)
+
+SetUnitConGrowth(Ojasvi,5)
+SetUnitConGrowth(Apsis,5)
+
+SetUnitConGrowth(Darcy,25)
 SetUnitConGrowth(Groto,50)
-SetUnitConGrowth(Tao,5)
-SetUnitConGrowth(Kofi,15)
+SetUnitConGrowth(Tao,10)
 SetUnitConGrowth(Zhara,10)
-SetUnitConGrowth(Takai,25)
+
 SetUnitConGrowth(Tara, 15)
-SetUnitConGrowth(Volran, 20)
-SetUnitConGrowth(Jerry,4)
-SetUnitConGrowth(Lyre,7)
+SetUnitConGrowth(Volran, 15)
 
+SetUnitConGrowth(Jerry,30)
+SetUnitConGrowth(Lyre,20)
 
-SetUnitConGrowth(Ngondala,3)
+SetUnitConGrowth(Ngondala,15)
 SetUnitConGrowth(CatrinReal,10)
-SetUnitConGrowth(Locke,25)
-SetUnitConGrowth(TrajanReal, 20)
-SetUnitConGrowth(EliasReal,15)
-SetUnitConGrowth(BoroReal,20)
+
+SetUnitConGrowth(Locke,30)
+SetUnitConGrowth(TrajanReal, 25)
+
+SetUnitConGrowth(EliasReal,25)
+
+SetUnitConGrowth(Orfeas,20)
+SetUnitConGrowth(BarodReal,30)
+
+SetUnitConGrowth(Athanasius, 15)
+SetUnitConGrowth(TarajiReal, 25)
 
 // Mov Growth Table
 SetUnitMovGrowth(Cleo,1)
 
-SetUnitMovGrowth(Iskra,3)
-SetUnitMovGrowth(Mira,1)
+SetUnitMovGrowth(Iskra,2)
 SetUnitMovGrowth(Emil,2)
 SetUnitMovGrowth(Svetomir,2)
-SetUnitMovGrowth(Alena,4)
+SetUnitMovGrowth(Alena,1)
 
 SetUnitMovGrowth(Varga,3)
 SetUnitMovGrowth(Delilah,5)
@@ -94,82 +117,86 @@ SetUnitMovGrowth(Delilah,5)
 SetUnitMovGrowth(Alex,3)
 SetUnitMovGrowth(Axel,3)
 
-SetUnitMovGrowth(Filone,10)
+SetUnitMovGrowth(Filone,13)
 SetUnitMovGrowth(Zwieback,2)
 
 SetUnitMovGrowth(Longxia,2)
-SetUnitMovGrowth(Fangai,4)
+SetUnitMovGrowth(Fangai,3)
 
-SetUnitMovGrowth(Gimm,5)
+SetUnitMovGrowth(Gimm,1)
 SetUnitMovGrowth(Matthias,3)
 SetUnitMovGrowth(Tobie,3)
 SetUnitMovGrowth(Awa,1)
 SetUnitMovGrowth(Cadenza,1)
-SetUnitMovGrowth(Faolan,4)
+SetUnitMovGrowth(Faolan,3)
 
 SetUnitMovGrowth(Leina,4)
-SetUnitMovGrowth(Cromar,1)
+SetUnitMovGrowth(Cromar,2)
 
-SetUnitMovGrowth(Iberis, 6)
+SetUnitMovGrowth(Iberis, 10)
 SetUnitMovGrowth(Buldak, 2)
 
-SetUnitMovGrowth(Nora, 1)
-SetUnitMovGrowth(Hans, 4)
+SetUnitMovGrowth(Nora, 2)
+SetUnitMovGrowth(Hans, 3)
 
-SetUnitMovGrowth(Jenny, 3)
+SetUnitMovGrowth(Jenny, 5)
 SetUnitMovGrowth(Meldan, 1)
 
-SetUnitMovGrowth(Valse, 2)
-SetUnitMovGrowth(Hornet, 3)
+SetUnitMovGrowth(Valse, 1)
+SetUnitMovGrowth(Hornet, 2)
 
 SetUnitMovGrowth(Milo,1)
-SetUnitMovGrowth(Ichwep,3)
+SetUnitMovGrowth(Ichwep,2)
 
-SetUnitMovGrowth(Mink,3)
-SetUnitMovGrowth(Tiberius,1)
+SetUnitMovGrowth(Mink,4)
+SetUnitMovGrowth(Tiberius,12)
 
-SetUnitMovGrowth(Ellerey,2)
-SetUnitMovGrowth(Mantou,5)
-SetUnitMovGrowth(Tippany,12)
-SetUnitMovGrowth(Pelecaye,2)
-SetUnitMovGrowth(Takai,2)
-SetUnitMovGrowth(Carl,7)
+SetUnitMovGrowth(Ellerey,1)
+SetUnitMovGrowth(Mantou,4)
+SetUnitMovGrowth(Tippany,15)
+SetUnitMovGrowth(Pelecaye,5)
+SetUnitMovGrowth(Takai,1)
+SetUnitMovGrowth(Carl,1)
 
-SetUnitMovGrowth(Darby,5)
-SetUnitMovGrowth(Jacinth,5)
+SetUnitMovGrowth(Darby,3)
+SetUnitMovGrowth(Jacinth,13)
 
 SetUnitMovGrowth(Augur,5)
 SetUnitMovGrowth(Nahiza,10)
 
 SetUnitMovGrowth(Ilse,1)
-SetUnitMovGrowth(Asha,3)
+SetUnitMovGrowth(Asha,4)
 
 SetUnitMovGrowth(Rashid,1)
-SetUnitMovGrowth(Kofi,1)
+SetUnitMovGrowth(Kofi,3)
 
 SetUnitMovGrowth(Nikolas,10)
+SetUnitMovGrowth(BoroReal,1)
+
+SetUnitMovGrowth(Hartmann,1)
 
 SetUnitMovGrowth(Sera,5)
-SetUnitMovGrowth(Shaw,3)
+SetUnitMovGrowth(Shaw,2)
 
-SetUnitMovGrowth(Apsis,7)
-SetUnitMovGrowth(Darcy,3)
-SetUnitMovGrowth(Ojasvi,4)
-SetUnitMovGrowth(Groto,5)
-SetUnitMovGrowth(Tao,3)
+SetUnitMovGrowth(Ojasvi,33)
+SetUnitMovGrowth(Apsis,2)
+SetUnitMovGrowth(Darcy,7)
+SetUnitMovGrowth(Groto,1)
+SetUnitMovGrowth(Tao,10)
 SetUnitMovGrowth(Zhara,1)
 
 SetUnitMovGrowth(Volran,1)
 SetUnitMovGrowth(Tara,2)
 
-SetUnitMovGrowth(Jerry,1)
-SetUnitMovGrowth(Lyre,2)
+SetUnitMovGrowth(Jerry,8)
+SetUnitMovGrowth(Lyre,5)
 
 SetUnitMovGrowth(Ngondala,1)
-SetUnitMovGrowth(CatrinReal,4)
+SetUnitMovGrowth(CatrinReal,1)
 
-SetUnitMovGrowth(Locke,8)
-SetUnitMovGrowth(TrajanReal,3)
+SetUnitMovGrowth(Locke,10)
+SetUnitMovGrowth(TrajanReal,1)
 
-SetUnitMovGrowth(EliasReal,2)
-SetUnitMovGrowth(BoroReal,3)
+SetUnitMovGrowth(BarodReal,1)
+
+SetUnitMovGrowth(Athanasius, 4)

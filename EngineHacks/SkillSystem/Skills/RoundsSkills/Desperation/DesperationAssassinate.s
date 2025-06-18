@@ -10,22 +10,12 @@
 .endm
 .equ DesperationID, SkillTester+4
 .equ AssassinateID, DesperationID+4
-.equ BladeDanceID, AssassinateID+4
 
 @check range
 ldr r0,=0x203A4D4 @battle stats
 ldrb r0,[r0,#2] @range
 cmp r0,#1
 bne CheckDesperation
-
-@now check if attacker has blade dance
-ldr r0, SkillTester
-mov lr, r0
-mov r0, r5 @defender data
-ldr r1, BladeDanceID
-.short 0xf800
-cmp r0, #0
-bne HasSkill
 
 CheckAssassinate:
 @now check if attacker has assassinate
@@ -39,19 +29,6 @@ beq CheckDesperation
 b HasSkill
 
 CheckDesperation:
-@check attacker's hp
-@ldr r3, [sp]
-
-@ldr r0, =0x203a4ec @no vantage + desp shenanigans, that's unfair lol
-@cmp r3, r0
-@bne NoSkill 
-
-@ldrb r0, [r3,#0x12] @max
-@ldrb r1, [r3, #0x13] @curr
-@lsr r0, #1
-@cmp r1, r0
-@bgt NoSkill
-
 @now check if attacker has desperation
 ldr r0, SkillTester
 mov lr, r0

@@ -125,8 +125,8 @@
 	#endif //DancerRingRefresh
 		
 	//change part that updates status effect on BattleTargetUnit
-	ORG $30038
-		SHORT 0x3030 0x7001 //add 	r0,0x30; strb 	r1,[r0]
+	//ORG $30038
+		//SHORT 0x3030 0x7001 //add 	r0,0x30; strb 	r1,[r0]
 		
 	//set up a separate animation association table for item effects
 	ORG $5800C

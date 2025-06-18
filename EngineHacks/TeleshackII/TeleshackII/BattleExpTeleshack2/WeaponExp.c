@@ -1,5 +1,9 @@
 #include "WeaponExp.h"
 
+extern bool(*gSkillTester)(Unit* unit, int skillID);
+extern u8 DisciplineIDLink;
+
+
 int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit) {
     int i, result;
 
@@ -27,7 +31,12 @@ int GetBattleUnitUpdatedWeaponExp(BattleUnit* battleUnit) {
     
 	result = battleUnit->unit.ranks[battleUnit->weaponType];
 	if (battleUnit->unit.fatigue <= battleUnit->unit.maxHP){ // checks if fatigue is not > maxHP and unit is ally; if so, gives wexp
-		result += GetItemAwardedExp(battleUnit->weapon);
+		int awardedWEXP = GetItemAwardedExp(battleUnit->weapon);
+        if (gSkillTester(&battleUnit->unit, DisciplineIDLink))
+        {
+            awardedWEXP *= 2;
+        }
+        result += awardedWEXP;
 	}
 
     for (i = 0; i < 8; ++i) {

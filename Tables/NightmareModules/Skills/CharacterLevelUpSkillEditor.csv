@@ -47,7 +47,7 @@ INLINE CharLevelUpSkillTable,Skill List Address
 0x2D Ilse,0
 0x2E Rashid,RashidSkillList|IsPointer
 0x2F Nikolas,0
-0x30 Sera,0
+0x30 Sera,SeraSkillList|IsPointer
 0x31 Shaw,0
 0x32 Apsis,ApsisSkillList|IsPointer
 0x33 Ojasvi,0

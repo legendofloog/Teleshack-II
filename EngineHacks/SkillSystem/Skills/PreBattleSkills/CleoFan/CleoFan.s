@@ -19,7 +19,7 @@ mov lr, r0
 mov r0, r4 @attacker
 mov r1, #0x0
 mov r2, #0 @are allies
-mov r3, #1 @range
+mov r3, #3 @range
 .short 0xf800
 cmp r0, #0
 beq End
@@ -44,18 +44,6 @@ mov r3, #0x20
 lsl r3, #8 @0x2000 Is Lord
 tst r0, r3
 beq Loop @Loop until find a Lord, or until no units left
-
-@ hit
-mov r1, #0x60
-ldrh r2, [r4, r1]
-add r2, #10
-strh r2, [r4,r1]
-
-@ crit
-mov r1, #0x66
-ldrh r2, [r4, r1]
-add r2, #10
-strh r2, [r4,r1]
 
 @ enable brave flag
 mov r0,r4

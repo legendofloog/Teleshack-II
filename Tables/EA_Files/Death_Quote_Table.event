@@ -19,32 +19,36 @@ CaptureQuote(Hilmar,Chapter4,2, 2, HilmarDeathQuote, HilmarCaptureQuote)
 
 CaptureQuote(Riggan,Chapter5, 2, 7, RigganDeathQuoteText, RigganCaptureQuoteText)
 
-DeathQuote(McCallum, Chapter6, 0, McCallumDeathQuoteText)
+DeathQuote(McCallum, Chapter6, 2, McCallumDeathQuoteText)
 CaptureQuote(Draken, Chapter6, 0, 0, DrakenDeathQuoteText, DrakenCaptureQuoteText)
 DeathQuote(Zeus, Chapter6, 20,Ch6ZeusCongratulations)
 
-DeathQuote(Mifan,Chapter7,16,0)
-DeathQuote(TheGiant,Chapter7,17,0)
-DeathQuote(Yor,Chapter7,18,0)
-DeathQuote(Wellworth,Chapter7,19,0)
+//ch 7
+CaptureQuote(Mifan, Chapter7, 16, 24, MifanDeathQuoteText, MifanCaptureQuoteText)
+CaptureQuote(TheGiant, Chapter7, 17, 25, TheGiantDeathQuoteText, TheGiantCaptureQuoteText)
+CaptureQuote(Yor, Chapter7, 18, 26, YorDeathQuoteText, YorCaptureQuoteText)
+CaptureQuote(Wellworth, Chapter7, 19, 27, BuldakDeathQuoteText, WellworthCaptureQuoteText)
+CaptureQuote(Buldak,Chapter7,29, 30, BuldakDeathQuoteText, BuldakCaptureQuoteText)
 DeathQuote(Korovai,Chapter7,0x65,KorovaiDeathQuote)
 DeathQuote(Epony,Chapter7,0x65,EponyDeathQuote)
-DeathQuote(Buldak,Chapter7,29,0)
 
-DeathQuote(Hege,Chapter8,2,HegeDeathQuote)
-DeathQuote(Francis,Chapter8,8,FrancisDeathQuote)
+//ch8
+CaptureQuote(Hege, Chapter8, 2, 13, HegeDeathQuote, HegeCaptureQuote)
 
-DeathQuote(Wrathgar,Chapter9,2,WrathgarDeathQuote)
+// ch9
+CaptureQuote(Wrathgar, Chapter9, 2, 2, WrathgarDeathQuote, WrathgarCaptureQuote)
+DeathQuote(Elias,Chapter9,0,Ch9EliasDeathQuote)
 
-DeathQuote(Cidor,Chapter10,0,Ch10CidorDeathQuote)
-DeathQuote(Johanna,Chapter10,0,Ch10JohannaDeathQuote)
-DeathQuote(Elias,Chapter10,0,Ch10EliasDeathQuote)
+//ch 10 (start with non-capture ones)
 DeathQuote(Hernandez,Chapter10,0,Ch10HernandezDeathQuote)
-DeathQuote(Mifan,Chapter10,16,0)
-DeathQuote(TheGiant,Chapter10,17,0)
-DeathQuote(Yor,Chapter10,18,0)
-DeathQuote(Wellworth,Chapter10,19,0)
-DeathQuote(Buldak,Chapter10,20,0)
+DeathQuote(Cidor,Chapter10,0,Ch10CidorDeathQuote)
+CaptureQuote(Mifan, Chapter10, 0, 31, Ch10MifanDeathQuoteText, Ch10MifanCaptureQuoteText)
+CaptureQuote(TheGiant, Chapter10, 0, 32, Ch10TheGiantDeathQuoteText, Ch10TheGiantCaptureQuoteText)
+CaptureQuote(Yor, Chapter10, 0, 33, Ch10YorDeathQuoteText, Ch10YorCaptureQuoteText)
+CaptureQuote(Wellworth, Chapter10, 0, 34, Ch10WellworthDeathQuoteText, Ch10WellworthCaptureQuoteText)
+CaptureQuote(Buldak, Chapter10, 35, 36, Ch10BuldakDeathQuoteText, Ch10BuldakCaptureQuoteText)
+CaptureQuote(Johanna, Chapter10, 0, 0, Ch10JohannaDeathQuote, Ch10JohannaCaptureQuote)
+
 
 DeathQuote(Aurora,Chapter11,0x2,AuroraDeathQuote)
 DeathQuote(Pelecaye,Chapter11,0,Ch12xPelecayeDeathQuote)

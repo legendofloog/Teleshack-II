@@ -229,7 +229,7 @@ UNIT
 
 OrfeasAppears:
 UNIT Orfeas Emperor   0x0 Level(10,NPC,False) [13,22] 0x0 0x0 0x0 0x0 [Hel,Tornado,Mend,SmolderingSeal] NoAI
-UNIT BarodReal Warrior 0x0 Level(10,NPC,False) [13,29] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT BarodReal Warrior 0x0 Level(20,NPC,False) [13,29] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT
 
 EndingSceneGroup:
@@ -237,7 +237,7 @@ UNIT Byelen ByelenClass   0x0 Level(20,Enemy,False) [13,3] 0x0 0x0 0x0 0x0 [Pred
 UNIT Loewe Dragonlord_Dismounted 0x0 Level(15,Ally,True) [13,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT Cleo Seraphknight_Dismounted 0x0 Level(15,Ally,True) [12,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT KwameReal DarkBishop 0x0 Level(15,Ally,True) [14,5] 0x0 0x0 0x0 0x0 [IronLance] NoAI
-UNIT BarodReal Warrior 0x0 Level(10,Ally,False) [11,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT BarodReal Warrior 0x0 Level(20,Ally,False) [11,4] 0x0 0x0 0x0 0x0 [IronLance] NoAI
 UNIT
 
 MindPalaceGroup:

@@ -438,7 +438,7 @@ EndOfEscapeRoutineASMC
 ENUN
 CALL GiveBackKaiserschwertFake
 MUSC 0x7FFF
-RemoveAll
+RemoveAllDouble
 LOMA Chapter3Cutscene
 CAMERA_CENTERED [9,3]
 FADU 10
@@ -549,6 +549,7 @@ FADI 1
 STAL 40
 LOMA Chapter3
 ENUT 0x89 //world map flag
+REMOVEUNIT Dragana
 ClearUnit(Dragana)
 WM_LOADLOCATION2 0 Chapter4 0 //Required to fix chapter name
 WM_SETDESTINATION 0 Chapter4 0 //World map node. Keep these equal.

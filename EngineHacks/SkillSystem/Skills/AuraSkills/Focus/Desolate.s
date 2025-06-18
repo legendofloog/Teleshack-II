@@ -33,7 +33,7 @@ bne Done
 mov r0, r4
 add     r0,#0x66    @Move to the attacker's crit.
 ldrh    r3,[r0]     @Load the attacker's crit into r3.
-add     r3,#40    @add 40.
+add     r3,#50    @add 40.
 strh    r3,[r0]     @Store.
 
 Done:

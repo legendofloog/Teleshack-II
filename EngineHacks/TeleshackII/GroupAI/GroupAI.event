@@ -1,3 +1,9 @@
+PUSH 
+ORG $37748 // HandlePostActionTraps occurs before the hook at $1D308 and sets action to "wait" when standing on a trap right after this code
+jumpToHack(GroupAI|1)
+POP
+
+
 //Make sure to add GroupAI to SkillSystem_FE8-master\Engine Hacks\Necessary\CalcLoops\PostBattleCalcLoop\PostBattleCalcLoop.event
 ALIGN 4
 GroupAI:

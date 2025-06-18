@@ -25,5 +25,6 @@ SkillAnimation(TripleCriticalID,IgnisAnim)
 SkillAnimation(QuadraCriticalID,ImpaleAnim)
 SkillAnimation(PentaCriticalID,AstraAnim)
 SkillAnimation(OmniCriticalID,AetherAnim)
+SkillAnimation(HeadshotID, AdeptAnim)
 
 ORG SkillAnimationTable+1024

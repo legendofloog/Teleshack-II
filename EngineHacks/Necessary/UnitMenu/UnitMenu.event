@@ -77,21 +77,6 @@ UnitMenuTable:
   // UM_Attack_B
   MenuCommand(0x67b, 0x6c0, NormalText, $24a28, AttackEffect, $22c31, $22c99)
   
-  
-  
-  
-  #ifdef DRAGON_VEINS
-  MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
-  #endif // DRAGON_VEINS
-  
-  #ifdef GAIDEN_MAGIC
-	MenuCommand(UM_GaidenBlackMagic,UM_GaidenMagicDesc,NormalText,GaidenBlackMagicUMUsability,GaidenBlackMagicUMEffect,GaidenBlackMagicUMHover,GaidenMagicUMUnhover)
-	MenuCommand(UM_GaidenWhiteMagic,UM_GaidenMagicDesc,NormalText,GaidenWhiteMagicUMUsability,GaidenWhiteMagicUMEffect,GaidenWhiteMagicUMHover,GaidenMagicUMUnhover)
-  #endif // GAIDEN_MAGIC
-  #ifdef COMBAT_ARTS
-	MenuCommand(UM_CombatArts, UM_CombatArtsDesc, NormalText, CombatArtsUsability, CombatArtsEffect, $22c31, $22c99)
-  #else // COMBAT_ARTS
-  
 	//Lunge
 	MenuCommand(UM_Lunge, UM_LungeDesc, NormalText, LungeUsability, LungeEffect, $22c31, $22c99)
 
@@ -103,7 +88,7 @@ UnitMenuTable:
 
 	//Capture
 	MenuCommand(UM_Capture, UM_CaptureDesc, NormalText, Capture_Usability, Capture_Effect_Func, $22c31, $22c99)
-  #endif // COMBAT_ARTS
+
 
   UM_Staff
   UM_Play
@@ -121,12 +106,10 @@ UnitMenuTable:
   UM_Exit
   
   //UM_Summon
-  MenuCommand(0x693,0x6DD,NormalText,NewSummonUsability,0x244B8)
+  MenuCommand(WhistleName,WhistleDesc,BlueText,SummonCommandUsability,SummonCommandEffect)
   
   UM_Summon_DK
 
-
-#ifndef COMBAT_ARTS
 
 #ifdef HAX_RALLIES
   // Rally preview conflicts with window semitransparency changes
@@ -139,22 +122,12 @@ UnitMenuTable:
 
 #endif // HAX_RALLIES
 
-#endif // COMBAT_ARTS
-
   // UM_Talk
   MenuCommand(0x680, 0x6c9, GreenText, 0x23c81, 0x23cc5)
   // UM_Support
   //(name,description,colour,usability,effect)
   MenuCommand(0x681, 0x6ca, GreenText, 0x23d15, 0x23d65)
   UM_Visit
-  
-  #ifdef RAID
-    MenuCommand(RaidNameText,RaidDescText,NormalText,RaidUsability,RaidEffect)
-  #endif // RAID
-  
-  #ifdef STAIRS_ASM
-	MenuCommand(StairsNameText,StairsDescText,GreenText,StairsUsability,StairsEffect)
-  #endif // STAIRS_ASM
 
   
   UM_Chest
@@ -164,16 +137,14 @@ UnitMenuTable:
   UM_Secret
   UM_Arena
 
-  //MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
+  MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
 
-  #ifndef COMBAT_ARTS
 	// Shove & cie
 	MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
 	MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)
 	MenuCommand(UM_Pivot,      UM_PivotDesc,      NormalText, prPivotCommand_Usability,      prPivotCommand_Effect)
 	MenuCommand(UM_Reposition, UM_RepositionDesc, NormalText, prRepositionCommand_Usability, prRepositionCommand_Effect)
 	MenuCommand(UM_Swap,       UM_SwapDesc,       NormalText, prSwapCommand_Usability,       prSwapCommand_Effect)
-  #endif // COMBAT_ARTS
   
   UM_Rescue
   UM_Give

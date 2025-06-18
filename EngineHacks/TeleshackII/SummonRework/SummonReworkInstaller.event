@@ -1,0 +1,13 @@
+/*
+SummonRework lets you specify different classes for each unit's summon.
+It removes the RNG call to generate a random weapon for the summon and instead gives them the base weapon for their class. It checks the first weapon rank the class has so multi-weapon classes will spawn with the first eligible weapon.
+
+The new routine is significantly shorter than the previous one. Some basic magic user and monster unit support have been added to the ASM and you can customize further if needed.
+*/
+
+PUSH
+	//Don't draw portrait on item select menu if unit is generic
+	ORG $22BE8
+	SHORT $6808 $88C0 $2800
+POP
+

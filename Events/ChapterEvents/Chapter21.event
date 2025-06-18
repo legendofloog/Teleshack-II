@@ -746,8 +746,7 @@ ENDA
 
 JerrySecretEvent:
 Text(Chapter21_JerrySecretTalk)
-LearnSkill(Jerry,VantageID)
-LearnSkill(Jerry,WrathID)
+LearnSkill(Jerry,BattleJunkieID)
 NoFade
 ENDA
 

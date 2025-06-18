@@ -2,16 +2,16 @@
 A brave blade that strikes twice. Grants Charisma.[X]
 
 ## FlameSwordDesc
-Casts magical flame. Mag +5.[X]
+Casts Fire at range. Mag +5.[X]
 
 ## ParagonSwordDesc
 Doubles EXP gained. Def +5.[X]
 
 ## ThunderSwordDesc
-Casts magical thunder. Skl +5.[X]
+Casts Thunder at range. Skl +5.[X]
 
 ## WindSwordDesc
-Casts magical wind. Spd +5.[X]
+Casts Wind at range. Spd +5.[X]
 
 ## SleepSwordDesc
 Puts enemies to sleep if it hits.[X]
@@ -87,7 +87,7 @@ Slim Arch[X]
 Dullahan[X]
 
 ## DullahanDesc
-[LockIcon][_C][_r][_o][_m][_a][_r][_.][_SP][_R][_e][_v][_i][_v][_e][_s][_SP][_u][_s][_e][_r][_SP][_u][_p][_o][_n][_SP][_d][_e][_f][_e][_a][_t][_.][X]
+[LockIcon]Cromar. Revives upon defeat.[X]
 
 ## CounterBowName
 Counter Bow[X]
@@ -99,7 +99,7 @@ Reflects melee damage.[X]
 Burn[X]
 
 ## BurnDesc
-[_E][_f][_f][_e][_c][_t][_i][_v][_e][_SP][_a][_g][_a][_i][_n][_s][_t][_SP][_e][_n][_e][_m][_i][_e][_s][_SP][_o][_n][_SP][_t][_e][_r][_r][_a][_i][_n][_.][X]
+Eff. against enemies on terrain.[X]
 
 ## ConversionName
 Conversion[X]
@@ -135,7 +135,7 @@ Brave.[X]
 Sister Ring[X]
 
 ## SisterRingDesc
-Allows access to ancient power (+1 Mov).[X]
+A precious memento. +1 Mov.[X]
 
 ## CivilianProofName
 [_C][_i][_v][_i][_l][_i][_a][_n][_SP][_P][_r][_o][_o][_f][X]
@@ -145,9 +145,6 @@ Holder cannot enter combat.[X]
 
 ## ArachnidName
 Arachnid[X]
-
-## ArachnidDesc
-Can strike consecutively.[X]
 
 ## HurlbatName
 Hurlbat[X]
@@ -172,17 +169,11 @@ Devil's Dagger[X]
 ## DevilDaggerDesc
 Fixed damage. (26-Lck)% backfire.[X]
 
-## BalladOfWarName ^
-Ballad of War[X]
-
-## BalladOfWarDesc
-+10 Hit/Avo to allies within 3 tiles.[X]
-
 ## YorsYariName
 Yor's Yari[X]
 
 ## YorsYariDesc
-Ignores Defence.[X]
+Ignores Def.[X]
 
 ## DaShootaName
 Break Arc[X]
@@ -197,7 +188,7 @@ Meat Cleaver[X]
 Axle[X]
 
 ## Axle1Desc
-Uncounterable. Lck +13.  Axel/Alex[LockIcon].[X]
+Uncounterable. Lck +10.  Axel/Alex[LockIcon].[X]
 
 ## Axle2Desc
 A long range axe. Alex/Axel[LockIcon].[X]
@@ -205,15 +196,11 @@ A long range axe. Alex/Axel[LockIcon].[X]
 ## MiaodaoName
 Miaodao[X]
 
-## MiaodaoDesc
-Can strike consecutively.[X]
-
 ## ZykhraScrollName
 Zykhra Scroll[X]
 
 ## ZykhraScrollDesc
-+10% HP/Str/Def/Bld, -10% Spd.[N]
-Blocks crits.[X]
++35% Bld, -20% Spd.[X]
 
 ## GrowthScrollName
 Growth Scroll[X]
@@ -242,12 +229,6 @@ Stormbrand[X]
 ## StormbrandDesc
 Brave. Iskra[LockIcon][X]
 
-## BpatItemName
-DUMMY (bpat)[X]
-
-## BpatItemDesc
-Something special :)[X]
-
 ## ArgymosCrestName
 Argymos Seal[X]
 
@@ -258,15 +239,13 @@ Promotion item for Cleo.[X]
 Raio Scroll[X]
 
 ## RaioScrollDesc
-+10% Mag/Skl, +15% Spd, -10% HP.[N]
-Blocks crits.[X]
+-30% HP, +10% Mag, +30% Spd.[X]
 
 ## LuzenScrollName
 Luzen Scroll[X]
 
 ## LuzenScrollDesc
-+30% HP, +20% Lck.[N]
-Blocks crits.[X]
++60% HP, +20% Lck.[X]
 
 ## DarkbrandName
 Darkbrand[X]
@@ -327,16 +306,16 @@ A lance with extended reach.[X]
 Follow-up attacks strike consecutively.[X]
 
 ## TrainedEdgeName
-Trained Edge[X]
+Plat. Sword[X]
 
 ## TrainedPikeName
-Trained Pike[X]
+Plat. Lance[X]
 
 ## TrainedAxeName
-Trained Axe[X]
+Plat. Axe[X]
 
 ## TrainedArcName
-Trained Arc[X]
+Plat. Bow[X]
 
 ## AquaBrandName
 Aqua Brand[X]
@@ -466,7 +445,7 @@ Strong but inaccurate throwing club.[X]
 Maharaghi[X]
 
 ## MaharaghiDesc
-Can be used to greatly heal allies.[X]
+Can greatly heal allies. Magical.[X]
 
 ## KaiserschwertFakeDesc
 [LockIcon] Loewe. A sentimental sword.[X]
@@ -542,7 +521,7 @@ Taraji's lethal twin blades. Brave.[X]
 Starcutter[X]
 
 ## StarcutterDesc
-Replica Kaiserschwert. Magic.[X]
+[LockIcon]Catrin. Magical. Always attacks first.[X]
 
 ## FullHelmName
 Full Helm[X]
@@ -748,8 +727,8 @@ Agni[X]
 [_S][_m][_o][_l][_d][_e][_r][_i][_n][_g][_SP][_S][_e][_a][_l][X]
 
 ## SmolderingSealDesc
-A symbol of Cythean authority. Add[N]
-Orfeas's Strength to magic attacks.[X]
+A symbol of Cythean authority.[N]
+Add Orfeas's Mag to phys. attack DMG.[X]
 
 ## ApotheosisName
 Apotheosis[X]
@@ -859,3 +838,9 @@ Asgeir Scroll[X]
 
 ## AsgeirScrollDesc
 +10% Spd/Def. +20% Lck.[X]
+
+## TomahawkName
+Tomahawk[X]
+
+## SpearName
+Spear[X]

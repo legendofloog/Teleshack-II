@@ -39,7 +39,7 @@ ENDA
 
 ALIGN 4
 SpawnEnemies:
-	CountEnemiesInRange(3,1,11,11)
+	CountEnemiesInRange(2,0,11,11)
 	IBgt(0, 420)
 	COUNTER_CASE(0, 0)
 		CameraCursor(Barod)
@@ -72,11 +72,13 @@ SpawnEnemies:
 		CHECK_ALIVE Leina
 		BEQ 865 s0 sC
 			CHECK_ALIVE Cromar
-			BEQ 865 s0 sC //if cromar and leina are both alive, then do this
-				CameraCursor(Leina)
-				Text(Ch6BarodCongratulations5)
-				GiveItem(SisterRing,Leina)
-			GOTO 866
+			BEQ 865 s0 sC //if cromar and leina are both alive
+				CHECK_EVENTID 2 //is mccallum dead? if so (sC = 1), then we don't do leina's schtick because it's too late for the recruit thing
+				BNE 865 s0 sC 
+					CameraCursor(Leina)
+					Text(Ch6BarodCongratulations5)
+					GiveItem(SisterRing,Leina)
+					GOTO 866
 		LABEL 865
 		GiveItem(SisterRing,Cleo)
 		LABEL 866
@@ -386,7 +388,7 @@ ArenaUnits:
 UNIT Raschwitz_Ch1 Troubadour Cleo Level(5,NPC,False) [6,18] 0x0 0x0 0x0 0x1 [Rapier, Heal, Vulnerary] NoAI
 UNIT Cromar 0x0 Cleo Level(1,NPC,False) [7,9] 0x0 0x0 0x0 0x1 [Dullahan, Elixir] BossHealAI
 UNIT Barod 0x0 Barod Level(20,NPC,False) [7,6] 0x0 0x0 0x0 0x1 [Agni, Indra] BossNoAttackAI
-UNIT Zeus Baron 0x0 Level(20,NPC,False) [7,3] 0x0 0x0 0 0 [Brenthunder] NoAI
+UNIT Zeus Baron 0x0 Level(15,NPC,False) [7,3] 0x0 0x0 0 0 [Brenthunder] NoAI
 UNIT Veid 0x0 0x0 Level(15,NPC,False) [18,18] 0x0 0x0 0x0 0x1 [CivilianProof] NoAI
 UNIT
 
@@ -431,7 +433,7 @@ UNIT Gladiator Mage_F Barod Level(5,Enemy,True) [7,0] 0x0 0x0 0x0 0x0 [AlairsGal
 UNIT
 
 Reinforce4:
-UNIT Zeus Baron Zeus Level(10,Enemy,False) [7,0] 0x0 0x0 1 REDA7R1 [Brenthunder] ChargeAI
+UNIT Zeus Baron Zeus Level(15,Enemy,False) [7,0] 0x0 0x0 1 REDA7R1 [Brenthunder] ChargeAI
 UNIT
 
 
@@ -505,14 +507,14 @@ ENDTRAP
 
 ALIGN 4
 Ch6Armory1:
-SHORT IronSword
 SHORT SteelSword
-SHORT IronLance
+SHORT LongSword
 SHORT SteelLance
-SHORT IronAxe
+SHORT LongLance
 SHORT SteelAxe
-SHORT IronBow
+SHORT LunarAxe
 SHORT SteelBow
+SHORT Longbow
 SHORT Javelin
 SHORT HandAxe
 SHORT 0
@@ -520,16 +522,13 @@ SHORT 0
 
 ALIGN 4
 Ch6Vendor1:
-SHORT Fire
-SHORT Thunder
-SHORT Lightning
-SHORT Flux
-SHORT Heal
+SHORT Wind
+SHORT Luna
+SHORT Yseod
 SHORT Mend
-SHORT Vulnerary
+SHORT Unlock
+SHORT TorchStaff
 SHORT Elixir
-SHORT PureWater
-SHORT Torch
 SHORT 0
 SHORT 0
 
@@ -670,7 +669,7 @@ CHECK_ALIVE Leina //need to check here for whether this pair is alive, as it wou
 BEQ 776 s0 sC //if leina is dead, skip this part
 	CHECK_ALIVE Cromar //is cromar around
 	BEQ 777 s0 sC //if he's not, then skip the good ending
-		RemoveAll
+		RemoveAllDouble
 		LoadGroup(LoeweCleoLeinaCromarGroup)
 		FADU 10
 		FlashCursor(Loewe,30)
@@ -681,7 +680,7 @@ BEQ 776 s0 sC //if leina is dead, skip this part
 		Text(Ch6EndingSceneLeinaCromarAlive2)
 		GOTO 420
 	LABEL 777
-		RemoveAll
+		RemoveAllDouble
 		LoadGroup(LoeweCleoLeinaGroup)
 		FADU 10
 		FlashCursor(Loewe,30)
@@ -694,7 +693,7 @@ BEQ 776 s0 sC //if leina is dead, skip this part
 LABEL 776
 CHECK_ALIVE Cromar
 BEQ 778 s0 sC //if cromar isn't alive, and leina isn't alive, skip this
-	RemoveAll
+	RemoveAllDouble
 	LoadGroup(LoeweCleoCromarGroup)
 	FADU 10
 	FlashCursor(Loewe,30)
@@ -705,7 +704,7 @@ BEQ 778 s0 sC //if cromar isn't alive, and leina isn't alive, skip this
 	Text(Ch6EndingSceneCromarAlive2)
 	GOTO 420
 LABEL 778
-	RemoveAll
+	RemoveAllDouble
 	LoadGroup(LoeweCleoGroup)
 	FADU 10
 	FlashCursor(Loewe,30)

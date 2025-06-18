@@ -15,12 +15,12 @@ ALIGN 4
 BtlLoopParent:
 #incbin "FE8_battle_calc_loop.dmp"
 BtlLoopTable:
-POIN BC_DefRes BC_Power BC_ASpd BC_Hit BC_Avo BC_Crit CritUpSkill BC_Dodge BC_Support BC_WRank BC_Status //these are the existing battle calculation routines
+POIN BC_DefRes BC_Power BC_ASpd BC_Hit BC_Avo BC_Crit CritUpSkill BC_CritAvoidFR BC_Support BC_WRank BC_Status //these are the existing battle calculation routines
 POIN BlowCheck
 #ifdef LEADERSHIP_STARS
   POIN LeadershipHook
 #endif //LEADERSHIP_STARS
-POIN Wrath Avenger RuneArrowPreBattle SmolderingSealPreBattle OddRhythm EvenRhythm Pre_Nightcaller GladiatorsAura BurnPreBattleEffect SpurHit AbsoluteZeroAura
+POIN Avenger RuneArrowPreBattle SmolderingSealPreBattle OddRhythm EvenRhythm Pre_Nightcaller GladiatorsAura SpurHit AbsoluteZeroAura
 POIN Desolate Charisma Hex Loyalty Puissance Opportunist BattleVeteran Charge Culling Fortune DragonRage //check if loyalty actually works
 POIN Stormbreaker AbsoluteZeroPreBattle FaithWind DEStrConversion Telepathy HypeTrainPre CleoFan
 POIN SpellMirrorSkl
@@ -29,11 +29,13 @@ POIN CrownPyre
 POIN RecklessCharge
 POIN NonCombatant
 // Because of how killing machine works, critical check should always be done last
+POIN Wrath //multiplier so put it at the end
 POIN CriticalCheck
 #ifdef CANNOT_CRIT
 	POIN NegateCritWeapons //This goes last, so that crit will always be set to 0 if set and never modified from there
 #endif // CANNOT_CRIT
 POIN FixedDamageWeapons
+POIN BattleStatCapsAndMins
 POIN 0
 
 PUSH

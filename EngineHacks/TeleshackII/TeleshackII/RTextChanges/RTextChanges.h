@@ -289,12 +289,6 @@ extern u16 gpStatScreenPageBg0Map[0x280];
 extern u16 gpStatScreenPageBg2Map[0x240];
 extern u8 gUnknown_08A02204[];
 extern u8 gUnknown_08A02250[]; //some kind of tsa?
-extern u16 AtkTextIDLink;
-extern u16 HitTextIDLink;
-extern u16 CritTextIDLink;
-extern u16 DefTextIDLink;
-extern u16 AvoTextIDLink;
-extern u16 DodgeTextIDLink;
 extern u16 MSSPAGE2PCCTextIDLink;
 extern u16 ASTextIDLink;
 

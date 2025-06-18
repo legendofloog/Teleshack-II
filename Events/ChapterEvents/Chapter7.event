@@ -14,15 +14,23 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0, Ch7ObjectiveExplanation, 1)
-TurnEventEnemy(0, YouSuck, 14)
+TurnEventPlayer(0, ThiefSpawn, 5)
 END_MAIN
 
 Ch7ObjectiveExplanation:
-CenterTextbox(InfoText)
 CameraCursor(Buldak)
 Text(BuldakIntroductionText)
 NoFade
 ENDA
+
+ThiefSpawn:
+SpawnReinforcements(ThiefGroup)
+NoFade
+ENDA
+
+ThiefGroup:
+UNIT Looter Thief Cleo Level(5,Enemy,True) [9,19] 0x0 0x0 0x1 REDA9R19 [ShortSword,ChestKey_5] ThiefAI
+UNIT 
 
 CharacterBasedEvents:
 CharacterEventBothWays(7, AxelTalkCh7, Axel, Korovai)
@@ -39,6 +47,7 @@ SVAL s1 0x00000000
 CHAI Buldak
 CUSA Buldak
 SetFatigue(Buldak,0)
+ENUT 31
 ENUT 28
 NoFade
 ENDA 
@@ -63,14 +72,21 @@ Vendor(Ch7Vendor,14,6)
 END_MAIN
 
 MiscBasedEvents:
-AFEV 24 MifanCaptureCheck 16
-AFEV 25 TheGiantCaptureCheck 17
-AFEV 26 YorCaptureCheck 18
-AFEV 27 WellworthCaptureCheck 19
-AFEV 30 BuldakCaptureCheck 29
+AFEV 20 BattleQuoteGone 34 //mifan's
+AFEV 20 BattleQuoteGone 35
+AFEV 21 BattleQuoteGone 33 //wellworth's
+AFEV 21 BattleQuoteGone 36
+AFEV 22 BattleQuoteGone 37 //yor's
+AFEV 22 BattleQuoteGone 16
+AFEV 23 BattleQuoteGone 38 //the giant's
+AFEV 23 BattleQuoteGone 32
 AFEV 31 BuldakRunsAway 28
 CauseGameOverIfLordDies
 END_MAIN
+
+BattleQuoteGone: //DUMMY event
+NoFade
+ENDA
 
 BuldakRunsAway:
 CHECK_ALIVE Buldak
@@ -79,66 +95,6 @@ BEQ 776 s0 sC
 	SetAI(Buldak,6,0x0C,4,0)
 	ENUT 11
 LABEL 776
-NoFade
-ENDA
-
-MifanCaptureCheck:
-CHECK_EXISTS Mifan
-BEQ 2 s0 sC
-	Text(MifanCaptureQuoteText)
-	ENUF 16	//if capture flag is set, but death quote isn't, unit was captured
-	NoFade
-	ENDB
-LABEL 2
-Text(MifanDeathQuoteText)
-NoFade
-ENDA
-
-TheGiantCaptureCheck:
-CHECK_EXISTS TheGiant
-BEQ 2 s0 sC
-	Text(TheGiantCaptureQuoteText)
-	ENUF 17	//if capture flag is set, but death quote isn't, unit was captured
-	NoFade
-	ENDB
-LABEL 2
-Text(TheGiantDeathQuoteText)
-NoFade
-ENDA
-
-YorCaptureCheck:
-CHECK_EXISTS Yor
-BEQ 2 s0 sC
-	Text(YorCaptureQuoteText)
-	ENUF 18	//if capture flag is set, but death quote flag isn't, unit was captured
-	NoFade
-	ENDB
-LABEL 2
-Text(YorDeathQuoteText)
-NoFade
-ENDA
-
-WellworthCaptureCheck:
-CHECK_EXISTS Wellworth
-BEQ 2 s0 sC
-	Text(WellworthCaptureQuoteText)
-	ENUF 19	//if capture flag is set, but death quote flag isn't, unit was captured
-	NoFade
-	ENDB
-LABEL 2
-Text(WellworthDeathQuoteText)
-NoFade
-ENDA
-
-BuldakCaptureCheck:
-CHECK_EXISTS Buldak
-BEQ 2 s0 sC
-	Text(BuldakCaptureQuoteText)
-	ENUF 29	//if capture flag is set, but death quote flag isn't, unit was captured
-	NoFade
-	ENDB
-LABEL 2
-Text(BuldakDeathQuoteText)
 NoFade
 ENDA
 
@@ -171,24 +127,21 @@ UNIT Iskra 0x0 Cleo Level(1,Ally,False) [24,13] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 EnemyUnits:
-UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,18] 0x0 0x0 0x0 0x0 [YorsYari] BossHealAI
+UNIT Yor LanceSoldier 0x0      Level(10,Enemy,False) [1,18] 0x0 0x0 0x0 0x0 [YorsYari, SteelLance] BossHealAI
 UNIT Mifan Myrmidon_F 0x0      Level(2,Enemy,False) [4,3] 0x0 0x0 0x0 0x0 [Miaodao] PursueWithoutHeedAI
 UNIT Buldak Thief 0x0      Level(5,Enemy,False) [16,18] 0x0 0x0 0x0 0x0 [SteelSword, Vulnerary] BossNoAttackAI
-UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [IceSword] BossHealAI
-UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [HandAxe] BossHealAI
+UNIT Wellworth SwordFighter 0x0      Level(10,Enemy,False) [2,8] 0x0 0x0 0x0 0x0 [IceSword, Longsword] BossHealAI
+UNIT TheGiant Warrior 0x0      Level(1,Enemy,False) [16,4] 0x0 0x0 0x0 0x0 [HandAxe, BattleAxe] BossHealAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,6] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [19,9] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
-UNIT Militia Hunter Wellworth Level(7,Enemy,True) [18,5] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
 UNIT Militia Mage Wellworth Level(7,Enemy,True) [19,2] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [3,9] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [20,15] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [10,10] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
 UNIT Militia Hunter Wellworth Level(7,Enemy,True) [15,19] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
-UNIT Militia Mage Wellworth Level(7,Enemy,True) [15,14] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [18,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [10,15] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [6,12] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Militia Hunter Wellworth Level(7,Enemy,True) [1,13] 0x0 0x0 0x0 0x0 [ShortBow] AttackInRangeAI
 UNIT Militia Mage Wellworth Level(7,Enemy,True) [11,16] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [5,19] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
 UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [6,0] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
@@ -196,8 +149,6 @@ UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [8,4] 0x0 0x0 0x0 0x0 [Ste
 UNIT Militia Hunter Wellworth Level(7,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [IronBow] AttackInRangeAI
 UNIT Militia Mage Wellworth Level(7,Enemy,True) [6,6] 0x0 0x0 0x0 0x0 [Wind] AttackInRangeAI
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [10,2] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-UNIT Militia Myrmidon Wellworth Level(7,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
-UNIT Militia AxeFighter Wellworth Level(7,Enemy,True) [1,16] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT Militia Hunter Wellworth Level(7,Enemy,True) [10,7] 0x0 0x0 0x0 0x0 [SteelBow] AttackInRangeAI
 UNIT Militia Mage Wellworth Level(7,Enemy,True) [5,14] 0x0 0x0 0x0 0x0 [Burn] NeverMoveAI
 UNIT Militia Freelancer Wellworth Level(7,Enemy,True) [7,6] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
@@ -205,20 +156,19 @@ UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [8,16] 0x0 0x0 0x0 0x0 [Hand
 UNIT Militia LanceArmor Wellworth Level(7,Enemy,True) [18,0] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [8,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
 UNIT Militia LanceArmor Wellworth Level(7,Enemy,True) [12,11] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
-UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [2,13] 0x0 0x0 0x0 0x0 [HandAxe, DoorKey, ChestKey_5] NeverMoveAI
+UNIT Militia AxeArmor Wellworth Level(7,Enemy,True) [2,13] 0x0 0x0 0x0 0x0 [HandAxe, DoorKey] NeverMoveAI
 UNIT Militia LanceArmor Wellworth Level(7,Enemy,True) [3,13] 0x0 0x0 0x0 0x0 [Javelin, DoorKey] NeverMoveAI
-UNIT Militia SwordKnight Wellworth Level(7,Enemy,True) [2,18] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
 UNIT Militia LanceKnight Wellworth Level(7,Enemy,True) [13,13] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
-UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [6,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT Militia SwordKnight Wellworth Level(7,Enemy,True) [7,10] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT Militia LanceKnight Wellworth Level(7,Enemy,True) [16,4] 0x0 0x0 0x0 0x0 [SteelLance] AttackInRangeAI
 UNIT Militia AxeKnight Wellworth Level(7,Enemy,True) [11,1] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT
 
 NewRecruit:
-UNIT Iberis MageArmor 0x0 Level(7,Ally,False) [25,5] 0x0 0x0 0 0 [Elfire,Vulnerary] NoAI
+UNIT Iberis MageArmor 0x0 Level(10,Ally,False) [25,5] 0x0 0x0 0 0 [Elfire,Vulnerary] NoAI
 UNIT Cleo Skyseeker_Dismounted Cleo Level(1,Ally,False) [26,5] 0x0 0x0 0 0 [0x0] NoAI
 UNIT Loewe Scaleshot_Dismounted Cleo Level(1,Ally,False) [26,6] 0x0 0x0 0 0 [0x0] NoAI
+UNIT Kwame Civilian_2 0 Level(6,NPC,False) [25,6] 0x0 0x0 0 0 [IronLance] NoAI
 UNIT
 
 AlexAxelGroup:
@@ -236,7 +186,6 @@ UNIT Freyse AxeArmor         Epony Level(12,NPC,True) [3,0] 0x0 0x0 0x0 0x0 [Iro
 UNIT
 
 Traps1:
-	RedSigil(6,0)
 	ENDTRAP
 	ALIGN 4
 
@@ -261,6 +210,7 @@ Text(KorovaiMifanText)
 StartBattle 
 NormalDamage(0,15)
 EndAttack
+SetScriptedBattle(90,15,0,80,5,20)
 FIGHT_MAP Korovai Mifan ShortLance 0
 MOVE 15 Mifan [5, 3]
 ENUN
@@ -269,8 +219,10 @@ ENUN
 StartBattle 
 CriticalHit(0,30)
 EndAttack
+SetScriptedBattle(80,10,5,75,10,2)
 FIGHT_MAP TheGiant Korovai HandAxe 0 
 ENUN
+Text(GiantBeatsUpKorovaiText)
 MOVE 15 Korovai [0, 2]
 ENUN
 Text(KorovaiEponyText)
@@ -284,17 +236,18 @@ MOVE 15 Mifan [14, 3]
 ENUN
 FadeOutMusic
 CamOn
-MOVE 15 Iberis [21,8]
-MOVE 15 Cleo [22,8]
-MOVE 15 Loewe [22,9]
+MOVE 15 Iberis [24,8]
+MOVE 15 Cleo [25,8]
+MOVE 15 Kwame [24,9]
+MOVE 15 Loewe [25,9]
 ENUN
 CamOff
 CameraCursor(Iberis)
 MUSC FFTAnxiety
 Text(LoeweCleoIberisText)
-CHECK_ALIVE Axel
-BEQ 1 s0 sC
-	CHECK_ALIVE Alex
+CheckUnitDeadOrJailed(Axel)
+BNE 1 s0 sC
+	CheckUnitDeadOrJailed(Alex)
 	BEQ 1 s0 sC
 		CamOn
 		LOAD1 0 AlexAxelGroup
@@ -315,6 +268,11 @@ LABEL 421
 SVAL s1 23
 SET_HP Mifan
 FADI 10
+AddTrap(RedSigilTrapID,5,0)
+AddTrap(RedSigilTrapID,6,0)
+AddTrap(RedSigilTrapID,9,19)
+REMOVEUNIT Kwame
+TILECHANGE 12
 MountAll
 STAL 10
 ENUN
@@ -337,8 +295,9 @@ ENDA
 KorovaiTalkCh7:
 CHECK_EVENTID 9
 BEQ 1 s0 sC
-Text(KorovaiEndCh7Text)
-ENUT 3
+	Text(KorovaiEndCh7Text)
+	CALL EndingScene
+	ENDB
 GOTO 2
 LABEL 1
 Text(KorovaiTalkCh7Text)
@@ -349,8 +308,9 @@ ENDA
 Throne:
 CHECK_EVENTID 10
 BEQ 1 s0 sC
-Text(CleoEndCh7Text)
-ENUT 3
+	Text(CleoEndCh7Text)
+	CALL EndingScene
+	ENDB
 GOTO 2
 LABEL 1
 Text(CleoThroneCh7Text)
@@ -364,12 +324,13 @@ SVAL s1 0x00000000
 CHAI Buldak
 CUSA Buldak
 SetFatigue(Buldak,0)
+ENUT 31
 ENUT 28
 NoFade
 ENDA
 
 VillageCh7:
-VillageEventItem(VillageCh7Text,House1,KillerBow)
+VillageEventItem(VillageCh7Text,House1,Sleep)
 
 SupplyCh7:
 CenterTextbox(SupplyCh7Text)
@@ -379,13 +340,14 @@ ENDA
 
 ALIGN 4
 Ch7Armory:
+SHORT SteelSword
 SHORT LongSword
-SHORT GreatSword
+SHORT SteelLance
 SHORT LongLance
-SHORT Greatlance
-SHORT BattleAxe
+SHORT SteelAxe
+SHORT LunarAxe
+SHORT SteelBow
 SHORT Longbow
-SHORT Greatbow
 SHORT Javelin
 SHORT HandAxe
 SHORT 0
@@ -393,61 +355,61 @@ SHORT 0
 
 ALIGN 4
 Ch7Vendor:
-SHORT Thunder
-SHORT Lightning
-SHORT Flux
+SHORT Wind
+SHORT Luna
+SHORT Yseod
 SHORT Mend
-SHORT Physic
-SHORT Sleep
-SHORT Vulnerary
+SHORT Unlock
+SHORT TorchStaff
 SHORT Elixir
 SHORT 0
 SHORT 0
 
 ALIGN 4
-
-YouSuck:
-CALL GameOverStart
-NoFade
-ENDA
-
-ALIGN 4
 EndingScene:
-CAMERA Korovai
+ENUT 3
+CAMERA_CENTERED Korovai
 FlashCursor(Korovai,60)
+Text(KorovaiCongratulationsText)
 COUNTER_CHECK 0
 BNE 0 s0 sC
-Text(Rice0Ch7Text)
-LABEL 0
+	Text(Rice0Ch7Text)
+	LABEL 0
 SVAL s1 1
 BNE 1 s1 sC
-Text(Rice1Ch7Text)
-GiveItem(RedGem,Cleo)
+	Text(Rice1Ch7Text)
+	GiveItem(RedGem,Cleo)
 LABEL 1
 SVAL s1 2
 BNE 2 s1 sC
-Text(Rice2Ch7Text)
-GiveItem(BlueGem,Cleo)
+	Text(Rice2Ch7Text)
+	GiveItem(BlueGem,Cleo)
 LABEL 2
 SVAL s1 3
 BNE 3 s1 sC
-Text(Rice3Ch7Text)
-GiveItem(RedGem,Cleo)
-GiveItem(BlueGem,Cleo)
+	Text(Rice3Ch7Text)
+	GiveItem(WhiteGem,Cleo)
 LABEL 3
 FADI 10
-RemoveAll
+FOGVISION 0
+RemoveAllDouble
 MountAll
+CALL GiveBackKaiserschwertFake
 LOAD1 0 PostBattleGroup
 ENUN
+RemoveTrapAtCoords(5,0) 
+RemoveTrapAtCoords(6,0)
+RemoveTrapAtCoords(9,19)
 CAMERA_CENTERED Epony
 TILECHANGE 5
 STAL 60
 FadeOutMusic
-FADU 10
-FlashCursor(Epony,60)
+SetBackground(Outside_Village_Evening)
 MUSC FF6EdgarAndSabin //add actual music here
 Text(EndEvent1Text)
+CharacterConditionalDialog(Iberis,EndEvent1IberisAliveText,EndEvent1IberisDeadText, 999, 666)
+Text(EndEvent1Point5Text)
+EraseBackground
 MOVE 15 Korovai [0,2]
 ENUN
 REMOVEUNIT Korovai
@@ -472,6 +434,10 @@ Text(EndEvent4Text)
 CHECK_ALIVE Buldak //have buldak join mifan if not recruited
 BEQ 776 s0 sC //if he's alive, then he betrayed
 	Text(EndEvent5TextBuldakAliveBetrayed)
+	FADI 15
+	STAL 30
+	SetBackground(Outside_Village_Evening)
+	Text(EndEvent5TextBuldakAliveBetrayedPart2)
 	GOTO 777
 LABEL 776
 CHECK_EVENTID 29
@@ -575,8 +541,10 @@ LABEL 70
 STAL 60
 SingleUnitMoveThenErase(Mifan, 5, 0, 3)
 FADI 10
-//add capturee stuff here
-MNC2 Chapter8
+WM_LOADLOCATION2 0 Chapter9 0 //Required to fix chapter name
+WM_SETDESTINATION 0 Chapter9 0 //World map node. Keep these equal.
+WM_SETNEXTLOCATION 0 0 Chapter8 //Needed for world map narration.
+MNCH Chapter8
 NoFade
 ENDA
 

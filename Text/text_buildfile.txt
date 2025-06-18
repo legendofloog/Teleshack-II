@@ -22,6 +22,32 @@ Save any changes.[NL]
 Choose Restart Chapter[NL]
 to restart this chapter.[NL][X]
 
+# 0x572 ASDesc
+Attack Speed. If 4 or greater than[NL]
+target's AS, unit's attacks are doubled.[N]
+AS = Spd - (Wt-Bld); if Bld >= Wt, Spd.[X]
+
+# 0x055C
+Amount of damage this weapon causes[NL]
+before reduction from target defenses.[N]
+Atk = Str/Mag + Weapon Mt.[X]
+
+# 0x055D
+Chance that the attack will hit.[NL]
+Hit = Skl x 2 + Lck + Weapon Hit.[X]
+
+# 0x055F
+Chance that the weapon does additional[NL]
+damage. Reduced by target Lck x 2.[N]
+Crt = Skl + Weapon Crit.[X]
+
+# 0x0560
+Chance that this unit will dodge.[NL]
+Avo = Spd x 2 + Lck + Terrain.[X]
+
+# 0x40d
+Doubles number of attacks.[X]
+
 # 0x4F3 AtkTextID
 Atk[X]
 
@@ -43,7 +69,7 @@ Raises strength.[X]
 # 0x51E
 Radiant[X]
 
-# 0x522 ^
+# 0x522
 M/2+5[X]
 
 # 0x5B6
@@ -55,6 +81,21 @@ Restores HP to allies at a distance.[X]
 
 # 0x26B
 Holy[X]
+
+# 0x876
+Select which ally to use the staff on.[X]
+
+# 0x051B
+Power[X]
+
+# 0x051C
+Focus[X]
+
+# 0x0558
+Attack power is increased.[X]
+
+# 0x0559
+Hit rate is increased.[X]
 
 # 0x08FE
 [Left][LoadStranger]
@@ -71,16 +112,16 @@ This unit is fatigued[N]
 and cannot be deployed.[X]
 
 # 0x477
-Halts all enemy magic[NL]
-for a turn.[X]
+Halts all enemy magic and[NL]
+magic weapons for three turns.[X]
 
 # 0x478
-Puts enemies to sleep[N]
-for a turn.[X]
+Puts enemies to sleep, stopping[N]
+their actions for three turns.[X]
 
 # 0x479
 Maddens enemies into attacking[N]
-friend or foe for a turn.[X]
+friend or foe for three turns.[X]
 
 # 0x4F1
 Type[X]
@@ -93,6 +134,9 @@ after Leina attacks or heals.[X]
 # 0x0855
 This item is too heavy[NL]
 to be stolen.[X]
+
+# 0x0880
+Choose an ally to support.[X]
 
 # 0x533 PrfStar
 [0xBD][X]
@@ -184,6 +228,10 @@ by having this unit arrive.[X]
   Seize with[N]
 Cleo or Loewe[X]
 
+## Ch10SeizeObjectiveDesc
+ Seize with Cleo,[N]
+Loewe, or Korovai[X]
+
 ## LordMustEscapeLastText
 This unit must escape last.[X]
 
@@ -260,6 +308,12 @@ Eva[X]
 
 ## DashTextID
 -[X]
+
+## WhistleName
+ Whistle[X]
+
+## WhistleDesc
+Call Mertloc![X]
 
 #include "statusdesc_text.txt"
 

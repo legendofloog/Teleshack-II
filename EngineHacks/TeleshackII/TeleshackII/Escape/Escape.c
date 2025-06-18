@@ -2,9 +2,18 @@
 
 #include "Escape.h"
 
+extern u8 MertlocCharIDLink;
+extern u8 CleoCharIDLink;
+extern u8 LoeweCharIDLink;
+extern u8 KwameCharIDLink;
+
 int EscapeCommandUsability(){
     Unit* unit = gActiveUnit;
     if(unit->state & US_CANTOING){ // is unit cantoing
+        return USABILITY_FALSE;
+    }
+    if (unit->pCharacterData->number == MertlocCharIDLink)
+    {
         return USABILITY_FALSE;
     }
     if (GetLocationEventCommandAt(unit->xPos,unit->yPos) != 0x13){ // is unit on escape point 0x13
@@ -218,13 +227,23 @@ void EndOfEscapeRoutine(){
     }
 }
 
+bool IsCharOnNeverRemoveList(u8 charId)
+{
+    if (charId == CleoCharIDLink || charId == LoeweCharIDLink || charId == KwameCharIDLink || charId == MertlocCharIDLink)
+    { 
+        return true;
+    }
+    return false;
+}
+
 void InterludeRemovalRoutine(){ //related to escape since it checks if units are jailed
     UnsetEventId(0x8C);
     int i;
     Unit* someUnit;
     for (i = 0; i <= 60; i++){
         someUnit = &gUnitArrayBlue[i];
-        if (someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x3F){ //kwame loewe or cleo
+        u8 someUnitCharId = someUnit->pCharacterData->number;
+        if (IsCharOnNeverRemoveList(someUnitCharId)){ 
             //do nothing since they'll be removed in chapter events if necessary
         }
         else{
@@ -254,7 +273,8 @@ void InterludeReturnRoutine(){
     Unit* someUnit;
     for (i = 0; i <= 60; i++){
         someUnit = &gUnitArrayBlue[i];
-        if ( someUnit->pCharacterData->number == 0x1 || someUnit->pCharacterData->number == 0xF || someUnit->pCharacterData->number == 0x3F){ //kwame loewe or cleo
+        u8 someUnitCharId = someUnit->pCharacterData->number;
+        if (IsCharOnNeverRemoveList(someUnitCharId)){ //kwame loewe or cleo
             //do nothing since they'll be returned in chapter events if necessary
         }
         else{
@@ -311,3 +331,4 @@ void UndoCleoJailedASMC(){
     Unit* unit = GetUnitByCharId(0x1); //this is cleo
     unit->state = 0; //resets unit state
 }
+
