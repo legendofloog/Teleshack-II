@@ -2,6 +2,8 @@
 #include "gbafe.h"
 #include "PCC.h"
 
+extern int BattleRoll1RN_SS(int, struct Unit* unit); 
+
 int GetUnitPCC(Unit* unit){
 	return PCCTable[unit->pCharacterData->number];
 }
@@ -52,13 +54,14 @@ void New_Proc_Start(BattleUnit* attacker, BattleUnit* defender, NewBattleHit* ba
 		battleHit->attributes |= BATTLE_HIT_ATTR_ISDEFENDER;
 	}
 
-	if (BattleRoll1RN(battleStats->hitRate, 1)){
+
+	if (BattleRoll1RN_SS(battleStats->hitRate, &attacker->unit)){
 
 		if (ShouldApplyPCC(attacker, defender, battleHit, battleStats)){
 			battleStats->critRate *= GetUnitPCC(&attacker->unit);
 		}
 
-		if (BattleRoll1RN(battleStats->critRate, 1) && (battleStats->critRate > 0) ){ // crit
+		if (BattleRoll1RN_SS(battleStats->critRate, &attacker->unit) && (battleStats->critRate > 0) ){ // crit
 			battleStats->damage = BoundDamage(battleStats->attack*2 - battleStats->defense);
 			battleHit->attributes |= BATTLE_HIT_ATTR_CRIT;
 		}
