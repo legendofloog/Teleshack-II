@@ -48,6 +48,7 @@
 #define BerserkerFClassCard 0x167
 #define DevoteeMClassCard 0x168
 #define WarMonkClassCard 0x169
+#define DragonClassCard 0x16A
 
 
 ALIGN 4
@@ -448,3 +449,11 @@ ALIGN 4
 WarMonkClassCardPal:
 #incbin "Dmp/War Monk (M)  {Der}.png_pal.dmp"
 setCardEntry(WarMonkClassCard, WarMonkClassCardData, WarMonkClassCardPal)
+
+ALIGN 4
+DragonClassCardData:
+#incbin "Dmp/Wyvern Wild {Faeriefruit}.dmp"
+ALIGN 4
+DragonClassCardPal:
+#incbin "Dmp/Wyvern Wild {Faeriefruit}.png_pal.dmp"
+setCardEntry(DragonClassCard, DragonClassCardData, DragonClassCardPal)

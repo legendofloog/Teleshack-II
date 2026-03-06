@@ -67,7 +67,6 @@
 #define Fire 0x38
 #define Thunder 0x39
 #define Elfire 0x3A
-#define Bolting 0x3B
 #define Thoron 0x3C
 #define Wind 0x3D
 #define Tornado 0x3E
@@ -279,3 +278,5 @@
 #define RagnarokHawkeye 0xFC
 #define RagnarokPass 0xFD
 #define RagnarokFortune 0xFE
+
+#define Bolting Meteor //moving these to one slot

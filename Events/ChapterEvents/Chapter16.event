@@ -1,5 +1,6 @@
 EventPointerTable(Chapter16Events, PointerList)
-
+//note to future loog: make sekrititem2 give a new weapon based on needs
+//also, add pelecaye event here
 PointerList:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -12,55 +13,244 @@ POIN $0 $0 $0
 POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
+
 TurnBasedEvents:
-TurnEventPlayer(0, RashidRecruitment, 1)
-TurnEventPlayer(0, KofiRecruitment, 1)
-TurnEventPlayer(0, Thief1_AEvent, 7)
-TurnEventPlayer(0, Thief1_BEvent, 10)
-TurnEventPlayer(0, EnemyReinforcementsEvent_A, 2)
-TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B, 7)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B1, 6)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B1, 7)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B2, 8)
-TurnEventPlayer(0, EnemyReinforcementsEvent_B3, 9)
-TurnEventPlayer(0, EnemyReinforcementsEvent_C, 11)
+//TurnEventPlayer(0, AlenaSpawn, 2)
+TurnEventPlayer(0,CleoWarning, 2)
+TurnEventPlayer(0,CoraliaFlees, 5)
+TurnEventPlayer(0,ThiefSpawn1, 3)
+TurnEventPlayer(0,ThiefSpawn2, 4)
+TurnEventPlayer(0,ReinforceTurn5, 5)
+TurnEventPlayer(0,ThiefSpawn3, 6)
+TurnEventPlayer(0,ThiefSpawn4, 8)
+TurnEventPlayer(0,NoAntiturtle,11)
+TurnEventPlayer(0,AshaSpawn,1)
 END_MAIN
+
+AshaSpawn:
+CameraCursor(Asha)
+Text(AshaJoins)
+CUSA Asha
+SetFatigue(Asha,0)
+CameraCursor(Ilse)
+Text(IlseContext)
+CameraCursor(Traveler)
+Text(TravelerContext)
+NoFade
+ENDA
+
+CleoWarning:
+CameraCursor(Cleo)
+Text(Ch15CoraliaFleesResponseText)
+CameraCursorLocation(12,0,20)
+CameraCursorLocation(13,0,20)
+CameraCursorLocation(14,0,20)
+NoFade
+ENDA
+
+CoraliaFlees:
+CameraCursor(Coralia)
+Text(Ch15CoraliaFleesText)
+SVAL s1 0x00040C06
+CHAI Coralia
+NoFade
+ENDA
+
+ThiefSpawn1:
+SpawnReinforcements(ThiefGroup1)
+NoFade
+ENDA
+
+ThiefGroup1:
+UNIT Cythes LanceSoldier 0x0      Level(15,Enemy,True) [1,15] 0x0 0x0 0x1 REDA1R15 [IronLance] PursueWithoutHeedAI
+UNIT Looter Thief 0x0      Level(15,Enemy,True) [15,25] 0x0 0x0 0x1 REDA15R25 [IronSword, ChestKey] ThiefAI
+UNIT
+
+ThiefSpawn2:
+SpawnReinforcements(ThiefGroup2)
+NoFade
+ENDA
+
+ThiefGroup2:
+UNIT Cythes Mage 0x0      Level(15,Enemy,True) [1,8] 0x0 0x0 0x1 REDA1R8 [Fire] PursueWithoutHeedAI
+UNIT Looter Thief 0x0      Level(15,Enemy,True) [2,20] 0x0 0x0 0x1 REDA2R20 [IronSword, ChestKey] ThiefAI
+UNIT
+
+ThiefSpawn3:
+SpawnReinforcements(ThiefGroup3)
+NoFade
+ENDA
+
+ThiefGroup3:
+UNIT Cythes AxeFighter 0x0      Level(15,Enemy,True) [25,8] 0x0 0x0 0x1 REDA25R8 [IronAxe] PursueWithoutHeedAI
+UNIT Looter Thief 0x0      Level(15,Enemy,True) [18,9] 0x0 0x0 0x1 REDA18R9 [BigIron, ChestKey] ThiefAI
+UNIT
+
+ThiefSpawn4:
+SpawnReinforcements(ThiefGroup4)
+NoFade
+ENDA
+
+ThiefGroup4:
+UNIT Cythes SwordFighter 0x0      Level(15,Enemy,True) [25,8] 0x0 0x0 0x1 REDA25R8 [ShortSword] PursueWithoutHeedAI
+UNIT Looter Thief 0x0      Level(15,Enemy,True) [2,5] 0x0 0x0 0x1 REDA2R5 [KillingEdge, ChestKey] ThiefAI
+UNIT Looter Thief 0x0      Level(15,Enemy,True) [25,5] 0x0 0x0 0x1 REDA25R5 [LongSword, ChestKey] ThiefAI
+UNIT
+
+ReinforceTurn5:
+SpawnReinforcements(Turn5Group)
+NoFade
+ENDA
+
+Turn5Group:
+UNIT Cythes LanceSoldier 0x0      Level(15,Enemy,True) [1,8] 0x0 0x0 0x1 REDA1R8 [Shortlance] PursueWithoutHeedAI
+UNIT
+
+NoAntiturtle:
+Text(Ch15CoraliaKilled)
+SetBackground(Temple)
+Text(Ch15LoeweDiesBadEnding1)
+Text(Ch15LoeweDiesBadEnding2)
+Text(Ch15CleoDiesBadEnding)
+CALL GameOverStart
+NoFade
+ENDB
 
 CharacterBasedEvents:
+//CharacterEventBothWays(7, LoeweIskraTalkCh1, Loewe, Iskra)
 END_MAIN
+
 
 LocationBasedEvents:
-Door(14,3)
-Door(15,3)
-Door(9,17)
-Door(13,14)
-Door(15,17)
-Chest(Sink,7,1)
-Chest(WoodlandsHuke,14,1)
-Chest(FealtyBow,20,1)
-Chest(Restore,10,16)
-Chest(RedGem,12,16)
-Chest(CaptainsHelm,16,16)
-SecretShop(Ch16SecretShop,21,17)
-Escape(21,10)
-Escape(21,11)
-Escape(21,12)
-Escape(21,13)
+//Seize(22,26)
+Door(3,6)
+Door(24,6)
+LOCA 11 FreeTheStranger [3,11] 0x12
+LOCA 12 FreeingIlse [23,15] 0x12
+Door(18,11)
+Door(3,18)
+Door(20,24)
+Chest(MemberCard,17,24)
+Chest(Nosferatu,1,19)
+Chest(KnightProof,17,9)
+Chest(EdgedArrow,3,4)
+Chest(KingShield,24,4)
+SecretShop(Ch15SecretShop,10,20)
+Vendor(Ch15Vendor,14,21)
+Armory(Ch15Armory,15,21)
+House(0,Ch15HintHouse,16,12)
 END_MAIN
 
+FreeTheStranger:
+TILECHANGE 8
+CameraCursor(Traveler)
+MUSS Rovers
+Text(Ch15FreeingTheStranger)
+MURE 2
+ENUT 0x87
+CamOn
+MOVE 15 Traveler [0,29]
+ENUN
+CamOff
+FADI 15
+REMOVEUNIT Traveler
+FADU 15
+NoFade
+ENDA
+
+FreeingIlse:
+TILECHANGE 10
+CameraCursor(Ilse)
+MUSS WithUs_Song
+Text(Ch15FreeingIlse)
+CUSA Ilse
+GiveItem(Lightning,Ilse)
+GiveItem(Physic,Ilse)
+GiveItem(Heal,Ilse)
+SilentGiveItem(Vulnerary,Ilse)
+SetFatigue(Ilse,0)
+MURE 2
+NoFade
+ENDA
+
 ALIGN 4
-Ch16SecretShop:
-	SHLI TrainedEdge TrainedPike TrainedAxe TrainedArc SilverSword SilverLance SilverAxe SilverBow Thoron Aura Hel Restore Physic Sigil Unlock Rewarp DoorKey ChestKey
+Ch15SecretShop:
+	SHLI LunarAxe GaleBow AlairsGale Burn SleepSword BerserkSword ThiefStaff Saunion
 	BYTE 0x0 0x0
 	ALIGN 4
 
+ALIGN 4
+Ch15Vendor:
+	SHLI Fire Elfire Thunder Wind Lightning Flux Jormungand
+	BYTE 0x0 0x0
+	ALIGN 4
+
+ALIGN 4
+Ch15Armory:
+	SHLI IronSword SteelSword Armorslayer IronLance SteelLance Horseslayer IronAxe SteelAxe Hammer IronBow SteelBow MarksmanBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch15HintHouse:
+SetBackground(House1)
+Text(Ch15SecretShopHint)
+EraseBackground
+NoFade
+ENDA
+
 MiscBasedEvents:
-CauseGameOverIfLordDies 
+AREA 7 SekritItem1 [0, 0] [3, 1]
+AREA 8 SekritItem2 [25, 0] [26, 1]
+AREA 0 CoraliaEscapeCheck [12,0] [14,0]
+AFEV 9 CoraliaCaptureCheck 10
+CauseGameOverIfLordDies
 END_MAIN
+
+SekritItem1:
+GiveItem(WindSword,0xFFFF)
+NoFade
+ENDA
+
+SekritItem2:
+//GiveItem(RedScarf,0xFFFF)
+NoFade
+ENDA
+
+CoraliaEscapeCheck:
+CHECK_CLASS -1
+SVAL s1 Cleric
+BNE 1 s1 sC
+	Text(Ch15CoraliaEscapes)
+	CALL GameOverStart
+	NoFade
+	ENDB
+LABEL 1
+NoFade
+ENDA
+
+CoraliaCaptureCheck:
+CHECK_EXISTS Coralia
+BEQ 2 s0 sC
+	Text(Ch15CoraliaCaptured1)
+	CameraCursor(Cleo)
+	Text(Ch15CoraliaCaptured2)
+	ENUT 3
+	CALL EndingScene
+	NoFade
+	ENDB
+LABEL 2
+Text(Ch15CoraliaKilled)
+SetBackground(Temple)
+Text(Ch15LoeweDiesBadEnding1)
+Text(Ch15LoeweDiesBadEnding2)
+Text(Ch15CleoDiesBadEnding)
+CALL GameOverStart
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
+
 
 Dunno2:
 END_MAIN
@@ -68,14 +258,81 @@ END_MAIN
 Dunno3:
 END_MAIN
 
+
 Tutorial:
 END_MAIN
 
+Units1:
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [5,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [22,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [6,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,28] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [22,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [21,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,29] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT
+
+AshaGroup:
+UNIT Asha Thief_F Cleo Level(15,NPC,False) [5,26] 0x0 0x0 0x0 0x1 [KillingEdge,IronSword,Vulnerary] NoAI
+UNIT 
+
+CoraliaAndCenterGroup:
+UNIT Cythes Champion 0x0 Level(1,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [LongLance] AttackInRangeAI
+UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [11,27] 0x0 0x0 0x0 0x0 [IceSword] BossAI
+UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [13,9] 0x0 0x0 0x0 0x0 [TrainedArc] AttackInRangeAI
+UNIT Cythes Hero 0x0 Level(1,Enemy,True) [12,21] 0x0 0x0 0x0 0x0 [LongSword,WhiteGem] AttackInRangeAI
+UNIT Cythes Bard 0x0 Level(15,Enemy,True) [14,19] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
+UNIT Cythes AxeArmor 0x0 Level(15,Enemy,True) [11,17] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+UNIT Kassandra Falcoknight_Dismounted 0x0 Level(15,Enemy,False) [13,27] 0x0 0x0 0x0 0x0 [Hammer] AttackInRangeAI
+UNIT Raschwitz_Ch1 LanceSoldier  0x0 Level(15,Enemy,False) [13,13] 0x0 0x0 0x0 0x0 [Hammer] NoAI
+UNIT
+
+EnemyUnitsLoeweSide:
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [21,24] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [18,12] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey,ChestKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [24,7] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [22,15] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey] BossAI
+UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [23,23] 0x0 0x0 0x0 0x0 [IronSword] PursueWithoutHeedAI
+UNIT Cythes Mage 0x0 Level(15,Enemy,True) [24,22] 0x0 0x0 0x0 0x0 [Fire] PursueWithoutHeedAI
+UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [17,19] 0x0 0x0 0x0 0x0 [SteelLance] TwoActionAI
+UNIT Cythes BowArmor 0x0 Level(15,Enemy,True) [22,17] 0x0 0x0 0x0 0x0 [Longbow] AttackInRangeAI
+UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [21,10] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
+UNIT Cythes LanceArmor 0x0 Level(15,Enemy,True) [17,15] 0x0 0x0 0x0 0x0 [HeavySpear] AttackInRangeAI
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [LongLance] TwoActionAI
+UNIT Cythes SwordArmor 0x0 Level(15,Enemy,True) [17,5] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [23,11] 0x0 0x0 0x0 0x0 [ShortSword] AttackInRangeAI
+UNIT
+
+EnemyUnitsCleoSide:
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,18] 0x0 0x0 0x0 0x0 [IronLance,DoorKey,ChestKey] BossAI
+UNIT Cythes LanceSoldier 0x0 Level(15,Enemy,True) [4,11] 0x0 0x0 0x0 0x0 [IronLance,DoorKey] BossAI
+UNIT Cythes AxeSoldier 0x0 Level(15,Enemy,True) [3,7] 0x0 0x0 0x0 0x0 [IronAxe,DoorKey,ChestKey] BossAI
+UNIT Cythes AxeFighter 0x0 Level(15,Enemy,True) [7,25] 0x0 0x0 0x0 0x0 [IronAxe] PursueWithoutHeedAI
+UNIT Cythes Freelancer 0x0 Level(15,Enemy,True) [4,24] 0x0 0x0 0x0 0x0 [LongLance] PursueWithoutHeedAI
+UNIT Cythes Bard 0x0 Level(15,Enemy,True) [2,23] 0x0 0x0 0x0 0x0 [Wind] PursueWithoutHeedAI
+UNIT Cythes SwordFighter 0x0 Level(15,Enemy,True) [6,20] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI
+UNIT Cythes AxeArmor 0x0 Level(15,Enemy,True) [5,15] 0x0 0x0 0x0 0x0 [TrainedAxe] AttackInRangeAI
+UNIT Cythes Myrmidon 0x0 Level(15,Enemy,True) [7,12] 0x0 0x0 0x0 0x0 [IronSword] TwoActionAI
+UNIT Cythes SwordArmor 0x0 Level(15,Enemy,True) [6,10] 0x0 0x0 0x0 0x0 [LongSword] AttackInRangeAI
+UNIT Cythes DarkMage 0x0 Level(15,Enemy,True) [9,3] 0x0 0x0 0x0 0x0 [Jormungand] AttackInRangeAI
+UNIT
+
+GreenUnits: //sus picious
+UNIT Traveler Civilian_F_2 0x0 Level(20,NPC,False) [1,12] 0x0 0x0 0x0 0x0 [0x00] BossAI
+UNIT Ilse HighPriestess 0x0 Level(1,NPC,False) [25,16] 0x0 0x0 0x0 0x0 [0x00] NoAI
+UNIT
+
 Traps1:
-BlueSigil(21,10)
-BlueSigil(21,11)
-BlueSigil(21,12)
-BlueSigil(21,13)
+RedSigil(12,0)
+RedSigil(13,0)
+RedSigil(14,0)
 ENDTRAP
 ALIGN 4
 
@@ -83,266 +340,290 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
-Units1:
-LoadUnit(2,1)
-LoadUnit(1,2)
-LoadUnit(0,1)
-LoadUnit(3,2)
-LoadUnit(4,1)
-LoadUnit(0,3)
-LoadUnit(1,4)
-LoadUnit(2,3)
-LoadUnit(3,4)
-LoadUnit(4,3)
-LoadUnit(2,4)
-LoadUnit(0,5)
-LoadUnit(4,4)
-LoadUnit(3,5)
-UNIT
-	
-NewPlayers:
-UNIT Rashid Sniper Cleo Level(1,NPC,False) [2,6] 0x0 0x0 0x0 0x0 [Poincare, MasterBow, TrainedArc] NoAI
-UNIT Kofi MageKnight_Dismounted Cleo Level(1,NPC,False) [3,1] 0x0 0x0 0x0 [WindSword, GreatSword] NoAI
-UNIT
-
-NPCUnits:
-UNIT Catrin Swordmaster_F Catrin Level(4,NPC,False) [3,3] 0x0 0x0 0x0 0x0 [MasterSword,Elixir] BossHealAI
-UNIT Boro_Ch16 Champion Catrin Level(4,NPC,False) [1,3] 0x0 0x0 0x0 0x0 [Impaler,SilverAxe, Elixir] BossHealAI
-UNIT
-
-EnemyUnits:
-UNIT Hamdi Halberdier 0x0 Level(7,Enemy,False) [19,12] 0x0 0x0 0x0 0x0 [SilverLance,KnightProof,GoddessIcon] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,10] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,16] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [7,9] 0x0 0x0 0x0 0x0 [GaleBow] RangeAI
-UNIT Phantom Mage Hamdi Level(15,Enemy,True) [12,9] 0x0 0x0 0x0 0x0 [Thunder] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,9] 0x0 0x0 0x0 0x0 [TrainedArc] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [1,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [5,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [10,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,22] 0x0 0x0 0x0 0x0 [MarksmanBow] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [9,15] 0x0 0x0 0x0 0x0 [TrainedArc] RangeAI
-UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [16,15] 0x0 0x0 0x0 0x0 [Flux,Heal] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [13,1] 0x0 0x0 0x0 0x0 [TrainedArc,ChestKey] RangeAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [15,0] 0x0 0x0 0x0 0x0 [TrainedEdge] RangeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [14,2] 0x0 0x0 0x0 0x0 [TrainedAxe] RangeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [17,2] 0x0 0x0 0x0 0x0 [TrainedArc,ChestKey] RangeAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [20,0] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,1] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [6,5] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [TrainedAxe,ChestKey] TwoActionAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [1,9] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [2,8] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] TwoActionAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [1,14] 0x0 0x0 0x0 0x0 [TrainedArc] TwoActionAI
-UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [5,6] 0x0 0x0 0x0 0x0 [Flux,DoorKey] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [0,18] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [2,18] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [4,19] 0x0 0x0 0x0 0x0 [Jormungand,Physic,Sigil] BossAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [1,19] 0x0 0x0 0x0 0x0 [KillingEdge,RedGem] RangeAI
-UNIT Phantom AxeArmor Hamdi Level(15,Enemy,True) [6,14] 0x0 0x0 0x0 0x0 [TrainedAxe,DoorKey] BossAI
-UNIT Phantom AxeArmor Hamdi Level(15,Enemy,True) [7,14] 0x0 0x0 0x0 0x0 [TrainedAxe,DoorKey] BossAI
-UNIT Phantom AxeArmor Hamdi Level(15,Enemy,True) [21,3] 0x0 0x0 0x0 0x0 [BattleAxe,DoorKey] BossAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [11,13] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [7,16] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [8,18] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [13,19] 0x0 0x0 0x0 0x0 [Shortlance] TwoActionAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [19,21] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [13,12] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
-UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [10,12] 0x0 0x0 0x0 0x0 [Flux,ChestKey] TwoActionAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [14,4] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [10,6] 0x0 0x0 0x0 0x0 [TrainedEdge] TwoActionAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [18,22] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,6] 0x0 0x0 0x0 0x0 [TrainedAxe] TwoActionAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [18,7] 0x0 0x0 0x0 0x0 [TrainedPike] TwoActionAI
-UNIT Phantom DarkMage Hamdi Level(15,Enemy,True) [17,12] 0x0 0x0 0x0 0x0 [Jormungand] RangeAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [19,15] 0x0 0x0 0x0 0x0 [Claymore] RangeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [19,9] 0x0 0x0 0x0 0x0 [SteelAxe] RangeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [20,12] 0x0 0x0 0x0 0x0 [ShortAxe] RangeAI
-UNIT
-
-Thief1_A:
-UNIT Phantom Thief Hamdi Level(15,Enemy,True) [12,1] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
-UNIT
-
-Thief1_B:
-UNIT Phantom Thief Hamdi Level(15,Enemy,True) [18,1] 0x0 0x0 0x0 0x0 [TrainedEdge,ChestKey] ThiefAI
-UNIT
-
-EnemyReinforcements_A:
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [TrainedEdge] ChargeAI
-UNIT
-
-EnemyReinforcements_B:
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [TrainedAxe] ChargeAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [3,1] 0x0 0x0 0x0 0x0 [TrainedPike] ChargeAI
-UNIT
-
-EnemyReinforcements_B1:
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [6,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [4,15] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [16,9] 0x0 0x0 0x0 0x0 [MarksmanBow] ChargeAI
-UNIT
-
-EnemyReinforcements_B2:
-UNIT Phantom Archer Hamdi Level(15,Enemy,True) [6,11] 0x0 0x0 0x0 0x0 [Shortbow] ChargeAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [2,6] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
-UNIT
-
-EnemyReinforcements_B3:
-UNIT Phantom LanceSoldier Hamdi Level(15,Enemy,True) [6,11] 0x0 0x0 0x0 0x0 [Shortlance] ChargeAI
-UNIT Phantom Myrmidon Hamdi Level(15,Enemy,True) [2,6] 0x0 0x0 0x0 0x0 [Shortsword] ChargeAI
-UNIT Phantom AxeSoldier Hamdi Level(15,Enemy,True) [12,5] 0x0 0x0 0x0 0x0 [Shortaxe] ChargeAI
-UNIT
-
-EnemyReinforcements_C:
-UNIT Colossus Warrior Hamdi Level(20,Enemy,True) [1,1] 0x0 0x0 0x0 0x0 [MasterAxe] ChargeAI
-UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [4,0] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
-UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [0,0] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
-UNIT Phantom Halberdier Hamdi Level(5,Enemy,True) [3,1] 0x0 0x0 0x0 0x0 [SilverLance] ChargeAI
-UNIT
-
-RashidRecruitment:
-CameraCursor(Rashid)
-MUSC WithUs_Song
-Text(Ch16_Rashid_Recruitment)
-CUSA Rashid
-SetFatigue(Rashid,0)
-NoFade
-ENDA
-
-KofiRecruitment:
-CameraCursor(Kofi)
-MUSC WithUs_Song
-Text(Ch16_Kofi_Recruitment)
-CUSA Kofi
-SetFatigue(Kofi,0)
-NoFade
-ENDA
-
-Thief1_AEvent:
-SpawnReinforcements(Thief1_A)
-NoFade
-ENDA
-
-Thief1_BEvent:
-SpawnReinforcements(Thief1_B)
-NoFade
-ENDA
-
-EnemyReinforcementsEvent_A:
-SpawnReinforcements(EnemyReinforcements_A)
-NoFade
-ENDA
-
-EnemyReinforcementsEvent_B:
-Text(Colossus_1)
-SpawnReinforcements(EnemyReinforcements_B)
-SVAL s1 0x0000C06
-CHAI Catrin
-CHAI Boro_Ch16
-NoFade
-ENDA
-
-EnemyReinforcementsEvent_B1:
-SpawnReinforcements(EnemyReinforcements_B1)
-NoFade
-ENDA
-
-EnemyReinforcementsEvent_B2:
-SpawnReinforcements(EnemyReinforcements_B2)
-NoFade
-ENDA
-
-EnemyReinforcementsEvent_B3:
-SpawnReinforcements(EnemyReinforcements_B3)
-NoFade
-ENDA
-
-EnemyReinforcementsEvent_C:
-Text(Colossus_2)
-SpawnReinforcements(EnemyReinforcements_C)
-NoFade
-ENDA
-
 BeginningScene:
-SetBackground(OvergrownArches)
-MUSC(WindyDayBirdsSoundEffect)
-Text(Ch16_Cleo_Open)
-MUSC(Rovers)
-SetBackground(House2)
-Text(Ch16_Cleo_Elias)
-CHECK_EVENTID 0x8A
-BNE 7 s0 sC
-	GiveItem(ArgymosCrest,Cleo)
-	ENUT 0x8A
-LABEL 7
-CheckUnitDeadOrJailed(Varga)
-BNE 2 s0 sC
-	CHECK_EVENTID 0x88
-	BNE 2 s0 sC
-    	SetBackground(OutsideFort)
-    	MUSC SheenaID
-    	Text(VargaPrf)
-    	GiveItem(AquaBrand,Varga)
-    	ENUT 0x88
-LABEL 2
-/*
-CheckUnitDeadOrJailed(Emil)
-BNE 4 s0 sC
-	CHECK_EVENTID 0x89
-	BNE 4 s0 sC
-		SetBackground(OutsideFort)
-		MUSC SheenaID
-		Text(EmilPrf)
-		GiveItem(ChargeLance,Emil)
-		ENUT 0x89
-LABEL 4
-*/
-SetBackground(OutsideFort)
-MUSC SheenaID
-Text(Ch16_Opening_3)
-SetBackground(Sand)
-MUSC FF6EdgarAndSabin
-Text(Ch16_Opening_4)
-MUSC WindyDaySoundEffect
-Text(Ch16_Opening_5)
-SetBackground(Temple)
-MUSC ToV_TragicDecisionID
-Text(Ch16_Opening_6)
-SetBackground(Temple)
-MUSC Sortie_Formation
-Text(Ch16_Opening_7)
-CALL $9EE2C4
-LOAD1 1 NPCUnits
-LOAD1 1 NewPlayers
-LOAD1 1 EnemyUnits
+//ENUT 0x8B
+COUNTER_SET 0 0
+LOMA Chapter15Cutscene
 ENUN
+DismountSingleUnit(Cleo)
+LOAD1 0 BeginningCutsceneLoewe 
+ENUN
+CAMERA [7,0]
+ShowMap
+CameraCursor(Cleo)
+ENUN
+MUSC SheenaID
+Text(Ch15BeginningScene1)
+CamOn
+MOVE 10 LoeweCopy [1,5]
+ENUN
+CamOff
+FadeOutMusic
+CAMERA [7,0]
+FlashCursor(7,0,30)
+FlashCursor(8,0,30)
+Text(Ch15BeginningScene2Part1)
+LOAD1 1 BeginningCutsceneCatrin
+ENUN
+MUSC FF5_Nostalgia
+Text(Ch15BeginningScene2Part2)
+EVBIT_MODIFY 1
+MUSC 0x7FFF
+EVBIT_MODIFY 0
+CUSE Catrin
+MOVE_1STEP 15 Catrin 3
+ENUN
+	StartBattle
+	MissedAttack(0,10)
+	MissedAttack(0,10)
+	NormalDamage(1,20)
+	EndAttack 
+	FIGHT LoeweCopy Catrin Kaiserschwert False
+ENUN
+Text(Ch15BeginningScene3Part1)
+ENUN
+	StartBattle
+	CriticalHit(0,30)
+	EndAttack
+	FIGHT LoeweCopy Catrin Kaiserschwert False
+ENUN
+CUSN Catrin
+ENUN
+SetBackground(Sand)
+Text(Ch15BeginningScene3Part2)
+ENUN
+EVBIT_MODIFY 1
+CHECK_EVENTID 0x86
+BNE 6 s0 sC
+	FADI 15
+	PROMOTE Loewe Dragonlord Kaiserschwert
+	ENUN
+LABEL 6
+EraseBackground
+FADU 20
+MUSC Rovers
+EVBIT_MODIFY 0
+Text(Ch15BeginningScene4)
+CamOn
+MOVE 15 Catrin [0,0]
+ENUN
+CamOff
+REMOVEUNIT Catrin
+Text(Ch15BeginningScene4Part2)
+CamOn
+MOVE 15 LoeweCopy [6,14]
+ENUN
+CamOff
+Text(Ch15BeginningScene5)
+MOVE 15 LoeweCopy [7,3]
+MOVE 15 Cleo [8,3]
+MOVE 15 Kwame [9,3]
+FADI 5
+ENUN
+REMOVEUNIT LoeweCopy
+MUSC 0x7FFF
+RemoveAll
+LOMA Chapter15
+LOAD1 1 EnemyUnitsLoeweSide
+LOAD1 1 EnemyUnitsCleoSide
+LOAD1 1 CoraliaAndCenterGroup
+LOAD1 1 GreenUnits
+ENUN
+CAMERA_CENTERED [12,25]
+ENUN
+FADU 5
+CameraCursor(Coralia)
+MUSC oppression
+Text(Ch15BeginningScene6)
+MOVE 15 Raschwitz_Ch1 [13,28]
+ENUN
+Text(Ch15BeginningScene6Part2)
+MOVE 15 Raschwitz_Ch1 [13,11]
+ENUN
+REMOVEUNIT Raschwitz_Ch1
+Text(Ch15BeginningScene6Part3)
+MOVE 15 Kassandra [13,11]
+ENUN
+REMOVEUNIT Kassandra
+ENUN
+Text(Ch15BeginningScene6Part4)
+FADI 15
 DismountAll
-FlashCursor(2,6,60)
-Text(Ch16_PostPreps_RashidIntro)
+CHECK_EVENTID 0x86 //did the event already happen
+BNE 42 s0 sC
+	SendAll(Loewe)
+	RemoveAllItem(Kaiserschwert_Fake)
+	SilentGiveItem(Kaiserschwert,Loewe)
+	ENUT 0x86
+LABEL 42
+LOAD1 1 AshaGroup
+ENUN
 GotoPrepScreen
+NoFade
 ENDA
+
+BeginningCutsceneCatrin:
+UNIT Catrin Swordmaster_F 0x0 Level(20,NPC,False) [1,7] 0x0 0x0 0x0 0x0 [SilverSword] NoAI
+UNIT
+
+BeginningCutsceneLoewe:
+UNIT LoeweCopy Scaleshot_Dismounted 0x0 Level(15,Ally,False) [6,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [7,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Kwame Civilian_2 0x0 Level(20,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT
 
 EndingScene:
+ENUT 0x84
+MUSC 0x7FFF
+SetUnitFullHP(Cleo)
+SetUnitFullHP(Loewe)
+FADI 15
 RemoveAll
-MUSC Sortie_Formation
-SetBackground(Temple)
-Text(Ch16_Ending)
-MUSC Rovers
-SetBackground(BuildingInterior)
-Text(Ch16_Council_1)
-MUSC Rovers
-Text(Ch16_Council_2)
-Text(Ch16_Council_3)
-SetBackground(PrisonRoom)
-MUSC(Nighttime)
-Text(Ch16_Ending_LoeweCleoNight_1)
-Text(Ch16_Ending_LoeweCleoNight_2)
-MNC2 Chapter17
+DismountSingleUnit(Loewe)
+DismountSingleUnit(Cleo)
+LOAD1 1 EndingCutscene1Group
+ENUN
+CAMERA_CENTERED Coralia
+FADU 5
+MUSC FFTAnxiety
+Text(Ch15EndingScene1)
+MOVE 15 Loewe [12,0]
+MOVE 15 Cleo [14,0]
+STAL 20
+MOVE 15 Coralia [13,2]
+FADI 5
+ENUN
+RemoveAll
+LOMA Chapter15Cutscene
+LOAD1 1 EndingCutscene2Group
+ENUN
+CAMERA Loewe
+FADU 5
+CamOn 
+MOVE 15 Loewe [6,25]
+MOVE 15 Cleo [8,25]
+MOVE 15 Coralia [7,27]
+ENUN
+CamOff
+MOVE 15 Kassandra [7,22]
+MOVE 15 Cythes [7,21]
+ENUN
+Text(Ch15EndingScene2Part1)
+MOVE 15 Cythes [7,11]
+ENUN
+REMOVEUNIT Cythes
+Text(Ch15EndingScene2Part2)
+MOVE 15 Kassandra [8,24]
+ENUN
+	StartBattle
+	NormalDamage(0,20)
+	MissedAttack(0,20)
+	MissedAttack(1,10)
+	MissedAttack(0,10)
+	EndAttack
+	FIGHT Kassandra Cleo SilverLance False
+ENUN
+MUSC Dreaming
+Text(Ch15EndingScene2KassandraTakesBackCoralia)
+MOVE 15 Coralia [7,22]
+MOVE 15 Kassandra [7,23]
+MOVE 15 Loewe [7,26]
+MOVE 15 Cleo [7,27]
+ENUN 
+Text(Ch15EndingScene3)
+LOAD1 1 EliasUnitGroup
+ENUN
+MOVE 20 EliasReal [8,23]
+ENUN
+	StartBattle
+	NormalDamage(0,15)
+	NormalDamage(0,15)
+	NormalDamage(1,15)
+	MissedAttack(1,15)
+	EndAttack
+	FIGHT EliasReal Kassandra BraveAxe False
+ENUN
+CUSN Coralia
+Text(Ch15EndingScene3EliasKassandraRuns)
+MOVE 15 Kassandra [7,20]
+MOVE 15 Coralia [7,25]
+MOVE 15 EliasReal [7,24]
+MOVE 15 Cleo [8,26]
+MOVE 15 Loewe [6,26]
+ENUN
+Text(Ch15EndingScene4)
+MOVE 15 Kassandra [7,8]
+ENUN
+REMOVEUNIT Kassandra
+MOVE 15 Coralia [7,23]
+ENUN
+MOVE 15 EliasReal [7,24]
+ENUN
+Text(Ch15EndingScene5)
+MUSC 0x7FFF
+FADI 10
+RemoveAll
+LOMA Chapter15
+LOAD1 1 EndingCutscene3Group
+ENUN
+CAMERA_CENTERED Kwame
+CenterTutorialTextBox
+SetBackground(BlackBackground)
+SOLOTEXTBOXSTART
+TEXTSHOW Ch15LaterThatDay
+TEXTEND
+REMA
+CALL $9EE2C4
+CameraCursor(Kwame)
+MUSC FE5_InTheBattle_Fate
+Text(Ch15EndingScene6Part1)
+MOVE_1STEP 15 Coralia 3
+STAL 60
+MOVE_1STEP 10 Coralia 2
+STAL 30
+MOVE_1STEP 15 Coralia 2
+STAL 60
+MOVE_1STEP 10 Coralia 3
+STAL 30
+ENUN
+Text(Ch15EndingScene6Part2)
+MOVE 15 Cleo [12,29]
+MOVE 15 Coralia [13,2]
+STAL 10 
+MOVE 15 Kwame [13,29]
+ENUN
+MOVE 15 Loewe [13,14]
+ENUN
+Text(Ch15EndingScene6Part3)
+ENUF 0x84
+ENUF 0x89
+ENUF 0x88
+ENUF 0x8A
+MNC2 Chapter16
 NoFade
 ENDA
+
+EndingCutscene1Group:
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [12,14] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [14,14] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [13,14] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT
+
+EndingCutscene2Group:
+UNIT Loewe Scaleshot 0x0 Level(20,Ally,False) [6,28] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Cleo Skyseeker 0x0 Level(20,Ally,False) [8,28] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT Coralia Noble_F 0x0 Level(10, Enemy, False) [7,29] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT Kassandra Falcoknight 0x0 Level(10,Enemy, False) [7,13] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT Cythes PegasusRider 0x0 Level(10,Enemy, False) [7,12] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT
+
+EliasUnitGroup:
+UNIT EliasReal Dracoknight 0x0 Level(17,NPC,False) [8,16] 0x0 0x0 0x0 0x0 [Argilabrys,BraveAxe] PursueWithoutHeedAI
+UNIT
+
+EndingCutscene3Group:
+UNIT Loewe Scaleshot_Dismounted 0x0 Level(20,Ally,False) [14,15] 0x0 0x0 0x0 0x0 [Kaiserschwert] NoAI
+UNIT Cleo Skyseeker_Dismounted 0x0 Level(20,Ally,False) [13,14] 0x0 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT Coralia Noble_F 0x0 Level(10, NPC, False) [11,15] 0x0 0x0 0x0 0x0 [StoneSword] NoAI
+UNIT Kwame Civilian_2 0x0 Level(10,NPC, False) [12,14] 0x0 0x0 0x0 0x0 [0x00] NoAI
+UNIT

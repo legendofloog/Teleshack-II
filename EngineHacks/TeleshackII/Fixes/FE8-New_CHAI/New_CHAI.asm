@@ -97,9 +97,9 @@ mov		r3,#0xFF
 and		r3,r1
 cmp		r3,#0x15
 beq		Label2			@dunno why, but there it is
-strb	r3,[r2,#0x2]
+strb	r3,[r2,#0x2] //storing AI1
 mov		r3,#0
-strb	r3,[r2,#0x3]
+strb	r3,[r2,#0x3] //and AI1 data to 0
 Label2:
 lsl		r3,r1,#0x8
 lsl		r3,#0x18

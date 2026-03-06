@@ -34,9 +34,9 @@ BYTE OmniCriticalID
 
 // replace Proc_Start in proc loop with New_Proc_Start
 SetUnitPCC(Loewe,2)
-SetUnitPCC(Mira,0)
+SetUnitPCC(Mira,1)
 SetUnitPCC(Iskra,1)
-SetUnitPCC(Svetomir,0)
+SetUnitPCC(Svetomir,1)
 SetUnitPCC(Alena,4)
 SetUnitPCC(Delilah,3)
 SetUnitPCC(Alex,2)
@@ -46,12 +46,12 @@ SetUnitPCC(Tobie,2)
 SetUnitPCC(Gimm,3)
 SetUnitPCC(Cadenza,2)
 SetUnitPCC(Leina,2)
-SetUnitPCC(Awa,0)
+SetUnitPCC(Awa,1)
 
-SetUnitPCC(Iberis,0)
+SetUnitPCC(Iberis,1)
 SetUnitPCC(Buldak,2)
 
-SetUnitPCC(Hans, 0)
+SetUnitPCC(Hans, 1)
 
 SetUnitPCC(Jenny,3)
 
@@ -64,8 +64,8 @@ SetUnitPCC(Ichwep,3)
 SetUnitPCC(Mink,2)
 
 SetUnitPCC(Ellerey,2)
-SetUnitPCC(Tippany, 0)
-SetUnitPCC(Pelecaye, 0)
+SetUnitPCC(Tippany, 1)
+SetUnitPCC(Pelecaye, 1)
 SetUnitPCC(Carl, 5)
 
 SetUnitPCC(Jacinth, 3)
@@ -74,12 +74,12 @@ SetUnitPCC(Darby,2)
 SetUnitPCC(Kailani, 5)
 SetUnitPCC(Ilse,2)
 
-SetUnitPCC(Kofi, 0)
-SetUnitPCC(Rashid,0)
+SetUnitPCC(Kofi, 1)
+SetUnitPCC(Rashid,1)
 
-SetUnitPCC(BoroReal,0)
+SetUnitPCC(BoroReal,1)
 SetUnitPCC(Nikolas,2)
-SetUnitPCC(Kwame,0)
+SetUnitPCC(Kwame,1)
 
 SetUnitPCC(Hartmann,2)
 
@@ -90,29 +90,29 @@ SetUnitPCC(Ojasvi,5)
 SetUnitPCC(Apsis,4)
 SetUnitPCC(Tao,5)
 SetUnitPCC(Joie,3)
-SetUnitPCC(Groto,0)
+SetUnitPCC(Groto,1)
 SetUnitPCC(Zhara,5)
 
 
 
 SetUnitPCC(Jerry,4)
-SetUnitPCC(Lyre,0)
+SetUnitPCC(Lyre,1)
 
-SetUnitPCC(Ngondala,0)
+SetUnitPCC(Ngondala,1)
 SetUnitPCC(CatrinReal,3)
 
-SetUnitPCC(Locke,0)
+SetUnitPCC(Locke,1)
 
-SetUnitPCC(EliasReal,0)
+SetUnitPCC(EliasReal,1)
 
-SetUnitPCC(BarodReal,0)
-SetUnitPCC(Orfeas,0)
+SetUnitPCC(BarodReal,1)
+SetUnitPCC(Orfeas,1)
 
-SetUnitPCC(TarajiReal,0)
+SetUnitPCC(TarajiReal,1)
 SetUnitPCC(Athanasius,4)
 //Bosses, Generics, and NPCs
-SetUnitPCC(Elias,0)
+SetUnitPCC(Elias,1)
 SetUnitPCC(Mifan,5)
 SetUnitPCC(Cidor,2)
-SetUnitPCC(Taraji,0)
+SetUnitPCC(Taraji,1)
 SetUnitPCC(Saif,3)

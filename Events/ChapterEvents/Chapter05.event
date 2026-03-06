@@ -13,6 +13,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 TurnEventPlayer(0, PostPrepsScene,1)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 3)
 TurnEventPlayer(0, EnemyReinforcementsEvent_A, 4)

@@ -7,3 +7,4 @@
 #include "DebugDefinitions.event"
 #include "MacroDefinitions.event"
 #include "MugDefinitions.event"
+#include "FlagDefinitions.event"

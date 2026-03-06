@@ -19,6 +19,8 @@ PointerList:
 
 TurnBasedEvents:
 TurnEventPlayer(0, OhNoWTF, 1)
+//TurnEventPlayer(0, MertlocArrival, 1)
+InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 TurnEventPlayer(0, StareAtTheCeiling, 5)
 TurnEventPlayer(0, WhileIHoldBackWhatsOnMyMind, 7)
 TurnEventPlayer(0, ForHoursAtATime, 9)

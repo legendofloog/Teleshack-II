@@ -35,6 +35,7 @@ PointerList:
 
 
 TurnBasedEvents:
+InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 TurnEventPlayer(24,DeadlordSpawn,10)
 TurnEventPlayer(0,PegasusCharge,6) //no clue if having the peg charge on EP 6 or 7 would be better. hopefully turn 6 isn't too early or oppressive
 TurnEventPlayer(0,ThiefAntiTurtle,3) //maybe make this guy show up a turn earlier? I don't mind him being really hard to get

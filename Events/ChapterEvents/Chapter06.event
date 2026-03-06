@@ -16,6 +16,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 	TurnEventPlayer(0x0, TurnOne, 1)
 	TurnEventPlayer(0x0, WipeCheck, 1, 255)
 	TurnEventPlayer(10, StagingAreaEnter, 1, 255)

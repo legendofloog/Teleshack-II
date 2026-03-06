@@ -14,6 +14,8 @@
 #define Chapter12 0x0B
 #define Chapter13 0x0C
 #define Chapter14 0x0D
+
+//everything here is where chapter additions start
 #define Chapter15 0x0E
 #define Chapter16 0x0F
 #define Chapter17 0x10
@@ -158,17 +160,32 @@
 #define Chapter12Events 0x33
 #define Chapter13Events 0x37
 #define Chapter14Events 0x3B
-#define Chapter15Events 0x41
-#define Chapter16Events 0x47
-#define Chapter17Events 0x4B
-#define Chapter18Events 0x4F
-#define Chapter19Events 0x56
-#define Chapter20Events 0x5A
-#define Chapter21Events 0x5E
-#define Chapter22Events 0x64
-#define Chapter23Events 0x67
-#define Chapter24Events 0x6B
-#define Chapter25Events 0x71
+
+// Chapter 15Events     // the destroy supplies map where Catrin shows up, reducing some load on the 15
+
+#define Chapter16Events 0x41
+#define Chapter17Events 0x47
+#define Chapter18Events 0x4B
+
+// Chapter19Events      // Mahemen port escape map
+
+#define Chapter20Events 0x4F //now Sera's map
+
+//Chapter 21Events      // the new Jerry and Lyre map
+
+#define Chapter22Events 0x56 //now Tara
+#define Chapter23Events 0x5A //now the Kassandra arrival
+#define Chapter24Events 0x5E //now the Taraji map
+
+#define Chapter25Events 0x64
+
+//Chapter 26 Events    // The map in the Sarloos Mountains as you head south
+
+#define Chapter27Events 0x67
+#define Chapter28Events 0x6b
+#define Chapter29Events 0x71
+
+
 #define PostgameHubEvents 0x75
 #define Chapter1LoeweVillageEvents 0x7F
 #define Ch1DraganaPrisonEvents 0x80
@@ -176,7 +193,7 @@
 #define Ch12xInterludeEvents 0xA3
 #define Chapter17CouncilEvents 0xB3
 #define Chapter17DuelEvents 0xB7
-#define Chapter18xInterludeEvents 0xBA
+#define Chapter20xInterludeEvents 0xBA
 #define Chapter3CutsceneEvents 0xcf
 #define EpilogueEvents 0xCA
 #define Chapter12CutsceneEvents 0xe3

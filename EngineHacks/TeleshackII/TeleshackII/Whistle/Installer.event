@@ -1,0 +1,13 @@
+#include "Whistle.lyn.event"
+
+ALIGN 4
+DragonClassIDLink:
+BYTE DragonClass
+
+ALIGN 4
+MertlocStartingChapterIDLink:
+BYTE Chapter4
+
+ALIGN 4
+MertlocSummonedFlagIDLink:
+SHORT MertlocSummonedFlagID

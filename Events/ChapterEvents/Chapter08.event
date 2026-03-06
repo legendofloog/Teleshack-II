@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 TurnEventPlayer(0, HegeMonologue, 1)
 TurnEventPlayer(0, FirstThiefSpawn, 4)
 TurnEventPlayer(0, SecondThiefSpawn, 8)

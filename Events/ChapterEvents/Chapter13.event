@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 TurnEventPlayer(0, KailaniJoin, 1)
 TurnEventPlayer(0, CavReinforcements, 5)
 TurnEventPlayer(0, VeniaminAIChange, 8)

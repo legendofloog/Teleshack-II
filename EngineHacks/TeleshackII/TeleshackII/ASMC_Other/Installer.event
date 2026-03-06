@@ -78,7 +78,3 @@ BYTE Cidor
 ALIGN 4
 IskraCharIDLink:
 BYTE Iskra
-
-ALIGN 4
-DragonClassIDLink:
-BYTE DragonClass
