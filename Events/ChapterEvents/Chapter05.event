@@ -189,6 +189,7 @@ UNIT Helman DarkMage Cleo Level(6,NPC,False) [11,13] 0x0 0x0 1 REDA9R14 [0x0] No
 UNIT
 
 BeginningScene:
+CALL GiveBackKaiserschwertFake
 DismountAll
 LOMA Chapter5PortNeufchatel
 FOGVISION 0

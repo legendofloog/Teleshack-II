@@ -12,6 +12,9 @@ MMBDrawHP:
 	.set MMBHPYCoordinate,	EALiterals + 4
 	.set MMBHeight,			EALiterals + 8
 
+	.equ GetUnitCurrentHP, 0x08019151
+	.equ GetUnitMaxHP, 0x08019191
+
 	@ Inputs:
 	@ r0: pointer to proc state
 	@ r1: pointer to unit in RAM
@@ -95,7 +98,7 @@ SkipBottom:
 	@ Get HP numbers
 
 	mov		r0, r5
-	ldr		r1, =GetCurrentHP
+	ldr		r1, =GetUnitCurrentHP
 	mov		lr, r1
 	bllr
 
@@ -117,10 +120,10 @@ SkipDashedCurrentHP:
 
 	bllr
 
-	add		r6, r6, #25
+	add		r6, r6, #26
 
 	mov		r0, r5
-	ldr		r1, =GetMaxHP
+	ldr		r1, =GetUnitMaxHP
 	mov		lr, r1
 	bllr
 

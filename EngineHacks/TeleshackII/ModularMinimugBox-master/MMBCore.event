@@ -561,10 +561,10 @@
 			POIN MMBRESLabelGraphic
 			ALIGN 4
 			MMBDEFLabelGraphic:
-			#incbin "Modules/DEFLabel.4bpp"
+			#incbin "Modules/DEFLabel.dmp"
 			ALIGN 4
 			MMBRESLabelGraphic:
-			#incbin "Modules/RESLabel.4bpp"
+			#incbin "Modules/RESLabel.dmp"
 			#ifndef MMBNumberDrawing
 				#define MMBNumberDrawing
 			#endif // MMBNumberDrawing
@@ -777,7 +777,7 @@
 		#ifdef MMBASLabel
 			ALIGN 4
 			MMBASLabelGraphic:
-			#incbin "Modules/ASLabel.4bpp"
+			#incbin "Modules/ASLabel.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing
@@ -786,7 +786,7 @@
 		#ifdef MMBATKLabel
 			ALIGN 4
 			MMBATKLabelGraphic:
-			#incbin "Modules/ATLabel.4bpp"
+			#incbin "Modules/ATLabel.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing
@@ -822,7 +822,7 @@
 		#ifdef MMBDEFLabel
 			ALIGN 4
 			MMBDEFLabelGraphic:
-			#incbin "Modules/DEFLabel.4bpp"
+			#incbin "Modules/DEFLabel.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing
@@ -858,7 +858,7 @@
 		#ifdef MMBLevelLabel
 			ALIGN 4
 			MMBLevelLabelGraphic:
-			#incbin "Modules/LevelLabel.4bpp"
+			#incbin "Modules/LevelLabel.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing
@@ -867,7 +867,7 @@
 		#ifdef MMBRESLabel
 			ALIGN 4
 			MMBRESLabelGraphic:
-			#incbin "Modules/RESLabel.4bpp"
+			#incbin "Modules/RESLabel.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing
@@ -885,7 +885,7 @@
 		#ifdef MMBHPLabel
 			ALIGN 4
 			MMBHPLabelGraphic:
-			#incbin "Modules/HPLabel.4bpp"
+			#incbin "Modules/HPLabel.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing

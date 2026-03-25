@@ -64,15 +64,15 @@
 // FF5 Cave
     ALIGN 4
     FF5CaveObject:
-    #incbin "Object/FF5Cave(Wave).dmp"
+    #incbin "Object/FF5CaveExpanded.dmp"
 
     ALIGN 4
     FF5CavePalette:
-    #incbin "Palette/FF5Cave(Wave)_pal.dmp"
+    #incbin "Palette/FF5CaveExpanded_pal.dmp"
 
     ALIGN 4
     FF5CaveConfig:
-    #incbin "Config/FF5Cave(Wave)_comp.dmp"
+    #incbin "Config/pirate_cave_with_boat_comp.dmp"
 
 // DesertBastion
     ALIGN 4

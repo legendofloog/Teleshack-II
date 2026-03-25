@@ -44,7 +44,8 @@ Allow an ally to move again.[X]
 Focus[X]
 
 ## FocusDesc
-Grants +20 Hit to an ally for 3 turns.[X]
+Grants +20 Hit to an ally for 3 turns.[N]
+Removes negative status.[X]
 
 ## FocusUseDesc
 Use to sharpen[N]
@@ -54,7 +55,8 @@ an ally's focus.[X]
 Empower[X]
 
 ## EmpowerDesc
-Grants +5 Atk to an ally for 3 turns.[X]
+Grants +5 Atk to an ally for 3 turns.[N]
+Removes negative status.[X]
 
 ## EmpowerUseDesc
 Use to strengthen[N]

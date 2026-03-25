@@ -59,8 +59,8 @@ EscapePointEntry(12,0,EscapeUp)
 EscapePointTerminator
 
 Chapter11EnemyEscapeTable:
-EscapePointEntry(2,5,EscapeInPlace)
-EscapePointEntry(14,9,EscapeInPlace)
+EscapePointEntry(10,1,EscapeInPlace)
+EscapePointEntry(18,1,EscapeInPlace)
 EscapePointTerminator
 
 Chapter12EnemyEscapeTable:

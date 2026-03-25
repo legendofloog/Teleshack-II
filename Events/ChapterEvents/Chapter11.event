@@ -15,7 +15,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 InfiniteTurnEventEnemy(0,MertlocRemovalEvent,1)
 TurnEventPlayer(0,Turn1Event,1)
-TurnEventPlayer(0, Turn2Reinforcements, 3)
+TurnEventPlayer(0, ThievesSpawn, 3)
 END_MAIN
 
 Turn1Event:
@@ -32,30 +32,17 @@ Text(Ch11_InTheCell)
 NoFade
 ENDA
 
-ALIGN 32
+ALIGN 4
 CharacterBasedEvents:
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
-DefeatBoss
+DefeatAll
 END_MAIN
 
 LocationBasedEvents:
-Chest(KnightProof,2,6)
-LOCA 11 FreeSisters [17,24] 0x12
-LOCA 11 FreeSisters [18,24] 0x12
-Door(17,24)
-Door(18,24)
-Chest(Physic,18,12)
-Door(2,8)
 END_MAIN
-
-FreeSisters:
-TILECHANGE 0
-Text(Ch11_OpenSisterDoor)
-NoFade
-ENDA
 
 Dunno1:
 END_MAIN
@@ -69,72 +56,95 @@ END_MAIN
 Tutorial:
 END_MAIN
 
-Units1:
-UNIT Cleo 0x0 Cleo Level(1,Ally,False) [4,25] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Loewe 0x0 Cleo Level(1,Ally,False) [15,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
-UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [17,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [4,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,26] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [15,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [16,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
-UNIT Iskra 0x0 Cleo Level(1,Ally,False) [14,27] 0x0 0x0 0x0 0x1 [0x0] NoAI
+Units1: // 7 on each side
+UNIT Cleo 0x0 Cleo Level(1,Ally,False) [10,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Loewe 0x0 Cleo Level(1,Ally,False) [18,22] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [4,22] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [24,22] 0x0 0x0 0x0 0x1 [SteelAxe,HandAxe,Hammer,Vulnerary] NoAI
+
+//left
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [3,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [5,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [10,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [9,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [11,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+// right
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [17,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [18,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [19,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [23,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
+UNIT Iskra 0x0 Cleo Level(1,Ally,False) [25,23] 0x0 0x0 0x0 0x1 [0x0] NoAI
 UNIT
 
 NewUnits:
-UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [4,26] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
-UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [16,26] 0x0 0x0 0x0 0x1 [Hammer,HandAxe,Vulnerary] NoAI
+UNIT Ichwep LanceSoldier Cleo Level(10,Ally,False) [7,23] 0x0 0x0 0x0 0x1 [KillerLance,Javelin,Vulnerary] NoAI
+UNIT Milo AxeSoldier Cleo Level(10,Ally,False) [20,23] 0x0 0x0 0x0 0x1 [Hammer,HandAxe,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
-UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [4,9] 0x0 0x0 0x0 0x1 [SteelSword] AttackInRangeAI
-UNIT Selese Freelancer Cleo Level(11,Enemy,True) [11,12] 0x0 0x0 0x0 0x1 [Javelin,SteelLance] AttackInRangeAI
-UNIT Selese Archer Cleo Level(11,Enemy,True) [7,15] 0x0 0x0 0x0 0x1 [MarksmanBow] AttackInRangeAI
-UNIT Selese Mage Cleo Level(11,Enemy,True) [5,18] 0x0 0x0 0x0 0x0 [Fire] TwoActionAI
-UNIT Selese SwordFighter Cleo Level(11,Enemy,True) [3,22] 0x0 0x0 0x0 0x0 [BigIron] NeverMoveAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [4,23] 0x0 0x0 0x0 0x0 [ShortLance] NeverMoveAI
-UNIT Selese Archer Cleo Level(11,Enemy,True) [3,21] 0x0 0x0 0x0 0x0 [MarksmanBow] NeverMoveAI
-UNIT Selese Fighter Cleo Level(11,Enemy,True) [4,16] 0x0 0x0 0x0 0x0 [SteelAxe] TwoActionAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [2,13] 0x0 0x0 0x0 0x0 [SteelLance] StallOneTurnAI
-UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [3,12] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
-UNIT Selese Myrmidon Cleo Level(11,Enemy,True) [1,15] 0x0 0x0 0x0 0x0 [ShortSword] TwoActionAI
-UNIT Selese Mage Cleo Level(11,Enemy,True) [1,12] 0x0 0x0 0x0 0x0 [Thunder] StallOneTurnAI
-UNIT Selese SwordArmour Cleo Level(11,Enemy,True) [8,11] 0x0 0x0 0x0 0x0 [Longsword] NeverMoveAI
-UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [8,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
-UNIT Aurora Halberdier Cleo Level(1,Enemy,False) [9,3] 0x0 0x0 0x0 0x0 [SteelLance,TrainedAxe,SecretBook] AttackInRangeAI
+//aurora's group
+UNIT Aurora Halberdier 0 Level(1,Enemy,False) [14,3] 0x0 0x0 0x0 0x0 [SilverLance,PlatAxe,SecretBook] GroupOneAI
+UNIT Selese Sister Aurora Level(14,Enemy,True) [13,2] 0x0 0x0 0x0 0x0 [Light] GroupOneAI
+UNIT Selese Sister Aurora Level(14,Enemy,True) [15,2] 0x0 0x0 0x0 0x0 [Light] GroupOneAI
+
+
+//siege fellows
+UNIT Selese Ballistician Aurora Level(10,Enemy,True) [7,18] 0x0 0x0 0x0 0x0 [SlimArch] AttackInPlaceAI
+UNIT Selese Ballistician Aurora Level(10,Enemy,True) [21,18] 0x0 0x0 0x0 0x0 [SlimArch] AttackInPlaceAI
+UNIT Selese Priest Aurora Level(11,Enemy,True) [14,12] 0x0 0x0 0x0 0x0 [Sleep] AttackInPlaceAI
+UNIT Selese Ballistician Aurora Level(12,Enemy,True) [11,7] 0x0 0x0 0x0 0x0 [IronArch] AttackInPlaceAI
+UNIT Selese Ballistician Aurora Level(12,Enemy,True) [17,7] 0x0 0x0 0x0 0x0 [IronArch] AttackInPlaceAI
+
+// armored chokepoint blockers (sorry lowres)
+UNIT Selese AxeArmor Aurora Level(11,Enemy,True) [19,17] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInPlaceAI
+UNIT Selese LanceArmor Aurora Level(11,Enemy,True) [23,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInPlaceAI
+UNIT Selese LanceArmor Aurora Level(11,Enemy,True) [9,16] 0x0 0x0 0x0 0x0 [SteelLance] AttackInPlaceAI
+UNIT Selese SwordArmor Aurora Level(11,Enemy,True) [5,16] 0x0 0x0 0x0 0x0 [SteelSword] AttackInPlaceAI
+UNIT Selese LanceArmor Aurora Level(11,Enemy,True) [11,10] 0x0 0x0 0x0 0x0 [SteelLance, Javelin] AttackInPlaceAI
+UNIT Selese AxeArmor Aurora Level(11,Enemy,True) [17,11] 0x0 0x0 0x0 0x0 [SteelAxe, HandAxe] AttackInPlaceAI
+UNIT Selese LanceArmor Aurora Level(11,Enemy,True) [22,9] 0x0 0x0 0x0 0x0 [Greatlance] AttackInPlaceAI
+UNIT Selese SwordArmor Aurora Level(11,Enemy,True) [5,10] 0x0 0x0 0x0 0x0 [Greatsword] AttackInPlaceAI
+
+
+// the ranged armor corps (bow armor midboss maybe?)
+UNIT Selese MageArmor Aurora Level(14,Enemy,True) [14,7] 0x0 0x0 0x0 0x0 [Quake] GroupTwoAI
+UNIT Selese BowArmor Aurora Level(11,Enemy,True) [13,6] 0x0 0x0 0x0 0x0 [SteelBow] GroupTwoAI
+UNIT Selese BowArmor Aurora Level(11,Enemy,True) [15,6] 0x0 0x0 0x0 0x0 [SteelBow] GroupTwoAI
+
+// regular chokepoint blockers (in the midlane area)
+UNIT Selese LanceSoldier Aurora Level(11,Enemy,True) [9,13] 0x0 0x0 0x0 0x0 [Javelin] AttackInPlaceAI
+UNIT Selese AxeSoldier Aurora Level(11,Enemy,True) [10,13] 0x0 0x0 0x0 0x0 [HandAxe] AttackInPlaceAI
+UNIT Selese AxeSoldier Aurora Level(11,Enemy,True) [18,14] 0x0 0x0 0x0 0x0 [HandAxe] AttackInPlaceAI
+UNIT Selese LanceSoldier Aurora Level(11,Enemy,True) [19,14] 0x0 0x0 0x0 0x0 [Javelin] AttackInPlaceAI
+
+// attack in range guys so it's not all choking
+
+UNIT Selese Swordfighter Aurora Level(11,Enemy,True) [9,12] 0x0 0x0 0x0 0x0 [PlatSword] AttackInRangeAI
+UNIT Selese Freelancer Aurora Level(11,Enemy,True) [19,13] 0x0 0x0 0x0 0x0 [PlatLance] AttackInRangeAI
+UNIT Selese Swordfighter Aurora Level(11,Enemy,True) [3,18] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
+UNIT Selese Freelancer Aurora Level(11,Enemy,True) [25,17] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT Selese Axefighter Aurora Level(11,Enemy,True) [3,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Selese Axefighter Aurora Level(11,Enemy,True) [25,8] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
+UNIT Selese Axefighter Aurora Level(11,Enemy,True) [11,4] 0x0 0x0 0x0 0x0 [PlatAxe] AttackInRangeAI
+UNIT Selese Axefighter Aurora Level(11,Enemy,True) [17,4] 0x0 0x0 0x0 0x0 [PlatAxe] AttackInRangeAI
+
+
 UNIT
 
-EnemyUnits2:
-UNIT Selese LanceArmour Cleo Level(11,Enemy,True) [14,24] 0x0 0x0 0x0 0x0 [ShortLance] NeverMoveAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [13,24] 0x0 0x0 0x0 0x0 [Javelin] TwoActionAI
-UNIT Selese Mage Cleo Level(11,Enemy,True) [17,11] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
-UNIT Selese Archer Cleo Level(11,Enemy,True) [13,23] 0x0 0x0 0x0 0x0 [Shortbow] TwoActionAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [18,25] 0x0 0x0 0x0 0x0 [ShortLance,DoorKey] NeverMoveAI
-UNIT Selese Mage Cleo Level(11,Enemy,True) [17,6] 0x0 0x0 0x0 0x0 [Fire] AttackInRangeAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [9,19] 0x0 0x0 0x0 0x0 [ShortLance] TwoActionAI
-UNIT Selese AxeSoldier Cleo Level(11,Enemy,True) [10,20] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
-UNIT Selese Fighter_F Cleo Level(11,Enemy,True) [16,19] 0x0 0x0 0x0 0x0 [IronAxe] StallOneTurnAI
-UNIT Selese Mage Cleo Level(11,Enemy,True) [12,14] 0x0 0x0 0x0 0x0 [Thunder] AttackInRangeAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [11,15] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
-UNIT Selese LanceSoldier Cleo Level(11,Enemy,True) [13,15] 0x0 0x0 0x0 0x0 [ShortLance] AttackInRangeAI
+ThiefGroup1:
+UNIT Selese Thief Cleo Level(9,Enemy,True) [0,10] 0x0 0x0 0x1 REDA0R10 [ShortSword,AlairsGale] ThiefAI
 UNIT
 
-PrisonGreens:
-UNIT SisterSelese Sister Cleo Level(5,NPC,True) [17,22] 0x0 0x0 0x0 0x0 [Lightning] NeverMoveAI
-UNIT SisterSelese Sister Cleo Level(5,NPC,True) [18,22] 0x0 0x0 0x0 0x0 [Physic] NeverMoveAI
-UNIT
-
-Turn2Thief:
-UNIT Selese Thief Cleo Level(11,Enemy,True) [0,14] 0x0 0x0 0x1 REDA0R14 [ShortSword,ChestKey,DoorKey] ThiefAI
-UNIT Selese Thief Cleo Level(11,Enemy,True) [13,7] 0x0 0x0 0x1 REDA13R7 [ShortSword,ChestKey] ThiefAI
+ThiefGroup2:
+UNIT Selese Thief Cleo Level(9,Enemy,True) [28,8] 0x0 0x0 0x1 REDA28R8 [ShortSword,IronShield] ThiefAI
 UNIT
 
 Traps1:
+RedSigil(10,1)
+RedSigil(18,1)
 ENDTRAP
 ALIGN 4
 
@@ -144,9 +154,7 @@ ALIGN 4
 
 BeginningScene:
 LOAD1 1 NewUnits
-LOAD1 0x1 EnemyUnits
-LOAD1 0x1 EnemyUnits2
-LOAD1 0x1 PrisonGreens
+LOAD1 1 EnemyUnits
 ENUN
 DismountAll
 SetBackground(0x11)
@@ -173,8 +181,9 @@ FADI 15
 GotoPrepScreen
 ENDA
 	
-Turn2Reinforcements:
-SpawnReinforcements(Turn2Thief)
+ThievesSpawn:
+SpawnReinforcements(ThiefGroup1)
+SpawnReinforcements(ThiefGroup2)
 NoFade
 ENDA
 	
@@ -182,12 +191,6 @@ EndingScene:
 SetBackground(0x2A)
 MUSC FF5_Nostalgia
 Text(Ch11End_MainScene)
-LABEL 2
-CHECK_EVENTID 0xD //did one of the sisters die
-BNE 4 s0 sC //if set, skip
-	Text(Ch11End_Clerics)
-	GiveItem(Silence,Loewe)
-LABEL 4
 MNC2 Chapter12
 NoFade
 ENDA

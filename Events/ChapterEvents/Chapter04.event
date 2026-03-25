@@ -275,7 +275,6 @@ ENUT 3
 FADI 10
 FadeOutMusic
 RemoveAllDouble
-CALL GiveBackKaiserschwertFake
 LOAD2 0x1 SickoMode
 ENUN
 CAMERA_CENTERED Loewe

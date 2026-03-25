@@ -17,8 +17,8 @@ extern struct Unit* gUnitSubject;
 
 
 int GetOffensiveStaffAccuracy(Unit* actorUnit, Unit* targetUnit){
-	int actorUnitMag = actorUnit->mag;
-	int targetUnitRes = targetUnit->res;
+	int actorUnitMag = GetUnitMagic(actorUnit);
+	int targetUnitRes = GetUnitResistance(targetUnit);
 	if (actorUnitMag >= targetUnitRes){
 		return 100;
 	}

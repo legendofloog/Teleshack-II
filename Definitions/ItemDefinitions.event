@@ -67,6 +67,7 @@
 #define Fire 0x38
 #define Thunder 0x39
 #define Elfire 0x3A
+#define Quake 0x3B
 #define Thoron 0x3C
 #define Wind 0x3D
 #define Tornado 0x3E
@@ -183,7 +184,8 @@
 #define Impaler 0xAC
 
 #define Tomahawk 0xae
-//#define AmserScrollID 0xaf
+
+#define IronShield 0xAF
 
 #define Firestone 0xB2
 #define MarksmanBow 0xB3

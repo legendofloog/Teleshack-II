@@ -59,7 +59,7 @@ After each set of module options are definitions that you can use to adjust the 
 // Unit name modules
 
 	//#define MMBName
-	#define MMBNameCentered
+	//#define MMBNameCentered
 	//#define MMBNameAffinityShifted
 
 // Unit name options
@@ -79,7 +79,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// Coordinates are in 8x8 pixel tiles
 	#define MMBMinimugX 1
-	#define MMBMinimugY 3
+	#define MMBMinimugY 1
 	#define MMBMinimugTileIndexStart 0xF0
 	#define MMBMinimugPaletteIndex 4
 
@@ -103,22 +103,22 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// Coordinates are in pixels
 	#define MMBInventoryX 12
-	#define MMBInventoryY 56
+	#define MMBInventoryY 42
 
 	#define MMBItem1X 12
-	#define MMBItem1Y 56
+	#define MMBItem1Y 41
 
 	#define MMBItem2X 28
-	#define MMBItem2Y 56
+	#define MMBItem2Y 41
 
 	#define MMBItem3X 44
-	#define MMBItem3Y 56
+	#define MMBItem3Y 41
 
 	#define MMBItem4X 60
-	#define MMBItem4Y 56
+	#define MMBItem4Y 41
 
 	#define MMBItem5X 76
-	#define MMBItem5Y 56
+	#define MMBItem5Y 41
 
 	//end point: 92
 
@@ -148,11 +148,18 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// HP/Status options
 	#define MMBHPStatusX 5
-	#define MMBHPStatusY 3
+	#define MMBHPStatusY 1
 
 	// HP options
 	#define MMBHPX 5
-	#define MMBHPY 3
+	#define MMBHPY 2
+	#define MMBHPLabel
+
+	#define MMBHPLabelX 5
+	#define MMBHPLabelY 2
+	#define MMBHPLabelVRAMTile 0x120
+	#define MMBHPLabelPaletteIndex 2
+	#define MMBHPLabelTileCount 2
 
 	// DEF/RES options
 	//#define MMBDEFRESX 9
@@ -227,11 +234,11 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// AS Number
 	#define MMBASX 64
-	#define MMBASY 48
+	#define MMBASY 32
 
 	// ATK Number
 	#define MMBATKX 64
-	#define MMBATKY 40
+	#define MMBATKY 24
 
 	// AVO Number
 	#define MMBAVOX 90
@@ -247,7 +254,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// DEF Number
 	#define MMBDEFX 90
-	#define MMBDEFY 40
+	#define MMBDEFY 24
 
 	// DOD Number
 	#define MMBDODX 120
@@ -255,7 +262,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// EXP number
 	#define MMBEXPX 90
-	#define MMBEXPY 32
+	#define MMBEXPY 8
 
 	// HIT Number
 	#define MMBHITX 90
@@ -263,11 +270,11 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// Level number
 	#define MMBLevelX 64
-	#define MMBLevelY 32
+	#define MMBLevelY 8
 
 	// RES number
 	#define MMBRESX 90
-	#define MMBRESY 48
+	#define MMBRESY 32
 
 	// RTG number
 	#define MMBRTGX 103
@@ -294,14 +301,14 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// AS label
 	#define MMBASLabelX 5
-	#define MMBASLabelY 6
+	#define MMBASLabelY 4
 	#define MMBASLabelVRAMTile 0x100
 	#define MMBASLabelPaletteIndex 2
 	#define MMBASLabelTileCount 2
 
 	// ATK label
 	#define MMBATKLabelX 5
-	#define MMBATKLabelY 5
+	#define MMBATKLabelY 3
 	#define MMBATKLabelVRAMTile 0x102
 	#define MMBATKLabelPaletteIndex 2
 	#define MMBATKLabelTileCount 2
@@ -329,7 +336,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// DEF label
 	#define MMBDEFLabelX 9
-	#define MMBDEFLabelY 5
+	#define MMBDEFLabelY 3
 	#define MMBDEFLabelVRAMTile 0x10A
 	#define MMBDEFLabelPaletteIndex 2
 	#define MMBDEFLabelTileCount 2
@@ -343,7 +350,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// EXP label
 	#define MMBEXPLabelX 9
-	#define MMBEXPLabelY 4
+	#define MMBEXPLabelY 1
 	#define MMBEXPLabelVRAMTile 0x160
 	#define MMBEXPLabelPaletteIndex 2
 	#define MMBEXPLabelTileCount 2
@@ -357,14 +364,14 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// Level label
 	#define MMBLevelLabelX 5
-	#define MMBLevelLabelY 4
+	#define MMBLevelLabelY 1
 	#define MMBLevelLabelVRAMTile 0x162
 	#define MMBLevelLabelPaletteIndex 2
 	#define MMBLevelLabelTileCount 2
 
 	// RES label
 	#define MMBRESLabelX 9
-	#define MMBRESLabelY 6
+	#define MMBRESLabelY 4
 	#define MMBRESLabelVRAMTile 0x164
 	#define MMBRESLabelPaletteIndex 2
 	#define MMBRESLabelTileCount 2
